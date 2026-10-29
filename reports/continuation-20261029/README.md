@@ -1,6 +1,6 @@
 # October 29 continuation: executed tests and Week 8 forecasts
 
-The identity problem is diagnosed, a new same-game history comparison is executed, and new Week 8 research shadows are privately retained. The full legacy-method tournament remains incomplete.
+The identity problem is diagnosed, a new same-game history comparison is executed, and new Week 8 research shadows are privately retained. The full legacy-method tournament remains incomplete. The [observed twelve-target comparison](TWO_FAMILY_PRIMARY_COMPARISON_2026_W1_W7.md) and [current inventory boundary](INVENTORY_COMPLETENESS.md) state the supported scope.
 
 - [Every scored test: accuracy, errors, evidence and source links](TEST_RESULTS_INDEX.md)
 - [Browse twelve category result tables](categories/README.md)
@@ -35,3 +35,7 @@ The rolling diagnostic produced 940,812 retrospective forecast views, of which 9
 Week 8 contains 10,386 newly issued views and 30 abstentions across fourteen games, one empirical family and three histories. Actual capture was October 29 at 5:51:33 p.m. Chicago. All precede kickoff; 837 CAR–GB views are after that game's 5:45 input cutoff and remain labeled at the later horizon. No Week 8 result has been scored. The original owner-selected stream is preserved; missing original complex-model artifacts still block their named forecast cells.
 
 Source inputs, private diagnostic predictions and new Week 8 prediction bytes were uploaded to the existing owner-only, unshared NFL evidence store and downloaded again for exact hash checks. Public GitHub contains safe IDs, aggregate results and code. Private storage locators remain in the private companion index. No paid calls, new collector, recurring capture job, production workflow dispatch or website change occurred. The V2 CI workflow performs code/artifact checks only.
+
+## Final verification and later Week 8 scoring
+
+All 71 unit tests pass. Both automatic GitHub CI checks passed on the core publication. The [empirical grading contract](../../docs/WEEK8_SHADOW_GRADING.md) and [HGB grading contract](../../docs/HGB_WEEK8_SHADOW_GRADING.md) require trusted original capture hashes and qualified final labels; independent invented-label and empty-capture checks pass without reading actual Week 8 outcomes. The current index retains 16,048 evaluation views and twelve separate software receipts. [Retained-owner release handoff](FUTURE_CAPTURE_AND_RELEASE_HANDOFF.md).

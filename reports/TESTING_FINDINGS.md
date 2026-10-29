@@ -23,3 +23,19 @@ PASS scope:33original aggregate cells/168checks; independent132primarymetric+36c
 These findings identify no newly verified urgent live defect requiring a competing production action. The local V2validation defect is fixed. Production/cadence issues were already documented by the retained owner. No external notification, owner acknowledgement, website fix or integration is claimed.
 
 [Independent review](verification/INDEPENDENT_REVIEW.md) contains redacted win/loss and hand settlement cases. [Production audit](production/PRODUCTION_AND_FEATURE_AUDIT.md) traces specific consumers. Appropriate relevant tests are executable; fictional tests do not increase NFL sample sizes.
+
+## Continuation amendment — October 29, 2026
+
+Earlier findings above remain the original checkpoint's bounded record. Later source-qualified work does not retroactively authenticate sparse original labels or remove historical uncertainty.
+
+| Severity/state | New evidence | Implication and next action |
+|---|---|---|
+| Medium / FIXED V2, regression retained | The future empirical grader initially accepted a consistently rehashed fictional capture with a blocked query but an issued numeric output; the issued-state guard now rejects any query block or abstention reason. | [Independent grader review](verification/FUTURE_GRADER_REVIEW.md): 40 fictional checks pass; original failing receipt retained. Real capture plus empty labels produces zero scores and null errors. No Week 8 outcomes were read. |
+| Medium / FIXED V2, regression retained | Producer review corrected cancellation handling before kickoff: official canceled finality is terminal coverage, not a pending numeric outcome. | The same grader review covers pre-kickoff cancellation and missing/DNP/finality distinctions. Fictional checks are software evidence, not NFL accuracy. |
+| Medium / VERSIONED REPAIR NEEDED | Frozen HGB code declares a 2,000,000 forecast-row cap but does not actively check it; actual output is 96,678 rows, below the cap. | Preserve frozen code/receipts; enforce the cap in a new code/protocol version before reuse. No silent replay or numerical invalidation. |
+| High / INFORMATION-POLICY LIMIT | HGB H-CURRENT fits 2026 labels but shares 2022-start feature memory; current-vintage source rows use assumed seven-day availability and retrospective participant/position eligibility. | Call it current-season fitting, not pure current-only information. Retain startup/both-fitted views and source limitations. [HGB independent QA](verification/HGB_HISTORY_INDEPENDENT_QA.md) checks all 930 summaries and raw prefixes without refits. |
+| Medium / VALID ADVERSE RESULT | H-RECENT absolute-loss carry forecasts yield MAE 6.529621 versus empirical 3.188389 on the same 844 QB/RB outcomes; fitted zero predictions replay correctly. | Preserve the loss. Training includes relevant extended WR/TE zero-heavy roles; primary evaluation excludes those roles. Test role specialization separately rather than deleting the negative result. |
+
+The [full-history diagnostic review](verification/EMPIRICAL_HISTORY_DIAGNOSTIC_REVIEW.md) and [Week 8 shadow review](verification/WEEK8_SHADOW_INDEPENDENT_QA.md) extend executable coverage. Their broader explicit-zero source semantics differ from the sparse normalized cache. No newly verified live production defect, owner acknowledgement, website change or actual Week 8 score is claimed by this amendment.
+
+The separate [HGB future-grader review](verification/HGB_FUTURE_GRADER_REVIEW.md) also passes 42 independent invented checks. With the actual original HGB packet and empty labels it verifies all 63 retained model hashes without executing models, retains 1,951 pending queries and produces zero scored outcomes/null errors. It establishes future grading software compatibility; it does not supply Week 8 accuracy.

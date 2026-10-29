@@ -24,7 +24,11 @@ DEFAULT_SOFTWARE=('reports/verification/PRIMARY_COMPARISON.json',
                   'reports/continuation-20261029/CONTINUATION_SOFTWARE_TESTS.json',
                   'reports/continuation-20261029/CORE_PUBLICATION_SOFTWARE_TESTS.json',
                   'reports/verification/FUTURE_GRADER_REVIEW_INITIAL.json',
-                  'reports/verification/FUTURE_GRADER_REVIEW.json')
+                  'reports/verification/FUTURE_GRADER_REVIEW.json',
+                  'reports/verification/HGB_SHADOW_GRADER_SOFTWARE_TESTS.json',
+                  'reports/verification/HGB_FUTURE_GRADER_REVIEW_INITIAL.json',
+                  'reports/verification/HGB_FUTURE_GRADER_REVIEW.json',
+                  'reports/continuation-20261029/FINAL_PUBLICATION_SOFTWARE_TESTS.json')
 DIAGNOSTIC_ROOT='reports/continuation-20261029/history-diagnostic-v1'
 DIAGNOSTIC_CSV=DIAGNOSTIC_ROOT+'/SEASON_RESULTS_2022_2026.csv'
 GAME_COUNTS='reports/verification/DIAGNOSTIC_VIEW_GAME_COUNTS.json'

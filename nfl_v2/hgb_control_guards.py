@@ -35,4 +35,3 @@ class OutputViewBudget:
         if self.reserved + rows > self.limit:
             raise RuntimeError("FORECAST_ROW_BUDGET")
         self.reserved += rows
-

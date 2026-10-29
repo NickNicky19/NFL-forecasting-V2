@@ -1,6 +1,6 @@
 # Test results: error and explicitly measured accuracy
 
-16,048 evaluation output views and 8 separate software-verification receipts. These are not distinct-method, fit, or independent-NFL-sample counts.
+16,048 evaluation output views and 12 separate software-verification receipts. These are not distinct-method, fit, or independent-NFL-sample counts.
 
 4,964 inherited/replay views and 11,084 separate current-vintage participant-diagnostic views retain different population/evidence identities. No cross-panel winner is inferred.
 

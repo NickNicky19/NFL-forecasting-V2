@@ -10,3 +10,20 @@ The October29owner instruction controls. Read START_HERE.md, TASK_SPEC.md, TASK_
 - Run appropriate tests and independent verification. Software fixtures add no NFL samples. Counts of aliases/views/references/forecasts/fits/games remain distinct; unknowns stay null.
 - Append new events/versions and correction links; do not overwrite frozen evidence. Import/reconcile helpers generate staging projections, not unattended canonical replacements. Snapshot every actual new wave's source/manifest/code/environment, predictions and outcomes in approved durable private storage before broad research.
 - Public-safe PRs are authorized; branch protections apply. Do not merge/auto-merge absent explicit per-PR landing authorization. No production deployment follows from research rank.
+
+## Owner continuation: all tests and Week 8
+
+Every new scored run must emit an immutable canonical `SCORES.json`, register it
+in `registries/RESULT_ARTIFACTS.json`, and rebuild the linked results index with
+native errors and explicitly defined accuracy numerators/denominators. Missing
+results stay null with reasons. CI rejects unregistered/unindexed canonical
+scores. Never convert MAE/Brier into a generic percentage accuracy. Keep
+software verification, retrospective diagnostics and original pregame forecasts
+as separate evidence kinds.
+
+Account for every located method's Week 8 status in the capture matrix. Preserve
+all original forecasts and source/game assignments. New shadows have real issue,
+persistence, restoration and horizon records; a late owner-input-cutoff forecast
+does not satisfy that earlier cutoff. Unrestored complex methods remain blocked,
+and simple controls cannot fill their named cells. Store restricted prediction
+rows in the verified private companion; publish only safe IDs/hashes/aggregates.

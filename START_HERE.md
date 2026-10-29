@@ -1,6 +1,16 @@
 # NFL Forecasting V2
 
-**Executed audit checkpoint, October 29, 2026. The full tournament is incomplete.**
+**Latest continuation: empirical and HGB same-game history controls are executed, with two genuine Week 8 shadow families. The full legacy-method tournament remains incomplete.**
+
+[Read the current results](reports/continuation-20261029/README.md) · [All tests with accuracy/error definitions](reports/continuation-20261029/TEST_RESULTS_INDEX.md) · [Twelve category tables](reports/continuation-20261029/categories/README.md) · [Week 8 captured/blocked matrix](reports/continuation-20261029/WEEK8_ALL_METHOD_STATUS.md)
+
+The new empirical benchmark and [fixed HGB wave](reports/continuation-20261029/hgb-history-v1/README.md) cover all 107 games in 2026 Weeks 1–7 with exact GSIS identities and explicit source zeros. HGB completed 452 NFL fits, 930 aggregate score views and all 504 registered opportunities; 52 sparse-training cells used the declared fallback. These are current-vintage retrospective participant diagnostics with common older feature memory, not pure-current-information tests or a universal history winner.
+
+Week 8 now has **20,772 newly issued views and 60 abstentions**, two families on the same 1,951 query cells and fourteen games. Actual captures were 22:51:33 and 23:16:53 UTC, before kickoff; both missed CAR–GB's earlier owner input cutoff. No Week 8 outcomes were read or scored. The combined private packet has verified owner-only offhost restoration. Complex original methods and exact chart PPR retain explicit blocked cells. Earlier checkpoint findings below are retained at their original evidence level.
+
+[Twelve-target empirical/HGB comparison](reports/continuation-20261029/TWO_FAMILY_PRIMARY_COMPARISON_2026_W1_W7.md). Only two newly executed families are compared; chart PPR remains blocked.
+
+## Initial independently reproduced checkpoint
 
 V2 independently reproduced all 33 original method/category score cells in a retained Week 7 packet. Then it graded those original forecasts against a separately versioned later statistics snapshot: **666 explicit target outcomes, 190 player-games and 14 games**, yielding **1,998 method-score rows**. All 8,096 original opportunities remain visible; 7,430 labels are unresolved. No new predictive fits or forecasts were made.
 

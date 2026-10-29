@@ -1,3 +1,5 @@
+> October 29 continuation: [actual two-family capture, private restoration and owner-only release handoff](continuation-20261029/FUTURE_CAPTURE_AND_RELEASE_HANDOFF.md). Earlier checkpoint follows unchanged.
+
 # V2 future capture and release handoff
 
 **Prepared research/scorer package only. No new admission, capture, merge, deployment or served-value improvement is claimed.** Read the [production handoff](production/FUTURE_CAPTURE_AND_RELEASE_HANDOFF.md) for pinned code/source checks and current payload.

@@ -24,3 +24,18 @@ Checkpoint: October29,2026; complete inventory/research tournament **not** claim
 |B12|PENDING exact method/selection-policy later evidence|No hindsightweekwinner or observed2026best declared deployable policy. Later games versioned prospective, source/year exposure retained.|
 
 No unchanged fits are rerun. A future wave must write a new sealed manifest/runidentity and immutable receipts, count old consumedbudgets separately, retain failures and preserve baseline controls. Do not call5,408provisional-reference/pathwaygridcells a scientific denominator or report all-cells blocked as a substitute for content-level canonicalization. Active owner's jobs are never duplicated.
+
+
+## Executed continuation
+
+The earlier source-access and private-storage gaps have now been resolved for a NEW basic-statistics diagnostic and its Week 8 controls. Network permission enabled legitimate shell access; six permitted football source files were privately retained and freshly restored. The original unretained training/query artifacts remain missing. The [current continuation](reports/continuation-20261029/README.md) records all executed counts, source hashes, independent checks, explicit zeros, fixed-row history comparisons, startup effects and adverse results.
+
+The new per-test index/CI registration rule applies to future scores. Week 8 has 10,386 new empirical output views plus 30 abstentions, genuine 22:51 UTC capture and verified private restoration; 837 late-owner-cutoff views remain flagged. Every old procedure reference has a captured or blocked status. Complex original model bindings and exact chart PPR remain dependencies; no new blanket approval or eight-week wait was introduced. The original uncompleted queue is preserved, not treated as a record of current access forever.
+
+## Completed HGB continuation amendment
+
+The fixed [HGB wave](reports/continuation-20261029/hgb-history-v1/README.md) is complete: 504 registered fit opportunities, 452 actual NFL fits and retained models, 52 predeclared insufficient-training fallback cells, zero failed fits, and 930 aggregate score views. Its same-game 2026 Weeks 1–7 cohort has 15,574 query cells / 2,394 player-games / 107 games. These new registered empirical/HGB cells resolve part of B03/B05/B08 for eleven targets; they do not complete the legacy CDF/Count-A/other-family grid, strict-current-information comparison, full ex-ante population or exact chart PPR. All older queue entries above remain historical checkpoint records.
+
+The two new Week 8 families retain 20,772 issued views and 60 abstentions on 1,951 frozen query cells / fourteen games. Empirical capture was 22:51:33 UTC and HGB 23:16:53 UTC, with 837 late-first-owner-input-cutoff views per family. Both captures precede kickoff; no Week 8 outcomes have been read or scored. The combined private review bundle is freshly downloaded/hash-verified; [receipt](reports/continuation-20261029/PRIVATE_WEEK8_ALL_REVIEW_RESTORATION.json). The 1,808-row status ledger accounts for 1,669 blocked legacy references and 126 new family/history/product cells without claiming they are independent learners. The original stream remains unchanged.
+
+Next: retain frozen v1 code/models and apply its separate tested output-budget guard only to a newly registered future version; complete independent review and source/row-matched comparisons; await qualified Week 8 outcomes before scoring. Remaining complex artifacts, chart components, defense/role ablations, authenticated offers and owner-only release actions keep their exact dependencies. No duplicate fits, new collector, scheduler or production writer is introduced.

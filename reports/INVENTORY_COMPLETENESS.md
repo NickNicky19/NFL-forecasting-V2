@@ -1,3 +1,5 @@
+> October 29 continuation: [executed two-family, twelve-target comparison](continuation-20261029/TWO_FAMILY_PRIMARY_COMPARISON_2026_W1_W7.md), [all indexed tests](continuation-20261029/TEST_RESULTS_INDEX.md), and [current completeness boundary](continuation-20261029/INVENTORY_COMPLETENESS.md). The earlier checkpoint below remains at its original evidence level.
+
 # Scoped upstream inventory — October 29, 2026
 
 The accessible public evidence supports a substantial inventory and numerical

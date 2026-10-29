@@ -1,3 +1,5 @@
+> Restored October 29 sources: [current source qualification and exact availability limits](../reports/continuation-20261029/history-diagnostic-v1/SOURCE_QUALIFICATION.json), [source restoration](../reports/continuation-20261029/PRIVATE_SOURCE_RESTORATION.json), and [current environment](../reports/continuation-20261029/ENVIRONMENT_ACTUAL.json). Earlier restrictions remain in force.
+
 # Source catalog and access restoration
 
 | Source | Actual access | Qualification and use |

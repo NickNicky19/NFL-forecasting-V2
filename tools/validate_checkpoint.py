@@ -37,5 +37,5 @@ def main():
     s=p.read_text();assert not any(token in s for token in ('s3://','sediment://','/workspace/','sk-proj-')),(p,'private locator or credential marker')
  for pair in [('reports/ALL_METHOD_SCORES',len(scores)),('registries/EXPERIMENT_GRID',len(grid)),('registries/REQUEST_METHOD_CROSSWALK',len(requests))]:
   with (ROOT/(pair[0]+'.csv')).open() as f:assert len(list(csv.DictReader(f)))==pair[1]
- print(json.dumps({'status':'PASS','JSON_files_parsed':parsed,'grid_cells':len(grid),'request_index_items':len(requests),'reported_cells':4832,'reproduced_primary_all_role_views':66,'new_fits':0,'scope':'artifact/schema/privacy-marker checks; not independent NFLtruth'}))
+ print(json.dumps({'status':'PASS','JSON_files_parsed':parsed,'grid_cells':len(grid),'request_index_items':len(requests),'reported_cells':4832,'reproduced_primary_all_role_views':66,'initial_checkpoint_new_fits':0,'scope':'initial-checkpoint artifact/schema/privacy-marker checks; continuation fits are recorded in their separate run receipts; not independent NFLtruth'}))
 if __name__=='__main__':main()

@@ -1,3 +1,5 @@
+> October 29 continuation: [executed two-family, twelve-target comparison](continuation-20261029/TWO_FAMILY_PRIMARY_COMPARISON_2026_W1_W7.md), [all indexed tests](continuation-20261029/TEST_RESULTS_INDEX.md), and [current completeness boundary](continuation-20261029/INVENTORY_COMPLETENESS.md). The earlier checkpoint below remains at its original evidence level.
+
 # Twelve-category checkpoint
 
 **No verified comparable W1–7 topfive is yet available.** The [required CSV](TOP5_BY_CATEGORY_PRODUCT.csv) shows all twelve blocked cells. The [up-to-five W1–6 list](inventory/REPORTED_TOP5_2026_W1_W6.csv) contains42reported slots, fewer thanfive for several categories. It is retained, not promoted into a full W1–7 ranking. Two output views of one model occupy one learner slot. Controls/losses remain in ALL_METHOD_SCORES, even outside a shortlist.

@@ -1,0 +1,16 @@
+{
+ "wave_id":"v2-public-statistics-source-admission-20261029-v1",
+ "registered_before_dataset_read":true,
+ "purpose":"Restore permitted current-vintage football statistics to test identity-corrected empirical controls with fixed history windows; no raw redistribution",
+ "seasons":[2022,2023,2024,2025,2026],
+ "sources":["nflverse-data/stats_player statistics only","nfldata/games schedules"],
+ "max_parallel_http":2,
+ "max_bytes_per_source":33554432,
+ "new_local_source_allocation_bytes":134217728,
+ "previous_V2_private_allocation_preserved_bytes":33554432,
+ "new_NFL_fits_authorized_by_this_manifest":false,
+ "private_durable_binding":"not established; source admission/restoration must be qualified before dependent broad model runs",
+ "no_paid_calls":true,
+ "no_snap_feeds":true,
+ "tier":"current_vintage_reconstruction; historical publication unknown"
+}

@@ -1,3 +1,5 @@
+> October 29 continuation: [executed two-family, twelve-target comparison](continuation-20261029/TWO_FAMILY_PRIMARY_COMPARISON_2026_W1_W7.md), [all indexed tests](continuation-20261029/TEST_RESULTS_INDEX.md), and [current completeness boundary](continuation-20261029/INVENTORY_COMPLETENESS.md). The earlier checkpoint below remains at its original evidence level.
+
 # Does older history improve forecasts of the same 2026 games?
 
 **The required clean 2026 Weeks1–7 answer remains unestablished.** No complete common-row three-arm result was independently reproduced. [CSV](HISTORY_COMPARISON_2026_W1_W7.csv) retains nulls/statuses rather than importing a different-period score into the requested cells.

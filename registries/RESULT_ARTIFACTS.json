@@ -121,5 +121,60 @@
     "state": "FAILED_EMPTY_NO_EVALUATIONS",
     "failure_receipt": "reports/continuation-20261030/distribution-wave-v1/RUN_RECEIPT.json",
     "reason": "Blockedmissing-boardpositioninferencefailurebeforehistoricalscoreoutput;modelsandpartialfuturechunksretained;emptylistisnotzeroNFLerror"
+  },
+  {
+    "artifact": "reports/continuation-20261030b/carry-strong-control-comparison-v1/SCORES.json",
+    "state": "SCORED",
+    "kind": "same_rows_strong_control_carry_saved_forecast_replay_no_new_fits",
+    "comparison_annotations": "reports/continuation-20261030b/carry-strong-control-comparison-v1/COMPARISON_ANNOTATIONS.json",
+    "dates_projection": "reports/continuation-20261030b/carry-strong-control-comparison-v1/SCORE_DATE_PROJECTION.json",
+    "empty_dates_policy": "explicit_empty_supported_scoring_dates"
+  },
+  {
+    "artifact": "reports/continuation-20261030b/website-reference-replay-v1/SCORES.json",
+    "state": "SCORED",
+    "kind": "retained_recorded_R0_provider_W7_point_reference_unmatched_information_cutoffs"
+  },
+  {
+    "artifact": "reports/continuation-20261030b/WEBSITE_REFERENCE_ACQUISITION_RESOURCE_FINDING.json",
+    "state": "SOFTWARE_VERIFIED",
+    "kind": "failed_acquisition_resource_guard_attempt_no_NFL_fit_or_score"
+  },
+  {
+    "artifact": "reports/continuation-20261030b/ordered-information-ablation-v1/SCORES.json",
+    "state": "SCORED",
+    "kind": "registered_explicit_lag_block_removal_matched_ordered_CDF_336origin_cells",
+    "dates_projection": "reports/continuation-20261030b/ordered-information-ablation-v1/SCORE_DATE_PROJECTION.json",
+    "empty_dates_policy": "explicit_empty_supported_scoring_dates"
+  },
+  {
+    "artifact": "reports/continuation-20261030b/availability-wave-v1/AB-RUN_RECEIPT.json",
+    "state": "FORECASTED_UNSCORED",
+    "pending_reason": "NewABCavailabilityresearchshadows;13opengames;actualcaptureversionsandfrozengrading;noWeek8outcomesread;officialowneradmissionpending"
+  },
+  {
+    "artifact": "reports/continuation-20261030b/availability-wave-v1/C-RUN_RECEIPT.json",
+    "state": "FORECASTED_UNSCORED",
+    "pending_reason": "NewABCavailabilityresearchshadows;13opengames;actualcaptureversionsandfrozengrading;noWeek8outcomesread;officialowneradmissionpending"
+  },
+  {
+    "artifact": "reports/continuation-20261030b/c02-future-shadow-v1/RUN_RECEIPT.json",
+    "state": "FORECASTED_UNSCORED",
+    "pending_reason": "NewseparateC02andfixedcontrolcommoncutoffpartial13gameshadows;32488views;actual02:37capture;noWeek8outcomesread;originalsunchanged;owneradmissionpending"
+  },
+  {
+    "artifact": "reports/continuation-20261030b/CHECKPOINT_SOFTWARE_TESTS.json",
+    "state": "SOFTWARE_VERIFIED",
+    "kind": "software_fixture_functions_no_NFL_accuracy"
+  },
+  {
+    "artifact": "reports/continuation-20261030b/INDEX_POINTER_CHECK_INITIAL.json",
+    "state": "SOFTWARE_VERIFIED",
+    "kind": "initial_stale_pointer_coverage_check_no_NFL_evaluation"
+  },
+  {
+    "artifact": "reports/continuation-20261030b/CHECKPOINT_SOFTWARE_TESTS_V2.json",
+    "state": "SOFTWARE_VERIFIED",
+    "kind": "software_date_annotation_guard_finalfixture_suite_no_NFL_accuracy"
   }
 ]

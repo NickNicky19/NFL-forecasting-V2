@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Exposed same-row family representatives, never a live selection policy."""
-import collections,csv,json,math,sys
+import argparse,collections,csv,json,math,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
-OUT=ROOT/'reports/continuation-20261030'
+OUT=ROOT/'reports/continuation-20261030b'
 TARGETS=('pass_yd','pass_td','pass_cmp','pass_att','pass_int','rush_yd','rush_att','rec','rec_yd','rush_rec_yd','nick-chart-ppr-v1','anytime_td')
 
 def number(x):return None if x in (None,'') else float(x)
@@ -26,7 +26,8 @@ def main():
         ('reports/continuation-20261030/distribution-wave-v2/SCORES.json','json'),
         ('reports/continuation-20261030/count-ablation-wave-v1/SCORES.json','json'),
         ('reports/continuation-20261030/chart-wave-v1/SCORES.json','json'),
-        ('reports/continuation-20261030/chart-wave-v1/EMPIRICAL_SCORES.json','json')]
+        ('reports/continuation-20261030/chart-wave-v1/EMPIRICAL_SCORES.json','json'),
+        ('reports/continuation-20261030b/ordered-information-ablation-v1/SCORES.json','json')]
  candidates=[]
  for artifact,kind in specs:
   p=ROOT/artifact
@@ -85,4 +86,7 @@ def main():
   '', 'Seven week clusters limit uncertainty; paired learned-only, shared prior-workload/top-player bands, strict-current information and adverse extended-role effects remain separate evidence. Authentic priced offers, source-vintage/finality checks for future labels, additional legacy families and rolling older-season tests for new learned procedures remain open.','']
  (OUT/'TWELVE_CATEGORY_SUMMARY.md').write_text('\n'.join(lines))
  print(json.dumps(dict(candidate_views=len(candidates),family_representatives=len(rankings),targets=12,families=sorted({r['family'] for r in candidates}))))
-if __name__=='__main__':main()
+if __name__=='__main__':
+ parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--output',type=Path,default=OUT);args=parser.parse_args()
+ if args.output.resolve()==(ROOT/'reports/continuation-20261030').resolve():raise SystemExit('Previous checkpoint is immutable; use a new output version.')
+ OUT=args.output;OUT.mkdir(parents=True,exist_ok=True);main()

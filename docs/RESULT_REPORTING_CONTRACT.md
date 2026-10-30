@@ -1,6 +1,6 @@
 # Every test: accuracy and error reporting
 
-Current index: [bounded JSON/CSV result parts](../reports/continuation-20261030/results-index/README.md).
+Current index: [bounded JSON/CSV result parts](../reports/continuation-20261030b/results-index/README.md).
 Register scored/verified artifacts, then run `python tools/build_test_index_v2.py`
 and `python tools/check_result_index_coverage.py`. The October29 complete index
 stays immutable. Source-bound dates and explicit infinite-loss flags are
@@ -105,3 +105,5 @@ hash freshness and registration/index coverage. It has no schedule, capture,
 paid acquisition, NFL model fitting or production-write step. Its estimator API
 tests fit only small fictional fixtures. Newly issued forecasts
 remain registered as forecasted-unscored with pending-outcome reasons.
+
+The October30 checkpoint is also immutable. New index manifests reuse its exact JSON shards and append new views. CSV reporting adds explicit matched comparator identity, paired n, candidate-minus-control absolute and relative error changes (null at zero comparator), fixed precision counts and definitions, fallback denominator/rate, cutoff/evidence and unresolved comparison reasons. Source-bound annotation sidecars do not create extra NFL evaluations. Scoring corrections are separate from changed predictions. Actual live-website and offer-selection claims require their own matched authentic contracts.

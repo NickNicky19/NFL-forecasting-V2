@@ -56,3 +56,11 @@ Three new fitting waves completed 992 origin cells: 840 actual fits and 152 expl
 |C08|Grade original and new partial Week8 packets|Future qualified final labels needed; no hindsight winner selection|
 
 Production, owner lease, scheduler and publication authority remain unchanged. The current index uses bounded v2 parts; October29 complete-index bytes and IDs remain frozen.
+
+## October30B executed next wave
+
+[New checkpoint](reports/continuation-20261030b/README.md) preserves84b5619 and every prior source/score/capture byte. C01 availability A/B/C is captured with99refits, all12targets,303known Week7source rows and282stale-policy exclusions; no Week8 labels are read. C02 historical explicit-lag removal completes336cells/278fits/58fallbacks and1,608scoreviews, plus48newfuturefits with retained controls. Total425fits,134,168newhistorical outputviews,1,688main scored views,272pairedhistorycontrasts,136fallback decompositions and133,869issued futureviews/400abstentions across13games. Carry repair faces oldbest and orderedleader, including losses;40recordedwebsite/providerW7scoreviews retain unmatched-cutoff/source-clock limits. Failed preparation, resource guard and stale index-pointer check remain recorded.
+
+C01/C02 are complete only for their registered scopes, not the all-method tournament. Current index47,398records retains all45,706previous records and hashes;151unitfixtures pass, no NFL samples from software. Private restoration independently verifies all new model/query/prediction rows. Official owner admission/deployment remains pending.
+
+Next executable queue: C03 older-season rolling origins for learned families; source-timed role/defense/playcalling additions; matched new-procedure workload/top-player saved-row views; exact distinct remaining legacy/categorical/count/retrieval mechanisms. C04 rare chart attribution and C07 original private census/authenticated offers retain their exact source dependencies. C08 frozen future grading requires final qualified labels. Future routing/selection needs a separately registered earlier-chosen rule; observed minima remain research ranks. No unchanged fits should be repeated to refresh documentation. Production/owner lease/scheduler remain unchanged.

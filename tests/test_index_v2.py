@@ -60,3 +60,37 @@ class ShardedIndexTests(unittest.TestCase):
             with patch.object(index,'BASE','old.json'),patch.object(index,'sha',side_effect=observed):
                 index.build(root)
             self.assertLessEqual(len(calls),2)
+
+    def test_next_checkpoint_reuses_prior_shards_and_preserves_their_bytes(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);self.setup_tree(root)
+            with patch.object(index,'BASE','old.json'),patch.object(index,'OUTPUT','first'),patch.object(index,'PREVIOUS_SHARDED','absent.json'):
+                index.write(root)
+            prior=json.loads((root/'first/INDEX_MANIFEST.json').read_text())
+            prior_bytes={s['path']:(root/s['path']).read_bytes() for s in prior['shards']}
+            row=json.loads((root/'new.json').read_text())[0];row.update(week=6,record_id='fixture-6')
+            (root/'additional.json').write_text(json.dumps([row]))
+            (root/'registries/RESULT_ARTIFACTS.json').write_text(json.dumps([
+                dict(artifact='new.json',state='SCORED'),dict(artifact='additional.json',state='SCORED')]))
+            with patch.object(index,'BASE','old.json'),patch.object(index,'OUTPUT','second'),patch.object(index,'PREVIOUS_SHARDED','first/INDEX_MANIFEST.json'):
+                result=index.write(root)
+            self.assertEqual(result['records'],7)
+            manifest=json.loads((root/'second/INDEX_MANIFEST.json').read_text())
+            self.assertTrue(set(prior_bytes)<={s['path'] for s in manifest['shards']})
+            for path,body in prior_bytes.items():self.assertEqual((root/path).read_bytes(),body)
+
+    def test_explicit_empty_scored_dates_remain_empty_without_changing_source_period(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);self.setup_tree(root)
+            row=json.loads((root/'new.json').read_text())[0];row.update(n=0,mae=None,week='ALL')
+            body=json.dumps([row]).encode();(root/'new.json').write_bytes(body)
+            projection=dict(source_score_sha256=hashlib.sha256(body).hexdigest(),
+                            rows=[dict(source_row_index=0,evaluation_seasons=[],evaluation_weeks=[])])
+            (root/'dates.json').write_text(json.dumps(projection))
+            (root/'registries/RESULT_ARTIFACTS.json').write_text(json.dumps([dict(artifact='new.json',state='SCORED',
+                dates_projection='dates.json',empty_dates_policy='explicit_empty_supported_scoring_dates')]))
+            with patch.object(index,'BASE','old.json'):_,records,_,_=index.build(root)
+            result=next(r for r in records if r['source_artifact']=='new.json')
+            self.assertEqual(result['weeks'],[])
+            self.assertEqual(result['dates_missing_reason'],'zero_supported_rows_no_scored_weeks')
+            self.assertEqual(result['source_aggregate_fields']['week'],'ALL')

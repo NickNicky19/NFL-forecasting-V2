@@ -15,10 +15,12 @@ import sys
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from nfl_v2.result_index import evaluation,software_receipt,validate_index,DIAGNOSTIC_KIND,PRECISION
+from nfl_v2.comparison_reporting import comparison_fields
 from tools.build_test_index import flat,category_slug
 
 BASE='reports/continuation-20261029/TEST_RESULTS_INDEX.json'
-OUTPUT='reports/continuation-20261030/results-index'
+OUTPUT='reports/continuation-20261030b/results-index'
+PREVIOUS_SHARDED='reports/continuation-20261030/results-index/INDEX_MANIFEST.json'
 MAX_SHARD=12*1024*1024
 CSV_OMIT_FIELDS={'source_aggregate_fields','diagnostic_provenance','game_count_provenance'}|{p+'_'+s for p in PRECISION for s in ('numerator_provenance','missing_reason')}
 CORRECTION='reports/continuation-20261030/chart-grid-precision-correction-v1/SCORES.json'
@@ -37,6 +39,8 @@ def current_flat(record):
     for key in ('run_id','procedure_family_id','cohort_id','information_policy','feature_memory_policy','training_population','source_vintage','scoring_version','correction_kind','precision_correction_artifact'):
         value=record.get(key,source.get(key))
         if value is None:value=source.get(key)
+        row[key]=json.dumps(value,separators=(',',':')) if isinstance(value,(dict,list)) else value
+    for key,value in comparison_fields(record).items():
         row[key]=json.dumps(value,separators=(',',':')) if isinstance(value,(dict,list)) else value
     return row
 
@@ -57,6 +61,13 @@ def build(root=ROOT):
             r=software_receipt(artifact,o);r['source_artifact_sha256']=artifact_sha;records.append(r);n=1
         else:
             if not isinstance(o,list):raise ValueError('normalized aggregate result list required: '+artifact)
+            annotations={}
+            if item.get('comparison_annotations'):
+                annotation_body=(root/item['comparison_annotations']).read_bytes();projection=json.loads(annotation_body)
+                if projection['source_score_sha256']!=artifact_sha:raise ValueError('comparison projection/source binding mismatch')
+                annotations={r['source_record_id']:r['comparison'] for r in projection['rows']}
+                if len(annotations)!=len(o) or set(annotations)!={r.get('record_id') for r in o}:raise ValueError('comparison projection view census mismatch')
+                inputs.append(dict(source_artifact=item['comparison_annotations'],sha256=sha(annotation_body),rows=len(annotations),kind='source_bound_matched_comparison_annotation_not_extra_evaluation'))
             date_rows={}
             if item.get('dates_projection'):
                 date_body=(root/item['dates_projection']).read_bytes();projection=json.loads(date_body)
@@ -71,7 +82,12 @@ def build(root=ROOT):
                 dates={k:row.get(k) for k in ('evaluation_seasons','evaluation_weeks')}
                 if i in date_rows:dates={k:date_rows[i][k] for k in dates}
                 r=evaluation(row,artifact,year_record=dates);r['source_artifact_sha256']=artifact_sha
+                if date_rows and item.get('empty_dates_policy')=='explicit_empty_supported_scoring_dates' and not dates.get('evaluation_weeks'):
+                    if r['n']!=0:raise ValueError('empty scored-date projection with supported outcomes')
+                    r['weeks']=[];r['seasons']=dates.get('evaluation_seasons',[])
+                    r['dates_missing_reason']='zero_supported_rows_no_scored_weeks'
                 r['source_aggregate_fields']=original
+                if annotations:r['reporting_comparison']=annotations[original['record_id']]
                 if (artifact,tuple(original.get(k)for k in CORRECTION_DIMS)) in corrections:
                     r['accuracy_status']='superseded_float_chart_grid_precision'
                     r['accuracy_missing_reason']='Original floating tolerance rates retained; use the separately versioned exact0.02-grid correction, not a predictive improvement.'
@@ -95,15 +111,31 @@ def build(root=ROOT):
 
 def write(root=ROOT):
     old,records,inputs,base_hash=build(root);out=root/OUTPUT;out.mkdir(parents=True,exist_ok=True)
-    shards=[];buf=[];size=2
+    shards=[];buf=[];size=2;previous=None
+    # Reuse immutable prior shards instead of copying hundreds of MB whenever
+    # a small new wave appends views. Prior record contents must match exactly.
+    existing_ids=set()
+    if (root/PREVIOUS_SHARDED).exists():
+        prior_bytes=(root/PREVIOUS_SHARDED).read_bytes();prior=json.loads(prior_bytes)
+        previous=dict(artifact=PREVIOUS_SHARDED,sha256=sha(prior_bytes),records=prior['record_count'],unchanged=True)
+        current_records={r['test_id']:r for r in records}
+        for part in prior['shards']:
+            body=(root/part['path']).read_bytes()
+            if sha(body)!=part['sha256']:raise ValueError('previous sharded checkpoint changed')
+            for record in json.loads(body):
+                if current_records.get(record['test_id'])!=record:
+                    raise ValueError('previous indexed result changed or lost: '+record['test_id'])
+                existing_ids.add(record['test_id'])
+            shards.append(part)
     def flush():
         nonlocal buf,size
         if not buf:return
-        body=b'['+b','.join(buf)+b']\n';name=f'records-{len(shards):04d}.json'
+        body=b'['+b','.join(buf)+b']\n';name=f'new-records-{len(shards):04d}.json'
         (out/name).write_bytes(body)
         shards.append(dict(path=str((out/name).relative_to(root)),sha256=sha(body),bytes=len(body),records=len(buf)))
         buf=[];size=2
     for record in records:
+        if record['test_id'] in existing_ids:continue
         body=encoded(record)
         if len(body)+3>MAX_SHARD:raise ValueError('single aggregate exceeds shard limit')
         if size+len(body)+1>MAX_SHARD:flush()
@@ -111,7 +143,7 @@ def write(root=ROOT):
     flush()
     # Remove only superseded generated shards after the new source projection succeeds.
     current={Path(s['path']).name for s in shards}
-    for p in out.glob('records-*.json'):
+    for p in out.glob('new-records-*.json'):
         if p.name not in current:p.unlink()
     rows=[current_flat(r) for r in records]
     csv_parts=[]
@@ -131,6 +163,8 @@ def write(root=ROOT):
         summary.append(f'| [{target}](categories/{name}) | {len(selected):,} |')
     manifest=dict(schema_version='v2-sharded-results-index-v2',record_unit='evaluation/output view; not an independent learner, fit, game or player',
         baseline_checkpoint=dict(artifact=BASE,sha256=base_hash,records=len(old['records']),unchanged=True),
+        previous_sharded_checkpoint=previous,
+        comparison_reporting=dict(delta='candidate error minus comparator error; negative favors candidate',relative='delta / comparator error; null when comparator is zero or matching is unestablished',matching='explicit retained-row binding required; equal sample counts alone are insufficient',unreported='UNESTABLISHED with reason; no generic percentage accuracy from error',projection='CSV annotations do not alter source scores, predictions or earlier index bytes'),
         definitions=old['definitions'],precision_definition=old['precision_definition'],
         forbidden_accuracy_conversion=old['forbidden_accuracy_conversion'],input_manifests=inputs,
         record_count=len(records),by_kind=dict(collections.Counter(r['kind'] for r in records)),shards=shards,
@@ -138,9 +172,10 @@ def write(root=ROOT):
     (out/'INDEX_MANIFEST.json').write_text(json.dumps(manifest,indent=2,allow_nan=False)+'\n')
     lines=['# Permanent test results: current index','',
         f"{len(records):,} records: {sum(r['kind']!='software_verification' for r in records):,} evaluation views and {sum(r['kind']=='software_verification' for r in records)} software receipts. Views are not distinct methods or independent NFL samples.",
-        '', '[Filterable CSV parts](CSV_FILES.md) · [Sharded JSON manifest](INDEX_MANIFEST.json) · [Previous immutable checkpoint](../../continuation-20261029/TEST_RESULTS_INDEX.md)',
+        '', '[Filterable CSV parts](CSV_FILES.md) · [Sharded JSON manifest](INDEX_MANIFEST.json) · [Previous immutable checkpoint](../../continuation-20261030/results-index/README.md)',
         '', 'All earlier IDs and losses remain. New registrations retain procedure/history/product, exact panel/population and cohort, dates, denominators, native errors, defined tolerance accuracy, fallback/coverage, uncertainty and recoverable source links. Inspect source aggregate fields for exact cohort and source semantics. Unknowns remain null with reasons. Numeric errors do not become percentage accuracy. Software checks add no NFL observations.',
         '', 'Compare identical games, source vintages, information cutoffs, products and membership. Historical participant panels, original future captures, later partial-week captures and offered-price panels stay distinct. No hindsight-selected winner is credited as a live selector.',
+        '', 'CSV comparison columns show the explicit comparator, paired denominator, candidate-minus-comparator error and relative change. Negative change favors the candidate. A relative change is not accuracy. Null comparisons remain UNESTABLISHED with a reason, including unmatched historical website references. Fallback rate uses the declared forecast-row denominator. Precision columns preserve their exact numerator/denominator and strict/inclusive definitions. Scoring corrections are labeled separately from prediction changes.',
         '', '| Category | Evaluation views |','|---|---:|',*summary,'',
         'Register each new immutable `SCORES.json` or software receipt in `registries/RESULT_ARTIFACTS.json`, run `python tools/build_test_index_v2.py`, and run `python tools/check_result_index_coverage.py`. Each JSON shard stays below12MiB; the old checkpoint is preserved.','']
     (out/'README.md').write_text('\n'.join(lines))

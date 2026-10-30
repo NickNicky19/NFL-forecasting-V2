@@ -1,0 +1,2646 @@
+{
+  "state": "CONFIRMED_OBSERVED_GROUP_WINDOW_SCOPE_ADDENDUM",
+  "protocol_sha256": "a3170d16ad25440a91bf2b8b61cb6cd340c12ebab95ef4a5223485c836c8e028",
+  "source_finding_sha256": "56a5e495d2feadabdfff6973f840b2d36349e66af4c997843977732594ae4933",
+  "affected_source_contexts_by_season": {
+    "2023": 38,
+    "2025": 10,
+    "2026": 11
+  },
+  "affected_fit_receipts": 308,
+  "affected_training_membership_rows_by_target_policy": [
+    {
+      "target": "anytime_td",
+      "policy_id": "H-CURRENT-COMMON",
+      "unique_player_games": 10
+    },
+    {
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "unique_player_games": 55
+    },
+    {
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "unique_player_games": 20
+    },
+    {
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-CURRENT-COMMON",
+      "unique_player_games": 10
+    },
+    {
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "unique_player_games": 55
+    },
+    {
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "unique_player_games": 20
+    },
+    {
+      "target": "rec",
+      "policy_id": "H-CURRENT-COMMON",
+      "unique_player_games": 10
+    },
+    {
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "unique_player_games": 55
+    },
+    {
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "unique_player_games": 20
+    },
+    {
+      "target": "rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "unique_player_games": 10
+    },
+    {
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "unique_player_games": 55
+    },
+    {
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "unique_player_games": 20
+    },
+    {
+      "target": "rush_att",
+      "policy_id": "H-CURRENT-COMMON",
+      "unique_player_games": 10
+    },
+    {
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "unique_player_games": 55
+    },
+    {
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "unique_player_games": 20
+    },
+    {
+      "target": "rush_rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "unique_player_games": 10
+    },
+    {
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "unique_player_games": 55
+    },
+    {
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "unique_player_games": 20
+    },
+    {
+      "target": "rush_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "unique_player_games": 10
+    },
+    {
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "unique_player_games": 55
+    },
+    {
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "unique_player_games": 20
+    }
+  ],
+  "affected_fit_cell_counts": [
+    {
+      "fit_receipt": "FUTURE-anytime_td--H-CURRENT-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 2081
+    },
+    {
+      "fit_receipt": "FUTURE-anytime_td--H-CURRENT-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 2081
+    },
+    {
+      "fit_receipt": "FUTURE-anytime_td--H-MULTI-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 25249
+    },
+    {
+      "fit_receipt": "FUTURE-anytime_td--H-MULTI-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 25249
+    },
+    {
+      "fit_receipt": "FUTURE-anytime_td--H-RECENT-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 8039
+    },
+    {
+      "fit_receipt": "FUTURE-anytime_td--H-RECENT-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 8039
+    },
+    {
+      "fit_receipt": "FUTURE-nick-chart-ppr-v1--H-CURRENT-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 2080
+    },
+    {
+      "fit_receipt": "FUTURE-nick-chart-ppr-v1--H-CURRENT-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 2080
+    },
+    {
+      "fit_receipt": "FUTURE-nick-chart-ppr-v1--H-MULTI-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 25190
+    },
+    {
+      "fit_receipt": "FUTURE-nick-chart-ppr-v1--H-MULTI-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 25190
+    },
+    {
+      "fit_receipt": "FUTURE-nick-chart-ppr-v1--H-RECENT-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 8017
+    },
+    {
+      "fit_receipt": "FUTURE-nick-chart-ppr-v1--H-RECENT-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 8017
+    },
+    {
+      "fit_receipt": "FUTURE-rec--H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 2081
+    },
+    {
+      "fit_receipt": "FUTURE-rec--H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 2081
+    },
+    {
+      "fit_receipt": "FUTURE-rec--H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 25249
+    },
+    {
+      "fit_receipt": "FUTURE-rec--H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 25249
+    },
+    {
+      "fit_receipt": "FUTURE-rec--H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 8039
+    },
+    {
+      "fit_receipt": "FUTURE-rec--H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 8039
+    },
+    {
+      "fit_receipt": "FUTURE-rec_yd--H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 2081
+    },
+    {
+      "fit_receipt": "FUTURE-rec_yd--H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 2081
+    },
+    {
+      "fit_receipt": "FUTURE-rec_yd--H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 25249
+    },
+    {
+      "fit_receipt": "FUTURE-rec_yd--H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 25249
+    },
+    {
+      "fit_receipt": "FUTURE-rec_yd--H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 8039
+    },
+    {
+      "fit_receipt": "FUTURE-rec_yd--H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 8039
+    },
+    {
+      "fit_receipt": "FUTURE-rush_att--H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 2081
+    },
+    {
+      "fit_receipt": "FUTURE-rush_att--H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 2081
+    },
+    {
+      "fit_receipt": "FUTURE-rush_att--H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 25249
+    },
+    {
+      "fit_receipt": "FUTURE-rush_att--H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 25249
+    },
+    {
+      "fit_receipt": "FUTURE-rush_att--H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 8039
+    },
+    {
+      "fit_receipt": "FUTURE-rush_att--H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 8039
+    },
+    {
+      "fit_receipt": "FUTURE-rush_rec_yd--H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 2081
+    },
+    {
+      "fit_receipt": "FUTURE-rush_rec_yd--H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 2081
+    },
+    {
+      "fit_receipt": "FUTURE-rush_rec_yd--H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 25249
+    },
+    {
+      "fit_receipt": "FUTURE-rush_rec_yd--H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 25249
+    },
+    {
+      "fit_receipt": "FUTURE-rush_rec_yd--H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 8039
+    },
+    {
+      "fit_receipt": "FUTURE-rush_rec_yd--H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 8039
+    },
+    {
+      "fit_receipt": "FUTURE-rush_yd--H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 2081
+    },
+    {
+      "fit_receipt": "FUTURE-rush_yd--H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 2081
+    },
+    {
+      "fit_receipt": "FUTURE-rush_yd--H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 25249
+    },
+    {
+      "fit_receipt": "FUTURE-rush_yd--H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 25249
+    },
+    {
+      "fit_receipt": "FUTURE-rush_yd--H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 8039
+    },
+    {
+      "fit_receipt": "FUTURE-rush_yd--H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 8039
+    },
+    {
+      "fit_receipt": "W01-anytime_td-H-MULTI-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 45,
+      "training_n": 23168
+    },
+    {
+      "fit_receipt": "W01-anytime_td-H-MULTI-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 45,
+      "training_n": 23168
+    },
+    {
+      "fit_receipt": "W01-anytime_td-H-RECENT-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 5958
+    },
+    {
+      "fit_receipt": "W01-anytime_td-H-RECENT-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 5958
+    },
+    {
+      "fit_receipt": "W01-nick-chart-ppr-v1-H-MULTI-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 45,
+      "training_n": 23110
+    },
+    {
+      "fit_receipt": "W01-nick-chart-ppr-v1-H-MULTI-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 45,
+      "training_n": 23110
+    },
+    {
+      "fit_receipt": "W01-nick-chart-ppr-v1-H-RECENT-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 5937
+    },
+    {
+      "fit_receipt": "W01-nick-chart-ppr-v1-H-RECENT-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 5937
+    },
+    {
+      "fit_receipt": "W01-rec-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 45,
+      "training_n": 23168
+    },
+    {
+      "fit_receipt": "W01-rec-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 45,
+      "training_n": 23168
+    },
+    {
+      "fit_receipt": "W01-rec-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 5958
+    },
+    {
+      "fit_receipt": "W01-rec-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 5958
+    },
+    {
+      "fit_receipt": "W01-rec_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 45,
+      "training_n": 23168
+    },
+    {
+      "fit_receipt": "W01-rec_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 45,
+      "training_n": 23168
+    },
+    {
+      "fit_receipt": "W01-rec_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 5958
+    },
+    {
+      "fit_receipt": "W01-rec_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 5958
+    },
+    {
+      "fit_receipt": "W01-rush_att-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 45,
+      "training_n": 23168
+    },
+    {
+      "fit_receipt": "W01-rush_att-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 45,
+      "training_n": 23168
+    },
+    {
+      "fit_receipt": "W01-rush_att-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 5958
+    },
+    {
+      "fit_receipt": "W01-rush_att-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 5958
+    },
+    {
+      "fit_receipt": "W01-rush_rec_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 45,
+      "training_n": 23168
+    },
+    {
+      "fit_receipt": "W01-rush_rec_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 45,
+      "training_n": 23168
+    },
+    {
+      "fit_receipt": "W01-rush_rec_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 5958
+    },
+    {
+      "fit_receipt": "W01-rush_rec_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 5958
+    },
+    {
+      "fit_receipt": "W01-rush_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 45,
+      "training_n": 23168
+    },
+    {
+      "fit_receipt": "W01-rush_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 45,
+      "training_n": 23168
+    },
+    {
+      "fit_receipt": "W01-rush_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 5958
+    },
+    {
+      "fit_receipt": "W01-rush_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 5958
+    },
+    {
+      "fit_receipt": "W02-anytime_td-H-MULTI-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 45,
+      "training_n": 23190
+    },
+    {
+      "fit_receipt": "W02-anytime_td-H-MULTI-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 45,
+      "training_n": 23190
+    },
+    {
+      "fit_receipt": "W02-anytime_td-H-RECENT-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 5980
+    },
+    {
+      "fit_receipt": "W02-anytime_td-H-RECENT-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 5980
+    },
+    {
+      "fit_receipt": "W02-nick-chart-ppr-v1-H-MULTI-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 45,
+      "training_n": 23132
+    },
+    {
+      "fit_receipt": "W02-nick-chart-ppr-v1-H-MULTI-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 45,
+      "training_n": 23132
+    },
+    {
+      "fit_receipt": "W02-nick-chart-ppr-v1-H-RECENT-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 5959
+    },
+    {
+      "fit_receipt": "W02-nick-chart-ppr-v1-H-RECENT-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 5959
+    },
+    {
+      "fit_receipt": "W02-rec-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 45,
+      "training_n": 23190
+    },
+    {
+      "fit_receipt": "W02-rec-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 45,
+      "training_n": 23190
+    },
+    {
+      "fit_receipt": "W02-rec-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 5980
+    },
+    {
+      "fit_receipt": "W02-rec-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 5980
+    },
+    {
+      "fit_receipt": "W02-rec_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 45,
+      "training_n": 23190
+    },
+    {
+      "fit_receipt": "W02-rec_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 45,
+      "training_n": 23190
+    },
+    {
+      "fit_receipt": "W02-rec_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 5980
+    },
+    {
+      "fit_receipt": "W02-rec_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 5980
+    },
+    {
+      "fit_receipt": "W02-rush_att-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 45,
+      "training_n": 23190
+    },
+    {
+      "fit_receipt": "W02-rush_att-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 45,
+      "training_n": 23190
+    },
+    {
+      "fit_receipt": "W02-rush_att-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 5980
+    },
+    {
+      "fit_receipt": "W02-rush_att-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 5980
+    },
+    {
+      "fit_receipt": "W02-rush_rec_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 45,
+      "training_n": 23190
+    },
+    {
+      "fit_receipt": "W02-rush_rec_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 45,
+      "training_n": 23190
+    },
+    {
+      "fit_receipt": "W02-rush_rec_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 5980
+    },
+    {
+      "fit_receipt": "W02-rush_rec_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 5980
+    },
+    {
+      "fit_receipt": "W02-rush_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 45,
+      "training_n": 23190
+    },
+    {
+      "fit_receipt": "W02-rush_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 45,
+      "training_n": 23190
+    },
+    {
+      "fit_receipt": "W02-rush_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 5980
+    },
+    {
+      "fit_receipt": "W02-rush_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 5980
+    },
+    {
+      "fit_receipt": "W03-anytime_td-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 4,
+      "training_n": 353
+    },
+    {
+      "fit_receipt": "W03-anytime_td-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 4,
+      "training_n": 353
+    },
+    {
+      "fit_receipt": "W03-anytime_td-H-MULTI-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 49,
+      "training_n": 23521
+    },
+    {
+      "fit_receipt": "W03-anytime_td-H-MULTI-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 49,
+      "training_n": 23521
+    },
+    {
+      "fit_receipt": "W03-anytime_td-H-RECENT-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 14,
+      "training_n": 6311
+    },
+    {
+      "fit_receipt": "W03-anytime_td-H-RECENT-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 14,
+      "training_n": 6311
+    },
+    {
+      "fit_receipt": "W03-nick-chart-ppr-v1-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 4,
+      "training_n": 353
+    },
+    {
+      "fit_receipt": "W03-nick-chart-ppr-v1-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 4,
+      "training_n": 353
+    },
+    {
+      "fit_receipt": "W03-nick-chart-ppr-v1-H-MULTI-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 49,
+      "training_n": 23463
+    },
+    {
+      "fit_receipt": "W03-nick-chart-ppr-v1-H-MULTI-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 49,
+      "training_n": 23463
+    },
+    {
+      "fit_receipt": "W03-nick-chart-ppr-v1-H-RECENT-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 14,
+      "training_n": 6290
+    },
+    {
+      "fit_receipt": "W03-nick-chart-ppr-v1-H-RECENT-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 14,
+      "training_n": 6290
+    },
+    {
+      "fit_receipt": "W03-rec-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 4,
+      "training_n": 353
+    },
+    {
+      "fit_receipt": "W03-rec-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 4,
+      "training_n": 353
+    },
+    {
+      "fit_receipt": "W03-rec-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 49,
+      "training_n": 23521
+    },
+    {
+      "fit_receipt": "W03-rec-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 49,
+      "training_n": 23521
+    },
+    {
+      "fit_receipt": "W03-rec-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 14,
+      "training_n": 6311
+    },
+    {
+      "fit_receipt": "W03-rec-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 14,
+      "training_n": 6311
+    },
+    {
+      "fit_receipt": "W03-rec_yd-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 4,
+      "training_n": 353
+    },
+    {
+      "fit_receipt": "W03-rec_yd-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 4,
+      "training_n": 353
+    },
+    {
+      "fit_receipt": "W03-rec_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 49,
+      "training_n": 23521
+    },
+    {
+      "fit_receipt": "W03-rec_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 49,
+      "training_n": 23521
+    },
+    {
+      "fit_receipt": "W03-rec_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 14,
+      "training_n": 6311
+    },
+    {
+      "fit_receipt": "W03-rec_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 14,
+      "training_n": 6311
+    },
+    {
+      "fit_receipt": "W03-rush_att-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 4,
+      "training_n": 353
+    },
+    {
+      "fit_receipt": "W03-rush_att-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 4,
+      "training_n": 353
+    },
+    {
+      "fit_receipt": "W03-rush_att-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 49,
+      "training_n": 23521
+    },
+    {
+      "fit_receipt": "W03-rush_att-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 49,
+      "training_n": 23521
+    },
+    {
+      "fit_receipt": "W03-rush_att-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 14,
+      "training_n": 6311
+    },
+    {
+      "fit_receipt": "W03-rush_att-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 14,
+      "training_n": 6311
+    },
+    {
+      "fit_receipt": "W03-rush_rec_yd-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 4,
+      "training_n": 353
+    },
+    {
+      "fit_receipt": "W03-rush_rec_yd-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 4,
+      "training_n": 353
+    },
+    {
+      "fit_receipt": "W03-rush_rec_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 49,
+      "training_n": 23521
+    },
+    {
+      "fit_receipt": "W03-rush_rec_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 49,
+      "training_n": 23521
+    },
+    {
+      "fit_receipt": "W03-rush_rec_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 14,
+      "training_n": 6311
+    },
+    {
+      "fit_receipt": "W03-rush_rec_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 14,
+      "training_n": 6311
+    },
+    {
+      "fit_receipt": "W03-rush_yd-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 4,
+      "training_n": 353
+    },
+    {
+      "fit_receipt": "W03-rush_yd-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 4,
+      "training_n": 353
+    },
+    {
+      "fit_receipt": "W03-rush_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 49,
+      "training_n": 23521
+    },
+    {
+      "fit_receipt": "W03-rush_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 49,
+      "training_n": 23521
+    },
+    {
+      "fit_receipt": "W03-rush_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 14,
+      "training_n": 6311
+    },
+    {
+      "fit_receipt": "W03-rush_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 14,
+      "training_n": 6311
+    },
+    {
+      "fit_receipt": "W04-anytime_td-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 6,
+      "training_n": 711
+    },
+    {
+      "fit_receipt": "W04-anytime_td-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 6,
+      "training_n": 711
+    },
+    {
+      "fit_receipt": "W04-anytime_td-H-MULTI-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 51,
+      "training_n": 23879
+    },
+    {
+      "fit_receipt": "W04-anytime_td-H-MULTI-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 51,
+      "training_n": 23879
+    },
+    {
+      "fit_receipt": "W04-anytime_td-H-RECENT-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 16,
+      "training_n": 6669
+    },
+    {
+      "fit_receipt": "W04-anytime_td-H-RECENT-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 16,
+      "training_n": 6669
+    },
+    {
+      "fit_receipt": "W04-nick-chart-ppr-v1-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 6,
+      "training_n": 711
+    },
+    {
+      "fit_receipt": "W04-nick-chart-ppr-v1-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 6,
+      "training_n": 711
+    },
+    {
+      "fit_receipt": "W04-nick-chart-ppr-v1-H-MULTI-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 51,
+      "training_n": 23821
+    },
+    {
+      "fit_receipt": "W04-nick-chart-ppr-v1-H-MULTI-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 51,
+      "training_n": 23821
+    },
+    {
+      "fit_receipt": "W04-nick-chart-ppr-v1-H-RECENT-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 16,
+      "training_n": 6648
+    },
+    {
+      "fit_receipt": "W04-nick-chart-ppr-v1-H-RECENT-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 16,
+      "training_n": 6648
+    },
+    {
+      "fit_receipt": "W04-rec-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 6,
+      "training_n": 711
+    },
+    {
+      "fit_receipt": "W04-rec-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 6,
+      "training_n": 711
+    },
+    {
+      "fit_receipt": "W04-rec-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 51,
+      "training_n": 23879
+    },
+    {
+      "fit_receipt": "W04-rec-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 51,
+      "training_n": 23879
+    },
+    {
+      "fit_receipt": "W04-rec-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 16,
+      "training_n": 6669
+    },
+    {
+      "fit_receipt": "W04-rec-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 16,
+      "training_n": 6669
+    },
+    {
+      "fit_receipt": "W04-rec_yd-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 6,
+      "training_n": 711
+    },
+    {
+      "fit_receipt": "W04-rec_yd-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 6,
+      "training_n": 711
+    },
+    {
+      "fit_receipt": "W04-rec_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 51,
+      "training_n": 23879
+    },
+    {
+      "fit_receipt": "W04-rec_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 51,
+      "training_n": 23879
+    },
+    {
+      "fit_receipt": "W04-rec_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 16,
+      "training_n": 6669
+    },
+    {
+      "fit_receipt": "W04-rec_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 16,
+      "training_n": 6669
+    },
+    {
+      "fit_receipt": "W04-rush_att-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 6,
+      "training_n": 711
+    },
+    {
+      "fit_receipt": "W04-rush_att-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 6,
+      "training_n": 711
+    },
+    {
+      "fit_receipt": "W04-rush_att-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 51,
+      "training_n": 23879
+    },
+    {
+      "fit_receipt": "W04-rush_att-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 51,
+      "training_n": 23879
+    },
+    {
+      "fit_receipt": "W04-rush_att-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 16,
+      "training_n": 6669
+    },
+    {
+      "fit_receipt": "W04-rush_att-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 16,
+      "training_n": 6669
+    },
+    {
+      "fit_receipt": "W04-rush_rec_yd-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 6,
+      "training_n": 711
+    },
+    {
+      "fit_receipt": "W04-rush_rec_yd-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 6,
+      "training_n": 711
+    },
+    {
+      "fit_receipt": "W04-rush_rec_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 51,
+      "training_n": 23879
+    },
+    {
+      "fit_receipt": "W04-rush_rec_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 51,
+      "training_n": 23879
+    },
+    {
+      "fit_receipt": "W04-rush_rec_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 16,
+      "training_n": 6669
+    },
+    {
+      "fit_receipt": "W04-rush_rec_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 16,
+      "training_n": 6669
+    },
+    {
+      "fit_receipt": "W04-rush_yd-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 6,
+      "training_n": 711
+    },
+    {
+      "fit_receipt": "W04-rush_yd-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 6,
+      "training_n": 711
+    },
+    {
+      "fit_receipt": "W04-rush_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 51,
+      "training_n": 23879
+    },
+    {
+      "fit_receipt": "W04-rush_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 51,
+      "training_n": 23879
+    },
+    {
+      "fit_receipt": "W04-rush_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 16,
+      "training_n": 6669
+    },
+    {
+      "fit_receipt": "W04-rush_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 16,
+      "training_n": 6669
+    },
+    {
+      "fit_receipt": "W05-anytime_td-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 7,
+      "training_n": 1065
+    },
+    {
+      "fit_receipt": "W05-anytime_td-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 7,
+      "training_n": 1065
+    },
+    {
+      "fit_receipt": "W05-anytime_td-H-MULTI-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 52,
+      "training_n": 24233
+    },
+    {
+      "fit_receipt": "W05-anytime_td-H-MULTI-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 52,
+      "training_n": 24233
+    },
+    {
+      "fit_receipt": "W05-anytime_td-H-RECENT-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 17,
+      "training_n": 7023
+    },
+    {
+      "fit_receipt": "W05-anytime_td-H-RECENT-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 17,
+      "training_n": 7023
+    },
+    {
+      "fit_receipt": "W05-nick-chart-ppr-v1-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 7,
+      "training_n": 1064
+    },
+    {
+      "fit_receipt": "W05-nick-chart-ppr-v1-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 7,
+      "training_n": 1064
+    },
+    {
+      "fit_receipt": "W05-nick-chart-ppr-v1-H-MULTI-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 52,
+      "training_n": 24174
+    },
+    {
+      "fit_receipt": "W05-nick-chart-ppr-v1-H-MULTI-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 52,
+      "training_n": 24174
+    },
+    {
+      "fit_receipt": "W05-nick-chart-ppr-v1-H-RECENT-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 17,
+      "training_n": 7001
+    },
+    {
+      "fit_receipt": "W05-nick-chart-ppr-v1-H-RECENT-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 17,
+      "training_n": 7001
+    },
+    {
+      "fit_receipt": "W05-rec-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 7,
+      "training_n": 1065
+    },
+    {
+      "fit_receipt": "W05-rec-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 7,
+      "training_n": 1065
+    },
+    {
+      "fit_receipt": "W05-rec-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 52,
+      "training_n": 24233
+    },
+    {
+      "fit_receipt": "W05-rec-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 52,
+      "training_n": 24233
+    },
+    {
+      "fit_receipt": "W05-rec-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 17,
+      "training_n": 7023
+    },
+    {
+      "fit_receipt": "W05-rec-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 17,
+      "training_n": 7023
+    },
+    {
+      "fit_receipt": "W05-rec_yd-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 7,
+      "training_n": 1065
+    },
+    {
+      "fit_receipt": "W05-rec_yd-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 7,
+      "training_n": 1065
+    },
+    {
+      "fit_receipt": "W05-rec_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 52,
+      "training_n": 24233
+    },
+    {
+      "fit_receipt": "W05-rec_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 52,
+      "training_n": 24233
+    },
+    {
+      "fit_receipt": "W05-rec_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 17,
+      "training_n": 7023
+    },
+    {
+      "fit_receipt": "W05-rec_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 17,
+      "training_n": 7023
+    },
+    {
+      "fit_receipt": "W05-rush_att-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 7,
+      "training_n": 1065
+    },
+    {
+      "fit_receipt": "W05-rush_att-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 7,
+      "training_n": 1065
+    },
+    {
+      "fit_receipt": "W05-rush_att-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 52,
+      "training_n": 24233
+    },
+    {
+      "fit_receipt": "W05-rush_att-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 52,
+      "training_n": 24233
+    },
+    {
+      "fit_receipt": "W05-rush_att-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 17,
+      "training_n": 7023
+    },
+    {
+      "fit_receipt": "W05-rush_att-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 17,
+      "training_n": 7023
+    },
+    {
+      "fit_receipt": "W05-rush_rec_yd-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 7,
+      "training_n": 1065
+    },
+    {
+      "fit_receipt": "W05-rush_rec_yd-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 7,
+      "training_n": 1065
+    },
+    {
+      "fit_receipt": "W05-rush_rec_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 52,
+      "training_n": 24233
+    },
+    {
+      "fit_receipt": "W05-rush_rec_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 52,
+      "training_n": 24233
+    },
+    {
+      "fit_receipt": "W05-rush_rec_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 17,
+      "training_n": 7023
+    },
+    {
+      "fit_receipt": "W05-rush_rec_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 17,
+      "training_n": 7023
+    },
+    {
+      "fit_receipt": "W05-rush_yd-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 7,
+      "training_n": 1065
+    },
+    {
+      "fit_receipt": "W05-rush_yd-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 7,
+      "training_n": 1065
+    },
+    {
+      "fit_receipt": "W05-rush_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 52,
+      "training_n": 24233
+    },
+    {
+      "fit_receipt": "W05-rush_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 52,
+      "training_n": 24233
+    },
+    {
+      "fit_receipt": "W05-rush_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 17,
+      "training_n": 7023
+    },
+    {
+      "fit_receipt": "W05-rush_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 17,
+      "training_n": 7023
+    },
+    {
+      "fit_receipt": "W06-anytime_td-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 1417
+    },
+    {
+      "fit_receipt": "W06-anytime_td-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 1417
+    },
+    {
+      "fit_receipt": "W06-anytime_td-H-MULTI-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 24585
+    },
+    {
+      "fit_receipt": "W06-anytime_td-H-MULTI-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 24585
+    },
+    {
+      "fit_receipt": "W06-anytime_td-H-RECENT-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 7375
+    },
+    {
+      "fit_receipt": "W06-anytime_td-H-RECENT-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 7375
+    },
+    {
+      "fit_receipt": "W06-nick-chart-ppr-v1-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 1416
+    },
+    {
+      "fit_receipt": "W06-nick-chart-ppr-v1-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 1416
+    },
+    {
+      "fit_receipt": "W06-nick-chart-ppr-v1-H-MULTI-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 24526
+    },
+    {
+      "fit_receipt": "W06-nick-chart-ppr-v1-H-MULTI-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 24526
+    },
+    {
+      "fit_receipt": "W06-nick-chart-ppr-v1-H-RECENT-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 7353
+    },
+    {
+      "fit_receipt": "W06-nick-chart-ppr-v1-H-RECENT-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 7353
+    },
+    {
+      "fit_receipt": "W06-rec-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 1417
+    },
+    {
+      "fit_receipt": "W06-rec-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 1417
+    },
+    {
+      "fit_receipt": "W06-rec-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 24585
+    },
+    {
+      "fit_receipt": "W06-rec-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 24585
+    },
+    {
+      "fit_receipt": "W06-rec-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 7375
+    },
+    {
+      "fit_receipt": "W06-rec-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 7375
+    },
+    {
+      "fit_receipt": "W06-rec_yd-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 1417
+    },
+    {
+      "fit_receipt": "W06-rec_yd-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 1417
+    },
+    {
+      "fit_receipt": "W06-rec_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 24585
+    },
+    {
+      "fit_receipt": "W06-rec_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 24585
+    },
+    {
+      "fit_receipt": "W06-rec_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 7375
+    },
+    {
+      "fit_receipt": "W06-rec_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 7375
+    },
+    {
+      "fit_receipt": "W06-rush_att-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 1417
+    },
+    {
+      "fit_receipt": "W06-rush_att-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 1417
+    },
+    {
+      "fit_receipt": "W06-rush_att-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 24585
+    },
+    {
+      "fit_receipt": "W06-rush_att-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 24585
+    },
+    {
+      "fit_receipt": "W06-rush_att-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 7375
+    },
+    {
+      "fit_receipt": "W06-rush_att-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 7375
+    },
+    {
+      "fit_receipt": "W06-rush_rec_yd-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 1417
+    },
+    {
+      "fit_receipt": "W06-rush_rec_yd-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 1417
+    },
+    {
+      "fit_receipt": "W06-rush_rec_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 24585
+    },
+    {
+      "fit_receipt": "W06-rush_rec_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 24585
+    },
+    {
+      "fit_receipt": "W06-rush_rec_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 7375
+    },
+    {
+      "fit_receipt": "W06-rush_rec_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 7375
+    },
+    {
+      "fit_receipt": "W06-rush_yd-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 1417
+    },
+    {
+      "fit_receipt": "W06-rush_yd-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 1417
+    },
+    {
+      "fit_receipt": "W06-rush_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 24585
+    },
+    {
+      "fit_receipt": "W06-rush_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 24585
+    },
+    {
+      "fit_receipt": "W06-rush_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 7375
+    },
+    {
+      "fit_receipt": "W06-rush_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 7375
+    },
+    {
+      "fit_receipt": "W07-anytime_td-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 1753
+    },
+    {
+      "fit_receipt": "W07-anytime_td-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 1753
+    },
+    {
+      "fit_receipt": "W07-anytime_td-H-MULTI-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 24921
+    },
+    {
+      "fit_receipt": "W07-anytime_td-H-MULTI-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 24921
+    },
+    {
+      "fit_receipt": "W07-anytime_td-H-RECENT-COMMON-D1-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 7711
+    },
+    {
+      "fit_receipt": "W07-anytime_td-H-RECENT-COMMON-D2-FIT.json",
+      "target": "anytime_td",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 7711
+    },
+    {
+      "fit_receipt": "W07-nick-chart-ppr-v1-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 1752
+    },
+    {
+      "fit_receipt": "W07-nick-chart-ppr-v1-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 1752
+    },
+    {
+      "fit_receipt": "W07-nick-chart-ppr-v1-H-MULTI-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 24862
+    },
+    {
+      "fit_receipt": "W07-nick-chart-ppr-v1-H-MULTI-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 24862
+    },
+    {
+      "fit_receipt": "W07-nick-chart-ppr-v1-H-RECENT-COMMON-D1-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 7689
+    },
+    {
+      "fit_receipt": "W07-nick-chart-ppr-v1-H-RECENT-COMMON-D2-FIT.json",
+      "target": "nick-chart-ppr-v1",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 7689
+    },
+    {
+      "fit_receipt": "W07-rec-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 1753
+    },
+    {
+      "fit_receipt": "W07-rec-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 1753
+    },
+    {
+      "fit_receipt": "W07-rec-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 24921
+    },
+    {
+      "fit_receipt": "W07-rec-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 24921
+    },
+    {
+      "fit_receipt": "W07-rec-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 7711
+    },
+    {
+      "fit_receipt": "W07-rec-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 7711
+    },
+    {
+      "fit_receipt": "W07-rec_yd-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 1753
+    },
+    {
+      "fit_receipt": "W07-rec_yd-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 1753
+    },
+    {
+      "fit_receipt": "W07-rec_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 24921
+    },
+    {
+      "fit_receipt": "W07-rec_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 24921
+    },
+    {
+      "fit_receipt": "W07-rec_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 7711
+    },
+    {
+      "fit_receipt": "W07-rec_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 7711
+    },
+    {
+      "fit_receipt": "W07-rush_att-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 1753
+    },
+    {
+      "fit_receipt": "W07-rush_att-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 1753
+    },
+    {
+      "fit_receipt": "W07-rush_att-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 24921
+    },
+    {
+      "fit_receipt": "W07-rush_att-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 24921
+    },
+    {
+      "fit_receipt": "W07-rush_att-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 7711
+    },
+    {
+      "fit_receipt": "W07-rush_att-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_att",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 7711
+    },
+    {
+      "fit_receipt": "W07-rush_rec_yd-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 1753
+    },
+    {
+      "fit_receipt": "W07-rush_rec_yd-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 1753
+    },
+    {
+      "fit_receipt": "W07-rush_rec_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 24921
+    },
+    {
+      "fit_receipt": "W07-rush_rec_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 24921
+    },
+    {
+      "fit_receipt": "W07-rush_rec_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 7711
+    },
+    {
+      "fit_receipt": "W07-rush_rec_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_rec_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 7711
+    },
+    {
+      "fit_receipt": "W07-rush_yd-H-CURRENT-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 10,
+      "training_n": 1753
+    },
+    {
+      "fit_receipt": "W07-rush_yd-H-CURRENT-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-CURRENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 10,
+      "training_n": 1753
+    },
+    {
+      "fit_receipt": "W07-rush_yd-H-MULTI-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 55,
+      "training_n": 24921
+    },
+    {
+      "fit_receipt": "W07-rush_yd-H-MULTI-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-MULTI-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 55,
+      "training_n": 24921
+    },
+    {
+      "fit_receipt": "W07-rush_yd-H-RECENT-COMMON-D1-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D1",
+      "affected_training_rows": 20,
+      "training_n": 7711
+    },
+    {
+      "fit_receipt": "W07-rush_yd-H-RECENT-COMMON-D2-FIT.json",
+      "target": "rush_yd",
+      "policy_id": "H-RECENT-COMMON",
+      "information_group": "D2",
+      "affected_training_rows": 20,
+      "training_n": 7711
+    }
+  ],
+  "affected_historical_query_windows": [
+    {
+      "target": "anytime_td",
+      "feature_floor": 2022,
+      "n": 11
+    },
+    {
+      "target": "nick-chart-ppr-v1",
+      "feature_floor": 2022,
+      "n": 11
+    },
+    {
+      "target": "rec",
+      "feature_floor": 2022,
+      "n": 11
+    },
+    {
+      "target": "rec_yd",
+      "feature_floor": 2022,
+      "n": 11
+    },
+    {
+      "target": "rush_att",
+      "feature_floor": 2022,
+      "n": 11
+    },
+    {
+      "target": "rush_rec_yd",
+      "feature_floor": 2022,
+      "n": 11
+    },
+    {
+      "target": "rush_yd",
+      "feature_floor": 2022,
+      "n": 11
+    }
+  ],
+  "redacted_example": [
+    {
+      "query_game_id": "2026_01_BUF_HOU",
+      "position": "TE",
+      "defense": "BUF",
+      "feature_floor": 2022,
+      "scheduled_last4": [
+        "2025_15_BUF_NE",
+        "2025_16_BUF_CLE",
+        "2025_17_PHI_BUF",
+        "2025_18_NYJ_BUF"
+      ],
+      "actual_observed_last4": [
+        "2025_14_CIN_BUF",
+        "2025_15_BUF_NE",
+        "2025_16_BUF_CLE",
+        "2025_17_PHI_BUF"
+      ],
+      "description": "Redactedgroup-windowexample; no playeridentity, label, forecast or proposedcorrectedscorepublished."
+    }
+  ],
+  "interpretation": "Onlywindowmembership discrepancy; somechangedwindowscanproduceidenticalnumericfeatures. Frozenv1methodlast4observedqualified-positiongroups. Calendarunknownpaddingrequiresnewregisteredmechanism; no correctedforecastsorfitsemitted.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

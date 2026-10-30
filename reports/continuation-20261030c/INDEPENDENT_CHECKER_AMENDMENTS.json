@@ -1,0 +1,88 @@
+{
+  "record_kind": "SOFTWARE_REVIEW_ATTEMPTS_NO_NFL_FITS",
+  "scope": "Visible independent-checker iterations during this checkpoint; does not replace the execution registry or claim a complete process/CPU census.",
+  "attempts": [
+    {
+      "checker": "check_defense_features_independent.py",
+      "initial_state": "PASS_WITH_NARROWER_SAMPLE_THAN_INTENDED",
+      "finding": "Future-first sample keys suppressed fitted historical samples; initial receipt covered48 historical fallback laws.",
+      "correction": "Separate future/historical sample keys; final retained review covers144 historical fitted/fallback laws. Producer results unchanged.",
+      "initial_wall_seconds": 37.595197407999876,
+      "initial_cpu_seconds": 36.931734184999996
+    },
+    {
+      "checker": "check_season_features_independent.py",
+      "initial_state": "FAILED_CHECKER_ASSERTION",
+      "finding": "Checker equated unique serialized hashes with retained fit artifacts. Distinct fits can serialize identical model bytes.",
+      "correction": "Separate artifact paths, alias references and unique hashes.2025 has4294 retained artifact paths and4166 distinct hashes. All source/producer outputs unchanged.",
+      "initial_wall_seconds": null,
+      "initial_cpu_seconds": null,
+      "missing_reason": "Failed-process resource receipt not retained."
+    },
+    {
+      "checker": "check_season_features_independent.py",
+      "initial_state": "FAILED_CHECKER_PRODUCT_LOOKUP",
+      "finding": "Version-suffix heuristic missed the original absolute_loss_point alias in the v2-continuity run.",
+      "correction": "Use the exact frozen method/product registration; final2024 feature/model replay passes. No producer alias or forecast changed.",
+      "initial_wall_seconds": null,
+      "initial_cpu_seconds": null,
+      "missing_reason": "Failed-process resource receipt not retained."
+    },
+    {
+      "checker": "check_server_r0_independent.py",
+      "initial_state": "FAILED_CHECKER_TARGET_LOOKUP",
+      "finding": "Checker incorrectly tested category membership against prose containing fpts.",
+      "correction": "Use explicit target enumeration. fpts remains incomparable with Nick chart; no PPR label fabricated.",
+      "initial_wall_seconds": null,
+      "initial_cpu_seconds": null,
+      "missing_reason": "Failed-process resource receipt not retained."
+    },
+    {
+      "checker": "check_server_r0_independent.py",
+      "initial_state": "FAILED_CHECKER_UNSCORED_CANDIDATE_LOOKUP",
+      "finding": "Checker initially filtered missing-actual C02 candidates that the producer correctly retained in its private issuance manifest.",
+      "correction": "Keep those candidate records with null actuals; supported paired metrics remain conditional on valid labels.",
+      "initial_wall_seconds": null,
+      "initial_cpu_seconds": null,
+      "missing_reason": "Failed-process resource receipt not retained."
+    },
+    {
+      "checker": "check_fallback_continuity_independent.py",
+      "initial_state": "PASS_REPEATED_WITH_CLOSED_FORM_PRIOR_POINTS",
+      "finding": "Initial independent PMF enumeration was unnecessarily expensive for a point-only fallback comparison.",
+      "correction": "Replaced enumeration with exact zero/Bernoulli/geometric/symmetric-signed prior mean/median formulas. Both attempts produced identical retained review JSON. No models fitted or forecasts changed.",
+      "initial_wall_seconds": null,
+      "initial_cpu_seconds": null,
+      "missing_reason": "First process completed before an attempted interrupt; it emitted no resource receipt."
+    },
+    {
+      "checker": "season2023 continuation prefit metadata",
+      "initial_state": "FAILED_LOCAL_PATH_LOOKUP",
+      "finding": "Verifier used an incorrect local companion-directory name before checking existing admitted files.",
+      "correction": "Located the existing frozen query packet and completed hash/subset checks. No source acquisition or producer mutation.",
+      "initial_wall_seconds": null,
+      "initial_cpu_seconds": null,
+      "missing_reason": "Short failed metadata check had no separate resource receipt."
+    },
+    {
+      "checker": "check_season_subgroups_bounded.py",
+      "initial_state": "FAILED_CHECKER_SCHEMA_ASSUMPTIONS",
+      "finding": "The bounded checker initially treated fallback_source_counts as including ordinary none routes and required literal Infinity instead of the compact scorer explicit null+NLL_state=INFINITE representation.",
+      "correction": "Preserved producer schema, checked fallback-only source census and explicit infinity state/count; final908fullsystemviews passed. No source predictions or scores changed.",
+      "initial_wall_seconds": null,
+      "initial_cpu_seconds": null,
+      "missing_reason": "Failed-checker processes had no separate resource receipts."
+    }
+  ],
+  "final_reviews": [
+    "DEFENSE_FEATURE_MODEL_INDEPENDENT_REVIEW.json",
+    "SEASON_2025_FEATURE_MODEL_INDEPENDENT_REVIEW.json",
+    "SEASON_2024_FEATURE_MODEL_INDEPENDENT_REVIEW.json",
+    "SERVER_R0_INDEPENDENT_REVIEW.json",
+    "FALLBACK_CONTINUITY_INDEPENDENT_REVIEW.json",
+    "SEASONAL_CONTINUATION_PREFIT_INDEPENDENT_REVIEW.json"
+  ],
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current_2026_week8_outcomes_read": 0
+}

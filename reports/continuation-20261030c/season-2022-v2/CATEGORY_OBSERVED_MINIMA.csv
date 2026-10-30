@@ -1,0 +1,13 @@
+target,metric,procedure_id,product_id,history_regime,policy_id,native_error,n,games
+pass_yd,mae,empirical-player-history-control-v1,mean,H-CURRENT,H-CURRENT-EMPIRICAL,78.08163090112421,633,271
+pass_td,mae,hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory,absolute_error_point,H-CURRENT,H-CURRENT-COMMON,0.8877038572874445,633,271
+pass_cmp,mae,empirical-player-history-control-v1,mean,H-CURRENT,H-CURRENT-EMPIRICAL,6.7984187887700935,633,271
+pass_att,mae,v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory,poisson_intended_mean_point,H-CURRENT,H-CURRENT-COMMON,10.06058679553215,633,271
+pass_int,mae,v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory,lower_median,H-CURRENT,H-CURRENT-COMMON,0.665086887835703,633,271
+rush_yd,mae,empirical-player-history-control-v1,lower_median,H-CURRENT,H-CURRENT-EMPIRICAL,19.430713312130848,2201,271
+rush_att,mae,empirical-player-history-control-v1,mean,H-CURRENT,H-CURRENT-EMPIRICAL,3.4530778528123323,2201,271
+rec,mae,empirical-player-history-control-v1,lower_median,H-CURRENT,H-CURRENT-EMPIRICAL,1.4625049077345897,5094,271
+rec_yd,mae,hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory,absolute_error_point,H-CURRENT,H-CURRENT-COMMON,18.169745217928696,5094,271
+rush_rec_yd,mae,hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory,absolute_error_point,H-CURRENT,H-CURRENT-COMMON,23.884878605082985,5094,271
+anytime_td,brier,hgb-direct-history-controls-v1:log_loss_probability:common-feature-memory,log_loss_probability,H-CURRENT,H-CURRENT-COMMON,0.15393980201366747,5094,271
+nick-chart-ppr-v1,mae,v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory,lower_median,H-CURRENT,H-CURRENT-COMMON,5.173704092339979,5718,271

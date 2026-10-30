@@ -22,7 +22,7 @@ software verification, retrospective diagnostics and original pregame forecasts
 as separate evidence kinds.
 
 The October29 complete index is immutable. Current evaluations use
-`tools/build_test_index_v2.py` and the pointer in
+`tools/build_test_index_v3.py` (streaming append; retain v2 for historical replay) and the pointer in
 `registries/CURRENT_RESULTS_INDEX.json`, with bounded JSON/CSV parts. Preserve
 all old IDs, source bytes, failures and original future captures. Register
 supplemental `*SCORES.json` artifacts as well as canonical `SCORES.json`.

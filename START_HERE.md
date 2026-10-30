@@ -1,5 +1,7 @@
 # NFL Forecasting V2
 
+**Current checkpoint: [all twelve targets across2022–2025, shared subgroups and new information tests](reports/continuation-20261030c/README.md).** [Permanent accuracy/error index](reports/continuation-20261030c/results-index/README.md) · [Season/category results](reports/continuation-20261030c/TWELVE_CATEGORY_SUMMARY.md) · [Future/release handoff](reports/continuation-20261030c/FUTURE_CAPTURE_AND_RELEASE_HANDOFF.md). Accepted `fcfe6063` and all earlier evidence remain immutable. Private forecast packets are restored; some historical/model archives remain quota-blocked. No merge, deployment or website selection is authorized. Earlier checkpoint descriptions below record their historical state.
+
 **Current executed checkpoint: [availability A/B/C, strongest controls and explicit-lag ablation](reports/continuation-20261030b/README.md).** [Permanent accuracy/error index](reports/continuation-20261030b/results-index/README.md) · [Future versions and release requirements](reports/continuation-20261030b/FUTURE_CAPTURE_AND_RELEASE_HANDOFF.md). Prior checkpoints below remain immutable.
 
 **Latest executed checkpoint: [October30 results, twelve targets and new partial-week forecasts](reports/continuation-20261030/README.md).** [Current accuracy/error index](reports/continuation-20261030/results-index/README.md) · [Category changes](reports/continuation-20261030/TWELVE_CATEGORY_SUMMARY.md) · [Future coverage](reports/continuation-20261030/FUTURE_CAPTURE_AND_RELEASE_HANDOFF.md). The October29 checkpoint below is preserved.

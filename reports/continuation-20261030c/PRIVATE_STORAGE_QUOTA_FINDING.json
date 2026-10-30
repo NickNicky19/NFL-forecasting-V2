@@ -1,0 +1,43 @@
+{
+  "artifact_id": "V2-PRIVATE-SEASON-2024-V2",
+  "state": "DURABLE_RESTORATION_BLOCKED_STORAGE_QUOTA",
+  "archive_bytes": 464346512,
+  "archive_sha256": "c34e10c5e8f70b2c65fa4f9b7a17407ac1defafb4d141b688773551cc7dc0fbb",
+  "expected_parts": 23,
+  "uploaded_parts": 11,
+  "missing_parts": [
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "provider_error": "403 storageQuotaExceeded: user Drive storage quota exceeded",
+  "automatic_approval_rejection": false,
+  "local_archive_and_all_parts_preserved": true,
+  "uploaded_parts_preserved": true,
+  "full_archive_fresh_restoration_verified": false,
+  "raw_rows_or_private_locators_published": false,
+  "action": "Ownerfreeapprovedstorecapacityorpinapprovedprivatealternative;doNOTdeleteprojectevidencetofreespace",
+  "numerical_evidence": "Localretainedrowsareindependentlyreplayablebutexternaldurabilitygapblocksreadiness",
+  "uploaded_parts_fresh_download_verified": 11,
+  "uploaded_part_bytes_verified": 212688272,
+  "partial_part_restore_does_not_restore_full_archive": true,
+  "small_strict_HGB_full_archive_restored": true,
+  "small_D1_D2_forecast_packet_restored": true,
+  "small_replay_archive_attempt_bytes": 1823030,
+  "small_replay_archive_status": "FAILED_403_STORAGE_QUOTA_ALL_LOCAL_FILES_PRESERVED",
+  "historical_complete_archives_not_uploaded": [
+    "V2-PRIVATE-SEASON-2023-COMPLETE-V1",
+    "V2-PRIVATE-SEASON-2022-V2",
+    "V2-PRIVATE-DEFENSE-AND-REPLAYS-V1"
+  ],
+  "future_evidence": "Allnewforecastvaluesdurablyrestored;D1D2modelsremainlocalonly,strictHGBmodelsfullyrestored"
+}

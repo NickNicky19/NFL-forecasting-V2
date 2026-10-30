@@ -1,0 +1,100 @@
+{
+  "state": "PASS_ALL_LEARNED_ANNOTATION_METADATA_AND_THREE_INDEPENDENT_RAW_MASK_CASES",
+  "source_protocol_sha256": "a69478a24c14901a2c91d46d2bea91981611256314090fccc4cb337a426b1879",
+  "source_receipt_sha256": "d9c252d5ea57ba3a2f965c2c4fab352873f3e5229bd1f9f63bacbf7cf078343b",
+  "sources": [
+    {
+      "source": "season-2025-v1",
+      "new_annotation_sha256": "e64edefa9229578ca10dc1ec63df058a2785c413d9a3c7486601a717a443617d",
+      "learned_views": 678
+    },
+    {
+      "source": "season-2024-v2",
+      "new_annotation_sha256": "7272e1a6ff25642ba50e01ef68b65f0fc102d27131fd5078dddfba336f7f4f88",
+      "learned_views": 678
+    },
+    {
+      "source": "season-2023-complete-replay-v1",
+      "new_annotation_sha256": "d7a1df3e667297388e0f79094ecd733635ec115e18a606ba14f2a48684f65dc0",
+      "learned_views": 678
+    },
+    {
+      "source": "season-2022-v2",
+      "new_annotation_sha256": "d497ece0dd5939f23707eb7de0ee13ddfd1ac28977c7675c287cc00db4cf8a4d",
+      "learned_views": 678
+    },
+    {
+      "source": "season-2025-continuity-repair-v1",
+      "new_annotation_sha256": "ed845d06157879d32869f07d204757224071303851bd88df2b317f37ff4888ee",
+      "learned_views": 8
+    }
+  ],
+  "checks": {
+    "unchanged_original_annotation_objects": 56536,
+    "all_learned_candidate_loss_n_mask_and_control_metadata": 2720,
+    "baseline_exact_tolerance_numerator_denominators": 19040,
+    "raw_join_qid_membership_loss_precision_500bootstrap_gameSE_cases": 3
+  },
+  "representative_cases": [
+    {
+      "label": "empirical_bug_case",
+      "source_row_index": 40,
+      "target": "anytime_td",
+      "procedure_id": "empirical-player-history-control-v1",
+      "policy_id": "H-CURRENT-EMPIRICAL",
+      "n": 4524,
+      "candidate_error": 0.17003109281640105,
+      "control_error": 0.15407849021692346,
+      "delta": 0.01595260259947759,
+      "week_interval": [
+        0.007169378130547866,
+        0.028510188490848697
+      ]
+    },
+    {
+      "label": "win",
+      "source_row_index": 2245,
+      "target": "pass_att",
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+      "policy_id": "H-CURRENT-COMMON",
+      "n": 547,
+      "candidate_error": 8.823657784804755,
+      "control_error": 9.06373615329366,
+      "delta": -0.24007836848890277,
+      "week_interval": [
+        -0.6157862819546545,
+        0.14872522553759135
+      ]
+    },
+    {
+      "label": "loss",
+      "source_row_index": 2846,
+      "target": "rush_att",
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+      "policy_id": "H-CURRENT-COMMON",
+      "n": 1968,
+      "candidate_error": 6.220298668288911,
+      "control_error": 3.1329493335011542,
+      "delta": 3.087349334787757,
+      "week_interval": [
+        2.8924503825842183,
+        3.2916467222483985
+      ]
+    }
+  ],
+  "scope": "All2720newlearnedannotationscandidate/controlmetadata+precisiondenominators; threesaved-rowmask/loss/500bootstrap/gameSEreplaysincludingempiricalbugcase. Originalfullsystemannotationsunchanged; notevery2720rawsubsetindependentlyreplayed.",
+  "producer_resource_cumulative": {
+    "raw_rows_decoded": 8117773,
+    "wall_seconds": 138.118105395999,
+    "cpu_seconds": 137.992774862,
+    "note": "Rowcapspersealedattempt; aggregateincludesfailedv1readagain. No newNFLsamples orfits."
+  },
+  "resource": {
+    "wall_seconds": 20.261685452000165,
+    "cpu_seconds": 20.255854204000002,
+    "peak_rss_bytes": 344481792
+  },
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

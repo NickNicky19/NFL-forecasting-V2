@@ -1,0 +1,30 @@
+# Defense information hypothesis and remaining pathways
+
+D1/D2 are new **versions of an opponent-information ablation**, not a first discovery of defense adjustment or a new learner family. Their control is the retained V2 ordered Leaf-CDF, which consumes only its20own-player history/position features. The candidate keeps that learner, training rows, priors, fit/update rule and fallback and adds one declared information group.
+
+Read-only pinned upstream code at[b246e44](https://github.com/NickNicky19/NFL-forecasting/tree/b246e44b5fa85ea46a0b6294d1347709933a5fb2) already implements:
+
+- [features.py:183](https://github.com/NickNicky19/NFL-forecasting/blob/b246e44b5fa85ea46a0b6294d1347709933a5fb2/nfl_lab/features.py#L183): earlier all-position team allowed totals, mean3; this differs from D1's same-position qualified-row game observations, mean4 and completeness/row-count features.
+- [features.py:188](https://github.com/NickNicky19/NFL-forecasting/blob/b246e44b5fa85ea46a0b6294d1347709933a5fb2/nfl_lab/features.py#L188): pass/rush-yard opponent-adjusted earlier8game residuals, with4league-prior-game shrinkage. D2 is not that offense-strength residual algorithm: it adds matched-exposure rates,20compatible-exposure-unit shrinkage toward the earlier position/target league rate, rate-minus-league, support and age.
+- [models.py:29](https://github.com/NickNicky19/NFL-forecasting/blob/b246e44b5fa85ea46a0b6294d1347709933a5fb2/nfl_lab/models.py#L29): a Ridge-without-opponent family already exists. The scoped inherited inventory also retains NGS and scheme/pace additions and their losses. Those results are not erased or called untested.
+
+The actual pinned Git objects were inspected without modifying upstream. `features.py` Git blob5bb94a27badbcaa8217fbde292d1d0c94b65300c, SHA256e593d4330f83b69be5dc3a3e2e49d5b5f173a3f7f7a7d11e850f2a53e8a7ce40; `models.py` blob6a3f6d5b8635fb836e726ceb4fe9c7252df6d958, SHA2560672825fc5d08b882a31ec6906b0618b4766bbb7f38bd05baf791aab37ceccb1. A separately cached text copy had one additional newline and was not falsely identified as the pinned object. This is a scoped equivalence check, not a lifetime-private-attempt census.
+
+D1/D2 therefore ask a narrower, still useful question: **does this explicitly defined opponent group improve the same current V2 learner on identical games and training rows?** D2 versus D1 separately tests the compatible rate group after raw prior allowed production/coverage is present. Neither feature importance nor a lower error alone would establish causal defensive talent. Source observations remain partial qualified-position populations, not complete official team totals. Missing labels/nonappearance proof keep entire relevant group observations incomplete; no missing player is assigned zero production.
+
+The category menu still has substantive gaps after the direct controls and C02:
+
+| Categories/pathways | Existing executed related work | Remaining distinct mechanism or information requirement |
+| --- | --- | --- |
+|PY1/PA1/PC1/PT1/PI1|Direct HGB, Leaf-CDF/GLM laws, three fitting windows and strict-current reconstruction|Qualified receiver/QB availability, replacement/full-limited role information; D1/D2 test only the narrow opponent group.|
+|PY2/PA2/PC2/PC4/PT2/PT3/PI2/PI4|Empirical and direct marginal controls; legacy workload recipes/held-volume losses retained|Coherent uncertain attempts/completions/risk/scoring allocation, upstream earlier-out-of-fold exposure or integration over forecast exposure.|
+|RA1/RY1/R1/REY1/RR1/AT1|Direct ordered controls, objective/count/role repairs, C02; subgroup losses retained|Qualified teammate/current-role additions held separate from learner changes; no invented injury coefficients.|
+|RA2/RA3/RA4/RY2/R2/REY2/RR2/AT2/AT3/AT4|Legacy dynamic workload and component/copula losses retained|Finite team allocation with other-player bucket, changing role scenarios, signed gain compounding and valid nonlinear TD mixtures; genuinely new hypotheses required after prior losses.|
+|PY3/RY3/PC3/R4/REY3/PI3|Genuine marginal Leaf/GLM laws; inherited NGS/FTN/schema work and failures documented|Source-timed targeted tracking/catch/risk features and exposure definitions. No target-game NGS, missing-player zero fill or unchanged retry of failed risk models.|
+|PY4/PA4/RY4/R5/REY4/PPR3|Simple analog/ordered controls and legacy retrieval proposals inventoried|TabICLv2 version/license/runtime/pretrained-data qualification; learned chronological retrieval requires a distinct tested mechanism, sparse-player fallback and bounded budget.|
+|R3|Target/share controls exist|Actual all-player route participation denominator with live/as-of delivery rights. Snaps and public primary-receiver route fields cannot fill this cell.|
+|PY5/PA5/PC5/PT5/PI5/RY5/REY5/RR5/AT5|Recorded thresholds/site/provider rows retained at their actual source/horizon level|Authenticated same-time real offers, prices, settlement and private producer exports. Missing prices block ROI, not all point evaluation. No second odds collector.|
+|RR3/RR4/PPR4/PPR5|Direct total laws/means; qualified partial exact-chart labels; old independent-sum/copula losses retained|New shared-scenario joint/component laws or regularized reconciliation; coherent means versus medians and rare-credit uncertainty. No component-median sum presented as fantasy median.|
+|PPR1/PPR2|Same-qualified-chart Leaf/GLM controls and empirical mean/median; C02 retains exact median precision|A small separately declared chart HGB/categorical direct library remains distinct; unlisted chart HGB recipes were not invented just to fill an older-season grid.|
+
+The best immediate information test is D1/D2 because the already admitted source supports exact game/team/opponent identities, explicit opportunity denominators and conservative earlier cutoffs without acquiring a new restricted source. Its practical value remains unestablished until its registered comparisons execute. The stronger role/availability and route/joint-process pathways remain separate and should not be marked complete by this narrow test.

@@ -23,11 +23,24 @@ def read_bound(binding, path_key="path"):
 def main():
     pointer = json.loads((ROOT / "registries/CURRENT_RESULTS_INDEX.json").read_text())
     default = json.loads(read_bound(pointer["default_score_version_manifest"]))
-    if pointer["manifest"] != default["audit_manifest"]:
-        raise ValueError("Legacy audit index binding changed")
     audit_body = (ROOT / default["audit_manifest"]).read_bytes()
     if hashlib.sha256(audit_body).hexdigest() != default["audit_manifest_sha256"]:
         raise ValueError("Immutable all-audit index changed")
+    if pointer['manifest']!=default['audit_manifest']:
+        # A new product may append scores while the fixed numerical projection
+        # still binds its original, unchanged panel and audit ancestor.
+        current=json.loads((ROOT/pointer['manifest']).read_text())
+        ancestor=current;visited=set()
+        while True:
+            edge=ancestor.get('previous_sharded_checkpoint')
+            if not edge or edge['artifact']in visited:
+                raise ValueError('Canonical numerical audit is not a retained ancestor')
+            visited.add(edge['artifact'])
+            body=read_bound(edge,'artifact');ancestor=json.loads(body)
+            if edge['artifact']==default['audit_manifest']:break
+        current_parts={p['path']:p for p in current['shards']}
+        if any(current_parts.get(p['path'])!=p for p in json.loads(audit_body)['shards']):
+            raise ValueError('Append replaced a numerical audit shard')
     selected = json.loads(read_bound(default["selected_ids"]))
     if len(selected) != len(set(selected)):
         raise ValueError("Duplicate canonical evaluation IDs")

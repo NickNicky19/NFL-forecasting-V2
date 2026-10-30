@@ -8,3 +8,9 @@ private/
 .env*
 build/
 *.egg-info/
+
+# Preserve these local derived delivery drafts without republishing historical CSVs.
+# Complete scientific JSON and the compact current delivery remain in Git.
+/reports/prop-grading-20261030e/results-index*/**/*.csv
+/reports/prop-grading-20261030e/results-index*/README.md
+/reports/prop-grading-20261030e/results-index*/CSV_FILES.md

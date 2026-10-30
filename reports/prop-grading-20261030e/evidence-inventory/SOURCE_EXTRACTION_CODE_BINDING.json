@@ -1,0 +1,19 @@
+{
+  "state": "PASS_SOURCE_BOUND_PORTABLE_METADATA_PROJECTION",
+  "protocol_sha256": "8e5bf0778d8f625598447b130f966e6012898aef0018d8e00a68ae3091ebc992",
+  "portable_code_path": "nfl_v2/prop_evidence_metadata.py",
+  "portable_code_sha256": "ed430914f04c0a4383281b6bbe977df9f3e793fddb49616dd3fd38a1ae931abd",
+  "original_extraction_code_artifact_id": "V2-PROP-METADATA-EXTRACTION-CODE-V1",
+  "original_extraction_code_sha256": "b29182199425f4b1850998b0d7187d758f0efef603070114d21fa547300734b5",
+  "original_panel_freeze_code_artifact_id": "V2-PROP-PANEL-FREEZE-CODE-V1",
+  "original_panel_freeze_code_sha256": "87be8618c78623370e743832785d2bd3084a9cdfa2c78133dda3b60e47b64763",
+  "portable_export_semantics": "Same lexical metadata parser; original invocation paths retained privately; new module adds raw object-span iterator for metadata-first panel-only outcome join",
+  "decoder_policy": "JSONdecode keys and whitelisted offer/clock/identity/selection scalar fields only; skip unknown numeric/string scalars lexically, including actual/outcome/statistics/forecast-target values. Join extension may decode whole records only after their metadata matches alreadyfrozen285panel keys.",
+  "source_sha256": "e33bda264b397ca9a038e8d01e30caf71c615fd957d0e7f0b911c4c4ff39156e",
+  "rows": 2289,
+  "skipped_nonmetadata_scalar_tokens": 18323,
+  "projection_equal_original": true,
+  "new_labels_decoded": 0,
+  "new_fits": 0,
+  "new_forecasts": 0
+}

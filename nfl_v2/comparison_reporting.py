@@ -41,6 +41,8 @@ def comparison_fields(record, annotation=None):
         fields.update(comparison_status='NOT_APPLICABLE_SOFTWARE', prediction_or_scoring_change='software_verification',
                       comparison_missing_reason='Software fixtures have no NFL forecast error comparison.')
         return fields
+    if record.get('kind')=='prop_selection_evaluation':
+        fields['prediction_or_scoring_change']='retained_selection_grading_or_reporting_view;no_new_forecast'
     fallback = record.get('fallback_rows')
     denominator = record.get('forecast_or_offered_rows')
     if fallback is not None and denominator and 0 <= fallback <= denominator:
@@ -56,7 +58,7 @@ def comparison_fields(record, annotation=None):
     if not annotation.get('membership_sha256') or not annotation.get('comparator_procedure_id'):
         raise ValueError('comparison membership and comparator identity required')
     metric = annotation.get('metric')
-    if metric not in {'mae', 'mse', 'rmse', 'brier', 'crps', 'nll', 'log_loss'}:
+    if metric not in {'mae', 'mse', 'rmse', 'brier', 'crps', 'nll', 'log_loss','selection_loss_rate'}:
         raise ValueError('unsupported comparison metric')
     paired_n = annotation.get('paired_n')
     if not isinstance(paired_n, int) or isinstance(paired_n, bool) or paired_n <= 0:

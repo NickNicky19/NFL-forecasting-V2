@@ -1,0 +1,61 @@
+{
+  "schema": "v2-current-prop-scoreboard-view-v1",
+  "source_scores": {
+    "path": "reports/prop-grading-20261030e/actual-side-projection-v2/SCORES.json",
+    "sha256": "cccb984588eb0027c7dcd483001fe60116f740d6b7d9bfba5b49d92bb6a21e08"
+  },
+  "metadata": {
+    "path": "reports/prop-grading-20261030e/actual-side-projection-v2/METADATA_SUPPLEMENT.json",
+    "sha256": "52c7a06a426110cfde848846385ebceb06f9b32f2d616b404008275965760045"
+  },
+  "default_predicate": {
+    "season_alias_of_week_view": false
+  },
+  "default_views": 3720,
+  "audit_views": 7440,
+  "aliases_retained_not_pooled": 3720,
+  "pilot_scores_retained_in_audit": 92,
+  "unsupported_cells": {
+    "path": "reports/prop-grading-20261030e/actual-side-projection-v2/UNAVAILABLE_CELLS.json",
+    "sha256": "3a2f4df34375b35f3219050d5876f60d88ef13262dee0554d5b66d1c61694cb9"
+  },
+  "kinds_separate": [
+    "original_recorded_selections",
+    "retrospective_saved_point_direction",
+    "always_over_under_controls",
+    "retrospective_K_subsets",
+    "reconstructed_player_workload_diagnostics"
+  ],
+  "scoreboard_A": "Unchangedfixed2026W1-W7numericalrankingandcurrentvalidversions",
+  "scoreboard_B": "UNAVAILABLE_NO_QUALIFIED_PROBABILITIES_AT_RECORDED_LINES",
+  "scoreboard_C": "Statisticalrecordedthresholddirectiononly;booksettlement/prices/ROIunknown",
+  "underlying_original_selected_rows": 285,
+  "qualified_existing_outcomes": 279,
+  "unknown_participation": 6,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "records_csv": {
+    "path": "reports/prop-grading-20261030e/actual-side-projection-v2/ALL_ACTUAL_SIDE_VIEWS.csv",
+    "sha256": "40d1a9713443e088f5a9ec3115fac289467512ececf5005fa660636577652c97"
+  },
+  "unsupported_cell_count": 48,
+  "unsupported_targets": [
+    "anytime_td",
+    "nick-chart-ppr-v1"
+  ],
+  "required_actual_selected_sides": [
+    "over",
+    "under",
+    "Combined"
+  ],
+  "required_group_dimensions": [
+    "strategy",
+    "target",
+    "cohort_id",
+    "K",
+    "rank_scope",
+    "time_panel_id",
+    "horizon_id"
+  ]
+}

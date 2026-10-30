@@ -18,6 +18,7 @@ PRECISION = {'exact_rate': ('exact_rate',), 'abs_lt_1': ('abs_lt_1','error_stric
     'abs_le_1': ('abs_le_1','error_inclusive_le1'), 'abs_lt_5': ('abs_lt_5',),
     'abs_le_5': ('abs_le_5',), 'abs_lt_10': ('abs_lt_10',), 'abs_le_10': ('abs_le_10',)}
 DEFINITIONS = {
+    'selection_loss_rate': 'losses/(wins+losses) for the declared selected-side threshold panel; decided statistical crossing error, not MAE or profit',
     'mae': 'mean(abs(prediction - actual)); native target units; lower is better',
     'mse': 'mean((prediction - actual)^2); squared target units; lower is better',
     'rmse': 'sqrt(MSE); native target units; lower is better',
@@ -83,6 +84,8 @@ def precision_metric(rate,n,name,*,probability=False):
 
 
 def evaluation(row,artifact,*,year_record=None,source_link=None):
+    if row.get('record_kind')=='prop_selection_evaluation':
+        return prop_selection_evaluation(row,artifact,year_record=year_record,source_link=source_link)
     safe_artifact(artifact)
     coverage=row.get('coverage',{})
     if not isinstance(coverage,dict):raise ValueError('coverage must be aggregate object')
@@ -159,6 +162,75 @@ def evaluation(row,artifact,*,year_record=None,source_link=None):
         software_checks=None,nfl_accuracy_from_software_tests=None)
 
 
+def prop_selection_evaluation(row,artifact,*,year_record=None,source_link=None):
+    """Extend the existing registry with actual selection denominators, not MAE."""
+    ordinary=dict(row,record_kind='forecast_evaluation_view')
+    record=evaluation(ordinary,artifact,year_record=year_record,source_link=source_link)
+    stats=dict(row['selection_metrics'])
+    wins=stats['wins']if'wins'in stats else stats['WIN']
+    losses=stats['losses']if'losses'in stats else stats['LOSS']
+    states=stats.get('status_counts',{})
+    outer=row.get('forecast_rows')
+    complete_states=(isinstance(outer,int)and bool(states)and
+        all(isinstance(v,int)and not isinstance(v,bool)and v>=0 for v in states.values())and
+        sum(states.values())==outer)
+    stats.update(wins=wins,losses=losses)
+    for name,state in [('pushes','PUSH'),('voids','VOID'),('pending','PENDING'),
+                       ('missing_actual','MISSING_ACTUAL'),('unknown_participation','UNKNOWN_PARTICIPATION'),
+                       ('unresolved_contract','UNRESOLVED_CONTRACT')]:
+        if name not in stats:stats[name]=states.get(state,stats.get(state,0 if complete_states else None))
+    denom=stats.get('denominators',{})
+    for name,source in [('eligible_opportunities','outer_rows'),('selected_opportunities','selected'),('abstentions','abstained')]:
+        if name not in stats:stats[name]=denom.get(source)
+    if 'eligible_rank_pool_n'in stats:
+        stats['eligible_opportunities']=stats['eligible_rank_pool_n']
+    elif 'selection_pool_count'in stats:
+        stats['eligible_opportunities']=stats['selection_pool_count']
+    stats['source_pool_opportunities']=stats.get('selection_pool_count',denom.get('outer_rows'))
+    if stats.get('abstentions')is None:
+        stats['abstentions']=stats.get('abstentions_outside_selected_partition')
+    if stats.get('selected_opportunities')is None and complete_states:
+        stats['selected_opportunities']=outer-denom.get('abstained',states.get('ABSTAIN',0))
+    eligible=stats.get('eligible_opportunities')
+    stats['selection_coverage']=stats.get('selected_opportunities')/eligible if eligible and stats.get('selected_opportunities')is not None else None
+    book_states=stats.get('bookmaker_settlement_status_counts',{})
+    stats['book_settlement_status_counts']=book_states or None
+    if any(isinstance(v,bool)or not isinstance(v,int)or v<0 for v in(wins,losses)):
+        raise ValueError('nonnegative integer selection counts required')
+    n=wins+losses
+    if row['n']!=n:raise ValueError('decided-pick denominator mismatch')
+    loss=losses/n if n else None;hit=wins/n if n else None
+    if row.get('selection_loss_rate')!=loss:raise ValueError('selection error rate mismatch')
+    record.update(kind='prop_selection_evaluation',primary_metric='selection_loss_rate',primary_error=loss,
+        native_units='directional_error_fraction',selection_metrics=stats,
+        period=row.get('statistic_period'),season_type=row.get('season_type'),
+        statistic_period=row.get('statistic_period'),period_provenance=row.get('period_provenance'),
+        side=row.get('side'),strategy=row.get('strategy'),horizon=row.get('horizon',row.get('horizon_id')),
+        threshold_provenance=row.get('threshold_provenance',row.get('line_source')),
+        selection_evidence=row.get('selection_evidence',
+            'RETROSPECTIVE_RULE_REPLAY_ON_ORIGINAL_SELECTION_POOL'if row.get('K')is not None else
+            'ORIGINAL_RECORDED_SELECTION'if row.get('strategy')=='original'else'RETROSPECTIVE_RULE_REPLAY'),
+        probability_conditioning=row.get('probability_conditioning'),
+        accuracy_status='statistical_threshold_crossing_only' if row.get('settlement_verified') is not True else 'verified_settled_selection',
+        accuracy_missing_reason=None if n else 'no_decided_supported_selections',
+        precision_metrics={'decided_pick_hit_rate':dict(rate=hit,numerator=wins if n else None,denominator=n,
+            definition='wins/(wins+losses); pushes/voids/pending/unknown excluded from decided denominator and reported separately',
+            kind='selection_direction_accuracy',numerator_provenance='exact_retained_selection_row_count',missing_reason=None if n else 'no_decided_picks')})
+    record['metrics']['selection_loss_rate']=loss
+    record['metric_status']['selection_loss_rate']='finite'if n else'no_decided_picks'
+    record['metric_missing_reasons']['selection_loss_rate']=None if n else'no_decided_picks'
+    record['metric_source_fields']['selection_loss_rate']='selection_loss_rate'
+    record['metric_definition_set']='v2-prop-selection-score-v1'
+    record['cohort_evidence']='RETROSPECTIVE_RECONSTRUCTED_PREGAME_FEATURES'if str(row.get('cohort_id','')).startswith('reconstructed:')else'SAVED_SOURCE_OR_ALL_POOL'
+    for field in ('cohort_id','K','rank_scope','time_panel_id','season_alias_of_week_view','alias_of_record_id',
+                  'unique_players','unique_player_games','unique_weeks','decided_unique_games',
+                  'decided_unique_players','decided_unique_player_games','decided_week_count',
+                  'registered_week_count','registered_weeks','selected_week_count','overtime'):
+        record[field]=row.get(field)
+    if record['unique_weeks']is None:record['unique_weeks']=row.get('decided_week_count')
+    return record
+
+
 def software_receipt(artifact,receipt):
     safe_artifact(artifact)
     checks=receipt.get('tests_run',receipt.get('hand_contract_checks',receipt.get('independent_fictional_checks')))
@@ -182,7 +254,7 @@ def validate_index(records):
             if r.get('metrics') is not None or r.get('precision_metrics') is not None or r.get('n') is not None:
                 raise ValueError('software check must not claim NFL accuracy')
             continue
-        if r['kind'] not in {'forecast_evaluation_view',DIAGNOSTIC_KIND}:raise ValueError('unknown test kind')
+        if r['kind'] not in {'forecast_evaluation_view',DIAGNOSTIC_KIND,'prop_selection_evaluation'}:raise ValueError('unknown test kind')
         if r['primary_error']!=r['metrics'][r['primary_metric']]:raise ValueError('primary metric mismatch')
         for p in (r['precision_metrics'] or {}).values():
             if p['numerator'] is not None:

@@ -1,0 +1,98 @@
+{
+  "version": "original-R0-panel-reconstructability-v1",
+  "state": "DERIVABLE_FROM_PINNED_PUBLIC_SOURCE_AND_ALREADY_RESTORED_QUALIFIED_INPUTS",
+  "actual_recorded_at": "2026-10-30T22:00:35.961384+00:00",
+  "original_source": {
+    "repository": "NickNicky19/nicks-expert-nfl-picks",
+    "public_source_commit": "a57b529862a6ea84b57eae77758cf3a95714a3b9",
+    "path": "data/forward/2026/w07/3b6e5e4cdedc274b3388aa53ee1815ca5147cb5a1d0991493eaae33abc0cfcf9.json.gz",
+    "git_blob_sha1": "be77dd9299cdd33d4243f7a53f65bb7031894a70",
+    "compressed_bytes": 47600,
+    "compressed_sha256": "e33bda264b397ca9a038e8d01e30caf71c615fd957d0e7f0b911c4c4ff39156e",
+    "payload_sha256": "28779ee13ab078b26cc91f91faae4bd18b73db1f8db091a1d250c0d196d76690",
+    "server_retention_proof": "reports/continuation-20261030c/SERVER_R0_REFERENCE_PROTOCOL.json",
+    "server_retention_proof_sha256": "022751cb3d09eb924e79d3861ac72517f449d315224299def8c008da63114c70"
+  },
+  "retained_qualified_inputs": [
+    {
+      "artifact_id": "V2-PRIVATE-SOURCE-0001",
+      "restoration_receipt": "reports/continuation-20261029/PRIVATE_SOURCE_RESTORATION.json",
+      "restoration_receipt_sha256": "6913ab28414e4382a261b45dd2aa92eaaed91b28c3200ec27fa877f19ade8341",
+      "required_members": [
+        {
+          "logical_name": "stats_player_week_2026.csv",
+          "sha256": "8301e4e3ab62af3f65d201251676dd79f912dce7a87a402835fe5ea4fb5d0379"
+        },
+        {
+          "logical_name": "games.csv",
+          "sha256": "6f707dcea8758bc6c0421559d23c07d4627f39658f93913908d5ddd1b27f6aae"
+        }
+      ]
+    },
+    {
+      "artifact_id": "V2-PRIVATE-WEEK8-0001",
+      "restoration_receipt": "reports/continuation-20261029/week8-shadow-v2/PRIVATE_RESTORATION.json",
+      "restoration_receipt_sha256": "893714356c1b3e9e5c83eb688012563dee1f4a17c75807b894a85fe474ea41a2",
+      "required_members": [
+        {
+          "logical_name": "roster-week8-identity-2026.csv.gz",
+          "sha256": "a44e42361de63e42339a563f57ce2c72da17aeffa2eb69e99ac5fb9e246a166d"
+        }
+      ],
+      "identity_use": "Only explicit season2026/week<=7 identity rows; no later football outcomes or roster-value predictors"
+    }
+  ],
+  "frozen_derivative_bindings": [
+    {
+      "public_path": "reports/prop-grading-20261030e/evidence-inventory/FROZEN_PANEL_PROTOCOL.json",
+      "sha256": "8e5bf0778d8f625598447b130f966e6012898aef0018d8e00a68ae3091ebc992"
+    },
+    {
+      "public_path": "reports/prop-grading-20261030e/evidence-inventory/FROZEN_PANEL_RECEIPT.json",
+      "sha256": "f639d0bc0daefa68ffb9f727775a3c0f947f22d8b101bcb537111a0a2f2ec8ed"
+    },
+    {
+      "public_path": "reports/prop-grading-20261030e/evidence-inventory/panel-join-v1/FROZEN_JOIN_PROTOCOL.json",
+      "sha256": "428aeccf50ec02d7f70fe2b481c02bbef1d7f0166e68d47a0756bf76cb566231"
+    }
+  ],
+  "reconstruction_recipe": [
+    "Restore exact pinned original public gzip, verify Git blob and compressed/payload hashes; lexically project source metadata with path-qualified v2 parser.",
+    "Recreate the285side/line membership from the fixed ten targets, original lean, finite line and the frozen server-retention/T90 rule; preserve raw IDs, source indices and original top flags.",
+    "Use the restored week<=7 exact Sleeper-GSIS identity bridge and cached schedule metadata. Decode qualified2026W7 target values only on matched panel keys, retaining positive-physical proof, signed credits, explicit zeros and null unknowns.",
+    "Recover the same original adjusted_projection from each source row. Check repeated website/provider label views for conflicts; retain all285rows including six appearance-unknowns.",
+    "The supplied join CLI uses the existing independently checked reference-row derivative as its fast path. That reference scientific record is itself reconstructable from the same original public source, restored qualified labels/identities and public source-contract code; a new fit or price acquisition is unnecessary."
+  ],
+  "public_code": [
+    {
+      "path": "nfl_v2/prop_evidence_metadata_v2.py",
+      "sha256": "de2ad889c526909c441243a2a27c14010b5949a091a83203d4b71f403f32eaee"
+    },
+    {
+      "path": "tools/join_saved_prop_panel.py",
+      "sha256": "7e1776d3a8d8cf7931c09e39aede74343fa20e93dbd8d62e3b8c3e5d6207ed67"
+    },
+    {
+      "path": "nfl_v2/hgb_control.py",
+      "sha256": "13ad5627152d4aed81540f93088b63716acb98a00bce52089a8ec8cbb619cccf"
+    },
+    {
+      "path": "nfl_v2/empirical_benchmark.py",
+      "sha256": "53ea90595bdc83a11289ef4daeec795b0bb320ce23b8c8ee8dddcdb6ca88d085"
+    },
+    {
+      "path": "nfl_v2/identity.py",
+      "sha256": "82891b569c2e1a8cf6444fee1572a3dbe7dcda595cec34a5633f6dc439e0d8bf"
+    },
+    {
+      "path": "tools/replay_server_retained_r0.py",
+      "sha256": "672737cf194bb28c9b4a37192b8dedbcc565a6318ce514ef4aa10461bd60ea45"
+    }
+  ],
+  "retention_claim": "No new upload is needed to recover the scientific285-row derivative from these already retained/recoverable inputs and frozen public protocol. This is not a fresh offhost readback claim for the newly serialized derivative gzip.",
+  "license_visibility": "Basic official NFLverse source statistics carry the previously qualified CC BY4.0 attribution. Access to the original website public Git object does not grant blanket raw Sleeper/DK feed redistribution. All original selections, multipliers and player rows remain in the approved private evidence lane; only code, safe identifiers, hashes and aggregates are public.",
+  "new_upload_attempts": 0,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "CURRENT_2026_Week8_outcomes_read": 0
+}

@@ -1,0 +1,65 @@
+{
+  "protocol_id": "v2-exact-prop-grading-20261030e-v1",
+  "registered_at_utc": "2026-10-30T21:49:20.808838+00:00",
+  "accepted_parent": "c8cb933ab3a297e7deafd61d2886cf089f475342",
+  "exposure": "Previously reported original/2026W7 outcomes and scores exposed; no new holdout. First panel chosen from source/clock/identity/contract coverage before decoding new selection grades.",
+  "first_slice_priority": [
+    "originalretainedselection+threshold+qualifiedoutcome",
+    "retainedoffers+earliereligibleforecastandregisteredretrospectiverule",
+    "testengineandboundedmissing-evidenceinventoryifneitheraccessible"
+  ],
+  "panel_choice": "All supported ordinary-statistic selected rows in the earliest located finite server-retained original Week7 snapshot with exact identity and pregame proof; all categories retained. Chart/sitefantasy and differently scopedTD remain separate unqualified contracts. Exact source/key bindings sealed before label decode.",
+  "scoreboards": {
+    "A": "existingcurrentvalidnumericalforecastversions;noinferredOUsuccessfromMAE",
+    "B": "properconditionalnonvoidlineprobabilitiesonly;preservepush/voidandconditioning",
+    "C": "originalrecordedselectionsfirst;pricereturnsonlywithqualifiedactualpayoutcontract"
+  },
+  "rules": {
+    "P1": "originalunroundedpoint>lineOver,<lineUnder,equalityabstain;noclaimedprobability",
+    "P2": "greaternonvoidconditionalwinprobabilitywithcoherentpushmass;tieabstain;missinglawabstain",
+    "P3": "higheststrictlypositiveEVatownavailableprice;tiechooselexicographicside;noassumedprice;neverbothsides"
+  },
+  "controls": [
+    "originalrecordedside",
+    "P1",
+    "alwaysOver",
+    "alwaysUnder",
+    "P2onlyifqualifiedprobabilities",
+    "P3onlyifqualifiedpricesandprobabilities"
+  ],
+  "thresholds": "Decimal(str(recordedvalue));officialcounts/yardsinteger,signedyardsretained;chartcomponentsorcertifiedexactgrid;noblanketforecast/outcomerounding",
+  "statistical_vs_settlement": "Recordedside/line+qualifiedstatoutcomecanestablishcrossingwithoutprices. Book/contestsettlementmustmeetseparateperiod/overtime/participation/tierules;unknowncontractisunresolved.",
+  "states": [
+    "WIN",
+    "LOSS",
+    "PUSH",
+    "VOID",
+    "PENDING",
+    "MISSING_ACTUAL",
+    "UNKNOWN_PARTICIPATION",
+    "UNRESOLVED_CONTRACT"
+  ],
+  "topK": {
+    "K": [
+      6,
+      10,
+      20
+    ],
+    "fixed": "Separatecombined/Overonly/Underonly;Kperweekpercategoryforpointgapranking;allinputsavailableatcommonfreezepriortoearliestincludedkickoff;nocrosscategoryrawgaps",
+    "rolling": "Separatechronologicaldecisionbatches;greedytakequalifiedhighestscoreuptoremainingK;duplicatecontractneverselectedtwice;nofuturecandidatepool",
+    "unsupported": "Ifcapture/decision/quotes/rankingcannotproven,leavetrueoriginaltopKnull;retainedflagscanstillbereportedasrecordedflagswithscopeunknown"
+  },
+  "quote_policy": "Fornewauthenticretrospectiveofferreplay,OPENstatus,sourceupdate/receipt<=decision,maxage900seconds. Originalrecordedleanstatisticalgradingdoesnotinventmissingquoteclocks.",
+  "duplicates": "Exactevent/player/statistic/period/scoring/side/lineidentity;retainallsourceoccurrences,countduplicate/conflictingrecordsexplicitly;nopreferenceselectionusingoutcomes. Firstsupportedcanonicalrecordbyfrozenroworder;conflictingsidesrequireseparateauditratherthansilentdedup.",
+  "uncertainty": "Descriptiveweekblock500drawseed1703with>=8weeks;otherwisenullinsufficientweeks;gameclusterbootstrap500seed1703sensitivitywith>=8games;noIIDrowclaims;noadjustedselection/multiplicityclaim",
+  "budget": {
+    "new_fits": 0,
+    "max_saved_rows": 5000,
+    "max_wall_seconds": 180,
+    "max_RSS_bytes": 1073741824,
+    "max_new_private_output_bytes": 8388608,
+    "large_fit_recovery_gate_unchanged": true
+  },
+  "retention": "Reusealreadyretainedhashedsourceandpubliccodeforrecoverablederivedrows;newprivateinputsneedapprovedretention;publicsafeaggregatesonly;nobulkuploadretry",
+  "production": "Readonly;nomerge/deploy/collector/scheduler/wager"
+}

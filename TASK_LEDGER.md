@@ -92,3 +92,20 @@ Next executable queue: C03 older-season rolling origins for learned families; so
 |D06 release|Research ranking only; R0wins8/10numeric on different-horizon subset remain prominent|Recover models, validate exact adapter/inputs/fallback/rollback, obtain retained-owner admission. No merge/deploy/selection change.|
 
 Source/version/statistical limitations remain separate from provider quota. Owner confirmation is authorization, not proof of a successful restoration. The separately prepared2021source adds capacity beyond the frozen backlog, and new fitted outputs need their own allowance. No recurring retries, deletion, sharing, paid capacity, second collector, owner workflow or production action was introduced.
+
+## Exact prop grading and mandatory selected-side continuation
+
+[Executed checkpoint](reports/prop-grading-20261030e/README.md) preserves c8cb933a and the previous queues. The thirteen-game 2026 Week 7 panel has 285 original selections, 279 qualified outcomes and six unknown appearances. Over: 85W/49L; Under: 98W/47L; weighted Combined: 183/279. These are statistical crossings. All bookmaker settlements, prices and probability scores remain unestablished. No fit, inference or new forecast occurred.
+
+Every supported category/strategy/cohort/K/time view now has actual-selected Over, Under and Combined, weighted counts, N/A empty buckets, coverage and uncertainty. Player/workload memberships are retrospective diagnostics. New top-6/10/20 picks are per-category retrospective subsets. Season views are explicit Week 7 aliases excluded from default totals. All 145,219 prior audit records remain; the 7,532 appended views are not additional independent observations. Final index v3 corrects eligibility metadata, preserving both software drafts and all original score bytes.
+
+| Queue | Actual state and next action |
+|---|---|
+| E01 Direction baseline and side mandate | Complete for the registered 285-case panel: every supported category, four strategies, cohorts and K views independently checked. No full-season/all-method claim. |
+| E02 Historical expansion | Qualify individual Week 6/7 pregame capture clocks; register a broader control panel for the 177 provider-labelled rows without a recorded side. Never substitute mutable closing-line archives for original selections. |
+| E03 Probability and prices | Need a qualified original/reconstructed law, same-threshold side prices/quote clocks, open status, venue rules, settlements and compatible closing export. No assumed −110 or contest multipliers as cash odds. |
+| E04 Recovery and learned queue | Connected user/owner match verified; quota unknown. None of the 53 missing part names was found; all local parts remain size-matched. No upload retry. Strict-HGB 147 cells, scheduled maximum 308 fits and 2021 RECENT source/retention dependencies remain. |
+| E05 Future grading | First Week 8 kickoff elapsed; registered stats contains zero Week 8 rows. Original packets are unchanged; qualified source/finality required before grading. No backfill or official capture by V2. |
+| E06 Owner package | Consumer/price/CLV schema and source-contract findings prepared. Owner admission, publication, served-value checks, merge and deployment remain owner-controlled. |
+
+The separate free collector was not modified. No collector, scheduler, Odds API request, purchase, wager or production write was launched. Legitimate subsequent owner work remains preserved. Scorer and metadata corrections are not forecast improvements.

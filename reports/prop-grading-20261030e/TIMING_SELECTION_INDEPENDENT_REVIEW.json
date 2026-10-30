@@ -1,0 +1,320 @@
+{
+  "state": "PASS_FICTIONAL_TIMING_FIXED_AND_ROLLING_SELECTION",
+  "source_sha256": "6fbf539145894cdc0952e9d860aca023b69d3bea738fbecaf752c5a996c30f01",
+  "checks": 40,
+  "passed": 40,
+  "failures": [],
+  "cases": [
+    {
+      "id": "T_VALID_AUTHENTIC",
+      "passed": true,
+      "observed": [],
+      "error": null
+    },
+    {
+      "id": "T_MISSING_KICKOFF",
+      "passed": true,
+      "observed": [
+        "MISSING_KICKOFF"
+      ],
+      "error": null
+    },
+    {
+      "id": "T_POST_KICKOFF",
+      "passed": true,
+      "observed": [
+        "DECISION_NOT_PREGAME",
+        "MISSED_HORIZON",
+        "STALE_QUOTE"
+      ],
+      "error": null
+    },
+    {
+      "id": "T_MISSED_T90",
+      "passed": true,
+      "observed": [
+        "MISSED_HORIZON",
+        "STALE_QUOTE"
+      ],
+      "error": null
+    },
+    {
+      "id": "T_FEATURE_AFTER_ISSUE",
+      "passed": true,
+      "observed": [
+        "INFORMATION_AFTER_ISSUANCE"
+      ],
+      "error": null
+    },
+    {
+      "id": "T_PERSIST_BEFORE_ISSUE",
+      "passed": true,
+      "observed": [
+        "PERSISTENCE_BEFORE_ISSUANCE"
+      ],
+      "error": null
+    },
+    {
+      "id": "T_ISSUE_AFTER_DECISION",
+      "passed": true,
+      "observed": [
+        "LATE_issued_at",
+        "PERSISTENCE_BEFORE_ISSUANCE"
+      ],
+      "error": null
+    },
+    {
+      "id": "T_FEATURE_AFTER_DECISION",
+      "passed": true,
+      "observed": [
+        "FUTURE_feature_cutoff",
+        "INFORMATION_AFTER_ISSUANCE"
+      ],
+      "error": null
+    },
+    {
+      "id": "T_FUTURE_SOURCE_UPDATE",
+      "passed": true,
+      "observed": [
+        "FUTURE_QUOTE_source_update",
+        "QUOTE_UPDATE_AFTER_RECEIPT"
+      ],
+      "error": null
+    },
+    {
+      "id": "T_FUTURE_RECEIPT",
+      "passed": true,
+      "observed": [
+        "FUTURE_QUOTE_received_at"
+      ],
+      "error": null
+    },
+    {
+      "id": "T_UPDATE_AFTER_RECEIPT",
+      "passed": true,
+      "observed": [
+        "QUOTE_UPDATE_AFTER_RECEIPT"
+      ],
+      "error": null
+    },
+    {
+      "id": "T_STALE_OVER_900",
+      "passed": true,
+      "observed": [
+        "STALE_QUOTE"
+      ],
+      "error": null
+    },
+    {
+      "id": "T_CLOSED",
+      "passed": true,
+      "observed": [
+        "QUOTE_NOT_OPEN"
+      ],
+      "error": null
+    },
+    {
+      "id": "T_ID_COLLISION",
+      "passed": true,
+      "observed": [
+        "IDENTITY_player_id"
+      ],
+      "error": null
+    },
+    {
+      "id": "T_REPLAY_MISSING_TIER",
+      "passed": true,
+      "observed": [
+        "RECONSTRUCTION_TIER_REQUIRED"
+      ],
+      "error": null
+    },
+    {
+      "id": "T_EXACT_900_ACCEPTED",
+      "passed": true,
+      "observed": [],
+      "error": null
+    },
+    {
+      "id": "T_EXACT_T90_ACCEPTED",
+      "passed": true,
+      "observed": [],
+      "error": null
+    },
+    {
+      "id": "T_NAIVE_CLOCK_REJECTED",
+      "passed": true,
+      "observed": null,
+      "error": "aware timestamp required"
+    },
+    {
+      "id": "T_NEGATIVE_HORIZON",
+      "passed": true,
+      "observed": null,
+      "error": "invalid registered horizon"
+    },
+    {
+      "id": "T_REPLAY_EXPLICIT_TIER",
+      "passed": true,
+      "observed": [],
+      "error": null
+    },
+    {
+      "id": "K_FIXED_TIE_ORDER_AND_NO_PADDING",
+      "passed": true,
+      "observed": [
+        "a",
+        "b",
+        "c"
+      ],
+      "error": null
+    },
+    {
+      "id": "K_INPUTS_UNCHANGED",
+      "passed": true,
+      "observed": true,
+      "error": null
+    },
+    {
+      "id": "K_SIDE_POOL",
+      "passed": true,
+      "observed": [
+        "c"
+      ],
+      "error": null
+    },
+    {
+      "id": "K_DUPLICATE",
+      "passed": true,
+      "observed": null,
+      "error": "duplicate selection unit"
+    },
+    {
+      "id": "K_FUTURE_CANDIDATE",
+      "passed": true,
+      "observed": null,
+      "error": "candidate unavailable at weekly freeze"
+    },
+    {
+      "id": "K_AFTER_INCLUDED_KICKOFF",
+      "passed": true,
+      "observed": null,
+      "error": "weekly freeze after kickoff"
+    },
+    {
+      "id": "K_MIXED_WEEKS",
+      "passed": true,
+      "observed": null,
+      "error": "one weekly universe required"
+    },
+    {
+      "id": "K_MIXED_RAW_UNITS",
+      "passed": true,
+      "observed": null,
+      "error": "raw point gaps cannot rank across categories"
+    },
+    {
+      "id": "K_COMPATIBLE_PROBABILITY_RANK",
+      "passed": true,
+      "observed": [
+        "yards",
+        "a",
+        "b",
+        "c"
+      ],
+      "error": null
+    },
+    {
+      "id": "K_FULL_UNIVERSE_OLD_ANCHOR_REJECTED",
+      "passed": true,
+      "observed": null,
+      "error": "freeze after declared universe first kickoff"
+    },
+    {
+      "id": "K_EXPLICIT_PARTIAL_UNIVERSE",
+      "passed": true,
+      "observed": [
+        "a",
+        "b",
+        "c"
+      ],
+      "error": null
+    },
+    {
+      "id": "K_UNREGISTERED_SIZE",
+      "passed": true,
+      "observed": null,
+      "error": "unregistered K"
+    },
+    {
+      "id": "K_BOOLEAN_SCORE",
+      "passed": true,
+      "observed": null,
+      "error": "missing/boolean decimal"
+    },
+    {
+      "id": "R_GREEDY_EARLIER_PICKS_RETAINED",
+      "passed": true,
+      "observed": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "error": null
+    },
+    {
+      "id": "R_DISTINCT_LATER_FIXED_UNIVERSE",
+      "passed": true,
+      "observed": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "0",
+        "1"
+      ],
+      "error": null
+    },
+    {
+      "id": "R_REVERSED_BATCHES",
+      "passed": true,
+      "observed": null,
+      "error": "unordered decision batches"
+    },
+    {
+      "id": "R_DUPLICATE_CONTRACT",
+      "passed": true,
+      "observed": null,
+      "error": "duplicate across batches"
+    },
+    {
+      "id": "R_FUTURE_BATCH_CANDIDATE",
+      "passed": true,
+      "observed": null,
+      "error": "candidate unavailable at weekly freeze"
+    },
+    {
+      "id": "R_MIXED_WEEK",
+      "passed": true,
+      "observed": null,
+      "error": "one rolling week required"
+    },
+    {
+      "id": "R_MIXED_POINT_GAP_UNITS",
+      "passed": true,
+      "observed": null,
+      "error": "point-gap rolling K is per category"
+    }
+  ],
+  "timing_scope": "Exact input/issue/persist/quote clocks and optional registered horizon. Quote provenance and declared universe truth require bound source receipts; passing this helper cannot authenticate them.",
+  "ranking_scope": "Fixed and rolling functions consume caller-frozen ranking scores. Synthetic scores test ordering only and do not prove calibrated probabilities, EV or a policy's NFL skill.",
+  "source_amendment": "TIMING_FIXTURE_AMENDMENT_V1.json",
+  "new_fits": 0,
+  "inference_calls": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "current2026_week8_outcomes_read": 0
+}

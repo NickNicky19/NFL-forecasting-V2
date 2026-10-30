@@ -42,6 +42,32 @@ def current_flat(record):
         row[key]=json.dumps(value,separators=(',',':')) if isinstance(value,(dict,list)) else value
     for key,value in comparison_fields(record).items():
         row[key]=json.dumps(value,separators=(',',':')) if isinstance(value,(dict,list)) else value
+    stats=record.get('selection_metrics')or{}
+    for key in ('side','strategy','horizon','threshold_provenance','selection_evidence','probability_conditioning',
+                'season_type','statistic_period','period_provenance','K','rank_scope','time_panel_id',
+                'season_alias_of_week_view','alias_of_record_id','unique_players','unique_player_games','unique_weeks'):
+        row[key]=record.get(key)
+    for key in ('decided_unique_games','decided_unique_players','decided_unique_player_games','decided_week_count',
+                'registered_week_count','registered_weeks','selected_week_count','overtime'):
+        value=record.get(key);row[key]=json.dumps(value,separators=(',',':'))if isinstance(value,list)else value
+    row['cohort_evidence']=record.get('cohort_evidence')
+    row['selection_loss_rate']=(record.get('metrics')or{}).get('selection_loss_rate')
+    for key in ('wins','losses','pushes','voids','pending','missing_actual','unknown_participation',
+                'unresolved_contract','eligible_opportunities','selected_opportunities','abstentions',
+                'source_pool_opportunities','selection_coverage','conditional_selection_coverage',
+                'eligible_rank_pool_n','hit_rate','net_return','ROI'):
+        row['selection_'+key]=stats.get(key)
+    for key in ('coverage_scope','full_forecast_feed_count','provider_labelled_finite_threshold_count',
+                'site_generated_threshold_count','authentic_offer_universe_count',
+                'original_fullfeed_coverage','original_provider_threshold_coverage'):
+        row['selection_'+key]=stats.get(key)
+    hit=(record.get('precision_metrics')or{}).get('decided_pick_hit_rate',{})
+    for key in ('numerator','denominator','rate'):
+        row['decided_pick_'+key]=hit.get(key)
+    book=stats.get('book_settlement_status_counts')
+    book_complete=bool(book)and all(isinstance(v,int)and not isinstance(v,bool)and v>=0 for v in book.values())and sum(book.values())==record.get('forecast_or_offered_rows')
+    for state in ('WIN','LOSS','PUSH','VOID','PENDING','MISSING_ACTUAL','UNKNOWN_PARTICIPATION','UNRESOLVED_CONTRACT'):
+        row['book_settlement_'+state]=book.get(state,0 if book_complete else None)if book else None
     return row
 
 

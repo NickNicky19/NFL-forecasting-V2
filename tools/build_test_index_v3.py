@@ -13,7 +13,7 @@ import sys
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
-from nfl_v2.result_index import evaluation,software_receipt,validate_index
+from nfl_v2.result_index import evaluation,software_receipt,validate_index,DEFINITIONS
 from tools.build_test_index import category_slug
 from tools.build_test_index_v2 import current_flat,MAX_SHARD,encoded
 
@@ -33,6 +33,22 @@ def new_records(root,item,inputs):
         return
     if not isinstance(obj,list):raise ValueError('aggregate score array required')
     dates={};annotations={};supersessions={}
+    common_fields={}
+    row_metadata={}
+    if item.get('selection_contract_projection'):
+        raw=(root/item['selection_contract_projection']).read_bytes();projection=json.loads(raw)
+        if projection['source_score_sha256']!=digest:raise ValueError('selection contract source binding mismatch')
+        common_fields=projection['common_fields']
+        if set(common_fields)-{'statistic_period','season_type','period_provenance'}:
+            raise ValueError('unsupported common contract projection')
+        inputs.append(dict(source_artifact=item['selection_contract_projection'],sha256=sha(raw),rows=len(obj),kind='source_bound_selection_contract_annotation'))
+    if item.get('selection_metadata_projection'):
+        raw=(root/item['selection_metadata_projection']).read_bytes();projection=json.loads(raw)
+        if projection['source_score_sha256']!=digest:raise ValueError('selection metadata source mismatch')
+        row_metadata={r['record_id']:r for r in projection['rows']}
+        if len(row_metadata)!=len(obj)or set(row_metadata)!={r['record_id']for r in obj}:
+            raise ValueError('selection metadata coverage mismatch')
+        inputs.append(dict(source_artifact=item['selection_metadata_projection'],sha256=sha(raw),rows=len(obj),kind='source_bound_selection_view_metadata'))
     if item.get('supersession_mapping'):
         raw=(root/item['supersession_mapping']).read_bytes();mapping=json.loads(raw)
         supersessions={r['source_row_index']:r for r in mapping['rows'] if r['source_artifact']==artifact}
@@ -56,6 +72,22 @@ def new_records(root,item,inputs):
         inputs.append(dict(source_artifact=item[field],sha256=sha(raw),rows=len(projection['rows']),kind='source_bound_annotation_not_extra_evaluation'))
     for i,original in enumerate(obj):
         row=dict(original)
+        if common_fields:
+            if row.get('record_kind')!='prop_selection_evaluation':raise ValueError('selection contract on numeric record')
+            row.update(common_fields)
+        if row_metadata:
+            supplement=dict(row_metadata[original['record_id']]);supplement.pop('record_id')
+            for key in ('query_membership_sha256','unique_games','season_alias_of_week_view'):
+                if key in supplement:
+                    if supplement.pop(key)!=original.get(key):raise ValueError('selection supplement changed a source identity/count')
+            if supplement.pop('source_record_id',original['record_id'])!=original['record_id']:
+                raise ValueError('selection source record mismatch')
+            if set(supplement)-{'alias_of_record_id','unique_players','unique_player_games','unique_weeks',
+                    'decided_unique_games','decided_unique_player_games','decided_unique_players',
+                    'decided_week_count','registered_week_count','registered_weeks','selected_week_count',
+                    'overtime','season_type','statistic_period'}:
+                raise ValueError('unsupported selection metadata field')
+            row.update(supplement)
         if row.get('infinite_NLL',0):row['NLL']='Infinity'
         if row.get('infinite_log_losses',0):row['log_loss']='Infinity'
         date={k:row.get(k)for k in ('evaluation_seasons','evaluation_weeks')}
@@ -162,7 +194,7 @@ def write(root=ROOT,previous=PREVIOUS,output=OUTPUT):
     if row_n!=previous_n+new_n:raise ValueError('streamed row count mismatch')
     manifest=dict(schema_version='v2-sharded-results-index-v2',record_unit=prior['record_unit'],
         baseline_checkpoint=prior['baseline_checkpoint'],previous_sharded_checkpoint=dict(artifact=previous,sha256=sha(prior_body),records=previous_n,unchanged=True),
-        definitions=prior['definitions'],precision_definition=prior['precision_definition'],forbidden_accuracy_conversion=prior['forbidden_accuracy_conversion'],
+        definitions=dict(prior['definitions'],selection_loss_rate=DEFINITIONS['selection_loss_rate']),precision_definition=prior['precision_definition'],forbidden_accuracy_conversion=prior['forbidden_accuracy_conversion'],
         comparison_reporting=prior.get('comparison_reporting'),input_manifests=inputs,record_count=row_n,by_kind=dict(kinds),shards=shards,max_shard_bytes=MAX_SHARD,csv_parts=csv_parts,
         streaming_build=dict(previous_records_reused=previous_n,new_records=new_n,prior_shards_unchanged=True,ordering='prior immutable shards followed by new registered versions; CSVfilterbytestID/panel'),
         reader_contract='New reported/reproduced/reconstructed/future and software evidence retain distinct identities; a score view is not a fit or unique NFL observation.')

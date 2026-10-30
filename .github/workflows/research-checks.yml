@@ -19,3 +19,4 @@ jobs:
       - run: python tools/validate_checkpoint.py
       - run: python tools/check_result_index_coverage.py
       - run: python tools/check_analysis_index_coverage.py
+      - run: python tools/check_prop_scoreboard_coverage.py

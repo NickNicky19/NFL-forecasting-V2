@@ -1,0 +1,4249 @@
+[
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_yd",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_yd",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_yd",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_yd",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_td",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_td",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_td",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_td",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_td",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_td",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_td",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_td",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_cmp",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_cmp",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_cmp",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_cmp",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_cmp",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_cmp",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_cmp",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_cmp",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_att",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_att",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_att",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_att",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_att",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_att",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_att",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_att",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_int",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_int",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_int",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_int",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_int",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_int",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "pass_int",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "pass_int",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rush_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rush_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rush_yd",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rush_yd",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rush_yd",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rush_yd",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rush_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rush_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rush_att",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rush_att",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rush_att",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rush_att",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rush_att",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rush_att",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rush_att",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rush_att",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rec",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rec",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rec",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rec",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rec",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rec",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rec",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rec",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rec_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rec_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rec_yd",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rec_yd",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rec_yd",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rec_yd",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rec_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rec_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rush_rec_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rush_rec_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rush_rec_yd",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rush_rec_yd",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rush_rec_yd",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rush_rec_yd",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "rush_rec_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "rush_rec_yd",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "anytime_td",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "anytime_td",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "anytime_td",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "anytime_td",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "anytime_td",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "anytime_td",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "anytime_td",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "anytime_td",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "distribution-wave-v2/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_td",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_td",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_td",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_td",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_cmp",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_cmp",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_cmp",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_cmp",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_att",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_att",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_att",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_att",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_int",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_int",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_int",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "pass_int",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 5,
+    "fallback_cells": 3,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-rush-att-qb-rb-specialization-v1",
+    "target": "rush_att",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "rush_att",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-rush-att-qb-rb-specialization-v1",
+    "target": "rush_att",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "rush_att",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-rush-att-qb-rb-specialization-v1",
+    "target": "rush_att",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "rush_att",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-rush-att-qb-rb-specialization-v1",
+    "target": "rush_att",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "rush_att",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "rec",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "rec",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "rec",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "v2-hgb-poisson-count-point-reconstruction-v1",
+    "target": "rec",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "count-ablation-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "nick-chart-ppr-v1",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "chart-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "nick-chart-ppr-v1",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-COMMON",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "chart-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "nick-chart-ppr-v1",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "chart-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "nick-chart-ppr-v1",
+    "history_regime": "H-RECENT",
+    "information_policy": "H-RECENT-COMMON",
+    "eligible_fit_seasons": [
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2025,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "chart-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "nick-chart-ppr-v1",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "chart-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "nick-chart-ppr-v1",
+    "history_regime": "H-MULTI",
+    "information_policy": "H-MULTI-COMMON",
+    "eligible_fit_seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "feature_memory_start_season": 2022,
+    "prior_transform_floor_season": 2022,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 8,
+    "fallback_cells": 0,
+    "source_protocol": "chart-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "ordered_leaf_cdf",
+    "target": "nick-chart-ppr-v1",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "chart-wave-v1/FROZEN_PROTOCOL.json"
+  },
+  {
+    "family_id": "regularized_glm_law",
+    "target": "nick-chart-ppr-v1",
+    "history_regime": "H-CURRENT",
+    "information_policy": "H-CURRENT-STRICT",
+    "eligible_fit_seasons": [
+      2026
+    ],
+    "feature_memory_start_season": 2026,
+    "prior_transform_floor_season": 2026,
+    "training_cutoff": "assumed kickoff+7days availability strictly before weekly origin",
+    "tuning": "none; fixed exposed architecture",
+    "calibration": "no separate held-out calibration",
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "older_evaluation_state": "new learned rolling2022-2025 not yet run",
+    "future_week": 8,
+    "future_coverage": "partial13open-deadlinegames;fixedasof00:27:36UTC",
+    "origin_cells": 8,
+    "fitted_cells": 6,
+    "fallback_cells": 2,
+    "source_protocol": "chart-wave-v1/FROZEN_PROTOCOL.json"
+  }
+]

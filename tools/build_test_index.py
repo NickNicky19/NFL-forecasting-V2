@@ -241,7 +241,10 @@ def main():
     p.add_argument('--additional',action='append',default=[])
     p.add_argument('--software-receipt',action='append',default=[])
     p.add_argument('--output',type=Path,default=ROOT/'reports/continuation-20261029')
-    a=p.parse_args();bundle=build(ROOT,a.additional,a.software_receipt)
+    a=p.parse_args()
+    if (ROOT/'registries/CURRENT_RESULTS_INDEX.json').exists() and a.output.resolve()==(ROOT/'reports/continuation-20261029').resolve():
+        p.error('The October29 index is now immutable. Use tools/build_test_index_v2.py for the current sharded index, or a fresh explicit staging --output.')
+    bundle=build(ROOT,a.additional,a.software_receipt)
     a.output.mkdir(parents=True,exist_ok=True)
     (a.output/'TEST_RESULTS_INDEX.json').write_text(json.dumps(bundle,separators=(',',':'),allow_nan=False)+'\n')
     rows=[flat(r) for r in bundle['records']]

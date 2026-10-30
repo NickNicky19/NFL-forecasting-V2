@@ -39,3 +39,20 @@ The fixed [HGB wave](reports/continuation-20261029/hgb-history-v1/README.md) is 
 The two new Week 8 families retain 20,772 issued views and 60 abstentions on 1,951 frozen query cells / fourteen games. Empirical capture was 22:51:33 UTC and HGB 23:16:53 UTC, with 837 late-first-owner-input-cutoff views per family. Both captures precede kickoff; no Week 8 outcomes have been read or scored. The combined private review bundle is freshly downloaded/hash-verified; [receipt](reports/continuation-20261029/PRIVATE_WEEK8_ALL_REVIEW_RESTORATION.json). The 1,808-row status ledger accounts for 1,669 blocked legacy references and 126 new family/history/product cells without claiming they are independent learners. The original stream remains unchanged.
 
 Next: retain frozen v1 code/models and apply its separate tested output-budget guard only to a newly registered future version; complete independent review and source/row-matched comparisons; await qualified Week 8 outcomes before scoring. Remaining complex artifacts, chart components, defense/role ablations, authenticated offers and owner-only release actions keep their exact dependencies. No duplicate fits, new collector, scheduler or production writer is introduced.
+
+## October30 executed continuation and next finite queue
+
+Three new fitting waves completed 992 origin cells: 840 actual fits and 152 explicit no-fit fallbacks. The initial 57-fit inference failure is retained; recovery reused every completed model and chunk. Ordered CDF/GLM families, count and role ablations, strict-current information, qualified partial chart scoring and common subgroup views are [executed here](reports/continuation-20261030/README.md). New Week8 versions contain 47,401 issued views and 162 abstentions over thirteen open-deadline games. The elapsed first game is excluded; original packets remain unchanged. No Week8 outcomes were read.
+
+| Next queue | Exact scope | State |
+|---|---|---|
+|C01|Actual-snapshot query freshness versus label-refit ablation; retained pregame source proves current Week7 availability|Supported new bounded test; register identity/cutoff and preserve historical seven-day assumptions|
+|C02|Unordered Leaf-CDF versus the ordered value/age/missing block on identical inputs and rows|Supported new bounded test; current reconstruction does not isolate ordering alone|
+|C03|2022–2025 rolling origins for new learned families, one finite season wave at a time|Supported new bounded test; training on older years does not establish evaluation on them|
+|C04|Attribute rare chart credits and qualify extended return-player coverage|Source qualification needed; retain current35 unknown labels and all164 rare source cases|
+|C05|Distinct legacy/categorical/NGBoost/TabICL/retrieval procedures|Reconcile earlier losses, rights, pretraining and runtime before running; no seed renaming|
+|C06|Qualified role, defense and playcalling feature ablations|Source timing and coverage needed; no invented injury effects or routes|
+|C07|Original attempt/model/query exports; authenticated offers, prices and frozen selections|Owner-approved read-only evidence needed; inaccessible originals remain unreproduced|
+|C08|Grade original and new partial Week8 packets|Future qualified final labels needed; no hindsight winner selection|
+
+Production, owner lease, scheduler and publication authority remain unchanged. The current index uses bounded v2 parts; October29 complete-index bytes and IDs remain frozen.

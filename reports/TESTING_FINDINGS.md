@@ -1,3 +1,5 @@
+> Latest October30 evidence: [executed checkpoint](continuation-20261030/README.md), [current answers](continuation-20261030/ANSWERS_01_TO_14.md), [category representatives](continuation-20261030/TWELVE_CATEGORY_SUMMARY.md), and [future coverage](continuation-20261030/FUTURE_CAPTURE_AND_RELEASE_HANDOFF.md). Earlier checkpoint follows at its original evidence level.
+
 # Testing findings and owner boundaries
 
 | Severity/state | Minimal evidence | Implication and next action |
@@ -39,3 +41,7 @@ Earlier findings above remain the original checkpoint's bounded record. Later so
 The [full-history diagnostic review](verification/EMPIRICAL_HISTORY_DIAGNOSTIC_REVIEW.md) and [Week 8 shadow review](verification/WEEK8_SHADOW_INDEPENDENT_QA.md) extend executable coverage. Their broader explicit-zero source semantics differ from the sparse normalized cache. No newly verified live production defect, owner acknowledgement, website change or actual Week 8 score is claimed by this amendment.
 
 The separate [HGB future-grader review](verification/HGB_FUTURE_GRADER_REVIEW.md) also passes 42 independent invented checks. With the actual original HGB packet and empty labels it verifies all 63 retained model hashes without executing models, retains 1,951 pending queries and produces zero scored outcomes/null errors. It establishes future grading software compatibility; it does not supply Week 8 accuracy.
+
+## October30 final precision finding
+
+Confirmed: IEEE subtraction misclassified some exact0.02-grid chart-median1/5/10-point tolerance boundaries. [Source-bound audit](continuation-20261030/CHART_EXACT_GRID_PRECISION_AUDIT.json) and [append-only correction](continuation-20261030/chart-grid-precision-correction-v1/README.md) retain originals and correct478 of1007 score views. Forecasts, means, native errors and ranks are unchanged; this is not a predictive gain. Later grading uses the exact-grid adapter.

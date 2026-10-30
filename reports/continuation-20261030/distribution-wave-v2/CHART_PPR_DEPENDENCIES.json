@@ -1,0 +1,34 @@
+{
+  "state": "BLOCKED_EXACT_CHART_COMPONENT_CONTRACT",
+  "no_chart_fits": 0,
+  "no_chart_forecasts": 0,
+  "ordinary_raw_fields_present": [
+    "passing_yards",
+    "passing_tds",
+    "passing_interceptions",
+    "rushing_yards",
+    "rushing_tds",
+    "receptions",
+    "receiving_yards",
+    "receiving_tds",
+    "passing_2pt_conversions",
+    "rushing_2pt_conversions",
+    "receiving_2pt_conversions",
+    "fumbles_lost_total"
+  ],
+  "unqualified_components": [
+    "unique_fumbles_lost_total attribution/deduplication contract",
+    "offensive_fumble_recovery_TD separated from defensive recoveries",
+    "kick_return_TD and punt_return_TD unique credits; aggregate special_teams_tds not proven equivalent",
+    "field_goal_return_TD separate from other returns",
+    "credited2pt mapping and no overlapping ordinaryreception/TD credits",
+    "complete-source supportedzero contract for every rare primitive"
+  ],
+  "potential_aggregate_fields_not_substituted": [
+    "special_teams_tds",
+    "fumble_recovery_tds",
+    "pt_return_tds",
+    "fumbles_lost_total"
+  ],
+  "next_supported_action": "Qualify public play-by-play event-level mappings and ordinary/rare workedexamples; then new chart-specific source/version and fit. Do not rename genericproviderfantasy or sum componentmedians."
+}

@@ -1,5 +1,14 @@
 # Every test: accuracy and error reporting
 
+Current index: [bounded JSON/CSV result parts](../reports/continuation-20261030/results-index/README.md).
+Register scored/verified artifacts, then run `python tools/build_test_index_v2.py`
+and `python tools/check_result_index_coverage.py`. The October29 complete index
+stays immutable. Source-bound dates and explicit infinite-loss flags are
+normalized without overwriting original score files; all original aggregate
+fields survive in JSON shards. CSVs retain concise fields for filtering.
+The older generator commands below describe the earlier checkpoint/staging
+workflow and cannot overwrite that now-frozen canonical index.
+
 Every new forecasting evaluation must save an immutable public-safe aggregate
 result and enter the linked test-results index. A method fit, implementation
 check, forecast issuance, and scored NFL evaluation remain different records.

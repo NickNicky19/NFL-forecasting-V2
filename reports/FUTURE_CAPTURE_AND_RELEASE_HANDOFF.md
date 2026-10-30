@@ -1,3 +1,5 @@
+> Latest October30 evidence: [executed checkpoint](continuation-20261030/README.md), [current answers](continuation-20261030/ANSWERS_01_TO_14.md), [category representatives](continuation-20261030/TWELVE_CATEGORY_SUMMARY.md), and [future coverage](continuation-20261030/FUTURE_CAPTURE_AND_RELEASE_HANDOFF.md). Earlier checkpoint follows at its original evidence level.
+
 > October 29 continuation: [actual two-family capture, private restoration and owner-only release handoff](continuation-20261029/FUTURE_CAPTURE_AND_RELEASE_HANDOFF.md). Earlier checkpoint follows unchanged.
 
 # V2 future capture and release handoff

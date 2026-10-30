@@ -12,7 +12,7 @@ METRICS = {
     'mae': ('mae','MAE'), 'mse': ('mse','MSE'), 'rmse': ('rmse','RMSE'),
     'bias': ('bias',), 'p90_abs': ('p90_abs','p90'), 'p95_abs': ('p95_abs','p95'),
     'max_abs': ('max_abs','max_error'), 'brier': ('brier','Brier'),
-    'log_loss': ('log_loss',), 'nll': ('NLL',), 'crps': ('CRPS',),
+    'log_loss': ('log_loss',), 'nll': ('NLL','nll'), 'crps': ('CRPS','crps'),
 }
 PRECISION = {'exact_rate': ('exact_rate',), 'abs_lt_1': ('abs_lt_1','error_strict_lt1'),
     'abs_le_1': ('abs_le_1','error_inclusive_le1'), 'abs_lt_5': ('abs_lt_5',),

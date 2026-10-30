@@ -1,5 +1,7 @@
 # NFL Forecasting V2
 
+**Latest executed checkpoint: [October30 results, twelve targets and new partial-week forecasts](reports/continuation-20261030/README.md).** [Current accuracy/error index](reports/continuation-20261030/results-index/README.md) · [Category changes](reports/continuation-20261030/TWELVE_CATEGORY_SUMMARY.md) · [Future coverage](reports/continuation-20261030/FUTURE_CAPTURE_AND_RELEASE_HANDOFF.md). The October29 checkpoint below is preserved.
+
 **Latest continuation: empirical and HGB same-game history controls are executed, with two genuine Week 8 shadow families. The full legacy-method tournament remains incomplete.**
 
 [Read the current results](reports/continuation-20261029/README.md) · [All tests with accuracy/error definitions](reports/continuation-20261029/TEST_RESULTS_INDEX.md) · [Twelve category tables](reports/continuation-20261029/categories/README.md) · [Week 8 captured/blocked matrix](reports/continuation-20261029/WEEK8_ALL_METHOD_STATUS.md)

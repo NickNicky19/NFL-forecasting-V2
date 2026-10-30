@@ -34,5 +34,92 @@
     "artifact": "reports/continuation-20261029/hgb-history-v1/WEEK8_CAPTURE_RECEIPT.json",
     "state": "FORECASTED_UNSCORED",
     "pending_reason": "Week8 final outcomes unavailable; immutable HGB model/query/forecast packets privately restored; matching qualified labels required"
+  },
+  {
+    "artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+    "state": "SCORED",
+    "kind": "new_ordered_CDF_and_GLM_law_reconstructions",
+    "dates_projection": "reports/continuation-20261030/distribution-wave-v2/SCORE_DATE_PROJECTION.json"
+  },
+  {
+    "artifact": "reports/continuation-20261030/count-ablation-wave-v1/SCORES.json",
+    "state": "SCORED",
+    "kind": "new_HGB_role_and_Poisson_point_ablations",
+    "dates_projection": "reports/continuation-20261030/count-ablation-wave-v1/SCORE_DATE_PROJECTION.json"
+  },
+  {
+    "artifact": "reports/continuation-20261030/pregame-cohort-scorecards-v2/SCORES.json",
+    "state": "SCORED",
+    "kind": "new_frozen_prior_workload_cohort_saved_row_evaluations"
+  },
+  {
+    "artifact": "reports/continuation-20261030/chart-wave-v1/SCORES.json",
+    "state": "SCORED",
+    "kind": "qualified_partial_chart_direct",
+    "dates_projection": "reports/continuation-20261030/chart-wave-v1/SCORE_DATE_PROJECTION.json"
+  },
+  {
+    "artifact": "reports/continuation-20261030/chart-wave-v1/EMPIRICAL_SCORES.json",
+    "state": "SCORED",
+    "kind": "qualified_partial_chart_empirical_rolling",
+    "dates_projection": "reports/continuation-20261030/chart-wave-v1/EMPIRICAL_SCORE_DATE_PROJECTION.json"
+  },
+  {
+    "artifact": "reports/continuation-20261030/distribution-wave-v2/WEEK8_CAPTURE_RECEIPT.json",
+    "state": "FORECASTED_UNSCORED",
+    "pending_reason": "NewpartialWeek8pre-deadlinecapturedbytes;13games;firstelapsedgameexcluded;qualifiedfinaloutcomesnotread. OriginalfullWeek8packetsunchanged."
+  },
+  {
+    "artifact": "reports/continuation-20261030/count-ablation-wave-v1/WEEK8_CAPTURE_RECEIPT.json",
+    "state": "FORECASTED_UNSCORED",
+    "pending_reason": "NewpartialWeek8pre-deadlinecapturedbytes;13games;firstelapsedgameexcluded;qualifiedfinaloutcomesnotread. OriginalfullWeek8packetsunchanged."
+  },
+  {
+    "artifact": "reports/continuation-20261030/empirical-common-asof-shadow-v1/CAPTURE_RECEIPT.json",
+    "state": "FORECASTED_UNSCORED",
+    "pending_reason": "NewpartialWeek8pre-deadlinecapturedbytes;13games;firstelapsedgameexcluded;qualifiedfinaloutcomesnotread. OriginalfullWeek8packetsunchanged."
+  },
+  {
+    "artifact": "reports/continuation-20261030/chart-wave-v1/WEEK8_CAPTURE_RECEIPT.json",
+    "state": "FORECASTED_UNSCORED",
+    "pending_reason": "NewpartialWeek8pre-deadlinecapturedbytes;13games;firstelapsedgameexcluded;qualifiedfinaloutcomesnotread. OriginalfullWeek8packetsunchanged."
+  },
+  {
+    "artifact": "reports/continuation-20261030/chart-wave-v1/EMPIRICAL_FUTURE_CAPTURE_RECEIPT.json",
+    "state": "FORECASTED_UNSCORED",
+    "pending_reason": "NewpartialWeek8pre-deadlinecapturedbytes;13games;firstelapsedgameexcluded;qualifiedfinaloutcomesnotread. OriginalfullWeek8packetsunchanged."
+  },
+  {
+    "artifact": "reports/continuation-20261030/chart-cohort-scorecards-v1/SCORES.json",
+    "state": "SCORED",
+    "kind": "prior_signed_chart_score_cohorts_not_workload",
+    "dates_projection": "reports/continuation-20261030/chart-cohort-scorecards-v1/SCORE_DATE_PROJECTION.json"
+  },
+  {
+    "artifact": "reports/continuation-20261030/chart-grid-precision-correction-v1/SCORES.json",
+    "state": "SCORED",
+    "kind": "precision_only_rescoring_not_new_forecasts_or_outcomes",
+    "dates_projection": "reports/continuation-20261030/chart-grid-precision-correction-v1/SCORE_DATE_PROJECTION.json"
+  },
+  {
+    "artifact": "reports/continuation-20261030/CHECKPOINT_SOFTWARE_TESTS.json",
+    "state": "SOFTWARE_VERIFIED",
+    "kind": "software_attempt_receipt_no_NFL_accuracy"
+  },
+  {
+    "artifact": "reports/continuation-20261030/COHORT_SOFTWARE_TEST_ATTEMPT_INITIAL.json",
+    "state": "SOFTWARE_VERIFIED",
+    "kind": "software_attempt_receipt_no_NFL_accuracy"
+  },
+  {
+    "artifact": "reports/continuation-20261030/INDEX_SOFTWARE_ATTEMPT_INITIAL.json",
+    "state": "SOFTWARE_VERIFIED",
+    "kind": "software_attempt_receipt_no_NFL_accuracy"
+  },
+  {
+    "artifact": "reports/continuation-20261030/distribution-wave-v1/SCORES.json",
+    "state": "FAILED_EMPTY_NO_EVALUATIONS",
+    "failure_receipt": "reports/continuation-20261030/distribution-wave-v1/RUN_RECEIPT.json",
+    "reason": "Blockedmissing-boardpositioninferencefailurebeforehistoricalscoreoutput;modelsandpartialfuturechunksretained;emptylistisnotzeroNFLerror"
   }
 ]

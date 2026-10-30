@@ -21,6 +21,12 @@ scores. Never convert MAE/Brier into a generic percentage accuracy. Keep
 software verification, retrospective diagnostics and original pregame forecasts
 as separate evidence kinds.
 
+The October29 complete index is immutable. Current evaluations use
+`tools/build_test_index_v2.py` and the pointer in
+`registries/CURRENT_RESULTS_INDEX.json`, with bounded JSON/CSV parts. Preserve
+all old IDs, source bytes, failures and original future captures. Register
+supplemental `*SCORES.json` artifacts as well as canonical `SCORES.json`.
+
 Account for every located method's Week 8 status in the capture matrix. Preserve
 all original forecasts and source/game assignments. New shadows have real issue,
 persistence, restoration and horizon records; a late owner-input-cutoff forecast

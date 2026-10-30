@@ -1,3 +1,5 @@
+> Latest October30 evidence: [executed checkpoint](continuation-20261030/README.md), [current answers](continuation-20261030/ANSWERS_01_TO_14.md), [category representatives](continuation-20261030/TWELVE_CATEGORY_SUMMARY.md), and [future coverage](continuation-20261030/FUTURE_CAPTURE_AND_RELEASE_HANDOFF.md). Earlier checkpoint follows at its original evidence level.
+
 # Fourteen answers — executed checkpoint, October 29, 2026
 
 **The requested complete tournament and clean history winner are not yet established.** This checkpoint independently replays retained evidence and traces code; it does not turn inaccessible experiments into results. Code and data conclusions have different evidence levels. See [counts](CHECKPOINT_COUNTS.json), [source scope](inventory/INVENTORY_COMPLETENESS.md), [replay](replay/REPLAY_RECEIPT.json), [independent checks](verification/INDEPENDENT_REVIEW.md) and [restart queue](../TASK_LEDGER.md).

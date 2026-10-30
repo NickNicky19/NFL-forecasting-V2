@@ -1,0 +1,522 @@
+{
+  "state": "FAILED_QA_MARKDOWN_PARSER_NO_SCIENTIFIC_FINDING",
+  "actual_checked_at": "2026-10-30T20:34:47.304140+00:00",
+  "reviewer": "independent_upstream_inventory_agent",
+  "scope": "Read-only public aggregate projections and staged no-fit readiness; no raw NFL replay, fitting, inference, acquisition or uploads",
+  "source_files": {
+    "reports/continuation-20261030d/TWELVE_CATEGORY_SUMMARY.md": "0f59e4702a73b519aa597841dc95450ebeb1f5c3cc38f144d57d9ca1a9137592",
+    "reports/continuation-20261030d/current-ranking-v2/PROCEDURE_RANKINGS.csv": "0c0eeebefff970315916c74d0a3793ef13a831fd9f4a4f242c6687fa9e459e93",
+    "reports/continuation-20261030d/history-adjacent-v1/FIXED_LEAF_ADJACENT_HISTORY.csv": "b984e723447874f8770b75799b640ab24c0cd58c9475efd509eca3ce21746a65",
+    "reports/continuation-20261030d/history-adjacent-v1/README.md": "0c52679311538ae37bb459e64023ed245f4edc6e2c2a0aca11c938ca4ab3b4b9",
+    "reports/continuation-20261030d/history-adjacent-v1/RUN_RECEIPT.json": "8dfbf0c4a70a2405f74e4e105aea6c0b5ce55573c737cf931a77329bdb9de11e",
+    "reports/continuation-20261030d/carry-older-robustness-v1/PAIR_ANALYSIS.csv": "305063816367d63138c135c0146a0e3a71f4ed34ec985bdc86b324bd75a43cfb",
+    "reports/continuation-20261030d/strict-hgb-2026-runner-readiness-v1/READINESS_NO_FITS.json": "e7bb975e157da737662eb78c18c8c4950bf27f37cee709cf65cb208b7b5233cb",
+    "reports/continuation-20261030d/strict-hgb-2026-runner-readiness-v1/FULL_GRID_NOT_EXECUTED.json": "b80ea3e9b08c8043e776d5969b140ec8c34cbcac278c8dd9dbc8c9e2f49299b4",
+    "nfl_v2/strict_hgb_2026_runner.py": "08fcb9258c37f75b3561f510f950ee0870b3d14a2d9349f3300d4cc596a3265e",
+    "nfl_v2/expanded_retention_gate.py": "f3f4ee33076ed9863ec6f26fd21b9449beddd5340d6f8d0550d5eb3a0d435163",
+    "nfl_v2/strict_hgb_2026_design.py": "ecfa53585f01cf7fda4da875d51218c0c6cc77f3e58366959b020fc5de98e1ac",
+    "reports/continuation-20261030d/source2021-qualification-v1/LICENSE_QUALIFICATION_UPDATE.json": "9dd734bc3f96022228fda680d12123f4bf6c0e4f1c68fdab3f1d46cbf214bed2",
+    "reports/continuation-20261030d/source2021-qualification-v1/EXTENSION_DESIGN_NO_FITS.json": "6bcf934211b2471e4ec9ed0efe6e309c6db0ddc650f8864877a5f0b3c8953081",
+    "reports/continuation-20261030d/source2021-qualification-v1/LOCAL_ARCHIVE_PREPARATION.json": "851485f09955a3a440c41c99296e56b66c190b802d48e39d4a7f5b50396fc703"
+  },
+  "counts": {
+    "ranking_representatives": 237,
+    "leader_table_rows": 13,
+    "targets": 12,
+    "current_leader_numeric_fields": 51,
+    "adjacent_table_rows": 0,
+    "adjacent_numeric_fields": 0,
+    "fixed_leaf_season_target_rows": 60,
+    "carry_summary_contrasts": 16,
+    "fictional_no_fit_tests_reexecuted": 15,
+    "checks": 78
+  },
+  "fixed_leaf_adjacent_counts": {
+    "2022": {
+      "recent_minus_current": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 12
+      },
+      "multi_minus_recent": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 12
+      }
+    },
+    "2023": {
+      "recent_minus_current": {
+        "wins": 11,
+        "losses": 1,
+        "ties": 0
+      },
+      "multi_minus_recent": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 12
+      }
+    },
+    "2024": {
+      "recent_minus_current": {
+        "wins": 12,
+        "losses": 0,
+        "ties": 0
+      },
+      "multi_minus_recent": {
+        "wins": 6,
+        "losses": 6,
+        "ties": 0
+      }
+    },
+    "2025": {
+      "recent_minus_current": {
+        "wins": 11,
+        "losses": 1,
+        "ties": 0
+      },
+      "multi_minus_recent": {
+        "wins": 10,
+        "losses": 2,
+        "ties": 0
+      }
+    },
+    "2026": {
+      "recent_minus_current": {
+        "wins": 12,
+        "losses": 0,
+        "ties": 0
+      },
+      "multi_minus_recent": {
+        "wins": 8,
+        "losses": 4,
+        "ties": 0
+      }
+    }
+  },
+  "strict_readiness": {
+    "state": "BLOCKED_NO_EXECUTION",
+    "source_hashes_matched": 6,
+    "frozen_query_hash_matches": true,
+    "nominal_cells": 147,
+    "actual_fits": 0,
+    "labels_decoded": 0,
+    "execution_protocol_frozen": false,
+    "retention_reason": "FRESH_RETENTION_GATE_MISSING"
+  },
+  "source2021": {
+    "ordinary_RECENT_requested_cells": 1098,
+    "chart_RECENT_blocked_cells": 54,
+    "archive_bytes": 2536759,
+    "archive_sha256": "612cd9679f5b1828b4edbd0a961410a0ba386a17392e5713fb61d64486ec8736",
+    "status": "LOCAL_ONLY_NO_UPLOAD_NO_FIT_ADMISSION"
+  },
+  "checks": [
+    {
+      "check": "twelve_distinct_targets_thirteen_tied_leader_rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique_source_leader_anytime_td_hgb-binary-logloss",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_error_anytime_td_hgb-binary-logloss",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_support_anytime_td_hgb-binary-logloss",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_fallback_anytime_td_hgb-binary-logloss",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique_source_leader_nick-chart-ppr-v1_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_error_nick-chart-ppr-v1_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_support_nick-chart-ppr-v1_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_fallback_nick-chart-ppr-v1_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_precision_nick-chart-ppr-v1_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique_source_leader_pass_att_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_error_pass_att_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_support_pass_att_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_fallback_pass_att_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_precision_pass_att_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique_source_leader_pass_cmp_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_error_pass_cmp_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_support_pass_cmp_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_fallback_pass_cmp_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_precision_pass_cmp_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique_source_leader_pass_int_leaf-cdf-without-explicit-lag-block",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_error_pass_int_leaf-cdf-without-explicit-lag-block",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_support_pass_int_leaf-cdf-without-explicit-lag-block",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_fallback_pass_int_leaf-cdf-without-explicit-lag-block",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_precision_pass_int_leaf-cdf-without-explicit-lag-block",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique_source_leader_pass_td_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_error_pass_td_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_support_pass_td_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_fallback_pass_td_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_precision_pass_td_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique_source_leader_pass_yd_hgb-L1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_error_pass_yd_hgb-L1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_support_pass_yd_hgb-L1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_fallback_pass_yd_hgb-L1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_precision_pass_yd_hgb-L1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique_source_leader_rec_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_error_rec_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_support_rec_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_fallback_rec_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_precision_rec_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique_source_leader_rec_leaf-cdf-without-explicit-lag-block",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_error_rec_leaf-cdf-without-explicit-lag-block",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_support_rec_leaf-cdf-without-explicit-lag-block",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_fallback_rec_leaf-cdf-without-explicit-lag-block",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_precision_rec_leaf-cdf-without-explicit-lag-block",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique_source_leader_rec_yd_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_error_rec_yd_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_support_rec_yd_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_fallback_rec_yd_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_precision_rec_yd_leaf-cdf-observed-defense-D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique_source_leader_rush_att_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_error_rush_att_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_support_rush_att_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_fallback_rush_att_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_precision_rush_att_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique_source_leader_rush_rec_yd_hgb-L1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_error_rush_rec_yd_hgb-L1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_support_rush_rec_yd_hgb-L1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_fallback_rush_rec_yd_hgb-L1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_precision_rush_rec_yd_hgb-L1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique_source_leader_rush_yd_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_error_rush_yd_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_support_rush_yd_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_fallback_rush_yd_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "leader_precision_rush_yd_leaf-cdf-observed-defense-D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "receptions_exactly_two_tied_point_leaders",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "adjacent_table_all_twelve_targets",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "check": "adjacent_2026_claims",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "adjacent_2025_claims",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "adjacent_2024_claims",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "2023_recent_multi_alias",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "2022_proxy_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "paired_views_not_new_observations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "carry_four_full_and_twelve_top_losses",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "carry_2024_2022_intervals_cross_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "staged_sources_and_no_execution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "readiness_current_code_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "2021_extension_staged_ordinary_and_chart_dependencies",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "findings": [
+    {
+      "check": "adjacent_table_all_twelve_targets",
+      "detail": null
+    }
+  ],
+  "not_verified_here": [
+    "R0 eight-of-ten and horizon claim inherits its linked prior independent replay, not repeated here",
+    "Ranking source/retained raw prediction correctness inherits prior source-bound independent score reviews",
+    "Actual new positive retention gate is absent; software fixtures do not authenticate storage restoration"
+  ],
+  "new_NFL_fits": 0,
+  "new_forecasts": 0,
+  "new_NFL_samples": 0,
+  "CURRENT_2026_Week8_outcomes_read": 0,
+  "failure_reason": "The QA-only parser expected10pipe separators for the8-column adjacent table; actual9. Corrected parser independently checked all12rows and108numeric fields in CHECKPOINT_CATEGORY_READBACK.json. No source document or scientific result changed.",
+  "superseded_by": "reports/continuation-20261030d/CHECKPOINT_CATEGORY_READBACK.json"
+}

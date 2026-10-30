@@ -1,6 +1,29 @@
 {
-  "schema": "v2-current-public-index-pointer-v1",
+  "schema": "v2-current-public-index-pointer-v2",
   "manifest": "reports/continuation-20261030c/results-index/INDEX_MANIFEST.json",
   "previous_checkpoint": "reports/continuation-20261030b/results-index/INDEX_MANIFEST.json",
-  "previous_unchanged": true
+  "previous_unchanged": true,
+  "manifest_role": "ALL_AUDIT_IMMUTABLE_BACKWARD_COMPATIBLE",
+  "default_view": "CURRENT_CANONICAL_SCORE_VERSIONS",
+  "default_score_version_manifest": {
+    "path": "reports/continuation-20261030d/current-ranking-v2/current-valid-results/CURRENT_MANIFEST.json",
+    "sha256": "3d4f226156cfa492216b0aff0c187db9cdb6913e3b0f32a5b842034e58cbbd57"
+  },
+  "procedure_rankings": {
+    "path": "reports/continuation-20261030d/current-ranking-v2/PROCEDURE_RANKINGS.json",
+    "sha256": "9f24f64ab8c004e42ed504da2cf8fb09287807b79bfe4d62f30db7b98f66d6a6"
+  },
+  "top_five_rankings": {
+    "path": "reports/continuation-20261030d/current-ranking-v2/TOP5_BY_CATEGORY_PRODUCT.json",
+    "sha256": "f7b540ccf688bb77672646b7a0af162f987a9669d836a4f44651e497205803d8"
+  },
+  "derived_comparison_manifest": {
+    "path": "reports/continuation-20261030d/paired-analysis-index-v2/ANALYSIS_MANIFEST.json",
+    "sha256": "25d6f5b0276cb2b415c04f5f2e886a6eaeaa5618f398aa6131a2be397efe0085"
+  },
+  "readable_checkpoint": "reports/continuation-20261030d/README.md",
+  "software_verification_manifest": {
+    "path": "reports/continuation-20261030d/SOFTWARE_VERIFICATION_MANIFEST.json",
+    "sha256": "ab66660c8fd3e6e0b4e2638a05dc97c260f2e0935cfcefba91f874cffdec51ab"
+  }
 }

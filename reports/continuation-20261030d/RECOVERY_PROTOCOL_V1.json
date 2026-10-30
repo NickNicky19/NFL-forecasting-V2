@@ -1,0 +1,13 @@
+{
+  "protocol_id": "v2-recoverability-census-20261030d-v1",
+  "accepted_parent": "2ee4751c0c1ffce1900d6743b947a9330675056b",
+  "work": "Read-only archive/member/source-file census and missing-only retention plan; no NFL fits",
+  "scope": "All retained scientific evidence directories and admitted source snapshots; duplicate staging/transport encodings are inventoried separately from original scientific file bytes",
+  "source_of_restore_truth": "Fresh restoration receipts plus archive/part/member SHA256 equality; uploaded parts alone do not qualify a full archive",
+  "missing_2024_parts": [7,11,12,13,14,15,16,17,18,19,20,21],
+  "retention_rules": ["Preserve every local original and corrected file", "Preserve every successful uploaded part", "No deletion, sharing change, paid storage or public restricted records", "Use only existing approved companion or an explicitly owner-approved solution", "Complete missing parts only and verify fresh full reassembly/hash equality"],
+  "capacity_reporting": "Exact archive-byte requirement for a named finite restoration plan; provider free space remains unknown unless exposed by an approved tool. Additional headroom is labeled separately. A prepared-archive subtotal is not a lifetime-completeness claim.",
+  "read_only_budget": {"wall_seconds": 300, "cpu_seconds": 300, "max_peak_memory_bytes": 1073741824},
+  "new_NFL_fit_calls": 0,
+  "current_2026_week8_outcomes_read": 0
+}

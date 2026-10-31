@@ -18,3 +18,5 @@ No new estimator fits, model prediction calls or original captures were executed
 Weeks 1–4 original clocks, the Week 5 Thursday source, older authenticated offers/prices and exact gated fits remain explicit dependencies. The latest private-store read found none of the 53 required missing part names; available quota is not exposed. User authorization for approved capacity persists, but complete missing-only restoration has not been demonstrated. No unchanged bulk retry or destructive workaround was attempted.
 
 Projection provenance: the retained `CURRENT_ACTUAL_METHOD_SCORE_PROJECTION.json` carries the inherited G parent-projection timestamp, not an H creation or forecast-issuance clock. The current scoreboard binds [projection V2](CURRENT_ACTUAL_METHOD_SCORE_PROJECTION_V2.json), which records the inherited parent time and actual later H assembly time separately. Per-run protocols and receipts retain actual execution clocks.
+
+[Direct twelve-category reply tables and separate method leaders](DIRECT_CATEGORY_TABLES_PRESENTATION_V1.md) use the same retained aggregates, with explicit side/count reconciliation and no new scientific scores.

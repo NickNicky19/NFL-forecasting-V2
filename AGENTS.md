@@ -33,3 +33,7 @@ persistence, restoration and horizon records; a late owner-input-cutoff forecast
 does not satisfy that earlier cutoff. Unrestored complex methods remain blocked,
 and simple controls cannot fill their named cells. Store restricted prediction
 rows in the verified private companion; publish only safe IDs/hashes/aggregates.
+
+## Mandatory category tables in checkpoint replies
+
+Every substantive user-facing checkpoint must include two inline tables: (A) all twelve categories of original recorded selections with separate selected-Over, selected-Under and correctly weighted Combined W/L/decided/hit rates, unknown states and exact period gaps; (B) exact forecasting procedures/history/output/selection rules with each procedure's own numerical-panel error and own offered-panel side counts/coverage/evidence periods. Preserve tied procedures as separate rows, identify distinct numerical/Over/Under/combined leaders, and label tiny or fallback-only maxima. Unsupported categories require N/A plus the exact reason. Link all-method and machine evidence too; overall totals or links alone do not satisfy the reporting requirement. Rendering retained aggregates is not a new experiment and must not trigger a completed scientific fit/scoring rerun.

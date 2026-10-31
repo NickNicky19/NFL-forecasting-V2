@@ -146,3 +146,7 @@ Actual saved-method W5 replay, full Leaf/C02 histogram lookup and primary P1/P2 
 | H owner release | Existing prepared V2.1policy, mandatory own source/model/query/consumer/fallback/freshness/rollback and owner admission remain. No new blanket future-evidence/website-win gate. Owner notified of elapsed window with exact receipts; no V2dispatch/lease/collector/scheduler/merge/deploy. Next confirmed future T90Nov1 16:30UTC/10:30CST. |
 
 Public-safe code/aggregate/hash evidence remains separate from restricted source/model rows. Native2026W1–7 and completed prior-season rankings/selector reversals remain unchanged. Missing scores are null, not invented losses or zero errors. The full tournament and full-season original offer performance remain incomplete at stated source/storage cells.
+
+## Mandatory inline category presentation continuation
+
+The owner requires all twelve categories directly in every substantive checkpoint reply. [Retained-evidence presentation](reports/baselines-coverage-20261031h/DIRECT_CATEGORY_TABLES_PRESENTATION_V1.md) and [source bindings](reports/baselines-coverage-20261031h/DIRECT_CATEGORY_TABLES_BINDINGS_V1.json) present original sides and the numerical leaders' own P1 sides, retaining tied receptions procedures and distinct raw P1/P2 maxima. This amendment creates no new scientific scores, time coverage, fits, inference or captures. Original source/index bytes, all losses, recovery gates, unfinished full-period comparisons and production ownership remain unchanged.

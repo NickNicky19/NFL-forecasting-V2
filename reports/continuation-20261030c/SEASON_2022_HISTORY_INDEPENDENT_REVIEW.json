@@ -1,0 +1,41 @@
+{
+  "state": "PASS_ALL_SAVED_ROW_HISTORY_CONTRASTS_AND_INDEPENDENT_BLOCK_UNCERTAINTY",
+  "season": 2022,
+  "score_views": 1512,
+  "source_history_sha256": "8d9ab4c6cd2629d273fcb68484f53c0943493daa492e066291f54c0c57f524df",
+  "source_prediction_sha256": "3067ca1bb727b2035874befcb48c808d0358d0ef1cb838cbd855d53807fa9eb1",
+  "checks": {
+    "exact_query_label_position_policy_pairs": 993987,
+    "independent_week_sums_and_counts": 46428,
+    "independent_500_draw_wholeweek_intervals": 1386,
+    "independent_game_influence_SEs": 1386,
+    "finite_history_contrasts": 1386,
+    "explicit_nonfinite_contrasts": 126
+  },
+  "representative_observed_win_loss": [
+    {
+      "direction": "tie",
+      "target": "pass_att",
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "product_id": "absolute_error_point",
+      "contrast": "H-MULTI_MINUS_H-CURRENT",
+      "n": 633,
+      "candidate_error": 10.356064444745842,
+      "comparator_error": 10.356064444745842,
+      "delta": 0.0,
+      "week_interval": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "interpretation": "Samegamepairedcurrent-vintagehistorycomparisonswithfallbacks; strictchangesfullinformationpolicy. Nominalwholeweekintervalsnotmultiplicityadjusted, notfreshconfirmation; seasonbalancedaveragescannotanswerfixed2026historyquestion.",
+  "resource": {
+    "wall_seconds": 44.550658778999605,
+    "cpu_seconds": 44.746525954999996,
+    "peak_rss_bytes": 468176896
+  },
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

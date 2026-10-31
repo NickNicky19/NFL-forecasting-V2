@@ -1,0 +1,65 @@
+{
+  "protocol_id": "v2-earliest-server-retained-W6-source-qualification-v1",
+  "registered_at_utc": "2026-10-31T01:23:32.998383+00:00",
+  "state": "FROZEN_BEFORE_METADATA_QUALIFICATION_LABEL_JOIN_OR_NEW_SCORES",
+  "repository": "NickNicky19/nicks-expert-nfl-picks",
+  "inspected_head": "1ec93e068a91abd51c990937d1019e4a831694b4",
+  "source_commit": "06c38168956410d406977a71674f8078fe3f55d6",
+  "source_path": "output/data/archive/2026_w06.json",
+  "source_git_blob_sha": "a7cc20091bd6117295f87d922f440e139fc08c83",
+  "source_sha256": "1744ea25f501ceb5d7f7894c8ff3443df5a7a9396f6270f907c93097deafb486",
+  "source_committer_clock": "2026-10-13T04:07:09Z",
+  "source_server_retained_by": "2026-10-13T04:36:44Z",
+  "server_evidence": {
+    "kind": "GITHUB_ACTIONS_RUN_HEAD_SHA",
+    "run_id": 38347281752,
+    "head_sha": "06c38168956410d406977a71674f8078fe3f55d6",
+    "created_at": "2026-10-13T04:36:44Z",
+    "check_id": 115131504187
+  },
+  "selection_rule": "Earliest reachable archive commit by(metadata committer_clock,SHA) that has independently retained pregame server head-SHA proof. EarliestW6 archive selected before decoding any row outcomes or computing scores; laterforward firstsource remains separately inventoried.",
+  "evaluation_panel": {
+    "season": 2026,
+    "week": 6,
+    "games": [
+      "2026_06_SEA_DEN",
+      "2026_06_HOU_JAX",
+      "2026_06_CHI_ATL",
+      "2026_06_BAL_CLE",
+      "2026_06_TEN_IND",
+      "2026_06_NYJ_NE",
+      "2026_06_NO_NYG",
+      "2026_06_CAR_PHI",
+      "2026_06_PIT_TB",
+      "2026_06_ARI_LA",
+      "2026_06_LAC_KC",
+      "2026_06_BUF_LV",
+      "2026_06_DAL_GB",
+      "2026_06_WAS_SF"
+    ],
+    "intended_games": 14,
+    "all_before_T90": true
+  },
+  "metadata_rule": "Reuse lexical metadata projector; never decode unknown/actual fields. All ordinary10targets with finite DK/Sleeper-labelled threshold, exactevent/player/position identity and future kickoff retained; no originalside/pointgap/participant/outcome filter.",
+  "strategies": [
+    "ORIGINAL_RECORDED_SIDE",
+    "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+    "SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+    "alwaysOver",
+    "alwaysUnder"
+  ],
+  "products": "Only statistical threshold crossing; no probabilities/prices/settlement/EV/ROI/CLV. Sourceoriginals separate from newretrospectiverules; generatedthreshold census separate; chart/anytimeoffers unavailableunlessexactcontract independentlyqualified.",
+  "label_rule": "Existing restored NFLverse qualified explicit-label contract; no absentcomponentzero or inferredDNP; exact GSIS/game/target/playerrole. Freeze membership/code before newlabels orgrades.",
+  "independent_reviews": "Independent source/timing/join/scorer review required; no duplicateF462scoring.",
+  "other_weeks": "W4/W5 earliestcommits located but noActions/status/checkserver pregameclock found inqueriedhead/date scopes. Preserve commit-timed evidence as weaker tier; do not call server-proven original selections.",
+  "exposure": "Historical years exposed; no newholdout. W6firstsnapshot notselected byoutcome. W8metadata/outcomes notdecoded.",
+  "budget": {
+    "wall_seconds": 180,
+    "max_RSS_bytes": 1073741824,
+    "max_private_new_bytes": 8388608,
+    "max_threads": 1,
+    "new_fits": 0,
+    "new_inference": 0,
+    "new_forecasts": 0
+  }
+}

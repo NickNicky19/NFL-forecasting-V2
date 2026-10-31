@@ -1,0 +1,44 @@
+{
+  "protocol_id": "v2-H-actual-served-consumer-readback-v1",
+  "registered_at_utc": "2026-10-31T03:38:44.397405+00:00",
+  "state": "FROZEN_EXPECTED_CHECKS_BEFORE_RENDER_CALCULATIONS",
+  "source_prior": {
+    "pointer.json": {
+      "bytes": 337,
+      "sha256": "23d2875b93516bad86ad0e8f26990d0e6a6c460d12174fdfb10fec04c5151969"
+    },
+    "payload.json": {
+      "bytes": 1871124,
+      "sha256": "369fec9caec012cb292284006a60bb25727d6d9d853f00560dbffe57f1ea1fa4"
+    },
+    "consumer.js": {
+      "bytes": 10159,
+      "sha256": "d6657e82639aa001f64701672e25cc72bd6e55142127669a59396f9efe485a68"
+    },
+    "app.js": {
+      "bytes": 354496,
+      "sha256": "30e8bc0e0b04a2da1e0a8e94e99a79ff62b5f1f67427169c6db93783807e452e"
+    }
+  },
+  "checks": [
+    "Freshservedpointer/payload/code byte identity and HTTP clocks",
+    "Exact served Overlay.validate/card and app selectedPropForecast slice on all saved rows",
+    "Countpoint_mean/expected_mean;yardpoint_median/intended_median;binary_probability/event_probability",
+    "Reject countmedian and extra expected_mean wire field",
+    "Missing row, stale pregame, frozen postkickoff, disabled rollback, boardhash mismatch and missing pointer rollback",
+    "No stat_point_mae_v2 rows expected from owner public readback; test actual count rather than assume success"
+  ],
+  "board_policy": "Acquire data/week.json bytes solely for SHA256 and lexical identity/season/week/gamekickoff/player-prop-key metadata. No NFL statistics/outcome scalar decoded or scored. Never execute complete app.js or grading/statistic code.",
+  "evaluation_clock": "Actual captured audit clock; additional synthetic boundary clocks explicitly fixtures.",
+  "claims": "Served static-byte and consumer-function execution parity, not browser screenshot, new capture, forecast skill, source vintage authentication or release admission.",
+  "budget": {
+    "max_wall_seconds": 300,
+    "max_RSS_bytes": 1073741824,
+    "max_threads": 2,
+    "max_private_bytes": 16777216,
+    "new_fits": 0,
+    "new_inference": 0,
+    "new_captures": 0,
+    "Week8_outcome_usage": 0
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "protocol_id": "v2-H-W5-per-game-latest-server-retained-before-T90-source-v1",
+  "registered_at_utc": "2026-10-31T03:30:11.229387+00:00",
+  "state": "FROZEN_TIMING_ONLY_SOURCE_ASSIGNMENTS_BEFORE_SOURCE_ROWS_LABELS_OR_GRADES",
+  "source_run_metadata_sha256": "678a069739221e6886382375a6dd002dd98b8dfcb320e90f94277405ce62dbf6",
+  "policy": "For each scheduled Week5 game choose latest GitHub server run.created_at <= scheduled T90; ties by headSHA,runID. Require archive path present; if absent use next earlier eligible run under same timing-only rule and retain amendment before source rows/labels. No point, side, outcome, score or player count informs version selection.",
+  "repository_creation_clock": "2026-10-09T02:33:08Z",
+  "source_contract": "Pinned Git blob at selected run.head_sha plus GitHub server run.created_at proves byte retention by that clock. Does not prove bookmaker quote availability, freshness, input vintages, prices or settlement. Later games only; no backfill of Thursday.",
+  "horizon": "PER_GAME_LATEST_SERVER_RETAINED_BEFORE_T90_QUOTE_AGE_UNKNOWN",
+  "decisions": "Original lean remains side recorded in selected original capture; null remains original abstention. New saved-precision point rules are retrospective; not lost-internal-precision P1.",
+  "rolling_K": "New rolling batch policy must freeze before labels; never fixed weekly list.",
+  "assignments": [
+    {
+      "game_id": "2026_05_PHI_JAX",
+      "source_ESPN_event_id": "401872981",
+      "kickoff": "2026-10-11T13:30:00+00:00",
+      "T90": "2026-10-11T12:00:00+00:00",
+      "selected_source_commit": "f4d2a1a261a6e05c4c00adf382d41d217f720060",
+      "source_server_clock": "2026-10-11T11:32:35Z",
+      "server_run_id": 38135945591,
+      "source_path": "output/data/archive/2026_w05.json"
+    },
+    {
+      "game_id": "2026_05_CHI_GB",
+      "source_ESPN_event_id": "401872990",
+      "kickoff": "2026-10-11T17:00:00+00:00",
+      "T90": "2026-10-11T15:30:00+00:00",
+      "selected_source_commit": "07abdae423390ab5531f65ae095675b5b75abe57",
+      "source_server_clock": "2026-10-11T15:02:57Z",
+      "server_run_id": 38149656424,
+      "source_path": "output/data/archive/2026_w05.json"
+    },
+    {
+      "game_id": "2026_05_CIN_MIA",
+      "source_ESPN_event_id": "401872982",
+      "kickoff": "2026-10-11T17:00:00+00:00",
+      "T90": "2026-10-11T15:30:00+00:00",
+      "selected_source_commit": "07abdae423390ab5531f65ae095675b5b75abe57",
+      "source_server_clock": "2026-10-11T15:02:57Z",
+      "server_run_id": 38149656424,
+      "source_path": "output/data/archive/2026_w05.json"
+    },
+    {
+      "game_id": "2026_05_LV_NE",
+      "source_ESPN_event_id": "401872986",
+      "kickoff": "2026-10-11T17:00:00+00:00",
+      "T90": "2026-10-11T15:30:00+00:00",
+      "selected_source_commit": "07abdae423390ab5531f65ae095675b5b75abe57",
+      "source_server_clock": "2026-10-11T15:02:57Z",
+      "server_run_id": 38149656424,
+      "source_path": "output/data/archive/2026_w05.json"
+    },
+    {
+      "game_id": "2026_05_MIN_NO",
+      "source_ESPN_event_id": "401872987",
+      "kickoff": "2026-10-11T17:00:00+00:00",
+      "T90": "2026-10-11T15:30:00+00:00",
+      "selected_source_commit": "07abdae423390ab5531f65ae095675b5b75abe57",
+      "source_server_clock": "2026-10-11T15:02:57Z",
+      "server_run_id": 38149656424,
+      "source_path": "output/data/archive/2026_w05.json"
+    },
+    {
+      "game_id": "2026_05_CLE_NYJ",
+      "source_ESPN_event_id": "401872983",
+      "kickoff": "2026-10-11T17:00:00+00:00",
+      "T90": "2026-10-11T15:30:00+00:00",
+      "selected_source_commit": "07abdae423390ab5531f65ae095675b5b75abe57",
+      "source_server_clock": "2026-10-11T15:02:57Z",
+      "server_run_id": 38149656424,
+      "source_path": "output/data/archive/2026_w05.json"
+    },
+    {
+      "game_id": "2026_05_IND_PIT",
+      "source_ESPN_event_id": "401872985",
+      "kickoff": "2026-10-11T17:00:00+00:00",
+      "T90": "2026-10-11T15:30:00+00:00",
+      "selected_source_commit": "07abdae423390ab5531f65ae095675b5b75abe57",
+      "source_server_clock": "2026-10-11T15:02:57Z",
+      "server_run_id": 38149656424,
+      "source_path": "output/data/archive/2026_w05.json"
+    },
+    {
+      "game_id": "2026_05_HOU_TEN",
+      "source_ESPN_event_id": "401872984",
+      "kickoff": "2026-10-11T17:00:00+00:00",
+      "T90": "2026-10-11T15:30:00+00:00",
+      "selected_source_commit": "07abdae423390ab5531f65ae095675b5b75abe57",
+      "source_server_clock": "2026-10-11T15:02:57Z",
+      "server_run_id": 38149656424,
+      "source_path": "output/data/archive/2026_w05.json"
+    },
+    {
+      "game_id": "2026_05_NYG_WAS",
+      "source_ESPN_event_id": "401872988",
+      "kickoff": "2026-10-11T17:00:00+00:00",
+      "T90": "2026-10-11T15:30:00+00:00",
+      "selected_source_commit": "07abdae423390ab5531f65ae095675b5b75abe57",
+      "source_server_clock": "2026-10-11T15:02:57Z",
+      "server_run_id": 38149656424,
+      "source_path": "output/data/archive/2026_w05.json"
+    },
+    {
+      "game_id": "2026_05_DEN_LAC",
+      "source_ESPN_event_id": "401872989",
+      "kickoff": "2026-10-11T20:05:00+00:00",
+      "T90": "2026-10-11T18:35:00+00:00",
+      "selected_source_commit": "fa09c5492d4a59b5dfe863fc3dc448b0fb20b4d7",
+      "source_server_clock": "2026-10-11T18:33:09Z",
+      "server_run_id": 38164291233,
+      "source_path": "output/data/archive/2026_w05.json"
+    },
+    {
+      "game_id": "2026_05_DET_ARI",
+      "source_ESPN_event_id": "401872991",
+      "kickoff": "2026-10-11T20:25:00+00:00",
+      "T90": "2026-10-11T18:55:00+00:00",
+      "selected_source_commit": "fa09c5492d4a59b5dfe863fc3dc448b0fb20b4d7",
+      "source_server_clock": "2026-10-11T18:33:09Z",
+      "server_run_id": 38164291233,
+      "source_path": "output/data/archive/2026_w05.json"
+    },
+    {
+      "game_id": "2026_05_SF_SEA",
+      "source_ESPN_event_id": "401872992",
+      "kickoff": "2026-10-11T20:25:00+00:00",
+      "T90": "2026-10-11T18:55:00+00:00",
+      "selected_source_commit": "fa09c5492d4a59b5dfe863fc3dc448b0fb20b4d7",
+      "source_server_clock": "2026-10-11T18:33:09Z",
+      "server_run_id": 38164291233,
+      "source_path": "output/data/archive/2026_w05.json"
+    },
+    {
+      "game_id": "2026_05_BAL_ATL",
+      "source_ESPN_event_id": "401872993",
+      "kickoff": "2026-10-12T00:20:00+00:00",
+      "T90": "2026-10-11T22:50:00+00:00",
+      "selected_source_commit": "15a0c968407c4b62beafca776d4f7e4dc3616b2e",
+      "source_server_clock": "2026-10-11T22:33:35Z",
+      "server_run_id": 38180903569,
+      "source_path": "output/data/archive/2026_w05.json"
+    },
+    {
+      "game_id": "2026_05_BUF_LA",
+      "source_ESPN_event_id": "401872994",
+      "kickoff": "2026-10-13T00:15:00+00:00",
+      "T90": "2026-10-12T22:45:00+00:00",
+      "selected_source_commit": "08e115e331ae7a701042986513f35910855184c4",
+      "source_server_clock": "2026-10-12T22:36:09Z",
+      "server_run_id": 38317593425,
+      "source_path": "output/data/archive/2026_w05.json"
+    }
+  ],
+  "missing_games": [
+    {
+      "game_id": "2026_05_TB_DAL",
+      "kickoff": "2026-10-09T00:15:00+00:00",
+      "T90": "2026-10-08T22:45:00+00:00",
+      "reason": "NO_SERVER_RETENTION_BEFORE_T90_PRODUCTION_REPO_CREATED_AFTER_GAME_STARTED"
+    }
+  ],
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_captures": 0
+}

@@ -1,0 +1,48 @@
+{
+  "state": "CONFIRMED_SOURCE_RECIPE_CONTINUITY_GAP_PARTIAL_WAVE",
+  "scope": "Only completed immutable weekpackets at check time; v1allowed tofinish, no modelrefit/capturechanged",
+  "completed_weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "counts": {
+    "RA_rows": 17196,
+    "alias_product_absolute_error_point": 17196,
+    "QB_RB_no_model_fallback_rows": 524,
+    "WR_TE_no_model_fallback_rows": 886,
+    "WR_TE_no_model_numeric_nonzero": 12,
+    "WR_TE_no_model_numerically_already_zero": 874
+  },
+  "packet_sha256": {
+    "WEEK-01-RECEIPT.json": "168320474d1ade5b64a85fdc4fac90ff3c9c2182f36bcdc9f6e27c61770f5e39",
+    "WEEK-02-RECEIPT.json": "2dc07fc0029e7195fa393c5de3d3bdce972bb2e72a97df496250200f3a375d9c",
+    "WEEK-03-RECEIPT.json": "ea74d9d880c2c10148f7ac15e6809eb9f544d0862a84bbef5c2045add03e5427",
+    "WEEK-04-RECEIPT.json": "a3ff3a11a1f24cc51549eefb1364f19edb3626c0c0a9205555cf29581fd72eb4",
+    "WEEK-05-RECEIPT.json": "d3c3b0d72f0b21510476baeecf2415b34248e2900d11c2c704d5ce9c542d387e",
+    "WEEK-06-RECEIPT.json": "d17cd1fee67bb420e0d13169379e58c6131e55524ca87b86b5ccd62e0d6d86e3",
+    "WEEK-07-RECEIPT.json": "eb6d6e489894a3014cecd920b9db6980614d0da0d8c472abd2140e90e22f5f98",
+    "WEEK-08-RECEIPT.json": "1ddd17f58d810e828d864ae1968eed18993c5f0d775eb0e45fb8e2e34b33a0c8",
+    "WEEK-09-RECEIPT.json": "58540f5aa7181bd5a5647e24a10d549a4fe9228a4833e355625238ae18accd74",
+    "WEEK-10-RECEIPT.json": "8ffeb67ee90cc1c29d6e393d1dc924f7414b3c8ec02144f8b9b89c95b0360a3c",
+    "WEEK-11-RECEIPT.json": "3ab466c5e83f5ca20835bca80c9db1a52b7bba5b8387dac8340d7b4838251034",
+    "WEEK-12-RECEIPT.json": "7d793d87b1686be8277604823a90a250588b3aeb0abafd5ee7a8f6a2a6bbf4ef",
+    "WEEK-13-RECEIPT.json": "f2434985798b222a391e30f10b8e1655f9590591bc780eda0ad1fe176bce0b98"
+  },
+  "original_reference": "nfl_v2/count_ablations.py training_roles/datasets/fallbacks: RAeligibleQB/RB only; WR/TEpoolabsent =>literal0. Sourceproductabsolute_loss_point.",
+  "new_v1": "nfl_v2/seasonal_rolling.py fallback_summary indexes allsource roles bytarget/floor regardlessmethod; WR/TEposition/ownfallback rows admitted. NewRAproductabsolute_error_point is outputalias mismatch.",
+  "impact": "No change to QB/RB trainingframes/models or fitted predictions. Repair must filterRAfallbacksource toQB/RB and correctconstant0/metadatastates for unsupportedWR/TE no-modelqueries; aliasrename is not predictivegain.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

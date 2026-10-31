@@ -1,0 +1,695 @@
+"""Guarded older-season execution of the unchanged observed-group D1/D2 recipe.
+
+Importing, planning and preparing this module never load NFL rows or models.
+Only ``execute`` crosses the factual restoration/review/sole-worker gates.
+The injectable loop is also used with synthetic rows and spy models in tests.
+"""
+from __future__ import annotations
+
+import collections
+import csv
+import gzip
+import hashlib
+import json
+import math
+import os
+import pickle
+import resource
+import time
+import traceback
+from pathlib import Path
+
+import numpy as np
+
+from . import defense_season_preflight as plan
+from . import distribution_wave_v2 as laws
+from . import expanded_retention_gate as retention
+from . import hgb_control as source
+from . import ordered_information_ablation as recipe
+from . import qualified_defense_inputs as context
+from . import qualified_defense_wave as original
+from . import seasonal_rolling_v2 as seasonal
+from . import chart_wave as chart
+
+VERSION = 'v2-J-observed-defense-older-season-executor-v1'
+ROOT = Path(__file__).resolve().parents[1]
+WEEKS = tuple(range(1, 19))
+TARGETS = tuple(original.TARGETS)
+GROUPS = ('D1', 'D2')
+BINDING_FIELDS = ('season', 'week', 'target', 'policy_id', 'fit_floor',
+                  'feature_floor', 'fit_cutoff', 'training_n',
+                  'training_membership_sha256', 'own_training_features_sha256',
+                  'own_query_features_sha256', 'prior_parameters',
+                  'prior_position_sample_counts')
+
+
+def digest(value):
+    return hashlib.sha256(source.canonical(value)).hexdigest()
+
+
+def code_bindings():
+    names = ('defense_season_executor.py', 'defense_season_preflight.py',
+             'qualified_defense_wave.py', 'qualified_defense_inputs.py',
+             'qualified_defense.py', 'hgb_control.py', 'empirical_benchmark.py',
+             'seasonal_rolling_v2.py', 'distribution_wave_v2.py',
+             'distribution_laws.py', 'chart_wave.py', 'chart_sources.py',
+             'ordered_information_ablation.py', 'expanded_retention_gate.py')
+    return {name: source.sha(Path(__file__).with_name(name)) for name in names}
+
+
+def slot(week, target, policy):
+    return f'W{week:02}-{target}-{policy}'
+
+
+def metadata_plan(year):
+    """Public metadata only; 2022 RECENT is explicitly a source-limited proxy."""
+    grid = plan.logical_grid(year, TARGETS, windows=('observed',))
+    return dict(version=VERSION, state='PREFLIGHT_ONLY_NO_NFL_ROWS_OR_MODELS',
+                season=year, weeks=list(WEEKS), logical_origins=len(grid),
+                unique_origin_ceiling=sum(not r['alias_of_unrun_origin'] for r in grid),
+                policies={k: dict(history_regime=a, fit_floor=b, feature_floor=c,
+                                  recent2022_proxy=(year == 2022 and a == 'H-RECENT'))
+                          for k, (a, b, c) in plan.policies(year).items()},
+                actual_fits=0, actual_inference=0, closed_backtests=0,
+                exact_2022_recent='NOT_IMPLEMENTED: separately admitted 2021 extension required')
+
+
+def safe_relative(name):
+    p = Path(name)
+    if p.is_absolute() or '..' in p.parts or not p.parts or str(p) == '.':
+        raise ValueError('relative evidence member required')
+    return p
+
+
+def prepare(*, contract, public):
+    """Seal metadata supplied by root; no source/query/baseline rows decoded.
+
+    The input contract binds an existing seasonal protocol, its exact frozen
+    query packet, a newly reviewed per-origin baseline map, and source bytes.
+    Preparing a protocol neither certifies these inputs nor releases a worker.
+    """
+    public = Path(public)
+    if public.exists():
+        raise ValueError('fresh immutable public directory required')
+    year = plan.validate_year(contract['evaluation_season'])
+    if contract.get('evaluation_weeks') != list(WEEKS):
+        raise ValueError('full regular-season weeks1-18 required')
+    if contract.get('window') != 'FOUR_OBSERVED_QUALIFIED_POSITION_GROUPS':
+        raise ValueError('scheduled-window alternative is a separate procedure')
+    if contract.get('targets') != list(TARGETS):
+        raise ValueError('exact twelve-target contract required')
+    expected_names = {'games.csv'} | {f'stats_player_week_{y}.csv' for y in range(2022, year + 1)}
+    if {s['name'] for s in contract['source_ids']} != expected_names:
+        raise ValueError('only exact2022-through-evaluation-year source files admitted')
+    if len(contract['source_ids']) != len(expected_names):
+        raise ValueError('duplicate source reference')
+    for item in contract['source_ids']:
+        safe_relative(item['name'])
+        if set(item)-{'name', 'sha256', 'bytes'}:
+            raise ValueError('public-safe source fields only')
+    for key in ('source_protocol_sha256', 'frozen_queries_sha256',
+                'baseline_bindings_sha256'):
+        if not isinstance(contract.get(key), str) or len(contract[key]) != 64:
+            raise ValueError('exact input digest required: ' + key)
+    budget = contract['budget']
+    if (budget.get('max_threads') != 2 or budget.get('max_fit_calls', 0) <= 0
+            or budget['max_fit_calls'] > metadata_plan(year)['unique_origin_ceiling']):
+        raise ValueError('finite measured wave and at most two threads required')
+    for name in ('wall_seconds', 'cpu_seconds', 'max_peak_memory_bytes',
+                 'max_private_bytes', 'max_source_rows', 'max_forecast_rows'):
+        if not isinstance(budget.get(name), int) or budget[name] <= 0:
+            raise ValueError('positive finite budget required: ' + name)
+    p = dict(contract, version=VERSION, state='FROZEN_METADATA_NOT_ADMITTED',
+             registered_at=source.now(), helpers=code_bindings(),
+             output_kind='NEW_RECONSTRUCTION_NOT_ORIGINAL_ISSUANCE',
+             source_vintage='current-vintage reconstructed; kickoff+7days assumption',
+             recent2022='SOURCE_LIMITED_2022_PROXY_NOT_TRUE_PRIOR_YEAR' if year == 2022 else None,
+             week1='Same-arm role/global law prior; no labels gives numeric0/TD.5 startup',
+             chronology='weekly earliest kickoff fit; strictly earlier availability; per-game kickoff features',
+             scoring='existing seasonal Meter/native signed chart grid; no offer or betting claim')
+    # Reject unexpected local paths/locators in this public contract.
+    if any(k not in {'evaluation_season', 'evaluation_weeks', 'targets', 'window',
+                     'source_ids', 'source_protocol_sha256', 'frozen_queries_sha256',
+                     'baseline_bindings_sha256', 'budget'} for k in contract):
+        raise ValueError('unrecognized public contract field')
+    public.mkdir(parents=True)
+    source.immutable_json(public / 'FROZEN_PROTOCOL.json', p)
+    return p
+
+
+def attach_context_through_year(rows, games, root, year):
+    """Exact existing context checks, with the file loop bounded at eval year."""
+    plan.validate_year(year)
+    lookup = {(r['game_id'], r['player_id']): r for r in rows}
+    if len(lookup) != len(rows) or any(not 2022 <= r['season'] <= year for r in rows):
+        raise ValueError('duplicate, future or pre2022 row')
+    seen = set()
+    for season in range(2022, year + 1):
+        with (Path(root) / f'stats_player_week_{season}.csv').open() as f:
+            for raw in csv.DictReader(f):
+                if raw['season_type'] != 'REG':
+                    continue
+                key = raw['game_id'], raw['player_id']
+                r = lookup.get(key)
+                if r is None:
+                    continue
+                if key in seen:
+                    raise ValueError('duplicate qualified context')
+                seen.add(key)
+                g = games[r['game_id']]
+                if (int(raw['season']) != r['season'] or int(raw['week']) != r['week']
+                        or g['season'] != r['season'] or g['week'] != r['week']
+                        or raw['position'] != r['position']
+                        or (raw['team'], raw['opponent_team']) not in
+                        ((g['home'], g['away']), (g['away'], g['home']))):
+                    raise ValueError('exact historical calendar/team/position required')
+                r.update(team=raw['team'], defense=raw['opponent_team'],
+                         workload={k: source.empirical.numeric(raw[k]) if r['played'] else None
+                                   for k in ('attempts', 'carries', 'targets')})
+                if any(v is not None and not source.empirical.valid_count(v)
+                       for v in r['workload'].values()):
+                    raise ValueError('invalid opportunity denominator')
+    if seen != set(lookup):
+        raise ValueError('missing historical context row')
+    return rows
+
+
+def assert_earlier(value, cutoff, label):
+    if value is not None and (not math.isfinite(value) or value >= cutoff):
+        raise ValueError(label + ' chronology violation')
+
+
+class Features:
+    """Cache exact unchanged own20 plus qualified observed-group augmentation."""
+    def __init__(self, rows, year, targets, role_contract):
+        if any(not 2022 <= r['season'] <= year for r in rows):
+            raise ValueError('future/pre2022 source rejected')
+        self.rows, self.year, self.roles = rows, year, role_contract
+        self.lookup = {(r['game_id'], r['player_id']): r for r in rows}
+        if len(self.lookup) != len(rows):
+            raise ValueError('duplicate row identity')
+        self.histories = {floor: source.FeatureHistory([r for r in rows if r['season'] >= floor])
+                          for floor in {2022, year}}
+        self.defense = context.build_history(rows, targets)
+        self.cache = {}
+
+    def features(self, row, target, floor, cutoff):
+        own, own_max = self.histories[floor].get(row['player_id'], row['position'], target, cutoff)
+        assert_earlier(own_max, cutoff, 'own feature')
+        query = dict(row, target=target, cutoff=cutoff, blocked_reason=None)
+        full, audit = context.augment(own, self.defense, query, floor, 'D2')
+        for group in GROUPS:
+            assert_earlier(original.latest(own_max, audit, group), cutoff, group + ' feature')
+        return np.asarray(own), full, own_max, audit
+
+    def dataset(self, target, floor):
+        key = target, floor
+        if key not in self.cache:
+            roles = set(source.POSITIONS) if target == chart.TARGET else source.allowed_roles(self.roles, target)
+            rs = [r for r in self.rows if r['season'] >= floor and r['position'] in roles
+                  and r['values'][target] is not None]
+            packets = [self.features(r, target, floor, r['kickoff']) for r in rs]
+            self.cache[key] = rs, packets
+        return self.cache[key]
+
+    def origin(self, year, week, target, policy, origin, queries):
+        arm, fit_floor, floor = plan.policies(year)[policy]
+        rs, packets = self.dataset(target, floor)
+        idx = [i for i, r in enumerate(rs) if r['season'] >= fit_floor and r['available'] < origin]
+        train = [rs[i] for i in idx]
+        for r in train:
+            assert_earlier(r['available'], origin, 'training label')
+        y = np.asarray([r['values'][target] for r in train])
+        positions = [r['position'] for r in train]
+        global_prior = recipe.laws_prior(y, target)
+        counts = {pos: positions.count(pos) for pos in source.POSITIONS}
+        priors = {pos: recipe.laws_prior([r['values'][target] for r in train if r['position'] == pos], target)
+                  if counts[pos] else global_prior for pos in source.POSITIONS}
+        query_packets = []
+        for q in queries:
+            r = self.lookup[q['game_id'], q['player_id']]
+            if (r['season'], r['week'], r['position']) != (year, week, q['position']):
+                raise ValueError('same query calendar/position required')
+            query_packets.append(self.features(r, target, floor, r['kickoff']))
+        own_train = [source.json_features(packets[i][0]) for i in idx]
+        own_query = [dict(query_id=q['query_id'], features=source.json_features(packet[0]),
+                          latest_feature_available=packet[2]) for q, packet in zip(queries, query_packets)]
+        binding = dict(season=year, week=week, target=target, policy_id=policy,
+                       fit_floor=fit_floor, feature_floor=floor, fit_cutoff=origin,
+                       training_n=len(train), training_membership_sha256=digest(
+                           [(r['game_id'], r['player_id']) for r in train]),
+                       own_training_features_sha256=digest(own_train),
+                       own_query_features_sha256=digest(own_query),
+                       prior_parameters={pos: law.parameters() for pos, law in priors.items()},
+                       prior_position_sample_counts=counts)
+        return dict(binding=binding, train=train, packets=[packets[i] for i in idx], y=y,
+                    positions=positions, priors=priors, queries=queries, query_packets=query_packets)
+
+
+def check_baseline(binding, expected):
+    if any(expected.get(k) != binding[k] for k in BINDING_FIELDS):
+        raise ValueError('baseline membership/own-feature/prior/query/cutoff mismatch')
+
+
+def compare_retained_fit(binding, fit):
+    """Known retained fit facts; absent training matrices are reconstructed anew."""
+    if (fit.get('method') != 'leaf' or fit.get('target') != binding['target']
+            or fit.get('policy_id') != binding['policy_id']
+            or any(fit.get(k) != binding[k] for k in
+                   ('training_n', 'training_membership_sha256', 'fit_cutoff',
+                    'feature_floor', 'prior_parameters', 'prior_position_sample_counts'))):
+        raise ValueError('retained baseline fit facts disagree with reconstruction')
+
+
+def reconstruct_baseline_metadata(*, source_root, source_protocol_path, queries_path,
+                                  fit_index_path, retained_receipt_root, private,
+                                  restoration_gate, metadata_worker_release):
+    """Guarded no-model baseline adapter; new fingerprints, not original issuance.
+
+    Existing public FIT receipts bind membership/priors/cutoffs. Missing original
+    own-training matrices are not an access dependency: recompute fingerprints
+    from the exact retained source/helper bytes and obtain independent review.
+    Only compact receipts/digests are saved, not another full feature backlog.
+    """
+    restored = retention.require_retention(restoration_gate, ROOT)
+    release = _read_json(metadata_worker_release)
+    expected = dict(source_protocol_sha256=source.sha(source_protocol_path),
+                    frozen_queries_sha256=source.sha(queries_path),
+                    retained_fit_index_sha256=source.sha(fit_index_path),
+                    restoration_gate_sha256=source.sha(restoration_gate),
+                    helpers=code_bindings())
+    if (release.get('state') != 'ROOT_RELEASED_J_BASELINE_METADATA_ONLY'
+            or any(release.get(k) != v for k, v in expected.items())
+            or not release.get('sole_worker_id') or not release.get('max_private_bytes')
+            or not release.get('wall_seconds') or not release.get('max_peak_memory_bytes')):
+        raise ValueError('separate source-bound metadata-worker release required')
+    if (source.utc(release['actual_released_at_utc']) < source.utc(restored['completed_at_utc'])
+            or source.utc(release['actual_released_at_utc']).timestamp() > time.time()):
+        raise ValueError('metadata release must follow actual restoration')
+    old, fit_index = _read_json(source_protocol_path), _read_json(fit_index_path)
+    year = plan.validate_year(old['evaluation_season'])
+    if old['evaluation_weeks'] != list(WEEKS) or old['frozen_queries_sha256'] != source.sha(queries_path):
+        raise ValueError('exact complete seasonal source/query contract required')
+    expected_keys = {slot(w, t, policy) for w in WEEKS for t in TARGETS for policy in plan.policies(year)}
+    if set(fit_index) != expected_keys:
+        raise ValueError('exact retained leaf FIT receipt for every origin required')
+    source_ids = [s for s in old['source_ids'] if s['name'] == 'games.csv' or
+                  s['name'] in {f'stats_player_week_{y}.csv' for y in range(2022, year+1)}]
+    for item in source_ids:
+        if source.sha(Path(source_root)/safe_relative(item['name'])) != item['sha256']:
+            raise ValueError('baseline reconstruction source bytes changed')
+    private = Path(private)
+    if private.exists() or private.resolve().is_relative_to(ROOT):
+        raise ValueError('fresh private metadata output required')
+    private.mkdir(parents=True)
+    started, saved = time.monotonic(), 0
+
+    def guard():
+        if time.monotonic()-started > release['wall_seconds']:
+            raise RuntimeError('BASELINE_METADATA_TIME_BUDGET')
+        if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024 > release['max_peak_memory_bytes']:
+            raise RuntimeError('BASELINE_METADATA_RSS_BUDGET')
+
+    def save(member, blob):
+        nonlocal saved
+        if saved+len(blob) > release['max_private_bytes']:
+            raise RuntimeError('BASELINE_METADATA_PRIVATE_BUDGET_BEFORE_WRITE')
+        file = private/member
+        file.parent.mkdir(parents=True, exist_ok=True)
+        with file.open('xb') as f:
+            f.write(blob); f.flush(); os.fsync(f.fileno())
+        saved += len(blob)
+        return dict(member=member, sha256=source.sha(file))
+
+    rows, games, _ = seasonal.load_source(source_root, old)
+    attach_context_through_year(rows, games, source_root, year)
+    queries = _read_json(queries_path)
+    features, entries = Features(rows, year, TARGETS, old), {}
+    frozen_helpers = code_bindings()
+    for week in WEEKS:
+        origin = min(g['kickoff'] for g in games.values() if g['season'] == year and g['week'] == week)
+        for target in TARGETS:
+            qr = [q for q in queries if q['week'] == week and q['target'] == target]
+            for policy in plan.policies(year):
+                guard()
+                binding = features.origin(year, week, target, policy, origin, qr)['binding']
+                key = slot(week, target, policy)
+                ref = fit_index[key]
+                retained = Path(retained_receipt_root)/safe_relative(ref['member'])
+                if source.sha(retained) != ref['sha256']:
+                    raise ValueError('retained FIT receipt byte mismatch')
+                compare_retained_fit(binding, _read_json(retained))
+                proof = dict(state='NEW_SOURCE_BOUND_BASELINE_METADATA_RECONSTRUCTION',
+                    actual_generated_at_utc=source.now(), helpers=frozen_helpers,
+                    source_protocol_sha256=expected['source_protocol_sha256'],
+                    frozen_queries_sha256=expected['frozen_queries_sha256'], binding=binding,
+                    model_fit_calls=0, model_predict_calls=0, original_issuance=False)
+                evidence = dict(fit_receipt=save('retained-fit/'+key+'.json', retained.read_bytes()),
+                    reconstructed_feature_receipt=save('feature-fingerprints/'+key+'.json', source.canonical(proof)))
+                entries[key] = dict(binding, evidence=evidence)
+    result = dict(metadata_kind='NEW_SOURCE_BOUND_BASELINE_METADATA_NOT_ORIGINAL_FEATURE_CAPTURE',
+        source_protocol_sha256=source.sha(source_protocol_path),
+        frozen_queries_sha256=source.sha(queries_path), entries=entries)
+    save('BASELINE_BINDINGS.json', source.canonical(result))
+    return dict(state='BASELINE_METADATA_RECONSTRUCTED_PENDING_INDEPENDENT_REVIEW',
+        binding_map_sha256=source.sha(private/'BASELINE_BINDINGS.json'), origins=len(entries),
+        private_bytes=saved, model_fit_calls=0, model_predict_calls=0, original_issuance=False)
+
+
+def observed_loop(*, rows, games, queries, year, baseline, role_contract,
+                  model_factory, before_fit, guard, targets=TARGETS):
+    """Yield retained events; production callers must first pass ``execute``.
+
+    Factories/callbacks are explicit: there is no implicit model construction.
+    Identical seasonal policies share a computational fit, not scientific IDs.
+    Yield FIT before inference so the caller persists the model first.
+    """
+    plan.validate_year(year)
+    features = Features(rows, year, targets, role_contract)
+    keys = [(q['game_id'], q['player_id'], q['target'], q['population']) for q in queries]
+    if len(keys) != len(set(keys)) or len({q['query_id'] for q in queries}) != len(queries):
+        raise ValueError('duplicate query membership')
+    if {q['week'] for q in queries} != set(WEEKS):
+        raise ValueError('all18 evaluation weeks must retain query membership')
+    for q in queries:
+        if q['season'] != year or q['target'] not in targets:
+            raise ValueError('wrong query season/target')
+    for week in WEEKS:
+        origin = min(g['kickoff'] for g in games.values() if g['season'] == year and g['week'] == week)
+        cache = {}
+        for target in targets:
+            qr = [q for q in queries if q['week'] == week and q['target'] == target]
+            for policy, (arm, fit_floor, floor) in plan.policies(year).items():
+                guard()
+                packet = features.origin(year, week, target, policy, origin, qr)
+                s = slot(week, target, policy)
+                check_baseline(packet['binding'], baseline[s])
+                for group in GROUPS:
+                    guard()
+                    ncols = 24 if group == 'D1' else 29
+                    tx = np.asarray([p[1][:ncols] for p in packet['packets']], dtype=float).reshape((-1, ncols))
+                    qx = np.asarray([p[1][:ncols] for p in packet['query_packets']], dtype=float).reshape((-1, ncols))
+                    key = target, fit_floor, floor, group
+                    model = None
+                    state, alias = 'NO_FIT_INSUFFICIENT_TRAINING', None
+                    if key in cache:
+                        model, state, alias = cache[key]
+                        state = 'REUSED_IDENTICAL_POLICY:' + state
+                    elif len(tx) >= 60:
+                        if target in source.empirical.COUNTS and np.all(packet['y'] == 0):
+                            state = 'NO_FIT_ALL_ZERO_COUNT'
+                        elif target == 'anytime_td' and len(np.unique(packet['y'])) < 2:
+                            state = 'NO_FIT_SINGLE_CLASS_BINARY'
+                        else:
+                            before_fit()
+                            try:
+                                model = model_factory(target).fit(tx, packet['y'], packet['positions'])
+                                state = 'FITTED_RETAINED'
+                            except Exception as exc:
+                                state = 'FIT_FAILED_FALLBACK:' + type(exc).__name__
+                            guard()
+                    cell = s + '-' + group
+                    if alias is None:
+                        cache[key] = model, state, cell
+                    audit = dict(packet['binding'], slot=cell, information_group=group,
+                                 feature_columns=list(source.FEATURES) + list(context.GROUPS[group]),
+                                 state=state, alias_of=alias,
+                                 latest_training_label_available=max((r['available'] for r in packet['train']), default=None),
+                                 latest_training_consumed_feature_available=max((original.latest(p[2], p[3], group)
+                                     for p in packet['packets'] if original.latest(p[2], p[3], group) is not None), default=None))
+                    yield dict(kind='FIT', slot=cell, audit=audit, model=model if alias is None else None,
+                               training=packet['train'], train_features=tx, queries=qr,
+                               query_features=qx, query_packets=packet['query_packets'])
+                    inferred = laws.predict_admitted(model, qx, qr, packet['priors'])
+                    guard()
+                    records = []
+                    for q, f, qp, (law, details) in zip(qr, qx, packet['query_packets'], inferred):
+                        r = features.lookup[q['game_id'], q['player_id']]
+                        v = r['values'][target]
+                        actual = v / 50 if target == chart.TARGET and v is not None else v
+                        fallback = 'none'
+                        if model is None or f[3] <= 0:
+                            fallback = ('fixed_no_NFL_startup' if not len(tx) else
+                                        'cold_start_role_prior' if f[3] <= 0 else 'no_model_role_prior')
+                            law = packet['priors'][q['position']]
+                            details = dict(fallback_prior=law.parameters())
+                        summary = chart.chart_summary(law, v) if target == chart.TARGET else law.summary(actual)
+                        for product in recipe.products(target):
+                            records.append(dict(q, procedure_id=plan.procedure('observed', group, policy.endswith('STRICT')),
+                                family=original.FAMILY, information_group=group, history_regime=arm,
+                                policy_id=policy, product_id=product, information_policy='STRICT-CURRENT' if policy.endswith('STRICT') else 'COMMON-2022-MEMORY',
+                                fit_floor=fit_floor, feature_floor=floor, fit_cutoff=origin,
+                                feature_cutoff=r['kickoff'], prediction=summary['mean' if product == 'event_probability' else product],
+                                actual=actual, actual_grid=v if target == chart.TARGET else None,
+                                actual_status=r.get('chart_status') if target == chart.TARGET else 'SUPPORTED' if v is not None else 'PARTICIPATION_OR_LABEL_UNKNOWN',
+                                fallback=fallback, fit_slot=cell, fit_state=state,
+                                latest_feature_available=original.latest(qp[2], qp[3], group),
+                                distribution_summary=summary, law_reference=details,
+                                status='NEW_RECONSTRUCTED_RESEARCH_FORECAST',
+                                recent2022_proxy=(year == 2022 and arm == 'H-RECENT')))
+                    yield dict(kind='FORECAST', slot=cell, records=records)
+        yield dict(kind='WEEK_COMPLETE', week=week)
+
+
+def _read_json(path):
+    return json.loads(Path(path).read_text())
+
+
+def _verify_inputs(*, public, source_root, queries_path, baseline_path,
+                   source_protocol_path, baseline_evidence_root, restoration_gate,
+                   verifier_receipt, software_receipt, worker_release):
+    """No NFL decoding before exact full-plan gate and independent releases."""
+    public = Path(public)
+    p = _read_json(public / 'FROZEN_PROTOCOL.json')
+    if (public / 'EXECUTION_REGISTRATION.json').exists():
+        raise ValueError('immutable run already started; new reconstruction identity required')
+    if (any(public.glob('*-FIT.json')) or any(public.glob('*-FORECAST.json'))
+            or any((public / name).exists() for name in ('SCORES.json', 'RUN_RECEIPT.json', 'GRID_STATUS.json'))):
+        raise ValueError('existing output artifacts cannot be overwritten')
+    restored = retention.require_retention(restoration_gate, ROOT)
+    if p['helpers'] != code_bindings() or p['version'] != VERSION:
+        raise ValueError('frozen executor/helper changed')
+    ph = source.sha(public / 'FROZEN_PROTOCOL.json')
+    review, software, release = map(_read_json, (verifier_receipt, software_receipt, worker_release))
+    if (review.get('state') != 'PASS_J_SEASONAL_PREFIT_REVIEW'
+            or review.get('protocol_sha256') != ph
+            or review.get('baseline_bindings_sha256') != p['baseline_bindings_sha256']):
+        raise ValueError('independent exact input/baseline review required')
+    if (software.get('state') != 'PASS_J_SYNTHETIC_SOFTWARE_CHECKS'
+            or software.get('helpers') != p['helpers']):
+        raise ValueError('exact-code synthetic software receipt required')
+    expected = dict(protocol_sha256=ph, restoration_gate_sha256=source.sha(restoration_gate),
+                    verifier_receipt_sha256=source.sha(verifier_receipt),
+                    software_receipt_sha256=source.sha(software_receipt),
+                    baseline_bindings_sha256=p['baseline_bindings_sha256'])
+    if (release.get('state') != 'ROOT_RELEASED_J_SEASONAL_WORKER'
+            or any(release.get(k) != v for k, v in expected.items())
+            or not release.get('reconstruction_run_id') or not release.get('sole_worker_id')
+            or release.get('max_fit_calls') != p['budget']['max_fit_calls']
+            or release.get('reserved_private_bytes', 0) < p['budget']['max_private_bytes']):
+        raise ValueError('separate exact root sole-worker release required')
+    for stamp in (restored['completed_at_utc'], review.get('actual_completed_at_utc'),
+                  release.get('actual_released_at_utc')):
+        if stamp is None or source.utc(stamp).timestamp() > time.time():
+            raise ValueError('actual nonfuture admission clock required')
+    if source.utc(release['actual_released_at_utc']) < source.utc(restored['completed_at_utc']):
+        raise ValueError('worker release must follow actual full restoration')
+    if source.utc(release['actual_released_at_utc']) < source.utc(review['actual_completed_at_utc']):
+        raise ValueError('worker release must follow actual independent input review')
+    for path, key in ((queries_path, 'frozen_queries_sha256'),
+                      (baseline_path, 'baseline_bindings_sha256'),
+                      (source_protocol_path, 'source_protocol_sha256')):
+        if source.sha(path) != p[key]:
+            raise ValueError('exact admitted input bytes changed')
+    for item in p['source_ids']:
+        if source.sha(Path(source_root) / safe_relative(item['name'])) != item['sha256']:
+            raise ValueError('source bytes changed')
+    old = _read_json(source_protocol_path)
+    if old['evaluation_season'] != p['evaluation_season'] or old['frozen_queries_sha256'] != p['frozen_queries_sha256']:
+        raise ValueError('original seasonal source/query contract mismatch')
+    if old['evaluation_weeks'] != list(WEEKS):
+        raise ValueError('original full18week query contract required')
+    old_ids = {s['name']: s['sha256'] for s in old['source_ids']}
+    if any(old_ids.get(s['name']) != s['sha256'] for s in p['source_ids']):
+        raise ValueError('original seasonal source hashes required')
+    baseline = _read_json(baseline_path)
+    if (baseline.get('source_protocol_sha256') != p['source_protocol_sha256']
+            or baseline.get('frozen_queries_sha256') != p['frozen_queries_sha256']
+            or not baseline.get('entries')):
+        raise ValueError('source-bound per-origin baseline map required')
+    for key, entry in baseline['entries'].items():
+        if key != slot(entry['week'], entry['target'], entry['policy_id']):
+            raise ValueError('baseline origin identity')
+        refs = entry.get('evidence', {})
+        reconstructed = set(refs) == {'fit_receipt', 'reconstructed_feature_receipt'}
+        if not reconstructed and set(refs) != {'fit_receipt', 'query_features', 'own_training_features'}:
+            raise ValueError('baseline retained-fit plus retained/reconstructed own-feature evidence required')
+        bound = {}
+        for kind, ref in refs.items():
+            file = Path(baseline_evidence_root) / safe_relative(ref['member'])
+            if source.sha(file) != ref['sha256']:
+                raise ValueError('baseline evidence bytes changed')
+            blob = gzip.decompress(file.read_bytes()) if file.suffix == '.gz' else file.read_bytes()
+            bound[kind] = json.loads(blob)
+        compare_retained_fit(entry, bound['fit_receipt'])
+        if reconstructed:
+            proof = bound['reconstructed_feature_receipt']
+            if (proof.get('state') != 'NEW_SOURCE_BOUND_BASELINE_METADATA_RECONSTRUCTION'
+                    or proof.get('helpers') != p['helpers']
+                    or proof.get('source_protocol_sha256') != p['source_protocol_sha256']
+                    or proof.get('frozen_queries_sha256') != p['frozen_queries_sha256']):
+                raise ValueError('source/helper-bound reconstructed baseline metadata required')
+            check_baseline(entry, proof.get('binding', {}))
+        elif (digest(bound['query_features']) != entry['own_query_features_sha256']
+              or digest(bound['own_training_features']) != entry['own_training_features_sha256']):
+            raise ValueError('baseline own-feature fingerprints disagree with evidence')
+    return p, old, baseline['entries'], release
+
+
+def execute(*, public, private, source_root, queries_path, baseline_path,
+            source_protocol_path, baseline_evidence_root, restoration_gate,
+            verifier_receipt, software_receipt, worker_release):
+    """Actual execution requires admitted external receipts, never a CLI flag."""
+    p, old, baseline, release = _verify_inputs(public=public, source_root=source_root,
+        queries_path=queries_path, baseline_path=baseline_path,
+        source_protocol_path=source_protocol_path, baseline_evidence_root=baseline_evidence_root,
+        restoration_gate=restoration_gate, verifier_receipt=verifier_receipt,
+        software_receipt=software_receipt, worker_release=worker_release)
+    public, private = Path(public), Path(private)
+    if private.exists() or private.resolve().is_relative_to(ROOT):
+        raise ValueError('fresh private output outside public repository required')
+    # No NFL/model work occurred above this line. Registration precedes decoding.
+    registration = dict(version=VERSION, actual_started_at_utc=source.now(),
+        reconstruction_run_id=release['reconstruction_run_id'],
+        protocol_sha256=source.sha(public / 'FROZEN_PROTOCOL.json'),
+        worker_release_sha256=source.sha(worker_release), new_fit_calls_before_start=0,
+        original_issuance=False, official_capture=False)
+    source.immutable_json(public / 'EXECUTION_REGISTRATION.json', registration)
+    private.mkdir(parents=True)
+    started, cpu = time.monotonic(), time.process_time()
+    fits = outputs = private_bytes = 0
+    completed, meters, grid = [], collections.defaultdict(seasonal.Meter), []
+    failures, terminal = [], 'COMPLETE'
+
+    def guard():
+        if time.monotonic() - started > p['budget']['wall_seconds'] or time.process_time() - cpu > p['budget']['cpu_seconds']:
+            raise RuntimeError('TIME_BUDGET')
+        if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss * 1024 > p['budget']['max_peak_memory_bytes']:
+            raise RuntimeError('RSS_BUDGET')
+
+    def before_fit():
+        nonlocal fits
+        guard()
+        if fits >= p['budget']['max_fit_calls']:
+            raise RuntimeError('FIT_BUDGET')
+        fits += 1
+
+    def save(name, obj, raw=False):
+        nonlocal private_bytes
+        blob = gzip.compress(obj if raw else source.canonical(obj), mtime=0)
+        if private_bytes + len(blob) > p['budget']['max_private_bytes']:
+            raise RuntimeError('PRIVATE_BUDGET_BEFORE_WRITE')
+        path = private / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with path.open('xb') as f:
+            f.write(blob)
+            f.flush()
+            os.fsync(f.fileno())
+        private_bytes += len(blob)
+        if path.read_bytes() != blob:
+            raise ValueError('private persistence readback failed')
+        return dict(artifact_id='J-PRIVATE-' + source.sha(path), member=name,
+                    sha256=source.sha(path), bytes=len(blob))
+
+    try:
+        # Existing loader enforces exact chart source policies and through-year decoding.
+        rows, games, counts = seasonal.load_source(source_root, p)
+        attach_context_through_year(rows, games, source_root, p['evaluation_season'])
+        queries = _read_json(queries_path)
+        expected_keys = {slot(w, t, policy) for w in WEEKS for t in TARGETS
+                         for policy in plan.policies(p['evaluation_season'])}
+        if set(baseline) != expected_keys:
+            raise ValueError('one exact baseline binding for every origin required')
+        from threadpoolctl import threadpool_limits
+        with threadpool_limits(limits=2):
+            events = observed_loop(rows=rows, games=games, queries=queries,
+                year=p['evaluation_season'], baseline=baseline, role_contract=old,
+                model_factory=lambda t: laws.FittedLawModel(original.FAMILY, t),
+                before_fit=before_fit, guard=guard)
+            for event in events:
+                guard()
+                if event['kind'] == 'FIT':
+                    cell = event['slot']
+                    audit = event['audit']
+                    for key in ('train_features', 'query_features'):
+                        audit[key] = save(key + '/' + cell + '.json.gz',
+                                          [source.json_features(row) for row in event[key]])
+                    audit['training_membership'] = save('training-memberships/' + cell + '.json.gz',
+                        [(r['game_id'], r['player_id']) for r in event['training']])
+                    audit['query_context'] = save('query-context/' + cell + '.json.gz',
+                        [dict(query=q, own_latest=packet[2], defense_audit=packet[3])
+                         for q, packet in zip(event['queries'], event['query_packets'])])
+                    audit['model'] = (save('models/' + cell + '.pickle.gz', pickle.dumps(event['model'], protocol=5), raw=True)
+                                      if event['model'] is not None else None)
+                    source.immutable_json(public / (cell + '-FIT.json'), audit)
+                    grid.append(dict(slot=cell, state=audit['state'], alias_of=audit['alias_of']))
+                elif event['kind'] == 'FORECAST':
+                    records = event['records']
+                    if outputs + len(records) > p['budget']['max_forecast_rows']:
+                        raise RuntimeError('OUTPUT_BUDGET')
+                    for r in records:
+                        r.update(run_id=release['reconstruction_run_id'], actual_generated_at=source.now())
+                    # No score/counter may accept rows whose packet failed retention.
+                    packet = save('predictions/' + event['slot'] + '.json.gz', records)
+                    source.immutable_json(public / (event['slot'] + '-FORECAST.json'),
+                        dict(slot=event['slot'], packet=packet, rows=len(records), actual_persisted_at=source.now()))
+                    for r in records:
+                        dims = (r['procedure_id'], r['target'], r['policy_id'], r['history_regime'], r['product_id'], r['population'])
+                        for week, pos, view in [('ALL', 'ALL', 'ALL'), (str(r['week']), 'ALL', 'ALL'), ('ALL', r['position'], 'ALL')] + (
+                                [('ALL', 'ALL', 'LEARNED_ONLY')] if r['fallback'] == 'none' else []):
+                            meters[dims + (week, pos, view)].add(r)
+                    outputs += len(records)
+                else:
+                    completed.append(event['week'])
+    except Exception as exc:
+        terminal = 'PARTIAL_STOPPED'
+        known = {'TIME_BUDGET', 'RSS_BUDGET', 'FIT_BUDGET', 'PRIVATE_BUDGET_BEFORE_WRITE',
+                 'OUTPUT_BUDGET'}
+        failure = dict(type=type(exc).__name__,
+                       code=str(exc) if str(exc) in known else 'EXECUTION_FAILED_PRIVATE_DETAIL')
+        try:
+            failure['private_detail'] = save('failures/traceback.txt.gz',
+                                              traceback.format_exc().encode(), raw=True)
+        except Exception:
+            failure['private_detail'] = None
+            failure['private_detail_status'] = 'NOT_RETAINED_BUDGET_OR_IO_LIMIT'
+        failures.append(failure)
+    scores = []
+    for dims, meter in sorted(meters.items()):
+        proc, target, policy, arm, product, pop, week, pos, view = dims
+        scores.append(dict(record_id='J-' + digest((release['reconstruction_run_id'], p['evaluation_season'], dims))[:24], procedure_id=proc,
+            procedure_family_id=original.FAMILY, target=target, policy_id=policy,
+            history_regime=arm, product_id=product, population=pop,
+            season=p['evaluation_season'], week=int(week) if week.isdigit() else week,
+            position=pos, fallback_view=view, period='REG',
+            evaluation_panel_id=release['reconstruction_run_id'],
+            evidence='NEW_EXPERIMENT', record_kind='NEW_RECONSTRUCTED_PARTICIPANT_DIAGNOSTIC',
+            source_vintage=p['source_vintage'], recent2022_proxy=p['evaluation_season'] == 2022 and arm == 'H-RECENT',
+            **meter.result()))
+    source.immutable_json(public / 'SCORES.json', scores)
+    done = {r['slot']: r for r in grid}
+    complete_grid = [done.get(slot(w, t, policy) + '-' + group,
+                        dict(slot=slot(w, t, policy) + '-' + group,
+                             state='NOT_RUN_AFTER_BOUNDED_STOP', alias_of=None))
+                     for w in WEEKS for t in TARGETS for policy in plan.policies(p['evaluation_season'])
+                     for group in GROUPS]
+    source.immutable_json(public / 'GRID_STATUS.json', complete_grid)
+    receipt = dict(version=VERSION, state=terminal, actual_completed_at_utc=source.now(),
+        actual_fit_calls=fits, forecast_output_views=outputs, completed_weeks=completed,
+        private_output_bytes=private_bytes, score_views=len(scores), failures=failures,
+        full_regular_season_complete=completed == list(WEEKS),
+        resource=dict(wall_seconds=time.monotonic()-started, cpu_seconds=time.process_time()-cpu,
+                      peak_rss_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024),
+        original_issuance=False, future_capture=False, week8_outcomes_read=0)
+    source.immutable_json(public / 'RUN_RECEIPT.json', receipt)
+    return receipt

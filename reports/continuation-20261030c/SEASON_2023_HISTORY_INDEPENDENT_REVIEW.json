@@ -1,0 +1,56 @@
+{
+  "state": "PASS_ALL_SAVED_ROW_HISTORY_CONTRASTS_AND_INDEPENDENT_BLOCK_UNCERTAINTY",
+  "season": 2023,
+  "score_views": 1512,
+  "source_history_sha256": "1f79b09c33625772400959b48554209875f336da07a8c986dd022a407bc261fc",
+  "source_prediction_sha256": "d67f3189474be8c5161334f8df0b8dedb24bfb5ef1eac8d4f455f95dc3a88c50",
+  "checks": {
+    "exact_query_label_position_policy_pairs": 997575,
+    "independent_week_sums_and_counts": 45780,
+    "independent_500_draw_wholeweek_intervals": 1368,
+    "independent_game_influence_SEs": 1368,
+    "finite_history_contrasts": 1368,
+    "explicit_nonfinite_contrasts": 144
+  },
+  "representative_observed_win_loss": [
+    {
+      "direction": "win",
+      "target": "pass_att",
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "product_id": "absolute_error_point",
+      "contrast": "H-MULTI_MINUS_H-CURRENT",
+      "n": 663,
+      "candidate_error": 8.864012016920823,
+      "comparator_error": 10.33928616689728,
+      "delta": -1.4752741499764561,
+      "week_interval": [
+        -3.6829095534904353,
+        -0.24315370239389192
+      ]
+    },
+    {
+      "direction": "loss",
+      "target": "pass_cmp",
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "product_id": "absolute_error_point",
+      "contrast": "STRICT_MINUS_COMMON_CURRENT",
+      "n": 663,
+      "candidate_error": 7.065287259479637,
+      "comparator_error": 6.9181967194630145,
+      "delta": 0.14709054001662292,
+      "week_interval": [
+        -0.1328025913850401,
+        0.3913720405617437
+      ]
+    }
+  ],
+  "interpretation": "Samegamepairedcurrent-vintagehistorycomparisonswithfallbacks; strictchangesfullinformationpolicy. Nominalwholeweekintervalsnotmultiplicityadjusted, notfreshconfirmation; seasonbalancedaveragescannotanswerfixed2026historyquestion.",
+  "resource": {
+    "wall_seconds": 52.644562507000046,
+    "cpu_seconds": 52.633592299,
+    "peak_rss_bytes": 463564800
+  },
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

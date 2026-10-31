@@ -1,0 +1,43 @@
+{
+  "state": "PASS_EXPANDED_CONTENT_RECOVERY_PLAN_WITH_POSITIVE_PROOF_SUPPLEMENT",
+  "status_artifact_sha256": "7ce075fc7b853a646f79795bb7133b597ee5dbeaa6cb7f5f21240e8cd8d516de",
+  "delta_archive_sha256": "3ac59cf6888faae55ded308042c05f00bbdf474d3c10b35974dc801d60a1175f",
+  "private_map_sha256": "e592881a6495ad097b31667daaa12229f0837b0bec6ff390386387df01f7a1ad",
+  "positive_allowlist_sha256": "3ec50fe9832b4a68fabf75677e08e8125ebb3f2009071fa26b4b26cd93703d8b",
+  "fully_restored_archive_proofs": 15,
+  "approved_or_pending_archives_checked": 18,
+  "positive_used_object_proofs": 20,
+  "required_path_aliases": 29527,
+  "unique_content_hashes": 20217,
+  "state_counts": {
+    "NEW_DELTA_REQUIRED": 4255,
+    "FULLY_RESTORED_BYTES": 10153,
+    "COVERED_AFTER_PENDING_ARCHIVE_COMPLETION": 15119
+  },
+  "delta_unique_file_blobs": 1787,
+  "delta_raw_file_bytes": 278519991,
+  "delta_archive_bytes": 263613679,
+  "delta_parts": 13,
+  "missing_upload_bytes": 1093747658,
+  "missing_upload_parts": 53,
+  "checks": {
+    "accepted_git_public_blob_hashes": 29932,
+    "archive_member_blob_hashes": 21223,
+    "approved_or_pending_complete_archives": 18,
+    "local_required_unique_inode_hashes": 25500,
+    "deduplicated_delta_blob_hashes": 1787,
+    "required_path_alias_restoration_bindings": 29527
+  },
+  "scope": "All local evidence files and top-level admitted source files withmtime at/before frozen cutoff19:17:17Z, excluding the new recovery directory. No source subdirectories exist. Content blobs restore all path aliases through private map. Postcutoff30d artifacts and unshared/unretained old private sessions are outside this finite census. Old defense/small transportarchive encodings remain local; their underlying scientific files are covered by delta where needed. This is a plan before upload, not completed durability or an entropy minimum.",
+  "tool_finding": "Original recovery_census.py v1 accepted index digests by absence of negative state. Actual coverage is now positively proved; reusable tool must require this source-bound allowlist in a separately versioned qualification, not infer restoration from index presence.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "uploads": 0,
+  "deletions": 0,
+  "current2026_week8_outcomes_read": 0,
+  "resource": {
+    "wall_seconds": 20.755129811999723,
+    "cpu_seconds": 20.73511574,
+    "peak_rss_bytes": 304001024
+  }
+}

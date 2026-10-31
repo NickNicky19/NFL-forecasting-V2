@@ -1,0 +1,34 @@
+{
+  "state": "PASS",
+  "runner": "python -m unittest discover",
+  "checks": [
+    {
+      "pattern": "test_prop_grading_exact.py",
+      "passed": 8
+    },
+    {
+      "pattern": "test_full_provider_prop_replay.py",
+      "passed": 5
+    },
+    {
+      "pattern": "test_recorded_prop_grading.py",
+      "passed": 8
+    },
+    {
+      "pattern": "test_prop_evidence_metadata.py",
+      "passed": 3
+    }
+  ],
+  "total_passed": 24,
+  "compile_checks": [
+    "tools/grade_h_rolling_archive_props.py",
+    "tools/report_h_rolling_archive_props.py",
+    "tools/project_original_selected_controls_h.py"
+  ],
+  "initial_pytest_attempt": "UNAVAILABLE: pytest module absent; repository CI uses unittest, which completed successfully",
+  "python_version": "3.12.14",
+  "software_fixtures_are_NFL_observations": false,
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_threshold_grades": 0
+}

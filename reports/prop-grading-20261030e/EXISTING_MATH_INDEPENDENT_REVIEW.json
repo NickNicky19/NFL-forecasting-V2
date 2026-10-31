@@ -1,0 +1,96 @@
+{
+  "state": "BASELINE_MATH_CHECKS_PASS_WITH_EXPLICIT_PRECISION_FAILURES",
+  "source_sha256": "af8a417d03c7b7d2aac64313933b19d176fc7756513dbfb14a5cabcd5624fc5a",
+  "git_head": "c8cb933ab3a297e7deafd61d2886cf089f475342",
+  "independent_compatible_math_checks": 38,
+  "checks": [
+    "probability_over_at_-0.5",
+    "probability_under_at_-0.5",
+    "probability_push_at_-0.5",
+    "normalized_at_-0.5",
+    "probability_over_at_0.5",
+    "probability_under_at_0.5",
+    "probability_push_at_0.5",
+    "normalized_at_0.5",
+    "probability_over_at_1",
+    "probability_under_at_1",
+    "probability_push_at_1",
+    "normalized_at_1",
+    "probability_over_at_1.5",
+    "probability_under_at_1.5",
+    "probability_push_at_1.5",
+    "normalized_at_1.5",
+    "probability_over_at_2.5",
+    "probability_under_at_2.5",
+    "probability_push_at_2.5",
+    "normalized_at_2.5",
+    "over_monotone",
+    "under_monotone",
+    "mirrored_brier_0",
+    "mirrored_logloss_0",
+    "mirrored_brier_1",
+    "mirrored_logloss_1",
+    "unconditional_refund_EV",
+    "conditional_EV",
+    "decisive_mass_bridge",
+    "push_and_void_residual_EV",
+    "played_zero_loss",
+    "played_zero_under_win",
+    "integer_push_over",
+    "integer_push_under",
+    "signed_yard_under_win",
+    "missing_label_unresolved",
+    "void_refund",
+    "canceled_refund"
+  ],
+  "known_precision_failure_cases": 3,
+  "precision_failures": [
+    {
+      "component_rushing_yards": -5,
+      "component_receiving_yards": 3,
+      "exact_chart_score": "-0.2",
+      "floating_chart_score": "-0.19999999999999996",
+      "line": "-0.2",
+      "exact_expected": "PUSH",
+      "observed_legacy": [
+        "win",
+        1
+      ],
+      "classification": "EXACT_COMPONENT_PUSH_MISGRADED_BY_FLOAT_PATH"
+    },
+    {
+      "component_rushing_yards": -5,
+      "component_receiving_yards": 4,
+      "exact_chart_score": "-0.1",
+      "floating_chart_score": "-0.09999999999999998",
+      "line": "-0.1",
+      "exact_expected": "PUSH",
+      "observed_legacy": [
+        "win",
+        1
+      ],
+      "classification": "EXACT_COMPONENT_PUSH_MISGRADED_BY_FLOAT_PATH"
+    },
+    {
+      "component_rushing_yards": -5,
+      "component_receiving_yards": 6,
+      "exact_chart_score": "0.1",
+      "floating_chart_score": "0.10000000000000009",
+      "line": "0.1",
+      "exact_expected": "PUSH",
+      "observed_legacy": [
+        "win",
+        1
+      ],
+      "classification": "EXACT_COMPONENT_PUSH_MISGRADED_BY_FLOAT_PATH"
+    }
+  ],
+  "scope": "Generic discrete mass, probability complements/monotonicity, mirrored proper scores and refund arithmetic. These isolated functions do not authenticate offers, prices, participation, target contracts or selections.",
+  "old_unit_test_functions_separately_executed": 6,
+  "future_check": "New exact-component or certified-grid path must yield PUSH in these three cases while preserving old reported bytes. No blanket rounding of means or provider values.",
+  "new_fits": 0,
+  "inference_calls": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "current2026_week8_outcomes_read": 0
+}

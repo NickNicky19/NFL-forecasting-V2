@@ -1,0 +1,124 @@
+{
+  "state": "PASS_ALL_CARRY_AGGREGATES_AND_FULL_2025_CARRY_SUBSET_REPLAY",
+  "protocol_sha256": "634e60b1237d965cd50935dd1ccf05ddaa1c34ee06dc7bc0604797d94d53a47e",
+  "bindings_sha256": "53c3420507e51dcf8069bd4e397aca2be2dd2563f1edb5241fc464b38439e0c2",
+  "pair_views": 1608,
+  "new_univariate_forecast_score_views": 0,
+  "whole_week_bootstrap_intervals_independently_recomputed": 1336,
+  "raw_2025_source_rows_streamed": 1676219,
+  "raw_2025_native_metric_fields": 4896,
+  "main_multi_history_results": [
+    {
+      "season": 2025,
+      "comparison": "same_policy_original_broad_HGB_L1",
+      "n": 2229,
+      "candidate_mae": 2.907110474373262,
+      "control_mae": 6.28645470679578,
+      "delta": -3.3793442324225187,
+      "week_interval": [
+        -3.527858495050435,
+        -3.2228126064484774
+      ]
+    },
+    {
+      "season": 2025,
+      "comparison": "strongest_observed_same_season_full_primary_control",
+      "n": 2229,
+      "candidate_mae": 2.907110474373262,
+      "control_mae": 2.867205024674742,
+      "delta": 0.0399054496985201,
+      "week_interval": [
+        0.013152684806803639,
+        0.06411346889954835
+      ]
+    },
+    {
+      "season": 2024,
+      "comparison": "same_policy_original_broad_HGB_L1",
+      "n": 2188,
+      "candidate_mae": 3.0117989117788153,
+      "control_mae": 6.471663619744058,
+      "delta": -3.4598647079652425,
+      "week_interval": [
+        -3.5769497958848993,
+        -3.317249248953835
+      ]
+    },
+    {
+      "season": 2024,
+      "comparison": "strongest_observed_same_season_full_primary_control",
+      "n": 2188,
+      "candidate_mae": 3.0117989117788153,
+      "control_mae": 2.9913162705667276,
+      "delta": 0.020482641212088117,
+      "week_interval": [
+        -0.008280962730198588,
+        0.0476363688838179
+      ]
+    },
+    {
+      "season": 2023,
+      "comparison": "same_policy_original_broad_HGB_L1",
+      "n": 2129,
+      "candidate_mae": 3.143082431252886,
+      "control_mae": 6.561566032273357,
+      "delta": -3.418483601020471,
+      "week_interval": [
+        -3.5577716677188005,
+        -3.2944270063511527
+      ]
+    },
+    {
+      "season": 2023,
+      "comparison": "strongest_observed_same_season_full_primary_control",
+      "n": 2129,
+      "candidate_mae": 3.143082431252886,
+      "control_mae": 3.1117895725692812,
+      "delta": 0.03129285868360492,
+      "week_interval": [
+        0.00018900648973695636,
+        0.06499467595814798
+      ]
+    },
+    {
+      "season": 2022,
+      "comparison": "same_policy_original_broad_HGB_L1",
+      "n": 2201,
+      "candidate_mae": 3.542367749369694,
+      "control_mae": 6.1351710148666845,
+      "delta": -2.592803265496991,
+      "week_interval": [
+        -3.0663258943874325,
+        -2.0450383099293368
+      ]
+    },
+    {
+      "season": 2022,
+      "comparison": "strongest_observed_same_season_full_primary_control",
+      "n": 2201,
+      "candidate_mae": 3.542367749369694,
+      "control_mae": 3.4530778528123323,
+      "delta": 0.08928989655736154,
+      "week_interval": [
+        -0.04594540303563067,
+        0.2599158663367139
+      ]
+    }
+  ],
+  "checks": {
+    "all_aggregate_id_delta_fallback_uncertainty_rows": 1608,
+    "shared_three_model_masks_and_candidate_metrics_across_controls": 804,
+    "frozen_global_strongest_reference_choices": 4,
+    "raw_2025_pair_masks_native_metrics_and_gameSE": 408
+  },
+  "limitations": "All paired aggregate algebra, identities, shared masks and weekly CI checked. Raw replay covers2025carryonly, with entirecorrectedRAoverlay; other3years nativeerrors were independentlyreviewed earlier, not broadlyreplayedhere. All strongest same-season choices are exposedfull-primary benchmarks heldfixed acrosssubgroups, not earlierselectors. Extended andstrict policies retainseparate scopes;2022RECENT2021gap remains. No new2026comparison orWeek8outcomes.",
+  "new_fits": 0,
+  "inference_calls": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0,
+  "resource": {
+    "wall_seconds": 23.026321149998694,
+    "cpu_seconds": 23.263898291,
+    "peak_rss_bytes": 277811200
+  }
+}

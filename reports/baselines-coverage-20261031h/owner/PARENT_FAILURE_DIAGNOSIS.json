@@ -1,0 +1,44 @@
+{
+  "state": "VERIFIED_READ_ONLY_PARENT_FAILURE_DIAGNOSIS",
+  "checked_at_utc": "2026-10-31T03:39:03.775311+00:00",
+  "repository": "NickNicky19/NFL-forecasting",
+  "run_id": 41104520104,
+  "job_id": 124230368443,
+  "source_commit": "cd51ff289ace3bf14cfb820c139fd823bc330d17",
+  "job_log_decoded_utf8_sha256": "04a2e0ff78c337aecc1fb931583e1154d4f33ded498344fc381ef3130a9e286d",
+  "cadence": {
+    "observed_chicago": "2026-10-30T13:10:19.451402-05:00",
+    "due": false,
+    "mode": "grade",
+    "pregame_issuance_allowed": false,
+    "reason": "MISSED_SCHEDULE_WINDOW_NOT_BACKFILLED",
+    "policy_version": "audit-weekly-parent-0736-v1"
+  },
+  "readiness": {
+    "acquisition_started": false,
+    "capture_started": false,
+    "exit_code": 78,
+    "new_fits_predictions": 0,
+    "observed_at": "2026-10-30T18:10:19.513360+00:00",
+    "reasons": [
+      "QUALIFIED_HOSTED_HANDOVER_NOT_ACCEPTED",
+      "PRIVATE_DURABILITY_NOT_VERIFIED",
+      "EXACT_PUBLICATION_REVIEW_ABSENT"
+    ],
+    "repository": "NickNicky19/NFL-forecasting",
+    "run_attempt": "1",
+    "run_id": "41104520104",
+    "scheduler": "EXISTING_CRON_AND_SINGLE_WRITER_RETAINED",
+    "schema_version": "lab-hosted-safety-readiness-v1",
+    "scientific_confirmation": "NO_NEW_EVIDENCE",
+    "source_commit": "cd51ff289ace3bf14cfb820c139fd823bc330d17",
+    "state": "BLOCKED_PENDING_QUALIFIED_HANDOVER",
+    "state_publication_started": false
+  },
+  "interpretation": "The observed13:10CDT parent was outside07:36\u201307:57window; enqueue skipped correctly. Exit78 also preserved unaccepted handover/private durability/publication review guards. No new NFLinference or persistence occurred. This does not prove an on-time upcoming run will qualify.",
+  "owner_action": "Retained owner completes existing qualified same-source hosted handover/durable input-model restoration/publication admission, then uses existing scheduler; distinguish legitimate off-window no-op from readiness failure. Do not bypass guards or backfill.",
+  "upcoming_configured_only": "2026-10-31 07:36\u201307:57CDT /12:36\u201312:57UTC; still future at this check",
+  "next_T90": "2026-11-01 10:30CST /16:30UTC",
+  "new_dispatches": 0,
+  "production_changed": false
+}

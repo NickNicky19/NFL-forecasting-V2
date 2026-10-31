@@ -1,0 +1,162 @@
+{
+  "protocol_id": "v2-W7-per-game-latest-server-retained-before-T90-source-v1",
+  "registered_at_utc": "2026-10-31T01:32:32.271962+00:00",
+  "parent_earliest_qualification_sha256": "5d46efb6c0616edb3adccbb80677bd900e93122623d403874403307867778d07",
+  "state": "FROZEN_TIMING_ONLY_SOURCE_ASSIGNMENTS_BEFORE_SOURCE_ROW_OR_LABEL_DECODE",
+  "source_run_metadata_sha256": "619eac0e8bf0996e88fb5999880c7c50a2f1dc394c2f721740e3611b35113763",
+  "policy": "For each known scheduled W6game choose latest GitHubserverrun.created_at<=scheduledT90, stable(headSHA,runID)ties, requiring archivepath present. If missingfile choose next-earliereligible source bysame timing rule; never choose byrows,points,selectedside,outcomes orscore. Retainone source row percanonicalgame/player/category innewpanel.",
+  "decisions": "Originallean means actualsavedside withinselectedversion; newpoint-direction decisions are retrospective; no additionalforecast precision. Querydecisiontime actualserverclock, not inferredexactT90.",
+  "source_contract": "ImmutableGitblobatheadSHA plus independentGithubserverrun.created_at proves bytes existedbyclock; quotecapture/update/sourcevintage remainunqualified. Providerlabel alone isnot executablecashoffer.",
+  "rolling_policy": "Per-game rollingcapture product, not fixedweeklylist. K6/10/20availableonlyseparatechronologicalbatchpolicy ifregisteredbeforegrades; nofixedweeklyK manufactured.",
+  "products": "Statistical thresholds only; generatedthresholds remainseparatecensus; no price/probability/booksettlement/EV/ROI/CLV.",
+  "metadata_adapter": "ExistinglexicalProject withallowlisted oldschema identity/category/source keys; actual/stat containers forbidden. Adaptplayers[].props[] toflat source rows, preserveunknownidentity andoriginalno-selection.",
+  "assignments": [
+    {
+      "game_id": "2026_07_NE_CHI",
+      "source_ESPN_event_id": "401873010",
+      "kickoff": "2026-10-23T00:15:00+00:00",
+      "T90": "2026-10-22T22:45:00+00:00",
+      "selected_source_commit": "61a709af4513df13306eb8cf5479372cdaba0bc1",
+      "source_server_clock": "2026-10-22T21:24:16Z",
+      "server_run_id": 39856972237,
+      "source_path": "output/data/archive/2026_w07.json"
+    },
+    {
+      "game_id": "2026_07_PIT_NO",
+      "source_ESPN_event_id": "401873011",
+      "kickoff": "2026-10-25T13:30:00+00:00",
+      "T90": "2026-10-25T12:00:00+00:00",
+      "selected_source_commit": "0f03af20226c17c54f27f930eccea162ab331c4c",
+      "source_server_clock": "2026-10-25T10:14:41Z",
+      "server_run_id": 40183962653,
+      "source_path": "output/data/archive/2026_w07.json"
+    },
+    {
+      "game_id": "2026_07_SF_ATL",
+      "source_ESPN_event_id": "401873017",
+      "kickoff": "2026-10-25T17:00:00+00:00",
+      "T90": "2026-10-25T15:30:00+00:00",
+      "selected_source_commit": "0f03af20226c17c54f27f930eccea162ab331c4c",
+      "source_server_clock": "2026-10-25T10:14:41Z",
+      "server_run_id": 40183962653,
+      "source_path": "output/data/archive/2026_w07.json"
+    },
+    {
+      "game_id": "2026_07_CIN_BAL",
+      "source_ESPN_event_id": "401873012",
+      "kickoff": "2026-10-25T17:00:00+00:00",
+      "T90": "2026-10-25T15:30:00+00:00",
+      "selected_source_commit": "0f03af20226c17c54f27f930eccea162ab331c4c",
+      "source_server_clock": "2026-10-25T10:14:41Z",
+      "server_run_id": 40183962653,
+      "source_path": "output/data/archive/2026_w07.json"
+    },
+    {
+      "game_id": "2026_07_TB_CAR",
+      "source_ESPN_event_id": "401873018",
+      "kickoff": "2026-10-25T17:00:00+00:00",
+      "T90": "2026-10-25T15:30:00+00:00",
+      "selected_source_commit": "0f03af20226c17c54f27f930eccea162ab331c4c",
+      "source_server_clock": "2026-10-25T10:14:41Z",
+      "server_run_id": 40183962653,
+      "source_path": "output/data/archive/2026_w07.json"
+    },
+    {
+      "game_id": "2026_07_NYG_HOU",
+      "source_ESPN_event_id": "401873016",
+      "kickoff": "2026-10-25T17:00:00+00:00",
+      "T90": "2026-10-25T15:30:00+00:00",
+      "selected_source_commit": "0f03af20226c17c54f27f930eccea162ab331c4c",
+      "source_server_clock": "2026-10-25T10:14:41Z",
+      "server_run_id": 40183962653,
+      "source_path": "output/data/archive/2026_w07.json"
+    },
+    {
+      "game_id": "2026_07_IND_MIN",
+      "source_ESPN_event_id": "401873014",
+      "kickoff": "2026-10-25T17:00:00+00:00",
+      "T90": "2026-10-25T15:30:00+00:00",
+      "selected_source_commit": "0f03af20226c17c54f27f930eccea162ab331c4c",
+      "source_server_clock": "2026-10-25T10:14:41Z",
+      "server_run_id": 40183962653,
+      "source_path": "output/data/archive/2026_w07.json"
+    },
+    {
+      "game_id": "2026_07_MIA_NYJ",
+      "source_ESPN_event_id": "401873015",
+      "kickoff": "2026-10-25T17:00:00+00:00",
+      "T90": "2026-10-25T15:30:00+00:00",
+      "selected_source_commit": "0f03af20226c17c54f27f930eccea162ab331c4c",
+      "source_server_clock": "2026-10-25T10:14:41Z",
+      "server_run_id": 40183962653,
+      "source_path": "output/data/archive/2026_w07.json"
+    },
+    {
+      "game_id": "2026_07_CLE_TEN",
+      "source_ESPN_event_id": "401873013",
+      "kickoff": "2026-10-25T17:00:00+00:00",
+      "T90": "2026-10-25T15:30:00+00:00",
+      "selected_source_commit": "0f03af20226c17c54f27f930eccea162ab331c4c",
+      "source_server_clock": "2026-10-25T10:14:41Z",
+      "server_run_id": 40183962653,
+      "source_path": "output/data/archive/2026_w07.json"
+    },
+    {
+      "game_id": "2026_07_DEN_ARI",
+      "source_ESPN_event_id": "401873019",
+      "kickoff": "2026-10-25T20:05:00+00:00",
+      "T90": "2026-10-25T18:35:00+00:00",
+      "selected_source_commit": "484dbeff5c3fb34673380bf52b0f30ee0354a521",
+      "source_server_clock": "2026-10-25T17:10:17Z",
+      "server_run_id": 40215159984,
+      "source_path": "output/data/archive/2026_w07.json"
+    },
+    {
+      "game_id": "2026_07_GB_DET",
+      "source_ESPN_event_id": "401873020",
+      "kickoff": "2026-10-25T20:25:00+00:00",
+      "T90": "2026-10-25T18:55:00+00:00",
+      "selected_source_commit": "484dbeff5c3fb34673380bf52b0f30ee0354a521",
+      "source_server_clock": "2026-10-25T17:10:17Z",
+      "server_run_id": 40215159984,
+      "source_path": "output/data/archive/2026_w07.json"
+    },
+    {
+      "game_id": "2026_07_LA_LV",
+      "source_ESPN_event_id": "401873021",
+      "kickoff": "2026-10-25T20:25:00+00:00",
+      "T90": "2026-10-25T18:55:00+00:00",
+      "selected_source_commit": "484dbeff5c3fb34673380bf52b0f30ee0354a521",
+      "source_server_clock": "2026-10-25T17:10:17Z",
+      "server_run_id": 40215159984,
+      "source_path": "output/data/archive/2026_w07.json"
+    },
+    {
+      "game_id": "2026_07_KC_SEA",
+      "source_ESPN_event_id": "401873022",
+      "kickoff": "2026-10-26T00:20:00+00:00",
+      "T90": "2026-10-25T22:50:00+00:00",
+      "selected_source_commit": "484dbeff5c3fb34673380bf52b0f30ee0354a521",
+      "source_server_clock": "2026-10-25T17:10:17Z",
+      "server_run_id": 40215159984,
+      "source_path": "output/data/archive/2026_w07.json"
+    },
+    {
+      "game_id": "2026_07_DAL_PHI",
+      "source_ESPN_event_id": "401873009",
+      "kickoff": "2026-10-27T00:15:00+00:00",
+      "T90": "2026-10-26T22:45:00+00:00",
+      "selected_source_commit": "453e7e6e843b0cb1ae611b0925063e0f96c70196",
+      "source_server_clock": "2026-10-26T19:08:59Z",
+      "server_run_id": 40384120613,
+      "source_path": "output/data/archive/2026_w07.json"
+    }
+  ],
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_inference": 0,
+  "new_grades": 0,
+  "CURRENT_2026_Week8_outcomes_read": 0,
+  "source_scope": "W7only14games includingfirstThursday; separateversion/horizonfromoriginalFfixedFriday13game285/462. NoFscoreoverwriteorregrade.",
+  "source_count_window": "265serverrunmetadatarecordsOct20\u201326;W8outcomepayloads unopened"
+}

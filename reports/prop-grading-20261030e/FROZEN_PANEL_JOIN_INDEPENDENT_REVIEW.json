@@ -1,0 +1,53 @@
+{
+  "state": "PASS_INDEPENDENT_METADATA_ELIGIBILITY_AND_PANEL_ONLY_JOIN",
+  "panel_protocol_sha256": "8e5bf0778d8f625598447b130f966e6012898aef0018d8e00a68ae3091ebc992",
+  "join_protocol_sha256": "428aeccf50ec02d7f70fe2b481c02bbef1d7f0166e68d47a0756bf76cb566231",
+  "input_metadata_rows": 2289,
+  "admitted_rows": 285,
+  "metadata_projection_sha256": "9e49d3aa38999b019cbcac289ebad6c0b7a889fd9253d022a09ac9d03b794df4",
+  "eligibility_reason_counts": {
+    "UNSUPPORTED_TARGET_CONTRACT": 705,
+    "NO_ORIGINAL_SAVED_SIDE": 1134,
+    "ADMITTED": 285,
+    "SERVER_RETENTION_NOT_BEFORE_T90": 165
+  },
+  "side_counts": {
+    "under": 150,
+    "over": 135
+  },
+  "target_counts": {
+    "rec": 81,
+    "pass_cmp": 15,
+    "pass_td": 22,
+    "pass_yd": 20,
+    "rush_yd": 39,
+    "rush_att": 17,
+    "rush_rec_yd": 9,
+    "rec_yd": 57,
+    "pass_att": 14,
+    "pass_int": 11
+  },
+  "line_provenance_counts": {
+    "dk": 273,
+    "sleeper": 12
+  },
+  "joined_packet_sha256": "b4e628554cbfcacffd5e797f2f1bc6c86ac983b5d7f8151b11e839982a80533e",
+  "joined_scalar_or_list_fields_independently_checked": 5985,
+  "label_states": {
+    "SUPPORTED": 279,
+    "APPEARANCE_UNKNOWN": 6
+  },
+  "source_reference_records_scanned_lexically": 4248,
+  "only_panel_matched_reference_views_numerically_decoded": 570,
+  "unique_player_games": 136,
+  "games": 13,
+  "source_truth_limit": "Labels reuse previously qualified source rows and their existing complete-zero/positive-physical contract. This checks source identity/value/participation joins, not a new independent NFL official-stat publication or historical quote availability.",
+  "point_limit": "Exact saved adjusted_projection parity is established; unrounded internal model precision is not recovered by this join.",
+  "new_fits": 0,
+  "inference_calls": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "current2026_week8_outcomes_read": 0,
+  "wall_seconds": 0.3925354220009467,
+  "peak_rss_bytes": 23711744
+}

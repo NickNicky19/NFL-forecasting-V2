@@ -1,0 +1,4989 @@
+[
+  {
+    "category": "pass_yd",
+    "numeric_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 66.11731310079224,
+        "best_current_with_prior_season_procedure": "hgb-direct-history-controls-v1:absolute_error_point",
+        "bias": -14.122713543801193,
+        "brier": null,
+        "category": "pass_yd",
+        "comparison_id": "PAIR-5367552d7c20d582c31d:FULL_SYSTEM",
+        "crps": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 242,
+        "full_prior_seasons_for_exact_recipe": [
+          2025,
+          2024,
+          2023,
+          2022
+        ],
+        "game_normal95_sensitivity": [
+          -2.956954027196323,
+          1.6461256833262636
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 66.11731310079224,
+        "max_abs": 220.43803540583147,
+        "mechanism_id": "hgb-L1",
+        "metric": "mae",
+        "mse": 6984.332545070653,
+        "n": 242,
+        "p90_abs": 144.05147756942705,
+        "p95_abs": 174.74966050394113,
+        "paired_delta": -0.6554141719350298,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 2,
+            "rate": 0.008264462809917356
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 22,
+            "rate": 0.09090909090909091
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 7,
+            "rate": 0.028925619834710745
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 2,
+            "rate": 0.008264462809917356
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 22,
+            "rate": 0.09090909090909091
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 7,
+            "rate": 0.028925619834710745
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 0,
+            "rate": 0.0
+          }
+        },
+        "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+        "product_id": "absolute_error_point",
+        "ranking_loss": 66.11731310079224,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.009815596856753341,
+        "release_block": "Matched incumbent/timing parity, complete recovery, later confirmation and owner admission remain unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 83.57231925147616,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 66.77272727272727,
+        "runner_up_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.0,
+        "scored_fallback_rows": 0,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "best_numeric_including_registered_category_policies": {
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "loss": 66.11731310079224,
+      "kind": "static_procedure"
+    },
+    "chronological_policy_scores": [
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 0,
+        "fallback_view": "ALL",
+        "forecast_rows": 242,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 68.7329245393296,
+        "n": 242,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 2,
+            "rate": 0.008264462809917356
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 19,
+            "rate": 0.07851239669421488
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 11,
+            "rate": 0.045454545454545456
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 2,
+            "rate": 0.008264462809917356
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 19,
+            "rate": 0.07851239669421488
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 11,
+            "rate": 0.045454545454545456
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 0,
+            "rate": 0.0
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-deb7bcb666349c90506aae76",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "pass_yd",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 5,
+        "fallback_view": "ALL",
+        "forecast_rows": 242,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 66.72926980909678,
+        "n": 242,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 0,
+            "rate": 0.0
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 18,
+            "rate": 0.0743801652892562
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 8,
+            "rate": 0.03305785123966942
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 0,
+            "rate": 0.0
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 18,
+            "rate": 0.0743801652892562
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 5,
+            "rate": 0.02066115702479339
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 0,
+            "rate": 0.0
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-2dd9a6d4561a316f9e9d7819",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "pass_yd",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 0,
+        "fallback_view": "ALL",
+        "forecast_rows": 242,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 68.332032549183,
+        "n": 242,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 2,
+            "rate": 0.008264462809917356
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 20,
+            "rate": 0.08264462809917356
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 8,
+            "rate": 0.03305785123966942
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 2,
+            "rate": 0.008264462809917356
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 20,
+            "rate": 0.08264462809917356
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 8,
+            "rate": 0.03305785123966942
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 0,
+            "rate": 0.0
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-b433e7432971793a284a59f3",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "pass_yd",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      }
+    ],
+    "partial_selection_maxima": {
+      "over": [
+        {
+          "strategy": "SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+          "selected": 9,
+          "wins": 8,
+          "losses": 1,
+          "decided": 9,
+          "hit_rate": 0.8888888888888888,
+          "selection_coverage": 0.36,
+          "game_uncertainty": {
+            "estimate": 0.8888888888888888,
+            "game_clusters": 7,
+            "game_interval": null,
+            "game_interval_status": "INSUFFICIENT_GAME_CLUSTERS",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "under": [
+        {
+          "strategy": "SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+          "selected": 16,
+          "wins": 12,
+          "losses": 4,
+          "decided": 16,
+          "hit_rate": 0.75,
+          "selection_coverage": 0.64,
+          "game_uncertainty": {
+            "estimate": 0.75,
+            "game_clusters": 10,
+            "game_interval": [
+              0.5667410714285714,
+              0.9375
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "Combined": [
+        {
+          "strategy": "SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+          "selected": 25,
+          "wins": 20,
+          "losses": 5,
+          "decided": 25,
+          "hit_rate": 0.8,
+          "selection_coverage": 1.0,
+          "game_uncertainty": {
+            "estimate": 0.8,
+            "game_clusters": 13,
+            "game_interval": [
+              0.6666666666666666,
+              0.9230769230769231
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ]
+    },
+    "full_period_selection_state": "UNESTABLISHED_MISSING_OTHER_WEEKS_AND_TEMPORALLY_MATCHED_PROCEDURES",
+    "offered_probability_leader": null,
+    "price_aware_leader": null,
+    "release_state": "RESEARCH_PACKAGE_NOT_ADMITTED",
+    "source_sha256": {
+      "numerical-v2/CATEGORY_CHAMPIONS_NUMERICAL.json": "4afc11f26000de69a816481766ea07aad02ed1e93e96ce27cae52c9a2fd5430c",
+      "offer-expansion/full-pool-v1/SCORES.json": "7c19218c98c165d19b28ba7816e3ae33c888063b913709cb418d425b938c37bc",
+      "category-selector-v2/SCORES.json": "a074515d757e657182967aeea58aaaef18e958eda136ab1997748d994febd492"
+    }
+  },
+  {
+    "category": "pass_td",
+    "numeric_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 0.8223140495867769,
+        "best_current_with_prior_season_procedure": "empirical-player-history-control-v1",
+        "bias": -0.30578512396694213,
+        "brier": null,
+        "category": "pass_td",
+        "comparison_id": "PAIR-3e1f345848f8c716ab12:FULL_SYSTEM",
+        "crps": 0.593903167714448,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 242,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.0769152096435076,
+          0.05212182121375554
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 0.8099173553719008,
+        "max_abs": 3.0,
+        "mechanism_id": "leaf-cdf-observed-defense-D1",
+        "metric": "mae",
+        "mse": 1.2975206611570247,
+        "n": 242,
+        "p90_abs": 2.0,
+        "p95_abs": 2.0,
+        "paired_delta": -0.012396694214876033,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 197,
+            "rate": 0.8140495867768595
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 98,
+            "rate": 0.4049586776859504
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 98,
+            "rate": 0.4049586776859504
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 0.8099173553719008,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.01507537688442211,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 1.139087644194697,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 0.8223140495867769,
+        "runner_up_procedure_id": "empirical-player-history-control-v1",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.024793388429752067,
+        "scored_fallback_rows": 6,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "best_numeric_including_registered_category_policies": {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+      "loss": 0.8099173553719008,
+      "kind": "static_procedure"
+    },
+    "chronological_policy_scores": [
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 6,
+        "fallback_view": "ALL",
+        "forecast_rows": 242,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 0.8305785123966942,
+        "n": 242,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 195,
+            "rate": 0.8057851239669421
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 95,
+            "rate": 0.3925619834710744
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 95,
+            "rate": 0.3925619834710744
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-2de7e3760e77a9b3d5fb2ab5",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "pass_td",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 6,
+        "fallback_view": "ALL",
+        "forecast_rows": 242,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 0.8636363636363636,
+        "n": 242,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 193,
+            "rate": 0.7975206611570248
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 92,
+            "rate": 0.38016528925619836
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 92,
+            "rate": 0.38016528925619836
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-c7eced85035bb4e6b9fb6eb9",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "pass_td",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 6,
+        "fallback_view": "ALL",
+        "forecast_rows": 242,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 0.8305785123966942,
+        "n": 242,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 195,
+            "rate": 0.8057851239669421
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 95,
+            "rate": 0.3925619834710744
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 95,
+            "rate": 0.3925619834710744
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-c5a5df3d30c4fee63aaf493f",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "pass_td",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      }
+    ],
+    "partial_selection_maxima": {
+      "over": [
+        {
+          "strategy": "original",
+          "selected": 10,
+          "wins": 5,
+          "losses": 5,
+          "decided": 10,
+          "hit_rate": 0.5,
+          "selection_coverage": 0.4,
+          "game_uncertainty": {
+            "estimate": 0.5,
+            "game_clusters": 8,
+            "game_interval": [
+              0.2,
+              0.7857142857142857
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        },
+        {
+          "strategy": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+          "selected": 12,
+          "wins": 6,
+          "losses": 6,
+          "decided": 12,
+          "hit_rate": 0.5,
+          "selection_coverage": 0.48,
+          "game_uncertainty": {
+            "estimate": 0.5,
+            "game_clusters": 10,
+            "game_interval": [
+              0.1904545454545455,
+              0.7692307692307693
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "under": [
+        {
+          "strategy": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+          "selected": 13,
+          "wins": 10,
+          "losses": 3,
+          "decided": 13,
+          "hit_rate": 0.7692307692307693,
+          "selection_coverage": 0.52,
+          "game_uncertainty": {
+            "estimate": 0.7692307692307693,
+            "game_clusters": 10,
+            "game_interval": [
+              0.5357692307692308,
+              1.0
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "Combined": [
+        {
+          "strategy": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+          "selected": 25,
+          "wins": 16,
+          "losses": 9,
+          "decided": 25,
+          "hit_rate": 0.64,
+          "selection_coverage": 1.0,
+          "game_uncertainty": {
+            "estimate": 0.64,
+            "game_clusters": 13,
+            "game_interval": [
+              0.4790869565217391,
+              0.7916666666666666
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        },
+        {
+          "strategy": "alwaysUnder",
+          "selected": 25,
+          "wins": 16,
+          "losses": 9,
+          "decided": 25,
+          "hit_rate": 0.64,
+          "selection_coverage": 1.0,
+          "game_uncertainty": {
+            "estimate": 0.64,
+            "game_clusters": 13,
+            "game_interval": [
+              0.4166666666666667,
+              0.84
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ]
+    },
+    "full_period_selection_state": "UNESTABLISHED_MISSING_OTHER_WEEKS_AND_TEMPORALLY_MATCHED_PROCEDURES",
+    "offered_probability_leader": null,
+    "price_aware_leader": null,
+    "release_state": "RESEARCH_PACKAGE_NOT_ADMITTED",
+    "source_sha256": {
+      "numerical-v2/CATEGORY_CHAMPIONS_NUMERICAL.json": "4afc11f26000de69a816481766ea07aad02ed1e93e96ce27cae52c9a2fd5430c",
+      "offer-expansion/full-pool-v1/SCORES.json": "7c19218c98c165d19b28ba7816e3ae33c888063b913709cb418d425b938c37bc",
+      "category-selector-v2/SCORES.json": "a074515d757e657182967aeea58aaaef18e958eda136ab1997748d994febd492"
+    }
+  },
+  {
+    "category": "pass_cmp",
+    "numeric_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 5.4191719305456445,
+        "best_current_with_prior_season_procedure": "hgb-direct-history-controls-v1:absolute_error_point",
+        "bias": -0.9462809917355371,
+        "brier": null,
+        "category": "pass_cmp",
+        "comparison_id": "PAIR-34a7be36d515047d6c50:FULL_SYSTEM",
+        "crps": 3.898686200306267,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 242,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.17088360203755698,
+          0.030387734268961936
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 5.3429752066115705,
+        "max_abs": 20.0,
+        "mechanism_id": "leaf-cdf-observed-defense-D1",
+        "metric": "mae",
+        "mse": 47.68181818181818,
+        "n": 242,
+        "p90_abs": 12.0,
+        "p95_abs": 15.0,
+        "paired_delta": -0.07024793388429752,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 40,
+            "rate": 0.1652892561983471
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 207,
+            "rate": 0.8553719008264463
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 154,
+            "rate": 0.6363636363636364
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 13,
+            "rate": 0.05371900826446281
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 202,
+            "rate": 0.8347107438016529
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 135,
+            "rate": 0.5578512396694215
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 13,
+            "rate": 0.05371900826446281
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 5.3429752066115705,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.012977099236641221,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 6.905202254953737,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 5.413223140495868,
+        "runner_up_procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.024793388429752067,
+        "scored_fallback_rows": 6,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "best_numeric_including_registered_category_policies": {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+      "loss": 5.3429752066115705,
+      "kind": "static_procedure"
+    },
+    "chronological_policy_scores": [
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 0,
+        "fallback_view": "ALL",
+        "forecast_rows": 242,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 5.5764541054414485,
+        "n": 242,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 31,
+            "rate": 0.128099173553719
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 203,
+            "rate": 0.8388429752066116
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 134,
+            "rate": 0.5537190082644629
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 31,
+            "rate": 0.128099173553719
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 203,
+            "rate": 0.8388429752066116
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 134,
+            "rate": 0.5537190082644629
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 0,
+            "rate": 0.0
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-70821247874667721b50febb",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "pass_cmp",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 6,
+        "fallback_view": "ALL",
+        "forecast_rows": 242,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 5.43334650195513,
+        "n": 242,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 41,
+            "rate": 0.16942148760330578
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 207,
+            "rate": 0.8553719008264463
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 150,
+            "rate": 0.6198347107438017
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 14,
+            "rate": 0.05785123966942149
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 201,
+            "rate": 0.8305785123966942
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 127,
+            "rate": 0.5247933884297521
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 9,
+            "rate": 0.0371900826446281
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-20a15889aeb513a12f83ca27",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "pass_cmp",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 3,
+        "fallback_view": "ALL",
+        "forecast_rows": 242,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 5.661761923857061,
+        "n": 242,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 37,
+            "rate": 0.15289256198347106
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 203,
+            "rate": 0.8388429752066116
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 137,
+            "rate": 0.5661157024793388
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 21,
+            "rate": 0.08677685950413223
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 200,
+            "rate": 0.8264462809917356
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 128,
+            "rate": 0.5289256198347108
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 8,
+            "rate": 0.03305785123966942
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-9a0499f7ae805fd718c2e3e7",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "pass_cmp",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      }
+    ],
+    "partial_selection_maxima": {
+      "over": [
+        {
+          "strategy": "original",
+          "selected": 4,
+          "wins": 4,
+          "losses": 0,
+          "decided": 4,
+          "hit_rate": 1.0,
+          "selection_coverage": 0.16,
+          "game_uncertainty": {
+            "estimate": 1.0,
+            "game_clusters": 4,
+            "game_interval": null,
+            "game_interval_status": "INSUFFICIENT_GAME_CLUSTERS",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "under": [
+        {
+          "strategy": "original",
+          "selected": 11,
+          "wins": 8,
+          "losses": 3,
+          "decided": 11,
+          "hit_rate": 0.7272727272727273,
+          "selection_coverage": 0.44,
+          "game_uncertainty": {
+            "estimate": 0.7272727272727273,
+            "game_clusters": 8,
+            "game_interval": [
+              0.5,
+              0.9634615384615367
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "Combined": [
+        {
+          "strategy": "original",
+          "selected": 15,
+          "wins": 12,
+          "losses": 3,
+          "decided": 15,
+          "hit_rate": 0.8,
+          "selection_coverage": 0.6,
+          "game_uncertainty": {
+            "estimate": 0.8,
+            "game_clusters": 11,
+            "game_interval": [
+              0.5938235294117648,
+              1.0
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ]
+    },
+    "full_period_selection_state": "UNESTABLISHED_MISSING_OTHER_WEEKS_AND_TEMPORALLY_MATCHED_PROCEDURES",
+    "offered_probability_leader": null,
+    "price_aware_leader": null,
+    "release_state": "RESEARCH_PACKAGE_NOT_ADMITTED",
+    "source_sha256": {
+      "numerical-v2/CATEGORY_CHAMPIONS_NUMERICAL.json": "4afc11f26000de69a816481766ea07aad02ed1e93e96ce27cae52c9a2fd5430c",
+      "offer-expansion/full-pool-v1/SCORES.json": "7c19218c98c165d19b28ba7816e3ae33c888063b913709cb418d425b938c37bc",
+      "category-selector-v2/SCORES.json": "a074515d757e657182967aeea58aaaef18e958eda136ab1997748d994febd492"
+    }
+  },
+  {
+    "category": "pass_att",
+    "numeric_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 8.00413223140496,
+        "best_current_with_prior_season_procedure": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "bias": -1.7727272727272727,
+        "brier": null,
+        "category": "pass_att",
+        "comparison_id": "PAIR-a4d4d85d9422d80e40f5:FULL_SYSTEM",
+        "crps": 5.859597682156039,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 242,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.17537898832801818,
+          0.10926328584867934
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 7.971074380165289,
+        "max_abs": 31.0,
+        "mechanism_id": "leaf-cdf-observed-defense-D2",
+        "metric": "mae",
+        "mse": 111.94628099173553,
+        "n": 242,
+        "p90_abs": 19.900000000000006,
+        "p95_abs": 23.0,
+        "paired_delta": -0.03305785123966942,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 30,
+            "rate": 0.12396694214876033
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 179,
+            "rate": 0.7396694214876033
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 109,
+            "rate": 0.45041322314049587
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 17,
+            "rate": 0.07024793388429752
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 171,
+            "rate": 0.7066115702479339
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 96,
+            "rate": 0.39669421487603307
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 17,
+            "rate": 0.07024793388429752
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 7.971074380165289,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.004130098089829633,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 10.580466955278276,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 8.00413223140496,
+        "runner_up_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.024793388429752067,
+        "scored_fallback_rows": 6,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "best_numeric_including_registered_category_policies": {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+      "loss": 7.971074380165289,
+      "kind": "static_procedure"
+    },
+    "chronological_policy_scores": [
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 0,
+        "fallback_view": "ALL",
+        "forecast_rows": 242,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 8.406754425384229,
+        "n": 242,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 18,
+            "rate": 0.0743801652892562
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 170,
+            "rate": 0.7024793388429752
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 97,
+            "rate": 0.40082644628099173
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 18,
+            "rate": 0.0743801652892562
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 170,
+            "rate": 0.7024793388429752
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 97,
+            "rate": 0.40082644628099173
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 0,
+            "rate": 0.0
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-28427d4bae8366d51976e44c",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "pass_att",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 5,
+        "fallback_view": "ALL",
+        "forecast_rows": 242,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 8.132009157568158,
+        "n": 242,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 28,
+            "rate": 0.11570247933884298
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 179,
+            "rate": 0.7396694214876033
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 116,
+            "rate": 0.4793388429752066
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 16,
+            "rate": 0.06611570247933884
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 173,
+            "rate": 0.7148760330578512
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 98,
+            "rate": 0.4049586776859504
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 14,
+            "rate": 0.05785123966942149
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-95e3ab6e63ac3178e8f6c14c",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "pass_att",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 3,
+        "fallback_view": "ALL",
+        "forecast_rows": 242,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 8.481153012557135,
+        "n": 242,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 22,
+            "rate": 0.09090909090909091
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 169,
+            "rate": 0.6983471074380165
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 104,
+            "rate": 0.4297520661157025
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 14,
+            "rate": 0.05785123966942149
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 166,
+            "rate": 0.6859504132231405
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 93,
+            "rate": 0.384297520661157
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 8,
+            "rate": 0.03305785123966942
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-ade20aec36f12bc69c30af25",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "pass_att",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      }
+    ],
+    "partial_selection_maxima": {
+      "over": [
+        {
+          "strategy": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+          "selected": 6,
+          "wins": 4,
+          "losses": 2,
+          "decided": 6,
+          "hit_rate": 0.6666666666666666,
+          "selection_coverage": 0.24,
+          "game_uncertainty": {
+            "estimate": 0.6666666666666666,
+            "game_clusters": 5,
+            "game_interval": null,
+            "game_interval_status": "INSUFFICIENT_GAME_CLUSTERS",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "under": [
+        {
+          "strategy": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+          "selected": 19,
+          "wins": 14,
+          "losses": 5,
+          "decided": 19,
+          "hit_rate": 0.7368421052631579,
+          "selection_coverage": 0.76,
+          "game_uncertainty": {
+            "estimate": 0.7368421052631579,
+            "game_clusters": 12,
+            "game_interval": [
+              0.54125,
+              0.9
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "Combined": [
+        {
+          "strategy": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+          "selected": 25,
+          "wins": 18,
+          "losses": 7,
+          "decided": 25,
+          "hit_rate": 0.72,
+          "selection_coverage": 1.0,
+          "game_uncertainty": {
+            "estimate": 0.72,
+            "game_clusters": 13,
+            "game_interval": [
+              0.5384615384615384,
+              0.88
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ]
+    },
+    "full_period_selection_state": "UNESTABLISHED_MISSING_OTHER_WEEKS_AND_TEMPORALLY_MATCHED_PROCEDURES",
+    "offered_probability_leader": null,
+    "price_aware_leader": null,
+    "release_state": "RESEARCH_PACKAGE_NOT_ADMITTED",
+    "source_sha256": {
+      "numerical-v2/CATEGORY_CHAMPIONS_NUMERICAL.json": "4afc11f26000de69a816481766ea07aad02ed1e93e96ce27cae52c9a2fd5430c",
+      "offer-expansion/full-pool-v1/SCORES.json": "7c19218c98c165d19b28ba7816e3ae33c888063b913709cb418d425b938c37bc",
+      "category-selector-v2/SCORES.json": "a074515d757e657182967aeea58aaaef18e958eda136ab1997748d994febd492"
+    }
+  },
+  {
+    "category": "pass_int",
+    "numeric_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 0.5661157024793388,
+        "best_current_with_prior_season_procedure": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "bias": -0.5247933884297521,
+        "brier": null,
+        "category": "pass_int",
+        "comparison_id": "PAIR-b6111b46eb4bc6d2e6d4:FULL_SYSTEM",
+        "crps": 0.4122984453008252,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 242,
+        "full_prior_seasons_for_exact_recipe": [
+          2025,
+          2024,
+          2023,
+          2022
+        ],
+        "game_normal95_sensitivity": [
+          -0.09449015111180623,
+          0.04490337425230209
+        ],
+        "history_regime": "H-CURRENT",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 0.5661157024793388,
+        "max_abs": 3.0,
+        "mechanism_id": "leaf-cdf-without-explicit-lag-block",
+        "metric": "mae",
+        "mse": 0.8057851239669421,
+        "n": 242,
+        "p90_abs": 1.9000000000000057,
+        "p95_abs": 2.0,
+        "paired_delta": -0.024793388429752067,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 217,
+            "rate": 0.8966942148760331
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 132,
+            "rate": 0.5454545454545454
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 132,
+            "rate": 0.5454545454545454
+          }
+        },
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 0.5661157024793388,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.04195804195804196,
+        "release_block": "Matched incumbent/timing parity, complete recovery, later confirmation and owner admission remain unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 0.8976553480968863,
+        "runner_up_history": "H-CURRENT",
+        "runner_up_loss": 0.5909090909090909,
+        "runner_up_procedure_id": "empirical-player-history-control-v1",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.47520661157024796,
+        "scored_fallback_rows": 115,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "best_numeric_including_registered_category_policies": {
+      "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+      "loss": 0.5661157024793388,
+      "kind": "static_procedure"
+    },
+    "chronological_policy_scores": [
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 0,
+        "fallback_view": "ALL",
+        "forecast_rows": 242,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 0.6033057851239669,
+        "n": 242,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 212,
+            "rate": 0.8760330578512396
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 128,
+            "rate": 0.5289256198347108
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 128,
+            "rate": 0.5289256198347108
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-d91217a1dab9ced00049ed08",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "pass_int",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 3,
+        "fallback_view": "ALL",
+        "forecast_rows": 242,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 0.6299848166420429,
+        "n": 242,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 214,
+            "rate": 0.8842975206611571
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 134,
+            "rate": 0.5537190082644629
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 103,
+            "rate": 0.4256198347107438
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-a79605f353f596091aa4d7b7",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "pass_int",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 0,
+        "fallback_view": "ALL",
+        "forecast_rows": 242,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 0.6033057851239669,
+        "n": 242,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 212,
+            "rate": 0.8760330578512396
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 128,
+            "rate": 0.5289256198347108
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 128,
+            "rate": 0.5289256198347108
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-457abb80a903299dbe58b8dd",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "pass_int",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      }
+    ],
+    "partial_selection_maxima": {
+      "over": [
+        {
+          "strategy": "original",
+          "selected": 7,
+          "wins": 5,
+          "losses": 2,
+          "decided": 7,
+          "hit_rate": 0.7142857142857143,
+          "selection_coverage": 0.2916666666666667,
+          "game_uncertainty": {
+            "estimate": 0.7142857142857143,
+            "game_clusters": 5,
+            "game_interval": null,
+            "game_interval_status": "INSUFFICIENT_GAME_CLUSTERS",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        },
+        {
+          "strategy": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+          "selected": 14,
+          "wins": 10,
+          "losses": 4,
+          "decided": 14,
+          "hit_rate": 0.7142857142857143,
+          "selection_coverage": 0.5833333333333334,
+          "game_uncertainty": {
+            "estimate": 0.7142857142857143,
+            "game_clusters": 11,
+            "game_interval": [
+              0.46153846153846156,
+              0.9285714285714286
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "under": [
+        {
+          "strategy": "original",
+          "selected": 4,
+          "wins": 4,
+          "losses": 0,
+          "decided": 4,
+          "hit_rate": 1.0,
+          "selection_coverage": 0.16666666666666666,
+          "game_uncertainty": {
+            "estimate": 1.0,
+            "game_clusters": 4,
+            "game_interval": null,
+            "game_interval_status": "INSUFFICIENT_GAME_CLUSTERS",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "Combined": [
+        {
+          "strategy": "original",
+          "selected": 11,
+          "wins": 9,
+          "losses": 2,
+          "decided": 11,
+          "hit_rate": 0.8181818181818182,
+          "selection_coverage": 0.4583333333333333,
+          "game_uncertainty": {
+            "estimate": 0.8181818181818182,
+            "game_clusters": 7,
+            "game_interval": null,
+            "game_interval_status": "INSUFFICIENT_GAME_CLUSTERS",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ]
+    },
+    "full_period_selection_state": "UNESTABLISHED_MISSING_OTHER_WEEKS_AND_TEMPORALLY_MATCHED_PROCEDURES",
+    "offered_probability_leader": null,
+    "price_aware_leader": null,
+    "release_state": "RESEARCH_PACKAGE_NOT_ADMITTED",
+    "source_sha256": {
+      "numerical-v2/CATEGORY_CHAMPIONS_NUMERICAL.json": "4afc11f26000de69a816481766ea07aad02ed1e93e96ce27cae52c9a2fd5430c",
+      "offer-expansion/full-pool-v1/SCORES.json": "7c19218c98c165d19b28ba7816e3ae33c888063b913709cb418d425b938c37bc",
+      "category-selector-v2/SCORES.json": "a074515d757e657182967aeea58aaaef18e958eda136ab1997748d994febd492"
+    }
+  },
+  {
+    "category": "rush_yd",
+    "numeric_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 16.75,
+        "best_current_with_prior_season_procedure": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "bias": -6.024881516587678,
+        "brier": null,
+        "category": "rush_yd",
+        "comparison_id": "PAIR-62f6819026ccf327c7e8:FULL_SYSTEM",
+        "crps": 11.849938797951719,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 847,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.11840876006877363,
+          0.08523340461853665
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 16.688388625592417,
+        "max_abs": 129.0,
+        "mechanism_id": "leaf-cdf-observed-defense-D1",
+        "metric": "mae",
+        "mse": 640.3661137440758,
+        "n": 844,
+        "p90_abs": 39.0,
+        "p95_abs": 52.84999999999991,
+        "paired_delta": -0.016587677725118485,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 844,
+            "numerator": 102,
+            "rate": 0.12085308056872038
+          },
+          "abs_le_10": {
+            "denominator": 844,
+            "numerator": 429,
+            "rate": 0.5082938388625592
+          },
+          "abs_le_5": {
+            "denominator": 844,
+            "numerator": 279,
+            "rate": 0.3305687203791469
+          },
+          "abs_lt_1": {
+            "denominator": 844,
+            "numerator": 69,
+            "rate": 0.08175355450236967
+          },
+          "abs_lt_10": {
+            "denominator": 844,
+            "numerator": 403,
+            "rate": 0.4774881516587678
+          },
+          "abs_lt_5": {
+            "denominator": 844,
+            "numerator": 238,
+            "rate": 0.28199052132701424
+          },
+          "exact_rate": {
+            "denominator": 844,
+            "numerator": 69,
+            "rate": 0.08175355450236967
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 16.688388625592417,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.0009929782254060571,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 25.30545620501784,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 16.704976303317537,
+        "runner_up_procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.03909952606635071,
+        "scored_fallback_rows": 33,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "best_numeric_including_registered_category_policies": {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+      "loss": 16.688388625592417,
+      "kind": "static_procedure"
+    },
+    "chronological_policy_scores": [
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 34,
+        "fallback_view": "ALL",
+        "forecast_rows": 847,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 16.75,
+        "n": 844,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 844,
+            "numerator": 103,
+            "rate": 0.12203791469194313
+          },
+          "abs_le_10": {
+            "denominator": 844,
+            "numerator": 421,
+            "rate": 0.49881516587677727
+          },
+          "abs_le_5": {
+            "denominator": 844,
+            "numerator": 275,
+            "rate": 0.32582938388625593
+          },
+          "abs_lt_1": {
+            "denominator": 844,
+            "numerator": 60,
+            "rate": 0.07109004739336493
+          },
+          "abs_lt_10": {
+            "denominator": 844,
+            "numerator": 398,
+            "rate": 0.471563981042654
+          },
+          "abs_lt_5": {
+            "denominator": 844,
+            "numerator": 231,
+            "rate": 0.273696682464455
+          },
+          "exact_rate": {
+            "denominator": 844,
+            "numerator": 60,
+            "rate": 0.07109004739336493
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-b8ea45a54775ebfc184b6226",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "rush_yd",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 36,
+        "fallback_view": "ALL",
+        "forecast_rows": 847,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 17.04739336492891,
+        "n": 844,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 844,
+            "numerator": 132,
+            "rate": 0.15639810426540285
+          },
+          "abs_le_10": {
+            "denominator": 844,
+            "numerator": 417,
+            "rate": 0.4940758293838863
+          },
+          "abs_le_5": {
+            "denominator": 844,
+            "numerator": 266,
+            "rate": 0.31516587677725116
+          },
+          "abs_lt_1": {
+            "denominator": 844,
+            "numerator": 83,
+            "rate": 0.09834123222748815
+          },
+          "abs_lt_10": {
+            "denominator": 844,
+            "numerator": 398,
+            "rate": 0.471563981042654
+          },
+          "abs_lt_5": {
+            "denominator": 844,
+            "numerator": 237,
+            "rate": 0.28080568720379145
+          },
+          "exact_rate": {
+            "denominator": 844,
+            "numerator": 83,
+            "rate": 0.09834123222748815
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-9924655214fdcd17439bdadd",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "rush_yd",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 34,
+        "fallback_view": "ALL",
+        "forecast_rows": 847,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 16.75,
+        "n": 844,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 844,
+            "numerator": 103,
+            "rate": 0.12203791469194313
+          },
+          "abs_le_10": {
+            "denominator": 844,
+            "numerator": 421,
+            "rate": 0.49881516587677727
+          },
+          "abs_le_5": {
+            "denominator": 844,
+            "numerator": 275,
+            "rate": 0.32582938388625593
+          },
+          "abs_lt_1": {
+            "denominator": 844,
+            "numerator": 60,
+            "rate": 0.07109004739336493
+          },
+          "abs_lt_10": {
+            "denominator": 844,
+            "numerator": 398,
+            "rate": 0.471563981042654
+          },
+          "abs_lt_5": {
+            "denominator": 844,
+            "numerator": 231,
+            "rate": 0.273696682464455
+          },
+          "exact_rate": {
+            "denominator": 844,
+            "numerator": 60,
+            "rate": 0.07109004739336493
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-a87315cefd1d5c6e9265de9d",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "rush_yd",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      }
+    ],
+    "partial_selection_maxima": {
+      "over": [
+        {
+          "strategy": "original",
+          "selected": 29,
+          "wins": 15,
+          "losses": 13,
+          "decided": 28,
+          "hit_rate": 0.5357142857142857,
+          "selection_coverage": 0.5,
+          "game_uncertainty": {
+            "estimate": 0.5357142857142857,
+            "game_clusters": 12,
+            "game_interval": [
+              0.36363636363636365,
+              0.678024193548387
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "under": [
+        {
+          "strategy": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+          "selected": 17,
+          "wins": 11,
+          "losses": 5,
+          "decided": 16,
+          "hit_rate": 0.6875,
+          "selection_coverage": 0.29310344827586204,
+          "game_uncertainty": {
+            "estimate": 0.6875,
+            "game_clusters": 10,
+            "game_interval": [
+              0.5,
+              0.8333333333333334
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "Combined": [
+        {
+          "strategy": "alwaysUnder",
+          "selected": 58,
+          "wins": 33,
+          "losses": 22,
+          "decided": 55,
+          "hit_rate": 0.6,
+          "selection_coverage": 1.0,
+          "game_uncertainty": {
+            "estimate": 0.6,
+            "game_clusters": 13,
+            "game_interval": [
+              0.5081967213114754,
+              0.6961012706969579
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ]
+    },
+    "full_period_selection_state": "UNESTABLISHED_MISSING_OTHER_WEEKS_AND_TEMPORALLY_MATCHED_PROCEDURES",
+    "offered_probability_leader": null,
+    "price_aware_leader": null,
+    "release_state": "RESEARCH_PACKAGE_NOT_ADMITTED",
+    "source_sha256": {
+      "numerical-v2/CATEGORY_CHAMPIONS_NUMERICAL.json": "4afc11f26000de69a816481766ea07aad02ed1e93e96ce27cae52c9a2fd5430c",
+      "offer-expansion/full-pool-v1/SCORES.json": "7c19218c98c165d19b28ba7816e3ae33c888063b913709cb418d425b938c37bc",
+      "category-selector-v2/SCORES.json": "a074515d757e657182967aeea58aaaef18e958eda136ab1997748d994febd492"
+    }
+  },
+  {
+    "category": "rush_att",
+    "numeric_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 3.059241706161137,
+        "best_current_with_prior_season_procedure": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "bias": -0.8281990521327014,
+        "brier": null,
+        "category": "rush_att",
+        "comparison_id": "PAIR-343a022003013b535fd3:FULL_SYSTEM",
+        "crps": 2.162640101831089,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 847,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.03133732254527509,
+          0.028967654298829595
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 3.058056872037915,
+        "max_abs": 20.0,
+        "mechanism_id": "leaf-cdf-observed-defense-D1",
+        "metric": "mae",
+        "mse": 18.671800947867297,
+        "n": 844,
+        "p90_abs": 7.0,
+        "p95_abs": 9.0,
+        "paired_delta": -0.001184834123222749,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 844,
+            "numerator": 317,
+            "rate": 0.3755924170616114
+          },
+          "abs_le_10": {
+            "denominator": 844,
+            "numerator": 814,
+            "rate": 0.9644549763033176
+          },
+          "abs_le_5": {
+            "denominator": 844,
+            "numerator": 698,
+            "rate": 0.8270142180094787
+          },
+          "abs_lt_1": {
+            "denominator": 844,
+            "numerator": 133,
+            "rate": 0.15758293838862558
+          },
+          "abs_lt_10": {
+            "denominator": 844,
+            "numerator": 803,
+            "rate": 0.9514218009478673
+          },
+          "abs_lt_5": {
+            "denominator": 844,
+            "numerator": 643,
+            "rate": 0.7618483412322274
+          },
+          "exact_rate": {
+            "denominator": 844,
+            "numerator": 133,
+            "rate": 0.15758293838862558
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 3.058056872037915,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.00038729666924864454,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 4.321087935678618,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 3.059241706161137,
+        "runner_up_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.03909952606635071,
+        "scored_fallback_rows": 33,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "best_numeric_including_registered_category_policies": {
+      "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "loss": 3.0497630331753554,
+      "kind": "chronological_category_selection_policy"
+    },
+    "chronological_policy_scores": [
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 34,
+        "fallback_view": "ALL",
+        "forecast_rows": 847,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 3.059241706161137,
+        "n": 844,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 844,
+            "numerator": 317,
+            "rate": 0.3755924170616114
+          },
+          "abs_le_10": {
+            "denominator": 844,
+            "numerator": 817,
+            "rate": 0.9680094786729858
+          },
+          "abs_le_5": {
+            "denominator": 844,
+            "numerator": 695,
+            "rate": 0.8234597156398105
+          },
+          "abs_lt_1": {
+            "denominator": 844,
+            "numerator": 134,
+            "rate": 0.15876777251184834
+          },
+          "abs_lt_10": {
+            "denominator": 844,
+            "numerator": 802,
+            "rate": 0.9502369668246445
+          },
+          "abs_lt_5": {
+            "denominator": 844,
+            "numerator": 643,
+            "rate": 0.7618483412322274
+          },
+          "exact_rate": {
+            "denominator": 844,
+            "numerator": 134,
+            "rate": 0.15876777251184834
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-7f6957d5cdd2d2315ada6498",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "rush_att",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 34,
+        "fallback_view": "ALL",
+        "forecast_rows": 847,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 3.0497630331753554,
+        "n": 844,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 844,
+            "numerator": 318,
+            "rate": 0.3767772511848341
+          },
+          "abs_le_10": {
+            "denominator": 844,
+            "numerator": 818,
+            "rate": 0.9691943127962085
+          },
+          "abs_le_5": {
+            "denominator": 844,
+            "numerator": 694,
+            "rate": 0.8222748815165877
+          },
+          "abs_lt_1": {
+            "denominator": 844,
+            "numerator": 130,
+            "rate": 0.15402843601895735
+          },
+          "abs_lt_10": {
+            "denominator": 844,
+            "numerator": 804,
+            "rate": 0.95260663507109
+          },
+          "abs_lt_5": {
+            "denominator": 844,
+            "numerator": 644,
+            "rate": 0.7630331753554502
+          },
+          "exact_rate": {
+            "denominator": 844,
+            "numerator": 130,
+            "rate": 0.15402843601895735
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-582957c6336581d18ec553a3",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "rush_att",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 34,
+        "fallback_view": "ALL",
+        "forecast_rows": 847,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 3.059241706161137,
+        "n": 844,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 844,
+            "numerator": 317,
+            "rate": 0.3755924170616114
+          },
+          "abs_le_10": {
+            "denominator": 844,
+            "numerator": 817,
+            "rate": 0.9680094786729858
+          },
+          "abs_le_5": {
+            "denominator": 844,
+            "numerator": 695,
+            "rate": 0.8234597156398105
+          },
+          "abs_lt_1": {
+            "denominator": 844,
+            "numerator": 134,
+            "rate": 0.15876777251184834
+          },
+          "abs_lt_10": {
+            "denominator": 844,
+            "numerator": 802,
+            "rate": 0.9502369668246445
+          },
+          "abs_lt_5": {
+            "denominator": 844,
+            "numerator": 643,
+            "rate": 0.7618483412322274
+          },
+          "exact_rate": {
+            "denominator": 844,
+            "numerator": 134,
+            "rate": 0.15876777251184834
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-67ac98bb3a675ea87c0d47aa",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "rush_att",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      }
+    ],
+    "partial_selection_maxima": {
+      "over": [
+        {
+          "strategy": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+          "selected": 14,
+          "wins": 10,
+          "losses": 3,
+          "decided": 13,
+          "hit_rate": 0.7692307692307693,
+          "selection_coverage": 0.56,
+          "game_uncertainty": {
+            "estimate": 0.7692307692307693,
+            "game_clusters": 9,
+            "game_interval": [
+              0.5384615384615384,
+              0.9433333333333329
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "under": [
+        {
+          "strategy": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+          "selected": 11,
+          "wins": 8,
+          "losses": 3,
+          "decided": 11,
+          "hit_rate": 0.7272727272727273,
+          "selection_coverage": 0.44,
+          "game_uncertainty": {
+            "estimate": 0.7272727272727273,
+            "game_clusters": 8,
+            "game_interval": [
+              0.5454545454545454,
+              1.0
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "Combined": [
+        {
+          "strategy": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+          "selected": 25,
+          "wins": 18,
+          "losses": 6,
+          "decided": 24,
+          "hit_rate": 0.75,
+          "selection_coverage": 1.0,
+          "game_uncertainty": {
+            "estimate": 0.75,
+            "game_clusters": 13,
+            "game_interval": [
+              0.568167701863354,
+              0.9024999999999999
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ]
+    },
+    "full_period_selection_state": "UNESTABLISHED_MISSING_OTHER_WEEKS_AND_TEMPORALLY_MATCHED_PROCEDURES",
+    "offered_probability_leader": null,
+    "price_aware_leader": null,
+    "release_state": "RESEARCH_PACKAGE_NOT_ADMITTED",
+    "source_sha256": {
+      "numerical-v2/CATEGORY_CHAMPIONS_NUMERICAL.json": "4afc11f26000de69a816481766ea07aad02ed1e93e96ce27cae52c9a2fd5430c",
+      "offer-expansion/full-pool-v1/SCORES.json": "7c19218c98c165d19b28ba7816e3ae33c888063b913709cb418d425b938c37bc",
+      "category-selector-v2/SCORES.json": "a074515d757e657182967aeea58aaaef18e958eda136ab1997748d994febd492"
+    }
+  },
+  {
+    "category": "rec",
+    "numeric_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 1.2455146364494807,
+        "best_current_with_prior_season_procedure": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "bias": -0.43153918791312557,
+        "brier": null,
+        "category": "rec",
+        "comparison_id": "PAIR-f5855f6c667cb329aa4a:FULL_SYSTEM",
+        "crps": 0.8905598417739717,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 2152,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.010239469992122125,
+          0.008350895865587658
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 1.2455146364494807,
+        "max_abs": 13.0,
+        "mechanism_id": "leaf-cdf-observed-defense-D2",
+        "metric": "mae",
+        "mse": 3.440982058545798,
+        "n": 2118,
+        "p90_abs": 3.0,
+        "p95_abs": 4.0,
+        "paired_delta": -0.0009442870632672333,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 1487,
+            "rate": 0.7020774315391879
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 2115,
+            "rate": 0.9985835694050992
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 2089,
+            "rate": 0.9863078375826251
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 677,
+            "rate": 0.31964117091595845
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 2114,
+            "rate": 0.9981114258734656
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 2060,
+            "rate": 0.9726156751652503
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 677,
+            "rate": 0.31964117091595845
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 1.2455146364494807,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.0007575757575757576,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 1.854988425447932,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 1.246458923512748,
+        "runner_up_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.049575070821529746,
+        "scored_fallback_rows": 105,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "TIED_FIRST"
+      },
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 1.2455146364494807,
+        "best_current_with_prior_season_procedure": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "bias": -0.3881019830028329,
+        "brier": null,
+        "category": "rec",
+        "comparison_id": "PAIR-315acdeb1368b1ff7634:FULL_SYSTEM",
+        "crps": 0.8909082351841422,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 2152,
+        "full_prior_seasons_for_exact_recipe": [
+          2025,
+          2024,
+          2023,
+          2022
+        ],
+        "game_normal95_sensitivity": [
+          -0.013892142987992316,
+          0.012003568861457849
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 1.2455146364494807,
+        "max_abs": 13.0,
+        "mechanism_id": "leaf-cdf-without-explicit-lag-block",
+        "metric": "mae",
+        "mse": 3.396600566572238,
+        "n": 2118,
+        "p90_abs": 3.0,
+        "p95_abs": 4.0,
+        "paired_delta": -0.0009442870632672333,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 1476,
+            "rate": 0.6968838526912181
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 2115,
+            "rate": 0.9985835694050992
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 2089,
+            "rate": 0.9863078375826251
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 671,
+            "rate": 0.31680830972615676
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 2114,
+            "rate": 0.9981114258734656
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 2065,
+            "rate": 0.9749763928234183
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 671,
+            "rate": 0.31680830972615676
+          }
+        },
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 1.2455146364494807,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.0007575757575757576,
+        "release_block": "Matched incumbent/timing parity, complete recovery, later confirmation and owner admission remain unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 1.842986860119257,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 1.246458923512748,
+        "runner_up_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.049575070821529746,
+        "scored_fallback_rows": 105,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "TIED_FIRST"
+      }
+    ],
+    "best_numeric_including_registered_category_policies": {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+      "loss": 1.2455146364494807,
+      "kind": "static_procedure"
+    },
+    "chronological_policy_scores": [
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 110,
+        "fallback_view": "ALL",
+        "forecast_rows": 2152,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 1.254957507082153,
+        "n": 2118,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 1480,
+            "rate": 0.6987724268177526
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 2115,
+            "rate": 0.9985835694050992
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 2085,
+            "rate": 0.9844192634560907
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 673,
+            "rate": 0.31775259678942397
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 2114,
+            "rate": 0.9981114258734656
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 2061,
+            "rate": 0.9730878186968839
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 673,
+            "rate": 0.31775259678942397
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-7b17d599ce1d6cb2a1534c7a",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "rec",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 110,
+        "fallback_view": "ALL",
+        "forecast_rows": 2152,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 1.2592067988668556,
+        "n": 2118,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 1473,
+            "rate": 0.6954674220963173
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 2115,
+            "rate": 0.9985835694050992
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 2085,
+            "rate": 0.9844192634560907
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 665,
+            "rate": 0.31397544853635506
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 2114,
+            "rate": 0.9981114258734656
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 2061,
+            "rate": 0.9730878186968839
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 665,
+            "rate": 0.31397544853635506
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-4279bf42bd546b2bb3881e9f",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "rec",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 110,
+        "fallback_view": "ALL",
+        "forecast_rows": 2152,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 1.254957507082153,
+        "n": 2118,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 1480,
+            "rate": 0.6987724268177526
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 2115,
+            "rate": 0.9985835694050992
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 2085,
+            "rate": 0.9844192634560907
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 673,
+            "rate": 0.31775259678942397
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 2114,
+            "rate": 0.9981114258734656
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 2061,
+            "rate": 0.9730878186968839
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 673,
+            "rate": 0.31775259678942397
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-6a129cb69b873e10a4c2a217",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "rec",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      }
+    ],
+    "partial_selection_maxima": {
+      "over": [
+        {
+          "strategy": "original",
+          "selected": 25,
+          "wins": 20,
+          "losses": 5,
+          "decided": 25,
+          "hit_rate": 0.8,
+          "selection_coverage": 0.21551724137931033,
+          "game_uncertainty": {
+            "estimate": 0.8,
+            "game_clusters": 11,
+            "game_interval": [
+              0.65,
+              0.923111111111111
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "under": [
+        {
+          "strategy": "SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+          "selected": 67,
+          "wins": 44,
+          "losses": 18,
+          "decided": 62,
+          "hit_rate": 0.7096774193548387,
+          "selection_coverage": 0.5775862068965517,
+          "game_uncertainty": {
+            "estimate": 0.7096774193548387,
+            "game_clusters": 13,
+            "game_interval": [
+              0.6097523834745763,
+              0.8061036789297659
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "Combined": [
+        {
+          "strategy": "original",
+          "selected": 81,
+          "wins": 55,
+          "losses": 22,
+          "decided": 77,
+          "hit_rate": 0.7142857142857143,
+          "selection_coverage": 0.6982758620689655,
+          "game_uncertainty": {
+            "estimate": 0.7142857142857143,
+            "game_clusters": 13,
+            "game_interval": [
+              0.616286799620133,
+              0.8074721964782205
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ]
+    },
+    "full_period_selection_state": "UNESTABLISHED_MISSING_OTHER_WEEKS_AND_TEMPORALLY_MATCHED_PROCEDURES",
+    "offered_probability_leader": null,
+    "price_aware_leader": null,
+    "release_state": "RESEARCH_PACKAGE_NOT_ADMITTED",
+    "source_sha256": {
+      "numerical-v2/CATEGORY_CHAMPIONS_NUMERICAL.json": "4afc11f26000de69a816481766ea07aad02ed1e93e96ce27cae52c9a2fd5430c",
+      "offer-expansion/full-pool-v1/SCORES.json": "7c19218c98c165d19b28ba7816e3ae33c888063b913709cb418d425b938c37bc",
+      "category-selector-v2/SCORES.json": "a074515d757e657182967aeea58aaaef18e958eda136ab1997748d994febd492"
+    }
+  },
+  {
+    "category": "rec_yd",
+    "numeric_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 16.19877242681775,
+        "best_current_with_prior_season_procedure": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "bias": -6.909820585457979,
+        "brier": null,
+        "category": "rec_yd",
+        "comparison_id": "PAIR-e1bb486fcbfb407fca06:FULL_SYSTEM",
+        "crps": 11.6124519474203,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 2152,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.059290388269193396,
+          0.040404647003848736
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 16.18932955618508,
+        "max_abs": 155.0,
+        "mechanism_id": "leaf-cdf-observed-defense-D2",
+        "metric": "mae",
+        "mse": 645.4112370160528,
+        "n": 2118,
+        "p90_abs": 41.0,
+        "p95_abs": 57.0,
+        "paired_delta": -0.009442870632672332,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 377,
+            "rate": 0.17799811142587346
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 1128,
+            "rate": 0.5325779036827195
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 757,
+            "rate": 0.3574126534466478
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 288,
+            "rate": 0.1359773371104816
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 1068,
+            "rate": 0.5042492917847026
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 642,
+            "rate": 0.3031161473087819
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 288,
+            "rate": 0.1359773371104816
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 16.18932955618508,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.000582937421667784,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 25.404945129168315,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 16.19877242681775,
+        "runner_up_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.049575070821529746,
+        "scored_fallback_rows": 105,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "best_numeric_including_registered_category_policies": {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+      "loss": 16.18932955618508,
+      "kind": "static_procedure"
+    },
+    "chronological_policy_scores": [
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 110,
+        "fallback_view": "ALL",
+        "forecast_rows": 2152,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 16.19877242681775,
+        "n": 2118,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 370,
+            "rate": 0.17469310670443816
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 1122,
+            "rate": 0.5297450424929179
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 753,
+            "rate": 0.3555240793201133
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 291,
+            "rate": 0.13739376770538245
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 1061,
+            "rate": 0.5009442870632672
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 649,
+            "rate": 0.3064211520302172
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 291,
+            "rate": 0.13739376770538245
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-4a67306221914584ba563371",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "rec_yd",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 111,
+        "fallback_view": "ALL",
+        "forecast_rows": 2152,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 16.572237960339944,
+        "n": 2118,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 386,
+            "rate": 0.182247403210576
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 1081,
+            "rate": 0.5103871576959396
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 715,
+            "rate": 0.3375826251180359
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 307,
+            "rate": 0.1449480642115203
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 1026,
+            "rate": 0.48441926345609065
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 619,
+            "rate": 0.29225684608120867
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 307,
+            "rate": 0.1449480642115203
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-de09ea43a9aafdd7d841abe1",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "rec_yd",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 110,
+        "fallback_view": "ALL",
+        "forecast_rows": 2152,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 16.19877242681775,
+        "n": 2118,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 370,
+            "rate": 0.17469310670443816
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 1122,
+            "rate": 0.5297450424929179
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 753,
+            "rate": 0.3555240793201133
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 291,
+            "rate": 0.13739376770538245
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 1061,
+            "rate": 0.5009442870632672
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 649,
+            "rate": 0.3064211520302172
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 291,
+            "rate": 0.13739376770538245
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-88c4ee8f071cf3af233f8d6e",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "rec_yd",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      }
+    ],
+    "partial_selection_maxima": {
+      "over": [
+        {
+          "strategy": "original",
+          "selected": 33,
+          "wins": 17,
+          "losses": 16,
+          "decided": 33,
+          "hit_rate": 0.5151515151515151,
+          "selection_coverage": 0.28448275862068967,
+          "game_uncertainty": {
+            "estimate": 0.5151515151515151,
+            "game_clusters": 12,
+            "game_interval": [
+              0.3281862745098039,
+              0.6866517857142856
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "under": [
+        {
+          "strategy": "original",
+          "selected": 24,
+          "wins": 15,
+          "losses": 9,
+          "decided": 24,
+          "hit_rate": 0.625,
+          "selection_coverage": 0.20689655172413793,
+          "game_uncertainty": {
+            "estimate": 0.625,
+            "game_clusters": 12,
+            "game_interval": [
+              0.45454545454545453,
+              0.85
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "Combined": [
+        {
+          "strategy": "original",
+          "selected": 57,
+          "wins": 32,
+          "losses": 25,
+          "decided": 57,
+          "hit_rate": 0.5614035087719298,
+          "selection_coverage": 0.49137931034482757,
+          "game_uncertainty": {
+            "estimate": 0.5614035087719298,
+            "game_clusters": 13,
+            "game_interval": [
+              0.451280834914611,
+              0.6813588007736944
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ]
+    },
+    "full_period_selection_state": "UNESTABLISHED_MISSING_OTHER_WEEKS_AND_TEMPORALLY_MATCHED_PROCEDURES",
+    "offered_probability_leader": null,
+    "price_aware_leader": null,
+    "release_state": "RESEARCH_PACKAGE_NOT_ADMITTED",
+    "source_sha256": {
+      "numerical-v2/CATEGORY_CHAMPIONS_NUMERICAL.json": "4afc11f26000de69a816481766ea07aad02ed1e93e96ce27cae52c9a2fd5430c",
+      "offer-expansion/full-pool-v1/SCORES.json": "7c19218c98c165d19b28ba7816e3ae33c888063b913709cb418d425b938c37bc",
+      "category-selector-v2/SCORES.json": "a074515d757e657182967aeea58aaaef18e958eda136ab1997748d994febd492"
+    }
+  },
+  {
+    "category": "rush_rec_yd",
+    "numeric_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 20.125661066525677,
+        "best_current_with_prior_season_procedure": "hgb-direct-history-controls-v1:absolute_error_point",
+        "bias": -8.358908707303168,
+        "brier": null,
+        "category": "rush_rec_yd",
+        "comparison_id": "PAIR-6e06760c131790af3af9:FULL_SYSTEM",
+        "crps": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 2152,
+        "full_prior_seasons_for_exact_recipe": [
+          2025,
+          2024,
+          2023,
+          2022
+        ],
+        "game_normal95_sensitivity": [
+          -0.27447866079557576,
+          0.10087161537666874
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 20.125661066525677,
+        "max_abs": 157.7925524250844,
+        "mechanism_id": "hgb-L1",
+        "metric": "mae",
+        "mse": 886.7424737673884,
+        "n": 2118,
+        "p90_abs": 49.445456302652595,
+        "p95_abs": 65.73281220727824,
+        "paired_delta": -0.0868035227094535,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 190,
+            "rate": 0.08970727101038715
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 894,
+            "rate": 0.42209631728045327
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 531,
+            "rate": 0.2507082152974504
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 190,
+            "rate": 0.08970727101038715
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 894,
+            "rate": 0.42209631728045327
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 531,
+            "rate": 0.2507082152974504
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 0,
+            "rate": 0.0
+          }
+        },
+        "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+        "product_id": "absolute_error_point",
+        "ranking_loss": 20.125661066525677,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.004294554101813186,
+        "release_block": "Matched incumbent/timing parity, complete recovery, later confirmation and owner admission remain unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 29.778221467498497,
+        "runner_up_history": "H-RECENT",
+        "runner_up_loss": 20.21246458923513,
+        "runner_up_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.0,
+        "scored_fallback_rows": 0,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "best_numeric_including_registered_category_policies": {
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "loss": 20.125661066525677,
+      "kind": "static_procedure"
+    },
+    "chronological_policy_scores": [
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 0,
+        "fallback_view": "ALL",
+        "forecast_rows": 2152,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 20.125661066525677,
+        "n": 2118,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 190,
+            "rate": 0.08970727101038715
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 894,
+            "rate": 0.42209631728045327
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 531,
+            "rate": 0.2507082152974504
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 190,
+            "rate": 0.08970727101038715
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 894,
+            "rate": 0.42209631728045327
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 531,
+            "rate": 0.2507082152974504
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 0,
+            "rate": 0.0
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-e19241949f910701bca2ce29",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "rush_rec_yd",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 98,
+        "fallback_view": "ALL",
+        "forecast_rows": 2152,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 20.469323545367303,
+        "n": 2118,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 228,
+            "rate": 0.10764872521246459
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 867,
+            "rate": 0.4093484419263456
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 522,
+            "rate": 0.24645892351274787
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 184,
+            "rate": 0.08687440982058546
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 832,
+            "rate": 0.392823418319169
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 492,
+            "rate": 0.23229461756373937
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 112,
+            "rate": 0.05288007554296506
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-ba4a9d6c022c60bc8e1e5c0c",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "rush_rec_yd",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 0,
+        "fallback_view": "ALL",
+        "forecast_rows": 2152,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 20.125661066525677,
+        "n": 2118,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 190,
+            "rate": 0.08970727101038715
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 894,
+            "rate": 0.42209631728045327
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 531,
+            "rate": 0.2507082152974504
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 190,
+            "rate": 0.08970727101038715
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 894,
+            "rate": 0.42209631728045327
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 531,
+            "rate": 0.2507082152974504
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 0,
+            "rate": 0.0
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-d633cbc5885bbc5ec53e82c9",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "rush_rec_yd",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      }
+    ],
+    "partial_selection_maxima": {
+      "over": [
+        {
+          "strategy": "original",
+          "selected": 5,
+          "wins": 4,
+          "losses": 1,
+          "decided": 5,
+          "hit_rate": 0.8,
+          "selection_coverage": 0.21739130434782608,
+          "game_uncertainty": {
+            "estimate": 0.8,
+            "game_clusters": 4,
+            "game_interval": null,
+            "game_interval_status": "INSUFFICIENT_GAME_CLUSTERS",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "under": [
+        {
+          "strategy": "original",
+          "selected": 4,
+          "wins": 2,
+          "losses": 2,
+          "decided": 4,
+          "hit_rate": 0.5,
+          "selection_coverage": 0.17391304347826086,
+          "game_uncertainty": {
+            "estimate": 0.5,
+            "game_clusters": 4,
+            "game_interval": null,
+            "game_interval_status": "INSUFFICIENT_GAME_CLUSTERS",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        },
+        {
+          "strategy": "SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+          "selected": 6,
+          "wins": 3,
+          "losses": 3,
+          "decided": 6,
+          "hit_rate": 0.5,
+          "selection_coverage": 0.2608695652173913,
+          "game_uncertainty": {
+            "estimate": 0.5,
+            "game_clusters": 6,
+            "game_interval": null,
+            "game_interval_status": "INSUFFICIENT_GAME_CLUSTERS",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ],
+      "Combined": [
+        {
+          "strategy": "original",
+          "selected": 9,
+          "wins": 6,
+          "losses": 3,
+          "decided": 9,
+          "hit_rate": 0.6666666666666666,
+          "selection_coverage": 0.391304347826087,
+          "game_uncertainty": {
+            "estimate": 0.6666666666666666,
+            "game_clusters": 8,
+            "game_interval": [
+              0.375,
+              1.0
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "paired_n": null,
+            "replicates": 500,
+            "seed": 1703,
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+          }
+        }
+      ]
+    },
+    "full_period_selection_state": "UNESTABLISHED_MISSING_OTHER_WEEKS_AND_TEMPORALLY_MATCHED_PROCEDURES",
+    "offered_probability_leader": null,
+    "price_aware_leader": null,
+    "release_state": "RESEARCH_PACKAGE_NOT_ADMITTED",
+    "source_sha256": {
+      "numerical-v2/CATEGORY_CHAMPIONS_NUMERICAL.json": "4afc11f26000de69a816481766ea07aad02ed1e93e96ce27cae52c9a2fd5430c",
+      "offer-expansion/full-pool-v1/SCORES.json": "7c19218c98c165d19b28ba7816e3ae33c888063b913709cb418d425b938c37bc",
+      "category-selector-v2/SCORES.json": "a074515d757e657182967aeea58aaaef18e958eda136ab1997748d994febd492"
+    }
+  },
+  {
+    "category": "nick-chart-ppr-v1",
+    "numeric_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 4.496515472657906,
+        "best_current_with_prior_season_procedure": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "bias": -1.5863840610428148,
+        "brier": null,
+        "category": "nick-chart-ppr-v1",
+        "comparison_id": "PAIR-a83aff3e26b8ef648a46:FULL_SYSTEM",
+        "crps": 3.178420916010816,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 2394,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.0185841334970835,
+          0.010580742229597304
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 4.490360322170411,
+        "max_abs": 37.2,
+        "mechanism_id": "leaf-cdf-observed-defense-D2",
+        "metric": "mae",
+        "mse": 42.10213955065706,
+        "n": 2359,
+        "p90_abs": 10.468000000000012,
+        "p95_abs": 14.2,
+        "paired_delta": -0.004001695633743097,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2359,
+            "numerator": 500,
+            "rate": 0.21195421788893598
+          },
+          "abs_le_10": {
+            "denominator": 2359,
+            "numerator": 2098,
+            "rate": 0.8893598982619754
+          },
+          "abs_le_5": {
+            "denominator": 2359,
+            "numerator": 1609,
+            "rate": 0.682068673166596
+          },
+          "abs_lt_1": {
+            "denominator": 2359,
+            "numerator": 466,
+            "rate": 0.19754133107248834
+          },
+          "abs_lt_10": {
+            "denominator": 2359,
+            "numerator": 2091,
+            "rate": 0.8863925392115303
+          },
+          "abs_lt_5": {
+            "denominator": 2359,
+            "numerator": 1589,
+            "rate": 0.6735905044510386
+          },
+          "exact_rate": {
+            "denominator": 2359,
+            "numerator": 133,
+            "rate": 0.05637982195845697
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 4.490360322170411,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.0008903812416290925,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 6.48861615066395,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 4.494362017804154,
+        "runner_up_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.04705383637134379,
+        "scored_fallback_rows": 111,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "best_numeric_including_registered_category_policies": {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+      "loss": 4.490360322170411,
+      "kind": "static_procedure"
+    },
+    "chronological_policy_scores": [
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 116,
+        "fallback_view": "ALL",
+        "forecast_rows": 2394,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 4.502390843577787,
+        "n": 2359,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2359,
+            "numerator": 500,
+            "rate": 0.21195421788893598
+          },
+          "abs_le_10": {
+            "denominator": 2359,
+            "numerator": 2089,
+            "rate": 0.8855447223399746
+          },
+          "abs_le_5": {
+            "denominator": 2359,
+            "numerator": 1606,
+            "rate": 0.6807969478592624
+          },
+          "abs_lt_1": {
+            "denominator": 2359,
+            "numerator": 462,
+            "rate": 0.19584569732937684
+          },
+          "abs_lt_10": {
+            "denominator": 2359,
+            "numerator": 2085,
+            "rate": 0.8838490885968631
+          },
+          "abs_lt_5": {
+            "denominator": 2359,
+            "numerator": 1583,
+            "rate": 0.6710470538363713
+          },
+          "exact_rate": {
+            "denominator": 2359,
+            "numerator": 136,
+            "rate": 0.05765154726579059
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-a4fbe7bc9a715fb0e86b28cb",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "nick-chart-ppr-v1",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 117,
+        "fallback_view": "ALL",
+        "forecast_rows": 2394,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 4.589546417973717,
+        "n": 2359,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2359,
+            "numerator": 497,
+            "rate": 0.21068249258160238
+          },
+          "abs_le_10": {
+            "denominator": 2359,
+            "numerator": 2086,
+            "rate": 0.884272997032641
+          },
+          "abs_le_5": {
+            "denominator": 2359,
+            "numerator": 1562,
+            "rate": 0.662144976685036
+          },
+          "abs_lt_1": {
+            "denominator": 2359,
+            "numerator": 466,
+            "rate": 0.19754133107248834
+          },
+          "abs_lt_10": {
+            "denominator": 2359,
+            "numerator": 2084,
+            "rate": 0.8834251801610852
+          },
+          "abs_lt_5": {
+            "denominator": 2359,
+            "numerator": 1544,
+            "rate": 0.6545146248410343
+          },
+          "exact_rate": {
+            "denominator": 2359,
+            "numerator": 168,
+            "rate": 0.0712166172106825
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-d90973ff0211f277831aea53",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "nick-chart-ppr-v1",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 116,
+        "fallback_view": "ALL",
+        "forecast_rows": 2394,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "mae": 4.502390843577787,
+        "n": 2359,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2359,
+            "numerator": 500,
+            "rate": 0.21195421788893598
+          },
+          "abs_le_10": {
+            "denominator": 2359,
+            "numerator": 2089,
+            "rate": 0.8855447223399746
+          },
+          "abs_le_5": {
+            "denominator": 2359,
+            "numerator": 1606,
+            "rate": 0.6807969478592624
+          },
+          "abs_lt_1": {
+            "denominator": 2359,
+            "numerator": 462,
+            "rate": 0.19584569732937684
+          },
+          "abs_lt_10": {
+            "denominator": 2359,
+            "numerator": 2085,
+            "rate": 0.8838490885968631
+          },
+          "abs_lt_5": {
+            "denominator": 2359,
+            "numerator": 1583,
+            "rate": 0.6710470538363713
+          },
+          "exact_rate": {
+            "denominator": 2359,
+            "numerator": 136,
+            "rate": 0.05765154726579059
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+        "product_id": "point_choice_policy",
+        "record_id": "SELECTOR-415ec6c3ed21874bded65037",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "nick-chart-ppr-v1",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      }
+    ],
+    "partial_selection_maxima": {
+      "over": [],
+      "under": [],
+      "Combined": []
+    },
+    "full_period_selection_state": "UNESTABLISHED_MISSING_OTHER_WEEKS_AND_TEMPORALLY_MATCHED_PROCEDURES",
+    "offered_probability_leader": null,
+    "price_aware_leader": null,
+    "release_state": "RESEARCH_PACKAGE_NOT_ADMITTED",
+    "source_sha256": {
+      "numerical-v2/CATEGORY_CHAMPIONS_NUMERICAL.json": "4afc11f26000de69a816481766ea07aad02ed1e93e96ce27cae52c9a2fd5430c",
+      "offer-expansion/full-pool-v1/SCORES.json": "7c19218c98c165d19b28ba7816e3ae33c888063b913709cb418d425b938c37bc",
+      "category-selector-v2/SCORES.json": "a074515d757e657182967aeea58aaaef18e958eda136ab1997748d994febd492"
+    }
+  },
+  {
+    "category": "anytime_td",
+    "numeric_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 0.14314429954020047,
+        "best_current_with_prior_season_procedure": "hgb-direct-history-controls-v1:log_loss_probability",
+        "bias": -0.009058043207488802,
+        "brier": 0.14314429954020047,
+        "category": "anytime_td",
+        "comparison_id": "PAIR-f50eb216568b5cee56fc:FULL_SYSTEM",
+        "crps": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 2152,
+        "full_prior_seasons_for_exact_recipe": [
+          2025,
+          2024,
+          2023,
+          2022
+        ],
+        "game_normal95_sensitivity": [
+          -0.005047215787482312,
+          0.0038258514585437333
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 0.2826191315328142,
+        "max_abs": 0.9401684837923856,
+        "mechanism_id": "hgb-binary-logloss",
+        "metric": "brier",
+        "mse": 0.14314429954020047,
+        "n": 2118,
+        "p90_abs": 0.7908234859257844,
+        "p95_abs": 0.8493710514828716,
+        "paired_delta": -0.0006106821644692894,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 0,
+            "rate": 0.0
+          }
+        },
+        "procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+        "product_id": "log_loss_probability",
+        "ranking_loss": 0.14314429954020047,
+        "ranking_product": "event_probability",
+        "relative_error_change": -0.004248076534306651,
+        "release_block": "Matched incumbent/timing parity, complete recovery, later confirmation and owner admission remain unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 0.37834415489102047,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 0.14375498170466974,
+        "runner_up_procedure_id": "empirical-player-history-control-v1",
+        "runner_up_product": "event_probability",
+        "scored_fallback_rate": 0.0,
+        "scored_fallback_rows": 0,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "best_numeric_including_registered_category_policies": {
+      "procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "loss": 0.14314429954020047,
+      "kind": "static_procedure"
+    },
+    "chronological_policy_scores": [
+      {
+        "brier": 0.14314429954020047,
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 0,
+        "fallback_view": "ALL",
+        "forecast_rows": 2152,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "n": 2118,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 0,
+            "rate": 0.0
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+        "product_id": "event_probability_policy",
+        "record_id": "SELECTOR-36450bb28812732f50ea4beb",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "anytime_td",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "brier": 0.14514458108731892,
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 112,
+        "fallback_view": "ALL",
+        "forecast_rows": 2152,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "n": 2118,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 2091,
+            "rate": 0.9872521246458924
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 296,
+            "rate": 0.1397544853635505
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "product_id": "event_probability_policy",
+        "record_id": "SELECTOR-3353fe57ce64d2def5078ff5",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "anytime_td",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      },
+      {
+        "brier": 0.14314429954020047,
+        "evaluation_panel_id": "v2-chronological-category-score-memory-selector-v2",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "NEW_EXPERIMENT_SAVED_AGGREGATE_REPLAY",
+        "fallback_rows": 0,
+        "fallback_view": "ALL",
+        "forecast_rows": 2152,
+        "game_interval_status": "NO_PER_GAME_AGGREGATE_LOSS_AVAILABLE",
+        "history_regime": "H-MULTI",
+        "n": 2118,
+        "period": "REG",
+        "population": "primary",
+        "position": "ALL",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 0,
+            "rate": 0.0
+          }
+        },
+        "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+        "product_id": "event_probability_policy",
+        "record_id": "SELECTOR-caee429ae34c1bac61aa99ec",
+        "record_kind": "retrospective_chronological_category_selector_aggregate_replay",
+        "season": 2026,
+        "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+        "target": "anytime_td",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week": "ALL",
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+      }
+    ],
+    "partial_selection_maxima": {
+      "over": [],
+      "under": [],
+      "Combined": []
+    },
+    "full_period_selection_state": "UNESTABLISHED_MISSING_OTHER_WEEKS_AND_TEMPORALLY_MATCHED_PROCEDURES",
+    "offered_probability_leader": null,
+    "price_aware_leader": null,
+    "release_state": "RESEARCH_PACKAGE_NOT_ADMITTED",
+    "source_sha256": {
+      "numerical-v2/CATEGORY_CHAMPIONS_NUMERICAL.json": "4afc11f26000de69a816481766ea07aad02ed1e93e96ce27cae52c9a2fd5430c",
+      "offer-expansion/full-pool-v1/SCORES.json": "7c19218c98c165d19b28ba7816e3ae33c888063b913709cb418d425b938c37bc",
+      "category-selector-v2/SCORES.json": "a074515d757e657182967aeea58aaaef18e958eda136ab1997748d994febd492"
+    }
+  }
+]

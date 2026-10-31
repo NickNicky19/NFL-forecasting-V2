@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "source_join_field_checks": 71820,
+  "score_views": 40,
+  "paired_contrasts": 30,
+  "metric_and_pair_checks": 890,
+  "common_queries_per_method": 2394,
+  "primary_supported_n": 844,
+  "extended_supported_n": 1516,
+  "headline_strong_comparator_results": [
+    {
+      "game_cluster_normal95_sensitivity": [
+        -0.08449737091802573,
+        0.010351547532476725
+      ],
+      "game_cluster_sensitivity_se": 0.024196152665944506,
+      "n": 844,
+      "new": "primary_role_l1",
+      "new_mae": 3.0916176426853155,
+      "old": "prior_best_mean",
+      "old_mae": 3.1286905543780903,
+      "paired_mae_difference": -0.037072911692774504,
+      "population": "primary",
+      "relative_mae_improvement": 0.011849337941362411,
+      "row_losses": 422,
+      "row_ties": 0,
+      "row_wins": 422,
+      "scored_membership_sha256": "7bc54ea0cc8ff18c388d2e0ad3aeb046f04657c4cb152de2691b43f92eef764f",
+      "uncertainty_reason": "only7exposedweeks;gameclustersensitivitynotmultiplicity/selectionadjustedorindependentweeklyconfirmation",
+      "unique_games": 107,
+      "view": "full_system",
+      "week_clusters": 7,
+      "week_interval": null,
+      "weekly_paired_deltas": {
+        "1": -0.04203281871852376,
+        "2": 0.0005850299595312055,
+        "3": -0.049012012092239626,
+        "4": -0.04049115085236238,
+        "5": -0.08140280712516984,
+        "6": -0.05459288131835874,
+        "7": 0.007166222950354711
+      }
+    },
+    {
+      "game_cluster_normal95_sensitivity": [
+        0.29439562015881265,
+        0.3611389637862054
+      ],
+      "game_cluster_sensitivity_se": 0.017026363170253262,
+      "n": 1516,
+      "new": "primary_role_l1",
+      "new_mae": 0.6194361735373531,
+      "old": "prior_best_mean",
+      "old_mae": 0.2916688815648441,
+      "paired_mae_difference": 0.32776729197250903,
+      "population": "extended",
+      "relative_mae_improvement": -1.1237650386767075,
+      "row_losses": 1401,
+      "row_ties": 0,
+      "row_wins": 115,
+      "scored_membership_sha256": "ac4985c15a305fc08fc8d4b195dcaa3d9b07437e0ed428b116ee7a7e020a86da",
+      "uncertainty_reason": "only7exposedweeks;gameclustersensitivitynotmultiplicity/selectionadjustedorindependentweeklyconfirmation",
+      "unique_games": 107,
+      "view": "full_system",
+      "week_clusters": 7,
+      "week_interval": null,
+      "weekly_paired_deltas": {
+        "1": 0.4868598519462651,
+        "2": 0.5223678621340241,
+        "3": 0.259041517088066,
+        "4": 0.3783040065362791,
+        "5": 0.1775256279821052,
+        "6": 0.2290182844442752,
+        "7": 0.20633232804172927
+      }
+    }
+  ],
+  "redacted_row_examples": {
+    "loss": {
+      "public_safe_id": "83bfbd60be01259f",
+      "candidate_abs_error": 1.3424987097849455,
+      "strong_control_abs_error": 1.2047785972887792
+    },
+    "win": {
+      "public_safe_id": "a5d20170bdf356d3",
+      "candidate_abs_error": 8.151896735268648,
+      "strong_control_abs_error": 8.354928686740335
+    }
+  },
+  "code_sha256": "ab23f2339c8a9211f7b2d82990119208c5cf011eb7bb54ee1a668f0782bc796e",
+  "source_artifacts_sha256": {
+    "W01-rush_att-H-MULTI-absolute_error_point-FORECAST.json": "03e42046fa66bef935bfa634883ea77aecce3847b0145e7660f3d2d383e37590",
+    "W01-rush_att-H-MULTI-squared_error_mean-FORECAST.json": "464e0fdae0f2f89cd113574ddf3ffa5bab9095b5983c62c4b7cd02a9458cc687",
+    "W02-rush_att-H-MULTI-absolute_error_point-FORECAST.json": "b5919b67108ffa95d410690f4cb14aa75242cc352e5ef1b3b68996cb1e9f1abf",
+    "W02-rush_att-H-MULTI-squared_error_mean-FORECAST.json": "403dcb13485501e9cbc7d0c132c558b675b8734fb9e3412627ecc77237c23dcf",
+    "W03-rush_att-H-MULTI-absolute_error_point-FORECAST.json": "719bed17f9d172b78ef041b7f3273ef11bee95c0ad8c4bf81ada26c1914951e5",
+    "W03-rush_att-H-MULTI-squared_error_mean-FORECAST.json": "d9c23700231fb97dd7ecf2fe9fbbcc0304578f812386f42d8271a2f3c234abf6",
+    "W04-rush_att-H-MULTI-absolute_error_point-FORECAST.json": "4a3a6f1045a0e9cf97e083093d1daf036a7af5cae6d6be70c05f4b4581906617",
+    "W04-rush_att-H-MULTI-squared_error_mean-FORECAST.json": "0760cd3463d83dc3d41ad6865ae8ef8885b793c389a9ad9e642cdb0e8c625237",
+    "W05-rush_att-H-MULTI-absolute_error_point-FORECAST.json": "d3d3e16c52a0a129dd68e0208b18e3cded0d7e15943b5d0b4636d64d7b3d8bb8",
+    "W05-rush_att-H-MULTI-squared_error_mean-FORECAST.json": "46869359843e885c769df9902e293f96162430b2bd55496a956036a14a908896",
+    "W06-rush_att-H-MULTI-absolute_error_point-FORECAST.json": "5574b49abead6b3896158c69ee5fe05a6ba92100b67b0d35657510a7073f2088",
+    "W06-rush_att-H-MULTI-squared_error_mean-FORECAST.json": "d28b5d8bd5c8aaf46025a0a33087fde01f54bfa67c4a888e409e6c1a0939a780",
+    "W07-rush_att-H-MULTI-absolute_error_point-FORECAST.json": "b975dd57b9d10fa650d9fc746a97e94737a421a7ece76f62104a7fffcbf914ec",
+    "W07-rush_att-H-MULTI-squared_error_mean-FORECAST.json": "120ca89744fd26bd661fa6174ed115ac1c9318445b1ca7cb087d0de76dc6f830",
+    "empirical": "52d0c4476ac8a3d45b6128fd092b94c73bf6f9a5c9408f2878df8e33e03a513f",
+    "role_ablation": "0572701db61761b5f3bc551e98b3335fb149218cd50b00eee1847b7ea2ee1e46",
+    "ordered_law": "8850d4beea01033e033978637de3e2b68142eb842bd75ec49b394e31d0d55cba"
+  },
+  "score_artifact_sha256": "0a0e60c53a3beb5336d379121fd9ef174657ff438c31ed4939466429494f6372",
+  "paired_artifact_sha256": "e5e5a800f66210c6492ffbdf7eed94e216a379a57c820820e56bd3b7cc36a201",
+  "interpretation": "H-MULTI current-vintage participant diagnostic; not strongest-every-procedure claim. Positive relative_mae_improvement is the negative of relative error delta.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "week8_outcomes_read": 0
+}

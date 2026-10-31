@@ -1,0 +1,13 @@
+{
+  "version": "week8-identity-source-admission-v2",
+  "registered_at_utc": "2026-10-29T22:47:52.559260+00:00",
+  "amends": "v1playerssnapshotretained;actualplayersschemalacksSleeperID",
+  "source_url": "https://github.com/nflverse/nflverse-data/releases/download/weekly_rosters/roster_weekly_2026.csv.gz",
+  "purpose": "Current exact Sleeper-to-GSIS bridge; consume only season,week<=8,gsis_id,sleeper_id,position; never infer from names or import snaps",
+  "max_HTTP_attempts": 1,
+  "max_download_bytes": 2097152,
+  "max_uncompressed_bytes": 16777216,
+  "license": "CC-BY-4.0 nflverse-data with attribution; rosteridentityonly",
+  "timing": "Current snapshot received beforeactualshadowissuance; not historicalasofvintage",
+  "no_paid_calls": true
+}

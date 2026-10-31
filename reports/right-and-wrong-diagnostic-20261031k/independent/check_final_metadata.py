@@ -1,0 +1,62 @@
+"""Final K append/coverage/private-evidence metadata audit; no prior science replay."""
+import argparse,collections,csv,gzip,hashlib,io,json,math,sys
+from pathlib import Path
+HERE=Path(__file__).resolve().parent;BASE=HERE.parent;ROOT=HERE.parents[2];sys.path.insert(0,str(ROOT))
+from nfl_v2.result_index import is_championship_eligible
+def read(p):return json.loads(p.read_bytes())
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def close(a,b):
+    if a is None or b is None:assert a is b,(a,b)
+    else:assert math.isclose(float(a),float(b),abs_tol=1e-10,rel_tol=1e-11),(a,b)
+def main():
+    ap=argparse.ArgumentParser();ap.add_argument('--private-root',type=Path,required=True);a=ap.parse_args();oldpath=ROOT/'reports/defense-season-executor-20261031j-code/results-index-v2/INDEX_MANIFEST.json';old=read(oldpath);indexpath=BASE/'results-index-v1/INDEX_MANIFEST.json';index=read(indexpath);assert sha(oldpath)=='95961ea9577095d4642b088da6dd1cb9383c4e0cbb6abc2be017ae5b70aec5c5';assert index['shards'][:len(old['shards'])]==old['shards']and index['csv_parts'][:len(old['csv_parts'])]==old['csv_parts'];assert index['record_count']==old['record_count']+8053==565871
+    source={};source_hashes={};annotations={};rawprivate={};privateids=set();evidence_n=control_cases=0;native_summary={}
+    for stage,folder in [('stage-a-v1','right-and-wrong-diagnostic-20261031k-stage-a-v1'),('stage-b-v1','right-and-wrong-diagnostic-20261031k-stage-b-v1'),('rr-native-tie-completion-v1','right-and-wrong-diagnostic-20261031k-rr-native-tie-v1')]:
+        pub=BASE/stage;sourcepath=pub/'SCORES.json';array=read(sourcepath);source[str(sourcepath.relative_to(ROOT))]={r['record_id']:r for r in array};source_hashes[str(sourcepath.relative_to(ROOT))]=sha(sourcepath);summary=read(pub/'METHOD_BUCKET_SUMMARIES.json');native_summary.update({(r['target'],r['procedure_id'],r['history_regime'],r['product_id']):r for r in summary});private=a.private_root/folder;packetpath=private/'RIGHT_WRONG_ROWS_AND_EXAMPLES.json.gz';run=read(pub/'RUN_RECEIPT.json');assert sha(packetpath)==run['private_sha256'];packet=json.loads(gzip.decompress(packetpath.read_bytes()));cases={r['case_id']:r for r in packet['rows']};assert len(cases)==len(packet['rows'])and not(privateids&cases.keys());privateids.update(cases)
+        evpath=private/'PRIVATE_CASE_EVIDENCE_ANNOTATIONS_V1.json.gz';ev=json.loads(gzip.decompress(evpath.read_bytes()));assert ev['source_private_sha256']==sha(packetpath)and ev['prediction_values_grades_and_numeric_scores_unchanged']is True;assert{r['case_id']for r in ev['rows']}==cases.keys()
+        for z in ev['rows']:
+            r=cases[z['case_id']];assert z['quote_update_time']is None and z['quote_update_time_null_reason'];assert'RETROSPECTIVE_P1_RULE_REPLAY'in z['selection_evidence_tier'];assert z['fallback_used']==(None if r['fallback']is None else r['fallback']!='none');assert bool(z['fallback_null_reason'])==(r['fallback']is None);assert z['source_nulls_preserved']is True;assert all(k in r for k in z['source_record_fields_present']);assert r['components']is None;assert r['CAUSE_OR_REMEDY_UNTESTED'].startswith('CAUSE_UNRESOLVED');evidence_n+=1
+            if r['recipe'][2]!='ARCHIVED':assert'NOT_ORIGINAL_PREGAME_ISSUANCE'in z['forecast_evidence_tier']
+        coveragepath=private/'PRIVATE_CASE_COVERAGE_ANNOTATIONS_V1.json.gz'
+        if coveragepath.exists():
+            c=json.loads(gzip.decompress(coveragepath.read_bytes()));assert c['source_private_sha256']==sha(packetpath);assert{z['case_id']for z in c['rows']}=={k for k,v in cases.items()if v['recipe'][2]=='ARCHIVED'}
+            for z in c['rows']:assert z['standalone_forecast_availability']is None and z['standalone_availability_null_reason'];control_cases+=1
+        annpath=pub/'CURRENT_REPORTING_ANNOTATIONS_K_V1.json'
+        if annpath.exists():
+            ann=read(annpath);assert ann['source_score_sha256']==sha(sourcepath)
+            for z in ann['rows']:
+                r=array[z['source_row_index']];assert z['record_id']==r['record_id']and r['history_regime']=='ARCHIVED';assert z['comparison_mask_outer_offer_rows']==r['outer_opportunities']and z['comparison_mask_admitted_forecasts']==r['source_admitted_forecasts'];assert z['comparison_mask_fraction']==r['full_source_coverage'];assert z['masked_out_or_missing_control_rows']==r['outer_opportunities']-r['source_admitted_forecasts'];assert z['standalone_forecast_availability']is None and z['standalone_forecast_unavailable_count']is None;annotations[z['record_id']]=z
+    assert evidence_n==len(privateids)==35180 and control_cases==3872 and len(annotations)==880 and len(native_summary)==183
+    new={};software=[];native_precision=0
+    for z in index['shards'][len(old['shards']):]:
+        path=ROOT/z['path'];assert sha(path)==z['sha256'];blob=gzip.decompress(path.read_bytes());assert hashlib.sha256(blob).hexdigest()==z['uncompressed_sha256']and len(blob)==z['uncompressed_bytes'];rr=json.loads(blob);assert len(rr)==z['records']
+        for r in rr:
+            assert r['test_id']not in new;new[r['test_id']]=r
+            if r['kind']=='software_verification':software.append(r);continue
+            src=source[r['source_artifact']][r['source_record_id']];assert r['source_aggregate_fields']==src and source_hashes[r['source_artifact']]==r['source_artifact_sha256'];assert r['kind']=='right_and_wrong_prediction_diagnostic';assert not is_championship_eligible(r)and not is_championship_eligible(src)
+            for k in('diagnostic_only','default_rank_eligible','conditioning','diagnostic_bucket','diagnostic_dimension','diagnostic_band'):assert r[k]==src[k]
+            for k in('mae','mse','rmse','bias'):close(r['metrics'][k],src[k])
+            close(r['metrics']['max_abs'],src['max_abs_error']);assert r['n']==src['n'];close(r['diagnostic_subset_fraction'],src['diagnostic_subset_fraction']);close(r['full_source_coverage'],src['full_source_coverage'])
+            for k,v in src['precision_counts'].items():assert r['precision_metrics'][k]['numerator']==v['numerator']and r['precision_metrics'][k]['denominator']==v['denominator'];close(r['precision_metrics'][k]['rate'],v['rate'])
+            native_precision+=1
+            if r['source_record_id']in annotations:
+                z=annotations[r['source_record_id']]
+                for k in('coverage_scope','comparison_mask_outer_offer_rows','comparison_mask_admitted_forecasts','comparison_mask_fraction','masked_out_or_missing_control_rows','standalone_forecast_availability','standalone_forecast_unavailable_count','standalone_availability_null_reason'):assert r[k]==z[k]
+    assert len(new)==8053 and native_precision==8052 and len(software)==1 and software[0]['software_checks']==442 and software[0]['n']is None and software[0]['metrics']is None
+    csvseen=set()
+    for z in index['csv_parts'][len(old['csv_parts']):]:
+        path=ROOT/z['path'];assert sha(path)==z['sha256'];rr=list(csv.DictReader(io.StringIO(gzip.decompress(path.read_bytes()).decode())));assert len(rr)==z['rows']
+        for c in rr:
+            r=new[c['test_id']];assert c['test_id']not in csvseen;csvseen.add(c['test_id']);assert c['source_artifact_sha256']==r['source_artifact_sha256']
+            if r['kind']=='software_verification':assert c['n']==c['mae']=='';continue
+            assert not is_championship_eligible(c);assert c['diagnostic_only']in('True','true')and c['default_rank_eligible']in('False','false');assert c['conditioning']==r['conditioning']and c['diagnostic_bucket']==r['diagnostic_bucket']and c['diagnostic_dimension']==r['diagnostic_dimension']and c['diagnostic_band']==r['diagnostic_band'];close(c['mae']or None,r['metrics']['mae']);close(c['max_abs']or None,r['metrics']['max_abs'])
+            for k,v in r['precision_metrics'].items():close(c[k+'_numerator']or None,v['numerator']);close(c[k+'_denominator']or None,v['denominator']);close(c[k+'_rate']or None,v['rate'])
+            if r['history_regime']=='ARCHIVED':assert c['standalone_forecast_availability']==c['standalone_forecast_unavailable_count']==''and c['standalone_availability_null_reason']
+    assert csvseen==new.keys();bound=read(BASE/'DIAGNOSTIC_ARTIFACT_BINDINGS_V2.json')
+    for z in bound['artifacts']:
+        path=(ROOT if z['path'].startswith('reports/')else BASE)/z['path'];assert sha(path)==z['sha256']and path.stat().st_size==z['bytes']
+    report=(BASE/'RIGHT_AND_WRONG_PREDICTION_DIAGNOSTIC.md').read_text();assert'PARTIAL'in report and'4.490360'in report and'rare'in report.lower();assert'global stored-model split'in report and'5%position-prior'in report
+    out=dict(state='PASS_K_APPEND_INDEX_COVERAGE_CASE_EVIDENCE_AND_FINAL_METADATA',index_manifest_sha256=sha(indexpath),prior_J_manifest_sha256=sha(oldpath),prior_records_preserved=557818,prior_JSON_shards=len(old['shards']),prior_CSV_parts=len(old['csv_parts']),old_science_replayed=False,index_records=565871,new_diagnostic_views=8052,new_software_records=1,software_checks=442,all_new_maximum_errors_and_precision_fields_verified=True,all_new_JSON_CSV_ranking_exclusions_verified=True,control_source_coverage_annotations=880,control_private_case_scope_annotations=3872,case_evidence_annotations=35180,final_binding_sha256=sha(BASE/'DIAGNOSTIC_ARTIFACT_BINDINGS_V2.json'),final_readable_sha256=sha(BASE/'RIGHT_AND_WRONG_PREDICTION_DIAGNOSTIC.md'),checker_sha256=sha(Path(__file__)),qualification='All groups are outcome-conditioned, non-causal and excluded from championship ranks. Control standalone availability remains unknown. Chart native error is explicitly qualified partial. Source chronology and actual book/source clocks retain their limits.',new_NFL_models=0,new_NFL_inference=0,new_NFL_forecasts=0,new_NFL_observations=0,new_private_exports=0)
+    with(HERE/'FINAL_K_INDEX_AND_METADATA_REVIEW.json').open('x')as f:json.dump(out,f,indent=2);f.write('\n')
+    print(json.dumps(dict(state=out['state'],records=565871,new_diagnostics=8052,control_annotations=880,private_case_evidence=35180)))
+if __name__=='__main__':main()

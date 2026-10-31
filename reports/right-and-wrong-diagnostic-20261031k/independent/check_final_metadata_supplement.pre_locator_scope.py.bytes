@@ -1,0 +1,54 @@
+"""Bounded pinned-public metadata/hash read plus final K supplement binding review."""
+import argparse,collections,datetime,gzip,hashlib,importlib.util,json,time,urllib.request
+from pathlib import Path
+HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[2]
+def read(p):return json.loads(Path(p).read_bytes())
+def digest(b):return hashlib.sha256(b).hexdigest()
+def sha(p):return digest(Path(p).read_bytes())
+def main():
+ parser=argparse.ArgumentParser();parser.add_argument('--private-root',type=Path,required=True);args=parser.parse_args();start=time.monotonic();base=HERE.parent;ownerpath=base/'owner-status/OWNER_STATUS_RECEIPT_V1.json';owner=read(ownerpath)
+ lexerpath=ROOT/'reports/owner-runtime-refresh-20261031j/READ_ONLY_SOURCE_AUDIT.py';spec=importlib.util.spec_from_file_location('safe_metadata_lexer',lexerpath);lexer=importlib.util.module_from_spec(spec);spec.loader.exec_module(lexer)
+ safe={'category','method_id','issued_at','persistence_completed_at','kickoff','kickoff_utc','game_id','source_timestamps_verified','captured_at','forecast_generated_at','model','code_commit','prepared_at','packaged_at','schema_version','selected_at','forecast_source','season','week','state'}
+ def fields(t,a=0):return{k:(x,y)for k,x,y in lexer.entries(t,a)}
+ def project(t,a=0):return{k:json.loads(t[x:y])for k,x,y in lexer.entries(t,a)if k in safe and t[x]not in'{['}
+ def iso(s):return datetime.datetime.fromisoformat(s.replace('Z','+00:00'))
+ pointer=owner['metadata']['current_repository_pointers'];head=owner['metadata']['branches']['production_main']['sha'];raw=f'https://raw.githubusercontent.com/NickNicky19/nicks-expert-nfl-picks/{head}/';http=[]
+ def fetch(url,expected=None,n=None):
+  at=datetime.datetime.now(datetime.timezone.utc).isoformat();req=urllib.request.Request(url,headers={'User-Agent':'NFL-V2-independent-metadata-review','Cache-Control':'no-cache'})
+  with urllib.request.urlopen(req,timeout=15)as r:body=r.read(3*1024*1024+1);status=r.status
+  assert status==200 and len(body)<=3*1024*1024
+  if expected:assert digest(body)==expected
+  if n is not None:assert len(body)==n
+  http.append({'public_url':url,'status':status,'bytes':len(body),'sha256':digest(body),'started_at_utc':at,'completed_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'raw_body_persisted':False});return body
+ op=json.loads(fetch(raw+'data/weekly-adaptive-overlay.json'));sp=json.loads(fetch(raw+'data/weekly-selected-rankings.json'));assert op==pointer['overlay']and sp==pointer['selected']
+ # Read immutable served content-addressed versions, never the mutable board.
+ of=next(r for r in owner['served_readback']if r['sha256']==op['sha256']);sf=next(r for r in owner['served_readback']if r['sha256']==sp['sha256']);cf=next(r for r in owner['served_readback']if '/current-classic/'in r['url'])
+ overlay=fetch(of['url'],op['sha256'],op['bytes']).decode();selected=fetch(sf['url'],sp['sha256'],sp['bytes']).decode();classic=gzip.decompress(fetch(cf['url'],cf['sha256'],cf['bytes'])).decode()
+ f=fields(classic);pa=f['payload'][0];p=fields(classic,pa);cm=project(classic,pa);cr=[project(classic,a)for a,b in lexer.elements(classic,p['rows'][0])];excluded=len(list(lexer.elements(classic,p['excluded_started_or_late_games'][0])))
+ claimed=owner['current_classic_capture_metadata'];assert len(cr)==claimed['rows']==2179 and len({r['game_id']for r in cr})==claimed['future_games']==13 and excluded==claimed['excluded_started_or_late_games']==1
+ assert all(iso(r.get('kickoff_utc',r.get('kickoff')))>iso(cm['captured_at'])for r in cr);assert dict(collections.Counter(r['category']for r in cr))==claimed['by_category'];assert all(r.get('source_timestamps_verified')is False for r in cr);assert cm['captured_at']==claimed['captured_at']=='2026-10-31T19:24:29Z'and cm['forecast_generated_at']==claimed['forecast_generated_at']
+ f=fields(overlay);orm=[project(overlay,a)for a,b in lexer.elements(overlay,f['rows'][0])];oc=owner['current_served_overlay_metadata'];assert len(orm)==oc['rows']==1941 and dict(collections.Counter(r['category']for r in orm))==oc['by_category']and dict(collections.Counter(r['method_id']for r in orm))==oc['by_method']
+ assert min(r['issued_at']for r in orm)==oc['issue_min']and max(r['issued_at']for r in orm)==oc['issue_max'];assert all(r['issued_at'].startswith('2026-10-28T')for r in orm);assert min(r['persistence_completed_at']for r in orm)==oc['persistence_min']and max(r['persistence_completed_at']for r in orm)==oc['persistence_max']
+ f=fields(selected);picks=[]
+ for side,a,b in lexer.entries(selected,f['picks'][0]):
+  for x,y in lexer.elements(selected,a):picks.append(dict(project(selected,x),side=side))
+ sc=owner['current_served_selected_metadata'];assert len(picks)==sc['selected_records']==24 and dict(collections.Counter(r['side']for r in picks))==sc['selected_by_side']=={'over':12,'under':12}and dict(collections.Counter(r['forecast_source']for r in picks))==sc['forecast_source_counts'];assert min(r['selected_at']for r in picks)==sc['selected_at_min']and max(r['selected_at']for r in picks)==sc['selected_at_max']
+ # Only retained public action metadata is needed: producer failure and failure-restore success are distinct.
+ collected=read(Path('/tmp/k-owner-status-collected-metadata.json'));assert collected==owner['metadata'];jobs=owner['metadata']['job_metadata'];rjobs=jobs['research_jobs'];assert any(x['name']=='audit-weekly-produce-v1'and x['conclusion']=='failure'for x in rjobs)and any(x['name']=='audit-weekly-restore-v1'and x['conclusion']=='success'for x in rjobs);assert any(x['conclusion']=='success'for x in jobs['prod_jobs']);assert owner['new_consumer_VM_runs']==owner['new_scientific_scores']==0
+ assert 'NOT_TESTED'in owner['assessment']['actual_UI_function_admission_for_new_packet']and 'NOT_PROVEN'in owner['assessment']['newer_successful_research_candidate_capture']
+ # Independently classify only file metadata from the already verified frozen private map.
+ mapping=read(args.private_root/'recovery-20261030d/REQUIRED_FILES_PRIVATE.json');family=[r for r in mapping['required_files']if r['relative_path'].startswith('qualified-defense-information-v1/')and r['restoration_binding']['kind']=='DELTA_BLOB'];counts=collections.Counter(r['relative_path'].split('/')[1]for r in family);assert len(family)==2095 and counts['models']==556 and counts['query-features']==counts['prediction-chunks']==672 and counts['future-models']==96 and counts['future-features']==counts['future-chunks']==48 and len(counts)==9
+ handpath=base/'recovery-preflight/RESTORED_D1D2_DEPENDENCY_HANDOFF.json';hand=read(handpath)
+ for ref in hand['source_bindings']:assert sha(ROOT/ref['path'])==ref['sha256']
+ source=read(ROOT/'reports/continuation-20261030c/qualified-defense-information-v1/FROZEN_PROTOCOL.json');future=read(ROOT/'reports/continuation-20261030c/qualified-defense-information-v1/WEEK8_CAPTURE_RECEIPT.json');assert hand['policies']==source['policies'];fc=hand['retained_original_future_contract'];assert fc['combined_control_D1_D2_output_views']==future['output_views']==48732 and fc['combined_issued_views']==future['issued']==48564 and fc['combined_abstained_views']==future['abstained']==168 and fc['fixed_feature_query_asof_utc']==future['fixed_future_query_asof_utc']and fc['original_persistence_completed_at_utc']==future['actual_aggregate_persistence_completed_at'];assert hand['status']=='RESTORED_NOT_ADMITTED'and hand['new_fit_calls']==hand['new_forecasts']==hand['new_model_inference']==hand['new_probability_scores']==0
+ qualpath=base/'recovery-preflight/RECOVERED_D1D2_CENSUS_QUALIFICATION_V2.json';qual=read(qualpath);assert '3'in json.dumps(qual)and 'auxiliary'in json.dumps(qual).lower()
+ pointerpath=ROOT/'registries/CURRENT_RESULTS_INDEX.json';current=read(pointerpath);bindings=[]
+ for k,ref in current.items():
+  if isinstance(ref,dict)and'path'in ref and'sha256'in ref:assert sha(ROOT/ref['path'])==ref['sha256'];bindings.append(k)
+ assert len(bindings)==27 and current['upcoming_capture_status']['sha256']==sha(ownerpath)and current['restored_defense_dependency_handoff']['sha256']==sha(handpath)
+ earlier=read(HERE/'FINAL_CURRENT_POINTER_TABLES_RECOVERY_V3_REVIEW.json');assert sha(base/'CHECKPOINT_CATEGORY_TABLES_V1.md')==earlier['category_tables_sha256']and sha(ROOT/current['manifest'])=='29a4f9a2698eccfa84dbfff8a6f278ec4c5509aa68623b5a15075405ca263b2e'and current['right_wrong_readable']['sha256']=='a591f3ddfeef0f44e839896ce1f99c6aa958f8c8b6a73fcf0b00f62bc1b5ba49'
+ marker='/'+'workspace/'+'evidence-private';paths=list(base.rglob('*.py'))+[ROOT/'tools/record_k_quota_stop.py'];assert not[p for p in paths if marker in p.read_text()]
+ out={'state':'PASS_FINAL_K_METADATA_SUPPLEMENT_CURRENT27_POINTER_OWNER_CAPTURE_AND_RESTORED_HANDOFF','at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'pointer_sha256':sha(pointerpath),'pointer_hash_bindings_verified':27,'owner_status_receipt_sha256':sha(ownerpath),'pinned_public_byte_metadata_reads':http,'classic_rows':2179,'classic_future_games':13,'classic_capture_at':'2026-10-31T19:24:29Z','classic_input_timestamps_authenticated':False,'adaptive_rows':1941,'all_adaptive_issue_and_persistence_clocks_remain_Oct28':True,'selected_rows':24,'selected_by_side':{'over':12,'under':12},'selected_forecast_sources':{'SELECTED':21,'CURRENT_BASELINE':3},'failed_research_capture_not_promoted_by_failure_restore_success':True,'new_UI_admission_tested':False,'handoff_sha256':sha(handpath),'restored_family_file_aliases':2095,'six_model_query_forecast_categories':2092,'auxiliary_run_and_aggregate_aliases':3,'census_qualification_sha256':sha(qualpath),'handoff_policies_and_original_capture_clocks_match_frozen_source':True,'category_tables_unchanged_sha256':earlier['category_tables_sha256'],'scientific_index_records':565871,'existing_science_and_rankings_unchanged':True,'global_old_recovery_gate_cleared':False,'worker_or_production_admission':False,'absolute_private_root_literals_in_current_helpers':0,'raw_bodies_persisted':False,'forecast_or_outcome_values_decoded':0,'new_scoring_or_tests_or_model_calls':0,'new_Drive_downloads':0,'wall_seconds':time.monotonic()-start,'metadata_lexer_sha256':sha(lexerpath),'checker_sha256':sha(Path(__file__))}
+ with(HERE/'FINAL_METADATA_SUPPLEMENT_REVIEW_V1.json').open('x')as f:json.dump(out,f,indent=2);f.write('\n')
+ print(json.dumps({k:out[k]for k in('state','pointer_sha256','pointer_hash_bindings_verified','classic_rows','adaptive_rows','selected_rows','wall_seconds')}))
+if __name__=='__main__':main()

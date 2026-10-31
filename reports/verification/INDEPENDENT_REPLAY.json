@@ -1,0 +1,554 @@
+{
+  "input_hashes": {
+    "forecast_gzip_sha256": "955425791a79b9f279f8a6cf94d55efa9f80825227d49e1eccf026614b5f75a7",
+    "outcome_wrapper_sha256": "3558d26c6b77433726bb8169ee52628668340b185e870630c33f54da51485f9b"
+  },
+  "checks": {
+    "forecast_rows": 24288,
+    "forecast_games": 14,
+    "forecast_players": 736,
+    "label_rows": 605,
+    "label_games": 1,
+    "supported_labels_all_positions": 59,
+    "duplicate_forecast_keys": 0,
+    "duplicate_label_keys": 0,
+    "internal_chronology_violations": 0
+  },
+  "summaries": [
+    {
+      "target": "anytime_td",
+      "model": "lab-v1.1-pooled",
+      "n": 5,
+      "primary": "0.6479429771503035605209655666297116",
+      "mae": "0.804104825374912868",
+      "mse": "0.6479429771503035605209655666297116",
+      "bias": "-0.804104825374912868"
+    },
+    {
+      "target": "anytime_td",
+      "model": "lab-v1.1-recent",
+      "n": 5,
+      "primary": "0.6479429771503035605209655666297116",
+      "mae": "0.804104825374912868",
+      "mse": "0.6479429771503035605209655666297116",
+      "bias": "-0.804104825374912868"
+    },
+    {
+      "target": "anytime_td",
+      "model": "lab-v1.1-tree",
+      "n": 5,
+      "primary": "0.7849889432945474585400416569",
+      "mae": "0.88599601765163",
+      "mse": "0.7849889432945474585400416569",
+      "bias": "-0.88599601765163"
+    },
+    {
+      "target": "pass_att",
+      "model": "lab-v1.1-pooled",
+      "n": 2,
+      "primary": "3.870894909688012",
+      "mae": "3.870894909688012",
+      "mse": "15.983827401848562577735176512144",
+      "bias": "-3.870894909688012"
+    },
+    {
+      "target": "pass_att",
+      "model": "lab-v1.1-recent",
+      "n": 2,
+      "primary": "3.870894909688012",
+      "mae": "3.870894909688012",
+      "mse": "15.983827401848562577735176512144",
+      "bias": "-3.870894909688012"
+    },
+    {
+      "target": "pass_att",
+      "model": "lab-v1.1-tree",
+      "n": 2,
+      "primary": "17.383496546672628",
+      "mae": "17.383496546672628",
+      "mse": "303.099221429289946151443409542048",
+      "bias": "-17.383496546672628"
+    },
+    {
+      "target": "pass_cmp",
+      "model": "lab-v1.1-pooled",
+      "n": 2,
+      "primary": "4.854269293924467",
+      "mae": "4.854269293924467",
+      "mse": "24.563930377937943390838301234089",
+      "bias": "-4.854269293924467"
+    },
+    {
+      "target": "pass_cmp",
+      "model": "lab-v1.1-recent",
+      "n": 2,
+      "primary": "4.854269293924467",
+      "mae": "4.854269293924467",
+      "mse": "24.563930377937943390838301234089",
+      "bias": "-4.854269293924467"
+    },
+    {
+      "target": "pass_cmp",
+      "model": "lab-v1.1-tree",
+      "n": 2,
+      "primary": "13.8107073434274015",
+      "mae": "13.8107073434274015",
+      "mse": "192.3278527186648714255584790338145",
+      "bias": "-13.8107073434274015"
+    },
+    {
+      "target": "pass_int",
+      "model": "lab-v1.1-pooled",
+      "n": 1,
+      "primary": "0.3690476190476191",
+      "mae": "0.3690476190476191",
+      "mse": "0.13619614512471659195011337868481",
+      "bias": "-0.3690476190476191"
+    },
+    {
+      "target": "pass_int",
+      "model": "lab-v1.1-recent",
+      "n": 1,
+      "primary": "0.3690476190476191",
+      "mae": "0.3690476190476191",
+      "mse": "0.13619614512471659195011337868481",
+      "bias": "-0.3690476190476191"
+    },
+    {
+      "target": "pass_int",
+      "model": "lab-v1.1-tree",
+      "n": 1,
+      "primary": "0.5569634227537125",
+      "mae": "0.5569634227537125",
+      "mse": "0.31020825428553067097643253265625",
+      "bias": "-0.5569634227537125"
+    },
+    {
+      "target": "pass_td",
+      "model": "lab-v1.1-pooled",
+      "n": 2,
+      "primary": "0.7446633825944171",
+      "mae": "0.7446633825944171",
+      "mse": "0.55452355337695922036259608877241",
+      "bias": "-0.7446633825944171"
+    },
+    {
+      "target": "pass_td",
+      "model": "lab-v1.1-recent",
+      "n": 2,
+      "primary": "0.7446633825944171",
+      "mae": "0.7446633825944171",
+      "mse": "0.55452355337695922036259608877241",
+      "bias": "-0.7446633825944171"
+    },
+    {
+      "target": "pass_td",
+      "model": "lab-v1.1-tree",
+      "n": 2,
+      "primary": "1.52824001721434538",
+      "mae": "1.52824001721434538",
+      "mse": "2.3355482008377130622164780451570548",
+      "bias": "-1.52824001721434538"
+    },
+    {
+      "target": "pass_yd",
+      "model": "lab-v1.1-pooled",
+      "n": 2,
+      "primary": "114.63156814449917",
+      "mae": "114.63156814449917",
+      "mse": "13182.6464152669568844771301306889",
+      "bias": "-114.63156814449917"
+    },
+    {
+      "target": "pass_yd",
+      "model": "lab-v1.1-recent",
+      "n": 2,
+      "primary": "114.63156814449917",
+      "mae": "114.63156814449917",
+      "mse": "13182.6464152669568844771301306889",
+      "bias": "-114.63156814449917"
+    },
+    {
+      "target": "pass_yd",
+      "model": "lab-v1.1-tree",
+      "n": 2,
+      "primary": "218.553965561768355",
+      "mae": "218.553965561768355",
+      "mse": "47793.24769194674332470688838642505",
+      "bias": "-218.553965561768355"
+    },
+    {
+      "target": "rec",
+      "model": "lab-v1.1-pooled",
+      "n": 12,
+      "primary": "1.8371475132714927833333333333333333333333333333333",
+      "mae": "1.8371475132714927833333333333333333333333333333333",
+      "mse": "5.7146150911703010647056394034013433333333333333333",
+      "bias": "-1.55909837980067255"
+    },
+    {
+      "target": "rec",
+      "model": "lab-v1.1-recent",
+      "n": 12,
+      "primary": "1.8255621422871937583333333333333333333333333333333",
+      "mae": "1.8255621422871937583333333333333333333333333333333",
+      "mse": "5.6111096968449438653972199314707508333333333333333",
+      "bias": "-1.547513008816373525"
+    },
+    {
+      "target": "rec",
+      "model": "lab-v1.1-ridge_without_opponent",
+      "n": 12,
+      "primary": "2.664998813514249875",
+      "mae": "2.664998813514249875",
+      "mse": "9.3943399488635608485202759571219858333333333333333",
+      "bias": "-2.6428922792905384916666666666666666666666666666667"
+    },
+    {
+      "target": "rec_yd",
+      "model": "lab-v1.1-pooled",
+      "n": 12,
+      "primary": "32.160548557789007416666666666666666666666666666667",
+      "mae": "32.160548557789007416666666666666666666666666666667",
+      "mse": "1909.3637854887175466103206413287189166666666666667",
+      "bias": "-27.367943578507524916666666666666666666666666666667"
+    },
+    {
+      "target": "rec_yd",
+      "model": "lab-v1.1-recent",
+      "n": 12,
+      "primary": "31.840046255089154916666666666666666666666666666667",
+      "mae": "31.840046255089154916666666666666666666666666666667",
+      "mse": "1881.8495853726380810184900139979439166666666666667",
+      "bias": "-27.047441275807672416666666666666666666666666666667"
+    },
+    {
+      "target": "rec_yd",
+      "model": "lab-v1.1-ridge_without_team",
+      "n": 12,
+      "primary": "37.883420662530846583333333333333333333333333333333",
+      "mae": "37.883420662530846583333333333333333333333333333333",
+      "mse": "2599.2028564420930934937149040314850833333333333333",
+      "bias": "-37.873785227486918583333333333333333333333333333333"
+    },
+    {
+      "target": "rush_att",
+      "model": "lab-v1.1-pooled",
+      "n": 5,
+      "primary": "5.9902756110244409",
+      "mae": "5.9902756110244409",
+      "mse": "55.10272988685769184267326988220225",
+      "bias": "0.2504593517074015"
+    },
+    {
+      "target": "rush_att",
+      "model": "lab-v1.1-recent",
+      "n": 5,
+      "primary": "5.9902756110244409",
+      "mae": "5.9902756110244409",
+      "mse": "55.10272988685769184267326988220225",
+      "bias": "0.2504593517074015"
+    },
+    {
+      "target": "rush_att",
+      "model": "lab-v1.1-tree",
+      "n": 5,
+      "primary": "4.6115742467683924",
+      "mae": "4.6115742467683924",
+      "mse": "65.650484222723340933656250432444",
+      "bias": "-3.3067179017211076"
+    },
+    {
+      "target": "rush_rec_yd",
+      "model": "lab-v1.1-pooled",
+      "n": 4,
+      "primary": "59.789070365593305",
+      "mae": "59.789070365593305",
+      "mse": "4461.2320170601553238766983579363",
+      "bias": "-48.78846367465900"
+    },
+    {
+      "target": "rush_rec_yd",
+      "model": "lab-v1.1-recent",
+      "n": 4,
+      "primary": "59.789070365593305",
+      "mae": "59.789070365593305",
+      "mse": "4461.2320170601553238766983579363",
+      "bias": "-48.78846367465900"
+    },
+    {
+      "target": "rush_rec_yd",
+      "model": "lab-v1.1-ridge_without_opponent",
+      "n": 4,
+      "primary": "72.737857466154692",
+      "mae": "72.737857466154692",
+      "mse": "7232.5329813790235503137300508562895",
+      "bias": "-72.737857466154692"
+    },
+    {
+      "target": "rush_yd",
+      "model": "lab-v1.1-pooled",
+      "n": 5,
+      "primary": "23.946177847113882",
+      "mae": "23.946177847113882",
+      "mse": "703.3316036760034640559918808609",
+      "bias": "5.91029641185647"
+    },
+    {
+      "target": "rush_yd",
+      "model": "lab-v1.1-recent",
+      "n": 5,
+      "primary": "23.946177847113882",
+      "mae": "23.946177847113882",
+      "mse": "703.3316036760034640559918808609",
+      "bias": "5.91029641185647"
+    },
+    {
+      "target": "rush_yd",
+      "model": "lab-v1.1-tree",
+      "n": 5,
+      "primary": "16.5181299477646654",
+      "mae": "16.5181299477646654",
+      "mse": "756.935872337505524398354519348929",
+      "bias": "-9.409350261176673"
+    }
+  ],
+  "paired": [
+    {
+      "target": "anytime_td",
+      "n": 5,
+      "recent_minus_pooled": "0E-34",
+      "recent_wins": 0,
+      "recent_losses": 0,
+      "ties": 5
+    },
+    {
+      "target": "pass_att",
+      "n": 2,
+      "recent_minus_pooled": "0E-15",
+      "recent_wins": 0,
+      "recent_losses": 0,
+      "ties": 2
+    },
+    {
+      "target": "pass_cmp",
+      "n": 2,
+      "recent_minus_pooled": "0E-15",
+      "recent_wins": 0,
+      "recent_losses": 0,
+      "ties": 2
+    },
+    {
+      "target": "pass_int",
+      "n": 1,
+      "recent_minus_pooled": "0E-16",
+      "recent_wins": 0,
+      "recent_losses": 0,
+      "ties": 1
+    },
+    {
+      "target": "pass_td",
+      "n": 2,
+      "recent_minus_pooled": "0E-16",
+      "recent_wins": 0,
+      "recent_losses": 0,
+      "ties": 2
+    },
+    {
+      "target": "pass_yd",
+      "n": 2,
+      "recent_minus_pooled": "0E-14",
+      "recent_wins": 0,
+      "recent_losses": 0,
+      "ties": 2
+    },
+    {
+      "target": "rec",
+      "n": 12,
+      "recent_minus_pooled": "-0.011585370984299025",
+      "recent_wins": 1,
+      "recent_losses": 0,
+      "ties": 11
+    },
+    {
+      "target": "rec_yd",
+      "n": 12,
+      "recent_minus_pooled": "-0.3205023026998525",
+      "recent_wins": 1,
+      "recent_losses": 0,
+      "ties": 11
+    },
+    {
+      "target": "rush_att",
+      "n": 5,
+      "recent_minus_pooled": "0E-16",
+      "recent_wins": 0,
+      "recent_losses": 0,
+      "ties": 5
+    },
+    {
+      "target": "rush_rec_yd",
+      "n": 4,
+      "recent_minus_pooled": "0E-14",
+      "recent_wins": 0,
+      "recent_losses": 0,
+      "ties": 4
+    },
+    {
+      "target": "rush_yd",
+      "n": 5,
+      "recent_minus_pooled": "0E-14",
+      "recent_wins": 0,
+      "recent_losses": 0,
+      "ties": 5
+    }
+  ],
+  "other_method_pairs": [
+    {
+      "target": "anytime_td",
+      "model": "lab-v1.1-tree",
+      "n": 5,
+      "model_minus_recent": "0.1370459661442438980190760902702884",
+      "wins": 0,
+      "losses": 5,
+      "ties": 0
+    },
+    {
+      "target": "pass_att",
+      "model": "lab-v1.1-tree",
+      "n": 2,
+      "model_minus_recent": "13.512601636984616",
+      "wins": 0,
+      "losses": 2,
+      "ties": 0
+    },
+    {
+      "target": "pass_cmp",
+      "model": "lab-v1.1-tree",
+      "n": 2,
+      "model_minus_recent": "8.9564380495029345",
+      "wins": 0,
+      "losses": 2,
+      "ties": 0
+    },
+    {
+      "target": "pass_int",
+      "model": "lab-v1.1-tree",
+      "n": 1,
+      "model_minus_recent": "0.1879158037060934",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0
+    },
+    {
+      "target": "pass_td",
+      "model": "lab-v1.1-tree",
+      "n": 2,
+      "model_minus_recent": "0.78357663461992828",
+      "wins": 0,
+      "losses": 2,
+      "ties": 0
+    },
+    {
+      "target": "pass_yd",
+      "model": "lab-v1.1-tree",
+      "n": 2,
+      "model_minus_recent": "103.922397417269185",
+      "wins": 0,
+      "losses": 2,
+      "ties": 0
+    },
+    {
+      "target": "rec",
+      "model": "lab-v1.1-ridge_without_opponent",
+      "n": 12,
+      "model_minus_recent": "0.83943667122705611666666666666666666666666666666667",
+      "wins": 2,
+      "losses": 10,
+      "ties": 0
+    },
+    {
+      "target": "rec_yd",
+      "model": "lab-v1.1-ridge_without_team",
+      "n": 12,
+      "model_minus_recent": "6.0433744074416916666666666666666666666666666666667",
+      "wins": 2,
+      "losses": 10,
+      "ties": 0
+    },
+    {
+      "target": "rush_att",
+      "model": "lab-v1.1-tree",
+      "n": 5,
+      "model_minus_recent": "-1.3787013642560485",
+      "wins": 3,
+      "losses": 2,
+      "ties": 0
+    },
+    {
+      "target": "rush_rec_yd",
+      "model": "lab-v1.1-ridge_without_opponent",
+      "n": 4,
+      "model_minus_recent": "12.948787100561387",
+      "wins": 1,
+      "losses": 3,
+      "ties": 0
+    },
+    {
+      "target": "rush_yd",
+      "model": "lab-v1.1-tree",
+      "n": 5,
+      "model_minus_recent": "-7.4280478993492166",
+      "wins": 4,
+      "losses": 1,
+      "ties": 0
+    }
+  ],
+  "worked_redacted_examples": [
+    {
+      "opaque_id": "c71fdc7c43f00468",
+      "target": "rec",
+      "kind": "recent_win",
+      "recent_loss": "4.3975607088164517",
+      "pooled_loss": "4.53658516062804",
+      "difference": "-0.1390244518115883"
+    },
+    {
+      "opaque_id": "8eb8e46f1358a971",
+      "target": "rec",
+      "model": "lab-v1.1-ridge_without_opponent",
+      "kind": "challenger_loss",
+      "challenger_loss": "1.8673607946577317",
+      "recent_loss": "0.3317051991750786",
+      "difference": "1.5356555954826531"
+    },
+    {
+      "opaque_id": "dc43e26628f09f11",
+      "target": "rec",
+      "model": "lab-v1.1-ridge_without_opponent",
+      "kind": "challenger_win",
+      "challenger_loss": "4.388143292820415",
+      "recent_loss": "4.3975607088164517",
+      "difference": "-0.0094174159960367"
+    }
+  ],
+  "settlement_math": {
+    "coherent_law": [
+      {
+        "line": "0.5",
+        "over": "0.5",
+        "under": "0.5",
+        "push": "0"
+      },
+      {
+        "line": "1",
+        "over": "0.2",
+        "under": "0.5",
+        "push": "0.3"
+      }
+    ],
+    "mirrored_binary_brier": "PASS",
+    "refund_on_push_example_ev": "0.1",
+    "decisive_mass": "0.7"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "state": "PASS_INDEPENDENT_REPRESENTATIVE_LEAF_HISTOGRAM_AND_LAW_REPRODUCTION",
+  "at": "2026-10-31T04:01:23.221400+00:00",
+  "protocol_sha256": "041d158baf965567b2633419472201f6149078d371d9bece4d453e084f42fba2",
+  "models_in_producer_manifest": 80,
+  "models_independently_loaded": 8,
+  "law_offer_cases_independently_rebuilt": 8,
+  "saved_mean_median_summary_witnesses": 16,
+  "count_support_cases": 4,
+  "signed_negative_infinite_prior_tail_cases": 4,
+  "proof": [
+    {
+      "panel": "W5",
+      "target": "pass_att",
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "history_regime": "H-MULTI",
+      "model_sha256": "240fc22a3173fdcd298f7c14d5efd56061b8ea2805c6fd6f697c630c4c58e2ca",
+      "fit_sha256": "3fad527059f8733e32ef34acb0cf133cdd48dcf5e9c3ef90139b2cb08bdbc64c",
+      "support_size": 62,
+      "trees": 32,
+      "law_payload_and_saved_summaries_match": true
+    },
+    {
+      "panel": "W5",
+      "target": "pass_att",
+      "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1",
+      "history_regime": "H-MULTI",
+      "model_sha256": "d12d932b054720d8d51241495e9ece6929a4ec0492a1352452cb9216e499f16a",
+      "fit_sha256": "bfc7f45881dbf09552a9ba52a6a6eed8735042c6dbc6221c7bb578ac6abe1acc",
+      "support_size": 62,
+      "trees": 32,
+      "law_payload_and_saved_summaries_match": true
+    },
+    {
+      "panel": "W5",
+      "target": "pass_int",
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "history_regime": "H-MULTI",
+      "model_sha256": "9f599dbc4785b295358e864d4eeddfb607f775f5ab7eccf5465e549a5fe003fd",
+      "fit_sha256": "f1c55211f386caaba98b9dddac69ff359d921259415f40a5f3674102476e1eca",
+      "support_size": 6,
+      "trees": 32,
+      "law_payload_and_saved_summaries_match": true
+    },
+    {
+      "panel": "W5",
+      "target": "pass_int",
+      "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1",
+      "history_regime": "H-MULTI",
+      "model_sha256": "70aa8c6368618bc1bc9b39112ff52dc3a2832fa1ff499052c06f0fba3cccdc3d",
+      "fit_sha256": "e48f5456966d30b578650a4f0aa34407596d3b283716efa131cff25206a3ef69",
+      "support_size": 6,
+      "trees": 32,
+      "law_payload_and_saved_summaries_match": true
+    },
+    {
+      "panel": "W5",
+      "target": "rush_yd",
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "history_regime": "H-MULTI",
+      "model_sha256": "09611c00e4da802248bc9fa8ea9eda2c33004fafe6e97e7d1c416d8025e15327",
+      "fit_sha256": "ce69fb32afdee5e30915d26d6ebdda84ff395724c140c50668cd1a053768c6f8",
+      "support_size": 201,
+      "trees": 32,
+      "law_payload_and_saved_summaries_match": true
+    },
+    {
+      "panel": "W5",
+      "target": "rush_yd",
+      "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1",
+      "history_regime": "H-MULTI",
+      "model_sha256": "8f7253efda2cf49ea3ac076f7d57a9fb841930d8cb5b9a70fc2c4dfb2288b710",
+      "fit_sha256": "2a3e8640935539606b0f66c0cb7ded6948e8cdd2e4521272f5ba1f104dca4d3b",
+      "support_size": 201,
+      "trees": 32,
+      "law_payload_and_saved_summaries_match": true
+    },
+    {
+      "panel": "W5",
+      "target": "rec_yd",
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "history_regime": "H-MULTI",
+      "model_sha256": "df2846076a9d3440efc0a55a5227a81136c02fad335108fbc9c246870c5d3120",
+      "fit_sha256": "e2bb520f0d70203704f8a78afb6ac4dbca29a73833b826d9fb6a0af3ebba11ff",
+      "support_size": 215,
+      "trees": 32,
+      "law_payload_and_saved_summaries_match": true
+    },
+    {
+      "panel": "W5",
+      "target": "rec_yd",
+      "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1",
+      "history_regime": "H-MULTI",
+      "model_sha256": "004371841c8bd832e7dc4cdfeab28565af99330edbc23449db9e08e4e28a1edc",
+      "fit_sha256": "2a7e555bfdc434c7a594ad9722fb9938bb3e506e94c61c9ffe50acae31a03a3d",
+      "support_size": 215,
+      "trees": 32,
+      "law_payload_and_saved_summaries_match": true
+    }
+  ],
+  "estimator_or_transform_calls": 0,
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0,
+  "new_scores": 0,
+  "new_NFL_observations": 0,
+  "scope": "Representative8lawcases from8of80restoredW5models: base/C02, count/signedtargets. Independenthistogram masses,originalmoments/quantiles andwholelinepush/complements. No estimator/transform execution or newfit."
+}

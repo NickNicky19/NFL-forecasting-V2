@@ -1,0 +1,96 @@
+{
+  "findings": [
+    {
+      "additional_line": 214,
+      "evidence": "The exact original producer rounds projection and adjusted projection to two decimals before JSON retention. Strict internal unrounded P1 cannot be recovered; saved-point-direction control uses retained precision without another V2 round.",
+      "evidence_label": "VERIFIED_FROM_CODE",
+      "finding_id": "PRECISION-01",
+      "line": 201,
+      "next_owner_action": "No repair to original bytes; preserve the honest control identity.",
+      "path": "pull/build.py",
+      "ref": "c8120e3cb26a908b8d5a99329b0f28ae49473ea1",
+      "source_url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/blob/c8120e3cb26a908b8d5a99329b0f28ae49473ea1/pull/build.py#L201",
+      "status": "QUALIFIED_LIMITATION",
+      "title": "Saved points are already rounded"
+    },
+    {
+      "additional_line": 167,
+      "evidence": "DraftKings-via-ESPN retains open/current target lines only; Sleeper retains one line and payout multipliers without a full side-specific offer/settlement contract. Actual prop probabilities, cash prices, quote clocks and venue rules remain unqualified.",
+      "evidence_label": "VERIFIED_FROM_CODE",
+      "finding_id": "PRICE-01",
+      "line": 48,
+      "next_owner_action": "Retain statistical threshold results; EV/ROI/de-vigging/book settlement require a qualified producer export.",
+      "path": "pull/books.py",
+      "ref": "1ec93e068a91abd51c990937d1019e4a831694b4",
+      "source_url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/blob/1ec93e068a91abd51c990937d1019e4a831694b4/pull/books.py#L48",
+      "status": "BLOCKED_PRICE_AND_SETTLEMENT",
+      "title": "Thresholds are not authenticated priced offers"
+    },
+    {
+      "additional_line": 383,
+      "evidence": "For started entries missing line_from, assemble calls apply_book with closing lines; apply_book can recalculate lean. A postgame mutable archive is therefore insufficient to authenticate the original selection.",
+      "evidence_label": "VERIFIED_FROM_CODE",
+      "finding_id": "ARCHIVE-01",
+      "line": 380,
+      "next_owner_action": "Use separately retained pregame bytes plus server-bound retention evidence; do not reinterpret a repaired archive as original issuance.",
+      "path": "pull/build.py",
+      "ref": "1ec93e068a91abd51c990937d1019e4a831694b4",
+      "source_url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/blob/1ec93e068a91abd51c990937d1019e4a831694b4/pull/build.py#L380",
+      "status": "PROVENANCE_RISK_CODE_TRACEABLE",
+      "title": "Legacy mutable archives can retrofit closing lines"
+    },
+    {
+      "additional_line": 185,
+      "evidence": "grade._prop_result calls stat_value after played proof, while stat_value maps omitted components to zero. A complete compact-source omission contract is needed before those labels can be independently accepted.",
+      "evidence_label": "VERIFIED_FROM_CODE",
+      "finding_id": "ZERO-01",
+      "line": 179,
+      "next_owner_action": "Owner should verify the compact source completeness contract; V2 graded only separately qualified explicit labels and retained unknown participation.",
+      "path": "pull/grade.py",
+      "ref": "1ec93e068a91abd51c990937d1019e4a831694b4",
+      "source_url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/blob/1ec93e068a91abd51c990937d1019e4a831694b4/pull/grade.py#L179",
+      "status": "SOURCE_CONTRACT_GAP_NOT_CONFIRMED_LIVE_BUG",
+      "title": "Participation does not establish every omitted target as zero"
+    },
+    {
+      "additional_line": 20,
+      "evidence": "Website PPR uses fumbles_lost weight -2 and additional special-team/recovery/blocked-kick points. Nick chart uses its separately declared scoring contract. Existing website fpts is not a substitute chart label.",
+      "evidence_label": "VERIFIED_FROM_CODE",
+      "finding_id": "TARGET-01",
+      "line": 8,
+      "next_owner_action": "Keep target IDs and scorecards separate; no claim of predictive improvement from changing scoring.",
+      "path": "pull/scoring.py",
+      "ref": "1ec93e068a91abd51c990937d1019e4a831694b4",
+      "source_url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/blob/1ec93e068a91abd51c990937d1019e4a831694b4/pull/scoring.py#L8",
+      "status": "SEPARATE_TARGET_CONTRACT",
+      "title": "Website fantasy points differ from Nick chart"
+    },
+    {
+      "additional_line": 10,
+      "evidence": "compare_lines compares a current-season-average/matchup reconstruction with fetched closing lines and warns historical provider projections can be revised. It does not restore an original archived provider forecast or its selected side.",
+      "evidence_label": "VERIFIED_FROM_CODE",
+      "finding_id": "RECON-01",
+      "line": 1,
+      "next_owner_action": "Retain as a different procedure; do not run new collection or reuse as original pick history.",
+      "path": "tools/compare_lines.py",
+      "ref": "1ec93e068a91abd51c990937d1019e4a831694b4",
+      "source_url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/blob/1ec93e068a91abd51c990937d1019e4a831694b4/tools/compare_lines.py#L1",
+      "status": "SEPARATE_RECONSTRUCTION",
+      "title": "Retrospective comparison code is not original issued selection"
+    },
+    {
+      "additional_line": 59,
+      "evidence": "The active forecast-only ranking body has 12 Over and 12 Under entries, with model/source identities and clocks. Documentation explicitly keeps R0 Record history separate; current repository source is not proof of served values or settled results.",
+      "evidence_label": "VERIFIED_FROM_CODE",
+      "finding_id": "STREAM-01",
+      "line": 20,
+      "next_owner_action": "Keep original R0 grades and newer selected stream distinct; later served-value verification belongs to the production owner.",
+      "path": "docs/WEEKLY_SELECTED_RANKINGS.md",
+      "ref": "1ec93e068a91abd51c990937d1019e4a831694b4",
+      "source_url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/blob/1ec93e068a91abd51c990937d1019e4a831694b4/docs/WEEKLY_SELECTED_RANKINGS.md#L20",
+      "status": "CURRENT_SOURCE_GRAPH_ONLY",
+      "title": "New selected-ranking stream is separate from R0 history"
+    }
+  ],
+  "scope": "Code-traceable contract/provenance findings; not a certificate of current live behavior."
+}

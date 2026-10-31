@@ -1,0 +1,30 @@
+{
+  "command": "python -m unittest tests.test_hgb_shadow_grading -v",
+  "completed_at_utc": "2026-10-29T23:48:39.523519+00:00",
+  "empty_label_compatibility": {
+    "abstention_rows": 30,
+    "aggregate_views": 63,
+    "forecast_rows": 10416,
+    "retained_models_hashed_without_unpickling": 63,
+    "scored_rows": 0,
+    "unique_games": 14,
+    "unique_queries": 1951,
+    "whole_week_complete": false
+  },
+  "errors": 0,
+  "failures": 0,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "nfl_scored_outcomes": 0,
+  "real_week8_labels_read": 0,
+  "schema": "v2-hgb-shadow-grader-software-checks-v1",
+  "scope": "Invented fixture tests; actual original HGB capture only empty-label byte/model-binding compatibility check; no NFL forecast score",
+  "source_sha256": {
+    "docs/HGB_WEEK8_SHADOW_GRADING.md": "785a711c98e78e0af3e18b01e121618a16f5563e49b94e53a1787b26e7d13858",
+    "nfl_v2/hgb_shadow_grading.py": "e77f85f871e2177e29b66dcb8bead5b3503f5f96f8d8c90638438535f9214f75",
+    "tests/test_hgb_shadow_grading.py": "b978f63aa0f4679a9e241f4566fa1dd028afbbebf46e4a97ed1318bafb3425fb",
+    "tools/grade_hgb_week8_shadow.py": "c2269dcbc2b1caa635704b630925142ede79538b2b5bed680d66f032fa6f48c1"
+  },
+  "status": "PASS",
+  "tests_run": 9
+}

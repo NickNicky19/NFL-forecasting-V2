@@ -1,0 +1,55 @@
+{
+  "status": "PASS_FROZEN_COHORT_HASHES_AND_ONE_TO_ONE_NAMESPACE_BRIDGE",
+  "freeze_sha256": "acf5da4daab0799f48f714736931aca45e435aa9a239a8814eda5f76e635b729",
+  "future_query_sha256": "b11b7ace31627f0a6ff5ce9c37808dc9bfd80737ed55465f75c3b15c18d002f5",
+  "query_cells": 2229,
+  "games": 13,
+  "cohort_rows": {
+    "pregame-cohort-scorecards-v2": 1795,
+    "chart-cohort-scorecards-v1": 434
+  },
+  "all_members_join_exactly_once": true,
+  "cohort_metadata_checks": 4458,
+  "blocked_queries_unranked": 5,
+  "blocked_queries_with_preserved_historical_rank": 3,
+  "abstention_rule": "A historical rank never admits a blocked forecast, supplies a zero prediction or creates a scored error; retain abstentions in cohort coverage.",
+  "required_population_namespace_bridge": {
+    "frozen_original_feed": "frozen_exante_feed",
+    "frozen_feed_player_union": "frozen_exante_chart_union"
+  },
+  "join_contract": "Map only the declared population namespace, then exact game_id/player_id/target. All underlying identifiers are already frozen; do not fuzzy-match, use actual performance, or recompute rankings.",
+  "captures": [
+    {
+      "stage": "AB",
+      "packet_sha256": "c5645664a28837f868eacc788ef070e32ab9824bf4985a95051432457a8e1add",
+      "receipt_sha256": "3e64ee92fbaff850d878c97d61ca0d33c810bb2aef47f4c119c36987d50bf28b",
+      "independent_issuance_review_sha256": "2daa087fc4e660cdb137ae9e9b25bb853849979781ff891fd5c36508d3ef2a06",
+      "persistence_utc": "2026-10-30T02:21:47.601680+00:00",
+      "all_rows_pre_T90_checked_by_linked_review": true,
+      "actuals": "ALL_NULL_PENDING"
+    },
+    {
+      "stage": "C",
+      "packet_sha256": "15c4e7e4ae45bdb5d91bebb4c856882a3dcdc354362d662f3819e37eeacea664",
+      "receipt_sha256": "26123278c4b3e5802b563b41d4871e6da06199509dff8d01312fc926a5aada68",
+      "independent_issuance_review_sha256": "5cc60b8c2e720ee00838baa6ece2b38022bc9978c4c876f364c0f7bd47b09a3d",
+      "persistence_utc": "2026-10-30T02:24:45.803452+00:00",
+      "all_rows_pre_T90_checked_by_linked_review": true,
+      "actuals": "ALL_NULL_PENDING"
+    },
+    {
+      "stage": "PAIRED_C02",
+      "packet_sha256": "8c86b837d061dc6964907e7c900289dc452f7afb92aece7a2f4f2e48d1f5d886",
+      "receipt_sha256": "4049e5223b49293fc5b7c82daad3be935cc82ef6b72cbddf346aed36a127ce58",
+      "independent_issuance_review_sha256": "5e076e706c2ebe1a0ede034738a2eddac475ee1625508909fc4f6f6d51a82627",
+      "persistence_utc": "2026-10-30T02:37:27.845512+00:00",
+      "all_rows_pre_T90_checked_by_linked_review": true,
+      "actuals": "ALL_NULL_PENDING"
+    }
+  ],
+  "selection": "NONE; all frozen rows retained. Historical-memory cohorts are shared diagnostics, not a pure-current selected forecasting system.",
+  "readiness": "High-level grading/cohort contract frozen. A schema-specific grader must apply the explicit namespace mapping plus final label/source/appearance admission before grading; no qualified Week8 labels or grades exist here.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "week8_outcomes_read": 0
+}

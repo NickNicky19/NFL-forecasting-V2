@@ -1,0 +1,30 @@
+{
+  "protocol_id": "v2-availability-future-grading-subgroups-v1",
+  "registered_at_utc": "2026-10-30T02:26:25.291127+00:00",
+  "week8_outcomes_read": 0,
+  "selection_rule": "NONE; no forecast method/side/category is selected prospectively; all registeredABCrows graded",
+  "snapshot_partition": "Early14game and prior13game captures, newABCpartial13game remain distinct versions. No replacements. No firstgamecurrentlabels inspected.",
+  "cohort_membership": "Reuse prior frozen per-query future membership across A/B/C. Rank/top10/15/20/disjointbands/roleworkload membership is common for competitors, never recomputed from actuals or candidate rankings. Chart history groups are signed score-history, not workload.",
+  "membership_artifacts": [
+    {
+      "public_safe_artifact_id": "PRIOR_FROZEN_PREGAME_COHORT_SCORECARDS_V2_FUTURE_MEMBERSHIP",
+      "bytes": 22210,
+      "sha256": "ef124731886aa61a25e72daf769aef2bc40c540d27c39c2fefdbc120965c5e5d"
+    },
+    {
+      "public_safe_artifact_id": "PRIOR_FROZEN_CHART_COHORT_SCORECARDS_V1_FUTURE_MEMBERSHIP",
+      "bytes": 6789,
+      "sha256": "6acff8532d4d230a8643f58eb0ba7c145a8b375a4608a1710fa283de52386c7f"
+    }
+  ],
+  "primary_numeric": "MAE all compatible point functionals; mean MSE/RMSE separately",
+  "proper_distribution": "Only authenticated declared laws: original discrete PMFNLL/CRPS and90%intervalcoverage/width; retain impossible events/infinite scores",
+  "anytime_td": "Brierprimary,logloss,prevalence/reliability; no threshold classification invented",
+  "chart_precision": "Exact0.02 integer-grid rules for genuine medians via nfl_v2/precision_grid.py; mean points never rounded",
+  "comparisons": "PairedB-A andC-B identical supportedplayer/game/target/product; retain all issued/abstained/DNP/playedzero/playedmissing/pending/canceled/unknown; fullsystem and common learned-only separately",
+  "uncertainty": "Week/blockpairedloss with >=8clusters else insufficient_week_clusters; gameclustersensitivity explicit; no simulated independentNFLrows",
+  "offers": "No authenticated offer or price packet; actual-offer/ROI/EVselection ranking remainsUNESTABLISHED",
+  "final_label_admission": "Futurecompletefinalsource with publication/revision/finality/physicalappearance and exactIDs; rarechartpositiveattributionstillrequired; no missingzero.",
+  "owner_official_capture": "REQUESTED_NOT_ACKNOWLEDGED",
+  "production_changed": false
+}

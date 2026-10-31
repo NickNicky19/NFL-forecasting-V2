@@ -1,0 +1,117 @@
+"""Separately written retained-row verification; no fits, inference or canonical writes."""
+import argparse,collections,gc,gzip,hashlib,json,math,sys
+from decimal import Decimal
+from pathlib import Path
+import numpy as np
+ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent;PUB=HERE.parent/'point-offer/v1'
+sys.path.insert(0,str(ROOT))
+from nfl_v2.shared_subgroups import packet_rows  # transport only, no scoring/model helper
+def read(p):return json.loads(p.read_bytes())
+def gz(p):return json.loads(gzip.decompress(p.read_bytes()))
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def canon(v):return json.dumps(v,sort_keys=True,separators=(',',':'),allow_nan=False).encode()
+def close(a,b):
+    if a is None or b is None:assert a is b,(a,b)
+    else:assert math.isclose(a,b,abs_tol=1e-10,rel_tol=1e-11),(a,b)
+def quantile(v,p):
+    a=sorted(v);x=(len(a)-1)*p;i=int(x);j=min(i+1,len(a)-1);return a[i]+(a[j]-a[i])*(x-i)
+def stat(v):
+    return dict(n=len(v),mean=math.fsum(v)/len(v),minimum=min(v),maximum=max(v),**{f'p{int(q*100)}':quantile(v,q)for q in [.05,.1,.25,.5,.75,.9,.95]})if v else dict(n=0,mean=None,null_reason='NO_SUPPORTED_VALUES')
+def main():
+    ap=argparse.ArgumentParser();ap.add_argument('--private-root',type=Path,required=True);ap.add_argument('--receipt',type=Path,default=HERE/'POINT_OFFER_INDEPENDENT_REVIEW_V1.json');a=ap.parse_args();p=read(PUB/'FROZEN_PROTOCOL.json');run=read(PUB/'RUN_RECEIPT.json');assert sha(PUB/'FROZEN_PROTOCOL.json')==run['protocol_sha256']and sha(PUB/'SCORES.json')==run['score_sha256']and sha(PUB/'SOURCE_SNAPSHOT.py')==p['code_sha256']
+    for b in p['source_bindings']:
+        f=(ROOT if b['source_id'].startswith('reports/')else a.private_root)/b['source_id']/b['member'];assert sha(f)==b['sha256']
+    fp=a.private_root/'point-prop-diagnostic-20261031i-point-offer-v1/POINT_DIAGNOSTIC_ROWS.json.gz';assert sha(fp)==run['private_sha256'];private=gz(fp);data=collections.defaultdict(dict);broad=collections.defaultdict(dict)
+    for r in private['rows']:
+        key=tuple(r['recipe']);idx=(r['week'],r['source_row_index']);dest=broad if r.get('population_diagnostic')else data;assert idx not in dest[key];dest[key][idx]=r
+    verified=0;games=set()
+    for w in [5,6,7]:
+        sid='baselines-coverage-20261031h-w5-method-comparison-v1'if w==5 else f'completion-20261031g-w{w}-rolling-method-comparison-v1';g=gz(a.private_root/sid/'GRADED_METHOD_ROWS.json.gz')['graded'];plans=gz(a.private_root/sid/'FROZEN_SELECTIONS_AND_K.json.gz');
+        for spec in (r for r in p['roster']if r['week']==w):
+            key=(spec['target'],*spec['recipe']);tag=spec['method_id'];focal=(key[0],*p['focals'][key[0]]);ftag=next(x['method_id']for x in p['roster']if x['week']==w and(x['target'],*x['recipe'])==focal)
+            if spec['kind']=='V2_POINT':assert plans['plans'][tag]['recipe']==list(key)
+            else:assert next(z['control_id']for z in plans['baseline_links']if z['method_id']==ftag and z['control']==key[1])==tag
+            for r in g[tag]:
+                s=data[key][w,r['source_row_index']];point=r.get('ranking_point');available=bool(r['admitted']and point is not None and math.isfinite(float(point)))
+                for field in ['game_id','player_id','target','position','actual','selected_side','statistical_state','participation','kickoff']:assert s[field]==r[field]
+                close(s['point'],point);close(s['line'],float(r['line']));assert s['admitted']==available and s['decision_time']==r['source_server_clock'];assert s['fallback']==(r.get('fallback')if spec['kind']=='V2_POINT'else None)
+                if available:
+                    point=Decimal(str(point));line=Decimal(str(r['line']));direction='over'if point>line else'under'if point<line else None;assert direction==s['selected_side']
+                    if s['actual']is not None and s['participation']=='VERIFIED_PLAYED_POSITIVE_PHYSICAL'and direction:
+                        gap=Decimal(str(s['actual']))-line;state='PUSH'if gap==0 else'WIN'if (gap>0)==(direction=='over')else'LOSS';assert s['statistical_state']==state
+                if s['game_id']:games.add(s['game_id'])
+                verified+=1
+        del g,plans;gc.collect()
+    assert verified==3024
+    for m in p['preoutcome_admission_masks']:
+        key=(m['target'],*m['recipe']);fk=(m['target'],*p['focals'][m['target']]);own={i for(w,i),r in data[key].items()if w==m['week']and r['admitted']};f={i for(w,i),r in data[fk].items()if w==m['week']and r['admitted']};learn={i for(w,i),r in data[key].items()if w==m['week']and r['admitted']and r['fallback']=='none'};fl={i for(w,i),r in data[fk].items()if w==m['week']and r['admitted']and r['fallback']=='none'}
+        assert own<=set(m['own_ids'])if m.get('point_nonmissing_requires_saved_grade_projection')else own==set(m['own_ids']);assert own&f==set(m['focal_common_ids'])
+        if m['common_learned_ids']is not None:assert learn&fl==set(m['common_learned_ids'])
+    # Independently select the focal raw-source records; do not use executor normalization.
+    original=collections.defaultdict(dict)
+    for b in p['broad_sources']:
+        path=a.private_root/b['member'];assert sha(path)==b['sha256']
+        for r in packet_rows(path):
+            if int(r['week'])not in (5,6,7)or r['game_id']not in games or r['population']!='primary':continue
+            if b['source_id']=='hgb':ok=r['target']=='pass_yd'and r['history_regime']=='H-MULTI'and r['objective']=='absolute_error_point'
+            else:ok=r['target']=='pass_cmp'and r['history_regime']=='H-MULTI'and r['procedure_id']=='v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory'and r['product_id']=='lower_median'
+            if not ok:continue
+            key=(r['target'],*p['focals'][r['target']]);idx=(r['game_id'],r['player_id'],r['target']);assert idx not in original[key];original[key][idx]=r
+    for key,rows in broad.items():
+        assert len(rows)==len(original[key])
+        for r in rows.values():
+            s=original[key][r['game_id'],r['player_id'],r['target']];close(r['point'],s['prediction']);close(r['actual'],s['actual']);assert r['position']==s['position']and r['fallback']==s['fallback']
+    pools={}
+    def pool(key,rr,offer):
+        rr=[r for r in rr if r['admitted']];mh=hashlib.sha256(canon([(r['week'],r['source_row_index'])for r in sorted(rr,key=lambda r:(r['week'],r['source_row_index']))])).hexdigest();pools[key,mh,offer]=rr
+    for key,dd in data.items():
+        fk=(key[0],*p['focals'][key[0]]);aa=data[fk];common=sorted(q for q in dd if dd[q]['admitted']and aa[q]['admitted']);learn=[q for q in common if dd[q]['fallback']=='none'and aa[q]['fallback']=='none'];pool(key,dd.values(),True)
+        for q in common:assert all(dd[q][field]==aa[q][field]for field in ['game_id','player_id','target','line','actual','decision_time'])
+        for qq in [common,learn]if key[2]!='ARCHIVED'else[common]:pool(key,[dd[q]for q in qq],True);pool(fk,[aa[q]for q in qq],True)
+    for key,dd in broad.items():
+        lookup={(r['game_id'],r['player_id'],r['target']):r for r in data[key].values()};pool(key,dd.values(),False);pool(key,[r for r in dd.values()if(r['game_id'],r['player_id'],r['target'])in lookup],False);pool(key,[r for r in dd.values()if lookup.get((r['game_id'],r['player_id'],r['target']),{}).get('admitted')],False)
+        for r in dd.values():
+            s=lookup.get((r['game_id'],r['player_id'],r['target']))
+            if s and s['admitted']:close(r['point'],s['point']);close(r['actual'],s['actual'])
+    scores=read(PUB/'SCORES.json');point=0;sides=0;trip=collections.defaultdict(dict);ci_checks=0
+    for s in scores:
+        key=tuple(s[k]for k in ('target','procedure_id','history_regime','product_id'));offer=s['horizon_id']=='RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME';rr=pools[key,s['membership_sha256'],offer];supported=[r for r in rr if r['actual']is not None and r['participation']=='VERIFIED_PLAYED_POSITIVE_PHYSICAL']
+        if s['record_kind']=='forecast_evaluation_view':
+            point+=1;n=len(supported);err=[r['point']-r['actual']for r in supported];ab=[abs(e)for e in err];assert s['n']==n and s['forecast_rows']==len(rr);close(s['mae'],math.fsum(ab)/n if n else None);close(s['bias'],math.fsum(err)/n if n else None);close(s['mse'],math.fsum(e*e for e in err)/n if n else None);close(s['rmse'],math.sqrt(s['mse'])if n else None)
+            for field,q in [('p90_abs',.9),('p95_abs',.95)]:close(s[field],quantile(ab,q)if n else None)
+            close(s['max_abs'],max(ab)if n else None);assert s['fallback_rows']==(None if key[2]=='ARCHIVED'else sum(r['fallback']!='none'for r in rr));assert s['unavailable_forecasts']==s['outer_opportunities']-len(rr)and s['missing_actuals']==len(rr)-n
+            for name,v in s['precision_counts'].items():
+                parts=name.split('_');num=sum(e==0 for e in ab)if name=='exact_rate'else sum(e<=int(parts[-1])if parts[1]=='le'else e<int(parts[-1])for e in ab);assert v['numerator']==num and v['denominator']==n;close(v['rate'],num/n if n else None)
+            if offer:
+                for field,vals in [('forecast_minus_line',[r['point']-r['line']for r in rr]),('actual_minus_line',[r['actual']-r['line']for r in supported])]:
+                    expected=stat(vals);assert set(s[field])==set(expected)
+                    for k,v in expected.items():close(s[field][k],v)if isinstance(v,(int,float))or v is None else s[field][k]==v
+                close(s['actual_over_frequency'],sum(r['actual']>r['line']for r in supported)/n if n else None);assert s['point_above_line']==sum(r['point']>r['line']for r in rr)and s['point_below_line']==sum(r['point']<r['line']for r in rr)
+                if n==len(rr):close(s['bias'],s['forecast_minus_line']['mean']-s['actual_minus_line']['mean'])
+        else:
+            sides+=1;rr=[r for r in rr if r['selected_side']and(s['side']=='Combined'or r['selected_side']==s['side'])];ct=collections.Counter(r['statistical_state']for r in rr);m=s['selection_metrics'];n=ct['WIN']+ct['LOSS'];assert s['forecast_rows']==len(rr)and s['n']==n;assert all(m['status_counts'][st]==ct[st]for st in m['status_counts']);close(m['hit_rate'],ct['WIN']/n if n else None);close(m['selection_coverage'],len(rr)/m['selection_pool_count']if m['selection_pool_count']else None);assert m['returns']['net']is None and s['brier']is None
+            per=collections.defaultdict(lambda:[0,0])
+            for r in rr:
+                if r['statistical_state']in ('WIN','LOSS'):per[r['game_id']][0]+=r['statistical_state']=='WIN';per[r['game_id']][1]+=1
+            u=m['game_uncertainty'];assert u['game_clusters']==len(per)and u['week_interval']is None
+            if len(per)>=8:
+                arr=np.array([per[g]for g in sorted(per)],float);draw=np.random.Generator(np.random.PCG64(1703)).integers(len(per),size=(500,len(per)));v=arr[draw].sum(axis=1);ci=np.quantile(v[:,0]/v[:,1],[.025,.975]);close(u['game_interval'][0],ci[0]);close(u['game_interval'][1],ci[1]);ci_checks+=1
+            trip[key,s['membership_sha256']][s['side']]=(len(rr),n,ct)
+    for t in trip.values():
+        assert set(t)=={'over','under','Combined'}
+        for i in [0,1]:assert t['Combined'][i]==t['over'][i]+t['under'][i]
+        assert t['Combined'][2]==t['over'][2]+t['under'][2]
+    pairs=read(PUB/'PAIRED_MAE_COMPARISONS.json')
+    for s in pairs:
+        key=(s['target'],*s['candidate_recipe']);fk=(s['target'],*s['comparator_recipe']);aa=data[key];bb=data[fk];qq=sorted(q for q in aa if aa[q]['admitted']and bb[q]['admitted']and(s['context']!='FOCAL_COMMON_LEARNED_ONLY'or aa[q]['fallback']==bb[q]['fallback']=='none'));qq=[q for q in qq if aa[q]['actual']is not None and aa[q]['participation']=='VERIFIED_PLAYED_POSITIVE_PHYSICAL'];n=len(qq);assert s['n']==n
+        if not n:assert s['delta']is None;continue
+        x=[abs(aa[q]['point']-aa[q]['actual'])for q in qq];y=[abs(bb[q]['point']-bb[q]['actual'])for q in qq];delta=math.fsum(a-b for a,b in zip(x,y))/n;close(s['candidate_error'],math.fsum(x)/n);close(s['comparator_error'],math.fsum(y)/n);close(s['delta'],delta);close(s['relative_error_change'],delta/(math.fsum(y)/n)if math.fsum(y)else None);gg=collections.defaultdict(list)
+        for q,a1,b1 in zip(qq,x,y):gg[aa[q]['game_id']].append(a1-b1)
+        G=len(gg);se=math.sqrt(G/(G-1)*math.fsum((math.fsum(v)-delta*len(v))**2 for v in gg.values()))/n if G>=8 else None;close(s['game_cluster_sensitivity_se'],se);assert s['week_interval']is None
+    for ex in private['worked_examples']:
+        key=(ex['target'],*p['focals'][ex['target']]);rr=sorted((r for r in data[key].values()if r['admitted']and r['selected_side']==ex['side']and r['statistical_state']==ex['state']),key=lambda r:(r['week'],r['source_row_index']));assert ex['example']=={k:v for k,v in rr[0].items()if k!='recipe'}if rr else ex['example']is None
+    assert point==69 and sides==189 and len(trip)==63 and len(pairs)==68
+    report=dict(state='PASS_INDEPENDENT_POINT_OFFER_MATH_MASKS_ADAPTERS_AND_PRIVATE_EXAMPLES',protocol_sha256=sha(PUB/'FROZEN_PROTOCOL.json'),score_sha256=sha(PUB/'SCORES.json'),retained_recipe_offer_rows_verified=verified,raw_focal_QB_rows_verified=sum(len(v)for v in broad.values()),point_metric_views=point,side_views=sides,side_triplets=len(trip),paired_MAE_contrasts=len(pairs),independent_game_bootstrap_intervals=ci_checks,private_worked_win_loss_examples=len(private['worked_examples']),source_vintage_metadata_correction_required=True,new_fits=0,new_inference=0,new_scores=0,Week8_outcomes_read=0)
+    with a.receipt.open('x')as f:json.dump(report,f,indent=2);f.write('\n')
+    print(json.dumps(report))
+if __name__=='__main__':main()

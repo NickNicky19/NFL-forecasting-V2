@@ -1,0 +1,7 @@
+{
+  "state": "INDEPENDENT_CDF_MASS_AND_EXACT_VECTOR_SCORING_SEPARATED",
+  "initial_checker_sha256": "8d0969899803cf067a2df253357007a8a7b082cbc6dda9ded998dd2789f92b3e",
+  "reason": "Independent Poisson summation can differ by one floating-point unit in near-unit CDFs; subtracting yields about1e-16 mass difference and1e-8 log difference atlogloss18.315. Verify independentCDF masses at declared absolute tolerance, then independently score the exact retained probability vector. No probability/grade/source/output changes.",
+  "original_observed_logloss": 18.314959139581585,
+  "independent_approximate_logloss": 18.314959129593184
+}

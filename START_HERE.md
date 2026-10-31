@@ -2,6 +2,8 @@
 
 New bounded diagnostic: [right and wrong predictions](reports/right-and-wrong-diagnostic-20261031k/RIGHT_AND_WRONG_PREDICTION_DIAGNOSTIC.md) · [all183 existing output/history/category cells](reports/right-and-wrong-diagnostic-20261031k/ALL_METHOD_DIAGNOSTIC_SUMMARIES.csv). Outcome-conditioned examples do not change championship rankings or owner release policy.
 
+[Current owner capture/publication readback](reports/right-and-wrong-diagnostic-20261031k/owner-status/README.md) · [Restored D1/D2 dependency handoff](reports/right-and-wrong-diagnostic-20261031k/recovery-preflight/RESTORED_D1D2_DEPENDENCY_HANDOFF.md) · [Direct original and same-method category tables](reports/right-and-wrong-diagnostic-20261031k/CHECKPOINT_CATEGORY_TABLES_V1.md). The19:24classic capture is newer; adaptive model issuance remainsOctober28. Restored model bytes do not establish owner admission.
+
 Code/operations continuation: [current older D1/D2 executor and failure-audit correction](reports/defense-season-executor-20261031j-code/correction-v2/README.md) · [actual owner capture/readback](reports/owner-runtime-refresh-20261031j/README.md) · [new-packet consumer check](reports/owner-runtime-refresh-20261031j/supplemental/README.md). These add no NFL backtest scores; the full scientific category report below remains current.
 
 # NFL Forecasting V2

@@ -1,0 +1,121 @@
+{
+  "state": "FAIL_PRECISION_METADATA_PENDING_NEW_CORRECTED_VERSION",
+  "score_sha256": "9a51edc5df5b880b06cf17695800de347168b591e13fc8c43db463fae475e56a",
+  "protocol_sha256": "f1d737d5bdbd3e38f0ae9a265e3a684eaa7c84c9c26f8e3627ba06404e3ed378",
+  "fullperiod_precision_numerators_checked": 4592,
+  "mismatches": [
+    {
+      "recipe": [
+        "nick-chart-ppr-v1",
+        "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "H-MULTI",
+        "point_choice_policy"
+      ],
+      "metric": "abs_le_1",
+      "accepted_fullperiod_numerator": 497,
+      "startup_split_numerator": 496,
+      "denominator": 2359
+    },
+    {
+      "recipe": [
+        "nick-chart-ppr-v1",
+        "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "H-MULTI",
+        "point_choice_policy"
+      ],
+      "metric": "abs_le_5",
+      "accepted_fullperiod_numerator": 1562,
+      "startup_split_numerator": 1560,
+      "denominator": 2359
+    },
+    {
+      "recipe": [
+        "nick-chart-ppr-v1",
+        "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "H-MULTI",
+        "point_choice_policy"
+      ],
+      "metric": "abs_lt_1",
+      "accepted_fullperiod_numerator": 466,
+      "startup_split_numerator": 469,
+      "denominator": 2359
+    },
+    {
+      "recipe": [
+        "nick-chart-ppr-v1",
+        "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+        "H-MULTI",
+        "point_choice_policy"
+      ],
+      "metric": "abs_le_1",
+      "accepted_fullperiod_numerator": 500,
+      "startup_split_numerator": 498,
+      "denominator": 2359
+    },
+    {
+      "recipe": [
+        "nick-chart-ppr-v1",
+        "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+        "H-MULTI",
+        "point_choice_policy"
+      ],
+      "metric": "abs_le_5",
+      "accepted_fullperiod_numerator": 1606,
+      "startup_split_numerator": 1604,
+      "denominator": 2359
+    },
+    {
+      "recipe": [
+        "nick-chart-ppr-v1",
+        "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+        "H-MULTI",
+        "point_choice_policy"
+      ],
+      "metric": "abs_lt_1",
+      "accepted_fullperiod_numerator": 462,
+      "startup_split_numerator": 466,
+      "denominator": 2359
+    },
+    {
+      "recipe": [
+        "nick-chart-ppr-v1",
+        "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+        "H-MULTI",
+        "point_choice_policy"
+      ],
+      "metric": "abs_le_1",
+      "accepted_fullperiod_numerator": 500,
+      "startup_split_numerator": 498,
+      "denominator": 2359
+    },
+    {
+      "recipe": [
+        "nick-chart-ppr-v1",
+        "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+        "H-MULTI",
+        "point_choice_policy"
+      ],
+      "metric": "abs_le_5",
+      "accepted_fullperiod_numerator": 1606,
+      "startup_split_numerator": 1604,
+      "denominator": 2359
+    },
+    {
+      "recipe": [
+        "nick-chart-ppr-v1",
+        "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+        "H-MULTI",
+        "point_choice_policy"
+      ],
+      "metric": "abs_lt_1",
+      "accepted_fullperiod_numerator": 462,
+      "startup_split_numerator": 466,
+      "denominator": 2359
+    }
+  ],
+  "scope": "Three chart selector outputs only. Destination point_choice_policy bypasses underlying lower_median exact 0.02 tolerance computation. Counts and MAE/MSE/bias remain unchanged. No model or forecast change required.",
+  "required_action": "Preserve v2 and issue a corrected retained-row scoring identity using each underlying chosen product for precision arithmetic; preserve mean outputs without grid rounding.",
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_scores": 0
+}

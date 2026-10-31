@@ -1092,5 +1092,66 @@
     "artifact": "reports/baselines-coverage-20261031h/OWNER_CONSUMER_SOFTWARE_RECEIPT.json",
     "state": "SOFTWARE_VERIFIED",
     "kind": "software_or_served_consumer_checks_not_NFL_accuracy"
+  },
+  {
+    "artifact": "reports/point-prop-diagnostic-20261031i/point-offer/v1/SCORES.json",
+    "state": "SCORED",
+    "kind": "matched_point_offer_diagnostic_saved_rows",
+    "reporting_annotations": "reports/point-prop-diagnostic-20261031i/point-offer/v1/INDEX_REPORTING_ANNOTATIONS_I_V3.json",
+    "comparison_annotations": "reports/point-prop-diagnostic-20261031i/point-offer/v1/INDEX_COMPARISON_ANNOTATIONS_I_V2.json",
+    "version_note": "New MAE/bias/gap/population diagnostic on retained W5\u20137 points. 189 side metadata labels corrected and69 missing point vintages supplied by bound annotation; original258 source rows/losses preserved. No prediction changes, new fits, inference or captures."
+  },
+  {
+    "artifact": "reports/point-prop-diagnostic-20261031i/historical-startup/v1/2025/SCORES.json",
+    "state": "SCORED",
+    "kind": "historical_startup_split_of_completed_rolling_forecasts",
+    "comparison_annotations": "reports/point-prop-diagnostic-20261031i/historical-startup/v1/2025/INDEX_COMPARISON_ANNOTATIONS_V1.json",
+    "version_note": "New W1\u20134/W5\u201318 FULL/own-learned/fallback split; completed full-season fits reused. No new forecasts, fits or NFL observations. Current/revised source tier;2022 RECENT proxy and partial-chart limitations retained."
+  },
+  {
+    "artifact": "reports/point-prop-diagnostic-20261031i/historical-startup/v1/2022/SCORES.json",
+    "state": "SCORED",
+    "kind": "historical_startup_split_of_completed_rolling_forecasts",
+    "comparison_annotations": "reports/point-prop-diagnostic-20261031i/historical-startup/v1/2022/INDEX_COMPARISON_ANNOTATIONS_V1.json",
+    "version_note": "New W1\u20134/W5\u201318 FULL/own-learned/fallback split; completed full-season fits reused. No new forecasts, fits or NFL observations. Current/revised source tier;2022 RECENT proxy and partial-chart limitations retained."
+  },
+  {
+    "artifact": "reports/point-prop-diagnostic-20261031i/historical-startup/v1/2023/SCORES.json",
+    "state": "SCORED",
+    "kind": "historical_startup_split_of_completed_rolling_forecasts",
+    "comparison_annotations": "reports/point-prop-diagnostic-20261031i/historical-startup/v1/2023/INDEX_COMPARISON_ANNOTATIONS_V1.json",
+    "version_note": "New W1\u20134/W5\u201318 FULL/own-learned/fallback split; completed full-season fits reused. No new forecasts, fits or NFL observations. Current/revised source tier;2022 RECENT proxy and partial-chart limitations retained."
+  },
+  {
+    "artifact": "reports/point-prop-diagnostic-20261031i/historical-startup/v1/2024/SCORES.json",
+    "state": "SCORED",
+    "kind": "historical_startup_split_of_completed_rolling_forecasts",
+    "comparison_annotations": "reports/point-prop-diagnostic-20261031i/historical-startup/v1/2024/INDEX_COMPARISON_ANNOTATIONS_V1.json",
+    "version_note": "New W1\u20134/W5\u201318 FULL/own-learned/fallback split; completed full-season fits reused. No new forecasts, fits or NFL observations. Current/revised source tier;2022 RECENT proxy and partial-chart limitations retained."
+  },
+  {
+    "artifact": "reports/point-prop-diagnostic-20261031i/historical-startup/current-2026-v2/SCORES.json",
+    "state": "SCORED",
+    "kind": "historical_startup_split_of_completed_rolling_forecasts",
+    "comparison_annotations": "reports/point-prop-diagnostic-20261031i/historical-startup/current-2026-v2/INDEX_COMPARISON_ANNOTATIONS_V1.json",
+    "version_note": "New fixed2026W1\u20137 W1\u20134/W5\u20137 FULL/own-learned/fallback split;620existingfixedrecipes and36registeredearlier-onlypolicies reused,21strictHGBcellsremainFIT_REQUIRED. No newforecasts/fits/decisions/NFLobservations. Current/revisedsource reconstruction; partial-chartlimitationsretained. 18chart-policy precision views superseded byV3exactunderlyingselectedmedian-grid scoring; alloriginalsretained.",
+    "supersession_mapping": "reports/point-prop-diagnostic-20261031i/CURRENT_STARTUP_INDEX_SUPERSESSION_MAP_V3.json"
+  },
+  {
+    "artifact": "reports/point-prop-diagnostic-20261031i/SOFTWARE_VERIFICATION_V1.json",
+    "state": "SOFTWARE_VERIFIED",
+    "kind": "software_index_provenance_and_historical_dryrun_not_NFL_accuracy"
+  },
+  {
+    "artifact": "reports/point-prop-diagnostic-20261031i/historical-startup/current-2026-precision-v3/SCORES.json",
+    "state": "SCORED",
+    "kind": "precision_scoring_correction_no_forecast_or_native_loss_change",
+    "version_note": "18newscoringversionsreplaceonly18oldchart-selector precision views;15counterchanges/32cells. No new NFLpredictions/games/fits. Chart remainsqualifiedpartial-label research.",
+    "comparison_annotations": "reports/point-prop-diagnostic-20261031i/historical-startup/current-2026-precision-v3/INDEX_COMPARISON_ANNOTATIONS_V1.json"
+  },
+  {
+    "artifact": "reports/point-prop-diagnostic-20261031i/SOFTWARE_VERIFICATION_V2.json",
+    "state": "SOFTWARE_VERIFIED",
+    "kind": "latest_software_precision_reporting_checks_not_NFL_accuracy"
   }
 ]

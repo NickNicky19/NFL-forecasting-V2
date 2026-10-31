@@ -122,8 +122,32 @@ def evaluation(row,artifact,*,year_record=None,source_link=None):
         if metrics['mae'] is not None or metrics['mse'] is not None:
             raise ValueError('threshold probability score cannot claim native-stat point errors')
     probability=target=='anytime_td' or threshold_probability
-    precision={name:precision_metric(pick(row,aliases)[0],n,name,probability=probability)
-               for name,aliases in PRECISION.items() if pick(row,aliases)[0] is not None}
+    precision={}
+    nested=row.get('precision_counts')or{}
+    for name,aliases in PRECISION.items():
+        rate=pick(row,aliases)[0]
+        counts=nested.get(name)
+        if counts is not None:
+            numerator,denominator=counts.get('numerator'),counts.get('denominator')
+            if (type(numerator)is not int or type(denominator)is not int
+                    or denominator!=n or not 0<=numerator<=denominator):
+                raise ValueError('source precision count/denominator mismatch')
+            exact_rate=numerator/denominator if denominator else None
+            declared=counts.get('rate',exact_rate)
+            if ((exact_rate is None and declared is not None)
+                    or (exact_rate is not None and(not number(declared)
+                        or not math.isclose(declared,exact_rate,abs_tol=1e-12,rel_tol=0)))):
+                raise ValueError('source precision rate/count mismatch')
+            if rate is not None and(exact_rate is None or not number(rate)
+                    or not math.isclose(rate,exact_rate,abs_tol=1e-12,rel_tol=0)):
+                raise ValueError('top-level precision differs from exact source counts')
+            value=precision_metric(exact_rate,n,name,probability=probability)
+            value.update(numerator=numerator,denominator=denominator,
+                         numerator_provenance='source_provided_exact_precision_counts')
+            if not denominator:value['missing_reason']='no_eligible_scored_rows_zero_denominator'
+            precision[name]=value
+        elif rate is not None:
+            precision[name]=precision_metric(rate,n,name,probability=probability)
     any_precision=bool(precision)
     years=(year_record or {}).get('evaluation_seasons') or ([row['season']] if 'season' in row else None)
     weeks=(year_record or {}).get('evaluation_weeks') or ([row['week']] if 'week' in row else None)
@@ -274,6 +298,10 @@ def validate_index(records):
         if r['primary_error']!=r['metrics'][r['primary_metric']]:raise ValueError('primary metric mismatch')
         for p in (r['precision_metrics'] or {}).values():
             if p['numerator'] is not None:
+                if p['denominator']==0:
+                    if p['numerator']!=0 or p['rate'] is not None:
+                        raise ValueError('empty precision denominator requires null rate')
+                    continue
                 if not p['denominator'] or not 0<=p['numerator']<=p['denominator']:
                     raise ValueError('invalid precision numerator/denominator')
                 if not math.isclose(p['numerator']/p['denominator'],p['rate'],rel_tol=0,abs_tol=1e-9):

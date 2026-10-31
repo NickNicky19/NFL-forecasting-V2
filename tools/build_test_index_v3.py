@@ -49,6 +49,49 @@ def validate_probability_outer_coverage(record,coverage):
     return coverage
 
 
+def apply_source_vintage_annotation(row, annotation):
+    """Correct bound point/selection metadata without changing saved scores."""
+    value = annotation.get('source_vintage')
+    if value is None:
+        return row
+    if row.get('record_kind') not in {'prop_selection_evaluation', 'forecast_evaluation_view'}:
+        raise ValueError('source-vintage correction requires point/selection record')
+    if annotation.get('correction_kind') != 'SOURCE_VINTAGE_METADATA_ONLY':
+        raise ValueError('source-vintage correction kind missing')
+    if annotation.get('original_source_vintage') != row.get('source_vintage'):
+        raise ValueError('source-vintage correction original mismatch')
+    if not isinstance(value, str) or not value.strip():
+        raise ValueError('source-vintage correction must supply nonempty label')
+    return dict(row, source_vintage=value)
+
+
+def validate_diagnostic_context_coverage(record, contexts):
+    """Keep complete-source availability distinct from a paired score mask."""
+    if record.get('kind') not in {'forecast_evaluation_view', 'prop_selection_evaluation'}:
+        raise ValueError('diagnostic coverage requires point/selection record')
+    if not isinstance(contexts, list) or not contexts:
+        raise ValueError('diagnostic coverage contexts missing')
+    expected = (record['forecast_or_offered_rows'] if record['kind'] == 'prop_selection_evaluation' else record['n'])
+    for context in contexts:
+        keys = ('source_offer_universe', 'source_available_points', 'mask_points',
+                'context_outer_opportunities', 'scored_or_selected_n')
+        if any(type(context.get(key)) is not int or context[key] < 0 for key in keys):
+            raise ValueError('invalid diagnostic coverage counts')
+        outer, available, mask, conditional, selected = (context[key] for key in keys)
+        if not (selected == expected and selected <= mask <= available <= outer and mask <= conditional <= outer):
+            raise ValueError('diagnostic coverage exceeds its declared scope')
+        for field, denominator in (('fraction_of_source', outer), ('fraction_of_context', conditional)):
+            value = context.get(field)
+            if denominator:
+                if type(value) not in (int, float) or not math.isfinite(value) or abs(value-selected/denominator) > 1e-12:
+                    raise ValueError('diagnostic coverage fraction mismatch')
+            elif value is not None:
+                raise ValueError('empty diagnostic coverage denominator requires null')
+        if not isinstance(context.get('context'), str) or not context['context']:
+            raise ValueError('diagnostic context identity missing')
+    return contexts
+
+
 def csv_handle(path,compressed):
     return io.TextIOWrapper(gzip.GzipFile(filename=str(path),mode='wb',mtime=0),encoding='utf-8',newline='') if compressed else path.open('w',newline='')
 
@@ -88,7 +131,10 @@ def new_records(root,item,inputs):
         raw=(root/item['supersession_mapping']).read_bytes();mapping=json.loads(raw)
         supersessions={r['source_row_index']:r for r in mapping['rows'] if r['source_artifact']==artifact}
         if any(r['source_sha256']!=digest for r in supersessions.values()):raise ValueError('supersession source binding mismatch')
-        inputs.append(dict(source_artifact=item['supersession_mapping'],sha256=sha(raw),rows=len(supersessions),kind='prediction_recipe_supersession_not_scoring_fix'))
+        mapping_kind=('precision_scoring_supersession_no_prediction_change'
+                      if mapping.get('mapping_kind')=='SCORING_PRECISION_ONLY'
+                      else 'prediction_recipe_supersession_not_scoring_fix')
+        inputs.append(dict(source_artifact=item['supersession_mapping'],sha256=sha(raw),rows=len(supersessions),kind=mapping_kind))
     for field in ('dates_projection','comparison_annotations'):
         if not item.get(field):continue
         raw=(root/item[field]).read_bytes();projection=json.loads(raw)
@@ -124,6 +170,7 @@ def new_records(root,item,inputs):
         if i in reporting:
             addition=reporting[i]
             if addition['record_id']!=original.get('record_id'):raise ValueError('reporting source record mismatch')
+            row=apply_source_vintage_annotation(row,addition)
             if addition.get('precision_counts') is not None:row['precision_counts']=addition['precision_counts']
             if addition.get('law_origin_counts') is not None:
                 counts=addition['law_origin_counts']
@@ -177,6 +224,9 @@ def new_records(root,item,inputs):
             if reporting[i].get('outer_offer_coverage') is not None:
                 record['outer_offer_coverage']=validate_probability_outer_coverage(record,reporting[i]['outer_offer_coverage'])
                 record['coverage_definition']='Source forecast_rows counts this qualified probability/outcome mask only; full source offers and matched-candidate availability are explicit in outer_offer_coverage.'
+            if reporting[i].get('diagnostic_context_coverage') is not None:
+                record['diagnostic_context_coverage']=validate_diagnostic_context_coverage(record,reporting[i]['diagnostic_context_coverage'])
+                record['coverage_definition']='Canonical qualified score/forecast mask only. Complete-source availability and conditional overlap denominators are explicit in diagnostic_context_coverage; mask coverage is not complete-system coverage.'
         invalid_mask=item.get('invalidated_shared_mask')
         if invalid_mask and original.get('fallback_view')==invalid_mask:
             record['score_version_state']='INVALIDATED_REQUESTED_SHARED_MASK_REFERENCE_ALIAS'

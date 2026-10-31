@@ -1,0 +1,68 @@
+{
+  "state": "PASS_EXACT_MASK_EMPIRICAL_STARTUP_COMPARISON_ANNOTATIONS",
+  "paired_comparisons": 4608,
+  "source_bindings": [
+    {
+      "source": "reports/point-prop-diagnostic-20261031i/historical-startup/current-2026-v2/SCORES.json",
+      "score_sha256": "9a51edc5df5b880b06cf17695800de347168b591e13fc8c43db463fae475e56a",
+      "annotation_sha256": "153235ac3351f2585930c184b123ebefccce789eb5f963340628024e8f30fe51",
+      "views": 3936,
+      "status_counts": {
+        "UNESTABLISHED": 2696,
+        "PAIRED_RETAINED_ROWS": 1240
+      }
+    },
+    {
+      "source": "reports/point-prop-diagnostic-20261031i/historical-startup/v1/2022/SCORES.json",
+      "score_sha256": "c588fc6b8936a824a9397d8dc71032b2d41954f79da69c402516f8bbef52d1c7",
+      "annotation_sha256": "4995995267478e327f2228fbadb8bbde7e229c3196baeb757503f2b181c4eda8",
+      "views": 2742,
+      "status_counts": {
+        "UNESTABLISHED": 1900,
+        "PAIRED_RETAINED_ROWS": 842
+      }
+    },
+    {
+      "source": "reports/point-prop-diagnostic-20261031i/historical-startup/v1/2023/SCORES.json",
+      "score_sha256": "0f68527cb9409782729c134651cb4cf0e7b428a5169a27e7d09c8b65e5b2d1bc",
+      "annotation_sha256": "6127fa0a131f6ca5091c496b1840717d4ad104cd5325ea5cf47207c3d8437bb4",
+      "views": 2742,
+      "status_counts": {
+        "UNESTABLISHED": 1900,
+        "PAIRED_RETAINED_ROWS": 842
+      }
+    },
+    {
+      "source": "reports/point-prop-diagnostic-20261031i/historical-startup/v1/2024/SCORES.json",
+      "score_sha256": "512e65800737e407be315995a199c7fc90030baba372d7d9fc8336b9f1360dce",
+      "annotation_sha256": "0eee50946154e61550845f5ed53b5b20e4523bc010edcd3f22aa545a9e683c31",
+      "views": 2742,
+      "status_counts": {
+        "UNESTABLISHED": 1900,
+        "PAIRED_RETAINED_ROWS": 842
+      }
+    },
+    {
+      "source": "reports/point-prop-diagnostic-20261031i/historical-startup/v1/2025/SCORES.json",
+      "score_sha256": "156b72639fd7027b3a7dbc6c21244626b439286089bbffcdf3f8803fc8795741",
+      "annotation_sha256": "484b088d851c14b9b906a1335ed212592ca55fb6a8030c66f83db10a60e59ce8",
+      "views": 2742,
+      "status_counts": {
+        "UNESTABLISHED": 1900,
+        "PAIRED_RETAINED_ROWS": 842
+      }
+    }
+  ],
+  "unestablished_reasons": {
+    "Declared empirical reference itself; no independent self-comparison.": 360,
+    "Own learned/fallback masks are not common across procedures; no unmatched baseline-relative claim.": 9936
+  },
+  "verified": "Every paired FULL view shares exact label-index hash, scored membership, target, window, season, history and population with the declared empirical reference. Errors retain candidate-minus-comparator orientation. No uncertainty interval is inferred from aggregates.",
+  "limits": [
+    "Own learned/fallback views are not paired comparisons. Different feature-memory policies make this a procedure-plus-information reference, not an isolated learner effect.",
+    "2022 RECENT proxy and partial chart labels are unchanged."
+  ],
+  "new_scores": 0,
+  "new_fits": 0,
+  "new_inference": 0
+}

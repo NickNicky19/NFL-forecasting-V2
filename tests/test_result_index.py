@@ -13,6 +13,28 @@ def row(**changes):
 
 
 class ResultIndexTests(unittest.TestCase):
+    def test_nested_only_precision_is_searchable_without_top_level_rates(self):
+        source=row(n=335,exact_rate=None,abs_le_10=None,
+                   precision_counts={'abs_le_1':dict(numerator=33,denominator=335,rate=33/335)})
+        r=evaluation(source,'reports/fixture-nested.json')
+        validate_index([r])
+        value=r['precision_metrics']['abs_le_1']
+        self.assertEqual((value['numerator'],value['denominator']),(33,335))
+        self.assertEqual(value['rate'],33/335)
+        self.assertNotEqual(r['accuracy_status'],'not_reported_no_accuracy_inferred_from_error')
+        with self.assertRaisesRegex(ValueError,'rate/count mismatch'):
+            evaluation(dict(source,precision_counts={'abs_le_1':dict(numerator=33,denominator=335,rate=1.)}), 'reports/fixture-nested.json')
+
+    def test_nested_zero_sample_precision_is_na_and_not_zero_percent(self):
+        source=row(n=0,mae=None,exact_rate=None,abs_le_10=None,
+                   precision_counts={'abs_le_1':dict(numerator=0,denominator=0,rate=None)})
+        r=evaluation(source,'reports/fixture-empty.json')
+        validate_index([r])
+        value=r['precision_metrics']['abs_le_1']
+        self.assertIsNone(value['rate'])
+        self.assertEqual(value['numerator'],0)
+        self.assertEqual(value['missing_reason'],'no_eligible_scored_rows_zero_denominator')
+
     def test_offered_threshold_probability_is_separate_from_native_point_error(self):
         source=row(record_kind='prop_threshold_probability_evaluation',
             product_id='actual_line_categorical_law',target='pass_att',mae=None,mse=None,

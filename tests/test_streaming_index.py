@@ -145,3 +145,48 @@ class ProbabilityMaskCoverageTests(unittest.TestCase):
             streaming.validate_probability_outer_coverage(r,dict(c,matched_candidate_admitted_law_rows=26))
         with self.assertRaisesRegex(ValueError,'other product'):
             streaming.validate_probability_outer_coverage(dict(r,kind='forecast_evaluation_view'),c)
+
+
+class SelectionVintageCorrectionTests(unittest.TestCase):
+    def test_bound_vintage_correction_preserves_original_score_and_side(self):
+        original = dict(record_kind='prop_selection_evaluation',
+                        source_vintage='SERVER_BOUND_ORIGINAL_THRESHOLDS_AND_POINTS',
+                        side='under', n=48, selection_metrics={'WIN': 14, 'LOSS': 34})
+        annotation = dict(correction_kind='SOURCE_VINTAGE_METADATA_ONLY',
+                          original_source_vintage=original['source_vintage'],
+                          source_vintage='RECONSTRUCTED_POINTS_SERVER_RETAINED_THRESHOLDS_REVISED_LABELS')
+        corrected = streaming.apply_source_vintage_annotation(original, annotation)
+        self.assertEqual(original['source_vintage'], annotation['original_source_vintage'])
+        self.assertEqual(corrected['source_vintage'], annotation['source_vintage'])
+        self.assertEqual(corrected['selection_metrics'], {'WIN': 14, 'LOSS': 34})
+        self.assertEqual(corrected['side'], 'under')
+        self.assertEqual(corrected['n'], 48)
+
+    def test_vintage_correction_rejects_stale_or_unqualified_override(self):
+        original = dict(record_kind='prop_selection_evaluation', source_vintage='old')
+        good = dict(correction_kind='SOURCE_VINTAGE_METADATA_ONLY',
+                    original_source_vintage='old', source_vintage='reconstructed')
+        for bad in (dict(good, original_source_vintage='different'),
+                    dict(good, correction_kind='prediction_change'),
+                    dict(good, source_vintage='')):
+            with self.assertRaises(ValueError):
+                streaming.apply_source_vintage_annotation(original, bad)
+        with self.assertRaisesRegex(ValueError, 'point/selection record'):
+            streaming.apply_source_vintage_annotation(dict(original, record_kind='prop_threshold_probability_evaluation'), good)
+        point = dict(record_kind='forecast_evaluation_view', mae=60.08, n=80)
+        fixed = streaming.apply_source_vintage_annotation(point, dict(good, original_source_vintage=None))
+        self.assertEqual(fixed['mae'], point['mae'])
+        self.assertEqual(fixed['source_vintage'], 'reconstructed')
+        self.assertNotIn('source_vintage', point)
+
+    def test_conditional_mask_does_not_hide_full_source_unavailability(self):
+        record = dict(kind='forecast_evaluation_view', n=80)
+        context = dict(context='OWN_DECISION_ELIGIBLE_FULL_SYSTEM', source_offer_universe=84,
+                       source_available_points=80, mask_points=80, context_outer_opportunities=84,
+                       scored_or_selected_n=80, fraction_of_source=80/84, fraction_of_context=80/84)
+        result = streaming.validate_diagnostic_context_coverage(record, [context])
+        self.assertEqual(result[0]['source_offer_universe']-result[0]['source_available_points'], 4)
+        with self.assertRaisesRegex(ValueError, 'fraction mismatch'):
+            streaming.validate_diagnostic_context_coverage(record, [dict(context, fraction_of_source=1.0)])
+        with self.assertRaisesRegex(ValueError, 'scope'):
+            streaming.validate_diagnostic_context_coverage(record, [dict(context, source_available_points=76)])

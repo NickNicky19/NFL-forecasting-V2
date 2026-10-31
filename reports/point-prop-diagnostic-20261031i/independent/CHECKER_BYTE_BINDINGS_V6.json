@@ -1,0 +1,58 @@
+{
+  "state": "FINAL_INDEPENDENT_CHECKER_BYTES_INCLUDING_POINTER_READBACK",
+  "supersedes_manifest": "CHECKER_BYTE_BINDINGS_V5.json",
+  "checkers": [
+    {
+      "path": "bind_verified_paired_masks.py",
+      "sha256": "c89bdaa4eb6fffc8ded20fde3d4f3ae109ac56bb20cc12a389d3ea5bec0b5bbb"
+    },
+    {
+      "path": "check_current_startup.py",
+      "sha256": "79e9cac2767359a2e7ec58b34cb06832a8eee098e9c7ef7c3594cc454f3c54b3"
+    },
+    {
+      "path": "check_defense_readiness.py",
+      "sha256": "00c0ab074631ab68a6ef31c2dde41f5fd49db3f05d0467abe31634bea94d3418"
+    },
+    {
+      "path": "check_final_index.py",
+      "sha256": "2a83f74238a5c4a9cc40aafabba8f93daa37518dc4e55c9216e9bb5f074b9af5"
+    },
+    {
+      "path": "check_final_pointer.py",
+      "sha256": "c87c654f85640a93b3c97d633836d1fdafa3e78bc2358e84d015678dedcdd04e"
+    },
+    {
+      "path": "check_index_metadata.py",
+      "sha256": "1cb7b4875c29fb50614efd1f93bf2fd68490fef5c055f1d240153a3fa2000e23"
+    },
+    {
+      "path": "check_point_offer.py",
+      "sha256": "5c88d55ad572985f44fd7241e1ce7740202dde80c590c37a00316a17855f923d"
+    },
+    {
+      "path": "check_precision_revision.py",
+      "sha256": "bb96a44dcd24ad42ee87c6d9a45b9fbc56ce7a583ff6e6eac1981d1018fdc2c3"
+    },
+    {
+      "path": "check_reporting_metadata.py",
+      "sha256": "421379f34fb6fd5aaf83b65416acb06940b8f6882fd23e615cddaf7b3d6737a6"
+    },
+    {
+      "path": "check_source_coverage.py",
+      "sha256": "08130a6ae26e5a8ea3910c6bee130d366b6fdd26222ccee0e83cf49c673ffe82"
+    },
+    {
+      "path": "check_startup_comparisons.py",
+      "sha256": "6a7f56fbcc4bce88a76937ab75a6a6d2e8961951dab14b2ea34de5b1796a6e83"
+    },
+    {
+      "path": "check_startup_season.py",
+      "sha256": "c0a7ea74ff9eddc2645a4f67f0a5bd72fc2b75a3a85b54ae5099a55e45b76348"
+    }
+  ],
+  "scope": "Adds the final pointer/report/table/source-binding checker, whose execution receipt also binds its own exact code hash. Prior scientific checks and source bytes are unchanged.",
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_scores": 0
+}

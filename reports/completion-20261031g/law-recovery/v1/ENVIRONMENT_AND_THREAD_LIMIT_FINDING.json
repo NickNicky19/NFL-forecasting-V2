@@ -1,0 +1,40 @@
+{
+  "scope": "Actualenvironmentreadbackaftercompletedlookup; not a rerun",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "sklearn": "1.8.0",
+  "thread_environment": {
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null
+  },
+  "native_pool_configuration": [
+    {
+      "internal_api": "openblas",
+      "num_threads": 5,
+      "prefix": "libscipy_openblas",
+      "version": "0.3.30"
+    },
+    {
+      "internal_api": "openblas",
+      "num_threads": 5,
+      "prefix": "libscipy_openblas",
+      "version": "0.3.30"
+    },
+    {
+      "internal_api": "openmp",
+      "num_threads": 5,
+      "prefix": "libgomp",
+      "version": null
+    }
+  ],
+  "planned_max_threads": 2,
+  "thread_limit_enforced_by_v1_runner": false,
+  "actual_native_worker_peak": "NOT_MEASURED",
+  "estimator_or_model_calls": 0,
+  "scientific_effect": "Histogramlookup/momentparityunchanged; nofittingornewfeatures.",
+  "correction": "Futureexporterentrywillsetthreadpool_limits(2); originalv1source/protocol/bytes retained. No completedlookup rerun.",
+  "new_fits": 0,
+  "new_scores": 0
+}

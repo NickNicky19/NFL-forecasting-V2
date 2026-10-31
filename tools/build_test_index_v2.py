@@ -36,13 +36,16 @@ def current_flat(record):
     # Complete aggregate/provenance objects remain in JSON shards. CSVs retain
     # concise source pointers, explicit counts and metrics for practical filtering.
     for key in CSV_OMIT_FIELDS:row.pop(key,None)
-    for key in ('run_id','procedure_family_id','cohort_id','information_policy','feature_memory_policy','training_population','source_vintage','scoring_version','correction_kind','precision_correction_artifact'):
+    for key in ('run_id','procedure_family_id','cohort_id','information_policy','feature_memory_policy','training_population','source_vintage','scoring_version','correction_kind','precision_correction_artifact',
+            'probability_conditioning','probability_score_contract','bookmaker_nonvoid_conditioning','proper_probability_n','reporting_metadata_provenance','law_origin_counts'):
         value=record.get(key,source.get(key))
         if value is None:value=source.get(key)
         row[key]=json.dumps(value,separators=(',',':')) if isinstance(value,(dict,list)) else value
     for key,value in comparison_fields(record).items():
         row[key]=json.dumps(value,separators=(',',':')) if isinstance(value,(dict,list)) else value
     stats=record.get('selection_metrics')or{}
+    for key in ('admitted_forecast_opportunities','unavailable_forecast_opportunities','admitted_rule_abstentions'):
+        row[key]=stats.get(key)
     for key in ('side','strategy','horizon','threshold_provenance','selection_evidence','probability_conditioning',
                 'season_type','statistic_period','period_provenance','K','rank_scope','time_panel_id',
                 'season_alias_of_week_view','alias_of_record_id','unique_players','unique_player_games','unique_weeks'):

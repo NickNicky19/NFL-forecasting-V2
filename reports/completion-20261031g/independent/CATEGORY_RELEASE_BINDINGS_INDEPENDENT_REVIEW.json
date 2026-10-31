@@ -1,0 +1,133 @@
+{
+  "state": "PASS_INDEPENDENT_EXACT_CATEGORY_REVIEW_BINDINGS_NO_RELEASE_ADMISSION",
+  "category_packages_sha256": "d940bf4d9a497fa2d31c4894e87a084daf423f2a43704f8c15914ea103dbf318",
+  "correction_receipt_sha256": "02c456f55fc87ca97e59e9e102b916344b147002ff782d717ae1451f542cf2b6",
+  "source_grid_sha256": "3a57544103edd2192ea3f9c6276a65ea4825b013005ed81bc53f1481689da4f7",
+  "source_census_sha256": "9a9d69f44290ee254e5fe9d00d6c687f84f1817625002e9b6ef38952767b4d64",
+  "owner_readback_sha256": "15e44b0c3244002f91e239514e3077c1ab0aedc2c72f47e629074010aa22ff62",
+  "source_bound_options": 12,
+  "candidates": [
+    {
+      "category": "pass_yd",
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "history_regime": "H-MULTI",
+      "product_id": "absolute_error_point",
+      "source_test_id": "TEST-e7448bac72b9a1aa22c5",
+      "model_source_metadata_available": true,
+      "operational_admission": "NOT_OBSERVED"
+    },
+    {
+      "category": "pass_td",
+      "procedure_id": "empirical-player-history-control-v1",
+      "history_regime": "H-MULTI",
+      "product_id": "lower_median",
+      "source_test_id": "TEST-854467c21035bbe876ae",
+      "model_source_metadata_available": true,
+      "operational_admission": "NOT_OBSERVED"
+    },
+    {
+      "category": "pass_cmp",
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "history_regime": "H-MULTI",
+      "product_id": "absolute_error_point",
+      "source_test_id": "TEST-47794a6600f38443ee6d",
+      "model_source_metadata_available": true,
+      "operational_admission": "NOT_OBSERVED"
+    },
+    {
+      "category": "pass_att",
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "history_regime": "H-MULTI",
+      "product_id": "lower_median",
+      "source_test_id": "TEST-9dc785372beeb8ae8fc9",
+      "model_source_metadata_available": true,
+      "operational_admission": "NOT_OBSERVED"
+    },
+    {
+      "category": "pass_int",
+      "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1",
+      "history_regime": "H-CURRENT",
+      "product_id": "lower_median",
+      "source_test_id": "TEST-75e0dddae64e35b244fa",
+      "model_source_metadata_available": true,
+      "operational_admission": "NOT_OBSERVED"
+    },
+    {
+      "category": "rush_yd",
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "history_regime": "H-MULTI",
+      "product_id": "lower_median",
+      "source_test_id": "TEST-7ab9d00e30f58bd4c09b",
+      "model_source_metadata_available": true,
+      "operational_admission": "NOT_OBSERVED"
+    },
+    {
+      "category": "rush_att",
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "history_regime": "H-MULTI",
+      "product_id": "lower_median",
+      "source_test_id": "TEST-0814e2a8e50d0e2720d2",
+      "model_source_metadata_available": true,
+      "operational_admission": "NOT_OBSERVED"
+    },
+    {
+      "category": "rec",
+      "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1",
+      "history_regime": "H-MULTI",
+      "product_id": "lower_median",
+      "source_test_id": "TEST-da79c12c9da0f5ade677",
+      "model_source_metadata_available": true,
+      "operational_admission": "NOT_OBSERVED"
+    },
+    {
+      "category": "rec_yd",
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "history_regime": "H-MULTI",
+      "product_id": "lower_median",
+      "source_test_id": "TEST-a7bb4580cde8c542837d",
+      "model_source_metadata_available": true,
+      "operational_admission": "NOT_OBSERVED"
+    },
+    {
+      "category": "rush_rec_yd",
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "history_regime": "H-MULTI",
+      "product_id": "absolute_error_point",
+      "source_test_id": "TEST-adcc6571950fc843de14",
+      "model_source_metadata_available": true,
+      "operational_admission": "NOT_OBSERVED"
+    },
+    {
+      "category": "nick-chart-ppr-v1",
+      "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1",
+      "history_regime": "H-RECENT",
+      "product_id": "lower_median",
+      "source_test_id": "TEST-e167cbf216b778ace84e",
+      "model_source_metadata_available": true,
+      "operational_admission": "NOT_OBSERVED"
+    },
+    {
+      "category": "anytime_td",
+      "procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "history_regime": "H-MULTI",
+      "product_id": "log_loss_probability",
+      "source_test_id": "TEST-4262abcb65cc50844249",
+      "model_source_metadata_available": true,
+      "operational_admission": "NOT_OBSERVED"
+    }
+  ],
+  "admitted_categories": 0,
+  "merged_categories": 0,
+  "deployed_categories": 0,
+  "served_verified_categories": 0,
+  "approval_status": "Prepared typed candidate packages for retained-owner review; operational checks and admission remain unmet. No unilateral release.",
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_grades": 0,
+  "limitations": [
+    "Available-model/source metadata does not replace deterministic runtime, consumer/fallback/staleness/rollback checks.",
+    "ArchivedR0/currentserved comparisons and later scientificvalidation retain exact originalscope; no pointprofitability claim.",
+    "Chart labels remain qualifiedpartialcomponents; probabilitypolicy is separate from numericMAE.",
+    "New G reconstruction/selection identities are not prospectively captured by oldbaseforecast packets."
+  ]
+}

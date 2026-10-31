@@ -112,7 +112,16 @@ def evaluation(row,artifact,*,year_record=None,source_link=None):
         metrics[name]=value;metric_source[name]=key
         missing[name]=None if value is not None else 'metric_null_or_not_reported_in_source'
         metric_status[name]='finite' if value is not None else 'not_reported_or_null'
-    target=row.get('target');probability=target=='anytime_td'
+    target=row.get('target')
+    threshold_probability=row.get('record_kind')=='prop_threshold_probability_evaluation'
+    if threshold_probability:
+        if row.get('probability_conditioning')!='MODELED_APPEARANCE':
+            raise ValueError('threshold probability must retain modeled-appearance conditioning')
+        if row.get('probability_score_contract')!='HALF_MULTICLASS_BRIER_OVER_UNDER_PUSH_V1':
+            raise ValueError('registered threshold probability score contract required')
+        if metrics['mae'] is not None or metrics['mse'] is not None:
+            raise ValueError('threshold probability score cannot claim native-stat point errors')
+    probability=target=='anytime_td' or threshold_probability
     precision={name:precision_metric(pick(row,aliases)[0],n,name,probability=probability)
                for name,aliases in PRECISION.items() if pick(row,aliases)[0] is not None}
     any_precision=bool(precision)
@@ -130,7 +139,8 @@ def evaluation(row,artifact,*,year_record=None,source_link=None):
     # New optional diagnostic dimensions must not rename previously indexed views.
     hash_identity={k:v for k,v in identity.items() if k not in {'position','fallback_view'} or v is not None}
     test_id='TEST-'+hashlib.sha256(canonical([artifact,hash_identity]).encode()).hexdigest()[:20]
-    unit=('yards' if target in {'pass_yd','rush_yd','rec_yd','rush_rec_yd'} else
+    unit=('probability' if threshold_probability else
+          'yards' if target in {'pass_yd','rush_yd','rec_yd','rush_rec_yd'} else
           'count' if target in {'pass_td','pass_cmp','pass_att','pass_int','rush_att','rec'} else
           'probability' if probability else 'chart points' if target=='nick-chart-ppr-v1' else 'source-specific points')
     primary='brier' if probability else 'mae'
@@ -158,6 +168,9 @@ def evaluation(row,artifact,*,year_record=None,source_link=None):
         uncertainty=row.get('uncertainty'),source_artifact=artifact,source_artifact_sha256=None,
         cohort_limit=row.get('cohort_limit'),source_vintage=row.get('source_vintage'),
         procedure_family_id=row.get('procedure_family_id'),feature_memory_policy=row.get('feature_memory_policy'),
+        **(dict(probability_conditioning=row['probability_conditioning'],
+                probability_score_contract=row['probability_score_contract'],
+                bookmaker_nonvoid_conditioning='UNESTABLISHED') if threshold_probability else {}),
         upstream_source_id=row.get('source_id'),upstream_source_link=source_link,
         software_checks=None,nfl_accuracy_from_software_tests=None)
 
@@ -211,6 +224,7 @@ def prop_selection_evaluation(row,artifact,*,year_record=None,source_link=None):
             'RETROSPECTIVE_RULE_REPLAY_ON_ORIGINAL_SELECTION_POOL'if row.get('K')is not None else
             'ORIGINAL_RECORDED_SELECTION'if row.get('strategy')=='original'else'RETROSPECTIVE_RULE_REPLAY'),
         probability_conditioning=row.get('probability_conditioning'),
+        proper_probability_n=(stats.get('probability_scores')or{}).get('n'),
         accuracy_status='statistical_threshold_crossing_only' if row.get('settlement_verified') is not True else 'verified_settled_selection',
         accuracy_missing_reason=None if n else 'no_decided_supported_selections',
         precision_metrics={'decided_pick_hit_rate':dict(rate=hit,numerator=wins if n else None,denominator=n,
@@ -255,6 +269,7 @@ def validate_index(records):
                 raise ValueError('software check must not claim NFL accuracy')
             continue
         if r['kind'] not in {'forecast_evaluation_view',DIAGNOSTIC_KIND,'prop_selection_evaluation',
+                'prop_threshold_probability_evaluation',
                 'retrospective_chronological_category_selector_aggregate_replay'}:raise ValueError('unknown test kind')
         if r['primary_error']!=r['metrics'][r['primary_metric']]:raise ValueError('primary metric mismatch')
         for p in (r['precision_metrics'] or {}).values():

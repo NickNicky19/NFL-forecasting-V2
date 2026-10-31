@@ -1,4 +1,6 @@
 import hashlib
+import gzip
+import csv
 import json
 import tempfile
 import unittest
@@ -11,6 +13,26 @@ from tests import test_index_v2 as old_tests
 
 
 class StreamingIndexTests(unittest.TestCase):
+    def test_lossless_compressed_append_keeps_old_parts_and_can_be_extended(self):
+        with tempfile.TemporaryDirectory()as folder:
+            root=Path(folder);self.setup_tree(root)
+            prior=json.loads((root/'prior/INDEX_MANIFEST.json').read_text())
+            streaming.write(root,'prior/INDEX_MANIFEST.json','compressed',reuse_prior_csv=True,compressed_delivery=True)
+            m=json.loads((root/'compressed/INDEX_MANIFEST.json').read_text())
+            self.assertEqual(m['shards'][:len(prior['shards'])],prior['shards'])
+            self.assertEqual(m['csv_parts'][:len(prior['csv_parts'])],prior['csv_parts'])
+            last=m['shards'][-1];self.assertEqual(last['compression'],'gzip')
+            records=streaming.decode_shard(root,last);self.assertEqual(len(records),1)
+            with gzip.open(root/m['csv_parts'][-1]['path'],'rt')as f:
+                rows=list(csv.DictReader(f))
+            self.assertEqual(rows[0]['test_id'],records[0]['test_id'])
+            # A later checkpoint reads the mixed raw/gzip ancestor without replacement.
+            result=streaming.write(root,'compressed/INDEX_MANIFEST.json','later',reuse_prior_csv=True,compressed_delivery=True)
+            self.assertEqual(result['records'],7);self.assertEqual(result['new_records'],0)
+            broken=dict(last,uncompressed_sha256='0'*64)
+            with self.assertRaisesRegex(ValueError,'uncompressed shard'):
+                streaming.decode_shard(root,broken)
+
     def test_shared_csv_delivery_reuses_prior_parts_and_keeps_policy_identity(self):
         with tempfile.TemporaryDirectory()as folder:
             root=Path(folder);self.setup_tree(root)

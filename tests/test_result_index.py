@@ -13,6 +13,24 @@ def row(**changes):
 
 
 class ResultIndexTests(unittest.TestCase):
+    def test_offered_threshold_probability_is_separate_from_native_point_error(self):
+        source=row(record_kind='prop_threshold_probability_evaluation',
+            product_id='actual_line_categorical_law',target='pass_att',mae=None,mse=None,
+            brier=.18,log_loss=.6,probability_conditioning='MODELED_APPEARANCE',
+            probability_score_contract='HALF_MULTICLASS_BRIER_OVER_UNDER_PUSH_V1')
+        r=evaluation(source,'reports/fixture-threshold.json')
+        validate_index([r])
+        self.assertEqual(r['primary_metric'],'brier')
+        self.assertEqual(r['primary_error'],.18)
+        self.assertEqual(r['native_units'],'probability')
+        self.assertIsNone(r['metrics']['mae'])
+        self.assertEqual(r['bookmaker_nonvoid_conditioning'],'UNESTABLISHED')
+        self.assertEqual(r['probability_conditioning'],'MODELED_APPEARANCE')
+        with self.assertRaisesRegex(ValueError,'conditioning'):
+            evaluation(dict(source,probability_conditioning='nonvoid'),'reports/fixture.json')
+        with self.assertRaisesRegex(ValueError,'point errors'):
+            evaluation(dict(source,mae=3),'reports/fixture.json')
+
     def test_native_errors_are_not_percent_accuracy(self):
         r=evaluation(row(),'reports/fixture.json')
         self.assertEqual(r['primary_error'],7.5)

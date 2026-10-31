@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Require every registered result artifact to appear in the public test index."""
-import hashlib,json,pathlib,sys
+import hashlib,json,pathlib,sys,gzip,csv,io
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from nfl_v2.result_index import validate_index
+from tools.build_test_index_v3 import decode_shard
 pointer=ROOT/'registries/CURRENT_RESULTS_INDEX.json'
 p=ROOT/(json.loads(pointer.read_text())['manifest'] if pointer.exists() else 'reports/continuation-20261029/TEST_RESULTS_INDEX.json')
 o=json.loads(p.read_text())
@@ -12,13 +13,25 @@ if o.get('schema_version')=='v2-sharded-results-index-v2':
  for shard in o['shards']:
   body=(ROOT/shard['path']).read_bytes()
   if len(body)!=shard['bytes'] or hashlib.sha256(body).hexdigest()!=shard['sha256']:raise SystemExit('Stale index shard: '+shard['path'])
-  rows=json.loads(body)
+  rows=decode_shard(ROOT,shard)
   if len(rows)!=shard['records']:raise SystemExit('Shard count mismatch')
   validate_index(rows)
   for r in rows:
    if r['test_id'] in seen_ids:raise SystemExit('Duplicate result across shards')
    seen_ids.add(r['test_id']);indexed.add(r['source_artifact']);record_count+=1
  if record_count!=o['record_count']:raise SystemExit('Index total count mismatch')
+ csv_ids=set()
+ for part in o.get('csv_parts',[]):
+  body=(ROOT/part['path']).read_bytes()
+  if len(body)!=part['bytes'] or hashlib.sha256(body).hexdigest()!=part['sha256']:raise SystemExit('Changed CSV delivery')
+  if part.get('compression')=='gzip':body=gzip.decompress(body)
+  elif part.get('compression')is not None:raise SystemExit('Unsupported CSV compression')
+  n=0
+  for row in csv.DictReader(io.StringIO(body.decode())):
+   if row['test_id']in csv_ids:raise SystemExit('Duplicate CSV test ID')
+   csv_ids.add(row['test_id']);n+=1
+  if n!=part['rows']:raise SystemExit('CSV part row count mismatch')
+ if csv_ids!=seen_ids:raise SystemExit('CSV and JSON test ID sets differ')
  base=o['baseline_checkpoint'];old_body=(ROOT/base['artifact']).read_bytes()
  if hashlib.sha256(old_body).hexdigest()!=base['sha256']:raise SystemExit('Prior checkpoint bytes changed')
  if not {r['test_id'] for r in json.loads(old_body)['records']} <= seen_ids:raise SystemExit('Prior test IDs lost')

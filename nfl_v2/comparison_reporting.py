@@ -27,6 +27,7 @@ def comparison_fields(record, annotation=None):
     fields = dict(comparison_status='UNESTABLISHED', comparator_procedure_id=None,
                   comparator_history_regime=None, comparator_product_id=None,
                   comparison_metric=None, comparator_error=None, paired_n=None,
+                  paired_candidate_error=None,paired_fraction_of_scored_view=None,
                   absolute_error_change=None, relative_error_change=None,
                   relative_error_missing_reason='no_authenticated_matched_comparison',
                   comparison_missing_reason='Retained paired rows and an explicit comparator binding are required.',
@@ -53,7 +54,8 @@ def comparison_fields(record, annotation=None):
     if annotation.get('status') == 'UNESTABLISHED':
         fields['comparison_missing_reason'] = annotation.get('reason', annotation.get('missing_reason', fields['comparison_missing_reason']))
         return fields
-    if annotation.get('status') != 'PAIRED_RETAINED_ROWS':
+    subset=annotation.get('status')=='PAIRED_SUBSET_RETAINED_ROWS'
+    if annotation.get('status') not in {'PAIRED_RETAINED_ROWS','PAIRED_SUBSET_RETAINED_ROWS'}:
         raise ValueError('comparison requires an explicit retained-row binding')
     if not annotation.get('membership_sha256') or not annotation.get('comparator_procedure_id'):
         raise ValueError('comparison membership and comparator identity required')
@@ -65,13 +67,17 @@ def comparison_fields(record, annotation=None):
         raise ValueError('positive paired denominator required')
     candidate = annotation.get('candidate_error')
     original = (record.get('metrics') or {}).get(metric)
-    if paired_n != record.get('n') or not finite(original) or not finite(candidate) or not math.isclose(candidate, original, abs_tol=1e-10, rel_tol=1e-10):
+    same=paired_n==record.get('n') and finite(original) and finite(candidate) and math.isclose(candidate,original,abs_tol=1e-10,rel_tol=1e-10)
+    if not subset and not same:
         raise ValueError('comparison is not this exact scored view')
-    fields.update(comparison_status='PAIRED_RETAINED_ROWS',
+    if subset and(not isinstance(record.get('n'),int)or not 0<paired_n<=record['n']or not finite(candidate)):
+        raise ValueError('paired subset is outside the scored view')
+    fields.update(comparison_status='PAIRED_SUBSET_RETAINED_ROWS'if subset else'PAIRED_RETAINED_ROWS',
                   comparator_procedure_id=annotation['comparator_procedure_id'],
                   comparator_history_regime=annotation.get('comparator_history_regime'),
                   comparator_product_id=annotation.get('comparator_product_id'),
                   comparison_metric=metric, comparator_error=annotation['comparator_error'], paired_n=paired_n,
+                  paired_candidate_error=candidate,paired_fraction_of_scored_view=paired_n/record['n'],
                   comparison_missing_reason=None, comparison_membership_sha256=annotation['membership_sha256'],
                   comparison_uncertainty=annotation.get('uncertainty'),
                   cutoff=annotation.get('cutoff_policy', fields['cutoff']))

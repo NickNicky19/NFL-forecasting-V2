@@ -34,6 +34,19 @@ class ComparisonReportingTests(unittest.TestCase):
         self.assertEqual(out['absolute_error_change'], 2.)
         self.assertIsNone(out['relative_error_change'])
 
+    def test_paired_subset_does_not_relabel_full_view_loss_or_denominator(self):
+        annotation=dict(self.annotation(),status='PAIRED_SUBSET_RETAINED_ROWS',
+                        paired_n=3,candidate_error=2.,comparator_error=4.)
+        out=comparison_fields(self.record(),annotation)
+        self.assertEqual(out['comparison_status'],'PAIRED_SUBSET_RETAINED_ROWS')
+        self.assertEqual(out['paired_candidate_error'],2.)
+        self.assertEqual(out['paired_n'],3)
+        self.assertEqual(out['paired_fraction_of_scored_view'],.75)
+        self.assertEqual(out['absolute_error_change'],-2.)
+        self.assertEqual(self.record()['metrics']['mae'],3.)
+        with self.assertRaises(ValueError):
+            comparison_fields(self.record(),dict(annotation,paired_n=5))
+
     def test_correction_is_not_prediction_change(self):
         row = self.record()
         row['source_aggregate_fields'] = {'correction_kind': 'exact_grid_precision'}

@@ -1,0 +1,4230 @@
+[
+  {
+    "category": "pass_yd",
+    "current_numerical": {
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "loss": 66.11731310079224,
+      "kind": "static_procedure"
+    },
+    "numerical_static_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 66.11731310079224,
+        "best_current_with_prior_season_procedure": "hgb-direct-history-controls-v1:absolute_error_point",
+        "bias": -14.122713543801193,
+        "brier": null,
+        "category": "pass_yd",
+        "comparison_id": "PAIR-5367552d7c20d582c31d:FULL_SYSTEM",
+        "crps": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 242,
+        "full_prior_seasons_for_exact_recipe": [
+          2025,
+          2024,
+          2023,
+          2022
+        ],
+        "game_normal95_sensitivity": [
+          -2.956954027196323,
+          1.6461256833262636
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 66.11731310079224,
+        "max_abs": 220.43803540583147,
+        "mechanism_id": "hgb-L1",
+        "metric": "mae",
+        "mse": 6984.332545070653,
+        "n": 242,
+        "p90_abs": 144.05147756942705,
+        "p95_abs": 174.74966050394113,
+        "paired_delta": -0.6554141719350298,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 2,
+            "rate": 0.008264462809917356
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 22,
+            "rate": 0.09090909090909091
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 7,
+            "rate": 0.028925619834710745
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 2,
+            "rate": 0.008264462809917356
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 22,
+            "rate": 0.09090909090909091
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 7,
+            "rate": 0.028925619834710745
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 0,
+            "rate": 0.0
+          }
+        },
+        "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+        "product_id": "absolute_error_point",
+        "ranking_loss": 66.11731310079224,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.009815596856753341,
+        "release_block": "Matched incumbent/timing parity, complete recovery, later confirmation and owner admission remain unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 83.57231925147616,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 66.77272727272727,
+        "runner_up_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.0,
+        "scored_fallback_rows": 0,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "over_maxima": [
+      {
+        "target": "pass_yd",
+        "procedure_id": "empirical-player-history-control-v1:known-target-time-v1",
+        "history_regime": "H-MULTI",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 16,
+        "selected": 16,
+        "wins": 11,
+        "losses": 5,
+        "status": {
+          "LOSS": 5,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 11
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 13,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-023f023011e8c8ada43f38b8"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-a918568ac59bdfaf8c6c2224"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 0.6875,
+        "coverage": 0.2857142857142857
+      },
+      {
+        "target": "pass_yd",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 16,
+        "selected": 16,
+        "wins": 11,
+        "losses": 5,
+        "status": {
+          "LOSS": 5,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 11
+        },
+        "eligible": 56,
+        "admitted": 32,
+        "unavailable": 24,
+        "fallback": 1,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 32,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 12,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-eb8b6b73273bbf26965b6202"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-811f451476b2a7d291dc67a5"
+          }
+        ],
+        "fallback_rate": 0.03125,
+        "hit_rate": 0.6875,
+        "coverage": 0.2857142857142857
+      }
+    ],
+    "under_maxima": [
+      {
+        "target": "pass_yd",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "mean",
+        "decision_rule": "P1",
+        "side": "under",
+        "n": 10,
+        "selected": 10,
+        "wins": 5,
+        "losses": 5,
+        "status": {
+          "LOSS": 5,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 5
+        },
+        "eligible": 56,
+        "admitted": 32,
+        "unavailable": 24,
+        "fallback": 1,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 32,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 7,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-f7033afc9b12d9120e327406"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-48160e024837dd2b7445fdce"
+          }
+        ],
+        "fallback_rate": 0.03125,
+        "hit_rate": 0.5,
+        "coverage": 0.17857142857142858
+      }
+    ],
+    "combined_maxima": [
+      {
+        "target": "pass_yd",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "mean",
+        "decision_rule": "P1",
+        "side": "Combined",
+        "n": 32,
+        "selected": 32,
+        "wins": 20,
+        "losses": 12,
+        "status": {
+          "LOSS": 12,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 20
+        },
+        "eligible": 56,
+        "admitted": 32,
+        "unavailable": 24,
+        "fallback": 1,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 32,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 16,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-f0d483ea750d0646a9ae77c8"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-712c288cf972225632ad72f3"
+          }
+        ],
+        "fallback_rate": 0.03125,
+        "hit_rate": 0.625,
+        "coverage": 0.5714285714285714
+      }
+    ],
+    "threshold_probability_maxima": [
+      {
+        "target": "pass_yd",
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "actual_line_categorical_law",
+        "n": 52,
+        "eligible": 56,
+        "weeks": [
+          6,
+          7
+        ],
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-PROB-LEAF-66aeca8c969eb46d4a"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-PROB-LEAF-3cbeb00ec7f8ca3b85"
+          }
+        ],
+        "brier": 0.26911478987114507,
+        "coverage": 0.9285714285714286
+      }
+    ],
+    "selection_period": "2026 REG W6\u20137 registered rolling snapshots only",
+    "numerical_period": "2026 REG W1\u20137",
+    "historical_exact_recipe": [
+      {
+        "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+        "history": "H-MULTI",
+        "seasons": [
+          2025,
+          2024,
+          2023,
+          2022
+        ]
+      }
+    ],
+    "recommendation": "ADVANCE CHALLENGER TO OWNER REVIEW; register typed entrant/epoch and verify consumer, source freshness, fallback/rollback",
+    "price_aware_state": "UNESTABLISHED_NO_AUTHENTICATED_PRICE_OR_NONVOID_CONTRACT",
+    "website_improvement_claim": "UNESTABLISHED_FULL_PERIOD; matched source-panel controls are retained separately",
+    "scientific_vs_provisional": "No new universal later-evidence/same-cutoff website-win gate. Existing scientific registrations and mandatory operational/owner policy gates remain separate."
+  },
+  {
+    "category": "pass_td",
+    "current_numerical": {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+      "loss": 0.8099173553719008,
+      "kind": "static_procedure"
+    },
+    "numerical_static_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 0.8223140495867769,
+        "best_current_with_prior_season_procedure": "empirical-player-history-control-v1",
+        "bias": -0.30578512396694213,
+        "brier": null,
+        "category": "pass_td",
+        "comparison_id": "PAIR-3e1f345848f8c716ab12:FULL_SYSTEM",
+        "crps": 0.593903167714448,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 242,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.0769152096435076,
+          0.05212182121375554
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 0.8099173553719008,
+        "max_abs": 3.0,
+        "mechanism_id": "leaf-cdf-observed-defense-D1",
+        "metric": "mae",
+        "mse": 1.2975206611570247,
+        "n": 242,
+        "p90_abs": 2.0,
+        "p95_abs": 2.0,
+        "paired_delta": -0.012396694214876033,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 197,
+            "rate": 0.8140495867768595
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 98,
+            "rate": 0.4049586776859504
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 98,
+            "rate": 0.4049586776859504
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 0.8099173553719008,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.01507537688442211,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 1.139087644194697,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 0.8223140495867769,
+        "runner_up_procedure_id": "empirical-player-history-control-v1",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.024793388429752067,
+        "scored_fallback_rows": 6,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "over_maxima": [
+      {
+        "target": "pass_td",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:known-target-time-v1",
+        "history_regime": "H-RECENT",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 3,
+        "selected": 3,
+        "wins": 3,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 3
+        },
+        "eligible": 56,
+        "admitted": 32,
+        "unavailable": 24,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 32,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 3,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-5459462170f33dd435c316fc"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-31bbca4b6f8010193eaebfba"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.05357142857142857
+      },
+      {
+        "target": "pass_td",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 3,
+        "selected": 3,
+        "wins": 3,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 3
+        },
+        "eligible": 56,
+        "admitted": 32,
+        "unavailable": 24,
+        "fallback": 1,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 32,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 3,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-fa00e73bfe139d5c8f1dd42e"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-8e0da58f304501d315380a56"
+          }
+        ],
+        "fallback_rate": 0.03125,
+        "hit_rate": 1.0,
+        "coverage": 0.05357142857142857
+      }
+    ],
+    "under_maxima": [
+      {
+        "target": "pass_td",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "mean",
+        "decision_rule": "P1",
+        "side": "under",
+        "n": 10,
+        "selected": 10,
+        "wins": 8,
+        "losses": 2,
+        "status": {
+          "LOSS": 2,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 8
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 1,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 10,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-3848323948bacceacc07aab7"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-057572c222e17e134de94acf"
+          }
+        ],
+        "fallback_rate": 0.019230769230769232,
+        "hit_rate": 0.8,
+        "coverage": 0.17857142857142858
+      }
+    ],
+    "combined_maxima": [
+      {
+        "target": "pass_td",
+        "procedure_id": "hgb-direct-history-controls-v1:squared_error_mean:known-target-time-v1",
+        "history_regime": "H-RECENT",
+        "product_id": "squared_error_mean",
+        "decision_rule": "P1",
+        "side": "Combined",
+        "n": 52,
+        "selected": 52,
+        "wins": 35,
+        "losses": 17,
+        "status": {
+          "LOSS": 17,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 35
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 28,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-9eaf8803ff1d8df7ad2335f9"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-374e95fc3faa9d36c270ec0d"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 0.6730769230769231,
+        "coverage": 0.9285714285714286
+      }
+    ],
+    "threshold_probability_maxima": [
+      {
+        "target": "pass_td",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:known-target-time-v1",
+        "history_regime": "H-RECENT",
+        "product_id": "actual_line_categorical_law",
+        "n": 52,
+        "eligible": 56,
+        "weeks": [
+          6,
+          7
+        ],
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-PROB-LEAF-23ecbb0301642115ec"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-PROB-LEAF-106d2b81016d1db58c"
+          }
+        ],
+        "brier": 0.22131552404743607,
+        "coverage": 0.9285714285714286
+      }
+    ],
+    "selection_period": "2026 REG W6\u20137 registered rolling snapshots only",
+    "numerical_period": "2026 REG W1\u20137",
+    "historical_exact_recipe": [
+      {
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "history": "H-MULTI",
+        "seasons": []
+      }
+    ],
+    "recommendation": "ADVANCE RESTORED OPTION Empirical v1 TO OWNER REVIEW; raw D1/D2 leader needs its own recovery, which does not block this option",
+    "price_aware_state": "UNESTABLISHED_NO_AUTHENTICATED_PRICE_OR_NONVOID_CONTRACT",
+    "website_improvement_claim": "UNESTABLISHED_FULL_PERIOD; matched source-panel controls are retained separately",
+    "scientific_vs_provisional": "No new universal later-evidence/same-cutoff website-win gate. Existing scientific registrations and mandatory operational/owner policy gates remain separate."
+  },
+  {
+    "category": "pass_cmp",
+    "current_numerical": {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+      "loss": 5.3429752066115705,
+      "kind": "static_procedure"
+    },
+    "numerical_static_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 5.4191719305456445,
+        "best_current_with_prior_season_procedure": "hgb-direct-history-controls-v1:absolute_error_point",
+        "bias": -0.9462809917355371,
+        "brier": null,
+        "category": "pass_cmp",
+        "comparison_id": "PAIR-34a7be36d515047d6c50:FULL_SYSTEM",
+        "crps": 3.898686200306267,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 242,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.17088360203755698,
+          0.030387734268961936
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 5.3429752066115705,
+        "max_abs": 20.0,
+        "mechanism_id": "leaf-cdf-observed-defense-D1",
+        "metric": "mae",
+        "mse": 47.68181818181818,
+        "n": 242,
+        "p90_abs": 12.0,
+        "p95_abs": 15.0,
+        "paired_delta": -0.07024793388429752,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 40,
+            "rate": 0.1652892561983471
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 207,
+            "rate": 0.8553719008264463
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 154,
+            "rate": 0.6363636363636364
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 13,
+            "rate": 0.05371900826446281
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 202,
+            "rate": 0.8347107438016529
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 135,
+            "rate": 0.5578512396694215
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 13,
+            "rate": 0.05371900826446281
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 5.3429752066115705,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.012977099236641221,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 6.905202254953737,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 5.413223140495868,
+        "runner_up_procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.024793388429752067,
+        "scored_fallback_rows": 6,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "over_maxima": [
+      {
+        "target": "pass_cmp",
+        "procedure_id": "v2-server-retained-per-game-T90-archive-selection-v2:original",
+        "history_regime": null,
+        "product_id": "recorded_threshold_decision",
+        "decision_rule": "original",
+        "side": "over",
+        "n": 12,
+        "selected": 12,
+        "wins": 11,
+        "losses": 1,
+        "status": {
+          "LOSS": 1,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 11
+        },
+        "eligible": 56,
+        "admitted": null,
+        "unavailable": null,
+        "fallback": null,
+        "fallback_scope": "UNRETAINED",
+        "fallback_denominator": null,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 11,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/source-expansion/SCORES.json",
+            "record_id": "ROLLING-PROP-9d440bd02f26cc15a05e9a4b"
+          },
+          {
+            "path": "reports/completion-20261031g/source-expansion/w7-rolling-v1/SCORES.json",
+            "record_id": "ROLLING-PROP-55842346e4d016f361434034"
+          }
+        ],
+        "fallback_rate": null,
+        "hit_rate": 0.9166666666666666,
+        "coverage": 0.21428571428571427
+      }
+    ],
+    "under_maxima": [
+      {
+        "target": "pass_cmp",
+        "procedure_id": "v2-server-retained-per-game-T90-archive-selection-v2:original",
+        "history_regime": null,
+        "product_id": "recorded_threshold_decision",
+        "decision_rule": "original",
+        "side": "under",
+        "n": 28,
+        "selected": 28,
+        "wins": 15,
+        "losses": 13,
+        "status": {
+          "LOSS": 13,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 15
+        },
+        "eligible": 56,
+        "admitted": null,
+        "unavailable": null,
+        "fallback": null,
+        "fallback_scope": "UNRETAINED",
+        "fallback_denominator": null,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 20,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/source-expansion/SCORES.json",
+            "record_id": "ROLLING-PROP-8d17c7a154796ceda4c3901a"
+          },
+          {
+            "path": "reports/completion-20261031g/source-expansion/w7-rolling-v1/SCORES.json",
+            "record_id": "ROLLING-PROP-5e1ce098e1bffb09d3f932c5"
+          }
+        ],
+        "fallback_rate": null,
+        "hit_rate": 0.5357142857142857,
+        "coverage": 0.5
+      }
+    ],
+    "combined_maxima": [
+      {
+        "target": "pass_cmp",
+        "procedure_id": "v2-server-retained-per-game-T90-archive-selection-v2:original",
+        "history_regime": null,
+        "product_id": "recorded_threshold_decision",
+        "decision_rule": "original",
+        "side": "Combined",
+        "n": 40,
+        "selected": 40,
+        "wins": 26,
+        "losses": 14,
+        "status": {
+          "LOSS": 14,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 26
+        },
+        "eligible": 56,
+        "admitted": null,
+        "unavailable": null,
+        "fallback": null,
+        "fallback_scope": "UNRETAINED",
+        "fallback_denominator": null,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 27,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/source-expansion/SCORES.json",
+            "record_id": "ROLLING-PROP-badccf9eabd130f61e37e1f6"
+          },
+          {
+            "path": "reports/completion-20261031g/source-expansion/w7-rolling-v1/SCORES.json",
+            "record_id": "ROLLING-PROP-68f2043bcd144a28ae7145ec"
+          }
+        ],
+        "fallback_rate": null,
+        "hit_rate": 0.65,
+        "coverage": 0.7142857142857143
+      }
+    ],
+    "threshold_probability_maxima": [
+      {
+        "target": "pass_cmp",
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "actual_line_categorical_law",
+        "n": 52,
+        "eligible": 56,
+        "weeks": [
+          6,
+          7
+        ],
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-PROB-LEAF-3e462657a1e00af8b0"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-PROB-LEAF-795b6968308a8c74ba"
+          }
+        ],
+        "brier": 0.2606392390610962,
+        "coverage": 0.9285714285714286
+      }
+    ],
+    "selection_period": "2026 REG W6\u20137 registered rolling snapshots only",
+    "numerical_period": "2026 REG W1\u20137",
+    "historical_exact_recipe": [
+      {
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "history": "H-MULTI",
+        "seasons": []
+      }
+    ],
+    "recommendation": "ADVANCE RESTORED OPTION HGB absolute-error v1 TO OWNER REVIEW; raw D1/D2 leader needs its own recovery, which does not block this option",
+    "price_aware_state": "UNESTABLISHED_NO_AUTHENTICATED_PRICE_OR_NONVOID_CONTRACT",
+    "website_improvement_claim": "UNESTABLISHED_FULL_PERIOD; matched source-panel controls are retained separately",
+    "scientific_vs_provisional": "No new universal later-evidence/same-cutoff website-win gate. Existing scientific registrations and mandatory operational/owner policy gates remain separate."
+  },
+  {
+    "category": "pass_att",
+    "current_numerical": {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+      "loss": 7.971074380165289,
+      "kind": "static_procedure"
+    },
+    "numerical_static_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 8.00413223140496,
+        "best_current_with_prior_season_procedure": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "bias": -1.7727272727272727,
+        "brier": null,
+        "category": "pass_att",
+        "comparison_id": "PAIR-a4d4d85d9422d80e40f5:FULL_SYSTEM",
+        "crps": 5.859597682156039,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 242,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.17537898832801818,
+          0.10926328584867934
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 7.971074380165289,
+        "max_abs": 31.0,
+        "mechanism_id": "leaf-cdf-observed-defense-D2",
+        "metric": "mae",
+        "mse": 111.94628099173553,
+        "n": 242,
+        "p90_abs": 19.900000000000006,
+        "p95_abs": 23.0,
+        "paired_delta": -0.03305785123966942,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 30,
+            "rate": 0.12396694214876033
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 179,
+            "rate": 0.7396694214876033
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 109,
+            "rate": 0.45041322314049587
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 17,
+            "rate": 0.07024793388429752
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 171,
+            "rate": 0.7066115702479339
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 96,
+            "rate": 0.39669421487603307
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 17,
+            "rate": 0.07024793388429752
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 7.971074380165289,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.004130098089829633,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 10.580466955278276,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 8.00413223140496,
+        "runner_up_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.024793388429752067,
+        "scored_fallback_rows": 6,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "over_maxima": [
+      {
+        "target": "pass_att",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "mean",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 3,
+        "selected": 3,
+        "wins": 3,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 3
+        },
+        "eligible": 56,
+        "admitted": 32,
+        "unavailable": 24,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 32,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 3,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-01621a0f72c74f09cbe84ffb"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-c07a0b9ce26241a5a036468f"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.05357142857142857
+      },
+      {
+        "target": "pass_att",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:known-target-time-v1",
+        "history_regime": "H-MULTI",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 2,
+        "selected": 2,
+        "wins": 2,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 2
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 2,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-51c90e59dafa965639c223ce"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-0b5b90a7318ed3243e96f2c7"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.03571428571428571
+      },
+      {
+        "target": "pass_att",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:known-target-time-v1",
+        "history_regime": "H-MULTI",
+        "product_id": "saved_complete_leaf_law",
+        "decision_rule": "P2",
+        "side": "over",
+        "n": 2,
+        "selected": 2,
+        "wins": 2,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 2
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "SELECTED_SIDE_SUBSET",
+        "fallback_denominator": 2,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 2,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-SELECT-f02f4abf7ec25c5b4b168d56"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-SELECT-b0522bbd460da599669587e5"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.03571428571428571
+      },
+      {
+        "target": "pass_att",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:known-target-time-v1",
+        "history_regime": "H-RECENT",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-57b4294cc1221560a6ce7b2a"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-a58985e6652c05a447ac8138"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      },
+      {
+        "target": "pass_att",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "mean",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-9da0bbaf331c63c9d6ccd8cc"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-e214924a9b1ca39b91fbad22"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      },
+      {
+        "target": "pass_att",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:known-target-time-v1",
+        "history_regime": "H-MULTI",
+        "product_id": "mean",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-468600c299a28b71ee38ae1e"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-a4b6b403cda3eb71217bd42e"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      },
+      {
+        "target": "pass_att",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:known-target-time-v1",
+        "history_regime": "H-RECENT",
+        "product_id": "saved_complete_leaf_law",
+        "decision_rule": "P2",
+        "side": "over",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "SELECTED_SIDE_SUBSET",
+        "fallback_denominator": 1,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-SELECT-c29d8910e53cc1d8ea8b4785"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-SELECT-2f2cc7f24c77b4e3c0b72b8d"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      },
+      {
+        "target": "pass_att",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:known-target-time-v1",
+        "history_regime": "H-MULTI",
+        "product_id": "mean",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 32,
+        "unavailable": 24,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 32,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-a3424248ab4a71eb4302c89c"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-e5030077a15c720c37aa8f71"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      }
+    ],
+    "under_maxima": [
+      {
+        "target": "pass_att",
+        "procedure_id": "v2-server-retained-per-game-T90-archive-selection-v2:SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+        "history_regime": null,
+        "product_id": "recorded_threshold_decision",
+        "decision_rule": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+        "side": "under",
+        "n": 42,
+        "selected": 42,
+        "wins": 25,
+        "losses": 17,
+        "status": {
+          "LOSS": 17,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 25
+        },
+        "eligible": 56,
+        "admitted": null,
+        "unavailable": null,
+        "fallback": null,
+        "fallback_scope": "UNRETAINED",
+        "fallback_denominator": null,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 26,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/source-expansion/SCORES.json",
+            "record_id": "ROLLING-PROP-80eeaac32b7f98fa626c273f"
+          },
+          {
+            "path": "reports/completion-20261031g/source-expansion/w7-rolling-v1/SCORES.json",
+            "record_id": "ROLLING-PROP-5f5ef1ed5fc0932a00f243ae"
+          }
+        ],
+        "fallback_rate": null,
+        "hit_rate": 0.5952380952380952,
+        "coverage": 0.75
+      }
+    ],
+    "combined_maxima": [
+      {
+        "target": "pass_att",
+        "procedure_id": "v2-server-retained-per-game-T90-archive-selection-v2:SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+        "history_regime": null,
+        "product_id": "recorded_threshold_decision",
+        "decision_rule": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+        "side": "Combined",
+        "n": 56,
+        "selected": 56,
+        "wins": 37,
+        "losses": 19,
+        "status": {
+          "LOSS": 19,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 37
+        },
+        "eligible": 56,
+        "admitted": null,
+        "unavailable": null,
+        "fallback": null,
+        "fallback_scope": "UNRETAINED",
+        "fallback_denominator": null,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 28,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/source-expansion/SCORES.json",
+            "record_id": "ROLLING-PROP-acc70509f3c635db49cb5121"
+          },
+          {
+            "path": "reports/completion-20261031g/source-expansion/w7-rolling-v1/SCORES.json",
+            "record_id": "ROLLING-PROP-c9e62b118fb275ebba819f72"
+          }
+        ],
+        "fallback_rate": null,
+        "hit_rate": 0.6607142857142857,
+        "coverage": 1.0
+      }
+    ],
+    "threshold_probability_maxima": [
+      {
+        "target": "pass_att",
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "actual_line_categorical_law",
+        "n": 52,
+        "eligible": 56,
+        "weeks": [
+          6,
+          7
+        ],
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-PROB-LEAF-ab4711584817a6776b"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-PROB-LEAF-d7f2a4cbe1f2793412"
+          }
+        ],
+        "brier": 0.23891657984103765,
+        "coverage": 0.9285714285714286
+      }
+    ],
+    "selection_period": "2026 REG W6\u20137 registered rolling snapshots only",
+    "numerical_period": "2026 REG W1\u20137",
+    "historical_exact_recipe": [
+      {
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "history": "H-MULTI",
+        "seasons": []
+      }
+    ],
+    "recommendation": "ADVANCE RESTORED OPTION Leaf-CDF v2 TO OWNER REVIEW; raw D1/D2 leader needs its own recovery, which does not block this option",
+    "price_aware_state": "UNESTABLISHED_NO_AUTHENTICATED_PRICE_OR_NONVOID_CONTRACT",
+    "website_improvement_claim": "UNESTABLISHED_FULL_PERIOD; matched source-panel controls are retained separately",
+    "scientific_vs_provisional": "No new universal later-evidence/same-cutoff website-win gate. Existing scientific registrations and mandatory operational/owner policy gates remain separate."
+  },
+  {
+    "category": "pass_int",
+    "current_numerical": {
+      "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+      "loss": 0.5661157024793388,
+      "kind": "static_procedure"
+    },
+    "numerical_static_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 0.5661157024793388,
+        "best_current_with_prior_season_procedure": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "bias": -0.5247933884297521,
+        "brier": null,
+        "category": "pass_int",
+        "comparison_id": "PAIR-b6111b46eb4bc6d2e6d4:FULL_SYSTEM",
+        "crps": 0.4122984453008252,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 242,
+        "full_prior_seasons_for_exact_recipe": [
+          2025,
+          2024,
+          2023,
+          2022
+        ],
+        "game_normal95_sensitivity": [
+          -0.09449015111180623,
+          0.04490337425230209
+        ],
+        "history_regime": "H-CURRENT",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 0.5661157024793388,
+        "max_abs": 3.0,
+        "mechanism_id": "leaf-cdf-without-explicit-lag-block",
+        "metric": "mae",
+        "mse": 0.8057851239669421,
+        "n": 242,
+        "p90_abs": 1.9000000000000057,
+        "p95_abs": 2.0,
+        "paired_delta": -0.024793388429752067,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 242,
+            "numerator": 217,
+            "rate": 0.8966942148760331
+          },
+          "abs_le_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_le_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_1": {
+            "denominator": 242,
+            "numerator": 132,
+            "rate": 0.5454545454545454
+          },
+          "abs_lt_10": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "abs_lt_5": {
+            "denominator": 242,
+            "numerator": 242,
+            "rate": 1.0
+          },
+          "exact_rate": {
+            "denominator": 242,
+            "numerator": 132,
+            "rate": 0.5454545454545454
+          }
+        },
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 0.5661157024793388,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.04195804195804196,
+        "release_block": "Matched incumbent/timing parity, complete recovery, later confirmation and owner admission remain unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 0.8976553480968863,
+        "runner_up_history": "H-CURRENT",
+        "runner_up_loss": 0.5909090909090909,
+        "runner_up_procedure_id": "empirical-player-history-control-v1",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.47520661157024796,
+        "scored_fallback_rows": 115,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "over_maxima": [
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:known-target-time-v1",
+        "history_regime": "H-RECENT",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 4,
+        "selected": 4,
+        "wins": 4,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 4
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 4,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-4cf3ad12f62ad65e40b40220"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-4b74082a2bbce45568239cdb"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.07142857142857142
+      },
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:known-target-time-v1",
+        "history_regime": "H-RECENT",
+        "product_id": "saved_complete_leaf_law",
+        "decision_rule": "P2",
+        "side": "over",
+        "n": 4,
+        "selected": 4,
+        "wins": 4,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 4
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "SELECTED_SIDE_SUBSET",
+        "fallback_denominator": 4,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 4,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-SELECT-2bb333f04d7aa64ec2ad7542"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-SELECT-3fa204a18ca0dd7189fcbc8d"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.07142857142857142
+      },
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:known-target-time-v1",
+        "history_regime": "H-MULTI",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 2,
+        "selected": 2,
+        "wins": 2,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 2
+        },
+        "eligible": 56,
+        "admitted": 32,
+        "unavailable": 24,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 32,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 2,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-a198e45a47206db28ed291d8"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-2f6d3b53ddb44595760ef77e"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.03571428571428571
+      },
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:known-target-time-v1",
+        "history_regime": "H-RECENT",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-5eda1f25e8dbc0aa170b5ab3"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-2518c84337de89d5d942599b"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      },
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:known-target-time-v1",
+        "history_regime": "H-RECENT",
+        "product_id": "saved_complete_leaf_law",
+        "decision_rule": "P2",
+        "side": "over",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "SELECTED_SIDE_SUBSET",
+        "fallback_denominator": 1,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-SELECT-924ea3ac6cffa0d5ef38e30d"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-SELECT-975a9f04b9b30904fa878c6f"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      },
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:known-target-time-v1",
+        "history_regime": "H-MULTI",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-d79d323887683e141fed2d26"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-7d4997082f5d607f84420698"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      },
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:known-target-time-v1",
+        "history_regime": "H-MULTI",
+        "product_id": "saved_complete_leaf_law",
+        "decision_rule": "P2",
+        "side": "over",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "SELECTED_SIDE_SUBSET",
+        "fallback_denominator": 1,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-SELECT-c9b69bcb54d542d368d87b90"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-SELECT-a93b73f1baac1aca46fa4d1a"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      },
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:known-target-time-v1",
+        "history_regime": "H-MULTI",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 48,
+        "unavailable": 8,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 48,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-77d5a68712b1290d37964065"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-f4c0a5d9512ad812140f516a"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      }
+    ],
+    "under_maxima": [
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "mean",
+        "decision_rule": "P1",
+        "side": "under",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 1,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-0006b7bdd994762c91ac6eb9"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-7bf384494a5991aec0b363b3"
+          }
+        ],
+        "fallback_rate": 0.019230769230769232,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      },
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "mean",
+        "decision_rule": "P1",
+        "side": "under",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-0aaed67ee472148897a1f1ef"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-a813cd5a7aad6e614cd5d7ab"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      },
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "mean",
+        "decision_rule": "P1",
+        "side": "under",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 1,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-d03aa0cc0062c3d00bb095e5"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-3f137de1459fce2a4877e0c3"
+          }
+        ],
+        "fallback_rate": 0.019230769230769232,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      },
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "mean",
+        "decision_rule": "P1",
+        "side": "under",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-93caab21019a921add08d155"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-768f4bc7840051e6b10725cd"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      },
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:known-target-time-v1",
+        "history_regime": "H-MULTI",
+        "product_id": "mean",
+        "decision_rule": "P1",
+        "side": "under",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-003affe72afa2f142e6a3b70"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-8c57d3f5e0529b472c1e8ee8"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      },
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:known-target-time-v1",
+        "history_regime": "H-RECENT",
+        "product_id": "mean",
+        "decision_rule": "P1",
+        "side": "under",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 56,
+        "admitted": 52,
+        "unavailable": 4,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 52,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-113dbcf75b1b6eeb074d3ed3"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-6c668e36c39076cd4f3dbd4a"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 1.0,
+        "coverage": 0.017857142857142856
+      }
+    ],
+    "combined_maxima": [
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-server-retained-per-game-T90-archive-selection-v2:original",
+        "history_regime": null,
+        "product_id": "recorded_threshold_decision",
+        "decision_rule": "original",
+        "side": "Combined",
+        "n": 32,
+        "selected": 32,
+        "wins": 21,
+        "losses": 11,
+        "status": {
+          "LOSS": 11,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 21
+        },
+        "eligible": 56,
+        "admitted": null,
+        "unavailable": null,
+        "fallback": null,
+        "fallback_scope": "UNRETAINED",
+        "fallback_denominator": null,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 22,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/source-expansion/SCORES.json",
+            "record_id": "ROLLING-PROP-3cfccd328a090487da640cb9"
+          },
+          {
+            "path": "reports/completion-20261031g/source-expansion/w7-rolling-v1/SCORES.json",
+            "record_id": "ROLLING-PROP-37cf3c483c0f616cb5e9f0d9"
+          }
+        ],
+        "fallback_rate": null,
+        "hit_rate": 0.65625,
+        "coverage": 0.5714285714285714
+      }
+    ],
+    "threshold_probability_maxima": [
+      {
+        "target": "pass_int",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "actual_line_categorical_law",
+        "n": 52,
+        "eligible": 56,
+        "weeks": [
+          6,
+          7
+        ],
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-PROB-LEAF-93a3e2ff1bf1b2ca4b"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-PROB-LEAF-af688141a1a2d34ec2"
+          }
+        ],
+        "brier": 0.24028434737957174,
+        "coverage": 0.9285714285714286
+      }
+    ],
+    "selection_period": "2026 REG W6\u20137 registered rolling snapshots only",
+    "numerical_period": "2026 REG W1\u20137",
+    "historical_exact_recipe": [
+      {
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "history": "H-CURRENT",
+        "seasons": [
+          2025,
+          2024,
+          2023,
+          2022
+        ]
+      }
+    ],
+    "recommendation": "ADVANCE CHALLENGER TO OWNER REVIEW; register typed entrant/epoch and verify consumer, source freshness, fallback/rollback",
+    "price_aware_state": "UNESTABLISHED_NO_AUTHENTICATED_PRICE_OR_NONVOID_CONTRACT",
+    "website_improvement_claim": "UNESTABLISHED_FULL_PERIOD; matched source-panel controls are retained separately",
+    "scientific_vs_provisional": "No new universal later-evidence/same-cutoff website-win gate. Existing scientific registrations and mandatory operational/owner policy gates remain separate."
+  },
+  {
+    "category": "rush_yd",
+    "current_numerical": {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+      "loss": 16.688388625592417,
+      "kind": "static_procedure"
+    },
+    "numerical_static_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 16.75,
+        "best_current_with_prior_season_procedure": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "bias": -6.024881516587678,
+        "brier": null,
+        "category": "rush_yd",
+        "comparison_id": "PAIR-62f6819026ccf327c7e8:FULL_SYSTEM",
+        "crps": 11.849938797951719,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 847,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.11840876006877363,
+          0.08523340461853665
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 16.688388625592417,
+        "max_abs": 129.0,
+        "mechanism_id": "leaf-cdf-observed-defense-D1",
+        "metric": "mae",
+        "mse": 640.3661137440758,
+        "n": 844,
+        "p90_abs": 39.0,
+        "p95_abs": 52.84999999999991,
+        "paired_delta": -0.016587677725118485,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 844,
+            "numerator": 102,
+            "rate": 0.12085308056872038
+          },
+          "abs_le_10": {
+            "denominator": 844,
+            "numerator": 429,
+            "rate": 0.5082938388625592
+          },
+          "abs_le_5": {
+            "denominator": 844,
+            "numerator": 279,
+            "rate": 0.3305687203791469
+          },
+          "abs_lt_1": {
+            "denominator": 844,
+            "numerator": 69,
+            "rate": 0.08175355450236967
+          },
+          "abs_lt_10": {
+            "denominator": 844,
+            "numerator": 403,
+            "rate": 0.4774881516587678
+          },
+          "abs_lt_5": {
+            "denominator": 844,
+            "numerator": 238,
+            "rate": 0.28199052132701424
+          },
+          "exact_rate": {
+            "denominator": 844,
+            "numerator": 69,
+            "rate": 0.08175355450236967
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 16.688388625592417,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.0009929782254060571,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 25.30545620501784,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 16.704976303317537,
+        "runner_up_procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.03909952606635071,
+        "scored_fallback_rows": 33,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "over_maxima": [
+      {
+        "target": "rush_yd",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "saved_parametric_law",
+        "decision_rule": "P2",
+        "side": "over",
+        "n": 4,
+        "selected": 4,
+        "wins": 3,
+        "losses": 1,
+        "status": {
+          "LOSS": 1,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 3
+        },
+        "eligible": 165,
+        "admitted": 5,
+        "unavailable": 160,
+        "fallback": 5,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 5,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 4,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-6fa007d29e24920cff10fb2c"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-d7989d2fba22d6527402900d"
+          }
+        ],
+        "fallback_rate": 1.0,
+        "hit_rate": 0.75,
+        "coverage": 0.024242424242424242
+      }
+    ],
+    "under_maxima": [
+      {
+        "target": "rush_yd",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "saved_parametric_law",
+        "decision_rule": "P2",
+        "side": "under",
+        "n": 1,
+        "selected": 1,
+        "wins": 1,
+        "losses": 0,
+        "status": {
+          "LOSS": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 1
+        },
+        "eligible": 165,
+        "admitted": 5,
+        "unavailable": 160,
+        "fallback": 5,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 5,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 1,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-0239a0107c6b39bf72f9e971"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-f81a8d243841fdc7405b1824"
+          }
+        ],
+        "fallback_rate": 1.0,
+        "hit_rate": 1.0,
+        "coverage": 0.006060606060606061
+      }
+    ],
+    "combined_maxima": [
+      {
+        "target": "rush_yd",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "saved_parametric_law",
+        "decision_rule": "P2",
+        "side": "Combined",
+        "n": 5,
+        "selected": 5,
+        "wins": 4,
+        "losses": 1,
+        "status": {
+          "LOSS": 1,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 4
+        },
+        "eligible": 165,
+        "admitted": 5,
+        "unavailable": 160,
+        "fallback": 5,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 5,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 5,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-24db5bf29e71711b555042d5"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-d4f2d6271210e3fbdf5801e1"
+          }
+        ],
+        "fallback_rate": 1.0,
+        "hit_rate": 0.8,
+        "coverage": 0.030303030303030304
+      }
+    ],
+    "threshold_probability_maxima": [
+      {
+        "target": "rush_yd",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "actual_line_categorical_law",
+        "n": 5,
+        "eligible": 165,
+        "weeks": [
+          6,
+          7
+        ],
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "METHOD-PROB-1c25f66bd40bb3e772"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "METHOD-PROB-e194adb66fefc8d5fc"
+          }
+        ],
+        "brier": 0.1488652656289621,
+        "coverage": 0.030303030303030304
+      }
+    ],
+    "selection_period": "2026 REG W6\u20137 registered rolling snapshots only",
+    "numerical_period": "2026 REG W1\u20137",
+    "historical_exact_recipe": [
+      {
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "history": "H-MULTI",
+        "seasons": []
+      }
+    ],
+    "recommendation": "ADVANCE RESTORED OPTION Leaf-CDF v2 TO OWNER REVIEW; raw D1/D2 leader needs its own recovery, which does not block this option",
+    "price_aware_state": "UNESTABLISHED_NO_AUTHENTICATED_PRICE_OR_NONVOID_CONTRACT",
+    "website_improvement_claim": "UNESTABLISHED_FULL_PERIOD; matched source-panel controls are retained separately",
+    "scientific_vs_provisional": "No new universal later-evidence/same-cutoff website-win gate. Existing scientific registrations and mandatory operational/owner policy gates remain separate."
+  },
+  {
+    "category": "rush_att",
+    "current_numerical": {
+      "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "loss": 3.0497630331753554,
+      "kind": "chronological_category_selection_policy"
+    },
+    "numerical_static_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 3.059241706161137,
+        "best_current_with_prior_season_procedure": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "bias": -0.8281990521327014,
+        "brier": null,
+        "category": "rush_att",
+        "comparison_id": "PAIR-343a022003013b535fd3:FULL_SYSTEM",
+        "crps": 2.162640101831089,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 847,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.03133732254527509,
+          0.028967654298829595
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 3.058056872037915,
+        "max_abs": 20.0,
+        "mechanism_id": "leaf-cdf-observed-defense-D1",
+        "metric": "mae",
+        "mse": 18.671800947867297,
+        "n": 844,
+        "p90_abs": 7.0,
+        "p95_abs": 9.0,
+        "paired_delta": -0.001184834123222749,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 844,
+            "numerator": 317,
+            "rate": 0.3755924170616114
+          },
+          "abs_le_10": {
+            "denominator": 844,
+            "numerator": 814,
+            "rate": 0.9644549763033176
+          },
+          "abs_le_5": {
+            "denominator": 844,
+            "numerator": 698,
+            "rate": 0.8270142180094787
+          },
+          "abs_lt_1": {
+            "denominator": 844,
+            "numerator": 133,
+            "rate": 0.15758293838862558
+          },
+          "abs_lt_10": {
+            "denominator": 844,
+            "numerator": 803,
+            "rate": 0.9514218009478673
+          },
+          "abs_lt_5": {
+            "denominator": 844,
+            "numerator": 643,
+            "rate": 0.7618483412322274
+          },
+          "exact_rate": {
+            "denominator": 844,
+            "numerator": 133,
+            "rate": 0.15758293838862558
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 3.058056872037915,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.00038729666924864454,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 4.321087935678618,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 3.059241706161137,
+        "runner_up_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.03909952606635071,
+        "scored_fallback_rows": 33,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "over_maxima": [
+      {
+        "target": "rush_att",
+        "procedure_id": "v2-hgb-rush-att-qb-rb-specialization-v1:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "absolute_loss_point",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 17,
+        "selected": 17,
+        "wins": 12,
+        "losses": 5,
+        "status": {
+          "LOSS": 5,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 12
+        },
+        "eligible": 87,
+        "admitted": 76,
+        "unavailable": 11,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 76,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 15,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-334e989959f1f9ad3c9ff7f8"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-172164e8e605450988af0046"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 0.7058823529411765,
+        "coverage": 0.19540229885057472
+      }
+    ],
+    "under_maxima": [
+      {
+        "target": "rush_att",
+        "procedure_id": "v2-server-retained-per-game-T90-archive-selection-v2:SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+        "history_regime": null,
+        "product_id": "recorded_threshold_decision",
+        "decision_rule": "SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+        "side": "under",
+        "n": 34,
+        "selected": 36,
+        "wins": 20,
+        "losses": 14,
+        "status": {
+          "LOSS": 14,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 2,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 20
+        },
+        "eligible": 87,
+        "admitted": null,
+        "unavailable": null,
+        "fallback": null,
+        "fallback_scope": "UNRETAINED",
+        "fallback_denominator": null,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 23,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/source-expansion/SCORES.json",
+            "record_id": "ROLLING-PROP-1667ca2431d43f2b01705368"
+          },
+          {
+            "path": "reports/completion-20261031g/source-expansion/w7-rolling-v1/SCORES.json",
+            "record_id": "ROLLING-PROP-5a811b58216d072af5846567"
+          }
+        ],
+        "fallback_rate": null,
+        "hit_rate": 0.5882352941176471,
+        "coverage": 0.41379310344827586
+      }
+    ],
+    "combined_maxima": [
+      {
+        "target": "rush_att",
+        "procedure_id": "v2-server-retained-per-game-T90-archive-selection-v2:SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+        "history_regime": null,
+        "product_id": "recorded_threshold_decision",
+        "decision_rule": "SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+        "side": "Combined",
+        "n": 82,
+        "selected": 87,
+        "wins": 51,
+        "losses": 31,
+        "status": {
+          "LOSS": 31,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 5,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 51
+        },
+        "eligible": 87,
+        "admitted": null,
+        "unavailable": null,
+        "fallback": null,
+        "fallback_scope": "UNRETAINED",
+        "fallback_denominator": null,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 28,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/source-expansion/SCORES.json",
+            "record_id": "ROLLING-PROP-40fdfab3fd80d2d22dd5fc0c"
+          },
+          {
+            "path": "reports/completion-20261031g/source-expansion/w7-rolling-v1/SCORES.json",
+            "record_id": "ROLLING-PROP-10b4cc8b2e17a3117c43209c"
+          }
+        ],
+        "fallback_rate": null,
+        "hit_rate": 0.6219512195121951,
+        "coverage": 1.0
+      }
+    ],
+    "threshold_probability_maxima": [
+      {
+        "target": "rush_att",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "actual_line_categorical_law",
+        "n": 76,
+        "eligible": 87,
+        "weeks": [
+          6,
+          7
+        ],
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-PROB-LEAF-7c32853b3f674dae2e"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-PROB-LEAF-824b9478262f340ae2"
+          }
+        ],
+        "brier": 0.26205788119169693,
+        "coverage": 0.8735632183908046
+      }
+    ],
+    "selection_period": "2026 REG W6\u20137 registered rolling snapshots only",
+    "numerical_period": "2026 REG W1\u20137",
+    "historical_exact_recipe": [
+      {
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "history": "H-MULTI",
+        "seasons": []
+      }
+    ],
+    "recommendation": "ADVANCE SELECTOR/READY-STATIC PACKAGE TO OWNER REVIEW; new routing entry needs deterministic score-memory/runtime/catalog/rollback admission",
+    "price_aware_state": "UNESTABLISHED_NO_AUTHENTICATED_PRICE_OR_NONVOID_CONTRACT",
+    "website_improvement_claim": "UNESTABLISHED_FULL_PERIOD; matched source-panel controls are retained separately",
+    "scientific_vs_provisional": "No new universal later-evidence/same-cutoff website-win gate. Existing scientific registrations and mandatory operational/owner policy gates remain separate."
+  },
+  {
+    "category": "rec",
+    "current_numerical": {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+      "loss": 1.2455146364494807,
+      "kind": "static_procedure"
+    },
+    "numerical_static_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 1.2455146364494807,
+        "best_current_with_prior_season_procedure": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "bias": -0.43153918791312557,
+        "brier": null,
+        "category": "rec",
+        "comparison_id": "PAIR-f5855f6c667cb329aa4a:FULL_SYSTEM",
+        "crps": 0.8905598417739717,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 2152,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.010239469992122125,
+          0.008350895865587658
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 1.2455146364494807,
+        "max_abs": 13.0,
+        "mechanism_id": "leaf-cdf-observed-defense-D2",
+        "metric": "mae",
+        "mse": 3.440982058545798,
+        "n": 2118,
+        "p90_abs": 3.0,
+        "p95_abs": 4.0,
+        "paired_delta": -0.0009442870632672333,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 1487,
+            "rate": 0.7020774315391879
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 2115,
+            "rate": 0.9985835694050992
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 2089,
+            "rate": 0.9863078375826251
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 677,
+            "rate": 0.31964117091595845
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 2114,
+            "rate": 0.9981114258734656
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 2060,
+            "rate": 0.9726156751652503
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 677,
+            "rate": 0.31964117091595845
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 1.2455146364494807,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.0007575757575757576,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 1.854988425447932,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 1.246458923512748,
+        "runner_up_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.049575070821529746,
+        "scored_fallback_rows": 105,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "TIED_FIRST"
+      },
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 1.2455146364494807,
+        "best_current_with_prior_season_procedure": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "bias": -0.3881019830028329,
+        "brier": null,
+        "category": "rec",
+        "comparison_id": "PAIR-315acdeb1368b1ff7634:FULL_SYSTEM",
+        "crps": 0.8909082351841422,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 2152,
+        "full_prior_seasons_for_exact_recipe": [
+          2025,
+          2024,
+          2023,
+          2022
+        ],
+        "game_normal95_sensitivity": [
+          -0.013892142987992316,
+          0.012003568861457849
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 1.2455146364494807,
+        "max_abs": 13.0,
+        "mechanism_id": "leaf-cdf-without-explicit-lag-block",
+        "metric": "mae",
+        "mse": 3.396600566572238,
+        "n": 2118,
+        "p90_abs": 3.0,
+        "p95_abs": 4.0,
+        "paired_delta": -0.0009442870632672333,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 1476,
+            "rate": 0.6968838526912181
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 2115,
+            "rate": 0.9985835694050992
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 2089,
+            "rate": 0.9863078375826251
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 671,
+            "rate": 0.31680830972615676
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 2114,
+            "rate": 0.9981114258734656
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 2065,
+            "rate": 0.9749763928234183
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 671,
+            "rate": 0.31680830972615676
+          }
+        },
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 1.2455146364494807,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.0007575757575757576,
+        "release_block": "Matched incumbent/timing parity, complete recovery, later confirmation and owner admission remain unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 1.842986860119257,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 1.246458923512748,
+        "runner_up_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.049575070821529746,
+        "scored_fallback_rows": 105,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "TIED_FIRST"
+      }
+    ],
+    "over_maxima": [
+      {
+        "target": "rec",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:known-target-time-v1",
+        "history_regime": "H-MULTI",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 61,
+        "selected": 61,
+        "wins": 41,
+        "losses": 20,
+        "status": {
+          "LOSS": 20,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 41
+        },
+        "eligible": 351,
+        "admitted": 196,
+        "unavailable": 155,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 196,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 15,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-86d39be8e48481ffe5ae402a"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-f52c548e58cc2f2be92ae32d"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 0.6721311475409836,
+        "coverage": 0.1737891737891738
+      }
+    ],
+    "under_maxima": [
+      {
+        "target": "rec",
+        "procedure_id": "v2-server-retained-per-game-T90-archive-selection-v2:original",
+        "history_regime": null,
+        "product_id": "recorded_threshold_decision",
+        "decision_rule": "original",
+        "side": "under",
+        "n": 123,
+        "selected": 128,
+        "wins": 79,
+        "losses": 44,
+        "status": {
+          "LOSS": 44,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 5,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 79
+        },
+        "eligible": 351,
+        "admitted": null,
+        "unavailable": null,
+        "fallback": null,
+        "fallback_scope": "UNRETAINED",
+        "fallback_denominator": null,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 28,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/source-expansion/SCORES.json",
+            "record_id": "ROLLING-PROP-bd20f696dd6cae71dac311e1"
+          },
+          {
+            "path": "reports/completion-20261031g/source-expansion/w7-rolling-v1/SCORES.json",
+            "record_id": "ROLLING-PROP-1be4797afd5b9cc42093dcab"
+          }
+        ],
+        "fallback_rate": null,
+        "hit_rate": 0.6422764227642277,
+        "coverage": 0.3646723646723647
+      }
+    ],
+    "combined_maxima": [
+      {
+        "target": "rec",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:known-target-time-v1",
+        "history_regime": "H-MULTI",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "Combined",
+        "n": 196,
+        "selected": 196,
+        "wins": 122,
+        "losses": 74,
+        "status": {
+          "LOSS": 74,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 122
+        },
+        "eligible": 351,
+        "admitted": 196,
+        "unavailable": 155,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 196,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 16,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-326b105ddf904934f3cb5f54"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-192efb1de639ae8d07f8cf9f"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 0.6224489795918368,
+        "coverage": 0.5584045584045584
+      }
+    ],
+    "threshold_probability_maxima": [
+      {
+        "target": "rec",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "actual_line_categorical_law",
+        "n": 6,
+        "eligible": 351,
+        "weeks": [
+          6,
+          7
+        ],
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "METHOD-PROB-bc829826d80bcb1e30"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "METHOD-PROB-c0962fc9dead00a75c"
+          }
+        ],
+        "brier": 0.25134568546520364,
+        "coverage": 0.017094017094017096
+      }
+    ],
+    "selection_period": "2026 REG W6\u20137 registered rolling snapshots only",
+    "numerical_period": "2026 REG W1\u20137",
+    "historical_exact_recipe": [
+      {
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "history": "H-MULTI",
+        "seasons": []
+      },
+      {
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "history": "H-MULTI",
+        "seasons": [
+          2025,
+          2024,
+          2023,
+          2022
+        ]
+      }
+    ],
+    "recommendation": "ADVANCE CHALLENGER TO OWNER REVIEW; register typed entrant/epoch and verify consumer, source freshness, fallback/rollback",
+    "price_aware_state": "UNESTABLISHED_NO_AUTHENTICATED_PRICE_OR_NONVOID_CONTRACT",
+    "website_improvement_claim": "UNESTABLISHED_FULL_PERIOD; matched source-panel controls are retained separately",
+    "scientific_vs_provisional": "No new universal later-evidence/same-cutoff website-win gate. Existing scientific registrations and mandatory operational/owner policy gates remain separate."
+  },
+  {
+    "category": "rec_yd",
+    "current_numerical": {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+      "loss": 16.18932955618508,
+      "kind": "static_procedure"
+    },
+    "numerical_static_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 16.19877242681775,
+        "best_current_with_prior_season_procedure": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "bias": -6.909820585457979,
+        "brier": null,
+        "category": "rec_yd",
+        "comparison_id": "PAIR-e1bb486fcbfb407fca06:FULL_SYSTEM",
+        "crps": 11.6124519474203,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 2152,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.059290388269193396,
+          0.040404647003848736
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 16.18932955618508,
+        "max_abs": 155.0,
+        "mechanism_id": "leaf-cdf-observed-defense-D2",
+        "metric": "mae",
+        "mse": 645.4112370160528,
+        "n": 2118,
+        "p90_abs": 41.0,
+        "p95_abs": 57.0,
+        "paired_delta": -0.009442870632672332,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 377,
+            "rate": 0.17799811142587346
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 1128,
+            "rate": 0.5325779036827195
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 757,
+            "rate": 0.3574126534466478
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 288,
+            "rate": 0.1359773371104816
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 1068,
+            "rate": 0.5042492917847026
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 642,
+            "rate": 0.3031161473087819
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 288,
+            "rate": 0.1359773371104816
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 16.18932955618508,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.000582937421667784,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 25.404945129168315,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 16.19877242681775,
+        "runner_up_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.049575070821529746,
+        "scored_fallback_rows": 105,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "over_maxima": [
+      {
+        "target": "rec_yd",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "saved_parametric_law",
+        "decision_rule": "P2",
+        "side": "over",
+        "n": 3,
+        "selected": 3,
+        "wins": 2,
+        "losses": 1,
+        "status": {
+          "LOSS": 1,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 2
+        },
+        "eligible": 350,
+        "admitted": 6,
+        "unavailable": 344,
+        "fallback": 6,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 6,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 3,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-a6b804275eca3cf012fa8f41"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-feacca30dd970462c4f02dbd"
+          }
+        ],
+        "fallback_rate": 1.0,
+        "hit_rate": 0.6666666666666666,
+        "coverage": 0.008571428571428572
+      }
+    ],
+    "under_maxima": [
+      {
+        "target": "rec_yd",
+        "procedure_id": "v2-server-retained-per-game-T90-archive-selection-v2:original",
+        "history_regime": null,
+        "product_id": "recorded_threshold_decision",
+        "decision_rule": "original",
+        "side": "under",
+        "n": 42,
+        "selected": 44,
+        "wins": 26,
+        "losses": 16,
+        "status": {
+          "LOSS": 16,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 2,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 26
+        },
+        "eligible": 350,
+        "admitted": null,
+        "unavailable": null,
+        "fallback": null,
+        "fallback_scope": "UNRETAINED",
+        "fallback_denominator": null,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 23,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/source-expansion/SCORES.json",
+            "record_id": "ROLLING-PROP-318ba84087b43462ed5c1995"
+          },
+          {
+            "path": "reports/completion-20261031g/source-expansion/w7-rolling-v1/SCORES.json",
+            "record_id": "ROLLING-PROP-de4a7ca954b164f8dfd2c53f"
+          }
+        ],
+        "fallback_rate": null,
+        "hit_rate": 0.6190476190476191,
+        "coverage": 0.12571428571428572
+      }
+    ],
+    "combined_maxima": [
+      {
+        "target": "rec_yd",
+        "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point:known-target-time-v1",
+        "history_regime": "H-RECENT",
+        "product_id": "absolute_error_point",
+        "decision_rule": "P1",
+        "side": "Combined",
+        "n": 314,
+        "selected": 314,
+        "wins": 176,
+        "losses": 138,
+        "status": {
+          "LOSS": 138,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 176
+        },
+        "eligible": 350,
+        "admitted": 314,
+        "unavailable": 36,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 314,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 28,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-7649d3fc3ed8c44c0459b399"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-118b9d8d17dd259144250fec"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 0.5605095541401274,
+        "coverage": 0.8971428571428571
+      }
+    ],
+    "threshold_probability_maxima": [
+      {
+        "target": "rec_yd",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "actual_line_categorical_law",
+        "n": 6,
+        "eligible": 350,
+        "weeks": [
+          6,
+          7
+        ],
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "METHOD-PROB-ccccb1941b2120ad96"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "METHOD-PROB-c2cc966d04c4c75139"
+          }
+        ],
+        "brier": 0.23303402720849223,
+        "coverage": 0.017142857142857144
+      }
+    ],
+    "selection_period": "2026 REG W6\u20137 registered rolling snapshots only",
+    "numerical_period": "2026 REG W1\u20137",
+    "historical_exact_recipe": [
+      {
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "history": "H-MULTI",
+        "seasons": []
+      }
+    ],
+    "recommendation": "ADVANCE RESTORED OPTION Leaf-CDF v2 TO OWNER REVIEW; raw D1/D2 leader needs its own recovery, which does not block this option",
+    "price_aware_state": "UNESTABLISHED_NO_AUTHENTICATED_PRICE_OR_NONVOID_CONTRACT",
+    "website_improvement_claim": "UNESTABLISHED_FULL_PERIOD; matched source-panel controls are retained separately",
+    "scientific_vs_provisional": "No new universal later-evidence/same-cutoff website-win gate. Existing scientific registrations and mandatory operational/owner policy gates remain separate."
+  },
+  {
+    "category": "rush_rec_yd",
+    "current_numerical": {
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "loss": 20.125661066525677,
+      "kind": "static_procedure"
+    },
+    "numerical_static_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 20.125661066525677,
+        "best_current_with_prior_season_procedure": "hgb-direct-history-controls-v1:absolute_error_point",
+        "bias": -8.358908707303168,
+        "brier": null,
+        "category": "rush_rec_yd",
+        "comparison_id": "PAIR-6e06760c131790af3af9:FULL_SYSTEM",
+        "crps": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 2152,
+        "full_prior_seasons_for_exact_recipe": [
+          2025,
+          2024,
+          2023,
+          2022
+        ],
+        "game_normal95_sensitivity": [
+          -0.27447866079557576,
+          0.10087161537666874
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 20.125661066525677,
+        "max_abs": 157.7925524250844,
+        "mechanism_id": "hgb-L1",
+        "metric": "mae",
+        "mse": 886.7424737673884,
+        "n": 2118,
+        "p90_abs": 49.445456302652595,
+        "p95_abs": 65.73281220727824,
+        "paired_delta": -0.0868035227094535,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 190,
+            "rate": 0.08970727101038715
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 894,
+            "rate": 0.42209631728045327
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 531,
+            "rate": 0.2507082152974504
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 190,
+            "rate": 0.08970727101038715
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 894,
+            "rate": 0.42209631728045327
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 531,
+            "rate": 0.2507082152974504
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 0,
+            "rate": 0.0
+          }
+        },
+        "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+        "product_id": "absolute_error_point",
+        "ranking_loss": 20.125661066525677,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.004294554101813186,
+        "release_block": "Matched incumbent/timing parity, complete recovery, later confirmation and owner admission remain unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 29.778221467498497,
+        "runner_up_history": "H-RECENT",
+        "runner_up_loss": 20.21246458923513,
+        "runner_up_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.0,
+        "scored_fallback_rows": 0,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "over_maxima": [
+      {
+        "target": "rush_rec_yd",
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:known-target-time-v1",
+        "history_regime": "H-MULTI",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "over",
+        "n": 7,
+        "selected": 7,
+        "wins": 5,
+        "losses": 2,
+        "status": {
+          "LOSS": 2,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 5
+        },
+        "eligible": 86,
+        "admitted": 51,
+        "unavailable": 35,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 51,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 6,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-43bfa54b17354d8f1325800a"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-188748672e7fd467ea6ba67c"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 0.7142857142857143,
+        "coverage": 0.08139534883720931
+      }
+    ],
+    "under_maxima": [
+      {
+        "target": "rush_rec_yd",
+        "procedure_id": "empirical-player-history-control-v1:known-target-time-v1",
+        "history_regime": "H-RECENT",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "under",
+        "n": 47,
+        "selected": 47,
+        "wins": 27,
+        "losses": 20,
+        "status": {
+          "LOSS": 20,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 27
+        },
+        "eligible": 86,
+        "admitted": 75,
+        "unavailable": 11,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 75,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 27,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-e0e3a7be6b2900ee343f0c5a"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-50b6b352db1b49e952d3b27b"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 0.574468085106383,
+        "coverage": 0.5465116279069767
+      }
+    ],
+    "combined_maxima": [
+      {
+        "target": "rush_rec_yd",
+        "procedure_id": "empirical-player-history-control-v1:known-target-time-v1",
+        "history_regime": "H-RECENT",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "Combined",
+        "n": 75,
+        "selected": 75,
+        "wins": 43,
+        "losses": 32,
+        "status": {
+          "LOSS": 32,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 43
+        },
+        "eligible": 86,
+        "admitted": 75,
+        "unavailable": 11,
+        "fallback": 0,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 75,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 28,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-b01595ebe2345681fbfd6988"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-f541da65bf69d27061fe2916"
+          }
+        ],
+        "fallback_rate": 0.0,
+        "hit_rate": 0.5733333333333334,
+        "coverage": 0.872093023255814
+      },
+      {
+        "target": "rush_rec_yd",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "lower_median",
+        "decision_rule": "P1",
+        "side": "Combined",
+        "n": 75,
+        "selected": 75,
+        "wins": 43,
+        "losses": 32,
+        "status": {
+          "LOSS": 32,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 43
+        },
+        "eligible": 86,
+        "admitted": 75,
+        "unavailable": 11,
+        "fallback": 1,
+        "fallback_scope": "ADMITTED_FORECAST_POOL",
+        "fallback_denominator": 75,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 28,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-988367e00732b4af366ab2dd"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-rolling-method-comparison-v1/SCORES.json",
+            "record_id": "ADMIT-d4eea2ddf4f262a74a8a21c3"
+          }
+        ],
+        "fallback_rate": 0.013333333333333334,
+        "hit_rate": 0.5733333333333334,
+        "coverage": 0.872093023255814
+      },
+      {
+        "target": "rush_rec_yd",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "saved_complete_leaf_law",
+        "decision_rule": "P2",
+        "side": "Combined",
+        "n": 75,
+        "selected": 75,
+        "wins": 43,
+        "losses": 32,
+        "status": {
+          "LOSS": 32,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "UNRESOLVED_CONTRACT": 0,
+          "VOID": 0,
+          "WIN": 43
+        },
+        "eligible": 86,
+        "admitted": 75,
+        "unavailable": 11,
+        "fallback": 1,
+        "fallback_scope": "SELECTED_SIDE_SUBSET",
+        "fallback_denominator": 75,
+        "weeks": [
+          6,
+          7
+        ],
+        "games": 28,
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-SELECT-4a60ce44a467d361cb20233d"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-SELECT-7c4793dc4f7c1659c272744b"
+          }
+        ],
+        "fallback_rate": 0.013333333333333334,
+        "hit_rate": 0.5733333333333334,
+        "coverage": 0.872093023255814
+      }
+    ],
+    "threshold_probability_maxima": [
+      {
+        "target": "rush_rec_yd",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs:known-target-time-v1",
+        "history_regime": "H-CURRENT",
+        "product_id": "actual_line_categorical_law",
+        "n": 75,
+        "eligible": 86,
+        "weeks": [
+          6,
+          7
+        ],
+        "source_records": [
+          {
+            "path": "reports/completion-20261031g/roster/w6-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-PROB-LEAF-0154abff7415b55242"
+          },
+          {
+            "path": "reports/completion-20261031g/roster/w7-complete-leaf-law-v1/SCORES.json",
+            "record_id": "LEAF-PROB-LEAF-50a9ada993c0da92cf"
+          }
+        ],
+        "brier": 0.26703976754494896,
+        "coverage": 0.872093023255814
+      }
+    ],
+    "selection_period": "2026 REG W6\u20137 registered rolling snapshots only",
+    "numerical_period": "2026 REG W1\u20137",
+    "historical_exact_recipe": [
+      {
+        "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+        "history": "H-MULTI",
+        "seasons": [
+          2025,
+          2024,
+          2023,
+          2022
+        ]
+      }
+    ],
+    "recommendation": "ADVANCE CHALLENGER TO OWNER REVIEW; register typed entrant/epoch and verify consumer, source freshness, fallback/rollback",
+    "price_aware_state": "UNESTABLISHED_NO_AUTHENTICATED_PRICE_OR_NONVOID_CONTRACT",
+    "website_improvement_claim": "UNESTABLISHED_FULL_PERIOD; matched source-panel controls are retained separately",
+    "scientific_vs_provisional": "No new universal later-evidence/same-cutoff website-win gate. Existing scientific registrations and mandatory operational/owner policy gates remain separate."
+  },
+  {
+    "category": "nick-chart-ppr-v1",
+    "current_numerical": {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+      "loss": 4.490360322170411,
+      "kind": "static_procedure"
+    },
+    "numerical_static_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 4.496515472657906,
+        "best_current_with_prior_season_procedure": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "bias": -1.5863840610428148,
+        "brier": null,
+        "category": "nick-chart-ppr-v1",
+        "comparison_id": "PAIR-a83aff3e26b8ef648a46:FULL_SYSTEM",
+        "crps": 3.178420916010816,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 2394,
+        "full_prior_seasons_for_exact_recipe": [],
+        "game_normal95_sensitivity": [
+          -0.0185841334970835,
+          0.010580742229597304
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 4.490360322170411,
+        "max_abs": 37.2,
+        "mechanism_id": "leaf-cdf-observed-defense-D2",
+        "metric": "mae",
+        "mse": 42.10213955065706,
+        "n": 2359,
+        "p90_abs": 10.468000000000012,
+        "p95_abs": 14.2,
+        "paired_delta": -0.004001695633743097,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2359,
+            "numerator": 500,
+            "rate": 0.21195421788893598
+          },
+          "abs_le_10": {
+            "denominator": 2359,
+            "numerator": 2098,
+            "rate": 0.8893598982619754
+          },
+          "abs_le_5": {
+            "denominator": 2359,
+            "numerator": 1609,
+            "rate": 0.682068673166596
+          },
+          "abs_lt_1": {
+            "denominator": 2359,
+            "numerator": 466,
+            "rate": 0.19754133107248834
+          },
+          "abs_lt_10": {
+            "denominator": 2359,
+            "numerator": 2091,
+            "rate": 0.8863925392115303
+          },
+          "abs_lt_5": {
+            "denominator": 2359,
+            "numerator": 1589,
+            "rate": 0.6735905044510386
+          },
+          "exact_rate": {
+            "denominator": 2359,
+            "numerator": 133,
+            "rate": 0.05637982195845697
+          }
+        },
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "product_id": "lower_median",
+        "ranking_loss": 4.490360322170411,
+        "ranking_product": "display_point",
+        "relative_error_change": -0.0008903812416290925,
+        "release_block": "Exact older evaluation missing; model archive recovery and incumbent/timing parity unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 6.48861615066395,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 4.494362017804154,
+        "runner_up_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "runner_up_product": "lower_median",
+        "scored_fallback_rate": 0.04705383637134379,
+        "scored_fallback_rows": 111,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "over_maxima": [],
+    "under_maxima": [],
+    "combined_maxima": [],
+    "threshold_probability_maxima": [],
+    "selection_period": "2026 REG W6\u20137 registered rolling snapshots only",
+    "numerical_period": "2026 REG W1\u20137",
+    "historical_exact_recipe": [
+      {
+        "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "history": "H-MULTI",
+        "seasons": []
+      }
+    ],
+    "recommendation": "UNRESOLVED; exact chart target/rare-label/consumer contract and own model recovery; never substitute website fantasy",
+    "price_aware_state": "UNESTABLISHED_NO_AUTHENTICATED_PRICE_OR_NONVOID_CONTRACT",
+    "website_improvement_claim": "UNESTABLISHED_FULL_PERIOD; matched source-panel controls are retained separately",
+    "scientific_vs_provisional": "No new universal later-evidence/same-cutoff website-win gate. Existing scientific registrations and mandatory operational/owner policy gates remain separate."
+  },
+  {
+    "category": "anytime_td",
+    "current_numerical": {
+      "procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "loss": 0.14314429954020047,
+      "kind": "static_procedure"
+    },
+    "numerical_static_leaders": [
+      {
+        "CRPS": null,
+        "best_current_with_prior_season_loss": 0.14314429954020047,
+        "best_current_with_prior_season_procedure": "hgb-direct-history-controls-v1:log_loss_probability",
+        "bias": -0.009058043207488802,
+        "brier": 0.14314429954020047,
+        "category": "anytime_td",
+        "comparison_id": "PAIR-f50eb216568b5cee56fc:FULL_SYSTEM",
+        "crps": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "forecast_rows": 2152,
+        "full_prior_seasons_for_exact_recipe": [
+          2025,
+          2024,
+          2023,
+          2022
+        ],
+        "game_normal95_sensitivity": [
+          -0.005047215787482312,
+          0.0038258514585437333
+        ],
+        "history_regime": "H-MULTI",
+        "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+        "mae": 0.2826191315328142,
+        "max_abs": 0.9401684837923856,
+        "mechanism_id": "hgb-binary-logloss",
+        "metric": "brier",
+        "mse": 0.14314429954020047,
+        "n": 2118,
+        "p90_abs": 0.7908234859257844,
+        "p95_abs": 0.8493710514828716,
+        "paired_delta": -0.0006106821644692894,
+        "period": "2026 REG W1\u20137",
+        "population": "primary retrospective participant/stat-row panel",
+        "precision_counts": {
+          "abs_le_1": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_le_10": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_le_5": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_lt_1": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_lt_10": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "abs_lt_5": {
+            "denominator": 2118,
+            "numerator": 2118,
+            "rate": 1.0
+          },
+          "exact_rate": {
+            "denominator": 2118,
+            "numerator": 0,
+            "rate": 0.0
+          }
+        },
+        "procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+        "product_id": "log_loss_probability",
+        "ranking_loss": 0.14314429954020047,
+        "ranking_product": "event_probability",
+        "relative_error_change": -0.004248076534306651,
+        "release_block": "Matched incumbent/timing parity, complete recovery, later confirmation and owner admission remain unestablished",
+        "release_status": "RESEARCH_ONLY_OWNER_REVIEW_NOT_RELEASE_READY",
+        "rmse": 0.37834415489102047,
+        "runner_up_history": "H-MULTI",
+        "runner_up_loss": 0.14375498170466974,
+        "runner_up_procedure_id": "empirical-player-history-control-v1",
+        "runner_up_product": "event_probability",
+        "scored_fallback_rate": 0.0,
+        "scored_fallback_rows": 0,
+        "source_score": "2026/SCORES.json",
+        "unique_games": 107,
+        "unique_weeks": 7,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "winner_status": "LOWEST_OBSERVED"
+      }
+    ],
+    "over_maxima": [],
+    "under_maxima": [],
+    "combined_maxima": [],
+    "threshold_probability_maxima": [],
+    "selection_period": "2026 REG W6\u20137 registered rolling snapshots only",
+    "numerical_period": "2026 REG W1\u20137",
+    "historical_exact_recipe": [
+      {
+        "procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+        "history": "H-MULTI",
+        "seasons": [
+          2025,
+          2024,
+          2023,
+          2022
+        ]
+      }
+    ],
+    "recommendation": "RETAIN INCUMBENT pending owner probability-policy decision; numeric-MAE policy does not select TD probabilities",
+    "price_aware_state": "UNESTABLISHED_NO_AUTHENTICATED_PRICE_OR_NONVOID_CONTRACT",
+    "website_improvement_claim": "UNESTABLISHED_FULL_PERIOD; matched source-panel controls are retained separately",
+    "scientific_vs_provisional": "No new universal later-evidence/same-cutoff website-win gate. Existing scientific registrations and mandatory operational/owner policy gates remain separate."
+  }
+]

@@ -7,6 +7,8 @@ one bounded shard are decoded at a time; CSV output is also streamed.
 import collections
 import csv
 import hashlib
+import gzip
+import io
 import json
 import os
 from pathlib import Path
@@ -25,6 +27,20 @@ OUTPUT='reports/continuation-20261030c/results-index'
 def sha(data):return hashlib.sha256(data).hexdigest()
 
 
+def decode_shard(root,part):
+    body=(Path(root)/part['path']).read_bytes()
+    if len(body)!=part['bytes'] or sha(body)!=part['sha256']:raise ValueError('immutable shard changed')
+    if part.get('compression')=='gzip':
+        body=gzip.decompress(body)
+        if len(body)!=part['uncompressed_bytes'] or sha(body)!=part['uncompressed_sha256']:raise ValueError('uncompressed shard changed')
+    elif part.get('compression') is not None:raise ValueError('unsupported shard compression')
+    return json.loads(body)
+
+
+def csv_handle(path,compressed):
+    return io.TextIOWrapper(gzip.GzipFile(filename=str(path),mode='wb',mtime=0),encoding='utf-8',newline='') if compressed else path.open('w',newline='')
+
+
 def new_records(root,item,inputs):
     artifact=item['artifact'];body=(root/artifact).read_bytes();digest=sha(body);obj=json.loads(body)
     if item['state']=='SOFTWARE_VERIFIED':
@@ -35,7 +51,13 @@ def new_records(root,item,inputs):
     if not isinstance(obj,list):raise ValueError('aggregate score array required')
     dates={};annotations={};supersessions={}
     common_fields={}
-    row_metadata={}
+    row_metadata={};reporting={}
+    if item.get('reporting_annotations'):
+        raw=(root/item['reporting_annotations']).read_bytes();projection=json.loads(raw)
+        if projection['source_score_sha256']!=digest:raise ValueError('reporting annotation source mismatch')
+        reporting={r['source_row_index']:r for r in projection['rows']}
+        if len(reporting)!=len(projection['rows']):raise ValueError('duplicate reporting annotation row')
+        inputs.append(dict(source_artifact=item['reporting_annotations'],sha256=sha(raw),rows=len(reporting),kind='source_bound_reporting_correction_no_prediction_change'))
     if item.get('selection_contract_projection'):
         raw=(root/item['selection_contract_projection']).read_bytes();projection=json.loads(raw)
         if projection['source_score_sha256']!=digest:raise ValueError('selection contract source binding mismatch')
@@ -71,8 +93,48 @@ def new_records(root,item,inputs):
                 if len(by_id)!=len(obj)or set(by_id)!={r.get('record_id')for r in obj}:raise ValueError('comparison projection census mismatch')
                 annotations={i:by_id[r['record_id']]for i,r in enumerate(obj)}
         inputs.append(dict(source_artifact=item[field],sha256=sha(raw),rows=len(projection['rows']),kind='source_bound_annotation_not_extra_evaluation'))
+    if item.get('sparse_comparison_annotations'):
+        raw=(root/item['sparse_comparison_annotations']).read_bytes();projection=json.loads(raw)
+        sparse=[r for r in projection if r['source_artifact']==artifact]
+        for r in sparse:
+            i=r['source_row_index']
+            if r['source_artifact_sha256']!=digest or obj[i]['record_id']!=r['record_id']:
+                raise ValueError('sparse comparison source identity mismatch')
+            value=dict(r['comparison'])
+            if value.pop('status')!='EXACT_FULL_MASK_PAIRED_ACTUAL_LINE_PROPER_SCORE':
+                raise ValueError('unsupported sparse comparison mask')
+            value['status']='PAIRED_RETAINED_ROWS';value['membership_sha256']=r['membership_sha256']
+            if i in annotations:raise ValueError('comparison metadata collision')
+            annotations[i]=value
+        inputs.append(dict(source_artifact=item['sparse_comparison_annotations'],sha256=sha(raw),rows=len(sparse),kind='source_bound_sparse_paired_comparison'))
     for i,original in enumerate(obj):
         row=dict(original)
+        if i in reporting:
+            addition=reporting[i]
+            if addition['record_id']!=original.get('record_id'):raise ValueError('reporting source record mismatch')
+            if addition.get('precision_counts') is not None:row['precision_counts']=addition['precision_counts']
+            if addition.get('law_origin_counts') is not None:
+                counts=addition['law_origin_counts']
+                if counts['actual_source_fallback_count']+counts['actual_source_learned_count']!=counts['actual_source_eligible_count']:
+                    raise ValueError('law origin count partition mismatch')
+                row.update(fallback_rows=counts['actual_source_fallback_count'],scored_fallback_rows=counts['actual_source_scored_fallback_count'])
+                if row.get('record_kind')=='prop_selection_evaluation':
+                    stats=dict(row['selection_metrics']);stats['fallback_issued']=counts['actual_source_fallback_count'];row['selection_metrics']=stats
+            if addition.get('denominators') is not None:
+                if row.get('record_kind')!='prop_selection_evaluation':raise ValueError('selection denominator metadata on other product')
+                d=addition['denominators']
+                if d['eligible_pool']!=d['admitted_forecast_opportunities']+d['unavailable_forecast_opportunities'] or d['admitted_forecast_opportunities']!=d['admitted_rule_abstentions']+d['selected_any_side_in_full_pool']:
+                    raise ValueError('disjoint forecast/abstention coverage mismatch')
+                stats=dict(row['selection_metrics']);stats.update({k:d[k]for k in ('admitted_forecast_opportunities','unavailable_forecast_opportunities','admitted_rule_abstentions')})
+                stats['abstentions']=d['admitted_rule_abstentions'];stats['abstention_reporting_note']=d['original_abstention_field_semantics'];row['selection_metrics']=stats
+            if addition.get('probability_scores') is not None:
+                if row.get('record_kind')!='prop_selection_evaluation':raise ValueError('selected-pool probability metadata on other product')
+                p=addition['probability_scores']
+                supported=row['selection_metrics']['denominators'].get('supported_threshold_outcomes',row['n']+row['selection_metrics'].get('PUSH',0))
+                if p['conditioning']!='MODELED_APPEARANCE' or p['score_contract']!='HALF_MULTICLASS_BRIER_OVER_UNDER_PUSH_V1' or p['n']!=supported:
+                    raise ValueError('selected probability conditioning/support mismatch')
+                stats=dict(row['selection_metrics']);stats['probability_scores']=p;row['selection_metrics']=stats
+                row.update(brier=p['brier'],log_loss=p['log_loss'],infinite_log_losses=p['infinite_log_losses'],probability_conditioning=p['conditioning'])
         if common_fields:
             if row.get('record_kind')!='prop_selection_evaluation':raise ValueError('selection contract on numeric record')
             row.update(common_fields)
@@ -97,10 +159,13 @@ def new_records(root,item,inputs):
         record['source_artifact_sha256']=digest;record['source_aggregate_fields']=original
         record['source_registry_kind']=item.get('kind')
         record['source_version_note']=item.get('version_note')
+        if i in reporting:
+            record['reporting_metadata_provenance']=dict(artifact=item['reporting_annotations'],source_row_index=i,predictions_unchanged=True)
+            if reporting[i].get('law_origin_counts') is not None:record['law_origin_counts']=reporting[i]['law_origin_counts']
         invalid_mask=item.get('invalidated_shared_mask')
         if invalid_mask and original.get('fallback_view')==invalid_mask:
             record['score_version_state']='INVALIDATED_REQUESTED_SHARED_MASK_REFERENCE_ALIAS'
-        if annotations:record['reporting_comparison']=annotations[i]
+        if i in annotations:record['reporting_comparison']=annotations[i]
         if i in supersessions:
             s=supersessions[i]
             if s['source_test_id']!=record['test_id']:raise ValueError('supersession identity mismatch')
@@ -109,8 +174,8 @@ def new_records(root,item,inputs):
         if explicit_empty:
             if record['n']!=0:raise ValueError('empty scored dates with positive support')
             record.update(weeks=[],seasons=date.get('evaluation_seasons',[]),dates_missing_reason='zero_supported_rows_no_scored_weeks')
-        if original.get('precision_counts'):
-            for metric,p in original['precision_counts'].items():
+        if row.get('precision_counts'):
+            for metric,p in row['precision_counts'].items():
                 if metric not in(record['precision_metrics']or{}):continue
                 if p['denominator']!=record['n']:raise ValueError('precision denominator differs from scored sample')
                 if p['denominator']:
@@ -123,7 +188,7 @@ def new_records(root,item,inputs):
     inputs.append(dict(source_artifact=artifact,sha256=digest,rows=len(obj),kind=item.get('kind',item['state'])))
 
 
-def write(root=ROOT,previous=PREVIOUS,output=OUTPUT,*,reuse_prior_csv=False):
+def write(root=ROOT,previous=PREVIOUS,output=OUTPUT,*,reuse_prior_csv=False,compressed_delivery=False):
     root=Path(root);out=root/output
     if out.exists()and not(out/'INDEX_MANIFEST.json').exists():
         raise ValueError('incomplete index output exists; preserve failure and choose new output version')
@@ -131,9 +196,7 @@ def write(root=ROOT,previous=PREVIOUS,output=OUTPUT,*,reuse_prior_csv=False):
     out.mkdir(parents=True,exist_ok=True)
     inputs=list(prior['input_manifests']);seen=set();shards=list(prior['shards']);kinds=collections.Counter();previous_n=0
     for part in shards:
-        body=(root/part['path']).read_bytes()
-        if len(body)!=part['bytes']or sha(body)!=part['sha256']:raise ValueError('previous immutable shard changed')
-        records=json.loads(body);validate_index(records)
+        records=decode_shard(root,part);validate_index(records)
         if len(records)!=part['records']:raise ValueError('previous shard row count changed')
         for record in records:
             if record['test_id']in seen:raise ValueError('duplicate prior result ID')
@@ -147,8 +210,11 @@ def write(root=ROOT,previous=PREVIOUS,output=OUTPUT,*,reuse_prior_csv=False):
     def flush():
         nonlocal buf,size
         if not buf:return
-        body=b'['+b','.join(buf)+b']\n';name=f'new-records-{len(shards):04d}.json';path=out/name
-        path.write_bytes(body);shards.append(dict(path=str(path.relative_to(root)),sha256=sha(body),bytes=len(body),records=len(buf)))
+        raw=b'['+b','.join(buf)+b']\n';name=f'new-records-{len(shards):04d}.json'+('.gz'if compressed_delivery else'');path=out/name
+        body=gzip.compress(raw,mtime=0)if compressed_delivery else raw
+        part=dict(path=str(path.relative_to(root)),sha256=sha(body),bytes=len(body),records=len(buf))
+        if compressed_delivery:part.update(compression='gzip',uncompressed_bytes=len(raw),uncompressed_sha256=sha(raw))
+        path.write_bytes(body);shards.append(part)
         buf=[];size=3
     registry=json.loads((root/'registries/RESULT_ARTIFACTS.json').read_text())
     for item in registry:
@@ -179,7 +245,7 @@ def write(root=ROOT,previous=PREVIOUS,output=OUTPUT,*,reuse_prior_csv=False):
     try:
         delivery_shards=shards[len(prior['shards']):] if reuse_prior_csv else shards
         for part in delivery_shards:
-            for record in json.loads((root/part['path']).read_bytes()):
+            for record in decode_shard(root,part):
                 row=current_flat(record)
                 source=record.get('source_aggregate_fields')or{}
                 for key in ('prediction_version','score_version_state','replacement_test_id','replaces_test_id','supersession_mapping','source_registry_kind','source_version_note'):
@@ -188,13 +254,14 @@ def write(root=ROOT,previous=PREVIOUS,output=OUTPUT,*,reuse_prior_csv=False):
                 if writer is None or part_n==10000:
                     if handle:
                         handle.close();csv_parts[-1].update(rows=part_n,bytes=path.stat().st_size,sha256=sha(path.read_bytes()))
-                    path=out/f'TEST_RESULTS_INDEX-{len(csv_parts):04d}.csv';handle=path.open('w',newline='');writer=csv.DictWriter(handle,fieldnames=fieldnames);writer.writeheader();part_n=0
+                    path=out/(f'TEST_RESULTS_INDEX-{len(csv_parts):04d}.csv'+('.gz'if compressed_delivery else''));handle=csv_handle(path,compressed_delivery);writer=csv.DictWriter(handle,fieldnames=fieldnames);writer.writeheader();part_n=0
                     csv_parts.append(dict(path=str(path.relative_to(root))))
+                    if compressed_delivery:csv_parts[-1]['compression']='gzip'
                 writer.writerow(row);part_n+=1;row_n+=1
                 if record['kind']=='software_verification':continue
                 target=record['category'];cat_counts[target]+=1
                 if target not in writers:
-                    f=(cats/(category_slug(target)+'.csv')).open('w',newline='');files[target]=f;writers[target]=csv.DictWriter(f,fieldnames=fieldnames);writers[target].writeheader()
+                    f=csv_handle(cats/(category_slug(target)+'.csv'+('.gz'if compressed_delivery else'')),compressed_delivery);files[target]=f;writers[target]=csv.DictWriter(f,fieldnames=fieldnames);writers[target].writeheader()
                 writers[target].writerow(row)
         if handle:
             handle.close();handle=None;csv_parts[-1].update(rows=part_n,bytes=path.stat().st_size,sha256=sha(path.read_bytes()))
@@ -213,10 +280,12 @@ def write(root=ROOT,previous=PREVIOUS,output=OUTPUT,*,reuse_prior_csv=False):
         manifest['csv_header_policy']='Prior immutable CSV parts are reused; new product columns may extend the header. Combine by column name. JSON shards are authoritative.'
         manifest['category_csv_scope']='New appended evaluation views only; use prior category CSVs and source rankings for earlier records.'
         manifest['streaming_build']['previous_csv_parts_reused']=len(prior['csv_parts'])
+    if compressed_delivery:
+        manifest['compressed_delivery_contract']='New JSON/CSV parts use lossless gzip; validate stored bytes, decompress, then parse. JSON parts retain uncompressed size/SHA. Prior parts remain unchanged. max_shard_bytes bounds uncompressed JSON.'
     (out/'INDEX_MANIFEST.json').write_text(json.dumps(manifest,indent=2,allow_nan=False)+'\n')
     csv_note=('Prior CSV parts retain their original headers. Combine by column name, preserving missing product fields. Category CSVs here contain only appended views. ' if reuse_prior_csv else 'All parts share columns; retain one header when combining. ')
     (out/'CSV_FILES.md').write_text('# Filterable result parts\n\n'+csv_note+'Comparator error changes are candidate minus control; missing pairs stay unknown.\n\n'+'\n'.join(f"- [{Path(r['path']).name}]({Path(os.path.relpath(root/r['path'],out)).as_posix()}): {r['rows']:,} records"for r in csv_parts)+'\n')
-    (out/'README.md').write_text('# Permanent accuracy and error index\n\n'+f"{row_n:,} records; {row_n-kinds['software_verification']:,} evaluation views and {kinds['software_verification']:,} software receipts. All {previous_n:,} prior records and shards remain unchanged. Views are not distinct methods or NFL observations.\n\n"+'[CSV parts](CSV_FILES.md) · [JSON manifest](INDEX_MANIFEST.json) · [Accepted previous checkpoint](../../continuation-20261030b/results-index/README.md)\n\n'+'Every result retains method, history, product, dates, sample, population, native error, defined precision numerator/denominator, fallback/coverage, paired comparator/delta, uncertainty and source evidence. Unknowns are explicit. Scoring corrections, changed predictions and retrospective cohort projections remain distinct. MAE and relative error reductions are not generic percentage accuracy. Point, mean-MSE, proper-distribution and actual-offer rankings are separate.\n\n| Category | Views |\n|---|---:|\n'+'\n'.join(f'| [{target}](categories/{category_slug(target)}.csv) | {n:,} |'for target,n in sorted(cat_counts.items()))+'\n')
+    (out/'README.md').write_text('# Permanent accuracy and error index\n\n'+f"{row_n:,} records; {row_n-kinds['software_verification']:,} evaluation views and {kinds['software_verification']:,} software receipts. All {previous_n:,} prior records and shards remain unchanged. Views are not distinct methods or NFL observations.\n\n"+'[CSV parts](CSV_FILES.md) · [JSON manifest](INDEX_MANIFEST.json) · [Previous checkpoint](../../championship-20261030f/results-index-v5/README.md)\n\n'+'Every result retains method, history, product, dates, sample, population, native error, defined precision numerator/denominator, fallback/coverage, paired comparator/delta, uncertainty and source evidence. Unknowns are explicit. Scoring corrections, changed predictions and retrospective cohort projections remain distinct. MAE and relative error reductions are not generic percentage accuracy. Point, mean-MSE, proper-distribution and actual-offer rankings are separate.\n\n| Category | Views |\n|---|---:|\n'+'\n'.join(f'| [{target}](categories/{category_slug(target)}.csv{'.gz'if compressed_delivery else''}) | {n:,} |'for target,n in sorted(cat_counts.items()))+'\n')
     return dict(status='PASS',records=row_n,new_records=new_n,reused_records=previous_n,shards=len(shards))
 
 

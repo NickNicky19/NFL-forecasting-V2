@@ -265,6 +265,10 @@ def validate_full_pool_csv(binding, scores, metadata, source_sha, comparisons):
 def main():
     pointer = json.loads((ROOT / "registries/CURRENT_RESULTS_INDEX.json").read_text())
     manifest = json.loads(read_bound(pointer["prop_scoreboard"]))
+    if manifest.get('scope')=='completion-multi-source-v1':
+        from tools.check_completion_prop_coverage import validate as validate_completion
+        print(json.dumps(validate_completion(manifest),sort_keys=True))
+        return
     scores = json.loads(read_bound(manifest["source_scores"]))
     metadata = json.loads(read_bound(manifest["metadata"]))
     unsupported = json.loads(read_bound(manifest["unsupported_cells"]))

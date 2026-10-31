@@ -1,7 +1,7 @@
 {
   "schema": "v2-current-public-index-pointer-v2",
-  "manifest": "reports/prop-grading-20261030e/compact-results-index/INDEX_MANIFEST.json",
-  "previous_checkpoint": "reports/continuation-20261030c/results-index/INDEX_MANIFEST.json",
+  "manifest": "reports/championship-20261030f/results-index-v5/INDEX_MANIFEST.json",
+  "previous_checkpoint": "reports/prop-grading-20261030e/compact-results-index/INDEX_MANIFEST.json",
   "previous_unchanged": true,
   "manifest_role": "ALL_AUDIT_IMMUTABLE_BACKWARD_COMPATIBLE",
   "default_view": "CURRENT_CANONICAL_SCORE_VERSIONS",
@@ -21,14 +21,26 @@
     "path": "reports/continuation-20261030d/paired-analysis-index-v2/ANALYSIS_MANIFEST.json",
     "sha256": "25d6f5b0276cb2b415c04f5f2e886a6eaeaa5618f398aa6131a2be397efe0085"
   },
-  "readable_checkpoint": "reports/prop-grading-20261030e/README.md",
+  "readable_checkpoint": "reports/championship-20261030f/CATEGORY_CHAMPIONS.md",
   "software_verification_manifest": {
-    "path": "reports/prop-grading-20261030e/SOFTWARE_VERIFICATION_MANIFEST.json",
-    "sha256": "f234b796d189b69b5c5608154d4139c9e3b4611ccf75ffbd2765a16f09559cce"
+    "path": "reports/championship-20261030f/SOFTWARE_VERIFICATION_MANIFEST.json",
+    "sha256": "84ec0bd31c3555eaa30cac590ecfe2af6c0d223b18417e6c57bcefe68fc6138c"
   },
   "prop_scoreboard": {
-    "path": "reports/prop-grading-20261030e/CURRENT_PROP_SCOREBOARD_VIEW.json",
-    "sha256": "728f70c46ff6ddc9ed5a8ae2c8bb1f71a56ecd5b1ffc2355b85caec0e680be44"
+    "path": "reports/championship-20261030f/CURRENT_PROP_SCOREBOARD_VIEW.json",
+    "sha256": "0846fd33ef26719e5d8b7d2a8334df1b3b5d97b73f2a8196d6e6cb135a0ebcc0"
   },
-  "numeric_projection_scope": "ExistingDnumericalviewremainssource-boundtoitsunchangedCauditancestor;newselectiongradesareaseparateproductanddonotenterpoint/probabilityforecastrankings."
+  "numeric_projection_scope": "Dcurrentvalid numeric view retains its immutableCancestor; F numerical comparisons/selector are new saved-row views. Full462provider-labelled selection projection is default; original285andaliases remainaudit.",
+  "category_champions": {
+    "path": "reports/championship-20261030f/CATEGORY_CHAMPIONS.json",
+    "sha256": "7aa92d9487da76c18fb3b6f920514c2db8d465db994e89d51c9662a574e9b801"
+  },
+  "coverage_grid": {
+    "path": "reports/championship-20261030f/coverage/COVERAGE_MANIFEST.json",
+    "sha256": "738d2bf4fc2d2e5c7c88f6833c594a70ba0e9ac3347f4a71ede7e5e7993ef8a7"
+  },
+  "category_release_matrix": {
+    "path": "reports/championship-20261030f/CATEGORY_RELEASE_MATRIX.json",
+    "sha256": "55bce4a75cfe835220436ede84a01477f1ad8cd205abd4a17cc069a5749af4f1"
+  }
 }

@@ -254,7 +254,8 @@ def validate_index(records):
             if r.get('metrics') is not None or r.get('precision_metrics') is not None or r.get('n') is not None:
                 raise ValueError('software check must not claim NFL accuracy')
             continue
-        if r['kind'] not in {'forecast_evaluation_view',DIAGNOSTIC_KIND,'prop_selection_evaluation'}:raise ValueError('unknown test kind')
+        if r['kind'] not in {'forecast_evaluation_view',DIAGNOSTIC_KIND,'prop_selection_evaluation',
+                'retrospective_chronological_category_selector_aggregate_replay'}:raise ValueError('unknown test kind')
         if r['primary_error']!=r['metrics'][r['primary_metric']]:raise ValueError('primary metric mismatch')
         for p in (r['precision_metrics'] or {}).values():
             if p['numerator'] is not None:

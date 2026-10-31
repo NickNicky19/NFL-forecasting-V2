@@ -1,3 +1,5 @@
+> Latest championship checkpoint: [ANSWERS_01_TO_14.md](championship-20261030f/ANSWERS_01_TO_14.md). Older content below retains its historical evidence level.
+
 > Latest October30 evidence: [executed checkpoint](continuation-20261030/README.md), [current answers](continuation-20261030/ANSWERS_01_TO_14.md), [category representatives](continuation-20261030/TWELVE_CATEGORY_SUMMARY.md), and [future coverage](continuation-20261030/FUTURE_CAPTURE_AND_RELEASE_HANDOFF.md). Earlier checkpoint follows at its original evidence level.
 
 # Fourteen answers — executed checkpoint, October 29, 2026

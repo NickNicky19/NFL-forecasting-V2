@@ -37,6 +37,7 @@ def equal_rate(value, numerator, denominator):
 
 
 def validate(manifest, scores, supplement, unsupported):
+    full_pool = manifest.get("scope") == "full-provider-pool-v1"
     require(len(scores) == manifest["audit_views"], "Audit score coverage changed")
     require(supplement["source_score_sha256"] == manifest["source_scores"]["sha256"],
             "Metadata binds another score version")
@@ -55,7 +56,7 @@ def validate(manifest, scores, supplement, unsupported):
     aliases = 0
     for r in scores:
         side = r["side"]
-        require(side in required_sides and r["actual_preselected_side"] == side,
+        require(side in required_sides and (full_pool or r["actual_preselected_side"] == side),
                 "Actual selected-side identity mismatch")
         key = tuple(r[k] for k in dimensions)
         require(side not in groups[key], "Duplicate selected side in group")
@@ -82,10 +83,28 @@ def validate(manifest, scores, supplement, unsupported):
                     and all(m["returns"][k] is None for k in ("ROI", "net", "drawdown")),
                     "Unverified bookmaker contract gained return metrics")
         meta = metadata[r["record_id"]]
-        require(meta["source_record_id"] == r["record_id"]
-                and meta["query_membership_sha256"] == r["query_membership_sha256"]
-                and meta["season_alias_of_week_view"] == r["season_alias_of_week_view"],
-                "Metadata identity/membership binding mismatch")
+        if full_pool:
+            require(not r["season_alias_of_week_view"] and meta["alias_of_record_id"] is None,
+                    "Full-pool view fabricated a season alias")
+            require(meta["unique_players"] == r["unique_players"]
+                    and meta["unique_player_games"] == r["unique_player_games"]
+                    and meta["selected_week_count"] == int(selected > 0)
+                    and meta["decided_week_count"] == int(wins+losses > 0)
+                    and meta["registered_weeks"] == [7], "Full-pool metadata scope mismatch")
+            require(r["season"] == 2026 and r["week"] == 7 and r["evaluation_weeks"] == [7]
+                    and r["statistic_period"] == "full_game" and r["overtime"] is True,
+                    "Full-pool statistical period changed")
+            equal_rate(m["selection_coverage"], selected, count(m["eligible_rank_pool_n"]))
+            require(count(m["abstentions_outside_selected_partition"]) <= count(m["selection_pool_count"]),
+                    "Abstentions exceed source pool")
+            require(all(r.get(k) is None for k in ("mae", "mse", "brier", "log_loss"))
+                    and all(m["probability_scores"][k] is None for k in ("brier", "log_loss")),
+                    "Point-only pool gained probability/numerical metrics")
+        else:
+            require(meta["source_record_id"] == r["record_id"]
+                    and meta["query_membership_sha256"] == r["query_membership_sha256"]
+                    and meta["season_alias_of_week_view"] == r["season_alias_of_week_view"],
+                    "Metadata identity/membership binding mismatch")
         if r["season_alias_of_week_view"]:
             aliases += 1
             parent_id = meta["alias_of_record_id"]
@@ -126,20 +145,23 @@ def validate(manifest, scores, supplement, unsupported):
     targets = set(manifest["unsupported_targets"])
     strategies = {r["strategy"] for r in scores}
     times = {r["time_panel_id"] for r in scores}
-    expected = set(itertools.product(strategies, targets, required_sides, times))
-    actual = {(r["strategy"], r["target"], r["side"], r["time_panel_id"]) for r in unsupported}
+    expected = set(itertools.product(strategies, targets, required_sides)) if full_pool else set(itertools.product(strategies, targets, required_sides, times))
+    actual = {(r["strategy"], r["target"], r["side"]) for r in unsupported} if full_pool else {(r["strategy"], r["target"], r["side"], r["time_panel_id"]) for r in unsupported}
     require(len(actual) == len(unsupported) and actual == expected, "Unsupported target grid incomplete")
     require(not targets & {r["target"] for r in scores}, "Unsupported target fabricated scored row")
     for r in unsupported:
         require(r["state"] == "UNAVAILABLE" and bool(r["reason"]), "Unsupported state/reason missing")
-        require(all(k in r and r[k] is None for k in ("WIN", "LOSS", "PUSH", "hit_rate", "n", "selection_count", "selection_loss_rate")),
+        null_fields = ("wins", "losses", "hit_rate", "n", "selected") if full_pool else ("WIN", "LOSS", "PUSH", "hit_rate", "n", "selection_count", "selection_loss_rate")
+        require(all(k in r and r[k] is None for k in null_fields),
                 "Unsupported missing score changed to fake zero")
     return dict(score_views=len(scores), group_cells=len(groups), metadata_rows=len(rows),
                 default_weekly_views=len(default), retained_aliases=aliases,
                 unsupported_cells=len(unsupported), unsupported_targets=len(targets))
 
 
-def validate_csv(binding, scores, metadata, source_sha):
+def validate_csv(binding, scores, metadata, source_sha, scope=None, comparisons=None):
+    if scope == "full-provider-pool-v1":
+        return validate_full_pool_csv(binding, scores, metadata, source_sha, comparisons)
     rows = list(csv.DictReader(read_bound(binding).decode().splitlines()))
     byid = {r["record_id"]: r for r in scores}
     meta = {r["record_id"]: r for r in metadata["rows"]}
@@ -187,6 +209,59 @@ def validate_csv(binding, scores, metadata, source_sha):
     return len(rows)
 
 
+def validate_full_pool_csv(binding, scores, metadata, source_sha, comparisons):
+    """F adds no fake precision/side/alias fields to immutable canonical scores."""
+    rows = list(csv.DictReader(read_bound(binding).decode().splitlines()))
+    byid = {r["record_id"]: r for r in scores}
+    meta = {r["record_id"]: r for r in metadata["rows"]}
+    require(len(rows) == len(byid) and {r["record_id"] for r in rows} == set(byid), "CSV ID coverage mismatch")
+    require(comparisons is not None and comparisons["source_score_sha256"] == source_sha,
+            "CSV paired supplement source binding missing")
+    pairs = {}
+    for item in comparisons["rows"]:
+        i = item["source_row_index"]
+        require(type(i) is int and 0 <= i < len(scores) and i not in pairs, "Invalid CSV paired source identity")
+        pairs[i] = item["comparison"]
+    require(len(pairs) == len(scores), "CSV paired supplement coverage mismatch")
+    byrecord = {r["record_id"]: pairs[i] for i, r in enumerate(scores)}
+    for row in rows:
+        r, m = byid[row["record_id"]], meta[row["record_id"]]
+        sm = r["selection_metrics"]
+        expected = dict(record_id=r["record_id"], method=r["procedure_id"], strategy=r["strategy"],
+            target=r["target"], season=r["season"], weeks="7", games=r["unique_games"],
+            horizon=r["horizon_id"], evidence=r["selection_evidence"], cohort=r["cohort_id"],
+            K=r["K"], rank_scope=r["rank_scope"], side=r["side"],
+            eligible=sm["eligible_rank_pool_n"], original_source_pool=sm["selection_pool_count"],
+            selected=r["forecast_rows"], wins=sm["WIN"], losses=sm["LOSS"], pushes=sm["PUSH"],
+            voids=sm["status_counts"]["VOID"], pending=sm["status_counts"]["PENDING"],
+            missing_actual=sm["status_counts"]["MISSING_ACTUAL"], unknown_participation=sm["status_counts"]["UNKNOWN_PARTICIPATION"],
+            book_unresolved=r["forecast_rows"], decided=r["n"], hit_rate=sm["hit_rate"],
+            error_rate=r["selection_loss_rate"], abstentions=sm["abstentions_outside_selected_partition"],
+            selection_coverage=sm["selection_coverage"], unique_players=m["unique_players"],
+            unique_player_games=m["unique_player_games"], unique_weeks=m["unique_weeks"],
+            game_clusters=sm["game_uncertainty"]["game_clusters"],
+            game_interval=json.dumps(sm["game_uncertainty"]["game_interval"]),
+            game_interval_status=sm["game_uncertainty"]["game_interval_status"], week_interval=None,
+            price=None, probability=None, Brier=None, EV=None, ROI=None, CLV=None,
+            comparator="v2-retained-provider-labelled-full-pool-2026W7-v1:SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION")
+        comparison = byrecord[r["record_id"]]
+        if r["n"]:
+            require(comparison["paired_n"] == r["n"]
+                    and math.isclose(comparison["candidate_error"], r["selection_loss_rate"], rel_tol=0, abs_tol=1e-12),
+                    "CSV paired candidate denominator mismatch")
+            expected["paired_error_change"] = comparison["candidate_error"] - comparison["comparator_error"]
+        else:
+            require(comparison["status"] == "UNESTABLISHED", "Unsupported CSV comparison gained a loss")
+            expected["paired_error_change"] = None
+        require(set(row) == set(expected), "CSV columns not fully covered by source parity check")
+        for key, value in expected.items():
+            cell = row[key]
+            if value is None:require(cell == "", "CSV null rendered as nonnull")
+            elif isinstance(value, float):require(math.isclose(float(cell), value, rel_tol=0, abs_tol=1e-12), "CSV rate differs from source")
+            else:require(cell == str(value), "CSV identity/count differs from source")
+    return len(rows)
+
+
 def main():
     pointer = json.loads((ROOT / "registries/CURRENT_RESULTS_INDEX.json").read_text())
     manifest = json.loads(read_bound(pointer["prop_scoreboard"]))
@@ -194,7 +269,8 @@ def main():
     metadata = json.loads(read_bound(manifest["metadata"]))
     unsupported = json.loads(read_bound(manifest["unsupported_cells"]))
     counts = validate(manifest, scores, metadata, unsupported)
-    counts["bound_csv_rows"] = validate_csv(manifest["records_csv"], scores, metadata, manifest["source_scores"]["sha256"])
+    comparisons = json.loads(read_bound(manifest["comparisons"])) if manifest.get("scope") == "full-provider-pool-v1" else None
+    counts["bound_csv_rows"] = validate_csv(manifest["records_csv"], scores, metadata, manifest["source_scores"]["sha256"], manifest.get("scope"), comparisons)
     print(json.dumps(dict(state="PASS_PROP_SCOREBOARD_COVERAGE", **counts,
                           new_grades=0, NFL_outcome_rows_read=0), sort_keys=True))
 

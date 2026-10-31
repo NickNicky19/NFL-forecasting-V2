@@ -8,6 +8,7 @@ import collections
 import csv
 import hashlib
 import json
+import os
 from pathlib import Path
 import sys
 
@@ -122,7 +123,7 @@ def new_records(root,item,inputs):
     inputs.append(dict(source_artifact=artifact,sha256=digest,rows=len(obj),kind=item.get('kind',item['state'])))
 
 
-def write(root=ROOT,previous=PREVIOUS,output=OUTPUT):
+def write(root=ROOT,previous=PREVIOUS,output=OUTPUT,*,reuse_prior_csv=False):
     root=Path(root);out=root/output
     if out.exists()and not(out/'INDEX_MANIFEST.json').exists():
         raise ValueError('incomplete index output exists; preserve failure and choose new output version')
@@ -166,9 +167,18 @@ def write(root=ROOT,previous=PREVIOUS,output=OUTPUT):
     # CSVs and category views stream from retained shards; no complete record
     # list or complete flattened CSV is held in memory.
     cats=out/'categories';cats.mkdir(exist_ok=True);files={};writers={};cat_counts=collections.Counter();csv_parts=[]
+    if reuse_prior_csv:
+        for part in prior['csv_parts']:
+            path=root/part['path']
+            if path.stat().st_size!=part['bytes'] or sha(path.read_bytes())!=part['sha256']:
+                raise ValueError('previous CSV bytes changed')
+        if sum(p['rows'] for p in prior['csv_parts'])!=previous_n:
+            raise ValueError('previous CSV coverage mismatch')
+        csv_parts=list(prior['csv_parts'])
     handle=None;writer=None;part_n=0;row_n=0;fieldnames=None
     try:
-        for part in shards:
+        delivery_shards=shards[len(prior['shards']):] if reuse_prior_csv else shards
+        for part in delivery_shards:
             for record in json.loads((root/part['path']).read_bytes()):
                 row=current_flat(record)
                 source=record.get('source_aggregate_fields')or{}
@@ -191,15 +201,21 @@ def write(root=ROOT,previous=PREVIOUS,output=OUTPUT):
     finally:
         if handle:handle.close()
         for f in files.values():f.close()
-    if row_n!=previous_n+new_n:raise ValueError('streamed row count mismatch')
+    if row_n!=(new_n if reuse_prior_csv else previous_n+new_n):raise ValueError('streamed row count mismatch')
+    row_n=previous_n+new_n
     manifest=dict(schema_version='v2-sharded-results-index-v2',record_unit=prior['record_unit'],
         baseline_checkpoint=prior['baseline_checkpoint'],previous_sharded_checkpoint=dict(artifact=previous,sha256=sha(prior_body),records=previous_n,unchanged=True),
         definitions=dict(prior['definitions'],selection_loss_rate=DEFINITIONS['selection_loss_rate']),precision_definition=prior['precision_definition'],forbidden_accuracy_conversion=prior['forbidden_accuracy_conversion'],
         comparison_reporting=prior.get('comparison_reporting'),input_manifests=inputs,record_count=row_n,by_kind=dict(kinds),shards=shards,max_shard_bytes=MAX_SHARD,csv_parts=csv_parts,
         streaming_build=dict(previous_records_reused=previous_n,new_records=new_n,prior_shards_unchanged=True,ordering='prior immutable shards followed by new registered versions; CSVfilterbytestID/panel'),
         reader_contract='New reported/reproduced/reconstructed/future and software evidence retain distinct identities; a score view is not a fit or unique NFL observation.')
+    if reuse_prior_csv:
+        manifest['csv_header_policy']='Prior immutable CSV parts are reused; new product columns may extend the header. Combine by column name. JSON shards are authoritative.'
+        manifest['category_csv_scope']='New appended evaluation views only; use prior category CSVs and source rankings for earlier records.'
+        manifest['streaming_build']['previous_csv_parts_reused']=len(prior['csv_parts'])
     (out/'INDEX_MANIFEST.json').write_text(json.dumps(manifest,indent=2,allow_nan=False)+'\n')
-    (out/'CSV_FILES.md').write_text('# Filterable result parts\n\nAll parts share columns; retain one header when combining. Comparator error changes are candidate minus control; missing pairs stay unknown.\n\n'+'\n'.join(f"- [{Path(r['path']).name}]({Path(r['path']).name}): {r['rows']:,} records"for r in csv_parts)+'\n')
+    csv_note=('Prior CSV parts retain their original headers. Combine by column name, preserving missing product fields. Category CSVs here contain only appended views. ' if reuse_prior_csv else 'All parts share columns; retain one header when combining. ')
+    (out/'CSV_FILES.md').write_text('# Filterable result parts\n\n'+csv_note+'Comparator error changes are candidate minus control; missing pairs stay unknown.\n\n'+'\n'.join(f"- [{Path(r['path']).name}]({Path(os.path.relpath(root/r['path'],out)).as_posix()}): {r['rows']:,} records"for r in csv_parts)+'\n')
     (out/'README.md').write_text('# Permanent accuracy and error index\n\n'+f"{row_n:,} records; {row_n-kinds['software_verification']:,} evaluation views and {kinds['software_verification']:,} software receipts. All {previous_n:,} prior records and shards remain unchanged. Views are not distinct methods or NFL observations.\n\n"+'[CSV parts](CSV_FILES.md) · [JSON manifest](INDEX_MANIFEST.json) · [Accepted previous checkpoint](../../continuation-20261030b/results-index/README.md)\n\n'+'Every result retains method, history, product, dates, sample, population, native error, defined precision numerator/denominator, fallback/coverage, paired comparator/delta, uncertainty and source evidence. Unknowns are explicit. Scoring corrections, changed predictions and retrospective cohort projections remain distinct. MAE and relative error reductions are not generic percentage accuracy. Point, mean-MSE, proper-distribution and actual-offer rankings are separate.\n\n| Category | Views |\n|---|---:|\n'+'\n'.join(f'| [{target}](categories/{category_slug(target)}.csv) | {n:,} |'for target,n in sorted(cat_counts.items()))+'\n')
     return dict(status='PASS',records=row_n,new_records=new_n,reused_records=previous_n,shards=len(shards))
 

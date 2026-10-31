@@ -1,0 +1,6 @@
+{
+  "state": "CHECKER_SCHEMA_AMENDMENT_NOT_RESULT_CORRECTION",
+  "at": "2026-10-31T00:11:42.643523+00:00",
+  "original_checker": "check_final_projection_failed_schema_v1.py",
+  "reason": "Final checker used CSV part field 'rows' for JSON shards, whose immutable manifest field is 'records'. It failed before index count acceptance. Source score, coverage, annotation and index bytes did not change."
+}

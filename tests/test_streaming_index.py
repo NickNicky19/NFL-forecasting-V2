@@ -11,6 +11,22 @@ from tests import test_index_v2 as old_tests
 
 
 class StreamingIndexTests(unittest.TestCase):
+    def test_shared_csv_delivery_reuses_prior_parts_and_keeps_policy_identity(self):
+        with tempfile.TemporaryDirectory()as folder:
+            root=Path(folder);self.setup_tree(root)
+            rows=json.loads((root/'added.json').read_text())
+            rows[0]['record_kind']='retrospective_chronological_category_selector_aggregate_replay'
+            (root/'added.json').write_text(json.dumps(rows))
+            prior=json.loads((root/'prior/INDEX_MANIFEST.json').read_text())
+            streaming.write(root,'prior/INDEX_MANIFEST.json','current',reuse_prior_csv=True)
+            manifest=json.loads((root/'current/INDEX_MANIFEST.json').read_text())
+            self.assertEqual(manifest['csv_parts'][:-1],prior['csv_parts'])
+            self.assertEqual(manifest['csv_parts'][-1]['rows'],1)
+            self.assertEqual(sum(p['rows']for p in manifest['csv_parts']),7)
+            record=json.loads((root/manifest['shards'][-1]['path']).read_text())[0]
+            self.assertEqual(record['kind'],rows[0]['record_kind'])
+            self.assertEqual(record['source_aggregate_fields'],rows[0])
+
     def setup_tree(self,root):
         old_tests.ShardedIndexTests().setup_tree(root)
         with patch.object(old,'BASE','old.json'),patch.object(old,'OUTPUT','prior'),patch.object(old,'PREVIOUS_SHARDED','absent.json'):

@@ -1,5 +1,8 @@
+import copy
+import json
+from pathlib import Path
 import unittest
-from tools.check_prop_scoreboard_coverage import validate
+from tools.check_prop_scoreboard_coverage import validate, validate_csv
 
 
 def fictional_panel(empty_under=False):
@@ -100,6 +103,59 @@ class PropScoreboardCoverageTests(unittest.TestCase):
         args[1][0]["selection_metrics"]["returns"]["ROI"] = 1.
         with self.assertRaisesRegex(ValueError, "Unverified bookmaker"):
             validate(*args)
+
+
+class FullProviderPoolCoverageTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        root = Path(__file__).resolve().parents[1]
+        cls.manifest = json.loads((root / "reports/championship-20261030f/CURRENT_PROP_SCOREBOARD_VIEW.json").read_text())
+        cls.scores = json.loads((root / cls.manifest["source_scores"]["path"]).read_text())
+        cls.metadata = json.loads((root / cls.manifest["metadata"]["path"]).read_text())
+        cls.unsupported = json.loads((root / cls.manifest["unsupported_cells"]["path"]).read_text())
+        cls.comparisons = json.loads((root / "reports/championship-20261030f/offer-expansion/full-pool-v1/COMPARISON_ANNOTATIONS.json").read_text())
+
+    def args(self):
+        return copy.deepcopy((self.manifest, self.scores, self.metadata, self.unsupported))
+
+    def test_full_pool_has_every_actual_selected_side_and_no_alias_samples(self):
+        result = validate(self.manifest, self.scores, self.metadata, self.unsupported)
+        self.assertEqual((result["score_views"], result["group_cells"], result["retained_aliases"]), (4980, 1660, 0))
+
+    def test_full_pool_csv_binds_every_field_and_paired_annotation(self):
+        self.assertEqual(validate_csv(self.manifest["records_csv"], self.scores, self.metadata,
+                                     self.manifest["source_scores"]["sha256"], self.manifest["scope"], self.comparisons), 4980)
+
+    def test_full_pool_rejects_unweighted_combined_percentage(self):
+        args = self.args()
+        args[1][2]["selection_metrics"]["hit_rate"] = sum(args[1][i]["selection_metrics"]["hit_rate"] for i in (0, 1))/2
+        with self.assertRaisesRegex(ValueError, "rate or denominator"):
+            validate(*args)
+
+    def test_full_pool_empty_side_rate_is_null(self):
+        args = self.args()
+        next(r for r in args[1] if not r["n"])["selection_metrics"]["hit_rate"] = 0.
+        with self.assertRaisesRegex(ValueError, "null rate"):
+            validate(*args)
+
+    def test_full_pool_rejects_fake_supported_contract(self):
+        args = self.args()
+        args[3][0]["wins"] = 0
+        with self.assertRaisesRegex(ValueError, "fake zero"):
+            validate(*args)
+
+    def test_full_pool_rejects_metadata_scope_drift(self):
+        args = self.args()
+        args[2]["rows"][0]["unique_players"] += 1
+        with self.assertRaisesRegex(ValueError, "metadata scope"):
+            validate(*args)
+
+    def test_full_pool_does_not_turn_point_outputs_into_probabilities(self):
+        args = self.args()
+        args[1][0]["selection_metrics"]["probability_scores"]["brier"] = .1
+        with self.assertRaisesRegex(ValueError, "probability/numerical"):
+            validate(*args)
+
 
 
 if __name__ == "__main__":

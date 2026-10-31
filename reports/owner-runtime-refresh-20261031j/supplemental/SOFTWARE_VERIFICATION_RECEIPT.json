@@ -1,0 +1,79 @@
+{
+  "NFL_outcomes_graded": 0,
+  "actual_frozen_rows": 156,
+  "actual_future_rows": 1789,
+  "actual_row_function_witnesses": 1945,
+  "actual_selected_records": 24,
+  "at": "2026-10-31T19:09:15.552934+00:00",
+  "audit_clock": "2026-10-31T18:46:30.977Z",
+  "bounded_checker_executions": 2,
+  "code_bindings": [
+    {
+      "path": "tools/audit_served_consumer_h.js",
+      "sha256": "3f3eb49ff9f562e6841d411fa2b2aa3068303eee9a15a05bdc47f7734dfc44e7"
+    },
+    {
+      "path": "check_selected_consumer.js",
+      "sha256": "102a388bfab72630a03a9aa33ada17a032a8692091db32c64175bd48143da15f"
+    },
+    {
+      "path": "project_consumer_inputs.py",
+      "sha256": "4b3cde62ac3f6da0b4cde606fa416c61c629929113019048cd6bbd5fb2c4486f"
+    }
+  ],
+  "consumer_rejections_on_actual_packet": 0,
+  "count_definition": "17explicit named software checks:11fromunchanged existing consumer checker and6fromexactselected validator/visibility checker. Row-level assertion witnesses and synthetic probes are not independent NFLsamples.",
+  "forecast_numeric_fields_parsed": true,
+  "full_browser_DOM_execution": false,
+  "input_bindings": {
+    "app_sha256": "30e8bc0e0b04a2da1e0a8e94e99a79ff62b5f1f67427169c6db93783807e452e",
+    "consumer_sha256": "d6657e82639aa001f64701672e25cc72bd6e55142127669a59396f9efe485a68",
+    "display_board_sha256": "cad9ffa77b329128147d82ce166d0c70c1b21c692631d59acbd1744f6b089133",
+    "payload_sha256": "742f8e8286426a339e01c3088b85e22a0449e9231b7b7b9240fffa5a21773ab2"
+  },
+  "network_inside_VM": false,
+  "new_captures": 0,
+  "new_fits": 0,
+  "new_forecast_accuracy_evaluations": 0,
+  "new_model_inference": 0,
+  "new_private_projected_bytes": 239221,
+  "new_production_admissions": 0,
+  "observed_new_V2_MAE_profile_rows": 0,
+  "output_bindings": [
+    {
+      "path": "CONSUMER_EXECUTION_RESULT.json",
+      "sha256": "0c3b5980eb7cc0ab3385a40ab0264d9eb3e02e3c8b9b73824e96a772f20c9463"
+    },
+    {
+      "path": "SELECTED_CONSUMER_EXECUTION_RESULT.json",
+      "sha256": "1a877eeb702ca8b31908a6283c1394a2b12ecc6092ccfa72e4e5fb45f3f6dea5"
+    },
+    {
+      "path": "BOARD_METADATA_PROJECTION_RECEIPT.json",
+      "sha256": "07ca011b4770d1428fa4125f5afe77c3305224e9620365e232e46c47cc66ac09"
+    },
+    {
+      "path": "RENDER_INPUT_BINDING.json",
+      "sha256": "cfad3b489e3eafe4d77245fbb89122bcdf6fc4cc531b23d9b6d17d1bcd45eb5c"
+    }
+  ],
+  "protocol_sha256": "8947ec8234918b67a564768baef36cc842f08ff1a390e843af0658db3cc4438d",
+  "raw_sources_refetched": 0,
+  "record_kind": "software_verification",
+  "schema": "v2-software-verification-j-consumer-input-refresh-v1",
+  "scope_limit": "Actual acquired function admission and returnedvalues/HTMLstrings atrecordedreadbackclock; no fullbrowserDOM/network screenshot, sourceavailability authentication, NFLforecastskill, sportsbooksettlement, or retained-owner releaseadmission. Original JnoVMstate remainscorrectasofearlierreport.",
+  "selected_adaptive_rows": 21,
+  "selected_classic_reference_rows": 3,
+  "selected_input_bindings": {
+    "projection_sha256": "50126c3bda7994ac123670b5ba329aab778f671eae657cfd744f8ed5b9dedca3",
+    "selected_payload_sha256": "499f485369216d10c93dcd941cb9a581d77632c25c8befa57d54ff0c1d6126ec"
+  },
+  "selected_over": 12,
+  "selected_under": 12,
+  "state": "SOFTWARE_VERIFIED_NEW_INPUT_PACKET",
+  "status": "PASS",
+  "target_game_outcome_scalars_decoded": 0,
+  "tests_failed": 0,
+  "tests_passed": 17,
+  "tests_run": 17
+}

@@ -1,3 +1,5 @@
+Code/operations continuation: [current older D1/D2 executor and failure-audit correction](reports/defense-season-executor-20261031j-code/correction-v2/README.md) · [actual owner capture/readback](reports/owner-runtime-refresh-20261031j/README.md) · [new-packet consumer check](reports/owner-runtime-refresh-20261031j/supplemental/README.md). These add no NFL backtest scores; the full scientific category report below remains current.
+
 # NFL Forecasting V2
 
 **Current research checkpoint: [full category report, point/prop diagnostic and startup across 2022–2026](reports/point-prop-diagnostic-20261031i/FULL_CATEGORY_CHAMPIONSHIP_REPORT.md).** HGB passing yards and D1 completions lose to saved projections on their matched offered-player panels, including numerical error. New Week 1–4 versus later-window analyses cover all twelve targets in every supported season, using completed rolling forecasts. Exact older D1/D2 fits and original strict-HGB gaps remain unresolved; no full tournament completion or production switch is claimed.

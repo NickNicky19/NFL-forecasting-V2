@@ -1,0 +1,191 @@
+"""Read-only retained feature/model metadata. Never fits, predicts, applies or grades.
+
+The functions expose source-bound query metadata for the numeric worker. Public
+outputs contain only aggregate metadata and split counts, never player rows.
+"""
+from __future__ import annotations
+import argparse,collections,csv,gzip,hashlib,json,math,pickle,resource,time
+from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[3]))
+from nfl_v2 import hgb_control as source
+
+HERE=Path(__file__).resolve().parent
+REPO=HERE.parents[2]
+
+
+def read_json(path):return json.loads(Path(path).read_text())
+def ts(value):return source.utc(value).timestamp()if isinstance(value,str)else float(value)
+
+
+def load_bound_queries(parent,private_root):
+    """Keyed by exact season/week/game/player/target/population; no labels used."""
+    folder='hgb-history-v1'if parent['kind']=='HGB_DIRECT_L1'else'qualified-defense-information-v1'
+    ref=parent['query_features'];member=ref.get('name',ref.get('bundle_name'))
+    path=Path(private_root)/folder/member
+    if source.sha(path)!=ref['sha256']:raise ValueError('query byte binding changed')
+    rows=read_gzip(path);lookup={}
+    for raw in rows:
+        q=raw['query']
+        if int(q['season'])!=2026 or int(q['week'])!=parent['week']or q['target']!=parent['target']:
+            raise ValueError('query parent membership changed')
+        key=(int(q['season']),int(q['week']),str(q['game_id']),str(q['player_id']),q['target'],q['population'])
+        if key in lookup:raise ValueError('ambiguous query identity')
+        maximum=raw.get('latest_consumed_feature_available',raw.get('latest_feature_available'))
+        if maximum is not None and maximum>=q['cutoff']:raise ValueError('retained feature chronology')
+        lookup[key]=dict(features=raw['features'],latest_consumed_feature_available=maximum,
+            feature_cutoff=q['cutoff'],scheduled_kickoff=q['kickoff'],
+            position=q['position'],defense_audit=raw.get('defense_audit'),
+            source_query_member=member,source_query_sha256=ref['sha256'])
+    return lookup
+
+
+def load_focal_feature_metadata(private_root):
+    """In-memory private lookup for K's numeric worker; no model deserialization.
+
+    Missing nonfocal metadata is outside this bounded source inspection, not
+    proof that a model lacks a feature. Do not publish returned player rows.
+    """
+    protocol=read_json(HERE/'FROZEN_LINEAGE_PROTOCOL.json');result={}
+    for parent in protocol['fit_parents']:
+        receipt=REPO/parent['receipt_path']
+        if source.sha(receipt)!=parent['receipt_sha256']:raise ValueError('FIT receipt changed')
+        fit=read_json(receipt);queries=load_bound_queries(parent,private_root)
+        target,proc,history,product=next(r for r in protocol['focals']if r[0]==parent['target'])
+        columns=list(source.FEATURES)if parent['kind']=='HGB_DIRECT_L1'else fit['feature_columns']
+        for key,packet in queries.items():
+            season,week,game,player,_,population=key
+            if population!='primary':continue
+            outkey=(target,proc,history,product,week,game,player)
+            if outkey in result:raise ValueError('ambiguous exact recipe/query metadata')
+            result[outkey]=dict(feature_values=dict(zip(columns,packet['features'])),
+                latest_consumed_feature_available=packet['latest_consumed_feature_available'],
+                feature_cutoff=packet['feature_cutoff'],feature_age_reference='KNOWN_SCHEDULED_TARGET_KICKOFF',
+                lag1_game_age_at_target_kickoff_days=packet['features'][5],
+                fit_cutoff_utc=fit['fit_cutoff_utc'],
+                latest_training_label_available=fit['latest_training_label_available'],
+                latest_training_consumed_feature_available=fit.get('latest_training_consumed_feature_available',fit.get('latest_training_feature_available')),
+                available_time_evidence='INHERITED_KICKOFF_PLUS7DAYS_CURRENT_VINTAGE_ASSUMPTION',
+                actual_source_publication_time=None,actual_quote_update_time=None,
+                quote_age_status='UNKNOWN_QUOTE_VINTAGE_SERVER_RETENTION_ONLY',
+                source_query_sha256=packet['source_query_sha256'],fit_receipt_sha256=parent['receipt_sha256'])
+    return result
+
+
+def feature_metadata_for(row,lookup):
+    recipe=row['recipe']
+    key=(recipe[0],recipe[1],recipe[2],recipe[3],int(row['week']),str(row['game_id']),str(row['player_id']))
+    if key in lookup:return lookup[key],None
+    return None,'NO_FOCAL_QUERY_METADATA_IN_THIS_BOUNDED_LOOKUP'
+
+
+def read_gzip(path):return json.loads(gzip.decompress(Path(path).read_bytes()))
+
+
+def stored_split_counts(parent,private_root,columns):
+    """Inspect stored split indices only; no prediction or query-tree traversal."""
+    folder='hgb-history-v1'if parent['kind']=='HGB_DIRECT_L1'else'qualified-defense-information-v1'
+    ref=parent['model'];member=ref.get('name',ref.get('bundle_name'))
+    path=Path(private_root)/folder/member
+    if source.sha(path)!=ref['sha256']:raise ValueError('model byte binding changed')
+    model=pickle.loads(gzip.decompress(path.read_bytes())) # trusted own V2 model, hash checked
+    counts=collections.Counter()
+    if parent['kind']=='HGB_DIRECT_L1':
+        if model.n_features_in_!=len(columns):raise ValueError('HGB raw input dimension changed')
+        for stage in model._predictors:
+            for tree in stage:
+                counts.update(int(row['feature_idx'])for row in tree.nodes if not row['is_leaf'])
+        names=list(columns);proof=dict(model_class=type(model).__name__,raw_columns=len(columns),
+            transformed_columns=len(columns),iterations=model.n_iter_,native_missing=True,
+            objective=model.loss,transform='identity; native HGB missing-value routing')
+    else:
+        n=len(columns)
+        if len(model.design.median)!=n or model.estimator.n_features_in_!=2*n:
+            raise ValueError('D1 raw-plus-missing-indicator design changed')
+        for tree in model.estimator.estimators_:
+            counts.update(int(i)for i in tree.tree_.feature if i>=0)
+        names=list(columns)+['is_missing:'+c for c in columns]
+        proof=dict(model_class=type(model).__name__,raw_columns=n,transformed_columns=2*n,
+            trees=len(model.estimator.estimators_),objective=model.estimator.criterion,
+            transform='training-only median imputation; all-missing ->0; appended raw nonfinite indicators; Leaf uses unstandardized design')
+    if any(i<0 or i>=len(names)for i in counts):raise ValueError('stored split feature index outside contract')
+    return proof,[dict(transformed_index=i,feature=name,stored_internal_node_uses=counts[i])for i,name in enumerate(names)]
+
+
+def main(args):
+    started=time.monotonic();p=read_json(HERE/'FROZEN_LINEAGE_PROTOCOL.json')
+    for name,sha in p['helpers'].items():
+        if source.sha(REPO/name)!=sha:raise ValueError('frozen helper changed')
+    derivative=Path(args.private_root)/'point-prop-diagnostic-20261031i-point-offer-v1/POINT_DIAGNOSTIC_ROWS.json.gz'
+    if source.sha(derivative)!=p['parent_derivative']['sha256']:raise ValueError('I parent derivative changed')
+    # Only frozen identity/admission/fallback/clocks are consulted; no point,
+    # line, outcome, grade or actual participation is used for these metadata.
+    data=read_gzip(derivative)['rows']
+    features=[];summaries=[];models=[]
+    for parent in p['fit_parents']:
+        receipt=REPO/parent['receipt_path']
+        if source.sha(receipt)!=parent['receipt_sha256']:raise ValueError('FIT receipt changed')
+        fit=read_json(receipt);lookup=load_bound_queries(parent,args.private_root)
+        recipe=next(r for r in p['focals']if r[0]==parent['target'])
+        focal=[r for r in data if not r.get('population_diagnostic')and r['recipe']==recipe and r['week']==parent['week']]
+        columns=list(source.FEATURES)if parent['kind']=='HGB_DIRECT_L1'else fit['feature_columns']
+        proof,splits=stored_split_counts(parent,args.private_root,columns)
+        models.append(dict(target=parent['target'],week=parent['week'],kind=parent['kind'],
+            receipt_sha256=parent['receipt_sha256'],model_sha256=parent['model']['sha256'],**proof,splits=splits))
+        matches=[];missing=0;fallback=collections.Counter();feature_age=[];availability_age=[];admitted=0
+        before_decision=0;nominal_origin_before=0;query_match=0
+        for row in focal:
+            key=(2026,row['week'],row['game_id'],row['player_id'],row['target'],'primary')
+            if key not in lookup:
+                missing+=1;continue
+            packet=lookup[key];matches.append(packet)
+            if packet['position']!=row['position']or packet['scheduled_kickoff']!=ts(row['kickoff']):
+                raise ValueError('exact identity/position/kickoff mismatch')
+            query_match+=1;fallback[str(row['fallback'])]+=1
+            if row['admitted']:
+                admitted+=1;maximum=packet['latest_consumed_feature_available']
+                latest_train=fit.get('latest_training_consumed_feature_available',fit.get('latest_training_feature_available'))
+                decision=ts(row['decision_time'])
+                known=[maximum,fit['latest_training_label_available'],latest_train]
+                if all(v is None or v<decision for v in known):before_decision+=1
+                nominal_origin_before+=ts(fit['fit_cutoff_utc'])<decision
+                if maximum is not None:availability_age.append((decision-maximum)/86400)
+                if packet['features'][5]is not None:feature_age.append(packet['features'][5])
+        for i,name in enumerate(columns):
+            features.append(dict(target=parent['target'],week=parent['week'],kind=parent['kind'],
+                raw_index=i,feature=name,matched_query_n=len(matches),
+                null_n=sum(m['features'][i]is None for m in matches),
+                finite_n=sum(m['features'][i]is not None and math.isfinite(m['features'][i])for m in matches)))
+        summaries.append(dict(target=parent['target'],week=parent['week'],kind=parent['kind'],
+            query_packet_rows=len(lookup),outer_focal_metadata_rows=len(focal),matched_query_rows=query_match,
+            missing_query_metadata_rows=missing,admitted_focal_rows=admitted,
+            admitted_all_consumed_source_label_feature_clocks_before_decision=before_decision,
+            nominal_registered_fit_origin_before_decision=nominal_origin_before,
+            fallback_metadata_counts=dict(fallback),training_n=fit['training_n'],
+            fit_cutoff_utc=fit['fit_cutoff_utc'],latest_training_label_available=fit['latest_training_label_available'],
+            latest_training_consumed_feature_available=fit.get('latest_training_consumed_feature_available',fit.get('latest_training_feature_available')),
+            availability_age_days_at_decision_min=min(availability_age,default=None),
+            availability_age_days_at_decision_max=max(availability_age,default=None),
+            stored_lag1_age_days_at_scheduled_kickoff_min=min(feature_age,default=None),
+            stored_lag1_age_days_at_scheduled_kickoff_max=max(feature_age,default=None)))
+        if time.monotonic()-started>180 or resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024>1073741824:
+            raise RuntimeError('bounded metadata inspection resource limit')
+    out=Path(args.output)
+    if out.exists():raise ValueError('new immutable aggregate inspection output required')
+    out.mkdir(parents=True)
+    for name,rows in [('FEATURE_NONMISSING_COVERAGE',features),('QUERY_FRESHNESS_AND_FALLBACK',summaries)]:
+        (out/(name+'.json')).write_bytes(source.canonical(rows))
+        with(out/(name+'.csv')).open('x',newline='')as f:
+            w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+    (out/'MODEL_INPUT_AND_SPLIT_PROOF.json').write_bytes(source.canonical(models))
+    receipt=dict(state='COMPLETE_READ_ONLY_LINEAGE_METADATA',protocol_sha256=source.sha(HERE/'FROZEN_LINEAGE_PROTOCOL.json'),
+        code_sha256=source.sha(__file__),models_inspected=len(models),new_model_fit=0,new_predict=0,new_apply=0,
+        new_grades=0,new_scientific_scores=0,new_private_derivatives=0,week8_reads=0,
+        resource=dict(wall_seconds=time.monotonic()-started,peak_RSS_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024))
+    (out/'RUN_RECEIPT.json').write_bytes(source.canonical(receipt))
+    print(json.dumps(dict(state=receipt['state'],models=len(models),summary_rows=summaries)))
+
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--private-root',type=Path,required=True);parser.add_argument('--output',type=Path,required=True)
+    main(parser.parse_args())

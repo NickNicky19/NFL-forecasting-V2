@@ -1,0 +1,74 @@
+{
+  "state": "PASS_INDEPENDENT_K_QUERY_MODEL_NODE_AND_POSTGAME_CONTEXT_PROVENANCE",
+  "lineage_protocol_sha256": "7cb775bfdcf95d9a0403705fe68eb959fbe873d0a633b89b34f377ea08ea58b2",
+  "postgame_admission_sha256": "141133d40921abec99b3f6bb87a683d8b2dbb2d50258ce4b5663ec75ce6ac720",
+  "checker_sha256": "da04ef4a5b0edaf6f9811621db6a973bbeabfd978e406d0e6fa560dd07d4d49f",
+  "focal_query_vectors_exactly_joined": 168,
+  "admitted_vectors_all_consumed_clocks_before_decision": 156,
+  "raw_input_nonmissing_coverage_cells_checked": 132,
+  "retained_model_node_arrays_inspected": 6,
+  "model_node_proofs": [
+    {
+      "kind": "HGB_DIRECT_L1",
+      "week": 5,
+      "model_sha256": "c38ed2375fbce9af3aed7da4be017ece9bffdf5085629018b54fa6830899aaed",
+      "stored_split_count": 436,
+      "split_used_columns": 10
+    },
+    {
+      "kind": "HGB_DIRECT_L1",
+      "week": 6,
+      "model_sha256": "288dcd7439a5d01cf7dc81f6bfbf11e98384d722b8ce5fcb6e8330104120a5af",
+      "stored_split_count": 439,
+      "split_used_columns": 10
+    },
+    {
+      "kind": "HGB_DIRECT_L1",
+      "week": 7,
+      "model_sha256": "00ae215e7428c3a475197d3c03dec1146c62cac1d914dc4dc5f36535eec9a5d5",
+      "stored_split_count": 434,
+      "split_used_columns": 10
+    },
+    {
+      "kind": "D1_LEAF_MEDIAN",
+      "week": 5,
+      "model_sha256": "04289cf68fab289c52e4a35f543b93bd64c623b380225d24ce3f7e76cd21439c",
+      "stored_split_count": 1229,
+      "split_used_columns": 30
+    },
+    {
+      "kind": "D1_LEAF_MEDIAN",
+      "week": 6,
+      "model_sha256": "f980ad7adb742a66afd0058466dea8a53889a0412bcf857ccb927a6133fa9700",
+      "stored_split_count": 1226,
+      "split_used_columns": 30
+    },
+    {
+      "kind": "D1_LEAF_MEDIAN",
+      "week": 7,
+      "model_sha256": "779a0246ff889b22aaf842410bfe33412e4c6f27a5dfb04aacff20b9074eb90b",
+      "stored_split_count": 1258,
+      "split_used_columns": 31
+    }
+  ],
+  "union_split_used_column_counts": {
+    "HGB_DIRECT_L1": 10,
+    "D1_LEAF_MEDIAN": 31
+  },
+  "qualified_context_playergames": 96,
+  "qualified_actual_component_fields": 288,
+  "known_ratios": 273,
+  "ratio_nulls_from_nonpositive_denominators": 15,
+  "diagnostic_context_rows_checked": 3024,
+  "no_explicit_forecast_components": true,
+  "scope": [
+    "Inspecting stored tree-node feature indices is not inference, attribution or evidence of causal/incremental value.",
+    "Feature and label availability uses inherited current-vintage kickoff+7day policy; actual publication/quote clocks remain unknown. Ages reference scheduledkickoff separately fromdecisiontime.",
+    "Realized passing A/C/Y and ratios are postgame descriptive context, not emitted model components or pregame inputs."
+  ],
+  "model_fit_calls": 0,
+  "model_predict_calls": 0,
+  "model_apply_calls": 0,
+  "new_grades": 0,
+  "new_private_exports": 0
+}

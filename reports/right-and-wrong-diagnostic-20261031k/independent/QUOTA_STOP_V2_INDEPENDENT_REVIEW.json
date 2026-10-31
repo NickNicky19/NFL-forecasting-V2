@@ -1,0 +1,56 @@
+{
+  "state": "PASS_INDEPENDENT_QUOTA_V2_PART_IDENTITIES_COUNTS_REJECTION_AND_POINTER",
+  "at_utc": "2026-10-31T20:55:23.990903+00:00",
+  "public_quota_receipt_sha256": "6b350b3a3121b2d5f7de094a56502494d944c0130a8c0d9886b22266bef4d19b",
+  "current_status_md_sha256": "cecc1b9f4536b49a304c4fe38e7dfcd67579188db1cec739cf7cf5571a323689",
+  "reporting_helper_sha256": "a4dae5e5e1bff0102c80d4d2473eb23d3e6371598f4d29406f5d03b9c1a2c45a",
+  "pointer_sha256": "4b1003c18f86a29e6db0d9d3b8c6a1596c9c47db644b4d57c614d32a2250f710",
+  "pointer_hash_bindings_verified": 25,
+  "unique_new_successful_parts": 15,
+  "successful_upload_payload_bytes": 296829898,
+  "remaining_required_parts": 38,
+  "remaining_required_upload_payload_bytes": 796917760,
+  "archives": [
+    {
+      "artifact_id": "V2-PRIVATE-RECOVERY-DELTA-20261030D-0001",
+      "uploaded_parts": 13,
+      "required_parts": 13,
+      "missing_parts": 0,
+      "missing_payload_bytes": 0
+    },
+    {
+      "artifact_id": "V2-PRIVATE-SEASON-2022-V2",
+      "uploaded_parts": 1,
+      "required_parts": 11,
+      "missing_parts": 10,
+      "missing_payload_bytes": 209715200
+    },
+    {
+      "artifact_id": "V2-PRIVATE-SEASON-2023-COMPLETE-V1",
+      "uploaded_parts": 1,
+      "required_parts": 17,
+      "missing_parts": 16,
+      "missing_payload_bytes": 335544320
+    },
+    {
+      "artifact_id": "V2-PRIVATE-SEASON-2024-V2",
+      "uploaded_parts": 11,
+      "required_parts": 23,
+      "missing_parts": 12,
+      "missing_payload_bytes": 251658240
+    }
+  ],
+  "provider_rejection": {
+    "HTTP_code": 403,
+    "reason": "storageQuotaExceeded",
+    "rejected_part_bytes": 20971520
+  },
+  "quota_or_remaining_free_capacity_measured": false,
+  "capacity_qualification": "760MiB is the remaining upload payload, not a measured quota increment or known available balance; separately reserve future-wave output. Approved Drive owner and connected profile remain distinct.",
+  "old_global_recovery_gate_cleared": false,
+  "delta_complete_uploads_not_yet_independently_restoration_verified_by_this_receipt": true,
+  "generator_review": "All current successes independently require isError=false AND provider success=true, exact frozen part identity and approved parent. A successful upload is not a complete-restoration claim.",
+  "new_transfers": 0,
+  "new_scientific_calculations": 0,
+  "checker_sha256": "858d9d52557eb8339d05fd4a3be9320d3897e416ab096509a54d94c1ccb3addc"
+}

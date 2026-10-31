@@ -92,6 +92,36 @@ def validate_diagnostic_context_coverage(record, contexts):
     return contexts
 
 
+def diagnostic_control_mask_annotation(record, annotation):
+    """A masked saved control's missing standalone coverage stays unknown."""
+    if (record.get('kind')!='right_and_wrong_prediction_diagnostic'
+            or not str(record.get('procedure_id','')).startswith('SAVED_')):
+        raise ValueError('control mask scope requires a saved-control diagnostic')
+    if (annotation.get('correction_kind')!='COVERAGE_SCOPE_METADATA_ONLY_NO_NUMERIC_OR_PREDICTION_CHANGE'
+            or annotation.get('default_rank_eligible')is not False
+            or annotation.get('coverage_scope')not in('INHERITED_FOCAL_COMPARISON_MASK','INHERITED_FIXED_BASE_LEAF_COMPARISON_MASK')):
+        raise ValueError('qualified diagnostic mask annotation required')
+    outer,admitted=(annotation.get(k)for k in('comparison_mask_outer_offer_rows','comparison_mask_admitted_forecasts'))
+    if (type(outer)is not int or type(admitted)is not int or not 0<=admitted<=outer
+            or outer!=record.get('outer_opportunities')or admitted!=record.get('source_admitted_forecasts')):
+        raise ValueError('control comparison-mask counts changed')
+    ratio=admitted/outer if outer else None
+    if (annotation.get('comparison_mask_fraction')!=ratio
+            or annotation.get('original_full_source_coverage')!=record.get('full_source_coverage')
+            or annotation.get('masked_out_or_missing_control_rows')!=outer-admitted):
+        raise ValueError('control comparison-mask fraction/source mismatch')
+    if (annotation.get('standalone_forecast_availability')is not None
+            or annotation.get('standalone_forecast_unavailable_count')is not None
+            or not annotation.get('standalone_availability_null_reason')):
+        raise ValueError('unqualified standalone control availability must remain unknown')
+    names=('coverage_scope','comparison_mask_outer_offer_rows','comparison_mask_admitted_forecasts',
+           'comparison_mask_fraction','masked_out_or_missing_control_rows','full_source_coverage_semantics',
+           'standalone_forecast_availability','standalone_forecast_unavailable_count','standalone_availability_null_reason')
+    result=dict(record,**{k:annotation[k]for k in names})
+    result['coverage_definition']='Outcome-conditioned diagnostic subset inside an inherited control-comparison mask. Comparison-mask coverage is not standalone control forecast availability; standalone availability and unavailable count remain unknown.'
+    return result
+
+
 def csv_handle(path,compressed):
     return io.TextIOWrapper(gzip.GzipFile(filename=str(path),mode='wb',mtime=0),encoding='utf-8',newline='') if compressed else path.open('w',newline='')
 
@@ -227,6 +257,8 @@ def new_records(root,item,inputs):
             if reporting[i].get('diagnostic_context_coverage') is not None:
                 record['diagnostic_context_coverage']=validate_diagnostic_context_coverage(record,reporting[i]['diagnostic_context_coverage'])
                 record['coverage_definition']='Canonical qualified score/forecast mask only. Complete-source availability and conditional overlap denominators are explicit in diagnostic_context_coverage; mask coverage is not complete-system coverage.'
+            if reporting[i].get('coverage_scope') is not None:
+                record=diagnostic_control_mask_annotation(record,reporting[i])
         invalid_mask=item.get('invalidated_shared_mask')
         if invalid_mask and original.get('fallback_view')==invalid_mask:
             record['score_version_state']='INVALIDATED_REQUESTED_SHARED_MASK_REFERENCE_ALIAS'

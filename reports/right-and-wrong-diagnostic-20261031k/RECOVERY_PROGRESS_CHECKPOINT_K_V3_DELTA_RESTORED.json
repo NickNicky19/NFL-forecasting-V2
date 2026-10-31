@@ -1,0 +1,95 @@
+{
+  "state": "DELTA_AND_NEW_K_RESTORED_THREE_SEASONAL_ARCHIVES_QUOTA_BLOCKED",
+  "checked_at_utc": "2026-10-31T20:55:25.467306+00:00",
+  "supersedes_progress_snapshot": "RECOVERY_PROGRESS_CHECKPOINT_K_V2_QUOTA_STOP.json",
+  "original_missing_parts": 53,
+  "original_missing_bytes": 1093747658,
+  "provider_successful_missing_part_uploads": 15,
+  "provider_successful_upload_bytes": 296829898,
+  "remaining_missing_upload_parts": 38,
+  "remaining_missing_upload_bytes": 796917760,
+  "minimum_additional_capacity_bytes": 796917760,
+  "additional_new_wave_retention_reservation_bytes": null,
+  "provider_error": {
+    "code": 403,
+    "reason": "storageQuotaExceeded",
+    "rejected_part_bytes": 20971520
+  },
+  "provider_error_receipt_sha256": "d12189f42237dff1aae8cf27190e674123e2f693ad5b87e4aeecf7c56a61c532",
+  "successful_receipt_sha256s": [
+    "04d3e3f938307f94aa80162d8a1bb88e9999368f088975db460c3ad50b0a7410",
+    "10d1b4efba3f6735d0cd30e5e7c1230933810317d2cf572e91329af8a63a5784",
+    "27305d492684be16e1c7a52c15b921c264c597ed6dfd955b0b261cff6c3d3928",
+    "398663852718d981edde7a0a503843943ea11a1097552b6b3bc73fe08abed527",
+    "58ccb048473b1a7ed429950f337a1549943ff1d9a2721cc8407b6d332e1b005b",
+    "5f31ce7d83bc1286da3fe219e4849330e63f6535b2b92927ea9863506ec762df",
+    "623c7079d0d2754b291d73dec9353753d9f168f402c20cde8c91aaf00d83e2e0",
+    "74cd5b97d14a8033814c21a50379149215e8f2f45284df9f62ee51a5c7b21165",
+    "7970a3bf5564971a8059d27e31f75636d583d1b678f2c722faeefeb015e22a1d",
+    "7e69ab3523eef095fd99d58b1b2173b0754cbab17572504b21e4c49764329329",
+    "a109861b321398c1b37d9e0831fe8efa9c0ed85c810e4b90130b347c98dc19f0",
+    "ba5b27005bcb2cce2fd445590ae69c98ef570402e38a467bf20a5afc75ca6a7a",
+    "cf0a71e32a4c21b3aec45c6c19c4084a570d2743225c3270f122260bc38da8d2",
+    "ea5d2583442eb2feba45e19f2aa1e03d315a04a5b3807a3d6db2a7fd2c7e950b",
+    "fa9580730e2a6bf2c96899a5f12e878b2e70ddf2a0eb6af614c3e9262d8f9ec5"
+  ],
+  "missing_part_plan_sha256": "0afa92672d70b356219813941d32937a03e2e1e127dfd272a75e9facb303a289",
+  "archives": [
+    {
+      "artifact_id": "V2-PRIVATE-RECOVERY-DELTA-20261030D-0001",
+      "total_parts": 13,
+      "archive_bytes": 263613679,
+      "remote_parts_available": 13,
+      "missing_parts": 0,
+      "missing_bytes": 0,
+      "restoration_state": "FRESH_PRIVATE_RESTORE_ALL_PARTS_AND_INNER_FILES_VERIFIED",
+      "full_restoration_verified": true
+    },
+    {
+      "artifact_id": "V2-PRIVATE-SEASON-2022-V2",
+      "total_parts": 11,
+      "archive_bytes": 224693683,
+      "remote_parts_available": 1,
+      "missing_parts": 10,
+      "missing_bytes": 209715200,
+      "restoration_state": "PARTIAL_REMOTE_LOCAL_ORIGINALS_PRESERVED",
+      "full_restoration_verified": false
+    },
+    {
+      "artifact_id": "V2-PRIVATE-SEASON-2023-COMPLETE-V1",
+      "total_parts": 17,
+      "archive_bytes": 353782056,
+      "remote_parts_available": 1,
+      "missing_parts": 16,
+      "missing_bytes": 335544320,
+      "restoration_state": "PARTIAL_REMOTE_LOCAL_ORIGINALS_PRESERVED",
+      "full_restoration_verified": false
+    },
+    {
+      "artifact_id": "V2-PRIVATE-SEASON-2024-V2",
+      "total_parts": 23,
+      "archive_bytes": 464346512,
+      "remote_parts_available": 11,
+      "missing_parts": 12,
+      "missing_bytes": 251658240,
+      "restoration_state": "PARTIAL_REMOTE_LOCAL_ORIGINALS_PRESERVED",
+      "full_restoration_verified": false
+    }
+  ],
+  "new_K_bundle_restoration_verified": true,
+  "whole_four_archive_restoration_verified": false,
+  "large_fit_gate_cleared": false,
+  "quota_available_bytes": null,
+  "quota_identity_qualification": "Connected profile and Drive owner differ; uploaded owner matches approved folder owner. No supported quantitative quota reading. Explicit write rejection establishes exhaustion for that upload.",
+  "next_owner_action": "Make at least 796917760 additional bytes available to the actual uploading Drive owner in the approved destination, plus a separately reserved new-wave budget; or provide an owner-approved capacity solution. No purchase, deletion, sharing or destination change authorized.",
+  "retry_policy": "No more uploads without meaningful capacity/account/provider-state change. Preserve every successful part and local original. Finish readback only for the now-complete delta archive.",
+  "privacy_or_sharing_changes": 0,
+  "new_NFL_fits": 0,
+  "scope": "Delta archive only fully restored; all four are required by existing large-fit gate. New K private derivative bundle independently restored separately. Remaining seasonal parts stay local-only where absent remotely. No numerical backtest cell, NFL fit or production admission completed.",
+  "delta_fresh_restoration_receipt": {
+    "path": "reports/right-and-wrong-diagnostic-20261031k/recovery-preflight/delta-fresh-restore-v1/DELTA_FRESH_RESTORATION_RECEIPT.json",
+    "sha256": "c3b11fcc2e26a75ce2106009e15ebc58544ff5c894598572666baccf86ff14e1"
+  },
+  "old_archives_fully_restored": 1,
+  "old_archives_remaining": 3
+}

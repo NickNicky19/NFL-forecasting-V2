@@ -1,0 +1,56 @@
+"""Read exact retained arrays/model nodes/context; never fit/predict/apply."""
+import argparse,collections,datetime,gzip,hashlib,json,math,pickle,sys
+from pathlib import Path
+HERE=Path(__file__).resolve().parent;BASE=HERE.parent;ROOT=HERE.parents[2];sys.path.insert(0,str(ROOT))
+from nfl_v2.hgb_control import FEATURES
+def read(p):return json.loads(p.read_bytes())
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def ts(x):return datetime.datetime.fromisoformat(x.replace('Z','+00:00')).timestamp()if isinstance(x,str)else x
+def close(a,b):
+    if a is None or b is None:assert a is b
+    else:assert math.isclose(float(a),float(b),abs_tol=1e-9,rel_tol=1e-10)
+def main():
+    ap=argparse.ArgumentParser();ap.add_argument('--private-root',type=Path,required=True);a=ap.parse_args();L=BASE/'lineage';p=read(L/'FROZEN_LINEAGE_PROTOCOL.json');outrows=json.loads(gzip.decompress((a.private_root/'right-and-wrong-diagnostic-20261031k-stage-a-v1/RIGHT_WRONG_ROWS_AND_EXAMPLES.json.gz').read_bytes()))['rows'];publicmodels={(r['target'],r['week']):r for r in read(L/'inspection-v2/MODEL_INPUT_AND_SPLIT_PROOF.json')};publicfresh={(r['target'],r['week']):r for r in read(L/'inspection-v2/QUERY_FRESHNESS_AND_FALLBACK.json')};publicnull={(r['target'],r['week'],r['feature']):r for r in read(L/'inspection-v2/FEATURE_NONMISSING_COVERAGE.json')};look={};matched=admitted=0;union=collections.defaultdict(set);modelproof=[]
+    for b in p['fit_parents']:
+        fitpath=ROOT/b['receipt_path'];assert sha(fitpath)==b['receipt_sha256'];fit=read(fitpath);folder='hgb-history-v1'if b['kind']=='HGB_DIRECT_L1'else'qualified-defense-information-v1';qpath=a.private_root/folder/b['query_features']['name'];modelpath=a.private_root/folder/b['model']['name'];assert sha(qpath)==b['query_features']['sha256']and sha(modelpath)==b['model']['sha256'];queries=json.loads(gzip.decompress(qpath.read_bytes()));columns=list(FEATURES)if b['kind']=='HGB_DIRECT_L1'else fit['feature_columns'];assert len(columns)==(20 if b['kind']=='HGB_DIRECT_L1'else 24);qmap={};matchedpack=[];freshn=0;nominal=0;ages=[];gameages=[];fb=collections.Counter()
+        for z in queries:
+            q=z['query'];assert int(q['season'])==2026 and int(q['week'])==b['week']and q['target']==b['target'];assert len(z['features'])==len(columns);assert q['cutoff']==q['kickoff'];key=(int(q['week']),str(q['game_id']),str(q['player_id']),q['population']);assert key not in qmap;qmap[key]=z
+        recipe=next(x for x in p['focals']if x[0]==b['target']);cases=[r for r in outrows if r['recipe']==recipe and r['week']==b['week']]
+        for r in cases:
+            z=qmap[r['week'],str(r['game_id']),str(r['player_id']),'primary'];q=z['query'];assert q['position']==r['position']and q['kickoff']==ts(r['kickoff']);maximum=z.get('latest_consumed_feature_available',z.get('latest_feature_available'));assert maximum is None or maximum<q['cutoff'];meta=r['feature_lineage'];assert meta['feature_values']==dict(zip(columns,z['features']))and meta['feature_cutoff']==q['cutoff']and meta['source_query_sha256']==b['query_features']['sha256']and meta['fit_receipt_sha256']==b['receipt_sha256'];assert meta['actual_source_publication_time']is None and meta['actual_quote_update_time']is None;assert r['source_age']['quote_update_age_days']is None;close(r['source_age']['prior_game_age_at_scheduled_kickoff_days'],z['features'][5]);close(r['source_age']['decision_minus_assumed_feature_availability_days'],(ts(r['decision_time'])-maximum)/86400 if maximum is not None else None);close(r['source_age']['decision_minus_nominal_fit_origin_days'],(ts(r['decision_time'])-ts(fit['fit_cutoff_utc']))/86400);matchedpack.append(z);matched+=1;fb[str(r['fallback'])]+=1
+            if r['admitted']:
+                admitted+=1;latest=fit.get('latest_training_consumed_feature_available',fit.get('latest_training_feature_available'));assert all(x is None or x<ts(r['decision_time'])for x in(maximum,fit['latest_training_label_available'],latest));freshn+=1;nominal+=ts(fit['fit_cutoff_utc'])<ts(r['decision_time']);ages.extend([]if maximum is None else[(ts(r['decision_time'])-maximum)/86400]);gameages.extend([]if z['features'][5]is None else[z['features'][5]])
+        public=publicfresh[b['target'],b['week']];assert public['matched_query_rows']==len(matchedpack)==len(cases)and public['admitted_focal_rows']==freshn==public['admitted_all_consumed_source_label_feature_clocks_before_decision']and public['nominal_registered_fit_origin_before_decision']==nominal and public['fallback_metadata_counts']==dict(fb);close(public['availability_age_days_at_decision_min'],min(ages,default=None));close(public['availability_age_days_at_decision_max'],max(ages,default=None));close(public['stored_lag1_age_days_at_scheduled_kickoff_min'],min(gameages,default=None));close(public['stored_lag1_age_days_at_scheduled_kickoff_max'],max(gameages,default=None))
+        for i,name in enumerate(columns):
+            n=publicnull[b['target'],b['week'],name];assert n['matched_query_n']==len(matchedpack)and n['null_n']==sum(z['features'][i]is None for z in matchedpack)and n['finite_n']==sum(z['features'][i]is not None and math.isfinite(z['features'][i])for z in matchedpack)
+        model=pickle.loads(gzip.decompress(modelpath.read_bytes()));counts=collections.Counter()
+        if b['kind']=='HGB_DIRECT_L1':
+            assert model.n_features_in_==20 and model.loss=='absolute_error';names=columns
+            for stage in model._predictors:
+                for tree in stage:counts.update(int(n['feature_idx'])for n in tree.nodes if not n['is_leaf'])
+        else:
+            assert len(model.design.median)==24 and model.estimator.n_features_in_==48 and model.estimator.criterion=='squared_error';names=columns+['is_missing:'+x for x in columns]
+            for tree in model.estimator.estimators_:counts.update(int(i)for i in tree.tree_.feature if i>=0)
+        expected=[dict(transformed_index=i,feature=name,stored_internal_node_uses=counts[i])for i,name in enumerate(names)];assert publicmodels[b['target'],b['week']]['splits']==expected;union[b['kind']].update(names[i]for i in counts);modelproof.append(dict(kind=b['kind'],week=b['week'],model_sha256=b['model']['sha256'],stored_split_count=sum(counts.values()),split_used_columns=len(counts)))
+    assert matched==168 and admitted==156
+    A=read(L/'POSTGAME_CONTEXT_ADMISSION.json');context={}
+    for b in A['source_bindings']:
+        assert sha(ROOT/b['receipt_path'])==b['receipt_sha256'];qpath=a.private_root/'hgb-history-v1'/b['query_features']['name'];assert sha(qpath)==b['query_features']['sha256']
+        for z in json.loads(gzip.decompress(qpath.read_bytes())):
+            q=z['query']
+            if q['population']!='primary'or q['position']!='QB':continue
+            key=(int(q['week']),str(q['game_id']),str(q['player_id']));parts=context.setdefault(key,{});assert b['target']not in parts;v=q.get('actual');assert v is not None and isinstance(v,(int,float))and not isinstance(v,bool)and math.isfinite(v);assert b['target']=='pass_yd'or v>=0 and float(v).is_integer();parts[b['target']]=dict(actual=v,missing_reason=None,source_query_sha256=b['query_features']['sha256'])
+    ratios=collections.Counter();contextmatches=0
+    for r in outrows:
+        key=(int(r['week']),str(r['game_id']),str(r['player_id']));parts=context[key];real=r['POSTGAME_DESCRIPTIVE_CONTEXT'];assert real['actual_components']==parts;assert real['evidence_role']=='POSTGAME_DESCRIPTIVE_ONLY_NEVER_PREGAME_INPUT_OR_COMPONENT_FORECAST';assert parts[r['target']]['actual']==r['actual'];aa,cc,yy=(parts[t]['actual']for t in('pass_att','pass_cmp','pass_yd'))
+        for name,num,den in[('realized_completions_per_attempt',cc,aa),('realized_yards_per_attempt',yy,aa),('realized_yards_per_completion',yy,cc)]:
+            q=real['realized_ratios'][name];assert q['missing_reason']==('NONPOSITIVE_DENOMINATOR'if den<=0 else None);close(q['value'],num/den if den>0 else None)
+        contextmatches+=1
+    for parts in context.values():
+        aa,cc,yy=(parts[t]['actual']for t in('pass_att','pass_cmp','pass_yd'))
+        for num,den in[(cc,aa),(yy,aa),(yy,cc)]:ratios['KNOWN'if den>0 else'NONPOSITIVE_DENOMINATOR']+=1
+    assert len(context)==96 and sum(len(v)for v in context.values())==288 and ratios=={'KNOWN':273,'NONPOSITIVE_DENOMINATOR':15}
+    out=dict(state='PASS_INDEPENDENT_K_QUERY_MODEL_NODE_AND_POSTGAME_CONTEXT_PROVENANCE',lineage_protocol_sha256=sha(L/'FROZEN_LINEAGE_PROTOCOL.json'),postgame_admission_sha256=sha(L/'POSTGAME_CONTEXT_ADMISSION.json'),checker_sha256=sha(Path(__file__)),focal_query_vectors_exactly_joined=168,admitted_vectors_all_consumed_clocks_before_decision=156,raw_input_nonmissing_coverage_cells_checked=132,retained_model_node_arrays_inspected=6,model_node_proofs=modelproof,union_split_used_column_counts={k:len(v)for k,v in union.items()},qualified_context_playergames=96,qualified_actual_component_fields=288,known_ratios=273,ratio_nulls_from_nonpositive_denominators=15,diagnostic_context_rows_checked=contextmatches,no_explicit_forecast_components=True,scope=['Inspecting stored tree-node feature indices is not inference, attribution or evidence of causal/incremental value.','Feature and label availability uses inherited current-vintage kickoff+7day policy; actual publication/quote clocks remain unknown. Ages reference scheduledkickoff separately fromdecisiontime.','Realized passing A/C/Y and ratios are postgame descriptive context, not emitted model components or pregame inputs.'],model_fit_calls=0,model_predict_calls=0,model_apply_calls=0,new_grades=0,new_private_exports=0)
+    with(HERE/'LINEAGE_AND_CONTEXT_INDEPENDENT_REVIEW.json').open('x')as f:json.dump(out,f,indent=2);f.write('\n')
+    print(json.dumps(dict(state=out['state'],focal_vectors=168,models=6,context_rows=contextmatches)))
+if __name__=='__main__':main()

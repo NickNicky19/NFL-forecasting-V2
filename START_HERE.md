@@ -1,3 +1,7 @@
+[Current recovery: new Karchive and old delta archive restored; three seasonal archives remain quota-blocked](reports/right-and-wrong-diagnostic-20261031k/RECOVERY_STATUS_CURRENT_V3.md). Fifteen old parts uploaded;38parts/796,917,760bytes remain. The old large-fit gate remains closed. [Earlier retention update](reports/right-and-wrong-diagnostic-20261031k/RETENTION_UPDATE_20261031.md) is preserved at its actual snapshot time.
+
+New bounded diagnostic: [right and wrong predictions](reports/right-and-wrong-diagnostic-20261031k/RIGHT_AND_WRONG_PREDICTION_DIAGNOSTIC.md) · [all183 existing output/history/category cells](reports/right-and-wrong-diagnostic-20261031k/ALL_METHOD_DIAGNOSTIC_SUMMARIES.csv). Outcome-conditioned examples do not change championship rankings or owner release policy.
+
 Code/operations continuation: [current older D1/D2 executor and failure-audit correction](reports/defense-season-executor-20261031j-code/correction-v2/README.md) · [actual owner capture/readback](reports/owner-runtime-refresh-20261031j/README.md) · [new-packet consumer check](reports/owner-runtime-refresh-20261031j/supplemental/README.md). These add no NFL backtest scores; the full scientific category report below remains current.
 
 # NFL Forecasting V2

@@ -1,8 +1,10 @@
 """Consolidate source-bound aggregate comparisons; never fit, infer or regrade."""
 from __future__ import annotations
-import collections,csv,hashlib,json,math,re
+import collections,csv,hashlib,json,math,re,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT))
+from nfl_v2.result_index import is_championship_eligible
 OUT=ROOT/'reports/completion-20261031g'
 F=ROOT/'reports/championship-20261030f'
 TARGETS=['pass_yd','pass_td','pass_cmp','pass_att','pass_int','rush_yd','rush_att','rec','rec_yd','rush_rec_yd','nick-chart-ppr-v1','anytime_td']
@@ -30,6 +32,7 @@ def source_rows(bindings,role):
    obj=read(meta);assert obj['source_score_sha256']==b['sha256'];annotations={v['record_id']:v for v in obj['rows']}
 
   for row in read(p):
+   if not is_championship_eligible(row):continue
    if (row.get('record_kind')=='prop_threshold_probability_evaluation'or(row.get('record_kind')=='prop_selection_evaluation'and row.get('decision_rule')=='P2'))and tuple(row.get(k)for k in('target','procedure_id','history_regime'))in excluded:continue
    if str(row.get('method_id',row.get('strategy',''))).startswith('CONTROL-'):continue
    row=dict(row);addition=annotations.get(row['record_id'],{})

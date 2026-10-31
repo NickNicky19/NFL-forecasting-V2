@@ -8,10 +8,19 @@ from pathlib import PurePosixPath
 
 VERSION = 'v2-test-results-index-v1'
 DIAGNOSTIC_KIND='NEW_EXPERIMENT_CURRENT_VINTAGE_PARTICIPANT_DIAGNOSTIC'
+RIGHT_WRONG_KIND='right_and_wrong_prediction_diagnostic'
+
+
+def is_championship_eligible(row):
+    """Outcome-conditioned explanations cannot become forecasting champions."""
+    source=row.get('source_aggregate_fields')or{}
+    return not(any(r.get('diagnostic_only')is True or r.get('default_rank_eligible')is False
+                   or r.get('record_kind',r.get('kind'))==RIGHT_WRONG_KIND
+                   for r in(row,source)))
 METRICS = {
     'mae': ('mae','MAE'), 'mse': ('mse','MSE'), 'rmse': ('rmse','RMSE'),
     'bias': ('bias',), 'p90_abs': ('p90_abs','p90'), 'p95_abs': ('p95_abs','p95'),
-    'max_abs': ('max_abs','max_error'), 'brier': ('brier','Brier'),
+    'max_abs': ('max_abs','max_error','max_abs_error'), 'brier': ('brier','Brier'),
     'log_loss': ('log_loss',), 'nll': ('NLL','nll'), 'crps': ('CRPS','crps'),
 }
 PRECISION = {'exact_rate': ('exact_rate',), 'abs_lt_1': ('abs_lt_1','error_strict_lt1'),
@@ -87,6 +96,14 @@ def evaluation(row,artifact,*,year_record=None,source_link=None):
     if row.get('record_kind')=='prop_selection_evaluation':
         return prop_selection_evaluation(row,artifact,year_record=year_record,source_link=source_link)
     safe_artifact(artifact)
+    right_wrong=row.get('record_kind')==RIGHT_WRONG_KIND
+    if right_wrong:
+        if (row.get('diagnostic_only')is not True or row.get('default_rank_eligible')is not False
+                or row.get('conditioning')!='SELECTED_SIDE_AND_REALIZED_OUTCOME'):
+            raise ValueError('outcome-conditioned diagnostic requires explicit ranking exclusion')
+        if any(not isinstance(row.get(k),str)or not row[k]
+               for k in('diagnostic_bucket','diagnostic_dimension','diagnostic_band')):
+            raise ValueError('diagnostic bucket/dimension/band identity required')
     coverage=row.get('coverage',{})
     if not isinstance(coverage,dict):raise ValueError('coverage must be aggregate object')
     n,n_field=count(row,('n',))
@@ -162,6 +179,8 @@ def evaluation(row,artifact,*,year_record=None,source_link=None):
         raise ValueError('method/category/product/panel identities required')
     # New optional diagnostic dimensions must not rename previously indexed views.
     hash_identity={k:v for k,v in identity.items() if k not in {'position','fallback_view'} or v is not None}
+    if right_wrong:
+        hash_identity.update({k:row[k]for k in('conditioning','diagnostic_bucket','diagnostic_dimension','diagnostic_band')})
     test_id='TEST-'+hashlib.sha256(canonical([artifact,hash_identity]).encode()).hexdigest()[:20]
     unit=('probability' if threshold_probability else
           'yards' if target in {'pass_yd','rush_yd','rec_yd','rush_rec_yd'} else
@@ -176,7 +195,8 @@ def evaluation(row,artifact,*,year_record=None,source_link=None):
         games_missing_reason=None if games is not None else 'distinct scored-game count not supplied; requires retained-row census',
         forecast_or_offered_rows=offered,offered_source_field=offered_field,
         coverage_fraction=n/offered if n is not None and offered else None,
-        coverage_definition='scored denominator / source-declared offered or forecast rows; not forecast accuracy',
+        coverage_definition=('Outcome-conditioned diagnostic rows only; this fraction is not complete-system availability or selectable coverage. Inspect full_source_coverage and outer_opportunities.'if right_wrong else
+                             'scored denominator / source-declared offered or forecast rows; not forecast accuracy'),
         coverage_source=coverage,fallback_rows=fallback,fallback_source_field=fallback_field,
         scored_fallback_rows=scored_fallback,scored_fallback_source_field=scored_fallback_field,
         fallback_missing_reason=None if fallback is not None else 'fallback count not reported',
@@ -192,6 +212,10 @@ def evaluation(row,artifact,*,year_record=None,source_link=None):
         uncertainty=row.get('uncertainty'),source_artifact=artifact,source_artifact_sha256=None,
         cohort_limit=row.get('cohort_limit'),source_vintage=row.get('source_vintage'),
         procedure_family_id=row.get('procedure_family_id'),feature_memory_policy=row.get('feature_memory_policy'),
+        **({k:row.get(k)for k in('diagnostic_only','default_rank_eligible','conditioning',
+                            'diagnostic_bucket','diagnostic_dimension','diagnostic_band',
+                            'diagnostic_subset_fraction','outer_opportunities','source_admitted_forecasts',
+                            'full_source_coverage','fallback_scope')}if right_wrong else{}),
         **(dict(probability_conditioning=row['probability_conditioning'],
                 probability_score_contract=row['probability_score_contract'],
                 bookmaker_nonvoid_conditioning='UNESTABLISHED') if threshold_probability else {}),
@@ -292,9 +316,13 @@ def validate_index(records):
             if r.get('metrics') is not None or r.get('precision_metrics') is not None or r.get('n') is not None:
                 raise ValueError('software check must not claim NFL accuracy')
             continue
-        if r['kind'] not in {'forecast_evaluation_view',DIAGNOSTIC_KIND,'prop_selection_evaluation',
+        if r['kind'] not in {'forecast_evaluation_view',DIAGNOSTIC_KIND,RIGHT_WRONG_KIND,'prop_selection_evaluation',
                 'prop_threshold_probability_evaluation',
                 'retrospective_chronological_category_selector_aggregate_replay'}:raise ValueError('unknown test kind')
+        if r['kind']==RIGHT_WRONG_KIND and(r.get('diagnostic_only')is not True
+                or r.get('default_rank_eligible')is not False
+                or r.get('conditioning')!='SELECTED_SIDE_AND_REALIZED_OUTCOME'):
+            raise ValueError('outcome-conditioned diagnostic must remain outside rankings')
         if r['primary_error']!=r['metrics'][r['primary_metric']]:raise ValueError('primary metric mismatch')
         for p in (r['precision_metrics'] or {}).values():
             if p['numerator'] is not None:

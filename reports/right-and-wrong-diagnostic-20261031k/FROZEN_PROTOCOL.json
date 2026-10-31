@@ -1,0 +1,205 @@
+{
+  "version": "v2-right-and-wrong-retained-diagnostic-20261031k-v1",
+  "state": "FROZEN_BEFORE_NEW_BUCKET_PATTERN_ANALYSIS",
+  "registered_at_utc": "2026-10-31T19:45:25.328555+00:00",
+  "parent_checkpoint": "337cacde9322213b210e65947a8e24a9410098de",
+  "parent_protocol": {
+    "path": "reports/point-prop-diagnostic-20261031i/point-offer/v1/FROZEN_PROTOCOL.json",
+    "sha256": "6e64cbad87ecc6d48448a65b36787f26e38cbeb2fdc54b4cba44e9d3f979ae4a"
+  },
+  "task": "RIGHT_AND_WRONG_PREDICTION_DIAGNOSTIC",
+  "scope": "Bounded explanatory saved-row study; no tournament restart, causal claim, holdout reset, new release gate or Session C NGS work.",
+  "stage_A": {
+    "period": [
+      2026,
+      5,
+      6,
+      7
+    ],
+    "targets": [
+      "pass_yd",
+      "pass_cmp"
+    ],
+    "focals": {
+      "pass_yd": [
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "pass_cmp": [
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ]
+    },
+    "recipes": [
+      [
+        "empirical-player-history-control-v1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      [
+        "empirical-player-history-control-v1",
+        "H-MULTI",
+        "mean"
+      ],
+      [
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      [
+        "hgb-direct-history-controls-v1:squared_error_mean",
+        "H-MULTI",
+        "squared_error_mean"
+      ],
+      [
+        "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+        "H-MULTI",
+        "lower_median"
+      ],
+      [
+        "v2-c02-explicit-lag-block-removal-leaf-cdf-v1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      [
+        "v2-c02-explicit-lag-block-removal-leaf-cdf-v1",
+        "H-MULTI",
+        "mean"
+      ],
+      [
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      [
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      [
+        "v2-qualified-position-defense-information-wave-v1:D2",
+        "H-MULTI",
+        "lower_median"
+      ],
+      [
+        "v2-distribution-controls-reconstruction-v2:regularized_glm_law",
+        "H-MULTI",
+        "lower_median"
+      ],
+      [
+        "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs",
+        "H-CURRENT",
+        "lower_median"
+      ],
+      [
+        "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs",
+        "H-CURRENT",
+        "lower_median"
+      ],
+      [
+        "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs",
+        "H-CURRENT",
+        "mean"
+      ],
+      [
+        "v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs",
+        "H-CURRENT",
+        "mean"
+      ],
+      [
+        "v2-chronological-category-selector:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+        "H-MULTI",
+        "selected_point"
+      ]
+    ],
+    "saved_controls": [
+      "SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+      "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION"
+    ],
+    "panel": "Own decision-eligible retainedP1 for each exactprocedure/history/output; outer opportunities retained. Identical repeatedcontexts deduplicate only after full row equality; focal common comparisons separate."
+  },
+  "stage_B": "Freeze metadata-only exact extension roster before new pattern metrics, using same fixed library plus already registered category leader/control identities across10numeric offercategories. No outcome-selected additions; list exclusions. Nickchart/anytime withoutoffers remainN/A.",
+  "selection": "Retain P1unrounded point andoriginalsaved side; assert sign(point-line). Original/P2sides cannot be recreated frompoints. Reuse existinggrader, no second scoring pipeline.",
+  "buckets": [
+    "OVER_WIN",
+    "OVER_LOSS",
+    "UNDER_WIN",
+    "UNDER_LOSS"
+  ],
+  "outside_buckets": [
+    "PUSH",
+    "VOID",
+    "PENDING",
+    "MISSING_ACTUAL",
+    "UNKNOWN_PARTICIPATION",
+    "UNRESOLVED_CONTRACT",
+    "ABSTAIN",
+    "UNAVAILABLE_FORECAST"
+  ],
+  "settlement": "Statisticalcrossing only; bookmaker settlement/prices remainunverified.",
+  "algebra": "g=forecast-line;d=actual-line;e=forecast-actual=g-d. Privateoriginaltokens; independentexactDecimal boundaries/identities; no rounding to altergrade.",
+  "tolerances": {
+    "pass_yd": 10,
+    "pass_td": 1,
+    "pass_cmp": 1,
+    "pass_att": 1,
+    "pass_int": 1,
+    "rush_yd": 10,
+    "rush_att": 1,
+    "rec": 1,
+    "rec_yd": 10,
+    "rush_rec_yd": 10
+  },
+  "error_bands": [
+    "abs(e)<=T",
+    "T<abs(e)<=2*T",
+    "abs(e)>2*T"
+  ],
+  "gap_bands": [
+    "g<-2*T",
+    "-2*T<=g<-T",
+    "-T<=g<0",
+    "g=0",
+    "0<g<=T",
+    "T<g<=2*T",
+    "g>2*T"
+  ],
+  "patterns": {
+    "large_error_correct": "WIN and abs(e)>2*T",
+    "close_error_wrong": "LOSS and abs(e)<=T",
+    "residual": "Report residual signs for right and wrong picks; WIN does notmean small error."
+  },
+  "examples": {
+    "representative": "Earliest(decisionUTC,week,source_row_index,stableidentity) within each exactmethod/category/bucket; outcome-conditioned diagnostic sampling, notpregamecohort.",
+    "extreme": "Separately largestabsoluteerror WIN andLOSS; chronologicalties. Purposive extremes explicitlylabelled.",
+    "public": "Opaque caseID/bucket/selectionreason + safeparenthashes only; rawplayer/forecast/line/actual/features privately."
+  },
+  "lineage": "Exactsavedquery/vector/modelreceipt/hash joins. Distinguish passedinputcolumns fromactuallysplit-usedcolumns. Missing features/age/role/fallback=null+reason. Laggedexposure denominator is notfuture opportunity forecast.",
+  "age": "Separate prior-game age, reconstructed feature-availability age, decision-minus-fit age and quote-update age. kickoff+7days is an assumption, notauthenticatedpublication; missingquoteage isunknown,not0.",
+  "pregame_role": "Only actuallyrecorded pregame role/opportunity fields; actual target-game components/script remainpostgame diagnostics outsidepredictors.",
+  "components": "No invented components for directHGB/Leaf/D1/D2/GLM marginals. Only frozenexplicit componentforecasts with compatibleidentity/units/formula can be compared torealizedcomponents. Independentmarginals are notjointpredictions. Reusable product/additive checks mustvalidatealgebra/zeroexposure andoffsettingsigns; absent actualfrozenpackages mark preciseN/A/BLOCKED.",
+  "interpretation_fields": [
+    "WHY_RULE_SELECTED_SIDE",
+    "OBSERVED_ERROR_PATTERN",
+    "SUPPORTED_PREGAME_INFORMATION_POSSIBLY_MISSED",
+    "POSTGAME_DESCRIPTIVE_CONTEXT",
+    "CAUSE_OR_REMEDY_UNTESTED"
+  ],
+  "causal_default": "CAUSE_UNRESOLVED. No featureimportance-as-cause, inventedinjurypenalties, postgamestory-as-cause, evaluated-outcome biasoffset/inversion/calibration/blend/routing.",
+  "canonical_scores": "New bucket/band native diagnosticviews only, no duplicateoldfullscores. diagnostic_only=true, outcome-conditioned membership and default_rank_eligible=false. Existing scientific ranking pointers unchanged.",
+  "budget": {
+    "stage_A_wall_seconds": 300,
+    "extension_wall_seconds": 300,
+    "max_RSS_bytes": 1073741824,
+    "max_new_private_bytes_total": 12582912,
+    "max_threads": 1,
+    "new_fit_workers": 0,
+    "new_model_predict_apply_calls": 0,
+    "new_feed_acquisition": 0,
+    "new_captures": 0
+  },
+  "retention": "Preserve oldpackets/successfuluploads. Derivative hashes do notprove restoration. Existinglargefitgate unchanged; no bulk retry/account/sharing/delete/destination/spendingchange.",
+  "operation": "Ownercapture/provisionalpolicy independent; V2no production/scheduler/collector/merge/deploy."
+}

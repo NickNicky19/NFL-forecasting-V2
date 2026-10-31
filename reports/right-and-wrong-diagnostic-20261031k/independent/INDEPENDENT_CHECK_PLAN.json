@@ -1,0 +1,43 @@
+{
+  "state": "PREDECLARED_INDEPENDENT_K_CHECKS_BEFORE_NEW_BUCKET_RESULTS",
+  "root_protocol_sha256": "e8fd291408a36b230e77139d6508ff3f7b874bd582175c3adb12acc8cf897bec",
+  "source_grader_bindings": [
+    {
+      "path": "nfl_v2/scoring.py",
+      "sha256": "b61c9cbbced8e5d64060ef1d14f6d60bec1edd9760fa8903a75c1b09503deadb"
+    },
+    {
+      "path": "nfl_v2/recorded_prop_grading.py",
+      "sha256": "00a7e35bbef6441ae861b5b47004f6f0a512f98255c194893a2d1a6a5d58ba2c"
+    },
+    {
+      "path": "nfl_v2/full_provider_prop_replay.py",
+      "sha256": "94a53eb89c817d56b0675b7bc80d883e7b53c7b69ac4d2b6b9dd435c1afa1e15"
+    },
+    {
+      "path": "tools/diagnose_point_offer_disagreement.py",
+      "sha256": "9c0d50955d235c523cb57557b91064f512b898fcf173d7daaaf3404ab3079159"
+    }
+  ],
+  "checks": [
+    "Exact procedure/history/output/selection-policy/source-vintage identity; V2 ranking_point versus saved-reference prediction remains distinct.",
+    "Freeze and hash StageA and later StageB exact rosters before new metrics; mean/median aliases are output views, not new families.",
+    "Full outer opportunity/accounting and all four selected-side WIN/LOSS buckets reconcile; book-unresolved status is parallel and does not erase valid statistical crossing.",
+    "Exact Decimal g=point-line,d=actual-line,e=point-actual=g-d; point equality is P1ABSTAIN, whole-line actual equality is PUSH.",
+    "P1side uses saved unrounded V2 point or explicitly retained-precision control; original/probability-policy sides never regenerated from a point.",
+    "NativeT10yards/T1counts: error<=T, T<error<=2T, error>2T; large-correct strictly>2T and close-wrong inclusive<=T.",
+    "Gap bands are mutually exclusive/exhaustive, including exactzero and bothnegative boundaries.",
+    "All admitted-row/supported-label/bucket numerators, residual signs and native MAE/MSE/bias recomputed separately from executor calculations.",
+    "Examples are first by frozen chronology in each decided bucket; purposive maximum-error examples separately labelled with deterministic ties; evidence stays private or opaque.",
+    "Exact game/player/target/line/period/decision joins and sourcehashes; repeated contexts deduplicate only after full row equality.",
+    "Source ages distinguish game age, assumed availability age, actual decision time, fit cutoff and missing quote clocks; no authenticated-vintage claim from seven-day assumption.",
+    "Fitted feature fields distinguish passed/transformed/split-used; fallback unknown versus zero is preserved.",
+    "No invented direct-model components or independent marginal/median sums presented as joint football predictions; actual components are postgame descriptive context.",
+    "All findings remain descriptive and outcome-conditioned; no causation, repaired algorithm, inversion/offset/routing/NGSstudy, newholdout, publication or release claim."
+  ],
+  "new_NFL_fits": 0,
+  "new_model_inference": 0,
+  "new_forecasts": 0,
+  "new_grades": 0,
+  "prior_I_J_files_modified": false
+}

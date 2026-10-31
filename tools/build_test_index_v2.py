@@ -37,7 +37,12 @@ def current_flat(record):
     # concise source pointers, explicit counts and metrics for practical filtering.
     for key in CSV_OMIT_FIELDS:row.pop(key,None)
     for key in ('run_id','procedure_family_id','cohort_id','information_policy','feature_memory_policy','training_population','source_vintage','scoring_version','correction_kind','precision_correction_artifact',
-            'probability_conditioning','probability_score_contract','bookmaker_nonvoid_conditioning','proper_probability_n','reporting_metadata_provenance','law_origin_counts','outer_offer_coverage','diagnostic_context_coverage'):
+            'probability_conditioning','probability_score_contract','bookmaker_nonvoid_conditioning','proper_probability_n','reporting_metadata_provenance','law_origin_counts','outer_offer_coverage','diagnostic_context_coverage',
+            'diagnostic_only','default_rank_eligible','conditioning','diagnostic_bucket','diagnostic_dimension','diagnostic_band',
+            'diagnostic_subset_fraction','outer_opportunities','source_admitted_forecasts','full_source_coverage','fallback_scope',
+            'coverage_scope','comparison_mask_outer_offer_rows','comparison_mask_admitted_forecasts','comparison_mask_fraction',
+            'masked_out_or_missing_control_rows','full_source_coverage_semantics','standalone_forecast_availability',
+            'standalone_forecast_unavailable_count','standalone_availability_null_reason'):
         value=record.get(key,source.get(key))
         if value is None:value=source.get(key)
         row[key]=json.dumps(value,separators=(',',':')) if isinstance(value,(dict,list)) else value

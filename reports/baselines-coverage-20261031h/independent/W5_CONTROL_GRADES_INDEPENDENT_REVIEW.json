@@ -1,0 +1,185 @@
+{
+  "state": "PASS_INDEPENDENT_NEW_W5_CONTROL_LABEL_JOINS_GRADES_SIDES_AND_K",
+  "at": "2026-10-31T03:43:26.000610+00:00",
+  "weeks": [
+    {
+      "week": 5,
+      "protocol_sha256": "df906e5c610467d299b4fb1f621557c3d989614121013d33342033f288eade48",
+      "score_sha256": "1c6f2f227fa6a387abab864345a64c3494a1cec979f1b808bcd2fcf8d223a1f1",
+      "offer_rows": 617,
+      "label_states": {
+        "SUPPORTED": 606,
+        "APPEARANCE_UNKNOWN": 11
+      },
+      "grade_views": 3085,
+      "score_views": 5145,
+      "side_triplets": 1715,
+      "rolling_K_lists": 450,
+      "grade_states": {
+        "WIN": 1486,
+        "LOSS": 1328,
+        "ABSTAIN": 219,
+        "UNKNOWN_PARTICIPATION": 52
+      },
+      "all_methods_sides": [
+        {
+          "strategy": "original",
+          "side": "over",
+          "selected": 223,
+          "wins": 111,
+          "losses": 106,
+          "decided": 217,
+          "hit_rate": 0.511520737327189,
+          "unknown": 6
+        },
+        {
+          "strategy": "original",
+          "side": "under",
+          "selected": 178,
+          "wins": 107,
+          "losses": 69,
+          "decided": 176,
+          "hit_rate": 0.6079545454545454,
+          "unknown": 2
+        },
+        {
+          "strategy": "original",
+          "side": "Combined",
+          "selected": 401,
+          "wins": 218,
+          "losses": 175,
+          "decided": 393,
+          "hit_rate": 0.55470737913486,
+          "unknown": 8
+        },
+        {
+          "strategy": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+          "side": "over",
+          "selected": 335,
+          "wins": 169,
+          "losses": 157,
+          "decided": 326,
+          "hit_rate": 0.5184049079754601,
+          "unknown": 9
+        },
+        {
+          "strategy": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+          "side": "under",
+          "selected": 281,
+          "wins": 166,
+          "losses": 113,
+          "decided": 279,
+          "hit_rate": 0.5949820788530465,
+          "unknown": 2
+        },
+        {
+          "strategy": "SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION",
+          "side": "Combined",
+          "selected": 616,
+          "wins": 335,
+          "losses": 270,
+          "decided": 605,
+          "hit_rate": 0.5537190082644629,
+          "unknown": 11
+        },
+        {
+          "strategy": "SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+          "side": "over",
+          "selected": 355,
+          "wins": 175,
+          "losses": 171,
+          "decided": 346,
+          "hit_rate": 0.5057803468208093,
+          "unknown": 9
+        },
+        {
+          "strategy": "SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+          "side": "under",
+          "selected": 260,
+          "wins": 152,
+          "losses": 106,
+          "decided": 258,
+          "hit_rate": 0.5891472868217055,
+          "unknown": 2
+        },
+        {
+          "strategy": "SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+          "side": "Combined",
+          "selected": 615,
+          "wins": 327,
+          "losses": 277,
+          "decided": 604,
+          "hit_rate": 0.5413907284768212,
+          "unknown": 11
+        },
+        {
+          "strategy": "alwaysOver",
+          "side": "over",
+          "selected": 617,
+          "wins": 283,
+          "losses": 323,
+          "decided": 606,
+          "hit_rate": 0.466996699669967,
+          "unknown": 11
+        },
+        {
+          "strategy": "alwaysOver",
+          "side": "under",
+          "selected": 0,
+          "wins": 0,
+          "losses": 0,
+          "decided": 0,
+          "hit_rate": null,
+          "unknown": 0
+        },
+        {
+          "strategy": "alwaysOver",
+          "side": "Combined",
+          "selected": 617,
+          "wins": 283,
+          "losses": 323,
+          "decided": 606,
+          "hit_rate": 0.466996699669967,
+          "unknown": 11
+        },
+        {
+          "strategy": "alwaysUnder",
+          "side": "over",
+          "selected": 0,
+          "wins": 0,
+          "losses": 0,
+          "decided": 0,
+          "hit_rate": null,
+          "unknown": 0
+        },
+        {
+          "strategy": "alwaysUnder",
+          "side": "under",
+          "selected": 617,
+          "wins": 323,
+          "losses": 283,
+          "decided": 606,
+          "hit_rate": 0.533003300330033,
+          "unknown": 11
+        },
+        {
+          "strategy": "alwaysUnder",
+          "side": "Combined",
+          "selected": 617,
+          "wins": 323,
+          "losses": 283,
+          "decided": 606,
+          "hit_rate": 0.533003300330033,
+          "unknown": 11
+        }
+      ],
+      "upfront_vs_label_population_cohort_differences": {}
+    }
+  ],
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0,
+  "new_grades": 0,
+  "new_NFL_observations": 0,
+  "scope": "New14-of15game W5 panel only. G scores are not rerun. Unresolvedidentities/outcomes retained, exactselectedside buckets and rolling K checked. No prices/booksettlement/ROI."
+}

@@ -133,3 +133,15 @@ class StreamingIndexTests(unittest.TestCase):
             self.assertEqual(record['test_id'],identity);self.assertEqual(record['source_aggregate_fields'],row)
             self.assertEqual(record['score_version_state'],'SUPERSEDED_ORIGINAL_RECIPE_CONTINUITY')
             self.assertEqual(record['replacement_test_id'],'TEST-new-version')
+
+class ProbabilityMaskCoverageTests(unittest.TestCase):
+    def test_mask_coverage_is_not_whole_offer_coverage(self):
+        r=dict(kind='prop_threshold_probability_evaluation',n=20)
+        c=dict(outer_offer_universe=25,matched_candidate_admitted_law_rows=22,candidate_full_qualified_mask_n=20,qualified_mask_n=20,mask_over_outer_offer_fraction=.8)
+        self.assertEqual(streaming.validate_probability_outer_coverage(r,c)['mask_over_outer_offer_fraction'],.8)
+        with self.assertRaisesRegex(ValueError,'outer fraction'):
+            streaming.validate_probability_outer_coverage(r,dict(c,mask_over_outer_offer_fraction=1.))
+        with self.assertRaisesRegex(ValueError,'exceeds'):
+            streaming.validate_probability_outer_coverage(r,dict(c,matched_candidate_admitted_law_rows=26))
+        with self.assertRaisesRegex(ValueError,'other product'):
+            streaming.validate_probability_outer_coverage(dict(r,kind='forecast_evaluation_view'),c)

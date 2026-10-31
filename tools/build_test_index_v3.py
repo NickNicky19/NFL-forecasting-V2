@@ -9,6 +9,7 @@ import csv
 import hashlib
 import gzip
 import io
+import math
 import json
 import os
 from pathlib import Path
@@ -35,6 +36,17 @@ def decode_shard(root,part):
         if len(body)!=part['uncompressed_bytes'] or sha(body)!=part['uncompressed_sha256']:raise ValueError('uncompressed shard changed')
     elif part.get('compression') is not None:raise ValueError('unsupported shard compression')
     return json.loads(body)
+
+
+def validate_probability_outer_coverage(record,coverage):
+    if record.get('kind')!='prop_threshold_probability_evaluation':raise ValueError('outer probability coverage on other product')
+    keys=('outer_offer_universe','matched_candidate_admitted_law_rows','candidate_full_qualified_mask_n','qualified_mask_n')
+    if any(type(coverage.get(k))is not int or coverage[k]<0 for k in keys):raise ValueError('invalid probability coverage counts')
+    outer,admitted,full,n=(coverage[k]for k in keys)
+    if n!=record['n'] or not 0<=n<=full<=admitted<=outer:raise ValueError('probability mask exceeds full coverage')
+    rate=coverage.get('mask_over_outer_offer_fraction')
+    if (rate is not None if not outer else not isinstance(rate,(float,int))or not math.isfinite(rate)or abs(rate-n/outer)>1e-12):raise ValueError('probability outer fraction mismatch')
+    return coverage
 
 
 def csv_handle(path,compressed):
@@ -162,6 +174,9 @@ def new_records(root,item,inputs):
         if i in reporting:
             record['reporting_metadata_provenance']=dict(artifact=item['reporting_annotations'],source_row_index=i,predictions_unchanged=True)
             if reporting[i].get('law_origin_counts') is not None:record['law_origin_counts']=reporting[i]['law_origin_counts']
+            if reporting[i].get('outer_offer_coverage') is not None:
+                record['outer_offer_coverage']=validate_probability_outer_coverage(record,reporting[i]['outer_offer_coverage'])
+                record['coverage_definition']='Source forecast_rows counts this qualified probability/outcome mask only; full source offers and matched-candidate availability are explicit in outer_offer_coverage.'
         invalid_mask=item.get('invalidated_shared_mask')
         if invalid_mask and original.get('fallback_view')==invalid_mask:
             record['score_version_state']='INVALIDATED_REQUESTED_SHARED_MASK_REFERENCE_ALIAS'

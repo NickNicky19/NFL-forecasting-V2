@@ -1,0 +1,50 @@
+{
+  "state": "PASS_INDEPENDENT_EARLIER_PREFIX_PROBABILITY_REFERENCES_SCORES_AND_DIAGNOSTICS",
+  "protocol_sha256": "c3926c39ddd5cea90844a0fdf2d2743a8d7be1650d13dd34365b32a2e9d81b64",
+  "scores_sha256": "eccb187962988abc8e97db13c2659397de3a1ac583a699bd2d591d8e289a79af",
+  "cached_recipe_offer_rows": 14280,
+  "unique_prefix_memberships": 501,
+  "source_prior_participation_counts": {
+    "verified_played": 25528,
+    "participation_unknown": 376
+  },
+  "score_views": 3726,
+  "paired_contrasts": 4968,
+  "calibration_AUC_views": 3726,
+  "retained_nonfinite_comparisons": 0,
+  "empty_comparisons": 1500,
+  "actual_push_rows": 0,
+  "passing_attempt_examples": [
+    {
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:known-target-time-v1",
+      "history_regime": "H-MULTI",
+      "strict": false,
+      "n": 52,
+      "brier": 0.26438728256575694,
+      "neutral": 0.25,
+      "delta_from_neutral": 0.014387282565756943
+    },
+    {
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs:known-target-time-v1",
+      "history_regime": "H-CURRENT",
+      "strict": true,
+      "n": 52,
+      "brier": 0.23891657984103765,
+      "neutral": 0.25,
+      "delta_from_neutral": -0.011083420158962354
+    }
+  ],
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0,
+  "new_grades": 0,
+  "resources": {
+    "wall_seconds": 15.629604420999385,
+    "peak_RSS_bytes": 437837824
+  },
+  "limits": [
+    "FULL is the complete qualified candidate lossmask, not entire sourceoffercoverage; outercoverage supplement separate.",
+    "Earlier sourceavailability uses inherited7day/currentvintage policy, not authenticated historicalpublication.",
+    "Diagnostics use exposed outcomes descriptively; no calibrationparameters or selectedstrategy fitted."
+  ]
+}

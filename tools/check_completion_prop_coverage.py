@@ -50,11 +50,20 @@ def validate(manifest):
     for b in manifest['source_scores']:
         require(b['path']not in sources,'Repeated canonical source');sources.add(b['path']);rows=json.loads(read_bound(b));require(len(rows)==b['rows'],'Source view count changed');counts.update(check_rows(rows))
     projection=json.loads(read_bound(manifest['complete_law_projection']))
-    require(len(projection['source_rules'])==3,'Fixed and rolling panels must remain separate')
+    expected=manifest.get('expected_law_replacement_panels')
+    if expected is None:require(len(projection['source_rules'])==3,'Fixed and rolling panels must remain separate')
+    else:require(len(projection['source_rules'])==len(expected)and{r['panel']for r in projection['source_rules']}==set(expected),'Replacement panel census changed')
     for rule in projection['source_rules']:
         pred=rule['exclude_parent_only_when'];require(pred['signature_fields']==['target','procedure_id','history_regime'],'Wrong law replacement dimensions')
         require('P2'in pred['predicate']and 'prop_threshold_probability_evaluation'in pred['predicate'],'Replacement must be scoped to law/P2')
         for b in rule['parent_sources']+rule['complete_leaf_sources']:read_bound(b)
+    for b in manifest.get('outer_coverage_annotations',[]):
+        ann=json.loads(read_bound(b));source=next(v for v in manifest['source_scores']if v['sha256']==ann['source_score_sha256']);rows=json.loads(read_bound(source))
+        from tools.build_test_index_v3 import validate_probability_outer_coverage
+        for r in ann['rows']:
+            if r.get('outer_offer_coverage')is not None:
+                actual=rows[r['source_row_index']];require(actual['record_id']==r['record_id'],'Outer-coverage identity changed')
+                validate_probability_outer_coverage(dict(kind=actual['record_kind'],n=actual['n']),r['outer_offer_coverage'])
     for b in manifest['cohort_supersession_maps']:
         obj=json.loads(read_bound(b));require(bool(obj),'Empty cohort correction mapping')
     require(manifest['unsupported_actual_offer_targets']==['nick-chart-ppr-v1','anytime_td'],'Unsupported offered contracts silently changed')

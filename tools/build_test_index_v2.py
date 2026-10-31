@@ -37,12 +37,15 @@ def current_flat(record):
     # concise source pointers, explicit counts and metrics for practical filtering.
     for key in CSV_OMIT_FIELDS:row.pop(key,None)
     for key in ('run_id','procedure_family_id','cohort_id','information_policy','feature_memory_policy','training_population','source_vintage','scoring_version','correction_kind','precision_correction_artifact',
-            'probability_conditioning','probability_score_contract','bookmaker_nonvoid_conditioning','proper_probability_n','reporting_metadata_provenance','law_origin_counts'):
+            'probability_conditioning','probability_score_contract','bookmaker_nonvoid_conditioning','proper_probability_n','reporting_metadata_provenance','law_origin_counts','outer_offer_coverage'):
         value=record.get(key,source.get(key))
         if value is None:value=source.get(key)
         row[key]=json.dumps(value,separators=(',',':')) if isinstance(value,(dict,list)) else value
     for key,value in comparison_fields(record).items():
         row[key]=json.dumps(value,separators=(',',':')) if isinstance(value,(dict,list)) else value
+    outer=record.get('outer_offer_coverage')or{}
+    for key in ('outer_offer_universe','matched_candidate_admitted_law_rows','candidate_full_qualified_mask_n','qualified_mask_n','mask_over_outer_offer_fraction'):
+        row[key]=outer.get(key)
     stats=record.get('selection_metrics')or{}
     for key in ('admitted_forecast_opportunities','unavailable_forecast_opportunities','admitted_rule_abstentions'):
         row[key]=stats.get(key)

@@ -1,0 +1,14 @@
+{
+  "version": "w5-unknown-identity-preserving-admission-v1",
+  "base_source": "tools/audit_rolling_saved_threshold_admissibility.py",
+  "base_sha256": "efdf9016be03fbccae61bdb5c9cfa287af12eadd53317db2ec01a38500e76bf1",
+  "new_source": "tools/audit_earlier_rolling_threshold_admissibility.py",
+  "new_sha256": "8091d68341086a58ee1c3f25f1ed2ecf24b381e51c52787231044e17fe010d43",
+  "changes": [
+    "Allow separately versioned W5 metadata admission",
+    "Validate schedule/serverclock even for unqualified player identity; preserve these offers in full scoring universe as missing method support, never fuzzy-match",
+    "No forecast, statistical grader, probability rule, population or fitting recipe changed"
+  ],
+  "new_fits": 0,
+  "new_inference": 0
+}

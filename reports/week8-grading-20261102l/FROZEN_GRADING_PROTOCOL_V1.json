@@ -1,0 +1,52 @@
+{
+  "protocol_id": "v2-saved-week8-partial-grading-v1",
+  "registered_at_utc": "2026-11-02T18:49:52.315260+00:00",
+  "state": "FROZEN_BEFORE_WEEK8_OUTCOMES_ACQUIRED_OR_GRADED",
+  "season": 2026,
+  "week": 8,
+  "base_commit": "180325f64245de14e8ed78aada9abf3a394a078f",
+  "targets": [
+    "pass_yd",
+    "pass_td",
+    "pass_cmp",
+    "pass_att",
+    "pass_int",
+    "rush_yd",
+    "rush_att",
+    "rec",
+    "rec_yd",
+    "rush_rec_yd",
+    "nick-chart-ppr-v1",
+    "anytime_td"
+  ],
+  "scope": "Manual immutable partial-week grading of pregame retained versions only; no new model inference/fits/calibration or selection retuning.",
+  "original_lean_primary": "Reuse existing rolling original-source horizon: per game choose latest qualified successful-server-retained Week8 website source at or before kickoff minus90minutes, metadata/time only. Stable tie=head SHA. Exact original saved side/line retained. If no qualifying source, unavailable; never substitute later refreshed values. Inherited source quote age remains unknown; provider-labelled statistical crossing, not authenticated book settlement.",
+  "original_capture_clocks": "Validate per-record decision/modelissue/persistence where retained; later publication cannot invalidate an earlier record with separately proved identical earlier retention, nor authenticate an unproved earlier claimed timestamp. No future or post-start inference admitted.",
+  "actual_top_lists": "Inventory every distinct immutable saved owner selected-ranking list and source board top list before outcomes. Keep list versions separate; primary descriptive list is earliest qualified pregame-retained fixed list for Week8 (earliest retention then digest), with earliest genuinely pregame list before its first included kickoff. If no whole-week list, identify partial eligible-game coverage. Preserve October31 and November1 versions separately; top12perSIDE is24, not12combined. Never union overlapping versions into independent weekly picks.",
+  "research_versions": "Grade every supported already-captured version separately under its frozen contract. Whole14-game early empirical/HGB first-game later-than-owner-cutoff forecasts separate from T90-eligible games. Thirteen-game later captures cannot fill Thursday. Match comparisons on identical target/player/game/label/product/horizon masks; report own-system coverage separately.",
+  "threshold_replay": "Any P1/P2 decision newly derived from a saved forecast is RETROSPECTIVE_RULE_REPLAY, not original issuance. P1 exact unrounded forecast versus retained qualified line, equality abstain. Saved-precision website controls named as such. P2 only qualified retained distributions/probabilities. No point-to-probability fabrication; no invented lines. Match threshold known no later than forecast capture for a prospective comparison; later quote at original forecast-information horizon is a separately named earlier-forecast/later-quote replay, never same-cutoff learner comparison.",
+  "eligibility": "Exact canonical game+GSIS/retained-ID bridge+target+period/scoring contract; no fuzzy names. Full game including OT. Preserve signed yardage and difficult/early-exit cases. Played-zero needs explicit complete-source support; absence never zero or DNP. All pending games remain pending regardless of absent stat rows.",
+  "labels": "Current-vintage final snapshots with source/revision/hash/retrieval/asof clocks. Independently check game finality and exact schedule identities; numeric labels only completed final games and verified appearance. Refresh permitted public nflverse player-week stats + schedules, cross-check qualified ESPN/official game finality or compatible original-owner export. Rare chart components require complete exact contract, else missing; website fantasy separate.",
+  "settlement": "Reuse nfl_v2.scoring.threshold_crossing and grade_settlement. WIN LOSS PUSH VOID PENDING MISSING_ACTUAL UNKNOWN_PARTICIPATION UNRESOLVED_CONTRACT separate. Without verified book rules all bookmaker settlements unresolved, even supported statistical crossings. Missing prices/probabilities block ROI/EV; never assume odds.",
+  "metrics": "Reuse point_metrics, shared selected-side aggregation/check_triplet and known bootstrap. MAE/bias/tails/strict and inclusive registered1/5/10 precision; anytime Brier/logloss. Side wins/(wins+losses), weighted Combined from counts. Retain all original rows, known fallback and unavailable inference; no confidence-abstention claim from missing laws.",
+  "uncertainty": "One exposed week: insufficient independent week clusters. Retained 500-replicate whole-game sensitivity seed1703 only when >=8 decided games; no selection/multiplicity-adjusted or durable-champion claim. Row/pick/book versions are dependent.",
+  "outputs": "Standalone Week8 first. New immutable regrading versions for later games/stat corrections; W5-7 untouched. Cumulative only separately versioned where original contract/dedup qualifies. Public aggregates/safe IDs/hashes, detailed rows private.",
+  "retention": "Bounded saved-row work permitted independently of unrelated large-fit backlog. Preserve exact existing backed-up forecast inputs and new qualified label/source bytes privately; stage compact derivative/reproducibility bundle. No offhost-backup claim until approved-store fresh restore equality. No unchanged quota retry, deletion, sharing/destination change or purchase.",
+  "resource": {
+    "max_new_fit_calls": 0,
+    "max_model_inference_calls": 0,
+    "max_threads": 2,
+    "max_new_private_source_bytes": 67108864,
+    "max_new_private_derived_bytes": 16777216,
+    "max_scoring_wall_seconds": 300,
+    "large_fit_gate_unchanged": true
+  },
+  "core_bindings": {
+    "nfl_v2/scoring.py": "b61c9cbbced8e5d64060ef1d14f6d60bec1edd9760fa8903a75c1b09503deadb",
+    "nfl_v2/full_provider_prop_replay.py": "94a53eb89c817d56b0675b7bc80d883e7b53c7b69ac4d2b6b9dd435c1afa1e15",
+    "nfl_v2/recorded_prop_grading.py": "00a7e35bbef6441ae861b5b47004f6f0a512f98255c194893a2d1a6a5d58ba2c",
+    "nfl_v2/shadow_grading.py": "8515b932db7cc9652e240aee4fd5177dbef64931a878e262b8f5f132cf1046d4",
+    "nfl_v2/hgb_shadow_grading.py": "e77f85f871e2177e29b66dcb8bead5b3503f5f96f8d8c90638438535f9214f75"
+  },
+  "ownership": "V2 only; no upstream/production writes, schedule/collector/producer dispatch, wagers, spending or merge/deploy."
+}

@@ -138,16 +138,16 @@ def load_joined(out,priv,p):
     return result,dict(label_state_counts=dict(states),point_parity_counts=dict(point_states),metadata_matched_reference_views_decoded=decoded)
 
 
-def grade(records):
+def grade(records, strategies=STRATEGIES):
     out=[]
     for r in records:
-        for strategy in STRATEGIES:
+        for strategy in strategies:
             point=r['raw_prediction']if strategy==RAW else r['prediction']
             side=r['side']if strategy=='original'else'over'if strategy=='alwaysOver'else'under'if strategy=='alwaysUnder'else None if point is None else('over'if scoring.exact_decimal(point)>scoring.exact_decimal(r['line'])else'under'if scoring.exact_decimal(point)<scoring.exact_decimal(r['line'])else None)
-            state='ABSTAIN'if side is None else'UNKNOWN_PARTICIPATION'if r['participation']!='VERIFIED_PLAYED_POSITIVE_PHYSICAL'else'MISSING_ACTUAL'if r['actual']is None else scoring.threshold_crossing(r['actual'],r['line'],side,target=r['target'])
+            state='ABSTAIN'if side is None else'PENDING'if r.get('outcome_state','final')=='pending'else'UNKNOWN_PARTICIPATION'if r['participation']!='VERIFIED_PLAYED_POSITIVE_PHYSICAL'else'MISSING_ACTUAL'if r['actual']is None else scoring.threshold_crossing(r['actual'],r['line'],side,target=r['target'])
             settled=scoring.grade_settlement(r['actual'],r['line'],side,target=r['target'],
                 participation='PLAYED'if r['participation']=='VERIFIED_PLAYED_POSITIVE_PHYSICAL'else'UNKNOWN',
-                outcome_state='final',contract=None,outcome_contract=None,decimal_odds=None)if side else dict(state='NOT_SELECTED')
+                outcome_state=r.get('outcome_state','final'),contract=None,outcome_contract=None,decimal_odds=None)if side else dict(state='NOT_SELECTED')
             out.append(dict(r,strategy=strategy,selected_side=side,statistical_state=state,settlement_state=settled['state'],ranking_point=point,net_return=None))
     return out
 

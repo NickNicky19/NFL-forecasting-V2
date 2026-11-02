@@ -1,0 +1,7 @@
+{
+  "state": "SOURCE_FIELD_CLOCK_QUALIFICATION_BEFORE_FINAL_PROOF_RECEIPT",
+  "prior_checker_sha256": "3b2a82625f4bbafd85f7c03862fdb250221c9e65faa7dea44fa6635387c90c0f",
+  "finding": "All5870 retained source_cutoff_utc values equal kickoff minus90minutes and are later than actual issuance. An assertion treating these as actual feature-observation cutoffs correctly failed. Actual issued/persisted values all precede independently witnessed Oct28whole-feed publication and every target kickoff.",
+  "interpretation": "Authenticate original early captured numeric bytes, preserve the deadline field and mark true feature/source vintage unknown. Do not silently relabel as observed T90 information or rewrite source rows.",
+  "source_or_score_changes": false
+}

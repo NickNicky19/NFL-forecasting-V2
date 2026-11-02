@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "state": "SOFTWARE_VERIFIED_NO_NFL_ACCURACY_INFERRED",
+  "tests_run": 445,
+  "new_pending_fixtures": 3,
+  "unit_log": "reports/week8-grading-20261102l/software/UNIT_TEST_RESULTS_V1.log",
+  "unit_log_sha256": "9b58cdb02ac4178f41aca36b245a870e1c0e78e2b5f66748aacad390b473293e",
+  "source_bindings": [
+    {
+      "path": "nfl_v2/full_provider_prop_replay.py",
+      "sha256": "dd280e719cf7908c4e514f4b9598f0e74e238ef93f163f0e91e0de928a2d1696"
+    },
+    {
+      "path": "tests/test_week8_pending_extension.py",
+      "sha256": "ee7e1e0e86ee95bc877e59c53f5eba1198f417bd68c0a055bd81d5d670694eea"
+    },
+    {
+      "path": "tools/grade_week8_saved_laws.py",
+      "sha256": "a4d71cf74f0e1ef2fcee377542ee227ff92334695083ccd02ca4c0097bb7dc87"
+    },
+    {
+      "path": "tools/summarize_week8_checkpoint.py",
+      "sha256": "b5d9cf9b27585d755ddb3dcb05f5ba1a51e03a6f2eaa5c5c6f407275abfc9e61"
+    },
+    {
+      "path": "tools/compare_week8_leaders_on_fixed_mask.py",
+      "sha256": "a74e881f35b1c876ce2da931b12bb025eddb233de7fb414351ab2827567c8d11"
+    },
+    {
+      "path": "tools/acquire_week8_grading_sources.py",
+      "sha256": "972d19abb8cbb50e0d2c37d924c51229f417e0583e6fa8f89c5c53e58ff86a5a"
+    },
+    {
+      "path": "tools/grade_week8_captured_library.py",
+      "sha256": "510a27c5f14ea07c089a430d2bdbd6454decfbe1fffea4248c2d7d7faefa4701"
+    },
+    {
+      "path": "tools/grade_saved_week8.py",
+      "sha256": "5d60d98080e4820180fd74fddf3462e51dd1af66b49639382e5b205c45cc44c6"
+    },
+    {
+      "path": "tools/extend_week8_saved_versions.py",
+      "sha256": "e7d9f9dd634ece5d1c53055ca73d1eb7018456b2b9dc9f37a3585f3f061b8165"
+    },
+    {
+      "path": "tools/compare_week8_frozen_ablations.py",
+      "sha256": "acc106bcc2b9684ac02304d4ddf2dccf7452eb08fdfbb9c653ec503f2499c759"
+    },
+    {
+      "path": "tools/qualify_week8_chart_source.py",
+      "sha256": "743f832cbff506d2857d5dad932dd3485776cc6595518311440d562a6ab8220e"
+    },
+    {
+      "path": "tools/project_week8_common_comparisons.py",
+      "sha256": "33abb987134e7b51d7e6a3c011b3bcbf884e337b25a60b387fadd6a024ad2e48"
+    }
+  ],
+  "new_NFL_fits": 0,
+  "new_model_predict_calls": 0,
+  "new_forecasts": 0,
+  "NFL_accuracy": null
+}

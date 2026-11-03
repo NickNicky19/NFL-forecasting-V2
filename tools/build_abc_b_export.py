@@ -1,0 +1,24 @@
+"""Public-safe B export discovery; verify exact committed bytes, not working copies."""
+import hashlib,json,subprocess,urllib.request
+from datetime import datetime,timezone
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+def run():
+ current=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip();prior='08fa2ea888620f5587ed5618dfc0e239be82a664'
+ paths=[(current,'reports/abc-championship/ADOPTED_ASSIGNMENT_V2.json','adoption'),(current,'reports/abc-championship/local-week8-final-v1/SCORES.json','local_direction_results'),(current,'reports/abc-championship/local-week8-final-v1/independent/INDEPENDENT_LOCAL_FINAL_REVIEW_V1.json','independent_local_review'),(prior,'reports/completion-20261031g/roster/finite-v2/FINITE_IMPLEMENTED_PROCEDURE_ROSTER.json','existing_method_roster'),(prior,'reports/completion-20261031g/roster/finite-v2/FINITE_RECIPE_CATEGORY_PERIOD_PRODUCT_GRID.json','existing_exact_cell_grid'),(prior,'registries/CURRENT_RESULTS_INDEX.json','prior_index_pointer')]
+ exports=[]
+ for ref,path,kind in paths:
+  expected=subprocess.check_output(['git','show',ref+':'+path],cwd=ROOT);url=f'https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/{ref}/{path}'
+  with urllib.request.urlopen(url,timeout=60)as r:body=r.read()
+  if body!=expected:raise ValueError('Committed byte readback mismatch:'+path)
+  exports.append(dict(artifact_id='B-EXPORT-'+hashlib.sha256(path.encode()).hexdigest()[:16],producer_commit=ref,path=path,retrieval_url=url,sha256=hashlib.sha256(body).hexdigest(),bytes=len(body),kind=kind,readback_verified=True,rights='PUBLIC_AGGREGATES_OR_CODE_ONLY_NOT_RAW_RESTRICTED_ROWS_OR_MODELS',retention='IMMUTABLE_GITHUB_EXACT_BYTES_VERIFIED',admission='NOT_C_ADMITTED'))
+ value=dict(schema_version='B-ABC-EXPORT-INDEX-v2.0',at_utc=datetime.now(timezone.utc).isoformat(),session='B',repository='NickNicky19/NFL-forecasting-V2',canonical_owner='C:NickNicky19/NFL-forecasting-NGS-C',canonical_discovery='reports/abc-championship/CURRENT_PROTOCOL.json in C',canonical_state='NOT_LOCATED_NOT_PINNED_NO_PARITY',adopted_document=exports[0],exports=exports,
+  source_identity='Website/reference origin stays originalrepository/producer; B auditing it is not a new independentlearner. FullIDs/config/history/featurememory/fallback/update contracts via existing18mechanismroster, aliases,3205cellgrid andlocalleaderbindings; not onlyMAEfinalists.',
+  periods=[dict(period_id=p,common_status='AWAIT_C_BOUND_MASK_AND_CONTRACT',local_status=s)for p,s in [('E1','PARTIAL_W1-8: localW8all14gamesfinal,13gameT90commoncore; earlieroriginalW5-7covers42/43games,W1-4andoneW5missing. Notoriginaleightweekrecord.'),('E2','2025W1-8oldnumericalevidenceexists; actualoffers/exactrecipes source-specific'),('E3','2022-24W1-8numericalevidenceexists;2021RECENT andexactD1D2gaps'),('E4','Supported2022-25oldrollingnumericalresults, notproofactual-lineperformance'),('E5','NOT_POOLED_NO_MATCHED_COMMON_SEASON_SET'),('E6','NOT_POOLED_NO_DOUBLE_COUNTING'),('E7','NOT_COMPUTED_SAME_SEASON_SET_WEIGHTS_REQUIRED'),('E8','GENUINE_FUTURE_CAPTURE_VERSIONS_SEPARATE_NO_NEW_CAPTURE')]],
+  restricted_evidence=dict(public_row_transfer_allowed=False,private_locator=None,retention='EXISTING_APPROVED_B_ROUTE_ONLY; NEW_BOUNDED_ROWS_LOCAL_READBACK_OFFHOST_PENDING',owner_local_option='After C publishes boundopportunity/scorer/schema and permittedanalysis contract, B assesses ownerlocal scoring. No newsharedprivatearchive or publicrawmigration.',verification_limit='Publicaggregates alone cannot establish pairedcross-session superiority.',dependencies='Ccommoncontract; specificrowpermission or ownerlocaladmission; existingBsource/model/recovery requirements; no waiverofCGitHub-onlyrule'),
+  delivery=dict(discovery_file_published=True,C_received=False,C_acknowledged=False,C_validated=False,C_admitted=False,external_messages=0),next_action='C read this existing EXPORT_INDEX and publish its canonical pointer/equivalent mapping with bound scorer/schema/roster/opportunity/outcomes and compliant admission route. B verifies actual bytes before commonclaims.',budgets=dict(new_fits=0,new_inference=0,new_forecasts=0),production_changes=False,
+  readback_attempt_note='An initial verification compared an old committed pointer to its newer working copy and stopped before index creation. Corrected verifier compares git-show bytes of each exact producer commit; no data/score change.')
+ target=ROOT/'reports/abc-championship/EXPORT_INDEX.json'
+ with target.open('x')as f:json.dump(value,f,indent=2);f.write('\n')
+ print(json.dumps(dict(exports=len(exports),adoption_sha256=exports[0]['sha256'],producer=current)))
+if __name__=='__main__':run()

@@ -1,0 +1,168 @@
+{
+  "state": "PREPARED_RESEARCH_EVIDENCE_FOR_OWNER_REVIEW_NOT_ADMITTED",
+  "owner": "RETAINED_ORIGINAL_PRODUCTION_OWNER",
+  "category": "rec_yd",
+  "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-CURRENT-COMMON::mean",
+  "history": "H-CURRENT_FITTING_COMMON2022FEATURE_MEMORY",
+  "point_output": "MEAN",
+  "decision_rule": "P1_UNROUNDED_POINT_VERSUS_ACTUAL_LINE",
+  "supported_population": [
+    "RB",
+    "WR",
+    "TE"
+  ],
+  "target_contract": "Official fullgame receivingyards includingOT;signed",
+  "evidence": {
+    "target": "rec_yd",
+    "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-CURRENT-COMMON::mean",
+    "history": "H-CURRENT",
+    "product": "mean",
+    "rule": "P1",
+    "numerical_mae": 23.45667711508392,
+    "numerical_n": 337,
+    "numerical_scope": "Same decided offered rows of this side; not broad participant MAE",
+    "sides": {
+      "over": {
+        "wins": 57,
+        "losses": 40,
+        "decided": 97,
+        "selected": 99,
+        "rate": 0.5876288659793815
+      },
+      "under": {
+        "wins": 131,
+        "losses": 109,
+        "decided": 240,
+        "selected": 241,
+        "rate": 0.5458333333333333
+      },
+      "Combined": {
+        "wins": 188,
+        "losses": 149,
+        "decided": 337,
+        "selected": 340,
+        "rate": 0.5578635014836796
+      }
+    },
+    "eligible": 361,
+    "selected": 340,
+    "coverage": 0.9418282548476454,
+    "technical_unavailable": 21,
+    "rule_abstentions": 0,
+    "unknown": 3,
+    "games": 32,
+    "fallback_issued": 162,
+    "strongest_matched_control": {
+      "target": "rec_yd",
+      "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-CURRENT-COMMON::mean",
+      "control_id": "P3_DIRECT",
+      "week_view": "ALL",
+      "scope": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+      "common_decided": 337,
+      "candidate_wins": 188,
+      "control_wins": 176,
+      "win_difference": 12,
+      "disagreements": 82,
+      "uncertainty": {
+        "n": 337,
+        "delta": -0.03560830860534125,
+        "relative_error_change": -0.07453416149068323,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.02083633074504311,
+        "game_normal95_sensitivity": [
+          -0.07644751686562574,
+          0.00523089965494325
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.4421364985163205,
+        "comparator_error": 0.47774480712166173,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": -1.0,
+            "n": 160
+          },
+          "3": {
+            "loss_difference_sum": -11.0,
+            "n": 177
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    },
+    "hit_rate_difference": 0.03560830860534125,
+    "hit_rate_game_sensitivity": [
+      -0.00523089965494325,
+      0.07644751686562574
+    ],
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+    "source_artifact": "reports/abc-championship/continuation-20261103-v3/SCORES.json",
+    "source_row_index": 272
+  },
+  "reference_limit": "Matched Cdirect comparison, NOT same-cutoff website-relative comparison. Selection188/337 does not claim lowestMAE or a probability/EV law.",
+  "protocol_code_and_prior_future_restoration": [
+    {
+      "path": "nfl_v2/ordered_information_ablation.py",
+      "sha256": "25018ed79c9c1de76267ad560760676fa254e19c406996100232144dd1e15998"
+    },
+    {
+      "path": "reports/continuation-20261030b/ordered-information-ablation-v1/FROZEN_PROTOCOL.json",
+      "sha256": "ef25d7a7b2364fbd8ec54febfc9dd8ccc87a2eae4fb3c49696b39cf1a4b303de"
+    },
+    {
+      "path": "reports/continuation-20261030b/PRIVATE_C02_FUTURE_RESTORATION.json",
+      "sha256": "fa682b430a08457cbee1d6873f7d794ce7a087e2f2da72f9c61d017a4a07ee4f"
+    }
+  ],
+  "provisional_policy_observed": {
+    "repository": "NickNicky19/nicks-expert-nfl-picks",
+    "ref": "43b04d2ed957e24ffdecadd1f545a55ace9a6956",
+    "path": "config/weekly-derived-selected-policy-v6.json",
+    "schema": "weekly-derived-selected-policy-v4",
+    "registration": "weekly-adaptive-release-v1",
+    "state": "ROOT_REGISTERED"
+  },
+  "admission_scope": "Owner must version/admit any research-informed entrant/changed selection route under its existing scope. B does not declare thiscandidate alreadyadmitted or operationallyready.",
+  "remaining_own_operational_actions": [
+    "Bind exact next-origin model and permitted input snapshot under original update/historypolicy; an oldW8model cannot silently stand in for newly registeredweeklyrefit. Candidate-dependent recovery/outputreservation remains applicable.",
+    "Deterministic future inference with actual source/inference/persistence/readback clocks, contract/identity and currentrostercoverage; no elapsed-game backfill.",
+    "Validate consumer typedmean metadata, own fallback and stale/missing behavior, runtime bounds and rollback to current reference. Reuse existing adapters/contracts where exact; no productionwrite byB.",
+    "Owner versioned admission/delivery and served-value verification. Scientific claims keep existing named gates; exposed2week evidence/selection uncertainty remains."
+  ],
+  "not_new_prerequisites": [
+    "No blanket8week/futurewaitingperiod",
+    "No allcategory completion gate",
+    "No newly invented universal same-cutoff websitewin before an existingauthorizedprovisional selection",
+    "No MAEwin orprofitability requirement for selection/point review"
+  ],
+  "risk_and_claim_limits": [
+    "Receiving-yard paired hit gain+12/337, game95sensitivity[-0.52,+7.64]pp; only2weeks and exposed selection.",
+    "C02CURRENTmean nativeMAE23.456677 vsdifferentGLMMULTI law median21.462908 on same337offers: thisis selection-first candidate, not numericalchampion.",
+    "NewGLMprobabilities all lostneutral0.25; do not attachtheir confidence to thisC02point. Missing exactlinelaw/price/settlement remains explicit."
+  ],
+  "rollback": "Ownerretain currentCURRENT_BASELINE reference_point; missing/stale/unsupported candidate neverzero, logreason and fallback under admittedpolicy.",
+  "deployment_status": "NOT_DELIVERED_ACKNOWLEDGED_ADMITTED_OR_DEPLOYED_BY_THIS_WAVE"
+}

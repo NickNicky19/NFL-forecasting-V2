@@ -1,3 +1,5 @@
+**Current B contribution:** [new Weeks 2–3 comparisons, exact-line probabilities and original Week8 controls](continuation-20261103-v4/B_PERIOD_COMPARISON_REPORT.md). C protocol is now pinned at `ac9cb100` / `fa195814…`; earlier404records below remain historical. B owner-local outputs are not yet C-admitted. [Bound acknowledgement](continuation-20261103-v4/PINNED_C_PROTOCOL_AND_B_ACKNOWLEDGEMENT.json) · [Exact week gaps](continuation-20261103-v4/B_EXACT_WEEK_GAP_OVERLAY.csv).
+
 # Session B local results and A/B/C export entrypoint
 
 C owns the shared contract, scorer, admissions and consolidated report. B has adopted the direct user assignment through ADOPTED_ASSIGNMENT_V2.json; its exact hash is in EXPORT_INDEX.json. This normalized adoption record is not a byte-for-byte hash of the chat message. No C protocol has yet been pinned, so no common-championship parity is claimed.

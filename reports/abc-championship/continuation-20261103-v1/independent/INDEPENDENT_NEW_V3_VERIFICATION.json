@@ -1,0 +1,95 @@
+{
+  "state": "PASS_ARITHMETIC_AND_SCOPE_WITH_EXPLICIT_QUALIFICATIONS",
+  "at_utc": "2026-11-03T23:42:27.280567+00:00",
+  "source": "Direct independent reconstruction from retained chunks and C original rows; parent scorer not imported or invoked.",
+  "protocol_sha256": "7814876ed3b0a0e14fe67475212af5d844be8e9218adad6853760a03a1782ed2",
+  "scores_sha256": "5b632066461e3ccc3e74b74d731caf6ad6d938919cf98be79ac763ff27861e26",
+  "private_sha256": "fa2224d3d6cc99f6a865a45f667e4fe98412710d6b99b51b5dda7e598c12177d",
+  "category_method_product_cells": 116,
+  "score_views_verified": 1044,
+  "side_triplets_verified": 348,
+  "paired_control_views_verified": 2436,
+  "private_rows_verified": 28552,
+  "learned_fallback_views_verified": 348,
+  "leaders": [
+    {
+      "target": "pass_yd",
+      "representative_tied_leader": "B::empirical-player-history-control-v1::H-MULTI-EMPIRICAL::empirical_mean",
+      "own_combined": {
+        "wins": 35,
+        "decided": 63,
+        "rate": 0.5555555555555556
+      },
+      "same_procedure_weekly_rates": {
+        "2": 0.6129032258064516,
+        "3": 0.5
+      },
+      "strongest_matched_C_control": "ALWAYS_OVER",
+      "control_wins": 38,
+      "candidate_wins": 35,
+      "common_decided": 63,
+      "candidate_win_change": -3
+    },
+    {
+      "target": "rush_yd",
+      "representative_tied_leader": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "own_combined": {
+        "wins": 100,
+        "decided": 174,
+        "rate": 0.5747126436781609
+      },
+      "same_procedure_weekly_rates": {
+        "2": 0.5903614457831325,
+        "3": 0.5604395604395604
+      },
+      "strongest_matched_C_control": "EARLIER_PREVALENCE_V8",
+      "control_wins": 101,
+      "candidate_wins": 100,
+      "common_decided": 174,
+      "candidate_win_change": -1
+    },
+    {
+      "target": "rec",
+      "representative_tied_leader": "B::v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory::H-RECENT-COMMON::lower_median",
+      "own_combined": {
+        "wins": 192,
+        "decided": 337,
+        "rate": 0.56973293768546
+      },
+      "same_procedure_weekly_rates": {
+        "2": 0.5590062111801242,
+        "3": 0.5795454545454546
+      },
+      "strongest_matched_C_control": "P3_DIRECT",
+      "control_wins": 194,
+      "candidate_wins": 192,
+      "common_decided": 337,
+      "candidate_win_change": -2
+    },
+    {
+      "target": "rec_yd",
+      "representative_tied_leader": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-CURRENT-COMMON::mean",
+      "own_combined": {
+        "wins": 188,
+        "decided": 337,
+        "rate": 0.5578635014836796
+      },
+      "same_procedure_weekly_rates": {
+        "2": 0.55625,
+        "3": 0.559322033898305
+      },
+      "strongest_matched_C_control": "P3_DIRECT",
+      "control_wins": 176,
+      "candidate_wins": 188,
+      "common_decided": 337,
+      "candidate_win_change": 12
+    }
+  ],
+  "qualifications": [
+    "This extension has no D1/D2 defense windows; source procedure contracts remain distinct.",
+    "B registered primary rushing supports QB/RB; three C WR rushing offers are technical population unavailability here despite retained B extended forecasts.",
+    "All C source clocks remain timing-unverified diagnostics, not authenticated original pregame issuance.",
+    "Two exposed weeks cannot establish seasonal persistence or a release-ready selection policy.",
+    "No full training re-inference or source-vintage authentication; latest-feature field and row cutoffs checked separately."
+  ]
+}

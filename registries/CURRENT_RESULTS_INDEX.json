@@ -1,7 +1,7 @@
 {
   "schema": "v2-current-public-index-pointer-v2",
-  "manifest": "reports/abc-championship/results-index-v1/INDEX_MANIFEST.json",
-  "previous_checkpoint": "reports/week8-grading-20261102l/results-index-v1/INDEX_MANIFEST.json",
+  "manifest": "reports/abc-championship/continuation-20261103-v4/results-index-v1/INDEX_MANIFEST.json",
+  "previous_checkpoint": "reports/abc-championship/results-index-v1/INDEX_MANIFEST.json",
   "previous_unchanged": true,
   "manifest_role": "ALL_AUDIT_IMMUTABLE_BACKWARD_COMPATIBLE",
   "default_view": "CURRENT_CANONICAL_SCORE_VERSIONS",
@@ -21,7 +21,7 @@
     "path": "reports/continuation-20261030d/paired-analysis-index-v2/ANALYSIS_MANIFEST.json",
     "sha256": "25d6f5b0276cb2b415c04f5f2e886a6eaeaa5618f398aa6131a2be397efe0085"
   },
-  "readable_checkpoint": "reports/week8-grading-20261102l/FULL_CATEGORY_CHAMPIONSHIP_REPORT.md",
+  "readable_checkpoint": "reports/abc-championship/continuation-20261103-v4/B_PERIOD_COMPARISON_REPORT.md",
   "software_verification_manifest": {
     "path": "reports/week8-grading-20261102l/software/SOFTWARE_VERIFICATION_MANIFEST_V1.json",
     "sha256": "fc322f84ca2d46d9d09038517498567203816ff59f730f557b07029104317db3"
@@ -149,18 +149,44 @@
     "path": "reports/week8-grading-20261102l/checkpoint-summary-v1/OUTER_FORECAST_COVERAGE_V2.json",
     "sha256": "3848a974065a7829c3145240cec598d2f821db7481439e319086189f2896b97b"
   },
-  "week8_scope": "Partial13final/1pending; standaloneWeek8. Original427selected/386decided vsfuture-capturednumericandretrospectiveP1/P2 differenttracks/horizons. No originalWeek8selectionrulesretuned; currentW1\u20137/older defaultnative/probability/selectionrankinputsunchanged. No cumulativeW5\u20138 or liveprofitability claim; no V2deployment.",
+  "week8_scope": "14gamesfinal;original427selected/415decided/12unknown;661providerlabelledoffers. Original/replay/numerical/law/sourcecutoff products distinct; no fullW1-8selectionclaim or V2deployment.",
   "week8_private_law_current_scope": {
     "path": "reports/week8-grading-20261102l/saved-laws-v2/PRIVATE_ROW_METADATA_SCOPE_SUPPLEMENT_V3.json",
     "sha256": "f7d23b67b633406ddfc3b173302cd775103d80ab638ad730bda6735d68f748bd"
   },
   "upcoming_owner_execution_refresh": {
-    "path": "reports/week8-grading-20261102l/OWNER_EXECUTION_STATUS_REFRESH_V3.json",
-    "sha256": "ba788adfb398fa72cfb49db1682911f29daccbebcf7dc539189c61378e34c7db"
+    "path": "reports/abc-championship/continuation-20261103-v4/OWNER_OPERATION_DEREFERENCE_CHECK_V2.json",
+    "sha256": "3f03507c31be121b00b690539b377a105002d565044e1d74a057862a67aabe8b"
   },
   "abc_B_adoption": {
     "path": "reports/abc-championship/ADOPTED_ASSIGNMENT_V2.json",
     "sha256": "860a0751b99a24187484a32d3188378fe58222cda3069ff08dd74d33e497bce1"
   },
-  "abc_status": "B_LOCAL_NOT_PINNED_NOT_C_ADMITTED"
+  "abc_status": "B_PINNED_C_PROTOCOL_OWNER_LOCAL_W2_W3_NOT_C_ADMITTED",
+  "abc_C_protocol": {
+    "path": "reports/abc-championship/continuation-20261103-v4/PINNED_C_PROTOCOL_AND_B_ACKNOWLEDGEMENT.json",
+    "sha256": "09121454badd58580f6a125ec8d0a81d9ea2586713ebc21a9d25b2f1f1aa6794"
+  },
+  "abc_B_period_report": {
+    "path": "reports/abc-championship/continuation-20261103-v4/B_PERIOD_COMPARISON_REPORT.md",
+    "sha256": "d08f35a5d3f69dd0bd9efc5cac7f6229514b6215cd080caaad79099ff42149a3"
+  },
+  "abc_B_default_scores": [
+    {
+      "path": "reports/abc-championship/continuation-20261103-v2/SCORES.json",
+      "sha256": "3518cb350acfbc2a1e27bafe2bc55657cae1f670bcd246140d14c2378af6f6b5"
+    },
+    {
+      "path": "reports/abc-championship/continuation-20261103-v3/SCORES.json",
+      "sha256": "5b632066461e3ccc3e74b74d731caf6ad6d938919cf98be79ac763ff27861e26"
+    },
+    {
+      "path": "reports/abc-championship/continuation-20261103-v4/SCORES.json",
+      "sha256": "c1c838d75913bb09f4d5b69d7814a2533e9901c3c880205a373a29bd56f21777"
+    }
+  ],
+  "abc_B_coverage": {
+    "path": "reports/abc-championship/continuation-20261103-v4/B_EXACT_WEEK_GAP_OVERLAY.json",
+    "sha256": "d4c1bdcb52d42dd39c07ef106b1a5cd8416dc6fbb5bf96988333dfc74cd27c1f"
+  }
 }

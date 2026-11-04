@@ -163,6 +163,8 @@ def new_records(root,item,inputs):
         if any(r['source_sha256']!=digest for r in supersessions.values()):raise ValueError('supersession source binding mismatch')
         mapping_kind=('precision_scoring_supersession_no_prediction_change'
                       if mapping.get('mapping_kind')=='SCORING_PRECISION_ONLY'
+                      else 'scope_metadata_supersession_no_prediction_change'
+                      if mapping.get('mapping_kind')=='SCOPE_METADATA_ONLY'
                       else 'prediction_recipe_supersession_not_scoring_fix')
         inputs.append(dict(source_artifact=item['supersession_mapping'],sha256=sha(raw),rows=len(supersessions),kind=mapping_kind))
     for field in ('dates_projection','comparison_annotations'):

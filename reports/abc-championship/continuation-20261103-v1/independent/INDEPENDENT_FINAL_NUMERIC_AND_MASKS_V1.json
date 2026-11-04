@@ -1,0 +1,37 @@
+{
+  "state": "PASS",
+  "at_utc": "2026-11-04T00:02:42.037990+00:00",
+  "numeric": {
+    "views_verified": 636,
+    "source_method_category_cells": 212,
+    "precision_numerator_denominator_checks": 4452,
+    "unique_numeric_equality_abstention_method_offer_rows": 27,
+    "equality_row_appearances_across_overlapping_week_and_cumulative_views": 54,
+    "source_scores_sha256": "d511d90b0f13e9409ff354977ff8b281c8c7e6052d047695a4ac4a6d28420a05",
+    "scope": "Full available numeric rows include equality-abstention cases; no new forecast or NFL observation."
+  },
+  "masks": {
+    "cells_verified": 684,
+    "paired_control_totals_recomputed": 4644,
+    "unique_public_C_offers": 968,
+    "mask_file_sha256": "8aab8fa348a5802fe753f87dbbcb955622f3731a98daa4097e4aa56e68a80771",
+    "allowed_fields": [
+      "actual_weeks",
+      "common_decided_offer_ids",
+      "common_decided_sha256",
+      "eligible",
+      "procedure_id",
+      "scope",
+      "source",
+      "target",
+      "week_view"
+    ],
+    "contains_B_private_numeric_values": false,
+    "scope": "Public C offer IDs and declared metadata/counts only; no B point, actual, probability, player-level source or private locator fields."
+  },
+  "limits": [
+    "Read-only independent arithmetic; did not import scorers or change registries.",
+    "Source rights/privacy legal scope is not created by this structural audit.",
+    "Current/revised football source and timing-unverified quote limitations remain."
+  ]
+}

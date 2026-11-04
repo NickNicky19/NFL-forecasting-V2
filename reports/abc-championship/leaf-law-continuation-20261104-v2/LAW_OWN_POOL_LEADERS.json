@@ -1,0 +1,754 @@
+[
+  {
+    "target": "pass_yd",
+    "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+    "history": "H-MULTI",
+    "selection": "P2_EXACT_LINE_CDF-v1",
+    "sides": {
+      "over": {
+        "selected": 22,
+        "wins": 13,
+        "losses": 9,
+        "decided": 22,
+        "rate": 0.5909090909090909
+      },
+      "under": {
+        "selected": 41,
+        "wins": 16,
+        "losses": 25,
+        "decided": 41,
+        "rate": 0.3902439024390244
+      },
+      "Combined": {
+        "selected": 63,
+        "wins": 29,
+        "losses": 34,
+        "decided": 63,
+        "rate": 0.4603174603174603
+      }
+    },
+    "eligible": 64,
+    "selected": 63,
+    "unavailable": 1,
+    "unknown": 0,
+    "fallback_issued": 0,
+    "point_view": {
+      "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::lower_median",
+      "product": "lower_median",
+      "mae": 56.58730158730159,
+      "n": 63,
+      "source_artifact": "RETAINED_PREVIOUS_POINT_SCORES_NOT_REFIT_OR_RESCORED"
+    },
+    "strongest_previous_B_point": "B::empirical-player-history-control-v1::H-MULTI-EMPIRICAL::empirical_mean",
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "games": 32,
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "matched_previous_B_point_pair": {
+      "target": "pass_yd",
+      "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+      "control_id": "B::empirical-player-history-control-v1::H-MULTI-EMPIRICAL::empirical_mean",
+      "week_view": "ALL",
+      "scope": "NEW_P2_VS_PRIOR_EXPOSED_B_POINT_LEADER",
+      "common_decided": 63,
+      "candidate_wins": 29,
+      "control_wins": 35,
+      "win_difference": -6,
+      "disagreements": 28,
+      "uncertainty": {
+        "n": 63,
+        "delta": 0.09523809523809523,
+        "relative_error_change": 0.21428571428571427,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.06619553628035277,
+        "game_normal95_sensitivity": [
+          -0.03450515587139619,
+          0.22498134634758665
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.5396825396825397,
+        "comparator_error": 0.4444444444444444,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": 3.0,
+            "n": 31
+          },
+          "3": {
+            "loss_difference_sum": 3.0,
+            "n": 32
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    }
+  },
+  {
+    "target": "rush_yd",
+    "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::P2_EXACT_LINE_CDF-v1",
+    "history": "H-CURRENT",
+    "selection": "P2_EXACT_LINE_CDF-v1",
+    "sides": {
+      "over": {
+        "selected": 56,
+        "wins": 30,
+        "losses": 26,
+        "decided": 56,
+        "rate": 0.5357142857142857
+      },
+      "under": {
+        "selected": 118,
+        "wins": 70,
+        "losses": 48,
+        "decided": 118,
+        "rate": 0.5932203389830508
+      },
+      "Combined": {
+        "selected": 174,
+        "wins": 100,
+        "losses": 74,
+        "decided": 174,
+        "rate": 0.5747126436781609
+      }
+    },
+    "eligible": 181,
+    "selected": 174,
+    "unavailable": 7,
+    "unknown": 0,
+    "fallback_issued": 90,
+    "point_view": {
+      "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "product": "lower_median",
+      "mae": 23.816091954022987,
+      "n": 174,
+      "source_artifact": "RETAINED_PREVIOUS_POINT_SCORES_NOT_REFIT_OR_RESCORED"
+    },
+    "strongest_previous_B_point": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "games": 32,
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "matched_previous_B_point_pair": {
+      "target": "rush_yd",
+      "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::P2_EXACT_LINE_CDF-v1",
+      "control_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "week_view": "ALL",
+      "scope": "NEW_P2_VS_PRIOR_EXPOSED_B_POINT_LEADER",
+      "common_decided": 174,
+      "candidate_wins": 100,
+      "control_wins": 100,
+      "win_difference": 0,
+      "disagreements": 0,
+      "uncertainty": {
+        "n": 174,
+        "delta": 0.0,
+        "relative_error_change": 0.0,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.0,
+        "game_normal95_sensitivity": [
+          0.0,
+          0.0
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.42528735632183906,
+        "comparator_error": 0.42528735632183906,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": 0.0,
+            "n": 83
+          },
+          "3": {
+            "loss_difference_sum": 0.0,
+            "n": 91
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    }
+  },
+  {
+    "target": "rush_yd",
+    "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::P2_EXACT_LINE_CDF-v1",
+    "history": "H-CURRENT",
+    "selection": "P2_EXACT_LINE_CDF-v1",
+    "sides": {
+      "over": {
+        "selected": 56,
+        "wins": 30,
+        "losses": 26,
+        "decided": 56,
+        "rate": 0.5357142857142857
+      },
+      "under": {
+        "selected": 118,
+        "wins": 70,
+        "losses": 48,
+        "decided": 118,
+        "rate": 0.5932203389830508
+      },
+      "Combined": {
+        "selected": 174,
+        "wins": 100,
+        "losses": 74,
+        "decided": 174,
+        "rate": 0.5747126436781609
+      }
+    },
+    "eligible": 181,
+    "selected": 174,
+    "unavailable": 7,
+    "unknown": 0,
+    "fallback_issued": 90,
+    "point_view": {
+      "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "product": "lower_median",
+      "mae": 23.816091954022987,
+      "n": 174,
+      "source_artifact": "RETAINED_PREVIOUS_POINT_SCORES_NOT_REFIT_OR_RESCORED"
+    },
+    "strongest_previous_B_point": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "games": 32,
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "matched_previous_B_point_pair": {
+      "target": "rush_yd",
+      "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::P2_EXACT_LINE_CDF-v1",
+      "control_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "week_view": "ALL",
+      "scope": "NEW_P2_VS_PRIOR_EXPOSED_B_POINT_LEADER",
+      "common_decided": 174,
+      "candidate_wins": 100,
+      "control_wins": 100,
+      "win_difference": 0,
+      "disagreements": 0,
+      "uncertainty": {
+        "n": 174,
+        "delta": 0.0,
+        "relative_error_change": 0.0,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.0,
+        "game_normal95_sensitivity": [
+          0.0,
+          0.0
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.42528735632183906,
+        "comparator_error": 0.42528735632183906,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": 0.0,
+            "n": 83
+          },
+          "3": {
+            "loss_difference_sum": 0.0,
+            "n": 91
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    }
+  },
+  {
+    "target": "rush_yd",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs::H-CURRENT-STRICT::P2_EXACT_LINE_CDF-v1",
+    "history": "H-CURRENT",
+    "selection": "P2_EXACT_LINE_CDF-v1",
+    "sides": {
+      "over": {
+        "selected": 56,
+        "wins": 30,
+        "losses": 26,
+        "decided": 56,
+        "rate": 0.5357142857142857
+      },
+      "under": {
+        "selected": 118,
+        "wins": 70,
+        "losses": 48,
+        "decided": 118,
+        "rate": 0.5932203389830508
+      },
+      "Combined": {
+        "selected": 174,
+        "wins": 100,
+        "losses": 74,
+        "decided": 174,
+        "rate": 0.5747126436781609
+      }
+    },
+    "eligible": 181,
+    "selected": 174,
+    "unavailable": 7,
+    "unknown": 0,
+    "fallback_issued": 90,
+    "point_view": {
+      "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "product": "lower_median",
+      "mae": 23.816091954022987,
+      "n": 174,
+      "source_artifact": "RETAINED_PREVIOUS_POINT_SCORES_NOT_REFIT_OR_RESCORED"
+    },
+    "strongest_previous_B_point": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "games": 32,
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "matched_previous_B_point_pair": {
+      "target": "rush_yd",
+      "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs::H-CURRENT-STRICT::P2_EXACT_LINE_CDF-v1",
+      "control_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "week_view": "ALL",
+      "scope": "NEW_P2_VS_PRIOR_EXPOSED_B_POINT_LEADER",
+      "common_decided": 174,
+      "candidate_wins": 100,
+      "control_wins": 100,
+      "win_difference": 0,
+      "disagreements": 0,
+      "uncertainty": {
+        "n": 174,
+        "delta": 0.0,
+        "relative_error_change": 0.0,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.0,
+        "game_normal95_sensitivity": [
+          0.0,
+          0.0
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.42528735632183906,
+        "comparator_error": 0.42528735632183906,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": 0.0,
+            "n": 83
+          },
+          "3": {
+            "loss_difference_sum": 0.0,
+            "n": 91
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    }
+  },
+  {
+    "target": "rush_yd",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs::H-CURRENT-STRICT::P2_EXACT_LINE_CDF-v1",
+    "history": "H-CURRENT",
+    "selection": "P2_EXACT_LINE_CDF-v1",
+    "sides": {
+      "over": {
+        "selected": 56,
+        "wins": 30,
+        "losses": 26,
+        "decided": 56,
+        "rate": 0.5357142857142857
+      },
+      "under": {
+        "selected": 118,
+        "wins": 70,
+        "losses": 48,
+        "decided": 118,
+        "rate": 0.5932203389830508
+      },
+      "Combined": {
+        "selected": 174,
+        "wins": 100,
+        "losses": 74,
+        "decided": 174,
+        "rate": 0.5747126436781609
+      }
+    },
+    "eligible": 181,
+    "selected": 174,
+    "unavailable": 7,
+    "unknown": 0,
+    "fallback_issued": 90,
+    "point_view": {
+      "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "product": "lower_median",
+      "mae": 23.816091954022987,
+      "n": 174,
+      "source_artifact": "RETAINED_PREVIOUS_POINT_SCORES_NOT_REFIT_OR_RESCORED"
+    },
+    "strongest_previous_B_point": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "games": 32,
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "matched_previous_B_point_pair": {
+      "target": "rush_yd",
+      "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs::H-CURRENT-STRICT::P2_EXACT_LINE_CDF-v1",
+      "control_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "week_view": "ALL",
+      "scope": "NEW_P2_VS_PRIOR_EXPOSED_B_POINT_LEADER",
+      "common_decided": 174,
+      "candidate_wins": 100,
+      "control_wins": 100,
+      "win_difference": 0,
+      "disagreements": 0,
+      "uncertainty": {
+        "n": 174,
+        "delta": 0.0,
+        "relative_error_change": 0.0,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.0,
+        "game_normal95_sensitivity": [
+          0.0,
+          0.0
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.42528735632183906,
+        "comparator_error": 0.42528735632183906,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": 0.0,
+            "n": 83
+          },
+          "3": {
+            "loss_difference_sum": 0.0,
+            "n": 91
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::P2_EXACT_LINE_CDF-v1",
+    "history": "H-CURRENT",
+    "selection": "P2_EXACT_LINE_CDF-v1",
+    "sides": {
+      "over": {
+        "selected": 54,
+        "wins": 33,
+        "losses": 20,
+        "decided": 53,
+        "rate": 0.6226415094339622
+      },
+      "under": {
+        "selected": 286,
+        "wins": 161,
+        "losses": 123,
+        "decided": 284,
+        "rate": 0.5669014084507042
+      },
+      "Combined": {
+        "selected": 340,
+        "wins": 194,
+        "losses": 143,
+        "decided": 337,
+        "rate": 0.5756676557863502
+      }
+    },
+    "eligible": 362,
+    "selected": 340,
+    "unavailable": 22,
+    "unknown": 3,
+    "fallback_issued": 163,
+    "point_view": {
+      "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::lower_median",
+      "product": "lower_median",
+      "mae": 1.8694362017804154,
+      "n": 337,
+      "source_artifact": "RETAINED_PREVIOUS_POINT_SCORES_NOT_REFIT_OR_RESCORED"
+    },
+    "strongest_previous_B_point": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::lower_median",
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "games": 32,
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "matched_previous_B_point_pair": {
+      "target": "rec",
+      "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::P2_EXACT_LINE_CDF-v1",
+      "control_id": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::lower_median",
+      "week_view": "ALL",
+      "scope": "NEW_P2_VS_PRIOR_EXPOSED_B_POINT_LEADER",
+      "common_decided": 337,
+      "candidate_wins": 194,
+      "control_wins": 194,
+      "win_difference": 0,
+      "disagreements": 0,
+      "uncertainty": {
+        "n": 337,
+        "delta": 0.0,
+        "relative_error_change": 0.0,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.0,
+        "game_normal95_sensitivity": [
+          0.0,
+          0.0
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.42433234421364985,
+        "comparator_error": 0.42433234421364985,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": 0.0,
+            "n": 161
+          },
+          "3": {
+            "loss_difference_sum": 0.0,
+            "n": 176
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    }
+  },
+  {
+    "target": "rec_yd",
+    "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory::H-CURRENT-COMMON::P2_EXACT_LINE_CDF-v1",
+    "history": "H-CURRENT",
+    "selection": "P2_EXACT_LINE_CDF-v1",
+    "sides": {
+      "over": {
+        "selected": 63,
+        "wins": 37,
+        "losses": 24,
+        "decided": 61,
+        "rate": 0.6065573770491803
+      },
+      "under": {
+        "selected": 277,
+        "wins": 147,
+        "losses": 129,
+        "decided": 276,
+        "rate": 0.532608695652174
+      },
+      "Combined": {
+        "selected": 340,
+        "wins": 184,
+        "losses": 153,
+        "decided": 337,
+        "rate": 0.5459940652818991
+      }
+    },
+    "eligible": 361,
+    "selected": 340,
+    "unavailable": 21,
+    "unknown": 3,
+    "fallback_issued": 162,
+    "point_view": {
+      "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory::H-CURRENT-COMMON::lower_median",
+      "product": "lower_median",
+      "mae": 24.10385756676558,
+      "n": 337,
+      "source_artifact": "RETAINED_PREVIOUS_POINT_SCORES_NOT_REFIT_OR_RESCORED"
+    },
+    "strongest_previous_B_point": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-CURRENT-COMMON::mean",
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "games": 32,
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "matched_previous_B_point_pair": {
+      "target": "rec_yd",
+      "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory::H-CURRENT-COMMON::P2_EXACT_LINE_CDF-v1",
+      "control_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-CURRENT-COMMON::mean",
+      "week_view": "ALL",
+      "scope": "NEW_P2_VS_PRIOR_EXPOSED_B_POINT_LEADER",
+      "common_decided": 337,
+      "candidate_wins": 184,
+      "control_wins": 188,
+      "win_difference": -4,
+      "disagreements": 36,
+      "uncertainty": {
+        "n": 337,
+        "delta": 0.011869436201780416,
+        "relative_error_change": 0.026845637583892617,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.02037635690226269,
+        "game_normal95_sensitivity": [
+          -0.028068223326654457,
+          0.05180709573021529
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.4540059347181009,
+        "comparator_error": 0.4421364985163205,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": 0.0,
+            "n": 160
+          },
+          "3": {
+            "loss_difference_sum": 4.0,
+            "n": 177
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    }
+  },
+  {
+    "target": "rec_yd",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::P2_EXACT_LINE_CDF-v1",
+    "history": "H-CURRENT",
+    "selection": "P2_EXACT_LINE_CDF-v1",
+    "sides": {
+      "over": {
+        "selected": 59,
+        "wins": 35,
+        "losses": 22,
+        "decided": 57,
+        "rate": 0.6140350877192983
+      },
+      "under": {
+        "selected": 281,
+        "wins": 149,
+        "losses": 131,
+        "decided": 280,
+        "rate": 0.5321428571428571
+      },
+      "Combined": {
+        "selected": 340,
+        "wins": 184,
+        "losses": 153,
+        "decided": 337,
+        "rate": 0.5459940652818991
+      }
+    },
+    "eligible": 361,
+    "selected": 340,
+    "unavailable": 21,
+    "unknown": 3,
+    "fallback_issued": 162,
+    "point_view": {
+      "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::lower_median",
+      "product": "lower_median",
+      "mae": 24.062314540059347,
+      "n": 337,
+      "source_artifact": "RETAINED_PREVIOUS_POINT_SCORES_NOT_REFIT_OR_RESCORED"
+    },
+    "strongest_previous_B_point": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-CURRENT-COMMON::mean",
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "games": 32,
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "matched_previous_B_point_pair": {
+      "target": "rec_yd",
+      "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::P2_EXACT_LINE_CDF-v1",
+      "control_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-CURRENT-COMMON::mean",
+      "week_view": "ALL",
+      "scope": "NEW_P2_VS_PRIOR_EXPOSED_B_POINT_LEADER",
+      "common_decided": 337,
+      "candidate_wins": 184,
+      "control_wins": 188,
+      "win_difference": -4,
+      "disagreements": 40,
+      "uncertainty": {
+        "n": 337,
+        "delta": 0.011869436201780416,
+        "relative_error_change": 0.026845637583892617,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.02212284734349256,
+        "game_normal95_sensitivity": [
+          -0.031491344591465,
+          0.05523021699502583
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.4540059347181009,
+        "comparator_error": 0.4421364985163205,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": 0.0,
+            "n": 160
+          },
+          "3": {
+            "loss_difference_sum": 4.0,
+            "n": 177
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    }
+  }
+]

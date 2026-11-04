@@ -1,7 +1,7 @@
 {
   "schema": "v2-current-public-index-pointer-v2",
-  "manifest": "reports/abc-championship/weekly-point-partition-20261104-v1/results-index-v1/INDEX_MANIFEST.json",
-  "previous_checkpoint": "reports/abc-championship/continuation-20261103-v4/results-index-v1/INDEX_MANIFEST.json",
+  "manifest": "reports/abc-championship/leaf-law-continuation-20261104-v2/results-index-v1/INDEX_MANIFEST.json",
+  "previous_checkpoint": "reports/abc-championship/weekly-point-partition-20261104-v1/results-index-v1/INDEX_MANIFEST.json",
   "previous_unchanged": true,
   "manifest_role": "ALL_AUDIT_IMMUTABLE_BACKWARD_COMPATIBLE",
   "default_view": "CURRENT_CANONICAL_SCORE_VERSIONS",
@@ -18,10 +18,10 @@
     "sha256": "f7b540ccf688bb77672646b7a0af162f987a9669d836a4f44651e497205803d8"
   },
   "derived_comparison_manifest": {
-    "path": "reports/abc-championship/continuation-20261103-v4/paired-analysis-index-v1/ANALYSIS_MANIFEST.json",
-    "sha256": "446fac1df5cae5ffeb261ce6d7dee184c8374fcad33c106fd8ed6556549245d2"
+    "path": "reports/abc-championship/leaf-law-continuation-20261104-v2/paired-analysis-index-v1/ANALYSIS_MANIFEST.json",
+    "sha256": "6e4bb525f2767736563699523c7767c4ba270f8fbd5b2b5283137aae73347761"
   },
-  "readable_checkpoint": "reports/abc-championship/continuation-20261103-v4/B_PERIOD_COMPARISON_REPORT.md",
+  "readable_checkpoint": "reports/abc-championship/leaf-law-continuation-20261104-v2/README.md",
   "software_verification_manifest": {
     "path": "reports/week8-grading-20261102l/software/SOFTWARE_VERIFICATION_MANIFEST_V1.json",
     "sha256": "fc322f84ca2d46d9d09038517498567203816ff59f730f557b07029104317db3"
@@ -183,6 +183,10 @@
     {
       "path": "reports/abc-championship/continuation-20261103-v4/SCORES.json",
       "sha256": "c1c838d75913bb09f4d5b69d7814a2533e9901c3c880205a373a29bd56f21777"
+    },
+    {
+      "path": "reports/abc-championship/leaf-law-continuation-20261104-v2/SCORES.json",
+      "sha256": "c876bcd9002fe6856b405cf25f8c1d2b6e120aecb2b170ad0be06d928a8ef477"
     }
   ],
   "abc_B_coverage": {
@@ -214,5 +218,9 @@
       "path": "reports/abc-championship/weekly-point-partition-20261104-v1/FULL_SYSTEM_FOCAL_SCORES.json",
       "sha256": "c4c9ce5f3778df3ab353ac712779f6caa6b11aab706ff9d53bc161b2ecd05158"
     }
-  ]
+  ],
+  "abc_B_leaf_law_report": {
+    "path": "reports/abc-championship/leaf-law-continuation-20261104-v2/README.md",
+    "sha256": "dee90cf872d5777982026c4a35d659ab57f917ae89060239229278030d79c8fa"
+  }
 }

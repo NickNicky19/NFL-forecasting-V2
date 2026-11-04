@@ -1,3 +1,5 @@
+Latest B contribution: [retained Leaf/C02/D1/D2 exact-line laws](reports/abc-championship/leaf-law-continuation-20261104-v2/README.md). All64 cumulative laws lose neutralBrier0.25; prior complete point-direction leaders remain unchanged. C intake pending.
+
 Latest period addition: [B retained Weeks 5–7 weekly comparisons](reports/abc-championship/weekly-point-partition-20261104-v1/README.md), preserving the passing-yard/completion losses and full-system availability. C remains the canonical coordinator.
 
 **Fresh handoffs:** C@39b98567 grants limited olderA/B aggregate admission; newBraw/common parity remains pending. A@21ca035c resolved402-byte accounting and published2024/2026owner-local period outputs. [Exact status and qualification](reports/abc-championship/continuation-20261103-v4/LATEST_HANDOFF_ADMISSION_QUALIFICATION_V2.json). Earlierblocker observations below are historical.

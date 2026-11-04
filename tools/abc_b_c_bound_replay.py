@@ -22,8 +22,12 @@ def load(p):
 def save(p,j):
  p=Path(p);p.parent.mkdir(parents=True,exist_ok=True)
  with p.open('x')as f:json.dump(j,f,indent=2,allow_nan=False);f.write('\n')
-def gzsave(p,j):
- with Path(p).open('xb')as f:f.write(gzip.compress(json.dumps(j,separators=(',',':'),allow_nan=False).encode(),mtime=0))
+def gzsave(p,j,*,max_bytes=None):
+ body=gzip.compress(json.dumps(j,separators=(',',':'),allow_nan=False).encode(),mtime=0)
+ if max_bytes is not None:
+  if type(max_bytes)is not int or max_bytes<0:raise ValueError('nonnegative integer output bound required')
+  if len(body)>max_bytes:raise ValueError('PRIVATE_OUTPUT_SIZE_BOUND_EXCEEDED_BEFORE_WRITE')
+ with Path(p).open('xb')as f:f.write(body)
 def instant(s):return datetime.fromisoformat(s.replace('Z','+00:00')).timestamp()
 def pid(r):return 'C::'+r['method_version']+'::'+r['method_id']+'::'+r['selector_id']
 def c_rows(snapshot):

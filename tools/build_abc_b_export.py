@@ -71,4 +71,32 @@ def run():
  target=ROOT/'reports/abc-championship/EXPORT_INDEX.json'
  with target.open('x')as f:json.dump(value,f,indent=2);f.write('\n')
  print(json.dumps(dict(exports=len(exports),adoption_sha256=exports[0]['sha256'],producer=current)))
-if __name__=='__main__':continuation(sys.argv[1])if len(sys.argv)>1 else run()
+def period_amendment(ref):
+ """Append published period artifacts and qualify newer C admissions."""
+ ref=subprocess.check_output(['git','rev-parse',ref],cwd=ROOT,text=True).strip()
+ base='reports/abc-championship/';wave=base+'continuation-20261103-v4/';weekly=base+'weekly-point-partition-20261104-v1/'
+ target=ROOT/base/'EXPORT_INDEX.json';prior=json.loads(target.read_bytes())
+ if prior['schema_version']!='B-ABC-EXPORT-INDEX-v3.0':raise ValueError('Expected retained v3 index')
+ oldcopy=ROOT/base/'EXPORT_INDEX_61b2424a_V3.json'
+ if oldcopy.exists():assert oldcopy.read_bytes()==target.read_bytes()
+ else:oldcopy.write_bytes(target.read_bytes())
+ paths=[(wave+'B_PERIOD_COMPARISON_REPORT.md','updated_B_period_report'),(wave+'TASK_LEDGER.json','current_ownership_and_dependencies'),(wave+'LATEST_HANDOFF_ADMISSION_QUALIFICATION_V2.json','current_C_A_readback_and_admission_limits'),(wave+'NEW_A_OWNER_LOCAL_REPORTED_PERIOD_LEADERS.json','A_reported_period_leaders_aggregate_only'),(wave+'C_CORRECTED_OUTCOME_POPULATION_SCOPE_QUALIFICATION.json','corrected_C_outcome_population_scope'),(wave+'B_MATCHED_WINNER_NEXT_DISTINCT_SCORE_COMPARISONS.json','strongest_other_B_comparisons'),(wave+'STRONGEST_B_PAIRED_ANALYSIS.json','derived_paired_analysis'),(wave+'REC_YD_C02_OWNER_REVIEW_PACKAGE.json','prepared_not_admitted_category_package_with_strongest_B_control'),(wave+'paired-analysis-index-v1/ANALYSIS_MANIFEST.json','paired_analysis_index'),(weekly+'README.md','weekly_readable_results'),(weekly+'SCORES.json','weekly_retained_method_scores'),(weekly+'CONSTANT_CONTROL_SCORES.json','weekly_full_board_and_matched_controls'),(weekly+'FULL_SYSTEM_FOCAL_SCORES.json','weekly_focal_full_system_views'),(weekly+'NATIVE_FALLBACK_SCOPE_QUALIFICATION.json','issued_vs_unavailable_fallback_scope'),(weekly+'FOCAL_COVERAGE_ALIAS_QUALIFICATION_V3.json','mask_alias_qualification'),(weekly+'WEEK_TO_PARENT_RECONCILIATION.json','weekly_to_cumulative_reconciliation'),(weekly+'RUN_RECEIPT.json','weekly_execution_receipt'),(weekly+'SUPPLEMENTAL_DERIVATION_BINDINGS.json','supplemental_code_and_source_bindings'),(weekly+'INDEPENDENT_WEEKLY_PARTITION_VERIFICATION_V1.json','independent_weekly_counts_masks_and_metrics'),(weekly+'INDEPENDENT_FALLBACK_QUALIFICATION_READBACK_V1.json','independent_fallback_scope_check'),(weekly+'results-index-v1/INDEX_MANIFEST.json','permanent_result_index'),('registries/CURRENT_RESULTS_INDEX.json','current_result_discovery_pointer'),(base+'continuation-20261103-v1/independent/INDEPENDENT_FRESH_UPSTREAM_AGGREGATES_V1.json','independent_A_period_aggregate_checks_and_limits'),(base+'continuation-20261103-v1/independent/INDEPENDENT_FRESH_C_CODE_READBACK_V1.json','independent_current_C_scorer_hash_check')]
+ from concurrent.futures import ThreadPoolExecutor
+ with ThreadPoolExecutor(max_workers=4)as pool:new=list(pool.map(lambda x:committed_export(ref,*x),paths))
+ for r in new:r['artifact_id']='B-EXPORT-'+hashlib.sha256((ref+':'+r['path']).encode()).hexdigest()[:16]
+ value=dict(prior,schema_version='B-ABC-EXPORT-INDEX-v4.0',at_utc=datetime.now(timezone.utc).isoformat(),exports=prior['exports']+new,
+  previous_index=dict(ref='61b2424a8e76ea6d79c345727f4477fad02cc145',path=base+'EXPORT_INDEX.json',preserved_copy=base+'EXPORT_INDEX_61b2424a_V3.json'),
+  canonical_state='C_CORE_PINNED_OLDER_B7C_AGGREGATES_LIMITED_ADMITTED_NEW_B_EXPORTS_AWAIT_C_INTAKE',
+  latest_C_publication=dict(ref='39b98567cc11835363e91c6a2b504bf9cae1f17a',continuation_id='ABC-C-PERIOD-CONTINUATION-v2-1',continuation_sha256='e6a5b8488a7810231100098d1de53f19f902fa378dc1d4efa975ed62431b6f20',core_protocol_unchanged=True,admission_ledger_sha256='3b40290841143c0bfcb0c21a8cbf69af0c10ac27d2620eed957c6fb8df5e6909'),
+  delivery=dict(discovery_file_published=True,older_B7c='LIMITED_PUBLIC_AGGREGATE_ADMISSION_AT_C39b;NOT_RAW_TIMING_OR_MASK_PARITY',new_B_exports='RECEIVED_VALIDATED_ADMITTED_NOT_OBSERVED',external_messages=0),
+  next_action='C intake immutable newBexports at producer '+ref+' and refreshedA21ca outputs; record perartifact states. A402issue resolved. Preserve separate source/horizon/population and rawverification limits; no duplicate fits.',
+  new_weekly_scope=dict(actual_weeks=[5,6,7],targets=['pass_yd','pass_cmp'],source_games=42,parent_cumulative_triads=63,new_score_views=852,new_fits=0,new_inference=0,new_forecasts=0,new_NFL_observations=0,partial_scope='Provider-labelled retained point-rule replay, missing oneW5game; separate from C Pinnacle W2-W3 and original picks.'),
+  current_qualification=dict(path=wave+'LATEST_HANDOFF_ADMISSION_QUALIFICATION_V2.json',producer_commit=ref,scope='Current handoff/task status supersedes stale 402byte and not-published blockers in earlier exports. Existing numeric/grade evidence unchanged.'))
+ target.write_text(json.dumps(value,indent=2)+'\n')
+ print(json.dumps(dict(schema=value['schema_version'],new_readbacks=len(new),all_exports=len(value['exports']),producer_commit=ref)))
+
+if __name__=='__main__':
+ if len(sys.argv)>2 and sys.argv[1]=='period-amendment':period_amendment(sys.argv[2])
+ elif len(sys.argv)>1:continuation(sys.argv[1])
+ else:run()
+

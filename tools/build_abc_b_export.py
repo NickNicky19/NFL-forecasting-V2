@@ -99,4 +99,3 @@ if __name__=='__main__':
  if len(sys.argv)>2 and sys.argv[1]=='period-amendment':period_amendment(sys.argv[2])
  elif len(sys.argv)>1:continuation(sys.argv[1])
  else:run()
-

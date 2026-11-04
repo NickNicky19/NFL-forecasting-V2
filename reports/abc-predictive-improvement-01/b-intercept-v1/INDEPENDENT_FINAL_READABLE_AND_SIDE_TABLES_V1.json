@@ -1,0 +1,54 @@
+{
+  "state": "PASS_FINAL_READABLE_REPORT_AND_SIDE_TABLE_BINDINGS",
+  "at_utc": "2026-11-04T21:18:20.983171+00:00",
+  "verification_code_sha256": "87d10574a28b37315882c9e6197069a7e9716f8cce88326c25bca54bbaa964dc",
+  "report_sha256": "157fd1a5b0bd12d41020b9e38b695e4efaacbe417ee17c665f3314cc58e2106f",
+  "handoff_sha256": "9db9e7b6fc4f152a53c980caf3ebd6c8e4a2a45e55c42d8963ab0a1e0374553a",
+  "all_handoff_bound_bytes_verified": true,
+  "presentation_tables": [
+    {
+      "source": "SCORES.json",
+      "source_sha256": "87e944907e85ca4ca221595c4f8cecf44c4bb2ee64ee7dfc8256fde7ee7e2cf7",
+      "table": "WEEKLY_AND_CUMULATIVE_SIDE_TABLE_V2.json",
+      "table_sha256": "0ed983a53726597d7f20892f7938ab9a0da5bdd861aa745093eb0569ade4a290",
+      "triads_checked": 132,
+      "weekly_and_cumulative_keys_distinct": true
+    },
+    {
+      "source": "COMMON_COHORT_SCORES.json",
+      "source_sha256": "900af8e69d75bd534240c7db86e155ea63b266458bfb60817be93e0f76ff093e",
+      "table": "COMMON_COHORT_SCORES_SIDE_TABLE_V2.json",
+      "table_sha256": "0ca37bfe8c84aac8dc973abb4ff5c5a440de7e88b536154bd647f08e3273faf1",
+      "triads_checked": 160,
+      "weekly_and_cumulative_keys_distinct": true
+    },
+    {
+      "source": "MATCHED_SELECTED_CONTROL_SCORES.json",
+      "source_sha256": "f6871d335408c573865eba4c159b06ea1a73aaaf3dfcc07ff4f60b59e305fc41",
+      "table": "MATCHED_SELECTED_CONTROL_SCORES_SIDE_TABLE_V2.json",
+      "table_sha256": "2d58e9700c6c51574ed01174a65b0ce64957b29f0ebdc047618dc6449105219f",
+      "triads_checked": 72,
+      "weekly_and_cumulative_keys_distinct": true
+    },
+    {
+      "source": "POLICY_COHORT_SCORES.json",
+      "source_sha256": "53f7f9ea793fb60ed1b0651d3b87bfe25f31a580e846cfea733fe0d4e7353f61",
+      "table": "POLICY_COHORT_SCORES_SIDE_TABLE_V2.json",
+      "table_sha256": "b71d087ad1a25a07fb6ca11920e64ce304b91ae073b5d98260f1ac311ee7f1e4",
+      "triads_checked": 2240,
+      "weekly_and_cumulative_keys_distinct": true
+    }
+  ],
+  "side_triads_checked": 2604,
+  "primary_weekly_cumulative_triads": 132,
+  "source_scores_not_recomputed": true,
+  "no_new_fits": true,
+  "no_new_grades": true,
+  "no_new_NFL_observations": true,
+  "recommendation": "Do not switch this repair; C admission and new B1 capture not observed. Prior independently eligible owner policy remains unchanged.",
+  "limits": [
+    "This is a presentation and binding audit against source scores already independently checked; it adds no accuracy evidence.",
+    "Actual rec weeks2-3 and PT week8 remain separate partial source panels, not a complete W1-W8 record.",
+    "Handoff preparation is not actual C receipt/admission or production capture. No browser-consumption or profitability claim."
+  ]
+}

@@ -54,8 +54,13 @@ def apply_source_vintage_annotation(row, annotation):
     value = annotation.get('source_vintage')
     if value is None:
         return row
-    if row.get('record_kind') not in {'prop_selection_evaluation', 'forecast_evaluation_view'}:
+    if row.get('record_kind') not in {'prop_selection_evaluation', 'forecast_evaluation_view',
+                                     'prop_threshold_probability_evaluation'}:
         raise ValueError('source-vintage correction requires point/selection record')
+    if row.get('record_kind') == 'prop_threshold_probability_evaluation':
+        if not annotation.get('source_horizon_qualification'):
+            raise ValueError('source-vintage correction requires point/selection record or bound probability horizon')
+        qualify_bound_source_horizon(row, annotation)
     if annotation.get('correction_kind') != 'SOURCE_VINTAGE_METADATA_ONLY':
         raise ValueError('source-vintage correction kind missing')
     if annotation.get('original_source_vintage') != row.get('source_vintage'):
@@ -63,6 +68,51 @@ def apply_source_vintage_annotation(row, annotation):
     if not isinstance(value, str) or not value.strip():
         raise ValueError('source-vintage correction must supply nonempty label')
     return dict(row, source_vintage=value)
+
+
+def qualify_bound_source_horizon(row, annotation):
+    """Correct a generic inherited panel label without changing source scores."""
+    value=annotation.get('source_horizon_qualification')
+    if value is None:return row
+    if (row.get('record_kind')not in {'prop_selection_evaluation','forecast_evaluation_view',
+                                     'prop_threshold_probability_evaluation'}
+            or value.get('kind')!='TARGET_SPECIFIC_BOUND_SOURCE_CLOCKS'
+            or value.get('original_horizon_id')!=row.get('horizon_id')
+            or not isinstance(value.get('horizon_id'),str)or not value['horizon_id'].strip()
+            or not value.get('source_binding')):
+        raise ValueError('source horizon correction changed or lacks its binding')
+    return dict(row,horizon_id=value['horizon_id'])
+
+
+def separate_ancillary_point_metrics(row, annotation):
+    """Do not rank an event/control product as its borrowed point reference."""
+    scope=annotation.get('ancillary_point_attribution')
+    if scope is None:return row
+    if (row.get('record_kind')!='prop_selection_evaluation'
+            or row.get('product_id')not in {'exact_line_probability_product','constant_side_or_original_prior'}
+            or scope.get('kind')!='ORIGINAL_B0_MEAN_REFERENCE_NOT_THIS_EVENT_PRODUCT'):
+        raise ValueError('invalid ancillary-point attribution')
+    keys=('mae','mse','rmse','bias','p90_abs','p95_abs','max_abs')
+    expected={key:row.get(key)for key in keys}
+    if scope.get('original_metrics')!=expected:raise ValueError('ancillary point metric source mismatch')
+    result=dict(row,**{key:None for key in keys})
+    result['ancillary_point_reference_metrics']=expected
+    result['native_metric_null_reason']='EVENT_OR_CONSTANT_CONTROL_HAS_NO_OWN_NUMERIC_POINT;UNCHANGED_B0_MEAN_RETAINED_AS_SEPARATE_ANCILLARY_PRODUCT'
+    return result
+
+
+def qualify_registered_rolling_rank(row, annotation):
+    rank=annotation.get('registered_rolling_rank')
+    if rank is None:return row
+    policy=row.get('strategy')
+    expected=f"ROLLING_K{rank.get('K')}_{rank.get('side_pool')}"
+    if (row.get('record_kind')!='prop_selection_evaluation' or policy!=expected
+            or rank.get('K')not in (6,10,20)
+            or rank.get('side_pool')not in ('Combined','over','under')
+            or rank.get('rank_scope')!='PER_CATEGORY_PER_WEEK_ROLLING_DECISION_BATCHES'
+            or row.get('K')not in (None,rank['K'])):
+        raise ValueError('rank metadata disagrees with registered source policy')
+    return dict(row,K=rank['K'],rank_scope=rank['rank_scope'],rank_side_pool=rank['side_pool'])
 
 
 def validate_diagnostic_context_coverage(record, contexts):
@@ -203,6 +253,9 @@ def new_records(root,item,inputs):
             addition=reporting[i]
             if addition['record_id']!=original.get('record_id'):raise ValueError('reporting source record mismatch')
             row=apply_source_vintage_annotation(row,addition)
+            row=qualify_bound_source_horizon(row,addition)
+            row=separate_ancillary_point_metrics(row,addition)
+            row=qualify_registered_rolling_rank(row,addition)
             if addition.get('precision_counts') is not None:row['precision_counts']=addition['precision_counts']
             if addition.get('law_origin_counts') is not None:
                 counts=addition['law_origin_counts']
@@ -247,6 +300,14 @@ def new_records(root,item,inputs):
         date={k:row.get(k)for k in ('evaluation_seasons','evaluation_weeks')}
         if i in dates:date={k:dates[i][k]for k in date}
         record=evaluation(row,artifact,year_record=date)
+        if i in reporting and reporting[i].get('source_horizon_qualification'):
+            # Numeric/proper-score normalizers previously omitted horizon,
+            # while selection records already exposed it. Retain the same
+            # source-bound clock on every product, without changing a metric.
+            qualified_horizon=row['horizon_id']
+            if record.get('horizon')not in (None,qualified_horizon):
+                raise ValueError('normalized source horizon disagrees with binding')
+            record['horizon']=qualified_horizon
         record['source_artifact_sha256']=digest;record['source_aggregate_fields']=original
         record['source_registry_kind']=item.get('kind')
         record['source_version_note']=item.get('version_note')

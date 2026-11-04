@@ -1,3 +1,20 @@
+# Current B mechanism checkpoint — November 4
+
+ABC-PREDICTIVE-IMPROVEMENT-01 remains additive. [Executed local wave](reports/abc-predictive-improvement-01/b-intercept-v1/B_PREDICTIVE_IMPROVEMENT_REPORT.md): sixscalarinterceptfits, rec194/337→195/337withworseBrier, PT14/26tie/very smallBriergainstilllosingneutral. BothB2policieslosematchedconstants. Confidence90%gateempty;N/Aaccuracy,TARGET_NOT_ESTABLISHED. Zerofootballfits/inference/neworiginalcaptures. Allsame-methodsides,14additionalpolicy/frozencohortcrossings,145borrowedpointviewsseparatelytyped,originalcaptures/losses/failedsetupsandmetadataversionspreserved.
+
+| Owner / work | Actual state / next action |
+|---|---|
+| B repair/gating | CompletedonlyrecC W2–3andPToriginalcapturetransferW8. Allalreadyexposed; no fullW1–8or2022–25repairvalidation. No production switch recommended from thiswave. |
+| C intake | Consume immutable Bexport, score+source-clock/attributionannotations, and verification receipts; no new Cadmission orrawparity observed. CownsP3/newtargetshare/NGS/commonreport. |
+| B future mechanism | Needpermittednext-originB0 exact-lineprobability/model/inputbindingandcandidateadmission underexistingownerroute; point-onlyclassicpacket isinsufficient. Newcapturestartswhenactuallypersisted; nogamesbackfilled. |
+| Existing owner operation | Nov4 action41909390038completed/success;20:45UTCclassicpacket12O+12U/11games,CURRENT_BASELINE,GitHub/servedbytesmatch. Adaptiveoverlaydisabled0rows. Browserconsumptionnotinspected;B1notadmitted/captured. |
+| Historical actual offers | Qualifiedannualthresholds/clocksandexactoriginbaselinecalibrationrowsneeded. Aannualaggregates/privatearchivesare not B access. Missingoriginalpicksdonotblockqualifiedreconstruction; no invented/closing-line substitutions. |
+| Large-fit recovery | Lastverified38parts/796917760bytesmissing; no newquotaread or unchangeduploadretry.147originalstrictHGBorigins/736olderexactD1D2cellsremainqueuedwithspecificrestoration. Completed2022–25basefitsnotrerun. |
+| Resources / audit | Primary0.906s/164745216peakRSS/517786newprivatebytes; threadcapnotdemonstrablyenforced, disclosedandfutureguardimplemented. Allscienceoutputsunchangedbyindex/sourceclock/ancillarymetadataqualification. |
+
+The older ledger below retains its historical states. No old evidence, ownerlease, sourcepolicy, recoverygate, scientificregistration or provisionalreleaseauthority was replaced.
+
+
 # Resumable V2 task ledger
 
 Checkpoint: October29,2026; complete inventory/research tournament **not** claimed. Authoritative emitted counts are in reports/CHECKPOINT_COUNTS.json and replay/REPLAY_RECEIPT.json. Only the root integrator writes V2canonical execution events; none were appended upstream.

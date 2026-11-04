@@ -1,0 +1,64 @@
+{
+  "state": "PASS_INDEPENDENT_CURRENT_OWNER_PUBLIC_PAYLOAD_READBACK",
+  "at_utc": "2026-11-04T21:03:36.205934+00:00",
+  "production_ref": "c2e9bc4bd4090461ffde2f5977a1ef34eba61483",
+  "source_status_receipt_sha256": "3d9f2fd7f1922fe296eac67dffc3bc09b8d3522c56076c67549fa9f6478e89ab",
+  "source_count_receipt_sha256": "2da1a9628d7740e827f4b7309bd905fcf3675e3954bc933573c331de3de5a76d",
+  "verification_code_sha256": "ccad16e90dcfb72cd96bd4b8937faade2f8bfd281dc2c6ebdb6755ecd72158a1",
+  "checks": [
+    {
+      "product": "adaptive_overlay",
+      "immutable_GitHub_url": "https://raw.githubusercontent.com/NickNicky19/nicks-expert-nfl-picks/c2e9bc4bd4090461ffde2f5977a1ef34eba61483/output/data/weekly-adaptive/db98a48e1dcaccd07e96bba63854d67fa515faa16b9da4eb0325af7689f2ead1.json",
+      "served_url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/weekly-adaptive/db98a48e1dcaccd07e96bba63854d67fa515faa16b9da4eb0325af7689f2ead1.json",
+      "sha256": "db98a48e1dcaccd07e96bba63854d67fa515faa16b9da4eb0325af7689f2ead1",
+      "bytes": 790,
+      "GitHub_served_bytes_equal": true,
+      "readback_at_utc": "2026-11-04T21:03:35.521118+00:00"
+    },
+    {
+      "product": "classic_selected_rankings",
+      "immutable_GitHub_url": "https://raw.githubusercontent.com/NickNicky19/nicks-expert-nfl-picks/c2e9bc4bd4090461ffde2f5977a1ef34eba61483/output/data/weekly-selected-rankings/5b2e6368e434b5a6077bafc7b73d9f5bdd0d894484ae3e7ea2a8ead2fb6ed663.json",
+      "served_url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/weekly-selected-rankings/5b2e6368e434b5a6077bafc7b73d9f5bdd0d894484ae3e7ea2a8ead2fb6ed663.json",
+      "sha256": "5b2e6368e434b5a6077bafc7b73d9f5bdd0d894484ae3e7ea2a8ead2fb6ed663",
+      "bytes": 11815,
+      "GitHub_served_bytes_equal": true,
+      "readback_at_utc": "2026-11-04T21:03:35.823386+00:00"
+    }
+  ],
+  "season": 2026,
+  "week": 9,
+  "actual_persisted_prepared_at": "2026-11-04T20:45:18.658349+00:00",
+  "side_counts": {
+    "over": 12,
+    "under": 12
+  },
+  "total_selections": 24,
+  "unique_games": 11,
+  "forecast_sources": [
+    "CURRENT_BASELINE"
+  ],
+  "model_versions": [
+    "sleeper-matchup-classic-fg-identity-v1"
+  ],
+  "overlay_state": "DISABLED_USE_R0",
+  "adaptive_overlay_rows": 0,
+  "owner_action": {
+    "id": 41909390038,
+    "name": "Hourly update",
+    "event": "schedule",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-04T20:44:02Z",
+    "updated_at": "2026-11-04T20:45:36Z",
+    "head_sha": "43b04d2ed957e24ffdecadd1f545a55ace9a6956"
+  },
+  "new_B_repair_captured_or_admitted": false,
+  "production_writes": 0,
+  "new_scheduler": 0,
+  "limits": [
+    "Bounded readback authenticates equal immutable GitHub and presently served payload bytes, counts and actual owner workflow result; it does not inspect browser rendering or claim a future packet remains unchanged.",
+    "Classic reference selections are not an admitted adaptive-overlay model or the new B probability repair.",
+    "Twelve Overs plus twelve Unders are twenty-four selections; no top-twelve combined claim.",
+    "No raw player-level packet retained or published by this verification."
+  ]
+}

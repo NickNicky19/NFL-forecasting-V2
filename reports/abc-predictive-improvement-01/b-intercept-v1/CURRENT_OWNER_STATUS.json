@@ -1,0 +1,118 @@
+{
+  "at_utc": "2026-11-04T20:56:31.122799+00:00",
+  "production_ref": "c2e9bc4bd4090461ffde2f5977a1ef34eba61483",
+  "state": "READ_ONLY_OWNER_PACKET_REFRESH",
+  "checks": [
+    {
+      "product": "adaptive_overlay",
+      "pointer_path": "output/data/weekly-adaptive-overlay.json",
+      "payload_path": "output/data/weekly-adaptive/db98a48e1dcaccd07e96bba63854d67fa515faa16b9da4eb0325af7689f2ead1.json",
+      "payload_sha256": "db98a48e1dcaccd07e96bba63854d67fa515faa16b9da4eb0325af7689f2ead1",
+      "payload_bytes": 790,
+      "GitHub_and_served_pointer_equal": true,
+      "GitHub_and_served_payload_equal": true,
+      "pointer_published_at": null,
+      "payload_keys": [
+        "board_contract_sha256",
+        "canonical_board_sha256",
+        "display_board_sha256",
+        "fallback_counts",
+        "frozen_rows",
+        "packaged_at",
+        "prepared_at",
+        "publication_review_sha256",
+        "registration_id",
+        "rows",
+        "schema_version",
+        "season",
+        "state",
+        "website_source_sha",
+        "week"
+      ]
+    },
+    {
+      "product": "classic_selected_rankings",
+      "pointer_path": "output/data/weekly-selected-rankings.json",
+      "payload_path": "output/data/weekly-selected-rankings/5b2e6368e434b5a6077bafc7b73d9f5bdd0d894484ae3e7ea2a8ead2fb6ed663.json",
+      "payload_sha256": "5b2e6368e434b5a6077bafc7b73d9f5bdd0d894484ae3e7ea2a8ead2fb6ed663",
+      "payload_bytes": 11815,
+      "GitHub_and_served_pointer_equal": true,
+      "GitHub_and_served_payload_equal": true,
+      "pointer_published_at": "2026-11-04T20:45:18.680248+00:00",
+      "payload_keys": [
+        "display_board_sha256",
+        "fallback_counts",
+        "frozen_proofs",
+        "overlay_sha256",
+        "picks",
+        "policy",
+        "policy_sha256",
+        "prepared_at",
+        "schema_version",
+        "season",
+        "website_source_sha",
+        "week"
+      ]
+    }
+  ],
+  "products": {
+    "adaptive_overlay": {
+      "state": "DISABLED_USE_R0",
+      "rows": [],
+      "frozen_rows": [],
+      "fallback_counts": {
+        "PPR_or_unsupported_R0": 490,
+        "publication_not_approved_R0": 2206
+      },
+      "built_at": null,
+      "generated_at": null,
+      "registration_id": "weekly-adaptive-release-v1"
+    },
+    "classic_selected_rankings": {
+      "generated_at": null,
+      "published_at": null,
+      "week": 9,
+      "season": 2026,
+      "selection_policy": null,
+      "array_fields": {
+        "frozen_proofs": 0
+      }
+    }
+  },
+  "observed_actions": [
+    {
+      "id": 41909390038,
+      "name": "Hourly update",
+      "event": "schedule",
+      "created_at": "2026-11-04T20:44:02Z",
+      "updated_at": "2026-11-04T20:45:36Z",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "43b04d2ed957e24ffdecadd1f545a55ace9a6956"
+    },
+    {
+      "id": 41909074167,
+      "name": "Reliability tests",
+      "event": "pull_request",
+      "created_at": "2026-11-04T20:42:01Z",
+      "updated_at": "2026-11-04T20:42:43Z",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "d8b4a93476eb0a882ba59eb7d3d99f56583cef22"
+    },
+    {
+      "id": 41909065098,
+      "name": "Reliability tests",
+      "event": "push",
+      "created_at": "2026-11-04T20:41:57Z",
+      "updated_at": "2026-11-04T20:42:41Z",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "d8b4a93476eb0a882ba59eb7d3d99f56583cef22"
+    }
+  ],
+  "browser_consumption": "NOT_INSPECTED_ENDPOINT_BYTES_ONLY",
+  "production_writes": 0,
+  "new_capture_or_scheduler": 0,
+  "admission": "No B1 owner admission or upgraded-model served-value claim established by reference packet."
+}

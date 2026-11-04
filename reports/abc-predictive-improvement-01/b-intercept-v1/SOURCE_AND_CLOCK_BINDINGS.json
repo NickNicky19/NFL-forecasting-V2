@@ -1,0 +1,107 @@
+{
+  "C_repository": "NickNicky19/NFL-forecasting-NGS-C",
+  "C_ref": "39b98567cc11835363e91c6a2b504bf9cae1f17a",
+  "protocol_id": "ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1",
+  "protocol_sha256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1",
+  "scorer_sha256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce",
+  "schema_sha256": "0ba0755f94889a33fb7c02efbf4cc9e414b9a733fc3bc7f1357faba1c294f2f4",
+  "C_input_manifest": {
+    "path": "reports/abc-championship/C_INPUT_BINDINGS.json",
+    "sha256": "91cf77353b70d49d33e5ca80421a69c702dc6d8fbab07043e58b0676580359e8",
+    "datasets": [
+      {
+        "dataset_id": "C-PROPLINE-ACTUAL-LINES-v7-PINNACLE-W2-W3",
+        "path": "reports/propline-v7/GRADED_ROWS.json",
+        "SHA256": "c7ccb7fdd7e4e6a7da1c1de3670badf5fa1a9db8a6071ed460970f746a47d297",
+        "rows": 5808,
+        "review_id": "C-PROPLINE-CCBY-SAMPLE-v7"
+      },
+      {
+        "dataset_id": "C-PROPLINE-OUTCOME-ROLE-v7.1",
+        "path": "reports/propline-v7/CORRECTIONS_GRADED_ROWS_V7_1.json",
+        "SHA256": "a4de224a4acb1fe8d208f3f623066971fcba5bd9c6a00c2effe440dae3fb2817",
+        "rows": 12,
+        "review_id": "C-PROPLINE-CCBY-SAMPLE-v7"
+      },
+      {
+        "dataset_id": "C-PROPLINE-CCBY-BOOKS-v8",
+        "path": "artifacts/reliability-v8/BOOK_GRADED_ROWS.json.gz",
+        "SHA256": "4479712aa537895ca33ca4bc75107373f6bdf125355b1ee03816a7406e179ea7",
+        "rows": 10806,
+        "review_id": "C-PROPLINE-CCBY-BOOKS-v8"
+      },
+      {
+        "dataset_id": "C-PROPLINE-CCBY-WORKLOAD-v8",
+        "path": "artifacts/reliability-v8/WORKLOAD_GRADED_ROWS.json.gz",
+        "SHA256": "d44f8d6e7e6e6c445311afeddd14cca7ce3f4d8b2e82dedf25fa2cfc15df06c4",
+        "rows": 338,
+        "review_id": "C-PROPLINE-CCBY-WORKLOAD-v8"
+      },
+      {
+        "dataset_id": "C-PROPLINE-CCBY-PREVALENCE-v8",
+        "path": "artifacts/reliability-v8/PREVALENCE_GRADED_ROWS.json.gz",
+        "SHA256": "cb717c26003eefd6dc1d61deb928d4e40c7c929a27ce9d1ce4abb2ec2faec859",
+        "rows": 2769,
+        "review_id": "C-PROPLINE-CCBY-PREVALENCE-v8"
+      }
+    ]
+  },
+  "B_source_bindings": [
+    {
+      "safe_id": "B_WEEK5_COMPLETE_LAW_ROWS",
+      "sha256": "77d303f74eda09cdda7d818bfe7974c30dc1f94b024a114b1f23602f3cb9a45b",
+      "bytes": 496079,
+      "public_scores": "reports/baselines-coverage-20261031h/actual-method-w5/complete-leaf-law-v1/SCORES.json",
+      "public_scores_sha256": "f24a531b17bd856bf8c8ea31730c8c8b72c6c9dfea988eea0f8955d06cbcc81f"
+    },
+    {
+      "safe_id": "B_WEEK6_COMPLETE_LAW_ROWS",
+      "sha256": "74952fb50d2fb39bdd81cb8183450c0390080f17e47c4d5c06d96f297e55daac",
+      "bytes": 557373,
+      "public_scores": "reports/completion-20261031g/roster/w6-complete-leaf-law-v1/SCORES.json",
+      "public_scores_sha256": "5f5135d5838ffc31003966b589b8fbfe2e5dc86456599ef10c65c2177d8f7ee2"
+    },
+    {
+      "safe_id": "B_WEEK7_COMPLETE_LAW_ROWS",
+      "sha256": "87a4126cada6c783a0a15f64f343d7fa730682e21be918ff43929548546a1866",
+      "bytes": 501799,
+      "public_scores": "reports/completion-20261031g/roster/w7-complete-leaf-law-v1/SCORES.json",
+      "public_scores_sha256": "5fab03adbeb2b76f2014abbf3c1c3f6145168b9140ec18df6fb1405502ffcaa4"
+    },
+    {
+      "safe_id": "B_WEEK8_RETAINED_ORIGINAL_LAW_ROWS_V2",
+      "sha256": "e9e837028b1466d242035f09c334d5ad693f2cc815ecd6d1dc1807679ae704e5",
+      "bytes": 2007071
+    },
+    {
+      "safe_id": "B_CURRENT_FINAL_WEEK8_LABEL_BINDINGS",
+      "sha256": "4b37b02e4ea584fbf91c21ca1fe8454c2447a68cafc154f15d431f520c73358a",
+      "bytes": 3113168,
+      "public_receipt": "reports/abc-championship/local-week8-final-v1/RUN_RECEIPT.json"
+    }
+  ],
+  "rec": {
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "forecast": "C current/revised historicalorigin reconstruction, simulatedkickoffinformation",
+    "quote": "Pinnacle specificqualifiedCCBYsample last-recorded line;historicalclocks/executabilityunverified",
+    "decision": "Per-gameCdecisionUTC;notoriginalBissuance",
+    "calibration": "Bcurrentrunearlierlabelonly,strictkickoff+7dayeligibility",
+    "labels": "Cboundcorrectionchain/version, not independentcompleteNFLsourceaudit"
+  },
+  "pass_td": {
+    "actual_weeks": [
+      8
+    ],
+    "base_forecast": "OriginalretainedC02earlypartialW8capture13games;2Thursdayqueriesunavailable",
+    "base_capture_sha256": "8c86b837d061dc6964907e7c900289dc452f7afb92aece7a2f4f2e48d1f5d886",
+    "calibration": "W5baselinechoice,W6earlierMAPlabels,W7temporalOOFconfidence preparation;historicalknown-target-time tooriginalcapture isdeclaredtransfer",
+    "calibration_freeze_epoch": 1793300133.0,
+    "quote": "RetainedBwebsiteprovider-labelledlaterT90threshold,clock/venueexecutablequalitynotauthenticated;nottheC_Pinnaclepanel",
+    "labels": "BcurrentfinalWeek8version4b37b02e...;originalcapturelabelsnotrewritten"
+  },
+  "source_vintage_limit": "Authenticatedretention/forecastcaptureisnotauthenticatedNFLinputpublication;current/revisedhistoricalfeaturesandactualpublicationuncertaintyremain.",
+  "correction_scope": "GenericC-panelhorizon/source labelswereinheritedbyBPTcontrols/cohorts;correcteddefaultindexmetadataonly,predictionsandcountsunchanged. All sourceSCORES andfirsttwounpublishedindexdraftsretained."
+}

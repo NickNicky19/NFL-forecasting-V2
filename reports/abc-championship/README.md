@@ -1,3 +1,8 @@
+# Current B predictive-improvement contribution
+
+[Executed exact-line repair and selective reliability](../abc-predictive-improvement-01/b-intercept-v1/B_PREDICTIVE_IMPROVEMENT_REPORT.md): rec195/337 versus unchanged194/337, Brierworse; PT14/26tie, Brierimprovesbutstillloses0.25. B2losesmatchedconstants;90%gateempty. Sixscalarfits,0newfootballfits/inference/originalissuance. [Source-clock/ancillarypoint/Kqualifications](../abc-predictive-improvement-01/b-intercept-v1/SOURCE_CLOCK_AND_ATTRIBUTION_QUALIFICATION_V3.json) preservealloriginalscores. Ccoordinates; newexportnotyetadmitted; nocategoryreleasefromthisrepair. Originalchampionshipandcoveragequeuebelowremainopen.
+
+
 **Current B contribution:** [new Weeks 2–3 comparisons, exact-line probabilities and original Week8 controls](continuation-20261103-v4/B_PERIOD_COMPARISON_REPORT.md). C protocol is now pinned at `ac9cb100` / `fa195814…`; earlier404records below remain historical. B owner-local outputs are not yet C-admitted. [Bound acknowledgement](continuation-20261103-v4/PINNED_C_PROTOCOL_AND_B_ACKNOWLEDGEMENT.json) · [Exact week gaps](continuation-20261103-v4/B_EXACT_WEEK_GAP_OVERLAY.csv).
 
 # Session B local results and A/B/C export entrypoint

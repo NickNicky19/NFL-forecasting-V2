@@ -1,4 +1,6 @@
-Latest B contribution: [retained Leaf/C02/D1/D2 exact-line laws](reports/abc-championship/leaf-law-continuation-20261104-v2/README.md). All64 cumulative laws lose neutralBrier0.25; prior complete point-direction leaders remain unchanged. C intake pending.
+Latest executed B mechanism: [earlier-only exact-line repair and selective reliability](reports/abc-predictive-improvement-01/b-intercept-v1/B_PREDICTIVE_IMPROVEMENT_REPORT.md). Rec194/337→195/337, butBrierworse; passingTD14/26unchanged, Brierslightlybetter butstilllosesneutral0.25. Bothselectedgateslosestrongmatchedconstants;confidence0.90selectszero, accuracyN/A. Sixscalarcalibrationfits, nofootballrefit/inferenceororiginalissuance. Alltwelveoriginalcategoryrecords, same-proceduresides, role/topplayer/topKresults, lossesandmetadataqualificationsretained. Cintakepending; fullW1–8/historicalchampionshipstillpartial. OwnerNov4referencecapture/readbackverified; noBpromotion.
+
+Prior B contribution: [retained Leaf/C02/D1/D2 exact-line laws](reports/abc-championship/leaf-law-continuation-20261104-v2/README.md). All64 cumulative laws lose neutralBrier0.25; prior complete point-direction leaders remain unchanged. C intake pending.
 
 Latest period addition: [B retained Weeks 5–7 weekly comparisons](reports/abc-championship/weekly-point-partition-20261104-v1/README.md), preserving the passing-yard/completion losses and full-system availability. C remains the canonical coordinator.
 

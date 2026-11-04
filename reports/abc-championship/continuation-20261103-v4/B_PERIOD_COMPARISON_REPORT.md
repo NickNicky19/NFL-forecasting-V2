@@ -4,6 +4,8 @@ C owns the [canonical championship](https://github.com/NickNicky19/NFL-forecasti
 
 New method time coverage: **2026 Weeks 2–3,32 games,968 source offers,469 player-games**. B replayed existing empirical/HGB objectives/ordered-CDF/GLM/C02/D1/D2/applicable count procedures on C’s existing Pinnacle board. No new fits, fitted-model inference, issuance, collection or historical season claimed. All sourceoffers remain in coverage; absent Bparticipants are technical unavailable, not confidence abstentions. Earlier completed point fits/scores were reused.
 
+**Strongest-B comparison:** receiving-yard C02 CURRENT mean188/337 leads D2 CURRENT mean187/337 by only **1win /0.30percentage points**, with game-cluster sensitivity−1.83to+2.42points. The +12win comparison below is against Cdirect176/337, not the strongest otherBprocedure. ReceptionsD2median194/337 leads the nextBscore193/337 by1 and ties Cdirect194/337. All ties and losses remain. [Paired comparison](B_MATCHED_WINNER_NEXT_DISTINCT_SCORE_COMPARISONS.json).
+
 ## Newly evaluated B procedures: own combined leaders
 
 These are B own-pool maxima, not an unrestricted A/B/C total ranking. Equal-rate ties are all retained below. All rows use P1 unless named P2. MAE is on that same procedure’s decided selected offer rows, not the broad participant panel.

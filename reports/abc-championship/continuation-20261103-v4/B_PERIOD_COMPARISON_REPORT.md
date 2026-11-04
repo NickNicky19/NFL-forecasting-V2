@@ -6,6 +6,8 @@ New method time coverage: **2026 Weeks 2–3,32 games,968 source offers,469 play
 
 **Strongest-B comparison:** receiving-yard C02 CURRENT mean188/337 leads D2 CURRENT mean187/337 by only **1win /0.30percentage points**, with game-cluster sensitivity−1.83to+2.42points. The +12win comparison below is against Cdirect176/337, not the strongest otherBprocedure. ReceptionsD2median194/337 leads the nextBscore193/337 by1 and ties Cdirect194/337. All ties and losses remain. [Paired comparison](B_MATCHED_WINNER_NEXT_DISTINCT_SCORE_COMPARISONS.json).
 
+**Fresh canonical handoff status (C39b98567 / A21ca035c):** C now grants limited **aggregate** admission to olderA/Bexports, including B’s205/415vs224/415control. Raw-row, timing and common-mask parity remain unverified. NewB228cells below are not yet recorded as admitted. A resolved the402-byte accounting excess by411bytes of duplicated navigation, leaving9bytes below the unchangedcap. A also published new owner-local2026W1–5 and2024early/full-season actual-line outputs for pass_att/rec/rush_att. These are A execution, not newBfits or transferredprivate rows. [Fresh pin/status](LATEST_HANDOFF_ADMISSION_QUALIFICATION_V2.json).
+
 ## Newly evaluated B procedures: own combined leaders
 
 These are B own-pool maxima, not an unrestricted A/B/C total ranking. Equal-rate ties are all retained below. All rows use P1 unless named P2. MAE is on that same procedure’s decided selected offer rows, not the broad participant panel.
@@ -101,17 +103,17 @@ D2 completions/receptions history is not filled using base Leaf scores. Complete
 ## Period completion and remaining work
 
 - E1 W1–8: PARTIAL. New B/C opportunities cover W2–3 in4categories; B W5–8 source-specific panels cover other periods and contracts. W1/W4 and missingW5Thursday require the already-existing A annual export/owner-local scoring plus clock/identity qualification. No originalW1–4 recovered here.
-- E2/E3/E4: existing full2022–2025 numerical tests reused; **zero new seasonal fits**. Exact D1/D2 older cells remain unrun, never completed by baseLeaf. Native continuity is in EXACT_RECIPE_HISTORICAL_NUMERICAL_CONTINUITY.json. Actual-line historical comparisons await exact annual sourceaccess/owner-local outputs;2025is a separate sourcequalification gap.
+- E2/E3/E4: existing full2022–2025 numerical tests reused; **zero new seasonal fits**. Exact D1/D2 older cells remain unrun, never completed by baseLeaf. Native continuity is in EXACT_RECIPE_HISTORICAL_NUMERICAL_CONTINUITY.json. A now reports owner-local 2024 early/full-season actual-line outputs for three categories (below); B has checked their aggregate arithmetic, not private forecast rows. Other missing actual-line cells require exact annual source access or owner-local outputs; 2025 remains a separate source-qualification gap.
 - E5/E6/E7: no complete requested-season actual-line pooled/balanced winner. Missing seasons cannot be dropped silently; overlapping panels not pooled twice.
 - E8: no new capture in this B wave; existing frozen Week8 and prior grades remain immutable. New rules start when genuinely retained.
 
-B_EXACT_WEEK_GAP_OVERLAY.csv links every week of the existing641exact2026recipe/category/history/product cells to source and owner actions; it is an overlay on the established3205-cell grid, not a competing registry. SESSION_SOURCE_WEEK_COVERAGE.csv separates A/B/C source scope. TASK_LEDGER.json gives precise recovery/402-byte/export/law dependencies. No new external message was sent.
+B_EXACT_WEEK_GAP_OVERLAY.csv links every week of the existing641exact2026recipe/category/history/product cells to source and owner actions; it is an overlay on the established3205-cell grid, not a competing registry. SESSION_SOURCE_WEEK_COVERAGE.csv separates A/B/C source scope. TASK_LEDGER.json gives precise recovery/export/law dependencies and records the resolved A metadata issue. No new external message was sent.
 
 ## Readiness and operation
 
 No championship-based release recommendation yet: provisional owner review remains allowed under existing category/product policy, with no new waiting period. Existing later/scientific gates retain their named scope. C02 receiving-yard evidence is an exposed two-week diagnostic improvement over Cdirect, not a verified website-relative or full-season win. No new B candidate owner admission or served-value change was verified. Productionrun41712800413 shows successful existing scheduled execution, capture/integrity, commit/deploy steps; that does not alone authenticate everypacket or B admission.
 
-Recovery last independently checkedNov2:38parts/796917760bytes missing across three2022–24 archives, delta/D1D2specificarchive restored. No new quantitative quota/capacity proof or upload retry in this wave. A’s402byte excess is4194706actual versus4194304reserved; its own integrator must version forward attribution/allocation without disabling guard. Saved-row work above proceeded independently.
+Recovery last independently checkedNov2:38parts/796917760bytes missing across three2022–24 archives, delta/D1D2specificarchive restored. No new quantitative quota/capacity proof or upload retry in this wave. A’s former 402-byte excess is resolved: removing 411 bytes of duplicate navigation metadata reduced accounting to 4,194,295 under the unchanged 4,194,304 cap, leaving 9 bytes. Original failures and unique evidence remain retained. Saved-row work above proceeded independently.
 
 ## Evidence and reproducibility
 
@@ -145,3 +147,45 @@ GLM MULTI receiving-yard mean and lower-median views tie at native MAE21.462908;
 [Receiving-yard C02 owner-review package](REC_YD_C02_OWNER_REVIEW_PACKAGE.json) is prepared as a selection-first research entrant with its own source/model/inference/consumer/rollback and admission requirements. It is not admitted or deployed, not the numerical MAE leader, and no new universal incumbent-win or waiting requirement is imposed. Existing independently ready owner operation continues.
 
 The final independent operational check resolved a pointer-versus-payload comparison error: [corrected independent receipt](../continuation-20261103-v1/independent/INDEPENDENT_OWNER_OPERATION_FINAL_QUALIFICATION_V3.json) and [root dereference check](OWNER_OPERATION_DEREFERENCE_CHECK_V2.json) verify the same24-selection Week9payload. The failed check is preserved; no forecast changed.
+
+## New A historical execution: independently checked aggregates, not B row replay
+
+A’s newly published1092aggregateviews/14registered procedures cover2026W1–5 and2024W1–8/fullREG for passing attempts, receptions and rushing attempts. Private inputs/forecasts remain A-owned; B did not refit or decode them. These are separate representative-book panels, not C Pinnacle or B’s QB/RB population. Raw own-pool maxima below retain low coverage and technicalavailability; they are not full-system champions or a selectionpolicy.
+
+|Period|Category|Exact A procedure|Over W-L/n/%|Under W-L/n/%|Combined W-L/n/%|Selected/eligible|
+|---|---|---|---|---|---|---|
+|E1_PARTIAL_2026_W1_5|pass_att|`A::opportunity-four-ou-v1::P2_CONDITIONAL_M`|12-2/14/85.71%|9-11/20/45.00%|21-13/34/61.76%|34/94|
+|E1_PARTIAL_2026_W1_5|rec|`A::opportunity-four-ou-v1::P1_M`|17-11/28/60.71%|30-18/48/62.50%|47-29/76/61.84%|82/669|
+|E1_PARTIAL_2026_W1_5|rush_att|`A::opportunity-four-ou-v1::P2_CONDITIONAL_FS`|19-12/31/61.29%|19-15/34/55.88%|38-27/65/58.46%|70/180|
+|E3_2024_W1_8|pass_att|`A::opportunity-four-ou-v1::ALWAYS_UNDER`|N/A|126-96/222/56.76%|126-96/222/56.76%|225/225|
+|E3_2024_W1_8|rec|`A::opportunity-four-ou-v1::P1_M`|45-26/71/63.38%|38-26/64/59.38%|83-52/135/61.48%|138/1366|
+|E3_2024_W1_8|rush_att|`A::opportunity-four-ou-v1::P1_M`|31-15/46/67.39%|39-24/63/61.90%|70-39/109/64.22%|112/350|
+|E4_2024_FULL_REG|pass_att|`A::opportunity-four-ou-v1::P2_CONDITIONAL_M`|80-72/152/52.63%|93-68/161/57.76%|173-140/313/55.27%|314/495|
+|E4_2024_FULL_REG|rec|`A::opportunity-four-ou-v1::P1_M`|104-57/161/64.60%|102-57/159/64.15%|206-114/320/64.38%|331/2998|
+|E4_2024_FULL_REG|rush_att|`A::opportunity-four-ou-v1::P1_M`|61-49/110/55.45%|85-64/149/57.05%|146-113/259/56.37%|263/753|
+
+[All reported raw A leaders and source contracts](NEW_A_OWNER_LOCAL_REPORTED_PERIOD_LEADERS.json). No2022/2023/2025actual-linecoverage or fullmatchedA/B/C seasonal superiority is inferred. A historical126weekly/cumulative reconciliations pass;66reported historicalweek CIs reproduced,36eligibleCIs not reproduced because rawblock insertionorder is unshared. NewA-on-C87views have80state-label discrepancies: unavailable forecasts versus unknown outcomes need owner trace/versioning. Decidedwins/lossesarithmetic passes. Its RB-only rushing111decisions cannot be ranked against B’s QB/RB174. Corrected Cknown receiving outcomes are338; Clearned/Bretained subsets cover337, so raw equal-population parity cannot be inferred from similarcounts. These are offlineexport findings, not a claim of a livewebsite defect; A owns fixes, C owns admission.
+
+## Completed weekly period gap: retained Weeks 5–7
+
+New per-week evaluations of existing retained grades, not new games, forecasts or fits. All 63 parent cumulative triads reconcile exactly. The source covers 42 games in Weeks 5–7, with one Week 5 game missing. C’s Pinnacle Weeks 2–3 panel and original selections remain separate. Full-system, common-row and learned-only contexts retain all losses.
+
+|Target|Frozen focal recipe|Week|Over W-L/n/%|Under W-L/n/%|Combined W-L/n/%|Selected/eligible|AlwaysOver / always-Under on the same focal mask|
+|---|---|---|---|---|---|---|---|
+|pass_yd|`hgb-direct-history-controls-v1:absolute_error_point` / H-MULTI / absolute_error_point|5|7-8/15/46.67%|5-8/13/38.46%|12-16/28/42.86%|28/28|always-Over 15/28; always-Under 13/28|
+|pass_yd|`hgb-direct-history-controls-v1:absolute_error_point` / H-MULTI / absolute_error_point|6|5-5/10/50.00%|5-12/17/29.41%|10-17/27/37.04%|27/28|always-Over 17/27; always-Under 10/27|
+|pass_yd|`hgb-direct-history-controls-v1:absolute_error_point` / H-MULTI / absolute_error_point|7|2-5/7/28.57%|4-14/18/22.22%|6-19/25/24.00%|25/28|always-Over 16/25; always-Under 9/25|
+|pass_cmp|`v2-qualified-position-defense-information-wave-v1:D1` / H-MULTI / lower_median|5|4-5/9/44.44%|9-10/19/47.37%|13-15/28/46.43%|28/28|always-Over 14/28; always-Under 14/28|
+|pass_cmp|`v2-qualified-position-defense-information-wave-v1:D1` / H-MULTI / lower_median|6|4-4/8/50.00%|6-12/18/33.33%|10-16/26/38.46%|26/28|always-Over 16/26; always-Under 10/26|
+|pass_cmp|`v2-qualified-position-defense-information-wave-v1:D1` / H-MULTI / lower_median|7|3-3/6/50.00%|7-9/16/43.75%|10-12/22/45.45%|22/28|always-Over 12/22; always-Under 10/22|
+
+Cumulative focal losses remain HGB-L1 MULTI passing yards 28/80 (35.00%) and D1 MULTI completions 33/76 (43.42%). Their cumulative source masks were stored under common-context aliases; [qualification](../weekly-point-partition-20261104-v1/FOCAL_COVERAGE_ALIAS_QUALIFICATION_V3.json) preserves those records and adds correct full-board availability. No forecast, prior decided grade or selection rule changed. Known and unknown fallback states remain separate. Weekly views overlap cumulative views and add no independent NFL trials.
+
+[Every originalcontext/method/week score](../weekly-point-partition-20261104-v1/SCORES.json) · [Focal full-system coverage](../weekly-point-partition-20261104-v1/FULL_SYSTEM_FOCAL_SCORES.json) · [Constants on full board and focal masks](../weekly-point-partition-20261104-v1/CONSTANT_CONTROL_SCORES.json) · [Cumulative count reconciliation](../weekly-point-partition-20261104-v1/WEEK_TO_PARENT_RECONCILIATION.json) · [All-side table](../weekly-point-partition-20261104-v1/SIDE_TABLE.csv). Native point views include equality abstention rows; no probability/price/EV claim. Single-week uncertainty is game sensitivity, not enough week clusters.
+
+The focal passing-yard error/bias was 61.01/−12.26, 54.78/−15.83 and 64.77/−26.30 yards by week; completion error/bias was 4.86/−1.71, 5.00/−2.62 and 5.36/−0.27. Bias means prediction minus actual. These patterns describe losses, not a proven causal diagnosis or an evaluated repair. Missing forecasts are technical unavailability, not confidence abstention. Prices and bookmaker settlement remain unqualified.
+
+
+The linked weekly files live in [weekly-point-partition-20261104-v1](../weekly-point-partition-20261104-v1/README.md). The earlier cumulative 63 triads and all parent bytes remain unchanged. This closes the requested B weekly partition; it does not close missing Weeks 1/4, the absent Week 5 game, historical line access or exact-recipe seasonal fits.
+
+Fallback scope: all issued focal outputs were learned; the unavailable queries retain unknown fallback states (passing yards 0/1/3, completions 0/2/6 by week). Native `fallback_unknown=0` describes issued outputs only, not every query. [Bound qualification](../weekly-point-partition-20261104-v1/NATIVE_FALLBACK_SCOPE_QUALIFICATION.json).

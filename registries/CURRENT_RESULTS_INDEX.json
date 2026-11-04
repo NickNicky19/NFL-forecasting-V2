@@ -1,7 +1,7 @@
 {
   "schema": "v2-current-public-index-pointer-v2",
-  "manifest": "reports/abc-championship/continuation-20261103-v4/results-index-v1/INDEX_MANIFEST.json",
-  "previous_checkpoint": "reports/abc-championship/results-index-v1/INDEX_MANIFEST.json",
+  "manifest": "reports/abc-championship/weekly-point-partition-20261104-v1/results-index-v1/INDEX_MANIFEST.json",
+  "previous_checkpoint": "reports/abc-championship/continuation-20261103-v4/results-index-v1/INDEX_MANIFEST.json",
   "previous_unchanged": true,
   "manifest_role": "ALL_AUDIT_IMMUTABLE_BACKWARD_COMPATIBLE",
   "default_view": "CURRENT_CANONICAL_SCORE_VERSIONS",
@@ -169,7 +169,7 @@
   },
   "abc_B_period_report": {
     "path": "reports/abc-championship/continuation-20261103-v4/B_PERIOD_COMPARISON_REPORT.md",
-    "sha256": "cafa5b2886de6c52bb832de199334c302bcdeab51723ac478f7f086200009316"
+    "sha256": "71266b89e1b0e7d03d40ae60dc9bcd8332366563a7ea37f1c098e21135e25b8c"
   },
   "abc_B_default_scores": [
     {
@@ -188,5 +188,31 @@
   "abc_B_coverage": {
     "path": "reports/abc-championship/continuation-20261103-v4/B_EXACT_WEEK_GAP_OVERLAY.json",
     "sha256": "d4c1bdcb52d42dd39c07ef106b1a5cd8416dc6fbb5bf96988333dfc74cd27c1f"
-  }
+  },
+  "abc_current_handoff_qualification": {
+    "path": "reports/abc-championship/continuation-20261103-v4/LATEST_HANDOFF_ADMISSION_QUALIFICATION_V2.json",
+    "sha256": "9a55c3f6151923e4793fe1fd746759ba6fa0763cf26458ae533a90aca911ef11"
+  },
+  "B_weekly_native_fallback_scope": {
+    "path": "reports/abc-championship/weekly-point-partition-20261104-v1/NATIVE_FALLBACK_SCOPE_QUALIFICATION.json",
+    "sha256": "ca9f8de309bbd804efe20a0a92b877f7ac77d64e49fa8a0e701799031275ab06"
+  },
+  "abc_B_weekly_partition": {
+    "path": "reports/abc-championship/weekly-point-partition-20261104-v1/RUN_RECEIPT.json",
+    "sha256": "9265e4409382df7e30237264dda503d4aec93c9a4ec96d8e5875061c4057fc02"
+  },
+  "abc_B_weekly_scores": [
+    {
+      "path": "reports/abc-championship/weekly-point-partition-20261104-v1/SCORES.json",
+      "sha256": "ce9838b7ef26eac862f2ff1a00502f48f9c040f178e67bf32c144927fded387b"
+    },
+    {
+      "path": "reports/abc-championship/weekly-point-partition-20261104-v1/CONSTANT_CONTROL_SCORES.json",
+      "sha256": "2acb53679b1d59b0a40d250dcda49f22c0940bd563b59af0de000fec412b6a23"
+    },
+    {
+      "path": "reports/abc-championship/weekly-point-partition-20261104-v1/FULL_SYSTEM_FOCAL_SCORES.json",
+      "sha256": "c4c9ce5f3778df3ab353ac712779f6caa6b11aab706ff9d53bc161b2ecd05158"
+    }
+  ]
 }

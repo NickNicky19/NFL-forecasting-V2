@@ -1,8 +1,58 @@
 """Public-safe B export discovery; verify exact committed bytes, not working copies."""
-import hashlib,json,subprocess,urllib.request
+import hashlib,json,subprocess,urllib.request,sys
 from datetime import datetime,timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+def committed_export(ref,path,kind):
+ expected=subprocess.check_output(['git','show',ref+':'+path],cwd=ROOT)
+ url=f'https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/{ref}/{path}'
+ with urllib.request.urlopen(url,timeout=60)as response:body=response.read()
+ if body!=expected:raise ValueError('Committed byte readback mismatch:'+path)
+ return dict(artifact_id='B-EXPORT-'+hashlib.sha256(path.encode()).hexdigest()[:16],producer_commit=ref,path=path,retrieval_url=url,sha256=hashlib.sha256(body).hexdigest(),bytes=len(body),kind=kind,readback_verified=True,rights='PUBLIC_AGGREGATES_CODE_OR_SAFE_C_SOURCE_IDS_ONLY;NO_B_RESTRICTED_ROWS_OR_MODELS',retention='IMMUTABLE_GITHUB_EXACT_BYTES_VERIFIED',admission='NOT_C_ADMITTED')
+
+def continuation(ref):
+ """Versioned amendment to the existing index; retain immutable old exports."""
+ base='reports/abc-championship/';wave=base+'continuation-20261103-v4/'
+ prior=json.loads(subprocess.check_output(['git','show',ref+':'+base+'EXPORT_INDEX_7c0690bf_V2.json'],cwd=ROOT))
+ paths=[(wave+'PINNED_C_PROTOCOL_AND_B_ACKNOWLEDGEMENT.json','C_protocol_pin_and_B_acknowledgement'),
+  (base+'continuation-20261103-v2/SCORES.json','B_D1_D2_ordered_actual_line_saved_points'),
+  (base+'continuation-20261103-v3/SCORES.json','B_additional_actual_line_saved_points'),
+  (wave+'SCORES.json','B_restored_GLM_law_P2_and_proper_probability_scores'),
+  (wave+'numerical-offer-panel-v1/SCORES.json','same_offer_native_errors_and_precision'),
+  (wave+'OWNER_LOCAL_MASK_MEMBERSHIP.json.gz','public_safe_C_opportunity_mask_members'),
+  (wave+'OWNER_LOCAL_VERIFICATION_LIMITS.json','owner_local_reproducibility_limits'),
+  (wave+'PROBABILITY_BASELINES.json','matched_probability_control_scores'),
+  (wave+'B_PERIOD_COMPARISON_REPORT.md','local_readable_period_comparison'),
+  (wave+'B_EXACT_WEEK_GAP_OVERLAY.csv','overlay_on_established_exact_B_roster'),
+  (wave+'SESSION_SOURCE_WEEK_COVERAGE.csv','A_B_C_source_scope_with_ownership'),
+  (wave+'TASK_LEDGER.json','single_owner_missing_work_and_dependencies'),
+  (wave+'REC_YD_C02_OWNER_REVIEW_PACKAGE.json','prepared_not_admitted_category_package'),
+  (wave+'results-index-v1/INDEX_MANIFEST.json','current_permanent_accuracy_error_index'),
+  (base+'continuation-20261103-v1/original-selected-under-control-v1/SCORES.json','original_W8_selected_pool_constant_control'),
+  (base+'continuation-20261103-v1/independent/INDEPENDENT_RETAINED_RECORD_VERIFICATION_V1.json','independent_C_and_B_original_arithmetic'),
+  (base+'continuation-20261103-v1/independent/INDEPENDENT_NEW_V2_POSTQUALIFICATION_VERIFICATION.json','independent_B_D1_D2_joins_and_counts'),
+  (base+'continuation-20261103-v1/independent/INDEPENDENT_NEW_V3_VERIFICATION.json','independent_other_B_saved_points'),
+  (base+'continuation-20261103-v1/independent/INDEPENDENT_EXACT_LINE_LAWS_V4.json','independent_analytic_law_and_baseline_math'),
+  (base+'continuation-20261103-v1/independent/INDEPENDENT_FINAL_NUMERIC_AND_MASKS_V1.json','independent_precision_and_public_masks'),
+  (base+'continuation-20261103-v1/independent/INDEPENDENT_OWNER_OPERATION_FINAL_QUALIFICATION_V3.json','independent_owner_W9_payload_readback')]
+ exports=prior['exports']+[committed_export(ref,path,kind)for path,kind in paths]
+ value=dict(prior,schema_version='B-ABC-EXPORT-INDEX-v3.0',at_utc=datetime.now(timezone.utc).isoformat(),
+  canonical_state='C_PROTOCOL_PINNED_B_OWNER_LOCAL_OUTPUTS_NOT_C_ADMITTED',
+  pinned_C=dict(repository='NickNicky19/NFL-forecasting-NGS-C',ref='ac9cb1000bcb8f1197505b68ccfe246ea61bbafe',protocol_id='ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1',protocol_sha256='fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1',scorer_sha256='2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce',schema_sha256='0ba0755f94889a33fb7c02efbf4cc9e414b9a733fc3bc7f1357faba1c294f2f4'),
+  exports=exports,previous_index=dict(ref='7c0690bfb564db5481cc27a00a45e7f4311b1f70',path=base+'EXPORT_INDEX.json',preserved_copy=base+'EXPORT_INDEX_7c0690bf_V2.json'),
+  adoption_qualification='B normalized chatadoption860a... and C executablefa1958... are different documents. Semantic agreement verified; no byte-for-byte transcript adoption claim. Prior404records historical only.',
+  actual_new_scope=dict(period_id='E1',requested_weeks=list(range(1,9)),actual_weeks=[2,3],source='C_PINNACLE_CORRECTED_v7.1_AT_ac9cb100',source_offers=968,source_games=32,source_player_games=469,point_recipe_category_history_product_cells=212,law_category_history_cells=16,scope='B_OWNER_LOCAL_NOT_C_ADMITTED;4categoriesonly; source/participantpopulation differences explicit',origin_forecasts='B',offers_outcomes_controls='C',A_predictions_received_or_scored=False),
+  owner_local_contract=dict(producer_repository='NickNicky19/NFL-forecasting-V2',producer_commit=ref,procedure_id='EXACT_NAMESPACED_IDS_PER_SCORE_ROW',period_id='E1_PARTIAL_W2_W3',rights_analysis='QUALIFIED_PINNED_C_REVIEW_AND_EXISTING_B_SOURCE_CONTRACTS',rights_export='PUBLIC_AGGREGATES_CODE_SAFE_C_SOURCE_IDS_ONLY;B_ROWS_REMAIN_RESTRICTED_OWNER_LOCAL',rights_GitHub_retention='PUBLIC_SAFE_OUTPUTS_ONLY',rights_publication='PERMITTED_AGGREGATES_NOT_PRIVATE_PREDICTION_ROWS',contracts='OfficialfullgameOT;signedyards;exactCofferID/GSIS/game/role/labelversion; BprimaryQBpassing,QB/RBrushing,RB/WR/TEreceiving',history='ExactperrowCURRENT/strictCURRENT/RECENT/MULTI; no merged arm',feature_memory='Exactperrowcommon2022memoryorstrictCURRENT;empiricalarmtargethistoryseparate',priors='Originalsamearmrole/global/fixedstartup; no newlyfittedprior',calibration_history='No newcalibration; existingprocedureunchanged',update_rule='Originalhistoricalweeklyfit/per-gamequery; no currentmodel substituting pastorigin',output_type='Typedretainedpoints and separatelyrestoredcompleteparametricGLMlaws',selection_rule='P1unroundedpoint versusline;P2exactlineconditionalappearance; noEVorprobabilityfrompoint',horizon='Kickoffreconstructionversuslast-recordedpre-kickclose; timingunverifieddiagnostic',availability_tier='CURRENT_REVISED_SOURCE_7DAY_RECONSTRUCTION_NOT_AUTHENTIC_ASOF',fallback='Ownsourcebehavior; technicalunavailable not confidenceabstention; unknownparticipation notzero',actual_rows_games_weeks='968Csourceoffers,32games,469player-games,W2-W3; eachprocedureowncoverage/decidedmaskpublished; viewsnotNFLobservations',missing_dependencies='Cintake/ownerlocaladmission; otherweeks/categories/historicaloffers; exactlaw/member and candidate-specificretentionrequirements'),
+  restricted_evidence=dict(public_row_transfer_allowed=False,private_locator=None,retention='ExistingBapprovedstoreprotected;newboundedderivativeslocalreadbackonly; nooffhostclaim',owner_local_option='Executed againstpinnedCoffer/outcomeIDs; safemaskmembers and deterministicoutputsavailable; code/chunkhashbindings and independentlocalarithmeticretained',verification_limit='Ccanverifyitscontrolcountsfrompublicmasks. Publicaggregatesalone do not letC independentlyrecomputeBprivatecandidateforecasts; admissionmustretainthislimit or identify specificpermittedlocalchallenge/export.',dependencies='SpecificBsource/model/rowpermission and recovery; notblanketgradingstop; no newsharedprivatearchive'),
+  delivery=dict(discovery_file_published=True,C_received='UNVERIFIED',C_acknowledged='UNVERIFIED',C_validated='UNVERIFIED',C_admitted='UNVERIFIED',external_messages=0),
+  next_action='C consume this exact immutableexportindex and boundnewBfiles/masks; record perartifact received/validated/admitted/rejected or exactdependency. Bdoesnotassumeacceptance. Aannualownerlocal replay/402byteallocation belongsA; no duplicatefits.',
+  budgets=dict(new_fits=0,new_model_coefficient_inference=0,new_issued_forecasts=0,restored_threshold_CDF_queries=3668),production_changes=False)
+ for p in value['periods']:
+  p['common_status']='C_PROTOCOL_PINNED;B_OWNER_LOCAL_PARTIAL_NOT_ADMITTED'
+  if p['period_id']=='E1':p['local_status']='New B/C W2-W3fourcategoryactual-line diagnostics; priorB W5-W8source-specificpanels retainedseparately; W1/W4/missingW5game gaps. NotfullW1-W8or original8weekrecord.'
+  elif p['period_id']in ['E2','E3','E4']:p['local_status']+='; reusedno newseasonalfits or actual-lineyears inthiswave.'
+ target=ROOT/base/'EXPORT_INDEX.json';target.write_text(json.dumps(value,indent=2)+'\n')
+ print(json.dumps(dict(schema=value['schema_version'],new_readbacks=len(paths),all_exports=len(exports),producer_commit=ref,C_admission='UNVERIFIED_NOT_CLAIMED')))
 def run():
  current=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip();prior='08fa2ea888620f5587ed5618dfc0e239be82a664'
  paths=[(current,'reports/abc-championship/ADOPTED_ASSIGNMENT_V2.json','adoption'),(current,'reports/abc-championship/local-week8-final-v1/SCORES.json','local_direction_results'),(current,'reports/abc-championship/local-week8-final-v1/independent/INDEPENDENT_LOCAL_FINAL_REVIEW_V1.json','independent_local_review'),(prior,'reports/completion-20261031g/roster/finite-v2/FINITE_IMPLEMENTED_PROCEDURE_ROSTER.json','existing_method_roster'),(prior,'reports/completion-20261031g/roster/finite-v2/FINITE_RECIPE_CATEGORY_PERIOD_PRODUCT_GRID.json','existing_exact_cell_grid'),(prior,'registries/CURRENT_RESULTS_INDEX.json','prior_index_pointer')]
@@ -21,4 +71,4 @@ def run():
  target=ROOT/'reports/abc-championship/EXPORT_INDEX.json'
  with target.open('x')as f:json.dump(value,f,indent=2);f.write('\n')
  print(json.dumps(dict(exports=len(exports),adoption_sha256=exports[0]['sha256'],producer=current)))
-if __name__=='__main__':run()
+if __name__=='__main__':continuation(sys.argv[1])if len(sys.argv)>1 else run()

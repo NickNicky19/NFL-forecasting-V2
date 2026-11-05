@@ -1,0 +1,23 @@
+{
+  "state": "PASS_EXPORT_V8_NEW_BINDINGS_AND_LEGACY_SCHEMA_PRESERVED",
+  "at_utc": "2026-11-05T23:36:05.756857+00:00",
+  "index_path": "reports/abc-championship/EXPORT_INDEX.json",
+  "index_sha256": "c65e0e838251e3538d82d36019aa085aca38433e05c158bb350e01a168c3b06d",
+  "export_entries": 288,
+  "new_source_commit": "47626b2672a56b14516e8fd0cc338f50a875d93e",
+  "new_source_export_entries": 26,
+  "source_files_with_alias": 27,
+  "new_source_hash_size_checks": "ALL_PASS",
+  "existing139_path_only_entries": "PRESERVED_UNCHANGED;NOT_REQUIRED_TO_HAVE_NEW_ARTIFACT_ID_FIELD",
+  "explicit_ids_unique": true,
+  "initial_validation_failure": {
+    "type": "KeyError",
+    "field": "artifact_id",
+    "cause": "Adhocvalidatorincorrectlyassumedlegacy139path-identifiedexportscontainartifact_id;failedbeforebindingscheck",
+    "scope": "Validationadapteronly;notexport,forecast,scoreorsourcebytefailure",
+    "preserved": "Thisreceiptretainsfailure;correctedcheckusesexistingpath/commit/hashlegacyidentityandexplicitIDswherepresent"
+  },
+  "production_changes": 0,
+  "new_NFL_observations": 0,
+  "C_admission": false
+}

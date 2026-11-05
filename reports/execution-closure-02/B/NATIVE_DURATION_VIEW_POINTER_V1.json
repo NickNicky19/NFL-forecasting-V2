@@ -1,0 +1,23 @@
+{
+  "schema": "B-native-product-duration-view-v1",
+  "created_at_utc": "2026-11-05T23:29:35.077838+00:00",
+  "scope": "BcontributiontoC;notsharedmasterqualification",
+  "default_sources": [
+    {
+      "path": "reports/execution-closure-02/B/B_CATEGORY_PRODUCT_QUALIFICATION_CORRECTION_V2.json",
+      "sha256": "249c607c485d196811b15972f39c327f901fed4b18555018da51b9fcf226b3b1",
+      "use": "ExactnativeD1D2C02namespacecorrection;originalscorebytesunchanged"
+    },
+    {
+      "path": "reports/execution-closure-02/B/independent/RETAINED_SELECTOR_WEEK_WITNESS_V1.json",
+      "sha256": "f9c636933dfda99cd62a2727ecad354b5882355ceaa04f8db203210bce74d7a5",
+      "use": "Overridesoldaggregate-onlylackofindividualweekproofonlyfornineboundselectorproducts;63actualretaineddecisionsindependentlyverified"
+    }
+  ],
+  "precedence": "Exact retained full-ID/source/weekly decision evidence supersedes a short-alias zero-match or aggregate-only summary. Zero matches are not zero test weeks.",
+  "not_borrowed": "No actual-line/probability-selection/TopPicks qualification borrowed from numerical evidence",
+  "raw_original_qualification_and_summaries_preserved": true,
+  "new_test_weeks": 0,
+  "new_scores": 0,
+  "release_or_C_admission": false
+}

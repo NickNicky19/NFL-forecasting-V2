@@ -1,3 +1,11 @@
+# Current B execution closure — November 5 CST / UTC
+
+[Executed closure checkpoint](reports/execution-closure-02/B/B_EXECUTED_CLOSURE_CHECKPOINT_V1.md):21 restored origin models reproduce all5,756mean/median values on2,878existing queries; independent primitive/source checks pass, no forecasting arithmetic defect found in scope. Nine short-alias duration rows corrected without changing scores;63savedselector decisions supply seven numerical-week witnesses for9exactpolicies. No newfits, issuedforecasts, NFLweeks, TopPicksreplay or productionwrite.
+
+[Exact adopted research continuation](docs/continuations/EXECUTION_CLOSURE_02_RESEARCH.txt) · [Current B native duration view](reports/execution-closure-02/B/NATIVE_DURATION_VIEW_POINTER_V1.json) · [Delivery support and exact owners](reports/execution-closure-02/B/DELIVERY_SUPPORT_AND_OWNER_DEPENDENCIES_V1.json) · [Independent parity](reports/execution-closure-02/B/independent/FINAL_TYPED_ADAPTER_REVIEW_V1.json). C retains the shared evaluator/qualification/intake. B's current-query model/source and owner admission remain unverified; original-site Count A hosted delivery and exact changed Top Picks replay remain with their retained owners.
+
+**Owner deadline notice:** original-site run42108386576 failed Chromium launch beforegeneration/capture. First retained W9T90 is November5 23:45UTC /5:45p.m.CST. [Read-only failure witness and owner action](reports/execution-closure-02/B/OWNER_ACTION_NOTICE.md). A's newer CountA package already closeslocalrestoration/parity; do notrepeatit. Websiteowner alone diagnoses/executes existingroute; Bdidnotdispatch. Older checkpoint descriptions below retain their original scope and time.
+
 # Current B post-wave checkpoint — November 4 CST / November 5 UTC
 
 [Executed diagnosis, five-week qualification and delivery](reports/post-wave-5w-v1/B_POST_WAVE_REPORT_FINAL_V3.md): new correctness ranker loses receptions85/163vs86/163 and ties passingTD5/13; fixed90%gates selectzero (N/A). New C111RBmask closure compares52retained point configurations: fourstrict-currentmedians65/111vsstrongestotherB/Under/role63/111, only2exposedweeks and55fallbacks. Five actualrankerfits; zerofootballfit/inference/neworiginalcapture/addedNFLweek. All twelve category sides/errors remain directly in the report, with losses, own/common/fallback scopes and prior scores preserved.

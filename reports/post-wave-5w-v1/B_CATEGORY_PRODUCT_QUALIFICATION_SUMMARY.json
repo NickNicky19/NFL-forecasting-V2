@@ -1,0 +1,382 @@
+{
+  "B_only_contribution": true,
+  "source": {
+    "path": "reports/post-wave-5w-v1/B-product-week-qualification-v3/B_PRODUCT_WEEK_QUALIFICATION.json.gz",
+    "sha256": "3da8e999983378dac77b6b7d6280c1c453dea231579e169be58437d04c1471c8"
+  },
+  "source_scope": "Accepted602201plusnew816ranker views;226diagnostics and468conditionalRBviews do not qualify newprimaryproducts.",
+  "categories": [
+    {
+      "category": "pass_yd",
+      "native_leaders": [
+        {
+          "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+          "product": "absolute_error_point",
+          "history": "H-MULTI",
+          "current_n": 242,
+          "native_error": 66.11731310079224,
+          "metric": "mae",
+          "matching_retained_contract_views": 16,
+          "current_seven_week_contract_views": 1,
+          "witnesses": [
+            {
+              "qualification_id": "B5W-9c3a2cde9503107c0b80",
+              "horizon": null,
+              "population": "primary",
+              "position": "ALL",
+              "weeks": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "source_vintage": "current_vintage_reconstruction; kickoff+7day assumed availability; weekly fitting and per-game query features"
+            }
+          ],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        }
+      ],
+      "actual_line_status": "Existing source-specific two/three-week panels retained; no numerical-to-selection week borrowing",
+      "special_blocker": null
+    },
+    {
+      "category": "pass_td",
+      "native_leaders": [
+        {
+          "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1",
+          "product": "lower_median",
+          "history": "H-MULTI",
+          "current_n": 242,
+          "native_error": 0.8099173553719008,
+          "metric": "mae",
+          "matching_retained_contract_views": 1,
+          "current_seven_week_contract_views": 0,
+          "witnesses": [],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        }
+      ],
+      "actual_line_status": "NewG0/G1 <=2scoredweeks; prior exact procedure/policy/source/horizon continuity must be verified separately",
+      "special_blocker": null
+    },
+    {
+      "category": "pass_cmp",
+      "native_leaders": [
+        {
+          "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1",
+          "product": "lower_median",
+          "history": "H-MULTI",
+          "current_n": 242,
+          "native_error": 5.3429752066115705,
+          "metric": "mae",
+          "matching_retained_contract_views": 8,
+          "current_seven_week_contract_views": 0,
+          "witnesses": [],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        }
+      ],
+      "actual_line_status": "Existing source-specific two/three-week panels retained; no numerical-to-selection week borrowing",
+      "special_blocker": null
+    },
+    {
+      "category": "pass_att",
+      "native_leaders": [
+        {
+          "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2",
+          "product": "lower_median",
+          "history": "H-MULTI",
+          "current_n": 242,
+          "native_error": 7.971074380165289,
+          "metric": "mae",
+          "matching_retained_contract_views": 1,
+          "current_seven_week_contract_views": 0,
+          "witnesses": [],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        }
+      ],
+      "actual_line_status": "Existing source-specific two/three-week panels retained; no numerical-to-selection week borrowing",
+      "special_blocker": null
+    },
+    {
+      "category": "pass_int",
+      "native_leaders": [
+        {
+          "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1",
+          "product": "lower_median",
+          "history": "H-CURRENT",
+          "current_n": 242,
+          "native_error": 0.5661157024793388,
+          "metric": "mae",
+          "matching_retained_contract_views": 2,
+          "current_seven_week_contract_views": 0,
+          "witnesses": [],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        }
+      ],
+      "actual_line_status": "Existing source-specific two/three-week panels retained; no numerical-to-selection week borrowing",
+      "special_blocker": null
+    },
+    {
+      "category": "rush_yd",
+      "native_leaders": [
+        {
+          "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1",
+          "product": "lower_median",
+          "history": "H-MULTI",
+          "current_n": 844,
+          "native_error": 16.688388625592417,
+          "metric": "mae",
+          "matching_retained_contract_views": 1,
+          "current_seven_week_contract_views": 0,
+          "witnesses": [],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        }
+      ],
+      "actual_line_status": "Existing source-specific two/three-week panels retained; no numerical-to-selection week borrowing",
+      "special_blocker": null
+    },
+    {
+      "category": "rush_att",
+      "native_leaders": [
+        {
+          "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+          "product": "point_choice_policy",
+          "history": "H-MULTI",
+          "current_n": 844,
+          "native_error": 3.0497630331753554,
+          "metric": "mae",
+          "matching_retained_contract_views": 2,
+          "current_seven_week_contract_views": 0,
+          "witnesses": [],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        }
+      ],
+      "actual_line_status": "Existing source-specific two/three-week panels retained; no numerical-to-selection week borrowing",
+      "special_blocker": null
+    },
+    {
+      "category": "rec",
+      "native_leaders": [
+        {
+          "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1",
+          "product": "lower_median",
+          "history": "H-MULTI",
+          "current_n": 2118,
+          "native_error": 1.2455146364494807,
+          "metric": "mae",
+          "matching_retained_contract_views": 2,
+          "current_seven_week_contract_views": 0,
+          "witnesses": [],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        },
+        {
+          "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2",
+          "product": "lower_median",
+          "history": "H-MULTI",
+          "current_n": 2118,
+          "native_error": 1.2455146364494807,
+          "metric": "mae",
+          "matching_retained_contract_views": 1,
+          "current_seven_week_contract_views": 0,
+          "witnesses": [],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        }
+      ],
+      "actual_line_status": "NewG0/G1 <=2scoredweeks; prior exact procedure/policy/source/horizon continuity must be verified separately",
+      "special_blocker": null
+    },
+    {
+      "category": "rec_yd",
+      "native_leaders": [
+        {
+          "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2",
+          "product": "lower_median",
+          "history": "H-MULTI",
+          "current_n": 2118,
+          "native_error": 16.18932955618508,
+          "metric": "mae",
+          "matching_retained_contract_views": 1,
+          "current_seven_week_contract_views": 0,
+          "witnesses": [],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        }
+      ],
+      "actual_line_status": "Existing source-specific two/three-week panels retained; no numerical-to-selection week borrowing",
+      "special_blocker": null
+    },
+    {
+      "category": "rush_rec_yd",
+      "native_leaders": [
+        {
+          "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+          "product": "absolute_error_point",
+          "history": "H-MULTI",
+          "current_n": 2118,
+          "native_error": 20.125661066525677,
+          "metric": "mae",
+          "matching_retained_contract_views": 12,
+          "current_seven_week_contract_views": 2,
+          "witnesses": [
+            {
+              "qualification_id": "B5W-cec34307b85019683401",
+              "horizon": null,
+              "population": "extended",
+              "position": "ALL",
+              "weeks": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "source_vintage": "current_vintage_reconstruction; kickoff+7day assumed availability; weekly fitting and per-game query features"
+            },
+            {
+              "qualification_id": "B5W-11f081fe4db472904e48",
+              "horizon": null,
+              "population": "primary",
+              "position": "ALL",
+              "weeks": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "source_vintage": "current_vintage_reconstruction; kickoff+7day assumed availability; weekly fitting and per-game query features"
+            }
+          ],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        },
+        {
+          "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+          "product": "point_choice_policy",
+          "history": "H-MULTI",
+          "current_n": 2118,
+          "native_error": 20.125661066525677,
+          "metric": "mae",
+          "matching_retained_contract_views": 2,
+          "current_seven_week_contract_views": 0,
+          "witnesses": [],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        },
+        {
+          "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+          "product": "point_choice_policy",
+          "history": "H-MULTI",
+          "current_n": 2118,
+          "native_error": 20.125661066525677,
+          "metric": "mae",
+          "matching_retained_contract_views": 2,
+          "current_seven_week_contract_views": 0,
+          "witnesses": [],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        }
+      ],
+      "actual_line_status": "Existing source-specific two/three-week panels retained; no numerical-to-selection week borrowing",
+      "special_blocker": null
+    },
+    {
+      "category": "anytime_td",
+      "native_leaders": [
+        {
+          "procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+          "product": "log_loss_probability",
+          "history": "H-MULTI",
+          "current_n": 2118,
+          "native_error": 0.14314429954020047,
+          "metric": "brier",
+          "matching_retained_contract_views": 10,
+          "current_seven_week_contract_views": 2,
+          "witnesses": [
+            {
+              "qualification_id": "B5W-7431fcc0c8e31a2b2b68",
+              "horizon": null,
+              "population": "extended",
+              "position": "ALL",
+              "weeks": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "source_vintage": "current_vintage_reconstruction; kickoff+7day assumed availability; weekly fitting and per-game query features"
+            },
+            {
+              "qualification_id": "B5W-b17de4322e5dbbbefde6",
+              "horizon": null,
+              "population": "primary",
+              "position": "ALL",
+              "weeks": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "source_vintage": "current_vintage_reconstruction; kickoff+7day assumed availability; weekly fitting and per-game query features"
+            }
+          ],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        },
+        {
+          "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+          "product": "event_probability_policy",
+          "history": "H-MULTI",
+          "current_n": 2118,
+          "native_error": 0.14314429954020047,
+          "metric": "brier",
+          "matching_retained_contract_views": 2,
+          "current_seven_week_contract_views": 0,
+          "witnesses": [],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        },
+        {
+          "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+          "product": "event_probability_policy",
+          "history": "H-MULTI",
+          "current_n": 2118,
+          "native_error": 0.14314429954020047,
+          "metric": "brier",
+          "matching_retained_contract_views": 2,
+          "current_seven_week_contract_views": 0,
+          "witnesses": [],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        }
+      ],
+      "actual_line_status": "Existing source-specific two/three-week panels retained; no numerical-to-selection week borrowing",
+      "special_blocker": "No matching offered event"
+    },
+    {
+      "category": "nick-chart-ppr-v1",
+      "native_leaders": [
+        {
+          "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2",
+          "product": "lower_median",
+          "history": "H-MULTI",
+          "current_n": 2359,
+          "native_error": 4.490360322170411,
+          "metric": "mae",
+          "matching_retained_contract_views": 1,
+          "current_seven_week_contract_views": 0,
+          "witnesses": [],
+          "scope": "Retained numerical/event-score week evidence only; not actual-line/TopPick or full target/operational admission."
+        }
+      ],
+      "actual_line_status": "Existing source-specific two/three-week panels retained; no numerical-to-selection week borrowing",
+      "special_blocker": "Partial chart labels cannot establish complete exact Nick chart contract"
+    }
+  ],
+  "qualification_is_not_release": true
+}

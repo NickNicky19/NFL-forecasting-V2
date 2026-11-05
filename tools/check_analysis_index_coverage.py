@@ -2,12 +2,43 @@
 """Validate derived comparisons and default score-version bindings, without NFL rows."""
 import collections
 import csv
+import gzip
 import hashlib
 import json
 import math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def bound_comparison_histories(original, contrast, carry=False):
+    """History contrasts and complete-procedure contrasts are different axes.
+
+    Keep legacy history-contrast consistency. A descriptive procedure/policy
+    contrast may instead carry explicit source histories, provided its distinct
+    comparator/product and scope are bound. The later field comparison still
+    requires exact equality between every source and projected history.
+    """
+    if carry:
+        return original['history_regime'], original.get('comparator_history_regime')
+    parsed=contrast.split('_MINUS_')
+    if len(parsed)!=2:
+        raise ValueError('Comparison contrast must identify two arms')
+    h,c=original['history_regime'],original.get('comparator_history_regime')
+    if c is not None and(not isinstance(c,str)or not c.strip()):
+        raise ValueError('Explicit comparator history must be a nonblank string or null')
+    if not isinstance(c,str)or not c or tuple(parsed)==(h,c):
+        return parsed
+    if any(arm.startswith('H-')for arm in parsed):
+        raise ValueError('Encoded history contrast conflicts with explicit source histories')
+    proc=original.get('candidate_procedure_id',original.get('procedure_id'))
+    product=original.get('candidate_product_id',original.get('product_id'))
+    fields=(h,proc,product,original.get('comparator_procedure_id'),
+            original.get('comparator_product_id'),original.get('history_limit'))
+    if (any(not isinstance(v,str)or not v.strip()for v in fields)
+            or (original['comparator_procedure_id']==proc and original['comparator_product_id']==product)):
+        raise ValueError('Descriptive comparison lacks explicit complete-procedure binding')
+    return h,c
 
 
 def read_bound(binding, path_key="path"):
@@ -17,6 +48,13 @@ def read_bound(binding, path_key="path"):
     body = (ROOT / path).read_bytes()
     if hashlib.sha256(body).hexdigest() != binding["sha256"]:
         raise ValueError("Changed bound artifact: " + str(path))
+    if binding.get('compression') is not None:
+        if binding['compression']!='gzip':
+            raise ValueError('Unsupported bound analysis compression')
+        body=gzip.decompress(body)
+        if (len(body)!=binding.get('uncompressed_bytes')
+                or hashlib.sha256(body).hexdigest()!=binding.get('uncompressed_sha256')):
+            raise ValueError('Changed decompressed bound analysis artifact')
     return body
 
 
@@ -105,7 +143,7 @@ def main():
         proc = original.get("candidate_procedure_id", original.get("procedure_id"))
         product = original.get("candidate_product_id", original.get("product_id"))
         contrast = original.get("comparison", original.get("contrast"))
-        histories = (original["history_regime"], original.get("comparator_history_regime")) if carry else contrast.split("_MINUS_")
+        histories = bound_comparison_histories(original, contrast, carry)
         expected = {
             "source_artifact_sha256": source_hashes[source],
             "procedure_id": proc, "product_id": product,

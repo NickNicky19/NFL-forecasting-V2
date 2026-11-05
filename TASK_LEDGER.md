@@ -1,3 +1,18 @@
+# Current post-wave B queue — POST-WAVE-5W-v1
+
+Completed [controlled reliability diagnosis/ranker and C111RBmatching](reports/post-wave-5w-v1/B_POST_WAVE_REPORT_FINAL_V3.md); no completed football studies refit. Newranker5fits/348170privatebytes, negative/inconclusive results, not primary eligible (2rec/1PTweeks). Five-week floor is exact-product policy; zero selectionsN/A and0scoredweeks. Native and original selection/history evidence unchanged. CountAexactmean/P1has7reportedweeks but currentproducer/output/correctorparity and ownerack remain absent. B writes noA/production/Csharedstate.
+
+| Owner | Next finite action / actual state |
+|---|---|
+| C intake | Consume B immutable newranker/111RB/prod-week contribution; C alone marks admission. PriorB@d835 now received7413/7893records with2444selection triads admitted for owner-local aggregate arithmetic;480cohortviews still need C intake. Newwave/private inference remain unadmitted. |
+| B next-origin | Need permitted genuinely earlier B0exact-line probability output/model/input source and existingcapture admission. Point-only incumbent packet is insufficient; no newcollector/scheduler/credit use. NewG1may shadow only after own retention/input checks; no proposed primary promotion from failures. |
+| A CountAproducer | Publish exact existingmean-corrector/current-query export with realclocks, role/side/rank/fallback/expiry and retained parity; originalowner receipt/admission. Publiclab-stateW9route absent at pinned275aa84complete tree; not proofmodelmissing. No duplicateBrestore/fit. |
+| B history/recovery | Lastverified38parts/796917760bytes missing. Missing-only upload after actualprovider/capacity change; fullfreshrestore/hashes before governed largefits.147originalstrictHGBorigins/736olderexactD1D2cells still depend on originalsource/model/archive recovery. No unchangedretry; baseLeaf cannot fill exactD1D2. |
+| Source owners | Complete eligible earlier-week/annual actual thresholds/clocks and exactorigin inputs. Missing prices do not blocklinegrading; no fakeclosing/synthetic lines or blanket original-pick blocker. Existing source gap map retained. |
+| Owner capture | Nov4 21:03:37generate/21:03:39capture/21:03:44persist incumbent2573rows;24Top12O12U across11games; servedhashesmatch,0researchrows. ExistingNov5 14:06UTC schedule isconfigured, notobserved executed; Bdoesnotdispatch. |
+
+Five-week inventory v1uppercaseALLscopebug and v2/v3corrections are retained; all old source/metadata/setup failures, original804score bytes and captures remain immutable. No newscientificsignificancefloor, longerfuturewait, profitability requirement, ownerlease or productionpolicy change is created. Older ledger entries below remain historical records.
+
 # Current B mechanism checkpoint — November 4
 
 ABC-PREDICTIVE-IMPROVEMENT-01 remains additive. [Executed local wave](reports/abc-predictive-improvement-01/b-intercept-v1/B_PREDICTIVE_IMPROVEMENT_REPORT.md): sixscalarinterceptfits, rec194/337→195/337withworseBrier, PT14/26tie/very smallBriergainstilllosingneutral. BothB2policieslosematchedconstants. Confidence90%gateempty;N/Aaccuracy,TARGET_NOT_ESTABLISHED. Zerofootballfits/inference/neworiginalcaptures. Allsame-methodsides,14additionalpolicy/frozencohortcrossings,145borrowedpointviewsseparatelytyped,originalcaptures/losses/failedsetupsandmetadataversionspreserved.

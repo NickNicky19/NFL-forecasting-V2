@@ -1,0 +1,31 @@
+{
+  "state": "EXISTING_PUBLISHED480COHORTVIEWS_AVAILABLE_READBACK_VERIFIED;C_RECEIPT_NOT_YET_VERIFIED",
+  "evaluated_at_utc": "2026-11-05T01:00:18.905357+00:00",
+  "C_publication_ref": "3c3199209cc9bcf5bdffbdedb230dac1262004e9",
+  "C_reported_unreceived_views": 480,
+  "artifacts": [
+    {
+      "producer_commit": "7d286572aa41db434d93b7619f4bf1a6b0e33ad4",
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/COMMON_COHORT_SCORES.json",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/7d286572aa41db434d93b7619f4bf1a6b0e33ad4/reports/abc-predictive-improvement-01/b-intercept-v1/COMMON_COHORT_SCORES.json",
+      "bytes": 1956878,
+      "sha256": "900af8e69d75bd534240c7db86e155ea63b266458bfb60817be93e0f76ff093e",
+      "readback_verified": true,
+      "records_or_rows": 480
+    },
+    {
+      "producer_commit": "7d286572aa41db434d93b7619f4bf1a6b0e33ad4",
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/COMMON_COHORT_SCORES_SOURCE_CLOCK_AND_ATTRIBUTION_ANNOTATIONS_V3.json",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/7d286572aa41db434d93b7619f4bf1a6b0e33ad4/reports/abc-predictive-improvement-01/b-intercept-v1/COMMON_COHORT_SCORES_SOURCE_CLOCK_AND_ATTRIBUTION_ANNOTATIONS_V3.json",
+      "bytes": 587288,
+      "sha256": "403977b705cb043965822351f5a7c737dff48f7b0eaf710dee47f858279417a9",
+      "readback_verified": true,
+      "records_or_rows": 480
+    }
+  ],
+  "concrete_owner_action": "C fetches these existing immutable source and bound source-clock/attribution annotation files, validates SHA256/source_score_sha256, then records actual intake/disposition. No B refit/replay/repackaging, permission change or credential is required.",
+  "original_C_receipt_limit_preserved": true,
+  "new_fits": 0,
+  "new_scores": 0,
+  "new_NFL_observations": 0
+}

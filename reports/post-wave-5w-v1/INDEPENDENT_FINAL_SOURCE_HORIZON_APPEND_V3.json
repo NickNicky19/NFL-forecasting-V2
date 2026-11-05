@@ -1,0 +1,60 @@
+{
+  "state": "PASS_493_LABEL_PROJECTION_EXPORT_COMPANION_BINDING_PENDING",
+  "at_utc": "2026-11-05T01:17:53.413315+00:00",
+  "qualification_sha256": "533151037c50222fc060e4b7b25f13caf05bb3d4ad3ce79bbe3e6b8083b2edd5",
+  "current_index_manifest": "reports/post-wave-5w-v1/results-index-v4/INDEX_MANIFEST.json",
+  "current_index_manifest_sha256": "93d6f6d03fe3de0659385e6e3a2995afba931a29b86a7e19d46f58f0612a42bc",
+  "current_results_pointer_sha256": "54746e13825042348accedf255ed7280e80e8e93bb4d40a04f13bae331fc8021",
+  "accepted_prior_records_unchanged": 602201,
+  "appended_records": 1510,
+  "total_records": 603711,
+  "exact_same_appended_test_IDs": true,
+  "qualified_metadata_rows": 493,
+  "rows_by_category": {
+    "pass_td": 25,
+    "rush_yd": 468
+  },
+  "PT_development_explicit_week6_rows": 23,
+  "PT_development_empty_context_only_rows_no_week_credit": 2,
+  "only_changed_normalized_fields": [
+    "horizon",
+    "reporting_metadata_provenance"
+  ],
+  "every_metric_count_raw_source_and_selection_unchanged": true,
+  "source_and_annotation_bindings": [
+    {
+      "source_artifact": "reports/post-wave-5w-v1/b-confidence-ordering-v1/SCORES.json",
+      "source_sha256": "0482ebfe4d16370116f8b053b7302b0e870be1ed11afeb625a0bd52d40f709b4",
+      "annotation_artifact": "reports/post-wave-5w-v1/b-confidence-ordering-v1/SOURCE_HORIZON_QUALIFICATION_V2.json",
+      "annotation_sha256": "52ab2e08d44c69d2062198f5506f2616c8da66437ef97281c3af79703190b3ce",
+      "qualified_rows": 25
+    },
+    {
+      "source_artifact": "reports/post-wave-5w-v1/B-111-RB-common-mask-v3/SCORES.json",
+      "source_sha256": "6434ec811f2cc18297b28d319d2bae19a05134860d72f1a61dff68b86ea689a3",
+      "annotation_artifact": "reports/post-wave-5w-v1/B-111-RB-common-mask-v3/SOURCE_HORIZON_QUALIFICATION_V2.json",
+      "annotation_sha256": "c5a8c14c4f5a00e5cef19ba415289608727270005c18842f8abaa649fa3d0e1c",
+      "qualified_rows": 468
+    }
+  ],
+  "prior_source_clock_receipt_sha256": "b900cb1c6f52faff539b800120dca140d2899bb2c646c2ca0dc18467b777d337",
+  "prior_RB_identity_clock_receipt_sha256": "7464e793a78c779bfd6e99acfa123d6386e0bf428116f66f8ee6fed35dd85703",
+  "original_V1_sidecars_preserved_and_only_exact_record_IDs_added": true,
+  "compressed_paired_records_unchanged": 19336,
+  "compressed_paired_original_sha256": "8b017e23e648724ee703434f918dfe27eab80e3dec769d6f1fe47f1d2323d207",
+  "report_sha256": "501fc2ef1d7485a2f875ea125e6b1c04615ab16c981e0126d09858ed6dd8193d",
+  "export_sidecar_path_and_hash_bindings_present": {
+    "reports/post-wave-5w-v1/b-confidence-ordering-v1/SOURCE_HORIZON_QUALIFICATION_V2.json": false,
+    "reports/post-wave-5w-v1/B-111-RB-common-mask-v3/SOURCE_HORIZON_QUALIFICATION_V2.json": false
+  },
+  "export_sha256": "81a9737a278882736b7d98054a559cef5137b9aeedc7fd0a424ec6a0f797054f",
+  "new_fits": 0,
+  "new_scores": 0,
+  "new_NFL_observations": 0,
+  "limits": [
+    "PTdevelopment uses retained W6 known-target-time reconstructed baseline rows, not originalW8basecapture. Twoempty development bins retain zero scored weeks; the defaultindex changes no actual row clocks.",
+    "RB111row cutoff/feature metadata was independently checked against boundCkickoff records; last-recorded quote timestamps do not authenticate closing/executable offers.",
+    "RawSCORES retain original labels for audit; consumers must apply these exact companion annotations. Score values, procedureIDs, samples and five-week gates are unchanged.",
+    "Any absent export companion path/hash remains a precise delivery task; local qualifiedindex alone is not Cintake/admission."
+  ]
+}

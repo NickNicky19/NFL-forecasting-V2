@@ -1,7 +1,7 @@
 {
   "schema": "v2-current-public-index-pointer-v2",
-  "manifest": "reports/abc-predictive-improvement-01/b-intercept-v1/results-index-v5/INDEX_MANIFEST.json",
-  "previous_checkpoint": "reports/abc-championship/leaf-law-continuation-20261104-v2/results-index-v1/INDEX_MANIFEST.json",
+  "manifest": "reports/post-wave-5w-v1/results-index-v4/INDEX_MANIFEST.json",
+  "previous_checkpoint": "reports/abc-predictive-improvement-01/b-intercept-v1/results-index-v5/INDEX_MANIFEST.json",
   "previous_unchanged": true,
   "manifest_role": "ALL_AUDIT_IMMUTABLE_BACKWARD_COMPATIBLE",
   "default_view": "CURRENT_CANONICAL_SCORE_VERSIONS",
@@ -18,10 +18,10 @@
     "sha256": "f7b540ccf688bb77672646b7a0af162f987a9669d836a4f44651e497205803d8"
   },
   "derived_comparison_manifest": {
-    "path": "reports/abc-predictive-improvement-01/b-intercept-v1/paired-analysis-index-v1/ANALYSIS_MANIFEST.json",
-    "sha256": "d4d10fee719a951cbcccbee30520e70dccf03a7f32e7ca1568cad6b58213c90b"
+    "path": "reports/post-wave-5w-v1/paired-analysis-index-gzip-v2/ANALYSIS_MANIFEST.json",
+    "sha256": "f4bfd3afa52400b99a14bccfbe00bd32cab7fc2e1625e12ebed2ee418c0dfe16"
   },
-  "readable_checkpoint": "reports/abc-predictive-improvement-01/b-intercept-v1/B_PREDICTIVE_IMPROVEMENT_REPORT.md",
+  "readable_checkpoint": "reports/post-wave-5w-v1/B_POST_WAVE_REPORT_FINAL_V3.md",
   "software_verification_manifest": {
     "path": "reports/week8-grading-20261102l/software/SOFTWARE_VERIFICATION_MANIFEST_V1.json",
     "sha256": "fc322f84ca2d46d9d09038517498567203816ff59f730f557b07029104317db3"
@@ -44,8 +44,8 @@
     "sha256": "d940bf4d9a497fa2d31c4894e87a084daf423f2a43704f8c15914ea103dbf318"
   },
   "upcoming_capture_status": {
-    "path": "reports/abc-predictive-improvement-01/b-intercept-v1/CURRENT_OWNER_STATUS.json",
-    "sha256": "3d9f2fd7f1922fe296eac67dffc3bc09b8d3522c56076c67549fa9f6478e89ab"
+    "path": "reports/post-wave-5w-v1/OWNER_CAPTURE_QUALIFICATION_V2.json",
+    "sha256": "094739592e12dce0ca3c3faa9639cf0c6950210b5dd69f02586709f341bc98c7"
   },
   "completion_source_vintages": "Authenticated GitHub source-retention clocks; current/revised football features and labels under disclosed availability reconstruction. These are separate from authenticated as-of NFL publication vintages. Quote, feature, training and decision clocks remain distinct.",
   "category_release_current_policy_status": {
@@ -233,5 +233,71 @@
   "B_local_handoff": {
     "path": "reports/abc-predictive-improvement-01/b-intercept-v1/C_INTAKE_AND_REVIEW_HANDOFF_FINAL_V3.json",
     "sha256": "9db9e7b6fc4f152a53c980caf3ebd6c8e4a2a45e55c42d8963ab0a1e0374553a"
+  },
+  "B_post_wave_scope": "POST-WAVE-5W-v1 B-only contribution: retained confidence diagnosis; one earlier-heldout correctness-ranking mechanism with5fits; same52retained rushing point configs on C111RBmask. No new footballfit/inference/forecast/week/observation. Current804original+12strictlearnedviews,226diagnostics,468RBviews; old804archive preserved audit-only. All losses, failed setup/metadata versions and original captures retained. G1losesrec1/163,PTtie; no90selection and no primary recommendation. New C intake pending.",
+  "B_five_week_policy": {
+    "path": "config/B-product-five-week-floor-v1.json",
+    "sha256": "f13d465ae25b4ee2358896740248ee43aa57633f0d889198872e0c0c8e010eaa"
+  },
+  "B_five_week_contribution": {
+    "path": "reports/post-wave-5w-v1/B-product-week-qualification-v3/RUN_RECEIPT.json",
+    "sha256": "99c3136262e5215afe9652c7024cc2a2e878b2ed44bbb86e8b2bac12daed6c20"
+  },
+  "B_five_week_category_summary": {
+    "path": "reports/post-wave-5w-v1/B_CATEGORY_PRODUCT_QUALIFICATION_SUMMARY.json",
+    "sha256": "95822870e85745d3e0fddcd94b0f2435b8b5a27ccde56fdabb8d55098e9e65bc"
+  },
+  "B_post_wave_canonical_sources": [
+    {
+      "path": "reports/post-wave-5w-v1/b-confidence-ordering-v1/SCORES.json",
+      "sha256": "0482ebfe4d16370116f8b053b7302b0e870be1ed11afeb625a0bd52d40f709b4"
+    },
+    {
+      "path": "reports/post-wave-5w-v1/b-confidence-ordering-v1/context-ranker-v1/SCORES.json",
+      "sha256": "55ff91b061495aee07bc2d598228689276f1a37ca50004fe18c39afe3d281bc3"
+    },
+    {
+      "path": "reports/post-wave-5w-v1/B-111-RB-common-mask-v3/SCORES.json",
+      "sha256": "6434ec811f2cc18297b28d319d2bae19a05134860d72f1a61dff68b86ea689a3"
+    }
+  ],
+  "B_current_C_admission": {
+    "C_ref": "3c3199209cc9bcf5bdffbdedb230dac1262004e9",
+    "B_index_ref": "d835346c2cda1cf7d2ffcfb843b103cbcb489615",
+    "prior_source_records_received": 7413,
+    "prior_source_records_total": 7893,
+    "prior_selection_triads_admitted": 2444,
+    "prior_common_cohort_records_unreceived": 480,
+    "state": "LIMITED_OWNER_LOCAL_AGGREGATE_ARITHMETIC_WITH_BOUND_V3_V4SOURCE_CLOCKS;NO_CURRENT_POST_WAVE_OR_PRIVATE_INFERENCE_ADMISSION",
+    "receipt": "reports/post-wave-5w-v1/C_NEW_PRIOR_WAVE_ADMISSION_RECEIPT.json"
+  },
+  "Count_A_delivery_witness": {
+    "path": "reports/post-wave-5w-v1/COUNT_A_FIVE_WEEK_AND_DELIVERY_WITNESS.json",
+    "sha256": "939512a9c87fe110374414ba2a3b78fed8e5220a191c033b0052d44582813fbb"
+  },
+  "B_post_wave_report_qualification": {
+    "path": "reports/post-wave-5w-v1/REPORT_SCOPE_QUALIFICATION_V2.json",
+    "sha256": "b0671ef7e0af480bfcf635759be46690d180f28ad06983e0f8f603fbbe969258"
+  },
+  "B_recovery_connected_account_check": {
+    "path": "reports/post-wave-5w-v1/RECOVERY_ACCOUNT_CHECK_V1.json",
+    "sha256": "f170ce420426929b43ec3c08299c4999c7f23e5955980b6dc22a21e803b7798f"
+  },
+  "B_closing_handoff_qualification": {
+    "path": "reports/post-wave-5w-v1/REPORT_HANDOFF_QUALIFICATION_FINAL_V3.json",
+    "sha256": "d33c008859c2308f4cc114c3a251aa7f431f243be0bca73f590df60f05abd1d6"
+  },
+  "B_horizon_metadata_qualification": {
+    "path": "reports/post-wave-5w-v1/FINAL_HORIZON_METADATA_QUALIFICATION_V2.json",
+    "sha256": "533151037c50222fc060e4b7b25f13caf05bb3d4ad3ce79bbe3e6b8083b2edd5"
+  },
+  "B_prior_unpublished_metadata_stages": [
+    "reports/post-wave-5w-v1/results-index-v1",
+    "reports/post-wave-5w-v1/results-index-v2",
+    "reports/post-wave-5w-v1/results-index-v3"
+  ],
+  "B_post_wave_final_verification": {
+    "path": "reports/post-wave-5w-v1/CHECKPOINT_FINAL_VERIFICATION_V2.json",
+    "sha256": "5509d59d921dd8516245d10d7c6fff0c0b844bb55e2bbb4a3ece05913299a4b2"
   }
 }

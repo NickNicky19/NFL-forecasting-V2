@@ -1,0 +1,52 @@
+{
+  "kind": "NESTED_CAPTURE_METADATA_COMPLETION_FROM_SAME_RETAINED_BYTES",
+  "evaluated_at_utc": "2026-11-05T00:33:43.759620+00:00",
+  "previous_witness": {
+    "path": "OWNER_CAPTURE_READBACK.json",
+    "sha256": "5776cbfa2cac9669ce6445a78dda871fbc4ac875a4a35ab285cd23af41adb920"
+  },
+  "production_commit": "af8bc14abe4a4148a3f84e6c131775923b5300f4",
+  "capture_id": "bbbb32867fb5150bbed7eea14b3aa95ee42269a0302911369dde3b430cb525c0",
+  "physical_capture_sha256": "ee8f61429cbfc6ad51884514df3937c9a5f371a27d897e3ffba200e3be6d3116",
+  "payload_sha256": "8fbc049a70ccc73aedc22eb9164ba06c2ae26e4c8c626f6d1065d17223cc3d2b",
+  "capture_metadata": {
+    "schema_version": "baseline-capture-classic-v1",
+    "model": "sleeper-matchup-classic-fg-identity-v1",
+    "captured_at": "2026-11-04T21:03:39Z",
+    "forecast_generated_at": "2026-11-04T21:03:37Z",
+    "code_commit": "ca4774885cd09e286d469ec9f89e0138a9b7c07a",
+    "input_sha256": "cb528f5bda7bba86058f8a458b70e9d65917a24bcf6578b579c85e122b2e7268",
+    "evidence_label": "LOCAL_PRE_GAME_CAPTURE_PUBLICATION_NOT_VERIFIED"
+  },
+  "capture_rows": 2573,
+  "published_board_games": 15,
+  "first_game_kickoff": "2026-11-06T01:15Z",
+  "actual_pregame_capture_clock_checks": "PASS_ALL_PUBLISHED_BOARD_GAMES_AND_24_SAVED_TOP_PICKS",
+  "top_picks": {
+    "over": 12,
+    "under": 12,
+    "total": 24,
+    "games": 11,
+    "products": {
+      "reference_point": 24
+    },
+    "sources": {
+      "CURRENT_BASELINE": 24
+    }
+  },
+  "original_site_persistence": "2026-11-04T21:03:44Z",
+  "updater_run": {
+    "id": 41912247259,
+    "state": "COMPLETED_SUCCESS;INDEPENDENT_GITHUB_API_READ",
+    "completed_at": "2026-11-04T21:04:50Z"
+  },
+  "next_nominal_configured_capture": "2026-11-05T14:06:00Z;NOT_YET_EXECUTED_AT_THIS_WITNESS",
+  "selected_research_rows": 0,
+  "new_B_capture": 0,
+  "new_B_model_inference": 0,
+  "limits": [
+    "Original schema local-publication label preserved; subsequent Git persistence and served-byte equality witnessed separately.",
+    "Actual source publication/quote freshness and bookmaker rules remain unverified.",
+    "Configured next schedule is not an execution; B has not dispatched or changed it."
+  ]
+}

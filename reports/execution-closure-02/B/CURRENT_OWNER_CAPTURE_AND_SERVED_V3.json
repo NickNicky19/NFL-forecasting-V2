@@ -1,0 +1,102 @@
+{
+  "kind": "B_READ_ONLY_OWNER_NEW_CAPTURE_AND_SERVED_PAYLOAD_V3",
+  "at_utc": "2026-11-05T23:39:58.038773+00:00",
+  "supersedes_time_specific_status": [
+    "OWNER_CAPTURE_FAILURE_WITNESS_V1.json",
+    "CURRENT_OWNER_SERVED_READBACK_V2.json"
+  ],
+  "old_failure_and_old_capture_retained": true,
+  "production_commit": "fe369c7462e4e4f290727b2d03b696d28ef5454b",
+  "owner_run": {
+    "id": 42129928866,
+    "job_id": 127603655038,
+    "source_commit": "928589be2691f0dc33f107a410e98a05992d9425",
+    "started_at": "2026-11-05T23:30:58Z",
+    "completed_at": "2026-11-05T23:32:58Z",
+    "conclusion": "SUCCESS;regression_generation_capture_persistence_and_deploy_steps_SUCCESS"
+  },
+  "capture_id": "62f80f62519b428422ab53ddd4bf6fea6cdfb7e71ab8f55735c834c39c81b4f4",
+  "capture_file_sha256": "28d4c157bc9bfa20b7cef4e496df170bc0ec8330672e00c23a4a481181bb2509",
+  "capture_payload_sha256": "af77d897bf580dbf0c7df5c5089ed41b2991db0668c316ae4794b18f52179ffc",
+  "capture_metadata": {
+    "schema_version": "baseline-capture-classic-v1",
+    "model": "sleeper-matchup-classic-fg-identity-v1",
+    "captured_at": "2026-11-05T23:32:10Z",
+    "forecast_generated_at": "2026-11-05T23:32:08Z",
+    "code_commit": "928589be2691f0dc33f107a410e98a05992d9425",
+    "input_sha256": "e25d4a8c5dc0d23adc8d2801f370150121acfbf04178926e229c637236fa64fb",
+    "evidence_label": "LOCAL_PRE_GAME_CAPTURE_PUBLICATION_NOT_VERIFIED"
+  },
+  "capture_forecast_rows": 2568,
+  "published_games": 15,
+  "first_kickoff_utc": "2026-11-06T01:15:00+00:00",
+  "T_minus_90_utc": "2026-11-05T23:45:00+00:00",
+  "git_persisted_at_utc": "2026-11-05T23:32:17+00:00",
+  "all_capture_and_top_pick_clocks_pre_first_T90": true,
+  "source_clock_verified_rows": 0,
+  "served_pairs": [
+    {
+      "path": "output/data/week.json",
+      "bytes": 2361659,
+      "git_sha256": "e25d4a8c5dc0d23adc8d2801f370150121acfbf04178926e229c637236fa64fb",
+      "served_sha256": "e25d4a8c5dc0d23adc8d2801f370150121acfbf04178926e229c637236fa64fb",
+      "equal": true
+    },
+    {
+      "path": "output/data/weekly-selected-rankings.json",
+      "bytes": 474,
+      "git_sha256": "baf857f399bbd804ce64217d9fa11a6a5273b3e5706b60adf17eca0f69a2fdca",
+      "served_sha256": "baf857f399bbd804ce64217d9fa11a6a5273b3e5706b60adf17eca0f69a2fdca",
+      "equal": true
+    },
+    {
+      "path": "output/data/weekly-selected-rankings/b74a517ce7b5a0a9fda36b65cf5a191fb18cb56299eef7c0d6e590a8786be91a.json",
+      "bytes": 11849,
+      "git_sha256": "b74a517ce7b5a0a9fda36b65cf5a191fb18cb56299eef7c0d6e590a8786be91a",
+      "served_sha256": "b74a517ce7b5a0a9fda36b65cf5a191fb18cb56299eef7c0d6e590a8786be91a",
+      "equal": true
+    },
+    {
+      "path": "output/data/weekly-adaptive-overlay.json",
+      "bytes": 333,
+      "git_sha256": "da22161dd8eadf578601fd3b7f453dcea1992b0c6a0b3ecdf75920a9775498ac",
+      "served_sha256": "da22161dd8eadf578601fd3b7f453dcea1992b0c6a0b3ecdf75920a9775498ac",
+      "equal": true
+    },
+    {
+      "path": "output/data/weekly-adaptive/2ea7e91f77c7cc04c8de28a46da4eacd730bc067853c1e9c80695996f3df74a9.json",
+      "bytes": 790,
+      "git_sha256": "2ea7e91f77c7cc04c8de28a46da4eacd730bc067853c1e9c80695996f3df74a9",
+      "served_sha256": "2ea7e91f77c7cc04c8de28a46da4eacd730bc067853c1e9c80695996f3df74a9",
+      "equal": true
+    }
+  ],
+  "overlay_state": "DISABLED_USE_R0",
+  "selected_research_rows": 0,
+  "top_picks": {
+    "over": 12,
+    "under": 12,
+    "total": 24,
+    "games": 12,
+    "products": {
+      "reference_point": 24
+    },
+    "sources": {
+      "CURRENT_BASELINE": 24
+    },
+    "model_versions": {
+      "sleeper-matchup-classic-fg-identity-v1": 24
+    },
+    "prepared_at": "2026-11-05T23:32:17.004136+00:00",
+    "policy": "selected-projection-gap-classic-v1"
+  },
+  "new_B_capture_or_forecasts": 0,
+  "B_production_mutations": 0,
+  "new_model_admission": false,
+  "limits": [
+    "Owner executed existing operation independently; B only inspected. No causal credit for this recovery claimed.",
+    "Servedpayloadbytes verified, not newBbrowserrenderverification.",
+    "Ownercapture selfdeclared source-vintage label preserved;actualfootball-source/quote clocksandsettlementremainunauthenticated.",
+    "Newcurrentbaselinecapture is not CountAfeed, Bchallenger release or changedTopPicksqualification."
+  ]
+}

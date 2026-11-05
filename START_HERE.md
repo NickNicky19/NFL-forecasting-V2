@@ -1,3 +1,5 @@
+**Latest owner execution, November5 23:32UTC:** the owner recovered its existing updater and captured2,568referenceforecasts/15games beforethe23:45UTCdeadline. FivepinnedGit/servedpayloadpairs match;24TopPicks12O12Uremainincumbent,0researchrows. [Current read-only B witness](reports/execution-closure-02/B/CURRENT_OWNER_STATUS.md). Earlier failure and capture notices below remain historical, not the current execution status. Bdidnotdispatch orchangeproduction.
+
 # Current B execution closure — November 5 CST / UTC
 
 [Executed closure checkpoint](reports/execution-closure-02/B/B_EXECUTED_CLOSURE_CHECKPOINT_V1.md):21 restored origin models reproduce all5,756mean/median values on2,878existing queries; independent primitive/source checks pass, no forecasting arithmetic defect found in scope. Nine short-alias duration rows corrected without changing scores;63savedselector decisions supply seven numerical-week witnesses for9exactpolicies. No newfits, issuedforecasts, NFLweeks, TopPicksreplay or productionwrite.

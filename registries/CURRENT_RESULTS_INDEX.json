@@ -1,25 +1,25 @@
 {
   "schema": "v2-current-public-index-pointer-v2",
-  "manifest": "reports/post-wave-5w-v1/results-index-v4/INDEX_MANIFEST.json",
-  "previous_checkpoint": "reports/abc-predictive-improvement-01/b-intercept-v1/results-index-v5/INDEX_MANIFEST.json",
+  "manifest": "reports/audit-remediation-20261105-v1/B/results-index-v1/INDEX_MANIFEST.json",
+  "previous_checkpoint": "reports/post-wave-5w-v1/results-index-v4/INDEX_MANIFEST.json",
   "previous_unchanged": true,
   "manifest_role": "ALL_AUDIT_IMMUTABLE_BACKWARD_COMPATIBLE",
-  "default_view": "CURRENT_CANONICAL_SCORE_VERSIONS",
+  "default_view": "CURRENT_CANONICAL_SCORE_VERSIONS_WITH_SCOPED_RECOMMENDATION_HOLDS",
   "default_score_version_manifest": {
     "path": "reports/continuation-20261030d/current-ranking-v2/current-valid-results/CURRENT_MANIFEST.json",
     "sha256": "3d4f226156cfa492216b0aff0c187db9cdb6913e3b0f32a5b842034e58cbbd57"
   },
   "procedure_rankings": {
-    "path": "reports/continuation-20261030d/current-ranking-v2/PROCEDURE_RANKINGS.json",
-    "sha256": "9f24f64ab8c004e42ed504da2cf8fb09287807b79bfe4d62f30db7b98f66d6a6"
+    "path": "reports/audit-remediation-20261105-v1/B/hold-overlay-v3/PROCEDURE_RANKINGS.json",
+    "sha256": "49af870cd3be5f9b9f88039d8e6a9380f941a61aac1180b4cb90565a8c36a8ca"
   },
   "top_five_rankings": {
     "path": "reports/continuation-20261030d/current-ranking-v2/TOP5_BY_CATEGORY_PRODUCT.json",
     "sha256": "f7b540ccf688bb77672646b7a0af162f987a9669d836a4f44651e497205803d8"
   },
   "derived_comparison_manifest": {
-    "path": "reports/post-wave-5w-v1/paired-analysis-index-gzip-v2/ANALYSIS_MANIFEST.json",
-    "sha256": "f4bfd3afa52400b99a14bccfbe00bd32cab7fc2e1625e12ebed2ee418c0dfe16"
+    "path": "reports/audit-remediation-20261105-v1/B/paired-analysis-index-v1/ANALYSIS_MANIFEST.json",
+    "sha256": "90ec29aef628c1813eb17573e2350fcf5829d096758acc8e082c0e57b406eae0"
   },
   "readable_checkpoint": "reports/post-wave-5w-v1/B_POST_WAVE_REPORT_FINAL_V3.md",
   "software_verification_manifest": {
@@ -44,8 +44,8 @@
     "sha256": "d940bf4d9a497fa2d31c4894e87a084daf423f2a43704f8c15914ea103dbf318"
   },
   "upcoming_capture_status": {
-    "path": "reports/post-wave-5w-v1/OWNER_CAPTURE_QUALIFICATION_V2.json",
-    "sha256": "094739592e12dce0ca3c3faa9639cf0c6950210b5dd69f02586709f341bc98c7"
+    "path": "reports/audit-remediation-20261105-v1/B/OWNER_PRESENCE_SAFE_PACKET_READBACK_V1.json",
+    "sha256": "4c5a9cfc6d3528e754a421ce76a829601d77d39542993192efcd71f2ed4a6779"
   },
   "completion_source_vintages": "Authenticated GitHub source-retention clocks; current/revised football features and labels under disclosed availability reconstruction. These are separate from authenticated as-of NFL publication vintages. Quote, feature, training and decision clocks remain distinct.",
   "category_release_current_policy_status": {
@@ -122,8 +122,8 @@
     "sha256": "dd79f5e72b88cdc88f2a458db8cec53c2051554225be32e738e1ee1555e97d6b"
   },
   "week8_original_side_table": {
-    "path": "reports/week8-grading-20261102l/checkpoint-summary-v1/TABLE_A_ORIGINAL_CATEGORY.json",
-    "sha256": "e90295e26b36dea8fa15cebe8e413cdbf83e6f108fc3c4fcba96098979622657"
+    "path": "reports/audit-remediation-20261105-v1/B/TABLE_A_PRESERVED_ORIGINAL_WEEK8.json",
+    "sha256": "c850312a5a3c83ae470460d819be4989cfabfd4953ed5c5fc34820c2cfb55490"
   },
   "week8_saved_top_table": {
     "path": "reports/week8-grading-20261102l/checkpoint-summary-v1/TABLE_B_PRIMARY_TOP_CATEGORY.json",
@@ -299,5 +299,15 @@
   "B_post_wave_final_verification": {
     "path": "reports/post-wave-5w-v1/CHECKPOINT_FINAL_VERIFICATION_V2.json",
     "sha256": "5509d59d921dd8516245d10d7c6fff0c0b844bb55e2bbb4a3ece05913299a4b2"
+  },
+  "recommendation_holds": {
+    "path": "reports/audit-remediation-20261105-v1/B/hold-overlay-v3/CURRENT_RECOMMENDATION_VIEW.json",
+    "sha256": "b1c56695a87cbd444a31a19ccfc8299ccadd713315e5cbced8cb59907e5c35fd"
+  },
+  "audit_remediation_report": "reports/audit-remediation-20261105-v1/B/B_AUDIT_REMEDIATION_REPORT.md",
+  "week8_original_side_table_scope": "Final source datedNovember3, not the November2 partial table previously linked. No grades recomputed.",
+  "B_audit_remediation": {
+    "path": "reports/audit-remediation-20261105-v1/B/B_FINDING_RUNTIME_CONTRIBUTION_V1.json",
+    "sha256": "6138e47356f4dbf15aabb2f1c45f2aef21d3d51228b2dbd65f3340c9275184e3"
   }
 }

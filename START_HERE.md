@@ -1,5 +1,10 @@
 **Latest owner execution, November5 23:32UTC:** the owner recovered its existing updater and captured2,568referenceforecasts/15games beforethe23:45UTCdeadline. FivepinnedGit/servedpayloadpairs match;24TopPicks12O12Uremainincumbent,0researchrows. [Current read-only B witness](reports/execution-closure-02/B/CURRENT_OWNER_STATUS.md). Earlier failure and capture notices below remain historical, not the current execution status. Bdidnotdispatch orchangeproduction.
 
+## Audit remediation — current B checkpoint, November 6 UTC
+
+[Executed findings, final matched availability comparisons, category tables and exact owner actions](reports/audit-remediation-20261105-v1/B/B_AUDIT_REMEDIATION_REPORT.md). Original carry-collapse models and fixed A/B dependencies are held from recommendations; losses remain immutable. Website owner has merged a presence-safe repair; B verified source fixtures and the separate pregame packet/served data. A main history repair is merged, but the registered producer remains an older revision. This is not completion of W1–8 or a research model release. C retains the common finding ledger and evaluator.
+
+
 # Current B execution closure — November 5 CST / UTC
 
 [Executed closure checkpoint](reports/execution-closure-02/B/B_EXECUTED_CLOSURE_CHECKPOINT_V1.md):21 restored origin models reproduce all5,756mean/median values on2,878existing queries; independent primitive/source checks pass, no forecasting arithmetic defect found in scope. Nine short-alias duration rows corrected without changing scores;63savedselector decisions supply seven numerical-week witnesses for9exactpolicies. No newfits, issuedforecasts, NFLweeks, TopPicksreplay or productionwrite.

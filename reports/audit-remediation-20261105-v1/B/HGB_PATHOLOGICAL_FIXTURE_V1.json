@@ -1,0 +1,140 @@
+{
+  "at_utc": "2026-11-06T00:12:02.889895+00:00",
+  "audit_TXT_sha256": "720b464f8077d3a483a4a73245690071866b7757fb6d20763c2ea8d931061795",
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "sklearn": "1.8.0"
+  },
+  "estimator_factory": "nfl_v2.hgb_control.make_estimator",
+  "factory_code_sha256": "13ad5627152d4aed81540f93088b63716acb98a00bce52089a8ec8cbb619cccf",
+  "fixture": {
+    "rows": 1000,
+    "synthetic": true,
+    "target": "0 if x<650 else15; perfectly separating predictor",
+    "x": "arange(1000).reshape(-1,1)",
+    "zero_target_fraction": 0.65
+  },
+  "legitimate_zero_control": {
+    "bias": 0.0,
+    "diagnostic_not_automatic_defect": true,
+    "distinct_finite_outputs": 1,
+    "finite_outputs": 2,
+    "mae": 0.0,
+    "maximum": 0.0,
+    "mean_point_output": 0.0,
+    "minimum": 0.0,
+    "nonzero_actual_rows": 0,
+    "output_rows": 2,
+    "paired_rows": 2,
+    "point_output_frequency_not_forecast_law": true,
+    "unavailable_or_nonfinite_outputs": 0,
+    "zero_outputs": 2
+  },
+  "lost_NFL_accuracy_not_inferred_from_synthetic_fixture": true,
+  "new_NFL_fit_calls": 0,
+  "new_NFL_forecasts": 0,
+  "new_NFL_observations": 0,
+  "new_NFL_test_weeks": 0,
+  "no_library_or_original_forecast_change": true,
+  "outputs": [
+    {
+      "first_split_feature": 0,
+      "first_split_gain": 984.6456549462561,
+      "first_split_threshold": 11.5,
+      "first_tree_nodes": 3,
+      "fitted_iterations": 64,
+      "initial_prediction": 0.0,
+      "loss": "absolute_error",
+      "loss_gradient_at_prediction_zero_for_targets_0_1_10": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "objective": "absolute_error_point",
+      "parameters": {
+        "categorical_features": null,
+        "early_stopping": false,
+        "l2_regularization": 10,
+        "learning_rate": 0.05,
+        "max_bins": 255,
+        "max_depth": 3,
+        "max_iter": 64,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 10,
+        "random_state": 1701
+      },
+      "prediction_vector_sha256": "668946bab9868b28489bb906205ee1026045c8bcd3ca62a1bdf733c65491351b",
+      "profile": {
+        "bias": -5.25,
+        "diagnostic_not_automatic_defect": true,
+        "distinct_finite_outputs": 1,
+        "finite_outputs": 1000,
+        "mae": 5.25,
+        "maximum": 0.0,
+        "mean_point_output": 0.0,
+        "minimum": 0.0,
+        "nonzero_actual_rows": 350,
+        "output_rows": 1000,
+        "paired_rows": 1000,
+        "point_output_frequency_not_forecast_law": true,
+        "unavailable_or_nonfinite_outputs": 0,
+        "zero_outputs": 1000
+      }
+    },
+    {
+      "first_split_feature": 0,
+      "first_split_gain": 49769.622770218164,
+      "first_split_threshold": 650.5,
+      "first_tree_nodes": 3,
+      "fitted_iterations": 64,
+      "initial_prediction": 5.25,
+      "loss": "squared_error",
+      "loss_gradient_at_prediction_zero_for_targets_0_1_10": [
+        0.0,
+        -1.0,
+        -10.0
+      ],
+      "objective": "squared_error_mean",
+      "parameters": {
+        "categorical_features": null,
+        "early_stopping": false,
+        "l2_regularization": 10,
+        "learning_rate": 0.05,
+        "max_bins": 255,
+        "max_depth": 3,
+        "max_iter": 64,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 10,
+        "random_state": 1701
+      },
+      "prediction_vector_sha256": "d946a2647817a79d343e912aada248d9ab027bc294150438660e72822e29c79e",
+      "profile": {
+        "bias": -0.005768126303196667,
+        "diagnostic_not_automatic_defect": true,
+        "distinct_finite_outputs": 4,
+        "finite_outputs": 1000,
+        "mae": 0.3002570502572246,
+        "maximum": 14.59411316437296,
+        "mean_point_output": 5.244231873696805,
+        "minimum": 0.2083608218944433,
+        "nonzero_actual_rows": 350,
+        "output_rows": 1000,
+        "paired_rows": 1000,
+        "point_output_frequency_not_forecast_law": true,
+        "unavailable_or_nonfinite_outputs": 0,
+        "zero_outputs": 0
+      }
+    }
+  ],
+  "reproduction_code_sha256": "eeee71e6eaa2bbf1f7561e27de4d13aa97c203def4268726db8711dd0c7bfb04",
+  "resources": {
+    "cpu_seconds": 0.22881861100000034,
+    "max_threads": 2,
+    "peak_rss_bytes": 132083712,
+    "wall_seconds": 0.1516568869992625
+  },
+  "schema": "B-report-specified-HGB-software-counterexample-v1",
+  "software_fit_calls": 2,
+  "state": "REPRODUCED_KNOWN_L1_LEARNING_PATHOLOGY_NOT_A_SUCCESSFUL_LEARNER"
+}

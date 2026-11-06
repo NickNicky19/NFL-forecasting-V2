@@ -5,6 +5,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from nfl_v2.comparison_reporting import comparison_fields
 from nfl_v2.result_index import is_championship_eligible
+from nfl_v2.recommendation_holds import recommendation_hold
 from tools.build_test_index import category_slug
 BASE=ROOT/'reports/continuation-20261030d'
 OUT=BASE/'current-ranking-v2'
@@ -59,7 +60,7 @@ def main():
     seen.add(r['test_id'])
     if r['kind']=='software_verification':software.append(r['test_id']);continue
     if not is_championship_eligible(r):
-     by_reason['OUTCOME_CONDITIONED_DIAGNOSTIC_ONLY']+=1;continue
+     by_reason[recommendation_hold(r) or 'OUTCOME_CONDITIONED_DIAGNOSTIC_ONLY']+=1;continue
     if r['test_id']in excluded:
      x=excluded[r['test_id']]
      if r['source_artifact']!=x['source_artifact']or r['source_artifact_sha256']!=x['source_artifact_sha256']:raise ValueError('exclusion source binding changed')
@@ -85,7 +86,7 @@ def main():
   if f:f.close()
  if set(excluded)-seen:raise ValueError('exclusion is not in the audit index')
  idpath=out/'CURRENT_RECORD_IDS.json';save(idpath,ids)
- manifest=dict(schema='v2-current-canonical-score-selection-v1',default_view='CURRENT_CANONICAL_SCORE_VERSIONS',audit_manifest=policy['audit_manifest'],audit_manifest_sha256=sha(audit),exclusion_manifest=recommendation.relative_to(ROOT).as_posix(),exclusion_manifest_sha256=sha(recommendation),audit_records=parent['record_count'],selected_evaluation_views=len(ids),excluded_evaluation_views=len(excluded)+by_reason.get('OUTCOME_CONDITIONED_DIAGNOSTIC_ONLY',0),software_receipts_separate=len(software),by_exclusion_reason=dict(by_reason),by_evidence=dict(by_evidence),selected_ids=dict(path=idpath.relative_to(ROOT).as_posix(),sha256=sha(idpath)),csv_parts=parts,semantics='Versionselectiononly;reported/unreproduced/reference/offer/population/horizonpanelsremainseparate.Noglobalpoolingorclaimthatallretainedrecordsarequalifiedfortournament.Originalauditscores/shardsunchanged.')
+ manifest=dict(schema='v2-current-canonical-score-selection-v1',default_view='CURRENT_CANONICAL_SCORE_VERSIONS',audit_manifest=policy['audit_manifest'],audit_manifest_sha256=sha(audit),exclusion_manifest=recommendation.relative_to(ROOT).as_posix(),exclusion_manifest_sha256=sha(recommendation),audit_records=parent['record_count'],selected_evaluation_views=len(ids),excluded_evaluation_views=sum(by_reason.values()),software_receipts_separate=len(software),by_exclusion_reason=dict(by_reason),by_evidence=dict(by_evidence),selected_ids=dict(path=idpath.relative_to(ROOT).as_posix(),sha256=sha(idpath)),csv_parts=parts,semantics='Versionselectiononly;reported/unreproduced/reference/offer/population/horizonpanelsremainseparate.Noglobalpoolingorclaimthatallretainedrecordsarequalifiedfortournament.Originalauditscores/shardsunchanged.')
  save(out/'CURRENT_MANIFEST.json',manifest)
  groups=collections.defaultdict(list)
  for r in candidate:groups[r['category'],r['ranking_product'],r['mechanism_id']].append(r)

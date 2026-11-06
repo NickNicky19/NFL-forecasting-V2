@@ -1,0 +1,132 @@
+{
+  "state": "PASS_POST_ALIAS_REPAIR_READ_ONLY_GUARD_AND_FINAL_LABEL_DEPENDENCY_REVIEW",
+  "recommendation_hold_code_sha256": "9955621665b5d02f24f042017f55ed969006d0e7b05cfd84c77269c735125860",
+  "result_index_code_sha256": "80e8d6e306f867f60802c2dfcf250149844db264037efa1eb3791e0a8db63ee0",
+  "guard_cases": [
+    {
+      "case": "original_candidate_alias",
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "expected_hold": "B-AUDIT-C-F1-ORIGINAL-HGB-L1-CARRY-v1",
+      "actual_hold": "B-AUDIT-C-F1-ORIGINAL-HGB-L1-CARRY-v1",
+      "pass_check": true,
+      "rank_eligible": false
+    },
+    {
+      "case": "original_candidate_alias",
+      "procedure_id": "v2-hgb-direct-history-controls-v1:absolute_error_point",
+      "expected_hold": "B-AUDIT-C-F1-ORIGINAL-HGB-L1-CARRY-v1",
+      "actual_hold": "B-AUDIT-C-F1-ORIGINAL-HGB-L1-CARRY-v1",
+      "pass_check": true,
+      "rank_eligible": false
+    },
+    {
+      "case": "original_candidate_alias",
+      "procedure_id": "B::hgb-direct-history-controls-v1:absolute_error_point:known-target-time-v1",
+      "expected_hold": "B-AUDIT-C-F1-ORIGINAL-HGB-L1-CARRY-v1",
+      "actual_hold": "B-AUDIT-C-F1-ORIGINAL-HGB-L1-CARRY-v1",
+      "pass_check": true,
+      "rank_eligible": false
+    },
+    {
+      "case": "original_candidate_alias",
+      "procedure_id": "B:hgb-direct-history-controls-v1:absolute_error_point:retained_view",
+      "expected_hold": "B-AUDIT-C-F1-ORIGINAL-HGB-L1-CARRY-v1",
+      "actual_hold": "B-AUDIT-C-F1-ORIGINAL-HGB-L1-CARRY-v1",
+      "pass_check": true,
+      "rank_eligible": false
+    },
+    {
+      "case": "unaffected_other_target_repair_or_comparator",
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "target": "pass_yd",
+      "pass_check": true
+    },
+    {
+      "case": "unaffected_other_target_repair_or_comparator",
+      "procedure_id": "v2-hgb-rush-att-qb-rb-specialization-v1:absolute_error_point",
+      "target": "rush_att",
+      "pass_check": true
+    },
+    {
+      "case": "unaffected_other_target_repair_or_comparator",
+      "procedure_id": "hgb-direct-history-controls-v1:squared_error_mean",
+      "target": "rush_att",
+      "pass_check": true
+    },
+    {
+      "case": "unaffected_other_target_repair_or_comparator",
+      "procedure_id": "empirical-player-history-control-v1",
+      "target": "rush_att",
+      "pass_check": true
+    }
+  ],
+  "guard_failures": 0,
+  "existing_final_W8_original_L1_carry_views": 12,
+  "existing_final_W8_views_all_protected_via_bound_base_procedure": true,
+  "narrow_limit": "Current code explicitly normalizes both B: and B:: and all eight guard/control cases pass. Existing12originalL1W8views remain protected through exact base procedure. Specialization repairs, L2, other targets and comparator-only references remain eligible under this narrow filter; passing it alone is not qualification.",
+  "actual_saved_score_file_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+  "source_bindings": {
+    "original_parent_local_contract": {
+      "bytes": 295,
+      "sha256": "57293f563c9a3fb17d241d9d8429fcc2120426545f2a517ac6f4115cb26b1da8"
+    },
+    "old_CSV": {
+      "bytes": 3720998,
+      "sha256": "6f04648eed6c27bebc2f2b32893801b411e8163419e9e2ba01e2642a8f261790"
+    },
+    "final_CSV": {
+      "bytes": 3749992,
+      "sha256": "1d3a256f5e3545b3c6dd1ad5ab1c788b3242587204c7e77a3c60c6b79f8cbe93"
+    },
+    "final_games": {
+      "bytes": 2188275,
+      "sha256": "5625ac22e5cd3897dfbf7c906718aa80a07da3e71354d1987d8128304e639696"
+    },
+    "final_ESPN": {
+      "bytes": 215873,
+      "sha256": "9492031042d5dfeabfbf71dc0c20c4caee4933144925451bccf3645679c49cc9"
+    },
+    "frozen_original_numeric_rows": {
+      "bytes": 12557648,
+      "sha256": "b8e0cb23bd804fa129998b6f5dc5a86194a670ae62406f44b855e28bb696d06e"
+    }
+  },
+  "final_Labels_construction": "Reuse original parent Labels identity/frozen schedule contracts, then explicitly override games/finality/stats from final snapshot exactly as tools/abc_b_local_saved_replay.py; never assume old parent Labels is final.",
+  "complete_source_presence": {
+    "old_week8_rows": 916,
+    "final_week8_rows": 981,
+    "target_component_identical_existing_rows": 916,
+    "changed_shared_non_target_cells": {
+      "penalty_yards": 1,
+      "penalties": 1
+    },
+    "new_rows": 65,
+    "new_game_ids": [
+      "2026_08_CHI_SEA"
+    ]
+  },
+  "no_op_scope": "All target component columns for916shared raw W8 rows are unchanged. Two penalty-related cells revised outside these targets; preserve source revision. Previously qualified/final target labels can be retained without alteration. Remaining label changes require finality/new-row qualification, not prediction regeneration.",
+  "chart_limit": "Existing chart admission binds only old CSV6f04648e and old RDS. Its exact shared rows can retain old source qualification;65new CHI_SEA rows require a separately bound final-source/rare-component extension or stay unavailable. A final ordinary-source override does not silently authenticate new chart labels.",
+  "existing_frozen_contrasts": {
+    "path": "reports/week8-grading-20261102l/frozen-ablation-grading-v1/PAIRED_FROZEN_CONTRASTS.json",
+    "sha256": "11ff27bf3f46168fd70bed53230f3ac5c7bc5eff0dd5837aba8f92d7285a09fb",
+    "views": 770,
+    "whole_week_complete": false,
+    "later_named_week8_contrast_candidates": []
+  },
+  "search_scope": "Current B reports tree names containing CONTRASTS.json and week8; existing local-final-v1 only ordinary offered-mask scoring. Not a census of unshared owner artifacts.",
+  "permitted_next_B_work": "Freeze bounded saved-row finalization of existing H-MULTI empirical/Leaf A/B/C original captures; same retained forecasts/masks and final qualified labels only, original partial grades immutable. New chart source qualification explicit. No fits/inference/offer regeneration.",
+  "audit_resource_snapshot": {
+    "fetched_public_code_and_observation_cache_files": 19,
+    "fetched_public_cache_bytes": 1112695,
+    "restricted_player_row_copies_created_by_this_verifier": 0,
+    "new_private_model_bytes": 0,
+    "qualification": "Public code cache includes preserved transport-extra-newline copies and Python bytecode; not restricted source/model uploads or restored archives."
+  },
+  "fixture_fit_calls": 0,
+  "model_calls": 0,
+  "new_NFL_grades": 0,
+  "source_mutations": 0,
+  "supersedes_display_scope_of": "HOLD_AND_FINAL_LABEL_DEPENDENCY_REVIEW_V1.json",
+  "previous_sha256": "2f070388142db6f803dd82f310e2edf97122b214d91d367e37c5cf86e59e3e38"
+}

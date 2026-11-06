@@ -5,6 +5,7 @@ import hashlib
 import json
 import math
 from pathlib import PurePosixPath
+from .recommendation_holds import recommendation_hold
 
 VERSION = 'v2-test-results-index-v1'
 DIAGNOSTIC_KIND='NEW_EXPERIMENT_CURRENT_VINTAGE_PARTICIPANT_DIAGNOSTIC'
@@ -12,9 +13,13 @@ RIGHT_WRONG_KIND='right_and_wrong_prediction_diagnostic'
 
 
 def is_championship_eligible(row):
-    """Outcome-conditioned explanations cannot become forecasting champions."""
+    """Exclude explanatory views and specifically held failed procedures.
+
+    Passing this filter alone does not establish source, duration, product or
+    operational admission. Historical losses remain searchable in the audit.
+    """
     source=row.get('source_aggregate_fields')or{}
-    return not(any(r.get('diagnostic_only')is True or r.get('default_rank_eligible')is False
+    return recommendation_hold(row) is None and not(any(r.get('diagnostic_only')is True or r.get('default_rank_eligible')is False
                    or r.get('record_kind',r.get('kind'))==RIGHT_WRONG_KIND
                    for r in(row,source)))
 METRICS = {

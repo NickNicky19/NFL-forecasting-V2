@@ -1,0 +1,496 @@
+{
+  "state": "PASS_INDEPENDENT_EXISTING_FINAL_AVAILABILITY_V3_AND_SCOPED_HOLDS",
+  "source_bindings": {
+    "reports/abc-championship/local-week8-final-v1/SCORES.json": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "reports/audit-remediation-20261105-v1/B/availability-final-matched-v3/FROZEN_PROTOCOL.json": "54a7ad538c6d1dd4f570938b75ebd2d249b64e825c13768d219fa120e490f310",
+    "reports/audit-remediation-20261105-v1/B/availability-final-matched-v3/OWN_POLICY_RECORDS.json": "cd81cdfe24dc7b6833b37a3190a88ac7142f9e5a8dac730ce335601b55c87b9a",
+    "reports/audit-remediation-20261105-v1/B/availability-final-matched-v3/INDEX_BOUND_PAIRED_ANALYSIS.json": "ea352dcd10405fa7c266fb164beb62b34134dfb1cb5435625fa258f6f22fdd0a",
+    "nfl_v2/recommendation_holds.py": "c219a1210c8ab9eb34df3da9354414a4541e607e8f1c5737a2e73ab63a6abb8c",
+    "registries/PROCEDURE_ADMISSION_HOLDS.json": "149e2b1b35f20460c9014f8e09c4fa7f328be1bd9a4a37da8d79724c32cd384b"
+  },
+  "retained_grade_sha256": "4b37b02e4ea584fbf91c21ca1fe8454c2447a68cafc154f15d431f520c73358a",
+  "method_category_arm_cells": 60,
+  "side_records_checked": 180,
+  "paired_views_checked": 240,
+  "empty_pairs_with_nulls": 80,
+  "own_pool_row_views": 3486,
+  "known_fallback_values": {
+    "none": 3486
+  },
+  "representative_boundaries": [
+    {
+      "state": "WIN",
+      "target": "pass_att",
+      "selected_side": "under",
+      "boundary_check": "PASS"
+    },
+    {
+      "state": "LOSS",
+      "target": "pass_att",
+      "selected_side": "over",
+      "boundary_check": "PASS"
+    }
+  ],
+  "same_row_strongest_constant_results": [
+    {
+      "target": "pass_att",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:f8fe04e5476a2156ef5c311e",
+      "contrast": "B_MINUS_A",
+      "wins": 15,
+      "n": 26,
+      "comparator_wins": 16,
+      "alwaysOver_wins": 11,
+      "alwaysUnder_wins": 15,
+      "win_change_versus_strongest_constant": 0
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:07dc02f6dd188ac3a96a48bf",
+      "contrast": "C_MINUS_B",
+      "wins": 15,
+      "n": 26,
+      "comparator_wins": 15,
+      "alwaysOver_wins": 11,
+      "alwaysUnder_wins": 15,
+      "win_change_versus_strongest_constant": 0
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:656e2ff53198a1c0ec192cf8",
+      "contrast": "B_MINUS_A",
+      "wins": 10,
+      "n": 26,
+      "comparator_wins": 10,
+      "alwaysOver_wins": 9,
+      "alwaysUnder_wins": 17,
+      "win_change_versus_strongest_constant": -7
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:0802413668e3b82da4132c1a",
+      "contrast": "C_MINUS_B",
+      "wins": 10,
+      "n": 26,
+      "comparator_wins": 10,
+      "alwaysOver_wins": 9,
+      "alwaysUnder_wins": 17,
+      "win_change_versus_strongest_constant": -7
+    },
+    {
+      "target": "pass_int",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:953cb5cca53b55b7d0a8bdc6",
+      "contrast": "B_MINUS_A",
+      "wins": 9,
+      "n": 26,
+      "comparator_wins": 9,
+      "alwaysOver_wins": 14,
+      "alwaysUnder_wins": 12,
+      "win_change_versus_strongest_constant": -5
+    },
+    {
+      "target": "pass_int",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:a798fd48e29899588489c398",
+      "contrast": "C_MINUS_B",
+      "wins": 9,
+      "n": 26,
+      "comparator_wins": 9,
+      "alwaysOver_wins": 14,
+      "alwaysUnder_wins": 12,
+      "win_change_versus_strongest_constant": -5
+    },
+    {
+      "target": "pass_td",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:14c1c4c944352e9e513b6de6",
+      "contrast": "B_MINUS_A",
+      "wins": 15,
+      "n": 26,
+      "comparator_wins": 14,
+      "alwaysOver_wins": 13,
+      "alwaysUnder_wins": 13,
+      "win_change_versus_strongest_constant": 2
+    },
+    {
+      "target": "pass_td",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:5f8ea05ae971befa30d2cc64",
+      "contrast": "C_MINUS_B",
+      "wins": 15,
+      "n": 26,
+      "comparator_wins": 15,
+      "alwaysOver_wins": 13,
+      "alwaysUnder_wins": 13,
+      "win_change_versus_strongest_constant": 2
+    },
+    {
+      "target": "pass_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:037fc778a76a2f7016e25465",
+      "contrast": "B_MINUS_A",
+      "wins": 14,
+      "n": 26,
+      "comparator_wins": 14,
+      "alwaysOver_wins": 13,
+      "alwaysUnder_wins": 13,
+      "win_change_versus_strongest_constant": 1
+    },
+    {
+      "target": "pass_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:326065db3954d99a888be0a0",
+      "contrast": "C_MINUS_B",
+      "wins": 14,
+      "n": 26,
+      "comparator_wins": 14,
+      "alwaysOver_wins": 13,
+      "alwaysUnder_wins": 13,
+      "win_change_versus_strongest_constant": 1
+    },
+    {
+      "target": "rec",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:af5a273dbea23be1fd2b8dc6",
+      "contrast": "B_MINUS_A",
+      "wins": 78,
+      "n": 148,
+      "comparator_wins": 80,
+      "alwaysOver_wins": 70,
+      "alwaysUnder_wins": 78,
+      "win_change_versus_strongest_constant": 0
+    },
+    {
+      "target": "rec",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:f8f65fb442bd98869b670df4",
+      "contrast": "C_MINUS_B",
+      "wins": 78,
+      "n": 148,
+      "comparator_wins": 78,
+      "alwaysOver_wins": 70,
+      "alwaysUnder_wins": 78,
+      "win_change_versus_strongest_constant": 0
+    },
+    {
+      "target": "rec_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:3cad2cf4fd27be74b889d6a2",
+      "contrast": "B_MINUS_A",
+      "wins": 66,
+      "n": 149,
+      "comparator_wins": 68,
+      "alwaysOver_wins": 71,
+      "alwaysUnder_wins": 78,
+      "win_change_versus_strongest_constant": -12
+    },
+    {
+      "target": "rec_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:e4b39caa1eb91ad9c02081ff",
+      "contrast": "C_MINUS_B",
+      "wins": 66,
+      "n": 149,
+      "comparator_wins": 66,
+      "alwaysOver_wins": 71,
+      "alwaysUnder_wins": 78,
+      "win_change_versus_strongest_constant": -12
+    },
+    {
+      "target": "rush_att",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:f171d1118521c75b11a1a8a4",
+      "contrast": "B_MINUS_A",
+      "wins": 15,
+      "n": 39,
+      "comparator_wins": 15,
+      "alwaysOver_wins": 18,
+      "alwaysUnder_wins": 21,
+      "win_change_versus_strongest_constant": -6
+    },
+    {
+      "target": "rush_att",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:02e271ea170e76c4656ea5a5",
+      "contrast": "C_MINUS_B",
+      "wins": 15,
+      "n": 39,
+      "comparator_wins": 15,
+      "alwaysOver_wins": 18,
+      "alwaysUnder_wins": 21,
+      "win_change_versus_strongest_constant": -6
+    },
+    {
+      "target": "rush_rec_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:7d7b59bef901398524d478cf",
+      "contrast": "B_MINUS_A",
+      "wins": 18,
+      "n": 37,
+      "comparator_wins": 19,
+      "alwaysOver_wins": 14,
+      "alwaysUnder_wins": 23,
+      "win_change_versus_strongest_constant": -5
+    },
+    {
+      "target": "rush_rec_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:1fc99412105799839dc63fdb",
+      "contrast": "C_MINUS_B",
+      "wins": 18,
+      "n": 37,
+      "comparator_wins": 18,
+      "alwaysOver_wins": 14,
+      "alwaysUnder_wins": 23,
+      "win_change_versus_strongest_constant": -5
+    },
+    {
+      "target": "rush_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:07f6edf4482afa100622e9d1",
+      "contrast": "B_MINUS_A",
+      "wins": 22,
+      "n": 52,
+      "comparator_wins": 24,
+      "alwaysOver_wins": 28,
+      "alwaysUnder_wins": 24,
+      "win_change_versus_strongest_constant": -6
+    },
+    {
+      "target": "rush_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:158186669847a2e6dc6e6590",
+      "contrast": "C_MINUS_B",
+      "wins": 22,
+      "n": 52,
+      "comparator_wins": 22,
+      "alwaysOver_wins": 28,
+      "alwaysUnder_wins": 24,
+      "win_change_versus_strongest_constant": -6
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:9a8ddaa09c976ce304055390",
+      "contrast": "B_MINUS_A",
+      "wins": 11,
+      "n": 26,
+      "comparator_wins": 11,
+      "alwaysOver_wins": 11,
+      "alwaysUnder_wins": 15,
+      "win_change_versus_strongest_constant": -4
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:636c0de20322a3dc7958072a",
+      "contrast": "C_MINUS_B",
+      "wins": 11,
+      "n": 26,
+      "comparator_wins": 11,
+      "alwaysOver_wins": 11,
+      "alwaysUnder_wins": 15,
+      "win_change_versus_strongest_constant": -4
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:b1b3eb4bbd13332c2af43567",
+      "contrast": "B_MINUS_A",
+      "wins": 8,
+      "n": 26,
+      "comparator_wins": 9,
+      "alwaysOver_wins": 9,
+      "alwaysUnder_wins": 17,
+      "win_change_versus_strongest_constant": -9
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:d2633ec82d313fa48f0944e9",
+      "contrast": "C_MINUS_B",
+      "wins": 11,
+      "n": 26,
+      "comparator_wins": 8,
+      "alwaysOver_wins": 9,
+      "alwaysUnder_wins": 17,
+      "win_change_versus_strongest_constant": -6
+    },
+    {
+      "target": "pass_int",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:7905fdad9d95409b18656ddf",
+      "contrast": "B_MINUS_A",
+      "wins": 12,
+      "n": 26,
+      "comparator_wins": 12,
+      "alwaysOver_wins": 14,
+      "alwaysUnder_wins": 12,
+      "win_change_versus_strongest_constant": -2
+    },
+    {
+      "target": "pass_int",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:fb976b22b798342805fd639c",
+      "contrast": "C_MINUS_B",
+      "wins": 12,
+      "n": 26,
+      "comparator_wins": 12,
+      "alwaysOver_wins": 14,
+      "alwaysUnder_wins": 12,
+      "win_change_versus_strongest_constant": -2
+    },
+    {
+      "target": "pass_td",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:500298032a93f31b1023c2fd",
+      "contrast": "B_MINUS_A",
+      "wins": 13,
+      "n": 26,
+      "comparator_wins": 15,
+      "alwaysOver_wins": 13,
+      "alwaysUnder_wins": 13,
+      "win_change_versus_strongest_constant": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:5174134fc8072b348e00bca2",
+      "contrast": "C_MINUS_B",
+      "wins": 15,
+      "n": 26,
+      "comparator_wins": 13,
+      "alwaysOver_wins": 13,
+      "alwaysUnder_wins": 13,
+      "win_change_versus_strongest_constant": 2
+    },
+    {
+      "target": "pass_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:8ba916e904a6d8df9cad84b3",
+      "contrast": "B_MINUS_A",
+      "wins": 17,
+      "n": 26,
+      "comparator_wins": 11,
+      "alwaysOver_wins": 13,
+      "alwaysUnder_wins": 13,
+      "win_change_versus_strongest_constant": 4
+    },
+    {
+      "target": "pass_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:bfd15103fa07c654a780cc87",
+      "contrast": "C_MINUS_B",
+      "wins": 19,
+      "n": 26,
+      "comparator_wins": 17,
+      "alwaysOver_wins": 13,
+      "alwaysUnder_wins": 13,
+      "win_change_versus_strongest_constant": 6
+    },
+    {
+      "target": "rec",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:1454f288255a6590adc80e7c",
+      "contrast": "B_MINUS_A",
+      "wins": 84,
+      "n": 148,
+      "comparator_wins": 85,
+      "alwaysOver_wins": 70,
+      "alwaysUnder_wins": 78,
+      "win_change_versus_strongest_constant": 6
+    },
+    {
+      "target": "rec",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:00841d1b003a40d336369af9",
+      "contrast": "C_MINUS_B",
+      "wins": 85,
+      "n": 148,
+      "comparator_wins": 84,
+      "alwaysOver_wins": 70,
+      "alwaysUnder_wins": 78,
+      "win_change_versus_strongest_constant": 7
+    },
+    {
+      "target": "rec_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:b70043790f37be4db9a18572",
+      "contrast": "B_MINUS_A",
+      "wins": 81,
+      "n": 149,
+      "comparator_wins": 81,
+      "alwaysOver_wins": 71,
+      "alwaysUnder_wins": 78,
+      "win_change_versus_strongest_constant": 3
+    },
+    {
+      "target": "rec_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:8d94eea8172480c5ef3e4e6d",
+      "contrast": "C_MINUS_B",
+      "wins": 80,
+      "n": 149,
+      "comparator_wins": 81,
+      "alwaysOver_wins": 71,
+      "alwaysUnder_wins": 78,
+      "win_change_versus_strongest_constant": 2
+    },
+    {
+      "target": "rush_att",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:00a2b81fe6651f4cea2892f9",
+      "contrast": "B_MINUS_A",
+      "wins": 15,
+      "n": 39,
+      "comparator_wins": 14,
+      "alwaysOver_wins": 18,
+      "alwaysUnder_wins": 21,
+      "win_change_versus_strongest_constant": -6
+    },
+    {
+      "target": "rush_att",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:f39fdc6b5469bc137fd3f57c",
+      "contrast": "C_MINUS_B",
+      "wins": 16,
+      "n": 39,
+      "comparator_wins": 15,
+      "alwaysOver_wins": 18,
+      "alwaysUnder_wins": 21,
+      "win_change_versus_strongest_constant": -5
+    },
+    {
+      "target": "rush_rec_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:ee153a0d8848b44bde621121",
+      "contrast": "B_MINUS_A",
+      "wins": 23,
+      "n": 37,
+      "comparator_wins": 20,
+      "alwaysOver_wins": 14,
+      "alwaysUnder_wins": 23,
+      "win_change_versus_strongest_constant": 0
+    },
+    {
+      "target": "rush_rec_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:a5204444058912d248b45ac6",
+      "contrast": "C_MINUS_B",
+      "wins": 22,
+      "n": 37,
+      "comparator_wins": 23,
+      "alwaysOver_wins": 14,
+      "alwaysUnder_wins": 23,
+      "win_change_versus_strongest_constant": -1
+    },
+    {
+      "target": "rush_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:e6828ebcefabaafb4388c6d4",
+      "contrast": "B_MINUS_A",
+      "wins": 20,
+      "n": 52,
+      "comparator_wins": 24,
+      "alwaysOver_wins": 28,
+      "alwaysUnder_wins": 24,
+      "win_change_versus_strongest_constant": -8
+    },
+    {
+      "target": "rush_yd",
+      "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:94f66fdd1198c48b97ddbbf1",
+      "contrast": "C_MINUS_B",
+      "wins": 20,
+      "n": 52,
+      "comparator_wins": 20,
+      "alwaysOver_wins": 28,
+      "alwaysUnder_wins": 24,
+      "win_change_versus_strongest_constant": -8
+    }
+  ],
+  "hold_overlay": {
+    "held_views": 2675,
+    "previous_generic_passes": 2631,
+    "already_diagnostic_excluded": 44,
+    "qualification_views": 142,
+    "held_old_top5": 0,
+    "three_fixed_model_hash_scopes_checked": true,
+    "full_603711_index_rescan_not_repeated": true,
+    "independent_limit": "All2675retained overlay membership annotations and142qualification IDs validated; originalworker full-universe scan receipt retained, not independently rerun1.36GB."
+  },
+  "failure_receipts_preserved": [
+    "reports/audit-remediation-20261105-v1/B/hold-overlay-v1/FAILED_COMPLETION_RECEIPT_V1.json",
+    "reports/audit-remediation-20261105-v1/B/availability-final-matched-v1/FAILED_JOIN_ADAPTER_RECEIPT_V1.json",
+    "reports/audit-remediation-20261105-v1/B/availability-final-matched-v2/FAILED_EMPTY_VIEW_ADAPTER_RECEIPT_V2.json"
+  ],
+  "scope": "One exposed W8 only;13captured games of14, later provider-labelled thresholds with unverified timing, existing all-method common offer mask rather than661fullboard. Point/selection/probability/price products separate; no global champion, policy change, new test-week qualification or promotion.",
+  "model_calls": 0,
+  "grading_calls": 0,
+  "NFL_fits": 0,
+  "new_private_row_bytes": 0
+}

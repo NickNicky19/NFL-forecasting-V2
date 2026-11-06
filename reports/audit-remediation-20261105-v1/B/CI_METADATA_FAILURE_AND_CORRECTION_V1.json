@@ -1,0 +1,23 @@
+{
+  "state": "CI_FAILURE_REPRODUCED_AND_SCOPED_METADATA_CORRECTION",
+  "at_utc": "2026-11-06T01:17:14.310711+00:00",
+  "failed_source_commit": "c6ab9d76499d5e7cea81c1c43fcd98bd2a644a6f",
+  "failed_runs": [
+    42142184646,
+    42142166391
+  ],
+  "independent_job": 127644933296,
+  "unit_tests": {
+    "state": "PASS",
+    "count": 476,
+    "seconds": 3.944
+  },
+  "first_failure": "tools/validate_checkpoint.py line33: KeyError run_id in new B execution event.",
+  "affected_records": 1,
+  "preserved_original_event": "reports/audit-remediation-20261105-v1/B/INVALID_EXECUTION_EVENT_METADATA_V1.json",
+  "repair": "Add deterministic unique run_id to this new event; retain all original fields and exact old entry in the failure artifact/Git history.",
+  "new_NFL_fits": 0,
+  "new_NFL_scores": 0,
+  "forecast_changes": 0,
+  "local_prior_pass_scope": "Earlier local checkpoint check preceded this new root ledger append. The earlier receipt is retained with that timing limitation; final check rerun required."
+}

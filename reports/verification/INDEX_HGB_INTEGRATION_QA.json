@@ -1,0 +1,67 @@
+{
+  "status": "PASS_PUBLIC_INDEX_HGB_INTEGRATION_WITH_LIMITS",
+  "completed_at_utc": "2026-10-29T23:43:19.107472+00:00",
+  "index_records": 16055,
+  "evaluation_views": 16048,
+  "software_receipts": 7,
+  "pre_hgb_evaluation_ids_rederived_and_present": 15118,
+  "old_id_verification_scope": "Independent reconstruction of pre-HGB ID recipe from immutable original aggregates and explicit diagnostic dimensions; no archived previous complete-index byte snapshot was supplied.",
+  "legacy_aggregate_counts": {
+    "reports/inventory/ALL_METHOD_SCORES.json": 4832,
+    "reports/replay/REPLAY_SCORES.json": 66,
+    "reports/week7-label-extension-v1/SCORES.json": 66
+  },
+  "hgb_views": 930,
+  "game_census_views": 930,
+  "hgb_count_checks": 2790,
+  "hgb_game_count_checks": 1860,
+  "hgb_metric_checks": 8370,
+  "hgb_precision_checks": 6510,
+  "source_aggregate_preservation_checks": 930,
+  "win_loss_mapping_examples": [
+    {
+      "target": "pass_yd",
+      "objective": "absolute_error_point",
+      "history_regime": "H-MULTI",
+      "index_test_id": "TEST-e7448bac72b9a1aa22c5",
+      "n": 242,
+      "hgb_mae": 66.11731310079224,
+      "empirical_matched_product_mae": 71.3305785123967,
+      "hgb_minus_empirical": -5.213265411604452
+    },
+    {
+      "target": "rush_att",
+      "objective": "absolute_error_point",
+      "history_regime": "H-MULTI",
+      "index_test_id": "TEST-9e639c0a25120a25d09a",
+      "n": 844,
+      "hgb_mae": 6.569905213270142,
+      "empirical_matched_product_mae": 3.2831753554502368,
+      "hgb_minus_empirical": 3.286729857819905
+    }
+  ],
+  "coverage_command": {
+    "status": "PASS",
+    "indexed_records": 16055,
+    "registered_artifacts": 7,
+    "scope": "coverage/hashes; not additional NFL evidence"
+  },
+  "ci_packaging_checks": "explicitnfl_v2package discovery; Python3.12 and pinnedboostingextras; checkout/read-onlyCI runssoftware/coverage checks, no scheduler or NFLfit/captureCLI",
+  "wheel_build": "REPORTED_BY_ROOT_PASSED_NOT_REBUILT_BY_THIS_REVIEW",
+  "new_nfl_fits": 0,
+  "new_forecasts": 0,
+  "new_outcomes": 0,
+  "limits": [
+    "Public aggregate/index integration review; original NFL label truth and retained model inference independently reviewed elsewhere.",
+    "Future max_forecast_rows guard remains a separate versioned patch; frozen v1 source unchanged."
+  ],
+  "reviewed_sha256": {
+    "tools/build_test_index.py": "4201564081a71e72fd44f1dc08da5fe0452547975a6dec5dccdfcbfc7c02a0fb",
+    "nfl_v2/result_index.py": "a5991ecae36e6cf5b54a8968515b2f5efa64e4f1f2cbfbd09268828968282c67",
+    "tools/check_result_index_coverage.py": "d6bac1b166f65c83e2b32f77c2838b31c3f31a449f9ac33a817253eca686bf1f",
+    "pyproject.toml": "65b5494a1147af2ca1661ffd5120067025fc066569dc7fee483fdd7176843a4c",
+    ".github/workflows/research-checks.yml": "e8ad985fdb1316e68576084c2d6370030eb1951f10b4529a474cdf6ea0c0004c",
+    "reports/continuation-20261029/TEST_RESULTS_INDEX.json": "2148c84636b580c541a6f9accc73435c9b0dfc6c7339126ef6c267a4665b4273",
+    "reports/verification/HGB_VIEW_GAME_COUNTS.json": "3e4bf211c12453324ebb3205fb8c1f462eeb8bb85fcad159d1fedec571cdce97"
+  }
+}

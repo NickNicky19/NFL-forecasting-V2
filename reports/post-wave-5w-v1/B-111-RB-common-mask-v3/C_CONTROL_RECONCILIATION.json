@@ -1,0 +1,185 @@
+[
+  {
+    "control": "ALWAYS_UNDER",
+    "independent_retained_source_count": {
+      "OVER": {
+        "wins": 0,
+        "losses": 0
+      },
+      "UNDER": {
+        "wins": 63,
+        "losses": 48
+      },
+      "COMBINED": {
+        "wins": 63,
+        "losses": 48
+      }
+    },
+    "source_public_summary": {
+      "OVER": {
+        "selected": 0,
+        "wins": null,
+        "losses": null,
+        "decided": 0,
+        "rate": null
+      },
+      "UNDER": {
+        "selected": 111,
+        "wins": 63,
+        "losses": 48,
+        "decided": 111,
+        "rate": 0.5675675675675675
+      },
+      "COMBINED": {
+        "selected": 111,
+        "wins": 63,
+        "losses": 48,
+        "decided": 111,
+        "rate": 0.5675675675675675
+      },
+      "eligible": 111,
+      "unavailable": 0,
+      "abstentions": 0,
+      "states": {
+        "WIN": 63,
+        "LOSS": 48
+      },
+      "games": 32,
+      "player_games": 111,
+      "weeks": [
+        2,
+        3
+      ],
+      "uncertainty": {
+        "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+        "low": 0.47467121788751543,
+        "high": 0.6559436328295938,
+        "dependence_aware": false,
+        "week_clusters": 2
+      },
+      "coverage": 1.0
+    }
+  },
+  {
+    "control": "EARLIER_PREVALENCE_V8",
+    "independent_retained_source_count": {
+      "OVER": {
+        "wins": 15,
+        "losses": 15
+      },
+      "UNDER": {
+        "wins": 48,
+        "losses": 33
+      },
+      "COMBINED": {
+        "wins": 63,
+        "losses": 48
+      }
+    },
+    "source_public_summary": {
+      "OVER": {
+        "selected": 30,
+        "wins": 15,
+        "losses": 15,
+        "decided": 30,
+        "rate": 0.5
+      },
+      "UNDER": {
+        "selected": 81,
+        "wins": 48,
+        "losses": 33,
+        "decided": 81,
+        "rate": 0.5925925925925926
+      },
+      "COMBINED": {
+        "selected": 111,
+        "wins": 63,
+        "losses": 48,
+        "decided": 111,
+        "rate": 0.5675675675675675
+      },
+      "eligible": 111,
+      "unavailable": 0,
+      "abstentions": 0,
+      "states": {
+        "LOSS": 48,
+        "WIN": 63
+      },
+      "games": 32,
+      "player_games": 111,
+      "weeks": [
+        2,
+        3
+      ],
+      "uncertainty": {
+        "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+        "low": 0.47467121788751543,
+        "high": 0.6559436328295938,
+        "dependence_aware": false,
+        "week_clusters": 2
+      },
+      "coverage": 1.0
+    }
+  },
+  {
+    "control": "P3_DIRECT",
+    "independent_retained_source_count": {
+      "OVER": {
+        "wins": 1,
+        "losses": 4
+      },
+      "UNDER": {
+        "wins": 59,
+        "losses": 47
+      },
+      "COMBINED": {
+        "wins": 60,
+        "losses": 51
+      }
+    },
+    "source_public_summary": {
+      "OVER": {
+        "selected": 5,
+        "wins": 1,
+        "losses": 4,
+        "decided": 5,
+        "rate": 0.2
+      },
+      "UNDER": {
+        "selected": 106,
+        "wins": 59,
+        "losses": 47,
+        "decided": 106,
+        "rate": 0.5566037735849056
+      },
+      "COMBINED": {
+        "selected": 111,
+        "wins": 60,
+        "losses": 51,
+        "decided": 111,
+        "rate": 0.5405405405405406
+      },
+      "eligible": 111,
+      "unavailable": 0,
+      "abstentions": 0,
+      "states": {
+        "LOSS": 51,
+        "WIN": 60
+      },
+      "games": 32,
+      "player_games": 111,
+      "weeks": [
+        2,
+        3
+      ],
+      "uncertainty": {
+        "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+        "low": 0.4480286067541221,
+        "high": 0.6303403036761436,
+        "dependence_aware": false,
+        "week_clusters": 2
+      },
+      "coverage": 1.0
+    }
+  }
+]

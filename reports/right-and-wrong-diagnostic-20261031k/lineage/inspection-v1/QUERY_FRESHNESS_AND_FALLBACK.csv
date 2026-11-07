@@ -1,0 +1,7 @@
+target,week,kind,query_packet_rows,outer_focal_metadata_rows,matched_query_rows,missing_query_metadata_rows,admitted_focal_rows,admitted_all_source_fit_prior_clocks_before_decision,fallback_metadata_counts,training_n,fit_cutoff_utc,latest_training_label_available,latest_training_consumed_feature_available,availability_age_days_at_decision_min,availability_age_days_at_decision_max,stored_lag1_age_days_at_scheduled_kickoff_min,stored_lag1_age_days_at_scheduled_kickoff_max
+pass_yd,5,HGB_DIRECT_L1,36,28,0,28,0,0,{},2736,2026-10-09T00:15:00+00:00,1791245700.0,1790539500.0,,,,
+pass_yd,6,HGB_DIRECT_L1,29,28,0,28,0,0,{},2770,2026-10-16T00:15:00+00:00,1791850500.0,1791145500.0,,,,
+pass_yd,7,HGB_DIRECT_L1,31,28,0,28,0,0,{},2806,2026-10-23T00:15:00+00:00,1792455300.0,1791738000.0,,,,
+pass_cmp,5,D1_LEAF_MEDIAN,36,28,28,0,28,28,{'none': 28},2736,2026-10-09T00:15:00+00:00,1791245700.0,1790539500.0,0.06454861111111111,9.616631944444444,7.142361111111111,21.0
+pass_cmp,6,D1_LEAF_MEDIAN,29,28,28,0,26,24,"{'none': 26, 'None': 2}",2770,2026-10-16T00:15:00+00:00,1791850500.0,1791145500.0,0.07547453703703703,7.0548726851851855,7.142361111111111,286.81597222222223
+pass_cmp,7,D1_LEAF_MEDIAN,31,28,28,0,22,20,"{'none': 22, 'None': 6}",2806,2026-10-23T00:15:00+00:00,1792455300.0,1791738000.0,0.7840162037037037,13.412974537037037,7.996527777777778,32.302083333333336

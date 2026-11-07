@@ -1,0 +1,68 @@
+{
+  "schema_version": "v2-prop-consumer-v1",
+  "authority": "Researchhandoffonly;existingownercontrolsintegration/publication",
+  "required_identity": [
+    "forecast_id",
+    "forecast_version",
+    "event_id",
+    "player_id",
+    "target",
+    "scoring_contract",
+    "period",
+    "overtime",
+    "selection_id",
+    "decision_time",
+    "evidence_tier"
+  ],
+  "quote_fields": [
+    "book",
+    "jurisdiction",
+    "line",
+    "side",
+    "decimal_odds",
+    "source_update_time",
+    "receipt_time",
+    "quote_status",
+    "quote_age_seconds",
+    "quote_valid_until",
+    "settlement_contract_id",
+    "settlement_contract_version"
+  ],
+  "probability_fields": [
+    "p_over_given_nonvoid",
+    "p_under_given_nonvoid",
+    "p_push_given_nonvoid",
+    "p_nonvoid",
+    "probability_conditioning",
+    "probability_procedure_id"
+  ],
+  "value_fields": [
+    "EV_nonvoid",
+    "EV_placed",
+    "EV_asof_decision",
+    "current_actionable_EV",
+    "current_actionable",
+    "not_actionable_reason"
+  ],
+  "later_feedback_fields": [
+    "last_observed_eligible_pregame_quote_time",
+    "closing_contract_match",
+    "main_line_movement",
+    "same_original_threshold_price_movement",
+    "closing_benchmark_value",
+    "closing_value_assumptions",
+    "settlement_state",
+    "official_actual",
+    "outcome_revision_time"
+  ],
+  "invariants": [
+    "p_over+p_under+p_push=1withseparatevoidmass",
+    "Missingprices/probabilities/contractremainnull;nevermultipliersasdecimalodds",
+    "Expired/stale/closedoffersetcurrent_actionablefalseandcurrent_actionable_EVnull;preserveimmutableoriginalrecommendationandEV_asof_decision",
+    "Quoteclockandforecastcutoffsqualifybydecisiontime;lateclosingquoteisfeedbackonly",
+    "Same-contractpriceCLVrequiresoriginalthreshold,book,player,event,statistic,period,rulesmatch;differentmainlineonlydirectionalmetric",
+    "Originalrecordedleanwithoutpricecanhavedirectiongrade;returnmetricsremainnull",
+    "Onepricedofferlegperselectioncontract;duplicatehandlingexplicit"
+  ],
+  "status": "PREPARED_NO_REAL_PRICE_OR_CLV_PANEL_ADMITTED"
+}

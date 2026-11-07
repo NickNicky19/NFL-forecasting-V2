@@ -1,0 +1,180 @@
+{
+  "state": "PASS_INDEPENDENT_SAVED_PMF_CDF_AND_SCORING",
+  "private_source_sha256": "6130073206a97d889d2babce5a866e0ab4524e68ca3d7ddb89ab4fa39d7da7e3",
+  "private_source_bytes": 9076411,
+  "source_fit_receipts_verified": 128,
+  "original_completed_fits_with_execution_clocks": 88,
+  "original_no_fit_startup_slots_with_null_clocks": 40,
+  "source_chunk_hashes_verified": 128,
+  "own_model_hashes_verified": 88,
+  "training_availability_field_variants": {
+    "latest_training_label_available": 128,
+    "latest_training_feature_available": 64,
+    "latest_training_consumed_feature_available": 64
+  },
+  "source_primary_mean_rows": 26032,
+  "retained_method_offer_rows": 15488,
+  "available_laws": 14672,
+  "law_kind_counts": {
+    "signed": 2628,
+    "mixture": 10644,
+    "geometric": 1400
+  },
+  "source_missing_unavailable_rows": 816,
+  "same_law_median_direction_explicit_ties": 0,
+  "source_moment_quantile_zero_mass_parity_rows": 14672,
+  "maximum_mean_absolute_difference": 5.684341886080802e-14,
+  "representative_histogram_reconstructions": [
+    {
+      "family": "C02",
+      "target": "pass_yd",
+      "fit_receipt": "reports/continuation-20261030b/ordered-information-ablation-v1/W02-pass_yd-H-MULTI-COMMON-FIT.json",
+      "model_sha256": "d86eecf0488ad7f728951838fcf17fd7e17164f34a316e16b06ad61719139c24",
+      "trees": 32,
+      "source_leaf_ids_verified": true,
+      "support_size": 417,
+      "prior_mix": 0.05
+    },
+    {
+      "family": "C02",
+      "target": "rec",
+      "fit_receipt": "reports/continuation-20261030b/ordered-information-ablation-v1/W03-rec-H-CURRENT-COMMON-FIT.json",
+      "model_sha256": "8d39e5e785a284e4830b1225651cd74481960fc9e6fd9d09f840c6b1f0922566",
+      "trees": 32,
+      "source_leaf_ids_verified": true,
+      "support_size": 11,
+      "prior_mix": 0.05
+    },
+    {
+      "family": "D1",
+      "target": "pass_yd",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/W02-pass_yd-H-MULTI-COMMON-D1-FIT.json",
+      "model_sha256": "e1f4a439a5b607a30a1f5cef3d5e50b538ea5a064b6a47c32781d869a1516276",
+      "trees": 32,
+      "source_leaf_ids_verified": true,
+      "support_size": 417,
+      "prior_mix": 0.05
+    },
+    {
+      "family": "D1",
+      "target": "rec",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/W03-rec-H-CURRENT-COMMON-D1-FIT.json",
+      "model_sha256": "c2223070d6a3724cffbad81105a16da878c22cc0d166eff7040322981b4650a3",
+      "trees": 32,
+      "source_leaf_ids_verified": true,
+      "support_size": 11,
+      "prior_mix": 0.05
+    },
+    {
+      "family": "D2",
+      "target": "pass_yd",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/W02-pass_yd-H-MULTI-COMMON-D2-FIT.json",
+      "model_sha256": "f736f3bd3545bd65f3fea8d4ec2513ae2f4750a1ccfef245b06bc8c3a638136b",
+      "trees": 32,
+      "source_leaf_ids_verified": true,
+      "support_size": 417,
+      "prior_mix": 0.05
+    },
+    {
+      "family": "D2",
+      "target": "rec",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/W03-rec-H-CURRENT-COMMON-D2-FIT.json",
+      "model_sha256": "f58715f4b52f042b56727911484bdc5139f27b5c61ff93a060704baf8a6f7960",
+      "trees": 32,
+      "source_leaf_ids_verified": true,
+      "support_size": 11,
+      "prior_mix": 0.05
+    },
+    {
+      "family": "LEAF",
+      "target": "pass_yd",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W02-pass_yd-H-MULTI-COMMON-ordered_leaf_cdf-FIT.json",
+      "model_sha256": "92964eb54b529e13b5b325027e9fbdb638ec6ccbf4132786e40101e802a9636f",
+      "trees": 32,
+      "source_leaf_ids_verified": true,
+      "support_size": 417,
+      "prior_mix": 0.05
+    },
+    {
+      "family": "LEAF",
+      "target": "rec",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W03-rec-H-CURRENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "model_sha256": "31ba6ba67dd4674d190943cd190a44aea38473d9e433dd6144486bbefa0a4fcf",
+      "trees": 32,
+      "source_leaf_ids_verified": true,
+      "support_size": 11,
+      "prior_mix": 0.05
+    }
+  ],
+  "estimator_calls": 0,
+  "selection_side_views_verified": 576,
+  "proper_views_verified": 192,
+  "matched_probability_baseline_views_verified": 768,
+  "paired_direction_control_views_verified": 768,
+  "mask_memberships_verified": 192,
+  "summary": [
+    {
+      "target": "pass_yd",
+      "combined_wins": 29,
+      "combined_decided": 63,
+      "combined_rate": 0.4603174603174603,
+      "combined_leaders": [
+        "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1"
+      ],
+      "lowest_brier": 0.2728893704064541,
+      "lowest_brier_procedure": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+      "probability_n": 63,
+      "beats_neutral_025": false
+    },
+    {
+      "target": "rush_yd",
+      "combined_wins": 100,
+      "combined_decided": 174,
+      "combined_rate": 0.5747126436781609,
+      "combined_leaders": [
+        "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::P2_EXACT_LINE_CDF-v1",
+        "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::P2_EXACT_LINE_CDF-v1",
+        "B::v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs::H-CURRENT-STRICT::P2_EXACT_LINE_CDF-v1",
+        "B::v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs::H-CURRENT-STRICT::P2_EXACT_LINE_CDF-v1"
+      ],
+      "lowest_brier": 0.277385843974335,
+      "lowest_brier_procedure": "B::v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+      "probability_n": 174,
+      "beats_neutral_025": false
+    },
+    {
+      "target": "rec",
+      "combined_wins": 194,
+      "combined_decided": 337,
+      "combined_rate": 0.5756676557863502,
+      "combined_leaders": [
+        "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::P2_EXACT_LINE_CDF-v1"
+      ],
+      "lowest_brier": 0.2654175788003575,
+      "lowest_brier_procedure": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+      "probability_n": 337,
+      "beats_neutral_025": false
+    },
+    {
+      "target": "rec_yd",
+      "combined_wins": 184,
+      "combined_decided": 337,
+      "combined_rate": 0.5459940652818991,
+      "combined_leaders": [
+        "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory::H-CURRENT-COMMON::P2_EXACT_LINE_CDF-v1",
+        "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::P2_EXACT_LINE_CDF-v1"
+      ],
+      "lowest_brier": 0.2744007329419561,
+      "lowest_brier_procedure": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+      "probability_n": 337,
+      "beats_neutral_025": false
+    }
+  ],
+  "retention": "Original v1 post-write cap failure preserved; complete9076411byte file exceeds old8388608cap by687803bytes. v2 reuses same bytes with0newprivate derivatives; no offhost recovery or fit-gate waiver claimed.",
+  "limitations": [
+    "FullPMF arithmetic and all output aggregates independently recomputed; histogram origin independently sampled for8hash-qualified own-run models rather than every original tree lookup.",
+    "Fit/query availability maxima and actual source hashes checked; underlying historical training-source vintages are not authenticated by a hash.",
+    "Timing-unverified last-recorded quote panel, retrospective primary participant support and exposed two weeks; not original issuance or a release-qualified selector.",
+    "Unknown source rows are technical unavailable, not intentional confidence abstention or completed fallback."
+  ]
+}

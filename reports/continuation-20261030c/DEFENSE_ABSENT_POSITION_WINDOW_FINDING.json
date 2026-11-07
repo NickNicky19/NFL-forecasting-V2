@@ -1,0 +1,102 @@
+{
+  "state": "CONFIRMED_NARROWER_LAST_FOUR_OBSERVED_POSITION_GROUPS",
+  "calendar_position_group_slots": 9552,
+  "observed_position_groups": 9546,
+  "absent_groups": 6,
+  "absent_group_metadata": [
+    {
+      "game_id": "2023_05_NYG_MIA",
+      "defense": "NYG",
+      "position": "TE",
+      "season": 2023,
+      "week": 5
+    },
+    {
+      "game_id": "2023_05_CIN_ARI",
+      "defense": "ARI",
+      "position": "TE",
+      "season": 2023,
+      "week": 5
+    },
+    {
+      "game_id": "2023_07_PIT_LA",
+      "defense": "LA",
+      "position": "TE",
+      "season": 2023,
+      "week": 7
+    },
+    {
+      "game_id": "2023_08_KC_DEN",
+      "defense": "KC",
+      "position": "TE",
+      "season": 2023,
+      "week": 8
+    },
+    {
+      "game_id": "2025_02_NE_MIA",
+      "defense": "NE",
+      "position": "TE",
+      "season": 2025,
+      "week": 2
+    },
+    {
+      "game_id": "2025_18_NYJ_BUF",
+      "defense": "BUF",
+      "position": "TE",
+      "season": 2025,
+      "week": 18
+    }
+  ],
+  "affected_query_window_counts": [
+    {
+      "scope": "historical",
+      "feature_floor": 2022,
+      "target": "anytime_td",
+      "query_cells": 11
+    },
+    {
+      "scope": "historical",
+      "feature_floor": 2022,
+      "target": "nick-chart-ppr-v1",
+      "query_cells": 11
+    },
+    {
+      "scope": "historical",
+      "feature_floor": 2022,
+      "target": "rec",
+      "query_cells": 11
+    },
+    {
+      "scope": "historical",
+      "feature_floor": 2022,
+      "target": "rec_yd",
+      "query_cells": 11
+    },
+    {
+      "scope": "historical",
+      "feature_floor": 2022,
+      "target": "rush_att",
+      "query_cells": 11
+    },
+    {
+      "scope": "historical",
+      "feature_floor": 2022,
+      "target": "rush_rec_yd",
+      "query_cells": 11
+    },
+    {
+      "scope": "historical",
+      "feature_floor": 2022,
+      "target": "rush_yd",
+      "query_cells": 11
+    }
+  ],
+  "unique_affected_queries_by_scope": {
+    "historical:2022": 77
+  },
+  "actual_method": "Last4 earlier eligible OBSERVED qualified-position groups; missing values inside existing groups consume slots. Entire absent position group is not padded as unknown calendar slot.",
+  "interpretation": "No future leakage, no missing group converted to zero. Sourcecontract/window-description limitation. Calendar-padding is a separate mechanism requiring a new version; frozen model/prediction/score bytes unchanged.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

@@ -1,0 +1,57 @@
+{
+  "state": "CHECKER_ATTEMPTS_PRESERVED",
+  "attempts": [
+    {
+      "checker": "check_archive_capacity_independent.py",
+      "attempt": 1,
+      "state": "SCHEMA_ASSUMPTION_FAILED_BEFORE_REVIEW_OUTPUT",
+      "error": "KeyError:id",
+      "reason": "2024 upload record stores ID under response; 2025 stores top-level ID.",
+      "correction": "Read supported top-level or nested receipt ID and require exact match to downloaded ID.",
+      "producer_artifacts_changed": false,
+      "resource_unmeasured": null
+    },
+    {
+      "checker": "check_scheduled_window_independent.py",
+      "attempts_before_success": 3,
+      "state": "READER_ADAPTER_REPRESENTATION_BRIDGE_CORRECTED",
+      "reason": "Independent workload reader uses Decimal; production feature adapter deliberately accepts native float. Initial adapter comparison rejected Decimal exposure, and a separate diagnostic showed zero compatible groups in the wrongly bridged adapter only.",
+      "correction": "Convert workload primitives to float only for the production-adapter comparison; retain independent arithmetic and source values. League numeric comparisons allow normal summation precision.",
+      "producer_artifacts_changed": false,
+      "resource_unmeasured": null
+    },
+    {
+      "checker": "check_history_adjacent_independent.py",
+      "attempts_before_success": 2,
+      "state": "EMPTY_SOURCE_SCHEMA_HANDLED",
+      "reason": "Empty paired-loss rows intentionally omit candidate_error, comparator_error and weekly_paired_sums_counts rather than claiming zero error.",
+      "correction": "Treat absent empty-state numeric fields as unknown/None and empty weekly maps as empty; all positive-support comparisons unchanged.",
+      "producer_artifacts_changed": false,
+      "resource_unmeasured": null
+    },
+    {
+      "checker": "check_recovery_delta_independent.py",
+      "attempts_before_success": 2,
+      "state": "PROOF_DISCOVERY_AND_PUBLIC_ALIAS_SCHEMA_CORRECTED",
+      "reason": "A valid standalone restoration receipt is named PRIVATE_REVIEW_CSV.json; the first discovery pass searched RESTOR names only. Identical published bytes can have several accepted path aliases, while the initial checker compared only the last alias.",
+      "correction": "Include the explicit positively qualified CSV receipt and check the chosen published path against its own accepted Git/manifest binding. All scientific map/blob assertions and original producer bytes remain unchanged.",
+      "producer_artifacts_changed": false,
+      "resource_unmeasured": null
+    },
+    {
+      "checker": "CURRENT_RANKING_DRAFT_FINDING",
+      "state": "RAW_DATE_SCHEMA_COUNT_CORRECTED",
+      "reason": "Original chart correction source omits evaluation-date fields; normalized dates come from its source-bound projection. First checker incorrectly counted zero omitted median rows.",
+      "correction": "Use source season and source-bound normalized dates; confirmed eleven omitted full-primary median views. Incorrect count draft preserved.",
+      "producer_artifacts_changed": false
+    },
+    {
+      "checker": "check_procedure_rankings_independent.py",
+      "state": "FINAL_REPORT_RELATIVE_PATH_SERIALIZATION_FIXED",
+      "reason": "All ranking assertions completed, then output relative_to failed on an unresolved relative CLI path.",
+      "correction": "Resolve the CLI ranking directory before producing a public repository-relative link; no ranking math changed.",
+      "producer_artifacts_changed": false
+    }
+  ],
+  "new_fits": 0
+}

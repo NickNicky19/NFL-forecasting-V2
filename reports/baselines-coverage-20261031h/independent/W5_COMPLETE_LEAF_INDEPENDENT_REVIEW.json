@@ -1,0 +1,47 @@
+{
+  "state": "PASS_INDEPENDENT_COMPLETE_LEAF_CDF_DIRECTIONS_PROPER_SCORES_SIDE_COUNTS_K",
+  "panels": [
+    {
+      "panel": "W5",
+      "score_views": 7760,
+      "law_products": 80,
+      "admitted_law_views": 4848,
+      "proper_probability_rows": 4848,
+      "side_triplets": 2560,
+      "K_lists": 720,
+      "parent_hash_unchanged": true,
+      "exact_complete_law_mask_equals_parent_P1": true,
+      "grade_states": {
+        "LOSS": 2224,
+        "WIN": 2624,
+        "ABSTAIN": 88
+      },
+      "redacted_examples": {
+        "LOSS": {
+          "source_safe_id": "8bea3f9b47f521f2bf97c48961c297aa53fd78799f4b60a73f8ca06108fc61de",
+          "method_id": "LEAF-02dfffb59f5e4713db",
+          "target": "pass_int",
+          "selected_side": "over",
+          "actual_vs_line": "less"
+        },
+        "WIN": {
+          "source_safe_id": "6385ad8d3f2b7f419243a96353e6ddf0b30e5abc6031864e6a8cea33e10d11fa",
+          "method_id": "LEAF-02dfffb59f5e4713db",
+          "target": "pass_int",
+          "selected_side": "over",
+          "actual_vs_line": "greater"
+        }
+      },
+      "main_scores_sha256": "f24a531b17bd856bf8c8ea31730c8c8b72c6c9dfea988eea0f8955d06cbcc81f"
+    }
+  ],
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_grades": 0,
+  "scope": "Every newCDF split/direction/grade/loss/score count and side partition; representative underlyinghistogram restoration checked separately. No newbootstrap recomputation here.",
+  "limitations": [
+    "Multiple overlappinglaw products/views are not independentNFLobservations.",
+    "MODELED_APPEARANCE probabilities do not authenticate bookmaker settlement or prices.",
+    "No actualstatisticalpush occurs on these offeredhalfpointpanels; integerpush/void fixtures independently checked in priorenginecontinuityreceipt."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "state": "PASS",
+  "private_source_sha256": "6130073206a97d889d2babce5a866e0ab4524e68ca3d7ddb89ab4fa39d7da7e3",
+  "explicit_side_triads_reconciled": 192,
+  "weekly_to_cumulative_method_target_views": 64,
+  "representative_win_loss_side_buckets_verified": 16,
+  "examples": "First chronological available record in each target/selected-side/WIN-or-LOSS bucket; values remain in existing private source, no new derivative.",
+  "coverage": [
+    {
+      "target": "pass_yd",
+      "method_rows": 1024,
+      "available_law_rows": 1008,
+      "technical_unavailable_rows": 16,
+      "available_law_fallback_counts": {
+        "no_model_role_prior": 388,
+        "none": 504,
+        "cold_start_role_prior": 116
+      },
+      "unissued_fallback_state": "UNKNOWN_NOT_LEARNED_OR_COMPLETED_FALLBACK"
+    },
+    {
+      "target": "rush_yd",
+      "method_rows": 2896,
+      "available_law_rows": 2784,
+      "technical_unavailable_rows": 112,
+      "available_law_fallback_counts": {
+        "none": 2068,
+        "no_model_role_prior": 384,
+        "cold_start_role_prior": 332
+      },
+      "unissued_fallback_state": "UNKNOWN_NOT_LEARNED_OR_COMPLETED_FALLBACK"
+    },
+    {
+      "target": "rec",
+      "method_rows": 5792,
+      "available_law_rows": 5440,
+      "technical_unavailable_rows": 352,
+      "available_law_fallback_counts": {
+        "none": 4040,
+        "no_model_role_prior": 752,
+        "cold_start_role_prior": 648
+      },
+      "unissued_fallback_state": "UNKNOWN_NOT_LEARNED_OR_COMPLETED_FALLBACK"
+    },
+    {
+      "target": "rec_yd",
+      "method_rows": 5776,
+      "available_law_rows": 5440,
+      "technical_unavailable_rows": 336,
+      "available_law_fallback_counts": {
+        "none": 4032,
+        "no_model_role_prior": 736,
+        "cold_start_role_prior": 672
+      },
+      "unissued_fallback_state": "UNKNOWN_NOT_LEARNED_OR_COMPLETED_FALLBACK"
+    }
+  ],
+  "weekly_reversal": {
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::P2_EXACT_LINE_CDF-v1",
+    "control": "C::P3_DIRECT",
+    "W2": {
+      "candidate_wins": 89,
+      "control_wins": 85,
+      "n": 161,
+      "win_change": 4
+    },
+    "W3": {
+      "candidate_wins": 105,
+      "control_wins": 109,
+      "n": 176,
+      "win_change": -4
+    },
+    "cumulative": {
+      "candidate_wins": 194,
+      "control_wins": 194,
+      "n": 337
+    },
+    "scope": "Weekly reversal only; no older-season persistence established."
+  },
+  "prior_point_comparisons_verified": 24,
+  "prior_comparison_source_sha256": "77a7afb23af0c9df01c2086344825b330a3ce840b04580471979ede9044c1aa4",
+  "no_new_fits_or_inference": true,
+  "limitation": "No new policy/side inversion or claimthat adding a law improved forecast direction; comparisons and sourceperiods remain exposed/timing-unverified."
+}

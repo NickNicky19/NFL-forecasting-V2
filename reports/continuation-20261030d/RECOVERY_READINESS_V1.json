@@ -1,0 +1,28 @@
+{
+  "schema": "v2-recovery-readiness-not-a-fit-gate-v1",
+  "state": "BLOCKED_FRESH_RETENTION_NOT_COMPLETED",
+  "recorded_at_utc": "2026-10-30T20:28:38.259571+00:00",
+  "recovery_plan": {
+    "path": "reports/continuation-20261030d/ARTIFACT_RECOVERY_STATUS.json",
+    "sha256": "7ce075fc7b853a646f79795bb7133b597ee5dbeaa6cb7f5f21240e8cd8d516de"
+  },
+  "positive_proof_review": {
+    "path": "reports/continuation-20261030d/RECOVERY_PROOF_V3_INDEPENDENT_REVIEW.json",
+    "sha256": "d9bc3bb14ebfa1e067aa582123fb4f6ffd3af772d752b2e2127a711f6ad675ef"
+  },
+  "provider_attempts": {
+    "path": "reports/continuation-20261030d/PRIVATE_STORAGE_ATTEMPTS_V1.json",
+    "sha256": "19fc6e81dbd7bef5177c6ae25c67ea3ea6670dc6c2d16a501391da24733a8a82"
+  },
+  "pending_parts": 53,
+  "full_restore_pass": false,
+  "archives_verified": false,
+  "source_file_map_checked_after_fresh_remote_restore": false,
+  "sole_worker_release_issued": false,
+  "accepted_backlog_bytes": 1093747658,
+  "separately_prepared_2021_source_bytes": 2536759,
+  "backlog_plus_2021_source_bytes": 1096284417,
+  "new_fit_calls": 0,
+  "new_forecasts": 0,
+  "note": "This factual blocked-state receipt is deliberately not a successful restoration gate and cannot authorize fitting."
+}

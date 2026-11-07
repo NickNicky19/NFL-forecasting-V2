@@ -1,0 +1,16 @@
+{
+  "protocol_id": "v2-olderseason-paired-uncertainty-v1",
+  "registered_at_utc": "2026-10-30T16:53:15.061983+00:00",
+  "code_sha256": "f55e847f6c13ce891bfa5f9539b245a4f8dbb83657940f3c9b57f15f9f7e3585",
+  "code": "nfl_v2/paired_uncertainty.py",
+  "bootstrap": "500PCG64resamplesofwholeobservedweekswithreplacement;seed1703resetpercontrast;rowweightedpairedsums/sampledrowcounts;linear2.5/97.5percentiles",
+  "minimum_week_clusters": 8,
+  "game_sensitivity": "clusterinfluence(sumdelta_g-meandelta*n_g),G/(G-1),normal1.96SE;notindependentweeklyconfirmation",
+  "nonfinite": "originalpositiveinfinitePMFlossretained;undefineddifference/relativechangeNULLwithreason",
+  "negative_delta": "candidatebetter",
+  "selection": "Exposedretrospectiveprocedures;notmultiplicity/selectionadjusted;noNFLsamplescreatedbybootstrap",
+  "tests_run": 4,
+  "tests_status": "PASS",
+  "new_nfl_fits": 0,
+  "new_current2026_week8_outcomes_read": 0
+}

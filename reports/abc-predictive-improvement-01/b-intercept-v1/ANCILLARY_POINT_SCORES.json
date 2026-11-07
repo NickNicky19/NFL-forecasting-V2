@@ -1,0 +1,70 @@
+[
+  {
+    "record_id": "B-IMPROVEMENT01-ORIGINAL-PT-MEAN",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B::C02_HMULTI_ORIGINAL_W8_CAPTURED_MEAN_UNCHANGED",
+    "product_id": "original_mean_ancillary_not_repaired_probability_law_mean",
+    "target": "pass_td",
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "evaluation_panel_id": "ORIGINAL_B0_ANCILLARY_CURRENT_FINAL_LABELS",
+    "history_regime": "H-MULTI",
+    "forecast_rows": 28,
+    "admitted_forecast_rows": 26,
+    "unavailable_forecasts": 2,
+    "unique_games": 13,
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 13,
+        "denominator": 26
+      },
+      "abs_le_1": {
+        "numerator": 13,
+        "denominator": 26
+      },
+      "abs_lt_5": {
+        "numerator": 26,
+        "denominator": 26
+      },
+      "abs_le_5": {
+        "numerator": 26,
+        "denominator": 26
+      },
+      "abs_lt_10": {
+        "numerator": 26,
+        "denominator": 26
+      },
+      "abs_le_10": {
+        "numerator": 26,
+        "denominator": 26
+      },
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 26
+      }
+    },
+    "evidence": "REPRODUCED_FROM_ORIGINAL_SAVED_MEAN_WITH_CURRENT_FINAL_LABELS",
+    "unchanged_in_B1": true,
+    "n": 26,
+    "mae": 1.047684533302226,
+    "mse": 1.443691435117116,
+    "rmse": 1.2015371134996689,
+    "bias": -0.026022678704091542,
+    "p90_abs": 1.5028231716655513,
+    "p95_abs": 1.5113642554087074,
+    "max_abs": 3.17392435000649,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.5,
+    "abs_le_1": 0.5,
+    "abs_lt_5": 1.0,
+    "abs_le_5": 1.0,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  }
+]

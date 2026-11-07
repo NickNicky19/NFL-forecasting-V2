@@ -1,0 +1,27 @@
+{
+  "state": "PRESERVED_READ_PARAMETER_VALIDATION_FAILURES_BEFORE_PROVIDER_OPERATION",
+  "count": 5,
+  "attempts": [
+    {
+      "operation": "approvedfoldermetadata",
+      "error": "fileIdrequired; initialurlargumentcorrected",
+      "provider_write": false
+    },
+    {
+      "operation": "approvedfolderlist",
+      "error": "priornormalizedURLnull; groundedfolderIDusedincanonicalreadURL",
+      "provider_write": false
+    },
+    {
+      "operation": "Driveexportsearches",
+      "count": 3,
+      "error": "unsupportedtop_kargument; fixedtotopnwithsameread-onlyqueries",
+      "provider_write": false
+    }
+  ],
+  "later_supported_reads_succeeded": true,
+  "new_fit_calls": 0,
+  "new_scores": 0,
+  "NFL_sample_count": 0,
+  "private_metadata_saved_outside_public_repository": true
+}

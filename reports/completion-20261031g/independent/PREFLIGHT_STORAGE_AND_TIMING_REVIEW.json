@@ -1,0 +1,93 @@
+{
+  "state": "PASS_REUSED_F_HASHES_STORAGE_GATE_AND_REPRESENTATIVE_FEATURE_TIMING",
+  "checked_at_utc": "2026-10-31T01:25:58.980305+00:00",
+  "source_score_sha256": "7c19218c98c165d19b28ba7816e3ae33c888063b913709cb418d425b938c37bc",
+  "F_regraded": false,
+  "F_code_unchanged": true,
+  "last_storage_status_sha256": "f7458a34111c3a4a0e8ae7bfdffccfd91d173fa288118a089a132a06e33beb9e",
+  "last_storage_check_at": "2026-10-30T22:28:11.475571+00:00",
+  "remaining_original_parts": 53,
+  "remaining_original_bytes": 1093747658,
+  "applicable_quota": "UNKNOWN_IN_LAST_SUPPORTED_READ",
+  "account_owner_match_verified": true,
+  "large_fit_recovery_gate": "NOT_PASSED",
+  "new_uploads": 0,
+  "representative_timing": [
+    {
+      "procedure_group": "hgb-history-v1 pass_att.json.gz",
+      "fit_receipt": "reports/continuation-20261029/hgb-history-v1/W07-pass_att-H-MULTI-absolute_error_point-FIT.json",
+      "fit_receipt_sha256": "64f77c6d49d84658427fcdaab396c3943418b0d0e11c450141c7b20f5b307803",
+      "feature_packet_logical_member": "hgb-history-v1/query-features/W07-pass_att.json.gz",
+      "feature_packet_sha256": "5605bd8d2af352da6b2c6b4280dfc883aec8b525defbf35458c9299be2fc5dd9",
+      "query_rows": 31,
+      "source_availability_only_pass": 26,
+      "source_availability_only_later": 5,
+      "training_availability_fields": {
+        "latest_training_feature_available": 1791738000.0,
+        "latest_training_label_available": 1792455300.0
+      },
+      "final_forecast_admission": "NOT_ESTABLISHED_BY_TIMESTAMP_ENVELOPE_ALONE"
+    },
+    {
+      "procedure_group": "distribution-wave-v2 COMMON.json.gz",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W07-pass_att-H-MULTI-COMMON-regularized_glm_law-FIT.json",
+      "fit_receipt_sha256": "7549b9265605b39b958142110be8f181c64376604251ef5004bff01f7b4b496d",
+      "feature_packet_logical_member": "distribution-wave-v2/query-features/W07-pass_att-H-MULTI-COMMON.json.gz",
+      "feature_packet_sha256": "2c45b9e13b27bb53ef5d101671731ddf204c124c9616687b3db5af0833a1f649",
+      "query_rows": 31,
+      "source_availability_only_pass": 26,
+      "source_availability_only_later": 5,
+      "training_availability_fields": {
+        "latest_training_feature_available": 1791738000.0,
+        "latest_training_label_available": 1792455300.0
+      },
+      "final_forecast_admission": "NOT_ESTABLISHED_BY_TIMESTAMP_ENVELOPE_ALONE"
+    },
+    {
+      "procedure_group": "qualified-defense-information-v1 D1.json.gz",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/W07-pass_att-H-MULTI-COMMON-D1-FIT.json",
+      "fit_receipt_sha256": "ee5962778adbf0eefd32fc7a3cbaf01fd3f3a1fff05df9e7416901179cd91f7c",
+      "feature_packet_logical_member": "qualified-defense-information-v1/query-features/W07-pass_att-H-MULTI-COMMON-D1.json.gz",
+      "feature_packet_sha256": "08fbc18cf447422c3c30f85e1c1f0ba2c8ff593fbe214c0e4d96f56d5f108282",
+      "query_rows": 31,
+      "source_availability_only_pass": 22,
+      "source_availability_only_later": 9,
+      "training_availability_fields": {
+        "latest_training_consumed_feature_available": 1791738000.0,
+        "latest_training_label_available": 1792455300.0
+      },
+      "final_forecast_admission": "NOT_ESTABLISHED_BY_TIMESTAMP_ENVELOPE_ALONE"
+    },
+    {
+      "procedure_group": "qualified-defense-information-v1 D2.json.gz",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/W07-pass_att-H-MULTI-COMMON-D2-FIT.json",
+      "fit_receipt_sha256": "cda216200886a6b00c423a17cfbd03ffcb5f0f9548f804fb4c4730eec7604b07",
+      "feature_packet_logical_member": "qualified-defense-information-v1/query-features/W07-pass_att-H-MULTI-COMMON-D2.json.gz",
+      "feature_packet_sha256": "93580d689a9699fe53b094fad2f7a7373829f48bd2da7660a9309002aa5813d7",
+      "query_rows": 31,
+      "source_availability_only_pass": 4,
+      "source_availability_only_later": 27,
+      "training_availability_fields": {
+        "latest_training_consumed_feature_available": 1791764400.0,
+        "latest_training_label_available": 1792455300.0
+      },
+      "final_forecast_admission": "NOT_ESTABLISHED_BY_TIMESTAMP_ENVELOPE_ALONE"
+    }
+  ],
+  "source_availability_counts_are_not_forecast_admission": true,
+  "C02_base_projected_feature_vectors_checked": 31,
+  "source_available_queries_with_clock_age_change": 26,
+  "C02_no_age_vectors_on_that_subset": 26,
+  "earlier_retained_threshold_rows_with_exact_known_position_and_target_kickoff": 25,
+  "known_target_time_contract_assessment": "Legitimate NEW retrospective reconstruction if target kickoff and query context are proven known at t; source data gated independently at t; saved vector, model/prior/transformation/fallback chronology proven unchanged. It is not the earlier-current-clock refresh recipe or original issuance. Source availability alone does not prove vector equivalence.",
+  "next_checks": [
+    "Qualify each newly selected immutable snapshot with actual server-bound evidence before outcomes.",
+    "Audit exact full-pool intersections, strict source arrival boundaries, known position/team/opponent and fallback inputs.",
+    "Check every new score denominator/side/ranking view after the executor produces it."
+  ],
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "current2026_Week8_outcomes_read": 0
+}

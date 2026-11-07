@@ -1,0 +1,107 @@
+{
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "retained_model_shape_only": [
+    {
+      "baseline": 4.0,
+      "model_sha256": "43088adeed1bb4ad459989ec7054522a2fcbe3e81ec9763de865028b92f305a4",
+      "policy_id": "H-CURRENT-COMMON",
+      "split_features": {
+        "lag1_age_days": 28,
+        "lag1_value": 39,
+        "lag2_age_days": 37,
+        "lag2_value": 33,
+        "lag3_age_days": 50,
+        "lag3_value": 31,
+        "lag4_age_days": 53,
+        "lag4_value": 17,
+        "mean3": 45,
+        "mean8": 92,
+        "position_QB": 2,
+        "position_RB": 1
+      },
+      "training_n": 745,
+      "tree_leaf_counts": {
+        "6": 5,
+        "7": 10,
+        "8": 49
+      }
+    },
+    {
+      "baseline": 4.0,
+      "model_sha256": "8d7c67875ec5dc4b78a1e0e8ba0e0cb70696ff906670e622359572474c6edddc",
+      "policy_id": "H-RECENT-COMMON",
+      "split_features": {
+        "lag1_age_days": 23,
+        "lag1_value": 57,
+        "lag2_age_days": 38,
+        "lag2_value": 17,
+        "lag3_age_days": 16,
+        "lag3_value": 28,
+        "lag4_age_days": 34,
+        "lag4_value": 24,
+        "mean3": 68,
+        "mean8": 129,
+        "n8": 1,
+        "position_QB": 3
+      },
+      "training_n": 2974,
+      "tree_leaf_counts": {
+        "7": 10,
+        "8": 54
+      }
+    },
+    {
+      "baseline": 4.0,
+      "model_sha256": "f1eec9e4f007f79a2ac329f6735b09e1e76109509331f6547f912adff140b0b5",
+      "policy_id": "H-MULTI-COMMON",
+      "split_features": {
+        "lag1_age_days": 19,
+        "lag1_value": 64,
+        "lag2_age_days": 29,
+        "lag2_value": 16,
+        "lag3_age_days": 3,
+        "lag3_value": 14,
+        "lag4_age_days": 29,
+        "lag4_value": 17,
+        "mean3": 80,
+        "mean8": 152,
+        "n3": 4,
+        "n8": 1,
+        "position_QB": 12,
+        "position_RB": 8
+      },
+      "training_n": 9492,
+      "tree_leaf_counts": {
+        "8": 64
+      }
+    },
+    {
+      "baseline": 4.0,
+      "model_sha256": "340cca880d0f4882d98eec164ffa7258b1e5ec472ca5c19460401681deb01ce8",
+      "policy_id": "H-CURRENT-STRICT",
+      "split_features": {
+        "lag1_age_days": 44,
+        "lag1_value": 49,
+        "lag2_age_days": 30,
+        "lag2_value": 51,
+        "lag3_age_days": 36,
+        "lag3_value": 21,
+        "lag4_age_days": 11,
+        "lag4_value": 2,
+        "mean3": 77,
+        "mean8": 29,
+        "position_QB": 22,
+        "position_RB": 3
+      },
+      "training_n": 745,
+      "tree_leaf_counts": {
+        "5": 7,
+        "6": 2,
+        "7": 48,
+        "8": 7
+      }
+    }
+  ],
+  "week8_outcomes_read": 0
+}

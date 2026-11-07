@@ -1,0 +1,20 @@
+{
+  "state": "PASS_SINGLE_DELTA_SCOPE_WRAPPER_STATIC_REVIEW_BEFORE_ACTUAL_MEMBER_VERIFICATION",
+  "at_utc": "2026-10-31T20:54:14.651596+00:00",
+  "wrapper_sha256": "8d521dbcdf87f148ce6cd00c2f16be71cfa2c26687ceb992514fa3cb5fe6ea61",
+  "reviewed_core_sha256": "9ad615ff52947df2bba07991121033804673ff62fb7a5d7083dda00f779cf5d3",
+  "parent19fixture_receipt_sha256": "9bd029007df0037412088ad857ef3244b63b36bdb32e322abbff044816d21adf",
+  "checks": [
+    "Single frozen delta archive only; all other archive IDs rejected",
+    "Original13ordered complete-part checks, whole archive hash and byte count retained",
+    "All1788 regular members stream-hashed; no filesystem extraction",
+    "Exact compact archive-map and deterministic external-pretty map bytes bound separately",
+    "All1787content-addressed blobs match4255frozen map aliases with SHA/byte equality",
+    "Other three archives explicitly incomplete; global gate false; no worker release",
+    "Fresh output directories and exclusive file creation preserve originals and prior receipts"
+  ],
+  "new_external_transfers": 0,
+  "new_actual_restorations": 0,
+  "new_model_calls": 0,
+  "qualification": "This static review permits the authorized narrow byte-verification operation, not a restoration claim. Actual13source chains, whole and inner byte hashes are reviewed separately after execution."
+}

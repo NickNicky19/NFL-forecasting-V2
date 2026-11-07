@@ -1,0 +1,61 @@
+{
+  "state": "PASS_LOCAL_CHECKS",
+  "at_utc": "2026-11-07T14:42:09.655108+00:00",
+  "unit_tests": 485,
+  "commands": [
+    "python -m unittest discover -s tests",
+    "python tools/validate_checkpoint.py",
+    "python tools/check_result_index_coverage.py",
+    "python tools/check_analysis_index_coverage.py",
+    "python tools/check_prop_scoreboard_coverage.py"
+  ],
+  "result_index": {
+    "status": "PASS",
+    "indexed_records": 608623,
+    "registered_artifacts": 220,
+    "scope": "streamed coverage/hashes; not additional NFL evidence"
+  },
+  "analysis_index": {
+    "state": "PASS",
+    "canonical_evaluation_views": 124630,
+    "derived_comparison_views": 20706,
+    "status_counts": {
+      "PAIRED_LOSS_SCORED": 19553,
+      "NO_SUPPORTED_PAIRED_ROWS": 1153
+    },
+    "new_NFL_observations": 0
+  },
+  "prop_scoreboard": {
+    "NFL_outcome_rows_read": 0,
+    "groups": 124597,
+    "new_grades": 0,
+    "proper_views": 7332,
+    "selection_views": 373791,
+    "source_arrays": 103,
+    "state": "PASS_PROP_SCOREBOARD_COMPLETION_COVERAGE"
+  },
+  "new_NFL_observations_from_software": 0,
+  "new_private_derivative_rows": 0,
+  "budgets": {
+    "QB_base": {
+      "wall_seconds": 92.34590289199878,
+      "cpu_seconds": 161.110287128,
+      "peak_RSS_bytes": 223170560,
+      "optimizer_fits_charged": 893
+    },
+    "FTN_extension": {
+      "wall_seconds": 65.6075151440009,
+      "cpu_seconds": 98.87097033900001,
+      "optimizer_fits_charged": 52,
+      "peak_RSS_bytes": 187076608
+    }
+  },
+  "failures_preserved": [
+    "Pre-fitno_playfilter correction v1/v2",
+    "RelativeFTNoutputpath postwrite invocation failure; retainedfit reused",
+    "Verifieradapter mistakes retained underindependent",
+    "Staleperiod/controlhistory metadata correction, noNFLscoreschanged",
+    "Same-methodE0/E0 internalchecksumexcludedfromscientificpairedindex; originalsourcekept",
+    "Wronglocalcoveragecommandlookup corrected to existing required workflowcommand"
+  ]
+}

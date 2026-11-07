@@ -1,0 +1,103 @@
+{
+  "state": "PASS",
+  "source_bindings": [
+    {
+      "safe_id": "B_OWNER_LOCAL_C_MATCHED_ROWS_V2",
+      "sha256": "45cc345d19c0361e970107951e27b2b41779a6d86c5fdf5d06eedbae5ab348fb"
+    },
+    {
+      "safe_id": "B_OWNER_LOCAL_C_ADDITIONAL_ROWS_V3",
+      "sha256": "fa2224d3d6cc99f6a865a45f667e4fe98412710d6b99b51b5dda7e598c12177d"
+    },
+    {
+      "safe_id": "B_OWNER_LOCAL_C_GLM_LAW_ROWS_V4",
+      "sha256": "fbbdfc928fdafe7617e206fb0feb701c6454e740e0bcc5323693989d96584f71"
+    }
+  ],
+  "comparison_source_sha256": "58146bf09932958eed0349c9e925e87816dd5e740ba174fcf4f0fc8b976f8d96",
+  "pairs_verified": 4,
+  "findings": [
+    {
+      "target": "pass_yd",
+      "candidate": "B::empirical-player-history-control-v1::H-MULTI-EMPIRICAL::empirical_mean",
+      "control": "B::empirical-player-history-control-v1::H-RECENT-EMPIRICAL::empirical_mean",
+      "common_decided": 63,
+      "candidate_wins": 35,
+      "control_wins": 31,
+      "extra_candidate_wins": 4,
+      "candidate_win_rate_change": 0.06349206349206349,
+      "disagreements": 28,
+      "game_clusters": 32,
+      "week_clusters": 2,
+      "game_cluster_normal95_win_rate_sensitivity": [
+        -0.10815349123929863,
+        0.2351376182234256
+      ],
+      "week_interval": null,
+      "next_distinct_score_and_all_top_ties_verified": true
+    },
+    {
+      "target": "rush_yd",
+      "candidate": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::mean",
+      "common_decided": 174,
+      "candidate_wins": 100,
+      "control_wins": 96,
+      "extra_candidate_wins": 4,
+      "candidate_win_rate_change": 0.022988505747126436,
+      "disagreements": 10,
+      "game_clusters": 32,
+      "week_clusters": 2,
+      "game_cluster_normal95_win_rate_sensitivity": [
+        -0.008449906548655496,
+        0.05442691804290837
+      ],
+      "week_interval": null,
+      "next_distinct_score_and_all_top_ties_verified": true
+    },
+    {
+      "target": "rec",
+      "candidate": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::lower_median",
+      "control": "B::v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory::H-CURRENT-COMMON::mean",
+      "common_decided": 337,
+      "candidate_wins": 194,
+      "control_wins": 193,
+      "extra_candidate_wins": 1,
+      "candidate_win_rate_change": 0.002967359050445104,
+      "disagreements": 79,
+      "game_clusters": 32,
+      "week_clusters": 2,
+      "game_cluster_normal95_win_rate_sensitivity": [
+        -0.04388011369116739,
+        0.0498148317920576
+      ],
+      "week_interval": null,
+      "next_distinct_score_and_all_top_ties_verified": true
+    },
+    {
+      "target": "rec_yd",
+      "candidate": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-CURRENT-COMMON::mean",
+      "control": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::mean",
+      "common_decided": 337,
+      "candidate_wins": 188,
+      "control_wins": 187,
+      "extra_candidate_wins": 1,
+      "candidate_win_rate_change": 0.002967359050445104,
+      "disagreements": 17,
+      "game_clusters": 32,
+      "week_clusters": 2,
+      "game_cluster_normal95_win_rate_sensitivity": [
+        -0.01831079699910816,
+        0.024245515099998366
+      ],
+      "week_interval": null,
+      "next_distinct_score_and_all_top_ties_verified": true
+    }
+  ],
+  "limitations": [
+    "Own-pool descriptive maxima and next distinct observed score; not a chronological selection policy.",
+    "Cluster sensitivity intervals are not selection/multiplicity-adjusted; two weeks do not support a week interval.",
+    "Receiving-yard gain is1win against next strongest distinct Bscore, not12;12is the separate Cdirect comparison.",
+    "No new fits, predictions, scorer invocation or production changes."
+  ]
+}

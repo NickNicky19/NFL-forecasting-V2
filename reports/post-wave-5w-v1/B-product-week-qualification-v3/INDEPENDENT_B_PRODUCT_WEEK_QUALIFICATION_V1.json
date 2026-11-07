@@ -1,0 +1,326 @@
+{
+  "state": "PASS_B_ONLY_PRODUCT_WEEK_COUNTS_AND_REPRESENTATIVE_SOURCE_WITNESSES",
+  "at_utc": "2026-11-05T00:30:51.650898+00:00",
+  "verification_code_sha256": "452d1ced6c8787f0d24ef0a737c55bf19a1f93860ec846c572eb632a8fd24ef5",
+  "qualification_receipt_sha256": "99c3136262e5215afe9652c7024cc2a2e878b2ed44bbb86e8b2bac12daed6c20",
+  "qualification_compressed_sha256": "3da8e999983378dac77b6b7d6280c1c453dea231579e169be58437d04c1471c8",
+  "all_product_view_internal_and_CSV_rows_checked": 41404,
+  "count_floor_product_views": 1596,
+  "duplicate_week_witness_ids_within_product": 0,
+  "distinct_procedure_ID_strings_not_families": 4242,
+  "historical_and_current_seasons_kept_separate": true,
+  "representative_bound_weekly_index_rows_checked": 158,
+  "immutable_index_shards_read": 80,
+  "representative_7_and_72_week_witnesses": [
+    {
+      "qualification_id": "B5W-4f096d47c78eb142b4c0",
+      "procedure": "hgb-direct-history-controls-v1:absolute_error_point",
+      "category": "pass_yd",
+      "product": "absolute_error_point",
+      "history": "H-CURRENT",
+      "explicit_scored_weeks": 7,
+      "seasons": {
+        "2026": {
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "n": 242
+        }
+      }
+    },
+    {
+      "qualification_id": "B5W-e22538ea74a8c6ba9b02",
+      "procedure": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs",
+      "category": "pass_yd",
+      "product": "lower_median",
+      "history": "H-CURRENT",
+      "explicit_scored_weeks": 7,
+      "seasons": {
+        "2026": {
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "n": 242
+        }
+      }
+    },
+    {
+      "qualification_id": "B5W-0d7d3a8e881f4911e9f7",
+      "procedure": "empirical-player-history-control-v1",
+      "category": "pass_yd",
+      "product": "lower_median",
+      "history": "H-CURRENT",
+      "explicit_scored_weeks": 72,
+      "seasons": {
+        "2022": {
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "n": 633
+        },
+        "2023": {
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "n": 663
+        },
+        "2024": {
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "n": 664
+        },
+        "2025": {
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "n": 664
+        }
+      }
+    },
+    {
+      "qualification_id": "B5W-778ddfa538a780cd029a",
+      "procedure": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+      "category": "pass_yd",
+      "product": "absolute_error_point",
+      "history": "H-CURRENT",
+      "explicit_scored_weeks": 72,
+      "seasons": {
+        "2022": {
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "n": 633
+        },
+        "2023": {
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "n": 663
+        },
+        "2024": {
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "n": 664
+        },
+        "2025": {
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "n": 664
+        }
+      }
+    }
+  ],
+  "new_exact_policy_fullsystem": [
+    {
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0",
+      "actual_weeks": [
+        [
+          2026,
+          8
+        ]
+      ],
+      "week_count": 1
+    },
+    {
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1",
+      "actual_weeks": [
+        [
+          2026,
+          8
+        ]
+      ],
+      "week_count": 1
+    },
+    {
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+      "actual_weeks": [
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ]
+      ],
+      "week_count": 2
+    },
+    {
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+      "actual_weeks": [
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ]
+      ],
+      "week_count": 2
+    }
+  ],
+  "new_zero90_side_product_views_checked": 12,
+  "extra_new_score_rows": 816,
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_scores": 0,
+  "limits": [
+    "1596 is a count of typed product/side/history/role views meeting a retained-score week-count floor, not1596independent methods or an owner/scientific admission.",
+    "Full602201source-index rows were not re-audited numerically; all41404contribution rows received internal/set/count/CSV checks, with158representative exact weekly index witnesses and all newpolicy weeksets independently checked.",
+    "Previously reported evidence is not NFL label verification; code/source/role continuity and strongest-control/operational criteria remain separate.",
+    "Aggregate-only date spans and base-method training history do not add policy weeks. Fullsystem newranker has2rec/1PTweeks; actual learnedoutputhas1each per separate independent mask receipt; empty90policies have0.",
+    "No shared A/B/C master or new scoring pipeline created; this is a B-only verification contribution."
+  ]
+}

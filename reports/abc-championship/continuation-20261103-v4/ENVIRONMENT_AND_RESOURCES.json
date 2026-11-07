@@ -1,0 +1,43 @@
+{
+  "Python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "sklearn": "1.8.0",
+  "threads": 1,
+  "workers": 1,
+  "assistant_model_identifier": "NOT_EXPOSED_TO_EXECUTOR;NO_INVENTED_IDENTIFIER",
+  "execution_environment": "Managedworkspace connected/running; networkpolicyunrestricted enforced;noenvironmentsecrets reported",
+  "new_fits": 0,
+  "new_model_coefficient_inference": 0,
+  "new_issued_forecasts": 0,
+  "existing_immutable_forecasts_unchanged": true,
+  "new_threshold_CDF_queries": 3668,
+  "private_derived_manifests": [
+    {
+      "safe_id": "B_OWNER_LOCAL_C_MATCHED_ROWS_V2",
+      "sha256": "45cc345d19c0361e970107951e27b2b41779a6d86c5fdf5d06eedbae5ab348fb",
+      "bytes": 1157982,
+      "rows": 23232,
+      "offhost_restored": false,
+      "route": "EXISTING_APPROVED_OWNER_LOCAL_ANALYSIS_ONLY;NO_PRIVATE_LOCATOR"
+    },
+    {
+      "safe_id": "B_OWNER_LOCAL_C_ADDITIONAL_ROWS_V3",
+      "sha256": "fa2224d3d6cc99f6a865a45f667e4fe98412710d6b99b51b5dda7e598c12177d",
+      "bytes": 1464130,
+      "rows": 28552,
+      "offhost_restored": false,
+      "rights": "OWNER_LOCAL_B_RESTRICTED_ANALYSIS;PUBLIC_AGGREGATES_ONLY"
+    },
+    {
+      "safe_id": "B_OWNER_LOCAL_C_GLM_LAW_ROWS_V4",
+      "sha256": "fbbdfc928fdafe7617e206fb0feb701c6454e740e0bcc5323693989d96584f71",
+      "bytes": 245247,
+      "rows": 3872,
+      "offhost_restored": false
+    }
+  ],
+  "total_new_private_derived_bytes": 2867359,
+  "private_retention": "Boundedreconstructable ownerlocalderivatives, not offhostrestore; no globalfitgate waiver, no deletion/sharingchange/paidcall."
+}

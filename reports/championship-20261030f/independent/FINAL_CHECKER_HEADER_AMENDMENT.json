@@ -1,0 +1,6 @@
+{
+  "state": "CHECKER_HEADER_ASSUMPTION_AMENDMENT_NOT_INDEX_CORRECTION",
+  "at": "2026-10-31T00:13:39.663574+00:00",
+  "original_checker": "check_final_projection_failed_schema_v3.py",
+  "reason": "All index IDs/counts/kinds and every ancestor JSON/CSV hash passed. Final assertion incorrectly assumed all sixteen ancestor CSV parts shared one header. Ancestor already has multiple immutable schema headers; validation now checks their byte-identical per-part reuse and named-column reader contract, preserving all source bytes."
+}

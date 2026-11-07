@@ -1,0 +1,45 @@
+{
+  "source": {
+    "path": "reports/continuation-20261030d/history-adjacent-v1/HISTORY_COMPARISONS_2026.csv",
+    "sha256": "d31a090b339cfe620caa9d26aaf4619e666afbc122839e9389dee53fe69589aa"
+  },
+  "views": [
+    {
+      "category": "pass_yd",
+      "full_n": 242,
+      "full_MAE_change": -24.330578512396695,
+      "common_learned_n": 127,
+      "common_learned_MAE_change": -1.7244094488188977,
+      "any_arm_fallback_n": 115,
+      "any_arm_fallback_MAE_change": -49.29565217391304,
+      "fallback_share_of_total_error_reduction": 0.9628057065217391,
+      "scope": "Same-row RECENT minus CURRENT. Negative MAE change favors RECENT. Fallback composition is not isolated learned-model skill."
+    },
+    {
+      "category": "pass_cmp",
+      "full_n": 242,
+      "full_MAE_change": -3.2520661157024793,
+      "common_learned_n": 127,
+      "common_learned_MAE_change": 0.047244094488188976,
+      "any_arm_fallback_n": 115,
+      "any_arm_fallback_MAE_change": -6.895652173913043,
+      "fallback_share_of_total_error_reduction": 1.0076238881829733,
+      "scope": "Same-row RECENT minus CURRENT. Negative MAE change favors RECENT. Fallback composition is not isolated learned-model skill."
+    },
+    {
+      "category": "pass_att",
+      "full_n": 242,
+      "full_MAE_change": -5.351239669421488,
+      "common_learned_n": 127,
+      "common_learned_MAE_change": 0.023622047244094488,
+      "any_arm_fallback_n": 115,
+      "any_arm_fallback_MAE_change": -11.28695652173913,
+      "fallback_share_of_total_error_reduction": 1.0023166023166024,
+      "scope": "Same-row RECENT minus CURRENT. Negative MAE change favors RECENT. Fallback composition is not isolated learned-model skill."
+    }
+  ],
+  "checks": "Counts and paired loss sums reconcile.",
+  "new_scores": 0,
+  "new_NFL_observations": 0,
+  "source_vintage": "Revised-source chronological reconstruction, not authenticated historical NFL publications."
+}

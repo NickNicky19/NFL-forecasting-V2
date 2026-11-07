@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nfl-forecasting-v2"
+version = "0.1.0"
+description = "Independent reproducible NFL forecast audit and benchmark"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+boosting = ["numpy==2.3.5", "scikit-learn==1.8.0"]
+
+[tool.setuptools.packages.find]
+include = ["nfl_v2*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

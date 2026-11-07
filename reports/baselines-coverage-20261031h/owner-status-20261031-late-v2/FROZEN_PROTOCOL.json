@@ -1,0 +1,15 @@
+{
+  "protocol_id": "v2-H-post-window-owner-served-readback-v2",
+  "registered_at_utc": "2026-10-31T14:59:48.531856+00:00",
+  "state": "FROZEN_BEFORE_REFRESH",
+  "prior_acquisition_sha256": "fc55ca7b59e0fd38e8cdd8efd65dc6324a2efee8020f931d8c51f71c46015399",
+  "prior_consumer_execution_sha256": "cd3663bb3386b38d60ad327928c38ce756290e10a636c3f01bc2e100f5677e0e",
+  "rule": "Fresh GET pointer/payload/consumer/app/board. If hashes identical, reuse prior executed exact-function parity; no unchanged VM rerun. Only refresh metadata-clock availability. If changed, retain bytes and require separately frozen new parity.",
+  "scope": "No target-game outcomes/statistics decoded or used. No model inference or forecast/capture. Public Actions/policy status and current served-source byte readback.",
+  "budget": {
+    "max_wall_seconds": 300,
+    "max_RSS_bytes": 1073741824,
+    "max_private_bytes": 16777216,
+    "max_threads": 2
+  }
+}

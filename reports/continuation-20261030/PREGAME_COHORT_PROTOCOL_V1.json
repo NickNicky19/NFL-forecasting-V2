@@ -1,0 +1,64 @@
+{
+  "protocol_id": "v2-prior-workload-rank-views-20261030-v1",
+  "registered_at_utc": "2026-10-30T00:23:33.489804+00:00",
+  "kind": "new saved-row evaluation views; no model refits",
+  "history_source": "same pinned2022-2026W1-W7 nflverse files; no new Week8 outcomes",
+  "retrospective_query_source": "original15574fixed2026W1-W7 query cells; source-row/position eligibility remains retrospective",
+  "prospective_query_source": "originalfrozen1951Week8 feed queries; anynewclaims exclude elapsed orclosedT90games",
+  "ranking_cutoff": "earliest scheduled kickoff minus90minutes for each historical week; newfutureversion realregistrationclock",
+  "available_rule": "sourcekickoff+7days strictlyless thanrankingcutoff; publicationassumptionnotauthenticvintage",
+  "workload_fields": {
+    "passing": "attempts",
+    "rush_yd/rush_att": "carries",
+    "rec/rec_yd": "targets",
+    "rush_rec_yd/anytime_td": "carries+targets"
+  },
+  "history_window": "last3 earlieravailable playerstat slots; missing slots retained; average finite compatible counts; no targetoutcomes or competitorpredictions",
+  "ranking": "perseason/week/target/population, descending prioropportunitymean; exactplayerIDties; unknownpriorworkload unranked; uniqueplayersrankonce; retrospectivefixedqueryuniverse notoffered/starteruniverse",
+  "rank_views": [
+    "all",
+    "top10",
+    "top15",
+    "top20",
+    "rank1_10",
+    "rank11_15",
+    "rank16_20",
+    "rank21plus",
+    "unranked"
+  ],
+  "workload_bands": {
+    "passing": [
+      20,
+      35
+    ],
+    "rushing": [
+      5,
+      12
+    ],
+    "receiving": [
+      3,
+      7
+    ],
+    "combined_or_TD": [
+      5,
+      12
+    ]
+  },
+  "band_rule": "unknown if nohistory; zero ifmean0; low0<mean<=firstcut; middlefirstcut<mean<=secondcut; high>secondcut; workloadproxy notinjury/full-limited news",
+  "scoring": [
+    "full_system",
+    "own_learned_only",
+    "three_history_learned_overlap"
+  ],
+  "learned": "forecastfallback exactlynone; samecompetitormembership frozenbeforelossinspection; shared3historyintersection computedwithoutlookingatloss",
+  "strict_policy_note": "strictmodelpredictions may be viewed through historicallydefined diagnostic cohorts; cohortmembership is not a predictor or claim ofpurecurrent fullforecastuniverse",
+  "metrics": "MAE/MSE/RMSE/bias/p90/p95/max/exact and strictinclusive1,5,10; TD Brier/logloss; nullforunknown; no fabricatedaccuracypercent",
+  "uncertainty": "weekcluster insufficiency below8; gamecluster sandwich SE sensitivity only >=8games; no independentNFLcountsfromviews",
+  "budgets": {
+    "max_prediction_rows": 2500000,
+    "max_score_views": 30000,
+    "wall_seconds": 600,
+    "new_nfl_fits": 0
+  },
+  "chart": "all16componentcontract mustbequalified separately; nopseudochart"
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "v2-independent-prop-conditioning-clarification-v1",
+  "state": "PRE_OUTCOME_INTERPRETATION_AMENDMENT_NO_NUMERICAL_CHANGE",
+  "original_boundary_plan_sha256": "c41d7d9e2af56a3a1a47d85edc44f371c763cddb6722fb741342cd2626d17af3",
+  "cause": "The parent's initial protocol explicitly names nonvoid conditional probabilities. Some original boundary-plan fields used the shorter word conditional for a decisive-result normalization. Those are distinct conditioning events.",
+  "definitions": {
+    "nonvoid": "Condition on action/nonvoid. Push remains a third outcome; over+under+push=1 within that condition.",
+    "decisive": "Condition additionally on not pushing. Normalize over and under by over+under; undefined when decisive mass is zero.",
+    "unconditional_placed": "Win/loss probabilities per placed unit; residual push/void mass refunds under the registered contract. EV=p_win*(decimal_odds-1)-p_loss."
+  },
+  "fixture_interpretations": [
+    {
+      "id": "EV01",
+      "unchanged_values": {"unconditional_EV":"0.1","conditional_EV":"0.2","decisive_mass":"0.5"},
+      "clarification": "conditional_EV=0.2 is conditional_decisive_EV. With zero void mass, nonvoid EV remains0.1 and push mass remains0.5. Multiplying0.2 by decisive mass0.5 recovers0.1."
+    },
+    {
+      "id": "PICK04",
+      "unchanged_selection": "over",
+      "clarification": "0.55/0.45 are decisive-normalized diagnostics. Under the parent's nonvoid policy and zero void mass, use over0.33/under0.27/push0.40; do not discard push for proper scoring or priced EV. Both comparisons choose Over."
+    },
+    {
+      "id": "PROB06",
+      "unchanged_selection": "ABSTAIN",
+      "clarification": "A law concentrated on the line has undefined decisive probabilities. Its nonvoid probabilities remain over0/under0/push1; P2 abstains on tied win probabilities. The zero-decisive-mass diagnostic is separate from missing nonvoid participation probability."
+    }
+  ],
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "current2026_week8_outcomes_read": 0
+}

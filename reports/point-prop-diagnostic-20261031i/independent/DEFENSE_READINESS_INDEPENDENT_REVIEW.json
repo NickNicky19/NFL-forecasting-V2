@@ -1,0 +1,35 @@
+{
+  "state": "PASS_INDEPENDENT_D1_D2_SEASON_BOUND_FEATURE_ALGEBRA_AND_PLAN_COUNTS",
+  "preflight_receipt_sha256": "49e2187265d5f42ff13b8f7c1e3db7f7f6b3a91463f89e8c473833b0615056ef",
+  "plan_sha256": "6ba0f11f22aa5be57cf827db1d8691bafbc66be9216c0eaa0c7066840e64e870",
+  "source_code_hash_bindings": 10,
+  "logical_origin_cells_per_window": {
+    "observed": 6912,
+    "scheduled": 6912
+  },
+  "unique_computational_origins_per_window": {
+    "observed": 5184,
+    "scheduled": 5184
+  },
+  "output_views_per_window": {
+    "observed": 13248,
+    "scheduled": 13248
+  },
+  "independent_fixture_target": "pass_cmp",
+  "fixture_strict_mean": 20,
+  "fixture_strict_conversion_rate": 0.5,
+  "fixture_missing_group_slots_preserved": true,
+  "fixture_exact_availability_excluded": true,
+  "fixture_older_league_prior_removed": true,
+  "new_NFL_observations": 0,
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_scores": 0,
+  "readiness": "SYNTHETIC_ADAPTER_AND_METADATA_PLAN_ONLY; NO_FULL_RUNNER_INTEGRATION_OR_ADMISSION",
+  "history2022": "RECENT_PROXY_NOT_EXACT_PRIOR_YEAR",
+  "limits": [
+    "Computationaloriginsarenotactualfitcalls;startupmayabstain/usefallback.",
+    "Eachwindowhas13248plannedoutputviews;thetwoalternativewindowsmustnotbeconflated.",
+    "Recovery/admission,exactsourcequerypopulation,learnerintegrationandchartqualificationstillrequired."
+  ]
+}

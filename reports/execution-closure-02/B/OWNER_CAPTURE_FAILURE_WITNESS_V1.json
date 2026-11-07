@@ -1,0 +1,27 @@
+{
+  "schema": "B-owner-read-only-execution-witness-v1",
+  "checked_at_utc": "2026-11-05T23:19:33.773485+00:00",
+  "repository": "NickNicky19/nicks-expert-nfl-picks",
+  "head_sha": "af8bc14abe4a4148a3f84e6c131775923b5300f4",
+  "run_id": 42108386576,
+  "job_id": 127529183478,
+  "run_url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/actions/runs/42108386576",
+  "observed_result": "FAILURE_BEFORE_GENERATION_AND_CAPTURE",
+  "decoded_log_sha256": "27366ef3341107e6b7a605c3e3a9aae0fc0fc3286e3f9a40c14e7cbb9a89c868",
+  "relevant_log_lines": [
+    "2026-11-05T21:02:27.3063197Z browserType.launch: Timeout 180000ms exceeded.",
+    "2026-11-05T21:02:27.3073455Z     at /home/runner/work/nicks-expert-nfl-picks/nicks-expert-nfl-picks/tests/test-weekly-primary-forecast.cjs:15:34",
+    "2026-11-05T21:02:27.3083401Z   name: 'TimeoutError'",
+    "2026-11-05T21:02:57.3527105Z ##[error]Process completed with exit code 1."
+  ],
+  "verified_scope": "Chromium launch timed out after180000ms inside required offline test; later forecast/capture/persistence steps skipped. This is not a proved forecasting arithmetic or data defect. Underlying browser launch cause unresolved.",
+  "retained_failure_commit": "86a7b6fee9372b371ab6b2e7d012c49db680fde4",
+  "next_game_kickoff_utc": "2026-11-06T01:15:00Z",
+  "next_game_t_minus_90_utc": "2026-11-05T23:45:00Z",
+  "deadline_source": "Existing production Week9 schedule/board; not newly acquired feed",
+  "execution_owner": "Retained original-site owner",
+  "next_action": "Owner diagnoses browser startup and executes the existing authorized update/capture route if still eligible; do not count schedule or previous packet as this failed execution. B has no dispatch/production lease.",
+  "B_mutations_to_owner_repository": 0,
+  "new_schedule_or_capture": false,
+  "publication_not_owner_acknowledgment": true
+}

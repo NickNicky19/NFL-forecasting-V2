@@ -1,0 +1,69 @@
+{
+  "all_fresh_part_bytes": 422659018,
+  "all_fresh_part_files_preserved": 21,
+  "archive_states": [
+    {
+      "artifact_id": "V2-PRIVATE-SEASON-2022-V2",
+      "expected_parts": 11,
+      "fresh_downloaded_parts": 1,
+      "full_archive_restored": false,
+      "missing_upload_bytes": 209715200,
+      "missing_upload_parts": 10,
+      "positive_uploaded_parts": 1
+    },
+    {
+      "artifact_id": "V2-PRIVATE-SEASON-2023-COMPLETE-V1",
+      "expected_parts": 17,
+      "fresh_downloaded_parts": 1,
+      "full_archive_restored": false,
+      "missing_upload_bytes": 335544320,
+      "missing_upload_parts": 16,
+      "positive_uploaded_parts": 1
+    },
+    {
+      "artifact_id": "V2-PRIVATE-SEASON-2024-V2",
+      "expected_parts": 23,
+      "fresh_downloaded_parts": 6,
+      "full_archive_restored": false,
+      "missing_upload_bytes": 251658240,
+      "missing_upload_parts": 12,
+      "positive_uploaded_parts": 11
+    },
+    {
+      "artifact_id": "V2-PRIVATE-RECOVERY-DELTA-20261030D-0001",
+      "expected_parts": 13,
+      "fresh_downloaded_parts": 13,
+      "full_archive_restored": true,
+      "missing_upload_bytes": 0,
+      "missing_upload_parts": 0,
+      "positive_uploaded_parts": 13
+    }
+  ],
+  "archive_verification_transfer_calls": 0,
+  "complete_fresh_delta_archive_bytes": 263613679,
+  "complete_fresh_delta_parts": 13,
+  "delta_restoration_receipt": {
+    "path": "reports/right-and-wrong-diagnostic-20261031k/recovery-preflight/delta-fresh-restore-v1/DELTA_FRESH_RESTORATION_RECEIPT.json",
+    "sha256": "c3b11fcc2e26a75ce2106009e15ebc58544ff5c894598572666baccf86ff14e1"
+  },
+  "global_old_recovery_gate_cleared": false,
+  "initial_missing_upload_bytes": 1093747658,
+  "initial_missing_upload_parts": 53,
+  "local_workspace_free_bytes": 12630990848,
+  "max_concurrent_readbacks": 2,
+  "new_NFL_fits": 0,
+  "new_model_inference": 0,
+  "new_old_part_upload_successes_root": 15,
+  "new_old_part_uploaded_bytes_root": 296829898,
+  "new_scientific_scores": 0,
+  "no_upload_by_source_agent": true,
+  "other_partial_downloads_stopped_after_inflight_batch": true,
+  "recorded_at_utc": "2026-10-31T20:55:51.916846+00:00",
+  "remaining_missing_upload_bytes": 796917760,
+  "remaining_missing_upload_parts": 38,
+  "root_first_tail_cache_reused": true,
+  "scope_note": "ProviderstorageQuotaExceeded stopsallmoreuploads; actualuploaderidentity/quota attribution handledbyroot. Allsourcebytes/successes/errors preserved. Deltaonlyproofdoesnotreplace other3archives or20priorproofrequirements.",
+  "source_agent_new_direct_part_downloads": 20,
+  "state": "DELTA_COMPLETE_OTHER_THREE_ARCHIVES_BLOCKED_NO_GLOBAL_FIT_RELEASE",
+  "worker_release": false
+}

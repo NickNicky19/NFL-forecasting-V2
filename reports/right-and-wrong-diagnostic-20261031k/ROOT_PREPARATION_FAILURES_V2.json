@@ -1,0 +1,27 @@
+{
+  "state": "PRESERVED_ROOT_METADATA_PREPARATION_FAILURES",
+  "failures": [
+    {
+      "step": "rootprotocolcreation",
+      "reason": "Existing directory assertion stopped before protocol/metric writes; new protocol then created immutably within existingtaskdirectory.",
+      "metric_writes": 0
+    },
+    {
+      "step": "privateDriveoldmetadataJSONcomparison",
+      "reason": "Oversized prior metadata output truncated; parsingfailed beforepersist or comparison. Corrected by local filecomparison andprivate-only fresh metadata snapshots.",
+      "metric_writes": 0,
+      "provider_read_failures": 0
+    },
+    {
+      "step": "rootsoftware/source manifest inlineprepare",
+      "reason": "Pythonelse token missing whitespace; whole heredoc failed to parse before any file/registry writes. Replaced by auditable idempotent register_k_checkpoint helper.",
+      "metric_writes": 0,
+      "registry_writes_before_failure": 0
+    }
+  ],
+  "new_NFL_fits": 0,
+  "new_NFL_forecasts": 0,
+  "new_NFL_grades": 0,
+  "bulk_upload_attempts": 0,
+  "prior_version": "ROOT_PREPARATION_FAILURES_V1.json"
+}

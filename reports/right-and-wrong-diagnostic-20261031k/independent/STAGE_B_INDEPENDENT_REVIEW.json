@@ -1,0 +1,987 @@
+{
+  "state": "PASS_INDEPENDENT_K_STAGE_B_EXACT_ROWS_BUCKET_BANDS_METRICS_AND_EXAMPLES",
+  "root_protocol_sha256": "e8fd291408a36b230e77139d6508ff3f7b874bd582175c3adb12acc8cf897bec",
+  "stage_protocol_sha256": "4b3f780d055d4339cd45c8548e87d0583a6d7c32d6f92cd7b67553360881723d",
+  "score_sha256": "cafcf74b97ea3c81b2b67d7c6adab5328d57d800706177eac66ea92eb22e2ce3",
+  "input_sha256": "60f888075c8a03ca697f3624578e3d7e02cf00ed9212e03eed3d8c0622eb53ec",
+  "private_derivative_sha256": "b7693091f61f5be73c76e64fe96e9b9d571182a2d002fe6910319a23453b8193",
+  "checker_sha256": "4062f611f46e30fde9d5e4f7074dfd6fa3c8319a3f15568fe0df4b137a2ad1f3",
+  "exact_recipe_target_outputs": 145,
+  "source_rows_and_scalar_identity_checks": 31908,
+  "all_diagnostic_metric_views_recomputed": 6380,
+  "all_frozen_examples_verified": 870,
+  "focal_summaries": [],
+  "opaque_first_focal_case_witnesses": [
+    {
+      "recipe": [
+        "pass_att",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-9de80a3dc75b9203ed4af73f"
+    },
+    {
+      "recipe": [
+        "pass_att",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-db5b57e0c1e28cce57ce296c"
+    },
+    {
+      "recipe": [
+        "pass_att",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-f435eb1955ceb11a6e6bd7c2"
+    },
+    {
+      "recipe": [
+        "pass_att",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-46bb453d83536d52c9326f46"
+    },
+    {
+      "recipe": [
+        "pass_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-733e310d16ea790d85a75488"
+    },
+    {
+      "recipe": [
+        "pass_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-5277fd5c7af7c59bf50f57d3"
+    },
+    {
+      "recipe": [
+        "pass_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-1b57dc844c61381fddf7ca8a"
+    },
+    {
+      "recipe": [
+        "pass_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-7b3b90117c52ce8c2c91b4b3"
+    },
+    {
+      "recipe": [
+        "pass_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-531cf1ab8323d2734fb147f6"
+    },
+    {
+      "recipe": [
+        "pass_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-00e43298a8c53716977dc578"
+    },
+    {
+      "recipe": [
+        "pass_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-3cf75f4bce182acc924f629e"
+    },
+    {
+      "recipe": [
+        "pass_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-8f1607a6dad4cb53c42f1b7b"
+    },
+    {
+      "recipe": [
+        "pass_int",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": null
+    },
+    {
+      "recipe": [
+        "pass_int",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": null
+    },
+    {
+      "recipe": [
+        "pass_int",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-a57d68db9c86ce52b498596b"
+    },
+    {
+      "recipe": [
+        "pass_int",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-a8f9f08aa66ed7d674d2ffcc"
+    },
+    {
+      "recipe": [
+        "pass_int",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-b3ae63adc0caa69547d9002f"
+    },
+    {
+      "recipe": [
+        "pass_int",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-2113089803052358c9d26468"
+    },
+    {
+      "recipe": [
+        "pass_int",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-5a5f72c8ec8b69b1fd04e102"
+    },
+    {
+      "recipe": [
+        "pass_int",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-844279ed1b4ddd82fe394863"
+    },
+    {
+      "recipe": [
+        "pass_int",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-03afe3d2ccebeee4ddddf1b3"
+    },
+    {
+      "recipe": [
+        "pass_int",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-a3d707adb8445278933d74a0"
+    },
+    {
+      "recipe": [
+        "pass_int",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-0d2fa8cb6af72806d642e368"
+    },
+    {
+      "recipe": [
+        "pass_int",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-705f42dc265bc948e7cbb99b"
+    },
+    {
+      "recipe": [
+        "pass_td",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-4817a45a0b8d2e8a6a18bf74"
+    },
+    {
+      "recipe": [
+        "pass_td",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-b2b8163d6b75efe1473b7c24"
+    },
+    {
+      "recipe": [
+        "pass_td",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-87eb4a8c23b14fd416c43da8"
+    },
+    {
+      "recipe": [
+        "pass_td",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-9b5952e488c40fe6b2c80a47"
+    },
+    {
+      "recipe": [
+        "pass_td",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-d88ee9ff83ff6be2ee90b14a"
+    },
+    {
+      "recipe": [
+        "pass_td",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-e39303f1f106d158735b8f13"
+    },
+    {
+      "recipe": [
+        "pass_td",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-4c26700029c350081bc92e0f"
+    },
+    {
+      "recipe": [
+        "pass_td",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-e2f123f37831a0cd5c3d7d8f"
+    },
+    {
+      "recipe": [
+        "pass_td",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-6254f25c0a04acd1df77c750"
+    },
+    {
+      "recipe": [
+        "pass_td",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-53179a67da80b3889f7d40de"
+    },
+    {
+      "recipe": [
+        "pass_td",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-5e055df75e4d10e860515bbd"
+    },
+    {
+      "recipe": [
+        "pass_td",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-8f6484a80a343c2e69c5a42a"
+    },
+    {
+      "recipe": [
+        "rec",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-4cde19122dc29090a76bc319"
+    },
+    {
+      "recipe": [
+        "rec",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-a2c12e1d5392b9917d7dc4cd"
+    },
+    {
+      "recipe": [
+        "rec",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-7742a5b5974347c2bdc9ad76"
+    },
+    {
+      "recipe": [
+        "rec",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-d8f51e000bca34579bab9cf6"
+    },
+    {
+      "recipe": [
+        "rec",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-596aceff0d6f38e6484f6f1c"
+    },
+    {
+      "recipe": [
+        "rec",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-0883b8ee709ed37923855200"
+    },
+    {
+      "recipe": [
+        "rec",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-1d08d60993cec45d1ea76f53"
+    },
+    {
+      "recipe": [
+        "rec",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-fe8627b5305b5b43237b6c95"
+    },
+    {
+      "recipe": [
+        "rec",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-65fa195beb2233e630148ac0"
+    },
+    {
+      "recipe": [
+        "rec",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-6d191462c0abe455b0dcd73e"
+    },
+    {
+      "recipe": [
+        "rec",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-7a01f8034622a226fe12e76e"
+    },
+    {
+      "recipe": [
+        "rec",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-6b9d07a36790f972b8d2603d"
+    },
+    {
+      "recipe": [
+        "rec_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-9781eb53cab6ce177df52601"
+    },
+    {
+      "recipe": [
+        "rec_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-f54824517474720ca2220802"
+    },
+    {
+      "recipe": [
+        "rec_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-712f18c92e211458533de1fc"
+    },
+    {
+      "recipe": [
+        "rec_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-a171ec28ef742658c8ee7b36"
+    },
+    {
+      "recipe": [
+        "rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-ec47d4c34a142c83e84243b7"
+    },
+    {
+      "recipe": [
+        "rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-eec0668281092e3bbf94505e"
+    },
+    {
+      "recipe": [
+        "rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-b5fde769fac30d2f98def29a"
+    },
+    {
+      "recipe": [
+        "rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-71a45186f25d633585a85184"
+    },
+    {
+      "recipe": [
+        "rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-2e0f5bf8c3b8a7107faf8908"
+    },
+    {
+      "recipe": [
+        "rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-bc6939eae539ee28e5d9af75"
+    },
+    {
+      "recipe": [
+        "rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-57d98d5e2e0b3e9e44fb0b8a"
+    },
+    {
+      "recipe": [
+        "rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-9a13c2fb325d596dd46b0cc5"
+    },
+    {
+      "recipe": [
+        "rush_att",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": null
+    },
+    {
+      "recipe": [
+        "rush_att",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": null
+    },
+    {
+      "recipe": [
+        "rush_att",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-d1d35298b579ace539ac8478"
+    },
+    {
+      "recipe": [
+        "rush_att",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-bbea05c68b051c98bb137413"
+    },
+    {
+      "recipe": [
+        "rush_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-1a9fe12449a12e02035f7449"
+    },
+    {
+      "recipe": [
+        "rush_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-f411c02482b4de8f44e3dcdc"
+    },
+    {
+      "recipe": [
+        "rush_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-e71c11f469d5484eaafab7a0"
+    },
+    {
+      "recipe": [
+        "rush_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-e5ea3f49c7627bd6e2cfb576"
+    },
+    {
+      "recipe": [
+        "rush_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-f2f044cfd36642e55e789830"
+    },
+    {
+      "recipe": [
+        "rush_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-260b3c6c72e46fe2a510e22f"
+    },
+    {
+      "recipe": [
+        "rush_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-dfcb39f60fae62bef6623f30"
+    },
+    {
+      "recipe": [
+        "rush_att",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-48b29e6565db205b75cdb1d4"
+    },
+    {
+      "recipe": [
+        "rush_rec_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-c74fdcd1d2ee57c9ddd9f5c8"
+    },
+    {
+      "recipe": [
+        "rush_rec_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-4867e0acd89ae85f914605b8"
+    },
+    {
+      "recipe": [
+        "rush_rec_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-b9f8ffe08c73ffb3bd5bb04f"
+    },
+    {
+      "recipe": [
+        "rush_rec_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-c3100a59cd7d3dfe8ff55d98"
+    },
+    {
+      "recipe": [
+        "rush_rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-bdb6b5a767e26632a8df9011"
+    },
+    {
+      "recipe": [
+        "rush_rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-cc217098f42d4c41835edf0e"
+    },
+    {
+      "recipe": [
+        "rush_rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-7a99fd906fedc861d32816e5"
+    },
+    {
+      "recipe": [
+        "rush_rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-617c6d98bcad2681e00f8e36"
+    },
+    {
+      "recipe": [
+        "rush_rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-7dba461195d4696c984241f5"
+    },
+    {
+      "recipe": [
+        "rush_rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-130535599855a30f7e844a70"
+    },
+    {
+      "recipe": [
+        "rush_rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-8ed59d64aca49233257d8f74"
+    },
+    {
+      "recipe": [
+        "rush_rec_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-65b5ef191bbb1f51ab755ed1"
+    },
+    {
+      "recipe": [
+        "rush_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-4aea707e0d55e8e076933de1"
+    },
+    {
+      "recipe": [
+        "rush_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-0e16fc46817674fbd06bac21"
+    },
+    {
+      "recipe": [
+        "rush_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-af8199332e7081a94a238e6c"
+    },
+    {
+      "recipe": [
+        "rush_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-796a0d366f57070ee693770b"
+    },
+    {
+      "recipe": [
+        "rush_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-f47f2fb8e99804bcf7d79888"
+    },
+    {
+      "recipe": [
+        "rush_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-0eb1b973f97cb0ad4ab3ec2e"
+    },
+    {
+      "recipe": [
+        "rush_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-b680a05f79da31225cb5e258"
+    },
+    {
+      "recipe": [
+        "rush_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-a89a14d25ad2a271f60bb2c4"
+    },
+    {
+      "recipe": [
+        "rush_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-51ea4361917c6650e4491d57"
+    },
+    {
+      "recipe": [
+        "rush_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-5ab2d840b2104aabb4bd2c45"
+    },
+    {
+      "recipe": [
+        "rush_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-f73b8f58abf5a470f8a86bcd"
+    },
+    {
+      "recipe": [
+        "rush_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-e5fe7309d8b2c5cdc914fc7a"
+    }
+  ],
+  "scope": [
+    "Separate Decimal calculation checks retained statistical grades, signed identities, all T/2T bounds and source row immutability; no producer diagnostic functions used.",
+    "Bookmaker unresolved contracts remain parallel; no betting settlement/price/ROI inferred.",
+    "Actual feature/model/context provenance receives a separate source audit; components remain absent for direct marginals.",
+    "These are posterior descriptive groups, not earlier-executable cohorts, causal tests, repairs or new ranking contenders."
+  ],
+  "new_models": 0,
+  "new_inference": 0,
+  "new_NFL_forecasts": 0,
+  "new_NFL_observations": 0,
+  "new_private_exports": 0
+}

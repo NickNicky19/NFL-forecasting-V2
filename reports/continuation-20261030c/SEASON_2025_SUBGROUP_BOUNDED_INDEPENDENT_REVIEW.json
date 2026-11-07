@@ -1,0 +1,65 @@
+{
+  "state": "PASS_FULL_SEASONAL_SELECTOR_REPLAY_AND_BOUNDED_FULL_SYSTEM_SUBGROUP_SCORES",
+  "season": 2025,
+  "source_score_sha256": "cf73b6bee45d1ea424eb04431726260086994182684d0fb0d12a9e558d42c6a9",
+  "source_protocol_sha256": "22400789f79eb90176828c33c19629ab665c5487292edd62d1fd8f41557c7fb1",
+  "membership_sha256": "e1394723c74d1a322a127a515a9da44298ce6b619b359606a001a4ba467855da",
+  "all_frozen_memberships": 45579,
+  "published_score_views": 8027,
+  "independently_replayed_fullsystem_score_views": 908,
+  "checks": {
+    "source_last3_missing_slot_and_clock_profiles": 45579,
+    "independent_ranks_nested_top_disjoint_and_bands": 45579,
+    "bounded_fullsystem_native_proper_precision_fields": 26092,
+    "independent_selected_cohort_membership_hashes": 1816,
+    "independent_primary_paired_metrics_memberships": 5448,
+    "explicit_infinite_NLL_state_checks": 396
+  },
+  "representative_win_loss": [
+    {
+      "direction": "loss",
+      "record_id": "SEASON-SUBGROUP-f18b918cafeeddf6bce5b036",
+      "target": "anytime_td",
+      "history": "H-CURRENT",
+      "product": "event_probability",
+      "cohort": "top10",
+      "n": 180,
+      "candidate_error": 0.28655723236006825,
+      "control_error": 0.28485106492890994,
+      "delta": 0.001706167431158312
+    },
+    {
+      "direction": "win",
+      "record_id": "SEASON-SUBGROUP-5c28efa25698c954665619ed",
+      "target": "nick-chart-ppr-v1",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "cohort": "top10",
+      "n": 180,
+      "candidate_error": 9.171555555555557,
+      "control_error": 9.190444444444445,
+      "delta": -0.01888888888888829
+    },
+    {
+      "direction": "tie",
+      "record_id": "SEASON-SUBGROUP-0db8c8b7971d8964e57cdf81",
+      "target": "pass_int",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "cohort": "top10",
+      "n": 180,
+      "candidate_error": 0.6388888888888888,
+      "control_error": 0.6388888888888888,
+      "delta": 0.0
+    }
+  ],
+  "scope": "Allselectorprofiles/ranks/bands; selectedfullsystemnative/proper/precision/membership+same-policyorderedcontrolcomparisons. Learnedintersections/globalreference72941sidecarnotfullyreplayed; separateknownfixedempiricalproductaliasdefectrequiresversionedcorrection. Sourceparticipantuniverse/commonoldselector notpurecurrentselectedsystem.",
+  "resource": {
+    "wall_seconds": 36.44879476300048,
+    "cpu_seconds": 36.422285236,
+    "peak_rss_bytes": 774610944
+  },
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

@@ -1,0 +1,67 @@
+{
+  "state": "PASS_INDEPENDENT_RANK_SUM_AND_RELIABILITY",
+  "source_rows_sha256": "4c119c973bb9c5c04673f8bc2d2d150213b4bb2cd183e0f33aafcd5c7a01c0eb",
+  "diagnostic_sha256": "d9059d32ea8c2e4df24e3fd6e46d3ac0c95c02d26318ec40f1f7387565547986",
+  "views_verified": 8,
+  "summary": [
+    {
+      "target": "pass_td",
+      "arm": 0,
+      "week": "8",
+      "n": 26,
+      "AUC": 0.4911242603550296
+    },
+    {
+      "target": "pass_td",
+      "arm": 1,
+      "week": "8",
+      "n": 26,
+      "AUC": 0.4911242603550296
+    },
+    {
+      "target": "rec",
+      "arm": 0,
+      "week": "2",
+      "n": 161,
+      "AUC": 0.4454236239950526
+    },
+    {
+      "target": "rec",
+      "arm": 0,
+      "week": "3",
+      "n": 176,
+      "AUC": 0.618230458045152
+    },
+    {
+      "target": "rec",
+      "arm": 0,
+      "week": "ALL",
+      "n": 337,
+      "AUC": 0.5328835529111772
+    },
+    {
+      "target": "rec",
+      "arm": 1,
+      "week": "2",
+      "n": 161,
+      "AUC": 0.4454236239950526
+    },
+    {
+      "target": "rec",
+      "arm": 1,
+      "week": "3",
+      "n": 176,
+      "AUC": 0.6112488581495498
+    },
+    {
+      "target": "rec",
+      "arm": 1,
+      "week": "ALL",
+      "n": 337,
+      "AUC": 0.5287576143929735
+    }
+  ],
+  "PT_fixed_intercept_preserves_AUC": true,
+  "rec_pooled_AUC_delta": -0.004125938518203642,
+  "scope": "AUC is independent pairwise rank-sum arithmetic; proper calibration scores, direction accuracy and coverage remain separate. Rolling fitted intercepts can alter pooled cross-batch ranks; no causal feature explanation or new forecast."
+}

@@ -1,0 +1,37 @@
+{
+  "scope": "B_ONLY_EVIDENCE_CONTRIBUTION_NOT_C_SHARED_MASTER",
+  "adopted_revision": "POST-WAVE-5W-v1",
+  "source_manifest": "reports/abc-predictive-improvement-01/b-intercept-v1/results-index-v5/INDEX_MANIFEST.json",
+  "source_manifest_sha256": "00f460aa5b1581af8f0afa6f95b92a7bbae91d9c133ace9bfff0ea6308589541",
+  "source_record_count": 602201,
+  "extra_new_policy_score_rows": 804,
+  "records_inspected": 603005,
+  "product_views": 41404,
+  "distinct_procedure_id_strings_NOT_method_family_count": 4242,
+  "floor_states": {
+    "BELOW_FIVE_EXPLICIT_SCORED_WEEKS": 35552,
+    "FIVE_WEEK_MINIMUM_MET": 1596,
+    "UNESTABLISHED_AGGREGATE_ONLY_WEEK_SUPPORT_PROOF_REQUIRED": 4256
+  },
+  "excluded_view_counts": {
+    "SOFTWARE_NOT_NFL_WEEKS": 32,
+    "SUBGROUP_VIEW_NOT_PRIMARY_UNIVERSE": 421809,
+    "CONDITIONAL_LEARNED_OR_OVERLAP_VIEW": 21278,
+    "INVALID_OR_SUPERSEDED": 3118,
+    "DIAGNOSTIC_NOT_PRIMARY_PRODUCT": 8772
+  },
+  "delivery": {
+    "json_path": "B_PRODUCT_WEEK_QUALIFICATION.json.gz",
+    "json_sha256": "9c20624cfd376cd253becdde84152964984619d0c0f73eddc210dc8f52d20ff1",
+    "json_uncompressed_sha256": "2dd2e2673dc43ea7719eef01a5d55a1d8c7997a3fad1ce96c8c0245c83f03b92",
+    "csv_path": "B_PRODUCT_WEEK_QUALIFICATION.csv.gz",
+    "csv_sha256": "7f419cd4798971405bbbe6188c1eb993d9cd2775b2f3dd6bd2331b0dffa9d16d"
+  },
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "wall_seconds": 72.42213989099946,
+  "coverage_boundary": "Explicit per-week positive score support only; aggregate date spans are not counted. Some completed historical aggregate tests need retained-row/week proof, not repeated fits. IDs/outputs/control-mask views and aliases are not independently tested method families.",
+  "does_not_claim_deployment_or_full_championship": true
+}

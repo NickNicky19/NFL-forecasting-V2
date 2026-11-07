@@ -1,0 +1,21 @@
+{
+  "state": "TERMINATED_METADATA_ONLY_PREPARATION_NO_SCORES",
+  "at": "2026-10-31T19:55:34.376603+00:00",
+  "code_sha256": "07c4f099f1b9e57bfc4b126116bd503fde64806a0a599ceb714f48acda5cb1bb",
+  "reason": "Adapter mistakenly recomputed a full grade-file SHA within every normalized row. Terminated own process before resource exhaustion; source hashes should be computed once per file.",
+  "exit_code": 143,
+  "resources_observed_before_termination": {
+    "elapsed_seconds_at_observation": 14,
+    "cpu_seconds_at_observation": 14,
+    "RSS_bytes_at_observation": 216100864,
+    "peak_RSS": "UNKNOWN; observedRSS is notpeak",
+    "final_wall_cpu": "NOT_RETAINED; >=observed14seconds"
+  },
+  "completed_output_directory_existed": false,
+  "new_private_bytes": 0,
+  "new_grades": 0,
+  "new_diagnostic_scores": 0,
+  "new_fits": 0,
+  "new_inference": 0,
+  "next_action": "Newpreflightidentity with per-file SHA caching; no completed study rerun"
+}

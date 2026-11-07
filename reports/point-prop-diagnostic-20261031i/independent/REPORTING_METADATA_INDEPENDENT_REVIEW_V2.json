@@ -1,0 +1,38 @@
+{
+  "state": "PASS_SOURCE_VINTAGE_CORRECTION_AND_CONTEXT_COVERAGE",
+  "canonical_score_sha256": "474039013174339b056a65ca046d1dfa1290887d820eda724a07fb9bb16c70c7",
+  "annotation_sha256": "18cfa205474bb54967ce316019a65df97f1558e0bce2a4b6fdb6d3492a62b1dc",
+  "default_view_sha256": "07e14aa29aabff9844e208deaeb0aff260cced4e5d1366642d5db0dd57963bce",
+  "context_extension_sha256": "2e13780b6f67f7d7c1e69502580018bd4c06cd69b755208dc9822d115978baa9",
+  "corrected_side_labels": 189,
+  "added_point_labels": 69,
+  "metadata_tiers": {
+    "SERVER_RETAINED_SAVED_PRECISION_POINT_AND_THRESHOLD;CURRENT_VINTAGE_QUALIFIED_LABELS;INTERNAL_MODEL_VINTAGE_UNVERIFIED;RETROSPECTIVE_P1_REPLAY": 16,
+    "QUALIFIED_SERVER_RETAINED_THRESHOLD_CONTEXT;CURRENT_VINTAGE_7DAY_FOOTBALL_KNOWN_TARGET_TIME_RECONSTRUCTION;NOT_ORIGINAL_ISSUANCE": 236,
+    "CURRENT_VINTAGE_FOOTBALL_RECONSTRUCTION;SAVED_KICKOFF_VECTOR_POPULATION_DIAGNOSTIC;NOT_ORIGINAL_ISSUANCE": 6
+  },
+  "context_bindings": 178,
+  "own_contexts": 36,
+  "paired_contexts": 136,
+  "broad_contexts": 6,
+  "focal_own_coverage": [
+    {
+      "target": "pass_cmp",
+      "available": 76,
+      "outer": 84,
+      "canonical_context_outer": 76,
+      "context_coverage": 0.9047619047619048
+    },
+    {
+      "target": "pass_yd",
+      "available": 80,
+      "outer": 84,
+      "canonical_context_outer": 80,
+      "context_coverage": 0.9523809523809523
+    }
+  ],
+  "canonical_scores_changed": false,
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_scores": 0
+}

@@ -1,0 +1,47 @@
+{
+  "state": "TWO_REFERENCE_MECHANISMS_REGISTERED",
+  "registered_protocol_sources": [
+    "probability/reference-v2/FROZEN_PROTOCOL.json",
+    "probability/w5-reference-v1/FROZEN_PROTOCOL.json"
+  ],
+  "contracts": [
+    {
+      "procedure_id": "B0_CONSTANT_HALF_NO_PUSH",
+      "procedure_kind": "PARAMETER_FREE_THRESHOLD_PROBABILITY_REFERENCE",
+      "formula": "p_over=.5,p_under=.5,p_push=0 for each retained threshold",
+      "fitting": "none",
+      "calibration": "none",
+      "products": [
+        "conditional_region_probabilities",
+        "half_categorical_Brier",
+        "categorical_log_loss"
+      ],
+      "history_regimes": "NOT_APPLICABLE_TO_PARAMETERS; H labels only identify the matched candidate mask",
+      "fallback": "none",
+      "selection_policy": "NOT_REGISTERED_REFERENCE_ONLY; not a global CDF or point forecast",
+      "source": "Actual retained threshold identity and qualified outcome for evaluation; no evaluated outcomes enter reference probability"
+    },
+    {
+      "procedure_id": "B1_EARLIER_SAME_POSITION_PREVALENCE",
+      "procedure_kind": "EARLIER_ONLY_EMPIRICAL_THRESHOLD_PROBABILITY_REFERENCE",
+      "formula": "Region counts among eligible same-position/target verified participants divided by their nonmissing eligible count; exact query line and signed official outcome",
+      "fitting": "Eligible prefix frequency estimation, not estimator .fit calls; unique prefix count is reported separately",
+      "history_regimes": {
+        "CURRENT": "earlier eligible2026",
+        "RECENT": "eligible2025+earlier2026",
+        "MULTI": "expanding eligible2022\u20132026",
+        "STRICT_CURRENT": "2026only, no older football priors/calibration"
+      },
+      "availability": "kickoff+7days strictly before the actual server-source decision clock; current/revised football vintage assumption disclosed",
+      "fallback": "Empty prefix uses explicitly named B0; no older-season borrowing",
+      "calibration": "none; no smoothing or evaluated-outcome fitted coefficients",
+      "selection_policy": "NOT_REGISTERED_REFERENCE_ONLY",
+      "population_limit": "Historical same-position participants may differ from offered stars/changed roles; no matched-information pure-learner claim"
+    }
+  ],
+  "aliases": "matched-to IDs and origin/history/output masks are evaluation views, not extra procedures",
+  "unavailable_targets": {
+    "nick-chart-ppr-v1": "No qualifying offered contract",
+    "anytime_td": "No qualifying offered event/price contract in these panels"
+  }
+}

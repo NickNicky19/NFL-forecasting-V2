@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "state": "PASS_ACTUAL_NEW_PACKET_SELECTED_FUNCTION_ADMISSION",
+  "audit_clock": "2026-10-31T18:46:30.977Z",
+  "source_commit": "305dacad91d593485c94bd9838ccf2d2464d9653",
+  "protocol_sha256": "8947ec8234918b67a564768baef36cc842f08ff1a390e843af0658db3cc4438d",
+  "helper_sha256": "102a388bfab72630a03a9aa33ada17a032a8692091db32c64175bd48143da15f",
+  "consumer_sha256": "d6657e82639aa001f64701672e25cc72bd6e55142127669a59396f9efe485a68",
+  "app_sha256": "30e8bc0e0b04a2da1e0a8e94e99a79ff62b5f1f67427169c6db93783807e452e",
+  "function_slices_sha256": [
+    "7c887b786d852968a253238036442fed3c91b513e29e1b5ccaf64e408f83ad02",
+    "bf786c7c82e97a6f75a0616c1531629cd9e2099eaef77565f3a5523059fae9d0",
+    "dfc540f87b44c490d5248070c1f246ef4d1da568cb0eb49f64d4fddc61683c3b",
+    "81ad3fe372c459bbf176abd008d7fe88acb31108977a8cb8cba25d1e6d69423f",
+    "1ad5a6d627fc76d1a8a852b3aa27f0925a6523443d9443c7cc87ef17b3e6a079",
+    "d964d2230bb91f13c47a30d906783f8534b33b334eae42a505bb540fe741b35b"
+  ],
+  "selected_payload_sha256": "499f485369216d10c93dcd941cb9a581d77632c25c8befa57d54ff0c1d6126ec",
+  "overlay_payload_sha256": "742f8e8286426a339e01c3088b85e22a0449e9231b7b7b9240fffa5a21773ab2",
+  "board_sha256": "cad9ffa77b329128147d82ce166d0c70c1b21c692631d59acbd1744f6b089133",
+  "projection_sha256": "50126c3bda7994ac123670b5ba329aab778f671eae657cfd744f8ed5b9dedca3",
+  "checks": [
+    {
+      "name": "Actual acquired selected validator admits new exact payload/board/overlay/pointer",
+      "status": "PASS",
+      "kind": "ACTUAL_SERVED_BYTES"
+    },
+    {
+      "name": "Actual visibleTopPicks returns12Over+12Under at the acquisition epoch",
+      "status": "PASS",
+      "kind": "ACTUAL_SERVED_BYTES"
+    },
+    {
+      "name": "First-prepared at kickoff rejects a row",
+      "status": "PASS",
+      "kind": "LABELLED_SOFTWARE_FIXTURE"
+    },
+    {
+      "name": "Package before prepared rejects envelope",
+      "status": "PASS",
+      "kind": "LABELLED_SOFTWARE_FIXTURE"
+    },
+    {
+      "name": "Ranking prepared after persisted publication rejects",
+      "status": "PASS",
+      "kind": "LABELLED_SOFTWARE_FIXTURE"
+    },
+    {
+      "name": "Changed first-prepared canonical witness rejects selected-row binding",
+      "status": "PASS",
+      "kind": "LABELLED_SOFTWARE_FIXTURE"
+    }
+  ],
+  "tests_run": 6,
+  "tests_passed": 6,
+  "selected_records": 24,
+  "by_side": {
+    "over": {
+      "admitted": 12,
+      "visible": 12,
+      "adaptive": 9,
+      "classic_reference": 3
+    },
+    "under": {
+      "admitted": 12,
+      "visible": 12,
+      "adaptive": 12,
+      "classic_reference": 0
+    }
+  },
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_captures": 0,
+  "new_grades": 0,
+  "NFL_outcomes_used": 0,
+  "NFL_statistic_scalars_decoded": 0,
+  "wall_seconds": 0.097,
+  "max_RSS_bytes": 66211840,
+  "scope": "Acquired exact function admission/visibility in isolatedVM with cached forecast/offer projection. No browserDOM/network screenshot, fullapp, NFL accuracy, current source-timestamp authentication or V2owner admission."
+}

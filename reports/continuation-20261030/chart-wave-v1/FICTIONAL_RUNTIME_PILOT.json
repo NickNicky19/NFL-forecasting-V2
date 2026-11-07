@@ -1,0 +1,29 @@
+{
+  "state": "PASS",
+  "software_fit_calls": 2,
+  "nfl_fit_calls": 0,
+  "threads": 2,
+  "peak_rss_bytes": 144560128,
+  "rows": [
+    {
+      "family": "ordered_leaf_cdf",
+      "fictional_rows": 4096,
+      "fictional_queries": 256,
+      "fit_wall_seconds": 0.12077497499922174,
+      "total_wall_seconds": 0.667681281998739,
+      "cpu_seconds": 0.7268120259999999,
+      "model_gzip_bytes": 328776,
+      "all_crps_finite": true
+    },
+    {
+      "family": "regularized_glm_law",
+      "fictional_rows": 4096,
+      "fictional_queries": 256,
+      "fit_wall_seconds": 0.009457681999265333,
+      "total_wall_seconds": 0.0189634649996151,
+      "cpu_seconds": 0.028367073999999715,
+      "model_gzip_bytes": 1260,
+      "all_crps_finite": true
+    }
+  ]
+}

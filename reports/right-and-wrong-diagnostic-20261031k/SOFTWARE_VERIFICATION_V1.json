@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "state": "SOFTWARE_VERIFIED_NO_NFL_ACCURACY_INFERRED",
+  "recorded_at_utc": "2026-10-31T20:09:38.357440+00:00",
+  "tests_run": 442,
+  "new_core_tests": 11,
+  "new_index_and_ranking_scope_tests": 3,
+  "unit_log_artifact": "reports/right-and-wrong-diagnostic-20261031k/UNIT_TEST_RESULTS_V1.log",
+  "unit_log_sha256": "7ed1bd590898164be85e4f9a1bd2d32ec340ed1780bd63e23aadba9ba9055e2e",
+  "source_bindings": [
+    {
+      "path": "nfl_v2/right_wrong_diagnostic.py",
+      "sha256": "1a5f71f69d80b5555aad6a74e8ed7943afb94ffc2b9651b19dc82725a85b316d"
+    },
+    {
+      "path": "nfl_v2/result_index.py",
+      "sha256": "25b4c27f87f2ac446d9b87175bb5931e964ac513059b6377ba88ac43545a6b99"
+    },
+    {
+      "path": "tools/build_test_index_v2.py",
+      "sha256": "dad885c74c06cf1e1effedca671dbd34d4c91ed4111849ad3af6a0d7d2cf334a"
+    },
+    {
+      "path": "tools/build_test_index_v3.py",
+      "sha256": "5ad961ced7f986f23d55a7442cb905afef970517ce6f4c5696a657c5c6f7e99f"
+    },
+    {
+      "path": "tools/build_current_valid_view_v2.py",
+      "sha256": "53ae68eda590deb72fca6730437e338ebdf23f5c89190453d65fe53254a12a4c"
+    },
+    {
+      "path": "tools/build_full_championship_report.py",
+      "sha256": "d9944b36612925a2b0a8a09c18b84893591232fa320c09263ea828e64d59b889"
+    },
+    {
+      "path": "tests/test_right_wrong_diagnostic.py",
+      "sha256": "86dd9739a53daed2752a28776afd7e0d3a861521235fa346b80b7dabb9c6d8d9"
+    },
+    {
+      "path": "tests/test_diagnostic_ranking_exclusion.py",
+      "sha256": "1a798eeab6f9348289f2849bcd20cd5ff0e770ad9716b57185e17eded8aa97f2"
+    }
+  ],
+  "new_NFL_fits": 0,
+  "new_model_predict_calls": 0,
+  "new_forecasts": 0,
+  "NFL_accuracy": null,
+  "scope": "Software checks of buckets/boundaries/bands/examples/components, ranking exclusion and mask availability. Overlapping old suite tests are not independent NFL observations."
+}

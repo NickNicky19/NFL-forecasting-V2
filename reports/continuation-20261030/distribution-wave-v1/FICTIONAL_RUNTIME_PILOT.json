@@ -1,0 +1,83 @@
+{
+  "state": "PASS_FICTIONAL_PIPELINE_PILOT",
+  "actual_software_fit_calls": 6,
+  "new_nfl_fit_calls": 0,
+  "nfl_outcomes": 0,
+  "threads": 2,
+  "peak_rss_bytes": 141295616,
+  "rows": [
+    {
+      "family": "ordered_leaf_cdf",
+      "target": "rush_att",
+      "fictional_train_rows": 4096,
+      "fictional_queries": 256,
+      "actual_software_fit_calls": 1,
+      "fit_wall_seconds": 0.12360798699955922,
+      "total_fit_prediction_score_wall_seconds": 0.24057054900004005,
+      "cpu_seconds": 0.30750224800000026,
+      "compressed_model_bytes": 94607,
+      "finite_crps": true
+    },
+    {
+      "family": "regularized_glm_law",
+      "target": "rush_att",
+      "fictional_train_rows": 4096,
+      "fictional_queries": 256,
+      "actual_software_fit_calls": 1,
+      "fit_wall_seconds": 0.007513018999816268,
+      "total_fit_prediction_score_wall_seconds": 0.0854952339996089,
+      "cpu_seconds": 0.17151539000000016,
+      "compressed_model_bytes": 1725,
+      "finite_crps": true
+    },
+    {
+      "family": "ordered_leaf_cdf",
+      "target": "rush_yd",
+      "fictional_train_rows": 4096,
+      "fictional_queries": 256,
+      "actual_software_fit_calls": 1,
+      "fit_wall_seconds": 0.13402096800018626,
+      "total_fit_prediction_score_wall_seconds": 0.3754693699993368,
+      "cpu_seconds": 0.4839827030000001,
+      "compressed_model_bytes": 137592,
+      "finite_crps": true
+    },
+    {
+      "family": "regularized_glm_law",
+      "target": "rush_yd",
+      "fictional_train_rows": 4096,
+      "fictional_queries": 256,
+      "actual_software_fit_calls": 1,
+      "fit_wall_seconds": 0.014370872999279527,
+      "total_fit_prediction_score_wall_seconds": 0.019984472999567515,
+      "cpu_seconds": 0.030203827999999877,
+      "compressed_model_bytes": 1576,
+      "finite_crps": true
+    },
+    {
+      "family": "ordered_leaf_cdf",
+      "target": "anytime_td",
+      "fictional_train_rows": 4096,
+      "fictional_queries": 256,
+      "actual_software_fit_calls": 1,
+      "fit_wall_seconds": 0.1376848540003266,
+      "total_fit_prediction_score_wall_seconds": 0.2286245190007321,
+      "cpu_seconds": 0.4012172820000002,
+      "compressed_model_bytes": 59742,
+      "finite_crps": true
+    },
+    {
+      "family": "regularized_glm_law",
+      "target": "anytime_td",
+      "fictional_train_rows": 4096,
+      "fictional_queries": 256,
+      "actual_software_fit_calls": 1,
+      "fit_wall_seconds": 0.010659611998562468,
+      "total_fit_prediction_score_wall_seconds": 0.012484797000070103,
+      "cpu_seconds": 0.015555403000000023,
+      "compressed_model_bytes": 1652,
+      "finite_crps": true
+    }
+  ],
+  "budget_interpretation": "Measured representative4096train/256queryfits supports704opportunity finitebudget; no forecastskillclaim; no tiny-runtime block declared"
+}

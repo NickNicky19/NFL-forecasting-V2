@@ -1,0 +1,30 @@
+{
+  "state": "CURRENT_REPRODUCIBLE_INDEPENDENT_CHECKER_INTERFACES",
+  "supersedes_manifest": "CHECKER_BYTE_BINDINGS.json",
+  "change": "Optional --receipt selects a fresh output path for re-verification without overwriting or deleting retained evidence. Math/source selection unchanged.",
+  "checkers": [
+    {
+      "path": "check_point_offer.py",
+      "sha256": "5c88d55ad572985f44fd7241e1ce7740202dde80c590c37a00316a17855f923d"
+    },
+    {
+      "path": "check_source_coverage.py",
+      "sha256": "08130a6ae26e5a8ea3910c6bee130d366b6fdd26222ccee0e83cf49c673ffe82"
+    },
+    {
+      "path": "check_reporting_metadata.py",
+      "sha256": "8930cfcefbd04ff70b7d52ef66c341c72cfaf14e831c9c1e176ce2a47ce33dda"
+    },
+    {
+      "path": "bind_verified_paired_masks.py",
+      "sha256": "c89bdaa4eb6fffc8ded20fde3d4f3ae109ac56bb20cc12a389d3ea5bec0b5bbb"
+    },
+    {
+      "path": "check_index_metadata.py",
+      "sha256": "1cb7b4875c29fb50614efd1f93bf2fd68490fef5c055f1d240153a3fa2000e23"
+    }
+  ],
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_scores": 0
+}

@@ -1,0 +1,146 @@
+{
+  "state": "FRESH_HANDOFF_VERSION_QUALIFICATION_NO_B_SCORE_CHANGE",
+  "at_utc": "2026-11-04T00:47:15.029548+00:00",
+  "C_ref": "39b98567cc11835363e91c6a2b504bf9cae1f17a",
+  "A_index_ref": "21ca035c0e7a3caf5aae10353a59a09572483e76",
+  "A_output_producer_ref": "88dac5da1b261ae6f521d3f23c83b2f95fc364bd",
+  "actual_readback": [
+    {
+      "session": "C",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "ref": "39b98567cc11835363e91c6a2b504bf9cae1f17a",
+      "path": "reports/abc-championship/CURRENT_PROTOCOL.json",
+      "sha256": "9526f5ea65548e23751633e2865020c1cc0957b8fe293ea4e7421e2d75302307",
+      "bytes": 9167
+    },
+    {
+      "session": "C",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "ref": "39b98567cc11835363e91c6a2b504bf9cae1f17a",
+      "path": "reports/abc-championship/ADMISSION_LEDGER.json",
+      "sha256": "3b40290841143c0bfcb0c21a8cbf69af0c10ac27d2620eed957c6fb8df5e6909",
+      "bytes": 2549
+    },
+    {
+      "session": "A",
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "21ca035c0e7a3caf5aae10353a59a09572483e76",
+      "path": "reports/abc-championship/EXPORT_INDEX.json",
+      "sha256": "d5bf22ef158dd27ef10232a4c9af8f7a48d684d01fca4faa09a916ae327839dd",
+      "bytes": 499266
+    },
+    {
+      "session": "A",
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "88dac5da1b261ae6f521d3f23c83b2f95fc364bd",
+      "path": "reports/abc-championship/A_HISTORICAL_COMMON_SCORER_V1.json",
+      "sha256": "db0b7fe7f3700fa76954b85e7405a2f22f95dec73372b79eb81444e69dc4c2f3",
+      "bytes": 1869400
+    },
+    {
+      "session": "A",
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "88dac5da1b261ae6f521d3f23c83b2f95fc364bd",
+      "path": "reports/abc-championship/A_ON_C_BOUND_OFFERS_UNCERTAINTY_APPEND_V1.json",
+      "sha256": "a0ec4b742fd293ab336f50aa2e3fc5160cf0fb1364934cb38daf368f0b5d10ae",
+      "bytes": 291417
+    },
+    {
+      "session": "A",
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "21ca035c0e7a3caf5aae10353a59a09572483e76",
+      "path": "reports/abc-championship/STORAGE_REMEDY_RECEIPT_V1.json",
+      "sha256": "c8763e12f9ff4262da3265508c85834793ef66108f1bede142b760b594396a4a",
+      "bytes": 1141
+    }
+  ],
+  "common_protocol_and_scorer_unchanged": true,
+  "C_protocol_id": "ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1",
+  "protocol_sha256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1",
+  "scorer_sha256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce",
+  "C_continuation_id": "ABC-C-PERIOD-CONTINUATION-v2-1",
+  "C_amendment": {
+    "path": "protocol/ABC_PERIOD_CONTINUATION_V2.md",
+    "SHA256": "e6a5b8488a7810231100098d1de53f19f902fa378dc1d4efa975ed62431b6f20"
+  },
+  "C_admission_of_older_exports": {
+    "version": "ABC-C-ADMISSIONS-v2-continuation-1",
+    "previous": {
+      "path": "reports/abc-championship/continuation-v2/PREVIOUS_ADMISSION_LEDGER.json",
+      "SHA256": "a9dbb95e4736a0c534e76f903cff564060a540cbd4bc19277cd740eca85cba23"
+    },
+    "C": "Existing raw-row-verified W2-W3 pilot unchanged; new Monday forecast-only packet verified separately",
+    "A": {
+      "state": "RECEIVED_VALIDATED_LIMITED_ADMISSION",
+      "index_ref": "2be1accfe383d8508095b8a23332bed05b79afd3",
+      "index": {
+        "path": "reports/abc-championship/continuation-v2/intake/A-EXPORT_INDEX.json",
+        "SHA256": "5b95abcd8a36ff8755ab43929795d4bf336c21c3cda46ba40b0a71b9149cfeb0"
+      },
+      "admitted": "Public owner-local arithmetic:79 W1-W7 complete point products/553 weekly views;60 A/C W8 views+40 reported paired contrasts",
+      "not_admitted": "Private rows/models; source quote/timing/history/commonmask parity not independently recovered",
+      "next": "A pins actual C current protocol and exact bound scorer/manifest; returns permitted owner-local verification with precise history/input/mask bindings; updates344-case overlap as new version after accounting remedy"
+    },
+    "B": {
+      "state": "RECEIVED_VALIDATED_LIMITED_ADMISSION",
+      "index_ref": "7c0690bfb564db5481cc27a00a45e7f4311b1f70",
+      "index": {
+        "path": "reports/abc-championship/continuation-v2/intake/B-EXPORT_INDEX.json",
+        "SHA256": "19b9cc3155a42c1c16cbd90641a8f38875e2cc9cd384ca15bb094e6893ea9235"
+      },
+      "admitted": "1691 public complete side triads: W8 1468;W6 80;W7 80;W5-W7 cumulative63; original205/415vs224/415controlrecomputed",
+      "not_admitted": "Raw private line/forecast/participation joins, common masks, transfer or global recovery waiver",
+      "next": "B binds membership hash semantics to C opportunity manifest and independently checks current common contract; partitions retainedW5-W7weeks without refitting"
+    },
+    "artifact_dispositions": {
+      "path": "reports/abc-championship/continuation-v2/RECEIVED_ARTIFACTS.json",
+      "SHA256": "cf8d59a3136d720e9859f44566801467af33024a625896319edd48077675366d"
+    },
+    "adoption": "A/B summary documents semantically agree; hashes belong to different documents; NOT byte-identical executable pin acknowledgement",
+    "common_A_B_acknowledgements": "AWAITING_ACTUAL_OWNER_RETURN;C_INTERNAL_AGENTS_ARE_NOT_A_OR_B",
+    "obsolete_404": "Historical superseded by ac9cb1000bcb8f1197505b68ccfe246ea61bbafe publication",
+    "comparison_state": "MULTIPLE_SOURCE_PANELS_PARTIAL_E1;NO_RAW_THREE_WAY_PARITY_OR_UNIVERSAL_RANKING"
+  },
+  "C_admission_of_new_B_cbd63358_af520d32": "NOT_OBSERVED;CURRENT_C_LEDGER_BOUND_OLD_B7cONLY",
+  "A_402bytes": {
+    "state": "RESOLVED_BY_A_WITHOUT_CAP_CHANGE",
+    "saved_bytes": 411,
+    "new_actual_bytes": 4194295,
+    "unchanged_cap_bytes": 4194304,
+    "headroom_bytes": 9,
+    "receipt": "A@21ca035c:reports/abc-championship/STORAGE_REMEDY_RECEIPT_V1.json",
+    "prior_failures_preserved": true
+  },
+  "new_A_owner_local_periods": {
+    "cells": 1092,
+    "raw_forecast_or_line_rows_transferred_to_B": 0,
+    "new_B_fits": 0,
+    "actual_periods": [
+      "E1_PARTIAL_2026_W1_5",
+      "E3_2024_W1_8",
+      "E4_2024_FULL_REG",
+      "WEEKLY_2024",
+      "WEEKLY_2026"
+    ],
+    "categories": [
+      "pass_att",
+      "rec",
+      "rush_att"
+    ],
+    "scoring": "Acommonfunctionreplay; Bpublicaggregatearithmeticverified, privatejoin/training/sourcevintage NOT independentlyreproduced",
+    "all_requested_seasons_completed": false
+  },
+  "A_on_C_qualification": {
+    "source_views": 87,
+    "source_named_pairs": 203,
+    "raw_private_rows_received": 0,
+    "category_rush_population": "A_RB_ONLY;B_QB_RB;notcomparablefullpopulation",
+    "state_classification_finding": "80views carry UNAVAILABLE_FORECAST in states while declaringunavailable0 and selectedsidepresent. DecidedW/Larithmetic unaffected; A must trace/reclassifyunknownlabel vsactualmissingforecast and versioncorrection.",
+    "mask_semantics": "Coremanifestwholehash/discovery isnot exactA rowmembership proof; producerdeclaresfullboard notstablecore; rawclock/membership/intervalparity remainsunverified."
+  },
+  "restrictions": "No publicprivate-row migration, rawthreewayparity or automaticrelease. C alone records canonicalintake; exactnewAexports needCrefresh. Bnew4categorysourceunchanged, oldC0.25andpairedresultsremainvalid.",
+  "independent_receipts": [
+    "../continuation-20261103-v1/independent/INDEPENDENT_FRESH_UPSTREAM_AGGREGATES_V1.json",
+    "../continuation-20261103-v1/independent/INDEPENDENT_FRESH_C_CODE_READBACK_V1.json"
+  ]
+}

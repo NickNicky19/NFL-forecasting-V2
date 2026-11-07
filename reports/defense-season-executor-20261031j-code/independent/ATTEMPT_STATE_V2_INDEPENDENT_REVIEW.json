@@ -1,0 +1,40 @@
+{
+  "state": "PASS_INDEPENDENT_J_V2_ATTEMPT_STATE_REPAIR_NOT_REAL_PREFIT_ADMISSION",
+  "executor_v1_sha256": "07b821211cd1649342a2b615120d85f165880437e2447fc1b847b64666a5f2e6",
+  "executor_v2_sha256": "b7c7b0cb11919b01b6e4a8432c397b78a0fc8f6b4084a6769f4cac74008d08e7",
+  "correction_protocol_sha256": "e3f31b5b398b940d274e483e332ad74d3de2e242acb7e9c6712bc9056d0aec00",
+  "checker_sha256": "2ac5eedcadddd7c1fbf3dfc5e0aed5b4907068e8316cf554a6d7cb85d828cfab",
+  "prior_failure_witness_sha256": "d301ed0ec6dd13c2578355c3b421e351715a99de3deb19c6f0dae26907e4a5b3",
+  "unchanged_mathematical_gate_and_metadata_units": [
+    "Features",
+    "attach_context_through_year",
+    "prepare",
+    "check_baseline",
+    "compare_retained_fit",
+    "reconstruct_baseline_metadata",
+    "_verify_inputs",
+    "code_bindings"
+  ],
+  "faults": [
+    {
+      "fault": "FIRST_FIT_EVIDENCE_SAVE",
+      "state": "FIT_ATTEMPTED_UNRETAINED",
+      "algorithm_state": "FIT_SUCCEEDED",
+      "attempts": 1,
+      "scores": 0
+    },
+    {
+      "fault": "POST_FIT_GUARD",
+      "state": "FIT_ATTEMPTED_UNRETAINED",
+      "algorithm_state": "FIT_RESULT_NOT_YET_OBSERVED",
+      "attempts": 1,
+      "scores": 0
+    }
+  ],
+  "scope": "Confirms the observed V1 bookkeeping loss is repaired for first FIT-evidence persistence and post-fit guard failure; attempted identities remain distinct from unrun cells. Existing mathematical feature/prior/source/gate code ASTs unchanged. Original V1 sources and reviews remain retained.",
+  "new_NFL_fits": 0,
+  "new_real_model_calls": 0,
+  "new_forecasts": 0,
+  "new_scientific_scores": 0,
+  "actual_worker_admitted": false
+}

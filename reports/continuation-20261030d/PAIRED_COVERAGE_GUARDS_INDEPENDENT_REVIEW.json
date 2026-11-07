@@ -1,0 +1,61 @@
+{
+  "state": "PASS_FICTIONAL_SOURCE_BINDING_GUARDS",
+  "checker_sha256": "04b6dea121f7114c2519397f2d21596cfd2893808e7fa26c630ae495af6d0f2e",
+  "fixture_count": 8,
+  "checks": [
+    {
+      "name": "unchanged_fictional_projection",
+      "expected_rejection": false,
+      "passed": true,
+      "reason": null
+    },
+    {
+      "name": "self_consistent_loss_mutation_with_rehashed_wrapper",
+      "expected_rejection": true,
+      "passed": true,
+      "reason": "Derived projection changed a bound source field"
+    },
+    {
+      "name": "changed_membership_sha256",
+      "expected_rejection": true,
+      "passed": true,
+      "reason": "Derived projection changed a bound source field"
+    },
+    {
+      "name": "changed_source_artifact_sha256",
+      "expected_rejection": true,
+      "passed": true,
+      "reason": "Derived projection changed a bound source field"
+    },
+    {
+      "name": "changed_week_interval",
+      "expected_rejection": true,
+      "passed": true,
+      "reason": "Derived projection changed a bound source field"
+    },
+    {
+      "name": "changed_csv_with_rehashed_csv_binding",
+      "expected_rejection": true,
+      "passed": true,
+      "reason": "Derived CSV disagrees with JSON"
+    },
+    {
+      "name": "zero_control_null_relative",
+      "expected_rejection": false,
+      "passed": true,
+      "reason": null
+    },
+    {
+      "name": "zero_control_fabricated_relative",
+      "expected_rejection": true,
+      "passed": true,
+      "reason": "Derived projection changed a bound source field"
+    }
+  ],
+  "new_fits": 0,
+  "inference_calls": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "current2026_week8_outcomes_read": 0,
+  "limitation": "Synthetic public-aggregate shape only; no NFL model, raw prediction, source acquisition or statistical skill test."
+}

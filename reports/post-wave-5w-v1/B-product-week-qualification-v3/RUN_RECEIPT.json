@@ -1,0 +1,42 @@
+{
+  "scope": "B_ONLY_EVIDENCE_CONTRIBUTION_NOT_C_SHARED_MASTER",
+  "adopted_revision": "POST-WAVE-5W-v1",
+  "source_manifest": "reports/abc-predictive-improvement-01/b-intercept-v1/results-index-v5/INDEX_MANIFEST.json",
+  "source_manifest_sha256": "00f460aa5b1581af8f0afa6f95b92a7bbae91d9c133ace9bfff0ea6308589541",
+  "source_record_count": 602201,
+  "extra_new_policy_score_rows": 816,
+  "new_policy_source": {
+    "path": "reports/post-wave-5w-v1/b-confidence-ordering-v1/context-ranker-v1/SCORES.json",
+    "sha256": "55ff91b061495aee07bc2d598228689276f1a37ca50004fe18c39afe3d281bc3"
+  },
+  "code_sha256": "b6659610dc130a024237fba4e24142e8d9e164f694f107ec4bd8d708888f1e1a",
+  "records_inspected": 603017,
+  "product_views": 41404,
+  "distinct_procedure_id_strings_NOT_method_family_count": 4242,
+  "floor_states": {
+    "BELOW_FIVE_EXPLICIT_SCORED_WEEKS": 35552,
+    "FIVE_WEEK_MINIMUM_MET": 1596,
+    "UNESTABLISHED_AGGREGATE_ONLY_WEEK_SUPPORT_PROOF_REQUIRED": 4256
+  },
+  "excluded_view_counts": {
+    "SOFTWARE_NOT_NFL_WEEKS": 32,
+    "SUBGROUP_VIEW_NOT_PRIMARY_UNIVERSE": 421821,
+    "CONDITIONAL_LEARNED_OR_OVERLAP_VIEW": 21278,
+    "INVALID_OR_SUPERSEDED": 3118,
+    "DIAGNOSTIC_NOT_PRIMARY_PRODUCT": 8772
+  },
+  "delivery": {
+    "json_path": "B_PRODUCT_WEEK_QUALIFICATION.json.gz",
+    "json_sha256": "3da8e999983378dac77b6b7d6280c1c453dea231579e169be58437d04c1471c8",
+    "json_uncompressed_sha256": "606833f3ced454cf88abf91acc4a6bff3d6ce1b88fa40a7251f9ac7f97f29f16",
+    "csv_path": "B_PRODUCT_WEEK_QUALIFICATION.csv.gz",
+    "csv_sha256": "cf6ab8cf46cd3bf111694fff61fe985c6deffd953ac337462d5af6f29a271f42"
+  },
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "wall_seconds": 70.92686810500163,
+  "coverage_boundary": "Explicit per-week positive score support only; aggregate date spans are not counted. Some completed historical aggregate tests need retained-row/week proof, not repeated fits. IDs/outputs/control-mask views and aliases are not independently tested method families. Verified here means retained-score week evidence, not a full independent NFL label/source audit.",
+  "does_not_claim_deployment_or_full_championship": true
+}

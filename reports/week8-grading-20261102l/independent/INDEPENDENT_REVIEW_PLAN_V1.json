@@ -1,0 +1,99 @@
+{
+  "schema": "independent-week8-grading-review-plan-v1",
+  "state": "FROZEN_INDEPENDENT_REVIEW_PLAN_BEFORE_OUTCOME_OR_GRADE_INSPECTION",
+  "registered_at_utc": "2026-11-02T18:52:21.527485+00:00",
+  "parent_protocol_sha256": "eb511b36df225c6c854c12fcfc59ff0b5e502bfb8d80afa905fb8bdc2f5cf289",
+  "parent_protocol_at_utc": "2026-11-02T18:49:52.315260+00:00",
+  "source_bindings": [
+    {
+      "path": "docs/WEEK8_SHADOW_GRADING.md",
+      "sha256": "e1905ca7631215e1cd3a53724e5d26516b0d3d7bfa2d8a35a8245f92a32c44fa"
+    },
+    {
+      "path": "docs/HGB_WEEK8_SHADOW_GRADING.md",
+      "sha256": "785a711c98e78e0af3e18b01e121618a16f5563e49b94e53a1787b26e7d13858"
+    },
+    {
+      "path": "reports/continuation-20261029/week8-shadow-v2/CAPTURE_RECEIPT.json",
+      "sha256": "0656066003ac2ab4c6e9d08892ce6ea0b52be132be89464fbc84f2085d4c1c14"
+    },
+    {
+      "path": "reports/continuation-20261029/hgb-history-v1/WEEK8_CAPTURE_RECEIPT.json",
+      "sha256": "fca1f0db76e81559fcd7a7669d1d416f2b3842e2c5d027e17ea1921d327d131f"
+    },
+    {
+      "path": "reports/continuation-20261030/distribution-wave-v2/WEEK8_CAPTURE_RECEIPT.json",
+      "sha256": "fd5ff7e3349291f7316e7252e0fd5f1eaa64587e963e0bff8d1406d8bb863545"
+    },
+    {
+      "path": "reports/continuation-20261030/count-ablation-wave-v1/WEEK8_CAPTURE_RECEIPT.json",
+      "sha256": "1153b08cbc19d47e8c9849cc9e7b4458f08edaef457f5eb34bce5b0140292d61"
+    },
+    {
+      "path": "reports/continuation-20261030/chart-wave-v1/WEEK8_CAPTURE_RECEIPT.json",
+      "sha256": "06e77cf8459ede4f593c65a83926f8cdf28f3cf165329538d1675243353e60c0"
+    },
+    {
+      "path": "reports/continuation-20261030b/availability-wave-v1/AB-RUN_RECEIPT.json",
+      "sha256": "3e64ee92fbaff850d878c97d61ca0d33c810bb2aef47f4c119c36987d50bf28b"
+    },
+    {
+      "path": "reports/continuation-20261030b/availability-wave-v1/C-RUN_RECEIPT.json",
+      "sha256": "26123278c4b3e5802b563b41d4871e6da06199509dff8d01312fc926a5aada68"
+    },
+    {
+      "path": "reports/continuation-20261030b/FUTURE_GRADING_SUBGROUP_FREEZE.json",
+      "sha256": "acf5da4daab0799f48f714736931aca45e435aa9a239a8814eda5f76e635b729"
+    },
+    {
+      "path": "reports/continuation-20261030b/FUTURE_GRADING_C02_AMENDMENT_V1.json",
+      "sha256": "4c6854499665d77734d52b9ad399f2291c8a9af366bdd6e60d35500dc89d4581"
+    },
+    {
+      "path": "reports/continuation-20261030b/FUTURE_COHORT_NAMESPACE_BRIDGE_V1.json",
+      "sha256": "84f638f7a5e0998e7e85fdcf73452bda1f52650474145fa87fe454198a41a1ea"
+    },
+    {
+      "path": "reports/continuation-20261030b/c02-future-shadow-v1/RUN_RECEIPT.json",
+      "sha256": "4049e5223b49293fc5b7c82daad3be935cc82ef6b72cbddf346aed36a127ce58"
+    },
+    {
+      "path": "reports/continuation-20261030c/strict-hgb-future-v1/EXPORT_RECEIPT.json",
+      "sha256": "4954b02f19d9f6e68d4c364a11fad7e91b2e3d757a7df747c65270d0e8938a03"
+    },
+    {
+      "path": "reports/continuation-20261030c/qualified-defense-information-v1/WEEK8_CAPTURE_RECEIPT.json",
+      "sha256": "f10518605ec4f3133e1dd6479fb22ab11e12219f9c2c995f25d5b844fe81bf9a"
+    }
+  ],
+  "core_bindings_verified": {
+    "nfl_v2/scoring.py": "b61c9cbbced8e5d64060ef1d14f6d60bec1edd9760fa8903a75c1b09503deadb",
+    "nfl_v2/full_provider_prop_replay.py": "94a53eb89c817d56b0675b7bc80d883e7b53c7b69ac4d2b6b9dd435c1afa1e15",
+    "nfl_v2/recorded_prop_grading.py": "00a7e35bbef6441ae861b5b47004f6f0a512f98255c194893a2d1a6a5d58ba2c",
+    "nfl_v2/shadow_grading.py": "8515b932db7cc9652e240aee4fd5177dbef64931a878e262b8f5f132cf1046d4",
+    "nfl_v2/hgb_shadow_grading.py": "e77f85f871e2177e29b66dcb8bead5b3503f5f96f8d8c90638438535f9214f75"
+  },
+  "checks": [
+    "Authenticate saved compressed/uncompressed forecast bytes, protocol, model/query/prior/source bindings where needed and original row matrices; no regeneration.",
+    "Use frozen metadata-only original-source version selection. Distinguish input HEAD retention from output publication; verify exact archived blob existed by claimed clock.",
+    "Preserve every original capture/version/horizon and early Thursday later-than-owner-input-cutoff status; later13-game versions do not fill Thursday.",
+    "Check original saved lean/line and fixed top-list membership at its own actual decision/version. Top12PER SIDE is24records, not12combined or24independent games; never union repeated list versions.",
+    "Exact query/game/player/target/period/scoring join, source bridge and missing-ID reasons; no fuzzy-name replacement or current-roster substitution.",
+    "Qualified final numeric labels only completed final games and positively verified appearance. Explicit complete-source played zeros retained. DNP, played_missing, pending, missing actual, unknown and cancellation distinct.",
+    "Use exact full-game overtime target contracts, signed yards and count support. Chart rare-component gaps remain missing; website fpts and anytime market contracts do not gain parity by renaming.",
+    "Independently recompute representative real wins/losses and supported pushes/voids (or explicitly labelled fixtures), side partitions and all published numerators/denominators from retained rows.",
+    "Numerical MAE/MSE/bias/tails/precision and genuine event Brier/logloss checked separately from directional accuracy. Do not treat a point, objective or zero-heavy count as a distribution.",
+    "Original selected Over/Under bucket is fixed before outcome; Combined counts equal summed sides in every category/method/strategy/horizon/time/cohort view, zero denominatorsN/A.",
+    "Paired history and method contrasts on identical actual identities, functional, forecast horizon and qualified labels. Preserve full-system and both-learned/fallback masks; no posthoc easiest-case deletion.",
+    "ABC B-A,C-B, C02 unchanged control and D1/D2 own controls stay explicit. Different feature/refit/prior clocks are not a pure model effect.",
+    "Original pregamedefined role/top10/15/20 membership and namespace bridges stay fixed. A blocked forecast with a historical rank remains abstained.",
+    "Book settlement/prices/returns remain unestablished where actual contracts/odds are absent. Statistical crossings do not become settled profit.",
+    "One partial/exposed week has insufficient week clusters; anygame-bootstrap sensitivity is dependent and not selection/multiplicity corrected.",
+    "Current source/revision/retrieval/asof clocks and exact missing periods retained. Later games/stat corrections use new version; preserve source/score/index history.",
+    "All verification restricted to saved rows and source metadata after root freeze; no fits, inference, capture, source collector, upstream write or registry mutation by reviewer."
+  ],
+  "Week8_outcomes_read_by_this_review_phase": 0,
+  "Week8_score_outputs_inspected": 0,
+  "fits_or_inference_or_captures": 0,
+  "scope_limit": "Metadata/code contract review is not verification of NFL outcomes or completion of actual grading. Root alone acquires labels and executes scores; actual independent calculations follow only after its retained outputs."
+}

@@ -1,0 +1,78 @@
+{
+  "state": "PASS_INDEPENDENT_SEASON_RELATIVE_SELECTOR_SOURCE_AGGREGATES_CHOICES_AND_UNCERTAINTY",
+  "at": "2026-10-31T02:02:31.062845+00:00",
+  "seasons": [
+    {
+      "season": 2025,
+      "protocol_sha256": "e1b15c61bb86654c8cabc6543f04b133782d9f4447b7e0cdb8d4e0ea316d3c95",
+      "score_sha256": "e77ff738e3cb85ae9a2831795d3636e60c1a63ae99ced3e7191c19419b610f5f",
+      "recipes": 120,
+      "weekly_source_aggregate_cells_verified": 4320,
+      "hashed_query_support_label_value_admissions_checked": 4320,
+      "choices_verified": 648,
+      "score_views_verified": 36,
+      "paired_week_bootstraps_verified": 24,
+      "current_score_memory_vs_fixed_prior": {
+        "WIN": 2,
+        "LOSS": 10
+      },
+      "carry_paired_delta": 0.002727546350092009,
+      "carry_week_interval": [
+        0.0,
+        0.00820685095353618
+      ]
+    },
+    {
+      "season": 2024,
+      "protocol_sha256": "c19482bf6be6e6823143d9c104743d7c10f9a6ecd5df16352423dd995ab674cf",
+      "score_sha256": "7e89c397f614224e7267ff927c460380dbeaadebebb53e39827a40a70b2cb74d",
+      "recipes": 120,
+      "weekly_source_aggregate_cells_verified": 4320,
+      "hashed_query_support_label_value_admissions_checked": 4320,
+      "choices_verified": 648,
+      "score_views_verified": 36,
+      "paired_week_bootstraps_verified": 24,
+      "current_score_memory_vs_fixed_prior": {
+        "LOSS": 9,
+        "TIE": 1,
+        "WIN": 2
+      },
+      "carry_paired_delta": 0.013936423166149164,
+      "carry_week_interval": [
+        0.0009006998183341495,
+        0.03213886325436215
+      ]
+    },
+    {
+      "season": 2023,
+      "protocol_sha256": "cff292d8a193c8ee4e07db44ac87cbd08ee607286554b9dab3caf38b042963c2",
+      "score_sha256": "90302c77c1401556c84abcb383f74348a811788c1634fc5d1b9cc6a08f228cd2",
+      "recipes": 120,
+      "weekly_source_aggregate_cells_verified": 4320,
+      "hashed_query_support_label_value_admissions_checked": 4320,
+      "choices_verified": 648,
+      "score_views_verified": 36,
+      "paired_week_bootstraps_verified": 24,
+      "current_score_memory_vs_fixed_prior": {
+        "LOSS": 3,
+        "WIN": 9
+      },
+      "carry_paired_delta": -0.2829418772437848,
+      "carry_week_interval": [
+        -0.3617392758011609,
+        -0.20551471513053607
+      ]
+    }
+  ],
+  "F2026_choice_lineage_parity": 252,
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "scope": "Allnew choices/weighted metrics/precision and24whole-week comparisons perseason independently recomputed from hash-bound source weekly aggregates. Every published mask hash and its across-recipe equality checked; this check does not rescan all raw model predictions. Prior F independent receipts document raw-row numerical/selector replay coverage.",
+  "limits": [
+    "Current-score memory selects historically trained H-MULTI recipes; not strictcurrent NFL information.",
+    "All seasons exposed reconstructed evidence, never original issued policy or fresh holdout.",
+    "Source/current score availability uses inherited last-kickoff+7day assumption."
+  ]
+}

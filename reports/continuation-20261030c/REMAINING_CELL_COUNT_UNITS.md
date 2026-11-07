@@ -1,0 +1,5 @@
+The remaining-cell table is scoped to this continuation, not the complete legacy registry. Exact2022 RECENT's1,152 items and the147 original-HGB2026 strict retrospective items are procedure/target/objective/policy/origin opportunities. No fit is implied by an opportunity.
+
+The4,856 position-baseline-CI and2,720 learned-only-baseline items count **source aggregate annotation view versions**, including the176 repaired2025 source versions separately from retained superseded originals. They are not independent observations, fit opportunities, unique scientific mechanisms or extra NFL games. Their source rows and precise uncomputed reasons are retained in the baseline annotation sidecars. Full-system aggregate comparisons remain paired; separate history learned-overlap contrasts already exist.
+
+Future outcome pending21 refers to the21 captured strict-HGB objective cells, with3,193 output views. Unknown counts stay null. Canonical root registries and source-linked index remain authoritative across all prior runs and blocked legacy methods.

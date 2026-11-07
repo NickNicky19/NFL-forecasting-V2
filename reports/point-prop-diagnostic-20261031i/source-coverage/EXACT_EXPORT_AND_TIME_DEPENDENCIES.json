@@ -1,0 +1,113 @@
+{
+  "evidence_level": "VERIFIED_FROM_PUBLIC_PRODUCER_CODE_AND_RECEIPT_NOT_REPRODUCED_FROM_PRIVATE_ROWS",
+  "source_commit": "507bbd186ad6eb6ded5d75337b6a966864ef2e2f",
+  "readable_scorecard": {
+    "bytes": 11137356,
+    "sha256": "80ba907a24b4f9cc10b66f48e4408736ae9bc6d182a4be8bdf49fd9bf4113036",
+    "members": [
+      {
+        "name": "PREDICTIONS_AND_ACTUALS.csv",
+        "reported_rows": 204431,
+        "source_member": "PRIMARY_POINTS.parquet"
+      },
+      {
+        "name": "PREDICTIONS_ACTUALS_LINES_AND_DIRECTIONS.csv",
+        "reported_rows": 258748,
+        "source_member": "DIRECTIONS.parquet"
+      },
+      {
+        "name": "READ_ME.txt"
+      },
+      {
+        "name": "MANIFEST.json"
+      }
+    ],
+    "inner_member_hashes": "NOT_PUBLISHED_REQUIRE_RESTORATION",
+    "CSV_headers": "NOT_INDEPENDENTLY_READ_REQUIRE_METADATA_ONLY_MEMBER_HEADER_PASS",
+    "period": "RECONSTRUCTED2026REGW1-7_ONLY",
+    "offhost_restoration": "OWNER_ROUTE_REQUIRED_NOT_VERIFIED",
+    "approved_V2_transport": "NOT_FOUND_IN_INSPECTED_PUBLIC_RECORDS_OR_ROOT_APPROVED_DRIVE_METADATA_SEARCH",
+    "original_picks": "NOT_ORIGINAL_WEBSITE_RECOMMENDATIONS"
+  },
+  "normalized_capsules": [
+    {
+      "season": 2026,
+      "container_bytes": 4867614,
+      "container_sha256": "0521c422c36173d5190ca3fe0c296d4543673b7ca210c4daf5cd499292a6907a",
+      "member": "offers_2026.parquet",
+      "member_bytes": 995313,
+      "member_sha256": "d83dc0017085bd2752e6f922026914a2526645124441533498da087e5cf57928",
+      "quote_time_state": "UNQUALIFIED_COLLECTION_CLOCK_NOT_QUOTE_TIME",
+      "original_selection_state": "NO_ORIGINAL_MODEL_PICK_AUTHENTICATED",
+      "access_state": "OWNER_MANAGED_ROUTE_REQUIRED_NOT_SHARED_TO_V2"
+    },
+    {
+      "season": 2024,
+      "container_bytes": 4867614,
+      "container_sha256": "0521c422c36173d5190ca3fe0c296d4543673b7ca210c4daf5cd499292a6907a",
+      "member": "offers_2024.parquet",
+      "member_bytes": 2354063,
+      "member_sha256": "2d8a3ba8512d4a830ab2d00962955b9bab2cb4ebbd241cd4781556c3605cb30a",
+      "quote_time_state": "UNQUALIFIED_COLLECTION_CLOCK_NOT_QUOTE_TIME",
+      "original_selection_state": "NO_ORIGINAL_MODEL_PICK_AUTHENTICATED",
+      "access_state": "OWNER_MANAGED_ROUTE_REQUIRED_NOT_SHARED_TO_V2"
+    },
+    {
+      "season": 2023,
+      "container_bytes": 3326307,
+      "container_sha256": "d03f24f1786ae0126650dec7e47992a81f297c849c191b8de33814108b7373b7",
+      "member": "offers_2023.parquet",
+      "member_bytes": 2522409,
+      "member_sha256": "6b780cf2a4acf0c828f22af6be7dcf35a1b91ca80e74cb9509efb53860bd286a",
+      "quote_time_state": "UNQUALIFIED_COLLECTION_CLOCK_NOT_QUOTE_TIME",
+      "original_selection_state": "NO_ORIGINAL_MODEL_PICK_AUTHENTICATED",
+      "access_state": "OWNER_MANAGED_ROUTE_REQUIRED_NOT_SHARED_TO_V2"
+    },
+    {
+      "season": 2022,
+      "container_bytes": 1207867,
+      "container_sha256": "ab4d267be2d4cd7da08961505b56a42c041709d4dbe495c09d7c60a89f4e4608",
+      "member": "offers_2022.parquet",
+      "member_bytes": 970464,
+      "member_sha256": "24577065bf1d437495a1a67831bcd91dc0eca13bbea0975d42efd6d896c06953",
+      "quote_time_state": "UNQUALIFIED_COLLECTION_CLOCK_NOT_QUOTE_TIME",
+      "original_selection_state": "NO_ORIGINAL_MODEL_PICK_AUTHENTICATED",
+      "access_state": "OWNER_MANAGED_ROUTE_REQUIRED_NOT_SHARED_TO_V2"
+    }
+  ],
+  "distinct_container_bytes": 9401788,
+  "Drive_root_refresh": {
+    "evidence_level": "REPORTED_BY_ROOT_READONLY_METADATA_CHECK",
+    "approved_folder_items": 332,
+    "searches": [
+      "matched12",
+      "READABLE_PRIVATE_SCORECARD",
+      "PREDICTIONS_ACTUALS_LINES_AND_DIRECTIONS"
+    ],
+    "matching_results": 0,
+    "search_limit": "topn50,best_effort_fetchfalse; no file download/write; not proof of every private source absent"
+  },
+  "producer_contract": {
+    "raw_clock_field": "last_updated",
+    "normalized_clock_field": "source_collection_naive",
+    "clock_semantics": "Timezone unverified and no bookmaker quote clock; never promote to aware quote or decision time.",
+    "source_quote_time": null,
+    "cutoff_qualified": false,
+    "query_cutoff": "cutoff_utc explicitly set to kickoff_utc by offer driver; this is a reconstructed query horizon, not source availability or original issue clock.",
+    "serialized_columns_that_may_exist": [
+      "quote_time",
+      "capture_time",
+      "source_update_time",
+      "source_quote_time",
+      "source_collection_naive",
+      "quote_timing_status"
+    ],
+    "caution": "An allowlisted/serialized field name does not prove nonmissing data or historical timing. Exact readable ZIP headers/values remain uninspected.",
+    "settlement": "UNQUALIFIED_SOURCE_RULES",
+    "prices": "2026annualW1-5 contains reported price pairs; no authentic quote time or contract. Do not infer ROI or assume missing prices."
+  },
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_rows_decoded": 0,
+  "new_scores": 0
+}

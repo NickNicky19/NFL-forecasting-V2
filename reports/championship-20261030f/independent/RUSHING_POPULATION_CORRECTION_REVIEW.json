@@ -1,0 +1,77 @@
+{
+  "state": "PASS_INDEPENDENT_RUSHING_POPULATION_SOURCE_AUDIT_AND_PROSE_CORRECTION",
+  "at": "2026-10-31T00:01:15.725912+00:00",
+  "sources": [
+    {
+      "logical_member": "hgb-history-v1/prediction-chunks/W01-rush_att-H-MULTI-absolute_error_point.json.gz",
+      "sha256": "03e42046fa66bef935bfa634883ea77aecce3847b0145e7660f3d2d383e37590"
+    },
+    {
+      "logical_member": "hgb-history-v1/prediction-chunks/W02-rush_att-H-MULTI-absolute_error_point.json.gz",
+      "sha256": "b5919b67108ffa95d410690f4cb14aa75242cc352e5ef1b3b68996cb1e9f1abf"
+    },
+    {
+      "logical_member": "hgb-history-v1/prediction-chunks/W03-rush_att-H-MULTI-absolute_error_point.json.gz",
+      "sha256": "719bed17f9d172b78ef041b7f3273ef11bee95c0ad8c4bf81ada26c1914951e5"
+    },
+    {
+      "logical_member": "hgb-history-v1/prediction-chunks/W04-rush_att-H-MULTI-absolute_error_point.json.gz",
+      "sha256": "4a3a6f1045a0e9cf97e083093d1daf036a7af5cae6d6be70c05f4b4581906617"
+    },
+    {
+      "logical_member": "hgb-history-v1/prediction-chunks/W05-rush_att-H-MULTI-absolute_error_point.json.gz",
+      "sha256": "d3d3e16c52a0a129dd68e0208b18e3cded0d7e15943b5d0b4636d64d7b3d8bb8"
+    },
+    {
+      "logical_member": "hgb-history-v1/prediction-chunks/W06-rush_att-H-MULTI-absolute_error_point.json.gz",
+      "sha256": "5574b49abead6b3896158c69ee5fe05a6ba92100b67b0d35657510a7073f2088"
+    },
+    {
+      "logical_member": "hgb-history-v1/prediction-chunks/W07-rush_att-H-MULTI-absolute_error_point.json.gz",
+      "sha256": "b975dd57b9d10fa650d9fc746a97e94737a421a7ece76f62104a7fffcbf914ec"
+    }
+  ],
+  "counts": [
+    {
+      "population": "primary",
+      "issued_rows": 847,
+      "position_issued": {
+        "QB": 242,
+        "RB": 605
+      },
+      "supported_rows": 844,
+      "position_supported": {
+        "QB": 242,
+        "RB": 602
+      },
+      "position_unknown": {
+        "RB": 3
+      }
+    },
+    {
+      "population": "extended",
+      "issued_rows": 1547,
+      "position_issued": {
+        "WR": 1003,
+        "TE": 544
+      },
+      "supported_rows": 1516,
+      "position_supported": {
+        "WR": 995,
+        "TE": 521
+      },
+      "position_unknown": {
+        "TE": 23,
+        "WR": 8
+      }
+    }
+  ],
+  "prior_prose_sha256": "997a969e32688c66e0906d7e5d2a9c64b7b3d735177c17c733f781465180d945",
+  "prior_prose_artifact": "INDEPENDENT_REVIEW_prior_population_wording_v1.md",
+  "corrected_prose_artifact": "INDEPENDENT_REVIEW.md",
+  "correction": "Prior review prose incorrectly said primary rushing was RB-only. Actual retained queries show QB+RB. Numerical scores, support, point predictions, selections and all previous raw-row arithmetic verification are unchanged.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "current2026_Week8_outcomes_read": 0
+}

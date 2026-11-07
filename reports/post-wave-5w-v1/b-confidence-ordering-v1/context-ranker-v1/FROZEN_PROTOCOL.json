@@ -1,0 +1,75 @@
+{
+  "id": "POST-WAVE-5W-B-CONTEXTUAL-CORRECTNESS-RANK-v1",
+  "registered_at_utc": "2026-11-05T00:00:48.924896+00:00",
+  "state": "REGISTERED_BEFORE_NEW_FITS_AND_NEW_LATER_SELECTION_SCORES",
+  "adoption_sha256": "af95d52af8c5fe4c17061fe951010c52ae04b975b6f28ffc9b8aa9b95ecfa235",
+  "parent_preserved": "ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1;failedinterceptandgateunchanged",
+  "canonical": {
+    "repository": "NickNicky19/NFL-forecasting-NGS-C",
+    "ref": "d66f3b20493a8ddf72842e9895d0c2c916583520",
+    "protocol": "ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1",
+    "protocol_sha256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1",
+    "scorer_sha256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce"
+  },
+  "runner_sha256": "d3110222841b3088c081261ad8ae4566835b8f2a1580a179c8cc51ab19ffe7d7",
+  "mechanism_sha256": "2c6b3c756916435b70d214b6b599e6ef51b9f5f298f80ac5abfa75150e99baf4",
+  "input_sha256": "b8b8c388766506e5aeb147b00adbebc62556a0ab8eff21b915944e5f073eae2b",
+  "earlier_development": {
+    "receipt": "development/RUN_RECEIPT.json",
+    "sha256": "8a4655ddfaa96a3f611b8d4a51b5da253ab20499952a28d850c8c75e1e1f6f16",
+    "rec_week2": "85/161confidenceAUC.427864; bin.5_37/61 vsbin.7_13/30; weakconfidence ordering alreadyseenbeforeW3",
+    "pass_td_week6": "18/27correct,14games;partiallinegroups3/3and2/2notstable;nohardlinefilterchosen."
+  },
+  "closest_prior": {
+    "C_selected_reliability": "C-SELECTED-RELIABILITY-v8-STAGE-A:exactPinnacleB0rec194/337,confidenceAUC.464152reused;no newCclassifierfit",
+    "C_calibrator": "C-2025-OOF-CALIBRATION-v3 two-parameterprobabilitysigmoid; differenttarget/outputandtraining. Oldlossesretained.",
+    "B_failed": "Oneintercept onpOver didnotfixranking;confidencequantileB2loststrongselectedconstants.",
+    "difference": "One new earlier-label-trained contextual correctness ranker; no forecastprobability/side/point change. ThisisrankingnotanotheroffsetorrenamedC/P3 eventclassifier."
+  },
+  "hypothesis": "Earlierrole/line/context weaklyrank which alreadychosenbase decisions arecorrectbetterthanrawconfidence. Associationonly;nogroupcausalstory.",
+  "mechanism": {
+    "estimator": "LogisticRegression(C=.25,lbfgs,L2,max_iter200,tol1e-8,seed1703);onefixedsetting/nohypersearch",
+    "features": [
+      "2*base_selected_confidence-1",
+      "selected_over_indicator",
+      "line/(line+3)",
+      "role_RB",
+      "role_WR",
+      "role_TE"
+    ],
+    "feature_policy": "Onlyretainedpregameline/role/baseprobabilities; noactualtargetgame context, identityencodings, weather or newfootballsource. Nofittedpreprocessing; fixedboundedtransforms.",
+    "support": "Historysupport/agemissingnessdiagnosedseparately;low-supportgroups too sparse for newhardfilters or learnedcoefficients. Actualbaseconsumedfeatureagesunretained;do notsubstituteopportunitymemoryages.",
+    "objective": "Gameequalweightedbinarylogloss for earlier baseline decision correctness +L2;notanOver/Underprobabilitylaw.",
+    "train": "Only earlier heldoutbase predictions/labels, strictkickoff+7dayeligibility; min20rows/5games/3correct/3incorrect elseidentityconfidence. No ownin-samplecorrectnessresultsused forfitting.",
+    "base": "UnchangedC_P3_HGB_HMULTIrec andC02HMULTIhistorical-to-originalW8capturetransferPT. Basepandsides remainexact.",
+    "rec": "FullsystemW2-W3includingidentitystartup;W3laterchoicesuseeligibleW2prefix. Allalreadyresearch-exposed.",
+    "pass_td": "W6heldoutbasepredictions train;coefandquantilecutofffreezeatregisteredfirstW8decision;W7OOFbaseconfidenceonlyforquantile;W8scoreslaterrelative todevelopment. Historical-to-capturetransferdisclosed."
+  },
+  "selection": {
+    "G0": "Rawbaseconfidence; unchangeddirection",
+    "G1": "Estimatedbaselinecorrectness usedforranking;never pOver/pUnder/EV",
+    "primary": "Peroriginaldecisionbatchbaseconfidenceeligibilityusesown earlierOOFmedianfloor.60; G1alsoestimatedcorrectness>=.50. MatchedK=min(ceil(.5*availablebase),G0eligible,G1eligible). Bothownhighestscore,tiesofferID. No futurebatchinformation, no forcedweakpicks.",
+    "secondary": "FIXED_090unchangednumeric.90threshold: G0baseconfidence,G1correctnessscore; zeropicksN/A. No claimed90%validationfromdisplayedscore. RollingK6/10/20percategory/week Combined/Over-only/Under-only,chronologicalbatchesremaining-slots,noneforced.",
+    "matched_controls": "AlwaysOver/AlwaysUnder on eachselectedmask; oldfullboard unchangedsource andearlierprevalence retained. ProperbaseeventBrier separatefrominternalcorrectnessdiagnostics.",
+    "interpretation": "Fullboarddirectionunchanged byconstruction;testselectionrankingtargetonly;doesnotclaimfullboardimprovement."
+  },
+  "floor": "Exactnewselectionpolicyhas atmost2rec/1PTtestweeks;shadowresearchonly, cannotborrowolderbaseweeks. Zero-selection90%weeks donotcount. No new primary replacement.",
+  "budget": {
+    "max_ranker_fits": 16,
+    "new_football_fits": 0,
+    "new_football_inference": 0,
+    "max_wall_seconds": 180,
+    "max_CPU_seconds": 120,
+    "max_RSS_bytes": 536870912,
+    "max_threads": 2,
+    "max_new_private_bytes": 2097152,
+    "hyperparameter_searches": 0,
+    "paid_calls": 0
+  },
+  "retention": "Existingapprovedowner-localboundedroute;plainJSONcoefficientsandrows,privateprewrite2MiBguard;nofullarchive/largefitgatewaiverandoffhostrestoreunverified. Publicaggregates/codeonly.",
+  "source_vintage": {
+    "rec": "C_CURRENT_REVISED_CHRONOLOGICAL_FOOTBALL_RECONSTRUCTION;PINNACLE_LAST_RECORDED_QUOTE_CLOCK_UNVERIFIED;UNVERIFIED_MAIN_ALTERNATE;EARLIER_ONLY_B_CORRECTNESS_FIT;C_BOUND_LABELS",
+    "pass_td": "B_W8_ORIGINAL_BASE_CAPTURE_PLUS_NEW_RETROSPECTIVE_RANKING_POLICY;KNOWN_TARGET_TIME_TRAINING_TRANSFER;B_PROVIDER_THRESHOLD_CLOCK_AND_TIER_UNVERIFIED;CURRENT_FINAL_LABELS;FOOTBALL_SOURCE_VINTAGES_UNAUTHENTICATED"
+  },
+  "release": "Noautomaticpromotion;floor5productweeksandallother source/operational/admissionchecks preserved. No productionwrite/scheduler/collector/otherownerfit."
+}

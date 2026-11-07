@@ -1,0 +1,93 @@
+{
+  "scope": "B read-only witness; no owner write or newC admission implied",
+  "C_ref": "d66f3b20493a8ddf72842e9895d0c2c916583520",
+  "A_ref": "a36a545dd9962e0a154bdece65f7b2818185f32c",
+  "results": {
+    "Cpointer": {
+      "protocol_id": "ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1",
+      "protocol": {
+        "path": "reports/abc-championship/PROTOCOL-v2-C-1.json",
+        "SHA256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1"
+      },
+      "scorer": {
+        "path": "src/abc_championship_v2.py",
+        "SHA256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce"
+      },
+      "admission": {
+        "path": "reports/abc-championship/ADMISSION_LEDGER.json",
+        "SHA256": "396767ed309695dcba56afa8dc9f3efc0da2ea88408bd47bd586b01a1859c078"
+      },
+      "shared_intake_id": "ABC-C-SHARED-INTAKE-v3-1"
+    },
+    "Cintake": {
+      "version": "ABC-C-ADMISSIONS-v3-1",
+      "B": {
+        "state": "ADMITTED_OWNER_LOCAL_SAME_OFFER_DIAGNOSTIC_WITH_PUBLIC_MASK_VERIFICATION",
+        "index_ref": "de34e9625a6e504cef373b3fed77446d62b0bf29",
+        "index": {
+          "path": "reports/abc-championship/shared-intake-v3/intake/B-EXPORT_INDEX.json.gz",
+          "SHA256": "e9aaa9e24dc0b2207ea9a90956f32c9b8c820b06f49b5e001fde24abd0b5f779"
+        },
+        "admitted": "684Cboardtriads+219source-specificweeklytriads;Ccontrolsrecomputed;privatecandidatevaluesownerlocal",
+        "not_admitted": "Raw private line/forecast/participation joins, common masks, transfer or global recovery waiver",
+        "next": "111RBmaskowner-localcounts;remaininghistoricalsource/origin/recoverytasks;no forcedprivateexport"
+      },
+      "comparison_state": "THREE_SAME_OFFER_DIAGNOSTIC_PANELS;TEMPORAL/PRIVATE_INFERENCE_LIMITS;PARTIAL_E1_AND_A2024"
+    },
+    "A-current-export": {
+      "producer_commit": "88dac5da1b261ae6f521d3f23c83b2f95fc364bd",
+      "executed_output_producer": "88dac5da1b261ae6f521d3f23c83b2f95fc364bd",
+      "predictive_improvement": {
+        "export_id": "A-ABC-PREDICTIVE-IMPROVEMENT-01-v1",
+        "manifest_path": "reports/abc-championship/predictive-improvement-01/CURRENT_ARTIFACTS_FOR_C_V1.json",
+        "manifest_sha256": "7a5011cede46391acd374629a0b3a814a1628ee7ae8fa68434dbfa094093b4d2",
+        "report": "reports/abc-championship/predictive-improvement-01/README.md",
+        "state": "EXECUTED_OWNER_LOCAL_RESULTS_PUBLICATION_PENDING",
+        "C_admission": "NOT_VERIFIED",
+        "private_rows": "RESTRICTED_OWNER_ROUTE_ONLY",
+        "source_population_clarification": "Old335carryboard includes239RB+80QB+16WR; RB-onlydescription superseded, oldcounts preserved.",
+        "public_registry_storage": "Same canonical JSON indexes bind exact-byte gzip aggregates in the same accounted directory; canonical reader validates both hashes and counts.",
+        "C_intake": "NOT_VERIFIED_FOR_THIS_NEW_WAVE",
+        "results_commit": "f2a94e279a204cf19d1194d5a1c29632e6a1ac44",
+        "publication": "PUBLICATION_COMPLETE_REMOTE_READBACK",
+        "uncertainty_and_registry_commit": "61161bc72146d777c1244d0d0b67618953e0f694",
+        "new_wave_C_receipt_admission": "NOT_VERIFIED"
+      },
+      "period_status": {
+        "E1": "PARTIAL: fixed A W1-7 local reconstruction plus separate W8 capture replay; not concatenated original advance history",
+        "E2_E3_E4": "Existing local 2022-2025 recipes/coverage retained; same-roster actual-line parity not established",
+        "E5_E6_E7": "NOT_EXECUTED; no incompatible pooling",
+        "E8": "Existing genuine captures preserved; no new inference/capture this wave"
+      }
+    },
+    "lab-route": {
+      "error": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#get-repository-content\",\"status\":\"404\"}",
+      "error_code": "NOT_FOUND",
+      "error_data": {
+        "message": "Not Found",
+        "documentation_url": "https://docs.github.com/rest/repos/contents#get-repository-content",
+        "status": "404"
+      }
+    },
+    "lab-tree": {
+      "head": "275aa84b27c4239d3b2dfea07755734d9db0ac7c",
+      "truncated": false,
+      "tree_entries": 776,
+      "public_week_directories": [
+        "state/public/weekly-adaptive-v1/2026-W07",
+        "state/public/weekly-adaptive-v1/2026-W08"
+      ]
+    },
+    "production-supersessions": {
+      "read_since": "2026-11-04T21:22:14Z",
+      "comments": [
+        {
+          "id": 6642441018,
+          "created_at": "2026-11-04T21:22:14Z",
+          "updated_at": "2026-11-04T21:22:14Z",
+          "headline": "CODEX_RESULT — NFL-PRODUCTION-SELECTION-UPGRADE-01 — 2026-11-04"
+        }
+      ]
+    }
+  }
+}

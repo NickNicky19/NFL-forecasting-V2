@@ -1,0 +1,6 @@
+{
+  "state": "VERIFIER_FIRST_CACHE_SCHEMA_ASSUMPTION_CORRECTED_BEFORE_PASS",
+  "prior_checker_sha256": "e9d12002d833b9bdbe05c903a9297dee9b56f0aefc26d40fb8878db6076bd6e7",
+  "correction": "The initial root fresh tail cache predates the later normalized downloader schema. It binds the authoritative raw fetch reference and exact root successful-cache proof, but lacks a duplicated file_service_id/HTTP_status column. Check that distinct retained chain rather than require nonexistent columns. Other12 fresh downloads retain those duplicated fields and raw MCP responses. No source bytes or producer receipt changed.",
+  "new_transfers": 0
+}

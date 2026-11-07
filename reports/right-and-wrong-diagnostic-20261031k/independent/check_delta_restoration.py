@@ -1,0 +1,53 @@
+"""Separately written local delta byte/provenance audit; no transfer or extraction."""
+import argparse,collections,datetime,hashlib,json,tarfile,time
+from pathlib import Path,PurePosixPath
+HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[2]
+def read(p):return json.loads(Path(p).read_bytes())
+def sha(p):
+ h=hashlib.sha256()
+ with Path(p).open('rb')as f:
+  for b in iter(lambda:f.read(1048576),b''):h.update(b)
+ return h.hexdigest()
+def main():
+ parser=argparse.ArgumentParser();parser.add_argument('--private-root',type=Path,required=True);a=parser.parse_args();start=time.monotonic();private=a.private_root;pre=private/'right-wrong-20261031k-missing-only-preflight';transfer=private/'old-recovery-20261031k';aid='V2-PRIVATE-RECOVERY-DELTA-20261030D-0001'
+ queuepath=pre/'ALL_COMPLETE_PARTS_FETCH_QUEUE_V2.json';downloadpath=transfer/'DELTA_COMPLETE_FRESH_DOWNLOADS_V1.json';queue=read(queuepath);down=read(downloadpath);assert sha(queuepath)=='80fe48ed9d8649788262c552189c3377f4f692ab0f4112a471d331ca735e6f42'and sha(downloadpath)=='1aeebbc44c844c721b6377a87668ad526c5b7197deea689afec4f30a36ad5108'
+ assert set(down['archives'])=={aid};rows=sorted(down['archives'][aid],key=lambda r:r['index']);assert[r['index']for r in rows]==list(range(13));q={r['index']:r for r in queue['parts']if r['artifact_id']==aid};assert set(q)==set(range(13))
+ metadata=queue['metadata'][aid];assert sha(metadata['metadata_local_path'])==metadata['metadata_sha256']=='71b28844ecf714290097bb2a6d161e6e63a2e30109a4d2dfb622d9e9b49bd2f3';meta=read(metadata['metadata_local_path']);originalq={(r['artifact_id'],r['index']):r for r in read(pre/'REQUIRED_MISSING_PART_QUEUE.json')};folder=read(private/'right-wrong-20261031k-recovery-metadata/folder.json');owners=lambda x:{p.get('emailAddress')for p in x['permissions']if p.get('role')=='owner'};assert folder['shared']is False
+ concat=hashlib.sha256();sources=[]
+ for row in rows:
+  i=row['index'];part=q[i];assert(part['sha256'],part['bytes'])==(meta['parts'][i]['sha256'],meta['parts'][i]['bytes']);assert row['status']=='DOWNLOADED'and row['unshared']is True and(row['sha256'],row['bytes'])==(part['sha256'],part['bytes'])
+  path=Path(row['workspace_path']);assert path.resolve().is_relative_to((transfer/'fresh-parts').resolve())and not path.samefile(originalq[aid,i]['local_path']);assert path.stat().st_size==part['bytes']and sha(path)==part['sha256']
+  with path.open('rb')as f:
+   for b in iter(lambda:f.read(1048576),b''):concat.update(b)
+  sourcepath=Path(row['source_receipt']['path']);assert sha(sourcepath)==row['source_receipt']['sha256'];source=read(sourcepath);md=source['metadata'];fetch=source['response'];ref=part['provider_reference'];assert md['id']==fetch['id']==row['provider_object_id']==ref['provider_object_id'];assert md['url']==fetch['url'];assert md['title']==fetch['file_name']==part['expected_remote_file_name']and int(md['size'])==int(fetch['file_size_bytes'])==part['bytes']
+  assert md['shared']is False and folder['id']in md['parent_ids']and folder['id']in fetch['parent_ids']and owners(md)==owners(folder)and all(p['type']=='user'and p['role']=='owner'for p in md['permissions']);assert fetch['b64_string']in(None,'')and isinstance(fetch['file_uri']['file_id'],str)and fetch['file_uri']['file_id'];assert i==12 or fetch['file_uri']['file_id']==row['file_service_id']
+  uploadpath=Path(ref['upload_receipt_local_path']);upload=read(uploadpath);assert sha(uploadpath)==ref['upload_receipt_sha256'];u=upload.get('provider_result',upload);assert u['success']is True and u['id']==md['id']and u['parent_id']==folder['id']and u['file_name']==part['expected_remote_file_name']
+  if i!=12:
+   assert source['raw_metadata_response']['isError']is False and source['raw_metadata_response']['structuredContent']==md and source['raw_fetch_response']['isError']is False and source['raw_fetch_response']['structuredContent']==fetch and source['approved_parent']==folder['id']and row['HTTP_status']==200
+  else:
+   assert source['requested_url']==fetch['url']==u['url'];firstpath=pre/'FIRST_OLD_PART_HASH_VERIFICATION.json';first=read(firstpath);assert row['first_cache_proof_sha256']==sha(firstpath)and first['state']=='FIRST_REQUIRED_OLD_PART_UPLOADED_AND_FRESH_DOWNLOAD_HASH_VERIFIED'and first['part_sha256']==part['sha256']and first['part_bytes']==part['bytes']and Path(first['fresh_local_path']).samefile(path)
+  sources.append({'index':i,'bytes':part['bytes'],'sha256':part['sha256'],'private_source_receipt_sha256':sha(sourcepath),'approved_parent_owner_and_namespace_chain_verified':True})
+ expected='3ac59cf6888faae55ded308042c05f00bbdf474d3c10b35974dc801d60a1175f';assert concat.hexdigest()==meta['archive_sha256']==expected
+ joined=transfer/'fresh-delta-restore-v1'/f'{aid}.tar.gz';assert not joined.samefile(originalq[aid,0]['archive_local_path'])and joined.stat().st_size==sum(r['bytes']for r in rows)==263613679 and sha(joined)==expected
+ catalog={};blob=None
+ with tarfile.open(joined,mode='r|gz')as t:
+  for member in t:
+   p=PurePosixPath(member.name);assert member.isfile()and not p.is_absolute()and'..'not in p.parts and member.name not in catalog;digest=hashlib.sha256();n=0;chunks=[];f=t.extractfile(member)
+   for b in iter(lambda:f.read(1048576),b''):
+    digest.update(b);n+=len(b)
+    if member.name=='REQUIRED_FILES_PRIVATE.json':chunks.append(b)
+   assert n==member.size;catalog[member.name]=(digest.hexdigest(),n)
+   if member.name=='REQUIRED_FILES_PRIVATE.json':blob=b''.join(chunks)
+   else:assert member.name=='blobs/'+digest.hexdigest()
+ assert len(catalog)==1788 and blob is not None;mapping=json.loads(blob);externalpath=private/'recovery-20261030d/REQUIRED_FILES_PRIVATE.json';external=externalpath.read_bytes();assert sha(externalpath)=='e592881a6495ad097b31667daaa12229f0837b0bec6ff390386387df01f7a1ad'and mapping==json.loads(external)and(json.dumps(mapping,indent=2)+'\n').encode()==external
+ assert hashlib.sha256(blob).hexdigest()=='4a9a130c9bef6c0b907a3da86679aa77398e9b5575545f39119b9d291884e68d'and len(blob)==12571859
+ allrows=mapping['required_files'];assert len(allrows)==29527 and len({r['sha256']for r in allrows})==20217 and len({(r['namespace'],r['relative_path'])for r in allrows})==29527
+ aliases=[r for r in allrows if r['restoration_binding']['kind']=='DELTA_BLOB'];novel=set()
+ for r in aliases:
+  b=r['restoration_binding'];assert b['artifact_id']==aid and b['member']=='blobs/'+r['sha256']and catalog[b['member']]==(r['sha256'],r['bytes']);novel.add(r['sha256'])
+ assert len(aliases)==4255 and len(novel)==1787 and {'blobs/'+d for d in novel}==set(catalog)-{'REQUIRED_FILES_PRIVATE.json'}
+ proofpath=HERE.parent/'recovery-preflight/delta-fresh-restore-v1/DELTA_FRESH_RESTORATION_RECEIPT.json';proof=read(proofpath);assert proof['archive_sha256']==expected and proof['archive_bytes']==263613679 and proof['archive_member_count_verified']==1788 and proof['inner_file_checks']==1787 and proof['covered_delta_path_aliases']==4255 and proof['covered_delta_unique_content_hashes']==1787 and proof['full_archive_fresh_restoration_verified']is True and proof['global_old_recovery_gate_cleared']is False and proof['worker_release']is False and proof['inner_files_extracted_to_filesystem']==0 and proof['source_queue_sha256']==sha(queuepath)and proof['source_download_manifest_sha256']==sha(downloadpath)
+ out={'state':'PASS_INDEPENDENT_DELTA_FRESH_13_SOURCE_CHAINS_WHOLE_ALL_MEMBERS_AND_MAP','at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'source_public_proof_sha256':sha(proofpath),'source_queue_sha256':sha(queuepath),'source_download_manifest_sha256':sha(downloadpath),'archive_sha256':expected,'archive_bytes':263613679,'all13_actual_private_upload_fetch_download_chains_verified':True,'fresh_local_parts_distinct_from_originals':True,'fresh_joined_archive_distinct_from_original':True,'part_proofs':sources,'regular_members_independently_stream_hashed':1788,'content_addressed_payloads':1787,'delta_path_aliases_verified':4255,'embedded_compact_map_sha256':hashlib.sha256(blob).hexdigest(),'external_map_sha256':sha(externalpath),'embedded_and_external_map_semantics_and_exact_pretty_encoding_equal':True,'full_frozen_map_alias_count_confirmed':29527,'full_frozen_map_unique_content_count_confirmed':20217,'fresh_scope_qualification':'Only4255delta aliases/1787unique blobs freshly recovered here. The complete map counts are not a claim that other three seasonal archives or every source alias is freshly restored.','other_three_archives_complete':False,'global_old_recovery_gate_cleared':False,'quota_or_free_capacity_verified':False,'new_external_transfers':0,'inner_files_extracted':0,'new_NFL_fits_or_inference':0,'scientific_outcome_values_decoded':0,'wall_seconds':time.monotonic()-start,'checker_sha256':sha(Path(__file__))}
+ with(HERE/'DELTA_FRESH_RESTORATION_INDEPENDENT_REVIEW.json').open('x')as f:json.dump(out,f,indent=2);f.write('\n')
+ print(json.dumps({k:out[k]for k in('state','archive_bytes','regular_members_independently_stream_hashed','content_addressed_payloads','delta_path_aliases_verified','global_old_recovery_gate_cleared','wall_seconds')}))
+if __name__=='__main__':main()

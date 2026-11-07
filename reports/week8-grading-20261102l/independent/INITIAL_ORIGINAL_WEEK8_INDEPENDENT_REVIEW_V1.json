@@ -1,0 +1,84 @@
+{
+  "state": "PASS_INDEPENDENT_INITIAL_WEEK8_ORIGINAL_LABELS_SOURCE_CLOCKS_LISTS_AND_SIDE_MATH",
+  "at_utc": "2026-11-02T19:15:01.712275+00:00",
+  "source_score_sha256": "e5e90e5bb123250fef971e06ad29fcf52e2ac0b525ee8d5c8c9db0079707c86b",
+  "source_grade_packet_sha256": "a7f40490f59b00f48afc680335285c4ea5fc141cb58a1999760e90e25fcec3d6",
+  "source_joined_packet_sha256": "be1a8544384a36e08ad4638d359652f6b1e28c125a2e81d2c13f7d6f8b1bd175",
+  "frozen_source_assignment_sha256": "f3abd62c93b47e6e20caf323ec33314fd9c88caa19713842aadefc75f22f924f",
+  "identity_roster_sha256": "a44e42361de63e42339a563f57ce2c72da17aeffa2eb69e99ac5fb9e246a166d",
+  "NFLverse_stats_sha256": "6f04648eed6c27bebc2f2b32893801b411e8163419e9e2ba01e2642a8f261790",
+  "NFLverse_games_sha256": "e1e5a10876d1e3fded8bb722c1d6af4ac666c903f94450c5a2c75dda87b6b980",
+  "ESPN_finality_sha256": "efe48ca9fef57f5b2744b757227abd7418b09834d6294857e3102c1036261828",
+  "game_finality": {
+    "FINAL": 13,
+    "PENDING": 1
+  },
+  "all13_ESPN_final_scores_match_schedule": true,
+  "source_label_and_identity_checks": 8242,
+  "raw_board_rows_and_source_field_checks": [
+    1591,
+    9546
+  ],
+  "source_publication_clock_proofs": 5,
+  "original_provider_selected": 427,
+  "original_provider_over": {
+    "WIN": 104,
+    "LOSS": 122,
+    "PENDING": 12,
+    "UNKNOWN": 7,
+    "selected": 245
+  },
+  "original_provider_under": {
+    "WIN": 90,
+    "LOSS": 70,
+    "PENDING": 18,
+    "UNKNOWN": 4,
+    "selected": 182
+  },
+  "original_provider_combined": {
+    "WIN": 194,
+    "LOSS": 192,
+    "UNKNOWN_PARTICIPATION": 11,
+    "PENDING": 30
+  },
+  "side_score_views_verified": 1152,
+  "side_triads_verified": 384,
+  "wide_views_verified": 384,
+  "bootstrap_views_verified": 1152,
+  "played_zero_grade_views_retained": 859,
+  "saved_list_versions": 12,
+  "primary_saved_list_selected": 23,
+  "primary_saved_list_side_counts": {
+    "over": 11,
+    "under": 12
+  },
+  "primary_saved_list_counts": {
+    "WIN": 8,
+    "LOSS": 9,
+    "PENDING": 6
+  },
+  "late_snapshot_signature_clock_counts": {
+    "earlier_proved_record": 17,
+    "first_proved_at_late_snapshot": 7
+  },
+  "post_start_whole_list_snapshots": [
+    "SAVED_TOP_LIST:6444834ff22fcc36e02bbb9733e8bbe34c0a1cacf57a6429bd52bf6555f1971b"
+  ],
+  "list_qualification": "Post-start whole-list membership is not an authenticated fixed-weekly policy. Every retained individual decision is qualified by its own earliest substantive signature and target-game kickoff; all17earlier and7newlate-afternoon decisions in the latest snapshot pass those row-level gates. Keep versions separate, never union as independent weekly picks.",
+  "cohort_qualification": "SAVED_BOARD_TOP_FLAGS mixes registered per-game source versions; it is not one original fixed weekly top12 list. Its selected subset coverage is relative to the full category/source pool.",
+  "membership_hash_qualification": "Index-ordinal query hashes are source/panel scoped; cross-panel matching requires actual game/player/target/line identities.",
+  "book_settlement_and_prices": "All contracts unverified; statistical wins/losses are not settled profit. No actual push/void asserted when absent.",
+  "private_worked_examples_sha256": "a74a21bf40eaeade3eb3ff4bc5dec39309a627a317f6d033d61d3ca072755121",
+  "private_example_states": [
+    "ABSTAIN",
+    "LOSS",
+    "PENDING",
+    "UNKNOWN_PARTICIPATION",
+    "WIN"
+  ],
+  "private_example_retention": "LOCAL_VERIFICATION_CACHE_ONLY; no new offhost backup claim",
+  "whole_week_complete": false,
+  "new_transfers_or_model_calls": 0,
+  "source_preserved": true,
+  "checker_sha256": "0d0f48c8ff58596663463d48dceeb90d69f8c4da79ee74a213ff624c639f0247"
+}

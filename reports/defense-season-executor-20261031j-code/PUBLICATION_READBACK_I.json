@@ -1,0 +1,30 @@
+{
+  "state": "PASS_I_GITHUB_COMMIT_AND_READBACK",
+  "checked_at_utc": "2026-10-31T18:44:53.101878+00:00",
+  "commit": "4d4ea743938d10373ab66893e4a2cc0bfa60e0a0",
+  "branch": "research/independent-audit-20261029",
+  "pull_request": 1,
+  "pull_request_state": "OPEN_DRAFT_NOT_MERGED",
+  "remote_blobs_equal_local_git": {
+    "reports/point-prop-diagnostic-20261031i/FULL_CATEGORY_CHAMPIONSHIP_REPORT.md": "75fcef6da3f7b1b7bbf3b9a99465ee0635c6f408",
+    "reports/point-prop-diagnostic-20261031i/results-index-v3/INDEX_MANIFEST.json": "8db16f1a9838874a9b5ef1ed630a0ea4cd35cbfe",
+    "registries/CURRENT_RESULTS_INDEX.json": "5393c694c3d25ecb61e03fb522cda59b2a682166",
+    "nfl_v2/defense_season_preflight.py": "fead2062852e1ff598d83e1efeb6e60b3147515d"
+  },
+  "CI": [
+    {
+      "run_id": 41230458779,
+      "event": "pull_request",
+      "state": "completed",
+      "conclusion": "success"
+    },
+    {
+      "run_id": 41230446879,
+      "event": "push",
+      "state": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "source": "GitHub connector exact-ref fetch_file and Actions job/readback; git ls-tree local byte identities",
+  "scope": "Publication and software only; no NFL fit, forecast, outcome grade, production change or claim of full tournament completion."
+}

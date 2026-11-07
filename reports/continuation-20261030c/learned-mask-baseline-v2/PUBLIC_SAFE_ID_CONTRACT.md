@@ -1,0 +1,3 @@
+`private_bundle_id` values are portable scientific archive labels that identify the source run. They are not service IDs, private filesystem paths, Drive locators, URLs or credentials. Actual source locations remain outside the public protocol. The protocol binds source bytes by SHA-256, while the root's separate private catalog and restoration receipts control retrieval and durability.
+
+This derivative run adds comparator statistics on retained candidate-owned learned masks. It creates no fitted model, forecast or independent NFL observation. Existing candidate score values are checked rather than replaced; new annotation files preserve source-row identity and all previous full-system comparisons.

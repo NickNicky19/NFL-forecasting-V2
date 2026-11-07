@@ -1,0 +1,73 @@
+{
+  "status": "PASS_NEW_SHADOW_CAPTURE_WITH_LATE_OWNER_CUTOFF_DISCLOSED",
+  "forecast_sha256": "b825c8fc436c71939d45d56f387a1e6a304a29072963f97c0f11d07e6770b7f6",
+  "query_membership_sha256": "78e15cfc76c2ae648b547f31e563e800b1e7fea2d4863a8c9df4d06b8a2b0df1",
+  "source_files_hash_verified": 8,
+  "query_cells": 1951,
+  "query_binding_checks": 13657,
+  "output_views": 10416,
+  "issued_views": 10386,
+  "abstention_views": 30,
+  "chronology_field_checks": 62496,
+  "raw_prefix_sampled_views": 106,
+  "raw_prefix_checks": 424,
+  "sample_fallback_coverage": [
+    {
+      "history": "H-CURRENT",
+      "fallback": "none",
+      "views": 21
+    },
+    {
+      "history": "H-CURRENT",
+      "fallback": "position_empirical",
+      "views": 21
+    },
+    {
+      "history": "H-MULTI",
+      "fallback": "none",
+      "views": 21
+    },
+    {
+      "history": "H-MULTI",
+      "fallback": "position_empirical",
+      "views": 11
+    },
+    {
+      "history": "H-RECENT",
+      "fallback": "none",
+      "views": 21
+    },
+    {
+      "history": "H-RECENT",
+      "fallback": "position_empirical",
+      "views": 11
+    }
+  ],
+  "owner_cutoff_status": {
+    "BEFORE_OWNER_INPUT_CUTOFF": 9549,
+    "LATER_THAN_OWNER_INPUT_CUTOFF": 837
+  },
+  "actual_feature_cutoff_utc": "2026-10-29T22:51:31.887165+00:00",
+  "actual_persisted_at": "2026-10-29T22:51:33.833766+00:00",
+  "minimum_horizon_seconds": 5006.307718,
+  "excluded_unavailable_source_rows": 959,
+  "all_issued_persisted_before_kickoff": true,
+  "original_optimizer_fits_added": 0,
+  "new_inference_runs_added": 0,
+  "week8_outcomes_read_or_scored": 0,
+  "offhost_restore_verification": "fresh downloaded archive independently hash/member-checked; unchanged original capture and cutoff tags",
+  "limits": [
+    "First-game shadows were issued after owner T-90 input cutoff; late tags retained, no backdating.",
+    "One empirical family with3historyarms; not five independent ready models per category.",
+    "No chart PPR, official capture, deployed website procedure, calibrated law qualification or scoring claim.",
+    "Current identity snapshots are source-bridged; historical statistics current-vintage with assumed7dayavailability.",
+    "Eligibility is the frozen existing public-feed population, not proof of game-day appearance."
+  ],
+  "offhost_restoration": {
+    "public_safe_artifact_id": "V2-PRIVATE-WEEK8-0001",
+    "archive_sha256": "3bf5ea98796c59f71d5974e10bbc2f88dcfebfe15a51c4403f2642a1d25e57b0",
+    "independently_checked_restored_members": 10,
+    "restored_predictions_sha256": "b825c8fc436c71939d45d56f387a1e6a304a29072963f97c0f11d07e6770b7f6",
+    "evidence": "fresh downloaded archive bytes independently inspected; private-store ownership/sharing attested separately by executor"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "B-C-RETAINED-LEAF-LAW-SCORING-RESUME-v2",
+  "at_utc": "2026-11-04T01:39:53.567582+00:00",
+  "parent_protocol": "reports/abc-championship/leaf-law-continuation-20261104-v1/FROZEN_PACKAGE.json",
+  "parent_protocol_sha256": "fde9a8e2f16171a2ef776fcd5f82f25d3dbe44803d10410f564e7f86239335ae",
+  "failed_attempt_sha256": "863f70bfad3abd4878df7405732b226fca7f71802b8278046a71116506498ea7",
+  "completed_rows_sha256": "6130073206a97d889d2babce5a866e0ab4524e68ca3d7ddb89ab4fa39d7da7e3",
+  "code_sha256": "8e302cd3af75efc6c47e90e8e433b8bc513df62e1b93d1e392e454d3e6dcb035",
+  "source_C_ref": "ac9cb1000bcb8f1197505b68ccfe246ea61bbafe",
+  "core_protocol_sha256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1",
+  "budget": {
+    "new_fits": 0,
+    "new_model_inference": 0,
+    "new_histogram_lookup": 0,
+    "max_new_private_bytes": 0,
+    "max_wall_seconds": 180
+  },
+  "task": "Reuse all completed v1 rows, preserve its post-write budget failure; add public aggregates only, not another private copy. No repeated models, histograms, forecasts or source collection.",
+  "source_metadata": "Check both training feature availability names explicitly; missing alias never means no feature consumption. Bind every model/chunk to v1 preflight. Absent-source fallback metadata normalized to NOT_RETAINED, not learned output.",
+  "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+  "population": "Full C board with retained B retrospective primary-query support; not complete original ex-ante issuance.",
+  "selection": "Frozen original P2 exact-line higher Over/Under probability,1e-12 tie abstention. Conditional modelled appearance; settlement/prices/void probability unverified.",
+  "new_holdout": false,
+  "production_changes": false
+}

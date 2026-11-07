@@ -1,0 +1,103 @@
+{
+  "state": "PASS_WITH_RETAINED_RESOURCE_AND_SOURCE_LIMITATIONS",
+  "verified_at_utc": "2026-11-04T21:19:29.219392+00:00",
+  "checks": {
+    "checkpoint": {
+      "status": "PASS",
+      "JSON_files_parsed": 30961,
+      "grid_cells": 5408,
+      "request_index_items": 103,
+      "reported_cells": 4832,
+      "reproduced_primary_all_role_views": 66,
+      "initial_checkpoint_new_fits": 0,
+      "scope": "initial-checkpoint artifact/schema/privacy-marker checks; continuation fits are recorded in their separate run receipts; not independent NFLtruth"
+    },
+    "result_coverage": {
+      "status": "PASS",
+      "indexed_records": 602201,
+      "registered_artifacts": 213,
+      "scope": "streamed coverage/hashes; not additional NFL evidence"
+    },
+    "paired_coverage": {
+      "state": "PASS",
+      "canonical_evaluation_views": 124630,
+      "derived_comparison_views": 18824,
+      "status_counts": {
+        "PAIRED_LOSS_SCORED": 17770,
+        "NO_SUPPORTED_PAIRED_ROWS": 1054
+      },
+      "new_NFL_observations": 0
+    },
+    "prop_scoreboard": {
+      "NFL_outcome_rows_read": 0,
+      "groups": 124597,
+      "new_grades": 0,
+      "proper_views": 7332,
+      "selection_views": 373791,
+      "source_arrays": 103,
+      "state": "PASS_PROP_SCOREBOARD_COMPLETION_COVERAGE"
+    },
+    "unit_tests": {
+      "run": 453,
+      "failed": 0,
+      "kind": "SOFTWARE_NOT_NFL_OBSERVATIONS"
+    }
+  },
+  "independent_receipts": [
+    {
+      "path": "INDEPENDENT_CURRENT_OWNER_READBACK_V1.json",
+      "sha256": "2eb6178ad7da8ce8dc39714bd3bbadf6598f0cfbdf385c214df825173e185133"
+    },
+    {
+      "path": "INDEPENDENT_DISCRIMINATION_RELIABILITY_V1.json",
+      "sha256": "41e98219a4252de50899125d5c4dc4e23468b9163ff80072dbdd706554276ad0"
+    },
+    {
+      "path": "INDEPENDENT_FINAL_READABLE_AND_SIDE_TABLES_V1.json",
+      "sha256": "54252a279a1a09cc40ea5ab1fb07ddd85227f7df8639cdc50613c968d871c0a9"
+    },
+    {
+      "path": "INDEPENDENT_POLICY_COHORT_PARTITIONS_V1.json",
+      "sha256": "617f103e077b309a9105bd78c809dcf9184c8e9f12a5df99b21347217cc61bd5"
+    },
+    {
+      "path": "INDEPENDENT_POSTRUN_CALIBRATION_AND_POLICIES_V1.json",
+      "sha256": "6986678c6d38b0205e0866fc43ef9b285b176a539ae20e186359da22db04c913"
+    },
+    {
+      "path": "INDEPENDENT_PREFIT_METADATA_QUALIFICATION_V2.json",
+      "sha256": "1874f2dcf7e73f047358f4ddfd3d3ae26fac205b258403c1d29882ddaea55338"
+    },
+    {
+      "path": "INDEPENDENT_PREFIT_SOURCE_AND_CHRONOLOGY_V1.json",
+      "sha256": "3a898b00dedc6bb2a41ad1d9540ee91041bec22124ff68614786389e8bc09679"
+    },
+    {
+      "path": "INDEPENDENT_PROBABILITY_SOURCE_BINDINGS_V1.json",
+      "sha256": "c76a05d960ea16f3a4d150016f7e65e37882bc76f92dee00309e15e0ce1afb41"
+    },
+    {
+      "path": "INDEPENDENT_SOURCE_CLOCK_AND_INDEX_PROJECTION_V3.json",
+      "sha256": "7c4e1fed4e5f70589b63c60c461bbbc81ee4ccb1c507ef344c622ceca2ebd1c2"
+    },
+    {
+      "path": "INDEPENDENT_SOURCE_CLOCK_AND_INDEX_PROJECTION_V4.json",
+      "sha256": "dd74c8c21e64d6d64044f110899b3567be658b31e4669172bc13b06b6ff7e2e3"
+    },
+    {
+      "path": "INDEPENDENT_SUPPLEMENT_CONTROLS_COHORTS_AND_TYPING_V1.json",
+      "sha256": "12d662229654bbe3b1529cc3d3cbd27ef360a1dca87b59209dfa0e186893202c"
+    }
+  ],
+  "score_records": 7893,
+  "prior_index_records_reused": 594308,
+  "current_index_records": 602201,
+  "new_calibrator_fits": 6,
+  "new_football_fits": 0,
+  "new_issued_forecasts": 0,
+  "new_NFL_observations": 0,
+  "thread_enforcement": "Originalrunnotdemonstrablyenforced;RESOURCE_QUALIFICATION retained; futurewrapperimplementednotrerun",
+  "source_clock_and_attribution": "V3annotations plusV4top-levelexposure; allexecution/scores/drafts preserved",
+  "new_C_admission": false,
+  "production_changes": 0
+}

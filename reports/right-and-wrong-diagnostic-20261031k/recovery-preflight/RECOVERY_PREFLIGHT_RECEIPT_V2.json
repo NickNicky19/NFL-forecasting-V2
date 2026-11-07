@@ -1,0 +1,108 @@
+{
+  "accepted_plan_sha256": "7ce075fc7b853a646f79795bb7133b597ee5dbeaa6cb7f5f21240e8cd8d516de",
+  "actual_disk_at_receipt": {
+    "tmp_free_bytes": 9440567296,
+    "tmp_total_bytes": 9441329152,
+    "workspace_free_bytes": 13318766592,
+    "workspace_total_bytes": 33770192896
+  },
+  "archives": [
+    {
+      "all_regular_member_uncompressed_bytes": 240652369,
+      "archive_bytes": 224693683,
+      "archive_sha256": "f0f42f1a457862b3189865e7974b93413ea18e725186a77648e175b96da10a39",
+      "artifact_id": "V2-PRIVATE-SEASON-2022-V2",
+      "local_archive_hash_verified": true,
+      "metadata_name_candidate_sizes": [],
+      "regular_members": 1882,
+      "required_missing_bytes": 224693683,
+      "required_missing_parts": 11,
+      "source": "Acceptedfrozenplan and read-only currentlocaltarheaders; no archiveextraction or memberpayloaddecode"
+    },
+    {
+      "all_regular_member_uncompressed_bytes": 364958563,
+      "archive_bytes": 353782056,
+      "archive_sha256": "d8d00224847f6dcd2d96a78a055e75ac6a1074cdf0a60952e2a941785af53fdd",
+      "artifact_id": "V2-PRIVATE-SEASON-2023-COMPLETE-V1",
+      "local_archive_hash_verified": true,
+      "metadata_name_candidate_sizes": [],
+      "regular_members": 4029,
+      "required_missing_bytes": 353782056,
+      "required_missing_parts": 17,
+      "source": "Acceptedfrozenplan and read-only currentlocaltarheaders; no archiveextraction or memberpayloaddecode"
+    },
+    {
+      "all_regular_member_uncompressed_bytes": 475694862,
+      "archive_bytes": 464346512,
+      "archive_sha256": "c34e10c5e8f70b2c65fa4f9b7a17407ac1defafb4d141b688773551cc7dc0fbb",
+      "artifact_id": "V2-PRIVATE-SEASON-2024-V2",
+      "local_archive_hash_verified": true,
+      "metadata_name_candidate_sizes": [],
+      "regular_members": 5181,
+      "required_missing_bytes": 251658240,
+      "required_missing_parts": 12,
+      "source": "Acceptedfrozenplan and read-only currentlocaltarheaders; no archiveextraction or memberpayloaddecode"
+    },
+    {
+      "all_regular_member_uncompressed_bytes": 291091850,
+      "archive_bytes": 263613679,
+      "archive_sha256": "3ac59cf6888faae55ded308042c05f00bbdf474d3c10b35974dc801d60a1175f",
+      "artifact_id": "V2-PRIVATE-RECOVERY-DELTA-20261030D-0001",
+      "local_archive_hash_verified": true,
+      "metadata_name_candidate_sizes": [],
+      "regular_members": 1788,
+      "required_missing_bytes": 263613679,
+      "required_missing_parts": 13,
+      "source": "Acceptedfrozenplan and read-only currentlocaltarheaders; no archiveextraction or memberpayloaddecode"
+    }
+  ],
+  "cheapest_required_part": {
+    "artifact_id": "V2-PRIVATE-RECOVERY-DELTA-20261030D-0001",
+    "bytes": 11955439,
+    "index": 12,
+    "sha256": "211c6e524965b7a8cb669b8cd8d5d90dfd8f3b939ac02ecebce0aa7020514da4"
+  },
+  "deletions": 0,
+  "fresh_disk_budget": {
+    "budget_scope": "Logicalpayload bytes; filesystemallocation/metadata/headroom and newfitoutputs areadditional. No remote download/reassembly or innerfilehashequality was performed.",
+    "download_complete_four_archives_parts_bytes": 1306435930,
+    "excludes_new_fit_output_reserve": true,
+    "full_fresh_extraction_preserving_all_downloads_and_assemblies_bytes": 3985269504,
+    "minimum_parts_plus_archive_files_no_inner_extraction_bytes": 2612871860,
+    "reassembled_complete_archives_bytes": 1306435930,
+    "stream_buffer_separate_bytes": 1048576,
+    "tar_header_declared_regular_payload_bytes": 1372397644
+  },
+  "gate_code_sha256": "f3f4ee33076ed9863ec6f26fd21b9449beddd5340d6f8d0550d5eb3a0d435163",
+  "global_gate_cleared": false,
+  "new_downloads": 0,
+  "new_fit_calls": 0,
+  "new_restorations": 0,
+  "new_uploads": 0,
+  "original_quota_failure": {
+    "message": "The user's Drive storage quota has been exceeded.",
+    "private_failure_receipt_sha256": "863bb720a5a2507c6b54e48ce646c10021e393fc2b9810fe33aa54ac9b385902",
+    "reason": "storageQuotaExceeded",
+    "status": 403
+  },
+  "private_queue_sha256": "0afa92672d70b356219813941d32937a03e2e1e127dfd272a75e9facb303a289",
+  "provider_state_change": {
+    "path": "reports/right-and-wrong-diagnostic-20261031k/K_PRIVATE_BUNDLE_RESTORATION_RECEIPT.json",
+    "scope": "Meaningfulsmallupload/downloadsuccess; doesnotprove1.09GBquota orclearoldgate",
+    "sha256": "fc48c6c5ba25d0ac8fa53e349566f0ce6271452b781eb002e6d70f241276f88a"
+  },
+  "recorded_at_utc": "2026-10-31T20:27:21.852537+00:00",
+  "remote_presence_recheck": "Rootsoleuploader lists333currentitems and excludes exactalreadyretainedpartnames/hashes; notperformedhere",
+  "required_missing_parts": 53,
+  "required_missing_upload_bytes": 1093747658,
+  "resource": {
+    "peak_RSS_bytes": 19439616,
+    "wall_seconds": 5.357048302001203
+  },
+  "sharing_changes": 0,
+  "state": "READ_ONLY_MISSING_ONLY_RECOVERY_PREFLIGHT_V2_NOT_RETENTION_PASS",
+  "supersedes_metadata_label_sha256": "1b368213f7fc912f7c9df1a07b21d5807212dd39d63f17bb41540ddff25781c0",
+  "tar_header_scope": "Localcanonicalarchivewholehashes and regularmemberheadercounts/sizes verified only. Fresh remotecomplete reassembly and ALLinnerfilehashchecks remain required.",
+  "verified_local_required_bytes": 1093747658,
+  "verified_local_required_parts": 53
+}

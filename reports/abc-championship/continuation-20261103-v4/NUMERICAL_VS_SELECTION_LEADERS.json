@@ -1,0 +1,2151 @@
+[
+  {
+    "target": "pass_yd",
+    "numerical_leader": {
+      "record_id": "ABC-B-NUM-80636800fea15a0859c2108f",
+      "record_kind": "forecast_evaluation_view",
+      "procedure_id": "B::empirical-player-history-control-v1::H-RECENT-EMPIRICAL::empirical_mean",
+      "history_regime": "H-RECENT",
+      "product_id": "empirical_mean",
+      "information_policy": "ARM_LIMITED_TARGET_HISTORY",
+      "target": "pass_yd",
+      "season": 2026,
+      "week": "ALL",
+      "evaluation_seasons": [
+        2026
+      ],
+      "evaluation_weeks": [
+        2,
+        3
+      ],
+      "evaluation_panel_id": "B_C_PINNACLE_OFFERED_PLAYER_NUMERICAL_W2_W3_ALL",
+      "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+      "population": "Primaryretrospectiveparticipantforecasts on fullCofferboard; missing outputs retained",
+      "forecast_rows": 64,
+      "supported_rows": 63,
+      "missing_actual_or_output": 1,
+      "fallback_rows": 2,
+      "unique_games": 32,
+      "unique_player_games": 63,
+      "evidence": "REPRODUCED_FROM_DATA",
+      "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_CORRECTED_LABELS;QUOTE_TIMING_UNVERIFIED",
+      "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+      "precision_counts": {
+        "exact_rate": {
+          "numerator": 0,
+          "denominator": 63
+        },
+        "abs_lt_1": {
+          "numerator": 1,
+          "denominator": 63
+        },
+        "abs_le_1": {
+          "numerator": 1,
+          "denominator": 63
+        },
+        "abs_lt_5": {
+          "numerator": 6,
+          "denominator": 63
+        },
+        "abs_le_5": {
+          "numerator": 6,
+          "denominator": 63
+        },
+        "abs_lt_10": {
+          "numerator": 8,
+          "denominator": 63
+        },
+        "abs_le_10": {
+          "numerator": 8,
+          "denominator": 63
+        }
+      },
+      "n": 63,
+      "mae": 55.770173414891225,
+      "mse": 4796.492694945762,
+      "rmse": 69.2567158833406,
+      "bias": -17.757171352467815,
+      "p90_abs": 114.84000000000007,
+      "p95_abs": 134.78571428571428,
+      "max_abs": 184.5,
+      "exact_rate": 0.0,
+      "abs_lt_1": 0.015873015873015872,
+      "abs_le_1": 0.015873015873015872,
+      "abs_lt_5": 0.09523809523809523,
+      "abs_le_5": 0.09523809523809523,
+      "abs_lt_10": 0.12698412698412698,
+      "abs_le_10": 0.12698412698412698
+    },
+    "own_side_records": {
+      "over": {
+        "record_id": "ABC-B-C-27936c1021397d2dd1685bdd",
+        "record_kind": "prop_selection_evaluation",
+        "procedure_id": "B::empirical-player-history-control-v1::H-RECENT-EMPIRICAL::empirical_mean",
+        "product_id": "empirical_mean",
+        "strategy": "P1",
+        "target": "pass_yd",
+        "side": "over",
+        "cohort_id": "ALL",
+        "K": null,
+        "rank_scope": null,
+        "time_panel_id": "E1_ALL",
+        "season_alias_of_week_view": false,
+        "season": 2026,
+        "week": "ALL",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          2,
+          3
+        ],
+        "period": "full_game",
+        "season_type": "REG",
+        "statistic_period": "full_game",
+        "overtime": true,
+        "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+        "evaluation_panel_id": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+        "n": 32,
+        "forecast_rows": 32,
+        "unique_games": 24,
+        "unique_players": 20,
+        "unique_player_games": 32,
+        "query_membership_sha256": "887eee55d1de63b6189d21f24039865583c49ec42aac882d5f1e62fa4b3dbd12",
+        "selection_metrics": {
+          "WIN": 19,
+          "LOSS": 13,
+          "PUSH": 0,
+          "status_counts": {
+            "WIN": 19,
+            "LOSS": 13,
+            "PUSH": 0,
+            "UNKNOWN_PARTICIPATION": 0,
+            "MISSING_ACTUAL": 0,
+            "PENDING": 0,
+            "VOID": 0,
+            "UNRESOLVED_CONTRACT": 0
+          },
+          "hit_rate": 0.59375,
+          "denominators": {
+            "outer_rows": 32,
+            "decided": 32,
+            "supported_threshold_outcomes": 32,
+            "unresolved": 0
+          },
+          "selection_pool_count": 64,
+          "eligible_rank_pool_n": 64,
+          "abstentions_outside_selected_partition": 0,
+          "selection_coverage": 0.5,
+          "bookmaker_settlement_status_counts": {
+            "UNRESOLVED_CONTRACT": 32
+          },
+          "probability_scores": {
+            "brier": null,
+            "log_loss": null,
+            "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+          },
+          "returns": {
+            "net": null,
+            "ROI": null,
+            "drawdown": null,
+            "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+          },
+          "game_uncertainty": {
+            "paired_n": null,
+            "game_clusters": 24,
+            "replicates": 500,
+            "seed": 1703,
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+            "game_interval": [
+              0.42857142857142855,
+              0.7724999999999997
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "estimate": 0.59375
+          },
+          "technical_unavailable": 1,
+          "admitted_rule_abstentions": 0,
+          "fallback_issued": 2,
+          "fallback_status_unknown": 0
+        },
+        "selection_loss_rate": 0.40625,
+        "mae": 52.7052584038604,
+        "mse": null,
+        "brier": null,
+        "log_loss": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+        "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_LAST_RECORDED_QUOTE_TIMING_UNVERIFIED;C_PINNED_CORRECTED_LABELS",
+        "settlement_status": "UNRESOLVED_CONTRACT",
+        "null_reason": null,
+        "period_id": "E1",
+        "requested_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+        "whole_week_complete": false,
+        "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+        "history_regime": "H-RECENT",
+        "information_policy": "ARM_LIMITED_TARGET_HISTORY",
+        "base_procedure_id": "empirical-player-history-control-v1",
+        "window_contract": "NOT_APPLICABLE_NO_D1_D2_DEFENSE_WINDOW",
+        "information_group": "EXISTING_SAVED_PROCEDURE",
+        "bias": -5.042309402988119,
+        "numerical_n": 32,
+        "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+      },
+      "under": {
+        "record_id": "ABC-B-C-ade58af3afa25887db741b1f",
+        "record_kind": "prop_selection_evaluation",
+        "procedure_id": "B::empirical-player-history-control-v1::H-RECENT-EMPIRICAL::empirical_mean",
+        "product_id": "empirical_mean",
+        "strategy": "P1",
+        "target": "pass_yd",
+        "side": "under",
+        "cohort_id": "ALL",
+        "K": null,
+        "rank_scope": null,
+        "time_panel_id": "E1_ALL",
+        "season_alias_of_week_view": false,
+        "season": 2026,
+        "week": "ALL",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          2,
+          3
+        ],
+        "period": "full_game",
+        "season_type": "REG",
+        "statistic_period": "full_game",
+        "overtime": true,
+        "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+        "evaluation_panel_id": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+        "n": 31,
+        "forecast_rows": 31,
+        "unique_games": 23,
+        "unique_players": 20,
+        "unique_player_games": 31,
+        "query_membership_sha256": "345780b5a25244e4dc9f820c5490ce5807d737cb868310462a8cf7de1a565ea3",
+        "selection_metrics": {
+          "WIN": 12,
+          "LOSS": 19,
+          "PUSH": 0,
+          "status_counts": {
+            "WIN": 12,
+            "LOSS": 19,
+            "PUSH": 0,
+            "UNKNOWN_PARTICIPATION": 0,
+            "MISSING_ACTUAL": 0,
+            "PENDING": 0,
+            "VOID": 0,
+            "UNRESOLVED_CONTRACT": 0
+          },
+          "hit_rate": 0.3870967741935484,
+          "denominators": {
+            "outer_rows": 31,
+            "decided": 31,
+            "supported_threshold_outcomes": 31,
+            "unresolved": 0
+          },
+          "selection_pool_count": 64,
+          "eligible_rank_pool_n": 64,
+          "abstentions_outside_selected_partition": 0,
+          "selection_coverage": 0.484375,
+          "bookmaker_settlement_status_counts": {
+            "UNRESOLVED_CONTRACT": 31
+          },
+          "probability_scores": {
+            "brier": null,
+            "log_loss": null,
+            "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+          },
+          "returns": {
+            "net": null,
+            "ROI": null,
+            "drawdown": null,
+            "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+          },
+          "game_uncertainty": {
+            "paired_n": null,
+            "game_clusters": 23,
+            "replicates": 500,
+            "seed": 1703,
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+            "game_interval": [
+              0.23083333333333333,
+              0.5691666666666665
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "estimate": 0.3870967741935484
+          },
+          "technical_unavailable": 1,
+          "admitted_rule_abstentions": 0,
+          "fallback_issued": 2,
+          "fallback_status_unknown": 0
+        },
+        "selection_loss_rate": 0.6129032258064516,
+        "mae": 58.93395665208433,
+        "mse": null,
+        "brier": null,
+        "log_loss": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+        "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_LAST_RECORDED_QUOTE_TIMING_UNVERIFIED;C_PINNED_CORRECTED_LABELS",
+        "settlement_status": "UNRESOLVED_CONTRACT",
+        "null_reason": null,
+        "period_id": "E1",
+        "requested_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+        "whole_week_complete": false,
+        "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+        "history_regime": "H-RECENT",
+        "information_policy": "ARM_LIMITED_TARGET_HISTORY",
+        "base_procedure_id": "empirical-player-history-control-v1",
+        "window_contract": "NOT_APPLICABLE_NO_D1_D2_DEFENSE_WINDOW",
+        "information_group": "EXISTING_SAVED_PROCEDURE",
+        "bias": -30.882190139027504,
+        "numerical_n": 31,
+        "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+      },
+      "Combined": {
+        "record_id": "ABC-B-C-9ad96b0d8ba456ddf99a0360",
+        "record_kind": "prop_selection_evaluation",
+        "procedure_id": "B::empirical-player-history-control-v1::H-RECENT-EMPIRICAL::empirical_mean",
+        "product_id": "empirical_mean",
+        "strategy": "P1",
+        "target": "pass_yd",
+        "side": "Combined",
+        "cohort_id": "ALL",
+        "K": null,
+        "rank_scope": null,
+        "time_panel_id": "E1_ALL",
+        "season_alias_of_week_view": false,
+        "season": 2026,
+        "week": "ALL",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          2,
+          3
+        ],
+        "period": "full_game",
+        "season_type": "REG",
+        "statistic_period": "full_game",
+        "overtime": true,
+        "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+        "evaluation_panel_id": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+        "n": 63,
+        "forecast_rows": 63,
+        "unique_games": 32,
+        "unique_players": 37,
+        "unique_player_games": 63,
+        "query_membership_sha256": "bc1ff922d2bd426007a5f35ea9c22f2ebd3bbbf3aa40de97334128b8d1eb60f1",
+        "selection_metrics": {
+          "WIN": 31,
+          "LOSS": 32,
+          "PUSH": 0,
+          "status_counts": {
+            "WIN": 31,
+            "LOSS": 32,
+            "PUSH": 0,
+            "UNKNOWN_PARTICIPATION": 0,
+            "MISSING_ACTUAL": 0,
+            "PENDING": 0,
+            "VOID": 0,
+            "UNRESOLVED_CONTRACT": 0
+          },
+          "hit_rate": 0.49206349206349204,
+          "denominators": {
+            "outer_rows": 63,
+            "decided": 63,
+            "supported_threshold_outcomes": 63,
+            "unresolved": 0
+          },
+          "selection_pool_count": 64,
+          "eligible_rank_pool_n": 64,
+          "abstentions_outside_selected_partition": 0,
+          "selection_coverage": 0.984375,
+          "bookmaker_settlement_status_counts": {
+            "UNRESOLVED_CONTRACT": 63
+          },
+          "probability_scores": {
+            "brier": null,
+            "log_loss": null,
+            "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+          },
+          "returns": {
+            "net": null,
+            "ROI": null,
+            "drawdown": null,
+            "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+          },
+          "game_uncertainty": {
+            "paired_n": null,
+            "game_clusters": 32,
+            "replicates": 500,
+            "seed": 1703,
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+            "game_interval": [
+              0.3709677419354839,
+              0.6451612903225806
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "estimate": 0.49206349206349204
+          },
+          "technical_unavailable": 1,
+          "admitted_rule_abstentions": 0,
+          "fallback_issued": 2,
+          "fallback_status_unknown": 0
+        },
+        "selection_loss_rate": 0.5079365079365079,
+        "mae": 55.770173414891225,
+        "mse": null,
+        "brier": null,
+        "log_loss": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+        "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_LAST_RECORDED_QUOTE_TIMING_UNVERIFIED;C_PINNED_CORRECTED_LABELS",
+        "settlement_status": "UNRESOLVED_CONTRACT",
+        "null_reason": null,
+        "period_id": "E1",
+        "requested_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+        "whole_week_complete": false,
+        "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+        "history_regime": "H-RECENT",
+        "information_policy": "ARM_LIMITED_TARGET_HISTORY",
+        "base_procedure_id": "empirical-player-history-control-v1",
+        "window_contract": "NOT_APPLICABLE_NO_D1_D2_DEFENSE_WINDOW",
+        "information_group": "EXISTING_SAVED_PROCEDURE",
+        "bias": -17.757171352467815,
+        "numerical_n": 63,
+        "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+      }
+    },
+    "mean_MSE_leader": {
+      "record_id": "ABC-B-NUM-80636800fea15a0859c2108f",
+      "record_kind": "forecast_evaluation_view",
+      "procedure_id": "B::empirical-player-history-control-v1::H-RECENT-EMPIRICAL::empirical_mean",
+      "history_regime": "H-RECENT",
+      "product_id": "empirical_mean",
+      "information_policy": "ARM_LIMITED_TARGET_HISTORY",
+      "target": "pass_yd",
+      "season": 2026,
+      "week": "ALL",
+      "evaluation_seasons": [
+        2026
+      ],
+      "evaluation_weeks": [
+        2,
+        3
+      ],
+      "evaluation_panel_id": "B_C_PINNACLE_OFFERED_PLAYER_NUMERICAL_W2_W3_ALL",
+      "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+      "population": "Primaryretrospectiveparticipantforecasts on fullCofferboard; missing outputs retained",
+      "forecast_rows": 64,
+      "supported_rows": 63,
+      "missing_actual_or_output": 1,
+      "fallback_rows": 2,
+      "unique_games": 32,
+      "unique_player_games": 63,
+      "evidence": "REPRODUCED_FROM_DATA",
+      "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_CORRECTED_LABELS;QUOTE_TIMING_UNVERIFIED",
+      "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+      "precision_counts": {
+        "exact_rate": {
+          "numerator": 0,
+          "denominator": 63
+        },
+        "abs_lt_1": {
+          "numerator": 1,
+          "denominator": 63
+        },
+        "abs_le_1": {
+          "numerator": 1,
+          "denominator": 63
+        },
+        "abs_lt_5": {
+          "numerator": 6,
+          "denominator": 63
+        },
+        "abs_le_5": {
+          "numerator": 6,
+          "denominator": 63
+        },
+        "abs_lt_10": {
+          "numerator": 8,
+          "denominator": 63
+        },
+        "abs_le_10": {
+          "numerator": 8,
+          "denominator": 63
+        }
+      },
+      "n": 63,
+      "mae": 55.770173414891225,
+      "mse": 4796.492694945762,
+      "rmse": 69.2567158833406,
+      "bias": -17.757171352467815,
+      "p90_abs": 114.84000000000007,
+      "p95_abs": 134.78571428571428,
+      "max_abs": 184.5,
+      "exact_rate": 0.0,
+      "abs_lt_1": 0.015873015873015872,
+      "abs_le_1": 0.015873015873015872,
+      "abs_lt_5": 0.09523809523809523,
+      "abs_le_5": 0.09523809523809523,
+      "abs_lt_10": 0.12698412698412698,
+      "abs_le_10": 0.12698412698412698
+    },
+    "numerical_tied_views": [
+      "B::empirical-player-history-control-v1::H-RECENT-EMPIRICAL::empirical_mean"
+    ],
+    "numerical_runner_up_score": 56.0333303981115
+  },
+  {
+    "target": "rush_yd",
+    "numerical_leader": {
+      "record_id": "ABC-B-NUM-d6061b9c547e1ca0ba9776b1",
+      "record_kind": "forecast_evaluation_view",
+      "procedure_id": "B::empirical-player-history-control-v1::H-RECENT-EMPIRICAL::lower_median",
+      "history_regime": "H-RECENT",
+      "product_id": "lower_median",
+      "information_policy": "ARM_LIMITED_TARGET_HISTORY",
+      "target": "rush_yd",
+      "season": 2026,
+      "week": "ALL",
+      "evaluation_seasons": [
+        2026
+      ],
+      "evaluation_weeks": [
+        2,
+        3
+      ],
+      "evaluation_panel_id": "B_C_PINNACLE_OFFERED_PLAYER_NUMERICAL_W2_W3_ALL",
+      "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+      "population": "Primaryretrospectiveparticipantforecasts on fullCofferboard; missing outputs retained",
+      "forecast_rows": 181,
+      "supported_rows": 174,
+      "missing_actual_or_output": 7,
+      "fallback_rows": 6,
+      "unique_games": 32,
+      "unique_player_games": 174,
+      "evidence": "REPRODUCED_FROM_DATA",
+      "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_CORRECTED_LABELS;QUOTE_TIMING_UNVERIFIED",
+      "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+      "precision_counts": {
+        "exact_rate": {
+          "numerator": 6,
+          "denominator": 174
+        },
+        "abs_lt_1": {
+          "numerator": 6,
+          "denominator": 174
+        },
+        "abs_le_1": {
+          "numerator": 14,
+          "denominator": 174
+        },
+        "abs_lt_5": {
+          "numerator": 38,
+          "denominator": 174
+        },
+        "abs_le_5": {
+          "numerator": 44,
+          "denominator": 174
+        },
+        "abs_lt_10": {
+          "numerator": 71,
+          "denominator": 174
+        },
+        "abs_le_10": {
+          "numerator": 76,
+          "denominator": 174
+        }
+      },
+      "n": 174,
+      "mae": 17.339080459770116,
+      "mse": 568.4080459770115,
+      "rmse": 23.8413096531422,
+      "bias": -2.0172413793103448,
+      "p90_abs": 38.0,
+      "p95_abs": 48.0,
+      "max_abs": 118.0,
+      "exact_rate": 0.034482758620689655,
+      "abs_lt_1": 0.034482758620689655,
+      "abs_le_1": 0.08045977011494253,
+      "abs_lt_5": 0.21839080459770116,
+      "abs_le_5": 0.25287356321839083,
+      "abs_lt_10": 0.40804597701149425,
+      "abs_le_10": 0.4367816091954023
+    },
+    "own_side_records": {
+      "over": {
+        "record_id": "ABC-B-C-e70eff8b7fa3b594b3f83272",
+        "record_kind": "prop_selection_evaluation",
+        "procedure_id": "B::empirical-player-history-control-v1::H-RECENT-EMPIRICAL::lower_median",
+        "product_id": "lower_median",
+        "strategy": "P1",
+        "target": "rush_yd",
+        "side": "over",
+        "cohort_id": "ALL",
+        "K": null,
+        "rank_scope": null,
+        "time_panel_id": "E1_ALL",
+        "season_alias_of_week_view": false,
+        "season": 2026,
+        "week": "ALL",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          2,
+          3
+        ],
+        "period": "full_game",
+        "season_type": "REG",
+        "statistic_period": "full_game",
+        "overtime": true,
+        "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+        "evaluation_panel_id": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+        "n": 69,
+        "forecast_rows": 69,
+        "unique_games": 30,
+        "unique_players": 50,
+        "unique_player_games": 69,
+        "query_membership_sha256": "fa42fa6cc89f1ff0bc0a1d7af000b3a7d50ec6bed935d9d71cd810056de35056",
+        "selection_metrics": {
+          "WIN": 30,
+          "LOSS": 39,
+          "PUSH": 0,
+          "status_counts": {
+            "WIN": 30,
+            "LOSS": 39,
+            "PUSH": 0,
+            "UNKNOWN_PARTICIPATION": 0,
+            "MISSING_ACTUAL": 0,
+            "PENDING": 0,
+            "VOID": 0,
+            "UNRESOLVED_CONTRACT": 0
+          },
+          "hit_rate": 0.43478260869565216,
+          "denominators": {
+            "outer_rows": 69,
+            "decided": 69,
+            "supported_threshold_outcomes": 69,
+            "unresolved": 0
+          },
+          "selection_pool_count": 181,
+          "eligible_rank_pool_n": 181,
+          "abstentions_outside_selected_partition": 0,
+          "selection_coverage": 0.3812154696132597,
+          "bookmaker_settlement_status_counts": {
+            "UNRESOLVED_CONTRACT": 69
+          },
+          "probability_scores": {
+            "brier": null,
+            "log_loss": null,
+            "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+          },
+          "returns": {
+            "net": null,
+            "ROI": null,
+            "drawdown": null,
+            "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+          },
+          "game_uncertainty": {
+            "paired_n": null,
+            "game_clusters": 30,
+            "replicates": 500,
+            "seed": 1703,
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+            "game_interval": [
+              0.32281637717121586,
+              0.5571428571428572
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "estimate": 0.43478260869565216
+          },
+          "technical_unavailable": 7,
+          "admitted_rule_abstentions": 0,
+          "fallback_issued": 6,
+          "fallback_status_unknown": 0
+        },
+        "selection_loss_rate": 0.5652173913043478,
+        "mae": 17.985507246376812,
+        "mse": null,
+        "brier": null,
+        "log_loss": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+        "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_LAST_RECORDED_QUOTE_TIMING_UNVERIFIED;C_PINNED_CORRECTED_LABELS",
+        "settlement_status": "UNRESOLVED_CONTRACT",
+        "null_reason": null,
+        "period_id": "E1",
+        "requested_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+        "whole_week_complete": false,
+        "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+        "history_regime": "H-RECENT",
+        "information_policy": "ARM_LIMITED_TARGET_HISTORY",
+        "base_procedure_id": "empirical-player-history-control-v1",
+        "window_contract": "NOT_APPLICABLE_NO_D1_D2_DEFENSE_WINDOW",
+        "information_group": "EXISTING_SAVED_PROCEDURE",
+        "bias": 8.420289855072463,
+        "numerical_n": 69,
+        "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+      },
+      "under": {
+        "record_id": "ABC-B-C-5c5593b10e0d3d29efcb860c",
+        "record_kind": "prop_selection_evaluation",
+        "procedure_id": "B::empirical-player-history-control-v1::H-RECENT-EMPIRICAL::lower_median",
+        "product_id": "lower_median",
+        "strategy": "P1",
+        "target": "rush_yd",
+        "side": "under",
+        "cohort_id": "ALL",
+        "K": null,
+        "rank_scope": null,
+        "time_panel_id": "E1_ALL",
+        "season_alias_of_week_view": false,
+        "season": 2026,
+        "week": "ALL",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          2,
+          3
+        ],
+        "period": "full_game",
+        "season_type": "REG",
+        "statistic_period": "full_game",
+        "overtime": true,
+        "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+        "evaluation_panel_id": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+        "n": 105,
+        "forecast_rows": 105,
+        "unique_games": 32,
+        "unique_players": 69,
+        "unique_player_games": 105,
+        "query_membership_sha256": "04a6527fad0880b87432857e3a1c8c5429f0577e7a78f8ad714f9d25cb22393a",
+        "selection_metrics": {
+          "WIN": 57,
+          "LOSS": 48,
+          "PUSH": 0,
+          "status_counts": {
+            "WIN": 57,
+            "LOSS": 48,
+            "PUSH": 0,
+            "UNKNOWN_PARTICIPATION": 0,
+            "MISSING_ACTUAL": 0,
+            "PENDING": 0,
+            "VOID": 0,
+            "UNRESOLVED_CONTRACT": 0
+          },
+          "hit_rate": 0.5428571428571428,
+          "denominators": {
+            "outer_rows": 105,
+            "decided": 105,
+            "supported_threshold_outcomes": 105,
+            "unresolved": 0
+          },
+          "selection_pool_count": 181,
+          "eligible_rank_pool_n": 181,
+          "abstentions_outside_selected_partition": 0,
+          "selection_coverage": 0.580110497237569,
+          "bookmaker_settlement_status_counts": {
+            "UNRESOLVED_CONTRACT": 105
+          },
+          "probability_scores": {
+            "brier": null,
+            "log_loss": null,
+            "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+          },
+          "returns": {
+            "net": null,
+            "ROI": null,
+            "drawdown": null,
+            "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+          },
+          "game_uncertainty": {
+            "paired_n": null,
+            "game_clusters": 32,
+            "replicates": 500,
+            "seed": 1703,
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+            "game_interval": [
+              0.44097035040431265,
+              0.642545871559633
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "estimate": 0.5428571428571428
+          },
+          "technical_unavailable": 7,
+          "admitted_rule_abstentions": 0,
+          "fallback_issued": 6,
+          "fallback_status_unknown": 0
+        },
+        "selection_loss_rate": 0.45714285714285713,
+        "mae": 16.914285714285715,
+        "mse": null,
+        "brier": null,
+        "log_loss": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+        "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_LAST_RECORDED_QUOTE_TIMING_UNVERIFIED;C_PINNED_CORRECTED_LABELS",
+        "settlement_status": "UNRESOLVED_CONTRACT",
+        "null_reason": null,
+        "period_id": "E1",
+        "requested_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+        "whole_week_complete": false,
+        "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+        "history_regime": "H-RECENT",
+        "information_policy": "ARM_LIMITED_TARGET_HISTORY",
+        "base_procedure_id": "empirical-player-history-control-v1",
+        "window_contract": "NOT_APPLICABLE_NO_D1_D2_DEFENSE_WINDOW",
+        "information_group": "EXISTING_SAVED_PROCEDURE",
+        "bias": -8.876190476190477,
+        "numerical_n": 105,
+        "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+      },
+      "Combined": {
+        "record_id": "ABC-B-C-b56613881edacbf7b0d882d7",
+        "record_kind": "prop_selection_evaluation",
+        "procedure_id": "B::empirical-player-history-control-v1::H-RECENT-EMPIRICAL::lower_median",
+        "product_id": "lower_median",
+        "strategy": "P1",
+        "target": "rush_yd",
+        "side": "Combined",
+        "cohort_id": "ALL",
+        "K": null,
+        "rank_scope": null,
+        "time_panel_id": "E1_ALL",
+        "season_alias_of_week_view": false,
+        "season": 2026,
+        "week": "ALL",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          2,
+          3
+        ],
+        "period": "full_game",
+        "season_type": "REG",
+        "statistic_period": "full_game",
+        "overtime": true,
+        "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+        "evaluation_panel_id": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+        "n": 174,
+        "forecast_rows": 174,
+        "unique_games": 32,
+        "unique_players": 102,
+        "unique_player_games": 174,
+        "query_membership_sha256": "c4fd1fb5f9b53252659bba801521dc423c5dcf75ed15b67fe64ca3767a4ae6cf",
+        "selection_metrics": {
+          "WIN": 87,
+          "LOSS": 87,
+          "PUSH": 0,
+          "status_counts": {
+            "WIN": 87,
+            "LOSS": 87,
+            "PUSH": 0,
+            "UNKNOWN_PARTICIPATION": 0,
+            "MISSING_ACTUAL": 0,
+            "PENDING": 0,
+            "VOID": 0,
+            "UNRESOLVED_CONTRACT": 0
+          },
+          "hit_rate": 0.5,
+          "denominators": {
+            "outer_rows": 174,
+            "decided": 174,
+            "supported_threshold_outcomes": 174,
+            "unresolved": 0
+          },
+          "selection_pool_count": 181,
+          "eligible_rank_pool_n": 181,
+          "abstentions_outside_selected_partition": 0,
+          "selection_coverage": 0.9613259668508287,
+          "bookmaker_settlement_status_counts": {
+            "UNRESOLVED_CONTRACT": 174
+          },
+          "probability_scores": {
+            "brier": null,
+            "log_loss": null,
+            "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+          },
+          "returns": {
+            "net": null,
+            "ROI": null,
+            "drawdown": null,
+            "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+          },
+          "game_uncertainty": {
+            "paired_n": null,
+            "game_clusters": 32,
+            "replicates": 500,
+            "seed": 1703,
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+            "game_interval": [
+              0.4228029783481924,
+              0.5910918105293194
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "estimate": 0.5
+          },
+          "technical_unavailable": 7,
+          "admitted_rule_abstentions": 0,
+          "fallback_issued": 6,
+          "fallback_status_unknown": 0
+        },
+        "selection_loss_rate": 0.5,
+        "mae": 17.339080459770116,
+        "mse": null,
+        "brier": null,
+        "log_loss": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+        "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_LAST_RECORDED_QUOTE_TIMING_UNVERIFIED;C_PINNED_CORRECTED_LABELS",
+        "settlement_status": "UNRESOLVED_CONTRACT",
+        "null_reason": null,
+        "period_id": "E1",
+        "requested_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+        "whole_week_complete": false,
+        "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+        "history_regime": "H-RECENT",
+        "information_policy": "ARM_LIMITED_TARGET_HISTORY",
+        "base_procedure_id": "empirical-player-history-control-v1",
+        "window_contract": "NOT_APPLICABLE_NO_D1_D2_DEFENSE_WINDOW",
+        "information_group": "EXISTING_SAVED_PROCEDURE",
+        "bias": -2.0172413793103448,
+        "numerical_n": 174,
+        "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+      }
+    },
+    "mean_MSE_leader": {
+      "record_id": "ABC-B-NUM-57a6e4766062bbbe2a8aaf63",
+      "record_kind": "forecast_evaluation_view",
+      "procedure_id": "B::empirical-player-history-control-v1::H-RECENT-EMPIRICAL::empirical_mean",
+      "history_regime": "H-RECENT",
+      "product_id": "empirical_mean",
+      "information_policy": "ARM_LIMITED_TARGET_HISTORY",
+      "target": "rush_yd",
+      "season": 2026,
+      "week": "ALL",
+      "evaluation_seasons": [
+        2026
+      ],
+      "evaluation_weeks": [
+        2,
+        3
+      ],
+      "evaluation_panel_id": "B_C_PINNACLE_OFFERED_PLAYER_NUMERICAL_W2_W3_ALL",
+      "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+      "population": "Primaryretrospectiveparticipantforecasts on fullCofferboard; missing outputs retained",
+      "forecast_rows": 181,
+      "supported_rows": 174,
+      "missing_actual_or_output": 7,
+      "fallback_rows": 6,
+      "unique_games": 32,
+      "unique_player_games": 174,
+      "evidence": "REPRODUCED_FROM_DATA",
+      "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_CORRECTED_LABELS;QUOTE_TIMING_UNVERIFIED",
+      "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+      "precision_counts": {
+        "exact_rate": {
+          "numerator": 1,
+          "denominator": 174
+        },
+        "abs_lt_1": {
+          "numerator": 7,
+          "denominator": 174
+        },
+        "abs_le_1": {
+          "numerator": 8,
+          "denominator": 174
+        },
+        "abs_lt_5": {
+          "numerator": 35,
+          "denominator": 174
+        },
+        "abs_le_5": {
+          "numerator": 37,
+          "denominator": 174
+        },
+        "abs_lt_10": {
+          "numerator": 65,
+          "denominator": 174
+        },
+        "abs_le_10": {
+          "numerator": 65,
+          "denominator": 174
+        }
+      },
+      "n": 174,
+      "mae": 18.20173711197526,
+      "mse": 583.7528752174585,
+      "rmse": 24.16097835803547,
+      "bias": 2.206035295790011,
+      "p90_abs": 39.174369747899185,
+      "p95_abs": 47.71111111111111,
+      "max_abs": 107.27777777777777,
+      "exact_rate": 0.005747126436781609,
+      "abs_lt_1": 0.040229885057471264,
+      "abs_le_1": 0.04597701149425287,
+      "abs_lt_5": 0.20114942528735633,
+      "abs_le_5": 0.21264367816091953,
+      "abs_lt_10": 0.3735632183908046,
+      "abs_le_10": 0.3735632183908046
+    },
+    "numerical_tied_views": [
+      "B::empirical-player-history-control-v1::H-RECENT-EMPIRICAL::lower_median"
+    ],
+    "numerical_runner_up_score": 17.54022988505747
+  },
+  {
+    "target": "rec",
+    "numerical_leader": {
+      "record_id": "ABC-B-NUM-cfc248470cbbbcb86a38b0ff",
+      "record_kind": "forecast_evaluation_view",
+      "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::lower_median",
+      "history_regime": "H-MULTI",
+      "product_id": "lower_median",
+      "information_policy": "COMMON-2022-MEMORY",
+      "target": "rec",
+      "season": 2026,
+      "week": "ALL",
+      "evaluation_seasons": [
+        2026
+      ],
+      "evaluation_weeks": [
+        2,
+        3
+      ],
+      "evaluation_panel_id": "B_C_PINNACLE_OFFERED_PLAYER_NUMERICAL_W2_W3_ALL",
+      "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+      "population": "Primaryretrospectiveparticipantforecasts on fullCofferboard; missing outputs retained",
+      "forecast_rows": 362,
+      "supported_rows": 337,
+      "missing_actual_or_output": 25,
+      "fallback_rows": 9,
+      "unique_games": 32,
+      "unique_player_games": 337,
+      "evidence": "REPRODUCED_FROM_DATA",
+      "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_CORRECTED_LABELS;QUOTE_TIMING_UNVERIFIED",
+      "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+      "precision_counts": {
+        "exact_rate": {
+          "numerator": 78,
+          "denominator": 337
+        },
+        "abs_lt_1": {
+          "numerator": 78,
+          "denominator": 337
+        },
+        "abs_le_1": {
+          "numerator": 192,
+          "denominator": 337
+        },
+        "abs_lt_5": {
+          "numerator": 325,
+          "denominator": 337
+        },
+        "abs_le_5": {
+          "numerator": 332,
+          "denominator": 337
+        },
+        "abs_lt_10": {
+          "numerator": 337,
+          "denominator": 337
+        },
+        "abs_le_10": {
+          "numerator": 337,
+          "denominator": 337
+        }
+      },
+      "n": 337,
+      "mae": 1.629080118694362,
+      "mse": 4.70326409495549,
+      "rmse": 2.168701015574874,
+      "bias": -0.6498516320474778,
+      "p90_abs": 4.0,
+      "p95_abs": 4.0,
+      "max_abs": 8,
+      "exact_rate": 0.2314540059347181,
+      "abs_lt_1": 0.2314540059347181,
+      "abs_le_1": 0.56973293768546,
+      "abs_lt_5": 0.9643916913946587,
+      "abs_le_5": 0.9851632047477745,
+      "abs_lt_10": 1.0,
+      "abs_le_10": 1.0
+    },
+    "own_side_records": {
+      "over": {
+        "record_id": "ABC-B-C-1045517603656e6c38178bf8",
+        "record_kind": "prop_selection_evaluation",
+        "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::lower_median",
+        "product_id": "lower_median",
+        "strategy": "P1",
+        "target": "rec",
+        "side": "over",
+        "cohort_id": "ALL",
+        "K": null,
+        "rank_scope": null,
+        "time_panel_id": "E1_ALL",
+        "season_alias_of_week_view": false,
+        "season": 2026,
+        "week": "ALL",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          2,
+          3
+        ],
+        "period": "full_game",
+        "season_type": "REG",
+        "statistic_period": "full_game",
+        "overtime": true,
+        "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+        "evaluation_panel_id": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+        "n": 93,
+        "forecast_rows": 94,
+        "unique_games": 31,
+        "unique_players": 73,
+        "unique_player_games": 94,
+        "query_membership_sha256": "dcf82cc2678ef2afc1c0b25611e8d9ba5c96dc0b96f36de22dac6408418dd523",
+        "selection_metrics": {
+          "WIN": 51,
+          "LOSS": 42,
+          "PUSH": 0,
+          "status_counts": {
+            "WIN": 51,
+            "LOSS": 42,
+            "PUSH": 0,
+            "UNKNOWN_PARTICIPATION": 1,
+            "MISSING_ACTUAL": 0,
+            "PENDING": 0,
+            "VOID": 0,
+            "UNRESOLVED_CONTRACT": 0
+          },
+          "hit_rate": 0.5483870967741935,
+          "denominators": {
+            "outer_rows": 94,
+            "decided": 93,
+            "supported_threshold_outcomes": 93,
+            "unresolved": 1
+          },
+          "selection_pool_count": 362,
+          "eligible_rank_pool_n": 362,
+          "abstentions_outside_selected_partition": 0,
+          "selection_coverage": 0.2596685082872928,
+          "bookmaker_settlement_status_counts": {
+            "UNRESOLVED_CONTRACT": 94
+          },
+          "probability_scores": {
+            "brier": null,
+            "log_loss": null,
+            "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+          },
+          "returns": {
+            "net": null,
+            "ROI": null,
+            "drawdown": null,
+            "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+          },
+          "game_uncertainty": {
+            "paired_n": null,
+            "game_clusters": 31,
+            "replicates": 500,
+            "seed": 1703,
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+            "game_interval": [
+              0.4450803212851405,
+              0.6344270833333332
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "estimate": 0.5483870967741935
+          },
+          "technical_unavailable": 22,
+          "admitted_rule_abstentions": 0,
+          "fallback_issued": 9,
+          "fallback_status_unknown": 0
+        },
+        "selection_loss_rate": 0.45161290322580644,
+        "mae": 1.7741935483870968,
+        "mse": null,
+        "brier": null,
+        "log_loss": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+        "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_LAST_RECORDED_QUOTE_TIMING_UNVERIFIED;C_PINNED_CORRECTED_LABELS",
+        "settlement_status": "UNRESOLVED_CONTRACT",
+        "null_reason": null,
+        "period_id": "E1",
+        "requested_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+        "whole_week_complete": false,
+        "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+        "history_regime": "H-MULTI",
+        "information_policy": "COMMON-2022-MEMORY",
+        "base_procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "window_contract": "NOT_APPLICABLE_NO_D1_D2_DEFENSE_WINDOW",
+        "information_group": "EXISTING_SAVED_PROCEDURE",
+        "bias": 0.11827956989247312,
+        "numerical_n": 93,
+        "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+      },
+      "under": {
+        "record_id": "ABC-B-C-d41efb3426858c6040e11271",
+        "record_kind": "prop_selection_evaluation",
+        "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::lower_median",
+        "product_id": "lower_median",
+        "strategy": "P1",
+        "target": "rec",
+        "side": "under",
+        "cohort_id": "ALL",
+        "K": null,
+        "rank_scope": null,
+        "time_panel_id": "E1_ALL",
+        "season_alias_of_week_view": false,
+        "season": 2026,
+        "week": "ALL",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          2,
+          3
+        ],
+        "period": "full_game",
+        "season_type": "REG",
+        "statistic_period": "full_game",
+        "overtime": true,
+        "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+        "evaluation_panel_id": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+        "n": 244,
+        "forecast_rows": 246,
+        "unique_games": 32,
+        "unique_players": 150,
+        "unique_player_games": 246,
+        "query_membership_sha256": "10b34ab21df61fe7ccda15f392759f834ef8f37c269db2b6c8833b271ba0ffb2",
+        "selection_metrics": {
+          "WIN": 139,
+          "LOSS": 105,
+          "PUSH": 0,
+          "status_counts": {
+            "WIN": 139,
+            "LOSS": 105,
+            "PUSH": 0,
+            "UNKNOWN_PARTICIPATION": 2,
+            "MISSING_ACTUAL": 0,
+            "PENDING": 0,
+            "VOID": 0,
+            "UNRESOLVED_CONTRACT": 0
+          },
+          "hit_rate": 0.569672131147541,
+          "denominators": {
+            "outer_rows": 246,
+            "decided": 244,
+            "supported_threshold_outcomes": 244,
+            "unresolved": 2
+          },
+          "selection_pool_count": 362,
+          "eligible_rank_pool_n": 362,
+          "abstentions_outside_selected_partition": 0,
+          "selection_coverage": 0.6795580110497238,
+          "bookmaker_settlement_status_counts": {
+            "UNRESOLVED_CONTRACT": 246
+          },
+          "probability_scores": {
+            "brier": null,
+            "log_loss": null,
+            "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+          },
+          "returns": {
+            "net": null,
+            "ROI": null,
+            "drawdown": null,
+            "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+          },
+          "game_uncertainty": {
+            "paired_n": null,
+            "game_clusters": 32,
+            "replicates": 500,
+            "seed": 1703,
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+            "game_interval": [
+              0.5042897936624908,
+              0.6362773241634223
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "estimate": 0.569672131147541
+          },
+          "technical_unavailable": 22,
+          "admitted_rule_abstentions": 0,
+          "fallback_issued": 9,
+          "fallback_status_unknown": 0
+        },
+        "selection_loss_rate": 0.430327868852459,
+        "mae": 1.5737704918032787,
+        "mse": null,
+        "brier": null,
+        "log_loss": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+        "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_LAST_RECORDED_QUOTE_TIMING_UNVERIFIED;C_PINNED_CORRECTED_LABELS",
+        "settlement_status": "UNRESOLVED_CONTRACT",
+        "null_reason": null,
+        "period_id": "E1",
+        "requested_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+        "whole_week_complete": false,
+        "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+        "history_regime": "H-MULTI",
+        "information_policy": "COMMON-2022-MEMORY",
+        "base_procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "window_contract": "NOT_APPLICABLE_NO_D1_D2_DEFENSE_WINDOW",
+        "information_group": "EXISTING_SAVED_PROCEDURE",
+        "bias": -0.9426229508196722,
+        "numerical_n": 244,
+        "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+      },
+      "Combined": {
+        "record_id": "ABC-B-C-73f9d882235ea1baae0cd88f",
+        "record_kind": "prop_selection_evaluation",
+        "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::lower_median",
+        "product_id": "lower_median",
+        "strategy": "P1",
+        "target": "rec",
+        "side": "Combined",
+        "cohort_id": "ALL",
+        "K": null,
+        "rank_scope": null,
+        "time_panel_id": "E1_ALL",
+        "season_alias_of_week_view": false,
+        "season": 2026,
+        "week": "ALL",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          2,
+          3
+        ],
+        "period": "full_game",
+        "season_type": "REG",
+        "statistic_period": "full_game",
+        "overtime": true,
+        "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+        "evaluation_panel_id": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+        "n": 337,
+        "forecast_rows": 340,
+        "unique_games": 32,
+        "unique_players": 198,
+        "unique_player_games": 340,
+        "query_membership_sha256": "842eb12974562242216d3f7e9341ec5a91c330dc4de30e4e331255a255450795",
+        "selection_metrics": {
+          "WIN": 190,
+          "LOSS": 147,
+          "PUSH": 0,
+          "status_counts": {
+            "WIN": 190,
+            "LOSS": 147,
+            "PUSH": 0,
+            "UNKNOWN_PARTICIPATION": 3,
+            "MISSING_ACTUAL": 0,
+            "PENDING": 0,
+            "VOID": 0,
+            "UNRESOLVED_CONTRACT": 0
+          },
+          "hit_rate": 0.5637982195845698,
+          "denominators": {
+            "outer_rows": 340,
+            "decided": 337,
+            "supported_threshold_outcomes": 337,
+            "unresolved": 3
+          },
+          "selection_pool_count": 362,
+          "eligible_rank_pool_n": 362,
+          "abstentions_outside_selected_partition": 0,
+          "selection_coverage": 0.9392265193370166,
+          "bookmaker_settlement_status_counts": {
+            "UNRESOLVED_CONTRACT": 340
+          },
+          "probability_scores": {
+            "brier": null,
+            "log_loss": null,
+            "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+          },
+          "returns": {
+            "net": null,
+            "ROI": null,
+            "drawdown": null,
+            "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+          },
+          "game_uncertainty": {
+            "paired_n": null,
+            "game_clusters": 32,
+            "replicates": 500,
+            "seed": 1703,
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+            "game_interval": [
+              0.5109974814422058,
+              0.6139408263305323
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "estimate": 0.5637982195845698
+          },
+          "technical_unavailable": 22,
+          "admitted_rule_abstentions": 0,
+          "fallback_issued": 9,
+          "fallback_status_unknown": 0
+        },
+        "selection_loss_rate": 0.4362017804154303,
+        "mae": 1.629080118694362,
+        "mse": null,
+        "brier": null,
+        "log_loss": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+        "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_LAST_RECORDED_QUOTE_TIMING_UNVERIFIED;C_PINNED_CORRECTED_LABELS",
+        "settlement_status": "UNRESOLVED_CONTRACT",
+        "null_reason": null,
+        "period_id": "E1",
+        "requested_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+        "whole_week_complete": false,
+        "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+        "history_regime": "H-MULTI",
+        "information_policy": "COMMON-2022-MEMORY",
+        "base_procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+        "window_contract": "NOT_APPLICABLE_NO_D1_D2_DEFENSE_WINDOW",
+        "information_group": "EXISTING_SAVED_PROCEDURE",
+        "bias": -0.6498516320474778,
+        "numerical_n": 337,
+        "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+      }
+    },
+    "mean_MSE_leader": {
+      "record_id": "ABC-B-NUM-3e9a3e5366190e54be1c5a4e",
+      "record_kind": "forecast_evaluation_view",
+      "procedure_id": "B::empirical-player-history-control-v1::H-RECENT-EMPIRICAL::empirical_mean",
+      "history_regime": "H-RECENT",
+      "product_id": "empirical_mean",
+      "information_policy": "ARM_LIMITED_TARGET_HISTORY",
+      "target": "rec",
+      "season": 2026,
+      "week": "ALL",
+      "evaluation_seasons": [
+        2026
+      ],
+      "evaluation_weeks": [
+        2,
+        3
+      ],
+      "evaluation_panel_id": "B_C_PINNACLE_OFFERED_PLAYER_NUMERICAL_W2_W3_ALL",
+      "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+      "population": "Primaryretrospectiveparticipantforecasts on fullCofferboard; missing outputs retained",
+      "forecast_rows": 362,
+      "supported_rows": 337,
+      "missing_actual_or_output": 25,
+      "fallback_rows": 11,
+      "unique_games": 32,
+      "unique_player_games": 337,
+      "evidence": "REPRODUCED_FROM_DATA",
+      "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_CORRECTED_LABELS;QUOTE_TIMING_UNVERIFIED",
+      "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+      "precision_counts": {
+        "exact_rate": {
+          "numerator": 6,
+          "denominator": 337
+        },
+        "abs_lt_1": {
+          "numerator": 124,
+          "denominator": 337
+        },
+        "abs_le_1": {
+          "numerator": 136,
+          "denominator": 337
+        },
+        "abs_lt_5": {
+          "numerator": 333,
+          "denominator": 337
+        },
+        "abs_le_5": {
+          "numerator": 334,
+          "denominator": 337
+        },
+        "abs_lt_10": {
+          "numerator": 337,
+          "denominator": 337
+        },
+        "abs_le_10": {
+          "numerator": 337,
+          "denominator": 337
+        }
+      },
+      "n": 337,
+      "mae": 1.6398220821295346,
+      "mse": 4.249317939039348,
+      "rmse": 2.061387382089875,
+      "bias": -0.09939460252135546,
+      "p90_abs": 3.438235294117649,
+      "p95_abs": 3.9499999999999993,
+      "max_abs": 7.176470588235294,
+      "exact_rate": 0.017804154302670624,
+      "abs_lt_1": 0.36795252225519287,
+      "abs_le_1": 0.4035608308605341,
+      "abs_lt_5": 0.9881305637982196,
+      "abs_le_5": 0.9910979228486647,
+      "abs_lt_10": 1.0,
+      "abs_le_10": 1.0
+    },
+    "numerical_tied_views": [
+      "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::lower_median"
+    ],
+    "numerical_runner_up_score": 1.632047477744807
+  },
+  {
+    "target": "rec_yd",
+    "numerical_leader": {
+      "record_id": "ABC-B-NUM-720a16e8b50d981fdc832335",
+      "record_kind": "forecast_evaluation_view",
+      "procedure_id": "B::v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory::H-MULTI-COMMON::lower_median",
+      "history_regime": "H-MULTI",
+      "product_id": "lower_median",
+      "information_policy": "COMMON-2022-MEMORY",
+      "target": "rec_yd",
+      "season": 2026,
+      "week": "ALL",
+      "evaluation_seasons": [
+        2026
+      ],
+      "evaluation_weeks": [
+        2,
+        3
+      ],
+      "evaluation_panel_id": "B_C_PINNACLE_OFFERED_PLAYER_NUMERICAL_W2_W3_ALL",
+      "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+      "population": "Primaryretrospectiveparticipantforecasts on fullCofferboard; missing outputs retained",
+      "forecast_rows": 361,
+      "supported_rows": 337,
+      "missing_actual_or_output": 24,
+      "fallback_rows": 11,
+      "unique_games": 32,
+      "unique_player_games": 337,
+      "evidence": "REPRODUCED_FROM_DATA",
+      "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_CORRECTED_LABELS;QUOTE_TIMING_UNVERIFIED",
+      "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+      "precision_counts": {
+        "exact_rate": {
+          "numerator": 4,
+          "denominator": 337
+        },
+        "abs_lt_1": {
+          "numerator": 4,
+          "denominator": 337
+        },
+        "abs_le_1": {
+          "numerator": 14,
+          "denominator": 337
+        },
+        "abs_lt_5": {
+          "numerator": 49,
+          "denominator": 337
+        },
+        "abs_le_5": {
+          "numerator": 63,
+          "denominator": 337
+        },
+        "abs_lt_10": {
+          "numerator": 108,
+          "denominator": 337
+        },
+        "abs_le_10": {
+          "numerator": 118,
+          "denominator": 337
+        }
+      },
+      "n": 337,
+      "mae": 21.462908011869438,
+      "mse": 894.0029673590504,
+      "rmse": 29.899882397077256,
+      "bias": -5.118694362017804,
+      "p90_abs": 43.0,
+      "p95_abs": 59.599999999999966,
+      "max_abs": 153,
+      "exact_rate": 0.011869436201780416,
+      "abs_lt_1": 0.011869436201780416,
+      "abs_le_1": 0.04154302670623145,
+      "abs_lt_5": 0.14540059347181009,
+      "abs_le_5": 0.18694362017804153,
+      "abs_lt_10": 0.32047477744807124,
+      "abs_le_10": 0.35014836795252224
+    },
+    "own_side_records": {
+      "over": {
+        "record_id": "ABC-B-C-764265cb748eea19d54bebaa",
+        "record_kind": "prop_selection_evaluation",
+        "procedure_id": "B::v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory::H-MULTI-COMMON::lower_median",
+        "product_id": "lower_median",
+        "strategy": "P1",
+        "target": "rec_yd",
+        "side": "over",
+        "cohort_id": "ALL",
+        "K": null,
+        "rank_scope": null,
+        "time_panel_id": "E1_ALL",
+        "season_alias_of_week_view": false,
+        "season": 2026,
+        "week": "ALL",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          2,
+          3
+        ],
+        "period": "full_game",
+        "season_type": "REG",
+        "statistic_period": "full_game",
+        "overtime": true,
+        "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+        "evaluation_panel_id": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+        "n": 160,
+        "forecast_rows": 163,
+        "unique_games": 32,
+        "unique_players": 114,
+        "unique_player_games": 163,
+        "query_membership_sha256": "6e423c0f9ab46c37ecfc42d3e0a066df0125f9e7c37390f16af344e999c60c13",
+        "selection_metrics": {
+          "WIN": 77,
+          "LOSS": 83,
+          "PUSH": 0,
+          "status_counts": {
+            "WIN": 77,
+            "LOSS": 83,
+            "PUSH": 0,
+            "UNKNOWN_PARTICIPATION": 3,
+            "MISSING_ACTUAL": 0,
+            "PENDING": 0,
+            "VOID": 0,
+            "UNRESOLVED_CONTRACT": 0
+          },
+          "hit_rate": 0.48125,
+          "denominators": {
+            "outer_rows": 163,
+            "decided": 160,
+            "supported_threshold_outcomes": 160,
+            "unresolved": 3
+          },
+          "selection_pool_count": 361,
+          "eligible_rank_pool_n": 361,
+          "abstentions_outside_selected_partition": 0,
+          "selection_coverage": 0.4515235457063712,
+          "bookmaker_settlement_status_counts": {
+            "UNRESOLVED_CONTRACT": 163
+          },
+          "probability_scores": {
+            "brier": null,
+            "log_loss": null,
+            "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+          },
+          "returns": {
+            "net": null,
+            "ROI": null,
+            "drawdown": null,
+            "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+          },
+          "game_uncertainty": {
+            "paired_n": null,
+            "game_clusters": 32,
+            "replicates": 500,
+            "seed": 1703,
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+            "game_interval": [
+              0.41207558139534883,
+              0.5577166714655916
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "estimate": 0.48125
+          },
+          "technical_unavailable": 21,
+          "admitted_rule_abstentions": 0,
+          "fallback_issued": 11,
+          "fallback_status_unknown": 0
+        },
+        "selection_loss_rate": 0.51875,
+        "mae": 19.7375,
+        "mse": null,
+        "brier": null,
+        "log_loss": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+        "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_LAST_RECORDED_QUOTE_TIMING_UNVERIFIED;C_PINNED_CORRECTED_LABELS",
+        "settlement_status": "UNRESOLVED_CONTRACT",
+        "null_reason": null,
+        "period_id": "E1",
+        "requested_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+        "whole_week_complete": false,
+        "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+        "history_regime": "H-MULTI",
+        "information_policy": "COMMON-2022-MEMORY",
+        "base_procedure_id": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+        "window_contract": "NOT_APPLICABLE_NO_D1_D2_DEFENSE_WINDOW",
+        "information_group": "EXISTING_SAVED_PROCEDURE",
+        "bias": 4.0625,
+        "numerical_n": 160,
+        "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+      },
+      "under": {
+        "record_id": "ABC-B-C-31d889a8be12e5ab8cfd258c",
+        "record_kind": "prop_selection_evaluation",
+        "procedure_id": "B::v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory::H-MULTI-COMMON::lower_median",
+        "product_id": "lower_median",
+        "strategy": "P1",
+        "target": "rec_yd",
+        "side": "under",
+        "cohort_id": "ALL",
+        "K": null,
+        "rank_scope": null,
+        "time_panel_id": "E1_ALL",
+        "season_alias_of_week_view": false,
+        "season": 2026,
+        "week": "ALL",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          2,
+          3
+        ],
+        "period": "full_game",
+        "season_type": "REG",
+        "statistic_period": "full_game",
+        "overtime": true,
+        "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+        "evaluation_panel_id": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+        "n": 177,
+        "forecast_rows": 177,
+        "unique_games": 32,
+        "unique_players": 113,
+        "unique_player_games": 177,
+        "query_membership_sha256": "a8efbcde42226ae4da3d9c59c0c796ad563e82a5033baea0a2161485f3d44368",
+        "selection_metrics": {
+          "WIN": 88,
+          "LOSS": 89,
+          "PUSH": 0,
+          "status_counts": {
+            "WIN": 88,
+            "LOSS": 89,
+            "PUSH": 0,
+            "UNKNOWN_PARTICIPATION": 0,
+            "MISSING_ACTUAL": 0,
+            "PENDING": 0,
+            "VOID": 0,
+            "UNRESOLVED_CONTRACT": 0
+          },
+          "hit_rate": 0.4971751412429379,
+          "denominators": {
+            "outer_rows": 177,
+            "decided": 177,
+            "supported_threshold_outcomes": 177,
+            "unresolved": 0
+          },
+          "selection_pool_count": 361,
+          "eligible_rank_pool_n": 361,
+          "abstentions_outside_selected_partition": 0,
+          "selection_coverage": 0.4903047091412742,
+          "bookmaker_settlement_status_counts": {
+            "UNRESOLVED_CONTRACT": 177
+          },
+          "probability_scores": {
+            "brier": null,
+            "log_loss": null,
+            "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+          },
+          "returns": {
+            "net": null,
+            "ROI": null,
+            "drawdown": null,
+            "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+          },
+          "game_uncertainty": {
+            "paired_n": null,
+            "game_clusters": 32,
+            "replicates": 500,
+            "seed": 1703,
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+            "game_interval": [
+              0.4194425962889036,
+              0.5660423116615066
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "estimate": 0.4971751412429379
+          },
+          "technical_unavailable": 21,
+          "admitted_rule_abstentions": 0,
+          "fallback_issued": 11,
+          "fallback_status_unknown": 0
+        },
+        "selection_loss_rate": 0.5028248587570622,
+        "mae": 23.0225988700565,
+        "mse": null,
+        "brier": null,
+        "log_loss": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+        "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_LAST_RECORDED_QUOTE_TIMING_UNVERIFIED;C_PINNED_CORRECTED_LABELS",
+        "settlement_status": "UNRESOLVED_CONTRACT",
+        "null_reason": null,
+        "period_id": "E1",
+        "requested_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+        "whole_week_complete": false,
+        "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+        "history_regime": "H-MULTI",
+        "information_policy": "COMMON-2022-MEMORY",
+        "base_procedure_id": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+        "window_contract": "NOT_APPLICABLE_NO_D1_D2_DEFENSE_WINDOW",
+        "information_group": "EXISTING_SAVED_PROCEDURE",
+        "bias": -13.418079096045197,
+        "numerical_n": 177,
+        "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+      },
+      "Combined": {
+        "record_id": "ABC-B-C-ae629c9d9387a9a3cb6c62cc",
+        "record_kind": "prop_selection_evaluation",
+        "procedure_id": "B::v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory::H-MULTI-COMMON::lower_median",
+        "product_id": "lower_median",
+        "strategy": "P1",
+        "target": "rec_yd",
+        "side": "Combined",
+        "cohort_id": "ALL",
+        "K": null,
+        "rank_scope": null,
+        "time_panel_id": "E1_ALL",
+        "season_alias_of_week_view": false,
+        "season": 2026,
+        "week": "ALL",
+        "evaluation_seasons": [
+          2026
+        ],
+        "evaluation_weeks": [
+          2,
+          3
+        ],
+        "period": "full_game",
+        "season_type": "REG",
+        "statistic_period": "full_game",
+        "overtime": true,
+        "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+        "evaluation_panel_id": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+        "n": 337,
+        "forecast_rows": 340,
+        "unique_games": 32,
+        "unique_players": 198,
+        "unique_player_games": 340,
+        "query_membership_sha256": "4c1c090acd6d45ef39c41697f83ec1160b489287b83a2aaba977d4eaef17f912",
+        "selection_metrics": {
+          "WIN": 165,
+          "LOSS": 172,
+          "PUSH": 0,
+          "status_counts": {
+            "WIN": 165,
+            "LOSS": 172,
+            "PUSH": 0,
+            "UNKNOWN_PARTICIPATION": 3,
+            "MISSING_ACTUAL": 0,
+            "PENDING": 0,
+            "VOID": 0,
+            "UNRESOLVED_CONTRACT": 0
+          },
+          "hit_rate": 0.4896142433234421,
+          "denominators": {
+            "outer_rows": 340,
+            "decided": 337,
+            "supported_threshold_outcomes": 337,
+            "unresolved": 3
+          },
+          "selection_pool_count": 361,
+          "eligible_rank_pool_n": 361,
+          "abstentions_outside_selected_partition": 0,
+          "selection_coverage": 0.9418282548476454,
+          "bookmaker_settlement_status_counts": {
+            "UNRESOLVED_CONTRACT": 340
+          },
+          "probability_scores": {
+            "brier": null,
+            "log_loss": null,
+            "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+          },
+          "returns": {
+            "net": null,
+            "ROI": null,
+            "drawdown": null,
+            "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+          },
+          "game_uncertainty": {
+            "paired_n": null,
+            "game_clusters": 32,
+            "replicates": 500,
+            "seed": 1703,
+            "week_interval": null,
+            "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+            "game_interval": [
+              0.42771928421651206,
+              0.5446876079619442
+            ],
+            "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+            "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+            "estimate": 0.4896142433234421
+          },
+          "technical_unavailable": 21,
+          "admitted_rule_abstentions": 0,
+          "fallback_issued": 11,
+          "fallback_status_unknown": 0
+        },
+        "selection_loss_rate": 0.5103857566765578,
+        "mae": 21.462908011869438,
+        "mse": null,
+        "brier": null,
+        "log_loss": null,
+        "evidence": "REPRODUCED_FROM_DATA",
+        "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+        "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_LAST_RECORDED_QUOTE_TIMING_UNVERIFIED;C_PINNED_CORRECTED_LABELS",
+        "settlement_status": "UNRESOLVED_CONTRACT",
+        "null_reason": null,
+        "period_id": "E1",
+        "requested_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+        "whole_week_complete": false,
+        "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+        "history_regime": "H-MULTI",
+        "information_policy": "COMMON-2022-MEMORY",
+        "base_procedure_id": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+        "window_contract": "NOT_APPLICABLE_NO_D1_D2_DEFENSE_WINDOW",
+        "information_group": "EXISTING_SAVED_PROCEDURE",
+        "bias": -5.118694362017804,
+        "numerical_n": 337,
+        "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+      }
+    },
+    "mean_MSE_leader": {
+      "record_id": "ABC-B-NUM-ed4eaf1e8682206a7159b14e",
+      "record_kind": "forecast_evaluation_view",
+      "procedure_id": "B::empirical-player-history-control-v1::H-RECENT-EMPIRICAL::empirical_mean",
+      "history_regime": "H-RECENT",
+      "product_id": "empirical_mean",
+      "information_policy": "ARM_LIMITED_TARGET_HISTORY",
+      "target": "rec_yd",
+      "season": 2026,
+      "week": "ALL",
+      "evaluation_seasons": [
+        2026
+      ],
+      "evaluation_weeks": [
+        2,
+        3
+      ],
+      "evaluation_panel_id": "B_C_PINNACLE_OFFERED_PLAYER_NUMERICAL_W2_W3_ALL",
+      "horizon_id": "KICKOFF_RECONSTRUCTION_VS_LAST_RECORDED_PREKICK_CLOSE",
+      "population": "Primaryretrospectiveparticipantforecasts on fullCofferboard; missing outputs retained",
+      "forecast_rows": 361,
+      "supported_rows": 337,
+      "missing_actual_or_output": 24,
+      "fallback_rows": 13,
+      "unique_games": 32,
+      "unique_player_games": 337,
+      "evidence": "REPRODUCED_FROM_DATA",
+      "source_vintage": "B_CURRENT_REVISED_7DAY_RECONSTRUCTION;C_CORRECTED_LABELS;QUOTE_TIMING_UNVERIFIED",
+      "shared_benchmark_status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+      "precision_counts": {
+        "exact_rate": {
+          "numerator": 0,
+          "denominator": 337
+        },
+        "abs_lt_1": {
+          "numerator": 10,
+          "denominator": 337
+        },
+        "abs_le_1": {
+          "numerator": 11,
+          "denominator": 337
+        },
+        "abs_lt_5": {
+          "numerator": 44,
+          "denominator": 337
+        },
+        "abs_le_5": {
+          "numerator": 45,
+          "denominator": 337
+        },
+        "abs_lt_10": {
+          "numerator": 99,
+          "denominator": 337
+        },
+        "abs_le_10": {
+          "numerator": 101,
+          "denominator": 337
+        }
+      },
+      "n": 337,
+      "mae": 21.971635474197225,
+      "mse": 842.0186288570793,
+      "rmse": 29.017557251723986,
+      "bias": -0.5679773237737871,
+      "p90_abs": 45.150000000000055,
+      "p95_abs": 53.60441176470587,
+      "max_abs": 140.66666666666666,
+      "exact_rate": 0.0,
+      "abs_lt_1": 0.02967359050445104,
+      "abs_le_1": 0.032640949554896145,
+      "abs_lt_5": 0.13056379821958458,
+      "abs_le_5": 0.13353115727002968,
+      "abs_lt_10": 0.29376854599406527,
+      "abs_le_10": 0.2997032640949555
+    },
+    "numerical_tied_views": [
+      "B::v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory::H-MULTI-COMMON::lower_median",
+      "B::v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory::H-MULTI-COMMON::mean"
+    ],
+    "numerical_runner_up_score": 21.583581051675715
+  }
+]

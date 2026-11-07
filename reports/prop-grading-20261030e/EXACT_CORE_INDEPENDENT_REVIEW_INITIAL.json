@@ -1,0 +1,541 @@
+{
+  "state": "FINDINGS_EXACT_CORE_FICTIONAL_BOUNDARIES",
+  "code_sha256": {
+    "nfl_v2/scoring.py": "53be9fc2d11d9feb040e095d51978bdcd328faa2ee3ae037005b829126ee43fe",
+    "nfl_v2/prop_selection.py": "cdfea04ab0e4455ba8b838fb100b5caeb7ac11deb358fb5c3b6c829f0436e877"
+  },
+  "fixture_checks": 50,
+  "passed_checks": 48,
+  "findings": [
+    {
+      "id": "INVALID_SIDE_PENDING",
+      "passed": false,
+      "expected": "ValueError",
+      "observed": [
+        "PENDING",
+        null
+      ],
+      "error": null
+    },
+    {
+      "id": "INVALID_LINE_VOID",
+      "passed": false,
+      "expected": "ValueError",
+      "observed": [
+        "VOID",
+        "0"
+      ],
+      "error": null
+    }
+  ],
+  "cases": [
+    {
+      "id": "WIN",
+      "passed": true,
+      "expected": [
+        "WIN",
+        "1"
+      ],
+      "observed": [
+        "WIN",
+        "1"
+      ],
+      "error": null
+    },
+    {
+      "id": "LOSS_PLAYED_ZERO",
+      "passed": true,
+      "expected": [
+        "LOSS",
+        "-1"
+      ],
+      "observed": [
+        "LOSS",
+        "-1"
+      ],
+      "error": null
+    },
+    {
+      "id": "PUSH",
+      "passed": true,
+      "expected": [
+        "PUSH",
+        "0"
+      ],
+      "observed": [
+        "PUSH",
+        "0"
+      ],
+      "error": null
+    },
+    {
+      "id": "VOID_DNP",
+      "passed": true,
+      "expected": [
+        "VOID",
+        "0"
+      ],
+      "observed": [
+        "VOID",
+        "0"
+      ],
+      "error": null
+    },
+    {
+      "id": "PENDING",
+      "passed": true,
+      "expected": [
+        "PENDING",
+        null
+      ],
+      "observed": [
+        "PENDING",
+        null
+      ],
+      "error": null
+    },
+    {
+      "id": "MISSING_ACTUAL",
+      "passed": true,
+      "expected": [
+        "MISSING_ACTUAL",
+        null
+      ],
+      "observed": [
+        "MISSING_ACTUAL",
+        null
+      ],
+      "error": null
+    },
+    {
+      "id": "UNKNOWN_PARTICIPATION",
+      "passed": true,
+      "expected": [
+        "UNKNOWN_PARTICIPATION",
+        null
+      ],
+      "observed": [
+        "UNKNOWN_PARTICIPATION",
+        null
+      ],
+      "error": null
+    },
+    {
+      "id": "UNRESOLVED_CONTRACT",
+      "passed": true,
+      "expected": [
+        "UNRESOLVED_CONTRACT",
+        null
+      ],
+      "observed": [
+        "UNRESOLVED_CONTRACT",
+        null
+      ],
+      "error": null
+    },
+    {
+      "id": "UNPRICED_WIN",
+      "passed": true,
+      "expected": [
+        "WIN",
+        null
+      ],
+      "observed": [
+        "WIN",
+        null
+      ],
+      "error": null
+    },
+    {
+      "id": "UNPRICED_LOSS",
+      "passed": true,
+      "expected": [
+        "LOSS",
+        null
+      ],
+      "observed": [
+        "LOSS",
+        null
+      ],
+      "error": null
+    },
+    {
+      "id": "UNPRICED_PUSH",
+      "passed": true,
+      "expected": [
+        "PUSH",
+        "0"
+      ],
+      "observed": [
+        "PUSH",
+        "0"
+      ],
+      "error": null
+    },
+    {
+      "id": "CANCELED_REFUND",
+      "passed": true,
+      "expected": [
+        "VOID",
+        "0"
+      ],
+      "observed": [
+        "VOID",
+        "0"
+      ],
+      "error": null
+    },
+    {
+      "id": "SIGNED_YARDS",
+      "passed": true,
+      "expected": [
+        "WIN",
+        "1"
+      ],
+      "observed": [
+        "WIN",
+        "1"
+      ],
+      "error": null
+    },
+    {
+      "id": "OWN_PRICE_WIN",
+      "passed": true,
+      "expected": [
+        "WIN",
+        "1.5"
+      ],
+      "observed": [
+        "WIN",
+        "1.5"
+      ],
+      "error": null
+    },
+    {
+      "id": "EARLY_EXIT_ACTION",
+      "passed": true,
+      "expected": [
+        "LOSS",
+        "-1"
+      ],
+      "observed": [
+        "LOSS",
+        "-1"
+      ],
+      "error": null
+    },
+    {
+      "id": "UNKNOWN_TARGET",
+      "passed": true,
+      "expected": [
+        "UNRESOLVED_CONTRACT",
+        null
+      ],
+      "observed": [
+        "UNRESOLVED_CONTRACT",
+        null
+      ],
+      "error": null
+    },
+    {
+      "id": "NEGATIVE_COUNT",
+      "passed": true,
+      "expected": "ValueError",
+      "observed": null,
+      "error": "ValueError: negative count"
+    },
+    {
+      "id": "FRACTIONAL_COUNT",
+      "passed": true,
+      "expected": "ValueError",
+      "observed": null,
+      "error": "ValueError: fractional official integer statistic"
+    },
+    {
+      "id": "BOOLEAN_ACTUAL",
+      "passed": true,
+      "expected": "ValueError",
+      "observed": null,
+      "error": "ValueError: missing/boolean decimal"
+    },
+    {
+      "id": "FRACTIONAL_OFFICIAL_YARDS",
+      "passed": true,
+      "expected": "ValueError",
+      "observed": null,
+      "error": "ValueError: fractional official integer statistic"
+    },
+    {
+      "id": "OFF_GRID_CHART",
+      "passed": true,
+      "expected": "ValueError",
+      "observed": null,
+      "error": "ValueError: uncertified/off-grid chart actual; require exact components or source grid"
+    },
+    {
+      "id": "BAD_PRICE",
+      "passed": true,
+      "expected": "ValueError",
+      "observed": null,
+      "error": "ValueError: invalid decimal odds"
+    },
+    {
+      "id": "OUTCOME_CONTRACT_MISMATCH",
+      "passed": true,
+      "expected": [
+        "UNRESOLVED_CONTRACT",
+        null
+      ],
+      "observed": [
+        "UNRESOLVED_CONTRACT",
+        null
+      ],
+      "error": null
+    },
+    {
+      "id": "MISSING_VERSIONED_RULE",
+      "passed": true,
+      "expected": [
+        "UNRESOLVED_CONTRACT",
+        null
+      ],
+      "observed": [
+        "UNRESOLVED_CONTRACT",
+        null
+      ],
+      "error": null
+    },
+    {
+      "id": "EXACT_CHART_3",
+      "passed": true,
+      "expected": "-0.2",
+      "observed": "-0.20",
+      "error": null
+    },
+    {
+      "id": "EXACT_CHART_PUSH_3",
+      "passed": true,
+      "expected": [
+        "PUSH",
+        "0"
+      ],
+      "observed": [
+        "PUSH",
+        "0"
+      ],
+      "error": null
+    },
+    {
+      "id": "EXACT_CHART_4",
+      "passed": true,
+      "expected": "-0.1",
+      "observed": "-0.10",
+      "error": null
+    },
+    {
+      "id": "EXACT_CHART_PUSH_4",
+      "passed": true,
+      "expected": [
+        "PUSH",
+        "0"
+      ],
+      "observed": [
+        "PUSH",
+        "0"
+      ],
+      "error": null
+    },
+    {
+      "id": "EXACT_CHART_6",
+      "passed": true,
+      "expected": "0.1",
+      "observed": "0.10",
+      "error": null
+    },
+    {
+      "id": "EXACT_CHART_PUSH_6",
+      "passed": true,
+      "expected": [
+        "PUSH",
+        "0"
+      ],
+      "observed": [
+        "PUSH",
+        "0"
+      ],
+      "error": null
+    },
+    {
+      "id": "P1_EQUAL",
+      "passed": true,
+      "expected": null,
+      "observed": null,
+      "error": null
+    },
+    {
+      "id": "P1_UNROUNDED_OVER",
+      "passed": true,
+      "expected": "over",
+      "observed": "over",
+      "error": null
+    },
+    {
+      "id": "P1_UNROUNDED_UNDER",
+      "passed": true,
+      "expected": "under",
+      "observed": "under",
+      "error": null
+    },
+    {
+      "id": "P1_NO_POINT",
+      "passed": true,
+      "expected": null,
+      "observed": null,
+      "error": null
+    },
+    {
+      "id": "P2_RETAIN_PUSH",
+      "passed": true,
+      "expected": "over",
+      "observed": "over",
+      "error": null
+    },
+    {
+      "id": "P2_ALL_PUSH_ABSTAIN",
+      "passed": true,
+      "expected": null,
+      "observed": null,
+      "error": null
+    },
+    {
+      "id": "P2_POINT_ONLY_ABSTAIN",
+      "passed": true,
+      "expected": null,
+      "observed": null,
+      "error": null
+    },
+    {
+      "id": "P2_WRONG_CONDITIONING",
+      "passed": true,
+      "expected": "ValueError",
+      "observed": null,
+      "error": "ValueError: conditioning required"
+    },
+    {
+      "id": "P3_LOWER_WIN_PROB_BETTER_PRICE",
+      "passed": true,
+      "expected": "under",
+      "observed": "under",
+      "error": null
+    },
+    {
+      "id": "P3_ZERO_EV_ABSTAIN",
+      "passed": true,
+      "expected": null,
+      "observed": null,
+      "error": null
+    },
+    {
+      "id": "P3_MISSING_PRICE_ABSTAIN",
+      "passed": true,
+      "expected": null,
+      "observed": null,
+      "error": null
+    },
+    {
+      "id": "P3_REGISTERED_LEXICAL_TIE",
+      "passed": true,
+      "expected": "over",
+      "observed": "over",
+      "error": null
+    },
+    {
+      "id": "EV_UNCONDITIONAL",
+      "passed": true,
+      "expected": {
+        "EV_placed": "0.1",
+        "EV_nonvoid": null
+      },
+      "observed": {
+        "EV_placed": "0.1",
+        "EV_nonvoid": null
+      },
+      "error": null
+    },
+    {
+      "id": "EV_NONVOID_PUSH_RETAINED",
+      "passed": true,
+      "expected": {
+        "EV_nonvoid": "0.1",
+        "EV_placed": null
+      },
+      "observed": {
+        "EV_nonvoid": "0.1",
+        "EV_placed": null
+      },
+      "error": null
+    },
+    {
+      "id": "EV_NONVOID_BRIDGE",
+      "passed": true,
+      "expected": {
+        "EV_nonvoid": "0.30",
+        "EV_placed": "0.270"
+      },
+      "observed": {
+        "EV_nonvoid": "0.30",
+        "EV_placed": "0.270"
+      },
+      "error": null
+    },
+    {
+      "id": "EV_MISSING_CONDITIONING",
+      "passed": true,
+      "expected": "ValueError",
+      "observed": null,
+      "error": "ValueError: conditioning required"
+    },
+    {
+      "id": "EV_INVALID_MASS",
+      "passed": true,
+      "expected": "ValueError",
+      "observed": null,
+      "error": "ValueError: invalid EV inputs"
+    },
+    {
+      "id": "EV_DOUBLE_CONDITIONING",
+      "passed": true,
+      "expected": "ValueError",
+      "observed": null,
+      "error": "ValueError: already unconditional"
+    },
+    {
+      "id": "INVALID_SIDE_PENDING",
+      "passed": false,
+      "expected": "ValueError",
+      "observed": [
+        "PENDING",
+        null
+      ],
+      "error": null
+    },
+    {
+      "id": "INVALID_LINE_VOID",
+      "passed": false,
+      "expected": "ValueError",
+      "observed": [
+        "VOID",
+        "0"
+      ],
+      "error": null
+    }
+  ],
+  "original_boundary_plan_sha256": "c41d7d9e2af56a3a1a47d85edc44f371c763cddb6722fb741342cd2626d17af3",
+  "conditioning_amendment": "CONDITIONING_FIXTURE_AMENDMENT_V1.json",
+  "scope": "Exact arithmetic/eight states/P1-P3/EV only. Source joins, authentic quote clocks, fixed-week and rolling scheduling are separately reviewed; these are not 54 completed full-panel fixture cases.",
+  "new_fits": 0,
+  "inference_calls": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "current2026_week8_outcomes_read": 0
+}

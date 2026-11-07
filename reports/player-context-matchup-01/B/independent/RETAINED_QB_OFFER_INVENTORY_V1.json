@@ -1,0 +1,107 @@
+{
+  "state": "READ_ONLY_QB_OFFER_INVENTORY_AND_LABEL_JOIN",
+  "weeks": [
+    {
+      "week": 5,
+      "source_id": "B_RETAINED_2026_W5_QB_OFFERS",
+      "source_bytes": 21902,
+      "source_sha256": "9b74e81ff451bd26e96b3019436e26306a4068f4fc9b38cc4561e1e0ab2d146f",
+      "records": 56,
+      "category_counts": {
+        "pass_cmp": 28,
+        "pass_att": 28
+      },
+      "games": 14,
+      "label_states": {
+        "SUPPORTED": 56
+      },
+      "new_panel_label_join": {
+        "EXACT_NUMERIC_LABEL_MATCH": 56
+      },
+      "source_rows_without_team_field": 0,
+      "all_rows_have_source_server_clock": true,
+      "offer_identity_sha256": "8c8cdf60285bae799240f6eb65c3fd978b32328aa4ec2923432325aec32f3484",
+      "scope": "Inventory/label compatibility only, not new model timing admission or threshold scores."
+    },
+    {
+      "week": 6,
+      "source_id": "B_RETAINED_2026_W6_QB_OFFERS",
+      "source_bytes": 22472,
+      "source_sha256": "9903240899222ae4d8829dfd4e294de7652032da42b08ba52c1ba252b79344c7",
+      "records": 56,
+      "category_counts": {
+        "pass_cmp": 28,
+        "pass_att": 28
+      },
+      "games": 14,
+      "label_states": {
+        "SUPPORTED": 56
+      },
+      "new_panel_label_join": {
+        "EXACT_NUMERIC_LABEL_MATCH": 56
+      },
+      "source_rows_without_team_field": 0,
+      "all_rows_have_source_server_clock": true,
+      "offer_identity_sha256": "da821c148a582de7c74c21db4c94ad242162a608c222d8d565c04d2e25fb6630",
+      "scope": "Inventory/label compatibility only, not new model timing admission or threshold scores."
+    },
+    {
+      "week": 7,
+      "source_id": "B_RETAINED_2026_W7_QB_OFFERS",
+      "source_bytes": 21833,
+      "source_sha256": "8abe1fab12e6bb97be4d2e77f93e7a07f440eab02ff394c8dbc282183a9dca24",
+      "records": 56,
+      "category_counts": {
+        "pass_cmp": 28,
+        "pass_att": 28
+      },
+      "games": 14,
+      "label_states": {
+        "SUPPORTED": 56
+      },
+      "new_panel_label_join": {
+        "EXACT_NUMERIC_LABEL_MATCH": 56
+      },
+      "source_rows_without_team_field": 0,
+      "all_rows_have_source_server_clock": true,
+      "offer_identity_sha256": "61bf8999135a24063a9a96dfa25a032d6fbe99ab0134c16d1c9cda41c3c16243",
+      "scope": "Inventory/label compatibility only, not new model timing admission or threshold scores."
+    },
+    {
+      "week": 8,
+      "source_id": "B_RETAINED_2026_W8_QB_OFFERS",
+      "source_bytes": 3113168,
+      "source_sha256": "4b37b02e4ea584fbf91c21ca1fe8454c2447a68cafc154f15d431f520c73358a",
+      "records": 56,
+      "category_counts": {
+        "pass_cmp": 28,
+        "pass_att": 28
+      },
+      "games": 14,
+      "label_states": {
+        "SUPPORTED": 56
+      },
+      "new_panel_label_join": {
+        "EXACT_NUMERIC_LABEL_MATCH": 56
+      },
+      "source_rows_without_team_field": 56,
+      "all_rows_have_source_server_clock": true,
+      "offer_identity_sha256": "436bfa6abc104ef9192683cd56eaae977ece5caaea0124649ab767ec3a0cb7f6",
+      "scope": "Inventory/label compatibility only, not new model timing admission or threshold scores."
+    }
+  ],
+  "unique_offers": 224,
+  "unique_player_games": 112,
+  "new_panel_label_join": {
+    "EXACT_NUMERIC_LABEL_MATCH": 224
+  },
+  "new_derived_input_sha256": "f23bb72f05f398c7108700e10fa7bf63e233aca57bc67eb6820a38c9f212af90",
+  "no_quote_prices_assumed": true,
+  "point_or_probability_selection_not_computed": true,
+  "new_grades": 0,
+  "model_calls": 0,
+  "source_collections": 0,
+  "restricted_row_exports": 0,
+  "cutoff_rule": "Root must separately qualify fit, transform, prior and consumed-feature eligibility at retained quote-decision t; target-time ages may qualify only under the existing known-target-time reconstruction contract. Do not pair an unqualified kickoff output with an earlier quote.",
+  "missing_periods": "No W1-W4 offer evidence added. W5 covers14of15scheduledgames; W6/W7/W8 board source covers14games each. W8 fullboard is separate from old13game captured-method overlap."
+}

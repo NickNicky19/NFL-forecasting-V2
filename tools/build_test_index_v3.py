@@ -70,6 +70,25 @@ def apply_source_vintage_annotation(row, annotation):
     return dict(row, source_vintage=value)
 
 
+def apply_scoped_contract_metadata(row, annotation):
+    """Correct source-bound descriptive fields without changing a calculation."""
+    correction=annotation.get('contract_metadata')
+    if correction is None:return row
+    if correction.get('kind')!='SCOPE_METADATA_ONLY_NO_PREDICTION_OR_GRADE_CHANGE':
+        raise ValueError('contract metadata correction kind missing')
+    fields=correction.get('fields',{})
+    allowed={'time_panel_id','history_regime','horizon_id','source_vintage'}
+    if not fields or set(fields)-allowed:raise ValueError('non-metadata field in scoped correction')
+    result=dict(row)
+    for name,values in fields.items():
+        if set(values)!={'original','current'}or row.get(name)!=values['original']:
+            raise ValueError('scoped contract original mismatch')
+        if not isinstance(values['current'],str)or not values['current'].strip():
+            raise ValueError('empty contract correction')
+        result[name]=values['current']
+    return result
+
+
 def qualify_bound_source_horizon(row, annotation):
     """Correct a generic inherited panel label without changing source scores."""
     value=annotation.get('source_horizon_qualification')
@@ -253,6 +272,7 @@ def new_records(root,item,inputs):
             addition=reporting[i]
             if addition['record_id']!=original.get('record_id'):raise ValueError('reporting source record mismatch')
             row=apply_source_vintage_annotation(row,addition)
+            row=apply_scoped_contract_metadata(row,addition)
             row=qualify_bound_source_horizon(row,addition)
             row=separate_ancillary_point_metrics(row,addition)
             row=qualify_registered_rolling_rank(row,addition)
@@ -313,6 +333,8 @@ def new_records(root,item,inputs):
         record['source_version_note']=item.get('version_note')
         if i in reporting:
             record['reporting_metadata_provenance']=dict(artifact=item['reporting_annotations'],source_row_index=i,predictions_unchanged=True)
+            if reporting[i].get('contract_metadata'):
+                record['scoped_contract_metadata_correction']=reporting[i]['contract_metadata']
             if reporting[i].get('law_origin_counts') is not None:record['law_origin_counts']=reporting[i]['law_origin_counts']
             if reporting[i].get('outer_offer_coverage') is not None:
                 record['outer_offer_coverage']=validate_probability_outer_coverage(record,reporting[i]['outer_offer_coverage'])

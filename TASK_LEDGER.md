@@ -1,3 +1,19 @@
+# Current B context wave — PLAYER-CONTEXT-MATCHUP-01 v1, November7
+
+[Executed comparisons and category tables](reports/player-context-matchup-01/B/B_PLAYER_CONTEXT_MATCHUP_REPORT.md). Completed all registered2025REGW1–18/2026W1–8 origins:9completion recipes+1sharedattemptlaw,941QB-player-games each,945optimizerfits including48earlier2024tuningfits; no original issuance. PBPdown/depth,own/opponent effects,partial pooling/player-onlycoefficient arms and separateFTNsupport/values evaluated. No .90selections; all new Briers worse0.25. Existingstrong controls/adverse2025season retained. Exact numerical point duration26weeks; actual-line only4weeks, no primary selection/probability/topK qualification.
+
+| Owner | Exact remaining action |
+|---|---|
+| B/retained offer owner | QualifiedCMP/ATTW1–4 and missingW5game/annual threshold+clock source, or owner-local scoring on existing approved exports. No closing/synthetic substitution; missing original picks not blocker for reconstruction. |
+| C | Intake new B immutable inputs/recipes/scores and source-bound metadata/independent checks. No new Cadmission assumed. Keep shared evaluator/definitions. |
+| A | Deliver owned rushing/down/gap/allocation outputs; integrate/revalidate own producer history repair and current CountA exactmean through existing owner route. Bdoesnot duplicatefits ordispatch. |
+| C alignment | True alignment/all-route/QB-receiver context export missing from inspected PBP/FTNcharting subset; target destination is not alignment. |
+| B next QB cells | Passing-gain and conditional TD/INT extensions need distinct finite source/fit registration; preserve new failed selection/probability comparisons. Older2022–24context tests need earlier-only configuration/startup rather than borrow2024-tunedsettings. |
+| B recovery | Lastverified38parts/796917760B missing;147strict-HGBorigins/736exactolderD1D2cells remain governed by original recovery. No unchangeduploadretry/quota assertion. This new licensed public-derived lane is separately retained. |
+| Original site owner | Currentreference1561rows/14games and six servedbyte pairs verifiedNov7,24TopPicks12O12U(23current-value matches,1earlierfrozenproof). OverlayDISABLED_USE_R0,0researchrows. No B candidate admission, browser rerun or productionwrite. CountA producer stillbounddad58d45. |
+
+Original predictions/source staging/failures/old indices remain. One inherited stale period-label correction is metadata-only; internal E0/E0 checksum remains in audit but excluded from scientific paired index. Five-week floor is product-specific and not fiveNEWfutureweeks.
+
 # Current post-wave B queue — POST-WAVE-5W-v1
 
 Completed [controlled reliability diagnosis/ranker and C111RBmatching](reports/post-wave-5w-v1/B_POST_WAVE_REPORT_FINAL_V3.md); no completed football studies refit. Newranker5fits/348170privatebytes, negative/inconclusive results, not primary eligible (2rec/1PTweeks). Five-week floor is exact-product policy; zero selectionsN/A and0scoredweeks. Native and original selection/history evidence unchanged. CountAexactmean/P1has7reportedweeks but currentproducer/output/correctorparity and ownerack remain absent. B writes noA/production/Csharedstate.

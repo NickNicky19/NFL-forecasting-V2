@@ -1,7 +1,7 @@
 {
   "schema": "v2-current-public-index-pointer-v2",
-  "manifest": "reports/audit-remediation-20261105-v1/B/results-index-v1/INDEX_MANIFEST.json",
-  "previous_checkpoint": "reports/post-wave-5w-v1/results-index-v4/INDEX_MANIFEST.json",
+  "manifest": "reports/player-context-matchup-01/B/results-index-v1/INDEX_MANIFEST.json",
+  "previous_checkpoint": "reports/audit-remediation-20261105-v1/B/results-index-v1/INDEX_MANIFEST.json",
   "previous_unchanged": true,
   "manifest_role": "ALL_AUDIT_IMMUTABLE_BACKWARD_COMPATIBLE",
   "default_view": "CURRENT_CANONICAL_SCORE_VERSIONS_WITH_SCOPED_RECOMMENDATION_HOLDS",
@@ -18,10 +18,10 @@
     "sha256": "f7b540ccf688bb77672646b7a0af162f987a9669d836a4f44651e497205803d8"
   },
   "derived_comparison_manifest": {
-    "path": "reports/audit-remediation-20261105-v1/B/paired-analysis-index-v1/ANALYSIS_MANIFEST.json",
-    "sha256": "90ec29aef628c1813eb17573e2350fcf5829d096758acc8e082c0e57b406eae0"
+    "path": "reports/player-context-matchup-01/B/paired-analysis-index-v2/ANALYSIS_MANIFEST.json",
+    "sha256": "2176615739dd90cae0231a35198ebcbfa153db4f00a0877312b1b6b101fa0b59"
   },
-  "readable_checkpoint": "reports/post-wave-5w-v1/B_POST_WAVE_REPORT_FINAL_V3.md",
+  "readable_checkpoint": "reports/player-context-matchup-01/B/B_PLAYER_CONTEXT_MATCHUP_REPORT.md",
   "software_verification_manifest": {
     "path": "reports/week8-grading-20261102l/software/SOFTWARE_VERIFICATION_MANIFEST_V1.json",
     "sha256": "fc322f84ca2d46d9d09038517498567203816ff59f730f557b07029104317db3"
@@ -309,5 +309,12 @@
   "B_audit_remediation": {
     "path": "reports/audit-remediation-20261105-v1/B/B_FINDING_RUNTIME_CONTRIBUTION_V1.json",
     "sha256": "6138e47356f4dbf15aabb2f1c45f2aef21d3d51228b2dbd65f3340c9275184e3"
+  },
+  "player_context_matchup": {
+    "report": "reports/player-context-matchup-01/B/B_PLAYER_CONTEXT_MATCHUP_REPORT.md",
+    "protocol": "reports/player-context-matchup-01/B/qb-wave-v1/FROZEN_PROTOCOL.json",
+    "charting_protocol": "reports/player-context-matchup-01/B/qb-charting-wave-v1/FROZEN_PROTOCOL.json",
+    "scope": "Local2025full+2026W1-8numeric,QBcmp/attempts; W5-8actual-offerdiagnostics,4weeks. Not full12categorychampionship. Existingfixednative/default projection unchanged.",
+    "qualification": "Exact numerical duration assessed separately; allnewdirection/probability/TopKofferproducts lack fifth offeredweek, noneCadmittedorproductionpromoted."
   }
 }

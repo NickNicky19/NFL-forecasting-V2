@@ -1,0 +1,416 @@
+{
+  "state": "PASS_INDEPENDENT_ARITHMETIC_WITH_METADATA_QUALIFICATION_REQUIRED",
+  "source_scores_sha256": "32c23372661e1da18a0f80c57e66b6ee9ab30d1d233aae3af5370bf09c875314",
+  "source_pair_sha256": "62507fe72d3f2ab2e9a3bcee6af96f2452f14ab992e41ccf40d2344058cec5ef",
+  "source_commitments_sha256": "4daf18a8b279c0d4755897b2af064b05d8029d7cada933c11aed04e123174e1c",
+  "offer_rows": 224,
+  "complete_CMP_rows": 112,
+  "complete_ATT_rows": 112,
+  "prediction_records": 7528,
+  "numeric_views_checked": 1536,
+  "selection_side_views_checked": 2676,
+  "proper_score_views_checked": 60,
+  "paired_views_checked": 930,
+  "rolling_topK_side_views_checked": 864,
+  "calculation_commitments": [
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E0",
+      "policy": "P1_MEAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E0",
+      "policy": "P1_LOWER_MEDIAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E0",
+      "policy": "P2_STATISTICAL_LAW",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E0",
+      "policy": "P90",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E1",
+      "policy": "P1_MEAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E1",
+      "policy": "P1_LOWER_MEDIAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E1",
+      "policy": "P2_STATISTICAL_LAW",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E1",
+      "policy": "P90",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E2",
+      "policy": "P1_MEAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E2",
+      "policy": "P1_LOWER_MEDIAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E2",
+      "policy": "P2_STATISTICAL_LAW",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E2",
+      "policy": "P90",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E3",
+      "policy": "P1_MEAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E3",
+      "policy": "P1_LOWER_MEDIAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E3",
+      "policy": "P2_STATISTICAL_LAW",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:E3",
+      "policy": "P90",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:P1",
+      "policy": "P1_MEAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:P1",
+      "policy": "P1_LOWER_MEDIAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:P1",
+      "policy": "P2_STATISTICAL_LAW",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:P1",
+      "policy": "P90",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:P2",
+      "policy": "P1_MEAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:P2",
+      "policy": "P1_LOWER_MEDIAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:P2",
+      "policy": "P2_STATISTICAL_LAW",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:P2",
+      "policy": "P90",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:P3",
+      "policy": "P1_MEAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:P3",
+      "policy": "P1_LOWER_MEDIAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:P3",
+      "policy": "P2_STATISTICAL_LAW",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "B-player-context-matchup-01-v1:P3",
+      "policy": "P90",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "SAVED_ADJUSTED",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "SAVED_RAW",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "ALWAYS_OVER",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "ALWAYS_UNDER",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "EARLIER_LINE_PREVALENCE",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "NEUTRAL_HALFPOINT",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory::SAVED_mean",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory::SAVED_lower_median",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::SAVED_mean",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_cmp",
+      "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::SAVED_lower_median",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+      "policy": "P1_MEAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+      "policy": "P1_LOWER_MEDIAN",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+      "policy": "P2_STATISTICAL_LAW",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+      "policy": "P90",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "SAVED_ADJUSTED",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "SAVED_RAW",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "ALWAYS_OVER",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "ALWAYS_UNDER",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "EARLIER_LINE_PREVALENCE",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "NEUTRAL_HALFPOINT",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory::SAVED_mean",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory::SAVED_lower_median",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::SAVED_mean",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    },
+    {
+      "target": "pass_att",
+      "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::SAVED_lower_median",
+      "policy": "REGISTERED_DIRECTION",
+      "exact_row_commitment_match": true
+    }
+  ],
+  "exact_commitment_matches": 52,
+  "parent_metadata_findings": {
+    "STALE_HELPER_W7_PANEL_LABEL": 2676,
+    "ARCHIVED_OR_CONSTANT_HISTORY_OVERRIDE_NEEDED": 360
+  },
+  "headline_same_mask_witnesses": [
+    {
+      "target": "pass_cmp",
+      "procedure": "B-player-context-matchup-01-v1:E0",
+      "policy": "P2_STATISTICAL_LAW",
+      "over_wins": 7,
+      "over_losses": 12,
+      "under_wins": 42,
+      "under_losses": 51,
+      "wins": 49,
+      "decided": 112
+    },
+    {
+      "target": "pass_cmp",
+      "procedure": "B-player-context-matchup-01-v1:E3",
+      "policy": "P2_STATISTICAL_LAW",
+      "over_wins": 17,
+      "over_losses": 13,
+      "under_wins": 41,
+      "under_losses": 41,
+      "wins": 58,
+      "decided": 112
+    },
+    {
+      "target": "pass_cmp",
+      "procedure": "SAVED_ADJUSTED",
+      "policy": "REGISTERED_DIRECTION",
+      "over_wins": 22,
+      "over_losses": 18,
+      "under_wins": 36,
+      "under_losses": 36,
+      "wins": 58,
+      "decided": 112
+    },
+    {
+      "target": "pass_cmp",
+      "procedure": "ALWAYS_OVER",
+      "policy": "REGISTERED_DIRECTION",
+      "over_wins": 58,
+      "over_losses": 54,
+      "under_wins": 0,
+      "under_losses": 0,
+      "wins": 58,
+      "decided": 112
+    },
+    {
+      "target": "pass_cmp",
+      "procedure": "EARLIER_LINE_PREVALENCE",
+      "policy": "REGISTERED_DIRECTION",
+      "over_wins": 11,
+      "over_losses": 6,
+      "under_wins": 48,
+      "under_losses": 47,
+      "wins": 59,
+      "decided": 112
+    }
+  ],
+  "old_source_bindings": [
+    {
+      "source_id": "OLD_POINT_SOURCE_1",
+      "sha256": "8850d4beea01033e033978637de3e2b68142eb842bd75ec49b394e31d0d55cba",
+      "bytes": 24503190
+    },
+    {
+      "source_id": "OLD_POINT_SOURCE_2",
+      "sha256": "fcc0f566a624c29d73424e3bbef0f78537a90b2e6761dd9e95bfb31d3bdf9d96",
+      "bytes": 104753878
+    }
+  ],
+  "methodology": "Primitive Decimal inequalities, independently reconstructed CDF events and categorical losses, direct native errors/precision, chronological game-batch membership and independent pair residual sums. SciPy NB primitives used without invoking root scorer, law classes, grader or fit functions.",
+  "scope": "New/current 2026actual-offer W5-W8only, four exposedweeks; numerical2025fullREG+2026W1-W8separate. OldLeaf/C02partial masks and recipes retained separately. No calibration on evaluated outcomes or future originalissuance claim.",
+  "caveats": [
+    "Original raw score metadata contains inherited W7panel labels and archived-control history/horizon overrides; parent preparing source-bound corrections without metric changes",
+    "Neutral0.25 is halfpoint no-push reference only",
+    "NoP90selections; emptyrateN/A and0selectedweeks",
+    "P3own-onlycoefficienttraininguses sharedinputs/exposure/P1fallback",
+    "No price/settlement/ROI or productionadmission established"
+  ],
+  "scorer_invocations": 0,
+  "NFL_fits": 0,
+  "model_loads": 0,
+  "new_private_row_exports": 0
+}

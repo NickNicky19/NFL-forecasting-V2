@@ -172,3 +172,13 @@ The common attempt mean has MAE8.4564/bias−0.8375 on277QBparticipant rows, ver
 With P1’s frozen conversion law, replacing predicted attempts with actual postgame attempts yields completion MAE1.8933in2025 and2.1442in2026. This is a nondeployable component-substitution diagnosis; it neither establishes a cause nor proves future exposure can be forecast that accurately. Conditional throw Briers0.21231/0.21533 use17412/8006dependent throws, not independent NFLprop events. They are not comparable to the full-game threshold Brier0.25 reference.
 
 [Season micro/equal-weight projections](SEASON_SUMMARIES_V1.json) use only the declared2025full+2026W1–8 set, with each year visible first. They do not fill missing2022–2024contexts. [Policy duration](POLICY_QUALIFICATION_COUNTS.json) reports zero scored weeks for empty .90gates separately from four attempted offer weeks.
+
+## Current scope metadata and source-specific license
+
+[Current source-bound coverage view](CURRENT_COVERAGE_SCOPE_V3.json) separates outside-scope exclusions from technical unavailability in learned/fallback and all80right/wrongdiagnostic records. Those excluded forecasts exist in other scopes; current technical-unavailable is0. Original raw template fields remain for audit, and no forecast, grade, error or selected count changed. The result pointer/export binds the mandatory current reader `nfl_v2/context_scope_metadata.py`. This also preserves source-bound period/control-history corrections.
+
+[Explicit FTN model/prediction/derivative attribution](DATA_LICENSES_AND_ATTRIBUTION_V2.md) extends the frozen license page; no restricted material was moved publicly.
+
+## Frozen selective-policy losses
+
+E3 chronological rolling combined-side Top-6 scored8–16/24(33.33%), Top-10 scored20–20/40(50.00%), and Top-20 scored43–37/80(53.75%) across the same four offered weeks. Per-week Over-only Top-6 selected21 rather than forcing24:12–9/21(57.14%). Under-only Top-6 scored10–14/24(41.67%). These are the frozen game-batch policies, not hindsight global weekly ranks or original tickets. Their raw hit rates do not establish a selective confidence improvement or90%target.

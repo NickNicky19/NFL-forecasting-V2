@@ -1,0 +1,29 @@
+{
+  "id": "B-DEPTH-PILOT-OPTIMIZER-STATUS-v1",
+  "at_utc": "2026-11-10T04:54:35.106202+00:00",
+  "state": "NONCONVERGED_CONDITIONAL_PILOT_NEEDS_DISPOSITION",
+  "pilot_origin": [
+    2025,
+    1
+  ],
+  "observed_before_new_NFL_scores": true,
+  "C1": {
+    "success": false,
+    "iterations": 120,
+    "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+    "finite": true
+  },
+  "C2": {
+    "success": false,
+    "iterations": 120,
+    "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+    "finite": true
+  },
+  "unchanged_P1": {
+    "success": true,
+    "iterations": 42,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+  },
+  "meaning": "Finite prediction reproduction is distinct from optimizer convergence. A fixed-budget procedure can be scored honestly with this limitation, but do not diagnose no incremental information from failed optimization alone. Root must choose a scoped outcome-blind disposition before broader conditional execution.",
+  "permitted_next": "Preserve all pilot models/predictions/resource charges. Inspect objective/gradient without new fit; any optimizer-only repair requires a versioned amendment and actual consumed-fit accounting. No score-driven hyperparameter search."
+}

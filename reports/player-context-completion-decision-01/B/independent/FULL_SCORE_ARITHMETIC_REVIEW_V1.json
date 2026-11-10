@@ -1,0 +1,1265 @@
+{
+  "id": "B-DEPTH-FULL-SCORES-INDEPENDENT-v1",
+  "at_utc": "2026-11-10T05:14:14.953371+00:00",
+  "status": "PASS",
+  "source_scores_sha256": "5a8bdda9f2169e01e1a36ac9c2b844ff3f3ede2db1e83ec494364cf3361b0749",
+  "source_control_table_sha256": "9cdc4999894b2ea54130f2fdf104948b95e03fca95d9654b662f6b19912a2142",
+  "source_forecast_records": 3764,
+  "verified_views": {
+    "numerical": 1080,
+    "selection": 702,
+    "probability": 20,
+    "topK_selection_rows_within_selection": 432,
+    "all": 1802
+  },
+  "control_policy_windows_checked": 200,
+  "source_offer_bindings": [
+    {
+      "week": 5,
+      "sha256": "9b74e81ff451bd26e96b3019436e26306a4068f4fc9b38cc4561e1e0ab2d146f",
+      "bytes": 21902
+    },
+    {
+      "week": 6,
+      "sha256": "9903240899222ae4d8829dfd4e294de7652032da42b08ba52c1ba252b79344c7",
+      "bytes": 22472
+    },
+    {
+      "week": 7,
+      "sha256": "8abe1fab12e6bb97be4d2e77f93e7a07f440eab02ff394c8dbc282183a9dca24",
+      "bytes": 21833
+    },
+    {
+      "week": 8,
+      "sha256": "4b37b02e4ea584fbf91c21ca1fe8454c2447a68cafc154f15d431f520c73358a",
+      "bytes": 3113168
+    }
+  ],
+  "source_qualified_offers": 112,
+  "actual_weeks": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "games": 56,
+  "all_lines_halfpoint": true,
+  "own_information_scope": "Ownlast8 historicaloutcome pointmean/lowermedian; no laws/probabilities. Frozen8lookback fromsharedpriorstudy is disclosed; thisisnotanindependentlytunedperplayerprocedure.",
+  "own_offer_status": {
+    "P1_MEAN": {
+      "selected": 108,
+      "wins": 44,
+      "losses": 64,
+      "abstained": 4,
+      "unavailable": 0
+    },
+    "P1_LOWER_MEDIAN": {
+      "selected": 112,
+      "wins": 49,
+      "losses": 63,
+      "abstained": 0,
+      "unavailable": 0
+    }
+  },
+  "new_law_P2": {
+    "D1": {
+      "wins": 52,
+      "losses": 60,
+      "n": 112,
+      "brier": 0.2701835596743847,
+      "log_loss": 0.7366506618061023,
+      "infinite_log_losses": 0
+    },
+    "D2": {
+      "wins": 49,
+      "losses": 63,
+      "n": 112,
+      "brier": 0.2683230827081994,
+      "log_loss": 0.7321047732574266,
+      "infinite_log_losses": 0
+    },
+    "C1": {
+      "wins": 54,
+      "losses": 58,
+      "n": 112,
+      "brier": 0.28050712801836347,
+      "log_loss": 0.7589376201205674,
+      "infinite_log_losses": 0
+    },
+    "C2": {
+      "wins": 54,
+      "losses": 58,
+      "n": 112,
+      "brier": 0.2802372662680014,
+      "log_loss": 0.7582560868898723,
+      "infinite_log_losses": 0
+    }
+  },
+  "topK_membership_commitments": [
+    {
+      "method": "D1",
+      "week": 5,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "7148db3d22176b279c771f1a381b8b6621fe286df1a91a3b4e638f7353f11e3d"
+    },
+    {
+      "method": "D1",
+      "week": 5,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "0b069d0e193b771d14d1fb564e63b6df1f9d6d8f75a35930fae9fdd0e07e9294"
+    },
+    {
+      "method": "D1",
+      "week": 5,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "741301f0c7915a8cc33919fc2d428d5ce3f939bafec04924e477b96985ebeb3d"
+    },
+    {
+      "method": "D1",
+      "week": 5,
+      "pool": "over",
+      "K": 6,
+      "selected": 5,
+      "membership_sha256": "f0f665e2e970d8cc999d37465cc8424e8876a37e7ee45e6eed17c5f701bd3671"
+    },
+    {
+      "method": "D1",
+      "week": 5,
+      "pool": "over",
+      "K": 10,
+      "selected": 5,
+      "membership_sha256": "f0f665e2e970d8cc999d37465cc8424e8876a37e7ee45e6eed17c5f701bd3671"
+    },
+    {
+      "method": "D1",
+      "week": 5,
+      "pool": "over",
+      "K": 20,
+      "selected": 5,
+      "membership_sha256": "f0f665e2e970d8cc999d37465cc8424e8876a37e7ee45e6eed17c5f701bd3671"
+    },
+    {
+      "method": "D1",
+      "week": 5,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "9474891e273f52074871de50eb6922766ab62b72b165006c55e0215f6f79435e"
+    },
+    {
+      "method": "D1",
+      "week": 5,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "6bc504b85e3c0667d529d388b2c6a5d571428a47f00c70cad283f2d6c65b8f91"
+    },
+    {
+      "method": "D1",
+      "week": 5,
+      "pool": "under",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "691ed1e30aeaf7d4dd3f00053394fdb54bf5019a5e7144c553645672f90c90e1"
+    },
+    {
+      "method": "D1",
+      "week": 6,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "279c33a3c512a7c2dd67fec1c1b347294e5e3f369f8af898ef2921bdc4526660"
+    },
+    {
+      "method": "D1",
+      "week": 6,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "1a56470c26e5362c70b8ae5095ee1989c3bd71a7636a52e2f82452af15ba618a"
+    },
+    {
+      "method": "D1",
+      "week": 6,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "5d391fead3f63708a97435cb93041db05ef19a2fffbbf8ecf31cd53e2a8592c3"
+    },
+    {
+      "method": "D1",
+      "week": 6,
+      "pool": "over",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "9151f95f89acae98ec6e4461c38be08f17424ade156982654f147a269925fc67"
+    },
+    {
+      "method": "D1",
+      "week": 6,
+      "pool": "over",
+      "K": 10,
+      "selected": 6,
+      "membership_sha256": "9151f95f89acae98ec6e4461c38be08f17424ade156982654f147a269925fc67"
+    },
+    {
+      "method": "D1",
+      "week": 6,
+      "pool": "over",
+      "K": 20,
+      "selected": 6,
+      "membership_sha256": "9151f95f89acae98ec6e4461c38be08f17424ade156982654f147a269925fc67"
+    },
+    {
+      "method": "D1",
+      "week": 6,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "10b304df4ad3cdc9b88a44583087615b3154e4bb6812bcaebd277f565dc29c45"
+    },
+    {
+      "method": "D1",
+      "week": 6,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "cae45e90c5e04804242fd540211f6adfe08e3b23717df017bb311e919b610014"
+    },
+    {
+      "method": "D1",
+      "week": 6,
+      "pool": "under",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "dfeebed749cb245a0522fafd9e80849c758725285eb5e9ba62fdce47290b3a8a"
+    },
+    {
+      "method": "D1",
+      "week": 7,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "a6e223944c6f34e9b9d17cf44732c0be099609534483df2f3fddac69caaa28e2"
+    },
+    {
+      "method": "D1",
+      "week": 7,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "e4dd8f42d0e8a69f374c89c10c92a17714a93f51d0eeaa492e18a71e7f6e3969"
+    },
+    {
+      "method": "D1",
+      "week": 7,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "2082af67fbf572e9bdc8fbe9c7cde133ea7b6d51f131200004ac0aa0d3d52785"
+    },
+    {
+      "method": "D1",
+      "week": 7,
+      "pool": "over",
+      "K": 6,
+      "selected": 3,
+      "membership_sha256": "7c72cc9a009060e49eb84b5985454434b51b23689a63dec2c7a8586ad3b9f392"
+    },
+    {
+      "method": "D1",
+      "week": 7,
+      "pool": "over",
+      "K": 10,
+      "selected": 3,
+      "membership_sha256": "7c72cc9a009060e49eb84b5985454434b51b23689a63dec2c7a8586ad3b9f392"
+    },
+    {
+      "method": "D1",
+      "week": 7,
+      "pool": "over",
+      "K": 20,
+      "selected": 3,
+      "membership_sha256": "7c72cc9a009060e49eb84b5985454434b51b23689a63dec2c7a8586ad3b9f392"
+    },
+    {
+      "method": "D1",
+      "week": 7,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "a6e223944c6f34e9b9d17cf44732c0be099609534483df2f3fddac69caaa28e2"
+    },
+    {
+      "method": "D1",
+      "week": 7,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "b73ffe289d49af70f584c2f5d549504969990533869319a1e8996daf46925489"
+    },
+    {
+      "method": "D1",
+      "week": 7,
+      "pool": "under",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "d5a0cb90bd038759ba19d0f3cb83a1edd61462085841c9c3304d75513f1d9262"
+    },
+    {
+      "method": "D1",
+      "week": 8,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "c1fb997e92b90a8fc3fa781c015aa98387e9c39f2b1464d75c8126b864ee0018"
+    },
+    {
+      "method": "D1",
+      "week": 8,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "b6939c57306634b7993962be3da1999eb87f23971c36672bccd336d715cf7468"
+    },
+    {
+      "method": "D1",
+      "week": 8,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "280d4e478219c3f6aabab5d81f9c1a2a5c94ed7c3d6c9952ad1c27e5211eda89"
+    },
+    {
+      "method": "D1",
+      "week": 8,
+      "pool": "over",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "c947de99a2854d3b7796deaeb59892d5442740891851dfbebd313f47d75bf2f5"
+    },
+    {
+      "method": "D1",
+      "week": 8,
+      "pool": "over",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "dea2cb158e9c64d97f803566f32c98e6171689105352e7a0e0723f4951a47ec2"
+    },
+    {
+      "method": "D1",
+      "week": 8,
+      "pool": "over",
+      "K": 20,
+      "selected": 14,
+      "membership_sha256": "07a2b56d2c96b26255493d895e98775fa174481d3292e22e06a5a78b49fd7110"
+    },
+    {
+      "method": "D1",
+      "week": 8,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "f276de06700eb8d46827428a070337aff91fe3e72c1e223427876b1cbfcfa337"
+    },
+    {
+      "method": "D1",
+      "week": 8,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "dae6650b6d6ed6ff74990e13beb023f927e714da9c801637af81c8e1bceb4a97"
+    },
+    {
+      "method": "D1",
+      "week": 8,
+      "pool": "under",
+      "K": 20,
+      "selected": 14,
+      "membership_sha256": "1d34af3e4e7c6d0c264da2e08e902d3ca3afc2b2821f399a0b1f5e809fd2cbe2"
+    },
+    {
+      "method": "D2",
+      "week": 5,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "6b027c270ed46e4e8d65e15f21193cb0ede6a8fe6427823c8d4ac390a9b608e8"
+    },
+    {
+      "method": "D2",
+      "week": 5,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "e759019244b4de93f2aa1acb6b8445ca71456c879f2c5801d524b9697d2c2c65"
+    },
+    {
+      "method": "D2",
+      "week": 5,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "741301f0c7915a8cc33919fc2d428d5ce3f939bafec04924e477b96985ebeb3d"
+    },
+    {
+      "method": "D2",
+      "week": 5,
+      "pool": "over",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "ad22cc7894ce2d9c14b945a8474fa735205cd3061b025e09e23ebe1c06b0a45f"
+    },
+    {
+      "method": "D2",
+      "week": 5,
+      "pool": "over",
+      "K": 10,
+      "selected": 7,
+      "membership_sha256": "cc46423db226b07434451e665c406f411af3f8ed686c5d1ccdd41b4f4db05e4e"
+    },
+    {
+      "method": "D2",
+      "week": 5,
+      "pool": "over",
+      "K": 20,
+      "selected": 7,
+      "membership_sha256": "cc46423db226b07434451e665c406f411af3f8ed686c5d1ccdd41b4f4db05e4e"
+    },
+    {
+      "method": "D2",
+      "week": 5,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "9474891e273f52074871de50eb6922766ab62b72b165006c55e0215f6f79435e"
+    },
+    {
+      "method": "D2",
+      "week": 5,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "1cf987f1e7939843812cb35e85ff3fd38477cb2ee1dc53aa3da4c29f1b775613"
+    },
+    {
+      "method": "D2",
+      "week": 5,
+      "pool": "under",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "1852a328a457f239de23094d87a9e3b026efd8e97bebf12459eec3d994cfdca0"
+    },
+    {
+      "method": "D2",
+      "week": 6,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "279c33a3c512a7c2dd67fec1c1b347294e5e3f369f8af898ef2921bdc4526660"
+    },
+    {
+      "method": "D2",
+      "week": 6,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "d1992fbef6c00fcba0d211c33d4088d1a843d9797434d74d86c510191d421cef"
+    },
+    {
+      "method": "D2",
+      "week": 6,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "5d391fead3f63708a97435cb93041db05ef19a2fffbbf8ecf31cd53e2a8592c3"
+    },
+    {
+      "method": "D2",
+      "week": 6,
+      "pool": "over",
+      "K": 6,
+      "selected": 5,
+      "membership_sha256": "f04e13fd85bcfe53fac9f8f6a7155101c24560d3dfa8ff92af642443b18974ca"
+    },
+    {
+      "method": "D2",
+      "week": 6,
+      "pool": "over",
+      "K": 10,
+      "selected": 5,
+      "membership_sha256": "f04e13fd85bcfe53fac9f8f6a7155101c24560d3dfa8ff92af642443b18974ca"
+    },
+    {
+      "method": "D2",
+      "week": 6,
+      "pool": "over",
+      "K": 20,
+      "selected": 5,
+      "membership_sha256": "f04e13fd85bcfe53fac9f8f6a7155101c24560d3dfa8ff92af642443b18974ca"
+    },
+    {
+      "method": "D2",
+      "week": 6,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "279c33a3c512a7c2dd67fec1c1b347294e5e3f369f8af898ef2921bdc4526660"
+    },
+    {
+      "method": "D2",
+      "week": 6,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "d1992fbef6c00fcba0d211c33d4088d1a843d9797434d74d86c510191d421cef"
+    },
+    {
+      "method": "D2",
+      "week": 6,
+      "pool": "under",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "7bcca277d2e36c8f155057b450024c49d2c9e04325c6abe4d6031e01613df1ff"
+    },
+    {
+      "method": "D2",
+      "week": 7,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "a6e223944c6f34e9b9d17cf44732c0be099609534483df2f3fddac69caaa28e2"
+    },
+    {
+      "method": "D2",
+      "week": 7,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "e4dd8f42d0e8a69f374c89c10c92a17714a93f51d0eeaa492e18a71e7f6e3969"
+    },
+    {
+      "method": "D2",
+      "week": 7,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "2082af67fbf572e9bdc8fbe9c7cde133ea7b6d51f131200004ac0aa0d3d52785"
+    },
+    {
+      "method": "D2",
+      "week": 7,
+      "pool": "over",
+      "K": 6,
+      "selected": 5,
+      "membership_sha256": "ddfdd8eb7ea466c6ac3b8e9e2129b950d3d34dd76f69604778ec577f1ad03ff4"
+    },
+    {
+      "method": "D2",
+      "week": 7,
+      "pool": "over",
+      "K": 10,
+      "selected": 5,
+      "membership_sha256": "ddfdd8eb7ea466c6ac3b8e9e2129b950d3d34dd76f69604778ec577f1ad03ff4"
+    },
+    {
+      "method": "D2",
+      "week": 7,
+      "pool": "over",
+      "K": 20,
+      "selected": 5,
+      "membership_sha256": "ddfdd8eb7ea466c6ac3b8e9e2129b950d3d34dd76f69604778ec577f1ad03ff4"
+    },
+    {
+      "method": "D2",
+      "week": 7,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "29938a8c1b28b633841e3800e03e1cf5624040d2a76a579af6d684758f3962ad"
+    },
+    {
+      "method": "D2",
+      "week": 7,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "334347adc0fdee7895f323754fabd4ff8aa95a22e66205255cba2487163adb5f"
+    },
+    {
+      "method": "D2",
+      "week": 7,
+      "pool": "under",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "6e30e9dae668fbe8bc5374f0d2db229ea95d25cc6b77252387c3e0f80ae49a7b"
+    },
+    {
+      "method": "D2",
+      "week": 8,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "a4368e3f403f2e6d77a0512e77adbd868a8b7f1e96b466f8473772c0cc22bda8"
+    },
+    {
+      "method": "D2",
+      "week": 8,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "8923ecea3915dc5c23643bef3395eb5c185fd0ba2d952d3a0f861824f884587c"
+    },
+    {
+      "method": "D2",
+      "week": 8,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "280d4e478219c3f6aabab5d81f9c1a2a5c94ed7c3d6c9952ad1c27e5211eda89"
+    },
+    {
+      "method": "D2",
+      "week": 8,
+      "pool": "over",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "b1aec9efeefcc743e861105c01950da08783fd345870edb9f9f2abd58a7d48ee"
+    },
+    {
+      "method": "D2",
+      "week": 8,
+      "pool": "over",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "7b9737fa102087450ece38bd92bd85469432b49d855f6d8f756ed863e33d4cc1"
+    },
+    {
+      "method": "D2",
+      "week": 8,
+      "pool": "over",
+      "K": 20,
+      "selected": 16,
+      "membership_sha256": "0c55155b1c006c21d3dd60b484e5ffd1f493faf44a226399e17563fed6c35d1b"
+    },
+    {
+      "method": "D2",
+      "week": 8,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "de20724c870c0f06055364284deb5e5ecd66c64998cf775b859cd6d8357a3976"
+    },
+    {
+      "method": "D2",
+      "week": 8,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "ec9b074f91126e746a0dfbeced76dbbd9a9384382091a3b6a84d779bf2b582af"
+    },
+    {
+      "method": "D2",
+      "week": 8,
+      "pool": "under",
+      "K": 20,
+      "selected": 12,
+      "membership_sha256": "d7c89d0ca5d002b0c8aff004047afa461aa54cd1ea05ec2e4b1e935869629cf1"
+    },
+    {
+      "method": "C1",
+      "week": 5,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "c27bd08bcb9c208cd21ad04b183c9bfc88097872426c6da4e60e563dfed17eac"
+    },
+    {
+      "method": "C1",
+      "week": 5,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "35eb7015811979f71c38f62eee29c7ac8a74e618f9404f190adaf696bb2fd595"
+    },
+    {
+      "method": "C1",
+      "week": 5,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "741301f0c7915a8cc33919fc2d428d5ce3f939bafec04924e477b96985ebeb3d"
+    },
+    {
+      "method": "C1",
+      "week": 5,
+      "pool": "over",
+      "K": 6,
+      "selected": 1,
+      "membership_sha256": "33f8d53da604df97a2780dc26857a332a644fef3b4f45c88195fa211ce24aa57"
+    },
+    {
+      "method": "C1",
+      "week": 5,
+      "pool": "over",
+      "K": 10,
+      "selected": 1,
+      "membership_sha256": "33f8d53da604df97a2780dc26857a332a644fef3b4f45c88195fa211ce24aa57"
+    },
+    {
+      "method": "C1",
+      "week": 5,
+      "pool": "over",
+      "K": 20,
+      "selected": 1,
+      "membership_sha256": "33f8d53da604df97a2780dc26857a332a644fef3b4f45c88195fa211ce24aa57"
+    },
+    {
+      "method": "C1",
+      "week": 5,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "c27bd08bcb9c208cd21ad04b183c9bfc88097872426c6da4e60e563dfed17eac"
+    },
+    {
+      "method": "C1",
+      "week": 5,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "35eb7015811979f71c38f62eee29c7ac8a74e618f9404f190adaf696bb2fd595"
+    },
+    {
+      "method": "C1",
+      "week": 5,
+      "pool": "under",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "8998ed35c944b6ed5241354db452457c62a27892b8a5dfc268aad9605f085a92"
+    },
+    {
+      "method": "C1",
+      "week": 6,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "59a6eb3869cf70ec3156d67fb799c5dbf9dcfebe275b3643ef263d618141addb"
+    },
+    {
+      "method": "C1",
+      "week": 6,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "5ed381e2bf48ffe54b1f80dfe4a40093e7ed78e03cd8c1d8b18a5e8e77af33bf"
+    },
+    {
+      "method": "C1",
+      "week": 6,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "5d391fead3f63708a97435cb93041db05ef19a2fffbbf8ecf31cd53e2a8592c3"
+    },
+    {
+      "method": "C1",
+      "week": 6,
+      "pool": "over",
+      "K": 6,
+      "selected": 2,
+      "membership_sha256": "c8b512be93ce21dd717b33cbc287ab22b42db278523a2ff8a4974cd80112a0fd"
+    },
+    {
+      "method": "C1",
+      "week": 6,
+      "pool": "over",
+      "K": 10,
+      "selected": 2,
+      "membership_sha256": "c8b512be93ce21dd717b33cbc287ab22b42db278523a2ff8a4974cd80112a0fd"
+    },
+    {
+      "method": "C1",
+      "week": 6,
+      "pool": "over",
+      "K": 20,
+      "selected": 2,
+      "membership_sha256": "c8b512be93ce21dd717b33cbc287ab22b42db278523a2ff8a4974cd80112a0fd"
+    },
+    {
+      "method": "C1",
+      "week": 6,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "59a6eb3869cf70ec3156d67fb799c5dbf9dcfebe275b3643ef263d618141addb"
+    },
+    {
+      "method": "C1",
+      "week": 6,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "5ed381e2bf48ffe54b1f80dfe4a40093e7ed78e03cd8c1d8b18a5e8e77af33bf"
+    },
+    {
+      "method": "C1",
+      "week": 6,
+      "pool": "under",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "6bc42b2fea0ee410d5f9d61c922c18da068d18beb18945a404a5a6b64db12a3f"
+    },
+    {
+      "method": "C1",
+      "week": 7,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "a6e223944c6f34e9b9d17cf44732c0be099609534483df2f3fddac69caaa28e2"
+    },
+    {
+      "method": "C1",
+      "week": 7,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "ffeb93017e3ff31057c3cfc6b74fa7583ce26a1a6c2e56a91157f5490f1167f1"
+    },
+    {
+      "method": "C1",
+      "week": 7,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "2082af67fbf572e9bdc8fbe9c7cde133ea7b6d51f131200004ac0aa0d3d52785"
+    },
+    {
+      "method": "C1",
+      "week": 7,
+      "pool": "over",
+      "K": 6,
+      "selected": 3,
+      "membership_sha256": "b2dfc7dfa1e24c8d7172ac0ad4f0732122c5e6f0b1f30bf5e29db4bd19c569d4"
+    },
+    {
+      "method": "C1",
+      "week": 7,
+      "pool": "over",
+      "K": 10,
+      "selected": 3,
+      "membership_sha256": "b2dfc7dfa1e24c8d7172ac0ad4f0732122c5e6f0b1f30bf5e29db4bd19c569d4"
+    },
+    {
+      "method": "C1",
+      "week": 7,
+      "pool": "over",
+      "K": 20,
+      "selected": 3,
+      "membership_sha256": "b2dfc7dfa1e24c8d7172ac0ad4f0732122c5e6f0b1f30bf5e29db4bd19c569d4"
+    },
+    {
+      "method": "C1",
+      "week": 7,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "6648a09112ec142fe28ea1c1ee6ca872f1ab48f51bb539c2205000fd7b074998"
+    },
+    {
+      "method": "C1",
+      "week": 7,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "c3f20090675d5773e627ec45681c33c31a189ca50601592c64be685f609e5b45"
+    },
+    {
+      "method": "C1",
+      "week": 7,
+      "pool": "under",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "d057d9b04adf63ed135807073c968300934a4544e474cd4f1e9c0bce641de8ed"
+    },
+    {
+      "method": "C1",
+      "week": 8,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "c44243ff39d2c4ddbab9e3d65cf589636572b8d407496967d5947cc504f3376f"
+    },
+    {
+      "method": "C1",
+      "week": 8,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "33e1febb6b60bc02ce4a971fd4d1937240afb4d084c742d8e53ba9b0a365d400"
+    },
+    {
+      "method": "C1",
+      "week": 8,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "280d4e478219c3f6aabab5d81f9c1a2a5c94ed7c3d6c9952ad1c27e5211eda89"
+    },
+    {
+      "method": "C1",
+      "week": 8,
+      "pool": "over",
+      "K": 6,
+      "selected": 2,
+      "membership_sha256": "cfe6b5dbeb753bf5ccacd983b6f406630fd3da2caf747316e1ae7ecb138cecd2"
+    },
+    {
+      "method": "C1",
+      "week": 8,
+      "pool": "over",
+      "K": 10,
+      "selected": 2,
+      "membership_sha256": "cfe6b5dbeb753bf5ccacd983b6f406630fd3da2caf747316e1ae7ecb138cecd2"
+    },
+    {
+      "method": "C1",
+      "week": 8,
+      "pool": "over",
+      "K": 20,
+      "selected": 2,
+      "membership_sha256": "cfe6b5dbeb753bf5ccacd983b6f406630fd3da2caf747316e1ae7ecb138cecd2"
+    },
+    {
+      "method": "C1",
+      "week": 8,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "c44243ff39d2c4ddbab9e3d65cf589636572b8d407496967d5947cc504f3376f"
+    },
+    {
+      "method": "C1",
+      "week": 8,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "33e1febb6b60bc02ce4a971fd4d1937240afb4d084c742d8e53ba9b0a365d400"
+    },
+    {
+      "method": "C1",
+      "week": 8,
+      "pool": "under",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "280d4e478219c3f6aabab5d81f9c1a2a5c94ed7c3d6c9952ad1c27e5211eda89"
+    },
+    {
+      "method": "C2",
+      "week": 5,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "c27bd08bcb9c208cd21ad04b183c9bfc88097872426c6da4e60e563dfed17eac"
+    },
+    {
+      "method": "C2",
+      "week": 5,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "35eb7015811979f71c38f62eee29c7ac8a74e618f9404f190adaf696bb2fd595"
+    },
+    {
+      "method": "C2",
+      "week": 5,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "741301f0c7915a8cc33919fc2d428d5ce3f939bafec04924e477b96985ebeb3d"
+    },
+    {
+      "method": "C2",
+      "week": 5,
+      "pool": "over",
+      "K": 6,
+      "selected": 1,
+      "membership_sha256": "33f8d53da604df97a2780dc26857a332a644fef3b4f45c88195fa211ce24aa57"
+    },
+    {
+      "method": "C2",
+      "week": 5,
+      "pool": "over",
+      "K": 10,
+      "selected": 1,
+      "membership_sha256": "33f8d53da604df97a2780dc26857a332a644fef3b4f45c88195fa211ce24aa57"
+    },
+    {
+      "method": "C2",
+      "week": 5,
+      "pool": "over",
+      "K": 20,
+      "selected": 1,
+      "membership_sha256": "33f8d53da604df97a2780dc26857a332a644fef3b4f45c88195fa211ce24aa57"
+    },
+    {
+      "method": "C2",
+      "week": 5,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "c27bd08bcb9c208cd21ad04b183c9bfc88097872426c6da4e60e563dfed17eac"
+    },
+    {
+      "method": "C2",
+      "week": 5,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "35eb7015811979f71c38f62eee29c7ac8a74e618f9404f190adaf696bb2fd595"
+    },
+    {
+      "method": "C2",
+      "week": 5,
+      "pool": "under",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "8998ed35c944b6ed5241354db452457c62a27892b8a5dfc268aad9605f085a92"
+    },
+    {
+      "method": "C2",
+      "week": 6,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "59a6eb3869cf70ec3156d67fb799c5dbf9dcfebe275b3643ef263d618141addb"
+    },
+    {
+      "method": "C2",
+      "week": 6,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "e939c2cb6ec3d4cd56d7ddf060074fa21cd6a8239ecf6290eb2cdd7de9777a98"
+    },
+    {
+      "method": "C2",
+      "week": 6,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "5d391fead3f63708a97435cb93041db05ef19a2fffbbf8ecf31cd53e2a8592c3"
+    },
+    {
+      "method": "C2",
+      "week": 6,
+      "pool": "over",
+      "K": 6,
+      "selected": 2,
+      "membership_sha256": "c8b512be93ce21dd717b33cbc287ab22b42db278523a2ff8a4974cd80112a0fd"
+    },
+    {
+      "method": "C2",
+      "week": 6,
+      "pool": "over",
+      "K": 10,
+      "selected": 2,
+      "membership_sha256": "c8b512be93ce21dd717b33cbc287ab22b42db278523a2ff8a4974cd80112a0fd"
+    },
+    {
+      "method": "C2",
+      "week": 6,
+      "pool": "over",
+      "K": 20,
+      "selected": 2,
+      "membership_sha256": "c8b512be93ce21dd717b33cbc287ab22b42db278523a2ff8a4974cd80112a0fd"
+    },
+    {
+      "method": "C2",
+      "week": 6,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "59a6eb3869cf70ec3156d67fb799c5dbf9dcfebe275b3643ef263d618141addb"
+    },
+    {
+      "method": "C2",
+      "week": 6,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "e939c2cb6ec3d4cd56d7ddf060074fa21cd6a8239ecf6290eb2cdd7de9777a98"
+    },
+    {
+      "method": "C2",
+      "week": 6,
+      "pool": "under",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "6bc42b2fea0ee410d5f9d61c922c18da068d18beb18945a404a5a6b64db12a3f"
+    },
+    {
+      "method": "C2",
+      "week": 7,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "a6e223944c6f34e9b9d17cf44732c0be099609534483df2f3fddac69caaa28e2"
+    },
+    {
+      "method": "C2",
+      "week": 7,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "ffeb93017e3ff31057c3cfc6b74fa7583ce26a1a6c2e56a91157f5490f1167f1"
+    },
+    {
+      "method": "C2",
+      "week": 7,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "2082af67fbf572e9bdc8fbe9c7cde133ea7b6d51f131200004ac0aa0d3d52785"
+    },
+    {
+      "method": "C2",
+      "week": 7,
+      "pool": "over",
+      "K": 6,
+      "selected": 3,
+      "membership_sha256": "b2dfc7dfa1e24c8d7172ac0ad4f0732122c5e6f0b1f30bf5e29db4bd19c569d4"
+    },
+    {
+      "method": "C2",
+      "week": 7,
+      "pool": "over",
+      "K": 10,
+      "selected": 3,
+      "membership_sha256": "b2dfc7dfa1e24c8d7172ac0ad4f0732122c5e6f0b1f30bf5e29db4bd19c569d4"
+    },
+    {
+      "method": "C2",
+      "week": 7,
+      "pool": "over",
+      "K": 20,
+      "selected": 3,
+      "membership_sha256": "b2dfc7dfa1e24c8d7172ac0ad4f0732122c5e6f0b1f30bf5e29db4bd19c569d4"
+    },
+    {
+      "method": "C2",
+      "week": 7,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "6648a09112ec142fe28ea1c1ee6ca872f1ab48f51bb539c2205000fd7b074998"
+    },
+    {
+      "method": "C2",
+      "week": 7,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "c3f20090675d5773e627ec45681c33c31a189ca50601592c64be685f609e5b45"
+    },
+    {
+      "method": "C2",
+      "week": 7,
+      "pool": "under",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "d057d9b04adf63ed135807073c968300934a4544e474cd4f1e9c0bce641de8ed"
+    },
+    {
+      "method": "C2",
+      "week": 8,
+      "pool": "Combined",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "c44243ff39d2c4ddbab9e3d65cf589636572b8d407496967d5947cc504f3376f"
+    },
+    {
+      "method": "C2",
+      "week": 8,
+      "pool": "Combined",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "33e1febb6b60bc02ce4a971fd4d1937240afb4d084c742d8e53ba9b0a365d400"
+    },
+    {
+      "method": "C2",
+      "week": 8,
+      "pool": "Combined",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "280d4e478219c3f6aabab5d81f9c1a2a5c94ed7c3d6c9952ad1c27e5211eda89"
+    },
+    {
+      "method": "C2",
+      "week": 8,
+      "pool": "over",
+      "K": 6,
+      "selected": 2,
+      "membership_sha256": "cfe6b5dbeb753bf5ccacd983b6f406630fd3da2caf747316e1ae7ecb138cecd2"
+    },
+    {
+      "method": "C2",
+      "week": 8,
+      "pool": "over",
+      "K": 10,
+      "selected": 2,
+      "membership_sha256": "cfe6b5dbeb753bf5ccacd983b6f406630fd3da2caf747316e1ae7ecb138cecd2"
+    },
+    {
+      "method": "C2",
+      "week": 8,
+      "pool": "over",
+      "K": 20,
+      "selected": 2,
+      "membership_sha256": "cfe6b5dbeb753bf5ccacd983b6f406630fd3da2caf747316e1ae7ecb138cecd2"
+    },
+    {
+      "method": "C2",
+      "week": 8,
+      "pool": "under",
+      "K": 6,
+      "selected": 6,
+      "membership_sha256": "c44243ff39d2c4ddbab9e3d65cf589636572b8d407496967d5947cc504f3376f"
+    },
+    {
+      "method": "C2",
+      "week": 8,
+      "pool": "under",
+      "K": 10,
+      "selected": 10,
+      "membership_sha256": "33e1febb6b60bc02ce4a971fd4d1937240afb4d084c742d8e53ba9b0a365d400"
+    },
+    {
+      "method": "C2",
+      "week": 8,
+      "pool": "under",
+      "K": 20,
+      "selected": 20,
+      "membership_sha256": "280d4e478219c3f6aabab5d81f9c1a2a5c94ed7c3d6c9952ad1c27e5211eda89"
+    }
+  ],
+  "OWN8_new_scientific_paired_views": 40,
+  "new_scientific_paired_artifact_sha256": "22d15ccf812bfd521b980a12581465fac60808faf26a8a47837f49de78604466",
+  "metadata_limit": "Inheritedtime_panel_idW7 label must be corrected bysource-bound metadataoverlay; evaluationweeks/grades areactualW5-8. No metric correction needed.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_original_selections": 0,
+  "private_row_exports": 0,
+  "author_summary_scorer_calls": 0,
+  "uncertainty": "Existingdeclaredpaired_uncertaintyhelperusedonlyfor40newscientificcontrasts; primitivecountsindependent. Fewweek/multiplicity/exposurelimits retained.",
+  "resources": {
+    "wall_seconds": 4.9454904240010364,
+    "peak_RSS_bytes": 452952064
+  }
+}

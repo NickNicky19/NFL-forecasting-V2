@@ -1,7 +1,7 @@
 {
   "schema": "v2-current-public-index-pointer-v2",
-  "manifest": "reports/player-context-acceptance-01/B/results-index-v2/INDEX_MANIFEST.json",
-  "previous_checkpoint": "reports/player-context-matchup-01/B/results-index-v1/INDEX_MANIFEST.json",
+  "manifest": "reports/player-context-completion-decision-01/B/results-index-v1/INDEX_MANIFEST.json",
+  "previous_checkpoint": "reports/player-context-acceptance-01/B/results-index-v2/INDEX_MANIFEST.json",
   "previous_unchanged": true,
   "manifest_role": "ALL_AUDIT_IMMUTABLE_BACKWARD_COMPATIBLE",
   "default_view": "CURRENT_CANONICAL_SCORE_VERSIONS_WITH_SCOPED_RECOMMENDATION_HOLDS",
@@ -18,10 +18,10 @@
     "sha256": "f7b540ccf688bb77672646b7a0af162f987a9669d836a4f44651e497205803d8"
   },
   "derived_comparison_manifest": {
-    "path": "reports/player-context-matchup-01/B/paired-analysis-index-v2/ANALYSIS_MANIFEST.json",
-    "sha256": "2176615739dd90cae0231a35198ebcbfa153db4f00a0877312b1b6b101fa0b59"
+    "path": "reports/player-context-completion-decision-01/B/paired-analysis-index-v1/ANALYSIS_MANIFEST.json",
+    "sha256": "ae8559499610a44e6e871b2dc7aecba94de4e6a58c006541bffb1bede22f16a8"
   },
-  "readable_checkpoint": "reports/player-context-acceptance-01/B/ACCEPTANCE_REPORT.md",
+  "readable_checkpoint": "reports/player-context-completion-decision-01/B/COMPLETION_AND_DECISIONS_REPORT.md",
   "software_verification_manifest": {
     "path": "reports/week8-grading-20261102l/software/SOFTWARE_VERIFICATION_MANIFEST_V1.json",
     "sha256": "fc322f84ca2d46d9d09038517498567203816ff59f730f557b07029104317db3"
@@ -44,8 +44,8 @@
     "sha256": "d940bf4d9a497fa2d31c4894e87a084daf423f2a43704f8c15914ea103dbf318"
   },
   "upcoming_capture_status": {
-    "path": "reports/player-context-acceptance-01/B/OWNER_CAPTURE_STATUS_V1.json",
-    "sha256": "9a44ff9237bacc2efc5d81be77304c637c453ef6eed9e155022f86cedd413c6a"
+    "path": "reports/player-context-completion-decision-01/B/owner-status/CURRENT_ELIGIBILITY_AND_FEED_STATUS_V1.json",
+    "sha256": "f9a53203a1712f668a9e92fa9e7bc809b563d5ec047bf3f806a2cec5d303421e"
   },
   "completion_source_vintages": "Authenticated GitHub source-retention clocks; current/revised football features and labels under disclosed availability reconstruction. These are separate from authenticated as-of NFL publication vintages. Quote, feature, training and decision clocks remain distinct.",
   "category_release_current_policy_status": {
@@ -344,6 +344,29 @@
     "package_verification": {
       "path": "reports/player-context-acceptance-01/B/PACKAGE_VERIFICATION_V1.json",
       "sha256": "1666bbd073c115270846275530f531354b5a16c10df1e6458ed7245860886efa"
+    }
+  },
+  "player_context_completion_decision": {
+    "report": {
+      "path": "reports/player-context-completion-decision-01/B/COMPLETION_AND_DECISIONS_REPORT.md",
+      "sha256": "8ea0f32eb66881d7466aa2e3b4e0a66dd571fa495e1ee6e939dd738a206ade36"
+    },
+    "protocol": "reports/player-context-completion-decision-01/B/depth-wave-v2/FROZEN_PROTOCOL.json",
+    "coverage_scope": {
+      "path": "reports/player-context-completion-decision-01/B/CURRENT_COVERAGE_SCOPE_V1.json",
+      "sha256": "07453e4c21373a0e3ce9237199253e70aadc40dedcd6bdb45977efe55353f176"
+    },
+    "scope": "Local2025full+2026W1-8numeric,QBcmp/attempts; W5-8actual-offerdiagnostics,4weeks. Not full12categorychampionship. Existingfixednative/default projection unchanged.",
+    "qualification": "Exact numerical duration assessed separately; allnewdirection/probability/TopKofferproducts lack fifth offeredweek, noneCadmittedorproductionpromoted.",
+    "profile_index": {
+      "path": "reports/player-context-completion-decision-01/B/profiles/PROFILE_INDEX_V1.json",
+      "sha256": "b8bcf3e4324382d3909bba75ab354a2d32f786b1e6416b6a75308eca91547025"
+    },
+    "C_peer_receipt": "dbf3170 scoped review of olderB source/f384 metadata; not newdepth admission",
+    "status": "DIRECTION_PROBABILITY_CLOSE_RECIPE_NO_GAIN;D2_NUMERICAL_INCONCLUSIVE;CURRENT_UNIVERSE_UNAVAILABLE",
+    "decisions": {
+      "path": "reports/player-context-completion-decision-01/B/COMPLETION_DECISIONS_V1.json",
+      "sha256": "240c3889d53c2ac028fe676591d2dc67978bfeed8438b3a0223d92106ade715d"
     }
   }
 }

@@ -1,0 +1,27 @@
+{
+  "schema_version": "B-QB-PROFILE-BINDING-AND-PARITY-v1",
+  "at_utc": "2026-11-10T04:52:50.629474+00:00",
+  "status": "PASS",
+  "profiles": 941,
+  "old_exposure_values_reused": 941,
+  "max_exposure_mean_difference": 0.0,
+  "exact_depth_describer_matches": 941,
+  "depth_support_widths": [
+    5
+  ],
+  "context_raw_completion_states": {
+    "OBSERVED_POSITIVE": 11851,
+    "UNDEFINED_ZERO_DENOMINATOR": 10638,
+    "KNOWN_ZERO": 1036
+  },
+  "new_fits": 0,
+  "new_scores": 0,
+  "new_NFL_observations": 0,
+  "limits": "This compares profile construction to the already accepted frozen feature path. It does not repeat raw source verification, create new game tests, authenticate current roster membership or establish predictive value.",
+  "code_bindings": {
+    "nfl_v2/qb_context_profiles.py": "00779875a279a9edb057c65ec2dc943ccb290322a9f7826741689b6c2e4e43c2",
+    "nfl_v2/qb_depth_catchability.py": "9494f1d7be9b67ddbaa824f9be2f44b4ae5d2f8bb3b2f2e15445ec7675fe9a82",
+    "reports/player-context-completion-decision-01/B/profiles/build_profiles_v1.py": "91e182945f7e2dbb9e2d9a7aba281b9735ae5975b7ca3e7e7b65a71dffa34e56",
+    "tests/test_qb_context_profiles.py": "631ba5a805bb4fd6e9f1027c7d2a8cd21d1ddf24a3d4f248b227f72b63b99641"
+  }
+}

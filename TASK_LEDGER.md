@@ -1,3 +1,22 @@
+# Current B completion decisions — November 10 UTC
+
+[Finite package and decisions](reports/player-context-completion-decision-01/B/COMPLETION_AND_DECISIONS_REPORT.md). Reused acceptance; executed one new depth-conditioned FTN value block with support controls and unchanged strong references. 26 origins, full 2025/2026 W1–8 numerical; actual offers remain four weeks W5–8, 112 completion offers, 56 games. Two unscored conditional pilot fits failed convergence and remain held; fixed numerical allowance converged all 52 eligible conditional fits. Four pilot fits plus 102 new fits were charged; valid direct pilot fits reused.
+
+| Owner / product | Decision and exact next action |
+|---|---|
+| B depth direction/probability | CLOSE_RECIPE_NO_GAIN: D2 49/112 vs D1 52, C2=C1 54/112; both lose adjusted 58/prevalence 59, every new Brier loses 0.25. Stop this recipe; no further offset, feature forcing or threshold search. |
+| B numerical D2 | INCONCLUSIVE: raw 5.5957/277 vs F2 5.6065, paired interval crosses zero; full-2025 loss to retained Leaf. Freeze numerical-only nominee; no additional fit search in this package. Qualified later owner-admitted comparison needs fresh source/query/model origin. |
+| B own-information comparator | Completed true own-history mean/median control using existing Series; no pool/other-player features or law. No-history unavailable; mean line ties abstain. Does not beat strong controls; retain as control, no primary replacement. |
+| B profiles | 941 available historical snapshots; 26 no-own-history cases retained. Software current-query adapter validated; authentic supplied current universe/capture remains unavailable. No profile alone qualifies a forecast. |
+| A source owner | Execute prepared B ATT W1–4 owner-local join; reconcile Week 5 overlap. Earlier CMP lines are separate. Existing A seven-week C reception replay is executed; add strongest retained A and permitted B learned contenders on exact 733/667 panel, then supported W8/history. |
+| C coordinator/reviewer | Record actual A02d4988 and new B export receipt/admission. Cdbf317 scoped older-B review exists; does not automatically admit newer B wave. Preserve C point-direction seven weeks versus probability two weeks and private verification limits. |
+| B next ordered mechanisms | QB-stint/dropback/opportunity; then qualified depth/drop/contested extensions. They are NOT_EXECUTED in this one-mechanism package, not disproved. New 2022–24 exact cells need genuinely earlier configuration/startup qualification; 2024-tuned settings cannot be called earlier-only there. |
+| A/C owners | A conditional rushing efficiency and C alignment/all-route/source/lookback/query tasks remain with their owners. No duplicate B fits or source collection. |
+| Existing producer/site owner | Visible board has zero future kickoffs at refreshed clock; registered latest public research feed is expired. Qualify next board/source cutoff, complete approved producer/corrector, publish unexpired same-week feed, verify consumer/served use. No B dispatch. |
+| B legacy recovery | Last verified 38 missing parts / 796,917,760 bytes; 147 strict-HGB origins and 736 older exact defense D1/D2 output cells remain dependent on missing-only recovery. New depth D1/D2 names are separate namespaced procedures and do not fill those cells. |
+
+Original scores, snapshots, source bytes, negative experiments and older ledger states remain. Current/source clock validity, five-week exact-product floor and normal owner admission remain; no blanket future wait or 90% release condition is added.
+
 # Current player-context acceptance — November 10 UTC
 
 The bounded acceptance package is executed; the full context/championship scope remains partial. [Report](reports/player-context-acceptance-01/B/ACCEPTANCE_REPORT.md) and [requirement-to-execution states](reports/player-context-acceptance-01/B/REQUIREMENT_TO_EXECUTION_V1.json) distinguish implementation, reproducibility, scope completion and predictive gain. All original scores, losses, source bytes, failures and recovery gates remain unchanged.

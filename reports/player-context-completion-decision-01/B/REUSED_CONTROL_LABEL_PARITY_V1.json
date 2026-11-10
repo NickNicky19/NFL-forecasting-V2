@@ -1,0 +1,19 @@
+{
+  "state": "PASS_EXACT_RETAINED_POINT_LABEL_PARITY",
+  "new_source": "Samepublic2025/2026QBinputs as accepted basewave; new depthoutput actuals unchanged.",
+  "old_sources": [
+    {
+      "sha256": "fcc0f566a624c29d73424e3bbef0f78537a90b2e6761dd9e95bfb31d3bdf9d96",
+      "bytes": 104753878
+    },
+    {
+      "sha256": "8850d4beea01033e033978637de3e2b68142eb842bd75ec49b394e31d0d55cba",
+      "bytes": 24503190
+    }
+  ],
+  "matched_output_rows_by_procedure": {
+    "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory": 1812,
+    "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory": 1328
+  },
+  "claim": "Each numerical paired point comparator uses identical player/game/target/actual, not a different label version. Reuse of old valid predictions; no refit/regrade/newNFLobservations."
+}

@@ -19,6 +19,14 @@ class DepthCatchabilityTest(unittest.TestCase):
         self.assertEqual(d['baseline'][1],.5)
         self.assertEqual(d['support'][1][-2:],[1.,1.])
 
+    def test_unknown_raw_safety_flag_is_not_known_zero(self):
+        from tools.prepare_qb_depth_charting_v2 import eligible_attempt
+        row=dict(pass_attempt='1',sack='0',two_point_attempt='0',play_deleted='0')
+        self.assertTrue(eligible_attempt(row))
+        self.assertFalse(eligible_attempt(dict(row,play_deleted='')))
+        self.assertFalse(eligible_attempt(dict(row,play_deleted='nan')))
+        self.assertFalse(eligible_attempt(dict(row,play_deleted='1')))
+
     def test_future_source_and_target_labels_cannot_change_profile(self):
         a=DepthHistory([self.past],[self.chart]).describe(self.query)
         future=dict(self.past,game_id='future',available=30,kickoff=21)

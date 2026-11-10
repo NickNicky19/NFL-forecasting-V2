@@ -1,0 +1,63 @@
+{
+  "schema_version": "B-COMPLETION-DELIVERY-RECEIPT-v1",
+  "at_utc": "2026-11-10T06:07:44.294911+00:00",
+  "scientific_payload_commit": "c17d85657932090e1b493e0c10c97696853ae9d9",
+  "scientific_objects_verified": 287,
+  "scientific_bytes_verified": 24679020,
+  "presentation_commit": "aa71790c61461ef9d5bf364a13835fd68069507f",
+  "presentation_rows": [
+    {
+      "path": "reports/player-context-completion-decision-01/B/ALL_DIRECTION_POLICY_TABLES_V1.md",
+      "sha256": "1e87911ae4e14403d566c7a76234b6987cddad383fa61da88ad29f81a677d2fe",
+      "bytes": 30899,
+      "producer_commit": "aa71790c61461ef9d5bf364a13835fd68069507f",
+      "readback": "PASS_EXACT_IMMUTABLE_BYTES",
+      "role": "PRESENTATION_AND_READBACK_NO_NEW_NFL_GRADES"
+    },
+    {
+      "path": "reports/player-context-completion-decision-01/B/ALL_TOP_K_TABLES_V1.md",
+      "sha256": "e372e07f46771b0ffcc2b6386583a0fbd2ee12001fb5d09816471c4b45a13304",
+      "bytes": 17296,
+      "producer_commit": "aa71790c61461ef9d5bf364a13835fd68069507f",
+      "readback": "PASS_EXACT_IMMUTABLE_BYTES",
+      "role": "PRESENTATION_AND_READBACK_NO_NEW_NFL_GRADES"
+    },
+    {
+      "path": "reports/player-context-completion-decision-01/B/PER_PLAYER_COMPARISON_SUMMARY_V1.json",
+      "sha256": "6b1e288ba81692c45d64edccca4f488f8567407b6299fcb667e5cb230bf5285b",
+      "bytes": 4682,
+      "producer_commit": "aa71790c61461ef9d5bf364a13835fd68069507f",
+      "readback": "PASS_EXACT_IMMUTABLE_BYTES",
+      "role": "PRESENTATION_AND_READBACK_NO_NEW_NFL_GRADES"
+    },
+    {
+      "path": "reports/player-context-completion-decision-01/B/PER_PLAYER_COMPARISON_SUMMARY_V1.md",
+      "sha256": "cea4167435063aef5585637e57e3db87a7a89a59ccfb97ed65b184853b3dd0e9",
+      "bytes": 1191,
+      "producer_commit": "aa71790c61461ef9d5bf364a13835fd68069507f",
+      "readback": "PASS_EXACT_IMMUTABLE_BYTES",
+      "role": "PRESENTATION_AND_READBACK_NO_NEW_NFL_GRADES"
+    },
+    {
+      "path": "reports/player-context-completion-decision-01/B/PUBLICATION_READBACK_V1.json",
+      "sha256": "f9709b860a46d4f5b7606dff5596ee1114d399d3ca6e9459ab512f1510a9a084",
+      "bytes": 113879,
+      "producer_commit": "aa71790c61461ef9d5bf364a13835fd68069507f",
+      "readback": "PASS_EXACT_IMMUTABLE_BYTES",
+      "role": "PRESENTATION_AND_READBACK_NO_NEW_NFL_GRADES"
+    },
+    {
+      "path": "tools/render_qb_depth_tables.py",
+      "sha256": "7fabe313ce154f64c379b3ff9944e971146d12fad69a51d34e2193a75e1d7bf9",
+      "bytes": 5454,
+      "producer_commit": "aa71790c61461ef9d5bf364a13835fd68069507f",
+      "readback": "PASS_EXACT_IMMUTABLE_BYTES",
+      "role": "PRESENTATION_AND_READBACK_NO_NEW_NFL_GRADES"
+    }
+  ],
+  "state": "PUBLISHED_FOR_C_INTAKE;NOT_ACKNOWLEDGED_OR_ADMITTED",
+  "C_peer_scope": "Actual dbf317 review of olderB exists; newcompletionwave and neweracceptance notautomaticallycovered.",
+  "current_query_captures": 0,
+  "original_site_changes": 0,
+  "source": "No new raw-source backup/private-row transfer claim."
+}

@@ -333,3 +333,8 @@ OwnerstatusupdateNov5: independentreadyoperationcontinued. Existingownerupdater4
 - Closed F2 learned/fallback decomposition, failed confidence recipes and four-season carry-repair losses reused without refits. C finite-helper repair bound/zero canonical transitions; new27query freshness shadow read back, nooffers/selections, pending.
 - Global recovery remains38parts/796917760B;147originalstrictHGBorigins/736olderD1D2cells queued. No unchanged upload retry or newlargefitbacklog.476unit tests, checkpoint/result/paired/prop checks PASS; interrupted read-only check attempts retained before sequential rerun.
 - Evidence and resumable owners: [B audit report](reports/audit-remediation-20261105-v1/B/B_AUDIT_REMEDIATION_REPORT.md), existing export index and current permanent results pointer. No scientific score correction or production model promotion inferred from a safety fix.
+
+
+## PROFILE-INCREMENT-TO-RELEASE-01 v2 — B finite continuation
+
+B reuses closed catchability/calibration/context work, exact E3 R0, and all prior loss/fit receipts. One new fixed Leaf-CDF completion-family information ablation adds QB/team opportunity and passing-defense blocks at26 chronological origins; three populations and conditional historical role limitation remain separate. Source/profile V1 semantic boundary found before fitting: credited attempts outside provider dropback; V2 preserves conditional numerator and known-flag denominators. Source/profile/fitting budgets and pilot-before-broad GitHub readback bound in the new package. A rushing5state recovery stays A-owned; refreshed A reception/ATT joins completed; website owner retains one changed-selector replay. New scores/products remain local until scoped C intake and consumer admission.

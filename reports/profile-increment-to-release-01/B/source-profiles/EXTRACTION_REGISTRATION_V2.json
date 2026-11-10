@@ -1,0 +1,103 @@
+{
+  "assignment": "PROFILE-INCREMENT-TO-RELEASE-01-v2",
+  "component": "B-PASSING-OPPORTUNITY-DEFENSE-PROFILES-v2",
+  "state": "REGISTERED_BEFORE_SCOPED_V2_REEXTRACTION",
+  "registered_at_utc": "2026-11-10T11:43:55.990770+00:00",
+  "owner": "B",
+  "existing_source_contract": "Retained source-v1 PBP 2022-2026, hashes from source-qualification-v1; accepted QB game/clock identities from source-fields-v3. No acquisition.",
+  "information_policy": "CURRENT_REVISED_SOURCE_SEVEN_DAY_RECONSTRUCTION; available=kickoff+604800 and available<query cutoff; order admitted history by kickoff then game_id.",
+  "population": "Historical QB statistical query universe; not authenticated pregame starter. Team defense summaries use all supported source offensive opportunities, not priority players.",
+  "query_periods": [
+    {
+      "season": 2025,
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "season": 2026,
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "windows": {
+    "own_QB_games": 8,
+    "team_games": 16,
+    "defense_games": 16,
+    "league_prior": "all earlier eligible supported games since2022"
+  },
+  "coarse_bins": {
+    "down": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "UNKNOWN"
+    ],
+    "distance": [
+      "0_TO_3",
+      "4_TO_6",
+      "7_TO_10",
+      "11_PLUS",
+      "UNKNOWN"
+    ],
+    "field": [
+      "OWN_0_TO_LT20",
+      "OWN20_TO_MIDFIELD",
+      "OPP_HALF_OUTSIDE_REDZONE",
+      "REDZONE",
+      "UNKNOWN"
+    ]
+  },
+  "shrinkage": {
+    "rates_pseudo_opportunities": 100,
+    "game_volume_pseudo_games": 4,
+    "prior": "Earlier league aggregate only; unsupported prior remains null"
+  },
+  "fitting": 0,
+  "scoring": 0,
+  "source_passes_per_season": 2,
+  "budget": {
+    "wall_seconds": 600,
+    "cpu_seconds": 450,
+    "max_RSS_bytes": 1073741824,
+    "public_retention_bytes": 25165824,
+    "max_source_rows": 2000000
+  },
+  "non_goals": [
+    "No charted catchability rerun",
+    "No new models or forecasts",
+    "No target realized context at query",
+    "No authenticated historical source claim",
+    "No production release or primary qualification"
+  ],
+  "new_information": "QB/team passing opportunity decomposition and team-defense raw/shrunk opportunity/conversion profiles; existing depth/annotation profiles stay unchanged.",
+  "parent_registration_sha256": "e4102161bb780c953047fb9e63dfbf64702d8095463cfce8457ddac7b730031b",
+  "reason": "V1 retained 325 credited attempts outside provider dropback. V2 explicitly counts attempts-on-dropback and known-flag denominators; V1 preserved and no V1 fits/scoring occurred.",
+  "remaining_budget_note": "One additional source pass within original cumulative 600s wall/450s CPU/24MiB retention; V1 consumed37.50s/37.42CPU/5.75MiB. No new source collection or fit."
+}

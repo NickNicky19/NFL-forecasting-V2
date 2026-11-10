@@ -36,7 +36,8 @@ def main(directory, *, native_receipt='NATIVE_EVENT_RECEIPT.json', registration=
         if digest(model) != original['model_sha256'] or datetime.fromisoformat(read(model)['fit_completed_utc']).timestamp() > at:
             raise ValueError('Current model changed or not yet available')
         row = dict(original, actual_issued_UTC=now.isoformat(),
-            original_pregame_forecast=True, original_website_selection=False,
+            original_pregame_forecast='mean' in original,
+            basic_unavailable_record='mean' not in original, original_website_selection=False,
             issue_scope='B_OWNER_RESEARCH_SHADOW_CONDITIONAL_APPEARANCE;NO_OFFER_OR_PICK',
             prepared_record_sha256=hashlib.sha256(json.dumps(original, sort_keys=True, allow_nan=False).encode()).hexdigest())
         if 'mean' in row:

@@ -1,0 +1,50 @@
+{
+  "id": "B-TIMING-CLOSURE-EXACT-PEER-RECEIPTS-v2",
+  "at_UTC": "2026-11-10T23:17:18Z",
+  "A": {
+    "latest_research_HEAD": "bad756e2bbeb43b69799101a8c6558f515a8b8bb",
+    "completed_join_commit": "375caf0f9b51e39e7df553421fa27ded8701d428",
+    "main": "f37279a093fcdddece1e369d42ce54349cb1913c",
+    "lab_state": "275aa84b27c4239d3b2dfea07755734d9db0ac7c",
+    "export_index": {
+      "bytes": 39817,
+      "sha256": "e3d251a960f09a375fc5ffd1cefc5f6c91aa4bbbe655fa7e594deaa2370b274e"
+    },
+    "closure_report": {
+      "bytes": 28270,
+      "sha256": "172647dbf757c37a8364be8fe54cac7a383b0b5c715cb7b7d578f2ac58d07a24"
+    },
+    "old_R0_R3_CMP_and_C03": "COMPLETED_RECEIVED_PUBLIC_ARITHMETIC_VERIFIED",
+    "new_B_F2_F3_and_C04": "NO_NEW_ACKNOWLEDGMENT_OR_EXECUTED_JOIN_IN_INSPECTED_INDEX_REPORT",
+    "scope": "One bounded final refresh; no unchanged-route polling; no private-row access"
+  },
+  "B": {
+    "discovery_commit": "b616b0073a26cb95011df9c53b86ae0693437f15",
+    "scientific_timing_output_commit": "e18841ba20941fdf4cea2ee80b0d4724eeaddd3f",
+    "exact_handoff": "A-receipts/NEW_B_TIMING_HANDOFF_V1.json",
+    "F0_F1": "OUTPUT_PRESERVING_ALIAS_REUSE_OF_R0_R2_SAME_PRODUCTS;NOT_NEW_FITS",
+    "F2_F3": "CHANGED_48H_EXACT_PROCEDURE_REQUIRES_OWN_JOIN"
+  },
+  "C": {
+    "ref": "d3d1ef4dc60826334234cfa1a1b8e373b2ee024e",
+    "protocol_id": "ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1",
+    "protocol_sha256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1",
+    "scorer_sha256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce",
+    "C04": {
+      "path": "reports/profile-closure-next-02/timing/POINT_HANDOFF.json.xz",
+      "bytes": 234104,
+      "sha256": "4fd67d7915f9da3df9bec152155e809eb34d60f89d3ea751e26da9eb0a5c8abc",
+      "git_blob": "db746a7da68b7dfdaabbd891bec1db2af384bdec",
+      "actual_compressed_readback": "PASS_CONNECTOR_ENCODING_BASE64",
+      "decoded_schema": "NOT_CHECKED_XZ_DECODER_UNAVAILABLE_AFTER_RUNTIME_LOSS",
+      "manifest_reported_queries": 4811,
+      "manifest_reported_typed_points": 38488,
+      "point_only": true,
+      "no_probability_inferred": true
+    },
+    "admission_of_new_B_package": "NOT_VERIFIED"
+  },
+  "new_historical_fits": 0,
+  "new_owner_local_joins": 0,
+  "new_scored_NFL_weeks": 0
+}

@@ -1,3 +1,11 @@
+# Current B timing closure — November 10 UTC
+
+[Executed receipt/capture/decision checkpoint](reports/profile-timing-closure-confirm-01/B/TIMING_CLOSURE_CHECKPOINT_V1.md). Exact old A R0–R3 CMP/C03 joins received and public arithmetic checked; new F2/F3/C04 joins remain A-owned, with saved-output bindings available. F0/F1 output-preserving aliases may reuse five-week witnesses; changed F2/F3 cannot. No historical timing refit or new lag/offset/gate search.
+
+New genuine current-origin B shadow: two unchanged F0/F2 fits, 941/945 labels, ten forecasts for five conditional current-known QBs plus six basic unavailable records; issued 23:01:29UTC, c3199e20 immutable/readback verified. Zero offers/picks/grades. Original packet retained; output-preserving metadataV2 corrects six basic-record flags. Thirteen recent games held, including targetteamsW9. Current C75 stillfuture; site1610 preserved/new1614 baseline staticassets verified, overlaydisabled. CountA/currentproducer and exact changedTopPicks remain their retained owners. Runtime loss stopped local work after535testsPASS; GitHubconnector preserved recovery/corrections/report without refits; c319 CI bothsuccess. No originalwebsite write/release.
+
+---
+
 # Current B completion decisions — November 10 UTC
 
 [Finite package and decisions](reports/player-context-completion-decision-01/B/COMPLETION_AND_DECISIONS_REPORT.md). Reused acceptance; executed one new depth-conditioned FTN value block with support controls and unchanged strong references. 26 origins, full 2025/2026 W1–8 numerical; actual offers remain four weeks W5–8, 112 completion offers, 56 games. Two unscored conditional pilot fits failed convergence and remain held; fixed numerical allowance converged all 52 eligible conditional fits. Four pilot fits plus 102 new fits were charged; valid direct pilot fits reused.

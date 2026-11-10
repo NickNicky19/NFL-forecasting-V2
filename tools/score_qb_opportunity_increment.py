@@ -60,7 +60,7 @@ def main():
     for(season,method),rr in sorted(by.items()):
         proc=rr[0]['procedure_id']
         windows=[('ALL',rr),('W1_4',[r for r in rr if r['week']<=4]),('W5_PLUS',[r for r in rr if r['week']>=5]),('W1_8',[r for r in rr if r['week']<=8])]+[(w,[r for r in rr if r['week']==w])for w in sorted({r['week']for r in rr})]
-        windows += [('PRIORITY_PROXY',[r for r in rr if r['profile_priority']['member']]),('BASIC_NONPRIORITY',[r for r in rr if not r['profile_priority']['member']])]
+        windows += [('PRIORITY_PROXY',[r for r in rr if r['profile_priority']['member']]),('BASIC_NONPRIORITY',[r for r in rr if not r['profile_priority']['member']]),('NO_OWN_HISTORY_SHARED_MODEL',[r for r in rr if not r['own_prior_games']]),('OWN_HISTORY_PRESENT',[r for r in rr if r['own_prior_games']])]
         if season==2026:windows += [('MATCHED_OFFERS_W5_W8',[r for r in rr if s.key(r)in keys]),('COVERED_GAMES_W5_W8',[r for r in rr if r['game_id']in games])]
         for window,sub in windows:
             for product in('mean','lower_median'):
@@ -110,7 +110,7 @@ def main():
                 gg.append(dict(r,source_row_index=i,selected_side=sd,statistical_state=state,settlement_state='UNRESOLVED_CONTRACT',net_return=None,strategy=policy,ranking_point=point,technical_unavailable=unavailable,probs=probs,fallback=fallback,pregame_role_band=pred['pregame_role_band']if pred else'CONTROL_SCOPE',source_cohorts=[],forecast_method=method))
             grades[method,policy]=gg
             proc=next(r['procedure_id']for r in rows if r['method']==method)if method in NEW else'B-OWN-INFORMATION-EMPIRICAL8-v1'if method=='OWN8'else method
-            for window,sub in [('ALL',gg),('PRIORITY_PROXY',[r for r in gg if inc.priority(qmap[r['game_id'],r['player_id']],history)['member']]),('BASIC_NONPRIORITY',[r for r in gg if not inc.priority(qmap[r['game_id'],r['player_id']],history)['member']])]+[(w,[r for r in gg if r['week']==w])for w in range(5,9)]:
+            for window,sub in [('ALL',gg),('PRIORITY_PROXY',[r for r in gg if inc.priority(qmap[r['game_id'],r['player_id']],history)['member']]),('BASIC_NONPRIORITY',[r for r in gg if not inc.priority(qmap[r['game_id'],r['player_id']],history)['member']])]+[("ROLE:"+band,[r for r in gg if indexed.get((method,s.key(r)),{}).get('pregame_role_band')==band])for band in('NO_PRIOR','LOW_<10','MID_10_25','HIGH_25_PLUS')]+[(w,[r for r in gg if r['week']==w])for w in range(5,9)]:
                 vv=summary(sub,2026,window,proc,policy,'pass_cmp')
                 tables.append(dict(method=proc,policy=policy,window=window,sides=[dict(side=v['side'],metrics=v['selection_metrics'])for v in vv],probability=s.probability_stats(sub),games=len({r['game_id']for r in sub})))
                 if method in NEW:

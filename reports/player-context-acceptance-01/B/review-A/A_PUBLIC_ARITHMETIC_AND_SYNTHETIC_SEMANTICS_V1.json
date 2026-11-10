@@ -1,0 +1,117 @@
+{
+  "state": "PASS_CHECKED_PUBLIC_ARITHMETIC_AND_SYNTHETIC_SOURCE_CONTRACT",
+  "at_utc": "2026-11-10T00:42:02.534391+00:00",
+  "A_ref": "846b90ee032812306034f90e397e38dec7cebe99",
+  "new_fits": 0,
+  "new_NFL_grades": 0,
+  "new_raw_feed_downloads": 0,
+  "author_scorer_invocations": 0,
+  "unsafe_model_loads": 0,
+  "aggregate_files_restored": [
+    {
+      "path": "SUMMARY_V1.json.gz",
+      "stored_bytes": 3644,
+      "expanded_bytes": 19739,
+      "sha256": "473175f103f772de1ab2df85d56c673fa40e57677d5dc84ab351491679d48ed7"
+    },
+    {
+      "path": "SOURCE_PANEL_RESULTS_V1.json.gz",
+      "stored_bytes": 6946,
+      "expanded_bytes": 92866,
+      "sha256": "c587a7012f2b849ef6b445abd8756bb5f5faaf157389b171c87ec45b3e0ed42e"
+    },
+    {
+      "path": "PAIRED_COMPARISONS_V1.json.gz",
+      "stored_bytes": 2015,
+      "expanded_bytes": 12650,
+      "sha256": "4c26027add9a5975ba3c6979ef8e0c4df188c9f43bb24a0f16543ef8c3c5c686"
+    },
+    {
+      "path": "completion-v4/NUMERICAL_RESULTS_V1.json.gz",
+      "stored_bytes": 8144,
+      "expanded_bytes": 74821,
+      "sha256": "e8f047766068d1ab0c9f309fc4b2656f3ff1d101b5eda6bb22c23b56d24906b0"
+    },
+    {
+      "path": "completion-v4/ACTUAL_LINE_RESULTS_V1.json.gz",
+      "stored_bytes": 18162,
+      "expanded_bytes": 312408,
+      "sha256": "baef872764842a80e63a195463ef1763190c660f09e31e0aa42fc6b4d8fe2ed6"
+    }
+  ],
+  "selection_views_checked": 304,
+  "source_panel_views_checked": 114,
+  "side_partitions_checked": 1254,
+  "native_metric_views_checked": 144,
+  "weekly_policy_groups": 38,
+  "population": {
+    "numerical_query": 1244,
+    "numerical_scored": 586,
+    "numerical_unknown": 658,
+    "offer_eligible": 239,
+    "offer_decided": 231,
+    "offer_unknown": 8
+  },
+  "strong_control": {
+    "partial_pool_wins": 119,
+    "always_Over_wins": 122,
+    "decided": 231,
+    "delta_wins": -3,
+    "delta_pp": -1.2987012987012987
+  },
+  "synthetic_source_contract": {
+    "raw_plays": 21,
+    "source_games": 3,
+    "credited_carries": 12,
+    "recognized_offensive_opportunities": 18,
+    "known_zero_appearances": 3,
+    "unknown_appearances_added_as_zero": 0,
+    "team_run_probability": 0.6666666666666666,
+    "team_run_down1": 0.5,
+    "player_given_run_down1": 1.0,
+    "future_mutation": "UNCHANGED",
+    "upcoming_query_without_outcome": "PASS",
+    "no_play_pass_contract": "An official-stat-credited no_play pass is outside A explicit convenience denominator; not demonstrated on actual A NFL rows."
+  },
+  "interaction_worked_example": {
+    "kind": "SYNTHETIC_CODE_PATH_NOT_NFL_OBSERVATION",
+    "down_residual": [
+      -0.011552028218694879,
+      -0.011552028218694879,
+      0.03426691153963882,
+      0.03426691153963882
+    ],
+    "location_residual": [
+      0.029660154660154654,
+      -0.02966015466015466,
+      0.0,
+      0.0
+    ],
+    "player_mix": {
+      "f_pcm_location_left": 0.4375,
+      "f_pcm_location_middle": 0.0625,
+      "f_pcm_location_right": 0.0625,
+      "f_pcm_location_UNKNOWN": 0.4375,
+      "f_pcm_down_1": 0.4147727272727273,
+      "f_pcm_down_2": 0.4147727272727273,
+      "f_pcm_down_3": 0.05681818181818182,
+      "f_pcm_down_4": 0.05681818181818182,
+      "f_pcm_down_UNKNOWN": 0.05681818181818182
+    },
+    "down_interactions": [
+      -0.004791466249799581,
+      -0.004791466249799581,
+      0.0019469836102067512,
+      0.0019469836102067512
+    ],
+    "location_interactions": [
+      0.012976317663817662,
+      -0.0018537596662596663,
+      0.0,
+      0.0
+    ],
+    "collapse": "NO: distinct context-specific residual vectors kept as separate regressors; no identical-scalar weighted-sum claim."
+  },
+  "raw_NFL_feature_reproduction": "UNKNOWN_EXACT_A_RAW_BYTES_NOT_ACCESSIBLE; Bcachedcurrentversions differ, not substituted.",
+  "inference_and_fresh_fit": "UNKNOWN_A_MODELS_AND_QUERY_ROWS_NOT_TRANSFERRED; priorAownerlocal arithmetic receipt reused only for its stated scope."
+}

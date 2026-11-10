@@ -1,0 +1,36 @@
+{
+  "state": "PASS_OPT_IN_NAMED_LEAF_GUARD_WITH_SCOPED_CALLER_REQUIREMENTS",
+  "at_utc": "2026-11-10T00:47:06.975069+00:00",
+  "adapter_version": "B-QB-NAMED-LEAF-ADAPTER-v3",
+  "adapter_source_sha256": "5ac8e4cafb6109228ef3d3e158a7f75b684df222c2f0425bea50998f3340addf",
+  "schema_sha256": "5cef3c17ec403444e3faa9ec42a2e28e223e8cb3892873a5076d59b3471a8adf",
+  "receipt_sha256": "26b610c2a18849953bf19604d334eaca7a33e496774c01dc54e877a16d950554",
+  "prior_parameter_sha256": "5687098546040ae8a41cb064f1adc0f3304e668b6636d41cb623c21e9fa17ead",
+  "queries": 34,
+  "single_batch_reverse_identity_parity": true,
+  "maximum_mean_roundoff": 0,
+  "guards_rejected": [
+    "same_width_wrong_feature_name_order",
+    "wrong_schema_hash",
+    "wrong_receipt_hash",
+    "wrong_prior_parameter_hash",
+    "wrong_geometric_prior",
+    "unsupported_mixture_prior_even_with_matching_parameter_hash",
+    "wrong_arm",
+    "duplicate_query_id",
+    "empty_query_id",
+    "infinite_input_not_unknown"
+  ],
+  "explicit_unknown_uses_fitted_imputer": true,
+  "new_NFL_fits": 0,
+  "synthetic_fits": 0,
+  "new_forecasts": 0,
+  "changed_saved_NFL_rows": 0,
+  "old_consumer_unchanged": true,
+  "limits": [
+    "Opt-inE0-E3leaf consumer guard; no FTN named schema or GLM change.",
+    "Exactgeometricprioridentity is hash-bound; its eligibility/origin still follows the separately bound earlier-source contract.",
+    "Query-model temporal/horizon contract remains external because this wrapper does not receive source/decision clocks.",
+    "Names protect declared column order; they cannot prove a caller attached truthful numerical values to those names."
+  ]
+}

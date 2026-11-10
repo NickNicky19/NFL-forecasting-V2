@@ -1,7 +1,7 @@
 {
   "schema": "v2-current-public-index-pointer-v2",
-  "manifest": "reports/player-context-matchup-01/B/results-index-v1/INDEX_MANIFEST.json",
-  "previous_checkpoint": "reports/audit-remediation-20261105-v1/B/results-index-v1/INDEX_MANIFEST.json",
+  "manifest": "reports/player-context-acceptance-01/B/results-index-v2/INDEX_MANIFEST.json",
+  "previous_checkpoint": "reports/player-context-matchup-01/B/results-index-v1/INDEX_MANIFEST.json",
   "previous_unchanged": true,
   "manifest_role": "ALL_AUDIT_IMMUTABLE_BACKWARD_COMPATIBLE",
   "default_view": "CURRENT_CANONICAL_SCORE_VERSIONS_WITH_SCOPED_RECOMMENDATION_HOLDS",
@@ -21,7 +21,7 @@
     "path": "reports/player-context-matchup-01/B/paired-analysis-index-v2/ANALYSIS_MANIFEST.json",
     "sha256": "2176615739dd90cae0231a35198ebcbfa153db4f00a0877312b1b6b101fa0b59"
   },
-  "readable_checkpoint": "reports/player-context-matchup-01/B/B_PLAYER_CONTEXT_MATCHUP_REPORT.md",
+  "readable_checkpoint": "reports/player-context-acceptance-01/B/ACCEPTANCE_REPORT.md",
   "software_verification_manifest": {
     "path": "reports/week8-grading-20261102l/software/SOFTWARE_VERIFICATION_MANIFEST_V1.json",
     "sha256": "fc322f84ca2d46d9d09038517498567203816ff59f730f557b07029104317db3"
@@ -44,8 +44,8 @@
     "sha256": "d940bf4d9a497fa2d31c4894e87a084daf423f2a43704f8c15914ea103dbf318"
   },
   "upcoming_capture_status": {
-    "path": "reports/audit-remediation-20261105-v1/B/OWNER_PRESENCE_SAFE_PACKET_READBACK_V1.json",
-    "sha256": "4c5a9cfc6d3528e754a421ce76a829601d77d39542993192efcd71f2ed4a6779"
+    "path": "reports/player-context-acceptance-01/B/OWNER_CAPTURE_STATUS_V1.json",
+    "sha256": "9a44ff9237bacc2efc5d81be77304c637c453ef6eed9e155022f86cedd413c6a"
   },
   "completion_source_vintages": "Authenticated GitHub source-retention clocks; current/revised football features and labels under disclosed availability reconstruction. These are separate from authenticated as-of NFL publication vintages. Quote, feature, training and decision clocks remain distinct.",
   "category_release_current_policy_status": {
@@ -321,6 +321,29 @@
       "sha256": "a957537d8f9cae64871ee2b23b19d19bc44fa30e2700460b4de1a33d8688e1ed",
       "reader": "nfl_v2/context_scope_metadata.py:qualified_rows",
       "raw_field_deprecated": "technical_unavailable on subsetnative/rightwrongrows meansoutside_reported_scope; not failedinference. Current source-boundmetadata mandatory; allscoredcountsunchanged."
+    }
+  },
+  "player_context_acceptance": {
+    "state": "B_LOCAL_VERIFIED;B_REVIEW_OF_A_LIMITED_BY_PRIVATE_ARTIFACTS;C_PEER_REVIEW_NOT_OBSERVED",
+    "report": {
+      "path": "reports/player-context-acceptance-01/B/ACCEPTANCE_REPORT.md",
+      "sha256": "422e51481182d5553c181f134a8e2e55e323f20a6df063f09d5f1872a4018adb"
+    },
+    "receipt": {
+      "path": "reports/player-context-acceptance-01/B/ACCEPTANCE_RECEIPT_V1.json",
+      "sha256": "4857c96ad2a988358463ef8590148ffcc98059baa68b0ad1f73a027b97eb9935"
+    },
+    "diagnostic_scope_overlay": {
+      "path": "reports/player-context-acceptance-01/B/NUMERICAL_DIAGNOSTIC_SCOPE_OVERLAY_V1.json",
+      "sha256": "4f6f03a525f6f14be33111d97a5b2b49ef9954ddd55acb16f4bd8a11fd207d69"
+    },
+    "new_score_views": 8,
+    "new_original_forecasts": 0,
+    "new_actual_offer_weeks": 0,
+    "default_rank_change": false,
+    "package_verification": {
+      "path": "reports/player-context-acceptance-01/B/PACKAGE_VERIFICATION_V1.json",
+      "sha256": "1666bbd073c115270846275530f531354b5a16c10df1e6458ed7245860886efa"
     }
   }
 }

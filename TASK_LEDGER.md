@@ -1,3 +1,20 @@
+# Current player-context acceptance — November 10 UTC
+
+The bounded acceptance package is executed; the full context/championship scope remains partial. [Report](reports/player-context-acceptance-01/B/ACCEPTANCE_REPORT.md) and [requirement-to-execution states](reports/player-context-acceptance-01/B/REQUIREMENT_TO_EXECUTION_V1.json) distinguish implementation, reproducibility, scope completion and predictive gain. All original scores, losses, source bytes, failures and recovery gates remain unchanged.
+
+| Owner | Exact next action / dependency |
+|---|---|
+| C reviewer/intake | Read B's immutable acceptance export; independently review B under the established cycle, record actual receipt/admission and consolidate A–F judgments. B internal independent checks are not C acceptance. |
+| A raw/model owner | Complete owner-local raw/fitted verification for A's exact 846b90 recipe. B verified public arithmetic and synthetic feature semantics, not inaccessible raw/model bytes. Compute numerical error on the actual offered subset. |
+| A source owner; B output owner | Execute the existing restricted A W1–4 passing-attempt board against B public retained forecasts under the bound handoff. No raw transfer is assumed; no fifth offered week counts until qualified scoring exists. Earlier completion-line inventory is separately unresolved. |
+| Retained document owner | Supply the existing exact PLAYER-CONTEXT-MATCHUP-01 TXT through an approved route; expected SHA 50c264d8f5c55966c05fbb87a19c9ebd4019e2f4484eb534fe210986e8ab1522 is not byte-verified from normalized adoptions. |
+| B next distinct context package | Full team/QB-stint opportunity/game-context prediction, depth-conditioned charting and an entirely own-information comparator remain unexecuted/partial. Do not rerun the closed fixed-learner experiment or search offsets/gates on exposed outcomes. |
+| C source owner | Qualify true alignment/all-route denominators and separation context; A owns independent review of C. Known zero-target ratio coarsening is distinct from source missingness and has no measured accuracy cost here. |
+| Existing capture/site owner | The Nov9 23:22:50 UTC reference packet has 120 forecasts for one future game; six Git/served pairs match. Top list has two current-capture entries plus 22 earlier frozen proofs, not 24 new recommendations. B's forward-only nominee handoff is prepared, not admitted/captured; do not backfill November8. |
+| B legacy recovery | Last verified 38 missing parts / 796,917,760 bytes. Governed 147 strict-HGB origins and 736 older exact D1/D2 output cells still require missing-only restoration and verified recovery. This does not block saved-row grading. |
+
+Two NFL verification fits and two synthetic positive-control fits are verification costs, not new forecasts or weeks. Eight new numerical population views reuse saved predictions; no original forecast, offered-line grade or primary-product qualification changed. The named-input consumer guard is opt-in and output-preserving; source/cutoff/model-origin admission remains external. No production, scheduler, lease or cross-repository write occurred.
+
 # Current B context wave — PLAYER-CONTEXT-MATCHUP-01 v1, November7
 
 [Executed comparisons and category tables](reports/player-context-matchup-01/B/B_PLAYER_CONTEXT_MATCHUP_REPORT.md). Completed all registered2025REGW1–18/2026W1–8 origins:9completion recipes+1sharedattemptlaw,941QB-player-games each,945optimizerfits including48earlier2024tuningfits; no original issuance. PBPdown/depth,own/opponent effects,partial pooling/player-onlycoefficient arms and separateFTNsupport/values evaluated. No .90selections; all new Briers worse0.25. Existingstrong controls/adverse2025season retained. Exact numerical point duration26weeks; actual-line only4weeks, no primary selection/probability/topK qualification.

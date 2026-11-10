@@ -1,0 +1,41 @@
+{
+  "state": "PASS_FEATURE_AND_ATTEMPT_LAW_QUERY_WITHOUT_FINAL_OUTCOMES",
+  "query_keys": [
+    "game_id",
+    "kickoff",
+    "opponent",
+    "player_id",
+    "season",
+    "team"
+  ],
+  "forbidden_target_keys_absent": [
+    "available",
+    "actual",
+    "official_attempts",
+    "official_completions",
+    "context_attempts",
+    "context_completions",
+    "physical_participation",
+    "label_status"
+  ],
+  "feature_width": 179,
+  "same_features": true,
+  "same_attempt_law": true,
+  "no_optimizer_calls": true,
+  "scope": "Underlyinghistory/queryfeature andattemptlawpath checked. Historical runner embeds labels for retrospectivegrading; this isnotproof ofanadmittedliveexporter.",
+  "named_adapter_static_review": {
+    "path": "nfl_v2/player_context_named_adapter_v3.py",
+    "sha256": "5ac8e4cafb6109228ef3d3e158a7f75b684df222c2f0425bea50998f3340addf",
+    "checked": [
+      "SchemaSHA",
+      "ModelreceiptSHA",
+      "Arm/width",
+      "Exactfeaturenameorder",
+      "UniquequeryIDbatch",
+      "ExplicitNone->fittedimputer",
+      "Infiniteinputreject"
+    ],
+    "external_dependency": "fallback_prior is suppliedbycaller andaffects .05leafmixture; complete inference requiresregisteredeligibleorigin-prior binding too. Thisreview doesnotclaim active wrongpriorinNFLrows."
+  },
+  "Python": "3.12.14"
+}

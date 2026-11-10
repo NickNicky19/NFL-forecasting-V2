@@ -1,0 +1,32 @@
+{
+  "continuation_id": "PLAYER-CONTEXT-COMPLETION-DECISION-01",
+  "version": 1,
+  "adopted_at_utc": "2026-11-10T04:50:35.475257+00:00",
+  "source": "User instruction received directly in this session",
+  "parent": [
+    "PLAYER-CONTEXT-MATCHUP-01",
+    "PLAYER-CONTEXT-ACCEPTANCE-01",
+    "AUDIT-REMEDIATION-20261105-v1"
+  ],
+  "role": "Session B, NFL-forecasting-V2",
+  "scope": "Additive completion: reusable as-of QB profiles, depth-specific catchability/conversion test, owner-local saved-output handoffs and explicit keep/stop decisions. C remains canonical evaluator; sole original-site owner retains release/capture.",
+  "closed_checks_reused": "bf351256/5bcdf513 acceptance raw reconstruction and2representativefit checks; no repeat. C newer dbf317 scoped B review and A02d4988 C review/reception replay refreshed separately.",
+  "new_mechanism": "Five-depth catchability annotation addition in matched direct and conditional-completion models; fixed8games/20prior, no new tuning/filter search.",
+  "before_fit_budget": {
+    "NFL_optimizer_fits_max": 104,
+    "origins": 26,
+    "threads_max": 2,
+    "RSS_max_bytes": 2147483648,
+    "model_public_retention_max_bytes": 33554432,
+    "profile_retention_separately_registered": true,
+    "source_derivative_max_bytes": 4194304,
+    "source_wall_seconds_max": 180,
+    "source_CPU_seconds_max": 180,
+    "source_RSS_max_bytes": 536870912,
+    "new_raw_downloads": 0,
+    "new_private_row_derivative_bytes": 0
+  },
+  "stopping": "Exactly26origins/4necessaryarms, no further search based on scores. No new significance/minimum-gain rule. Strong controls and5distinctscored-productweeks remain applicable; historical numeric duration is not actual-line duration.",
+  "legacy_recovery_gate": "Unchanged: no unavailable legacy source/model consumed; no new private backlog or collector.",
+  "exact_copy_status": "This adoption register is a scoped operational record, not a claim of byte identity to an unattached source file."
+}

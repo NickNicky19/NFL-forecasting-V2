@@ -1,0 +1,9 @@
+{
+  "id": "B-INDEPENDENT-LOCAL-CHECK-FAILURE-v1",
+  "at_utc": "2026-11-10T18:47:50.250893+00:00",
+  "failed_script": "reports/profile-increment-closure-next-02/B/independent/failed-verifier/verify_aligned_pilot_before_local_name_fix.py",
+  "sha256": "84192bf28a8c88578db0a4b4f2800a85d7070ed666147212c0a8a01c1c0999cf",
+  "error": "TypeError: 'list' object is not callable",
+  "cause": "Verifier-only module variable named expected shadowed a helper function after the first row. No producer/model/prediction/source/score changes.",
+  "resolution": "Rename independent expected-component helper and rerun same finite check; no additional fit or NFL observation."
+}

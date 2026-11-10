@@ -1,0 +1,273 @@
+{
+  "id": "B-CURRENT-QB-QUERY-DEPENDENCY-REVIEW-v1",
+  "reviewed_at_UTC": "2026-11-10T18:55:51.780820+00:00",
+  "C_ref": "a9cb8ef61a294b73f558b3c5daad483094af80b2",
+  "review_kind": "READ_ONLY_SEMANTICS_AND_EXISTING_VALIDATOR_NO_INFERENCE",
+  "scope": "Existing permitted C public report/profile export route only; no raw footballsource acquisition or peer collection",
+  "source_cutoff_UTC": "2026-11-10T11:45:06.666592+00:00",
+  "source_cutoff_Chicago": "2026-11-10T05:45:06.666592-06:00",
+  "event": {
+    "espn_event_id": "401873052",
+    "competition_id": "401873052",
+    "competition_state_agreement": true,
+    "week": 10,
+    "kickoff_UTC": "2026-11-13T01:15:00+00:00",
+    "kickoff": 1794532500.0,
+    "home_team": "NYG",
+    "away_team": "WAS",
+    "season": 2026,
+    "season_type": 2,
+    "state": "pre",
+    "status_name": "STATUS_SCHEDULED",
+    "completed": false,
+    "observed_UTC": "2026-11-10T11:45:05.883708+00:00",
+    "source_id": "STATUS_CURRENT",
+    "game_id": "2026_10_WAS_NYG"
+  },
+  "counts": {
+    "all_basic": 53,
+    "QB_candidates": 8,
+    "source_status_counts": {
+      "ACT": 4,
+      "DEV": 2,
+      "RES": 1,
+      "INA": 1
+    },
+    "current_membership_qualified": 0,
+    "expected_starter_qualified": 0
+  },
+  "answer": "A supported current team/QB membership receipt can qualify a basic QB profile even with starterunknown; inspected documents do not establish one for any of these8. This is UNKNOWN ratherthan a demonstrated wrong roster or automaticweek9failure.",
+  "findings": [
+    {
+      "quantity": "Observed prior-week GSIS/team/QB record",
+      "status": "PASS_SCOPED_PUBLIC_PROJECTION",
+      "scope": "Eight QB records in the public53-player projection; raw roster receipt owner-reported, no new raw acquisition"
+    },
+    {
+      "quantity": "Future native event identity/status at retained cutoff",
+      "status": "PASS_SCOPED_OWNER_SOURCE_RECEIPT",
+      "scope": "ESPN401873052,2026_10_WAS_NYG,scheduledpre,Nov13 01:15UTC. This is not refreshed status at a later actual issuance time."
+    },
+    {
+      "quantity": "Week9 roster meaning",
+      "status": "PASS_INTERPRETATION",
+      "scope": "Week-level roster snapshot, distinct from latest-season roster; weeklabel alone neither invalidates record nor proves Week10 effective membership"
+    },
+    {
+      "quantity": "Current team/QB basic event membership",
+      "status": "UNKNOWN",
+      "scope": "No event-effective/carry-forward source semantics or per-QB admission receipt at intended decision cutoff in inspected artifacts"
+    },
+    {
+      "quantity": "Expected starter/health/appearance",
+      "status": "UNKNOWN_NOT_REQUIRED_FOR_BASIC_PROFILE",
+      "scope": "ACT is a source status; no starter or health guarantee required/inferred. Role-sensitive workload or starter routing needs additional support."
+    },
+    {
+      "quantity": "C passer-role overlay",
+      "status": "PASS_SCOPED_PRESERVED",
+      "scope": "B verified overlay hash binding. It corrects historical passer-pair roles, not current QB starter/team membership."
+    },
+    {
+      "quantity": "B query contract",
+      "status": "PASS_READ_ONLY_VALIDATION",
+      "scope": "Eight honest candidate records return unverified identity/team/role; no flags were filled. Contract does not require target outcomes or starter status."
+    },
+    {
+      "quantity": "Current model/source/offer release admission",
+      "status": "SEPARATE_DOWNSTREAM_DEPENDENCIES",
+      "scope": "Not established by roster interpretation. Need bound current-origin model/prior/corrector and registered freshness/expiry; actual qualified offer only for selections."
+    }
+  ],
+  "candidates": [
+    {
+      "player_id": "00-0031503",
+      "name": "Jameis Winston",
+      "game_id": "2026_10_WAS_NYG",
+      "team": "NYG",
+      "opponent": "WAS",
+      "role_as_reported": "QB",
+      "roster_source_week": 9,
+      "roster_source_season": 2026,
+      "roster_status_as_reported": "ACT",
+      "starter": "UNKNOWN_NOT_REQUIRED_FOR_BASIC_QB_PROFILE",
+      "observed_record_state": "OBSERVED_PRIOR_WEEK_ROSTER;FUTURE_EVENT_EFFECTIVE_NOT_ESTABLISHED",
+      "original_profile_cutoff_UTC": "2026-11-10T04:54:42.615077+00:00",
+      "refreshed_source_cutoff_UTC": "2026-11-10T11:45:06.666592+00:00",
+      "B_current_query_validation": "QUERY_IDENTITY_TEAM_OR_ROLE_UNVERIFIED",
+      "event_effective_membership": "UNKNOWN_NO_REVIEWED_EFFECTIVE_SCOPE_RECEIPT",
+      "live_QB_forecast_admitted": false
+    },
+    {
+      "player_id": "00-0032268",
+      "name": "Marcus Mariota",
+      "game_id": "2026_10_WAS_NYG",
+      "team": "WAS",
+      "opponent": "NYG",
+      "role_as_reported": "QB",
+      "roster_source_week": 9,
+      "roster_source_season": 2026,
+      "roster_status_as_reported": "ACT",
+      "starter": "UNKNOWN_NOT_REQUIRED_FOR_BASIC_QB_PROFILE",
+      "observed_record_state": "OBSERVED_PRIOR_WEEK_ROSTER;FUTURE_EVENT_EFFECTIVE_NOT_ESTABLISHED",
+      "original_profile_cutoff_UTC": "2026-11-10T04:54:42.615077+00:00",
+      "refreshed_source_cutoff_UTC": "2026-11-10T11:45:06.666592+00:00",
+      "B_current_query_validation": "QUERY_IDENTITY_TEAM_OR_ROLE_UNVERIFIED",
+      "event_effective_membership": "UNKNOWN_NO_REVIEWED_EFFECTIVE_SCOPE_RECEIPT",
+      "live_QB_forecast_admitted": false
+    },
+    {
+      "player_id": "00-0038998",
+      "name": "Jake Haener",
+      "game_id": "2026_10_WAS_NYG",
+      "team": "NYG",
+      "opponent": "WAS",
+      "role_as_reported": "QB",
+      "roster_source_week": 9,
+      "roster_source_season": 2026,
+      "roster_status_as_reported": "DEV",
+      "starter": "UNKNOWN_NOT_REQUIRED_FOR_BASIC_QB_PROFILE",
+      "observed_record_state": "OBSERVED_PRIOR_WEEK_ROSTER;FUTURE_EVENT_EFFECTIVE_NOT_ESTABLISHED",
+      "original_profile_cutoff_UTC": "2026-11-10T04:54:42.615077+00:00",
+      "refreshed_source_cutoff_UTC": "2026-11-10T11:45:06.666592+00:00",
+      "B_current_query_validation": "QUERY_IDENTITY_TEAM_OR_ROLE_UNVERIFIED",
+      "event_effective_membership": "UNKNOWN_NO_REVIEWED_EFFECTIVE_SCOPE_RECEIPT",
+      "live_QB_forecast_admitted": false
+    },
+    {
+      "player_id": "00-0039677",
+      "name": "Sam Hartman",
+      "game_id": "2026_10_WAS_NYG",
+      "team": "WAS",
+      "opponent": "NYG",
+      "role_as_reported": "QB",
+      "roster_source_week": 9,
+      "roster_source_season": 2026,
+      "roster_status_as_reported": "DEV",
+      "starter": "UNKNOWN_NOT_REQUIRED_FOR_BASIC_QB_PROFILE",
+      "observed_record_state": "OBSERVED_PRIOR_WEEK_ROSTER;FUTURE_EVENT_EFFECTIVE_NOT_ESTABLISHED",
+      "original_profile_cutoff_UTC": "2026-11-10T04:54:42.615077+00:00",
+      "refreshed_source_cutoff_UTC": "2026-11-10T11:45:06.666592+00:00",
+      "B_current_query_validation": "QUERY_IDENTITY_TEAM_OR_ROLE_UNVERIFIED",
+      "event_effective_membership": "UNKNOWN_NO_REVIEWED_EFFECTIVE_SCOPE_RECEIPT",
+      "live_QB_forecast_admitted": false
+    },
+    {
+      "player_id": "00-0039910",
+      "name": "Jayden Daniels",
+      "game_id": "2026_10_WAS_NYG",
+      "team": "WAS",
+      "opponent": "NYG",
+      "role_as_reported": "QB",
+      "roster_source_week": 9,
+      "roster_source_season": 2026,
+      "roster_status_as_reported": "ACT",
+      "starter": "UNKNOWN_NOT_REQUIRED_FOR_BASIC_QB_PROFILE",
+      "observed_record_state": "OBSERVED_PRIOR_WEEK_ROSTER;FUTURE_EVENT_EFFECTIVE_NOT_ESTABLISHED",
+      "original_profile_cutoff_UTC": "2026-11-10T04:54:42.615077+00:00",
+      "refreshed_source_cutoff_UTC": "2026-11-10T11:45:06.666592+00:00",
+      "B_current_query_validation": "QUERY_IDENTITY_TEAM_OR_ROLE_UNVERIFIED",
+      "event_effective_membership": "UNKNOWN_NO_REVIEWED_EFFECTIVE_SCOPE_RECEIPT",
+      "live_QB_forecast_admitted": false
+    },
+    {
+      "player_id": "00-0039923",
+      "name": "J.J. McCarthy",
+      "game_id": "2026_10_WAS_NYG",
+      "team": "NYG",
+      "opponent": "WAS",
+      "role_as_reported": "QB",
+      "roster_source_week": 9,
+      "roster_source_season": 2026,
+      "roster_status_as_reported": "ACT",
+      "starter": "UNKNOWN_NOT_REQUIRED_FOR_BASIC_QB_PROFILE",
+      "observed_record_state": "OBSERVED_PRIOR_WEEK_ROSTER;FUTURE_EVENT_EFFECTIVE_NOT_ESTABLISHED",
+      "original_profile_cutoff_UTC": "2026-11-10T04:54:42.615077+00:00",
+      "refreshed_source_cutoff_UTC": "2026-11-10T11:45:06.666592+00:00",
+      "B_current_query_validation": "QUERY_IDENTITY_TEAM_OR_ROLE_UNVERIFIED",
+      "event_effective_membership": "UNKNOWN_NO_REVIEWED_EFFECTIVE_SCOPE_RECEIPT",
+      "live_QB_forecast_admitted": false
+    },
+    {
+      "player_id": "00-0040691",
+      "name": "Jaxson Dart",
+      "game_id": "2026_10_WAS_NYG",
+      "team": "NYG",
+      "opponent": "WAS",
+      "role_as_reported": "QB",
+      "roster_source_week": 9,
+      "roster_source_season": 2026,
+      "roster_status_as_reported": "RES",
+      "starter": "UNKNOWN_NOT_REQUIRED_FOR_BASIC_QB_PROFILE",
+      "observed_record_state": "OBSERVED_PRIOR_WEEK_ROSTER;FUTURE_EVENT_EFFECTIVE_NOT_ESTABLISHED",
+      "original_profile_cutoff_UTC": "2026-11-10T04:54:42.615077+00:00",
+      "refreshed_source_cutoff_UTC": "2026-11-10T11:45:06.666592+00:00",
+      "B_current_query_validation": "QUERY_IDENTITY_TEAM_OR_ROLE_UNVERIFIED",
+      "event_effective_membership": "UNKNOWN_NO_REVIEWED_EFFECTIVE_SCOPE_RECEIPT",
+      "live_QB_forecast_admitted": false
+    },
+    {
+      "player_id": "00-0041117",
+      "name": "Athan Kaliakmanis",
+      "game_id": "2026_10_WAS_NYG",
+      "team": "WAS",
+      "opponent": "NYG",
+      "role_as_reported": "QB",
+      "roster_source_week": 9,
+      "roster_source_season": 2026,
+      "roster_status_as_reported": "INA",
+      "starter": "UNKNOWN_NOT_REQUIRED_FOR_BASIC_QB_PROFILE",
+      "observed_record_state": "OBSERVED_PRIOR_WEEK_ROSTER;FUTURE_EVENT_EFFECTIVE_NOT_ESTABLISHED",
+      "original_profile_cutoff_UTC": "2026-11-10T04:54:42.615077+00:00",
+      "refreshed_source_cutoff_UTC": "2026-11-10T11:45:06.666592+00:00",
+      "B_current_query_validation": "QUERY_IDENTITY_TEAM_OR_ROLE_UNVERIFIED",
+      "event_effective_membership": "UNKNOWN_NO_REVIEWED_EFFECTIVE_SCOPE_RECEIPT",
+      "live_QB_forecast_admitted": false
+    }
+  ],
+  "precise_owner_actions": [
+    {
+      "owner": "C existing source/profile executor",
+      "dependency": "Event-effective current-membership review",
+      "minimum_action": "Review existing retained weekly-roster semantics/version plus permitted current team/roster evidence already in scope; bind each supported QB identity/team/position/status to nativeevent401873052 and real decision cutoff. If carry-forward is supported, document exact valid-time rule and any qualified transaction/replacement checks; otherwise retain unknown. Do not relabel sourceweek9 to10 or require a guaranteed future start.",
+      "required_fields": [
+        "canonical GSIS player_id",
+        "canonical game_id/native_event_id",
+        "team/opponent and QBrole as-of cutoff",
+        "roster source/version/SHA256",
+        "source observed/receipt time",
+        "source-effective time/scope or reviewed carry-forward rule",
+        "real decision cutoff",
+        "reviewed admission/evidence hash",
+        "status interpretation; expected starter may remainunknown"
+      ]
+    },
+    {
+      "owner": "B retained passing producer",
+      "dependency": "B current-query admission",
+      "minimum_action": "Consume only actually qualified QB membership receipts through existing query_validation/build_current; retain other candidates unavailable. Bind source/model expiry and exact typed procedure/current origin. Do not set verification booleans from weeklabel, later appearances or historical pass volume."
+    },
+    {
+      "owner": "Original website/retained capture owner",
+      "dependency": "Genuine fresh capture/consumer stage",
+      "minimum_action": "After independently eligible source/model/consumer admission, execute existing authorized capture with real clocks; refresh native status at issuance and qualify offers separately. No B dispatch or production change."
+    }
+  ],
+  "no_generic_blockers": [
+    "Futuretargetfinaloutcomesnotrequired",
+    "No needtoprovefutureparticipation",
+    "No blanketactive/status/starterassumption",
+    "No newmodel-fit orsourcecollectionneedtointerprettheseexistingbytes"
+  ],
+  "limits": "Public projection/hash and document semantics inspected; raw current roster transaction/effective history not independently downloaded. Unseen newer owner work not asserted absent. Original profilecutoffs remain unchanged.",
+  "effects": {
+    "new_raw_source_acquisition": 0,
+    "new_fits": 0,
+    "new_model_inference": 0,
+    "new_forecasts": 0,
+    "new_selections": 0,
+    "new_NFL_test_weeks": 0,
+    "peer_writes": 0,
+    "production_writes": 0
+  }
+}

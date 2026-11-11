@@ -1,3 +1,7 @@
+## Timing closure resumption — November 11 UTC
+
+[Superseding executed receipt closure](reports/profile-timing-closure-confirm-01/B/RESUMPTION_CLOSURE_V1.md). A bothnewjoins ACKNOWLEDGED/REGISTERED/PREEXEC_CHECKED, notscoredmerelybyGO. C b616listedsidearithmeticadmitted;newBcaptureawaitsv15intake. C04actual4,811rows/38,488typedpointsschemacheckPASS;zeroactualoffers/probabilitiesinexport. FinalpacketV2independent16recordparityPASS;all10values/laws/issueclocksunchanged. Priorpreparedmodelchecksretainedwithoutrefit. NativeBstatus expiredfornewissue;oldcapturepreserved. Websiteownerexecuted30C75/original1610forecastpairs,notgrades/admission;Cnew69packetpreserved. Sixservedstaticassetsunchanged03:52UTC,age425.79min;noDOMclaim. FourTopPicksboardsretained,fifthandmappingmissing. Newfits/grades/views/releasesduringresumption0.
+
 # Current B timing closure — November 10 UTC
 
 [Executed receipt/capture/decision checkpoint](reports/profile-timing-closure-confirm-01/B/TIMING_CLOSURE_CHECKPOINT_V1.md). Exact old A R0–R3 CMP/C03 joins received and public arithmetic checked; new F2/F3/C04 joins remain A-owned, with saved-output bindings available. F0/F1 output-preserving aliases may reuse five-week witnesses; changed F2/F3 cannot. No historical timing refit or new lag/offset/gate search.

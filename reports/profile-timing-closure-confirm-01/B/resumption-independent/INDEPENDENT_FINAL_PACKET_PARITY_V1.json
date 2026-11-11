@@ -1,0 +1,103 @@
+{
+  "id": "B-FINAL-FROZEN-PACKET-METADATA-INDEPENDENT-REVIEW-v1",
+  "reviewed_UTC": "2026-11-11T03:52:09.413655+00:00",
+  "status": "PASS_WITHIN_CHECKED_SCOPE",
+  "repository": "NickNicky19/NFL-forecasting-V2",
+  "original_commit": "c3199e20149d018eda55eba6528ea27d0f859a5d",
+  "materialized_metadata_publication_commit": "b046aab1877e5fb0412864d215a40df1c722a2df",
+  "originals_immutable": true,
+  "original_sha256": "618a260be4bec1082592a2dea7c53a4c1eabe42121e09b0412e652f52c196d2e",
+  "corrected_sha256": "a77ead99bc663b442f07cc55fa8b7554cddd9cd49ed01ded7f4c80da7ceae78c",
+  "prepared_sha256": "ea91921376e4e561c28f4f5dcbdb71f245cd6a9941fd3d67e39ab8eb2edc524a",
+  "protocol_sha256": "39837aed5dde286ddbf91697ca19bb8a4f3239713de6084dc67a7dc12eb3cc70",
+  "records_checked": 16,
+  "unchanged_forecast_values": 10,
+  "explicit_basic_records": 6,
+  "changed_original_forecast_flags": 6,
+  "all_other_existing_record_fields_exactly_unchanged": true,
+  "top_level_changes": [
+    "metadata_correction annotation only"
+  ],
+  "final_to_prepared_parity": "PASS_ALL16",
+  "prepared_record_commitments_verified": 16,
+  "issue_UTC_unchanged": "2026-11-10T23:01:29.145519+00:00",
+  "players_basic": 8,
+  "players_forecast": 5,
+  "actual_offers": 0,
+  "actual_selections": 0,
+  "graded_outcomes": 0,
+  "models": [
+    {
+      "path": "reports/profile-timing-closure-confirm-01/B/forward-current-v1/models/F0.json.gz",
+      "sha256": "b401caa7790086ac6fd0e6014799cfe10c75f278996debcefa51f95b0f58afbb",
+      "training_rows": 941,
+      "actual_original_fit_calls": 1
+    },
+    {
+      "path": "reports/profile-timing-closure-confirm-01/B/forward-current-v1/models/F2.json.gz",
+      "sha256": "614feafc4f82c82bc19574d0a638d78c6ce0000bca481abad3e15eda64346902",
+      "training_rows": 945,
+      "actual_original_fit_calls": 1
+    }
+  ],
+  "source_summary": {
+    "qualified_recent_games": 2,
+    "new_qualified_QB_rows": 4,
+    "held_recent_games": 13,
+    "held_QB_rows": 34,
+    "checked_via_bound_prior_receipt": true,
+    "current_raw_PBP_reconstruction_repeated": false
+  },
+  "native_clock_at_original_issue": "VALID_IN_RETAINED_RECEIPT",
+  "native_clock_for_new_issuance": "EXPIRED;NO_NEW_FRESH_PACKET_CLAIM",
+  "native_expiry_UTC": "2026-11-10T23:30:18Z",
+  "future_event_kickoff_UTC": "2026-11-13T01:15:00Z",
+  "current_event_status_requeried": false,
+  "prior_completed_receipts_reused": [
+    {
+      "path": "reports/profile-timing-closure-confirm-01/B/resumption-independent/prior-receipts/CURRENT_PREPARED_PACKET_INDEPENDENT_REVIEW_V1.json",
+      "sha256": "0f4969ddf086807a1154e4ecea6e8cef186d43707917180906190244a38bf9c6",
+      "bytes": 2795,
+      "origin": "Preserved pre-outage owner-local B verifier bytes; not a new execution"
+    },
+    {
+      "path": "reports/profile-timing-closure-confirm-01/B/resumption-independent/prior-receipts/CURRENT_PREPARED_PACKET_INDEPENDENT_REVIEW_V2.json",
+      "sha256": "7ed2fdff760cb012b6130c97c2d92db48506c7f4c8f7d953118699b413e01ca9",
+      "bytes": 2969,
+      "origin": "Preserved pre-outage owner-local B verifier bytes; not a new execution"
+    },
+    {
+      "path": "reports/profile-timing-closure-confirm-01/B/resumption-independent/prior-receipts/FORWARD_PREPARATION_INDEPENDENT_REVIEW_V1.json",
+      "sha256": "1fe0655fa7ce4fff7292b3ed32db2caa41c24ed10fb8da65ebeafa0697544df3",
+      "bytes": 2422,
+      "origin": "Preserved pre-outage owner-local B verifier bytes; not a new execution"
+    },
+    {
+      "path": "reports/profile-timing-closure-confirm-01/B/resumption-independent/prior-receipts/CHECKER_DEVELOPMENT_NOTES_V1.json",
+      "sha256": "a1346e26b20ba151182369e3eb145f1393c27ab6e1612d6fc41a301c1d52aebd",
+      "bytes": 1047,
+      "origin": "Preserved pre-outage owner-local B verifier bytes; not a new execution"
+    },
+    {
+      "path": "reports/profile-timing-closure-confirm-01/B/resumption-independent/prior-receipts/verify_prepared_forward_packet_v1.py.source.txt",
+      "sha256": "1f976294d389d5aa8c8d6c37fa243999a9688d3f89de141e29e0fb3265533126",
+      "bytes": 9051,
+      "origin": "Exact prior completed verifier source retained as evidence; not re-executed"
+    }
+  ],
+  "verifier_code_sha256": "8318c350cf008ff83966d46a6c00700779580f7f548f4ea0e6456de0e8283ac0",
+  "environment": {
+    "python": "3.12.14"
+  },
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_original_forecasts": 0,
+  "new_score_views": 0,
+  "independence": "Separate metadata/identity/clock/hash/JSON comparison and prior receipt binding; author finalization helper not called.",
+  "limits": [
+    "No fresh fit or repeated 10-model inference; completed prior verification reused.",
+    "No new raw play reconstruction or private A-board/source-clock verification.",
+    "No new independent remote download by this task; local immutable Git objects and parent GitHub byte readback remain separately identified.",
+    "No current producer, consumer, DOM, activation, Top Picks or primary release established by this check."
+  ]
+}

@@ -1,3 +1,5 @@
+**Superseding receipt and source closure, November 11 UTC:** [Current executed checkpoint](RESUMPTION_CLOSURE_V1.md). A has registered both new joins; C has admitted listed earlier B side arithmetic. C04 schema and final packet metadata checks now pass. New joins are not falsely marked scored; original capture clocks remain unchanged.
+
 # B timing closure and forward confirmation
 
 [Executed checkpoint, decisions and all twelve categories](TIMING_CLOSURE_CHECKPOINT_V1.md).

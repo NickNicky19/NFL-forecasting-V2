@@ -24,7 +24,7 @@ def save(path, value):
 
 
 def main():
-    manifest_path = BASE / 'PUBLICATION_MANIFEST_V1.json'
+    manifest_path = BASE / 'PUBLICATION_MANIFEST_V2.json'
     if (ROOT / manifest_path).exists():
         raise ValueError('Publication already frozen; append a version instead')
     head = git('rev-parse', 'HEAD')
@@ -50,7 +50,7 @@ def main():
         retrieval_url='https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/' + original_commit + '/' + original_path,
         readback_verified=True, state='ORIGINAL_CAPTURE_RUNTIME_PRESERVED_AND_ALREADY_READ_BACK'))
     clock = datetime.now(timezone.utc).isoformat()
-    manifest = dict(id='B-TIMING-CLOSURE-PUBLICATION-MEMBERS-v1', at_UTC=clock,
+    manifest = dict(id='B-TIMING-CLOSURE-PUBLICATION-MEMBERS-v2', at_UTC=clock,
         binding_head=head, repository='NickNicky19/NFL-forecasting-V2', members=records,
         rights=dict(analysis='Existing approved factual-derivative/code/aggregate scope',
             export='Permitted B public artifacts; no restricted A/B board rows or locators',
@@ -65,7 +65,6 @@ def main():
             sha256=sha((ROOT / BASE / 'forward-current-v1/FORECASTS_METADATA_V2.json').read_bytes())),
         admission='C admitted listed earlier timing-side arithmetic only; new capture and private joins remain separate',
         remote_readback='Separate append-only receipt must verify these exact members after publication')
-    save(manifest_path, manifest)
     path = ROOT / 'reports/abc-championship/EXPORT_INDEX.json'
     old = json.loads(path.read_text())
     if old.get('profile_timing_closure_confirm_01'):
@@ -74,7 +73,7 @@ def main():
     entries = []
     for r in records:
         artifact_id = 'B-EXPORT-' + sha((r['producer_commit'] + '\0' + r['path'] + '\0' + r['sha256']).encode())[:16]
-        if any(e['artifact_id'] == artifact_id for e in old['exports']):
+        if any(e.get('artifact_id') == artifact_id for e in old['exports']):
             continue
         kind = ('TRUSTED_TYPED_PUBLIC_CURRENT_SHADOW_MODEL' if '/models/' in r['path'] else
                 'ORIGINAL_FORECAST_OR_OUTPUT_PRESERVING_METADATA_VERSION' if 'FORECASTS' in r['path'] else
@@ -105,6 +104,7 @@ def main():
             offers=0, selections=0, graded_outcomes=0, reissued_after_outage=False),
         all_previous_exports_preserved=len(original_entries), added_exports=len(entries),
         production_changes=0, new_scored_weeks=0, no_new_lag_search=True)
+    save(manifest_path, manifest)
     save(Path('reports/abc-championship/EXPORT_INDEX.json'), old)
     print(json.dumps(dict(bound_head=head, members=len(records),
         old_exports=len(original_entries), new_exports=len(entries), total_exports=len(old['exports']))))

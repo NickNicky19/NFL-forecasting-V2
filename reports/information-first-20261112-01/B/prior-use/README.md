@@ -1,0 +1,23 @@
+# B — prior FTN use and unchanged completion control
+
+**Catchability, drops and contested-ball rates have already been fitted together.** `B-QB-CHARTED-CATCHABILITY-CONTEXT-v1:F2` adds all three own-history rates to E1, with a separate support arm; it scores53/112mean-direction and54/112law-direction, versus51for the support arm. Later depth-conditioned D2/C2 uses only catchability values; drop/contested are descriptive in that later recipe. Its negative results remain closed. Merely calling drops a new field would repeat completed work.
+
+The strongest inspected B learned completion rule on the same112native offers is **R3 mean crossing61/112** (Over12–5,Under49–46). R3's law/median direction is59/112, a different product. Keep prevalence59, saved adjusted58, bothconstant sides and exact compatible retained controls. Stronger A CatBoost/HGB annual52/88and strict-current47/84panels have different masks; they are not interchangeable112-row controls or history for the new recipe. Four native offerweeks are not five-week primary qualification.
+
+| Field/group | Actual prior use | New-wave consequence |
+|---|---|---|
+| Catchable, contested, drop | All three consumed by aggregate F2; catchable also consumed by depth D2/C2 | Preserve completed losses, no renamed repeat. |
+| Throwaway, motion, screen, play action, RPO | Parsed and retained as known/positive counts; no fitted consumer found in inspected B recipes | Candidate new combinations for R3 after peer/source qualification; not all-project novelty proof. |
+| Interception-worthy, read progression, blitz/pass-rusher counts | No fitted consumer found in scoped B code; not in old eight-flag derivative | Actual schema/definitions/coverage required. Read coding needs cross-season/inapplicability handling; rushers are not pressure. |
+
+The already-qualified eight-flag derivative can supply supported old-week values without repeating its raw transformation. It contains2,922credited-passer game records and is joined to the declared official-QB target panel; do not count all source passers as QB training support. Its2025source rows do not cover every zero-attempt QB query. Preserve missing/source-support states and query coverage.
+
+For a fair R3 increment, select the same last8eligible QB appearances **before** joining charting. Do not drop a no-chart game and reach farther back to eight matched games. R3 already contains ordinary own-game count/attempt support/age; distinguish genuinely new FTN support from those duplicate quantities. Rate denominators remain positive/known; known/eligible measures source support. Missing/inapplicable is not false. No target-game mixture or charting enters its own forecast.
+
+This review does not select every possible field or fit a new model. Root freezes one source-qualified block, preferably a compact noncompletion ball-quality contrast where actual interception-worthy/throwaway labels support it, or one qualified design block. Read progression may remain out of this first wave.
+
+Old models use the declared seven-day current-vintage reconstruction, not authenticated original FTN publication clocks; `date_pulled` cannot supply that proof. FTN-derived models/forecasts carry **FTN Data via nflverse, CC-BY-SA4.0**. Retained2024tuning does not authenticate earlier2022–2024forecasts. All requested W1–9missing offer cells remain explicit; earlier scores stay under their original version.
+
+[Machine field matrix, exact score rows and 25 evidence bindings](PRIOR_USE_AND_BASELINE_V1.json). Peer ownership/current source qualification are separate checks. This is focused B recipe reconciliation, not exhaustive private A/B/C audit, new scoring, admission or deployment.
+
+The source gate subsequently qualified the **throwaway + interception-worthy** block for the explicitly labeled current-vintage diagnostic. [Selected-block resolution](SELECTED_BLOCK_RESOLUTION_V1.json) preserves the earlier pending receipt. All17support diagnostics are determined by ordinary eligible QB history in this retained complete-source panel; [52,902 assertions](SUPPORT_EQUIVALENCE_V1.json) support **B1=B0 as an exact alias**. B2 adds only the two substantive rates. The101zero-attempt age-representation cases are disclosed; that representation is deliberately not added or silently called an identical baseline column. Future partial/unknown required charting falls back to exactB0. Seven meaningful feature-boundary tests pass; no fit or NFL grade was performed by this reviewer at the source gate.

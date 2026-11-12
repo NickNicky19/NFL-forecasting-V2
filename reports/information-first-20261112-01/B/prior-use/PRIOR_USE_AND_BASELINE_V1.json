@@ -1,0 +1,1339 @@
+{
+  "id": "B-FTN-PRIOR-USE-AND-BASELINE-RECONCILIATION-v1",
+  "assignment": "ABC-INFORMATION-FIRST-20261112-01",
+  "checked_UTC": "2026-11-12T23:38:06.386719+00:00",
+  "source_HEAD": "10846a2781685f3c1a2cb045d3c887864f32bda7",
+  "scope": "Focused executing B recipe/source/export check; not every private experiment ever performed. Peer-current-source/lease review remains root/peer-agent scope.",
+  "field_matrix": [
+    {
+      "field": "is_catchable_ball",
+      "prior_use_status": "ALREADY_FITTED_AGGREGATE",
+      "exact_prior": "B-QB-CHARTED-CATCHABILITY-CONTEXT-v1:F2 adds all three own8 shrunk rates to E1; F1 support only.",
+      "equivalent_input_note": null,
+      "source_gate": "Do not rename this completed block as new.",
+      "depth_prior": "B-QB-DEPTH-CATCHABILITY-v2:D2/C2 fitted five depth-specific catchable logits; D1/C1 supports held."
+    },
+    {
+      "field": "is_contested_ball",
+      "prior_use_status": "ALREADY_FITTED_AGGREGATE",
+      "exact_prior": "B-QB-CHARTED-CATCHABILITY-CONTEXT-v1:F2 adds all three own8 shrunk rates to E1; F1 support only.",
+      "equivalent_input_note": null,
+      "source_gate": "Do not rename this completed block as new.",
+      "depth_prior": "Retained descriptive depth counts/profile fields, not consumed by D2/C2; aggregate F2 nevertheless consumed the field."
+    },
+    {
+      "field": "is_drop",
+      "prior_use_status": "ALREADY_FITTED_AGGREGATE",
+      "exact_prior": "B-QB-CHARTED-CATCHABILITY-CONTEXT-v1:F2 adds all three own8 shrunk rates to E1; F1 support only.",
+      "equivalent_input_note": null,
+      "source_gate": "Do not rename this completed block as new.",
+      "depth_prior": "Retained descriptive depth counts/profile fields, not consumed by D2/C2; aggregate F2 nevertheless consumed the field."
+    },
+    {
+      "field": "is_throw_away",
+      "prior_use_status": "EXPORTED_BUT_NO_FITTED_USE_FOUND_IN_INSPECTED_B_RECIPES",
+      "exact_prior": "tools/qualify_player_context_sources.py FTN_FLAGS and FTN_DERIVED_QB_GAME_INPUTS retain known/positive counts; tools/run_qb_charting_context_wave.py FLAGS excludes this field.",
+      "equivalent_input_note": "R3 already consumes ordinary completion, attempt/dropback, sack/scramble/spike and context history; provider charted flag is not implied by those ordinary counts.",
+      "source_gate": "Available retained field is a candidate NEW_COMBINATION_FOR_R3, not proof of novelty across inaccessible peer work; current source/owner qualification controls execution."
+    },
+    {
+      "field": "is_motion",
+      "prior_use_status": "EXPORTED_BUT_NO_FITTED_USE_FOUND_IN_INSPECTED_B_RECIPES",
+      "exact_prior": "tools/qualify_player_context_sources.py FTN_FLAGS and FTN_DERIVED_QB_GAME_INPUTS retain known/positive counts; tools/run_qb_charting_context_wave.py FLAGS excludes this field.",
+      "equivalent_input_note": "R3 already consumes ordinary completion, attempt/dropback, sack/scramble/spike and context history; provider charted flag is not implied by those ordinary counts.",
+      "source_gate": "Available retained field is a candidate NEW_COMBINATION_FOR_R3, not proof of novelty across inaccessible peer work; current source/owner qualification controls execution."
+    },
+    {
+      "field": "is_screen_pass",
+      "prior_use_status": "EXPORTED_BUT_NO_FITTED_USE_FOUND_IN_INSPECTED_B_RECIPES",
+      "exact_prior": "tools/qualify_player_context_sources.py FTN_FLAGS and FTN_DERIVED_QB_GAME_INPUTS retain known/positive counts; tools/run_qb_charting_context_wave.py FLAGS excludes this field.",
+      "equivalent_input_note": "R3 already consumes ordinary completion, attempt/dropback, sack/scramble/spike and context history; provider charted flag is not implied by those ordinary counts.",
+      "source_gate": "Available retained field is a candidate NEW_COMBINATION_FOR_R3, not proof of novelty across inaccessible peer work; current source/owner qualification controls execution."
+    },
+    {
+      "field": "is_play_action",
+      "prior_use_status": "EXPORTED_BUT_NO_FITTED_USE_FOUND_IN_INSPECTED_B_RECIPES",
+      "exact_prior": "tools/qualify_player_context_sources.py FTN_FLAGS and FTN_DERIVED_QB_GAME_INPUTS retain known/positive counts; tools/run_qb_charting_context_wave.py FLAGS excludes this field.",
+      "equivalent_input_note": "R3 already consumes ordinary completion, attempt/dropback, sack/scramble/spike and context history; provider charted flag is not implied by those ordinary counts.",
+      "source_gate": "Available retained field is a candidate NEW_COMBINATION_FOR_R3, not proof of novelty across inaccessible peer work; current source/owner qualification controls execution."
+    },
+    {
+      "field": "is_rpo",
+      "prior_use_status": "EXPORTED_BUT_NO_FITTED_USE_FOUND_IN_INSPECTED_B_RECIPES",
+      "exact_prior": "tools/qualify_player_context_sources.py FTN_FLAGS and FTN_DERIVED_QB_GAME_INPUTS retain known/positive counts; tools/run_qb_charting_context_wave.py FLAGS excludes this field.",
+      "equivalent_input_note": "R3 already consumes ordinary completion, attempt/dropback, sack/scramble/spike and context history; provider charted flag is not implied by those ordinary counts.",
+      "source_gate": "Available retained field is a candidate NEW_COMBINATION_FOR_R3, not proof of novelty across inaccessible peer work; current source/owner qualification controls execution."
+    },
+    {
+      "field": "is_interception_worthy",
+      "prior_use_status": "NO_FITTED_USE_FOUND_IN_INSPECTED_B_RECIPES",
+      "exact_prior": "No executing consumer located in scoped nfl_v2/tools search; old eight-flag derivative does not include this field. read_thrown has source-only coverage records.",
+      "equivalent_input_note": null,
+      "source_gate": "Actual current schema, eligible denominator, units, missingness and cross-season definitions must qualify; absence from this scoped search is not all-project novelty proof."
+    },
+    {
+      "field": "read_thrown",
+      "prior_use_status": "NO_FITTED_USE_FOUND_IN_INSPECTED_B_RECIPES",
+      "exact_prior": "No executing consumer located in scoped nfl_v2/tools search; old eight-flag derivative does not include this field. read_thrown has source-only coverage records.",
+      "equivalent_input_note": null,
+      "source_gate": "Actual current schema, eligible denominator, units, missingness and cross-season definitions must qualify; absence from this scoped search is not all-project novelty proof.",
+      "cross_season_note": "Retained read_thrown all-play codes differ sharply: 2022 has22116MISSING and one whitespace CHK; later years have many0 values. Do not infer primary-read semantics or first-read target share from these counts; source dictionary must define the 2022 change and inapplicability."
+    },
+    {
+      "field": "n_blitzers",
+      "prior_use_status": "NO_FITTED_USE_FOUND_IN_INSPECTED_B_RECIPES",
+      "exact_prior": "No executing consumer located in scoped nfl_v2/tools search; old eight-flag derivative does not include this field. read_thrown has source-only coverage records.",
+      "equivalent_input_note": null,
+      "source_gate": "Actual current schema, eligible denominator, units, missingness and cross-season definitions must qualify; absence from this scoped search is not all-project novelty proof."
+    },
+    {
+      "field": "n_pass_rushers",
+      "prior_use_status": "NO_FITTED_USE_FOUND_IN_INSPECTED_B_RECIPES",
+      "exact_prior": "No executing consumer located in scoped nfl_v2/tools search; old eight-flag derivative does not include this field. read_thrown has source-only coverage records.",
+      "equivalent_input_note": null,
+      "source_gate": "Actual current schema, eligible denominator, units, missingness and cross-season definitions must qualify; absence from this scoped search is not all-project novelty proof."
+    }
+  ],
+  "completed_results": {
+    "aggregateFTN": "F2mean53/112,law/median54/112; F1supportmean/law51/112. Do not repeat three-rate catchable/drop/contested recipe.",
+    "depthFTN": "D1law52/112\u2192D2law49/112; C1=C2law54/112. Values used in fitted models; valid negative, not ingestion failure.",
+    "profile_defense": "R3mean61/112; R3law/median59/112; R2law57/112. Fixed prior experiments preserved.",
+    "timing": "Aligned F2mean/law56/112 and F3law57/112; no timing replacement; numerical effects separate.",
+    "depthrank": "New source-rank S2law57/112 vsR3law59; S2mean53vsR3mean61. Closed direction; separate broad numerical signal."
+  },
+  "baseline": {
+    "procedure": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R3",
+    "learner": "32-tree fixed ExtraTrees Leaf-CDF,95%empirical+5%same-origin prior,seed1701; no tuning change.",
+    "primary_output_policy": "P1_MEAN strict unrounded mean versus exact line, ties abstain",
+    "native_record": {
+      "over": [
+        12,
+        5,
+        17
+      ],
+      "under": [
+        49,
+        46,
+        95
+      ],
+      "combined": [
+        61,
+        51,
+        112
+      ],
+      "combined_rate": 0.5446428571428571
+    },
+    "probability_output": "Separate exact count-law P2 direction and lower-median policy59/112; do not call mean crossing a0.90probability.",
+    "qualification": "Highest observed applicable inspected B learned broad112 completion procedure; not proven globalbest or newprimaryeligible. Native actual-line panel2026W5-8 hasfourweeks, quote timing unverified; alreadyexposeddevelopment.",
+    "strong_controls": [
+      "Earlier-only line prevalence59/112",
+      "Saved adjusted points58/112; raw56; bothconstant sides58Over/54Under",
+      "Retained E3law58/112",
+      "Strict-current47/84 on its exact matched mask when restored; never splice into112",
+      "A CatBoost/HGB annual52/88, Over48/88 are separate owner-local source/mask/horizon comparisons; newrecipe cannot inherit theirweeks."
+    ],
+    "exact_incumbent_limit": "Saved raw/adjusted source points do not authenticate original provider model/version/clock; current original-site model not reconstructed by revised provider data."
+  },
+  "same_history_implementation_constraints": [
+    "Use last8eligible own QB appearances before chart join; preserve zero-attempt/no-chart games, do not silently extend farther back to8matchedchartgames.",
+    "R3 already contains own_games,own_attempts,own_game_age anddepth support; newB1 must distinguish genuine FTN sourceknown/match/age support from duplicated ordinary support.",
+    "Rate positive/known, supportknown/eligible; missing/inapplicable flag is unknown, not false. Same eligible credited attempts exclude sack/2pt/deleted explicitly.",
+    "Actual own-source age and global-prior clock upper bound are distinct; old metadata scope amendment is closed.",
+    "Historical seven-day reconstruction remains aligned training/query, no date_pulled or now-file retrieval backdating."
+  ],
+  "candidate_gate": {
+    "status": "NEW_BLOCK_SOURCE_QUALIFICATION_PENDING;NO_FITS_BY_REVIEWER",
+    "first_option": "One compact noncompletion ball-quality block: lagged source-charted interception-worthy and/or throwaway values, only if actual schema/support qualify. Avoid aggregatecatchable/drop/contested rerun.",
+    "fallback_option": "One qualified pass-attempt design block such as screen/playaction if distinct and supported; existing eight-flag derivative may be reused for old weeks.",
+    "no_mandatory_choice": "Root freezes one specific hypothesis after source and peer ownership checks, not a bundle of all fields.",
+    "read_progression": "Keep out of first block until cross-season primary-read coding/inapplicability resolves; it is not QB-to-player first-read target share.",
+    "pass_rushers": "Count rushers/blitzers only under provider units/denominators; not pure pressure or future game context."
+  },
+  "historical_coverage_constraints": {
+    "2026": "Existing native scoredcompletionoffersW5-8; no W1-4orW9 inferred from title. New W1-9 panel must account every week and separate source contracts.",
+    "2025": "Full2025numeric664existingqueries, no retained2025native actualcompletionoffers added by this check.",
+    "2022_2024": "Available historicalsource/featurememory does not add valid scoredproductweeks. Existing window8/strength20 selected on2024validation; scoring earlier years requires earlier-only config/startup or explicitly nonqualifying exposed diagnostic, not false earlier tuning."
+  },
+  "license": "FTN Data via nflverse CC-BY-SA4.0 for derived charting inputs/models/forecasts; PBP-only lane CC-BY4.0 separately. Raw feeds/privateofferrows not exported.",
+  "coverage_of_retained_derivative": [
+    {
+      "season": 2022,
+      "source_passer_game_rows": 655,
+      "eligible_throws": 18069,
+      "matched_chart_rows": 18069,
+      "flags": {
+        "is_catchable_ball": {
+          "known": 18069,
+          "positive": 13560
+        },
+        "is_contested_ball": {
+          "known": 18069,
+          "positive": 2118
+        },
+        "is_drop": {
+          "known": 18069,
+          "positive": 675
+        },
+        "is_throw_away": {
+          "known": 18069,
+          "positive": 684
+        },
+        "is_motion": {
+          "known": 18069,
+          "positive": 6028
+        },
+        "is_screen_pass": {
+          "known": 18069,
+          "positive": 1739
+        },
+        "is_play_action": {
+          "known": 18069,
+          "positive": 3997
+        },
+        "is_rpo": {
+          "known": 18069,
+          "positive": 741
+        }
+      },
+      "scope": "Source derivative includes credited passer records not all official QB target rows; executing QB feature pool uses exact target IDs. Do not call these raw counts all-QB support."
+    },
+    {
+      "season": 2023,
+      "source_passer_game_rows": 672,
+      "eligible_throws": 18315,
+      "matched_chart_rows": 18315,
+      "flags": {
+        "is_catchable_ball": {
+          "known": 18315,
+          "positive": 13095
+        },
+        "is_contested_ball": {
+          "known": 18315,
+          "positive": 2810
+        },
+        "is_drop": {
+          "known": 18315,
+          "positive": 696
+        },
+        "is_throw_away": {
+          "known": 18315,
+          "positive": 744
+        },
+        "is_motion": {
+          "known": 18315,
+          "positive": 7728
+        },
+        "is_screen_pass": {
+          "known": 18315,
+          "positive": 2049
+        },
+        "is_play_action": {
+          "known": 18315,
+          "positive": 3715
+        },
+        "is_rpo": {
+          "known": 18315,
+          "positive": 515
+        }
+      },
+      "scope": "Source derivative includes credited passer records not all official QB target rows; executing QB feature pool uses exact target IDs. Do not call these raw counts all-QB support."
+    },
+    {
+      "season": 2024,
+      "source_passer_game_rows": 664,
+      "eligible_throws": 17811,
+      "matched_chart_rows": 17811,
+      "flags": {
+        "is_catchable_ball": {
+          "known": 17811,
+          "positive": 12652
+        },
+        "is_contested_ball": {
+          "known": 17811,
+          "positive": 2438
+        },
+        "is_drop": {
+          "known": 17811,
+          "positive": 581
+        },
+        "is_throw_away": {
+          "known": 17811,
+          "positive": 701
+        },
+        "is_motion": {
+          "known": 17811,
+          "positive": 8831
+        },
+        "is_screen_pass": {
+          "known": 17811,
+          "positive": 1811
+        },
+        "is_play_action": {
+          "known": 17811,
+          "positive": 4025
+        },
+        "is_rpo": {
+          "known": 17811,
+          "positive": 339
+        }
+      },
+      "scope": "Source derivative includes credited passer records not all official QB target rows; executing QB feature pool uses exact target IDs. Do not call these raw counts all-QB support."
+    },
+    {
+      "season": 2025,
+      "source_passer_game_rows": 654,
+      "eligible_throws": 17439,
+      "matched_chart_rows": 17439,
+      "flags": {
+        "is_catchable_ball": {
+          "known": 17439,
+          "positive": 12384
+        },
+        "is_contested_ball": {
+          "known": 17439,
+          "positive": 2314
+        },
+        "is_drop": {
+          "known": 17439,
+          "positive": 717
+        },
+        "is_throw_away": {
+          "known": 17439,
+          "positive": 722
+        },
+        "is_motion": {
+          "known": 17439,
+          "positive": 9364
+        },
+        "is_screen_pass": {
+          "known": 17439,
+          "positive": 1539
+        },
+        "is_play_action": {
+          "known": 17439,
+          "positive": 3964
+        },
+        "is_rpo": {
+          "known": 17439,
+          "positive": 411
+        }
+      },
+      "scope": "Source derivative includes credited passer records not all official QB target rows; executing QB feature pool uses exact target IDs. Do not call these raw counts all-QB support."
+    },
+    {
+      "season": 2026,
+      "source_passer_game_rows": 277,
+      "eligible_throws": 8015,
+      "matched_chart_rows": 8015,
+      "flags": {
+        "is_catchable_ball": {
+          "known": 8015,
+          "positive": 5660
+        },
+        "is_contested_ball": {
+          "known": 8015,
+          "positive": 1203
+        },
+        "is_drop": {
+          "known": 8015,
+          "positive": 316
+        },
+        "is_throw_away": {
+          "known": 8015,
+          "positive": 355
+        },
+        "is_motion": {
+          "known": 8015,
+          "positive": 4473
+        },
+        "is_screen_pass": {
+          "known": 8015,
+          "positive": 761
+        },
+        "is_play_action": {
+          "known": 8015,
+          "positive": 1810
+        },
+        "is_rpo": {
+          "known": 8015,
+          "positive": 176
+        }
+      },
+      "scope": "Source derivative includes credited passer records not all official QB target rows; executing QB feature pool uses exact target IDs. Do not call these raw counts all-QB support."
+    }
+  ],
+  "native112_policy_records": [
+    {
+      "procedure": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R3",
+      "policy": "P1_MEAN",
+      "wins": 61,
+      "losses": 51,
+      "decided": 112,
+      "rate": 0.5446428571428571,
+      "source": "reports/profile-increment-to-release-01/B/opportunity-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R3",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 59,
+      "losses": 53,
+      "decided": 112,
+      "rate": 0.5267857142857143,
+      "source": "reports/profile-increment-to-release-01/B/opportunity-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R3",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 59,
+      "losses": 53,
+      "decided": 112,
+      "rate": 0.5267857142857143,
+      "source": "reports/profile-increment-to-release-01/B/opportunity-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "EARLIER_LINE_PREVALENCE",
+      "policy": "REGISTERED_DIRECTION",
+      "wins": 59,
+      "losses": 53,
+      "decided": 112,
+      "rate": 0.5267857142857143,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "EARLIER_LINE_PREVALENCE",
+      "policy": "REGISTERED_DIRECTION",
+      "wins": 59,
+      "losses": 53,
+      "decided": 112,
+      "rate": 0.5267857142857143,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "EARLIER_LINE_PREVALENCE_48H",
+      "policy": "REGISTERED_DIRECTION",
+      "wins": 59,
+      "losses": 53,
+      "decided": 112,
+      "rate": 0.5267857142857143,
+      "source": "reports/profile-increment-closure-next-02/B/aligned-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "ALWAYS_OVER",
+      "policy": "REGISTERED_DIRECTION",
+      "wins": 58,
+      "losses": 54,
+      "decided": 112,
+      "rate": 0.5178571428571429,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "ALWAYS_OVER",
+      "policy": "REGISTERED_DIRECTION",
+      "wins": 58,
+      "losses": 54,
+      "decided": 112,
+      "rate": 0.5178571428571429,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R0",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 58,
+      "losses": 54,
+      "decided": 112,
+      "rate": 0.5178571428571429,
+      "source": "reports/profile-increment-to-release-01/B/opportunity-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R0",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 58,
+      "losses": 54,
+      "decided": 112,
+      "rate": 0.5178571428571429,
+      "source": "reports/profile-increment-to-release-01/B/opportunity-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E3",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 58,
+      "losses": 54,
+      "decided": 112,
+      "rate": 0.5178571428571429,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E3",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 58,
+      "losses": 54,
+      "decided": 112,
+      "rate": 0.5178571428571429,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E3",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 58,
+      "losses": 54,
+      "decided": 112,
+      "rate": 0.5178571428571429,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E3",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 58,
+      "losses": 54,
+      "decided": 112,
+      "rate": 0.5178571428571429,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "SAVED_ADJUSTED",
+      "policy": "REGISTERED_DIRECTION",
+      "wins": 58,
+      "losses": 54,
+      "decided": 112,
+      "rate": 0.5178571428571429,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "SAVED_ADJUSTED",
+      "policy": "REGISTERED_DIRECTION",
+      "wins": 58,
+      "losses": 54,
+      "decided": 112,
+      "rate": 0.5178571428571429,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-ALIGNED-FRESHNESS-v1:F3",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 57,
+      "losses": 55,
+      "decided": 112,
+      "rate": 0.5089285714285714,
+      "source": "reports/profile-increment-closure-next-02/B/aligned-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-ALIGNED-FRESHNESS-v1:F3",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 57,
+      "losses": 55,
+      "decided": 112,
+      "rate": 0.5089285714285714,
+      "source": "reports/profile-increment-closure-next-02/B/aligned-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R2",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 57,
+      "losses": 55,
+      "decided": 112,
+      "rate": 0.5089285714285714,
+      "source": "reports/profile-increment-to-release-01/B/opportunity-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R2",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 57,
+      "losses": 55,
+      "decided": 112,
+      "rate": 0.5089285714285714,
+      "source": "reports/profile-increment-to-release-01/B/opportunity-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-SOURCE-DEPTH-ROLE-INCREMENT-v1:S2",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 57,
+      "losses": 55,
+      "decided": 112,
+      "rate": 0.5089285714285714,
+      "source": "reports/next-generation-information-research-01/B/depth-role-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-SOURCE-DEPTH-ROLE-INCREMENT-v1:S2",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 57,
+      "losses": 55,
+      "decided": 112,
+      "rate": 0.5089285714285714,
+      "source": "reports/next-generation-information-research-01/B/depth-role-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-ALIGNED-FRESHNESS-v1:F2",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 56,
+      "losses": 56,
+      "decided": 112,
+      "rate": 0.5,
+      "source": "reports/profile-increment-closure-next-02/B/aligned-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-ALIGNED-FRESHNESS-v1:F2",
+      "policy": "P1_MEAN",
+      "wins": 56,
+      "losses": 56,
+      "decided": 112,
+      "rate": 0.5,
+      "source": "reports/profile-increment-closure-next-02/B/aligned-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-ALIGNED-FRESHNESS-v1:F2",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 56,
+      "losses": 56,
+      "decided": 112,
+      "rate": 0.5,
+      "source": "reports/profile-increment-closure-next-02/B/aligned-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "SAVED_RAW",
+      "policy": "REGISTERED_DIRECTION",
+      "wins": 56,
+      "losses": 56,
+      "decided": 112,
+      "rate": 0.5,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "SAVED_RAW",
+      "policy": "REGISTERED_DIRECTION",
+      "wins": 56,
+      "losses": 56,
+      "decided": 112,
+      "rate": 0.5,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R0",
+      "policy": "P1_MEAN",
+      "wins": 55,
+      "losses": 57,
+      "decided": 112,
+      "rate": 0.49107142857142855,
+      "source": "reports/profile-increment-to-release-01/B/opportunity-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E3",
+      "policy": "P1_MEAN",
+      "wins": 55,
+      "losses": 57,
+      "decided": 112,
+      "rate": 0.49107142857142855,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E3",
+      "policy": "P1_MEAN",
+      "wins": 55,
+      "losses": 57,
+      "decided": 112,
+      "rate": 0.49107142857142855,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "ALWAYS_UNDER",
+      "policy": "REGISTERED_DIRECTION",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "ALWAYS_UNDER",
+      "policy": "REGISTERED_DIRECTION",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-CHARTED-CATCHABILITY-CONTEXT-v1:F2",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-charting-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-CHARTED-CATCHABILITY-CONTEXT-v1:F2",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-charting-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-DEPTH-CATCHABILITY-v2:C1",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-completion-decision-01/B/depth-scores-v2/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-DEPTH-CATCHABILITY-v2:C1",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-completion-decision-01/B/depth-scores-v2/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-DEPTH-CATCHABILITY-v2:C2",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-completion-decision-01/B/depth-scores-v2/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-DEPTH-CATCHABILITY-v2:C2",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-completion-decision-01/B/depth-scores-v2/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R2",
+      "policy": "P1_MEAN",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/profile-increment-to-release-01/B/opportunity-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E1",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E1",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E1",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E1",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:P1",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:P1",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:P1",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:P1",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:P2",
+      "policy": "P1_MEAN",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:P2",
+      "policy": "P1_MEAN",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:P3",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:P3",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 54,
+      "losses": 58,
+      "decided": 112,
+      "rate": 0.48214285714285715,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-CHARTED-CATCHABILITY-CONTEXT-v1:F2",
+      "policy": "P1_MEAN",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/player-context-matchup-01/B/qb-charting-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-DEPTH-CATCHABILITY-v2:C2",
+      "policy": "P1_MEAN",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/player-context-completion-decision-01/B/depth-scores-v2/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-DEPTH-CATCHABILITY-v2:D2",
+      "policy": "P1_MEAN",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/player-context-completion-decision-01/B/depth-scores-v2/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R1",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/profile-increment-to-release-01/B/opportunity-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R1",
+      "policy": "P1_MEAN",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/profile-increment-to-release-01/B/opportunity-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R1",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/profile-increment-to-release-01/B/opportunity-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-SOURCE-DEPTH-ROLE-INCREMENT-v1:S1",
+      "policy": "P1_MEAN",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/next-generation-information-research-01/B/depth-role-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-SOURCE-DEPTH-ROLE-INCREMENT-v1:S2",
+      "policy": "P1_MEAN",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/next-generation-information-research-01/B/depth-role-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E2",
+      "policy": "P1_MEAN",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E2",
+      "policy": "P1_MEAN",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:P1",
+      "policy": "P1_MEAN",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:P1",
+      "policy": "P1_MEAN",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:P2",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:P2",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:P2",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:P2",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 53,
+      "losses": 59,
+      "decided": 112,
+      "rate": 0.4732142857142857,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-DEPTH-CATCHABILITY-v2:C1",
+      "policy": "P1_MEAN",
+      "wins": 52,
+      "losses": 60,
+      "decided": 112,
+      "rate": 0.4642857142857143,
+      "source": "reports/player-context-completion-decision-01/B/depth-scores-v2/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-DEPTH-CATCHABILITY-v2:D1",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 52,
+      "losses": 60,
+      "decided": 112,
+      "rate": 0.4642857142857143,
+      "source": "reports/player-context-completion-decision-01/B/depth-scores-v2/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-DEPTH-CATCHABILITY-v2:D1",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 52,
+      "losses": 60,
+      "decided": 112,
+      "rate": 0.4642857142857143,
+      "source": "reports/player-context-completion-decision-01/B/depth-scores-v2/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-SOURCE-DEPTH-ROLE-INCREMENT-v1:S1",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 52,
+      "losses": 60,
+      "decided": 112,
+      "rate": 0.4642857142857143,
+      "source": "reports/next-generation-information-research-01/B/depth-role-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-SOURCE-DEPTH-ROLE-INCREMENT-v1:S1",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 52,
+      "losses": 60,
+      "decided": 112,
+      "rate": 0.4642857142857143,
+      "source": "reports/next-generation-information-research-01/B/depth-role-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:P3",
+      "policy": "P1_MEAN",
+      "wins": 52,
+      "losses": 60,
+      "decided": 112,
+      "rate": 0.4642857142857143,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-ALIGNED-FRESHNESS-v1:F3",
+      "policy": "P1_MEAN",
+      "wins": 51,
+      "losses": 61,
+      "decided": 112,
+      "rate": 0.45535714285714285,
+      "source": "reports/profile-increment-closure-next-02/B/aligned-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-CHARTED-CATCHABILITY-CONTEXT-v1:F1",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 51,
+      "losses": 61,
+      "decided": 112,
+      "rate": 0.45535714285714285,
+      "source": "reports/player-context-matchup-01/B/qb-charting-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-CHARTED-CATCHABILITY-CONTEXT-v1:F1",
+      "policy": "P1_MEAN",
+      "wins": 51,
+      "losses": 61,
+      "decided": 112,
+      "rate": 0.45535714285714285,
+      "source": "reports/player-context-matchup-01/B/qb-charting-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-CHARTED-CATCHABILITY-CONTEXT-v1:F1",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 51,
+      "losses": 61,
+      "decided": 112,
+      "rate": 0.45535714285714285,
+      "source": "reports/player-context-matchup-01/B/qb-charting-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-DEPTH-CATCHABILITY-v2:D1",
+      "policy": "P1_MEAN",
+      "wins": 50,
+      "losses": 62,
+      "decided": 112,
+      "rate": 0.44642857142857145,
+      "source": "reports/player-context-completion-decision-01/B/depth-scores-v2/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E1",
+      "policy": "P1_MEAN",
+      "wins": 50,
+      "losses": 62,
+      "decided": 112,
+      "rate": 0.44642857142857145,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E1",
+      "policy": "P1_MEAN",
+      "wins": 50,
+      "losses": 62,
+      "decided": 112,
+      "rate": 0.44642857142857145,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E2",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 50,
+      "losses": 62,
+      "decided": 112,
+      "rate": 0.44642857142857145,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E2",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 50,
+      "losses": 62,
+      "decided": 112,
+      "rate": 0.44642857142857145,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E2",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 50,
+      "losses": 62,
+      "decided": 112,
+      "rate": 0.44642857142857145,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E2",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 50,
+      "losses": 62,
+      "decided": 112,
+      "rate": 0.44642857142857145,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-OWN-INFORMATION-EMPIRICAL8-v1",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 49,
+      "losses": 63,
+      "decided": 112,
+      "rate": 0.4375,
+      "source": "reports/player-context-completion-decision-01/B/depth-scores-v2/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-DEPTH-CATCHABILITY-v2:D2",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 49,
+      "losses": 63,
+      "decided": 112,
+      "rate": 0.4375,
+      "source": "reports/player-context-completion-decision-01/B/depth-scores-v2/SCORES.json"
+    },
+    {
+      "procedure": "B-QB-DEPTH-CATCHABILITY-v2:D2",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 49,
+      "losses": 63,
+      "decided": 112,
+      "rate": 0.4375,
+      "source": "reports/player-context-completion-decision-01/B/depth-scores-v2/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E0",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 49,
+      "losses": 63,
+      "decided": 112,
+      "rate": 0.4375,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E0",
+      "policy": "P1_LOWER_MEDIAN",
+      "wins": 49,
+      "losses": 63,
+      "decided": 112,
+      "rate": 0.4375,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E0",
+      "policy": "P1_MEAN",
+      "wins": 49,
+      "losses": 63,
+      "decided": 112,
+      "rate": 0.4375,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E0",
+      "policy": "P1_MEAN",
+      "wins": 49,
+      "losses": 63,
+      "decided": 112,
+      "rate": 0.4375,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E0",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 49,
+      "losses": 63,
+      "decided": 112,
+      "rate": 0.4375,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    },
+    {
+      "procedure": "B-player-context-matchup-01-v1:E0",
+      "policy": "P2_STATISTICAL_LAW",
+      "wins": 49,
+      "losses": 63,
+      "decided": 112,
+      "rate": 0.4375,
+      "source": "reports/player-context-matchup-01/B/qb-scores-v1/SCORES.json"
+    }
+  ],
+  "bindings": [
+    {
+      "path": "tools/run_qb_charting_context_wave.py",
+      "bytes": 9871,
+      "sha256": "1b8469509a3a41c0f62ba2e19a677f09e5ba1d3791bbf891a1cd7e30662155e0"
+    },
+    {
+      "path": "tools/qualify_player_context_sources.py",
+      "bytes": 16458,
+      "sha256": "e746fc7d2f8fee1fcd1c5a969484a5d8dc7767f15c4fcfbe502eae566fed2cf0"
+    },
+    {
+      "path": "tools/run_qb_depth_catchability_v2.py",
+      "bytes": 10232,
+      "sha256": "b1094f6175b16596c794a209345ae0bf0e0906ab7f6ac072eff5e5db2d26f47a"
+    },
+    {
+      "path": "tools/prepare_qb_depth_charting_v2.py",
+      "bytes": 4840,
+      "sha256": "99a477cd358c4561cc850b46134064e551ef693f015d6d20ae322bf0eeb44962"
+    },
+    {
+      "path": "nfl_v2/qb_depth_catchability.py",
+      "bytes": 8083,
+      "sha256": "9494f1d7be9b67ddbaa824f9be2f44b4ae5d2f8bb3b2f2e15445ec7675fe9a82"
+    },
+    {
+      "path": "nfl_v2/qb_depth_catchability_v2.py",
+      "bytes": 2339,
+      "sha256": "707efe03dc45b9ef557eb1c1cbaa055befde00dac77f97acd6e06b35f4b083aa"
+    },
+    {
+      "path": "nfl_v2/player_context_matchup.py",
+      "bytes": 17185,
+      "sha256": "3db66e8d7c75f444d87f4792add9096a9d04d0390902f67ce21248c206476f29"
+    },
+    {
+      "path": "nfl_v2/qb_opportunity_increment.py",
+      "bytes": 3069,
+      "sha256": "14748e8103fdfbcd1e8be7e180de9d129aded5502d5895ee6fb37513f1b1b806"
+    },
+    {
+      "path": "nfl_v2/passing_opportunity_profiles.py",
+      "bytes": 13692,
+      "sha256": "08c058d73d64973f46f5fae3f698ea850d96cbd114aa0f292e9c7c11df025eff"
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-charting-wave-v1/FROZEN_PROTOCOL.json",
+      "bytes": 2304,
+      "sha256": "0c38adfe301aadbe04e6a20041d13828a86a743d7a8afbf680aa395ea7f6d302"
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-charting-wave-v1/SOURCE_DENOMINATOR_AND_CLOCK_SCOPE_V2.json",
+      "bytes": 1186,
+      "sha256": "ab00862021238cc48227b0585ffdc1854ae81ec42e3f344605e06c7e58de89d5"
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-charting-scores-v1/SCORES.json",
+      "bytes": 1363493,
+      "sha256": "604c0d9b25f561ae43bdab96e7dadff497f820837e5857696c8ca67602a42bf1"
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-fields-v3/SOURCE_FIELD_WEEK_COVERAGE.json",
+      "bytes": 666481,
+      "sha256": "896d6d05d7417b404440cf8b26419edbbfdb30cc729a13367756ba0c15ac664c"
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-fields-v3/FTN_DERIVED_QB_GAME_INPUTS.json.gz",
+      "bytes": 84761,
+      "sha256": "04bdd058d23411c8ebfc76fe599edb07e777803cfca7ffcef859ea9c26c2c750"
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-fields-v3/DERIVED_QB_GAME_INPUTS.json.gz",
+      "bytes": 246610,
+      "sha256": "f23bb72f05f398c7108700e10fa7bf63e233aca57bc67eb6820a38c9f212af90"
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/DATA_LICENSES_AND_ATTRIBUTION_V2.md",
+      "bytes": 905,
+      "sha256": "f5b7e26f2d654ff45d3ff73d88f3bddfb1ca52c92d451aa3099e7f38ef10bfdb"
+    },
+    {
+      "path": "reports/player-context-completion-decision-01/B/depth-wave-v2/FROZEN_PROTOCOL.json",
+      "bytes": 5278,
+      "sha256": "c4dc9abb0df01600dfb62f8ff80a11d6d4be50bd8b2a3e35ef8b9c1d3e77d85b"
+    },
+    {
+      "path": "reports/player-context-completion-decision-01/B/depth-scores-v2/SCORES.json",
+      "bytes": 4314875,
+      "sha256": "5a8bdda9f2169e01e1a36ac9c2b844ff3f3ede2db1e83ec494364cf3361b0749"
+    },
+    {
+      "path": "reports/player-context-completion-decision-01/B/COMPLETION_AND_DECISIONS_REPORT.md",
+      "bytes": 35948,
+      "sha256": "8ea0f32eb66881d7466aa2e3b4e0a66dd571fa495e1ee6e939dd738a206ade36"
+    },
+    {
+      "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/FROZEN_PROTOCOL.json",
+      "bytes": 9399,
+      "sha256": "be1b14890a83c8acdb62d96ee3238172ea95c7303283d73098e548cc263fb0b6"
+    },
+    {
+      "path": "reports/profile-increment-to-release-01/B/opportunity-scores-v1/SCORES.json",
+      "bytes": 5189094,
+      "sha256": "dff093f993125c1ecda45bd3914d1e610be62de9ad0811e3bada3c5e5b23b94b"
+    },
+    {
+      "path": "reports/profile-increment-closure-next-02/B/aligned-wave-v1/FROZEN_PROTOCOL.json",
+      "bytes": 10569,
+      "sha256": "8e98084c0e986901acd24f577670fbac5bdf7a2c4798e09f0229efa39e88df43"
+    },
+    {
+      "path": "reports/profile-increment-closure-next-02/B/aligned-scores-v1/SCORES.json",
+      "bytes": 2765662,
+      "sha256": "59d1cf23d0d531bd9da4cdb0ca2de4bd48c4d2d8785ce2be652b388c7e52d2a4"
+    },
+    {
+      "path": "reports/next-generation-information-research-01/B/depth-role-scores-v1/SCORES.json",
+      "bytes": 717881,
+      "sha256": "b0170fedbb58adc277690038e862f5f6ff0e96c81a13c33516ea1432b0702c20"
+    },
+    {
+      "path": "reports/next-generation-information-research-01/B/B_NEXT_GENERATION_CHECKPOINT_V1.md",
+      "bytes": 12251,
+      "sha256": "2512d522b3258211451873d3fc19afa8799623563e5e6d3e4b22034a9815af1d"
+    }
+  ],
+  "resources": {
+    "new_raw_downloads": 0,
+    "new_fits": 0,
+    "new_forecasts": 0,
+    "new_NFL_grades": 0,
+    "new_NFL_games_or_weeks": 0,
+    "new_production_writes": 0
+  }
+}

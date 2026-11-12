@@ -1,5 +1,19 @@
 # B read-only C and original-site evidence refresh
 
+## Superseding receipt: November 12, 02:26 UTC peer snapshot
+
+The website owner subsequently published the actual four-week changed-selector package in comments [6812058949](https://github.com/NickNicky19/nicks-expert-nfl-picks/pull/1#issuecomment-6812058949) and [6812397309](https://github.com/NickNicky19/nicks-expert-nfl-picks/pull/1#issuecomment-6812397309). B independently reconstructed its calculation from all 29 exact public input bindings: all **192 policy-pick identity/value/side/result records** match the owner's canonical commitment. Both full lists also match the actual unchanged production ranker; raw-presence grading was independently checked on every row.
+
+The saved-point control is **48–45/93 (51.61%)**; the C P1 WR/TE mean variant is **50–43/93 (53.76%)**. Both select 96 rows and retain three unknowns. Eight replacements change 3–5 into 5–3, a two-win observed gain. Candidate model rows selected by W5/6/7/8 are **2/4/2/0**; W8 uses fallback throughout. This is a four-week conditional retrospective diagnostic, not five-week qualification, authenticated historical issuance, current-v2 incumbent superiority or a deployment. No formal uncertainty interval was supplied by the owner; four exposed weekly clusters remain a material limit.
+
+The new website receipt acknowledges A's exact completed B F0–F3/C04 joins and the published Count A corrector/extension source package. B read and hash-verified the 14,189-byte extension manifest and 31,195-byte corrector. Native extension, current inference, durable Count A feed and consumer admission remain unimplemented or unverified; restoration/source-publication work must not be requested again. C's unchanged canonical pointer still has the stale joins-pending text. C remains the one shared decision coordinator.
+
+The fresh B 50-forecast anytime/empirical shadow packet at `40364b7ca7cae5f9d980da82822e1da832901f5a` was publicly readable before its expiry. It contains zero offers, selected picks or grades. Neither inspected C records nor the latest website comment acknowledges that packet; public availability is not peer receipt.
+
+[Final scope/operational readback](FINAL_OWNER_SCOPE_READBACK_V1.json) · [Independent selector result and exact disagreements](selector-replay-review-v1/B_INDEPENDENT_SELECTOR_VERIFICATION_V1.json). Source comments, protocol, bindings and independent verification code are retained in `selector-replay-review-v1`; the 10 MB of underlying public input bodies and complete pick lists remain transient rather than duplicated in B. Reproduction must stage that folder under `/tmp` before restoring the bound inputs and running its three documented commands.
+
+The following earlier observations and static served witnesses are retained as dated evidence. In particular, the earlier “no newer replay found” statement is superseded by the actual package and verification above. No original predictions, selections or official grade versions were changed.
+
 This is a source/consumer verification contribution to C's existing shared decision record, not another category championship or deployment. Peer repositories remained read-only. No fits, inference, grades, source-provider collection, workflow dispatch, scheduler or production change occurred.
 
 C's actual published main is `d9309bb8676fcd2102bfdc9b45adb0c504d0a498`, with no open PR observed in the bounded refresh. The common protocol and scorer remain unchanged. Its 72-row existing category/product table explicitly covers named A panels with B/C/incumbent comparisons separate; it does not establish a universal cross-session champion. Its current timing qualification still lists the new A joins as pending. That published status must be reconciled with A's supplied executed revision, not used to request duplicate scoring. [Canonical scope/bindings](C_CANONICAL_SCOPE_AND_BINDINGS_V1.json).

@@ -1,0 +1,61 @@
+{
+  "id": "B-CATEGORY-OWNED-CHECKS-v1",
+  "at_UTC": "2026-11-12T02:35:04.473751+00:00",
+  "checks": [
+    {
+      "command": "python -m unittest discover -s tests -q",
+      "state": "PASS",
+      "tests": 539,
+      "seconds": 14.885
+    },
+    {
+      "command": "python tools/validate_checkpoint.py",
+      "state": "PASS",
+      "JSON_files_parsed": 31537,
+      "scope": "Initial checkpoint/schema/privacy contracts; does not independently establish NFL truth"
+    },
+    {
+      "command": "python tools/check_result_index_coverage.py",
+      "state": "PASS",
+      "indexed_records": 613572,
+      "registered_score_artifacts": 225
+    },
+    {
+      "command": "python tools/check_analysis_index_coverage.py",
+      "state": "PASS",
+      "canonical_views": 124630,
+      "derived_comparisons": 21840
+    },
+    {
+      "command": "python tools/check_prop_scoreboard_coverage.py",
+      "state": "PASS",
+      "new_grades": 0,
+      "NFL_outcome_rows_read": 0
+    },
+    {
+      "command": "git diff --check",
+      "state": "PASS"
+    },
+    {
+      "command": "Independent source and feature prefit sample, pure JSON postfit restoration",
+      "state": "PASS",
+      "forecasts_checked": 50,
+      "max_absolute_error": 0,
+      "new_fit_calls": 0
+    },
+    {
+      "command": "Actual website selectedPropGap function in Node24.19, pinned app.js",
+      "state": "PASS",
+      "synthetic_cases": 9,
+      "new_NFL_observations": 0
+    }
+  ],
+  "CI_for_capture_commit": {
+    "commit": "40364b7ca7cae5f9d980da82822e1da832901f5a",
+    "push_run": 43141191290,
+    "pull_request_run": 43141210721,
+    "state": "success",
+    "verification_recorded_UTC": "2026-11-12T02:35:04.473751+00:00"
+  },
+  "scope": "Scientific scores and result indexes unchanged; append-only metadata review plus one separately registered ungraded current-origin delivery; final publication CI recorded separately"
+}

@@ -1,0 +1,102 @@
+{
+  "scope": "ActualpublicmainandPR1componentcalls;softwarefixturesnotNFLregrades",
+  "checks": [
+    {
+      "source": "main",
+      "fixture": "absent",
+      "observed": {
+        "value": null,
+        "state": "unsupported_absence"
+      }
+    },
+    {
+      "source": "main",
+      "fixture": "explicit_null",
+      "observed": {
+        "value": null,
+        "state": "explicit_unknown"
+      }
+    },
+    {
+      "source": "main",
+      "fixture": "reported_zero",
+      "observed": {
+        "value": 0,
+        "state": "reported_zero"
+      }
+    },
+    {
+      "source": "main",
+      "fixture": "reported_positive",
+      "observed": {
+        "value": 2,
+        "state": "reported_value"
+      }
+    },
+    {
+      "source": "main",
+      "fixture": "nonfinite",
+      "observed": {
+        "value": null,
+        "state": "invalid_value"
+      }
+    },
+    {
+      "source": "main",
+      "fixture": "boolean",
+      "observed": {
+        "value": null,
+        "state": "invalid_value"
+      }
+    },
+    {
+      "source": "PR1",
+      "fixture": "absent",
+      "observed": {
+        "value": 0,
+        "state": "inferred_sparse_zero_legacy_assumption"
+      }
+    },
+    {
+      "source": "PR1",
+      "fixture": "explicit_null",
+      "observed": {
+        "value": null,
+        "state": "explicit_unknown"
+      }
+    },
+    {
+      "source": "PR1",
+      "fixture": "reported_zero",
+      "observed": {
+        "value": 0,
+        "state": "reported_zero"
+      }
+    },
+    {
+      "source": "PR1",
+      "fixture": "reported_positive",
+      "observed": {
+        "value": 2,
+        "state": "reported_value"
+      }
+    },
+    {
+      "source": "PR1",
+      "fixture": "nonfinite",
+      "observed": {
+        "value": null,
+        "state": "invalid_value"
+      }
+    },
+    {
+      "source": "PR1",
+      "fixture": "boolean",
+      "observed": {
+        "value": null,
+        "state": "invalid_value"
+      }
+    }
+  ],
+  "new_NFL_scores": 0
+}

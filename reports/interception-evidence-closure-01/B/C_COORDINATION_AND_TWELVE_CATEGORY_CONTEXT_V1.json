@@ -1,0 +1,124 @@
+{
+  "checked_UTC": "2026-11-12T21:12:44.375678+00:00",
+  "repository": "NickNicky19/NFL-forecasting-NGS-C",
+  "commit": "efa487ad1b412038c3845bb35dd55cbdd380dd3e",
+  "source_bindings": [
+    {
+      "path": "reports/abc-championship/CURRENT_PROTOCOL.json",
+      "bytes": 79002,
+      "sha256": "5f94a159a1b7d48f6d10c49b92d754caac8d55756ebd262433089f284b55d832",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/efa487ad1b412038c3845bb35dd55cbdd380dd3e/reports/abc-championship/CURRENT_PROTOCOL.json"
+    },
+    {
+      "path": "reports/category-decision-release-01/CATEGORY_PRODUCT_DECISIONS.json",
+      "bytes": 706901,
+      "sha256": "dbd89914d1b445dc16a92bbfab0dc752aa9576545c3ccf9a1321d3ee1f62afdf",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/efa487ad1b412038c3845bb35dd55cbdd380dd3e/reports/category-decision-release-01/CATEGORY_PRODUCT_DECISIONS.json"
+    }
+  ],
+  "protocol_id": "ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1",
+  "canonical_protocol": {
+    "path": "reports/abc-championship/PROTOCOL-v2-C-1.json",
+    "SHA256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1"
+  },
+  "canonical_scorer": {
+    "path": "src/abc_championship_v2.py",
+    "SHA256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce"
+  },
+  "common_evaluator_changed_by_B": false,
+  "C_nextgeneration": {
+    "id": "NFL-NEXT-GENERATION-INFORMATION-RESEARCH-01-C/v1",
+    "stage": "COMPLETED_BOUNDED_FEASIBILITY;HISTORICAL_PREDICTIVE_TEST_SOURCE_BLOCKED",
+    "report": {
+      "path": "reports/next-generation-information-01/README.md",
+      "bytes": 5340,
+      "SHA256": "7add1ef7afbc6e374412dcc654579f63934057345daa3809cb08d2ed694ed339"
+    },
+    "feasibility": {
+      "path": "reports/next-generation-information-01/NEW-INFORMATION-FEASIBILITY.json",
+      "bytes": 11249,
+      "SHA256": "4295137abaf5eece50332588fc1cfe366fdfc9436d9a7361ec297ef0526f0c9b"
+    },
+    "registration": {
+      "path": "reports/next-generation-information-01/REGISTRATION.json",
+      "bytes": 2888,
+      "SHA256": "f3fed3ed73f2d69d10429b6363cb721cb133e7fc7746af829529024610302362"
+    },
+    "scope": "C receiving-personnel feasibility only; no changed procedure/score/scorer/release roster or original-site activation.",
+    "next_owner": "C source/intake and pregame query owners",
+    "required": "Immutable predecision report/status versions plus complete event-effective teammate universe; otherwise permitted prospective source qualification.",
+    "new_fits": 0,
+    "new_scores_or_weeks": 0,
+    "actual_comparison": "NOT_EXECUTED_SOURCE_BLOCKED;NOT_DISPROVED",
+    "manifest": {
+      "path": "reports/next-generation-information-01/MANIFEST.json",
+      "bytes": 8340,
+      "SHA256": "923a5f71f6a10a794d3a6bbbbd1ee0ddede381ee1b279357aee135f9d39e6d7d"
+    }
+  },
+  "categories": [
+    {
+      "category": "pass_yd",
+      "decision": "SHADOW",
+      "exact_procedure": "A::pass_yd::a628c415c7f27ddaab9a9a4296cb189cc56c885c67aa6ded87928e08ac291341::HGB_MAE_DIRECT::mae_objective_point"
+    },
+    {
+      "category": "pass_td",
+      "decision": "BLOCKED",
+      "exact_procedure": "A::pass_td::f8607aa99a94c7c1c9ab5c89599e07eba9b15527749b092b225f368032881e83::COUNT_A_MEAN::mean_objective_point"
+    },
+    {
+      "category": "pass_cmp",
+      "decision": "SHADOW",
+      "exact_procedure": "A::pass_cmp::8aeaa5083a4dc10d5e19f13cef30bc6607f6f5e1e40582059876583526927da6::CATBOOST_MEDIUM::mean_objective_point"
+    },
+    {
+      "category": "pass_att",
+      "decision": "KEEP_INCUMBENT",
+      "exact_procedure": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median"
+    },
+    {
+      "category": "pass_int",
+      "decision": "SHADOW",
+      "exact_procedure": "A::pass_int::82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04::LEAF_CDF::mean"
+    },
+    {
+      "category": "rush_yd",
+      "decision": "KEEP_INCUMBENT",
+      "exact_procedure": "A::rush_yd::d253d5e193e297b952ca49b6905186329598289ce0bebac8698c3c30ecea3681::EQUAL_CDF_CAT_HGB_POINT::empirical_point_blend"
+    },
+    {
+      "category": "rush_att",
+      "decision": "SHADOW",
+      "exact_procedure": "A::rush_att::607c0a1288fd183d4e6de40c1e03851e9c5ed340d226fb2095f472ec7865834a::BACKFIELD_CDF::mean"
+    },
+    {
+      "category": "rec",
+      "decision": "SHADOW",
+      "exact_procedure": "C::PLAYER-CONTEXT-MATCHUP-01::v1.1::P1::mean"
+    },
+    {
+      "category": "rec_yd",
+      "decision": "SHADOW",
+      "exact_procedure": "A::rec_yd::82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04::LEAF_CDF::mean"
+    },
+    {
+      "category": "rush_rec_yd",
+      "decision": "SHADOW",
+      "exact_procedure": "A::rush_rec_yd::39328fd10db4c3c4f7d563fcb80520a95d5faf6f1f6967b507d9b7e74eda9f35::RESPONSE_CDF::mean"
+    },
+    {
+      "category": "anytime_td",
+      "decision": "ABSTAIN",
+      "exact_procedure": null
+    },
+    {
+      "category": "nick-chart-ppr-v1",
+      "decision": "ABSTAIN",
+      "exact_procedure": null
+    }
+  ],
+  "current_INT_audit_admission": "Bnew86-casecorrectionnotyetpublishedatreadback;noCackassumed",
+  "superseding_producer_scope": "CboundolderPR88stateissupersededforoperationalreadbackbyAexactPR90/91and18:26upload401receipts;do nottreatoldCproducerparagraphascurrentproof.",
+  "original_website_owner": "Retainedsoleoriginalsiteowner;Cseparateresearchsiteauthoritynottransferred."
+}

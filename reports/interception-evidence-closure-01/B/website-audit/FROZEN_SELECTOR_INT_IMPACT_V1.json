@@ -1,0 +1,58 @@
+{
+  "state": "PARTIAL_EXACT_IMPACT_CONFIRMED_WITHOUT_SELECTOR_REPLAY",
+  "frozen_policy": "NFL-WEB-EXACT-SELECTOR-REC-P1-MEAN-WRTE-20261112-v1",
+  "frozen_canonical_membership_sha256": "c88fc8d3ccf3cab3f1b9919e7da5dafb02fa1cc78de651ee230cee223c9453c2",
+  "native_three_top_INT_flags_by_week": {
+    "5": 2,
+    "6": 1,
+    "7": 0,
+    "8": 0
+  },
+  "frozen_unknowns_per_policy_by_week": {
+    "5": 0,
+    "6": 1,
+    "7": 0,
+    "8": 2
+  },
+  "native_three_equal_frozen_three_unknowns": false,
+  "exact_control_unknown_match": {
+    "public_source": "reports/category-decision-release-01/B/peer-live/selector-replay-review-v1/B_INDEPENDENT_SELECTOR_VERIFICATION_V1.json",
+    "public_field": "deterministic_examples.unknown",
+    "week": 6,
+    "game_id": "401872999",
+    "player_id": "11559",
+    "category": "pass_int",
+    "side": "over",
+    "line": 0.5,
+    "line_from": "dk",
+    "previous_state": "unresolved",
+    "supported_corrected_count": 0,
+    "corrected_state": "LOSS",
+    "source_qualified_label_sha256": "a57e92a841e86b34d6ff872075cb47d1be92d88097c40d58bb7372372ca742e1"
+  },
+  "candidate_common_membership_inference": "Same one unknown is common: bothchangedmembershippartitionshave0unknown, bothfullpolicieshave1unknown, unchangedcommonscore/side. No newmapping or linechange.",
+  "matched_policy_records": 2,
+  "matched_unique_player_games": 1,
+  "directly_read_exact_control_examples": 1,
+  "candidate_membership_inferred_from_prior_partition_counts": 1,
+  "independent_full192_row_access_now": false,
+  "unresolved_impact_scope": "The twoW8unknownrecordsperpolicy are notidentifiedbythe availablepublishedexample; one priorcategorytable haspass_int1,butids/line/statecannotbeinferredfromcounts.",
+  "exact_missing_artifact": "Originalwebsiteowner complete192canonicalselectedrow manifest or immutablePICKS.local/B_CANONICAL_PICKS.local equivalent matchingc88fc8d3 commitment.",
+  "next_executor": "Originalwebsiteowner appends source-supported gradingversion on frozenrecords; B verifies receivedrows, C recordsscope.",
+  "canonical_replay_rewritten": false,
+  "new_canonical_policy_totals_published": false,
+  "new_ranker_calls": 0,
+  "new_selector_replays": 0,
+  "new_NFL_weeks": 0,
+  "native_flags_not_retroactively_substituted": true,
+  "source_bindings": [
+    {
+      "path": "reports/category-decision-release-01/B/peer-live/selector-replay-review-v1/B_INDEPENDENT_SELECTOR_VERIFICATION_V1.json",
+      "sha256": "e0aef529f6a354fd6cd6a66a7f4a76737a840cb64cf083a67e562a251560c643"
+    },
+    {
+      "path": "reports/follow-through-release-defensive-source-01/B/selector-review/SELECTOR_CONTRIBUTION_ACCOUNTING_V1.json",
+      "sha256": "bff965845244f098acf17734ce629dd950eaa927b96d267154fc09d34ecd5dd4"
+    }
+  ]
+}

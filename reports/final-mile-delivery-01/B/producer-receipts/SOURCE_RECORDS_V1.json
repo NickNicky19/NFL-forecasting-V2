@@ -1,0 +1,287 @@
+{
+  "pr": {
+    "number": 88,
+    "url": "https://github.com/NickNicky19/NFL-forecasting/pull/88",
+    "state": "open",
+    "merged": false,
+    "merged_at": null,
+    "mergeable": true,
+    "mergeable_state": "clean",
+    "head": "af405c4604f6eac935e594f1acd3ab492eef412c",
+    "head_ref": "research/count-a-native-shadow-20261112-v1",
+    "base": "fa91988e65939d2b3516371a90a6380aeee3acb3",
+    "base_ref": "research/weekly-storage-probe-v1",
+    "updated_at": "2026-11-12T06:06:10Z"
+  },
+  "registered_branch": {
+    "ref": "refs/heads/research/weekly-storage-probe-v1",
+    "sha": "fa91988e65939d2b3516371a90a6380aeee3acb3"
+  },
+  "lab_state": {
+    "name": "lab-state",
+    "sha": "275aa84b27c4239d3b2dfea07755734d9db0ac7c"
+  },
+  "main": {
+    "name": "main",
+    "sha": "f37279a093fcdddece1e369d42ce54349cb1913c"
+  },
+  "ci": {
+    "id": 43163271248,
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "af405c4604f6eac935e594f1acd3ab492eef412c",
+    "created_at": "2026-11-12T05:43:27Z",
+    "updated_at": "2026-11-12T06:05:00Z",
+    "jobs": [
+      {
+        "id": 131002664720,
+        "name": "collect",
+        "conclusion": "success"
+      },
+      {
+        "id": 131002665028,
+        "name": "source-shard-1",
+        "conclusion": "success"
+      },
+      {
+        "id": 131002665095,
+        "name": "source-shard-0",
+        "conclusion": "success"
+      },
+      {
+        "id": 131002665105,
+        "name": "source-shard-2",
+        "conclusion": "success"
+      },
+      {
+        "id": 131002665123,
+        "name": "source-shard-3",
+        "conclusion": "success"
+      },
+      {
+        "id": 131006669512,
+        "name": "offline",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "native_runs": [
+    {
+      "id": 41564933010,
+      "name": "NFL research lab",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "head_sha": "a2ab7d4eeb01b1af7f76af4b8090404b4f096f50",
+      "created_at": "2026-11-03T02:15:08Z",
+      "updated_at": "2026-11-03T02:15:59Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 41563998291,
+      "name": "Audit source checks",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "head_sha": "a2ab7d4eeb01b1af7f76af4b8090404b4f096f50",
+      "created_at": "2026-11-03T02:06:15Z",
+      "updated_at": "2026-11-03T02:21:41Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 41552796382,
+      "name": "NFL research lab",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "head_sha": "dd88e1235fdd7c265c02963031da214b04632404",
+      "created_at": "2026-11-03T00:25:53Z",
+      "updated_at": "2026-11-03T00:29:51Z",
+      "conclusion": "failure"
+    },
+    {
+      "id": 41550938770,
+      "name": "NFL research lab",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "head_sha": "dd88e1235fdd7c265c02963031da214b04632404",
+      "created_at": "2026-11-03T00:10:35Z",
+      "updated_at": "2026-11-03T00:13:25Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 41550195184,
+      "name": "NFL research lab",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "head_sha": "dd88e1235fdd7c265c02963031da214b04632404",
+      "created_at": "2026-11-03T00:04:40Z",
+      "updated_at": "2026-11-03T00:05:35Z",
+      "conclusion": "success"
+    }
+  ],
+  "main_parent_runs": [
+    {
+      "id": 43090797096,
+      "name": "NFL research lab",
+      "event": "schedule",
+      "status": "completed",
+      "head_sha": "f37279a093fcdddece1e369d42ce54349cb1913c",
+      "created_at": "2026-11-11T19:49:41Z",
+      "updated_at": "2026-11-11T19:49:58Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 42890423270,
+      "name": "NFL research lab",
+      "event": "schedule",
+      "status": "completed",
+      "head_sha": "f37279a093fcdddece1e369d42ce54349cb1913c",
+      "created_at": "2026-11-10T19:57:24Z",
+      "updated_at": "2026-11-10T19:57:36Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 42713797329,
+      "name": "NFL research lab",
+      "event": "schedule",
+      "status": "completed",
+      "head_sha": "f37279a093fcdddece1e369d42ce54349cb1913c",
+      "created_at": "2026-11-09T22:39:17Z",
+      "updated_at": "2026-11-09T22:39:32Z",
+      "conclusion": "success"
+    }
+  ],
+  "tree": {
+    "truncated": false,
+    "paths": 776,
+    "count_a_paths": []
+  },
+  "feed_route_results": [
+    {
+      "path": "state/public/count-a-mean-shadow-v1/2026-W10",
+      "ref": "275aa84b27c4239d3b2dfea07755734d9db0ac7c",
+      "result": {
+        "error": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#get-repository-content\",\"status\":\"404\"}",
+        "error_code": "NOT_FOUND",
+        "error_data": {
+          "message": "Not Found",
+          "documentation_url": "https://docs.github.com/rest/repos/contents#get-repository-content",
+          "status": "404"
+        }
+      }
+    },
+    {
+      "path": "state/public/weekly-adaptive-v1/2026-W10",
+      "ref": "275aa84b27c4239d3b2dfea07755734d9db0ac7c",
+      "result": {
+        "error": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#get-repository-content\",\"status\":\"404\"}",
+        "error_code": "NOT_FOUND",
+        "error_data": {
+          "message": "Not Found",
+          "documentation_url": "https://docs.github.com/rest/repos/contents#get-repository-content",
+          "status": "404"
+        }
+      }
+    }
+  ],
+  "changed_paths": [
+    {
+      "path": "config/weekly-mae-display-core3-v1.json",
+      "git_blob_sha": "f59e8d82af969d80b69a1104f49c1d4c2d56ebe4",
+      "status": "modified"
+    },
+    {
+      "path": "docs/count-a-native-shadow-v1.md",
+      "git_blob_sha": "9e8ef289b8bf7c5f6e70eab47ede14f9ee8a6e05",
+      "status": "added"
+    },
+    {
+      "path": "nfl_lab/audit_weekly_archive_v1.py",
+      "git_blob_sha": "5d4d65261d63378ae88281e310c65b315c841801",
+      "status": "modified"
+    },
+    {
+      "path": "nfl_lab/audit_weekly_controller_v1.py",
+      "git_blob_sha": "e2b069c2452a13fbb6e695e644ed060dbdd3a9f0",
+      "status": "modified"
+    },
+    {
+      "path": "nfl_lab/audit_weekly_delivery_v1.py",
+      "git_blob_sha": "a5416ebda558e6deb3fb332d34f42c6352ea6bbc",
+      "status": "modified"
+    },
+    {
+      "path": "nfl_lab/audit_weekly_grade_history_v1.py",
+      "git_blob_sha": "1132a3f0b415b0f4f5b17cbb95175d522a6c8c8a",
+      "status": "modified"
+    },
+    {
+      "path": "nfl_lab/audit_weekly_hosted_v1.py",
+      "git_blob_sha": "33cc5432a7005f3048491c0e098bb7e24f99c8eb",
+      "status": "modified"
+    },
+    {
+      "path": "nfl_lab/audit_weekly_runtime_v1.py",
+      "git_blob_sha": "ad5172530e4de4b558a7b6e9b80767ce72627677",
+      "status": "modified"
+    },
+    {
+      "path": "nfl_lab/audit_weekly_template_v1.py",
+      "git_blob_sha": "0d5940542b9ab5cf0a78cc619f1b4c9748f11a45",
+      "status": "modified"
+    },
+    {
+      "path": "nfl_lab/count_a_mean_export_adapter_v1.py",
+      "git_blob_sha": "8ddba67130cc8085cb9c018c1a955f6fefd84329",
+      "status": "added"
+    },
+    {
+      "path": "nfl_lab/count_a_native_extension_v1.py",
+      "git_blob_sha": "69a3d44a656e00c739ffe08a3cfd680c688d2450",
+      "status": "added"
+    },
+    {
+      "path": "reports/abc-championship/follow-through-release-defensive-source-01/producer/COUNT_A_NATIVE_REVIEW_SOURCE_MANIFEST_V1.json",
+      "git_blob_sha": "10b44377de40b2e43b3672f7d3c77b626fd45eb5",
+      "status": "added"
+    },
+    {
+      "path": "reports/abc-championship/follow-through-release-defensive-source-01/producer/COUNT_A_NATIVE_REVIEW_SOURCE_MANIFEST_V2.json",
+      "git_blob_sha": "2135bc06a092e98542f9904247df9a053ba792d3",
+      "status": "added"
+    },
+    {
+      "path": "reports/abc-championship/follow-through-release-defensive-source-01/review/COUNTA_DATA_CONTRACT_REVIEW_V1.json",
+      "git_blob_sha": "14a1d2772b2cdf4e69e2756701b75c03f72214f3",
+      "status": "added"
+    },
+    {
+      "path": "reports/abc-championship/follow-through-release-defensive-source-01/review/COUNTA_DATA_CONTRACT_REVIEW_V2.json",
+      "git_blob_sha": "979271c1b0e16ce14cbbfaf74f74f9e04eb5bbf3",
+      "status": "added"
+    },
+    {
+      "path": "reports/abc-championship/follow-through-release-defensive-source-01/review/COUNTA_NATIVE_PREEXEC_INDEPENDENT_REVIEW_V3.json",
+      "git_blob_sha": "2e40156db5952083465655d8733d3430825a88ec",
+      "status": "added"
+    },
+    {
+      "path": "reports/abc-championship/follow-through-release-defensive-source-01/review/COUNTA_NATIVE_PREEXEC_INDEPENDENT_REVIEW_V4.json",
+      "git_blob_sha": "1ae7b8319f25372da89dfb82c5a40f2c349ef90b",
+      "status": "added"
+    },
+    {
+      "path": "tests/test_count_a_native_extension_v1.py",
+      "git_blob_sha": "0ff90b9b720b99175d51cebbd510f73f09c8ae08",
+      "status": "added"
+    },
+    {
+      "path": "tools/modern_count_a_mean_v3.py",
+      "git_blob_sha": "eeeb2af4c87ad4ffe72cc1df3b9ee35e75e247ae",
+      "status": "added"
+    },
+    {
+      "path": "tools/persist_state.py",
+      "git_blob_sha": "a32286f97a3eb6893d7a97b89cabf5147b509b7e",
+      "status": "modified"
+    }
+  ]
+}

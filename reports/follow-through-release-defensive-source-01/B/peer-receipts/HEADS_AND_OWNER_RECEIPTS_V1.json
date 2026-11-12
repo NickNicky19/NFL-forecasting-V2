@@ -1,0 +1,477 @@
+{
+  "id": "B-FOLLOWTHROUGH-HEADS-AND-OWNER-RECEIPTS-v1",
+  "recorded_UTC": "2026-11-12T04:16:30+00:00",
+  "assignment": "FOLLOW-THROUGH-RELEASE-AND-DEFENSIVE-SOURCE-01",
+  "scope": "Read-only one bounded refresh. No owner reassignment, producer dispatch, peer writes, new fit, NFL grade or site release.",
+  "heads": {
+    "C_head": {
+      "sha": "2e604d8801d74788a61b3fa9e5206e7c4a452e81",
+      "commit_UTC": "2026-11-12T03:30:45Z",
+      "subject": "Merge pull request #45 from NickNicky19/research/category-decision-served-01"
+    },
+    "A_head": {
+      "sha": "3a3d48791d5c7e6cf789af480bfb99c062005a97",
+      "commit_UTC": "2026-11-12T03:08:26Z",
+      "subject": "Append exact final publication readback and continuing execution ledger"
+    },
+    "A_producer": {
+      "sha": "fa91988e65939d2b3516371a90a6380aeee3acb3",
+      "commit_UTC": "2026-11-06T01:20:08Z",
+      "subject": "Merge PR #87: bind audit-correct history semantics to the reviewed producer source profile"
+    },
+    "A_lab_state": {
+      "sha": "275aa84b27c4239d3b2dfea07755734d9db0ac7c",
+      "commit_UTC": "2026-11-03T00:18:46Z",
+      "subject": "Register completed current-Owner MAE native source seal"
+    },
+    "web_head": {
+      "sha": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+      "commit_UTC": "2026-11-11T21:13:22Z",
+      "subject": "Scheduled update (phase1)"
+    }
+  },
+  "website_PR1": {
+    "url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/pull/1",
+    "comments": 606,
+    "updated_UTC": "2026-11-12T02:15:31Z",
+    "head": "81c3fc2a612ced916f4c54814f978c509058bca5",
+    "state": "open",
+    "new_comments_since_6812397309": false,
+    "new_fifth_week_package_observed": false,
+    "actual_four_week_replay": "Existing owner protocol/comment6812058949 and result6812397309 preserved; B verifies requested contribution accounting separately."
+  },
+  "runtime": {
+    "A_native_latest_window": [
+      {
+        "id": 41564933010,
+        "name": "NFL research lab",
+        "event": "workflow_dispatch",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "research/weekly-storage-probe-v1",
+        "head_sha": "a2ab7d4eeb01b1af7f76af4b8090404b4f096f50",
+        "path": ".github/workflows/lab.yml",
+        "created_UTC": "2026-11-03T02:15:08Z",
+        "updated_UTC": "2026-11-03T02:15:59Z"
+      },
+      {
+        "id": 41563998291,
+        "name": "Audit source checks",
+        "event": "workflow_dispatch",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "research/weekly-storage-probe-v1",
+        "head_sha": "a2ab7d4eeb01b1af7f76af4b8090404b4f096f50",
+        "path": ".github/workflows/audit-source-checks.yml",
+        "created_UTC": "2026-11-03T02:06:15Z",
+        "updated_UTC": "2026-11-03T02:21:41Z"
+      },
+      {
+        "id": 41552796382,
+        "name": "NFL research lab",
+        "event": "workflow_dispatch",
+        "status": "completed",
+        "conclusion": "failure",
+        "head_branch": "research/weekly-storage-probe-v1",
+        "head_sha": "dd88e1235fdd7c265c02963031da214b04632404",
+        "path": ".github/workflows/lab.yml",
+        "created_UTC": "2026-11-03T00:25:53Z",
+        "updated_UTC": "2026-11-03T00:29:51Z"
+      },
+      {
+        "id": 41550938770,
+        "name": "NFL research lab",
+        "event": "workflow_dispatch",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "research/weekly-storage-probe-v1",
+        "head_sha": "dd88e1235fdd7c265c02963031da214b04632404",
+        "path": ".github/workflows/lab.yml",
+        "created_UTC": "2026-11-03T00:10:35Z",
+        "updated_UTC": "2026-11-03T00:13:25Z"
+      },
+      {
+        "id": 41550195184,
+        "name": "NFL research lab",
+        "event": "workflow_dispatch",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "research/weekly-storage-probe-v1",
+        "head_sha": "dd88e1235fdd7c265c02963031da214b04632404",
+        "path": ".github/workflows/lab.yml",
+        "created_UTC": "2026-11-03T00:04:40Z",
+        "updated_UTC": "2026-11-03T00:05:35Z"
+      }
+    ],
+    "A_main_latest_window": [
+      {
+        "id": 43090797096,
+        "name": "NFL research lab",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "main",
+        "head_sha": "f37279a093fcdddece1e369d42ce54349cb1913c",
+        "path": ".github/workflows/lab.yml",
+        "created_UTC": "2026-11-11T19:49:41Z",
+        "updated_UTC": "2026-11-11T19:49:58Z"
+      },
+      {
+        "id": 42890423270,
+        "name": "NFL research lab",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "main",
+        "head_sha": "f37279a093fcdddece1e369d42ce54349cb1913c",
+        "path": ".github/workflows/lab.yml",
+        "created_UTC": "2026-11-10T19:57:24Z",
+        "updated_UTC": "2026-11-10T19:57:36Z"
+      },
+      {
+        "id": 42713797329,
+        "name": "NFL research lab",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "main",
+        "head_sha": "f37279a093fcdddece1e369d42ce54349cb1913c",
+        "path": ".github/workflows/lab.yml",
+        "created_UTC": "2026-11-09T22:39:17Z",
+        "updated_UTC": "2026-11-09T22:39:32Z"
+      },
+      {
+        "id": 42507958411,
+        "name": "NFL research lab",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "main",
+        "head_sha": "f37279a093fcdddece1e369d42ce54349cb1913c",
+        "path": ".github/workflows/lab.yml",
+        "created_UTC": "2026-11-08T18:02:38Z",
+        "updated_UTC": "2026-11-08T18:02:50Z"
+      },
+      {
+        "id": 42398258286,
+        "name": "NFL research lab",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "main",
+        "head_sha": "f37279a093fcdddece1e369d42ce54349cb1913c",
+        "path": ".github/workflows/lab.yml",
+        "created_UTC": "2026-11-07T17:50:14Z",
+        "updated_UTC": "2026-11-07T17:50:25Z"
+      }
+    ],
+    "website_latest_window": [
+      {
+        "id": 43101028574,
+        "name": "Hourly update",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "main",
+        "head_sha": "01a283a2bba828ce7634902017f38ef93fd8c75e",
+        "path": ".github/workflows/hourly.yml",
+        "created_UTC": "2026-11-11T21:12:12Z",
+        "updated_UTC": "2026-11-11T21:13:39Z"
+      },
+      {
+        "id": 42898382015,
+        "name": "Hourly update",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "main",
+        "head_sha": "c134a44ff1d9b51d0b52926e13387742397b6ccf",
+        "path": ".github/workflows/hourly.yml",
+        "created_UTC": "2026-11-10T20:45:25Z",
+        "updated_UTC": "2026-11-10T20:53:09Z"
+      },
+      {
+        "id": 42877656327,
+        "name": "Hourly update",
+        "event": "workflow_dispatch",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "main",
+        "head_sha": "720903184c54e4fe73c9213da5938d06970a5f00",
+        "path": ".github/workflows/hourly.yml",
+        "created_UTC": "2026-11-10T18:40:57Z",
+        "updated_UTC": "2026-11-10T18:42:08Z"
+      },
+      {
+        "id": 42719834122,
+        "name": "Hourly update",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "main",
+        "head_sha": "b15c5867c39c4b40b10ae08995dff530f8374efd",
+        "path": ".github/workflows/hourly.yml",
+        "created_UTC": "2026-11-09T23:21:46Z",
+        "updated_UTC": "2026-11-09T23:24:41Z"
+      },
+      {
+        "id": 42511515975,
+        "name": "Hourly update",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "head_branch": "main",
+        "head_sha": "8dbbea51dd4b71428e2e1f770751980100880762",
+        "path": ".github/workflows/hourly.yml",
+        "created_UTC": "2026-11-08T18:44:45Z",
+        "updated_UTC": "2026-11-08T18:46:26Z"
+      }
+    ],
+    "limits": "Five returned runs per scoped collection, not every workflow/execution ever. Success status does not establish capture: A reports current main parent run43090797096 off-window no-op; native latest Nov3/a2ab before current fa919 recipe."
+  },
+  "C_new_decision_receipt": {
+    "ref": "2e604d8801d74788a61b3fa9e5206e7c4a452e81",
+    "stage": "ALL12_SCOPED_DECISIONS_AND_EXACT_JOINS_PUBLISHED;C_RESEARCH_SERVED_VERIFIED;CURRENT_SHADOW_EXPIRED",
+    "table_path": "reports/category-decision-release-01/CATEGORY_PRODUCT_DECISIONS.json",
+    "declared_SHA256": "f6286af137ca5ef14a4fd183cf93836ec0771893c3ed445e58b432a48f5a844b",
+    "scope": "New exact completed joins admitted only at their actual tier; oldarchived seven-week/source and first-five subsets staydistinct. No globalwinnerfromdisconnectedpanels. Originalwebsiteowner alone releases.",
+    "status": "COORDINATOR_CATEGORY_PRODUCT_DECISIONS;PARTIAL_W1_W8;NO_ORIGINAL_SITE_RELEASE_BY_C",
+    "inventory": {
+      "product_policy_profiles": 8072,
+      "distinct_id_strings": 1779,
+      "not_learner_count": true,
+      "limits": "Programmatic reconciliation of all8072 retained qualification rows, plus named amendment files. It is not every test ever executed; private/unlocated/invalid/incompatible states remain."
+    },
+    "old_exact_timing_joins": [
+      {
+        "owner": "A",
+        "category": "pass_cmp",
+        "namespace": "B-QB-ALIGNED-FRESHNESS-v1",
+        "products": "F0-F3 mean, lower_median, exact-law P2;12 products; retain policies separately",
+        "state": "COMPLETED_OWNER_LOCAL;RECEIVED_AND_PUBLIC_ARITHMETIC_ADMITTED_BY_C",
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "decision": "NO_REPLACEMENT_GAIN_ESTABLISHED;retain strong controls and earlier numerical findings within scope"
+      },
+      {
+        "owner": "A",
+        "category": "rec",
+        "namespace": "C-RECEIVING-ALIGNED-TIMING-v1",
+        "products": "F0-F3 MEAN/MEDIAN point rules;8 products;no probability supplied",
+        "state": "COMPLETED_OWNER_LOCAL;RECEIVED_AND_PUBLIC_ARITHMETIC_ADMITTED_BY_C",
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "decision": "CLOSE_RECIPE_NO_GAIN one-day direction;own timing means-20/-8, medians0/-1"
+      }
+    ],
+    "archived_A_scope": "A_FIXED_W1_W7_ARCHIVED_POINT_PANEL remains separately retained owner-reported7week evidence;this annual-source correction does not invalidate its W6-W7. Exact source/forecast/audit bindings govern its eligibility;not independently established by this intake.",
+    "latest_A_point_ATT_and_B961_intake": "No exact 14a47/3a3d/48c615/520dd17/A_POINT_PAIR_RESULTS_V1/B_ATT_ALIAS_RESULTS_V2/96136/3e7/403 identifiers found in C current pointer/export/decisions/intake/report. This is absence in inspected artifacts, not proof no unseen private receipt.",
+    "new_global_primary_switch": false,
+    "original_site_changed": false
+  },
+  "C_current_shadow": {
+    "handoff": {
+      "id": "C06-CURRENT-QUERY-HANDOFF-v1",
+      "prepared_UTC": "2026-11-12T02:43:45.586304+00:00",
+      "producer_owner": "C",
+      "producer_code_commit": "e9b56a314acea2fbe958dc4415e8693c56516970",
+      "consumer_owner": "Original website owner NFL-WEB-PRODUCTION-REPORT-INTEGRATION-20261025-122500Z; C research consumer separately",
+      "candidate_historical_identity": "C::PLAYER-CONTEXT-MATCHUP-01::v1.1::P1::mean",
+      "current_model_identity": "C_V11_P1_E2_POOLED_7D",
+      "scope": "SOURCE_CURRENT_SHADOW;18WRTEcandidate-scope/7RBforecast-onlyshadow;whole-systemhorizon/query/finalityfiveweekinheritanceUNKNOWN",
+      "model": {
+        "path": "prospective/runs/C-C04-20261110-W10-FIRST-01/draft/models/C_V11_P1_E2_POOLED_7D.json.xz",
+        "bytes": 632252,
+        "SHA256": "a50d14aa526448ec626b43924e58934456478c6088d08babe8fe10199e1b67eb"
+      },
+      "model_fit_information_cutoff_UTC": "2026-11-10T19:23:09.469852+00:00",
+      "input_schema": {
+        "path": "sources/category-decision-release-01/MODEL_INPUT_MANIFEST.json",
+        "bytes": 6969,
+        "SHA256": "6112809702e74c1e7bf3dcdbc5087492a442ccc88decb1129735dd5a2113c6fb"
+      },
+      "current_source_validation_cutoff_UTC": "2026-11-12T01:43:52.568669+00:00",
+      "feature_order": "Exact60fields inauthenticatedsafeJSON;trainingimputation/missingflags/scale thenPoissonlink exactlyonce",
+      "correction": "NoextraCountAcorrector orincumbentmatchupmodifier;pooledP1inputsalreadycontainqualifiedopponent/context",
+      "run_path": "prospective/runs/C-C06-20261112-W10-CURRENT-P1-01",
+      "RUN_SHA256": "9846fc48c86b795bbcbb62f215a33332012eed43c523500a0a6699c9dacfeead",
+      "forecast_path": "prospective/runs/C-C06-20261112-W10-CURRENT-P1-01/FORECASTS.json.xz",
+      "forecast_SHA256": "8f7b505452ad74ba0ecf8194e429ab400ff9296e8c17a8014067e4c66f3ebfbc",
+      "adapter": "src/current_query_delivery_c06.py:point_direction_record(row,offer,decision_UTC,repricing_policy=...)",
+      "direction_policy": "UnroundedEXPECTED_MEAN > exactadmittedlineOVER,<UNDER,=ABSTAIN; onlyofferedside;currentexternallyadmittedrealOPENoffer andcompatible source/stat/role/time/rights required",
+      "later_line_policy": "LATER_CAPTURED_PREGAME_LINE_BOTH_CLOCKS_PRESERVED;separatedecisionrecord;neverrewriteearlierforecastassameissuedpick",
+      "typed_outputs": [
+        "EXPECTED_MEAN",
+        "LOWER_MEDIAN_SEPARATE_SHADOW",
+        "EXPERIMENTAL_CONDITIONAL_POISSON_LAW_NOT_CALIBRATED_CONFIDENCE"
+      ],
+      "not_outputs": [
+        "per-pickconfidence",
+        "EV",
+        "TopPicks",
+        "actualselectedsideswithoutqualifiedoffers"
+      ],
+      "real_offers": 0,
+      "real_selections": 0,
+      "fallback": "Missing/stale/unsupportedrole/unboundfeatures:unavailableorshadow;originalownerusesidentifiedincumbentunderalreadyapprovedpath.Nozeroimputationforunknownstats;knownzeroisvalid.",
+      "expiry": "Savedrowexpires_UTCstopsnewrecommendation/repricing,notoriginalgrading;newnative/sourceadmissionneededforlatercurrentreuse",
+      "current_readiness": "SERVER_QUALIFIED_BEFORE_EXPIRY;CURRENT_RECOMMENDATION_USE_EXPIRED;RETAINED_SHADOW_FOR_GRADING;ORIGINAL_CONSUMER_NOT_ACKNOWLEDGED",
+      "weekly_evidence": "CATEGORY_PRODUCT_DECISIONS.json namedannualW1-W5pointpanel239/412;current25notautomaticwholeproductqualification",
+      "independent_checks": "current-verification/PRE_EXECUTION_REVIEW.json,C06_ACTUAL_INFERENCE_INDEPENDENT.json,C06_ISSUED_RUNTIME_INDEPENDENT.json",
+      "runtime": "Python3.12,numpy2.3.5,pandas2.2.3,scipy1.17,scikit-learn1.8;1thread;actualinfer.388CPU/249MB;0newfits",
+      "safe_restoration": "GitHubimmutableRUN/source/modelsha+fullinference_draft;safeJSONonly; priorGZexactencodingandhistoricalsourcebytesretainedbycorrectionreceipts beforeadmission",
+      "rollback": "Originalownerkeepsunchangedincumbentdisplay/direction/TopPicks;removeCexperimentalfeed/pathwithoutoverwritingoldpredictions/selections. Original75+69firstsnapshotsimmutable.",
+      "server_receipt": "reports/category-decision-release-01/CURRENT_PUBLICATION_RECEIPT.json",
+      "expires_UTC": "2026-11-12T02:51:07.340271+00:00",
+      "current_state_recorded_UTC": "2026-11-12T02:55:49.425664+00:00"
+    },
+    "stages": {
+      "id": "C06-OPERATIONAL-STAGES-v1",
+      "recorded_UTC": "2026-11-12T03:22:34.589470+00:00",
+      "prepared": true,
+      "published": true,
+      "received_by_C_and_fresh_GitHub_restored": true,
+      "independently_verified": true,
+      "C_research_admitted_scope": "SCOPED_DIAGNOSTIC_AND_SHADOW_FORECAST_ONLY",
+      "captured": true,
+      "deployed": true,
+      "served_verified": true,
+      "scientifically_qualified_current_primary": false,
+      "original_website_changed": false,
+      "original_website_consumer_acknowledged": false,
+      "current_use": "EXPIRED_AFTER_2026-11-12T02:51:07Z;gradeableoriginalsupplement",
+      "capture_code_commit": "e9b56a314acea2fbe958dc4415e8693c56516970",
+      "qualified_persistence_commit": "d1425e648ce14a99449873f5c8223fc423b5635e",
+      "server_completed_UTC": "2026-11-12T02:42:41Z",
+      "forecast_rows": 25,
+      "real_offers": 0,
+      "real_selections": 0,
+      "research_recommendations": {
+        "KEEP_INCUMBENT": 5,
+        "SHADOW": 4,
+        "BLOCKED": 1,
+        "ABSTAIN": 2,
+        "PROVISIONALLY_SWITCH": 0
+      },
+      "counts_note": "Decision enum counts arecategoryrecommendations, not NFLaccuracyorwebsitechanges.",
+      "count_source": "Computed from the twelve canonical category rows, not hand-entered or NFL observations.",
+      "C_research_asset_commit": "b38ea4c9f60c15225ae6a252873e943f904309a4",
+      "deployment_run": 43146695434,
+      "served_scope": "C RESEARCH ONLY;12 decisions/48 products/25 expired-current-use retained forecasts; original website unchanged",
+      "served_receipt": "site/served/SERVED_CONSUMER_RECEIPT.json"
+    },
+    "limits": "C separate research consumer served proof is not original-site authority or activation. C25-row packet is expired for new current use; original predictions remain preserved/gradable."
+  },
+  "A_new_package": {
+    "ref": "3a3d48791d5c7e6cf789af480bfb99c062005a97",
+    "current_execution": {
+      "id": "A-category-decision-and-release-01",
+      "report": "reports/abc-championship/category-decision-release-01/EXECUTED_CATEGORY_DECISIONS_V1.md",
+      "machine_results": "reports/abc-championship/category-decision-release-01/A_CATEGORY_PRODUCT_CONTRIBUTION_V1.json",
+      "state": "EXECUTED_SAVED_OUTPUT_COMPARISONS_AND_RECONCILED_CATEGORY_CONTRIBUTION;NO_NEW_PRIMARY_RELEASE",
+      "prior_export_index_sha256": "08dbc9d55e5c3b4d6b5f8491c0af61857965380933f493956b2eeeb4764f570e",
+      "new_live_models": 0,
+      "new_A_current_packets": 0,
+      "C_admission": "NOT_OBSERVED_FOR_NEW_POINT_ATT",
+      "ledger": "execution/ledger-20261112-category-decision-release-01.jsonl"
+    },
+    "production": "A_READONLY;ACTUAL_INCUMBENT1617FORECASTS;DISABLED_USE_R0/0RESEARCH_ROWS;NO_A_CURRENT_FEED_OR_REPLACEMENT_ACTIVATION;REAL4WSELECTORREPLAY_NOT5WQUALIFIED",
+    "publication": {
+      "state": "50POINT_AND28ATT_OPERATIONAL_TEXT_EXPORTS_EXACT_READBACK_PASS;FINAL_REPORT_INDEX_RECEIPT_APPENDED_SEPARATELY",
+      "point_commit": "48c615bcbd5d0206f1c294001328a0ae7a41a889",
+      "ATT_operational_commit": "520dd17ac0047f5ab1ba63cbe4206defda650f25",
+      "receipts": [
+        "reports/abc-championship/category-decision-release-01/PUBLIC_AGGREGATE_READBACK_V1.json",
+        "reports/abc-championship/category-decision-release-01/ATT_OPERATIONAL_PUBLIC_READBACK_V1.json"
+      ]
+    },
+    "scope_completion": "PARTIAL_W1-8_AND_HISTORICAL_CHAMPIONSHIP;FINITE_A_POINT_ATT_COMPARISON_PACKAGE_EXECUTED;C_MASTER_DECISIONS_AND_REGISTEREDPRODUCER/SITE_ADMISSION_REMAIN_SCOPED_OWNER_ACTIONS",
+    "new_saved_comparisons": "79 retained point products,1782 weekly/cumulative own-record cells,768 targeted pairs,474 annual/W1\u20135 checks. No fits/inference/newNFLgames. B ATT six aliases corrected to all87offers:Bmedian44,A43,AlwaysOver46. Additional source-memberships, not learned-skill gain.",
+    "C_intake": "A index reports NOT_OBSERVED_FOR_NEW_POINT_ATT; no exact new refs found in inspected C files.",
+    "W5_overlap": "Still UNKNOWN. A88/B112 not pooled; private normalized player/event/category/book/line/source/cutoff/decision membership remains unresolved; no request to repeat old exact join.",
+    "annual_source_policy": "DraftKingsNJ68 ->FanDuelNJ69 ->bet365NJ79; consensus15 and syntheticOPEN30 excluded. Quote clock null, cutoff_qualified=false; collection does not authenticate original quote time.",
+    "archived_source_week": "W1\u20137 archived panel retained separately; no blanket invalidation. Named new annual comparable source panel isW1\u20135; W6\u20137 diagnostics andW8 original/reference cells do not fill it."
+  },
+  "Count_A": {
+    "procedure": "f8607aa99a94c7c1c9ab5c89599e07eba9b15527749b092b225f368032881e83",
+    "corrector_source_commit": "5147a9d260b0f579b78c6a68d0aba78ffe225a42",
+    "corrector_source_SHA256": "aa7c002506b57d7c1ca643f4236e5fb8b5132bebb00ad86720ee11221b6d9fb6",
+    "local_restoration": "COMPLETE; do not repeat.",
+    "native_extension": "Published package; NOT_IMPLEMENTED or bound to real issuedRoot at registered fa919 in current A report.",
+    "lossless_registration_repair": "ALREADY_MERGED_PR85_AND_PR87; do not repeat from historical61759Bfinding. Complete actual issuedRoot remains <=61440bytes including issuance; no current issuedRoot/wire size observed.",
+    "executor": "Existing operator NickNicky19 actor208912933/main/lab, bound child github-actions[bot]41898282/research/weekly-storage-probe-v1/.github/workflows/lab.yml/audit-weekly-{restore,produce,export}-v1; single writer nfl-lab-single-writer. Separate individual native lease not authenticated by B.",
+    "current_source_query": "NOT_ADMITTED; needs exact QB/base history/presence/clock contract, not EPA from another model, no target future outcome requirement.",
+    "current_inference_feed_consumer": "NOT_OBSERVED; W10 lab-state route absent at unchanged275aa84 as prior exact receipt; absence does not prove model missing.",
+    "first_action": "Actual authorized A native executor accepts/reviews explicit extra capsule/catalog/template/runtime/hosted/archive/public-export binding, authenticates lease/source/root, then current source/inference/durablefeed; original-site owner admits and verifies."
+  },
+  "original_website": {
+    "actual_head": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+    "active_model": "sleeper-matchup-classic-presence-strict-v2",
+    "selected_overlay": "DISABLED_USE_R0",
+    "selected_research_rows": 0,
+    "forecast_rows": 1617,
+    "latest_generated_UTC": "2026-11-11T21:13:13Z",
+    "latest_captured_UTC": "2026-11-11T21:13:15Z",
+    "Top_Picks": "CURRENT_BASELINE; changed four-week policy remains conditional shadow",
+    "cadence": "Workflow named Hourly update uses daily6 8 * * * America/Chicago; observed latest scheduledrun43101028574 is delayed relative configured slot, no hourly freshness claim.",
+    "served_witness": "Previous exact six-asset Git/served witness at01:30UTC preserved. No redundant fullserved download because mainHEAD unchanged. This refresh does not claim fresh DOM or direct browser/mobile test.",
+    "new_production_activation": false
+  },
+  "operations": {
+    "new_fits": 0,
+    "new_inference": 0,
+    "new_scores": 0,
+    "new_NFL_games_or_weeks": 0,
+    "peer_writes": 0,
+    "dispatches": 0,
+    "external_messages": 0,
+    "original_predictions_changed": 0
+  },
+  "B_W5_source_restoration_superseding_receipt": {
+    "recorded_UTC": "2026-11-12T04:24:38.083968+00:00",
+    "path": "reports/follow-through-release-defensive-source-01/B/w5-overlap/EXACT_B_MEMBERSHIP_RESTORATION_V1.json",
+    "sha256": "6079dfdbb9b9e1bff0682062858f3391f97995d3f913849c27445f63baeccc3d",
+    "metadata_exact_bytes_equal": true,
+    "metadata_sha256": "4c5783cfa81f31c71e31e1f5c6ae0c1fa294997810f75d1d8f0f5bf91b643efb",
+    "whole_membership_sha256": "8c8cdf60285bae799240f6eb65c3fd978b32328aa4ec2923432325aec32f3484",
+    "QB_offers": 56,
+    "CMP_records": 28,
+    "ATT_records": 28,
+    "games": 14,
+    "raw_rows_publicly_exported": 0,
+    "original_grade_object_restored": false,
+    "A_intersection": {
+      "state": "NOT_EXECUTED_WITHOUT_A_PRIVATE_MEMBERSHIP",
+      "A_annual_W5_CMP_offers": 4,
+      "A_annual_games": 3,
+      "A_keys_received": false,
+      "intersection_count": null,
+      "union_denominator": null,
+      "one_executor": "Existing A private-board join owner",
+      "next_permitted_action": "A reads these exact approved original public source pins + stable identity bridge and compares its four annual W5 CMP keys under current protected owner-local permission, returning aggregate intersection/whole-mask/contract disposition. Alternatively transfer only those keys through an already approved protected route for B verifier execution. No public enumerable key/hash lookup.",
+      "fields": [
+        "canonical_player",
+        "canonical_game",
+        "category",
+        "exact_line",
+        "book_and_jurisdiction",
+        "source_snapshot",
+        "decision_horizon",
+        "offer_clock_qualification",
+        "outcome_version"
+      ],
+      "stop": "Until exact permitted membership/contract receipt is obtained, retain Aannual88 and Bnative112 as source-specific panels; no additive denominator. Five annual diagnostic weeks already satisfy duration for exact Bproducts, so this is no blanket release wait."
+    },
+    "note": "Exact B metadata/membership restored; no longer describe B key source as unlocated. Actual A/B intersection still unknown without A protected four-key comparison."
+  }
+}

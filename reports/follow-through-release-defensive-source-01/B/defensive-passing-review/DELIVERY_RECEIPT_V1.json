@@ -1,0 +1,56 @@
+{
+  "id": "B-DEFENSIVE-PASSING-SOURCE-REVIEW-DELIVERY-v1",
+  "completed_UTC": "2026-11-12T04:18:15.779608+00:00",
+  "assignment": "FOLLOW-THROUGH-RELEASE-AND-DEFENSIVE-SOURCE-01 v1",
+  "owner": "B passing component only; C common source coordinator",
+  "write_scope": "Own B review directory only; root alone updates ledgers/index/publication",
+  "files": [
+    {
+      "path": "FIELD_RECONCILIATION_V1.json",
+      "bytes": 13111,
+      "sha256": "9fc2743ecd6c71a8a93c32606ebcee4857e9985120b6abb9c6967043ae629ea5"
+    },
+    {
+      "path": "INTERNAL_ARITHMETIC_REVIEW_V1.json",
+      "bytes": 31781,
+      "sha256": "7c222cdb8193e8a2af14c50cc19e77bd1a305e9940b0da834d08d8dd4ef3eb42"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9621,
+      "sha256": "2c722398aea222eb45b4cb99e2c3dc3c14ff88d462726ba232d633b2c40e07bb"
+    },
+    {
+      "path": "SUPPLIED_APPENDIX_A3_A4_REFERENCE.txt",
+      "bytes": 2038,
+      "sha256": "f327e10afa268f3dc1042eeb50e088e33da6abcc0d6c4b12cc7f49fc304df189"
+    },
+    {
+      "path": "review_supplied_passing.py",
+      "bytes": 5679,
+      "sha256": "8e93af017fe1c3c4ad1373bc92de7e1ad738f436d1ec99a9ab0962d03d955477"
+    }
+  ],
+  "bytes": 62230,
+  "max_public_bytes": 2097152,
+  "workbook_inspected": false,
+  "workbook_hash": null,
+  "source_API_calls": 0,
+  "external_source_verification": false,
+  "internal_arithmetic": {
+    "checks": 192,
+    "mismatches": 0,
+    "state": "PASS_SUPPLIED_NUMBERS_ONLY"
+  },
+  "new_source_qualified_blocks": 0,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_grades": 0,
+  "new_NFL_observations": 0,
+  "new_tested_weeks": 0,
+  "new_experiments_registered": 0,
+  "release_roster_changed": false,
+  "executed_scope": "Exact supplied A3/A4 extraction, independent Decimal/count/rank consistency and current retained B source-to-consumer feature code mapping; no whole-model audit, rawPBP reread, scoring rerun or source acquisition",
+  "source_disposition": "SOURCE_BLOCKED actual workbook/original source metadata; no invented URLs, publication clocks or rights",
+  "next": "C qualifies one shared source and distinguishes any new compatible block from existing/reused negative R3 information test; no release waits"
+}

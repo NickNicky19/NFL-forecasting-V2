@@ -1,0 +1,1406 @@
+{
+  "id": "B-SUPPLIED-DEFENSIVE-PASSING-ARITHMETIC-v1",
+  "reviewed_UTC": "2026-11-12T04:14:51.982255+00:00",
+  "supplied_reference": {
+    "path": "SUPPLIED_APPENDIX_A3_A4_REFERENCE.txt",
+    "bytes": 2038,
+    "sha256": "f327e10afa268f3dc1042eeb50e088e33da6abcc0d6c4b12cc7f49fc304df189",
+    "serialization": "Exact extracted A3/A4 supplied headings/notes and numeric rows; UTF-8/LF. Not workbook bytes or a full assignment identity claim."
+  },
+  "environment": {
+    "python": "3.12.14",
+    "arithmetic": "Decimal precision40, ROUND_HALF_UP at2dp per-game and1dp percent"
+  },
+  "workbook_access": "NOT_OBTAINED",
+  "external_source_verification": false,
+  "supplied_teams": 32,
+  "checks": 192,
+  "mismatches": [],
+  "internal_verdict": "PASS",
+  "detail": [
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Broncos",
+      "expected": "1",
+      "supplied": "1",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Packers",
+      "expected": "2",
+      "supplied": "2",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Falcons",
+      "expected": "3",
+      "supplied": "3",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Lions",
+      "expected": "4",
+      "supplied": "4",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Buccaneers",
+      "expected": "5",
+      "supplied": "5",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Bills",
+      "expected": "T6",
+      "supplied": "T6",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Eagles",
+      "expected": "T6",
+      "supplied": "T6",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Browns",
+      "expected": "8",
+      "supplied": "8",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Cowboys",
+      "expected": "T9",
+      "supplied": "T9",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Commanders",
+      "expected": "T9",
+      "supplied": "T9",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Rams",
+      "expected": "11",
+      "supplied": "11",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Ravens",
+      "expected": "12",
+      "supplied": "12",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Patriots",
+      "expected": "13",
+      "supplied": "13",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Steelers",
+      "expected": "T14",
+      "supplied": "T14",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "49ers",
+      "expected": "T14",
+      "supplied": "T14",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Raiders",
+      "expected": "16",
+      "supplied": "16",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Panthers",
+      "expected": "17",
+      "supplied": "17",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Seahawks",
+      "expected": "18",
+      "supplied": "18",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Texans",
+      "expected": "T19",
+      "supplied": "T19",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Chiefs",
+      "expected": "T19",
+      "supplied": "T19",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Bengals",
+      "expected": "21",
+      "supplied": "21",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Titans",
+      "expected": "22",
+      "supplied": "22",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Jets",
+      "expected": "23",
+      "supplied": "23",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Colts",
+      "expected": "24",
+      "supplied": "24",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Jaguars",
+      "expected": "T25",
+      "supplied": "T25",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Saints",
+      "expected": "T25",
+      "supplied": "T25",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Bears",
+      "expected": "27",
+      "supplied": "27",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Cardinals",
+      "expected": "28",
+      "supplied": "28",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Giants",
+      "expected": "29",
+      "supplied": "29",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Vikings",
+      "expected": "30",
+      "supplied": "30",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Chargers",
+      "expected": "31",
+      "supplied": "31",
+      "match": true
+    },
+    {
+      "kind": "Pass attempts faced_competition_rank",
+      "team": "Dolphins",
+      "expected": "32",
+      "supplied": "32",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Falcons",
+      "expected": "1",
+      "supplied": "1",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Broncos",
+      "expected": "2",
+      "supplied": "2",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Lions",
+      "expected": "T3",
+      "supplied": "T3",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Packers",
+      "expected": "T3",
+      "supplied": "T3",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Cowboys",
+      "expected": "T5",
+      "supplied": "T5",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Commanders",
+      "expected": "T5",
+      "supplied": "T5",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Patriots",
+      "expected": "T7",
+      "supplied": "T7",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Titans",
+      "expected": "T7",
+      "supplied": "T7",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Buccaneers",
+      "expected": "9",
+      "supplied": "9",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "49ers",
+      "expected": "10",
+      "supplied": "10",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Ravens",
+      "expected": "11",
+      "supplied": "11",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Bills",
+      "expected": "T12",
+      "supplied": "T12",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Raiders",
+      "expected": "T12",
+      "supplied": "T12",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Steelers",
+      "expected": "T12",
+      "supplied": "T12",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Eagles",
+      "expected": "15",
+      "supplied": "15",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Rams",
+      "expected": "16",
+      "supplied": "16",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Texans",
+      "expected": "T17",
+      "supplied": "T17",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Seahawks",
+      "expected": "T17",
+      "supplied": "T17",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Browns",
+      "expected": "19",
+      "supplied": "19",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Panthers",
+      "expected": "20",
+      "supplied": "20",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Bengals",
+      "expected": "T21",
+      "supplied": "T21",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Jets",
+      "expected": "T21",
+      "supplied": "T21",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Jaguars",
+      "expected": "23",
+      "supplied": "23",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Saints",
+      "expected": "24",
+      "supplied": "24",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Chiefs",
+      "expected": "25",
+      "supplied": "25",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Dolphins",
+      "expected": "26",
+      "supplied": "26",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Cardinals",
+      "expected": "27",
+      "supplied": "27",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Colts",
+      "expected": "28",
+      "supplied": "28",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Bears",
+      "expected": "29",
+      "supplied": "29",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Giants",
+      "expected": "30",
+      "supplied": "30",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Chargers",
+      "expected": "31",
+      "supplied": "31",
+      "match": true
+    },
+    {
+      "kind": "Completions allowed_competition_rank",
+      "team": "Vikings",
+      "expected": "32",
+      "supplied": "32",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Broncos",
+      "expected": "38.22",
+      "supplied": "38.22",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Broncos",
+      "expected": "23.00",
+      "supplied": "23.00",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Broncos",
+      "expected": "60.2",
+      "supplied": "60.2",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Broncos",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Packers",
+      "expected": "36.11",
+      "supplied": "36.11",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Packers",
+      "expected": "22.56",
+      "supplied": "22.56",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Packers",
+      "expected": "62.5",
+      "supplied": "62.5",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Packers",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Falcons",
+      "expected": "35.33",
+      "supplied": "35.33",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Falcons",
+      "expected": "23.33",
+      "supplied": "23.33",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Falcons",
+      "expected": "66.0",
+      "supplied": "66.0",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Falcons",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Lions",
+      "expected": "39.13",
+      "supplied": "39.13",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Lions",
+      "expected": "25.38",
+      "supplied": "25.38",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Lions",
+      "expected": "64.9",
+      "supplied": "64.9",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Lions",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Buccaneers",
+      "expected": "34.11",
+      "supplied": "34.11",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Buccaneers",
+      "expected": "21.11",
+      "supplied": "21.11",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Buccaneers",
+      "expected": "61.9",
+      "supplied": "61.9",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Buccaneers",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Bills",
+      "expected": "37.50",
+      "supplied": "37.50",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Bills",
+      "expected": "22.88",
+      "supplied": "22.88",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Bills",
+      "expected": "61.0",
+      "supplied": "61.0",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Bills",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Eagles",
+      "expected": "33.33",
+      "supplied": "33.33",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Eagles",
+      "expected": "20.00",
+      "supplied": "20.00",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Eagles",
+      "expected": "60.0",
+      "supplied": "60.0",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Eagles",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Browns",
+      "expected": "33.00",
+      "supplied": "33.00",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Browns",
+      "expected": "19.67",
+      "supplied": "19.67",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Browns",
+      "expected": "59.6",
+      "supplied": "59.6",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Browns",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Cowboys",
+      "expected": "32.89",
+      "supplied": "32.89",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Cowboys",
+      "expected": "21.56",
+      "supplied": "21.56",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Cowboys",
+      "expected": "65.5",
+      "supplied": "65.5",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Cowboys",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Commanders",
+      "expected": "37.00",
+      "supplied": "37.00",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Commanders",
+      "expected": "24.25",
+      "supplied": "24.25",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Commanders",
+      "expected": "65.5",
+      "supplied": "65.5",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Commanders",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Rams",
+      "expected": "32.56",
+      "supplied": "32.56",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Rams",
+      "expected": "19.89",
+      "supplied": "19.89",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Rams",
+      "expected": "61.1",
+      "supplied": "61.1",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Rams",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Ravens",
+      "expected": "31.89",
+      "supplied": "31.89",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Ravens",
+      "expected": "20.78",
+      "supplied": "20.78",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Ravens",
+      "expected": "65.2",
+      "supplied": "65.2",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Ravens",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Patriots",
+      "expected": "31.78",
+      "supplied": "31.78",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Patriots",
+      "expected": "21.44",
+      "supplied": "21.44",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Patriots",
+      "expected": "67.5",
+      "supplied": "67.5",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Patriots",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Steelers",
+      "expected": "35.00",
+      "supplied": "35.00",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Steelers",
+      "expected": "22.88",
+      "supplied": "22.88",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Steelers",
+      "expected": "65.4",
+      "supplied": "65.4",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Steelers",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "49ers",
+      "expected": "35.00",
+      "supplied": "35.00",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "49ers",
+      "expected": "23.50",
+      "supplied": "23.50",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "49ers",
+      "expected": "67.1",
+      "supplied": "67.1",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "49ers",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Raiders",
+      "expected": "31.00",
+      "supplied": "31.00",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Raiders",
+      "expected": "20.33",
+      "supplied": "20.33",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Raiders",
+      "expected": "65.6",
+      "supplied": "65.6",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Raiders",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Panthers",
+      "expected": "34.75",
+      "supplied": "34.75",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Panthers",
+      "expected": "22.00",
+      "supplied": "22.00",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Panthers",
+      "expected": "63.3",
+      "supplied": "63.3",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Panthers",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Seahawks",
+      "expected": "30.78",
+      "supplied": "30.78",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Seahawks",
+      "expected": "19.78",
+      "supplied": "19.78",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Seahawks",
+      "expected": "64.3",
+      "supplied": "64.3",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Seahawks",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Texans",
+      "expected": "34.50",
+      "supplied": "34.50",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Texans",
+      "expected": "22.25",
+      "supplied": "22.25",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Texans",
+      "expected": "64.5",
+      "supplied": "64.5",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Texans",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Chiefs",
+      "expected": "34.50",
+      "supplied": "34.50",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Chiefs",
+      "expected": "21.25",
+      "supplied": "21.25",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Chiefs",
+      "expected": "61.6",
+      "supplied": "61.6",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Chiefs",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Bengals",
+      "expected": "34.13",
+      "supplied": "34.13",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Bengals",
+      "expected": "21.75",
+      "supplied": "21.75",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Bengals",
+      "expected": "63.7",
+      "supplied": "63.7",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Bengals",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Titans",
+      "expected": "34.00",
+      "supplied": "34.00",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Titans",
+      "expected": "24.13",
+      "supplied": "24.13",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Titans",
+      "expected": "71.0",
+      "supplied": "71.0",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Titans",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Jets",
+      "expected": "30.00",
+      "supplied": "30.00",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Jets",
+      "expected": "19.33",
+      "supplied": "19.33",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Jets",
+      "expected": "64.4",
+      "supplied": "64.4",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Jets",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Colts",
+      "expected": "29.33",
+      "supplied": "29.33",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Colts",
+      "expected": "18.00",
+      "supplied": "18.00",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Colts",
+      "expected": "61.4",
+      "supplied": "61.4",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Colts",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Jaguars",
+      "expected": "32.63",
+      "supplied": "32.63",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Jaguars",
+      "expected": "21.50",
+      "supplied": "21.50",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Jaguars",
+      "expected": "65.9",
+      "supplied": "65.9",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Jaguars",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Saints",
+      "expected": "32.63",
+      "supplied": "32.63",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Saints",
+      "expected": "21.38",
+      "supplied": "21.38",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Saints",
+      "expected": "65.5",
+      "supplied": "65.5",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Saints",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Bears",
+      "expected": "28.89",
+      "supplied": "28.89",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Bears",
+      "expected": "17.89",
+      "supplied": "17.89",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Bears",
+      "expected": "61.9",
+      "supplied": "61.9",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Bears",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Cardinals",
+      "expected": "28.67",
+      "supplied": "28.67",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Cardinals",
+      "expected": "18.44",
+      "supplied": "18.44",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Cardinals",
+      "expected": "64.3",
+      "supplied": "64.3",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Cardinals",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Giants",
+      "expected": "31.63",
+      "supplied": "31.63",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Giants",
+      "expected": "19.50",
+      "supplied": "19.50",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Giants",
+      "expected": "61.7",
+      "supplied": "61.7",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Giants",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Vikings",
+      "expected": "29.25",
+      "supplied": "29.25",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Vikings",
+      "expected": "16.88",
+      "supplied": "16.88",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Vikings",
+      "expected": "57.7",
+      "supplied": "57.7",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Vikings",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Chargers",
+      "expected": "29.13",
+      "supplied": "29.13",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Chargers",
+      "expected": "19.13",
+      "supplied": "19.13",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Chargers",
+      "expected": "65.7",
+      "supplied": "65.7",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Chargers",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    },
+    {
+      "kind": "attempts_per_game",
+      "team": "Dolphins",
+      "expected": "27.63",
+      "supplied": "27.63",
+      "match": true
+    },
+    {
+      "kind": "completions_per_game",
+      "team": "Dolphins",
+      "expected": "21.00",
+      "supplied": "21.00",
+      "match": true
+    },
+    {
+      "kind": "completion_percent",
+      "team": "Dolphins",
+      "expected": "76.0",
+      "supplied": "76.0",
+      "match": true
+    },
+    {
+      "kind": "completions_do_not_exceed_attempts",
+      "team": "Dolphins",
+      "expected": "True",
+      "supplied": "True",
+      "match": true
+    }
+  ],
+  "supplied_totals": {
+    "attempts": 8968,
+    "completions": 5741,
+    "team_games": 272
+  },
+  "supplied_weighted_completion_percent": "64.01650312221231043710972346119536128457",
+  "mean_of_supplied_rounded_team_percentages": "64.121875",
+  "weighted_vs_unweighted_note": "Different quantities. Totals-derived weighting is internally available here; neither is an externally authenticated league fact.",
+  "half_tie_examples": [
+    {
+      "team": "Lions",
+      "metric": "attempts_per_game",
+      "exact": "313/8=39.125",
+      "supplied": "39.13"
+    },
+    {
+      "team": "Jaguars",
+      "metric": "attempts_per_game",
+      "exact": "261/8=32.625",
+      "supplied": "32.63"
+    },
+    {
+      "team": "Saints",
+      "metric": "completions_per_game",
+      "exact": "171/8=21.375",
+      "supplied": "21.38"
+    }
+  ],
+  "definition_limits": [
+    "A3 sack exclusion/non-QB inclusion are supplied claims, not source-verified.",
+    "A4 games are joined from A3 by supplied defense name; common provider/cutoff is unverified.",
+    "A4 completion denominator is supplied A3 total attempts; unknown-stat completeness cannot be inferred.",
+    "Passing totals are not dropback totals, completion rates are not catchability or pressure.",
+    "No target counts, RB/TE/alignment labels or rights can be recovered from this arithmetic."
+  ],
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_grades": 0,
+  "new_NFL_observations": 0,
+  "new_tested_weeks": 0
+}

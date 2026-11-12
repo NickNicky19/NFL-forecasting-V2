@@ -1,0 +1,11 @@
+{
+  "id": "B-REPRESENTATIVE-CHECK-EMPTY-SIDE-ATTEMPT-v2",
+  "recorded_UTC": "2026-11-12T04:22:25.159081+00:00",
+  "state": "FAILED_BEFORE_RECEIPT_WRITE",
+  "code_sha256": "7119bb652d3cd0b081bc2b34e585d9520bedddb1f579a5f29ab5e705557f0720",
+  "reason": "Reviewer wrapper also needs empty selected-side groups: zero decided but null win/loss cells can coexist with a nonempty other side. This is a source null/empty-group contract, not a forecasting defect.",
+  "new_fits": 0,
+  "new_grades": 0,
+  "scientific_result_changed": false,
+  "correction": "V3 treats an explicitly empty side as an empty sum only for aggregate identity; raw nulls remain preserved."
+}

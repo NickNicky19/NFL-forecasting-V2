@@ -1,0 +1,114 @@
+{
+  "id": "B-HGB-ANYTIME-CURRENT-SHADOW-v1",
+  "registered_UTC": "2026-11-12T02:07:20.780763+00:00",
+  "fit_cutoff": 1794449238.518027,
+  "recipe": "hgb-direct-history-controls-v1:log_loss_probability",
+  "history_regime": "H-MULTI",
+  "owner": "B",
+  "source_ids": [
+    {
+      "source_id": "stats_player_week_2022.csv",
+      "sha256": "ad426c3fe5bf1cc30c3f137fdfe96d054e19d400879ee4413129da49fa7b54be",
+      "bytes": 8408729,
+      "rights": "NFLverse ordinary licensed basic-statistical derivative; raw file not republished"
+    },
+    {
+      "source_id": "stats_player_week_2023.csv",
+      "sha256": "f19cb71a5de0dce7fd09376026237c9ee9d5a93fe13815a2ea3ec2d37204cb17",
+      "bytes": 8332874,
+      "rights": "NFLverse ordinary licensed basic-statistical derivative; raw file not republished"
+    },
+    {
+      "source_id": "stats_player_week_2024.csv",
+      "sha256": "3ddc45a84f759aa348ce465ae001752c530575455717657cdfe1f8abfcdb4759",
+      "bytes": 8470040,
+      "rights": "NFLverse ordinary licensed basic-statistical derivative; raw file not republished"
+    },
+    {
+      "source_id": "stats_player_week_2025.csv",
+      "sha256": "e5e0615b3d96a3eaebfaee91e55afb4a4e7fe0caf057454177bcd7d6ad4bcfc2",
+      "bytes": 8656387,
+      "rights": "NFLverse ordinary licensed basic-statistical derivative; raw file not republished"
+    },
+    {
+      "source_id": "stats_player_week_2026.csv",
+      "sha256": "bbb261be576e15e62c3cdfa57ea7d606e12993233ee53a1f9d464b733e379d45",
+      "bytes": 3781814,
+      "rights": "NFLverse ordinary licensed basic-statistical derivative; raw file not republished"
+    }
+  ],
+  "schedule": {
+    "source_id": "games.csv",
+    "sha256": "6f707dcea8758bc6c0421559d23c07d4627f39658f93913908d5ddd1b27f6aae"
+  },
+  "current_roster": {
+    "repository": "NickNicky19/NFL-forecasting-NGS-C",
+    "commit": "d3d1ef4dc60826334234cfa1a1b8e373b2ee024e",
+    "path": "sources/profile-closure-next-02/roster_current_season.json",
+    "sha256": "bf725f7bd40b6327e03a0ae040ff107d51fe5defa7f2b1bbea2831bf66642050",
+    "source_expires_at": 1794454469.0
+  },
+  "inputs_sha256": "440909bd5a4ebadb82a5d74f2b2a08e215eb6dc41885c58f44a92f4736456dfb",
+  "queries_sha256": "b84815e664e16b579be1904a6df022fa040314f7cf7db2a1d8cd04ae9f2870bc",
+  "code_sha256": {
+    "tools/capture_anytime_existing.py": "7d233da20b87120d51308c4d553282ccbfecf03ebba5952745c7b4ade9584ace",
+    "nfl_v2/anytime_current_shadow.py": "8de8c73fed3cb67d210cc8a49d29e1665f5d445a57a5ea7ad4cca46d1083037c",
+    "nfl_v2/hgb_control.py": "13ad5627152d4aed81540f93088b63716acb98a00bce52089a8ec8cbb619cccf",
+    "nfl_v2/empirical_benchmark.py": "53ea90595bdc83a11289ef4daeec795b0bb320ce23b8c8ee8dddcdb6ca88d085",
+    "nfl_v2/week8_shadow.py": "71e467df62a3690fb66f2d321624659a43d750a8d0110a7fcf7be340724e4c37"
+  },
+  "feature_order": [
+    "mean3",
+    "n3",
+    "mean8",
+    "n8",
+    "lag1_value",
+    "lag1_age_days",
+    "lag1_missing",
+    "lag2_value",
+    "lag2_age_days",
+    "lag2_missing",
+    "lag3_value",
+    "lag3_age_days",
+    "lag3_missing",
+    "lag4_value",
+    "lag4_age_days",
+    "lag4_missing",
+    "position_QB",
+    "position_RB",
+    "position_WR",
+    "position_TE"
+  ],
+  "params": {
+    "max_iter": 64,
+    "max_depth": 3,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 10,
+    "learning_rate": 0.05,
+    "l2_regularization": 10,
+    "random_state": 1701,
+    "early_stopping": false,
+    "categorical_features": null,
+    "max_bins": 255
+  },
+  "training": "All eligible QB/RB/WR/TE known binary labels since2022; strict availability<actualcutoff; unknown slots retained in history",
+  "feature_policy": "Exact original mean3/n3/mean8/n8 and4value/age/missing lags; fixed7day reconstruction at all historical/current origins",
+  "target": "At leastone rushingORreceivingTD; explicit component/positivephysicalproof;unknownnotzero",
+  "control": "Unchanged H-MULTI own empirical event frequency, then sameposition mean, then literal0; no fitting/tuning",
+  "probabilities": "Raw event probabilities, NOT calibratedconfidence/EV; no offeredNO/Under invented",
+  "horizon": "REAL_EARLY_CURRENT_SHADOW;originalissue/source/persistenceclocksseparate;notoriginalkickoffhistoricalissuance",
+  "stop": "One current fit once; no history/tuning/search repeats; retain any failed stages",
+  "budget": {
+    "max_new_current_fits": 1,
+    "max_new_historical_fits": 0,
+    "wall_seconds": 300,
+    "cpu_seconds": 300,
+    "RSS_bytes": 1073741824,
+    "threads": 2,
+    "public_bytes": 8388608
+  },
+  "new_primary_release": false,
+  "exact_offer": null,
+  "side": null,
+  "production_owner": "Originalwebsiteownerunchanged"
+}

@@ -1,0 +1,191 @@
+{
+  "id": "B-ANYTIME-CURRENT-PREFIT-INDEPENDENT-REVIEW-v1",
+  "reviewed_UTC": "2026-11-12T02:20:58.095166+00:00",
+  "state": "PASS_IN_CHECKED_PREFIT_SCOPE;NOT_A_CAPTURE_OR_PRIMARY_ADMISSION",
+  "protocol_sha256": "b052b388b1a889522846af358e05b487edb970ce24ac52e5cfe9d4fc402b13a8",
+  "code_sha256": {
+    "tools/capture_anytime_existing.py": "7d233da20b87120d51308c4d553282ccbfecf03ebba5952745c7b4ade9584ace",
+    "nfl_v2/anytime_current_shadow.py": "8de8c73fed3cb67d210cc8a49d29e1665f5d445a57a5ea7ad4cca46d1083037c",
+    "nfl_v2/hgb_control.py": "13ad5627152d4aed81540f93088b63716acb98a00bce52089a8ec8cbb619cccf",
+    "nfl_v2/empirical_benchmark.py": "53ea90595bdc83a11289ef4daeec795b0bb320ce23b8c8ee8dddcdb6ca88d085",
+    "nfl_v2/week8_shadow.py": "71e467df62a3690fb66f2d321624659a43d750a8d0110a7fcf7be340724e4c37"
+  },
+  "input_sha256": "440909bd5a4ebadb82a5d74f2b2a08e215eb6dc41885c58f44a92f4736456dfb",
+  "queries_sha256": "b84815e664e16b579be1904a6df022fa040314f7cf7db2a1d8cd04ae9f2870bc",
+  "source_scope": "ExistinglicensedBbasic-statderivative and Ccurrent-knownroster; no sourceacquisition or full2394-row rawparity repeated",
+  "feature_count": 20,
+  "params_exact_original": true,
+  "training_roles": [
+    "QB",
+    "RB",
+    "WR",
+    "TE"
+  ],
+  "primary_query_roles": [
+    "RB",
+    "WR",
+    "TE"
+  ],
+  "history_slots": 26235,
+  "known_eligible_training_rows": 25830,
+  "training_by_role": {
+    "QB": 2901,
+    "RB": 6805,
+    "WR": 10803,
+    "TE": 5321
+  },
+  "training_classes": {
+    "0.0": 21048,
+    "1.0": 4782
+  },
+  "training2026weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "W9_eligible_labels": 0,
+  "unknown_slots_retained": 384,
+  "source_samples": [
+    {
+      "case": "KNOWN_ZERO_SPECIAL_TEAM_PROOF",
+      "game_id": "2022_01_BUF_LA",
+      "player_id": "00-0028063",
+      "role": "RB",
+      "played": true,
+      "event": 0.0,
+      "rushing_tds": 0.0,
+      "receiving_tds": 0.0,
+      "source_id": "stats_player_week_2022.csv",
+      "source_sha256": "ad426c3fe5bf1cc30c3f137fdfe96d054e19d400879ee4413129da49fa7b54be"
+    },
+    {
+      "case": "UNPROVED_PARTICIPATION_UNKNOWN_NOT_ZERO",
+      "game_id": "2022_01_BAL_NYJ",
+      "player_id": "00-0036133",
+      "role": "WR",
+      "played": false,
+      "event": null,
+      "rushing_tds": 0.0,
+      "receiving_tds": 0.0,
+      "source_id": "stats_player_week_2022.csv",
+      "source_sha256": "ad426c3fe5bf1cc30c3f137fdfe96d054e19d400879ee4413129da49fa7b54be"
+    },
+    {
+      "case": "ORDINARY_POSITIVE_EVENT",
+      "game_id": "2026_01_NE_SEA",
+      "player_id": "00-0038543",
+      "role": "WR",
+      "played": true,
+      "event": 1.0,
+      "rushing_tds": 0.0,
+      "receiving_tds": 1.0,
+      "source_id": "stats_player_week_2026.csv",
+      "source_sha256": "bbb261be576e15e62c3cdfa57ea7d606e12993233ee53a1f9d464b733e379d45"
+    }
+  ],
+  "independent_historical_feature_cases": [
+    {
+      "case": "KNOWN_ZERO_SPECIAL_TEAM_PROOF",
+      "game_id": "2022_01_BUF_LA",
+      "player_id": "00-0028063",
+      "selected_prior_slots": 0,
+      "known_last3": 0.0,
+      "known_last8": 0.0,
+      "latest_available": null,
+      "target_cutoff": 1662682800.0
+    },
+    {
+      "case": "UNPROVED_PARTICIPATION_UNKNOWN_NOT_ZERO",
+      "game_id": "2022_01_BAL_NYJ",
+      "player_id": "00-0036133",
+      "selected_prior_slots": 0,
+      "known_last3": 0.0,
+      "known_last8": 0.0,
+      "latest_available": null,
+      "target_cutoff": 1662915600.0
+    },
+    {
+      "case": "ORDINARY_POSITIVE_EVENT",
+      "game_id": "2026_01_NE_SEA",
+      "player_id": "00-0038543",
+      "selected_prior_slots": 8,
+      "known_last3": 3.0,
+      "known_last8": 8.0,
+      "latest_available": 1768093200.0,
+      "target_cutoff": 1788999600.0
+    }
+  ],
+  "no_own_current_cases": [
+    {
+      "player_id": "00-0041178",
+      "role": "RB",
+      "known_last3": 0.0,
+      "known_last8": 0.0,
+      "lag_missing": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "player_id": "00-0041376",
+      "role": "RB",
+      "known_last3": 0.0,
+      "known_last8": 0.0,
+      "lag_missing": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "synthetic_boundary": "PASS_unknownconsumesslot/strictavailableequalityexcluded/futurerowinvariant;no syntheticfit",
+  "all_current_basic": 52,
+  "ACT_forecast_candidates": 25,
+  "query_role_counts": {
+    "TE": 8,
+    "WR": 10,
+    "RB": 7
+  },
+  "schedule": {
+    "source_sha256": "6f707dcea8758bc6c0421559d23c07d4627f39658f93913908d5ddd1b27f6aae",
+    "old_game_clocks_unchanged": 1208,
+    "target": {
+      "season": 2026,
+      "week": 10,
+      "kickoff": 1794532500.0,
+      "home": "NYG",
+      "away": "WAS",
+      "native": "401873052"
+    },
+    "game_id": "2026_10_WAS_NYG"
+  },
+  "feature_freeze_to_registration_seconds": 2.2627358436584473,
+  "registration_interpretation": "Actualsourcefreeze occurs atpreparestart;registrationwrittenafterderivation but beforeanyfit;not a backdatedforecast or authenticatedhistoricalpublication",
+  "source_expiry_UTC": "2026-11-12T03:34:29+00:00",
+  "model_export_review": "StaticnumericHGBbaseline-logit plusone-treeperstage leafvalues/finite-or-infinite numeric thresholds/missingrouting/class1orientation; stablelogistic; ownnewmodelonly, no pickleload. Parenttoy4test receipt reused; no model tested here.",
+  "nonblocking_limits": [
+    "Currentrunner refuses minimum-support/single-class failure ratherthan executing old empiricalfallback; boundcurrenttrain25830/bothclasses makes this branch unreachable for this frozeninput. No general primary-runtime parity claim.",
+    "Target schedule literal matches boundfullschedule; freshnative/status and realissue/sourceexpiry/persistence gate stillrequired separately.",
+    "RAW probabilities are not calibration/per-pickconfidence/EV or offeredNO/Under selections.",
+    "CurrentACTconditionalroster scope is distinct from authenticatedpregamestarter/health and retrospectiveparticipant scoring."
+  ],
+  "pending": [
+    "Immutablecode/input/protocolGitHubreadbackbeforetheonecurrentfit",
+    "NativeversustrustedJSONrestoration onactualnewmodel afterfit",
+    "Freshnative event and unexpiredsource atactualissue/persistence",
+    "Consumeradmission and anyscientificprimaryqualification remainseparate"
+  ],
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_forecasts": 0,
+  "new_grades": 0,
+  "new_NFL_observations": 0
+}

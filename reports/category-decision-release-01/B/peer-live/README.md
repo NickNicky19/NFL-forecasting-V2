@@ -1,0 +1,33 @@
+# B read-only C and original-site evidence refresh
+
+This is a source/consumer verification contribution to C's existing shared decision record, not another category championship or deployment. Peer repositories remained read-only. No fits, inference, grades, source-provider collection, workflow dispatch, scheduler or production change occurred.
+
+C's actual published main is `d9309bb8676fcd2102bfdc9b45adb0c504d0a498`, with no open PR observed in the bounded refresh. The common protocol and scorer remain unchanged. Its 72-row existing category/product table explicitly covers named A panels with B/C/incumbent comparisons separate; it does not establish a universal cross-session champion. Its current timing qualification still lists the new A joins as pending. That published status must be reconciled with A's supplied executed revision, not used to request duplicate scoring. [Canonical scope/bindings](C_CANONICAL_SCOPE_AND_BINDINGS_V1.json).
+
+The original site's actual main advanced to `ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e`. Its latest successful scheduled run `43101028574` produced a **new 1,617-row reference capture** at November 11, 21:13:15 UTC. Original C75/C69/B10 and website1610/1614 records remain separate. Six served assets match this actual new commit. As of the check, build age was **257.49 minutes**, above the declared 120-minute maximum; health's 0.06-minute age was a frozen build-time check. No current DOM or stale-warning rendering was tested by B. [Actual served state](WEBSITE_SERVED_CONSUMER_STATE_V1.json).
+
+Current served metadata shows `sleeper-matchup-classic-presence-strict-v2`, zero research-overlay rows, `DISABLED_USE_R0`, and 12 Over plus 12 Under saved rankings sourced from `CURRENT_BASELINE`. Native records retain line/source/lean/top flags; they must not all be called missing offers. Current board metadata tags 438 real-line props and 1,589 reference-only props, while quote freshness is UNKNOWN and source timestamps are unverified. This check neither authenticates their decision-time/settlement contract nor grades them.
+
+The actual workflow remains named **Hourly update** but is configured **daily at 8:06 America/Chicago**. The observed successful run began 21:12:12 UTC on November 11, after the configured daily time, and ended 21:13:39. That is a real delayed scheduled success, not hourly fresh offers or proof of on-time reliability.
+
+## Consumer rules differ by product
+
+The current app has an isolated StatPointMaeV2 numerical-display path. Its feed pointer returned HTTP404; this identifies an absent display feed pointer, not a missing model. Its configured core-three source policy covers Leaf medians for passing yards, interceptions and combined yards and requires same-law expected-mean/CDF proof. Those requirements are not universal prerequisites for an honestly labeled point-direction product.
+
+The selection overlay instead requires point means for counts, intended medians for yards, and an explicit event probability for anytime TD; exact chart PPR is unsupported. A reception median cannot be relabeled as a mean to pass this contract. Existing selected category leans apply margins, including **0.8 completions**, rather than strict point-versus-line P1. The Top Picks policy additionally applies support, line floors, a 0.4–2.5 projection/line ratio, scaling, a minimum score, best-per-player logic, side capacities and its real update schedule.
+
+B executed nine synthetic cases using the exact current source functions: completions22.7 versus22.5 is strict-P1 Over but a consumer no-lean; an exact eight-yard margin is neutral; known zero, equality, null, missing lines, internal sources and changed custom lines have explicit checked behavior. This is not a model/offer/Top Picks replay or feed-admission test. [Actual code fixture](ACTUAL_CONSUMER_RULE_FIXTURE_V1.json).
+
+A strict-P1 replacement therefore needs either a separately versioned strict category-direction consumer with isolated Top Picks inputs, or evaluation of the actual margin policy. A display-only change must not claim a direction/ranker improvement.
+
+## Producer and selector dependencies
+
+The current consumer's actual audit says **PUBLIC_FEED_UNAVAILABLE**, not storage failure. A's inspected producer branch is `research/weekly-storage-probe-v1` at audited-history revision `fa91988e65939d2b3516371a90a6380aeee3acb3`; `lab-state` remains `275aa84b27c4239d3b2dfea07755734d9db0ac7c`. The exact current W10 public feed directory returned404. This does not imply Count A restoration is missing.
+
+Website policy-v10 still names the declared publication source `dad58d459951bdb77ef852b8ca88860ffb0bce60`, `.github/workflows/lab.yml`, and jobs `audit-weekly-restore-v1`, `audit-weekly-produce-v1`, `audit-weekly-export-v1`. Its receipt/native-job checks bind to that source. The repaired branch and declared publication epoch need explicit owner reconciliation; this is a verified binding difference, not a demonstrated rejection of an actual new fa91988 feed. A fresh authorized executor/ROOT_GO receipt was not established by B merely by reading the branch name. The retained A executor must produce/restore/query/correct/capture/export under its actual authority; the website owner then verifies source/type/corrector/consumer and release. Do not impose another candidate's EPA or full-law dependencies on Count A or repeat its completed restoration.
+
+The latest original-site owner receipt remains comment6781537258. It completed 30 forecast-only C75/original1610 comparisons, preserving 15 unmatched players. Its public manifest and inputs are recoverable; 4,041 assertions remain owner-reported, not reexecuted here. No newer exact changed Top Picks replay was found. The known four W5–8 boards remain available.
+
+B inspected an existing W4 archive candidate: **539 player-games, 16 games, 2,435 props**, including 755 DK-tagged rows, 1,245 internal-reference rows and 435 no-line-source rows. It lacks all current-selector support fields (`games_this_season`, `snap_share`, `injury`, prop `n`/`over`) plus model/procedure/row-clock closure. Its later saved time alone does not invalidate earlier forecasts, but it is not yet a qualified fifth board. The stats-only W4 file is not a forecast board; repeated Git snapshots are copies, not extra weeks. [Exact candidate qualification](FIFTH_BOARD_ARCHIVE_QUALIFICATION_V1.json).
+
+The website owner must qualify/recover W4's original input/support/model/decision-time closure—or another compatible full fifth board—and freeze the category-method mapping before its one replay. B independently checks the resulting permitted membership/arithmetic. No blanket W4 absence or new ranker is asserted here.

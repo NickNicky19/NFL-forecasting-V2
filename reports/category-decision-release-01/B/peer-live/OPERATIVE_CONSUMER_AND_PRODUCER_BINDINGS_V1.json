@@ -1,0 +1,167 @@
+{
+  "id": "B-OPERATIVE-CONSUMER-PRODUCER-BINDINGS-v1",
+  "recorded_UTC": "2026-11-12T01:50:12Z",
+  "website": {
+    "repository": "NickNicky19/nicks-expert-nfl-picks",
+    "commit": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+    "retained_executor_goal": "NFL-WEB-PRODUCTION-REPORT-INTEGRATION-20261025-122500Z",
+    "owner_reported_lease": 178,
+    "authority_scope": "LatestownercommentnotanewBauthoritygrant",
+    "latest_owner_receipt": {
+      "id": 6781537258,
+      "created_UTC": "2026-11-10T22:53:53Z",
+      "url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/pull/1#issuecomment-6781537258"
+    },
+    "consumer_contract": {
+      "id": 6766438122,
+      "created_UTC": "2026-11-10T11:44:26Z",
+      "url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/pull/1#issuecomment-6766438122",
+      "declared_contract_SHA256": "7ae1b76670749a70bdb1f27b724c4b3c97bc7ca959f48daece55ed5f680ce48c"
+    },
+    "current_feed_audit": {
+      "path": "data/weekly-adaptive-audit/be6619f9cd4c8b0c0df01c8a00cd0016583390ab89c6ecd9303aa970f4285aac.json",
+      "body": {
+        "at": "2026-11-11T21:13:21.281022+00:00",
+        "authority_kind": "AUTOMATED_REGISTERED_POLICY",
+        "human_approval": false,
+        "policy_file_sha256": "73836d32b8e301a29ed4092adfdbfcc9ecfd132e481d1c3452650f46b00a4a29",
+        "review": {},
+        "schema_version": "weekly-public-feed-writer-audit-v1",
+        "validation": {
+          "human_approval": false,
+          "reason": "PUBLIC_FEED_UNAVAILABLE",
+          "rows": 0,
+          "state": "CURRENT_REFERENCE_FALLBACK"
+        },
+        "website_source_sha": "01a283a2bba828ce7634902017f38ef93fd8c75e"
+      }
+    },
+    "selection_policy": {
+      "path": "config/weekly-derived-selected-policy-v10.json",
+      "sha256": "73836d32b8e301a29ed4092adfdbfcc9ecfd132e481d1c3452650f46b00a4a29",
+      "state": "ROOT_REGISTERED"
+    },
+    "current_category_direction": "selectedPropGap applies per-category margin; it is not strict point-line P1",
+    "fixture": "ACTUAL_CONSUMER_RULE_FIXTURE_V1.json",
+    "display_vs_selection": "StatPointMaeV2 is independent display-only path. Selectionforecastdrivesrankingleans/TopPicks. Displayfeedpointer404doesnotprovemodelmissing.",
+    "count_product_pair": [
+      "point_mean",
+      "expected_mean"
+    ],
+    "yard_product_pair": [
+      "point_median",
+      "intended_median"
+    ],
+    "anytime_product_pair": [
+      "binary_probability",
+      "event_probability"
+    ],
+    "exact_nick_chart": "UNSUPPORTED_IN_SELECTION_OVERLAY;leaguePPRisnotexactchart",
+    "Top_Picks": {
+      "policy": "selected-projection-gap-classic-presence-v2",
+      "policy_sha256": "551ee07861774ba2c90ad0e8097136c359807f92843dde5cd4b96ecffbe958ed",
+      "counts": "12Over/12Under max;no forcedcapacity",
+      "ratio_gate": [
+        0.4,
+        2.5
+      ],
+      "minimum_score": 0.35,
+      "full_historical_replay": "NO_NEW_COMPLETE_PACKAGE_RECEIVED;websiteownerexecutesBverifies",
+      "retained_full_boards": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "fifth_candidate": "ExistingW4archivequalifiedshapeonly;missingcurrentselector support/model/rowclockclosure",
+      "candidate_mapping_decision_time": "NOT_CLOSED_BY_RECEIVED_PACKAGE"
+    }
+  },
+  "A_registered_route": {
+    "repository": "NickNicky19/NFL-forecasting",
+    "actual_source_branch": "research/weekly-storage-probe-v1",
+    "actual_source_branch_HEAD": "fa91988e65939d2b3516371a90a6380aeee3acb3",
+    "source_branch_commit_UTC": "2026-11-06T01:20:08Z",
+    "source_branch_subject": "Merge PR #87: bind audit-correct history semantics to the reviewed producer source profile\n\nBind the audited history repair to the registered producer source",
+    "actual_public_branch": "lab-state",
+    "actual_public_branch_HEAD": "275aa84b27c4239d3b2dfea07755734d9db0ac7c",
+    "current_W10_path": "state/public/weekly-adaptive-v1/2026-W10",
+    "current_W10_GET": "404_NOT_FOUND",
+    "404_scope": "Absentexpectedderived-feeddirectory,notproofmodelmissingorclosedrestorationundone",
+    "workflow_path": ".github/workflows/lab.yml",
+    "workflow_event": "workflow_dispatch",
+    "jobs": {
+      "restore": "audit-weekly-restore-v1",
+      "produce": "audit-weekly-produce-v1",
+      "consume": "audit-weekly-export-v1"
+    },
+    "website_declared_publication_source": "dad58d459951bdb77ef852b8ca88860ffb0bce60",
+    "native_reader_contract": "tools/weekly_public_feed_v4.py binds receipt.source_sha and nativejob.head_sha topublication_authority.source_sha",
+    "binding_difference_disposition": "VERIFIED_BRANCH_VS_DECLARED_SOURCE_DIFFERENCE;NOT_A_DEMONSTRATED_FEED_REJECTION_OR_MODEL_BUG. Ownerverifiesactualallowedepoch/executingcodepathandrepairsbindingonlyifstillrequired.",
+    "authorized_A_native_execution_owner": "NotestablishedbyBbranchnamealone;retainexistingAowner/ROOT_GO/executionlease. NoBworkflowdispatchauthorized.",
+    "CountA_complete_procedure": "pass_td__COUNT_A_MEAN f8607aa99a94c7c1c9ab5c89599e07eba9b15527749b092b225f368032881e83",
+    "CountA_field": "UseapprovedcorrectedFORECASTS.parquet.point/fullcorrectorpath;notlegacy_point/NaNmean/median/barepredict",
+    "minimum_input_requirements": "MustbeprovidedfromexactCountAregisteredrecipe. NoEPA/route/full-lawrequirementborrowedfromanothermodel;currentqueriesneednoownfinaloutcome.",
+    "observable_next_action": "ExistingAexecutoracknowledgescorrectworkflow/root-go,acceptsrestoredmodelandcurrentqualifiedquerysource,issuesfullcorrectedmeanbeforeeligiblefuturecutoff,persistsnativeartifact,exportsreadablederivedW10feed;websiteownerverifiesactualsource/model/type/clocks/consumer,withanyreviewedsourcepinamendmentneeded.",
+    "latest_branch_runs_observed": [
+      {
+        "id": 41564933010,
+        "name": "NFL research lab",
+        "head": "a2ab7d4eeb01b1af7f76af4b8090404b4f096f50",
+        "created_UTC": "2026-11-03T02:15:08Z",
+        "conclusion": "success"
+      },
+      {
+        "id": 41563998291,
+        "name": "Audit source checks",
+        "head": "a2ab7d4eeb01b1af7f76af4b8090404b4f096f50",
+        "created_UTC": "2026-11-03T02:06:15Z",
+        "conclusion": "success"
+      },
+      {
+        "id": 41552796382,
+        "name": "NFL research lab",
+        "head": "dd88e1235fdd7c265c02963031da214b04632404",
+        "created_UTC": "2026-11-03T00:25:53Z",
+        "conclusion": "failure"
+      }
+    ],
+    "latest_run_scope": "ThreebranchfilteredrunsobservedallNov3,beforefaNov6repair;noactualnewfanativecurrentrunestablished."
+  },
+  "observed_website_runs": [
+    {
+      "id": 43101028574,
+      "name": "Hourly update",
+      "head": "01a283a2bba828ce7634902017f38ef93fd8c75e",
+      "event": "schedule",
+      "created_UTC": "2026-11-11T21:12:12Z",
+      "started_UTC": "2026-11-11T21:12:12Z",
+      "updated_UTC": "2026-11-11T21:13:39Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 42898382015,
+      "name": "Hourly update",
+      "head": "c134a44ff1d9b51d0b52926e13387742397b6ccf",
+      "event": "schedule",
+      "created_UTC": "2026-11-10T20:45:25Z",
+      "started_UTC": "2026-11-10T20:45:25Z",
+      "updated_UTC": "2026-11-10T20:53:09Z",
+      "conclusion": "success"
+    }
+  ],
+  "workflow_cadence": {
+    "actual_path": ".github/workflows/hourly.yml",
+    "name": "Hourly update",
+    "schedule": "6 8 * * *",
+    "timezone": "America/Chicago",
+    "meaning": "DAILY_8_06_AM_CHICAGO_NOT_HOURLY",
+    "actual_latest_start_UTC": "2026-11-11T21:12:12Z",
+    "on_time_claim": false,
+    "source_quotes_hourly_freshness": false
+  },
+  "new_fits": 0,
+  "new_NFL_outcomes": 0,
+  "new_replay": 0,
+  "new_production_writes": 0
+}

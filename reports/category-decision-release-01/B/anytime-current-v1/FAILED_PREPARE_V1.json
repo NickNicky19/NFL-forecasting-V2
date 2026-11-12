@@ -1,0 +1,13 @@
+{
+  "id": "B-ANYTIME-CURRENT-PREPARE-FAILURE-v1",
+  "at_UTC": "2026-11-12T02:07:16.489513+00:00",
+  "error": "Historical game identity",
+  "cause": "Reused legacy week8 schedule helper intentionally excludes2026week9; newerretainedsourcehas23W9rows. No lost oldrows or model fit.",
+  "affected_game_id": "2026_09_JAX_BAL",
+  "affected_unadmitted_future_slots": 23,
+  "fit_calls": 0,
+  "inference_calls": 0,
+  "source_requests": 0,
+  "code_snapshot_sha256": "b78e92a53f2ac47046778b5d8a1519e5185fcdc79e57a1a93e0f2111b23a4c70",
+  "correction": "Dynamicallyparseoriginalsameboundgames source; preserveoldgameclocks, rejectunknown clocks for requiredgames; no backdating."
+}

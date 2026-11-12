@@ -1,0 +1,732 @@
+{
+  "assignment": "NFL-NEXT-GENERATION-INFORMATION-RESEARCH-01",
+  "owner": "B",
+  "kind": "SOURCE_QUALIFICATION_ONLY_NOT_PREDICTIVE_EVALUATION",
+  "observed_utc": "2026-11-12T17:59:25.386189+00:00",
+  "candidate_block": "source-reported QB depth-slot rank and change versus latest eligible prior QB-game snapshot",
+  "classification": "GENUINELY_NEW_SOURCE_AUTHORED_ASOF_RECONSTRUCTION",
+  "clock_contract": {
+    "dt": "ISO8601 time record was loaded, per source dictionary",
+    "history": "Append snapshots per source schedule; latest team snapshot with dt strictly before query kickoff; unknown/nonfinite/naive clocks not imputed; exact GSIS/team identity",
+    "not_established": [
+      "Original HTTP bytes available at each historical decision",
+      "Independent proof all old snapshots were never revised",
+      "Depth rank equals final starter, active status, health, or starting probability"
+    ],
+    "source_vintage": "Files retrieved now; embedded source-authored historical load clocks, explicitly reconstructed evidence tier"
+  },
+  "sources": [
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2025.parquet",
+      "started_utc": "2026-11-12T17:56:12.004498+00:00",
+      "purpose": "Root-authorized same-family historical context extension for source qualification, no fitting",
+      "status": 200,
+      "bytes": 2584724,
+      "sha256": "14f74185b3c2c48df234ced284ba3596bda3333d0b2a8df40841f68cd34539fa",
+      "headers": {
+        "Date": "Thu, 12 Nov 2026 17:56:12 GMT",
+        "Last-Modified": "Sat, 14 Mar 2026 07:32:28 GMT",
+        "ETag": "\"0x8DE819BD8521A1B\"",
+        "Content-Type": "application/octet-stream"
+      },
+      "received_utc": "2026-11-12T17:56:12.748509+00:00"
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2026.parquet",
+      "started_utc": "2026-11-12T17:53:05.483577+00:00",
+      "purpose": "One-time read-only source qualification; no fitting or collection schedule",
+      "status": 200,
+      "bytes": 3465032,
+      "sha256": "8633b61b70c35eaf919c8aef9934c8802723de4dfb6aeb7f354dfc09237a5ced",
+      "headers": {
+        "Date": "Thu, 12 Nov 2026 17:53:05 GMT",
+        "Last-Modified": "Thu, 12 Nov 2026 15:57:20 GMT",
+        "ETag": "\"0x8DF40D5A2909839\"",
+        "Content-Type": "application/octet-stream"
+      },
+      "received_utc": "2026-11-12T17:53:06.182087+00:00"
+    }
+  ],
+  "raw_source_bytes": 6049756,
+  "2025_source_coverage": {
+    "rows": 554215,
+    "dt_min": "2025-08-03T10:09:07Z",
+    "dt_max": "2026-03-14T07:32:09Z",
+    "timestamps": 221,
+    "teams": 32,
+    "QB_rows": 21429,
+    "QB_players": 127,
+    "QB_missing_GSIS": 87
+  },
+  "2026_source_coverage": {
+    "rows": 780140,
+    "schema": {
+      "dt": "object",
+      "team": "object",
+      "player_name": "object",
+      "espn_id": "object",
+      "gsis_id": "object",
+      "pos_grp_id": "object",
+      "pos_grp": "object",
+      "pos_id": "object",
+      "pos_name": "object",
+      "pos_abb": "object",
+      "pos_slot": "int32",
+      "pos_rank": "int32"
+    },
+    "null_counts": {
+      "dt": 0,
+      "team": 0,
+      "player_name": 1220,
+      "espn_id": 0,
+      "gsis_id": 24140,
+      "pos_grp_id": 0,
+      "pos_grp": 0,
+      "pos_id": 0,
+      "pos_name": 0,
+      "pos_abb": 0,
+      "pos_slot": 0,
+      "pos_rank": 0
+    },
+    "dt_min": "2026-03-22T06:38:42Z",
+    "dt_max": "2026-11-12T15:57:12Z",
+    "timestamps": 292,
+    "teams": 32,
+    "positions": {
+      "WR": 86032,
+      "TE": 49190,
+      "RB": 45944,
+      "KR": 32625,
+      "QB": 30296,
+      "FS": 29976,
+      "RCB": 29612,
+      "LDE": 29339,
+      "LCB": 29276,
+      "WLB": 28818,
+      "RDE": 28656,
+      "SLB": 27632,
+      "LT": 27362,
+      "LG": 26516,
+      "RG": 26058,
+      "RT": 25638,
+      "SS": 24672,
+      "C": 24534,
+      "NB": 23038,
+      "PR": 22769,
+      "RILB": 17769,
+      "LILB": 17087,
+      "NT": 15924,
+      "LDT": 12629,
+      "RDT": 12219,
+      "PK": 10957,
+      "P": 10429,
+      "LS": 10258,
+      "H": 10122,
+      "MLB": 9921,
+      "FB": 4839,
+      "K": 3
+    },
+    "rank_values": {
+      "1": 255638,
+      "2": 211948,
+      "3": 149984,
+      "4": 76829,
+      "5": 34210,
+      "6": 18291,
+      "7": 9907,
+      "8": 6041,
+      "9": 4821,
+      "10": 4251,
+      "11": 3596,
+      "12": 2695,
+      "13": 1419,
+      "14": 412,
+      "15": 97,
+      "16": 1
+    },
+    "snapshot_months": {
+      "2026-10": 61,
+      "2026-09": 44,
+      "2026-08": 31,
+      "2026-07": 31,
+      "2026-06": 30,
+      "2026-04": 30,
+      "2026-05": 30,
+      "2026-11": 23,
+      "2026-03": 12
+    },
+    "metadata": {
+      "nflverse_type": "depth charts",
+      "nflverse_timestamp": "2026-11-12 10:57:15 EST"
+    }
+  },
+  "query_coverage_2026": {
+    "scope": "Retained QB game input identities, stat-row-conditioned reconstruction; no pregame roster-universe authentication",
+    "query_cutoff": "strict source-authored loaded dt < retained game kickoff; not label availability clock",
+    "weeks": {
+      "1": {
+        "query_rows": 37,
+        "team_snapshot_available": 37,
+        "exact_gsis_role_rows_available": 37,
+        "unknown_identity_or_not_on_latest_snapshot": 0,
+        "duplicate_current_identity": 0,
+        "rank_counts": {
+          "1": 31,
+          "2": 4,
+          "3": 2
+        },
+        "source_age_hours_min": 4.297777777777778,
+        "source_age_hours_max": 12.553888888888888,
+        "snapshot_min": "2026-09-09 12:06:21+00:00",
+        "snapshot_max": "2026-09-14 13:53:31+00:00",
+        "rank_changed_since_previous_observation": 0
+      },
+      "2": {
+        "query_rows": 39,
+        "team_snapshot_available": 39,
+        "exact_gsis_role_rows_available": 39,
+        "unknown_identity_or_not_on_latest_snapshot": 0,
+        "duplicate_current_identity": 0,
+        "rank_counts": {
+          "1": 29,
+          "2": 8,
+          "3": 1,
+          "4": 1
+        },
+        "source_age_hours_min": 4.758333333333334,
+        "source_age_hours_max": 12.091666666666667,
+        "snapshot_min": "2026-09-17 12:34:29+00:00",
+        "snapshot_max": "2026-09-21 13:56:04+00:00",
+        "rank_changed_since_previous_observation": 0
+      },
+      "3": {
+        "query_rows": 36,
+        "team_snapshot_available": 36,
+        "exact_gsis_role_rows_available": 36,
+        "unknown_identity_or_not_on_latest_snapshot": 0,
+        "duplicate_current_identity": 0,
+        "rank_counts": {
+          "1": 30,
+          "2": 5,
+          "3": 1
+        },
+        "source_age_hours_min": 4.051388888888889,
+        "source_age_hours_max": 11.547777777777778,
+        "snapshot_min": "2026-09-24 12:42:08+00:00",
+        "snapshot_max": "2026-09-28 15:17:44+00:00",
+        "rank_changed_since_previous_observation": 0
+      },
+      "4": {
+        "query_rows": 34,
+        "team_snapshot_available": 34,
+        "exact_gsis_role_rows_available": 34,
+        "unknown_identity_or_not_on_latest_snapshot": 0,
+        "duplicate_current_identity": 0,
+        "rank_counts": {
+          "1": 29,
+          "2": 4,
+          "3": 1
+        },
+        "source_age_hours_min": 0.34555555555555556,
+        "source_age_hours_max": 11.178888888888888,
+        "snapshot_min": "2026-10-01 14:25:58+00:00",
+        "snapshot_max": "2026-10-05 15:53:14+00:00",
+        "rank_changed_since_previous_observation": 0
+      },
+      "5": {
+        "query_rows": 36,
+        "team_snapshot_available": 36,
+        "exact_gsis_role_rows_available": 36,
+        "unknown_identity_or_not_on_latest_snapshot": 0,
+        "duplicate_current_identity": 0,
+        "rank_counts": {
+          "1": 27,
+          "2": 8,
+          "3": 1
+        },
+        "source_age_hours_min": 3.0580555555555557,
+        "source_age_hours_max": 10.391388888888889,
+        "snapshot_min": "2026-10-08 14:33:03+00:00",
+        "snapshot_max": "2026-10-12 16:41:36+00:00",
+        "rank_changed_since_previous_observation": 0
+      },
+      "6": {
+        "query_rows": 29,
+        "team_snapshot_available": 29,
+        "exact_gsis_role_rows_available": 29,
+        "unknown_identity_or_not_on_latest_snapshot": 0,
+        "duplicate_current_identity": 0,
+        "rank_counts": {
+          "1": 26,
+          "2": 3
+        },
+        "source_age_hours_min": 1.456388888888889,
+        "source_age_hours_max": 12.289722222222222,
+        "snapshot_min": "2026-10-15 12:37:05+00:00",
+        "snapshot_max": "2026-10-19 14:35:37+00:00",
+        "rank_changed_since_previous_observation": 0
+      },
+      "7": {
+        "query_rows": 31,
+        "team_snapshot_available": 31,
+        "exact_gsis_role_rows_available": 31,
+        "unknown_identity_or_not_on_latest_snapshot": 0,
+        "duplicate_current_identity": 0,
+        "rank_counts": {
+          "1": 27,
+          "2": 4
+        },
+        "source_age_hours_min": 0.9872222222222222,
+        "source_age_hours_max": 11.820555555555556,
+        "snapshot_min": "2026-10-22 12:59:29+00:00",
+        "snapshot_max": "2026-10-26 14:07:44+00:00",
+        "rank_changed_since_previous_observation": 0
+      },
+      "8": {
+        "query_rows": 35,
+        "team_snapshot_available": 35,
+        "exact_gsis_role_rows_available": 35,
+        "unknown_identity_or_not_on_latest_snapshot": 0,
+        "duplicate_current_identity": 0,
+        "rank_counts": {
+          "1": 28,
+          "2": 6,
+          "3": 1
+        },
+        "source_age_hours_min": 3.7591666666666668,
+        "source_age_hours_max": 11.0925,
+        "snapshot_min": "2026-10-29 14:07:35+00:00",
+        "snapshot_max": "2026-11-02 17:01:29+00:00",
+        "rank_changed_since_previous_observation": 0
+      }
+    },
+    "roles": "source depth rank is neither observed final starter nor probability of starting",
+    "rows": 277,
+    "dt_before_W1": 19339,
+    "all_source_dt_min": "2026-03-22 06:38:42+00:00",
+    "all_source_dt_max": "2026-11-12 15:57:12+00:00",
+    "training_label_support_by_week_7d_proxy": {
+      "1": 0,
+      "2": 3,
+      "3": 37,
+      "4": 76,
+      "5": 112,
+      "6": 146,
+      "7": 182,
+      "8": 211
+    }
+  },
+  "retained_query_panels": {
+    "2025_W1": {
+      "queries": 34,
+      "available": 34,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 32,
+        "2": 1,
+        "3": 1
+      },
+      "prior_rank_known": 0,
+      "rank_change_nonzero": 0
+    },
+    "2025_W2": {
+      "queries": 41,
+      "available": 41,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 31,
+        "2": 10
+      },
+      "prior_rank_known": 11,
+      "rank_change_nonzero": 0
+    },
+    "2025_W3": {
+      "queries": 42,
+      "available": 42,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 28,
+        "2": 12,
+        "3": 2
+      },
+      "prior_rank_known": 30,
+      "rank_change_nonzero": 0
+    },
+    "2025_W4": {
+      "queries": 39,
+      "available": 39,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 30,
+        "2": 9
+      },
+      "prior_rank_known": 33,
+      "rank_change_nonzero": 2
+    },
+    "2025_W5": {
+      "queries": 34,
+      "available": 34,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 25,
+        "2": 7,
+        "3": 2
+      },
+      "prior_rank_known": 32,
+      "rank_change_nonzero": 2
+    },
+    "2025_W6": {
+      "queries": 33,
+      "available": 33,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "2": 5,
+        "1": 27,
+        "3": 1
+      },
+      "prior_rank_known": 31,
+      "rank_change_nonzero": 0
+    },
+    "2025_W7": {
+      "queries": 39,
+      "available": 39,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 27,
+        "2": 11,
+        "3": 1
+      },
+      "prior_rank_known": 34,
+      "rank_change_nonzero": 0
+    },
+    "2025_W8": {
+      "queries": 34,
+      "available": 34,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "2": 11,
+        "1": 20,
+        "3": 3
+      },
+      "prior_rank_known": 31,
+      "rank_change_nonzero": 3
+    },
+    "2025_W9": {
+      "queries": 31,
+      "available": 31,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 26,
+        "2": 4,
+        "3": 1
+      },
+      "prior_rank_known": 30,
+      "rank_change_nonzero": 1
+    },
+    "2025_W10": {
+      "queries": 34,
+      "available": 34,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 27,
+        "2": 7
+      },
+      "prior_rank_known": 33,
+      "rank_change_nonzero": 4
+    },
+    "2025_W11": {
+      "queries": 37,
+      "available": 37,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 27,
+        "2": 10
+      },
+      "prior_rank_known": 34,
+      "rank_change_nonzero": 1
+    },
+    "2025_W12": {
+      "queries": 32,
+      "available": 32,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 24,
+        "2": 8
+      },
+      "prior_rank_known": 29,
+      "rank_change_nonzero": 3
+    },
+    "2025_W13": {
+      "queries": 37,
+      "available": 37,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 30,
+        "2": 7
+      },
+      "prior_rank_known": 36,
+      "rank_change_nonzero": 5
+    },
+    "2025_W14": {
+      "queries": 36,
+      "available": 36,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 28,
+        "2": 7,
+        "3": 1
+      },
+      "prior_rank_known": 34,
+      "rank_change_nonzero": 2
+    },
+    "2025_W15": {
+      "queries": 38,
+      "available": 38,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 29,
+        "2": 8,
+        "3": 1
+      },
+      "prior_rank_known": 36,
+      "rank_change_nonzero": 1
+    },
+    "2025_W16": {
+      "queries": 43,
+      "available": 43,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 32,
+        "2": 11
+      },
+      "prior_rank_known": 41,
+      "rank_change_nonzero": 5
+    },
+    "2025_W17": {
+      "queries": 37,
+      "available": 36,
+      "unavailable_reasons": {
+        "PLAYER_NOT_IN_LATEST_TEAM_SNAPSHOT": 1
+      },
+      "rank_counts": {
+        "2": 8,
+        "1": 28
+      },
+      "prior_rank_known": 34,
+      "rank_change_nonzero": 3
+    },
+    "2025_W18": {
+      "queries": 43,
+      "available": 43,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 26,
+        "2": 15,
+        "3": 2
+      },
+      "prior_rank_known": 39,
+      "rank_change_nonzero": 1
+    },
+    "2026_W1": {
+      "queries": 37,
+      "available": 37,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 31,
+        "2": 4,
+        "3": 2
+      },
+      "prior_rank_known": 29,
+      "rank_change_nonzero": 1
+    },
+    "2026_W2": {
+      "queries": 39,
+      "available": 39,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 29,
+        "2": 8,
+        "3": 1,
+        "4": 1
+      },
+      "prior_rank_known": 32,
+      "rank_change_nonzero": 1
+    },
+    "2026_W3": {
+      "queries": 36,
+      "available": 36,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 30,
+        "2": 5,
+        "3": 1
+      },
+      "prior_rank_known": 32,
+      "rank_change_nonzero": 3
+    },
+    "2026_W4": {
+      "queries": 34,
+      "available": 34,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 29,
+        "2": 4,
+        "3": 1
+      },
+      "prior_rank_known": 32,
+      "rank_change_nonzero": 1
+    },
+    "2026_W5": {
+      "queries": 36,
+      "available": 36,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 27,
+        "2": 8,
+        "3": 1
+      },
+      "prior_rank_known": 32,
+      "rank_change_nonzero": 0
+    },
+    "2026_W6": {
+      "queries": 29,
+      "available": 29,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 26,
+        "2": 3
+      },
+      "prior_rank_known": 28,
+      "rank_change_nonzero": 1
+    },
+    "2026_W7": {
+      "queries": 31,
+      "available": 31,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 27,
+        "2": 4
+      },
+      "prior_rank_known": 31,
+      "rank_change_nonzero": 2
+    },
+    "2026_W8": {
+      "queries": 35,
+      "available": 35,
+      "unavailable_reasons": {},
+      "rank_counts": {
+        "1": 28,
+        "2": 6,
+        "3": 1
+      },
+      "prior_rank_known": 31,
+      "rank_change_nonzero": 0
+    }
+  },
+  "identity_contract": {
+    "join": [
+      "team",
+      "gsis_id"
+    ],
+    "position_filter": {
+      "pos_abb": "QB",
+      "pos_grp": "3WR 1TE"
+    },
+    "duplicate_slot": "Unresolved; not arbitrary winner selection",
+    "missing_gsis": "Unavailable; no name fuzzy match or guessed ESPN bridge",
+    "latest_team_snapshot": "An absent player is unavailable, not a stale previous appearance or zero rank"
+  },
+  "prior_rank_reference": "Latest earlier retained QB game admitted by existing availability policy, with rank change available only when that prior game historical team equals current team. Source snapshot at each respective game kickoff; no target-game labels or actual workloads used. Different-team prior rank does not become a current-stint change.",
+  "current_source_qualification": "2026 snapshot exists through November12 15:57:12UTC across32teams; identity/depth only, not individual transaction-effective role or qualified injury status. Consumer max-age contract not changed.",
+  "local_inventory": {
+    "weekly_roster": {
+      "sha256": "a44e42361de63e42339a563f57ce2c72da17aeffa2eb69e99ac5fb9e246a166d",
+      "bytes": 536230,
+      "rows": 19860,
+      "seasons": [
+        2026
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "observed_utc": "2026-10-29T22:47:55.519534+00:00",
+      "clock_fields": [
+        "birth_date"
+      ],
+      "role_limit": "No source report/effective clock or starter rank; roster status not injury/participation probability"
+    },
+    "C_current_roster": {
+      "sha256": "bf725f7bd40b6327e03a0ae040ff107d51fe5defa7f2b1bbea2831bf66642050",
+      "rows": 959,
+      "fields": [
+        "season",
+        "team",
+        "position",
+        "gsis_id",
+        "full_name",
+        "status"
+      ],
+      "role_limit": "Identity/status universe only; no effective report clock"
+    },
+    "C_injuries": "Existing C-owned nflverse prospective snapshots reused through peer-scope; no duplicate acquisition. Distinct source fields/date_modified require their own current/archived contracts, not inherited depth dt semantics."
+  },
+  "retention": {
+    "public": "Hashes, documentation excerpts, schema/aggregate counts and reader only",
+    "raw": "Owner-local outside publication tree; no protected player rows or raw source locators in Git",
+    "license": "nflverse-data CC-BY-4.0 observed at main/LICENSE.md; source attribution retained; no claim original ESPN rights independently adjudicated"
+  },
+  "execution": {
+    "fits": 0,
+    "inference": 0,
+    "scores": 0,
+    "forecasts": 0,
+    "new_NFL_games": 0,
+    "new_actual_offer_weeks": 0,
+    "source_downloads": 2,
+    "injury_downloads": 0,
+    "decoder": "Isolated fastparquet2026.9.0/cramjam2.14.0/fsspec2026.9.0/packaging26.3; no system environment edits",
+    "decoder_initial_failures": [
+      "pyarrow absent",
+      "fastparquet first required fsspec; resolved in isolated decoder path"
+    ]
+  },
+  "fit_gate": "Source-backed rank block feasible under explicit reconstruction and current stat-row-conditioned query-population limitations. Root owns novelty/design/fit and durable evidence authorization; source qualification itself proves no predictive gain. Teammate availability and OL/passcatcher-health block remains separately unqualified for full historical comparison.",
+  "source_identity_slot_checks": {
+    "2025": {
+      "QB_slot_values": [
+        9
+      ],
+      "duplicate_identity_clock_groups": 0,
+      "conflicting_rank_groups": 0,
+      "multiple_slot_groups": 0,
+      "missing_GSIS_rows": 87,
+      "all_team_snapshot_keys": 7072,
+      "offense_team_snapshot_keys": 7071,
+      "QB_team_snapshot_keys": 7071,
+      "all_team_snapshots_missing_QB": 1,
+      "offense_team_snapshots_missing_QB": 0
+    },
+    "2026": {
+      "QB_slot_values": [
+        9
+      ],
+      "duplicate_identity_clock_groups": 0,
+      "conflicting_rank_groups": 0,
+      "multiple_slot_groups": 0,
+      "missing_GSIS_rows": 312,
+      "all_team_snapshot_keys": 9344,
+      "offense_team_snapshot_keys": 9333,
+      "QB_team_snapshot_keys": 9332,
+      "all_team_snapshots_missing_QB": 12,
+      "offense_team_snapshots_missing_QB": 1
+    }
+  },
+  "reader_contract": "Source loader exposes complete team snapshot clocks including empty QB updates; .records is canonical exact-ID QB ranks for the separate owned feature module. Source reader .asof is an independently inspectable raw-source check, not a competing forecasting implementation."
+}

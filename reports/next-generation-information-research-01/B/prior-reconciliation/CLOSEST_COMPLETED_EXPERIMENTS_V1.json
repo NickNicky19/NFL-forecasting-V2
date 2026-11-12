@@ -1,0 +1,488 @@
+{
+  "id": "B-NEXTGEN-CLOSEST-COMPLETED-EXPERIMENTS-v1",
+  "assignment": "NFL-NEXT-GENERATION-INFORMATION-RESEARCH-01",
+  "created_UTC": "2026-11-12T17:54:40.275403+00:00",
+  "owner": "B",
+  "common_evaluation_and_admission_owner": "C",
+  "actual_inspected_B_commit": "084f5e6016fac7eb4145992890d2193bc9a2e969",
+  "scope": "Focused review of closest completed retained QB-context/opportunity/probability experiments and source contracts; not an exhaustive lifetime inventory or private peer inspection.",
+  "new_execution": {
+    "fits": 0,
+    "inference": 0,
+    "new_grades": 0,
+    "new_score_views": 0,
+    "additional_NFL_weeks": 0,
+    "model_loading": false,
+    "production_change": false,
+    "new_source_collection": false
+  },
+  "evidence_bindings": [
+    {
+      "path": "reports/player-context-matchup-01/B/B_PLAYER_CONTEXT_MATCHUP_REPORT.md",
+      "sha256": "2907a7049ae5298996abe2d378650df65277de8dd0eb88f105fdcc379925f9a7",
+      "bytes": 23827
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/FROZEN_PROTOCOL.json",
+      "sha256": "afefa53e0d2f794f99f29c410e6e0b0260876126526d12404a2d8bcd8993f9fb",
+      "bytes": 5256
+    },
+    {
+      "path": "reports/player-context-completion-decision-01/B/COMPLETION_AND_DECISIONS_REPORT.md",
+      "sha256": "8ea0f32eb66881d7466aa2e3b4e0a66dd571fa495e1ee6e939dd738a206ade36",
+      "bytes": 35948
+    },
+    {
+      "path": "reports/player-context-completion-decision-01/B/depth-wave-v2/FROZEN_PROTOCOL.json",
+      "sha256": "c4dc9abb0df01600dfb62f8ff80a11d6d4be50bd8b2a3e35ef8b9c1d3e77d85b",
+      "bytes": 5278
+    },
+    {
+      "path": "reports/profile-increment-to-release-01/B/PROFILE_INCREMENT_REPORT.md",
+      "sha256": "1f5f5c8ad4cd68853ff05b6d87761ecb20e3a282ed2e9afd2e29e21689ae8ea5",
+      "bytes": 14642
+    },
+    {
+      "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/FROZEN_PROTOCOL.json",
+      "sha256": "be1b14890a83c8acdb62d96ee3238172ea95c7303283d73098e548cc263fb0b6",
+      "bytes": 9399
+    },
+    {
+      "path": "reports/profile-increment-closure-next-02/B/ALIGNED_FRESHNESS_REPORT.md",
+      "sha256": "b7022365f6d646a492c244132b6751ba8f51b35438ba87a8f62eb3d620856e4a",
+      "bytes": 16633
+    },
+    {
+      "path": "reports/profile-increment-closure-next-02/B/aligned-wave-v1/FROZEN_PROTOCOL.json",
+      "sha256": "8e98084c0e986901acd24f577670fbac5bdf7a2c4798e09f0229efa39e88df43",
+      "bytes": 10569
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/B_PREDICTIVE_IMPROVEMENT_REPORT.md",
+      "sha256": "157fd1a5b0bd12d41020b9e38b695e4efaacbe417ee17c665f3314cc58e2106f",
+      "bytes": 22373
+    },
+    {
+      "path": "reports/abc-championship/leaf-law-continuation-20261104-v2/README.md",
+      "sha256": "dee90cf872d5777982026c4a35d659ab57f917ae89060239229278030d79c8fa",
+      "bytes": 12226
+    },
+    {
+      "path": "reports/category-decision-release-01/B/A-join-review/README.md",
+      "sha256": "711cd130ec929b1f14a595571c9c7c2cfd444733fe388aa6b647f6e77611721a",
+      "bytes": 9341
+    },
+    {
+      "path": "reports/category-decision-release-01/B/B-evidence/INVENTORY_REVIEW_SCOPE_V2.json",
+      "sha256": "8bf0b69cab109ce19ee846d701355f794d4de56021aaeedd9143dd69ac473bcb",
+      "bytes": 6882
+    },
+    {
+      "path": "reports/follow-through-release-defensive-source-01/B/peer-receipts/A_REPRESENTATIVE_CALCULATION_RECEIPT_V1.json",
+      "sha256": "e6044b094539fe845daac3fcc8cf725f2c84af72521d5c144922ab5df75ea523",
+      "bytes": 41696
+    },
+    {
+      "path": "reports/profile-increment-closure-next-02/B/current-query-dependency/README.md",
+      "sha256": "e34f6ae7bd0bfd6df8b9e30e50226f4f9f35d7bd11decfd87c3e4ee15c396112",
+      "bytes": 4684
+    },
+    {
+      "path": "nfl_v2/player_context_matchup.py",
+      "sha256": "3db66e8d7c75f444d87f4792add9096a9d04d0390902f67ce21248c206476f29",
+      "bytes": 17185
+    },
+    {
+      "path": "nfl_v2/qb_context_profiles.py",
+      "sha256": "6f25f72a4c2552db916fbf5092c06f95dc113636cfd59eefcdaf9405f0e3317e",
+      "bytes": 15754
+    },
+    {
+      "path": "nfl_v2/qb_opportunity_increment.py",
+      "sha256": "14748e8103fdfbcd1e8be7e180de9d129aded5502d5895ee6fb37513f1b1b806",
+      "bytes": 3069
+    },
+    {
+      "path": "nfl_v2/passing_opportunity_profiles.py",
+      "sha256": "08c058d73d64973f46f5fae3f698ea850d96cbd114aa0f292e9c7c11df025eff",
+      "bytes": 13692
+    },
+    {
+      "path": "nfl_v2/qb_aligned_freshness.py",
+      "sha256": "9ef8ae73e49b43ac8147490b8d28fe3f161bbf27054bf1040cae6a5a8d117b4e",
+      "bytes": 8896
+    },
+    {
+      "path": "tools/run_qb_opportunity_increment.py",
+      "sha256": "71f091c348513cd6f5ef24797035041d71de14668ea3a29a91f25c85de27463c",
+      "bytes": 10875
+    },
+    {
+      "path": "reports/next-generation-information-research-01/B/peer-coordination/PEER_SOURCE_COORDINATION_V1.json",
+      "sha256": "7a3926bf938d2765bb8172923912108900c120169b421ea598c135853e4dd7c3",
+      "bytes": 12599,
+      "role": "Independent peer source/novelty receipt; B prior reviewer read this public-bound receipt rather than private A/C rows."
+    },
+    {
+      "path": "reports/next-generation-information-research-01/B/source-qualification/SOURCE_CLOCK_AND_COVERAGE_V1.json",
+      "sha256": "c4a25dffefc2bf686e2ae53e08f20338b6b9850edf129a07d63f99bb7e47ce7c",
+      "bytes": 20986
+    },
+    {
+      "path": "reports/next-generation-information-research-01/B/source-qualification/SOURCE_METADATA_RECEIPTS_V1.json",
+      "sha256": "4ad56d5d78621b89ef0f6e46b6d7eaeb9033cc0516e159578aea33d97e0a37a7",
+      "bytes": 8553
+    },
+    {
+      "path": "reports/next-generation-information-research-01/B/source-qualification/qb_depth_source_v1.py",
+      "sha256": "a55b44e9868d5a42d36eefdb3fbe4ff1b26a485fbd6e75014beab027ab23049c",
+      "bytes": 5172
+    },
+    {
+      "path": "nfl_v2/qb_depth_role.py",
+      "sha256": "4a2d8b36426fd0cc85693546013d54672b0e78cc7ef449f1a76a8cd9c2352896",
+      "bytes": 6554
+    },
+    {
+      "path": "tests/test_qb_depth_role.py",
+      "sha256": "e9b18d05cc8d0e3ff2a6bc6854193c1eba1331ccb91a33f5998177e65ff62d67",
+      "bytes": 4817
+    },
+    {
+      "path": "reports/next-generation-information-research-01/B/prior-reconciliation/INDEPENDENT_DEPTH_SEMANTIC_REVIEW_V1.json",
+      "sha256": "0a8382209dfd0f1f7770d3dcaf2f0ea21d8d9992c52d4994a6f1fe458af80101",
+      "bytes": 896
+    }
+  ],
+  "closest_completed": [
+    {
+      "id": "B-player-context-matchup-01-v1:E0-E3",
+      "actual_inputs": "Earlier own 25-state down/depth mix, shrunken completion rate/support and field context; earlier offense-quality-adjusted defense residual and explicit mix-by-residual interactions.",
+      "information_already_tested": [
+        "lagged player usage/context",
+        "context-specific defense",
+        "own/defense interaction"
+      ],
+      "native_actual_line": {
+        "season": 2026,
+        "weeks": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "offers": 112,
+        "games": 56,
+        "wins_E0_E1_E2_E3": [
+          49,
+          54,
+          50,
+          58
+        ],
+        "Brier_E3": 0.266847,
+        "saved_adjusted_wins": 58,
+        "earlier_prevalence_wins": 59
+      },
+      "conclusion": "Within-method E3 improvement over E0 retained; no demonstrated preferred replacement over strong compatible controls. Current-vintage +7day reconstruction, timing-unverified offers."
+    },
+    {
+      "id": "B-player-context-matchup-01-v1:P1-P3/COMMON_EXPOSURE",
+      "actual_inputs": "Shared conditional down/depth GLM; partially pooled QB intercept; own last16 conditional coefficients with min8 games/160attempts and exact shared P1 fallback; same gamma-Poisson empirical attempt exposure.",
+      "native_completion_wins_P1_P2_P3": [
+        54,
+        53,
+        54
+      ],
+      "native_attempt_wins": 55,
+      "native_attempt_saved_adjusted_wins": 69,
+      "native_attempt_earlier_prevalence_wins": 62,
+      "conclusion": "No useful personalization gain. P3 shares input definitions/context/fallback and is not entirely own-information. Predicted exposure integrated; actual exposure substitution remains nondeployable diagnosis."
+    },
+    {
+      "id": "B-QB-DEPTH-CATCHABILITY-v2",
+      "actual_inputs": "Known/positive denominator FTN catchability by five depth states; distinct completion/drop/contested/unknown; same-data support-only direct and conditional baselines.",
+      "direct_D1_D2_wins": [
+        52,
+        49
+      ],
+      "conditional_C1_C2_wins": [
+        54,
+        54
+      ],
+      "decided": 112,
+      "conclusion": "CLOSE_RECIPE_NO_GAIN direction/probability. Direct value block actually used in splits; conditional coefficients nonzero; not an ingestion failure. Numerical median observation INCONCLUSIVE, offered medians tie and 2025 retained Leaf stronger."
+    },
+    {
+      "id": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R0-R3",
+      "actual_inputs": "R0 exact E3 reuse; R1 new opportunity support/unknowns; R2 own/offense opportunity/dropback/official attempt/sack/scramble/spike values, down/distance/field mix and past own QB team share; R3 raw/league-shrunk defense.",
+      "native_wins_R0_R1_R2_R3": [
+        58,
+        53,
+        57,
+        59
+      ],
+      "decided": 112,
+      "R3_minus_R2_pp": 1.79,
+      "R3_minus_R2_game_sensitivity_pp": [
+        -4.31,
+        7.88
+      ],
+      "strong_common84": {
+        "R3": 45,
+        "strict_current_leaf_mean": 47,
+        "saved_adjusted": 47
+      },
+      "conclusion": "CLOSE_RECIPE_NO_GAIN direction/probability; numerical mean INCONCLUSIVE. No new ex-ante personnel, current starter probability or qualified injury block."
+    },
+    {
+      "id": "B-QB-ALIGNED-FRESHNESS-v1:F0-F3",
+      "actual_inputs": "Same E3/R2 models at original7day and alternative48hour reconstruction applied to historical training, upstream ratings, priors and queries. No new R3 defense/current-role block.",
+      "native_wins_F0_F1_F2_F3": [
+        58,
+        57,
+        56,
+        57
+      ],
+      "decided": 112,
+      "native_weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "annual_owner_local_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "annual_decided": 88,
+      "annual_mean_wins_F0_F1_F2_F3": [
+        43,
+        40,
+        47,
+        41
+      ],
+      "annual_median_or_P2_wins_F0_F1_F2_F3": [
+        47,
+        40,
+        44,
+        44
+      ],
+      "annual_strong_A_CatBoost_HGB_wins": 52,
+      "annual_always_over_wins": 48,
+      "conclusion": "Completed aligned-timing comparison and A join accepted; zero duplicate fit or score. Positive within-method numerical timing result preserved, direction replacement not established. Reconstructed48hours does not authenticate publication."
+    },
+    {
+      "id": "ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1",
+      "actual_inputs": "Earlier-trained pooled scalar intercept and separately frozen confidence selection policies on unchanged retained laws.",
+      "rec_wins_before_after": [
+        194,
+        195
+      ],
+      "rec_decided": 337,
+      "rec_Brier_before_after": [
+        0.259868,
+        0.260203
+      ],
+      "pass_td_wins_before_after": [
+        14,
+        14
+      ],
+      "pass_td_decided": 26,
+      "conclusion": "Tiny direction change, reception proper-score deterioration, selected gates lose strongest matched constants. Fixed0.90 gates empty, accuracy N/A. No offset/calibration/cutoff retry justified."
+    },
+    {
+      "id": "leaf-law-continuation-20261104-v2 and retained direct-threshold controls",
+      "actual_inputs": "64 existing Leaf/C02/defense D1/D2 laws and retained C direct-threshold comparator; not a fresh-family fit.",
+      "actual_weeks": [
+        2,
+        3
+      ],
+      "all_64_cumulative_laws_lose_neutral_Brier": true,
+      "conclusion": "Missing-law coverage closed. Point, exact-law and direct-event products distinct; no untested generic direct-probability premise. New library alone not novel hypothesis."
+    }
+  ],
+  "input_built_vs_consumed": {
+    "raw_history": "Prior opponent completion counts/pergame/rates may be built by passing_opportunity_profiles.OpportunityHistory.summarize.",
+    "actual_R3_append": "qb_opportunity_increment.extra_names/value_names consumes RATES, VOLUMES and down/distance/field dropback mixtures; extra completion volume/pergame/rate are not directly appended.",
+    "already_consumed_E3": "Own predicted down/depth mix and eligible offense-adjusted defense completion residual are in every R0-R3 arm.",
+    "not_consumed_in_inspected_families": [
+      "target-game injury/practice/game-status",
+      "expected starter probability",
+      "expected limited/replacement role probability",
+      "OL absence burden",
+      "pass-catcher absence burden",
+      "actual target-game workload"
+    ]
+  },
+  "candidate_hypothesis": {
+    "status": "QUALIFIED_FOR_BOUNDED_SOURCE_RECONSTRUCTED_RESEARCH;INDEPENDENT_RAW_AND_FEATURE_CHECKS_PASS",
+    "question": "Does observed pre-cutoff QB role or offensive-personnel information improve the same retained QB opportunity/completion procedure beyond lagged team/QB context and shares?",
+    "one_compact_possible_block": "One source-reported QB depth rank/rank-change block; all later injury/OL/pass-catcher burden candidates deferred.",
+    "not_claimed": [
+      "new historically qualified source",
+      "guaranteed redistribution",
+      "arbitrary injury penalty",
+      "expected starter from final appearances",
+      "full original-scope completion",
+      "novelty across inaccessible peer evidence",
+      "Depth rank is a calibrated probability that player starts, participates, is healthy or keeps the job"
+    ],
+    "prioritization": "Choose one block after source gate, not QB role+OL+receivers+new distribution bundled. Timestamped depth-chart source is under active review; current roster absence of clocks does not establish depth source unavailable.",
+    "candidate_arms_not_registered_for_execution": {
+      "N0": "Exact unchanged R3 completion32-treeLeaf-CDF procedure; preserve its existing context/defense and7day history.",
+      "N1": "SameR3 plus genuinely new depth-source support/availability indicators.",
+      "N2": "N1 plus qualified earlier source-reported QB depth rank and rank-change values. Parent registers exact features before fitting; no role-based population filtering."
+    },
+    "critical_source_dependencies": [
+      "canonical player/team/event-effective personnel membership",
+      "availability annotation meaning and explicit unknown states",
+      "version/hash and real observation/effective clocks before each historical decision",
+      "eligible earlier opportunity-share denominators",
+      "rights and source-owner approval under existing route",
+      "For depth ranks: timestamped actual rows, position/formation/rank semantics and sufficient earlier-role snapshots; a snapshot is not a guaranteed expected starter."
+    ],
+    "next_action_owner": "B root executes registered same-R3 S0/S1/S2 package under finite budget; C retains shared intake/admission. This reviewer performs no fit/inference/score.",
+    "candidate_blocks_pending_source_gate": [
+      "Source-reported QB depth rank/rank change from a timestamped append-only observation, if actual retained records and effective semantics qualify. This is a source observation, not a calibrated starter probability.",
+      "Earlier receiving-opportunity share attached to pass-catchers explicitly reported unavailable at the decision cutoff, if qualified availability observations exist."
+    ],
+    "selected_target": "pass_cmp",
+    "selected_baseline": "Exact B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R3; highest observed B learned complete law59/112 in this native panel, not global best.",
+    "source_tier": "Source-reported append-snapshot loaded-dt as-of reconstruction; no claim independent prior immutable byte possession or original forecast issuance."
+  },
+  "baseline_and_strong_control_policy": {
+    "no_global_champion_claim": true,
+    "completion_native112": "R3 highest observed inspected B complete learned law59/112 ties earlier prevalence59; E3 and adjusted58; all law probability Briers above0.25.",
+    "completion_common84": "Strict-current Leaf mean and saved adjusted47/84 beat R3 45 and new F2/F3 41/42.",
+    "completion_annual88": "A retained CatBoost/HGB52/88 stronger than B timing max47/88. Protected A fits/rows are not B-executable private evidence.",
+    "attempt_native112": "Saved adjusted69/112 strongest retained point reference here; COMMON_EXPOSURE55 not champion and cannot stand in for stronger reference.",
+    "attempt_annual87": "Exact COMMON_EXPOSURE lower median44/87 versus A mean43/87 and AlwaysOver46/87; source-qualified alias expansion is coverage repair, not new games or model gain.",
+    "market": "No contemporaneous qualified QB market probability block obtained in this inspected B comparison. N/A until actual book/market/clock/rights contract. Owner A market evidence cannot be borrowed as a B QB fit.",
+    "simple": [
+      "Always-Over",
+      "Always-Under",
+      "earlier-only line prevalence",
+      "neutral0.25 Brier on same resolved cases"
+    ],
+    "no_automatic_panel_union": "Native W5-8 and A annual W1-5 remain separate; Week5 exact membership/clock/source intersection not assumed zero."
+  },
+  "chronology_and_source_semantics": {
+    "history": "H-RECENT previousseason plus earliercurrent labels; expanding earlier2022 feature memory; own8/team16 where registered.",
+    "availability": "Seven-day strict< reconstruction and completed48hour sensitivity, not authenticated observations; explicit unknown clocks unadmitted; game-time recent ordering after admission.",
+    "population": "Historical query universe is official-QB-stat-row conditioned reconstruction, not pregame roster. Current legitimate future queries need identity/team/role contract, not target-game outcome or guaranteed starter.",
+    "duration": "Exact timing products have5annual scored actual-line diagnostic weeks after completed join, but quote time remains unverified; probability/numerical/point/ranking products not interchangeable.",
+    "personnel": "Later roster retrieval or updated current stats do not authenticate earlier injury/expected-starter/teammate availability; no backdating, no kickoff timestamp for completed stats."
+  },
+  "decision": "DISTINCT_SOURCE_REPORTED_QB_ROLE_INFORMATION_SELECTED_FOR_BOUNDED_RESEARCH;NO_NEW_FIT_BY_THIS_REVIEWER",
+  "boundary": "No A CountA, C receiving, production consumer/selector, capture job, source scheduler, private raw export or existing release roster changed.",
+  "peer_scope_receipt": {
+    "path": "reports/next-generation-information-research-01/B/peer-coordination/PEER_SOURCE_COORDINATION_V1.json",
+    "C_actual_main": "aa099aa1ff78c85440173483275e01a9d354e2c8",
+    "A_actual_research_publication": {
+      "branch": "research/accuracy-wave-20261026",
+      "commit": "b7461fb7a79f89bec179b8c2e59f1b8e2e9ced31",
+      "reason": "A main/native branches do not contain all substantive research"
+    },
+    "nearest_completed_mechanisms": [
+      {
+        "owner": "C",
+        "procedure": "C-RECEIVING-TARGETSHARE-STATE-v10-1",
+        "information": "Latest same-team target share and ratio(last2 totals)-ratio(preceding3 totals), plus denominator/support/age flags",
+        "history": "Eligible ordinary earlier stats with seven-day strict reconstructed lag",
+        "ex_ante_personnel": "Absent; code explicitly not injuries/routes/causal talent/authenticated publication",
+        "result": "Completed no gain/promotion retained through current protocol"
+      },
+      {
+        "owner": "A",
+        "procedure": "abc_dynamic_carry_v1 and dynamic-opportunity-study-v1",
+        "information": "Earlier credited-carry/team history latent state, recency/share, other allocation bucket, finite allocation",
+        "ex_ante_personnel": "Code explicitly excludes injury scenarios/snaps/routes/target-game participation; draft distinguishes state changes from verified injury/replacement-starter probabilities",
+        "result": "Completed negative allocation evidence retained; not rerun"
+      }
+    ],
+    "verification_limits": [
+      "No A private rows or model-fit parity",
+      "No original missing source vintage authenticated by a public index",
+      "C has not acknowledged/admitted a new B experiment merely because B read these pointers",
+      "No claim all private A/B/C work ever performed was inspected"
+    ]
+  },
+  "proposed_input_classification": [
+    {
+      "input": "Earlier own/team opportunity, dropback/attempt conversion, down/depth, context, target/share tendencies",
+      "classification": "ALREADY_TESTED_OR_EQUIVALENT_INFORMATION_ALREADY_AVAILABLE",
+      "receipt": "E0-E3/P1-P3/R0-R3 and peer A/C scoped mechanism receipts; preserve negative and inconclusive findings."
+    },
+    {
+      "input": "QB source-reported pos_rank within exact QB slot9/3WR1TE, and change from latest same-team eligible own-game as-of source snapshot",
+      "classification": "GENUINELY_NEW_SOURCE_AUTHORED_ASOF_RECONSTRUCTION",
+      "receipt": "Two obtained2025/2026 append snapshot sources with actual source-loaded dt; not authenticated original HTTP bytes/original issuance. Chosen single new block."
+    },
+    {
+      "input": "Teammate/OL absence and expected-health/starter probabilities from retained weekly roster alone",
+      "classification": "UNAVAILABLE_OR_SOURCE_BLOCKED",
+      "receipt": "Roster identity/status/week fields lack required original effective/availability clocks and expected-role definition; ACT not health or guaranteed starter."
+    },
+    {
+      "input": "C retained November injury snapshots and current roster candidate membership",
+      "classification": "AVAILABLE_ONLY_PROSPECTIVELY_UNDER_THEIR_ACTUAL_OBSERVATION_CONTRACT",
+      "receipt": "Existing C owner route, observedNov1/5/7 snapshots cannot backfillW1-W8; separate future query eligibility/source admission."
+    },
+    {
+      "input": "True receiver alignment, all routes, route-specific QB pair exposure",
+      "classification": "UNAVAILABLE_OR_SOURCE_BLOCKED",
+      "receipt": "Inspected source lacks qualified untargeted route denominators; targeted pass destination/snap count is not substitute."
+    },
+    {
+      "input": "Contemporaneous market-anchored QB event probabilities",
+      "classification": "UNAVAILABLE_IN_INSPECTED_B_QB_COMPARISON",
+      "receipt": "No obtained exact price/book/market/clock/rights binding; preserve A-owned market evidence separately, no newpaidacquisition."
+    }
+  ],
+  "feature_implementation": {
+    "owner": "B nextgen_novelty_b on root explicit delegation",
+    "path": "nfl_v2/qb_depth_role.py",
+    "api": "DepthRoleHistory(source.records, team_snapshots=source.team_snapshots).describe(query, previous=last_eligible_own_game)",
+    "strict_contract": "Latest full TEAM source snapshot strictly before kickoff, then exactplayerlookup; no olderplayerrow resurrection. Source absence is unknownrank, not zero/confirmedabsence. Sameplayer/sameteam priorgame only.",
+    "feature_order": "feature_names(S1) support/missing/age; feature_names(S2) adds currentrank,rankchange; missing numeric0fills always have indicators.",
+    "rank_delta": "current reported rank minus prior reported rank; negative means move toward rank1, not a participation probability.",
+    "tests": {
+      "command": "python -m unittest discover -s tests -p test_qb_depth_role.py -v",
+      "python": "3.12.14",
+      "cases": 9,
+      "result": "PASS",
+      "initial_test_runner": "Base interpreter lackedpytest; tests use existing standard-library unittest, no install."
+    },
+    "prefit_staging_correction": {
+      "finding": "Projecting QB records before determining latestTEAMsnapshot could ignore13source teamtimestamps withnoQB and resurrectolderplayerrows.",
+      "fix": "Loaderretains allteamclocks; purefeaturemodule accepts complete team_snapshots.",
+      "stage": "BEFORE_NEW_FIT_OR_INFERENCE",
+      "changed_full_S2_features_on_2901_retained_rows": 0,
+      "changed_2026_277_rows": 0,
+      "changed_2025_664_rows": 0,
+      "not_claimed": "No demonstrated oldforecast contamination or forecastaccuracygain."
+    },
+    "independent_raw_review": {
+      "assertions": 8703,
+      "rows": 2901,
+      "role_slot": [
+        9
+      ],
+      "ranks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "result": "PASS"
+    },
+    "no_participation_filter": "Rank1notrequired; backupsremain visible; no finalstarter or healthlabel inferred."
+  },
+  "updated_UTC": "2026-11-12T18:02:18.707296+00:00"
+}

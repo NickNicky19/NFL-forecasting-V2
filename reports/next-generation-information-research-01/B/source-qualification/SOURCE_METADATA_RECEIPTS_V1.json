@@ -1,0 +1,205 @@
+[
+  {
+    "url": "https://nflreadr.nflverse.com/reference/load_injuries.html",
+    "started_utc": "2026-11-12T17:51:54.501272+00:00",
+    "status": 200,
+    "bytes": 14065,
+    "sha256": "267f08a700003ca6a9c99978553033655c5a01e4fa8ac156c1d40cbd5705a28e",
+    "received_utc": "2026-11-12T17:51:54.883367+00:00",
+    "headers": {
+      "Date": "Thu, 12 Nov 2026 17:51:54 GMT",
+      "Last-Modified": "Thu, 17 Sep 2026 12:48:32 GMT",
+      "ETag": "\"6aabe1a0-36f1\"",
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "relevant_exact_excerpts": []
+  },
+  {
+    "url": "https://nflreadr.nflverse.com/articles/dictionary_injuries.html",
+    "started_utc": "2026-11-12T17:51:54.884071+00:00",
+    "status": 200,
+    "bytes": 8442,
+    "sha256": "599bf1dd10e1269dcf863acea4024d2548e61c4241f7ca9a854dac9437d4435a",
+    "received_utc": "2026-11-12T17:51:55.219467+00:00",
+    "headers": {
+      "Date": "Thu, 12 Nov 2026 17:51:55 GMT",
+      "Last-Modified": "Thu, 17 Sep 2026 12:48:32 GMT",
+      "ETag": "\"6aabe1a0-20fa\"",
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "relevant_exact_excerpts": [
+      "Date and time that injury information was updated"
+    ]
+  },
+  {
+    "url": "https://nflreadr.nflverse.com/reference/load_depth_charts.html",
+    "started_utc": "2026-11-12T17:51:55.219752+00:00",
+    "status": 200,
+    "bytes": 13819,
+    "sha256": "5e1b9ac9b7a8620ef81120f0b633bf804814ff51da8ae485116504df801a9f8c",
+    "received_utc": "2026-11-12T17:51:55.391476+00:00",
+    "headers": {
+      "Date": "Thu, 12 Nov 2026 17:51:55 GMT",
+      "Last-Modified": "Thu, 17 Sep 2026 12:48:32 GMT",
+      "ETag": "\"6aabe1a0-35fb\"",
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "relevant_exact_excerpts": []
+  },
+  {
+    "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html",
+    "started_utc": "2026-11-12T17:51:55.391867+00:00",
+    "status": 200,
+    "bytes": 22638,
+    "sha256": "b78f9ba211619997c75f20a90969ac2685ce35b456905e5a456637d5914bc828",
+    "received_utc": "2026-11-12T17:51:55.618313+00:00",
+    "headers": {
+      "Date": "Thu, 12 Nov 2026 17:51:55 GMT",
+      "Last-Modified": "Thu, 17 Sep 2026 12:48:32 GMT",
+      "ETag": "\"6aabe1a0-586e\"",
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "relevant_exact_excerpts": [
+      "From 2025 onwards, depth charts are not assigned a week. Instead, each update provides a new ISO8601-formatted timestamp that users can assign to any point in time during the season. Each update is appended to the existing data with a new timestamp."
+    ]
+  },
+  {
+    "url": "https://api.github.com/repos/nflverse/nflverse-data/releases/tags/injuries",
+    "started_utc": "2026-11-12T17:51:55.618953+00:00",
+    "status": 200,
+    "bytes": 114127,
+    "sha256": "5fbfd7fe732510a9779c92f844a25944274ff7259e04475f07e1ae73303ceb3a",
+    "received_utc": "2026-11-12T17:51:56.238906+00:00",
+    "headers": {
+      "Date": "Thu, 12 Nov 2026 17:51:56 GMT",
+      "Last-Modified": "Thu, 12 Nov 2026 15:56:24 GMT",
+      "ETag": "\"0f11c17c5598602ee06741669a9e74e887e5974412ba51e72f805e910de32374\"",
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "release": {
+      "tag_name": "injuries",
+      "name": "injuries",
+      "published_at": "2022-01-28T02:13:49Z",
+      "created_at": "2022-01-28T02:09:45Z",
+      "updated_at": "2026-11-12T15:56:24Z",
+      "html_url": "https://github.com/nflverse/nflverse-data/releases/tag/injuries",
+      "body": "Injuries data, accessed with `nflreadr::load_injuries()`"
+    },
+    "relevant_assets": [
+      {
+        "id": 548747650,
+        "name": "injuries_2025.csv.gz",
+        "size": 127360,
+        "created_at": "2026-09-07T12:23:41Z",
+        "updated_at": "2026-09-07T12:23:41Z",
+        "browser_download_url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2025.csv.gz",
+        "digest": "sha256:6f1a882aa738b685dac09f15f67bc1f891c9bc258148c98138f8589c9b08300b"
+      },
+      {
+        "id": 740086838,
+        "name": "injuries_2026.csv.gz",
+        "size": 65923,
+        "created_at": "2026-11-12T15:56:22Z",
+        "updated_at": "2026-11-12T15:56:22Z",
+        "browser_download_url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.csv.gz",
+        "digest": "sha256:36c933c378dd06eca5f4d43b1891412ba2d0e632ff0df85ddaddaf32e40ca0d8"
+      }
+    ]
+  },
+  {
+    "url": "https://api.github.com/repos/nflverse/nflverse-data/releases/tags/depth_charts",
+    "started_utc": "2026-11-12T17:51:56.241062+00:00",
+    "status": 200,
+    "bytes": 163990,
+    "sha256": "2a759e791c68d5fe2b6ad561aa50a8c9ff7a77280cbff0cd9447094b9d149cf8",
+    "received_utc": "2026-11-12T17:51:57.031597+00:00",
+    "headers": {
+      "Date": "Thu, 12 Nov 2026 17:51:56 GMT",
+      "Last-Modified": "Thu, 12 Nov 2026 15:57:24 GMT",
+      "ETag": "\"b1a2bfea7e6551b2d048a6057eeb9f46055a60ce7f7dba833d96607880e436cd\"",
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "release": {
+      "tag_name": "depth_charts",
+      "name": "depth_charts",
+      "published_at": "2022-01-28T02:13:47Z",
+      "created_at": "2022-01-28T02:09:45Z",
+      "updated_at": "2026-11-12T15:57:24Z",
+      "html_url": "https://github.com/nflverse/nflverse-data/releases/tag/depth_charts",
+      "body": "Depth chart data, accessed with `nflreadr::load_depth_charts()`"
+    },
+    "relevant_assets": [
+      {
+        "id": 373640609,
+        "name": "depth_charts_2025.parquet",
+        "size": 2584724,
+        "created_at": "2026-03-14T07:32:27Z",
+        "updated_at": "2026-03-14T07:32:28Z",
+        "browser_download_url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2025.parquet",
+        "digest": "sha256:14f74185b3c2c48df234ced284ba3596bda3333d0b2a8df40841f68cd34539fa"
+      },
+      {
+        "id": 740090204,
+        "name": "depth_charts_2026.parquet",
+        "size": 3465032,
+        "created_at": "2026-11-12T15:57:20Z",
+        "updated_at": "2026-11-12T15:57:21Z",
+        "browser_download_url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2026.parquet",
+        "digest": "sha256:8633b61b70c35eaf919c8aef9934c8802723de4dfb6aeb7f354dfc09237a5ced"
+      }
+    ]
+  },
+  {
+    "url": "https://nflreadr.nflverse.com/articles/dictionary_depth_charts.html",
+    "started_utc": "2026-11-12T17:52:38.011987+00:00",
+    "status": 200,
+    "bytes": 7983,
+    "sha256": "9f00f0622496f348d0c39de5e08cb75de4d8611bbf1616ba10b4001c3dd92c4e",
+    "headers": {
+      "Date": "Thu, 12 Nov 2026 17:52:38 GMT",
+      "Last-Modified": "Thu, 17 Sep 2026 12:48:32 GMT",
+      "ETag": "\"6aabe1a0-1f2f\"",
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "received_utc": "2026-11-12T17:52:38.217198+00:00",
+    "relevant_exact_excerpts": [
+      "The timestamp (ISO8601-formatted text) indicating when the data record was loaded.",
+      "Player’s rank on depth chart grouped by pos_slot"
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/nflverse/nflverse-data/master/README.md",
+    "started_utc": "2026-11-12T17:52:38.217209+00:00",
+    "status": 200,
+    "bytes": 699,
+    "sha256": "a343c9cb9dbf2cef3e98cc51bab6568e8425f35f46a3d1f64c06da5169e3984c",
+    "headers": {
+      "Date": "Thu, 12 Nov 2026 17:52:38 GMT",
+      "Last-Modified": null,
+      "ETag": "\"5b7280a594128fbb6474c40e6290e83ecf16b68131d6653c3e9d0b8fd4800b1b\"",
+      "Content-Type": "text/plain; charset=utf-8"
+    },
+    "received_utc": "2026-11-12T17:52:38.524425+00:00",
+    "relevant_exact_excerpts": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/nflverse/nflverse-depth-charts/main/README.md",
+    "started_utc": "2026-11-12T17:52:38.524435+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://api.github.com/repos/nflverse/nflverse-data/license",
+    "source_html_url": "https://github.com/nflverse/nflverse-data/blob/main/LICENSE.md",
+    "blob_sha": "0fb847eb09afc05734c2f1aa34bc3ebd995a072a",
+    "license": {
+      "key": "cc-by-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "spdx_id": "CC-BY-4.0",
+      "url": "https://api.github.com/licenses/cc-by-4.0",
+      "node_id": "MDc6TGljZW5zZTI1"
+    },
+    "decoded_bytes": 18651,
+    "decoded_sha256": "2a82ac9bbc3e3ee066908381e8d373896db5a6025d083fbd59692fe9ccfb9111",
+    "note": "Data repository explicitly publishes CC-BY-4.0; attribution required; source-family terms remain distinct. No raw rows published here."
+  }
+]

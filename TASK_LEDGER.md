@@ -1,3 +1,7 @@
+## Next-generation QB role information — November12 UTC
+
+[Executed B package](reports/next-generation-information-research-01/B/B_NEXT_GENERATION_CHECKPOINT_V1.md): qualified source-authored timestamped QB depth-rank/change block, ownR3+support+values comparison completed16successfulfits/1preservedfailedDesigncall;277QB-games/112offers. Exact-law57/112 below baseline59 and prevalence59, mean53 below61. Numericalbroad signal retained inresearchshadow, no primaryadmission or newfuturepacket; exactnewdirection has4weeks. C sharedreceiving/evaluator, A producer and originalwebsite work remain independent. No completed timing/profile/defense rerun, lag sweep or crossowner write.
+
 ## Timing closure resumption — November 11 UTC
 
 [Superseding executed receipt closure](reports/profile-timing-closure-confirm-01/B/RESUMPTION_CLOSURE_V1.md). A bothnewjoins ACKNOWLEDGED/REGISTERED/PREEXEC_CHECKED, notscoredmerelybyGO. C b616listedsidearithmeticadmitted;newBcaptureawaitsv15intake. C04actual4,811rows/38,488typedpointsschemacheckPASS;zeroactualoffers/probabilitiesinexport. FinalpacketV2independent16recordparityPASS;all10values/laws/issueclocksunchanged. Priorpreparedmodelchecksretainedwithoutrefit. NativeBstatus expiredfornewissue;oldcapturepreserved. Websiteownerexecuted30C75/original1610forecastpairs,notgrades/admission;Cnew69packetpreserved. Sixservedstaticassetsunchanged03:52UTC,age425.79min;noDOMclaim. FourTopPicksboardsretained,fifthandmappingmissing. Newfits/grades/views/releasesduringresumption0.

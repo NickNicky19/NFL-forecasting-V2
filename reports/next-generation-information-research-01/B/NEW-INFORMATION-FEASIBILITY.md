@@ -4,4 +4,6 @@
 
 The source is a current-vintage, timestamped as-of reconstruction. Loaded time and the append contract support the stated tier; they do not prove original HTTP vintages, confirmed starters or originally issued picks. The native offered population has 107 source-rank-1 and five rank-2 QBs, so broad backup improvements cannot establish a prop benefit.
 
-Full historical OL/receiver availability remains blocked. C’s retained injury snapshots are prospective source observations, not a historical personnel panel. No completed catchability/profile/timing recipe is rerun. [Machine receipt](NEW_INFORMATION_FEASIBILITY_V1.json) · [Frozen comparison](depth-role-wave-v1/FROZEN_PROTOCOL.json) · [Source qualification](source-qualification/README.md).
+Full historical OL/receiver availability remains blocked. C’s retained injury snapshots are prospective source observations, not a historical personnel panel. No completed catchability/profile/timing recipe is rerun. [Machine receipt](NEW_INFORMATION_FEASIBILITY_V1.json) · [Frozen comparison](depth-role-wave-v2/FROZEN_PROTOCOL.json) · [Source qualification](source-qualification/README.md).
+
+Execution binding was corrected before valid fitting; the first machine receipt and pre-fit packages remain preserved. [Exact amendment](EXECUTABLE_PROTOCOL_AMENDMENT_V1.json) · [Executed result](B_NEXT_GENERATION_CHECKPOINT_V1.md).

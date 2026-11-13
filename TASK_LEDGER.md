@@ -1,3 +1,7 @@
+## Information-first completion block — November13 UTC
+
+[Executed B result](reports/information-first-20261112-01/B/B_INFORMATION_FIRST_CHECKPOINT_V1.md): prior-use/sourcequalification→onefixedFTNthrowaway/IWPcomparison completed28mainfits+1independentreproduction+2optionalcurrentfits. B1exactB0alias,142actual-line diagnosticcasesW5–9/71games, primary72vs76; no90claim.315currentnumeric+664priorseason; eightgenuineconditionalfutureforecasts remotelycaptured, nooffers/sides. LOCAL_NOT_C_ADMITTED; C/A/siteownership unchanged.
+
 ## Interception evidence and historical verification — November12 UTC
 
 [Executed B checkpoint](reports/interception-evidence-closure-01/B/B_INTERCEPTION_AND_DELIVERY_CHECKPOINT_V1.md):144eligibleQBopportunities,86unchangedstoredsides,58archivedabstentions. Exactcurrent-finalsourceevidence resolves46absentINTvaluesasexplicit0; append47W39L/86gradeversion, original33W7L/40+46unknownpreserved. No newmodel/selection/websitewrite. Backfield/Cat/HGBsame-maskconstantarithmeticcompleted;privatelearnedmasks/fitparityremainunknown,nofakehistoricalextension. CountA18:26authorizedmetadataPOST401 remainsseparatefromPR90/91sourceCI/openstatus. Ccommonledger/sourceandA/siteownershipunchanged.

@@ -11,3 +11,20 @@ All30early offered players match the existing qualified final144-label map exact
 Existing native W5–8 contributes112CMP cases; W9 can supply30additional exact-procedure cases once root actually fits/infers and grades that origin. This source task itself adds **zero fits, predictions, grades or tested procedures**. W1–4remain missing from the B native offer panel, so no fullW1–9claim follows. A’s annual88W1–5completion board remains a separate owner-local contract; overlappingW5cannot simply be added. Prior-season numeric history is not an offered-line substitute.
 
 [Complete source/owner/coverage receipt](PEER_OWNER_AND_PERIOD_RECONCILIATION_V1.json).
+
+The subsequent owner run has now scored all **142 native W5–9 completion cases**. The independent calculation verified the new B0/B1/B2 commitments, each own side/grade, probability mass and CDF orientation, all weekly records, matched numerical errors, and the frozen chronological Top-6/10/20 membership. It imported no author scorer or training path. [Independent output receipt](INDEPENDENT_OUTPUT_ARITHMETIC_V1.json), [verification command](verify_ftn_outputs_v1.py).
+
+The primary unchanged-mean rule was **B0 76–66 (53.52%) versus B2 72–70 (50.70%)**. B2's law-direction view was 75–67 versus 73–69, while Brier worsened from 0.266545 to 0.269180 and log loss from 0.728903 to 0.735179. Both P90 policies selected zero; their accuracy is N/A. These checks establish calculation agreement, not a new independently collected sample, source-vintage authentication or approval to deploy. [Explicit current-label parity](NATIVE_142_CURRENT_LABEL_PARITY_V1.json) also confirms all 142 retained completion labels, using the existing LAR→LA canonical alias and no missing-value zero fill.
+
+The earlier C current-query route remains expired under its own guards. A separately retrieved original-site payload supplies four basic, conditional-appearance QB identities for WAS–NYG and one explicit-IR unavailable record. Its event state was published at 21:45 UTC and read at 23:59 UTC; retrieval does not prove a fresh upstream status observation or an individual bookmaker quote clock. This can support a separately registered basic forecast-only adapter, subject to its honest issue/expiry contract. It does not renew C06, establish starters, or create actual-line selections. [Minimum-query assessment](CURRENT_NATIVE_MINIMUM_QUERY_ASSESSMENT_V1.json). The initial network-review rejection and the subsequently clarified, approved same-action root read are recorded separately in the [action receipt](NETWORK_REVIEW_ACTION_RECEIPT_V1.json).
+
+Reproduce the independent check owner-locally with the private source map:
+
+```sh
+python reports/information-first-20261112-01/B/peer-periods/verify_ftn_outputs_v1.py \
+  --repo . \
+  --wave reports/information-first-20261112-01/B/completion-wave-v1 \
+  --scores reports/information-first-20261112-01/B/completion-scores-v1 \
+  --sources OWNER_LOCAL_SOURCE_BINDINGS \
+  --out /tmp/independent-ftn-output-receipt.json
+```

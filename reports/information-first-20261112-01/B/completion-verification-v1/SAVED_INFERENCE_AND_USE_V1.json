@@ -1,0 +1,1118 @@
+{
+  "id": "B-FTN-SAVED-MODEL-INFERENCE-USE-VERIFICATION-v1",
+  "state": "PASS_WITH_EXPLICIT_SCOPE_LIMITS",
+  "started_UTC": "2026-11-13T00:14:21.831943+00:00",
+  "completed_UTC": "2026-11-13T00:14:26.084479+00:00",
+  "fits_executed": 0,
+  "new_NFL_scores": 0,
+  "checked_origins": 27,
+  "counts": {
+    "saved_rows_restored": 979,
+    "wrong_width_rejected": 54,
+    "same_width_reorder_not_detected_by_lowlevel_API": 27
+  },
+  "appended_value_names": [
+    "is_throw_away:shrunk",
+    "is_interception_worthy:shrunk"
+  ],
+  "input_columns": 339,
+  "origins_using_new_values": 27,
+  "total_new_value_splits": {
+    "is_throw_away:shrunk": 49,
+    "is_interception_worthy:shrunk": 123
+  },
+  "new_support_columns_added": 0,
+  "max_saved_mean_error": 0.0,
+  "lower_median_match": "All_saved_rows",
+  "single_batch_shuffle_serialization": "PASS_ALL_SAVED_B2_ROWS",
+  "feature_order": "PASS_fixed_positional_arrays_manifest_and_width; same_width_named_permutations_not_detected_by_lowlevel_API",
+  "distribution_scope": "Standalone_completion_count_law; no_new_ATT_CMP_joint_law_or_role_probability; exact_integer_push_and_half_integer_partition_checked",
+  "reused_checks": {
+    "unit_tests": 7,
+    "independent_fresh_fit": "prior-use/PRESELECTED_FRESH_FIT_REPRODUCTION_V1.json; not_repeated"
+  },
+  "origin_split_use": [
+    {
+      "slot": "2025-W01-B2",
+      "rows": 34,
+      "input_columns": 339,
+      "total_internal_splits": 502,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 6
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W02-B2",
+      "rows": 41,
+      "input_columns": 339,
+      "total_internal_splits": 502,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 6
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W03-B2",
+      "rows": 42,
+      "input_columns": 339,
+      "total_internal_splits": 521,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 3,
+        "is_interception_worthy:shrunk": 4
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W04-B2",
+      "rows": 39,
+      "input_columns": 339,
+      "total_internal_splits": 561,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 3,
+        "is_interception_worthy:shrunk": 4
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W05-B2",
+      "rows": 34,
+      "input_columns": 339,
+      "total_internal_splits": 589,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 6
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W06-B2",
+      "rows": 33,
+      "input_columns": 339,
+      "total_internal_splits": 628,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 2,
+        "is_interception_worthy:shrunk": 4
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W07-B2",
+      "rows": 39,
+      "input_columns": 339,
+      "total_internal_splits": 642,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 1,
+        "is_interception_worthy:shrunk": 4
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W08-B2",
+      "rows": 34,
+      "input_columns": 339,
+      "total_internal_splits": 660,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 3,
+        "is_interception_worthy:shrunk": 1
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W09-B2",
+      "rows": 31,
+      "input_columns": 339,
+      "total_internal_splits": 684,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 2,
+        "is_interception_worthy:shrunk": 3
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W10-B2",
+      "rows": 34,
+      "input_columns": 339,
+      "total_internal_splits": 720,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 2
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W11-B2",
+      "rows": 37,
+      "input_columns": 339,
+      "total_internal_splits": 718,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 3,
+        "is_interception_worthy:shrunk": 3
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W12-B2",
+      "rows": 32,
+      "input_columns": 339,
+      "total_internal_splits": 749,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 1,
+        "is_interception_worthy:shrunk": 2
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W13-B2",
+      "rows": 37,
+      "input_columns": 339,
+      "total_internal_splits": 755,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 4,
+        "is_interception_worthy:shrunk": 5
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W14-B2",
+      "rows": 36,
+      "input_columns": 339,
+      "total_internal_splits": 779,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 3,
+        "is_interception_worthy:shrunk": 7
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W15-B2",
+      "rows": 38,
+      "input_columns": 339,
+      "total_internal_splits": 813,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 5
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W16-B2",
+      "rows": 43,
+      "input_columns": 339,
+      "total_internal_splits": 806,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 3,
+        "is_interception_worthy:shrunk": 6
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W17-B2",
+      "rows": 37,
+      "input_columns": 339,
+      "total_internal_splits": 842,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 4,
+        "is_interception_worthy:shrunk": 6
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2025-W18-B2",
+      "rows": 43,
+      "input_columns": 339,
+      "total_internal_splits": 890,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 2,
+        "is_interception_worthy:shrunk": 6
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2026-W01-B2",
+      "rows": 37,
+      "input_columns": 339,
+      "total_internal_splits": 492,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 1,
+        "is_interception_worthy:shrunk": 1
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2026-W02-B2",
+      "rows": 39,
+      "input_columns": 339,
+      "total_internal_splits": 487,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 1,
+        "is_interception_worthy:shrunk": 2
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2026-W03-B2",
+      "rows": 36,
+      "input_columns": 339,
+      "total_internal_splits": 522,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 3
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2026-W04-B2",
+      "rows": 34,
+      "input_columns": 339,
+      "total_internal_splits": 532,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 5
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2026-W05-B2",
+      "rows": 36,
+      "input_columns": 339,
+      "total_internal_splits": 567,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 2,
+        "is_interception_worthy:shrunk": 6
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2026-W06-B2",
+      "rows": 29,
+      "input_columns": 339,
+      "total_internal_splits": 604,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 2,
+        "is_interception_worthy:shrunk": 7
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2026-W07-B2",
+      "rows": 31,
+      "input_columns": 339,
+      "total_internal_splits": 609,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 3,
+        "is_interception_worthy:shrunk": 5
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2026-W08-B2",
+      "rows": 35,
+      "input_columns": 339,
+      "total_internal_splits": 636,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 2,
+        "is_interception_worthy:shrunk": 8
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    },
+    {
+      "slot": "2026-W09-B2",
+      "rows": 38,
+      "input_columns": 339,
+      "total_internal_splits": 651,
+      "new_value_split_counts": {
+        "is_throw_away:shrunk": 4,
+        "is_interception_worthy:shrunk": 6
+      },
+      "new_missing_indicator_split_counts": {
+        "is_throw_away:shrunk": 0,
+        "is_interception_worthy:shrunk": 0
+      },
+      "at_least_one_new_value_used": true,
+      "feature_order_binding": "PASS_FROZEN_ARRAYS_AND_MODEL_MANIFEST",
+      "named_order_runtime_enforcement": "NOT_PROVIDED_BY_POSITIONAL_API"
+    }
+  ],
+  "deterministic_source_feature_traces": [
+    {
+      "selection_rule": "first_stable_identity",
+      "game_id": "2025_01_ARI_NO",
+      "player_id": "00-0035228",
+      "cutoff": 1757264400.0,
+      "source_tier": "CURRENT_VINTAGE_DECLARED_SEVEN_DAY_RECONSTRUCTION_NOT_AUTHENTICATED_FTN_PUBLICATION",
+      "own_window_games": [
+        "2024_10_NYJ_ARI",
+        "2024_12_ARI_SEA",
+        "2024_13_ARI_MIN",
+        "2024_14_SEA_ARI",
+        "2024_15_NE_ARI",
+        "2024_16_ARI_CAR",
+        "2024_17_ARI_LA",
+        "2024_18_SF_ARI"
+      ],
+      "own_appearances": 8,
+      "latest_own_available": 1736717100.0,
+      "own_eligible_throws": 289,
+      "flags": {
+        "is_throw_away": {
+          "positive": 13,
+          "known": 289,
+          "unknown": 0,
+          "raw": 0.04498269896193772,
+          "prior_positive": 2121,
+          "prior_known": 54071,
+          "pooled_beta11_mean": 0.03924324524254249,
+          "strength": 20,
+          "shrunk": 0.04461121328430696,
+          "source_definition": "Provider charted TRUE among explicitly known TRUE/FALSE on credited QB pass-attempt join; not completion/drop accounting identity."
+        },
+        "is_interception_worthy": {
+          "positive": 8,
+          "known": 289,
+          "unknown": 0,
+          "raw": 0.02768166089965398,
+          "prior_positive": 2261,
+          "prior_known": 54071,
+          "pooled_beta11_mean": 0.04183233776561315,
+          "strength": 20,
+          "shrunk": 0.028597562314926415,
+          "source_definition": "Provider charted TRUE among explicitly known TRUE/FALSE on credited QB pass-attempt join; not completion/drop accounting identity."
+        }
+      },
+      "selected_without_B2_outcomes": true
+    },
+    {
+      "selection_rule": "first_no_own_history",
+      "game_id": "2025_01_MIN_CHI",
+      "player_id": "00-0039923",
+      "cutoff": 1757376900.0,
+      "source_tier": "CURRENT_VINTAGE_DECLARED_SEVEN_DAY_RECONSTRUCTION_NOT_AUTHENTICATED_FTN_PUBLICATION",
+      "own_window_games": [],
+      "own_appearances": 0,
+      "latest_own_available": null,
+      "own_eligible_throws": 0,
+      "flags": {
+        "is_throw_away": {
+          "positive": 0,
+          "known": 0,
+          "unknown": 0,
+          "raw": null,
+          "prior_positive": 2121,
+          "prior_known": 54071,
+          "pooled_beta11_mean": 0.03924324524254249,
+          "strength": 20,
+          "shrunk": 0.03924324524254249,
+          "source_definition": "Provider charted TRUE among explicitly known TRUE/FALSE on credited QB pass-attempt join; not completion/drop accounting identity."
+        },
+        "is_interception_worthy": {
+          "positive": 0,
+          "known": 0,
+          "unknown": 0,
+          "raw": null,
+          "prior_positive": 2261,
+          "prior_known": 54071,
+          "pooled_beta11_mean": 0.04183233776561315,
+          "strength": 20,
+          "shrunk": 0.04183233776561315,
+          "source_definition": "Provider charted TRUE among explicitly known TRUE/FALSE on credited QB pass-attempt join; not completion/drop accounting identity."
+        }
+      },
+      "selected_without_B2_outcomes": true
+    },
+    {
+      "selection_rule": "first_zero_own_attempt_window",
+      "game_id": "2025_03_KC_NYG",
+      "player_id": "00-0040691",
+      "cutoff": 1758500400.0,
+      "source_tier": "CURRENT_VINTAGE_DECLARED_SEVEN_DAY_RECONSTRUCTION_NOT_AUTHENTICATED_FTN_PUBLICATION",
+      "own_window_games": [
+        "2025_02_NYG_DAL"
+      ],
+      "own_appearances": 1,
+      "latest_own_available": 1758474000.0,
+      "own_eligible_throws": 0,
+      "flags": {
+        "is_throw_away": {
+          "positive": 0,
+          "known": 0,
+          "unknown": 0,
+          "raw": null,
+          "prior_positive": 2181,
+          "prior_known": 56003,
+          "pooled_beta11_mean": 0.03896080707079725,
+          "strength": 20,
+          "shrunk": 0.03896080707079725,
+          "source_definition": "Provider charted TRUE among explicitly known TRUE/FALSE on credited QB pass-attempt join; not completion/drop accounting identity."
+        },
+        "is_interception_worthy": {
+          "positive": 0,
+          "known": 0,
+          "unknown": 0,
+          "raw": null,
+          "prior_positive": 2317,
+          "prior_known": 56003,
+          "pooled_beta11_mean": 0.04138916168199268,
+          "strength": 20,
+          "shrunk": 0.04138916168199268,
+          "source_definition": "Provider charted TRUE among explicitly known TRUE/FALSE on credited QB pass-attempt join; not completion/drop accounting identity."
+        }
+      },
+      "selected_without_B2_outcomes": true
+    },
+    {
+      "selection_rule": "first_known_zero_numerator",
+      "game_id": "2025_02_BUF_NYJ",
+      "player_id": "00-0033869",
+      "cutoff": 1757869200.0,
+      "source_tier": "CURRENT_VINTAGE_DECLARED_SEVEN_DAY_RECONSTRUCTION_NOT_AUTHENTICATED_FTN_PUBLICATION",
+      "own_window_games": [
+        "2024_02_BUF_MIA",
+        "2024_03_JAX_BUF",
+        "2024_04_BUF_BAL",
+        "2024_08_BUF_SEA",
+        "2024_10_BUF_IND",
+        "2024_13_SF_BUF",
+        "2024_17_NYJ_BUF",
+        "2024_18_BUF_NE"
+      ],
+      "own_appearances": 8,
+      "latest_own_available": 1736704800.0,
+      "own_eligible_throws": 26,
+      "flags": {
+        "is_throw_away": {
+          "positive": 0,
+          "known": 26,
+          "unknown": 0,
+          "raw": 0.0,
+          "prior_positive": 2124,
+          "prior_known": 54201,
+          "pooled_beta11_mean": 0.0392044720771913,
+          "strength": 20,
+          "shrunk": 0.017045422642257085,
+          "source_definition": "Provider charted TRUE among explicitly known TRUE/FALSE on credited QB pass-attempt join; not completion/drop accounting identity."
+        },
+        "is_interception_worthy": {
+          "positive": 1,
+          "known": 26,
+          "unknown": 0,
+          "raw": 0.038461538461538464,
+          "prior_positive": 2265,
+          "prior_known": 54201,
+          "pooled_beta11_mean": 0.04180580410678376,
+          "strength": 20,
+          "shrunk": 0.03991556700294946,
+          "source_definition": "Provider charted TRUE among explicitly known TRUE/FALSE on credited QB pass-attempt join; not completion/drop accounting identity."
+        }
+      },
+      "selected_without_B2_outcomes": true
+    },
+    {
+      "selection_rule": "peer_first_B0_P1_MEAN_loss_native142",
+      "game_id": "2026_05_BAL_ATL",
+      "player_id": "00-0035993",
+      "cutoff": 1791764400.0,
+      "source_tier": "CURRENT_VINTAGE_DECLARED_SEVEN_DAY_RECONSTRUCTION_NOT_AUTHENTICATED_FTN_PUBLICATION",
+      "own_window_games": [
+        "2024_17_MIA_CLE",
+        "2024_18_MIA_NYJ",
+        "2025_06_LA_BAL",
+        "2025_08_CHI_BAL",
+        "2025_15_BAL_CIN",
+        "2025_16_NE_BAL",
+        "2025_17_BAL_GB",
+        "2026_04_TEN_BAL"
+      ],
+      "own_appearances": 8,
+      "latest_own_available": 1791738000.0,
+      "own_eligible_throws": 143,
+      "flags": {
+        "is_throw_away": {
+          "positive": 5,
+          "known": 143,
+          "unknown": 0,
+          "raw": 0.03496503496503497,
+          "prior_positive": 3033,
+          "prior_known": 75531,
+          "pooled_beta11_mean": 0.040167873644632146,
+          "strength": 20,
+          "shrunk": 0.03560342007909597,
+          "source_definition": "Provider charted TRUE among explicitly known TRUE/FALSE on credited QB pass-attempt join; not completion/drop accounting identity."
+        },
+        "is_interception_worthy": {
+          "positive": 4,
+          "known": 143,
+          "unknown": 0,
+          "raw": 0.027972027972027972,
+          "prior_positive": 2942,
+          "prior_known": 75531,
+          "pooled_beta11_mean": 0.038963102220221625,
+          "strength": 20,
+          "shrunk": 0.029320626039290996,
+          "source_definition": "Provider charted TRUE among explicitly known TRUE/FALSE on credited QB pass-attempt join; not completion/drop accounting identity."
+        }
+      },
+      "selected_without_B2_outcomes": true
+    },
+    {
+      "selection_rule": "peer_first_B0_P1_MEAN_win_native142",
+      "game_id": "2026_05_BAL_ATL",
+      "player_id": "00-0039917",
+      "cutoff": 1791764400.0,
+      "source_tier": "CURRENT_VINTAGE_DECLARED_SEVEN_DAY_RECONSTRUCTION_NOT_AUTHENTICATED_FTN_PUBLICATION",
+      "own_window_games": [
+        "2025_03_ATL_CAR",
+        "2025_04_WAS_ATL",
+        "2025_06_BUF_ATL",
+        "2025_07_ATL_SF",
+        "2025_09_ATL_NE",
+        "2025_10_ATL_IND",
+        "2025_11_CAR_ATL",
+        "2026_03_ATL_GB"
+      ],
+      "own_appearances": 8,
+      "latest_own_available": 1790900100.0,
+      "own_eligible_throws": 238,
+      "flags": {
+        "is_throw_away": {
+          "positive": 13,
+          "known": 238,
+          "unknown": 0,
+          "raw": 0.0546218487394958,
+          "prior_positive": 3033,
+          "prior_known": 75531,
+          "pooled_beta11_mean": 0.040167873644632146,
+          "strength": 20,
+          "shrunk": 0.05350138555384745,
+          "source_definition": "Provider charted TRUE among explicitly known TRUE/FALSE on credited QB pass-attempt join; not completion/drop accounting identity."
+        },
+        "is_interception_worthy": {
+          "positive": 12,
+          "known": 238,
+          "unknown": 0,
+          "raw": 0.05042016806722689,
+          "prior_positive": 2942,
+          "prior_known": 75531,
+          "pooled_beta11_mean": 0.038963102220221625,
+          "strength": 20,
+          "shrunk": 0.04953202342792416,
+          "source_definition": "Provider charted TRUE among explicitly known TRUE/FALSE on credited QB pass-attempt join; not completion/drop accounting identity."
+        }
+      },
+      "selected_without_B2_outcomes": true
+    }
+  ],
+  "current_packet": {
+    "state": "PASS_OFFLINE_RESTORATION",
+    "conditional_forecasts": 8,
+    "explicit_IR_unavailable": 2,
+    "actual_lines": 0,
+    "selected_sides": 0,
+    "issued_UTC": "2026-11-13T00:09:55.109350+00:00",
+    "expiry_UTC": "2026-11-13T01:15:00+00:00",
+    "verification_is_reissue": false,
+    "model_hashes_verified": true,
+    "current_source_receipt": "Bound_to_parent_packet_and_protocol_only; no_independent_feed_retrieval_or_role_authentication",
+    "standalone_law_field": "Mixture_and_prior_parameters_only; empirical_mass_reconstructed_from_bound_model_and_features_not_standalone_law_field",
+    "scope": "Conditional-on-appearance forecast-only scenario; NOT C06 admission, expected starters, guaranteed participation, complete roster, actual-line picks or primary replacement."
+  },
+  "bindings": [
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W01-B2.json.gz",
+      "sha256": "19a1a7fd5406328b514b8eda2a92e308bf3e82df99db5ce48ff2bd50ef8d11ef",
+      "bytes": 35318
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W01.json.gz",
+      "sha256": "1def89064fb4467f301de6f8d979ff82258688154ec8cefddebe89c1101efbff",
+      "bytes": 146626
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W02-B2.json.gz",
+      "sha256": "93c19de73add4c2c00661747a17b34f316c56d4c0df33a92d7fbb294e6bcb260",
+      "bytes": 35317
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W02.json.gz",
+      "sha256": "4db53e1b2863777fa28edf84807574d89b1d0841bd7c0f1ed2aca7be9cd20e05",
+      "bytes": 171640
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W03-B2.json.gz",
+      "sha256": "b88b7a35a11a0726b32f251ea7b580863e61f446dd47c81dac94f397478dad7f",
+      "bytes": 36181
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W03.json.gz",
+      "sha256": "465c1d42fc57ee9ab8b424258af23a196cbac6aa3b6447a9f11d400a327dba49",
+      "bytes": 172465
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W04-B2.json.gz",
+      "sha256": "8c8c6b2e9fafc68084c6b007f0d6bf3c7fc18c3d08d02f67b5ef8ac487021b06",
+      "bytes": 38247
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W04.json.gz",
+      "sha256": "8d05d34cb5df9f2afe86a8c3a18982d43a085c560634d42d91a52d21b5be69e0",
+      "bytes": 164072
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W05-B2.json.gz",
+      "sha256": "dfdf25eea53fdaeaa4d360cae74a2da4edf74c7e43f68074f5997574eb34eedc",
+      "bytes": 39773
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W05.json.gz",
+      "sha256": "74c46b772843d519e8840aee492ddc262d2198cf65adcd4e2b13a4e48a67b7f6",
+      "bytes": 143049
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W06-B2.json.gz",
+      "sha256": "1916cb536b7cf6eb2795b9191bc75d0f1597145240d9c74dc3e0dd2cbd9dfa1d",
+      "bytes": 41346
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W06.json.gz",
+      "sha256": "a0e0d3ff2d48d33fe698bd095d87fd728aa5d00ba6d17537048806f921740ffe",
+      "bytes": 144653
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W07-B2.json.gz",
+      "sha256": "f8596e0d0efd53a14e599b97ca48607894804a9ef0928124956ba07f6ae4fea2",
+      "bytes": 42731
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W07.json.gz",
+      "sha256": "d481cfdb96ff9d18d1e445da72dc58f6828d9ccb2c9aa9f413d2de53861d1338",
+      "bytes": 164722
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W08-B2.json.gz",
+      "sha256": "795fe9556875f2e22499908f0afb42bf0f1ad9c259e6053e24a845d964b4c37c",
+      "bytes": 43929
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W08.json.gz",
+      "sha256": "f0c7d091918f3e3569624d504821a82f5cc9b50539c4b6260a1604810928e6ab",
+      "bytes": 140540
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W09-B2.json.gz",
+      "sha256": "71305b3ed6fdcb9531b08119e5b4d96cb7a68f3738c6cae2783753d3fab79f1f",
+      "bytes": 45539
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W09.json.gz",
+      "sha256": "765bc38dbcb1ea2c7dd4f23f2cc0aff2518c051ba65d78b8a6346673f77002a1",
+      "bytes": 134879
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W10-B2.json.gz",
+      "sha256": "18bf95043ec29d777da0f527ff8a3477435906af0024a28d12f42d762c53e9f9",
+      "bytes": 47232
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W10.json.gz",
+      "sha256": "5c9f15acc65860d4b20fefce317ed6079c0df9b8a56d7c0eb18b9cc6e5e2b995",
+      "bytes": 144114
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W11-B2.json.gz",
+      "sha256": "41b48e1af53b08b80b752f2f02d5e6554c639f365f6818117d4f484b30a63530",
+      "bytes": 47541
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W11.json.gz",
+      "sha256": "2a0e0878e0b59f830282063554322b8b59649e18f01da48ed4801901c11c5d1f",
+      "bytes": 156638
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W12-B2.json.gz",
+      "sha256": "318a915956a3b851e1a57fbca94e9ca7e2526a20330516583e85d735c6998573",
+      "bytes": 49087
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W12.json.gz",
+      "sha256": "d45cd16550d5026c2fb54b62d8ef19c358c2f20ebd5db86a12d39a2cc91fbd99",
+      "bytes": 138624
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W13-B2.json.gz",
+      "sha256": "a91f332805daf9393d0ec3b140c24f5c53c1c8d226588e02fa36dd6000a0d74d",
+      "bytes": 50045
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W13.json.gz",
+      "sha256": "0ab6f7c095ce529b4bd0bc97f4ca9f03027c96b50c24cc3f02718e31184343ba",
+      "bytes": 160157
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W14-B2.json.gz",
+      "sha256": "eda80419bb74e1751396d1add123e1ded6e640cc3b1a7f113e6e34162e8983a3",
+      "bytes": 51435
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W14.json.gz",
+      "sha256": "79ad7a653a6a9b08e63fc73d9b788a62fc7bd1bdab70ee78c27d873c0ab10312",
+      "bytes": 152367
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W15-B2.json.gz",
+      "sha256": "fbf98f0b382e151cb04a277a76866b8fd1f7420d45ff486a5eac0c2defe8a342",
+      "bytes": 53353
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W15.json.gz",
+      "sha256": "e8d66404e5cecae5b10b6a2a428e7ed4ebebf8db70afa160f8b481d73881ab0e",
+      "bytes": 161896
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W16-B2.json.gz",
+      "sha256": "66c4c90760858b9e9559e07c4cfd8b3ec30706b8435914097680e26f4f6435e8",
+      "bytes": 53539
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W16.json.gz",
+      "sha256": "edba845fd7223212d66fb5f1248c729698af02c38e99cb29a2692d867f876feb",
+      "bytes": 177418
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W17-B2.json.gz",
+      "sha256": "71f0983072c5a08774f397a5c403e14e34fd89c9a22ce4748a6abe242d2a03fa",
+      "bytes": 55016
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W17.json.gz",
+      "sha256": "62f425bc304a26741a97c4f99d4faa6f880b7e2cb63c91ba97e7e7714b27fab7",
+      "bytes": 158556
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2025-W18-B2.json.gz",
+      "sha256": "348870e3a5a81693e52e0bedeff49b28a72d380d3bfe1b02f8f238980ae63a6b",
+      "bytes": 57205
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2025-W18.json.gz",
+      "sha256": "f8e87684c9150b0443320080e677c9d5a4253d178013ba0ced6f0ac6f8023a46",
+      "bytes": 175732
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2026-W01-B2.json.gz",
+      "sha256": "fdaea9bf5682fe2887d06faa764f59a2cb1ae62e348a39b0ab7a4c12d8ab5a9b",
+      "bytes": 34876
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2026-W01.json.gz",
+      "sha256": "17c4869b24af86195010322811630aee0210fcfea26788a5bdad1ba7d73c9b5c",
+      "bytes": 156402
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2026-W02-B2.json.gz",
+      "sha256": "0a7c954186de71827b16a08612023c98e379265fd2deb100a1af6f0a4c534775",
+      "bytes": 34672
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2026-W02.json.gz",
+      "sha256": "0c1a42fe10e2b49a61aa71fe1ffdcb26b8dbc66031443d996088b9cbdf88543a",
+      "bytes": 166065
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2026-W03-B2.json.gz",
+      "sha256": "e7e516e492ea0727b6a8f45c967713ea3122ed1a64312b449b9d9826a8c38043",
+      "bytes": 36535
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2026-W03.json.gz",
+      "sha256": "90cbb16d1f8450eeb60ed34d32f9cc1a9e199d35731a9df4b5baa074d578eca8",
+      "bytes": 155318
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2026-W04-B2.json.gz",
+      "sha256": "c8587ad17121b932d62214ac94c83a7c63db3d6a782e9daa7df75002cd67a31f",
+      "bytes": 37300
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2026-W04.json.gz",
+      "sha256": "14c982416dfb7b21fcfbe9e2085a6ca95d61f598ff1308edf1c5d960e0896d60",
+      "bytes": 146855
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2026-W05-B2.json.gz",
+      "sha256": "290af13a190a4b7cb5c7eb5957cb39b2e3dbe3d0857ae17265acefa9c96c1517",
+      "bytes": 39006
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2026-W05.json.gz",
+      "sha256": "08d94bd38de24955151dbc5b75bf69eab2d7f103f3186282ee914b111003c13b",
+      "bytes": 152112
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2026-W06-B2.json.gz",
+      "sha256": "184a6fec741b5707b8b1aa8e86be39c88e9ffeadac3b47fa9b51ba4de92ee0ae",
+      "bytes": 40606
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2026-W06.json.gz",
+      "sha256": "a32a08c2bfb3247dcc41312fc91e76da3f613b8fa3a72483fb0ea98d45fc03c6",
+      "bytes": 129758
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2026-W07-B2.json.gz",
+      "sha256": "6e02c5b4217dee45b79f8bc9c178190ac405a6119cfc84af93dabba9c4a971af",
+      "bytes": 41629
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2026-W07.json.gz",
+      "sha256": "7de69599764ccc795c83e14193a035c8c4bb24db0b0e66fbe7ccab6e9e3ca13f",
+      "bytes": 136136
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2026-W08-B2.json.gz",
+      "sha256": "5a5e6cf6a898c335fa2ecc6d54c4b7bc637d97f7402e144d885925e90a6b2ffd",
+      "bytes": 43362
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2026-W08.json.gz",
+      "sha256": "8ade1488dd913841ed5c7399ab46efa8068b41d93bc13b5a0d825cdf57464952",
+      "bytes": 147424
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/fits/2026-W09-B2.json.gz",
+      "sha256": "a16852ff82c371f23aef273a4c28977856dfa067c9a51dcb15d923249ec467f4",
+      "bytes": 44198
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/predictions/2026-W09.json.gz",
+      "sha256": "eaecca2e5b81a28c5c8fc31a4456aeefe5e3a79fd89938d3ae2e8028e09dc159",
+      "bytes": 159494
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/current-conditional-shadow-v1/FORECAST_ONLY_PACKET.json.gz",
+      "sha256": "f9889584338bf7b85f5de3889fbc78f73fee97e2052faea7cc91a28fb203c7bb",
+      "bytes": 15048
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/current-conditional-shadow-v1/FROZEN_PROTOCOL.json",
+      "sha256": "62ae942af12f00b5f64ab97a4de0fc81af96b2e5284505675a4fd90fd9978adb",
+      "bytes": 3310
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/current-conditional-shadow-v1/fits/B0.json.gz",
+      "sha256": "9ffad8ee5be411a9c9e9ceff863ee8942b63ee48706144e3f31966cfd62e7b80",
+      "bytes": 46077
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/current-conditional-shadow-v1/fits/B2.json.gz",
+      "sha256": "c8298d8eab6ca7b993ed8e17a9cb75c17549e2ee3b8da4142cbf515a40ff79dd",
+      "bytes": 45646
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/QB_CONTEXT_W1_W9_INPUTS_V1.json.gz",
+      "sha256": "45aaab99d41f2e2643066c001355b26430f55dca06e7c7e366eace252f2e021b",
+      "bytes": 249715
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/FEATURE_INPUTS_V1.json.gz",
+      "sha256": "08dd41e087064feba97dd779352af9cdc92f1dbd5214b6151fc9f4fa42014121",
+      "bytes": 2700873
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/source-qualification/FTN_BALL_QUALITY_QB_GAME_INPUTS_V1.json.gz",
+      "sha256": "c2d190b6228928943491603a04c2ae8e9ae551d16385c3bbba5717df7135d7ad",
+      "bytes": 64275
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/FEATURE_ORDER_V1.json",
+      "sha256": "bfb5b9a0602c376aa8b871d17eaedf18f91e1e68069196047b4aaf865331a752",
+      "bytes": 40003
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/prior-use/PRESELECTED_FRESH_FIT_REPRODUCTION_V1.json",
+      "sha256": "6987c15175e9c6e4b97f6be90dead607e761e99b7f28692568d9dcd022f7b027",
+      "bytes": 2145
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/prior-use/VERIFICATION_EXECUTION_SCOPE_V1.json",
+      "sha256": "92b5053b6641ee3eb0434537b7401a3cf250ded04778ea6b87855dab0b433def",
+      "bytes": 963
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-verification-v1/verify_saved_inference_v1.py",
+      "sha256": "9d4c6494796ef359271b6623532d769f745264f65e759d6141f22de52a611c5b",
+      "bytes": 19360
+    }
+  ],
+  "resources": {
+    "wall_seconds": 4.252569824999227,
+    "CPU_seconds": 4.247677423,
+    "peak_RSS_bytes": 332230656
+  },
+  "limitations": [
+    "Public_safe_source_derivatives_not_raw_play_reacquisition",
+    "No_private_offer_or_grade_verification_in_this_receipt",
+    "Current_vintage_seven_day_proxy_not_authenticated_historical_publication",
+    "Source_support_missing_and_unknown_boundary_fixtures_reused_not_NFL_samples",
+    "Tree_feature_use_is_implementation_evidence_not_predictive_gain",
+    "No_producer_consumer_or_original_website_admission_verified"
+  ],
+  "license": "FTN_Data_via_nflverse_CC-BY-SA-4.0_for_FTN-dependent_derivatives; underlying_stats_separate_attribution"
+}

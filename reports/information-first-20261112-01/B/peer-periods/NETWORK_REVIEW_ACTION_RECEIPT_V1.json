@@ -1,0 +1,33 @@
+{
+  "id": "B_PUBLISHED_FEED_NETWORK_REVIEW_ACTION_v1",
+  "at_UTC": "2026-11-13T00:03:40.138452+00:00",
+  "initial_action": {
+    "tool": "exec_command",
+    "sandbox_permissions": "with_additional_permissions",
+    "additional_permissions": {
+      "network": {
+        "enabled": true
+      }
+    },
+    "url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/week.json",
+    "command_semantics": "python urllib.request.urlopen(url,timeout=30), bounded6MiB body, save CURRENT_WEEK.json+HTTP_RECEIPT.json privately; inspect current root/event/QB schema only",
+    "review_result": "REJECTED_BEFORE_PROCESS_EXECUTION",
+    "exact_reason": "This performs a new raw network fetch and local retention of the website\u2019s current data, contrary to the explicit no-new-collector/raw-roster-fetch restriction and the documented blocked-current-query scope.\nDo not bypass this rejection through a workaround or indirect execution. Continue with a safer alternative, or carry out checks to prove that the action is authorized or low risk before trying again. Complete unaffected work without asking for confirmation. Report anything that remains blocked, clarify why it was blocked by auto-review, inform the user of the risk and ask for approval.",
+    "downloaded_bytes": 0,
+    "attempted_command": "python - <<'PY_COMMAND'\nimport urllib.request,pathlib,json,hashlib,datetime\nroot=pathlib.Path('/workspace/research-evidence/information-first-20261112-01/peer-periods/current-native');root.mkdir(parents=True,exist_ok=True)\nurl='https://nicknicky19.github.io/nicks-expert-nfl-picks/data/week.json'\ntry:\n with urllib.request.urlopen(url,timeout=30) as r:b=r.read(6*1024*1024);h=dict(r.headers);s=r.status\nexcept Exception as e:\n print(type(e).__name__,str(e));raise\n(root/'CURRENT_WEEK.json').write_bytes(b);x=json.loads(b);meta=dict(url=url,status=s,observed_UTC=datetime.datetime.now(datetime.timezone.utc).isoformat(),bytes=len(b),sha256=hashlib.sha256(b).hexdigest(),headers={k:v for k,v in h.items()if k.lower()in('last-modified','etag','date','cache-control')},root_keys=list(x));(root/'HTTP_RECEIPT.json').write_text(json.dumps(meta,indent=2)+'\\n');print(json.dumps(meta,indent=2));print('meta excerpt',json.dumps({k:v for k,v in x.items()if not isinstance(v,list)},default=str)[:3000]);print('lists',[(k,len(v))for k,v in x.items()if isinstance(v,list)])\nPY_COMMAND",
+    "command_heredoc_label_note": "Here-document label renamed in this receipt only to avoid nesting; command body is retained."
+  },
+  "followthrough": {
+    "initial_rejection_reported_to_parent": true,
+    "indirect_workaround": false,
+    "root_same_action_authorization_clarification": "Latest user permits read-only current published feed/capture through existing authorized route; prohibits a recurring collector, upstream acquisition, guard bypass or new paid access, not reading the registered original-site output.",
+    "root_reported_same_exec_review": "APPROVED_AFTER_SCOPE_CLARIFICATION",
+    "root_retained_read_receipt": "READ_RECEIPT.json",
+    "actual_received_UTC": "2026-11-12T23:59:28.439603+00:00",
+    "source_sha256": "f3fed99e9f51b912ea541a6378b36a416019bf609ed38d9e2ca5b27d762a63ba",
+    "this_agent_followup": "OFFLINE_ASSESSMENT_ONLY;no secondnetworktool orindirectfetch"
+  },
+  "remaining_review_blocker": null,
+  "new_credentials_requested": false,
+  "new_paid_source": false
+}

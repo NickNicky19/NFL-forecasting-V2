@@ -1,0 +1,582 @@
+{
+  "id": "B_W1W9_C_COMMON_CONTRACT_AND_CURRENT_INTAKE_v1",
+  "at_UTC": "2026-11-14T18:46:27.496569+00:00",
+  "state": "READ_ONLY_C_CONTRACT_AND_RECEIPT_REFRESH_COMPLETE;NO_NEW_C_CHAMPIONSHIP",
+  "C_current_main_commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+  "C_commit_UTC": "2026-11-14T15:17:52Z",
+  "C_current_main_message": "Merge PR53 research/wave-closure-next-valid-20261114",
+  "common_protocol": {
+    "id": "ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1",
+    "config": {
+      "path": "reports/abc-championship/PROTOCOL-v2-C-1.json",
+      "SHA256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1"
+    },
+    "scorer": {
+      "path": "src/abc_championship_v2.py",
+      "SHA256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce"
+    },
+    "schema": {
+      "path": "reports/abc-championship/EXPORT_SCHEMA-v2.json",
+      "SHA256": "0ba0755f94889a33fb7c02efbf4cc9e414b9a733fc3bc7f1357faba1c294f2f4"
+    },
+    "hash_checks": [
+      {
+        "label": "C_PROTOCOL",
+        "sha256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1",
+        "current_pointer_match": true
+      },
+      {
+        "label": "C_SCORER",
+        "sha256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce",
+        "current_pointer_match": true
+      },
+      {
+        "label": "C_INPUT_BINDINGS",
+        "sha256": "91cf77353b70d49d33e5ca80421a69c702dc6d8fbab07043e58b0676580359e8",
+        "current_pointer_match": true
+      },
+      {
+        "label": "C_EXPORT_SCHEMA",
+        "sha256": "0ba0755f94889a33fb7c02efbf4cc9e414b9a733fc3bc7f1357faba1c294f2f4",
+        "current_pointer_match": true
+      }
+    ]
+  },
+  "existing_primary_panel": {
+    "period": "E1 originallyW1-8requested",
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "book": "pinnacle",
+    "secondary_books": [
+      "draftkings",
+      "fanduel"
+    ],
+    "tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "source_policy": "Existingoriginalv7primarybookfrozenfromsourcequalificationnotwins;last-recordedpairedexactline;notauthenticcommonliveboard",
+    "category_scope": [
+      "pass_yd",
+      "rush_yd",
+      "rec",
+      "rec_yd"
+    ]
+  },
+  "current_C_intake": {
+    "B_FTN": {
+      "state": "RECEIVED_PUBLIC_IMMUTABLE_FTN_RESULTS;SCOPED_ARITHMETIC_ADMITTED;PRIMARY_RECIPE_CLOSED_NO_GAIN",
+      "source_commit": "d79acddf5f094c85001c9b17a525ac7d9e25f9ec",
+      "public_arithmetic": [
+        "612 public side rows/204 complete triads independently checked",
+        "24 weekly-to-cumulative checks; rates recomputed; selected unknowns and fallback retained",
+        "B separate independent output arithmetic is received at its stated scope",
+        "No C private-row/raw-source/clock/model-fit/uncertainty/member-level parity claim"
+      ],
+      "old_missing_weeks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "supersession": "A5a41completed84offerW1-4joinisnewerthanthisCintake;updateadmissionratherthanrepeatjoin"
+    },
+    "website_V7": {
+      "source_commit": "b2dcc88604ccf925a2f0a144ffb8f3d57018fb3f",
+      "admitted_scope": "Five complete-policy scored season-week blocks W4\u20138 under stated partial conditional exposed retrospective reconstruction. C independently admits public arithmetic and exact bindings; private-row/fit/source-time parity not established.",
+      "duration": "MET_FIVE_DISTINCT_SCORED_BLOCKS;PARTIAL_WITHIN_WEEK_COVERAGE",
+      "decision": "SHADOW",
+      "primary_admission": "NOT_ADMITTED",
+      "changed_selector_active": false
+    },
+    "B_acd_closure": {
+      "state": "NOT_OBTAINED_IN_NEW_B_PUBLIC_SCOPE",
+      "latest_obtained_B_index_UTC": "2026-11-13T00:21:31.619291+00:00",
+      "existing_reviews": "Earlier four-week and archive qualification scope only. Website V7 independent review must be checked separately; no peer agreement inferred."
+    },
+    "A84_C_receipt": {
+      "current_C_A_pin": "27ff63c25509db058e651f63f7110af1d7e6fe39",
+      "new_A_pin": "5a41d2bac6027e0ac1b5a2744d52f8ec5e93c47e",
+      "state": "NOT_IN_INSPECTED_C_A_RECEIPT;A84EXECUTION_KNOWN_FROM_USER_AND_A_OWNER_RECEIPT"
+    }
+  },
+  "roster": {
+    "current_C_release_freeze": "FOLLOW-THROUGH-CURRENT-RELEASE-ROSTER-FREEZE-v1",
+    "frozen_UTC": "2026-11-12T04:29:20.819072+00:00",
+    "scope": "Existing8072 product/mask/policy profiles plus already-tested late supplied A/B source-bound contributions and retained later C03/C04 products. Counts are not independent fits. No claim all private/unlocated methods were inspected. B common-exposure is an existing tested procedure, not a new fit.",
+    "closure": "This release version is CLOSED_WITH_NAMED_EXCEPTIONS; source-qualified future research enters a later roster and cannot delay independently eligible releases.",
+    "new_ABC_W1W9_specific_C_roster": "NOT_LOCATED_IN_INSPECTED_CURRENT_POINTER_OR_EXPORT;do notinventCregistration",
+    "C_existing_actual_line_members": [
+      {
+        "procedure_id": "C::ALWAYS_OVER-v6 diagnostic::ALWAYS_OVER::ALWAYS_OVER-strict-v6",
+        "origin_session": "C",
+        "local_alias": "ALWAYS_OVER",
+        "method_version": "ALWAYS_OVER-v6 diagnostic",
+        "selector_id": "ALWAYS_OVER-strict-v6",
+        "output_type": "CONSTANT_SIDE",
+        "history": "Inherited exactproducer configuration;not inferredfromalias",
+        "binding_dataset_ids": [
+          "C-PROPLINE-ACTUAL-LINES-v7-PINNACLE-W2-W3",
+          "C-PROPLINE-OUTCOME-ROLE-v7.1",
+          "C-PROPLINE-CCBY-BOOKS-v8",
+          "C-PROPLINE-CCBY-WORKLOAD-v8",
+          "C-PROPLINE-CCBY-PREVALENCE-v8"
+        ],
+        "categories": [
+          "pass_yd",
+          "rec",
+          "rec_yd",
+          "rush_yd"
+        ],
+        "status": "IMPLEMENTED_SAVED_ACTUAL_LINE_ROWS",
+        "source_configs": [
+          "protocol/PROPLINE_PILOT_V7.json",
+          "protocol/SELECTED_RELIABILITY_V8.json",
+          "protocol/WORKLOAD_LINK_V8.json"
+        ]
+      },
+      {
+        "procedure_id": "C::ALWAYS_UNDER-v6 diagnostic::ALWAYS_UNDER::ALWAYS_UNDER-strict-v6",
+        "origin_session": "C",
+        "local_alias": "ALWAYS_UNDER",
+        "method_version": "ALWAYS_UNDER-v6 diagnostic",
+        "selector_id": "ALWAYS_UNDER-strict-v6",
+        "output_type": "CONSTANT_SIDE",
+        "history": "Inherited exactproducer configuration;not inferredfromalias",
+        "binding_dataset_ids": [
+          "C-PROPLINE-ACTUAL-LINES-v7-PINNACLE-W2-W3",
+          "C-PROPLINE-OUTCOME-ROLE-v7.1",
+          "C-PROPLINE-CCBY-BOOKS-v8",
+          "C-PROPLINE-CCBY-WORKLOAD-v8",
+          "C-PROPLINE-CCBY-PREVALENCE-v8"
+        ],
+        "categories": [
+          "pass_yd",
+          "rec",
+          "rec_yd",
+          "rush_yd"
+        ],
+        "status": "IMPLEMENTED_SAVED_ACTUAL_LINE_ROWS",
+        "source_configs": [
+          "protocol/PROPLINE_PILOT_V7.json",
+          "protocol/SELECTED_RELIABILITY_V8.json",
+          "protocol/WORKLOAD_LINK_V8.json"
+        ]
+      },
+      {
+        "procedure_id": "C::C-EARLIER-ROLE-PREVALENCE-v8::EARLIER_PREVALENCE_V8::EARLIER_PREVALENCE_V8-strict-v8",
+        "origin_session": "C",
+        "local_alias": "EARLIER_PREVALENCE_V8",
+        "method_version": "C-EARLIER-ROLE-PREVALENCE-v8",
+        "selector_id": "EARLIER_PREVALENCE_V8-strict-v8",
+        "output_type": "EXACT_LINE_PROBABILITIES",
+        "history": "Inherited exactproducer configuration;not inferredfromalias",
+        "binding_dataset_ids": [
+          "C-PROPLINE-ACTUAL-LINES-v7-PINNACLE-W2-W3",
+          "C-PROPLINE-OUTCOME-ROLE-v7.1",
+          "C-PROPLINE-CCBY-BOOKS-v8",
+          "C-PROPLINE-CCBY-WORKLOAD-v8",
+          "C-PROPLINE-CCBY-PREVALENCE-v8"
+        ],
+        "categories": [
+          "pass_yd",
+          "rec",
+          "rec_yd",
+          "rush_yd"
+        ],
+        "status": "IMPLEMENTED_SAVED_ACTUAL_LINE_ROWS",
+        "source_configs": [
+          "protocol/PROPLINE_PILOT_V7.json",
+          "protocol/SELECTED_RELIABILITY_V8.json",
+          "protocol/WORKLOAD_LINK_V8.json"
+        ]
+      },
+      {
+        "procedure_id": "C::C-ALL12-LAW-THRESHOLD-v2.1/P2_LEAF/H-MULTI/E0_OP/P1_MEAN::P1_MEAN::P1_MEAN-strict-v6",
+        "origin_session": "C",
+        "local_alias": "P1_MEAN",
+        "method_version": "C-ALL12-LAW-THRESHOLD-v2.1/P2_LEAF/H-MULTI/E0_OP/P1_MEAN",
+        "selector_id": "P1_MEAN-strict-v6",
+        "output_type": "MEAN",
+        "history": "Inherited exactproducer configuration;not inferredfromalias",
+        "binding_dataset_ids": [
+          "C-PROPLINE-ACTUAL-LINES-v7-PINNACLE-W2-W3",
+          "C-PROPLINE-OUTCOME-ROLE-v7.1",
+          "C-PROPLINE-CCBY-BOOKS-v8",
+          "C-PROPLINE-CCBY-WORKLOAD-v8",
+          "C-PROPLINE-CCBY-PREVALENCE-v8"
+        ],
+        "categories": [
+          "pass_yd",
+          "rec",
+          "rec_yd",
+          "rush_yd"
+        ],
+        "status": "IMPLEMENTED_SAVED_ACTUAL_LINE_ROWS",
+        "source_configs": [
+          "protocol/PROPLINE_PILOT_V7.json",
+          "protocol/SELECTED_RELIABILITY_V8.json",
+          "protocol/WORKLOAD_LINK_V8.json"
+        ]
+      },
+      {
+        "procedure_id": "C::C-ALL12-LAW-THRESHOLD-v2.1/P2_LEAF/H-MULTI/E0_OP/P1_MEDIAN::P1_MEDIAN::P1_MEDIAN-strict-v6",
+        "origin_session": "C",
+        "local_alias": "P1_MEDIAN",
+        "method_version": "C-ALL12-LAW-THRESHOLD-v2.1/P2_LEAF/H-MULTI/E0_OP/P1_MEDIAN",
+        "selector_id": "P1_MEDIAN-strict-v6",
+        "output_type": "MEDIAN",
+        "history": "Inherited exactproducer configuration;not inferredfromalias",
+        "binding_dataset_ids": [
+          "C-PROPLINE-ACTUAL-LINES-v7-PINNACLE-W2-W3",
+          "C-PROPLINE-OUTCOME-ROLE-v7.1",
+          "C-PROPLINE-CCBY-BOOKS-v8",
+          "C-PROPLINE-CCBY-WORKLOAD-v8",
+          "C-PROPLINE-CCBY-PREVALENCE-v8"
+        ],
+        "categories": [
+          "pass_yd",
+          "rec",
+          "rec_yd",
+          "rush_yd"
+        ],
+        "status": "IMPLEMENTED_SAVED_ACTUAL_LINE_ROWS",
+        "source_configs": [
+          "protocol/PROPLINE_PILOT_V7.json",
+          "protocol/SELECTED_RELIABILITY_V8.json",
+          "protocol/WORKLOAD_LINK_V8.json"
+        ]
+      },
+      {
+        "procedure_id": "C::C-ALL12-LAW-THRESHOLD-v2.1/P2_LEAF/H-MULTI/E0_OP/P2_LAW::P2_LAW::P2_EXACT_LINE_SELECTOR-v4.1",
+        "origin_session": "C",
+        "local_alias": "P2_LAW",
+        "method_version": "C-ALL12-LAW-THRESHOLD-v2.1/P2_LEAF/H-MULTI/E0_OP/P2_LAW",
+        "selector_id": "P2_EXACT_LINE_SELECTOR-v4.1",
+        "output_type": "EXACT_LINE_PROBABILITIES",
+        "history": "Inherited exactproducer configuration;not inferredfromalias",
+        "binding_dataset_ids": [
+          "C-PROPLINE-ACTUAL-LINES-v7-PINNACLE-W2-W3",
+          "C-PROPLINE-OUTCOME-ROLE-v7.1",
+          "C-PROPLINE-CCBY-BOOKS-v8",
+          "C-PROPLINE-CCBY-WORKLOAD-v8",
+          "C-PROPLINE-CCBY-PREVALENCE-v8"
+        ],
+        "categories": [
+          "pass_yd",
+          "rec",
+          "rec_yd",
+          "rush_yd"
+        ],
+        "status": "IMPLEMENTED_SAVED_ACTUAL_LINE_ROWS",
+        "source_configs": [
+          "protocol/PROPLINE_PILOT_V7.json",
+          "protocol/SELECTED_RELIABILITY_V8.json",
+          "protocol/WORKLOAD_LINK_V8.json"
+        ]
+      },
+      {
+        "procedure_id": "C::C-PASS-WORKLOAD-LINK-v8/P2_LINKED_V8::P2_LINKED_V8::P2_LINKED_V8-strict-v8",
+        "origin_session": "C",
+        "local_alias": "P2_LINKED_V8",
+        "method_version": "C-PASS-WORKLOAD-LINK-v8/P2_LINKED_V8",
+        "selector_id": "P2_LINKED_V8-strict-v8",
+        "output_type": "EXACT_LINE_PROBABILITIES",
+        "history": "Inherited exactproducer configuration;not inferredfromalias",
+        "binding_dataset_ids": [
+          "C-PROPLINE-ACTUAL-LINES-v7-PINNACLE-W2-W3",
+          "C-PROPLINE-OUTCOME-ROLE-v7.1",
+          "C-PROPLINE-CCBY-BOOKS-v8",
+          "C-PROPLINE-CCBY-WORKLOAD-v8",
+          "C-PROPLINE-CCBY-PREVALENCE-v8"
+        ],
+        "categories": [
+          "pass_yd"
+        ],
+        "status": "IMPLEMENTED_SAVED_ACTUAL_LINE_ROWS",
+        "source_configs": [
+          "protocol/PROPLINE_PILOT_V7.json",
+          "protocol/SELECTED_RELIABILITY_V8.json",
+          "protocol/WORKLOAD_LINK_V8.json"
+        ]
+      },
+      {
+        "procedure_id": "C::C-PASS-WORKLOAD-LINK-v8/P2_WORKLOAD_V8::P2_WORKLOAD_V8::P2_WORKLOAD_V8-strict-v8",
+        "origin_session": "C",
+        "local_alias": "P2_WORKLOAD_V8",
+        "method_version": "C-PASS-WORKLOAD-LINK-v8/P2_WORKLOAD_V8",
+        "selector_id": "P2_WORKLOAD_V8-strict-v8",
+        "output_type": "EXACT_LINE_PROBABILITIES",
+        "history": "Inherited exactproducer configuration;not inferredfromalias",
+        "binding_dataset_ids": [
+          "C-PROPLINE-ACTUAL-LINES-v7-PINNACLE-W2-W3",
+          "C-PROPLINE-OUTCOME-ROLE-v7.1",
+          "C-PROPLINE-CCBY-BOOKS-v8",
+          "C-PROPLINE-CCBY-WORKLOAD-v8",
+          "C-PROPLINE-CCBY-PREVALENCE-v8"
+        ],
+        "categories": [
+          "pass_yd"
+        ],
+        "status": "IMPLEMENTED_SAVED_ACTUAL_LINE_ROWS",
+        "source_configs": [
+          "protocol/PROPLINE_PILOT_V7.json",
+          "protocol/SELECTED_RELIABILITY_V8.json",
+          "protocol/WORKLOAD_LINK_V8.json"
+        ]
+      },
+      {
+        "procedure_id": "C::C-ALL12-LAW-THRESHOLD-v2.1/P3_HGB/H-MULTI/E0_OP/P3_DIRECT::P3_DIRECT::P3_DIRECT-strict-v6",
+        "origin_session": "C",
+        "local_alias": "P3_DIRECT",
+        "method_version": "C-ALL12-LAW-THRESHOLD-v2.1/P3_HGB/H-MULTI/E0_OP/P3_DIRECT",
+        "selector_id": "P3_DIRECT-strict-v6",
+        "output_type": "EXACT_LINE_PROBABILITIES",
+        "history": "Inherited exactproducer configuration;not inferredfromalias",
+        "binding_dataset_ids": [
+          "C-PROPLINE-ACTUAL-LINES-v7-PINNACLE-W2-W3",
+          "C-PROPLINE-OUTCOME-ROLE-v7.1",
+          "C-PROPLINE-CCBY-BOOKS-v8",
+          "C-PROPLINE-CCBY-WORKLOAD-v8",
+          "C-PROPLINE-CCBY-PREVALENCE-v8"
+        ],
+        "categories": [
+          "pass_yd",
+          "rec",
+          "rec_yd",
+          "rush_yd"
+        ],
+        "status": "IMPLEMENTED_SAVED_ACTUAL_LINE_ROWS",
+        "source_configs": [
+          "protocol/PROPLINE_PILOT_V7.json",
+          "protocol/SELECTED_RELIABILITY_V8.json",
+          "protocol/WORKLOAD_LINK_V8.json"
+        ]
+      }
+    ],
+    "C_completion_actual_line_contender": "NONE_IN_THIS_RETAINED_C_ACTUAL_LINE_ROSTER;do notinferfromTEAM_COMPLETION_CONTEXTlabel",
+    "completion_scope_caveat": "This is absence from the retained actual-line roster, not proof no C numerical/forecast-only completion model exists. If C nominates such an already implemented procedure with exact chronological origin/history/output bindings, retain it as unscored/inference-required until its owner supplies rows; do not call it an evaluated loser or silently exclude it for exporter inconvenience."
+  },
+  "verification_limits": [
+    "C scoped aggregate admission is not independent private A/B row,source-clock,fit or uncertainty parity.",
+    "C release roster is older closed version;it is not itself the new nineweek contender freeze.",
+    "Coverage ledger contains repeated views/masks;entries and eligible counts must not be summed as independent offers.",
+    "Current C own completion forecast-only rows lack actualoffers and do not fill an offered completion cell."
+  ],
+  "sources": [
+    {
+      "label": "C_EXPORT_INDEX",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "reports/abc-championship/EXPORT_INDEX.json",
+      "bytes": 80008,
+      "sha256": "25b0a673d7540744b7d0c4a21cbb7f5cae98f456837cf495156405792c61fd02",
+      "retained_UTC": "2026-11-14T18:33:10.602862+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/reports/abc-championship/EXPORT_INDEX.json",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_B_ADMISSION",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "reports/wave-closure-next-valid-01/B-intake/ADMISSION.json",
+      "bytes": 8950,
+      "sha256": "66d39af930fafe25695da83230b62643bbf7eaaee57b98300ee701bd0daf2a9d",
+      "retained_UTC": "2026-11-14T18:33:33.113812+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/reports/wave-closure-next-valid-01/B-intake/ADMISSION.json",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_WEBSITE_ADMISSION",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "reports/wave-closure-next-valid-01/website-intake/ADMISSION.json",
+      "bytes": 3009,
+      "sha256": "9fc7a7949bf976d7c74431164a7fe8419fc4d9aa2d523326eb1c21e79f24ba99",
+      "retained_UTC": "2026-11-14T18:33:33.977773+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/reports/wave-closure-next-valid-01/website-intake/ADMISSION.json",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_TWELVE_STATUS",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "reports/wave-closure-next-valid-01/TWELVE_CATEGORY_CLOSURE_STATUS.json",
+      "bytes": 9676,
+      "sha256": "714c7bbed973ed39fce19fa892be0d7f5146c71299d1b854b534e2338d3bda68",
+      "retained_UTC": "2026-11-14T18:33:32.673832+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/reports/wave-closure-next-valid-01/TWELVE_CATEGORY_CLOSURE_STATUS.json",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_QUEUE",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "reports/wave-closure-next-valid-01/FINITE_QUEUE.json",
+      "bytes": 10289,
+      "sha256": "d7be31f059a20840e31c48131d7fbd7e9649c348dca2256cd3e4b834fc3d7fb3",
+      "retained_UTC": "2026-11-14T18:33:32.449842+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/reports/wave-closure-next-valid-01/FINITE_QUEUE.json",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_RELEASE_ROSTER",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "reports/category-decision-release-01/follow-through-v1/RELEASE_ROSTER_FREEZE.json",
+      "bytes": 1797,
+      "sha256": "2b3f7415e4d1102594f0b21b44a7affd1187af5b494fa88067007a1372f57e8f",
+      "retained_UTC": "2026-11-14T18:33:33.329803+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/reports/category-decision-release-01/follow-through-v1/RELEASE_ROSTER_FREEZE.json",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_PROTOCOL",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "reports/abc-championship/PROTOCOL-v2-C-1.json",
+      "bytes": 4336,
+      "sha256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1",
+      "retained_UTC": "2026-11-14T18:33:32.889822+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/reports/abc-championship/PROTOCOL-v2-C-1.json",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_SCORER",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "src/abc_championship_v2.py",
+      "bytes": 11088,
+      "sha256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce",
+      "retained_UTC": "2026-11-14T18:33:33.761783+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/src/abc_championship_v2.py",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_INPUT_BINDINGS",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "reports/abc-championship/C_INPUT_BINDINGS.json",
+      "bytes": 2172,
+      "sha256": "91cf77353b70d49d33e5ca80421a69c702dc6d8fbab07043e58b0676580359e8",
+      "retained_UTC": "2026-11-14T18:33:33.541793+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/reports/abc-championship/C_INPUT_BINDINGS.json",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_EXPORT_SCHEMA",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "reports/abc-championship/EXPORT_SCHEMA-v2.json",
+      "bytes": 1039,
+      "sha256": "0ba0755f94889a33fb7c02efbf4cc9e414b9a733fc3bc7f1357faba1c294f2f4",
+      "retained_UTC": "2026-11-14T18:34:58.233893+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/reports/abc-championship/EXPORT_SCHEMA-v2.json",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_ACTUAL_OFFERS",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "src/actual_offers_v4.py",
+      "bytes": 11065,
+      "sha256": "39b187dbdf750b5cdd7b26197bc2c56240ce5aab2bef67392fc77c1a8938e186",
+      "retained_UTC": "2026-11-14T18:34:58.493881+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/src/actual_offers_v4.py",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_OFFER_VALIDATOR",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "src/offer_validator_v2.py",
+      "bytes": 3369,
+      "sha256": "a24a51491c061d7825a31a98fdfdf57358a666dd9b850e0f1b117cc776b0ac51",
+      "retained_UTC": "2026-11-14T18:34:58.017903+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/src/offer_validator_v2.py",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_DATASETS",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "reporting/actual-props-v6/DATASETS.json",
+      "bytes": 2976,
+      "sha256": "33c7296d8143f9e2b07f9f3c100aacea9d15ccb441bc4b27dd7016c50bd48385",
+      "retained_UTC": "2026-11-14T18:34:57.585922+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/reporting/actual-props-v6/DATASETS.json",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_CURRENT_PERIOD_SUMMARY",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "reports/wave-closure-next-valid-01/LEDGER_BUILD_RECEIPT.json",
+      "bytes": 2105,
+      "sha256": "9c9b32527be8229a2f67856f11630ff6ca7c420220f7efb1fbe7735a197c1655",
+      "retained_UTC": "2026-11-14T18:34:57.801913+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/reports/wave-closure-next-valid-01/LEDGER_BUILD_RECEIPT.json",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_A_ADMISSION",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "reports/wave-closure-next-valid-01/A-intake/SOURCE_BINDINGS.json",
+      "bytes": 4533,
+      "sha256": "4a64960bcdf374e57e0ffd2ef6e3fb75692ba1203ba685e12e6c1e0eb0625972",
+      "retained_UTC": "2026-11-14T18:34:58.709872+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/reports/wave-closure-next-valid-01/A-intake/SOURCE_BINDINGS.json",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_METHOD_ROSTER",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "reports/abc-championship/METHOD_ROSTER-v2-C-1.json",
+      "bytes": 6881,
+      "sha256": "6a39f54967335dcce50235565b8be1736b47e18d2fe6f4847980fe10f7a4d1ef",
+      "retained_UTC": "2026-11-14T18:39:55.976176+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/reports/abc-championship/METHOD_ROSTER-v2-C-1.json",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_CATEGORY_DECISIONS",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "reports/category-decision-release-01/CATEGORY_PRODUCT_DECISIONS.json",
+      "bytes": 706901,
+      "sha256": "dbd89914d1b445dc16a92bbfab0dc752aa9576545c3ccf9a1321d3ee1f62afdf",
+      "retained_UTC": "2026-11-14T18:39:56.368157+00:00",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/1bd6d071e2083ae060e601da0ac8c281296babc5/reports/category-decision-release-01/CATEGORY_PRODUCT_DECISIONS.json",
+      "representation": "GitHubconnector decoded source text;source-endednewline preserved;not HTTP wire metadata"
+    },
+    {
+      "label": "C_COVERAGE_LEDGER_V3",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "1bd6d071e2083ae060e601da0ac8c281296babc5",
+      "path": "reports/category-decision-release-01/W1_W9_AND_HISTORY_COVERAGE_V3.csv.gz",
+      "bytes": 2157803,
+      "sha256": "cf70bfc4645b45383756b0f6976170cfab0b3426395e1772f261a1860ac4721a",
+      "retained_UTC": "2026-11-14T18:35:35.917747+00:00",
+      "representation": "Exact binary gzip bytes;SHA matches current protocol"
+    }
+  ],
+  "resources": {
+    "source_read_attempts": 19,
+    "allocation": 24,
+    "remaining_allocation_unused": 5,
+    "successful_reads": 19,
+    "failed_reads": 0,
+    "retained_source_bodies": 18,
+    "retained_source_bytes": 3027997,
+    "byte_limit": 12582912,
+    "head_metadata_wire_bytes": "Not retained/measured;do not invent totalwirebytes",
+    "new_fits": 0,
+    "new_forecasts": 0,
+    "new_scores": 0,
+    "peer_writes": 0,
+    "new_common_grader": 0
+  },
+  "next_executor": "C common evaluation/intake owner",
+  "next_action": "Admit actualnewA84join+Bacdclosure scope;freeze additive namednineweekpanel/shortlistedroster under unchanged common scoring contract, preserving olderPinnacleboard and exact gaps."
+}

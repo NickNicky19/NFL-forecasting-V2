@@ -1,0 +1,130 @@
+{
+  "id": "B_COMPLETION_SOURCE_COMBINATION_DECISION_v1",
+  "at_UTC": "2026-11-14T18:49:15.814905+00:00",
+  "state": "COMPATIBLE_FOR_NAMED_TIER_B_DIRECTION_DIAGNOSTIC_UNION;C_INTAKE_AND_ROSTER_FREEZE_REQUIRED",
+  "policy": {
+    "id": "PROPOSED_A_ANNUAL_EARLY_PLUS_NATIVE_LATE_CMP_DIAGNOSTIC_SOURCE_POLICY_v1",
+    "must_freeze_before_new_comparative_scoring": true,
+    "target": "pass_cmp",
+    "season": 2026,
+    "period": "FullgameREGincludingovertimeofficialcreditedQBcompletions",
+    "role": "QB",
+    "forecast_cutoff": "Per-gamekickoff-left-limitreconstructedfeaturequery; ownprocedurefitcutoffs/featurehistorypreserved",
+    "row_rule": "Use unchangedAannualprimaryactual-linepanelW1-4; useunchangedBnativequalifiedactual-source-labelledpanelW5-9. Allcompetingproceduresfacetheexactselectedsourceopportunityforeachrow. Excludereference/internalthresholds, neverchoosequoteusingoutcome/modelwin.",
+    "A": {
+      "weeks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "source": "ANNUAL_NAMED_NJ",
+      "eligible": 84,
+      "games": 48,
+      "book_id_counts": {
+        "68": 78,
+        "69": 4,
+        "79": 2
+      },
+      "book_names": "UNBOUND_NOT_INVENTED",
+      "quote_clocks": "UNVERIFIED84",
+      "main_alternate": "UNCLASSIFIED",
+      "identity": "Originalsourceprimaryoffersuniquebygame/player/targetandopportunitykey; AownercheckedQB/season/week/target/teams/kickoff/cutoff",
+      "labels": "Explicitqualifiedplayedreportedcounts;0unknown;Bcachedactualconflicts0"
+    },
+    "later": {
+      "weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "source": "RegisteredBnativepublishedsourceassignments",
+      "root_source_admission": "DK141+oneSleeperPicks-labelledline; root independentlyqualifiesSleepernotprojectionfromexistingpinnedsourcecode. Preservecode-definedoriginbutrawmarketannotation/quoteclockunverified;DK-onlysensitivityrequired.",
+      "book_names": "Source-labelledDK/Sleeper,notinferredannualbookIDs",
+      "main_alternate": "UNCLASSIFIED_UNLESS_ROW_SOURCE_CONTRACT_PROVES",
+      "horizon": "W5-8per-gamerollingassignments,W9fixedprefirstgame snapshot; notonehomogeneousissuancepolicy"
+    },
+    "dedup": "Disjointtarget-weekdomains preventAearly/native-lateoverlap. Do notalsoappendAannualW5. IfAannualW5usedasalternatepanel, resolveexactgame/player/category/book/line/horizonduplicateidentities andsourceprecedencebeforecombining.",
+    "tier": "B_RETAINED_ACTUAL_LINE_SOURCE_LABELLED_TIMING_UNVERIFIED_CURRENT_VINTAGE_RECONSTRUCTION_DIAGNOSTIC",
+    "not_claims": [
+      "Notoriginalissuedpregamepicks",
+      "Notcutoff-authenticatedquotes",
+      "Notordinarymainlineboard",
+      "Notsinglebookstrategy",
+      "Notfullleagueoffercoverage",
+      "NotallA/B/Ccontenderscomplete",
+      "Notprimaryrelease/Cadmission"
+    ]
+  },
+  "mathematical_rule": "Strictfiniteunroundedpointversusoriginalselectedline; lower-medianseparateproduct; P2argmaxOver/Undermass,tieabstain,pushretained. EmptydenominatorsN/A.",
+  "public_key_domain_check": {
+    "earlier_B_query_rows": 146,
+    "later_B_query_rows": 169,
+    "query_counts_by_week": {
+      "1": 37,
+      "2": 39,
+      "3": 36,
+      "4": 34,
+      "5": 36,
+      "6": 29,
+      "7": 31,
+      "8": 35,
+      "9": 38
+    },
+    "intersection": 0,
+    "scope": "A84areowner-code-checkedsubsetofearlierB146; native142areowner-checkedlaterquerysubset. ActualAselectedkeyshidden; no independentprivate-rowintersectionclaim."
+  },
+  "raw_grade_parity": "OWNER_ATTESTED_HASH_AND_CODE_BOUND;PRIVATE_VECTOR_ROW_PARITY_NOT_INSPECTED",
+  "completeness": "AearlyandBnativecomponentcoveragearepartialwithinweeks; all9representeddoesnotmeanfullleaguebookcoverage.",
+  "proper_scores": "Directioncontracts match. A binaryOverBrier versusBhalfmulticlassBrier needszero-pushprooforharmonization beforeunion; AUCcannotbeaveraged. SeeP2_AND_PROPER_SCORE_CONTRACT_PARITY_V1.json.",
+  "no_new_union_scoring": true,
+  "no_new_fits": true,
+  "no_new_model_inference": true,
+  "C_common_evaluator_unchanged": true,
+  "source_bindings": [
+    {
+      "path": "EXECUTED_WAVE_CLOSE_A_V1.md",
+      "bytes": 8328,
+      "sha256": "b98962a9b1670b01a0c5a1722f5416fda33eeedb516c7bd3d5a9f255ad73a180",
+      "repository": "NickNicky19/NFL-forecasting",
+      "commit": "5a41d2bac6027e0ac1b5a2744d52f8ec5e93c47e"
+    },
+    {
+      "path": "FTN_COMPLETION_W1_W4_RESULTS_V1.json.gz",
+      "bytes": 47480,
+      "sha256": "fcd9d4c0fe6181dc5ebe5119031460615e57f3bbbb04a968b0139098e8970ad0",
+      "repository": "NickNicky19/NFL-forecasting",
+      "commit": "5a41d2bac6027e0ac1b5a2744d52f8ec5e93c47e"
+    },
+    {
+      "path": "FTN_COMPLETION_W1_W4_SCORING_GO_V3.json",
+      "bytes": 22963,
+      "sha256": "bb282de5ec53fe5720e4063f07277410241f5495c67b8cfa95ec84cd52cec79d",
+      "repository": "NickNicky19/NFL-forecasting",
+      "commit": "5a41d2bac6027e0ac1b5a2744d52f8ec5e93c47e"
+    },
+    {
+      "path": "wave_close_b_ftn_completion_join_v1.py",
+      "bytes": 28665,
+      "sha256": "b72de6fee519bcdc566596a8283362bcbbc5d326a834498a7d292d3610c8f2f0",
+      "repository": "NickNicky19/NFL-forecasting",
+      "commit": "5a41d2bac6027e0ac1b5a2744d52f8ec5e93c47e"
+    },
+    {
+      "path": "timing_confirm_b_completion_join_v1.py",
+      "bytes": 29650,
+      "sha256": "bd491535dc1cd0df08cc000cf883d6c11e19b62f9506b9df0a40b217ad8d26c4",
+      "repository": "NickNicky19/NFL-forecasting",
+      "commit": "5a41d2bac6027e0ac1b5a2744d52f8ec5e93c47e"
+    },
+    {
+      "path": "INDEPENDENT_W1_REVIEW_V1.json",
+      "bytes": 1970,
+      "sha256": "7a6dafe7f5c8032529f81cb5b63c7af0f10cb8820b2b554c6d7089f01d654a7b",
+      "repository": "NickNicky19/NFL-forecasting",
+      "commit": "5a41d2bac6027e0ac1b5a2744d52f8ec5e93c47e"
+    }
+  ]
+}

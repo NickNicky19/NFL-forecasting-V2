@@ -1,0 +1,84 @@
+{
+  "id": "B_A_LATER_CONTROL_AND_MISSING_OWNER_LOCAL_CELLS_v1",
+  "at_UTC": "2026-11-14T18:49:15.814905+00:00",
+  "A_actual_research_HEAD": "5a41d2bac6027e0ac1b5a2744d52f8ec5e93c47e",
+  "A84_join": "COMPLETED_DO_NOT_REPEAT",
+  "A_later_control": {
+    "status": "PERMITTED_SAVED_LATER_CONTROL_OUTPUTS_NOT_LOCATED_IN_INSPECTED_B_INVENTORIES_OR_A_PUBLIC_INDEX",
+    "executor": "A existing protected-board/model saved-output executor",
+    "frozen_bundle": {
+      "bytes": 1688359,
+      "sha256": "753970f359a5089286dde4c7ace6eeeb02c82b59eed07a50fd8ecc797eec8c33"
+    },
+    "A_forecast_member_sha256": "7d849d60902a2aa0a4922dd1ba0d09d4e0a21290cb5121e48279c6f54349e23f",
+    "required": [
+      "For eachfrozenAcompletioncontrol inspectexistingretainedFORECASTS.parquet forW5-9canonicalQB/game outputs matchingBnativeboard",
+      "Preferread-onlyinferencefromauthenticatedretainedoriginmodelsifexactqueryoutputsabsent;AaloneexecutesAinference/fits",
+      "Scoreusingthesameowner-local commonpolicyagainstBnativequalifiedsourceboard;noArawprotectedtransferneeded"
+    ],
+    "CatBoost": {
+      "bindings": [
+        {
+          "output_procedure_version": "8aeaa5083a4dc10d5e19f13cef30bc6607f6f5e1e40582059876583526927da6",
+          "source_forecast_member_sha256": null,
+          "source_forecast_sha256": "a2b58631cd83898643e36b49a951147edc9ae3401369ae549d9f323f6f4c995f",
+          "source_information_policy": "EXACT_DECLARED_RECONSTRUCTED_SOURCES_NO_ORIGINAL_ISSUANCE",
+          "source_issue_time_UTC": null
+        }
+      ],
+      "method": "CATBOOST_MEDIUM",
+      "product": "mean_objective_point",
+      "rows": 431,
+      "state": "RETAINED"
+    },
+    "HGB": {
+      "bindings": [
+        {
+          "output_procedure_version": "80a9371936a049dfe5b75e458bb55c3f2ff11daf2f0c9e0e6726de0b8cbd6310",
+          "source_forecast_member_sha256": null,
+          "source_forecast_sha256": "0903c0d3b2af5d8946a76fbb8df0c0d4a0659cdd2f531800678b6f0bb4d8fc92",
+          "source_information_policy": "EXACT_DECLARED_RECONSTRUCTED_SOURCES_NO_ORIGINAL_ISSUANCE",
+          "source_issue_time_UTC": null
+        }
+      ],
+      "method": "HGB_MAE_DIRECT",
+      "product": "mae_objective_point",
+      "rows": 431,
+      "state": "RETAINED"
+    },
+    "coverage_limit": "431rowsperAcontrolreportedAFTERW1-4filter;notproofW5-9savedcoverage.",
+    "next_artifact": "A per-procedureW5-9availability/membershipandown-side/numericalcontrolscorebindingsonthechosenstableactual-linepanel",
+    "stop": "If exactretainedmodel/feature/prediction unavailable, markthatcontender/cellmissing\u2014notloser\u2014continueindependentBcells."
+  },
+  "older_B_reuse": {
+    "status": "EXISTING_EARLY_WEEKLY_PUBLIC_AGGREGATES_REUSABLE_WITH_EXACT_MASKS",
+    "source": "Aexistingb-completion-public-v2ANNUAL_ACTUAL_W1_W5csvs",
+    "weeks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "cells": 48,
+    "procedures": "R0/R1/R2/R3 \u00d7mean/lower_median/P2; F0=R0andF1=R2exactreusebindingintimingcode. E3\u2194R0needsBownerfeature/recipealiasproof.",
+    "newA84_matched_old_checks": 64,
+    "old_A_source_and_forecast_hashes_same": true,
+    "new_join_required": false
+  },
+  "other_early_B_cells": {
+    "P1_conditionalGLM": "NOT_IN_OLD_R0_R3_JOIN;exactowner-localAjoinneededifshortlisted;publicBforecastsavailabledo notrefitforformat",
+    "selective": "W1-4registeredP90/rollingTopK NOT_EXECUTEDinA84receipt. Aownercanreplayfrozenpolicysavedvalueswithdeclaredschedule;do notinheritlateweekcoverageorforcequotas."
+  },
+  "probability": {
+    "harmonized_Brier": "Aowner provideszero-integer/pushprooforcommonmulticlassscorefrom84frozenvectors;notnewfit.",
+    "union_AUC": "Owner-localcrosssourceprobability/labelranksneeded;sourceAUCaverageinvalid."
+  },
+  "rights": "Apublicaggregates/code/commitmentsavailable;sourcevectorhashdoesnotgrantBprotectedoffer/modelaccess;nopeerwrites/fits.",
+  "source_read_attempts": 14,
+  "source_get_limits": {
+    "maximum": 24,
+    "remaining": 10
+  },
+  "new_fits": 0,
+  "new_union_scores": 0
+}

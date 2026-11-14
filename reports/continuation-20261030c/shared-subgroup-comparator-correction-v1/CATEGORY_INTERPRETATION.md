@@ -1,0 +1,9 @@
+The three overall C02 point gains persist in both top-10 and top-20 views: interceptions, receptions and qualified chart points. Chart's low prior-score band reverses the small pooled gain: MAE increases 0.0056 there. Interception point improvement does not imply improved risk distributions: its full CRPS increases 0.0024 against the strongest earlier proper-law reference.
+
+Several overall losses reverse within the top 20: passing yards (+1.5480 overall to −0.8100 in the top 20), rushing yards (+0.0616 to −0.3071), receiving yards (+0.0170 to −0.1857) and combined yards (+0.1331 to −1.1436). Passing attempts also reverses (+0.1033 to −0.0286). Completions continues to lose. Passing TD ties overall but loses among the top 10 and top 20. Anytime-TD Brier improves slightly in the top 10 while losing overall and in the top 20. These are matched subgroup changes against fixed previous overall leaders, not newly selected subgroup leaders.
+
+Rushing attempts improves 0.0429 in the top 10, but loses 0.0498 overall and 0.0500 in the top 20. The common learned-only carry mask has 524 supported primary rows; C02 MAE still loses 0.0515 there. Own-learned, shared-learned and fallback-only populations remain separate in the detailed tables.
+
+Intended-mean MSE and proper-law CRPS have different reversals from displayed-point MAE. Rushing-attempt CRPS loses 0.0207 overall but improves 0.0911 among the top 10. Combined-yard point MAE improves among the top 10 while CRPS worsens 0.0310 there. A point improvement is therefore not presented as a distribution improvement.
+
+All numbers come from the [corrected twelve-category tables](README.md). Each primary top-10 view contains 70 supported pairs across seven weeks; chart retains 35 unknown overall labels. Seven exposed week clusters and selection after exposure limit confidence. These findings do not establish a future routing policy or offer, price or ROI skill.

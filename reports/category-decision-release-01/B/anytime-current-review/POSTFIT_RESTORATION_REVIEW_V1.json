@@ -1,0 +1,117 @@
+{
+  "id": "B-ANYTIME-CURRENT-POSTFIT-INDEPENDENT-RESTORATION-v1",
+  "reviewed_UTC": "2026-11-12T02:27:49.685218+00:00",
+  "verdict": "PASS_IN_CHECKED_RESTORATION_SCOPE",
+  "input_and_artifact_sha256": {
+    "FROZEN_PROTOCOL.json": "b052b388b1a889522846af358e05b487edb970ce24ac52e5cfe9d4fc402b13a8",
+    "EVENT_HISTORY.json.gz": "440909bd5a4ebadb82a5d74f2b2a08e215eb6dc41885c58f44a92f4736456dfb",
+    "CURRENT_QUERIES.json": "b84815e664e16b579be1904a6df022fa040314f7cf7db2a1d8cd04ae9f2870bc",
+    "MODEL.json.gz": "91bccdab6b6de03f1a1bf87a176c597e43d6af6c2c06ffaf74d70b90b04f3461",
+    "PREPARED_FORECASTS.json": "c3a3984f04852055b707e18c826943e442a3df558610024e7b23ea062a5f95cd",
+    "FIT_ATTEMPT.json": "7d1c1bfa20c80fc1c3960f6fa85b29b728a3e5032fdc419e38ee01a687cb0215"
+  },
+  "review_code_sha256": "9fb88d33057085d5d819ed8ebe12ed04972fc4003826b16c970ee57a822ab3d7",
+  "procedure": "hgb-direct-history-controls-v1:log_loss_probability:H-MULTI",
+  "reference": "empirical-player-history-control-v1:H-MULTI",
+  "feature_count": 20,
+  "trees": 64,
+  "tree_nodes": 960,
+  "training_rows": 25830,
+  "training_roles": {
+    "QB": 2901,
+    "RB": 6805,
+    "WR": 10803,
+    "TE": 5321
+  },
+  "training_membership_sha256": "aecdf262e3d06bfbe30e385baf1bb89a149b4c2fcf07e19b63512429360e19a6",
+  "latest_training_label": 1794273300.0,
+  "fit_cutoff": 1794449238.518027,
+  "model_fit_completed_UTC": "2026-11-12T02:22:21.018339+00:00",
+  "eligible_players": 25,
+  "basic_players": 52,
+  "checked_forecasts": 50,
+  "max_absolute_saved_probability_error": 0.0,
+  "native_parity_owner_report": 5.551115123125783e-17,
+  "checks": [
+    "Independent plain-JSON numerical tree traversal; no author predictor or estimator imported",
+    "Twenty independent own-history features with strict availability and unknown slots retained",
+    "Training identity hash, class order, finite logistic probabilities and binary complement mass",
+    "Own empirical mean and position fallback recomputed on full eligible training membership",
+    "Single/list/reversed-query/reversed-history identity parity",
+    "Synthetic future-row feature invariance without fitting",
+    "Actual fit/prepared clocks precede roster expiry; reported fit resource budget satisfied"
+  ],
+  "examples": [
+    {
+      "player_id": "00-0031484",
+      "role": "TE",
+      "own_prior_n": 21,
+      "hgb_probability": 0.06856909517653115,
+      "empirical_probability": 0.047619047619047616,
+      "latest_feature_available": 1792947600.0
+    },
+    {
+      "player_id": "00-0031588",
+      "role": "WR",
+      "own_prior_n": 64,
+      "hgb_probability": 0.37689119441555796,
+      "empirical_probability": 0.40625,
+      "latest_feature_available": 1794187200.0
+    },
+    {
+      "player_id": "00-0033376",
+      "role": "RB",
+      "own_prior_n": 31,
+      "hgb_probability": 0.07019398862071755,
+      "empirical_probability": 0.06451612903225806,
+      "latest_feature_available": 1791738000.0
+    }
+  ],
+  "no_own_cases": [
+    {
+      "player_id": "00-0041178",
+      "role": "RB",
+      "own_prior_n": 0,
+      "empirical_position_n": 6805,
+      "empirical_probability": 0.2367376928728876,
+      "hgb_missing_history_probability": 0.15089837516798932,
+      "latest_feature_available": null,
+      "hgb_fallback": "none",
+      "empirical_fallback": "position_empirical"
+    },
+    {
+      "player_id": "00-0041376",
+      "role": "RB",
+      "own_prior_n": 0,
+      "empirical_position_n": 6805,
+      "empirical_probability": 0.2367376928728876,
+      "hgb_missing_history_probability": 0.15089837516798932,
+      "latest_feature_available": null,
+      "hgb_fallback": "none",
+      "empirical_fallback": "position_empirical"
+    }
+  ],
+  "resources": {
+    "new_current_fits": 1,
+    "new_historical_fits": 0,
+    "wall_seconds": 0.6872749059984926,
+    "cpu_seconds": 0.8013416869999999,
+    "peak_RSS_bytes": 196222976
+  },
+  "raw_hgb_probability_range": [
+    0.054935768202530946,
+    0.40834087804973845
+  ],
+  "source_expiry_UTC": "2026-11-12T03:34:29+00:00",
+  "scope_limits": [
+    "No new model fits, no original estimator loading and no independent fresh-fit reproduction.",
+    "Owner native-estimator parity is separately reported; this review independently restores plain JSON against all saved current rows.",
+    "Historical raw-source/feature sample and seven-day reconstruction limitations remain in the separate prefit receipt.",
+    "Current event/status admission, actual issue/persistence, remote publication and consumer receipt are separately owned by root.",
+    "No offered line, O/U selection, calibration claim, EV, grade, new completed football week or primary release is created."
+  ],
+  "reviewer_new_fits": 0,
+  "reviewer_model_restoration_cases": 25,
+  "reviewer_new_issued_forecasts": 0,
+  "reviewer_new_grades": 0
+}

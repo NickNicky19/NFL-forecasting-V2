@@ -1,0 +1,49 @@
+{
+  "id": "B-FTN-SUPPORT-EQUIVALENCE-v1",
+  "at_UTC": "2026-11-12T23:47:36.570619+00:00",
+  "scope": "Every2939canonicalQBgamequeryincludingold2901and38Week9extension; no fit or score.",
+  "canonical_rows": 2939,
+  "rows_by_season": {
+    "2022": 633,
+    "2023": 663,
+    "2024": 664,
+    "2025": 664,
+    "2026": 315
+  },
+  "sourcefree_support_projection_assertions": 52902,
+  "own_no_history_queries": 187,
+  "own_history_but_zero_attempt_total_queries": 14,
+  "actual_source_full_match_known_coverage": true,
+  "source_unknown_clock_rows": 0,
+  "source_non_target_rows": 1,
+  "conclusion": "CurrentFTNsupportisreconstructablefromunchangedordinaryQBattempt/appearancehistory. B1isexplicitoutput-preservingB0aliaswithzeroaddedlearnercolumns/fits; B2addsONLY2substantivevalues.",
+  "age_representation_caveat": {
+    "latest_positive_attempt_chart_age_differs_from_latest_any_appearance_age_count": 101,
+    "meaning": "Zero-attemptappearancescanmakelastchartedageadifferentrepresentationthanR3lastgameagecolumn. Bothderivefromordinaryhistory; thispackagedoesnotadd/testthatrepresentation orclaimall17diagnosticsliterallyduplicatevectorcolumns."
+  },
+  "future_partial_coverage": "complete_required_chartingfalse requires exactfrozenB0fallback; B2feature_valuesraises onpartialrequiredhistory.",
+  "bindings": [
+    {
+      "path": "reports/player-context-matchup-01/B/source-fields-v3/DERIVED_QB_GAME_INPUTS.json.gz",
+      "sha256": "f23bb72f05f398c7108700e10fa7bf63e233aca57bc67eb6820a38c9f212af90",
+      "bytes": 246610
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/source-qualification/QB_CONTEXT_W9_EXTENSION_V1.json.gz",
+      "sha256": "bb33af30de0e79d30c566bc1af66a53cf2b785f119bb20f92da5d77dbc1c6c30",
+      "bytes": 4022
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/source-qualification/FTN_BALL_QUALITY_QB_GAME_INPUTS_V1.json.gz",
+      "sha256": "c2d190b6228928943491603a04c2ae8e9ae551d16385c3bbba5717df7135d7ad",
+      "bytes": 64275
+    },
+    {
+      "path": "nfl_v2/qb_ftn_information.py",
+      "sha256": "d66b300b568bd83d190811ef391f1ad80d967d85c25aefb435d46ed9a8be7e6a",
+      "bytes": 10100
+    }
+  ],
+  "new_fits": 0,
+  "new_NFL_scores_or_weeks": 0
+}

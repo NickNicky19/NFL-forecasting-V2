@@ -1,0 +1,34 @@
+{
+  "state": "PASS_INDEPENDENT_ROLLING_ADMISSION_RAW_JOINS_ACTUAL_CLOCKS_AND_PARAMETERS",
+  "week": 7,
+  "at": "2026-10-31T02:23:35.265586+00:00",
+  "protocol_sha256": "6525a42f290fd870dd93f3dd043e779878a0247fd4b70039a9be25c6bdb95e05",
+  "mask_sha256": "d48302a1720a7cfab1de3311a3caf9f2769fec0b27d5980496b19621aca0f1f8",
+  "summary_sha256": "d9a7242cc790dcb727704a63f206f940eb008d3017d14c6f36baac5b1bf69ccb",
+  "offer_universe": 649,
+  "matched_recipe_offer_rows": 34112,
+  "summary_cells": 548,
+  "P1_admissible": 27040,
+  "P2_admissible": 4584,
+  "complete_parameter_records_checked": 5120,
+  "law_kinds": {
+    "poisson": 2558,
+    "signed": 2512,
+    "geometric": 50
+  },
+  "reason_counts": {
+    "TARGET_HISTORY_AFTER_DECISION": 412,
+    "QUERY_SOURCE_AFTER_DECISION": 6660
+  },
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_scores": 0,
+  "new_grades": 0,
+  "new_NFL_observations": 0,
+  "limits": [
+    "Admission only, no NFL direction/probability performance scored.",
+    "New known-target-time reconstruction is distinct from original issuance and earlier-clock feature refresh.",
+    "Nominal fit origin may follow decision only if every retained training-label/feature/prior maximum precedes it; earlier-origin reconstruction remains a new identity. Count fallback chunk metadata remains its own follow-up.",
+    "Leaf IDs alone remain insufficient for a recovered CDF."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "FAIL_METADATA_REGISTRATION_ONLY",
+  "at_utc": "2026-11-10T01:03:29.441281+00:00",
+  "attempted_output": "reports/player-context-acceptance-01/B/results-index-v1",
+  "exception": "KeyError: source_score_sha256 in reporting annotation contract",
+  "registry_entry_as_attempted": {
+    "artifact": "reports/player-context-acceptance-01/B/raw-feature-review/SCORES.json",
+    "state": "SCORED",
+    "kind": "SAVED_OUTPUT_NUMERICAL_POPULATION_DIAGNOSTIC",
+    "version_note": "Eight mean/median views on 129 native QB queries in 56 covered games, 2026 W5\u20138. No new forecast, actual-line grade, method, fit or NFL observation. Complete-system membership reconciled independently.",
+    "reporting_annotations": "reports/player-context-acceptance-01/B/NUMERICAL_DIAGNOSTIC_SCOPE_OVERLAY_V1.json"
+  },
+  "cause": "A stand-alone nonprimary scope overlay was incorrectly registered as the scorer-specific reporting_annotations schema. No score bytes or prior index changed.",
+  "next": "Register the unchanged overlay as scope_annotation, bind it from CURRENT_RESULTS_INDEX, and build in a new v2 output directory."
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "v2-independent-prop-included-universe-timing-clarification-v1",
+  "state": "PRE_GRADING_INTERPRETATION_AMENDMENT",
+  "original_boundary_plan_sha256": "c41d7d9e2af56a3a1a47d85edc44f371c763cddb6722fb741342cd2626d17af3",
+  "authority": "Parent supplied latest user section8 exact wording: before the first included game begins.",
+  "clarification": "The fixed selection cutoff belongs to the explicitly declared universe. A full-week product must anchor to the full week's first game. A separately named thirteen-game partial-week replay may anchor to the first of those included games, provided every input was available before that game and it is never called a full-week or original frozen topK result.",
+  "fixture_interpretations": [
+    {
+      "id": "TOP01",
+      "clarification": "The original fixture explicitly assumes a full-week universe; its before-first-weekly-kickoff expectation is unchanged. A partial universe needs its own frozen source, name and first-included-game anchor."
+    },
+    {
+      "id": "TOP02",
+      "clarification": "False for a full-week fixed list. May be true for a separately registered partial-week fixed replay if before its declared first included game; later versions remain distinct from original website top flags and rolling batches."
+    }
+  ],
+  "first_panel_scope": "Server-retained thirteen-game original W7 lean+line slice. Original top flags can be described within that slice; their existence does not reconstruct original combined-week top6/top10/top20 inputs or freeze clocks.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "current2026_week8_outcomes_read": 0
+}

@@ -1,0 +1,17 @@
+{
+  "at_utc": "2026-11-10T12:15:23.631426+00:00",
+  "failed_commit": "62cbf5af364ad8b3a5d178cd7ed6221ee43c5f26",
+  "failed_runs": [
+    42813253575,
+    42813229527
+  ],
+  "command": "python tools/validate_checkpoint.py",
+  "error": "KeyError:run_id",
+  "scope": "One newly appended B execution record; all science/source/model/score bytes unchanged",
+  "cause": "Root used event_id rather than including required run_id in new entry",
+  "repair": "Add run_id to that executionrecord, preserve exactoriginalJSON, append zero-fit administrativecorrection. Guardunchanged.",
+  "original_record": "reports/profile-increment-to-release-01/B/FAILED_EXECUTION_ROW_V1.json",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "grade_changes": 0
+}

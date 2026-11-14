@@ -1,0 +1,93 @@
+{
+  "state": "PASS_PUBLIC_AGGREGATE_INDEX_V3_INDEPENDENT_REVIEW",
+  "recorded_at_utc": "2026-10-30T22:48:14.107147+00:00",
+  "scope": "Public aggregate score/index/CSV/hash readback only; no private input, outcome decoding, grading, inference, fit or forecast.",
+  "defects": [],
+  "manifest_sha256": "ab159aba4ea9a829e457e1e9da7dc786cea52ef8a0719f631ac9d7f3b69d1dda",
+  "pointer_sha256": "d8742cab3604e663d70dc5817acfc193d346da910d6d0fcaa8bc0a88d168f694",
+  "index_records": 152751,
+  "prior_records": 145219,
+  "prior_shard_hashes_checked": 90,
+  "new_prop_records": 7532,
+  "new_json_shards_checked": 6,
+  "new_source_artifacts_bound": 7,
+  "pilot_views": 92,
+  "actual_selected_side_views": 7440,
+  "csv_rows_counted": 152751,
+  "new_csv_rows_checked": 7532,
+  "category_csv_new_rows_checked": 7532,
+  "metadata_values_checked": 112888,
+  "rank_views_checked": 2160,
+  "default_weekly_views": 3720,
+  "excluded_explicit_season_aliases": 3720,
+  "zero_decided_views_retaining_null": 2864,
+  "original_actual_selected_sides": {
+    "over": {
+      "eligible": 285,
+      "selected": 135,
+      "wins": 85,
+      "losses": 49,
+      "unknown": 1,
+      "decided": 134,
+      "selection_coverage": 0.47368421052631576
+    },
+    "under": {
+      "eligible": 285,
+      "selected": 150,
+      "wins": 98,
+      "losses": 47,
+      "unknown": 5,
+      "decided": 145,
+      "selection_coverage": 0.5263157894736842
+    },
+    "Combined": {
+      "eligible": 285,
+      "selected": 285,
+      "wins": 183,
+      "losses": 96,
+      "unknown": 6,
+      "decided": 279,
+      "selection_coverage": 1.0
+    }
+  },
+  "draft_metadata_deltas": {
+    "results-index": {
+      "abstentions": 7440,
+      "eligible_opportunities": 3352,
+      "selection_coverage": 7532,
+      "source_pool_opportunities": 7532
+    },
+    "results-index-v2": {}
+  },
+  "draft_native_scientific_fields_unchanged": true,
+  "code_snapshots_equal_current": 5,
+  "numeric_projection_still_bound_to_unchanged_C_ancestor": true,
+  "full_7440_source_csv_binding_checked": true,
+  "book_settlement": "UNRESOLVED_CONTRACT",
+  "prices_probability_returns": "null",
+  "guards": {
+    "check_prop_scoreboard_coverage.py": {
+      "state": "PASS_PROP_SCOREBOARD_COVERAGE",
+      "bound_csv_rows": 7440,
+      "default_weekly_views": 3720,
+      "retained_aliases": 3720,
+      "unsupported_cells": 48,
+      "NFL_outcome_rows_read": 0
+    },
+    "check_analysis_index_coverage.py": {
+      "state": "PASS",
+      "canonical_evaluation_views": 124630,
+      "derived_comparison_views": 18708,
+      "PAIRED_LOSS_SCORED": 17658,
+      "NO_SUPPORTED_PAIRED_ROWS": 1050,
+      "new_NFL_observations": 0
+    }
+  },
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "inference_calls": 0,
+  "new_threshold_grades": 0,
+  "new_NFL_observations": 0,
+  "week8_outcomes_read": 0,
+  "wall_seconds": 12.016
+}

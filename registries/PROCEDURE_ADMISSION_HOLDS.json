@@ -1,0 +1,59 @@
+{
+  "schema": "B-scoped-procedure-recommendation-holds-v2",
+  "at_utc": "2026-11-06T00:52:21.740859+00:00",
+  "coordinator": "C owns the common ledger; B supplies this local rule and evidence.",
+  "holds": [
+    {
+      "hold_id": "B-AUDIT-C-F1-ORIGINAL-HGB-L1-CARRY-v1",
+      "audit_section": "AppendixC/F1",
+      "audit_TXT_sha256": "720b464f8077d3a483a4a73245690071866b7757fb6d20763c2ea8d931061795",
+      "procedure_ids": [
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "v2-hgb-direct-history-controls-v1:absolute_error_point"
+      ],
+      "category": "rush_att",
+      "histories": "ALL_ORIGINAL_REGISTERED_HISTORIES",
+      "products": "Originalabsolute_error_pointanddependentviewsoraliases",
+      "known_fixed_model_dependencies": [
+        "4333f846a06ff945536379969920ce16ae00086df0e9922a0a9dc58290c29b53",
+        "24027cd7da3d84cf16f8c2f42f3012d79e44572208ba41ee708cbc9784976360",
+        "b9e7ec24ce3fd672bed9bed7d2d80ea00a303ba39dd8211004cb596f2e30dc9a"
+      ],
+      "state": "EXCLUDED_FROM_ELIGIBLE_RECOMMENDATIONS;SCORED_LOSSES_PRESERVED",
+      "reason": "Confirmed pooled absolute-loss carry collapse. Exact dependent A/B models remain held even when a grade projection omits their hashes. Legitimate zero predictions and distinct C refits are not automatically defects.",
+      "original_forecasts_and_loss_bytes_unchanged": true,
+      "measurement_or_outcome_invalidation": false,
+      "prediction_repair_performed": false,
+      "separate_repairs_and_other_targets_held": false,
+      "current_factory_not_patched": true,
+      "source_diagnosis": "reports/continuation-20261030/HGB_RUSH_ATT_COLLAPSE_DIAGNOSIS_V2.md",
+      "new_fixture": "reports/audit-remediation-20261105-v1/B/HGB_PATHOLOGICAL_FIXTURE_V1.json",
+      "resume": "Anewcorrectedforecastrecipeownregisteredhistory/evaluationandoperationaladmission;noborrowingfromfailedoriginal",
+      "C_receipt_or_admission": "NOT_OBSERVED",
+      "availability_fixed_model_dependency": {
+        "procedure": "v2-availability-abc-shadow-v1:hgb_direct:absolute_error_point",
+        "arms": [
+          "A",
+          "B"
+        ],
+        "histories": [
+          "H-CURRENT",
+          "H-RECENT",
+          "H-MULTI"
+        ],
+        "binding": "reports/continuation-20261030b/availability-wave-v1/FIXED_MODEL_BINDINGS.json",
+        "binding_sha256": "be83c7ea18df565384032e81b72e72d2a2f7ff64f19fd4f7758500fc0b9c59a4",
+        "new_C_refit_excluded_by_this_dependency": false
+      },
+      "source_bound_score_annotations": {
+        "path": "reports/audit-remediation-20261105-v1/B/independent/BOUND_CARRY_CONTROL_HOLD_QUALIFICATION_V2.json",
+        "sha256": "d601e50ab1c1840ceacd4499a44d85238ce97e310c0a74935789bad545c42496"
+      }
+    }
+  ],
+  "scope": "Specificknownpathdefectonly;passingthisfilterisnotglobalqualification,sourcecertificationoroperationalreadiness",
+  "prior_version": {
+    "path": "reports/audit-remediation-20261105-v1/B/hold-overlay-v3/RETAINED_HOLD_REGISTRY_V1.json",
+    "sha256": "149e2b1b35f20460c9014f8e09c4fa7f328be1bd9a4a37da8d79724c32cd384b"
+  }
+}

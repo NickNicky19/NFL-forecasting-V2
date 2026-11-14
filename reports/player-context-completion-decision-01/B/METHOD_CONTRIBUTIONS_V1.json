@@ -1,0 +1,292 @@
+{
+  "schema_version": "B-LATER-CONTEXT-ROSTER-CONTRIBUTION-v1",
+  "canonical_owner": "C",
+  "methods": [
+    {
+      "procedure_id": "B-QB-DEPTH-CATCHABILITY-v2:D1",
+      "origin_repository": "NickNicky19/NFL-forecasting-V2",
+      "protocol": "reports/player-context-completion-decision-01/B/depth-wave-v2/FROZEN_PROTOCOL.json",
+      "code": "tools/run_qb_depth_catchability_v2.py",
+      "family": "typed_ordered_leaf_cdf",
+      "history": "H-RECENT season-relative priorseason+earliercurrent labels; expanding2022features;8ownappearances/20prior",
+      "outputs": [
+        "mean",
+        "lower_median",
+        "exact_count_law"
+      ],
+      "selection": [
+        "P1_MEAN",
+        "P1_LOWER_MEDIAN",
+        "P2_STATISTICAL_LAW",
+        "P90"
+      ],
+      "test_seasons": {
+        "2025": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "2026": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "actual_offer_weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "role": "QB",
+      "source_vintage": "CURRENT_REVISED_SEVEN_DAY_RECONSTRUCTION",
+      "quote_horizon": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "input_contract": "Same frozen support block;noqualityvalues",
+      "correction": "Fixed600iteration optimizer allowance for conditional models; no outcome-trained calibration or offset. Two directpilotmodels reused.",
+      "fallback": "C1/C2 earlier depth/roleprior and frozenP1ifnonconverged; actualmodelnonconvergencefallback0. Direct Leaf trainedfullsystem; missing indicators and fitted imputation retained.",
+      "C_admission": "AWAITING_EXACT_NEW_EXPORT_INTAKE",
+      "roster_state": "LATER_LOCAL_ROSTER_CONTRIBUTION_NOT_RETROACTIVE_ADMISSION_TO_OLDER_C_ROSTER"
+    },
+    {
+      "procedure_id": "B-QB-DEPTH-CATCHABILITY-v2:D2",
+      "origin_repository": "NickNicky19/NFL-forecasting-V2",
+      "protocol": "reports/player-context-completion-decision-01/B/depth-wave-v2/FROZEN_PROTOCOL.json",
+      "code": "tools/run_qb_depth_catchability_v2.py",
+      "family": "typed_ordered_leaf_cdf",
+      "history": "H-RECENT season-relative priorseason+earliercurrent labels; expanding2022features;8ownappearances/20prior",
+      "outputs": [
+        "mean",
+        "lower_median",
+        "exact_count_law"
+      ],
+      "selection": [
+        "P1_MEAN",
+        "P1_LOWER_MEDIAN",
+        "P2_STATISTICAL_LAW",
+        "P90"
+      ],
+      "test_seasons": {
+        "2025": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "2026": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "actual_offer_weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "role": "QB",
+      "source_vintage": "CURRENT_REVISED_SEVEN_DAY_RECONSTRUCTION",
+      "quote_horizon": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "input_contract": "Same frozen support block;fivechartedcatchabilitylogits",
+      "correction": "Fixed600iteration optimizer allowance for conditional models; no outcome-trained calibration or offset. Two directpilotmodels reused.",
+      "fallback": "C1/C2 earlier depth/roleprior and frozenP1ifnonconverged; actualmodelnonconvergencefallback0. Direct Leaf trainedfullsystem; missing indicators and fitted imputation retained.",
+      "C_admission": "AWAITING_EXACT_NEW_EXPORT_INTAKE",
+      "roster_state": "LATER_LOCAL_ROSTER_CONTRIBUTION_NOT_RETROACTIVE_ADMISSION_TO_OLDER_C_ROSTER"
+    },
+    {
+      "procedure_id": "B-QB-DEPTH-CATCHABILITY-v2:C1",
+      "origin_repository": "NickNicky19/NFL-forecasting-V2",
+      "protocol": "reports/player-context-completion-decision-01/B/depth-wave-v2/FROZEN_PROTOCOL.json",
+      "code": "tools/run_qb_depth_catchability_v2.py",
+      "family": "conditional_binomial_gamma_poisson_thinning",
+      "history": "H-RECENT season-relative priorseason+earliercurrent labels; expanding2022features;8ownappearances/20prior",
+      "outputs": [
+        "mean",
+        "lower_median",
+        "exact_count_law"
+      ],
+      "selection": [
+        "P1_MEAN",
+        "P1_LOWER_MEDIAN",
+        "P2_STATISTICAL_LAW",
+        "P90"
+      ],
+      "test_seasons": {
+        "2025": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "2026": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "actual_offer_weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "role": "QB",
+      "source_vintage": "CURRENT_REVISED_SEVEN_DAY_RECONSTRUCTION",
+      "quote_horizon": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "input_contract": "Same frozen support block;noqualityvalues",
+      "correction": "Fixed600iteration optimizer allowance for conditional models; no outcome-trained calibration or offset. Two directpilotmodels reused.",
+      "fallback": "C1/C2 earlier depth/roleprior and frozenP1ifnonconverged; actualmodelnonconvergencefallback0. Direct Leaf trainedfullsystem; missing indicators and fitted imputation retained.",
+      "C_admission": "AWAITING_EXACT_NEW_EXPORT_INTAKE",
+      "roster_state": "LATER_LOCAL_ROSTER_CONTRIBUTION_NOT_RETROACTIVE_ADMISSION_TO_OLDER_C_ROSTER"
+    },
+    {
+      "procedure_id": "B-QB-DEPTH-CATCHABILITY-v2:C2",
+      "origin_repository": "NickNicky19/NFL-forecasting-V2",
+      "protocol": "reports/player-context-completion-decision-01/B/depth-wave-v2/FROZEN_PROTOCOL.json",
+      "code": "tools/run_qb_depth_catchability_v2.py",
+      "family": "conditional_binomial_gamma_poisson_thinning",
+      "history": "H-RECENT season-relative priorseason+earliercurrent labels; expanding2022features;8ownappearances/20prior",
+      "outputs": [
+        "mean",
+        "lower_median",
+        "exact_count_law"
+      ],
+      "selection": [
+        "P1_MEAN",
+        "P1_LOWER_MEDIAN",
+        "P2_STATISTICAL_LAW",
+        "P90"
+      ],
+      "test_seasons": {
+        "2025": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "2026": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "actual_offer_weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "role": "QB",
+      "source_vintage": "CURRENT_REVISED_SEVEN_DAY_RECONSTRUCTION",
+      "quote_horizon": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "input_contract": "Same frozen support block;depthcatchabilitylogit",
+      "correction": "Fixed600iteration optimizer allowance for conditional models; no outcome-trained calibration or offset. Two directpilotmodels reused.",
+      "fallback": "C1/C2 earlier depth/roleprior and frozenP1ifnonconverged; actualmodelnonconvergencefallback0. Direct Leaf trainedfullsystem; missing indicators and fitted imputation retained.",
+      "C_admission": "AWAITING_EXACT_NEW_EXPORT_INTAKE",
+      "roster_state": "LATER_LOCAL_ROSTER_CONTRIBUTION_NOT_RETROACTIVE_ADMISSION_TO_OLDER_C_ROSTER"
+    },
+    {
+      "procedure_id": "B-OWN-INFORMATION-EMPIRICAL8-v1",
+      "family": "existing_empirical_Series_control",
+      "code": "nfl_v2/empirical_benchmark.py:Series; tools/score_qb_depth_catchability.py",
+      "fit": "NONE",
+      "history": "Onlyown last8eligibleoutcomes; no pool/team/sharedprior/fallback.8is globallyfrozen earlierdesign,notplayer-optimalselection.",
+      "outputs": [
+        "mean",
+        "lower_median"
+      ],
+      "selection": [
+        "P1_MEAN",
+        "P1_LOWER_MEDIAN"
+      ],
+      "unavailability": "No ownhistory; retained in fullsystem coverage. Point=line is a separate abstention.",
+      "no_probability_law": true,
+      "actual_offer_weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "C_admission": "AWAITING_EXACT_NEW_EXPORT_INTAKE"
+    }
+  ],
+  "controls": "Unchanged originalE1/P1/E3/F2,originalLeaf/C02points,savedraw/adjusted,constant sides,earlierprevalence/neutral are retainedreferences,not newly inventedmethods.",
+  "audit_only": "v1C1/C2pilot nonconverged/unscored/held; v1directmodels equivalent/reused,not additional learnerfamilies."
+}

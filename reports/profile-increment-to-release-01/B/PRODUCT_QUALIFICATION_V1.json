@@ -1,0 +1,37 @@
+{
+  "at_utc": "2026-11-10T12:13:41.697168+00:00",
+  "scope": "Product-specific qualification clarification; no forecast, grade, policy or prior decision changed. The generic primary_release field inPRODUCT_DECISIONS_V1 applies to ACTUAL-LINE products only.",
+  "procedure_namespace": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1",
+  "products": {
+    "expected_mean": {
+      "scored_distinct_season_weeks": 26,
+      "duration_floor": "MET",
+      "scientific_status": "R2/R3_INCONCLUSIVE; current numericalmean observation separate from weaker median/selection results",
+      "operational_status": "No currentqualifiedpacket/produceracceptance/consumeradmission or servedresearchreceipt. Existing permitted provisional review remains available; four offerweeks do not block a numerical product."
+    },
+    "lower_median": {
+      "scored_distinct_season_weeks": 26,
+      "duration_floor": "MET",
+      "scientific_status": "No new preferredmedian over strongestretained F2/D2 or exactoffered R0",
+      "operational_status": "Ownercontrolled review; no automaticrelease"
+    },
+    "actual_line_direction": {
+      "scored_distinct_season_weeks": 4,
+      "duration_floor": "NOT_MET",
+      "scientific_status": "NewreplacementrecipesCLOSE_RECIPE_NO_GAIN; exacteffectsizeuncertain",
+      "operational_status": "Researchonly, no primaryswitch"
+    },
+    "actual_line_probability": {
+      "scored_distinct_season_weeks": 4,
+      "duration_floor": "NOT_MET",
+      "scientific_status": "Newrecipeslose neutral0.25 and retainedreferences",
+      "operational_status": "No confidence/EVpromotion"
+    },
+    "ranked_selection": {
+      "scored_distinct_season_weeks": 4,
+      "duration_floor": "NOT_MET",
+      "scientific_status": "CategoryrollingTopKdiagnostics only, P90zeroN/A",
+      "operational_status": "Originalwebsiteowner exactglobalreplayseparate/unexecuted; no change"
+    }
+  }
+}

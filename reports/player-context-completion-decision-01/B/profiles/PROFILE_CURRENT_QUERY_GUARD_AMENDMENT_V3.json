@@ -1,0 +1,54 @@
+{
+  "schema_version": "B-QB-PROFILE-CURRENT-QUERY-GUARD-AMENDMENT-v3",
+  "at_utc": "2026-11-10T04:58:36.362350+00:00",
+  "state": "SCOPED_LOCAL_CORRECTION_NO_FORECAST_CHANGE",
+  "before_source": {
+    "path": "reports/player-context-completion-decision-01/B/profiles/PROFILE_ADAPTER_PRE_NULL_GUARD_V1.py",
+    "sha256": "00779875a279a9edb057c65ec2dc943ccb290322a9f7826741689b6c2e4e43c2"
+  },
+  "after_source": {
+    "path": "nfl_v2/qb_context_profiles.py",
+    "sha256": "17b57cd99d55aaf29893966534e71ea9d1a66b1b25637504a2d60676ef3999cb"
+  },
+  "checks": [
+    {
+      "case": "EXPLICIT_NULL_MEMBERSHIP",
+      "synthetic_fixture": true,
+      "before": {
+        "exception": "AttributeError",
+        "message": "'NoneType' object has no attribute 'get'"
+      },
+      "after": {
+        "status": "UNAVAILABLE_PROFILE",
+        "reason": "QUERY_EVIDENCE_UNAVAILABLE",
+        "strict_JSON": "PASS"
+      }
+    },
+    {
+      "case": "NONFINITE_CUTOFF",
+      "synthetic_fixture": true,
+      "before": {
+        "exception": "ValueError",
+        "message": "Out of range float values are not JSON compliant: nan"
+      },
+      "after": {
+        "status": "UNAVAILABLE_PROFILE",
+        "reason": "INVALID_CUTOFF",
+        "strict_JSON": "PASS"
+      }
+    }
+  ],
+  "scope": "New unadmitted current-query profile adapter only. Explicit null evidence now gives an unavailable record; invalid nonfinite clocks serialize as null with reason instead of nonstandard JSON. Evidence output is limited to typed contract keys.",
+  "historical_profile_effect": "All941 are AVAILABLE_PROFILE with query_evidence=None in the historical-universe path. Neither corrected branch is traversed; frozen profile bytes/models/predictions/grades unchanged.",
+  "NFL_contamination_demonstrated": false,
+  "current_adapter_in_production": false,
+  "source_binding_amendment": {
+    "prior_parity_receipt": "PROFILE_PARITY_RECEIPT_V1.json",
+    "old_two_test_bytes": "TEST_PROFILE_ADAPTER_EXECUTED_V1.py",
+    "old_three_test_bytes": "TEST_PROFILE_ADAPTER_EXECUTED_V2.py",
+    "current_test_sha256": "f72bdce10686a484ecb9c8f65fa758ae6091253b3475424809b6ac2eb56b9732"
+  },
+  "new_fits": 0,
+  "new_scores": 0,
+  "new_NFL_observations": 0
+}

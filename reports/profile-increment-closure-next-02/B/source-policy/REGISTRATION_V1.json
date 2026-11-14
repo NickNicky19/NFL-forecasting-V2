@@ -1,0 +1,36 @@
+{
+  "id": "B-ALIGNED-FRESHNESS-SOURCE-POLICY-v1",
+  "assignment": "PROFILE-INCREMENT-CLOSURE-AND-NEXT-02",
+  "state": "REGISTERED_BEFORE_NEW_POLICY_DERIVATION_AND_SCORES",
+  "registered_at_utc": "2026-11-10T18:38:00.972745+00:00",
+  "owner": "B",
+  "fits": 0,
+  "source_acquisition": 0,
+  "policy": {
+    "control": "DECLARED_KICKOFF_PLUS_7D_RECONSTRUCTION",
+    "alternative": "DECLARED_KICKOFF_PLUS_48H_TIMING_SENSITIVITY",
+    "alternative_delay_seconds": 172800,
+    "strict_admission": "available < cutoff; not <=",
+    "rationale": "One preregistered two-calendar-day sensitivity leaves a substantial game-duration/processing allowance for ordinary completed games; it is an unverified operational hypothesis, not a measured publication delay, authenticated completion clock, or assertion corrections existed then."
+  },
+  "scope": "All existing E3 and R2 history, feature origins, training-label admission and prior membership follow the selected policy; no mixed old-defense clock. No new R3 defense model.",
+  "unknown_policy": "Explicit None/nonfinite availability is unresolved and excluded. A wholly absent clock can be reconstructed only when explicitly declared absent-column reconstruction is allowed. Repaired identities and availability-before-game-time recency remain.",
+  "source_evidence": "Reused retained PBP/QB/opportunity derivatives; current/revised snapshot retrieval/Last-Modified clocks do not establish per-game original observation time.",
+  "prior_equivalence": "Old availability A/B/C admitted a current retained Week7 snapshot but preserved historical seven-day training feature clocks; not an aligned historical E3/R2 comparison.",
+  "budget": {
+    "wall_seconds": 300,
+    "cpu_seconds": 300,
+    "max_RSS_bytes": 1073741824,
+    "public_retention_bytes": 8388608,
+    "new_raw_downloads": 0,
+    "new_fits": 0,
+    "new_NFL_accuracy_observations": 0
+  },
+  "intended_arms": {
+    "F0": "unchanged existing E3 under7day",
+    "F1": "unchanged existing R2 under7day",
+    "F2": "same E3 under fully aligned48h sensitivity",
+    "F3": "same R2 under fully aligned48h sensitivity"
+  },
+  "closure": "Source policy artifacts/fixtures only. Root owns fit protocol, fitting and grading; current-source authenticity remains unestablished."
+}

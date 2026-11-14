@@ -1,0 +1,37 @@
+{
+  "status": "PASS_FULL_SEASON_STREAMING_SOURCE_NATIVE_PROPER_SCORE_AND_REPAIR_REPLAY",
+  "season": 2023,
+  "forecast_rows": 1592629,
+  "score_views": 14770,
+  "unique_games": 272,
+  "unique_player_games": 5801,
+  "checks": {
+    "raw_source_label_and_position_joins": 3185258,
+    "retained_row_chronology_checks": 3781212,
+    "independent_score_fields": 396478,
+    "exact_precision_numerators": 103390
+  },
+  "max_float_difference": 9.094947017729282e-13,
+  "source_variant_rows": {
+    "empirical_history_control": 246129,
+    "ordered_leaf_cdf": 656344,
+    "regularized_glm_law": 328172,
+    "HGB_DIRECT_HISTORY_CONTROL": 281764,
+    "hgb-poisson-objective-count-point": 57016,
+    "hgb-rush-att-role-specialization": 23204
+  },
+  "repair": null,
+  "source_score_sha256": "53cbb1f715e4ad60c6c3e3cad713eefdbeb56bef830478d93a18de4869004575",
+  "source_prediction_sha256": "d67f3189474be8c5161334f8df0b8dedb24bfb5ef1eac8d4f455f95dc3a88c50",
+  "protocol_sha256": "c4935248f0613e3da0e02f2aa5644b9cf1c83c0bb1ea8f2821eefee89fb99c06",
+  "verification_resource": {
+    "wall_seconds": 70.19835870499992,
+    "cpu_seconds": 57.675001025,
+    "peak_rss_bytes": 533565440
+  },
+  "scope": "Everyretainedpointrow joinedrawseasonfilteredsource; everypublishednative/properaggregate andprecisionnumerator replayed. Savedlawsummaryaggregation isnotyet independentmodel/PMFreconstruction; separatecheckrequired.",
+  "evidence": "Current-vintageparticipantdiagnostic; originalv1RAcontinuitygap preserved, repairedversionpreferred; no historicalpregameclaims",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

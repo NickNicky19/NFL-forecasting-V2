@@ -1,0 +1,56 @@
+{
+  "state": "PASS_CURRENT_FIXED_2026_PANEL_PROCEDURE_RANKS_AND_TOP_FIVES",
+  "ranking_artifact": "reports/continuation-20261030d/current-ranking-v2/PROCEDURE_RANKINGS.json",
+  "ranking_sha256": "9f24f64ab8c004e42ed504da2cf8fb09287807b79bfe4d62f30db7b98f66d6a6",
+  "top5_sha256": "f7b540ccf688bb77672646b7a0af162f987a9669d836a4f44651e497205803d8",
+  "builder_sha256": "e2143d7d8052e84f39d75bd9ee7803cfa918ea2430902deb4cd5854232613f40",
+  "canonical_csv_and_ID_bytes_unchanged_from_independent_full_readback": true,
+  "candidate_output_views": 1367,
+  "procedure_product_representatives": 237,
+  "top5_rows": 170,
+  "distinct_scientific_families": [
+    "EMPIRICAL",
+    "GLM_LAW",
+    "HGB",
+    "LEAF_CDF"
+  ],
+  "source_artifact_sha256": {
+    "reports/continuation-20261029/hgb-history-v1/SCORES.json": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+    "reports/continuation-20261030/distribution-wave-v2/SCORES.json": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+    "reports/continuation-20261030/count-ablation-wave-v1/SCORES.json": "087b8cb7a8fc40b6ad48bffdb6825c5f9829a72742bf2157f50ef529b0692715",
+    "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+    "reports/continuation-20261030/chart-grid-precision-correction-v1/SCORES.json": "e5e3138d7e7d97d534eeed202db6a01d92707b0ac4743fded686e3b836eca1bd",
+    "reports/continuation-20261030/chart-wave-v1/SCORES.json": "b140ffce88fc208deffc009936337de882ab303bebc3a3815c826795e3ae3449",
+    "reports/continuation-20261030/chart-wave-v1/EMPIRICAL_SCORES.json": "558b853176c2ab2b196f5a142a3afdfa226def11d2613384a673f0d72bce9be6",
+    "reports/continuation-20261030b/ordered-information-ablation-v1/SCORES.json": "00ef54be6faf0a3a3af9d2af3aa9d0413560d475c9ee8a8832aa72aae4e867f7",
+    "reports/continuation-20261030c/qualified-defense-information-v1/SCORES.json": "2cea571fd1ed8e3dbbd4f0c2144083a4517db65126f981d2e9e7b6174aad94d9"
+  },
+  "scored_n_by_category": {
+    "rec_yd": 2118,
+    "pass_cmp": 242,
+    "rec": 2118,
+    "rush_att": 844,
+    "pass_td": 242,
+    "pass_att": 242,
+    "rush_yd": 844,
+    "pass_int": 242,
+    "anytime_td": 2118,
+    "nick-chart-ppr-v1": 2359,
+    "rush_rec_yd": 2118,
+    "pass_yd": 242
+  },
+  "top_five_boundary_ties": [],
+  "checks": {
+    "qualified_corrected_chart_full_primary_views": 11,
+    "procedure_representative_source_metric_precision_bindings": 237
+  },
+  "scope": "Explicit previously row-verified full-primary2026W1W7sources only; source-bound exact-grid corrections retain originalnew-experiment lineage. Reported/provider/smaller-horizon/cohort/partial/zero-n records excluded from this tournament. Mean/median/history alternatives collapse perproceduremechanism/product; D1,D2,C02/objectives/trainingpopulation are distinct measuredprocedures, not newfamilies or seeds. MAE/genuine-meanMSE/proper-lawCRPS/Brier remain separate. Tieswithin1e-12retaincompetitionrank; exactlyfive are selected by deterministic mechanism order at boundary, with all ties visible in fullranking. Source prediction/label math was independently verified in earlier retained-row reviews; no new NFL replay here.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0,
+  "resource": {
+    "wall_seconds": 11.70680216799883,
+    "cpu_seconds": 11.703520994,
+    "peak_rss_bytes": 79273984
+  }
+}

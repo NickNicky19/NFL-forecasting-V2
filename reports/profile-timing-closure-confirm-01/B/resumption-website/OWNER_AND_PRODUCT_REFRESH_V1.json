@@ -1,0 +1,149 @@
+{
+  "id": "B-WEBSITE-OWNER-CONSUMER-REFRESH-20261111-v1",
+  "checked_UTC": "2026-11-11T03:54:28.977705+00:00",
+  "actual_original_site_HEAD": "01a283a2bba828ce7634902017f38ef93fd8c75e",
+  "HEAD_commit_UTC": "2026-11-10T20:46:36Z",
+  "latest_owner_comment": {
+    "id": 6781537258,
+    "url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/pull/1#issuecomment-6781537258",
+    "created_UTC": "2026-11-10T22:53:53Z",
+    "updated_UTC": "2026-11-10T22:53:53Z",
+    "retained_text": "reports/profile-timing-closure-confirm-01/B/resumption-website/OWNER_RECEIPT_6781537258.source.md",
+    "retained_UTF8_bytes": 22265,
+    "retained_body_SHA256": "91dd4e8fd163821b857266b5a649c8c840608cddfe9bab9d5310271c801df9c5",
+    "source_identity": "Exact body bytes, including original single terminal LF; read through GitHub connector"
+  },
+  "static_verification": {
+    "path": "reports/profile-timing-closure-confirm-01/B/resumption-website/SERVED_STATIC_REFRESH_V1.json",
+    "SHA256": "171ec7de20e65a6cfd1e2c834b20fda579b834c4570ad7320ffdda6a2a4a0e05",
+    "state": "PASS_ALL_SIX_STATIC_BYTES",
+    "asset_count": 6,
+    "observed_UTC": "2026-11-11T03:52:16.396141+00:00",
+    "build_age_minutes": 425.78993568333334,
+    "declared_max_minutes": 120,
+    "DOM": "NOT_CHECKED_BY_B",
+    "full_board": "NOT_FETCHED_OR_RENDERED_BY_B"
+  },
+  "new_owner_work": {
+    "scope": "OWNER_REPORTED_EXECUTED_FORWARD_FORECAST_ONLY_COMPARISON",
+    "comparison_id": "NFL-WEB-C-FROZEN-FORECAST-COMPARISON-20261110-v2",
+    "declared_UTC": "2026-11-10T22:46:27.193744+00:00",
+    "receipt_created_UTC": "2026-11-10T22:50:05.448860+00:00",
+    "public_reconstruction_manifest_claimed_SHA256": "4ef1bf5a159bc5c76b26f423d09a98548bb596956881e76ce6dddaeb4e8d6a9a",
+    "markdown_code_fence_UTF8_SHA256": "c338c49a5dea8d51cfcc16697512ba33ecd07386bf585255ea96a29660717023",
+    "manifest_hash_scope": "PASS exact original digest after restoring the canonical terminal LF. Code-fence text without its terminal LF has a different digest; no scientific conflict.",
+    "website_original_rows": 1610,
+    "later1614_used_for_pairing": false,
+    "C_original_rows": 75,
+    "C_players": 25,
+    "matched_players": 10,
+    "matched_model_rows": 30,
+    "unmatched_players": 15,
+    "unmatched_reasons": {
+      "missing_retained_crosswalk": 14,
+      "crosswalk_known_but_website_native_identity_absent": 1,
+      "GSIS_without_matched_website_ESPN_identity": "00-0036628",
+      "descriptive_context_not_an_identity_match": "Website snapshot contains display-name John Bates at Sleeper7716 with espn_id=null. This does not authenticate GSIS00-0036628\u2192Sleeper7716; no name-only match was admitted."
+    },
+    "independent_assertions_owner_reported": 4041,
+    "actual_offers": 0,
+    "selections": 0,
+    "outcomes": 0,
+    "new_accuracy_observations": 0,
+    "current_primary_admission": false,
+    "production_activation": false,
+    "B_independent_4041_reproduction": "NOT_EXECUTED_THIS_REFRESH",
+    "pairs_local_SHA256": "9bf10576e0c72f47ed35ab2111fffb7c17139590ac799de5f9facae31ab94181",
+    "independent_review_local_SHA256": "2b10cc8087ebfd3c6d63d97a3495cae83fc6e1146897f2c8d1464cab2bed7387",
+    "private_or_local_pair_bytes_route": "No public row-level paired artifact path supplied in the owner receipt; hashes alone do not prove independent raw-row reproduction. Public reconstruction IDs/inputs/manifest are available.",
+    "manifest_serialization_variants_match": [
+      {
+        "sort_keys": false,
+        "ensure_ascii": true,
+        "indent": 2,
+        "newline": true,
+        "separators": null,
+        "bytes": 6486
+      }
+    ],
+    "manifest_hash_disposition": "MATCHED_DECLARED_CANONICAL_SERIALIZATION",
+    "public_reconstruction_manifest_retained": "reports/profile-timing-closure-confirm-01/B/resumption-website/OWNER_FROZEN_FORWARD_RECONSTRUCTION_MANIFEST.source.json",
+    "public_reconstruction_manifest_retained_SHA256": "4ef1bf5a159bc5c76b26f423d09a98548bb596956881e76ce6dddaeb4e8d6a9a"
+  },
+  "frozen_input_bindings": {
+    "website": {
+      "commit": "c134a44ff1d9b51d0b52926e13387742397b6ccf",
+      "receipt": "data/current-classic/2026/w10/c8ec793f3a23b8df55e40baaa97aaaf71eccd0135c22ee02912ce61e16e5c468.json.gz",
+      "native_sha256": "4504bf0b48e56813a818b52ab1d6d2076c238be9fc58fceb2910a74f62803df2",
+      "model": "sleeper-matchup-classic-presence-strict-v2",
+      "rows": 1610,
+      "generated_UTC": "2026-11-10T18:41:46Z",
+      "captured_UTC": "2026-11-10T18:41:47Z",
+      "git_persisted_UTC": "2026-11-10T18:41:52Z",
+      "information_cutoff": "NOT_AUTHENTICATED",
+      "later1614revision_used_for_this_pairing": false
+    },
+    "C": {
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "capture_commit": "dd67371ffe84672958a2412f66d13cfed99b0c55",
+      "forecast_path": "prospective/runs/C-C04-20261110-W10-FIRST-01/FORECASTS.json.xz",
+      "forecast_sha256": "4334c6e93d41487011e3bedb9a0a0173e38ccfcf5c568b30efbd0b73995be362",
+      "rows": 75,
+      "unique_players": 25,
+      "information_cutoff_UTC": "2026-11-10T19:23:09.469852+00:00",
+      "football_predictor_snapshot": "2026-11-10T18:55UTC;source-owner receipt, not new Root observation",
+      "issued_UTC": "2026-11-10T19:37:43.972513+00:00",
+      "server_persistence_verified_no_later_than": "2026-11-10T19:55:36Z",
+      "server_workflow": 42889831779,
+      "server_receipt_sha256": "5f9f10e1ad90063a74264499cb8b3a3817103367a212343496296071104b90fe",
+      "expires_UTC": "2026-11-12T03:34:29+00:00",
+      "kickoff_UTC": "2026-11-13T01:15:00+00:00",
+      "conditional_on": "Appearance; starter, health and individual transaction effective clocks unknown"
+    }
+  },
+  "status_supersession": {
+    "original1610": "Preserved frozen reference; paired to C75 without substituting later1614",
+    "latest1614": "Unchanged current website captured packet at actual HEAD, not the pairing reference",
+    "B_packet": "Owner receipt at22:53 predates genuine B10 issue23:01:29. Its earlier noBcurrentpacket wording is historical; B original packet remains separate and was not acknowledged by this receipt.",
+    "C75": "Future game Nov13 01:15UTC; no grade/reissue made",
+    "native_B_event_expiry": "Old B receipt expired Nov10 23:30UTC for new issue; frozen original forecasts remain retained"
+  },
+  "current_products": {
+    "website_research_overlay": "DISABLED_USE_R0",
+    "website_research_rows": 0,
+    "ranking": "CURRENT_BASELINE_12OVER_12UNDER;unchangedprimaryselector",
+    "website_model": "sleeper-matchup-classic-presence-strict-v2",
+    "CountA": {
+      "state": "NO_CURRENT_FEED_OR_CONSUMER_ADMISSION_IN_LATEST_OWNER_RECEIPT_OR_SERVED_OVERLAY",
+      "A_lab_state": "275aa84b27c4239d3b2dfea07755734d9db0ac7c",
+      "owner_reported_registered_producer_short_ref": "fa91988",
+      "independent_full_producer_binding": "NOT_INSPECTED_THIS_REFRESH",
+      "next_executor": "Existing A producer owner, then original-site consumer owner",
+      "next_action": "Preserve completed restoration/parity; execute source census/current-query/full corrected-mean/native capture/permitted derived-feed path, then exact source/model/type/consumer admission."
+    },
+    "changed_Top_Picks": {
+      "state": "UNFINISHED_EXACT_CHANGED_POLICY_REPLAY",
+      "executor": "Original-site owner; B independently verifies permitted outputs; C records",
+      "available_full_boards": "Four W5-W8 full boards owner-reported",
+      "missing": "Exact fifth compatible full board plus frozen candidate mapping and decision-time closure",
+      "bounded_lookup": "One W4 default-path/date lookup returned empty; not proof all alternate archives are absent",
+      "no_silent_input_substitution": true
+    }
+  },
+  "limits": [
+    "Public owner receipt and immutable source bindings read, not independent model/source re-inference.",
+    "Six actual served static byte hashes matched; no direct browser TLS/provider inspection or new DOM checks.",
+    "No new authentic offer board inferred from website reference thresholds.",
+    "One future game and 30 model rows are not 30 independent games or five-week qualification."
+  ],
+  "actions": {
+    "new_fits": 0,
+    "new_inference": 0,
+    "new_forecasts": 0,
+    "new_grades": 0,
+    "new_website_writes": 0,
+    "new_dispatches": 0,
+    "new_collector_or_scheduler": 0,
+    "new_paid_acquisition": 0
+  }
+}

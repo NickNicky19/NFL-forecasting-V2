@@ -1,0 +1,23 @@
+{
+  "id": "B-PUBLIC-CSV-CHECKER-DEVELOPMENT-NOTES-v1",
+  "scope": "Verifier implementation only; source/model/prediction/gradebytes unchanged.",
+  "attempts": [
+    {
+      "error": "ValueError converting blank aggregate wins to integer",
+      "resolution": "Recognize structuralempty side only when explicitdecideddenominator=0; rate remainsnull. No unknownplayerstatistic filled."
+    },
+    {
+      "error": "Assertion0 vsnull onaggregateemptybucket total",
+      "resolution": "Apply same structuralempty-bucket accessor during aggregateaddition."
+    },
+    {
+      "error": "TypeError subtractingnumericmetricfromconstantcontrolnull",
+      "resolution": "Only compareMAE when common_numerical>0; empty constant-side numericpanels remainN/A."
+    },
+    {
+      "error": "One apply_patch exec-servertransportclosed",
+      "resolution": "Read-onlyworkspacecheck andsameboundedpatchretry succeeded; no source/scientificmutation orenvironmentreset."
+    }
+  ],
+  "final_public_arithmetic_receipt": "A_JOIN_PUBLIC_ARITHMETIC_REVIEW_V1.json"
+}

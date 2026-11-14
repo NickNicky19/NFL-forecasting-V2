@@ -1,0 +1,42 @@
+{
+  "schema_version": "B-QB-PROFILE-BOOL-CLOCK-GUARD-v4",
+  "at_utc": "2026-11-10T05:11:05.984727+00:00",
+  "status": "PASS_SCOPED_API_GUARD_CORRECTION",
+  "independent_request": "completion_verifier; parent root owns integration",
+  "before_source": {
+    "path": "reports/player-context-completion-decision-01/B/profiles/PROFILE_ADAPTER_PRE_BOOL_CLOCK_GUARD_V2.py",
+    "sha256": "17b57cd99d55aaf29893966534e71ea9d1a66b1b25637504a2d60676ef3999cb"
+  },
+  "after_source": {
+    "path": "nfl_v2/qb_context_profiles.py",
+    "sha256": "6f25f72a4c2552db916fbf5092c06f95dc113636cfd59eefcdaf9405f0e3317e"
+  },
+  "synthetic_case": "recorded_at=True with otherwise structurally valid synthetic membership evidence; Python bool is a subclass of int",
+  "before_after": {
+    "before": {
+      "status": "AVAILABLE_PROFILE",
+      "reason": null
+    },
+    "after": {
+      "status": "UNAVAILABLE_PROFILE",
+      "reason": "QUERY_MEMBERSHIP_NOT_RETAINED_BEFORE_CUTOFF"
+    }
+  },
+  "fix": "Explicitly reject bool membership clocks before finite numeric/range checks. Preserve existing invalid-clock reason.",
+  "preserved_previous_test": {
+    "path": "reports/player-context-completion-decision-01/B/profiles/TEST_PROFILE_ADAPTER_EXECUTED_V3.py",
+    "sha256": "f72bdce10686a484ecb9c8f65fa758ae6091253b3475424809b6ac2eb56b9732"
+  },
+  "current_test": {
+    "path": "tests/test_qb_context_profiles.py",
+    "sha256": "8d6992b5853d39dedb3aef90e6d798b53b042b0c7f5a9667896e4c74ee86ed6a",
+    "cases": 3,
+    "status": "PASS"
+  },
+  "consumption_qualification": "PROFILE_CONSUMPTION_QUALIFICATION_V2.json",
+  "historical_effect": "All941 frozen historical profile chunks hash-identical; query_evidence isNone on all941 and historical universe bypasses membership guard. No saved forecast/model/grade changed.",
+  "production_impact": "No production or admitted current-profile consumer; no real NFL-row contamination demonstrated.",
+  "new_fits": 0,
+  "new_scores": 0,
+  "new_NFL_observations": 0
+}

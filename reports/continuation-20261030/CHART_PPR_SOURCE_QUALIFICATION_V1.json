@@ -1,0 +1,1058 @@
+{
+  "status": "TWELVE_MAPPED_PRIMITIVES_FOUR_EVENT_ATTRIBUTION_DEPENDENCIES_CHART_NOT_ADMITTED",
+  "checked_at_utc": "2026-10-30T00:26:05.145015+00:00",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "week8_outcomes_read": 0,
+  "fixture_contract_checks": 5,
+  "exact_chart_components": 16,
+  "directly_mapped_schema_fields": 12,
+  "missing_separate_event_components": 4,
+  "chart_qualified_player_rows": 0,
+  "weight_contract": {
+    "passing_yards": ".04",
+    "passing_TD": "4",
+    "interceptions_thrown": "-1",
+    "rushing_yards": ".1",
+    "rushing_TD": "6",
+    "receptions": "1",
+    "receiving_yards": ".1",
+    "receiving_TD": "6",
+    "fumbles_lost": "-1",
+    "passing_2pt": "2",
+    "rushing_2pt": "2",
+    "receiving_2pt": "2",
+    "offensive_fumble_recovery_TD": "6",
+    "kick_return_TD": "6",
+    "punt_return_TD": "6",
+    "field_goal_return_TD": "6"
+  },
+  "mapped_components": {
+    "passing_yards": {
+      "source_field": "passing_yards",
+      "source_algorithm": "sum yards for stat15/16",
+      "code_line": 331,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "passing_TD": {
+      "source_field": "passing_tds",
+      "source_algorithm": "count stat16",
+      "code_line": 332,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "interceptions_thrown": {
+      "source_field": "passing_interceptions",
+      "source_algorithm": "count stat19",
+      "code_line": 333,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "rushing_yards": {
+      "source_field": "rushing_yards",
+      "source_algorithm": "sum signed yards for stat10/11/12/13",
+      "code_line": 359,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "rushing_TD": {
+      "source_field": "rushing_tds",
+      "source_algorithm": "count stat11/13",
+      "code_line": 360,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "receptions": {
+      "source_field": "receptions",
+      "source_algorithm": "count stat21/22; excludes credited2pt stat104 and ordinary laterals",
+      "code_line": 373,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "receiving_yards": {
+      "source_field": "receiving_yards",
+      "source_algorithm": "sum signed yards for stat21/22/23/24",
+      "code_line": 375,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "receiving_TD": {
+      "source_field": "receiving_tds",
+      "source_algorithm": "count stat22/24",
+      "code_line": 376,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "fumbles_lost": {
+      "source_field": "fumbles_lost_total",
+      "source_algorithm": "count stat106 once; do not add overlapping sack/rush/receiving fumble-loss aggregates",
+      "code_line": 477,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "passing_2pt": {
+      "source_field": "passing_2pt_conversions",
+      "source_algorithm": "count credited passing conversion stat77",
+      "code_line": 344,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "rushing_2pt": {
+      "source_field": "rushing_2pt_conversions",
+      "source_algorithm": "count credited rushing conversion stat75",
+      "code_line": 366,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "receiving_2pt": {
+      "source_field": "receiving_2pt_conversions",
+      "source_algorithm": "count credited receiving conversion stat104",
+      "code_line": 393,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    }
+  },
+  "remaining_components": {
+    "offensive_fumble_recovery_TD": {
+      "candidate": "fumble_recovery_tds",
+      "reason": "aggregate56/58/60/62 includes own/opponent/lateral recoveries; needs play unit/possession and official scoring credit; not offense-only"
+    },
+    "kick_return_TD": {
+      "candidate": "special_teams_tds",
+      "reason": "combined return/misc/own-kickoff-recovery scoring; split official kickoff return credits46/48 including laterals"
+    },
+    "punt_return_TD": {
+      "candidate": "special_teams_tds",
+      "reason": "combined return/misc scoring; split official punt return credits34/36 including laterals"
+    },
+    "field_goal_return_TD": {
+      "candidate": "special_teams_tds",
+      "reason": "misc stat64 alone does not distinguish blocked punt/field-goal return; stat108 is own kickoff recoveryTD, not FG return"
+    }
+  },
+  "source_manifest": [
+    {
+      "source_name": "stats_player_week_2022.csv",
+      "sha256": "ad426c3fe5bf1cc30c3f137fdfe96d054e19d400879ee4413129da49fa7b54be",
+      "bytes": 8408729,
+      "panel_rows": 17981,
+      "panel_games": 271,
+      "position_rows": {
+        "QB": 633,
+        "P": 537,
+        "K": 545,
+        "DE": 1541,
+        "FS": 331,
+        "G": 278,
+        "WR": 2387,
+        "DT": 1425,
+        "OT": 438,
+        "S": 255,
+        "OLB": 407,
+        "CB": 1844,
+        "LB": 2145,
+        "RB": 1581,
+        "C": 144,
+        "ILB": 206,
+        "MLB": 207,
+        "DB": 628,
+        "NT": 123,
+        "FB": 110,
+        "TE": 1207,
+        "DL": 28,
+        "SAF": 876,
+        "LS": 87,
+        "": 18
+      },
+      "rare_aggregate_patterns": {
+        "both_aggregate_explicit_zero": 17942,
+        "positive_or_unknown_rare_aggregate": 39
+      }
+    },
+    {
+      "source_name": "stats_player_week_2023.csv",
+      "sha256": "f19cb71a5de0dce7fd09376026237c9ee9d5a93fe13815a2ea3ec2d37204cb17",
+      "bytes": 8332874,
+      "panel_rows": 17806,
+      "panel_games": 272,
+      "position_rows": {
+        "QB": 663,
+        "K": 543,
+        "DE": 1545,
+        "P": 539,
+        "DT": 1469,
+        "S": 169,
+        "CB": 1862,
+        "LB": 2272,
+        "WR": 2476,
+        "OLB": 278,
+        "FS": 270,
+        "RB": 1474,
+        "MLB": 153,
+        "G": 320,
+        "LS": 77,
+        "NT": 111,
+        "TE": 1188,
+        "FB": 96,
+        "ILB": 131,
+        "OT": 406,
+        "DL": 16,
+        "DB": 521,
+        "SAF": 1060,
+        "C": 145,
+        "": 18,
+        "OL": 4
+      },
+      "rare_aggregate_patterns": {
+        "both_aggregate_explicit_zero": 17773,
+        "positive_or_unknown_rare_aggregate": 33
+      }
+    },
+    {
+      "source_name": "stats_player_week_2024.csv",
+      "sha256": "3ddc45a84f759aa348ce465ae001752c530575455717657cdfe1f8abfcdb4759",
+      "bytes": 8470040,
+      "panel_rows": 18130,
+      "panel_games": 272,
+      "position_rows": {
+        "QB": 664,
+        "K": 543,
+        "DE": 1492,
+        "P": 534,
+        "OLB": 239,
+        "LB": 2478,
+        "LS": 64,
+        "MLB": 149,
+        "CB": 2009,
+        "FS": 256,
+        "G": 295,
+        "FB": 71,
+        "WR": 2441,
+        "TE": 1223,
+        "DT": 1551,
+        "OT": 515,
+        "RB": 1536,
+        "ILB": 89,
+        "SAF": 1216,
+        "NT": 63,
+        "S": 103,
+        "C": 156,
+        "DB": 387,
+        "": 18,
+        "DL": 28,
+        "OL": 10
+      },
+      "rare_aggregate_patterns": {
+        "both_aggregate_explicit_zero": 18091,
+        "positive_or_unknown_rare_aggregate": 39
+      }
+    },
+    {
+      "source_name": "stats_player_week_2025.csv",
+      "sha256": "e5e0615b3d96a3eaebfaee91e55afb4a4e7fe0caf057454177bcd7d6ad4bcfc2",
+      "bytes": 8656387,
+      "panel_rows": 18540,
+      "panel_games": 272,
+      "position_rows": {
+        "QB": 664,
+        "K": 543,
+        "DE": 1408,
+        "P": 531,
+        "OT": 474,
+        "OLB": 212,
+        "LB": 2939,
+        "MLB": 77,
+        "G": 255,
+        "LS": 69,
+        "FB": 71,
+        "WR": 2511,
+        "TE": 1287,
+        "CB": 1987,
+        "DT": 1526,
+        "NT": 79,
+        "S": 66,
+        "SAF": 1455,
+        "DB": 409,
+        "RB": 1575,
+        "FS": 141,
+        "ILB": 53,
+        "C": 123,
+        "DL": 52,
+        "": 18,
+        "OL": 15
+      },
+      "rare_aggregate_patterns": {
+        "both_aggregate_explicit_zero": 18495,
+        "positive_or_unknown_rare_aggregate": 45
+      }
+    },
+    {
+      "source_name": "stats_player_week_2026.csv",
+      "sha256": "8301e4e3ab62af3f65d201251676dd79f912dce7a87a402835fe5ea4fb5d0379",
+      "bytes": 3315425,
+      "panel_rows": 7447,
+      "panel_games": 107,
+      "position_rows": {
+        "QB": 242,
+        "K": 214,
+        "DE": 534,
+        "FS": 40,
+        "OLB": 45,
+        "P": 212,
+        "LS": 26,
+        "WR": 1003,
+        "S": 25,
+        "TE": 544,
+        "OT": 194,
+        "MLB": 25,
+        "LB": 1211,
+        "DT": 667,
+        "RB": 605,
+        "C": 85,
+        "CB": 788,
+        "NT": 17,
+        "G": 132,
+        "SAF": 639,
+        "DB": 122,
+        "ILB": 19,
+        "FB": 30,
+        "DL": 21,
+        "": 7
+      },
+      "rare_aggregate_patterns": {
+        "both_aggregate_explicit_zero": 7439,
+        "positive_or_unknown_rare_aggregate": 8
+      }
+    }
+  ],
+  "inspected_code_manifest": [
+    {
+      "repository": "nflverse/nflverse-pbp",
+      "path": "R/update_stats.R",
+      "git_blob_sha": "909ad1abbbecf5d80779b8fbeed6adba95fe3b74",
+      "sha256": "7f1e017de3c2c99bd140fa2d4d56788efe5b3ecce075c3cfdb7a4365a060ea45",
+      "bytes": 4883,
+      "public_blob_url": "https://api.github.com/repos/nflverse/nflverse-pbp/git/blobs/909ad1abbbecf5d80779b8fbeed6adba95fe3b74"
+    },
+    {
+      "repository": "nflverse/nflfastR",
+      "path": "R/calculate_stats.R",
+      "git_blob_sha": "f367d0a4ba7d3a472351865467eba3a9c53a14f6",
+      "sha256": "0ccd41c78355ee89c08929c79e81dac75b4d3f7b22d691cddd4f7f875acfac28",
+      "bytes": 29754,
+      "public_blob_url": "https://api.github.com/repos/nflverse/nflfastR/git/blobs/f367d0a4ba7d3a472351865467eba3a9c53a14f6"
+    },
+    {
+      "repository": "nflverse/nflfastR",
+      "path": "R/helper_tidy_play_stats.R",
+      "git_blob_sha": "0c21d4d43fb653f8d39a2bc23fc52369a4a4bc84",
+      "sha256": "45e070dcd061fbcfe1e381ccd742d27c4ed57687c053dee2d9527d5acd29e9d0",
+      "bytes": 53238,
+      "public_blob_url": "https://api.github.com/repos/nflverse/nflfastR/git/blobs/0c21d4d43fb653f8d39a2bc23fc52369a4a4bc84"
+    },
+    {
+      "repository": "nflverse/nflfastR",
+      "path": "R/build_playstats.R",
+      "git_blob_sha": "80e495d237da350a1672ea68d7a6d4a72bd8f0f2",
+      "sha256": "a98674f5c54e29c3400812c8f97e1c760777d2312274ab0bae0bc7cd9cd6bf9d",
+      "bytes": 3306,
+      "public_blob_url": "https://api.github.com/repos/nflverse/nflfastR/git/blobs/80e495d237da350a1672ea68d7a6d4a72bd8f0f2"
+    },
+    {
+      "repository": "nflverse/nflreadr",
+      "path": "data-raw/dictionary_player_stats.json",
+      "git_blob_sha": "83e007490967c0fa2f7fb94bf1e19e9a8b2fdd71",
+      "sha256": "d7bcc3b7c01fb9ab76dd6229920247bc177a22bb54fbec61d941303b7b1a8c28",
+      "bytes": 16565,
+      "public_blob_url": "https://api.github.com/repos/nflverse/nflreadr/git/blobs/83e007490967c0fa2f7fb94bf1e19e9a8b2fdd71"
+    },
+    {
+      "repository": "nflverse/nflreadr",
+      "path": "data-raw/dictionary_pbp.csv",
+      "git_blob_sha": "2ef5a47b3c5e30079b4cd52f3659a2d5c91e106c",
+      "sha256": "137f3c1ae4794e2a1a4bc55ac543d807d36c6c3c24c8088e0489dd7a5c156f33",
+      "bytes": 39127,
+      "public_blob_url": "https://api.github.com/repos/nflverse/nflreadr/git/blobs/2ef5a47b3c5e30079b4cd52f3659a2d5c91e106c"
+    }
+  ],
+  "source_field_counts": [
+    {
+      "season": 2022,
+      "weeks": "all_REG",
+      "component": "passing_yards",
+      "source_field": "passing_yards",
+      "weight": ".04",
+      "source_rows": 17981,
+      "source_games": 271,
+      "explicit_nonzero": 631,
+      "explicit_zero": 17350,
+      "signed_negative": 2
+    },
+    {
+      "season": 2022,
+      "weeks": "all_REG",
+      "component": "passing_TD",
+      "source_field": "passing_tds",
+      "weight": "4",
+      "source_rows": 17981,
+      "source_games": 271,
+      "explicit_nonzero": 434,
+      "explicit_zero": 17547
+    },
+    {
+      "season": 2022,
+      "weeks": "all_REG",
+      "component": "interceptions_thrown",
+      "source_field": "passing_interceptions",
+      "weight": "-1",
+      "source_rows": 17981,
+      "source_games": 271,
+      "explicit_nonzero": 295,
+      "explicit_zero": 17686
+    },
+    {
+      "season": 2022,
+      "weeks": "all_REG",
+      "component": "rushing_yards",
+      "source_field": "rushing_yards",
+      "weight": ".1",
+      "source_rows": 17981,
+      "source_games": 271,
+      "explicit_nonzero": 2214,
+      "signed_negative": 155,
+      "explicit_zero": 15767
+    },
+    {
+      "season": 2022,
+      "weeks": "all_REG",
+      "component": "rushing_TD",
+      "source_field": "rushing_tds",
+      "weight": "6",
+      "source_rows": 17981,
+      "source_games": 271,
+      "explicit_zero": 17564,
+      "explicit_nonzero": 417
+    },
+    {
+      "season": 2022,
+      "weeks": "all_REG",
+      "component": "receptions",
+      "source_field": "receptions",
+      "weight": "1",
+      "source_rows": 17981,
+      "source_games": 271,
+      "explicit_zero": 14122,
+      "explicit_nonzero": 3859
+    },
+    {
+      "season": 2022,
+      "weeks": "all_REG",
+      "component": "receiving_yards",
+      "source_field": "receiving_yards",
+      "weight": ".1",
+      "source_rows": 17981,
+      "source_games": 271,
+      "explicit_zero": 14152,
+      "explicit_nonzero": 3829,
+      "signed_negative": 60
+    },
+    {
+      "season": 2022,
+      "weeks": "all_REG",
+      "component": "receiving_TD",
+      "source_field": "receiving_tds",
+      "weight": "6",
+      "source_rows": 17981,
+      "source_games": 271,
+      "explicit_zero": 17327,
+      "explicit_nonzero": 654
+    },
+    {
+      "season": 2022,
+      "weeks": "all_REG",
+      "component": "fumbles_lost",
+      "source_field": "fumbles_lost_total",
+      "weight": "-1",
+      "source_rows": 17981,
+      "source_games": 271,
+      "explicit_zero": 17702,
+      "explicit_nonzero": 279
+    },
+    {
+      "season": 2022,
+      "weeks": "all_REG",
+      "component": "passing_2pt",
+      "source_field": "passing_2pt_conversions",
+      "weight": "2",
+      "source_rows": 17981,
+      "source_games": 271,
+      "explicit_zero": 17942,
+      "explicit_nonzero": 39
+    },
+    {
+      "season": 2022,
+      "weeks": "all_REG",
+      "component": "rushing_2pt",
+      "source_field": "rushing_2pt_conversions",
+      "weight": "2",
+      "source_rows": 17981,
+      "source_games": 271,
+      "explicit_zero": 17964,
+      "explicit_nonzero": 17
+    },
+    {
+      "season": 2022,
+      "weeks": "all_REG",
+      "component": "receiving_2pt",
+      "source_field": "receiving_2pt_conversions",
+      "weight": "2",
+      "source_rows": 17981,
+      "source_games": 271,
+      "explicit_zero": 17942,
+      "explicit_nonzero": 39
+    },
+    {
+      "season": 2023,
+      "weeks": "all_REG",
+      "component": "passing_yards",
+      "source_field": "passing_yards",
+      "weight": ".04",
+      "source_rows": 17806,
+      "source_games": 272,
+      "explicit_zero": 17160,
+      "explicit_nonzero": 646,
+      "signed_negative": 4
+    },
+    {
+      "season": 2023,
+      "weeks": "all_REG",
+      "component": "passing_TD",
+      "source_field": "passing_tds",
+      "weight": "4",
+      "source_rows": 17806,
+      "source_games": 272,
+      "explicit_zero": 17368,
+      "explicit_nonzero": 438
+    },
+    {
+      "season": 2023,
+      "weeks": "all_REG",
+      "component": "interceptions_thrown",
+      "source_field": "passing_interceptions",
+      "weight": "-1",
+      "source_rows": 17806,
+      "source_games": 272,
+      "explicit_zero": 17501,
+      "explicit_nonzero": 305
+    },
+    {
+      "season": 2023,
+      "weeks": "all_REG",
+      "component": "rushing_yards",
+      "source_field": "rushing_yards",
+      "weight": ".1",
+      "source_rows": 17806,
+      "source_games": 272,
+      "explicit_zero": 15602,
+      "explicit_nonzero": 2204,
+      "signed_negative": 170
+    },
+    {
+      "season": 2023,
+      "weeks": "all_REG",
+      "component": "rushing_TD",
+      "source_field": "rushing_tds",
+      "weight": "6",
+      "source_rows": 17806,
+      "source_games": 272,
+      "explicit_zero": 17407,
+      "explicit_nonzero": 399
+    },
+    {
+      "season": 2023,
+      "weeks": "all_REG",
+      "component": "receptions",
+      "source_field": "receptions",
+      "weight": "1",
+      "source_rows": 17806,
+      "source_games": 272,
+      "explicit_zero": 13864,
+      "explicit_nonzero": 3942
+    },
+    {
+      "season": 2023,
+      "weeks": "all_REG",
+      "component": "receiving_yards",
+      "source_field": "receiving_yards",
+      "weight": ".1",
+      "source_rows": 17806,
+      "source_games": 272,
+      "explicit_zero": 13896,
+      "explicit_nonzero": 3910,
+      "signed_negative": 75
+    },
+    {
+      "season": 2023,
+      "weeks": "all_REG",
+      "component": "receiving_TD",
+      "source_field": "receiving_tds",
+      "weight": "6",
+      "source_rows": 17806,
+      "source_games": 272,
+      "explicit_zero": 17129,
+      "explicit_nonzero": 677
+    },
+    {
+      "season": 2023,
+      "weeks": "all_REG",
+      "component": "fumbles_lost",
+      "source_field": "fumbles_lost_total",
+      "weight": "-1",
+      "source_rows": 17806,
+      "source_games": 272,
+      "explicit_zero": 17523,
+      "explicit_nonzero": 283
+    },
+    {
+      "season": 2023,
+      "weeks": "all_REG",
+      "component": "passing_2pt",
+      "source_field": "passing_2pt_conversions",
+      "weight": "2",
+      "source_rows": 17806,
+      "source_games": 272,
+      "explicit_zero": 17767,
+      "explicit_nonzero": 39
+    },
+    {
+      "season": 2023,
+      "weeks": "all_REG",
+      "component": "rushing_2pt",
+      "source_field": "rushing_2pt_conversions",
+      "weight": "2",
+      "source_rows": 17806,
+      "source_games": 272,
+      "explicit_zero": 17778,
+      "explicit_nonzero": 28
+    },
+    {
+      "season": 2023,
+      "weeks": "all_REG",
+      "component": "receiving_2pt",
+      "source_field": "receiving_2pt_conversions",
+      "weight": "2",
+      "source_rows": 17806,
+      "source_games": 272,
+      "explicit_zero": 17765,
+      "explicit_nonzero": 41
+    },
+    {
+      "season": 2024,
+      "weeks": "all_REG",
+      "component": "passing_yards",
+      "source_field": "passing_yards",
+      "weight": ".04",
+      "source_rows": 18130,
+      "source_games": 272,
+      "explicit_nonzero": 638,
+      "explicit_zero": 17492,
+      "signed_negative": 3
+    },
+    {
+      "season": 2024,
+      "weeks": "all_REG",
+      "component": "passing_TD",
+      "source_field": "passing_tds",
+      "weight": "4",
+      "source_rows": 18130,
+      "source_games": 272,
+      "explicit_nonzero": 437,
+      "explicit_zero": 17693
+    },
+    {
+      "season": 2024,
+      "weeks": "all_REG",
+      "component": "interceptions_thrown",
+      "source_field": "passing_interceptions",
+      "weight": "-1",
+      "source_rows": 18130,
+      "source_games": 272,
+      "explicit_nonzero": 271,
+      "explicit_zero": 17859
+    },
+    {
+      "season": 2024,
+      "weeks": "all_REG",
+      "component": "rushing_yards",
+      "source_field": "rushing_yards",
+      "weight": ".1",
+      "source_rows": 18130,
+      "source_games": 272,
+      "explicit_nonzero": 2197,
+      "signed_negative": 152,
+      "explicit_zero": 15933
+    },
+    {
+      "season": 2024,
+      "weeks": "all_REG",
+      "component": "rushing_TD",
+      "source_field": "rushing_tds",
+      "weight": "6",
+      "source_rows": 18130,
+      "source_games": 272,
+      "explicit_zero": 17704,
+      "explicit_nonzero": 426
+    },
+    {
+      "season": 2024,
+      "weeks": "all_REG",
+      "component": "receptions",
+      "source_field": "receptions",
+      "weight": "1",
+      "source_rows": 18130,
+      "source_games": 272,
+      "explicit_zero": 14294,
+      "explicit_nonzero": 3836
+    },
+    {
+      "season": 2024,
+      "weeks": "all_REG",
+      "component": "receiving_yards",
+      "source_field": "receiving_yards",
+      "weight": ".1",
+      "source_rows": 18130,
+      "source_games": 272,
+      "explicit_zero": 14326,
+      "explicit_nonzero": 3804,
+      "signed_negative": 57
+    },
+    {
+      "season": 2024,
+      "weeks": "all_REG",
+      "component": "receiving_TD",
+      "source_field": "receiving_tds",
+      "weight": "6",
+      "source_rows": 18130,
+      "source_games": 272,
+      "explicit_zero": 17411,
+      "explicit_nonzero": 719
+    },
+    {
+      "season": 2024,
+      "weeks": "all_REG",
+      "component": "fumbles_lost",
+      "source_field": "fumbles_lost_total",
+      "weight": "-1",
+      "source_rows": 18130,
+      "source_games": 272,
+      "explicit_zero": 17865,
+      "explicit_nonzero": 265
+    },
+    {
+      "season": 2024,
+      "weeks": "all_REG",
+      "component": "passing_2pt",
+      "source_field": "passing_2pt_conversions",
+      "weight": "2",
+      "source_rows": 18130,
+      "source_games": 272,
+      "explicit_zero": 18094,
+      "explicit_nonzero": 36
+    },
+    {
+      "season": 2024,
+      "weeks": "all_REG",
+      "component": "rushing_2pt",
+      "source_field": "rushing_2pt_conversions",
+      "weight": "2",
+      "source_rows": 18130,
+      "source_games": 272,
+      "explicit_zero": 18112,
+      "explicit_nonzero": 18
+    },
+    {
+      "season": 2024,
+      "weeks": "all_REG",
+      "component": "receiving_2pt",
+      "source_field": "receiving_2pt_conversions",
+      "weight": "2",
+      "source_rows": 18130,
+      "source_games": 272,
+      "explicit_zero": 18093,
+      "explicit_nonzero": 37
+    },
+    {
+      "season": 2025,
+      "weeks": "all_REG",
+      "component": "passing_yards",
+      "source_field": "passing_yards",
+      "weight": ".04",
+      "source_rows": 18540,
+      "source_games": 272,
+      "explicit_nonzero": 622,
+      "explicit_zero": 17918,
+      "signed_negative": 1
+    },
+    {
+      "season": 2025,
+      "weeks": "all_REG",
+      "component": "passing_TD",
+      "source_field": "passing_tds",
+      "weight": "4",
+      "source_rows": 18540,
+      "source_games": 272,
+      "explicit_nonzero": 437,
+      "explicit_zero": 18103
+    },
+    {
+      "season": 2025,
+      "weeks": "all_REG",
+      "component": "interceptions_thrown",
+      "source_field": "passing_interceptions",
+      "weight": "-1",
+      "source_rows": 18540,
+      "source_games": 272,
+      "explicit_zero": 18259,
+      "explicit_nonzero": 281
+    },
+    {
+      "season": 2025,
+      "weeks": "all_REG",
+      "component": "rushing_yards",
+      "source_field": "rushing_yards",
+      "weight": ".1",
+      "source_rows": 18540,
+      "source_games": 272,
+      "explicit_nonzero": 2188,
+      "signed_negative": 151,
+      "explicit_zero": 16352
+    },
+    {
+      "season": 2025,
+      "weeks": "all_REG",
+      "component": "rushing_TD",
+      "source_field": "rushing_tds",
+      "weight": "6",
+      "source_rows": 18540,
+      "source_games": 272,
+      "explicit_zero": 18126,
+      "explicit_nonzero": 414
+    },
+    {
+      "season": 2025,
+      "weeks": "all_REG",
+      "component": "receptions",
+      "source_field": "receptions",
+      "weight": "1",
+      "source_rows": 18540,
+      "source_games": 272,
+      "explicit_zero": 14668,
+      "explicit_nonzero": 3872
+    },
+    {
+      "season": 2025,
+      "weeks": "all_REG",
+      "component": "receiving_yards",
+      "source_field": "receiving_yards",
+      "weight": ".1",
+      "source_rows": 18540,
+      "source_games": 272,
+      "explicit_zero": 14710,
+      "explicit_nonzero": 3830,
+      "signed_negative": 71
+    },
+    {
+      "season": 2025,
+      "weeks": "all_REG",
+      "component": "receiving_TD",
+      "source_field": "receiving_tds",
+      "weight": "6",
+      "source_rows": 18540,
+      "source_games": 272,
+      "explicit_zero": 17819,
+      "explicit_nonzero": 721
+    },
+    {
+      "season": 2025,
+      "weeks": "all_REG",
+      "component": "fumbles_lost",
+      "source_field": "fumbles_lost_total",
+      "weight": "-1",
+      "source_rows": 18540,
+      "source_games": 272,
+      "explicit_zero": 18302,
+      "explicit_nonzero": 238
+    },
+    {
+      "season": 2025,
+      "weeks": "all_REG",
+      "component": "passing_2pt",
+      "source_field": "passing_2pt_conversions",
+      "weight": "2",
+      "source_rows": 18540,
+      "source_games": 272,
+      "explicit_zero": 18501,
+      "explicit_nonzero": 39
+    },
+    {
+      "season": 2025,
+      "weeks": "all_REG",
+      "component": "rushing_2pt",
+      "source_field": "rushing_2pt_conversions",
+      "weight": "2",
+      "source_rows": 18540,
+      "source_games": 272,
+      "explicit_zero": 18523,
+      "explicit_nonzero": 17
+    },
+    {
+      "season": 2025,
+      "weeks": "all_REG",
+      "component": "receiving_2pt",
+      "source_field": "receiving_2pt_conversions",
+      "weight": "2",
+      "source_rows": 18540,
+      "source_games": 272,
+      "explicit_zero": 18498,
+      "explicit_nonzero": 42
+    },
+    {
+      "season": 2026,
+      "weeks": "1-7",
+      "component": "passing_yards",
+      "source_field": "passing_yards",
+      "weight": ".04",
+      "source_rows": 7447,
+      "source_games": 107,
+      "explicit_nonzero": 233,
+      "explicit_zero": 7214
+    },
+    {
+      "season": 2026,
+      "weeks": "1-7",
+      "component": "passing_TD",
+      "source_field": "passing_tds",
+      "weight": "4",
+      "source_rows": 7447,
+      "source_games": 107,
+      "explicit_nonzero": 177,
+      "explicit_zero": 7270
+    },
+    {
+      "season": 2026,
+      "weeks": "1-7",
+      "component": "interceptions_thrown",
+      "source_field": "passing_interceptions",
+      "weight": "-1",
+      "source_rows": 7447,
+      "source_games": 107,
+      "explicit_zero": 7333,
+      "explicit_nonzero": 114
+    },
+    {
+      "season": 2026,
+      "weeks": "1-7",
+      "component": "rushing_yards",
+      "source_field": "rushing_yards",
+      "weight": ".1",
+      "source_rows": 7447,
+      "source_games": 107,
+      "explicit_nonzero": 831,
+      "signed_negative": 46,
+      "explicit_zero": 6616
+    },
+    {
+      "season": 2026,
+      "weeks": "1-7",
+      "component": "rushing_TD",
+      "source_field": "rushing_tds",
+      "weight": "6",
+      "source_rows": 7447,
+      "source_games": 107,
+      "explicit_zero": 7282,
+      "explicit_nonzero": 165
+    },
+    {
+      "season": 2026,
+      "weeks": "1-7",
+      "component": "receptions",
+      "source_field": "receptions",
+      "weight": "1",
+      "source_rows": 7447,
+      "source_games": 107,
+      "explicit_zero": 5915,
+      "explicit_nonzero": 1532
+    },
+    {
+      "season": 2026,
+      "weeks": "1-7",
+      "component": "receiving_yards",
+      "source_field": "receiving_yards",
+      "weight": ".1",
+      "source_rows": 7447,
+      "source_games": 107,
+      "explicit_zero": 5925,
+      "explicit_nonzero": 1522,
+      "signed_negative": 34
+    },
+    {
+      "season": 2026,
+      "weeks": "1-7",
+      "component": "receiving_TD",
+      "source_field": "receiving_tds",
+      "weight": "6",
+      "source_rows": 7447,
+      "source_games": 107,
+      "explicit_zero": 7165,
+      "explicit_nonzero": 282
+    },
+    {
+      "season": 2026,
+      "weeks": "1-7",
+      "component": "fumbles_lost",
+      "source_field": "fumbles_lost_total",
+      "weight": "-1",
+      "source_rows": 7447,
+      "source_games": 107,
+      "explicit_zero": 7337,
+      "explicit_nonzero": 110
+    },
+    {
+      "season": 2026,
+      "weeks": "1-7",
+      "component": "passing_2pt",
+      "source_field": "passing_2pt_conversions",
+      "weight": "2",
+      "source_rows": 7447,
+      "source_games": 107,
+      "explicit_zero": 7428,
+      "explicit_nonzero": 19
+    },
+    {
+      "season": 2026,
+      "weeks": "1-7",
+      "component": "rushing_2pt",
+      "source_field": "rushing_2pt_conversions",
+      "weight": "2",
+      "source_rows": 7447,
+      "source_games": 107,
+      "explicit_zero": 7441,
+      "explicit_nonzero": 6
+    },
+    {
+      "season": 2026,
+      "weeks": "1-7",
+      "component": "receiving_2pt",
+      "source_field": "receiving_2pt_conversions",
+      "weight": "2",
+      "source_rows": 7447,
+      "source_games": 107,
+      "explicit_zero": 7426,
+      "explicit_nonzero": 21
+    }
+  ],
+  "zero_contract": "For a verified complete playstats+PBP game, explicit mapped0 is a counted absence of relevant stat IDs. A blank, absent player row or missing game is not0. CSV alone does not prove event completeness or the exact producer version.",
+  "conditional_zero_path": "Zero nonnegative fumble_recovery_tds and special_teams_tds aggregates may bound their relevant subsets to0 only after validating complete aligned event coverage, source-version equivalence and return-contract containment. This audit does not admit these inferred zeros.",
+  "generic_fantasy_total": "REJECTED: generatoruses-2INT,-2partialfumbleaggregates andbroadspecialteams; no exactchartparity",
+  "missing_evidence": [
+    "Approved immutable2022-2026W7 play_stats event snapshots with stat_id/game/play/player/team and completeplaycensus",
+    "Aligned PBP officialscorecredit/playtype/possession/specialunit/fumble/lateral/penalty-nullification fields",
+    "Rare-event hand comparisons and reconciled complete-event zero cases; exact producer version or independent regeneration",
+    "Qualified appearance/exantepopulation and identities for chart evaluation separately from event completeness"
+  ],
+  "safe_acquisition": "Historical2022-2025 publicplaystats/PBP may be acquired under sourcepolicy. For2026recover an archived preWeek8 snapshot or approved strictlyW1-W7 export; do not fetch mutable currentseason payload that can contain W8 outcomes.",
+  "public_method_sources": [
+    "https://github.com/nflverse/nflverse-pbp/releases/download/playstats/play_stats_{season}.rds",
+    "https://github.com/nflverse/nflverse-data/releases/tag/pbp"
+  ],
+  "caution": "Current code and documentation qualify definitions, not original feed vintages or NFL prediction skill. No raw player rows/locators are published."
+}

@@ -1,0 +1,115 @@
+{
+  "id": "B-W4-EXISTING-ARCHIVE-QUALIFICATION-v1",
+  "observed_UTC": "2026-11-12T01:35:56.477151+00:00",
+  "repository": "NickNicky19/nicks-expert-nfl-picks",
+  "ref": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+  "path": "output/data/archive/2026_w04.json",
+  "sha256": "05029ddae8aa7da3ce05a640c6fd96ee6eab7fd008ceed08487818ac70e67802",
+  "bytes": 359711,
+  "archive_saved_at": "2026-10-06T03:34:03Z",
+  "season": 2026,
+  "week": 4,
+  "games": 16,
+  "players": 539,
+  "unique_player_games": 539,
+  "prop_rows": 2435,
+  "category_counts": {
+    "rush_yd": 151,
+    "rush_att": 111,
+    "rec": 404,
+    "rec_yd": 404,
+    "rush_rec_yd": 286,
+    "anytime_td": 435,
+    "fpts": 444,
+    "pass_yd": 40,
+    "pass_td": 40,
+    "pass_cmp": 40,
+    "pass_att": 40,
+    "pass_int": 40
+  },
+  "line_provenance_counts": {
+    "dk": 755,
+    "None": 435,
+    "ours": 1245
+  },
+  "player_field_presence": {
+    "id": 539,
+    "name": 539,
+    "pos": 539,
+    "team": 539,
+    "opp": 539,
+    "game_id": 539,
+    "proj_ppr": 539,
+    "matchup": 539,
+    "late": 539,
+    "props": 539
+  },
+  "prop_field_presence": {
+    "key": 2435,
+    "line": 2435,
+    "proj": 2435,
+    "adj": 2435,
+    "lean": 2435,
+    "source": 2435,
+    "line_from": 2435,
+    "mf": 2435
+  },
+  "game_field_presence": {
+    "id": 16,
+    "home": 16,
+    "away": 16,
+    "kickoff": 16,
+    "odds": 16,
+    "ours": 16,
+    "ours_late": 16
+  },
+  "source_late_flags": {
+    "False": 65,
+    "True": 474
+  },
+  "kickoff_minmax": [
+    "2026-10-02T00:15Z",
+    "2026-10-06T00:15Z"
+  ],
+  "required_selector_player_fields_present": {
+    "games_this_season": 0,
+    "snap_share": 0,
+    "injury": 0,
+    "reference_model": 0
+  },
+  "original_row_clock_model_fields_present": {
+    "source_cutoff_utc": 0,
+    "issued_at": 0,
+    "persistence_completed_at": 0,
+    "valid_until_utc": 0,
+    "model_version": 0,
+    "procedure_version": 0
+  },
+  "disposition": "RETAINED_W4_CANDIDATE_BOARD_EXISTS;NOT_YET_QUALIFIED_AS_FIFTH_EXACT_SELECTOR_BOARD",
+  "source_limits": [
+    "Archive saved_at is not per-row original issue or observed quote clock. No backdating or assumption every recordunusable solelyfrom laterfiletime.",
+    "Source lateflagalone doesnotauthenticatethefull decision-schedule/inputclosure.",
+    "Currentselector needs support/eligibility/model/sourcecutoff fields not suppliedbythis reducedarchive; reconstructionrequires qualifiedearlier sources and itsactualrule.",
+    "Rows and outcomes were not regraded; no selector replay executed; rawplayer/offerrowsnotpublished."
+  ],
+  "owner": "Retained original websiteowner; B readonly independent source check",
+  "next_action": "Ownerqualifies exactW4candidate origin/source/model/decision schedule and missing supportfields or identifiesearlier fullboard/inputreceipt. Then runsexact frozen mapping withfour othercompatibleboards; B independentlyverifies. WithdrawgenericW4absence.",
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_selector_replay": 0,
+  "new_NFL_observations": 0,
+  "required_selector_prop_fields_present": {
+    "n": 0,
+    "over": 0,
+    "line": 2435,
+    "line_from": 2435,
+    "adj": 2435
+  },
+  "other_existing_candidate": {
+    "path": "output/data/weeks/2026_w04.json",
+    "bytes": 106929,
+    "sha256": "d887bd954022e332a8c2a58360149ef8a219ede6c67d042cffa200caea7d5dfc",
+    "shape": "469playerstatrows/16games;noforecast/offerprops;notfifthcandidateboard"
+  },
+  "duplicate_snapshot_note": "CurrentGit tree repeats exactsame twoW4 Gitblobs under32classicshadow snapshots;copiesnotindependentboards"
+}

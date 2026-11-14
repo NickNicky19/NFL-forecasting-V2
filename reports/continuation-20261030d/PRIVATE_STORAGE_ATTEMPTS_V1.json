@@ -1,0 +1,30 @@
+{
+  "schema": "v2-provider-storage-attempt-receipt-v1",
+  "state": "BLOCKED_PROVIDER_STORAGE_QUOTA",
+  "recorded_at_utc": "2026-10-30T20:28:38.259571+00:00",
+  "user_capacity_confirmation": {
+    "path": "reports/continuation-20261030d/OWNER_CAPACITY_CONFIRMATION.json",
+    "sha256": "e16cf6e30a917e91287da73c51842864e20c880a6be5a82aa34b9d1555430581"
+  },
+  "approved_destination_changed": false,
+  "missing_only_upload_requests": 6,
+  "initial_inflight_failed_requests": 5,
+  "bounded_propagation_retry_failed_requests": 1,
+  "successful_upload_requests": 0,
+  "bytes_uploaded_successfully": 0,
+  "last_observed_failure_utc": "2026-10-30T20:15:02Z",
+  "provider_http_status": 403,
+  "provider_reason": "storageQuotaExceeded",
+  "automatic_approval_review_rejection": false,
+  "unchanged_pending_parts": 53,
+  "unchanged_pending_bytes": 1093747658,
+  "all_local_files_preserved": true,
+  "all_previously_successful_parts_preserved": true,
+  "sharing_changed": false,
+  "files_deleted": 0,
+  "storage_purchased": false,
+  "additional_blind_retries_planned": 0,
+  "metadata_diagnostic": "Existing approved folder remains not_shared. Requested owner/capacity fields were not returned; account/storage ownership and actual free quota remain unknown.",
+  "fit_admission": "BLOCKED_PENDING_SUCCESSFUL_FULL_REASSEMBLY_AND_FRESH_HASH_VERIFICATION",
+  "private_request_response_bytes_retained": true
+}

@@ -1,0 +1,20 @@
+{
+  "at_UTC": "2026-11-12T18:02:21.045269+00:00",
+  "scope": "New stagingadapter only; before anysuccessfulfit/forecast/score.",
+  "failed_fit_calls_charged": 1,
+  "failed_optimizer_fits_completed": 0,
+  "exception": "TypeError during numpy median on object array containing JSONnull; estimator not fitted.",
+  "root_cause": "Restored basefeatures contain explicit JSONnull for numericNaN; matrix lacked dtype=float.",
+  "repair": "Explicit float dtype restores null\u2192numericNaN before unchanged Design earlier-only imputation/missing indicators. No null outcome/rank converted to observedzero.",
+  "preserved_initial_packages": [
+    "depth-role-pre-fit-v1",
+    "depth-role-pre-fit-design-v1"
+  ],
+  "final_package": "depth-role-wave-v2",
+  "unchanged_hypothesis": true,
+  "unchanged_successful_fit_cap": 16,
+  "aggregate_fit_call_cap_including_failed_design": 17,
+  "additional_retry_after_scores": false,
+  "before_after_NFL_metrics": null,
+  "new_NFL_predictions_at_amendment": 0
+}

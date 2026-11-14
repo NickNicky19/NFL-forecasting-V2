@@ -1,0 +1,166 @@
+{
+  "state": "PASS_PINNED_OWNER_MERGED_A478_PRESENCE_PATH",
+  "pinned_production_commit": "a478db86e2702d9fa632a23bfaf9c575a67ea902",
+  "source_hashes": {
+    "pull/build.py": "b83126080149f2f0705682d1c0be0a8ee87610ebb0a88cd57b94b8a82b63ad73",
+    "pull/scoring.py": "90a9d201581b20c4e757912ce7dbf4941a6a90784d721c80367341511c652a2d",
+    "pull/grade.py": "afd1310d708def4f400e6bf84e981e2edc7635dc946a63571022203c1d3ae735",
+    "output/app.js": "96da61d38c453f793d02c5f4b156d7fe4f3af31a3ba79d3fff15aa7f782388c0"
+  },
+  "reused_actual_function_harness": "verify_missingness_scope_v1.py extraction/scoring helpers; old main/PR1 results not rerun or overwritten",
+  "synthetic_actual_function_cases": [
+    {
+      "fixture": "explicit_null_reception",
+      "statistic": "rec",
+      "line": 0.5,
+      "selected_side": "under",
+      "actual": null,
+      "state": "unresolved"
+    },
+    {
+      "fixture": "unknown_combined_component",
+      "statistic": "rush_rec_yd",
+      "line": 60.5,
+      "selected_side": "under",
+      "actual": null,
+      "state": "unresolved"
+    },
+    {
+      "fixture": "reported_zero_reception",
+      "statistic": "rec",
+      "line": 0.5,
+      "selected_side": "under",
+      "actual": 0,
+      "state": "hit"
+    },
+    {
+      "fixture": "known_combined_zero_component",
+      "statistic": "rush_rec_yd",
+      "line": 60.5,
+      "selected_side": "over",
+      "actual": 55,
+      "state": "miss"
+    },
+    {
+      "fixture": "negative_signed_yards",
+      "statistic": "rush_yd",
+      "line": -0.5,
+      "selected_side": "under",
+      "actual": -2,
+      "state": "hit"
+    },
+    {
+      "fixture": "half_td_over",
+      "statistic": "pass_td",
+      "line": 1.5,
+      "selected_side": "over",
+      "actual": 2,
+      "state": "hit"
+    },
+    {
+      "fixture": "half_completions_under_loss",
+      "statistic": "pass_cmp",
+      "line": 19.5,
+      "selected_side": "under",
+      "actual": 20,
+      "state": "miss"
+    },
+    {
+      "fixture": "whole_count_push",
+      "statistic": "rec",
+      "line": 4,
+      "selected_side": "over",
+      "actual": 4,
+      "state": "push"
+    },
+    {
+      "fixture": "absent_reception",
+      "statistic": "rec",
+      "line": 0.5,
+      "selected_side": "under",
+      "actual": null,
+      "state": "unresolved"
+    },
+    {
+      "fixture": "absent_combined_component",
+      "statistic": "rush_rec_yd",
+      "line": 60.5,
+      "selected_side": "under",
+      "actual": null,
+      "state": "unresolved"
+    },
+    {
+      "fixture": "nonfinite_reception",
+      "statistic": "rec",
+      "line": 0.5,
+      "selected_side": "under",
+      "actual": null,
+      "state": "unresolved"
+    },
+    {
+      "fixture": "boolean_reception",
+      "statistic": "rec",
+      "line": 0.5,
+      "selected_side": "under",
+      "actual": null,
+      "state": "unresolved"
+    }
+  ],
+  "fictional_side_reconciliation": {
+    "over": {
+      "selected": 3,
+      "wins": 1,
+      "losses": 1,
+      "decided": 2,
+      "push": 1,
+      "unresolved": 0
+    },
+    "under": {
+      "selected": 9,
+      "wins": 2,
+      "losses": 1,
+      "decided": 3,
+      "push": 0,
+      "unresolved": 6
+    }
+  },
+  "fictional_combined": {
+    "hit": 3,
+    "miss": 2,
+    "push": 1,
+    "dnp": 0,
+    "unresolved": 6,
+    "n_decided": 5,
+    "pct": 60.0
+  },
+  "missing_TD_projection_producer": [
+    {
+      "fixture": "missing_projection",
+      "proj": null,
+      "td_chance": null
+    },
+    {
+      "fixture": "explicit_zero_TD_components",
+      "proj": 0,
+      "td_chance": 0.0
+    },
+    {
+      "fixture": "unknown_TD_component",
+      "proj": null,
+      "td_chance": null
+    }
+  ],
+  "presence_version": "nfl-data-presence-strict-v3",
+  "absent_component_policy": "Strict unknown, including legacy stat dictionaries; no absent-as-zero fallback in component().",
+  "previous_receipts_preserved": [
+    "MISSINGNESS_CURRENT_PATH_AND_B_SCOPE_V1.json",
+    "CURRENT_TD_UI_GUARD_REVIEW_V1.json"
+  ],
+  "finding_disposition": "Production source path repaired and bounded actual-function fixtures pass at this pin. Historical contamination count remains unknown without raw precompaction evidence. No change to retained B415 original grades is indicated.",
+  "concurrency_limit": "This immutable pin is the source tested. A subsequent owner run/source edit was reported while checking; no claim this pin remains latest.",
+  "publication_limit": "No served-byte/browser-render/new-current-board claim. Root separately verifies owner capture/publication. Oldfe369packet remains historical, never relabelled current.",
+  "NFL_fits": 0,
+  "model_calls": 0,
+  "NFL_regrading": 0,
+  "upstream_writes": 0
+}

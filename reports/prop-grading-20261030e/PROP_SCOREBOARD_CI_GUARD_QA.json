@@ -1,0 +1,74 @@
+{
+  "state": "PASS_PERMANENT_PROP_SCOREBOARD_CI_GUARD",
+  "actual_verified_at": "2026-10-30T22:29:52.869441+00:00",
+  "guard": {
+    "path": "tools/check_prop_scoreboard_coverage.py",
+    "sha256": "a1ce2dde1fb016c49a27f2e6395e3a330de6258683521e178739a2c731cab1e9"
+  },
+  "tests": {
+    "path": "tests/test_prop_scoreboard_coverage.py",
+    "sha256": "cd205b80bf473b5ca969df2f893fa945809992840c2cf1ac585d4c979e9763a1",
+    "fixture_functions_passed": 9
+  },
+  "workflow": {
+    "path": ".github/workflows/research-checks.yml",
+    "sha256": "5cafafd8b2e61ba798fa0cfd3555465d6aef39d3afdda9133ea1f80753e2a7b1",
+    "step": "python tools/check_prop_scoreboard_coverage.py"
+  },
+  "scoreboard_manifest": {
+    "path": "reports/prop-grading-20261030e/CURRENT_PROP_SCOREBOARD_VIEW.json",
+    "sha256": "728f70c46ff6ddc9ed5a8ae2c8bb1f71a56ecd5b1ffc2355b85caec0e680be44"
+  },
+  "source_bindings": {
+    "source_scores": {
+      "path": "reports/prop-grading-20261030e/actual-side-projection-v2/SCORES.json",
+      "sha256": "cccb984588eb0027c7dcd483001fe60116f740d6b7d9bfba5b49d92bb6a21e08"
+    },
+    "metadata": {
+      "path": "reports/prop-grading-20261030e/actual-side-projection-v2/METADATA_SUPPLEMENT.json",
+      "sha256": "52c7a06a426110cfde848846385ebceb06f9b32f2d616b404008275965760045"
+    },
+    "records_csv": {
+      "path": "reports/prop-grading-20261030e/actual-side-projection-v2/ALL_ACTUAL_SIDE_VIEWS.csv",
+      "sha256": "40d1a9713443e088f5a9ec3115fac289467512ececf5005fa660636577652c97"
+    },
+    "unsupported_cells": {
+      "path": "reports/prop-grading-20261030e/actual-side-projection-v2/UNAVAILABLE_CELLS.json",
+      "sha256": "3a2f4df34375b35f3219050d5876f60d88ef13262dee0554d5b66d1c61694cb9"
+    }
+  },
+  "verified_counts": {
+    "score_views": 7440,
+    "metadata_rows": 7440,
+    "bound_csv_rows": 7440,
+    "bound_csv_fields": 48,
+    "complete_actual_side_groups": 2480,
+    "default_weekly_views": 3720,
+    "season_aliases": 3720,
+    "unsupported_cells": 48
+  },
+  "checks": [
+    "Every group has exactly Over/Under/Combined actual-selected sides",
+    "Combined selected/decided/W/L/push/allstatuses/bookstatuses are exact side sums",
+    "Hit W/(W+L), loss L/(W+L), null zero-denominator rates",
+    "Statistical wins do not authenticate bookmaker returns",
+    "Every metadata/source ID and membership bound; aliases exactly match weekly parents",
+    "Default predicate excludes every retained season alias",
+    "Unsupported target grid complete with explicit null native scores",
+    "Entire bound CSV schema and every field reconciled to score/metadata sources"
+  ],
+  "negative_fixture_coverage": [
+    "Unweighted Combined percentage with unequal side support",
+    "Swapped actual side identity",
+    "Internally coherent side W/L swap with unchanged Combined",
+    "Empty Under side incorrectly given zero rate",
+    "Weekly/season alias points to another side",
+    "Missing group side at unchanged overall row count",
+    "Unsupported target fake zero loss",
+    "Unverified bookmaker ROI"
+  ],
+  "NFL_outcome_rows_read": 0,
+  "new_grades": 0,
+  "new_fits": 0,
+  "new_forecasts": 0
+}

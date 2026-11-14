@@ -1,0 +1,9 @@
+# Peer source and novelty scope
+
+C’s current public main is `aa099aa1ff78c85440173483275e01a9d354e2c8`; A’s substantive research publication is `b7461fb7a79f89bec179b8c2e59f1b8e2e9ced31` on `research/accuracy-wave-20261026`. The unchanged C protocol/scorer remain authoritative. No new next-generation assignment registration, personnel export or depth-chart source was located in the inspected current C pointer, export index, task ledger and untruncated tree. This does not certify the absence of private or uncommitted peer work.
+
+C already retained nflverse injury projections for prospective captures. The November 7 projection has 360 rows and seven fields: season, week, team, GSIS ID, position, report status and practice status. Its source was observed at 13:26:29 UTC on November 7. It does not preserve an individual row’s original publication/version clock and cannot become a Weeks 1–8 historical snapshot. C’s executing code uses the designation for OUT/DOUBTFUL eligibility and explicitly leaves starter status uninferred. It does not fit teammate-conditioned opportunity redistribution. Reuse this existing qualification instead of acquiring the same injury source twice.
+
+C’s completed target-share mechanism consumes earlier reported targets; A’s dynamic allocation consumes earlier credited opportunities. The inspected code explicitly excludes injury scenarios or labels verified replacement-starter probabilities. A genuinely observed pregame personnel block is therefore distinct within the checked scope. It still needs usable historical observations; a current roster, an injury label and a source HTTP clock do not by themselves establish event-effective player role or historical publication.
+
+No fits, predictions, grades, NFL weeks, peer writes or production changes were performed. This receipt establishes public code/source scope, not private-row, independent-fit or original-vintage parity. Exact bytes and hashes are in the JSON receipt.

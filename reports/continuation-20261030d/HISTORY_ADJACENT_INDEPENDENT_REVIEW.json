@@ -1,0 +1,136 @@
+{
+  "state": "PASS_ALL_ADJACENT_DECOMPOSITIONS_AND_BOUNDED_RAW_WIN_LOSS_REPLAY",
+  "protocol_sha256": "ecbc49765444ff02bc2012775df5a9d38ba42a36b1d14eecb621dba40948f772",
+  "source_score_sha256": "5bbf22da159624c2cfab762517223338e7e954a8ab37de39228a8b02e7bd43af",
+  "comparison_views": 17100,
+  "new_univariate_forecast_score_views": 0,
+  "finite_whole_week_bootstrap_intervals_independently_recomputed": 7390,
+  "raw_forecast_rows_streamed": 255576,
+  "raw_same_three_arm_query_cells": 2152,
+  "raw_sampled_comparison_views": [
+    {
+      "target": "rec",
+      "contrast": "H-RECENT_MINUS_H-CURRENT",
+      "fallback_view": "FULL_SYSTEM",
+      "n": 2118,
+      "candidate_error": 1.253541076487252,
+      "comparator_error": 1.4338999055712938,
+      "delta": -0.18035882908404166
+    },
+    {
+      "target": "rec",
+      "contrast": "H-RECENT_MINUS_H-CURRENT",
+      "fallback_view": "COMMON_CORE_LEARNED",
+      "n": 1456,
+      "candidate_error": 1.253434065934066,
+      "comparator_error": 1.2706043956043955,
+      "delta": -0.01717032967032961
+    },
+    {
+      "target": "rec",
+      "contrast": "H-RECENT_MINUS_H-CURRENT",
+      "fallback_view": "ANY_ARM_FALLBACK",
+      "n": 662,
+      "candidate_error": 1.2537764350453173,
+      "comparator_error": 1.7930513595166162,
+      "delta": -0.5392749244712989
+    },
+    {
+      "target": "rec",
+      "contrast": "H-RECENT_MINUS_H-CURRENT",
+      "fallback_view": "ALL_ARM_FALLBACK",
+      "n": 105,
+      "candidate_error": 1.0095238095238095,
+      "comparator_error": 1.2,
+      "delta": -0.19047619047619047
+    },
+    {
+      "target": "rec",
+      "contrast": "H-RECENT_MINUS_H-CURRENT",
+      "fallback_view": "MIXED_FALLBACK",
+      "n": 557,
+      "candidate_error": 1.2998204667863555,
+      "comparator_error": 1.904847396768402,
+      "delta": -0.6050269299820465
+    },
+    {
+      "target": "rec",
+      "contrast": "H-RECENT_MINUS_H-CURRENT",
+      "fallback_view": "WEEK1_STARTUP",
+      "n": 316,
+      "candidate_error": 1.2246835443037976,
+      "comparator_error": 2.050632911392405,
+      "delta": -0.8259493670886073
+    },
+    {
+      "target": "rec",
+      "contrast": "H-MULTI_MINUS_H-RECENT",
+      "fallback_view": "FULL_SYSTEM",
+      "n": 2118,
+      "candidate_error": 1.254957507082153,
+      "comparator_error": 1.253541076487252,
+      "delta": 0.0014164305949009304
+    },
+    {
+      "target": "rec",
+      "contrast": "H-MULTI_MINUS_H-RECENT",
+      "fallback_view": "COMMON_CORE_LEARNED",
+      "n": 1456,
+      "candidate_error": 1.2417582417582418,
+      "comparator_error": 1.253434065934066,
+      "delta": -0.011675824175824134
+    },
+    {
+      "target": "rec",
+      "contrast": "H-MULTI_MINUS_H-RECENT",
+      "fallback_view": "ANY_ARM_FALLBACK",
+      "n": 662,
+      "candidate_error": 1.283987915407855,
+      "comparator_error": 1.2537764350453173,
+      "delta": 0.030211480362537735
+    },
+    {
+      "target": "rec",
+      "contrast": "H-MULTI_MINUS_H-RECENT",
+      "fallback_view": "ALL_ARM_FALLBACK",
+      "n": 105,
+      "candidate_error": 1.1428571428571428,
+      "comparator_error": 1.0095238095238095,
+      "delta": 0.1333333333333333
+    },
+    {
+      "target": "rec",
+      "contrast": "H-MULTI_MINUS_H-RECENT",
+      "fallback_view": "MIXED_FALLBACK",
+      "n": 557,
+      "candidate_error": 1.310592459605027,
+      "comparator_error": 1.2998204667863555,
+      "delta": 0.010771992818671361
+    },
+    {
+      "target": "rec",
+      "contrast": "H-MULTI_MINUS_H-RECENT",
+      "fallback_view": "WEEK1_STARTUP",
+      "n": 316,
+      "candidate_error": 1.2120253164556962,
+      "comparator_error": 1.2246835443037976,
+      "delta": -0.012658227848101333
+    }
+  ],
+  "checks": {
+    "all_source_contrast_algebra_rows": 17100,
+    "disjoint_fallback_decomposition_groups": 2850,
+    "identical_three_arm_memberships_across_adjacent_pairs": 8550,
+    "raw_reception_sample_partitions_replayed": 12
+  },
+  "limitations": "All saved aggregate algebra, mask equality and weekly bootstrap recomputed; raw player-game replay is scoped to one2026rec law/point product and both adjacent win/loss contrasts. Other raw outcomes/scores previously reviewed separately. Same learner inputs except empirical estimator memory changes remain registered;2022RECENT2021 source gap persists. Seven2026weeks do not support weekCI. Exposed results are descriptive, not a selector or new independent NFL games.",
+  "new_fits": 0,
+  "inference_calls": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0,
+  "resource": {
+    "wall_seconds": 5.9267849210009445,
+    "cpu_seconds": 6.1787720749999995,
+    "peak_rss_bytes": 201646080
+  }
+}

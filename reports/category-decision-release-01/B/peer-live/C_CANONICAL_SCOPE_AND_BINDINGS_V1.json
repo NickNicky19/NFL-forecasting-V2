@@ -1,0 +1,475 @@
+{
+  "id": "B-C-CANONICAL-DECISION-RECORD-SCOPE-v1",
+  "checked_UTC": "2026-11-12T01:38:14.597405+00:00",
+  "actual_C_main": "d9309bb8676fcd2102bfdc9b45adb0c504d0a498",
+  "source_bindings": [
+    {
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "ref": "d9309bb8676fcd2102bfdc9b45adb0c504d0a498",
+      "path": "reports/abc-championship/CURRENT_PROTOCOL.json",
+      "sha256": "2539ba8b398bcacebafa8f4b19090d4a5ffcee590c98c97966a8832c7d1ba4d5",
+      "bytes": 60160
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "ref": "d9309bb8676fcd2102bfdc9b45adb0c504d0a498",
+      "path": "reports/abc-championship/execution-closure-02/CATEGORY_PRODUCT_DECISIONS.json",
+      "sha256": "d817f69d52ab8d736df758227a0c25a701137683500cf19834c408a3f2fd7c8f",
+      "bytes": 120432
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "ref": "d9309bb8676fcd2102bfdc9b45adb0c504d0a498",
+      "path": "reports/profile-timing-closure-confirm-01/TWELVE_CATEGORY_STATUS.json",
+      "sha256": "9b90768059a4fa178b3252c658e7935ae9c7f63c6dc744b45125710bd3193df8",
+      "bytes": 5538
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "ref": "d9309bb8676fcd2102bfdc9b45adb0c504d0a498",
+      "path": "reports/profile-timing-closure-confirm-01/PRODUCT_QUALIFICATION.json",
+      "sha256": "e7c549f8f4cb90d90f19a528982f99beb58d2cb0460ca4c453c23beb53e074a8",
+      "bytes": 7352
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "ref": "d9309bb8676fcd2102bfdc9b45adb0c504d0a498",
+      "path": "reports/profile-timing-closure-confirm-01/README.md",
+      "sha256": "31281563e4794f4a9c035d6530b3293bc725ad2128658760e6da9603f86a3b16",
+      "bytes": 12458
+    }
+  ],
+  "canonical_protocol": {
+    "id": "ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1",
+    "protocol_sha256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1",
+    "scorer_sha256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce"
+  },
+  "canonical_existing_decision_table": {
+    "path": "reports/abc-championship/execution-closure-02/CATEGORY_PRODUCT_DECISIONS.json",
+    "rows": 72,
+    "categories": [
+      "anytime_td",
+      "fpts",
+      "pass_att",
+      "pass_cmp",
+      "pass_int",
+      "pass_td",
+      "pass_yd",
+      "rec",
+      "rec_yd",
+      "rush_att",
+      "rush_rec_yd",
+      "rush_yd"
+    ],
+    "products": [
+      "ACTUAL_LINE_DIRECTION",
+      "EXPECTED_MEAN",
+      "NUMERICAL_MAE",
+      "OUTCOME_DISTRIBUTION",
+      "PROBABILITY",
+      "TOP_PICKS"
+    ],
+    "scope_values": [
+      "Named A source panels only; B/C/incumbent compatible panels retained separately below. No universal cross-panel winner."
+    ],
+    "not_current_global_champion_table": true,
+    "note": "Existing72rows retainedbyC; scopeexplicitly A namedpanelswithB/C/incumbentseparate. Not evidenceeverymethodreceivedmatchedtestorolder7weekheadlinesqualify7actualofferweeks."
+  },
+  "current_category_statuses": [
+    {
+      "category": "pass_yd",
+      "owner": "B",
+      "decision": "RETAIN_EXISTING_EVIDENCE",
+      "status": "B numerical timing gains do not establish replacement superiority; no new C release.",
+      "next_owner_action": "B retains the strongest compatible controls and owned QB queue.",
+      "original_site_live_method": "NOT_VERIFIED_BY_C_IN_THIS_PACKAGE",
+      "new_primary_switch": false
+    },
+    {
+      "category": "pass_td",
+      "owner": "A/website",
+      "decision": "OLDER_DELIVERY_CONTINUES",
+      "status": "Count A remains independent of the losing timing wave; C has no current producer/served activation proof.",
+      "next_owner_action": "A registered producer and original-site owner complete exact mean/corrector/feed/consumer receipt.",
+      "original_site_live_method": "NOT_VERIFIED_BY_C_IN_THIS_PACKAGE",
+      "new_primary_switch": false
+    },
+    {
+      "category": "pass_cmp",
+      "owner": "A/B",
+      "decision": "COMPLETED_PRIOR_JOIN;NEW_TIMING_JOIN_PENDING",
+      "status": "Received prior B R0\u2013R3 annual W1\u20135 lower-median records 47/42/40/44 of88; strong A controls52/88. Exact new B timing F0\u2013F3 join is not supplied.",
+      "next_owner_action": "A joins the exact e18841b timing outputs to its earlier88-offer board; B verifies membership/arithmetic and W5 overlap.",
+      "original_site_live_method": "NOT_VERIFIED_BY_C_IN_THIS_PACKAGE",
+      "new_primary_switch": false
+    },
+    {
+      "category": "pass_att",
+      "owner": "A/B",
+      "decision": "RETAIN_COMPLETED_JOIN",
+      "status": "Earlier saved-output join remains complete; preserve W5 source/line/horizon overlap separately.",
+      "next_owner_action": "A/B execute only an identified new exact-version gap; do not repeat completed joins.",
+      "original_site_live_method": "NOT_VERIFIED_BY_C_IN_THIS_PACKAGE",
+      "new_primary_switch": false
+    },
+    {
+      "category": "pass_int",
+      "owner": "B",
+      "decision": "RETAIN_EXISTING_EVIDENCE",
+      "status": "No new timing-wave event replacement established.",
+      "next_owner_action": "B retains the owned exact QB/event queue and qualified-threshold requirements.",
+      "original_site_live_method": "NOT_VERIFIED_BY_C_IN_THIS_PACKAGE",
+      "new_primary_switch": false
+    },
+    {
+      "category": "rush_yd",
+      "owner": "A",
+      "decision": "INCONCLUSIVE_PRIMARY_REPLACEMENT",
+      "status": "A48h F3 median97/177 on W1\u20135 versus stronger unchanged controls94; W6\u20137 threshold diagnostic50/102 versus F0 56/102 is adverse.",
+      "next_owner_action": "A retains the five-week signal and uncertainty; no automatic new fit or lag search.",
+      "original_site_live_method": "NOT_VERIFIED_BY_C_IN_THIS_PACKAGE",
+      "new_primary_switch": false
+    },
+    {
+      "category": "rush_att",
+      "owner": "A",
+      "decision": "CLOSE_UNCHANGED_NEGATIVE_RECIPES",
+      "status": "Losing carry/allocation recipes remain closed; no new C experiment or switch.",
+      "next_owner_action": "A may progress only a distinct evidence-supported role/information hypothesis under a finite package.",
+      "original_site_live_method": "NOT_VERIFIED_BY_C_IN_THIS_PACKAGE",
+      "new_primary_switch": false
+    },
+    {
+      "category": "rec",
+      "owner": "C",
+      "decision": "CLOSE_NATIVE_TIMING_DIRECTION_PROBABILITY;NUMERICAL_INCONCLUSIVE",
+      "status": "Exact C04 native W2\u20133 timing contrasts each lose ten wins. Received C03 annual W1\u20135: strongest C P1 mean239/412, R3 median237/412. C04 F0/F1 POINT baselines reuse exact C03 bytes; F2/F3 longer-board join has no received exact-version execution receipt.",
+      "next_owner_action": "A executes only the new C04 F2/F3 point join using the bound handoff; C records actual receipt. Keep probability and ranking weeks separate.",
+      "original_site_live_method": "NOT_VERIFIED_BY_C_IN_THIS_PACKAGE",
+      "new_primary_switch": false
+    },
+    {
+      "category": "rec_yd",
+      "owner": "C",
+      "decision": "RETAIN_EXISTING_EVIDENCE",
+      "status": "No new receiving-yard replacement tested by this timing closure.",
+      "next_owner_action": "C retains finite qualified receiving-yard follow-on; actual alignment/all-route inputs remain source-blocked where absent.",
+      "original_site_live_method": "NOT_VERIFIED_BY_C_IN_THIS_PACKAGE",
+      "new_primary_switch": false
+    },
+    {
+      "category": "rush_rec_yd",
+      "owner": "A/C",
+      "decision": "NO_NEW_COMPLETE_JOINT_PRODUCT",
+      "status": "No new complete joint-model evaluation; component means/medians cannot confer qualification.",
+      "next_owner_action": "A/C retain qualified opportunity/efficiency/joint requirements; never sum marginal medians.",
+      "original_site_live_method": "NOT_VERIFIED_BY_C_IN_THIS_PACKAGE",
+      "new_primary_switch": false
+    },
+    {
+      "category": "anytime_td",
+      "owner": "A/B/C",
+      "decision": "SOURCE_BLOCKED_CURRENT_OFFER",
+      "status": "No qualified current exact rushing-or-receiving TD offer admitted in C05.",
+      "next_owner_action": "Existing source/event owner supplies permitted exact event/side/participation contract; no invented No/Under.",
+      "original_site_live_method": "NOT_VERIFIED_BY_C_IN_THIS_PACKAGE",
+      "new_primary_switch": false
+    },
+    {
+      "category": "nick-chart-ppr-v1",
+      "owner": "A/B/C",
+      "decision": "SOURCE_CONTRACT_BLOCKED",
+      "status": "No qualified matching complete chart offer in C05.",
+      "next_owner_action": "Existing owners require complete chart components/credits and exact offered contract; no legacy fantasy substitution.",
+      "original_site_live_method": "NOT_VERIFIED_BY_C_IN_THIS_PACKAGE",
+      "new_primary_switch": false
+    }
+  ],
+  "current_qualification_products": [
+    {
+      "procedure": "C-RECEIVING-ALIGNED-TIMING-v1::F0/F1",
+      "product": "WR/TE mean and median point direction",
+      "actual_scored_season_weeks": [
+        [
+          2026,
+          1
+        ],
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ],
+        [
+          2026,
+          4
+        ],
+        [
+          2026,
+          5
+        ]
+      ],
+      "duration_status": "FIVE_OWNER_REPORTED_RETROSPECTIVE_BLOCKS;NO_NEW_TEST_WEEKS",
+      "evidence_tier": "CURRENT_VINTAGE_7DAY_QUOTE_TIME_UNVERIFIED",
+      "decision": "REUSE_EXACT_C03_POINT_BASELINES;NO_PRIMARY_SWITCH",
+      "verification": "19244 point values independently match literal source; public aggregate arithmetic checked; private membership/clocks/actuals not independently received",
+      "probability_ranking_EV_inheritance": false
+    },
+    {
+      "procedure": "C-RECEIVING-ALIGNED-TIMING-v1::F2/F3",
+      "product": "exact-line direction/probability",
+      "actual_scored_season_weeks": [
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ]
+      ],
+      "duration_status": "NOT_MET",
+      "decision": "CLOSE_RECIPE_NO_GAIN_FOR_NATIVE_PANEL",
+      "longer_panel_status": "A_OWNED_EXACT_NEW_JOIN_PENDING",
+      "new_primary_switch": false
+    },
+    {
+      "procedure": "C-RECEIVING-ALIGNED-TIMING-v1::F2/F3",
+      "product": "mean/median numerical",
+      "actual_scored_season_weeks": [
+        [
+          2025,
+          1
+        ],
+        [
+          2025,
+          2
+        ],
+        [
+          2025,
+          3
+        ],
+        [
+          2025,
+          4
+        ],
+        [
+          2025,
+          5
+        ],
+        [
+          2025,
+          6
+        ],
+        [
+          2025,
+          7
+        ],
+        [
+          2025,
+          8
+        ],
+        [
+          2026,
+          1
+        ],
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ],
+        [
+          2026,
+          4
+        ],
+        [
+          2026,
+          5
+        ],
+        [
+          2026,
+          6
+        ],
+        [
+          2026,
+          7
+        ],
+        [
+          2026,
+          8
+        ]
+      ],
+      "duration_status": "MET_FOR_RECONSTRUCTED_NUMERICAL_ONLY",
+      "decision": "INCONCLUSIVE",
+      "reason": "Duration does not establish superiority over strongest compatible offered-player/numerical controls",
+      "new_primary_switch": false
+    },
+    {
+      "procedure": "A48h F3 profile median",
+      "product": "rushing-yard actual-line point direction",
+      "actual_scored_season_weeks": [
+        [
+          2026,
+          1
+        ],
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ],
+        [
+          2026,
+          4
+        ],
+        [
+          2026,
+          5
+        ]
+      ],
+      "duration_status": "DURATION_ONLY;TIMING_UNVERIFIED",
+      "decision": "INCONCLUSIVE_PRIMARY_REPLACEMENT",
+      "wins": 97,
+      "decided": 177,
+      "strong_control_wins": 94,
+      "diagnostic": "W6\u20137 is internal/unqualified and adverse, not a duration extension"
+    },
+    {
+      "procedure": "B-QB-ALIGNED-FRESHNESS-v1::F0/F1/F2/F3",
+      "product": "numerical",
+      "scored_season_week_count": 26,
+      "duration_status": "NUMERICAL_DURATION_MET_ONLY",
+      "decision": "WITHIN_METHOD_TIMING_GAIN_RETAINED;NO_PREFERRED_REPLACEMENT",
+      "new_primary_switch": false
+    },
+    {
+      "procedure": "B-QB-ALIGNED-FRESHNESS-v1::F0/F1/F2/F3",
+      "product": "native exact-line direction/probability",
+      "actual_scored_season_weeks": [
+        [
+          2026,
+          5
+        ],
+        [
+          2026,
+          6
+        ],
+        [
+          2026,
+          7
+        ],
+        [
+          2026,
+          8
+        ]
+      ],
+      "duration_status": "NOT_MET_FOR_PRIMARY_ACTUAL_LINE",
+      "decision": "CLOSE_RECIPE_NO_GAIN",
+      "exact_earlier_A_join": "PENDING;DO_NOT_INHERIT_OLD_R0_R3_JOIN"
+    },
+    {
+      "procedure": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1::R0/R1/R2/R3",
+      "product": "prior lower-median point direction",
+      "actual_scored_season_weeks": [
+        [
+          2026,
+          1
+        ],
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ],
+        [
+          2026,
+          4
+        ],
+        [
+          2026,
+          5
+        ]
+      ],
+      "duration_status": "FIVE_OWNER_REPORTED_RETROSPECTIVE_BLOCKS",
+      "decision": "RETAIN_COMPLETED_NEGATIVE_CONTROL_COMPARISON",
+      "wins": [
+        47,
+        42,
+        40,
+        44
+      ],
+      "decided": 88,
+      "strong_control_wins": 52,
+      "evidence_tier": "QUOTE_TIME_UNVERIFIED_OWNER_LOCAL;PUBLIC_ARITHMETIC_ADMITTED"
+    },
+    {
+      "procedure": "C-C05-NEDET-FIRST-01",
+      "product": "appearance-conditioned forecast-only reference/challenger",
+      "scored_season_weeks": [],
+      "duration_status": "NOT_NEW_SCORED_EVIDENCE",
+      "decision": "SHADOW_PENDING_RUNTIME_PUBLICATION_RECEIPT",
+      "actual_inference_rows": 69,
+      "players": 23,
+      "new_fits": 0,
+      "real_offers": 0,
+      "real_selections": 0,
+      "information_policy": "FROZEN_FOOTBALL_SNAPSHOT_FIRST_PUBLICATION_SHADOW",
+      "information_cutoff_UTC": "2026-11-10T19:23:09.469852+00:00",
+      "football_source_cutoff_UTC": "2026-11-10T18:55:28.982066+00:00",
+      "eligibility_cutoff_UTC": "2026-11-10T22:51:53.312826+00:00",
+      "actual_inference_start_UTC": "2026-11-10T23:13:09.501680+00:00",
+      "actual_inference_complete_UTC": "2026-11-10T23:13:11.455755+00:00",
+      "issue_UTC": null,
+      "server_receipt": null
+    },
+    {
+      "procedure": "new complete Top Picks / confidence / EV / 90%-target selection",
+      "product": "ranked selection and price-aware value",
+      "scored_season_weeks": [],
+      "duration_status": "NOT_MET_NOT_TESTED_BY_THIS_PACKAGE",
+      "decision": "NOT_ESTABLISHED",
+      "owner": "original website exact selector replay; B independently verifies; C records actual evidence",
+      "new_primary_switch": false
+    }
+  ],
+  "stale_pending_claims": {
+    "C04_new_A_join": "C publishedqualificationstill says A_OWNED_EXACT_NEW_JOIN_PENDING; latest user supplied A executed pin d7c8bc... must be intaken ratherthan duplicateexecuted.",
+    "B_new_A_join": "C publishedqualificationstill says earlierAjoinPENDING; rootindependentAexecutedreviewupdates actualscope."
+  },
+  "C_new_current_capture": {
+    "run_id": "C-C05-NEDET-FIRST-01",
+    "run": "prospective/runs/C-C05-NEDET-FIRST-01",
+    "issued_UTC": "2026-11-10T23:15:46.092351+00:00",
+    "forecast_rows": 69,
+    "unique_players": 23,
+    "offers": 0,
+    "selections": 0,
+    "decision": "SHADOW_FORECAST_ONLY",
+    "server_state": "QUALIFIED_FRESH_IMMUTABLE_GITHUB_BYTES_AND_SUCCESSFUL_CAPTURE_CHECK",
+    "information_policy": "FROZEN_FOOTBALL_SNAPSHOT_FIRST_PUBLICATION_SHADOW",
+    "new_fits": 0,
+    "server_completed_UTC": "2026-11-10T23:18:26Z",
+    "server_receipt": "CURRENT_PUBLICATION_RECEIPT.json",
+    "consumer_state": "SERVED_VERIFIED_C_RESEARCH_SHADOW_ONLY",
+    "recovery": "verification/C05_FRESH_GITHUB_RESTORATION.json",
+    "served_commit": "fdbb7556ae90152b76f00ee43cfbad46f8f8b24a",
+    "served_consumer": "site/served/SERVED_CONSUMER_RECEIPT.json",
+    "new_primary_switch": false,
+    "actual_offers": 0,
+    "actual_selections": 0,
+    "qualifying_new_scored_weeks": 0
+  },
+  "original_site_control": "NoCauthority/activationonoriginalsite",
+  "new_C_master_created_by_B": false,
+  "new_grades": 0,
+  "new_fits": 0
+}

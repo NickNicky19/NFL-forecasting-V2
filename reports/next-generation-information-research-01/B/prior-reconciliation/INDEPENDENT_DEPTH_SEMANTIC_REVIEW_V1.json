@@ -1,0 +1,31 @@
+{
+  "review": "INDEPENDENT_RAW_QB_DEPTH_SOURCE_SEMANTICS_AND_PREFIT_CHANGE_SCOPE-v1",
+  "environment": {
+    "python": "3.12.14",
+    "fastparquet": "2026.9.0"
+  },
+  "helper_sha256": "a55b44e9868d5a42d36eefdb3fbe4ff1b26a485fbd6e75014beab027ab23049c",
+  "feature_module_sha256": "4a2d8b36426fd0cc85693546013d54672b0e78cc7ef449f1a76a8cd9c2352896",
+  "input_queries": 2901,
+  "independent_rank_clock_presence_assertions": 8703,
+  "raw_QB_slot_values": [
+    9
+  ],
+  "raw_rank_values": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "all_team_source_clock_count": 16416,
+  "empty_QB_team_snapshot_count": 13,
+  "before_vs_after_full_S2_feature_rows_changed": 0,
+  "fits": 0,
+  "inference": 0,
+  "grades": 0,
+  "claim": "Staging source correction before model fitting; not demonstrated contamination of old NFL forecasts or an accuracy gain.",
+  "changed_row_membership_exported": false
+}

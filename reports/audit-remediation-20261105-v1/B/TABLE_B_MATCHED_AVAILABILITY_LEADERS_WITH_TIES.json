@@ -1,0 +1,2886 @@
+[
+  {
+    "target": "pass_yd",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:bfd15103fa07c654a780cc87",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "method_key": "bfd15103fa07c654a780cc87",
+    "availability_arm": "C",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 26,
+    "side_records": {
+      "over": {
+        "selected": 14,
+        "wins": 10,
+        "losses": 4,
+        "decided": 14,
+        "hit_rate": 0.7142857142857143,
+        "status_counts": {
+          "WIN": 10,
+          "LOSS": 4,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 12,
+        "wins": 9,
+        "losses": 3,
+        "decided": 12,
+        "hit_rate": 0.75,
+        "status_counts": {
+          "WIN": 9,
+          "LOSS": 3,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 26,
+        "wins": 19,
+        "losses": 7,
+        "decided": 26,
+        "hit_rate": 0.7307692307692307,
+        "status_counts": {
+          "WIN": 19,
+          "LOSS": 7,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 26,
+    "mae": 68.57692307692308,
+    "bias": 12.807692307692308,
+    "fallback_counts": {
+      "none": 26
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": 1,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "517fad2012fa2619169029d1",
+        "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:517fad2012fa2619169029d1",
+        "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+        "history": "H-CURRENT",
+        "product": "mean",
+        "availability_arm": "C",
+        "strategy": "P1",
+        "capture_version": "AVAILABILITY_C",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 11,
+            "wins": 8,
+            "losses": 3,
+            "decided": 11,
+            "hit_rate": 0.7272727272727273,
+            "status_counts": {
+              "WIN": 8,
+              "LOSS": 3
+            }
+          },
+          "under": {
+            "selected": 15,
+            "wins": 10,
+            "losses": 5,
+            "decided": 15,
+            "hit_rate": 0.6666666666666666,
+            "status_counts": {
+              "WIN": 10,
+              "LOSS": 5
+            }
+          },
+          "Combined": {
+            "selected": 26,
+            "wins": 18,
+            "losses": 8,
+            "decided": 26,
+            "hit_rate": 0.6923076923076923,
+            "status_counts": {
+              "WIN": 18,
+              "LOSS": 8
+            }
+          }
+        },
+        "compared_keys": 26,
+        "available_rows": 26,
+        "games": 13,
+        "actual_player_games": 26
+      },
+      {
+        "kind": "OTHER_B",
+        "method_key": "c07276320c07631a0ed13fb4",
+        "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:c07276320c07631a0ed13fb4",
+        "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+        "history": "H-CURRENT",
+        "product": "lower_median",
+        "availability_arm": "B",
+        "strategy": "P1",
+        "capture_version": "AVAILABILITY_AB",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 15,
+            "wins": 10,
+            "losses": 5,
+            "decided": 15,
+            "hit_rate": 0.6666666666666666,
+            "status_counts": {
+              "WIN": 10,
+              "LOSS": 5
+            }
+          },
+          "under": {
+            "selected": 11,
+            "wins": 8,
+            "losses": 3,
+            "decided": 11,
+            "hit_rate": 0.7272727272727273,
+            "status_counts": {
+              "WIN": 8,
+              "LOSS": 3
+            }
+          },
+          "Combined": {
+            "selected": 26,
+            "wins": 18,
+            "losses": 8,
+            "decided": 26,
+            "hit_rate": 0.6923076923076923,
+            "status_counts": {
+              "WIN": 18,
+              "LOSS": 8
+            }
+          }
+        },
+        "compared_keys": 26,
+        "available_rows": 26,
+        "games": 13,
+        "actual_player_games": 26
+      },
+      {
+        "kind": "OTHER_B",
+        "method_key": "ceb0969dae0b35645fdcdc6d",
+        "procedure_id": "B:v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory:ceb0969dae0b35645fdcdc6d",
+        "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+        "history": "H-MULTI",
+        "product": "lower_median",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "D1_D2",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 11,
+            "wins": 8,
+            "losses": 3,
+            "decided": 11,
+            "hit_rate": 0.7272727272727273,
+            "status_counts": {
+              "WIN": 8,
+              "LOSS": 3
+            }
+          },
+          "under": {
+            "selected": 15,
+            "wins": 10,
+            "losses": 5,
+            "decided": 15,
+            "hit_rate": 0.6666666666666666,
+            "status_counts": {
+              "WIN": 10,
+              "LOSS": 5
+            }
+          },
+          "Combined": {
+            "selected": 26,
+            "wins": 18,
+            "losses": 8,
+            "decided": 26,
+            "hit_rate": 0.6923076923076923,
+            "status_counts": {
+              "WIN": 18,
+              "LOSS": 8
+            }
+          }
+        },
+        "compared_keys": 26,
+        "available_rows": 26,
+        "games": 13,
+        "actual_player_games": 26
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:14c1c4c944352e9e513b6de6",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:empirical",
+    "method_key": "14c1c4c944352e9e513b6de6",
+    "availability_arm": "B",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 26,
+    "side_records": {
+      "over": {
+        "selected": 10,
+        "wins": 6,
+        "losses": 4,
+        "decided": 10,
+        "hit_rate": 0.6,
+        "status_counts": {
+          "WIN": 6,
+          "LOSS": 4,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 16,
+        "wins": 9,
+        "losses": 7,
+        "decided": 16,
+        "hit_rate": 0.5625,
+        "status_counts": {
+          "WIN": 9,
+          "LOSS": 7,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 26,
+        "wins": 15,
+        "losses": 11,
+        "decided": 26,
+        "hit_rate": 0.5769230769230769,
+        "status_counts": {
+          "WIN": 15,
+          "LOSS": 11,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 26,
+    "mae": 0.9615384615384616,
+    "bias": -0.11538461538461539,
+    "fallback_counts": {
+      "none": 26
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -3,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "5c3be99cd0ebd719250ddb1f",
+        "procedure_id": "B:v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs:5c3be99cd0ebd719250ddb1f",
+        "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs",
+        "history": "H-CURRENT",
+        "product": "mean",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "D1_D2",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 9,
+            "wins": 7,
+            "losses": 2,
+            "decided": 9,
+            "hit_rate": 0.7777777777777778,
+            "status_counts": {
+              "WIN": 7,
+              "LOSS": 2
+            }
+          },
+          "under": {
+            "selected": 17,
+            "wins": 11,
+            "losses": 6,
+            "decided": 17,
+            "hit_rate": 0.6470588235294118,
+            "status_counts": {
+              "WIN": 11,
+              "LOSS": 6
+            }
+          },
+          "Combined": {
+            "selected": 26,
+            "wins": 18,
+            "losses": 8,
+            "decided": 26,
+            "hit_rate": 0.6923076923076923,
+            "status_counts": {
+              "WIN": 18,
+              "LOSS": 8
+            }
+          }
+        },
+        "compared_keys": 26,
+        "available_rows": 26,
+        "games": 13,
+        "actual_player_games": 26
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:bbd47dd8ec5a69b7e18a0981",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "method_key": "bbd47dd8ec5a69b7e18a0981",
+    "availability_arm": "A",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 26,
+    "side_records": {
+      "over": {
+        "selected": 10,
+        "wins": 6,
+        "losses": 4,
+        "decided": 10,
+        "hit_rate": 0.6,
+        "status_counts": {
+          "WIN": 6,
+          "LOSS": 4,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 16,
+        "wins": 9,
+        "losses": 7,
+        "decided": 16,
+        "hit_rate": 0.5625,
+        "status_counts": {
+          "WIN": 9,
+          "LOSS": 7,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 26,
+        "wins": 15,
+        "losses": 11,
+        "decided": 26,
+        "hit_rate": 0.5769230769230769,
+        "status_counts": {
+          "WIN": 15,
+          "LOSS": 11,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 26,
+    "mae": 0.9230769230769231,
+    "bias": -0.15384615384615385,
+    "fallback_counts": {
+      "none": 26
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -3,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "5c3be99cd0ebd719250ddb1f",
+        "procedure_id": "B:v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs:5c3be99cd0ebd719250ddb1f",
+        "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs",
+        "history": "H-CURRENT",
+        "product": "mean",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "D1_D2",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 9,
+            "wins": 7,
+            "losses": 2,
+            "decided": 9,
+            "hit_rate": 0.7777777777777778,
+            "status_counts": {
+              "WIN": 7,
+              "LOSS": 2
+            }
+          },
+          "under": {
+            "selected": 17,
+            "wins": 11,
+            "losses": 6,
+            "decided": 17,
+            "hit_rate": 0.6470588235294118,
+            "status_counts": {
+              "WIN": 11,
+              "LOSS": 6
+            }
+          },
+          "Combined": {
+            "selected": 26,
+            "wins": 18,
+            "losses": 8,
+            "decided": 26,
+            "hit_rate": 0.6923076923076923,
+            "status_counts": {
+              "WIN": 18,
+              "LOSS": 8
+            }
+          }
+        },
+        "compared_keys": 26,
+        "available_rows": 26,
+        "games": 13,
+        "actual_player_games": 26
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:5f8ea05ae971befa30d2cc64",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:empirical",
+    "method_key": "5f8ea05ae971befa30d2cc64",
+    "availability_arm": "C",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 26,
+    "side_records": {
+      "over": {
+        "selected": 10,
+        "wins": 6,
+        "losses": 4,
+        "decided": 10,
+        "hit_rate": 0.6,
+        "status_counts": {
+          "WIN": 6,
+          "LOSS": 4,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 16,
+        "wins": 9,
+        "losses": 7,
+        "decided": 16,
+        "hit_rate": 0.5625,
+        "status_counts": {
+          "WIN": 9,
+          "LOSS": 7,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 26,
+        "wins": 15,
+        "losses": 11,
+        "decided": 26,
+        "hit_rate": 0.5769230769230769,
+        "status_counts": {
+          "WIN": 15,
+          "LOSS": 11,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 26,
+    "mae": 0.9615384615384616,
+    "bias": -0.11538461538461539,
+    "fallback_counts": {
+      "none": 26
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -3,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "5c3be99cd0ebd719250ddb1f",
+        "procedure_id": "B:v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs:5c3be99cd0ebd719250ddb1f",
+        "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs",
+        "history": "H-CURRENT",
+        "product": "mean",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "D1_D2",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 9,
+            "wins": 7,
+            "losses": 2,
+            "decided": 9,
+            "hit_rate": 0.7777777777777778,
+            "status_counts": {
+              "WIN": 7,
+              "LOSS": 2
+            }
+          },
+          "under": {
+            "selected": 17,
+            "wins": 11,
+            "losses": 6,
+            "decided": 17,
+            "hit_rate": 0.6470588235294118,
+            "status_counts": {
+              "WIN": 11,
+              "LOSS": 6
+            }
+          },
+          "Combined": {
+            "selected": 26,
+            "wins": 18,
+            "losses": 8,
+            "decided": 26,
+            "hit_rate": 0.6923076923076923,
+            "status_counts": {
+              "WIN": 18,
+              "LOSS": 8
+            }
+          }
+        },
+        "compared_keys": 26,
+        "available_rows": 26,
+        "games": 13,
+        "actual_player_games": 26
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:5174134fc8072b348e00bca2",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "method_key": "5174134fc8072b348e00bca2",
+    "availability_arm": "C",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 26,
+    "side_records": {
+      "over": {
+        "selected": 10,
+        "wins": 6,
+        "losses": 4,
+        "decided": 10,
+        "hit_rate": 0.6,
+        "status_counts": {
+          "WIN": 6,
+          "LOSS": 4,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 16,
+        "wins": 9,
+        "losses": 7,
+        "decided": 16,
+        "hit_rate": 0.5625,
+        "status_counts": {
+          "WIN": 9,
+          "LOSS": 7,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 26,
+        "wins": 15,
+        "losses": 11,
+        "decided": 26,
+        "hit_rate": 0.5769230769230769,
+        "status_counts": {
+          "WIN": 15,
+          "LOSS": 11,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 26,
+    "mae": 0.9230769230769231,
+    "bias": -0.15384615384615385,
+    "fallback_counts": {
+      "none": 26
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -3,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "5c3be99cd0ebd719250ddb1f",
+        "procedure_id": "B:v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs:5c3be99cd0ebd719250ddb1f",
+        "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs",
+        "history": "H-CURRENT",
+        "product": "mean",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "D1_D2",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 9,
+            "wins": 7,
+            "losses": 2,
+            "decided": 9,
+            "hit_rate": 0.7777777777777778,
+            "status_counts": {
+              "WIN": 7,
+              "LOSS": 2
+            }
+          },
+          "under": {
+            "selected": 17,
+            "wins": 11,
+            "losses": 6,
+            "decided": 17,
+            "hit_rate": 0.6470588235294118,
+            "status_counts": {
+              "WIN": 11,
+              "LOSS": 6
+            }
+          },
+          "Combined": {
+            "selected": 26,
+            "wins": 18,
+            "losses": 8,
+            "decided": 26,
+            "hit_rate": 0.6923076923076923,
+            "status_counts": {
+              "WIN": 18,
+              "LOSS": 8
+            }
+          }
+        },
+        "compared_keys": 26,
+        "available_rows": 26,
+        "games": 13,
+        "actual_player_games": 26
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "pass_cmp",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:d2633ec82d313fa48f0944e9",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "method_key": "d2633ec82d313fa48f0944e9",
+    "availability_arm": "C",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 26,
+    "side_records": {
+      "over": {
+        "selected": 12,
+        "wins": 3,
+        "losses": 9,
+        "decided": 12,
+        "hit_rate": 0.25,
+        "status_counts": {
+          "WIN": 3,
+          "LOSS": 9,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 14,
+        "wins": 8,
+        "losses": 6,
+        "decided": 14,
+        "hit_rate": 0.5714285714285714,
+        "status_counts": {
+          "WIN": 8,
+          "LOSS": 6,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 26,
+        "wins": 11,
+        "losses": 15,
+        "decided": 26,
+        "hit_rate": 0.4230769230769231,
+        "status_counts": {
+          "WIN": 11,
+          "LOSS": 15,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 26,
+    "mae": 6.461538461538462,
+    "bias": 2.230769230769231,
+    "fallback_counts": {
+      "none": 26
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -6,
+    "strongest_matched_controls": [
+      {
+        "kind": "SAVED_OR_CONSTANT_CONTROL",
+        "method_key": "CONTROL:alwaysUnder",
+        "procedure_id": "B:CONTROL:alwaysUnder",
+        "base_procedure_id": null,
+        "history": null,
+        "product": "saved_precision_point_direction_or_constant",
+        "availability_arm": null,
+        "strategy": "alwaysUnder",
+        "capture_version": null,
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 0,
+            "wins": 0,
+            "losses": 0,
+            "decided": 0,
+            "hit_rate": null,
+            "status_counts": {}
+          },
+          "under": {
+            "selected": 26,
+            "wins": 17,
+            "losses": 9,
+            "decided": 26,
+            "hit_rate": 0.6538461538461539,
+            "status_counts": {
+              "WIN": 17,
+              "LOSS": 9
+            }
+          },
+          "Combined": {
+            "selected": 26,
+            "wins": 17,
+            "losses": 9,
+            "decided": 26,
+            "hit_rate": 0.6538461538461539,
+            "status_counts": {
+              "WIN": 17,
+              "LOSS": 9
+            }
+          }
+        },
+        "compared_keys": 26,
+        "available_rows": 26,
+        "games": 13,
+        "actual_player_games": 26,
+        "complete_on_core": true
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "pass_att",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:168b6a968140c92a78caa72a",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:empirical",
+    "method_key": "168b6a968140c92a78caa72a",
+    "availability_arm": "A",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 26,
+    "side_records": {
+      "over": {
+        "selected": 11,
+        "wins": 6,
+        "losses": 5,
+        "decided": 11,
+        "hit_rate": 0.5454545454545454,
+        "status_counts": {
+          "WIN": 6,
+          "LOSS": 5,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 15,
+        "wins": 10,
+        "losses": 5,
+        "decided": 15,
+        "hit_rate": 0.6666666666666666,
+        "status_counts": {
+          "WIN": 10,
+          "LOSS": 5,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 26,
+        "wins": 16,
+        "losses": 10,
+        "decided": 26,
+        "hit_rate": 0.6153846153846154,
+        "status_counts": {
+          "WIN": 16,
+          "LOSS": 10,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 26,
+    "mae": 9.307692307692308,
+    "bias": 1.8461538461538463,
+    "fallback_counts": {
+      "none": 26
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -1,
+    "strongest_matched_controls": [
+      {
+        "kind": "SAVED_OR_CONSTANT_CONTROL",
+        "method_key": "CONTROL:SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+        "procedure_id": "B:CONTROL:SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+        "base_procedure_id": null,
+        "history": null,
+        "product": "saved_precision_point_direction_or_constant",
+        "availability_arm": null,
+        "strategy": "SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION",
+        "capture_version": null,
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 10,
+            "wins": 6,
+            "losses": 4,
+            "decided": 10,
+            "hit_rate": 0.6,
+            "status_counts": {
+              "LOSS": 4,
+              "WIN": 6
+            }
+          },
+          "under": {
+            "selected": 16,
+            "wins": 11,
+            "losses": 5,
+            "decided": 16,
+            "hit_rate": 0.6875,
+            "status_counts": {
+              "WIN": 11,
+              "LOSS": 5
+            }
+          },
+          "Combined": {
+            "selected": 26,
+            "wins": 17,
+            "losses": 9,
+            "decided": 26,
+            "hit_rate": 0.6538461538461539,
+            "status_counts": {
+              "LOSS": 9,
+              "WIN": 17
+            }
+          }
+        },
+        "compared_keys": 26,
+        "available_rows": 26,
+        "games": 13,
+        "actual_player_games": 26,
+        "complete_on_core": true
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "pass_int",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:7a2d63697223ba0a555f2977",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "method_key": "7a2d63697223ba0a555f2977",
+    "availability_arm": "A",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 26,
+    "side_records": {
+      "over": {
+        "selected": 0,
+        "wins": 0,
+        "losses": 0,
+        "decided": 0,
+        "hit_rate": null,
+        "status_counts": {
+          "WIN": 0,
+          "LOSS": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 26,
+        "wins": 12,
+        "losses": 14,
+        "decided": 26,
+        "hit_rate": 0.46153846153846156,
+        "status_counts": {
+          "WIN": 12,
+          "LOSS": 14,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 26,
+        "wins": 12,
+        "losses": 14,
+        "decided": 26,
+        "hit_rate": 0.46153846153846156,
+        "status_counts": {
+          "WIN": 12,
+          "LOSS": 14,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 26,
+    "mae": 0.8076923076923077,
+    "bias": -0.8076923076923077,
+    "fallback_counts": {
+      "none": 26
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -5,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "30cdcc92c1c611307d2f2920",
+        "procedure_id": "B:v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs:30cdcc92c1c611307d2f2920",
+        "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs",
+        "history": "H-CURRENT",
+        "product": "lower_median",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "D1_D2",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 7,
+            "wins": 6,
+            "losses": 1,
+            "decided": 7,
+            "hit_rate": 0.8571428571428571,
+            "status_counts": {
+              "LOSS": 1,
+              "WIN": 6
+            }
+          },
+          "under": {
+            "selected": 19,
+            "wins": 11,
+            "losses": 8,
+            "decided": 19,
+            "hit_rate": 0.5789473684210527,
+            "status_counts": {
+              "WIN": 11,
+              "LOSS": 8
+            }
+          },
+          "Combined": {
+            "selected": 26,
+            "wins": 17,
+            "losses": 9,
+            "decided": 26,
+            "hit_rate": 0.6538461538461539,
+            "status_counts": {
+              "LOSS": 9,
+              "WIN": 17
+            }
+          }
+        },
+        "compared_keys": 26,
+        "available_rows": 26,
+        "games": 13,
+        "actual_player_games": 26
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "pass_int",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:7905fdad9d95409b18656ddf",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "method_key": "7905fdad9d95409b18656ddf",
+    "availability_arm": "B",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 26,
+    "side_records": {
+      "over": {
+        "selected": 0,
+        "wins": 0,
+        "losses": 0,
+        "decided": 0,
+        "hit_rate": null,
+        "status_counts": {
+          "WIN": 0,
+          "LOSS": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 26,
+        "wins": 12,
+        "losses": 14,
+        "decided": 26,
+        "hit_rate": 0.46153846153846156,
+        "status_counts": {
+          "WIN": 12,
+          "LOSS": 14,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 26,
+        "wins": 12,
+        "losses": 14,
+        "decided": 26,
+        "hit_rate": 0.46153846153846156,
+        "status_counts": {
+          "WIN": 12,
+          "LOSS": 14,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 26,
+    "mae": 0.8076923076923077,
+    "bias": -0.8076923076923077,
+    "fallback_counts": {
+      "none": 26
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -5,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "30cdcc92c1c611307d2f2920",
+        "procedure_id": "B:v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs:30cdcc92c1c611307d2f2920",
+        "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs",
+        "history": "H-CURRENT",
+        "product": "lower_median",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "D1_D2",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 7,
+            "wins": 6,
+            "losses": 1,
+            "decided": 7,
+            "hit_rate": 0.8571428571428571,
+            "status_counts": {
+              "LOSS": 1,
+              "WIN": 6
+            }
+          },
+          "under": {
+            "selected": 19,
+            "wins": 11,
+            "losses": 8,
+            "decided": 19,
+            "hit_rate": 0.5789473684210527,
+            "status_counts": {
+              "WIN": 11,
+              "LOSS": 8
+            }
+          },
+          "Combined": {
+            "selected": 26,
+            "wins": 17,
+            "losses": 9,
+            "decided": 26,
+            "hit_rate": 0.6538461538461539,
+            "status_counts": {
+              "LOSS": 9,
+              "WIN": 17
+            }
+          }
+        },
+        "compared_keys": 26,
+        "available_rows": 26,
+        "games": 13,
+        "actual_player_games": 26
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "pass_int",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:fb976b22b798342805fd639c",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "method_key": "fb976b22b798342805fd639c",
+    "availability_arm": "C",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 26,
+    "side_records": {
+      "over": {
+        "selected": 0,
+        "wins": 0,
+        "losses": 0,
+        "decided": 0,
+        "hit_rate": null,
+        "status_counts": {
+          "WIN": 0,
+          "LOSS": 0,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 26,
+        "wins": 12,
+        "losses": 14,
+        "decided": 26,
+        "hit_rate": 0.46153846153846156,
+        "status_counts": {
+          "WIN": 12,
+          "LOSS": 14,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 26,
+        "wins": 12,
+        "losses": 14,
+        "decided": 26,
+        "hit_rate": 0.46153846153846156,
+        "status_counts": {
+          "WIN": 12,
+          "LOSS": 14,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 26,
+    "mae": 0.8076923076923077,
+    "bias": -0.8076923076923077,
+    "fallback_counts": {
+      "none": 26
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -5,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "30cdcc92c1c611307d2f2920",
+        "procedure_id": "B:v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs:30cdcc92c1c611307d2f2920",
+        "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs",
+        "history": "H-CURRENT",
+        "product": "lower_median",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "D1_D2",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 7,
+            "wins": 6,
+            "losses": 1,
+            "decided": 7,
+            "hit_rate": 0.8571428571428571,
+            "status_counts": {
+              "LOSS": 1,
+              "WIN": 6
+            }
+          },
+          "under": {
+            "selected": 19,
+            "wins": 11,
+            "losses": 8,
+            "decided": 19,
+            "hit_rate": 0.5789473684210527,
+            "status_counts": {
+              "WIN": 11,
+              "LOSS": 8
+            }
+          },
+          "Combined": {
+            "selected": 26,
+            "wins": 17,
+            "losses": 9,
+            "decided": 26,
+            "hit_rate": 0.6538461538461539,
+            "status_counts": {
+              "LOSS": 9,
+              "WIN": 17
+            }
+          }
+        },
+        "compared_keys": 26,
+        "available_rows": 26,
+        "games": 13,
+        "actual_player_games": 26
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "rush_yd",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:0ca57bc2bc0f77d75f361928",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:empirical",
+    "method_key": "0ca57bc2bc0f77d75f361928",
+    "availability_arm": "A",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 55,
+    "side_records": {
+      "over": {
+        "selected": 25,
+        "wins": 11,
+        "losses": 11,
+        "decided": 22,
+        "hit_rate": 0.5,
+        "status_counts": {
+          "WIN": 11,
+          "LOSS": 11,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 3,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 30,
+        "wins": 13,
+        "losses": 17,
+        "decided": 30,
+        "hit_rate": 0.43333333333333335,
+        "status_counts": {
+          "WIN": 13,
+          "LOSS": 17,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 55,
+        "wins": 24,
+        "losses": 28,
+        "decided": 52,
+        "hit_rate": 0.46153846153846156,
+        "status_counts": {
+          "WIN": 24,
+          "LOSS": 28,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 3,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 52,
+    "mae": 31.923076923076923,
+    "bias": -14.538461538461538,
+    "fallback_counts": {
+      "none": 55
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -7,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "09f8b7985a731512584afd22",
+        "procedure_id": "B:v2-availability-abc-shadow-v1:hgb_direct:squared_error_mean:09f8b7985a731512584afd22",
+        "base_procedure_id": "v2-availability-abc-shadow-v1:hgb_direct:squared_error_mean",
+        "history": "H-CURRENT",
+        "product": "mean",
+        "availability_arm": "B",
+        "strategy": "P1",
+        "capture_version": "AVAILABILITY_AB",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 33,
+            "wins": 20,
+            "losses": 13,
+            "decided": 33,
+            "hit_rate": 0.6060606060606061,
+            "status_counts": {
+              "LOSS": 13,
+              "WIN": 20
+            }
+          },
+          "under": {
+            "selected": 19,
+            "wins": 11,
+            "losses": 8,
+            "decided": 19,
+            "hit_rate": 0.5789473684210527,
+            "status_counts": {
+              "WIN": 11,
+              "LOSS": 8
+            }
+          },
+          "Combined": {
+            "selected": 52,
+            "wins": 31,
+            "losses": 21,
+            "decided": 52,
+            "hit_rate": 0.5961538461538461,
+            "status_counts": {
+              "WIN": 31,
+              "LOSS": 21
+            }
+          }
+        },
+        "compared_keys": 52,
+        "available_rows": 52,
+        "games": 13,
+        "actual_player_games": 52
+      },
+      {
+        "kind": "OTHER_B",
+        "method_key": "17afb9559105c56ca35cef99",
+        "procedure_id": "B:v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs:17afb9559105c56ca35cef99",
+        "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs",
+        "history": "H-CURRENT",
+        "product": "mean",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "D1_D2",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 27,
+            "wins": 17,
+            "losses": 10,
+            "decided": 27,
+            "hit_rate": 0.6296296296296297,
+            "status_counts": {
+              "LOSS": 10,
+              "WIN": 17
+            }
+          },
+          "under": {
+            "selected": 25,
+            "wins": 14,
+            "losses": 11,
+            "decided": 25,
+            "hit_rate": 0.56,
+            "status_counts": {
+              "WIN": 14,
+              "LOSS": 11
+            }
+          },
+          "Combined": {
+            "selected": 52,
+            "wins": 31,
+            "losses": 21,
+            "decided": 52,
+            "hit_rate": 0.5961538461538461,
+            "status_counts": {
+              "WIN": 31,
+              "LOSS": 21
+            }
+          }
+        },
+        "compared_keys": 52,
+        "available_rows": 52,
+        "games": 13,
+        "actual_player_games": 52
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "rush_yd",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:5ccb8d42f1e905f5d9dc601e",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "method_key": "5ccb8d42f1e905f5d9dc601e",
+    "availability_arm": "A",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 55,
+    "side_records": {
+      "over": {
+        "selected": 16,
+        "wins": 7,
+        "losses": 7,
+        "decided": 14,
+        "hit_rate": 0.5,
+        "status_counts": {
+          "WIN": 7,
+          "LOSS": 7,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 2,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 39,
+        "wins": 17,
+        "losses": 21,
+        "decided": 38,
+        "hit_rate": 0.4473684210526316,
+        "status_counts": {
+          "WIN": 17,
+          "LOSS": 21,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 1,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 55,
+        "wins": 24,
+        "losses": 28,
+        "decided": 52,
+        "hit_rate": 0.46153846153846156,
+        "status_counts": {
+          "WIN": 24,
+          "LOSS": 28,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 3,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 52,
+    "mae": 28.78846153846154,
+    "bias": -15.711538461538462,
+    "fallback_counts": {
+      "none": 55
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -7,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "09f8b7985a731512584afd22",
+        "procedure_id": "B:v2-availability-abc-shadow-v1:hgb_direct:squared_error_mean:09f8b7985a731512584afd22",
+        "base_procedure_id": "v2-availability-abc-shadow-v1:hgb_direct:squared_error_mean",
+        "history": "H-CURRENT",
+        "product": "mean",
+        "availability_arm": "B",
+        "strategy": "P1",
+        "capture_version": "AVAILABILITY_AB",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 33,
+            "wins": 20,
+            "losses": 13,
+            "decided": 33,
+            "hit_rate": 0.6060606060606061,
+            "status_counts": {
+              "LOSS": 13,
+              "WIN": 20
+            }
+          },
+          "under": {
+            "selected": 19,
+            "wins": 11,
+            "losses": 8,
+            "decided": 19,
+            "hit_rate": 0.5789473684210527,
+            "status_counts": {
+              "WIN": 11,
+              "LOSS": 8
+            }
+          },
+          "Combined": {
+            "selected": 52,
+            "wins": 31,
+            "losses": 21,
+            "decided": 52,
+            "hit_rate": 0.5961538461538461,
+            "status_counts": {
+              "WIN": 31,
+              "LOSS": 21
+            }
+          }
+        },
+        "compared_keys": 52,
+        "available_rows": 52,
+        "games": 13,
+        "actual_player_games": 52
+      },
+      {
+        "kind": "OTHER_B",
+        "method_key": "17afb9559105c56ca35cef99",
+        "procedure_id": "B:v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs:17afb9559105c56ca35cef99",
+        "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs",
+        "history": "H-CURRENT",
+        "product": "mean",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "D1_D2",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 27,
+            "wins": 17,
+            "losses": 10,
+            "decided": 27,
+            "hit_rate": 0.6296296296296297,
+            "status_counts": {
+              "LOSS": 10,
+              "WIN": 17
+            }
+          },
+          "under": {
+            "selected": 25,
+            "wins": 14,
+            "losses": 11,
+            "decided": 25,
+            "hit_rate": 0.56,
+            "status_counts": {
+              "WIN": 14,
+              "LOSS": 11
+            }
+          },
+          "Combined": {
+            "selected": 52,
+            "wins": 31,
+            "losses": 21,
+            "decided": 52,
+            "hit_rate": 0.5961538461538461,
+            "status_counts": {
+              "WIN": 31,
+              "LOSS": 21
+            }
+          }
+        },
+        "compared_keys": 52,
+        "available_rows": 52,
+        "games": 13,
+        "actual_player_games": 52
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "rush_att",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:f39fdc6b5469bc137fd3f57c",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "method_key": "f39fdc6b5469bc137fd3f57c",
+    "availability_arm": "C",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 40,
+    "side_records": {
+      "over": {
+        "selected": 12,
+        "wins": 3,
+        "losses": 8,
+        "decided": 11,
+        "hit_rate": 0.2727272727272727,
+        "status_counts": {
+          "WIN": 3,
+          "LOSS": 8,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 1,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 28,
+        "wins": 13,
+        "losses": 15,
+        "decided": 28,
+        "hit_rate": 0.4642857142857143,
+        "status_counts": {
+          "WIN": 13,
+          "LOSS": 15,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 0,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 40,
+        "wins": 16,
+        "losses": 23,
+        "decided": 39,
+        "hit_rate": 0.41025641025641024,
+        "status_counts": {
+          "WIN": 16,
+          "LOSS": 23,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 1,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 39,
+    "mae": 4.589743589743589,
+    "bias": -1.2564102564102564,
+    "fallback_counts": {
+      "none": 40
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -5,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "9f3de095736b0d67156908ab",
+        "procedure_id": "B:v2-availability-abc-shadow-v1:hgb_direct:absolute_error_point:9f3de095736b0d67156908ab",
+        "base_procedure_id": "v2-availability-abc-shadow-v1:hgb_direct:absolute_error_point",
+        "history": "H-MULTI",
+        "product": "absolute_error_point",
+        "availability_arm": "C",
+        "strategy": "P1",
+        "capture_version": "AVAILABILITY_C",
+        "model_dependency_qualification": {
+          "model_sha256": "ebd8b1a301efb8d317bffdccc06fee9f51c6a42c9c345080a1e38cb94c935b81",
+          "source_artifact": "reports/continuation-20261030b/availability-wave-v1/C-FIT-a2ba5f78bb5b11447acaec40d7433b68dd6e2dda362c4e4c5f88798db4c80e76.json",
+          "source_artifact_sha256": "2d8d0c0538f13cac68a4ab5ffcc69efdec52973cbbe2866bca8993cdb36bc2b6",
+          "qualification": "Existing capture model dependency restored for admission scope only; saved grading projection missing model metadata."
+        },
+        "side_records": {
+          "over": {
+            "selected": 0,
+            "wins": 0,
+            "losses": 0,
+            "decided": 0,
+            "hit_rate": null,
+            "status_counts": {}
+          },
+          "under": {
+            "selected": 39,
+            "wins": 21,
+            "losses": 18,
+            "decided": 39,
+            "hit_rate": 0.5384615384615384,
+            "status_counts": {
+              "LOSS": 18,
+              "WIN": 21
+            }
+          },
+          "Combined": {
+            "selected": 39,
+            "wins": 21,
+            "losses": 18,
+            "decided": 39,
+            "hit_rate": 0.5384615384615384,
+            "status_counts": {
+              "LOSS": 18,
+              "WIN": 21
+            }
+          }
+        },
+        "compared_keys": 39,
+        "available_rows": 39,
+        "games": 13,
+        "actual_player_games": 39
+      },
+      {
+        "kind": "OTHER_B",
+        "method_key": "b8e1c80550a1a579f011dcc0",
+        "procedure_id": "B:v2-availability-abc-shadow-v1:hgb_direct:absolute_error_point:b8e1c80550a1a579f011dcc0",
+        "base_procedure_id": "v2-availability-abc-shadow-v1:hgb_direct:absolute_error_point",
+        "history": "H-RECENT",
+        "product": "absolute_error_point",
+        "availability_arm": "C",
+        "strategy": "P1",
+        "capture_version": "AVAILABILITY_C",
+        "model_dependency_qualification": {
+          "model_sha256": "ba1597c68080055dfa25f28fce8143e99a4f02d4e2e91dfb6e6b81b987ad5d5d",
+          "source_artifact": "reports/continuation-20261030b/availability-wave-v1/C-FIT-e935d69c98275087be589f40834d95c8243b169c8f1cb9824bd85dce250303a9.json",
+          "source_artifact_sha256": "7558209d4c54db24f9ed74bca80e5015f2327f008c551a8d276f69f4a56bb422",
+          "qualification": "Existing capture model dependency restored for admission scope only; saved grading projection missing model metadata."
+        },
+        "side_records": {
+          "over": {
+            "selected": 0,
+            "wins": 0,
+            "losses": 0,
+            "decided": 0,
+            "hit_rate": null,
+            "status_counts": {}
+          },
+          "under": {
+            "selected": 39,
+            "wins": 21,
+            "losses": 18,
+            "decided": 39,
+            "hit_rate": 0.5384615384615384,
+            "status_counts": {
+              "LOSS": 18,
+              "WIN": 21
+            }
+          },
+          "Combined": {
+            "selected": 39,
+            "wins": 21,
+            "losses": 18,
+            "decided": 39,
+            "hit_rate": 0.5384615384615384,
+            "status_counts": {
+              "LOSS": 18,
+              "WIN": 21
+            }
+          }
+        },
+        "compared_keys": 39,
+        "available_rows": 39,
+        "games": 13,
+        "actual_player_games": 39
+      },
+      {
+        "kind": "OTHER_B",
+        "method_key": "fac2c20ea43da3f9b097af93",
+        "procedure_id": "B:v2-availability-abc-shadow-v1:hgb_direct:absolute_error_point:fac2c20ea43da3f9b097af93",
+        "base_procedure_id": "v2-availability-abc-shadow-v1:hgb_direct:absolute_error_point",
+        "history": "H-CURRENT",
+        "product": "absolute_error_point",
+        "availability_arm": "C",
+        "strategy": "P1",
+        "capture_version": "AVAILABILITY_C",
+        "model_dependency_qualification": {
+          "model_sha256": "c86c598e249868d375cc9696084479c6cf42633f09a10525c4eda9b3247f6abf",
+          "source_artifact": "reports/continuation-20261030b/availability-wave-v1/C-FIT-50764078a42df7589116a0baee7385a523641d37892e84de3b1e3700d188143a.json",
+          "source_artifact_sha256": "f2c8fd37eb785c44592b5a64a7eaf46e03a21fb9c09bacfcced321dfa36ba160",
+          "qualification": "Existing capture model dependency restored for admission scope only; saved grading projection missing model metadata."
+        },
+        "side_records": {
+          "over": {
+            "selected": 0,
+            "wins": 0,
+            "losses": 0,
+            "decided": 0,
+            "hit_rate": null,
+            "status_counts": {}
+          },
+          "under": {
+            "selected": 39,
+            "wins": 21,
+            "losses": 18,
+            "decided": 39,
+            "hit_rate": 0.5384615384615384,
+            "status_counts": {
+              "LOSS": 18,
+              "WIN": 21
+            }
+          },
+          "Combined": {
+            "selected": 39,
+            "wins": 21,
+            "losses": 18,
+            "decided": 39,
+            "hit_rate": 0.5384615384615384,
+            "status_counts": {
+              "LOSS": 18,
+              "WIN": 21
+            }
+          }
+        },
+        "compared_keys": 39,
+        "available_rows": 39,
+        "games": 13,
+        "actual_player_games": 39
+      },
+      {
+        "kind": "SAVED_OR_CONSTANT_CONTROL",
+        "method_key": "CONTROL:alwaysUnder",
+        "procedure_id": "B:CONTROL:alwaysUnder",
+        "base_procedure_id": null,
+        "history": null,
+        "product": "saved_precision_point_direction_or_constant",
+        "availability_arm": null,
+        "strategy": "alwaysUnder",
+        "capture_version": null,
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 0,
+            "wins": 0,
+            "losses": 0,
+            "decided": 0,
+            "hit_rate": null,
+            "status_counts": {}
+          },
+          "under": {
+            "selected": 39,
+            "wins": 21,
+            "losses": 18,
+            "decided": 39,
+            "hit_rate": 0.5384615384615384,
+            "status_counts": {
+              "LOSS": 18,
+              "WIN": 21
+            }
+          },
+          "Combined": {
+            "selected": 39,
+            "wins": 21,
+            "losses": 18,
+            "decided": 39,
+            "hit_rate": 0.5384615384615384,
+            "status_counts": {
+              "LOSS": 18,
+              "WIN": 21
+            }
+          }
+        },
+        "compared_keys": 39,
+        "available_rows": 39,
+        "games": 13,
+        "actual_player_games": 39,
+        "complete_on_core": true
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:6d6a114ef128b557b2ce5a5f",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "method_key": "6d6a114ef128b557b2ce5a5f",
+    "availability_arm": "A",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 158,
+    "side_records": {
+      "over": {
+        "selected": 41,
+        "wins": 22,
+        "losses": 15,
+        "decided": 37,
+        "hit_rate": 0.5945945945945946,
+        "status_counts": {
+          "WIN": 22,
+          "LOSS": 15,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 4,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 117,
+        "wins": 63,
+        "losses": 48,
+        "decided": 111,
+        "hit_rate": 0.5675675675675675,
+        "status_counts": {
+          "WIN": 63,
+          "LOSS": 48,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 6,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 158,
+        "wins": 85,
+        "losses": 63,
+        "decided": 148,
+        "hit_rate": 0.5743243243243243,
+        "status_counts": {
+          "WIN": 85,
+          "LOSS": 63,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 10,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 148,
+    "mae": 1.587837837837838,
+    "bias": -0.4391891891891892,
+    "fallback_counts": {
+      "none": 158
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -5,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "9dbfab648afcd451fcccc1dc",
+        "procedure_id": "B:v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory:9dbfab648afcd451fcccc1dc",
+        "base_procedure_id": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+        "history": "H-RECENT",
+        "product": "lower_median",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "DISTRIBUTION_WAVE",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 32,
+            "wins": 22,
+            "losses": 10,
+            "decided": 32,
+            "hit_rate": 0.6875,
+            "status_counts": {
+              "LOSS": 10,
+              "WIN": 22
+            }
+          },
+          "under": {
+            "selected": 116,
+            "wins": 68,
+            "losses": 48,
+            "decided": 116,
+            "hit_rate": 0.5862068965517241,
+            "status_counts": {
+              "WIN": 68,
+              "LOSS": 48
+            }
+          },
+          "Combined": {
+            "selected": 148,
+            "wins": 90,
+            "losses": 58,
+            "decided": 148,
+            "hit_rate": 0.6081081081081081,
+            "status_counts": {
+              "WIN": 90,
+              "LOSS": 58
+            }
+          }
+        },
+        "compared_keys": 148,
+        "available_rows": 148,
+        "games": 13,
+        "actual_player_games": 148
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:00841d1b003a40d336369af9",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "method_key": "00841d1b003a40d336369af9",
+    "availability_arm": "C",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 158,
+    "side_records": {
+      "over": {
+        "selected": 40,
+        "wins": 22,
+        "losses": 15,
+        "decided": 37,
+        "hit_rate": 0.5945945945945946,
+        "status_counts": {
+          "WIN": 22,
+          "LOSS": 15,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 3,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 118,
+        "wins": 63,
+        "losses": 48,
+        "decided": 111,
+        "hit_rate": 0.5675675675675675,
+        "status_counts": {
+          "WIN": 63,
+          "LOSS": 48,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 7,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 158,
+        "wins": 85,
+        "losses": 63,
+        "decided": 148,
+        "hit_rate": 0.5743243243243243,
+        "status_counts": {
+          "WIN": 85,
+          "LOSS": 63,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 10,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 148,
+    "mae": 1.5810810810810811,
+    "bias": -0.43243243243243246,
+    "fallback_counts": {
+      "none": 158
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -5,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "9dbfab648afcd451fcccc1dc",
+        "procedure_id": "B:v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory:9dbfab648afcd451fcccc1dc",
+        "base_procedure_id": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+        "history": "H-RECENT",
+        "product": "lower_median",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "DISTRIBUTION_WAVE",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 32,
+            "wins": 22,
+            "losses": 10,
+            "decided": 32,
+            "hit_rate": 0.6875,
+            "status_counts": {
+              "LOSS": 10,
+              "WIN": 22
+            }
+          },
+          "under": {
+            "selected": 116,
+            "wins": 68,
+            "losses": 48,
+            "decided": 116,
+            "hit_rate": 0.5862068965517241,
+            "status_counts": {
+              "WIN": 68,
+              "LOSS": 48
+            }
+          },
+          "Combined": {
+            "selected": 148,
+            "wins": 90,
+            "losses": 58,
+            "decided": 148,
+            "hit_rate": 0.6081081081081081,
+            "status_counts": {
+              "WIN": 90,
+              "LOSS": 58
+            }
+          }
+        },
+        "compared_keys": 148,
+        "available_rows": 148,
+        "games": 13,
+        "actual_player_games": 148
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "rec_yd",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:a1b905ef76f64c4921b0ef78",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "method_key": "a1b905ef76f64c4921b0ef78",
+    "availability_arm": "A",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 159,
+    "side_records": {
+      "over": {
+        "selected": 47,
+        "wins": 22,
+        "losses": 19,
+        "decided": 41,
+        "hit_rate": 0.5365853658536586,
+        "status_counts": {
+          "WIN": 22,
+          "LOSS": 19,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 6,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 112,
+        "wins": 59,
+        "losses": 49,
+        "decided": 108,
+        "hit_rate": 0.5462962962962963,
+        "status_counts": {
+          "WIN": 59,
+          "LOSS": 49,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 4,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 159,
+        "wins": 81,
+        "losses": 68,
+        "decided": 149,
+        "hit_rate": 0.5436241610738255,
+        "status_counts": {
+          "WIN": 81,
+          "LOSS": 68,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 10,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 149,
+    "mae": 21.845637583892618,
+    "bias": -9.644295302013424,
+    "fallback_counts": {
+      "none": 159
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -4,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "251bf3fb11c0f2342713265a",
+        "procedure_id": "B:v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory:251bf3fb11c0f2342713265a",
+        "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "history": "H-MULTI",
+        "product": "lower_median",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "D1_D2",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 43,
+            "wins": 25,
+            "losses": 18,
+            "decided": 43,
+            "hit_rate": 0.5813953488372093,
+            "status_counts": {
+              "LOSS": 18,
+              "WIN": 25
+            }
+          },
+          "under": {
+            "selected": 106,
+            "wins": 60,
+            "losses": 46,
+            "decided": 106,
+            "hit_rate": 0.5660377358490566,
+            "status_counts": {
+              "WIN": 60,
+              "LOSS": 46
+            }
+          },
+          "Combined": {
+            "selected": 149,
+            "wins": 85,
+            "losses": 64,
+            "decided": 149,
+            "hit_rate": 0.5704697986577181,
+            "status_counts": {
+              "WIN": 85,
+              "LOSS": 64
+            }
+          }
+        },
+        "compared_keys": 149,
+        "available_rows": 149,
+        "games": 13,
+        "actual_player_games": 149
+      },
+      {
+        "kind": "OTHER_B",
+        "method_key": "592bbf9bcd81984d1f0f0394",
+        "procedure_id": "B:v2-c02-future-ordered-control-shadow-v1:c02_explicit_lag_block_removed:strict-current-inputs:592bbf9bcd81984d1f0f0394",
+        "base_procedure_id": "v2-c02-future-ordered-control-shadow-v1:c02_explicit_lag_block_removed:strict-current-inputs",
+        "history": "H-CURRENT",
+        "product": "lower_median",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "C02",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 51,
+            "wins": 29,
+            "losses": 22,
+            "decided": 51,
+            "hit_rate": 0.5686274509803921,
+            "status_counts": {
+              "LOSS": 22,
+              "WIN": 29
+            }
+          },
+          "under": {
+            "selected": 98,
+            "wins": 56,
+            "losses": 42,
+            "decided": 98,
+            "hit_rate": 0.5714285714285714,
+            "status_counts": {
+              "WIN": 56,
+              "LOSS": 42
+            }
+          },
+          "Combined": {
+            "selected": 149,
+            "wins": 85,
+            "losses": 64,
+            "decided": 149,
+            "hit_rate": 0.5704697986577181,
+            "status_counts": {
+              "LOSS": 64,
+              "WIN": 85
+            }
+          }
+        },
+        "compared_keys": 149,
+        "available_rows": 149,
+        "games": 13,
+        "actual_player_games": 149
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "rec_yd",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:b70043790f37be4db9a18572",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "method_key": "b70043790f37be4db9a18572",
+    "availability_arm": "B",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 159,
+    "side_records": {
+      "over": {
+        "selected": 45,
+        "wins": 21,
+        "losses": 18,
+        "decided": 39,
+        "hit_rate": 0.5384615384615384,
+        "status_counts": {
+          "WIN": 21,
+          "LOSS": 18,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 6,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 114,
+        "wins": 60,
+        "losses": 50,
+        "decided": 110,
+        "hit_rate": 0.5454545454545454,
+        "status_counts": {
+          "WIN": 60,
+          "LOSS": 50,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 4,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 159,
+        "wins": 81,
+        "losses": 68,
+        "decided": 149,
+        "hit_rate": 0.5436241610738255,
+        "status_counts": {
+          "WIN": 81,
+          "LOSS": 68,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 10,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 149,
+    "mae": 21.77181208053691,
+    "bias": -9.583892617449665,
+    "fallback_counts": {
+      "none": 159
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -4,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "251bf3fb11c0f2342713265a",
+        "procedure_id": "B:v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory:251bf3fb11c0f2342713265a",
+        "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+        "history": "H-MULTI",
+        "product": "lower_median",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "D1_D2",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 43,
+            "wins": 25,
+            "losses": 18,
+            "decided": 43,
+            "hit_rate": 0.5813953488372093,
+            "status_counts": {
+              "LOSS": 18,
+              "WIN": 25
+            }
+          },
+          "under": {
+            "selected": 106,
+            "wins": 60,
+            "losses": 46,
+            "decided": 106,
+            "hit_rate": 0.5660377358490566,
+            "status_counts": {
+              "WIN": 60,
+              "LOSS": 46
+            }
+          },
+          "Combined": {
+            "selected": 149,
+            "wins": 85,
+            "losses": 64,
+            "decided": 149,
+            "hit_rate": 0.5704697986577181,
+            "status_counts": {
+              "WIN": 85,
+              "LOSS": 64
+            }
+          }
+        },
+        "compared_keys": 149,
+        "available_rows": 149,
+        "games": 13,
+        "actual_player_games": 149
+      },
+      {
+        "kind": "OTHER_B",
+        "method_key": "592bbf9bcd81984d1f0f0394",
+        "procedure_id": "B:v2-c02-future-ordered-control-shadow-v1:c02_explicit_lag_block_removed:strict-current-inputs:592bbf9bcd81984d1f0f0394",
+        "base_procedure_id": "v2-c02-future-ordered-control-shadow-v1:c02_explicit_lag_block_removed:strict-current-inputs",
+        "history": "H-CURRENT",
+        "product": "lower_median",
+        "availability_arm": "NONE",
+        "strategy": "P1",
+        "capture_version": "C02",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 51,
+            "wins": 29,
+            "losses": 22,
+            "decided": 51,
+            "hit_rate": 0.5686274509803921,
+            "status_counts": {
+              "LOSS": 22,
+              "WIN": 29
+            }
+          },
+          "under": {
+            "selected": 98,
+            "wins": 56,
+            "losses": 42,
+            "decided": 98,
+            "hit_rate": 0.5714285714285714,
+            "status_counts": {
+              "WIN": 56,
+              "LOSS": 42
+            }
+          },
+          "Combined": {
+            "selected": 149,
+            "wins": 85,
+            "losses": 64,
+            "decided": 149,
+            "hit_rate": 0.5704697986577181,
+            "status_counts": {
+              "LOSS": 64,
+              "WIN": 85
+            }
+          }
+        },
+        "compared_keys": 149,
+        "available_rows": 149,
+        "games": 13,
+        "actual_player_games": 149
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "rush_rec_yd",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:ee153a0d8848b44bde621121",
+    "base_procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "method_key": "ee153a0d8848b44bde621121",
+    "availability_arm": "B",
+    "history": "H-MULTI",
+    "output": "lower_median",
+    "rule": "P1",
+    "season": 2026,
+    "actual_weeks": [
+      8
+    ],
+    "eligible_in_common_panel": 39,
+    "side_records": {
+      "over": {
+        "selected": 11,
+        "wins": 5,
+        "losses": 5,
+        "decided": 10,
+        "hit_rate": 0.5,
+        "status_counts": {
+          "WIN": 5,
+          "LOSS": 5,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 1,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "under": {
+        "selected": 28,
+        "wins": 18,
+        "losses": 9,
+        "decided": 27,
+        "hit_rate": 0.6666666666666666,
+        "status_counts": {
+          "WIN": 18,
+          "LOSS": 9,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 1,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      },
+      "Combined": {
+        "selected": 39,
+        "wins": 23,
+        "losses": 14,
+        "decided": 37,
+        "hit_rate": 0.6216216216216216,
+        "status_counts": {
+          "WIN": 23,
+          "LOSS": 14,
+          "PUSH": 0,
+          "UNKNOWN_PARTICIPATION": 2,
+          "MISSING_ACTUAL": 0,
+          "PENDING": 0,
+          "VOID": 0,
+          "UNRESOLVED_CONTRACT": 0
+        }
+      }
+    },
+    "numerical_panel": "Sameknown-outcomeoffered-playerrows;notnativeparticipantpanel",
+    "numeric_n": 37,
+    "mae": 29.81081081081081,
+    "bias": -15.702702702702704,
+    "fallback_counts": {
+      "none": 39
+    },
+    "games": 13,
+    "evidence": "RETAINED_EARLY_FORECAST_PLUS_LATER_PROVIDER_LABELLED_LINES;TIMING_UNVERIFIED_DIAGNOSTIC",
+    "prices_or_profit": null,
+    "source_score_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+    "matched_strong_control_change": -2,
+    "strongest_matched_controls": [
+      {
+        "kind": "OTHER_B",
+        "method_key": "575c27c4ec868ea1eebaeeff",
+        "procedure_id": "B:v2-availability-abc-shadow-v1:hgb_direct:absolute_error_point:575c27c4ec868ea1eebaeeff",
+        "base_procedure_id": "v2-availability-abc-shadow-v1:hgb_direct:absolute_error_point",
+        "history": "H-CURRENT",
+        "product": "absolute_error_point",
+        "availability_arm": "B",
+        "strategy": "P1",
+        "capture_version": "AVAILABILITY_AB",
+        "model_dependency_qualification": null,
+        "side_records": {
+          "over": {
+            "selected": 6,
+            "wins": 4,
+            "losses": 2,
+            "decided": 6,
+            "hit_rate": 0.6666666666666666,
+            "status_counts": {
+              "WIN": 4,
+              "LOSS": 2
+            }
+          },
+          "under": {
+            "selected": 31,
+            "wins": 21,
+            "losses": 10,
+            "decided": 31,
+            "hit_rate": 0.6774193548387096,
+            "status_counts": {
+              "WIN": 21,
+              "LOSS": 10
+            }
+          },
+          "Combined": {
+            "selected": 37,
+            "wins": 25,
+            "losses": 12,
+            "decided": 37,
+            "hit_rate": 0.6756756756756757,
+            "status_counts": {
+              "WIN": 25,
+              "LOSS": 12
+            }
+          }
+        },
+        "compared_keys": 37,
+        "available_rows": 37,
+        "games": 13,
+        "actual_player_games": 37
+      }
+    ],
+    "scope": "Availability medians only; not a full-championship or release winner."
+  },
+  {
+    "target": "anytime_td",
+    "state": "NO_QUALIFIED_SAME_CONTRACT_OFFER",
+    "reason": "No actual offered anytime rushing/receiving TD event"
+  },
+  {
+    "target": "nick-chart-ppr-v1",
+    "state": "NO_QUALIFIED_SAME_CONTRACT_OFFER",
+    "reason": "No offered exact nick-chart-ppr-v1 contract"
+  }
+]

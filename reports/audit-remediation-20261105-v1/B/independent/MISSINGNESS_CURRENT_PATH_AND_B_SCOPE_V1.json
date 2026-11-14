@@ -1,0 +1,433 @@
+{
+  "state": "PASS_INDEPENDENT_CURRENT_MISSINGNESS_DEFECT_AND_B_SCOPE_REVIEW",
+  "website_source_bindings": {
+    "fe369c7462e4e4f290727b2d03b696d28ef5454b/pull/build.py": "1d1646ef67469c3ec45227b9fcb053c4e229362a07bca092a5602a1a1442c1e1",
+    "fe369c7462e4e4f290727b2d03b696d28ef5454b/pull/grade.py": "739df92bf9a04ef5f9974e4213bb7fda98b29be84c30654c2095003fbb974354",
+    "fe369c7462e4e4f290727b2d03b696d28ef5454b/pull/scoring.py": "58c1f57fb0404f8bb6d1568d51791c97cdf0bb941c57117b703c6a24534980db",
+    "81c3fc2a612ced916f4c54814f978c509058bca5/pull/build.py": "726378a2ae5f7a1cedb1bd1538d49e77a5a6bbf9805c07eb89fc9fd4bdd92cbf",
+    "81c3fc2a612ced916f4c54814f978c509058bca5/pull/grade.py": "b260a2a7905eea7caf4b14115e94fd6898c0e0fc6cdd19e28de96ccc38da394a",
+    "81c3fc2a612ced916f4c54814f978c509058bca5/pull/scoring.py": "712be92bb30d6486fd4d04d3cc43a2d1482b9ade42cb6c50194fe745c0ef5ae9"
+  },
+  "website_fixtures": {
+    "fe369c7462e4e4f290727b2d03b696d28ef5454b": {
+      "actual_function_fixtures": [
+        {
+          "fixture": "explicit_null_reception",
+          "target": "rec",
+          "line": 0.5,
+          "selected_side": "under",
+          "actual": 0,
+          "state": "hit",
+          "explicit_input_fields": {
+            "rec": null
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20
+          }
+        },
+        {
+          "fixture": "unknown_combined_component",
+          "target": "rush_rec_yd",
+          "line": 60.5,
+          "selected_side": "under",
+          "actual": 55,
+          "state": "hit",
+          "explicit_input_fields": {
+            "rush_yd": 55,
+            "rec_yd": null
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20,
+            "rush_yd": 55
+          }
+        },
+        {
+          "fixture": "reported_zero_reception",
+          "target": "rec",
+          "line": 0.5,
+          "selected_side": "under",
+          "actual": 0,
+          "state": "hit",
+          "explicit_input_fields": {
+            "rec": 0
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20
+          }
+        },
+        {
+          "fixture": "known_combined_zero_component",
+          "target": "rush_rec_yd",
+          "line": 60.5,
+          "selected_side": "over",
+          "actual": 55,
+          "state": "miss",
+          "explicit_input_fields": {
+            "rush_yd": 55,
+            "rec_yd": 0
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20,
+            "rush_yd": 55
+          }
+        },
+        {
+          "fixture": "negative_signed_yards",
+          "target": "rush_yd",
+          "line": -0.5,
+          "selected_side": "under",
+          "actual": -2,
+          "state": "hit",
+          "explicit_input_fields": {
+            "rush_yd": -2
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20,
+            "rush_yd": -2
+          }
+        },
+        {
+          "fixture": "half_td_over",
+          "target": "pass_td",
+          "line": 1.5,
+          "selected_side": "over",
+          "actual": 2,
+          "state": "hit",
+          "explicit_input_fields": {
+            "pass_td": 2
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20,
+            "pass_td": 2
+          }
+        },
+        {
+          "fixture": "half_completions_under_loss",
+          "target": "pass_cmp",
+          "line": 19.5,
+          "selected_side": "under",
+          "actual": 20,
+          "state": "miss",
+          "explicit_input_fields": {
+            "pass_cmp": 20
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20,
+            "pass_cmp": 20
+          }
+        },
+        {
+          "fixture": "whole_count_push",
+          "target": "rec",
+          "line": 4,
+          "selected_side": "over",
+          "actual": 4,
+          "state": "push",
+          "explicit_input_fields": {
+            "rec": 4
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20,
+            "rec": 4
+          }
+        }
+      ],
+      "fictional_side_counts": {
+        "over": {
+          "selected": 3,
+          "wins": 1,
+          "losses": 1,
+          "decided": 2,
+          "hit_rate": 0.5,
+          "push": 1,
+          "unresolved": 0
+        },
+        "under": {
+          "selected": 5,
+          "wins": 4,
+          "losses": 1,
+          "decided": 5,
+          "hit_rate": 0.8,
+          "push": 0,
+          "unresolved": 0
+        }
+      },
+      "fictional_combined": {
+        "hit": 5,
+        "miss": 2,
+        "push": 1,
+        "dnp": 0,
+        "unresolved": 0,
+        "n_decided": 7,
+        "pct": 71.4
+      },
+      "null_projection_producer": {
+        "proj": null,
+        "td_chance": 0.0
+      },
+      "sparse_absence_note": "PR1 inference of absent zero is explicitly a legacy sparse adapter assumption, not authenticated reported zero."
+    },
+    "81c3fc2a612ced916f4c54814f978c509058bca5": {
+      "actual_function_fixtures": [
+        {
+          "fixture": "explicit_null_reception",
+          "target": "rec",
+          "line": 0.5,
+          "selected_side": "under",
+          "actual": null,
+          "state": "unresolved",
+          "explicit_input_fields": {
+            "rec": null
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20,
+            "rec": null
+          }
+        },
+        {
+          "fixture": "unknown_combined_component",
+          "target": "rush_rec_yd",
+          "line": 60.5,
+          "selected_side": "under",
+          "actual": null,
+          "state": "unresolved",
+          "explicit_input_fields": {
+            "rush_yd": 55,
+            "rec_yd": null
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20,
+            "rec_yd": null,
+            "rush_yd": 55
+          }
+        },
+        {
+          "fixture": "reported_zero_reception",
+          "target": "rec",
+          "line": 0.5,
+          "selected_side": "under",
+          "actual": 0,
+          "state": "hit",
+          "explicit_input_fields": {
+            "rec": 0
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20,
+            "rec": 0
+          }
+        },
+        {
+          "fixture": "known_combined_zero_component",
+          "target": "rush_rec_yd",
+          "line": 60.5,
+          "selected_side": "over",
+          "actual": 55,
+          "state": "miss",
+          "explicit_input_fields": {
+            "rush_yd": 55,
+            "rec_yd": 0
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20,
+            "rec_yd": 0,
+            "rush_yd": 55
+          }
+        },
+        {
+          "fixture": "negative_signed_yards",
+          "target": "rush_yd",
+          "line": -0.5,
+          "selected_side": "under",
+          "actual": -2,
+          "state": "hit",
+          "explicit_input_fields": {
+            "rush_yd": -2
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20,
+            "rush_yd": -2
+          }
+        },
+        {
+          "fixture": "half_td_over",
+          "target": "pass_td",
+          "line": 1.5,
+          "selected_side": "over",
+          "actual": 2,
+          "state": "hit",
+          "explicit_input_fields": {
+            "pass_td": 2
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20,
+            "pass_td": 2
+          }
+        },
+        {
+          "fixture": "half_completions_under_loss",
+          "target": "pass_cmp",
+          "line": 19.5,
+          "selected_side": "under",
+          "actual": 20,
+          "state": "miss",
+          "explicit_input_fields": {
+            "pass_cmp": 20
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20,
+            "pass_cmp": 20
+          }
+        },
+        {
+          "fixture": "whole_count_push",
+          "target": "rec",
+          "line": 4,
+          "selected_side": "over",
+          "actual": 4,
+          "state": "push",
+          "explicit_input_fields": {
+            "rec": 4
+          },
+          "retained_input_fields": {
+            "gp": 1,
+            "off_snp": 20,
+            "rec": 4
+          }
+        }
+      ],
+      "fictional_side_counts": {
+        "over": {
+          "selected": 3,
+          "wins": 1,
+          "losses": 1,
+          "decided": 2,
+          "hit_rate": 0.5,
+          "push": 1,
+          "unresolved": 0
+        },
+        "under": {
+          "selected": 5,
+          "wins": 2,
+          "losses": 1,
+          "decided": 3,
+          "hit_rate": 0.6666666666666666,
+          "push": 0,
+          "unresolved": 2
+        }
+      },
+      "fictional_combined": {
+        "hit": 3,
+        "miss": 2,
+        "push": 1,
+        "dnp": 0,
+        "unresolved": 2,
+        "n_decided": 5,
+        "pct": 60.0
+      },
+      "null_projection_producer": {
+        "proj": null,
+        "td_chance": null
+      },
+      "sparse_absence_note": "PR1 inference of absent zero is explicitly a legacy sparse adapter assumption, not authenticated reported zero."
+    }
+  },
+  "website_actual_historical_contamination_count": null,
+  "website_contamination_dependency": "Original precompaction source statistics with key-presence/null/zero provenance for each affected historical player/game/statistic, bound to original offers and grade versions. Compacted absent fields alone cannot recover it.",
+  "B_saved_original_source_presence": {
+    "source_rows_total": 661,
+    "original_selected": 427,
+    "decided": 415,
+    "unknown_selected": 12,
+    "required_component_presence": {
+      "required_cells": 439,
+      "explicit_zero_cells": 46
+    },
+    "zero_actuals_with_explicit_raw_components": 42,
+    "original_wins": 205,
+    "original_losses": 210,
+    "original_hit_rate": 0.4939759036144578,
+    "over": {
+      "wins": 109,
+      "losses": 128,
+      "decided": 237,
+      "hit_rate": 0.459915611814346
+    },
+    "under": {
+      "wins": 96,
+      "losses": 82,
+      "decided": 178,
+      "hit_rate": 0.5393258426966292
+    },
+    "always_under_same_pool": {
+      "wins": 224,
+      "losses": 191,
+      "decided": 415,
+      "hit_rate": 0.5397590361445783
+    },
+    "grade_source_sha256": "4b37b02e4ea584fbf91c21ca1fe8454c2447a68cafc154f15d431f520c73358a",
+    "raw_label_source_sha256": "1d3a256f5e3545b3c6dd1ad5ab1c788b3242587204c7e77a3c60c6b79f8cbe93",
+    "representative_boundary_checks": [
+      {
+        "side": "over",
+        "state": "WIN",
+        "target": "rush_yd",
+        "record_sha256": "c648d23bfc8426bb7dcb030b2290fc62c1da71f3e85220f732b10bba9a7e3421",
+        "independent_decimal_boundary": "PASS"
+      },
+      {
+        "side": "over",
+        "state": "LOSS",
+        "target": "pass_td",
+        "record_sha256": "02328ce75282f00b2715f96ba06f52a41f0059a05fbe9d35bbb924cfe624f903",
+        "independent_decimal_boundary": "PASS"
+      },
+      {
+        "side": "under",
+        "state": "WIN",
+        "target": "pass_att",
+        "record_sha256": "4b94f3d5e3c83805c1b7d0e595a80e74066546e510679b3c901207450b3b1b6a",
+        "independent_decimal_boundary": "PASS"
+      },
+      {
+        "side": "under",
+        "state": "LOSS",
+        "target": "pass_int",
+        "record_sha256": "eb3688781eba0f741413d3833d8047d66abd458518099e4fcfb7d3e9b896af25",
+        "independent_decimal_boundary": "PASS"
+      }
+    ],
+    "direct_website_compaction_contamination_demonstrated": false
+  },
+  "B_path": "tools/acquire_week8_grading_sources.py -> retained NFLverse CSV + ESPN finality -> tools/grade_saved_week8.py Labels.label -> tools/abc_b_local_saved_replay.py current final CSV refresh -> full_provider_prop_replay.grade -> saved rows",
+  "B_limits": "Source/source-completeness and historical revisions remain distinct from explicit local cell presence. This check does not certify every source, identity, forecast model or season, and does not establish missing-stat zero semantics for unretained feeds.",
+  "source_ref_observation": {
+    "observed_utc": "2026-11-06T00:05:54.333Z",
+    "main_sha": "fe369c7462e4e4f290727b2d03b696d28ef5454b",
+    "PR_number": 1,
+    "PR_state": "open",
+    "PR_head": "81c3fc2a612ced916f4c54814f978c509058bca5",
+    "PR_head_ref": "upgrade/phase2-reproducible-comparison",
+    "PR_base": "e336bf7a68c32267c3c3eec48892aeadcd03a90e",
+    "merged": false
+  },
+  "fits": 0,
+  "model_inference": 0,
+  "new_NFL_grades": 0,
+  "upstream_writes": 0,
+  "synthetic_grades_are_not_NFL_accuracy": true
+}

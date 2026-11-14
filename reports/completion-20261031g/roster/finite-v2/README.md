@@ -1,0 +1,31 @@
+# Finite forecasting procedure and recipe roster
+
+The canonical saved-current projection covers **641 fixed target/history/output recipes** across the located V2 library: **620 have valid complete2026Weeks1–7 scores;21 original strict-HGB recipe/output cells remain unrun**. Their weekly fitting grid has147origins; those are different counting units. A further36rows describe three registered chronological selector policies across twelve categories. No model was fitted or score recomputed for this projection.
+
+There are11 implemented fixed scientific mechanisms in the qualified numerical library, with29raw procedure strings and25normalized procedure/information-policy strings. The normalization removes declared common-feature-memory suffix aliases and the empirical-chart alias; it retains genuine objectives, role specialization, C02/D1/D2, strict information policies, histories and output products. Mean/median views,237rank representatives,982selected reproduction specs and120H-MULTI selector output recipes are not separate learner counts. The earlier shorthand26recipe count is not used as a denominator.
+
+Four distinct implemented information/update procedures are additionally recorded: qualified-query freshnessB, separately refittedC, and scheduled-team-game D1/D2. Their actual captured/unscored or prepared/unfitted states remain visible. Strict-HGB is an information-policy version of the existing objectives;2021RECENT is a source/history extension, not a new learner.
+
+[Every current fixed recipe and composite product](CURRENT_METHOD_COMPARISONS.csv) includes exact source test ID, native MAE/MSE/RMSE/bias/tails, Brier/CRPS where supported, actual tolerance numerator/denominator, coverage/fallback and null reasons. [Finite recipe/period grid](FINITE_RECIPE_CATEGORY_PERIOD_PRODUCT_GRID.csv) retains3205target/history/output/season cells and original2022RECENT proxy limitations. These are not3205independent procedures.
+
+## Explicit legacy and fixed-reference boundary
+
+The separate [retained original-shadow audit](../finite-v1/retained-references-v1/RETAINED_ORIGINAL_SHADOW_PROCEDURES.csv) confirms **24,288 original forecasts** across lab-v1.1-recent, pooled, tree, ridge_without_opponent and ridge_without_team. Their bytes are available. They are labelled UNQUALIFIED_SHADOW with a pre/post-source-digest requirement; internal feature/issuance/kickoff ordering alone does not qualify backend training, source vintage, exact fitted artifacts or publication clocks. Existing33-cell and later66-cell numerical reproductions remain unchanged. Do not turn these into blanket artifact-missing cases or automatically admit them as valid forecasts.
+
+Two fixed archived R0/provider references are separately traced with actual saved-row/horizon/source limits and not-applicable retraining. Neither is evidence of the currently served website without matching records. The legacy label census retains234strings/4832reported aggregate views and1669references. They are accountable source references pending exact code/config/row/alias qualification, not234verified independent executable algorithms. [Every current-index procedure string](ALL_CURRENT_PROCEDURE_STRING_CENSUS.csv) remains accounted for across272strings/124630evaluation views. The original60pathways stay in their existing map rather than expanding this finite roster with unrun library variants.
+
+## Saved-row admission at actual thresholds
+
+The [fixed Week7 admission audit](../threshold-admission-v2/THRESHOLD_ADMISSIBILITY.csv) proves eligibility row by row under a separately registered **known target kickoff time** reconstruction. Pregame schedule/position context is retained. When every consumed football row, training/prior/transform input was already eligible, age relative to the foreknown target kickoff is available at an earlier decision; this can preserve the saved feature vector without new model inference. C02 removes all explicit age columns, providing a direct interval-invariance case. An age-at-current-clock recipe would require a different reconstruction.
+
+The rolling Week6and7 audits use each authenticated source-clock batch, pregame team/position and known schedule, keeping missing queries and unavailable source information in the full offer denominator. A later nominal fitting origin can be reused only through the separately declared earlier-origin reconstruction proof: the exact eligible training prefix and all consumed inputs were already available, with unchanged deterministic settings. This does not authenticate original issuance. Current/revised football source vintages and assumed seven-day availability remain disclosed.
+
+Points never become invented probability laws. Complete retained GLM/fallback parameters support actual-line probabilities; leaf IDs/quantiles/CRPS alone do not. The separate restored-model histogram lookup recovers baseLeaf/C02 support/weights/prior without model.predict/apply/refitting and receives its own law-coverage evaluation version. D1/D2model recovery remains a narrower dependency. Bookmaker nonvoid rules, prices and profitability stay separate from conditional-appearance statistical probabilities.
+
+## Operational versus scientific claim requirements
+
+Target/scoring parity, qualified source/identity, recoverable exact inputs/models, deterministic runtime, missing/fallback/stale-source behavior and tested rollback remain operational requirements under the retained owner’s actual admission policy. Matched-incumbent and later-confirmation evidence constrain scientific claims and recommendations according to that policy; they are **not newly imposed universal prerequisites or a blanket waiting period** for every provisional point release. No V2 merger, publisher or production selection change is authorized here.
+
+## Preserved metadata correction
+
+The first projection mistakenly treated canonical blank-week full-period rows as missing, excluding63empirical and63HGB completed recipes. Version2 accepts the source’s blank/ALL encoding and restores their exact source-bound values. The126false gaps are corrected without refitting or rescoring. Version1bytes and its finding are retained; the numerical champion scores and forecasts never changed.

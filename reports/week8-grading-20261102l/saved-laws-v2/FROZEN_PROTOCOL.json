@@ -1,0 +1,1013 @@
+{
+  "version": "v2-week8-original-saved-law-lookup-at-retained-threshold-v1",
+  "at_utc": "2026-11-02T19:42:56.856642+00:00",
+  "state": "FROZEN_BEFORE_NEW_LAW_LOOKUP_DIRECTION_OR_PROPER_SCORE",
+  "exposure": "Week8 point/original losses already examined; this is exposed descriptive research, not untouched validation.",
+  "sources": [
+    {
+      "capture_version": "DISTRIBUTION_WAVE",
+      "source_sha256": "bc1d42625c4e74ab4b50e0ff0cddfdb39f6e828b4b702a89e0dd6672c2084c50",
+      "receipt": "reports/continuation-20261030/distribution-wave-v2/WEEK8_CAPTURE_RECEIPT.json",
+      "receipt_sha256": "fd5ff7e3349291f7316e7252e0fd5f1eaa64587e963e0bff8d1406d8bb863545",
+      "persisted_at": "2026-10-30T00:32:08.032335+00:00"
+    },
+    {
+      "capture_version": "C02",
+      "source_sha256": "8c86b837d061dc6964907e7c900289dc452f7afb92aece7a2f4f2e48d1f5d886",
+      "receipt": "reports/continuation-20261030b/c02-future-shadow-v1/RUN_RECEIPT.json",
+      "receipt_sha256": "4049e5223b49293fc5b7c82daad3be935cc82ef6b72cbddf346aed36a127ce58",
+      "persisted_at": "2026-10-30T02:37:27.845512+00:00"
+    },
+    {
+      "capture_version": "D1_D2",
+      "source_sha256": "b41d9540df9c5912fb593d7e77f89f7bc4982b28929b7cd85c45ca36ee88714a",
+      "receipt": "reports/continuation-20261030c/qualified-defense-information-v1/WEEK8_CAPTURE_RECEIPT.json",
+      "receipt_sha256": "f10518605ec4f3133e1dd6479fb22ab11e12219f9c2c995f25d5b844fe81bf9a",
+      "persisted_at": "2026-10-30T17:17:39.984596+00:00"
+    }
+  ],
+  "eligible_law_offer_rows": 16268,
+  "learned_histogram_model_files": 160,
+  "excluded_source_rows": {
+    "NO_PRIMARY_PROVIDER_LINE": 22764,
+    "UNISSUED_OR_NOT_T90": 112
+  },
+  "rule": "P2 higher valid over/under probability; tie abstains. Original mean/median summaries compared before scoring; mean and median are views of the same law, not independent methods.",
+  "law_contract": "Exact original parametric law or32 original saved leaf IDs\u2192normalized retained histograms plus same-fit5%role prior; no predict/apply/fit/transform. Full count/signed support, no calibration/tail floor.",
+  "probability_contract": "Conditional modeled appearance; bookmaker nonvoid conditioning unestablished. Half categorical Brier across over/under/push, supported logs with impossible events Infinity. No prices, EV or returns.",
+  "references": "50/50 on exactly matching half-point/no-push final masks only; same-fit earlier-estimated role/global prior law, separately scored. No fitted prevalence from evaluated outcomes. Market probabilities absent.",
+  "chronology": "Early saved forecasts joined to later qualified retained T90 provider-labelled thresholds. This is retrospective rule replay, not an originally issued pick or a pure same-information learner comparison.",
+  "models": [
+    {
+      "model_sha256": "8aff3732bb76cc5b64e991847666ea1d5154e325573e884824e82f452a42526d",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_yd-H-CURRENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "2c6089cb5ebba139012e4c2981d3dc0c9b1bbefe7911302fcd5033d67f07dde4",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "729cb65553da2d9ad10f017452e4b6ab55dd8f11e1e9b7cc02b936c15a6fb663",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_yd-H-RECENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "00d66353d80f301b26c57e42348835c61b3799277757c4ec8a3858f15248c09c",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "8e90cc80f0fa799c6e2cc24f24e865c9a9d91a99cb5e698dc0abee500048bc98",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_yd-H-MULTI-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "202fcdb5c6d1ae4a32814985da2d32eadf22fa6bfb8320f907cc6ff4dca98b0b",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "6504569e00e2ad6e899bd70b91eee0232feb3f2738a2262fda9c7f583d65eea6",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_yd-H-CURRENT-STRICT-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "d091c3a05e602e12c0595572c32acc8e47dec3ccfc286749a462147b73fe313f",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "16d08c2f91140f69ccf17767b2c87fac434feeedf1951b75e84d1266ea4bd6e9",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_td-H-CURRENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "1ba067295f0d45f5be4677fa3ad4ee18d36305406dbbf61d15568b7f34156ac7",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "efd772448aa45f73607440a8a69ca6a534280a57598f5c444f37821b8fe01d1d",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_td-H-RECENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "2bf82f20c194543e4ed76c5cacf6d3ba34e3ee7c9c16e79345ef7681ba5db372",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "d237710f33aead656f252a7590c760814881f063d95641d4ad5925f0704d50ea",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_td-H-MULTI-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "086baae1290b2bc2c56064f5245faee367aa210ced9980bbfef5f898179bc800",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "b5c7826fa890fac8f7e3bd59e2062147dd4fafae861ab983cd3f0f8132c848ec",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_td-H-CURRENT-STRICT-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "238694eb447b1d0689f6fcc735aaed15a38ef1a83b4c2d5f34c2ba63ba134c7f",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "45d951c0f7d1bdc9f923e0853715bf1b8e131b0aca191ec0073aa93ae57aff83",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_cmp-H-CURRENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "a25ab3cb89443ec9fa96bd002d17a968f94485b61a8dd9ae6d743907063deb9a",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "b8c6a79085a8ed41e4b1ff4edd2c8322933231012e9553035807d2d496852de4",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_cmp-H-RECENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "0e7ace347c0df16568c011def0058f3f22a8b2e526736856c00fc0c1e78ed053",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "a2f60a6ec1c11de4791503aadb7080ece417f6dde36a6aa5cf71270c4f88f3ab",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_cmp-H-MULTI-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "f8b08aa0e456b8d460a3df63c5d150a16102f1683e2f571cb3776a66c96856ff",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "6dd94eba80c3b0a9e2de225455eb2d0a1ac7e9e6a57ad7a8416b9edcec49cc4b",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_cmp-H-CURRENT-STRICT-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "a99811991d68370020028713e0f91d3d5b1862227e0cd5c353662e515030259a",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "008f85e2506c40bec5a28ec1a49ec1408dcdb689f63c054bdada0721692161fc",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_att-H-CURRENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "e6ef8dd429c034b2cb11b3a164a92e83d1988200373808c8c5f76b1f56d1fc37",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "da99ae547ced615c416876c0b5ce1295564a24d1a6d9e01b25c696db43ac4fd2",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_att-H-RECENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "f8f4b47dbb91e01648532074ac7c73c4a55848013cda1dd58b141e82c1ad54e1",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "ee5df54096a741b854dcc93965f254ec3d3bd2798bc4c5a5f33b451d37cc358e",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_att-H-MULTI-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "f64ac90c05e32a34f69cfb5dac7a6696fcf06b404a431243fae2b017b76fa6cf",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "a361c3879135f9013214e41b02c6e9ecd63c96d2e8f95e6a352f16ce7c9a298f",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_att-H-CURRENT-STRICT-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "f62d365aec0a80135c5165cdfc016bf7a3f21951087e02b39f17b617648dc058",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "34ce9b54352c114301b29229f1a429d024beb2b1ac4196e906c4b1803451e07b",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_int-H-CURRENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "952311e4ac183a0e2153b0e35e77797685206a15d578b36cc16e0e4de20ce3e8",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "fa3191a2aa91baff0e3376ec468373a1a7485ab2f06f5fda0c4760f472cc6613",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_int-H-RECENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "f5bcf2e27073c3cd2d7b3178b4a14c1319c344d309a858533089381689dfaa37",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "490643bab070c902ccee4c6b8c461bba8601039fd49e422f6bc83ee24c2369ef",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_int-H-MULTI-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "a3935666412fe5fb720db369a4e2b68bcc0da68d5ad70660a7aafe672e6be617",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "5eec97ae1af081a65a74c70c8400ba88a73f8585af5c135ae9c9b5006f10cc9e",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-pass_int-H-CURRENT-STRICT-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "28f8c9c20e24879b9f86f95b4b4fce435b7df81430aec05e3fa9e8058550abed",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "9c48a00de41899160a8e634e32a75aac23481ffe7edd463a471687a119fbbcba",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rush_yd-H-CURRENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "27a1abc78fd69f8066891b41bcfc8b34a4f05baed261981e94a1af7fee784f9a",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "0900aeb1c7433534e01c632933f9b82eeb9e10cd94fd301639da193d3f62b336",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rush_yd-H-RECENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "81eb0ff04e6f08a17c0cfde3f5a15ba5fde92769db5873acd706987d5cf49207",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "175d2796e37de05777202ff5eda7f4e07371fb3f471b447a7a5707e4d4214e6b",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rush_yd-H-MULTI-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "e2f43ead0c2a2a1d1dcc7a8a9f51c560812683be1a158004d26a298c90dee039",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "3a41c8168a3a36e9f7f4f22d0bde50b83ba83bc26fa32c54cc6a415d8db4f186",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rush_yd-H-CURRENT-STRICT-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "39b24c2289ea87298403b148bf8ff5232532f69bea051bd73a20281511815519",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "51bf217213ddde07077c0343b03582903d0ef2e3cf60f3193d60ee998746e900",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rush_att-H-CURRENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "feff7d2206e610248b8ab933742366abd8d9418069670c697d95c94ace0207ba",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "27b7854426748296e91b6d03659f329373c03ec929cdfea0c80cb60fd3e304dc",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rush_att-H-RECENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "fd7d4a9d6a30f90e1eef451c681d2d9409261d4db37e9eb33f3fbe549a5fd9fc",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "9b75e31b8eadd71ecd5a127ecde377486a9b0215b1a19569cd414c6184416c10",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rush_att-H-MULTI-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "9d2c7aa23faab001cbae58d73fc5c23fc1ce24ee4200108919c18d074e14ee66",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "2982ce4f82e7b6475ce3aee04986ccda302f97bc418c3592a5f80b28192a1dd3",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rush_att-H-CURRENT-STRICT-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "b7ce5cbc3d4c246bc89ee162b0252fede63ce6b173df0c40e1050bcf719f10fe",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "dbc99c78bbd4cc9730300707933b7bb7554cc1f9e2b9da2da611d6b6e5f08c12",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rec-H-CURRENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "ae850479dd25dcb95dfd7162625dc5f10c4ea7f494b0ae35fad356e3885496d5",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "d4a4f296b8d79297727f9b0297067f28f2c08af569f99af8dd50222b5d70f72e",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rec-H-RECENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "2b75802c8e800b692f2bc659dfb09009525dab8a68744206a0f7382f6f97e8a9",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "2a46b60cdb70da5fd58b7c0de0ee622c523edd1582abf37829e34d539f84d15a",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rec-H-MULTI-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "5e21c3cdb4cc6ac92aeae92e41b16e832000693227930c64fac0e292a3e0787b",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "f79f65ebed5900416b751222629eed559e03249e36dcca423484d73070cf4a53",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rec-H-CURRENT-STRICT-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "68149e6e086cf28a859e9a077a88e40de79f123ee06401569b8dca0d4f37b745",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "568338214530ce7d15cfe135f784c59576a8934005bb3e6022b2b2bf6a1ba8a0",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rec_yd-H-CURRENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "64a8fee0722e3809e2ef51bce47f58a85b393b9de8313994e4d5103f9cdaff65",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "369abfa8fd33f830c718c1510b01127efe50bda2eb8f9e3bdbde7cba82a9e9dd",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rec_yd-H-RECENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "e01c81bedc4e7fd8eacf65b4fe756793a3f34c2f640ea83c338b42328c5d8043",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "44df62d32916eb8d2393582465b37fb546b78b4874507f2c1cddf1d2f0b020d1",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rec_yd-H-MULTI-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "1bd70fd25231ac27d13a6a5b1150d287b68f9d8902404fcb5569927dbdba9764",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "689a0ac9ba9d1d18d4a6a4ccb9333e45a854d683e52887d41692f42961875243",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rec_yd-H-CURRENT-STRICT-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "bdee79bfb302e89d251f4b4dff87f400cd2b5c6b80f2bca152c9a6bb3e2aecb2",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "8df7d79e31f463ed45357ed0b4225707359950feb75b26a8714131a72c5f03d4",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rush_rec_yd-H-CURRENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "1cfdbdf12313629fc973c9ce4634c0ebbd421f5a091730d9bdc6136d2c86ba31",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "733736280ec40d4e66cf15b8a4775d7a5379f0e852e6d68df71aa76cbecc8357",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rush_rec_yd-H-RECENT-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "57c1f48f24e9ca9659500d0a1c7b02add5d092d4df863046c651f9b26c70ae5f",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "56220c2768f69194029735cb39053665fbb2a8a743fa0a6a68d603981525c4be",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rush_rec_yd-H-MULTI-COMMON-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "62f84134bdce1b675e4c9b1d286c4db5c279bdb3889e3cd43a09681fa6518168",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "ccbc7d46108888f5b44989faad4e2a7d917da3eb75057b15b4db27d6af0dcece",
+      "fit_receipt": "reports/continuation-20261030/distribution-wave-v2/W08-rush_rec_yd-H-CURRENT-STRICT-ordered_leaf_cdf-FIT.json",
+      "fit_sha256": "1bf9cf902f9f396629ee30b029437d0e96a132d0cf5cb18d19930394ff3eb70a",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "4d95db71753445ef839939170c6755a2a2c515c1305a798486e1f50069db0932",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_yd--H-CURRENT-COMMON-FIT.json",
+      "fit_sha256": "e41786a18776a84f18aad72193a38fee60c0cf604cc0f2557b1ef16518c7f2b1",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "9f753e81cd61c856062a89c883f15335d88d0f9d33d10f6d2e26b035bf273285",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_yd--H-RECENT-COMMON-FIT.json",
+      "fit_sha256": "c0f9375f7df92aa9b4e6b660acb6035eccc49e4c8d5ef235a3da178a5a0ae0e6",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "4fd38d3901d6da6b38876b81ee03fc7097917e6866d5484ffda24910aed53260",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_yd--H-MULTI-COMMON-FIT.json",
+      "fit_sha256": "6dfe9237f53db0728a4c46e6c2e68697d1b8ebdb95e57e1aa5e414b41dca9ba1",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "d9274bc98ab9632898d9c5f5abe49fbb5ef6d0ef5a73210be3f290d70f20aa5f",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_yd--H-CURRENT-STRICT-FIT.json",
+      "fit_sha256": "c875414ec3fe476af8d76ded483118443953266e5bda9466c229a46ff71144a4",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "736d72ee644ba63575ca8e8d974528c3b45290280cc5cc3609bb2663f95b0cd5",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_td--H-CURRENT-COMMON-FIT.json",
+      "fit_sha256": "ee1e1e69e919d634f17642d6481230148b20f78e8667a641d714e27d9d52c4c1",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "788bec2480e2ddbe989c6c57579728ceb4fae403f9b5bac2b21df9dcc3a5807e",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_td--H-RECENT-COMMON-FIT.json",
+      "fit_sha256": "b66e165a9d02024438c791a382943b526ad57309b0e054ca4124ae60fd0299dd",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "b0b52b0bcd373e7b98e4f3ebed352f565e31b7eb232ef86f89902d32f665651f",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_td--H-MULTI-COMMON-FIT.json",
+      "fit_sha256": "f187444223ec4d4004dd5f36fd12bc88a56c5183d7b4d7f05beb3f57029ad3a3",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "64f50361c769a1c41153fdfb580ee7c215c7dc52f7be8a0906d21bfedb9df013",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_td--H-CURRENT-STRICT-FIT.json",
+      "fit_sha256": "bbbba8754cf059c3d1110a3fed7b2848cdeb8f0e806c67159e70bad648b589ce",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "412f504b00b53d393be3b9a4e2ded70e20ede82ba4fd16287c3c8711a6055e0c",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_cmp--H-CURRENT-COMMON-FIT.json",
+      "fit_sha256": "a6d0b836f30c2d83551fb7c075bafb742c2a794da3bea94b7b122b47eb499aef",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "4fa928832228b76fcc47f295cf6d25f92d479c3b794336e4a8f04b95f282a421",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_cmp--H-RECENT-COMMON-FIT.json",
+      "fit_sha256": "b60d0610db4338b616589ac7402ba50f9778390b2a8dda1c0d80ca7c327ecb95",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "ac9148205b6a71b86d165e3c0e7bdb00a75a00e89b4ad149bfc54a030c2b004a",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_cmp--H-MULTI-COMMON-FIT.json",
+      "fit_sha256": "965eb25d4e7a673165660faa4af50aadc3e9c1f195a0e3f203e4889e5d2be184",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "efed0f3b67bd69c106f4480898beb33c479150e283c2265fba100a18b1cf0f8d",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_cmp--H-CURRENT-STRICT-FIT.json",
+      "fit_sha256": "68d6bd1dbbaff4f6591d98759c07e697d801c92ee6db6416292509f10303d868",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "8e12fbdfa89a27067a86d5cb74ed28769b579682d227a74d9a0e2a678a176e58",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_att--H-CURRENT-COMMON-FIT.json",
+      "fit_sha256": "e51727e80643558bd8f435689e0614ab6fe58b04740a30611990bbd9881a9644",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "d10e0eea1908fac32bc2c387a8283bd4b9c7d99583f45de1e85c3dbaf7bdd475",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_att--H-RECENT-COMMON-FIT.json",
+      "fit_sha256": "b1d7d2ad19ef7c67b320fbf3c7179b20ec6af8b29be8c2730e3388c29e2db941",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "d12091140acc4395b31f94296a6707c1722ae71f187567c5ae64955be93eb5e6",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_att--H-MULTI-COMMON-FIT.json",
+      "fit_sha256": "1361c91c8b18a444804de476dd50764bb92fd47294d6c933b6fd8726aec740d2",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "0bac0e8a9b83af2582b1d7dab99c20787df7cf602a0f653e9926510dbd570db3",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_att--H-CURRENT-STRICT-FIT.json",
+      "fit_sha256": "edddedeeaab2a02dbc047f6bbdeaed945d880e6f4645fa2a11ff690b7cb16e5c",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "4390dc7c9c02e3ace4bbefbccc7964ced884aee60f5896953e2d935849a3c8e0",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_int--H-CURRENT-COMMON-FIT.json",
+      "fit_sha256": "83bf7d601c3d27b95ab38b582f35d4a52f054e27addcc423bf40448baaede098",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "6078d8e711cc35e65bc991e7ce71270e7cb1ef4784d2c2a633a74f746a2cabf8",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_int--H-RECENT-COMMON-FIT.json",
+      "fit_sha256": "9ad8ed57b1fdf67819a5ebbae00088954abc39fae434725b8a808779462e87d1",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "52ab9bf1b9dbb5ebfcd1cf0cd27056f8db3cc3c257d473138f8bc61d72957709",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_int--H-MULTI-COMMON-FIT.json",
+      "fit_sha256": "552c2f6c978444290d6a23674c7b6b56630ff63d1dfc0d387ce4d60f02f6871c",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "ef47e9b932cc0cf238d9e7daa2c8afa574d0efb853c6aa4dd3778dd598c74848",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/pass_int--H-CURRENT-STRICT-FIT.json",
+      "fit_sha256": "79125486265d5bbc5f34c33167237ee1f83ffe6d708053631118cbc6d7ab8ff7",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "b2e60dd17a7cc8573ee3c619c27e7782ff7310ff35130cf4d4518cd944352531",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rush_yd--H-CURRENT-COMMON-FIT.json",
+      "fit_sha256": "713a2924769c4759b32d7d3a5bed0b5ad5bfbb50975301d44b8e9832495614e8",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "1ef69646a7097496902015664cfb728906a98f8bebddcb57b7576f9e712f0de1",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rush_yd--H-RECENT-COMMON-FIT.json",
+      "fit_sha256": "bdfb9beca0037e6f9844c4962bb9ebceb0804252eb560a967bab7567c8090805",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "ef3118637012ccda0266c5a4e669777774ce055796f220184abdf17de20c13da",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rush_yd--H-MULTI-COMMON-FIT.json",
+      "fit_sha256": "24c3d2460e02d99c5d258f77649e631244fae8711437e8f280223c990ff6947c",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "f39e95e0f63e3da01b2c587cb2148a58efb3eb0fd5c088d4755caa94ba0426f2",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rush_yd--H-CURRENT-STRICT-FIT.json",
+      "fit_sha256": "448730d528c61bdd1b453cd65b4f6a02a5342b5568a1ac1def5b49e6f9c24f96",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "51e5d6c2594141ce86734be7186c1143301435b915c8938a68212af0ba361e91",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rush_att--H-CURRENT-COMMON-FIT.json",
+      "fit_sha256": "5a59606109f7ab81d03fb32482a7142e0a35844488348656f123e0a2cf0b77c4",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "0103e8a80540c88b2bb053d6ab50e20d81609185915f7a05f0b718a98a0c8914",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rush_att--H-RECENT-COMMON-FIT.json",
+      "fit_sha256": "239e05f9017f34f404ff0198cb840329b34279c35ca88f2d0f6241989af92ba3",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "17f0bef0d496e9bd6d2f806ddb28a04bbc9497b8bcaba3758cfdc1e71bd70e7c",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rush_att--H-MULTI-COMMON-FIT.json",
+      "fit_sha256": "77756bb9508e5eabcbab40b4d8bcdfc496f1e5bb5459bfab39e22df1079ca3b6",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "121de24bcd164063fcc37dda3882aee7138970aaa209efbd03a80ffea2980cf6",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rush_att--H-CURRENT-STRICT-FIT.json",
+      "fit_sha256": "5e7710d5c0d40a0aff1cee211ad72fa9e9311c3e9a96ca8fa2fd34aa25aeb4ab",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "ef4520012dda9950b4ff252c59e49d5b56c27ae45307823ee533880af07767d1",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rec--H-CURRENT-COMMON-FIT.json",
+      "fit_sha256": "5308298a98cccd193e1c447b1caef98bdfd80dfa6d8c313771d4ef14081574c9",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "422f411e16dcb0bf7b8386084d4e25b404670a864e85b5b8dfe8d1b3ab3c2e67",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rec--H-RECENT-COMMON-FIT.json",
+      "fit_sha256": "16cac83b04d6fed84d8c20aceeab03ee999604c6c1d8b0ed190fe72d9cd2d13c",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "a32532cd4a8b38c595e41f0cbf4dd0e032c023413783d63125f5fdd75131fa5c",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rec--H-MULTI-COMMON-FIT.json",
+      "fit_sha256": "288584b1b02c97385d00531bb3f6e9f01cb4aebf6c93fc3726f4b123c7e98a7e",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "f3b206a579e3f307d9aec56e5718a526406904ea43864bcd23c822a60503b6ec",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rec--H-CURRENT-STRICT-FIT.json",
+      "fit_sha256": "8cfcc1fb2ba5e1abd36df02a9e1f09ecc59c6786f2515adf0c77f58d3339da09",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "fe7d95766d1ab0882137c525a75dfdf0298dc09c58650e54b0fc7d1db1e76c85",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rec_yd--H-CURRENT-COMMON-FIT.json",
+      "fit_sha256": "827a88884973fa7e72cce9bbf81c28d778cba03a78a08b32171fcd34ec659678",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "535780cf4ce6fecab6179dcde4daf529e0fabaedbee57c14b7ecbfcbe89bf687",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rec_yd--H-RECENT-COMMON-FIT.json",
+      "fit_sha256": "a85d3f0e2aa666cb8f26232b6739f6372a9a62fd5938cfc4a480ecd1ea9fb9dc",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "eb223501032511d56cf45d9c365f7e49db1e136ec17313e681a865abddd9357b",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rec_yd--H-MULTI-COMMON-FIT.json",
+      "fit_sha256": "eea46514ad06457281c4c37f04b0f81c292254be21d54f2d7b078b430bcb07ea",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "6126281b34da712ff01fa76ff9988408fbb67b7b1ae6cedbcbc5f612764a1f32",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rec_yd--H-CURRENT-STRICT-FIT.json",
+      "fit_sha256": "299a5da54381b57793c26058dc70287f97c957b61caa87b4702e9ffcdbe155c5",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "ea5a1b26fb97db7a3b7b3d07477bc68e231b8658bcdfdab37c7fecfde6215954",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rush_rec_yd--H-CURRENT-COMMON-FIT.json",
+      "fit_sha256": "f8ca07d6ac9b6e76ecbf26376b6e8c3131eea6f6cc82bbd0d0fda9042b4ad3c6",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "e079d29240944ded2a33d3f000d72f71e8ff338e068893bdad2b448de949ab88",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rush_rec_yd--H-RECENT-COMMON-FIT.json",
+      "fit_sha256": "ab58ae7d08c430dcec52122c981ef971977f38e7f327fce908506861be81baa7",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "8d1c62a21d10b35ea62e51793bbe263d8a648d3e88efaf3dc204813a01fe2dfc",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rush_rec_yd--H-MULTI-COMMON-FIT.json",
+      "fit_sha256": "f308f3bdcd10b1adac7889a9e7ec4b200749594578fba4c0509f3e1b3b653048",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "582e120f38920aceeb8e822a54375d16379529d214bd7151392bf50b4e693f8b",
+      "fit_receipt": "reports/continuation-20261030b/c02-future-shadow-v1/rush_rec_yd--H-CURRENT-STRICT-FIT.json",
+      "fit_sha256": "217d07b6523dc7632f1a6ae2f9c45c48f8b159da3ec06954c904e898912b724c",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "df5608dbd7eb58b294469e91714a9f86d0cbb3d00463cb9beae661668b42260d",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_yd--H-CURRENT-COMMON-D1-FIT.json",
+      "fit_sha256": "1df0acb63ceb443685f079a9a88db3f783fbd7bbb05ecf313889dd96aa613c0d",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "e37cd0fdf9498eb1280c441d0f851f26795dfcae1474bef48881c9ea03cd3549",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_yd--H-CURRENT-COMMON-D2-FIT.json",
+      "fit_sha256": "17ed188cf1881157dd649f9b4f8166cbfd58db06aef48420f1df85df56fa4ddf",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "529755eff51f6dab0def32fa23a6dea357285cefdc0c01d40959471ee09ebf83",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_yd--H-RECENT-COMMON-D1-FIT.json",
+      "fit_sha256": "72ea057fae6dbfd9b0afe8844c76fd2edfbe5247ea0ea72afdcf31b2c3c76533",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "51352b5fb50ceea571609fea9f4153b4ffc517a077c069e6f951082a428a88bd",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_yd--H-RECENT-COMMON-D2-FIT.json",
+      "fit_sha256": "452a7429b786a392585f8c59e8c4c8cbeb56f6254414e75f090bd57a7e4688f7",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "44347bd205d315d8c96578e033efd3ab2ac2abec0f8c0f29fe1311e1f0c1b40d",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_yd--H-MULTI-COMMON-D1-FIT.json",
+      "fit_sha256": "1cc053125566faac68b135a9bc2591879836417efbab45e7d3d56fd0741aa2c8",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "0be640fd4ab25312cfabc2c616c55b05b705976ac1d1138158612c34adc188d0",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_yd--H-MULTI-COMMON-D2-FIT.json",
+      "fit_sha256": "40d826363e031070b3f6bbe34e750d584eb5856e9d65537749d9b9e27525f6b2",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "fc45c410e935a2c641517ad79f12436bac3f15725deb9ea756ff0bcce2845bae",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_yd--H-CURRENT-STRICT-D1-FIT.json",
+      "fit_sha256": "bb2f3fb594ae4cbd8dae572d6e8d81fefaedb892cfd3d53fb44bef49054fddc1",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "86e48dc5727b97046bc4eadd7f1eaad0c8c1dce6990ef0106c54420b4207a8a1",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_yd--H-CURRENT-STRICT-D2-FIT.json",
+      "fit_sha256": "f9aa6704ee84811147c88bd6f0276d5476eb841b8b6e662aada0f460c17e9d73",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "bccc5f33c757b1d5e8d0b0e4be4ba9cb675bd96066cbf1ccea6f53313b7143ac",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_td--H-CURRENT-COMMON-D1-FIT.json",
+      "fit_sha256": "c98eb73fe8362b9593e11996bf1eabd340608f3d2731db90c2241718f0e4e29f",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "5f4773b8e3786b99fa971516743c043948e0fbcf095d8029fbd864e8c5d46ea2",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_td--H-CURRENT-COMMON-D2-FIT.json",
+      "fit_sha256": "9fcb4b2f19ac432f225670082094e6bf21be422684b4c9e835aa0736a270fd23",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "56bc9648115909ec0226bca0a284bb219d0f8adbb4924fa59d6076e7590f3db7",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_td--H-RECENT-COMMON-D1-FIT.json",
+      "fit_sha256": "d39248289f4a7c8c3872740a880e6319b81387e2cd2e3b8a917b59c8267645a0",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "ee05d47d82634072a7852f52a5a2f755991a84f103bee06f5f141d6e8b40cdc5",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_td--H-RECENT-COMMON-D2-FIT.json",
+      "fit_sha256": "1ee31288acef3db93991c16c6bc78693ba23b3cc85afb4fee013fef3b4362a1a",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "43d96847ea854b7d5aff97bff8e79a3f1fe4ac4e691de5e1943507881a953da4",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_td--H-MULTI-COMMON-D1-FIT.json",
+      "fit_sha256": "c581306a55ab14153932da1e51fa99d735eeb9ef9761199262a1bb11d26ff07a",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "d8d6c9c335cc535af03db5d0bb04f4b3ab68b9d7adff31b4a5280da02b0ddd60",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_td--H-MULTI-COMMON-D2-FIT.json",
+      "fit_sha256": "84c02c602a545965cc013a18cd0a4baddcb23a649b64061944414b93524d67f7",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "e0dc89ac2b1f4cc0d7c26dd651704323524ed9a03ac070e413f6b2058ccf03a6",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_td--H-CURRENT-STRICT-D1-FIT.json",
+      "fit_sha256": "7bd0676d7155c60bd4200f67f1e4eecfcd41e840112d82853417c3ba196ebd68",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "f5f921cb7e1d7dc7eb8e1c0e66243358873f7e3a677840844bc0d79dfe3641d7",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_td--H-CURRENT-STRICT-D2-FIT.json",
+      "fit_sha256": "8192b995e782cebc94f3dedc932f54beee2c7596a2e7f0f07d46fb887a261606",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "4d39bc2414589c59da869878abd6d9a4df8eb8b760052133c846f7f20429582c",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_cmp--H-CURRENT-COMMON-D1-FIT.json",
+      "fit_sha256": "1fda2789572caa0747ca164e73c60f68e99c231f854d872d7f4df6f915f64225",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "39254791007bd830d45a3953691be0e09bd62dfca9bb3fb4480ab9ba92785472",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_cmp--H-CURRENT-COMMON-D2-FIT.json",
+      "fit_sha256": "7492e4e3771355f55031ae5dcf51cc1c7a688e8b6970409e9982357e5ba8ab80",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "a2be26d22fbffdd70c34148b1c9ea6be34e056c1b06c65ebe285b50cc1cc5257",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_cmp--H-RECENT-COMMON-D1-FIT.json",
+      "fit_sha256": "81b12d5c11728c6b7e457114dd1d9ba1358860264e927b8c7e36673ec583c213",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "b15542eda9eb1f5d8414f64293ee20eb3074e2bf794018c67367580ff630ca98",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_cmp--H-RECENT-COMMON-D2-FIT.json",
+      "fit_sha256": "8ae553340b3840d7e00d21ce6f25c3c6f6cf702dd76994e8d3be0329c501d9c3",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "a1ad057b1e2272bacd962101e5dbfa2fff01aa28195a10d1ab2c26bec8825c23",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_cmp--H-MULTI-COMMON-D1-FIT.json",
+      "fit_sha256": "086b5d1b68c9b367f4e1a4937b0fb94d69175781f757ce6fb880350d7ca7068f",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "619654fcfdf9a308d6579a23a10f4eb6812c44b01b330ef11123186ed193d1c5",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_cmp--H-MULTI-COMMON-D2-FIT.json",
+      "fit_sha256": "f92297b2705409ee15698b66524b4790532d80f98c4e308934eba0eda34d9544",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "a4869f6232438d946f528ad6947c9baa1fb05bb4e33acb5dcddfd3315e39cccc",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_cmp--H-CURRENT-STRICT-D1-FIT.json",
+      "fit_sha256": "c8feae45084d213c7079612089641caeed3579d5513066809636109103f35b69",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "f97b777edcb6c1a682acb4dc90a5332dbc16a34a992a3ed8d87f11cf8a4267e5",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_cmp--H-CURRENT-STRICT-D2-FIT.json",
+      "fit_sha256": "45b6ce50a94a0a45cf6a1d426438a5633ec6ab5199989d0e6271b1d739bedc7b",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "26cd3845bdb89743a9e6532ef66bd4d814b6269268c547147bc3204dd16ef600",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_att--H-CURRENT-COMMON-D1-FIT.json",
+      "fit_sha256": "53b1bde0b27862bcce2dfc9f84671f179854edaeca262046b058aa335de9fecd",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "8beda93d08d1c827104ac99f02cef28eb62a459691a6f1781d28a6a321e39846",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_att--H-CURRENT-COMMON-D2-FIT.json",
+      "fit_sha256": "9a8371f0b2f0cf542aff0322f8bb8399d9753f7a32b3f9439ec1d2eadfeba075",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "9d9cc34e71d42b9ad7b160298fd3754644da9f07b4201b642974e6e58e58f2bc",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_att--H-RECENT-COMMON-D1-FIT.json",
+      "fit_sha256": "96077f9ad3fd96ac847eaba3965f75e54fa25fbd4d5b073e46f15d39201abb3c",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "8d47460611abf8589be2be4e81cb66dd6beabfe9b9b4c80a7dacc0e14d8508d3",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_att--H-RECENT-COMMON-D2-FIT.json",
+      "fit_sha256": "c5e9adcf54234afb3114f03d4c5be2024b4ef52ddb0b49bcc21468888e8496d2",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "9a6dd55e6ad1c18b60eba26ebda83414665002c5df042982400886a2d3b3813e",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_att--H-MULTI-COMMON-D1-FIT.json",
+      "fit_sha256": "7b7619ec99af5631868e8c9534b0d656851af1085f4dcdfc71bdb455dd449bfb",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "6774c1f1d516cc72e71a63d52f67ec8d5af342ccbc06c9c0bd502a4849949d1c",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_att--H-MULTI-COMMON-D2-FIT.json",
+      "fit_sha256": "b792e717fb34649eb27d8ec7f81e59c7de3e472ab28dd428a6e1a8363420173b",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "6790738698ec5f3ce69569c16df165bc274696e88778745e5a85ef348a360dab",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_att--H-CURRENT-STRICT-D1-FIT.json",
+      "fit_sha256": "14beacfd2eb994d513931a25941517926dfcd1c7bd585bb659e5c9aa5ef1f112",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "df3b0e4a3fa266caa4d29708f7e20d3b80454c84e2f96e6fe58f6d7f9a77575b",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_att--H-CURRENT-STRICT-D2-FIT.json",
+      "fit_sha256": "4c021d115bc68ec2ed3713fb94145312ff657079eca924c4cd04509570834bf7",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "bf1c4d6e7b22c96436be66697ada35f0fae76ca84359a08f053202610be84b16",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_int--H-CURRENT-COMMON-D1-FIT.json",
+      "fit_sha256": "b2b84e1af78c4146ff740989336380450fc64d7ef36a5d5a58e86e6da1e3a8ec",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "b35b36a040b65ac745922eb5a7bf87e13f8d8a598075f744dd3588ede5f15081",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_int--H-CURRENT-COMMON-D2-FIT.json",
+      "fit_sha256": "56dea97aa1487c9ac639538eb83a0b09575a6071df63d1095a565bfe58cf90b5",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "7a69d95e695c415fbfb48a50ef1d9f313d33a37050520c8bc58ef4a53d840ff1",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_int--H-RECENT-COMMON-D1-FIT.json",
+      "fit_sha256": "55d1d18b180022c3d3bb216dfdb866dd1c477782f4aff0e6cc108361aa3c507e",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "cd39b7b414dbebdee5bcf509d4f7d6d9f5a56569579adb1a25992698f64458b9",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_int--H-RECENT-COMMON-D2-FIT.json",
+      "fit_sha256": "041ba180bf35931ab6c040b6eb33bcb1b150653cf3fef80e091875bd60880f19",
+      "training_membership_sha256": "57b67c340b4044c21e9ae3c1b4f5808909770b8f6ff2663cd0aaaaf75bfe0366"
+    },
+    {
+      "model_sha256": "ec6ed8e68a12d37e3132f1beefd69e05accdd1369e9e5b70ae8923e467a65b03",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_int--H-MULTI-COMMON-D1-FIT.json",
+      "fit_sha256": "21d88b4c1d706d58809feb7899c460289ed1860b84b701cf52fc8bf6d27c1588",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "46a7c7c70ef3d375be5b4899088440f220ae1dd62b036f7ef6e47c757f870c06",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_int--H-MULTI-COMMON-D2-FIT.json",
+      "fit_sha256": "4ef86e55086bce5c5872121d45edf4229965dbeeb6961049e70df14a2a31cd09",
+      "training_membership_sha256": "5f1fd700b9ebd8645de222cd1504409cb002f32867813d6b12400fc40ee8ade0"
+    },
+    {
+      "model_sha256": "d721489dd2ad9a0f476030403d081a39bc7f9dfd7626e186c5c7da7b273efc80",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_int--H-CURRENT-STRICT-D1-FIT.json",
+      "fit_sha256": "f30bc08f29075264a1f34e702d2b6b6996a9dbcd9c10cc13c8539e2a2f5b5d15",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "4c1cb911afc0fb1779b4b47b1472dcd182049052bf67fcd2b6d09c73945c932d",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-pass_int--H-CURRENT-STRICT-D2-FIT.json",
+      "fit_sha256": "e94ee0ea70bbf3d80db7cbe948cb34cbef1b5dce6f6c07e01b8b89e8fc810afe",
+      "training_membership_sha256": "8de77489bcaa98c5ce82475848dc720d7d65cebc36984795b1f2c6c1998eab4e"
+    },
+    {
+      "model_sha256": "4e3c188b007d05e3ca826c5dde38cd4a80eabba86dc977415990e3a9750ee424",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_yd--H-CURRENT-COMMON-D1-FIT.json",
+      "fit_sha256": "2e3d4c58e8f9c60f401fce72ee0460b1aad22c5c5475c82da7e64ab7f2bfe936",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "fafca8f591ff24e71e62f8b50ad24fa705eb5c96db1299032237bf5ef862a488",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_yd--H-CURRENT-COMMON-D2-FIT.json",
+      "fit_sha256": "26c74e7e520f9366a01f369eb35c2c0d284b95732d17b8669956c95f22cf2d11",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "ebd8e0e7cbf57d415c1aa47d35852367669fc0e3588b8b0263cd4e86c5238db5",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_yd--H-RECENT-COMMON-D1-FIT.json",
+      "fit_sha256": "043c7e2a7928ed426bb8c5f5400eb8c4fc000862cb439d099304d77dbff26f7c",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "e49c910c2b0a63e03a37945bbe54d4ea1d41ebb92db2ce04a4a88b16da89b07f",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_yd--H-RECENT-COMMON-D2-FIT.json",
+      "fit_sha256": "6f1f566b9b551df99675c09d89b3b17fed85b951ec5bb722cf856663fb5c320c",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "78f2aa1c411ac5ff8759e2c276fa02a5f0d40edb429162187c1735c6fe93096b",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_yd--H-MULTI-COMMON-D1-FIT.json",
+      "fit_sha256": "7f25fcead37bc349999fbbad87590a6fca098f017f150c079af628ff0ccaf399",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "59b1f37d964044001370f76c30754030991d8917dd085c2ea12f858f24525b2d",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_yd--H-MULTI-COMMON-D2-FIT.json",
+      "fit_sha256": "56178f7965884c9a22c91ea3a86f107370f702fd90da604d6e8509e6c939d412",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "9e2ccd15c11f43cd51d3222a14abda9732b51026349f985e278f7eb92484737c",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_yd--H-CURRENT-STRICT-D1-FIT.json",
+      "fit_sha256": "a88dee7ed2e0c4789d78a8447c473d7f6203476966e6da5a64be6d2d1c5bb858",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "a2f9a81bcc8cc6bd02f9ea1f0dc7676044df880ef02004c286467616ae799a29",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_yd--H-CURRENT-STRICT-D2-FIT.json",
+      "fit_sha256": "581f6c03a2bc66c8a5f0db5199451a53ba43276337eb72bfc7274651f45980ee",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "9c1a1de8639e5132b3b42f03a9c56682ea6aa26399bfaa87b8a39368d8cd706e",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_att--H-CURRENT-COMMON-D1-FIT.json",
+      "fit_sha256": "9fbd9588a578e27f35ae1eca2b4170477a6d9b01b21d9560399fff70297ec731",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "60668a806cf316e38dfc808e23cad33d5d1c646b5c95a12597d5d0e75c944138",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_att--H-CURRENT-COMMON-D2-FIT.json",
+      "fit_sha256": "9d3322201b9e1705a8a3f1b5c56598bccf43a637dc8305e18ed0187bc1b44bf0",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "1501551797967f55f323a59ad3513116c8225905d1f706e5fbe910fed51efd8f",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_att--H-RECENT-COMMON-D1-FIT.json",
+      "fit_sha256": "dacba1dcbf19aa72908b6b3c3541bc45dc04392f1f974bec8216804a345c04d6",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "7ab9e73bc03137d9d22c71a4de1477d9b459f50429145a0e0d7483470391726d",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_att--H-RECENT-COMMON-D2-FIT.json",
+      "fit_sha256": "554634d9a1d5f08bce184a6185480b38d452ccf4a6e8b745e56ff88c4db22fc2",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "6ff5491dd7ae5d2a3c7a8164d97477485b20d2d81bdae0bb448edbf5466d5a3f",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_att--H-MULTI-COMMON-D1-FIT.json",
+      "fit_sha256": "6f14ddce076d8253839834165913772ad55529cfc8588bd3b831380fab96176f",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "63efd1c1a395ba6c5ff2fbc81759f031bcdf8fea76d79737cda9fba99ab90dc3",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_att--H-MULTI-COMMON-D2-FIT.json",
+      "fit_sha256": "c8543ffd1ec4c07e42be8e588ecac2d587cd02e3adc3d0f7874248ae57b538bd",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "d8e046bc2cb880ca095697f2463dae48fcd4181a36632760c0efbc68d44ab8de",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_att--H-CURRENT-STRICT-D1-FIT.json",
+      "fit_sha256": "26b8e06e2f01ca28181d2446202022d32b936d1cf94a2074e0065761f166d539",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "a4eb17ac2a865c8c88931a9fd3da2380f40c35bb804e48a976e0d9a650734c53",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_att--H-CURRENT-STRICT-D2-FIT.json",
+      "fit_sha256": "f376e984fd291722c91702c6ad440cfcdac0bf3ee0d67e58704afc7d5f31059a",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "39008fac5092ab21a79dcf4399d4a3cfd97ca7995b8d1b8c511261387c58e979",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec--H-CURRENT-COMMON-D1-FIT.json",
+      "fit_sha256": "51c9a614dc8391b2e6028bb81f0cf355600222a308c0c130976332940107108a",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "f7611b1f23392b3d30f548672e3a79b6f334e8dfa6d88c1ba29a53b26cac4053",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec--H-CURRENT-COMMON-D2-FIT.json",
+      "fit_sha256": "bdcd3a992468ba9470855720d0a91bb39eacefc1fec94b67d3682f4caf85e386",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "a5c35a5af7cf48dc0389bd18efedb2df6eb91c936c51a7b66f135c961dbf5eed",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec--H-RECENT-COMMON-D1-FIT.json",
+      "fit_sha256": "6f4e2195b8f08b53062620b9615d06a911b58f75224fce2cfc289f85a4832c48",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "71f46efebc48d656302d166c3a9e9a2e0e52412bc3e269e9704529f717936603",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec--H-RECENT-COMMON-D2-FIT.json",
+      "fit_sha256": "7b285e3d6e44f5ff7bd62fd7f49d88ab4dfdde104b0af43a550e454442c07c90",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "897248e635ec9477994be16d421afa73909a3a8c1cd228e21e341d1d96d926cf",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec--H-MULTI-COMMON-D1-FIT.json",
+      "fit_sha256": "bbd4a97ab4734cd9bcd543c603c6c8715e7acc73e3caabfadebd6a78b35de33c",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "51426d9574456368be4a2e31283b6aa08d48db88da73cd0b8304a66e6e1362c3",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec--H-MULTI-COMMON-D2-FIT.json",
+      "fit_sha256": "991452f02288c76af5b9ae5a3db171805b1d5f943b682ccfdfe03248af386eb6",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "d611b2af2b763b48f3538150d9fc4886a5b5971bcf733efc803754c886340f36",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec--H-CURRENT-STRICT-D1-FIT.json",
+      "fit_sha256": "965059ec10fcd067f8893a3da7c6346f859d8c03bbe01ad8ff336ecac73313f7",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "ef5702bb4839b0cb6df0a03022e16c6c88196f845b7eb84c4ad61323caf79f80",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec--H-CURRENT-STRICT-D2-FIT.json",
+      "fit_sha256": "dd42f2722c1de798c1aee541377e992407cdaea3e253ca468a8a64d003336f66",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "823761304d910e4c94f39623fc8acef067e7cb7765c21f883edd046db39c61d1",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec_yd--H-CURRENT-COMMON-D1-FIT.json",
+      "fit_sha256": "1d5c81e65ffada798c20c13a6a23171689c9a5aeb25c9d9439862e4fbba5c31f",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "d82feb189d9b6afe1b51a8e016dc52d719c63402487c6626b854a4faf0ddd417",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec_yd--H-CURRENT-COMMON-D2-FIT.json",
+      "fit_sha256": "b1b7f30c00cf48eb6eb59c89d45656b6695a54397aff390c645ed5c6087e59df",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "1c04c7835d694c041d81b3df2b62725959617a109eabcf4c579c14a16acc34fe",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec_yd--H-RECENT-COMMON-D1-FIT.json",
+      "fit_sha256": "4a54cb2e9eff2f188178e489000fc5085c39d540e73a9b1e6dcc9e9da23f34db",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "ec839cb593bb1710856fd657f85ed783c5009d7b80c848aa922a11758b95fb32",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec_yd--H-RECENT-COMMON-D2-FIT.json",
+      "fit_sha256": "74b543d51dbe62cf9dfb3b67de7da14a641b6ea38fd640576a487cc227da2ded",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "15f9cb3eb07690115877e0dab00d4e386d5cbb7cc9b60c53fb50eab87ddfc17e",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec_yd--H-MULTI-COMMON-D1-FIT.json",
+      "fit_sha256": "bc0534ef799f30f10699ae261085d9b93f5a3f383a62f719040386cc573fadfe",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "554425b031e60e13fb7e4bffe4b4a5aeb7046ebe244df36c07fab62029ea1a15",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec_yd--H-MULTI-COMMON-D2-FIT.json",
+      "fit_sha256": "18f1e3a8d7db5013863735fd6f458b62dc21c6bfdc856cdabbf82f26503057ad",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "4cc199aaffa8f305c6513d15ca57d1d99d77a6dc0afbdf76af36a89a30c0517c",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec_yd--H-CURRENT-STRICT-D1-FIT.json",
+      "fit_sha256": "c79718eab6f37fce6d96fd90d78663009dffbd4370a1cb002175e3ae3478e1b8",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "8880348946863c5b5e016457ec565d78fa2f15a2dd42e475d37534983f3425f4",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rec_yd--H-CURRENT-STRICT-D2-FIT.json",
+      "fit_sha256": "bb85141f867aafc3895a5660fb3a3a3a05ab229144c34eb796de3180fc083e66",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "0ec38cf1edaf57cd28fd8f926df5cd3bc44e685ab4ab5f3db35b439328670158",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_rec_yd--H-CURRENT-COMMON-D1-FIT.json",
+      "fit_sha256": "25a84be6c2e12d5c9ca6217c7eab7b79aa3fda7284bd3200357d7ea004225cb9",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "ac52d489879bd5239e0f4707e8e97d456f10b04e8b0791073d8258e7a827af83",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_rec_yd--H-CURRENT-COMMON-D2-FIT.json",
+      "fit_sha256": "c66b3990a5fe11eb51a115212d9c3d0eebef2a3656143c5a59df2e61fdf70303",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "00b309bef7af092a124af76a4d36f35adf08c9bf76c1d13805e89e786e0da9ee",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_rec_yd--H-RECENT-COMMON-D1-FIT.json",
+      "fit_sha256": "691d4fd84ace98e332ee8f0b8176b6416a2b3718bd3eb14b33e5c2ef7af57176",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "5dc6e23db1ec5b6a0e0129c364d3f03988f99443aa82475de00cfb34e335e29e",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_rec_yd--H-RECENT-COMMON-D2-FIT.json",
+      "fit_sha256": "8000dc14377ccfbc7dab280a40645dc5fad04d4f7a57a0b8ffefb99793a8ea76",
+      "training_membership_sha256": "f1ba085036c5103918c5b8f4033d17aa87afc4ab67c5ed824cf6d32d2495f0c7"
+    },
+    {
+      "model_sha256": "701c87766bf20009f838fd174c020d66d7e3b0bee56f8fae14115345f371a382",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_rec_yd--H-MULTI-COMMON-D1-FIT.json",
+      "fit_sha256": "31fa1c3542559be69e4a7fbbaa2b989e0496cb6b94e05e9d5fc21edf56ee1ef4",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "f84bf6ff34e825d7e901fbe68213c161642a18c6faf765fb57a0d1347e5e1509",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_rec_yd--H-MULTI-COMMON-D2-FIT.json",
+      "fit_sha256": "280606396085e94fd0ef3f27d441a6bf58d4a1cbdd55b336b4bb34c4a5c55e29",
+      "training_membership_sha256": "651b8da7b3d9c80cb95b802b5728023c618fb9a7f714700b667434e4e1d89378"
+    },
+    {
+      "model_sha256": "0948909cb0fdcaa51f20ae8b010c274624ef8cbcd417296e92960ea9365a69a3",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_rec_yd--H-CURRENT-STRICT-D1-FIT.json",
+      "fit_sha256": "a99bc759f2e9c5be73a6e46e01c173fabb202be7fef9aa487667866c4b522e19",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    },
+    {
+      "model_sha256": "f5485bb6b6401232904f0df2a65a357c84fdd02e4e1a1a34a671029936e2f629",
+      "fit_receipt": "reports/continuation-20261030c/qualified-defense-information-v1/FUTURE-rush_rec_yd--H-CURRENT-STRICT-D2-FIT.json",
+      "fit_sha256": "99edce8a1712b9845fa628c5881134ef5de94186b1fdad75da172b014527619b",
+      "training_membership_sha256": "8b16e157b5c6af7d726daa796aa74f6aec7f8bb68099c06b1542e6be32b6d6f4"
+    }
+  ],
+  "resource": {
+    "wall_seconds": 300,
+    "RSS_bytes": 1073741824,
+    "max_private_output_bytes": 4194304,
+    "max_threads": 2
+  },
+  "code_sha256": "a4d71cf74f0e1ef2fcee377542ee227ff92334695083ccd02ca4c0097bb7dc87",
+  "lookup_sha256": "92ae287426b298a745f53a7caa1c700f39419afa301109e8968b133f1f1d8a1b",
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0
+}

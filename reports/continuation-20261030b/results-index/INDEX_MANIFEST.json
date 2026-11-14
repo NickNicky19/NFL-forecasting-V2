@@ -1,0 +1,494 @@
+{
+  "schema_version": "v2-sharded-results-index-v2",
+  "record_unit": "evaluation/output view; not an independent learner, fit, game or player",
+  "baseline_checkpoint": {
+    "artifact": "reports/continuation-20261029/TEST_RESULTS_INDEX.json",
+    "sha256": "b6b91519db20b23256f0a0b85f4e608ccddc80d1de5058fabf7d5b74bd0b1d72",
+    "records": 16060,
+    "unchanged": true
+  },
+  "previous_sharded_checkpoint": {
+    "artifact": "reports/continuation-20261030/results-index/INDEX_MANIFEST.json",
+    "sha256": "20d677dece8a8efca82328b7795232228f68ef6a484c5d1132a11e901c70b97d",
+    "records": 45706,
+    "unchanged": true
+  },
+  "comparison_reporting": {
+    "delta": "candidate error minus comparator error; negative favors candidate",
+    "relative": "delta / comparator error; null when comparator is zero or matching is unestablished",
+    "matching": "explicit retained-row binding required; equal sample counts alone are insufficient",
+    "unreported": "UNESTABLISHED with reason; no generic percentage accuracy from error",
+    "projection": "CSV annotations do not alter source scores, predictions or earlier index bytes"
+  },
+  "definitions": {
+    "mae": "mean(abs(prediction - actual)); native target units; lower is better",
+    "mse": "mean((prediction - actual)^2); squared target units; lower is better",
+    "rmse": "sqrt(MSE); native target units; lower is better",
+    "bias": "mean(prediction - actual); signed native target units",
+    "p90_abs": "90th percentile absolute error; source interpolation retained",
+    "p95_abs": "95th percentile absolute error; source interpolation retained",
+    "max_abs": "maximum absolute error; native target units",
+    "brier": "mean((event_probability - binary_actual)^2); lower is better, compare prevalence baseline",
+    "log_loss": "mean(-log(probability assigned to observed binary event)); no percent accuracy conversion",
+    "nll": "source-reported negative log score; inspect source support/normalization before comparison",
+    "crps": "source-reported proper distribution score; inspect support and score definition"
+  },
+  "precision_definition": "exact/tolerance fractions only when explicitly supplied; numerator reconstructed from rate*n is labeled; probability residual precision is not binary accuracy",
+  "forbidden_accuracy_conversion": "Native errors, software pass counts, and interval coverage are never converted to percent prediction accuracy.",
+  "input_manifests": [
+    {
+      "source_artifact": "reports/inventory/ALL_METHOD_SCORES.json",
+      "sha256": "965d5517be8699be4c37e9432b67f604b7fa0b787a113d7c674bcaf9c7f1a03a",
+      "kind": "forecast_evaluation_view",
+      "rows": 4832
+    },
+    {
+      "source_artifact": "reports/replay/REPLAY_SCORES.json",
+      "sha256": "8a2cf6c6d1068b0c27d15d70d275673b32e34b66a63b412bbf2c58dc5642c2ed",
+      "kind": "forecast_evaluation_view",
+      "rows": 66
+    },
+    {
+      "source_artifact": "reports/week7-label-extension-v1/SCORES.json",
+      "sha256": "0d6789fd093457d202837fafc2f9c67493b86f4d9ae738a6dc6bb7f53a70d242",
+      "kind": "forecast_evaluation_view",
+      "rows": 66
+    },
+    {
+      "source_artifact": "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+      "sha256": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+      "kind": "NEW_EXPERIMENT_CURRENT_VINTAGE_PARTICIPANT_DIAGNOSTIC",
+      "rows": 10154,
+      "game_census_artifact": "reports/verification/DIAGNOSTIC_VIEW_GAME_COUNTS.json",
+      "game_census_sha256": "49270926656253826fa6f7365d0dc78ef981aa96faf1ad788a1bbcdafe49ebde",
+      "prediction_sha256": "52d0c4476ac8a3d45b6128fd092b94c73bf6f9a5c9408f2878df8e33e03a513f"
+    },
+    {
+      "source_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "kind": "NEW_EXPERIMENT_CURRENT_VINTAGE_PARTICIPANT_DIAGNOSTIC",
+      "rows": 930,
+      "game_census_artifact": "reports/verification/HGB_VIEW_GAME_COUNTS.json",
+      "game_census_sha256": "3e4bf211c12453324ebb3205fb8c1f462eeb8bb85fcad159d1fedec571cdce97"
+    },
+    {
+      "source_artifact": "reports/verification/PRIMARY_COMPARISON.json",
+      "sha256": "b2d3942579d6d829afdec7e70252e5fe1cf70502042c30a1d95d93abb46bde0b",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/verification/HISTORY_ENGINE_CHECKS.json",
+      "sha256": "2a35ebd4bcb41cb64016756baeaf01514e97513aec7644f3c28562100d2e6fc0",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/continuation-20261029/RESULT_INDEX_SOFTWARE_TESTS.json",
+      "sha256": "89f4ac65cdaf5f2bfc8232f9114a45aaa5d00407be459d55cf9bff48617bc3a4",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/continuation-20261029/RESULT_INDEX_DIAGNOSTIC_SOFTWARE_TESTS.json",
+      "sha256": "6b67b0c5c0040d560ec7dc495f6ed82f77b972dc20324e88eb23b1c864bf2895",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/continuation-20261029/CONTINUATION_SOFTWARE_TESTS.json",
+      "sha256": "dbec7a18df08b1a4769dc2ae1696d7b370ca06851fb1d43a1350eb80971ee5b4",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/continuation-20261029/CORE_PUBLICATION_SOFTWARE_TESTS.json",
+      "sha256": "beb24b2b528b00be6b914cb667684cf6f4ef46f3d90e05cca48a7e99525008b6",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/verification/FUTURE_GRADER_REVIEW_INITIAL.json",
+      "sha256": "7f8cf83dec62317b7dfef70c67e63d7315cfe30268afa5cef0618dbcefb46c52",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/verification/FUTURE_GRADER_REVIEW.json",
+      "sha256": "26caf59b9ba98d61d7328c3e772189e87285b2845738a75dcfb120c80db9237c",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/verification/HGB_SHADOW_GRADER_SOFTWARE_TESTS.json",
+      "sha256": "7fa4f5b4858fb5f1d7ccdba345e8b849bd2b7bb6505b1a846b7f163a9b771553",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/verification/HGB_FUTURE_GRADER_REVIEW_INITIAL.json",
+      "sha256": "0cf5b2471caa45ff6fac44f8c676ff1b8c49fa9ce4e91f03140982d88d23c51a",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/verification/HGB_FUTURE_GRADER_REVIEW.json",
+      "sha256": "bef9ca64bbd8796682dd589b3a7950a0ffd38eac9e3d6dc5ef8babbac440645a",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/continuation-20261029/FINAL_PUBLICATION_SOFTWARE_TESTS.json",
+      "sha256": "6bbe43690350bcf7ba31c13ea3682b6968676263bf98d2309cdc21a586b83bcd",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORE_DATE_PROJECTION.json",
+      "sha256": "2dab8351ed0730d149e5b44210ec3cf94a596ad3939645ec2f98954d0a9a2445",
+      "rows": 2736,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "rows": 2736,
+      "kind": "new_ordered_CDF_and_GLM_law_reconstructions"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/count-ablation-wave-v1/SCORE_DATE_PROJECTION.json",
+      "sha256": "fbc4cb96a29661d03b6ddd7a821412269313f6fa9913f72b4ba89da660e590b1",
+      "rows": 424,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/count-ablation-wave-v1/SCORES.json",
+      "sha256": "087b8cb7a8fc40b6ad48bffdb6825c5f9829a72742bf2157f50ef529b0692715",
+      "rows": 424,
+      "kind": "new_HGB_role_and_Poisson_point_ablations"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/pregame-cohort-scorecards-v2/SCORES.json",
+      "sha256": "476f578837e5f177320aaee95e7d4ae3d7a5614480fccac2aef32170ebc5eca5",
+      "rows": 23462,
+      "kind": "new_frozen_prior_workload_cohort_saved_row_evaluations"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-wave-v1/SCORE_DATE_PROJECTION.json",
+      "sha256": "659007fd92f18f60a23a054031435ba1978db989e48351cd4d0e343289d77da8",
+      "rows": 208,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-wave-v1/SCORES.json",
+      "sha256": "b140ffce88fc208deffc009936337de882ab303bebc3a3815c826795e3ae3449",
+      "rows": 208,
+      "kind": "qualified_partial_chart_direct"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-wave-v1/EMPIRICAL_SCORE_DATE_PROJECTION.json",
+      "sha256": "00640c3e176781c97ce366b532d6d1da8a5c02ac9d22947dd67b111db88c6f14",
+      "rows": 630,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-wave-v1/EMPIRICAL_SCORES.json",
+      "sha256": "558b853176c2ab2b196f5a142a3afdfa226def11d2613384a673f0d72bce9be6",
+      "rows": 630,
+      "kind": "qualified_partial_chart_empirical_rolling"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-cohort-scorecards-v1/SCORE_DATE_PROJECTION.json",
+      "sha256": "40cd0fa6077ef2172eb1be1c5f81982b3ebc9982b8f0ce42c779a4cbee71f8a2",
+      "rows": 1176,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-cohort-scorecards-v1/SCORES.json",
+      "sha256": "428174b83f49ba571c39a76f9b3ac7bda771780ad4830d25c382ad49f62fc1c1",
+      "rows": 1176,
+      "kind": "prior_signed_chart_score_cohorts_not_workload"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-grid-precision-correction-v1/SCORE_DATE_PROJECTION.json",
+      "sha256": "ff70fa4a527581d6f14d74eb9e5839b823231f25dfb5767503eb4b6fad105506",
+      "rows": 1007,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-grid-precision-correction-v1/SCORES.json",
+      "sha256": "e5e3138d7e7d97d534eeed202db6a01d92707b0ac4743fded686e3b836eca1bd",
+      "rows": 1007,
+      "kind": "precision_only_rescoring_not_new_forecasts_or_outcomes"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/CHECKPOINT_SOFTWARE_TESTS.json",
+      "sha256": "9d31f8a05e2db4cbb46fb514cefd3ec5ff3e4bd7d8885d28f186f2464e8bfeb7",
+      "rows": 1,
+      "kind": "software_attempt_receipt_no_NFL_accuracy"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/COHORT_SOFTWARE_TEST_ATTEMPT_INITIAL.json",
+      "sha256": "addd51dc45d360d1657909a21af81158ed2c7db920aece5751b501be90887d01",
+      "rows": 1,
+      "kind": "software_attempt_receipt_no_NFL_accuracy"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/INDEX_SOFTWARE_ATTEMPT_INITIAL.json",
+      "sha256": "65bdc960e74f3c3f8e4cabe5972dea5f05f0cee8d4e7f31a72489d5340507aa5",
+      "rows": 1,
+      "kind": "software_attempt_receipt_no_NFL_accuracy"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/carry-strong-control-comparison-v1/COMPARISON_ANNOTATIONS.json",
+      "sha256": "35c8e27367bd44fc33d1502f1653377cd5fa5f61aa5001245ebb4571d4b72e4f",
+      "rows": 40,
+      "kind": "source_bound_matched_comparison_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/carry-strong-control-comparison-v1/SCORE_DATE_PROJECTION.json",
+      "sha256": "187af39538bd4dae1056f884bf760e13c23972064a947dbe268de7ee4e67dece",
+      "rows": 40,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/carry-strong-control-comparison-v1/SCORES.json",
+      "sha256": "0a0e60c53a3beb5336d379121fd9ef174657ff438c31ed4939466429494f6372",
+      "rows": 40,
+      "kind": "same_rows_strong_control_carry_saved_forecast_replay_no_new_fits"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/website-reference-replay-v1/SCORES.json",
+      "sha256": "cae60c9b4d321eb7f03e7a8c4896823e24d669c8a7f08e647cd986aa5eb1a062",
+      "rows": 40,
+      "kind": "retained_recorded_R0_provider_W7_point_reference_unmatched_information_cutoffs"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/WEBSITE_REFERENCE_ACQUISITION_RESOURCE_FINDING.json",
+      "sha256": "c72d5855e59c39896221651d4b681120b3e5d6dcf6b520a578088d48817d38a5",
+      "rows": 1,
+      "kind": "failed_acquisition_resource_guard_attempt_no_NFL_fit_or_score"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/ordered-information-ablation-v1/SCORE_DATE_PROJECTION.json",
+      "sha256": "033fe9690998776bd5b4643868e83100815ef8a9062c8e9ccaa090b78e2013b4",
+      "rows": 1608,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/ordered-information-ablation-v1/SCORES.json",
+      "sha256": "00ef54be6faf0a3a3af9d2af3aa9d0413560d475c9ee8a8832aa72aae4e867f7",
+      "rows": 1608,
+      "kind": "registered_explicit_lag_block_removal_matched_ordered_CDF_336origin_cells"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/CHECKPOINT_SOFTWARE_TESTS.json",
+      "sha256": "c00b282ee69efede888cf1b5e2af094fd1af7e31cd8d05103008c4696a078eaf",
+      "rows": 1,
+      "kind": "software_fixture_functions_no_NFL_accuracy"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/INDEX_POINTER_CHECK_INITIAL.json",
+      "sha256": "e5a19bf069b0933cfd205162232e44c7c62efaadab44ebadc20563ff0c0114e7",
+      "rows": 1,
+      "kind": "initial_stale_pointer_coverage_check_no_NFL_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/CHECKPOINT_SOFTWARE_TESTS_V2.json",
+      "sha256": "bc64b28606b2c57db795b3c1c8f33ef4012d0401c7872b90e211a0a3c38340cb",
+      "rows": 1,
+      "kind": "software_date_annotation_guard_finalfixture_suite_no_NFL_accuracy"
+    }
+  ],
+  "record_count": 47398,
+  "by_kind": {
+    "software_verification": 19,
+    "NEW_EXPERIMENT_CURRENT_VINTAGE_PARTICIPANT_DIAGNOSTIC": 42375,
+    "forecast_evaluation_view": 5004
+  },
+  "shards": [
+    {
+      "path": "reports/continuation-20261030/results-index/records-0000.json",
+      "sha256": "6f36f6263d6a1ebface86ce8033998b079eb74ca97670efcb9040c3d3b92602b",
+      "bytes": 12577156,
+      "records": 1918
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0001.json",
+      "sha256": "60c932a5253331f67a88d8ee050c2d02d4aa8732876487806fc50609cac09ce5",
+      "bytes": 12578566,
+      "records": 1906
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0002.json",
+      "sha256": "59287a35baf9fb8a6c123951deb051e2e273b51443561a0a1a9af4340c9d4c0f",
+      "bytes": 12579625,
+      "records": 1908
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0003.json",
+      "sha256": "e259e4e67a2cc79f315d91837cb1f444432dbf372cf60c57a2e986ffc4483e01",
+      "bytes": 12576761,
+      "records": 1906
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0004.json",
+      "sha256": "eeca0900749af97adb5c3e42063082747f5a17c86782a26d427ecf059ac63265",
+      "bytes": 12577327,
+      "records": 1904
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0005.json",
+      "sha256": "3277bfefde417b5742ef37789bf4c1ab6ed4597315a885e65f4aa2133e9672ea",
+      "bytes": 12580081,
+      "records": 1900
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0006.json",
+      "sha256": "300ba621df3326388b5a2e91b2e2f9e8ce9ddaf72f278e6581ad8fcee8bd866d",
+      "bytes": 12582825,
+      "records": 1908
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0007.json",
+      "sha256": "a76dd3d4b370154c7277e1e35ea9720a90f34cba48df34ca9f221aaadaad3677",
+      "bytes": 12579537,
+      "records": 1908
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0008.json",
+      "sha256": "a69a8754aa95fc52154de1d4d971bffb711a50f9ba6622af631d539f2e6edf78",
+      "bytes": 12577388,
+      "records": 1906
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0009.json",
+      "sha256": "f1d8e703a6298c958b1cb334388f0c7dc0da8b9e2112a83edf6b418e6fd3bdcb",
+      "bytes": 12576269,
+      "records": 1922
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0010.json",
+      "sha256": "747c2243f19563a57a4e40b7ad624c274d60c962bb6ef5d4b20d064c3ae10c56",
+      "bytes": 12578331,
+      "records": 1892
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0011.json",
+      "sha256": "e77110604219a521c5513b0321819749838ab406607fa9c7591452278c09534b",
+      "bytes": 12577514,
+      "records": 1913
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0012.json",
+      "sha256": "fc2b69eecc265d937fc1a84c004112d36c66cdeb7d509954c5b2deac110e9d0d",
+      "bytes": 12580866,
+      "records": 1898
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0013.json",
+      "sha256": "df2c86d7b875a0da95a6ec877e09477df3a58c6f7694d0edb02e4f6a2fa964e0",
+      "bytes": 12580101,
+      "records": 1899
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0014.json",
+      "sha256": "8897b41eab29da00d760a2c4c3fb63f5631a96f9ded6725fd9efc81f2eb83d95",
+      "bytes": 12579198,
+      "records": 1918
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0015.json",
+      "sha256": "aa1fbce1d5ccfed0bc68cc9fd960293eedddc048f013532847586d86ed486f38",
+      "bytes": 12578083,
+      "records": 1910
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0016.json",
+      "sha256": "5e2ea0728aa116ae0cd22efa1664a2add8f0ce3835f8a2f33cf2bf3baf8a91a4",
+      "bytes": 12575601,
+      "records": 1910
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0017.json",
+      "sha256": "42e1a00888aecfdb4e2c614421b682ad4cc1613fda8f0fb4524f06468949d605",
+      "bytes": 12581387,
+      "records": 1911
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0018.json",
+      "sha256": "7f487ab29fad246c9ba9ef850d58284560478e06340b772ab84cd32155c11fbc",
+      "bytes": 12577856,
+      "records": 1903
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0019.json",
+      "sha256": "7ee21d13b3c0db572753a519745c0e059fbc29c0f693bf86f1923ff0862fedab",
+      "bytes": 12578827,
+      "records": 1918
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0020.json",
+      "sha256": "c238a4c9071dc42a8a82794dac1bf2dee6b1e56a72b9d7d329892ba22b5f305c",
+      "bytes": 12582503,
+      "records": 1902
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0021.json",
+      "sha256": "491eeedd26d96d687ac192c3d1f373304bb73ac307e6633121ee3204c8379b44",
+      "bytes": 12581514,
+      "records": 1918
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0022.json",
+      "sha256": "007952f0ae8fd67dcb0d051ddeb472b98ee2cb0e928709ef35c753fb753e8412",
+      "bytes": 12578322,
+      "records": 1900
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0023.json",
+      "sha256": "3cfa0e3346b0e54bbe672dd4929a6893c801e72ee87a72c8a31919e449cc40c3",
+      "bytes": 11966205,
+      "records": 1828
+    },
+    {
+      "path": "reports/continuation-20261030b/results-index/new-records-0024.json",
+      "sha256": "65e894e333ffdd218a0e8813a9ebef56e90e95a5a9aef9f54d5ca4e2aedfc0a0",
+      "bytes": 12359553,
+      "records": 1692
+    }
+  ],
+  "max_shard_bytes": 12582912,
+  "csv_parts": [
+    {
+      "path": "reports/continuation-20261030b/results-index/TEST_RESULTS_INDEX-0000.csv",
+      "sha256": "d1fe287e00e8209027354666eddc3499f72c42fd593d843cbf98e7517ea88839",
+      "rows": 10000,
+      "bytes": 13681283
+    },
+    {
+      "path": "reports/continuation-20261030b/results-index/TEST_RESULTS_INDEX-0001.csv",
+      "sha256": "a97eea20065a2e2639f81f308bf1f54f80a7c3795bf8861f9e893868d3f01056",
+      "rows": 10000,
+      "bytes": 13696222
+    },
+    {
+      "path": "reports/continuation-20261030b/results-index/TEST_RESULTS_INDEX-0002.csv",
+      "sha256": "a7021689ac57fa9e8acaece7a3f45aa59be3ae15dc22b051742fb223afa3e19d",
+      "rows": 10000,
+      "bytes": 13692498
+    },
+    {
+      "path": "reports/continuation-20261030b/results-index/TEST_RESULTS_INDEX-0003.csv",
+      "sha256": "0ad8ed474a712744c9b2892c3ad654076a771d9f3908313e7dbd39a142d524ec",
+      "rows": 10000,
+      "bytes": 13686105
+    },
+    {
+      "path": "reports/continuation-20261030b/results-index/TEST_RESULTS_INDEX-0004.csv",
+      "sha256": "0078b1c02baa68d3b46cbad13f05ed3d0be463763bd03e6adc80ad764e01317c",
+      "rows": 7398,
+      "bytes": 10128181
+    }
+  ]
+}

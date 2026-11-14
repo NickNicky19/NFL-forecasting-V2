@@ -1,0 +1,308 @@
+{
+  "id": "B-ORIGINAL-SITE-BOUNDED-STATIC-REFRESH-20261111-v1",
+  "completed_UTC": "2026-11-11T03:52:16.396141+00:00",
+  "actual_owner_HEAD": "01a283a2bba828ce7634902017f38ef93fd8c75e",
+  "state": "PASS_ALL_SIX_STATIC_BYTES",
+  "records": [
+    {
+      "path": "data/meta.json",
+      "served_url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/meta.json",
+      "HTTP_status": 200,
+      "request_started_UTC": "2026-11-11T03:52:15.823642+00:00",
+      "observed_UTC": "2026-11-11T03:52:16.153644+00:00",
+      "HTTP_Date": "Wed, 11 Nov 2026 03:52:16 GMT",
+      "HTTP_Age": "0",
+      "bytes": 1249,
+      "SHA256": "00351ed9b136028ee8d86fd5b4e2e4c7c1784bf0e0a417fa78f7a8b23dfdc03e",
+      "expected_commit": "01a283a2bba828ce7634902017f38ef93fd8c75e",
+      "expected_SHA256": "00351ed9b136028ee8d86fd5b4e2e4c7c1784bf0e0a417fa78f7a8b23dfdc03e",
+      "exact_parity": true,
+      "projection": {
+        "season": 2026,
+        "week": 10,
+        "generated_at": "2026-11-10T20:46:29Z",
+        "execution_model": {
+          "capture_schema": "baseline-capture-classic-presence-v2",
+          "engine_sha256": {
+            "pull/books.py": "0b89744960136a4f2e594b61e6df754d357706d8c66a8ae359d8eb02bbfa53f8",
+            "pull/build.py": "b83126080149f2f0705682d1c0be0a8ee87610ebb0a88cd57b94b8a82b63ad73",
+            "pull/gamemodel.py": "2a2519a12ad4993da02ae6bdcdb6c86f2b5a6554ce93a702b550ecde17fb7d1f",
+            "pull/grade.py": "afd1310d708def4f400e6bf84e981e2edc7635dc946a63571022203c1d3ae735",
+            "pull/matchup.py": "eaf627730041060ad16dd9930accfe54a54cf5fb49bb42d18680b5c572ddd7a5",
+            "pull/news.py": "17ce1b3b6b72694e6b543bd767e287c26a9d1f6dd5dba2de6c873543036842e9",
+            "pull/scoring.py": "90a9d201581b20c4e757912ce7dbf4941a6a90784d721c80367341511c652a2d",
+            "pull/sources.py": "36555cdbc55d73ba632d5adae1130288f4f532073857c642ac3ebc7e626b0061"
+          },
+          "grading_version": "statistical-presence-strict-v5-20261106",
+          "model": "sleeper-matchup-classic-presence-strict-v2",
+          "normalized_stats_cache": "stat-keys-presence-strict-v3",
+          "original_shadow_model": "original_sleeper_matchup_baseline",
+          "original_shadow_procedure": "original-builder-default-refresh-v1",
+          "original_shadow_source": "89512ed952308dacc1f6a930915ddbcdccd460d9",
+          "schema_version": "weekly-classic-presence-execution-v2"
+        }
+      }
+    },
+    {
+      "path": "data/health.json",
+      "served_url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/health.json",
+      "HTTP_status": 200,
+      "request_started_UTC": "2026-11-11T03:52:15.824501+00:00",
+      "observed_UTC": "2026-11-11T03:52:16.211035+00:00",
+      "HTTP_Date": "Wed, 11 Nov 2026 03:52:16 GMT",
+      "HTTP_Age": "0",
+      "bytes": 1319,
+      "SHA256": "10ab453a5c61455a6cc3c1b18228cdc0cfbf499e588794b6c42f8d5d894c7f9d",
+      "expected_commit": "01a283a2bba828ce7634902017f38ef93fd8c75e",
+      "expected_SHA256": "10ab453a5c61455a6cc3c1b18228cdc0cfbf499e588794b6c42f8d5d894c7f9d",
+      "exact_parity": true,
+      "projection": {
+        "build_age_minutes": 0.05,
+        "capture_created": false,
+        "capture_mode": "live",
+        "capture_model": "sleeper-matchup-classic-presence-strict-v2",
+        "capture_rows": 1614,
+        "capture_schema": "baseline-capture-classic-presence-v2",
+        "checked_at": "2026-11-10T20:46:32Z",
+        "first_captured_at": "2026-11-10T20:46:31Z",
+        "generated_at": "2026-11-10T20:46:29Z",
+        "max_build_age_minutes": 120,
+        "players": 724,
+        "probability_calibration": "NOT_ESTABLISHED",
+        "profitability": "NOT_ESTABLISHED",
+        "props": 2027,
+        "quote_freshness": "UNKNOWN",
+        "real_line_props": 140,
+        "receipt": "data/current-classic/2026/w10/9d34a3d6a5489e9dd8a031bed9f68ba8a850ebf9e36c7318ed6e917224f391d0.json.gz",
+        "reference_only_props": 1887,
+        "schema_version": "baseline-capture-v1",
+        "source_timestamps_verified": false,
+        "status": "STRUCTURAL_CHECKS_PASSED",
+        "legacy_verifier": "failure",
+        "historical_comparison": "success",
+        "legacy_verifier_detail": {
+          "missing_requirements": {
+            "list_count": 2
+          },
+          "model": "sleeper-matchup-classic-presence-strict-v2",
+          "normalized_stats_cache": "stat-keys-presence-strict-v3",
+          "numerical_parity_passed": false,
+          "provider_requests": 0,
+          "required_checks": "Mandatory current source/integrity/capture checks are separate; no accuracy claim.",
+          "schema_version": "legacy-diagnostic-scope-v2",
+          "status": "NOT_EVALUATED_CURRENT_MODEL_INPUT_CLOSURE_REQUIRED"
+        }
+      }
+    },
+    {
+      "path": "data/weekly-adaptive-overlay.json",
+      "served_url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/weekly-adaptive-overlay.json",
+      "HTTP_status": 200,
+      "request_started_UTC": "2026-11-11T03:52:15.825058+00:00",
+      "observed_UTC": "2026-11-11T03:52:16.158039+00:00",
+      "HTTP_Date": "Wed, 11 Nov 2026 03:52:16 GMT",
+      "HTTP_Age": "0",
+      "bytes": 333,
+      "SHA256": "a9b690c552bf5ae44b0cf98a4e3b4cfc505bc3c4088c0c04f7b01bee29cf2ac1",
+      "expected_commit": "01a283a2bba828ce7634902017f38ef93fd8c75e",
+      "expected_SHA256": "a9b690c552bf5ae44b0cf98a4e3b4cfc505bc3c4088c0c04f7b01bee29cf2ac1",
+      "exact_parity": true,
+      "projection": {
+        "bytes": 763,
+        "display_board_sha256": "a9ba9059d4530093b14d07952d8025e47794edfdfff8f5c312f658bdc7de5dc9",
+        "path": "data/weekly-adaptive/5b8b58376a19b7e81b8f7b0a5dbc03f3c945b8ca17b1175473ecdb91b785890a.json",
+        "schema_version": "weekly-adaptive-overlay-pointer-v1",
+        "sha256": "5b8b58376a19b7e81b8f7b0a5dbc03f3c945b8ca17b1175473ecdb91b785890a",
+        "list_field_counts": {}
+      }
+    },
+    {
+      "path": "data/weekly-selected-rankings.json",
+      "served_url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/weekly-selected-rankings.json",
+      "HTTP_status": 200,
+      "request_started_UTC": "2026-11-11T03:52:16.153719+00:00",
+      "observed_UTC": "2026-11-11T03:52:16.395714+00:00",
+      "HTTP_Date": "Wed, 11 Nov 2026 03:52:16 GMT",
+      "HTTP_Age": "0",
+      "bytes": 474,
+      "SHA256": "ddaeefe7b4f0f94956729507b7b1f4d4a02e3fa1c2f6917b084ed33941c7d157",
+      "expected_commit": "01a283a2bba828ce7634902017f38ef93fd8c75e",
+      "expected_SHA256": "ddaeefe7b4f0f94956729507b7b1f4d4a02e3fa1c2f6917b084ed33941c7d157",
+      "exact_parity": true,
+      "projection": {
+        "bytes": 11956,
+        "display_board_sha256": "a9ba9059d4530093b14d07952d8025e47794edfdfff8f5c312f658bdc7de5dc9",
+        "overlay_sha256": "5b8b58376a19b7e81b8f7b0a5dbc03f3c945b8ca17b1175473ecdb91b785890a",
+        "path": "weekly-selected-rankings/6e0985d17d0df5a6ebf0bed9d419dca3b0ad14f7e108c3ae35292725aca3cc79.json",
+        "published_at": "2026-11-10T20:46:35.971381+00:00",
+        "schema_version": "weekly-selected-rankings-pointer-v1",
+        "sha256": "6e0985d17d0df5a6ebf0bed9d419dca3b0ad14f7e108c3ae35292725aca3cc79",
+        "list_field_counts": {}
+      }
+    },
+    {
+      "path": "data/weekly-adaptive/5b8b58376a19b7e81b8f7b0a5dbc03f3c945b8ca17b1175473ecdb91b785890a.json",
+      "served_url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/weekly-adaptive/5b8b58376a19b7e81b8f7b0a5dbc03f3c945b8ca17b1175473ecdb91b785890a.json",
+      "HTTP_status": 200,
+      "request_started_UTC": "2026-11-11T03:52:16.158097+00:00",
+      "observed_UTC": "2026-11-11T03:52:16.348931+00:00",
+      "HTTP_Date": "Wed, 11 Nov 2026 03:52:16 GMT",
+      "HTTP_Age": "0",
+      "bytes": 763,
+      "SHA256": "5b8b58376a19b7e81b8f7b0a5dbc03f3c945b8ca17b1175473ecdb91b785890a",
+      "expected_commit": "01a283a2bba828ce7634902017f38ef93fd8c75e",
+      "expected_SHA256": "5b8b58376a19b7e81b8f7b0a5dbc03f3c945b8ca17b1175473ecdb91b785890a",
+      "exact_parity": true,
+      "projection": {
+        "board_contract_sha256": "71da3bef6d38382f9f3f8fa83dc8de0f1bb5cea90ca79d8572f859d1a62b355d",
+        "canonical_board_sha256": "a9ba9059d4530093b14d07952d8025e47794edfdfff8f5c312f658bdc7de5dc9",
+        "display_board_sha256": "a9ba9059d4530093b14d07952d8025e47794edfdfff8f5c312f658bdc7de5dc9",
+        "fallback_counts": {
+          "publication_not_approved_R0": 2027
+        },
+        "packaged_at": "2026-11-10T20:46:35.729853+00:00",
+        "prepared_at": "2026-11-10T20:46:35.729853+00:00",
+        "publication_review_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "registration_id": "weekly-adaptive-release-v1",
+        "schema_version": "weekly-adaptive-public-overlay-v1",
+        "season": 2026,
+        "state": "DISABLED_USE_R0",
+        "website_source_sha": "c134a44ff1d9b51d0b52926e13387742397b6ccf",
+        "week": 10,
+        "list_field_counts": {
+          "frozen_rows": 0,
+          "rows": 0
+        }
+      }
+    },
+    {
+      "path": "data/weekly-selected-rankings/6e0985d17d0df5a6ebf0bed9d419dca3b0ad14f7e108c3ae35292725aca3cc79.json",
+      "served_url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/weekly-selected-rankings/6e0985d17d0df5a6ebf0bed9d419dca3b0ad14f7e108c3ae35292725aca3cc79.json",
+      "HTTP_status": 200,
+      "request_started_UTC": "2026-11-11T03:52:16.211113+00:00",
+      "observed_UTC": "2026-11-11T03:52:16.355573+00:00",
+      "HTTP_Date": "Wed, 11 Nov 2026 03:52:16 GMT",
+      "HTTP_Age": "0",
+      "bytes": 11956,
+      "SHA256": "6e0985d17d0df5a6ebf0bed9d419dca3b0ad14f7e108c3ae35292725aca3cc79",
+      "expected_commit": "01a283a2bba828ce7634902017f38ef93fd8c75e",
+      "expected_SHA256": "6e0985d17d0df5a6ebf0bed9d419dca3b0ad14f7e108c3ae35292725aca3cc79",
+      "exact_parity": true,
+      "projection": {
+        "display_board_sha256": "a9ba9059d4530093b14d07952d8025e47794edfdfff8f5c312f658bdc7de5dc9",
+        "fallback_counts": {
+          "expired_before_kickoff": 0,
+          "started_without_selected_record": 0,
+          "unavailable_forecast": 0
+        },
+        "overlay_sha256": "5b8b58376a19b7e81b8f7b0a5dbc03f3c945b8ca17b1175473ecdb91b785890a",
+        "picks": {
+          "over": {
+            "list_count": 12
+          },
+          "under": {
+            "list_count": 12
+          }
+        },
+        "policy": {
+          "categories": {
+            "pass_att": {
+              "lean": 1,
+              "minimum_line": 20.5,
+              "scale": 3
+            },
+            "pass_cmp": {
+              "lean": 0.8,
+              "minimum_line": 12.5,
+              "scale": 2.5
+            },
+            "pass_int": {
+              "lean": 0.12,
+              "minimum_line": 0.5,
+              "scale": 0.5
+            },
+            "pass_td": {
+              "lean": 0.15,
+              "minimum_line": 0.5,
+              "scale": 0.6
+            },
+            "pass_yd": {
+              "lean": 8,
+              "minimum_line": 150.5,
+              "scale": 30
+            },
+            "rec": {
+              "lean": 0.3,
+              "minimum_line": 1.5,
+              "scale": 1.2
+            },
+            "rec_yd": {
+              "lean": 4,
+              "minimum_line": 15.5,
+              "scale": 12
+            },
+            "rush_att": {
+              "lean": 0.8,
+              "minimum_line": 6.5,
+              "scale": 3
+            },
+            "rush_rec_yd": {
+              "lean": 5,
+              "minimum_line": 25.5,
+              "scale": 15
+            },
+            "rush_yd": {
+              "lean": 4,
+              "minimum_line": 15.5,
+              "scale": 12
+            }
+          },
+          "fallback": "same-opportunity reference identified by forecast_source and model_version; unavailable is never zero",
+          "meaning": "descriptive scaled forecast gap, not win probability or EV",
+          "minimum_games": 2,
+          "minimum_projected_ppr": {
+            "QB": 10,
+            "RB": 6,
+            "TE": 6,
+            "WR": 6
+          },
+          "minimum_score": 0.35,
+          "minimum_snap_share": 0.5,
+          "projection_line_ratio": {
+            "list_count": 2
+          },
+          "tie_order": {
+            "list_count": 4
+          },
+          "top_n": 12,
+          "unavailable": {
+            "list_count": 8
+          },
+          "version": "selected-projection-gap-classic-presence-v2"
+        },
+        "policy_sha256": "551ee07861774ba2c90ad0e8097136c359807f92843dde5cd4b96ecffbe958ed",
+        "prepared_at": "2026-11-10T20:46:35.958848+00:00",
+        "schema_version": "weekly-selected-rankings-v1",
+        "season": 2026,
+        "website_source_sha": "c134a44ff1d9b51d0b52926e13387742397b6ccf",
+        "week": 10,
+        "list_field_counts": {
+          "frozen_proofs": 0
+        }
+      }
+    }
+  ],
+  "build_age_at_observation_minutes": 425.78993568333334,
+  "declared_max_build_age_minutes": 120,
+  "freshness": "Frozen health age is a build-time check; age recomputed from actual generated_at. No current DOM or stale-warning rendering claim.",
+  "DOM": "NOT_CHECKED",
+  "full_board": "NOT_FETCHED_OR_RENDERED",
+  "original_1610_and_C75_and_B10": "PRESERVED; NO_REISSUE_OR_NEW_GRADE",
+  "new_collection": 0,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_actual_offer_selections": 0,
+  "new_website_writes": 0,
+  "new_dispatches": 0,
+  "projection_policy": "Recursive list counts only; native response hashes/clocks unchanged. Full public pick rows are not repackaged."
+}

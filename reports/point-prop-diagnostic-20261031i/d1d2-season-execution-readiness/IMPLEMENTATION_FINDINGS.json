@@ -1,0 +1,51 @@
+[
+  {
+    "severity": "EXECUTION_READINESS",
+    "file": "nfl_v2/qualified_defense_wave.py",
+    "line": 39,
+    "finding": "Prepare requires exact2026W1-7panel and13remainingW8games; oldCLI has no season argument.",
+    "consequence": "Do not run/rename this frozen job as an older-season evaluation."
+  },
+  {
+    "severity": "EXECUTION_READINESS",
+    "file": "nfl_v2/distribution_wave_v2.py",
+    "line": 21,
+    "finding": "Current policies hardcode fitfloors2026/2025/2022 and strictfeaturefloor2026.",
+    "consequence": "Reuse completed seasonal_rolling_v2.policies(year), never substitute2019or2026data into olderseasons."
+  },
+  {
+    "severity": "EXECUTION_READINESS",
+    "file": "nfl_v2/qualified_defense_inputs.py",
+    "line": 17,
+    "finding": "Context helper opens2022-2026files; new older executor must bind exact through-year inputs instead.",
+    "consequence": "Existing newdryrun hashes onlythrough-year sourcefiles; fullrun integration still required."
+  },
+  {
+    "severity": "EXECUTION_READINESS",
+    "file": "nfl_v2/scheduled_defense.py",
+    "line": 65,
+    "finding": "Scheduled helper accepts featurefloor2022or2026 only; olderSTRICTyear floor raises.",
+    "consequence": "Tested isolated adapter filters both observations/schedule to logicalfloor then reuses exact helper with2022implementation token; oldcodeunchanged."
+  },
+  {
+    "severity": "METHOD_CONTRACT",
+    "file": "nfl_v2/qualified_defense.py",
+    "line": 108,
+    "finding": "Observed window takes last4eligibleobserved position groups, not last4scheduledteamgames. Missing target within an observed group occupies its group; absent group creates no observedslot.",
+    "consequence": "Retain observedD1/D2 identities; scheduled alternative remains a separate procedure with unknown absent slots."
+  },
+  {
+    "severity": "METHOD_CONTRACT",
+    "file": "nfl_v2/scheduled_defense.py",
+    "line": 70,
+    "finding": "Scheduled window counts last4eligibleREGteamgames; absent position groups occupy unknown slots and latestscheduledkickoff drivesage.",
+    "consequence": "Do not zero-fill absent group, backfillolderobservedgroup or call both windowcontracts equivalent."
+  },
+  {
+    "severity": "RESOURCE",
+    "file": "reports/continuation-20261030c/qualified-defense-information-v1/HISTORICAL_RUN_RECEIPT.json",
+    "line": null,
+    "finding": "Prior2026D1D2 run retained556models across672logicalcells:143878645bytes,309.973wallseconds,368.668CPUseconds,1883930624peakRSS.",
+    "consequence": "Futurepilot must budget around measuredcost and preserve recoverygate; today\u2019s1GiBmetadataaudit is not a failedfit feasibilitytest."
+  }
+]

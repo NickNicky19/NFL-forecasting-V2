@@ -1,0 +1,31 @@
+{
+  "policy_id": "B-PRODUCT-FIVE-WEEK-FLOOR-v1",
+  "authority": "User POST-WAVE-5W-v1",
+  "adoption_sha256": "af95d52af8c5fe4c17061fe951010c52ae04b975b6f28ffc9b8aa9b95ecfa235",
+  "scope": "B research-export primary replacement eligibility; contribution to C shared table; does not modify production-owned policy files",
+  "minimum_distinct_completed_scored_season_week_pairs": 5,
+  "exact_identity_fields": [
+    "procedure/version",
+    "target",
+    "typed output product",
+    "role/population",
+    "history/information policy",
+    "selection/ranking policy",
+    "horizon/source/evidence contract"
+  ],
+  "requirements": [
+    "Explicit eligible scored heldout outcomes in each counted week; keep zero-selection/unresolved-only attempts separately.",
+    "Use all qualifying weeks in the declared comparison window, not best five.",
+    "Training dates, aggregate spans, model folds, seeds, repeated views and other products cannot supply missing week evidence.",
+    "Preserve current season and every historical season separately and all chronology/source-vintage uncertainty.",
+    "Week floor does not establish sample adequacy, superiority, complete target, artifact recovery, operational readiness or owner admission.",
+    "Exact restored procedure retains existing qualifying weeks; materially changed procedure needs its own."
+  ],
+  "no_new_future_waiting_period": true,
+  "shadow_under_five_allowed": true,
+  "minimum_week_gate_not_a_retrospective_ranking_censor": true,
+  "C_master_table_owner": "NickNicky19/NFL-forecasting-NGS-C",
+  "original_site_owner_retained": true,
+  "new_B_ranker_primary_state": "NOT_ELIGIBLE_BELOW_FIVE;NEGATIVE_CONTROLLED_RESULT;NO_PROMOTION",
+  "ninety_percent_target": "TARGET_NOT_ESTABLISHED;NOT_A_REQUIRED_DEPLOYMENT_THRESHOLD"
+}

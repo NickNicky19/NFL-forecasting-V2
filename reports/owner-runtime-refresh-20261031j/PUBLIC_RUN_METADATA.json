@@ -1,0 +1,243 @@
+{
+  "commit": {
+    "sha": "305dacad91d593485c94bd9838ccf2d2464d9653",
+    "message": "Scheduled update (phase1)",
+    "created_at": "2026-10-31T17:38:30Z",
+    "html_url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/commit/305dacad91d593485c94bd9838ccf2d2464d9653",
+    "files_count": 61
+  },
+  "selected_pointer": {
+    "bytes": 35029,
+    "display_board_sha256": "cad9ffa77b329128147d82ce166d0c70c1b21c692631d59acbd1744f6b089133",
+    "overlay_sha256": "742f8e8286426a339e01c3088b85e22a0449e9231b7b7b9240fffa5a21773ab2",
+    "path": "weekly-selected-rankings/499f485369216d10c93dcd941cb9a581d77632c25c8befa57d54ff0c1d6126ec.json",
+    "published_at": "2026-10-31T17:38:30.155304+00:00",
+    "schema_version": "weekly-selected-rankings-pointer-v1",
+    "sha256": "499f485369216d10c93dcd941cb9a581d77632c25c8befa57d54ff0c1d6126ec"
+  },
+  "overlay_pointer": {
+    "bytes": 1871124,
+    "display_board_sha256": "cad9ffa77b329128147d82ce166d0c70c1b21c692631d59acbd1744f6b089133",
+    "path": "data/weekly-adaptive/742f8e8286426a339e01c3088b85e22a0449e9231b7b7b9240fffa5a21773ab2.json",
+    "schema_version": "weekly-adaptive-overlay-pointer-v1",
+    "sha256": "742f8e8286426a339e01c3088b85e22a0449e9231b7b7b9240fffa5a21773ab2"
+  },
+  "selected_receipt": {
+    "bytes": 35029,
+    "display_board_sha256": "cad9ffa77b329128147d82ce166d0c70c1b21c692631d59acbd1744f6b089133",
+    "overlay_sha256": "742f8e8286426a339e01c3088b85e22a0449e9231b7b7b9240fffa5a21773ab2",
+    "path": "weekly-selected-rankings/499f485369216d10c93dcd941cb9a581d77632c25c8befa57d54ff0c1d6126ec.json",
+    "published_at": "2026-10-31T17:38:30.155304+00:00",
+    "schema_version": "weekly-selected-rankings-pointer-v1",
+    "sha256": "499f485369216d10c93dcd941cb9a581d77632c25c8befa57d54ff0c1d6126ec"
+  },
+  "minimal_logs": {
+    "production": {
+      "job_id": 124608432227,
+      "run_id": 41225417010,
+      "lines": [
+        "2026-10-31T17:38:18.2903893Z   \"receipt\": \"data/current-classic/2026/w08/fb080a82123f6641ca2b9bae217ecac25b56196cfced64bd4b3e0698e04da575.json.gz\",",
+        "2026-10-31T17:38:18.2904632Z   \"first_captured_at\": \"2026-10-31T17:38:17Z\",",
+        "2026-10-31T17:38:18.2904973Z   \"capture_rows\": 2176",
+        "2026-10-31T17:38:30.1847785Z {\"state\": \"SELECTED_RANKINGS_PERSISTED\", \"sha256\": \"499f485369216d10c93dcd941cb9a581d77632c25c8befa57d54ff0c1d6126ec\"}",
+        "2026-10-31T17:38:33.3862845Z {\"bytes\": 22272410, \"files\": 69, \"manifest_sha256\": \"19f9d651d1ee5b05026ce372238a0956311e0364eb4d403b5b8df076574a240f\", \"published_head_sha\": \"305dacad91d593485c94bd9838ccf2d2464d9653\", \"state\": \"PUBLISHED_SOURCE_AND_ASSETS_BOUND\"}",
+        "2026-10-31T17:38:34.2733000Z {\"bytes\": 22272410, \"files\": 69, \"manifest_sha256\": \"19f9d651d1ee5b05026ce372238a0956311e0364eb4d403b5b8df076574a240f\", \"published_head_sha\": \"305dacad91d593485c94bd9838ccf2d2464d9653\", \"stage\": \"upload\", \"state\": \"PUBLICATION_FENCE_PASSED\"}",
+        "2026-10-31T17:38:36.3555327Z {\"bytes\": 22272410, \"files\": 69, \"manifest_sha256\": \"19f9d651d1ee5b05026ce372238a0956311e0364eb4d403b5b8df076574a240f\", \"published_head_sha\": \"305dacad91d593485c94bd9838ccf2d2464d9653\", \"stage\": \"deploy\", \"state\": \"PUBLICATION_FENCE_PASSED\"}",
+        "2026-10-31T17:38:43.8769281Z {\"bytes\": 22272410, \"files\": 69, \"manifest_sha256\": \"19f9d651d1ee5b05026ce372238a0956311e0364eb4d403b5b8df076574a240f\", \"published_head_sha\": \"305dacad91d593485c94bd9838ccf2d2464d9653\", \"stage\": \"postdeploy\", \"state\": \"PUBLICATION_FENCE_PASSED\"}"
+      ]
+    },
+    "research": {
+      "job_id": 124604353229,
+      "run_id": 41224045141,
+      "lines": [
+        "2026-10-31T17:20:32.4693624Z {'observed_chicago': '2026-10-31T12:20:32.446919-05:00', 'due': False, 'mode': 'grade', 'pregame_issuance_allowed': False, 'reason': 'MISSED_SCHEDULE_WINDOW_NOT_BACKFILLED', 'policy_version': 'audit-weekly-parent-0736-v1'}",
+        "2026-10-31T17:20:32.5178802Z {\"acquisition_started\": false, \"capture_started\": false, \"exit_code\": 78, \"new_fits_predictions\": 0, \"observed_at\": \"2026-10-31T17:20:32.516442+00:00\", \"reasons\": [\"QUALIFIED_HOSTED_HANDOVER_NOT_ACCEPTED\", \"PRIVATE_DURABILITY_NOT_VERIFIED\", \"EXACT_PUBLICATION_REVIEW_ABSENT\"], \"repository\": \"NickNicky19/NFL-forecasting\", \"run_attempt\": \"1\", \"run_id\": \"41224045141\", \"scheduler\": \"EXISTING_CRON_AND_SINGLE_WRITER_RETAINED\", \"schema_version\": \"lab-hosted-safety-readiness-v1\", \"scientific_confirmation\": \"NO_NEW_EVIDENCE\", \"source_commit\": \"cd51ff289ace3bf14cfb820c139fd823bc330d17\", \"state\": \"BLOCKED_PENDING_QUALIFIED_HANDOVER\", \"state_publication_started\": false}"
+      ]
+    }
+  },
+  "changed_file_metadata": [
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/ORIGINAL_SOURCE.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/PAIR.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/native.json.gz"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/espn_athletes.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/injury_timeline.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_01.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_02.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_03.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_04.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_05.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_06.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_07.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_08.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_09.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_10.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_11.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_12.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_13.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_14.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_15.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_16.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_17.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2025_18.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2026_01.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2026_02.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2026_03.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2026_04.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2026_05.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2026_06.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2026_07.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/data/cache/stats_2026_08.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/output/data/archive/2026_w04.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/output/data/archive/2026_w05.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/output/data/archive/2026_w06.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/output/data/archive/2026_w07.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/output/data/archive/2026_w08.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/output/data/meta.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/output/data/track_record.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/output/data/week.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/output/data/weeks/2026_w01.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/output/data/weeks/2026_w02.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/output/data/weeks/2026_w03.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/output/data/weeks/2026_w04.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/output/data/weeks/2026_w05.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/output/data/weeks/2026_w06.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/d78b3762e3272cf3764cc40d9a60bd3fbfd818b3aba53f05917007e7dd3cf24c/state/output/data/weeks/2026_w07.json"
+    },
+    {
+      "filename": "data/classic-r0-shadow/latest.json"
+    },
+    {
+      "filename": "data/current-classic/2026/w08/fb080a82123f6641ca2b9bae217ecac25b56196cfced64bd4b3e0698e04da575.json.gz"
+    },
+    {
+      "filename": "data/weekly-adaptive-audit/74677be31d3ad6863901b138944946ee44e891a47064b3b7e65b60f9e99249d0.json"
+    },
+    {
+      "filename": "output/data/archive/2026_w08.json"
+    },
+    {
+      "filename": "output/data/future.json"
+    },
+    {
+      "filename": "output/data/grading-history/7e98e63c7ce5b164c75004f8427232ef577fd8830971042b8421d3c601be7812.json"
+    },
+    {
+      "filename": "output/data/health.json"
+    },
+    {
+      "filename": "output/data/meta.json"
+    },
+    {
+      "filename": "output/data/teams.json"
+    },
+    {
+      "filename": "output/data/week.json"
+    },
+    {
+      "filename": "output/data/weekly-adaptive-overlay.json"
+    },
+    {
+      "filename": "output/data/weekly-adaptive/742f8e8286426a339e01c3088b85e22a0449e9231b7b7b9240fffa5a21773ab2.json"
+    },
+    {
+      "filename": "output/data/weekly-selected-rankings.json"
+    },
+    {
+      "filename": "output/data/weekly-selected-rankings/499f485369216d10c93dcd941cb9a581d77632c25c8befa57d54ff0c1d6126ec.json"
+    },
+    {
+      "filename": "output/data/weekly-selected-rankings/c5349018a5edb4adb6b31f61af314fd819543d43fc749a6bdf95ab19cf36b482.receipt.json"
+    }
+  ]
+}

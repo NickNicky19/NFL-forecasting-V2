@@ -1,0 +1,318 @@
+{
+  "id": "B-ANYTIME-TD-EVENT-PROBABILITY-OWNER-REVIEW-v1",
+  "created_UTC": "2026-11-12T01:46:00.064312+00:00",
+  "category": "inherited rushing-or-receiving anytime_td",
+  "product": "event_probability",
+  "exact_recipe": {
+    "procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+    "history": "H-MULTI",
+    "target": "at least one credited rushing/receiving TD; passing and return TD excluded",
+    "positions": [
+      "RB",
+      "WR",
+      "TE"
+    ],
+    "information_policy": "common2022 own-target feature memory; seven-day assumed historical availability; weekly earlier-only fit and per-game kickoff-left-limit query reconstruction",
+    "output": "binary probability, not an actual offered YES/NO or Over/Under policy"
+  },
+  "tested_duration": {
+    "season": 2026,
+    "weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "unique_games": 107,
+    "scored": 2118,
+    "forecast": 2152,
+    "fallback": 0,
+    "status": "SEVEN_SCORED_EVENT_PROBABILITY_WEEKS; NOT_ZERO; O_U_OFFER_DURATION_NOT_INHERITED"
+  },
+  "native_result": {
+    "brier": 0.14314429954020047,
+    "log_loss": 0.45368576970456737,
+    "source": "reports/continuation-20261029/hgb-history-v1/SCORES.json"
+  },
+  "compatible_published_football_probability_controls": [
+    {
+      "procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "history_regime": "H-MULTI",
+      "product_id": "log_loss_probability",
+      "n": 2118,
+      "brier": 0.14314429954020047,
+      "log_loss": 0.45368576970456737,
+      "fallback_rows": 0,
+      "source_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json"
+    },
+    {
+      "procedure_id": "empirical-player-history-control-v1",
+      "history_regime": "H-MULTI",
+      "product_id": "event_probability",
+      "n": 2118,
+      "brier": 0.14375498170466974,
+      "log_loss": null,
+      "fallback_rows": 112,
+      "source_artifact": "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv"
+    },
+    {
+      "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+      "history_regime": "H-MULTI",
+      "product_id": "event_probability",
+      "n": 2118,
+      "brier": 0.14390455611298283,
+      "log_loss": 0.45578602349733555,
+      "fallback_rows": 110,
+      "source_artifact": "reports/continuation-20261030b/ordered-information-ablation-v1/SCORES.json"
+    },
+    {
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+      "history_regime": "H-RECENT",
+      "product_id": "event_probability",
+      "n": 2118,
+      "brier": 0.14410544804872,
+      "log_loss": 0.45640111956846363,
+      "fallback_rows": 110,
+      "source_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json"
+    },
+    {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory",
+      "history_regime": "H-MULTI",
+      "product_id": "event_probability",
+      "n": 2118,
+      "brier": 0.14464229528531639,
+      "log_loss": 0.4582569316798421,
+      "fallback_rows": 110,
+      "source_artifact": "reports/continuation-20261030c/qualified-defense-information-v1/SCORES.json"
+    },
+    {
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+      "history_regime": "H-MULTI",
+      "product_id": "event_probability",
+      "n": 2118,
+      "brier": 0.1446491377484047,
+      "log_loss": 0.4585186267643852,
+      "fallback_rows": 110,
+      "source_artifact": "reports/continuation-20261030c/qualified-defense-information-v1/SCORES.json"
+    },
+    {
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "history_regime": "H-MULTI",
+      "product_id": "event_probability",
+      "n": 2118,
+      "brier": 0.14473651156891215,
+      "log_loss": 0.458582371979636,
+      "fallback_rows": 110,
+      "source_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json"
+    }
+  ],
+  "strongest_football_pair": {
+    "CRPS": null,
+    "best_current_with_prior_season_loss": 0.14314429954020047,
+    "best_current_with_prior_season_procedure": "hgb-direct-history-controls-v1:log_loss_probability",
+    "bias": -0.009058043207488802,
+    "brier": 0.14314429954020047,
+    "category": "anytime_td",
+    "comparison_id": "PAIR-f50eb216568b5cee56fc:FULL_SYSTEM",
+    "crps": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "forecast_rows": 2152,
+    "full_prior_seasons_for_exact_recipe": [
+      2025,
+      2024,
+      2023,
+      2022
+    ],
+    "game_normal95_sensitivity": [
+      -0.005047215787482312,
+      0.0038258514585437333
+    ],
+    "history_regime": "H-MULTI",
+    "horizon": "registered per-game kickoff reconstruction; weekly fitting before earliest kickoff",
+    "mae": 0.2826191315328142,
+    "max_abs": 0.9401684837923856,
+    "mechanism_id": "hgb-binary-logloss",
+    "metric": "brier",
+    "mse": 0.14314429954020047,
+    "n": 2118,
+    "p90_abs": 0.7908234859257844,
+    "p95_abs": 0.8493710514828716,
+    "paired_delta": -0.0006106821644692894,
+    "period": "2026 REG W1–7",
+    "population": "primary retrospective participant/stat-row panel",
+    "precision_counts": {
+      "abs_le_1": {
+        "denominator": 2118,
+        "numerator": 2118,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "denominator": 2118,
+        "numerator": 2118,
+        "rate": 1.0
+      },
+      "abs_le_5": {
+        "denominator": 2118,
+        "numerator": 2118,
+        "rate": 1.0
+      },
+      "abs_lt_1": {
+        "denominator": 2118,
+        "numerator": 2118,
+        "rate": 1.0
+      },
+      "abs_lt_10": {
+        "denominator": 2118,
+        "numerator": 2118,
+        "rate": 1.0
+      },
+      "abs_lt_5": {
+        "denominator": 2118,
+        "numerator": 2118,
+        "rate": 1.0
+      },
+      "exact_rate": {
+        "denominator": 2118,
+        "numerator": 0,
+        "rate": 0.0
+      }
+    },
+    "procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+    "product_id": "log_loss_probability",
+    "ranking_loss": 0.14314429954020047,
+    "ranking_product": "event_probability",
+    "relative_error_change": -0.004248076534306651,
+    "rmse": 0.37834415489102047,
+    "runner_up_history": "H-MULTI",
+    "runner_up_loss": 0.14375498170466974,
+    "runner_up_procedure_id": "empirical-player-history-control-v1",
+    "runner_up_product": "event_probability",
+    "scored_fallback_rate": 0.0,
+    "scored_fallback_rows": 0,
+    "source_score": "2026/SCORES.json",
+    "unique_games": 107,
+    "unique_weeks": 7,
+    "week_interval": null,
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "winner_status": "LOWEST_OBSERVED"
+  },
+  "interpretation": "Lowest observed compatible football Brier in this finite native inventory. Paired sensitivity crosses zero; this does not establish stable superiority. Full-system gain includes different fallback rates, and is not a learned-versus-learned gain claim.",
+  "earlier_prevalence_and_incumbent": {
+    "status": "NOT_ESTABLISHED_ON_MATCHED_2118_IN_REVIEWED_RELEASE_AND_NATIVE_INVENTORY",
+    "checked": [
+      "native held-aware procedure rankings",
+      "category decisions and static paired evidence",
+      "category release matrix/packages",
+      "chronological category-selector results"
+    ],
+    "caution": "Empirical source stores evaluation prevalence and p*(1-p). That is an outcome-fitted descriptive reference, not an earlier-frozen deployable baseline. No claim that every private artifact was searched. Earlier-prevalence references on W5-7 threshold panels target different events and cannot fill this cell."
+  },
+  "selector_aliases": "FROZEN_2025_BEST and POOLED_2025_AND_AVAILABLE_2026_MEMORY tie .14314429954 by selecting the same HGB; not new independent gains.",
+  "supported_prior_seasons": [
+    {
+      "category": "anytime_td",
+      "current_role": "CURRENT_LEADER",
+      "history_regime": "H-MULTI",
+      "n": 5294,
+      "native_loss": 0.14277034735823943,
+      "procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "product_id": "log_loss_probability",
+      "ranking_product": "event_probability",
+      "season": 2025,
+      "source_artifact": "reports/continuation-20261030c/season-2025-v1/SCORES.json",
+      "state": "COMPLETED_VALID"
+    },
+    {
+      "category": "anytime_td",
+      "current_role": "CURRENT_LEADER",
+      "history_regime": "H-MULTI",
+      "n": 5094,
+      "native_loss": 0.14657770530816056,
+      "procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "product_id": "log_loss_probability",
+      "ranking_product": "event_probability",
+      "season": 2024,
+      "source_artifact": "reports/continuation-20261030c/season-2024-v2/SCORES.json",
+      "state": "COMPLETED_VALID"
+    },
+    {
+      "category": "anytime_td",
+      "current_role": "CURRENT_LEADER",
+      "history_regime": "H-MULTI",
+      "n": 5062,
+      "native_loss": 0.14273053593327614,
+      "procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "product_id": "log_loss_probability",
+      "ranking_product": "event_probability",
+      "season": 2023,
+      "source_artifact": "reports/continuation-20261030c/season-2023-complete-replay-v1/SCORES.json",
+      "state": "COMPLETED_VALID"
+    },
+    {
+      "category": "anytime_td",
+      "current_role": "CURRENT_LEADER",
+      "history_regime": "H-MULTI",
+      "n": 5094,
+      "native_loss": 0.15393980201366747,
+      "procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "product_id": "log_loss_probability",
+      "ranking_product": "event_probability",
+      "season": 2022,
+      "source_artifact": "reports/continuation-20261030c/season-2022-v2/SCORES.json",
+      "state": "COMPLETED_VALID"
+    }
+  ],
+  "existing_admission_policy": "Existing owner V2.1 review policy; no universal new future-wait or mandatory matched-website-win veto. Exact target/source/recovery/inference/consumer/fallback/freshness/rollback/admission are mandatory.",
+  "operational": {
+    "review_state": "SHADOW_OWNER_PROBABILITY_POLICY_REVIEW",
+    "duration_requirement": "MET for scoped retrospective event probability; no five-new-week wait",
+    "restoration_state": "HGB_MODELS_FEATURES_AND_FORECAST_ARCHIVE_RESTORED",
+    "review_package_state": "RESEARCH_EVIDENCE_AND_RESTORED_ADAPTER_REVIEW_AVAILABLE",
+    "restored_model_fit": {
+      "path": "reports/continuation-20261029/hgb-history-v1/W08-anytime_td-H-MULTI-log_loss_probability-FIT.json",
+      "sha256": "d543e56dcb6238f1de243f38fe5808ecf9f025a45a753730187cf75deb691ea3"
+    },
+    "captured_W8_forecast": {
+      "path": "reports/continuation-20261029/hgb-history-v1/W08-anytime_td-H-MULTI-log_loss_probability-FORECAST.json",
+      "sha256": "03a6ebe2245dca6d95248d273cff061a9fdde983d94ceb12c0967be1ea73557f"
+    },
+    "capture_UTC": "2026-10-29T23:16:53.027120+00:00",
+    "warning": "Week8 capture is historical and cannot be relabeled current. Current source qualification/inference/consumer admission/served receipt not established by this older matrix.",
+    "producer": "B registered research producer; original-site owner controls consumer/admission/release",
+    "minimum_current_inputs": "Canonical eligible event/player/historical role and qualified earlier own-target stats, source/cutoff/availability semantics matching this exact recipe. No EPA, route, tracking, market or realized target-game outcome dependency belongs to this HGB recipe.",
+    "next_action": "B verifies current source and trusted current-origin restoration/refit under same recipe; original-site owner decides typed probability admission with source/role/fallback/freshness/rollback contract. If a probability replacement claim needs earlier prevalence/incumbent reference, execute one permitted saved-prediction common-mask comparison before that claim.",
+    "actual_live_method": "NOT_ATTESTED_BY_THIS_RESEARCH_CONTRIBUTION"
+  },
+  "source_bindings": [
+    {
+      "path": "reports/baselines-coverage-20261031h/CATEGORY_DECISIONS.json",
+      "sha256": "7bd2a578f489c1a0cfe090dafa247ceb49372f87d780d9b960d7bc0a89fb1917",
+      "bytes": 833742
+    },
+    {
+      "path": "reports/audit-remediation-20261105-v1/B/hold-overlay-v3/PROCEDURE_RANKINGS.json",
+      "sha256": "49af870cd3be5f9b9f88039d8e6a9380f941a61aac1180b4cb90565a8c36a8ca",
+      "bytes": 521162
+    },
+    {
+      "path": "reports/championship-20261030f/CATEGORY_RELEASE_MATRIX.json",
+      "sha256": "55bce4a75cfe835220436ede84a01477f1ad8cd205abd4a17cc069a5749af4f1",
+      "bytes": 117399
+    },
+    {
+      "path": "reports/continuation-20261029/hgb-history-v1/FROZEN_PROTOCOL.json",
+      "sha256": "8ea88fc4b558d57f46003aaba20cb10af604998f9a7c17c76eb2fb130215794e",
+      "bytes": 63290
+    },
+    {
+      "path": "nfl_v2/empirical_benchmark.py",
+      "sha256": "53ea90595bdc83a11289ef4daeec795b0bb320ce23b8c8ee8dddcdb6ca88d085",
+      "bytes": 24136
+    }
+  ],
+  "new_fits": 0,
+  "new_scores": 0
+}

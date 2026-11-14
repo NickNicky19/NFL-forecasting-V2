@@ -1,0 +1,114 @@
+{
+  "id": "B-PLAYER-CONTEXT-COMPLETION-PEER-STATUS-v1",
+  "at_utc": "2026-11-10T04:51:12.707958+00:00",
+  "heads": {
+    "A_main": "f37279a093fcdddece1e369d42ce54349cb1913c",
+    "A_research_accuracy_wave": "02d4988a6eaf1edb51a80be363cc02bc01da30bc",
+    "C_main": "dbf3170ee1fdce091b7f4de09c780ca2df65ad7e",
+    "B_start": "bf351256c0561b864c598ad6bf8812a7937d012f"
+  },
+  "canonical_protocol": {
+    "protocol_id": "ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1",
+    "protocol_sha256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1",
+    "scorer_sha256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce",
+    "current_pointer_sha256": "de570f34a8d4c0e4ebb439251866000bc75461fe37ce9ee98565c29f84233a70"
+  },
+  "C_reviews_B": {
+    "state": "PUBLISHED_SCOPED_PEER_RECEIPT;B_READBACK_VERIFIED",
+    "receipt_id": "C-INDEPENDENT-REVIEW-OF-B-CONTEXT-v1",
+    "discovery_pin": "2fa855fc4dd7e9e495126dea93ba90a33fee4be3",
+    "producer_pin": "3ad682cf86912f025e5a1699c8a396f3d9065222",
+    "metadata_pin": "f3849b405d5f2cfb9a8fcb24d6302aa3a5bce9dc",
+    "verdicts": {
+      "A_IMPLEMENTATION": "PASS_SCOPED_REPRESENTATIVE",
+      "B_SEMANTICS_CHRONOLOGY": "PASS_WITHIN_CURRENT_REVISED_SEVEN_DAY_RECONSTRUCTION;AUTHENTIC_CLOCKS_UNKNOWN",
+      "C_REPRODUCIBILITY": "UNKNOWN_OVERALL;PASS_SAVED_INFERENCE_AND_PUBLIC_ARITHMETIC;FRESH_FITS_AND_PRIVATE_REGRADING_NOT_REPRODUCED",
+      "D_COMPARISON_ADEQUACY": "PASS_NARROW_CLAIM_WITH_STRONG_CONTROLS;NOT_UNIVERSAL_CONTEXT_HYPOTHESIS",
+      "E_REQUESTED_SCOPE": "FAIL_INCOMPLETE;4_OFFERED_WEEKS;FLOW_ALIGNMENT_RECEIVER_AND_TARGET_GAPS",
+      "F_GAIN_PRIMARY_RELEASE": "FAIL_NOT_DEMONSTRATED;4_ACTUAL_LINE_WEEKS_LT5;P90_NA"
+    },
+    "checked_scope": "Representative saved inference, public arithmetic, 664 2025 QB context vectors, 654 FTN thrower-games (628 qualified QB); no fresh optimizer fits or private offer-row regrade.",
+    "not_covered": "Later B5bc/bf acceptance fresh-fit and named-adapter receipts, and any new completion-decision mechanism."
+  },
+  "A_reviews_C": {
+    "state": "PUBLISHED_SCOPED_PEER_RECEIPT;B_READBACK_VERIFIED",
+    "A_pin": "02d4988a6eaf1edb51a80be363cc02bc01da30bc",
+    "scoped_verdicts_as_received": {
+      "A_implementation": {
+        "verdict": "PASS_CHECKED_SCOPE",
+        "scope": "22 ownfeatures independently reconstructed2cases; bin-specificopponentequation;784teamgamequalificationflags;255scores"
+      },
+      "B_semantics_chronology": {
+        "verdict": "PASS_WITHIN_DECLARED_TIER",
+        "scope": "Native/PBP retained-source parity and declaredseven-day policy; explicitknown0target ratios intentionallycoarsened to null; catchquality0/0 undefined",
+        "unknown": "Noauthenticatedhistoricalpublication ortruealignment/routes from proxies",
+        "pregame_population": "UNKNOWN: query rows originate target-game current/revised statistical records; no explicitplayedfilter but no authenticatedpregameroster/template. Priorfeatureschecked; fullpipelinequerymembershipnotcertified."
+      },
+      "C_reproduction": {
+        "verdict": "UNKNOWN_FULL_FIT_INFERENCE",
+        "scope": "A independentrawfeatures, native actuals and DecimalregradingPASS",
+        "unknown": "A didnotfreshfit/loadCmodels; C restorationreceipt doesnot substitute for independent full reproduction"
+      },
+      "D_fair_comparison": {
+        "verdict": "PASS_BOUNDED_COMPARISON",
+        "scope": "Originalsame255 WRTE mask, strongerUndercontrol133; P2150vsP1149, worseBrier. P3broadnumericMAEadvantage reversesonofferedsubset",
+        "unknown": "Fixed32-iterationdepth3 no-contextsplit validnegativeablation, notproofeverycontextlearnerfails"
+      },
+      "E_requested_scope_history": {
+        "verdict": "FAIL_INCOMPLETE",
+        "scope": "OriginalW2-3 actualoffers remainfrozen; completedseparate AownerlocalCpointreplay W1-7. OriginalCprobability2weekscope unchanged.",
+        "missing": "Truealignment/route SOURCE_BLOCKED; separation/sourceincrements,4/16lookbacks, upstreamfullgamemix andhistoricalactualofferextensions not completed"
+      },
+      "F_gain_release": {
+        "verdict": "FAIL_SELECTION_UPGRADE_NOT_ESTABLISHED",
+        "scope": "OriginalP2150/255vsP1149/255; Brier0.280738vs0.279560worse, bothneutral0.25worse; only2actual-lineweeks inoriginalpanel",
+        "release": "Noautomaticpoint/probability/TopPicks switch; anynewAboardpointduration status appliesonlytoitsexactreplay product"
+      }
+    },
+    "not_B_reexecution": "B received and bound A receipts; B did not duplicate A raw/fit review."
+  },
+  "A_seven_week_C_point_replay": {
+    "state": "EXECUTED_OWNER_LOCAL_PUBLIC_AGGREGATES_RECEIVED_BY_B",
+    "A_pin": "02d4988a6eaf1edb51a80be363cc02bc01da30bc",
+    "eligible": 733,
+    "available": 678,
+    "unavailable": 55,
+    "decided": 667,
+    "selected_unknown": 11,
+    "outer_unknown": 66,
+    "actual_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "games": 81,
+    "source_rows": {
+      "ANNUAL_NAMED_NJ": 469,
+      "SITE_RECORDED_DK_JURISDICTION_UNKNOWN": 264
+    },
+    "C_intake_new_receipt": "NOT_OBSERVED_AT_C_DBF317",
+    "temporal_context": "C merge 2026-11-10T01:03:44Z predates A acceptance publication commit 2026-11-10T01:45:58Z. C old NOT_RECEIVED is a historical check, not permanent evidence that A work is unexecuted.",
+    "private_independent_regrade_receipt": "A published 2,932 independent product grades from its protected 50,704-byte relational package; B did not receive those rows.",
+    "membership_sha256_as_reported": "b84a7cfca0df5449af90b7b747df536081f34ef5656d62920dc920c02873d3d4",
+    "B_verification": "Public aggregate arithmetic verified through a separate path; source row join/membership hash/intervals not independently reconstructed by B.",
+    "probability_and_topk_week_extension": false
+  },
+  "A_earlier_ATT_B_join": {
+    "state": "NO_EXECUTION_RECEIPT_LOCATED_IN_SEARCHED_SCOPE",
+    "searched": "A02d4988 untruncated 3,194-entry tree; public EXPORT_INDEX; acceptance README, TASK_QUEUE and peer replay; older B_PASS_ATT_PRIORITY_EXPORT_RECORDS_V1. The last is an old unpaired aggregate import, not the requested new B COMMON_EXPOSURE join.",
+    "current_B_handoff": "reports/player-context-acceptance-01/B/A_OWNER_LOCAL_EARLIER_QB_HANDOFF_V1.json@bf351256c0561b864c598ad6bf8812a7937d012f",
+    "owner": "A",
+    "next": "Execute owner-local complete W1\u20134 ATT join against B frozen public origin outputs; separately retain/dispose W5 overlap and exact source/line/horizon identities. Return weekly side records, availability, controls and membership hashes through the existing index; no fit or raw-transfer grant.",
+    "earlier_CMP": "Inventory separately; ATT lines do not supply CMP evidence.",
+    "new_B_offered_weeks_from_this_receipt": 0
+  },
+  "new_B_fits": 0,
+  "new_B_inference": 0,
+  "new_B_NFL_observations": 0,
+  "C_consolidation_owner": "C",
+  "public_source_does_not_grant_private_row_access": true
+}

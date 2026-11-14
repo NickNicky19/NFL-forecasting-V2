@@ -1,0 +1,110 @@
+{
+  "id": "B-COUNT-A-PR90-PR91-DELIVERY-STAGE-REVIEW-v1",
+  "checked_UTC": "2026-11-12 20:56:27 UTC",
+  "scope": "Read-only public review; no merge, dispatch, credential lookup, upload, private model restore or consumer admission by Session B.",
+  "PR90": {
+    "url": "https://github.com/NickNicky19/NFL-forecasting/pull/90",
+    "state": "open",
+    "merged": false,
+    "head": "cc7c82834edb9a0de404c52d28212737994dd759",
+    "base": "research/weekly-storage-probe-v1",
+    "mergeable": true,
+    "CI": [
+      {
+        "run": 43292288801,
+        "head": "cc7c82834edb9a0de404c52d28212737994dd759",
+        "status": "completed",
+        "conclusion": "success",
+        "event": "pull_request"
+      }
+    ],
+    "purpose": "Owner-bootstrap source-bound materialization before native offline inference; unchanged Root/capsule/corrector, history and quota guards; same full test set repartitioned under unchanged deadlines."
+  },
+  "PR91": {
+    "url": "https://github.com/NickNicky19/NFL-forecasting/pull/91",
+    "state": "open",
+    "merged": false,
+    "head": "cf3fe6eaeed241d405206b73d67c359290b474ec",
+    "base": "main",
+    "mergeable": true,
+    "CI": [
+      {
+        "run": 43286097330,
+        "head": "cf3fe6eaeed241d405206b73d67c359290b474ec",
+        "status": "completed",
+        "conclusion": "success",
+        "event": "pull_request"
+      }
+    ],
+    "purpose": "Shared helper/controller/inventory synchronization on main, no producer-only runtime takeover."
+  },
+  "shared_source_blob_identity": [
+    {
+      "path": "config/weekly-mae-display-core3-v1.json",
+      "producer_blob": "6f3bcdedfc38ef8939a5a92fdd945df9e4af6695",
+      "main_blob": "6f3bcdedfc38ef8939a5a92fdd945df9e4af6695",
+      "exact_same_blob": true
+    },
+    {
+      "path": "nfl_lab/audit_weekly_controller_v1.py",
+      "producer_blob": "439df427ef4980e986bde6846e180028fb09b7c3",
+      "main_blob": "439df427ef4980e986bde6846e180028fb09b7c3",
+      "exact_same_blob": true
+    },
+    {
+      "path": "nfl_lab/count_a_native_extension_v1.py",
+      "producer_blob": "f3d73f8b1eaf1b88eb7a2780b5a04c96974eb171",
+      "main_blob": "f3d73f8b1eaf1b88eb7a2780b5a04c96974eb171",
+      "exact_same_blob": true
+    }
+  ],
+  "actual_upload_evidence": {
+    "source_ref": "cc7c82834edb9a0de404c52d28212737994dd759",
+    "public_source_path": "reports/abc-championship/final-mile-producer-delivery-01/ingress-resolution/CURRENT_AUTHENTICATION_BLOCKER_V1.md",
+    "authorization_UTC": "2026-11-12T18:26:09Z",
+    "successful_prior_GETs": 14,
+    "first_metadata_POST_host": "uploads.github.com",
+    "HTTP_status": 401,
+    "rate_limit_header_present": false,
+    "model_payload_POST_attempted": false,
+    "specific_credential_or_forwarding_root_cause": "UNRESOLVED;401 does not distinguish token capability from managed upload-host forwarding",
+    "postfailure_census_UTC": "2026-11-12T18:34:32.941876+00:00",
+    "asset_count_unchanged": 39,
+    "asset_bytes_unchanged": 29605302,
+    "new_metadata_assets": 0,
+    "new_payload_assets": 0,
+    "automatic_retry": false
+  },
+  "actual_stages": {
+    "local_model_corrector_parity": "Preserve earlier completed receipts; not repeated",
+    "guarded_bridge_software": "Implemented and CI-green at exact open heads",
+    "native_accepted_current_source_capsule": "NOT_ESTABLISHED_BY_CI_OR_OPEN_PR",
+    "native_current_inference": "NOT_OBSERVED",
+    "new_durable_CountA_forecast": "NOT_OBSERVED",
+    "readable_CountA_derived_feed": "NOT_DELIVERED_BY_THE_REPORTED_FAILED_INGRESS",
+    "consumer_readback": "NONE_PROVED",
+    "activation": "NONE_PROVED"
+  },
+  "minimum_next_actions": [
+    {
+      "executor": "Existing authorized A source/registered-producer owner",
+      "action": "Review exact current PR90/91 heads and perform only authorized registered merge actions; do not treat a merge as authentication repair.",
+      "completion": "Exact protected source revisions accepted with guards intact."
+    },
+    {
+      "executor": "Owner of existing Codex/GitHub credential connection",
+      "action": "Verify/correct supported uploads.github.com release-asset POST authentication/write capability on existing approved route; no new credential/account, no paste or exposure.",
+      "completion": "Owner confirms supported route, then source owner obtains fresh exact authorization and checks no duplicate asset before any allowed retry."
+    },
+    {
+      "executor": "Existing authorized A producer; original website consumer owner",
+      "action": "After authenticated ingress, bind capsule/profile/FIT_START/proof/issued Root/current query and perform native inference, durable publication and actual feed readback/admission.",
+      "completion": "Real producing commit/run/sourcecutoff/issue/artifacthash/readablefeed/consumer receipt, separate from tests."
+    }
+  ],
+  "credential_request_sent": false,
+  "secret_or_private_locator_exported": false,
+  "new_fits_or_NFL_grades": 0,
+  "source_publication_head": "b7461fb7a79f89bec179b8c2e59f1b8e2e9ced31",
+  "C_main_observed": "efa487ad1b412038c3845bb35dd55cbdd380dd3e"
+}

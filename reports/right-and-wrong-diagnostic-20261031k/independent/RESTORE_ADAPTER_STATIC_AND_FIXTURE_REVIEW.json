@@ -1,0 +1,93 @@
+{
+  "state": "PASS_STATIC_AND_SYNTHETIC_RESTORE_ADAPTER_NOT_ACTUAL_RESTORATION",
+  "at_utc": "2026-10-31T20:43:12.190632+00:00",
+  "adapter_sha256": "9ad615ff52947df2bba07991121033804673ff62fb7a5d7083dda00f779cf5d3",
+  "unchanged_canonical_verifier_sha256": "6885967bd0e4453737b930e8daad4765dc63a5269a35e04a9dde8a47d30b99e6",
+  "unchanged_gate_sha256": "f3f4ee33076ed9863ec6f26fd21b9449beddd5340d6f8d0550d5eb3a0d435163",
+  "checks": [
+    {
+      "check": "delta stream hashes every member and exact compact manifest",
+      "pass": true
+    },
+    {
+      "check": "reject wrong content address",
+      "pass": true
+    },
+    {
+      "check": "reject duplicate member",
+      "pass": true
+    },
+    {
+      "check": "reject parent traversal",
+      "pass": true
+    },
+    {
+      "check": "reject absolute member",
+      "pass": true
+    },
+    {
+      "check": "reject missing manifest",
+      "pass": true
+    },
+    {
+      "check": "exact ordered part assembly and whole hash",
+      "pass": true
+    },
+    {
+      "check": "reject overwrite of assembled file",
+      "pass": true
+    },
+    {
+      "check": "reject changed part hash",
+      "pass": true
+    },
+    {
+      "check": "complete fresh private provenance-bound local part records",
+      "pass": true
+    },
+    {
+      "check": "reject public or unknown part privacy",
+      "pass": true
+    },
+    {
+      "check": "reject wrong upload object",
+      "pass": true
+    },
+    {
+      "check": "reject changed source receipt",
+      "pass": true
+    },
+    {
+      "check": "reject incomplete fresh part census",
+      "pass": true
+    },
+    {
+      "check": "reject original area substituted for fresh part area",
+      "pass": true
+    },
+    {
+      "check": "canonical archive exact manifest and payload census",
+      "pass": true
+    },
+    {
+      "check": "reject unlisted canonical payload",
+      "pass": true
+    },
+    {
+      "check": "all four public frozen bindings and20 affirmative prior object proofs revalidated",
+      "pass": true
+    },
+    {
+      "check": "compact and pretty map hashes are explicitly distinct and pinned",
+      "pass": true
+    }
+  ],
+  "checks_passed": 19,
+  "real_NFL_payloads_decoded": 0,
+  "remote_transfers": 0,
+  "original_or_fresh_private_archives_reassembled_in_this_check": 0,
+  "inner_files_extracted": 0,
+  "new_fits_or_inference": 0,
+  "gate_cleared": false,
+  "qualification": "Synthetic fixtures check branch behavior only. Actual64 approved-object fetch/visibility/source-receipt chains, whole archives and all member joins require the subsequent separately reviewed restoration receipts. Positive inherited20 objects remain inherited, not newly downloaded."
+}

@@ -1,0 +1,47 @@
+"""Independently check fixed-F7 annotation and missing matched-control K closure."""
+import argparse,collections,gzip,hashlib,importlib.util,json,math
+from decimal import Decimal
+from pathlib import Path
+sp=importlib.util.spec_from_file_location('p',Path(__file__).with_name('check_w7_methods.py'));p=importlib.util.module_from_spec(sp);sp.loader.exec_module(p)
+read,zipped,sha,canon,member,close=p.read,p.zipped,p.sha,p.canon,p.member,p.close
+
+def main():
+ ap=argparse.ArgumentParser();ap.add_argument('--root',type=Path,required=True);ap.add_argument('--private',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);a=ap.parse_args();base=a.root/'reports/completion-20261031g/roster/w7-method-comparison-v2';pub=base/'metadata-and-control-k-v1';priv=a.private/'completion-20261031g-w7-method-comparison-v2';run=read(pub/'RUN_RECEIPT.json');oldrun=read(base/'RUN_RECEIPT.json');assert sha(base/'SCORES.json')==oldrun['main_score_sha256'];f=zipped(priv/'FROZEN_SELECTIONS_AND_K.json.gz');g=zipped(priv/'GRADED_METHOD_ROWS.json.gz');gg=g['graded'];losses={(x['method_id'],x['source_row_index']):(x['half3class_brier'],x['categorical_log_loss'])for x in g['probability_rows']};sources={};kmap={(r['method_id'],r['K'],r['rank_scope']):set(r['source_indices'])for r in f['Kplans']}
+ def bound(z):
+  path=a.root/z['source_artifact']
+  if str(path)not in sources:assert sha(path)==z['source_artifact_sha256'];sources[str(path)]=read(path)
+  r=sources[str(path)][z['source_row_index']];assert r['record_id']==z['record_id'];return r
+ def pool_selected(r):
+  pool=gg[r['method_id']]
+  if r.get('K')is None:pool=[x for x in pool if member(x,r['cohort_id'])];chosen=[x for x in pool if x['selected_side']]
+  else:chosen=[x for x in pool if x['source_row_index']in kmap[r['method_id'],r['K'],r['rank_scope']]]
+  return pool,[x for x in chosen if r['side']=='Combined'or x['selected_side']==r['side']]
+ den=read(pub/'SELECTION_DENOMINATOR_ANNOTATIONS.json')
+ for z in den:
+  r=bound(z);pool,_=pool_selected(r);sel=sum(x['selected_side']is not None for x in pool);adm=sum(x['admitted']for x in pool);abst=sum(x['admitted']and x['selected_side']is None for x in pool);assert z['eligible_pool']==len(pool)and z['admitted_forecast_opportunities']==adm and z['unavailable_forecast_opportunities']==len(pool)-adm and z['admitted_rule_abstentions']==abst and z['selected_any_side_in_full_pool']==sel and sel+abst+len(pool)-adm==len(pool)and z['partition_check']
+ precision=read(pub/'POINT_PRECISION_ANNOTATIONS.json')
+ for z in precision:
+  r=bound(z);tag=r['record_id'].removeprefix('METHOD-NUM-');rr=[x for x in gg[tag]if x['admitted']and x['actual']is not None and x['participation']=='VERIFIED_PLAYED_POSITIVE_PHYSICAL'];err=[abs(Decimal(str(x['ranking_point']))-Decimal(str(x['actual'])))for x in rr]
+  for name,v in z['precision_counts'].items():
+   if name=='exact_rate':n=sum(x==0 for x in err)
+   else:_,op,t=name.split('_');n=sum(x<Decimal(t)if op=='lt'else x<=Decimal(t)for x in err)
+   assert v['denominator']==len(err)and v['numerator']==n;close(v['rate'],n/len(err)if err else None)
+ probs=read(pub/'SELECTION_PROBABILITY_ANNOTATIONS.json')
+ for z in probs:
+  r=bound(z);pool,rr=pool_selected(r);vv=[losses[r['method_id'],x['source_row_index']]for x in rr if(r['method_id'],x['source_row_index'])in losses];m=z['probability_scores'];n=len(vv);inf=sum(x[1]=='Infinity'for x in vv);assert m['n']==n and m['infinite_log_losses']==inf;close(m['brier'],math.fsum(x[0]for x in vv)/n if n else None);close(m['log_loss'],'Infinity'if inf else math.fsum(x[1]for x in vv)/n if n else None);assert m['conditioning']=='MODELED_APPEARANCE'and m['bookmaker_nonvoid_conditioning']=='UNESTABLISHED'
+ kfile=priv/'MATCHED_CONTROL_K_METADATA_FREEZE.json.gz';assert sha(kfile)==read(pub/'CONTROL_K_FREEZE_RECEIPT.json')['source_sha256'];km={}
+ for k in zipped(kfile)['rows']:
+  rr=[];cp=f['controls'][k['method_id']]
+  for x in gg[k['method_id']]:
+   point=x['raw_prediction']if cp['control']=='SAVED_RAW_PROJECTION_DIRECTION_RETAINED_PRECISION'else x['prediction']
+   if x['selected_side']and point is not None and(k['rank_scope']=='Combined'or x['selected_side']==k['rank_scope']):rr.append((abs(Decimal(str(point))-Decimal(str(x['line']))),x['game_id']or'',x['player_id']or'',x['target'],str(x['line']),x['source_row_index']))
+  ids=[x[-1]for x in sorted(rr,key=lambda x:(-x[0],)+x[1:])[:k['K']]];assert ids==k['source_indices']and len(rr)==k['eligible_pool_n'];km[k['method_id'],k['K'],k['rank_scope']]=set(ids)
+ triads=collections.defaultdict(dict);assert sha(pub/'SCORES.json')==run['score_sha256'];scores=read(pub/'SCORES.json')
+ for r in scores:
+  rr=[x for x in gg[r['method_id']]if x['source_row_index']in km[r['method_id'],r['K'],r['rank_scope']]and(r['side']=='Combined'or x['selected_side']==r['side'])];c=collections.Counter(x['statistical_state']for x in rr);n=c['WIN']+c['LOSS'];assert r['n']==n and r['forecast_rows']==len(rr);m=r['selection_metrics'];assert m['status_counts']=={s:c[s]for s in m['status_counts']};close(m['hit_rate'],c['WIN']/n if n else None);assert r['query_membership_sha256']==hashlib.sha256(canon(sorted(x['source_row_index']for x in rr))).hexdigest();triads[r['method_id'],r['K'],r['rank_scope']][r['side']]=[len(rr),n]+[c[s]for s in('WIN','LOSS','PUSH','VOID','PENDING','MISSING_ACTUAL','UNKNOWN_PARTICIPATION')]
+ for t in triads.values():assert set(t)=={'over','under','Combined'}and t['Combined']==[x+y for x,y in zip(t['over'],t['under'])]
+ assert(len(den),len(precision),len(probs),len(km),len(scores))==(72729,578,5115,1890,5670)
+ report=dict(state='PASS_INDEPENDENT_FIXED_F7_METADATA_AND_MATCHED_CONTROL_K_CLOSURE',denominator_annotations=len(den),point_precision_annotations=len(precision),probability_annotations=len(probs),matched_control_K_lists=len(km),new_K_score_views=len(scores),side_triplets=len(triads),parent_scores_unchanged=True,new_fits=0,new_inference=0,new_grades=0,limitations=['Original partiallaw score versions remain in audit; complete-leaf coverage projection is separate and must supersede comparable partiallaw ranking views.','No price/booksettlement validation is supplied by these metadata corrections.'])
+ with a.output.open('x')as f:json.dump(report,f,indent=2);f.write('\n')
+ print(json.dumps(report))
+if __name__=='__main__':main()

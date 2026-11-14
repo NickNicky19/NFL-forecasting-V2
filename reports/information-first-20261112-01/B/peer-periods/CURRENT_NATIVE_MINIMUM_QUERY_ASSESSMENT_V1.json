@@ -1,0 +1,53 @@
+{
+  "id": "B_OWNER_PUBLISHED_MINIMUM_QB_QUERY_ASSESSMENT_v1",
+  "checked_UTC": "2026-11-13T00:02:06.177154+00:00",
+  "owner_feed": {
+    "commit": "eee966049836f66d001161ea6cba84d44e7e2414",
+    "generated_UTC": "2026-11-12T21:45:01Z",
+    "Last_Modified_UTC": "2026-11-12T21:45:24+00:00",
+    "received_UTC": "2026-11-12T23:59:28.439603+00:00",
+    "bytes": 3376562,
+    "sha256": "f3fed99e9f51b912ea541a6378b36a416019bf609ed38d9e2ca5b27d762a63ba"
+  },
+  "verdict": "BASIC_CONDITIONAL_QUERY_SUPPORTED;ACTIVE_STATUS_AND_ORIGINAL_OFFER_CLOCK_UNVERIFIED",
+  "separate_contract": "B_OWNER_PUBLISHED_CURRENT_QB_CANDIDATES-v1 proposed minimum-source adapter, NOT C06 refresh/admission or a primary recommendation universe",
+  "event": {
+    "canonical_game_id": "2026_10_WAS_NYG",
+    "native_event_id": "401873052",
+    "home": "NYG",
+    "away": "WAS",
+    "kickoff_UTC": "2026-11-13T01:15:00+00:00",
+    "published_state": "pre",
+    "published_completed": false,
+    "event_clock_scope": "State copied in owner payload generated21:45:01; fresh23:59 HTTP retrieval does not authenticate freshupstream ESPNstatus."
+  },
+  "query_counts": {
+    "total_current_owner_QB": 5,
+    "conditional_basic_candidates": 4,
+    "explicit_IR_basic_unavailable": 1
+  },
+  "identity_bridge": {
+    "path": "reports/profile-timing-closure-confirm-01/B/forward-current-v1/CURRENT_QUERIES.json",
+    "sha256": "f6ab853f663fad8ba0c9759d556903e29aa1d93c8f3549b24ea3fcfee623e600",
+    "scope": "Previously qualified stable canonical identity bridge only; current team/QB/event association comes from newly retrieved owner feed, not old roster status."
+  },
+  "query_binding_sha256": "33ee5540fd0169363f2abe0f0093428d6e4338535250495d0426b4f4d6c2543c",
+  "requirements": [
+    "Retain all5 records withIR unavailable and missing injury status unknown, not certified active/healthy.",
+    "Conditional forecast-only output requires no final outcome or starter guarantee.",
+    "Root must freeze exact independent source/query/issue/expiry contract before inference; this assessment does not lowerorrenew anexistingC06orupstream30minstatusguard.",
+    "If existing issue contract mandates native upstream status within1800s, obtain that qualified observation throughexistingowner route; hostedcopiedstatus doesnotfillit.",
+    "Persist genuinely before01:10 UTC and expire current recommendations no laterthan01:15 kickoff underdeclaredcontract; preserveforecast forlatergrading.",
+    "Dk-labelledthresholds lackindividualquoteclock/settlementadmission; no actual-line decisions or probabilitiesfromthisqualification alone."
+  ],
+  "new_fits": 0,
+  "new_predictions": 0,
+  "new_original_issues": 0,
+  "new_source_collections_by_this_agent": 0,
+  "restricted_source_rows_published": false,
+  "automatic_review": {
+    "initial_read_rejected": true,
+    "same_action_root_clarification_approved": true,
+    "no_indirect_tool_workaround": true
+  }
+}

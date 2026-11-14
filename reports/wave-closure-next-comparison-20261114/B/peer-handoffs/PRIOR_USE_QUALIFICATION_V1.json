@@ -1,0 +1,104 @@
+{
+  "id": "B_FTN_COMPLETION_PRIOR_USE_QUALIFICATION_v1",
+  "recorded_UTC": "2026-11-14T15:00:13.616180+00:00",
+  "state": "APPEND_ONLY_NOVELTY_SCOPE_QUALIFICATION_NO_RERUN",
+  "original_B_wave": {
+    "commit": "16edb9b2837f6ac3a027a8cf11f49c14cbc5781e",
+    "procedure": "B-FTN-BALL-QUALITY-COMPLETION-v1",
+    "original_report": "reports/information-first-20261112-01/B/B_INFORMATION_FIRST_CHECKPOINT_V1.md",
+    "original_report_sha256": "d1664fcf2517294b47240fb49f9c45600ab3dcae4a901cb12ff98b8f6791a15e",
+    "old_feasibility_sha256": "3354c1627f3d191c53725e1c73898b89f7a5b935f20477712f90d2e17ae83a22",
+    "original_bytes_preserved": true
+  },
+  "newly_reconciled_A_receipt": {
+    "label": "A_FTN",
+    "repository": "NickNicky19/NFL-forecasting",
+    "commit": "27ff63c25509db058e651f63f7110af1d7e6fe39",
+    "path": "reports/abc-championship/information-first-20261112-01/FTN_PRIOR_USE_HANDOFF_V1.json",
+    "bytes": 2592,
+    "sha256": "f32fa5800415bff7a80100816f977f124931a7c821759f836cbd23886e43b447",
+    "received_UTC": "2026-11-14T14:55:36.077745+00:00",
+    "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting/27ff63c25509db058e651f63f7110af1d7e6fe39/reports/abc-championship/information-first-20261112-01/FTN_PRIOR_USE_HANDOFF_V1.json"
+  },
+  "source_publication": {
+    "branch": "research/accuracy-wave-20261026",
+    "head": "27ff63c25509db058e651f63f7110af1d7e6fe39",
+    "committer_UTC": "2026-11-13T00:15:09Z",
+    "note": "Receipt found in current A substantive research export; original closed study execution date is not authenticated by this later publication. No original historical publication claim."
+  },
+  "A_original_owner_reported": {
+    "target": "pass_int expectedmean",
+    "learner": "Original Count A HGB,38baseinputs unchanged; one riskvalue addition plus standardmissingindicator",
+    "train": "2019-2022; chartvalueknownonly2022",
+    "test": "2023REG18weeks;1376QBqueryrows,663supportedlabels/359explicitzeros/713unknown; not actualsportsbookofferline evaluation",
+    "quantity": "sum true is_interception_worthy / sum source-defined known nonspike risk opportunities across exactly3 latest eligible QB passingappearances",
+    "missingness": "Select donorappearances beforecompletenesscheck; incomplete donor/<3donors/zero denominator =>missing, original FixedDesignmissingindicator",
+    "definition_limit": "Source-local riskopportunity denominator is not qualified as official credited attempts/nullification equivalence; no catchability/alignment/routes claim",
+    "result": {
+      "baseline_MSE": 0.708188,
+      "candidate_MSE": 0.711671,
+      "paired_week95_added_minus_baseline": [
+        -0.005432,
+        0.013285
+      ],
+      "direction_or_probability_or_90": "NOT_EVALUATED",
+      "decision": "CLOSE_EXACT_RECIPE_NO_GAIN; no causalallFTNnegativeclaim"
+    },
+    "original_artifact_commitments": {
+      "configuration": "config/ftn-source-risk-prior3-count-mean-v1.json",
+      "configuration_sha256": "a89ddee0b4ec8d0c4fc412656510876a6100f2dae7c85c4182b1225aa5ec5526",
+      "results": "reports/ftn-source-risk-prior3-v1/RESULTS.md",
+      "results_sha256": "5775c15cc74d55c23eaadc1fd624d0e6de48f2d99f8ff68992c7a9dda3deebca",
+      "aggregate_sha256": "4a4e27df3f7cffa5de3a665af8bd5e709b0f31ffc9833b724285b7d26cac937f",
+      "old_fullstudy_public_access": "Not found at current research/accuracy-wave-20261026 paths; owner-localoriginals hashverified, no private source/modeldata exported"
+    },
+    "source_bindings": {
+      "FTN2022_sha256": "2846ef9bcc5f7298a5c783fb9a5edc85b3820c0b4943bf60a1217398e412985b",
+      "FTN2023_sha256": "162f0f48a8fca23f86a334c78e27f8daa7443e6b383beada0416b65c593b2c0e"
+    }
+  },
+  "qualification": "The is_interception_worthy field was previously used in a completed A pass_int information increment. Do not describe it as never used anywhere in A/B/C. The B completion comparison remains a distinct bounded target/denominator/history/two-rate/learner contrast, not a globally novel raw field.",
+  "substantive_differences": [
+    {
+      "dimension": "target/output",
+      "A": "pass_int expected mean; no actual offered-line evaluation",
+      "B": "pass_cmp mean/lower-median/exact count law and own-line direction"
+    },
+    {
+      "dimension": "history",
+      "A": "Exactly3 latest eligible passing appearances",
+      "B": "Last8 earlier eligible QB appearances then qualified chart join"
+    },
+    {
+      "dimension": "denominator",
+      "A": "Known source-defined nonspike risk opportunities; not established equivalent to official credited attempts",
+      "B": "Qualified credited official pass attempts excluding sacks/two-point/deleted plays; retained credited spikes/throwaways"
+    },
+    {
+      "dimension": "representation",
+      "A": "One risk rate plus original missing indicator",
+      "B": "Two Beta-shrunk values: throwaway and IWP; earlier QB-only pool,20 pseudoattempts; B1 exact support alias on complete panel"
+    },
+    {
+      "dimension": "learner",
+      "A": "Count A HGB,38 base inputs",
+      "B": "Unchanged retained R3 ExtraTrees Leaf-CDF completion learner/settings"
+    }
+  ],
+  "conclusion": "Preserve both closed negative recipes. This does not invalidate B saved outputs/metrics, establish a new gain, justify refitting, or disprove all FTN information.",
+  "verification_scope": {
+    "B_checked": "Exact public A receipt bytes/hash, public index/branch identity and internal arithmetic/definition consistency",
+    "not_checked": [
+      "A owner-local original raw plays/features/models/prediction rows",
+      "Original A fresh fit",
+      "A source-risk denominator parity with B credited attempts",
+      "Original historical FTN publication clocks",
+      "Private A row grading"
+    ]
+  },
+  "no_new_fits": 0,
+  "no_new_forecasts": 0,
+  "no_new_scores": 0,
+  "original_site_changes": 0,
+  "rights": "Public-safe receipt/provenance qualification. A source/model rows remain private; FTN derivatives retain FTN Data via nflverse CC-BY-SA-4.0, separate ordinary-stat attribution."
+}

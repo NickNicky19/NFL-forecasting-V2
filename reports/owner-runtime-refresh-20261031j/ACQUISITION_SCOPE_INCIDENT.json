@@ -1,0 +1,21 @@
+{
+  "schema": "read-only-acquisition-scope-incident-v1",
+  "state": "PRESERVED_UNFILTERED_CONNECTOR_RESPONSE_SCOPE",
+  "at": "2026-10-31T18:45:01.513Z",
+  "action": "github_fetch_commit",
+  "repository": "NickNicky19/nicks-expert-nfl-picks",
+  "commit_sha": "305dacad91d593485c94bd9838ccf2d2464d9653",
+  "requested_scope": "commit metadata",
+  "actual_scope": "Commit structured result contains full changed-file diff",
+  "diff_characters": 1043541,
+  "changed_files": 61,
+  "printed_response": "Oversized orchestration output truncated",
+  "scalar_exposure": "POSSIBLE_UNFILTERED_PLAYER_GAME_STATISTIC_SCALAR_EXPOSURE",
+  "season_weeks_potentially_affected": [
+    "2026W8",
+    "other cached historical seasons included by changed-file diff; exact scalar scope not re-inspected"
+  ],
+  "grading_performed": false,
+  "holdout_reset": false,
+  "mitigation": "No rawdiff retained in public files; subsequent acquisitions use exactfileURLs, byte hashes, and key allowlists. No claim of zero scalar exposure."
+}

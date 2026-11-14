@@ -1,0 +1,102 @@
+{
+  "state": "PASS_ALL_SOURCE_BOUND_BASELINE_ANNOTATIONS_AND_TWO_RAW_PAIRED_UNCERTAINTY_REPLAYS",
+  "sources": [
+    {
+      "source": "season-2025-v1",
+      "source_score_sha256": "8a20b4c8bd1d9dfa2ac0706676dec1554346a146f8a330399a29d657009f1eba",
+      "annotation_sha256": "6f64602f157b08b1c140e69c7d57e943d5a30b9f600460fd341d64faefce3328",
+      "views": 14770,
+      "statuses": {
+        "PAIRED_RETAINED_ROWS": 14092,
+        "UNESTABLISHED": 678
+      }
+    },
+    {
+      "source": "season-2024-v2",
+      "source_score_sha256": "705fa19bb88b1e01f786626219ed0a8609c7a684d3e1a077a617a9bdd4a72660",
+      "annotation_sha256": "5ae532fb7c93c1acda8ad18fead5647b5cf3a6544c37f1d2c574bca6dadae469",
+      "views": 14770,
+      "statuses": {
+        "PAIRED_RETAINED_ROWS": 14092,
+        "UNESTABLISHED": 678
+      }
+    },
+    {
+      "source": "season-2023-complete-replay-v1",
+      "source_score_sha256": "53cbb1f715e4ad60c6c3e3cad713eefdbeb56bef830478d93a18de4869004575",
+      "annotation_sha256": "8d4063c7554613d2de8e6987b8724d187ca5682b0133625980de80ca49b0a8d5",
+      "views": 14770,
+      "statuses": {
+        "PAIRED_RETAINED_ROWS": 14092,
+        "UNESTABLISHED": 678
+      }
+    },
+    {
+      "source": "season-2022-v2",
+      "source_score_sha256": "be31ef7a5e0963c896f05095dbbc792259a698d2ac8633ea0006a454db96465f",
+      "annotation_sha256": "ccd6ae81f98b0072aa432fb38318b5eb328c361f776c9d2fae1023021f10d9f1",
+      "views": 14770,
+      "statuses": {
+        "PAIRED_RETAINED_ROWS": 14092,
+        "UNESTABLISHED": 678
+      }
+    },
+    {
+      "source": "season-2025-continuity-repair-v1",
+      "source_score_sha256": "d6b7f8d64e045e82c12018b973d587f0beaed79a4f7ca2c09e29ce3575db6fb5",
+      "annotation_sha256": "b34ba68a893dfd412e0bded09fa2c00ebf862fe5a1fc8e71810a1d83c38fd41b",
+      "views": 176,
+      "statuses": {
+        "PAIRED_RETAINED_ROWS": 168,
+        "UNESTABLISHED": 8
+      }
+    }
+  ],
+  "checks": {
+    "independent_annotation_metrics_counts_and_identity_hashes": 56536,
+    "explicit_unpaired_subset_or_empty_views": 2720,
+    "honest_position_week_uncertainty_gaps": 4856,
+    "independent_raw_case_point_and_500_draw_interval_replays": 2
+  },
+  "representative_win_loss": [
+    {
+      "direction": "loss",
+      "target": "pass_att",
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+      "policy_id": "H-CURRENT-COMMON",
+      "product_id": "absolute_error_point",
+      "n": 664,
+      "candidate_error": 10.359248205253316,
+      "baseline_error": 9.10106985121557,
+      "delta": 1.258178354037745,
+      "week_interval": [
+        -0.33239736390991304,
+        4.380172856076599
+      ]
+    },
+    {
+      "direction": "win",
+      "target": "pass_att",
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+      "policy_id": "H-MULTI-COMMON",
+      "product_id": "absolute_error_point",
+      "n": 664,
+      "candidate_error": 8.745243295741309,
+      "baseline_error": 9.10106985121557,
+      "delta": -0.35582655547426134,
+      "week_interval": [
+        -0.696330382814101,
+        0.02108944883475628
+      ]
+    }
+  ],
+  "scope": "Allfiveannotationfilesmetrics/identitymasks/coverage; tworepresentative2025rawrowbootstrapcomparisons. FixedempiricalHRECENTmean/eventbaseline, selfswitchCURRENT; notstrongestlearnedcontrol, no newNFLobservations. Unretainedposition\u00d7weeklossesandprocedure-specificlearnedsubsetsremainexplicitunknown.",
+  "resource": {
+    "wall_seconds": 26.86467429000004,
+    "cpu_seconds": 26.839072923,
+    "peak_rss_bytes": 458240000
+  },
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

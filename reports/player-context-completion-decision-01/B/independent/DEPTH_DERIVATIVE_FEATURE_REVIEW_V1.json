@@ -1,0 +1,340 @@
+{
+  "id": "B-DEPTH-DERIVATIVE-FEATURE-INDEPENDENT-v1",
+  "at_utc": "2026-11-10T04:56:48.949206+00:00",
+  "status": "PASS",
+  "chart_sha256": "fc8489bfecae5e9d9808cdda62ff7e3af4b054240dbfb105c2937773934c9b6f",
+  "source_census_sha256": "e96da610302bc9218361d589d76d0c95cb501313dcc7618b3fd0ccbc257d3b93",
+  "base_inputs_sha256": "f23bb72f05f398c7108700e10fa7bf63e233aca57bc67eb6820a38c9f212af90",
+  "module_sha256": "9494f1d7be9b67ddbaa824f9be2f44b4ae5d2f8bb3b2f2e15445ec7675fe9a82",
+  "checked": {
+    "derivative_rows": 2901,
+    "independent_aggregate_cells": 993,
+    "source_year_sample_cases": [
+      {
+        "game_id": "2022_01_BAL_NYJ",
+        "player_id": "00-0026158",
+        "season": 2022,
+        "eligible_throws": [
+          10,
+          34,
+          14,
+          1,
+          0
+        ],
+        "flags": {
+          "is_catchable_ball": {
+            "known": [
+              10,
+              34,
+              14,
+              1,
+              0
+            ],
+            "positive": [
+              8,
+              25,
+              9,
+              1,
+              0
+            ]
+          },
+          "is_drop": {
+            "known": [
+              10,
+              34,
+              14,
+              1,
+              0
+            ],
+            "positive": [
+              1,
+              2,
+              1,
+              0,
+              0
+            ]
+          },
+          "is_contested_ball": {
+            "known": [
+              10,
+              34,
+              14,
+              1,
+              0
+            ],
+            "positive": [
+              0,
+              3,
+              3,
+              0,
+              0
+            ]
+          }
+        },
+        "raw_key_check": "PASS"
+      },
+      {
+        "game_id": "2023_01_ARI_WAS",
+        "player_id": "00-0033949",
+        "season": 2023,
+        "eligible_throws": [
+          7,
+          13,
+          9,
+          1,
+          0
+        ],
+        "flags": {
+          "is_catchable_ball": {
+            "known": [
+              7,
+              13,
+              9,
+              1,
+              0
+            ],
+            "positive": [
+              7,
+              11,
+              5,
+              0,
+              0
+            ]
+          },
+          "is_drop": {
+            "known": [
+              7,
+              13,
+              9,
+              1,
+              0
+            ],
+            "positive": [
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          },
+          "is_contested_ball": {
+            "known": [
+              7,
+              13,
+              9,
+              1,
+              0
+            ],
+            "positive": [
+              2,
+              3,
+              4,
+              1,
+              0
+            ]
+          }
+        },
+        "raw_key_check": "PASS"
+      },
+      {
+        "game_id": "2024_01_ARI_BUF",
+        "player_id": "00-0034857",
+        "season": 2024,
+        "eligible_throws": [
+          5,
+          11,
+          5,
+          2,
+          0
+        ],
+        "flags": {
+          "is_catchable_ball": {
+            "known": [
+              5,
+              11,
+              5,
+              2,
+              0
+            ],
+            "positive": [
+              4,
+              9,
+              5,
+              1,
+              0
+            ]
+          },
+          "is_drop": {
+            "known": [
+              5,
+              11,
+              5,
+              2,
+              0
+            ],
+            "positive": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "is_contested_ball": {
+            "known": [
+              5,
+              11,
+              5,
+              2,
+              0
+            ],
+            "positive": [
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          }
+        },
+        "raw_key_check": "PASS"
+      },
+      {
+        "game_id": "2025_01_ARI_NO",
+        "player_id": "00-0035228",
+        "season": 2025,
+        "eligible_throws": [
+          9,
+          13,
+          3,
+          4,
+          0
+        ],
+        "flags": {
+          "is_catchable_ball": {
+            "known": [
+              9,
+              13,
+              3,
+              4,
+              0
+            ],
+            "positive": [
+              9,
+              11,
+              2,
+              1,
+              0
+            ]
+          },
+          "is_drop": {
+            "known": [
+              9,
+              13,
+              3,
+              4,
+              0
+            ],
+            "positive": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "is_contested_ball": {
+            "known": [
+              9,
+              13,
+              3,
+              4,
+              0
+            ],
+            "positive": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          }
+        },
+        "raw_key_check": "PASS"
+      },
+      {
+        "game_id": "2026_01_ARI_LAC",
+        "player_id": "00-0033119",
+        "season": 2026,
+        "eligible_throws": [
+          3,
+          23,
+          7,
+          4,
+          0
+        ],
+        "flags": {
+          "is_catchable_ball": {
+            "known": [
+              3,
+              23,
+              7,
+              4,
+              0
+            ],
+            "positive": [
+              2,
+              20,
+              7,
+              2,
+              0
+            ]
+          },
+          "is_drop": {
+            "known": [
+              3,
+              23,
+              7,
+              4,
+              0
+            ],
+            "positive": [
+              0,
+              1,
+              2,
+              0,
+              0
+            ]
+          },
+          "is_contested_ball": {
+            "known": [
+              3,
+              23,
+              7,
+              4,
+              0
+            ],
+            "positive": [
+              0,
+              3,
+              1,
+              2,
+              0
+            ]
+          }
+        },
+        "raw_key_check": "PASS"
+      }
+    ],
+    "knownzero_missing_unseen_fixture": "PASS",
+    "future_target_mutation": "PASS_SYNTHETIC_AND_REAL_2026W1_QUERY",
+    "upcoming_query_requires_final_outcome": false
+  },
+  "scope": "New five-depth annotation derivative and new DepthHistory only. No rerun of old2901sourcefeatureacceptance, no freshfit/scoring. Rawsampletables are licensedPBP/FTN derivatives, not privateoffers.",
+  "resources": {
+    "wall_seconds": 15.081126822999067,
+    "peak_RSS_bytes": 165044224,
+    "fits": 0,
+    "downloads": 0
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "status": "PASS_FULL_SEASON_STREAMING_SOURCE_NATIVE_PROPER_SCORE_AND_REPAIR_REPLAY",
+  "season": 2025,
+  "forecast_rows": 1652071,
+  "score_views": 14770,
+  "unique_games": 272,
+  "unique_player_games": 6037,
+  "checks": {
+    "raw_source_label_and_position_joins": 3304142,
+    "retained_row_chronology_checks": 3923902,
+    "independent_score_fields": 396478,
+    "exact_precision_numerators": 103390,
+    "repaired_score_fields": 4048
+  },
+  "max_float_difference": 6.998845947236987e-13,
+  "source_variant_rows": {
+    "empirical_history_control": 255363,
+    "ordered_leaf_cdf": 680968,
+    "regularized_glm_law": 340484,
+    "HGB_DIRECT_HISTORY_CONTROL": 292188,
+    "hgb-poisson-objective-count-point": 58920,
+    "hgb-rush-att-role-specialization": 24148
+  },
+  "repair": {
+    "score_views": 176,
+    "rows": 24148,
+    "changed_fallback_rows": 886,
+    "numerically_changed_predictions": 12,
+    "GLM_all_zero_audited_cells": 432,
+    "GLM_affected_cells": 0,
+    "new_generation_identity_and_time_checked": true,
+    "corrected_prediction_sha256": "ecf061650ed10c779e2eac13d5d8264cefcb7d35f67ea3d93b59ef5e51fbf72c",
+    "score_sha256": "d6b7f8d64e045e82c12018b973d587f0beaed79a4f7ca2c09e29ce3575db6fb5"
+  },
+  "source_score_sha256": "8a20b4c8bd1d9dfa2ac0706676dec1554346a146f8a330399a29d657009f1eba",
+  "source_prediction_sha256": "fcc0f566a624c29d73424e3bbef0f78537a90b2e6761dd9e95bfb31d3bdf9d96",
+  "protocol_sha256": "d994a043f84fa1a79265489699c0b7fe0cc6d5cc6bd608a65c42e398bf392355",
+  "verification_resource": {
+    "wall_seconds": 61.31154296500017,
+    "cpu_seconds": 61.257514063,
+    "peak_rss_bytes": 559374336
+  },
+  "scope": "Everyretainedpointrow joinedrawseasonfilteredsource; everypublishednative/properaggregate andprecisionnumerator replayed. Savedlawsummaryaggregation isnotyet independentmodel/PMFreconstruction; separatecheckrequired.",
+  "evidence": "Current-vintageparticipantdiagnostic; originalv1RAcontinuitygap preserved, repairedversionpreferred; no historicalpregameclaims",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

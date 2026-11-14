@@ -1,0 +1,194 @@
+[
+  {
+    "target": "pass_yd",
+    "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+    "brier": 0.2728893704064541,
+    "n": 63,
+    "matched_baselines": [
+      {
+        "target": "pass_yd",
+        "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "NEUTRAL_HALFPOINT_50_50",
+        "n": 63,
+        "candidate_brier": 0.2728893704064541,
+        "control_brier": 0.25,
+        "brier_delta": 0.022889370406454113
+      },
+      {
+        "target": "pass_yd",
+        "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "EARLIER_PREVALENCE_V8",
+        "n": 63,
+        "candidate_brier": 0.2728893704064541,
+        "control_brier": 0.27649080698871215,
+        "brier_delta": -0.003601436582258033
+      },
+      {
+        "target": "pass_yd",
+        "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "P2_LAW",
+        "n": 63,
+        "candidate_brier": 0.2728893704064541,
+        "control_brier": 0.2772322788623978,
+        "brier_delta": -0.004342908455943706
+      },
+      {
+        "target": "pass_yd",
+        "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "P3_DIRECT",
+        "n": 63,
+        "candidate_brier": 0.2728893704064541,
+        "control_brier": 0.26392771609098187,
+        "brier_delta": 0.008961654315472245
+      }
+    ]
+  },
+  {
+    "target": "rush_yd",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+    "brier": 0.277385843974335,
+    "n": 174,
+    "matched_baselines": [
+      {
+        "target": "rush_yd",
+        "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "NEUTRAL_HALFPOINT_50_50",
+        "n": 174,
+        "candidate_brier": 0.277385843974335,
+        "control_brier": 0.25,
+        "brier_delta": 0.027385843974335022
+      },
+      {
+        "target": "rush_yd",
+        "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "EARLIER_PREVALENCE_V8",
+        "n": 174,
+        "candidate_brier": 0.277385843974335,
+        "control_brier": 0.26805439812167076,
+        "brier_delta": 0.009331445852664266
+      },
+      {
+        "target": "rush_yd",
+        "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "P2_LAW",
+        "n": 174,
+        "candidate_brier": 0.277385843974335,
+        "control_brier": 0.27262740433713606,
+        "brier_delta": 0.0047584396371989635
+      },
+      {
+        "target": "rush_yd",
+        "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "P3_DIRECT",
+        "n": 174,
+        "candidate_brier": 0.277385843974335,
+        "control_brier": 0.25843967538756724,
+        "brier_delta": 0.018946168586767786
+      }
+    ]
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+    "brier": 0.2654175788003575,
+    "n": 337,
+    "matched_baselines": [
+      {
+        "target": "rec",
+        "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "NEUTRAL_HALFPOINT_50_50",
+        "n": 337,
+        "candidate_brier": 0.2654175788003575,
+        "control_brier": 0.25,
+        "brier_delta": 0.01541757880035749
+      },
+      {
+        "target": "rec",
+        "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "EARLIER_PREVALENCE_V8",
+        "n": 337,
+        "candidate_brier": 0.2654175788003575,
+        "control_brier": 0.2836214374576421,
+        "brier_delta": -0.018203858657284633
+      },
+      {
+        "target": "rec",
+        "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "P2_LAW",
+        "n": 337,
+        "candidate_brier": 0.2654175788003575,
+        "control_brier": 0.2664758862916817,
+        "brier_delta": -0.0010583074913241841
+      },
+      {
+        "target": "rec",
+        "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "P3_DIRECT",
+        "n": 337,
+        "candidate_brier": 0.2654175788003575,
+        "control_brier": 0.25986835229748334,
+        "brier_delta": 0.005549226502874149
+      }
+    ]
+  },
+  {
+    "target": "rec_yd",
+    "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+    "brier": 0.2744007329419561,
+    "n": 337,
+    "matched_baselines": [
+      {
+        "target": "rec_yd",
+        "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "NEUTRAL_HALFPOINT_50_50",
+        "n": 337,
+        "candidate_brier": 0.2744007329419561,
+        "control_brier": 0.25,
+        "brier_delta": 0.024400732941956105
+      },
+      {
+        "target": "rec_yd",
+        "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "EARLIER_PREVALENCE_V8",
+        "n": 337,
+        "candidate_brier": 0.2744007329419561,
+        "control_brier": 0.29175432095369436,
+        "brier_delta": -0.017353588011738252
+      },
+      {
+        "target": "rec_yd",
+        "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "P2_LAW",
+        "n": 337,
+        "candidate_brier": 0.2744007329419561,
+        "control_brier": 0.26920274607250355,
+        "brier_delta": 0.005197986869452553
+      },
+      {
+        "target": "rec_yd",
+        "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+        "week_view": "ALL",
+        "control": "P3_DIRECT",
+        "n": 337,
+        "candidate_brier": 0.2744007329419561,
+        "control_brier": 0.2676418289083688,
+        "brier_delta": 0.00675890403358731
+      }
+    ]
+  }
+]

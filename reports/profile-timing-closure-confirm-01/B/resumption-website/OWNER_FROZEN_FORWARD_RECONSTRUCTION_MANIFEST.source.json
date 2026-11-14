@@ -1,0 +1,139 @@
+{
+  "schema_version": "website-frozen-forecast-comparison-receipt-v1",
+  "identity": "NFL-WEB-C-FROZEN-FORECAST-COMPARISON-20261110-v2",
+  "owner": "NFL-WEB-PRODUCTION-REPORT-INTEGRATION-20261025-122500Z",
+  "declared_at": "2026-11-10T22:46:27.193744+00:00",
+  "receipt_created_UTC": "2026-11-10T22:50:05.448860+00:00",
+  "purpose": "PROSPECTIVE_FORECAST_ONLY_SHADOW;no new inference, primary recommendations, bets or historical score claims",
+  "website_reference": {
+    "commit": "c134a44ff1d9b51d0b52926e13387742397b6ccf",
+    "receipt": "data/current-classic/2026/w10/c8ec793f3a23b8df55e40baaa97aaaf71eccd0135c22ee02912ce61e16e5c468.json.gz",
+    "native_sha256": "4504bf0b48e56813a818b52ab1d6d2076c238be9fc58fceb2910a74f62803df2",
+    "model": "sleeper-matchup-classic-presence-strict-v2",
+    "rows": 1610,
+    "generated_UTC": "2026-11-10T18:41:46Z",
+    "captured_UTC": "2026-11-10T18:41:47Z",
+    "git_persisted_UTC": "2026-11-10T18:41:52Z",
+    "information_cutoff": "NOT_AUTHENTICATED",
+    "later1614revision_used_for_this_pairing": false
+  },
+  "C_packet": {
+    "repository": "NickNicky19/NFL-forecasting-NGS-C",
+    "capture_commit": "dd67371ffe84672958a2412f66d13cfed99b0c55",
+    "forecast_path": "prospective/runs/C-C04-20261110-W10-FIRST-01/FORECASTS.json.xz",
+    "forecast_sha256": "4334c6e93d41487011e3bedb9a0a0173e38ccfcf5c568b30efbd0b73995be362",
+    "rows": 75,
+    "unique_players": 25,
+    "information_cutoff_UTC": "2026-11-10T19:23:09.469852+00:00",
+    "football_predictor_snapshot": "2026-11-10T18:55UTC;source-owner receipt, not new Root observation",
+    "issued_UTC": "2026-11-10T19:37:43.972513+00:00",
+    "server_persistence_verified_no_later_than": "2026-11-10T19:55:36Z",
+    "server_workflow": 42889831779,
+    "server_receipt_sha256": "5f9f10e1ad90063a74264499cb8b3a3817103367a212343496296071104b90fe",
+    "expires_UTC": "2026-11-12T03:34:29+00:00",
+    "kickoff_UTC": "2026-11-13T01:15:00+00:00",
+    "conditional_on": "Appearance; starter, health and individual transaction effective clocks unknown"
+  },
+  "matched_cases": [
+    {
+      "gsis_player_id": "00-0031588",
+      "website_player_id": "2449",
+      "espn_player_id": "2976212",
+      "native_game_id": "401873052",
+      "canonical_game_id": "2026_10_WAS_NYG"
+    },
+    {
+      "gsis_player_id": "00-0035250",
+      "website_player_id": "6130",
+      "espn_player_id": "4040761",
+      "native_game_id": "401873052",
+      "canonical_game_id": "2026_10_WAS_NYG"
+    },
+    {
+      "gsis_player_id": "00-0036309",
+      "website_player_id": "7090",
+      "espn_player_id": "4040655",
+      "native_game_id": "401873052",
+      "canonical_game_id": "2026_10_WAS_NYG"
+    },
+    {
+      "gsis_player_id": "00-0037256",
+      "website_player_id": "8136",
+      "espn_player_id": "4697815",
+      "native_game_id": "401873052",
+      "canonical_game_id": "2026_10_WAS_NYG"
+    },
+    {
+      "gsis_player_id": "00-0037838",
+      "website_player_id": "8131",
+      "espn_player_id": "4361050",
+      "native_game_id": "401873052",
+      "canonical_game_id": "2026_10_WAS_NYG"
+    },
+    {
+      "gsis_player_id": "00-0039337",
+      "website_player_id": "11632",
+      "espn_player_id": "4595348",
+      "native_game_id": "401873052",
+      "canonical_game_id": "2026_10_WAS_NYG"
+    },
+    {
+      "gsis_player_id": "00-0039847",
+      "website_player_id": "11597",
+      "espn_player_id": "4429148",
+      "native_game_id": "401873052",
+      "canonical_game_id": "2026_10_WAS_NYG"
+    },
+    {
+      "gsis_player_id": "00-0040715",
+      "website_player_id": "12481",
+      "espn_player_id": "4696981",
+      "native_game_id": "401873052",
+      "canonical_game_id": "2026_10_WAS_NYG"
+    },
+    {
+      "gsis_player_id": "00-0041040",
+      "website_player_id": "13301",
+      "espn_player_id": "5081432",
+      "native_game_id": "401873052",
+      "canonical_game_id": "2026_10_WAS_NYG"
+    },
+    {
+      "gsis_player_id": "00-0041042",
+      "website_player_id": "13285",
+      "espn_player_id": "4682648",
+      "native_game_id": "401873052",
+      "canonical_game_id": "2026_10_WAS_NYG"
+    }
+  ],
+  "outer_players": 25,
+  "matched_players": 10,
+  "model_rows": 30,
+  "unmatched": {
+    "missing_retained_crosswalk": 14,
+    "crosswalk_known_but_website_native_identity_absent": 1,
+    "GSIS_without_matched_website_ESPN_identity": "00-0036628",
+    "descriptive_context_not_an_identity_match": "Website snapshot contains display-name John Bates at Sleeper7716 with espn_id=null. This does not authenticate GSIS00-0036628\u2192Sleeper7716; no name-only match was admitted."
+  },
+  "procedures": {
+    "C_V4_RETAINED_REFERENCE_OBSERVED": 10,
+    "C_V11_P1_E2_POOLED_7D": 10,
+    "C04_F3_PROFILE_1D_SHADOW": 10
+  },
+  "source_products": "Each C expected mean/lower median separate; website reference point is not relabeled mean/median. No probability inferred from points or empirical portion of a mixture law.",
+  "actual_offer_selections": 0,
+  "grades_available": 0,
+  "consumer_primary_admission": false,
+  "grading_contract": "Existing common outcome source/evaluator and presence-aware statistical contract; verified finals/participation/components required. Mean/MSE and median/MAE separate; identical paired mask plus outer coverage. C owns Cpacket grading, Website owns websitepairing, B independent verifier/C consolidated record remain.",
+  "expiry_rule": "Retain original snapshot for future grading; do not advertise fresh current output after exact expiry. No late-line/repricing selection is registered by this forecast-only comparison.",
+  "limitations": [
+    "One future game, not five scored weeks or general superiority",
+    "Source/information ages differ; this is not a causal timing contrast",
+    "Public hashes/clock receipts verified; full producer inference/source observation not independently repeated",
+    "15unmatched players retained; any later crosswalk extension needs append-only versioned reconciliation, no outcome-selected inclusion"
+  ],
+  "protocol_sha256": "4fc38cb4c9a6c1bf775a1c7b0f8182a54b41416398daf3414a48f701b5d60dc1",
+  "pairs_local_sha256": "9bf10576e0c72f47ed35ab2111fffb7c17139590ac799de5f9facae31ab94181",
+  "independent_review_sha256": "2b10cc8087ebfd3c6d63d97a3495cae83fc6e1146897f2c8d1464cab2bed7387",
+  "initial_harness_correction": "Original namespaced espn:digits vs website digits mismatch retained in initial script/result; v2 strictly parses the documented namespace. No forecast/model/offer/evidence changes."
+}

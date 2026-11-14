@@ -1,0 +1,50 @@
+{
+  "state": "PASS_SEPARATE_ANALYTIC_FORMULAS",
+  "score_sha256": "c1c838d75913bb09f4d5b69d7814a2533e9901c3c880205a373a29bd56f21777",
+  "side_views_verified": 144,
+  "proper_views_verified": 48,
+  "baseline_views_verified": 192,
+  "private_rows_verified": 3872,
+  "analytic_law_rows": 3668,
+  "law_kinds": {
+    "poisson": 1010,
+    "geometric": 350,
+    "signed": 2308
+  },
+  "changed_line_monotonicity_checks": 3668,
+  "lowest_scores": [
+    {
+      "target": "pass_yd",
+      "lowest_glm_brier": 0.3095028954143495,
+      "procedure_id": "B::v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory::H-CURRENT-COMMON::P2_EXACT_LINE_CDF-v1",
+      "n": 63,
+      "beats_neutral_025": false
+    },
+    {
+      "target": "rush_yd",
+      "lowest_glm_brier": 0.2951084392326795,
+      "procedure_id": "B::v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory::H-RECENT-COMMON::P2_EXACT_LINE_CDF-v1",
+      "n": 174,
+      "beats_neutral_025": false
+    },
+    {
+      "target": "rec",
+      "lowest_glm_brier": 0.2858493424959205,
+      "procedure_id": "B::v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory::H-CURRENT-COMMON::P2_EXACT_LINE_CDF-v1",
+      "n": 337,
+      "beats_neutral_025": false
+    },
+    {
+      "target": "rec_yd",
+      "lowest_glm_brier": 0.2845717500915607,
+      "procedure_id": "B::v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory::H-MULTI-COMMON::P2_EXACT_LINE_CDF-v1",
+      "n": 337,
+      "beats_neutral_025": false
+    }
+  ],
+  "limits": [
+    "PoissonCDF independently summed from log-PMF terms; signed/geometric/zero CDFs directly calculated; no parent scorer or Law import.",
+    "Current/revised source and timing-unverified quote contracts retained.",
+    "No recalibration, fitting, model re-inference, profit or release-readiness claim."
+  ]
+}

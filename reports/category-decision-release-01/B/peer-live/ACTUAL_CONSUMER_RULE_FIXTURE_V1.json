@@ -1,0 +1,156 @@
+{
+  "id": "B-ACTUAL-CONSUMER-GAP-FIXTURE-v1",
+  "executed_UTC": "2026-11-12T01:40:13.333Z",
+  "source": {
+    "repository": "NickNicky19/nicks-expert-nfl-picks",
+    "commit": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+    "path": "output/app.js",
+    "sha256": "8aa97d75b8a444e4711e972535211208f8ee72414ad48b8840a17075c8a5b52f"
+  },
+  "exact_extracted_functions": [
+    {
+      "name": "isClassicBaseline",
+      "sha256": "3e739b38c81eb0479254b771ca98b1535bab115ccec4f5e761ac762665b7aebe"
+    },
+    {
+      "name": "selectedRankingPolicy",
+      "sha256": "dffc14ca8bda38cf6d5f26bf64c289e35ec56d121010f26a479f82aad4142956"
+    },
+    {
+      "name": "baselineTdProbability",
+      "sha256": "34ebdd8139c712081cb1498f1ba62546c74161bd2d0b19755cd61565579c39b6"
+    },
+    {
+      "name": "effectivePropForecast",
+      "sha256": "058849e96a9e2e060cac6aa59711134a9f2a3d2054058a93343e890fbccb61a9"
+    },
+    {
+      "name": "selectedPropGap",
+      "sha256": "4767d86f9392430236d3da48e04f4e47c720cd76a19a4e812b518226069e18e8"
+    }
+  ],
+  "node": "v24.19.0",
+  "status": "PASS_ALL9_SYNTHETIC_CASES",
+  "cases": [
+    {
+      "id": "CMP_NEAR_LINE",
+      "key": "pass_cmp",
+      "point": 22.7,
+      "line": 22.5,
+      "expectedStrict": "Over",
+      "expectedLean": null,
+      "strictP1": "Over",
+      "consumerLean": null,
+      "consumerGap": 0.1999999999999993,
+      "consumerSource": "CURRENT_BASELINE"
+    },
+    {
+      "id": "CMP_OUTSIDE_MARGIN",
+      "key": "pass_cmp",
+      "point": 23.5,
+      "line": 22.5,
+      "expectedStrict": "Over",
+      "expectedLean": "over",
+      "strictP1": "Over",
+      "consumerLean": "over",
+      "consumerGap": 1,
+      "consumerSource": "CURRENT_BASELINE"
+    },
+    {
+      "id": "CMP_EQUAL",
+      "key": "pass_cmp",
+      "point": 22.5,
+      "line": 22.5,
+      "expectedStrict": "ABSTAIN",
+      "expectedLean": null,
+      "strictP1": "ABSTAIN",
+      "consumerLean": null,
+      "consumerGap": 0,
+      "consumerSource": "CURRENT_BASELINE"
+    },
+    {
+      "id": "YARDS_EXACT_MARGIN",
+      "key": "pass_yd",
+      "point": 258.5,
+      "line": 250.5,
+      "expectedStrict": "Over",
+      "expectedLean": null,
+      "strictP1": "Over",
+      "consumerLean": null,
+      "consumerGap": 8,
+      "consumerSource": "CURRENT_BASELINE"
+    },
+    {
+      "id": "ZERO_RECEPTION_POINT",
+      "key": "rec",
+      "point": 0,
+      "line": 0.5,
+      "expectedStrict": "Under",
+      "expectedLean": "under",
+      "strictP1": "Under",
+      "consumerLean": "under",
+      "consumerGap": -0.5,
+      "consumerSource": "CURRENT_BASELINE"
+    },
+    {
+      "id": "NULL_POINT",
+      "key": "pass_cmp",
+      "point": null,
+      "line": 22.5,
+      "expectedStrict": null,
+      "expectedLean": null,
+      "strictP1": null,
+      "consumerLean": null,
+      "consumerGap": null,
+      "consumerSource": null
+    },
+    {
+      "id": "MISSING_LINE",
+      "key": "pass_cmp",
+      "point": 22.7,
+      "line": null,
+      "expectedStrict": null,
+      "expectedLean": null,
+      "strictP1": null,
+      "consumerLean": null,
+      "consumerGap": null,
+      "consumerSource": null
+    },
+    {
+      "id": "INTERNAL_REFERENCE_SOURCE",
+      "key": "pass_cmp",
+      "point": 23.5,
+      "line": 22.5,
+      "lineFrom": "ours",
+      "expectedStrict": "Over",
+      "expectedLean": null,
+      "strictP1": "Over",
+      "consumerLean": null,
+      "consumerGap": null,
+      "consumerSource": null
+    },
+    {
+      "id": "CUSTOM_CHANGED_LINE",
+      "key": "pass_cmp",
+      "point": 22.7,
+      "line": 22.5,
+      "changedLine": 24.5,
+      "expectedStrict": "Under",
+      "expectedLean": "under",
+      "strictP1": "Under",
+      "consumerLean": "under",
+      "consumerGap": -1.8000000000000007,
+      "consumerSource": "CURRENT_BASELINE"
+    }
+  ],
+  "scope": "Exact selectedPropGap + real numeric fallback functions; no current feed validator/DOM/producer/model/Top Picks replay exercised. selectedPropForecast dependency is null, matching observed disabled overlay.",
+  "conclusion": "Strict P1 crossing and existing margin-based category lean are different complete decision policies. A P1 release needs a separately versioned strict category consumer or five-week evaluation of the actual margin policy; it cannot borrow P1 accuracy unchanged.",
+  "zero_note": "Zero is a valid numeric point here. The separate Top Picks ratio/minimum-line gates are not exercised or changed by this fixture.",
+  "custom_line_note": "Changed displayed line recomputes direction; it is not an original saved selection or registered repricing decision.",
+  "new_fits": 0,
+  "new_NFL_observations": 0,
+  "new_offers": 0,
+  "new_selections": 0,
+  "new_grades": 0,
+  "website_writes": 0
+}

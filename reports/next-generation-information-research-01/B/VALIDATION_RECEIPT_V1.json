@@ -1,0 +1,55 @@
+{
+  "state": "PASS_WITH_PRESERVED_INITIAL_STAGING_FAILURES",
+  "checked_at_UTC": "2026-11-12T18:16:37.402858+00:00",
+  "checked_at_America_Chicago": "2026-11-12T12:16:37.402858-06:00",
+  "checks": [
+    {
+      "command": "python -m unittest discover -s tests -q",
+      "result": "PASS",
+      "tests": 548
+    },
+    {
+      "command": "python tools/validate_checkpoint.py",
+      "result": "PASS",
+      "prior_failure": "Newunpublishedcompletionevent duplicatedregistrationrunID; completioneventreceiveddistinctID, originalregistrationunchanged."
+    },
+    {
+      "command": "python tools/check_result_index_coverage.py",
+      "result": "PASS",
+      "records": 613848,
+      "artifacts": 227
+    },
+    {
+      "command": "python tools/check_analysis_index_coverage.py",
+      "result": "PASS",
+      "paired_records": 22089
+    },
+    {
+      "command": "python tools/check_prop_scoreboard_coverage.py",
+      "result": "PASS",
+      "scope": "Existingcommonlegacypropboards unchanged; newroleprocedure remainsLOCAL_NOT_C_ADMITTED."
+    },
+    {
+      "command": "independent rawsource/features and savedlaws/outputs",
+      "result": "PASS",
+      "receipt": "peer-coordination/INDEPENDENT_OUTPUT_ARITHMETIC_V1.json"
+    },
+    {
+      "command": "git diff --check",
+      "result": "PASS"
+    }
+  ],
+  "pilot_CI": [
+    {
+      "run": 43276255594,
+      "head": "b01f98af3a8f37b7150fdfe557a33a16a428a661",
+      "conclusion": "success"
+    },
+    {
+      "run": 43276225832,
+      "head": "b01f98af3a8f37b7150fdfe557a33a16a428a661",
+      "conclusion": "success"
+    }
+  ],
+  "scientific_scope": "Tests and CI validate declared software/metadata only; newscientificcomparison results separatelyreported, no deployment/neworiginalpicks inferred."
+}

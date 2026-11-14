@@ -1,0 +1,42 @@
+{
+  "state": "SAVED_ROW_DERIVATIONS_NO_FORECAST_CHANGE",
+  "parent_run_receipt": "reports/abc-championship/weekly-point-partition-20261104-v1/RUN_RECEIPT.json",
+  "parent_run_sha256": "9265e4409382df7e30237264dda503d4aec93c9a4ec96d8e5875061c4057fc02",
+  "supplemental_outputs": [
+    {
+      "path": "reports/abc-championship/weekly-point-partition-20261104-v1/CONSTANT_CONTROL_SCORES.json",
+      "sha256": "2acb53679b1d59b0a40d250dcda49f22c0940bd563b59af0de000fec412b6a23",
+      "bytes": 260707
+    },
+    {
+      "path": "reports/abc-championship/weekly-point-partition-20261104-v1/FULL_SYSTEM_FOCAL_SCORES.json",
+      "sha256": "c4c9ce5f3778df3ab353ac712779f6caa6b11aab706ff9d53bc161b2ecd05158",
+      "bytes": 84368
+    }
+  ],
+  "derivation": "Constants use the existing B grade/score functions on full retained and focal-admitted masks. Full-system focal views restore all28source opportunities/week, reusing parent-derived weekly native metrics and preserved point/selection/outcome records. Original mask labels remain unchanged; see V3 alias qualification.",
+  "code_bindings": [
+    {
+      "path": "tools/abc_b_partition_retained_weeks.py",
+      "sha256": "87d67dce7fe33210e6f459af1404e75ff30a260df3780bb9b0a7895d3c1e50b8"
+    },
+    {
+      "path": "tools/abc_b_c_bound_replay.py",
+      "sha256": "54a13fc096f4c61b937c98f66c1dafb9462b90dd5b334f58fbd5d3cf7c4c29c7"
+    },
+    {
+      "path": "nfl_v2/full_provider_prop_replay.py",
+      "sha256": "dd280e719cf7908c4e514f4b9598f0e74e238ef93f163f0e91e0de928a2d1696"
+    },
+    {
+      "path": "nfl_v2/scoring.py",
+      "sha256": "b61c9cbbced8e5d64060ef1d14f6d60bec1edd9760fa8903a75c1b09503deadb"
+    }
+  ],
+  "manual_supplement_scope": "Supplement generation was a bounded interactive Python calculation using these existing code functions; the retained outputs and independently checked source rows, masks and counts define the replay. No new model execution.",
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "new_private_bytes": 0
+}

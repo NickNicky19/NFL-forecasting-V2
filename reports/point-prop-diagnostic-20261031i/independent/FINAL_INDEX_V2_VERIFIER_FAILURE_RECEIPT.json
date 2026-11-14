@@ -1,0 +1,12 @@
+{
+  "state": "FAILED_VERIFIER_ONLY_SOFTWARE_CSV_NULL_IDENTITY",
+  "index_manifest": "reports/point-prop-diagnostic-20261031i/results-index-v2/INDEX_MANIFEST.json",
+  "checker_sha256": "a5335f34fdab2a983b48c87368075ddf70d0eac9573a2088d7cf960edd8eb16e",
+  "failure": "KeyError: procedure_id while comparing a software CSV record. Software intentionally has no forecasting procedure/category identity; verifier must compare missing/blank nulls.",
+  "scope": "Reached CSV comparison after unchanged-prefix/source/new nested precision checks; no PASS or completed final-index receipt emitted. No producer or NFL score defect established.",
+  "next": "Correct verifier null-identity comparison and run once on final index-v3 after its six comparison-reference additions are sealed.",
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_scores": 0,
+  "source_mutations": 0
+}

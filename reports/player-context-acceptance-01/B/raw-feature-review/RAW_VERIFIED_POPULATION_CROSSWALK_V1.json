@@ -1,0 +1,95 @@
+{
+  "state": "PASS_MATCHED_277_VERSUS_112_RAW_VERIFIED_IDENTITY_AND_LABEL_CROSSWALK",
+  "raw_reconstruction_receipt_sha256": "7645c1742092560da3a0c5be7cfea9089fa120f37ef59baf1f484651b8b13e7b",
+  "derived_input_sha256": "f23bb72f05f398c7108700e10fa7bf63e233aca57bc67eb6820a38c9f212af90",
+  "owner_local_source_bindings": [
+    {
+      "source_id": "RETAINED_B_QB_W5",
+      "sha256": "9b74e81ff451bd26e96b3019436e26306a4068f4fc9b38cc4561e1e0ab2d146f"
+    },
+    {
+      "source_id": "RETAINED_B_QB_W6",
+      "sha256": "9903240899222ae4d8829dfd4e294de7652032da42b08ba52c1ba252b79344c7"
+    },
+    {
+      "source_id": "RETAINED_B_QB_W7",
+      "sha256": "8abe1fab12e6bb97be4d2e77f93e7a07f440eab02ff394c8dbc282183a9dca24"
+    },
+    {
+      "source_id": "RETAINED_B_QB_W8",
+      "sha256": "4b37b02e4ea584fbf91c21ca1fe8454c2447a68cafc154f15d431f520c73358a"
+    }
+  ],
+  "panels": [
+    {
+      "target": "pass_att",
+      "numerical_query_rows": 277,
+      "offered_player_games": 112,
+      "nonoffered_numerical_queries": 165,
+      "games": 56,
+      "actual_weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "exact_labels": 112,
+      "unknown_participation": 0,
+      "technical_prediction_unavailability": 0,
+      "query_identity_membership_sha256": "632a1ebdea4afafd2db6f1a3472d9604a3092c761c54c1cb3407e4a5cfdd6182",
+      "offered_forecast_fallback_counts": {
+        "COMMON_EXPOSURE": {
+          "none": 112
+        }
+      }
+    },
+    {
+      "target": "pass_cmp",
+      "numerical_query_rows": 277,
+      "offered_player_games": 112,
+      "nonoffered_numerical_queries": 165,
+      "games": 56,
+      "actual_weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "exact_labels": 112,
+      "unknown_participation": 0,
+      "technical_prediction_unavailability": 0,
+      "query_identity_membership_sha256": "632a1ebdea4afafd2db6f1a3472d9604a3092c761c54c1cb3407e4a5cfdd6182",
+      "offered_forecast_fallback_counts": {
+        "E0": {
+          "none": 112
+        },
+        "E1": {
+          "none": 112
+        },
+        "E2": {
+          "none": 112
+        },
+        "E3": {
+          "none": 112
+        },
+        "P1": {
+          "none": 112
+        },
+        "P2": {
+          "none": 112
+        },
+        "P3": {
+          "none": 96,
+          "shared_no_pooling_support_fallback": 16
+        }
+      }
+    }
+  ],
+  "source_permission": "Owner-local protected boards inspected; only safe counts/hashes exported, no thresholds/players/decisionvalues.",
+  "source_timing": "Current/revised feature reconstruction and timing-unverified actual-line panels; not original recommendations or authenticated quote execution.",
+  "missing": "W1-4offers,oneW5gameandannualofferstillmissing/unqualified;277participantmembershipisnot277offeredgames.",
+  "new_fits": 0,
+  "new_source_collections": 0,
+  "new_NFL_outcomes": 0,
+  "wall_seconds": 9.726907002001099
+}

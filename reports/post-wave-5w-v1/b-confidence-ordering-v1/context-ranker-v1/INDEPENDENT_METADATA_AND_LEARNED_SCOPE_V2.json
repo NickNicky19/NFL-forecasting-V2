@@ -1,0 +1,72 @@
+{
+  "state": "PASS_METADATA_ONLY_CORRECTION_AND_TRUE_COMMON_LEARNED_MASK",
+  "at_utc": "2026-11-05T00:27:12.843698+00:00",
+  "verification_code_sha256": "c2a870c6ca6b8ecb305cafdfbc07e8793256f9f58857b4d60b3110cf2ae78949",
+  "metadata_qualification_sha256": "a64e9ff71efcdc580ca1d0bdb9006e451bdae9618165b083b8a753e4fe15769a",
+  "preserved_original_scores_sha256": "702398b8cfb707754a3464c0fac65ac72c99cda858a90c688d82e24285eba21a",
+  "current_scores_sha256": "55ff91b061495aee07bc2d598228689276f1a37ca50004fe18c39afe3d281bc3",
+  "original804_numeric_choice_probability_and_status_fields_preserved": true,
+  "allowed_metadata_changes": {
+    "fallback_count_corrected_views": 204,
+    "renamed_fitted_origin_views": 12
+  },
+  "new_saved_row_views_checked": 12,
+  "true_common_learned": [
+    {
+      "target": "rec",
+      "arm": 0,
+      "eligible_output_rows": 65,
+      "selected": 31,
+      "wins": 18,
+      "losses": 13,
+      "actual_positive_scored_weeks": [
+        3
+      ],
+      "membership_hash": "6dc356e7b12bc4219365e790812b03bbc9dc10d210ed9d85a9489d5f409d026f"
+    },
+    {
+      "target": "rec",
+      "arm": 1,
+      "eligible_output_rows": 65,
+      "selected": 31,
+      "wins": 17,
+      "losses": 14,
+      "actual_positive_scored_weeks": [
+        3
+      ],
+      "membership_hash": "6dc356e7b12bc4219365e790812b03bbc9dc10d210ed9d85a9489d5f409d026f"
+    },
+    {
+      "target": "pass_td",
+      "arm": 0,
+      "eligible_output_rows": 26,
+      "selected": 13,
+      "wins": 5,
+      "losses": 8,
+      "actual_positive_scored_weeks": [
+        8
+      ],
+      "membership_hash": "6030b13bce1fc9dae74b6e530c83ef7698d7bb61295bc1b55bdda75513c936a1"
+    },
+    {
+      "target": "pass_td",
+      "arm": 1,
+      "eligible_output_rows": 26,
+      "selected": 13,
+      "wins": 5,
+      "losses": 8,
+      "actual_positive_scored_weeks": [
+        8
+      ],
+      "membership_hash": "6030b13bce1fc9dae74b6e530c83ef7698d7bb61295bc1b55bdda75513c936a1"
+    }
+  ],
+  "refits": 0,
+  "new_grades": 0,
+  "new_NFL_observations": 0,
+  "limits": [
+    "Renamed fitted-origin views may include unavailable base laws; strict learned-output views require both actual base probabilities and ranking outputs. These are separate scopes.",
+    "All whole-view unknown fallback counts now include missing None metadata; conditional constants remain on the original selected mask.",
+    "Learned-output evidence is one rec week and one PT week; it does not satisfy the exact-policy five-week floor."
+  ]
+}

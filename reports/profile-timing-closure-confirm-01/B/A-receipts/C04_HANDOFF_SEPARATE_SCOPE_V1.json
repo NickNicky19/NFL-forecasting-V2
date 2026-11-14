@@ -1,0 +1,176 @@
+{
+  "id": "B-C04-HANDOFF-SCOPE-RECEIVED-v1",
+  "at_UTC": "2026-11-10T22:46:05.526632+00:00",
+  "C_actual_main_ref_as_checked_by_B_source_reviewer": "d3d1ef4dc60826334234cfa1a1b8e373b2ee024e",
+  "receipt_scope": "ExistingcacheofexactpublicCmanifest/runbytesreused; no duplicatepeerfetch/modelrestore/linejoin",
+  "historical_new_C04": {
+    "manifest": {
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "d3d1ef4dc60826334234cfa1a1b8e373b2ee024e",
+      "path": "reports/profile-closure-next-02/timing/POINT_HANDOFF_MANIFEST.json",
+      "bytes": 58964,
+      "SHA256": "bd541f4425f1ac0c627583fbcf5fad8fd7a4fcd598526fe803ea89d84d97367c",
+      "actually_read": true
+    },
+    "typed_points": {
+      "path": "reports/profile-closure-next-02/timing/POINT_HANDOFF.json.xz",
+      "SHA256": "4fd67d7915f9da3df9bec152155e809eb34d60f89d3ea751e26da9eb0a5c8abc",
+      "query_rows": 4811,
+      "arm_query_records": 19244,
+      "typed_point_values": 38488,
+      "public_bytes": 234104
+    },
+    "typed_point_payload_readback_by_this_subtask": "NOT_PERFORMED; manifestbindingisnotrowparityornewscore",
+    "source_model": {
+      "path": "src/receiving_timing_c04.py",
+      "SHA256": "314b4f645a51e2d9c239ea4e18dc6d53db5ec1f3d85de7c2751d45c6d86a0ac7"
+    },
+    "input_bindings": {
+      "path": "reports/profile-closure-next-02/timing/INPUT_BINDINGS.json",
+      "SHA256": "38e2a1d44452e5253792be6d50b791615dfaf39f3ec55563186d33ff0e92681e"
+    },
+    "feature_order": {
+      "path": "reports/profile-closure-next-02/timing/FEATURE_ORDER.json",
+      "SHA256": "07aca583ee388a8fbdc2a9284a899df184e12e0a6f064ce74ddc6b4b9cca8e9f"
+    },
+    "procedures": {
+      "C-RECEIVING-ALIGNED-TIMING-v1::F0::MEAN": {
+        "category": "rec",
+        "arm": "F0",
+        "output_type": "mean",
+        "original_C03_arm": "R1",
+        "original_procedure_id": "C-RECEIVING-PROFILE-INCREMENT-v2::R1::MEAN",
+        "availability_policy": "RECONSTRUCTED_KICKOFF_PLUS7D_STRICT_CURRENT_VINTAGE",
+        "aliases_are_not_new_learner_families": true,
+        "recipe_descriptor_SHA256": "97fe3f11fdaa6763cafb2c047ce92409db7f07082822ac1fe1399ab18c05a06e"
+      },
+      "C-RECEIVING-ALIGNED-TIMING-v1::F0::MEDIAN": {
+        "category": "rec",
+        "arm": "F0",
+        "output_type": "median",
+        "original_C03_arm": "R1",
+        "original_procedure_id": "C-RECEIVING-PROFILE-INCREMENT-v2::R1::MEDIAN",
+        "availability_policy": "RECONSTRUCTED_KICKOFF_PLUS7D_STRICT_CURRENT_VINTAGE",
+        "aliases_are_not_new_learner_families": true,
+        "recipe_descriptor_SHA256": "3f45073e3e08e79436a2c58076ad319821a6cb6ed6dfce7b7cf70d35b32730d6"
+      },
+      "C-RECEIVING-ALIGNED-TIMING-v1::F1::MEAN": {
+        "category": "rec",
+        "arm": "F1",
+        "output_type": "mean",
+        "original_C03_arm": "R2",
+        "original_procedure_id": "C-RECEIVING-PROFILE-INCREMENT-v2::R2::MEAN",
+        "availability_policy": "RECONSTRUCTED_KICKOFF_PLUS7D_STRICT_CURRENT_VINTAGE",
+        "aliases_are_not_new_learner_families": true,
+        "recipe_descriptor_SHA256": "453d8fbc9941da68728b7417b2987b112bc3d8c1f275c292588ab1994149bf0c"
+      },
+      "C-RECEIVING-ALIGNED-TIMING-v1::F1::MEDIAN": {
+        "category": "rec",
+        "arm": "F1",
+        "output_type": "median",
+        "original_C03_arm": "R2",
+        "original_procedure_id": "C-RECEIVING-PROFILE-INCREMENT-v2::R2::MEDIAN",
+        "availability_policy": "RECONSTRUCTED_KICKOFF_PLUS7D_STRICT_CURRENT_VINTAGE",
+        "aliases_are_not_new_learner_families": true,
+        "recipe_descriptor_SHA256": "4f560327cd52e3e692a410bd981a1b593fb7efb26b4c8869c6aaee1fbbd3dddc"
+      },
+      "C-RECEIVING-ALIGNED-TIMING-v1::F2::MEAN": {
+        "category": "rec",
+        "arm": "F2",
+        "output_type": "mean",
+        "original_C03_arm": null,
+        "original_procedure_id": null,
+        "availability_policy": "RECONSTRUCTED_KICKOFF_PLUS1D_STRICT_CURRENT_VINTAGE_NOT_OBSERVED_PUBLICATION",
+        "aliases_are_not_new_learner_families": true,
+        "recipe_descriptor_SHA256": "7adb67fbfbf2b5f9846e042aabc6f766d21acaf57cff2c28ff5d31af2ed53073"
+      },
+      "C-RECEIVING-ALIGNED-TIMING-v1::F2::MEDIAN": {
+        "category": "rec",
+        "arm": "F2",
+        "output_type": "median",
+        "original_C03_arm": null,
+        "original_procedure_id": null,
+        "availability_policy": "RECONSTRUCTED_KICKOFF_PLUS1D_STRICT_CURRENT_VINTAGE_NOT_OBSERVED_PUBLICATION",
+        "aliases_are_not_new_learner_families": true,
+        "recipe_descriptor_SHA256": "e35cb3fdf2b58490655a950dd68c5319e561294690a696594e8f1edcf7e1c39f"
+      },
+      "C-RECEIVING-ALIGNED-TIMING-v1::F3::MEAN": {
+        "category": "rec",
+        "arm": "F3",
+        "output_type": "mean",
+        "original_C03_arm": null,
+        "original_procedure_id": null,
+        "availability_policy": "RECONSTRUCTED_KICKOFF_PLUS1D_STRICT_CURRENT_VINTAGE_NOT_OBSERVED_PUBLICATION",
+        "aliases_are_not_new_learner_families": true,
+        "recipe_descriptor_SHA256": "c74f7183d88dfa79606d732ff357cac385dbfda2609151587d086741c9e423cc"
+      },
+      "C-RECEIVING-ALIGNED-TIMING-v1::F3::MEDIAN": {
+        "category": "rec",
+        "arm": "F3",
+        "output_type": "median",
+        "original_C03_arm": null,
+        "original_procedure_id": null,
+        "availability_policy": "RECONSTRUCTED_KICKOFF_PLUS1D_STRICT_CURRENT_VINTAGE_NOT_OBSERVED_PUBLICATION",
+        "aliases_are_not_new_learner_families": true,
+        "recipe_descriptor_SHA256": "b1137e35c1c05cf9ac5ae1a92ecca0ba92239e05c5caa761942593310eac4fff"
+      }
+    },
+    "query_universe": "Existing_C03_RB_WR_TE_stat_row_conditioned_historical_queries;not_authenticated_pregame_roster",
+    "query_horizon": "Per_game_kickoff_reconstruction;weekly_fit_at_earliest_scheduled_game",
+    "source_tier": "CURRENT_REVISED_TIMING_RECONSTRUCTION;EXPOSED_DEVELOPMENT;NOT_ORIGINAL_ISSUANCE",
+    "recipient": "A:permitted_owner_local_offer_join",
+    "recipient_receipt": "NOT_VERIFIED",
+    "common_admission": "NOT_IMPLIED_BY_EXPORT",
+    "A_ack_at_A375": "NOT_LOCATED; oldC03joinedpoints0a374a notthisC04export4fd67d",
+    "minimum_owner_action": "Areads/hash-verifiesexactC04typedpointpacket, registersfiniteownerlocaljoinonsamequalifiedreceptionboards/controlsandreturnsactualownside/masks/numericresults. ReuseoldC03onlyafterexactparityforreusedF0/F1; no inheritancefornewF2/F3. No Crefits/newpointgenerationneeded.",
+    "not_supplied": [
+      "actual",
+      "line",
+      "price",
+      "selected_side",
+      "participation",
+      "probability",
+      "EV",
+      "grade",
+      "Top_Picks"
+    ],
+    "output_contract": "Unroundedmean/medianpoint-only; no inferredCDFprobability,confidence,EV,originalpickorTopPicksqualification.",
+    "separate_C_native_offers": "C_native_Pinnacle_W2_W3_separate;new_A_join_not_executed_by_C"
+  },
+  "new_future_C_capture_separate": {
+    "run_id": "C-C04-20261110-W10-FIRST-01",
+    "run_path": "prospective/runs/C-C04-20261110-W10-FIRST-01/RUN.json",
+    "run_bytes": 5892,
+    "run_SHA256": "a951398153017f5dcf30a4b201821ca5bcc4798f9ae58ac36184012b402cb40d",
+    "information_cutoff_UTC": "2026-11-10T19:23:09.469852+00:00",
+    "issued_UTC": "2026-11-10T19:37:43.972513+00:00",
+    "forecast_rows": 75,
+    "players": 25,
+    "games": [
+      "2026_10_WAS_NYG"
+    ],
+    "first_kickoff_UTC": "2026-11-13T01:15:00+00:00",
+    "real_offers": 0,
+    "real_selections": 0,
+    "capture_rule": "FIRST_VALID_MANUAL_BATCH_PER_MODEL;NO_FAVORABLE_REFRESH_SELECTION",
+    "conditional_population_limits": [
+      "CURRENT_KNOWN_SEASON_ROSTER_NOT_FUTURE_GAMEDAY_MEMBERSHIP",
+      "CONDITIONAL_ON_APPEARANCE",
+      "FOOTBALL_SOURCE18_55_CUTOFF_DISTINCT_FROM_LATER_NATIVE_ELIGIBILITY_CLOCK",
+      "CURRENT_PROCEDURE_COMPARISON_NOT_CAUSAL_TIMING_ISOLATION",
+      "NO_AUTHENTICATED_CURRENT_PROP_OFFERS",
+      "POISSON_AND_LEAF_LAWS_ARE_MODEL_ASSUMPTIONS_NOT_VALIDATED_CONFIDENCE"
+    ],
+    "website_primary": false,
+    "historical_A_join_weeks_added": 0,
+    "publication_stage": "RUNwasprepublication; source reviewer separatelyverifiedGithubserverpublication19:55:36Z. Seeitsforwardreceiptfor exactserverbinding,donotreadRUNAWAITINGaslateststatus."
+  },
+  "B_activity": {
+    "fits": 0,
+    "inference": 0,
+    "new_scoring": 0,
+    "model_loading": 0,
+    "owner_writes": 0,
+    "external_messages": 0
+  }
+}

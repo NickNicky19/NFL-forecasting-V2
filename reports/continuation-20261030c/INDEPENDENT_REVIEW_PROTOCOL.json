@@ -1,0 +1,32 @@
+{
+  "protocol_id": "v2-independent-seasonal-and-cohort-review-20261030c-v1",
+  "registered_at_utc": "2026-10-30T16:38:08.629747+00:00",
+  "accepted_previous_commit": "fcfe6063e851582212cc63b055d6921fa17637ad",
+  "role": "Independent read-only verifier; producer files/registries/source snapshots unchanged",
+  "scope": "All12targets for supported2025rolling-origin learned procedures, then2024/2023/2022finitewaves; new2026C02sharedcohortreplay",
+  "forbidden": [
+    "NFLfits/refits",
+    "Week8outcomeacquisition/reads/grades",
+    "upstream or production writes",
+    "mutating old protocols, rows, scores or captures"
+  ],
+  "season_relative_policy": {
+    "H_CURRENT": "fitonly earliereligible evaluation-season outcomes",
+    "H_RECENT": "fitfrom max(2022,evaluationseason-1), never a fixed2025/2026floor",
+    "H_MULTI": "expandingfrom2022; no pre2022warmstart",
+    "STRICT": "currentevaluationseason fitting/features/priors/transforms only; historically chosen fixed architecture disclosed"
+  },
+  "chronology": "Seven-day source availability is an assumed historical reconstruction; per-gamefeatures use strictlyearlier available slots, weeklyfits use labels beforeearliestweekkickoff. Current-vintage revisions/positions do not authenticate original vintages. No later evaluation-season rows or2026calendar/roster/features substitute for historical inputs.",
+  "equal_policy_reuse": "2022allfourpolicies and2023RECENT/MULTI are mathematically equal where featurememory/parameters match; requestedscorecells remain aliases, unique fits/models must not be inflated",
+  "labels": "Exactnativecounts, signedyards and qualified partial16componentchart; rarepositives/missing and participationunknown remainnull in fullcoverage, chartgrid50 medianprecision exact; means unrounded",
+  "cohorts": "Freeze shared top10/15/20,disjointbands and workload/history memberships before comparing predictions; reuse common membership across all competitors; chart signed scorehistory is not workload",
+  "numerical_verification": "Full independent streaming row-label/error/moment/coverage/proper-score aggregation for2025supported scorecells; all source/forecast hashes and seasonal policy floors. Independently reconstruct representative retained model laws and wins/losses without fitting. Record measured verification cost and exact scope for later seasons.",
+  "paired_history": "Identical frozenquery IDs/outcomes. Fullsystem and threecorelearnedintersection separated; strict pair is completeinformationpolicy. Register deterministic wholeweek/block bootstrap before interpreting intervals;>=8weekclusters for weeklyinterval, gamesensitivity separately, no rowIID claim.",
+  "season_summary": "Perseason and perweek results plus pooledmicro and explicitly equal-season summaries; crossseason pooledscores do not answer earlierhistory effects on fixed2026games.",
+  "exposure": "2022-2026outcomes/priorresearch alreadyexposed development; newrepository/newfit not fresh confirmation",
+  "resource": "No duplicatefits; use bounded source/cached-model reads and streaming aggregates, atmost2inference threads; record peakmemory/time and avoid competing with the solefitworker",
+  "future_preservation": "All previous future captures andfixed2026W1-W7remainimmutable;13futureWeek8games have no qualified outcomes read. No officialcapture/scheduler/site authority acquired.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "week8_outcomes_read": 0
+}

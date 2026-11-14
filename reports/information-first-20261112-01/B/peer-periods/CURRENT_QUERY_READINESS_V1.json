@@ -1,0 +1,94 @@
+{
+  "id": "B-INFORMATION-FIRST-CURRENT-QUERY-READINESS-v1",
+  "checked_UTC": "2026-11-12T23:53:04.047585+00:00",
+  "C_actual_main": "00744b249674b52b6634b47f55f956ab09e278f8",
+  "event": {
+    "game_id": "2026_10_WAS_NYG",
+    "native_event_id": "401873052",
+    "kickoff_UTC": "2026-11-13T01:15:00+00:00",
+    "latest_issue_limit_UTC": "2026-11-13T01:10:00+00:00"
+  },
+  "verdict": "BLOCKED_CURRENT_USE_EXPIRED_EXISTING_SOURCE;NO_NEW_CURRENT_QUERY_ADMISSION",
+  "conditional_contract": "NFLVERSE_CURRENT_KNOWN_SEASON_ROSTER_SNAPSHOT-v1 is acceptable as conditional-appearance basiccandidateuniverse; confirmedstarter/health/guaranteedfutureparticipation not required. Unknownindividualtransactiontimesare retained, notanewuniversalveto.",
+  "latest_C_roster": {
+    "observed_UTC": "2026-11-12T01:33:53.124920+00:00",
+    "source_version_UTC": "2026-11-11T07:04:38+00:00",
+    "actual_guard": "src/current_query_delivery_c06.py source_inputs:0<=now-sourceHTTP_Last_Modified<=36hours",
+    "source_expiry_UTC": "2026-11-12T19:04:38+00:00",
+    "expired_at_check": true,
+    "forecast_already_expired_UTC": "2026-11-12T02:51:07.340271+00:00",
+    "query_universe": "Current-knownseason candidate source, no starter/pregameactive certainty."
+  },
+  "new_C_personnel_source": {
+    "snapshot": "C-PERSONNEL-WASNYG-20261112-01",
+    "observed_UTC": "2026-11-12T20:48:04.918456+00:00",
+    "scope": "Nativeeventidentity/prestatus+20injuryreportfacts, notnewroster/currentcompletequeryorroleadmission.",
+    "event_status_existing_1800s_expiry_UTC": "2026-11-12T21:18:04.918456+00:00",
+    "status_stale_at_check": true,
+    "full_event_roster_admitted": false,
+    "no_new_status_HTTP_read": "No needduplicateone-shotstatuswhilemandatoryrostersourceguardalreadyexpired."
+  },
+  "older_B_current_packet": {
+    "path": "reports/profile-timing-closure-confirm-01/B/forward-current-v1/FROZEN_CAPTURE_PROTOCOL.json",
+    "source": "EarlierNov10Ccurrent-knownroster;5ACTQBconditionalforecasts+3basicunavailable",
+    "state": "Preserveoriginalearlyforecastpacketandfuturegrading;cannotreissueoldsourceoroldforecastsasfresh.",
+    "new_target_outcomes_required": false
+  },
+  "source_bindings": [
+    {
+      "path": "sources/current-personnel-interception-closure-20261112-was-nyg/SOURCE_MANIFEST.json",
+      "commit": "00744b249674b52b6634b47f55f956ab09e278f8",
+      "bytes": 5049,
+      "sha256": "3f9c9e9b8e7f4f512e3776090770eed966c2d71dc1b9fb142ec1bb388a1fdf4f",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/00744b249674b52b6634b47f55f956ab09e278f8/sources/current-personnel-interception-closure-20261112-was-nyg/SOURCE_MANIFEST.json"
+    },
+    {
+      "path": "sources/current-personnel-interception-closure-20261112-was-nyg/EVENT_STATUS.json",
+      "commit": "00744b249674b52b6634b47f55f956ab09e278f8",
+      "bytes": 678,
+      "sha256": "3eeda8847ad0df6650a15ba7969056c790ac469a20a172f38d91ebed3cd9f4cc",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/00744b249674b52b6634b47f55f956ab09e278f8/sources/current-personnel-interception-closure-20261112-was-nyg/EVENT_STATUS.json"
+    },
+    {
+      "path": "reports/interception-history-closure-01/personnel/ROSTER_SCOPE.json",
+      "commit": "00744b249674b52b6634b47f55f956ab09e278f8",
+      "bytes": 1588,
+      "sha256": "896bd38c356649cc1626f3402f8ec99d53bf024232a8e317a28cd76d348bd1b8",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/00744b249674b52b6634b47f55f956ab09e278f8/reports/interception-history-closure-01/personnel/ROSTER_SCOPE.json"
+    },
+    {
+      "path": "reports/category-decision-release-01/CURRENT_QUERY_HANDOFF.json",
+      "commit": "00744b249674b52b6634b47f55f956ab09e278f8",
+      "bytes": 4015,
+      "sha256": "e0cf825d349aef01777cff7283760cad3e61a95d48e5d232be08d4ce67d7ea19",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/00744b249674b52b6634b47f55f956ab09e278f8/reports/category-decision-release-01/CURRENT_QUERY_HANDOFF.json"
+    },
+    {
+      "path": "sources/category-decision-release-01/MODEL_INPUT_MANIFEST.json",
+      "commit": "00744b249674b52b6634b47f55f956ab09e278f8",
+      "bytes": 6969,
+      "sha256": "6112809702e74c1e7bf3dcdbc5087492a442ccc88decb1129735dd5a2113c6fb",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/00744b249674b52b6634b47f55f956ab09e278f8/sources/category-decision-release-01/MODEL_INPUT_MANIFEST.json"
+    },
+    {
+      "path": "src/current_query_delivery_c06.py",
+      "commit": "00744b249674b52b6634b47f55f956ab09e278f8",
+      "bytes": 32519,
+      "sha256": "bcfd657f541394db89111bd0bd1e8579ab1c91c43a0ae9dfb549750a40e697f1",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/00744b249674b52b6634b47f55f956ab09e278f8/src/current_query_delivery_c06.py"
+    }
+  ],
+  "minimum_next_action": {
+    "executor": "ExistingCcurrent-roster/querysourceowner",
+    "artifact": "Refreshedcurrent-knownseasonrosterprojection/manifestwithsourceversionwithin36h AND freshnative401873052pre/SCHEDULED/completedfalse eventobservationwithin1800s",
+    "route": "Existingauthorizedsource/capturejobonly;no newcollector/scheduler/account/paidcall",
+    "completion": "Canonicalcandidateidentity/team/role/event+realobservations/version/expiry admitted before01:10UTC;BcanthenfreezeB0/B2forecast-onlycurrentpacketwithgenuineissue/persistence. No offers areassumed.",
+    "if_publisher_roster_still_stale": "Keepblocked;donotraiseTTL,relabeleffectiveweekorbackdatesource."
+  },
+  "new_source_collections": 0,
+  "new_model_fits": 0,
+  "new_predictions": 0,
+  "new_issues": 0,
+  "new_offer_claims": 0,
+  "historical_experiment_may_continue": true
+}

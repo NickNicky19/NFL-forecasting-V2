@@ -1,0 +1,69 @@
+{
+  "status": "VERIFIED_INSTALLED_SOURCE_AND_FICTIONAL_LOSS_ARITHMETIC",
+  "sklearn_version": "1.8.0",
+  "checked_at_utc": "2026-10-30T00:23:39.113287+00:00",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_nfl_labels_read": 0,
+  "source_manifest": [
+    {
+      "source": "_loss/_loss.pyx.tp",
+      "sha256": "3ca0415f79fa01222de48b99629f05e1f59e7b974add14cd57232b24a81f12b0"
+    },
+    {
+      "source": "_loss/loss.py",
+      "sha256": "30847b5f4818a6a4afc957fc9a2b1a2de2ef1689966a812f3bf1f0c6cf923756"
+    },
+    {
+      "source": "ensemble/_hist_gradient_boosting/gradient_boosting.py",
+      "sha256": "5ccdc2f1692a8bb419ddc5136b269f0692c04b9f0209142081fb361e04cf0b3c"
+    },
+    {
+      "source": "ensemble/_hist_gradient_boosting/grower.py",
+      "sha256": "008241aa93e1959306fac18392e72d26386a33aa41e80ef1ab8dc4f6457bc946"
+    },
+    {
+      "source": "ensemble/_hist_gradient_boosting/splitting.pyx",
+      "sha256": "1ea07a80ab14e615ff51ae0ccbc2b215f5fc182728c5d55574c9db1ffc56033f"
+    }
+  ],
+  "equality_gradient": -1,
+  "fictional_nonnegative_targets": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    2.0
+  ],
+  "fictional_gradient": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "fictional_intercept_median": 0.0,
+  "symbolic_split_example": {
+    "n": 8018,
+    "l2": 10,
+    "leaf_sizes": [
+      8008,
+      10
+    ],
+    "root_value": 0,
+    "root_proxy_loss": 0,
+    "extreme_gain": 8003.012471938139,
+    "balanced_gain": 7998.049763622792
+  },
+  "exact_source_lines": {
+    "absolute_gradient": "_loss/_loss.pyx.tp:342",
+    "median_intercept": "_loss/loss.py:582",
+    "median_leaf_update": "ensemble/_hist_gradient_boosting/gradient_boosting.py:68",
+    "root_value_zero": "ensemble/_hist_gradient_boosting/grower.py:436",
+    "split_gain": "ensemble/_hist_gradient_boosting/splitting.pyx:1092",
+    "newton_value": "ensemble/_hist_gradient_boosting/splitting.pyx:1175"
+  },
+  "conclusion": "At raw0 all nonnegative counts have gradient-1. Split proxy uses constant gradients, hessian1 and rootvalue0; with positiveL2 its best admissible extreme split can isolate a tiny leaf. Median residual leafupdate then leaves the zero-majority largeleafat0. No claim this symbolic calculation alone proves each retained split; productionaudit independently traces actual models."
+}

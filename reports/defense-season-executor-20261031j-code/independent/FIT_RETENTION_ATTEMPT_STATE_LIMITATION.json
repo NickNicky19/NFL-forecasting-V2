@@ -1,0 +1,12 @@
+{
+  "state": "CONFIRMED_SOFTWARE_ATTEMPT_STATE_RETENTION_LIMITATION",
+  "executor_sha256": "07b821211cd1649342a2b615120d85f165880437e2447fc1b847b64666a5f2e6",
+  "synthetic_attempts": 1,
+  "failed_cell_state_reported": "NOT_RUN_AFTER_BOUNDED_STOP",
+  "expected_state": "ATTEMPTED_FIT_UNRETAINED_BEFORE_FORECAST",
+  "new_scientific_scores": 0,
+  "real_NFL_fits": 0,
+  "source_outputs_changed": false,
+  "required_before_actual_execution": "Track/persist a public-safe attempt identity at the actual before_fit callback and retain attempted/fitted-unforecasted state through post-fit guard or FIT-persistence failure. Do not label attempted cells NOT_RUN. Add a focused regression before real-worker admission.",
+  "checkpoint_scope": "Does not invalidate fail-closed recovery/admission or zero-scoring-on-failed-retention checks; no actual NFL execution occurred. Existing code-only checkpoint can preserve this as an explicit repair dependency."
+}

@@ -1,0 +1,38 @@
+{
+  "adaptive_selected_rows": 21,
+  "checks": {
+    "classic_reference_row_exists": {
+      "checked": 3,
+      "passed": 3
+    },
+    "classic_same_line_serialized": {
+      "checked": 3,
+      "passed": 3
+    },
+    "classic_same_point_serialized": {
+      "checked": 3,
+      "passed": 3
+    },
+    "model_row_canonical_bytes_equal": {
+      "checked": 21,
+      "passed": 21
+    },
+    "model_row_declared_sha_equal": {
+      "checked": 21,
+      "passed": 21
+    },
+    "model_row_exists": {
+      "checked": 21,
+      "passed": 21
+    }
+  },
+  "classic_reference_rows": 3,
+  "forecast_and_outcome_numeric_decoding": false,
+  "method": "Raw serialized numeric fields and selected-row canonicalbytes compared; no numeric values printed or graded",
+  "schema": "owner-runtime-selected-row-proof-byte-verification-v1",
+  "sources": {
+    "classic-receipt.json.gz": "90f5d2ddb2c78898fab79bb819bb4ddd965d962f113ff8509f050af1f986f134",
+    "payload.json": "742f8e8286426a339e01c3088b85e22a0449e9231b7b7b9240fffa5a21773ab2",
+    "selected-payload.json": "499f485369216d10c93dcd941cb9a581d77632c25c8befa57d54ff0c1d6126ec"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "state": "PASS_INDEPENDENT_SCHEDULED_WINDOW_PREFIX_SOURCE_TRAINING_AND_QUERY_AUDIT",
+  "protocol_sha256": "0b200bb6edced6577aefeca2bc57b6e5c8574ca11ea5c24db95742ed28b77bc9",
+  "producer_audit_receipt_sha256": "4a4c2142b9986815f371918888635c13001dd1f945ebd6fe746b282828ffb5c7",
+  "unique_scheduled_games": 1194,
+  "independently_rebuilt_source_target_floor_contexts": 210696,
+  "changed_source_contexts": 385,
+  "original_training_receipts_exact": 768,
+  "training_receipts_with_changed_features": 308,
+  "independently_recomputed_feature_fields": 4158,
+  "source_projection_rows": 144,
+  "query_projection_rows": 96,
+  "historical_common_query_changes": 77,
+  "strict_or_oldfuture_query_changes": 0,
+  "limitations": "Feature audit only. Source truth/qualified partial chart contract reused from independently reviewed snapshot. Registered1194scheduled games omit canceledBUF-CIN; no full cancellation census. No claim of error improvement or capture. NFL fit admission remains blocked by durable storage capacity.",
+  "new_fits": 0,
+  "inference_calls": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0,
+  "resource": {
+    "wall_seconds": 14.846445911000046,
+    "cpu_seconds": 14.845075984,
+    "peak_rss_bytes": 442871808
+  }
+}

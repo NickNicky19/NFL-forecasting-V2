@@ -1,0 +1,36 @@
+{
+  "schema": "B-scoped-procedure-recommendation-holds-v1",
+  "at_utc": "2026-11-06T00:19:04.253448+00:00",
+  "coordinator": "C;Bonlycontributionandlocalenforcement",
+  "holds": [
+    {
+      "hold_id": "B-AUDIT-C-F1-ORIGINAL-HGB-L1-CARRY-v1",
+      "audit_section": "AppendixC/F1",
+      "audit_TXT_sha256": "720b464f8077d3a483a4a73245690071866b7757fb6d20763c2ea8d931061795",
+      "procedure_ids": [
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "v2-hgb-direct-history-controls-v1:absolute_error_point"
+      ],
+      "category": "rush_att",
+      "histories": "ALL_ORIGINAL_REGISTERED_HISTORIES",
+      "products": "Originalabsolute_error_pointanddependentviewsoraliases",
+      "known_fixed_model_dependencies": [
+        "4333f846a06ff945536379969920ce16ae00086df0e9922a0a9dc58290c29b53",
+        "24027cd7da3d84cf16f8c2f42f3012d79e44572208ba41ee708cbc9784976360",
+        "b9e7ec24ce3fd672bed9bed7d2d80ea00a303ba39dd8211004cb596f2e30dc9a"
+      ],
+      "state": "EXCLUDED_FROM_ELIGIBLE_RECOMMENDATIONS;SCORED_LOSSES_PRESERVED",
+      "reason": "Demonstratedzero-majoritypooledHGBabsolute-losslearningcollapse,notalegitimatezero-outputban",
+      "original_forecasts_and_loss_bytes_unchanged": true,
+      "measurement_or_outcome_invalidation": false,
+      "prediction_repair_performed": false,
+      "separate_repairs_and_other_targets_held": false,
+      "current_factory_not_patched": true,
+      "source_diagnosis": "reports/continuation-20261030/HGB_RUSH_ATT_COLLAPSE_DIAGNOSIS_V2.md",
+      "new_fixture": "reports/audit-remediation-20261105-v1/B/HGB_PATHOLOGICAL_FIXTURE_V1.json",
+      "resume": "Anewcorrectedforecastrecipeownregisteredhistory/evaluationandoperationaladmission;noborrowingfromfailedoriginal",
+      "C_receipt_or_admission": "NOT_OBSERVED"
+    }
+  ],
+  "scope": "Specificknownpathdefectonly;passingthisfilterisnotglobalqualification,sourcecertificationoroperationalreadiness"
+}

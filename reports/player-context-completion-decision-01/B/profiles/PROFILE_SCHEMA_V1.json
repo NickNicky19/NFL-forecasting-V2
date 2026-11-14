@@ -1,0 +1,37 @@
+{
+  "schema_version": "ABC-PLAYER-PROFILE-CONTRIBUTION-B-v1",
+  "canonical_schema_owner": "C; this is B's compatible contribution, not a replacement benchmark registry",
+  "profile_version": "B-QB-ASOF-PROFILE-v1",
+  "identity": ["canonical player_id", "canonical event game_id", "historical team", "opponent", "role", "season", "week", "target kickoff", "as-of cutoff"],
+  "states": {
+    "profile": ["AVAILABLE_PROFILE", "UNAVAILABLE_PROFILE with exact reason"],
+    "quantity": ["OBSERVED_POSITIVE", "KNOWN_ZERO when numerator=0 and denominator>0", "UNDEFINED_ZERO_DENOMINATOR", "ABSENT_DATA", "UNAVAILABLE_SOURCE"],
+    "population": ["RETROSPECTIVE_OFFICIAL_QB_STAT_ROWS_NOT_EXANTE_ROSTER", "SUPPLIED_QUALIFIED_PREGAME_QUERY_UNIVERSE"]
+  },
+  "shared_measure_contract": {
+    "required_where_applicable": ["definition", "numerator", "denominator", "eligible games/plays", "lookback", "latest admitted source", "availability tier", "raw estimate", "shrunk estimate", "support/uncertainty", "fallback"],
+    "known_zero": "A known zero numerator over positive qualified denominator equals zero. Zero denominator stays undefined. Unknown annotation is not false or DNP.",
+    "uncertainty": "Empirical-Bayes beta intervals summarize the declared pseudo-count construction, conditional on shared estimates. They do not account for all football dependence or establish predictive coverage."
+  },
+  "QB_sections": {
+    "attempts": "Official credited nonsack/nontwopoint pass attempts, separate from dropbacks; own last8 eligible appearances; existing frozen gamma-Poisson exposure law.",
+    "contexts": "25 exhaustive down/depth cells: down1/2/3/4/UNKNOWN x attempted air-yards <0,0-to-<10,10-to-<20,20+,UNKNOWN. Frequencies divide context attempts by all own attempts; conditional completions divide by context attempts. No target-game context is consumed.",
+    "shrunk_context": "Own context mix=(own count+20*earlier league mix)/(own attempts+20); completion=(own completions+selected strength20*earlier pooled rate)/(own context attempts+20). These are the accepted model's existing estimates.",
+    "field_context": "Earlier throw-weighted means and observation denominators for distance-to-go,yardline100,game seconds remaining and score differential. These do not forecast future game script.",
+    "opponent_context": "Last16 eligible opponent games. For each context: (observed completions-earlier offense-adjusted expected completions)/(attempts+100), plus own mix times that context-specific residual. Not pure defensive talent.",
+    "charted_depth_annotations": "Provider catchable/drop/contested flags use separate known-annotation denominators by depth. No completion/catchability/drop accounting identity is assumed. If mapping is absent, this section is UNAVAILABLE_SOURCE, not copied from aggregate flags.",
+    "pass_destination": "Earlier thrown-ball left/middle/right/UNKNOWN counts under the source contract. Not receiver alignment and no newly authenticated field orientation.",
+    "role_stint": "Supplied historical QB role/team only; starter, limited, replacement and designed-dropback stint probabilities remain unmodeled.",
+    "dropbacks": "Unavailable from the accepted retained game-input schema; absence here is not a claim that public PBP cannot support a separately qualified transformation."
+  },
+  "other_roles": {
+    "RB": "A-owned direction/gap/down/distance, team-run/share and conditional signed-yard/success profiles; B does not duplicate.",
+    "WR_TE": "C-owned targeting/depth/QB-pair/qualified alignment-route-separation profiles; B does not infer alignment from destination or routes from snaps."
+  },
+  "future_query_contract": {
+    "required": ["explicit supplied query universe", "canonical identity/team/role assertions", "membership source_id and SHA256", "membership retained_at<=cutoff<=target kickoff"],
+    "target_outcomes": "Not required or read. No target-game statistical row selects future membership.",
+    "limitations": "Structural validation of supplied evidence does not independently authenticate a roster or historical source. No live query universe or consumer admission is claimed by this profile export."
+  },
+  "products_not_qualified_by_profile": ["numerical forecast", "Over/Under direction", "probability", "EV", "Top Picks", "production release"]
+}

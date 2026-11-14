@@ -1,0 +1,41 @@
+{
+  "connected_profile_matches_folder_owner": true,
+  "existing_provider_storageQuotaExceeded_status": "Not overridden by this identity check; no upload or capacity retry performed.",
+  "folder_shared": false,
+  "invalid_field_probe": {
+    "reason": "INVALID_ARGUMENT_STORAGEQUOTA_IS_NOT_A_FILES_GET_FIELD",
+    "status": 400
+  },
+  "metadata_quota_fields_present": false,
+  "new_uploads": 0,
+  "owner_permissions_count": 1,
+  "permission_mutations": 0,
+  "private_evidence": [
+    {
+      "artifact_id": "V2-DRIVE-READONLY-01",
+      "sha256": "dff2b009a375dcd232c7f097b624b9dff256413f476ecb13be3b5e5c931568d9"
+    },
+    {
+      "artifact_id": "V2-DRIVE-READONLY-02",
+      "sha256": "f58836db7b6d5693822c3017bf2e35dceb8cf385c9872742422e04237ad7cf2d"
+    },
+    {
+      "artifact_id": "V2-DRIVE-READONLY-03",
+      "sha256": "6a8b02103d6a9ff2a7a0f58a4c74dbb78b971717ed6ec3cf1738080ed1f27f81"
+    },
+    {
+      "artifact_id": "V2-DRIVE-READONLY-04",
+      "sha256": "54f971dea52dcd854a3b8fc40ad8fb7f7fb8b6384b36fe3fe552faee3b47feeb"
+    }
+  ],
+  "profile_identity_present": true,
+  "profile_quota_fields_present": false,
+  "quota_available_bytes": null,
+  "quota_limit_bytes": null,
+  "quota_reason": "Connected profile and normalized file-metadata tools do not expose an account quota measurement.",
+  "quota_status": "UNKNOWN_FROM_SUPPORTED_READ_ONLY_METADATA",
+  "quota_used_bytes": null,
+  "raw_identity_metadata_public": false,
+  "state": "READ_ONLY_IDENTITY_CHECK_COMPLETE_QUOTA_NOT_EXPOSED",
+  "upload_retries": 0
+}

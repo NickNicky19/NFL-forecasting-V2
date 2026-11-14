@@ -1,0 +1,2971 @@
+{
+  "check_id": "B-PROFILE-INCREMENT-PREFIT-INDEPENDENT-CONTROL-REVIEW-v1",
+  "root_head": "613800b90396e98ae0898b18930e61bffa6639f0",
+  "calculation": "Decimal comparisons of retained unrounded points versus retained line and qualified actual; no author scoring or summary function called. Existing qualified offer parser reused only for input contract.",
+  "source_sha256": [
+    "4b37b02e4ea584fbf91c21ca1fe8454c2447a68cafc154f15d431f520c73358a",
+    "8abe1fab12e6bb97be4d2e77f93e7a07f440eab02ff394c8dbc282183a9dca24",
+    "9903240899222ae4d8829dfd4e294de7652032da42b08ba52c1ba252b79344c7",
+    "9b74e81ff451bd26e96b3019436e26306a4068f4fc9b38cc4561e1e0ab2d146f"
+  ],
+  "board_id_sha256": "5d5cc6950715e0e8d2115b9f37cadb5f8236d80c544cd52711498832e6ec7383",
+  "board_counts": {
+    "pass_att": 112,
+    "pass_cmp": 112
+  },
+  "results": [
+    {
+      "method": "SAVED_ADJUSTED",
+      "target": "pass_att",
+      "history": "ARCHIVED_FIXED_SOURCE",
+      "product": "saved_precision_point",
+      "side_counts": {
+        "over": {
+          "win": 22,
+          "loss": 11,
+          "decided": 33,
+          "rate": 0.6666666666666666
+        },
+        "under": {
+          "win": 47,
+          "loss": 32,
+          "decided": 79,
+          "rate": 0.5949367088607594
+        },
+        "Combined": {
+          "win": 69,
+          "loss": 43,
+          "decided": 112,
+          "rate": 0.6160714285714286
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 6.593035714285714
+    },
+    {
+      "method": "SAVED_RAW",
+      "target": "pass_att",
+      "history": "ARCHIVED_FIXED_SOURCE",
+      "product": "saved_precision_point",
+      "side_counts": {
+        "over": {
+          "loss": 15,
+          "win": 21,
+          "decided": 36,
+          "rate": 0.5833333333333334
+        },
+        "under": {
+          "win": 43,
+          "loss": 33,
+          "decided": 76,
+          "rate": 0.5657894736842105
+        },
+        "Combined": {
+          "loss": 48,
+          "win": 64,
+          "decided": 112,
+          "rate": 0.5714285714285714
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 6.7317857142857145
+    },
+    {
+      "method": "ALWAYS_OVER",
+      "target": "pass_att",
+      "history": "SAME_BOARD",
+      "product": "constant_direction",
+      "side_counts": {
+        "over": {
+          "loss": 58,
+          "win": 54,
+          "decided": 112,
+          "rate": 0.48214285714285715
+        },
+        "under": {
+          "decided": 0,
+          "rate": null
+        },
+        "Combined": {
+          "loss": 58,
+          "win": 54,
+          "decided": 112,
+          "rate": 0.48214285714285715
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 999967.6785714285
+    },
+    {
+      "method": "ALWAYS_UNDER",
+      "target": "pass_att",
+      "history": "SAME_BOARD",
+      "product": "constant_direction",
+      "side_counts": {
+        "over": {
+          "decided": 0,
+          "rate": null
+        },
+        "under": {
+          "win": 58,
+          "loss": 54,
+          "decided": 112,
+          "rate": 0.5178571428571429
+        },
+        "Combined": {
+          "win": 58,
+          "loss": 54,
+          "decided": 112,
+          "rate": 0.5178571428571429
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 1000032.3214285715
+    },
+    {
+      "method": "SAVED_ADJUSTED",
+      "target": "pass_cmp",
+      "history": "ARCHIVED_FIXED_SOURCE",
+      "product": "saved_precision_point",
+      "side_counts": {
+        "over": {
+          "win": 22,
+          "loss": 18,
+          "decided": 40,
+          "rate": 0.55
+        },
+        "under": {
+          "win": 36,
+          "loss": 36,
+          "decided": 72,
+          "rate": 0.5
+        },
+        "Combined": {
+          "win": 58,
+          "loss": 54,
+          "decided": 112,
+          "rate": 0.5178571428571429
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 4.811875
+    },
+    {
+      "method": "SAVED_RAW",
+      "target": "pass_cmp",
+      "history": "ARCHIVED_FIXED_SOURCE",
+      "product": "saved_precision_point",
+      "side_counts": {
+        "over": {
+          "loss": 21,
+          "win": 23,
+          "decided": 44,
+          "rate": 0.5227272727272727
+        },
+        "under": {
+          "loss": 35,
+          "win": 33,
+          "decided": 68,
+          "rate": 0.4852941176470588
+        },
+        "Combined": {
+          "loss": 56,
+          "win": 56,
+          "decided": 112,
+          "rate": 0.5
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 4.965892857142856
+    },
+    {
+      "method": "ALWAYS_OVER",
+      "target": "pass_cmp",
+      "history": "SAME_BOARD",
+      "product": "constant_direction",
+      "side_counts": {
+        "over": {
+          "loss": 54,
+          "win": 58,
+          "decided": 112,
+          "rate": 0.5178571428571429
+        },
+        "under": {
+          "decided": 0,
+          "rate": null
+        },
+        "Combined": {
+          "loss": 54,
+          "win": 58,
+          "decided": 112,
+          "rate": 0.5178571428571429
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 999979.2946428572
+    },
+    {
+      "method": "ALWAYS_UNDER",
+      "target": "pass_cmp",
+      "history": "SAME_BOARD",
+      "product": "constant_direction",
+      "side_counts": {
+        "over": {
+          "decided": 0,
+          "rate": null
+        },
+        "under": {
+          "win": 54,
+          "loss": 58,
+          "decided": 112,
+          "rate": 0.48214285714285715
+        },
+        "Combined": {
+          "win": 54,
+          "loss": 58,
+          "decided": 112,
+          "rate": 0.48214285714285715
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 1000020.7053571428
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:E0",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 9,
+          "win": 4,
+          "decided": 13,
+          "rate": 0.3076923076923077
+        },
+        "under": {
+          "loss": 54,
+          "win": 45,
+          "decided": 99,
+          "rate": 0.45454545454545453
+        },
+        "Combined": {
+          "loss": 63,
+          "win": 49,
+          "decided": 112,
+          "rate": 0.4375
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 5.458693812109844
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:E0",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "win": 7,
+          "loss": 12,
+          "decided": 19,
+          "rate": 0.3684210526315789
+        },
+        "under": {
+          "loss": 51,
+          "win": 42,
+          "decided": 93,
+          "rate": 0.45161290322580644
+        },
+        "Combined": {
+          "win": 49,
+          "loss": 63,
+          "decided": 112,
+          "rate": 0.4375
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 5.401785714285714
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:E1",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "win": 8,
+          "loss": 12,
+          "decided": 20,
+          "rate": 0.4
+        },
+        "under": {
+          "loss": 50,
+          "win": 42,
+          "decided": 92,
+          "rate": 0.45652173913043476
+        },
+        "Combined": {
+          "win": 50,
+          "loss": 62,
+          "decided": 112,
+          "rate": 0.44642857142857145
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 5.461310751628652
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:E1",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "win": 14,
+          "loss": 14,
+          "decided": 28,
+          "rate": 0.5
+        },
+        "under": {
+          "loss": 44,
+          "win": 40,
+          "decided": 84,
+          "rate": 0.47619047619047616
+        },
+        "Combined": {
+          "win": 54,
+          "loss": 58,
+          "decided": 112,
+          "rate": 0.48214285714285715
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 5.339285714285714
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:E2",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "win": 10,
+          "loss": 11,
+          "decided": 21,
+          "rate": 0.47619047619047616
+        },
+        "under": {
+          "loss": 48,
+          "win": 43,
+          "decided": 91,
+          "rate": 0.4725274725274725
+        },
+        "Combined": {
+          "win": 53,
+          "loss": 59,
+          "decided": 112,
+          "rate": 0.4732142857142857
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 5.389843860274839
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:E2",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "win": 13,
+          "loss": 17,
+          "decided": 30,
+          "rate": 0.43333333333333335
+        },
+        "under": {
+          "loss": 45,
+          "win": 37,
+          "decided": 82,
+          "rate": 0.45121951219512196
+        },
+        "Combined": {
+          "win": 50,
+          "loss": 62,
+          "decided": 112,
+          "rate": 0.44642857142857145
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 5.348214285714286
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:E3",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "win": 12,
+          "loss": 11,
+          "decided": 23,
+          "rate": 0.5217391304347826
+        },
+        "under": {
+          "loss": 46,
+          "win": 43,
+          "decided": 89,
+          "rate": 0.48314606741573035
+        },
+        "Combined": {
+          "win": 55,
+          "loss": 57,
+          "decided": 112,
+          "rate": 0.49107142857142855
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 5.354704833556442
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:E3",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "win": 17,
+          "loss": 13,
+          "decided": 30,
+          "rate": 0.5666666666666667
+        },
+        "under": {
+          "loss": 41,
+          "win": 41,
+          "decided": 82,
+          "rate": 0.5
+        },
+        "Combined": {
+          "win": 58,
+          "loss": 54,
+          "decided": 112,
+          "rate": 0.5178571428571429
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 5.241071428571429
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+      "target": "pass_att",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 7,
+          "win": 2,
+          "decided": 9,
+          "rate": 0.2222222222222222
+        },
+        "under": {
+          "loss": 52,
+          "win": 51,
+          "decided": 103,
+          "rate": 0.49514563106796117
+        },
+        "Combined": {
+          "loss": 59,
+          "win": 53,
+          "decided": 112,
+          "rate": 0.4732142857142857
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 7.703221058830741
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+      "target": "pass_att",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 4,
+          "win": 1,
+          "decided": 5,
+          "rate": 0.2
+        },
+        "under": {
+          "loss": 53,
+          "win": 54,
+          "decided": 107,
+          "rate": 0.5046728971962616
+        },
+        "Combined": {
+          "loss": 57,
+          "win": 55,
+          "decided": 112,
+          "rate": 0.49107142857142855
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 8.276785714285714
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:P1",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 7,
+          "win": 6,
+          "decided": 13,
+          "rate": 0.46153846153846156
+        },
+        "under": {
+          "loss": 52,
+          "win": 47,
+          "decided": 99,
+          "rate": 0.47474747474747475
+        },
+        "Combined": {
+          "loss": 59,
+          "win": 53,
+          "decided": 112,
+          "rate": 0.4732142857142857
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 5.383136626759213
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:P1",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "win": 4,
+          "loss": 4,
+          "decided": 8,
+          "rate": 0.5
+        },
+        "under": {
+          "loss": 54,
+          "win": 50,
+          "decided": 104,
+          "rate": 0.4807692307692308
+        },
+        "Combined": {
+          "loss": 58,
+          "win": 54,
+          "decided": 112,
+          "rate": 0.48214285714285715
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 5.723214285714286
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:P2",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 6,
+          "win": 6,
+          "decided": 12,
+          "rate": 0.5
+        },
+        "under": {
+          "loss": 52,
+          "win": 48,
+          "decided": 100,
+          "rate": 0.48
+        },
+        "Combined": {
+          "loss": 58,
+          "win": 54,
+          "decided": 112,
+          "rate": 0.48214285714285715
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 5.401874502651545
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:P2",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "win": 3,
+          "loss": 4,
+          "decided": 7,
+          "rate": 0.42857142857142855
+        },
+        "under": {
+          "loss": 55,
+          "win": 50,
+          "decided": 105,
+          "rate": 0.47619047619047616
+        },
+        "Combined": {
+          "loss": 59,
+          "win": 53,
+          "decided": 112,
+          "rate": 0.4732142857142857
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 5.741071428571429
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:P3",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 4,
+          "win": 2,
+          "decided": 6,
+          "rate": 0.3333333333333333
+        },
+        "under": {
+          "loss": 56,
+          "win": 50,
+          "decided": 106,
+          "rate": 0.4716981132075472
+        },
+        "Combined": {
+          "loss": 60,
+          "win": 52,
+          "decided": 112,
+          "rate": 0.4642857142857143
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 5.450425363618668
+    },
+    {
+      "method": "B-player-context-matchup-01-v1:P3",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 2,
+          "win": 2,
+          "decided": 4,
+          "rate": 0.5
+        },
+        "under": {
+          "loss": 56,
+          "win": 52,
+          "decided": 108,
+          "rate": 0.48148148148148145
+        },
+        "Combined": {
+          "loss": 58,
+          "win": 54,
+          "decided": 112,
+          "rate": 0.48214285714285715
+        }
+      },
+      "available": 112,
+      "games": 56,
+      "weeks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "mae": 5.875
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "win": 5,
+          "loss": 6,
+          "decided": 11,
+          "rate": 0.45454545454545453
+        },
+        "under": {
+          "win": 37,
+          "loss": 36,
+          "decided": 73,
+          "rate": 0.5068493150684932
+        },
+        "Combined": {
+          "win": 42,
+          "loss": 42,
+          "decided": 84,
+          "rate": 0.5
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 6.7249759759071885
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 5,
+          "win": 9,
+          "decided": 14,
+          "rate": 0.6428571428571429
+        },
+        "under": {
+          "win": 38,
+          "loss": 32,
+          "decided": 70,
+          "rate": 0.5428571428571428
+        },
+        "Combined": {
+          "win": 47,
+          "loss": 37,
+          "decided": 84,
+          "rate": 0.5595238095238095
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 6.321428571428571
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 19,
+          "win": 16,
+          "decided": 35,
+          "rate": 0.45714285714285713
+        },
+        "under": {
+          "win": 24,
+          "loss": 25,
+          "decided": 49,
+          "rate": 0.4897959183673469
+        },
+        "Combined": {
+          "loss": 44,
+          "win": 40,
+          "decided": 84,
+          "rate": 0.47619047619047616
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 7.574255128705166
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 19,
+          "win": 15,
+          "decided": 34,
+          "rate": 0.4411764705882353
+        },
+        "under": {
+          "win": 24,
+          "loss": 26,
+          "decided": 50,
+          "rate": 0.48
+        },
+        "Combined": {
+          "loss": 45,
+          "win": 39,
+          "decided": 84,
+          "rate": 0.4642857142857143
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 7.619047619047619
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 21,
+          "win": 28,
+          "decided": 49,
+          "rate": 0.5714285714285714
+        },
+        "under": {
+          "win": 22,
+          "loss": 13,
+          "decided": 35,
+          "rate": 0.6285714285714286
+        },
+        "Combined": {
+          "win": 50,
+          "loss": 34,
+          "decided": 84,
+          "rate": 0.5952380952380952
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 6.228855321749558
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 15,
+          "win": 25,
+          "decided": 40,
+          "rate": 0.625
+        },
+        "under": {
+          "win": 28,
+          "loss": 16,
+          "decided": 44,
+          "rate": 0.6363636363636364
+        },
+        "Combined": {
+          "win": 53,
+          "loss": 31,
+          "decided": 84,
+          "rate": 0.6309523809523809
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 6.142857142857143
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:strict-current-inputs",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 27,
+          "win": 29,
+          "decided": 56,
+          "rate": 0.5178571428571429
+        },
+        "under": {
+          "win": 16,
+          "loss": 12,
+          "decided": 28,
+          "rate": 0.5714285714285714
+        },
+        "Combined": {
+          "loss": 39,
+          "win": 45,
+          "decided": 84,
+          "rate": 0.5357142857142857
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 13.419164701657765
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:strict-current-inputs",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 27,
+          "win": 29,
+          "decided": 56,
+          "rate": 0.5178571428571429
+        },
+        "under": {
+          "win": 16,
+          "loss": 12,
+          "decided": 28,
+          "rate": 0.5714285714285714
+        },
+        "Combined": {
+          "loss": 39,
+          "win": 45,
+          "decided": 84,
+          "rate": 0.5357142857142857
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 13.511904761904763
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-MULTI",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "win": 6,
+          "loss": 2,
+          "decided": 8,
+          "rate": 0.75
+        },
+        "under": {
+          "win": 41,
+          "loss": 35,
+          "decided": 76,
+          "rate": 0.5394736842105263
+        },
+        "Combined": {
+          "win": 47,
+          "loss": 37,
+          "decided": 84,
+          "rate": 0.5595238095238095
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 7.056862591371548
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-MULTI",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "win": 10,
+          "loss": 4,
+          "decided": 14,
+          "rate": 0.7142857142857143
+        },
+        "under": {
+          "win": 39,
+          "loss": 31,
+          "decided": 70,
+          "rate": 0.5571428571428572
+        },
+        "Combined": {
+          "win": 49,
+          "loss": 35,
+          "decided": 84,
+          "rate": 0.5833333333333334
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 6.9523809523809526
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-MULTI",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 13,
+          "win": 10,
+          "decided": 23,
+          "rate": 0.43478260869565216
+        },
+        "under": {
+          "win": 30,
+          "loss": 31,
+          "decided": 61,
+          "rate": 0.4918032786885246
+        },
+        "Combined": {
+          "loss": 44,
+          "win": 40,
+          "decided": 84,
+          "rate": 0.47619047619047616
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 7.725754128447113
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-MULTI",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 12,
+          "win": 8,
+          "decided": 20,
+          "rate": 0.4
+        },
+        "under": {
+          "win": 31,
+          "loss": 33,
+          "decided": 64,
+          "rate": 0.484375
+        },
+        "Combined": {
+          "loss": 45,
+          "win": 39,
+          "decided": 84,
+          "rate": 0.4642857142857143
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 7.821428571428571
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 2,
+          "win": 4,
+          "decided": 6,
+          "rate": 0.6666666666666666
+        },
+        "under": {
+          "win": 41,
+          "loss": 37,
+          "decided": 78,
+          "rate": 0.5256410256410257
+        },
+        "Combined": {
+          "win": 45,
+          "loss": 39,
+          "decided": 84,
+          "rate": 0.5357142857142857
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 7.297739214663575
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 4,
+          "win": 5,
+          "decided": 9,
+          "rate": 0.5555555555555556
+        },
+        "under": {
+          "win": 39,
+          "loss": 36,
+          "decided": 75,
+          "rate": 0.52
+        },
+        "Combined": {
+          "win": 44,
+          "loss": 40,
+          "decided": 84,
+          "rate": 0.5238095238095238
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 7.107142857142857
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 13,
+          "win": 10,
+          "decided": 23,
+          "rate": 0.43478260869565216
+        },
+        "under": {
+          "win": 30,
+          "loss": 31,
+          "decided": 61,
+          "rate": 0.4918032786885246
+        },
+        "Combined": {
+          "loss": 44,
+          "win": 40,
+          "decided": 84,
+          "rate": 0.47619047619047616
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 7.655201287557723
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 13,
+          "win": 10,
+          "decided": 23,
+          "rate": 0.43478260869565216
+        },
+        "under": {
+          "win": 30,
+          "loss": 31,
+          "decided": 61,
+          "rate": 0.4918032786885246
+        },
+        "Combined": {
+          "loss": 44,
+          "win": 40,
+          "decided": 84,
+          "rate": 0.47619047619047616
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 7.7023809523809526
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 7,
+          "win": 8,
+          "decided": 15,
+          "rate": 0.5333333333333333
+        },
+        "under": {
+          "loss": 39,
+          "win": 30,
+          "decided": 69,
+          "rate": 0.43478260869565216
+        },
+        "Combined": {
+          "loss": 46,
+          "win": 38,
+          "decided": 84,
+          "rate": 0.4523809523809524
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 4.760514045578506
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 9,
+          "win": 8,
+          "decided": 17,
+          "rate": 0.47058823529411764
+        },
+        "under": {
+          "loss": 39,
+          "win": 28,
+          "decided": 67,
+          "rate": 0.417910447761194
+        },
+        "Combined": {
+          "loss": 48,
+          "win": 36,
+          "decided": 84,
+          "rate": 0.42857142857142855
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 4.678571428571429
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "win": 15,
+          "loss": 15,
+          "decided": 30,
+          "rate": 0.5
+        },
+        "under": {
+          "win": 22,
+          "loss": 32,
+          "decided": 54,
+          "rate": 0.4074074074074074
+        },
+        "Combined": {
+          "win": 37,
+          "loss": 47,
+          "decided": 84,
+          "rate": 0.44047619047619047
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 5.155852910173018
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "win": 14,
+          "loss": 14,
+          "decided": 28,
+          "rate": 0.5
+        },
+        "under": {
+          "win": 23,
+          "loss": 33,
+          "decided": 56,
+          "rate": 0.4107142857142857
+        },
+        "Combined": {
+          "win": 37,
+          "loss": 47,
+          "decided": 84,
+          "rate": 0.44047619047619047
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 5.154761904761905
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "win": 32,
+          "loss": 22,
+          "decided": 54,
+          "rate": 0.5925925925925926
+        },
+        "under": {
+          "loss": 15,
+          "win": 15,
+          "decided": 30,
+          "rate": 0.5
+        },
+        "Combined": {
+          "win": 47,
+          "loss": 37,
+          "decided": 84,
+          "rate": 0.5595238095238095
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 4.432504956978311
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 18,
+          "win": 24,
+          "decided": 42,
+          "rate": 0.5714285714285714
+        },
+        "under": {
+          "loss": 23,
+          "win": 19,
+          "decided": 42,
+          "rate": 0.4523809523809524
+        },
+        "Combined": {
+          "loss": 41,
+          "win": 43,
+          "decided": 84,
+          "rate": 0.5119047619047619
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 4.535714285714286
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:strict-current-inputs",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "win": 34,
+          "loss": 26,
+          "decided": 60,
+          "rate": 0.5666666666666667
+        },
+        "under": {
+          "loss": 13,
+          "win": 11,
+          "decided": 24,
+          "rate": 0.4583333333333333
+        },
+        "Combined": {
+          "loss": 39,
+          "win": 45,
+          "decided": 84,
+          "rate": 0.5357142857142857
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 9.64932637572236
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:strict-current-inputs",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "win": 33,
+          "loss": 25,
+          "decided": 58,
+          "rate": 0.5689655172413793
+        },
+        "under": {
+          "loss": 14,
+          "win": 12,
+          "decided": 26,
+          "rate": 0.46153846153846156
+        },
+        "Combined": {
+          "loss": 39,
+          "win": 45,
+          "decided": 84,
+          "rate": 0.5357142857142857
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 9.571428571428571
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-MULTI",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "win": 9,
+          "loss": 9,
+          "decided": 18,
+          "rate": 0.5
+        },
+        "under": {
+          "loss": 38,
+          "win": 28,
+          "decided": 66,
+          "rate": 0.42424242424242425
+        },
+        "Combined": {
+          "win": 37,
+          "loss": 47,
+          "decided": 84,
+          "rate": 0.44047619047619047
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 5.041556314016328
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-MULTI",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "win": 11,
+          "loss": 11,
+          "decided": 22,
+          "rate": 0.5
+        },
+        "under": {
+          "loss": 36,
+          "win": 26,
+          "decided": 62,
+          "rate": 0.41935483870967744
+        },
+        "Combined": {
+          "win": 37,
+          "loss": 47,
+          "decided": 84,
+          "rate": 0.44047619047619047
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 5.023809523809524
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-MULTI",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "win": 7,
+          "loss": 11,
+          "decided": 18,
+          "rate": 0.3888888888888889
+        },
+        "under": {
+          "win": 26,
+          "loss": 40,
+          "decided": 66,
+          "rate": 0.3939393939393939
+        },
+        "Combined": {
+          "win": 33,
+          "loss": 51,
+          "decided": 84,
+          "rate": 0.39285714285714285
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 5.2967280215070245
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-MULTI",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "win": 7,
+          "loss": 10,
+          "decided": 17,
+          "rate": 0.4117647058823529
+        },
+        "under": {
+          "win": 27,
+          "loss": 40,
+          "decided": 67,
+          "rate": 0.40298507462686567
+        },
+        "Combined": {
+          "win": 34,
+          "loss": 50,
+          "decided": 84,
+          "rate": 0.40476190476190477
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 5.2976190476190474
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 6,
+          "win": 3,
+          "decided": 9,
+          "rate": 0.3333333333333333
+        },
+        "under": {
+          "loss": 44,
+          "win": 31,
+          "decided": 75,
+          "rate": 0.41333333333333333
+        },
+        "Combined": {
+          "loss": 50,
+          "win": 34,
+          "decided": 84,
+          "rate": 0.40476190476190477
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 5.174069084126138
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "win": 5,
+          "loss": 7,
+          "decided": 12,
+          "rate": 0.4166666666666667
+        },
+        "under": {
+          "loss": 42,
+          "win": 30,
+          "decided": 72,
+          "rate": 0.4166666666666667
+        },
+        "Combined": {
+          "win": 35,
+          "loss": 49,
+          "decided": 84,
+          "rate": 0.4166666666666667
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 5.095238095238095
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "win": 7,
+          "loss": 11,
+          "decided": 18,
+          "rate": 0.3888888888888889
+        },
+        "under": {
+          "win": 26,
+          "loss": 40,
+          "decided": 66,
+          "rate": 0.3939393939393939
+        },
+        "Combined": {
+          "win": 33,
+          "loss": 51,
+          "decided": 84,
+          "rate": 0.39285714285714285
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 5.235533421989938
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "win": 6,
+          "loss": 10,
+          "decided": 16,
+          "rate": 0.375
+        },
+        "under": {
+          "win": 27,
+          "loss": 41,
+          "decided": 68,
+          "rate": 0.39705882352941174
+        },
+        "Combined": {
+          "win": 33,
+          "loss": 51,
+          "decided": 84,
+          "rate": 0.39285714285714285
+        }
+      },
+      "available": 84,
+      "games": 42,
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "mae": 5.285714285714286
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 11,
+          "win": 8,
+          "decided": 19,
+          "rate": 0.42105263157894735
+        },
+        "under": {
+          "win": 4,
+          "loss": 3,
+          "decided": 7,
+          "rate": 0.5714285714285714
+        },
+        "Combined": {
+          "loss": 14,
+          "win": 12,
+          "decided": 26,
+          "rate": 0.46153846153846156
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 8.702664524887773
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "win": 8,
+          "loss": 8,
+          "decided": 16,
+          "rate": 0.5
+        },
+        "under": {
+          "win": 7,
+          "loss": 3,
+          "decided": 10,
+          "rate": 0.7
+        },
+        "Combined": {
+          "win": 15,
+          "loss": 11,
+          "decided": 26,
+          "rate": 0.5769230769230769
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 8.076923076923077
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 11,
+          "win": 6,
+          "decided": 17,
+          "rate": 0.35294117647058826
+        },
+        "under": {
+          "win": 4,
+          "loss": 5,
+          "decided": 9,
+          "rate": 0.4444444444444444
+        },
+        "Combined": {
+          "loss": 16,
+          "win": 10,
+          "decided": 26,
+          "rate": 0.38461538461538464
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 9.836388282193614
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 11,
+          "win": 6,
+          "decided": 17,
+          "rate": 0.35294117647058826
+        },
+        "under": {
+          "win": 4,
+          "loss": 5,
+          "decided": 9,
+          "rate": 0.4444444444444444
+        },
+        "Combined": {
+          "loss": 16,
+          "win": 10,
+          "decided": 26,
+          "rate": 0.38461538461538464
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 9.76923076923077
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:strict-current-inputs",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 14,
+          "win": 9,
+          "decided": 23,
+          "rate": 0.391304347826087
+        },
+        "under": {
+          "loss": 2,
+          "win": 1,
+          "decided": 3,
+          "rate": 0.3333333333333333
+        },
+        "Combined": {
+          "loss": 16,
+          "win": 10,
+          "decided": 26,
+          "rate": 0.38461538461538464
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 8.667859111485544
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:strict-current-inputs",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 11,
+          "win": 9,
+          "decided": 20,
+          "rate": 0.45
+        },
+        "under": {
+          "win": 4,
+          "loss": 2,
+          "decided": 6,
+          "rate": 0.6666666666666666
+        },
+        "Combined": {
+          "loss": 13,
+          "win": 13,
+          "decided": 26,
+          "rate": 0.5
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 7.923076923076923
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:strict-current-inputs",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 12,
+          "win": 8,
+          "decided": 20,
+          "rate": 0.4
+        },
+        "under": {
+          "loss": 3,
+          "win": 3,
+          "decided": 6,
+          "rate": 0.5
+        },
+        "Combined": {
+          "loss": 15,
+          "win": 11,
+          "decided": 26,
+          "rate": 0.4230769230769231
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 9.1140913763048
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:strict-current-inputs",
+      "target": "pass_att",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 12,
+          "win": 8,
+          "decided": 20,
+          "rate": 0.4
+        },
+        "under": {
+          "loss": 3,
+          "win": 3,
+          "decided": 6,
+          "rate": 0.5
+        },
+        "Combined": {
+          "loss": 15,
+          "win": 11,
+          "decided": 26,
+          "rate": 0.4230769230769231
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 9.076923076923077
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-MULTI",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "win": 1,
+          "loss": 6,
+          "decided": 7,
+          "rate": 0.14285714285714285
+        },
+        "under": {
+          "win": 9,
+          "loss": 10,
+          "decided": 19,
+          "rate": 0.47368421052631576
+        },
+        "Combined": {
+          "win": 10,
+          "loss": 16,
+          "decided": 26,
+          "rate": 0.38461538461538464
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 8.174676899602396
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-MULTI",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 7,
+          "win": 3,
+          "decided": 10,
+          "rate": 0.3
+        },
+        "under": {
+          "win": 8,
+          "loss": 8,
+          "decided": 16,
+          "rate": 0.5
+        },
+        "Combined": {
+          "loss": 15,
+          "win": 11,
+          "decided": 26,
+          "rate": 0.4230769230769231
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 8.153846153846153
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-MULTI",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 9,
+          "win": 2,
+          "decided": 11,
+          "rate": 0.18181818181818182
+        },
+        "under": {
+          "win": 6,
+          "loss": 9,
+          "decided": 15,
+          "rate": 0.4
+        },
+        "Combined": {
+          "loss": 18,
+          "win": 8,
+          "decided": 26,
+          "rate": 0.3076923076923077
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 9.40705642867916
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-MULTI",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 9,
+          "win": 2,
+          "decided": 11,
+          "rate": 0.18181818181818182
+        },
+        "under": {
+          "win": 6,
+          "loss": 9,
+          "decided": 15,
+          "rate": 0.4
+        },
+        "Combined": {
+          "loss": 18,
+          "win": 8,
+          "decided": 26,
+          "rate": 0.3076923076923077
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 9.5
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "win": 1,
+          "loss": 6,
+          "decided": 7,
+          "rate": 0.14285714285714285
+        },
+        "under": {
+          "win": 9,
+          "loss": 10,
+          "decided": 19,
+          "rate": 0.47368421052631576
+        },
+        "Combined": {
+          "win": 10,
+          "loss": 16,
+          "decided": 26,
+          "rate": 0.38461538461538464
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 8.418468832025598
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "win": 1,
+          "loss": 6,
+          "decided": 7,
+          "rate": 0.14285714285714285
+        },
+        "under": {
+          "win": 9,
+          "loss": 10,
+          "decided": 19,
+          "rate": 0.47368421052631576
+        },
+        "Combined": {
+          "win": 10,
+          "loss": 16,
+          "decided": 26,
+          "rate": 0.38461538461538464
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 8.307692307692308
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 10,
+          "win": 2,
+          "decided": 12,
+          "rate": 0.16666666666666666
+        },
+        "under": {
+          "win": 5,
+          "loss": 9,
+          "decided": 14,
+          "rate": 0.35714285714285715
+        },
+        "Combined": {
+          "loss": 19,
+          "win": 7,
+          "decided": 26,
+          "rate": 0.2692307692307692
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 9.336533363940035
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:common-feature-memory",
+      "target": "pass_att",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 8,
+          "win": 2,
+          "decided": 10,
+          "rate": 0.2
+        },
+        "under": {
+          "win": 7,
+          "loss": 9,
+          "decided": 16,
+          "rate": 0.4375
+        },
+        "Combined": {
+          "loss": 17,
+          "win": 9,
+          "decided": 26,
+          "rate": 0.34615384615384615
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 9.26923076923077
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 12,
+          "win": 5,
+          "decided": 17,
+          "rate": 0.29411764705882354
+        },
+        "under": {
+          "win": 5,
+          "loss": 4,
+          "decided": 9,
+          "rate": 0.5555555555555556
+        },
+        "Combined": {
+          "win": 10,
+          "loss": 16,
+          "decided": 26,
+          "rate": 0.38461538461538464
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 6.753160110993611
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 13,
+          "win": 6,
+          "decided": 19,
+          "rate": 0.3157894736842105
+        },
+        "under": {
+          "win": 4,
+          "loss": 3,
+          "decided": 7,
+          "rate": 0.5714285714285714
+        },
+        "Combined": {
+          "loss": 16,
+          "win": 10,
+          "decided": 26,
+          "rate": 0.38461538461538464
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 6.8076923076923075
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 14,
+          "win": 5,
+          "decided": 19,
+          "rate": 0.2631578947368421
+        },
+        "under": {
+          "win": 3,
+          "loss": 4,
+          "decided": 7,
+          "rate": 0.42857142857142855
+        },
+        "Combined": {
+          "loss": 18,
+          "win": 8,
+          "decided": 26,
+          "rate": 0.3076923076923077
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 7.348462247350221
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 13,
+          "win": 5,
+          "decided": 18,
+          "rate": 0.2777777777777778
+        },
+        "under": {
+          "win": 4,
+          "loss": 4,
+          "decided": 8,
+          "rate": 0.5
+        },
+        "Combined": {
+          "loss": 17,
+          "win": 9,
+          "decided": 26,
+          "rate": 0.34615384615384615
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 7.230769230769231
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:strict-current-inputs",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 14,
+          "win": 8,
+          "decided": 22,
+          "rate": 0.36363636363636365
+        },
+        "under": {
+          "win": 3,
+          "loss": 1,
+          "decided": 4,
+          "rate": 0.75
+        },
+        "Combined": {
+          "loss": 15,
+          "win": 11,
+          "decided": 26,
+          "rate": 0.4230769230769231
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 6.631570255229899
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:strict-current-inputs",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 12,
+          "win": 8,
+          "decided": 20,
+          "rate": 0.4
+        },
+        "under": {
+          "win": 5,
+          "loss": 1,
+          "decided": 6,
+          "rate": 0.8333333333333334
+        },
+        "Combined": {
+          "loss": 13,
+          "win": 13,
+          "decided": 26,
+          "rate": 0.5
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 6.615384615384615
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:strict-current-inputs",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 14,
+          "win": 7,
+          "decided": 21,
+          "rate": 0.3333333333333333
+        },
+        "under": {
+          "win": 3,
+          "loss": 2,
+          "decided": 5,
+          "rate": 0.6
+        },
+        "Combined": {
+          "win": 10,
+          "loss": 16,
+          "decided": 26,
+          "rate": 0.38461538461538464
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 6.971014285328019
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:strict-current-inputs",
+      "target": "pass_cmp",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 14,
+          "win": 6,
+          "decided": 20,
+          "rate": 0.3
+        },
+        "under": {
+          "win": 3,
+          "loss": 3,
+          "decided": 6,
+          "rate": 0.5
+        },
+        "Combined": {
+          "win": 9,
+          "loss": 17,
+          "decided": 26,
+          "rate": 0.34615384615384615
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 6.923076923076923
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-MULTI",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 8,
+          "win": 1,
+          "decided": 9,
+          "rate": 0.1111111111111111
+        },
+        "under": {
+          "win": 9,
+          "loss": 8,
+          "decided": 17,
+          "rate": 0.5294117647058824
+        },
+        "Combined": {
+          "loss": 16,
+          "win": 10,
+          "decided": 26,
+          "rate": 0.38461538461538464
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 6.694840334446452
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-MULTI",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 9,
+          "win": 1,
+          "decided": 10,
+          "rate": 0.1
+        },
+        "under": {
+          "win": 8,
+          "loss": 8,
+          "decided": 16,
+          "rate": 0.5
+        },
+        "Combined": {
+          "loss": 17,
+          "win": 9,
+          "decided": 26,
+          "rate": 0.34615384615384615
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 6.6923076923076925
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-MULTI",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 10,
+          "win": 3,
+          "decided": 13,
+          "rate": 0.23076923076923078
+        },
+        "under": {
+          "win": 7,
+          "loss": 6,
+          "decided": 13,
+          "rate": 0.5384615384615384
+        },
+        "Combined": {
+          "loss": 16,
+          "win": 10,
+          "decided": 26,
+          "rate": 0.38461538461538464
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 7.214184950265221
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-MULTI",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 9,
+          "win": 3,
+          "decided": 12,
+          "rate": 0.25
+        },
+        "under": {
+          "win": 8,
+          "loss": 6,
+          "decided": 14,
+          "rate": 0.5714285714285714
+        },
+        "Combined": {
+          "loss": 15,
+          "win": 11,
+          "decided": 26,
+          "rate": 0.4230769230769231
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 7.230769230769231
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 5,
+          "win": 1,
+          "decided": 6,
+          "rate": 0.16666666666666666
+        },
+        "under": {
+          "win": 12,
+          "loss": 8,
+          "decided": 20,
+          "rate": 0.6
+        },
+        "Combined": {
+          "win": 13,
+          "loss": 13,
+          "decided": 26,
+          "rate": 0.5
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 6.411199451448114
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 6,
+          "win": 3,
+          "decided": 9,
+          "rate": 0.3333333333333333
+        },
+        "under": {
+          "win": 11,
+          "loss": 6,
+          "decided": 17,
+          "rate": 0.6470588235294118
+        },
+        "Combined": {
+          "win": 14,
+          "loss": 12,
+          "decided": 26,
+          "rate": 0.5384615384615384
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 6.3076923076923075
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "mean",
+      "side_counts": {
+        "over": {
+          "loss": 10,
+          "win": 3,
+          "decided": 13,
+          "rate": 0.23076923076923078
+        },
+        "under": {
+          "win": 7,
+          "loss": 6,
+          "decided": 13,
+          "rate": 0.5384615384615384
+        },
+        "Combined": {
+          "loss": 16,
+          "win": 10,
+          "decided": 26,
+          "rate": 0.38461538461538464
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 7.08516719624336
+    },
+    {
+      "method": "v2-distribution-controls-reconstruction-v1:regularized_glm_law:common-feature-memory",
+      "target": "pass_cmp",
+      "history": "H-RECENT",
+      "product": "lower_median",
+      "side_counts": {
+        "over": {
+          "loss": 10,
+          "win": 3,
+          "decided": 13,
+          "rate": 0.23076923076923078
+        },
+        "under": {
+          "win": 7,
+          "loss": 6,
+          "decided": 13,
+          "rate": 0.5384615384615384
+        },
+        "Combined": {
+          "loss": 16,
+          "win": 10,
+          "decided": 26,
+          "rate": 0.38461538461538464
+        }
+      },
+      "available": 26,
+      "games": 13,
+      "weeks": [
+        8
+      ],
+      "mae": 7.038461538461538
+    }
+  ],
+  "retained_source_sha256": [
+    "8850d4beea01033e033978637de3e2b68142eb842bd75ec49b394e31d0d55cba"
+  ],
+  "limitations": [
+    "Owner-local protected board was inspected; only deterministic permitted aggregates and hashes retained publicly. No C private-row parity or admission implied.",
+    "Timing-unverified actual-line diagnostics; current revised football source, seven-day proxy; not issued selections, settlement or profit.",
+    "Retained old families cover only W5-7 subset; no C02 current offered coverage. Do not rank84-row result against112-row total.",
+    "This is prefit control review and independent verification, zero new fit, zero new forecast, zero new actual-line week."
+  ]
+}

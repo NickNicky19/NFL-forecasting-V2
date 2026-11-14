@@ -1,0 +1,94 @@
+{
+  "version": "v2-later-provider-label-consistency-v1",
+  "evidence_label": "REPRODUCED_FROM_DATA",
+  "scope": "59 retained explicit labels for one CHI/NE game; 546 earlier null labels were not filled or rescored",
+  "earlier_outcomes_sha256": "90ff01bd5de2a09b435786116df193c3abda71a183a686101b98e700f35c892c",
+  "earlier_provider_body_sha256": [
+    "8841fea5154c108ae637c14b9051e82a21223df4962f0e935ca5203891030436"
+  ],
+  "earlier_observed_at": [
+    "2026-10-23T17:57:28.190038+00:00"
+  ],
+  "source_timestamp_known": false,
+  "later_repository": "NickNicky19/nicks-expert-nfl-picks",
+  "later_commit": "911a81a31f822de58e0f9c04ded070f8c9752670",
+  "later_source_path": "data/cache/stat-keys-fgm-v1/stats_2026_07.json",
+  "later_git_blob_sha1": "ca299a9b470fe3a28441b03dd00ab9e16fbdde12",
+  "later_source_content_sha256": "46ff7b8986f02b29142ff0576adcbded936b05a30782a0338c7c10ba48f2649a",
+  "later_source_bytes": 63956,
+  "later_snapshot_retrieval_clock": "2026-10-29 session; provider revision clock absent",
+  "game_identity": {
+    "espn_game_id": "401873010",
+    "season": 2026,
+    "week": 7,
+    "home": "CHI",
+    "away": "NE",
+    "kickoff_utc": "2026-10-23T00:15Z",
+    "completed": true,
+    "identity_source": "output/data/weeks/2026_w07.json",
+    "identity_source_git_blob_sha1": "39c2ea99affa4ae747a284ce93f9395592b1ebd4"
+  },
+  "counts": {
+    "match": 55,
+    "unverified": 4,
+    "mismatch": 0
+  },
+  "target_counts": {
+    "anytime_td": {
+      "match": 6
+    },
+    "pass_att": {
+      "match": 2
+    },
+    "pass_cmp": {
+      "match": 2
+    },
+    "pass_int": {
+      "match": 1
+    },
+    "pass_td": {
+      "match": 2
+    },
+    "pass_yd": {
+      "match": 2
+    },
+    "rec": {
+      "match": 10,
+      "unverified": 2
+    },
+    "rec_yd": {
+      "match": 10,
+      "unverified": 2
+    },
+    "rush_att": {
+      "match": 8
+    },
+    "rush_rec_yd": {
+      "match": 4
+    },
+    "rush_yd": {
+      "match": 8
+    }
+  },
+  "unmatched": {
+    "rows": 4,
+    "distinct_players": 2,
+    "reason": "Unprefixed GSIS-looking identifiers; one contains leading whitespace. No exact admitted crosswalk, no fuzzy/value-based join."
+  },
+  "semantic_checks": {
+    "primitive_labels": "Exact source fields; omitted fields remain missing",
+    "combined_yards": "Sum only when both signed primitive fields are present",
+    "anytime_td": "At least one positive rush_td or rec_td proves event1 even if other component absent; event0 requires both complete explicit zeros",
+    "identity": "Sleeper prefix required for direct cache-key match; row team/opponent corroborates production game schedule",
+    "participation": "Earlier replay labels say played; cache gp/off_snp can provide positive participation evidence; source revision/final statistical authority not independently established",
+    "later_positive_participation_rows": 55,
+    "comparable_players": 14
+  },
+  "limitations": [
+    "Same Sleeper provider family and website-normalized later cache; not an independent NFL truth source.",
+    "trim_stats drops every falsey value, including explicit zero, and drops rows with no retained truthy fields.",
+    "No mismatches among55 comparable labels does not authenticate the4 unjoined labels or all605 outcomes.",
+    "The later cache does not supply provider source revision timestamps; unchanged55 values are snapshot consistency, not a proof of finality.",
+    "No NFL fits, forecasts or additional scores created."
+  ]
+}

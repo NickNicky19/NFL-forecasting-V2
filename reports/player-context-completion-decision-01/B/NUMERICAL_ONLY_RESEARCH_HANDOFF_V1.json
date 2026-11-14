@@ -1,0 +1,26 @@
+{
+  "schema_version": "B-DEPTH-NUMERICAL-ONLY-RESEARCH-HANDOFF-v1",
+  "frozen_at_utc": "2026-11-10T05:34:33.381497+00:00",
+  "state": "PREPARED_NOT_CURRENT_QUERY_READY_NOT_OWNER_ADMITTED_NOT_CAPTURED",
+  "candidate": "B-QB-DEPTH-CATCHABILITY-v2:D2",
+  "product": "lower_median numerical display only; no confidence/EV/TopPicks activation",
+  "reference": "B-QB-CHARTED-CATCHABILITY-CONTEXT-v1:F2 lower_median plus incumbent under existing ownerpolicy",
+  "scope": "Exposed2025full and2026W1-8 reconstruction. Rawcurrentpointminimum5.5956678700/277; F2comparison inconclusive and2025loss retained. OfferedmedianMAE ties D1 on112; direction49/112 losesstrongcontrols.",
+  "bindings": {
+    "protocol": "reports/player-context-completion-decision-01/B/depth-wave-v2/FROZEN_PROTOCOL.json",
+    "model_directory": "reports/player-context-completion-decision-01/B/depth-wave-v2/fits",
+    "source_depth": "reports/player-context-completion-decision-01/B/source-depth-v1/FTN_DEPTH_QB_GAME_INPUTS.json.gz",
+    "profile_index": "reports/player-context-completion-decision-01/B/profiles/PROFILE_INDEX_V1.json",
+    "adapter": "nfl_v2/qb_depth_catchability.py:DepthHistory.direct + nfl_v2/player_context_matchup.py:restored_forest_law",
+    "current_query_profile": "nfl_v2/qb_context_profiles.py; explicit supplied pregame membership, no target outcomes",
+    "future_source_preparer": "tools/prepare_qb_depth_charting_v2.py"
+  },
+  "mandatory_next_owner_checks": [
+    "Qualified current source and explicit future query universe; old W1-8 files cannot be relabeled fresh.",
+    "Correct as-of model origin/refit under registered policy and source-clock/expiry checks.",
+    "Named feature order/schema/prior/model bindings and deterministic current adapter parity.",
+    "Owner consumer/runtime/fallback/rollback and admission before activation.",
+    "Real inference,persistence/readback,publication/consumer and served-value receipts separately."
+  ],
+  "boundaries": "No research production switch, scheduler, dispatch, quote collection or late backfill. Existing independently qualified products/releases remain unaffected."
+}

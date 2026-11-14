@@ -1,0 +1,70 @@
+{
+  "state": "EXECUTED_B_OWNER_LOCAL_C_BOUND_NOT_C_ADMITTED",
+  "at_utc": "2026-11-03T23:37:07.449271+00:00",
+  "protocol_sha256": "82d9348b2f42ab902ebb8cb40ed8b15493a1d10a717e64cb7e6d705bd8870607",
+  "code_sha256": "be16dd9c9cdbb0717690ba93f72bef76d65efbc7e1ab08e7d9f2cb5c77b79c11",
+  "C_ref": "ac9cb1000bcb8f1197505b68ccfe246ea61bbafe",
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0,
+  "actual_weeks": [
+    2,
+    3
+  ],
+  "source_offers": 968,
+  "source_games": 32,
+  "unique_player_games": 469,
+  "B_procedure_product_configurations": 24,
+  "procedure_category_product_cells": 96,
+  "score_views": 864,
+  "matched_method_rows": 23232,
+  "input_chunks": 64,
+  "missing_counts": {
+    "SUPPORTED": 22008,
+    "MISSING_RETAINED_FORECAST_POPULATION": 1224
+  },
+  "outcome_conflicts": 0,
+  "wall_seconds": 5.858901662999415,
+  "original_W8_control": {
+    "target": "ALL",
+    "procedure_id": "B_ORIGINAL_RECORDED",
+    "control_id": "ALWAYS_UNDER",
+    "week_view": "8",
+    "scope": "ORIGINAL_SELECTED_ONLY",
+    "common_decided": 415,
+    "candidate_wins": 205,
+    "control_wins": 224,
+    "win_difference": -19,
+    "disagreements": 237,
+    "uncertainty": {
+      "n": 415,
+      "delta": 0.04578313253012048,
+      "relative_error_change": 0.09947643979057591,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 14,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.05022984105126415,
+      "game_normal95_sensitivity": [
+        -0.05266735593035725,
+        0.14423362099059822
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5060240963855421,
+      "comparator_error": 0.4602409638554217,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 19.0,
+          "n": 415
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  }
+}

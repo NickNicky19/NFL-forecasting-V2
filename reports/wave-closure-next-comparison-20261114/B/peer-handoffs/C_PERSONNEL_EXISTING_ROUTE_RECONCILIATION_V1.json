@@ -1,0 +1,135 @@
+{
+  "id": "B_C_PERSONNEL_EXISTING_SOURCE_COMBINATION_RECONCILIATION_v1",
+  "checked_UTC": "2026-11-14T15:00:13.616180+00:00",
+  "owner": "C existing roster/personnel/source executor; B read-only receipt reconciliation, not a competing source task",
+  "actual_route_combination": {
+    "roster": "Existing C current-known-season NFLverse roster route",
+    "roster_URL": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
+    "roster_manifest": {
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "f1e423353f9651e9af9752b5da9690bef3fe8b71",
+      "path": "sources/category-decision-release-01/MODEL_INPUT_MANIFEST.json",
+      "roster_raw_sha256": "1bb74960a5c26459057d7bc5c21f90d8de23c040a1e023f25538b51613499d20",
+      "roster_projection_sha256": "0e4674541cfa973484e2ae991941ed9027e413921daef2780c2caf4247de167d"
+    },
+    "event": "Existing C native event identity/schedule/status route; complete roster component not present in obtained summary",
+    "personnel": "Existing C immutable injury/practice facts route; injury facts are not a full roster and blank/absent status is unknown"
+  },
+  "actual_retained_coverage": {
+    "older_roster": {
+      "basic_QB_RB_WR_TE_rows": 959,
+      "target_WAS_NYG_rows": 60,
+      "matching_injury_rows": 11,
+      "observed_UTC": "2026-11-10T18:45:38.394906+00:00",
+      "scope": "Current-known-season candidate universe only, not starter/active or transaction-effective universe"
+    },
+    "newer_roster": {
+      "observed_UTC": "2026-11-12T01:33:53.124920+00:00",
+      "HTTP_Last_Modified": "2026-11-11T07:04:38+00:00",
+      "existing_guard": "Source Last-Modified age<=36hours; expiredNov12 19:04:38 UTC for current recommendation use",
+      "row_count": "Not re-counted here; do not inherit older959 count into changed projection"
+    },
+    "last_event_personnel": {
+      "current_universe": "SOURCE_BLOCKED_FOR_OBTAINED_EVENT_ROUTE",
+      "historical_training": "SOURCE_BLOCKED_UNCHANGED",
+      "observations_UTC": [
+        "2026-11-12T23:33:18.204168+00:00",
+        "2026-11-12T23:50:21.504016+00:00"
+      ],
+      "source_reads": 3,
+      "later_reads": 1,
+      "source_capture_commit": "35e6e3e514d5c80913a156aca7f5ca544b677314",
+      "server_readback_UTC": "2026-11-12T23:54:18Z",
+      "kickoff_UTC": "2026-11-13T01:15:00Z",
+      "current_teammate_count": null,
+      "new_forecasts_offers_selections": 0,
+      "scope": "Observed source has no complete roster/player component; not proof official inactives are absent elsewhere. No unknown player becomes healthy, active, DNP or zero."
+    },
+    "historical_injury_source": {
+      "actual_observed_UTC": "2026-11-12T17:52:46.426679+00:00",
+      "actual_observed_Chicago": "2026-11-12T11:52:46.426679-06:00",
+      "total_rows": 3097,
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "W1_8_rows": 2459,
+      "W1_8_WR_TE_rows": 446,
+      "actual_source_fields": 16,
+      "row_clock_fields": 0,
+      "HTTP_Age_seconds": 3161,
+      "report_and_practice_not_equal": true,
+      "absent_row_and_empty_designation_are_unknown": true,
+      "cross_vintage": {
+        "W9_retained": 266,
+        "changed_report_or_practice": 187,
+        "same": 79,
+        "unmatched": 0,
+        "W8_narrow_retained_and_same": 26
+      },
+      "interpretation": "Historical source revision demonstrated on named retained W9 rows. Exact first availability and historical update timing unassessable. No demonstrated model contamination or forecast-accuracy effect.",
+      "compressed_SHA256": "36c933c378dd06eca5f4d43b1891412ba2d0e632ff0df85ddaddaf32e40ca0d8",
+      "rights": "Minimal public facts/IDs only under verified CC-BY-4.0 attribution route; no names/injury descriptions/raw narratives. Original source response transient in memory; raw hash not independently recomputable offline."
+    }
+  },
+  "result": "EXISTING_SOURCE_COMBINATION_ASSESSED;PARTIAL_BASIC_UNIVERSE_AND_FACTS_ONLY;EVENT_EFFECTIVE_PERSONNEL_AND_HISTORICAL_TRAINING_STILL_SOURCE_BLOCKED",
+  "exact_gap": "The retained season-candidate roster plus injury facts/native event state does not establish complete event-effective teammate membership, transaction/elevation adjustments or active/inactive states. The obtained event route had zero roster/player components on both checked observations. No further poll of that route was performed.",
+  "next_permissible_action": {
+    "executor": "Session C existing source/roster owner",
+    "route": "One bounded owner task combining its existing NFLverse season-roster identity universe with an actually supplied/authorized event-effective roster/transaction/elevation and active/inactive source/export; retain immutable observation/version clocks before each decision",
+    "missing_external_artifact": "A provider-defined event-effective roster/transaction/elevation/active-inactive component with permitted rights; no concrete qualified component was supplied in the inspected C receipts",
+    "stop": "Do not substitute another injury-list fetch or repeat the closed no-roster event summary. If the required component is not supplied/accessible under existing authority, retain exact source blockage and accumulate only legitimate prospective source facts through existing jobs.",
+    "completion": "Every eligible teammate retains canonical team/event membership and explicit known/unknown/other states before cutoff. Historical training additionally needs authentic earlier versions; current snapshot cannot backfill W1\u20139."
+  },
+  "no_claims": [
+    "No new full current roster acquired",
+    "No historical source clock authenticated",
+    "No personnel model fit or null-as-zero conversion",
+    "No claim all possible permitted sources are unavailable",
+    "No source-contract or stale guard relaxed"
+  ],
+  "sources": [
+    {
+      "label": "C_PERSONNEL",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "f1e423353f9651e9af9752b5da9690bef3fe8b71",
+      "path": "reports/information-first-20261112-01/personnel/FINAL_QUALIFICATION.json",
+      "bytes": 3253,
+      "sha256": "928f6d7c73ac761db5aa1ce85b343cfe3e05be8b164614fcb51b207f96e594be",
+      "received_UTC": "2026-11-14T14:55:38.721648+00:00",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/f1e423353f9651e9af9752b5da9690bef3fe8b71/reports/information-first-20261112-01/personnel/FINAL_QUALIFICATION.json"
+    },
+    {
+      "label": "C_FEASIBILITY",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "f1e423353f9651e9af9752b5da9690bef3fe8b71",
+      "path": "reports/next-generation-information-01/NEW-INFORMATION-FEASIBILITY.json",
+      "bytes": 11249,
+      "sha256": "4295137abaf5eece50332588fc1cfe366fdfc9436d9a7361ec297ef0526f0c9b",
+      "received_UTC": "2026-11-14T14:55:39.231483+00:00",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/f1e423353f9651e9af9752b5da9690bef3fe8b71/reports/next-generation-information-01/NEW-INFORMATION-FEASIBILITY.json"
+    },
+    {
+      "label": "C_CHECKPOINT",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "f1e423353f9651e9af9752b5da9690bef3fe8b71",
+      "path": "reports/information-first-20261112-01/CHECKPOINT.json",
+      "bytes": 13773,
+      "sha256": "5c68f9e51cd40b038bc999ef3fad7219ebbaaeefd7938038d4ccb582c5585d55",
+      "received_UTC": "2026-11-14T14:55:38.140023+00:00",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/f1e423353f9651e9af9752b5da9690bef3fe8b71/reports/information-first-20261112-01/CHECKPOINT.json"
+    }
+  ],
+  "new_source_collection": 0,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_scores": 0
+}

@@ -1,0 +1,227 @@
+{
+  "id": "B-DEFENSIVE-SUPPLIED-PASSING-FIELD-RECONCILIATION-v1",
+  "assignment": "FOLLOW-THROUGH-RELEASE-AND-DEFENSIVE-SOURCE-01 v1",
+  "reviewed_UTC": "2026-11-12T04:16:39.143696+00:00",
+  "B_HEAD_read": "96136a8e2eb32cf2521dd24d922f84674af3d4d3",
+  "owner": "B passing-field review; C coordinates one shared source qualification",
+  "workbook": {
+    "name": "nfl_defensive_rankings_2026.xlsx",
+    "access": "NOT_OBTAINED",
+    "bytes": null,
+    "sha256": null,
+    "search": "One bounded filename search of selected workspace and expected attachment root; no matching .xlsx/.xls found, attachment root absent. Not proof workbook does not exist elsewhere."
+  },
+  "supplied_reference": {
+    "path": "SUPPLIED_APPENDIX_A3_A4_REFERENCE.txt",
+    "sha256": "f327e10afa268f3dc1042eeb50e088e33da6abcc0d6c4b12cc7f49fc304df189",
+    "rights": "User-supplied reference evidence only; no inferred external-provider modeling/redistribution entitlement",
+    "season": "2026 REG claimed by supplied text; not independently verified",
+    "snapshot": "Through games completed November9,2026/Week9 claimed; not source-verified",
+    "original_source_URLs": null,
+    "observed_workbook_or_HTTP_clock": null,
+    "original_publication_vintage": null
+  },
+  "fields": [
+    {
+      "field": "A3 Games",
+      "definition": "Number of supplied defense games; no externally verified schedule/cutoff",
+      "unit": "games",
+      "numerator": "supplied game count",
+      "denominator": null,
+      "existing": "OpportunityHistory summary.games and E3 opponent_games",
+      "actual_use": "E3 direct_features includes opponent_games for E2/E3, inherited by all R arms; profile support also retains games",
+      "concept_classification": "ALREADY_PRESENT",
+      "exact_appendix_source": "SOURCE_BLOCKED",
+      "difference": "Supplied season-to-date8/9 versus existing earlier16team-game window. Not byte-identical values or a tested new season-reset policy."
+    },
+    {
+      "field": "A3 Pass attempts faced",
+      "definition": "Supplied report says credited passing attempts excluding sacks, including occasional non-QB attempts; unverified",
+      "unit": "attempts",
+      "numerator": "Pass attempts faced",
+      "denominator": null,
+      "existing": "counts.credited_attempts; all team PBP including unassigned/non-QB passing exposure within supported games",
+      "actual_use": "Raw totals retained; R3 receives shrunk credited-attempt volume per game",
+      "concept_classification": "ALREADY_PRESENT",
+      "exact_appendix_source": "SOURCE_BLOCKED",
+      "difference": "B actual play contract requires pass_attempt=1 and sack=0 on nondeleted/non2pt opportunities; unknown sack does not become0. Provider definition and sparse-completeness equivalence remain unverified."
+    },
+    {
+      "field": "A3 Attempts per game",
+      "definition": "Supplied attempts divided by supplied defense Games",
+      "unit": "attempts/game",
+      "numerator": "Pass attempts faced",
+      "denominator": "A3 Games",
+      "existing": "defense.volume.credited_attempts.raw_per_game and shrunk_per_game; R3_defense_values:defense_credited_attempts_per_game",
+      "actual_use": "Consumed by R3 value_names after fixed4game league-volume shrinkage; all earlier-only16team games",
+      "concept_classification": "EQUIVALENT_TEST_COMPLETE",
+      "exact_appendix_source": "SOURCE_BLOCKED",
+      "difference": "Raw/league-shrunk passing-volume information already tested in R3. This does not claim the exact external snapshot/season-reset/window or all alternative learners were tested."
+    },
+    {
+      "field": "A4 Completions allowed",
+      "definition": "Supplied roster-unrestricted team passing completions; provider flags/completeness unknown",
+      "unit": "completions",
+      "numerator": "Completions allowed",
+      "denominator": null,
+      "existing": "counts.completions, with completion_known_attempts separate; E3 context completion counts and offense-adjusted residuals",
+      "actual_use": "Totals retained in profiles. R3 appended value_names does not add completions total as a raw column; E3 already uses completion residuals",
+      "concept_classification": "ALREADY_PRESENT",
+      "exact_appendix_source": "SOURCE_BLOCKED",
+      "difference": "Available profile field is not evidence every representation has been consumed/tested."
+    },
+    {
+      "field": "A4 Completions per game",
+      "definition": "Supplied completions divided by A3 Games joined on defense name",
+      "unit": "completions/game",
+      "numerator": "A4 Completions allowed",
+      "denominator": "A3 Games; same source/cutoff not verified",
+      "existing": "defense.volume.completions raw_per_game and shrunk_per_game",
+      "actual_use": "Built by OpportunityHistory.summarize but omitted from qb_opportunity_increment.VOLUMES; not directly appended by R3",
+      "concept_classification": "ALREADY_PRESENT",
+      "exact_appendix_source": "SOURCE_BLOCKED",
+      "difference": "Potential genuinely distinct learner/representation combination remains untested; no new qualified external information established. Do not rerun the completed R3 unchanged."
+    },
+    {
+      "field": "A4 Completion percent",
+      "definition": "100 times supplied completions divided by supplied A3 attempts",
+      "unit": "percent, one decimal",
+      "numerator": "A4 Completions allowed",
+      "denominator": "A3 Pass attempts faced; same source/cutoff/completeness unknown",
+      "existing": "rates.completion_per_attempt; E3 conditional offense-adjusted completion residuals",
+      "actual_use": "Raw/shrunk profile rate built but omitted from R3 RATES; E3 uses eligible depth/down counts and residual=(observed-expected)/(context attempts+100)",
+      "concept_classification": "ALREADY_PRESENT",
+      "exact_appendix_source": "SOURCE_BLOCKED",
+      "difference": "Profile denominator uses completion_known_attempts, not unconditionally all credited attempts. Unknown annotation completeness must be reconciled before replacing its denominator. Ordinary completion is not charted catchability."
+    },
+    {
+      "field": "A3/A4 rank",
+      "definition": "Descending competition rank of supplied season totals; T marks equal integer totals",
+      "unit": "ordinal rank",
+      "numerator": null,
+      "denominator": null,
+      "existing": "Existing numerical totals/volumes preserve magnitude/support",
+      "actual_use": "No rank multiplier implemented",
+      "concept_classification": "INCOMPATIBLE",
+      "exact_appendix_source": "SOURCE_BLOCKED",
+      "difference": "Incompatible with a claim of genuinely new independent information when only reordering the same totals. Ranks discard magnitude, games/support and uncertainty; no automatic adjustment or input extension."
+    },
+    {
+      "field": "Dropbacks, sacks, pressure and charted catchability",
+      "definition": "Not provided in A3/A4",
+      "unit": null,
+      "numerator": null,
+      "denominator": null,
+      "existing": "B separately counts provider qb_dropback, sacks, scramble, spike and known-flag denominators; pressure/catchability remain separately qualified/blocked",
+      "actual_use": "R3 already consumes appropriate opportunity/conversion quantities; no new values inferred here",
+      "concept_classification": "INCOMPATIBLE",
+      "exact_appendix_source": "SOURCE_BLOCKED",
+      "difference": "Attempt count is not dropback count; sacks and scrambles cannot be recovered from supplied attempts/completions. Completion rate is not pressure or catchability."
+    }
+  ],
+  "GENUINELY_NEW_QUALIFIED": [],
+  "existing_result_reuse": {
+    "recipe": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1; fixed Leaf-CDF E3/R0 plus R1 support/R2 own-opportunity/R3 defense",
+    "period": "2026W5\u20138 actual-line timing-unverified112offers56games; full2025W1\u201318 and2026W1\u20138 numerical panels",
+    "direction": {
+      "R0": "O17W13L/30;U41W41L/82;58W54L/112",
+      "R1": "O14W15L/29;U39W44L/83;53W59L/112",
+      "R2": "O11W8L/19;U46W47L/93;57W55L/112",
+      "R3": "O16W11L/27;U43W42L/85;59W53L/112"
+    },
+    "increment": {
+      "R1_minus_R0_wins": -5,
+      "R2_minus_R1_wins": 4,
+      "R3_minus_R2_wins": 2,
+      "R3_minus_R0_wins": 1
+    },
+    "controls": "Earlier prevalence59/112; strict-current Leaf mean and saved adjusted47/84 versus R3 45/84 on exact same84 rows",
+    "uncertainty": "R3-R2 +1.79points, game-cluster sensitivity[-4.31,+7.88]; R3-R0 +0.89points[-5.47,+7.26]. Four exposed week clusters; no equivalence/superiority proof.",
+    "Brier": {
+      "R0": 0.266847,
+      "R1": 0.269303,
+      "R2": 0.268401,
+      "R3": 0.267743,
+      "neutral": 0.25
+    },
+    "coverage": "112eligible/available/selected/decided; unknown/unavailable/abstention/push0 on original finite panel;95%learned+5%earlier-label prior in each law",
+    "decision": "CLOSE_RECIPE_NO_GAIN for replacement direction/probability; numerical-mean observation INCONCLUSIVE. Existing negative result reused; no new score run."
+  },
+  "chronology": {
+    "retained": "Strict availability<cutoff and game-time recent selection after admission; fixed seven-day reconstruction at historical training/query origins",
+    "aligned_test": "Completed separate 48h sensitivity F0\u2013F3; do not rerun as a defense experiment or authenticate it as observed publication",
+    "current_snapshot": "The supplied November9/10 current summary cannot be input for2026W1\u20138. Need earlier snapshots or earlier-only reconstruction before historical use.",
+    "prospective": "Only after actual source receipt and season/definition/cutoff/rights qualification; one current snapshot adds no tested week."
+  },
+  "bindings": [
+    {
+      "path": "nfl_v2/passing_opportunity_profiles.py",
+      "bytes": 13692,
+      "sha256": "08c058d73d64973f46f5fae3f698ea850d96cbd114aa0f292e9c7c11df025eff"
+    },
+    {
+      "path": "nfl_v2/qb_opportunity_increment.py",
+      "bytes": 3069,
+      "sha256": "14748e8103fdfbcd1e8be7e180de9d129aded5502d5895ee6fb37513f1b1b806"
+    },
+    {
+      "path": "tools/prepare_passing_opportunity_profiles.py",
+      "bytes": 10531,
+      "sha256": "5a3abb98a548bf9ad6e72544374e63a65c2c1a1384dc4542b7e1e5e41aec5b71"
+    },
+    {
+      "path": "nfl_v2/player_context_matchup.py",
+      "bytes": 17185,
+      "sha256": "3db66e8d7c75f444d87f4792add9096a9d04d0390902f67ce21248c206476f29"
+    },
+    {
+      "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/FROZEN_PROTOCOL.json",
+      "bytes": 9399,
+      "sha256": "be1b14890a83c8acdb62d96ee3238172ea95c7303283d73098e548cc263fb0b6"
+    },
+    {
+      "path": "reports/profile-increment-to-release-01/B/source-profiles/FIELD_TO_USE_AND_SCHEMA_V2.json",
+      "bytes": 119604,
+      "sha256": "d1466eb98d237fb49434da149fb2f34b044e5a5b2fac0c9dec08198977c27ee0"
+    },
+    {
+      "path": "reports/profile-increment-to-release-01/B/source-profiles/SOURCE_COVERAGE_V2.json",
+      "bytes": 46357,
+      "sha256": "a85ad4fcf866e0e978442f16f63829bb342221cdc977963589a4b94af281dd6a"
+    },
+    {
+      "path": "reports/profile-increment-to-release-01/B/PROFILE_INCREMENT_REPORT.md",
+      "bytes": 14642,
+      "sha256": "1f5f5c8ad4cd68853ff05b6d87761ecb20e3a282ed2e9afd2e29e21689ae8ea5"
+    },
+    {
+      "path": "reports/profile-increment-closure-next-02/B/aligned-wave-v1/FROZEN_PROTOCOL.json",
+      "bytes": 10569,
+      "sha256": "8e98084c0e986901acd24f577670fbac5bdf7a2c4798e09f0229efa39e88df43"
+    },
+    {
+      "path": "reports/profile-increment-closure-next-02/B/ALIGNED_FRESHNESS_REPORT.md",
+      "bytes": 16633,
+      "sha256": "b7022365f6d646a492c244132b6751ba8f51b35438ba87a8f62eb3d620856e4a"
+    }
+  ],
+  "one_group_experiment": {
+    "status": "NOT_REGISTERED_OR_EXECUTED",
+    "reason": "No new source-qualified passing information; workbook/reference availability and existing-input duplication unresolved",
+    "owner": "C coordinates and records at most one explicit executor across A/B/C; B does not launch a duplicate experiment",
+    "release_roster": "UNCHANGED; no new candidate or live input admitted"
+  },
+  "next_action": {
+    "executor": "C existing source-qualification coordinator",
+    "dependency": "Actual workbook bytes including source-reference cells or original permitted source responses with version/hash, verified season and cutoff, denominator/completeness definitions, observation clock and permitted use",
+    "action": "Record one shared source qualification; A/B/C review only their owned components. If a genuinely new passing block qualifies, name one executor and later roster/version before bounded same-method increment; otherwise close as duplicate or source-blocked.",
+    "completion": "Source/field ledger distinguishes verified and supplied-only properties; either one genuinely new qualified block selected under group cap or exact SOURCE_BLOCKED/EQUIVALENT disposition. Releases continue independently."
+  },
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_grades": 0,
+  "new_acquisition_calls": 0,
+  "new_NFL_observations": 0,
+  "new_tested_weeks": 0,
+  "new_primary_releases": 0
+}

@@ -1,0 +1,517 @@
+{
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "prior_leader_artifact": "reports/continuation-20261030/TOP5_BY_CATEGORY_PRODUCT.csv",
+  "prior_leader_sha256": "a3d40d13373877fa3e53b5eda1918cab20f66d116eedf016837878e3754ec01b",
+  "rows": [
+    {
+      "candidate_NLL": 0.4557860234973356,
+      "candidate_error": 0.14390455611298283,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": -0.00020089193573716302,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "Brier",
+      "n": 2118,
+      "ordered_same_policy_NLL": 0.458582371979636,
+      "prior_strongest_error": 0.14410544804872,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-RECENT",
+          "procedure_id": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "product": "event_probability"
+        }
+      ],
+      "ranking_product": "forecast_law",
+      "relative_error_delta": -0.001394062045934893,
+      "source_row_index": 822,
+      "target": "anytime_td"
+    },
+    {
+      "candidate_NLL": 5.281250961033755,
+      "candidate_error": 3.1816488855624985,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": -0.0004083485805894682,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "CRPS",
+      "n": 2359,
+      "ordered_same_policy_NLL": 5.289366175961227,
+      "prior_strongest_error": 3.182057234143088,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "v2-qualified-partial-chart-direct-wave-v1:ordered_leaf_cdf:common-feature-memory",
+          "product": "lower_median"
+        }
+      ],
+      "ranking_product": "forecast_law",
+      "relative_error_delta": -0.00012832848391535436,
+      "source_row_index": 849,
+      "target": "nick-chart-ppr-v1"
+    },
+    {
+      "candidate_NLL": 5.281250961033755,
+      "candidate_error": 39.3631467952954,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 0.23155279423738762,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "MSE",
+      "n": 2359,
+      "ordered_same_policy_NLL": 5.289366175961227,
+      "prior_strongest_error": 39.13159400105801,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-RECENT",
+          "procedure_id": "v2-qualified-partial-chart-direct-wave-v1:empirical",
+          "product": "mean"
+        }
+      ],
+      "ranking_product": "intended_mean",
+      "relative_error_delta": 0.005917285000736925,
+      "source_row_index": 849,
+      "target": "nick-chart-ppr-v1"
+    },
+    {
+      "candidate_NLL": 3.6613410086430984,
+      "candidate_error": 5.854493998317678,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": -0.04212111120603801,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "CRPS",
+      "n": 242,
+      "ordered_same_policy_NLL": 3.6847966268929877,
+      "prior_strongest_error": 5.896615109523716,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "product": "lower_median"
+        }
+      ],
+      "ranking_product": "forecast_law",
+      "relative_error_delta": -0.007143269557819288,
+      "source_row_index": 874,
+      "target": "pass_att"
+    },
+    {
+      "candidate_NLL": 3.6613410086430984,
+      "candidate_error": 118.35567571147739,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 1.3061915645043598,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "MSE",
+      "n": 242,
+      "ordered_same_policy_NLL": 3.6847966268929877,
+      "prior_strongest_error": 117.04948414697303,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "hgb-direct-history-controls-v1:squared_error_mean",
+          "product": "squared_error_mean"
+        }
+      ],
+      "ranking_product": "intended_mean",
+      "relative_error_delta": 0.011159310731042968,
+      "source_row_index": 874,
+      "target": "pass_att"
+    },
+    {
+      "candidate_NLL": 3.2922000278449057,
+      "candidate_error": 3.940321231300115,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": -0.02679204654055889,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "CRPS",
+      "n": 242,
+      "ordered_same_policy_NLL": 3.3051303932099776,
+      "prior_strongest_error": 3.967113277840674,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "product": "lower_median"
+        }
+      ],
+      "ranking_product": "forecast_law",
+      "relative_error_delta": -0.006753537059355658,
+      "source_row_index": 896,
+      "target": "pass_cmp"
+    },
+    {
+      "candidate_NLL": 3.2922000278449057,
+      "candidate_error": 51.9921023758158,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 3.0967509562219675,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "MSE",
+      "n": 242,
+      "ordered_same_policy_NLL": 3.3051303932099776,
+      "prior_strongest_error": 48.89535141959383,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "hgb-direct-history-controls-v1:squared_error_mean",
+          "product": "squared_error_mean"
+        }
+      ],
+      "ranking_product": "intended_mean",
+      "relative_error_delta": 0.06333426115802507,
+      "source_row_index": 896,
+      "target": "pass_cmp"
+    },
+    {
+      "candidate_NLL": 1.0179811644982568,
+      "candidate_error": 0.369143223203321,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 0.002377644503461618,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "CRPS",
+      "n": 242,
+      "ordered_same_policy_NLL": 1.0235675123946841,
+      "prior_strongest_error": 0.3667655786998594,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "product": "lower_median"
+        }
+      ],
+      "ranking_product": "forecast_law",
+      "relative_error_delta": 0.0064827362259296155,
+      "source_row_index": 918,
+      "target": "pass_int"
+    },
+    {
+      "candidate_NLL": 1.0179811644982568,
+      "candidate_error": 0.5219493298441881,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 0.004197400129042461,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "MSE",
+      "n": 242,
+      "ordered_same_policy_NLL": 1.0235675123946841,
+      "prior_strongest_error": 0.5177519297151456,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-RECENT",
+          "procedure_id": "hgb-direct-history-controls-v1:squared_error_mean",
+          "product": "squared_error_mean"
+        }
+      ],
+      "ranking_product": "intended_mean",
+      "relative_error_delta": 0.008106971482176354,
+      "source_row_index": 918,
+      "target": "pass_int"
+    },
+    {
+      "candidate_NLL": 1.4223213056746002,
+      "candidate_error": 0.5850956415924823,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": -0.008415064695587837,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "CRPS",
+      "n": 242,
+      "ordered_same_policy_NLL": 1.4284447098303787,
+      "prior_strongest_error": 0.5935107062880701,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "product": "lower_median"
+        }
+      ],
+      "ranking_product": "forecast_law",
+      "relative_error_delta": -0.014178454754788279,
+      "source_row_index": 940,
+      "target": "pass_td"
+    },
+    {
+      "candidate_NLL": 1.4223213056746002,
+      "candidate_error": 1.1799121423770302,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 0.017395194180110485,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "MSE",
+      "n": 242,
+      "ordered_same_policy_NLL": 1.4284447098303787,
+      "prior_strongest_error": 1.1625169481969198,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "empirical-player-history-control-v1",
+          "product": "empirical_mean"
+        }
+      ],
+      "ranking_product": "intended_mean",
+      "relative_error_delta": 0.014963389744201732,
+      "source_row_index": 940,
+      "target": "pass_td"
+    },
+    {
+      "candidate_NLL": 6.108464918511378,
+      "candidate_error": 47.62059851184997,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 0.13015123536340667,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "CRPS",
+      "n": 242,
+      "ordered_same_policy_NLL": 6.0925762737295655,
+      "prior_strongest_error": 47.49044727648656,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "product": "lower_median"
+        }
+      ],
+      "ranking_product": "forecast_law",
+      "relative_error_delta": 0.0027405771650385585,
+      "source_row_index": 962,
+      "target": "pass_yd"
+    },
+    {
+      "candidate_NLL": 6.108464918511378,
+      "candidate_error": 7235.625317040317,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": -2.9541063985670917,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "MSE",
+      "n": 242,
+      "ordered_same_policy_NLL": 6.0925762737295655,
+      "prior_strongest_error": 7238.579423438884,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "hgb-direct-history-controls-v1:squared_error_mean",
+          "product": "squared_error_mean"
+        }
+      ],
+      "ranking_product": "intended_mean",
+      "relative_error_delta": -0.0004081058210125521,
+      "source_row_index": 962,
+      "target": "pass_yd"
+    },
+    {
+      "candidate_NLL": 1.7188306556727657,
+      "candidate_error": 0.8909082351841422,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 0.0001198037025048615,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "CRPS",
+      "n": 2118,
+      "ordered_same_policy_NLL": 1.7150397637968007,
+      "prior_strongest_error": 0.8907884314816373,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "product": "lower_median"
+        }
+      ],
+      "ranking_product": "forecast_law",
+      "relative_error_delta": 0.00013449175839160089,
+      "source_row_index": 1008,
+      "target": "rec"
+    },
+    {
+      "candidate_NLL": 1.7188306556727657,
+      "candidate_error": 3.263617645959638,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 0.050033166143917285,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "MSE",
+      "n": 2118,
+      "ordered_same_policy_NLL": 1.7150397637968007,
+      "prior_strongest_error": 3.213584479815721,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "hgb-direct-history-controls-v1:squared_error_mean",
+          "product": "squared_error_mean"
+        }
+      ],
+      "ranking_product": "intended_mean",
+      "relative_error_delta": 0.015569270532071518,
+      "source_row_index": 1008,
+      "target": "rec"
+    },
+    {
+      "candidate_NLL": 3.748965209453361,
+      "candidate_error": 11.616237229707806,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 0.02240601573099532,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "CRPS",
+      "n": 2118,
+      "ordered_same_policy_NLL": 3.724058708505847,
+      "prior_strongest_error": 11.593831213976811,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "product": "lower_median"
+        }
+      ],
+      "ranking_product": "forecast_law",
+      "relative_error_delta": 0.0019325808110768428,
+      "source_row_index": 1056,
+      "target": "rec_yd"
+    },
+    {
+      "candidate_NLL": 3.748965209453361,
+      "candidate_error": 594.8386799022771,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 5.328786628205535,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "MSE",
+      "n": 2118,
+      "ordered_same_policy_NLL": 3.724058708505847,
+      "prior_strongest_error": 589.5098932740716,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-RECENT",
+          "procedure_id": "empirical-player-history-control-v1",
+          "product": "empirical_mean"
+        }
+      ],
+      "ranking_product": "intended_mean",
+      "relative_error_delta": 0.009039350635169249,
+      "source_row_index": 1056,
+      "target": "rec_yd"
+    },
+    {
+      "candidate_NLL": 2.5434267240512427,
+      "candidate_error": 2.1826258457566783,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 0.020656704240162416,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "CRPS",
+      "n": 844,
+      "ordered_same_policy_NLL": 2.532050375673285,
+      "prior_strongest_error": 2.161969141516516,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "product": "lower_median"
+        }
+      ],
+      "ranking_product": "forecast_law",
+      "relative_error_delta": 0.009554578667886419,
+      "source_row_index": 1105,
+      "target": "rush_att"
+    },
+    {
+      "candidate_NLL": 2.5434267240512427,
+      "candidate_error": 18.928217552370707,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 0.696600474289955,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "MSE",
+      "n": 844,
+      "ordered_same_policy_NLL": 2.532050375673285,
+      "prior_strongest_error": 18.231617078080752,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "hgb-direct-history-controls-v1:squared_error_mean",
+          "product": "squared_error_mean"
+        }
+      ],
+      "ranking_product": "intended_mean",
+      "relative_error_delta": 0.03820837566446335,
+      "source_row_index": 1105,
+      "target": "rush_att"
+    },
+    {
+      "candidate_NLL": 4.1434748900113805,
+      "candidate_error": 14.386463790879246,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 0.029668221579481013,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "CRPS",
+      "n": 2118,
+      "ordered_same_policy_NLL": 4.129345535271119,
+      "prior_strongest_error": 14.356795569299765,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "product": "lower_median"
+        }
+      ],
+      "ranking_product": "forecast_law",
+      "relative_error_delta": 0.002066493280918678,
+      "source_row_index": 1152,
+      "target": "rush_rec_yd"
+    },
+    {
+      "candidate_NLL": 4.1434748900113805,
+      "candidate_error": 816.7531875026743,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 7.224858890776318,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "MSE",
+      "n": 2118,
+      "ordered_same_policy_NLL": 4.129345535271119,
+      "prior_strongest_error": 809.528328611898,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "product": "mean"
+        }
+      ],
+      "ranking_product": "intended_mean",
+      "relative_error_delta": 0.008924775866911065,
+      "source_row_index": 1152,
+      "target": "rush_rec_yd"
+    },
+    {
+      "candidate_NLL": 4.1139895701745415,
+      "candidate_error": 11.91812532254067,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 0.04170189118322831,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "CRPS",
+      "n": 844,
+      "ordered_same_policy_NLL": 4.09645645594473,
+      "prior_strongest_error": 11.876423431357441,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "product": "lower_median"
+        }
+      ],
+      "ranking_product": "forecast_law",
+      "relative_error_delta": 0.003511317310657886,
+      "source_row_index": 1201,
+      "target": "rush_yd"
+    },
+    {
+      "candidate_NLL": 4.1139895701745415,
+      "candidate_error": 605.7611107680935,
+      "candidate_policy": "H-MULTI-COMMON",
+      "error_delta": 2.7824377823116038,
+      "evidence": "exposedminima;samefixedqueryidentitypanelverifiedbypriorindependentauditandC02exactsourcecontroljoins;notfrozenselection",
+      "metric": "MSE",
+      "n": 844,
+      "ordered_same_policy_NLL": 4.09645645594473,
+      "prior_strongest_error": 602.9786729857819,
+      "prior_strongest_procedures": [
+        {
+          "history_regime": "H-MULTI",
+          "procedure_id": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "product": "mean"
+        }
+      ],
+      "ranking_product": "intended_mean",
+      "relative_error_delta": 0.0046144878865014395,
+      "source_row_index": 1201,
+      "target": "rush_yd"
+    }
+  ],
+  "source_category_comparison_sha256": "874080c04fcd395f847fbd0a7ca88f8e739dda9c3d4c04e0831b2bf1e4d194dd",
+  "source_score_sha256": "00ef54be6faf0a3a3af9d2af3aa9d0413560d475c9ee8a8832aa72aae4e867f7",
+  "week8_outcomes_read": 0
+}

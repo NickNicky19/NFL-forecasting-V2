@@ -1,0 +1,87 @@
+{
+  "protocol_id": "v2-audit-replay-20261029-v1",
+  "kind": "saved-row replay; new history fits require a separate sealed input admission",
+  "registered_before_bulk_label_decode": true,
+  "exposure": "old reported aggregates and one null outcome inspected; all years exposed development",
+  "fixed_current_panel": {
+    "season": 2026,
+    "season_type": "REG",
+    "weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "later_extension": "separately versioned; authentic issuance only",
+  "inherited_replay_horizon": "actual saved per-game issued_at; not relabeled T-90",
+  "core_history": [
+    "H-CURRENT",
+    "H-RECENT",
+    "H-MULTI"
+  ],
+  "extra_history": [
+    "H-DECAY",
+    "H-STATE",
+    "STRICT-CURRENT-INFORMATION"
+  ],
+  "history_rule": "same evaluation identities; train and transforms only on earlier available outcomes; freeze fit window separately from feature memory",
+  "metric_primary": {
+    "numeric": "MAE, output functional retained",
+    "anytime_td": "Brier"
+  },
+  "quantile_interpolation": "linear index (n-1)*p",
+  "missing": "null plus reason; never zero-fill",
+  "participation": "score only verified played with valid explicit target; DNP/unknown/missing kept in coverage",
+  "primary_roles": {
+    "passing": [
+      "QB"
+    ],
+    "rushing": [
+      "RB"
+    ],
+    "receiving_combined_anytime": [
+      "RB",
+      "WR",
+      "TE"
+    ]
+  },
+  "extended_roles": [
+    "QB",
+    "RB",
+    "FB",
+    "WR",
+    "TE"
+  ],
+  "paired": "same player/game/target and identical supported outcomes; baseline recent versus pooled; no head-to-head on unmatched totals",
+  "uncertainty": "whole-week paired-loss mean bootstrap, 500 replicates seed1703, only with >=8 independent observed weeks; otherwise insufficient_clusters; game-cluster sensitivity only >=8 games",
+  "tolerances": {
+    "all_numeric": [
+      "abs_error<1",
+      "abs_error<=1",
+      "abs_error<5",
+      "abs_error<=5",
+      "abs_error<10",
+      "abs_error<=10",
+      "exact"
+    ]
+  },
+  "probability_rules": "no clipping; endpoint log failures infinite; no distribution claim from point/Poisson objective",
+  "selection": "none new; actual offers and frozen selection prerequisites must be satisfied first",
+  "budget_v2": {
+    "max_concurrent_agents": 4,
+    "max_fit_threads": 2,
+    "new_fit_wall_seconds_per_wave": 1200,
+    "new_fit_cpu_seconds_per_wave": 1800,
+    "bootstrap_replicates": 500,
+    "private_local_replay_peak_bytes": 33554432,
+    "max_connector_row_reads": 650
+  },
+  "private_storage": "no approved durable V2 private store currently bound; do not fit dependent research or claim local cache durable",
+  "production": "read-only; retained owner controls integration, capture and schedules",
+  "new_reconstruction_horizon": "kickoff left-limit inherited common contract; actual information availability separately qualified",
+  "alternate_horizon": "T-minus90 is a separately named possible V2 product, not used to relabel inherited forecasts"
+}

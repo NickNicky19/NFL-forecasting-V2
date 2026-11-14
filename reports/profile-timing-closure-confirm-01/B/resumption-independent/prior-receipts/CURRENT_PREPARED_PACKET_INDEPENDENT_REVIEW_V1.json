@@ -1,0 +1,52 @@
+{
+  "id": "B-CURRENT-PREPARED-PACKET-INDEPENDENT-REVIEW-v1",
+  "status": "PASS_IN_CHECKED_PREPARED_SCOPE",
+  "protocol_sha256": "39837aed5dde286ddbf91697ca19bb8a4f3239713de6084dc67a7dc12eb3cc70",
+  "prepared_sha256": "ea91921376e4e561c28f4f5dcbdb71f245cd6a9941fd3d67e39ab8eb2edc524a",
+  "current_input_sha256": "25aaf711bf5f8f5981f69f0fc453d887a406aa881f9489cb0a200658f108e463",
+  "source_derivation_receipt_sha256": "13ead3892c165b9e0d1e81cd074402364d82ea54526a59c044605caa2540f1e3",
+  "old_rows_preserved_exactly": 2901,
+  "new_qualified_historical_rows": 4,
+  "qualified_recent_games": 2,
+  "held_recent_games": 13,
+  "held_QB_rows": 34,
+  "current_query_players": 8,
+  "ACT_conditional_forecast_players": 5,
+  "basic_unavailable_players": 3,
+  "prepared_forecast_values": 10,
+  "basic_records": 6,
+  "models": [
+    {
+      "arm": "F0",
+      "model_sha256": "b401caa7790086ac6fd0e6014799cfe10c75f278996debcefa51f95b0f58afbb",
+      "training_rows": 941,
+      "latest_own_history_example_commitment": "c16e5333ec68d5f11dfd3680452154119747304b0bbf59e0ff1abec2b3d77142",
+      "all_target_teams_latest_W9_held": false,
+      "independent_prediction_values": 5,
+      "single_and_shuffled_batch_equal": true
+    },
+    {
+      "arm": "F2",
+      "model_sha256": "614feafc4f82c82bc19574d0a638d78c6ce0000bca481abad3e15eda64346902",
+      "training_rows": 945,
+      "latest_own_history_example_commitment": "c16e5333ec68d5f11dfd3680452154119747304b0bbf59e0ff1abec2b3d77142",
+      "all_target_teams_latest_W9_held": false,
+      "independent_prediction_values": 5,
+      "single_and_shuffled_batch_equal": true
+    }
+  ],
+  "max_mean_difference": 0.0,
+  "max_mass_difference": 0.0,
+  "actual_offers": 0,
+  "actual_selections": 0,
+  "new_grades": 0,
+  "new_fits_by_verifier": 0,
+  "independence": "Independent membership/clock/history checks and separate typed-tree traversal; featurebuilder exactdependencies reused from prior manual179-equation verification. No author inference/scoring helper called for modeloutputs.",
+  "state_limit": "PREPARED isnot finalcapture. Freshnativeeventgate+realissue/persistence+GitHubreadback remainseparate; noactualconsumerwebsiteuse established.",
+  "freshness_limit": "Only2recentFINALgames supply4newrows;13recentgames\u2014includingtargetteamslatestgames\u2014areheld. Current source ispartial, not fullyfresh personalizedhistory. 7d/48h historicalclocks remainreconstructed assumptions; actualsourceobservations separate.",
+  "limits": [
+    "Current-knownACT isnot starter, health, gamedayappearance or probabilityevidence.",
+    "Noindependentcurrentfreshfit/raw315-rowPBP reconstruction claimed; sourcebuilderqualifiedrawsemantics remain separatelybound.",
+    "10values from2methods/5players are futureforecasts, not10newaccuracyobservations."
+  ]
+}

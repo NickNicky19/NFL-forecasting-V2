@@ -1,0 +1,347 @@
+{
+  "version": "v2-I-older-season-defense-readiness-v1",
+  "state": "DRY_RUN_METADATA_READY_NO_OLDER_SEASON_MODEL_EXECUTION",
+  "source_bindings": [
+    {
+      "path": "nfl_v2/qualified_defense_wave.py",
+      "sha256": "d7521ffb753726f66a6731d3ed3ef9de872df55b07fc3666715e22512b57ce1b"
+    },
+    {
+      "path": "nfl_v2/qualified_defense.py",
+      "sha256": "d59a0a5addbbe4a37bafa57946b3932a250ba4fd461bcc795d86fccb003104a8"
+    },
+    {
+      "path": "nfl_v2/qualified_defense_inputs.py",
+      "sha256": "cdc1b0c570401aa6ca72c45fd59baea2822766de6e1c168a0ae003fe0b750e9f"
+    },
+    {
+      "path": "nfl_v2/scheduled_defense.py",
+      "sha256": "c2b79c2a73b19bf041616a09b1ea660ae04ac400ff87dccddd3f12eb30b043ce"
+    },
+    {
+      "path": "nfl_v2/scheduled_defense_wave.py",
+      "sha256": "6fa408b14de067357f5d9bb31fc5c72390e26833d54a156987cb3fd75d445578"
+    },
+    {
+      "path": "nfl_v2/seasonal_rolling_v2.py",
+      "sha256": "56848340fa2be4297684c7d06084078f30536d77d38f2fb1d3d8bc1ab6fb9896"
+    },
+    {
+      "path": "nfl_v2/distribution_wave_v2.py",
+      "sha256": "417b817debe54b8e8c050d92e3e3fb9283fbc924a832099fbcc9c7ba51517fb9"
+    },
+    {
+      "path": "nfl_v2/ordered_information_ablation.py",
+      "sha256": "25018ed79c9c1de76267ad560760676fa254e19c406996100232144dd1e15998"
+    },
+    {
+      "path": "nfl_v2/defense_season_preflight.py",
+      "sha256": "0cb9a6c8d46ffb4af755b2692432d0f8a4a70817eb36456ca2510ef688522e79"
+    },
+    {
+      "path": "tools/preflight_defense_seasons.py",
+      "sha256": "07ea7d05227881f2937c00901cbe6f4b8fe242951947c7464187685002a9cfff"
+    }
+  ],
+  "seasons": [
+    {
+      "season": 2022,
+      "original_season_protocol": "reports/continuation-20261030c/season-2022-v2/FROZEN_PROTOCOL.json",
+      "original_season_protocol_sha256": "0e2b1db44ed64ad2322436a6149e76f1e448fe4a2e26f1d13b17d90a5cf206ab",
+      "original_query_cells": 43821,
+      "original_query_games": 271,
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "frozen_query_sha256": "1455141015cc1cc854e4750a90fb5772d3b3c4c7942a19b2675b948e7c401345",
+      "query_source_hashes": {
+        "chart_query_sha256": "a8e9210b2ee2ade0d47e1d65ecfc464ca84ce4287b380a859e49b806800e8816",
+        "empirical_chart_prediction_sha256": "d8bc9a84b1b9ae5d59c7651325a69715feee774b131e84c09cb6c093a8fc8299",
+        "empirical_prediction_sha256": "52d0c4476ac8a3d45b6128fd092b94c73bf6f9a5c9408f2878df8e33e03a513f"
+      },
+      "nominal_fit_origins_per_window": 1728,
+      "unique_policy_fit_origins_per_window": 432,
+      "output_recipe_week_cells_per_window": 3312,
+      "actual_new_fits": 0,
+      "actual_new_forecasts": 0,
+      "actual_closed_season_cells": 0
+    },
+    {
+      "season": 2023,
+      "original_season_protocol": "reports/continuation-20261030c/season-2023-v2/FROZEN_PROTOCOL.json",
+      "original_season_protocol_sha256": "408dd855182b1b6357cbee7639560b3ad52a633a0c45d79b207eda8348bb0d46",
+      "original_query_cells": 43922,
+      "original_query_games": 272,
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "frozen_query_sha256": "7303cd1bcedd8344fa73a71b99626bce00d8a9cd21cbbb7a17f6290fe98ead1d",
+      "query_source_hashes": {
+        "chart_query_sha256": "a8e9210b2ee2ade0d47e1d65ecfc464ca84ce4287b380a859e49b806800e8816",
+        "empirical_chart_prediction_sha256": "d8bc9a84b1b9ae5d59c7651325a69715feee774b131e84c09cb6c093a8fc8299",
+        "empirical_prediction_sha256": "52d0c4476ac8a3d45b6128fd092b94c73bf6f9a5c9408f2878df8e33e03a513f"
+      },
+      "nominal_fit_origins_per_window": 1728,
+      "unique_policy_fit_origins_per_window": 1296,
+      "output_recipe_week_cells_per_window": 3312,
+      "actual_new_fits": 0,
+      "actual_new_forecasts": 0,
+      "actual_closed_season_cells": 0
+    },
+    {
+      "season": 2024,
+      "original_season_protocol": "reports/continuation-20261030c/season-2024-v2/FROZEN_PROTOCOL.json",
+      "original_season_protocol_sha256": "871727602a7e1ffa0787c0679f5b51093320766e0bd78e8cbda53ab630fa99c3",
+      "original_query_cells": 44368,
+      "original_query_games": 272,
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "frozen_query_sha256": "e987a85f4c219f9f4c7ce58dd34f7ac50fdd8bcf2335724b526b6fb04e2d2e80",
+      "query_source_hashes": {
+        "chart_query_sha256": "a8e9210b2ee2ade0d47e1d65ecfc464ca84ce4287b380a859e49b806800e8816",
+        "empirical_chart_prediction_sha256": "d8bc9a84b1b9ae5d59c7651325a69715feee774b131e84c09cb6c093a8fc8299",
+        "empirical_prediction_sha256": "52d0c4476ac8a3d45b6128fd092b94c73bf6f9a5c9408f2878df8e33e03a513f"
+      },
+      "nominal_fit_origins_per_window": 1728,
+      "unique_policy_fit_origins_per_window": 1728,
+      "output_recipe_week_cells_per_window": 3312,
+      "actual_new_fits": 0,
+      "actual_new_forecasts": 0,
+      "actual_closed_season_cells": 0
+    },
+    {
+      "season": 2025,
+      "original_season_protocol": "reports/continuation-20261030c/season-2025-v1/FROZEN_PROTOCOL.json",
+      "original_season_protocol_sha256": "d994a043f84fa1a79265489699c0b7fe0cc6d5cc6bd608a65c42e398bf392355",
+      "original_query_cells": 45579,
+      "original_query_games": 272,
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "frozen_query_sha256": "0fcfe3ceaef2998c18505c0aa9fd5edb2765f8a61a6b4eb012e4729deaa795b8",
+      "query_source_hashes": {
+        "chart_query_sha256": "a8e9210b2ee2ade0d47e1d65ecfc464ca84ce4287b380a859e49b806800e8816",
+        "empirical_chart_prediction_sha256": "d8bc9a84b1b9ae5d59c7651325a69715feee774b131e84c09cb6c093a8fc8299",
+        "empirical_prediction_sha256": "52d0c4476ac8a3d45b6128fd092b94c73bf6f9a5c9408f2878df8e33e03a513f"
+      },
+      "nominal_fit_origins_per_window": 1728,
+      "unique_policy_fit_origins_per_window": 1728,
+      "output_recipe_week_cells_per_window": 3312,
+      "actual_new_fits": 0,
+      "actual_new_forecasts": 0,
+      "actual_closed_season_cells": 0
+    }
+  ],
+  "input_byte_checks": [
+    {
+      "season": 2022,
+      "name": "stats_player_week_2022.csv",
+      "expected_sha256": "ad426c3fe5bf1cc30c3f137fdfe96d054e19d400879ee4413129da49fa7b54be",
+      "present": true,
+      "bytes": 8408729,
+      "byte_hash_verified": true,
+      "source_values_decoded": 0
+    },
+    {
+      "season": 2022,
+      "name": "games.csv",
+      "expected_sha256": "6f707dcea8758bc6c0421559d23c07d4627f39658f93913908d5ddd1b27f6aae",
+      "present": true,
+      "bytes": 2186988,
+      "byte_hash_verified": true,
+      "source_values_decoded": 0
+    },
+    {
+      "season": 2023,
+      "name": "stats_player_week_2022.csv",
+      "expected_sha256": "ad426c3fe5bf1cc30c3f137fdfe96d054e19d400879ee4413129da49fa7b54be",
+      "present": true,
+      "bytes": 8408729,
+      "byte_hash_verified": true,
+      "source_values_decoded": 0
+    },
+    {
+      "season": 2023,
+      "name": "stats_player_week_2023.csv",
+      "expected_sha256": "f19cb71a5de0dce7fd09376026237c9ee9d5a93fe13815a2ea3ec2d37204cb17",
+      "present": true,
+      "bytes": 8332874,
+      "byte_hash_verified": true,
+      "source_values_decoded": 0
+    },
+    {
+      "season": 2023,
+      "name": "games.csv",
+      "expected_sha256": "6f707dcea8758bc6c0421559d23c07d4627f39658f93913908d5ddd1b27f6aae",
+      "present": true,
+      "bytes": 2186988,
+      "byte_hash_verified": true,
+      "source_values_decoded": 0
+    },
+    {
+      "season": 2024,
+      "name": "stats_player_week_2022.csv",
+      "expected_sha256": "ad426c3fe5bf1cc30c3f137fdfe96d054e19d400879ee4413129da49fa7b54be",
+      "present": true,
+      "bytes": 8408729,
+      "byte_hash_verified": true,
+      "source_values_decoded": 0
+    },
+    {
+      "season": 2024,
+      "name": "stats_player_week_2023.csv",
+      "expected_sha256": "f19cb71a5de0dce7fd09376026237c9ee9d5a93fe13815a2ea3ec2d37204cb17",
+      "present": true,
+      "bytes": 8332874,
+      "byte_hash_verified": true,
+      "source_values_decoded": 0
+    },
+    {
+      "season": 2024,
+      "name": "stats_player_week_2024.csv",
+      "expected_sha256": "3ddc45a84f759aa348ce465ae001752c530575455717657cdfe1f8abfcdb4759",
+      "present": true,
+      "bytes": 8470040,
+      "byte_hash_verified": true,
+      "source_values_decoded": 0
+    },
+    {
+      "season": 2024,
+      "name": "games.csv",
+      "expected_sha256": "6f707dcea8758bc6c0421559d23c07d4627f39658f93913908d5ddd1b27f6aae",
+      "present": true,
+      "bytes": 2186988,
+      "byte_hash_verified": true,
+      "source_values_decoded": 0
+    },
+    {
+      "season": 2025,
+      "name": "stats_player_week_2022.csv",
+      "expected_sha256": "ad426c3fe5bf1cc30c3f137fdfe96d054e19d400879ee4413129da49fa7b54be",
+      "present": true,
+      "bytes": 8408729,
+      "byte_hash_verified": true,
+      "source_values_decoded": 0
+    },
+    {
+      "season": 2025,
+      "name": "stats_player_week_2023.csv",
+      "expected_sha256": "f19cb71a5de0dce7fd09376026237c9ee9d5a93fe13815a2ea3ec2d37204cb17",
+      "present": true,
+      "bytes": 8332874,
+      "byte_hash_verified": true,
+      "source_values_decoded": 0
+    },
+    {
+      "season": 2025,
+      "name": "stats_player_week_2024.csv",
+      "expected_sha256": "3ddc45a84f759aa348ce465ae001752c530575455717657cdfe1f8abfcdb4759",
+      "present": true,
+      "bytes": 8470040,
+      "byte_hash_verified": true,
+      "source_values_decoded": 0
+    },
+    {
+      "season": 2025,
+      "name": "stats_player_week_2025.csv",
+      "expected_sha256": "e5e0615b3d96a3eaebfaee91e55afb4a4e7fe0caf057454177bcd7d6ad4bcfc2",
+      "present": true,
+      "bytes": 8656387,
+      "byte_hash_verified": true,
+      "source_values_decoded": 0
+    },
+    {
+      "season": 2025,
+      "name": "games.csv",
+      "expected_sha256": "6f707dcea8758bc6c0421559d23c07d4627f39658f93913908d5ddd1b27f6aae",
+      "present": true,
+      "bytes": 2186988,
+      "byte_hash_verified": true,
+      "source_values_decoded": 0
+    }
+  ],
+  "windows": [
+    "observed",
+    "scheduled"
+  ],
+  "fit_origin_grid_rows": 13824,
+  "units": "Logical fit-origin requests including policy aliases; not actual model fits or NFL samples.",
+  "preparation_limit": "No private query/features/labels/model packet opened or materialized. Only public source/query metadata and optional raw file byte hashes read.",
+  "execution_limit": "Old2026runner is not parameterized; this planner and tested feature adapter do not implement/authorize older-season training/scoring. A thin execution integration with existing seasonal loop remains, then exact prefit protocol, independent review, measured bounded pilot, factual retention PASS and separate root sole-worker release.",
+  "recovery_gate": "UNCHANGED; current missing-only archive recovery not complete",
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_forecasts": 0,
+  "new_scores": 0,
+  "new_prepared_private_rows": 0,
+  "Week8_outcomes_read": 0
+}

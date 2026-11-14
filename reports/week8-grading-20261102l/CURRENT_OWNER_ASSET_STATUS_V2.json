@@ -1,0 +1,25 @@
+{
+  "state": "LATER_INDEPENDENT_ADAPTIVE_BYTE_READBACK_PASS_EARLIER_404_RETAINED",
+  "at_utc": "2026-11-02T20:18:22.754120+00:00",
+  "earlier_snapshot": {
+    "path": "reports/week8-grading-20261102l/OWNER_CURRENT_ASSET_READBACK_V1.json",
+    "sha256": "3801aba8383ccd1f0422c4214c591f6c3636b221f22ff45588a50e0f46b8728a"
+  },
+  "later_snapshot": {
+    "path": "reports/week8-grading-20261102l/independent/ADAPTIVE_ASSET_HTTP_READBACK_V1.json",
+    "sha256": "d801500a7048d9e4a549dcc762adbd6b14be670aa754fbc9060de70c8df3d038"
+  },
+  "interpretation": "Earlier root served/pinnedcontents404 is time-specific. Later independentservedHTTP200matchesexactpointerSHA/bytes; causeofchange/transientunresolved. This is bytepublicationreadback, notconsumeradmission/newmodelinference/persistence or fullbrowserparity.",
+  "capture_parent_status_asof_previous_snapshot": {
+    "run_id": 41509750811,
+    "head_sha": "37f4afddb773f29c6bf725194dd6a084fa415b1d",
+    "conclusion": "failure",
+    "failed_step": "Enforce source and publication handover safety",
+    "enqueue_step": "skipped",
+    "capture_step": "skipped",
+    "log_read": "GHredirect403; no retry or alternate-host bypass; exact cause unverified"
+  },
+  "new_V2_dispatches": 0,
+  "new_owner_capture_verified": false,
+  "new_V2_MAE_admission_observed": false
+}

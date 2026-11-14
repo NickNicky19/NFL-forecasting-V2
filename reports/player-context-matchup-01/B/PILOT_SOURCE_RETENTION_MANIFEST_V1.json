@@ -1,0 +1,632 @@
+{
+  "state": "PILOT_SOURCE_CODE_TYPED_MODELS_LOCAL_RETAINED_PENDING_PUBLIC_READBACK",
+  "at_utc": "2026-11-07T13:40:18.066073+00:00",
+  "source_files": [
+    {
+      "path": "nfl_v2/player_context_matchup.py",
+      "sha256": "3db66e8d7c75f444d87f4792add9096a9d04d0390902f67ce21248c206476f29",
+      "bytes": 17185
+    },
+    {
+      "path": "nfl_v2/player_context_typed_adapter_v2.py",
+      "sha256": "ef04cd1592faa320a3ee74748557c6d89473f5794ea946d39a01693758e06c51",
+      "bytes": 1496
+    },
+    {
+      "path": "tools/run_player_context_wave.py",
+      "sha256": "d2069632c587dd576b65d6906481d969d0a917d5348f138411b0d46c54d32a9b",
+      "bytes": 20202
+    },
+    {
+      "path": "tools/qualify_player_context_sources.py",
+      "sha256": "e746fc7d2f8fee1fcd1c5a969484a5d8dc7767f15c4fcfbe502eae566fed2cf0",
+      "bytes": 16458
+    },
+    {
+      "path": "tests/test_player_context_matchup.py",
+      "sha256": "0160831fa45d16b3c0e8516ebedd2f16e592ae8d5a3165e295a306573484048c",
+      "bytes": 4961
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/ADOPTION_AND_RECONCILIATION_V1.json",
+      "sha256": "5e4fafc04739eb1aea4e1b9beda556ff33ae3c6a18ccc2064ac95bc32768e7f6",
+      "bytes": 1373
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/TASKS.json",
+      "sha256": "bbcc3ca11f3ca9bcc12d76cc4ce96e2fe0424873425b50b525ad7689db200708",
+      "bytes": 2126
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/DATA_LICENSES_AND_ATTRIBUTION.md",
+      "sha256": "48da74d1eaaba986d4acfeff2f128f85c9e7e1d4bf8c17eb098fe6ab901b277f",
+      "bytes": 1587
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-fields-v3/FTN_DERIVED_QB_GAME_INPUTS.json.gz",
+      "sha256": "04bdd058d23411c8ebfc76fe599edb07e777803cfca7ffcef859ea9c26c2c750",
+      "bytes": 84761
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-fields-v3/SOURCE_FIELD_WEEK_COVERAGE.json",
+      "sha256": "896d6d05d7417b404440cf8b26419edbbfdb30cc729a13367756ba0c15ac664c",
+      "bytes": 666481
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-fields-v3/DERIVED_QB_GAME_INPUTS.json.gz",
+      "sha256": "f23bb72f05f398c7108700e10fa7bf63e233aca57bc67eb6820a38c9f212af90",
+      "bytes": 246610
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-fields-v3/TARGET_RECONCILIATION.json",
+      "sha256": "fea2e5a6e2ac9cb83469cc32e686973dade408b5be33a9da19c509b6ea520597",
+      "bytes": 1647
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-fields-v2/SOURCE_FIELD_WEEK_COVERAGE.json",
+      "sha256": "1544b1f43081e9c1911a98793398aeb7ee5d07edb26fdd9bd3f9fd3c11825550",
+      "bytes": 665981
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-fields-v2/DERIVED_QB_GAME_INPUTS.json.gz",
+      "sha256": "9ac93246b6c55c8ceaf0def808f2902160ca43dda55e441a4a0678ca9c1c136f",
+      "bytes": 242875
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-fields-v2/TARGET_RECONCILIATION.json",
+      "sha256": "95b6631510b0009104b38b17fd6995ec5073beb434b24904fab4b552b70dacad",
+      "bytes": 1647
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-qualification-v1/SOURCE_RECEIPTS.json",
+      "sha256": "23453900fae8a6957128ffd290b6b4fb9a2c0c7a9bc3031bd5dc404634920e12",
+      "bytes": 7449
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-qualification-v1/REGISTERED_ASSET_READS.json",
+      "sha256": "20c0e2834820bdcbdad33c0fd000ea7d9c317eb7a9f53bc7c86977b681d8b5a2",
+      "bytes": 4007
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-qualification-v1/SOURCE_EXTENSION_REGISTRATION_V2.json",
+      "sha256": "35bc5ed9155e99bf1f6b04fcf4399ccee4b75fc51856c6b259960928794c0b2f",
+      "bytes": 683
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-qualification-v1/SOURCE_QUALIFICATION_REGISTRATION.json",
+      "sha256": "2f46221d6612006f01a97ec4f887d853832e66791d1fd713e54043b50e984c8a",
+      "bytes": 1843
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-qualification-v1/SOURCE_EXTENSION_RECEIPT_V2.json",
+      "sha256": "488a449628eb43ad81788253886f13df393b75c5d4bbff0a686f672e37ce6647",
+      "bytes": 586
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-qualification-v1/EXECUTED_SOURCE_FILTER_V2.py",
+      "sha256": "aa007a894b9bd9b8beef75b2a29dbb8929a90979d6c8f0c894fb0154c4ac5971",
+      "bytes": 14194
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-qualification-v1/SOURCE_FILTER_CORRECTION_BEFORE_FITS_V2.json",
+      "sha256": "0a10582e8f38ae71a69b8c62c692d709e4159b5d7f5f6b6aecb3b9989d6899f3",
+      "bytes": 863
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-qualification-v1/EXECUTED_SOURCE_FILTER_V1.py",
+      "sha256": "ae8fce2922e4a9ea0eb4bb2745726c28306d8a16676be8faa638acd074a06e63",
+      "bytes": 14236
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/independent/QB_CODE_AND_RETAINED_OFFER_ADAPTER_REVIEW_V1.md",
+      "sha256": "131318e46bba6cb55b04414d1e9acaf4ac26746e5a092c5b56c3083a9a950272",
+      "bytes": 7951
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/independent/SOURCE_AND_RETENTION_SCOPE_REVIEW_V1.json",
+      "sha256": "8e01626bcb8ab3905359d2dfa4c223f7f20d545eb1c68ba4be0cd6718e741168",
+      "bytes": 7074
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/independent/inventory_retained_qb_offers_v1.py",
+      "sha256": "d19732461e5e32ab6c605b87f7f718644e16a05352a1da22f2307d6c1a4764f1",
+      "bytes": 4426
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/independent/QB_CODE_AND_OFFER_ADAPTER_REVIEW_V1.json",
+      "sha256": "38ec397d5cfa690eb06fe61d4ae658375db52349889266a51f1ec49f9b6d9126",
+      "bytes": 2432
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/independent/SOURCE_AND_RETENTION_SCOPE_REVIEW_V1.md",
+      "sha256": "badaac4da978af523aeabf06e3efc4d40efaf4ee00e56e34810e83fe5e68c121",
+      "bytes": 6547
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/independent/RETAINED_QB_OFFER_INVENTORY_V1.json",
+      "sha256": "170babbf4c1daf115b05fc3abf58890dd3001850b731fdb1dcc601bf17007e23",
+      "bytes": 4010
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-fields-v1/SOURCE_FIELD_WEEK_COVERAGE.json",
+      "sha256": "c4f2e13e4e60c9da5dbe57b6f58112af1cee86648d9441126e2f0d80582c8d70",
+      "bytes": 665981
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-fields-v1/DERIVED_QB_GAME_INPUTS.json.gz",
+      "sha256": "eae922aa60b2cca0552e61554352836f5bbc854ffae4c27d3ec73506374e6d60",
+      "bytes": 240128
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-fields-v1/TARGET_RECONCILIATION.json",
+      "sha256": "bbbde3f7d5efb3f5e98c08ad79a418935bea55817a3db3d1714147b4ad9aa1c1",
+      "bytes": 1916
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/FROZEN_SCOPE_AMENDMENT_V2.json",
+      "sha256": "073d215201a50eb10725e1fb38c5efb161d3ca2bcb8964f598b25c9e36c0387b",
+      "bytes": 1528
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/TYPED_CONSUMER_SCHEMA_BINDING_V2.json",
+      "sha256": "66b4f2651b5a407dc0d2f46ead3e2317c16933f294f30fdae515ce93de3823ec",
+      "bytes": 850
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/EXECUTOR_RESOURCE_QUALIFICATION_V2.json",
+      "sha256": "a0824fc4894de5aae6b65d6d64a134f8135944aa3c53478ab4ececf8ba9ba15f",
+      "bytes": 748
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/FEATURE_ORDER_V1.json",
+      "sha256": "5cef3c17ec403444e3faa9ec42a2e28e223e8cb3892873a5076d59b3471a8adf",
+      "bytes": 16451
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/FROZEN_PROTOCOL.json",
+      "sha256": "afefa53e0d2f794f99f29c410e6e0b0260876126526d12404a2d8bcd8993f9fb",
+      "bytes": 5256
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/PILOT_CLOCK_SCOPE_ANNOTATIONS_V2.json",
+      "sha256": "09f1b0c8d561f853a7dc8600dc36f4f2eb6ccba1bb054c001c0ca11343575f50",
+      "bytes": 102832
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/SELECTED_EARLIER_CONFIG.json",
+      "sha256": "03d844a764db4566ebc95c8b1e39e5446d13a93d881bc7029a6de8340fb2afed",
+      "bytes": 2694
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/FIT_ATTEMPTS.jsonl",
+      "sha256": "6aa39a2c26c2a1955c4669d57b6c0c5a15e351e9a6b1e85f1f13299cd1c789c5",
+      "bytes": 8755
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/PILOT_RECEIPT_1.json",
+      "sha256": "4fbb70746e6fc7b26d9e6926a0bc8f061cd6d3055eeef84cd2d6ac39ae848f93",
+      "bytes": 622
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W01-N4-S80.json.gz",
+      "sha256": "f28bc4083572db8e45dbcd29961b462bbd1a83613950ae312338be553ce1f9b2",
+      "bytes": 2591
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W05-N4-S80.json.gz",
+      "sha256": "7fddfa856341717f31b662ddbf16e115ec4d5cf43ba050683c624d55a05154e4",
+      "bytes": 2678
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W07-N16-S80.json.gz",
+      "sha256": "a6ea4af903d0d570b0b5f58ea076d3f67489aba586f495915da075ce798a122a",
+      "bytes": 2696
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-7ddbbc98c3e525ae.json.gz",
+      "sha256": "04124f8478233ad687c93a07179b467bc21ac55a73d27c0130ba49bf2124b12d",
+      "bytes": 893
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W06-N16-S20.json.gz",
+      "sha256": "27dcbb943be1728c94c82e8e994ac33eefa15e11067671cac99af70e958c5ece",
+      "bytes": 2694
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-E2.json.gz",
+      "sha256": "d068dcc68674c69f6e159585d89476b51ab93d994b2016cb52095383a82ba3c9",
+      "bytes": 31811
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W08-N16-S20.json.gz",
+      "sha256": "338c714f0fa7aa82771b43a0f40395ec3ffc72140733b9a3bb4205e2cc4e2764",
+      "bytes": 2724
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-E0.json.gz",
+      "sha256": "b086cc15a75266eacf38ccaa634eab6043ad6aacefe1e841bdf9dc1f378aea59",
+      "bytes": 26442
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W02-N8-S20.json.gz",
+      "sha256": "499e33bfd3a5bc0061335d7144b1565c5ecb814263ea95dfcd44b8183ed3fbda",
+      "bytes": 2570
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W03-N8-S80.json.gz",
+      "sha256": "b5fc3200a5240a96ef511665dccefccb582aa3ebde8b95d06ea54b4b6c87ae88",
+      "bytes": 2650
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W01-N8-S80.json.gz",
+      "sha256": "596fb0276c4272ae643972ea2947373e9d389f902684e04383ad71a89ce50b94",
+      "bytes": 2575
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-a95981a2838c053f.json.gz",
+      "sha256": "974bf47ad951038bcceec48769b4c600c49411d6d14ef4d1969cdbede060c003",
+      "bytes": 911
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W07-N4-S20.json.gz",
+      "sha256": "995238aa00cf94ff7cf6f51367c877b4f0777aebf51faef7433cb3fe208ed576",
+      "bytes": 2693
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W04-N16-S20.json.gz",
+      "sha256": "5403e68ef835151c3290e604d50d8415efc91db6a348e6647cbf3fd8e95467a0",
+      "bytes": 2661
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P2.json.gz",
+      "sha256": "0615fc153e8f0b6ad86072c755d81cb6973e89471d8289f9c0d4351f4e627673",
+      "bytes": 2528
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-36b8cb850f316353.json.gz",
+      "sha256": "6b1d1d844b0a6b061c45892214a385b74c677e56ceb6ea621d25a3f9d47b30c0",
+      "bytes": 879
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-100912799b2786ff.json.gz",
+      "sha256": "93540d74818664fb0542042d71891379ab674e9612adba91a3cce1a2e7327144",
+      "bytes": 906
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W08-N8-S80.json.gz",
+      "sha256": "0ebf882b3b4c4113ee7bdeb042cc0f49f480790a8c8816aa7cd21a8febbd6843",
+      "bytes": 2729
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W04-N16-S80.json.gz",
+      "sha256": "d715b14dbf57db1eba04d950ab78d1932e277032dc97d7be67670ed51e565067",
+      "bytes": 2666
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-843a433969f73b22.json.gz",
+      "sha256": "7add7bcde81118a3b64521fd5f4ea9506462a68892eacb899716041b6965a053",
+      "bytes": 903
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-778dd47bd720bb7c.json.gz",
+      "sha256": "7397aa59a6248417d643c32447f74c75fd82ff9f3a195e757613644c3da9527f",
+      "bytes": 838
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W07-N8-S20.json.gz",
+      "sha256": "acf4fb4b8d087be9c1119620fe8e1fb84a614033bc2bad219bc08fbc40e337e1",
+      "bytes": 2690
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-26331f2fbda2d6f5.json.gz",
+      "sha256": "9c51d6dfb33b38b524eb2070aa31bef4c6c42085beedafd5584f2b5319843b18",
+      "bytes": 800
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W05-N16-S80.json.gz",
+      "sha256": "d6a0ca46ac0a30c42a7d52075c5228d000e44ba58cf008cea3fbd7f26248959c",
+      "bytes": 2682
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W04-N4-S80.json.gz",
+      "sha256": "c5ce155d8dfc513e91a3b4183001040852cc4295a7f8c2c686f180f3809eafea",
+      "bytes": 2667
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-a2643970f4f18470.json.gz",
+      "sha256": "35742bba80e8bbaf5700c8268ecf985032bfabdd75f6c5aee46a20ee69f858a3",
+      "bytes": 876
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-fb3c345561602047.json.gz",
+      "sha256": "7b2ae3eca03aa2b047c9c8285c3c8a81298334d5823e1c0f4c7deb03517cb00f",
+      "bytes": 897
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W06-N8-S20.json.gz",
+      "sha256": "6a10ac4b5ee84a0822400c3ea12843c074c6a452a947cee659f1f00cf7e3e5c7",
+      "bytes": 2681
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-2edd1f0020674002.json.gz",
+      "sha256": "6c753a9ea19e4e111e2d32776d7618f6dd0c268465b485f72f3cd55ef9df16f8",
+      "bytes": 873
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W01-N16-S20.json.gz",
+      "sha256": "56be052fc429fb5fcbd081750317cff32050a7571a4472c7922f543765dbaf62",
+      "bytes": 2589
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W03-N16-S20.json.gz",
+      "sha256": "046ae3a2ec996c4f5b37f01d20b624dbf5a52be9bdc50527ffdf21227ba4ce9d",
+      "bytes": 2654
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W07-N16-S20.json.gz",
+      "sha256": "4b42842e2f48baedac4af6fbcfa59e64973bff508020d340062f5bbd5b9e4254",
+      "bytes": 2703
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-be927509f422dc99.json.gz",
+      "sha256": "45797f0868e7cbd69f2f95829b8a49c2e8ad43255ff1cfe85d071a77bc40f43f",
+      "bytes": 884
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W03-N4-S80.json.gz",
+      "sha256": "f4ffb5b735d3bd52a314b8298be89802b4394b69aae3dc0e8f0e305001211ab7",
+      "bytes": 2648
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-179757a1c5d3f7ac.json.gz",
+      "sha256": "67e2b925b10abc626043776a5149624eb1597c7aa5cd5e757dcd74b4215897fd",
+      "bytes": 821
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W03-N16-S80.json.gz",
+      "sha256": "fec7c1be6d4dbe423be3d9d27927bdde56d1be89e0f27449d9fddbdcccb4587f",
+      "bytes": 2665
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W02-N8-S80.json.gz",
+      "sha256": "7f6a7cd2d98b64fa27c406f8d151391d7130823b5bb491daafd50f695544a233",
+      "bytes": 2575
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-e48aae707682f190.json.gz",
+      "sha256": "7f1213db21a3a4b1eddf99b42a699fbdeb27a7ea78220f188a19fa843280cbdd",
+      "bytes": 813
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W07-N4-S80.json.gz",
+      "sha256": "a864f1cbb46c20886afde6d0aba42998d3f852dc8249a929e2d3ce6aeee3f43d",
+      "bytes": 2698
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-3a284a7318590c78.json.gz",
+      "sha256": "a7f155738fadd4d4d24a5fd6d5faf8f954537a05d230c0b4b3ac9ee80f137a72",
+      "bytes": 909
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W01-N4-S20.json.gz",
+      "sha256": "db7d61d06f6ba61eab26a4f803531986e4900c8a1ef41f35d82596991d1d132e",
+      "bytes": 2572
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W05-N4-S20.json.gz",
+      "sha256": "70f6a21a56659e069d5f67586651045249b4714018c4bfd25dd2f242870d7f5c",
+      "bytes": 2674
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P1.json.gz",
+      "sha256": "012de159e69043816da6516b95cbc3b9c7c20db5707f0f669cb39c27a56aa400",
+      "bytes": 1467
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-eb6208370218ae63.json.gz",
+      "sha256": "efcdfd0e6459fef5be9bf920e9035c3a5bbdf71d483f34e1b053d2092635c4ae",
+      "bytes": 871
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-350c5a7a83f73078.json.gz",
+      "sha256": "4d6a855ce217e0a76dd7b1a3b0c9ed59922ca09093c06fd273513c1b33a8cd5e",
+      "bytes": 827
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W01-N8-S20.json.gz",
+      "sha256": "6c7c0427e76a21e5ff980b9cd84265460fd2e105b9c53009a51a1ea3988c7294",
+      "bytes": 2570
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-879b3e7ca7002220.json.gz",
+      "sha256": "7b40c6f9ceadf49c808a3c424d0d345ef076d36f2be6a018fa0029d3609c4e22",
+      "bytes": 889
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W04-N4-S20.json.gz",
+      "sha256": "7290e6fda957b6852c4a6a5a7ba295afe3bc7747f7cd9176939348a20b48b895",
+      "bytes": 2659
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-e6f3ce3924fcbddf.json.gz",
+      "sha256": "bf324472de5cafef5f8eb502b441f22bad976877f32c0e9482c269ed16ba1eda",
+      "bytes": 831
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W06-N4-S20.json.gz",
+      "sha256": "f1ea9efc757524561d237e27ead572d1dd7260a68654f1cde73c920d2a74bf51",
+      "bytes": 2693
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W08-N4-S80.json.gz",
+      "sha256": "c4b59e5af864c201b61cb1f8a119ed2c823a699104baf5d5900104edb83a29e6",
+      "bytes": 2720
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W06-N8-S80.json.gz",
+      "sha256": "5b50b025cfd70aea1aeb746304c3fdeb36c0041db246d250864a48494832123a",
+      "bytes": 2698
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W02-N4-S80.json.gz",
+      "sha256": "093734c32529a43a5082695f57e5676375af51a94e0879d6f38d0a503d84c1df",
+      "bytes": 2591
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-aa2384e2dec4836c.json.gz",
+      "sha256": "b19ec51166df675ccbbb4c8cadb2c6a566dae636e1ffab95570a57d47cb02355",
+      "bytes": 875
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-5b1017af0dd07333.json.gz",
+      "sha256": "99b019e31d0ce604d12a0ae0f9dff13b8bdc6378bb5e9f1cba790630dff93a44",
+      "bytes": 888
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W08-N16-S80.json.gz",
+      "sha256": "701201f2f4f5e66571ad8ee81607e3bea8a07db3ee2571b3cbcc5d4178947994",
+      "bytes": 2736
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W04-N8-S20.json.gz",
+      "sha256": "290f1a300bfec981c331aa2d9b11abd7dbe3177d1bad231a2abf48fb4bfa605b",
+      "bytes": 2660
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W04-N8-S80.json.gz",
+      "sha256": "b8f72de8acc863713aebe1d77f3d7aa1ac6b6e4f44d699ab74eef75df5606617",
+      "bytes": 2663
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W02-N4-S20.json.gz",
+      "sha256": "000271ded7703e08b4767415f8035a65cfb8e57e53e0b2edb183ce693ada1613",
+      "bytes": 2572
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-36583026eb765295.json.gz",
+      "sha256": "cb94f3c4f84e3c468265fff09adc731da2b53d04b0120eca535bd09f652db661",
+      "bytes": 871
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W08-N8-S20.json.gz",
+      "sha256": "f4076eb61eb726c7d112fc9a6348d39b915a164ab126cc8eac3716d3621870d9",
+      "bytes": 2738
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-c11cd115a1ea0abf.json.gz",
+      "sha256": "7eae6a40b7055f4a935b7689d638a17b3554611a8bc01a4f7d0296f79fe9e051",
+      "bytes": 898
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W07-N8-S80.json.gz",
+      "sha256": "0b66ec51efbd3b418c6ae3fb18659a1ba6bb343df04d5621904a56f0a3ab1a0c",
+      "bytes": 2711
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W03-N4-S20.json.gz",
+      "sha256": "886fe0a750478b63d840263b8c5d44bf4d4c2a025bec17dcb59d00b252bc5598",
+      "bytes": 2631
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W06-N16-S80.json.gz",
+      "sha256": "a205528d192e4c63a3394cecf870ba672c4039662c2022c4ac8e917aa478a75d",
+      "bytes": 2704
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W08-N4-S20.json.gz",
+      "sha256": "669275a254d999739cc482c87a11bb08767e88588d63382cf88c2048444c557f",
+      "bytes": 2734
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-9651f85eff439749.json.gz",
+      "sha256": "be9843bd9db8e25de1818d81fddb1f681f766ab4759eb815e677b65d027d634f",
+      "bytes": 900
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-E3.json.gz",
+      "sha256": "324e4291e291f7cea29ddcace10c475aeed69cb80a417d1ff8ff5a20f7c90fbc",
+      "bytes": 32729
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W05-N16-S20.json.gz",
+      "sha256": "5347389cbbf52feb89986e5ab9562286d8b92806fe8019e642da7ef28236e6a7",
+      "bytes": 2667
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-0cfd45819d0dcdb6.json.gz",
+      "sha256": "a508d5980a50dc60c7190a590512566d32042f8cdde5e10cac88269754e4c358",
+      "bytes": 907
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W02-N16-S20.json.gz",
+      "sha256": "0b25a602d0dd3393d958f364cd291015f9763118d459b3560c29aa8374853e44",
+      "bytes": 2588
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W06-N4-S80.json.gz",
+      "sha256": "4c61d1e6271aa3217cfd20d19c588adf00bb298973ae117372a31ed40c94cd58",
+      "bytes": 2704
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W05-N8-S80.json.gz",
+      "sha256": "a08d61a7aef515105fe1dc223b1aab8935fbc16f4b03b8028a4171ad5cd8c454",
+      "bytes": 2677
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-ae904484db3f5d29.json.gz",
+      "sha256": "ba6f7fcc655d326e00037383afb9ccdd3e2c96a79f8f0926f83d66cf3a4dd042",
+      "bytes": 900
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-E1.json.gz",
+      "sha256": "26b610c2a18849953bf19604d334eaca7a33e496774c01dc54e877a16d950554",
+      "bytes": 30557
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W02-N16-S80.json.gz",
+      "sha256": "170ef4bfcfc43d071c5f6d74143716dbed16dd93ca8d4fc7e1e20a0d59b62117",
+      "bytes": 2580
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W03-N8-S20.json.gz",
+      "sha256": "e8bb189a2dbc89949ff7779a95d06ea32cf1932dd7ca4d5668490c7fb917e4d3",
+      "bytes": 2648
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W01-N16-S80.json.gz",
+      "sha256": "d2bd0fe75aa7cbed58e9a20c78ced4a472c988b6e24d3e5483fdccda12a5a4cd",
+      "bytes": 2582
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-3ab3ab07463fac6b.json.gz",
+      "sha256": "fd2dec22a7ee2d60470a96a8aa6f368214ae9b1f6596afb32399adb96faad3ea",
+      "bytes": 872
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/TUNE-2024-W05-N8-S20.json.gz",
+      "sha256": "5556ad577ae66df63a84fa1bf2d44d7303ccb945cd63245ca91052f03008cc53",
+      "bytes": 2666
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-P3-f36070db9474f08f.json.gz",
+      "sha256": "56f70ad62656d9883579488cfc110de2eb2196b3a2078d5075a4692a49a15a60",
+      "bytes": 903
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W01.json.gz",
+      "sha256": "d470267b008e7b356e245e5d5f9fa83d7890a7782abc36d8a7d20ab0e62ea77f",
+      "bytes": 154821
+    }
+  ],
+  "rows": 2901,
+  "modeled_pilot_QB_games": 34,
+  "model_parameters": 81,
+  "prediction_records": 272,
+  "new_NFL_test_weeks_scored": 0,
+  "rights": "Source-specific CC-BY4/PBP derivatives and CC-BY-SA4/FTN derivatives are separated; code and data/model terms in DATA_LICENSES.",
+  "environment": {
+    "python": "3.12.14"
+  },
+  "whole_legacy_archive_recovery": false,
+  "raw_or_private_offers_published": false
+}

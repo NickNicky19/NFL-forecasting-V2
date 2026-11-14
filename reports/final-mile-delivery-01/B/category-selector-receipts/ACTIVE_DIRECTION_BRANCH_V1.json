@@ -1,0 +1,54 @@
+{
+  "id": "B-FINALMILE-ACTIVE-DIRECTION-BRANCH-v1",
+  "actual_UTC": "2026-11-12T06:30:21.818Z",
+  "source_path": "output/app.js",
+  "source_ref": "869d9a8839ae83dfccdb3bbb6610a0e0df867667",
+  "source_sha256": "8aa97d75b8a444e4711e972535211208f8ee72414ad48b8840a17075c8a5b52f",
+  "extracted_function_sha256": "dee27d62fb4c957d5f67bf4a3ff12c8ab0a90b6db24653c3d4483de9a7341d45",
+  "checks": [
+    {
+      "name": "BASELINE_SERIALIZED_OVER_PRESERVED",
+      "raw_serialized_lean": "over",
+      "selected": false,
+      "mae_display": false,
+      "rendered_class_lean": "over",
+      "selected_gap_calls": 0,
+      "expected": "over",
+      "PASS": true
+    },
+    {
+      "name": "BASELINE_NULL_PRESERVED",
+      "raw_serialized_lean": null,
+      "selected": false,
+      "mae_display": false,
+      "rendered_class_lean": null,
+      "selected_gap_calls": 0,
+      "expected": null,
+      "PASS": true
+    },
+    {
+      "name": "SELECTED_OVERRIDE_USES_SELECTED_GAP",
+      "raw_serialized_lean": "over",
+      "selected": true,
+      "mae_display": false,
+      "rendered_class_lean": "under",
+      "selected_gap_calls": 1,
+      "expected": "under",
+      "PASS": true
+    },
+    {
+      "name": "DISPLAY_ONLY_MAE_PRESERVES_BASELINE_LEAN",
+      "raw_serialized_lean": "over",
+      "selected": false,
+      "mae_display": true,
+      "rendered_class_lean": "over",
+      "selected_gap_calls": 0,
+      "expected": "over",
+      "PASS": true
+    }
+  ],
+  "conclusion": "Baseline propChip uses serialized prop.lean; selectedPropGap controls selected override. A separate MAE display does not change baseline ranking lean.",
+  "scope": "Real function with declared helper stubs and synthetic inputs; no full DOM/browser, inference, probability, grade or live activation claim.",
+  "new_NFL_observations": 0,
+  "new_fits": 0
+}

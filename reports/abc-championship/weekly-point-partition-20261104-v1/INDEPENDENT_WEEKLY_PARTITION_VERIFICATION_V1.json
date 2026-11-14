@@ -1,0 +1,272 @@
+{
+  "state": "PASS_SELECTION_NUMERICAL_MASKS_WITH_EXPLICIT_FALLBACK_SCOPE_QUALIFICATION",
+  "source_sha256": "579586334b1cc9f21db6fbf38052286b6f72c6b248ab551873d1e6b44ca1cef9",
+  "parent_score_sha256": "474039013174339b056a65ca046d1dfa1290887d820eda724a07fb9bb16c70c7",
+  "new_score_sha256": "ce9838b7ef26eac862f2ff1a00502f48f9c040f178e67bf32c144927fded387b",
+  "full_system_score_sha256": "c4c9ce5f3778df3ab353ac712779f6caa6b11aab706ff9d53bc161b2ecd05158",
+  "parent_triads": 63,
+  "weekly_triads": 189,
+  "weekly_side_views_verified": 567,
+  "weekly_native_views_verified": 189,
+  "full_system_views_verified": 24,
+  "constant_side_views_verified": 72,
+  "member_masks_verified": 189,
+  "source_recipe_rows": 3024,
+  "admitted_decision_before_kickoff_checks": 2760,
+  "representative_correct_wrong_examples_verified": [
+    {
+      "target": "pass_yd",
+      "selected_side": "over",
+      "state": "WIN",
+      "week": 5,
+      "source_record_hash": "eb4b2e436689e8ec3ce4f418af328fdcfeb73fe7557c6bd0a8257b3b9aaf2aa2"
+    },
+    {
+      "target": "pass_yd",
+      "selected_side": "over",
+      "state": "LOSS",
+      "week": 5,
+      "source_record_hash": "9b3901a0e8cfcf517b7eb0bcb836d2021bf651ff44b8e454606db9fee21920d7"
+    },
+    {
+      "target": "pass_yd",
+      "selected_side": "under",
+      "state": "WIN",
+      "week": 5,
+      "source_record_hash": "412501e19021818a6e10a58fe2ea1916341b2a1ddcf4418cd436d546e3ad050d"
+    },
+    {
+      "target": "pass_yd",
+      "selected_side": "under",
+      "state": "LOSS",
+      "week": 5,
+      "source_record_hash": "8d810763726e5e0fecd5f61e2fbb78d7604c4d4e02575aabd7ce720e17663074"
+    },
+    {
+      "target": "pass_cmp",
+      "selected_side": "over",
+      "state": "WIN",
+      "week": 5,
+      "source_record_hash": "c7b3711fdaf9ef65e4a489347774fcd0bfe9ce8e68fe5ee54099cb15aa6d21be"
+    },
+    {
+      "target": "pass_cmp",
+      "selected_side": "over",
+      "state": "LOSS",
+      "week": 5,
+      "source_record_hash": "4cde561adfd637876c64e9838c562007c687e3cf8ebdd61cf764df7810acf847"
+    },
+    {
+      "target": "pass_cmp",
+      "selected_side": "under",
+      "state": "WIN",
+      "week": 5,
+      "source_record_hash": "85dc031bf34913288e8690aff3a4a0be91462d34ace5a3e926341183be363f62"
+    },
+    {
+      "target": "pass_cmp",
+      "selected_side": "under",
+      "state": "LOSS",
+      "week": 5,
+      "source_record_hash": "d82d9c9447c2f36c09636d553872c1038c7634e872a11cb407b4d866f0554605"
+    }
+  ],
+  "focals": [
+    {
+      "target": "pass_yd",
+      "procedure": [
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "cumulative": {
+        "wins": 28,
+        "losses": 52,
+        "decided": 80
+      },
+      "weekly": [
+        {
+          "week": 5,
+          "eligible": 28,
+          "unavailable": 0,
+          "sides": {
+            "over": {
+              "wins": 7,
+              "losses": 8,
+              "decided": 15,
+              "rate": 0.4666666666666667
+            },
+            "under": {
+              "wins": 5,
+              "losses": 8,
+              "decided": 13,
+              "rate": 0.38461538461538464
+            },
+            "Combined": {
+              "wins": 12,
+              "losses": 16,
+              "decided": 28,
+              "rate": 0.42857142857142855
+            }
+          }
+        },
+        {
+          "week": 6,
+          "eligible": 28,
+          "unavailable": 1,
+          "sides": {
+            "over": {
+              "wins": 5,
+              "losses": 5,
+              "decided": 10,
+              "rate": 0.5
+            },
+            "under": {
+              "wins": 5,
+              "losses": 12,
+              "decided": 17,
+              "rate": 0.29411764705882354
+            },
+            "Combined": {
+              "wins": 10,
+              "losses": 17,
+              "decided": 27,
+              "rate": 0.37037037037037035
+            }
+          }
+        },
+        {
+          "week": 7,
+          "eligible": 28,
+          "unavailable": 3,
+          "sides": {
+            "over": {
+              "wins": 2,
+              "losses": 5,
+              "decided": 7,
+              "rate": 0.2857142857142857
+            },
+            "under": {
+              "wins": 4,
+              "losses": 14,
+              "decided": 18,
+              "rate": 0.2222222222222222
+            },
+            "Combined": {
+              "wins": 6,
+              "losses": 19,
+              "decided": 25,
+              "rate": 0.24
+            }
+          }
+        }
+      ],
+      "source_own_mask_canonical_alias": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point"
+    },
+    {
+      "target": "pass_cmp",
+      "procedure": [
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "cumulative": {
+        "wins": 33,
+        "losses": 43,
+        "decided": 76
+      },
+      "weekly": [
+        {
+          "week": 5,
+          "eligible": 28,
+          "unavailable": 0,
+          "sides": {
+            "over": {
+              "wins": 4,
+              "losses": 5,
+              "decided": 9,
+              "rate": 0.4444444444444444
+            },
+            "under": {
+              "wins": 9,
+              "losses": 10,
+              "decided": 19,
+              "rate": 0.47368421052631576
+            },
+            "Combined": {
+              "wins": 13,
+              "losses": 15,
+              "decided": 28,
+              "rate": 0.4642857142857143
+            }
+          }
+        },
+        {
+          "week": 6,
+          "eligible": 28,
+          "unavailable": 2,
+          "sides": {
+            "over": {
+              "wins": 4,
+              "losses": 4,
+              "decided": 8,
+              "rate": 0.5
+            },
+            "under": {
+              "wins": 6,
+              "losses": 12,
+              "decided": 18,
+              "rate": 0.3333333333333333
+            },
+            "Combined": {
+              "wins": 10,
+              "losses": 16,
+              "decided": 26,
+              "rate": 0.38461538461538464
+            }
+          }
+        },
+        {
+          "week": 7,
+          "eligible": 28,
+          "unavailable": 6,
+          "sides": {
+            "over": {
+              "wins": 3,
+              "losses": 3,
+              "decided": 6,
+              "rate": 0.5
+            },
+            "under": {
+              "wins": 7,
+              "losses": 9,
+              "decided": 16,
+              "rate": 0.4375
+            },
+            "Combined": {
+              "wins": 10,
+              "losses": 12,
+              "decided": 22,
+              "rate": 0.45454545454545453
+            }
+          }
+        }
+      ],
+      "source_own_mask_canonical_alias": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point"
+    }
+  ],
+  "native_fallback_scope": {
+    "qualification_path": "NATIVE_FALLBACK_SCOPE_QUALIFICATION.json",
+    "qualification_present": true,
+    "issued_focal_forecasts": "Every available focal output has known fallback none; no completed fallback forecast was issued.",
+    "unavailable_focal_queries": "Missing output rows retain unknown fallback state; PY0/1/3 andPC0/2/6, not learned/fallback outcomes.",
+    "native_fallback_unknown_zero": "Issued-only scope in the full-system supplement; do not interpret as all28query fallback states known."
+  },
+  "limitations": [
+    "No new fits/inference/forecasts/outcomes or private derivatives; same exposed W5-W7 records partitioned.",
+    "Admitted row clocks and exact P1 boundaries checked; full model training/tuning chronology and historical source publication not reauthenticated.",
+    "Provider-labelled retained thresholds remain a different source/horizon panel from C Pinnacle kickoff diagnostics.",
+    "Old empty focal presentation attempts preserved; original emitter alias deduplication, not tuple/list comparison, explains their empty OWN-label lookup.",
+    "Numerical and selected-side results remain separate; severe weekly losses do not validate inversion or a causal remedy."
+  ]
+}

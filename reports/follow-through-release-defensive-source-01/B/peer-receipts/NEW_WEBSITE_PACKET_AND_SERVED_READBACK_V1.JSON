@@ -1,0 +1,611 @@
+{
+  "id": "B-NEW-WEBSITE-PACKET-SERVED-READBACK-v1",
+  "observed_UTC": "2026-11-12T04:40:19.169063+00:00",
+  "source_commit": "869d9a8839ae83dfccdb3bbb6610a0e0df867667",
+  "previous_dated_witness_commit": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+  "state": "PASS_SIX_GIT_OUTPUT_TO_SERVED_BYTE_PAIRS_AND_NATIVE_CAPTURE_HASH",
+  "records": [
+    {
+      "served_path": "data/meta.json",
+      "Git_path": "output/data/meta.json",
+      "expected_commit": "869d9a8839ae83dfccdb3bbb6610a0e0df867667",
+      "bytes": 1249,
+      "SHA256": "f2978954d61508d17f9934502acd73b37ce1a0dcd1d6cae1528421fdeec1af9f",
+      "exact_parity": true,
+      "Git_response": {
+        "HTTP_status": 200,
+        "HTTP_Date": "Thu, 12 Nov 2026 04:40:18 GMT",
+        "HTTP_Age": null,
+        "observed_UTC": "2026-11-12T04:40:18.528339+00:00"
+      },
+      "served_response": {
+        "HTTP_status": 200,
+        "HTTP_Date": "Thu, 12 Nov 2026 04:40:18 GMT",
+        "HTTP_Age": "0",
+        "observed_UTC": "2026-11-12T04:40:18.628485+00:00"
+      }
+    },
+    {
+      "served_path": "data/health.json",
+      "Git_path": "output/data/health.json",
+      "expected_commit": "869d9a8839ae83dfccdb3bbb6610a0e0df867667",
+      "bytes": 1319,
+      "SHA256": "458e5dbcb4b9d7d834073e9335e4aed5da54c67a46ee8f55c3c3f4273e878b62",
+      "exact_parity": true,
+      "Git_response": {
+        "HTTP_status": 200,
+        "HTTP_Date": "Thu, 12 Nov 2026 04:40:18 GMT",
+        "HTTP_Age": null,
+        "observed_UTC": "2026-11-12T04:40:18.530875+00:00"
+      },
+      "served_response": {
+        "HTTP_status": 200,
+        "HTTP_Date": "Thu, 12 Nov 2026 04:40:18 GMT",
+        "HTTP_Age": "0",
+        "observed_UTC": "2026-11-12T04:40:18.608374+00:00"
+      }
+    },
+    {
+      "served_path": "data/weekly-adaptive-overlay.json",
+      "Git_path": "output/data/weekly-adaptive-overlay.json",
+      "expected_commit": "869d9a8839ae83dfccdb3bbb6610a0e0df867667",
+      "bytes": 333,
+      "SHA256": "da0d7b32d063ae5dc9441ac1c48bc150c6db3deac3e0066d9dd84d162976f24e",
+      "exact_parity": true,
+      "Git_response": {
+        "HTTP_status": 200,
+        "HTTP_Date": "Thu, 12 Nov 2026 04:40:18 GMT",
+        "HTTP_Age": null,
+        "observed_UTC": "2026-11-12T04:40:18.458291+00:00"
+      },
+      "served_response": {
+        "HTTP_status": 200,
+        "HTTP_Date": "Thu, 12 Nov 2026 04:40:18 GMT",
+        "HTTP_Age": "0",
+        "observed_UTC": "2026-11-12T04:40:18.610826+00:00"
+      }
+    },
+    {
+      "served_path": "data/weekly-selected-rankings.json",
+      "Git_path": "output/data/weekly-selected-rankings.json",
+      "expected_commit": "869d9a8839ae83dfccdb3bbb6610a0e0df867667",
+      "bytes": 474,
+      "SHA256": "abcc95f2843a22322b8e33d4d6ae27898ad7146f4e8d877e31859de01c93b2b3",
+      "exact_parity": true,
+      "Git_response": {
+        "HTTP_status": 200,
+        "HTTP_Date": "Thu, 12 Nov 2026 04:40:18 GMT",
+        "HTTP_Age": null,
+        "observed_UTC": "2026-11-12T04:40:18.514114+00:00"
+      },
+      "served_response": {
+        "HTTP_status": 200,
+        "HTTP_Date": "Thu, 12 Nov 2026 04:40:18 GMT",
+        "HTTP_Age": "0",
+        "observed_UTC": "2026-11-12T04:40:18.624614+00:00"
+      }
+    },
+    {
+      "served_path": "data/weekly-adaptive/115e63f6e259af0e9982518bf30b9e40a1527f43522a9f3555986ca96ed9c13b.json",
+      "Git_path": "output/data/weekly-adaptive/115e63f6e259af0e9982518bf30b9e40a1527f43522a9f3555986ca96ed9c13b.json",
+      "expected_commit": "869d9a8839ae83dfccdb3bbb6610a0e0df867667",
+      "bytes": 763,
+      "SHA256": "115e63f6e259af0e9982518bf30b9e40a1527f43522a9f3555986ca96ed9c13b",
+      "exact_parity": true,
+      "Git_response": {
+        "HTTP_status": 200,
+        "HTTP_Date": "Thu, 12 Nov 2026 04:40:18 GMT",
+        "HTTP_Age": null,
+        "observed_UTC": "2026-11-12T04:40:18.712220+00:00"
+      },
+      "served_response": {
+        "HTTP_status": 200,
+        "HTTP_Date": "Thu, 12 Nov 2026 04:40:18 GMT",
+        "HTTP_Age": "0",
+        "observed_UTC": "2026-11-12T04:40:18.777069+00:00"
+      }
+    },
+    {
+      "served_path": "data/weekly-selected-rankings/2c8e17cac1738181cedb8adf54f1f82fe583608b4f55ba02542721ff4e2437f4.json",
+      "Git_path": "output/data/weekly-selected-rankings/2c8e17cac1738181cedb8adf54f1f82fe583608b4f55ba02542721ff4e2437f4.json",
+      "expected_commit": "869d9a8839ae83dfccdb3bbb6610a0e0df867667",
+      "bytes": 11936,
+      "SHA256": "2c8e17cac1738181cedb8adf54f1f82fe583608b4f55ba02542721ff4e2437f4",
+      "exact_parity": true,
+      "Git_response": {
+        "HTTP_status": 200,
+        "HTTP_Date": "Thu, 12 Nov 2026 04:40:18 GMT",
+        "HTTP_Age": null,
+        "observed_UTC": "2026-11-12T04:40:18.924866+00:00"
+      },
+      "served_response": {
+        "HTTP_status": 200,
+        "HTTP_Date": "Thu, 12 Nov 2026 04:40:18 GMT",
+        "HTTP_Age": "0",
+        "observed_UTC": "2026-11-12T04:40:19.008395+00:00"
+      }
+    }
+  ],
+  "execution_model": {
+    "capture_schema": "baseline-capture-classic-presence-v2",
+    "engine_sha256": {
+      "pull/books.py": "0b89744960136a4f2e594b61e6df754d357706d8c66a8ae359d8eb02bbfa53f8",
+      "pull/build.py": "b83126080149f2f0705682d1c0be0a8ee87610ebb0a88cd57b94b8a82b63ad73",
+      "pull/gamemodel.py": "2a2519a12ad4993da02ae6bdcdb6c86f2b5a6554ce93a702b550ecde17fb7d1f",
+      "pull/grade.py": "afd1310d708def4f400e6bf84e981e2edc7635dc946a63571022203c1d3ae735",
+      "pull/matchup.py": "eaf627730041060ad16dd9930accfe54a54cf5fb49bb42d18680b5c572ddd7a5",
+      "pull/news.py": "17ce1b3b6b72694e6b543bd767e287c26a9d1f6dd5dba2de6c873543036842e9",
+      "pull/scoring.py": "90a9d201581b20c4e757912ce7dbf4941a6a90784d721c80367341511c652a2d",
+      "pull/sources.py": "36555cdbc55d73ba632d5adae1130288f4f532073857c642ac3ebc7e626b0061"
+    },
+    "grading_version": "statistical-presence-strict-v5-20261106",
+    "model": "sleeper-matchup-classic-presence-strict-v2",
+    "normalized_stats_cache": "stat-keys-presence-strict-v3",
+    "original_shadow_model": "original_sleeper_matchup_baseline",
+    "original_shadow_procedure": "original-builder-default-refresh-v1",
+    "original_shadow_source": "89512ed952308dacc1f6a930915ddbcdccd460d9",
+    "schema_version": "weekly-classic-presence-execution-v2"
+  },
+  "native": {
+    "path": "data/current-classic/2026/w10/fad9ae5bfe0f46930d062a969f6c904678e76123326e754de3b0e3bdee463401.json.gz",
+    "bytes": 38812,
+    "SHA256": "247a2d5af9fd3a957891623f702fa57bcba2cde0dbb33f8af9276c886adc719a",
+    "payload_sha256": "1aaee82986c9da07f899d04d6103bb3d698fd27058bc478ed071db87e6b69608",
+    "independently_verified_payload_hash": true,
+    "HTTP": {
+      "HTTP_status": 200,
+      "HTTP_Date": "Thu, 12 Nov 2026 04:40:19 GMT",
+      "HTTP_Age": null,
+      "observed_UTC": "2026-11-12T04:40:19.142027+00:00"
+    },
+    "rows": 1614,
+    "generated_UTC": "2026-11-12T04:31:02Z",
+    "captured_UTC": "2026-11-12T04:31:04Z",
+    "source_code_commit": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+    "model": "sleeper-matchup-classic-presence-strict-v2",
+    "category_counts": {
+      "anytime_td": 203,
+      "rec": 378,
+      "rec_yd": 378,
+      "rush_rec_yd": 208,
+      "pass_att": 42,
+      "pass_cmp": 41,
+      "pass_int": 33,
+      "pass_td": 35,
+      "pass_yd": 41,
+      "rush_yd": 148,
+      "rush_att": 107
+    },
+    "source_tag_counts": {
+      "ours": 1095,
+      "dk": 496,
+      "sleeper": 23
+    },
+    "source_clock_flags": {
+      "False": 1614
+    },
+    "input_sha256": "0098cc3669639c70a2e382be86709514d9d25a0322cca1df51cb6dc6fac0e754",
+    "future_at_capture": true,
+    "row_truth": "Frozen original reference forecast/line/source/lean metadata, not new B predictions or graded selections",
+    "unique_games": 14,
+    "unique_player_games": 424,
+    "unique_archive_id": "fad9ae5bfe0f46930d062a969f6c904678e76123326e754de3b0e3bdee463401",
+    "first_kickoff_UTC": "2026-11-13T01:15:00+00:00",
+    "last_kickoff_UTC": "2026-11-17T01:15:00+00:00",
+    "future_games_at_capture": 14,
+    "already_started_games_at_capture": 0,
+    "future_rows_at_capture": 1614,
+    "already_started_rows_at_capture": 0,
+    "hours_before_first_kickoff": 20.732222222222223,
+    "explicit_separate_forecast_issue_clock": null,
+    "clock_contract": "forecast_generated_at is generation; captured_at is capture; no separately authenticated original forecast issue clock is invented"
+  },
+  "health": {
+    "build_age_minutes": 0.06,
+    "capture_created": false,
+    "capture_mode": "live",
+    "capture_model": "sleeper-matchup-classic-presence-strict-v2",
+    "capture_rows": 1614,
+    "capture_schema": "baseline-capture-classic-presence-v2",
+    "checked_at": "2026-11-12T04:31:05Z",
+    "first_captured_at": "2026-11-12T04:31:04Z",
+    "generated_at": "2026-11-12T04:31:02Z",
+    "max_build_age_minutes": 120,
+    "players": 724,
+    "probability_calibration": "NOT_ESTABLISHED",
+    "profitability": "NOT_ESTABLISHED",
+    "props": 2028,
+    "quote_freshness": "UNKNOWN",
+    "real_line_props": 519,
+    "receipt": "data/current-classic/2026/w10/fad9ae5bfe0f46930d062a969f6c904678e76123326e754de3b0e3bdee463401.json.gz",
+    "reference_only_props": 1509,
+    "schema_version": "baseline-capture-v1",
+    "source_timestamps_verified": false,
+    "status": "STRUCTURAL_CHECKS_PASSED",
+    "legacy_verifier": "failure",
+    "historical_comparison": "success",
+    "legacy_verifier_detail": {
+      "missing_requirements": [
+        "Exact retained builder roster",
+        "Same observed source-input closure"
+      ],
+      "model": "sleeper-matchup-classic-presence-strict-v2",
+      "normalized_stats_cache": "stat-keys-presence-strict-v3",
+      "numerical_parity_passed": false,
+      "provider_requests": 0,
+      "required_checks": "Mandatory current source/integrity/capture checks are separate; no accuracy claim.",
+      "schema_version": "legacy-diagnostic-scope-v2",
+      "status": "NOT_EVALUATED_CURRENT_MODEL_INPUT_CLOSURE_REQUIRED"
+    },
+    "calculated_age_minutes": 9.28615105
+  },
+  "overlay": {
+    "state": "DISABLED_USE_R0",
+    "rows": 0,
+    "fallback_counts": {
+      "publication_not_approved_R0": 2028
+    },
+    "prepared_UTC": "2026-11-12T04:31:12.416516+00:00",
+    "website_source_sha": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e"
+  },
+  "ranking": {
+    "policy": {
+      "categories": {
+        "pass_att": {
+          "lean": 1,
+          "minimum_line": 20.5,
+          "scale": 3
+        },
+        "pass_cmp": {
+          "lean": 0.8,
+          "minimum_line": 12.5,
+          "scale": 2.5
+        },
+        "pass_int": {
+          "lean": 0.12,
+          "minimum_line": 0.5,
+          "scale": 0.5
+        },
+        "pass_td": {
+          "lean": 0.15,
+          "minimum_line": 0.5,
+          "scale": 0.6
+        },
+        "pass_yd": {
+          "lean": 8,
+          "minimum_line": 150.5,
+          "scale": 30
+        },
+        "rec": {
+          "lean": 0.3,
+          "minimum_line": 1.5,
+          "scale": 1.2
+        },
+        "rec_yd": {
+          "lean": 4,
+          "minimum_line": 15.5,
+          "scale": 12
+        },
+        "rush_att": {
+          "lean": 0.8,
+          "minimum_line": 6.5,
+          "scale": 3
+        },
+        "rush_rec_yd": {
+          "lean": 5,
+          "minimum_line": 25.5,
+          "scale": 15
+        },
+        "rush_yd": {
+          "lean": 4,
+          "minimum_line": 15.5,
+          "scale": 12
+        }
+      },
+      "fallback": "same-opportunity reference identified by forecast_source and model_version; unavailable is never zero",
+      "meaning": "descriptive scaled forecast gap, not win probability or EV",
+      "minimum_games": 2,
+      "minimum_projected_ppr": {
+        "QB": 10,
+        "RB": 6,
+        "TE": 6,
+        "WR": 6
+      },
+      "minimum_score": 0.35,
+      "minimum_snap_share": 0.5,
+      "projection_line_ratio": [
+        0.4,
+        2.5
+      ],
+      "tie_order": [
+        "absolute_score_desc",
+        "game_id",
+        "player_id",
+        "category"
+      ],
+      "top_n": 12,
+      "unavailable": [
+        "Out",
+        "IR",
+        "PUP",
+        "Suspended",
+        "NA",
+        "Doubtful",
+        "COV",
+        "DNR"
+      ],
+      "version": "selected-projection-gap-classic-presence-v2"
+    },
+    "policy_sha256": "551ee07861774ba2c90ad0e8097136c359807f92843dde5cd4b96ecffbe958ed",
+    "counts": {
+      "over": 12,
+      "under": 12
+    },
+    "sources": {
+      "over": {
+        "CURRENT_BASELINE": 12
+      },
+      "under": {
+        "CURRENT_BASELINE": 12
+      }
+    },
+    "prepared_UTC": "2026-11-12T04:31:12.639886+00:00"
+  },
+  "twelve_category_actual_metadata": [
+    {
+      "category": "pass_yd",
+      "actual_model": "sleeper-matchup-classic-presence-strict-v2",
+      "native_forecast_rows": 41,
+      "exact_chart": null,
+      "baseline_point": "Native adjusted_projection/recorded lean; point gap has no probability or EV",
+      "selected_override_margin": 8,
+      "selected_ranking_scale": 30,
+      "category_source": "CURRENT_BASELINE; no research override",
+      "direction_policy": "Recorded baseline lean; if selected overlay admitted, nonzero-margin selectedPropGap applies",
+      "probability": "NONE_FROM_POINT_OR_GAP",
+      "research_selected_rows": 0
+    },
+    {
+      "category": "pass_td",
+      "actual_model": "sleeper-matchup-classic-presence-strict-v2",
+      "native_forecast_rows": 35,
+      "exact_chart": null,
+      "baseline_point": "Native adjusted_projection/recorded lean; point gap has no probability or EV",
+      "selected_override_margin": 0.15,
+      "selected_ranking_scale": 0.6,
+      "category_source": "CURRENT_BASELINE; no research override",
+      "direction_policy": "Recorded baseline lean; if selected overlay admitted, nonzero-margin selectedPropGap applies",
+      "probability": "NONE_FROM_POINT_OR_GAP",
+      "research_selected_rows": 0
+    },
+    {
+      "category": "pass_cmp",
+      "actual_model": "sleeper-matchup-classic-presence-strict-v2",
+      "native_forecast_rows": 41,
+      "exact_chart": null,
+      "baseline_point": "Native adjusted_projection/recorded lean; point gap has no probability or EV",
+      "selected_override_margin": 0.8,
+      "selected_ranking_scale": 2.5,
+      "category_source": "CURRENT_BASELINE; no research override",
+      "direction_policy": "Recorded baseline lean; if selected overlay admitted, nonzero-margin selectedPropGap applies",
+      "probability": "NONE_FROM_POINT_OR_GAP",
+      "research_selected_rows": 0
+    },
+    {
+      "category": "pass_att",
+      "actual_model": "sleeper-matchup-classic-presence-strict-v2",
+      "native_forecast_rows": 42,
+      "exact_chart": null,
+      "baseline_point": "Native adjusted_projection/recorded lean; point gap has no probability or EV",
+      "selected_override_margin": 1,
+      "selected_ranking_scale": 3,
+      "category_source": "CURRENT_BASELINE; no research override",
+      "direction_policy": "Recorded baseline lean; if selected overlay admitted, nonzero-margin selectedPropGap applies",
+      "probability": "NONE_FROM_POINT_OR_GAP",
+      "research_selected_rows": 0
+    },
+    {
+      "category": "pass_int",
+      "actual_model": "sleeper-matchup-classic-presence-strict-v2",
+      "native_forecast_rows": 33,
+      "exact_chart": null,
+      "baseline_point": "Native adjusted_projection/recorded lean; point gap has no probability or EV",
+      "selected_override_margin": 0.12,
+      "selected_ranking_scale": 0.5,
+      "category_source": "CURRENT_BASELINE; no research override",
+      "direction_policy": "Recorded baseline lean; if selected overlay admitted, nonzero-margin selectedPropGap applies",
+      "probability": "NONE_FROM_POINT_OR_GAP",
+      "research_selected_rows": 0
+    },
+    {
+      "category": "rush_yd",
+      "actual_model": "sleeper-matchup-classic-presence-strict-v2",
+      "native_forecast_rows": 148,
+      "exact_chart": null,
+      "baseline_point": "Native adjusted_projection/recorded lean; point gap has no probability or EV",
+      "selected_override_margin": 4,
+      "selected_ranking_scale": 12,
+      "category_source": "CURRENT_BASELINE; no research override",
+      "direction_policy": "Recorded baseline lean; if selected overlay admitted, nonzero-margin selectedPropGap applies",
+      "probability": "NONE_FROM_POINT_OR_GAP",
+      "research_selected_rows": 0
+    },
+    {
+      "category": "rush_att",
+      "actual_model": "sleeper-matchup-classic-presence-strict-v2",
+      "native_forecast_rows": 107,
+      "exact_chart": null,
+      "baseline_point": "Native adjusted_projection/recorded lean; point gap has no probability or EV",
+      "selected_override_margin": 0.8,
+      "selected_ranking_scale": 3,
+      "category_source": "CURRENT_BASELINE; no research override",
+      "direction_policy": "Recorded baseline lean; if selected overlay admitted, nonzero-margin selectedPropGap applies",
+      "probability": "NONE_FROM_POINT_OR_GAP",
+      "research_selected_rows": 0
+    },
+    {
+      "category": "rec",
+      "actual_model": "sleeper-matchup-classic-presence-strict-v2",
+      "native_forecast_rows": 378,
+      "exact_chart": null,
+      "baseline_point": "Native adjusted_projection/recorded lean; point gap has no probability or EV",
+      "selected_override_margin": 0.3,
+      "selected_ranking_scale": 1.2,
+      "category_source": "CURRENT_BASELINE; no research override",
+      "direction_policy": "Recorded baseline lean; if selected overlay admitted, nonzero-margin selectedPropGap applies",
+      "probability": "NONE_FROM_POINT_OR_GAP",
+      "research_selected_rows": 0
+    },
+    {
+      "category": "rec_yd",
+      "actual_model": "sleeper-matchup-classic-presence-strict-v2",
+      "native_forecast_rows": 378,
+      "exact_chart": null,
+      "baseline_point": "Native adjusted_projection/recorded lean; point gap has no probability or EV",
+      "selected_override_margin": 4,
+      "selected_ranking_scale": 12,
+      "category_source": "CURRENT_BASELINE; no research override",
+      "direction_policy": "Recorded baseline lean; if selected overlay admitted, nonzero-margin selectedPropGap applies",
+      "probability": "NONE_FROM_POINT_OR_GAP",
+      "research_selected_rows": 0
+    },
+    {
+      "category": "rush_rec_yd",
+      "actual_model": "sleeper-matchup-classic-presence-strict-v2",
+      "native_forecast_rows": 208,
+      "exact_chart": null,
+      "baseline_point": "Native adjusted_projection/recorded lean; point gap has no probability or EV",
+      "selected_override_margin": 5,
+      "selected_ranking_scale": 15,
+      "category_source": "CURRENT_BASELINE; no research override",
+      "direction_policy": "Recorded baseline lean; if selected overlay admitted, nonzero-margin selectedPropGap applies",
+      "probability": "NONE_FROM_POINT_OR_GAP",
+      "research_selected_rows": 0
+    },
+    {
+      "category": "anytime_td",
+      "actual_model": "sleeper-matchup-classic-presence-strict-v2",
+      "native_forecast_rows": 203,
+      "exact_chart": null,
+      "baseline_point": null,
+      "selected_override_margin": null,
+      "selected_ranking_scale": null,
+      "category_source": "CURRENT_BASELINE; no research override",
+      "direction_policy": "NO_QUALIFIED_ACTUAL_OFFER_OU_PRODUCT",
+      "probability": "Guarded uncalibrated baseline event estimate; null retained",
+      "research_selected_rows": 0
+    },
+    {
+      "category": "nick-chart-ppr-v1",
+      "actual_model": null,
+      "native_forecast_rows": 0,
+      "exact_chart": "UNAVAILABLE_NO_EQUIVALENCE_TO_LEAGUE_FANTASY",
+      "baseline_point": null,
+      "selected_override_margin": null,
+      "selected_ranking_scale": null,
+      "category_source": "NO_EXACT_PRODUCT",
+      "direction_policy": "NO_QUALIFIED_ACTUAL_OFFER_OU_PRODUCT",
+      "probability": "NONE_FROM_POINT_OR_GAP",
+      "research_selected_rows": 0
+    }
+  ],
+  "representative_native_values": [
+    {
+      "category": "pass_cmp",
+      "player_id": "11565",
+      "game_id": "401873052",
+      "position": "QB",
+      "team": "NYG",
+      "raw_projection": 18.99,
+      "adjusted_projection": 20.81,
+      "line": 17.5,
+      "line_from": "dk",
+      "lean": "over",
+      "probability": null,
+      "source_timestamps_verified": false,
+      "settlement_status": "NOT_VERIFIED"
+    },
+    {
+      "category": "rec",
+      "player_id": "10228",
+      "game_id": "401873052",
+      "position": "WR",
+      "team": "NYG",
+      "raw_projection": 0.18,
+      "adjusted_projection": 0.21,
+      "line": 0.5,
+      "line_from": "ours",
+      "lean": null,
+      "probability": null,
+      "source_timestamps_verified": false,
+      "settlement_status": "NOT_VERIFIED"
+    },
+    {
+      "category": "rec_yd",
+      "player_id": "10228",
+      "game_id": "401873052",
+      "position": "WR",
+      "team": "NYG",
+      "raw_projection": 2.79,
+      "adjusted_projection": 2.77,
+      "line": 2.5,
+      "line_from": "ours",
+      "lean": null,
+      "probability": null,
+      "source_timestamps_verified": false,
+      "settlement_status": "NOT_VERIFIED"
+    },
+    {
+      "category": "anytime_td",
+      "player_id": "10228",
+      "game_id": "401873052",
+      "position": "WR",
+      "team": "NYG",
+      "raw_projection": 0.02,
+      "adjusted_projection": null,
+      "line": 0.5,
+      "line_from": "ours",
+      "lean": null,
+      "probability": null,
+      "source_timestamps_verified": false,
+      "settlement_status": "NOT_VERIFIED"
+    }
+  ],
+  "code_semantics": {
+    "changed_files": 68,
+    "changed_code_paths": [],
+    "direct_parent": [
+      "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e"
+    ],
+    "baseline_engine_contract_equal_previous": true,
+    "selector_policy_equal_previous": true,
+    "interpretation": "No Python/JS code changed in the direct child commit. Prior exact actual-app margin/null/fallback fixture remains applicable; no repeated policy replay."
+  },
+  "latest_workflow": {
+    "id": 43155203267,
+    "event": "workflow_dispatch",
+    "status": "completed",
+    "conclusion": "success",
+    "path": ".github/workflows/hourly.yml",
+    "head_sha": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+    "created_UTC": "2026-11-12T04:30:08Z",
+    "updated_UTC": "2026-11-12T04:31:27Z"
+  },
+  "scheduling": "Latest update was workflow_dispatch/manual, not proof of unattended schedule reliability. Last observed scheduled success remains43101028574 November11.",
+  "fresh_offer_qualification": "519 displayed props have source real-line tags,1509 internal references; all source/quote-clock qualification remains unknown. Do not count these as qualified prospective O/U decisions.",
+  "legacy_verifier": "Reported failure/NOT_EVALUATED_CURRENT_MODEL_INPUT_CLOSURE_REQUIRED is retained separately; successful updater is not a legacy parity pass.",
+  "browser": "NO_NEW_DIRECT_BROWSER_OR_MOBILE_DOM_CHECK; verified served byte parity and native row values only",
+  "wrong_initial_route": "Initial Git data/meta.json lookup404 was a wrong repository route; actual source path output/data/meta.json verified. No inference of missing model/feed from that404.",
+  "original_site_research_activation": false,
+  "new_B_fits": 0,
+  "new_B_forecasts": 0,
+  "new_B_grades": 0,
+  "original_records_preserved": true,
+  "publication_clocks": {
+    "Git_commit_UTC": "2026-11-12T04:31:13Z",
+    "updater_finished_UTC": "2026-11-12T04:31:27Z",
+    "served_all_six_exact_readback_by_UTC": "2026-11-12T04:40:19.008395+00:00",
+    "all_qualified_server_readbacks_before_first_kickoff": true,
+    "limitation": "Git commit date, updater completion and actual remote/served readback are distinct witnesses; no original sportsbook quote clock is inferred."
+  }
+}

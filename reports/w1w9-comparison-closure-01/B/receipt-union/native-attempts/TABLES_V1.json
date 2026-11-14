@@ -1,0 +1,6192 @@
+[
+  {
+    "OVER": {
+      "selected": 13,
+      "wins": 4,
+      "losses": 9,
+      "decided": 13,
+      "rate": 0.3076923076923077
+    },
+    "UNDER": {
+      "selected": 129,
+      "wins": 66,
+      "losses": 63,
+      "decided": 129,
+      "rate": 0.5116279069767442
+    },
+    "COMBINED": {
+      "selected": 142,
+      "wins": 70,
+      "losses": 72,
+      "decided": 142,
+      "rate": 0.49295774647887325
+    },
+    "eligible": 142,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 70,
+      "LOSS": 72
+    },
+    "games": 71,
+    "player_games": 142,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.39285714285714285,
+      "high": 0.5704225352112676,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P1_MEAN",
+    "week_view": "ALL",
+    "available": 142,
+    "selected": 142,
+    "decided": 142,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 141,
+      "no_player_history_role_prior": 1
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 142,
+      "MAE": 7.178026972648405,
+      "MSE": 84.29843854299736,
+      "bias": -2.927922398028537
+    },
+    "probability": {
+      "events": 142,
+      "binary_Over_Brier": 0.2738218657344712,
+      "half_multiclass_Brier": 0.2738218657344712,
+      "three_state_log_loss": 0.7469211632732577,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 6,
+          "predicted": 0.1658613282693302,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 26,
+          "predicted": 0.26316569876568585,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 76,
+          "predicted": 0.35012346942282574,
+          "observed": 0.4605263157894737
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 26,
+          "predicted": 0.4359708869711234,
+          "observed": 0.5384615384615384
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 8,
+          "predicted": 0.5327092137931873,
+          "observed": 0.25
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "2c72099dcb1f72b52c8aa7be4aa7669152e1d8da0bbf330a6213d5da8616e09f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 2,
+      "wins": 1,
+      "losses": 1,
+      "decided": 2,
+      "rate": 0.5
+    },
+    "UNDER": {
+      "selected": 26,
+      "wins": 15,
+      "losses": 11,
+      "decided": 26,
+      "rate": 0.5769230769230769
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 16,
+      "losses": 12,
+      "decided": 28,
+      "rate": 0.5714285714285714
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 16,
+      "LOSS": 12
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      5
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.3907078562746876,
+      "high": 0.734914528758763,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P1_MEAN",
+    "week_view": "5",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 6.896042493010838,
+      "MSE": 83.00097420962152,
+      "bias": -4.266551484002561
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.2468499890449675,
+      "half_multiclass_Brier": 0.2468499890449675,
+      "three_state_log_loss": 0.6855889776398871,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 1,
+          "predicted": 0.10288752229017417,
+          "observed": 0.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 6,
+          "predicted": 0.2591095168766193,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 14,
+          "predicted": 0.3513083824708789,
+          "observed": 0.35714285714285715
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 7,
+          "predicted": 0.44806263242829364,
+          "observed": 0.5714285714285714
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "42714abfa8cf612ea512c9d83640069802c736c12fe8812d3fb3fe9b75669bc0",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 3,
+      "wins": 1,
+      "losses": 2,
+      "decided": 3,
+      "rate": 0.3333333333333333
+    },
+    "UNDER": {
+      "selected": 25,
+      "wins": 8,
+      "losses": 17,
+      "decided": 25,
+      "rate": 0.32
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 9,
+      "losses": 19,
+      "decided": 28,
+      "rate": 0.32142857142857145
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 9,
+      "LOSS": 19
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      6
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.1793324692249496,
+      "high": 0.5066115681914238,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P1_MEAN",
+    "week_view": "6",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 27,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 8.747942974708392,
+      "MSE": 127.70239552081723,
+      "bias": -7.198239183825669
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.3291343899592386,
+      "half_multiclass_Brier": 0.3291343899592386,
+      "three_state_log_loss": 0.8654129710446877,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 1,
+          "predicted": 0.19325107606272074,
+          "observed": 1.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 7,
+          "predicted": 0.27523398039443303,
+          "observed": 0.5714285714285714
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 15,
+          "predicted": 0.34415044172801984,
+          "observed": 0.6666666666666666
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 3,
+          "predicted": 0.4476854185148724,
+          "observed": 0.6666666666666666
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 2,
+          "predicted": 0.5211902462791589,
+          "observed": 0.5
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c01b7d82527ab3bc87582a4a99c25bc18c4f740fdbb65aa0df4a8df72bc45331",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 1,
+      "wins": 0,
+      "losses": 1,
+      "decided": 1,
+      "rate": 0.0
+    },
+    "UNDER": {
+      "selected": 27,
+      "wins": 16,
+      "losses": 11,
+      "decided": 27,
+      "rate": 0.5925925925925926
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 16,
+      "losses": 12,
+      "decided": 28,
+      "rate": 0.5714285714285714
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 16,
+      "LOSS": 12
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      7
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.3907078562746876,
+      "high": 0.734914528758763,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P1_MEAN",
+    "week_view": "7",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 6.485230731995374,
+      "MSE": 65.40828483816216,
+      "bias": -1.7107012487271447
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.25851722238047153,
+      "half_multiclass_Brier": 0.25851722238047153,
+      "three_state_log_loss": 0.7173113668756084,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 1,
+          "predicted": 0.1965943291979304,
+          "observed": 1.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 4,
+          "predicted": 0.2527125800693881,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 18,
+          "predicted": 0.35186435166686536,
+          "observed": 0.3333333333333333
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 5,
+          "predicted": 0.43379534396997943,
+          "observed": 0.4
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c04de3d0ce559e86a8b99e884ab08a6dce5ceb659b91a7ebc9d2b139b8b0f471",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 3,
+      "wins": 0,
+      "losses": 3,
+      "decided": 3,
+      "rate": 0.0
+    },
+    "UNDER": {
+      "selected": 25,
+      "wins": 12,
+      "losses": 13,
+      "decided": 25,
+      "rate": 0.48
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 12,
+      "losses": 16,
+      "decided": 28,
+      "rate": 0.42857142857142855
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 16,
+      "WIN": 12
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      8
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.26508547124123694,
+      "high": 0.6092921437253123,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P1_MEAN",
+    "week_view": "8",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 8.683668035608362,
+      "MSE": 109.63691910585608,
+      "bias": 0.5121508268590205
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.28437758586997725,
+      "half_multiclass_Brier": 0.28437758586997725,
+      "three_state_log_loss": 0.7675498134189603,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 5,
+          "predicted": 0.2531614160743952,
+          "observed": 0.4
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 15,
+          "predicted": 0.35481902126875,
+          "observed": 0.6
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 5,
+          "predicted": 0.4252040965228809,
+          "observed": 0.4
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 3,
+          "predicted": 0.530803265263201,
+          "observed": 0.0
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "f168180f43840999417ab5c264a4cc8790d323f3fbbfbda7efd72f7ce9d3b266",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 4,
+      "wins": 2,
+      "losses": 2,
+      "decided": 4,
+      "rate": 0.5
+    },
+    "UNDER": {
+      "selected": 26,
+      "wins": 15,
+      "losses": 11,
+      "decided": 26,
+      "rate": 0.5769230769230769
+    },
+    "COMBINED": {
+      "selected": 30,
+      "wins": 17,
+      "losses": 13,
+      "decided": 30,
+      "rate": 0.5666666666666667
+    },
+    "eligible": 30,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 17,
+      "LOSS": 13
+    },
+    "games": 15,
+    "player_games": 30,
+    "weeks": [
+      9
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.3919730700081361,
+      "high": 0.7262251442353347,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P1_MEAN",
+    "week_view": "9",
+    "available": 30,
+    "selected": 30,
+    "decided": 30,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 29,
+      "no_player_history_role_prior": 1
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 30
+    },
+    "numerical": {
+      "scored": 30,
+      "MAE": 5.217302384234349,
+      "MSE": 38.980607007360966,
+      "bias": -2.039714333618476
+    },
+    "probability": {
+      "events": 30,
+      "binary_Over_Brier": 0.2518029230388192,
+      "half_multiclass_Brier": 0.2518029230388192,
+      "three_state_log_loss": 0.7019545857795528,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 3,
+          "predicted": 0.16747834735505196,
+          "observed": 0.3333333333333333
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 4,
+          "predicted": 0.271088950809389,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 14,
+          "predicted": 0.34806900332766616,
+          "observed": 0.35714285714285715
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 6,
+          "predicted": 0.42679186270703884,
+          "observed": 0.6666666666666666
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 3,
+          "predicted": 0.5422944739991923,
+          "observed": 0.3333333333333333
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "e8255dd47d62ce66365cd826db5339224fa99c301fc68348aaa1e2ae6c6a1a01",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 13,
+      "wins": 4,
+      "losses": 9,
+      "decided": 13,
+      "rate": 0.3076923076923077
+    },
+    "UNDER": {
+      "selected": 128,
+      "wins": 66,
+      "losses": 62,
+      "decided": 128,
+      "rate": 0.515625
+    },
+    "COMBINED": {
+      "selected": 141,
+      "wins": 70,
+      "losses": 71,
+      "decided": 141,
+      "rate": 0.49645390070921985
+    },
+    "eligible": 141,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 70,
+      "LOSS": 71
+    },
+    "games": 71,
+    "player_games": 141,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.40145985401459855,
+      "high": 0.5704225352112676,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P1_MEAN",
+    "week_view": "DK_ONLY",
+    "available": 141,
+    "selected": 141,
+    "decided": 141,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 140,
+      "no_player_history_role_prior": 1
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141
+    },
+    "numerical": {
+      "scored": 141,
+      "MAE": 7.088066824494083,
+      "MSE": 82.09831934051762,
+      "bias": -2.807819664238613
+    },
+    "probability": {
+      "events": 141,
+      "binary_Over_Brier": 0.27239968342586157,
+      "half_multiclass_Brier": 0.27239968342586157,
+      "three_state_log_loss": 0.7439412007541036,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 6,
+          "predicted": 0.1658613282693302,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 26,
+          "predicted": 0.26316569876568585,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 75,
+          "predicted": 0.35064152108641355,
+          "observed": 0.4533333333333333
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 26,
+          "predicted": 0.4359708869711234,
+          "observed": 0.5384615384615384
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 8,
+          "predicted": 0.5327092137931873,
+          "observed": 0.25
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "5aec9cff7ab3abb12f05e54c4b99f017292f3045c62ebe8423bcb833309e248f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 8,
+      "wins": 2,
+      "losses": 6,
+      "decided": 8,
+      "rate": 0.25
+    },
+    "UNDER": {
+      "selected": 134,
+      "wins": 69,
+      "losses": 65,
+      "decided": 134,
+      "rate": 0.5149253731343284
+    },
+    "COMBINED": {
+      "selected": 142,
+      "wins": 71,
+      "losses": 71,
+      "decided": 142,
+      "rate": 0.5
+    },
+    "eligible": 142,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 71,
+      "LOSS": 71
+    },
+    "games": 71,
+    "player_games": 142,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.4142857142857143,
+      "high": 0.5763888888888888,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P1_LOWER_MEDIAN",
+    "week_view": "ALL",
+    "available": 142,
+    "selected": 142,
+    "decided": 142,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 141,
+      "no_player_history_role_prior": 1
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 142,
+      "MAE": 7.753521126760563,
+      "MSE": 99.04929577464789,
+      "bias": -4.26056338028169
+    },
+    "probability": {
+      "events": 142,
+      "binary_Over_Brier": 0.2738218657344712,
+      "half_multiclass_Brier": 0.2738218657344712,
+      "three_state_log_loss": 0.7469211632732577,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 6,
+          "predicted": 0.1658613282693302,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 26,
+          "predicted": 0.26316569876568585,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 76,
+          "predicted": 0.35012346942282574,
+          "observed": 0.4605263157894737
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 26,
+          "predicted": 0.4359708869711234,
+          "observed": 0.5384615384615384
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 8,
+          "predicted": 0.5327092137931873,
+          "observed": 0.25
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "2c72099dcb1f72b52c8aa7be4aa7669152e1d8da0bbf330a6213d5da8616e09f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 28,
+      "wins": 16,
+      "losses": 12,
+      "decided": 28,
+      "rate": 0.5714285714285714
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 16,
+      "losses": 12,
+      "decided": 28,
+      "rate": 0.5714285714285714
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 16,
+      "LOSS": 12
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      5
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.3907078562746876,
+      "high": 0.734914528758763,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P1_LOWER_MEDIAN",
+    "week_view": "5",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 7.75,
+      "MSE": 103.25,
+      "bias": -5.607142857142857
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.2468499890449675,
+      "half_multiclass_Brier": 0.2468499890449675,
+      "three_state_log_loss": 0.6855889776398871,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 1,
+          "predicted": 0.10288752229017417,
+          "observed": 0.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 6,
+          "predicted": 0.2591095168766193,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 14,
+          "predicted": 0.3513083824708789,
+          "observed": 0.35714285714285715
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 7,
+          "predicted": 0.44806263242829364,
+          "observed": 0.5714285714285714
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "42714abfa8cf612ea512c9d83640069802c736c12fe8812d3fb3fe9b75669bc0",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 2,
+      "wins": 1,
+      "losses": 1,
+      "decided": 2,
+      "rate": 0.5
+    },
+    "UNDER": {
+      "selected": 26,
+      "wins": 9,
+      "losses": 17,
+      "decided": 26,
+      "rate": 0.34615384615384615
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 10,
+      "losses": 18,
+      "decided": 28,
+      "rate": 0.35714285714285715
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 10,
+      "LOSS": 18
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      6
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.2070582950773768,
+      "high": 0.5416969348557219,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P1_LOWER_MEDIAN",
+    "week_view": "6",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 27,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 9.571428571428571,
+      "MSE": 155.5,
+      "bias": -8.5
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.3291343899592386,
+      "half_multiclass_Brier": 0.3291343899592386,
+      "three_state_log_loss": 0.8654129710446877,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 1,
+          "predicted": 0.19325107606272074,
+          "observed": 1.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 7,
+          "predicted": 0.27523398039443303,
+          "observed": 0.5714285714285714
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 15,
+          "predicted": 0.34415044172801984,
+          "observed": 0.6666666666666666
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 3,
+          "predicted": 0.4476854185148724,
+          "observed": 0.6666666666666666
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 2,
+          "predicted": 0.5211902462791589,
+          "observed": 0.5
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c01b7d82527ab3bc87582a4a99c25bc18c4f740fdbb65aa0df4a8df72bc45331",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 28,
+      "wins": 17,
+      "losses": 11,
+      "decided": 28,
+      "rate": 0.6071428571428571
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 17,
+      "losses": 11,
+      "decided": 28,
+      "rate": 0.6071428571428571
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 17,
+      "LOSS": 11
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      7
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.42409044296597176,
+      "high": 0.764343134584204,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P1_LOWER_MEDIAN",
+    "week_view": "7",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 6.785714285714286,
+      "MSE": 76.0,
+      "bias": -3.0714285714285716
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.25851722238047153,
+      "half_multiclass_Brier": 0.25851722238047153,
+      "three_state_log_loss": 0.7173113668756084,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 1,
+          "predicted": 0.1965943291979304,
+          "observed": 1.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 4,
+          "predicted": 0.2527125800693881,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 18,
+          "predicted": 0.35186435166686536,
+          "observed": 0.3333333333333333
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 5,
+          "predicted": 0.43379534396997943,
+          "observed": 0.4
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c04de3d0ce559e86a8b99e884ab08a6dce5ceb659b91a7ebc9d2b139b8b0f471",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 3,
+      "wins": 0,
+      "losses": 3,
+      "decided": 3,
+      "rate": 0.0
+    },
+    "UNDER": {
+      "selected": 25,
+      "wins": 12,
+      "losses": 13,
+      "decided": 25,
+      "rate": 0.48
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 12,
+      "losses": 16,
+      "decided": 28,
+      "rate": 0.42857142857142855
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 16,
+      "WIN": 12
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      8
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.26508547124123694,
+      "high": 0.6092921437253123,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P1_LOWER_MEDIAN",
+    "week_view": "8",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 9.0,
+      "MSE": 114.28571428571429,
+      "bias": -0.7857142857142857
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.28437758586997725,
+      "half_multiclass_Brier": 0.28437758586997725,
+      "three_state_log_loss": 0.7675498134189603,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 5,
+          "predicted": 0.2531614160743952,
+          "observed": 0.4
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 15,
+          "predicted": 0.35481902126875,
+          "observed": 0.6
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 5,
+          "predicted": 0.4252040965228809,
+          "observed": 0.4
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 3,
+          "predicted": 0.530803265263201,
+          "observed": 0.0
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "f168180f43840999417ab5c264a4cc8790d323f3fbbfbda7efd72f7ce9d3b266",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 3,
+      "wins": 1,
+      "losses": 2,
+      "decided": 3,
+      "rate": 0.3333333333333333
+    },
+    "UNDER": {
+      "selected": 27,
+      "wins": 15,
+      "losses": 12,
+      "decided": 27,
+      "rate": 0.5555555555555556
+    },
+    "COMBINED": {
+      "selected": 30,
+      "wins": 16,
+      "losses": 14,
+      "decided": 30,
+      "rate": 0.5333333333333333
+    },
+    "eligible": 30,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 16,
+      "LOSS": 14
+    },
+    "games": 15,
+    "player_games": 30,
+    "weeks": [
+      9
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.36142299619873297,
+      "high": 0.6976761109230025,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P1_LOWER_MEDIAN",
+    "week_view": "9",
+    "available": 30,
+    "selected": 30,
+    "decided": 30,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 29,
+      "no_player_history_role_prior": 1
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 30
+    },
+    "numerical": {
+      "scored": 30,
+      "MAE": 5.8,
+      "MSE": 49.733333333333334,
+      "bias": -3.4
+    },
+    "probability": {
+      "events": 30,
+      "binary_Over_Brier": 0.2518029230388192,
+      "half_multiclass_Brier": 0.2518029230388192,
+      "three_state_log_loss": 0.7019545857795528,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 3,
+          "predicted": 0.16747834735505196,
+          "observed": 0.3333333333333333
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 4,
+          "predicted": 0.271088950809389,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 14,
+          "predicted": 0.34806900332766616,
+          "observed": 0.35714285714285715
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 6,
+          "predicted": 0.42679186270703884,
+          "observed": 0.6666666666666666
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 3,
+          "predicted": 0.5422944739991923,
+          "observed": 0.3333333333333333
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "e8255dd47d62ce66365cd826db5339224fa99c301fc68348aaa1e2ae6c6a1a01",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 8,
+      "wins": 2,
+      "losses": 6,
+      "decided": 8,
+      "rate": 0.25
+    },
+    "UNDER": {
+      "selected": 133,
+      "wins": 69,
+      "losses": 64,
+      "decided": 133,
+      "rate": 0.518796992481203
+    },
+    "COMBINED": {
+      "selected": 141,
+      "wins": 71,
+      "losses": 70,
+      "decided": 141,
+      "rate": 0.5035460992907801
+    },
+    "eligible": 141,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 71,
+      "LOSS": 70
+    },
+    "games": 71,
+    "player_games": 141,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.4233576642335766,
+      "high": 0.5763888888888888,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P1_LOWER_MEDIAN",
+    "week_view": "DK_ONLY",
+    "available": 141,
+    "selected": 141,
+    "decided": 141,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 140,
+      "no_player_history_role_prior": 1
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141
+    },
+    "numerical": {
+      "scored": 141,
+      "MAE": 7.652482269503546,
+      "MSE": 96.31914893617021,
+      "bias": -4.134751773049645
+    },
+    "probability": {
+      "events": 141,
+      "binary_Over_Brier": 0.27239968342586157,
+      "half_multiclass_Brier": 0.27239968342586157,
+      "three_state_log_loss": 0.7439412007541036,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 6,
+          "predicted": 0.1658613282693302,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 26,
+          "predicted": 0.26316569876568585,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 75,
+          "predicted": 0.35064152108641355,
+          "observed": 0.4533333333333333
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 26,
+          "predicted": 0.4359708869711234,
+          "observed": 0.5384615384615384
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 8,
+          "predicted": 0.5327092137931873,
+          "observed": 0.25
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "5aec9cff7ab3abb12f05e54c4b99f017292f3045c62ebe8423bcb833309e248f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 8,
+      "wins": 2,
+      "losses": 6,
+      "decided": 8,
+      "rate": 0.25
+    },
+    "UNDER": {
+      "selected": 134,
+      "wins": 69,
+      "losses": 65,
+      "decided": 134,
+      "rate": 0.5149253731343284
+    },
+    "COMBINED": {
+      "selected": 142,
+      "wins": 71,
+      "losses": 71,
+      "decided": 142,
+      "rate": 0.5
+    },
+    "eligible": 142,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 71,
+      "LOSS": 71
+    },
+    "games": 71,
+    "player_games": 142,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.4142857142857143,
+      "high": 0.5763888888888888,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P2_STATISTICAL_LAW",
+    "week_view": "ALL",
+    "available": 142,
+    "selected": 142,
+    "decided": 142,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 141,
+      "no_player_history_role_prior": 1
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 142,
+      "binary_Over_Brier": 0.2738218657344712,
+      "half_multiclass_Brier": 0.2738218657344712,
+      "three_state_log_loss": 0.7469211632732577,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 6,
+          "predicted": 0.1658613282693302,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 26,
+          "predicted": 0.26316569876568585,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 76,
+          "predicted": 0.35012346942282574,
+          "observed": 0.4605263157894737
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 26,
+          "predicted": 0.4359708869711234,
+          "observed": 0.5384615384615384
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 8,
+          "predicted": 0.5327092137931873,
+          "observed": 0.25
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "2c72099dcb1f72b52c8aa7be4aa7669152e1d8da0bbf330a6213d5da8616e09f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 28,
+      "wins": 16,
+      "losses": 12,
+      "decided": 28,
+      "rate": 0.5714285714285714
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 16,
+      "losses": 12,
+      "decided": 28,
+      "rate": 0.5714285714285714
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 16,
+      "LOSS": 12
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      5
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.3907078562746876,
+      "high": 0.734914528758763,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P2_STATISTICAL_LAW",
+    "week_view": "5",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.2468499890449675,
+      "half_multiclass_Brier": 0.2468499890449675,
+      "three_state_log_loss": 0.6855889776398871,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 1,
+          "predicted": 0.10288752229017417,
+          "observed": 0.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 6,
+          "predicted": 0.2591095168766193,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 14,
+          "predicted": 0.3513083824708789,
+          "observed": 0.35714285714285715
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 7,
+          "predicted": 0.44806263242829364,
+          "observed": 0.5714285714285714
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "42714abfa8cf612ea512c9d83640069802c736c12fe8812d3fb3fe9b75669bc0",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 2,
+      "wins": 1,
+      "losses": 1,
+      "decided": 2,
+      "rate": 0.5
+    },
+    "UNDER": {
+      "selected": 26,
+      "wins": 9,
+      "losses": 17,
+      "decided": 26,
+      "rate": 0.34615384615384615
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 10,
+      "losses": 18,
+      "decided": 28,
+      "rate": 0.35714285714285715
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 10,
+      "LOSS": 18
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      6
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.2070582950773768,
+      "high": 0.5416969348557219,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P2_STATISTICAL_LAW",
+    "week_view": "6",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 27,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.3291343899592386,
+      "half_multiclass_Brier": 0.3291343899592386,
+      "three_state_log_loss": 0.8654129710446877,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 1,
+          "predicted": 0.19325107606272074,
+          "observed": 1.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 7,
+          "predicted": 0.27523398039443303,
+          "observed": 0.5714285714285714
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 15,
+          "predicted": 0.34415044172801984,
+          "observed": 0.6666666666666666
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 3,
+          "predicted": 0.4476854185148724,
+          "observed": 0.6666666666666666
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 2,
+          "predicted": 0.5211902462791589,
+          "observed": 0.5
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c01b7d82527ab3bc87582a4a99c25bc18c4f740fdbb65aa0df4a8df72bc45331",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 28,
+      "wins": 17,
+      "losses": 11,
+      "decided": 28,
+      "rate": 0.6071428571428571
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 17,
+      "losses": 11,
+      "decided": 28,
+      "rate": 0.6071428571428571
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 17,
+      "LOSS": 11
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      7
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.42409044296597176,
+      "high": 0.764343134584204,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P2_STATISTICAL_LAW",
+    "week_view": "7",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.25851722238047153,
+      "half_multiclass_Brier": 0.25851722238047153,
+      "three_state_log_loss": 0.7173113668756084,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 1,
+          "predicted": 0.1965943291979304,
+          "observed": 1.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 4,
+          "predicted": 0.2527125800693881,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 18,
+          "predicted": 0.35186435166686536,
+          "observed": 0.3333333333333333
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 5,
+          "predicted": 0.43379534396997943,
+          "observed": 0.4
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c04de3d0ce559e86a8b99e884ab08a6dce5ceb659b91a7ebc9d2b139b8b0f471",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 3,
+      "wins": 0,
+      "losses": 3,
+      "decided": 3,
+      "rate": 0.0
+    },
+    "UNDER": {
+      "selected": 25,
+      "wins": 12,
+      "losses": 13,
+      "decided": 25,
+      "rate": 0.48
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 12,
+      "losses": 16,
+      "decided": 28,
+      "rate": 0.42857142857142855
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 16,
+      "WIN": 12
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      8
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.26508547124123694,
+      "high": 0.6092921437253123,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P2_STATISTICAL_LAW",
+    "week_view": "8",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.28437758586997725,
+      "half_multiclass_Brier": 0.28437758586997725,
+      "three_state_log_loss": 0.7675498134189603,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 5,
+          "predicted": 0.2531614160743952,
+          "observed": 0.4
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 15,
+          "predicted": 0.35481902126875,
+          "observed": 0.6
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 5,
+          "predicted": 0.4252040965228809,
+          "observed": 0.4
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 3,
+          "predicted": 0.530803265263201,
+          "observed": 0.0
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "f168180f43840999417ab5c264a4cc8790d323f3fbbfbda7efd72f7ce9d3b266",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 3,
+      "wins": 1,
+      "losses": 2,
+      "decided": 3,
+      "rate": 0.3333333333333333
+    },
+    "UNDER": {
+      "selected": 27,
+      "wins": 15,
+      "losses": 12,
+      "decided": 27,
+      "rate": 0.5555555555555556
+    },
+    "COMBINED": {
+      "selected": 30,
+      "wins": 16,
+      "losses": 14,
+      "decided": 30,
+      "rate": 0.5333333333333333
+    },
+    "eligible": 30,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 16,
+      "LOSS": 14
+    },
+    "games": 15,
+    "player_games": 30,
+    "weeks": [
+      9
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.36142299619873297,
+      "high": 0.6976761109230025,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P2_STATISTICAL_LAW",
+    "week_view": "9",
+    "available": 30,
+    "selected": 30,
+    "decided": 30,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 29,
+      "no_player_history_role_prior": 1
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 30
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 30,
+      "binary_Over_Brier": 0.2518029230388192,
+      "half_multiclass_Brier": 0.2518029230388192,
+      "three_state_log_loss": 0.7019545857795528,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 3,
+          "predicted": 0.16747834735505196,
+          "observed": 0.3333333333333333
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 4,
+          "predicted": 0.271088950809389,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 14,
+          "predicted": 0.34806900332766616,
+          "observed": 0.35714285714285715
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 6,
+          "predicted": 0.42679186270703884,
+          "observed": 0.6666666666666666
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 3,
+          "predicted": 0.5422944739991923,
+          "observed": 0.3333333333333333
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "e8255dd47d62ce66365cd826db5339224fa99c301fc68348aaa1e2ae6c6a1a01",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 8,
+      "wins": 2,
+      "losses": 6,
+      "decided": 8,
+      "rate": 0.25
+    },
+    "UNDER": {
+      "selected": 133,
+      "wins": 69,
+      "losses": 64,
+      "decided": 133,
+      "rate": 0.518796992481203
+    },
+    "COMBINED": {
+      "selected": 141,
+      "wins": 71,
+      "losses": 70,
+      "decided": 141,
+      "rate": 0.5035460992907801
+    },
+    "eligible": 141,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 71,
+      "LOSS": 70
+    },
+    "games": 71,
+    "player_games": 141,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.4233576642335766,
+      "high": 0.5763888888888888,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 1.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P2_STATISTICAL_LAW",
+    "week_view": "DK_ONLY",
+    "available": 141,
+    "selected": 141,
+    "decided": 141,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 140,
+      "no_player_history_role_prior": 1
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 141,
+      "binary_Over_Brier": 0.27239968342586157,
+      "half_multiclass_Brier": 0.27239968342586157,
+      "three_state_log_loss": 0.7439412007541036,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 6,
+          "predicted": 0.1658613282693302,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 26,
+          "predicted": 0.26316569876568585,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 75,
+          "predicted": 0.35064152108641355,
+          "observed": 0.4533333333333333
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 26,
+          "predicted": 0.4359708869711234,
+          "observed": 0.5384615384615384
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 8,
+          "predicted": 0.5327092137931873,
+          "observed": 0.25
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "5aec9cff7ab3abb12f05e54c4b99f017292f3045c62ebe8423bcb833309e248f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "COMBINED": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "eligible": 142,
+    "unavailable": 0,
+    "abstentions": 142,
+    "states": {
+      "ABSTAIN": 142
+    },
+    "games": 71,
+    "player_games": 142,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "N/A_NO_DECIDED_RESULTS",
+      "low": null,
+      "high": null,
+      "dependence_aware": false
+    },
+    "coverage": 0.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P90",
+    "week_view": "ALL",
+    "available": 142,
+    "selected": 0,
+    "decided": 0,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 141,
+      "no_player_history_role_prior": 1
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 142,
+      "binary_Over_Brier": 0.2738218657344712,
+      "half_multiclass_Brier": 0.2738218657344712,
+      "three_state_log_loss": 0.7469211632732577,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 6,
+          "predicted": 0.1658613282693302,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 26,
+          "predicted": 0.26316569876568585,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 76,
+          "predicted": 0.35012346942282574,
+          "observed": 0.4605263157894737
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 26,
+          "predicted": 0.4359708869711234,
+          "observed": 0.5384615384615384
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 8,
+          "predicted": 0.5327092137931873,
+          "observed": 0.25
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "2c72099dcb1f72b52c8aa7be4aa7669152e1d8da0bbf330a6213d5da8616e09f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "COMBINED": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 28,
+    "states": {
+      "ABSTAIN": 28
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      5
+    ],
+    "uncertainty": {
+      "kind": "N/A_NO_DECIDED_RESULTS",
+      "low": null,
+      "high": null,
+      "dependence_aware": false
+    },
+    "coverage": 0.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P90",
+    "week_view": "5",
+    "available": 28,
+    "selected": 0,
+    "decided": 0,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.2468499890449675,
+      "half_multiclass_Brier": 0.2468499890449675,
+      "three_state_log_loss": 0.6855889776398871,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 1,
+          "predicted": 0.10288752229017417,
+          "observed": 0.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 6,
+          "predicted": 0.2591095168766193,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 14,
+          "predicted": 0.3513083824708789,
+          "observed": 0.35714285714285715
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 7,
+          "predicted": 0.44806263242829364,
+          "observed": 0.5714285714285714
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "42714abfa8cf612ea512c9d83640069802c736c12fe8812d3fb3fe9b75669bc0",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "COMBINED": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 28,
+    "states": {
+      "ABSTAIN": 28
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      6
+    ],
+    "uncertainty": {
+      "kind": "N/A_NO_DECIDED_RESULTS",
+      "low": null,
+      "high": null,
+      "dependence_aware": false
+    },
+    "coverage": 0.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P90",
+    "week_view": "6",
+    "available": 28,
+    "selected": 0,
+    "decided": 0,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 27,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.3291343899592386,
+      "half_multiclass_Brier": 0.3291343899592386,
+      "three_state_log_loss": 0.8654129710446877,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 1,
+          "predicted": 0.19325107606272074,
+          "observed": 1.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 7,
+          "predicted": 0.27523398039443303,
+          "observed": 0.5714285714285714
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 15,
+          "predicted": 0.34415044172801984,
+          "observed": 0.6666666666666666
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 3,
+          "predicted": 0.4476854185148724,
+          "observed": 0.6666666666666666
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 2,
+          "predicted": 0.5211902462791589,
+          "observed": 0.5
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c01b7d82527ab3bc87582a4a99c25bc18c4f740fdbb65aa0df4a8df72bc45331",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "COMBINED": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 28,
+    "states": {
+      "ABSTAIN": 28
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      7
+    ],
+    "uncertainty": {
+      "kind": "N/A_NO_DECIDED_RESULTS",
+      "low": null,
+      "high": null,
+      "dependence_aware": false
+    },
+    "coverage": 0.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P90",
+    "week_view": "7",
+    "available": 28,
+    "selected": 0,
+    "decided": 0,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.25851722238047153,
+      "half_multiclass_Brier": 0.25851722238047153,
+      "three_state_log_loss": 0.7173113668756084,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 1,
+          "predicted": 0.1965943291979304,
+          "observed": 1.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 4,
+          "predicted": 0.2527125800693881,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 18,
+          "predicted": 0.35186435166686536,
+          "observed": 0.3333333333333333
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 5,
+          "predicted": 0.43379534396997943,
+          "observed": 0.4
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c04de3d0ce559e86a8b99e884ab08a6dce5ceb659b91a7ebc9d2b139b8b0f471",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "COMBINED": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 28,
+    "states": {
+      "ABSTAIN": 28
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      8
+    ],
+    "uncertainty": {
+      "kind": "N/A_NO_DECIDED_RESULTS",
+      "low": null,
+      "high": null,
+      "dependence_aware": false
+    },
+    "coverage": 0.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P90",
+    "week_view": "8",
+    "available": 28,
+    "selected": 0,
+    "decided": 0,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.28437758586997725,
+      "half_multiclass_Brier": 0.28437758586997725,
+      "three_state_log_loss": 0.7675498134189603,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 5,
+          "predicted": 0.2531614160743952,
+          "observed": 0.4
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 15,
+          "predicted": 0.35481902126875,
+          "observed": 0.6
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 5,
+          "predicted": 0.4252040965228809,
+          "observed": 0.4
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 3,
+          "predicted": 0.530803265263201,
+          "observed": 0.0
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "f168180f43840999417ab5c264a4cc8790d323f3fbbfbda7efd72f7ce9d3b266",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "COMBINED": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "eligible": 30,
+    "unavailable": 0,
+    "abstentions": 30,
+    "states": {
+      "ABSTAIN": 30
+    },
+    "games": 15,
+    "player_games": 30,
+    "weeks": [
+      9
+    ],
+    "uncertainty": {
+      "kind": "N/A_NO_DECIDED_RESULTS",
+      "low": null,
+      "high": null,
+      "dependence_aware": false
+    },
+    "coverage": 0.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P90",
+    "week_view": "9",
+    "available": 30,
+    "selected": 0,
+    "decided": 0,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 29,
+      "no_player_history_role_prior": 1
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 30
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 30,
+      "binary_Over_Brier": 0.2518029230388192,
+      "half_multiclass_Brier": 0.2518029230388192,
+      "three_state_log_loss": 0.7019545857795528,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 3,
+          "predicted": 0.16747834735505196,
+          "observed": 0.3333333333333333
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 4,
+          "predicted": 0.271088950809389,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 14,
+          "predicted": 0.34806900332766616,
+          "observed": 0.35714285714285715
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 6,
+          "predicted": 0.42679186270703884,
+          "observed": 0.6666666666666666
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 3,
+          "predicted": 0.5422944739991923,
+          "observed": 0.3333333333333333
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "e8255dd47d62ce66365cd826db5339224fa99c301fc68348aaa1e2ae6c6a1a01",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "COMBINED": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "eligible": 141,
+    "unavailable": 0,
+    "abstentions": 141,
+    "states": {
+      "ABSTAIN": 141
+    },
+    "games": 71,
+    "player_games": 141,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "N/A_NO_DECIDED_RESULTS",
+      "low": null,
+      "high": null,
+      "dependence_aware": false
+    },
+    "coverage": 0.0,
+    "model_key": "COMMON_EXPOSURE",
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "P90",
+    "week_view": "DK_ONLY",
+    "available": 141,
+    "selected": 0,
+    "decided": 0,
+    "unknown": 0,
+    "fallback_states": {
+      "none": 140,
+      "no_player_history_role_prior": 1
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 141,
+      "binary_Over_Brier": 0.27239968342586157,
+      "half_multiclass_Brier": 0.27239968342586157,
+      "three_state_log_loss": 0.7439412007541036,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 6,
+          "predicted": 0.1658613282693302,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 26,
+          "predicted": 0.26316569876568585,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 75,
+          "predicted": 0.35064152108641355,
+          "observed": 0.4533333333333333
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 26,
+          "predicted": 0.4359708869711234,
+          "observed": 0.5384615384615384
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 8,
+          "predicted": 0.5327092137931873,
+          "observed": 0.25
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "5aec9cff7ab3abb12f05e54c4b99f017292f3045c62ebe8423bcb833309e248f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 142,
+      "wins": 67,
+      "losses": 75,
+      "decided": 142,
+      "rate": 0.47183098591549294
+    },
+    "UNDER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "COMBINED": {
+      "selected": 142,
+      "wins": 67,
+      "losses": 75,
+      "decided": 142,
+      "rate": 0.47183098591549294
+    },
+    "eligible": 142,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 75,
+      "WIN": 67
+    },
+    "games": 71,
+    "player_games": 142,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.4142857142857143,
+      "high": 0.5633802816901409,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 1.0,
+    "model_key": "ALWAYS_OVER",
+    "procedure_id": "B_EXISTING_CONTROL:ALWAYS_OVER",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "ALWAYS_OVER",
+    "week_view": "ALL",
+    "available": 142,
+    "selected": 142,
+    "decided": 142,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 142
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "2c72099dcb1f72b52c8aa7be4aa7669152e1d8da0bbf330a6213d5da8616e09f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 28,
+      "wins": 12,
+      "losses": 16,
+      "decided": 28,
+      "rate": 0.42857142857142855
+    },
+    "UNDER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 12,
+      "losses": 16,
+      "decided": 28,
+      "rate": 0.42857142857142855
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 16,
+      "WIN": 12
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      5
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.26508547124123694,
+      "high": 0.6092921437253123,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "ALWAYS_OVER",
+    "procedure_id": "B_EXISTING_CONTROL:ALWAYS_OVER",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "ALWAYS_OVER",
+    "week_view": "5",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "42714abfa8cf612ea512c9d83640069802c736c12fe8812d3fb3fe9b75669bc0",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 28,
+      "wins": 18,
+      "losses": 10,
+      "decided": 28,
+      "rate": 0.6428571428571429
+    },
+    "UNDER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 18,
+      "losses": 10,
+      "decided": 28,
+      "rate": 0.6428571428571429
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 10,
+      "WIN": 18
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      6
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.4583030651442781,
+      "high": 0.7929417049226233,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "ALWAYS_OVER",
+    "procedure_id": "B_EXISTING_CONTROL:ALWAYS_OVER",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "ALWAYS_OVER",
+    "week_view": "6",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 27,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c01b7d82527ab3bc87582a4a99c25bc18c4f740fdbb65aa0df4a8df72bc45331",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 28,
+      "wins": 11,
+      "losses": 17,
+      "decided": 28,
+      "rate": 0.39285714285714285
+    },
+    "UNDER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 11,
+      "losses": 17,
+      "decided": 28,
+      "rate": 0.39285714285714285
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 17,
+      "WIN": 11
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      7
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.2356568654157959,
+      "high": 0.5759095570340281,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "ALWAYS_OVER",
+    "procedure_id": "B_EXISTING_CONTROL:ALWAYS_OVER",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "ALWAYS_OVER",
+    "week_view": "7",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c04de3d0ce559e86a8b99e884ab08a6dce5ceb659b91a7ebc9d2b139b8b0f471",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 28,
+      "wins": 13,
+      "losses": 15,
+      "decided": 28,
+      "rate": 0.4642857142857143
+    },
+    "UNDER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 13,
+      "losses": 15,
+      "decided": 28,
+      "rate": 0.4642857142857143
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 13,
+      "LOSS": 15
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      8
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.2953156998279538,
+      "high": 0.6418731076553209,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "ALWAYS_OVER",
+    "procedure_id": "B_EXISTING_CONTROL:ALWAYS_OVER",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "ALWAYS_OVER",
+    "week_view": "8",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "f168180f43840999417ab5c264a4cc8790d323f3fbbfbda7efd72f7ce9d3b266",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 30,
+      "wins": 13,
+      "losses": 17,
+      "decided": 30,
+      "rate": 0.43333333333333335
+    },
+    "UNDER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "COMBINED": {
+      "selected": 30,
+      "wins": 13,
+      "losses": 17,
+      "decided": 30,
+      "rate": 0.43333333333333335
+    },
+    "eligible": 30,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 17,
+      "WIN": 13
+    },
+    "games": 15,
+    "player_games": 30,
+    "weeks": [
+      9
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.2737748557646652,
+      "high": 0.6080269299918639,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "ALWAYS_OVER",
+    "procedure_id": "B_EXISTING_CONTROL:ALWAYS_OVER",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "ALWAYS_OVER",
+    "week_view": "9",
+    "available": 30,
+    "selected": 30,
+    "decided": 30,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 30
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 30
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "e8255dd47d62ce66365cd826db5339224fa99c301fc68348aaa1e2ae6c6a1a01",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 141,
+      "wins": 66,
+      "losses": 75,
+      "decided": 141,
+      "rate": 0.46808510638297873
+    },
+    "UNDER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "COMBINED": {
+      "selected": 141,
+      "wins": 66,
+      "losses": 75,
+      "decided": 141,
+      "rate": 0.46808510638297873
+    },
+    "eligible": 141,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 75,
+      "WIN": 66
+    },
+    "games": 71,
+    "player_games": 141,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.4142857142857143,
+      "high": 0.5539568345323741,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 1.0,
+    "model_key": "ALWAYS_OVER",
+    "procedure_id": "B_EXISTING_CONTROL:ALWAYS_OVER",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "ALWAYS_OVER",
+    "week_view": "DK_ONLY",
+    "available": 141,
+    "selected": 141,
+    "decided": 141,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 141
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "5aec9cff7ab3abb12f05e54c4b99f017292f3045c62ebe8423bcb833309e248f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 142,
+      "wins": 75,
+      "losses": 67,
+      "decided": 142,
+      "rate": 0.528169014084507
+    },
+    "COMBINED": {
+      "selected": 142,
+      "wins": 75,
+      "losses": 67,
+      "decided": 142,
+      "rate": 0.528169014084507
+    },
+    "eligible": 142,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 75,
+      "LOSS": 67
+    },
+    "games": 71,
+    "player_games": 142,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.43661971830985913,
+      "high": 0.5857142857142857,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 1.0,
+    "model_key": "ALWAYS_UNDER",
+    "procedure_id": "B_EXISTING_CONTROL:ALWAYS_UNDER",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "ALWAYS_UNDER",
+    "week_view": "ALL",
+    "available": 142,
+    "selected": 142,
+    "decided": 142,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 142
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "2c72099dcb1f72b52c8aa7be4aa7669152e1d8da0bbf330a6213d5da8616e09f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 28,
+      "wins": 16,
+      "losses": 12,
+      "decided": 28,
+      "rate": 0.5714285714285714
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 16,
+      "losses": 12,
+      "decided": 28,
+      "rate": 0.5714285714285714
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 16,
+      "LOSS": 12
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      5
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.3907078562746876,
+      "high": 0.734914528758763,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "ALWAYS_UNDER",
+    "procedure_id": "B_EXISTING_CONTROL:ALWAYS_UNDER",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "ALWAYS_UNDER",
+    "week_view": "5",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "42714abfa8cf612ea512c9d83640069802c736c12fe8812d3fb3fe9b75669bc0",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 28,
+      "wins": 10,
+      "losses": 18,
+      "decided": 28,
+      "rate": 0.35714285714285715
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 10,
+      "losses": 18,
+      "decided": 28,
+      "rate": 0.35714285714285715
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 10,
+      "LOSS": 18
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      6
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.2070582950773768,
+      "high": 0.5416969348557219,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "ALWAYS_UNDER",
+    "procedure_id": "B_EXISTING_CONTROL:ALWAYS_UNDER",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "ALWAYS_UNDER",
+    "week_view": "6",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 27,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c01b7d82527ab3bc87582a4a99c25bc18c4f740fdbb65aa0df4a8df72bc45331",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 28,
+      "wins": 17,
+      "losses": 11,
+      "decided": 28,
+      "rate": 0.6071428571428571
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 17,
+      "losses": 11,
+      "decided": 28,
+      "rate": 0.6071428571428571
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 17,
+      "LOSS": 11
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      7
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.42409044296597176,
+      "high": 0.764343134584204,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "ALWAYS_UNDER",
+    "procedure_id": "B_EXISTING_CONTROL:ALWAYS_UNDER",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "ALWAYS_UNDER",
+    "week_view": "7",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c04de3d0ce559e86a8b99e884ab08a6dce5ceb659b91a7ebc9d2b139b8b0f471",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 28,
+      "wins": 15,
+      "losses": 13,
+      "decided": 28,
+      "rate": 0.5357142857142857
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 15,
+      "losses": 13,
+      "decided": 28,
+      "rate": 0.5357142857142857
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 13,
+      "WIN": 15
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      8
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.358126892344679,
+      "high": 0.7046843001720462,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "ALWAYS_UNDER",
+    "procedure_id": "B_EXISTING_CONTROL:ALWAYS_UNDER",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "ALWAYS_UNDER",
+    "week_view": "8",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "f168180f43840999417ab5c264a4cc8790d323f3fbbfbda7efd72f7ce9d3b266",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 30,
+      "wins": 17,
+      "losses": 13,
+      "decided": 30,
+      "rate": 0.5666666666666667
+    },
+    "COMBINED": {
+      "selected": 30,
+      "wins": 17,
+      "losses": 13,
+      "decided": 30,
+      "rate": 0.5666666666666667
+    },
+    "eligible": 30,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 17,
+      "LOSS": 13
+    },
+    "games": 15,
+    "player_games": 30,
+    "weeks": [
+      9
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.3919730700081361,
+      "high": 0.7262251442353347,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "ALWAYS_UNDER",
+    "procedure_id": "B_EXISTING_CONTROL:ALWAYS_UNDER",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "ALWAYS_UNDER",
+    "week_view": "9",
+    "available": 30,
+    "selected": 30,
+    "decided": 30,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 30
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 30
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "e8255dd47d62ce66365cd826db5339224fa99c301fc68348aaa1e2ae6c6a1a01",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 141,
+      "wins": 75,
+      "losses": 66,
+      "decided": 141,
+      "rate": 0.5319148936170213
+    },
+    "COMBINED": {
+      "selected": 141,
+      "wins": 75,
+      "losses": 66,
+      "decided": 141,
+      "rate": 0.5319148936170213
+    },
+    "eligible": 141,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 75,
+      "LOSS": 66
+    },
+    "games": 71,
+    "player_games": 141,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.4460431654676259,
+      "high": 0.5857142857142857,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 1.0,
+    "model_key": "ALWAYS_UNDER",
+    "procedure_id": "B_EXISTING_CONTROL:ALWAYS_UNDER",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "ALWAYS_UNDER",
+    "week_view": "DK_ONLY",
+    "available": 141,
+    "selected": 141,
+    "decided": 141,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 141
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "5aec9cff7ab3abb12f05e54c4b99f017292f3045c62ebe8423bcb833309e248f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 50,
+      "wins": 28,
+      "losses": 22,
+      "decided": 50,
+      "rate": 0.56
+    },
+    "UNDER": {
+      "selected": 91,
+      "wins": 53,
+      "losses": 38,
+      "decided": 91,
+      "rate": 0.5824175824175825
+    },
+    "COMBINED": {
+      "selected": 141,
+      "wins": 81,
+      "losses": 60,
+      "decided": 141,
+      "rate": 0.574468085106383
+    },
+    "eligible": 142,
+    "unavailable": 0,
+    "abstentions": 1,
+    "states": {
+      "WIN": 81,
+      "LOSS": 60,
+      "ABSTAIN": 1
+    },
+    "games": 71,
+    "player_games": 142,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.4791666666666667,
+      "high": 0.6714285714285714,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 0.9929577464788732,
+    "model_key": "SAVED_ADJUSTED",
+    "procedure_id": "B_EXISTING_CONTROL:SAVED_ADJUSTED",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "SAVED_ADJUSTED",
+    "week_view": "ALL",
+    "available": 142,
+    "selected": 141,
+    "decided": 141,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 142
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 142,
+      "MAE": 6.281549295774648,
+      "MSE": 70.85213943661972,
+      "bias": -0.6461971830985915
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "2c72099dcb1f72b52c8aa7be4aa7669152e1d8da0bbf330a6213d5da8616e09f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 9,
+      "wins": 5,
+      "losses": 4,
+      "decided": 9,
+      "rate": 0.5555555555555556
+    },
+    "UNDER": {
+      "selected": 19,
+      "wins": 12,
+      "losses": 7,
+      "decided": 19,
+      "rate": 0.631578947368421
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 17,
+      "losses": 11,
+      "decided": 28,
+      "rate": 0.6071428571428571
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 17,
+      "LOSS": 11
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      5
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.42409044296597176,
+      "high": 0.764343134584204,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "SAVED_ADJUSTED",
+    "procedure_id": "B_EXISTING_CONTROL:SAVED_ADJUSTED",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "SAVED_ADJUSTED",
+    "week_view": "5",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 6.273571428571429,
+      "MSE": 73.95802142857143,
+      "bias": -2.2971428571428576
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "42714abfa8cf612ea512c9d83640069802c736c12fe8812d3fb3fe9b75669bc0",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 8,
+      "wins": 7,
+      "losses": 1,
+      "decided": 8,
+      "rate": 0.875
+    },
+    "UNDER": {
+      "selected": 20,
+      "wins": 9,
+      "losses": 11,
+      "decided": 20,
+      "rate": 0.45
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 16,
+      "losses": 12,
+      "decided": 28,
+      "rate": 0.5714285714285714
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 16,
+      "LOSS": 12
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      6
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.3907078562746876,
+      "high": 0.734914528758763,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "SAVED_ADJUSTED",
+    "procedure_id": "B_EXISTING_CONTROL:SAVED_ADJUSTED",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "SAVED_ADJUSTED",
+    "week_view": "6",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 27,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 7.081071428571428,
+      "MSE": 85.10081071428571,
+      "bias": -4.9817857142857145
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c01b7d82527ab3bc87582a4a99c25bc18c4f740fdbb65aa0df4a8df72bc45331",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 6,
+      "wins": 5,
+      "losses": 1,
+      "decided": 6,
+      "rate": 0.8333333333333334
+    },
+    "UNDER": {
+      "selected": 22,
+      "wins": 16,
+      "losses": 6,
+      "decided": 22,
+      "rate": 0.7272727272727273
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 21,
+      "losses": 7,
+      "decided": 28,
+      "rate": 0.75
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 21,
+      "LOSS": 7
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      7
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.5664432968100104,
+      "high": 0.8732350508070668,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "SAVED_ADJUSTED",
+    "procedure_id": "B_EXISTING_CONTROL:SAVED_ADJUSTED",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "SAVED_ADJUSTED",
+    "week_view": "7",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 5.4275,
+      "MSE": 49.88668214285715,
+      "bias": 0.46107142857142847
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c04de3d0ce559e86a8b99e884ab08a6dce5ceb659b91a7ebc9d2b139b8b0f471",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 10,
+      "wins": 5,
+      "losses": 5,
+      "decided": 10,
+      "rate": 0.5
+    },
+    "UNDER": {
+      "selected": 18,
+      "wins": 10,
+      "losses": 8,
+      "decided": 18,
+      "rate": 0.5555555555555556
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 15,
+      "losses": 13,
+      "decided": 28,
+      "rate": 0.5357142857142857
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 13,
+      "WIN": 15
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      8
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.358126892344679,
+      "high": 0.7046843001720462,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "SAVED_ADJUSTED",
+    "procedure_id": "B_EXISTING_CONTROL:SAVED_ADJUSTED",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "SAVED_ADJUSTED",
+    "week_view": "8",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 7.589999999999999,
+      "MSE": 110.28183571428573,
+      "bias": 2.015714285714286
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "f168180f43840999417ab5c264a4cc8790d323f3fbbfbda7efd72f7ce9d3b266",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 17,
+      "wins": 6,
+      "losses": 11,
+      "decided": 17,
+      "rate": 0.35294117647058826
+    },
+    "UNDER": {
+      "selected": 12,
+      "wins": 6,
+      "losses": 6,
+      "decided": 12,
+      "rate": 0.5
+    },
+    "COMBINED": {
+      "selected": 29,
+      "wins": 12,
+      "losses": 17,
+      "decided": 29,
+      "rate": 0.41379310344827586
+    },
+    "eligible": 30,
+    "unavailable": 0,
+    "abstentions": 1,
+    "states": {
+      "LOSS": 17,
+      "WIN": 12,
+      "ABSTAIN": 1
+    },
+    "games": 15,
+    "player_games": 30,
+    "weeks": [
+      9
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.255131773413224,
+      "high": 0.5926216401212141,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 0.9666666666666667,
+    "model_key": "SAVED_ADJUSTED",
+    "procedure_id": "B_EXISTING_CONTROL:SAVED_ADJUSTED",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "SAVED_ADJUSTED",
+    "week_view": "9",
+    "available": 30,
+    "selected": 29,
+    "decided": 29,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 30
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 30
+    },
+    "numerical": {
+      "scored": 30,
+      "MAE": 5.118666666666667,
+      "MSE": 37.42126666666666,
+      "bias": 1.4233333333333333
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "e8255dd47d62ce66365cd826db5339224fa99c301fc68348aaa1e2ae6c6a1a01",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 49,
+      "wins": 27,
+      "losses": 22,
+      "decided": 49,
+      "rate": 0.5510204081632653
+    },
+    "UNDER": {
+      "selected": 91,
+      "wins": 53,
+      "losses": 38,
+      "decided": 91,
+      "rate": 0.5824175824175825
+    },
+    "COMBINED": {
+      "selected": 140,
+      "wins": 80,
+      "losses": 60,
+      "decided": 140,
+      "rate": 0.5714285714285714
+    },
+    "eligible": 141,
+    "unavailable": 0,
+    "abstentions": 1,
+    "states": {
+      "WIN": 80,
+      "LOSS": 60,
+      "ABSTAIN": 1
+    },
+    "games": 71,
+    "player_games": 141,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.4788732394366197,
+      "high": 0.6690647482014388,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 0.9929078014184397,
+    "model_key": "SAVED_ADJUSTED",
+    "procedure_id": "B_EXISTING_CONTROL:SAVED_ADJUSTED",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "SAVED_ADJUSTED",
+    "week_view": "DK_ONLY",
+    "available": 141,
+    "selected": 140,
+    "decided": 140,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 141
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141
+    },
+    "numerical": {
+      "scored": 141,
+      "MAE": 6.231347517730496,
+      "MSE": 70.08875319148936,
+      "bias": -0.556028368794326
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "5aec9cff7ab3abb12f05e54c4b99f017292f3045c62ebe8423bcb833309e248f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 54,
+      "wins": 28,
+      "losses": 26,
+      "decided": 54,
+      "rate": 0.5185185185185185
+    },
+    "UNDER": {
+      "selected": 88,
+      "wins": 49,
+      "losses": 39,
+      "decided": 88,
+      "rate": 0.5568181818181818
+    },
+    "COMBINED": {
+      "selected": 142,
+      "wins": 77,
+      "losses": 65,
+      "decided": 142,
+      "rate": 0.5422535211267606
+    },
+    "eligible": 142,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 65,
+      "WIN": 77
+    },
+    "games": 71,
+    "player_games": 142,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.4863013698630137,
+      "high": 0.5857142857142857,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 1.0,
+    "model_key": "SAVED_RAW",
+    "procedure_id": "B_EXISTING_CONTROL:SAVED_RAW",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "SAVED_RAW",
+    "week_view": "ALL",
+    "available": 142,
+    "selected": 142,
+    "decided": 142,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 142
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 142,
+      "MAE": 6.28443661971831,
+      "MSE": 69.4438823943662,
+      "bias": -0.3102112676056339
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "2c72099dcb1f72b52c8aa7be4aa7669152e1d8da0bbf330a6213d5da8616e09f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 8,
+      "wins": 4,
+      "losses": 4,
+      "decided": 8,
+      "rate": 0.5
+    },
+    "UNDER": {
+      "selected": 20,
+      "wins": 12,
+      "losses": 8,
+      "decided": 20,
+      "rate": 0.6
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 16,
+      "losses": 12,
+      "decided": 28,
+      "rate": 0.5714285714285714
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 12,
+      "WIN": 16
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      5
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.3907078562746876,
+      "high": 0.734914528758763,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "SAVED_RAW",
+    "procedure_id": "B_EXISTING_CONTROL:SAVED_RAW",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "SAVED_RAW",
+    "week_view": "5",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 6.765,
+      "MSE": 78.99346428571428,
+      "bias": -1.7885714285714285
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "42714abfa8cf612ea512c9d83640069802c736c12fe8812d3fb3fe9b75669bc0",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 9,
+      "wins": 7,
+      "losses": 2,
+      "decided": 9,
+      "rate": 0.7777777777777778
+    },
+    "UNDER": {
+      "selected": 19,
+      "wins": 8,
+      "losses": 11,
+      "decided": 19,
+      "rate": 0.42105263157894735
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 15,
+      "losses": 13,
+      "decided": 28,
+      "rate": 0.5357142857142857
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 15,
+      "LOSS": 13
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      6
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.358126892344679,
+      "high": 0.7046843001720462,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "SAVED_RAW",
+    "procedure_id": "B_EXISTING_CONTROL:SAVED_RAW",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "SAVED_RAW",
+    "week_view": "6",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 27,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 7.052142857142857,
+      "MSE": 85.08515714285714,
+      "bias": -4.694285714285714
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c01b7d82527ab3bc87582a4a99c25bc18c4f740fdbb65aa0df4a8df72bc45331",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 9,
+      "wins": 4,
+      "losses": 5,
+      "decided": 9,
+      "rate": 0.4444444444444444
+    },
+    "UNDER": {
+      "selected": 19,
+      "wins": 12,
+      "losses": 7,
+      "decided": 19,
+      "rate": 0.631578947368421
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 16,
+      "losses": 12,
+      "decided": 28,
+      "rate": 0.5714285714285714
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 12,
+      "WIN": 16
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      7
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.3907078562746876,
+      "high": 0.734914528758763,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "SAVED_RAW",
+    "procedure_id": "B_EXISTING_CONTROL:SAVED_RAW",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "SAVED_RAW",
+    "week_view": "7",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 5.629642857142857,
+      "MSE": 50.01288928571428,
+      "bias": 0.7446428571428573
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c04de3d0ce559e86a8b99e884ab08a6dce5ceb659b91a7ebc9d2b139b8b0f471",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 10,
+      "wins": 6,
+      "losses": 4,
+      "decided": 10,
+      "rate": 0.6
+    },
+    "UNDER": {
+      "selected": 18,
+      "wins": 11,
+      "losses": 7,
+      "decided": 18,
+      "rate": 0.6111111111111112
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 17,
+      "losses": 11,
+      "decided": 28,
+      "rate": 0.6071428571428571
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 11,
+      "WIN": 17
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      8
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.42409044296597176,
+      "high": 0.764343134584204,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "SAVED_RAW",
+    "procedure_id": "B_EXISTING_CONTROL:SAVED_RAW",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "SAVED_RAW",
+    "week_view": "8",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 28,
+      "MAE": 7.480357142857143,
+      "MSE": 104.57156071428571,
+      "bias": 2.3410714285714285
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "f168180f43840999417ab5c264a4cc8790d323f3fbbfbda7efd72f7ce9d3b266",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 18,
+      "wins": 7,
+      "losses": 11,
+      "decided": 18,
+      "rate": 0.3888888888888889
+    },
+    "UNDER": {
+      "selected": 12,
+      "wins": 6,
+      "losses": 6,
+      "decided": 12,
+      "rate": 0.5
+    },
+    "COMBINED": {
+      "selected": 30,
+      "wins": 13,
+      "losses": 17,
+      "decided": 30,
+      "rate": 0.43333333333333335
+    },
+    "eligible": 30,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 17,
+      "WIN": 13
+    },
+    "games": 15,
+    "player_games": 30,
+    "weeks": [
+      9
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.2737748557646652,
+      "high": 0.6080269299918639,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "SAVED_RAW",
+    "procedure_id": "B_EXISTING_CONTROL:SAVED_RAW",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "SAVED_RAW",
+    "week_view": "9",
+    "available": 30,
+    "selected": 30,
+    "decided": 30,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 30
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 30
+    },
+    "numerical": {
+      "scored": 30,
+      "MAE": 4.614333333333334,
+      "MSE": 31.282176666666665,
+      "bias": 1.702333333333333
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "e8255dd47d62ce66365cd826db5339224fa99c301fc68348aaa1e2ae6c6a1a01",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 53,
+      "wins": 27,
+      "losses": 26,
+      "decided": 53,
+      "rate": 0.5094339622641509
+    },
+    "UNDER": {
+      "selected": 88,
+      "wins": 49,
+      "losses": 39,
+      "decided": 88,
+      "rate": 0.5568181818181818
+    },
+    "COMBINED": {
+      "selected": 141,
+      "wins": 76,
+      "losses": 65,
+      "decided": 141,
+      "rate": 0.5390070921985816
+    },
+    "eligible": 141,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 65,
+      "WIN": 76
+    },
+    "games": 71,
+    "player_games": 141,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.4827586206896552,
+      "high": 0.5857142857142857,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 1.0,
+    "model_key": "SAVED_RAW",
+    "procedure_id": "B_EXISTING_CONTROL:SAVED_RAW",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "SAVED_RAW",
+    "week_view": "DK_ONLY",
+    "available": 141,
+    "selected": 141,
+    "decided": 141,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 141
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141
+    },
+    "numerical": {
+      "scored": 141,
+      "MAE": 6.228156028368794,
+      "MSE": 68.50229007092199,
+      "bias": -0.21156028368794338
+    },
+    "probability": {
+      "events": 0,
+      "binary_Over_Brier": null,
+      "half_multiclass_Brier": null,
+      "three_state_log_loss": null,
+      "binary_Over_reliability": [],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "5aec9cff7ab3abb12f05e54c4b99f017292f3045c62ebe8423bcb833309e248f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 12,
+      "wins": 6,
+      "losses": 6,
+      "decided": 12,
+      "rate": 0.5
+    },
+    "UNDER": {
+      "selected": 130,
+      "wins": 69,
+      "losses": 61,
+      "decided": 130,
+      "rate": 0.5307692307692308
+    },
+    "COMBINED": {
+      "selected": 142,
+      "wins": 75,
+      "losses": 67,
+      "decided": 142,
+      "rate": 0.528169014084507
+    },
+    "eligible": 142,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 75,
+      "LOSS": 67
+    },
+    "games": 71,
+    "player_games": 142,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.4588898401826484,
+      "high": 0.6,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 1.0,
+    "model_key": "EARLIER_LINE_PREVALENCE",
+    "procedure_id": "B_EXISTING_CONTROL:EARLIER_LINE_PREVALENCE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "EARLIER_LINE_PREVALENCE",
+    "week_view": "ALL",
+    "available": 142,
+    "selected": 142,
+    "decided": 142,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 142
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 142,
+      "binary_Over_Brier": 0.26065455301810736,
+      "half_multiclass_Brier": 0.26065455301810736,
+      "three_state_log_loss": 0.7195298397512033,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 6,
+          "predicted": 0.18331862516898678,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 30,
+          "predicted": 0.24183824079818797,
+          "observed": 0.4
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 59,
+          "predicted": 0.3593874099033998,
+          "observed": 0.4576271186440678
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 35,
+          "predicted": 0.43720235770029514,
+          "observed": 0.5428571428571428
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 12,
+          "predicted": 0.5463356137946996,
+          "observed": 0.5
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "2c72099dcb1f72b52c8aa7be4aa7669152e1d8da0bbf330a6213d5da8616e09f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 3,
+      "wins": 2,
+      "losses": 1,
+      "decided": 3,
+      "rate": 0.6666666666666666
+    },
+    "UNDER": {
+      "selected": 25,
+      "wins": 15,
+      "losses": 10,
+      "decided": 25,
+      "rate": 0.6
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 17,
+      "losses": 11,
+      "decided": 28,
+      "rate": 0.6071428571428571
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 17,
+      "LOSS": 11
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      5
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.42409044296597176,
+      "high": 0.764343134584204,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "EARLIER_LINE_PREVALENCE",
+    "procedure_id": "B_EXISTING_CONTROL:EARLIER_LINE_PREVALENCE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "EARLIER_LINE_PREVALENCE",
+    "week_view": "5",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.23893278673291146,
+      "half_multiclass_Brier": 0.23893278673291146,
+      "three_state_log_loss": 0.6759431107079082,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 1,
+          "predicted": 0.18271604938271604,
+          "observed": 1.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 5,
+          "predicted": 0.24137867336766644,
+          "observed": 0.2
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 12,
+          "predicted": 0.3566948812586783,
+          "observed": 0.4166666666666667
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 7,
+          "predicted": 0.43847263586364116,
+          "observed": 0.42857142857142855
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 3,
+          "predicted": 0.5288230930372732,
+          "observed": 0.6666666666666666
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "42714abfa8cf612ea512c9d83640069802c736c12fe8812d3fb3fe9b75669bc0",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 2,
+      "wins": 2,
+      "losses": 0,
+      "decided": 2,
+      "rate": 1.0
+    },
+    "UNDER": {
+      "selected": 26,
+      "wins": 10,
+      "losses": 16,
+      "decided": 26,
+      "rate": 0.38461538461538464
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 12,
+      "losses": 16,
+      "decided": 28,
+      "rate": 0.42857142857142855
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 12,
+      "LOSS": 16
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      6
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.26508547124123694,
+      "high": 0.6092921437253123,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "EARLIER_LINE_PREVALENCE",
+    "procedure_id": "B_EXISTING_CONTROL:EARLIER_LINE_PREVALENCE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "EARLIER_LINE_PREVALENCE",
+    "week_view": "6",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 27,
+      "sleeper": 1
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.28732019381318036,
+      "half_multiclass_Brier": 0.28732019381318036,
+      "three_state_log_loss": 0.7746900880627886,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 1,
+          "predicted": 0.18399044205495818,
+          "observed": 0.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 8,
+          "predicted": 0.24358370250654632,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 7,
+          "predicted": 0.3667200909847969,
+          "observed": 0.5714285714285714
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 10,
+          "predicted": 0.4284255812221174,
+          "observed": 0.8
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 2,
+          "predicted": 0.5716911764705883,
+          "observed": 1.0
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c01b7d82527ab3bc87582a4a99c25bc18c4f740fdbb65aa0df4a8df72bc45331",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 2,
+      "wins": 1,
+      "losses": 1,
+      "decided": 2,
+      "rate": 0.5
+    },
+    "UNDER": {
+      "selected": 26,
+      "wins": 16,
+      "losses": 10,
+      "decided": 26,
+      "rate": 0.6153846153846154
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 17,
+      "losses": 11,
+      "decided": 28,
+      "rate": 0.6071428571428571
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 17,
+      "LOSS": 11
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      7
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.42409044296597176,
+      "high": 0.764343134584204,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "EARLIER_LINE_PREVALENCE",
+    "procedure_id": "B_EXISTING_CONTROL:EARLIER_LINE_PREVALENCE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "EARLIER_LINE_PREVALENCE",
+    "week_view": "7",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.24554851183349688,
+      "half_multiclass_Brier": 0.24554851183349688,
+      "three_state_log_loss": 0.6929977640705658,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 3,
+          "predicted": 0.1884302736911909,
+          "observed": 0.6666666666666666
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 8,
+          "predicted": 0.24109499057568862,
+          "observed": 0.375
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 10,
+          "predicted": 0.35634800115323295,
+          "observed": 0.2
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 5,
+          "predicted": 0.4349765258215963,
+          "observed": 0.6
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 2,
+          "predicted": 0.5404929577464789,
+          "observed": 0.5
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "c04de3d0ce559e86a8b99e884ab08a6dce5ceb659b91a7ebc9d2b139b8b0f471",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 1,
+      "wins": 1,
+      "losses": 0,
+      "decided": 1,
+      "rate": 1.0
+    },
+    "UNDER": {
+      "selected": 27,
+      "wins": 15,
+      "losses": 12,
+      "decided": 27,
+      "rate": 0.5555555555555556
+    },
+    "COMBINED": {
+      "selected": 28,
+      "wins": 16,
+      "losses": 12,
+      "decided": 28,
+      "rate": 0.5714285714285714
+    },
+    "eligible": 28,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "LOSS": 12,
+      "WIN": 16
+    },
+    "games": 14,
+    "player_games": 28,
+    "weeks": [
+      8
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.3907078562746876,
+      "high": 0.734914528758763,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "EARLIER_LINE_PREVALENCE",
+    "procedure_id": "B_EXISTING_CONTROL:EARLIER_LINE_PREVALENCE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "EARLIER_LINE_PREVALENCE",
+    "week_view": "8",
+    "available": 28,
+    "selected": 28,
+    "decided": 28,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 28
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 28
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 28,
+      "binary_Over_Brier": 0.25938188518121824,
+      "half_multiclass_Brier": 0.25938188518121824,
+      "three_state_log_loss": 0.7166452057778462,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 4,
+          "predicted": 0.23740137084056043,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 16,
+          "predicted": 0.3526355518074805,
+          "observed": 0.4375
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 7,
+          "predicted": 0.4471274238167111,
+          "observed": 0.42857142857142855
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 1,
+          "predicted": 0.5685840707964602,
+          "observed": 1.0
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "f168180f43840999417ab5c264a4cc8790d323f3fbbfbda7efd72f7ce9d3b266",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 4,
+      "wins": 0,
+      "losses": 4,
+      "decided": 4,
+      "rate": 0.0
+    },
+    "UNDER": {
+      "selected": 26,
+      "wins": 13,
+      "losses": 13,
+      "decided": 26,
+      "rate": 0.5
+    },
+    "COMBINED": {
+      "selected": 30,
+      "wins": 13,
+      "losses": 17,
+      "decided": 30,
+      "rate": 0.43333333333333335
+    },
+    "eligible": 30,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 13,
+      "LOSS": 17
+    },
+    "games": 15,
+    "player_games": 30,
+    "weeks": [
+      9
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.2737748557646652,
+      "high": 0.6080269299918639,
+      "dependence_aware": false,
+      "week_clusters": 1
+    },
+    "coverage": 1.0,
+    "model_key": "EARLIER_LINE_PREVALENCE",
+    "procedure_id": "B_EXISTING_CONTROL:EARLIER_LINE_PREVALENCE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "EARLIER_LINE_PREVALENCE",
+    "week_view": "9",
+    "available": 30,
+    "selected": 30,
+    "decided": 30,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 30
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 30
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 30,
+      "binary_Over_Brier": 0.27132706522895483,
+      "half_multiclass_Brier": 0.27132706522895483,
+      "three_state_log_loss": 0.736183484111194,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 1,
+          "predicted": 0.1679144385026738,
+          "observed": 0.0
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 5,
+          "predicted": 0.2442437658174371,
+          "observed": 0.4
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 14,
+          "predicted": 0.3679163665607751,
+          "observed": 0.6428571428571429
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 6,
+          "predicted": 0.4406239434031182,
+          "observed": 0.3333333333333333
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 4,
+          "predicted": 0.5441514367984956,
+          "observed": 0.0
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "e8255dd47d62ce66365cd826db5339224fa99c301fc68348aaa1e2ae6c6a1a01",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  },
+  {
+    "OVER": {
+      "selected": 11,
+      "wins": 5,
+      "losses": 6,
+      "decided": 11,
+      "rate": 0.45454545454545453
+    },
+    "UNDER": {
+      "selected": 130,
+      "wins": 69,
+      "losses": 61,
+      "decided": 130,
+      "rate": 0.5307692307692308
+    },
+    "COMBINED": {
+      "selected": 141,
+      "wins": 74,
+      "losses": 67,
+      "decided": 141,
+      "rate": 0.524822695035461
+    },
+    "eligible": 141,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 74,
+      "LOSS": 67
+    },
+    "games": 71,
+    "player_games": 141,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.4507042253521127,
+      "high": 0.6,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 1.0,
+    "model_key": "EARLIER_LINE_PREVALENCE",
+    "procedure_id": "B_EXISTING_CONTROL:EARLIER_LINE_PREVALENCE",
+    "category": "pass_att",
+    "role": "QB",
+    "policy": "EARLIER_LINE_PREVALENCE",
+    "week_view": "DK_ONLY",
+    "available": 141,
+    "selected": 141,
+    "decided": 141,
+    "unknown": 0,
+    "fallback_states": {
+      "None": 141
+    },
+    "missing_reasons": {},
+    "source_labels": {
+      "dk": 141
+    },
+    "numerical": {
+      "scored": 0,
+      "MAE": null,
+      "MSE": null,
+      "bias": null
+    },
+    "probability": {
+      "events": 141,
+      "binary_Over_Brier": 0.26109191887684713,
+      "half_multiclass_Brier": 0.26109191887684713,
+      "three_state_log_loss": 0.7204432983655248,
+      "binary_Over_reliability": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n": 6,
+          "predicted": 0.18331862516898678,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "n": 30,
+          "predicted": 0.24183824079818797,
+          "observed": 0.4
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "n": 59,
+          "predicted": 0.3593874099033998,
+          "observed": 0.4576271186440678
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "n": 35,
+          "predicted": 0.43720235770029514,
+          "observed": 0.5428571428571428
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "n": 11,
+          "predicted": 0.5456459815371768,
+          "observed": 0.45454545454545453
+        }
+      ],
+      "conditioning": "MODELED_PHYSICAL_PARTICIPATION_NOT_VENUE_NONVOID"
+    },
+    "membership_sha256": "5aec9cff7ab3abb12f05e54c4b99f017292f3045c62ebe8423bcb833309e248f",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_SOURCE_LABELLED_CURRENT_VINTAGE_DIAGNOSTIC",
+    "main_alternate_status": "UNCLASSIFIED",
+    "original_issuance": false
+  }
+]

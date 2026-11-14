@@ -1,0 +1,12 @@
+{
+  "id": "B_NATIVE142_PROBABILITY_CONTRACT_PARITY_v1",
+  "scope": "Verification of already emitted exact-law probability views only; no new policy or score",
+  "law_rows": 1328,
+  "nonzero_push_mass_rows": 0,
+  "maximum_push_mass": 0.0,
+  "actual_equal_line_rows": 0,
+  "strict_binary_Over_event": "Y > exact line; equality is not Over",
+  "half_multiclass_contract": "0.5*sum((p_event-I_event)^2) for OVER,UNDER,PUSH",
+  "aggregation": "Event counts and loss sums may be combined only on exact contract-compatible disjoint rows. AUC is never averaged; unknown early source/model parity remains explicit.",
+  "A_early_private_rows_independently_checked": false
+}

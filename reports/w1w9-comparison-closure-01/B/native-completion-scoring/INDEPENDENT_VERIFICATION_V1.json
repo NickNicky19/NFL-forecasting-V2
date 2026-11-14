@@ -1,0 +1,37 @@
+{
+  "id": "B_NATIVE142_INDEPENDENT_ARITHMETIC_VERIFICATION_v1",
+  "at_UTC": "2026-11-14T19:24:15.158162+00:00",
+  "state": "PASS_WITH_SOURCE_SCOPE_LIMITS",
+  "grade_checks": 6532,
+  "aggregate_side_checks": 1380,
+  "numerical_views": 460,
+  "strict_binary_Brier_views": 460,
+  "B0_B1_alias_rows": 568,
+  "legacy_known_time_mask": {
+    "C02_KNOWN_TARGET_TIME": {
+      "5": 28,
+      "6": 27,
+      "7": 25,
+      "8": 16,
+      "9": 0
+    },
+    "DIRECT_GLM_KNOWN_TARGET_TIME": {
+      "5": 28,
+      "6": 27,
+      "7": 25,
+      "8": 16,
+      "9": 0
+    }
+  },
+  "weekly_selective_membership_checks": 180,
+  "canonical_unique_records": 636,
+  "private_rows_SHA256": "dbdbf73a23fea1d7d8c90fde666163853f492b0e9686ae068b829b2bc2816a39",
+  "exact_C_scorer_reused": true,
+  "source_clock_authentication": false,
+  "private_A84_parity": false,
+  "new_NFL_observations": 0,
+  "new_fits": 0,
+  "new_HTTP": 0,
+  "source_lean_limit": "102 explicit source lean sides;40 explicit null source lean values have no selected side. Missing-versus-declared-abstention semantics not independently established. Do not call40 nulls intentional policy abstentions without source contract.",
+  "verified_scope": "Separate Decimal threshold grade calculation plus independent aggregate/metric sums and frozen-batch membership reconstruction; source provenance/training-fit parity not newly established."
+}

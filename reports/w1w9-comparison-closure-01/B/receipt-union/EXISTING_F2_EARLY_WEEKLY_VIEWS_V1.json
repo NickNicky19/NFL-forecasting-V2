@@ -1,0 +1,1584 @@
+{
+  "id": "B_EXISTING_F2_EARLY_OWNER_JOIN_REUSE_v1",
+  "state": "PASS_REUSE_EXISTING_COMPLETED_F2_W1_W4_OUTPUT_CELLS_NO_NEW_JOIN_OR_FIT",
+  "at_UTC": "2026-11-14T19:19:36.952174+00:00",
+  "procedure": "B-QB-ALIGNED-FRESHNESS-v1:F2",
+  "outputs": [
+    "mean",
+    "lower_median",
+    "P2"
+  ],
+  "information_policy": "DECLARED_KICKOFF_PLUS_48H_TIMING_SENSITIVITY;alignedtrainingandquery; currentvintagereconstructionnotpublicationauthentication",
+  "history": "H-RECENT;2022expandingfeaturememory; sameearlierconfigurationandfixedlearner",
+  "actual_weeks": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "eligible": 84,
+  "games": 48,
+  "records": [
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::mean",
+      "week": 1,
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "eligible": 10,
+      "available": 10,
+      "selected": 10,
+      "unavailable": 0,
+      "abstentions": 0,
+      "games": 6,
+      "player_games": 10,
+      "eligible_mask_sha256": "7900bbaf706574c5ab2cdab59bdbb9efce1a212a73bd385b3e0e3718a5251e29",
+      "decided_mask_sha256": "7900bbaf706574c5ab2cdab59bdbb9efce1a212a73bd385b3e0e3718a5251e29",
+      "numerical": {
+        "MAE": 4.218560962317737,
+        "MSE": 22.587762150700797,
+        "absolute_error_p90": 5.723486414026475,
+        "bias": -3.030536405796815,
+        "learned_or_fallback_states": {
+          "none": 10
+        },
+        "max_absolute_error": 8.707767331601929,
+        "scored": 10
+      },
+      "probability": {
+        "Brier": 0.21766323671100912,
+        "Over_event_AUC": 0.75,
+        "conditioning": "B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.",
+        "events": 10,
+        "infinite_log_loss_cases": 0,
+        "neutral_binary_half_Brier": 0.25,
+        "reliability_fixed_bins": [
+          {
+            "bin_index": 2,
+            "count": 1,
+            "observed_Over": 0.0,
+            "predicted_Over": 0.20661507315035188
+          },
+          {
+            "bin_index": 3,
+            "count": 4,
+            "observed_Over": 0.25,
+            "predicted_Over": 0.34272146920218705
+          },
+          {
+            "bin_index": 4,
+            "count": 5,
+            "observed_Over": 0.6,
+            "predicted_Over": 0.4333283496066335
+          }
+        ],
+        "three_state_log_loss": 0.6226922088884872
+      },
+      "states": {
+        "LOSS": 4,
+        "WIN": 6
+      },
+      "fallback_states": {
+        "none": 10
+      },
+      "source_appearance_states": null,
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES",
+      "OVER": {
+        "selected": 0,
+        "wins": null,
+        "losses": null,
+        "decided": 0,
+        "rate": null
+      },
+      "UNDER": {
+        "selected": 10,
+        "wins": 6,
+        "losses": 4,
+        "decided": 10,
+        "rate": 0.6
+      },
+      "COMBINED": {
+        "selected": 10,
+        "wins": 6,
+        "losses": 4,
+        "decided": 10,
+        "rate": 0.6
+      }
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::mean",
+      "week": 2,
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "eligible": 25,
+      "available": 25,
+      "selected": 25,
+      "unavailable": 0,
+      "abstentions": 0,
+      "games": 14,
+      "player_games": 25,
+      "eligible_mask_sha256": "7463c59fd09630e39585ed6df4bb1538b8a34a5a8e27c90087058845571c02e3",
+      "decided_mask_sha256": "7463c59fd09630e39585ed6df4bb1538b8a34a5a8e27c90087058845571c02e3",
+      "numerical": {
+        "MAE": 4.68297822189854,
+        "MSE": 31.28078903740472,
+        "absolute_error_p90": 8.68357001147055,
+        "bias": -2.4949004125216048,
+        "learned_or_fallback_states": {
+          "none": 25
+        },
+        "max_absolute_error": 13.707430618589829,
+        "scored": 25
+      },
+      "probability": {
+        "Brier": 0.2683643876836966,
+        "Over_event_AUC": 0.5,
+        "conditioning": "B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.",
+        "events": 25,
+        "infinite_log_loss_cases": 0,
+        "neutral_binary_half_Brier": 0.25,
+        "reliability_fixed_bins": [
+          {
+            "bin_index": 2,
+            "count": 2,
+            "observed_Over": 1.0,
+            "predicted_Over": 0.2965800362663037
+          },
+          {
+            "bin_index": 3,
+            "count": 6,
+            "observed_Over": 0.5,
+            "predicted_Over": 0.35064429463164765
+          },
+          {
+            "bin_index": 4,
+            "count": 11,
+            "observed_Over": 0.45454545454545453,
+            "predicted_Over": 0.45232661272586666
+          },
+          {
+            "bin_index": 5,
+            "count": 5,
+            "observed_Over": 0.8,
+            "predicted_Over": 0.5597225100111498
+          },
+          {
+            "bin_index": 6,
+            "count": 1,
+            "observed_Over": 1.0,
+            "predicted_Over": 0.622909916360844
+          }
+        ],
+        "three_state_log_loss": 0.7333532318499739
+      },
+      "states": {
+        "LOSS": 10,
+        "WIN": 15
+      },
+      "fallback_states": {
+        "none": 25
+      },
+      "source_appearance_states": null,
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES",
+      "OVER": {
+        "selected": 5,
+        "wins": 5,
+        "losses": 0,
+        "decided": 5,
+        "rate": 1.0
+      },
+      "UNDER": {
+        "selected": 20,
+        "wins": 10,
+        "losses": 10,
+        "decided": 20,
+        "rate": 0.5
+      },
+      "COMBINED": {
+        "selected": 25,
+        "wins": 15,
+        "losses": 10,
+        "decided": 25,
+        "rate": 0.6
+      }
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::mean",
+      "week": 3,
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "eligible": 26,
+      "available": 26,
+      "selected": 26,
+      "unavailable": 0,
+      "abstentions": 0,
+      "games": 15,
+      "player_games": 26,
+      "eligible_mask_sha256": "76dced0c24c9a55bf7807c2527866527aabb04adb2d73f7af3720bc54dc3d736",
+      "decided_mask_sha256": "76dced0c24c9a55bf7807c2527866527aabb04adb2d73f7af3720bc54dc3d736",
+      "numerical": {
+        "MAE": 5.058326430324465,
+        "MSE": 40.09243919481301,
+        "absolute_error_p90": 10.148239642012282,
+        "bias": -2.862206760818563,
+        "learned_or_fallback_states": {
+          "none": 26
+        },
+        "max_absolute_error": 18.477893767187332,
+        "scored": 26
+      },
+      "probability": {
+        "Brier": 0.25655669638007106,
+        "Over_event_AUC": 0.48214285714285715,
+        "conditioning": "B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.",
+        "events": 26,
+        "infinite_log_loss_cases": 0,
+        "neutral_binary_half_Brier": 0.25,
+        "reliability_fixed_bins": [
+          {
+            "bin_index": 2,
+            "count": 1,
+            "observed_Over": 0.0,
+            "predicted_Over": 0.20018406044714987
+          },
+          {
+            "bin_index": 3,
+            "count": 10,
+            "observed_Over": 0.4,
+            "predicted_Over": 0.36566649377215443
+          },
+          {
+            "bin_index": 4,
+            "count": 11,
+            "observed_Over": 0.6363636363636364,
+            "predicted_Over": 0.45396923239891157
+          },
+          {
+            "bin_index": 5,
+            "count": 3,
+            "observed_Over": 0.3333333333333333,
+            "predicted_Over": 0.5332472313446496
+          },
+          {
+            "bin_index": 6,
+            "count": 1,
+            "observed_Over": 0.0,
+            "predicted_Over": 0.6113610204227631
+          }
+        ],
+        "three_state_log_loss": 0.705053185727822
+      },
+      "states": {
+        "LOSS": 13,
+        "WIN": 13
+      },
+      "fallback_states": {
+        "none": 26
+      },
+      "source_appearance_states": null,
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES",
+      "OVER": {
+        "selected": 3,
+        "wins": 1,
+        "losses": 2,
+        "decided": 3,
+        "rate": 0.3333333333333333
+      },
+      "UNDER": {
+        "selected": 23,
+        "wins": 12,
+        "losses": 11,
+        "decided": 23,
+        "rate": 0.5217391304347826
+      },
+      "COMBINED": {
+        "selected": 26,
+        "wins": 13,
+        "losses": 13,
+        "decided": 26,
+        "rate": 0.5
+      }
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::mean",
+      "week": 4,
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "eligible": 23,
+      "available": 23,
+      "selected": 23,
+      "unavailable": 0,
+      "abstentions": 0,
+      "games": 13,
+      "player_games": 23,
+      "eligible_mask_sha256": "d20f8841a3fcb10bc97fd88860776a4d0fb2d580fa2ca13f26137de3fb7f93ec",
+      "decided_mask_sha256": "d20f8841a3fcb10bc97fd88860776a4d0fb2d580fa2ca13f26137de3fb7f93ec",
+      "numerical": {
+        "MAE": 5.910913055430477,
+        "MSE": 54.23209883444022,
+        "absolute_error_p90": 11.827187181607336,
+        "bias": -2.091446751115168,
+        "learned_or_fallback_states": {
+          "none": 23
+        },
+        "max_absolute_error": 16.446097722217985,
+        "scored": 23
+      },
+      "probability": {
+        "Brier": 0.2793160614605685,
+        "Over_event_AUC": 0.4230769230769231,
+        "conditioning": "B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.",
+        "events": 23,
+        "infinite_log_loss_cases": 0,
+        "neutral_binary_half_Brier": 0.25,
+        "reliability_fixed_bins": [
+          {
+            "bin_index": 2,
+            "count": 1,
+            "observed_Over": 1.0,
+            "predicted_Over": 0.28271572988900906
+          },
+          {
+            "bin_index": 3,
+            "count": 3,
+            "observed_Over": 0.6666666666666666,
+            "predicted_Over": 0.3786428505656431
+          },
+          {
+            "bin_index": 4,
+            "count": 12,
+            "observed_Over": 0.5,
+            "predicted_Over": 0.45394014191809934
+          },
+          {
+            "bin_index": 5,
+            "count": 6,
+            "observed_Over": 0.6666666666666666,
+            "predicted_Over": 0.5312504205700843
+          },
+          {
+            "bin_index": 6,
+            "count": 1,
+            "observed_Over": 0.0,
+            "predicted_Over": 0.6441575883459525
+          }
+        ],
+        "three_state_log_loss": 0.7546965005035824
+      },
+      "states": {
+        "LOSS": 12,
+        "WIN": 11
+      },
+      "fallback_states": {
+        "none": 23
+      },
+      "source_appearance_states": null,
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES",
+      "OVER": {
+        "selected": 5,
+        "wins": 3,
+        "losses": 2,
+        "decided": 5,
+        "rate": 0.6
+      },
+      "UNDER": {
+        "selected": 18,
+        "wins": 8,
+        "losses": 10,
+        "decided": 18,
+        "rate": 0.4444444444444444
+      },
+      "COMBINED": {
+        "selected": 23,
+        "wins": 11,
+        "losses": 12,
+        "decided": 23,
+        "rate": 0.4782608695652174
+      }
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::lower_median",
+      "week": 1,
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "eligible": 10,
+      "available": 10,
+      "selected": 10,
+      "unavailable": 0,
+      "abstentions": 0,
+      "games": 6,
+      "player_games": 10,
+      "eligible_mask_sha256": "7900bbaf706574c5ab2cdab59bdbb9efce1a212a73bd385b3e0e3718a5251e29",
+      "decided_mask_sha256": "7900bbaf706574c5ab2cdab59bdbb9efce1a212a73bd385b3e0e3718a5251e29",
+      "numerical": {
+        "MAE": 3.5,
+        "MSE": 17.1,
+        "absolute_error_p90": 7.0,
+        "bias": -1.7,
+        "learned_or_fallback_states": {
+          "none": 10
+        },
+        "max_absolute_error": 8.0,
+        "scored": 10
+      },
+      "probability": {
+        "Brier": 0.21766323671100912,
+        "Over_event_AUC": 0.75,
+        "conditioning": "B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.",
+        "events": 10,
+        "infinite_log_loss_cases": 0,
+        "neutral_binary_half_Brier": 0.25,
+        "reliability_fixed_bins": [
+          {
+            "bin_index": 2,
+            "count": 1,
+            "observed_Over": 0.0,
+            "predicted_Over": 0.20661507315035188
+          },
+          {
+            "bin_index": 3,
+            "count": 4,
+            "observed_Over": 0.25,
+            "predicted_Over": 0.34272146920218705
+          },
+          {
+            "bin_index": 4,
+            "count": 5,
+            "observed_Over": 0.6,
+            "predicted_Over": 0.4333283496066335
+          }
+        ],
+        "three_state_log_loss": 0.6226922088884872
+      },
+      "states": {
+        "LOSS": 4,
+        "WIN": 6
+      },
+      "fallback_states": {
+        "none": 10
+      },
+      "source_appearance_states": null,
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES",
+      "OVER": {
+        "selected": 0,
+        "wins": null,
+        "losses": null,
+        "decided": 0,
+        "rate": null
+      },
+      "UNDER": {
+        "selected": 10,
+        "wins": 6,
+        "losses": 4,
+        "decided": 10,
+        "rate": 0.6
+      },
+      "COMBINED": {
+        "selected": 10,
+        "wins": 6,
+        "losses": 4,
+        "decided": 10,
+        "rate": 0.6
+      }
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::lower_median",
+      "week": 2,
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "eligible": 25,
+      "available": 25,
+      "selected": 25,
+      "unavailable": 0,
+      "abstentions": 0,
+      "games": 14,
+      "player_games": 25,
+      "eligible_mask_sha256": "7463c59fd09630e39585ed6df4bb1538b8a34a5a8e27c90087058845571c02e3",
+      "decided_mask_sha256": "7463c59fd09630e39585ed6df4bb1538b8a34a5a8e27c90087058845571c02e3",
+      "numerical": {
+        "MAE": 4.52,
+        "MSE": 28.84,
+        "absolute_error_p90": 8.0,
+        "bias": -1.88,
+        "learned_or_fallback_states": {
+          "none": 25
+        },
+        "max_absolute_error": 13.0,
+        "scored": 25
+      },
+      "probability": {
+        "Brier": 0.2683643876836966,
+        "Over_event_AUC": 0.5,
+        "conditioning": "B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.",
+        "events": 25,
+        "infinite_log_loss_cases": 0,
+        "neutral_binary_half_Brier": 0.25,
+        "reliability_fixed_bins": [
+          {
+            "bin_index": 2,
+            "count": 2,
+            "observed_Over": 1.0,
+            "predicted_Over": 0.2965800362663037
+          },
+          {
+            "bin_index": 3,
+            "count": 6,
+            "observed_Over": 0.5,
+            "predicted_Over": 0.35064429463164765
+          },
+          {
+            "bin_index": 4,
+            "count": 11,
+            "observed_Over": 0.45454545454545453,
+            "predicted_Over": 0.45232661272586666
+          },
+          {
+            "bin_index": 5,
+            "count": 5,
+            "observed_Over": 0.8,
+            "predicted_Over": 0.5597225100111498
+          },
+          {
+            "bin_index": 6,
+            "count": 1,
+            "observed_Over": 1.0,
+            "predicted_Over": 0.622909916360844
+          }
+        ],
+        "three_state_log_loss": 0.7333532318499739
+      },
+      "states": {
+        "LOSS": 11,
+        "WIN": 14
+      },
+      "fallback_states": {
+        "none": 25
+      },
+      "source_appearance_states": null,
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES",
+      "OVER": {
+        "selected": 6,
+        "wins": 5,
+        "losses": 1,
+        "decided": 6,
+        "rate": 0.8333333333333334
+      },
+      "UNDER": {
+        "selected": 19,
+        "wins": 9,
+        "losses": 10,
+        "decided": 19,
+        "rate": 0.47368421052631576
+      },
+      "COMBINED": {
+        "selected": 25,
+        "wins": 14,
+        "losses": 11,
+        "decided": 25,
+        "rate": 0.56
+      }
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::lower_median",
+      "week": 3,
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "eligible": 26,
+      "available": 26,
+      "selected": 26,
+      "unavailable": 0,
+      "abstentions": 0,
+      "games": 15,
+      "player_games": 26,
+      "eligible_mask_sha256": "76dced0c24c9a55bf7807c2527866527aabb04adb2d73f7af3720bc54dc3d736",
+      "decided_mask_sha256": "76dced0c24c9a55bf7807c2527866527aabb04adb2d73f7af3720bc54dc3d736",
+      "numerical": {
+        "MAE": 4.961538461538462,
+        "MSE": 36.19230769230769,
+        "absolute_error_p90": 9.0,
+        "bias": -2.269230769230769,
+        "learned_or_fallback_states": {
+          "none": 26
+        },
+        "max_absolute_error": 17.0,
+        "scored": 26
+      },
+      "probability": {
+        "Brier": 0.25655669638007106,
+        "Over_event_AUC": 0.48214285714285715,
+        "conditioning": "B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.",
+        "events": 26,
+        "infinite_log_loss_cases": 0,
+        "neutral_binary_half_Brier": 0.25,
+        "reliability_fixed_bins": [
+          {
+            "bin_index": 2,
+            "count": 1,
+            "observed_Over": 0.0,
+            "predicted_Over": 0.20018406044714987
+          },
+          {
+            "bin_index": 3,
+            "count": 10,
+            "observed_Over": 0.4,
+            "predicted_Over": 0.36566649377215443
+          },
+          {
+            "bin_index": 4,
+            "count": 11,
+            "observed_Over": 0.6363636363636364,
+            "predicted_Over": 0.45396923239891157
+          },
+          {
+            "bin_index": 5,
+            "count": 3,
+            "observed_Over": 0.3333333333333333,
+            "predicted_Over": 0.5332472313446496
+          },
+          {
+            "bin_index": 6,
+            "count": 1,
+            "observed_Over": 0.0,
+            "predicted_Over": 0.6113610204227631
+          }
+        ],
+        "three_state_log_loss": 0.705053185727822
+      },
+      "states": {
+        "LOSS": 14,
+        "WIN": 12
+      },
+      "fallback_states": {
+        "none": 26
+      },
+      "source_appearance_states": null,
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES",
+      "OVER": {
+        "selected": 4,
+        "wins": 1,
+        "losses": 3,
+        "decided": 4,
+        "rate": 0.25
+      },
+      "UNDER": {
+        "selected": 22,
+        "wins": 11,
+        "losses": 11,
+        "decided": 22,
+        "rate": 0.5
+      },
+      "COMBINED": {
+        "selected": 26,
+        "wins": 12,
+        "losses": 14,
+        "decided": 26,
+        "rate": 0.46153846153846156
+      }
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::lower_median",
+      "week": 4,
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "eligible": 23,
+      "available": 23,
+      "selected": 23,
+      "unavailable": 0,
+      "abstentions": 0,
+      "games": 13,
+      "player_games": 23,
+      "eligible_mask_sha256": "d20f8841a3fcb10bc97fd88860776a4d0fb2d580fa2ca13f26137de3fb7f93ec",
+      "decided_mask_sha256": "d20f8841a3fcb10bc97fd88860776a4d0fb2d580fa2ca13f26137de3fb7f93ec",
+      "numerical": {
+        "MAE": 5.869565217391305,
+        "MSE": 53.869565217391305,
+        "absolute_error_p90": 12.0,
+        "bias": -1.7826086956521738,
+        "learned_or_fallback_states": {
+          "none": 23
+        },
+        "max_absolute_error": 16.0,
+        "scored": 23
+      },
+      "probability": {
+        "Brier": 0.2793160614605685,
+        "Over_event_AUC": 0.4230769230769231,
+        "conditioning": "B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.",
+        "events": 23,
+        "infinite_log_loss_cases": 0,
+        "neutral_binary_half_Brier": 0.25,
+        "reliability_fixed_bins": [
+          {
+            "bin_index": 2,
+            "count": 1,
+            "observed_Over": 1.0,
+            "predicted_Over": 0.28271572988900906
+          },
+          {
+            "bin_index": 3,
+            "count": 3,
+            "observed_Over": 0.6666666666666666,
+            "predicted_Over": 0.3786428505656431
+          },
+          {
+            "bin_index": 4,
+            "count": 12,
+            "observed_Over": 0.5,
+            "predicted_Over": 0.45394014191809934
+          },
+          {
+            "bin_index": 5,
+            "count": 6,
+            "observed_Over": 0.6666666666666666,
+            "predicted_Over": 0.5312504205700843
+          },
+          {
+            "bin_index": 6,
+            "count": 1,
+            "observed_Over": 0.0,
+            "predicted_Over": 0.6441575883459525
+          }
+        ],
+        "three_state_log_loss": 0.7546965005035824
+      },
+      "states": {
+        "LOSS": 12,
+        "WIN": 11
+      },
+      "fallback_states": {
+        "none": 23
+      },
+      "source_appearance_states": null,
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES",
+      "OVER": {
+        "selected": 7,
+        "wins": 4,
+        "losses": 3,
+        "decided": 7,
+        "rate": 0.5714285714285714
+      },
+      "UNDER": {
+        "selected": 16,
+        "wins": 7,
+        "losses": 9,
+        "decided": 16,
+        "rate": 0.4375
+      },
+      "COMBINED": {
+        "selected": 23,
+        "wins": 11,
+        "losses": 12,
+        "decided": 23,
+        "rate": 0.4782608695652174
+      }
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::P2",
+      "week": 1,
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "eligible": 10,
+      "available": 10,
+      "selected": 10,
+      "unavailable": 0,
+      "abstentions": 0,
+      "games": 6,
+      "player_games": 10,
+      "eligible_mask_sha256": "7900bbaf706574c5ab2cdab59bdbb9efce1a212a73bd385b3e0e3718a5251e29",
+      "decided_mask_sha256": "7900bbaf706574c5ab2cdab59bdbb9efce1a212a73bd385b3e0e3718a5251e29",
+      "numerical": {
+        "MAE": null,
+        "MSE": null,
+        "absolute_error_p90": null,
+        "bias": null,
+        "learned_or_fallback_states": {},
+        "max_absolute_error": null,
+        "scored": 0
+      },
+      "probability": {
+        "Brier": 0.21766323671100912,
+        "Over_event_AUC": 0.75,
+        "conditioning": "B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.",
+        "events": 10,
+        "infinite_log_loss_cases": 0,
+        "neutral_binary_half_Brier": 0.25,
+        "reliability_fixed_bins": [
+          {
+            "bin_index": 2,
+            "count": 1,
+            "observed_Over": 0.0,
+            "predicted_Over": 0.20661507315035188
+          },
+          {
+            "bin_index": 3,
+            "count": 4,
+            "observed_Over": 0.25,
+            "predicted_Over": 0.34272146920218705
+          },
+          {
+            "bin_index": 4,
+            "count": 5,
+            "observed_Over": 0.6,
+            "predicted_Over": 0.4333283496066335
+          }
+        ],
+        "three_state_log_loss": 0.6226922088884872
+      },
+      "states": {
+        "LOSS": 4,
+        "WIN": 6
+      },
+      "fallback_states": {
+        "none": 10
+      },
+      "source_appearance_states": null,
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES",
+      "OVER": {
+        "selected": 0,
+        "wins": null,
+        "losses": null,
+        "decided": 0,
+        "rate": null
+      },
+      "UNDER": {
+        "selected": 10,
+        "wins": 6,
+        "losses": 4,
+        "decided": 10,
+        "rate": 0.6
+      },
+      "COMBINED": {
+        "selected": 10,
+        "wins": 6,
+        "losses": 4,
+        "decided": 10,
+        "rate": 0.6
+      }
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::P2",
+      "week": 2,
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "eligible": 25,
+      "available": 25,
+      "selected": 25,
+      "unavailable": 0,
+      "abstentions": 0,
+      "games": 14,
+      "player_games": 25,
+      "eligible_mask_sha256": "7463c59fd09630e39585ed6df4bb1538b8a34a5a8e27c90087058845571c02e3",
+      "decided_mask_sha256": "7463c59fd09630e39585ed6df4bb1538b8a34a5a8e27c90087058845571c02e3",
+      "numerical": {
+        "MAE": null,
+        "MSE": null,
+        "absolute_error_p90": null,
+        "bias": null,
+        "learned_or_fallback_states": {},
+        "max_absolute_error": null,
+        "scored": 0
+      },
+      "probability": {
+        "Brier": 0.2683643876836966,
+        "Over_event_AUC": 0.5,
+        "conditioning": "B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.",
+        "events": 25,
+        "infinite_log_loss_cases": 0,
+        "neutral_binary_half_Brier": 0.25,
+        "reliability_fixed_bins": [
+          {
+            "bin_index": 2,
+            "count": 2,
+            "observed_Over": 1.0,
+            "predicted_Over": 0.2965800362663037
+          },
+          {
+            "bin_index": 3,
+            "count": 6,
+            "observed_Over": 0.5,
+            "predicted_Over": 0.35064429463164765
+          },
+          {
+            "bin_index": 4,
+            "count": 11,
+            "observed_Over": 0.45454545454545453,
+            "predicted_Over": 0.45232661272586666
+          },
+          {
+            "bin_index": 5,
+            "count": 5,
+            "observed_Over": 0.8,
+            "predicted_Over": 0.5597225100111498
+          },
+          {
+            "bin_index": 6,
+            "count": 1,
+            "observed_Over": 1.0,
+            "predicted_Over": 0.622909916360844
+          }
+        ],
+        "three_state_log_loss": 0.7333532318499739
+      },
+      "states": {
+        "LOSS": 11,
+        "WIN": 14
+      },
+      "fallback_states": {
+        "none": 25
+      },
+      "source_appearance_states": null,
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES",
+      "OVER": {
+        "selected": 6,
+        "wins": 5,
+        "losses": 1,
+        "decided": 6,
+        "rate": 0.8333333333333334
+      },
+      "UNDER": {
+        "selected": 19,
+        "wins": 9,
+        "losses": 10,
+        "decided": 19,
+        "rate": 0.47368421052631576
+      },
+      "COMBINED": {
+        "selected": 25,
+        "wins": 14,
+        "losses": 11,
+        "decided": 25,
+        "rate": 0.56
+      }
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::P2",
+      "week": 3,
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "eligible": 26,
+      "available": 26,
+      "selected": 26,
+      "unavailable": 0,
+      "abstentions": 0,
+      "games": 15,
+      "player_games": 26,
+      "eligible_mask_sha256": "76dced0c24c9a55bf7807c2527866527aabb04adb2d73f7af3720bc54dc3d736",
+      "decided_mask_sha256": "76dced0c24c9a55bf7807c2527866527aabb04adb2d73f7af3720bc54dc3d736",
+      "numerical": {
+        "MAE": null,
+        "MSE": null,
+        "absolute_error_p90": null,
+        "bias": null,
+        "learned_or_fallback_states": {},
+        "max_absolute_error": null,
+        "scored": 0
+      },
+      "probability": {
+        "Brier": 0.25655669638007106,
+        "Over_event_AUC": 0.48214285714285715,
+        "conditioning": "B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.",
+        "events": 26,
+        "infinite_log_loss_cases": 0,
+        "neutral_binary_half_Brier": 0.25,
+        "reliability_fixed_bins": [
+          {
+            "bin_index": 2,
+            "count": 1,
+            "observed_Over": 0.0,
+            "predicted_Over": 0.20018406044714987
+          },
+          {
+            "bin_index": 3,
+            "count": 10,
+            "observed_Over": 0.4,
+            "predicted_Over": 0.36566649377215443
+          },
+          {
+            "bin_index": 4,
+            "count": 11,
+            "observed_Over": 0.6363636363636364,
+            "predicted_Over": 0.45396923239891157
+          },
+          {
+            "bin_index": 5,
+            "count": 3,
+            "observed_Over": 0.3333333333333333,
+            "predicted_Over": 0.5332472313446496
+          },
+          {
+            "bin_index": 6,
+            "count": 1,
+            "observed_Over": 0.0,
+            "predicted_Over": 0.6113610204227631
+          }
+        ],
+        "three_state_log_loss": 0.705053185727822
+      },
+      "states": {
+        "LOSS": 14,
+        "WIN": 12
+      },
+      "fallback_states": {
+        "none": 26
+      },
+      "source_appearance_states": null,
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES",
+      "OVER": {
+        "selected": 4,
+        "wins": 1,
+        "losses": 3,
+        "decided": 4,
+        "rate": 0.25
+      },
+      "UNDER": {
+        "selected": 22,
+        "wins": 11,
+        "losses": 11,
+        "decided": 22,
+        "rate": 0.5
+      },
+      "COMBINED": {
+        "selected": 26,
+        "wins": 12,
+        "losses": 14,
+        "decided": 26,
+        "rate": 0.46153846153846156
+      }
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::P2",
+      "week": 4,
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "eligible": 23,
+      "available": 23,
+      "selected": 23,
+      "unavailable": 0,
+      "abstentions": 0,
+      "games": 13,
+      "player_games": 23,
+      "eligible_mask_sha256": "d20f8841a3fcb10bc97fd88860776a4d0fb2d580fa2ca13f26137de3fb7f93ec",
+      "decided_mask_sha256": "d20f8841a3fcb10bc97fd88860776a4d0fb2d580fa2ca13f26137de3fb7f93ec",
+      "numerical": {
+        "MAE": null,
+        "MSE": null,
+        "absolute_error_p90": null,
+        "bias": null,
+        "learned_or_fallback_states": {},
+        "max_absolute_error": null,
+        "scored": 0
+      },
+      "probability": {
+        "Brier": 0.2793160614605685,
+        "Over_event_AUC": 0.4230769230769231,
+        "conditioning": "B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.",
+        "events": 23,
+        "infinite_log_loss_cases": 0,
+        "neutral_binary_half_Brier": 0.25,
+        "reliability_fixed_bins": [
+          {
+            "bin_index": 2,
+            "count": 1,
+            "observed_Over": 1.0,
+            "predicted_Over": 0.28271572988900906
+          },
+          {
+            "bin_index": 3,
+            "count": 3,
+            "observed_Over": 0.6666666666666666,
+            "predicted_Over": 0.3786428505656431
+          },
+          {
+            "bin_index": 4,
+            "count": 12,
+            "observed_Over": 0.5,
+            "predicted_Over": 0.45394014191809934
+          },
+          {
+            "bin_index": 5,
+            "count": 6,
+            "observed_Over": 0.6666666666666666,
+            "predicted_Over": 0.5312504205700843
+          },
+          {
+            "bin_index": 6,
+            "count": 1,
+            "observed_Over": 0.0,
+            "predicted_Over": 0.6441575883459525
+          }
+        ],
+        "three_state_log_loss": 0.7546965005035824
+      },
+      "states": {
+        "LOSS": 12,
+        "WIN": 11
+      },
+      "fallback_states": {
+        "none": 23
+      },
+      "source_appearance_states": null,
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES",
+      "OVER": {
+        "selected": 7,
+        "wins": 4,
+        "losses": 3,
+        "decided": 7,
+        "rate": 0.5714285714285714
+      },
+      "UNDER": {
+        "selected": 16,
+        "wins": 7,
+        "losses": 9,
+        "decided": 16,
+        "rate": 0.4375
+      },
+      "COMBINED": {
+        "selected": 23,
+        "wins": 11,
+        "losses": 12,
+        "decided": 23,
+        "rate": 0.4782608695652174
+      }
+    }
+  ],
+  "checks": [
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::mean",
+      "week": 1,
+      "same_A84_mask": true,
+      "source_eligible_and_games_match": true,
+      "own_sides_and_combined_arithmetic": true
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::mean",
+      "week": 2,
+      "same_A84_mask": true,
+      "source_eligible_and_games_match": true,
+      "own_sides_and_combined_arithmetic": true
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::mean",
+      "week": 3,
+      "same_A84_mask": true,
+      "source_eligible_and_games_match": true,
+      "own_sides_and_combined_arithmetic": true
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::mean",
+      "week": 4,
+      "same_A84_mask": true,
+      "source_eligible_and_games_match": true,
+      "own_sides_and_combined_arithmetic": true
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::lower_median",
+      "week": 1,
+      "same_A84_mask": true,
+      "source_eligible_and_games_match": true,
+      "own_sides_and_combined_arithmetic": true
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::lower_median",
+      "week": 2,
+      "same_A84_mask": true,
+      "source_eligible_and_games_match": true,
+      "own_sides_and_combined_arithmetic": true
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::lower_median",
+      "week": 3,
+      "same_A84_mask": true,
+      "source_eligible_and_games_match": true,
+      "own_sides_and_combined_arithmetic": true
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::lower_median",
+      "week": 4,
+      "same_A84_mask": true,
+      "source_eligible_and_games_match": true,
+      "own_sides_and_combined_arithmetic": true
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::P2",
+      "week": 1,
+      "same_A84_mask": true,
+      "source_eligible_and_games_match": true,
+      "own_sides_and_combined_arithmetic": true
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::P2",
+      "week": 2,
+      "same_A84_mask": true,
+      "source_eligible_and_games_match": true,
+      "own_sides_and_combined_arithmetic": true
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::P2",
+      "week": 3,
+      "same_A84_mask": true,
+      "source_eligible_and_games_match": true,
+      "own_sides_and_combined_arithmetic": true
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::P2",
+      "week": 4,
+      "same_A84_mask": true,
+      "source_eligible_and_games_match": true,
+      "own_sides_and_combined_arithmetic": true
+    }
+  ],
+  "source": {
+    "repository": "NickNicky19/NFL-forecasting",
+    "commit": "5a41d2bac6027e0ac1b5a2744d52f8ec5e93c47e",
+    "path": "reports/abc-championship/profile-timing-closure-and-confirm-01/b-timing-public-v1/ALL_NEW_TIMING_WEEKLY_AND_CUMULATIVE_005.csv",
+    "bytes": 59787,
+    "sha256": "8868a75c364e8236104e9e49694210003a5c823e2e0dad84d53c63987ad1696b",
+    "manifest_sha256": "9d926e57e0903f5930594a19aa2373f68578c08189e6311fa2008cb8669ddf3b",
+    "original_full_result_compressed_sha256": "841d874dd4eb15d7aca10195464ba54a6200d1ee0639e89df12885bf23707cf0"
+  },
+  "source_helper": {
+    "path": "tools/timing_confirm_b_completion_join_v1.py",
+    "sha256": "bd491535dc1cd0df08cc000cf883d6c11e19b62f9506b9df0a40b217ad8d26c4",
+    "A_source_offer_label_bundle_and_forecast_member_hash_match_newA84": true
+  },
+  "original_W1_W5_cumulative_and_W5_records": [
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::mean",
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "week_view": "ALL",
+      "eligible": "88",
+      "coverage": "1.0",
+      "unavailable": "0",
+      "abstentions": "0",
+      "games": "51",
+      "player_games": "88",
+      "weeks": "[1,2,3,4,5]",
+      "states": "{\"LOSS\":41,\"WIN\":47}",
+      "unavailable_reasons": "{}",
+      "uncertainty": "{\"dependence_aware\":true,\"high\":0.5945945945945946,\"kind\":\"WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS\",\"low\":0.4875,\"small_cluster_caution\":true,\"week_clusters\":5}",
+      "numerical": "{\"MAE\":4.99811264990247,\"MSE\":38.017309333753595,\"absolute_error_p90\":10.148239642012282,\"bias\":-2.5943737043793096,\"learned_or_fallback_states\":{\"none\":88},\"max_absolute_error\":18.477893767187332,\"scored\":88}",
+      "actual_retained_threshold_scored_weeks": "[1,2,3,4,5]",
+      "diagnostic_scored_weeks": "[1,2,3,4,5]",
+      "five_actual_week_duration_only": "True",
+      "fallback_states": "{\"none\":88}",
+      "no_own_history_queries": "0",
+      "forecast_outcome_cross_counts": "[{\"appearance\":\"PLAYED\",\"forecast_available\":true,\"known_actual\":true,\"rows\":88}]",
+      "eligible_mask_sha256": "f4461239948b8581da99e330fa1cf71c651901c4fe32981d6081d909e80e8af2",
+      "decided_mask_sha256": "f4461239948b8581da99e330fa1cf71c651901c4fe32981d6081d909e80e8af2",
+      "actual_scored_weeks": "",
+      "outer_appearance_states": "",
+      "fallback_outputs": "",
+      "profile_covered_outputs": "",
+      "any_imputed_outputs": "",
+      "unknown_fallback_flags": "",
+      "fallback_flag_state": "",
+      "exact_output_alias_of": "",
+      "view_reuse": "",
+      "category": "pass_cmp",
+      "role": "QB",
+      "requested_period": "2026_W1_W8",
+      "over_selected": "15",
+      "over_wins": "11",
+      "over_losses": "4",
+      "over_decided": "15",
+      "over_rate": "0.7333333333333333",
+      "under_selected": "73",
+      "under_wins": "36",
+      "under_losses": "37",
+      "under_decided": "73",
+      "under_rate": "0.4931506849315068",
+      "combined_selected": "88",
+      "combined_wins": "47",
+      "combined_losses": "41",
+      "combined_decided": "88",
+      "combined_rate": "0.5340909090909091",
+      "probability": "{\"Brier\":0.2625502608072056,\"Over_event_AUC\":0.521875,\"conditioning\":\"B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.\",\"events\":88,\"infinite_log_loss_cases\":0,\"neutral_binary_half_Brier\":0.25,\"reliability_fixed_bins\":[{\"bin_index\":2,\"count\":5,\"observed_Over\":0.6,\"predicted_Over\":0.2565349872038237},{\"bin_index\":3,\"count\":24,\"observed_Over\":0.4583333333333333,\"predicted_Over\":0.3608004368839246},{\"bin_index\":4,\"count\":41,\"observed_Over\":0.5609756097560976,\"predicted_Over\":0.4528421827517471},{\"bin_index\":5,\"count\":15,\"observed_Over\":0.6666666666666666,\"predicted_Over\":0.5399136231493105},{\"bin_index\":6,\"count\":3,\"observed_Over\":0.3333333333333333,\"predicted_Over\":0.6261428417098532}],\"three_state_log_loss\":0.7190301241946233}",
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES"
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::mean",
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "week_view": "5",
+      "eligible": "4",
+      "coverage": "1.0",
+      "unavailable": "0",
+      "abstentions": "0",
+      "games": "3",
+      "player_games": "4",
+      "weeks": "[5]",
+      "states": "{\"LOSS\":2,\"WIN\":2}",
+      "unavailable_reasons": "{}",
+      "uncertainty": "{\"dependence_aware\":false,\"high\":0.8499610108478506,\"kind\":\"WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY\",\"low\":0.15003898915214947,\"week_clusters\":1}",
+      "numerical": "{\"MAE\":3.2765901393598726,\"MSE\":11.971045417731776,\"absolute_error_p90\":4.223891477000599,\"bias\":-3.2765901393598726,\"learned_or_fallback_states\":{\"none\":4},\"max_absolute_error\":4.223891477000599,\"scored\":4}",
+      "actual_retained_threshold_scored_weeks": "[5]",
+      "diagnostic_scored_weeks": "[5]",
+      "five_actual_week_duration_only": "False",
+      "fallback_states": "{\"none\":4}",
+      "no_own_history_queries": "0",
+      "forecast_outcome_cross_counts": "[{\"appearance\":\"PLAYED\",\"forecast_available\":true,\"known_actual\":true,\"rows\":4}]",
+      "eligible_mask_sha256": "2cfe602b40087da49306efd0f22f425e0dc44a3fa06f90b4a709ce7db463cab8",
+      "decided_mask_sha256": "2cfe602b40087da49306efd0f22f425e0dc44a3fa06f90b4a709ce7db463cab8",
+      "actual_scored_weeks": "",
+      "outer_appearance_states": "",
+      "fallback_outputs": "",
+      "profile_covered_outputs": "",
+      "any_imputed_outputs": "",
+      "unknown_fallback_flags": "",
+      "fallback_flag_state": "",
+      "exact_output_alias_of": "",
+      "view_reuse": "",
+      "category": "pass_cmp",
+      "role": "QB",
+      "requested_period": "2026_W1_W8",
+      "over_selected": "2",
+      "over_wins": "2",
+      "over_losses": "0",
+      "over_decided": "2",
+      "over_rate": "1.0",
+      "under_selected": "2",
+      "under_wins": "0",
+      "under_losses": "2",
+      "under_decided": "2",
+      "under_rate": "0.0",
+      "combined_selected": "4",
+      "combined_wins": "2",
+      "combined_losses": "2",
+      "combined_decided": "4",
+      "combined_rate": "0.5",
+      "probability": "{\"Brier\":0.2809843430891669,\"Over_event_AUC\":null,\"conditioning\":\"B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.\",\"events\":4,\"infinite_log_loss_cases\":0,\"neutral_binary_half_Brier\":0.25,\"reliability_fixed_bins\":[{\"bin_index\":3,\"count\":1,\"observed_Over\":1.0,\"predicted_Over\":0.39186535119708277},{\"bin_index\":4,\"count\":2,\"observed_Over\":1.0,\"predicted_Over\":0.49167587269935464},{\"bin_index\":5,\"count\":1,\"observed_Over\":1.0,\"predicted_Over\":0.512847579729453}],\"three_state_log_loss\":0.7561239258717147}",
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES"
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::lower_median",
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "week_view": "ALL",
+      "eligible": "88",
+      "coverage": "1.0",
+      "unavailable": "0",
+      "abstentions": "0",
+      "games": "51",
+      "player_games": "88",
+      "weeks": "[1,2,3,4,5]",
+      "states": "{\"LOSS\":44,\"WIN\":44}",
+      "unavailable_reasons": "{}",
+      "uncertainty": "{\"dependence_aware\":true,\"high\":0.5540540540540541,\"kind\":\"WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS\",\"low\":0.4375,\"small_cluster_caution\":true,\"week_clusters\":5}",
+      "numerical": "{\"MAE\":4.829545454545454,\"MSE\":35.48863636363637,\"absolute_error_p90\":10.0,\"bias\":-2.0113636363636362,\"learned_or_fallback_states\":{\"none\":88},\"max_absolute_error\":17.0,\"scored\":88}",
+      "actual_retained_threshold_scored_weeks": "[1,2,3,4,5]",
+      "diagnostic_scored_weeks": "[1,2,3,4,5]",
+      "five_actual_week_duration_only": "True",
+      "fallback_states": "{\"none\":88}",
+      "no_own_history_queries": "0",
+      "forecast_outcome_cross_counts": "[{\"appearance\":\"PLAYED\",\"forecast_available\":true,\"known_actual\":true,\"rows\":88}]",
+      "eligible_mask_sha256": "f4461239948b8581da99e330fa1cf71c651901c4fe32981d6081d909e80e8af2",
+      "decided_mask_sha256": "f4461239948b8581da99e330fa1cf71c651901c4fe32981d6081d909e80e8af2",
+      "actual_scored_weeks": "",
+      "outer_appearance_states": "",
+      "fallback_outputs": "",
+      "profile_covered_outputs": "",
+      "any_imputed_outputs": "",
+      "unknown_fallback_flags": "",
+      "fallback_flag_state": "",
+      "exact_output_alias_of": "",
+      "view_reuse": "",
+      "category": "pass_cmp",
+      "role": "QB",
+      "requested_period": "2026_W1_W8",
+      "over_selected": "18",
+      "over_wins": "11",
+      "over_losses": "7",
+      "over_decided": "18",
+      "over_rate": "0.6111111111111112",
+      "under_selected": "70",
+      "under_wins": "33",
+      "under_losses": "37",
+      "under_decided": "70",
+      "under_rate": "0.4714285714285714",
+      "combined_selected": "88",
+      "combined_wins": "44",
+      "combined_losses": "44",
+      "combined_decided": "88",
+      "combined_rate": "0.5",
+      "probability": "{\"Brier\":0.2625502608072056,\"Over_event_AUC\":0.521875,\"conditioning\":\"B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.\",\"events\":88,\"infinite_log_loss_cases\":0,\"neutral_binary_half_Brier\":0.25,\"reliability_fixed_bins\":[{\"bin_index\":2,\"count\":5,\"observed_Over\":0.6,\"predicted_Over\":0.2565349872038237},{\"bin_index\":3,\"count\":24,\"observed_Over\":0.4583333333333333,\"predicted_Over\":0.3608004368839246},{\"bin_index\":4,\"count\":41,\"observed_Over\":0.5609756097560976,\"predicted_Over\":0.4528421827517471},{\"bin_index\":5,\"count\":15,\"observed_Over\":0.6666666666666666,\"predicted_Over\":0.5399136231493105},{\"bin_index\":6,\"count\":3,\"observed_Over\":0.3333333333333333,\"predicted_Over\":0.6261428417098532}],\"three_state_log_loss\":0.7190301241946233}",
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES"
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::lower_median",
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "week_view": "5",
+      "eligible": "4",
+      "coverage": "1.0",
+      "unavailable": "0",
+      "abstentions": "0",
+      "games": "3",
+      "player_games": "4",
+      "weeks": "[5]",
+      "states": "{\"LOSS\":3,\"WIN\":1}",
+      "unavailable_reasons": "{}",
+      "uncertainty": "{\"dependence_aware\":false,\"high\":0.6993581574175981,\"kind\":\"WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY\",\"low\":0.04558726080970055,\"week_clusters\":1}",
+      "numerical": "{\"MAE\":3.25,\"MSE\":12.75,\"absolute_error_p90\":5.0,\"bias\":-3.25,\"learned_or_fallback_states\":{\"none\":4},\"max_absolute_error\":5.0,\"scored\":4}",
+      "actual_retained_threshold_scored_weeks": "[5]",
+      "diagnostic_scored_weeks": "[5]",
+      "five_actual_week_duration_only": "False",
+      "fallback_states": "{\"none\":4}",
+      "no_own_history_queries": "0",
+      "forecast_outcome_cross_counts": "[{\"appearance\":\"PLAYED\",\"forecast_available\":true,\"known_actual\":true,\"rows\":4}]",
+      "eligible_mask_sha256": "2cfe602b40087da49306efd0f22f425e0dc44a3fa06f90b4a709ce7db463cab8",
+      "decided_mask_sha256": "2cfe602b40087da49306efd0f22f425e0dc44a3fa06f90b4a709ce7db463cab8",
+      "actual_scored_weeks": "",
+      "outer_appearance_states": "",
+      "fallback_outputs": "",
+      "profile_covered_outputs": "",
+      "any_imputed_outputs": "",
+      "unknown_fallback_flags": "",
+      "fallback_flag_state": "",
+      "exact_output_alias_of": "",
+      "view_reuse": "",
+      "category": "pass_cmp",
+      "role": "QB",
+      "requested_period": "2026_W1_W8",
+      "over_selected": "1",
+      "over_wins": "1",
+      "over_losses": "0",
+      "over_decided": "1",
+      "over_rate": "1.0",
+      "under_selected": "3",
+      "under_wins": "0",
+      "under_losses": "3",
+      "under_decided": "3",
+      "under_rate": "0.0",
+      "combined_selected": "4",
+      "combined_wins": "1",
+      "combined_losses": "3",
+      "combined_decided": "4",
+      "combined_rate": "0.25",
+      "probability": "{\"Brier\":0.2809843430891669,\"Over_event_AUC\":null,\"conditioning\":\"B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.\",\"events\":4,\"infinite_log_loss_cases\":0,\"neutral_binary_half_Brier\":0.25,\"reliability_fixed_bins\":[{\"bin_index\":3,\"count\":1,\"observed_Over\":1.0,\"predicted_Over\":0.39186535119708277},{\"bin_index\":4,\"count\":2,\"observed_Over\":1.0,\"predicted_Over\":0.49167587269935464},{\"bin_index\":5,\"count\":1,\"observed_Over\":1.0,\"predicted_Over\":0.512847579729453}],\"three_state_log_loss\":0.7561239258717147}",
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES"
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::P2",
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "week_view": "ALL",
+      "eligible": "88",
+      "coverage": "1.0",
+      "unavailable": "0",
+      "abstentions": "0",
+      "games": "51",
+      "player_games": "88",
+      "weeks": "[1,2,3,4,5]",
+      "states": "{\"LOSS\":44,\"WIN\":44}",
+      "unavailable_reasons": "{}",
+      "uncertainty": "{\"dependence_aware\":true,\"high\":0.5540540540540541,\"kind\":\"WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS\",\"low\":0.4375,\"small_cluster_caution\":true,\"week_clusters\":5}",
+      "numerical": "{\"MAE\":null,\"MSE\":null,\"absolute_error_p90\":null,\"bias\":null,\"learned_or_fallback_states\":{},\"max_absolute_error\":null,\"scored\":0}",
+      "actual_retained_threshold_scored_weeks": "[1,2,3,4,5]",
+      "diagnostic_scored_weeks": "[1,2,3,4,5]",
+      "five_actual_week_duration_only": "True",
+      "fallback_states": "{\"none\":88}",
+      "no_own_history_queries": "0",
+      "forecast_outcome_cross_counts": "[{\"appearance\":\"PLAYED\",\"forecast_available\":true,\"known_actual\":true,\"rows\":88}]",
+      "eligible_mask_sha256": "f4461239948b8581da99e330fa1cf71c651901c4fe32981d6081d909e80e8af2",
+      "decided_mask_sha256": "f4461239948b8581da99e330fa1cf71c651901c4fe32981d6081d909e80e8af2",
+      "actual_scored_weeks": "",
+      "outer_appearance_states": "",
+      "fallback_outputs": "",
+      "profile_covered_outputs": "",
+      "any_imputed_outputs": "",
+      "unknown_fallback_flags": "",
+      "fallback_flag_state": "",
+      "exact_output_alias_of": "",
+      "view_reuse": "",
+      "category": "pass_cmp",
+      "role": "QB",
+      "requested_period": "2026_W1_W8",
+      "over_selected": "18",
+      "over_wins": "11",
+      "over_losses": "7",
+      "over_decided": "18",
+      "over_rate": "0.6111111111111112",
+      "under_selected": "70",
+      "under_wins": "33",
+      "under_losses": "37",
+      "under_decided": "70",
+      "under_rate": "0.4714285714285714",
+      "combined_selected": "88",
+      "combined_wins": "44",
+      "combined_losses": "44",
+      "combined_decided": "88",
+      "combined_rate": "0.5",
+      "probability": "{\"Brier\":0.2625502608072056,\"Over_event_AUC\":0.521875,\"conditioning\":\"B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.\",\"events\":88,\"infinite_log_loss_cases\":0,\"neutral_binary_half_Brier\":0.25,\"reliability_fixed_bins\":[{\"bin_index\":2,\"count\":5,\"observed_Over\":0.6,\"predicted_Over\":0.2565349872038237},{\"bin_index\":3,\"count\":24,\"observed_Over\":0.4583333333333333,\"predicted_Over\":0.3608004368839246},{\"bin_index\":4,\"count\":41,\"observed_Over\":0.5609756097560976,\"predicted_Over\":0.4528421827517471},{\"bin_index\":5,\"count\":15,\"observed_Over\":0.6666666666666666,\"predicted_Over\":0.5399136231493105},{\"bin_index\":6,\"count\":3,\"observed_Over\":0.3333333333333333,\"predicted_Over\":0.6261428417098532}],\"three_state_log_loss\":0.7190301241946233}",
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES"
+    },
+    {
+      "candidate_id": "B-QB-ALIGNED-FRESHNESS-v1:F2::P2",
+      "view": "FULL_A_BOARD",
+      "source_panel": "ANNUAL_NAMED_NJ",
+      "week_view": "5",
+      "eligible": "4",
+      "coverage": "1.0",
+      "unavailable": "0",
+      "abstentions": "0",
+      "games": "3",
+      "player_games": "4",
+      "weeks": "[5]",
+      "states": "{\"LOSS\":3,\"WIN\":1}",
+      "unavailable_reasons": "{}",
+      "uncertainty": "{\"dependence_aware\":false,\"high\":0.6993581574175981,\"kind\":\"WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY\",\"low\":0.04558726080970055,\"week_clusters\":1}",
+      "numerical": "{\"MAE\":null,\"MSE\":null,\"absolute_error_p90\":null,\"bias\":null,\"learned_or_fallback_states\":{},\"max_absolute_error\":null,\"scored\":0}",
+      "actual_retained_threshold_scored_weeks": "[5]",
+      "diagnostic_scored_weeks": "[5]",
+      "five_actual_week_duration_only": "False",
+      "fallback_states": "{\"none\":4}",
+      "no_own_history_queries": "0",
+      "forecast_outcome_cross_counts": "[{\"appearance\":\"PLAYED\",\"forecast_available\":true,\"known_actual\":true,\"rows\":4}]",
+      "eligible_mask_sha256": "2cfe602b40087da49306efd0f22f425e0dc44a3fa06f90b4a709ce7db463cab8",
+      "decided_mask_sha256": "2cfe602b40087da49306efd0f22f425e0dc44a3fa06f90b4a709ce7db463cab8",
+      "actual_scored_weeks": "",
+      "outer_appearance_states": "",
+      "fallback_outputs": "",
+      "profile_covered_outputs": "",
+      "any_imputed_outputs": "",
+      "unknown_fallback_flags": "",
+      "fallback_flag_state": "",
+      "exact_output_alias_of": "",
+      "view_reuse": "",
+      "category": "pass_cmp",
+      "role": "QB",
+      "requested_period": "2026_W1_W8",
+      "over_selected": "1",
+      "over_wins": "1",
+      "over_losses": "0",
+      "over_decided": "1",
+      "over_rate": "1.0",
+      "under_selected": "3",
+      "under_wins": "0",
+      "under_losses": "3",
+      "under_decided": "3",
+      "under_rate": "0.0",
+      "combined_selected": "4",
+      "combined_wins": "1",
+      "combined_losses": "3",
+      "combined_decided": "4",
+      "combined_rate": "0.25",
+      "probability": "{\"Brier\":0.2809843430891669,\"Over_event_AUC\":null,\"conditioning\":\"B retained physical-participation law; strict Over event. Push is false for binary event; venue nonvoid contract unverified. No recalibration/gate.\",\"events\":4,\"infinite_log_loss_cases\":0,\"neutral_binary_half_Brier\":0.25,\"reliability_fixed_bins\":[{\"bin_index\":3,\"count\":1,\"observed_Over\":1.0,\"predicted_Over\":0.39186535119708277},{\"bin_index\":4,\"count\":2,\"observed_Over\":1.0,\"predicted_Over\":0.49167587269935464},{\"bin_index\":5,\"count\":1,\"observed_Over\":1.0,\"predicted_Over\":0.512847579729453}],\"three_state_log_loss\":0.7561239258717147}",
+      "evidence": "QUOTE_TIME_UNVERIFIED_RECONSTRUCTED_ACTUAL_LINES"
+    }
+  ],
+  "W5_rule": "ExcludedfromnewAearly-plus-native-lateprimaryunion;nooverlapaddition.",
+  "P2": "StrictlargerOver/Undermass;tieabstain;integerpushretained",
+  "proper_scores": "EarlybinaryOverBrier/three-stateloglosscontractretained;do notcombinewithnativemulticlassBrierwithoutzero-pushproof/harmonization.",
+  "new_source_read_attempts": 1,
+  "source_read_attempts_total": 15,
+  "source_read_attempts_maximum": 24,
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_A_join": 0,
+  "new_scores": 0,
+  "limits": [
+    "Existingpublicaggregate/identity/source/maskbindingsreused; rawprotected84vectorsandF2originfitsnotindependentlyinspectedhere.",
+    "PerweekmaskagreementproofusesnewA84sameannualsource\u2014not merelysubtracting88cumulativecounts.",
+    "No W5 overlap, neworiginalissuance, sourceclockauthentication orscientificpromotion."
+  ]
+}

@@ -1,0 +1,442 @@
+[
+  {
+    "n": 3,
+    "mae": 8.585768047846946,
+    "mse": 82.66378671815416,
+    "rmse": 9.091962753891712,
+    "bias": -0.4215554213924584,
+    "p90_abs": 11.515459321219494,
+    "p95_abs": 11.880889130450612,
+    "max_abs": 12.246318939681732,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.0,
+    "abs_lt_5": 0.3333333333333333,
+    "abs_le_5": 0.3333333333333333,
+    "abs_lt_10": 0.6666666666666666,
+    "abs_le_10": 0.6666666666666666,
+    "record_kind": "forecast_evaluation_view",
+    "record_id": "B-FORWARD-CMP-462d6beb4bc177ce3f8397d8",
+    "procedure_id": "B-FTN-COMPLETION-CONDITIONAL-APPEARANCE-SHADOW-v1:B0",
+    "product_id": "mean",
+    "target": "pass_cmp",
+    "season": 2026,
+    "week": 10,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      10
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "population": "ORIGINAL_LATE_PREGAME_CONDITIONAL_OWNER_PUBLISHED_QB_CANDIDATES",
+    "position": "QB",
+    "history_regime": "H-RECENT",
+    "horizon_id": "LATE_PREGAME_ACTUAL_ISSUE_20261113T000955Z",
+    "evidence": "GENUINE_PREGAME_CONDITIONAL_FORECAST_ONLY;CURRENT_FINAL_STAT_GRADING",
+    "source_vintage": "HistoricalFTNinputsretaincurrent-vintage7dayreconstruction;actualforecastissueandfinaloutcomeobservationclocksbound",
+    "evaluation_panel_id": "B_FTN_CONDITIONAL_FORWARD_GRADE_20261114_v1",
+    "forecast_rows": 4,
+    "outer_query_rows": 5,
+    "unavailable_forecasts": 1,
+    "IR_unavailable_rows": 1,
+    "DNP_rows": 1,
+    "unknown_issued_forecast_participation": 0,
+    "unknown_unavailable_query_participation": 1,
+    "technical_unavailable": 0,
+    "admitted_abstentions": 0,
+    "fallback_view": "FULL_CONDITIONAL_SYSTEM_WITH_UNAVAILABLE_AND_NONAPPEARANCE_RETAINED",
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "unique_games": 1,
+    "unique_players": 3,
+    "unique_player_games": 3,
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0
+      },
+      "abs_lt_5": {
+        "numerator": 1,
+        "denominator": 3,
+        "rate": 0.3333333333333333
+      },
+      "abs_le_5": {
+        "numerator": 1,
+        "denominator": 3,
+        "rate": 0.3333333333333333
+      },
+      "abs_lt_10": {
+        "numerator": 2,
+        "denominator": 3,
+        "rate": 0.6666666666666666
+      },
+      "abs_le_10": {
+        "numerator": 2,
+        "denominator": 3,
+        "rate": 0.6666666666666666
+      }
+    },
+    "query_membership_sha256": "0b3e0f86183aaef2a417eed24465d82b4bf5fadc2ed84a027d8fe488df02c5a5",
+    "outer_query_membership_sha256": "7cde5c858f728e436aa29b8d78acec917a9a211598c33f696d0ac4af8ff2fc97",
+    "null_reason": null,
+    "NLL": 2.6637606347908833,
+    "infinite_NLL": 0,
+    "CRPS": 4.81884598693731,
+    "NLL_scope": "Same full completion count law; shared between mean/median views; no line-specific probability score",
+    "law_score_shared_id": "B_FTN_CONDITIONAL_FORWARD_GRADE_20261114_v1:B0:COUNT_LAW",
+    "law_interval90_covered": 3,
+    "law_interval90_denominator": 3,
+    "O_U_results": null,
+    "O_U_null_reason": "NO_ACTUAL_LINE_OR_SELECTED_SIDE_IN_FROZEN_PACKET",
+    "uncertainty": "ONE_GAME_CLUSTER;NO_INFERENTIAL_INTERVAL_OR_SUPERIORITY_CLAIM",
+    "original_forecast_issued_UTC": "2026-11-13T00:09:55.109350+00:00",
+    "graded_at_UTC": "2026-11-14T14:58:08.469994+00:00",
+    "primary_product_qualification": "ONE_NUMERICAL_FORWARD_WEEK_ONLY;NO_OFFERED_LINE_OR_PRIMARY_PROMOTION",
+    "license": "FTN-dependentderivedscoresCC-BY-SA-4.0;FTNData via nflverse;qualifiedweeklystatisticalderivativesCC-BY-4.0"
+  },
+  {
+    "n": 3,
+    "mae": 8.666666666666666,
+    "mse": 92.0,
+    "rmse": 9.591663046625438,
+    "bias": 0.6666666666666666,
+    "p90_abs": 12.8,
+    "p95_abs": 13.399999999999999,
+    "max_abs": 14,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.0,
+    "abs_lt_5": 0.3333333333333333,
+    "abs_le_5": 0.3333333333333333,
+    "abs_lt_10": 0.6666666666666666,
+    "abs_le_10": 0.6666666666666666,
+    "record_kind": "forecast_evaluation_view",
+    "record_id": "B-FORWARD-CMP-ff4e8d526c07c28dbbb9729b",
+    "procedure_id": "B-FTN-COMPLETION-CONDITIONAL-APPEARANCE-SHADOW-v1:B0",
+    "product_id": "lower_median",
+    "target": "pass_cmp",
+    "season": 2026,
+    "week": 10,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      10
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "population": "ORIGINAL_LATE_PREGAME_CONDITIONAL_OWNER_PUBLISHED_QB_CANDIDATES",
+    "position": "QB",
+    "history_regime": "H-RECENT",
+    "horizon_id": "LATE_PREGAME_ACTUAL_ISSUE_20261113T000955Z",
+    "evidence": "GENUINE_PREGAME_CONDITIONAL_FORECAST_ONLY;CURRENT_FINAL_STAT_GRADING",
+    "source_vintage": "HistoricalFTNinputsretaincurrent-vintage7dayreconstruction;actualforecastissueandfinaloutcomeobservationclocksbound",
+    "evaluation_panel_id": "B_FTN_CONDITIONAL_FORWARD_GRADE_20261114_v1",
+    "forecast_rows": 4,
+    "outer_query_rows": 5,
+    "unavailable_forecasts": 1,
+    "IR_unavailable_rows": 1,
+    "DNP_rows": 1,
+    "unknown_issued_forecast_participation": 0,
+    "unknown_unavailable_query_participation": 1,
+    "technical_unavailable": 0,
+    "admitted_abstentions": 0,
+    "fallback_view": "FULL_CONDITIONAL_SYSTEM_WITH_UNAVAILABLE_AND_NONAPPEARANCE_RETAINED",
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "unique_games": 1,
+    "unique_players": 3,
+    "unique_player_games": 3,
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0
+      },
+      "abs_lt_5": {
+        "numerator": 1,
+        "denominator": 3,
+        "rate": 0.3333333333333333
+      },
+      "abs_le_5": {
+        "numerator": 1,
+        "denominator": 3,
+        "rate": 0.3333333333333333
+      },
+      "abs_lt_10": {
+        "numerator": 2,
+        "denominator": 3,
+        "rate": 0.6666666666666666
+      },
+      "abs_le_10": {
+        "numerator": 2,
+        "denominator": 3,
+        "rate": 0.6666666666666666
+      }
+    },
+    "query_membership_sha256": "0b3e0f86183aaef2a417eed24465d82b4bf5fadc2ed84a027d8fe488df02c5a5",
+    "outer_query_membership_sha256": "7cde5c858f728e436aa29b8d78acec917a9a211598c33f696d0ac4af8ff2fc97",
+    "null_reason": null,
+    "NLL": 2.6637606347908833,
+    "infinite_NLL": 0,
+    "CRPS": 4.81884598693731,
+    "NLL_scope": "Same full completion count law; shared between mean/median views; no line-specific probability score",
+    "law_score_shared_id": "B_FTN_CONDITIONAL_FORWARD_GRADE_20261114_v1:B0:COUNT_LAW",
+    "law_interval90_covered": 3,
+    "law_interval90_denominator": 3,
+    "O_U_results": null,
+    "O_U_null_reason": "NO_ACTUAL_LINE_OR_SELECTED_SIDE_IN_FROZEN_PACKET",
+    "uncertainty": "ONE_GAME_CLUSTER;NO_INFERENTIAL_INTERVAL_OR_SUPERIORITY_CLAIM",
+    "original_forecast_issued_UTC": "2026-11-13T00:09:55.109350+00:00",
+    "graded_at_UTC": "2026-11-14T14:58:08.470084+00:00",
+    "primary_product_qualification": "ONE_NUMERICAL_FORWARD_WEEK_ONLY;NO_OFFERED_LINE_OR_PRIMARY_PROMOTION",
+    "license": "FTN-dependentderivedscoresCC-BY-SA-4.0;FTNData via nflverse;qualifiedweeklystatisticalderivativesCC-BY-4.0"
+  },
+  {
+    "n": 3,
+    "mae": 8.689825230655892,
+    "mse": 83.2545483013139,
+    "rmse": 9.124393037419743,
+    "bias": -0.6650609812538502,
+    "p90_abs": 11.391213035853324,
+    "p95_abs": 11.714179704978193,
+    "max_abs": 12.037146374103063,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.0,
+    "abs_lt_5": 0.0,
+    "abs_le_5": 0.0,
+    "abs_lt_10": 0.6666666666666666,
+    "abs_le_10": 0.6666666666666666,
+    "record_kind": "forecast_evaluation_view",
+    "record_id": "B-FORWARD-CMP-917e97c5266e309e51569cf8",
+    "procedure_id": "B-FTN-COMPLETION-CONDITIONAL-APPEARANCE-SHADOW-v1:B2",
+    "product_id": "mean",
+    "target": "pass_cmp",
+    "season": 2026,
+    "week": 10,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      10
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "population": "ORIGINAL_LATE_PREGAME_CONDITIONAL_OWNER_PUBLISHED_QB_CANDIDATES",
+    "position": "QB",
+    "history_regime": "H-RECENT",
+    "horizon_id": "LATE_PREGAME_ACTUAL_ISSUE_20261113T000955Z",
+    "evidence": "GENUINE_PREGAME_CONDITIONAL_FORECAST_ONLY;CURRENT_FINAL_STAT_GRADING",
+    "source_vintage": "HistoricalFTNinputsretaincurrent-vintage7dayreconstruction;actualforecastissueandfinaloutcomeobservationclocksbound",
+    "evaluation_panel_id": "B_FTN_CONDITIONAL_FORWARD_GRADE_20261114_v1",
+    "forecast_rows": 4,
+    "outer_query_rows": 5,
+    "unavailable_forecasts": 1,
+    "IR_unavailable_rows": 1,
+    "DNP_rows": 1,
+    "unknown_issued_forecast_participation": 0,
+    "unknown_unavailable_query_participation": 1,
+    "technical_unavailable": 0,
+    "admitted_abstentions": 0,
+    "fallback_view": "FULL_CONDITIONAL_SYSTEM_WITH_UNAVAILABLE_AND_NONAPPEARANCE_RETAINED",
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "unique_games": 1,
+    "unique_players": 3,
+    "unique_player_games": 3,
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0
+      },
+      "abs_lt_5": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0
+      },
+      "abs_le_5": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0
+      },
+      "abs_lt_10": {
+        "numerator": 2,
+        "denominator": 3,
+        "rate": 0.6666666666666666
+      },
+      "abs_le_10": {
+        "numerator": 2,
+        "denominator": 3,
+        "rate": 0.6666666666666666
+      }
+    },
+    "query_membership_sha256": "0b3e0f86183aaef2a417eed24465d82b4bf5fadc2ed84a027d8fe488df02c5a5",
+    "outer_query_membership_sha256": "7cde5c858f728e436aa29b8d78acec917a9a211598c33f696d0ac4af8ff2fc97",
+    "null_reason": null,
+    "NLL": 2.6434584787576205,
+    "infinite_NLL": 0,
+    "CRPS": 4.821153456570993,
+    "NLL_scope": "Same full completion count law; shared between mean/median views; no line-specific probability score",
+    "law_score_shared_id": "B_FTN_CONDITIONAL_FORWARD_GRADE_20261114_v1:B2:COUNT_LAW",
+    "law_interval90_covered": 3,
+    "law_interval90_denominator": 3,
+    "O_U_results": null,
+    "O_U_null_reason": "NO_ACTUAL_LINE_OR_SELECTED_SIDE_IN_FROZEN_PACKET",
+    "uncertainty": "ONE_GAME_CLUSTER;NO_INFERENTIAL_INTERVAL_OR_SUPERIORITY_CLAIM",
+    "original_forecast_issued_UTC": "2026-11-13T00:09:55.109350+00:00",
+    "graded_at_UTC": "2026-11-14T14:58:08.470155+00:00",
+    "primary_product_qualification": "ONE_NUMERICAL_FORWARD_WEEK_ONLY;NO_OFFERED_LINE_OR_PRIMARY_PROMOTION",
+    "license": "FTN-dependentderivedscoresCC-BY-SA-4.0;FTNData via nflverse;qualifiedweeklystatisticalderivativesCC-BY-4.0"
+  },
+  {
+    "n": 3,
+    "mae": 8.666666666666666,
+    "mse": 86.0,
+    "rmse": 9.273618495495704,
+    "bias": 0.0,
+    "p90_abs": 12.0,
+    "p95_abs": 12.5,
+    "max_abs": 13,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.0,
+    "abs_lt_5": 0.0,
+    "abs_le_5": 0.3333333333333333,
+    "abs_lt_10": 0.6666666666666666,
+    "abs_le_10": 0.6666666666666666,
+    "record_kind": "forecast_evaluation_view",
+    "record_id": "B-FORWARD-CMP-0b8b21dc46904ac78d9dfe9a",
+    "procedure_id": "B-FTN-COMPLETION-CONDITIONAL-APPEARANCE-SHADOW-v1:B2",
+    "product_id": "lower_median",
+    "target": "pass_cmp",
+    "season": 2026,
+    "week": 10,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      10
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "population": "ORIGINAL_LATE_PREGAME_CONDITIONAL_OWNER_PUBLISHED_QB_CANDIDATES",
+    "position": "QB",
+    "history_regime": "H-RECENT",
+    "horizon_id": "LATE_PREGAME_ACTUAL_ISSUE_20261113T000955Z",
+    "evidence": "GENUINE_PREGAME_CONDITIONAL_FORECAST_ONLY;CURRENT_FINAL_STAT_GRADING",
+    "source_vintage": "HistoricalFTNinputsretaincurrent-vintage7dayreconstruction;actualforecastissueandfinaloutcomeobservationclocksbound",
+    "evaluation_panel_id": "B_FTN_CONDITIONAL_FORWARD_GRADE_20261114_v1",
+    "forecast_rows": 4,
+    "outer_query_rows": 5,
+    "unavailable_forecasts": 1,
+    "IR_unavailable_rows": 1,
+    "DNP_rows": 1,
+    "unknown_issued_forecast_participation": 0,
+    "unknown_unavailable_query_participation": 1,
+    "technical_unavailable": 0,
+    "admitted_abstentions": 0,
+    "fallback_view": "FULL_CONDITIONAL_SYSTEM_WITH_UNAVAILABLE_AND_NONAPPEARANCE_RETAINED",
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "unique_games": 1,
+    "unique_players": 3,
+    "unique_player_games": 3,
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0
+      },
+      "abs_lt_5": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0
+      },
+      "abs_le_5": {
+        "numerator": 1,
+        "denominator": 3,
+        "rate": 0.3333333333333333
+      },
+      "abs_lt_10": {
+        "numerator": 2,
+        "denominator": 3,
+        "rate": 0.6666666666666666
+      },
+      "abs_le_10": {
+        "numerator": 2,
+        "denominator": 3,
+        "rate": 0.6666666666666666
+      }
+    },
+    "query_membership_sha256": "0b3e0f86183aaef2a417eed24465d82b4bf5fadc2ed84a027d8fe488df02c5a5",
+    "outer_query_membership_sha256": "7cde5c858f728e436aa29b8d78acec917a9a211598c33f696d0ac4af8ff2fc97",
+    "null_reason": null,
+    "NLL": 2.6434584787576205,
+    "infinite_NLL": 0,
+    "CRPS": 4.821153456570993,
+    "NLL_scope": "Same full completion count law; shared between mean/median views; no line-specific probability score",
+    "law_score_shared_id": "B_FTN_CONDITIONAL_FORWARD_GRADE_20261114_v1:B2:COUNT_LAW",
+    "law_interval90_covered": 3,
+    "law_interval90_denominator": 3,
+    "O_U_results": null,
+    "O_U_null_reason": "NO_ACTUAL_LINE_OR_SELECTED_SIDE_IN_FROZEN_PACKET",
+    "uncertainty": "ONE_GAME_CLUSTER;NO_INFERENTIAL_INTERVAL_OR_SUPERIORITY_CLAIM",
+    "original_forecast_issued_UTC": "2026-11-13T00:09:55.109350+00:00",
+    "graded_at_UTC": "2026-11-14T14:58:08.470213+00:00",
+    "primary_product_qualification": "ONE_NUMERICAL_FORWARD_WEEK_ONLY;NO_OFFERED_LINE_OR_PRIMARY_PROMOTION",
+    "license": "FTN-dependentderivedscoresCC-BY-SA-4.0;FTNData via nflverse;qualifiedweeklystatisticalderivativesCC-BY-4.0"
+  }
+]

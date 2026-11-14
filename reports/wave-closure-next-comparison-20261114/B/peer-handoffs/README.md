@@ -1,0 +1,14 @@
+# B closure handoffs and receipt reconciliation
+
+The exact new FTN completion comparison is complete and remains a negative primary result. A's current research publication still has no owner-local W1–4 join for that changed procedure; C's current pointer binds B10846/1,506 exports, before the new FTN package. This is a scoped receipt gap, not an inference that either session is inactive.
+
+- [Exact saved-output W1–4 handoff](W1_W4_OWNER_LOCAL_JOIN_HANDOFF_V1.json): 146 distinct current-season QB-game queries /438 arm rows are already retained for W1–4. Means, lower medians and full count laws exist; no fit is required. The compatible A offer board remains owner-local. B's inspected retained native source sets begin atW5.
+- [Append-only prior-use qualification](PRIOR_USE_QUALIFICATION_V1.json): A already used an interception-worthy risk rate in a closed pass-interception mean experiment. The B contrast remains distinct by completion target, credited-attempt denominator, own8 history, two-rate shrinkage block and retained learner. The raw field is not globally novel. Both losses remain closed; no old report, prediction or grade was overwritten.
+- [Peer receipts and named actions](PEER_RECEIPT_RECONCILIATION_V1.json): exact A/C source hashes, actual intake scope, immutable pending handoffs and CountA authentication/landing separation. No private A fit/raw-row parity is claimed.
+- [Existing personnel source-combination assessment](C_PERSONNEL_EXISTING_ROUTE_RECONCILIATION_V1.json): the retained current-known-season roster plus native event state and injury facts supplies only partial basic universe information. It does not close complete event-effective teammate membership or historical vintages. C owns the missing component; no duplicate roster collection or repeated event polling was performed.
+
+A's substantive research branch is `research/accuracy-wave-20261026` at27ff63c25509db058e651f63f7110af1d7e6fe39; the PR1 head is a different discovery branch. C mainf1e423353f9651e9af9752b5da9690bef3fe8b71 and information-first branch51760f67a606e46355285c1cd27ab57bb133a19f retain the same earlier admission scope. A public aggregate receipt is not private raw/model parity; publication of B's package is not C's acknowledgment.
+
+CountA's owner-reported401 remains a credential-connection dependency. Exact PR90/91 heads/approval are separately retained; B did not repeat an upload, inspect credentials, merge a peer PR, dispatch a workflow or claim a delivered feed. New fifth-selector evidence is handled by the single website owner and separate B verifier, not recomputed here.
+
+This package produced zero fits, forecasts, new NFL scores, actual-line selections, deployments or changes to the common evaluator. Exact source-body commitments are retained; protected rows and private locators are not published.

@@ -1,0 +1,49 @@
+{
+  "id": "B_WAVE_CLOSURE_PACKAGE_VERIFICATION_v1",
+  "at_UTC": "2026-11-14T15:20:43.044129+00:00",
+  "tests": {
+    "command": "python -m unittest discover -s tests -q",
+    "tests": 561,
+    "state": "PASS"
+  },
+  "checks": [
+    {
+      "command": "python tools/validate_checkpoint.py",
+      "state": "PASS"
+    },
+    {
+      "command": "python tools/check_result_index_coverage.py",
+      "state": "PASS"
+    },
+    {
+      "command": "python tools/check_analysis_index_coverage.py",
+      "state": "PASS"
+    },
+    {
+      "command": "python tools/check_prop_scoreboard_coverage.py",
+      "state": "PASS"
+    },
+    {
+      "command": "git diff --check",
+      "state": "PASS"
+    }
+  ],
+  "result_index": {
+    "views": 615174,
+    "prior_views_preserved": 615170,
+    "new_numeric_views": 4,
+    "artifacts": 230
+  },
+  "analysis_index": {
+    "views": 22453,
+    "prior_views_preserved": 22451,
+    "new_descriptive_MAE_pairs": 2
+  },
+  "source_reads_stopped": true,
+  "resource_deviation": "DISCOVERY_BUDGET_DEVIATION_V1.json",
+  "scientific_scope": "These localsoftware/index checks addnoNFLsamples or predictivegain. Qualifiedoriginal-packetgrading andindependentselectorreceipts separatelybound;nooriginalsiteactivation/Cadmissionimplied.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_original_B_sides": 0,
+  "original_site_writes": 0
+}

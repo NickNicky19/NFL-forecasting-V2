@@ -1,3 +1,7 @@
+## Wave closure and next valid comparison — November14 UTC
+
+[Executed B checkpoint](reports/wave-closure-next-comparison-20261114/B/B_WAVE_CLOSURE_CHECKPOINT_V1.md): frozenforecast-onlyW10packetgradedwithqualifiedfinalCMP/appearance;fournewnumericviews,zeroofferedweeks/picks. WebsiteW4independentproductionmembership/arithmeticPASSatpartialtier;fiveblockdurationnotreset,SHADOW,10generatedvs100reference. W6unknown→lossmeasurementseparatefromnewW4coverage. NewimmutableW1–4outputhandoff/preciseAprivateofferdependency;CnewFTN/V7intakepending;concreteevent-rostercomponentpostgameleadnotpregamequalification. No newfits/researchrecipes/sitewrites. SharedHTTPcapoverrunrecordedandfurthersourcediscoverystopped.
+
 ## Information-first completion block — November13 UTC
 
 [Executed B result](reports/information-first-20261112-01/B/B_INFORMATION_FIRST_CHECKPOINT_V1.md): prior-use/sourcequalification→onefixedFTNthrowaway/IWPcomparison completed28mainfits+1independentreproduction+2optionalcurrentfits. B1exactB0alias,142actual-line diagnosticcasesW5–9/71games, primary72vs76; no90claim.315currentnumeric+664priorseason; eightgenuineconditionalfutureforecasts remotelycaptured, nooffers/sides. LOCAL_NOT_C_ADMITTED; C/A/siteownership unchanged.

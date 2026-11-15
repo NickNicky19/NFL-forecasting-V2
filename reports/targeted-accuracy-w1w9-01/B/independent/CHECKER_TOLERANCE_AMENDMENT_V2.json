@@ -1,0 +1,11 @@
+{
+  "id": "B_M2_INDEPENDENT_CHECKER_NUMERIC_TOLERANCE_AMENDMENT_v2",
+  "at_UTC": "2026-11-15T05:02:22.621522+00:00",
+  "classification": "TEST_ASSUMPTION_CORRECTION_NOT_NFL_MODEL_DEFECT",
+  "original_checker_sha256": "eac6bdeac4368e0f00c0defeab888af374b029fea1fb4c0d09302472977f821c",
+  "original_receipt": "AUTHOR_PREFIT_SOFTWARE_CHECKS_V1.json",
+  "change": "BLAS matrix-vector versus row-vector floating arithmetic requires a numerical comparison; use absolute1e-10 kappa tolerance for batch/single/shuffle, retain separate measured difference. Original bitwise assertion failure preserved. Syntaxwarning whitespace repaired only in V2 checker.",
+  "NFL_fits": 0,
+  "author_code_changes_by_reviewer": 0,
+  "predictive_metric_changes": 0
+}

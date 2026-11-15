@@ -1,0 +1,332 @@
+{
+  "id": "B_M2_INDEPENDENT_AUTHOR_PREFIT_SOFTWARE_v1",
+  "at_UTC": "2026-11-15T05:01:23.420965+00:00",
+  "state": "FAIL",
+  "checks": 365,
+  "problems": [
+    "Batch/single precision identity"
+  ],
+  "results": {
+    "law_checks": [
+      {
+        "attempt_mean": 0.0,
+        "attempt_shape": 20.0,
+        "conversion_mean": 0.6,
+        "precision": 20.0,
+        "largest_CDF_difference": 0.0,
+        "normalization_error": 0.0,
+        "attempt_grid": 0,
+        "omitted_attempt_mass": 0.0
+      },
+      {
+        "attempt_mean": 35.0,
+        "attempt_shape": 20.0,
+        "conversion_mean": 0.67,
+        "precision": 20.0,
+        "largest_CDF_difference": 1.7236323479608018e-11,
+        "normalization_error": 5.440092820663267e-15,
+        "attempt_grid": 133,
+        "omitted_attempt_mass": 2.4389171078600778e-11
+      },
+      {
+        "attempt_mean": 10.0,
+        "attempt_shape": 0.5,
+        "conversion_mean": 0.4,
+        "precision": 1.0,
+        "largest_CDF_difference": 1.0238809800000581e-11,
+        "normalization_error": 0.0,
+        "attempt_grid": 456,
+        "omitted_attempt_mass": 2.454334968729171e-11
+      },
+      {
+        "attempt_mean": 55.0,
+        "attempt_shape": 1.0,
+        "conversion_mean": 0.9,
+        "precision": 99.0,
+        "largest_CDF_difference": 2.7977620220553945e-14,
+        "normalization_error": 3.197442310920451e-14,
+        "attempt_grid": 1354,
+        "omitted_attempt_mass": 2.4926865555303827e-11
+      },
+      {
+        "attempt_mean": 35.0,
+        "attempt_shape": 20.0,
+        "conversion_mean": 0.0,
+        "precision": 20.0,
+        "largest_CDF_difference": 0.0,
+        "normalization_error": 0.0,
+        "attempt_grid": 0,
+        "omitted_attempt_mass": 0.0
+      },
+      {
+        "attempt_mean": 35.0,
+        "attempt_shape": 20.0,
+        "conversion_mean": 1.0,
+        "precision": 20.0,
+        "largest_CDF_difference": 0.0,
+        "normalization_error": 6.661338147750939e-16,
+        "attempt_grid": 133,
+        "omitted_attempt_mass": 2.4389171078600778e-11
+      },
+      {
+        "attempt_mean": 35.0,
+        "attempt_shape": 20.0,
+        "conversion_mean": 0.67,
+        "precision": 9999.0,
+        "largest_CDF_difference": 1.2222778345005736e-11,
+        "normalization_error": 6.902922677909373e-12,
+        "attempt_grid": 133,
+        "omitted_attempt_mass": 2.4389171078600778e-11
+      }
+    ],
+    "gradient": {
+      "analytic": [
+        -5.626181739293501,
+        -2.962840160930589,
+        -3.8338287788220824,
+        -1.293585573346325,
+        -1.5784859071259112,
+        -3.0238067706058938,
+        -1.5636582710942313
+      ],
+      "finite_difference": [
+        -5.626181737738988,
+        -2.9628401648551512,
+        -3.8338287872363703,
+        -1.2935855657758566,
+        -1.5784859130008042,
+        -3.0238067679988485,
+        -1.56365826242677
+      ],
+      "largest_difference": 8.667461193212489e-09
+    },
+    "representative_feature_traces": [
+      {
+        "case": "ORDINARY_W1",
+        "game_id": "2026_01_ARI_LAC",
+        "player_id": "00-0033119",
+        "features": [
+          1.0,
+          0.7105850035237831,
+          0.977259925818557,
+          0.4574468085106383,
+          0.8395046466259625,
+          0.0,
+          0.0
+        ],
+        "trace": {
+          "feature_order": [
+            "intercept",
+            "predicted_context_entropy",
+            "lagged_known_destination_entropy",
+            "lagged_known_distance_mean_div20",
+            "log_prior_attempt_support_div_log1000",
+            "destination_unavailable",
+            "distance_unavailable"
+          ],
+          "known_destination_denominator": 328.0,
+          "known_distance_denominator": 329,
+          "raw_distance_mean": 9.148936170212766,
+          "latest_own_source": 1768166700.0,
+          "latest_own_game": 1767561900.0,
+          "interpretation": "Earlier known pass destination, not alignment; earlier game-distance mean, not per-attempt distance cells."
+        }
+      },
+      {
+        "case": "ORDINARY_W5",
+        "game_id": "2026_05_BAL_ATL",
+        "player_id": "00-0035993",
+        "features": [
+          1.0,
+          0.721914928857867,
+          0.9416153002065956,
+          0.48041958041958044,
+          0.7194541640317499,
+          0.0,
+          0.0
+        ],
+        "trace": {
+          "feature_order": [
+            "intercept",
+            "predicted_context_entropy",
+            "lagged_known_destination_entropy",
+            "lagged_known_distance_mean_div20",
+            "log_prior_attempt_support_div_log1000",
+            "destination_unavailable",
+            "distance_unavailable"
+          ],
+          "known_destination_denominator": 141.0,
+          "known_distance_denominator": 143,
+          "raw_distance_mean": 9.608391608391608,
+          "latest_own_source": 1791738000.0,
+          "latest_own_game": 1791133200.0,
+          "interpretation": "Earlier known pass destination, not alignment; earlier game-distance mean, not per-attempt distance cells."
+        }
+      },
+      {
+        "case": "ORDINARY_W9",
+        "game_id": "2026_09_ARI_SEA",
+        "player_id": "00-0035289",
+        "features": [
+          1.0,
+          0.6912765357541656,
+          0.9348915139092007,
+          0.4532608695652174,
+          0.714338266751365,
+          0.0,
+          0.0
+        ],
+        "trace": {
+          "feature_order": [
+            "intercept",
+            "predicted_context_entropy",
+            "lagged_known_destination_entropy",
+            "lagged_known_distance_mean_div20",
+            "log_prior_attempt_support_div_log1000",
+            "destination_unavailable",
+            "distance_unavailable"
+          ],
+          "known_destination_denominator": 134.0,
+          "known_distance_denominator": 138,
+          "raw_distance_mean": 9.065217391304348,
+          "latest_own_source": 1794160800.0,
+          "latest_own_game": 1793556000.0,
+          "interpretation": "Earlier known pass destination, not alignment; earlier game-distance mean, not per-attempt distance cells."
+        }
+      },
+      {
+        "case": "SPARSE_OWN_HISTORY",
+        "game_id": "2026_01_SF_LA",
+        "player_id": "00-0039107",
+        "features": [
+          1.0,
+          0.7465743190024391,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "trace": {
+          "feature_order": [
+            "intercept",
+            "predicted_context_entropy",
+            "lagged_known_destination_entropy",
+            "lagged_known_distance_mean_div20",
+            "log_prior_attempt_support_div_log1000",
+            "destination_unavailable",
+            "distance_unavailable"
+          ],
+          "known_destination_denominator": 0.0,
+          "known_distance_denominator": 0,
+          "raw_distance_mean": null,
+          "latest_own_source": null,
+          "latest_own_game": null,
+          "interpretation": "Earlier known pass destination, not alignment; earlier game-distance mean, not per-attempt distance cells."
+        }
+      },
+      {
+        "case": "KNOWN_PLAYED_ZERO_COMPLETIONS",
+        "game_id": "2026_01_CHI_CAR",
+        "player_id": "00-0038102",
+        "features": [
+          1.0,
+          0.7282788552052496,
+          0.9157338551553026,
+          0.46011904761904765,
+          0.6431396419047642,
+          0.0,
+          0.0
+        ],
+        "trace": {
+          "feature_order": [
+            "intercept",
+            "predicted_context_entropy",
+            "lagged_known_destination_entropy",
+            "lagged_known_distance_mean_div20",
+            "log_prior_attempt_support_div_log1000",
+            "destination_unavailable",
+            "distance_unavailable"
+          ],
+          "known_destination_denominator": 83.0,
+          "known_distance_denominator": 84,
+          "raw_distance_mean": 9.202380952380953,
+          "latest_own_source": 1768166700.0,
+          "latest_own_game": 1767561900.0,
+          "interpretation": "Earlier known pass destination, not alignment; earlier game-distance mean, not per-attempt distance cells."
+        }
+      },
+      {
+        "case": "HISTORICAL_TEAM_CHANGE",
+        "game_id": "2026_01_ATL_PIT",
+        "player_id": "00-0033662",
+        "features": [
+          1.0,
+          0.7383319768036813,
+          0.9795574308538737,
+          0.44000000000000006,
+          0.7485042226047166,
+          0.0,
+          0.0
+        ],
+        "trace": {
+          "feature_order": [
+            "intercept",
+            "predicted_context_entropy",
+            "lagged_known_destination_entropy",
+            "lagged_known_distance_mean_div20",
+            "log_prior_attempt_support_div_log1000",
+            "destination_unavailable",
+            "distance_unavailable"
+          ],
+          "known_destination_denominator": 174.0,
+          "known_distance_denominator": 175,
+          "raw_distance_mean": 8.8,
+          "latest_own_source": 1760893200.0,
+          "latest_own_game": 1760288400.0,
+          "interpretation": "Earlier known pass destination, not alignment; earlier game-distance mean, not per-attempt distance cells."
+        }
+      }
+    ],
+    "OOF_chronology": [
+      {
+        "parent": "P2",
+        "rows": 776,
+        "design_sha256": "cf8fca5470e9eafce104592a66074517696a420886b39ff99972d2ba71c95b3f",
+        "latest_admitted_label": 1791245700.0,
+        "origin_cutoff": 1791504900.0,
+        "identical_after_future_mutation": true
+      },
+      {
+        "parent": "C1",
+        "rows": 776,
+        "design_sha256": "d06aa04efe88b6885627e18f7581801aa802f6a9b7de05f2bd55894003d7fccd",
+        "latest_admitted_label": 1791245700.0,
+        "origin_cutoff": 1791504900.0,
+        "identical_after_future_mutation": true
+      },
+      {
+        "parent": "C2",
+        "rows": 776,
+        "design_sha256": "38dc21a9b2856097a35b61e31204534d3d30375c722072d8587c615bad97fb10",
+        "latest_admitted_label": 1791245700.0,
+        "origin_cutoff": 1791504900.0,
+        "identical_after_future_mutation": true
+      }
+    ]
+  },
+  "code_sha256": {
+    "nfl_v2/targeted_qb_m2.py": "23ab726f718332da06b94ecc7f093d089cc3e9dd4693b41de4a8a9013fcdd670",
+    "tools/run_targeted_qb_m2.py": "350c32e6bf5dbb81bd99845412fe00ba572ed4bfa6d858febcf90e28824a1e94"
+  },
+  "CPU_seconds": 5.1731317610000005,
+  "actual_optimizer_calls": 0,
+  "NFL_fits": 0,
+  "source_read_attempts": 0,
+  "limits": [
+    "No private A offers or authentic historical clocks inspected.",
+    "No NFL model fit or predictive improvement verified.",
+    "Direct-model vector feature order is code-controlled; low-level forest restorer checks width, not arbitrary same-width semantic permutations.",
+    "Author normalization guard tolerance is1e-7; these independent checked fixtures bound observed error separately."
+  ]
+}

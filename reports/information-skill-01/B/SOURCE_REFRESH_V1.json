@@ -1,0 +1,87 @@
+{
+  "id": "INFORMATION_SKILL_B_SOURCE_REFRESH_v1",
+  "A_branch": "research/weekly-storage-probe-v1",
+  "A_head": "fc3add1eb431e2b75334571350dbbcc8cff399f1",
+  "C_main": "e4efc40f1c8922cbc66ead629efe210328b55da3",
+  "source_attempts": 11,
+  "source_cap": 12,
+  "branch_reads": 2,
+  "records": [
+    {
+      "name": "A_EXPORT",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting/fc3add1eb431e2b75334571350dbbcc8cff399f1/reports/abc-championship/EXPORT_INDEX.json",
+      "attempted_UTC": "2026-11-15T14:47:58.718422+00:00",
+      "state": "ERROR_PRESERVED",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "C_PROTOCOL",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/e4efc40f1c8922cbc66ead629efe210328b55da3/reports/abc-championship/CURRENT_PROTOCOL.json",
+      "attempted_UTC": "2026-11-15T14:47:58.719031+00:00",
+      "HTTP_status": 200,
+      "state": "RECEIVED_EXACT_RAW_BYTES",
+      "bytes": 113468,
+      "sha256": "8a5eae0279810744261b0dd653b138b2a4b7e70c9193db0c06a9599a61eda60c"
+    },
+    {
+      "name": "C_EXPORT",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/e4efc40f1c8922cbc66ead629efe210328b55da3/reports/abc-championship/EXPORT_INDEX.json",
+      "attempted_UTC": "2026-11-15T14:47:58.719586+00:00",
+      "HTTP_status": 200,
+      "state": "RECEIVED_EXACT_RAW_BYTES",
+      "bytes": 102792,
+      "sha256": "cfb5bebdffa4c80aad90cdffe49f91505ccb35bacee5ed8378f75ad46ef32fda"
+    },
+    {
+      "name": "C_B_INTAKE",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/e4efc40f1c8922cbc66ead629efe210328b55da3/reports/targeted-accuracy-w1w9-01/intake/B_CURRENT_RECEIPT.json",
+      "attempted_UTC": "2026-11-15T14:47:58.720230+00:00",
+      "HTTP_status": 200,
+      "state": "RECEIVED_EXACT_RAW_BYTES",
+      "bytes": 3362,
+      "sha256": "178bfd13891f7f6b2772fef1bfc27f12954fb36d2e42d8f50b88018628050622"
+    },
+    {
+      "name": "A_BRANCH_LIST_CONNECTOR",
+      "url": "https://api.github.com/repos/NickNicky19/NFL-forecasting/branches?per_page=100",
+      "state": "RECEIVED_99_CURRENT_BRANCHES;NO_EXACT_M1_RESEARCH_HEAD_LOCATED_IN_RELEVANT_PUBLIC_NAMES",
+      "qualification": "weekly-storage branch publichead lacks championship index;404preserved; notproofpeerworkmissing"
+    },
+    {
+      "name": "C_CLOSURE_ADMISSION",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/e4efc40f1c8922cbc66ead629efe210328b55da3/reports/targeted-accuracy-w1w9-01/checkpoint-closure-01/ADMISSION_RECEIPT.json",
+      "attempted_UTC": "2026-11-15T14:52:42.904516+00:00",
+      "HTTP_status": 200,
+      "state": "RECEIVED_EXACT_RAW_BYTES",
+      "bytes": 6804,
+      "sha256": "cfd7083edbca16387f22e85c2db57d8e87bc5c41e549748e932db1f9bf2b2d6b"
+    },
+    {
+      "name": "C_CLOSURE_B",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/e4efc40f1c8922cbc66ead629efe210328b55da3/reports/targeted-accuracy-w1w9-01/checkpoint-closure-01/intake/B_RECEIPT.json",
+      "attempted_UTC": "2026-11-15T14:52:42.905101+00:00",
+      "HTTP_status": 200,
+      "state": "RECEIVED_EXACT_RAW_BYTES",
+      "bytes": 61186,
+      "sha256": "bfbc79c38b98a2f6772615b08f9d9ff7bf31c8a061241750a7d6044747d5eead"
+    },
+    {
+      "name": "C_CLOSURE_A",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/e4efc40f1c8922cbc66ead629efe210328b55da3/reports/targeted-accuracy-w1w9-01/checkpoint-closure-01/intake/A_RECEIPT.json",
+      "attempted_UTC": "2026-11-15T14:52:42.905719+00:00",
+      "HTTP_status": 200,
+      "state": "RECEIVED_EXACT_RAW_BYTES",
+      "bytes": 7580,
+      "sha256": "7c091ce2de557ee2b68ec870ee5a2dc4491887b47aeb7e97ba4495ecfc753cf5"
+    },
+    {
+      "name": "A_REGISTERED_REF_CONNECTOR",
+      "url": "https://api.github.com/repos/NickNicky19/NFL-forecasting/git/ref/heads/research/accuracy-wave-20261026",
+      "state": "RECEIVED",
+      "head": "49ff55bfaee3ae0a9213d2f3a34c45468c7e5a45",
+      "qualification": "Conflicts with C12:07 observed775a samebranch; exact currentA scientific path not authenticated by branchname. Do not reset, overwrite, or declare current fixture/joins unexecuted based solely on old pin."
+    }
+  ],
+  "at_UTC": "2026-11-15T14:47:58.712716+00:00"
+}

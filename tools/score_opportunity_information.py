@@ -104,12 +104,20 @@ def main():
             joint=predmap['OPP_JOINT',(key[0],key[1],'pass_att')]
             if row['law'].get('kind')!='gamma_poisson_count'or row['law']['shape']!=parent['shape']or abs(row['mean']-joint['mean'])>1e-8:raise ValueError('Mean-isolation product changed parent shape or joint mean.')
     law_cache={}
+    def common_row(offer,selected_side,*,appearance,status):
+        # The inherited adapter intentionally admits completions only. Supply
+        # an explicit separate official-QB-attempt contract, never mislabel an
+        # attempt as a completion to evade its target guard. C's status and
+        # summary functions remain byte-identical for both admitted contracts.
+        if offer['target']=='pass_cmp':return adapter.common_row(offer,selected_side,appearance=appearance,status=status)
+        if offer['target']!='pass_att'or offer['position']!='QB':raise ValueError('Unsupported explicit opportunity role/target')
+        return dict(game_id=offer['game_id'],player_id=offer['player_id'],category='pass_att',position='QB',season=offer['season'],week=offer['week'],selected_side=selected_side,actual=offer['actual'],appearance=appearance,status=status,line=offer['line'],comparator='STRICT_OVER_UNDER',period='FULL_GAME_INCLUDING_OT',scoring_contract_id='OFFICIAL_FULL_GAME_PASS_ATTEMPTS',record_kind='ACTUAL_OFFER',evidence_tier='TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC',source_scope='Existing B qualified native W5-9 ATT diagnostic; attempts exclude sacks; no new quote admission')
     def law_for(row):
         key=row['method'],ev.key(row)
         if key not in law_cache:law_cache[key]=oi.restore_law(row['law'])
         return law_cache[key]
     def forecast_row(offer,method,policy,prediction):
-        row=adapter.common_row(offer,None,appearance='PLAYED',status='UNAVAILABLE_FORECAST')
+        row=common_row(offer,None,appearance='PLAYED',status='UNAVAILABLE_FORECAST')
         row.update(target=offer['target'],category=offer['target'],kickoff=offer['kickoff'],line_from=offer['line_from'],method=method,component_policy=policy,procedure_id=method,point=None,probs=None,available=prediction is not None,unavailable_reason=None if prediction else'MISSING_EXACT_SAVED_FORECAST',fallback=None,parent_fallback=False,attribution='unavailable',original_issuance=False)
         if prediction is not None:
             if prediction.get('actual')is not None and prediction['actual']!=offer['actual']:raise ValueError('Frozen forecast and qualified actual differ.')

@@ -296,9 +296,12 @@ def postfit(checker):
         cdf = [law.cdf(k) for k in ks]
         checker.check(all(math.isfinite(v) and -1e-12 <= v <= 1+1e-12 for v in cdf), "finite valid CDF")
         checker.check(all(a <= b+1e-12 for a,b in zip(cdf,cdf[1:])), "monotonic CDF")
-        mass = [law.pmf(k) for k in range(161)]
+        # A bounded numerical grid is not a structural maximum. Respect its
+        # declared domain and test its explicit out-of-grid exception below.
+        mass_limit = min(160, law.grid_max) if isinstance(law, oi.OpportunityMixture) else 160
+        mass = [law.pmf(k) for k in range(mass_limit+1)]
         checker.check(all(math.isfinite(v) and v >= 0 for v in mass), "nonnegative integer mass")
-        checker.equal(sum(mass), law.cdf(160), "PMF/CDF finite-region mass", 2e-9)
+        checker.equal(sum(mass), law.cdf(mass_limit), "PMF/CDF finite-region mass", 2e-9)
         at = ctx.exact_probabilities(law, 20.)
         half = ctx.exact_probabilities(law, 20.5)
         checker.equal(sum(at.values()), 1., "integer event/push total", 2e-12)
@@ -308,6 +311,14 @@ def postfit(checker):
             checker.check(law.omitted_team_mass <= oi.TAIL_TOL and law.omitted_mean_bound <= oi.MEAN_TAIL_TOL, "frozen integration bounds")
             checker.check(law.joint_pmf(5,6,0) == 0 and law.joint_pmf(5,3,4) == 0, "C<=A<=T invalid support zero")
             checker.check(law.parameters()["renormalized"] is False, "no renormalization")
+            if law.team_mean > 0 and law.conversion > 0:
+                try:
+                    law.pmf(law.grid_max+1)
+                    checker.check(False, "positive out-of-grid event has explicit numerical limitation")
+                except oi.IntegrationError:
+                    checker.check(True, "positive out-of-grid event has explicit numerical limitation")
+            else:
+                checker.equal(law.pmf(law.grid_max+1), 0., "genuine zero-workload/conversion structural zero")
         restored.append(dict(week=key[0], method=key[1], target=key[2], case_sha256=digest([row[k]for k in IDENTITY]), law_kind=row["law"]["kind"]))
     return dict(stage="POSTFIT", saved_rows_checked=len(forecasts), restored_samples=restored,
                 actual_line_grading=False, new_NFL_observations=0, optimizer_calls=0,

@@ -1,3 +1,7 @@
+## Information-skill follow-through — November15 UTC
+
+[Executed ownB opportunity relationship comparison](reports/information-skill-follow-through-01/B/README.md): fixedconversion nativeATT/CMP142W5–9 each; ATTmean73vs70 butbelowUnder75/adjusted81of141, CMPmean68vs72, jointproper/selectionadverse. Closeexactjointrecipe; smallATTmeanresearchonly. OldM2early84complete/Apublic226verified, distinctSKILLearly84A-owned; frozenCM3A-only1260cap+newspend/reserve. Depthdtalreadytested/fullpersonneluniverseblocked. IndependentnativegradePASS, newteamstrictreproductionFAIL/fullvectorspreserved/sharePASS; originalC1FAILunchanged. No livecapture/feed/siteactivation orcrossownerwrite. Alloldrecords/indexprefixesretained.
+
 ## Wave closure and next valid comparison — November14 UTC
 
 [Executed B checkpoint](reports/wave-closure-next-comparison-20261114/B/B_WAVE_CLOSURE_CHECKPOINT_V1.md): frozenforecast-onlyW10packetgradedwithqualifiedfinalCMP/appearance;fournewnumericviews,zeroofferedweeks/picks. WebsiteW4independentproductionmembership/arithmeticPASSatpartialtier;fiveblockdurationnotreset,SHADOW,10generatedvs100reference. W6unknown→lossmeasurementseparatefromnewW4coverage. NewimmutableW1–4outputhandoff/preciseAprivateofferdependency;CnewFTN/V7intakepending;concreteevent-rostercomponentpostgameleadnotpregamequalification. No newfits/researchrecipes/sitewrites. SharedHTTPcapoverrunrecordedandfurthersourcediscoverystopped.

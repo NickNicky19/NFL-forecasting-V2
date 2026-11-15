@@ -1,7 +1,7 @@
 {
   "schema": "v2-current-public-index-pointer-v2",
-  "manifest": "reports/information-skill-01/B/results-index-v1/INDEX_MANIFEST.json",
-  "previous_checkpoint": "reports/targeted-accuracy-w1w9-01/B/results-index-v1/INDEX_MANIFEST.json",
+  "manifest": "reports/information-skill-follow-through-01/B/opportunity-v1/results-index-v1/INDEX_MANIFEST.json",
+  "previous_checkpoint": "reports/information-skill-01/B/results-index-v1/INDEX_MANIFEST.json",
   "previous_unchanged": true,
   "manifest_role": "ALL_AUDIT_IMMUTABLE_BACKWARD_COMPATIBLE",
   "default_view": "CURRENT_CANONICAL_SCORE_VERSIONS_WITH_SCOPED_RECOMMENDATION_HOLDS",
@@ -18,10 +18,10 @@
     "sha256": "f7b540ccf688bb77672646b7a0af162f987a9669d836a4f44651e497205803d8"
   },
   "derived_comparison_manifest": {
-    "path": "reports/information-skill-01/B/paired-analysis-index-v1/ANALYSIS_MANIFEST.json",
-    "sha256": "ce5e53225a34ed355a04f26d9625a560c912c17dbbd5f37abf1854f473717442"
+    "path": "reports/information-skill-follow-through-01/B/opportunity-v1/paired-analysis-index-v1/ANALYSIS_MANIFEST.json",
+    "sha256": "e43b2da971f8cee40dd92c505fa333f1bafa6671b0c727a59805adadc027600e"
   },
-  "readable_checkpoint": "reports/information-skill-01/B/README.md",
+  "readable_checkpoint": "reports/information-skill-follow-through-01/B/opportunity-v1/README.md",
   "software_verification_manifest": {
     "path": "reports/week8-grading-20261102l/software/SOFTWARE_VERIFICATION_MANIFEST_V1.json",
     "sha256": "fc322f84ca2d46d9d09038517498567203816ff59f730f557b07029104317db3"
@@ -456,5 +456,13 @@
     "new_source_score_views": 1390,
     "new_pairs": 2052,
     "scope": "Original SKILL version; source-native point/law/probability/selection products separate. New index views are not new NFL observations, fits, original selections, C admission or deployment."
+  },
+  "opportunity_information_v1": {
+    "report": "reports/information-skill-follow-through-01/B/opportunity-v1/README.md",
+    "source_artifact": "reports/information-skill-follow-through-01/B/opportunity-v1/evaluation-v1/SCORES.json",
+    "projection": "reports/information-skill-follow-through-01/B/opportunity-v1/INDEX_PROJECTION_V1.json.gz",
+    "new_source_score_views": 1408,
+    "new_pairs": 1992,
+    "scope": "Frozen opportunity version; source-native ATT/CMP point/law/probability/selection products separate. New index views are not new NFL observations, fits, original selections, C admission or deployment."
   }
 }

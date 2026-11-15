@@ -178,7 +178,7 @@ def positive_control(budget):
       learned_precision_by_group=[float(model.precision(z)[:300].mean()),float(model.precision(z)[300:].mean())],state='PASS_CAN_LEARN_STRONG_ELIGIBLE_DISPERSION_SIGNAL'))
 
 def run(pilot):
-    p=read(OUT/'FROZEN_PROTOCOL_V1.json')
+    p=read(OUT/('FROZEN_PROTOCOL_V2.json'if(OUT/'FROZEN_PROTOCOL_V2.json').exists()else'FROZEN_PROTOCOL_V1.json'))
     for path,digest in {**p['source_inputs'],**p['code'],**p['old_prediction_bindings']}.items():assert sha(ROOT/path)==digest,path
     rows,h,ch=context();budget=Budget();start=now()
     with threadpool_limits(limits=2):

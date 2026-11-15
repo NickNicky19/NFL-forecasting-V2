@@ -7,11 +7,12 @@ def save(p,x):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps
 def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
 def build(phase):
     dest=BASE/'retention'/phase;dest.mkdir(parents=True,exist_ok=False)
-    if phase=='prefit-v1':
+    if phase.startswith('prefit-'):
         files=[ROOT/'nfl_v2/targeted_qb_m2.py',ROOT/'tools/run_targeted_qb_m2.py',pathlib.Path(__file__),
           BASE/'wave-v1/FROZEN_PROTOCOL_V1.json',BASE/'wave-v1/ENVIRONMENT_V1.json',BASE/'ADOPTION_AND_BUDGET_V1.json',
           BASE/'evaluation/FROZEN_EVALUATION_PROTOCOL_V1.json']
         files+=list((BASE/'prior-source').glob('*'))+[f for f in(BASE/'independent').glob('PREFIT*.json')]
+        files+=list((BASE/'wave-v1').glob('FROZEN_PROTOCOL_V*.json'))
     elif phase=='pilot-v1':
         files=list((BASE/'wave-v1').rglob('*'))+[ROOT/'nfl_v2/targeted_qb_m2.py',ROOT/'tools/run_targeted_qb_m2.py',pathlib.Path(__file__)]
         files += list((BASE/'independent').glob('*SOFTWARE*.json'))
@@ -22,7 +23,6 @@ def build(phase):
         if helper.exists():files.append(helper)
     files += [ROOT/'reports/information-first-20261112-01/B/completion-wave-v1/QB_CONTEXT_W1_W9_INPUTS_V1.json.gz',
               ROOT/'reports/player-context-completion-decision-01/B/source-depth-v1/FTN_DEPTH_QB_GAME_INPUTS.json.gz']
-    files=[f for f in sorted(set(files))if f.is_file()and'__pycache__'not in f.parts and 'retention'not in f.relative_to(BASE).parts if f.is_relative_to(BASE)] if False else files
     selected=[]
     for f in sorted(set(files)):
         if not f.is_file()or'__pycache__'in f.parts or f.suffix=='.pyc':continue
@@ -42,7 +42,7 @@ def build(phase):
 def readback(phase,commit):
     dest=BASE/'retention'/phase;log=BASE/'retention/READ_ATTEMPTS.jsonl'
     records=[json.loads(x)for x in log.read_text().splitlines()]if log.exists()else[]
-    category='prefit'if phase in('prefit-v1','pilot-v1')else'final'
+    category='prefit'if phase.startswith('prefit-')or phase=='pilot-v1'else'final'
     count=sum(r['category']==category for r in records);cap=6 if category=='prefit'else 12
     def get(path):
         nonlocal count

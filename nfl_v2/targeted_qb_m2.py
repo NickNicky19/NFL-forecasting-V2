@@ -72,10 +72,15 @@ class DispersionModel:
 
     def fit(self,z,n,c,m):
         z,n,c,m=map(lambda a:np.asarray(a,float),(z,n,c,m))
+        if not z.size:z=z.reshape(0,7)
+        if (n.ndim!=1 or c.shape!=n.shape or m.shape!=n.shape or z.shape!=(len(n),7)
+            or not all(np.isfinite(v).all()for v in (z,n,c,m))
+            or np.any(n<0)or np.any(c<0)or np.any(c>n)
+            or np.any(n!=np.floor(n))or np.any(c!=np.floor(c))
+            or np.any(m<=0)or np.any(m>=1)):
+            raise ValueError('Qualified finite integer conditional training contract')
         if len(n)<30 or n.sum()<80:
             self.optimization={'success':False,'fallback':'INSUFFICIENT_EARLIER_OOT_SUPPORT','rows':len(n)};return self
-        if z.shape!=(len(n),7)or np.any(n<0)or np.any(c<0)or np.any(c>n)or np.any(m<=0)or np.any(m>=1):
-            raise ValueError('Qualified conditional training contract')
         f=optimize.minimize(self.objective,prior_beta(),args=(z,n,c,m),jac=True,method='L-BFGS-B',
                             options={'maxiter':200,'ftol':1e-10,'gtol':1e-6})
         finite=bool(np.isfinite(f.x).all()and math.isfinite(f.fun))
@@ -91,7 +96,7 @@ class DispersionModel:
 
     @classmethod
     def restore(cls,p):
-        if p['kind']!='oot_context_conditional_bb_precision'or p['feature_order']!=list(FEATURES)or p['bounds']!=[K_MIN,K_MAX]:
+        if p['kind']!='oot_context_conditional_bb_precision'or p.get('version')!=VERSION or p['feature_order']!=list(FEATURES)or p['bounds']!=[K_MIN,K_MAX]:
             raise ValueError('Dispersion model identity/feature order')
         return cls(p['beta'],p['optimization'])
 
@@ -205,6 +210,7 @@ class IntegratedBetaBinomial:
 
 def restore_law(p):
     if p['kind']=='integrated_nb_beta_binomial':
+        if p.get('version')!=VERSION:raise ValueError('Integrated law version')
         return IntegratedBetaBinomial(**{k:p[k]for k in ('attempt_mean','attempt_shape','conversion_mean','precision','tail_tol')})
     if p['kind']=='gamma_poisson_count':return ctx.CountLaw(p['mean'],p['shape'])
     if p['kind']=='leaf_mixture':

@@ -1,0 +1,91 @@
+{
+  "id": "B_M2_OWNER_LOCAL_EARLY_OFFER_HANDOFF_v1",
+  "owner": "A existing protected-board executor; B owns forecasts, C common intake",
+  "state": "SAVED_FORECASTS_AND_DETERMINISTIC_ADAPTER_AVAILABLE;EARLY_PRIVATE_JOIN_NOT_EXECUTED_BY_B",
+  "requested_new_cells": {
+    "season": 2026,
+    "weeks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "owner_bound_existing_offers": [
+      10,
+      25,
+      26,
+      23
+    ],
+    "products": [
+      "M2_P2_BIN",
+      "M2_P2_BB",
+      "M2_C1_BIN",
+      "M2_C1_BB",
+      "M2_C2_BIN",
+      "M2_C2_BB",
+      "D_M2"
+    ],
+    "outputs": [
+      "P1_MEAN",
+      "P1_LOWER_MEDIAN",
+      "P2_STATISTICAL_LAW"
+    ]
+  },
+  "prediction_files": [
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W01.json.gz",
+      "sha256": "48468334ac5b79fbba61a95027359f49b4d8562fdc6c528960abfbe43c09a7ba",
+      "bytes": 128221
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W02.json.gz",
+      "sha256": "44ec48621a42179e8228938ba01574a63a04da73dba52195adacb7c3a3e9dbb5",
+      "bytes": 137337
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W03.json.gz",
+      "sha256": "dc1474d30cef3ef0335ff0dce0e0f4ca9333b1c5c0fd0cc2bf32f55b2b75e255",
+      "bytes": 127500
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W04.json.gz",
+      "sha256": "98acf602963cbc410e0c44a363642e8f34ef847e2ffb40de86c60288caabe677",
+      "bytes": 119598
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W05.json.gz",
+      "sha256": "c7655e076243b2736f90da6d206b2fd36091ee2f30cfb322c1fd97a6ff3851ce",
+      "bytes": 127784
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W06.json.gz",
+      "sha256": "ed084d39465d33938a7835d83b7071195c7db6dbebbdae856e3fa700aab0aa21",
+      "bytes": 104196
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W07.json.gz",
+      "sha256": "a15035434c37a22e0a9f60108a319ff091aff0cd3974821bbddd393f5515431f",
+      "bytes": 111188
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W08.json.gz",
+      "sha256": "40bcad92ad2d6090c710983a4d7b8bba3e4758431ec35a5dfa11d597cfc9a8c8",
+      "bytes": 123428
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W09.json.gz",
+      "sha256": "30dca5f4a33a60d6209d91d1b47696580f6f0faaacd6606239a32f1aac1f111f",
+      "bytes": 114914
+    }
+  ],
+  "adapter": {
+    "path": "tools/query_targeted_qb_m2.py",
+    "sha256": "bf213c1ab3a08728603f13e66b48737daa15a5a74465a374586c017adb3f68d8",
+    "needs": "Qualified canonical game/player/target/season/week/line/source/horizon private opportunity rows; no final outcome needed for decision projection."
+  },
+  "outcome_policy": "A common grader uses qualified owner outcomes; preserve parent cached outcomes separately and do not zero unknowns. No model loading beyond trusted JSON/code.",
+  "execution": "Use existing permitted owner-local route only. No repeat old84 FTNB0/B2 join, no refits; these new procedure identities require their own grades. Private input/output stay owner-local; only allowed aggregates/commitments returned.",
+  "completion_condition": "Exact perprocedure ownside weekly/cumulative grades, availability/unknown/fallback counts, common masks and selected schedules admitted by C, or one exact incompatible field named.",
+  "current_inference": "NOT_RUN; this is historicalsaved-output adapter, not a fresh roster/fit/feed/consumer receipt.",
+  "public_primary_status": "NO_ADMISSION_OR_RELEASE"
+}

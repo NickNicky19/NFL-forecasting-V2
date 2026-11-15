@@ -1,5 +1,5 @@
 """Readback-bound public-safe retention; metadata is not model admission."""
-import argparse,datetime,gzip,hashlib,io,json,pathlib,tarfile,urllib.request
+import argparse,datetime,gzip,hashlib,io,json,pathlib,subprocess,tarfile,urllib.request
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 BASE=ROOT/'reports/targeted-accuracy-w1w9-01/B'
 def sha(b):return hashlib.sha256(b).hexdigest()
@@ -21,6 +21,7 @@ def build(phase):
         files += [ROOT/p for p in ['registries/RESULT_ARTIFACTS.json','registries/ANALYSIS_ARTIFACTS.json','registries/CURRENT_RESULTS_INDEX.json','START_HERE.md','TASK_LEDGER.md']]
         helper=ROOT/'tools/register_targeted_m2.py'
         if helper.exists():files.append(helper)
+        files += [ROOT/'tools/query_targeted_qb_m2.py',ROOT/'tests/test_targeted_qb_m2.py']
     files += [ROOT/'reports/information-first-20261112-01/B/completion-wave-v1/QB_CONTEXT_W1_W9_INPUTS_V1.json.gz',
               ROOT/'reports/player-context-completion-decision-01/B/source-depth-v1/FTN_DEPTH_QB_GAME_INPUTS.json.gz']
     selected=[]
@@ -55,7 +56,9 @@ def readback(phase,commit):
         by={z.name:z for z in t.getmembers()};assert len(by)==len(m['members'])
         for z in m['members']:
             member=by[z['path']];assert member.isfile();data=t.extractfile(member).read();assert sha(data)==z['sha256']and len(data)==z['bytes'];assert data==(ROOT/z['path']).read_bytes()
-    receipt=dict(state='EXACT_GITHUB_IMMUTABLE_CAPSULE_AND_ALL_MEMBERS_READBACK',UTC=now(),phase=phase,commit=commit,members=len(m['members']),manifest_sha256=sha(mb),capsule_sha256=sha(b),HTTP_GETs=2,category_attempts_so_far=count,member_individual_raw_URL_GETs=0,C_receipt=False,original_site_use=False)
+            committed=subprocess.check_output(['git','show',commit+':'+z['path']],cwd=ROOT)
+            assert committed==data,'Committed tree member differs from retained capsule'
+    receipt=dict(state='EXACT_GITHUB_IMMUTABLE_CAPSULE_AND_ALL_MEMBERS_READBACK',UTC=now(),phase=phase,commit=commit,members=len(m['members']),committed_tree_members_verified=len(m['members']),manifest_sha256=sha(mb),capsule_sha256=sha(b),HTTP_GETs=2,category_attempts_so_far=count,member_individual_raw_URL_GETs=0,C_receipt=False,original_site_use=False)
     save(dest/'READBACK.json',receipt);print(json.dumps(receipt))
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('action',choices=['build','readback']);p.add_argument('phase');p.add_argument('--commit');a=p.parse_args()

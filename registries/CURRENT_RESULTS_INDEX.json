@@ -1,7 +1,7 @@
 {
   "schema": "v2-current-public-index-pointer-v2",
-  "manifest": "reports/w1w9-comparison-closure-01/B/results-index-v2/INDEX_MANIFEST.json",
-  "previous_checkpoint": "reports/w1w9-comparison-closure-01/B/results-index-v1/INDEX_MANIFEST.json",
+  "manifest": "reports/targeted-accuracy-w1w9-01/B/results-index-v1/INDEX_MANIFEST.json",
+  "previous_checkpoint": "reports/w1w9-comparison-closure-01/B/results-index-v2/INDEX_MANIFEST.json",
   "previous_unchanged": true,
   "manifest_role": "ALL_AUDIT_IMMUTABLE_BACKWARD_COMPATIBLE",
   "default_view": "CURRENT_CANONICAL_SCORE_VERSIONS_WITH_SCOPED_RECOMMENDATION_HOLDS",
@@ -18,10 +18,10 @@
     "sha256": "f7b540ccf688bb77672646b7a0af162f987a9669d836a4f44651e497205803d8"
   },
   "derived_comparison_manifest": {
-    "path": "reports/w1w9-comparison-closure-01/B/paired-analysis-index-v2/ANALYSIS_MANIFEST.json",
-    "sha256": "fecd6a963dbfab2a93d7afd9da1da3c3a0b0ef1029ca53d70392eddeb9fd508c"
+    "path": "reports/targeted-accuracy-w1w9-01/B/paired-analysis-index-v1/ANALYSIS_MANIFEST.json",
+    "sha256": "24b78d45ff234d42ede4b9da2fa3db9dcdff8055a8701572611fb707bcdd917b"
   },
-  "readable_checkpoint": "reports/w1w9-comparison-closure-01/B/README.md",
+  "readable_checkpoint": "reports/targeted-accuracy-w1w9-01/B/README.md",
   "software_verification_manifest": {
     "path": "reports/week8-grading-20261102l/software/SOFTWARE_VERIFICATION_MANIFEST_V1.json",
     "sha256": "fc322f84ca2d46d9d09038517498567203816ff59f730f557b07029104317db3"
@@ -440,5 +440,13 @@
       "status": "FIVE_NATIVE_DIAGNOSTIC_WEEKS_ONLY_NOT_NINE_WEEK_UNION",
       "verification": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/INDEPENDENT_VERIFICATION_V1.json"
     }
+  },
+  "targeted_accuracy_m2_w1w9_01": {
+    "report": "reports/targeted-accuracy-w1w9-01/B/README.md",
+    "score_artifact": "reports/targeted-accuracy-w1w9-01/B/evaluation/SCORES.json",
+    "source_projection": "reports/targeted-accuracy-w1w9-01/B/INDEX_PROJECTION_V1.json.gz",
+    "new_source_views": 1688,
+    "new_pairs": 800,
+    "scope": "Separate targeted M2 version. Broader historical numerical panels do not fill absent early real-line scores. No C admission or original-site activation implied."
   }
 }

@@ -40,7 +40,7 @@
     "sha256": "860a0751b99a24187484a32d3188378fe58222cda3069ff08dd74d33e497bce1"
   },
   "adoption_qualification": "B normalized chatadoption860a... and C executablefa1958... are different documents. Semantic agreement verified; no byte-for-byte transcript adoption claim. Prior404records historical only.",
-  "at_utc": "2026-11-15T15:56:04.598399+00:00",
+  "at_utc": "2026-11-15T16:05:28.026819+00:00",
   "audit_remediation": {
     "C_receipt": "NOT_OBSERVED",
     "NFL_fits": 0,
@@ -31912,6 +31912,11 @@
   },
   "information_skill_01": {
     "assignment": "INFORMATION-SKILL-01",
+    "closing_metadata_paths": {
+      "final_delivery_receipt": "reports/information-skill-01/B/FINAL_DELIVERY_RECEIPT_V1.json",
+      "independent_native_grade_verification": "reports/information-skill-01/B/independent/OWN_NATIVE_GRADE_VERIFICATION_V1.json",
+      "location": "Same closing commit as this index; use immutable commit supplied by finaldeliveryresponse. These are metadata createdafter scientificproducercommit."
+    },
     "component": "OfferedcontextLL2.440905→2.409988R0→2.408416R1; unchangedATT_MAE7.178027; largerworkloaderrorcomponentremains.",
     "control": "ExactunchangedC2_BIN andfixedATT, strongsameboardB0/B2/constants/prevalence",
     "core_readback": {
@@ -31946,6 +31951,7 @@
     "exact_design": "reports/information-skill-01/B/FROZEN_DESIGN_V1.json",
     "executed_receipt": "reports/information-skill-01/B/EXECUTION_RECEIPT_V1.json",
     "finite_queue": "reports/information-skill-01/B/FINITE_QUEUE_V1.json",
+    "independent_native_grading_scope": "DirectseparateSciPyCDF/strictcrossingreproduces72weekly/cumulativeproducts;142explicitoutcomesincluding2knownzeros;R0/R1MEANfourloss-to-winchangesW5/W8. DoesnotrepairC1strictfitFAIL.",
     "new_C_admission": false,
     "new_current_query_packet": false,
     "new_exports": 128,
@@ -31958,8 +31964,37 @@
     "retention_scope": "90coremembersand18priorverifiedcode/inputmembers;18auxfilespublishednotallindividualreadback. Scientificcoremodel/forecast/score/failuresretained; oldprefixesunchanged.",
     "score_artifact": "reports/information-skill-01/B/evaluation-v2/SCORES.json",
     "score_sha256": "8f0d1f5daf9c7385b6743a115f3025ec997d4ff352bb4f65a31479896665dbaf",
+    "source_CI_final_observation": {
+      "SHA256": "48dfc284f7ce0696fdbb952288cc07006430f108edbf9563cc63c30b44a2f83c",
+      "path": "reports/information-skill-01/B/SOURCE_CI_OBSERVATION_V2.json",
+      "runs": [
+        {
+          "conclusion": "success",
+          "created_at": "2026-11-15T15:51:43Z",
+          "event": "pull_request",
+          "head_sha": "78383a9d29948b90056415c2274a83d6054acf79",
+          "html_url": "https://github.com/NickNicky19/NFL-forecasting-V2/actions/runs/43732223316",
+          "id": 43732223316,
+          "name": "V2 research checks",
+          "status": "completed",
+          "updated_at": "2026-11-15T15:55:39Z"
+        },
+        {
+          "conclusion": "success",
+          "created_at": "2026-11-15T15:51:32Z",
+          "event": "push",
+          "head_sha": "78383a9d29948b90056415c2274a83d6054acf79",
+          "html_url": "https://github.com/NickNicky19/NFL-forecasting-V2/actions/runs/43732206700",
+          "id": 43732206700,
+          "name": "V2 research checks",
+          "status": "completed",
+          "updated_at": "2026-11-15T15:55:27Z"
+        }
+      ],
+      "scope": "Exact scientific source commit only; subsequent metadata-only heads not claimed checked."
+    },
     "source_CI_observation_path": "reports/information-skill-01/B/SOURCE_CI_OBSERVATION_V1.json",
-    "source_CI_observation_status": "IN_PROGRESS_AT_FIRST_OBSERVATION;notapassclaim;laterfinalreceiptmaybindsubsequentobservation",
+    "source_CI_observation_status": "SOURCE78383_PUSH_AND_PR_CHECKS_COMPLETED_SUCCESS;NOT_PREDICTIVE_OR_DEPLOYMENT_PROOF",
     "strict_reproduction": "C1failsstrictpredeclaredrepresentativefitparity; bothmixersPASS; allsavedlaws/aggregatechecksPASSseparately. Failure/independentbetaretentionlimitpreserved.",
     "typed_historical_handoff": "reports/information-skill-01/B/HISTORICAL_TYPED_HANDOFF_V1.json",
     "website_consumption": "NOT_CLAIMED;originalsiteownerunchanged"
@@ -32240,6 +32275,7 @@
     "verification_query_rows": 2878
   },
   "local_resource_clarification": "reports/abc-championship/RESOURCE_SCOPE_CLARIFICATION_V1.json",
+  "metadata_revision": "information-skill-closing-qualification-v2;scientific source and all2186exportentryobjectsunchanged",
   "new_probability_schema_mapping": {
     "local_names": "FullBnamespacedB0/B1andpolicies retained; doesnotredefineC/localP1P2P3aliases.",
     "probability": "ExactlineUnder/Push/Over conditionalmodeledappearance,halfcategoricalBrier; no fullCDF/repairedmeanclaim;sourceannqualificationsmandatory.",

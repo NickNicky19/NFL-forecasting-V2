@@ -1,0 +1,216 @@
+{
+  "id": "B_INFORMATION_SKILL_EARLY_JOIN_BINDINGS_CHECK_v1",
+  "at_UTC": "2026-11-15T21:04:34.190945+00:00",
+  "state": "PASS_LOCAL_COMMITTED_BYTES_AND_OUTPUT_ALIAS_SCOPE;NOT_A_PRIVATE_JOIN_OR_C_ADMISSION",
+  "checks": 5816,
+  "authenticated_source_commits": [
+    "78383a9d29948b90056415c2274a83d6054acf79",
+    "17f4497cd377d543401fc7eaf50db967c9e45f76"
+  ],
+  "original_handoff_sha256": "bbaeb3cf44656142c8eb406148e119352f2e90778f6f8405a6445ab72e62f6b9",
+  "prediction_files": 9,
+  "saved_forecast_rows": 1260,
+  "unique_queries_per_method": 315,
+  "weekly_queries_per_method": {
+    "1": 37,
+    "2": 39,
+    "3": 36,
+    "4": 34,
+    "5": 36,
+    "6": 29,
+    "7": 31,
+    "8": 35,
+    "9": 38
+  },
+  "early_saved_queries_per_method": 146,
+  "early_A_offer_contract_counts": {
+    "1": 10,
+    "2": 25,
+    "3": 26,
+    "4": 23
+  },
+  "saved_predictions_match_both_producer_and_closing_commits": true,
+  "model_bindings_match_both_commits": true,
+  "exact_adapter_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+  "C0_alias": {
+    "alias": "B-INFORMATION-SKILL-PASS-MIX-v1:SKILL_C0",
+    "reference": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1:C2_BIN",
+    "local_saved_forecast_parity": "EXACT_FOR_ALL315_QUERY_IDENTITIES_AND_OUTPUT_FIELDS",
+    "parent_model_family": "Retained B-QB-DEPTH-CATCHABILITY-v2:C2",
+    "exact_equality": {
+      "season": {
+        "compared": 315,
+        "exact_equal": 315
+      },
+      "week": {
+        "compared": 315,
+        "exact_equal": 315
+      },
+      "team": {
+        "compared": 315,
+        "exact_equal": 315
+      },
+      "opponent": {
+        "compared": 315,
+        "exact_equal": 315
+      },
+      "target": {
+        "compared": 315,
+        "exact_equal": 315
+      },
+      "kickoff": {
+        "compared": 315,
+        "exact_equal": 315
+      },
+      "fit_cutoff": {
+        "compared": 315,
+        "exact_equal": 315
+      },
+      "feature_cutoff": {
+        "compared": 315,
+        "exact_equal": 315
+      },
+      "fallback": {
+        "compared": 315,
+        "exact_equal": 315
+      },
+      "components": {
+        "compared": 315,
+        "exact_equal": 315
+      },
+      "mean": {
+        "compared": 315,
+        "exact_equal": 315
+      },
+      "lower_median": {
+        "compared": 315,
+        "exact_equal": 315
+      },
+      "law": {
+        "compared": 315,
+        "exact_equal": 315
+      }
+    },
+    "original_parent_fit_cutoff": {
+      "compared": 315,
+      "exact_equal": 315
+    },
+    "unchanged_numeric_products": [
+      "mean",
+      "lower_median"
+    ],
+    "unchanged_probability_product": "Trusted gamma-Poisson completion law parameters",
+    "scope": "Output-preserving reference alias, not a newly fitted model or new NFL outcome. Method/procedure names and outer packaging differ; prediction values, information origin, fallback and component semantics match.",
+    "admission_requirement": "A execution owner and C coordinator must explicitly admit exact alias/mask/output/decision-rule/source/outcome identity before applying an existing M2_C2_BIN grade receipt to C0. No new C0 grades claimed by this authentication. No automatic transfer of selective-policy or website-ranking qualification.",
+    "not_aliases": [
+      "SKILL_C1",
+      "SKILL_R0",
+      "SKILL_R1",
+      "old FTN B0/B1/B2",
+      "C03/C04 or M3 receiving products"
+    ]
+  },
+  "parent_prediction_bindings": [
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W01.json.gz",
+      "bytes": 128221,
+      "sha256": "48468334ac5b79fbba61a95027359f49b4d8562fdc6c528960abfbe43c09a7ba",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W01.json.gz"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W02.json.gz",
+      "bytes": 137337,
+      "sha256": "44ec48621a42179e8228938ba01574a63a04da73dba52195adacb7c3a3e9dbb5",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W02.json.gz"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W03.json.gz",
+      "bytes": 127500,
+      "sha256": "dc1474d30cef3ef0335ff0dce0e0f4ca9333b1c5c0fd0cc2bf32f55b2b75e255",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W03.json.gz"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W04.json.gz",
+      "bytes": 119598,
+      "sha256": "98acf602963cbc410e0c44a363642e8f34ef847e2ffb40de86c60288caabe677",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W04.json.gz"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W05.json.gz",
+      "bytes": 127784,
+      "sha256": "c7655e076243b2736f90da6d206b2fd36091ee2f30cfb322c1fd97a6ff3851ce",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W05.json.gz"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W06.json.gz",
+      "bytes": 104196,
+      "sha256": "ed084d39465d33938a7835d83b7071195c7db6dbebbdae856e3fa700aab0aa21",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W06.json.gz"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W07.json.gz",
+      "bytes": 111188,
+      "sha256": "a15035434c37a22e0a9f60108a319ff091aff0cd3974821bbddd393f5515431f",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W07.json.gz"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W08.json.gz",
+      "bytes": 123428,
+      "sha256": "40bcad92ad2d6090c710983a4d7b8bba3e4758431ec35a5dfa11d597cfc9a8c8",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W08.json.gz"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W09.json.gz",
+      "bytes": 114914,
+      "sha256": "30dca5f4a33a60d6209d91d1b47696580f6f0faaacd6606239a32f1aac1f111f",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/wave-v1/predictions/2026-W09.json.gz"
+    }
+  ],
+  "source11_A_M2_raw_scorecard": {
+    "state": "NOT_OBTAINED_BY_THIS_CHECK;NO_SOURCE11_VERIFICATION_OR_SCORECLAIM",
+    "meaning": "Source11 is an external root-retrieval lead, not a file inspected by this receipt. Do not infer exact contents or private-row parity.",
+    "if_root_obtains": [
+      "Pin exact immutable repository/commit/path, response/file hash, retrieval time and parsing/encoding scope.",
+      "Identify exact new M2_C2_BIN mean/median/law products and verify the84 W1-4 source/quote/role/outcome mask, weekly10/25/26/23 coverage, unknown/unavailable/fallback counts and source membership commitments. Do not use old FTN84 as newM2.",
+      "Independently sum each own Over/Under W-L/decided and compute combined summed wins/decided; preserve empty N/A groups and weekly/source strata. Check same-case controls, disagreement arithmetic and probability denominator/conditioning separately from numerical means.",
+      "C0 alias may reuse a verified exact M2_C2_BIN cell only after A/C explicitly admit complete output/decision/mask/outcome equivalence. Reused grades are not newly scored NFL decisions.",
+      "Keep independent aggregate verification distinct from protected-row, source-clock, fit reproduction and original issuance. Unprovided probability, selected policy or numerical metrics stay unavailable."
+    ],
+    "minimum_remaining_action": "Root retrieves the exact permitted scorecard through the existing route, then B independently reviews only obtained scope. No duplicate private join, refit or new collector."
+  },
+  "no_new_evidence_states": {
+    "actual_A_join_executed_here": false,
+    "new_C_admission": false,
+    "new_NFL_weeks": 0,
+    "new_NFL_games": 0,
+    "new_grade_records": 0,
+    "current_inference": false,
+    "prospective_capture": false,
+    "website_activation": false
+  },
+  "resources": {
+    "network_reads": 0,
+    "fits": 0,
+    "scoring_runs": 0,
+    "protected_rows": 0,
+    "global_ledger_writes": 0
+  }
+}

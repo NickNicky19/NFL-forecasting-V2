@@ -1,0 +1,95 @@
+{
+  "id": "B_OPPORTUNITY_PREFIT_INDEPENDENT_CHECK_v1",
+  "at_UTC": "2026-11-15T21:13:40.909067+00:00",
+  "status": "PASS_IN_CHECKED_SCOPE",
+  "checks": 10398,
+  "failures": [],
+  "error": null,
+  "details": {
+    "stage": "PREFIT",
+    "source_QB_rows": 2901,
+    "source_team_rows": 2416,
+    "all315_direct_and_source_trace_checked": true,
+    "full_context_NFL_fixture_cases": [
+      {
+        "query_sha256": "b70d35ee320a07a623a10267e55c876e1ec56ed4ac3b5148a0f34a1845a96d61",
+        "week": 1,
+        "own_prior_games": 8,
+        "eligible": true,
+        "fallback_reason": null,
+        "explicit_zero_attempt_fixture": false,
+        "changed_team_from_latest_prior": false
+      },
+      {
+        "query_sha256": "27edfdcd236d1cc4e08f68c7fdfb01a0342719c67411871caf47cb106a0fe20e",
+        "week": 1,
+        "own_prior_games": 0,
+        "eligible": false,
+        "fallback_reason": "NO_EARLIER_OWN_QB_HISTORY",
+        "explicit_zero_attempt_fixture": false,
+        "changed_team_from_latest_prior": false
+      },
+      {
+        "query_sha256": "1e1d2e3e48bd62d400dab2d09e240a03ac64e10ca25463d6865f1e096984f0ee",
+        "week": 1,
+        "own_prior_games": 8,
+        "eligible": true,
+        "fallback_reason": null,
+        "explicit_zero_attempt_fixture": true,
+        "changed_team_from_latest_prior": false
+      },
+      {
+        "query_sha256": "dd8cbb07a6961e41bcc43e0f075ba9151e2847414f03f1bb44d8150b79265563",
+        "week": 1,
+        "own_prior_games": 8,
+        "eligible": true,
+        "fallback_reason": null,
+        "explicit_zero_attempt_fixture": false,
+        "changed_team_from_latest_prior": true
+      },
+      {
+        "query_sha256": "c1e95b8df7e45ace6db22fc2a47ee1e1aca617a9ae869e9fd0db29341b3fbae1",
+        "week": 9,
+        "own_prior_games": 8,
+        "eligible": true,
+        "fallback_reason": null,
+        "explicit_zero_attempt_fixture": false,
+        "changed_team_from_latest_prior": false
+      }
+    ],
+    "prior_denominator_contract": "Every eligible prior record/count/cell, identity/order and clock fixed. Only unavailable target/future outcome vectors were coherently scaled; no eligible denominator or teammate universe changed.",
+    "credited_attempts_outside_dropbacks_preserved": 20,
+    "objective_gradient_checks": [
+      {
+        "objective": "team",
+        "NFL_training_rows": 32,
+        "maximum_absolute_gradient_difference": 3.8610974861796876e-08,
+        "optimizer_calls": 0
+      },
+      {
+        "objective": "share",
+        "NFL_training_rows": 32,
+        "maximum_absolute_gradient_difference": 1.211848221771561e-08,
+        "optimizer_calls": 0
+      }
+    ],
+    "inference_or_optimizer_calls": 0,
+    "source_vintage_authenticated": false
+  },
+  "bindings": {
+    "tools/verify_opportunity_information.py": "b5a6d866b527332c695753c31331607f7f4be1c72830ca134d70c03cdca22316",
+    "nfl_v2/opportunity_information.py": "3d059b042aba291b13b9b8c477271e1c90cc84d8e58c1ac234057a1973096731",
+    "reports/information-first-20261112-01/B/completion-wave-v1/QB_CONTEXT_W1_W9_INPUTS_V1.json.gz": "45aaab99d41f2e2643066c001355b26430f55dca06e7c7e366eace252f2e021b",
+    "reports/profile-increment-to-release-01/B/source-profiles/PASSING_OPPORTUNITY_GAME_INPUTS_V2.json.gz": "51c2cfceff6103a277c6de5897fc76c33733bb797f0891ccdb271b41840ab36a"
+  },
+  "resources": {
+    "CPU_seconds": 12.798643421,
+    "wall_seconds": 12.803481301001739,
+    "CPU_cap_seconds": 60,
+    "new_fits": 0,
+    "new_scoring": 0,
+    "source_reads": 0,
+    "peak_RSS_bytes": 560766976
+  },
+  "scope": "Independent direct arithmetic/source admission/mutation and pure likelihood gradients or saved-law checks. No optimizer, protected offer rows, original clocks, grading, model-fit reproduction or website admission."
+}

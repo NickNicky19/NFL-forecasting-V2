@@ -1,0 +1,415 @@
+{
+  "id": "B_CHECKPOINT_M2_NATIVE_PUBLIC_AGGREGATE_VERIFICATION_v1",
+  "at_UTC": "2026-11-15T12:14:00.829711+00:00",
+  "state": "PASS_PUBLIC_AGGREGATE_ARITHMETIC_NO_REGRADING",
+  "checks": 34189,
+  "problems": [],
+  "source_bindings": [
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/evaluation/MAIN_TABLES_V1.json.gz",
+      "sha256": "b399cf04697fb7429bc61f828dc7483f67e675fb41dcb735da50140bb48fb59b",
+      "bytes": 128785,
+      "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/evaluation/MAIN_TABLES_V1.json.gz"
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/evaluation/SELECTIVE_TABLES_V1.json.gz",
+      "sha256": "c4e17afca1b71a2303d85364f993f23a7195454fba58bcafa19df5c4718cb39b",
+      "bytes": 242567,
+      "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/evaluation/SELECTIVE_TABLES_V1.json.gz"
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/evaluation/PAIRED_COMPARISONS_V1.json",
+      "sha256": "6c9bd96fa9913b87ac47b3d1baae2db7f634dd99048f3d9f0073d10c4c2bf731",
+      "bytes": 1209081,
+      "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/evaluation/PAIRED_COMPARISONS_V1.json"
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/evaluation/PROBABILITY_TABLES_V1.json.gz",
+      "sha256": "b7024fa119cd7a3f071fc5087a27717715563564e1268c8600d065c4dcd2373e",
+      "bytes": 6955,
+      "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+      "retrieval_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/evaluation/PROBABILITY_TABLES_V1.json.gz"
+    }
+  ],
+  "main_rows_checked": 446,
+  "selective_rows_checked": 1026,
+  "weekly_sum_checks": 4332,
+  "raw_probability_summaries_checked": 48,
+  "within_method_results": [
+    {
+      "BB": "M2_P2_BB",
+      "BIN_parent": "M2_P2_BIN",
+      "own_sides_equal": true,
+      "selective_weekly_and_cumulative_views_checked": 114,
+      "law_win_difference": 0,
+      "event_Brier_difference": -0.00011998391380735329,
+      "event_log_loss_difference": -0.0002866370649636796,
+      "paired_week_interval": null,
+      "paired_week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+    },
+    {
+      "BB": "M2_C1_BB",
+      "BIN_parent": "M2_C1_BIN",
+      "own_sides_equal": true,
+      "selective_weekly_and_cumulative_views_checked": 114,
+      "law_win_difference": 0,
+      "event_Brier_difference": -8.025104886422163e-05,
+      "event_log_loss_difference": -0.00018415429665330496,
+      "paired_week_interval": null,
+      "paired_week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+    },
+    {
+      "BB": "M2_C2_BB",
+      "BIN_parent": "M2_C2_BIN",
+      "own_sides_equal": true,
+      "selective_weekly_and_cumulative_views_checked": 114,
+      "law_win_difference": 0,
+      "event_Brier_difference": -7.906482651010016e-05,
+      "event_log_loss_difference": -0.0001838510079457123,
+      "paired_week_interval": null,
+      "paired_week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+    }
+  ],
+  "native_exact_law_headlines": [
+    {
+      "method": "M2_P2_BIN",
+      "procedure_id": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1:P2_BIN",
+      "policy": "LAW",
+      "actual_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "decided": 10,
+        "losses": 6,
+        "rate": 0.4,
+        "selected": 10,
+        "wins": 4
+      },
+      "UNDER": {
+        "decided": 132,
+        "losses": 67,
+        "rate": 0.49242424242424243,
+        "selected": 132,
+        "wins": 65
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 73,
+        "rate": 0.4859154929577465,
+        "selected": 142,
+        "wins": 69
+      },
+      "eligible": 142,
+      "available": 142,
+      "selected": 142,
+      "unknown": 0,
+      "unavailable": 0,
+      "fallback_selected": 1,
+      "games": 71,
+      "evidence_tier": "TIER_B_CURRENT_VINTAGE_CHRONOLOGICAL_RETAINED_ACTUAL_SOURCE_LINES;QUOTE_CLOCK_UNKNOWN;MAIN_ALT_UNCLASSIFIED"
+    },
+    {
+      "method": "M2_P2_BB",
+      "procedure_id": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1:P2_BB",
+      "policy": "LAW",
+      "actual_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "decided": 10,
+        "losses": 6,
+        "rate": 0.4,
+        "selected": 10,
+        "wins": 4
+      },
+      "UNDER": {
+        "decided": 132,
+        "losses": 67,
+        "rate": 0.49242424242424243,
+        "selected": 132,
+        "wins": 65
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 73,
+        "rate": 0.4859154929577465,
+        "selected": 142,
+        "wins": 69
+      },
+      "eligible": 142,
+      "available": 142,
+      "selected": 142,
+      "unknown": 0,
+      "unavailable": 0,
+      "fallback_selected": 1,
+      "games": 71,
+      "evidence_tier": "TIER_B_CURRENT_VINTAGE_CHRONOLOGICAL_RETAINED_ACTUAL_SOURCE_LINES;QUOTE_CLOCK_UNKNOWN;MAIN_ALT_UNCLASSIFIED"
+    },
+    {
+      "method": "M2_C1_BIN",
+      "procedure_id": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1:C1_BIN",
+      "policy": "LAW",
+      "actual_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "decided": 13,
+        "losses": 7,
+        "rate": 0.46153846153846156,
+        "selected": 13,
+        "wins": 6
+      },
+      "UNDER": {
+        "decided": 129,
+        "losses": 65,
+        "rate": 0.49612403100775193,
+        "selected": 129,
+        "wins": 64
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 72,
+        "rate": 0.49295774647887325,
+        "selected": 142,
+        "wins": 70
+      },
+      "eligible": 142,
+      "available": 142,
+      "selected": 142,
+      "unknown": 0,
+      "unavailable": 0,
+      "fallback_selected": 1,
+      "games": 71,
+      "evidence_tier": "TIER_B_CURRENT_VINTAGE_CHRONOLOGICAL_RETAINED_ACTUAL_SOURCE_LINES;QUOTE_CLOCK_UNKNOWN;MAIN_ALT_UNCLASSIFIED"
+    },
+    {
+      "method": "M2_C1_BB",
+      "procedure_id": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1:C1_BB",
+      "policy": "LAW",
+      "actual_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "decided": 13,
+        "losses": 7,
+        "rate": 0.46153846153846156,
+        "selected": 13,
+        "wins": 6
+      },
+      "UNDER": {
+        "decided": 129,
+        "losses": 65,
+        "rate": 0.49612403100775193,
+        "selected": 129,
+        "wins": 64
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 72,
+        "rate": 0.49295774647887325,
+        "selected": 142,
+        "wins": 70
+      },
+      "eligible": 142,
+      "available": 142,
+      "selected": 142,
+      "unknown": 0,
+      "unavailable": 0,
+      "fallback_selected": 1,
+      "games": 71,
+      "evidence_tier": "TIER_B_CURRENT_VINTAGE_CHRONOLOGICAL_RETAINED_ACTUAL_SOURCE_LINES;QUOTE_CLOCK_UNKNOWN;MAIN_ALT_UNCLASSIFIED"
+    },
+    {
+      "method": "M2_C2_BIN",
+      "procedure_id": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1:C2_BIN",
+      "policy": "LAW",
+      "actual_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "decided": 13,
+        "losses": 7,
+        "rate": 0.46153846153846156,
+        "selected": 13,
+        "wins": 6
+      },
+      "UNDER": {
+        "decided": 129,
+        "losses": 65,
+        "rate": 0.49612403100775193,
+        "selected": 129,
+        "wins": 64
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 72,
+        "rate": 0.49295774647887325,
+        "selected": 142,
+        "wins": 70
+      },
+      "eligible": 142,
+      "available": 142,
+      "selected": 142,
+      "unknown": 0,
+      "unavailable": 0,
+      "fallback_selected": 1,
+      "games": 71,
+      "evidence_tier": "TIER_B_CURRENT_VINTAGE_CHRONOLOGICAL_RETAINED_ACTUAL_SOURCE_LINES;QUOTE_CLOCK_UNKNOWN;MAIN_ALT_UNCLASSIFIED"
+    },
+    {
+      "method": "M2_C2_BB",
+      "procedure_id": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1:C2_BB",
+      "policy": "LAW",
+      "actual_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "decided": 13,
+        "losses": 7,
+        "rate": 0.46153846153846156,
+        "selected": 13,
+        "wins": 6
+      },
+      "UNDER": {
+        "decided": 129,
+        "losses": 65,
+        "rate": 0.49612403100775193,
+        "selected": 129,
+        "wins": 64
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 72,
+        "rate": 0.49295774647887325,
+        "selected": 142,
+        "wins": 70
+      },
+      "eligible": 142,
+      "available": 142,
+      "selected": 142,
+      "unknown": 0,
+      "unavailable": 0,
+      "fallback_selected": 1,
+      "games": 71,
+      "evidence_tier": "TIER_B_CURRENT_VINTAGE_CHRONOLOGICAL_RETAINED_ACTUAL_SOURCE_LINES;QUOTE_CLOCK_UNKNOWN;MAIN_ALT_UNCLASSIFIED"
+    },
+    {
+      "method": "D_M2",
+      "procedure_id": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1:D_M2",
+      "policy": "LAW",
+      "actual_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "decided": 46,
+        "losses": 26,
+        "rate": 0.43478260869565216,
+        "selected": 46,
+        "wins": 20
+      },
+      "UNDER": {
+        "decided": 96,
+        "losses": 51,
+        "rate": 0.46875,
+        "selected": 96,
+        "wins": 45
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 77,
+        "rate": 0.45774647887323944,
+        "selected": 142,
+        "wins": 65
+      },
+      "eligible": 142,
+      "available": 142,
+      "selected": 142,
+      "unknown": 0,
+      "unavailable": 0,
+      "fallback_selected": 0,
+      "games": 71,
+      "evidence_tier": "TIER_B_CURRENT_VINTAGE_CHRONOLOGICAL_RETAINED_ACTUAL_SOURCE_LINES;QUOTE_CLOCK_UNKNOWN;MAIN_ALT_UNCLASSIFIED"
+    },
+    {
+      "method": "RETAINED_B0",
+      "procedure_id": "B-FTN-BALL-QUALITY-COMPLETION-v1:B0",
+      "policy": "P2_STATISTICAL_LAW",
+      "actual_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "decided": 34,
+        "losses": 16,
+        "rate": 0.5294117647058824,
+        "selected": 34,
+        "wins": 18
+      },
+      "UNDER": {
+        "decided": 108,
+        "losses": 53,
+        "rate": 0.5092592592592593,
+        "selected": 108,
+        "wins": 55
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 69,
+        "rate": 0.5140845070422535,
+        "selected": 142,
+        "wins": 73
+      },
+      "eligible": 142,
+      "available": 142,
+      "selected": 142,
+      "unknown": 0,
+      "unavailable": 0,
+      "fallback_selected": 0,
+      "games": 71,
+      "evidence_tier": "TIER_B_CURRENT_VINTAGE_CHRONOLOGICAL_RETAINED_ACTUAL_SOURCE_LINES;QUOTE_CLOCK_UNKNOWN;MAIN_ALT_UNCLASSIFIED"
+    }
+  ],
+  "new_early_M2_actual_line_grades": "NOT_EXECUTED_IN_RETRIEVED_A_RECEIPTS; no 226-case M2 cumulative record is asserted",
+  "interpretation": "Separate arithmetic over frozen public aggregates, commitments and original weekly summaries. This does not rerun C grading or independently inspect private offer rows, source clocks, fitted parameters or original issuance. Counts of checks/views are not additional NFL observations.",
+  "probability_contract": "Half multiclass Brier on Over/Under/push; native halfpoint push=0 so equals binary Over Brier. Log loss is exact statistical threshold event loss, not venue settlement or count PMF loss. No law score is inferred from a point-only product.",
+  "resources": {
+    "external_source_reads": 0,
+    "fits": 0,
+    "new_actual_offer_grades": 0,
+    "protected_rows_exported": 0
+  }
+}

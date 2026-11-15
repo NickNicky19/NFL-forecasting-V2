@@ -1,0 +1,49 @@
+{
+  "id": "B_A_RECEIPTS_RESOURCE_v1",
+  "source_read_attempts": 7,
+  "cap": 9,
+  "attempts": [
+    {
+      "n": 1,
+      "action": "gitls-remote research/main",
+      "state": "OBTAINED"
+    },
+    {
+      "n": 2,
+      "action": "immutableM1checkpoint",
+      "state": "OBTAINED"
+    },
+    {
+      "n": 3,
+      "action": "immutableEXPORT_INDEX",
+      "state": "OBTAINED"
+    },
+    {
+      "n": 4,
+      "action": "targetedrootcontents",
+      "state": "OBTAINED"
+    },
+    {
+      "n": 5,
+      "action": "recursive targetedA tree",
+      "state": "OBTAINED"
+    },
+    {
+      "n": 6,
+      "action": "TASK_LEDGER.md guessedrootpath",
+      "state": "404_NOT_FOUND_PRESERVED"
+    },
+    {
+      "n": 7,
+      "action": "mappedlogicalexecutionledgerfromEXPORT_INDEX",
+      "state": "OBTAINED"
+    }
+  ],
+  "cache_normalized_bytes": 102604,
+  "source_byte_cap": 8388608,
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_scores": 0,
+  "peer_writes": 0,
+  "qualification": "Network wire bytes not independently metered; normalizeddecoded body sizes recorded. No binary/private evidence obtained."
+}

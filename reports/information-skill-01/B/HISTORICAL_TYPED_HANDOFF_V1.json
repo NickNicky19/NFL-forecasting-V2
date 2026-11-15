@@ -1,0 +1,246 @@
+{
+  "id": "B_INFORMATION_SKILL_TYPED_HISTORICAL_HANDOFF_v1",
+  "UTC": "2026-11-15T15:37:23.253273+00:00",
+  "scope": "Historical frozen outputs only; no fresh future inference or original issued recommendation",
+  "repository": "NickNicky19/NFL-forecasting-V2",
+  "source_commit_binding": "Use the exact immutable producer_commit and paths in the current existing EXPORT_INDEX information_skill_01 entry; never another sessions workspace or mutablehead.",
+  "methods": [
+    "SKILL_C0",
+    "SKILL_C1",
+    "SKILL_R0",
+    "SKILL_R1"
+  ],
+  "targets": [
+    "pass_cmp"
+  ],
+  "role": "Canonical QB; conditional historical stat-row panel, not authenticated pregame roster",
+  "source_and_fit_contract": "Previousseason+earliercurrentlabels; expanding2022featurememory; own8/teamdef16; strict reconstructedavailable=kickoff+7days<cutoff; weeklyfitbeforefirstgame and pergamequerybeforekickoff. Sourcevintagelimits explicit.",
+  "typed_products": {
+    "P1_MEAN": "Use saved mean, strict >lineOVER,<lineUNDER, equalityABSTAIN; no implied probability or confidence.",
+    "P1_LOWER_MEDIAN": "Use saved lower_median, strict crossing; distinct product.",
+    "P2_STATISTICAL_LAW": "Restore trusted declared gamma-Poisson completion law, exact CDF masses, compare pOver/pUnder strictly; equalABSTAIN, integerpush retained."
+  },
+  "existing_adapter": {
+    "path": "tools/query_targeted_qb_m2.py",
+    "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+    "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/tools/query_targeted_qb_m2.py",
+    "sha256": "bf213c1ab3a08728603f13e66b48737daa15a5a74465a374586c017adb3f68d8",
+    "reuse": "Generic method argument supports these saved-row methods; no new grader or ranker. Caller qualifies actual offers/outcomes/clocks and preserves private output outside publicGit."
+  },
+  "forecast_bindings": [
+    {
+      "path": "reports/information-skill-01/B/wave-v1/predictions/2026-W01.json.gz",
+      "bytes": 47949,
+      "sha256": "ac6ec3ac7183dda337f8d06cab77bedac7bb1d84e359ff4423c09894ebf93cd8"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/predictions/2026-W02.json.gz",
+      "bytes": 50575,
+      "sha256": "ca3f6a17710e1f54fd815de822766731d7303a242150adc4c4370fd7bf942611"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/predictions/2026-W03.json.gz",
+      "bytes": 46977,
+      "sha256": "262bc33eb8cc3d5b26f982e67b44b5e5938966000576aa2da9a287a105b58611"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/predictions/2026-W04.json.gz",
+      "bytes": 44410,
+      "sha256": "a08d80a61dcd02c041da94dd7c6b004b5668b03884d40f2a1e48f709750bfc65"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/predictions/2026-W05.json.gz",
+      "bytes": 46999,
+      "sha256": "3a6813184e6cd23aba5eed77681911b87925503dfed8401085d950053a3f15fa"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/predictions/2026-W06.json.gz",
+      "bytes": 37954,
+      "sha256": "5f450db3ab6f7d36326809b1352a48a315469245354195ef09c47f63b9895e18"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/predictions/2026-W07.json.gz",
+      "bytes": 40652,
+      "sha256": "52cc46d300f1c2acf52e7cc91301da1dfa40c39e9ab3b4abe60dd44b38fe40e1"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/predictions/2026-W08.json.gz",
+      "bytes": 45562,
+      "sha256": "2f0d0f0e327ca37b272d90c919cadcdcd546310f9a6d2fd372e33567831b6c56"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/predictions/2026-W09.json.gz",
+      "bytes": 49554,
+      "sha256": "f520a481cef4759ee5b5c064de5a5d9bf2cc35c506d630c0ba906819f46ac307"
+    }
+  ],
+  "model_bindings": [
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W01-C1.json.gz",
+      "bytes": 1842,
+      "sha256": "77947c501e597c53d3f0b57d7a5a6bc0595b76a43b223c72cf02f05ce1d8ac67"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W01-R0.json.gz",
+      "bytes": 744,
+      "sha256": "b519a3f4b846de26da41c57efbb2e329af50143d471fa74b0eaed636c9128720"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W01-R1.json.gz",
+      "bytes": 798,
+      "sha256": "b792e7ce6e74e70654bc78cc7a130cc3fad0256d26091484fcfaa9ed02ba8ff5"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W02-C1.json.gz",
+      "bytes": 1837,
+      "sha256": "27830275486b53c6b56aac9d27c9d396d57c65b7676ca008bdd4e695b7800424"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W02-R0.json.gz",
+      "bytes": 740,
+      "sha256": "e30c06985e9417014165aea5e92b7aa47dfcd9b0526179257216a65a25c08fce"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W02-R1.json.gz",
+      "bytes": 793,
+      "sha256": "7761ab20d3d7bb9f13d88fdb0a491c9d81e971866c0a5e96a4219210765feaf2"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W03-C1.json.gz",
+      "bytes": 1845,
+      "sha256": "db691d2537e8062df5dab128e280baab5b0178138a438ac6fb588bd88dee8579"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W03-R0.json.gz",
+      "bytes": 751,
+      "sha256": "0a5d63923fb5821efb083b60a03f5c033da775d01530cd9fc3a7ced2d13347ae"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W03-R1.json.gz",
+      "bytes": 797,
+      "sha256": "21492fa70a3dd32d611bccfb9fc767a739c4811ac4d2f0acc7ab7d7cc8344d63"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W04-C1.json.gz",
+      "bytes": 1845,
+      "sha256": "f15a7521284e012fb7b45c8a4e66b967792ba7b5233c7a732f9c6a9d8e677408"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W04-R0.json.gz",
+      "bytes": 743,
+      "sha256": "1481bf641901d4ea1212797f43f5218c26d79a7ea3494916c2c290a336f5cdd0"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W04-R1.json.gz",
+      "bytes": 796,
+      "sha256": "ad44a37f855428b13dca1934cc41af6bdae6dc6487553fe5d3b58234890c59c0"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W05-C1.json.gz",
+      "bytes": 1841,
+      "sha256": "1a27a2bcc0af98a64a3a3e0909629acdd15d09f16fc738970ba396b21806525c"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W05-R0.json.gz",
+      "bytes": 743,
+      "sha256": "476ae226013b4991fcd3b127e5a30c18c315c473a625236551ee1bc2d5da403f"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W05-R1.json.gz",
+      "bytes": 801,
+      "sha256": "71283c52fa584c554c70e25c64372351bcd0f0e9a90a90ad973e2570a80e763f"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W06-C1.json.gz",
+      "bytes": 1852,
+      "sha256": "eaff5f8fbd18362e7d4254133efa5090a4837e90fed66b0233929d293f65814e"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W06-R0.json.gz",
+      "bytes": 749,
+      "sha256": "3c8ce3cc46888a00b5c382cab9f4af9ce190d4c28575214be5a9da25598a8514"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W06-R1.json.gz",
+      "bytes": 802,
+      "sha256": "0534928af7f98e914095cf177f6e23e7245d3125ee5cd0a0a8bfdf771b17c27f"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W07-C1.json.gz",
+      "bytes": 1849,
+      "sha256": "57c0e5c8047f0cad3ea945b092698ddd2f546048d980178fb315e8d2d0a4cb9e"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W07-R0.json.gz",
+      "bytes": 753,
+      "sha256": "6d591d9562947536ddd070da18478b211ffa7d0e4cc44fc13b29b03877d1de97"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W07-R1.json.gz",
+      "bytes": 799,
+      "sha256": "38c54d080746034f9b1017133beeda19254c0c0aa827025e8513060f6fc78a8c"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W08-C1.json.gz",
+      "bytes": 1843,
+      "sha256": "a890344de170021a1ceaab014c0d1755a4faae1838c938e318e76d8ad5fcc482"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W08-R0.json.gz",
+      "bytes": 751,
+      "sha256": "6c53cfe4feffeac2099bc07cad27de583830cb6932f5f93360da20aa76bdb240"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W08-R1.json.gz",
+      "bytes": 800,
+      "sha256": "8b3b17e1d41c776ae56b8e2fcdbeee2d322dfdf5acaa1c7f908ef5401b3e82b6"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W09-C1.json.gz",
+      "bytes": 1843,
+      "sha256": "fce78a6a1736cbf92d1a6bf6d935ac82881111b8e37d55b66f9f59f2b80d6e47"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W09-R0.json.gz",
+      "bytes": 741,
+      "sha256": "1e7e2846d1ea203ffbee9af14d950124729b63ed13aa48708dcf7061f175d5fd"
+    },
+    {
+      "path": "reports/information-skill-01/B/wave-v1/fits/2026-W09-R1.json.gz",
+      "bytes": 794,
+      "sha256": "4c4232415912c1713adf7dafff51c7f190d709edb4d80a41d3d1c29461a860ad"
+    }
+  ],
+  "restoration": "Trusted JSON coefficient arrays/CountLaw parameters only. CompositionModel.restore and AugmentedConversion.restore bind explicit feature/group order. C0 uses retainedC2 components. No unsafe model loading.",
+  "fallback": "One retained no-own-history parentprior on nativepanel,0newfitfallbacks. Registered optimizationfailure uses typedparentfallback; unsupportedcurrent source/role requires explicitUNAVAILABLE or admittedconsumerfallback, not zeros/forcedpicks.",
+  "readiness": {
+    "fitted": true,
+    "historical_forecasts_generated": true,
+    "actual_line_scored_weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "numerical_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "current_query_inputs_admitted": false,
+    "current_origin_inference_executed": false,
+    "new_prospective_capture": false,
+    "new_C_admission": false,
+    "website_activation": false
+  },
+  "qualification": "R0 mean/prob researchshadow only; no preferredreplacement overretainedB0/B2. C1strictindependentfitreproductionfailed; originalscores/predictionspreserved. Allprimaryproductadmissions and fiveweek/source/runtime rules remain.",
+  "queue": "Existing frozenM2/M3 Ajoinsremainfirst; these new savedproducts do not fill their cells or enlargeoldfrozenchampionshiproster. No newAjoin commissioned here.",
+  "Top_Picks": "No full website-selector qualification or silentforecast substitution. Originalwebsiteowneronly."
+}

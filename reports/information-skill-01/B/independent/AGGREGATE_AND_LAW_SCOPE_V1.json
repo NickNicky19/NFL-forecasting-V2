@@ -1,0 +1,106 @@
+{
+  "id": "B-INFORMATION-SKILL-INDEPENDENT-AGGREGATE-AND-LAW-SCOPE-v1",
+  "created_UTC": "2026-11-15T15:15:48.292686+00:00",
+  "status": "PASS_FOR_EXPLICIT_AGGREGATE_LAW_AND_DECODED_IDENTITY_SCOPE_ONLY",
+  "all_passed": true,
+  "derivation": "Extracted completed checks from hash-bound FIT_REPRODUCTION receipt. No fit, scorer, verification-check or source retrieval rerun. This scope receipt does not replace or relabel the original fit failure.",
+  "bindings": {
+    "parent_fit_reproduction": {
+      "path": "reports/information-skill-01/B/independent/FIT_REPRODUCTION_V1.json",
+      "bytes": 61413,
+      "SHA256": "b4fbe85fe4579e3452e7b62318ab3bab735219667adc7f316eef0b508c9e0ddd"
+    },
+    "source_evaluation_scores": {
+      "path": "reports/information-skill-01/B/evaluation-v2/SCORES.json",
+      "bytes": 5212808,
+      "SHA256": "8f0d1f5daf9c7385b6743a115f3025ec997d4ff352bb4f65a31479896665dbaf"
+    },
+    "lossless_representation_receipt": {
+      "path": "reports/information-skill-01/B/evaluation-v2/LOSSLESS_REPRESENTATION_RECEIPT_V1.json",
+      "bytes": 5719,
+      "SHA256": "296ddb7e0c779385c1410d8a1dbd2127c0d28aab1760b5fd23a90f752c7b48c3"
+    },
+    "checked_code_SHA256": {
+      "reports/information-skill-01/B/independent/verify_fits_v1.py": "d5e4308af4cefa1b0eeaf5b0fa57fd180d95b045f57744d5554f16f94297c6b4",
+      "nfl_v2/qb_pass_mix_information.py": "7605a8f6323b425ab13a6c14692eb04a6b4d0c96b2ba788c74d99c367976c772"
+    }
+  },
+  "grading_scope": {
+    "status": "PASS_PUBLIC_AGGREGATE_ARITHMETIC_AND_COMMITMENT_CONSISTENCY",
+    "canonical_records": 1390,
+    "displayed_main_and_selective_rows": 1398,
+    "selected_membership_commitments": 190,
+    "checks": [
+      "Each own Over/Under/combined wins, losses, decided and weighted rate; empty groups retain N/A.",
+      "Weekly/cumulative population and side-count sums; probability-score bounds and denominator-weighted weekly sums.",
+      "Reliability-bin counts and displayed selection-count/hash commitments.",
+      "Canonical score records equal their linked public aggregate views.",
+      "Full-population attribution versus separately typed selected-fallback counts."
+    ],
+    "failure_count": 0,
+    "all_passed": true,
+    "source_limits": "No private offer/outcome rows, original quote clocks, raw membership reconstruction, venue settlement, fitted-model or C admission parity established by aggregate arithmetic."
+  },
+  "saved_law_scope": {
+    "status": "PASS",
+    "rows_checked": 1260,
+    "unique_queries": 315,
+    "origins": "2026 W1\u20139; four frozen arms per query",
+    "checks": [
+      "Nonnegative finite masses; bounded omitted-tail mass and monotonic CDF.",
+      "Exact corrected means, lower medians, integer pushes and half-point no-push semantics.",
+      "Exact saved attempt-law bindings and coherent NB-attempt/binomial-completion support."
+    ],
+    "parent_attempt_bindings_identical": true,
+    "max_mass_error": 1.000310945187266e-12,
+    "max_mean_difference": 0.0,
+    "max_joint_attempt_mass_error": 4.85722573273506e-17,
+    "max_push_or_total_mass_error": 4.676814491233472e-15,
+    "all_passed": true
+  },
+  "lossless_scope": {
+    "status": "PASS",
+    "actual_original_capsule_decoded_files": 11,
+    "all_decoded_bytes_identical": true,
+    "changed_scientific_rows": 0,
+    "new_grading_runs": 0,
+    "limits": "Representation/retention identity adds no NFL games, forecast accuracy, source qualification or production admission."
+  },
+  "excluded_fit_reproduction_scope": {
+    "status": "C1_STRICT_FIT_REPRODUCTION_FAILED;R0_R1_PASSED",
+    "original_parent_receipt_remains_failed": true,
+    "C1": {
+      "status": "FAILED_PREDECLARED_TOLERANCES",
+      "coefficient_max_absolute_difference": 0.0006729079367610719,
+      "conditional_probability_max_absolute_difference": 0.00015077291959575412,
+      "objective_difference": 2.98073427984491e-06,
+      "tolerances": {
+        "coefficient_absolute": 1e-05,
+        "prediction_absolute": 1e-07,
+        "objective_absolute": 1e-06,
+        "objective_relative": 1e-10
+      },
+      "independent_full_beta": "NOT_RETAINED; both-full-beta diagnostic/restoration unavailable without an unauthorized additional fit.",
+      "no_retry_or_tolerance_change": true
+    },
+    "R0": {
+      "status": "PASS",
+      "coefficient_max_absolute_difference": 1.3002932064409833e-12
+    },
+    "R1": {
+      "status": "PASS",
+      "coefficient_max_absolute_difference": 1.7304511990001714e-11
+    },
+    "interpretation": "Aggregate/law PASS must not be interpreted as whole-fit PASS. Original scope limits and strict C1 failure remain visible and binding."
+  },
+  "execution_delta": {
+    "new_fits": 0,
+    "optimizer_calls": 0,
+    "new_scoring_runs": 0,
+    "new_check_runs": 0,
+    "network_reads": 0,
+    "source_collection": 0,
+    "operation": "Receipt extraction and binding hashes only"
+  },
+  "admission": "B_LOCAL_SCOPED_INDEPENDENT_RECEIPT; C coordinator admits only actual supported scope; no production activation."
+}

@@ -59,7 +59,8 @@ def inherited_table(evaluator, summary, raw):
         result.update(record_id='B-SKILL-EVAL-' + evaluator.digest(
             [method, policy, window, mode])[:24],
             evaluation_panel_id='B-SKILL-2026-NATIVE-QB142-pass_cmp',
-            canonical_source_view=True, reused_forecasts=method not in METHODS,
+            canonical_source_view=method not in ('RETAINED_B0', 'RETAINED_B2'),
+            reused_forecasts=method not in METHODS,
             original_issuance=False)
         return result
     return report
@@ -295,7 +296,8 @@ def main():
                     population='FULL_DECLARED_NATIVE_QB_OFFER_BOARD;CONDITIONAL_QUALIFIED_PLAYED_LABELS',
                     evaluation_panel_id='B-SKILL-2026-NATIVE-QB142-pass_cmp',
                     membership_SHA256=ev.digest(sorted(ev.key(r) for r in subset)),
-                    calibration_mode=mode, joint_scope='SELECTED_SIDE_BERNOULLI_NOT_COUNT_CDF' if mode != 'RAW' else 'RAW_COUNT_LAW'))
+                    calibration_mode=mode, canonical_source_view=method not in ('RETAINED_B0', 'RETAINED_B2'),
+                    joint_scope='SELECTED_SIDE_BERNOULLI_NOT_COUNT_CDF' if mode != 'RAW' else 'RAW_COUNT_LAW'))
 
     def paired(candidate, policy, left, control, control_policy, right, scope, metric='SELECTION_LOSS_RATE'):
         lookup = {ev.key(r): r for r in right}
@@ -316,6 +318,7 @@ def main():
             same = [(r, s) for r, s in same if r['probs'] is not None and s['probs'] is not None]
         return dict(candidate=candidate, policy=policy, control=control, control_policy=control_policy,
                     target='pass_cmp', scope=scope, metric=metric, history_regime='H-RECENT',
+                    comparison_kind='CANDIDATE_SELECTED_CASE_DIRECTION' if scope == 'CANDIDATE_OWN_SELECTED_CASES_CONTROL_BROAD_SIDES' else 'MATCHED_CASES',
                     candidate_selected=sum(r['selected_side'] in ('OVER', 'UNDER') for r in left),
                     common_decided=len(same), candidate_wins=sum(r['status'] == 'WIN' for r, _ in same),
                     control_wins=sum(s['status'] == 'WIN' for _, s in same),
@@ -343,6 +346,43 @@ def main():
                 for control, cp in controls:
                     pairs.append(paired(method, policy, frame, control, cp, raw[control, cp],
                                         'CANDIDATE_OWN_SELECTED_CASES_CONTROL_BROAD_SIDES'))
+    # Own-list performance is different from a control's direction on the
+    # candidate-selected cases above. Preserve both; do not apply paired loss
+    # uncertainty to two different selected populations.
+    for method in selective_methods:
+        if sum(key[0] == method for key in selected_frames) != 19:
+            raise AssertionError('The frozen nineteen-policy set changed: ' + method)
+    own_list_comparisons = []
+    all_selective = {(r['method'], r['policy']): r for r in selective if r['window'] == 'ALL'}
+    for (method, policy), candidate_rows in selected_frames.items():
+        if method not in METHODS:
+            continue
+        candidate_keys = {ev.key(r) for r in candidate_rows if r['selected_side'] in ('OVER', 'UNDER')}
+        for control in ('RETAINED_B0', 'RETAINED_B2'):
+            control_rows = selected_frames.get((control, policy))
+            if control_rows is None:
+                continue
+            control_keys = {ev.key(r) for r in control_rows if r['selected_side'] in ('OVER', 'UNDER')}
+            candidate_record = all_selective[method, policy]
+            control_record = all_selective[control, policy]
+            retained_fields = ('record_id', 'OVER', 'UNDER', 'COMBINED', 'eligible', 'available',
+                               'selected', 'unknown', 'fallback_selected', 'selected_by_week',
+                               'zero_selection_weeks', 'selected_unique_games',
+                               'selected_unique_players', 'selected_unique_player_games',
+                               'selected_membership_SHA256', 'actual_weeks', 'distinct_scored_weeks')
+            left = candidate_record['COMBINED']['rate']
+            right = control_record['COMBINED']['rate']
+            own_list_comparisons.append(dict(candidate=method, control=control, policy=policy,
+                comparison_kind='OWN_LIST', status='DESCRIPTIVE_UNPAIRED_OWN_SELECTED_POPULATIONS',
+                candidate_own_list={k: candidate_record[k] for k in retained_fields},
+                control_own_list={k: control_record[k] for k in retained_fields},
+                selected_overlap=len(candidate_keys & control_keys),
+                candidate_only=len(candidate_keys - control_keys), control_only=len(control_keys - candidate_keys),
+                observed_own_list_rate_difference=left - right if left is not None and right is not None else None,
+                uncertainty='No paired interval for different own lists. Dependence-aware matched-case contrasts are reported separately.',
+                same_selected_case_reference='PAIRED_COMPARISONS_V1.json:CANDIDATE_OWN_SELECTED_CASES_CONTROL_BROAD_SIDES',
+                weekly_own_list_reference='SELECTIVE_TABLES_V1.json.gz: exact method/policy/week rows',
+                evidence_tier=TIER))
     for method in METHODS + RETAINED:
         group = [r for r in predictions if r['method'] == method]
         for output in ('mean', 'lower_median'):
@@ -394,7 +434,7 @@ def main():
     references = [r for r in old_tables if r['method'] in ('RETAINED_B0', 'RETAINED_B2', 'RETAINED_EARLIER_LINE_PREVALENCE') and r['window'] == 'ALL']
     if any(r['membership_SHA256'] != membership for r in references):
         raise ValueError('Public aggregate controls are on a different opportunity mask.')
-    canonical = tables + selective + broad + proper
+    canonical = [r for r in tables + selective + broad + proper if r.get('canonical_source_view', True)]
     if len({r['record_id'] for r in canonical}) != len(canonical):
         raise ValueError('Duplicate canonical record identity.')
     bindings = dict(design_sha256=ev.sha(BASE / 'FROZEN_DESIGN_V1.json'), code_sha256=ev.sha(__file__),
@@ -405,6 +445,7 @@ def main():
     outputs = {'EXECUTION_INPUT_BINDINGS_V1.json': bindings, 'MAIN_TABLES_V1.json.gz': tables,
                'SELECTIVE_TABLES_V1.json.gz': selective, 'PROBABILITY_TABLES_V1.json.gz': proper,
                'BROAD_NUMERICAL_TABLES_V1.json.gz': broad, 'PAIRED_COMPARISONS_V1.json': pairs,
+               'OWN_LIST_COMPARISONS_V1.json': own_list_comparisons,
                'CALIBRATION_SUPPORT_TRACE_V1.json': calibration_trace, 'SCORES.json': canonical,
                'PUBLIC_RETAINED_CONTROL_REFERENCES_V1.json': dict(source_sha256=ev.sha(M2_PATH.parent / 'MAIN_TABLES_V1.json.gz'),
                    records=references, imported_row_controls=imported_controls,
@@ -426,6 +467,9 @@ def main():
         missing_offer_weeks=[1, 2, 3, 4], numeric_weeks=list(range(1, 10)), native_games=71,
         main_views=len(tables), selective_views=len(selective), broad_numeric_views=len(broad),
         proper_probability_views=len(proper), canonical_views=len(canonical), paired_views=len(pairs),
+        own_list_comparisons=len(own_list_comparisons),
+        B0_B2_own_policy_counts={m: sum(key[0] == m for key in selected_frames)
+                               for m in ('RETAINED_B0', 'RETAINED_B2')},
         boundary_fixtures=fixtures, frozen_policy_count_per_method=19,
         future_outcome_mutation='PASS_EARLIER_CALIBRATION_UNCHANGED', batch_prefix_invariance='PASS',
         source_reads_by_execution=0, new_fits=0, new_NFL_observations=0, original_pregame_selections=0,

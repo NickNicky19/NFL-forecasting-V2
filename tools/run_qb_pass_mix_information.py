@@ -99,7 +99,7 @@ def fitted(path,slot,budget,factory,fitargs,cutoff,train):
  finally:budget.checkpoint('AFTER_'+slot)
 
 def run(max_origins=None):
- proto=read(OUT/('SEALED_INPUTS_AND_CODE_V2.json'if(OUT/'SEALED_INPUTS_AND_CODE_V2.json').exists()else'SEALED_INPUTS_AND_CODE_V1.json'))
+ seals=sorted(OUT.glob('SEALED_INPUTS_AND_CODE_V*.json'),key=lambda p:int(p.stem.rsplit('V',1)[1]));proto=read(seals[-1])
  assert proto['design_sha256']==sha(BASE/'FROZEN_DESIGN_V1.json')
  for p,digest in {**proto['source_inputs'],**proto['code'],**proto['parent_predictions']}.items():assert sha(ROOT/p)==digest,p
  budget=Budget();rows,h,ch,profiles=context();parents,_=parent_rows();count=0

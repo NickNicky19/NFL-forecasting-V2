@@ -1,0 +1,189 @@
+{
+  "id": "B-TABICLV2-QUALIFICATION-UPDATE-v2",
+  "UTC": "2026-11-16T17:24:12.235299+00:00",
+  "supersedes_only": {
+    "path": "reports/predictive-value-next-01/B/TABICLV2_LOCAL_FEASIBILITY_V1.json",
+    "sha256": "e19a15559551a34846b1bcb56fb03b25c697991b59e8642c548dfd4d20d31d03",
+    "fields": "Exact official source/license/checkpoint metadata now obtained by root; original local absence and no-allocation observations remain historically correct."
+  },
+  "state": "OFFICIAL_SOURCE_AND_EXPECTED_CHECKPOINT_PINNED;BINARY_RUNTIME_AND_OWN_ALLOCATION_PENDING",
+  "source": {
+    "repository": "soda-inria/tabicl",
+    "commit": "a626a1b67049b0b1748ebe8c92f7df40aaebd334",
+    "library_version": "2.2.0",
+    "source_received_by": "Root existing authorized public-source route; child no network",
+    "attribution": "Soda team @ Inria / TabICL authors",
+    "license": "BSD-3-Clause classification code; preserve notice/conditions/disclaimer. src/tabicl/forecast is separate Apache-derived scope and excluded.",
+    "pretraining": "Publisher describes synthetic-prior data generation and synthetic pretraining. Exact checkpoint training contents/NFL exclusion and historic artifact issuance are not independently audited; do not claim pure-current-football-information.",
+    "local_source_hashes": [
+      {
+        "received_file_label": "TABICL_README.md",
+        "sha256": "82b000c9c915c73ae70a444622aa0422d440d7a12952411ecdd59cd33e7f76fe",
+        "bytes": 20290
+      },
+      {
+        "received_file_label": "TABICL_LICENSE",
+        "sha256": "d7845b85dd692c38d8e5f52fe546da9f5d0030a1db420d98e9e9b2bbb06aa67d",
+        "bytes": 12995
+      },
+      {
+        "received_file_label": "TABICL_PYPROJECT.toml",
+        "sha256": "a449a6d08fa8bec0deaef32138bd659f1cdbd8d1a978fc5c08b9b3ac8be5b911",
+        "bytes": 3574
+      },
+      {
+        "received_file_label": "classifier.py",
+        "sha256": "97884ad8ed401db15e5c0f85f22173f644bcd18762d5083b90725d7aa0c3d5ad",
+        "bytes": 36874
+      },
+      {
+        "received_file_label": "base.py",
+        "sha256": "7f8f284ca91bf1f5a016179834e508890b3f5368c4a48a7dcb6cb4b83a30051a",
+        "bytes": 18228
+      },
+      {
+        "received_file_label": "__about__.py",
+        "sha256": "0ca93ed5bfab66c245c458b526827b4e612f204434adff82f470195b0be3b8cd",
+        "bytes": 22
+      },
+      {
+        "received_file_label": "TABICL_HF_METADATA.json",
+        "sha256": "cd0b37f41d205490f87d67880090bc21b12ca17f5cb47ab0503f6bb9e41533fc",
+        "bytes": 2086
+      }
+    ]
+  },
+  "checkpoint": {
+    "repository": "jingang/TabICL",
+    "revision": "4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+    "filename": "tabicl-classifier-v2-20260212.ckpt",
+    "expected_bytes": 110368038,
+    "expected_LFS_SHA256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+    "public": true,
+    "gated": false,
+    "reported_license": "bsd-3-clause",
+    "binary_downloaded": false,
+    "binary_SHA256_independently_verified": false,
+    "checkpoint_schema_verified": false,
+    "required_binary_gate": "Only exact pinned110368038-byte artifact; verify digest before load, then restricted primitive-config/tensor-state schema/dimensions/finite weights. No permissive fallback for unsupported globals or malformed keys."
+  },
+  "safe_execution_contract": {
+    "loader_source": "classifier._load_model calls torch.load(...map_location=cpu,weights_only=True) and requires config/state_dict. This is source inspection, not tested restoration.",
+    "required_torch": "Pin a maintained patched version with weights_only safety; do not use upstream minimum2.2 as security qualification. Recommend>=2.6, exact version still to pin.",
+    "forbidden": [
+      "weights_only=False",
+      "torch.serialization.add_safe_globals or allowlisting custom globals to force load",
+      "pickle/joblib estimator serialization or TabICLClassifier.save/load",
+      "trust_remote_code or arbitrary checkpoint-supplied classes",
+      "finetuning/pretraining/seed or configuration search"
+    ],
+    "fixed_settings_for_later_registration": [
+      "Explicit verified local model_path",
+      "allow_auto_download=False; no implicit latest HF fetch",
+      "device=cpu; n_jobs=2; no alternate accelerator",
+      "kv_cache=False; no persisted context/KV cache",
+      "One checkpoint, one predeclared ensemble/normalization/configuration and seed; no outcome-selected setting",
+      "Class encoder classes_ must explicitly orient probability to Over, retain correct complementary side and abstention/push contracts"
+    ],
+    "restoration": "Reconstruct from pinned binary plus qualified earlier examples/transforms in approved restricted route; persist only safe commitments/typed predictions/public aggregates. Do not serialize protected examples or estimator pickle to Git."
+  },
+  "chronology_and_query_independence": {
+    "fit_source_trace": "fit fits TransformToNumerical and EnsembleGenerator using Xtrain/ytrain only. predict_proba transforms query and, withoutcache, combines stored train context with query rows for foundation inference.",
+    "single_query_strategy": "Call predict_proba with exactly one target query row at a time, preserving original training set. This prevents another later query feature vector entering the same forward pass by construction. It does not itself authenticate source vintage or all transductive internals.",
+    "still_required": [
+      "Inspect/pin transformation code; preprocessing parameters must use earlier training only.",
+      "No target outcomes/in-context labels from evaluation game, repeated book or alternate offer of same player-game in training.",
+      "Future-query/outcome mutation and batch-versus-single equality checks within a declared independent decision batch; do not adapt after failed parity.",
+      "A new origin reconstructs contexts from eligible earlier offers; no cache or later fitted state can carry backward.",
+      "Single-query behavior/preprocessor determinism must be verified in canary before scored inference."
+    ],
+    "source_limit": "Classifier/estimator source read; lower-level attention/preprocessor modules not yet executed or comprehensively audited by child."
+  },
+  "actual_offer_feasibility": {
+    "known_native_CMP_offers": 142,
+    "actual_weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "native_source_grade_SHA256": "dbdbf73a23fea1d7d8c90fde666163853f492b0e9686ae068b829b2bc2816a39",
+    "availability_policy": "Retained kickoff+7days strict< earliest weekly kickoff; same source-vintage caveats. Counts are feasibility, not new model grades.",
+    "earlier_native_context_by_test_week": [
+      {
+        "week": 5,
+        "rows": 0,
+        "over": 0,
+        "under": 0
+      },
+      {
+        "week": 6,
+        "rows": 0,
+        "over": 0,
+        "under": 0
+      },
+      {
+        "week": 7,
+        "rows": 28,
+        "over": 14,
+        "under": 14
+      },
+      {
+        "week": 8,
+        "rows": 56,
+        "over": 32,
+        "under": 24
+      },
+      {
+        "week": 9,
+        "rows": 86,
+        "over": 49,
+        "under": 37
+      }
+    ],
+    "startup": "A pilot could only have learned native contexts W7\u20139 under this rule; W5\u20136 require frozen explicit fallback/unavailable treatment. This does not establish five learned weeks or W1\u20139 complete-board coverage.",
+    "earlier_A_W1_4": "Protected source owned byA; public84-grade aggregates are not individual earlier training contexts.",
+    "earlier_2022_2025": "Ordinary football-stat labels do not supply authentic offered-line classifier labels. No qualifying earlier exact-offer row package identified in inspected own route.",
+    "split_contract": "Group all repeated player-game/threshold/book rows; no target-game labels, transforms, examples, calibration/retrieval/cache state in training. Half-point event orientation positiveclassOver; pushes need separate contract."
+  },
+  "allocation": {
+    "state": "MISSING_NOT_GRANTED",
+    "root_preparing_request": true,
+    "request_is_authorization": false,
+    "requested_envelope": {
+      "CPU_total": 600,
+      "wall_seconds": 1200,
+      "max_threads": 2,
+      "peak_RSS_bytes": 2147483648,
+      "new_runtime_cache_bytes": 1073741824,
+      "public_bytes": 16777216,
+      "completion_CPU_reserve": 180,
+      "ungraded_canary_CPU_ceiling": 90,
+      "learned_origins_max": 3
+    },
+    "request_scope": "One exact TabICLv2 completion-direction configuration, one ordinary same-information direct-classifier comparator, reused strongest saved distribution/direction controls; conditional W7\u20139 learned origins with declared W5\u20136startup. Not a granted additional allowance.",
+    "safe_stop": "After qualification/canary, proceed only when observed cost projection for complete remaining inference/scoring/verification/retention fits both CPU/wall balances and180CPU reserve. Stop rather than silently shrink completed outcomes, swap model or add budget.",
+    "M3_funds": 0,
+    "old_closed_budget_transfer": false,
+    "runtime_storage": "1GiB cap includes downloaded/compressed/unpacked dependencies, weights and temporary artifacts; checkpoint110MB alone does not prove runtime fits.",
+    "unavailable_context_or_retention": "Exact earlier offers/contexts stay owner-qualified; protected context retention must use approved existing route, not public pickle/Git."
+  },
+  "next_minimum_prerequisite": {
+    "executor": "B owner under suitable existing allocation or explicit bounded request approval",
+    "artifact": "Authorized finite execution envelope for the pinned binary/runtime qualification and one pilot.",
+    "remaining_gates": "Binary/digest/schema, exact dependency pins, safe loader and memory/runtime/retention canary; no binary or install attempted under ungranted request.",
+    "not_a_source_failure": "One metadata-qualified model family is ready for bounded runtime qualification, not an already executed predictive test. Lower-than-300 context size may differ from publisher pretraining support and must be disclosed."
+  },
+  "child_execution": {
+    "network": 0,
+    "installs": 0,
+    "model_loads": 0,
+    "fits": 0,
+    "new_NFL_grades": 0,
+    "peer_or_global_writes": 0,
+    "new_allowance": 0,
+    "incremental_receipt_CPU_seconds": 0.0006817660000000003,
+    "limitation": "Local source reads and receipt generation only; process/import/tail not a complete measured task total."
+  }
+}

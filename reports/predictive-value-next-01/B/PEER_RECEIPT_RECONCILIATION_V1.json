@@ -1,0 +1,219 @@
+{
+  "id": "B-PREDICTIVE-VALUE-NEXT-01-PEER-RECEIPTS-v1",
+  "UTC": "2026-11-16T17:14:32.808716+00:00",
+  "state": "NEWER_OWNER_RECEIPTS_RECONCILED;NO_FITS_OR_PEER_EXECUTION",
+  "session": "B",
+  "sources": [
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "commit": "8635e970d6c24aa1ec8020416b743f623a042626",
+      "path": "reports/abc-championship/info-skill-B-early-join-v1/A/PUBLIC_RECONCILIATION_V2.md",
+      "received_text_SHA256": "9c58e250e0085b72266aa9a74da429524f13347ce07cc6683caad88afeb77d9b"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "371bce3fea4e6fa620edce3e3cc55ce47bff56c3",
+      "path": "reports/information-skill-01/executed-receipts-gap-closure-01/README.md",
+      "received_text_SHA256": "807fbeb2a6300446b2a5a1ea5975f44db1914409c88b820175079c64a5db533c"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "371bce3fea4e6fa620edce3e3cc55ce47bff56c3",
+      "path": "reports/information-skill-01/executed-receipts-gap-closure-01/ADMISSION.json",
+      "received_text_SHA256": "425f254955d2139d9714f37f4928320d0f6a77c4222792b82fcbf8cf51b2c625"
+    }
+  ],
+  "A_frozen_M3": {
+    "owner": "A existing registered protected-join executor",
+    "owner_reported_repair": "COMPLETED;REUSED_ALREADY_ADMITTED_DUAL_CLOCK_MAPPING",
+    "owner_reported_fixture": "PASS_FULL142_ROW_COMPLETION_IDENTITY_AND_ALL_FIVE_WEEKLY_CMP_ATT_FINGERPRINTS",
+    "source_and_canonical_clocks": "Preserved separately with original chronology checks",
+    "B_independent_private_fixture_reproduction": false,
+    "new_M3_grades_in_obtained_A_summary": 0,
+    "new_full_worker_in_obtained_A_summary": false,
+    "supersedes_B_old_stop": {
+      "path": "reports/information-skill-follow-through-01/B/receipt-reconcile-20261116/C_M3_STOP_SUPERSESSION_V1.json",
+      "sha256": "f323d0114318036aea5c4076f279e50709fb3605905b3e6ab5ed213650349653",
+      "old_status": "NOT_EXECUTED_REPAIR;NO_FIXTURE_PASS_CLAIM",
+      "current_status": "OWNER_REPORTED_REPAIR_AND_FIXTURE_PASS_RECEIVED;NOT_RAW_PRIVATE_PARITY"
+    },
+    "approval_basis": "Latest user PREDICTIVE-VALUE-NEXT-01",
+    "cumulative_caps": {
+      "CPU_seconds": 1660,
+      "wall_seconds": 2250,
+      "increments": {
+        "CPU": 400,
+        "wall": 450
+      },
+      "single_grant": true
+    },
+    "carry_forward": {
+      "user_checkpoint_CPU_seconds": 1169.006,
+      "latest_exact_A_CPU_ledger": "Not contained in public summary; A must bind current exact charges and any newer legitimate consumption",
+      "latest_A_wall_consumption": "Not supplied in obtained public summary",
+      "retention_reserve_CPU": 120,
+      "reporting_reserve_CPU": 20,
+      "original_failures_and_metering_limits": "Preserve; no all-process completeness assertion"
+    },
+    "arithmetic_only_from_user_checkpoint": {
+      "CPU_headroom_before_newer_charges": 490.994,
+      "CPU_before_retained_reserves": 350.994,
+      "not_a_safe_launch_certificate": true
+    },
+    "next_action": "A verify retained repair/fixture bindings, actual current CPU AND wall balances, complete-path cost and retained reserves; resume durable raw grades before summaries only if safe. B does not launch, fund or transfer the worker.",
+    "private_artifact_or_internal_execution_metadata_republished": false
+  },
+  "C_actual_admission": {
+    "coordinator": "C",
+    "admission_id": "C-EXECUTED-RECEIPTS-GAP-CLOSURE-ADMISSION-v1",
+    "recorded_UTC": "2026-11-16T00:58:35.621042+00:00",
+    "A_SKILL_received": {
+      "source": "f79c05835ba3a41a7e73a5c6fd26c05896011e4e",
+      "early_offers": 84,
+      "full_decided": 226,
+      "scope": "Owner-local public aggregates and immutable bindings; no C access to protected rows or source vintages."
+    },
+    "B_opportunity_received": {
+      "scientific": "a0f5b91c61c9d1c7c2a3e39c4bdd6da29435e98e",
+      "delivery": "1a69f1dd21141f8f95c3f1b19b6e9ab1a4d1fde6",
+      "products": [
+        "OPP_BASE",
+        "OPP_MEAN",
+        "OPP_JOINT",
+        "DIRECT_ATT"
+      ],
+      "actual_offer_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_early_offer_weeks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "scope": "Public arithmetic and typed handoff; not independent model restoration or private-row parity"
+    },
+    "independent_B_SKILL_review": {
+      "source": "3ee36595dbf3d7189ede6b1cf13f2e4a32a7cd83",
+      "path": "reports/information-skill-follow-through-01/B/receipt-reconcile-20261116/A_SKILL_AGGREGATE_VERIFICATION_V1.json",
+      "SHA256": "61f6a17a7033dcad66cfebbd06cbafeb68ed730081cf4207202aa2a09c134d5b",
+      "already_executed": true,
+      "C_receipt_field": false,
+      "C_acknowledgement_of_this_exact_B_review": "NOT_ESTABLISHED_IN_OBTAINED_C_SCOPE;not a reason to repeat review"
+    },
+    "scientific_limit": "Actual public retrieval/admission is narrower than private rows, clocks, fitted-model restoration or general superiority.",
+    "scorer_binding": {
+      "path": "src/abc_championship_v2.py",
+      "SHA256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce"
+    },
+    "interval_binding": {
+      "path": "src/actual_accuracy_v6.py",
+      "SHA256": "92260304be31b0fbee42faa3ab78616f77c3791bd2613edb9d322f9bbf29aa2a"
+    }
+  },
+  "C05": {
+    "status": "GRADED_QUALIFIED_FROZEN_FORECAST_ONLY",
+    "original_forecast_views": 69,
+    "scored_views": 57,
+    "unknown_views": 12,
+    "model_views": 3,
+    "observed_players": 19,
+    "unresolved_players": 4,
+    "unique_game_count": 1,
+    "actual_offers": 0,
+    "original_picks": 0,
+    "source_reported_qualified_zero_reception_players": 5,
+    "unresolved_details": "Three absent-stat rows and one unresolved participation record remain UNKNOWN, not zero or DNP.",
+    "original_issue_and_forecasts": "Unchanged; later append-only forecast-only grading, not recreated issuance.",
+    "numerical_results_owner_reported": [
+      {
+        "model": "Retained reference",
+        "graded": 19,
+        "unknown": 4,
+        "mean_MAE": 1.31327,
+        "mean_MSE": 2.661182,
+        "mean_bias": 0.653611,
+        "median_MAE": 1.210526,
+        "CRPS": 0.799685,
+        "NLL": 1.608654
+      },
+      {
+        "model": "C04 F3 profile1d shadow",
+        "graded": 19,
+        "unknown": 4,
+        "mean_MAE": 1.314854,
+        "mean_MSE": 2.731945,
+        "mean_bias": 0.672223,
+        "median_MAE": 1.263158,
+        "CRPS": 0.803317,
+        "NLL": 1.588463
+      },
+      {
+        "model": "C V11 P1 pooled7d",
+        "graded": 19,
+        "unknown": 4,
+        "mean_MAE": 1.452508,
+        "mean_MSE": 3.17087,
+        "mean_bias": 0.73867,
+        "median_MAE": 1.368421,
+        "CRPS": 0.893215,
+        "NLL": 1.658865
+      }
+    ],
+    "conclusion": "F3 NLL better while MAE/CRPS slightly worse; one game establishes no general superiority or five-week actual-line qualification.",
+    "B_independent_raw_outcome_or_metric_reproduction": false,
+    "minimum_optional_verification_artifact": {
+      "path": "reports/information-skill-01/executed-receipts-gap-closure-01/verification/C05_GRADE_CHECK.json",
+      "SHA256": "46ed05d43ab76131bf2187573924c15771c1c61cfd3f9348df58a70e2c57ef10",
+      "bytes": 3492,
+      "not_fetched_by_this_agent": true
+    },
+    "source_status_binding": {
+      "path": "reports/information-skill-01/executed-receipts-gap-closure-01/C05-outcomes/resume-01/SOURCE_STATUS.json",
+      "bytes": 7441,
+      "SHA256": "85dc9ae037767baa6aeec2a9624e5774962f88f6cb85f54728ef085296c4c88d"
+    },
+    "graded_packet_binding": {
+      "path": "prospective/grades/C-NATIVE-GRADE-20261116-NEDET-01-C-C05-NEDET-FIRST-01.json",
+      "SHA256": "5b49ee6eb024e5b3785e59b734a944d5de14c8d5c4a8f51e7e37cc91d6c13df0",
+      "rows": 69,
+      "states": {
+        "GRADED_PLAYED": 57,
+        "UNKNOWN": 12
+      }
+    }
+  },
+  "website": {
+    "latest_user_reference": {
+      "comment": 6904262383,
+      "published_commit": "0a2ab5e9e9e0f1f4dd2077bac8375822a1e07fe1",
+      "baseline_forecast_rows": 237
+    },
+    "local_C_admission_older_baseline_rows": 581,
+    "attribution": "BASELINE_REFERENCE_CAPTURE, not research picks/wins/activation",
+    "B_direct_current_served_or_browser_check": false,
+    "all_original_packets_preserved": true
+  },
+  "decisions": {
+    "SKILL": "NO_PREFERRED_REPLACEMENT;R0mean115vsC0113andstrongB0mean119/B2medianlaw122",
+    "opportunity": "Exact joint recipe closed; early grades distinct and need own task/allocation",
+    "strict_C1_reproduction": "FAILED_PRESERVED",
+    "strict_opportunity_team_reproduction": "FAILED_PRESERVED",
+    "share_and_saved_grade_checks": "PASS_SEPARATE_SCOPE",
+    "primary_promotion": false
+  },
+  "execution": {
+    "new_network_reads": 0,
+    "new_fits": 0,
+    "new_source_collection": 0,
+    "new_grading": 0,
+    "new_peer_or_global_writes": 0,
+    "new_budget_grant": 0,
+    "incremental_measured_CPU_seconds": 0.003088934999999994,
+    "limitation": "Lightweight cached-text reconciliation only; not a complete parent-task CPU certificate."
+  }
+}

@@ -1,3 +1,7 @@
+## Executed-receipt reconciliation — November16 UTC / November15 Chicago
+
+[New A SKILL84receipt and independentlyverified226-case union](reports/information-skill-follow-through-01/B/receipt-reconcile-20261116/README.md): COMPLETE, notoldM2/opportunity. R0meanearly−2/native+4=>115vsC0113, strongerB0mean119/B2law122; no replacement. C originalSKILLnativeintakeactuallyadmitted, newAearly/opportunityintakeawaitsC. C M3adapterstopNOTEXECUTEDrepair/noCgrades, charged1056.334180/1260,remainder203.665820incl140reserves; old429balanceSUPERSEDED; no newgrant/worker. AretaineddepthcheckCOMPLETE/authenticpersonnelblocked. C1/newteamstrictfitFAILEDpreserved. C0569ungraded/nozeroDNP; CountAPR90/91stillopen/auth401receiptnofreshdelivery. No fits/gradedNFLrows/sitewrites/budgettransfer.
+
 ## Information-skill follow-through — November15 UTC
 
 [Executed ownB opportunity relationship comparison](reports/information-skill-follow-through-01/B/README.md): fixedconversion nativeATT/CMP142W5–9 each; ATTmean73vs70 butbelowUnder75/adjusted81of141, CMPmean68vs72, jointproper/selectionadverse. Closeexactjointrecipe; smallATTmeanresearchonly. OldM2early84complete/Apublic226verified, distinctSKILLearly84A-owned; frozenCM3A-only1260cap+newspend/reserve. Depthdtalreadytested/fullpersonneluniverseblocked. IndependentnativegradePASS, newteamstrictreproductionFAIL/fullvectorspreserved/sharePASS; originalC1FAILunchanged. No livecapture/feed/siteactivation orcrossownerwrite. Alloldrecords/indexprefixesretained.

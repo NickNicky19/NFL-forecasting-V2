@@ -1,0 +1,19 @@
+{
+  "id": "B-INFORMATION-SKILL-SOFTWARE-REVIEW-v1",
+  "completed_UTC": "2026-11-15T14:52:49.949409+00:00",
+  "command": "PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 python unittest loader: tests.test_qb_pass_mix_information",
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "all_passed": true,
+  "optimizer_calls": 0,
+  "new_NFL_fits": 0,
+  "gradients": "Pure objective finite differences, not optimizer calls",
+  "CPU_seconds": 0.04365185500000024,
+  "wall_seconds": 0.044855540996650234,
+  "code_SHA256": {
+    "nfl_v2/qb_pass_mix_information.py": "7605a8f6323b425ab13a6c14692eb04a6b4d0c96b2ba788c74d99c367976c772",
+    "tests/test_qb_pass_mix_information.py": "bf4eb777db66022f82669676bb0765fc3d0feedbc53297bd355ee49f33399fbc"
+  },
+  "scope": "Exact shrinkage/grouping, knownzero/missing, strictclocks/gametimeordering, identityswitches, duplicate rejection, payload/featureorder, vector/scalar numericdesign, gradients, mass/CDF/push and coherent NBthinning. Manualcoefficients; no fit calls."
+}

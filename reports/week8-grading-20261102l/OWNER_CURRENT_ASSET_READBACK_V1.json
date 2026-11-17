@@ -1,0 +1,50 @@
+{
+  "state": "OWNER_CURRENT_SELECTED_READBACK_PASS_ADAPTIVE_ASSET_READBACK_FAIL",
+  "asof_utc": "2026-11-02T19:51:51.335422+00:00",
+  "assets": [
+    {
+      "kind": "adaptive",
+      "public_url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/weekly-adaptive/7b80b2963cff451758f5056768783a553b2feb12e66c44a66ee5206c104e574c.json",
+      "expected_sha256": "7b80b2963cff451758f5056768783a553b2feb12e66c44a66ee5206c104e574c",
+      "expected_bytes": 1994592,
+      "status": 404,
+      "asset_byte_equality": false,
+      "readback_state": "REFERENCED_ASSET_HTTP404_ON_FIRST_EXACT_PATH_READ; source inference/persistence metadata unverified by this served read",
+      "observed_at_utc": "2026-11-02T19:51:51.157043+00:00"
+    },
+    {
+      "kind": "selected",
+      "public_url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/weekly-selected-rankings/6444834ff22fcc36e02bbb9733e8bbe34c0a1cacf57a6429bd52bf6555f1971b.json",
+      "status": 200,
+      "bytes": 38097,
+      "sha256": "6444834ff22fcc36e02bbb9733e8bbe34c0a1cacf57a6429bd52bf6555f1971b",
+      "pointer_byte_equality": true,
+      "selected_by_side": {
+        "over": 12,
+        "under": 12
+      },
+      "prepared_at": "2026-11-01T18:53:17.232484+00:00",
+      "policy": "selected-projection-gap-classic-v1",
+      "whole_list_after_week_first_game": true,
+      "per_record_pregame_qualification": "Original source lineage review independently checks each signature; not a selectable fixed weekly list."
+    }
+  ],
+  "production_head": "ea2ce5f57146112bb4b5ccebcf8544b181192f50",
+  "policy": "weekly-adaptive-release-v1 / weekly-derived-selected-policy-v4; research-informed-stat-point-mae-v2.1 prepared, no newadmission observed",
+  "CHI_SEA_kickoff_utc": "2026-11-03T01:15:00+00:00",
+  "CHI_SEA_T90_deadline_utc": "2026-11-02T23:45:00+00:00",
+  "new_owner_capture_verified": false,
+  "new_V2_MAE_admission_observed": false,
+  "new_dispatches": 0,
+  "latest_research_parent": {
+    "run_id": 41509750811,
+    "head_sha": "37f4afddb773f29c6bf725194dd6a084fa415b1d",
+    "conclusion": "failure",
+    "failed_step": "Enforce source and publication handover safety",
+    "enqueue_step": "skipped",
+    "capture_step": "skipped",
+    "log_read": "GHredirect403; no retry or alternate-host bypass; exact cause unverified"
+  },
+  "owner_only_action": "Inspect referenced adaptiveasset404 and diagnose failed parent/skipped enqueue under existing source/admission rules; protect independently ready Monday capture before23:45UTC. No duplicate scheduler or V2dispatch.",
+  "prior_originals_preserved": true
+}

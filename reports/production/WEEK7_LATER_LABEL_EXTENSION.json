@@ -1,0 +1,164 @@
+{
+  "accuracy_scores": 0,
+  "actual_fits": 0,
+  "by_game": {
+    "espn:401873009": {
+      "null": 508,
+      "supported": 42
+    },
+    "espn:401873010": {
+      "null": 550,
+      "supported": 55
+    },
+    "espn:401873011": {
+      "null": 561,
+      "supported": 44
+    },
+    "espn:401873012": {
+      "null": 518,
+      "supported": 43
+    },
+    "espn:401873013": {
+      "null": 496,
+      "supported": 43
+    },
+    "espn:401873014": {
+      "null": 520,
+      "supported": 30
+    },
+    "espn:401873015": {
+      "null": 514,
+      "supported": 47
+    },
+    "espn:401873016": {
+      "null": 541,
+      "supported": 64
+    },
+    "espn:401873017": {
+      "null": 541,
+      "supported": 64
+    },
+    "espn:401873018": {
+      "null": 507,
+      "supported": 54
+    },
+    "espn:401873019": {
+      "null": 555,
+      "supported": 50
+    },
+    "espn:401873020": {
+      "null": 551,
+      "supported": 43
+    },
+    "espn:401873021": {
+      "null": 504,
+      "supported": 46
+    },
+    "espn:401873022": {
+      "null": 564,
+      "supported": 41
+    }
+  },
+  "by_target": {
+    "anytime_td": {
+      "null": 687,
+      "supported": 49
+    },
+    "pass_att": {
+      "null": 720,
+      "supported": 16
+    },
+    "pass_cmp": {
+      "null": 720,
+      "supported": 16
+    },
+    "pass_int": {
+      "null": 728,
+      "supported": 8
+    },
+    "pass_td": {
+      "null": 723,
+      "supported": 13
+    },
+    "pass_yd": {
+      "null": 720,
+      "supported": 16
+    },
+    "rec": {
+      "null": 579,
+      "supported": 157
+    },
+    "rec_yd": {
+      "null": 580,
+      "supported": 156
+    },
+    "rush_att": {
+      "null": 646,
+      "supported": 90
+    },
+    "rush_rec_yd": {
+      "null": 680,
+      "supported": 56
+    },
+    "rush_yd": {
+      "null": 647,
+      "supported": 89
+    }
+  },
+  "evidence_label": "NEW_EXPERIMENT_LABEL_RECONSTRUCTION_ONLY",
+  "forecast_rows_unresolved": 22290,
+  "forecast_rows_with_supported_later_label": 1998,
+  "input_sha256": {
+    "forecast_gzip_bytes": "955425791a79b9f279f8a6cf94d55efa9f80825227d49e1eccf026614b5f75a7",
+    "normalized_statistics_bytes": "46ff7b8986f02b29142ff0576adcbded936b05a30782a0338c7c10ba48f2649a",
+    "schedule_bytes": "a68435aec557944b4439342f28e40d50bd68a8f6983af44ed325f3e783ca9065"
+  },
+  "limitations": [
+    "Later same-provider website-normalized values, not independent NFL truth or original outcome capture recovery.",
+    "trim_stats drops zero/falsey fields; omissions remain null, never assumed zero.",
+    "Explicit-value-only grading selects positive production; it cannot establish full-population skill or the original history question.",
+    "All original query keys and unverified identities remain in private output with null reasons.",
+    "Current source bytes and ESPN final flag do not authenticate provider revision times or complete official labels.",
+    "No alias guessing, chart-PPR substitution, fitting, forecast issuance or scoring."
+  ],
+  "mapping": {
+    "anytime_td": "positive valid rush_td or rec_td proves1; zero needs both explicit0",
+    "identity": "exact sleeper prefix/key and existing sleeper_id agree; team/opponent and kickoff match completed ESPN schedule",
+    "participation": "positive valid gp/off_snp only; missing snapshot never DNP",
+    "primitive": "exact explicit field, finite; counts nonnegative integers; signed yards retained",
+    "rush_rec_yd": "sum only two finite explicit signed primitives"
+  },
+  "new_forecasts": 0,
+  "null_label_rows": 7430,
+  "observed_at": "2026-10-29T22:03:06.772841+00:00",
+  "original_forecast_rows": 24288,
+  "original_unique_games": 14,
+  "original_unique_opportunities": 8096,
+  "original_unique_player_games": 736,
+  "positive_participation_player_games": 288,
+  "private_label_body_sha256": "a556ee257b4bf3b4a0c784675ab51919ad11901fb136eb421b8507702aafabee",
+  "private_label_bytes": 6928074,
+  "provider_revision_timestamp": null,
+  "reasons": {
+    "explicit_primitive": 561,
+    "explicit_signed_component_sum": 56,
+    "incomplete_event_components_not_zero": 239,
+    "incomplete_sum_components_not_zero": 232,
+    "omitted_primitive_not_zero": 2031,
+    "participation_not_established": 253,
+    "player_not_in_normalized_snapshot": 3135,
+    "positive_rushing_or_receiving_TD_proof": 49,
+    "unverified_identity_namespace": 1540
+  },
+  "run_id": "v2-week7-later-explicit-labels-20261029-v1",
+  "source_commit": "911a81a31f822de58e0f9c04ded070f8c9752670",
+  "source_paths": {
+    "schedule": "output/data/weeks/2026_w07.json",
+    "statistics": "data/cache/stat-keys-fgm-v1/stats_2026_07.json"
+  },
+  "source_repository": "NickNicky19/nicks-expert-nfl-picks",
+  "supported_games": 14,
+  "supported_label_rows": 666,
+  "supported_unique_player_games": 190,
+  "version": "v2-week7-later-explicit-labels-v1"
+}

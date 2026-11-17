@@ -1,0 +1,12 @@
+field,verified_code_behavior,claim_limit,source_path,source_line
+season/week,raw source labels and historical roster/schedule binding,"Not quote-update, capture or decision time.",nfl_lab/historical_market_archive.py,139
+last_updated -> source_collection_naive,Raw annual clock renamed without claim of bookmaker timing.,Timezone unverified; no authenticated bookmaker quote clock.,nfl_lab/historical_market_archive.py,139
+timing_lane/timing_reason,Hardcoded timing-unverified exploratory / collection_clock_timezone_unverified_no_book_quote_clock.,Remains timing-unverified in each annual season.,nfl_lab/historical_market_archive.py,148
+source_quote_time,Set None by annual/site line builder.,Cannot align an original quote to a real decision cutoff.,tools/category_topfive_matched12_offers_v1.py,171
+cutoff_qualified,Set False by annual/site line builder and normalizer.,A restored ZIP cannot alone turn this flag into qualified historical quote evidence.,tools/category_topfive_matched12_offers_v1.py,172
+cutoff_utc,Explicitly assigned kickoff_utc by scoring projection driver.,"Reconstructed query horizon; not quote, receipt, inference or original issuance time.",tools/category_topfive_matched12_offer_driver_v1.py,146
+horizon_id,HISTORICAL_LEFT_LIMIT_KICKOFF_RECONSTRUCTION,Never relabel as authenticated T-minus90 or earlier issued product.,tools/category_topfive_matched12_offers_v1.py,16
+quote_time/capture_time/source_update_time,Allowed metadata columns and serialization paths where present.,Code support does not prove a retained nonnull clock or its semantics; private row/header pass required.,tools/category_topfive_matched12_aux_runner_v1.py,19
+source_late_flag/archive_saved_at,Preserved from existing site archive.,Later mutable archive/save clock cannot recover missing original per-row pregame retention.,tools/category_topfive_matched12_offers_v1.py,246
+READABLE_SCORECARD.zip MANIFEST.json,Exporter creates exact hashes/bytes for two CSVs and readme.,Inner manifest is not in public receipt; require approved restore and exact hash/header pass.,tools/category_topfive_matched12_readable_private_export_v1.py,35
+PREDICTIONS_ACTUALS_LINES_AND_DIRECTIONS.csv,Lossless CSV from DIRECTIONS.parquet with existing columns.,No missing original clock or original method precision is newly manufactured by CSV export.,tools/category_topfive_matched12_readable_private_export_v1.py,29

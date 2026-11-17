@@ -1,0 +1,60 @@
+{
+  "schema": "v2-current-prop-scoreboard-view-v1",
+  "scope": "full-provider-pool-v1",
+  "source_scores": {
+    "path": "reports/championship-20261030f/offer-expansion/full-pool-v1/SCORES.json",
+    "sha256": "7c19218c98c165d19b28ba7816e3ae33c888063b913709cb418d425b938c37bc"
+  },
+  "metadata": {
+    "path": "reports/championship-20261030f/offer-expansion/full-pool-v1/METADATA_SUPPLEMENT.json",
+    "sha256": "a83eafbd355b85c2bb591de8e7f261bd0f4259d463cf2534c182b3975d4e40a8"
+  },
+  "unsupported_cells": {
+    "path": "reports/championship-20261030f/offer-expansion/full-pool-v1/UNAVAILABLE_CELLS.json",
+    "sha256": "e65d3aefe2e1336110614e289fcd83a18af11105e4fde38dad270ba52a7bc65b"
+  },
+  "records_csv": {
+    "path": "reports/championship-20261030f/offer-expansion/full-pool-v1/ALL_SELECTION_VIEWS.csv",
+    "sha256": "87f29bce8bd60a314c052a1e965af44d68cb3558d1797605d877fc5ebe523274"
+  },
+  "default_predicate": {
+    "season_alias_of_week_view": false
+  },
+  "audit_views": 4980,
+  "default_views": 4980,
+  "aliases_retained_not_pooled": 0,
+  "unsupported_targets": [
+    "anytime_td",
+    "nick-chart-ppr-v1"
+  ],
+  "unsupported_cell_count": 30,
+  "required_actual_selected_sides": [
+    "over",
+    "under",
+    "Combined"
+  ],
+  "required_group_dimensions": [
+    "strategy",
+    "target",
+    "cohort_id",
+    "K",
+    "rank_scope",
+    "time_panel_id",
+    "horizon_id"
+  ],
+  "source_rows": 462,
+  "qualified_existing_outcomes": 446,
+  "unknown_participation": 16,
+  "original_selections": 285,
+  "original_decided": 279,
+  "original_wins": 183,
+  "previous_scoreboard_retained": "reports/prop-grading-20261030e/CURRENT_PROP_SCOREBOARD_VIEW.json",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "scope_limit": "One13gameW7snapshot; not full current season or authenticated bookmaker settlement/price/probability.",
+  "comparisons": {
+    "path": "reports/championship-20261030f/offer-expansion/full-pool-v1/COMPARISON_ANNOTATIONS.json",
+    "sha256": "a852456015d8b2353b265ef4b498f3e0d61e316984c40e78476e97620b451949"
+  }
+}

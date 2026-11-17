@@ -1,0 +1,66 @@
+{
+  "id": "B-FOLLOWTHROUGH-OWNED-CHECKS-v1",
+  "at_UTC": "2026-11-12T04:32:49.625666+00:00",
+  "source_and_report_JSON_GZIP_AST": "PASS",
+  "public_bytes": 726238,
+  "public_budget_bytes": 16777216,
+  "private_raw_rows_in_public_tree": false,
+  "checks": [
+    {
+      "command": "python tools/validate_checkpoint.py",
+      "state": "PASS",
+      "JSON_files_parsed": 31573,
+      "scope": "initial checkpoint and new metadata/schema; not independent NFLtruth"
+    },
+    {
+      "command": "python tools/check_result_index_coverage.py",
+      "state": "PASS",
+      "indexed_records": 613572,
+      "registered_artifacts": 225
+    },
+    {
+      "command": "python tools/check_analysis_index_coverage.py",
+      "state": "PASS",
+      "canonical_views": 124630,
+      "derived_views": 21840
+    },
+    {
+      "command": "python tools/check_prop_scoreboard_coverage.py",
+      "state": "PASS",
+      "new_grades": 0,
+      "NFL_outcomes_read": 0
+    },
+    {
+      "command": "Independent selector contribution partition and reference-scope accounting",
+      "state": "PASS",
+      "frozen_policy_records": 192,
+      "new_ranker_or_grader_calls": 0
+    },
+    {
+      "command": "Independent newA CSV integer/Decimal arithmetic",
+      "state": "PASS",
+      "checks": 2746,
+      "scope": "ATT and CountA representatives; raw alias/model/private clock verification unperformed"
+    },
+    {
+      "command": "Supplied defensive A3/A4 Decimal/rank/count checks",
+      "state": "PASS",
+      "checks": 192,
+      "source_authentication": false
+    },
+    {
+      "command": "Existing W5metadata adapter against exact original source/bridge",
+      "state": "PASS",
+      "metadata_bytes_identical": true,
+      "QB_identity_digest_identical": true,
+      "raw_target_outcomes_read": 0
+    }
+  ],
+  "preserved_attempts": "Three reviewer-wrapper N/A/empty-group attempts preserved before v4PASS; source nulls unchanged. One root ephemeral scan syntax typo corrected before successful scan; no source, model or scientific result affected.",
+  "units": "Verification checks/source rows/score views are not new NFLgames, testedweeks, forecasts or deployments.",
+  "new_fits": 0,
+  "new_scientific_scores": 0,
+  "new_current_issues": 0,
+  "new_defensive_experiments": 0,
+  "primary_website_changes": 0
+}

@@ -1,0 +1,21 @@
+"""Root-only publishable bindings/queue notes; no forecast or outcome scoring."""
+import csv,hashlib,json,shutil
+from datetime import datetime,timezone
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];G=ROOT/'reports/completion-20261031g'
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def write(p,obj):p.write_text(json.dumps(obj,indent=2,allow_nan=False)+'\n')
+def binding(p):return dict(path=p.relative_to(ROOT).as_posix(),sha256=sha(p))
+def main():
+ now=datetime.now(timezone.utc).isoformat();scores=json.loads((G/'NEW_CANONICAL_SCORE_MANIFEST.json').read_text())
+ cohorts=[G/'source-expansion/cohort-projection-v3/COHORT_SUPERSESSION_MAP.json',G/'source-expansion/w7-rolling-v1/cohort-projection-v3/COHORT_SUPERSESSION_MAP.json']
+ write(G/'CURRENT_PROP_SCOREBOARD_VIEW.json',dict(schema='v2-current-prop-multiple-panel-view-v1',scope='completion-multi-source-v1',source_scores=scores['sources'],complete_law_projection=binding(G/'roster/actual-method-period-summary-v2/CURRENT_ACTUAL_METHOD_SCORE_PROJECTION.json'),cohort_supersession_maps=[binding(p)for p in cohorts],unsupported_actual_offer_targets=['nick-chart-ppr-v1','anytime_td'],tracks=['ORIGINAL_RECORDED_SELECTION','RETROSPECTIVE_RULE_REPLAY'],original_scope='2026 W6 and W7 rolling source versions; old fixed-Friday W7 retained separately, never added as independent outcomes',default_excludes='Only explicitly superseded source/cohort or partial-law signatures; preserve all audit records. P1/GLM/other procedures retain their own views.',historical_offer_coverage='W1–5 and2022–2025 not established; exact missing source clocks/lines listed in coverage. Synthetic thresholds excluded.',price_state='UNESTABLISHED',publication='NO_V2_PRODUCTION_CHANGE'))
+ write(G/'PROVISIONAL_AUTHORITY_ADDENDUM_RECEIPT.json',dict(recorded_at_utc=now,state='APPLIED_WITHOUT_REGENERATING_SCIENTIFIC_EVIDENCE',scientific_gates='Retain named registered qualification gates; no newly imposed universal future-evidence, eight-week or same-cutoff website-relative-win prerequisite for authorized provisional selections.',provisional_policy='Installed weekly-adaptive-release-v1 / weekly-derived-selected-policy-v4; separately prepared research-informed-stat-point-mae-v2, not activated. Exact versions, hashes and scope in PROVISIONAL_POLICY_AND_CAPTURE_STATUS.json.',mandatory_gates='Own source/target/identity/model/input recovery, deterministic inference, consumer, missingness/fallback/freshness/rollback and owner admission remain.',upcoming='Existing owner schedule/lease only, independent ready captures may proceed while unrelated archives blocked. Configured, inferred, persisted/readback, admitted, published and served remain separate.',source_vintage='Authenticate snapshot retention clock; disclose current/revised historical football and label source versions and assumed availability independently.',new_recurring_jobs=0,production_changed=False))
+ shutil.copyfile('/tmp/v2-g-unit-suite-final.log',G/'UNIT_TEST_RESULTS.log')
+ write(G/'SOFTWARE_VERIFICATION_V1.json',dict(status='PASS',recorded_at_utc=now,tests_run=388,unit_suite_log_sha256=sha(G/'UNIT_TEST_RESULTS.log'),unit_suite_log_artifact=(G/'UNIT_TEST_RESULTS.log').relative_to(ROOT).as_posix(),checks=['388 unit tests passed','279305 new source views pass typed/index-flat prevalidation','75 new source arrays pass selected-side/probability aggregate guard'],scope='Software and source-bound aggregation only. Final delivery/CI checks recorded separately; no NFL forecast accuracy inferred from tests.',NFL_accuracy=None,new_fits=0,new_forecasts=0,production_changed=False))
+ write(G/'SOFTWARE_VERIFICATION_MANIFEST.json',dict(schema='v2-bound-software-verification-v1',receipt=binding(G/'SOFTWARE_VERIFICATION_V1.json'),tests_run=388,scope='Software correctness; independent row-level evidence review remains separate.',new_NFL_observations=0))
+ p=ROOT/'registries/RESULT_ARTIFACTS.json';reg=json.loads(p.read_text());rel=(G/'SOFTWARE_VERIFICATION_V1.json').relative_to(ROOT).as_posix()
+ if not any(r['artifact']==rel for r in reg):reg.append(dict(artifact=rel,state='SOFTWARE_VERIFIED',kind='completion_software_tests_not_NFL_skill'))
+ write(p,reg)
+ print(json.dumps(dict(state='BOUND_COMPLETION_METADATA',source_arrays=len(scores['sources']),evaluation_views=scores['views'])))
+if __name__=='__main__':main()

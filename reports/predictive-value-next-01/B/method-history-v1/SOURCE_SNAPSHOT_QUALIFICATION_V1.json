@@ -1,0 +1,17 @@
+{
+  "id": "B-METHOD-HISTORY-SOURCE-SNAPSHOT-QUALIFICATION-v1",
+  "UTC": "2026-11-16T23:21:33.253237+00:00",
+  "state": "PASS_CAPTURED_LEDGER_PREFIX_BINDING;BASE_INDEX_PREDATES_NEW_PILOT_SCORES",
+  "ledger": {
+    "path": "registries/EXECUTIONS.jsonl",
+    "captured_bytes": 404622,
+    "captured_sha256": "6fc9ae2430cf7ad5631c39f579e87bcc0190a63b2297d3e4ff70e0d424530246",
+    "captured_lines": 612,
+    "current_source_prefix_matches": true,
+    "current_file_may_have_later_append_only_events": false
+  },
+  "base_scientific_index": "620521-view index bound in COMPLETENESS_AND_SOURCE_SCOPE_V1.json; its CURRENT_RESULTS_INDEX pointer is a historical frozen view when root appends new pilot scores, not latest combined count. Exact base source manifest/shard hashes remain unchanged.",
+  "source_commit_scope": "base_commit identifies checked-out branch at build time; source_manifests retain exact observed bytes. Do not infer every mutable ledger body was identical to that Git commit.",
+  "new_pilot": "CURRENT_REGISTERED_PILOT_V1.json adds the actual runtime stage; root canonical grading/result artifacts and final receipt supersede pending grade status when available.",
+  "new_science": 0
+}

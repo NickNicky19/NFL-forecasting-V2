@@ -1,0 +1,30 @@
+{
+  "state": "FRESH_CONNECTED_ACCOUNT_READ_NO_MEANINGFUL_ACCOUNT_CHANGE_ESTABLISHED",
+  "read_at_utc": "2026-11-05T00:56:45.778413+00:00",
+  "supported_action": "google_drive_get_profile",
+  "same_connected_principal_as_retained_prior_read": true,
+  "profile_exposes_quota_or_capacity_fields": false,
+  "actual_uploading_principal": "Only prior upload receipts established uploader; connected profile is not substituted for upload account.",
+  "quota_status": "UNESTABLISHED_BY_SUPPORTED_INTERFACE;no free-capacity number inferred",
+  "new_private_account_metadata_bytes": 306,
+  "private_profile_readback_sha256": "41003e69e7d8910e427b5f2ccac118273d7b603edec23f0454554ccdb270c191",
+  "private_identifiers_or_locators_published": false,
+  "uploads_attempted": 0,
+  "deletions_sharing_destination_changes": 0,
+  "last_verified_missing_payload": {
+    "2022": {
+      "parts": 10,
+      "bytes": 209715200
+    },
+    "2023": {
+      "parts": 16,
+      "bytes": 335544320
+    },
+    "2024": {
+      "parts": 12,
+      "bytes": 251658240
+    }
+  },
+  "required_next_action": "Approved actual uploading owner/provider must demonstrate quota/capacity state change; then missing-only required parts and fresh complete restore/reassembly/hash checks. No repeated unchanged bulk retry or new blanket confirmation request.",
+  "bounded_saved_row_work_and_independent_owner_capture_continue": true
+}

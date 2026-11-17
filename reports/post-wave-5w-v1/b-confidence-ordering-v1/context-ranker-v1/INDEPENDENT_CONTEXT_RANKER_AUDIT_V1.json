@@ -1,0 +1,484 @@
+{
+  "state": "PASS_INDEPENDENT_GRADIENT_CHRONOLOGY_AND_FROZEN_SELECTIONS_WITH_SOURCE_SCOPE_LIMITS",
+  "at_utc": "2026-11-05T00:06:32.062860+00:00",
+  "verification_code_sha256": "399e53157bb3a9a4367ec9b7c27b846bb0b91551c7289d8a0141bb31c09e8121",
+  "protocol_sha256": "8db55285efd2532155abf0a2a875052d0269909c50980a6aec651879f269da79",
+  "scores_sha256": "702398b8cfb707754a3464c0fac65ac72c99cda858a90c688d82e24285eba21a",
+  "private_model_rows_sha256": "9daf56d8f5c7398f1590406ff76ef991659ceec82714fd35a8faa5f0bb4a090a",
+  "source_input_sha256": "b8b8c388766506e5aeb147b00adbebc62556a0ab8eff21b915944e5f073eae2b",
+  "fitted_objectives_checked": [
+    {
+      "target": "rec",
+      "training_rows": 93,
+      "training_games": 9,
+      "maximum_objective_gradient_abs": 1.7258022570049159e-07,
+      "minimum_objective_Hessian_eigenvalue": 1.3954344250018604,
+      "coefficient_verification": "Storedcoefficients satisfy independentlywritten convex gameweightedloglossplusL2 firstorderconditions; no reoptimizationorfit."
+    },
+    {
+      "target": "rec",
+      "training_rows": 112,
+      "training_games": 11,
+      "maximum_objective_gradient_abs": 2.4879232139729535e-08,
+      "minimum_objective_Hessian_eigenvalue": 1.5332628577388694,
+      "coefficient_verification": "Storedcoefficients satisfy independentlywritten convex gameweightedloglossplusL2 firstorderconditions; no reoptimizationorfit."
+    },
+    {
+      "target": "rec",
+      "training_rows": 141,
+      "training_games": 14,
+      "maximum_objective_gradient_abs": 2.000665710877314e-08,
+      "minimum_objective_Hessian_eigenvalue": 1.6857139298536223,
+      "coefficient_verification": "Storedcoefficients satisfy independentlywritten convex gameweightedloglossplusL2 firstorderconditions; no reoptimizationorfit."
+    },
+    {
+      "target": "rec",
+      "training_rows": 152,
+      "training_games": 15,
+      "maximum_objective_gradient_abs": 5.5047406660735376e-08,
+      "minimum_objective_Hessian_eigenvalue": 1.734250909000731,
+      "coefficient_verification": "Storedcoefficients satisfy independentlywritten convex gameweightedloglossplusL2 firstorderconditions; no reoptimizationorfit."
+    },
+    {
+      "target": "pass_td",
+      "training_rows": 27,
+      "training_games": 14,
+      "maximum_objective_gradient_abs": 8.774301496483616e-08,
+      "minimum_objective_Hessian_eigenvalue": 2.360982963032591,
+      "coefficient_verification": "Storedcoefficients satisfy independentlywritten convex gameweightedloglossplusL2 firstorderconditions; no reoptimizationorfit."
+    }
+  ],
+  "all_cached_model_states_checked": 7,
+  "earlier_label_prefix_mutations_checked": 7,
+  "target_outcome_feature_rank_invariance_checks": 390,
+  "stored_policy_rows_checked": 8580,
+  "side_views_checked": 804,
+  "side_triads_checked": 268,
+  "paired_common_selection_contrasts_checked": 44,
+  "own_pool_cluster_sensitivity_contrasts_checked": 44,
+  "thread_pool_receipt_bound_leq_two": true,
+  "coefficient_refits": 0,
+  "football_fits_or_inference": 0,
+  "new_NFL_observations": 0,
+  "fullsystem_evaluation_weeks": {
+    "rec": [
+      2,
+      3
+    ],
+    "pass_td": [
+      8
+    ]
+  },
+  "missing_base_probabilities": {
+    "rec": 22,
+    "pass_td": 2
+  },
+  "five_week_floor_met": false,
+  "zero_selection90weeks_contribute": 0,
+  "summary": [
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+      "policy": "FIXED_090",
+      "selected": 0,
+      "eligible": 362,
+      "wins": 0,
+      "losses": 0,
+      "decided": 0,
+      "unknown": 0
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0::MATCHED_ALWAYS_OVER",
+      "policy": "FIXED_090",
+      "selected": 0,
+      "eligible": 0,
+      "wins": 0,
+      "losses": 0,
+      "decided": 0,
+      "unknown": 0
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0::MATCHED_ALWAYS_UNDER",
+      "policy": "FIXED_090",
+      "selected": 0,
+      "eligible": 0,
+      "wins": 0,
+      "losses": 0,
+      "decided": 0,
+      "unknown": 0
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+      "policy": "FIXED_090",
+      "selected": 0,
+      "eligible": 362,
+      "wins": 0,
+      "losses": 0,
+      "decided": 0,
+      "unknown": 0
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1::MATCHED_ALWAYS_OVER",
+      "policy": "FIXED_090",
+      "selected": 0,
+      "eligible": 0,
+      "wins": 0,
+      "losses": 0,
+      "decided": 0,
+      "unknown": 0
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1::MATCHED_ALWAYS_UNDER",
+      "policy": "FIXED_090",
+      "selected": 0,
+      "eligible": 0,
+      "wins": 0,
+      "losses": 0,
+      "decided": 0,
+      "unknown": 0
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+      "policy": "MATCHED50",
+      "selected": 164,
+      "eligible": 362,
+      "wins": 86,
+      "losses": 77,
+      "decided": 163,
+      "unknown": 1
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0::MATCHED_ALWAYS_OVER",
+      "policy": "MATCHED50",
+      "selected": 164,
+      "eligible": 164,
+      "wins": 75,
+      "losses": 88,
+      "decided": 163,
+      "unknown": 1
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0::MATCHED_ALWAYS_UNDER",
+      "policy": "MATCHED50",
+      "selected": 164,
+      "eligible": 164,
+      "wins": 88,
+      "losses": 75,
+      "decided": 163,
+      "unknown": 1
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+      "policy": "MATCHED50",
+      "selected": 164,
+      "eligible": 362,
+      "wins": 85,
+      "losses": 78,
+      "decided": 163,
+      "unknown": 1
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1::MATCHED_ALWAYS_OVER",
+      "policy": "MATCHED50",
+      "selected": 164,
+      "eligible": 164,
+      "wins": 75,
+      "losses": 88,
+      "decided": 163,
+      "unknown": 1
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1::MATCHED_ALWAYS_UNDER",
+      "policy": "MATCHED50",
+      "selected": 164,
+      "eligible": 164,
+      "wins": 88,
+      "losses": 75,
+      "decided": 163,
+      "unknown": 1
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+      "policy": "ROLLING_K10_Combined",
+      "selected": 20,
+      "eligible": 362,
+      "wins": 11,
+      "losses": 8,
+      "decided": 19,
+      "unknown": 1
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0::MATCHED_ALWAYS_OVER",
+      "policy": "ROLLING_K10_Combined",
+      "selected": 20,
+      "eligible": 20,
+      "wins": 11,
+      "losses": 8,
+      "decided": 19,
+      "unknown": 1
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0::MATCHED_ALWAYS_UNDER",
+      "policy": "ROLLING_K10_Combined",
+      "selected": 20,
+      "eligible": 20,
+      "wins": 8,
+      "losses": 11,
+      "decided": 19,
+      "unknown": 1
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+      "policy": "ROLLING_K10_Combined",
+      "selected": 20,
+      "eligible": 362,
+      "wins": 11,
+      "losses": 8,
+      "decided": 19,
+      "unknown": 1
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1::MATCHED_ALWAYS_OVER",
+      "policy": "ROLLING_K10_Combined",
+      "selected": 20,
+      "eligible": 20,
+      "wins": 11,
+      "losses": 8,
+      "decided": 19,
+      "unknown": 1
+    },
+    {
+      "target": "rec",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1::MATCHED_ALWAYS_UNDER",
+      "policy": "ROLLING_K10_Combined",
+      "selected": 20,
+      "eligible": 20,
+      "wins": 8,
+      "losses": 11,
+      "decided": 19,
+      "unknown": 1
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0",
+      "policy": "FIXED_090",
+      "selected": 0,
+      "eligible": 28,
+      "wins": 0,
+      "losses": 0,
+      "decided": 0,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0::MATCHED_ALWAYS_OVER",
+      "policy": "FIXED_090",
+      "selected": 0,
+      "eligible": 0,
+      "wins": 0,
+      "losses": 0,
+      "decided": 0,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0::MATCHED_ALWAYS_UNDER",
+      "policy": "FIXED_090",
+      "selected": 0,
+      "eligible": 0,
+      "wins": 0,
+      "losses": 0,
+      "decided": 0,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1",
+      "policy": "FIXED_090",
+      "selected": 0,
+      "eligible": 28,
+      "wins": 0,
+      "losses": 0,
+      "decided": 0,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1::MATCHED_ALWAYS_OVER",
+      "policy": "FIXED_090",
+      "selected": 0,
+      "eligible": 0,
+      "wins": 0,
+      "losses": 0,
+      "decided": 0,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1::MATCHED_ALWAYS_UNDER",
+      "policy": "FIXED_090",
+      "selected": 0,
+      "eligible": 0,
+      "wins": 0,
+      "losses": 0,
+      "decided": 0,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0",
+      "policy": "MATCHED50",
+      "selected": 13,
+      "eligible": 28,
+      "wins": 5,
+      "losses": 8,
+      "decided": 13,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0::MATCHED_ALWAYS_OVER",
+      "policy": "MATCHED50",
+      "selected": 13,
+      "eligible": 13,
+      "wins": 7,
+      "losses": 6,
+      "decided": 13,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0::MATCHED_ALWAYS_UNDER",
+      "policy": "MATCHED50",
+      "selected": 13,
+      "eligible": 13,
+      "wins": 6,
+      "losses": 7,
+      "decided": 13,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1",
+      "policy": "MATCHED50",
+      "selected": 13,
+      "eligible": 28,
+      "wins": 5,
+      "losses": 8,
+      "decided": 13,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1::MATCHED_ALWAYS_OVER",
+      "policy": "MATCHED50",
+      "selected": 13,
+      "eligible": 13,
+      "wins": 7,
+      "losses": 6,
+      "decided": 13,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1::MATCHED_ALWAYS_UNDER",
+      "policy": "MATCHED50",
+      "selected": 13,
+      "eligible": 13,
+      "wins": 6,
+      "losses": 7,
+      "decided": 13,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0",
+      "policy": "ROLLING_K10_Combined",
+      "selected": 10,
+      "eligible": 28,
+      "wins": 4,
+      "losses": 6,
+      "decided": 10,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0::MATCHED_ALWAYS_OVER",
+      "policy": "ROLLING_K10_Combined",
+      "selected": 10,
+      "eligible": 10,
+      "wins": 6,
+      "losses": 4,
+      "decided": 10,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0::MATCHED_ALWAYS_UNDER",
+      "policy": "ROLLING_K10_Combined",
+      "selected": 10,
+      "eligible": 10,
+      "wins": 4,
+      "losses": 6,
+      "decided": 10,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1",
+      "policy": "ROLLING_K10_Combined",
+      "selected": 10,
+      "eligible": 28,
+      "wins": 3,
+      "losses": 7,
+      "decided": 10,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1::MATCHED_ALWAYS_OVER",
+      "policy": "ROLLING_K10_Combined",
+      "selected": 10,
+      "eligible": 10,
+      "wins": 6,
+      "losses": 4,
+      "decided": 10,
+      "unknown": 0
+    },
+    {
+      "target": "pass_td",
+      "procedure": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1::MATCHED_ALWAYS_UNDER",
+      "policy": "ROLLING_K10_Combined",
+      "selected": 10,
+      "eligible": 10,
+      "wins": 4,
+      "losses": 6,
+      "decided": 10,
+      "unknown": 0
+    }
+  ],
+  "limits": [
+    "Source panels remain already exposed; chronological heldout baseline predictions and earlier-label membership do not create fresh prospective validation or authenticate original football publication clocks.",
+    "G1 rank is probability of the unchanged baseline side being correct, not a repaired Over/Under law or EV. All base probabilities and sides stay unchanged.",
+    "G0 andG1 own selected pools can differ despite equal batchcounts; common-row paired views and own-pool effects are separate.",
+    "Rec22 unavailable base rows retain fallback=None; raw fallback_status_unknown=0 does not establish known nonfallback on these unissued queries. Technical-unavailable and learned/identity partitions remain correct; source-bound qualification must expose this scope. PT2 missing rows retainNOT_RETAINED.",
+    "Actual consumed base-feature ages are unretained. Retained role/line/probabilities are used; no new NGS study, football fit, current-source capture or production deployment.",
+    "Exact policy is tested on only2rec/1PTweeks; zero-selection90%weeks contribute0; five-week floor and source/operational/admission requirements remain unmet. No promotion is supported."
+  ]
+}

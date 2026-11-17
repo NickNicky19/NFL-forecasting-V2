@@ -1,0 +1,52 @@
+{
+  "state": "ACTUAL_PUBLISHED_PACKET_READBACK_HASH_EQUAL",
+  "production_ref": "43b04d2ed957e24ffdecadd1f545a55ace9a6956",
+  "public_path": "output/data/weekly-selected-rankings/f2540ee184fe24144c4aff0781d8d259d527948057af25d62a8792f22b300780.json",
+  "sha256": "f2540ee184fe24144c4aff0781d8d259d527948057af25d62a8792f22b300780",
+  "bytes": 11863,
+  "pointer_published_at": "2026-11-03T20:29:25.618944+00:00",
+  "scope": "Actual existing owner Week9 12Over+12Under=24selection packet readback. Not a newBcapture, not 12combined, not proof3-5methods/category.",
+  "run_id": 41712800413,
+  "steps_observed": "Existing scheduled parent/update/capture/commit/deploy all success; no dispatch byB.",
+  "release_policy": {
+    "path": "config/weekly-derived-selected-policy-v6.json",
+    "schema": "weekly-derived-selected-policy-v4",
+    "registration": "weekly-adaptive-release-v1",
+    "state": "ROOT_REGISTERED",
+    "mode": "phase1",
+    "current_execution_model": "sleeper-matchup-classic-fg-identity-v1"
+  },
+  "B_C02_championship_admission": "NOT_VERIFIED",
+  "new_V2_production_writes": 0,
+  "readback_at_utc": "2026-11-03T23:57:12.151582+00:00",
+  "week": 9,
+  "season": 2026,
+  "producer_reported_prepared_at": "2026-11-03T20:29:25.604252+00:00",
+  "publication_git_committer_utc": "2026-11-03T20:29:27Z",
+  "selected_count": 24,
+  "over_selected": 12,
+  "under_selected": 12,
+  "first_included_kickoff_utc": "2026-11-06T01:15Z",
+  "all_selected_games_future_at_readback": true,
+  "unique_games": 6,
+  "unique_contracts": 24,
+  "category_counts": {
+    "pass_yd": 3,
+    "rec_yd": 7,
+    "rush_yd": 7,
+    "pass_att": 3,
+    "rec": 2,
+    "pass_td": 1,
+    "rush_att": 1
+  },
+  "selection_policy": "selected-projection-gap-classic-v1",
+  "producer_clock_authentication": "Producerprepared/inferenceclock reported, not independentlyauthenticated; GitHubcommit+actualreadback establish prior-to-deadline retention.",
+  "future_confirmation": "W9outcomesunread/no regrading or retuning",
+  "served_readback": {
+    "state": "EXACT_PACKET_SHA_EQUAL_GITHUB_AND_WEBSITE",
+    "sha256": "f2540ee184fe24144c4aff0781d8d259d527948057af25d62a8792f22b300780",
+    "bytes": 11863,
+    "observed_at_utc": "2026-11-03T23:58:20.633678+00:00",
+    "url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/weekly-selected-rankings.json"
+  }
+}

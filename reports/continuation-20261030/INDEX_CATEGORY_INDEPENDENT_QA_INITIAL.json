@@ -1,0 +1,54 @@
+{
+  "status": "PASS_SNAPSHOT_EXCEPT_PENDING_REGISTRY_REBUILD",
+  "completed_at_utc": "2026-10-30T01:26:34.739203+00:00",
+  "category_source_candidates": 344,
+  "family_representatives_checked": 114,
+  "category_count": 12,
+  "families": 4,
+  "primary_supported_counts": {
+    "pass_yd": 242,
+    "pass_td": 242,
+    "pass_cmp": 242,
+    "pass_att": 242,
+    "pass_int": 242,
+    "rush_yd": 844,
+    "rush_att": 844,
+    "rec": 2118,
+    "rec_yd": 2118,
+    "rush_rec_yd": 2118,
+    "anytime_td": 2118,
+    "nick-chart-ppr-v1": 2359
+  },
+  "markdown_numeric_and_skill_rows_checked": 12,
+  "INT_tie_preserved": true,
+  "GLM_and_other_losing_representatives_retained": true,
+  "category_scientific_scope": "exposedbestobservedfamilyminima;uptofourfamilies/chartthree;noindependentfivemethodclaim;MAE/MSE/CRPSseparate",
+  "index_manifest_sha256": "b87be03b911704fee1206f965ce69a8a4e5d1b16b0b740d5d5824fd143e67801",
+  "indexed_records": 42682,
+  "shards_checked": 23,
+  "source_hashes_checked": 22,
+  "old_record_ID_and_semantic_digest_checks": 16060,
+  "new_original_aggregate_views_checked": 27552,
+  "infinite_metric_status_checks": 613,
+  "source_bound_date_projection_checks": 3160,
+  "coverage_exit_code": 1,
+  "coverage_stdout": "",
+  "coverage_stderr": "Unindexed scored result: reports/continuation-20261030/chart-wave-v1/SCORES.json",
+  "focused_index_fixture_tests": "4PASS;noNFLdata/fits",
+  "findings": [
+    {
+      "severity": "WORDING",
+      "finding": "The table column says 'Old empirical' although chartreference is newlyqualified arithmeticcontrol; drop'Old' forprecision."
+    }
+  ],
+  "bounds": "This checks publicscore/index/categoryprojections. Rawpredictionidentity/label/math authenticity is covered byseparateretainedrowverifiers,notnewlyauthenticatedhere.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "actual_Week8_labels_read": 0,
+  "reviewed_sha256": {
+    "tools/build_checkpoint_category_summary.py": "06ccc78948345d1f3cb9811aa0e13f5505ef7460d0932fa9dd4957524fd14ea3",
+    "tools/build_test_index_v2.py": "d726f9d18a50e7d517adfa88b6ab703b3ce40bf94719758477105ab643ac3ca3",
+    "nfl_v2/result_index.py": "a5cf77af8e2a51c74a73c0714a27a3ab0b67d790b0c5b38f830918e1d2b6067d",
+    "tests/test_index_v2.py": "07263a5786f23cf9bb88e7d37e0d39e62d92f96e2153a2c41b118af81b9db4c0"
+  }
+}

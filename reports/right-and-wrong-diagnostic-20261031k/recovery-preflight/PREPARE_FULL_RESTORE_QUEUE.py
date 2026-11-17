@@ -1,0 +1,85 @@
+"""Prepare a PRIVATE64-part fetch queue; never uploads or downloads anything."""
+from __future__ import annotations
+import argparse,hashlib,json,sys
+from datetime import datetime,timezone
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[3]
+sys.path.insert(0,str(ROOT))
+from nfl_v2 import expanded_retention_gate as gate
+
+def sha(path):
+ h=hashlib.sha256()
+ with Path(path).open('rb')as f:
+  for chunk in iter(lambda:f.read(1048576),b''):h.update(chunk)
+ return h.hexdigest()
+def read(path):return json.loads(Path(path).read_text())
+
+
+def prepare(*,companion_root,recovery_root,upload_receipts,first_proof_root,output):
+ output=Path(output)
+ if output.exists()or output.resolve().is_relative_to(ROOT):raise ValueError('fresh private queue outside Git required')
+ plan_path=ROOT/'reports/continuation-20261030d/ARTIFACT_RECOVERY_STATUS.json'
+ if sha(plan_path)!=gate.EXPECTED_PLAN_SHA256:raise ValueError('exact frozen plan required')
+ plan=read(plan_path);pending={x['artifact_id']:x for x in plan['archives']if x.get('missing_parts',0)}
+ cap=read(ROOT/'reports/continuation-20261030d/ARCHIVE_CAPACITY_INDEPENDENT_REVIEW.json')
+ paths=[Path(companion_root)/(n+'_ARCHIVE_METADATA.json')for n in('SEASON_2022_V2','SEASON_2023_COMPLETE','SEASON_2024_V2')]+[Path(recovery_root)/'DELTA_ARCHIVE_METADATA.json']
+ metas={};meta_refs={}
+ for path in paths:
+  meta=read(path);aid=meta['artifact_id'];expected=pending[aid]
+  assert(meta['archive_sha256'],meta['archive_bytes'])==(expected['archive_sha256'],expected['archive_bytes'])
+  if aid!='V2-PRIVATE-RECOVERY-DELTA-20261030D-0001':assert sha(path)==cap['source_metadata_sha256_by_artifact'][aid]
+  else:assert sha(path)==read(ROOT/'reports/continuation-20261030d/RECOVERY_MAP_ENCODING_INDEPENDENT_READBACK.json')['original_delta_metadata_sha256']
+  metas[aid]=meta;meta_refs[aid]=dict(metadata_local_path=str(path),metadata_sha256=sha(path))
+ assert set(metas)==gate.EXPECTED_PENDING_IDS
+ references={}
+ prior=Path(companion_root)/'SEASON_2024_V2_PRIVATE_UPLOADS.json'
+ for row in read(prior):
+  if row['status']=='UPLOADED'and row['response'].get('success')is True:
+   references['V2-PRIVATE-SEASON-2024-V2',int(row['index'])]=dict(provider_object_id=row['response']['id'],
+    remote_file_name=row['response']['file_name'],upload_receipt_local_path=str(prior),upload_receipt_sha256=sha(prior),
+    source='EXISTING_POSITIVE_2024_UPLOAD_REQUIRES_NEW_FRESH_DOWNLOAD')
+ for path in sorted(Path(upload_receipts).rglob('*.json')):
+  try:row=read(path)
+  except json.JSONDecodeError:continue # active writer; not a positive receipt yet
+  result=row.get('provider_result',{})
+  if row.get('isError')is False and result.get('success')is True and 'part'in row:
+   part=row['part'];key=part['artifact_id'],int(part['index'])
+   if key in references:
+    if references[key]['provider_object_id']==result['id']:continue
+    raise ValueError('duplicate positive upload object; root must resolve explicitly')
+   references[key]=dict(provider_object_id=result['id'],remote_file_name=result['file_name'],
+    upload_receipt_local_path=str(path),upload_receipt_sha256=sha(path),source='NEW_POSITIVE_UPLOAD_REQUIRES_FRESH_DOWNLOAD')
+ first=Path(first_proof_root)/'FIRST_OLD_PART_UPLOAD_RECEIPT.json';f=read(first)
+ if f.get('success')is not True:raise ValueError('first upload not positive')
+ references['V2-PRIVATE-RECOVERY-DELTA-20261030D-0001',12]=dict(provider_object_id=f['id'],
+  remote_file_name=f['file_name'],upload_receipt_local_path=str(first),upload_receipt_sha256=sha(first),source='FIRST_REQUIRED_PART_POSITIVE_UPLOAD')
+ proof_path=Path(first_proof_root)/'FIRST_OLD_PART_HASH_VERIFICATION.json';proof=read(proof_path)
+ if proof.get('state')!='FIRST_REQUIRED_OLD_PART_UPLOADED_AND_FRESH_DOWNLOAD_HASH_VERIFIED':raise ValueError('first fresh-cache proof required')
+ rows=[]
+ for aid,meta in metas.items():
+  for index,part in enumerate(meta['parts']):
+   reference=references.get((aid,index));expected_remote=f'{aid}-{index:03}.bin'
+   if reference and reference['remote_file_name']!=expected_remote:raise ValueError('exact remote filename mismatch')
+   row=dict(artifact_id=aid,index=index,expected_local_part_name=part['name'],expected_remote_file_name=expected_remote,
+    bytes=part['bytes'],sha256=part['sha256'],archive_sha256=meta['archive_sha256'],
+    reference_status='POSITIVE_UPLOAD_REFERENCE'if reference else'UPLOAD_PENDING_ROOT_CELL',
+    provider_reference=reference,download_status='NEEDS_FRESH_COMPLETE_WAVE_DOWNLOAD')
+   if(aid,index)==('V2-PRIVATE-RECOVERY-DELTA-20261030D-0001',12):
+    cache=Path(proof['fresh_local_path'])
+    assert cache.stat().st_size==part['bytes']and sha(cache)==part['sha256']==proof['part_sha256']
+    row.update(download_status='QUALIFIED_FRESH_FIRST_PART_CACHE',fresh_cache_local_path=str(cache),fresh_cache_receipt_sha256=sha(proof_path))
+   rows.append(row)
+ assert len(rows)==64 and sum(x['bytes']for x in rows)==1306435930
+ result=dict(schema='PRIVATE_EXACT64_COMPLETE_PART_FETCH_QUEUE_V1',recorded_at_utc=datetime.now(timezone.utc).isoformat(),
+  accepted_plan_sha256=gate.EXPECTED_PLAN_SHA256,metadata=meta_refs,parts=rows,
+  note='All64freshcompleteparts needed. Eleven old2024upload references require NEW downloads; onlynewfirstdelta012 cachemaybereused. No original localpart countsasfreshdownload.')
+ output.parent.mkdir(parents=True,exist_ok=True)
+ with output.open('x')as f:json.dump(result,f,indent=2);f.write('\n')
+ return dict(state='PRIVATE_FETCH_QUEUE_PREPARED_NO_TRANSFERS',parts=64,complete_download_bytes=sum(x['bytes']for x in rows),
+  positive_upload_references=sum(x['provider_reference']is not None for x in rows),qualified_fresh_cached_parts=1,
+  queue_sha256=sha(output),new_uploads=0,new_downloads=0,new_restorations=0)
+
+if __name__=='__main__':
+ p=argparse.ArgumentParser(description=__doc__)
+ for name in('companion-root','recovery-root','upload-receipts','first-proof-root','output'):p.add_argument('--'+name,type=Path,required=True)
+ print(json.dumps(prepare(**vars(p.parse_args()))))

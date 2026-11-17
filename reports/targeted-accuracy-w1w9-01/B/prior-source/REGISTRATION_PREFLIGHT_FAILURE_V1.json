@@ -1,0 +1,19 @@
+{
+  "id": "B_M2_REGISTRATION_PREFLIGHT_REPORT_RACE_v1",
+  "captured_UTC": "2026-11-15T05:27:53.161325+00:00",
+  "state": "FAILED_BEFORE_FIRST_CANONICAL_MUTATION;ROOT_REPORT_CREATED_THEN_SINGLE_RERUN",
+  "failed_command": "python tools/register_targeted_m2.py --execute --verification independent/NATIVE_GRADING_AND_SELECTION_VERIFICATION_V1.json --verification independent/FITTED_STATE_VERIFICATION_V1.json",
+  "failure": "AssertionError at report existence guard: final reports/targeted-accuracy-w1w9-01/B/README.md was not yet present. Both independent receipts were PASS_WITH_STATED_SCOPE and score/pair schemas validated.",
+  "code_path": "tools/register_targeted_m2.py",
+  "code_sha256": "44524be3599d222ec010068bd39afa7ca537c2ba609d75a86cb06d69c2e8dfda",
+  "root_coordination": "Root was concurrently creating final report and confirmed creation; guarded rerun started after file appeared. No guard changed or bypassed.",
+  "first_attempt_effects": {
+    "registry_writes": 0,
+    "index_writes": 0,
+    "export_writes": 0,
+    "fits": 0,
+    "scores": 0,
+    "HTTP": 0
+  },
+  "scientific_effect": "None; source/model/forecast/grade values unchanged. Original tool failure remains retained."
+}

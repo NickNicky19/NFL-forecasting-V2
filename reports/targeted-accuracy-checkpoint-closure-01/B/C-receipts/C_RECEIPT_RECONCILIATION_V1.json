@@ -1,0 +1,366 @@
+{
+  "id": "B-C-TARGETED-CHECKPOINT-RECEIPT-v1",
+  "recorded_UTC": "2026-11-15T12:07:54+00:00",
+  "owner": "Session B; read-only peer discovery and public aggregate arithmetic",
+  "assignment": "NFL-TARGETED-ACCURACY-W1W9-01 / CHECKPOINT-CLOSURE-01",
+  "C_actual_main": {
+    "commit": "d662c16a3d2a5ae13640860e38d4d1e044234c5e",
+    "merged_PR": 55,
+    "merged_UTC": "2026-11-15T06:14:42Z",
+    "supersession": "No newer main was observed in the single branch read; no claim about every research branch."
+  },
+  "observation_clocks": {
+    "first_source_read_window_start_UTC": "2026-11-15T12:02:18Z",
+    "last_three_read_window_start_UTC": "2026-11-15T12:05:14Z",
+    "accounting_completed_UTC": "2026-11-15T12:07:54Z",
+    "per_response_observation_UTC": "Not individually persisted; do not invent per-file microsecond clocks. Immutable commit and source-reported clocks are separate."
+  },
+  "canonical_protocol": {
+    "id": "ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1",
+    "scorer": "src/abc_championship_v2.py",
+    "scorer_source_declared_SHA256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce",
+    "scorer_reexecuted": false,
+    "M3_stage": "EXECUTED_SAME_INPUT_AND_MATCHED_CONTEXT_M3;ACTUAL_LINES_PARTIAL_W2_W3;NO_PRIMARY_PROMOTION"
+  },
+  "B_current_intake_correction": {
+    "actual_C_receipt": "https://github.com/NickNicky19/NFL-forecasting-NGS-C/blob/d662c16a3d2a5ae13640860e38d4d1e044234c5e/reports/targeted-accuracy-w1w9-01/intake/B_CURRENT_RECEIPT.json",
+    "C_observed_UTC": "2026-11-15T05:03:52.522778+00:00",
+    "C_inspected_B_head": "0d850c79d08f34158a5ac1fbd8237e52e443f1c1",
+    "linked_targeted_artifacts": [],
+    "then_state": "NO_INDEX_LINKED_TARGETED_M2_OR_M4_RECEIPT_OBTAINED",
+    "newer_B_publication": "11db6280; superseded B execution/metadata at b4da8524a6163e8826d7ad1c70692efa6c211a52",
+    "local_correction": "C publication-unknown observation predates current B M2 publication; it must not be presented as proof of no M2 execution. Current publication exists; actual post-publication C retrieval/admission is not established by this B receipt.",
+    "required_owner_action": "C coordinator retrieve the exact indexed B M2 receipt/handoff once and append scoped admission; no duplicate fit, join or peer acknowledgment inferred."
+  },
+  "M3_actual_line_coverage": {
+    "season": 2026,
+    "weeks": [
+      2,
+      3
+    ],
+    "rec": {
+      "eligible": 295,
+      "selected": 295,
+      "decided": 268,
+      "unknown": 27,
+      "forecast_unavailable": 0,
+      "weekly_eligible": {
+        "2": 147,
+        "3": 148
+      }
+    },
+    "rec_yd": {
+      "eligible": 291,
+      "selected": 291,
+      "decided": 264,
+      "unknown": 27,
+      "forecast_unavailable": 0,
+      "weekly_eligible": {
+        "2": 142,
+        "3": 149
+      }
+    },
+    "missing_actual_line_weeks": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "numerical_queries_per_target": 1975,
+    "numerical_origins": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "new_model_rows_have_no_extra_decided_wins": true,
+    "retained_P1_P3_coverage": "23 technical unavailabilities/target and four selected unknowns; new models forecast those23 but all23 outcomes remain unknown. Same268/264 decided cases. Missingness is not abstention.",
+    "evidence_tier": "Exposed, current-vintage seven-day reconstructed retained-real-line diagnostic; quote clocks and main/alternate classification unverified. Not original pregame issuance or full ordinary-main-line board.",
+    "five_week_primary_status": "NOT_MET_FOR_NEW_ACTUAL_LINE_PRODUCT; 2 actual-line weeks, 9 numerical origins do not supply missing offers"
+  },
+  "M3_outcome_summary": {
+    "rec": {
+      "M3_0_LAW": {
+        "over": [
+          42,
+          29
+        ],
+        "under": [
+          110,
+          87
+        ],
+        "combined": [
+          152,
+          116
+        ]
+      },
+      "M3_1_LAW": {
+        "over": [
+          35,
+          24
+        ],
+        "under": [
+          115,
+          94
+        ],
+        "combined": [
+          150,
+          118
+        ]
+      },
+      "M3_2_LAW": {
+        "over": [
+          37,
+          23
+        ],
+        "under": [
+          116,
+          92
+        ],
+        "combined": [
+          153,
+          115
+        ]
+      },
+      "CONTROL_P3_DIRECT_LAW": {
+        "over": [
+          38,
+          22
+        ],
+        "under": [
+          117,
+          91
+        ],
+        "combined": [
+          155,
+          113
+        ]
+      },
+      "mean_direction_separate": "M3-1 149–119 versus Leaf144–124; M3-2 147–121; not law-product wins.",
+      "paired_wins": "M3-1 minus Leaf -2 with18 disagreements; M3-2 minus M3-1 +3 with3 disagreements; M3-2 minus retained direct -2 with20 disagreements. Only2week clusters; not stable superiority.",
+      "probability_numerical": {
+        "M3_0": {
+          "Brier": 0.269388,
+          "log_loss": 0.745746,
+          "offered_MAE": 1.383516,
+          "broad_MAE": 1.74824
+        },
+        "M3_1": {
+          "Brier": 0.26342,
+          "log_loss": 0.728935,
+          "offered_MAE": 1.372818,
+          "broad_MAE": 1.73847
+        },
+        "M3_2": {
+          "Brier": 0.263395,
+          "log_loss": 0.728736,
+          "offered_MAE": 1.373271,
+          "broad_MAE": 1.738454
+        }
+      },
+      "decision": "SHADOW_CANDIDATE probability/numerical; replacement INCONCLUSIVE"
+    },
+    "rec_yd": {
+      "M3_0_LAW": {
+        "over": [
+          41,
+          37
+        ],
+        "under": [
+          95,
+          91
+        ],
+        "combined": [
+          136,
+          128
+        ]
+      },
+      "M3_1_and_M3_2_LAW": {
+        "over": [
+          44,
+          44
+        ],
+        "under": [
+          88,
+          88
+        ],
+        "combined": [
+          132,
+          132
+        ]
+      },
+      "M3_0_BLOCK_LAW": {
+        "over": [
+          43,
+          38
+        ],
+        "under": [
+          94,
+          89
+        ],
+        "combined": [
+          137,
+          127
+        ]
+      },
+      "probability_numerical": {
+        "M3_0": {
+          "Brier": 0.275089,
+          "log_loss": 0.750974,
+          "offered_MAE": 20.075923,
+          "broad_MAE": 24.289977
+        },
+        "M3_1": {
+          "Brier": 0.299644,
+          "log_loss": 0.819799,
+          "offered_MAE": 24.506105,
+          "broad_MAE": 26.837785
+        }
+      },
+      "decision": "CLOSE_RECIPE_NO_GAIN exact frozen32-round continuous-NLL Student-t; Leaf+block one-win difference INCONCLUSIVE; no general family disproof"
+    },
+    "support_only_or_defense_only_arm": "NOT_EXECUTED;17-field new-law combination does not isolate substantive defense from support indicators or one field.",
+    "high_accuracy": "75/80/90 broad and supported selective TARGET_NOT_ESTABLISHED. RawP90 one/two-win tiny samples do not establish useful volume. Calibrated thresholds SOURCE_BLOCKED without earlier qualified offer calibration panel."
+  },
+  "historical_typed_handoff": {
+    "URL": "https://github.com/NickNicky19/NFL-forecasting-NGS-C/blob/d662c16a3d2a5ae13640860e38d4d1e044234c5e/reports/targeted-accuracy-w1w9-01/M3/HISTORICAL_TYPED_HANDOFF.json",
+    "id": "C-M3-HISTORICAL-HANDOFF-v1.1",
+    "generated_UTC": "2026-11-15T05:29:27.004596+00:00",
+    "packaging_refreshed_UTC": "2026-11-15T05:54:19.115292+00:00",
+    "status": "READABLE_IMMUTABLE_HISTORICAL_BINDINGS; not current feed/production admission",
+    "parameters": {
+      "path": "reports/targeted-accuracy-w1w9-01/M3/HISTORICAL_TYPED_PARAMETERS.json.gz",
+      "bytes": 423918,
+      "SHA256": "11a12036c1bb66386e1a39a3111e6bf17e252f768f49d2f8d1bcf7432a6a3b12",
+      "fetched_by_this_receipt": false
+    },
+    "safe_adapter": {
+      "path": "src/targeted_inference_m3.py",
+      "bytes": 6702,
+      "SHA256": "7a080b761d1fa212ed5d869e4c4469c1c53019ee73d9d6415b4cc31c4438ac3c",
+      "executed_by_B": false
+    },
+    "native_parity": "C source reports all7900 rows/36models match; B did not reproduce fit/inference.",
+    "law_direction": "Over iff pOver > pUnder +1e-12; reverseUnder; tiesABSTAIN. Mean/median strict-crossing products separate. Do not silently substitute B strict argmax.",
+    "role_validation": "Mandatory qualified canonical event/player and WR/TErole list for admitted outputs. roles=None is unqualified NOT_CHECKED mathematical inference.",
+    "unsupported_fallback": "UNAVAILABLE for unsupportedrole/source; no forced pick or incumbent fallback silently inserted.",
+    "A_owner_local_action": "Join exact unchanged newM3 and unchanged-control saved outputs against compatible permitted W1/W4–9 real offers. Older C03/C04 and B84 joins do not grade these M3 products.",
+    "actual_current_query": "NO_CURRENT_PACKET_ISSUED; event-effective WR/TEsource/roster admission and proper current-origin model required via existingC06route."
+  },
+  "clock_limits": {
+    "source_available": "Retained kickoff+7day reconstruction comparator, strictlyearlierthanorigin; source original publication/vintage clocks unavailable.",
+    "model_origin": "Historical eligible training-label cutoff, not original issue or actual fit-start clock.",
+    "per_model_fit_start": "Not persisted; not invented.",
+    "current_defensive_workbook": "Not qualified or backfilled; no claim of workbook inspection."
+  },
+  "scope": {
+    "fits": 0,
+    "inference": 0,
+    "grader_runs": 0,
+    "new_offer_weeks": 0,
+    "peer_writes": 0,
+    "messages_to_external_services": 0,
+    "protected_rows_obtained": 0,
+    "public_aggregate_math_rows_checked": 40,
+    "public_aggregate_math_all_passed": true,
+    "not_verified": [
+      "private row/source presence",
+      "historical source clocks",
+      "model fitting/parity",
+      "complete selected membership",
+      "producer/current-query execution",
+      "actual website consumption",
+      "C post-publication admission of B currentM2"
+    ]
+  },
+  "source_accounting": {
+    "attempts": 8,
+    "max_attempts": 9,
+    "max_bytes": 8388608,
+    "records": [
+      {
+        "path": "branch",
+        "received_content_UTF8_bytes": 5457,
+        "serialized_tool_response_UTF8_bytes": 12053,
+        "HTTP_wire_bytes": "NOT_EXPOSED_BY_CONNECTOR",
+        "received_body_ends_newline": false,
+        "received_content_SHA256": "bf50e75d6dcd505f66ec55d163ec1ce17b72c1eb51ce23833bc78c2523449960",
+        "URL": "https://api.github.com/repos/NickNicky19/NFL-forecasting-NGS-C/branches/main"
+      },
+      {
+        "path": "reports/abc-championship/CURRENT_PROTOCOL.json",
+        "received_content_UTF8_bytes": 104383,
+        "serialized_tool_response_UTF8_bytes": 224323,
+        "HTTP_wire_bytes": "NOT_EXPOSED_BY_CONNECTOR",
+        "received_body_ends_newline": true,
+        "received_content_SHA256": "d0f550e5428a344b3ad59bc1c4dc2a77bc77fc79e90cef79a9c55f4efeff50df",
+        "URL": "https://github.com/NickNicky19/NFL-forecasting-NGS-C/blob/d662c16a3d2a5ae13640860e38d4d1e044234c5e/reports/abc-championship/CURRENT_PROTOCOL.json"
+      },
+      {
+        "path": "reports/abc-championship/EXPORT_INDEX.json",
+        "received_content_UTF8_bytes": 93704,
+        "serialized_tool_response_UTF8_bytes": 201405,
+        "HTTP_wire_bytes": "NOT_EXPOSED_BY_CONNECTOR",
+        "received_body_ends_newline": true,
+        "received_content_SHA256": "1f07390fa3f81af35d453650ad8df4eec21926e6630d3f271f5694e23fcd2340",
+        "URL": "https://github.com/NickNicky19/NFL-forecasting-NGS-C/blob/d662c16a3d2a5ae13640860e38d4d1e044234c5e/reports/abc-championship/EXPORT_INDEX.json"
+      },
+      {
+        "path": "reports/targeted-accuracy-w1w9-01/README.md",
+        "received_content_UTF8_bytes": 24794,
+        "serialized_tool_response_UTF8_bytes": 50682,
+        "HTTP_wire_bytes": "NOT_EXPOSED_BY_CONNECTOR",
+        "received_body_ends_newline": true,
+        "received_content_SHA256": "d4cf0362e5281c6ccc131d338a19b5e722ba12f50c2b4d0224dc67907a2762b5",
+        "URL": "https://github.com/NickNicky19/NFL-forecasting-NGS-C/blob/d662c16a3d2a5ae13640860e38d4d1e044234c5e/reports/targeted-accuracy-w1w9-01/README.md"
+      },
+      {
+        "path": "reports/targeted-accuracy-w1w9-01/M3/HISTORICAL_TYPED_HANDOFF.json",
+        "received_content_UTF8_bytes": 3812,
+        "serialized_tool_response_UTF8_bytes": 8997,
+        "HTTP_wire_bytes": "NOT_EXPOSED_BY_CONNECTOR",
+        "received_body_ends_newline": true,
+        "received_content_SHA256": "e3c3f55d4dc29de8d1ed5a133437d691992df8edd97b4dd928f25e13a62e6e7c",
+        "URL": "https://github.com/NickNicky19/NFL-forecasting-NGS-C/blob/d662c16a3d2a5ae13640860e38d4d1e044234c5e/reports/targeted-accuracy-w1w9-01/M3/HISTORICAL_TYPED_HANDOFF.json"
+      },
+      {
+        "path": "reports/targeted-accuracy-w1w9-01/intake/B_CURRENT_RECEIPT.json",
+        "received_content_UTF8_bytes": 3362,
+        "serialized_tool_response_UTF8_bytes": 7993,
+        "HTTP_wire_bytes": "NOT_EXPOSED_BY_CONNECTOR",
+        "received_body_ends_newline": true,
+        "received_content_SHA256": "178bfd13891f7f6b2772fef1bfc27f12954fb36d2e42d8f50b88018628050622",
+        "URL": "https://github.com/NickNicky19/NFL-forecasting-NGS-C/blob/d662c16a3d2a5ae13640860e38d4d1e044234c5e/reports/targeted-accuracy-w1w9-01/intake/B_CURRENT_RECEIPT.json"
+      },
+      {
+        "path": "reports/targeted-accuracy-w1w9-01/M3/FINITE_QUEUE.json",
+        "received_content_UTF8_bytes": 6145,
+        "serialized_tool_response_UTF8_bytes": 13785,
+        "HTTP_wire_bytes": "NOT_EXPOSED_BY_CONNECTOR",
+        "received_body_ends_newline": true,
+        "received_content_SHA256": "96765d5003a9d7624a6994827a460a13485fab29fcd3d7cfa84d81bf2ef326d5",
+        "URL": "https://github.com/NickNicky19/NFL-forecasting-NGS-C/blob/d662c16a3d2a5ae13640860e38d4d1e044234c5e/reports/targeted-accuracy-w1w9-01/M3/FINITE_QUEUE.json"
+      },
+      {
+        "path": "reports/targeted-accuracy-w1w9-01/M3/CLOCK_SEMANTICS.json",
+        "received_content_UTF8_bytes": 1123,
+        "serialized_tool_response_UTF8_bytes": 3123,
+        "HTTP_wire_bytes": "NOT_EXPOSED_BY_CONNECTOR",
+        "received_body_ends_newline": true,
+        "received_content_SHA256": "c3b0a935c87299b2c84e4c6eca915d46b7e9aca9f5bda160803f0a97e7916eb2",
+        "URL": "https://github.com/NickNicky19/NFL-forecasting-NGS-C/blob/d662c16a3d2a5ae13640860e38d4d1e044234c5e/reports/targeted-accuracy-w1w9-01/M3/CLOCK_SEMANTICS.json"
+      }
+    ],
+    "content_UTF8_bytes_total": 242780,
+    "serialized_tool_response_UTF8_bytes_total": 522361,
+    "receipt_scope": "Connector-returned UTF-8 body and local wrapper-serialization counts; network HTTP wire bytes are not exposed."
+  }
+}

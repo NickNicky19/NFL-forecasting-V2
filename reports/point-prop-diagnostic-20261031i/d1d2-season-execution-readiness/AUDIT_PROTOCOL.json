@@ -1,0 +1,36 @@
+{
+  "version": "v2-I-D1D2-older-season-readiness-audit-v1",
+  "at_utc": "2026-10-31T17:40:16.148766+00:00",
+  "state": "FROZEN_BEFORE_DRY_RUN_METADATA_OUTPUT",
+  "scope": "Read exact existing runners/CLI/contracts and emit a season-relative finite plan. Reuse existing feature helpers; test synthetic chronology and scheduled-memory adapter. No NFL row/label/model load, no fit/predict/scoring, no private prepared-row backlog.",
+  "old_2026_source_hashes": {
+    "nfl_v2/qualified_defense_wave.py": "d7521ffb753726f66a6731d3ed3ef9de872df55b07fc3666715e22512b57ce1b",
+    "nfl_v2/qualified_defense.py": "d59a0a5addbbe4a37bafa57946b3932a250ba4fd461bcc795d86fccb003104a8",
+    "nfl_v2/qualified_defense_inputs.py": "cdc1b0c570401aa6ca72c45fd59baea2822766de6e1c168a0ae003fe0b750e9f",
+    "nfl_v2/scheduled_defense_wave.py": "6fa408b14de067357f5d9bb31fc5c72390e26833d54a156987cb3fd75d445578",
+    "nfl_v2/scheduled_defense.py": "c2b79c2a73b19bf041616a09b1ea660ae04ac400ff87dccddd3f12eb30b043ce"
+  },
+  "new_code_hashes": {
+    "nfl_v2/defense_season_preflight.py": "0cb9a6c8d46ffb4af755b2692432d0f8a4a70817eb36456ca2510ef688522e79",
+    "tools/preflight_defense_seasons.py": "07ea7d05227881f2937c00901cbe6f4b8fe242951947c7464187685002a9cfff",
+    "tests/test_defense_season_preflight.py": "cd0773b6ee0fc2f62d712bf0f0b397cc78ef28808787ee3580f0866cd89d20c7"
+  },
+  "seasons": [
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "season_startup": "No pre2022.2022RECENT is originalavailable2022proxy, separatelyqualified2021extension untouched.",
+  "resources": {
+    "max_threads": 2,
+    "max_RSS_bytes": 1073741824,
+    "max_wall_seconds": 180,
+    "new_private_bytes": 0
+  },
+  "large_fit_recovery_gate": "UNCHANGED; no missingolderD1D2fullseasonfitsmayclosefromthisdryrun",
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0,
+  "new_scores": 0
+}

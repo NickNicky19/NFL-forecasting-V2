@@ -1,0 +1,62 @@
+{
+  "state": "PASS_LOCAL_FROZEN_RECOVERY_PREFLIGHT_ONLY_NOT_REMOTE_RETENTION",
+  "at_utc": "2026-10-31T20:35:32.285860+00:00",
+  "source_receipt_sha256": "700f8aaad8f7444d0cd59a5a21b4f5c4afdcb7db097f347fac4caa90b7bb8f08",
+  "accepted_plan_sha256": "7ce075fc7b853a646f79795bb7133b597ee5dbeaa6cb7f5f21240e8cd8d516de",
+  "private_queue_sha256": "0afa92672d70b356219813941d32937a03e2e1e127dfd272a75e9facb303a289",
+  "initial_frozen_missing_parts": 53,
+  "initial_missing_upload_bytes": 1093747658,
+  "all_53_local_parts_match_original_queue_and_frozen_plan": true,
+  "all_four_local_archive_whole_hashes_and_regular_headers_verified": true,
+  "archives": [
+    {
+      "artifact_id": "V2-PRIVATE-RECOVERY-DELTA-20261030D-0001",
+      "local_archive_sha256": "3ac59cf6888faae55ded308042c05f00bbdf474d3c10b35974dc801d60a1175f",
+      "archive_bytes": 263613679,
+      "required_missing_parts": 13,
+      "required_missing_bytes": 263613679,
+      "regular_header_count": 1788,
+      "declared_regular_payload_bytes": 291091850
+    },
+    {
+      "artifact_id": "V2-PRIVATE-SEASON-2022-V2",
+      "local_archive_sha256": "f0f42f1a457862b3189865e7974b93413ea18e725186a77648e175b96da10a39",
+      "archive_bytes": 224693683,
+      "required_missing_parts": 11,
+      "required_missing_bytes": 224693683,
+      "regular_header_count": 1882,
+      "declared_regular_payload_bytes": 240652369
+    },
+    {
+      "artifact_id": "V2-PRIVATE-SEASON-2023-COMPLETE-V1",
+      "local_archive_sha256": "d8d00224847f6dcd2d96a78a055e75ac6a1074cdf0a60952e2a941785af53fdd",
+      "archive_bytes": 353782056,
+      "required_missing_parts": 17,
+      "required_missing_bytes": 353782056,
+      "regular_header_count": 4029,
+      "declared_regular_payload_bytes": 364958563
+    },
+    {
+      "artifact_id": "V2-PRIVATE-SEASON-2024-V2",
+      "local_archive_sha256": "c34e10c5e8f70b2c65fa4f9b7a17407ac1defafb4d141b688773551cc7dc0fbb",
+      "archive_bytes": 464346512,
+      "required_missing_parts": 12,
+      "required_missing_bytes": 251658240,
+      "regular_header_count": 5181,
+      "declared_regular_payload_bytes": 475694862
+    }
+  ],
+  "complete_remote_parts_download_bytes": 1306435930,
+  "parts_plus_assembled_archives_bytes": 2612871860,
+  "plus_declared_inner_extraction_bytes": 3985269504,
+  "separate_stream_buffer_bytes": 1048576,
+  "quota_or_remaining_capacity_authenticated": false,
+  "historical_disk_readings_scope": "Historical observed local disk only, not reserved capacity or Drive quota.",
+  "current_remote_queue_scope": "Frozen preflight before root subsequent successful part uploads; do not interpret 53 as a refreshed current remote missing count.",
+  "remote_transfers_or_extractions": 0,
+  "inner_file_hash_recovery_verified": false,
+  "global_gate_cleared": false,
+  "new_model_calls": 0,
+  "wall_seconds": 5.52961340299953,
+  "checker_sha256": "b8382710749818a713d562f89b52900c4242d5e7d556c391e8b04f57f5cafa3f"
+}

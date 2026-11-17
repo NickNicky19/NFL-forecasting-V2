@@ -1,0 +1,962 @@
+{
+  "id": "B_INFORMATION_SKILL_EXECUTED_DECISIONS_v1",
+  "UTC": "2026-11-15T15:18:41.404411+00:00",
+  "primary": "NO_QUALIFIED_REPLACEMENT",
+  "target_70_80_useful_selective": "TARGET_NOT_ESTABLISHED",
+  "no_full_W1_9_actual_line_claim": true,
+  "new_actual_offer_periods": [],
+  "added_procedure_coverage": {
+    "numeric_2026": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "actual_line_2026": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "native_offers": 142,
+    "games": 71,
+    "prior_season_new_comparison": []
+  },
+  "products": [
+    {
+      "product": "C1 same learner plus team/defense choice block",
+      "decision": "CLOSE_RECIPE_NO_GAIN_DIRECTION;NUMERICAL_INCONCLUSIVE",
+      "reason": "No side gain, negligible proper/numerical changes; C1 strict independentfitreproduction failure retained."
+    },
+    {
+      "product": "R0 learned mixture with original information",
+      "decision": "SHADOW_RESEARCH_MEAN_AND_PROBABILITY;NO_PRIMARY_SWITCH",
+      "reason": "Mean direction+4/142 and modest proper/numerical gains versus its own C0; law sidesunchanged and strongest compatible B0/B2 still better. No useful70–80 selective evidence."
+    },
+    {
+      "product": "R1 enriched learned mixture and conversion",
+      "decision": "CLOSE_RECIPE_NO_GAIN_INCREMENT_OVER_R0",
+      "reason": "Better contextmixture logscore but no direction gain, worse finalBrier/LL/MAE than R0. No retuning or generalmechanismdisproof."
+    }
+  ],
+  "metrics": [
+    {
+      "method": "SKILL_C0",
+      "procedure_id": "B-INFORMATION-SKILL-PASS-MIX-v1:SKILL_C0",
+      "actual_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "mean": {
+        "OVER": {
+          "decided": 21,
+          "losses": 12,
+          "rate": 0.42857142857142855,
+          "selected": 21,
+          "wins": 9
+        },
+        "UNDER": {
+          "decided": 121,
+          "losses": 62,
+          "rate": 0.48760330578512395,
+          "selected": 121,
+          "wins": 59
+        },
+        "COMBINED": {
+          "decided": 142,
+          "losses": 74,
+          "rate": 0.4788732394366197,
+          "selected": 142,
+          "wins": 68
+        },
+        "numerical": {
+          "MAE": 5.011569020245198,
+          "MSE": 40.5252914500818,
+          "absolute_error_p90": 9.875868143548667,
+          "absolute_error_p95": 12.961752260590673,
+          "bias": -1.6880040348901437,
+          "max_absolute_error": 17.859926835284544,
+          "scored": 142
+        }
+      },
+      "law": {
+        "OVER": {
+          "decided": 13,
+          "losses": 7,
+          "rate": 0.46153846153846156,
+          "selected": 13,
+          "wins": 6
+        },
+        "UNDER": {
+          "decided": 129,
+          "losses": 65,
+          "rate": 0.49612403100775193,
+          "selected": 129,
+          "wins": 64
+        },
+        "COMBINED": {
+          "decided": 142,
+          "losses": 72,
+          "rate": 0.49295774647887325,
+          "selected": 142,
+          "wins": 70
+        },
+        "probability": {
+          "Over_event_reliability": [
+            {
+              "lower": 0.0,
+              "mean_predicted": 0.09326026458379455,
+              "n": 1,
+              "observed_over": 0.0,
+              "upper": 0.1
+            },
+            {
+              "lower": 0.1,
+              "mean_predicted": 0.18255166822388977,
+              "n": 4,
+              "observed_over": 0.75,
+              "upper": 0.2
+            },
+            {
+              "lower": 0.2,
+              "mean_predicted": 0.26721009971613396,
+              "n": 21,
+              "observed_over": 0.5714285714285714,
+              "upper": 0.3
+            },
+            {
+              "lower": 0.3,
+              "mean_predicted": 0.34840387773488957,
+              "n": 70,
+              "observed_over": 0.4857142857142857,
+              "upper": 0.4
+            },
+            {
+              "lower": 0.4,
+              "mean_predicted": 0.43672347524800903,
+              "n": 33,
+              "observed_over": 0.48484848484848486,
+              "upper": 0.5
+            },
+            {
+              "lower": 0.5,
+              "mean_predicted": 0.5232255543796386,
+              "n": 12,
+              "observed_over": 0.5,
+              "upper": 0.6
+            },
+            {
+              "lower": 0.6,
+              "mean_predicted": 0.6243871258995526,
+              "n": 1,
+              "observed_over": 0.0,
+              "upper": 0.7
+            },
+            {
+              "lower": 0.7,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_over": null,
+              "upper": 0.8
+            },
+            {
+              "lower": 0.8,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_over": null,
+              "upper": 0.9
+            },
+            {
+              "lower": 0.9,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_over": null,
+              "upper": 1.0
+            }
+          ],
+          "conditioning": "QUALIFIED_PLAYED_STATISTICAL_CROSSING_NOT_VENUE_NONVOID",
+          "events": 142,
+          "half_three_state_Brier": 0.2815579090307307,
+          "infinite_logloss_cases": 0,
+          "log_loss": 0.7626901933482295,
+          "selected_side_reliability": [
+            {
+              "lower": 0.0,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.1
+            },
+            {
+              "lower": 0.1,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.2
+            },
+            {
+              "lower": 0.2,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.3
+            },
+            {
+              "lower": 0.3,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.4
+            },
+            {
+              "lower": 0.4,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.5
+            },
+            {
+              "lower": 0.5,
+              "mean_predicted": 0.5525962659860303,
+              "n": 45,
+              "observed_correct": 0.5111111111111111,
+              "upper": 0.6
+            },
+            {
+              "lower": 0.6,
+              "mean_predicted": 0.651212896964187,
+              "n": 71,
+              "observed_correct": 0.5070422535211268,
+              "upper": 0.7
+            },
+            {
+              "lower": 0.7,
+              "mean_predicted": 0.732789900283866,
+              "n": 21,
+              "observed_correct": 0.42857142857142855,
+              "upper": 0.8
+            },
+            {
+              "lower": 0.8,
+              "mean_predicted": 0.8174483317761102,
+              "n": 4,
+              "observed_correct": 0.25,
+              "upper": 0.9
+            },
+            {
+              "lower": 0.9,
+              "mean_predicted": 0.9067397354162055,
+              "n": 1,
+              "observed_correct": 1.0,
+              "upper": 1.0
+            }
+          ],
+          "strict_binary_Over_Brier": 0.2815579090307307,
+          "typing": "RAW_COUNT_LAW_EXACT_EVENT"
+        }
+      },
+      "eligible": 142,
+      "available": 142,
+      "selected": 142,
+      "unknown": 0,
+      "unavailable": 0,
+      "parent_fallback_selected": 1,
+      "fit_implementation_fallbacks": 0,
+      "new_quote_clocks_authenticated": false
+    },
+    {
+      "method": "SKILL_C1",
+      "procedure_id": "B-INFORMATION-SKILL-PASS-MIX-v1:SKILL_C1",
+      "actual_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "mean": {
+        "OVER": {
+          "decided": 21,
+          "losses": 12,
+          "rate": 0.42857142857142855,
+          "selected": 21,
+          "wins": 9
+        },
+        "UNDER": {
+          "decided": 121,
+          "losses": 62,
+          "rate": 0.48760330578512395,
+          "selected": 121,
+          "wins": 59
+        },
+        "COMBINED": {
+          "decided": 142,
+          "losses": 74,
+          "rate": 0.4788732394366197,
+          "selected": 142,
+          "wins": 68
+        },
+        "numerical": {
+          "MAE": 5.010532165745326,
+          "MSE": 40.511236901156316,
+          "absolute_error_p90": 9.87001192814824,
+          "absolute_error_p95": 12.958861736776244,
+          "bias": -1.6850343433463477,
+          "max_absolute_error": 17.858437979397547,
+          "scored": 142
+        }
+      },
+      "law": {
+        "OVER": {
+          "decided": 13,
+          "losses": 7,
+          "rate": 0.46153846153846156,
+          "selected": 13,
+          "wins": 6
+        },
+        "UNDER": {
+          "decided": 129,
+          "losses": 65,
+          "rate": 0.49612403100775193,
+          "selected": 129,
+          "wins": 64
+        },
+        "COMBINED": {
+          "decided": 142,
+          "losses": 72,
+          "rate": 0.49295774647887325,
+          "selected": 142,
+          "wins": 70
+        },
+        "probability": {
+          "Over_event_reliability": [
+            {
+              "lower": 0.0,
+              "mean_predicted": 0.09338831835562678,
+              "n": 1,
+              "observed_over": 0.0,
+              "upper": 0.1
+            },
+            {
+              "lower": 0.1,
+              "mean_predicted": 0.1829747056728675,
+              "n": 4,
+              "observed_over": 0.75,
+              "upper": 0.2
+            },
+            {
+              "lower": 0.2,
+              "mean_predicted": 0.26736439283894253,
+              "n": 21,
+              "observed_over": 0.5714285714285714,
+              "upper": 0.3
+            },
+            {
+              "lower": 0.3,
+              "mean_predicted": 0.34858248921353024,
+              "n": 70,
+              "observed_over": 0.4857142857142857,
+              "upper": 0.4
+            },
+            {
+              "lower": 0.4,
+              "mean_predicted": 0.4367693304857588,
+              "n": 33,
+              "observed_over": 0.48484848484848486,
+              "upper": 0.5
+            },
+            {
+              "lower": 0.5,
+              "mean_predicted": 0.5233683666322962,
+              "n": 12,
+              "observed_over": 0.5,
+              "upper": 0.6
+            },
+            {
+              "lower": 0.6,
+              "mean_predicted": 0.6245062203844021,
+              "n": 1,
+              "observed_over": 0.0,
+              "upper": 0.7
+            },
+            {
+              "lower": 0.7,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_over": null,
+              "upper": 0.8
+            },
+            {
+              "lower": 0.8,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_over": null,
+              "upper": 0.9
+            },
+            {
+              "lower": 0.9,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_over": null,
+              "upper": 1.0
+            }
+          ],
+          "conditioning": "QUALIFIED_PLAYED_STATISTICAL_CROSSING_NOT_VENUE_NONVOID",
+          "events": 142,
+          "half_three_state_Brier": 0.28150972583492373,
+          "infinite_logloss_cases": 0,
+          "log_loss": 0.7625605599347831,
+          "selected_side_reliability": [
+            {
+              "lower": 0.0,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.1
+            },
+            {
+              "lower": 0.1,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.2
+            },
+            {
+              "lower": 0.2,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.3
+            },
+            {
+              "lower": 0.3,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.4
+            },
+            {
+              "lower": 0.4,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.5
+            },
+            {
+              "lower": 0.5,
+              "mean_predicted": 0.5526007220790559,
+              "n": 45,
+              "observed_correct": 0.5111111111111111,
+              "upper": 0.6
+            },
+            {
+              "lower": 0.6,
+              "mean_predicted": 0.6510384785272857,
+              "n": 71,
+              "observed_correct": 0.5070422535211268,
+              "upper": 0.7
+            },
+            {
+              "lower": 0.7,
+              "mean_predicted": 0.7326356071610575,
+              "n": 21,
+              "observed_correct": 0.42857142857142855,
+              "upper": 0.8
+            },
+            {
+              "lower": 0.8,
+              "mean_predicted": 0.8170252943271326,
+              "n": 4,
+              "observed_correct": 0.25,
+              "upper": 0.9
+            },
+            {
+              "lower": 0.9,
+              "mean_predicted": 0.9066116816443732,
+              "n": 1,
+              "observed_correct": 1.0,
+              "upper": 1.0
+            }
+          ],
+          "strict_binary_Over_Brier": 0.28150972583492373,
+          "typing": "RAW_COUNT_LAW_EXACT_EVENT"
+        }
+      },
+      "eligible": 142,
+      "available": 142,
+      "selected": 142,
+      "unknown": 0,
+      "unavailable": 0,
+      "parent_fallback_selected": 1,
+      "fit_implementation_fallbacks": 0,
+      "new_quote_clocks_authenticated": false
+    },
+    {
+      "method": "SKILL_R0",
+      "procedure_id": "B-INFORMATION-SKILL-PASS-MIX-v1:SKILL_R0",
+      "actual_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "mean": {
+        "OVER": {
+          "decided": 19,
+          "losses": 9,
+          "rate": 0.5263157894736842,
+          "selected": 19,
+          "wins": 10
+        },
+        "UNDER": {
+          "decided": 123,
+          "losses": 61,
+          "rate": 0.5040650406504065,
+          "selected": 123,
+          "wins": 62
+        },
+        "COMBINED": {
+          "decided": 142,
+          "losses": 70,
+          "rate": 0.5070422535211268,
+          "selected": 142,
+          "wins": 72
+        },
+        "numerical": {
+          "MAE": 4.991066803508595,
+          "MSE": 40.56532043877941,
+          "absolute_error_p90": 10.18417875728665,
+          "absolute_error_p95": 12.8572096676778,
+          "bias": -1.715317646456677,
+          "max_absolute_error": 17.819288485952427,
+          "scored": 142
+        }
+      },
+      "law": {
+        "OVER": {
+          "decided": 13,
+          "losses": 7,
+          "rate": 0.46153846153846156,
+          "selected": 13,
+          "wins": 6
+        },
+        "UNDER": {
+          "decided": 129,
+          "losses": 65,
+          "rate": 0.49612403100775193,
+          "selected": 129,
+          "wins": 64
+        },
+        "COMBINED": {
+          "decided": 142,
+          "losses": 72,
+          "rate": 0.49295774647887325,
+          "selected": 142,
+          "wins": 70
+        },
+        "probability": {
+          "Over_event_reliability": [
+            {
+              "lower": 0.0,
+              "mean_predicted": 0.09174612389358738,
+              "n": 1,
+              "observed_over": 0.0,
+              "upper": 0.1
+            },
+            {
+              "lower": 0.1,
+              "mean_predicted": 0.1784196067555814,
+              "n": 3,
+              "observed_over": 0.6666666666666666,
+              "upper": 0.2
+            },
+            {
+              "lower": 0.2,
+              "mean_predicted": 0.26797006779375704,
+              "n": 27,
+              "observed_over": 0.5925925925925926,
+              "upper": 0.3
+            },
+            {
+              "lower": 0.3,
+              "mean_predicted": 0.3486852665092652,
+              "n": 65,
+              "observed_over": 0.47692307692307695,
+              "upper": 0.4
+            },
+            {
+              "lower": 0.4,
+              "mean_predicted": 0.43842705885206307,
+              "n": 33,
+              "observed_over": 0.48484848484848486,
+              "upper": 0.5
+            },
+            {
+              "lower": 0.5,
+              "mean_predicted": 0.5299588734443403,
+              "n": 12,
+              "observed_over": 0.5,
+              "upper": 0.6
+            },
+            {
+              "lower": 0.6,
+              "mean_predicted": 0.6143288756941311,
+              "n": 1,
+              "observed_over": 0.0,
+              "upper": 0.7
+            },
+            {
+              "lower": 0.7,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_over": null,
+              "upper": 0.8
+            },
+            {
+              "lower": 0.8,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_over": null,
+              "upper": 0.9
+            },
+            {
+              "lower": 0.9,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_over": null,
+              "upper": 1.0
+            }
+          ],
+          "conditioning": "QUALIFIED_PLAYED_STATISTICAL_CROSSING_NOT_VENUE_NONVOID",
+          "events": 142,
+          "half_three_state_Brier": 0.28035375399482565,
+          "infinite_logloss_cases": 0,
+          "log_loss": 0.7604173212730714,
+          "selected_side_reliability": [
+            {
+              "lower": 0.0,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.1
+            },
+            {
+              "lower": 0.1,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.2
+            },
+            {
+              "lower": 0.2,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.3
+            },
+            {
+              "lower": 0.3,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.4
+            },
+            {
+              "lower": 0.4,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.5
+            },
+            {
+              "lower": 0.5,
+              "mean_predicted": 0.5531425230936445,
+              "n": 45,
+              "observed_correct": 0.5111111111111111,
+              "upper": 0.6
+            },
+            {
+              "lower": 0.6,
+              "mean_predicted": 0.6507543417059378,
+              "n": 66,
+              "observed_correct": 0.5151515151515151,
+              "upper": 0.7
+            },
+            {
+              "lower": 0.7,
+              "mean_predicted": 0.732029932206243,
+              "n": 27,
+              "observed_correct": 0.4074074074074074,
+              "upper": 0.8
+            },
+            {
+              "lower": 0.8,
+              "mean_predicted": 0.8215803932444187,
+              "n": 3,
+              "observed_correct": 0.3333333333333333,
+              "upper": 0.9
+            },
+            {
+              "lower": 0.9,
+              "mean_predicted": 0.9082538761064126,
+              "n": 1,
+              "observed_correct": 1.0,
+              "upper": 1.0
+            }
+          ],
+          "strict_binary_Over_Brier": 0.28035375399482565,
+          "typing": "RAW_COUNT_LAW_EXACT_EVENT"
+        }
+      },
+      "eligible": 142,
+      "available": 142,
+      "selected": 142,
+      "unknown": 0,
+      "unavailable": 0,
+      "parent_fallback_selected": 1,
+      "fit_implementation_fallbacks": 0,
+      "new_quote_clocks_authenticated": false
+    },
+    {
+      "method": "SKILL_R1",
+      "procedure_id": "B-INFORMATION-SKILL-PASS-MIX-v1:SKILL_R1",
+      "actual_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "mean": {
+        "OVER": {
+          "decided": 19,
+          "losses": 9,
+          "rate": 0.5263157894736842,
+          "selected": 19,
+          "wins": 10
+        },
+        "UNDER": {
+          "decided": 123,
+          "losses": 61,
+          "rate": 0.5040650406504065,
+          "selected": 123,
+          "wins": 62
+        },
+        "COMBINED": {
+          "decided": 142,
+          "losses": 70,
+          "rate": 0.5070422535211268,
+          "selected": 142,
+          "wins": 72
+        },
+        "numerical": {
+          "MAE": 4.999834101913057,
+          "MSE": 40.69723659083978,
+          "absolute_error_p90": 10.275428413082592,
+          "absolute_error_p95": 12.893878685014723,
+          "bias": -1.7235265401090025,
+          "max_absolute_error": 17.8549914554938,
+          "scored": 142
+        }
+      },
+      "law": {
+        "OVER": {
+          "decided": 13,
+          "losses": 7,
+          "rate": 0.46153846153846156,
+          "selected": 13,
+          "wins": 6
+        },
+        "UNDER": {
+          "decided": 129,
+          "losses": 65,
+          "rate": 0.49612403100775193,
+          "selected": 129,
+          "wins": 64
+        },
+        "COMBINED": {
+          "decided": 142,
+          "losses": 72,
+          "rate": 0.49295774647887325,
+          "selected": 142,
+          "wins": 70
+        },
+        "probability": {
+          "Over_event_reliability": [
+            {
+              "lower": 0.0,
+              "mean_predicted": 0.09149241730308044,
+              "n": 1,
+              "observed_over": 0.0,
+              "upper": 0.1
+            },
+            {
+              "lower": 0.1,
+              "mean_predicted": 0.17816301169307283,
+              "n": 3,
+              "observed_over": 0.6666666666666666,
+              "upper": 0.2
+            },
+            {
+              "lower": 0.2,
+              "mean_predicted": 0.2674184299319854,
+              "n": 27,
+              "observed_over": 0.5925925925925926,
+              "upper": 0.3
+            },
+            {
+              "lower": 0.3,
+              "mean_predicted": 0.3488799486193086,
+              "n": 65,
+              "observed_over": 0.47692307692307695,
+              "upper": 0.4
+            },
+            {
+              "lower": 0.4,
+              "mean_predicted": 0.43714639356377977,
+              "n": 33,
+              "observed_over": 0.48484848484848486,
+              "upper": 0.5
+            },
+            {
+              "lower": 0.5,
+              "mean_predicted": 0.529200055979213,
+              "n": 12,
+              "observed_over": 0.5,
+              "upper": 0.6
+            },
+            {
+              "lower": 0.6,
+              "mean_predicted": 0.6190638300767328,
+              "n": 1,
+              "observed_over": 0.0,
+              "upper": 0.7
+            },
+            {
+              "lower": 0.7,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_over": null,
+              "upper": 0.8
+            },
+            {
+              "lower": 0.8,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_over": null,
+              "upper": 0.9
+            },
+            {
+              "lower": 0.9,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_over": null,
+              "upper": 1.0
+            }
+          ],
+          "conditioning": "QUALIFIED_PLAYED_STATISTICAL_CROSSING_NOT_VENUE_NONVOID",
+          "events": 142,
+          "half_three_state_Brier": 0.28086944156420746,
+          "infinite_logloss_cases": 0,
+          "log_loss": 0.7615836555382707,
+          "selected_side_reliability": [
+            {
+              "lower": 0.0,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.1
+            },
+            {
+              "lower": 0.1,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.2
+            },
+            {
+              "lower": 0.2,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.3
+            },
+            {
+              "lower": 0.3,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.4
+            },
+            {
+              "lower": 0.4,
+              "mean_predicted": null,
+              "n": 0,
+              "observed_correct": null,
+              "upper": 0.5
+            },
+            {
+              "lower": 0.5,
+              "mean_predicted": 0.5538793263143517,
+              "n": 45,
+              "observed_correct": 0.5111111111111111,
+              "upper": 0.6
+            },
+            {
+              "lower": 0.6,
+              "mean_predicted": 0.6506343510579041,
+              "n": 66,
+              "observed_correct": 0.5151515151515151,
+              "upper": 0.7
+            },
+            {
+              "lower": 0.7,
+              "mean_predicted": 0.7325815700680146,
+              "n": 27,
+              "observed_correct": 0.4074074074074074,
+              "upper": 0.8
+            },
+            {
+              "lower": 0.8,
+              "mean_predicted": 0.8218369883069272,
+              "n": 3,
+              "observed_correct": 0.3333333333333333,
+              "upper": 0.9
+            },
+            {
+              "lower": 0.9,
+              "mean_predicted": 0.9085075826969196,
+              "n": 1,
+              "observed_correct": 1.0,
+              "upper": 1.0
+            }
+          ],
+          "strict_binary_Over_Brier": 0.28086944156420746,
+          "typing": "RAW_COUNT_LAW_EXACT_EVENT"
+        }
+      },
+      "eligible": 142,
+      "available": 142,
+      "selected": 142,
+      "unknown": 0,
+      "unavailable": 0,
+      "parent_fallback_selected": 1,
+      "fit_implementation_fallbacks": 0,
+      "new_quote_clocks_authenticated": false
+    }
+  ],
+  "strict_fit_reproduction": "R0/R1 PASS; C1 FAIL_PREDECLARED_TOLERANCE; no retry/relaxation. Separate aggregate/law/decodedbyteverification PASS.",
+  "evidence": "Exposed current-vintage7day strictchronological reconstruction; statrowconditionaluniverse; quoteclocks/main-altunclassified; no original issuance or venue settlement",
+  "future": "R0 fixed finalist only for eligible later reference/challenger capture by existing source/producer owners. No current packet authenticated here.",
+  "original_site": "UNCHANGED; no currentfeed/admission/activation or served-valueclaim"
+}

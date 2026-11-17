@@ -1,0 +1,314 @@
+[
+  {
+    "procedure_id": "B-QB-CHARTED-CATCHABILITY-CONTEXT-v1:F2",
+    "product": "mean",
+    "ordered_views": [
+      {
+        "stage": "ALL_W1_8",
+        "source_record_id": "QB-NATIVE-35a3b6304648c26b33cca274",
+        "n": 277,
+        "games": 121,
+        "MAE": 5.804912459205275,
+        "bias": -1.069983811614254
+      },
+      {
+        "stage": "SAME_WEEKS_ALL_GAMES",
+        "source_record_id": "QB-NATIVE-83d06c1865e2bcd0244dea8c",
+        "n": 131,
+        "games": 57,
+        "MAE": 5.858201376464789,
+        "bias": -0.2973901422094646
+      },
+      {
+        "stage": "SAME_WEEKS_COVERED_GAMES",
+        "source_record_id": "B-COVERED-GAMES-042b4110d4e5e940751f3e1c",
+        "n": 129,
+        "games": 56,
+        "MAE": 5.854434799018379,
+        "bias": -0.20740943710018062
+      },
+      {
+        "stage": "OFFERED112",
+        "source_record_id": "QB-NATIVE-1c31d6004dc422a580fb8829",
+        "n": 112,
+        "games": 56,
+        "MAE": 5.348336941431513,
+        "bias": -1.4781276953883522
+      }
+    ],
+    "interpretation": "277->131 is timewindow;131->129 is gamecoverage;129->112 is offeredmembership. Differentpopulationsarenotpairedlearnerchanges;no causalrolediagnosisfromaggregatebias."
+  },
+  {
+    "procedure_id": "B-QB-CHARTED-CATCHABILITY-CONTEXT-v1:F2",
+    "product": "lower_median",
+    "ordered_views": [
+      {
+        "stage": "ALL_W1_8",
+        "source_record_id": "QB-NATIVE-19a2dc1cdb9dd11e91893999",
+        "n": 277,
+        "games": 121,
+        "MAE": 5.606498194945848,
+        "bias": -0.7472924187725631
+      },
+      {
+        "stage": "SAME_WEEKS_ALL_GAMES",
+        "source_record_id": "QB-NATIVE-f1f58d877a8bf28ec7a3f7e9",
+        "n": 131,
+        "games": 57,
+        "MAE": 5.793893129770993,
+        "bias": -0.17557251908396945
+      },
+      {
+        "stage": "SAME_WEEKS_COVERED_GAMES",
+        "source_record_id": "B-COVERED-GAMES-8d1ea21cda14b70418a97806",
+        "n": 129,
+        "games": 56,
+        "MAE": 5.782945736434108,
+        "bias": -0.07751937984496124
+      },
+      {
+        "stage": "OFFERED112",
+        "source_record_id": "QB-NATIVE-bcac421eb3c3fda7676a6214",
+        "n": 112,
+        "games": 56,
+        "MAE": 5.294642857142857,
+        "bias": -1.1696428571428572
+      }
+    ],
+    "interpretation": "277->131 is timewindow;131->129 is gamecoverage;129->112 is offeredmembership. Differentpopulationsarenotpairedlearnerchanges;no causalrolediagnosisfromaggregatebias."
+  },
+  {
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "product": "mean",
+    "ordered_views": [
+      {
+        "stage": "ALL_W1_8",
+        "source_record_id": "QB-NATIVE-756c73ba6a30562bb9b32bfb",
+        "n": 277,
+        "games": 121,
+        "MAE": 8.456403755364676,
+        "bias": -0.8375162475686136
+      },
+      {
+        "stage": "SAME_WEEKS_ALL_GAMES",
+        "source_record_id": "QB-NATIVE-80ab15acf72bf8a5bd8c6ee7",
+        "n": 131,
+        "games": 57,
+        "MAE": 8.777728137043766,
+        "bias": -0.7592694454203505
+      },
+      {
+        "stage": "SAME_WEEKS_COVERED_GAMES",
+        "source_record_id": "B-COVERED-GAMES-9df545b70d4f6957e6e51103",
+        "n": 129,
+        "games": 56,
+        "MAE": 8.804578553297782,
+        "bias": -0.6618026726569481
+      },
+      {
+        "stage": "OFFERED112",
+        "source_record_id": "QB-NATIVE-7c03cad066a225706bbc9c51",
+        "n": 112,
+        "games": 56,
+        "MAE": 7.703221058830741,
+        "bias": -3.165835272424089
+      }
+    ],
+    "interpretation": "277->131 is timewindow;131->129 is gamecoverage;129->112 is offeredmembership. Differentpopulationsarenotpairedlearnerchanges;no causalrolediagnosisfromaggregatebias."
+  },
+  {
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "product": "lower_median",
+    "ordered_views": [
+      {
+        "stage": "ALL_W1_8",
+        "source_record_id": "QB-NATIVE-1af9c4224a0f0749aedf6f14",
+        "n": 277,
+        "games": 121,
+        "MAE": 8.653429602888087,
+        "bias": -2.292418772563177
+      },
+      {
+        "stage": "SAME_WEEKS_ALL_GAMES",
+        "source_record_id": "QB-NATIVE-0ac253f99677acd7a8549dab",
+        "n": 131,
+        "games": 57,
+        "MAE": 9.045801526717558,
+        "bias": -2.236641221374046
+      },
+      {
+        "stage": "SAME_WEEKS_COVERED_GAMES",
+        "source_record_id": "B-COVERED-GAMES-e0d955d9d9ea822ef66dd32b",
+        "n": 129,
+        "games": 56,
+        "MAE": 9.046511627906977,
+        "bias": -2.131782945736434
+      },
+      {
+        "stage": "OFFERED112",
+        "source_record_id": "QB-NATIVE-d6092b980717bec5e4673f98",
+        "n": 112,
+        "games": 56,
+        "MAE": 8.276785714285714,
+        "bias": -4.491071428571429
+      }
+    ],
+    "interpretation": "277->131 is timewindow;131->129 is gamecoverage;129->112 is offeredmembership. Differentpopulationsarenotpairedlearnerchanges;no causalrolediagnosisfromaggregatebias."
+  },
+  {
+    "procedure_id": "B-player-context-matchup-01-v1:E0",
+    "product": "mean",
+    "ordered_views": [
+      {
+        "stage": "ALL_W1_8",
+        "source_record_id": "QB-NATIVE-de21b3913132183ce0915dbd",
+        "n": 277,
+        "games": 121,
+        "MAE": 5.935435422223781,
+        "bias": -1.2232812143896072
+      },
+      {
+        "stage": "SAME_WEEKS_ALL_GAMES",
+        "source_record_id": "QB-NATIVE-0d40963a3e557395a9f05ac3",
+        "n": 131,
+        "games": 57,
+        "MAE": 5.996013365086478,
+        "bias": -0.4624866760700271
+      },
+      {
+        "stage": "SAME_WEEKS_COVERED_GAMES",
+        "source_record_id": "B-COVERED-GAMES-938e567051a4becac9aee86c",
+        "n": 129,
+        "games": 56,
+        "MAE": 5.998932361011264,
+        "bias": -0.3796145605371942
+      },
+      {
+        "stage": "OFFERED112",
+        "source_record_id": "QB-NATIVE-2f5344ab54bdaf962974ad8a",
+        "n": 112,
+        "games": 56,
+        "MAE": 5.458693812109844,
+        "bias": -1.7291002939303735
+      }
+    ],
+    "interpretation": "277->131 is timewindow;131->129 is gamecoverage;129->112 is offeredmembership. Differentpopulationsarenotpairedlearnerchanges;no causalrolediagnosisfromaggregatebias."
+  },
+  {
+    "procedure_id": "B-player-context-matchup-01-v1:E0",
+    "product": "lower_median",
+    "ordered_views": [
+      {
+        "stage": "ALL_W1_8",
+        "source_record_id": "QB-NATIVE-0b0b945a01225a10be9e94ca",
+        "n": 277,
+        "games": 121,
+        "MAE": 5.714801444043322,
+        "bias": -0.8411552346570397
+      },
+      {
+        "stage": "SAME_WEEKS_ALL_GAMES",
+        "source_record_id": "QB-NATIVE-384b5a03b5bdf15bf89269c5",
+        "n": 131,
+        "games": 57,
+        "MAE": 5.885496183206107,
+        "bias": -0.3893129770992366
+      },
+      {
+        "stage": "SAME_WEEKS_COVERED_GAMES",
+        "source_record_id": "B-COVERED-GAMES-6731630e904aaede8b0eae8e",
+        "n": 129,
+        "games": 56,
+        "MAE": 5.891472868217054,
+        "bias": -0.31007751937984496
+      },
+      {
+        "stage": "OFFERED112",
+        "source_record_id": "QB-NATIVE-da896f0bb0c4d9335f94ede9",
+        "n": 112,
+        "games": 56,
+        "MAE": 5.401785714285714,
+        "bias": -1.4910714285714286
+      }
+    ],
+    "interpretation": "277->131 is timewindow;131->129 is gamecoverage;129->112 is offeredmembership. Differentpopulationsarenotpairedlearnerchanges;no causalrolediagnosisfromaggregatebias."
+  },
+  {
+    "procedure_id": "B-player-context-matchup-01-v1:E3",
+    "product": "mean",
+    "ordered_views": [
+      {
+        "stage": "ALL_W1_8",
+        "source_record_id": "QB-NATIVE-03055b77d45b1b1f73c5ec1e",
+        "n": 277,
+        "games": 121,
+        "MAE": 5.83623500732921,
+        "bias": -0.9233810418604823
+      },
+      {
+        "stage": "SAME_WEEKS_ALL_GAMES",
+        "source_record_id": "QB-NATIVE-0dfbb4b10007f3307e9c8d21",
+        "n": 131,
+        "games": 57,
+        "MAE": 5.891844520763174,
+        "bias": -0.2727923475854738
+      },
+      {
+        "stage": "SAME_WEEKS_COVERED_GAMES",
+        "source_record_id": "B-COVERED-GAMES-eed2b16676eff515bc2f741b",
+        "n": 129,
+        "games": 56,
+        "MAE": 5.878340822034156,
+        "bias": -0.17217156090021254
+      },
+      {
+        "stage": "OFFERED112",
+        "source_record_id": "QB-NATIVE-01d7e0836fb293940dcc0c85",
+        "n": 112,
+        "games": 56,
+        "MAE": 5.354704833556442,
+        "bias": -1.4778544264245632
+      }
+    ],
+    "interpretation": "277->131 is timewindow;131->129 is gamecoverage;129->112 is offeredmembership. Differentpopulationsarenotpairedlearnerchanges;no causalrolediagnosisfromaggregatebias."
+  },
+  {
+    "procedure_id": "B-player-context-matchup-01-v1:E3",
+    "product": "lower_median",
+    "ordered_views": [
+      {
+        "stage": "ALL_W1_8",
+        "source_record_id": "QB-NATIVE-517554b04e625a8873ef13e8",
+        "n": 277,
+        "games": 121,
+        "MAE": 5.693140794223827,
+        "bias": -0.48736462093862815
+      },
+      {
+        "stage": "SAME_WEEKS_ALL_GAMES",
+        "source_record_id": "QB-NATIVE-dea72cec3128e0d14a8c5a9e",
+        "n": 131,
+        "games": 57,
+        "MAE": 5.786259541984733,
+        "bias": -0.0916030534351145
+      },
+      {
+        "stage": "SAME_WEEKS_COVERED_GAMES",
+        "source_record_id": "B-COVERED-GAMES-7bde06b87e4103dbd0673f0a",
+        "n": 129,
+        "games": 56,
+        "MAE": 5.75968992248062,
+        "bias": 0.023255813953488372
+      },
+      {
+        "stage": "OFFERED112",
+        "source_record_id": "QB-NATIVE-6584fda20ed6fb392d73e369",
+        "n": 112,
+        "games": 56,
+        "MAE": 5.241071428571429,
+        "bias": -1.1517857142857142
+      }
+    ],
+    "interpretation": "277->131 is timewindow;131->129 is gamecoverage;129->112 is offeredmembership. Differentpopulationsarenotpairedlearnerchanges;no causalrolediagnosisfromaggregatebias."
+  }
+]

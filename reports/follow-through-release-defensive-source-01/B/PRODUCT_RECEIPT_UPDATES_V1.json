@@ -1,0 +1,2002 @@
+{
+  "id": "B-FOLLOWTHROUGH-PRODUCT-RECEIPT-UPDATES-v1",
+  "recorded_UTC": "2026-11-12T04:27:54.225330+00:00",
+  "role": "B supplied verification and quoted C receipt view; no competing common ranking, candidate promotion or original-site admission",
+  "C_current_decision_source": {
+    "key": "C_decisions",
+    "repository": "NickNicky19/NFL-forecasting-NGS-C",
+    "ref": "2e604d8801d74788a61b3fa9e5206e7c4a452e81",
+    "path": "reports/category-decision-release-01/CATEGORY_PRODUCT_DECISIONS.json",
+    "bytes": 488501,
+    "sha256": "f6286af137ca5ef14a4fd183cf93836ec0771893c3ed445e58b432a48f5a844b",
+    "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/2e604d8801d74788a61b3fa9e5206e7c4a452e81/reports/category-decision-release-01/CATEGORY_PRODUCT_DECISIONS.json",
+    "observed_UTC": "2026-11-12T04:17:56.140508+00:00"
+  },
+  "C_twelve_category_receipt": [
+    {
+      "category": "pass_yd",
+      "publisher": "C",
+      "source_ref": "2e604d8801d74788a61b3fa9e5206e7c4a452e81",
+      "C_published_decision": "KEEP_INCUMBENT",
+      "C_named_candidate": "A::pass_yd::HGB_MAE_DIRECT::a628c415c7f27ddaab9a9a4296cb189cc56c885c67aa6ded87928e08ac291341::mae_objective_point",
+      "C_candidate_output": "mae_objective_point",
+      "C_preferred": {
+        "procedure": "A::pass_yd::HGB_MAE_DIRECT::a628c415c7f27ddaab9a9a4296cb189cc56c885c67aa6ded87928e08ac291341::mae_objective_point",
+        "output": "mae_objective_point",
+        "status": "OLDER_REVIEW_CANDIDATE_AT_AS_REPORTED_SCOPE;CURRENT_BINDINGS_REQUIRED",
+        "rationale": "HGB MAE point is the older archived A-panel leader, not a proven global replacement; native C passing loses a strong constant. A broader current export and exact source scope are still needed.",
+        "operational_effect": "No activation by this table. Exact current feed/consumer admission and existing provisional policy remain with named owner.",
+        "eligibility_state": "CONDITIONAL_OWNER_REVIEW;ARCHIVED_SOURCE_WEEK_AND_CURRENT_EXPORT_BINDINGS_PENDING"
+      },
+      "C_actual_weeks": {
+        "2026": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "C_own_sides": {
+        "OVER": {
+          "wins": 41,
+          "losses": 29,
+          "decided": 70,
+          "rate": 0.5857142857142857,
+          "selected": null
+        },
+        "UNDER": {
+          "wins": 37,
+          "losses": 36,
+          "decided": 73,
+          "rate": 0.5068493150684932,
+          "selected": null
+        },
+        "COMBINED": {
+          "wins": 78,
+          "losses": 65,
+          "decided": 143,
+          "rate": 0.5454545454545454,
+          "selected": null
+        }
+      },
+      "C_coverage": {
+        "eligible": 143,
+        "available": 143,
+        "selected": 143,
+        "decided": 143,
+        "unknown": 0,
+        "unavailable": 0,
+        "fallback": null,
+        "abstained": 0,
+        "games": 79,
+        "player_games": null,
+        "scope": "Named panel only; no unknown counts converted tozero. Older primary intersection is not the entire unfiltered website board."
+      },
+      "C_controls": {
+        "ALWAYS_OVER": {
+          "wins": 77,
+          "decided": 143
+        },
+        "ALWAYS_UNDER": {
+          "wins": 66,
+          "decided": 143
+        },
+        "scope": "Same procedure own decided pool only, not a newly approved constant-side policy.",
+        "incumbent_comparison": "NOT_ESTABLISHED_ON_THIS_EXACT_PANEL; limits superiority claims, not an indefinite veto on an existing provisional path."
+      },
+      "C_uncertainty": {
+        "state": "Five exposed clusters and owner-reported paired intervals for named annual5; earlier archived max selected acrossmanymethods. No universal connected cross-session ranking.",
+        "private_scope": "Publicaggregate/member arithmetic only; no private offer clocks/rows/fitted models independentlyinspected by this draft.",
+        "source_interval_binding": "Archivedsource retains original intervals; no new paired interval manufactured."
+      },
+      "C_duration": {
+        "status": "MET_AS_REPORTED_7_SCORED_ARCHIVED_WEEKS;SOURCE_SCOPE_PENDING_CURRENT_BINDING",
+        "reported_season_weeks": [
+          [
+            2026,
+            1
+          ],
+          [
+            2026,
+            2
+          ],
+          [
+            2026,
+            3
+          ],
+          [
+            2026,
+            4
+          ],
+          [
+            2026,
+            5
+          ],
+          [
+            2026,
+            6
+          ],
+          [
+            2026,
+            7
+          ]
+        ],
+        "not_global_source_revocation": "Named C03annual correction does not invalidate every other archived/source-specificW6-W8record. First-five subpanel is separately shown, not silently substituted."
+      },
+      "C_evidence": "ARCHIVED_OWNER_REPORTED_TIMING_UNVERIFIED;CURRENT_SOURCE_WEEK_BINDING_PENDING",
+      "C_actual_live": {
+        "category": "pass_yd",
+        "current_execution_model_metadata": "sleeper-matchup-classic-presence-strict-v2",
+        "live_numerical_path": "Incumbent prop.adj (Sleeper projection plus declared matchup adjustment); optional independently typed MAE reader falls back because pointer404",
+        "category_direction_path": "Incumbent serialized prop.lean on real book lines; selected override would use selectedPropGap margin, not strict crossing",
+        "selected_override_repository_state": "DISABLED_USE_R0",
+        "selected_override_rows": 0,
+        "registered_selection_margin": 8,
+        "ranking_scale": 30,
+        "minimum_saved_book_line": 150.5,
+        "current_Top_Picks_path": "Saved incumbent board picks; optional selected-rankings path only when a selected overlay is admitted",
+        "probability_or_confidence": "Point/point gap has no implied probability or EV",
+        "fallback": "Same-opportunity identified incumbent, not zero; absent MAE/selected feed fails closed for that override",
+        "product_disposition_observation": "KEEP_INCUMBENT_METADATA;NO_RESEARCH_OVERRIDE_OBSERVED",
+        "served_scope": "Exact app.js and meta bytes plus MAEpointer404; no fresh per-player rendered-value/browser or fullboard inspection"
+      },
+      "C_owner_action": "A supplies or verifies latest archived source-week and exact current HGB point/adapter bindings; original-site owner admits the exact point-direction rule separately from its margin/ranker and records served use. Retain strong B/C native controls as separate panels."
+    },
+    {
+      "category": "pass_td",
+      "publisher": "C",
+      "source_ref": "2e604d8801d74788a61b3fa9e5206e7c4a452e81",
+      "C_published_decision": "BLOCKED",
+      "C_named_candidate": "A::pass_td::COUNT_A_MEAN::f8607aa99a94c7c1c9ab5c89599e07eba9b15527749b092b225f368032881e83::mean_objective_point",
+      "C_candidate_output": "mean_objective_point",
+      "C_preferred": {
+        "procedure": "A::pass_td::COUNT_A_MEAN::f8607aa99a94c7c1c9ab5c89599e07eba9b15527749b092b225f368032881e83::mean_objective_point",
+        "output": "mean_objective_point",
+        "status": "OLDER_REVIEW_CANDIDATE_AT_AS_REPORTED_SCOPE;CURRENT_BINDINGS_REQUIRED",
+        "rationale": "Corrected CountA mean ties legacy points on the retained A panel and exceeds Leafmedian by2/142 in that old view; five-week duration does not activate the currently missing feed. Use corrected mean, never legacy_point/NaNmean/barepredict.",
+        "operational_effect": "No activation by this table. Exact current feed/consumer admission and existing provisional policy remain with named owner.",
+        "eligibility_state": "CONDITIONAL_OWNER_REVIEW;ARCHIVED_SOURCE_WEEK_AND_CURRENT_EXPORT_BINDINGS_PENDING"
+      },
+      "C_actual_weeks": {
+        "2026": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "C_own_sides": {
+        "OVER": {
+          "wins": 43,
+          "losses": 31,
+          "decided": 74,
+          "rate": 0.581081081081081,
+          "selected": null
+        },
+        "UNDER": {
+          "wins": 44,
+          "losses": 24,
+          "decided": 68,
+          "rate": 0.6470588235294118,
+          "selected": null
+        },
+        "COMBINED": {
+          "wins": 87,
+          "losses": 55,
+          "decided": 142,
+          "rate": 0.6126760563380281,
+          "selected": null
+        }
+      },
+      "C_coverage": {
+        "eligible": 142,
+        "available": 142,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "unavailable": 0,
+        "fallback": null,
+        "abstained": 0,
+        "games": 78,
+        "player_games": null,
+        "scope": "Named panel only; no unknown counts converted tozero. Older primary intersection is not the entire unfiltered website board."
+      },
+      "C_controls": {
+        "ALWAYS_OVER": {
+          "wins": 67,
+          "decided": 142
+        },
+        "ALWAYS_UNDER": {
+          "wins": 75,
+          "decided": 142
+        },
+        "scope": "Same procedure own decided pool only, not a newly approved constant-side policy.",
+        "incumbent_comparison": "NOT_ESTABLISHED_ON_THIS_EXACT_PANEL; limits superiority claims, not an indefinite veto on an existing provisional path."
+      },
+      "C_uncertainty": {
+        "state": "Five exposed clusters and owner-reported paired intervals for named annual5; earlier archived max selected acrossmanymethods. No universal connected cross-session ranking.",
+        "private_scope": "Publicaggregate/member arithmetic only; no private offer clocks/rows/fitted models independentlyinspected by this draft.",
+        "source_interval_binding": "Archivedsource retains original intervals; no new paired interval manufactured."
+      },
+      "C_duration": {
+        "status": "MET_AS_REPORTED_7_SCORED_ARCHIVED_WEEKS;SOURCE_SCOPE_PENDING_CURRENT_BINDING",
+        "reported_season_weeks": [
+          [
+            2026,
+            1
+          ],
+          [
+            2026,
+            2
+          ],
+          [
+            2026,
+            3
+          ],
+          [
+            2026,
+            4
+          ],
+          [
+            2026,
+            5
+          ],
+          [
+            2026,
+            6
+          ],
+          [
+            2026,
+            7
+          ]
+        ],
+        "not_global_source_revocation": "Named C03annual correction does not invalidate every other archived/source-specificW6-W8record. First-five subpanel is separately shown, not silently substituted."
+      },
+      "C_evidence": "ARCHIVED_OWNER_REPORTED_TIMING_UNVERIFIED;CURRENT_SOURCE_WEEK_BINDING_PENDING",
+      "C_actual_live": {
+        "category": "pass_td",
+        "current_execution_model_metadata": "sleeper-matchup-classic-presence-strict-v2",
+        "live_numerical_path": "Incumbent prop.adj (Sleeper projection plus declared matchup adjustment); optional independently typed MAE reader falls back because pointer404",
+        "category_direction_path": "Incumbent serialized prop.lean on real book lines; selected override would use selectedPropGap margin, not strict crossing",
+        "selected_override_repository_state": "DISABLED_USE_R0",
+        "selected_override_rows": 0,
+        "registered_selection_margin": 0.15,
+        "ranking_scale": 0.6,
+        "minimum_saved_book_line": 0.5,
+        "current_Top_Picks_path": "Saved incumbent board picks; optional selected-rankings path only when a selected overlay is admitted",
+        "probability_or_confidence": "Point/point gap has no implied probability or EV",
+        "fallback": "Same-opportunity identified incumbent, not zero; absent MAE/selected feed fails closed for that override",
+        "product_disposition_observation": "KEEP_INCUMBENT_METADATA;NO_RESEARCH_OVERRIDE_OBSERVED",
+        "served_scope": "Exact app.js and meta bytes plus MAEpointer404; no fresh per-player rendered-value/browser or fullboard inspection"
+      },
+      "C_owner_action": "Codex A retained producer executor: verify own active lease and run repaired complete CountA mean adapter on registered research/weekly-storage-probe-v1 /lab.yml, current SOURCE/query/feature_capture, actual issuedRoot<=61440bytes; publish permitted derived feed. Latest checked run41564933010 executed a2ab7d4 onNov3; no current repaired-run receipt. Website owner admits then verifies isolated product. No EPA requirement inherited from rushingF3."
+    },
+    {
+      "category": "pass_cmp",
+      "publisher": "C",
+      "source_ref": "2e604d8801d74788a61b3fa9e5206e7c4a452e81",
+      "C_published_decision": "SHADOW",
+      "C_named_candidate": "A::pass_cmp::CATBOOST_MEDIUM::8aeaa5083a4dc10d5e19f13cef30bc6607f6f5e1e40582059876583526927da6::mean_objective_point",
+      "C_candidate_output": "mean_objective_point",
+      "C_preferred": {
+        "procedure": "A::pass_cmp::CATBOOST_MEDIUM::8aeaa5083a4dc10d5e19f13cef30bc6607f6f5e1e40582059876583526927da6::mean_objective_point",
+        "output": "mean_objective_point",
+        "status": "FIVE_WEEK_SCOPED_OWNER_REVIEW_CANDIDATE",
+        "rationale": "CatBoost mean and HGB MAE point tie52/88 on five annual weeks, exceed every new B timing output on that same panel, and beat same-poolOver48/88. This is a real scoped candidate set, not a universal champion or proof of deployment.",
+        "operational_effect": "No activation by this table. Exact current feed/consumer admission and existing provisional policy remain with named owner.",
+        "tied_candidate_set": [
+          "A::CATBOOST_MEDIUM::mean_objective_point",
+          "A::HGB_MAE_DIRECT::mae_objective_point"
+        ],
+        "tie_policy": "Do not invent a winner from lower MAE or integration ease; use existing owner tie/continuity rule with verifiedcurrentexport."
+      },
+      "C_actual_weeks": {
+        "2026": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "C_own_sides": {
+        "OVER": {
+          "wins": 25,
+          "losses": 13,
+          "decided": 38,
+          "rate": 0.6578947368421053,
+          "selected": 38
+        },
+        "UNDER": {
+          "wins": 27,
+          "losses": 23,
+          "decided": 50,
+          "rate": 0.54,
+          "selected": 50
+        },
+        "COMBINED": {
+          "wins": 52,
+          "losses": 36,
+          "decided": 88,
+          "rate": 0.5909090909090909,
+          "selected": 88
+        }
+      },
+      "C_coverage": {
+        "eligible": 88,
+        "available": 88,
+        "selected": 88,
+        "decided": 88,
+        "unknown": 0,
+        "unavailable": null,
+        "fallback": null,
+        "abstained": null,
+        "games": 51,
+        "player_games": null,
+        "scope": "Named panel only; no unknown counts converted tozero. Older primary intersection is not the entire unfiltered website board."
+      },
+      "C_controls": {
+        "ALWAYS_OVER": {
+          "wins": 48,
+          "decided": 88
+        },
+        "ALWAYS_UNDER": {
+          "wins": 40,
+          "decided": 88
+        },
+        "scope": "Same procedure own decided pool only, not a newly approved constant-side policy.",
+        "incumbent_comparison": "NOT_ESTABLISHED_ON_THIS_EXACT_PANEL; limits superiority claims, not an indefinite veto on an existing provisional path."
+      },
+      "C_uncertainty": {
+        "state": "Five exposed clusters and owner-reported paired intervals for named annual5; earlier archived max selected acrossmanymethods. No universal connected cross-session ranking.",
+        "private_scope": "Publicaggregate/member arithmetic only; no private offer clocks/rows/fitted models independentlyinspected by this draft.",
+        "source_interval_binding": "intake/NEW_EXACT_ANNUAL_PAIRED_ROWS.json.xz"
+      },
+      "C_duration": {
+        "status": "MET_FIVE_OWNER_LOCAL_ACTUAL_LINE_WEEKS_AT_RETAINED_TIER",
+        "actual_season_weeks": [
+          [
+            2026,
+            1
+          ],
+          [
+            2026,
+            2
+          ],
+          [
+            2026,
+            3
+          ],
+          [
+            2026,
+            4
+          ],
+          [
+            2026,
+            5
+          ]
+        ],
+        "scientific_combined_support": "88decided<100 V6scientific-leader support; five-week floor met. This does not invent a new operational provisional veto."
+      },
+      "C_evidence": "CURRENT_VINTAGE_CHRONOLOGICAL_RECONSTRUCTION_ACTUAL_LINES_QUOTE_AND_DECISION_TIMING_UNVERIFIED_EXPOSED_DEVELOPMENT",
+      "C_actual_live": {
+        "category": "pass_cmp",
+        "current_execution_model_metadata": "sleeper-matchup-classic-presence-strict-v2",
+        "live_numerical_path": "Incumbent prop.adj (Sleeper projection plus declared matchup adjustment); optional independently typed MAE reader falls back because pointer404",
+        "category_direction_path": "Incumbent serialized prop.lean on real book lines; selected override would use selectedPropGap margin, not strict crossing",
+        "selected_override_repository_state": "DISABLED_USE_R0",
+        "selected_override_rows": 0,
+        "registered_selection_margin": 0.8,
+        "ranking_scale": 2.5,
+        "minimum_saved_book_line": 12.5,
+        "current_Top_Picks_path": "Saved incumbent board picks; optional selected-rankings path only when a selected overlay is admitted",
+        "probability_or_confidence": "Point/point gap has no implied probability or EV",
+        "fallback": "Same-opportunity identified incumbent, not zero; absent MAE/selected feed fails closed for that override",
+        "product_disposition_observation": "KEEP_INCUMBENT_METADATA;NO_RESEARCH_OVERRIDE_OBSERVED",
+        "served_scope": "Exact app.js and meta bytes plus MAEpointer404; no fresh per-player rendered-value/browser or fullboard inspection"
+      },
+      "C_owner_action": "A annual timing join is COMPLETE; do not request it again. A supplies CatBoost/HGB current-query delivery bindings or another independently eligible compatible export; website owner resolves tied direction candidates under existing policy and actual readiness. B reconciles normalized W5 membership privately before any cross-panel union."
+    },
+    {
+      "category": "pass_att",
+      "publisher": "C",
+      "source_ref": "2e604d8801d74788a61b3fa9e5206e7c4a452e81",
+      "C_published_decision": "KEEP_INCUMBENT",
+      "C_named_candidate": "A::pass_att::COUNT_A_LEGACY_POINT::6aa8cf5de83b8ecae994e9e24412a5eeef688d1b50ea7f3880aa4f369c2aad23::legacy_empirical_point",
+      "C_candidate_output": "legacy_empirical_point",
+      "C_preferred": {
+        "procedure": null,
+        "output": "legacy_empirical_point",
+        "status": "NO_NEW_REPLACEMENT_RECOMMENDED;RETAIN_CURRENT_BASELINE",
+        "rationale": "The raw archived leader loses same-pool always-Over. Retain the incumbent under its existing policy; this does not validate that baseline as champion.",
+        "operational_effect": "No activation by this table. Exact current feed/consumer admission and existing provisional policy remain with named owner.",
+        "not_recommended_as_new_primary_reason": "Raw archived direction lead loses strongest constant; no demonstrated supported replacement.",
+        "eligibility_state": "CONDITIONAL_OWNER_REVIEW;ARCHIVED_SOURCE_WEEK_AND_CURRENT_EXPORT_BINDINGS_PENDING",
+        "review_candidate": "A::pass_att::COUNT_A_LEGACY_POINT::6aa8cf5de83b8ecae994e9e24412a5eeef688d1b50ea7f3880aa4f369c2aad23::legacy_empirical_point"
+      },
+      "C_actual_weeks": {
+        "2026": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "C_own_sides": {
+        "OVER": {
+          "wins": 19,
+          "losses": 16,
+          "decided": 35,
+          "rate": 0.5428571428571428,
+          "selected": null
+        },
+        "UNDER": {
+          "wins": 51,
+          "losses": 57,
+          "decided": 108,
+          "rate": 0.4722222222222222,
+          "selected": null
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 73,
+          "decided": 143,
+          "rate": 0.48951048951048953,
+          "selected": null
+        }
+      },
+      "C_coverage": {
+        "eligible": 143,
+        "available": 143,
+        "selected": 143,
+        "decided": 143,
+        "unknown": 0,
+        "unavailable": 0,
+        "fallback": null,
+        "abstained": 0,
+        "games": 79,
+        "player_games": null,
+        "scope": "Named panel only; no unknown counts converted tozero. Older primary intersection is not the entire unfiltered website board."
+      },
+      "C_controls": {
+        "ALWAYS_OVER": {
+          "wins": 76,
+          "decided": 143
+        },
+        "ALWAYS_UNDER": {
+          "wins": 67,
+          "decided": 143
+        },
+        "scope": "Same procedure own decided pool only, not a newly approved constant-side policy.",
+        "incumbent_comparison": "NOT_ESTABLISHED_ON_THIS_EXACT_PANEL; limits superiority claims, not an indefinite veto on an existing provisional path."
+      },
+      "C_uncertainty": {
+        "state": "Five exposed clusters and owner-reported paired intervals for named annual5; earlier archived max selected acrossmanymethods. No universal connected cross-session ranking.",
+        "private_scope": "Publicaggregate/member arithmetic only; no private offer clocks/rows/fitted models independentlyinspected by this draft.",
+        "source_interval_binding": "Archivedsource retains original intervals; no new paired interval manufactured."
+      },
+      "C_duration": {
+        "status": "MET_AS_REPORTED_7_SCORED_ARCHIVED_WEEKS;SOURCE_SCOPE_PENDING_CURRENT_BINDING",
+        "reported_season_weeks": [
+          [
+            2026,
+            1
+          ],
+          [
+            2026,
+            2
+          ],
+          [
+            2026,
+            3
+          ],
+          [
+            2026,
+            4
+          ],
+          [
+            2026,
+            5
+          ],
+          [
+            2026,
+            6
+          ],
+          [
+            2026,
+            7
+          ]
+        ],
+        "not_global_source_revocation": "Named C03annual correction does not invalidate every other archived/source-specificW6-W8record. First-five subpanel is separately shown, not silently substituted."
+      },
+      "C_evidence": "ARCHIVED_OWNER_REPORTED_TIMING_UNVERIFIED;CURRENT_SOURCE_WEEK_BINDING_PENDING",
+      "C_actual_live": {
+        "category": "pass_att",
+        "current_execution_model_metadata": "sleeper-matchup-classic-presence-strict-v2",
+        "live_numerical_path": "Incumbent prop.adj (Sleeper projection plus declared matchup adjustment); optional independently typed MAE reader falls back because pointer404",
+        "category_direction_path": "Incumbent serialized prop.lean on real book lines; selected override would use selectedPropGap margin, not strict crossing",
+        "selected_override_repository_state": "DISABLED_USE_R0",
+        "selected_override_rows": 0,
+        "registered_selection_margin": 1,
+        "ranking_scale": 3,
+        "minimum_saved_book_line": 20.5,
+        "current_Top_Picks_path": "Saved incumbent board picks; optional selected-rankings path only when a selected overlay is admitted",
+        "probability_or_confidence": "Point/point gap has no implied probability or EV",
+        "fallback": "Same-opportunity identified incumbent, not zero; absent MAE/selected feed fails closed for that override",
+        "product_disposition_observation": "KEEP_INCUMBENT_METADATA;NO_RESEARCH_OVERRIDE_OBSERVED",
+        "served_scope": "Exact app.js and meta bytes plus MAEpointer404; no fresh per-player rendered-value/browser or fullboard inspection"
+      },
+      "C_owner_action": "A/B preserve completed exact joins; qualify only missing source/output cells. Candidate CountA/Cat first-five observed43/87 losesAlwaysOver46; do not promote this unchanged losing recipe. Website owner keeps an honest incumbent until an independently eligible alternative is supplied."
+    },
+    {
+      "category": "pass_int",
+      "publisher": "C",
+      "source_ref": "2e604d8801d74788a61b3fa9e5206e7c4a452e81",
+      "C_published_decision": "SHADOW",
+      "C_named_candidate": "A::pass_int::LEAF_CDF::82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04::mean",
+      "C_candidate_output": "mean",
+      "C_preferred": {
+        "procedure": "A::pass_int::LEAF_CDF::82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04::mean",
+        "output": "mean",
+        "status": "OLDER_REVIEW_CANDIDATE_AT_AS_REPORTED_SCOPE;CURRENT_BINDINGS_REQUIRED",
+        "rationale": "Leaf mean is the raw archived complete-procedure leader; its ownUnder pool is tiny. Combined and side-specific support are assessed separately; do not demand100in both sides to assess combined.",
+        "operational_effect": "No activation by this table. Exact current feed/consumer admission and existing provisional policy remain with named owner.",
+        "eligibility_state": "CONDITIONAL_OWNER_REVIEW;ARCHIVED_SOURCE_WEEK_AND_CURRENT_EXPORT_BINDINGS_PENDING"
+      },
+      "C_actual_weeks": {
+        "2026": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "C_own_sides": {
+        "OVER": {
+          "wins": 75,
+          "losses": 58,
+          "decided": 133,
+          "rate": 0.5639097744360902,
+          "selected": null
+        },
+        "UNDER": {
+          "wins": 8,
+          "losses": 2,
+          "decided": 10,
+          "rate": 0.8,
+          "selected": null
+        },
+        "COMBINED": {
+          "wins": 83,
+          "losses": 60,
+          "decided": 143,
+          "rate": 0.5804195804195804,
+          "selected": null
+        }
+      },
+      "C_coverage": {
+        "eligible": 143,
+        "available": 143,
+        "selected": 143,
+        "decided": 143,
+        "unknown": 0,
+        "unavailable": 0,
+        "fallback": null,
+        "abstained": 0,
+        "games": 78,
+        "player_games": null,
+        "scope": "Named panel only; no unknown counts converted tozero. Older primary intersection is not the entire unfiltered website board."
+      },
+      "C_controls": {
+        "ALWAYS_OVER": {
+          "wins": 77,
+          "decided": 143
+        },
+        "ALWAYS_UNDER": {
+          "wins": 66,
+          "decided": 143
+        },
+        "scope": "Same procedure own decided pool only, not a newly approved constant-side policy.",
+        "incumbent_comparison": "NOT_ESTABLISHED_ON_THIS_EXACT_PANEL; limits superiority claims, not an indefinite veto on an existing provisional path."
+      },
+      "C_uncertainty": {
+        "state": "Five exposed clusters and owner-reported paired intervals for named annual5; earlier archived max selected acrossmanymethods. No universal connected cross-session ranking.",
+        "private_scope": "Publicaggregate/member arithmetic only; no private offer clocks/rows/fitted models independentlyinspected by this draft.",
+        "source_interval_binding": "Archivedsource retains original intervals; no new paired interval manufactured."
+      },
+      "C_duration": {
+        "status": "MET_AS_REPORTED_7_SCORED_ARCHIVED_WEEKS;SOURCE_SCOPE_PENDING_CURRENT_BINDING",
+        "reported_season_weeks": [
+          [
+            2026,
+            1
+          ],
+          [
+            2026,
+            2
+          ],
+          [
+            2026,
+            3
+          ],
+          [
+            2026,
+            4
+          ],
+          [
+            2026,
+            5
+          ],
+          [
+            2026,
+            6
+          ],
+          [
+            2026,
+            7
+          ]
+        ],
+        "not_global_source_revocation": "Named C03annual correction does not invalidate every other archived/source-specificW6-W8record. First-five subpanel is separately shown, not silently substituted."
+      },
+      "C_evidence": "ARCHIVED_OWNER_REPORTED_TIMING_UNVERIFIED;CURRENT_SOURCE_WEEK_BINDING_PENDING",
+      "C_actual_live": {
+        "category": "pass_int",
+        "current_execution_model_metadata": "sleeper-matchup-classic-presence-strict-v2",
+        "live_numerical_path": "Incumbent prop.adj (Sleeper projection plus declared matchup adjustment); optional independently typed MAE reader falls back because pointer404",
+        "category_direction_path": "Incumbent serialized prop.lean on real book lines; selected override would use selectedPropGap margin, not strict crossing",
+        "selected_override_repository_state": "DISABLED_USE_R0",
+        "selected_override_rows": 0,
+        "registered_selection_margin": 0.12,
+        "ranking_scale": 0.5,
+        "minimum_saved_book_line": 0.5,
+        "current_Top_Picks_path": "Saved incumbent board picks; optional selected-rankings path only when a selected overlay is admitted",
+        "probability_or_confidence": "Point/point gap has no implied probability or EV",
+        "fallback": "Same-opportunity identified incumbent, not zero; absent MAE/selected feed fails closed for that override",
+        "product_disposition_observation": "KEEP_INCUMBENT_METADATA;NO_RESEARCH_OVERRIDE_OBSERVED",
+        "served_scope": "Exact app.js and meta bytes plus MAEpointer404; no fresh per-player rendered-value/browser or fullboard inspection"
+      },
+      "C_owner_action": "A supplies exact Leaf mean model/history/source/current-query adapter and permitted derived output; website owner evaluates point-direction admission at the actual line, without borrowing the tiny80%Under pool as per-pick confidence."
+    },
+    {
+      "category": "rush_yd",
+      "publisher": "C",
+      "source_ref": "2e604d8801d74788a61b3fa9e5206e7c4a452e81",
+      "C_published_decision": "KEEP_INCUMBENT",
+      "C_named_candidate": "A::rush_yd::EQUAL_CDF_CAT_HGB_POINT::d253d5e193e297b952ca49b6905186329598289ce0bebac8698c3c30ecea3681::empirical_point_blend",
+      "C_candidate_output": "empirical_point_blend",
+      "C_preferred": {
+        "procedure": "A::rush_yd::EQUAL_CDF_CAT_HGB_POINT::d253d5e193e297b952ca49b6905186329598289ce0bebac8698c3c30ecea3681::empirical_point_blend",
+        "output": "empirical_point_blend",
+        "status": "OLDER_REVIEW_CANDIDATE_AT_AS_REPORTED_SCOPE;CURRENT_BINDINGS_REQUIRED",
+        "rationale": "Old mixed-role Leafmedian/blend5-partition view losesUnder167vs165; A48hRB97/177 versusstrong94 is inconclusive. Do not select the easier role/source population after outcomes.",
+        "operational_effect": "No activation by this table. Exact current feed/consumer admission and existing provisional policy remain with named owner.",
+        "eligibility_state": "CONDITIONAL_OWNER_REVIEW;ARCHIVED_SOURCE_WEEK_AND_CURRENT_EXPORT_BINDINGS_PENDING"
+      },
+      "C_actual_weeks": {
+        "2026": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "C_own_sides": {
+        "OVER": {
+          "wins": 61,
+          "losses": 55,
+          "decided": 116,
+          "rate": 0.5258620689655172,
+          "selected": null
+        },
+        "UNDER": {
+          "wins": 199,
+          "losses": 128,
+          "decided": 327,
+          "rate": 0.6085626911314985,
+          "selected": null
+        },
+        "COMBINED": {
+          "wins": 260,
+          "losses": 183,
+          "decided": 443,
+          "rate": 0.5869074492099323,
+          "selected": null
+        }
+      },
+      "C_coverage": {
+        "eligible": 455,
+        "available": 455,
+        "selected": 455,
+        "decided": 443,
+        "unknown": 12,
+        "unavailable": 0,
+        "fallback": null,
+        "abstained": 0,
+        "games": 81,
+        "player_games": null,
+        "scope": "Named panel only; no unknown counts converted tozero. Older primary intersection is not the entire unfiltered website board."
+      },
+      "C_controls": {
+        "ALWAYS_OVER": {
+          "wins": 189,
+          "decided": 443
+        },
+        "ALWAYS_UNDER": {
+          "wins": 254,
+          "decided": 443
+        },
+        "scope": "Same procedure own decided pool only, not a newly approved constant-side policy.",
+        "incumbent_comparison": "NOT_ESTABLISHED_ON_THIS_EXACT_PANEL; limits superiority claims, not an indefinite veto on an existing provisional path."
+      },
+      "C_uncertainty": {
+        "state": "Five exposed clusters and owner-reported paired intervals for named annual5; earlier archived max selected acrossmanymethods. No universal connected cross-session ranking.",
+        "private_scope": "Publicaggregate/member arithmetic only; no private offer clocks/rows/fitted models independentlyinspected by this draft.",
+        "source_interval_binding": "Archivedsource retains original intervals; no new paired interval manufactured."
+      },
+      "C_duration": {
+        "status": "MET_AS_REPORTED_7_SCORED_ARCHIVED_WEEKS;SOURCE_SCOPE_PENDING_CURRENT_BINDING",
+        "reported_season_weeks": [
+          [
+            2026,
+            1
+          ],
+          [
+            2026,
+            2
+          ],
+          [
+            2026,
+            3
+          ],
+          [
+            2026,
+            4
+          ],
+          [
+            2026,
+            5
+          ],
+          [
+            2026,
+            6
+          ],
+          [
+            2026,
+            7
+          ]
+        ],
+        "not_global_source_revocation": "Named C03annual correction does not invalidate every other archived/source-specificW6-W8record. First-five subpanel is separately shown, not silently substituted."
+      },
+      "C_evidence": "ARCHIVED_OWNER_REPORTED_TIMING_UNVERIFIED;CURRENT_SOURCE_WEEK_BINDING_PENDING",
+      "C_actual_live": {
+        "category": "rush_yd",
+        "current_execution_model_metadata": "sleeper-matchup-classic-presence-strict-v2",
+        "live_numerical_path": "Incumbent prop.adj (Sleeper projection plus declared matchup adjustment); optional independently typed MAE reader falls back because pointer404",
+        "category_direction_path": "Incumbent serialized prop.lean on real book lines; selected override would use selectedPropGap margin, not strict crossing",
+        "selected_override_repository_state": "DISABLED_USE_R0",
+        "selected_override_rows": 0,
+        "registered_selection_margin": 4,
+        "ranking_scale": 12,
+        "minimum_saved_book_line": 15.5,
+        "current_Top_Picks_path": "Saved incumbent board picks; optional selected-rankings path only when a selected overlay is admitted",
+        "probability_or_confidence": "Point/point gap has no implied probability or EV",
+        "fallback": "Same-opportunity identified incumbent, not zero; absent MAE/selected feed fails closed for that override",
+        "product_disposition_observation": "KEEP_INCUMBENT_METADATA;NO_RESEARCH_OVERRIDE_OBSERVED",
+        "served_scope": "Exact app.js and meta bytes plus MAEpointer404; no fresh per-player rendered-value/browser or fullboard inspection"
+      },
+      "C_owner_action": "A keeps48h median97/177 as an inconclusive RB-scope candidate and preserves its adverseW6-W7diagnostic; do not repeat timing fits. Qualify old mixed-role point panel before comparison with RB-only. Website owner may retain unaugmented product; no automatic Under strategy."
+    },
+    {
+      "category": "rush_att",
+      "publisher": "C",
+      "source_ref": "2e604d8801d74788a61b3fa9e5206e7c4a452e81",
+      "C_published_decision": "SHADOW",
+      "C_named_candidate": "A::rush_att::BACKFIELD_CDF::607c0a1288fd183d4e6de40c1e03851e9c5ed340d226fb2095f472ec7865834a::mean",
+      "C_candidate_output": "mean",
+      "C_preferred": {
+        "procedure": "A::rush_att::BACKFIELD_CDF::607c0a1288fd183d4e6de40c1e03851e9c5ed340d226fb2095f472ec7865834a::mean",
+        "output": "mean",
+        "status": "OLDER_REVIEW_CANDIDATE_AT_AS_REPORTED_SCOPE;CURRENT_BINDINGS_REQUIRED",
+        "rationale": "Backfield mean remains an older scoped review candidate; first-five archived146/260 beats constants130 on its own pool, while structured role/allocation challengers did not improve strong controls. Source/role/current export must be bound.",
+        "operational_effect": "No activation by this table. Exact current feed/consumer admission and existing provisional policy remain with named owner.",
+        "eligibility_state": "CONDITIONAL_OWNER_REVIEW;ARCHIVED_SOURCE_WEEK_AND_CURRENT_EXPORT_BINDINGS_PENDING"
+      },
+      "C_actual_weeks": {
+        "2026": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "C_own_sides": {
+        "OVER": {
+          "wins": 70,
+          "losses": 60,
+          "decided": 130,
+          "rate": 0.5384615384615384,
+          "selected": null
+        },
+        "UNDER": {
+          "wins": 104,
+          "losses": 93,
+          "decided": 197,
+          "rate": 0.5279187817258884,
+          "selected": null
+        },
+        "COMBINED": {
+          "wins": 174,
+          "losses": 153,
+          "decided": 327,
+          "rate": 0.5321100917431193,
+          "selected": null
+        }
+      },
+      "C_coverage": {
+        "eligible": 335,
+        "available": 335,
+        "selected": 335,
+        "decided": 327,
+        "unknown": 8,
+        "unavailable": 0,
+        "fallback": null,
+        "abstained": 0,
+        "games": 81,
+        "player_games": null,
+        "scope": "Named panel only; no unknown counts converted tozero. Older primary intersection is not the entire unfiltered website board."
+      },
+      "C_controls": {
+        "ALWAYS_OVER": {
+          "wins": 163,
+          "decided": 327
+        },
+        "ALWAYS_UNDER": {
+          "wins": 164,
+          "decided": 327
+        },
+        "scope": "Same procedure own decided pool only, not a newly approved constant-side policy.",
+        "incumbent_comparison": "NOT_ESTABLISHED_ON_THIS_EXACT_PANEL; limits superiority claims, not an indefinite veto on an existing provisional path."
+      },
+      "C_uncertainty": {
+        "state": "Five exposed clusters and owner-reported paired intervals for named annual5; earlier archived max selected acrossmanymethods. No universal connected cross-session ranking.",
+        "private_scope": "Publicaggregate/member arithmetic only; no private offer clocks/rows/fitted models independentlyinspected by this draft.",
+        "source_interval_binding": "Archivedsource retains original intervals; no new paired interval manufactured."
+      },
+      "C_duration": {
+        "status": "MET_AS_REPORTED_7_SCORED_ARCHIVED_WEEKS;SOURCE_SCOPE_PENDING_CURRENT_BINDING",
+        "reported_season_weeks": [
+          [
+            2026,
+            1
+          ],
+          [
+            2026,
+            2
+          ],
+          [
+            2026,
+            3
+          ],
+          [
+            2026,
+            4
+          ],
+          [
+            2026,
+            5
+          ],
+          [
+            2026,
+            6
+          ],
+          [
+            2026,
+            7
+          ]
+        ],
+        "not_global_source_revocation": "Named C03annual correction does not invalidate every other archived/source-specificW6-W8record. First-five subpanel is separately shown, not silently substituted."
+      },
+      "C_evidence": "ARCHIVED_OWNER_REPORTED_TIMING_UNVERIFIED;CURRENT_SOURCE_WEEK_BINDING_PENDING",
+      "C_actual_live": {
+        "category": "rush_att",
+        "current_execution_model_metadata": "sleeper-matchup-classic-presence-strict-v2",
+        "live_numerical_path": "Incumbent prop.adj (Sleeper projection plus declared matchup adjustment); optional independently typed MAE reader falls back because pointer404",
+        "category_direction_path": "Incumbent serialized prop.lean on real book lines; selected override would use selectedPropGap margin, not strict crossing",
+        "selected_override_repository_state": "DISABLED_USE_R0",
+        "selected_override_rows": 0,
+        "registered_selection_margin": 0.8,
+        "ranking_scale": 3,
+        "minimum_saved_book_line": 6.5,
+        "current_Top_Picks_path": "Saved incumbent board picks; optional selected-rankings path only when a selected overlay is admitted",
+        "probability_or_confidence": "Point/point gap has no implied probability or EV",
+        "fallback": "Same-opportunity identified incumbent, not zero; absent MAE/selected feed fails closed for that override",
+        "product_disposition_observation": "KEEP_INCUMBENT_METADATA;NO_RESEARCH_OVERRIDE_OBSERVED",
+        "served_scope": "Exact app.js and meta bytes plus MAEpointer404; no fresh per-player rendered-value/browser or fullboard inspection"
+      },
+      "C_owner_action": "A supplies exact Backfield mean role scope, opportunity/fallback/current-query adapter and source bindings for owner review; keep negative dynamic-allocation recipes closed. Mixed QB/RB/WR offered-player result is not an RB-only qualification."
+    },
+    {
+      "category": "rec",
+      "publisher": "C",
+      "source_ref": "2e604d8801d74788a61b3fa9e5206e7c4a452e81",
+      "C_published_decision": "SHADOW",
+      "C_named_candidate": "C::PLAYER-CONTEXT-MATCHUP-01::v1.1::P1::mean",
+      "C_candidate_output": "mean",
+      "C_preferred": {
+        "procedure": "C::PLAYER-CONTEXT-MATCHUP-01::v1.1::P1::mean",
+        "output": "mean",
+        "status": "FIVE_WEEK_SCOPED_OWNER_REVIEW_CANDIDATE",
+        "rationale": "Retained C P1 mean239/412 is strongest in the named five-week WR/TE control set; A Leafmean238/412 and C03R3median237/412 are close. New C04F2/F3 mean216/217 and median232/234 do not displace it. Source timing and current delivery remain distinct.",
+        "operational_effect": "No activation by this table. Exact current feed/consumer admission and existing provisional policy remain with named owner."
+      },
+      "C_actual_weeks": {
+        "2026": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "C_own_sides": {
+        "OVER": {
+          "wins": 78,
+          "losses": 50,
+          "decided": 128,
+          "rate": 0.609375,
+          "selected": 133
+        },
+        "UNDER": {
+          "wins": 161,
+          "losses": 123,
+          "decided": 284,
+          "rate": 0.5669014084507042,
+          "selected": 288
+        },
+        "COMBINED": {
+          "wins": 239,
+          "losses": 173,
+          "decided": 412,
+          "rate": 0.5800970873786407,
+          "selected": 421
+        }
+      },
+      "C_coverage": {
+        "eligible": 469,
+        "available": 421,
+        "selected": 421,
+        "decided": 412,
+        "unknown": 9,
+        "unavailable": 48,
+        "fallback": null,
+        "abstained": null,
+        "games": 53,
+        "player_games": null,
+        "scope": "Named panel only; no unknown counts converted tozero. Older primary intersection is not the entire unfiltered website board."
+      },
+      "C_controls": {
+        "ALWAYS_OVER": {
+          "wins": 201,
+          "decided": 412
+        },
+        "ALWAYS_UNDER": {
+          "wins": 211,
+          "decided": 412
+        },
+        "scope": "Same procedure own decided pool only, not a newly approved constant-side policy.",
+        "incumbent_comparison": "NOT_ESTABLISHED_ON_THIS_EXACT_PANEL; limits superiority claims, not an indefinite veto on an existing provisional path."
+      },
+      "C_uncertainty": {
+        "state": "Five exposed clusters and owner-reported paired intervals for named annual5; earlier archived max selected acrossmanymethods. No universal connected cross-session ranking.",
+        "private_scope": "Publicaggregate/member arithmetic only; no private offer clocks/rows/fitted models independentlyinspected by this draft.",
+        "source_interval_binding": "intake/NEW_EXACT_ANNUAL_PAIRED_ROWS.json.xz"
+      },
+      "C_duration": {
+        "status": "MET_FIVE_OWNER_LOCAL_ACTUAL_LINE_WEEKS_AT_RETAINED_TIER",
+        "actual_season_weeks": [
+          [
+            2026,
+            1
+          ],
+          [
+            2026,
+            2
+          ],
+          [
+            2026,
+            3
+          ],
+          [
+            2026,
+            4
+          ],
+          [
+            2026,
+            5
+          ]
+        ],
+        "scientific_combined_support": "412decided/53games/5weeks meets count support; superiority still requires existing paired/exposure review. OVER128 andUNDER284 each also meet count threshold, not automatic superiority."
+      },
+      "C_evidence": "CURRENT_VINTAGE_CHRONOLOGICAL_RECONSTRUCTION_ACTUAL_LINES_QUOTE_AND_DECISION_TIMING_UNVERIFIED_EXPOSED_DEVELOPMENT",
+      "C_actual_live": {
+        "category": "rec",
+        "current_execution_model_metadata": "sleeper-matchup-classic-presence-strict-v2",
+        "live_numerical_path": "Incumbent prop.adj (Sleeper projection plus declared matchup adjustment); optional independently typed MAE reader falls back because pointer404",
+        "category_direction_path": "Incumbent serialized prop.lean on real book lines; selected override would use selectedPropGap margin, not strict crossing",
+        "selected_override_repository_state": "DISABLED_USE_R0",
+        "selected_override_rows": 0,
+        "registered_selection_margin": 0.3,
+        "ranking_scale": 1.2,
+        "minimum_saved_book_line": 1.5,
+        "current_Top_Picks_path": "Saved incumbent board picks; optional selected-rankings path only when a selected overlay is admitted",
+        "probability_or_confidence": "Point/point gap has no implied probability or EV",
+        "fallback": "Same-opportunity identified incumbent, not zero; absent MAE/selected feed fails closed for that override",
+        "product_disposition_observation": "KEEP_INCUMBENT_METADATA;NO_RESEARCH_OVERRIDE_OBSERVED",
+        "served_scope": "Exact app.js and meta bytes plus MAEpointer404; no fresh per-player rendered-value/browser or fullboard inspection"
+      },
+      "C_owner_action": "C current-source P1 shadow feed is published; original website owner may verify the exact model/input/role/horizon and strict-direction consumer independently of numerical/Top paths. Current whole-population/roster/finality adapter remainsSHADOW until its exact evidence/admission is supported. Refresh source/native gate before any reuse after recorded expiry; no new fit if equivalent. No repeated A C04 join."
+    },
+    {
+      "category": "rec_yd",
+      "publisher": "C",
+      "source_ref": "2e604d8801d74788a61b3fa9e5206e7c4a452e81",
+      "C_published_decision": "KEEP_INCUMBENT",
+      "C_named_candidate": "A::rec_yd::RESPONSE_CDF::91ded3f65eff6db0c3335ff438be87e2509db888f11905c2683059001a6b650a::mean",
+      "C_candidate_output": "mean",
+      "C_preferred": {
+        "procedure": "A::rec_yd::RESPONSE_CDF::91ded3f65eff6db0c3335ff438be87e2509db888f11905c2683059001a6b650a::mean",
+        "output": "mean",
+        "status": "OLDER_REVIEW_CANDIDATE_AT_AS_REPORTED_SCOPE;CURRENT_BINDINGS_REQUIRED",
+        "rationale": "Older A Response mean wins its archived seven-week panel; first-five Leafmean wins322/593 instead, demonstrating why windows/source qualification cannot be silently exchanged. B C02native188/337 is a separate two-week panel with only+1 over the strongest B competitor.",
+        "operational_effect": "No activation by this table. Exact current feed/consumer admission and existing provisional policy remain with named owner.",
+        "eligibility_state": "CONDITIONAL_OWNER_REVIEW;ARCHIVED_SOURCE_WEEK_AND_CURRENT_EXPORT_BINDINGS_PENDING"
+      },
+      "C_actual_weeks": {
+        "2026": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "C_own_sides": {
+        "OVER": {
+          "wins": 298,
+          "losses": 268,
+          "decided": 566,
+          "rate": 0.5265017667844523,
+          "selected": null
+        },
+        "UNDER": {
+          "wins": 201,
+          "losses": 162,
+          "decided": 363,
+          "rate": 0.5537190082644629,
+          "selected": null
+        },
+        "COMBINED": {
+          "wins": 499,
+          "losses": 430,
+          "decided": 929,
+          "rate": 0.5371367061356297,
+          "selected": null
+        }
+      },
+      "C_coverage": {
+        "eligible": 1008,
+        "available": 1008,
+        "selected": 1008,
+        "decided": 929,
+        "unknown": 79,
+        "unavailable": 0,
+        "fallback": null,
+        "abstained": 0,
+        "games": 81,
+        "player_games": null,
+        "scope": "Named panel only; no unknown counts converted tozero. Older primary intersection is not the entire unfiltered website board."
+      },
+      "C_controls": {
+        "ALWAYS_OVER": {
+          "wins": 460,
+          "decided": 929
+        },
+        "ALWAYS_UNDER": {
+          "wins": 469,
+          "decided": 929
+        },
+        "scope": "Same procedure own decided pool only, not a newly approved constant-side policy.",
+        "incumbent_comparison": "NOT_ESTABLISHED_ON_THIS_EXACT_PANEL; limits superiority claims, not an indefinite veto on an existing provisional path."
+      },
+      "C_uncertainty": {
+        "state": "Five exposed clusters and owner-reported paired intervals for named annual5; earlier archived max selected acrossmanymethods. No universal connected cross-session ranking.",
+        "private_scope": "Publicaggregate/member arithmetic only; no private offer clocks/rows/fitted models independentlyinspected by this draft.",
+        "source_interval_binding": "Archivedsource retains original intervals; no new paired interval manufactured."
+      },
+      "C_duration": {
+        "status": "MET_AS_REPORTED_7_SCORED_ARCHIVED_WEEKS;SOURCE_SCOPE_PENDING_CURRENT_BINDING",
+        "reported_season_weeks": [
+          [
+            2026,
+            1
+          ],
+          [
+            2026,
+            2
+          ],
+          [
+            2026,
+            3
+          ],
+          [
+            2026,
+            4
+          ],
+          [
+            2026,
+            5
+          ],
+          [
+            2026,
+            6
+          ],
+          [
+            2026,
+            7
+          ]
+        ],
+        "not_global_source_revocation": "Named C03annual correction does not invalidate every other archived/source-specificW6-W8record. First-five subpanel is separately shown, not silently substituted."
+      },
+      "C_evidence": "ARCHIVED_OWNER_REPORTED_TIMING_UNVERIFIED;CURRENT_SOURCE_WEEK_BINDING_PENDING",
+      "C_actual_live": {
+        "category": "rec_yd",
+        "current_execution_model_metadata": "sleeper-matchup-classic-presence-strict-v2",
+        "live_numerical_path": "Incumbent prop.adj (Sleeper projection plus declared matchup adjustment); optional independently typed MAE reader falls back because pointer404",
+        "category_direction_path": "Incumbent serialized prop.lean on real book lines; selected override would use selectedPropGap margin, not strict crossing",
+        "selected_override_repository_state": "DISABLED_USE_R0",
+        "selected_override_rows": 0,
+        "registered_selection_margin": 4,
+        "ranking_scale": 12,
+        "minimum_saved_book_line": 15.5,
+        "current_Top_Picks_path": "Saved incumbent board picks; optional selected-rankings path only when a selected overlay is admitted",
+        "probability_or_confidence": "Point/point gap has no implied probability or EV",
+        "fallback": "Same-opportunity identified incumbent, not zero; absent MAE/selected feed fails closed for that override",
+        "product_disposition_observation": "KEEP_INCUMBENT_METADATA;NO_RESEARCH_OVERRIDE_OBSERVED",
+        "served_scope": "Exact app.js and meta bytes plus MAEpointer404; no fresh per-player rendered-value/browser or fullboard inspection"
+      },
+      "C_owner_action": "A supplies exact retained Response/Leaf point adapter and source-week qualification; B may supply its stronger native C02 CURRENT mean as a two-week shadow, not a five-week primary direction product. C finishes only a specified supported receiving-source or delivery dependency."
+    },
+    {
+      "category": "rush_rec_yd",
+      "publisher": "C",
+      "source_ref": "2e604d8801d74788a61b3fa9e5206e7c4a452e81",
+      "C_published_decision": "KEEP_INCUMBENT",
+      "C_named_candidate": "A::rush_rec_yd::RESPONSE_CDF::39328fd10db4c3c4f7d563fcb80520a95d5faf6f1f6967b507d9b7e74eda9f35::mean",
+      "C_candidate_output": "mean",
+      "C_preferred": {
+        "procedure": "A::rush_rec_yd::RESPONSE_CDF::39328fd10db4c3c4f7d563fcb80520a95d5faf6f1f6967b507d9b7e74eda9f35::mean",
+        "output": "mean",
+        "status": "OLDER_REVIEW_CANDIDATE_AT_AS_REPORTED_SCOPE;CURRENT_BINDINGS_REQUIRED",
+        "rationale": "Older Response mean is the archived observed leader; count components, participation and role remain qualified separately. No new composite test or source-qualified cross-session global winner was created.",
+        "operational_effect": "No activation by this table. Exact current feed/consumer admission and existing provisional policy remain with named owner.",
+        "eligibility_state": "CONDITIONAL_OWNER_REVIEW;ARCHIVED_SOURCE_WEEK_AND_CURRENT_EXPORT_BINDINGS_PENDING"
+      },
+      "C_actual_weeks": {
+        "2026": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "C_own_sides": {
+        "OVER": {
+          "wins": 117,
+          "losses": 113,
+          "decided": 230,
+          "rate": 0.508695652173913,
+          "selected": null
+        },
+        "UNDER": {
+          "wins": 130,
+          "losses": 108,
+          "decided": 238,
+          "rate": 0.5462184873949579,
+          "selected": null
+        },
+        "COMBINED": {
+          "wins": 247,
+          "losses": 221,
+          "decided": 468,
+          "rate": 0.5277777777777778,
+          "selected": null
+        }
+      },
+      "C_coverage": {
+        "eligible": 493,
+        "available": 493,
+        "selected": 493,
+        "decided": 468,
+        "unknown": 25,
+        "unavailable": 0,
+        "fallback": null,
+        "abstained": 0,
+        "games": 81,
+        "player_games": null,
+        "scope": "Named panel only; no unknown counts converted tozero. Older primary intersection is not the entire unfiltered website board."
+      },
+      "C_controls": {
+        "ALWAYS_OVER": {
+          "wins": 225,
+          "decided": 468
+        },
+        "ALWAYS_UNDER": {
+          "wins": 243,
+          "decided": 468
+        },
+        "scope": "Same procedure own decided pool only, not a newly approved constant-side policy.",
+        "incumbent_comparison": "NOT_ESTABLISHED_ON_THIS_EXACT_PANEL; limits superiority claims, not an indefinite veto on an existing provisional path."
+      },
+      "C_uncertainty": {
+        "state": "Five exposed clusters and owner-reported paired intervals for named annual5; earlier archived max selected acrossmanymethods. No universal connected cross-session ranking.",
+        "private_scope": "Publicaggregate/member arithmetic only; no private offer clocks/rows/fitted models independentlyinspected by this draft.",
+        "source_interval_binding": "Archivedsource retains original intervals; no new paired interval manufactured."
+      },
+      "C_duration": {
+        "status": "MET_AS_REPORTED_7_SCORED_ARCHIVED_WEEKS;SOURCE_SCOPE_PENDING_CURRENT_BINDING",
+        "reported_season_weeks": [
+          [
+            2026,
+            1
+          ],
+          [
+            2026,
+            2
+          ],
+          [
+            2026,
+            3
+          ],
+          [
+            2026,
+            4
+          ],
+          [
+            2026,
+            5
+          ],
+          [
+            2026,
+            6
+          ],
+          [
+            2026,
+            7
+          ]
+        ],
+        "not_global_source_revocation": "Named C03annual correction does not invalidate every other archived/source-specificW6-W8record. First-five subpanel is separately shown, not silently substituted."
+      },
+      "C_evidence": "ARCHIVED_OWNER_REPORTED_TIMING_UNVERIFIED;CURRENT_SOURCE_WEEK_BINDING_PENDING",
+      "C_actual_live": {
+        "category": "rush_rec_yd",
+        "current_execution_model_metadata": "sleeper-matchup-classic-presence-strict-v2",
+        "live_numerical_path": "Incumbent prop.adj (Sleeper projection plus declared matchup adjustment); optional independently typed MAE reader falls back because pointer404",
+        "category_direction_path": "Incumbent serialized prop.lean on real book lines; selected override would use selectedPropGap margin, not strict crossing",
+        "selected_override_repository_state": "DISABLED_USE_R0",
+        "selected_override_rows": 0,
+        "registered_selection_margin": 5,
+        "ranking_scale": 15,
+        "minimum_saved_book_line": 25.5,
+        "current_Top_Picks_path": "Saved incumbent board picks; optional selected-rankings path only when a selected overlay is admitted",
+        "probability_or_confidence": "Point/point gap has no implied probability or EV",
+        "fallback": "Same-opportunity identified incumbent, not zero; absent MAE/selected feed fails closed for that override",
+        "product_disposition_observation": "KEEP_INCUMBENT_METADATA;NO_RESEARCH_OVERRIDE_OBSERVED",
+        "served_scope": "Exact app.js and meta bytes plus MAEpointer404; no fresh per-player rendered-value/browser or fullboard inspection"
+      },
+      "C_owner_action": "A supplies exact Response mean complete-system recipe and component-complete outcomes/current query. Do not sum marginal medians or fill a missing receiving component; website owner preserves incumbent while checking an independently eligible composite product."
+    },
+    {
+      "category": "anytime_td",
+      "publisher": "C",
+      "source_ref": "2e604d8801d74788a61b3fa9e5206e7c4a452e81",
+      "C_published_decision": "ABSTAIN",
+      "C_named_candidate": null,
+      "C_candidate_output": null,
+      "C_preferred": {
+        "procedure": null,
+        "output": null,
+        "status": "NO_QUALIFIED_REPLACEMENT_ACTUAL_OFFER_DIRECTION",
+        "rationale": "NO_QUALIFIED_REPLACEMENT for actual-offer O/U in the accessible comparison. Inherited event/numerical models remain scope-visible; do not invent an opposite side.",
+        "operational_effect": "No activation by this table. Exact current feed/consumer admission and existing provisional policy remain with named owner."
+      },
+      "C_actual_weeks": {
+        "2026": []
+      },
+      "C_own_sides": {
+        "OVER": null,
+        "UNDER": null,
+        "COMBINED": null
+      },
+      "C_coverage": {
+        "eligible": null,
+        "available": null,
+        "selected": null,
+        "decided": 0,
+        "unknown": null,
+        "unavailable": null,
+        "fallback": null,
+        "games": null,
+        "player_games": null
+      },
+      "C_controls": {
+        "incumbent_comparison": "NOT_ESTABLISHED_NO_MATCHING_OFFER_CONTRACT"
+      },
+      "C_uncertainty": {
+        "state": "Five exposed clusters and owner-reported paired intervals for named annual5; earlier archived max selected acrossmanymethods. No universal connected cross-session ranking.",
+        "private_scope": "Publicaggregate/member arithmetic only; no private offer clocks/rows/fitted models independentlyinspected by this draft.",
+        "source_interval_binding": "Archivedsource retains original intervals; no new paired interval manufactured."
+      },
+      "C_duration": {
+        "status": "NOT_MET_NO_COMPATIBLE_ACTUAL_OFFER_DIRECTION_PRODUCT",
+        "event_or_numerical_weeks_do_not_transfer": true
+      },
+      "C_evidence": "NO_COMPATIBLE_ACTUAL_OFFER_DIRECTION_PANEL",
+      "C_actual_live": {
+        "category": "anytime_td",
+        "current_execution_model_metadata": "sleeper-matchup-classic-presence-strict-v2",
+        "live_numerical_path": "Uncalibrated guarded baseline TD probability from projected TDs; not a count point or authenticated offered-event selection",
+        "category_direction_path": "No invented NO/Under offered event; baseline probability display does not establish offered direction",
+        "selected_override_repository_state": "DISABLED_USE_R0",
+        "selected_override_rows": 0,
+        "registered_selection_margin": null,
+        "ranking_scale": null,
+        "minimum_saved_book_line": null,
+        "current_Top_Picks_path": "Not in the ten-category selectedRankingPolicy map",
+        "probability_or_confidence": "Guarded baseline probability explicitly uncalibrated",
+        "fallback": "Same-opportunity identified incumbent, not zero; absent MAE/selected feed fails closed for that override",
+        "product_disposition_observation": "ABSTAIN_UNSUPPORTED_OFFER_CLAIMS",
+        "served_scope": "Exact app.js and meta bytes plus MAEpointer404; no fresh per-player rendered-value/browser or fullboard inspection"
+      },
+      "C_owner_action": "Source/product owner qualifies actual rushing-or-receivingTD event offers, offered sides, participation and settlement. Event-probability history alone cannot qualify an unavailable No/Under market."
+    },
+    {
+      "category": "nick-chart-ppr-v1",
+      "publisher": "C",
+      "source_ref": "2e604d8801d74788a61b3fa9e5206e7c4a452e81",
+      "C_published_decision": "ABSTAIN",
+      "C_named_candidate": null,
+      "C_candidate_output": null,
+      "C_preferred": {
+        "procedure": null,
+        "output": null,
+        "status": "NO_QUALIFIED_REPLACEMENT_ACTUAL_OFFER_DIRECTION",
+        "rationale": "NO_QUALIFIED_REPLACEMENT for exact chart-offer direction. Exact chart numerical candidates can be reviewed separately under their actual evidence and completeness controls.",
+        "operational_effect": "No activation by this table. Exact current feed/consumer admission and existing provisional policy remain with named owner."
+      },
+      "C_actual_weeks": {
+        "2026": []
+      },
+      "C_own_sides": {
+        "OVER": null,
+        "UNDER": null,
+        "COMBINED": null
+      },
+      "C_coverage": {
+        "eligible": null,
+        "available": null,
+        "selected": null,
+        "decided": 0,
+        "unknown": null,
+        "unavailable": null,
+        "fallback": null,
+        "games": null,
+        "player_games": null
+      },
+      "C_controls": {
+        "incumbent_comparison": "NOT_ESTABLISHED_NO_MATCHING_OFFER_CONTRACT"
+      },
+      "C_uncertainty": {
+        "state": "Five exposed clusters and owner-reported paired intervals for named annual5; earlier archived max selected acrossmanymethods. No universal connected cross-session ranking.",
+        "private_scope": "Publicaggregate/member arithmetic only; no private offer clocks/rows/fitted models independentlyinspected by this draft.",
+        "source_interval_binding": "Archivedsource retains original intervals; no new paired interval manufactured."
+      },
+      "C_duration": {
+        "status": "NOT_MET_NO_COMPATIBLE_ACTUAL_OFFER_DIRECTION_PRODUCT",
+        "event_or_numerical_weeks_do_not_transfer": true
+      },
+      "C_evidence": "NO_COMPATIBLE_ACTUAL_OFFER_DIRECTION_PANEL",
+      "C_actual_live": {
+        "category": "nick-chart-ppr-v1",
+        "current_execution_model_metadata": "sleeper-matchup-classic-presence-strict-v2",
+        "live_numerical_path": "Website league PPR/half-PPR display is not verified as exact nick-chart-ppr-v1; exact-chart product unavailable",
+        "category_direction_path": "No exact chart direction qualified",
+        "selected_override_repository_state": "DISABLED_USE_R0",
+        "selected_override_rows": 0,
+        "registered_selection_margin": null,
+        "ranking_scale": null,
+        "minimum_saved_book_line": null,
+        "current_Top_Picks_path": "Not in the ten-category selectedRankingPolicy map",
+        "probability_or_confidence": "N/A exact chart",
+        "fallback": "Same-opportunity identified incumbent, not zero; absent MAE/selected feed fails closed for that override",
+        "product_disposition_observation": "ABSTAIN_EXACT_CHART_CLAIM",
+        "served_scope": "Exact app.js and meta bytes plus MAEpointer404; no fresh per-player rendered-value/browser or fullboard inspection"
+      },
+      "C_owner_action": "Label/source and website owners supply exact same-chart offer plus all required primitive completeness; numerical chart history remains separate. Generic fantasy or internal references cannot supply actual-offer direction."
+    }
+  ],
+  "B_ATT_exact_product": {
+    "candidate_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median",
+    "role": "QB",
+    "output": "LOWER_MEDIAN_POINT",
+    "decision": "P1 strict unrounded point>qualified lineOVER,<UNDER,=ABSTAIN; no implied probability or EV",
+    "original_registration": "reports/player-context-matchup-01/B/qb-wave-v1/FROZEN_PROTOCOL.json",
+    "history": "Original H-RECENT season-relative fit; expanding2022 featurememory; fixed7day reconstructed availability; weekly origin and pergame kickoff-left-limit query",
+    "actual_weeks": [
+      [
+        2026,
+        1
+      ],
+      [
+        2026,
+        2
+      ],
+      [
+        2026,
+        3
+      ],
+      [
+        2026,
+        4
+      ],
+      [
+        2026,
+        5
+      ]
+    ],
+    "duration_status": "FIVE_SCORED_ACTUAL_LINE_DIAGNOSTIC_WEEKS_MET_FOR_THIS_EXACT_POINT_PRODUCT;NOT_AUTHENTICATED_OR_PRIMARY_ADMITTED",
+    "own_record": {
+      "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+      "source_panel": "ALL",
+      "week_view": "ALL",
+      "candidate_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median",
+      "category": "pass_att",
+      "actual_scored_weeks": "[1,2,3,4,5]",
+      "weeks": "[1,2,3,4,5]",
+      "games": "51",
+      "player_games": "87",
+      "eligible": "87",
+      "unavailable": "0",
+      "coverage": "1.0",
+      "abstentions": "0",
+      "fallback_outputs": "0",
+      "OVER_selected": "5",
+      "OVER_wins": "4",
+      "OVER_losses": "1",
+      "OVER_decided": "5",
+      "OVER_rate": "0.8",
+      "UNDER_selected": "82",
+      "UNDER_wins": "40",
+      "UNDER_losses": "42",
+      "UNDER_decided": "82",
+      "UNDER_rate": "0.4878048780487805",
+      "COMBINED_selected": "87",
+      "COMBINED_wins": "44",
+      "COMBINED_losses": "43",
+      "COMBINED_decided": "87",
+      "COMBINED_rate": "0.5057471264367817",
+      "states": "{\"LOSS\":43,\"WIN\":44}",
+      "outer_outcomes": "{\"KNOWN_ACTUAL\":87}",
+      "forecast_outcome_cross_counts": "[{\"forecast_available\":true,\"outcome_state\":\"KNOWN_ACTUAL\",\"rows\":87}]",
+      "unavailable_reasons": "{}",
+      "numerical_MAE": "7.390804597701149",
+      "numerical_MSE": "95.6896551724138",
+      "numerical_bias": "-5.551724137931035",
+      "numerical_scored": "87",
+      "uncertainty_dependence_aware": "True",
+      "uncertainty_high": "0.6759259259259259",
+      "uncertainty_kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "uncertainty_low": "0.3333333333333333",
+      "uncertainty_small_cluster_caution": "True",
+      "uncertainty_week_clusters": "5",
+      "eligible_mask_sha256": "fe7e276a93990051a1e57ba85c5121dcf0d0848ba92e366cbcb839e1acf8a2f5",
+      "decided_mask_sha256": "fe7e276a93990051a1e57ba85c5121dcf0d0848ba92e366cbcb839e1acf8a2f5"
+    },
+    "weekly": [
+      {
+        "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+        "source_panel": "ALL",
+        "week_view": "1",
+        "candidate_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median",
+        "category": "pass_att",
+        "actual_scored_weeks": "[1]",
+        "weeks": "[1]",
+        "games": "6",
+        "player_games": "10",
+        "eligible": "10",
+        "unavailable": "0",
+        "coverage": "1.0",
+        "abstentions": "0",
+        "fallback_outputs": "0",
+        "OVER_selected": "0",
+        "OVER_wins": "",
+        "OVER_losses": "",
+        "OVER_decided": "0",
+        "OVER_rate": "",
+        "UNDER_selected": "10",
+        "UNDER_wins": "5",
+        "UNDER_losses": "5",
+        "UNDER_decided": "10",
+        "UNDER_rate": "0.5",
+        "COMBINED_selected": "10",
+        "COMBINED_wins": "5",
+        "COMBINED_losses": "5",
+        "COMBINED_decided": "10",
+        "COMBINED_rate": "0.5",
+        "states": "{\"LOSS\":5,\"WIN\":5}",
+        "outer_outcomes": "{\"KNOWN_ACTUAL\":10}",
+        "forecast_outcome_cross_counts": "[{\"forecast_available\":true,\"outcome_state\":\"KNOWN_ACTUAL\",\"rows\":10}]",
+        "unavailable_reasons": "{}",
+        "numerical_MAE": "5.9",
+        "numerical_MSE": "55.1",
+        "numerical_bias": "-4.5",
+        "numerical_scored": "10",
+        "uncertainty_dependence_aware": "False",
+        "uncertainty_high": "0.7634069094874361",
+        "uncertainty_kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+        "uncertainty_low": "0.236593090512564",
+        "uncertainty_small_cluster_caution": "",
+        "uncertainty_week_clusters": "1",
+        "eligible_mask_sha256": "3f045146bc80242a0882c4c6d0e3a5c7e9fcff0e17e012db2d79d6030c2d4a7c",
+        "decided_mask_sha256": "3f045146bc80242a0882c4c6d0e3a5c7e9fcff0e17e012db2d79d6030c2d4a7c"
+      },
+      {
+        "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+        "source_panel": "ALL",
+        "week_view": "2",
+        "candidate_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median",
+        "category": "pass_att",
+        "actual_scored_weeks": "[2]",
+        "weeks": "[2]",
+        "games": "14",
+        "player_games": "25",
+        "eligible": "25",
+        "unavailable": "0",
+        "coverage": "1.0",
+        "abstentions": "0",
+        "fallback_outputs": "0",
+        "OVER_selected": "3",
+        "OVER_wins": "3",
+        "OVER_losses": "0",
+        "OVER_decided": "3",
+        "OVER_rate": "1.0",
+        "UNDER_selected": "22",
+        "UNDER_wins": "16",
+        "UNDER_losses": "6",
+        "UNDER_decided": "22",
+        "UNDER_rate": "0.7272727272727273",
+        "COMBINED_selected": "25",
+        "COMBINED_wins": "19",
+        "COMBINED_losses": "6",
+        "COMBINED_decided": "25",
+        "COMBINED_rate": "0.76",
+        "states": "{\"LOSS\":6,\"WIN\":19}",
+        "outer_outcomes": "{\"KNOWN_ACTUAL\":25}",
+        "forecast_outcome_cross_counts": "[{\"forecast_available\":true,\"outcome_state\":\"KNOWN_ACTUAL\",\"rows\":25}]",
+        "unavailable_reasons": "{}",
+        "numerical_MAE": "6.04",
+        "numerical_MSE": "71.32",
+        "numerical_bias": "-3.88",
+        "numerical_scored": "25",
+        "uncertainty_dependence_aware": "False",
+        "uncertainty_high": "0.8850368630659855",
+        "uncertainty_kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+        "uncertainty_low": "0.5657031664457093",
+        "uncertainty_small_cluster_caution": "",
+        "uncertainty_week_clusters": "1",
+        "eligible_mask_sha256": "ed646370ac7d1177852d930216e637bea7f786101cc95f495d3db737b599ef2a",
+        "decided_mask_sha256": "ed646370ac7d1177852d930216e637bea7f786101cc95f495d3db737b599ef2a"
+      },
+      {
+        "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+        "source_panel": "ALL",
+        "week_view": "3",
+        "candidate_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median",
+        "category": "pass_att",
+        "actual_scored_weeks": "[3]",
+        "weeks": "[3]",
+        "games": "15",
+        "player_games": "25",
+        "eligible": "25",
+        "unavailable": "0",
+        "coverage": "1.0",
+        "abstentions": "0",
+        "fallback_outputs": "0",
+        "OVER_selected": "1",
+        "OVER_wins": "0",
+        "OVER_losses": "1",
+        "OVER_decided": "1",
+        "OVER_rate": "0.0",
+        "UNDER_selected": "24",
+        "UNDER_wins": "9",
+        "UNDER_losses": "15",
+        "UNDER_decided": "24",
+        "UNDER_rate": "0.375",
+        "COMBINED_selected": "25",
+        "COMBINED_wins": "9",
+        "COMBINED_losses": "16",
+        "COMBINED_decided": "25",
+        "COMBINED_rate": "0.36",
+        "states": "{\"LOSS\":16,\"WIN\":9}",
+        "outer_outcomes": "{\"KNOWN_ACTUAL\":25}",
+        "forecast_outcome_cross_counts": "[{\"forecast_available\":true,\"outcome_state\":\"KNOWN_ACTUAL\",\"rows\":25}]",
+        "unavailable_reasons": "{}",
+        "numerical_MAE": "7.72",
+        "numerical_MSE": "111.8",
+        "numerical_bias": "-6.2",
+        "numerical_scored": "25",
+        "uncertainty_dependence_aware": "False",
+        "uncertainty_high": "0.5548150225183514",
+        "uncertainty_kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+        "uncertainty_low": "0.20247880774458224",
+        "uncertainty_small_cluster_caution": "",
+        "uncertainty_week_clusters": "1",
+        "eligible_mask_sha256": "929235249cb0b5fa3b2653c4ae65755eecf711b7e4af420f83966b4f69b7e4e3",
+        "decided_mask_sha256": "929235249cb0b5fa3b2653c4ae65755eecf711b7e4af420f83966b4f69b7e4e3"
+      },
+      {
+        "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+        "source_panel": "ALL",
+        "week_view": "4",
+        "candidate_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median",
+        "category": "pass_att",
+        "actual_scored_weeks": "[4]",
+        "weeks": "[4]",
+        "games": "13",
+        "player_games": "23",
+        "eligible": "23",
+        "unavailable": "0",
+        "coverage": "1.0",
+        "abstentions": "0",
+        "fallback_outputs": "0",
+        "OVER_selected": "1",
+        "OVER_wins": "1",
+        "OVER_losses": "0",
+        "OVER_decided": "1",
+        "OVER_rate": "1.0",
+        "UNDER_selected": "22",
+        "UNDER_wins": "10",
+        "UNDER_losses": "12",
+        "UNDER_decided": "22",
+        "UNDER_rate": "0.45454545454545453",
+        "COMBINED_selected": "23",
+        "COMBINED_wins": "11",
+        "COMBINED_losses": "12",
+        "COMBINED_decided": "23",
+        "COMBINED_rate": "0.4782608695652174",
+        "states": "{\"LOSS\":12,\"WIN\":11}",
+        "outer_outcomes": "{\"KNOWN_ACTUAL\":23}",
+        "forecast_outcome_cross_counts": "[{\"forecast_available\":true,\"outcome_state\":\"KNOWN_ACTUAL\",\"rows\":23}]",
+        "unavailable_reasons": "{}",
+        "numerical_MAE": "8.434782608695652",
+        "numerical_MSE": "115.73913043478261",
+        "numerical_bias": "-6.086956521739131",
+        "numerical_scored": "23",
+        "uncertainty_dependence_aware": "False",
+        "uncertainty_high": "0.6703726266357259",
+        "uncertainty_kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+        "uncertainty_low": "0.29237157416646653",
+        "uncertainty_small_cluster_caution": "",
+        "uncertainty_week_clusters": "1",
+        "eligible_mask_sha256": "2b1c03bf077d824188c0c356ff3953f4f61330686ede314b4817b14249050b56",
+        "decided_mask_sha256": "2b1c03bf077d824188c0c356ff3953f4f61330686ede314b4817b14249050b56"
+      },
+      {
+        "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+        "source_panel": "ALL",
+        "week_view": "5",
+        "candidate_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median",
+        "category": "pass_att",
+        "actual_scored_weeks": "[5]",
+        "weeks": "[5]",
+        "games": "3",
+        "player_games": "4",
+        "eligible": "4",
+        "unavailable": "0",
+        "coverage": "1.0",
+        "abstentions": "0",
+        "fallback_outputs": "0",
+        "OVER_selected": "0",
+        "OVER_wins": "",
+        "OVER_losses": "",
+        "OVER_decided": "0",
+        "OVER_rate": "",
+        "UNDER_selected": "4",
+        "UNDER_wins": "0",
+        "UNDER_losses": "4",
+        "UNDER_decided": "4",
+        "UNDER_rate": "0.0",
+        "COMBINED_selected": "4",
+        "COMBINED_wins": "0",
+        "COMBINED_losses": "4",
+        "COMBINED_decided": "4",
+        "COMBINED_rate": "0.0",
+        "states": "{\"LOSS\":4}",
+        "outer_outcomes": "{\"KNOWN_ACTUAL\":4}",
+        "forecast_outcome_cross_counts": "[{\"forecast_available\":true,\"outcome_state\":\"KNOWN_ACTUAL\",\"rows\":4}]",
+        "unavailable_reasons": "{}",
+        "numerical_MAE": "11.5",
+        "numerical_MSE": "133.5",
+        "numerical_bias": "-11.5",
+        "numerical_scored": "4",
+        "uncertainty_dependence_aware": "False",
+        "uncertainty_high": "0.4898908364545973",
+        "uncertainty_kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+        "uncertainty_low": "0.0",
+        "uncertainty_small_cluster_caution": "",
+        "uncertainty_week_clusters": "1",
+        "eligible_mask_sha256": "f2c4146220b31e6c3f7126c715889711eedd0e1ab48a34c88d0d43340437a899",
+        "decided_mask_sha256": "f2c4146220b31e6c3f7126c715889711eedd0e1ab48a34c88d0d43340437a899"
+      }
+    ],
+    "matched_controls": {
+      "A_corrected_mean": {
+        "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+        "source_panel": "ALL",
+        "week_view": "ALL",
+        "candidate_id": "A::COUNT_A_MEAN::mean_objective_point",
+        "category": "pass_att",
+        "actual_scored_weeks": "[1,2,3,4,5]",
+        "weeks": "[1,2,3,4,5]",
+        "games": "51",
+        "player_games": "87",
+        "eligible": "87",
+        "unavailable": "0",
+        "coverage": "1.0",
+        "abstentions": "0",
+        "fallback_outputs": "0",
+        "OVER_selected": "26",
+        "OVER_wins": "14",
+        "OVER_losses": "12",
+        "OVER_decided": "26",
+        "OVER_rate": "0.5384615384615384",
+        "UNDER_selected": "61",
+        "UNDER_wins": "29",
+        "UNDER_losses": "32",
+        "UNDER_decided": "61",
+        "UNDER_rate": "0.47540983606557374",
+        "COMBINED_selected": "87",
+        "COMBINED_wins": "43",
+        "COMBINED_losses": "44",
+        "COMBINED_decided": "87",
+        "COMBINED_rate": "0.4942528735632184",
+        "states": "{\"LOSS\":44,\"WIN\":43}",
+        "outer_outcomes": "{\"KNOWN_ACTUAL\":87}",
+        "forecast_outcome_cross_counts": "[{\"forecast_available\":true,\"outcome_state\":\"KNOWN_ACTUAL\",\"rows\":87}]",
+        "unavailable_reasons": "{}",
+        "numerical_MAE": "6.784205182485288",
+        "numerical_MSE": "78.2459457102637",
+        "numerical_bias": "-3.158243436962304",
+        "numerical_scored": "87",
+        "uncertainty_dependence_aware": "True",
+        "uncertainty_high": "0.6081081081081081",
+        "uncertainty_kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+        "uncertainty_low": "0.3924050632911392",
+        "uncertainty_small_cluster_caution": "True",
+        "uncertainty_week_clusters": "5",
+        "eligible_mask_sha256": "fe7e276a93990051a1e57ba85c5121dcf0d0848ba92e366cbcb839e1acf8a2f5",
+        "decided_mask_sha256": "fe7e276a93990051a1e57ba85c5121dcf0d0848ba92e366cbcb839e1acf8a2f5"
+      },
+      "Always_Over": {
+        "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+        "source_panel": "ALL",
+        "week_view": "ALL",
+        "candidate_id": "ALWAYS_OVER",
+        "category": "pass_att",
+        "actual_scored_weeks": "[1,2,3,4,5]",
+        "weeks": "[1,2,3,4,5]",
+        "games": "51",
+        "player_games": "87",
+        "eligible": "87",
+        "unavailable": "0",
+        "coverage": "1.0",
+        "abstentions": "0",
+        "fallback_outputs": "0",
+        "OVER_selected": "87",
+        "OVER_wins": "46",
+        "OVER_losses": "41",
+        "OVER_decided": "87",
+        "OVER_rate": "0.5287356321839081",
+        "UNDER_selected": "0",
+        "UNDER_wins": "",
+        "UNDER_losses": "",
+        "UNDER_decided": "0",
+        "UNDER_rate": "",
+        "COMBINED_selected": "87",
+        "COMBINED_wins": "46",
+        "COMBINED_losses": "41",
+        "COMBINED_decided": "87",
+        "COMBINED_rate": "0.5287356321839081",
+        "states": "{\"LOSS\":41,\"WIN\":46}",
+        "outer_outcomes": "{\"KNOWN_ACTUAL\":87}",
+        "forecast_outcome_cross_counts": "[{\"forecast_available\":true,\"outcome_state\":\"KNOWN_ACTUAL\",\"rows\":87}]",
+        "unavailable_reasons": "{}",
+        "numerical_MAE": "",
+        "numerical_MSE": "",
+        "numerical_bias": "",
+        "numerical_scored": "0",
+        "uncertainty_dependence_aware": "True",
+        "uncertainty_high": "0.6666666666666666",
+        "uncertainty_kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+        "uncertainty_low": "0.4166666666666667",
+        "uncertainty_small_cluster_caution": "True",
+        "uncertainty_week_clusters": "5",
+        "eligible_mask_sha256": "fe7e276a93990051a1e57ba85c5121dcf0d0848ba92e366cbcb839e1acf8a2f5",
+        "decided_mask_sha256": "fe7e276a93990051a1e57ba85c5121dcf0d0848ba92e366cbcb839e1acf8a2f5"
+      }
+    },
+    "owner_reported_pairs": [
+      {
+        "common_decided": "87",
+        "common_mask_sha256": "fe7e276a93990051a1e57ba85c5121dcf0d0848ba92e366cbcb839e1acf8a2f5",
+        "game_clusters": "51",
+        "left": "A::COUNT_A_LEGACY_POINT::legacy_empirical_point",
+        "left_wins": "43",
+        "paired_accuracy_change_interval95": "[-0.11363636363636363,0.10234405269275469]",
+        "paired_week_block_accuracy_change_interval95": "[-0.09259259259259259,0.11320754716981132]",
+        "right": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median",
+        "right_wins": "44",
+        "side_disagreements": "21",
+        "uncertainty": "Nominal game bootstrap500 seed20261110; few exposed weeks and multiplicity unadjusted",
+        "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+        "week_clusters": "5",
+        "win_change": "-1"
+      },
+      {
+        "common_decided": "87",
+        "common_mask_sha256": "fe7e276a93990051a1e57ba85c5121dcf0d0848ba92e366cbcb839e1acf8a2f5",
+        "game_clusters": "51",
+        "left": "A::COUNT_A_MEAN::mean_objective_point",
+        "left_wins": "43",
+        "paired_accuracy_change_interval95": "[-0.11363636363636363,0.10234405269275469]",
+        "paired_week_block_accuracy_change_interval95": "[-0.09259259259259259,0.11320754716981132]",
+        "right": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median",
+        "right_wins": "44",
+        "side_disagreements": "21",
+        "uncertainty": "Nominal game bootstrap500 seed20261110; few exposed weeks and multiplicity unadjusted",
+        "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+        "week_clusters": "5",
+        "win_change": "-1"
+      },
+      {
+        "common_decided": "87",
+        "common_mask_sha256": "fe7e276a93990051a1e57ba85c5121dcf0d0848ba92e366cbcb839e1acf8a2f5",
+        "game_clusters": "51",
+        "left": "A::LEAF_CDF::mean",
+        "left_wins": "42",
+        "paired_accuracy_change_interval95": "[-0.10843373493975904,0.06818181818181818]",
+        "paired_week_block_accuracy_change_interval95": "[-0.09042390194075588,0.0625]",
+        "right": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median",
+        "right_wins": "44",
+        "side_disagreements": "16",
+        "uncertainty": "Nominal game bootstrap500 seed20261110; few exposed weeks and multiplicity unadjusted",
+        "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+        "week_clusters": "5",
+        "win_change": "-2"
+      },
+      {
+        "common_decided": "87",
+        "common_mask_sha256": "fe7e276a93990051a1e57ba85c5121dcf0d0848ba92e366cbcb839e1acf8a2f5",
+        "game_clusters": "51",
+        "left": "A::LEAF_CDF::median",
+        "left_wins": "40",
+        "paired_accuracy_change_interval95": "[-0.15209644322845417,0.06859326018808776]",
+        "paired_week_block_accuracy_change_interval95": "[-0.12349171539961012,0.029411764705882353]",
+        "right": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median",
+        "right_wins": "44",
+        "side_disagreements": "22",
+        "uncertainty": "Nominal game bootstrap500 seed20261110; few exposed weeks and multiplicity unadjusted",
+        "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+        "week_clusters": "5",
+        "win_change": "-4"
+      },
+      {
+        "common_decided": "87",
+        "common_mask_sha256": "fe7e276a93990051a1e57ba85c5121dcf0d0848ba92e366cbcb839e1acf8a2f5",
+        "game_clusters": "51",
+        "left": "A::HGB_MAE_DIRECT::mae_objective_point",
+        "left_wins": "42",
+        "paired_accuracy_change_interval95": "[-0.12217261904761903,0.09195402298850575]",
+        "paired_week_block_accuracy_change_interval95": "[-0.09259259259259259,0.05807960381511344]",
+        "right": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median",
+        "right_wins": "44",
+        "side_disagreements": "26",
+        "uncertainty": "Nominal game bootstrap500 seed20261110; few exposed weeks and multiplicity unadjusted",
+        "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+        "week_clusters": "5",
+        "win_change": "-2"
+      },
+      {
+        "common_decided": "87",
+        "common_mask_sha256": "fe7e276a93990051a1e57ba85c5121dcf0d0848ba92e366cbcb839e1acf8a2f5",
+        "game_clusters": "51",
+        "left": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median",
+        "left_wins": "44",
+        "paired_accuracy_change_interval95": "[-0.20125,0.1503374766105319]",
+        "paired_week_block_accuracy_change_interval95": "[-0.3227777777777777,0.23529411764705882]",
+        "right": "ALWAYS_OVER",
+        "right_wins": "46",
+        "side_disagreements": "82",
+        "uncertainty": "Nominal game bootstrap500 seed20261110; few exposed weeks and multiplicity unadjusted",
+        "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+        "week_clusters": "5",
+        "win_change": "-2"
+      },
+      {
+        "common_decided": "87",
+        "common_mask_sha256": "fe7e276a93990051a1e57ba85c5121dcf0d0848ba92e366cbcb839e1acf8a2f5",
+        "game_clusters": "51",
+        "left": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median",
+        "left_wins": "44",
+        "paired_accuracy_change_interval95": "[-0.011494252873563218,0.08095094894413257]",
+        "paired_week_block_accuracy_change_interval95": "[-0.029411764705882353,0.09371832358674459]",
+        "right": "ALWAYS_UNDER",
+        "right_wins": "41",
+        "side_disagreements": "5",
+        "uncertainty": "Nominal game bootstrap500 seed20261110; few exposed weeks and multiplicity unadjusted",
+        "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+        "week_clusters": "5",
+        "win_change": "3"
+      },
+      {
+        "common_decided": "87",
+        "common_mask_sha256": "fe7e276a93990051a1e57ba85c5121dcf0d0848ba92e366cbcb839e1acf8a2f5",
+        "game_clusters": "51",
+        "left": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::lower_median",
+        "left_wins": "44",
+        "paired_accuracy_change_interval95": "[-0.04395604395604396,0.07228915662650602]",
+        "paired_week_block_accuracy_change_interval95": "[-0.03125,0.038461538461538464]",
+        "right": "B-player-context-matchup-01-v1:COMMON_EXPOSURE::mean",
+        "right_wins": "43",
+        "side_disagreements": "7",
+        "uncertainty": "Nominal game bootstrap500 seed20261110; few exposed weeks and multiplicity unadjusted",
+        "view": "FULL_A_BOARD_ALIAS_QUALIFIED87",
+        "week_clusters": "5",
+        "win_change": "1"
+      }
+    ],
+    "paired_bootstrap_independently_recomputed": false,
+    "alias_restoration": "Six memberships restored by A using exact alias qualification; original81 and full87 views preserved. This is coverage correction, not new NFLgames, fit or learned-skill gain.",
+    "B_independent_check_receipt": "reports/follow-through-release-defensive-source-01/B/peer-receipts/A_REPRESENTATIVE_CALCULATION_RECEIPT_V1.json",
+    "B_independent_check_sha256": "e6044b094539fe845daac3fcc8cf725f2c84af72521d5c144922ab5df75ea523",
+    "decision_disposition": "RETAIN_IN_C_OWNER_REVIEW;NO_PREFERRED_NEW_B_PRIMARY_REPLACEMENT;44/87vsA43butstrongOver46andwidepairedintervals",
+    "point_only": "No probability, calibratedconfidence, EV or TopPicks duration inherited."
+  },
+  "independence": "Public integer/Decimal arithmetic and immutable byte bindings; no access to private Arow/clock/alias execution or independent model-fit parity.",
+  "new_fits": 0,
+  "new_scientific_scores": 0,
+  "new_test_weeks": 0,
+  "original_site_changes": 0
+}

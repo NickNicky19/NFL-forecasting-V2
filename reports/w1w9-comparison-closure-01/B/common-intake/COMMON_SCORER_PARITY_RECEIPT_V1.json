@@ -1,0 +1,531 @@
+{
+  "id": "B_NATIVE142_PINNED_C_COMMON_SCORER_PARITY_v1",
+  "at_UTC": "2026-11-14T18:52:37.081870+00:00",
+  "state": "PASS_EXISTING_PANEL_COMMON_STATUS_SUMMARY_INTERVAL_REUSE",
+  "C_scorer_sha256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce",
+  "C_interval_dependency_sha256": "92260304be31b0fbee42faa3ab78616f77c3791bd2613edb9d322f9bbf29aa2a",
+  "source_functions": [
+    "status",
+    "summary",
+    "interval"
+  ],
+  "method": "Hashchecked unchanged function ASTs executed with original required globals; no unrelated C module/controller import or copied replacement grader",
+  "boundary_fixtures": 11,
+  "grade_checks": 1278,
+  "aggregate_checks": 81,
+  "native_offers": 142,
+  "policy_views": [
+    {
+      "arm": "B0",
+      "policy": "P1_MEAN",
+      "C_summary": {
+        "OVER": {
+          "selected": 21,
+          "wins": 13,
+          "losses": 8,
+          "decided": 21,
+          "rate": 0.6190476190476191
+        },
+        "UNDER": {
+          "selected": 121,
+          "wins": 63,
+          "losses": 58,
+          "decided": 121,
+          "rate": 0.5206611570247934
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 76,
+          "losses": 66,
+          "decided": 142,
+          "rate": 0.5352112676056338
+        },
+        "eligible": 142,
+        "unavailable": 0,
+        "abstentions": 0,
+        "states": {
+          "WIN": 76,
+          "LOSS": 66
+        },
+        "games": 71,
+        "player_games": 142,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "uncertainty": {
+          "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+          "low": 0.45774647887323944,
+          "high": 0.6,
+          "dependence_aware": true,
+          "week_clusters": 5,
+          "small_cluster_caution": true
+        },
+        "coverage": 1.0
+      },
+      "membership_sha256": "433537b70e5ad3d5735d797f3964638788083c5741a82e11a33b6695dd6716d4"
+    },
+    {
+      "arm": "B0",
+      "policy": "P1_LOWER_MEDIAN",
+      "C_summary": {
+        "OVER": {
+          "selected": 34,
+          "wins": 18,
+          "losses": 16,
+          "decided": 34,
+          "rate": 0.5294117647058824
+        },
+        "UNDER": {
+          "selected": 108,
+          "wins": 55,
+          "losses": 53,
+          "decided": 108,
+          "rate": 0.5092592592592593
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 73,
+          "losses": 69,
+          "decided": 142,
+          "rate": 0.5140845070422535
+        },
+        "eligible": 142,
+        "unavailable": 0,
+        "abstentions": 0,
+        "states": {
+          "WIN": 73,
+          "LOSS": 69
+        },
+        "games": 71,
+        "player_games": 142,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "uncertainty": {
+          "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+          "low": 0.45774647887323944,
+          "high": 0.5845070422535211,
+          "dependence_aware": true,
+          "week_clusters": 5,
+          "small_cluster_caution": true
+        },
+        "coverage": 1.0
+      },
+      "membership_sha256": "433537b70e5ad3d5735d797f3964638788083c5741a82e11a33b6695dd6716d4"
+    },
+    {
+      "arm": "B0",
+      "policy": "P2_STATISTICAL_LAW",
+      "C_summary": {
+        "OVER": {
+          "selected": 34,
+          "wins": 18,
+          "losses": 16,
+          "decided": 34,
+          "rate": 0.5294117647058824
+        },
+        "UNDER": {
+          "selected": 108,
+          "wins": 55,
+          "losses": 53,
+          "decided": 108,
+          "rate": 0.5092592592592593
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 73,
+          "losses": 69,
+          "decided": 142,
+          "rate": 0.5140845070422535
+        },
+        "eligible": 142,
+        "unavailable": 0,
+        "abstentions": 0,
+        "states": {
+          "WIN": 73,
+          "LOSS": 69
+        },
+        "games": 71,
+        "player_games": 142,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "uncertainty": {
+          "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+          "low": 0.45774647887323944,
+          "high": 0.5845070422535211,
+          "dependence_aware": true,
+          "week_clusters": 5,
+          "small_cluster_caution": true
+        },
+        "coverage": 1.0
+      },
+      "membership_sha256": "433537b70e5ad3d5735d797f3964638788083c5741a82e11a33b6695dd6716d4"
+    },
+    {
+      "arm": "B1",
+      "policy": "P1_MEAN",
+      "C_summary": {
+        "OVER": {
+          "selected": 21,
+          "wins": 13,
+          "losses": 8,
+          "decided": 21,
+          "rate": 0.6190476190476191
+        },
+        "UNDER": {
+          "selected": 121,
+          "wins": 63,
+          "losses": 58,
+          "decided": 121,
+          "rate": 0.5206611570247934
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 76,
+          "losses": 66,
+          "decided": 142,
+          "rate": 0.5352112676056338
+        },
+        "eligible": 142,
+        "unavailable": 0,
+        "abstentions": 0,
+        "states": {
+          "WIN": 76,
+          "LOSS": 66
+        },
+        "games": 71,
+        "player_games": 142,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "uncertainty": {
+          "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+          "low": 0.45774647887323944,
+          "high": 0.6,
+          "dependence_aware": true,
+          "week_clusters": 5,
+          "small_cluster_caution": true
+        },
+        "coverage": 1.0
+      },
+      "membership_sha256": "433537b70e5ad3d5735d797f3964638788083c5741a82e11a33b6695dd6716d4"
+    },
+    {
+      "arm": "B1",
+      "policy": "P1_LOWER_MEDIAN",
+      "C_summary": {
+        "OVER": {
+          "selected": 34,
+          "wins": 18,
+          "losses": 16,
+          "decided": 34,
+          "rate": 0.5294117647058824
+        },
+        "UNDER": {
+          "selected": 108,
+          "wins": 55,
+          "losses": 53,
+          "decided": 108,
+          "rate": 0.5092592592592593
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 73,
+          "losses": 69,
+          "decided": 142,
+          "rate": 0.5140845070422535
+        },
+        "eligible": 142,
+        "unavailable": 0,
+        "abstentions": 0,
+        "states": {
+          "WIN": 73,
+          "LOSS": 69
+        },
+        "games": 71,
+        "player_games": 142,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "uncertainty": {
+          "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+          "low": 0.45774647887323944,
+          "high": 0.5845070422535211,
+          "dependence_aware": true,
+          "week_clusters": 5,
+          "small_cluster_caution": true
+        },
+        "coverage": 1.0
+      },
+      "membership_sha256": "433537b70e5ad3d5735d797f3964638788083c5741a82e11a33b6695dd6716d4"
+    },
+    {
+      "arm": "B1",
+      "policy": "P2_STATISTICAL_LAW",
+      "C_summary": {
+        "OVER": {
+          "selected": 34,
+          "wins": 18,
+          "losses": 16,
+          "decided": 34,
+          "rate": 0.5294117647058824
+        },
+        "UNDER": {
+          "selected": 108,
+          "wins": 55,
+          "losses": 53,
+          "decided": 108,
+          "rate": 0.5092592592592593
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 73,
+          "losses": 69,
+          "decided": 142,
+          "rate": 0.5140845070422535
+        },
+        "eligible": 142,
+        "unavailable": 0,
+        "abstentions": 0,
+        "states": {
+          "WIN": 73,
+          "LOSS": 69
+        },
+        "games": 71,
+        "player_games": 142,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "uncertainty": {
+          "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+          "low": 0.45774647887323944,
+          "high": 0.5845070422535211,
+          "dependence_aware": true,
+          "week_clusters": 5,
+          "small_cluster_caution": true
+        },
+        "coverage": 1.0
+      },
+      "membership_sha256": "433537b70e5ad3d5735d797f3964638788083c5741a82e11a33b6695dd6716d4"
+    },
+    {
+      "arm": "B2",
+      "policy": "P1_MEAN",
+      "C_summary": {
+        "OVER": {
+          "selected": 23,
+          "wins": 12,
+          "losses": 11,
+          "decided": 23,
+          "rate": 0.5217391304347826
+        },
+        "UNDER": {
+          "selected": 119,
+          "wins": 60,
+          "losses": 59,
+          "decided": 119,
+          "rate": 0.5042016806722689
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 72,
+          "losses": 70,
+          "decided": 142,
+          "rate": 0.5070422535211268
+        },
+        "eligible": 142,
+        "unavailable": 0,
+        "abstentions": 0,
+        "states": {
+          "WIN": 72,
+          "LOSS": 70
+        },
+        "games": 71,
+        "player_games": 142,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "uncertainty": {
+          "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+          "low": 0.44366197183098594,
+          "high": 0.5642857142857143,
+          "dependence_aware": true,
+          "week_clusters": 5,
+          "small_cluster_caution": true
+        },
+        "coverage": 1.0
+      },
+      "membership_sha256": "433537b70e5ad3d5735d797f3964638788083c5741a82e11a33b6695dd6716d4"
+    },
+    {
+      "arm": "B2",
+      "policy": "P1_LOWER_MEDIAN",
+      "C_summary": {
+        "OVER": {
+          "selected": 34,
+          "wins": 19,
+          "losses": 15,
+          "decided": 34,
+          "rate": 0.5588235294117647
+        },
+        "UNDER": {
+          "selected": 108,
+          "wins": 56,
+          "losses": 52,
+          "decided": 108,
+          "rate": 0.5185185185185185
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 75,
+          "losses": 67,
+          "decided": 142,
+          "rate": 0.528169014084507
+        },
+        "eligible": 142,
+        "unavailable": 0,
+        "abstentions": 0,
+        "states": {
+          "WIN": 75,
+          "LOSS": 67
+        },
+        "games": 71,
+        "player_games": 142,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "uncertainty": {
+          "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+          "low": 0.47183098591549294,
+          "high": 0.5785714285714286,
+          "dependence_aware": true,
+          "week_clusters": 5,
+          "small_cluster_caution": true
+        },
+        "coverage": 1.0
+      },
+      "membership_sha256": "433537b70e5ad3d5735d797f3964638788083c5741a82e11a33b6695dd6716d4"
+    },
+    {
+      "arm": "B2",
+      "policy": "P2_STATISTICAL_LAW",
+      "C_summary": {
+        "OVER": {
+          "selected": 34,
+          "wins": 19,
+          "losses": 15,
+          "decided": 34,
+          "rate": 0.5588235294117647
+        },
+        "UNDER": {
+          "selected": 108,
+          "wins": 56,
+          "losses": 52,
+          "decided": 108,
+          "rate": 0.5185185185185185
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 75,
+          "losses": 67,
+          "decided": 142,
+          "rate": 0.528169014084507
+        },
+        "eligible": 142,
+        "unavailable": 0,
+        "abstentions": 0,
+        "states": {
+          "WIN": 75,
+          "LOSS": 67
+        },
+        "games": 71,
+        "player_games": 142,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "uncertainty": {
+          "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+          "low": 0.47183098591549294,
+          "high": 0.5785714285714286,
+          "dependence_aware": true,
+          "week_clusters": 5,
+          "small_cluster_caution": true
+        },
+        "coverage": 1.0
+      },
+      "membership_sha256": "433537b70e5ad3d5735d797f3964638788083c5741a82e11a33b6695dd6716d4"
+    }
+  ],
+  "source_bindings": [
+    {
+      "week": 5,
+      "bytes": 3159,
+      "sha256": "7ebb7e3b546147f8e7f10fa887fd295f2d72f88eb70600a22448ad29feff69fe"
+    },
+    {
+      "week": 6,
+      "bytes": 2924,
+      "sha256": "3f7ccc297f7e2dd63d1bdc6c1e625b6183f58b58f3551d4ce2aa8ad02416d5b5"
+    },
+    {
+      "week": 7,
+      "bytes": 2752,
+      "sha256": "c6b2a6dfd5a983892afcc7882fea337ad105a327972ce6c5c16300e4fb5ead43"
+    },
+    {
+      "week": 8,
+      "bytes": 2710,
+      "sha256": "43fc0aef34076e5d5389cb47239c9a10d68df80cd5db6973cf008b997504b2c0"
+    },
+    {
+      "week": 9,
+      "bytes": 3491,
+      "sha256": "63b131964ddc110e78ec8328f6c592f9f96f59be3e946e5a45e4de848cde76f8"
+    }
+  ],
+  "scope": "Existingnative142W5-9parityonly;doesnotadmitAprivate84union,rights,sourceclocks,mainlineclassification,standalone-lawoperationalcoherenceorCproduction.",
+  "probability": "Bexactlawcalculations and originalBsidepolicy preserved;C reusedstatisticalgrader/summary/interval,notprospectivelawloader",
+  "new_common_grader": false,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "new_canonical_score_views": 0,
+  "code_sha256": "f32523f9f7a4415b4472d57abe8bf1b1bd27e471d6094af7ab92ed16401796ba"
+}

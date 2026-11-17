@@ -1,0 +1,107 @@
+{
+  "state": "READ_ONLY_ACCOUNT_AND_REQUIRED_PART_CENSUS_UNCHANGED",
+  "checked_at_utc": "2026-11-02T19:50:42.464073+00:00",
+  "same_connected_account_as_prior": true,
+  "folder_items": 348,
+  "folder_metadata_policy": "Existing approved private destination only; no sharing or destination changes.",
+  "required_archives": [
+    {
+      "artifact_id": "V2-PRIVATE-RECOVERY-DELTA-20261030D-0001",
+      "total_parts": 13,
+      "archive_bytes": 263613679,
+      "remote_parts_available": 13,
+      "missing_parts": 0,
+      "missing_bytes": 0,
+      "restoration_state": "FRESH_PRIVATE_RESTORE_ALL_PARTS_AND_INNER_FILES_VERIFIED",
+      "full_restoration_verified": true,
+      "missing_part_indexes": []
+    },
+    {
+      "artifact_id": "V2-PRIVATE-SEASON-2022-V2",
+      "total_parts": 11,
+      "archive_bytes": 224693683,
+      "remote_parts_available": 1,
+      "missing_parts": 10,
+      "missing_bytes": 209715200,
+      "restoration_state": "PARTIAL_REMOTE_LOCAL_ORIGINALS_PRESERVED",
+      "full_restoration_verified": false,
+      "missing_part_indexes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "artifact_id": "V2-PRIVATE-SEASON-2023-COMPLETE-V1",
+      "total_parts": 17,
+      "archive_bytes": 353782056,
+      "remote_parts_available": 1,
+      "missing_parts": 16,
+      "missing_bytes": 335544320,
+      "restoration_state": "PARTIAL_REMOTE_LOCAL_ORIGINALS_PRESERVED",
+      "full_restoration_verified": false,
+      "missing_part_indexes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "artifact_id": "V2-PRIVATE-SEASON-2024-V2",
+      "total_parts": 23,
+      "archive_bytes": 464346512,
+      "remote_parts_available": 11,
+      "missing_parts": 12,
+      "missing_bytes": 251658240,
+      "restoration_state": "PARTIAL_REMOTE_LOCAL_ORIGINALS_PRESERVED",
+      "full_restoration_verified": false,
+      "missing_part_indexes": [
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  ],
+  "remaining_missing_parts": 38,
+  "remaining_missing_bytes": 796917760,
+  "free_quota_bytes": null,
+  "quota_reason": "Connected profile/list APIs expose no quantitative storage quota. Privacy and user confirmation do not prove available capacity.",
+  "new_upload_attempts": 0,
+  "unchanged_quota_retry": false,
+  "large_fit_gate_cleared": false,
+  "local_files_preserved": true,
+  "required_owner_action": "Make at least796917760 additional required-part bytes plus next output reserve available to actual uploader in approved store, or owner-approved private capacity solution; then upload missing only and fresh download/reassemble/hashcheck. No purchase, destination/sharing change, deletion or unproved capacity retry.",
+  "private_read_receipt_sha256": [
+    "5dc05998a334b3de3f24204954d6dc18c7bf7835a0c29de0beaee7f46a125aff",
+    "8f3c8e221b8e3bb2a1d1da59f41a83ad7c0151ebc95de782568d451136c25e10"
+  ]
+}

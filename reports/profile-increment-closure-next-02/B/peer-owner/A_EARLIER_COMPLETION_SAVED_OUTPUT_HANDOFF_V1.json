@@ -1,0 +1,852 @@
+{
+  "id": "B-OWNER-LOCAL-A-EARLIER-CMP-HANDOFF-v1",
+  "at_UTC": "2026-11-10T18:42:45.832394+00:00",
+  "owner_local_executor": "A",
+  "producer_owner": "B",
+  "coordinator": "C",
+  "state": "B_SAVED_OUTPUTS_AVAILABLE_PRIMARY_FIVE_PUBLIC_OBJECTS_EXACTLY_READ_BACK;A_OWNER_LOCAL_JOIN_PENDING",
+  "producer_repository": "NickNicky19/NFL-forecasting-V2",
+  "producer_commit": "05032e19e30b1f890a6b2679c70d3c97f0bbb2a1",
+  "existing_publication_readback": {
+    "path": "reports/profile-increment-to-release-01/B/PUBLICATION_READBACK_V1.json",
+    "sha256": "35668c82fb033c53bf79c1ca298452a8d584be768be4be09df67259c28926839",
+    "publication_commit": "62cbf5af364ad8b3a5d178cd7ed6221ee43c5f26",
+    "original_state": "EXACT_GITHUB_READBACK"
+  },
+  "frozen_recipe": {
+    "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/FROZEN_PROTOCOL.json",
+    "sha256": "be1b14890a83c8acdb62d96ee3238172ea95c7303283d73098e548cc263fb0b6",
+    "id": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1",
+    "code_sha256": {
+      "tools/run_qb_opportunity_increment.py": "71f091c348513cd6f5ef24797035041d71de14668ea3a29a91f25c85de27463c",
+      "nfl_v2/qb_opportunity_increment.py": "14748e8103fdfbcd1e8be7e180de9d129aded5502d5895ee6fb37513f1b1b806",
+      "nfl_v2/passing_opportunity_profiles.py": "08c058d73d64973f46f5fae3f698ea850d96cbd114aa0f292e9c7c11df025eff",
+      "nfl_v2/player_context_matchup.py": "3db66e8d7c75f444d87f4792add9096a9d04d0390902f67ce21248c206476f29",
+      "nfl_v2/distribution_wave_v2.py": "417b817debe54b8e8c050d92e3e3fb9283fbc924a832099fbcc9c7ba51517fb9",
+      "nfl_v2/distribution_laws.py": "14f034249f38cd12d5a0ea36b05e64086e0859cc4209f83a55c913cda5742f4d"
+    },
+    "feature_order_sha256": "8d47d09be4e01f2f4da9e96a9ee6ddca21a53967a1671e3a0c1148b37d305ab4",
+    "inputs": {
+      "path": "reports/player-context-matchup-01/B/source-fields-v3/DERIVED_QB_GAME_INPUTS.json.gz",
+      "sha256": "f23bb72f05f398c7108700e10fa7bf63e233aca57bc67eb6820a38c9f212af90"
+    },
+    "source": {
+      "path": "reports/profile-increment-to-release-01/B/source-profiles/PASSING_OPPORTUNITY_GAME_INPUTS_V2.json.gz",
+      "sha256": "51c2cfceff6103a277c6de5897fc76c33733bb797f0891ccdb271b41840ab36a"
+    }
+  },
+  "exact_procedures": {
+    "R0": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R0",
+    "R1": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R1",
+    "R2": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R2",
+    "R3": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R3"
+  },
+  "aliases": "F0/B0 not newlyassignedprocedureIDs. R0 retains prior E3 through reused_original_procedure_id/reused_artifact_sha256. Nevermatch bareP1/P2 names acrossrepositories.",
+  "primary_scope": {
+    "season": 2026,
+    "weeks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "A_private_offer_inventory": 88,
+    "A_queue_id": "A-B-NEW-COMPLETION-EARLIER-LINES",
+    "A_queue_path": "reports/abc-championship/player-context-completion-decision-01/COMPLETION_COVERAGE_AND_QUEUE_V1.json",
+    "A_ref": "1511d1c03a7bf0e7a139d38b602daf68620dbf29",
+    "target": "pass_cmp",
+    "role": "QB",
+    "scoring": "playerfullgameofficialcompletionsincludingovertime",
+    "primary_files": [
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W01.json.gz",
+        "stored_bytes": 220825,
+        "stored_sha256": "6f1f3363c3d9cbfa399a64f8e51de43f2be7e6932eaa8af00ff154ff58e66de1",
+        "decoded_bytes": 851016,
+        "decoded_sha256": "7d21c98913cb9c84b83806cfc57533866a1194e52f99e857c3dcd8631febaa17",
+        "season": 2026,
+        "week": 1,
+        "fit_cutoff": 1788999600.0,
+        "player_games": 37,
+        "method_counts": {
+          "R0": 37,
+          "R1": 37,
+          "R2": 37,
+          "R3": 37
+        },
+        "retention_clock": "2026-11-10T11:48:40.281469+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true,
+        "prior_remote_readback_matches": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W02.json.gz",
+        "stored_bytes": 232889,
+        "stored_sha256": "b9d791d934ea220aa0be75feb7e548a27a30162744144de9c48e3eb578ebd4e5",
+        "decoded_bytes": 899103,
+        "decoded_sha256": "3ea324e306602829fea3bb5439542d46b3e4562c8610745847895b78100acf54",
+        "season": 2026,
+        "week": 2,
+        "fit_cutoff": 1789690500.0,
+        "player_games": 39,
+        "method_counts": {
+          "R0": 39,
+          "R1": 39,
+          "R2": 39,
+          "R3": 39
+        },
+        "retention_clock": "2026-11-10T11:48:41.354473+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true,
+        "prior_remote_readback_matches": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W03.json.gz",
+        "stored_bytes": 219708,
+        "stored_sha256": "f28425fa781966f3a5bd979b2302f64805cb90aa2d1642db697cf73c284c117e",
+        "decoded_bytes": 829567,
+        "decoded_sha256": "98ea8de400963ea1e8059252ea34b5beb94d85ebc34f01d877a9352462f1484c",
+        "season": 2026,
+        "week": 3,
+        "fit_cutoff": 1790295300.0,
+        "player_games": 36,
+        "method_counts": {
+          "R0": 36,
+          "R1": 36,
+          "R2": 36,
+          "R3": 36
+        },
+        "retention_clock": "2026-11-10T11:48:42.434263+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true,
+        "prior_remote_readback_matches": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W04.json.gz",
+        "stored_bytes": 205808,
+        "stored_sha256": "dc012c1c7a823fff9b76709f785118d63c8330efe8148f568ab126967d196c89",
+        "decoded_bytes": 777875,
+        "decoded_sha256": "761b63d6d08cd99b397e016bcb262b9693b70c235fa421ea6f49c5ff3ec7cf44",
+        "season": 2026,
+        "week": 4,
+        "fit_cutoff": 1790900100.0,
+        "player_games": 34,
+        "method_counts": {
+          "R0": 34,
+          "R1": 34,
+          "R2": 34,
+          "R3": 34
+        },
+        "retention_clock": "2026-11-10T11:48:43.509720+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true,
+        "prior_remote_readback_matches": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W05.json.gz",
+        "stored_bytes": 216162,
+        "stored_sha256": "c2db4911e05d308f19f0ed7cad108a30a43ad6219426f9a572d1901ee9d0e430",
+        "decoded_bytes": 824303,
+        "decoded_sha256": "8b1e47f9fdd25cdffafdf383566c8a08116c258741b5f8660b8e812da2456918",
+        "season": 2026,
+        "week": 5,
+        "fit_cutoff": 1791504900.0,
+        "player_games": 36,
+        "method_counts": {
+          "R0": 36,
+          "R1": 36,
+          "R2": 36,
+          "R3": 36
+        },
+        "retention_clock": "2026-11-10T11:48:44.651467+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true,
+        "prior_remote_readback_matches": true
+      }
+    ],
+    "total_primary_stored_bytes": 1095392
+  },
+  "all_supported_existing_outputs": {
+    "origins": 26,
+    "unique_player_games_per_arm": 941,
+    "2025_player_games_per_arm": 664,
+    "2026_player_games_per_arm": 277,
+    "record_count_all_four_arms": 3764,
+    "duplicate_exact_keys": 0,
+    "files": [
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W01.json.gz",
+        "stored_bytes": 205894,
+        "stored_sha256": "07a4b1eb26923684a1928b42b216f4d317531b956866c5d0c511b970b31cb509",
+        "decoded_bytes": 781084,
+        "decoded_sha256": "4f1ec1c56a0d4b1d24c9225ec91cbda457e172a7d5ccc12f9c2bafc2ad424344",
+        "season": 2025,
+        "week": 1,
+        "fit_cutoff": 1757031600.0,
+        "player_games": 34,
+        "method_counts": {
+          "R0": 34,
+          "R1": 34,
+          "R2": 34,
+          "R3": 34
+        },
+        "retention_clock": "2026-11-10T11:46:02.988779+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W02.json.gz",
+        "stored_bytes": 239010,
+        "stored_sha256": "607c0e43d8580180bd9492fdee6945311942b6541ff717fb0ab22a4278061601",
+        "decoded_bytes": 939056,
+        "decoded_sha256": "9b3c9636dc7491ff4e5847578b9a54f510703cdbcbddf552c4da5a217ae1558e",
+        "season": 2025,
+        "week": 2,
+        "fit_cutoff": 1757636100.0,
+        "player_games": 41,
+        "method_counts": {
+          "R0": 41,
+          "R1": 41,
+          "R2": 41,
+          "R3": 41
+        },
+        "retention_clock": "2026-11-10T11:48:18.933393+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W03.json.gz",
+        "stored_bytes": 244790,
+        "stored_sha256": "09d737a28c8b202490694e67c4338622c61925d0f9d8a3e95fd230055f9bedee",
+        "decoded_bytes": 960139,
+        "decoded_sha256": "772c8cc9897a2d08714db16fa24817377c2af8dbf6b5fad95d3d897859e0b7ee",
+        "season": 2025,
+        "week": 3,
+        "fit_cutoff": 1758240900.0,
+        "player_games": 42,
+        "method_counts": {
+          "R0": 42,
+          "R1": 42,
+          "R2": 42,
+          "R3": 42
+        },
+        "retention_clock": "2026-11-10T11:48:20.077560+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W04.json.gz",
+        "stored_bytes": 232884,
+        "stored_sha256": "721cd1471f02ebef96bbce579bae2db7b043e22a4486c855010fe54ec03cdd99",
+        "decoded_bytes": 897667,
+        "decoded_sha256": "302faf4d50fb190530dc4e28a40ac54b55e502576e758b07f29c8dab3a8984a7",
+        "season": 2025,
+        "week": 4,
+        "fit_cutoff": 1758845700.0,
+        "player_games": 39,
+        "method_counts": {
+          "R0": 39,
+          "R1": 39,
+          "R2": 39,
+          "R3": 39
+        },
+        "retention_clock": "2026-11-10T11:48:21.267009+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W05.json.gz",
+        "stored_bytes": 202550,
+        "stored_sha256": "106506bd2fff498fa47aae01f1bde00a3faec76a8fda65bd59fe1d382e1cc24d",
+        "decoded_bytes": 777415,
+        "decoded_sha256": "6e96f9f586f55a1dcdf29ddf5ceb87764e8ed3210310ceb84779da4dd81bae82",
+        "season": 2025,
+        "week": 5,
+        "fit_cutoff": 1759450500.0,
+        "player_games": 34,
+        "method_counts": {
+          "R0": 34,
+          "R1": 34,
+          "R2": 34,
+          "R3": 34
+        },
+        "retention_clock": "2026-11-10T11:48:22.559934+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W06.json.gz",
+        "stored_bytes": 204239,
+        "stored_sha256": "b2c88d37976930627a4e647c23b6e2d4a825760030eefa4b4fa034708a1e2736",
+        "decoded_bytes": 764181,
+        "decoded_sha256": "d309078c476c5303b4f89e69ab70f7f93d9682cdde45da81e13ac92d1cdc50dd",
+        "season": 2025,
+        "week": 6,
+        "fit_cutoff": 1760055300.0,
+        "player_games": 33,
+        "method_counts": {
+          "R0": 33,
+          "R1": 33,
+          "R2": 33,
+          "R3": 33
+        },
+        "retention_clock": "2026-11-10T11:48:23.649379+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W07.json.gz",
+        "stored_bytes": 231797,
+        "stored_sha256": "bcd2935cce740a26d61316cb5ebab5648cad3bbf682ac76eb71eb00d1872213f",
+        "decoded_bytes": 897371,
+        "decoded_sha256": "208e120d5cc5973d624c2ffabe04d974cbd51cc8426a56177a44b92b48466f66",
+        "season": 2025,
+        "week": 7,
+        "fit_cutoff": 1760660100.0,
+        "player_games": 39,
+        "method_counts": {
+          "R0": 39,
+          "R1": 39,
+          "R2": 39,
+          "R3": 39
+        },
+        "retention_clock": "2026-11-10T11:48:24.863791+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W08.json.gz",
+        "stored_bytes": 200101,
+        "stored_sha256": "d0c599c8492e855c55ec62e5a593dc263db440da8ff8b31e9633a24f9152f6a5",
+        "decoded_bytes": 776700,
+        "decoded_sha256": "7d7b8d528c9de76c710e43f3978ecae1a17c65ffea68b4142d15825798ba8c9e",
+        "season": 2025,
+        "week": 8,
+        "fit_cutoff": 1761264900.0,
+        "player_games": 34,
+        "method_counts": {
+          "R0": 34,
+          "R1": 34,
+          "R2": 34,
+          "R3": 34
+        },
+        "retention_clock": "2026-11-10T11:48:26.068476+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W09.json.gz",
+        "stored_bytes": 190758,
+        "stored_sha256": "2da8669456f300ded6bab1f019d86ec9b1e0abfbc12ee4189218919acd4e5fcb",
+        "decoded_bytes": 718467,
+        "decoded_sha256": "39d0130e2a232e3a9e4d371982222fce51596ea20c4ddfa4c7719977d6fc0e20",
+        "season": 2025,
+        "week": 9,
+        "fit_cutoff": 1761869700.0,
+        "player_games": 31,
+        "method_counts": {
+          "R0": 31,
+          "R1": 31,
+          "R2": 31,
+          "R3": 31
+        },
+        "retention_clock": "2026-11-10T11:48:27.288787+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W10.json.gz",
+        "stored_bytes": 203227,
+        "stored_sha256": "9e9b7356b3a508827cdd4da1b9875301f15aa798bfdb50a85bef61cc2d2ee5af",
+        "decoded_bytes": 783309,
+        "decoded_sha256": "9384bf11383974444f3bd778fad73f532001c363c82f2afc2aaca387d960153f",
+        "season": 2025,
+        "week": 10,
+        "fit_cutoff": 1762478100.0,
+        "player_games": 34,
+        "method_counts": {
+          "R0": 34,
+          "R1": 34,
+          "R2": 34,
+          "R3": 34
+        },
+        "retention_clock": "2026-11-10T11:48:28.553684+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W11.json.gz",
+        "stored_bytes": 222690,
+        "stored_sha256": "166302f359b66e0d3432b6433e59375bed9120908b7872b296ed19953265d438",
+        "decoded_bytes": 852692,
+        "decoded_sha256": "56d8379756db92bf88c20fe3c6c086883b0ceec274032d95cec60f176d5524b8",
+        "season": 2025,
+        "week": 11,
+        "fit_cutoff": 1763082900.0,
+        "player_games": 37,
+        "method_counts": {
+          "R0": 37,
+          "R1": 37,
+          "R2": 37,
+          "R3": 37
+        },
+        "retention_clock": "2026-11-10T11:48:29.785316+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W12.json.gz",
+        "stored_bytes": 195455,
+        "stored_sha256": "f319e2e533439167ae0f9f1d3bb891d30b2efb0de7545fc4e8eb40f0c40eea5a",
+        "decoded_bytes": 737006,
+        "decoded_sha256": "7b63cc2071938da72e11fc167507b5cb5356712c2f613879adda7088581d2b99",
+        "season": 2025,
+        "week": 12,
+        "fit_cutoff": 1763687700.0,
+        "player_games": 32,
+        "method_counts": {
+          "R0": 32,
+          "R1": 32,
+          "R2": 32,
+          "R3": 32
+        },
+        "retention_clock": "2026-11-10T11:48:30.952921+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W13.json.gz",
+        "stored_bytes": 227308,
+        "stored_sha256": "799c4ea25bdc60580a09e8ebc79fb35b55d27df27fc90f61982b987bcbce2d4e",
+        "decoded_bytes": 857974,
+        "decoded_sha256": "37c3c084d3437cdc159a39c58e28d03ce4a5db85f1a78bb9459602740523d305",
+        "season": 2025,
+        "week": 13,
+        "fit_cutoff": 1764266400.0,
+        "player_games": 37,
+        "method_counts": {
+          "R0": 37,
+          "R1": 37,
+          "R2": 37,
+          "R3": 37
+        },
+        "retention_clock": "2026-11-10T11:48:32.191701+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W14.json.gz",
+        "stored_bytes": 214301,
+        "stored_sha256": "1028e2a25fb363aabe666725e1827b56e1b82ab44159f8a2496b291d4d206c36",
+        "decoded_bytes": 831450,
+        "decoded_sha256": "24ba53fb128a6d1d54d1e925d13b0d6dbae3921e6c437c71eabcc0617d2f9daa",
+        "season": 2025,
+        "week": 14,
+        "fit_cutoff": 1764897300.0,
+        "player_games": 36,
+        "method_counts": {
+          "R0": 36,
+          "R1": 36,
+          "R2": 36,
+          "R3": 36
+        },
+        "retention_clock": "2026-11-10T11:48:33.546088+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W15.json.gz",
+        "stored_bytes": 230232,
+        "stored_sha256": "a15f0d225ac66bd1c14a855cb938bdab2b77d36b91cf1702deb9b5d594698f87",
+        "decoded_bytes": 879794,
+        "decoded_sha256": "bc887cac7ab582fdb6c9d2b41d9b837eed1b5559d6551cbfb6ae86e5e7526f78",
+        "season": 2025,
+        "week": 15,
+        "fit_cutoff": 1765502100.0,
+        "player_games": 38,
+        "method_counts": {
+          "R0": 38,
+          "R1": 38,
+          "R2": 38,
+          "R3": 38
+        },
+        "retention_clock": "2026-11-10T11:48:34.951446+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W16.json.gz",
+        "stored_bytes": 252753,
+        "stored_sha256": "aedaa6e03b73b7e92a67ed5a0a193cf85ce60f9532e8a61edefec6fb61873768",
+        "decoded_bytes": 988969,
+        "decoded_sha256": "5fe117c4dd918d36f323a8c640345ec1a74ba77e4087005f555ff3d0915ae95f",
+        "season": 2025,
+        "week": 16,
+        "fit_cutoff": 1766106900.0,
+        "player_games": 43,
+        "method_counts": {
+          "R0": 43,
+          "R1": 43,
+          "R2": 43,
+          "R3": 43
+        },
+        "retention_clock": "2026-11-10T11:48:36.362138+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W17.json.gz",
+        "stored_bytes": 224463,
+        "stored_sha256": "4d607987936567ed2da4cfb9287a4d495b01f6af0e81543960c6609ce7916c0c",
+        "decoded_bytes": 851148,
+        "decoded_sha256": "988547bc310556f57be3c825816e1223b048b91e2be1c57b71023d6ede56b59d",
+        "season": 2025,
+        "week": 17,
+        "fit_cutoff": 1766685600.0,
+        "player_games": 37,
+        "method_counts": {
+          "R0": 37,
+          "R1": 37,
+          "R2": 37,
+          "R3": 37
+        },
+        "retention_clock": "2026-11-10T11:48:37.790339+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2025-W18.json.gz",
+        "stored_bytes": 250263,
+        "stored_sha256": "2a8550e1d191685278675d87a2a5c0d2c76ab5c4c45e3310f8e8567a14c2de6a",
+        "decoded_bytes": 985706,
+        "decoded_sha256": "85a87d1e5cddc15aead62d3604a7ddd87ecb0423498d9b736303414002bdd477",
+        "season": 2025,
+        "week": 18,
+        "fit_cutoff": 1767475800.0,
+        "player_games": 43,
+        "method_counts": {
+          "R0": 43,
+          "R1": 43,
+          "R2": 43,
+          "R3": 43
+        },
+        "retention_clock": "2026-11-10T11:48:39.293005+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W01.json.gz",
+        "stored_bytes": 220825,
+        "stored_sha256": "6f1f3363c3d9cbfa399a64f8e51de43f2be7e6932eaa8af00ff154ff58e66de1",
+        "decoded_bytes": 851016,
+        "decoded_sha256": "7d21c98913cb9c84b83806cfc57533866a1194e52f99e857c3dcd8631febaa17",
+        "season": 2026,
+        "week": 1,
+        "fit_cutoff": 1788999600.0,
+        "player_games": 37,
+        "method_counts": {
+          "R0": 37,
+          "R1": 37,
+          "R2": 37,
+          "R3": 37
+        },
+        "retention_clock": "2026-11-10T11:48:40.281469+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W02.json.gz",
+        "stored_bytes": 232889,
+        "stored_sha256": "b9d791d934ea220aa0be75feb7e548a27a30162744144de9c48e3eb578ebd4e5",
+        "decoded_bytes": 899103,
+        "decoded_sha256": "3ea324e306602829fea3bb5439542d46b3e4562c8610745847895b78100acf54",
+        "season": 2026,
+        "week": 2,
+        "fit_cutoff": 1789690500.0,
+        "player_games": 39,
+        "method_counts": {
+          "R0": 39,
+          "R1": 39,
+          "R2": 39,
+          "R3": 39
+        },
+        "retention_clock": "2026-11-10T11:48:41.354473+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W03.json.gz",
+        "stored_bytes": 219708,
+        "stored_sha256": "f28425fa781966f3a5bd979b2302f64805cb90aa2d1642db697cf73c284c117e",
+        "decoded_bytes": 829567,
+        "decoded_sha256": "98ea8de400963ea1e8059252ea34b5beb94d85ebc34f01d877a9352462f1484c",
+        "season": 2026,
+        "week": 3,
+        "fit_cutoff": 1790295300.0,
+        "player_games": 36,
+        "method_counts": {
+          "R0": 36,
+          "R1": 36,
+          "R2": 36,
+          "R3": 36
+        },
+        "retention_clock": "2026-11-10T11:48:42.434263+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W04.json.gz",
+        "stored_bytes": 205808,
+        "stored_sha256": "dc012c1c7a823fff9b76709f785118d63c8330efe8148f568ab126967d196c89",
+        "decoded_bytes": 777875,
+        "decoded_sha256": "761b63d6d08cd99b397e016bcb262b9693b70c235fa421ea6f49c5ff3ec7cf44",
+        "season": 2026,
+        "week": 4,
+        "fit_cutoff": 1790900100.0,
+        "player_games": 34,
+        "method_counts": {
+          "R0": 34,
+          "R1": 34,
+          "R2": 34,
+          "R3": 34
+        },
+        "retention_clock": "2026-11-10T11:48:43.509720+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W05.json.gz",
+        "stored_bytes": 216162,
+        "stored_sha256": "c2db4911e05d308f19f0ed7cad108a30a43ad6219426f9a572d1901ee9d0e430",
+        "decoded_bytes": 824303,
+        "decoded_sha256": "8b1e47f9fdd25cdffafdf383566c8a08116c258741b5f8660b8e812da2456918",
+        "season": 2026,
+        "week": 5,
+        "fit_cutoff": 1791504900.0,
+        "player_games": 36,
+        "method_counts": {
+          "R0": 36,
+          "R1": 36,
+          "R2": 36,
+          "R3": 36
+        },
+        "retention_clock": "2026-11-10T11:48:44.651467+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W06.json.gz",
+        "stored_bytes": 181595,
+        "stored_sha256": "f9dbefc6743cf4d6cdfb501039d35bc3bc5921c77659f5c709ce54b729ed0ef8",
+        "decoded_bytes": 669558,
+        "decoded_sha256": "f765f94142e4ac4f296a05c20fc94c79f728ebb12b97431c4c894300d857783a",
+        "season": 2026,
+        "week": 6,
+        "fit_cutoff": 1792109700.0,
+        "player_games": 29,
+        "method_counts": {
+          "R0": 29,
+          "R1": 29,
+          "R2": 29,
+          "R3": 29
+        },
+        "retention_clock": "2026-11-10T11:48:45.756751+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W07.json.gz",
+        "stored_bytes": 191193,
+        "stored_sha256": "6f190301ed080ae342c40f9a8c9c20807a57ebee2584eacda68c5ab1b35a5fa0",
+        "decoded_bytes": 716956,
+        "decoded_sha256": "76a9c95a1e80b55dde05a78efc3044d2badc4a3e29a3b2c9a321894d7e2d77f0",
+        "season": 2026,
+        "week": 7,
+        "fit_cutoff": 1792714500.0,
+        "player_games": 31,
+        "method_counts": {
+          "R0": 31,
+          "R1": 31,
+          "R2": 31,
+          "R3": 31
+        },
+        "retention_clock": "2026-11-10T11:48:46.793203+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      },
+      {
+        "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W08.json.gz",
+        "stored_bytes": 208996,
+        "stored_sha256": "f10f0e4d9d634fcfa99b4aa0a095c49b3bc2918eed9e286ee7e9c79ac676bf7b",
+        "decoded_bytes": 809519,
+        "decoded_sha256": "15f37466bc4ee692b6394373ad720c8eb9df01e6c28f3524eadf24436145e396",
+        "season": 2026,
+        "week": 8,
+        "fit_cutoff": 1793319300.0,
+        "player_games": 35,
+        "method_counts": {
+          "R0": 35,
+          "R1": 35,
+          "R2": 35,
+          "R3": 35
+        },
+        "retention_clock": "2026-11-10T11:48:47.934292+00:00",
+        "B_query_original_issuance": false,
+        "immutable_commit_blob_matches_local": true
+      }
+    ]
+  },
+  "read_format": {
+    "encoding": "gzip-compressedUTF8JSON;standardlibraryjson/gzip;no modeldeserialization",
+    "envelope_fields": [
+      "season",
+      "week",
+      "fit_cutoff",
+      "rows",
+      "actual_persisted_utc",
+      "original_issuance",
+      "resources"
+    ],
+    "row_fields": [
+      "actual",
+      "actual_execution_utc",
+      "actual_status",
+      "fallback",
+      "feature_cutoff",
+      "feature_memory",
+      "features",
+      "fit_cutoff",
+      "game_id",
+      "history_regime",
+      "last_prior_game",
+      "latest_own_game_age_days",
+      "latest_source_available",
+      "law",
+      "lower_median",
+      "mean",
+      "method",
+      "model_slot",
+      "new_inference",
+      "opponent",
+      "original_issuance",
+      "own_prior_attempts",
+      "own_prior_games",
+      "player_id",
+      "population",
+      "position",
+      "pregame_role_band",
+      "procedure_id",
+      "profile_priority",
+      "season",
+      "source_age_days",
+      "target",
+      "team",
+      "week"
+    ],
+    "required_selectors": {
+      "target": "pass_cmp",
+      "position": "QB",
+      "method": [
+        "R0",
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "procedure_id": "exactregisteredIDforselectedmethod"
+    },
+    "native_identity_fields": [
+      "game_id",
+      "player_id",
+      "team",
+      "opponent",
+      "season",
+      "week"
+    ],
+    "clock_fields": {
+      "fit_cutoff": "UTCUnixseconds;weeklyfitorigin",
+      "feature_cutoff": "UTCUnixseconds;targetkickofffeaturehorizon",
+      "latest_source_available": "latestadmittedprioravailabilityUTCUnixsecondsornull",
+      "actual_execution_utc": "realretrospectiveruntime;notpregameissuance",
+      "actual_persisted_utc": "realretrospectivepacketpersistence;notpregameissuance"
+    },
+    "output_fields": {
+      "mean": "unroundedexpectedcompletioncount",
+      "lower_median": "lowerCDFcountmedian",
+      "law": "typedexplicitLeafcountlaw;legitimatelawonly;do notinferfrompoint",
+      "fallback": "knownrecordedfallbackstatus",
+      "actual/actual_status": "diagnosticretainedlabels;keepoutsidepregameinputs;Agradeswithboundqualifiedcorrectedlabels"
+    }
+  },
+  "A_adapter_required_changes": {
+    "current_script": "tools/player_context_completion_qb_join_v1.py",
+    "current_script_ref": "1511d1c03a7bf0e7a139d38b602daf68620dbf29",
+    "current_script_is": "ATT-onlyandCOMMON_EXPOSURE-only;notcompatibleunchanged",
+    "minimal_owner_action": "A registersfiniteCMPsaved-rowjoin, versions target/pass_cmpandprocedure/productselectors, reusesexistingcanonicalidentity/clock/qualifiedlabel/unavailablehandling,thenexecutesownerlocaljoinandindependentreadback. Do notrenameR2asCOMMON_EXPOSURE orreuseATTlines.",
+    "not_a_B_model_defect": "Allrequiredsavedcompletionoutputsandclocksalreadyexist; noBfit/inferrequired."
+  },
+  "join_contract": {
+    "identity": "canonicalgame + GSISplayer +QBrole +historicalteam/opponent +pass_cmp +fullgameOT +samefeaturehorizon/cutoff",
+    "clocks": "fit_cutoff<=feature_cutoff; latestadmittedsource<feature_cutoff; targetkickoff/querycutoff mustmatchAofferpanel. Unqualifiedquoteclock stays timing-unverified diagnostic,neverearlierissuedclaim.",
+    "unknowns": "Explicitmissing/unknownlabelsremainunknown; participationdoesnotfillmissingcompletions; preserveunavailablemismatchreasonsandfallback.",
+    "dedup": "EachAprimaryplayer/game/category/contract/line/horizonopportunityonce; W5AannualandBPropLinepanelsseparate. Do notconcatenatelikelysameplayergame as newindependentobservation.",
+    "directions": "P1meanandP1lowermedianseparate; point>lineOver,<lineUnder,equalityabstain; thresholdactualcrossingusesstrictinequality; P2onlyexactlawwithdeclaredpush/participationconditioning.",
+    "comparison": "Sameeligible/commondecidedrowsforallcontenders,fullcoverageoutsidecommoncore,pairwisecontrols,Over/Under/Combinedcounts/numericalofferedmask,weeklytotalsanduncertainty. StrongAretainedandincumbentcontrolswherecompatible; constantssamepanel.",
+    "products": "No probability/TopPicks/fifthweekprimaryadmissionmerelyfromnumericalrowsorcomponentduration."
+  },
+  "permission_limits": {
+    "B_predictions": "Existingpublicsource-derivedoutputsunderretainedlicense/attribution;thismanifestcontainsnoprivateoffersorplayerrowdata",
+    "A_offers": "Aowner-local; no transfer/publicationpermissionconferred",
+    "C_admission": "NO_NEW_RECEIPT_VERIFIED; exactpublicartifacthandoffisnotadmission",
+    "website": "Read-onlytoB; no releaseauthorizedbythishandoff"
+  },
+  "B_execution": {
+    "new_fits": 0,
+    "new_inference": 0,
+    "new_forecasts_issued": 0,
+    "new_offer_scoring": 0,
+    "new_private_rows_exported": 0
+  },
+  "primary_public_readback": [
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "commit": "05032e19e30b1f890a6b2679c70d3c97f0bbb2a1",
+      "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W01.json.gz",
+      "bytes": 220825,
+      "sha256": "6f1f3363c3d9cbfa399a64f8e51de43f2be7e6932eaa8af00ff154ff58e66de1",
+      "readback": "EXACT_PUBLIC_BYTES"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "commit": "05032e19e30b1f890a6b2679c70d3c97f0bbb2a1",
+      "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W02.json.gz",
+      "bytes": 232889,
+      "sha256": "b9d791d934ea220aa0be75feb7e548a27a30162744144de9c48e3eb578ebd4e5",
+      "readback": "EXACT_PUBLIC_BYTES"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "commit": "05032e19e30b1f890a6b2679c70d3c97f0bbb2a1",
+      "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W03.json.gz",
+      "bytes": 219708,
+      "sha256": "f28425fa781966f3a5bd979b2302f64805cb90aa2d1642db697cf73c284c117e",
+      "readback": "EXACT_PUBLIC_BYTES"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "commit": "05032e19e30b1f890a6b2679c70d3c97f0bbb2a1",
+      "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W04.json.gz",
+      "bytes": 205808,
+      "sha256": "dc012c1c7a823fff9b76709f785118d63c8330efe8148f568ab126967d196c89",
+      "readback": "EXACT_PUBLIC_BYTES"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "commit": "05032e19e30b1f890a6b2679c70d3c97f0bbb2a1",
+      "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W05.json.gz",
+      "bytes": 216162,
+      "sha256": "c2db4911e05d308f19f0ed7cad108a30a43ad6219426f9a572d1901ee9d0e430",
+      "readback": "EXACT_PUBLIC_BYTES"
+    }
+  ]
+}

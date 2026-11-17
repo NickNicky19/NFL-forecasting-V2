@@ -1,0 +1,30 @@
+{
+  "at_utc": "2026-11-04T01:52:52.213650+00:00",
+  "rows": [
+    {
+      "artifact_group": "Existing2022-2024large-fitarchives",
+      "state": "PARTIALLY_RESTORED_LAST_PROVIDER_CHECK_NOV2",
+      "missing_parts": 38,
+      "missing_bytes": 796917760,
+      "required_action": "Verify actualapproveduploaderquota then uploadmissingonly andfreshdownload/reassemble/verifyinnerhashes. No unchangedretry; no largefitgatewaiver."
+    },
+    {
+      "artifact_group": "OriginalWeek8captures",
+      "state": "PRIOR_VERIFIED_RESTORATIONS_PRESERVED",
+      "required_action": "No capture replacement or refit; keeporiginalreceipts."
+    },
+    {
+      "artifact_group": "Bretainedleaflawrows-v1",
+      "state": "LOCAL_ONLY_READBACK_VERIFIED",
+      "bytes": 9076411,
+      "sha256": "6130073206a97d889d2babce5a866e0ab4524e68ca3d7ddb89ab4fa39d7da7e3",
+      "minimum_additional_retention_bytes": 9076411,
+      "required_action": "Preserveexistingfile; anyoffhosttransferusesexistingapprovedroute/permissions. V2creates0newprivatebytes; no restorationclaim."
+    },
+    {
+      "artifact_group": "Currentpublicaggregatecodeandexactbindings",
+      "state": "LOCAL_PREPUBLICATION_CODE_AGGREGATES_ONLY",
+      "required_action": "GitHubpushandactualreadback beforeclaimingdurablepublication."
+    }
+  ]
+}

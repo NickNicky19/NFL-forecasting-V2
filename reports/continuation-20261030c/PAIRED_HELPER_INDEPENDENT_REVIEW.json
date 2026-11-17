@@ -1,0 +1,19 @@
+{
+  "state": "PASS_INDEPENDENT_FICTIONAL_WEIGHTED_BLOCK_MATH",
+  "code_sha256": "f55e847f6c13ce891bfa5f9539b245a4f8dbb83657940f3c9b57f15f9f7e3585",
+  "protocol_sha256": "4bb056c447f028d74aa5f8d38c31f868eab1d77d3fa08428d5e758bd1c8d274c",
+  "fictional_row_count": 54,
+  "observed_week_clusters": 18,
+  "independently_recomputed_bootstrap_replicates": 500,
+  "expected_delta": 0.3055555555555556,
+  "expected_interval": [
+    -1.2005011792452829,
+    1.7570396505376331
+  ],
+  "expected_game_influence_SE": 0.6291092631765701,
+  "checks": "SeparatePythonloop/reweightedblockrows/handlinearquantiles/gameinfluence matched;7weekflag andinfinitepairflag checked",
+  "limits": "Perseason; pooledyears must use(season,week)keys rather than merging same weeknumbers. Whole-weekbootstrap is descriptive, not serial-dependence/selection/multiplicity proof; no NFLsamples fromsimulation.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

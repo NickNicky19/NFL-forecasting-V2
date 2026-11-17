@@ -1,0 +1,398 @@
+{
+  "state": "COMPLETE_METADATA_AND_FORECAST_PRESENCE_CENSUS",
+  "code_sha256": "215f4b902a3827b837c58fe34d1e0322bc2053a815fe3e60c184ad360e76a0b3",
+  "metadata_source_sha256": "bc76e172f2fce63b777b2d05a6bee5e23da45bd2c352f1e4b8db63dd07ede9a7",
+  "original_source_sha256": "e33bda264b397ca9a038e8d01e30caf71c615fd957d0e7f0b911c4c4ff39156e",
+  "eligible_original_source_rows": 1419,
+  "games": 13,
+  "targets": 10,
+  "adjusted_point_field": "adjusted_projection",
+  "by_line_from": [
+    {
+      "line_from": "dk",
+      "source_rows": 441,
+      "finite_line_rows": 441,
+      "original_side_present_rows": 273,
+      "adjusted_point_present_rows": 441,
+      "finite_line_and_point_rows": 441,
+      "finite_line_and_saved_side_rows": 273
+    },
+    {
+      "line_from": "ours",
+      "source_rows": 957,
+      "finite_line_rows": 957,
+      "original_side_present_rows": 0,
+      "adjusted_point_present_rows": 957,
+      "finite_line_and_point_rows": 957,
+      "finite_line_and_saved_side_rows": 0
+    },
+    {
+      "line_from": "sleeper",
+      "source_rows": 21,
+      "finite_line_rows": 21,
+      "original_side_present_rows": 12,
+      "adjusted_point_present_rows": 21,
+      "finite_line_and_point_rows": 21,
+      "finite_line_and_saved_side_rows": 12
+    }
+  ],
+  "cross_states": [
+    {
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 168
+    },
+    {
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 273
+    },
+    {
+      "line_from": "ours",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 957
+    },
+    {
+      "line_from": "sleeper",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 9
+    },
+    {
+      "line_from": "sleeper",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 12
+    }
+  ],
+  "target_cross_states": [
+    {
+      "target": "pass_att",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 11
+    },
+    {
+      "target": "pass_att",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 14
+    },
+    {
+      "target": "pass_att",
+      "line_from": "ours",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 11
+    },
+    {
+      "target": "pass_cmp",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 10
+    },
+    {
+      "target": "pass_cmp",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 15
+    },
+    {
+      "target": "pass_cmp",
+      "line_from": "ours",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 11
+    },
+    {
+      "target": "pass_int",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 13
+    },
+    {
+      "target": "pass_int",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 11
+    },
+    {
+      "target": "pass_int",
+      "line_from": "ours",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 12
+    },
+    {
+      "target": "pass_td",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 3
+    },
+    {
+      "target": "pass_td",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 22
+    },
+    {
+      "target": "pass_td",
+      "line_from": "ours",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 11
+    },
+    {
+      "target": "pass_yd",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 5
+    },
+    {
+      "target": "pass_yd",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 19
+    },
+    {
+      "target": "pass_yd",
+      "line_from": "ours",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 11
+    },
+    {
+      "target": "pass_yd",
+      "line_from": "sleeper",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 1
+    },
+    {
+      "target": "rec",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 34
+    },
+    {
+      "target": "rec",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 77
+    },
+    {
+      "target": "rec",
+      "line_from": "ours",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 251
+    },
+    {
+      "target": "rec",
+      "line_from": "sleeper",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 1
+    },
+    {
+      "target": "rec",
+      "line_from": "sleeper",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 4
+    },
+    {
+      "target": "rec_yd",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 55
+    },
+    {
+      "target": "rec_yd",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 55
+    },
+    {
+      "target": "rec_yd",
+      "line_from": "ours",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 251
+    },
+    {
+      "target": "rec_yd",
+      "line_from": "sleeper",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 4
+    },
+    {
+      "target": "rec_yd",
+      "line_from": "sleeper",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 2
+    },
+    {
+      "target": "rush_att",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 7
+    },
+    {
+      "target": "rush_att",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 15
+    },
+    {
+      "target": "rush_att",
+      "line_from": "ours",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 77
+    },
+    {
+      "target": "rush_att",
+      "line_from": "sleeper",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 1
+    },
+    {
+      "target": "rush_att",
+      "line_from": "sleeper",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 2
+    },
+    {
+      "target": "rush_rec_yd",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 11
+    },
+    {
+      "target": "rush_rec_yd",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 9
+    },
+    {
+      "target": "rush_rec_yd",
+      "line_from": "ours",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 242
+    },
+    {
+      "target": "rush_rec_yd",
+      "line_from": "sleeper",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 3
+    },
+    {
+      "target": "rush_yd",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 19
+    },
+    {
+      "target": "rush_yd",
+      "line_from": "dk",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 36
+    },
+    {
+      "target": "rush_yd",
+      "line_from": "ours",
+      "finite_line": true,
+      "original_side_present": false,
+      "adjusted_point_present": true,
+      "n": 80
+    },
+    {
+      "target": "rush_yd",
+      "line_from": "sleeper",
+      "finite_line": true,
+      "original_side_present": true,
+      "adjusted_point_present": true,
+      "n": 3
+    }
+  ],
+  "provider_labelled_finite_threshold_rows": 462,
+  "site_generated_finite_threshold_rows": 957,
+  "source_contract": "DK-labelled thresholds and Sleeper contest thresholds are preserved source labels, not authenticated quote times, side prices or venue settlement. Ours thresholds are site-generated. None is asserted to be an exhaustive bookmaker offer universe.",
+  "selected_comparison_scope": "285 original saved-side+finite-line rows only; point-derived control on those same285, not all1419feedrows or allprovider-labelledthresholds.",
+  "target_outcome_values_decoded": 0,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "CURRENT_2026_Week8_outcomes_read": 0
+}

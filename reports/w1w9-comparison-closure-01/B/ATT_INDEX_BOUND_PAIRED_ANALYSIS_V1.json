@@ -1,0 +1,1037 @@
+[
+  {
+    "n": 142,
+    "delta": -0.02112676056338028,
+    "relative_error_change": -0.04,
+    "week_interval": null,
+    "week_clusters": 5,
+    "game_clusters": 71,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.08536618938179445,
+    "game_normal95_sensitivity": [
+      -0.18844449175169742,
+      0.14619097062493686
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 0.5070422535211268,
+    "comparator_error": 0.528169014084507,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": -4.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 9.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": -5.0,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 1.0,
+        "n": 28
+      },
+      "(2026, 9)": {
+        "loss_difference_sum": -4.0,
+        "n": 30
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON",
+    "left": "P1_MEAN",
+    "right": "ALWAYS_OVER",
+    "side_disagreements": 129,
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "comparator_procedure_id": "B_EXISTING_CONTROL:ALWAYS_OVER",
+    "product_id": "P1_MEAN",
+    "comparator_product_id": "ALWAYS_OVER",
+    "target": "pass_att",
+    "population": "EXACT_SOURCE_BOUND_COMMON_DECIDED_QB_ATTEMPT_LINES",
+    "season": 2026,
+    "history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "comparator_history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "contrast": "B-player-context-matchup-01-v1:COMMON_EXPOSURE_MINUS_B_EXISTING_CONTROL:ALWAYS_OVER",
+    "metric": "SELECTION_LOSS_RATE",
+    "membership_sha256": null,
+    "cohort_id": "NATIVE_W5_W9_ATT_COMMON_DECIDED",
+    "position": "QB",
+    "policy_id": "P1_MEAN",
+    "fallback_view": "COMMON_DECIDED",
+    "history_limit": "Fixed retained COMMON_EXPOSURE attempt recipe; current-vintage chronological real-source-line diagnostic, not original issuance or a nine-week union. No inherited completion coverage.",
+    "original_pair_source": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/PAIRED_V1.json",
+    "original_pair_source_sha256": "dfb540147be10dc61a331f4520889db1afb9cadce8bac16de72f082b9962d798",
+    "original_pair_row_index": 0
+  },
+  {
+    "n": 142,
+    "delta": 0.035211267605633804,
+    "relative_error_change": 0.0746268656716418,
+    "week_interval": null,
+    "week_clusters": 5,
+    "game_clusters": 71,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.02522323603373014,
+    "game_normal95_sensitivity": [
+      -0.01422627502047727,
+      0.08464881023174488
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 0.5070422535211268,
+    "comparator_error": 0.47183098591549294,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": 0.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 1.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 1.0,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 3.0,
+        "n": 28
+      },
+      "(2026, 9)": {
+        "loss_difference_sum": 0.0,
+        "n": 30
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON",
+    "left": "P1_MEAN",
+    "right": "ALWAYS_UNDER",
+    "side_disagreements": 13,
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "comparator_procedure_id": "B_EXISTING_CONTROL:ALWAYS_UNDER",
+    "product_id": "P1_MEAN",
+    "comparator_product_id": "ALWAYS_UNDER",
+    "target": "pass_att",
+    "population": "EXACT_SOURCE_BOUND_COMMON_DECIDED_QB_ATTEMPT_LINES",
+    "season": 2026,
+    "history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "comparator_history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "contrast": "B-player-context-matchup-01-v1:COMMON_EXPOSURE_MINUS_B_EXISTING_CONTROL:ALWAYS_UNDER",
+    "metric": "SELECTION_LOSS_RATE",
+    "membership_sha256": null,
+    "cohort_id": "NATIVE_W5_W9_ATT_COMMON_DECIDED",
+    "position": "QB",
+    "policy_id": "P1_MEAN",
+    "fallback_view": "COMMON_DECIDED",
+    "history_limit": "Fixed retained COMMON_EXPOSURE attempt recipe; current-vintage chronological real-source-line diagnostic, not original issuance or a nine-week union. No inherited completion coverage.",
+    "original_pair_source": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/PAIRED_V1.json",
+    "original_pair_source_sha256": "dfb540147be10dc61a331f4520889db1afb9cadce8bac16de72f082b9962d798",
+    "original_pair_row_index": 1
+  },
+  {
+    "n": 141,
+    "delta": 0.07801418439716312,
+    "relative_error_change": 0.18333333333333335,
+    "week_interval": null,
+    "week_clusters": 5,
+    "game_clusters": 71,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.046988613958464424,
+    "game_normal95_sensitivity": [
+      -0.014083498961427146,
+      0.17011186775575338
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 0.5035460992907801,
+    "comparator_error": 0.425531914893617,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": 1.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 7.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 5.0,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 3.0,
+        "n": 28
+      },
+      "(2026, 9)": {
+        "loss_difference_sum": -5.0,
+        "n": 29
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON",
+    "left": "P1_MEAN",
+    "right": "SAVED_ADJUSTED",
+    "side_disagreements": 51,
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "comparator_procedure_id": "B_EXISTING_CONTROL:SAVED_ADJUSTED",
+    "product_id": "P1_MEAN",
+    "comparator_product_id": "SAVED_ADJUSTED",
+    "target": "pass_att",
+    "population": "EXACT_SOURCE_BOUND_COMMON_DECIDED_QB_ATTEMPT_LINES",
+    "season": 2026,
+    "history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "comparator_history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "contrast": "B-player-context-matchup-01-v1:COMMON_EXPOSURE_MINUS_B_EXISTING_CONTROL:SAVED_ADJUSTED",
+    "metric": "SELECTION_LOSS_RATE",
+    "membership_sha256": null,
+    "cohort_id": "NATIVE_W5_W9_ATT_COMMON_DECIDED",
+    "position": "QB",
+    "policy_id": "P1_MEAN",
+    "fallback_view": "COMMON_DECIDED",
+    "history_limit": "Fixed retained COMMON_EXPOSURE attempt recipe; current-vintage chronological real-source-line diagnostic, not original issuance or a nine-week union. No inherited completion coverage.",
+    "original_pair_source": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/PAIRED_V1.json",
+    "original_pair_source_sha256": "dfb540147be10dc61a331f4520889db1afb9cadce8bac16de72f082b9962d798",
+    "original_pair_row_index": 2
+  },
+  {
+    "n": 142,
+    "delta": 0.04929577464788732,
+    "relative_error_change": 0.10769230769230768,
+    "week_interval": null,
+    "week_clusters": 5,
+    "game_clusters": 71,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.05415802347563287,
+    "game_normal95_sensitivity": [
+      -0.05685395136435311,
+      0.15544550066012774
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 0.5070422535211268,
+    "comparator_error": 0.45774647887323944,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": 0.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 6.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 0.0,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 5.0,
+        "n": 28
+      },
+      "(2026, 9)": {
+        "loss_difference_sum": -4.0,
+        "n": 30
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON",
+    "left": "P1_MEAN",
+    "right": "SAVED_RAW",
+    "side_disagreements": 57,
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "comparator_procedure_id": "B_EXISTING_CONTROL:SAVED_RAW",
+    "product_id": "P1_MEAN",
+    "comparator_product_id": "SAVED_RAW",
+    "target": "pass_att",
+    "population": "EXACT_SOURCE_BOUND_COMMON_DECIDED_QB_ATTEMPT_LINES",
+    "season": 2026,
+    "history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "comparator_history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "contrast": "B-player-context-matchup-01-v1:COMMON_EXPOSURE_MINUS_B_EXISTING_CONTROL:SAVED_RAW",
+    "metric": "SELECTION_LOSS_RATE",
+    "membership_sha256": null,
+    "cohort_id": "NATIVE_W5_W9_ATT_COMMON_DECIDED",
+    "position": "QB",
+    "policy_id": "P1_MEAN",
+    "fallback_view": "COMMON_DECIDED",
+    "history_limit": "Fixed retained COMMON_EXPOSURE attempt recipe; current-vintage chronological real-source-line diagnostic, not original issuance or a nine-week union. No inherited completion coverage.",
+    "original_pair_source": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/PAIRED_V1.json",
+    "original_pair_source_sha256": "dfb540147be10dc61a331f4520889db1afb9cadce8bac16de72f082b9962d798",
+    "original_pair_row_index": 3
+  },
+  {
+    "n": 142,
+    "delta": 0.035211267605633804,
+    "relative_error_change": 0.0746268656716418,
+    "week_interval": null,
+    "week_clusters": 5,
+    "game_clusters": 71,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.030627153005207807,
+    "game_normal95_sensitivity": [
+      -0.024817952284573494,
+      0.0952404874958411
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 0.5070422535211268,
+    "comparator_error": 0.47183098591549294,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": 1.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 3.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 1.0,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 4.0,
+        "n": 28
+      },
+      "(2026, 9)": {
+        "loss_difference_sum": -4.0,
+        "n": 30
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON",
+    "left": "P1_MEAN",
+    "right": "EARLIER_LINE_PREVALENCE",
+    "side_disagreements": 21,
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "comparator_procedure_id": "B_EXISTING_CONTROL:EARLIER_LINE_PREVALENCE",
+    "product_id": "P1_MEAN",
+    "comparator_product_id": "EARLIER_LINE_PREVALENCE",
+    "target": "pass_att",
+    "population": "EXACT_SOURCE_BOUND_COMMON_DECIDED_QB_ATTEMPT_LINES",
+    "season": 2026,
+    "history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "comparator_history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "contrast": "B-player-context-matchup-01-v1:COMMON_EXPOSURE_MINUS_B_EXISTING_CONTROL:EARLIER_LINE_PREVALENCE",
+    "metric": "SELECTION_LOSS_RATE",
+    "membership_sha256": null,
+    "cohort_id": "NATIVE_W5_W9_ATT_COMMON_DECIDED",
+    "position": "QB",
+    "policy_id": "P1_MEAN",
+    "fallback_view": "COMMON_DECIDED",
+    "history_limit": "Fixed retained COMMON_EXPOSURE attempt recipe; current-vintage chronological real-source-line diagnostic, not original issuance or a nine-week union. No inherited completion coverage.",
+    "original_pair_source": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/PAIRED_V1.json",
+    "original_pair_source_sha256": "dfb540147be10dc61a331f4520889db1afb9cadce8bac16de72f082b9962d798",
+    "original_pair_row_index": 4
+  },
+  {
+    "n": 142,
+    "delta": -0.028169014084507043,
+    "relative_error_change": -0.05333333333333334,
+    "week_interval": null,
+    "week_clusters": 5,
+    "game_clusters": 71,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.08737585268344539,
+    "game_normal95_sensitivity": [
+      -0.19942568534406,
+      0.14308765717504593
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 0.5,
+    "comparator_error": 0.528169014084507,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": -4.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 8.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": -6.0,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 1.0,
+        "n": 28
+      },
+      "(2026, 9)": {
+        "loss_difference_sum": -3.0,
+        "n": 30
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON",
+    "left": "P1_LOWER_MEDIAN",
+    "right": "ALWAYS_OVER",
+    "side_disagreements": 134,
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "comparator_procedure_id": "B_EXISTING_CONTROL:ALWAYS_OVER",
+    "product_id": "P1_LOWER_MEDIAN",
+    "comparator_product_id": "ALWAYS_OVER",
+    "target": "pass_att",
+    "population": "EXACT_SOURCE_BOUND_COMMON_DECIDED_QB_ATTEMPT_LINES",
+    "season": 2026,
+    "history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "comparator_history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "contrast": "B-player-context-matchup-01-v1:COMMON_EXPOSURE_MINUS_B_EXISTING_CONTROL:ALWAYS_OVER",
+    "metric": "SELECTION_LOSS_RATE",
+    "membership_sha256": null,
+    "cohort_id": "NATIVE_W5_W9_ATT_COMMON_DECIDED",
+    "position": "QB",
+    "policy_id": "P1_LOWER_MEDIAN",
+    "fallback_view": "COMMON_DECIDED",
+    "history_limit": "Fixed retained COMMON_EXPOSURE attempt recipe; current-vintage chronological real-source-line diagnostic, not original issuance or a nine-week union. No inherited completion coverage.",
+    "original_pair_source": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/PAIRED_V1.json",
+    "original_pair_source_sha256": "dfb540147be10dc61a331f4520889db1afb9cadce8bac16de72f082b9962d798",
+    "original_pair_row_index": 5
+  },
+  {
+    "n": 142,
+    "delta": 0.028169014084507043,
+    "relative_error_change": 0.05970149253731344,
+    "week_interval": null,
+    "week_clusters": 5,
+    "game_clusters": 71,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.019775714084998976,
+    "game_normal95_sensitivity": [
+      -0.010591385522090952,
+      0.06692941369110504
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 0.5,
+    "comparator_error": 0.47183098591549294,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": 0.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 0.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 0.0,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 3.0,
+        "n": 28
+      },
+      "(2026, 9)": {
+        "loss_difference_sum": 1.0,
+        "n": 30
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON",
+    "left": "P1_LOWER_MEDIAN",
+    "right": "ALWAYS_UNDER",
+    "side_disagreements": 8,
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "comparator_procedure_id": "B_EXISTING_CONTROL:ALWAYS_UNDER",
+    "product_id": "P1_LOWER_MEDIAN",
+    "comparator_product_id": "ALWAYS_UNDER",
+    "target": "pass_att",
+    "population": "EXACT_SOURCE_BOUND_COMMON_DECIDED_QB_ATTEMPT_LINES",
+    "season": 2026,
+    "history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "comparator_history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "contrast": "B-player-context-matchup-01-v1:COMMON_EXPOSURE_MINUS_B_EXISTING_CONTROL:ALWAYS_UNDER",
+    "metric": "SELECTION_LOSS_RATE",
+    "membership_sha256": null,
+    "cohort_id": "NATIVE_W5_W9_ATT_COMMON_DECIDED",
+    "position": "QB",
+    "policy_id": "P1_LOWER_MEDIAN",
+    "fallback_view": "COMMON_DECIDED",
+    "history_limit": "Fixed retained COMMON_EXPOSURE attempt recipe; current-vintage chronological real-source-line diagnostic, not original issuance or a nine-week union. No inherited completion coverage.",
+    "original_pair_source": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/PAIRED_V1.json",
+    "original_pair_source_sha256": "dfb540147be10dc61a331f4520889db1afb9cadce8bac16de72f082b9962d798",
+    "original_pair_row_index": 6
+  },
+  {
+    "n": 141,
+    "delta": 0.07092198581560284,
+    "relative_error_change": 0.16666666666666669,
+    "week_interval": null,
+    "week_clusters": 5,
+    "game_clusters": 71,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.048746631275360434,
+    "game_normal95_sensitivity": [
+      -0.024621411484103614,
+      0.16646538311530928
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 0.49645390070921985,
+    "comparator_error": 0.425531914893617,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": 1.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 6.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 4.0,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 3.0,
+        "n": 28
+      },
+      "(2026, 9)": {
+        "loss_difference_sum": -4.0,
+        "n": 29
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON",
+    "left": "P1_LOWER_MEDIAN",
+    "right": "SAVED_ADJUSTED",
+    "side_disagreements": 52,
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "comparator_procedure_id": "B_EXISTING_CONTROL:SAVED_ADJUSTED",
+    "product_id": "P1_LOWER_MEDIAN",
+    "comparator_product_id": "SAVED_ADJUSTED",
+    "target": "pass_att",
+    "population": "EXACT_SOURCE_BOUND_COMMON_DECIDED_QB_ATTEMPT_LINES",
+    "season": 2026,
+    "history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "comparator_history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "contrast": "B-player-context-matchup-01-v1:COMMON_EXPOSURE_MINUS_B_EXISTING_CONTROL:SAVED_ADJUSTED",
+    "metric": "SELECTION_LOSS_RATE",
+    "membership_sha256": null,
+    "cohort_id": "NATIVE_W5_W9_ATT_COMMON_DECIDED",
+    "position": "QB",
+    "policy_id": "P1_LOWER_MEDIAN",
+    "fallback_view": "COMMON_DECIDED",
+    "history_limit": "Fixed retained COMMON_EXPOSURE attempt recipe; current-vintage chronological real-source-line diagnostic, not original issuance or a nine-week union. No inherited completion coverage.",
+    "original_pair_source": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/PAIRED_V1.json",
+    "original_pair_source_sha256": "dfb540147be10dc61a331f4520889db1afb9cadce8bac16de72f082b9962d798",
+    "original_pair_row_index": 7
+  },
+  {
+    "n": 142,
+    "delta": 0.04225352112676056,
+    "relative_error_change": 0.0923076923076923,
+    "week_interval": null,
+    "week_clusters": 5,
+    "game_clusters": 71,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.055616608401668745,
+    "game_normal95_sensitivity": [
+      -0.06675503134051018,
+      0.15126207359403132
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 0.5,
+    "comparator_error": 0.45774647887323944,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": 0.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 5.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": -1.0,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 5.0,
+        "n": 28
+      },
+      "(2026, 9)": {
+        "loss_difference_sum": -3.0,
+        "n": 30
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON",
+    "left": "P1_LOWER_MEDIAN",
+    "right": "SAVED_RAW",
+    "side_disagreements": 56,
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "comparator_procedure_id": "B_EXISTING_CONTROL:SAVED_RAW",
+    "product_id": "P1_LOWER_MEDIAN",
+    "comparator_product_id": "SAVED_RAW",
+    "target": "pass_att",
+    "population": "EXACT_SOURCE_BOUND_COMMON_DECIDED_QB_ATTEMPT_LINES",
+    "season": 2026,
+    "history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "comparator_history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "contrast": "B-player-context-matchup-01-v1:COMMON_EXPOSURE_MINUS_B_EXISTING_CONTROL:SAVED_RAW",
+    "metric": "SELECTION_LOSS_RATE",
+    "membership_sha256": null,
+    "cohort_id": "NATIVE_W5_W9_ATT_COMMON_DECIDED",
+    "position": "QB",
+    "policy_id": "P1_LOWER_MEDIAN",
+    "fallback_view": "COMMON_DECIDED",
+    "history_limit": "Fixed retained COMMON_EXPOSURE attempt recipe; current-vintage chronological real-source-line diagnostic, not original issuance or a nine-week union. No inherited completion coverage.",
+    "original_pair_source": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/PAIRED_V1.json",
+    "original_pair_source_sha256": "dfb540147be10dc61a331f4520889db1afb9cadce8bac16de72f082b9962d798",
+    "original_pair_row_index": 8
+  },
+  {
+    "n": 142,
+    "delta": 0.028169014084507043,
+    "relative_error_change": 0.05970149253731344,
+    "week_interval": null,
+    "week_clusters": 5,
+    "game_clusters": 71,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.02990145441652527,
+    "game_normal95_sensitivity": [
+      -0.030437836571882485,
+      0.08677586474089657
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 0.5,
+    "comparator_error": 0.47183098591549294,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": 1.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 2.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 0.0,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 4.0,
+        "n": 28
+      },
+      "(2026, 9)": {
+        "loss_difference_sum": -3.0,
+        "n": 30
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON",
+    "left": "P1_LOWER_MEDIAN",
+    "right": "EARLIER_LINE_PREVALENCE",
+    "side_disagreements": 18,
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "comparator_procedure_id": "B_EXISTING_CONTROL:EARLIER_LINE_PREVALENCE",
+    "product_id": "P1_LOWER_MEDIAN",
+    "comparator_product_id": "EARLIER_LINE_PREVALENCE",
+    "target": "pass_att",
+    "population": "EXACT_SOURCE_BOUND_COMMON_DECIDED_QB_ATTEMPT_LINES",
+    "season": 2026,
+    "history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "comparator_history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "contrast": "B-player-context-matchup-01-v1:COMMON_EXPOSURE_MINUS_B_EXISTING_CONTROL:EARLIER_LINE_PREVALENCE",
+    "metric": "SELECTION_LOSS_RATE",
+    "membership_sha256": null,
+    "cohort_id": "NATIVE_W5_W9_ATT_COMMON_DECIDED",
+    "position": "QB",
+    "policy_id": "P1_LOWER_MEDIAN",
+    "fallback_view": "COMMON_DECIDED",
+    "history_limit": "Fixed retained COMMON_EXPOSURE attempt recipe; current-vintage chronological real-source-line diagnostic, not original issuance or a nine-week union. No inherited completion coverage.",
+    "original_pair_source": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/PAIRED_V1.json",
+    "original_pair_source_sha256": "dfb540147be10dc61a331f4520889db1afb9cadce8bac16de72f082b9962d798",
+    "original_pair_row_index": 9
+  },
+  {
+    "n": 142,
+    "delta": -0.028169014084507043,
+    "relative_error_change": -0.05333333333333334,
+    "week_interval": null,
+    "week_clusters": 5,
+    "game_clusters": 71,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.08737585268344539,
+    "game_normal95_sensitivity": [
+      -0.19942568534406,
+      0.14308765717504593
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 0.5,
+    "comparator_error": 0.528169014084507,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": -4.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 8.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": -6.0,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 1.0,
+        "n": 28
+      },
+      "(2026, 9)": {
+        "loss_difference_sum": -3.0,
+        "n": 30
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON",
+    "left": "P2_STATISTICAL_LAW",
+    "right": "ALWAYS_OVER",
+    "side_disagreements": 134,
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "comparator_procedure_id": "B_EXISTING_CONTROL:ALWAYS_OVER",
+    "product_id": "P2_STATISTICAL_LAW",
+    "comparator_product_id": "ALWAYS_OVER",
+    "target": "pass_att",
+    "population": "EXACT_SOURCE_BOUND_COMMON_DECIDED_QB_ATTEMPT_LINES",
+    "season": 2026,
+    "history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "comparator_history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "contrast": "B-player-context-matchup-01-v1:COMMON_EXPOSURE_MINUS_B_EXISTING_CONTROL:ALWAYS_OVER",
+    "metric": "SELECTION_LOSS_RATE",
+    "membership_sha256": null,
+    "cohort_id": "NATIVE_W5_W9_ATT_COMMON_DECIDED",
+    "position": "QB",
+    "policy_id": "P2_STATISTICAL_LAW",
+    "fallback_view": "COMMON_DECIDED",
+    "history_limit": "Fixed retained COMMON_EXPOSURE attempt recipe; current-vintage chronological real-source-line diagnostic, not original issuance or a nine-week union. No inherited completion coverage.",
+    "original_pair_source": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/PAIRED_V1.json",
+    "original_pair_source_sha256": "dfb540147be10dc61a331f4520889db1afb9cadce8bac16de72f082b9962d798",
+    "original_pair_row_index": 10
+  },
+  {
+    "n": 142,
+    "delta": 0.028169014084507043,
+    "relative_error_change": 0.05970149253731344,
+    "week_interval": null,
+    "week_clusters": 5,
+    "game_clusters": 71,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.019775714084998976,
+    "game_normal95_sensitivity": [
+      -0.010591385522090952,
+      0.06692941369110504
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 0.5,
+    "comparator_error": 0.47183098591549294,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": 0.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 0.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 0.0,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 3.0,
+        "n": 28
+      },
+      "(2026, 9)": {
+        "loss_difference_sum": 1.0,
+        "n": 30
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON",
+    "left": "P2_STATISTICAL_LAW",
+    "right": "ALWAYS_UNDER",
+    "side_disagreements": 8,
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "comparator_procedure_id": "B_EXISTING_CONTROL:ALWAYS_UNDER",
+    "product_id": "P2_STATISTICAL_LAW",
+    "comparator_product_id": "ALWAYS_UNDER",
+    "target": "pass_att",
+    "population": "EXACT_SOURCE_BOUND_COMMON_DECIDED_QB_ATTEMPT_LINES",
+    "season": 2026,
+    "history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "comparator_history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "contrast": "B-player-context-matchup-01-v1:COMMON_EXPOSURE_MINUS_B_EXISTING_CONTROL:ALWAYS_UNDER",
+    "metric": "SELECTION_LOSS_RATE",
+    "membership_sha256": null,
+    "cohort_id": "NATIVE_W5_W9_ATT_COMMON_DECIDED",
+    "position": "QB",
+    "policy_id": "P2_STATISTICAL_LAW",
+    "fallback_view": "COMMON_DECIDED",
+    "history_limit": "Fixed retained COMMON_EXPOSURE attempt recipe; current-vintage chronological real-source-line diagnostic, not original issuance or a nine-week union. No inherited completion coverage.",
+    "original_pair_source": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/PAIRED_V1.json",
+    "original_pair_source_sha256": "dfb540147be10dc61a331f4520889db1afb9cadce8bac16de72f082b9962d798",
+    "original_pair_row_index": 11
+  },
+  {
+    "n": 141,
+    "delta": 0.07092198581560284,
+    "relative_error_change": 0.16666666666666669,
+    "week_interval": null,
+    "week_clusters": 5,
+    "game_clusters": 71,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.048746631275360434,
+    "game_normal95_sensitivity": [
+      -0.024621411484103614,
+      0.16646538311530928
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 0.49645390070921985,
+    "comparator_error": 0.425531914893617,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": 1.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 6.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 4.0,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 3.0,
+        "n": 28
+      },
+      "(2026, 9)": {
+        "loss_difference_sum": -4.0,
+        "n": 29
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON",
+    "left": "P2_STATISTICAL_LAW",
+    "right": "SAVED_ADJUSTED",
+    "side_disagreements": 52,
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "comparator_procedure_id": "B_EXISTING_CONTROL:SAVED_ADJUSTED",
+    "product_id": "P2_STATISTICAL_LAW",
+    "comparator_product_id": "SAVED_ADJUSTED",
+    "target": "pass_att",
+    "population": "EXACT_SOURCE_BOUND_COMMON_DECIDED_QB_ATTEMPT_LINES",
+    "season": 2026,
+    "history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "comparator_history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "contrast": "B-player-context-matchup-01-v1:COMMON_EXPOSURE_MINUS_B_EXISTING_CONTROL:SAVED_ADJUSTED",
+    "metric": "SELECTION_LOSS_RATE",
+    "membership_sha256": null,
+    "cohort_id": "NATIVE_W5_W9_ATT_COMMON_DECIDED",
+    "position": "QB",
+    "policy_id": "P2_STATISTICAL_LAW",
+    "fallback_view": "COMMON_DECIDED",
+    "history_limit": "Fixed retained COMMON_EXPOSURE attempt recipe; current-vintage chronological real-source-line diagnostic, not original issuance or a nine-week union. No inherited completion coverage.",
+    "original_pair_source": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/PAIRED_V1.json",
+    "original_pair_source_sha256": "dfb540147be10dc61a331f4520889db1afb9cadce8bac16de72f082b9962d798",
+    "original_pair_row_index": 12
+  },
+  {
+    "n": 142,
+    "delta": 0.04225352112676056,
+    "relative_error_change": 0.0923076923076923,
+    "week_interval": null,
+    "week_clusters": 5,
+    "game_clusters": 71,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.055616608401668745,
+    "game_normal95_sensitivity": [
+      -0.06675503134051018,
+      0.15126207359403132
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 0.5,
+    "comparator_error": 0.45774647887323944,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": 0.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 5.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": -1.0,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 5.0,
+        "n": 28
+      },
+      "(2026, 9)": {
+        "loss_difference_sum": -3.0,
+        "n": 30
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON",
+    "left": "P2_STATISTICAL_LAW",
+    "right": "SAVED_RAW",
+    "side_disagreements": 56,
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "comparator_procedure_id": "B_EXISTING_CONTROL:SAVED_RAW",
+    "product_id": "P2_STATISTICAL_LAW",
+    "comparator_product_id": "SAVED_RAW",
+    "target": "pass_att",
+    "population": "EXACT_SOURCE_BOUND_COMMON_DECIDED_QB_ATTEMPT_LINES",
+    "season": 2026,
+    "history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "comparator_history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "contrast": "B-player-context-matchup-01-v1:COMMON_EXPOSURE_MINUS_B_EXISTING_CONTROL:SAVED_RAW",
+    "metric": "SELECTION_LOSS_RATE",
+    "membership_sha256": null,
+    "cohort_id": "NATIVE_W5_W9_ATT_COMMON_DECIDED",
+    "position": "QB",
+    "policy_id": "P2_STATISTICAL_LAW",
+    "fallback_view": "COMMON_DECIDED",
+    "history_limit": "Fixed retained COMMON_EXPOSURE attempt recipe; current-vintage chronological real-source-line diagnostic, not original issuance or a nine-week union. No inherited completion coverage.",
+    "original_pair_source": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/PAIRED_V1.json",
+    "original_pair_source_sha256": "dfb540147be10dc61a331f4520889db1afb9cadce8bac16de72f082b9962d798",
+    "original_pair_row_index": 13
+  },
+  {
+    "n": 142,
+    "delta": 0.028169014084507043,
+    "relative_error_change": 0.05970149253731344,
+    "week_interval": null,
+    "week_clusters": 5,
+    "game_clusters": 71,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.02990145441652527,
+    "game_normal95_sensitivity": [
+      -0.030437836571882485,
+      0.08677586474089657
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 0.5,
+    "comparator_error": 0.47183098591549294,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": 1.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 2.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 0.0,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 4.0,
+        "n": 28
+      },
+      "(2026, 9)": {
+        "loss_difference_sum": -3.0,
+        "n": 30
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON",
+    "left": "P2_STATISTICAL_LAW",
+    "right": "EARLIER_LINE_PREVALENCE",
+    "side_disagreements": 18,
+    "procedure_id": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+    "comparator_procedure_id": "B_EXISTING_CONTROL:EARLIER_LINE_PREVALENCE",
+    "product_id": "P2_STATISTICAL_LAW",
+    "comparator_product_id": "EARLIER_LINE_PREVALENCE",
+    "target": "pass_att",
+    "population": "EXACT_SOURCE_BOUND_COMMON_DECIDED_QB_ATTEMPT_LINES",
+    "season": 2026,
+    "history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "comparator_history_regime": "H-RECENT_ORIGIN_RECIPE_BOUND",
+    "contrast": "B-player-context-matchup-01-v1:COMMON_EXPOSURE_MINUS_B_EXISTING_CONTROL:EARLIER_LINE_PREVALENCE",
+    "metric": "SELECTION_LOSS_RATE",
+    "membership_sha256": null,
+    "cohort_id": "NATIVE_W5_W9_ATT_COMMON_DECIDED",
+    "position": "QB",
+    "policy_id": "P2_STATISTICAL_LAW",
+    "fallback_view": "COMMON_DECIDED",
+    "history_limit": "Fixed retained COMMON_EXPOSURE attempt recipe; current-vintage chronological real-source-line diagnostic, not original issuance or a nine-week union. No inherited completion coverage.",
+    "original_pair_source": "reports/w1w9-comparison-closure-01/B/receipt-union/native-attempts/PAIRED_V1.json",
+    "original_pair_source_sha256": "dfb540147be10dc61a331f4520889db1afb9cadce8bac16de72f082b9962d798",
+    "original_pair_row_index": 14
+  }
+]

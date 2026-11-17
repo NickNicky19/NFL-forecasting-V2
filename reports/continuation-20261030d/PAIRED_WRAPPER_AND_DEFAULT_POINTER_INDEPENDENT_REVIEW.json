@@ -1,0 +1,62 @@
+{
+  "state": "PASS_EXACT_DERIVED_PROJECTION_AND_DEFAULT_POINTER_READBACK",
+  "pointer_sha256": "dba9afa47f0d626df80872bd2e42711eebca1815ac8097dc32a8b55f08e184dc",
+  "manifest_sha256": "c7e68355232535d71ec69c8e24693d49fe03dec83ddd737afd93dab835299b48",
+  "wrapper_json_sha256": "99d9657113ec2b35af1165f34644883d401b69eb0eb744f13d2d0d60eaf434b1",
+  "wrapper_csv_sha256": "aa528b9fda8ecd05089660d920ee6f0ce9c4516f8256adb098c674de0a5d3771",
+  "builder_sha256": "bd7c663ba425780af8cd46c6002ef5b01088b66ca80898b0571ed6f721993e1f",
+  "coverage_checker_sha256": "4bc22ad9bd314c5790bd8466ac321e09e530bed6a17653ef1b7dff081188e711",
+  "exact_source_rows": 18708,
+  "exact_projected_fields": 617364,
+  "exact_csv_cells": 617364,
+  "status_counts": {
+    "PAIRED_LOSS_SCORED": 17658,
+    "NO_SUPPORTED_PAIRED_ROWS": 1050
+  },
+  "source_artifacts": [
+    {
+      "path": "reports/continuation-20261030d/history-adjacent-v1/PAIRED_HISTORY_ANALYSIS.json",
+      "sha256": "5bbf22da159624c2cfab762517223338e7e954a8ab37de39228a8b02e7bd43af",
+      "rows": 17100
+    },
+    {
+      "path": "reports/continuation-20261030d/carry-older-robustness-v1/PAIR_ANALYSIS_2022.json",
+      "sha256": "b1c54f0ce82caaf87faf020f9c722c7423b2f45be40e5a68d1596247d0dbd224",
+      "rows": 384
+    },
+    {
+      "path": "reports/continuation-20261030d/carry-older-robustness-v1/PAIR_ANALYSIS_2023.json",
+      "sha256": "ce1efa173e12b93c142bfe5d00ae7ec5c761760bc252800fb3918e6dfb5e5094",
+      "rows": 408
+    },
+    {
+      "path": "reports/continuation-20261030d/carry-older-robustness-v1/PAIR_ANALYSIS_2024.json",
+      "sha256": "f21ca576843eabf4981aba2efa16f56a33098f94d7d73e1212b7d3babfaa38df",
+      "rows": 408
+    },
+    {
+      "path": "reports/continuation-20261030d/carry-older-robustness-v1/PAIR_ANALYSIS_2025.json",
+      "sha256": "1330525a8bdd3edc7aeeccefa2f3a51b035674f6b3e4fa5019bbcfd6ff52fd94",
+      "rows": 408
+    }
+  ],
+  "metrics": {
+    "Brier": 648,
+    "MAE": 12456,
+    "MSE": 5604
+  },
+  "supported_zero_comparator_cases_retaining_null_relative": 358,
+  "default_canonical_evaluation_views": 124630,
+  "default_procedure_product_representatives": 237,
+  "default_top_five_rows": 170,
+  "immutable_all_audit_records": 145219,
+  "semantic_scope": "Derived comparisons retain native losses, exact source rows, common-mask hashes and uncertainty; not new univariate evaluations, methods, forecasts or NFL observations.",
+  "limitation": "Public aggregate projection/source equality and front-door bindings only; underlying NFL rows and bootstrap calculations were already independently audited in separate reviews and were not rerun here.",
+  "new_fits": 0,
+  "inference_calls": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "current2026_week8_outcomes_read": 0,
+  "wall_seconds": 1.227817987999515,
+  "peak_rss_bytes": 236232704
+}

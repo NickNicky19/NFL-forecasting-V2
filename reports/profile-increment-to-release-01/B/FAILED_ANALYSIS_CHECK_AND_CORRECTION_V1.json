@@ -1,0 +1,20 @@
+{
+  "at_utc": "2026-11-10T12:04:46.183533+00:00",
+  "command": "python tools/check_analysis_index_coverage.py",
+  "failed_state": "TypeError at math.isclose(relativeNone,delta/control_loss)",
+  "affected_scope": "8 new independent strict84 normalized paired records; source wins/losses/absoluteerror valid; all prior21182 records unchanged",
+  "root_cause": "B root normalization adapter omitted relative_error_change when independent source returned delta/controlerror only",
+  "repair": "Append sourceV2 and pairedmanifestV2; compute delta/comparator_error for8records, preserve failedV1bytes/manifest and all independentrawpairrows. No checker/guard changes.",
+  "fixed_source_indices": [
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410
+  ],
+  "new_fits": 0,
+  "NFL_predictions_or_grades_changed": 0
+}

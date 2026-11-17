@@ -1,0 +1,29 @@
+{
+  "original_protocol": {
+    "path": "reports/player-context-matchup-01/B/qb-wave-v1/FROZEN_PROTOCOL.json",
+    "sha256": "afefa53e0d2f794f99f29c410e6e0b0260876126526d12404a2d8bcd8993f9fb"
+  },
+  "at_utc": "2026-11-07T13:33:22.839744+00:00",
+  "corrections": [
+    {
+      "field": "direct.E2",
+      "original_wording": "16scheduled-defense-game context residuals",
+      "actual_code_contract": "Last16qualified OBSERVED regular defense-team games, collapsed across QBs after strict availability admission. Missing source-game groups are absent, not observedzero. No scheduled-spine variant is claimed.",
+      "algorithm_or_prediction_change": false
+    },
+    {
+      "field": "latest_source_available",
+      "original_wording": "May read as actually consumed freshest input for every method",
+      "actual_code_contract": "Global eligible-source upper bound; for E0 only, actual own-history clock is separately reconstructed in sidecar. Other procedures consume global priors. No freshness gain is inferred from this upper-bound field.",
+      "algorithm_or_prediction_change": false
+    },
+    {
+      "field": "P3",
+      "actual_code_contract": "Own-only coefficient/outcome training with shared pregame covariate definitions and registered P1fallback; not own-only information.",
+      "algorithm_or_prediction_change": false
+    }
+  ],
+  "legacy_D1_D2_scheduled_alternative": "Still separate and recovery-gated; not completed here.",
+  "original_unscored_pilot_preserved": true,
+  "before_broad_execution": true
+}

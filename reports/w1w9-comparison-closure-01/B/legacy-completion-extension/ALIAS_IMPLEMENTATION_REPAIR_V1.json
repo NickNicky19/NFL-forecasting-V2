@@ -1,0 +1,10 @@
+{
+  "at_UTC": "2026-11-14T19:13:39.221918+00:00",
+  "state": "NO_FIT_NO_SCORE_ADAPTER_FIX",
+  "supersedes": "ALIAS_AND_HISTORY_POLICY_BINDINGS_V1.json",
+  "root_cause": "Training prefix comparison incorrectly added labels arriving after the frozen weekly refit, although the fixed method does not refit at each later decision. Correct bound is availability < min(weekly_origin, decision_clock). Feature history still refreshes per target/decision under known-target-time semantics.",
+  "original_helper_sha256": "db330d078e647fe66a42c1fbe130ba4de081bb87956933c38f41026e1c2f393b",
+  "affected_scope": "Alias proof only; original forecasts, recovered laws, model fits and original timing masks unchanged",
+  "new_fits": 0,
+  "new_scores": 0
+}

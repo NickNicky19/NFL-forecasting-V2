@@ -1,0 +1,90 @@
+{
+  "id": "B_NATIVE_142_CURRENT_LABEL_PARITY_v1",
+  "checked_UTC": "2026-11-12T23:56:58.723311+00:00",
+  "verdict": "PASS_CHECKED_SCOPE",
+  "source_stats": {
+    "SHA256": "164bbcb46f4bf93c06a17c0f2497a06c17bbaf543d1e352ee6b85410febf884a",
+    "bytes": 4210587,
+    "scope": "2026 REG QB explicit official completions, game/team/player columns"
+  },
+  "normalization": {
+    "rule": {
+      "LAR": "LA"
+    },
+    "existing_binding": "nfl_v2/week8_shadow.py:TEAM_ALIASES",
+    "source_SHA256": "71e467df62a3690fb66f2d321624659a43d750a8d0110a7fcf7be340724e4c37"
+  },
+  "panels": [
+    {
+      "season": 2026,
+      "week": 5,
+      "completion_rows": 28,
+      "all_explicit_CMP_equal": true,
+      "canonical_team_equal": true,
+      "canonical_opponent_equal_when_present": true,
+      "aliases": {
+        "team:LAR\u2192LA": 1
+      },
+      "source_SHA256": "7ebb7e3b546147f8e7f10fa887fd295f2d72f88eb70600a22448ad29feff69fe"
+    },
+    {
+      "season": 2026,
+      "week": 6,
+      "completion_rows": 28,
+      "all_explicit_CMP_equal": true,
+      "canonical_team_equal": true,
+      "canonical_opponent_equal_when_present": true,
+      "aliases": {
+        "team:LAR\u2192LA": 1
+      },
+      "source_SHA256": "3f7ccc297f7e2dd63d1bdc6c1e625b6183f58b58f3551d4ce2aa8ad02416d5b5"
+    },
+    {
+      "season": 2026,
+      "week": 7,
+      "completion_rows": 28,
+      "all_explicit_CMP_equal": true,
+      "canonical_team_equal": true,
+      "canonical_opponent_equal_when_present": true,
+      "aliases": {
+        "team:LAR\u2192LA": 1
+      },
+      "source_SHA256": "c6b2a6dfd5a983892afcc7882fea337ad105a327972ce6c5c16300e4fb5ead43"
+    },
+    {
+      "season": 2026,
+      "week": 8,
+      "completion_rows": 28,
+      "all_explicit_CMP_equal": true,
+      "canonical_team_equal": true,
+      "canonical_opponent_equal_when_present": true,
+      "aliases": {
+        "team:LAR\u2192LA": 1
+      },
+      "source_SHA256": "43fc0aef34076e5d5389cb47239c9a10d68df80cd5db6973cf008b997504b2c0"
+    },
+    {
+      "season": 2026,
+      "week": 9,
+      "completion_rows": 30,
+      "all_explicit_CMP_equal": true,
+      "canonical_team_equal": true,
+      "canonical_opponent_equal_when_present": true,
+      "aliases": {
+        "opponent:LAR\u2192LA": 1,
+        "team:LAR\u2192LA": 1
+      },
+      "source_SHA256": "63b131964ddc110e78ec8328f6c592f9f96f59be3e946e5a45e4de848cde76f8"
+    }
+  ],
+  "total_completion_rows": 142,
+  "label_mismatches": 0,
+  "zero_filled_missing_labels": 0,
+  "new_outcomes_acquired": 0,
+  "original_grades_modified": 0,
+  "scope_limits": [
+    "Current-vintage explicit NFL statistical credit parity; not original historical vintage authentication",
+    "Does not authenticate original bookmaker quote clocks, forecast information vintages or private A rows",
+    "No new models, fits, decisions, NFL games or scored weeks produced"
+  ]
+}

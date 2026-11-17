@@ -1,0 +1,318 @@
+{
+  "state": "PASS_INDEPENDENT_STORED_HISTOGRAM_AND_SOURCE_FEATURE_REVIEW",
+  "at_utc": "2026-11-05T23:24:58.187244+00:00",
+  "protocol_sha256": "7920a6c984454784af1ecd3b27df8f16b560a44ce0ed04ca6879669fb2514333",
+  "runner_receipt_sha256": "4e4c9629b864d362adecd0020270f4d98c6fc5be1e9ba1e17b1350c45daf34e2",
+  "checker_sha256": "51260692f323294f38b872a477ac30a6532ea8e011c3c82489b94bc92a0996d8",
+  "totals": {
+    "query_rows": 2878,
+    "point_values": 5756,
+    "models": 21,
+    "fallback": 128,
+    "learned": 2750,
+    "feature_values": 81042
+  },
+  "maximum_mean_absolute_roundoff": 0.0,
+  "origin_checks": [
+    {
+      "slot": "W01-pass_td-H-MULTI-COMMON-D1",
+      "query_rows": 37,
+      "raw_width": 24,
+      "imputed_width": 48,
+      "fallback_counts": {
+        "none": 36,
+        "cold_start_role_prior": 1
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "ac45c4a8ab24612ffe4c001160982d6c2c5413ea2c30f1530e20548480abd696"
+    },
+    {
+      "slot": "W02-pass_td-H-MULTI-COMMON-D1",
+      "query_rows": 39,
+      "raw_width": 24,
+      "imputed_width": 48,
+      "fallback_counts": {
+        "none": 38,
+        "cold_start_role_prior": 1
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "b8f7128795477fe13f316d751c2ab499d943fdaa9da4e85c43e733540990db4c"
+    },
+    {
+      "slot": "W03-pass_td-H-MULTI-COMMON-D1",
+      "query_rows": 36,
+      "raw_width": 24,
+      "imputed_width": 48,
+      "fallback_counts": {
+        "none": 35,
+        "cold_start_role_prior": 1
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "59c57c5a352f8fd69190f60587db40b887e7f55c1dff09c973c447c5740e1c67"
+    },
+    {
+      "slot": "W04-pass_td-H-MULTI-COMMON-D1",
+      "query_rows": 34,
+      "raw_width": 24,
+      "imputed_width": 48,
+      "fallback_counts": {
+        "none": 32,
+        "cold_start_role_prior": 2
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "cd685bd8e3c1add98b786437c5fa6a61e1a1375d23857f2a1479291372982953"
+    },
+    {
+      "slot": "W05-pass_td-H-MULTI-COMMON-D1",
+      "query_rows": 36,
+      "raw_width": 24,
+      "imputed_width": 48,
+      "fallback_counts": {
+        "none": 35,
+        "cold_start_role_prior": 1
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "8daeffe9a48dc1fe7f4a4fd150c229c0d838a7d9d206386797939c2cf307ed45"
+    },
+    {
+      "slot": "W06-pass_td-H-MULTI-COMMON-D1",
+      "query_rows": 29,
+      "raw_width": 24,
+      "imputed_width": 48,
+      "fallback_counts": {
+        "none": 29
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "2bcaa36756fc061b6d6ea4f65260671f35fbe2c0f86836ac7524c15750fcf4a1"
+    },
+    {
+      "slot": "W07-pass_td-H-MULTI-COMMON-D1",
+      "query_rows": 31,
+      "raw_width": 24,
+      "imputed_width": 48,
+      "fallback_counts": {
+        "none": 31
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "f06939eb7e17ba5756196d6b4146bf7d69f24286a30928d0cfc8c075eeb05c6c"
+    },
+    {
+      "slot": "W01-pass_cmp-H-MULTI-COMMON-D1",
+      "query_rows": 37,
+      "raw_width": 24,
+      "imputed_width": 48,
+      "fallback_counts": {
+        "none": 36,
+        "cold_start_role_prior": 1
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "3d1d5339ae9fae1e828c7e53baaf348778015dc13f1ebf73d6e5f769115ef19e"
+    },
+    {
+      "slot": "W02-pass_cmp-H-MULTI-COMMON-D1",
+      "query_rows": 39,
+      "raw_width": 24,
+      "imputed_width": 48,
+      "fallback_counts": {
+        "none": 38,
+        "cold_start_role_prior": 1
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "dbdc059a9ad7c55632de147133af5ed96781abe4ad0170030da250b9613aeca3"
+    },
+    {
+      "slot": "W03-pass_cmp-H-MULTI-COMMON-D1",
+      "query_rows": 36,
+      "raw_width": 24,
+      "imputed_width": 48,
+      "fallback_counts": {
+        "none": 35,
+        "cold_start_role_prior": 1
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "064ac69fc901055f37045e6affb7bd9c5aee3714048b3ace5024f5f6b9346864"
+    },
+    {
+      "slot": "W04-pass_cmp-H-MULTI-COMMON-D1",
+      "query_rows": 34,
+      "raw_width": 24,
+      "imputed_width": 48,
+      "fallback_counts": {
+        "none": 32,
+        "cold_start_role_prior": 2
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "c08047e96e84e31b914e5d8489197e214c0a62c939503776773cdc9b716cc7d7"
+    },
+    {
+      "slot": "W05-pass_cmp-H-MULTI-COMMON-D1",
+      "query_rows": 36,
+      "raw_width": 24,
+      "imputed_width": 48,
+      "fallback_counts": {
+        "none": 35,
+        "cold_start_role_prior": 1
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "04289cf68fab289c52e4a35f543b93bd64c623b380225d24ce3f7e76cd21439c"
+    },
+    {
+      "slot": "W06-pass_cmp-H-MULTI-COMMON-D1",
+      "query_rows": 29,
+      "raw_width": 24,
+      "imputed_width": 48,
+      "fallback_counts": {
+        "none": 29
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "f980ad7adb742a66afd0058466dea8a53889a0412bcf857ccb927a6133fa9700"
+    },
+    {
+      "slot": "W07-pass_cmp-H-MULTI-COMMON-D1",
+      "query_rows": 31,
+      "raw_width": 24,
+      "imputed_width": 48,
+      "fallback_counts": {
+        "none": 31
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "779a0246ff889b22aaf842410bfe33412e4c6f27a5dfb04aacff20b9074eb90b"
+    },
+    {
+      "slot": "W01-rec_yd-H-MULTI-COMMON-D2",
+      "query_rows": 357,
+      "raw_width": 29,
+      "imputed_width": 58,
+      "fallback_counts": {
+        "none": 313,
+        "cold_start_role_prior": 44
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "72f097642edeb8baab48e4f8a6ea4be6ba633fa679e2d7d06325bb8c8f4d5d19"
+    },
+    {
+      "slot": "W02-rec_yd-H-MULTI-COMMON-D2",
+      "query_rows": 359,
+      "raw_width": 29,
+      "imputed_width": 58,
+      "fallback_counts": {
+        "none": 323,
+        "cold_start_role_prior": 36
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "451926a26f38bc93590fa78ea773420381c4f33cf0e58c8a6a7368a42ebbbbdb"
+    },
+    {
+      "slot": "W03-rec_yd-H-MULTI-COMMON-D2",
+      "query_rows": 362,
+      "raw_width": 29,
+      "imputed_width": 58,
+      "fallback_counts": {
+        "none": 348,
+        "cold_start_role_prior": 14
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "f15db130c4b7c02bbacff7ab6d5c106315eac6a38d1aca6573fae52057ba66f6"
+    },
+    {
+      "slot": "W04-rec_yd-H-MULTI-COMMON-D2",
+      "query_rows": 358,
+      "raw_width": 29,
+      "imputed_width": 58,
+      "fallback_counts": {
+        "none": 349,
+        "cold_start_role_prior": 9
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "5592cc629dab0a1b65669b4516322156dab58553171943241f5016f7907f2267"
+    },
+    {
+      "slot": "W05-rec_yd-H-MULTI-COMMON-D2",
+      "query_rows": 342,
+      "raw_width": 29,
+      "imputed_width": 58,
+      "fallback_counts": {
+        "none": 335,
+        "cold_start_role_prior": 7
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "9681fa58101a3af4ff4aef5a75261c33f13c8938f3fc3628d8a9bda6f7e0b1f7"
+    },
+    {
+      "slot": "W06-rec_yd-H-MULTI-COMMON-D2",
+      "query_rows": 313,
+      "raw_width": 29,
+      "imputed_width": 58,
+      "fallback_counts": {
+        "none": 310,
+        "cold_start_role_prior": 3
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "fd0c5f5c33839d834c3e9ac90cf1b97600e91f5354ac7eb65381cbbfbdde1f88"
+    },
+    {
+      "slot": "W07-rec_yd-H-MULTI-COMMON-D2",
+      "query_rows": 303,
+      "raw_width": 29,
+      "imputed_width": 58,
+      "fallback_counts": {
+        "none": 300,
+        "cold_start_role_prior": 3
+      },
+      "saved_histogram_point_math": "PASS",
+      "independent_source_feature_formulas": "PASS",
+      "local_consumed_game_identity_and_clock": "PASS",
+      "model_sha256": "12bdb03bf17894140f438ac819c5263315728ef4aeb9c895dd5ae28aa90778a4"
+    }
+  ],
+  "representative_batch_single_checks_reported_not_repeated": 59,
+  "model_predict_apply_transform_fit_calls": 0,
+  "forecast_inference": 0,
+  "new_scoring": 0,
+  "new_weeks": 0,
+  "independent_calculation": "Original B hash-qualified pickle read for histogram/support arrays only; own prior CDF/median/mean and feature formulas; original source loader/defense source-group builder reused explicitly.",
+  "source_clock_limits": "Strict kickoff+7day availability assumption; no authentication of historical publication/quote clocks. Shared availability timestamp can describe defense freshness rather than own target age.",
+  "qualification": "Three median products already have seven numerical weeks; these software checks add zero actual-line/Top Picks weeks, no fresh query/origin/source validation and no production admission.",
+  "unavailable_scope": "No unavailable source/model conditions simulated with an actual model; caller must authenticate immutable source/origin/features before adapter. No claim that matching names can detect independently shuffled raw values.",
+  "production_scope": "Owner Chromium failure before generation/capture is not an arithmetic defect; full-board Top Picks replay remains owner-only."
+}

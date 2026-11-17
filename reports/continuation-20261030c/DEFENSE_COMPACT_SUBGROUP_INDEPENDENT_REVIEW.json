@@ -1,0 +1,63 @@
+{
+  "state": "PASS_FULL_COMPACT_SOURCE_MASK_POINT_PRECISION_PAIRING_AND_BLOCK_UNCERTAINTY_REPLAY",
+  "mode": "defense",
+  "season": 2026,
+  "protocol_sha256": "a14b111f492a18ae7e86ac23f844fec86bdd73f9b8c95147475deabc85697f2d",
+  "source_score_sha256": "cea288aafe6a4523473c6f878854dd6aaf3724e56d06c58849b30b0b13c74d9e",
+  "source_pair_sha256": "c295bda2e03120dd7fcf1b2350c764b136cd633f9edf1d73b8b2f30a024d3d1f",
+  "score_views": 1484,
+  "pair_views": 2968,
+  "candidate_retained_views": 35936,
+  "checks": {
+    "frozen_source_hashes": 35,
+    "independent_all_compact_native_precision_coverage_fields": 34612,
+    "full_mask_membership_hashes": 2968,
+    "honest_insufficient_week_flags": 2968,
+    "all_compact_exact_paired_native_losses_memberships": 2968,
+    "independent_game_influence_SEs": 2670
+  },
+  "representative_win_loss": [
+    {
+      "direction": "loss",
+      "record_id": "COMPACT-8b1373092a02fa238340d6d0",
+      "target": "anytime_td",
+      "cohort": "top10",
+      "reference": "fixed_strong_control",
+      "n": 70,
+      "candidate_error": 0.283321682468422,
+      "comparator_error": 0.2782517155197183,
+      "delta": 0.005069966948703698
+    },
+    {
+      "direction": "win",
+      "record_id": "COMPACT-8b1373092a02fa238340d6d0",
+      "target": "anytime_td",
+      "cohort": "top10",
+      "reference": "same_leaf_control",
+      "n": 70,
+      "candidate_error": 0.283321682468422,
+      "comparator_error": 0.2858777603572119,
+      "delta": -0.0025560778887899135
+    },
+    {
+      "direction": "tie",
+      "record_id": "COMPACT-e939b490f30414682ab9f284",
+      "target": "pass_int",
+      "cohort": "top10",
+      "reference": "fixed_strong_control",
+      "n": 30,
+      "candidate_error": 0.6333333333333333,
+      "comparator_error": 0.6333333333333333,
+      "delta": 0.0
+    }
+  ],
+  "scope": "Allcompactnativepoint/cohort/full-own-sharedlearnedmasksandpaireduncertainty. Correctedempiricalproductaliases; actualselectedcandidate+registeredcontrols overlap, NOToldall4candidatepoliciesmask. Pointonly; properlawsnotinvented. Exposedfullpanelreferencechoicesnotearlierselectionpolicy.",
+  "resource": {
+    "wall_seconds": 19.724398002999806,
+    "cpu_seconds": 19.719490305,
+    "peak_rss_bytes": 207200256
+  },
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

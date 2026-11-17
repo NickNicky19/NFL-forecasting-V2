@@ -1,0 +1,17 @@
+{
+  "state": "INITIAL_ASSUMED_POINTER_LOCATOR_FAILED_BEFORE_METADATA_OR_RAW_BODY_RETENTION",
+  "at_utc": "2026-10-31T21:13:13.124020+00:00",
+  "original_checker_sha256": "ef3cf7c8ebd34f03250ff29f32450aff143698a51c6aa35d3a85f01986e10e45",
+  "attempts": [
+    {
+      "sandbox_default": "socket operation denied before HTTP"
+    },
+    {
+      "supported_network_permission_enabled": "HTTP404 at assumed raw-repository pointer path"
+    }
+  ],
+  "interpretation": "A wrong assumed repository-root pointer path is not evidence the source artifact is absent. Use only the three exact immutable asset URLs already witnessed in the primary receipt; no broader discovery or retries.",
+  "raw_body_saved": false,
+  "forecast_or_outcome_scalars_decoded": 0,
+  "scientific_scores": 0
+}

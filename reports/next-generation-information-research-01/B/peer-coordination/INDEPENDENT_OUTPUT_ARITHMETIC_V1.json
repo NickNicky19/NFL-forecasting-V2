@@ -1,0 +1,1082 @@
+{
+  "id": "B_NEXTGEN_INDEPENDENT_OUTPUT_ARITHMETIC_v1",
+  "checked_UTC": "2026-11-12T18:09:33.186934+00:00",
+  "verdict": "PASS_CHECKED_SCOPE",
+  "code_SHA256": "fe78a84e0a94e440e0c46831a3cd7ef1234e03d8da382aba3355d65cf93a803e",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "decimal_precision": 50
+  },
+  "input_bindings": {
+    "wave_protocol": "35f639daab45579077f57f89cfc5021764b7f73ddec6b637499e99b1b9623005",
+    "score_protocol": "25232f3ceca0358d5b2501e76895c7070cf6b2f4c38cf6716cbaa6cbc5f35406",
+    "source_files": [
+      {
+        "week": 5,
+        "SHA256": "7ebb7e3b546147f8e7f10fa887fd295f2d72f88eb70600a22448ad29feff69fe"
+      },
+      {
+        "week": 6,
+        "SHA256": "3f7ccc297f7e2dd63d1bdc6c1e625b6183f58b58f3551d4ce2aa8ad02416d5b5"
+      },
+      {
+        "week": 7,
+        "SHA256": "c6b2a6dfd5a983892afcc7882fea337ad105a327972ce6c5c16300e4fb5ead43"
+      },
+      {
+        "week": 8,
+        "SHA256": "43fc0aef34076e5d5389cb47239c9a10d68df80cd5db6973cf008b997504b2c0"
+      }
+    ],
+    "score_files": [
+      {
+        "path": "COMMON_CONTROL_TABLE.json",
+        "SHA256": "3d97498fe5d51dbdf734a13af3f224abb5dd42c4cd7a19fba8ac08cd595236c3"
+      },
+      {
+        "path": "NUMERICAL_TABLE.json",
+        "SHA256": "88191436966a777627f778cab865518edd089e6122b403c8ac384fe6e2bbd6f6"
+      },
+      {
+        "path": "PAIRED_COMPARISONS.json",
+        "SHA256": "f5becb9e589649c69da10b025a288f3accebb6627715ac4920cfbb05e34146cb"
+      },
+      {
+        "path": "OWNER_LOCAL_COMMITMENTS.json",
+        "SHA256": "6a299766b2aa41c5d7f3b09bf8bdda3e896bb195dcd22a6c9b941437375fdf64"
+      }
+    ]
+  },
+  "checked": {
+    "independent_decimal_law_means_medians": 831,
+    "offered_rows": 112,
+    "method_policy_variants": 22,
+    "float_probability_vectors_checked_against_decimal": 1792,
+    "aggregate_weekly_method_policy_tables": 110,
+    "full_system_numerical_views": 72,
+    "paired_side_disagreement_views": 225,
+    "exact_reproduced_commitments": 22
+  },
+  "commitments": [
+    {
+      "method": "S0",
+      "policy": "P1_MEAN",
+      "match": true,
+      "computed_SHA256": "24f9d4a317f392505db3a5b0cd7be4f9376fc4fa96a00e3e28ebb35aa17e894f",
+      "expected_SHA256": "24f9d4a317f392505db3a5b0cd7be4f9376fc4fa96a00e3e28ebb35aa17e894f"
+    },
+    {
+      "method": "S0",
+      "policy": "P1_LOWER_MEDIAN",
+      "match": true,
+      "computed_SHA256": "c1b76ba2f50e01115f95af7641ce72ca1c82aeac500c48322c43aa49d0c1fac8",
+      "expected_SHA256": "c1b76ba2f50e01115f95af7641ce72ca1c82aeac500c48322c43aa49d0c1fac8"
+    },
+    {
+      "method": "S0",
+      "policy": "P2_STATISTICAL_LAW",
+      "match": true,
+      "computed_SHA256": "c1b76ba2f50e01115f95af7641ce72ca1c82aeac500c48322c43aa49d0c1fac8",
+      "expected_SHA256": "c1b76ba2f50e01115f95af7641ce72ca1c82aeac500c48322c43aa49d0c1fac8"
+    },
+    {
+      "method": "S0",
+      "policy": "P90",
+      "match": true,
+      "computed_SHA256": "bd13c9e7ba4fa6e1b74b45fe6cff7a6d772adbd290aad567d14cb4e824057217",
+      "expected_SHA256": "bd13c9e7ba4fa6e1b74b45fe6cff7a6d772adbd290aad567d14cb4e824057217"
+    },
+    {
+      "method": "S1",
+      "policy": "P1_MEAN",
+      "match": true,
+      "computed_SHA256": "e57be22992c20e9c0ad644e5782a131f5d2fd9b53cc27effe6ebbff53fd90d19",
+      "expected_SHA256": "e57be22992c20e9c0ad644e5782a131f5d2fd9b53cc27effe6ebbff53fd90d19"
+    },
+    {
+      "method": "S1",
+      "policy": "P1_LOWER_MEDIAN",
+      "match": true,
+      "computed_SHA256": "1f7b61843cbb93fb747478b9dfbb6a2a93e73d183a0bc92a5d3ab27e2d55b475",
+      "expected_SHA256": "1f7b61843cbb93fb747478b9dfbb6a2a93e73d183a0bc92a5d3ab27e2d55b475"
+    },
+    {
+      "method": "S1",
+      "policy": "P2_STATISTICAL_LAW",
+      "match": true,
+      "computed_SHA256": "1f7b61843cbb93fb747478b9dfbb6a2a93e73d183a0bc92a5d3ab27e2d55b475",
+      "expected_SHA256": "1f7b61843cbb93fb747478b9dfbb6a2a93e73d183a0bc92a5d3ab27e2d55b475"
+    },
+    {
+      "method": "S1",
+      "policy": "P90",
+      "match": true,
+      "computed_SHA256": "b4c0bd1832139049de827507137b6ab1127a9c094f9aff0f73553d87df291e5e",
+      "expected_SHA256": "b4c0bd1832139049de827507137b6ab1127a9c094f9aff0f73553d87df291e5e"
+    },
+    {
+      "method": "S2",
+      "policy": "P1_MEAN",
+      "match": true,
+      "computed_SHA256": "aa08aa2c056c0f3b03ca3775d9cdacd64e1d0e0bd2e9f6aa8f798a1eaafc6cc1",
+      "expected_SHA256": "aa08aa2c056c0f3b03ca3775d9cdacd64e1d0e0bd2e9f6aa8f798a1eaafc6cc1"
+    },
+    {
+      "method": "S2",
+      "policy": "P1_LOWER_MEDIAN",
+      "match": true,
+      "computed_SHA256": "4a49e440d2d5fae6a04d7e9b86b1e306e3c0a88dbec1302627de983016aebed3",
+      "expected_SHA256": "4a49e440d2d5fae6a04d7e9b86b1e306e3c0a88dbec1302627de983016aebed3"
+    },
+    {
+      "method": "S2",
+      "policy": "P2_STATISTICAL_LAW",
+      "match": true,
+      "computed_SHA256": "4a49e440d2d5fae6a04d7e9b86b1e306e3c0a88dbec1302627de983016aebed3",
+      "expected_SHA256": "4a49e440d2d5fae6a04d7e9b86b1e306e3c0a88dbec1302627de983016aebed3"
+    },
+    {
+      "method": "S2",
+      "policy": "P90",
+      "match": true,
+      "computed_SHA256": "50758042b9400c0d795431f54457b449210f002078525887b906b7e14903e6ef",
+      "expected_SHA256": "50758042b9400c0d795431f54457b449210f002078525887b906b7e14903e6ef"
+    },
+    {
+      "method": "E3",
+      "policy": "P1_MEAN",
+      "match": true,
+      "computed_SHA256": "632b18535602071a48fdfa5ed39d5cf453ceb67ae5471e6289f47da49d8cfa60",
+      "expected_SHA256": "632b18535602071a48fdfa5ed39d5cf453ceb67ae5471e6289f47da49d8cfa60"
+    },
+    {
+      "method": "E3",
+      "policy": "P1_LOWER_MEDIAN",
+      "match": true,
+      "computed_SHA256": "01c8e911a37408eaaa29011a93adb19af37decfb75e3a801f7cdc9681ddb0a91",
+      "expected_SHA256": "01c8e911a37408eaaa29011a93adb19af37decfb75e3a801f7cdc9681ddb0a91"
+    },
+    {
+      "method": "E3",
+      "policy": "P2_STATISTICAL_LAW",
+      "match": true,
+      "computed_SHA256": "01c8e911a37408eaaa29011a93adb19af37decfb75e3a801f7cdc9681ddb0a91",
+      "expected_SHA256": "01c8e911a37408eaaa29011a93adb19af37decfb75e3a801f7cdc9681ddb0a91"
+    },
+    {
+      "method": "E3",
+      "policy": "P90",
+      "match": true,
+      "computed_SHA256": "88eba331fb8086c7b815ef1de7d3bb3892139af58c699fb0d004e35cbe863e26",
+      "expected_SHA256": "88eba331fb8086c7b815ef1de7d3bb3892139af58c699fb0d004e35cbe863e26"
+    },
+    {
+      "method": "SAVED_ADJUSTED",
+      "policy": "REGISTERED_DIRECTION",
+      "match": true,
+      "computed_SHA256": "1afbd4a399c8aec0598e716c9072dcdbed4defce79c04138f1bea787dc96cf66",
+      "expected_SHA256": "1afbd4a399c8aec0598e716c9072dcdbed4defce79c04138f1bea787dc96cf66"
+    },
+    {
+      "method": "SAVED_RAW",
+      "policy": "REGISTERED_DIRECTION",
+      "match": true,
+      "computed_SHA256": "945c386bc3d5db12085ed31524c6901be13f97da78b2dc34eea80e776fa89c56",
+      "expected_SHA256": "945c386bc3d5db12085ed31524c6901be13f97da78b2dc34eea80e776fa89c56"
+    },
+    {
+      "method": "ALWAYS_OVER",
+      "policy": "REGISTERED_DIRECTION",
+      "match": true,
+      "computed_SHA256": "dda2598f279b375ede1a68a2ec997392d32f9f2c0cdb8b5a3790739ff329158b",
+      "expected_SHA256": "dda2598f279b375ede1a68a2ec997392d32f9f2c0cdb8b5a3790739ff329158b"
+    },
+    {
+      "method": "ALWAYS_UNDER",
+      "policy": "REGISTERED_DIRECTION",
+      "match": true,
+      "computed_SHA256": "0173fee51912840d60c719d5bc316baea1da615e1f25980f4a024b3bb93224b1",
+      "expected_SHA256": "0173fee51912840d60c719d5bc316baea1da615e1f25980f4a024b3bb93224b1"
+    },
+    {
+      "method": "EARLIER_LINE_PREVALENCE",
+      "policy": "REGISTERED_DIRECTION",
+      "match": true,
+      "computed_SHA256": "036b3b53e1cd2a42e8b33e278bc31a3c0ef1baa649e535289eb7d400b658100d",
+      "expected_SHA256": "036b3b53e1cd2a42e8b33e278bc31a3c0ef1baa649e535289eb7d400b658100d"
+    },
+    {
+      "method": "NEUTRAL_HALFPOINT",
+      "policy": "REGISTERED_DIRECTION",
+      "match": true,
+      "computed_SHA256": "d133c13b92458d63d514d3fc5d910f0f7791d254a44d4b67a7c737a2dc2ffae2",
+      "expected_SHA256": "d133c13b92458d63d514d3fc5d910f0f7791d254a44d4b67a7c737a2dc2ffae2"
+    }
+  ],
+  "representative_safe_forest": [
+    {
+      "arm": "S0",
+      "model_SHA256": "e1d49ec8bb9f210ccc65be4c853d2f6c55aefa7d79db13fa423a4429819541aa",
+      "feature_count": 337,
+      "trees": 32,
+      "training_prior_rows": 664,
+      "query_identity_commitment": "b72e5a2097822caa7236070b1c5d60f429afa33751a9fd97c9d827b0106f4f23",
+      "mean_error": 3.552713678800501e-15,
+      "median_match": true,
+      "complete_leaf_mass_match": true
+    },
+    {
+      "arm": "S1",
+      "model_SHA256": "0b66e95e2dc1af56f5943666a7cf58d78cf7f14e8d90a21bd4a30b4dd44063b9",
+      "feature_count": 345,
+      "trees": 32,
+      "training_prior_rows": 664,
+      "query_identity_commitment": "b72e5a2097822caa7236070b1c5d60f429afa33751a9fd97c9d827b0106f4f23",
+      "mean_error": 0.0,
+      "median_match": true,
+      "complete_leaf_mass_match": true
+    },
+    {
+      "arm": "S2",
+      "model_SHA256": "1c2f0ca77eb47d36e7a5ef4dc65c92c4a8c53f7d05f37258186789eebef3a409",
+      "feature_count": 347,
+      "trees": 32,
+      "training_prior_rows": 664,
+      "query_identity_commitment": "b72e5a2097822caa7236070b1c5d60f429afa33751a9fd97c9d827b0106f4f23",
+      "mean_error": 3.552713678800501e-15,
+      "median_match": true,
+      "complete_leaf_mass_match": true
+    }
+  ],
+  "new_arm_results": [
+    {
+      "method": "S0",
+      "policy": "P1_MEAN",
+      "window": "ALL",
+      "sides": {
+        "over": {
+          "wins": 12,
+          "losses": 5,
+          "decided": 17,
+          "selected": 17,
+          "rate": 0.7058823529411765
+        },
+        "under": {
+          "wins": 49,
+          "losses": 46,
+          "decided": 95,
+          "selected": 95,
+          "rate": 0.5157894736842106
+        },
+        "Combined": {
+          "wins": 61,
+          "losses": 51,
+          "decided": 112,
+          "selected": 112,
+          "rate": 0.5446428571428571
+        }
+      },
+      "probability": {
+        "n": 112,
+        "brier": 0.2677425803125506,
+        "log_loss": 0.7308892265705157,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S0",
+      "policy": "P1_LOWER_MEDIAN",
+      "window": "ALL",
+      "sides": {
+        "over": {
+          "wins": 16,
+          "losses": 11,
+          "decided": 27,
+          "selected": 27,
+          "rate": 0.5925925925925926
+        },
+        "under": {
+          "wins": 43,
+          "losses": 42,
+          "decided": 85,
+          "selected": 85,
+          "rate": 0.5058823529411764
+        },
+        "Combined": {
+          "wins": 59,
+          "losses": 53,
+          "decided": 112,
+          "selected": 112,
+          "rate": 0.5267857142857143
+        }
+      },
+      "probability": {
+        "n": 112,
+        "brier": 0.2677425803125506,
+        "log_loss": 0.7308892265705157,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S0",
+      "policy": "P2_STATISTICAL_LAW",
+      "window": "ALL",
+      "sides": {
+        "over": {
+          "wins": 16,
+          "losses": 11,
+          "decided": 27,
+          "selected": 27,
+          "rate": 0.5925925925925926
+        },
+        "under": {
+          "wins": 43,
+          "losses": 42,
+          "decided": 85,
+          "selected": 85,
+          "rate": 0.5058823529411764
+        },
+        "Combined": {
+          "wins": 59,
+          "losses": 53,
+          "decided": 112,
+          "selected": 112,
+          "rate": 0.5267857142857143
+        }
+      },
+      "probability": {
+        "n": 112,
+        "brier": 0.2677425803125506,
+        "log_loss": 0.7308892265705157,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S0",
+      "policy": "P2_STATISTICAL_LAW",
+      "window": 5,
+      "sides": {
+        "over": {
+          "wins": 3,
+          "losses": 2,
+          "decided": 5,
+          "selected": 5,
+          "rate": 0.6
+        },
+        "under": {
+          "wins": 12,
+          "losses": 11,
+          "decided": 23,
+          "selected": 23,
+          "rate": 0.5217391304347826
+        },
+        "Combined": {
+          "wins": 15,
+          "losses": 13,
+          "decided": 28,
+          "selected": 28,
+          "rate": 0.5357142857142857
+        }
+      },
+      "probability": {
+        "n": 28,
+        "brier": 0.23824855083528146,
+        "log_loss": 0.6655778640041896,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S0",
+      "policy": "P2_STATISTICAL_LAW",
+      "window": 6,
+      "sides": {
+        "over": {
+          "wins": 3,
+          "losses": 1,
+          "decided": 4,
+          "selected": 4,
+          "rate": 0.75
+        },
+        "under": {
+          "wins": 9,
+          "losses": 15,
+          "decided": 24,
+          "selected": 24,
+          "rate": 0.375
+        },
+        "Combined": {
+          "wins": 12,
+          "losses": 16,
+          "decided": 28,
+          "selected": 28,
+          "rate": 0.42857142857142855
+        }
+      },
+      "probability": {
+        "n": 28,
+        "brier": 0.31098226181620037,
+        "log_loss": 0.8218317349104851,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S0",
+      "policy": "P2_STATISTICAL_LAW",
+      "window": 7,
+      "sides": {
+        "over": {
+          "wins": 5,
+          "losses": 0,
+          "decided": 5,
+          "selected": 5,
+          "rate": 1.0
+        },
+        "under": {
+          "wins": 13,
+          "losses": 10,
+          "decided": 23,
+          "selected": 23,
+          "rate": 0.5652173913043478
+        },
+        "Combined": {
+          "wins": 18,
+          "losses": 10,
+          "decided": 28,
+          "selected": 28,
+          "rate": 0.6428571428571429
+        }
+      },
+      "probability": {
+        "n": 28,
+        "brier": 0.26257959111116563,
+        "log_loss": 0.7237395301486179,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S0",
+      "policy": "P2_STATISTICAL_LAW",
+      "window": 8,
+      "sides": {
+        "over": {
+          "wins": 5,
+          "losses": 8,
+          "decided": 13,
+          "selected": 13,
+          "rate": 0.38461538461538464
+        },
+        "under": {
+          "wins": 9,
+          "losses": 6,
+          "decided": 15,
+          "selected": 15,
+          "rate": 0.6
+        },
+        "Combined": {
+          "wins": 14,
+          "losses": 14,
+          "decided": 28,
+          "selected": 28,
+          "rate": 0.5
+        }
+      },
+      "probability": {
+        "n": 28,
+        "brier": 0.259159917487555,
+        "log_loss": 0.7124077772187699,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S0",
+      "policy": "P90",
+      "window": "ALL",
+      "sides": {
+        "over": {
+          "wins": 0,
+          "losses": 0,
+          "decided": 0,
+          "selected": 0,
+          "rate": null
+        },
+        "under": {
+          "wins": 0,
+          "losses": 0,
+          "decided": 0,
+          "selected": 0,
+          "rate": null
+        },
+        "Combined": {
+          "wins": 0,
+          "losses": 0,
+          "decided": 0,
+          "selected": 0,
+          "rate": null
+        }
+      },
+      "probability": {
+        "n": 112,
+        "brier": 0.2677425803125506,
+        "log_loss": 0.7308892265705157,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S1",
+      "policy": "P1_MEAN",
+      "window": "ALL",
+      "sides": {
+        "over": {
+          "wins": 6,
+          "losses": 7,
+          "decided": 13,
+          "selected": 13,
+          "rate": 0.46153846153846156
+        },
+        "under": {
+          "wins": 47,
+          "losses": 52,
+          "decided": 99,
+          "selected": 99,
+          "rate": 0.47474747474747475
+        },
+        "Combined": {
+          "wins": 53,
+          "losses": 59,
+          "decided": 112,
+          "selected": 112,
+          "rate": 0.4732142857142857
+        }
+      },
+      "probability": {
+        "n": 112,
+        "brier": 0.2710131404709667,
+        "log_loss": 0.73774960132318,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S1",
+      "policy": "P1_LOWER_MEDIAN",
+      "window": "ALL",
+      "sides": {
+        "over": {
+          "wins": 7,
+          "losses": 9,
+          "decided": 16,
+          "selected": 16,
+          "rate": 0.4375
+        },
+        "under": {
+          "wins": 45,
+          "losses": 51,
+          "decided": 96,
+          "selected": 96,
+          "rate": 0.46875
+        },
+        "Combined": {
+          "wins": 52,
+          "losses": 60,
+          "decided": 112,
+          "selected": 112,
+          "rate": 0.4642857142857143
+        }
+      },
+      "probability": {
+        "n": 112,
+        "brier": 0.2710131404709667,
+        "log_loss": 0.73774960132318,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S1",
+      "policy": "P2_STATISTICAL_LAW",
+      "window": "ALL",
+      "sides": {
+        "over": {
+          "wins": 7,
+          "losses": 9,
+          "decided": 16,
+          "selected": 16,
+          "rate": 0.4375
+        },
+        "under": {
+          "wins": 45,
+          "losses": 51,
+          "decided": 96,
+          "selected": 96,
+          "rate": 0.46875
+        },
+        "Combined": {
+          "wins": 52,
+          "losses": 60,
+          "decided": 112,
+          "selected": 112,
+          "rate": 0.4642857142857143
+        }
+      },
+      "probability": {
+        "n": 112,
+        "brier": 0.2710131404709667,
+        "log_loss": 0.73774960132318,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S1",
+      "policy": "P2_STATISTICAL_LAW",
+      "window": 5,
+      "sides": {
+        "over": {
+          "wins": 2,
+          "losses": 2,
+          "decided": 4,
+          "selected": 4,
+          "rate": 0.5
+        },
+        "under": {
+          "wins": 12,
+          "losses": 12,
+          "decided": 24,
+          "selected": 24,
+          "rate": 0.5
+        },
+        "Combined": {
+          "wins": 14,
+          "losses": 14,
+          "decided": 28,
+          "selected": 28,
+          "rate": 0.5
+        }
+      },
+      "probability": {
+        "n": 28,
+        "brier": 0.2482159975879654,
+        "log_loss": 0.6858566365519738,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S1",
+      "policy": "P2_STATISTICAL_LAW",
+      "window": 6,
+      "sides": {
+        "over": {
+          "wins": 1,
+          "losses": 1,
+          "decided": 2,
+          "selected": 2,
+          "rate": 0.5
+        },
+        "under": {
+          "wins": 9,
+          "losses": 17,
+          "decided": 26,
+          "selected": 26,
+          "rate": 0.34615384615384615
+        },
+        "Combined": {
+          "wins": 10,
+          "losses": 18,
+          "decided": 28,
+          "selected": 28,
+          "rate": 0.35714285714285715
+        }
+      },
+      "probability": {
+        "n": 28,
+        "brier": 0.3129572939566062,
+        "log_loss": 0.8282382365701564,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S1",
+      "policy": "P2_STATISTICAL_LAW",
+      "window": 7,
+      "sides": {
+        "over": {
+          "wins": 2,
+          "losses": 1,
+          "decided": 3,
+          "selected": 3,
+          "rate": 0.6666666666666666
+        },
+        "under": {
+          "wins": 12,
+          "losses": 13,
+          "decided": 25,
+          "selected": 25,
+          "rate": 0.48
+        },
+        "Combined": {
+          "wins": 14,
+          "losses": 14,
+          "decided": 28,
+          "selected": 28,
+          "rate": 0.5
+        }
+      },
+      "probability": {
+        "n": 28,
+        "brier": 0.272995756910813,
+        "log_loss": 0.7438159509603569,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S1",
+      "policy": "P2_STATISTICAL_LAW",
+      "window": 8,
+      "sides": {
+        "over": {
+          "wins": 2,
+          "losses": 5,
+          "decided": 7,
+          "selected": 7,
+          "rate": 0.2857142857142857
+        },
+        "under": {
+          "wins": 12,
+          "losses": 9,
+          "decided": 21,
+          "selected": 21,
+          "rate": 0.5714285714285714
+        },
+        "Combined": {
+          "wins": 14,
+          "losses": 14,
+          "decided": 28,
+          "selected": 28,
+          "rate": 0.5
+        }
+      },
+      "probability": {
+        "n": 28,
+        "brier": 0.24988351342848208,
+        "log_loss": 0.6930875812102333,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S1",
+      "policy": "P90",
+      "window": "ALL",
+      "sides": {
+        "over": {
+          "wins": 0,
+          "losses": 0,
+          "decided": 0,
+          "selected": 0,
+          "rate": null
+        },
+        "under": {
+          "wins": 0,
+          "losses": 0,
+          "decided": 0,
+          "selected": 0,
+          "rate": null
+        },
+        "Combined": {
+          "wins": 0,
+          "losses": 0,
+          "decided": 0,
+          "selected": 0,
+          "rate": null
+        }
+      },
+      "probability": {
+        "n": 112,
+        "brier": 0.2710131404709667,
+        "log_loss": 0.73774960132318,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S2",
+      "policy": "P1_MEAN",
+      "window": "ALL",
+      "sides": {
+        "over": {
+          "wins": 14,
+          "losses": 15,
+          "decided": 29,
+          "selected": 29,
+          "rate": 0.4827586206896552
+        },
+        "under": {
+          "wins": 39,
+          "losses": 44,
+          "decided": 83,
+          "selected": 83,
+          "rate": 0.46987951807228917
+        },
+        "Combined": {
+          "wins": 53,
+          "losses": 59,
+          "decided": 112,
+          "selected": 112,
+          "rate": 0.4732142857142857
+        }
+      },
+      "probability": {
+        "n": 112,
+        "brier": 0.26530526616055894,
+        "log_loss": 0.7259486395132319,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S2",
+      "policy": "P1_LOWER_MEDIAN",
+      "window": "ALL",
+      "sides": {
+        "over": {
+          "wins": 15,
+          "losses": 12,
+          "decided": 27,
+          "selected": 27,
+          "rate": 0.5555555555555556
+        },
+        "under": {
+          "wins": 42,
+          "losses": 43,
+          "decided": 85,
+          "selected": 85,
+          "rate": 0.49411764705882355
+        },
+        "Combined": {
+          "wins": 57,
+          "losses": 55,
+          "decided": 112,
+          "selected": 112,
+          "rate": 0.5089285714285714
+        }
+      },
+      "probability": {
+        "n": 112,
+        "brier": 0.26530526616055894,
+        "log_loss": 0.7259486395132319,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S2",
+      "policy": "P2_STATISTICAL_LAW",
+      "window": "ALL",
+      "sides": {
+        "over": {
+          "wins": 15,
+          "losses": 12,
+          "decided": 27,
+          "selected": 27,
+          "rate": 0.5555555555555556
+        },
+        "under": {
+          "wins": 42,
+          "losses": 43,
+          "decided": 85,
+          "selected": 85,
+          "rate": 0.49411764705882355
+        },
+        "Combined": {
+          "wins": 57,
+          "losses": 55,
+          "decided": 112,
+          "selected": 112,
+          "rate": 0.5089285714285714
+        }
+      },
+      "probability": {
+        "n": 112,
+        "brier": 0.26530526616055894,
+        "log_loss": 0.7259486395132319,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S2",
+      "policy": "P2_STATISTICAL_LAW",
+      "window": 5,
+      "sides": {
+        "over": {
+          "wins": 4,
+          "losses": 2,
+          "decided": 6,
+          "selected": 6,
+          "rate": 0.6666666666666666
+        },
+        "under": {
+          "wins": 12,
+          "losses": 10,
+          "decided": 22,
+          "selected": 22,
+          "rate": 0.5454545454545454
+        },
+        "Combined": {
+          "wins": 16,
+          "losses": 12,
+          "decided": 28,
+          "selected": 28,
+          "rate": 0.5714285714285714
+        }
+      },
+      "probability": {
+        "n": 28,
+        "brier": 0.24571152462240783,
+        "log_loss": 0.6829238959996091,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S2",
+      "policy": "P2_STATISTICAL_LAW",
+      "window": 6,
+      "sides": {
+        "over": {
+          "wins": 3,
+          "losses": 1,
+          "decided": 4,
+          "selected": 4,
+          "rate": 0.75
+        },
+        "under": {
+          "wins": 9,
+          "losses": 15,
+          "decided": 24,
+          "selected": 24,
+          "rate": 0.375
+        },
+        "Combined": {
+          "wins": 12,
+          "losses": 16,
+          "decided": 28,
+          "selected": 28,
+          "rate": 0.42857142857142855
+        }
+      },
+      "probability": {
+        "n": 28,
+        "brier": 0.3085162730025783,
+        "log_loss": 0.817604624344103,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S2",
+      "policy": "P2_STATISTICAL_LAW",
+      "window": 7,
+      "sides": {
+        "over": {
+          "wins": 4,
+          "losses": 2,
+          "decided": 6,
+          "selected": 6,
+          "rate": 0.6666666666666666
+        },
+        "under": {
+          "wins": 11,
+          "losses": 11,
+          "decided": 22,
+          "selected": 22,
+          "rate": 0.5
+        },
+        "Combined": {
+          "wins": 15,
+          "losses": 13,
+          "decided": 28,
+          "selected": 28,
+          "rate": 0.5357142857142857
+        }
+      },
+      "probability": {
+        "n": 28,
+        "brier": 0.26014167665169036,
+        "log_loss": 0.7171491303583558,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S2",
+      "policy": "P2_STATISTICAL_LAW",
+      "window": 8,
+      "sides": {
+        "over": {
+          "wins": 4,
+          "losses": 7,
+          "decided": 11,
+          "selected": 11,
+          "rate": 0.36363636363636365
+        },
+        "under": {
+          "wins": 10,
+          "losses": 7,
+          "decided": 17,
+          "selected": 17,
+          "rate": 0.5882352941176471
+        },
+        "Combined": {
+          "wins": 14,
+          "losses": 14,
+          "decided": 28,
+          "selected": 28,
+          "rate": 0.5
+        }
+      },
+      "probability": {
+        "n": 28,
+        "brier": 0.2468515903655593,
+        "log_loss": 0.6861169073508596,
+        "infinite_log_losses": 0
+      }
+    },
+    {
+      "method": "S2",
+      "policy": "P90",
+      "window": "ALL",
+      "sides": {
+        "over": {
+          "wins": 0,
+          "losses": 0,
+          "decided": 0,
+          "selected": 0,
+          "rate": null
+        },
+        "under": {
+          "wins": 0,
+          "losses": 0,
+          "decided": 0,
+          "selected": 0,
+          "rate": null
+        },
+        "Combined": {
+          "wins": 0,
+          "losses": 0,
+          "decided": 0,
+          "selected": 0,
+          "rate": null
+        }
+      },
+      "probability": {
+        "n": 112,
+        "brier": 0.26530526616055894,
+        "log_loss": 0.7259486395132319,
+        "infinite_log_losses": 0
+      }
+    }
+  ],
+  "scope_limits": [
+    "No new fits or independent refit verification",
+    "Only deterministic W1 savedmodel inference perarm, not allorigin restoration",
+    "No privatepeer-row parity or originalquote/sourceHTTPvintage authentication",
+    "No uncertaintybootstrap reimplementation",
+    "Numerical MAE/MSE/bias checked; not everytail/reliability/AUC figure independently reconstructed",
+    "No probability/injury/confirmedstarter/productionpromotion inferred from this arithmetic"
+  ],
+  "new_fits": 0,
+  "new_NFL_games": 0,
+  "new_scores_added": 0,
+  "private_rows_republished": false
+}

@@ -1,0 +1,121 @@
+{
+  "prepared_at_utc": "2026-11-04T21:16:55.694089+00:00",
+  "owner": "B",
+  "coordinator": "C",
+  "assignment_id": "ABC-PREDICTIVE-IMPROVEMENT-01",
+  "disposition": "RESEARCH_EVIDENCE_PREPARED_NOT_ADMITTED;NO_B1_PRODUCTION_SWITCH_RECOMMENDED",
+  "state_axes": {
+    "prepared": true,
+    "GitHub_delivered": "PENDING_READBACK",
+    "C_received": "NOT_OBSERVED",
+    "C_admitted": "NOT_OBSERVED",
+    "owner_admitted": false,
+    "new_B1_capture": false,
+    "published_model": false,
+    "served_verified_B1": false,
+    "scientifically_superior": false
+  },
+  "results": {
+    "rec_fullboard": "194/337->195/337;Brierworse.259868->.260203",
+    "pass_td_fullboard": "14/26unchanged;Brier.266196->.264826stilllosesneutral.25",
+    "B2": "Bothlosebestmatchedconstants",
+    "target90": "Zeroqualifiedselections,N/A,TARGET_NOT_ESTABLISHED"
+  },
+  "bindings": [
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/CURRENT_EXECUTION_BINDING.json",
+      "sha256": "ecb45f8a1916e2f6b67685dcd1db39f99fb7801f373f5275b87e48c2c5704698"
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/FROZEN_PROTOCOL_V2.json",
+      "sha256": "c8f68540f49feca967603bad17235ceb467cfb88c00094b916d2acd44df4a356"
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/NEW_CANONICAL_SCORE_MANIFEST_V2.json",
+      "sha256": "c56ad50d34c89f9e66867f47408edad7d2f3739eeebf29cd125a6f8fc3088c93"
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/SOURCE_CLOCK_AND_ATTRIBUTION_QUALIFICATION_V3.json",
+      "sha256": "555ff43adddfd2466b8f6208f0d8efc571f22a79f49833b7cb87492c85a35654"
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/SOURCE_AND_CLOCK_BINDINGS.json",
+      "sha256": "3c99350a237f96af5d76a44d1e7d4d2145f51e191bde2c7e629ecb3d35be8e21"
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/RUN_RECEIPT.json",
+      "sha256": "ab7fbe764e60d43aeba5ee1388eca9b25358ce26a9571da3c8bd9f5c73ecfcf9"
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/MODEL_MANIFEST.json",
+      "sha256": "6d22932f6e6b3b243712034fefe91f296b4d86f94f38d82780d124aea957ac1d"
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/TARGET_90_STATUS.json",
+      "sha256": "095759656ca3950434757112d254ac375b4cc5d3266b680287dbd8bb2334c104"
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/RESOURCE_QUALIFICATION.json",
+      "sha256": "ba7585db669e193eafd668a332d6ed8e5c282454c7d8105df01daf0640fecb07"
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/B_PREDICTIVE_IMPROVEMENT_REPORT.md",
+      "sha256": "157fd1a5b0bd12d41020b9e38b695e4efaacbe417ee17c665f3314cc58e2106f"
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/SOURCE_CLOCK_AND_ATTRIBUTION_QUALIFICATION_V3.json",
+      "sha256": "555ff43adddfd2466b8f6208f0d8efc571f22a79f49833b7cb87492c85a35654"
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/FINAL_SOURCE_CLOCK_EXPOSURE_V4.json",
+      "sha256": "9376bf94f989a14787c00f5b2baa9adcd5a42ad3e7f25c02f7b942a988d1d167"
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/results-index-v5/INDEX_MANIFEST.json",
+      "sha256": "00f460aa5b1581af8f0afa6f95b92a7bbae91d9c133ace9bfff0ea6308589541"
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/INDEPENDENT_SOURCE_CLOCK_AND_INDEX_PROJECTION_V4.json",
+      "sha256": "dd74c8c21e64d6d64044f110899b3567be658b31e4669172bc13b06b6ff7e2e3"
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/WEEKLY_AND_CUMULATIVE_SIDE_TABLE_V2.csv",
+      "sha256": "6974236e75fa701c952f01a705e4201a37be410bd42d2104f4709ba438808a85"
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/SIDE_TABLE_PRESENTATION_QUALIFICATION_V2.json",
+      "sha256": "20216163e4f2cf5ce0889bd0f4a4b82872b44133967c39ad0fcc15dfe86533e6"
+    }
+  ],
+  "typed_consumer_contract": {
+    "required": [
+      "exact_original_game_player_category_line_identity",
+      "bound_source_and_decision_cutoff",
+      "supported_base_Over_Under_Push_probabilities",
+      "origin_calibrator_binding_or_identity_state",
+      "actual_inference_persistence_clocks",
+      "source_status_age_and_original_fallback",
+      "immutable_membership_and_rule_version"
+    ],
+    "outputs": [
+      "p_over",
+      "p_under",
+      "p_push",
+      "conditioned_on_modeled_appearance",
+      "new_rule_selected_side_or_abstention_or_unavailable",
+      "repair_identity_fallback_separate_from_base_fallback"
+    ],
+    "not_available": "No newfulloutcomeCDF/repairedpointmean/voidprobability/EV absent their qualifiedcomponents.",
+    "changed_line_behavior": "REFUSE_UNBOUND_LINE;ownerbaselineexact-line recomputation andmonotoniccheck required.",
+    "missing_source": "UNAVAILABLE, not zero orconfidenceabstention",
+    "fallback": "Identityonlyonvalidbaselineandspecificinsufficientearliercalibration; no law ifbase unavailable",
+    "rollback": "RetainunchangedB0/refandfrozenpolicies;ownercontrolsproductionrollback"
+  },
+  "next_owner_task": "Cintakereadbackandscopedaggregateadmission; ownerfuturebaseP3/C02probabilityexport whenready. Point-onlyclassicpacket cannotreconstructeventprobabilities. Anynewcapture/admissionunderexistingauthority,nonebackdated.",
+  "source_transfer": "RawBrestrictedrowsandcoefficientsremainapprovedowner-local;publiccode/aggregate/hash only; independentowner-localprooflimits explicit. No new shared archive or external message.",
+  "policy_scope": "Existingownerprovisionalpolicyunchanged;no blanketfuture/8week/wholehistory gate; named scientificclaimcriteria retained.",
+  "production_changes": 0,
+  "previous_handoff_sha256": "807e99671ea8898e43a3395d2d96187da67ca1d671beed32e4106d367e2003b5",
+  "metadata_qualification": "SOURCE_CLOCK_AND_ATTRIBUTION_QUALIFICATION_V3.json + FINAL_SOURCE_CLOCK_EXPOSURE_V4.json; mandatory sixartifact annotations and defaultresults-index-v5. Source score bytes unchanged.",
+  "supersedes_preparation_only": "Earlierhand-offhashes maybindthearchivedprequalificationreportversions;finalintakeusethisexactbindinglist. No earlierhandoffwasCadmitted."
+}

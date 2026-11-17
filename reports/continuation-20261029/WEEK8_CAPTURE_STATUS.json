@@ -1,0 +1,848 @@
+{
+  "actual_new_v2_fits": 0,
+  "actual_new_v2_forecasts": 0,
+  "actual_new_v2_inferences": 0,
+  "by_category": [
+    {
+      "all_18_model_target_pairs_retained": false,
+      "category": "pass_yd",
+      "fallback_rows": "UNKNOWN_IN_PUBLIC_SELECTED_FEED",
+      "functionals": [
+        "intended_median"
+      ],
+      "game_count": 14,
+      "games": [
+        "401873023",
+        "401873024",
+        "401873025",
+        "401873026",
+        "401873027",
+        "401873028",
+        "401873029",
+        "401873030",
+        "401873031",
+        "401873032",
+        "401873033",
+        "401873034",
+        "401873035",
+        "401873036"
+      ],
+      "model_versions": [
+        "3b3e1d63966c0581f1e0e33364daea77f22b801ba55bbc11170353d73736eb04"
+      ],
+      "original_ready_model_catalog": {
+        "CATBOOST_MEDIUM": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "catboost_medium",
+          "model_version": "c56bad334e28eda5aa473683a25de00e9ae9e08cbbea6f2c0e715a029ebd9e13",
+          "probability_law": "NONE_POINT_ONLY",
+          "procedure_version": "9fa09ae8fdc21d286c9f427811262da52243839e489ba003a0078f54fb743400",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        },
+        "LAB_CDF": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "leaf_cdf_base",
+          "model_version": "14c3da8aff3a8f2a958f75d45cdcd4cc99d28ea4fd82a3d1eeb272a206352bdd",
+          "probability_law": "EMPIRICAL_LEAF_PLUS_SUPPORT_PRIOR",
+          "procedure_version": "82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        }
+      },
+      "per_underlying_method_candidate_rows": "UNVERIFIED_PRIVATE_CENSUS_NOT_RESTORED",
+      "procedure_versions": [
+        "2ced2a3d88822d200dec59bb6485356044b8733353c87c91f3fa6825f963ba12"
+      ],
+      "reported_ready_combinations": [],
+      "reported_ready_count": 2,
+      "reported_ready_fixed_learners": [
+        "CATBOOST_MEDIUM",
+        "LAB_CDF"
+      ],
+      "selected_rows_retained": 40,
+      "source_cutoffs": [
+        "2026-10-29T22:45:00+00:00",
+        "2026-11-01T16:30:00+00:00",
+        "2026-11-01T19:35:00+00:00",
+        "2026-11-01T19:55:00+00:00",
+        "2026-11-01T23:50:00+00:00",
+        "2026-11-02T23:45:00+00:00"
+      ]
+    },
+    {
+      "all_18_model_target_pairs_retained": false,
+      "category": "pass_td",
+      "fallback_rows": "UNKNOWN_IN_PUBLIC_SELECTED_FEED",
+      "functionals": [
+        "expected_mean"
+      ],
+      "game_count": 14,
+      "games": [
+        "401873023",
+        "401873024",
+        "401873025",
+        "401873026",
+        "401873027",
+        "401873028",
+        "401873029",
+        "401873030",
+        "401873031",
+        "401873032",
+        "401873033",
+        "401873034",
+        "401873035",
+        "401873036"
+      ],
+      "model_versions": [
+        "98f3087768e1a23539388667d128ac759c55befd9f03b01b7654baafd263a228"
+      ],
+      "original_ready_model_catalog": {
+        "LAB_CDF": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "leaf_cdf_base",
+          "model_version": "1511aeac5a099ffa78dd2e61ae942073fdcd1fc2fa809dd619a901301883ea7a",
+          "probability_law": "EMPIRICAL_LEAF_PLUS_SUPPORT_PRIOR",
+          "procedure_version": "82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        }
+      },
+      "per_underlying_method_candidate_rows": "UNVERIFIED_PRIVATE_CENSUS_NOT_RESTORED",
+      "procedure_versions": [
+        "9098170124985c38e0c317b8bd1ef4a44b4aa3c2e6fbb9344d74e99ba757e29d"
+      ],
+      "reported_ready_combinations": [],
+      "reported_ready_count": 1,
+      "reported_ready_fixed_learners": [
+        "LAB_CDF"
+      ],
+      "selected_rows_retained": 40,
+      "source_cutoffs": [
+        "2026-10-29T22:45:00+00:00",
+        "2026-11-01T16:30:00+00:00",
+        "2026-11-01T19:35:00+00:00",
+        "2026-11-01T19:55:00+00:00",
+        "2026-11-01T23:50:00+00:00",
+        "2026-11-02T23:45:00+00:00"
+      ]
+    },
+    {
+      "all_18_model_target_pairs_retained": false,
+      "category": "pass_cmp",
+      "fallback_rows": "UNKNOWN_IN_PUBLIC_SELECTED_FEED",
+      "functionals": [
+        "expected_mean"
+      ],
+      "game_count": 14,
+      "games": [
+        "401873023",
+        "401873024",
+        "401873025",
+        "401873026",
+        "401873027",
+        "401873028",
+        "401873029",
+        "401873030",
+        "401873031",
+        "401873032",
+        "401873033",
+        "401873034",
+        "401873035",
+        "401873036"
+      ],
+      "model_versions": [
+        "e1f7ab72b1d199864f330b88375201a5f8f44a9371e4af9e8145d629503a81e3"
+      ],
+      "original_ready_model_catalog": {
+        "LAB_CDF": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "leaf_cdf_base",
+          "model_version": "c35b6c5725ba3d922be78b2d1c459852232ed5b314b031e1643b365908e9a760",
+          "probability_law": "EMPIRICAL_LEAF_PLUS_SUPPORT_PRIOR",
+          "procedure_version": "82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        }
+      },
+      "per_underlying_method_candidate_rows": "UNVERIFIED_PRIVATE_CENSUS_NOT_RESTORED",
+      "procedure_versions": [
+        "935a49265a81d44a21ebd6c79f67b22945a649c5176111fdc3ab59ff7490079e"
+      ],
+      "reported_ready_combinations": [],
+      "reported_ready_count": 1,
+      "reported_ready_fixed_learners": [
+        "LAB_CDF"
+      ],
+      "selected_rows_retained": 40,
+      "source_cutoffs": [
+        "2026-10-29T22:45:00+00:00",
+        "2026-11-01T16:30:00+00:00",
+        "2026-11-01T19:35:00+00:00",
+        "2026-11-01T19:55:00+00:00",
+        "2026-11-01T23:50:00+00:00",
+        "2026-11-02T23:45:00+00:00"
+      ]
+    },
+    {
+      "all_18_model_target_pairs_retained": false,
+      "category": "pass_att",
+      "fallback_rows": "UNKNOWN_IN_PUBLIC_SELECTED_FEED",
+      "functionals": [
+        "expected_mean"
+      ],
+      "game_count": 14,
+      "games": [
+        "401873023",
+        "401873024",
+        "401873025",
+        "401873026",
+        "401873027",
+        "401873028",
+        "401873029",
+        "401873030",
+        "401873031",
+        "401873032",
+        "401873033",
+        "401873034",
+        "401873035",
+        "401873036"
+      ],
+      "model_versions": [
+        "3b75a227cca1ed2d7c50d9d56b5510c1907d19aae98c412dc4d04b76859a982b"
+      ],
+      "original_ready_model_catalog": {
+        "LAB_CDF": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "leaf_cdf_base",
+          "model_version": "e0f60b951026b96ba1ac64eef71c144bb98a8da4bc62a15ff5d677b9ae82f0c7",
+          "probability_law": "EMPIRICAL_LEAF_PLUS_SUPPORT_PRIOR",
+          "procedure_version": "82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        }
+      },
+      "per_underlying_method_candidate_rows": "UNVERIFIED_PRIVATE_CENSUS_NOT_RESTORED",
+      "procedure_versions": [
+        "8036241e6dc11ee50f630dcd1858c7c15ef5faabc9a3aa29d328fcb6329a4e75"
+      ],
+      "reported_ready_combinations": [],
+      "reported_ready_count": 1,
+      "reported_ready_fixed_learners": [
+        "LAB_CDF"
+      ],
+      "selected_rows_retained": 40,
+      "source_cutoffs": [
+        "2026-10-29T22:45:00+00:00",
+        "2026-11-01T16:30:00+00:00",
+        "2026-11-01T19:35:00+00:00",
+        "2026-11-01T19:55:00+00:00",
+        "2026-11-01T23:50:00+00:00",
+        "2026-11-02T23:45:00+00:00"
+      ]
+    },
+    {
+      "all_18_model_target_pairs_retained": false,
+      "category": "pass_int",
+      "fallback_rows": "UNKNOWN_IN_PUBLIC_SELECTED_FEED",
+      "functionals": [
+        "expected_mean"
+      ],
+      "game_count": 14,
+      "games": [
+        "401873023",
+        "401873024",
+        "401873025",
+        "401873026",
+        "401873027",
+        "401873028",
+        "401873029",
+        "401873030",
+        "401873031",
+        "401873032",
+        "401873033",
+        "401873034",
+        "401873035",
+        "401873036"
+      ],
+      "model_versions": [
+        "e9a6506f082eb8a979b086d4c14dcaf134a8979a1b32e471ed2ff28895378824"
+      ],
+      "original_ready_model_catalog": {
+        "LAB_CDF": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "leaf_cdf_base",
+          "model_version": "49e02be68349b82302f53a6bea2352fbceaa4429b74f2ecdef1a374108e226cd",
+          "probability_law": "EMPIRICAL_LEAF_PLUS_SUPPORT_PRIOR",
+          "procedure_version": "82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        }
+      },
+      "per_underlying_method_candidate_rows": "UNVERIFIED_PRIVATE_CENSUS_NOT_RESTORED",
+      "procedure_versions": [
+        "a19ca418522418dcd42765700f20cae7cc19063489a2517945ba693f7203b37e"
+      ],
+      "reported_ready_combinations": [],
+      "reported_ready_count": 1,
+      "reported_ready_fixed_learners": [
+        "LAB_CDF"
+      ],
+      "selected_rows_retained": 40,
+      "source_cutoffs": [
+        "2026-10-29T22:45:00+00:00",
+        "2026-11-01T16:30:00+00:00",
+        "2026-11-01T19:35:00+00:00",
+        "2026-11-01T19:55:00+00:00",
+        "2026-11-01T23:50:00+00:00",
+        "2026-11-02T23:45:00+00:00"
+      ]
+    },
+    {
+      "all_18_model_target_pairs_retained": false,
+      "category": "rush_yd",
+      "fallback_rows": "UNKNOWN_IN_PUBLIC_SELECTED_FEED",
+      "functionals": [
+        "intended_median"
+      ],
+      "game_count": 14,
+      "games": [
+        "401873023",
+        "401873024",
+        "401873025",
+        "401873026",
+        "401873027",
+        "401873028",
+        "401873029",
+        "401873030",
+        "401873031",
+        "401873032",
+        "401873033",
+        "401873034",
+        "401873035",
+        "401873036"
+      ],
+      "model_versions": [
+        "1c0148f601f146a4307b4c562d151f33243afb44e9a068a28ca6a11bcd7e5e8a"
+      ],
+      "original_ready_model_catalog": {
+        "CATBOOST_MEDIUM": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "catboost_medium",
+          "model_version": "d8cbdaabdb3eccac587b6683b96974d54b8fe1ac358974d7700b8586e1aa395e",
+          "probability_law": "NONE_POINT_ONLY",
+          "procedure_version": "9fa09ae8fdc21d286c9f427811262da52243839e489ba003a0078f54fb743400",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        },
+        "LAB_CDF": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "leaf_cdf_base",
+          "model_version": "90a4473f148ad07ed18e8a282396fec45c0cb0407de15a17c8539cc4d4863891",
+          "probability_law": "EMPIRICAL_LEAF_PLUS_SUPPORT_PRIOR",
+          "procedure_version": "82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        }
+      },
+      "per_underlying_method_candidate_rows": "UNVERIFIED_PRIVATE_CENSUS_NOT_RESTORED",
+      "procedure_versions": [
+        "30d664e1d0d015708bd52f59ed8d90a8cf1a4079884f7e4f3acc42e0f03a7aa5"
+      ],
+      "reported_ready_combinations": [],
+      "reported_ready_count": 2,
+      "reported_ready_fixed_learners": [
+        "CATBOOST_MEDIUM",
+        "LAB_CDF"
+      ],
+      "selected_rows_retained": 112,
+      "source_cutoffs": [
+        "2026-10-29T22:45:00+00:00",
+        "2026-11-01T16:30:00+00:00",
+        "2026-11-01T19:35:00+00:00",
+        "2026-11-01T19:55:00+00:00",
+        "2026-11-01T23:50:00+00:00",
+        "2026-11-02T23:45:00+00:00"
+      ]
+    },
+    {
+      "all_18_model_target_pairs_retained": false,
+      "category": "rush_att",
+      "fallback_rows": "UNKNOWN_IN_PUBLIC_SELECTED_FEED",
+      "functionals": [
+        "expected_mean"
+      ],
+      "game_count": 14,
+      "games": [
+        "401873023",
+        "401873024",
+        "401873025",
+        "401873026",
+        "401873027",
+        "401873028",
+        "401873029",
+        "401873030",
+        "401873031",
+        "401873032",
+        "401873033",
+        "401873034",
+        "401873035",
+        "401873036"
+      ],
+      "model_versions": [
+        "e1e017717fd44b0835d542fa7c96b8908f5e2fc281c0032c3e1186831dec00dc"
+      ],
+      "original_ready_model_catalog": {
+        "COUNT_A": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "count_A",
+          "model_version": "ae0becbedd67559ff5ef8bb3cae59f6473be8531e4b00edc33e04dce7a1ec349",
+          "probability_law": "NONE_POINT_ONLY",
+          "procedure_version": "19366fa2b42beb6e756a47c5567b5dabf948475adab024e81af4c2476137e13b",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        },
+        "LAB_CDF": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "leaf_cdf_base",
+          "model_version": "c291bad10f3197b6aebb78962330551b486c1b1bc1cbb7a8541c867c441ee8be",
+          "probability_law": "EMPIRICAL_LEAF_PLUS_SUPPORT_PRIOR",
+          "procedure_version": "82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        }
+      },
+      "per_underlying_method_candidate_rows": "UNVERIFIED_PRIVATE_CENSUS_NOT_RESTORED",
+      "procedure_versions": [
+        "178469d87333edd3c3a615bb925792338f789cb44c6c38b6d9b9466cdeeffd7b"
+      ],
+      "reported_ready_combinations": [],
+      "reported_ready_count": 2,
+      "reported_ready_fixed_learners": [
+        "COUNT_A",
+        "LAB_CDF"
+      ],
+      "selected_rows_retained": 112,
+      "source_cutoffs": [
+        "2026-10-29T22:45:00+00:00",
+        "2026-11-01T16:30:00+00:00",
+        "2026-11-01T19:35:00+00:00",
+        "2026-11-01T19:55:00+00:00",
+        "2026-11-01T23:50:00+00:00",
+        "2026-11-02T23:45:00+00:00"
+      ]
+    },
+    {
+      "all_18_model_target_pairs_retained": false,
+      "category": "rec",
+      "fallback_rows": "UNKNOWN_IN_PUBLIC_SELECTED_FEED",
+      "functionals": [
+        "expected_mean"
+      ],
+      "game_count": 14,
+      "games": [
+        "401873023",
+        "401873024",
+        "401873025",
+        "401873026",
+        "401873027",
+        "401873028",
+        "401873029",
+        "401873030",
+        "401873031",
+        "401873032",
+        "401873033",
+        "401873034",
+        "401873035",
+        "401873036"
+      ],
+      "model_versions": [
+        "0a9a11a81d0250c1ba04bbf8ddc7eb08646b76b73bb775863b146ae9c016f2f5"
+      ],
+      "original_ready_model_catalog": {
+        "COUNT_A": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "count_A",
+          "model_version": "9d8e3f52f1607bd980385a150e3ace8332d7195a4dc70319eb75df86439d2e8b",
+          "probability_law": "NONE_POINT_ONLY",
+          "procedure_version": "19366fa2b42beb6e756a47c5567b5dabf948475adab024e81af4c2476137e13b",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        },
+        "LAB_CDF": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "leaf_cdf_base",
+          "model_version": "49085bae17ff5233027e4ed032385563b684c989a7993f1bcb7b73de0e473890",
+          "probability_law": "EMPIRICAL_LEAF_PLUS_SUPPORT_PRIOR",
+          "procedure_version": "82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        }
+      },
+      "per_underlying_method_candidate_rows": "UNVERIFIED_PRIVATE_CENSUS_NOT_RESTORED",
+      "procedure_versions": [
+        "49e96640fac97556fcafd63570f45e240f970faf17cf1aca4f3936bdd50e939f"
+      ],
+      "reported_ready_combinations": [],
+      "reported_ready_count": 2,
+      "reported_ready_fixed_learners": [
+        "COUNT_A",
+        "LAB_CDF"
+      ],
+      "selected_rows_retained": 403,
+      "source_cutoffs": [
+        "2026-10-29T22:45:00+00:00",
+        "2026-11-01T16:30:00+00:00",
+        "2026-11-01T19:35:00+00:00",
+        "2026-11-01T19:55:00+00:00",
+        "2026-11-01T23:50:00+00:00",
+        "2026-11-02T23:45:00+00:00"
+      ]
+    },
+    {
+      "all_18_model_target_pairs_retained": false,
+      "category": "rec_yd",
+      "fallback_rows": "UNKNOWN_IN_PUBLIC_SELECTED_FEED",
+      "functionals": [
+        "intended_median"
+      ],
+      "game_count": 14,
+      "games": [
+        "401873023",
+        "401873024",
+        "401873025",
+        "401873026",
+        "401873027",
+        "401873028",
+        "401873029",
+        "401873030",
+        "401873031",
+        "401873032",
+        "401873033",
+        "401873034",
+        "401873035",
+        "401873036"
+      ],
+      "model_versions": [
+        "1533819a3c922826f6eb631d32107c09bf1d8c7d7c005dd20fad30e0f0c4a661"
+      ],
+      "original_ready_model_catalog": {
+        "CATBOOST_MEDIUM": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "catboost_medium",
+          "model_version": "074305b69e346b94f4fd813c03abdd21e9dae8233e92ca6b9f035bf04f768217",
+          "probability_law": "NONE_POINT_ONLY",
+          "procedure_version": "9fa09ae8fdc21d286c9f427811262da52243839e489ba003a0078f54fb743400",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        },
+        "LAB_CDF": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "leaf_cdf_base",
+          "model_version": "7f9b56d6caf55e87abe0597ad2a60c817e60456f8bf2a62443309237db3f08de",
+          "probability_law": "EMPIRICAL_LEAF_PLUS_SUPPORT_PRIOR",
+          "procedure_version": "82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        }
+      },
+      "per_underlying_method_candidate_rows": "UNVERIFIED_PRIVATE_CENSUS_NOT_RESTORED",
+      "procedure_versions": [
+        "cd08ff51b1ff61c39834a9aad9cda67c73743bc1e03a82abd78bff1cc44fc825"
+      ],
+      "reported_ready_combinations": [],
+      "reported_ready_count": 2,
+      "reported_ready_fixed_learners": [
+        "CATBOOST_MEDIUM",
+        "LAB_CDF"
+      ],
+      "selected_rows_retained": 403,
+      "source_cutoffs": [
+        "2026-10-29T22:45:00+00:00",
+        "2026-11-01T16:30:00+00:00",
+        "2026-11-01T19:35:00+00:00",
+        "2026-11-01T19:55:00+00:00",
+        "2026-11-01T23:50:00+00:00",
+        "2026-11-02T23:45:00+00:00"
+      ]
+    },
+    {
+      "all_18_model_target_pairs_retained": false,
+      "category": "rush_rec_yd",
+      "fallback_rows": "UNKNOWN_IN_PUBLIC_SELECTED_FEED",
+      "functionals": [
+        "intended_median"
+      ],
+      "game_count": 14,
+      "games": [
+        "401873023",
+        "401873024",
+        "401873025",
+        "401873026",
+        "401873027",
+        "401873028",
+        "401873029",
+        "401873030",
+        "401873031",
+        "401873032",
+        "401873033",
+        "401873034",
+        "401873035",
+        "401873036"
+      ],
+      "model_versions": [
+        "c52af4f64b44247a4cb329f249a56e09c27a85fc4c78b18231f294c147555f25"
+      ],
+      "original_ready_model_catalog": {
+        "CATBOOST_MEDIUM": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "catboost_medium",
+          "model_version": "5505151ea75744a41477aafc6fbf4c0808d5c72168937ee58280787133d34978",
+          "probability_law": "NONE_POINT_ONLY",
+          "procedure_version": "9fa09ae8fdc21d286c9f427811262da52243839e489ba003a0078f54fb743400",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        },
+        "LAB_CDF": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "leaf_cdf_base",
+          "model_version": "220fc5c49c037caa55dd593dd005bc74c63427f17bd39d36848a90d5174b4062",
+          "probability_law": "EMPIRICAL_LEAF_PLUS_SUPPORT_PRIOR",
+          "procedure_version": "82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        }
+      },
+      "per_underlying_method_candidate_rows": "UNVERIFIED_PRIVATE_CENSUS_NOT_RESTORED",
+      "procedure_versions": [
+        "80edf4fe057928f748c21ad652573cf2f78c29120d2e87e63f6d959d3c1fa877"
+      ],
+      "reported_ready_combinations": [],
+      "reported_ready_count": 2,
+      "reported_ready_fixed_learners": [
+        "CATBOOST_MEDIUM",
+        "LAB_CDF"
+      ],
+      "selected_rows_retained": 291,
+      "source_cutoffs": [
+        "2026-10-29T22:45:00+00:00",
+        "2026-11-01T16:30:00+00:00",
+        "2026-11-01T19:35:00+00:00",
+        "2026-11-01T19:55:00+00:00",
+        "2026-11-01T23:50:00+00:00",
+        "2026-11-02T23:45:00+00:00"
+      ]
+    },
+    {
+      "all_18_model_target_pairs_retained": false,
+      "category": "anytime_td",
+      "fallback_rows": "UNKNOWN_IN_PUBLIC_SELECTED_FEED",
+      "functionals": [
+        "event_probability"
+      ],
+      "game_count": 14,
+      "games": [
+        "401873023",
+        "401873024",
+        "401873025",
+        "401873026",
+        "401873027",
+        "401873028",
+        "401873029",
+        "401873030",
+        "401873031",
+        "401873032",
+        "401873033",
+        "401873034",
+        "401873035",
+        "401873036"
+      ],
+      "model_versions": [
+        "c7948634bfb2fb284b0e6895084373b526ae99b008ad2de9e28c4d80ef1f8301"
+      ],
+      "original_ready_model_catalog": {
+        "CATBOOST_MEDIUM": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "catboost_medium",
+          "model_version": "20d76ff2e6eb57e6015c91cef093fe565e204591fbe642ac104b7f1d2047a6dd",
+          "probability_law": "BERNOULLI",
+          "procedure_version": "9fa09ae8fdc21d286c9f427811262da52243839e489ba003a0078f54fb743400",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        },
+        "LAB_CDF": {
+          "fallback": "existing trained role/global prior; all offered rows; absent supported prior abstains",
+          "family": "leaf_cdf_base",
+          "model_version": "89bf0cdd5d7d88784ea2d388aa52d5c0acf9b68739200453067bd6e8cbb3398a",
+          "probability_law": "EMPIRICAL_LEAF_PLUS_SUPPORT_PRIOR",
+          "procedure_version": "82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04",
+          "training_cutoff_utc": "2026-09-01T00:00:00+00:00",
+          "training_max_available_utc": "2026-01-12T01:20:00+00:00"
+        }
+      },
+      "per_underlying_method_candidate_rows": "UNVERIFIED_PRIVATE_CENSUS_NOT_RESTORED",
+      "procedure_versions": [
+        "e16886f8a95732f8433548da5fd776a4aa4fff06c971767593ac58d732edb664"
+      ],
+      "reported_ready_combinations": [
+        "TD_EQUAL_CDF_CAT"
+      ],
+      "reported_ready_count": 3,
+      "reported_ready_fixed_learners": [
+        "CATBOOST_MEDIUM",
+        "LAB_CDF"
+      ],
+      "selected_rows_retained": 430,
+      "source_cutoffs": [
+        "2026-10-29T22:45:00+00:00",
+        "2026-11-01T16:30:00+00:00",
+        "2026-11-01T19:35:00+00:00",
+        "2026-11-01T19:55:00+00:00",
+        "2026-11-01T23:50:00+00:00",
+        "2026-11-02T23:45:00+00:00"
+      ]
+    },
+    {
+      "category": "nick-chart-ppr-v1",
+      "game_count": 0,
+      "original_ready_model_catalog": {},
+      "reported_ready_combinations": [],
+      "reported_ready_count": 0,
+      "reported_ready_fixed_learners": [],
+      "selected_rows_retained": 0
+    }
+  ],
+  "current_board_R0_adjusted_numeric_counts": {
+    "fpts": 449,
+    "pass_att": 40,
+    "pass_cmp": 40,
+    "pass_int": 40,
+    "pass_td": 40,
+    "pass_yd": 40,
+    "rec": 409,
+    "rec_yd": 409,
+    "rush_att": 115,
+    "rush_rec_yd": 296,
+    "rush_yd": 155
+  },
+  "current_board_generated_at": "2026-10-29T18:55:33Z",
+  "current_board_player_count": 535,
+  "current_board_provider_point_counts": {
+    "anytime_td": 333,
+    "fpts": 361,
+    "pass_att": 28,
+    "pass_cmp": 28,
+    "pass_int": 28,
+    "pass_td": 28,
+    "pass_yd": 28,
+    "rec": 333,
+    "rec_yd": 333,
+    "rush_att": 92,
+    "rush_rec_yd": 239,
+    "rush_yd": 120
+  },
+  "current_overlay_fallbacks": {
+    "PPR_or_unsupported_R0": 449,
+    "invalid_previous_overlay_R0": 3,
+    "missing_or_duplicate_candidate_R0": 77
+  },
+  "current_overlay_missing_original_rows": 6,
+  "current_overlay_preserves_all_original_fields": true,
+  "current_overlay_rows": 1945,
+  "deadline_utc": "2026-10-29T22:45:00+00:00",
+  "direct_served_values_verified_by_this_pass": false,
+  "existing_owner_candidate_census": {
+    "candidate_rows_reported": 11466,
+    "independently_restored_private_vectors": 0,
+    "model_target_pairs_reported": 18,
+    "selected_private_rows_reported": 2956,
+    "state": "REPORTED_NOT_REPRODUCED_PRIVATE_BINDING_REQUIRED"
+  },
+  "existing_public_forecasts_restored": 1951,
+  "heads": {
+    "lab_state": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+    "producer": "0409a253d6a365c31a2d421941b8ee5f40d6fd02",
+    "production": "911a81a31f822de58e0f9c04ded070f8c9752670",
+    "research": "dab293cb7577c66e33abd29b263ea05abf99a274"
+  },
+  "kickoff_utc": "2026-10-30T00:15:00+00:00",
+  "latest_actual_hosted_capture": {
+    "child": 40729906573,
+    "date": "2026-10-28",
+    "newer_successful_capture_observed": false,
+    "parent": 40729788942
+  },
+  "latest_original_session_receipt": {
+    "new_actual_captures": 0,
+    "observed_utc": "2026-10-29T22:26:03.011363+00:00",
+    "private_census_assignment": "OWNER_RESTORE_REQUIRED"
+  },
+  "latest_scheduled_attempt": {
+    "captures": 0,
+    "created_at": "2026-10-29T18:37:43Z",
+    "run_id": 40932594714,
+    "state": "MISSED_SCHEDULE_WINDOW_NOT_BACKFILLED"
+  },
+  "minutes_until_first_input_deadline": 5.5121330833333335,
+  "observed_at": "2026-10-29T22:39:29.272015+00:00",
+  "original_assignment": "Exact pre-value game-to-capture assignment map not restored; preserve owner assignment; no first/latest substitution",
+  "original_capture_checks": {
+    "all_issued_and_persisted_before_own_deadline": true,
+    "unique_player_game_category": true
+  },
+  "original_issue_max": "2026-10-28T17:01:37.561173+00:00",
+  "original_issue_min": "2026-10-28T17:01:27.983768+00:00",
+  "original_persisted_at": [
+    "2026-10-28T17:14:28.568750+00:00"
+  ],
+  "original_public_games": 14,
+  "original_publication": "2026-10-28T17:14:38.260601+00:00",
+  "owner_route": "Existing retained-owner approved secret-bearing producer/private-checkpoint workflow with real source/runtime/producer/GO identities and approved private storage; no new writer, workflow dispatch, scheduler or secret extraction",
+  "remaining": "Every historical procedure does not have authenticated saved Week8 vectors. Restore original all-method candidate capsule plus source/model/query/completion/assignment and per-method attempts; admit new entrants prospectively only after current-source/model/runtime/persistence qualification. No new V2 inference was attempted.",
+  "retained": [
+    {
+      "bytes": 1760438,
+      "durability": "Recoverable pinned public source; approved V2 private companion not established",
+      "fresh_process_local_readback": true,
+      "public_safe_artifact_id": "week8-public-original-3907ca38.json",
+      "retention_kind": "RESTORED_EXISTING_CAPTURE_NOT_NEW_INFERENCE",
+      "sha256": "3907ca38138ed633556d894b90a347e8f6db68b9f3275a0c5621fbd952e23452",
+      "source_commit": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "source_path": "state/public/weekly-adaptive-v1/2026-W08/20261028T171438.260601Z--3907ca38138ed633556d894b90a347e8f6db68b9f3275a0c5621fbd952e23452.json",
+      "source_repository": "NickNicky19/NFL-forecasting"
+    },
+    {
+      "bytes": 2033939,
+      "durability": "Recoverable pinned public source; approved V2 private companion not established",
+      "fresh_process_local_readback": true,
+      "public_safe_artifact_id": "week8-production-board-911a81.json",
+      "retention_kind": "RESTORED_EXISTING_CAPTURE_NOT_NEW_INFERENCE",
+      "sha256": "12638b545ade73e91d2a6312731491e61c8225949546afb39eba71d5d908ae40",
+      "source_commit": "911a81a31f822de58e0f9c04ded070f8c9752670",
+      "source_path": "output/data/week.json",
+      "source_repository": "NickNicky19/nicks-expert-nfl-picks"
+    },
+    {
+      "bytes": 1852417,
+      "durability": "Recoverable pinned public source; approved V2 private companion not established",
+      "fresh_process_local_readback": true,
+      "public_safe_artifact_id": "week8-production-overlay-df44db8a.json",
+      "retention_kind": "RESTORED_EXISTING_CAPTURE_NOT_NEW_INFERENCE",
+      "sha256": "df44db8a71e3ef229ab397787462decee93505717aa591de413dac4a5c8cd0b1",
+      "source_commit": "911a81a31f822de58e0f9c04ded070f8c9752670",
+      "source_path": "output/data/weekly-adaptive/df44db8a71e3ef229ab397787462decee93505717aa591de413dac4a5c8cd0b1.json",
+      "source_repository": "NickNicky19/nicks-expert-nfl-picks"
+    }
+  ],
+  "source_inference_assessment": {
+    "approved_private_store_binding_here": false,
+    "chart": "current16primitive contract and model/query/consumer qualification required",
+    "current_qualified_query_frame_publicly_found": false,
+    "legacy_model_policy_qualified_for_current_v2_inference": false,
+    "legacy_public_models": "recent/pooled/tree JSONs exist in old lab-state; one recent passyd schema inspected",
+    "market": "secret-bearing owner quota/private source route only",
+    "new_backfield_model": "historical research only; existing strict wrapper rejects added context",
+    "ordered_CDF_future_adapter": "34 fictional checks; no actual NFL model/current-source inference/restoration/admission"
+  },
+  "version": "v2-week8-readonly-capture-status-v1"
+}

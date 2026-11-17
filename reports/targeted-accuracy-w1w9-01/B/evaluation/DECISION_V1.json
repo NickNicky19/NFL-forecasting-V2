@@ -1,0 +1,176 @@
+{
+  "id": "B_M2_DECISION_v1",
+  "at_UTC": "2026-11-15T05:30:49.009191+00:00",
+  "scope": "One fixed conditional-conversion-dispersion package plus necessary same-information directcontrol; originalM2broaderreceiver/contextmechanismsremainpartial",
+  "native_actual_line_panel": {
+    "season": 2026,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "CMP_offers": 142,
+    "ATT_offers": 142,
+    "games": 71,
+    "original_pregame_issuance": false,
+    "quote_clocks": "UNKNOWN",
+    "main_alternate": "UNCLASSIFIED",
+    "roster_universe": "STAT_ROW_CONDITIONAL_RECONSTRUCTION"
+  },
+  "BB_pairs": [
+    {
+      "method": "M2_P2_BB",
+      "parent": "M2_P2_BIN",
+      "OVER": {
+        "decided": 10,
+        "losses": 6,
+        "rate": 0.4,
+        "selected": 10,
+        "wins": 4
+      },
+      "UNDER": {
+        "decided": 132,
+        "losses": 67,
+        "rate": 0.49242424242424243,
+        "selected": 132,
+        "wins": 65
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 73,
+        "rate": 0.4859154929577465,
+        "selected": 142,
+        "wins": 69
+      },
+      "direction_win_change": 0,
+      "Brier_change": -0.00011998391380735329,
+      "log_loss_change": -0.0002866370649636796,
+      "selected_policies_unchanged": true,
+      "decision": "CLOSE_RECIPE_NO_GAIN_FOR_DIRECTION"
+    },
+    {
+      "method": "M2_C1_BB",
+      "parent": "M2_C1_BIN",
+      "OVER": {
+        "decided": 13,
+        "losses": 7,
+        "rate": 0.46153846153846156,
+        "selected": 13,
+        "wins": 6
+      },
+      "UNDER": {
+        "decided": 129,
+        "losses": 65,
+        "rate": 0.49612403100775193,
+        "selected": 129,
+        "wins": 64
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 72,
+        "rate": 0.49295774647887325,
+        "selected": 142,
+        "wins": 70
+      },
+      "direction_win_change": 0,
+      "Brier_change": -8.025104886422163e-05,
+      "log_loss_change": -0.00018415429665330496,
+      "selected_policies_unchanged": true,
+      "decision": "CLOSE_RECIPE_NO_GAIN_FOR_DIRECTION"
+    },
+    {
+      "method": "M2_C2_BB",
+      "parent": "M2_C2_BIN",
+      "OVER": {
+        "decided": 13,
+        "losses": 7,
+        "rate": 0.46153846153846156,
+        "selected": 13,
+        "wins": 6
+      },
+      "UNDER": {
+        "decided": 129,
+        "losses": 65,
+        "rate": 0.49612403100775193,
+        "selected": 129,
+        "wins": 64
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 72,
+        "rate": 0.49295774647887325,
+        "selected": 142,
+        "wins": 70
+      },
+      "direction_win_change": 0,
+      "Brier_change": -7.906482651010016e-05,
+      "log_loss_change": -0.0001838510079457123,
+      "selected_policies_unchanged": true,
+      "decision": "CLOSE_RECIPE_NO_GAIN_FOR_DIRECTION"
+    }
+  ],
+  "D_M2": {
+    "law_record": {
+      "decided": 142,
+      "losses": 77,
+      "rate": 0.45774647887323944,
+      "selected": 142,
+      "wins": 65
+    },
+    "mean_record": {
+      "decided": 142,
+      "losses": 74,
+      "rate": 0.4788732394366197,
+      "selected": 142,
+      "wins": 68
+    },
+    "direction_replacement": "CLOSE_RECIPE_NO_GAIN",
+    "proper_score_scope": "ImprovesweakP2count/eventNLLbutlosesB0exacteventproperanddirection; broadcountNLLgainretainedasboundeddescriptivefinding."
+  },
+  "accuracy_targets": {
+    "broad_native_observed75_80_90": false,
+    "selective_largest_observed": {
+      "wins": 1,
+      "losses": 0,
+      "selected": 1,
+      "evaluated_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "decision_weeks": [
+        5
+      ],
+      "zero_selection_weeks": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "method_scope": "C1/C2BINandBBthreshold0.90sameparentselection;notincrementalBBedge"
+    },
+    "75_supported": "TARGET_NOT_ESTABLISHED",
+    "80_supported": "TARGET_NOT_ESTABLISHED",
+    "90_supported": "TARGET_NOT_ESTABLISHED",
+    "W1_W9_actual_line_targets": "PARTIAL_NEW_PROCEDURE_OFFER_COVERAGE;NOT_ESTABLISHED"
+  },
+  "five_week_rule": "Full-boardrawproductsrepresentedfiveconditionaldiagnosticblocks;durationdoesnotauthenticatevintage/quoteclocksorsuperiority. Selectiveproductsretainownselected-weekcounts. No newall-nine-weekgateforindependentlyeligibleolderproducts.",
+  "next_owner_action": {
+    "executor": "A existing protected-offer join owner",
+    "artifact": "PublishednewM2W1-W4forecast/lawoutputs + trustedmodule restore_law integrated_nb_beta_binomial + existingA84offercontract",
+    "action": "Reusequalifiedmatchingaliasreceiptsorjoinnewexactlawoutputswithunchangedoffers/outcomes;no freshfitor repeatcompletedB0/B1/B2join.",
+    "completion_condition": "OwnweeklyO/U/combined/probability/numericcounts andmasks fornewM2firstfourweeks, orpreciseunsupportedsourcecells."
+  },
+  "no_further_model_search": "Preservetheseexactnegative/inconclusivefindings; no offset/window/seed/thresholdretry.",
+  "production_changes": 0,
+  "new_original_offered_decisions": 0,
+  "new_fits_in_grader": 0,
+  "new_source_GETs_by_evaluation_package": 1,
+  "new_source_bytes": 28748,
+  "C_intake": "PENDING_FOR_NEW_M2_PUBLICATION",
+  "protected_rows_exported": 0
+}

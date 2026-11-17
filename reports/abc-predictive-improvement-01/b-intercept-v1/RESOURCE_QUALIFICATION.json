@@ -1,0 +1,15 @@
+{
+  "state": "DISCLOSED_THREAD_ENFORCEMENT_GAP_RESULTS_RETAINED",
+  "run_receipt": "RUN_RECEIPT.json",
+  "declared_max_threads": 2,
+  "active_fitting_threads": "NOT_RECORDED",
+  "thread_cap_enforced": "NOT_DEMONSTRATED",
+  "explanation": "The six tiny scalar fits used the original runner without an explicit threadpool limit. Later BLAS pool configuration is not proof of active fit threads. CPU and wall near0.906s establish measured cost, not thread compliance. Preserve original results and do not silently rerun.",
+  "future_hardening": {
+    "entrypoint": "tools/run_b_predictive_improvement_01_guarded.py",
+    "state": "IMPLEMENTED_NOT_USED_FOR_ORIGINAL_FITS",
+    "behavior": "threadpool_limits(2), refuse existing SCORES output, requires its own registered future inputs/output binding."
+  },
+  "other_measured_limits": "RUN_RECEIPT confirms six scalar fits,0footballfits/inference/issuance;0.906wall/CPU,164745216peakRSS,517786newprivatebytes below4194304cap.",
+  "large_fit_gate": "UNCHANGED"
+}

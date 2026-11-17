@@ -1,0 +1,78 @@
+{
+  "schema": "v2-H-owner-status-post-window-server-read-v2",
+  "checked_at_utc": "2026-10-31 14:59:44 UTC",
+  "query_created_lower_bound": "2026-10-31T03:39:00Z",
+  "research_branch_head": "917560be215f5cac751be0f214aed5a05ea2e265",
+  "research_main_head": "cd51ff289ace3bf14cfb820c139fd823bc330d17",
+  "production_main_head": "1ec93e068a91abd51c990937d1019e4a831694b4",
+  "research_new_run_total": 0,
+  "production_new_run_total": 0,
+  "research_new_runs": [],
+  "production_new_runs": [],
+  "latest_research_run": {
+    "id": 41104520104,
+    "name": "NFL research lab",
+    "created_at": "2026-10-30T18:10:04Z",
+    "updated_at": "2026-10-30T18:13:04Z",
+    "status": "completed",
+    "conclusion": "failure",
+    "event": "schedule",
+    "head_sha": "cd51ff289ace3bf14cfb820c139fd823bc330d17",
+    "path": ".github/workflows/lab.yml",
+    "run_attempt": 1,
+    "html_url": "https://github.com/NickNicky19/NFL-forecasting/actions/runs/41104520104"
+  },
+  "latest_production_run": {
+    "id": 41107755731,
+    "name": "Hourly update",
+    "created_at": "2026-10-30T18:32:06Z",
+    "updated_at": "2026-10-30T18:33:25Z",
+    "status": "completed",
+    "conclusion": "success",
+    "event": "schedule",
+    "head_sha": "911a81a31f822de58e0f9c04ded070f8c9752670",
+    "path": ".github/workflows/hourly.yml",
+    "run_attempt": 1,
+    "html_url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/actions/runs/41107755731"
+  },
+  "configured_parent_window": {
+    "date": "2026-10-31",
+    "timezone": "America/Chicago",
+    "configured_start": "07:36CDT",
+    "configured_end_exclusive": "07:57CDT",
+    "UTC_start": "2026-10-31T12:36:00Z",
+    "UTC_end_exclusive": "2026-10-31T12:57:00Z",
+    "actual_status": "ELAPSED_NO_NEW_PUBLIC_RUN_OR_CAPTURE_OBSERVED"
+  },
+  "current_public_owner_policy": {
+    "source_commit": "917560be215f5cac751be0f214aed5a05ea2e265",
+    "source_path": "reports/category-topfive-mae-release-priority-20261030/OWNER_EXECUTION_V1.json",
+    "source_git_blob": "1f89e4c0d9453ac06a953113ae44bbd76ce7d24a",
+    "last_reported_owner_lease": 178,
+    "lease_claim_limit": "Pinned current public owner record. Mutable private lease state not independently accessible or verified.",
+    "release_package_commit": "341742de83975264a07d035d4b6289e57c2ec1e9",
+    "reported_release_state": "NO_NEW_MAE_ADMISSION_CAPTURE_OR_DEPLOYMENT_OBSERVED",
+    "next_game_deadline_reported": "2026-11-01T16:30:00Z",
+    "stale_source_clock_warning": "Pinned owner document still says Oct31 window executionpending; this new server read proves that window has elapsed."
+  },
+  "workflow_sources": {
+    "main_workflow_git_blob": "c84c939f43e666624d5c23fbd042f41fd75b3c1d",
+    "main_cadence_git_blob": "45f852349c01b09796418a27ced01f0c97023114",
+    "cron": "36 12,13,14 * * *",
+    "parent_cadence": "audit-weekly-parent-0736-v1",
+    "due_condition": "Scheduled event only at local07hour, minute36..56. Do not backfill delayed scheduled run.",
+    "workflow_state_endpoint": "TOOL_ENDPOINT_UNAVAILABLE; enabled/disabled setting and reason for missing schedule delivery remain unestablished. No access bypass."
+  },
+  "prior_failure_vs_today": {
+    "prior_failed_run": 41104520104,
+    "prior_failure_receipt": "../owner/PARENT_FAILURE_DIAGNOSIS.json",
+    "prior_reason": "Oct30 off-window enqueue skipped; readiness guards unaccepted handover/private durability/publication review. This is a prior run diagnosis.",
+    "today": "No Oct31 run observed in queried public Actions sources. There is no Oct31 log or step failure to diagnose; cause of absent scheduler invocation remains UNKNOWN."
+  },
+  "new_dispatches": 0,
+  "new_scheduler": false,
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_capture": false,
+  "production_writes": 0
+}

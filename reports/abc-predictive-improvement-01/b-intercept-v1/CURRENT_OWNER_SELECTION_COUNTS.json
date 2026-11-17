@@ -1,0 +1,111 @@
+{
+  "at_utc": "2026-11-04T20:58:06.952426+00:00",
+  "source_receipt": "CURRENT_OWNER_STATUS.json",
+  "production_ref": "c2e9bc4bd4090461ffde2f5977a1ef34eba61483",
+  "payload_sha256": "5b2e6368e434b5a6077bafc7b73d9f5bdd0d894484ae3e7ea2a8ead2fb6ed663",
+  "selection_counts": {
+    "over": 12,
+    "under": 12
+  },
+  "total": 24,
+  "unique_games": 11,
+  "forecast_sources": [
+    "CURRENT_BASELINE"
+  ],
+  "model_versions": [
+    "sleeper-matchup-classic-fg-identity-v1"
+  ],
+  "prepared_at": "2026-11-04T20:45:18.658349+00:00",
+  "policy": {
+    "categories": {
+      "pass_att": {
+        "lean": 1,
+        "minimum_line": 20.5,
+        "scale": 3
+      },
+      "pass_cmp": {
+        "lean": 0.8,
+        "minimum_line": 12.5,
+        "scale": 2.5
+      },
+      "pass_int": {
+        "lean": 0.12,
+        "minimum_line": 0.5,
+        "scale": 0.5
+      },
+      "pass_td": {
+        "lean": 0.15,
+        "minimum_line": 0.5,
+        "scale": 0.6
+      },
+      "pass_yd": {
+        "lean": 8,
+        "minimum_line": 150.5,
+        "scale": 30
+      },
+      "rec": {
+        "lean": 0.3,
+        "minimum_line": 1.5,
+        "scale": 1.2
+      },
+      "rec_yd": {
+        "lean": 4,
+        "minimum_line": 15.5,
+        "scale": 12
+      },
+      "rush_att": {
+        "lean": 0.8,
+        "minimum_line": 6.5,
+        "scale": 3
+      },
+      "rush_rec_yd": {
+        "lean": 5,
+        "minimum_line": 25.5,
+        "scale": 15
+      },
+      "rush_yd": {
+        "lean": 4,
+        "minimum_line": 15.5,
+        "scale": 12
+      }
+    },
+    "fallback": "same-opportunity reference identified by forecast_source and model_version; unavailable is never zero",
+    "meaning": "descriptive scaled forecast gap, not win probability or EV",
+    "minimum_games": 2,
+    "minimum_projected_ppr": {
+      "QB": 10,
+      "RB": 6,
+      "TE": 6,
+      "WR": 6
+    },
+    "minimum_score": 0.35,
+    "minimum_snap_share": 0.5,
+    "projection_line_ratio": [
+      0.4,
+      2.5
+    ],
+    "tie_order": [
+      "absolute_score_desc",
+      "game_id",
+      "player_id",
+      "category"
+    ],
+    "top_n": 12,
+    "unavailable": [
+      "Out",
+      "IR",
+      "PUP",
+      "Suspended",
+      "NA",
+      "Doubtful",
+      "COV",
+      "DNR"
+    ],
+    "version": "selected-projection-gap-classic-v1"
+  },
+  "frozen_proofs": 0,
+  "original_owner_packet_only": true,
+  "new_B_repair_captured": false,
+  "published_pointer_time": "2026-11-04T20:45:18.680248+00:00",
+  "browser_consumption": "NOT_INSPECTED_ENDPOINT_BYTES_ONLY"
+}

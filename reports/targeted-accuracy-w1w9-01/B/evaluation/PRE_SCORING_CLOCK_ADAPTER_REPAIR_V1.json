@@ -1,0 +1,14 @@
+{
+  "id": "B_M2_PRE_SCORING_CLOCK_ADAPTER_REPAIR_v1",
+  "at_UTC": "2026-11-15T05:09:29.634639+00:00",
+  "state": "PRE_COMPARATIVE_SCORING_INTERFACE_FAILURE_PRESERVED",
+  "failure": "AttributeError: float object has no attribute replace in dt at forecast-origin source clock decode",
+  "minimal_case": "Existing ctx.load_inputs returns timezone-aware UTC source times as Unix seconds; datetime parser accepted only ISO strings. dt(0.0) must equal1970-01-01T00:00:00+00:00, not an assumed publication time.",
+  "before_code_sha256": "cc92bad39e36ecc000288993b833bfd4d1a37daeb133eb4074c832943d959de5",
+  "before_source": "SCORER_BEFORE_EPOCH_CLOCK_ADAPTER_V1.py.gz",
+  "fix": "Accept finite numeric epoch-seconds as datetime.fromtimestamp(x,timezone.utc), preserve original strict inequalities and unknown-clock protections.",
+  "affected_scope": "New M2 evaluation adapter before inputbinding/grading; no scored artifacts, outcomes, model parameters, procedure thresholds or source clocks changed.",
+  "new_fits": 0,
+  "new_HTTP": 0,
+  "frozen_statistical_protocol_changed": false
+}

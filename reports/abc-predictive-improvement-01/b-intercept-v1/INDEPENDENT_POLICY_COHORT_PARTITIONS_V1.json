@@ -1,0 +1,109 @@
+{
+  "state": "PASS_INDEPENDENT_SAVED_POLICY_SUBGROUP_PARTITION",
+  "at_utc": "2026-11-04T21:02:00.274351+00:00",
+  "verification_code_sha256": "715f11edbb87865ca92ebdaaa3728e9c13f90f0cea8424a1c4700839757a80a1",
+  "producer_code_sha256": "638b6cfb481446e16289605577ebfd63affcb209c7f10f82b0628f164f48f2bb",
+  "source_prediction_policy_rows_sha256": "4c119c973bb9c5c04673f8bc2d2d150213b4bb2cd183e0f33aafcd5c7a01c0eb",
+  "score_sha256": "53f7f9ea793fb60ed1b0651d3b87bfe25f31a580e846cfea733fe0d4e7353f61",
+  "registration_sha256": "2f919beeb1a725d70ff402110f2ba5b68b4f496fd7c369e8591c7b0ed20f4278",
+  "source_membership_manifest_sha256": "31cd0053978ee61f95e75e933e40847101380924d6cddce36d461e8a6abec06b",
+  "side_views_verified": 6720,
+  "complete_side_triads_verified": 2240,
+  "non_ALL_policies_per_arm": 14,
+  "common_cohorts_per_target": 20,
+  "typed_rolling_K_views_verified": 4320,
+  "actual_periods": {
+    "rec": [
+      "2",
+      "3",
+      "ALL"
+    ],
+    "pass_td": [
+      "8"
+    ]
+  },
+  "unavailable_scope_examples": [
+    {
+      "target": "rec",
+      "arm": 0,
+      "week": "2",
+      "technical_unavailable": 13,
+      "fallback_unknown": 13,
+      "rule_abstentions": 0,
+      "selected": 0
+    },
+    {
+      "target": "rec",
+      "arm": 0,
+      "week": "3",
+      "technical_unavailable": 9,
+      "fallback_unknown": 9,
+      "rule_abstentions": 0,
+      "selected": 0
+    },
+    {
+      "target": "rec",
+      "arm": 0,
+      "week": "ALL",
+      "technical_unavailable": 22,
+      "fallback_unknown": 22,
+      "rule_abstentions": 0,
+      "selected": 0
+    },
+    {
+      "target": "rec",
+      "arm": 1,
+      "week": "2",
+      "technical_unavailable": 13,
+      "fallback_unknown": 13,
+      "rule_abstentions": 0,
+      "selected": 0
+    },
+    {
+      "target": "rec",
+      "arm": 1,
+      "week": "3",
+      "technical_unavailable": 9,
+      "fallback_unknown": 9,
+      "rule_abstentions": 0,
+      "selected": 0
+    },
+    {
+      "target": "rec",
+      "arm": 1,
+      "week": "ALL",
+      "technical_unavailable": 22,
+      "fallback_unknown": 22,
+      "rule_abstentions": 0,
+      "selected": 0
+    },
+    {
+      "target": "pass_td",
+      "arm": 0,
+      "week": "8",
+      "technical_unavailable": 2,
+      "fallback_unknown": 2,
+      "rule_abstentions": 0,
+      "selected": 0
+    },
+    {
+      "target": "pass_td",
+      "arm": 1,
+      "week": "8",
+      "technical_unavailable": 2,
+      "fallback_unknown": 2,
+      "rule_abstentions": 0,
+      "selected": 0
+    }
+  ],
+  "base_fits": 0,
+  "forecast_inference": 0,
+  "new_NFL_observations": 0,
+  "limits": [
+    "Subgroup tables condition on unchanged original policy decisions and frozen common memberships; they do not rerank or refill top-K within cohorts.",
+    "Technical unavailability remains distinct from deliberate rule abstention; fallback unknown includes missing original forecast metadata. Empty selected and decided pools retain null rates.",
+    "Historical participant and future-query memberships do not authenticate complete original ex-ante player boards. These remain exposed descriptive subgroup views, not new independent observations.",
+    "Native error is intentionally null for event policies. Original unchanged PT mean remains only in the separate ancillary point product.",
+    "The earlier declared fitting thread cap was not demonstrably enforced; this saved-row-only supplement introduces no additional fits."
+  ]
+}

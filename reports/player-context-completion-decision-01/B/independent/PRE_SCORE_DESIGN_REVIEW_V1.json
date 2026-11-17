@@ -1,0 +1,51 @@
+{
+  "id": "B-DEPTH-CATCHABILITY-PRE-SCORE-DESIGN-REVIEW-v1",
+  "at_utc": "2026-11-10T04:47:34.138801+00:00",
+  "state": "PASS_DECLARED_BOUNDED_DESIGN_NOT_RESULT_ACCEPTANCE",
+  "proposed_mechanism": "Five-depth-bin prior-shrunk lagged provider catchability added to conditional completion conversion; support-only and value arms; same-information direct arms.",
+  "unchanged_controls": [
+    "B-player-context-matchup-01-v1:P1",
+    "B-player-context-matchup-01-v1:E1",
+    "B-player-context-matchup-01-v1:E3",
+    "B-QB-CHARTED-CATCHABILITY-CONTEXT-v1:F2",
+    "SAVED_ADJUSTED",
+    "EARLIER_LINE_PREVALENCE",
+    "ALWAYS_OVER",
+    "ALWAYS_UNDER",
+    "NEUTRAL_HALFPOINT"
+  ],
+  "comparisons": {
+    "conditional": "C2 versus C1 separates actual catchability value from support/age/missing; C1 versus unchangedP1 adds support; same25predictedmix and commonattemptlaw.",
+    "direct": "D2 versus D1 isolates values with same support block; each versus unchangedE1; compare all to strongest eligible existing controls.",
+    "structure": "Conditional versus direct same qualified information, distinguish complete systems rather than claim exact architecture-only causality where base covariates differ."
+  },
+  "difference_from_closed_F1_F2": "Old F1/F2 were per-QB-game aggregate chart support and three global rates. New block retains depth-specific catchable known/positive counts and uses them in per-context conditional conversion, with direct information control.",
+  "frozen_parameters": {
+    "depth_bins": [
+      "BEHIND_LOS",
+      "YARDS_0_9",
+      "YARDS_10_19",
+      "YARDS_20_PLUS",
+      "UNKNOWN"
+    ],
+    "own_eligible_games": 8,
+    "chart_prior_known_throw_strength": 20,
+    "new_hyperparameter_searches": 0,
+    "origins": "2025W1-18 and2026W1-8",
+    "max_NFL_optimizer_fits": 104,
+    "pilot_origin": "Earliest2025W1 fourfits; retain and readback before rest",
+    "max_threads": 2,
+    "max_RSS_bytes": 2147483648,
+    "new_typed_model_prediction_retention_bytes": 33554432
+  },
+  "required_semantics": [
+    "KnownTRUE and knownFALSE enter denominator; missing/unmatched unknown.",
+    "No known own annotations uses explicitly labelled pooled chart prior; not technical inference unavailability or intentional confidence abstention.",
+    "No pooled known annotations uses declared beta0.5 reference plus missing indication; not empirical football information.",
+    "Training and query rates built with same strict availability<origin policy, no target-game charting.",
+    "Future exposure/mix predicted; exactgammaPoisson/binomialthinning gives coherent C<=N support; no cap on unrelated saved marginal laws."
+  ],
+  "practical_rule": "No new posthoc floor. Retain existing product/support/admission policy; compare strongest matched control, paired change and uncertainty. Finite26origins then keep/stop disposition regardless score. Small maxima or inadequate support do not establish superiority.",
+  "five_week": "Each new exact direction/probability product has four offered weeks unless a qualified owner-local A join truly adds scored weeks; numerical fullseason does not supply lines or issued selections.",
+  "status_limits": "This is design verification before new scores, not acceptance of unexecuted results, source authentications, peer C receipt, release or90% assurance."
+}

@@ -1,0 +1,2132 @@
+{
+  "id": "B-PROFILE-INCREMENT-RETAINED-CMP-DIAGNOSIS-v1",
+  "registration_sha256": "61d8ebe3f04548a2bdcc5ed7661dce21809e310d2ea2dbfcb6457e5e41ae713a",
+  "reused_evidence": [
+    {
+      "path": "reports/right-and-wrong-diagnostic-20261031k/ALL_METHOD_DIAGNOSTIC_SUMMARIES.json",
+      "sha256": "f399945c8ba0f32fe10400abff183866b2aa39d8e8a64c09d9a7279f0db4e3ca"
+    },
+    {
+      "path": "reports/right-and-wrong-diagnostic-20261031k/lineage/inspection-v2/QUERY_FRESHNESS_AND_FALLBACK.json",
+      "sha256": "75abf71f02ec8b4203ac8973ecc5a21d48a0d302cdaf89a02a176ac4a132649c"
+    },
+    {
+      "path": "reports/profile-increment-to-release-01/B/independent/MUTATION_FEATURE_USE_INDEPENDENT_REVIEW_V1.json",
+      "sha256": "8ed479dace3e1833da3e72ba8a6caec3591e347858e15b1127ebed93c7ca1613"
+    },
+    {
+      "path": "reports/audit-remediation-20261105-v1/B/B_FRESHNESS_RECIPE_SCOPE_V1.json",
+      "sha256": "a40ab75c271633ce28b907a7f38f94ee66b78b3d3c12d72321043db60d2aa724"
+    }
+  ],
+  "methods": [
+    {
+      "method": "R0",
+      "full_board": {
+        "n": 112,
+        "wins": 58,
+        "losses": 54,
+        "hit_rate": 0.5178571428571429,
+        "mean_error": {
+          "n": 112,
+          "mean": -1.4778544264245632,
+          "min": -19.67826868709971,
+          "max": 17.839450444033183
+        },
+        "absolute_mean_error": {
+          "n": 112,
+          "mean": 5.354704833556442,
+          "min": 0.05588194279512493,
+          "max": 19.67826868709971
+        },
+        "forecast_minus_line": {
+          "n": 112,
+          "mean": -1.433211569281706,
+          "min": -11.33071769824657,
+          "max": 2.0414018403951815
+        },
+        "actual_minus_line": {
+          "n": 112,
+          "mean": 0.044642857142857144,
+          "min": -19.5,
+          "max": 16.5
+        },
+        "own_age_days": {
+          "n": 112,
+          "mean": 15.194909474206346,
+          "min": 7.013888888888889,
+          "max": 286.81597222222223
+        },
+        "source_age_days": {
+          "n": 112,
+          "mean": 8.19490947420635,
+          "min": 0.013888888888888888,
+          "max": 279.81597222222223
+        },
+        "confidence": {
+          "n": 112,
+          "mean": 0.5839357351219346,
+          "min": 0.502552920280895,
+          "max": 0.8749370174089355
+        }
+      },
+      "groups": {
+        "side": {
+          "over": {
+            "n": 30,
+            "wins": 17,
+            "losses": 13,
+            "hit_rate": 0.5666666666666667,
+            "mean_error": {
+              "n": 30,
+              "mean": -0.49143364588227384,
+              "min": -15.230626518496184,
+              "max": 11.541401840395181
+            },
+            "absolute_mean_error": {
+              "n": 30,
+              "mean": 4.285106435930978,
+              "min": 0.05588194279512493,
+              "max": 15.230626518496184
+            },
+            "forecast_minus_line": {
+              "n": 30,
+              "mean": 0.5085663541177261,
+              "min": -0.7306265184961838,
+              "max": 2.0414018403951815
+            },
+            "actual_minus_line": {
+              "n": 30,
+              "mean": 1.0,
+              "min": -9.5,
+              "max": 14.5
+            },
+            "own_age_days": {
+              "n": 30,
+              "mean": 13.10763888888889,
+              "min": 7.013888888888889,
+              "max": 32.302083333333336
+            },
+            "source_age_days": {
+              "n": 30,
+              "mean": 6.107638888888888,
+              "min": 0.013888888888888888,
+              "max": 25.302083333333332
+            },
+            "confidence": {
+              "n": 30,
+              "mean": 0.5527651666467545,
+              "min": 0.5025703011405351,
+              "max": 0.6344603106063074
+            }
+          },
+          "under": {
+            "n": 82,
+            "wins": 41,
+            "losses": 41,
+            "hit_rate": 0.5,
+            "mean_error": {
+              "n": 82,
+              "mean": -1.8387400778424738,
+              "min": -19.67826868709971,
+              "max": 17.839450444033183
+            },
+            "absolute_mean_error": {
+              "n": 82,
+              "mean": 5.746021320492587,
+              "min": 0.16976916815657006,
+              "max": 19.67826868709971
+            },
+            "forecast_minus_line": {
+              "n": 82,
+              "mean": -2.1436181266229615,
+              "min": -11.33071769824657,
+              "max": -0.07305331714678331
+            },
+            "actual_minus_line": {
+              "n": 82,
+              "mean": -0.3048780487804878,
+              "min": -19.5,
+              "max": 16.5
+            },
+            "own_age_days": {
+              "n": 82,
+              "mean": 15.95854505420054,
+              "min": 7.013888888888889,
+              "max": 286.81597222222223
+            },
+            "source_age_days": {
+              "n": 82,
+              "mean": 8.958545054200542,
+              "min": 0.013888888888888888,
+              "max": 279.81597222222223
+            },
+            "confidence": {
+              "n": 82,
+              "mean": 0.5953396016372445,
+              "min": 0.502552920280895,
+              "max": 0.8749370174089355
+            }
+          }
+        },
+        "grade": {
+          "LOSS": {
+            "n": 54,
+            "wins": 0,
+            "losses": 54,
+            "hit_rate": 0.0,
+            "mean_error": {
+              "n": 54,
+              "mean": -4.443408556110154,
+              "min": -19.67826868709971,
+              "max": 11.541401840395181
+            },
+            "absolute_mean_error": {
+              "n": 54,
+              "mean": 6.548934848996652,
+              "min": 0.8940948111311648,
+              "max": 19.67826868709971
+            },
+            "forecast_minus_line": {
+              "n": 54,
+              "mean": -1.6841492968508953,
+              "min": -7.850703790077713,
+              "max": 2.0414018403951815
+            },
+            "actual_minus_line": {
+              "n": 54,
+              "mean": 2.759259259259259,
+              "min": -9.5,
+              "max": 16.5
+            },
+            "own_age_days": {
+              "n": 54,
+              "mean": 16.8036908436214,
+              "min": 7.041666666666667,
+              "max": 286.81597222222223
+            },
+            "source_age_days": {
+              "n": 54,
+              "mean": 9.803690843621398,
+              "min": 0.041666666666666664,
+              "max": 279.81597222222223
+            },
+            "confidence": {
+              "n": 54,
+              "mean": 0.5923523763114535,
+              "min": 0.5027518692558514,
+              "max": 0.7636803163182738
+            }
+          },
+          "WIN": {
+            "n": 58,
+            "wins": 58,
+            "losses": 0,
+            "hit_rate": 1.0,
+            "mean_error": {
+              "n": 58,
+              "mean": 1.283178728799953,
+              "min": -15.230626518496184,
+              "max": 17.839450444033183
+            },
+            "absolute_mean_error": {
+              "n": 58,
+              "mean": 4.242835508836246,
+              "min": 0.05588194279512493,
+              "max": 17.839450444033183
+            },
+            "forecast_minus_line": {
+              "n": 58,
+              "mean": -1.1995798918897023,
+              "min": -11.33071769824657,
+              "max": 1.7336107813867798
+            },
+            "actual_minus_line": {
+              "n": 58,
+              "mean": -2.4827586206896552,
+              "min": -19.5,
+              "max": 14.5
+            },
+            "own_age_days": {
+              "n": 58,
+              "mean": 13.697078544061302,
+              "min": 7.013888888888889,
+              "max": 32.302083333333336
+            },
+            "source_age_days": {
+              "n": 58,
+              "mean": 6.697078544061302,
+              "min": 0.013888888888888888,
+              "max": 25.302083333333332
+            },
+            "confidence": {
+              "n": 58,
+              "mean": 0.5760995519454859,
+              "min": 0.502552920280895,
+              "max": 0.8749370174089355
+            }
+          }
+        },
+        "age_bin": {
+          "14_TO_LT21": {
+            "n": 43,
+            "wins": 23,
+            "losses": 20,
+            "hit_rate": 0.5348837209302325,
+            "mean_error": {
+              "n": 43,
+              "mean": -1.5300652182683683,
+              "min": -15.230626518496184,
+              "max": 11.541401840395181
+            },
+            "absolute_mean_error": {
+              "n": 43,
+              "mean": 4.582667302642473,
+              "min": 0.05588194279512493,
+              "max": 15.230626518496184
+            },
+            "forecast_minus_line": {
+              "n": 43,
+              "mean": -1.402158241524182,
+              "min": -7.850703790077713,
+              "max": 2.0414018403951815
+            },
+            "actual_minus_line": {
+              "n": 43,
+              "mean": 0.12790697674418605,
+              "min": -9.5,
+              "max": 14.5
+            },
+            "own_age_days": {
+              "n": 43,
+              "mean": 14.776970284237725,
+              "min": 14.0,
+              "max": 20.899305555555557
+            },
+            "source_age_days": {
+              "n": 43,
+              "mean": 7.776970284237726,
+              "min": 7.0,
+              "max": 13.899305555555555
+            },
+            "confidence": {
+              "n": 43,
+              "mean": 0.5804974449590901,
+              "min": 0.502552920280895,
+              "max": 0.7537538471545183
+            }
+          },
+          "21_PLUS": {
+            "n": 6,
+            "wins": 5,
+            "losses": 1,
+            "hit_rate": 0.8333333333333334,
+            "mean_error": {
+              "n": 6,
+              "mean": 0.20742768140203202,
+              "min": -13.97900775409632,
+              "max": 16.618325829169933
+            },
+            "absolute_mean_error": {
+              "n": 6,
+              "mean": 9.663419663734649,
+              "min": 1.0124618024369134,
+              "max": 16.618325829169933
+            },
+            "forecast_minus_line": {
+              "n": 6,
+              "mean": -3.6259056519313013,
+              "min": -11.33071769824657,
+              "max": 0.4875381975630866
+            },
+            "actual_minus_line": {
+              "n": 6,
+              "mean": -3.8333333333333335,
+              "min": -19.5,
+              "max": 10.5
+            },
+            "own_age_days": {
+              "n": 6,
+              "mean": 70.671875,
+              "min": 21.0,
+              "max": 286.81597222222223
+            },
+            "source_age_days": {
+              "n": 6,
+              "mean": 63.671875,
+              "min": 14.0,
+              "max": 279.81597222222223
+            },
+            "confidence": {
+              "n": 6,
+              "mean": 0.6436326823638018,
+              "min": 0.5057043155311244,
+              "max": 0.8749370174089355
+            }
+          },
+          "7_TO_LT14": {
+            "n": 63,
+            "wins": 30,
+            "losses": 33,
+            "hit_rate": 0.47619047619047616,
+            "mean_error": {
+              "n": 63,
+              "mean": -1.6027215470225942,
+              "min": -19.67826868709971,
+              "max": 17.839450444033183
+            },
+            "absolute_mean_error": {
+              "n": 63,
+              "mean": 5.471297291464878,
+              "min": 0.3817444128704075,
+              "max": 19.67826868709971
+            },
+            "forecast_minus_line": {
+              "n": 63,
+              "mean": -1.245578689879737,
+              "min": -6.158656164330637,
+              "max": 1.7336107813867798
+            },
+            "actual_minus_line": {
+              "n": 63,
+              "mean": 0.35714285714285715,
+              "min": -19.5,
+              "max": 16.5
+            },
+            "own_age_days": {
+              "n": 63,
+              "mean": 10.196649029982366,
+              "min": 7.013888888888889,
+              "max": 13.98611111111111
+            },
+            "source_age_days": {
+              "n": 63,
+              "mean": 3.1966490299823627,
+              "min": 0.013888888888888888,
+              "max": 6.986111111111111
+            },
+            "confidence": {
+              "n": 63,
+              "mean": 0.5805970810513174,
+              "min": 0.5026610359535846,
+              "max": 0.7281383790157576
+            }
+          }
+        },
+        "support": {
+          "HIGH_25_PLUS": {
+            "n": 98,
+            "wins": 53,
+            "losses": 45,
+            "hit_rate": 0.5408163265306123,
+            "mean_error": {
+              "n": 98,
+              "mean": -0.9081348899026341,
+              "min": -19.67826868709971,
+              "max": 17.839450444033183
+            },
+            "absolute_mean_error": {
+              "n": 98,
+              "mean": 4.9181885124143365,
+              "min": 0.05588194279512493,
+              "max": 19.67826868709971
+            },
+            "forecast_minus_line": {
+              "n": 98,
+              "mean": -0.9999716245965117,
+              "min": -4.33023083184343,
+              "max": 2.0414018403951815
+            },
+            "actual_minus_line": {
+              "n": 98,
+              "mean": -0.09183673469387756,
+              "min": -19.5,
+              "max": 16.5
+            },
+            "own_age_days": {
+              "n": 98,
+              "mean": 12.66468253968254,
+              "min": 7.013888888888889,
+              "max": 32.302083333333336
+            },
+            "source_age_days": {
+              "n": 98,
+              "mean": 5.664682539682539,
+              "min": 0.013888888888888888,
+              "max": 25.302083333333332
+            },
+            "confidence": {
+              "n": 98,
+              "mean": 0.5707995110244033,
+              "min": 0.5025703011405351,
+              "max": 0.7537538471545183
+            }
+          },
+          "MID_10_25": {
+            "n": 14,
+            "wins": 5,
+            "losses": 9,
+            "hit_rate": 0.35714285714285715,
+            "mean_error": {
+              "n": 14,
+              "mean": -5.465891182078066,
+              "min": -13.97900775409632,
+              "max": 16.618325829169933
+            },
+            "absolute_mean_error": {
+              "n": 14,
+              "mean": 8.410319081551181,
+              "min": 1.8709197451699175,
+              "max": 16.618325829169933
+            },
+            "forecast_minus_line": {
+              "n": 14,
+              "mean": -4.465891182078065,
+              "min": -11.33071769824657,
+              "max": 1.0858708644173234
+            },
+            "actual_minus_line": {
+              "n": 14,
+              "mean": 1.0,
+              "min": -19.5,
+              "max": 9.5
+            },
+            "own_age_days": {
+              "n": 14,
+              "mean": 32.90649801587302,
+              "min": 7.184027777777778,
+              "max": 286.81597222222223
+            },
+            "source_age_days": {
+              "n": 14,
+              "mean": 25.906498015873016,
+              "min": 0.1840277777777778,
+              "max": 279.81597222222223
+            },
+            "confidence": {
+              "n": 14,
+              "mean": 0.6758893038046542,
+              "min": 0.502552920280895,
+              "max": 0.8749370174089355
+            }
+          }
+        }
+      },
+      "reused_probability_discrimination_and_reliability": {
+        "n": 112,
+        "brier": 0.26684715168954926,
+        "log_loss": 0.7290341012393936,
+        "infinite_log_losses": 0,
+        "over_event_AUC": 0.47669220945083013,
+        "reliability": [
+          {
+            "lower": 0,
+            "upper": 0.5,
+            "n": 0,
+            "mean_predicted": null,
+            "correct_direction_rate": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 71,
+            "mean_predicted": 0.5419962494402435,
+            "correct_direction_rate": 0.5633802816901409
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 32,
+            "mean_predicted": 0.6311882188948654,
+            "correct_direction_rate": 0.46875
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 8,
+            "mean_predicted": 0.7307635751693458,
+            "correct_direction_rate": 0.25
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 1,
+            "mean_predicted": 0.8749370174089357,
+            "correct_direction_rate": 1.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1,
+            "n": 0,
+            "mean_predicted": null,
+            "correct_direction_rate": null
+          }
+        ],
+        "probability_direction_ties": 0,
+        "conditioning": "MODELED_APPEARANCE",
+        "score_contract": "HALF_MULTICLASS_BRIER_OVER_UNDER_PUSH_V1"
+      },
+      "reused_numerical": {
+        "ALL": {
+          "mean": {
+            "n": 277,
+            "mae": 5.83623500732921,
+            "bias": -0.9233810418604823,
+            "rmse": 7.356801187536768,
+            "p90_abs": 12.504988994085787,
+            "p95_abs": 15.224621661297563
+          },
+          "lower_median": {
+            "n": 277,
+            "mae": 5.693140794223827,
+            "bias": -0.48736462093862815,
+            "rmse": 7.247307479607245,
+            "p90_abs": 12.0,
+            "p95_abs": 15.0
+          }
+        },
+        "MATCHED_OFFERS_W5_W8": {
+          "mean": {
+            "n": 112,
+            "mae": 5.354704833556442,
+            "bias": -1.4778544264245632,
+            "rmse": 6.8286251780400296,
+            "p90_abs": 12.101784263857922,
+            "p95_abs": 13.485076488945616
+          },
+          "lower_median": {
+            "n": 112,
+            "mae": 5.241071428571429,
+            "bias": -1.1517857142857142,
+            "rmse": 6.728802695449296,
+            "p90_abs": 12.0,
+            "p95_abs": 13.0
+          }
+        }
+      },
+      "earlier_proxy_exclusions": {
+        "offers_with_earlier_kickoff_excluded_by_proxy": 61,
+        "earlier_game_rows_excluded_by_proxy": 61
+      },
+      "own_last_game_age_quantiles": [
+        7.013888888888889,
+        9.348958333333332,
+        13.85763888888889,
+        14.0,
+        286.81597222222223
+      ],
+      "latest_earlier_kickoff_age_quantiles": [
+        4.159722222222222,
+        6.909722222222222,
+        7.0,
+        8.06857638888889,
+        286.81597222222223
+      ],
+      "source_age_note": "Age since constructed kickoff+7d admission, not authentic source observation age.",
+      "component_forecast_status": "NOT_APPLICABLE; direct forest law has no frozen opportunity/conversion forecast components. Historical profile values are inputs, not predicted components.",
+      "prior_and_fallback": {
+        "no_own_history_offers": 0,
+        "declared_fallback_counts": {
+          "none": 112
+        },
+        "earlier_label_prior_mass": 0.05,
+        "learned_leaf_mass": 0.95
+      }
+    },
+    {
+      "method": "R2",
+      "full_board": {
+        "n": 112,
+        "wins": 57,
+        "losses": 55,
+        "hit_rate": 0.5089285714285714,
+        "mean_error": {
+          "n": 112,
+          "mean": -1.710154750718111,
+          "min": -19.190153816997093,
+          "max": 19.231785748447653
+        },
+        "absolute_mean_error": {
+          "n": 112,
+          "mean": 5.334507483489653,
+          "min": 0.04508556128327612,
+          "max": 19.231785748447653
+        },
+        "forecast_minus_line": {
+          "n": 112,
+          "mean": -1.6655118935752538,
+          "min": -10.274886378936982,
+          "max": 1.8836481040053208
+        },
+        "actual_minus_line": {
+          "n": 112,
+          "mean": 0.044642857142857144,
+          "min": -19.5,
+          "max": 16.5
+        },
+        "own_age_days": {
+          "n": 112,
+          "mean": 15.194909474206346,
+          "min": 7.013888888888889,
+          "max": 286.81597222222223
+        },
+        "source_age_days": {
+          "n": 112,
+          "mean": 8.19490947420635,
+          "min": 0.013888888888888888,
+          "max": 279.81597222222223
+        },
+        "confidence": {
+          "n": 112,
+          "mean": 0.5848355726147795,
+          "min": 0.5004063425126903,
+          "max": 0.8395955360404618
+        }
+      },
+      "groups": {
+        "side": {
+          "over": {
+            "n": 19,
+            "wins": 11,
+            "losses": 8,
+            "hit_rate": 0.5789473684210527,
+            "mean_error": {
+              "n": 19,
+              "mean": -0.25373243049222943,
+              "min": -6.662759329152301,
+              "max": 10.397558645213149
+            },
+            "absolute_mean_error": {
+              "n": 19,
+              "mean": 3.5967252087655512,
+              "min": 0.24457876940316936,
+              "max": 10.397558645213149
+            },
+            "forecast_minus_line": {
+              "n": 19,
+              "mean": 0.298899148455139,
+              "min": -0.5825030010731247,
+              "max": 1.8836481040053208
+            },
+            "actual_minus_line": {
+              "n": 19,
+              "mean": 0.5526315789473685,
+              "min": -9.5,
+              "max": 6.5
+            },
+            "own_age_days": {
+              "n": 19,
+              "mean": 11.701937134502923,
+              "min": 7.013888888888889,
+              "max": 17.00347222222222
+            },
+            "source_age_days": {
+              "n": 19,
+              "mean": 4.7019371345029235,
+              "min": 0.013888888888888888,
+              "max": 10.003472222222221
+            },
+            "confidence": {
+              "n": 19,
+              "mean": 0.546572936641579,
+              "min": 0.5004063425126903,
+              "max": 0.6441388662307881
+            }
+          },
+          "under": {
+            "n": 93,
+            "wins": 46,
+            "losses": 47,
+            "hit_rate": 0.4946236559139785,
+            "mean_error": {
+              "n": 93,
+              "mean": -2.007703396785764,
+              "min": -19.190153816997093,
+              "max": 19.231785748447653
+            },
+            "absolute_mean_error": {
+              "n": 93,
+              "mean": 5.689538270798877,
+              "min": 0.04508556128327612,
+              "max": 19.231785748447653
+            },
+            "forecast_minus_line": {
+              "n": 93,
+              "mean": -2.0668431817320005,
+              "min": -10.274886378936982,
+              "max": -0.05445868693838918
+            },
+            "actual_minus_line": {
+              "n": 93,
+              "mean": -0.05913978494623656,
+              "min": -19.5,
+              "max": 16.5
+            },
+            "own_age_days": {
+              "n": 93,
+              "mean": 15.908527479091994,
+              "min": 7.013888888888889,
+              "max": 286.81597222222223
+            },
+            "source_age_days": {
+              "n": 93,
+              "mean": 8.908527479091994,
+              "min": 0.013888888888888888,
+              "max": 279.81597222222223
+            },
+            "confidence": {
+              "n": 93,
+              "mean": 0.5926526702867236,
+              "min": 0.5014335035060851,
+              "max": 0.8395955360404618
+            }
+          }
+        },
+        "grade": {
+          "LOSS": {
+            "n": 55,
+            "wins": 0,
+            "losses": 55,
+            "hit_rate": 0.0,
+            "mean_error": {
+              "n": 55,
+              "mean": -5.734176257651134,
+              "min": -19.190153816997093,
+              "max": 10.397558645213149
+            },
+            "absolute_mean_error": {
+              "n": 55,
+              "mean": 6.889028308327372,
+              "min": 0.7200859374257007,
+              "max": 19.190153816997093
+            },
+            "forecast_minus_line": {
+              "n": 55,
+              "mean": -1.9614489849238608,
+              "min": -8.60092618686207,
+              "max": 1.0862999308230847
+            },
+            "actual_minus_line": {
+              "n": 55,
+              "mean": 3.772727272727273,
+              "min": -9.5,
+              "max": 16.5
+            },
+            "own_age_days": {
+              "n": 55,
+              "mean": 17.464267676767673,
+              "min": 7.041666666666667,
+              "max": 286.81597222222223
+            },
+            "source_age_days": {
+              "n": 55,
+              "mean": 10.464267676767674,
+              "min": 0.041666666666666664,
+              "max": 279.81597222222223
+            },
+            "confidence": {
+              "n": 55,
+              "mean": 0.5931948035461403,
+              "min": 0.5004063425126903,
+              "max": 0.8210705806409798
+            }
+          },
+          "WIN": {
+            "n": 57,
+            "wins": 57,
+            "losses": 0,
+            "hit_rate": 1.0,
+            "mean_error": {
+              "n": 57,
+              "mean": 2.1726730191295434,
+              "min": -6.662759329152301,
+              "max": 19.231785748447653
+            },
+            "absolute_mean_error": {
+              "n": 57,
+              "mean": 3.834531248997118,
+              "min": 0.04508556128327612,
+              "max": 19.231785748447653
+            },
+            "forecast_minus_line": {
+              "n": 57,
+              "mean": -1.379958559817825,
+              "min": -10.274886378936982,
+              "max": 1.8836481040053208
+            },
+            "actual_minus_line": {
+              "n": 57,
+              "mean": -3.5526315789473686,
+              "min": -19.5,
+              "max": 6.5
+            },
+            "own_age_days": {
+              "n": 57,
+              "mean": 13.005177875243664,
+              "min": 7.013888888888889,
+              "max": 28.041666666666668
+            },
+            "source_age_days": {
+              "n": 57,
+              "mean": 6.005177875243665,
+              "min": 0.013888888888888888,
+              "max": 21.041666666666668
+            },
+            "confidence": {
+              "n": 57,
+              "mean": 0.5767696480318876,
+              "min": 0.5014335035060851,
+              "max": 0.8395955360404618
+            }
+          }
+        },
+        "age_bin": {
+          "14_TO_LT21": {
+            "n": 43,
+            "wins": 23,
+            "losses": 20,
+            "hit_rate": 0.5348837209302325,
+            "mean_error": {
+              "n": 43,
+              "mean": -1.8119728491075462,
+              "min": -16.75678066043439,
+              "max": 10.397558645213149
+            },
+            "absolute_mean_error": {
+              "n": 43,
+              "mean": 4.5551714465682105,
+              "min": 0.04508556128327612,
+              "max": 16.75678066043439
+            },
+            "forecast_minus_line": {
+              "n": 43,
+              "mean": -1.6840658723633601,
+              "min": -7.3575052342857905,
+              "max": 0.8975586452131488
+            },
+            "actual_minus_line": {
+              "n": 43,
+              "mean": 0.12790697674418605,
+              "min": -9.5,
+              "max": 14.5
+            },
+            "own_age_days": {
+              "n": 43,
+              "mean": 14.776970284237725,
+              "min": 14.0,
+              "max": 20.899305555555557
+            },
+            "source_age_days": {
+              "n": 43,
+              "mean": 7.776970284237726,
+              "min": 7.0,
+              "max": 13.899305555555555
+            },
+            "confidence": {
+              "n": 43,
+              "mean": 0.5854863220194438,
+              "min": 0.5020039600266311,
+              "max": 0.7571986514415617
+            }
+          },
+          "21_PLUS": {
+            "n": 6,
+            "wins": 3,
+            "losses": 3,
+            "hit_rate": 0.5,
+            "mean_error": {
+              "n": 6,
+              "mean": -0.3273934387267173,
+              "min": -15.10092618686207,
+              "max": 16.27117689700618
+            },
+            "absolute_mean_error": {
+              "n": 6,
+              "mean": 9.688930950572137,
+              "min": 1.7748863789369818,
+              "max": 16.27117689700618
+            },
+            "forecast_minus_line": {
+              "n": 6,
+              "mean": -4.160726772060051,
+              "min": -10.274886378936982,
+              "max": -0.5811480448515809
+            },
+            "actual_minus_line": {
+              "n": 6,
+              "mean": -3.8333333333333335,
+              "min": -19.5,
+              "max": 10.5
+            },
+            "own_age_days": {
+              "n": 6,
+              "mean": 70.671875,
+              "min": 21.0,
+              "max": 286.81597222222223
+            },
+            "source_age_days": {
+              "n": 6,
+              "mean": 63.671875,
+              "min": 14.0,
+              "max": 279.81597222222223
+            },
+            "confidence": {
+              "n": 6,
+              "mean": 0.6618716729300816,
+              "min": 0.5147716206201446,
+              "max": 0.8395955360404618
+            }
+          },
+          "7_TO_LT14": {
+            "n": 63,
+            "wins": 31,
+            "losses": 32,
+            "hit_rate": 0.49206349206349204,
+            "mean_error": {
+              "n": 63,
+              "mean": -1.7723514116895815,
+              "min": -19.190153816997093,
+              "max": 19.231785748447653
+            },
+            "absolute_mean_error": {
+              "n": 63,
+              "mean": 5.451728257856753,
+              "min": 0.1402167840980617,
+              "max": 19.231785748447653
+            },
+            "forecast_minus_line": {
+              "n": 63,
+              "mean": -1.4152085545467243,
+              "min": -6.115167996250271,
+              "max": 1.8836481040053208
+            },
+            "actual_minus_line": {
+              "n": 63,
+              "mean": 0.35714285714285715,
+              "min": -19.5,
+              "max": 16.5
+            },
+            "own_age_days": {
+              "n": 63,
+              "mean": 10.196649029982366,
+              "min": 7.013888888888889,
+              "max": 13.98611111111111
+            },
+            "source_age_days": {
+              "n": 63,
+              "mean": 3.1966490299823627,
+              "min": 0.013888888888888888,
+              "max": 6.986111111111111
+            },
+            "confidence": {
+              "n": 63,
+              "mean": 0.5770546388641068,
+              "min": 0.5004063425126903,
+              "max": 0.7419940656470762
+            }
+          }
+        },
+        "support": {
+          "HIGH_25_PLUS": {
+            "n": 98,
+            "wins": 52,
+            "losses": 46,
+            "hit_rate": 0.5306122448979592,
+            "mean_error": {
+              "n": 98,
+              "mean": -1.1500491844705192,
+              "min": -19.190153816997093,
+              "max": 19.231785748447653
+            },
+            "absolute_mean_error": {
+              "n": 98,
+              "mean": 4.936564164130203,
+              "min": 0.04508556128327612,
+              "max": 19.231785748447653
+            },
+            "forecast_minus_line": {
+              "n": 98,
+              "mean": -1.2418859191643967,
+              "min": -4.555951942341313,
+              "max": 1.1637239592411746
+            },
+            "actual_minus_line": {
+              "n": 98,
+              "mean": -0.09183673469387756,
+              "min": -19.5,
+              "max": 16.5
+            },
+            "own_age_days": {
+              "n": 98,
+              "mean": 12.66468253968254,
+              "min": 7.013888888888889,
+              "max": 32.302083333333336
+            },
+            "source_age_days": {
+              "n": 98,
+              "mean": 5.664682539682539,
+              "min": 0.013888888888888888,
+              "max": 25.302083333333332
+            },
+            "confidence": {
+              "n": 98,
+              "mean": 0.5698915781539724,
+              "min": 0.5004063425126903,
+              "max": 0.7571986514415617
+            }
+          },
+          "MID_10_25": {
+            "n": 14,
+            "wins": 5,
+            "losses": 9,
+            "hit_rate": 0.35714285714285715,
+            "mean_error": {
+              "n": 14,
+              "mean": -5.630893714451252,
+              "min": -15.10092618686207,
+              "max": 16.27117689700618
+            },
+            "absolute_mean_error": {
+              "n": 14,
+              "mean": 8.12011071900581,
+              "min": 0.13989175098283013,
+              "max": 16.27117689700618
+            },
+            "forecast_minus_line": {
+              "n": 14,
+              "mean": -4.630893714451251,
+              "min": -10.274886378936982,
+              "max": 1.8836481040053208
+            },
+            "actual_minus_line": {
+              "n": 14,
+              "mean": 1.0,
+              "min": -19.5,
+              "max": 9.5
+            },
+            "own_age_days": {
+              "n": 14,
+              "mean": 32.90649801587302,
+              "min": 7.184027777777778,
+              "max": 286.81597222222223
+            },
+            "source_age_days": {
+              "n": 14,
+              "mean": 25.906498015873016,
+              "min": 0.1840277777777778,
+              "max": 279.81597222222223
+            },
+            "confidence": {
+              "n": 14,
+              "mean": 0.6894435338404289,
+              "min": 0.5680831576960153,
+              "max": 0.8395955360404618
+            }
+          }
+        }
+      },
+      "reused_probability_discrimination_and_reliability": {
+        "n": 112,
+        "brier": 0.26840134648040503,
+        "log_loss": 0.7332750862143719,
+        "infinite_log_losses": 0,
+        "over_event_AUC": 0.4610472541507024,
+        "reliability": [
+          {
+            "lower": 0,
+            "upper": 0.5,
+            "n": 0,
+            "mean_predicted": null,
+            "correct_direction_rate": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 77,
+            "mean_predicted": 0.5483541071953926,
+            "correct_direction_rate": 0.5454545454545454
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 27,
+            "mean_predicted": 0.6378904356586572,
+            "correct_direction_rate": 0.4444444444444444
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 6,
+            "mean_predicted": 0.7324349998908137,
+            "correct_direction_rate": 0.3333333333333333
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 2,
+            "mean_predicted": 0.8303330583407209,
+            "correct_direction_rate": 0.5
+          },
+          {
+            "lower": 0.9,
+            "upper": 1,
+            "n": 0,
+            "mean_predicted": null,
+            "correct_direction_rate": null
+          }
+        ],
+        "probability_direction_ties": 0,
+        "conditioning": "MODELED_APPEARANCE",
+        "score_contract": "HALF_MULTICLASS_BRIER_OVER_UNDER_PUSH_V1"
+      },
+      "reused_numerical": {
+        "ALL": {
+          "mean": {
+            "n": 277,
+            "mae": 5.77986735993637,
+            "bias": -0.9322130128161713,
+            "rmse": 7.313580015253625,
+            "p90_abs": 12.24891132329113,
+            "p95_abs": 15.28250663018731
+          },
+          "lower_median": {
+            "n": 277,
+            "mae": 5.671480144404332,
+            "bias": -0.6750902527075813,
+            "rmse": 7.233346365202565,
+            "p90_abs": 12.0,
+            "p95_abs": 16.0
+          }
+        },
+        "MATCHED_OFFERS_W5_W8": {
+          "mean": {
+            "n": 112,
+            "mae": 5.334507483489654,
+            "bias": -1.7101547507181107,
+            "rmse": 6.861034382098884,
+            "p90_abs": 11.12093418237811,
+            "p95_abs": 14.166842053726523
+          },
+          "lower_median": {
+            "n": 112,
+            "mae": 5.303571428571429,
+            "bias": -1.3928571428571428,
+            "rmse": 6.774426702154002,
+            "p90_abs": 11.0,
+            "p95_abs": 13.899999999999977
+          }
+        }
+      },
+      "earlier_proxy_exclusions": {
+        "offers_with_earlier_kickoff_excluded_by_proxy": 61,
+        "earlier_game_rows_excluded_by_proxy": 61
+      },
+      "own_last_game_age_quantiles": [
+        7.013888888888889,
+        9.348958333333332,
+        13.85763888888889,
+        14.0,
+        286.81597222222223
+      ],
+      "latest_earlier_kickoff_age_quantiles": [
+        4.159722222222222,
+        6.909722222222222,
+        7.0,
+        8.06857638888889,
+        286.81597222222223
+      ],
+      "source_age_note": "Age since constructed kickoff+7d admission, not authentic source observation age.",
+      "component_forecast_status": "NOT_APPLICABLE; direct forest law has no frozen opportunity/conversion forecast components. Historical profile values are inputs, not predicted components.",
+      "prior_and_fallback": {
+        "no_own_history_offers": 0,
+        "declared_fallback_counts": {
+          "none": 112
+        },
+        "earlier_label_prior_mass": 0.05,
+        "learned_leaf_mass": 0.95
+      }
+    },
+    {
+      "method": "R3",
+      "full_board": {
+        "n": 112,
+        "wins": 59,
+        "losses": 53,
+        "hit_rate": 0.5267857142857143,
+        "mean_error": {
+          "n": 112,
+          "mean": -1.6528436840996434,
+          "min": -18.614202334497268,
+          "max": 19.476311801853832
+        },
+        "absolute_mean_error": {
+          "n": 112,
+          "mean": 5.286972161234393,
+          "min": 0.027729380019167138,
+          "max": 19.476311801853832
+        },
+        "forecast_minus_line": {
+          "n": 112,
+          "mean": -1.6082008269567862,
+          "min": -11.516978817833245,
+          "max": 1.6122016723275934
+        },
+        "actual_minus_line": {
+          "n": 112,
+          "mean": 0.044642857142857144,
+          "min": -19.5,
+          "max": 16.5
+        },
+        "own_age_days": {
+          "n": 112,
+          "mean": 15.194909474206346,
+          "min": 7.013888888888889,
+          "max": 286.81597222222223
+        },
+        "source_age_days": {
+          "n": 112,
+          "mean": 8.19490947420635,
+          "min": 0.013888888888888888,
+          "max": 279.81597222222223
+        },
+        "confidence": {
+          "n": 112,
+          "mean": 0.5865051799348995,
+          "min": 0.5007693801309763,
+          "max": 0.8742471236728484
+        }
+      },
+      "groups": {
+        "side": {
+          "over": {
+            "n": 27,
+            "wins": 16,
+            "losses": 11,
+            "hit_rate": 0.5925925925925926,
+            "mean_error": {
+              "n": 27,
+              "mean": -0.4852532524739942,
+              "min": -9.884151390198685,
+              "max": 19.476311801853832
+            },
+            "absolute_mean_error": {
+              "n": 27,
+              "mean": 5.011096614476255,
+              "min": 0.07875097215955051,
+              "max": 19.476311801853832
+            },
+            "forecast_minus_line": {
+              "n": 27,
+              "mean": 0.3110430438223021,
+              "min": -0.4212490278404495,
+              "max": 1.6122016723275934
+            },
+            "actual_minus_line": {
+              "n": 27,
+              "mean": 0.7962962962962963,
+              "min": -19.5,
+              "max": 10.5
+            },
+            "own_age_days": {
+              "n": 27,
+              "mean": 12.34297839506173,
+              "min": 7.013888888888889,
+              "max": 28.0
+            },
+            "source_age_days": {
+              "n": 27,
+              "mean": 5.342978395061728,
+              "min": 0.013888888888888888,
+              "max": 21.0
+            },
+            "confidence": {
+              "n": 27,
+              "mean": 0.5431111541061681,
+              "min": 0.5018346646027427,
+              "max": 0.6429333182195378
+            }
+          },
+          "under": {
+            "n": 85,
+            "wins": 43,
+            "losses": 42,
+            "hit_rate": 0.5058823529411764,
+            "mean_error": {
+              "n": 85,
+              "mean": -2.023725350616026,
+              "min": -18.614202334497268,
+              "max": 16.365140584913757
+            },
+            "absolute_mean_error": {
+              "n": 85,
+              "mean": 5.374603217263449,
+              "min": 0.027729380019167138,
+              "max": 18.614202334497268
+            },
+            "forecast_minus_line": {
+              "n": 85,
+              "mean": -2.2178429976748495,
+              "min": -11.516978817833245,
+              "max": -0.20940679545240215
+            },
+            "actual_minus_line": {
+              "n": 85,
+              "mean": -0.19411764705882353,
+              "min": -19.5,
+              "max": 16.5
+            },
+            "own_age_days": {
+              "n": 85,
+              "mean": 16.10081699346405,
+              "min": 7.013888888888889,
+              "max": 286.81597222222223
+            },
+            "source_age_days": {
+              "n": 85,
+              "mean": 9.10081699346405,
+              "min": 0.013888888888888888,
+              "max": 279.81597222222223
+            },
+            "confidence": {
+              "n": 85,
+              "mean": 0.6002891646099082,
+              "min": 0.5007693801309763,
+              "max": 0.8742471236728484
+            }
+          }
+        },
+        "grade": {
+          "LOSS": {
+            "n": 53,
+            "wins": 0,
+            "losses": 53,
+            "hit_rate": 0.0,
+            "mean_error": {
+              "n": 53,
+              "mean": -4.573046957693895,
+              "min": -18.614202334497268,
+              "max": 19.476311801853832
+            },
+            "absolute_mean_error": {
+              "n": 53,
+              "mean": 6.878665274185612,
+              "min": 0.07875097215955051,
+              "max": 19.476311801853832
+            },
+            "forecast_minus_line": {
+              "n": 53,
+              "mean": -1.9032356369391772,
+              "min": -7.845839760474055,
+              "max": 1.4837485147075036
+            },
+            "actual_minus_line": {
+              "n": 53,
+              "mean": 2.669811320754717,
+              "min": -19.5,
+              "max": 16.5
+            },
+            "own_age_days": {
+              "n": 53,
+              "mean": 17.163522012578614,
+              "min": 7.041666666666667,
+              "max": 286.81597222222223
+            },
+            "source_age_days": {
+              "n": 53,
+              "mean": 10.163522012578614,
+              "min": 0.041666666666666664,
+              "max": 279.81597222222223
+            },
+            "confidence": {
+              "n": 53,
+              "mean": 0.597575853649564,
+              "min": 0.5007693801309763,
+              "max": 0.7714678208691604
+            }
+          },
+          "WIN": {
+            "n": 59,
+            "wins": 59,
+            "losses": 0,
+            "hit_rate": 1.0,
+            "mean_error": {
+              "n": 59,
+              "mean": 0.9703897650612939,
+              "min": -9.884151390198685,
+              "max": 16.365140584913757
+            },
+            "absolute_mean_error": {
+              "n": 59,
+              "mean": 3.857146144515502,
+              "min": 0.027729380019167138,
+              "max": 16.365140584913757
+            },
+            "forecast_minus_line": {
+              "n": 59,
+              "mean": -1.343169556972604,
+              "min": -11.516978817833245,
+              "max": 1.6122016723275934
+            },
+            "actual_minus_line": {
+              "n": 59,
+              "mean": -2.3135593220338984,
+              "min": -19.5,
+              "max": 10.5
+            },
+            "own_age_days": {
+              "n": 59,
+              "mean": 13.42649482109228,
+              "min": 7.013888888888889,
+              "max": 28.041666666666668
+            },
+            "source_age_days": {
+              "n": 59,
+              "mean": 6.42649482109228,
+              "min": 0.013888888888888888,
+              "max": 21.041666666666668
+            },
+            "confidence": {
+              "n": 59,
+              "mean": 0.5765603374454548,
+              "min": 0.503107792105615,
+              "max": 0.8742471236728484
+            }
+          }
+        },
+        "age_bin": {
+          "14_TO_LT21": {
+            "n": 43,
+            "wins": 24,
+            "losses": 19,
+            "hit_rate": 0.5581395348837209,
+            "mean_error": {
+              "n": 43,
+              "mean": -1.7889297656342926,
+              "min": -16.039434315870974,
+              "max": 10.983748514707504
+            },
+            "absolute_mean_error": {
+              "n": 43,
+              "mean": 4.5148098290179925,
+              "min": 0.11186230110799045,
+              "max": 16.039434315870974
+            },
+            "forecast_minus_line": {
+              "n": 43,
+              "mean": -1.6610227888901066,
+              "min": -7.450863975114784,
+              "max": 1.4837485147075036
+            },
+            "actual_minus_line": {
+              "n": 43,
+              "mean": 0.12790697674418605,
+              "min": -9.5,
+              "max": 14.5
+            },
+            "own_age_days": {
+              "n": 43,
+              "mean": 14.776970284237725,
+              "min": 14.0,
+              "max": 20.899305555555557
+            },
+            "source_age_days": {
+              "n": 43,
+              "mean": 7.776970284237726,
+              "min": 7.0,
+              "max": 13.899305555555555
+            },
+            "confidence": {
+              "n": 43,
+              "mean": 0.5846383102222685,
+              "min": 0.5007693801309763,
+              "max": 0.7663685671650177
+            }
+          },
+          "21_PLUS": {
+            "n": 6,
+            "wins": 4,
+            "losses": 2,
+            "hit_rate": 0.6666666666666666,
+            "mean_error": {
+              "n": 6,
+              "mean": -0.1311600169372452,
+              "min": -14.345839760474055,
+              "max": 16.365140584913757
+            },
+            "absolute_mean_error": {
+              "n": 6,
+              "mean": 9.587133722033975,
+              "min": 1.9079112484076752,
+              "max": 16.365140584913757
+            },
+            "forecast_minus_line": {
+              "n": 6,
+              "mean": -3.9644933502705784,
+              "min": -11.516978817833245,
+              "max": 0.615848609801315
+            },
+            "actual_minus_line": {
+              "n": 6,
+              "mean": -3.8333333333333335,
+              "min": -19.5,
+              "max": 10.5
+            },
+            "own_age_days": {
+              "n": 6,
+              "mean": 70.671875,
+              "min": 21.0,
+              "max": 286.81597222222223
+            },
+            "source_age_days": {
+              "n": 6,
+              "mean": 63.671875,
+              "min": 14.0,
+              "max": 279.81597222222223
+            },
+            "confidence": {
+              "n": 6,
+              "mean": 0.6549165177752333,
+              "min": 0.5016457426456963,
+              "max": 0.8742471236728484
+            }
+          },
+          "7_TO_LT14": {
+            "n": 63,
+            "wins": 31,
+            "losses": 32,
+            "hit_rate": 0.49206349206349204,
+            "mean_error": {
+              "n": 63,
+              "mean": -1.704881787226381,
+              "min": -18.614202334497268,
+              "max": 19.476311801853832
+            },
+            "absolute_mean_error": {
+              "n": 63,
+              "mean": 5.404464398067846,
+              "min": 0.027729380019167138,
+              "max": 19.476311801853832
+            },
+            "forecast_minus_line": {
+              "n": 63,
+              "mean": -1.3477389300835243,
+              "min": -6.3216659920851725,
+              "max": 1.6122016723275934
+            },
+            "actual_minus_line": {
+              "n": 63,
+              "mean": 0.35714285714285715,
+              "min": -19.5,
+              "max": 16.5
+            },
+            "own_age_days": {
+              "n": 63,
+              "mean": 10.196649029982366,
+              "min": 7.013888888888889,
+              "max": 13.98611111111111
+            },
+            "source_age_days": {
+              "n": 63,
+              "mean": 3.1966490299823627,
+              "min": 0.013888888888888888,
+              "max": 6.986111111111111
+            },
+            "confidence": {
+              "n": 63,
+              "mean": 0.5812640270872982,
+              "min": 0.5018346646027427,
+              "max": 0.7272691871977387
+            }
+          }
+        },
+        "support": {
+          "HIGH_25_PLUS": {
+            "n": 98,
+            "wins": 54,
+            "losses": 44,
+            "hit_rate": 0.5510204081632653,
+            "mean_error": {
+              "n": 98,
+              "mean": -1.0616425356765804,
+              "min": -18.614202334497268,
+              "max": 19.476311801853832
+            },
+            "absolute_mean_error": {
+              "n": 98,
+              "mean": 4.861581059675104,
+              "min": 0.027729380019167138,
+              "max": 19.476311801853832
+            },
+            "forecast_minus_line": {
+              "n": 98,
+              "mean": -1.153479270370458,
+              "min": -4.621622404277833,
+              "max": 1.4837485147075036
+            },
+            "actual_minus_line": {
+              "n": 98,
+              "mean": -0.09183673469387756,
+              "min": -19.5,
+              "max": 16.5
+            },
+            "own_age_days": {
+              "n": 98,
+              "mean": 12.66468253968254,
+              "min": 7.013888888888889,
+              "max": 32.302083333333336
+            },
+            "source_age_days": {
+              "n": 98,
+              "mean": 5.664682539682539,
+              "min": 0.013888888888888888,
+              "max": 25.302083333333332
+            },
+            "confidence": {
+              "n": 98,
+              "mean": 0.5714174732679743,
+              "min": 0.5007693801309763,
+              "max": 0.7663685671650177
+            }
+          },
+          "MID_10_25": {
+            "n": 14,
+            "wins": 5,
+            "losses": 9,
+            "hit_rate": 0.35714285714285715,
+            "mean_error": {
+              "n": 14,
+              "mean": -5.791251723061083,
+              "min": -14.345839760474055,
+              "max": 16.365140584913757
+            },
+            "absolute_mean_error": {
+              "n": 14,
+              "mean": 8.264709872149417,
+              "min": 0.4287600442173929,
+              "max": 16.365140584913757
+            },
+            "forecast_minus_line": {
+              "n": 14,
+              "mean": -4.791251723061085,
+              "min": -11.516978817833245,
+              "max": 1.6122016723275934
+            },
+            "actual_minus_line": {
+              "n": 14,
+              "mean": 1.0,
+              "min": -19.5,
+              "max": 9.5
+            },
+            "own_age_days": {
+              "n": 14,
+              "mean": 32.90649801587302,
+              "min": 7.184027777777778,
+              "max": 286.81597222222223
+            },
+            "source_age_days": {
+              "n": 14,
+              "mean": 25.906498015873016,
+              "min": 0.1840277777777778,
+              "max": 279.81597222222223
+            },
+            "confidence": {
+              "n": 14,
+              "mean": 0.6921191266033742,
+              "min": 0.5674320397435423,
+              "max": 0.8742471236728484
+            }
+          }
+        }
+      },
+      "reused_probability_discrimination_and_reliability": {
+        "n": 112,
+        "brier": 0.2677425803125506,
+        "log_loss": 0.7308892265705157,
+        "infinite_log_losses": 0,
+        "over_event_AUC": 0.4521072796934866,
+        "reliability": [
+          {
+            "lower": 0,
+            "upper": 0.5,
+            "n": 0,
+            "mean_predicted": null,
+            "correct_direction_rate": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "n": 76,
+            "mean_predicted": 0.5505399856474726,
+            "correct_direction_rate": 0.6052631578947368
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 29,
+            "mean_predicted": 0.639083729963235,
+            "correct_direction_rate": 0.3793103448275862
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 6,
+            "mean_predicted": 0.739977658482358,
+            "correct_direction_rate": 0.16666666666666666
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 1,
+            "mean_predicted": 0.8742471236728483,
+            "correct_direction_rate": 1.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1,
+            "n": 0,
+            "mean_predicted": null,
+            "correct_direction_rate": null
+          }
+        ],
+        "probability_direction_ties": 0,
+        "conditioning": "MODELED_APPEARANCE",
+        "score_contract": "HALF_MULTICLASS_BRIER_OVER_UNDER_PUSH_V1"
+      },
+      "reused_numerical": {
+        "ALL": {
+          "mean": {
+            "n": 277,
+            "mae": 5.769158539479792,
+            "bias": -0.9684893653068452,
+            "rmse": 7.2946479385594305,
+            "p90_abs": 12.204772575305673,
+            "p95_abs": 15.692640807924828
+          },
+          "lower_median": {
+            "n": 277,
+            "mae": 5.628158844765343,
+            "bias": -0.6823104693140795,
+            "rmse": 7.215356667632948,
+            "p90_abs": 12.0,
+            "p95_abs": 15.199999999999989
+          }
+        },
+        "MATCHED_OFFERS_W5_W8": {
+          "mean": {
+            "n": 112,
+            "mae": 5.286972161234393,
+            "bias": -1.6528436840996434,
+            "rmse": 6.806570437102691,
+            "p90_abs": 11.734877506954362,
+            "p95_abs": 13.678593011144837
+          },
+          "lower_median": {
+            "n": 112,
+            "mae": 5.25,
+            "bias": -1.2321428571428572,
+            "rmse": 6.716185141666574,
+            "p90_abs": 11.900000000000006,
+            "p95_abs": 13.449999999999989
+          }
+        }
+      },
+      "earlier_proxy_exclusions": {
+        "offers_with_earlier_kickoff_excluded_by_proxy": 61,
+        "earlier_game_rows_excluded_by_proxy": 61
+      },
+      "own_last_game_age_quantiles": [
+        7.013888888888889,
+        9.348958333333332,
+        13.85763888888889,
+        14.0,
+        286.81597222222223
+      ],
+      "latest_earlier_kickoff_age_quantiles": [
+        4.159722222222222,
+        6.909722222222222,
+        7.0,
+        8.06857638888889,
+        286.81597222222223
+      ],
+      "source_age_note": "Age since constructed kickoff+7d admission, not authentic source observation age.",
+      "component_forecast_status": "NOT_APPLICABLE; direct forest law has no frozen opportunity/conversion forecast components. Historical profile values are inputs, not predicted components.",
+      "prior_and_fallback": {
+        "no_own_history_offers": 0,
+        "declared_fallback_counts": {
+          "none": 112
+        },
+        "earlier_label_prior_mass": 0.05,
+        "learned_leaf_mass": 0.95
+      }
+    }
+  ],
+  "explicit_component_diagnostic": {
+    "procedure": "B-player-context-matchup-01-v1:P1",
+    "n": 112,
+    "formula": "C_hat-C=(A_hat-A)*p_hat + A*(p_hat-C/A); descriptive postgame decomposition using frozen component forecasts.",
+    "mean_attempt_error": -3.1658352724240886,
+    "attempt_MAE": 7.703221058830741,
+    "mean_conversion_rate_error": 0.013667796772158482,
+    "mean_workload_term": -2.0403003456845834,
+    "mean_conversion_term": 0.0966988477919488,
+    "offsetting_sign_cases": 54,
+    "limit": "No causal attribution, deployable component substitution, repair, or transfer of this explanation to direct E3/R2/R3. Actual context-mix versus conversion contribution is not isolated by this two-factor aggregate algebra."
+  },
+  "safe_example_index": [
+    {
+      "example_key": "22b01a7db9a32003284791bb4ddb79632f72b528872b703e433aab6475068eef",
+      "method": "R0",
+      "side": "over",
+      "grade": "WIN",
+      "evidence": "CURRENT_REVISED_7D_RECONSTRUCTION_TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "forecast": {
+        "artifact": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W05.json.gz",
+        "sha256": "c2db4911e05d308f19f0ed7cad108a30a43ad6219426f9a572d1901ee9d0e430",
+        "row_offset": 2
+      },
+      "offer_source_sha256": "9b74e81ff451bd26e96b3019436e26306a4068f4fc9b38cc4561e1e0ab2d146f",
+      "offer_membership_sha256": "d4078a37e999ea7d2e36bada2a977fbbce18249d5498a1fff808aa8469d5bdca",
+      "prior_game_index_sha256": "ce803d5895d69ad43f1b9ee5dff112ec77060ca21fc7b6d33330b230f62371db"
+    },
+    {
+      "example_key": "27d502fa5256bf7089d4525931f28766b57e19c9a62acefae93dee735fb06624",
+      "method": "R0",
+      "side": "over",
+      "grade": "LOSS",
+      "evidence": "CURRENT_REVISED_7D_RECONSTRUCTION_TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "forecast": {
+        "artifact": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W08.json.gz",
+        "sha256": "f10f0e4d9d634fcfa99b4aa0a095c49b3bc2918eed9e286ee7e9c79ac676bf7b",
+        "row_offset": 22
+      },
+      "offer_source_sha256": "4b37b02e4ea584fbf91c21ca1fe8454c2447a68cafc154f15d431f520c73358a",
+      "offer_membership_sha256": "7e39fa9af4ca49c13ffa51c79b9200dbea8b1ea40873e3ae03650345a211aaea",
+      "prior_game_index_sha256": "a29c75cbe5f194015bb43056183c84376d49015ac8773c263085fd44cd36460d"
+    },
+    {
+      "example_key": "020d1812fe9c8c2d8e9e8a798b6618294a0c16b1a4dd356231d9d44a3510776c",
+      "method": "R0",
+      "side": "under",
+      "grade": "WIN",
+      "evidence": "CURRENT_REVISED_7D_RECONSTRUCTION_TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "forecast": {
+        "artifact": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W08.json.gz",
+        "sha256": "f10f0e4d9d634fcfa99b4aa0a095c49b3bc2918eed9e286ee7e9c79ac676bf7b",
+        "row_offset": 8
+      },
+      "offer_source_sha256": "4b37b02e4ea584fbf91c21ca1fe8454c2447a68cafc154f15d431f520c73358a",
+      "offer_membership_sha256": "8334e8fb84e11f75b22daff838df6d8dce64b893a54afc3c3c9d7bd515ae7a40",
+      "prior_game_index_sha256": "75e5c48c2d14f4df10bf020baf35d539fca309a776c628a48973140498d568fe"
+    },
+    {
+      "example_key": "0ae0a38a7dd66740334505a7df93b6379e9b493d68e1c1bdcd6f5f9d921cf0ca",
+      "method": "R0",
+      "side": "under",
+      "grade": "LOSS",
+      "evidence": "CURRENT_REVISED_7D_RECONSTRUCTION_TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "forecast": {
+        "artifact": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W06.json.gz",
+        "sha256": "f9dbefc6743cf4d6cdfb501039d35bc3bc5921c77659f5c709ce54b729ed0ef8",
+        "row_offset": 15
+      },
+      "offer_source_sha256": "9903240899222ae4d8829dfd4e294de7652032da42b08ba52c1ba252b79344c7",
+      "offer_membership_sha256": "65d01a71538de96563726d1537088e5d55963bfefe31ad66eafb64cff4cc262a",
+      "prior_game_index_sha256": "3d2baa61abe710315289e28450aab249b3f860d519f8b1c677bbda138d1d276a"
+    },
+    {
+      "example_key": "f6f1698297fcf652f41b3b7087c708dbbdb3994a4f9205e08a0f5f249bd9c482",
+      "method": "R0",
+      "side": "under",
+      "grade": "WIN",
+      "evidence": "CURRENT_REVISED_7D_RECONSTRUCTION_TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "forecast": {
+        "artifact": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W08.json.gz",
+        "sha256": "f10f0e4d9d634fcfa99b4aa0a095c49b3bc2918eed9e286ee7e9c79ac676bf7b",
+        "row_offset": 5
+      },
+      "offer_source_sha256": "4b37b02e4ea584fbf91c21ca1fe8454c2447a68cafc154f15d431f520c73358a",
+      "offer_membership_sha256": "c879d1f5787d82ae7d16101686cd5dbeb33174c04c767ce7dd852a3168c167da",
+      "prior_game_index_sha256": "8946a2aa21c447abca1187411fedee7de0c83922acc0ff063c86f730098f8f72",
+      "diagnostic": "MAX_ABSOLUTE_MEAN_ERROR_AMONG_CORRECT; numerical error can be large while the selected side remains right"
+    },
+    {
+      "example_key": "0418a7e2ed314234b3692ec7948358a9582711e466d25302c208e49373bcfa51",
+      "method": "R2",
+      "side": "over",
+      "grade": "WIN",
+      "evidence": "CURRENT_REVISED_7D_RECONSTRUCTION_TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "forecast": {
+        "artifact": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W05.json.gz",
+        "sha256": "c2db4911e05d308f19f0ed7cad108a30a43ad6219426f9a572d1901ee9d0e430",
+        "row_offset": 86
+      },
+      "offer_source_sha256": "9b74e81ff451bd26e96b3019436e26306a4068f4fc9b38cc4561e1e0ab2d146f",
+      "offer_membership_sha256": "717d216b52d7f9c3b92c3cf5b263daafbf882bbc151fc23727a2af654b3d5594",
+      "prior_game_index_sha256": "3d2baa61abe710315289e28450aab249b3f860d519f8b1c677bbda138d1d276a"
+    },
+    {
+      "example_key": "0662b619e96d5a1c36019ddf68d6046be692c6923246440638886f8b02ab703a",
+      "method": "R2",
+      "side": "over",
+      "grade": "LOSS",
+      "evidence": "CURRENT_REVISED_7D_RECONSTRUCTION_TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "forecast": {
+        "artifact": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W05.json.gz",
+        "sha256": "c2db4911e05d308f19f0ed7cad108a30a43ad6219426f9a572d1901ee9d0e430",
+        "row_offset": 83
+      },
+      "offer_source_sha256": "9b74e81ff451bd26e96b3019436e26306a4068f4fc9b38cc4561e1e0ab2d146f",
+      "offer_membership_sha256": "8aec4d8568c9b9d56ede1d955eb7e5198c7faa20ed7db8333ee05b5de68acbfe",
+      "prior_game_index_sha256": "7b7759eb6a59b36aa0aaa6c553093c4d90a34e0b19e8a8dda9fb07dbd6e2ecef"
+    },
+    {
+      "example_key": "087d32df4bf8feb29567042366ab846bb968e433f3362fb0b0944c21794c94c4",
+      "method": "R2",
+      "side": "under",
+      "grade": "WIN",
+      "evidence": "CURRENT_REVISED_7D_RECONSTRUCTION_TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "forecast": {
+        "artifact": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W07.json.gz",
+        "sha256": "6f190301ed080ae342c40f9a8c9c20807a57ebee2584eacda68c5ab1b35a5fa0",
+        "row_offset": 64
+      },
+      "offer_source_sha256": "8abe1fab12e6bb97be4d2e77f93e7a07f440eab02ff394c8dbc282183a9dca24",
+      "offer_membership_sha256": "159ccdf47d5771df9a2e0cf4b99bddbdc2905fc5f8a708fd3983ef1766c8a190",
+      "prior_game_index_sha256": "ebb1a6caf13f21753997607f4b96d73a8be656dcebbe29d04c1488d024901c0d"
+    },
+    {
+      "example_key": "08b55d107cfffef4ce4e83343de053921d6a48735aec0ae32f3a8a3c06ab11c8",
+      "method": "R2",
+      "side": "under",
+      "grade": "LOSS",
+      "evidence": "CURRENT_REVISED_7D_RECONSTRUCTION_TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "forecast": {
+        "artifact": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W05.json.gz",
+        "sha256": "c2db4911e05d308f19f0ed7cad108a30a43ad6219426f9a572d1901ee9d0e430",
+        "row_offset": 90
+      },
+      "offer_source_sha256": "9b74e81ff451bd26e96b3019436e26306a4068f4fc9b38cc4561e1e0ab2d146f",
+      "offer_membership_sha256": "547828f938fa9ab568527045b283aa4bdfbac0379221a095392e653004b5b74b",
+      "prior_game_index_sha256": "eeb965b958c586496e79cf100f5c3a80ef1d750722a457d311ebb760ed6be4ab"
+    },
+    {
+      "example_key": "99ce8d7c1d6edc921f3cb970a2be4977c0af171650753d002e298fd3b597a1d2",
+      "method": "R2",
+      "side": "under",
+      "grade": "WIN",
+      "evidence": "CURRENT_REVISED_7D_RECONSTRUCTION_TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "forecast": {
+        "artifact": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W08.json.gz",
+        "sha256": "f10f0e4d9d634fcfa99b4aa0a095c49b3bc2918eed9e286ee7e9c79ac676bf7b",
+        "row_offset": 75
+      },
+      "offer_source_sha256": "4b37b02e4ea584fbf91c21ca1fe8454c2447a68cafc154f15d431f520c73358a",
+      "offer_membership_sha256": "c879d1f5787d82ae7d16101686cd5dbeb33174c04c767ce7dd852a3168c167da",
+      "prior_game_index_sha256": "8946a2aa21c447abca1187411fedee7de0c83922acc0ff063c86f730098f8f72",
+      "diagnostic": "MAX_ABSOLUTE_MEAN_ERROR_AMONG_CORRECT; numerical error can be large while the selected side remains right"
+    },
+    {
+      "example_key": "1acd524400e18f325239eb4a4144f15e0e6da92196fbb2c3a90f4730907f5faa",
+      "method": "R3",
+      "side": "over",
+      "grade": "WIN",
+      "evidence": "CURRENT_REVISED_7D_RECONSTRUCTION_TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "forecast": {
+        "artifact": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W06.json.gz",
+        "sha256": "f9dbefc6743cf4d6cdfb501039d35bc3bc5921c77659f5c709ce54b729ed0ef8",
+        "row_offset": 111
+      },
+      "offer_source_sha256": "9903240899222ae4d8829dfd4e294de7652032da42b08ba52c1ba252b79344c7",
+      "offer_membership_sha256": "054844e2fc2d36cfa8858fbb93453e8aaae896fce945f7dcce2d93eed23c4d15",
+      "prior_game_index_sha256": "baac48bd9db80af29c47f3c7fbcad655921fc7644cd9d680ac8eea3e03dbbb39"
+    },
+    {
+      "example_key": "21b4630a8f3ab99eef0eafdb234a5e8fa3db3c9fb3e518f50efd593784fba742",
+      "method": "R3",
+      "side": "over",
+      "grade": "LOSS",
+      "evidence": "CURRENT_REVISED_7D_RECONSTRUCTION_TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "forecast": {
+        "artifact": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W05.json.gz",
+        "sha256": "c2db4911e05d308f19f0ed7cad108a30a43ad6219426f9a572d1901ee9d0e430",
+        "row_offset": 133
+      },
+      "offer_source_sha256": "9b74e81ff451bd26e96b3019436e26306a4068f4fc9b38cc4561e1e0ab2d146f",
+      "offer_membership_sha256": "fd65843f8355deeb753133c869086e0bd0c637a7d67a1003d5e1ac309438a10d",
+      "prior_game_index_sha256": "47665859fbe82747cde194cdd6520f36ff21a8ffe579f0a441a78f1b5d51ce8d"
+    },
+    {
+      "example_key": "0154bef81ca55e653a065f017d42c5288ae2dda64bdab9d1a83fec8f94bb6577",
+      "method": "R3",
+      "side": "under",
+      "grade": "WIN",
+      "evidence": "CURRENT_REVISED_7D_RECONSTRUCTION_TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "forecast": {
+        "artifact": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W05.json.gz",
+        "sha256": "c2db4911e05d308f19f0ed7cad108a30a43ad6219426f9a572d1901ee9d0e430",
+        "row_offset": 131
+      },
+      "offer_source_sha256": "9b74e81ff451bd26e96b3019436e26306a4068f4fc9b38cc4561e1e0ab2d146f",
+      "offer_membership_sha256": "36555b2cfd8f55172ca03e74fac58f0f9be1ac55775415928bf1bff988cf3162",
+      "prior_game_index_sha256": "f2e306f4f54ec33a8ae9e8fd1e9ee4fcd24b0fa27998e4471c91cd8957a8d384"
+    },
+    {
+      "example_key": "0e34a7ad50e6d206ada9bfab289f8a24cf221ae154a6f206958bf2820af0fec1",
+      "method": "R3",
+      "side": "under",
+      "grade": "LOSS",
+      "evidence": "CURRENT_REVISED_7D_RECONSTRUCTION_TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "forecast": {
+        "artifact": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W06.json.gz",
+        "sha256": "f9dbefc6743cf4d6cdfb501039d35bc3bc5921c77659f5c709ce54b729ed0ef8",
+        "row_offset": 115
+      },
+      "offer_source_sha256": "9903240899222ae4d8829dfd4e294de7652032da42b08ba52c1ba252b79344c7",
+      "offer_membership_sha256": "24783d1b102981aca6a4ce8807e2368b089a21899ddc966e2c3156bc8e1e0902",
+      "prior_game_index_sha256": "81e08bbc88baa4d0144cdc28ab6bffd244f258f876f523c8d688d4dcf74503f9"
+    },
+    {
+      "example_key": "41affca693fd9ed1f4d4252b043dbc2b0bd702470c35b02ea92382156e37c141",
+      "method": "R3",
+      "side": "under",
+      "grade": "WIN",
+      "evidence": "CURRENT_REVISED_7D_RECONSTRUCTION_TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "forecast": {
+        "artifact": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/predictions/2026-W08.json.gz",
+        "sha256": "f10f0e4d9d634fcfa99b4aa0a095c49b3bc2918eed9e286ee7e9c79ac676bf7b",
+        "row_offset": 113
+      },
+      "offer_source_sha256": "4b37b02e4ea584fbf91c21ca1fe8454c2447a68cafc154f15d431f520c73358a",
+      "offer_membership_sha256": "8334e8fb84e11f75b22daff838df6d8dce64b893a54afc3c3c9d7bd515ae7a40",
+      "prior_game_index_sha256": "75e5c48c2d14f4df10bf020baf35d539fca309a776c628a48973140498d568fe",
+      "diagnostic": "MAX_ABSOLUTE_MEAN_ERROR_AMONG_CORRECT; numerical error can be large while the selected side remains right"
+    }
+  ],
+  "classification": [
+    {
+      "status": "VERIFIED_DEFECT",
+      "finding": "None newly demonstrated in inspected retained forecast/scoring path. Prefit V1 source denominator and runner-key issues were already corrected before any fit; do not reopen them."
+    },
+    {
+      "status": "MEASURED_WEAKNESS",
+      "finding": "R0/R2/R3 over-event AUC below0.5 and poor higher-confidence groups on112exposedoffers; negative completion bias stronger on offered than broad rows. Fourweek descriptive result, not universal lackofsignal."
+    },
+    {
+      "status": "MEASURED_WEAKNESS",
+      "finding": "The strict7d policy excludes eligible-by-kickoff prior-game rows; counts quantify coverage only. Kickoffbeforecutoff does not prove completed statistics were originally available."
+    },
+    {
+      "status": "PLAUSIBLE_HYPOTHESIS",
+      "finding": "Aligning a separately named earlier reconstructed availability policy in both trainingandquery may improve useofrecentgameinformation. Requires next registered matched test; no causal accuracy cost yet measured."
+    },
+    {
+      "status": "UNRESOLVED",
+      "finding": "Whether timing, role/context drift, model ranking capacity or missing pregame role information causes these misses. No authenticated historical snapshot or intervening experiment establishes cause."
+    }
+  ],
+  "new_fits": 0,
+  "new_source_collections": 0,
+  "new_original_forecasts": 0,
+  "new_NFL_weeks": 0,
+  "protected_rows_exported": false
+}

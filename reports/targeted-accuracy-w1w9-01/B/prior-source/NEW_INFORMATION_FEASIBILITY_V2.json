@@ -1,0 +1,117 @@
+{
+  "id": "NFL-TARGETED-ACCURACY-W1W9-01-B-NEW-INFORMATION-FEASIBILITY-v2",
+  "at_UTC": "2026-11-15T05:23:47.930355+00:00",
+  "state": "M2_SUPPORTED_WITH_DECLARED_PARTIAL_FEATURE_SCOPE;NEW_M4_NOT_EXECUTED",
+  "owner": "B; C coordinator and A/original-site ownership preserved",
+  "latest_A_research": "3f10b641134658d3036933928cf2fa08dac4083c",
+  "latest_C_main": "2b8bbc6da7bfb90106d7956cf86ccc160f2a343e",
+  "classifications": [
+    {
+      "block": "P1/P2/P3 conditional GLM",
+      "status": "ALREADY_TESTED",
+      "reason": "25 down-by-depth contexts; own earlier conversion logit, opponent overall/context residuals, team residual; team/opponent effects and P2 QB intercepts. Fixed gamma-Poisson attempts plus binomial thinning. P2 law53/112 vs P1/P3 54, E3 58 and prevalence59."
+    },
+    {
+      "block": "Depth catchability C1/C2 and D1/D2",
+      "status": "EQUIVALENT_TEST_COMPLETE",
+      "reason": "Five FTN depth-specific catchability logits/support were already tested. C2 ties C1 54/112; D2 loses D1 49vs52. Catchability, completion, drop and unknown annotations remain distinct."
+    },
+    {
+      "block": "R0-R3 opportunity/defense; FTN B0/B2",
+      "status": "ALREADY_TESTED",
+      "reason": "Retain failed/inconclusive profile and two aggregate throwaway/IWP additions. Full226 B2mean112 vs B0mean119, B2median/law122 vs B0median117; poorer probability scores and stronger-control gaps persist."
+    },
+    {
+      "block": "QB learned conversion dispersion",
+      "status": "GENUINELY_NEW_QUALIFIED_COMBINATION_IN_INSPECTED_B_SCOPE",
+      "reason": "Actual executed BB arms preserve predicted attempt law and conditional mean, but add a context-dependent variance representation using predicted-context entropy, lagged known pass-destination entropy, lagged distance summaries, support and missingness. BB-minus-BIN is this variance information/representation block plus beta-binomial integration, not isolated constant precision. D_M2 receives primary P2 information, variance block and predicted-attempt information; comparison is a complete procedure/objective contrast. A2/A3 already use NB-beta-binomial rushing allocation; novelty is not global math."
+    },
+    {
+      "block": "Complete receiver/destination/distance feature scope",
+      "status": "PARTIAL",
+      "reason": "Retained P2 mean still consumes down-by-depth rather than destination/alignment, and does not consume new variance z. Executed M2 variance does consume earlier known destination entropy and distance summaries. These are not receiver alignment or per-attempt distance cells; receiver-group/all-route information remains blocked. C2-minus-C1 is a clean charted-value contrast within each law; P2-versus-C1 changes more than chart values."
+    },
+    {
+      "block": "Historical personnel/alignment/route block",
+      "status": "SOURCE_BLOCKED",
+      "reason": "No authenticated event-effective teammate universe/all-route alignment in inspected B input. Later injury tables, stat appearance, pass destination and snaps cannot fill it. Blocks that block, not PBP M2."
+    },
+    {
+      "block": "Independent market reference/hybrid",
+      "status": "EXISTING_A_STUDIES;NEW_B_M4_ROW_ACCESS_SOURCE_BLOCKED",
+      "reason": "A has retained offering-book-excluded M/F/FC/FS/H v3 on2024 and2026W1-5, not a never-tested mechanism. B native284CMP/ATT records have no price fields. Exact other-book two-sided same-line prices and OOT football residual features are not bound for a new B M4."
+    },
+    {
+      "block": "Separate Astra v10/v12",
+      "status": "ARTIFACTS_NOT_OBTAINED",
+      "reason": "User-reported studies remain preserved. No exact separate Astra artifact contents obtained; no global first-use or equivalence conclusion claimed."
+    }
+  ],
+  "local_code_protocol_bindings": [
+    {
+      "path": "nfl_v2/player_context_matchup.py",
+      "sha256": "3db66e8d7c75f444d87f4792add9096a9d04d0390902f67ce21248c206476f29"
+    },
+    {
+      "path": "nfl_v2/qb_depth_catchability.py",
+      "sha256": "9494f1d7be9b67ddbaa824f9be2f44b4ae5d2f8bb3b2f2e15445ec7675fe9a82"
+    },
+    {
+      "path": "nfl_v2/qb_depth_catchability_v2.py",
+      "sha256": "707efe03dc45b9ef557eb1c1cbaa055befde00dac77f97acd6e06b35f4b083aa"
+    },
+    {
+      "path": "nfl_v2/qb_opportunity_increment.py",
+      "sha256": "14748e8103fdfbcd1e8be7e180de9d129aded5502d5895ee6fb37513f1b1b806"
+    },
+    {
+      "path": "nfl_v2/qb_ftn_information.py",
+      "sha256": "d66b300b568bd83d190811ef391f1ad80d967d85c25aefb435d46ed9a8be7e6a"
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/FROZEN_PROTOCOL.json",
+      "sha256": "afefa53e0d2f794f99f29c410e6e0b0260876126526d12404a2d8bcd8993f9fb"
+    },
+    {
+      "path": "reports/player-context-completion-decision-01/B/depth-wave-v2/FROZEN_PROTOCOL.json",
+      "sha256": "c4dc9abb0df01600dfb62f8ff80a11d6d4be50bd8b2a3e35ef8b9c1d3e77d85b"
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/completion-wave-v1/FROZEN_PROTOCOL.json",
+      "sha256": "88b041ec296b85777d45a22a8a8ed469e589a75d793c342b237f444aaffab744"
+    }
+  ],
+  "source_terms": "Ordinary nflverse/nflfastR derivatives CC-BY-4.0. FTN Data via nflverse CC-BY-SA-4.0 for charting-derived arrays/models/forecasts/scores; previous source qualification retained. No protected raw offers/rosters/private locators/models exported.",
+  "MATCHUP_PERSONALIZATION_mapping": "Map new M2 to existing B player-context/conditional-completion and distribution contracts. No exact separately named MATCHUP-PERSONALIZATION-01 B artifact located in inspected registered relevant paths. Material new arm requires versioned registration, not old-roster mutation.",
+  "market_existing_results": {
+    "2026CMPevents": 58,
+    "CMP_Brier_F": 0.255434,
+    "CMP_Brier_M": 0.247206,
+    "CMP_Brier_H": 0.250552,
+    "2026ATTevents": 46,
+    "ATT_Brier_F": 0.243263,
+    "ATT_Brier_M": 0.248612,
+    "ATT_Brier_H": 0.249421,
+    "limits": "A public reported aggregates only; quote timing unverified, aged frozen football reference, no exact incumbent. Do not relabel point MAE gains as probability/direction superiority."
+  },
+  "source_and_novelty_limits": "Current-vintage7day reconstruction, exposed history. No source publication authentication or global all-method/Astra novelty claim. Existing closed information/offset/confidence experiments remain closed.",
+  "new_NFL_fits": 0,
+  "new_grades": 0,
+  "new_original_forecasts": 0,
+  "new_primary_switches": 0,
+  "clarification_of_V1": {
+    "path": "reports/targeted-accuracy-w1w9-01/B/prior-source/NEW_INFORMATION_FEASIBILITY_V1.json",
+    "sha256": "eb3d07878a0806d1b0bfb597054668071bdb86455543f0405f3e7971f71ceb92",
+    "scope": "Actual executed M2 attribution: preserve V1 prior-use record; clarify additional variance predictors after root protocol/execution. No source values, fits, forecasts or grades changed."
+  },
+  "executed_bindings": [
+    {
+      "path": "nfl_v2/targeted_qb_m2.py",
+      "sha256": "23ab726f718332da06b94ecc7f093d089cc3e9dd4693b41de4a8a9013fcdd670"
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/FROZEN_PROTOCOL_V2.json",
+      "sha256": "0ee7a43c5cd72c82f19df154f80a9df1dc8583eb285f3b9727bf879967efd25e"
+    }
+  ]
+}

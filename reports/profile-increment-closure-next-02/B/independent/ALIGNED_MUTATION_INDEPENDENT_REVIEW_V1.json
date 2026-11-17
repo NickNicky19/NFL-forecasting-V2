@@ -1,0 +1,37 @@
+{
+  "id": "B-ALIGNED-FIXED-POLICY-MUTATION-INDEPENDENT-v1",
+  "status": "PASS_IN_CHECKED_SCOPE",
+  "origin": [
+    2025,
+    1
+  ],
+  "wrapper_sha256": "9ef8ae73e49b43ac8147490b8d28fe3f161bbf27054bf1040cae6a5a8d117b4e",
+  "mutated_not_yet_48h_eligible_QB_rows": 941,
+  "mutated_not_yet_48h_eligible_source_rows": 1727,
+  "added_future_rows": 1,
+  "target_outcomes_and_realized_context_ignored": true,
+  "checks": [
+    {
+      "arm": "F2",
+      "feature_width": 179,
+      "feature_equal": true,
+      "training_and_prior_unchanged": true,
+      "saved_model_mean_median_mass_equal": true,
+      "model_sha256": "d36834e45e5b1b018d0db6365d8dc12f15ed6f923ff5fa1b5d690933022b6f2b"
+    },
+    {
+      "arm": "F3",
+      "feature_width": 289,
+      "feature_equal": true,
+      "training_and_prior_unchanged": true,
+      "saved_model_mean_median_mass_equal": true,
+      "model_sha256": "dd4b83193a24f3d4dfbabb3e0d425449fe0e8dfdb35385705a7e7418bfde5b3e"
+    }
+  ],
+  "new_fits": 0,
+  "new_original_forecasts": 0,
+  "limits": [
+    "Futuremutation uses the48hpolicyeligibility, not the old7dmask: newlyeligibleoldergames arelegitimateF2/F3inputs.",
+    "This checks actualinternalpolicyfeature/saved-modelpath; nocurrentqualifieduniverse,capture,fullconsumeradapterorhistoricalsourceauthentication isclaimed."
+  ]
+}

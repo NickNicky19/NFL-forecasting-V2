@@ -1,0 +1,20 @@
+{
+  "state": "PRESERVED_ROOT_METADATA_PREPARATION_FAILURES",
+  "failures": [
+    {
+      "step": "rootprotocolcreation",
+      "reason": "Existing directory assertion stopped before protocol/metric writes; new protocol then created immutably within existingtaskdirectory.",
+      "metric_writes": 0
+    },
+    {
+      "step": "privateDriveoldmetadataJSONcomparison",
+      "reason": "Oversized prior metadata output truncated; parsingfailed beforepersist or comparison. Corrected by local filecomparison andprivate-only fresh metadata snapshots.",
+      "metric_writes": 0,
+      "provider_read_failures": 0
+    }
+  ],
+  "new_NFL_fits": 0,
+  "new_NFL_forecasts": 0,
+  "new_NFL_grades": 0,
+  "bulk_upload_attempts": 0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "B-COMPLETION-INDEPENDENT-SOURCE-REVIEW-v1",
+  "at_utc": "2026-11-10T04:45:48.737109+00:00",
+  "owner": "B independent verification agent",
+  "scope": "New depth-conditioned FTN annotation support and new mechanism only. Reuse accepted raw-source2901 and representative fit checks; no old reconstruction/refit.",
+  "budget": {
+    "max_new_fits": 0,
+    "max_new_downloads": 0,
+    "wall_seconds": 120,
+    "max_RSS_bytes": 536870912,
+    "new_public_bytes": 1048576
+  },
+  "source_receipt": "reports/player-context-matchup-01/B/source-qualification-v1/SOURCE_RECEIPTS.json",
+  "source_receipt_sha256": "23453900fae8a6957128ffd290b6b4fb9a2c0c7a9bc3031bd5dc404634920e12",
+  "predeclared_checks": [
+    "Official eligible throws in accepted QB-game identity panel; no completed-only denominator",
+    "TRUE/FALSE/null counts by down/depth; UNKNOWN depth retained",
+    "catchability/completion/drop/contested are distinct observed annotations; no accounting identity imposed",
+    "new25-context annotations versus earlier F1/F2 game aggregate information",
+    "five-week scope product-specific; previously exposed seasons not untouched"
+  ],
+  "public_rows": "Only new aggregate support and deterministic source-hash checks; restricted offer rows remain owner-local."
+}

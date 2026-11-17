@@ -1,0 +1,103 @@
+{
+  "id": "B_INFORMATION_SKILL_FOLLOWTHROUGH_SOURCE_REFRESH_v1",
+  "UTC": "2026-11-15T21:07:40.494779+00:00",
+  "attempts": 11,
+  "cap": 12,
+  "A_registered_ref_observed": "49ff55bfaee3ae0a9213d2f3a34c45468c7e5a45",
+  "C_main_observed": "d967615497fc7695575de6a9a4f070c796052dee",
+  "records": [
+    {
+      "name": "A_REGISTERED_REF",
+      "state": "RECEIVED_VIA_EXISTING_CONNECTOR",
+      "url": "https://api.github.com/repos/NickNicky19/NFL-forecasting/git/ref/heads/research/accuracy-wave-20261026",
+      "head": "49ff55bfaee3ae0a9213d2f3a34c45468c7e5a45"
+    },
+    {
+      "name": "C_MAIN_REF",
+      "state": "RECEIVED_VIA_EXISTING_CONNECTOR",
+      "url": "https://api.github.com/repos/NickNicky19/NFL-forecasting-NGS-C/branches/main",
+      "head": "d967615497fc7695575de6a9a4f070c796052dee"
+    },
+    {
+      "name": "C_INDEX",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/d967615497fc7695575de6a9a4f070c796052dee/reports/abc-championship/EXPORT_INDEX.json",
+      "observed_UTC": "2026-11-15T20:47:24.321259+00:00",
+      "HTTP_status": 200,
+      "state": "RECEIVED_EXACT_BYTES",
+      "bytes": 118579,
+      "sha256": "5cf0229014fb850fefe6fd869a29a1599b7869468b74b5c2e1c564b0d7d87f9a"
+    },
+    {
+      "name": "C_PROTOCOL",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/d967615497fc7695575de6a9a4f070c796052dee/reports/abc-championship/CURRENT_PROTOCOL.json",
+      "observed_UTC": "2026-11-15T20:47:24.321890+00:00",
+      "HTTP_status": 200,
+      "state": "RECEIVED_EXACT_BYTES",
+      "bytes": 129282,
+      "sha256": "83b20646bc5491e43e99d604be7157c1884c06f8a2ed8d365620239ea545069c"
+    },
+    {
+      "name": "C_REPORT",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/d967615497fc7695575de6a9a4f070c796052dee/reports/information-skill-01/README.md",
+      "observed_UTC": "2026-11-15T20:50:53.026756+00:00",
+      "HTTP_status": 200,
+      "state": "RECEIVED_EXACT_BYTES",
+      "bytes": 23382,
+      "sha256": "ebc4ae7466b83d9b47f66bd4dbf6b548b33bb0edc91c56addcd2f80551310a1a"
+    },
+    {
+      "name": "C_ADMISSION",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/d967615497fc7695575de6a9a4f070c796052dee/reports/information-skill-01/intake/ADMISSION.json",
+      "observed_UTC": "2026-11-15T20:50:53.027405+00:00",
+      "HTTP_status": 200,
+      "state": "RECEIVED_EXACT_BYTES",
+      "bytes": 26598,
+      "sha256": "3c3a71de772773724c1a877ebc92ddf30f44333fa34459926efeaa00ac621e6b"
+    },
+    {
+      "name": "C_A",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/d967615497fc7695575de6a9a4f070c796052dee/reports/information-skill-01/intake/A_REFRESH.json",
+      "observed_UTC": "2026-11-15T20:50:53.028027+00:00",
+      "HTTP_status": 200,
+      "state": "RECEIVED_EXACT_BYTES",
+      "bytes": 109660,
+      "sha256": "2dd2cd1ef637cec8df1ccaa8619177ddb584545427285bfbb697b9e71afe395a"
+    },
+    {
+      "name": "C_B",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/d967615497fc7695575de6a9a4f070c796052dee/reports/information-skill-01/intake/B_REFRESH.json",
+      "observed_UTC": "2026-11-15T20:50:53.028553+00:00",
+      "HTTP_status": 200,
+      "state": "RECEIVED_EXACT_BYTES",
+      "bytes": 45297,
+      "sha256": "0448839459d882c76620a561b410d7ffdab9a8c0973d708a41547f879ff5622a"
+    },
+    {
+      "name": "A_INDEX",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting/bdef5712fb2d4b8844423269caef23d682b74e8e/reports/abc-championship/EXPORT_INDEX.json",
+      "observed_UTC": "2026-11-15T20:55:04.415384+00:00",
+      "HTTP_status": 200,
+      "state": "RECEIVED_EXACT_BYTES",
+      "bytes": 67163,
+      "sha256": "63f089809aa26328c40039c81589592ae80dad04e2b7234bb2625c0b6eb8a9e5"
+    },
+    {
+      "name": "A_M1",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting/bdef5712fb2d4b8844423269caef23d682b74e8e/reports/abc-championship/targeted-accuracy-w1w9-01/A/EXECUTED_M1_CHECKPOINT_V2.md",
+      "observed_UTC": "2026-11-15T20:55:04.416038+00:00",
+      "HTTP_status": 200,
+      "state": "RECEIVED_EXACT_BYTES",
+      "bytes": 10406,
+      "sha256": "5a150cf72c6cbac3476b1fc9b181331aa07b0503175464ac8fadc08e660c3e83"
+    },
+    {
+      "name": "A_M2_PUBLIC_AGGREGATE_SCORECARD",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting/bdef5712fb2d4b8844423269caef23d682b74e8e/reports/abc-championship/targeted-checkpoint-closure-01/A/B_RAW_W1W9_SCORECARD_V1.csv.gz",
+      "bytes": 13430,
+      "sha256": "39798b0d1a0807472628c7846d02f785f4994d1c5255b12105f8c979c49d9f89",
+      "HTTP_status": 200,
+      "scope": "Public aggregate actual rows retrieved; private source clocks/fit/offer rows not inspected. Does not grade newSKILL."
+    }
+  ],
+  "supersedes": "reports/information-skill-follow-through-01/B/SOURCE_REFRESH_V1.json"
+}

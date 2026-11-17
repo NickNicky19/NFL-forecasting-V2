@@ -1,0 +1,91 @@
+{
+  "id": "B-PLAYER-CONTEXT-ACCEPTANCE-FRESH-FIT-v1",
+  "state": "REGISTERED_BEFORE_VERIFICATION_FITS",
+  "at_utc": "2026-11-10T00:38:00.516303+00:00",
+  "producer_commit": "2fa855fc4dd7e9e495126dea93ba90a33fee4be3",
+  "origin_selection": "Earliest registered evaluation origin2025W1, selected before comparative gains, not best week.",
+  "families": [
+    "E1orderedLeaf-CDF",
+    "P1sharedconditionalbinomialcontextGLM"
+  ],
+  "NFL_verification_fit_limit": 2,
+  "synthetic_fit_limit": 2,
+  "budget": {
+    "cpu_seconds": 180,
+    "wall_seconds": 240,
+    "max_RSS_bytes": 1073741824,
+    "CPU_affinity": 2,
+    "BLAS_threads": 2,
+    "artifact_bytes": 2097152
+  },
+  "comparison_tolerances": {
+    "forest_parameter_exact": true,
+    "GLM_mean_absolute": 1e-06,
+    "GLM_coefficient_absolute": 1e-06,
+    "CDF_absolute": 1e-07
+  },
+  "synthetic_positive_control": "Frozen deliberately strong scalar signal; independent fixture only, never NFLscore. No tuning/seed search.",
+  "original_study_fit_count": 945,
+  "earlier_study_fits_not_repeated_except_two_explicit_verification_calls": true,
+  "new_NFL_test_weeks": 0,
+  "new_offered_line_weeks": 0,
+  "new_original_forecasts": 0,
+  "source_files": [
+    {
+      "path": "nfl_v2/player_context_matchup.py",
+      "sha256": "3db66e8d7c75f444d87f4792add9096a9d04d0390902f67ce21248c206476f29",
+      "bytes": 17185
+    },
+    {
+      "path": "nfl_v2/distribution_wave_v2.py",
+      "sha256": "417b817debe54b8e8c050d92e3e3fb9283fbc924a832099fbcc9c7ba51517fb9",
+      "bytes": 32580
+    },
+    {
+      "path": "nfl_v2/distribution_laws.py",
+      "sha256": "14f034249f38cd12d5a0ea36b05e64086e0859cc4209f83a55c913cda5742f4d",
+      "bytes": 7334
+    },
+    {
+      "path": "nfl_v2/hgb_control.py",
+      "sha256": "13ad5627152d4aed81540f93088b63716acb98a00bce52089a8ec8cbb619cccf",
+      "bytes": 25899
+    },
+    {
+      "path": "nfl_v2/player_context_typed_adapter_v2.py",
+      "sha256": "ef04cd1592faa320a3ee74748557c6d89473f5794ea946d39a01693758e06c51",
+      "bytes": 1496
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-fields-v3/DERIVED_QB_GAME_INPUTS.json.gz",
+      "sha256": "f23bb72f05f398c7108700e10fa7bf63e233aca57bc67eb6820a38c9f212af90",
+      "bytes": 246610
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/SELECTED_EARLIER_CONFIG.json",
+      "sha256": "03d844a764db4566ebc95c8b1e39e5446d13a93d881bc7029a6de8340fb2afed",
+      "bytes": 2694
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/FEATURE_ORDER_V1.json",
+      "sha256": "5cef3c17ec403444e3faa9ec42a2e28e223e8cb3892873a5076d59b3471a8adf",
+      "bytes": 16451
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "threadpoolctl": "3.6.0"
+    }
+  },
+  "scope_limits": [
+    "Current/revisedpublicsource reconstruction, not authenticatedhistorical vintage",
+    "Representative freshfit not all945fits",
+    "Existing scores/predictions remain immutable",
+    "No unsafe pickle loading",
+    "Feature-name order is checked against bound schema; rawarray adapter intrinsically guards width only."
+  ]
+}

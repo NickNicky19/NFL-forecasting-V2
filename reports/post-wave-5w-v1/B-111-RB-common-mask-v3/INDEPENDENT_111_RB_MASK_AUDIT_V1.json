@@ -1,0 +1,282 @@
+{
+  "state": "PASS_INDEPENDENT_111_RB_PRIMITIVE_MASK_COUNTS_AND_PAIRS",
+  "at_utc": "2026-11-05T00:44:35.010347+00:00",
+  "verification_code_sha256": "a0f8f8d82165eac5db2a9c1cc0f4934b154d658a7e827be5777d43475b6f6e4c",
+  "scores_sha256": "6434ec811f2cc18297b28d319d2bae19a05134860d72f1a61dff68b86ea689a3",
+  "protocol_sha256": "35dbe049518888a915d2945e3339ad950a263c0a09c6a7e302bea72e32550b79",
+  "mask_source_sha256": "9268edcd0aac29efcc89bc96882f695da0e2108c38600c18d981b754e3d71324",
+  "exact_mask_id": "cd315248b591579c11060d611ef4006a29e2848a811a30f526e3d9727f990d85",
+  "B_existing_source_hashes": {
+    "B_OWNER_LOCAL_C_MATCHED_ROWS_V2.json": "45cc345d19c0361e970107951e27b2b41779a6d86c5fdf5d06eedbae5ab348fb",
+    "B_OWNER_LOCAL_C_ADDITIONAL_ROWS_V3.json": "fa2224d3d6cc99f6a865a45f667e4fe98412710d6b99b51b5dda7e598c12177d"
+  },
+  "C_existing_control_source_hashes": {
+    "reports/propline-v7/GRADED_ROWS.json": "c7ccb7fdd7e4e6a7da1c1de3670badf5fa1a9db8a6071ed460970f746a47d297",
+    "reports/propline-v7/CORRECTIONS_GRADED_ROWS_V7_1.json": "a4de224a4acb1fe8d208f3f623066971fcba5bd9c6a00c2effe440dae3fb2817",
+    "artifacts/reliability-v8/PREVALENCE_GRADED_ROWS.json.gz": "cb717c26003eefd6dc1d61deb928d4e40c7c929a27ce9d1ce4abb2ec2faec859"
+  },
+  "method_history_point_output_configurations": 52,
+  "not_learner_family_count": true,
+  "own_full_board_availability_histogram": [
+    {
+      "source_rows": 181,
+      "point_available": 174,
+      "point_unavailable": 7,
+      "configurations": 52
+    }
+  ],
+  "exact_RB_mask_rows": 111,
+  "actual_weeks": [
+    2,
+    3
+  ],
+  "unique_games": 32,
+  "identity_and_role_checks": 5772,
+  "cutoff_and_feature_availability_checks": 5772,
+  "C_controls_verified": 7,
+  "side_views_verified": 468,
+  "side_triads_verified": 156,
+  "paired_control_views_verified": 468,
+  "public_membership_bindings_verified": 156,
+  "observed_leaders": [
+    {
+      "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "eligible": 111,
+      "selected": 111,
+      "decided": 111,
+      "wins": 65,
+      "losses": 46,
+      "rate": 0.5855855855855856,
+      "unavailable": 0,
+      "fallback": 55,
+      "fallback_unknown": 0,
+      "MAE": 30.52252252252252,
+      "bias": -23.36936936936937,
+      "games": 32
+    },
+    {
+      "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "eligible": 111,
+      "selected": 111,
+      "decided": 111,
+      "wins": 65,
+      "losses": 46,
+      "rate": 0.5855855855855856,
+      "unavailable": 0,
+      "fallback": 55,
+      "fallback_unknown": 0,
+      "MAE": 30.52252252252252,
+      "bias": -23.36936936936937,
+      "games": 32
+    },
+    {
+      "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "eligible": 111,
+      "selected": 111,
+      "decided": 111,
+      "wins": 65,
+      "losses": 46,
+      "rate": 0.5855855855855856,
+      "unavailable": 0,
+      "fallback": 55,
+      "fallback_unknown": 0,
+      "MAE": 30.52252252252252,
+      "bias": -23.36936936936937,
+      "games": 32
+    },
+    {
+      "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "eligible": 111,
+      "selected": 111,
+      "decided": 111,
+      "wins": 65,
+      "losses": 46,
+      "rate": 0.5855855855855856,
+      "unavailable": 0,
+      "fallback": 55,
+      "fallback_unknown": 0,
+      "MAE": 30.52252252252252,
+      "bias": -23.36936936936937,
+      "games": 32
+    }
+  ],
+  "leader_paired_control_changes": [
+    {
+      "method": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control": "ALWAYS_UNDER",
+      "wins": 65,
+      "control_wins": 63,
+      "win_difference": 2,
+      "hit_change": 0.018018018018018018,
+      "game95_hit_change": [
+        -0.05783864981673076,
+        0.09387468585276679
+      ]
+    },
+    {
+      "method": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control": "EARLIER_PREVALENCE_V8",
+      "wins": 65,
+      "control_wins": 63,
+      "win_difference": 2,
+      "hit_change": 0.018018018018018018,
+      "game95_hit_change": [
+        -0.03245301518655616,
+        0.06848905122259219
+      ]
+    },
+    {
+      "method": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control": "P3_DIRECT",
+      "wins": 65,
+      "control_wins": 60,
+      "win_difference": 5,
+      "hit_change": 0.04504504504504504,
+      "game95_hit_change": [
+        -0.031671441901243685,
+        0.12176153199133377
+      ]
+    },
+    {
+      "method": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control": "ALWAYS_UNDER",
+      "wins": 65,
+      "control_wins": 63,
+      "win_difference": 2,
+      "hit_change": 0.018018018018018018,
+      "game95_hit_change": [
+        -0.05783864981673076,
+        0.09387468585276679
+      ]
+    },
+    {
+      "method": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control": "EARLIER_PREVALENCE_V8",
+      "wins": 65,
+      "control_wins": 63,
+      "win_difference": 2,
+      "hit_change": 0.018018018018018018,
+      "game95_hit_change": [
+        -0.03245301518655616,
+        0.06848905122259219
+      ]
+    },
+    {
+      "method": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control": "P3_DIRECT",
+      "wins": 65,
+      "control_wins": 60,
+      "win_difference": 5,
+      "hit_change": 0.04504504504504504,
+      "game95_hit_change": [
+        -0.031671441901243685,
+        0.12176153199133377
+      ]
+    },
+    {
+      "method": "B::v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control": "ALWAYS_UNDER",
+      "wins": 65,
+      "control_wins": 63,
+      "win_difference": 2,
+      "hit_change": 0.018018018018018018,
+      "game95_hit_change": [
+        -0.05783864981673076,
+        0.09387468585276679
+      ]
+    },
+    {
+      "method": "B::v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control": "EARLIER_PREVALENCE_V8",
+      "wins": 65,
+      "control_wins": 63,
+      "win_difference": 2,
+      "hit_change": 0.018018018018018018,
+      "game95_hit_change": [
+        -0.03245301518655616,
+        0.06848905122259219
+      ]
+    },
+    {
+      "method": "B::v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control": "P3_DIRECT",
+      "wins": 65,
+      "control_wins": 60,
+      "win_difference": 5,
+      "hit_change": 0.04504504504504504,
+      "game95_hit_change": [
+        -0.031671441901243685,
+        0.12176153199133377
+      ]
+    },
+    {
+      "method": "B::v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control": "ALWAYS_UNDER",
+      "wins": 65,
+      "control_wins": 63,
+      "win_difference": 2,
+      "hit_change": 0.018018018018018018,
+      "game95_hit_change": [
+        -0.05783864981673076,
+        0.09387468585276679
+      ]
+    },
+    {
+      "method": "B::v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control": "EARLIER_PREVALENCE_V8",
+      "wins": 65,
+      "control_wins": 63,
+      "win_difference": 2,
+      "hit_change": 0.018018018018018018,
+      "game95_hit_change": [
+        -0.03245301518655616,
+        0.06848905122259219
+      ]
+    },
+    {
+      "method": "B::v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control": "P3_DIRECT",
+      "wins": 65,
+      "control_wins": 60,
+      "win_difference": 5,
+      "hit_change": 0.04504504504504504,
+      "game95_hit_change": [
+        -0.031671441901243685,
+        0.12176153199133377
+      ]
+    }
+  ],
+  "preserved_adapter_failures": [
+    {
+      "version": "v1",
+      "receipt_sha256": "546b355f75e7e6eea9bf86b49527242ace60bb0b4f79fc518dd8b4debe76fad0",
+      "source_snapshot_sha256": "97560c8c94ab06c76466fdc5279a7a7c8ce0fb8490592a03d9db105bc5cec8c6",
+      "error": "dict.update() got multiple values for keyword argument horizon_id"
+    },
+    {
+      "version": "v2",
+      "receipt_sha256": "81c5f509a659e5f8cc6971346bef907df75cbc5b86ee614f1baf0b23c9388aa0",
+      "source_snapshot_sha256": "78efb8dcc69e6ea6a5a734dd0191e60a9b78c2d6adb1ed8d7850912ff30c982c",
+      "error": "dict.update() got multiple values for keyword argument shared_benchmark_status"
+    }
+  ],
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_private_bytes": 0,
+  "new_NFL_observations": 0,
+  "five_week_floor_met": false,
+  "limits": [
+    "Same frozen111RBparticipant/offer subset is conditional;181sourceoffers and fullboard availability remain separate. Roles are as retained/corrected C crosswalk, not independently authenticated pregame roster vintages.",
+    "Four strict-current median procedures tie65/111 with55fallback rows; this is not four independent validations, new NFL games or five-week qualification. Own learned/fallback contributions are not a universal common-learned comparison.",
+    "Allcutoff metadata and source identity/label values match retainedCrows; neither football source publication vintage nor quote executability/settlement is authenticated here.",
+    "Largest observed gain is exposed descriptive and uncertainty/multiplicity limited; no inverted/router/production policy was constructed. C intake/admission remains separate."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "B_A_EARLY_NATIVE_DIRECTION_AND_PROPER_SCORE_CONTRACT_PARITY_v1",
+  "at_UTC": "2026-11-14T18:47:24.367954+00:00",
+  "direction": "MATCHED_P1_MEAN_P1_LOWER_MEDIAN_AND_P2_ARGMAX_OVER_UNDER",
+  "A": {
+    "commit": "5a41d2bac6027e0ac1b5a2744d52f8ec5e93c47e",
+    "code": "tools/timing_confirm_b_completion_join_v1.py",
+    "sha256": "bd491535dc1cd0df08cc000cf883d6c11e19b62f9506b9df0a40b217ad8d26c4",
+    "P2_function": "def probability_side(p):return'OVER'if p['p_over']>p['p_under']else'UNDER'if p['p_under']>p['p_over']else'ABSTAIN'",
+    "mean": "Exact serialized finite point versus line; Decimal string ordering; equality abstains",
+    "probability_mass": "p_under=CDF(k-1) andp_push=CDF(k)-CDF(k-1) at integerline; p_over=1-CDF(k); nonintegerpush0"
+  },
+  "B": {
+    "code": "tools/score_ftn_completion_information.py",
+    "sha256": "8fda030d4e3d7959cd3129c5326e00c93a773a4e7cf6a357bfbea35ad96b4ffc",
+    "P2": "Exact argmaxprobs[over],probs[under]; equalityNone; notpOver>.5",
+    "mean": "Exactfiniteunroundedfloatpoint/line; equalityNone"
+  },
+  "synthetic_policy_boundaries": [
+    {
+      "over": 0.3,
+      "under": 0.2,
+      "push": 0.5,
+      "side": "OVER"
+    },
+    {
+      "over": 0.2,
+      "under": 0.3,
+      "push": 0.5,
+      "side": "UNDER"
+    },
+    {
+      "over": 0.25,
+      "under": 0.25,
+      "push": 0.5,
+      "side": "ABSTAIN"
+    }
+  ],
+  "boundaries_add_NFL_observations": 0,
+  "Brier": {
+    "A": "Mean squaredstrictOver-eventprobabilityerror; integerpush countsasnotOver",
+    "B": "Halfmulticlasssum squaredOver/Under/Pushprobabilityerror",
+    "combined_status": "NOT_IDENTICAL_BY_CONTRACT_UNLESS_ZERO_PREDICTED_PUSH_MASS_PROVEN",
+    "sufficient_condition": "Every offeredlineisnoninteger, makingmodeledpushmasszero; absenceofrealizedpushesaloneisnotsufficient",
+    "missing": "Apublic84aggregatehasnolineintegercountorpushmasssupport; ownerlocalharmonizedscoreorzero-pushproofneeded. Donotweighted-addBriersuntested."
+  },
+  "log_loss": {
+    "A": "Three-state observedstatisticalOver/Under/Push logloss",
+    "B": "Same observedthree-state logloss",
+    "status": "DEFINITION_COMPATIBLE;uniformconditioning/selectedmaskmustremainbound"
+  },
+  "AUC": "AunionOver-eventAUCcannotbecomputedbyweightedaveragingpersourceAUCs; needscompatibleprivatevaluesorowner-localcrosssourcecalculation.",
+  "limits": "Code/aggregatecontractcheckonly; no protectedArowvalues, rawmodel/sourcevintageparity, newNFLfit, unionnewscore, quoteauthentication orCcommonadmission."
+}

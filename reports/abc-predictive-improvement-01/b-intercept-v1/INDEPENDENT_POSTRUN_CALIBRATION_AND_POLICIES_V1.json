@@ -1,0 +1,85 @@
+{
+  "state": "PASS_INDEPENDENT_MAP_PREFIX_AND_POLICY_REPRODUCTION",
+  "at_utc": "2026-11-04T20:35:38.887345+00:00",
+  "protocol_sha256": "c8f68540f49feca967603bad17235ceb467cfb88c00094b916d2acd44df4a356",
+  "input_sha256": "b8b8c388766506e5aeb147b00adbebc62556a0ab8eff21b915944e5f073eae2b",
+  "score_sha256": "87e944907e85ca4ca221595c4f8cecf44c4bb2ee64ee7dfc8256fde7ee7e2cf7",
+  "model_rows_sha256": "4c119c973bb9c5c04673f8bc2d2d150213b4bb2cd183e0f33aafcd5c7a01c0eb",
+  "models_checked": 11,
+  "fitted_scalar_coefficients_independently_reproduced": 6,
+  "maximum_alpha_absolute_difference": 5.551115123125783e-17,
+  "coefficient_method": "Independent90step convex-gradient bisection with game weights andN(0,.5^2); did not call producer mechanism.fit or scorer.",
+  "future_label_probability_prefix_mutation_checks": 11,
+  "future_confidence_gate_mutation_checks": 30,
+  "base_fit_or_inference_calls": 0,
+  "retained_policy_rows_verified": 11700,
+  "side_views_verified": 396,
+  "proper_views_verified": 8,
+  "side_triads_verified": 132,
+  "paired_contrasts_verified": 84,
+  "actual_batch_fit_and_gate_usage_verified": 15,
+  "fixed_confidence_policies": [
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "rolling_K_policies": [
+    6,
+    10,
+    20
+  ],
+  "summary": [
+    {
+      "target": "rec",
+      "arm": 0,
+      "eligible": 362,
+      "selected": 340,
+      "wins": 194,
+      "losses": 143,
+      "decided": 337,
+      "brier": 0.25986835229748334,
+      "log_loss": 0.7179315852043416
+    },
+    {
+      "target": "rec",
+      "arm": 1,
+      "eligible": 362,
+      "selected": 340,
+      "wins": 195,
+      "losses": 142,
+      "decided": 337,
+      "brier": 0.26020281452072475,
+      "log_loss": 0.7186578091495587
+    },
+    {
+      "target": "pass_td",
+      "arm": 0,
+      "eligible": 28,
+      "selected": 26,
+      "wins": 14,
+      "losses": 12,
+      "decided": 26,
+      "brier": 0.2661960262498066,
+      "log_loss": 0.7253752438581843
+    },
+    {
+      "target": "pass_td",
+      "arm": 1,
+      "eligible": 28,
+      "selected": 26,
+      "wins": 14,
+      "losses": 12,
+      "decided": 26,
+      "brier": 0.2648261268662258,
+      "log_loss": 0.7224185954488468
+    }
+  ],
+  "limits": [
+    "Source panels, confidencegates and studychoice are research-exposed; no freshholdout or originalB1issuance.",
+    "Crec single-line directevents do not authenticate a completeCDF; PT historical-to-originalcapture transfer remains explicit.",
+    "PTmean is unchanged B0ancillary output, including any inherited control MAE attribution; it is not a new repaired/control pointforecast.",
+    "Full-board properneutral/prior controls require the separatelybound reference supplement.",
+    "No privateparameter values or restricted player-level records published."
+  ]
+}

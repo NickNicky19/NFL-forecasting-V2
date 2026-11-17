@@ -1,0 +1,35 @@
+{
+  "schema_version": "B-ACCEPTANCE-PACKAGE-VERIFICATION-v1",
+  "at_utc": "2026-11-10T01:07:22.980035+00:00",
+  "checks": [
+    {
+      "command": "python -m unittest discover -s tests",
+      "status": "PASS",
+      "tests": 488
+    },
+    {
+      "command": "python tools/validate_checkpoint.py",
+      "status": "PASS",
+      "JSON_files_parsed": 31268
+    },
+    {
+      "command": "python tools/check_result_index_coverage.py",
+      "status": "PASS",
+      "indexed_records": 608631,
+      "registered_artifacts": 221
+    },
+    {
+      "command": "python tools/check_analysis_index_coverage.py",
+      "status": "PASS",
+      "derived_comparison_views": 20706
+    },
+    {
+      "command": "python tools/check_prop_scoreboard_coverage.py",
+      "status": "PASS",
+      "new_grades": 0
+    }
+  ],
+  "note": "Required local checks passed. Software checks and verification fits are not additional NFL observations or deployed forecasts. Full remote CI is separate.",
+  "canonical_new_score_sha256": "000a9feee3f78e4da659f7409ab4c28c6da9f437f34f0f9395091bf4b68d3d0b",
+  "named_adapter_sha256": "5ac8e4cafb6109228ef3d3e158a7f75b684df222c2f0425bea50998f3340addf"
+}

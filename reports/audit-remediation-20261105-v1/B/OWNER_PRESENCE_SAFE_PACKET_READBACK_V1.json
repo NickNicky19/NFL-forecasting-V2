@@ -1,0 +1,126 @@
+{
+  "state": "PINNED_OWNER_PACKET_AND_CURRENT_SERVED_BYTE_COMPARISON",
+  "at_utc": "2026-11-06T01:02:22.768947+00:00",
+  "production_data_commit": "a478db86e2702d9fa632a23bfaf9c575a67ea902",
+  "capture_path": "data/current-classic/2026/w09/1dafcf9e9ee4acb130bc617be234f76d8ba5ffcf33002c1b200bc6e59a0a1a78.json.gz",
+  "capture_file_sha256": "c710d0ef3fae5b37dc652afd82503cec379e20d12b36408cf2a2c6754998d7eb",
+  "capture_payload_sha256": "c9aa28c3d41241b1864c96259dbacf87e7b53601e448860aa3c7a46cb2a95143",
+  "capture_schema": "baseline-capture-classic-presence-v2",
+  "model": "sleeper-matchup-classic-presence-strict-v2",
+  "clocks": {
+    "forecast_generated_at": "2026-11-06T00:38:07Z",
+    "captured_at": "2026-11-06T00:38:09Z",
+    "selection_prepared_at": "2026-11-06T00:38:12.563491+00:00",
+    "pointer_published_at": "2026-11-06T00:38:12.574198+00:00"
+  },
+  "first_kickoff_utc": "2026-11-06T01:15:00+00:00",
+  "first_T90_utc": "2026-11-05T23:45:00+00:00",
+  "capture_is_pregame": true,
+  "capture_pre_first_T90": false,
+  "served_pairs": [
+    {
+      "path": "output/data/week.json",
+      "bytes": 3344678,
+      "git_sha256": "6f24faded73f29e72a98f8eb13c419f7b79d76be2420cf075c14e0ba5ac1b5a5",
+      "served_sha256": "6f24faded73f29e72a98f8eb13c419f7b79d76be2420cf075c14e0ba5ac1b5a5",
+      "equal": true
+    },
+    {
+      "path": "output/data/meta.json",
+      "bytes": 1248,
+      "git_sha256": "f79bc72b67eff76ddbd922de768275b437c1354992536cdd090c634503cde696",
+      "served_sha256": "f79bc72b67eff76ddbd922de768275b437c1354992536cdd090c634503cde696",
+      "equal": true
+    },
+    {
+      "path": "output/data/weekly-selected-rankings.json",
+      "bytes": 474,
+      "git_sha256": "d9d02193058a789b74612c6686f1e29bd6af0646e763c776a786530bd22a7924",
+      "served_sha256": "d9d02193058a789b74612c6686f1e29bd6af0646e763c776a786530bd22a7924",
+      "equal": true
+    },
+    {
+      "path": "output/data/weekly-selected-rankings/6cdf0fa13c67650ca2ad2ba430d03e6fd79ff8a615a1c6dbcef605e347eade2d.json",
+      "bytes": 11932,
+      "git_sha256": "6cdf0fa13c67650ca2ad2ba430d03e6fd79ff8a615a1c6dbcef605e347eade2d",
+      "served_sha256": "6cdf0fa13c67650ca2ad2ba430d03e6fd79ff8a615a1c6dbcef605e347eade2d",
+      "equal": true
+    },
+    {
+      "path": "output/data/weekly-adaptive-overlay.json",
+      "bytes": 333,
+      "git_sha256": "ceb3c3b266e1464857c979390765f1a9c6e414035d40fd763752d2bab863395e",
+      "served_sha256": "ceb3c3b266e1464857c979390765f1a9c6e414035d40fd763752d2bab863395e",
+      "equal": true
+    },
+    {
+      "path": "output/data/weekly-adaptive/b62f5adf78475ac16e109b99fe2324e7d29cdf37f992b5da37c3e76bca065060.json",
+      "bytes": 762,
+      "git_sha256": "b62f5adf78475ac16e109b99fe2324e7d29cdf37f992b5da37c3e76bca065060",
+      "served_sha256": "b62f5adf78475ac16e109b99fe2324e7d29cdf37f992b5da37c3e76bca065060",
+      "equal": true
+    }
+  ],
+  "all_pairs_equal": true,
+  "forecast_rows": 1681,
+  "games": 15,
+  "source_publication_verified_rows": 0,
+  "top_picks": {
+    "total": 24,
+    "sides": {
+      "over": 12,
+      "under": 12
+    },
+    "games": 12,
+    "sources": [
+      "CURRENT_BASELINE"
+    ],
+    "products": [
+      "reference_point"
+    ],
+    "exact_capture_value_and_membership_parity": true
+  },
+  "execution_model": {
+    "capture_schema": "baseline-capture-classic-presence-v2",
+    "engine_sha256": {
+      "pull/books.py": "0b89744960136a4f2e594b61e6df754d357706d8c66a8ae359d8eb02bbfa53f8",
+      "pull/build.py": "b83126080149f2f0705682d1c0be0a8ee87610ebb0a88cd57b94b8a82b63ad73",
+      "pull/gamemodel.py": "2a2519a12ad4993da02ae6bdcdb6c86f2b5a6554ce93a702b550ecde17fb7d1f",
+      "pull/grade.py": "afd1310d708def4f400e6bf84e981e2edc7635dc946a63571022203c1d3ae735",
+      "pull/matchup.py": "eaf627730041060ad16dd9930accfe54a54cf5fb49bb42d18680b5c572ddd7a5",
+      "pull/news.py": "17ce1b3b6b72694e6b543bd767e287c26a9d1f6dd5dba2de6c873543036842e9",
+      "pull/scoring.py": "90a9d201581b20c4e757912ce7dbf4941a6a90784d721c80367341511c652a2d",
+      "pull/sources.py": "36555cdbc55d73ba632d5adae1130288f4f532073857c642ac3ebc7e626b0061"
+    },
+    "grading_version": "statistical-presence-strict-v5-20261106",
+    "model": "sleeper-matchup-classic-presence-strict-v2",
+    "normalized_stats_cache": "stat-keys-presence-strict-v3",
+    "original_shadow_model": "original_sleeper_matchup_baseline",
+    "original_shadow_procedure": "original-builder-default-refresh-v1",
+    "original_shadow_source": "89512ed952308dacc1f6a930915ddbcdccd460d9",
+    "schema_version": "weekly-classic-presence-execution-v2"
+  },
+  "overlay_state": "DISABLED_USE_R0",
+  "selected_research_rows": 0,
+  "source_read_scope": "Public retained source and served data; no browser render or historical quote authentication.",
+  "owner_run": {
+    "id": 42138147981,
+    "source_commit": "93a6dae95f4a40455c39245e09046340e4c43c30",
+    "completed_UTC": "2026-11-06T00:38:31Z",
+    "conclusion": "success"
+  },
+  "concurrent_newer_owner_run": {
+    "id": 42140841281,
+    "source_commit": "9cee046490b9144bf047bc492cd46f459eabfaff",
+    "status": "in_progress at 2026-11-06T01:00:30Z; not assumed successful"
+  },
+  "B_dispatches": 0,
+  "B_production_mutations": 0,
+  "new_B_forecasts": 0,
+  "limits": [
+    "A later owner refresh may legitimately change current served pointers; unequal pairs stay unequal.",
+    "Safety/source-presence repair is not evidence of a new forecasting winner.",
+    "Source, offer clocks and primary product qualification remain separate.",
+    "Retained raw metadata label is not overwritten by this observer."
+  ]
+}

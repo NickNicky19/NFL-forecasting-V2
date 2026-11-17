@@ -1,0 +1,915 @@
+[
+  {
+    "record_id": "W8-NUM-a3d39e09133cf43276b99b6a",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "v2-availability-abc-shadow-v1:hgb_direct:squared_error_mean",
+    "capture_version": "AVAILABILITY_C",
+    "history_regime": "H-MULTI",
+    "product_id": "mean",
+    "information_policy": "AVAILABILITY-C",
+    "availability_arm": "C",
+    "target": "pass_yd",
+    "method_key": "f8890c9f9724101b4a0486d8",
+    "evaluation_panel_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3:AVAILABILITY_C",
+    "time_panel_id": "2026_W8_PARTIAL",
+    "season": 2026,
+    "week": 8,
+    "evaluation_weeks": [
+      8
+    ],
+    "evaluation_seasons": [
+      2026
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "horizon_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3",
+    "forecast_rows": 25,
+    "scored_forecast_rows": 25,
+    "issued_forecast_rows": 25,
+    "pending_rows": 0,
+    "unknown_rows": 0,
+    "abstention_rows": 0,
+    "fallback_rows": 0,
+    "fallback_unknown_rows": 0,
+    "unique_games": 12,
+    "unique_players": 25,
+    "scored_key_sha256": "dff2318dbbdd99e1db79e425dd2454292d24c06ac1d9326c57f42976250516d5",
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 25
+      },
+      "abs_le_1": {
+        "numerator": 0,
+        "denominator": 25
+      },
+      "abs_lt_5": {
+        "numerator": 1,
+        "denominator": 25
+      },
+      "abs_le_5": {
+        "numerator": 1,
+        "denominator": 25
+      },
+      "abs_lt_10": {
+        "numerator": 2,
+        "denominator": 25
+      },
+      "abs_le_10": {
+        "numerator": 2,
+        "denominator": 25
+      }
+    },
+    "source_vintage": "AUTHENTIC_SAVED_PREGAME_OUTPUT_CURRENT_VINTAGE_FINAL_LABELS",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "uncertainty": "INSUFFICIENT_WEEK_CLUSTERS_ONE_EXPOSED_WEEK; paired game sensitivity separately where supported",
+    "whole_week_complete": false,
+    "scoring_version": "v2-week8-saved-capture-library-grading-v1",
+    "null_reason": null,
+    "n": 25,
+    "mae": 79.19137953376035,
+    "mse": 9998.8790887893,
+    "rmse": 99.99439528688245,
+    "bias": 15.944888711013677,
+    "p90_abs": 187.7931414849003,
+    "p95_abs": 193.25910674267826,
+    "max_abs": 214.0448476790136,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.0,
+    "abs_lt_5": 0.04,
+    "abs_le_5": 0.04,
+    "abs_lt_10": 0.08,
+    "abs_le_10": 0.08
+  },
+  {
+    "record_id": "W8-NUM-d0a0c105be638688ff9dbe92",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "P2_SELECTED:9098170124985c38e0c317b8bd1ef4a44b4aa3c2e6fbb9344d74e99ba757e29d",
+    "capture_version": "WEBSITE_ADAPTIVE_ORIGINAL_3907",
+    "history_regime": "FIXED_ARCHIVED_REFERENCE",
+    "product_id": "point_mean",
+    "information_policy": "ORIGINAL_CAPTURE_FEATURE_POLICY",
+    "availability_arm": "NONE",
+    "target": "pass_td",
+    "method_key": "aaf124c9a8405753a2f04282",
+    "evaluation_panel_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3:WEBSITE_ADAPTIVE_ORIGINAL_3907",
+    "time_panel_id": "2026_W8_PARTIAL",
+    "season": 2026,
+    "week": 8,
+    "evaluation_weeks": [
+      8
+    ],
+    "evaluation_seasons": [
+      2026
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "horizon_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3",
+    "forecast_rows": 25,
+    "scored_forecast_rows": 25,
+    "issued_forecast_rows": 25,
+    "pending_rows": 0,
+    "unknown_rows": 0,
+    "abstention_rows": 0,
+    "fallback_rows": 0,
+    "fallback_unknown_rows": 25,
+    "unique_games": 12,
+    "unique_players": 25,
+    "scored_key_sha256": "6bc37aba2320a22a1905899511aaf1ce410e22ff68c297bbd70519b80b4d89af",
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 14,
+        "denominator": 25
+      },
+      "abs_le_1": {
+        "numerator": 14,
+        "denominator": 25
+      },
+      "abs_lt_5": {
+        "numerator": 25,
+        "denominator": 25
+      },
+      "abs_le_5": {
+        "numerator": 25,
+        "denominator": 25
+      },
+      "abs_lt_10": {
+        "numerator": 25,
+        "denominator": 25
+      },
+      "abs_le_10": {
+        "numerator": 25,
+        "denominator": 25
+      }
+    },
+    "source_vintage": "AUTHENTIC_SAVED_PREGAME_OUTPUT_CURRENT_VINTAGE_FINAL_LABELS",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "uncertainty": "INSUFFICIENT_WEEK_CLUSTERS_ONE_EXPOSED_WEEK; paired game sensitivity separately where supported",
+    "whole_week_complete": false,
+    "scoring_version": "v2-week8-saved-capture-library-grading-v1",
+    "null_reason": null,
+    "n": 25,
+    "mae": 0.990401576443199,
+    "mse": 1.3160080545301147,
+    "rmse": 1.1471739425780707,
+    "bias": 0.06547355591414504,
+    "p90_abs": 1.4911996372609364,
+    "p95_abs": 1.5376648982864056,
+    "max_abs": 3.005605809516271,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.56,
+    "abs_le_1": 0.56,
+    "abs_lt_5": 1.0,
+    "abs_le_5": 1.0,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "W8-NUM-4020c8e378c275d589465088",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "v2-availability-abc-shadow-v1:hgb_direct:squared_error_mean",
+    "capture_version": "AVAILABILITY_C",
+    "history_regime": "H-RECENT",
+    "product_id": "mean",
+    "information_policy": "AVAILABILITY-C",
+    "availability_arm": "C",
+    "target": "pass_cmp",
+    "method_key": "dae4d3894f4efefb07fdebea",
+    "evaluation_panel_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3:AVAILABILITY_C",
+    "time_panel_id": "2026_W8_PARTIAL",
+    "season": 2026,
+    "week": 8,
+    "evaluation_weeks": [
+      8
+    ],
+    "evaluation_seasons": [
+      2026
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "horizon_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3",
+    "forecast_rows": 25,
+    "scored_forecast_rows": 25,
+    "issued_forecast_rows": 25,
+    "pending_rows": 0,
+    "unknown_rows": 0,
+    "abstention_rows": 0,
+    "fallback_rows": 0,
+    "fallback_unknown_rows": 0,
+    "unique_games": 12,
+    "unique_players": 25,
+    "scored_key_sha256": "f8fc7b52960b05552f354f702c4abf966d5f3035b829cc6d533f2e53725996b8",
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 4,
+        "denominator": 25
+      },
+      "abs_le_1": {
+        "numerator": 4,
+        "denominator": 25
+      },
+      "abs_lt_5": {
+        "numerator": 14,
+        "denominator": 25
+      },
+      "abs_le_5": {
+        "numerator": 14,
+        "denominator": 25
+      },
+      "abs_lt_10": {
+        "numerator": 17,
+        "denominator": 25
+      },
+      "abs_le_10": {
+        "numerator": 17,
+        "denominator": 25
+      }
+    },
+    "source_vintage": "AUTHENTIC_SAVED_PREGAME_OUTPUT_CURRENT_VINTAGE_FINAL_LABELS",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "uncertainty": "INSUFFICIENT_WEEK_CLUSTERS_ONE_EXPOSED_WEEK; paired game sensitivity separately where supported",
+    "whole_week_complete": false,
+    "scoring_version": "v2-week8-saved-capture-library-grading-v1",
+    "null_reason": null,
+    "n": 25,
+    "mae": 6.73498648461568,
+    "mse": 73.06311008570142,
+    "rmse": 8.547696185856246,
+    "bias": 2.358793307920802,
+    "p90_abs": 15.103407092585341,
+    "p95_abs": 16.08153350426733,
+    "max_abs": 17.96776751607927,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.16,
+    "abs_le_1": 0.16,
+    "abs_lt_5": 0.56,
+    "abs_le_5": 0.56,
+    "abs_lt_10": 0.68,
+    "abs_le_10": 0.68
+  },
+  {
+    "record_id": "W8-NUM-e2298aacfab160179633ba41",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "P2_SELECTED:8036241e6dc11ee50f630dcd1858c7c15ef5faabc9a3aa29d328fcb6329a4e75",
+    "capture_version": "WEBSITE_ADAPTIVE_ORIGINAL_3907",
+    "history_regime": "FIXED_ARCHIVED_REFERENCE",
+    "product_id": "point_mean",
+    "information_policy": "ORIGINAL_CAPTURE_FEATURE_POLICY",
+    "availability_arm": "NONE",
+    "target": "pass_att",
+    "method_key": "c47b52ae3842a6af91243902",
+    "evaluation_panel_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3:WEBSITE_ADAPTIVE_ORIGINAL_3907",
+    "time_panel_id": "2026_W8_PARTIAL",
+    "season": 2026,
+    "week": 8,
+    "evaluation_weeks": [
+      8
+    ],
+    "evaluation_seasons": [
+      2026
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "horizon_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3",
+    "forecast_rows": 25,
+    "scored_forecast_rows": 25,
+    "issued_forecast_rows": 25,
+    "pending_rows": 0,
+    "unknown_rows": 0,
+    "abstention_rows": 0,
+    "fallback_rows": 0,
+    "fallback_unknown_rows": 25,
+    "unique_games": 12,
+    "unique_players": 25,
+    "scored_key_sha256": "fc6db3709592c6e9a913620c21284d026188f933e899ab6575798f6f983b52d5",
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 2,
+        "denominator": 25
+      },
+      "abs_le_1": {
+        "numerator": 2,
+        "denominator": 25
+      },
+      "abs_lt_5": {
+        "numerator": 7,
+        "denominator": 25
+      },
+      "abs_le_5": {
+        "numerator": 7,
+        "denominator": 25
+      },
+      "abs_lt_10": {
+        "numerator": 14,
+        "denominator": 25
+      },
+      "abs_le_10": {
+        "numerator": 14,
+        "denominator": 25
+      }
+    },
+    "source_vintage": "AUTHENTIC_SAVED_PREGAME_OUTPUT_CURRENT_VINTAGE_FINAL_LABELS",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "uncertainty": "INSUFFICIENT_WEEK_CLUSTERS_ONE_EXPOSED_WEEK; paired game sensitivity separately where supported",
+    "whole_week_complete": false,
+    "scoring_version": "v2-week8-saved-capture-library-grading-v1",
+    "null_reason": null,
+    "n": 25,
+    "mae": 9.119724231772162,
+    "mse": 127.71586601601133,
+    "rmse": 11.301144456027952,
+    "bias": 3.8153944960725465,
+    "p90_abs": 16.892849149134058,
+    "p95_abs": 23.005188955457285,
+    "max_abs": 26.826555767309202,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.08,
+    "abs_le_1": 0.08,
+    "abs_lt_5": 0.28,
+    "abs_le_5": 0.28,
+    "abs_lt_10": 0.56,
+    "abs_le_10": 0.56
+  },
+  {
+    "record_id": "W8-NUM-f7068421c226e435c75639bf",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "v2-availability-abc-shadow-v1:hgb_direct:squared_error_mean",
+    "capture_version": "AVAILABILITY_AB",
+    "history_regime": "H-MULTI",
+    "product_id": "mean",
+    "information_policy": "AVAILABILITY-B",
+    "availability_arm": "B",
+    "target": "pass_int",
+    "method_key": "f42dbc62da488f01c5ad9550",
+    "evaluation_panel_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3:AVAILABILITY_AB",
+    "time_panel_id": "2026_W8_PARTIAL",
+    "season": 2026,
+    "week": 8,
+    "evaluation_weeks": [
+      8
+    ],
+    "evaluation_seasons": [
+      2026
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "horizon_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3",
+    "forecast_rows": 25,
+    "scored_forecast_rows": 25,
+    "issued_forecast_rows": 25,
+    "pending_rows": 0,
+    "unknown_rows": 0,
+    "abstention_rows": 0,
+    "fallback_rows": 0,
+    "fallback_unknown_rows": 0,
+    "unique_games": 12,
+    "unique_players": 25,
+    "scored_key_sha256": "cfd15dd2a44f49fce6e25f42cea1db32a79c654ddd7e6748b2322a8094043a02",
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 21,
+        "denominator": 25
+      },
+      "abs_le_1": {
+        "numerator": 21,
+        "denominator": 25
+      },
+      "abs_lt_5": {
+        "numerator": 25,
+        "denominator": 25
+      },
+      "abs_le_5": {
+        "numerator": 25,
+        "denominator": 25
+      },
+      "abs_lt_10": {
+        "numerator": 25,
+        "denominator": 25
+      },
+      "abs_le_10": {
+        "numerator": 25,
+        "denominator": 25
+      }
+    },
+    "source_vintage": "AUTHENTIC_SAVED_PREGAME_OUTPUT_CURRENT_VINTAGE_FINAL_LABELS",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "uncertainty": "INSUFFICIENT_WEEK_CLUSTERS_ONE_EXPOSED_WEEK; paired game sensitivity separately where supported",
+    "whole_week_complete": false,
+    "scoring_version": "v2-week8-saved-capture-library-grading-v1",
+    "null_reason": null,
+    "n": 25,
+    "mae": 0.7645965475745986,
+    "mse": 1.0454324113799276,
+    "rmse": 1.0224638924577862,
+    "bias": -0.16697984907475472,
+    "p90_abs": 1.38018911978075,
+    "p95_abs": 2.155214960779427,
+    "max_abs": 3.3141931131550018,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.84,
+    "abs_le_1": 0.84,
+    "abs_lt_5": 1.0,
+    "abs_le_5": 1.0,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "W8-NUM-0c4a6a5c43915e539bfb836b",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "v2-availability-abc-shadow-v1:hgb_direct:squared_error_mean",
+    "capture_version": "AVAILABILITY_AB",
+    "history_regime": "H-CURRENT",
+    "product_id": "mean",
+    "information_policy": "AVAILABILITY-B",
+    "availability_arm": "B",
+    "target": "rush_yd",
+    "method_key": "09f8b7985a731512584afd22",
+    "evaluation_panel_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3:AVAILABILITY_AB",
+    "time_panel_id": "2026_W8_PARTIAL",
+    "season": 2026,
+    "week": 8,
+    "evaluation_weeks": [
+      8
+    ],
+    "evaluation_seasons": [
+      2026
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "horizon_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3",
+    "forecast_rows": 60,
+    "scored_forecast_rows": 60,
+    "issued_forecast_rows": 60,
+    "pending_rows": 0,
+    "unknown_rows": 0,
+    "abstention_rows": 0,
+    "fallback_rows": 0,
+    "fallback_unknown_rows": 0,
+    "unique_games": 12,
+    "unique_players": 60,
+    "scored_key_sha256": "092e284baf3439b44495a469f656502cb3519a6eece0a66337c2dcd784edbeaf",
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 2,
+        "denominator": 60
+      },
+      "abs_le_1": {
+        "numerator": 2,
+        "denominator": 60
+      },
+      "abs_lt_5": {
+        "numerator": 9,
+        "denominator": 60
+      },
+      "abs_le_5": {
+        "numerator": 9,
+        "denominator": 60
+      },
+      "abs_lt_10": {
+        "numerator": 20,
+        "denominator": 60
+      },
+      "abs_le_10": {
+        "numerator": 20,
+        "denominator": 60
+      }
+    },
+    "source_vintage": "AUTHENTIC_SAVED_PREGAME_OUTPUT_CURRENT_VINTAGE_FINAL_LABELS",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "uncertainty": "INSUFFICIENT_WEEK_CLUSTERS_ONE_EXPOSED_WEEK; paired game sensitivity separately where supported",
+    "whole_week_complete": false,
+    "scoring_version": "v2-week8-saved-capture-library-grading-v1",
+    "null_reason": null,
+    "n": 60,
+    "mae": 23.730515677451834,
+    "mse": 1180.8792032801232,
+    "rmse": 34.36392299025423,
+    "bias": -7.835769128644444,
+    "p90_abs": 57.77153697931286,
+    "p95_abs": 66.22221053387715,
+    "max_abs": 121.16253245528439,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.03333333333333333,
+    "abs_le_1": 0.03333333333333333,
+    "abs_lt_5": 0.15,
+    "abs_le_5": 0.15,
+    "abs_lt_10": 0.3333333333333333,
+    "abs_le_10": 0.3333333333333333
+  },
+  {
+    "record_id": "W8-NUM-eb69b5d3680f80ea638fb0f5",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "capture_version": "AVAILABILITY_AB",
+    "history_regime": "H-CURRENT",
+    "product_id": "mean",
+    "information_policy": "AVAILABILITY-B",
+    "availability_arm": "B",
+    "target": "rush_att",
+    "method_key": "6b263aa2561b7de64bda9f83",
+    "evaluation_panel_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3:AVAILABILITY_AB",
+    "time_panel_id": "2026_W8_PARTIAL",
+    "season": 2026,
+    "week": 8,
+    "evaluation_weeks": [
+      8
+    ],
+    "evaluation_seasons": [
+      2026
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "horizon_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3",
+    "forecast_rows": 60,
+    "scored_forecast_rows": 60,
+    "issued_forecast_rows": 60,
+    "pending_rows": 0,
+    "unknown_rows": 0,
+    "abstention_rows": 0,
+    "fallback_rows": 1,
+    "fallback_unknown_rows": 0,
+    "unique_games": 12,
+    "unique_players": 60,
+    "scored_key_sha256": "de4684a19407356def85f432b3946554d84f05b89343bec3cd1c25b7e605916b",
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 8,
+        "denominator": 60
+      },
+      "abs_le_1": {
+        "numerator": 8,
+        "denominator": 60
+      },
+      "abs_lt_5": {
+        "numerator": 41,
+        "denominator": 60
+      },
+      "abs_le_5": {
+        "numerator": 41,
+        "denominator": 60
+      },
+      "abs_lt_10": {
+        "numerator": 57,
+        "denominator": 60
+      },
+      "abs_le_10": {
+        "numerator": 57,
+        "denominator": 60
+      }
+    },
+    "source_vintage": "AUTHENTIC_SAVED_PREGAME_OUTPUT_CURRENT_VINTAGE_FINAL_LABELS",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "uncertainty": "INSUFFICIENT_WEEK_CLUSTERS_ONE_EXPOSED_WEEK; paired game sensitivity separately where supported",
+    "whole_week_complete": false,
+    "scoring_version": "v2-week8-saved-capture-library-grading-v1",
+    "null_reason": null,
+    "n": 60,
+    "mae": 4.308224410483357,
+    "mse": 31.441663258454916,
+    "rmse": 5.607286621749856,
+    "bias": -0.8157234845901563,
+    "p90_abs": 8.377698331657644,
+    "p95_abs": 9.248808307206533,
+    "max_abs": 18.24839244782306,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.13333333333333333,
+    "abs_le_1": 0.13333333333333333,
+    "abs_lt_5": 0.6833333333333333,
+    "abs_le_5": 0.6833333333333333,
+    "abs_lt_10": 0.95,
+    "abs_le_10": 0.95
+  },
+  {
+    "record_id": "W8-NUM-6d9c61584a4ef3c772bae51e",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "v2-availability-abc-shadow-v1:empirical",
+    "capture_version": "AVAILABILITY_AB",
+    "history_regime": "H-RECENT",
+    "product_id": "mean",
+    "information_policy": "AVAILABILITY-B",
+    "availability_arm": "B",
+    "target": "rec",
+    "method_key": "893093b0a63659e2697d1c42",
+    "evaluation_panel_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3:AVAILABILITY_AB",
+    "time_panel_id": "2026_W8_PARTIAL",
+    "season": 2026,
+    "week": 8,
+    "evaluation_weeks": [
+      8
+    ],
+    "evaluation_seasons": [
+      2026
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "horizon_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3",
+    "forecast_rows": 205,
+    "scored_forecast_rows": 205,
+    "issued_forecast_rows": 205,
+    "pending_rows": 0,
+    "unknown_rows": 0,
+    "abstention_rows": 0,
+    "fallback_rows": 5,
+    "fallback_unknown_rows": 0,
+    "unique_games": 12,
+    "unique_players": 205,
+    "scored_key_sha256": "2e2f80f37cf42e513d722f076e598aa59cc8cc129bee11619722f0c12bab1ac7",
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 108,
+        "denominator": 205
+      },
+      "abs_le_1": {
+        "numerator": 113,
+        "denominator": 205
+      },
+      "abs_lt_5": {
+        "numerator": 202,
+        "denominator": 205
+      },
+      "abs_le_5": {
+        "numerator": 202,
+        "denominator": 205
+      },
+      "abs_lt_10": {
+        "numerator": 205,
+        "denominator": 205
+      },
+      "abs_le_10": {
+        "numerator": 205,
+        "denominator": 205
+      }
+    },
+    "source_vintage": "AUTHENTIC_SAVED_PREGAME_OUTPUT_CURRENT_VINTAGE_FINAL_LABELS",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "uncertainty": "INSUFFICIENT_WEEK_CLUSTERS_ONE_EXPOSED_WEEK; paired game sensitivity separately where supported",
+    "whole_week_complete": false,
+    "scoring_version": "v2-week8-saved-capture-library-grading-v1",
+    "null_reason": null,
+    "n": 205,
+    "mae": 1.3167063840407143,
+    "mse": 3.103466907153259,
+    "rmse": 1.76166594652711,
+    "bias": 0.04298653714523758,
+    "p90_abs": 2.8511508951406648,
+    "p95_abs": 3.75,
+    "max_abs": 5.782608695652174,
+    "exact_rate": 0.01951219512195122,
+    "abs_lt_1": 0.526829268292683,
+    "abs_le_1": 0.551219512195122,
+    "abs_lt_5": 0.9853658536585366,
+    "abs_le_5": 0.9853658536585366,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "W8-NUM-4203ec04d7997b0b8717779f",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory",
+    "capture_version": "D1_D2",
+    "history_regime": "H-MULTI",
+    "product_id": "mean",
+    "information_policy": "COMMON-2022-MEMORY",
+    "availability_arm": "NONE",
+    "target": "rec_yd",
+    "method_key": "c39b03281bf6e530dc7ee07d",
+    "evaluation_panel_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3:D1_D2",
+    "time_panel_id": "2026_W8_PARTIAL",
+    "season": 2026,
+    "week": 8,
+    "evaluation_weeks": [
+      8
+    ],
+    "evaluation_seasons": [
+      2026
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "horizon_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3",
+    "forecast_rows": 205,
+    "scored_forecast_rows": 205,
+    "issued_forecast_rows": 205,
+    "pending_rows": 0,
+    "unknown_rows": 0,
+    "abstention_rows": 0,
+    "fallback_rows": 4,
+    "fallback_unknown_rows": 0,
+    "unique_games": 12,
+    "unique_players": 205,
+    "scored_key_sha256": "9a77632f9bfb1485017a8bb68cb3345f4a5abdd7c02524bc64dcc8c94af0882e",
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 3,
+        "denominator": 205
+      },
+      "abs_le_1": {
+        "numerator": 3,
+        "denominator": 205
+      },
+      "abs_lt_5": {
+        "numerator": 35,
+        "denominator": 205
+      },
+      "abs_le_5": {
+        "numerator": 36,
+        "denominator": 205
+      },
+      "abs_lt_10": {
+        "numerator": 87,
+        "denominator": 205
+      },
+      "abs_le_10": {
+        "numerator": 87,
+        "denominator": 205
+      }
+    },
+    "source_vintage": "AUTHENTIC_SAVED_PREGAME_OUTPUT_CURRENT_VINTAGE_FINAL_LABELS",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "uncertainty": "INSUFFICIENT_WEEK_CLUSTERS_ONE_EXPOSED_WEEK; paired game sensitivity separately where supported",
+    "whole_week_complete": false,
+    "scoring_version": "v2-week8-saved-capture-library-grading-v1",
+    "null_reason": null,
+    "n": 205,
+    "mae": 18.589333210001172,
+    "mse": 735.6867319130239,
+    "rmse": 27.12354571056343,
+    "bias": -1.6484159602207749,
+    "p90_abs": 42.41696859984094,
+    "p95_abs": 52.61597026692714,
+    "max_abs": 128.9355940136223,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.014634146341463415,
+    "abs_le_1": 0.014634146341463415,
+    "abs_lt_5": 0.17073170731707318,
+    "abs_le_5": 0.17560975609756097,
+    "abs_lt_10": 0.424390243902439,
+    "abs_le_10": 0.424390243902439
+  },
+  {
+    "record_id": "W8-NUM-af84d3a01ad9e8bf5fc95725",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "capture_version": "AVAILABILITY_AB",
+    "history_regime": "H-CURRENT",
+    "product_id": "mean",
+    "information_policy": "AVAILABILITY-B",
+    "availability_arm": "B",
+    "target": "rush_rec_yd",
+    "method_key": "ad06af4e8ef3eadf7a788363",
+    "evaluation_panel_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3:AVAILABILITY_AB",
+    "time_panel_id": "2026_W8_PARTIAL",
+    "season": 2026,
+    "week": 8,
+    "evaluation_weeks": [
+      8
+    ],
+    "evaluation_seasons": [
+      2026
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "horizon_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3",
+    "forecast_rows": 157,
+    "scored_forecast_rows": 157,
+    "issued_forecast_rows": 157,
+    "pending_rows": 0,
+    "unknown_rows": 0,
+    "abstention_rows": 0,
+    "fallback_rows": 1,
+    "fallback_unknown_rows": 0,
+    "unique_games": 12,
+    "unique_players": 157,
+    "scored_key_sha256": "562600904e4cb5a2befa7064742e36a84b880b51238e78ce528f768cb4a5df73",
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 4,
+        "denominator": 157
+      },
+      "abs_le_1": {
+        "numerator": 4,
+        "denominator": 157
+      },
+      "abs_lt_5": {
+        "numerator": 23,
+        "denominator": 157
+      },
+      "abs_le_5": {
+        "numerator": 23,
+        "denominator": 157
+      },
+      "abs_lt_10": {
+        "numerator": 53,
+        "denominator": 157
+      },
+      "abs_le_10": {
+        "numerator": 53,
+        "denominator": 157
+      }
+    },
+    "source_vintage": "AUTHENTIC_SAVED_PREGAME_OUTPUT_CURRENT_VINTAGE_FINAL_LABELS",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "uncertainty": "INSUFFICIENT_WEEK_CLUSTERS_ONE_EXPOSED_WEEK; paired game sensitivity separately where supported",
+    "whole_week_complete": false,
+    "scoring_version": "v2-week8-saved-capture-library-grading-v1",
+    "null_reason": null,
+    "n": 157,
+    "mae": 24.232620686098432,
+    "mse": 1188.4953377253073,
+    "rmse": 34.474560732884,
+    "bias": -1.5986110047618143,
+    "p90_abs": 55.39554031494282,
+    "p95_abs": 73.1923497530661,
+    "max_abs": 151.18101152730785,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.025477707006369428,
+    "abs_le_1": 0.025477707006369428,
+    "abs_lt_5": 0.1464968152866242,
+    "abs_le_5": 0.1464968152866242,
+    "abs_lt_10": 0.3375796178343949,
+    "abs_le_10": 0.3375796178343949
+  },
+  {
+    "record_id": "W8-NUM-1d2ffff57bc1f32847b6d6fc",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "capture_version": "AVAILABILITY_AB",
+    "history_regime": "H-CURRENT",
+    "product_id": "mean",
+    "information_policy": "AVAILABILITY-B",
+    "availability_arm": "B",
+    "target": "nick-chart-ppr-v1",
+    "method_key": "09960a7f35345eaea6008094",
+    "evaluation_panel_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3:AVAILABILITY_AB",
+    "time_panel_id": "2026_W8_PARTIAL",
+    "season": 2026,
+    "week": 8,
+    "evaluation_weeks": [
+      8
+    ],
+    "evaluation_seasons": [
+      2026
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "horizon_id": "ALL_ISSUED_COMPATIBLE_METHOD_COMMON_FINAL_ROWS_V3",
+    "forecast_rows": 231,
+    "scored_forecast_rows": 231,
+    "issued_forecast_rows": 231,
+    "pending_rows": 0,
+    "unknown_rows": 0,
+    "abstention_rows": 0,
+    "fallback_rows": 4,
+    "fallback_unknown_rows": 0,
+    "unique_games": 12,
+    "unique_players": 231,
+    "scored_key_sha256": "05e9df2d54e33790f8d7375bdf22086d7d4880cb7d8c8b905e7bf9ca2dec9d12",
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 23,
+        "denominator": 231
+      },
+      "abs_le_1": {
+        "numerator": 23,
+        "denominator": 231
+      },
+      "abs_lt_5": {
+        "numerator": 144,
+        "denominator": 231
+      },
+      "abs_le_5": {
+        "numerator": 144,
+        "denominator": 231
+      },
+      "abs_lt_10": {
+        "numerator": 203,
+        "denominator": 231
+      },
+      "abs_le_10": {
+        "numerator": 203,
+        "denominator": 231
+      }
+    },
+    "source_vintage": "AUTHENTIC_SAVED_PREGAME_OUTPUT_CURRENT_VINTAGE_FINAL_LABELS",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "uncertainty": "INSUFFICIENT_WEEK_CLUSTERS_ONE_EXPOSED_WEEK; paired game sensitivity separately where supported",
+    "whole_week_complete": false,
+    "scoring_version": "v2-week8-saved-capture-library-grading-v1",
+    "null_reason": null,
+    "n": 231,
+    "mae": 5.105402003016473,
+    "mse": 47.071264782245905,
+    "rmse": 6.860850150108652,
+    "bias": 0.09754341476720309,
+    "p90_abs": 11.587887512037845,
+    "p95_abs": 14.875954728611397,
+    "max_abs": 28.327528309577716,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.09956709956709957,
+    "abs_le_1": 0.09956709956709957,
+    "abs_lt_5": 0.6233766233766234,
+    "abs_le_5": 0.6233766233766234,
+    "abs_lt_10": 0.8787878787878788,
+    "abs_le_10": 0.8787878787878788
+  }
+]

@@ -1,0 +1,215 @@
+{
+  "id": "B-ANYTIME-HGB-CURRENT-ORIGIN-INPUT-FEASIBILITY-v1",
+  "checked_UTC": "2026-11-12T01:57:05.026733+00:00",
+  "state": "FEASIBLE_INPUTS_WITH_BOUND_CURRENT_ADAPTER_CONTRACT_NO_FIT_YET",
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0,
+  "new_scores": 0,
+  "exact_candidate": {
+    "procedure": "hgb-direct-history-controls-v1:log_loss_probability",
+    "history": "H-MULTI",
+    "target": "at least1 credited rushing-or-receiving TD; excludes passing/returnTD",
+    "product": "event_probability; prospective forecast-only SHADOW, no offered side/confidence/EV/primary activation",
+    "training_roles": [
+      "QB",
+      "RB",
+      "WR",
+      "TE"
+    ],
+    "primary_query_roles": [
+      "RB",
+      "WR",
+      "TE"
+    ],
+    "features": [
+      "mean3",
+      "n3",
+      "mean8",
+      "n8",
+      "lag1_value",
+      "lag1_age_days",
+      "lag1_missing",
+      "lag2_value",
+      "lag2_age_days",
+      "lag2_missing",
+      "lag3_value",
+      "lag3_age_days",
+      "lag3_missing",
+      "lag4_value",
+      "lag4_age_days",
+      "lag4_missing",
+      "position_QB",
+      "position_RB",
+      "position_WR",
+      "position_TE"
+    ],
+    "params": {
+      "categorical_features": null,
+      "early_stopping": false,
+      "l2_regularization": 10,
+      "learning_rate": 0.05,
+      "max_bins": 255,
+      "max_depth": 3,
+      "max_iter": 64,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 10,
+      "random_state": 1701
+    },
+    "min_training": 40,
+    "binary_fit_requirement": "both classes; otherwise same-arm explicit empirical fallback",
+    "feature_mean": "only finite known target values among latest3/latest8 record slots",
+    "feature_missing": "unknown/unplayed slots consume chronological slots, lag unknown encoded NaN/missing1; last4 game age/value/missing retain original order",
+    "noninputs": [
+      "PPR/fantasy total",
+      "EPA",
+      "NGS",
+      "routes",
+      "markets",
+      "current target-game outcomes"
+    ]
+  },
+  "target_semantics": {
+    "participation": "Legacy positive official physical-count or nonzero signed-yard proof, preserving fullPHYSICAL_COUNTS/PHYSICAL_YARDS lists in helper. A stat row or participation alone does not manufacture missing TD components.",
+    "binary_one": "Either finite valid nonnegative integer component>0, provided neither observed component is invalid",
+    "binary_zero": "Both rushing_tds and receiving_tds explicitly valid numeric0 after participation proof",
+    "binary_unknown": "Missing/invalid necessary zero evidence or unproved participation; never filled with0"
+  },
+  "exact_source_plan": {
+    "older": "Retain exact frozen2022–2025 basic-stat inputs unchanged, alreadyhashverified in approved localcache",
+    "current_2026": "Reuse the full already-authorized November7 B weekly snapshot SHA bbb261be576e15e62c3cdfa57ea7d606e12993233ee53a1f9d464b733e379d45 (3781814B). It preserves all legacy physical-proof fields and addsW8. No new NFL source collection required.",
+    "query": "Existing C current-known roster/schedule/finality projections; fresh native event admission remains a root/registered-owner action before persistence. ACT basic role scope is conditional appearance, not confirmed starter/transaction-effective certainty.",
+    "C_snapshot": {
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "d3d1ef4dc60826334234cfa1a1b8e373b2ee024e",
+      "path": "sources/profile-closure-next-02/current_facts_2026.csv.gz",
+      "bytes": 161447,
+      "sha256": "350ecd653332dde323e67097459cdd7662ec729aba977a1ea3f92c57bf1e346a"
+    },
+    "C_use": "Use C current facts to validate common target/team/role bindings, not as a lossy replacement for full B physical-proof history."
+  },
+  "parity": {
+    "frozen_2026_W1_W7": {
+      "rows": 2394,
+      "all_required_target_and_physical_fields_identical": 2394,
+      "played_and_binary_target_states_identical": 2394,
+      "missing_old_keys": 0
+    },
+    "later_B_source": {
+      "missing_required_fields": [],
+      "W8_slots": 308,
+      "W8_known_played_TD_labels": 302
+    },
+    "shared_B_C": {
+      "rows": 2725,
+      "TD_components_equal": 2725,
+      "team_opponent_role_equal": 2725
+    },
+    "rejected_C_compact_only": {
+      "status": "REJECTED_AS_INCOMPATIBLE_EXACT_HISTORY_ROUTE",
+      "old_overlap": 2394,
+      "played_and_target_states_equal": 2262,
+      "known_zero_labels_lost_without_full_proof": 132,
+      "missing_physical_proof_fields": [
+        "def_interception_yards",
+        "def_interceptions",
+        "def_sacks",
+        "def_tackle_assists",
+        "def_tackles_solo",
+        "def_tackles_with_assist",
+        "fg_att",
+        "fumble_recovery_opp",
+        "fumble_recovery_own",
+        "fumble_recovery_yards_opp",
+        "fumble_recovery_yards_own",
+        "kickoff_return_yards",
+        "misc_yards",
+        "pt_att",
+        "punt_return_yards",
+        "sack_yards_lost"
+      ],
+      "reason": "Compact C omits defensive/special-team physical-proof inputs. Treating every zero asknown or using only visible positiveoffense flags would change132 old targets. Reusing full B source avoids this defect; no C source defect or NFL-score change is claimed."
+    }
+  },
+  "current_time_contract": {
+    "policy": "Retained kickoff+7days strict-earlier reconstruction comparator, applied consistently to training labels, historical training features and query features",
+    "source_vintage": "Current/revised snapshots with actual retrieval clocks; proxy availability is never authenticated initial publication",
+    "current_origin": "Actual UTC registered once before this one fit; dynamic eligible labels available<origin; query cutoff actual registered featureorigin",
+    "W9": "NoW9 game admitted at the checked2026-11-12~01:54UTC origin under7daypolicy. EarliestW9 kickoff2026-11-06T01:15UTC plus7days is2026-11-13T01:15UTC; missingW9nativefinality cannot affect this prefix.",
+    "W8": "AllW8 game identities require matching retained completed-game proof. C manifest alreadylists14W8games, and retainedBfullsource includes them; root checks exactgames/cutoff when assembling.",
+    "future_query": "No target-game stat/availability row is required. Canonical player/event/team/role comes from scoped pregame source. Fresh native event status and unexpired source/persistence gate remain separate required runtime stages."
+  },
+  "current_adapter_changes": {
+    "required": [
+      "Replace legacy hardcoded2026W<=7 history cap and W8-only query/origin wrapper with dynamic current-origin admission; retain exact feature builder/target/role/fit/fallback semantics",
+      "Preserve source/identity/deduplication and historical game kickoff checks; fixed7day ordering makes availability order equal game-time order; explicit unknown observation times must not be promoted to authenticated availability",
+      "Use originalmake_estimator and feature order, no tuning/correction/calibration, no fresh lag/profile recipe",
+      "Fit once before inference; preserve actual model/source/query/issue/persistence clocks; never present oldW8fit as current",
+      "Keep all currentqueryfallback/unknowns and game-start abstention; preserve existing B10 packet unchanged"
+    ],
+    "code_anchors": [
+      "nfl_v2/hgb_control.py:FeatureHistory",
+      "nfl_v2/hgb_control.py:make_estimator",
+      "nfl_v2/hgb_control.py:train_indices",
+      "nfl_v2/empirical_benchmark.py:target_value",
+      "nfl_v2/empirical_benchmark.py:Series"
+    ],
+    "unchanged_empirical_reference": "At exact current cutoff and same H-MULTI target/role source contract, use own-player earlier binary empirical mean; ifempty same-position empirical mean; ifempty literal0. No evaluation-fitted prevalence reference. Preserve own/prior/zero fallback provenance."
+  },
+  "practical_resources": {
+    "historical_W8_training_n": 25228,
+    "historical_W8_fit_wall_seconds": 0.14582,
+    "historical_W8_compressed_model_bytes": 19486,
+    "historical_full452fit_wave_CPU_seconds": 80.762308509,
+    "historical_full_wave_peak_RSS_bytes": 409804800,
+    "one_current_origin_estimate": "Order ofseconds and a smallmodel at this scale; not an actual currentbenchmark. Root should register finite1fit, two threads, e.g60CPU/120wallseconds,512MiBRSS and boundedprivate artifacts within existing allocation; measuredusagemustreplace estimate afterexecution."
+  },
+  "restoration": {
+    "untrusted_loading": "No pickle was loaded in this check. Current fit can use ownfresh model locally under hashbinding. No need to restore oldpickle to fit same registered recipe.",
+    "safe_public_tree_option": "No reusable pure-JSON HGB inference adapter was located in the inspectedBtools. If root implements one, export ownfitted baseline/classes and64numeric tree predictors including missingrouting/thresholds/leafvalues; enforce20-feature order and verify predict_proba parity on allcurrent queries plus boundary/missing fixtures. This is output-preserving packaging and mustnot be treated as new predictive evidence.",
+    "retention": "RawCSV/fullhistoricalrowandfeaturematrices remain under established approvedprivate retention. CC-BY4 source license permits attribution-based use but doesnot waive inherited user/source retention limits. Public code/schema/modelbindings/aggregate receipt/typed permittedderivedforecast outputs use existing export route. Do not assume every20featurematrix can be public merely because componentsarelicensed. Current minimal factualvectors onlyunder the existing specificallypermitted basic-facts projection contract; otherwise keep privateand publishhashes."
+  },
+  "completion": "Root registers finite1current-originfit+unchangedempiricalreference beforefit; verifies trustedadapter/source/role/currentevent and private/publicretention; persists genuinelynewforecast-onlySHADOWpacket and records actual publication/consumer receipt. No primaryswitch or per-pick confidence label follows from duration or thisfeasibilitycheck.",
+  "public_bindings": [
+    {
+      "path": "reports/continuation-20261029/hgb-history-v1/FROZEN_PROTOCOL.json",
+      "bytes": 63290,
+      "sha256": "8ea88fc4b558d57f46003aaba20cb10af604998f9a7c17c76eb2fb130215794e"
+    },
+    {
+      "path": "reports/continuation-20261029/hgb-history-v1/W08-anytime_td-H-MULTI-log_loss_probability-FIT.json",
+      "bytes": 1129,
+      "sha256": "d543e56dcb6238f1de243f38fe5808ecf9f025a45a753730187cf75deb691ea3"
+    },
+    {
+      "path": "reports/continuation-20261029/hgb-history-v1/RUN_RECEIPT.json",
+      "bytes": 1091,
+      "sha256": "326ed2b7f6f25d5a972a8f4e210cf7546b09bf8c0f229ed4d149d8745a981ea3"
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-qualification-v1/SOURCE_EXTENSION_RECEIPT_V2.json",
+      "bytes": 586,
+      "sha256": "488a449628eb43ad81788253886f13df393b75c5d4bbff0a686f672e37ce6647"
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/source-qualification-v1/SOURCE_EXTENSION_REGISTRATION_V2.json",
+      "bytes": 683,
+      "sha256": "35bc5ed9155e99bf1f6b04fcf4399ccee4b75fc51856c6b259960928794c0b2f"
+    },
+    {
+      "path": "reports/profile-timing-closure-confirm-01/B/forward-receipts/current-inputs/CURRENT_INPUT_DERIVATION_RECEIPT_V1.json",
+      "bytes": 12096,
+      "sha256": "13ead3892c165b9e0d1e81cd074402364d82ea54526a59c044605caa2540f1e3"
+    },
+    {
+      "path": "nfl_v2/hgb_control.py",
+      "bytes": 25899,
+      "sha256": "13ad5627152d4aed81540f93088b63716acb98a00bce52089a8ec8cbb619cccf"
+    },
+    {
+      "path": "nfl_v2/empirical_benchmark.py",
+      "bytes": 24136,
+      "sha256": "53ea90595bdc83a11289ef4daeec795b0bb320ce23b8c8ee8dddcdb6ca88d085"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "state": "PASS_SOURCE_BOUND_METADATA_AND_OPTIONAL_CONTROL_SOURCE_BINDINGS",
+  "source_score_sha256": "32c23372661e1da18a0f80c57e66b6ee9ab30d1d233aae3af5370bf09c875314",
+  "annotation_sha256": "a4d17db468f025f08a6f10439b8b7755e7854a91fc665c636e87fb40430fd19c",
+  "source_bound_rows": 2686,
+  "allowed_fields": {
+    "time_panel_id": 2676,
+    "history_regime": 310,
+    "horizon_id": 550,
+    "source_vintage": 550
+  },
+  "exact_old_control_history_rows_preserved": 240,
+  "old_optional_source_hashes_verified_against_completed_independent_replay": true,
+  "old_fallback_values": [
+    {
+      "source_name": "all-predictions.csv.gz",
+      "counts": {
+        "none": 1092,
+        "cold_start_role_prior": 24
+      },
+      "procedures": {
+        "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory": 968,
+        "v2-distribution-controls-reconstruction-v1:ordered_leaf_cdf:common-feature-memory": 148
+      }
+    },
+    {
+      "source_name": "predictions.csv.gz",
+      "counts": {
+        "none": 5160,
+        "cold_start_role_prior": 152
+      },
+      "procedures": {
+        "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory": 2656,
+        "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory": 2656
+      }
+    }
+  ],
+  "no_metric_forecast_grade_or_choice_fields_permitted": true,
+  "limits": "Metadata qualification does not authenticate historical source/quote clocks; all numerical and direction scores remain bound to unchanged raw source. No falseBoolean fallback strings in actual admittedCSVschema.",
+  "scorer_calls": 0,
+  "fits": 0
+}

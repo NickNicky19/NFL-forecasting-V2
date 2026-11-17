@@ -1,0 +1,29 @@
+{
+  "state": "SCOPED_TARGET_SOURCE_HORIZON_LABELS;NO_SCIENTIFIC_CHANGE",
+  "at_utc": "2026-11-05T01:10:47.270464+00:00",
+  "sources": [
+    {
+      "source": "reports/post-wave-5w-v1/b-confidence-ordering-v1/SCORES.json",
+      "sha256": "0482ebfe4d16370116f8b053b7302b0e870be1ed11afeb625a0bd52d40f709b4",
+      "annotations": "reports/post-wave-5w-v1/b-confidence-ordering-v1/SOURCE_HORIZON_QUALIFICATION_V1.json",
+      "annotation_sha256": "d4b904adef93f7961f52fdaa2a9635220436593233a1c3858bf6c401492f59ff",
+      "qualified_rows": 25
+    },
+    {
+      "source": "reports/post-wave-5w-v1/B-111-RB-common-mask-v3/SCORES.json",
+      "sha256": "6434ec811f2cc18297b28d319d2bae19a05134860d72f1a61dff68b86ea689a3",
+      "annotations": "reports/post-wave-5w-v1/B-111-RB-common-mask-v3/SOURCE_HORIZON_QUALIFICATION_V1.json",
+      "annotation_sha256": "377fa6f99b36be6f21ec64ceca6652c78055d659274eec9f1629759f88a2507a",
+      "qualified_rows": 468
+    }
+  ],
+  "old_unqualified_index_stages_preserved": [
+    "results-index-v1",
+    "results-index-v2"
+  ],
+  "current_rebuild_parent": "reports/abc-predictive-improvement-01/b-intercept-v1/results-index-v5/INDEX_MANIFEST.json",
+  "new_fits": 0,
+  "new_scoring": 0,
+  "new_NFL_observations": 0,
+  "reason": "Legacy helper PREKICK_CLOSE label does not authenticate quote timing; PTearlierWeek6development is not the Week8captured-base horizon. Existing clocks/data/metrics were already correct; qualifying display metadata only."
+}

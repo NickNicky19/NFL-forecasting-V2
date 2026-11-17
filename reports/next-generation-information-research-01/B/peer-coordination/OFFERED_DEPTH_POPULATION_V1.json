@@ -1,0 +1,45 @@
+{
+  "id": "B_NATIVE_OFFER_DEPTH_POPULATION_SCOPE_v1",
+  "scope": "Counts only, no fitted prediction/grade or accuracy; raw retained rows remain owner-local",
+  "weeks": {
+    "5": {
+      "CMP_offers": 28,
+      "kickoff_asof_depth_rank_counts": {
+        "1": 26,
+        "2": 2
+      },
+      "latest_kickoff_depth_observation_after_source_retained_clock": 0,
+      "source_retained_vs_kickoff_depth_rank_changes_or_unavailable": 0
+    },
+    "6": {
+      "CMP_offers": 28,
+      "kickoff_asof_depth_rank_counts": {
+        "1": 26,
+        "2": 2
+      },
+      "latest_kickoff_depth_observation_after_source_retained_clock": 2,
+      "source_retained_vs_kickoff_depth_rank_changes_or_unavailable": 0
+    },
+    "7": {
+      "CMP_offers": 28,
+      "kickoff_asof_depth_rank_counts": {
+        "1": 27,
+        "2": 1
+      },
+      "latest_kickoff_depth_observation_after_source_retained_clock": 16,
+      "source_retained_vs_kickoff_depth_rank_changes_or_unavailable": 0
+    },
+    "8": {
+      "CMP_offers": 28,
+      "kickoff_asof_depth_rank_counts": {
+        "1": 28
+      },
+      "latest_kickoff_depth_observation_after_source_retained_clock": 18,
+      "source_retained_vs_kickoff_depth_rank_changes_or_unavailable": 0
+    }
+  },
+  "clock_interpretation": "Source retained-by clock is not original quote timestamp. Kickoff features remain retrospective known-target-time analysis; using later depth observations does not authenticate execution at earlier retained line horizon.",
+  "evidence_tier": "CURRENT_VINTAGE_TIMESTAMPED_DEPTH_RECONSTRUCTION_AT_KICKOFF_WITH_RETAINED_ACTUAL_LINE;quote-time execution unverified",
+  "new_fits": 0,
+  "new_scores": 0
+}

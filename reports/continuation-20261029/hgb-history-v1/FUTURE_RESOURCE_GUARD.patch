@@ -1,0 +1,39 @@
+--- a/nfl_v2/hgb_control.py
++++ b/nfl_v2/hgb_control.py
+@@ -27,7 +27,8 @@
+ from . import empirical_benchmark as empirical
+ from .week8_shadow import schedules, utc
+ 
+-VERSION = "v2-hgb-direct-history-controls-v1"
++VERSION = "v2-hgb-direct-history-controls-v2"
++from .hgb_control_guards import OutputViewBudget, expected_output_views
+ TARGETS = tuple(empirical.MAP) + ("rush_rec_yd", "anytime_td")
+ POSITIONS = ("QB", "RB", "WR", "TE")
+ ARMS = ("H-CURRENT", "H-RECENT", "H-MULTI")
+@@ -211,6 +212,9 @@
+     future_origin=datetime.now(timezone.utc).timestamp()
+     immutable_json(public_root/'EXECUTION_REGISTRATION.json',dict(version=VERSION,protocol_sha256=sha(protocol_path),actual_week8_feature_origin_utc=datetime.fromtimestamp(future_origin,timezone.utc).isoformat(),actual_started_at=now(),environment=dict(python=platform.python_version(),numpy=np.__version__,sklearn=sklearn.__version__),params=PARAMS))
+     queries=json.loads((private_root/'frozen-queries.json').read_text())
++    output_budget=OutputViewBudget(protocol['budget']['max_forecast_rows'])
++    expected=expected_output_views(queries['historical']+queries['week8'])
++    if expected>output_budget.limit:raise RuntimeError('FORECAST_ROW_BUDGET_PREFLIGHT')
+     source_rows,games,source_counts=load_source(source_root,protocol);lookup={(r['game_id'],r['player_id']):r for r in source_rows}
+     feature_history=FeatureHistory(source_rows);datasets={};fallbacks={}
+     for target in TARGETS:
+@@ -232,7 +236,7 @@
+         historical[int(q['week'])].append(dict(q,kickoff=r['kickoff'],cutoff=r['kickoff'],actual=r['values'][q['target']],blocked_reason=None))
+     future=[dict(q,season=2026,week=8,population='original_pregame_feed',kickoff=utc(q['kickoff_utc']).timestamp(),cutoff=future_origin,actual=None) for q in queries['week8']]
+     origins={w:min(g['kickoff'] for g in games.values() if g['season']==2026 and g['week']==w) for w in range(1,8)};origins[8]=future_origin
+-    fits=[];model_count=fit_calls=private_bytes=0;forecast_count=0;all_records=[];week8_records=[];failures=[];grid=[]
++    fits=[];model_count=fit_calls=0;private_bytes=sum(p.stat().st_size for p in private_root.rglob('*') if p.is_file());forecast_count=0;all_records=[];week8_records=[];failures=[];grid=[]
+     metric_groups=collections.defaultdict(empirical.Metrics)
+     (private_root/'models').mkdir(exist_ok=True);(private_root/'query-features').mkdir(exist_ok=True);(private_root/'prediction-chunks').mkdir(exist_ok=True)
+     def check_budget():
+@@ -265,6 +269,7 @@
+                     for arm in ARMS:
+                         indices=train_indices(trainrows,origin,fit_floor(arm))
+                         for objective in objectives(target):
++                            output_budget.reserve(len(qrows))
+                             check_budget();slot=f'W{week:02}-{target}-{arm}-{objective}';model=None;fitstate='NO_FIT_INSUFFICIENT_TRAINING';model_packet=None
+                             audit=dict(slot=slot,origin=week,target=target,history_regime=arm,objective=objective,training_n=len(indices),fit_cutoff_utc=datetime.fromtimestamp(origin,timezone.utc).isoformat(),latest_training_label_available=max((trainrows[i]['available'] for i in indices),default=None),latest_training_feature_available=max((trainmax[i] for i in indices if trainmax[i] is not None),default=None),training_seasons=sorted({trainrows[i]['season'] for i in indices}),training_membership_sha256=hashlib.sha256(canonical([(trainrows[i]['game_id'],trainrows[i]['player_id']) for i in indices])).hexdigest(),actual_fit_started_at=None,actual_fit_completed_at=None)
+                             if len(indices)>=40 and (target!='anytime_td' or len(np.unique(trainy[indices]))==2):

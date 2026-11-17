@@ -1,0 +1,60 @@
+{
+  "classic": {
+    "capture_identity_computed": "fb080a82123f6641ca2b9bae217ecac25b56196cfced64bd4b3e0698e04da575",
+    "capture_identity_equal": true,
+    "capture_identity_path_stem": "fb080a82123f6641ca2b9bae217ecac25b56196cfced64bd4b3e0698e04da575",
+    "execution_contract_hash_equal": true,
+    "gzip_byte_sha256": "90f5d2ddb2c78898fab79bb819bb4ddd965d962f113ff8509f050af1f986f134",
+    "payload_declared_sha256": "8b98ab96985174d4372b6308df34ae4821cb2a7b335ad4dbb1b7809f69ceaa3d",
+    "payload_hash_equal": true,
+    "payload_raw_canonical_sha256": "8b98ab96985174d4372b6308df34ae4821cb2a7b335ad4dbb1b7809f69ceaa3d"
+  },
+  "observed_at": "2026-10-31T18:51:42.041294+00:00",
+  "schema": "owner-runtime-source-binding-and-capture-validation-v1",
+  "selected": {
+    "all_required_identity_line_direction_clocks_present": true,
+    "all_selected_before_kickoff": true,
+    "by_category_side": {
+      "pass_att|over": 1,
+      "pass_att|under": 2,
+      "pass_int|over": 1,
+      "pass_td|over": 1,
+      "rec_yd|under": 6,
+      "rec|over": 3,
+      "rec|under": 1,
+      "rush_att|over": 2,
+      "rush_rec_yd|under": 1,
+      "rush_yd|over": 4,
+      "rush_yd|under": 2
+    },
+    "classification": "ORIGINAL_RECORDED_PLAYER_OFFER_DIRECTION_SELECTION_VERSION; sportsbook settlement and actual quote-time executability unestablished",
+    "duplicate_same_contract_count": 0,
+    "line_source_counts": {
+      "dk": 24
+    },
+    "over_records": 12,
+    "points_or_prices_not_decoded": true,
+    "records": 24,
+    "side_bucket_matches_recorded_direction": true,
+    "strategy": "Owner selected-projection-gap-classic-v1; top12perSIDE acrosseligibleplayeroffers,24combined; not our research P2probabilitydirection rule",
+    "under_records": 12,
+    "unique_player_offer_identity": 24,
+    "unique_player_offer_line_contracts": 24
+  },
+  "selection_version_overlap": {
+    "interpretation": "New persistence/version is not a new independentNFLsample. Preserve both immutable versions; grading/selection-assignment rule not altered here.",
+    "new_only_contracts": 13,
+    "new_private_cache_bytes": 35496,
+    "new_rows": 24,
+    "old_commit": "1ec93e068a91abd51c990937d1019e4a831694b4",
+    "old_only_contracts": 13,
+    "old_payload_declared_sha256": "fd85f83d43d59b17707c987717fa18476cfecf786d0ba7d4f00568ca08c64949",
+    "old_payload_hash_equal": true,
+    "old_payload_sha256": "fd85f83d43d59b17707c987717fa18476cfecf786d0ba7d4f00568ca08c64949",
+    "old_pointer_sha256": "d403445927d73f0abc439bc5b3798851a1d6154e0dc16a20182dad068d008f71",
+    "old_rows": 24,
+    "same_contract_direction_changes": 0,
+    "same_contract_same_direction": 11,
+    "same_player_category_line_contracts": 11
+  }
+}

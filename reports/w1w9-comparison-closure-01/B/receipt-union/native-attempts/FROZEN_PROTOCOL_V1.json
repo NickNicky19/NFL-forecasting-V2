@@ -1,0 +1,87 @@
+{
+  "id": "B_NATIVE_ATT_COMMON_EXPOSURE_FIXED_SAVED_OUTPUTS_v1",
+  "state": "FROZEN_BEFORE_NEW_ATT_COMPARATIVE_SCORES",
+  "at_UTC": "2026-11-14T19:39:48.835375+00:00",
+  "owner": "B",
+  "coordinator": "C",
+  "procedure": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+  "category": "pass_att",
+  "role": "QB",
+  "weeks": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "expected_offers": 142,
+  "history": "Original strict seven-day availability; own 8 eligible games, shared QB prior; original analytical gamma-Poisson exposure and fallback.",
+  "policies": [
+    "P1_MEAN",
+    "P1_LOWER_MEDIAN",
+    "P2_STATISTICAL_LAW",
+    "P90_EXISTING_0.90_THRESHOLD"
+  ],
+  "controls": [
+    "ALWAYS_OVER",
+    "ALWAYS_UNDER",
+    "SAVED_ADJUSTED",
+    "SAVED_RAW",
+    "EARLIER_LINE_PREVALENCE"
+  ],
+  "decision": "Strict unrounded point vs exact line; P2 Over/Under mass argmax; ties abstain; P90 unchanged selected-side mass >= .90.",
+  "panel": "Retained native W5-9 actual-source-labelled attempts; 141 DraftKings + one W6 Sleeper Picks source-labelled market; quote clocks and main/alternate unverified.",
+  "source_owner_receipt": "Root inspected exact W6 build/books code at 5bffd5c332b8cf8fa625089047013b4da2176377; DK-first then Sleeper Picks market, separate provider projection. Raw API flags and quote clocks not preserved.",
+  "numerical": "Only typed mean/median and saved point controls; no point error assigned to P2/P90.",
+  "probability": "Strict-binary Over and half-multiclass Brier; exact three-state logloss; reliability; physical-participation conditioning, not guaranteed venue nonvoid.",
+  "population": "Native exact offers only; no annual87 union, original issuance, full W1-9 or league-complete claim.",
+  "tuning": "None; no new mechanisms, fit or threshold search.",
+  "source_bindings": [
+    {
+      "week": 5,
+      "sha256": "7ebb7e3b546147f8e7f10fa887fd295f2d72f88eb70600a22448ad29feff69fe",
+      "bytes": 3159
+    },
+    {
+      "week": 6,
+      "sha256": "3f7ccc297f7e2dd63d1bdc6c1e625b6183f58b58f3551d4ce2aa8ad02416d5b5",
+      "bytes": 2924
+    },
+    {
+      "week": 7,
+      "sha256": "c6b2a6dfd5a983892afcc7882fea337ad105a327972ce6c5c16300e4fb5ead43",
+      "bytes": 2752
+    },
+    {
+      "week": 8,
+      "sha256": "43fc0aef34076e5d5389cb47239c9a10d68df80cd5db6973cf008b997504b2c0",
+      "bytes": 2710
+    },
+    {
+      "week": 9,
+      "sha256": "63b131964ddc110e78ec8328f6c592f9f96f59be3e946e5a45e4de848cde76f8",
+      "bytes": 3491
+    }
+  ],
+  "input_bindings": {
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2026-W05.json.gz": "4c916ef15c8ea47d998087c76ab44cb10b94508c1024f61219ea720b7769b7fc",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2026-W06.json.gz": "5a996056a1e6addef104549534f33b142d93cf32968fe4476a04e90b64ec6db8",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2026-W07.json.gz": "ba96c0a93573039fe8c83f72d9e478d3531087de51f0b6571b280b688dc21e19",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2026-W08.json.gz": "e2c0b595c9f84ff91067b2f516ec30e9549b6868f84fbadc03f5eb5b11c0a2e8",
+    "reports/w1w9-comparison-closure-01/B/modern-completion-extension/PREDICTIONS_2026_W09.json.gz": "bc077b312ef5abc4017c7504d09c05fd8d8924666bc4b8cd721bc9497ffb9856",
+    "reports/information-first-20261112-01/B/completion-wave-v1/QB_CONTEXT_W1_W9_INPUTS_V1.json.gz": "45aaab99d41f2e2643066c001355b26430f55dca06e7c7e366eace252f2e021b",
+    "reports/w1w9-comparison-closure-01/B/common-intake/COMMON_SCORER_PARITY_ADAPTER_V1.py": "f32523f9f7a4415b4472d57abe8bf1b1bd27e471d6094af7ab92ed16401796ba",
+    "reports/player-context-matchup-01/B/independent/inventory_retained_qb_offers_v1.py": "d19732461e5e32ab6c605b87f7f718644e16a05352a1da22f2307d6c1a4764f1",
+    "reports/w1w9-comparison-closure-01/B/roster/FROZEN_B_CONTRIBUTION_ROSTER_V1.json": "5cc294365211df40b46f7b8ab396e62eaa906afea8860ec1b962e54774df3f63"
+  },
+  "C_scorer_sha256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce",
+  "C_interval_sha256": "92260304be31b0fbee42faa3ab78616f77c3791bd2613edb9d322f9bbf29aa2a",
+  "budgets": {
+    "cpu_seconds": 180,
+    "peak_extra_memory_bytes": 134217728,
+    "public_bytes": 2097152,
+    "HTTP": 0,
+    "fits": 0
+  },
+  "source_code_sha256": "adfd86e0ec771601925d1ee22653ba001010fbb531ad0ed4a4a1f70f90deea56"
+}

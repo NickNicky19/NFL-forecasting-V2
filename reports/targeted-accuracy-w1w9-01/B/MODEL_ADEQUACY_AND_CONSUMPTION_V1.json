@@ -1,0 +1,1262 @@
+{
+  "state": "COMPLETED_MODEL_ADEQUACY_AND_CONSUMPTION_CHECK",
+  "BB_fits": 51,
+  "converged": 51,
+  "rows_range": [
+    327,
+    908
+  ],
+  "max_BB_BIN_mean_difference": 0.0,
+  "current_precision_range": {
+    "M2_P2_BB": [
+      141.15707526854504,
+      247.37040613112833
+    ],
+    "M2_C1_BB": [
+      151.35186626530958,
+      248.88973913138489
+    ],
+    "M2_C2_BB": [
+      154.66863328424162,
+      250.15841304145187
+    ]
+  },
+  "direct_split_counts_by_information_group": {
+    "predicted_attempt_law": 1049,
+    "predicted_context_mix": 2044,
+    "declared_dispersion_context_block": 553,
+    "opponent_context_residual": 1177,
+    "own_offense_defense_logits": 275
+  },
+  "feature_nonuse": "Zeros orabsent splits are legitimate fittednonuse; noforcedfeatures/extra fitting. BBnonzero slopes reachprecisionmodel; addedzdoesnotreach unchangedBINmean.",
+  "attribution": "Full declaredconditionalvarianceblock includingnew laggeddestination/distance, notisolatedconstantdispersionorcausalfootballquality. Newdirectisstandalonemarginalcontrolnotjoint.",
+  "optimizer": "Convergence followsregisteredrelativeobjective tolerance; neither globaloptimalitynorfullparameteruncertainty certified. Seeindependent gradient/objective receipt.",
+  "fits": [
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W16-P2-BB.json.gz",
+      "sha256": "5d723ed1fe6e9c99e828d1d3c835b144df5b36a990d9aa212a6b976cdbc0e809",
+      "rows": 503,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 10,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1098.8250224832163,
+        "rows": 503,
+        "attempts": 13461,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.5428091302822295,
+        0.12226683990686191,
+        0.1855761835017194,
+        0.08682653711262528,
+        0.1509212434504389,
+        -0.05554062125642582,
+        -0.05554062125642582
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W13-C1-BB.json.gz",
+      "sha256": "b337ccf3ced0e168b81f0d0ca2b4663bf8600562f3805b46e15dd583928cf40c",
+      "rows": 398,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 866.8439842327679,
+        "rows": 398,
+        "attempts": 10631,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.594012325779108,
+        0.11564249293491295,
+        0.16540793640821697,
+        0.07516280779580893,
+        0.14456527715413103,
+        -0.03041319179971888,
+        -0.03041319179971888
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W18-C2-BB.json.gz",
+      "sha256": "d67351796e5d2afd23dc9470ff46bead667fd4b5f98955adb00b844db10c0149",
+      "rows": 590,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1269.2034380843493,
+        "rows": 590,
+        "attempts": 15645,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.241479580375396,
+        0.1459678341184633,
+        0.17541444865571257,
+        0.08096992218138355,
+        0.13790569731871047,
+        -0.013894394530401923,
+        -0.013894394530401923
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W14-P2-BB.json.gz",
+      "sha256": "13e828c0efac819fe6bbba3a6b95b1ebffb10494dafa1f1f3b3a18f95b65df62",
+      "rows": 434,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 10,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 942.7644871809391,
+        "rows": 434,
+        "attempts": 11693,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.429273402954288,
+        0.12823677392667782,
+        0.18606415997980952,
+        0.08330775399479018,
+        0.15889832061557857,
+        -0.03358243082133057,
+        -0.03358243082133057
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W05-C2-BB.json.gz",
+      "sha256": "78ed6e10c557ca579ae04dcae739d132752fd6e633433259115b983c888207eb",
+      "rows": 776,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1676.7950523284944,
+        "rows": 776,
+        "attempts": 20524,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.1533462516806825,
+        0.15446534733445363,
+        0.18137453150843258,
+        0.07966186436018947,
+        0.15035367338146896,
+        -0.009439710295457513,
+        -0.009439710295457513
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W12-C1-BB.json.gz",
+      "sha256": "6f09e3edf411494e8f4bbeaba5cb896381b95bfecc40af2d42fb4769e965bf7c",
+      "rows": 361,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 9,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 775.6792774136342,
+        "rows": 361,
+        "attempts": 9644,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.381624469866119,
+        0.13392342503844346,
+        0.1659704654394096,
+        0.07439987225026189,
+        0.13931752783038348,
+        -0.0039639622198347395,
+        -0.0039639622198347395
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W07-P2-BB.json.gz",
+      "sha256": "02aaa7e82f446e3fb4838546e3f8bea61bea01307507a26117521e66e1f249bf",
+      "rows": 846,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 12,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1840.4480329690962,
+        "rows": 846,
+        "attempts": 22635,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.2088722671718415,
+        0.15080907614794403,
+        0.20628287958453084,
+        0.08693442046494711,
+        0.16897703863740257,
+        -0.029896977861841582,
+        -0.029896977861841582
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W06-P2-BB.json.gz",
+      "sha256": "03f2bda91f115a62900dc9a5cac3b9ca8fa4ce6cfa10b7652cbb520a758eb5c1",
+      "rows": 810,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 12,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1760.1517323351975,
+        "rows": 810,
+        "attempts": 21621,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.164905458785934,
+        0.15383755727435333,
+        0.20148274646863712,
+        0.08773014217017365,
+        0.16816267274113747,
+        -0.03035098588003129,
+        -0.03035098588003129
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W11-P2-BB.json.gz",
+      "sha256": "427d886d5daec7b387472af0c711a370f4cb34d85d207fe6f5f6ca16aad1639c",
+      "rows": 327,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 10,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 697.4501263220202,
+        "rows": 327,
+        "attempts": 8779,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.256616680164659,
+        0.14189929361204848,
+        0.18256801509135823,
+        0.08596411536189773,
+        0.1510381179433895,
+        -0.009153391900894444,
+        -0.009153391900894444
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W01-C1-BB.json.gz",
+      "sha256": "ca279cec49f5a245ae69793eb2bd3d2d42af046858384896774ea976615d4d85",
+      "rows": 664,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1428.6951404491435,
+        "rows": 664,
+        "attempts": 17412,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.2190865922473675,
+        0.14873513597311191,
+        0.17790158828683403,
+        0.07851989996397761,
+        0.14442390931305982,
+        -0.01198766005137864,
+        -0.01198766005137864
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W17-P2-BB.json.gz",
+      "sha256": "962cf01465f1468f90967c8df5699fba9cb09bd77e3c6032492afed97d73b247",
+      "rows": 541,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1175.5196932036656,
+        "rows": 541,
+        "attempts": 14448,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.410339568553968,
+        0.1330160387496249,
+        0.18179643415900448,
+        0.08371698373897506,
+        0.14732027326739255,
+        -0.03538629001782375,
+        -0.03538629001782375
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W04-P2-BB.json.gz",
+      "sha256": "f10bedc94cbd46e2da266998ee0268f05827669c21065812591149cb458e2416",
+      "rows": 740,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1592.0224820761625,
+        "rows": 740,
+        "attempts": 19422,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.15105874875914,
+        0.15436473071339707,
+        0.19074587781487162,
+        0.0836254371166032,
+        0.1565801979905463,
+        -0.017852471933446464,
+        -0.017852471933446464
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W02-C2-BB.json.gz",
+      "sha256": "a0aadc4a426a5ed7cadcd147b7112b5e1d0448489732a722af928860b7e1539e",
+      "rows": 667,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 10,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1432.8039059240825,
+        "rows": 667,
+        "attempts": 17469,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.20102867663739,
+        0.14962060871006383,
+        0.17912772633582327,
+        0.0795882675174405,
+        0.1450241522438947,
+        -0.01216753807559231,
+        -0.01216753807559231
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W14-C1-BB.json.gz",
+      "sha256": "a1fd6b29cd73894176e99f635355791bb61805c8ea22b4f1b379a20ffe360b25",
+      "rows": 434,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 10,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 943.0040275987205,
+        "rows": 434,
+        "attempts": 11693,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.424465993273181,
+        0.12922533128095356,
+        0.17353764453872733,
+        0.0785692802177997,
+        0.1509945124729525,
+        -0.021712485742987363,
+        -0.021712485742987363
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W09-C2-BB.json.gz",
+      "sha256": "68648804eea5a82b9199c937ca115ffcb3d3732d55cef76d1ef42c0a5b406e0e",
+      "rows": 908,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 12,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1983.2141040571762,
+        "rows": 908,
+        "attempts": 24630,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.1603949459711815,
+        0.1535828501366134,
+        0.19433364760009075,
+        0.08330613330664417,
+        0.1602849873369177,
+        -0.013539815222740153,
+        -0.013539815222740153
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W03-C2-BB.json.gz",
+      "sha256": "82df6fc2a0bdadf1b2c717e3cb6d1b4cd937ec52209de3e83ea796cf3dee90a2",
+      "rows": 701,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 12,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "objective": 1506.8537362557229,
+        "rows": 701,
+        "attempts": 18406,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.163799787208791,
+        0.15260533687372166,
+        0.18285111513506042,
+        0.08083710758879621,
+        0.14955929923365374,
+        -0.011348495214799194,
+        -0.011348495214799194
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W03-C1-BB.json.gz",
+      "sha256": "f78c67109146362c763944e4d1f320b5cd1ecc46cbb03d63d593f3e1e298d3c2",
+      "rows": 701,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 12,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "objective": 1507.3024636778543,
+        "rows": 701,
+        "attempts": 18406,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.168505578779989,
+        0.1523287370845764,
+        0.1835299330494614,
+        0.08059208697135523,
+        0.15016519360149044,
+        -0.011301886962740038,
+        -0.011301886962740038
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W01-C2-BB.json.gz",
+      "sha256": "4ba78421c87f0ececa16782f22392e89b5d4fea899e81371561796fffc98cb30",
+      "rows": 664,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1428.1773310453743,
+        "rows": 664,
+        "attempts": 17412,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.213057227518851,
+        0.14910936388882148,
+        0.17730555472822448,
+        0.07886931195267194,
+        0.1437599392674508,
+        -0.012045647508393445,
+        -0.012045647508393445
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W12-P2-BB.json.gz",
+      "sha256": "7904c9cd94c43be0c20e725840cec8d7995e0ccd79bd9b89b2777680d72923d3",
+      "rows": 361,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 10,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 773.1893818797183,
+        "rows": 361,
+        "attempts": 9644,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.31239716183638,
+        0.13860264685303447,
+        0.17949174881701813,
+        0.08121202113697451,
+        0.148177494609265,
+        -0.009101930245499268,
+        -0.009101930245499268
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W17-C1-BB.json.gz",
+      "sha256": "c18cbdb1074310765dab4d40e43d84404f0e01727cf4cd01b8c93a47a99c89b1",
+      "rows": 541,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1174.023525396801,
+        "rows": 541,
+        "attempts": 14448,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.379990157053003,
+        0.13493449019165923,
+        0.17411574778254865,
+        0.07969422450679768,
+        0.14344260783447388,
+        -0.02272353413303049,
+        -0.02272353413303049
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W08-C1-BB.json.gz",
+      "sha256": "f89ee43585ae840e6e76dc559390f2b2588d2f90bd91981a69f884d1bd1a3313",
+      "rows": 875,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 12,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1916.8851500604078,
+        "rows": 875,
+        "attempts": 23666,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.260008141295344,
+        0.14738316338307805,
+        0.18777342399994215,
+        0.07792213985041574,
+        0.1540232839089955,
+        -0.012909565381201311,
+        -0.012909565381201311
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W11-C2-BB.json.gz",
+      "sha256": "72fdb3afbfebf02b25858912114a46f3e6ffe872dd7b0693482b73c24129e400",
+      "rows": 327,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 10,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 698.0930204977983,
+        "rows": 327,
+        "attempts": 8779,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.284057796364462,
+        0.14042878057234373,
+        0.17328793526958916,
+        0.08229822890672568,
+        0.14474832223821468,
+        -0.004355059834242665,
+        -0.004355059834242665
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W17-C2-BB.json.gz",
+      "sha256": "4ee4324b5a41d3c4cf53eed4f300e4fb2b6927b6b7378d6ce865e74e1b4bbe57",
+      "rows": 541,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1173.974455105666,
+        "rows": 541,
+        "attempts": 14448,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.380205557246832,
+        0.13488677125730322,
+        0.17292608080388033,
+        0.07977539461994634,
+        0.14176276701962034,
+        -0.022789938824559586,
+        -0.022789938824559586
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W01-P2-BB.json.gz",
+      "sha256": "d6fc183dc6f0f4cdfeec3fa614a8fcee5443bfd082971f3c2a35bcf7feb4e70d",
+      "rows": 664,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 12,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "objective": 1429.5545493009638,
+        "rows": 664,
+        "attempts": 17412,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.228603980330793,
+        0.14834795718611846,
+        0.18450512107301567,
+        0.08228994049554128,
+        0.14957836861602128,
+        -0.022150038272277822,
+        -0.022150038272277822
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W04-C2-BB.json.gz",
+      "sha256": "74fc330644d13f0a748ca05773c770ddba27f0b5750eaa5245a82899fc5acc1e",
+      "rows": 740,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1589.0626963919806,
+        "rows": 740,
+        "attempts": 19422,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.119921612520311,
+        0.15631437309260238,
+        0.18460035454251988,
+        0.08127767876138853,
+        0.15008209862065028,
+        -0.0076700591446602065,
+        -0.0076700591446602065
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W06-C2-BB.json.gz",
+      "sha256": "b106336a5548e0feb519a2fcc57272074eef2d3d2d625d3080dbec7605436fd2",
+      "rows": 810,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 12,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1758.8612047000663,
+        "rows": 810,
+        "attempts": 21621,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.151916468535629,
+        0.15497459448763967,
+        0.18717379919597307,
+        0.08159499356023465,
+        0.15704587954620502,
+        -0.013744657630426068,
+        -0.013744657630426068
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W11-C1-BB.json.gz",
+      "sha256": "4fffe539a9b42d94ac2a8b6a40c38c2183a9c8b0fe1376b3e81881df5954685c",
+      "rows": 327,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 10,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 697.9306119940629,
+        "rows": 327,
+        "attempts": 8779,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.2773053440545326,
+        0.1409556573822467,
+        0.17409576366680057,
+        0.08269497123637143,
+        0.1455639792479199,
+        -0.004538771053478917,
+        -0.004538771053478917
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W15-C1-BB.json.gz",
+      "sha256": "894fd6371f1f05c6f2ec99714e642e163f3f07808adac47c2392f979dd2a8c09",
+      "rows": 467,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 10,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1016.4195842891047,
+        "rows": 467,
+        "attempts": 12563,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.425651945978545,
+        0.1329376069394336,
+        0.17258030060131022,
+        0.0796829149837568,
+        0.1471657083016319,
+        -0.02170631052325683,
+        -0.02170631052325683
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W06-C1-BB.json.gz",
+      "sha256": "e6f27d3dc2a552ffb909ac1d0cc79ce915504a9df7f6f58ee099c6d9daca91ff",
+      "rows": 810,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 12,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1759.8754905134845,
+        "rows": 810,
+        "attempts": 21621,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.164135035020095,
+        0.15427388516941606,
+        0.18680739855412845,
+        0.08089465598499086,
+        0.1565398781581053,
+        -0.013589322239191761,
+        -0.013589322239191761
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W14-C2-BB.json.gz",
+      "sha256": "90826b56f54bf45e8929550917903b325c56fbd2959a50443f854d7e39aa01dc",
+      "rows": 434,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 10,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 943.0706540137179,
+        "rows": 434,
+        "attempts": 11693,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.427245348792478,
+        0.12890575966409437,
+        0.17305252239556393,
+        0.07854784423626018,
+        0.15006932526045627,
+        -0.021757753933371253,
+        -0.021757753933371253
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W16-C1-BB.json.gz",
+      "sha256": "6f74d0ce4b0543594de0dbbbeaaad392eb3b90d0f32d263778644db469926944",
+      "rows": 503,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 10,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1096.980464754113,
+        "rows": 503,
+        "attempts": 13461,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.480997522512062,
+        0.12683521460692132,
+        0.16368213817050012,
+        0.07599156721311182,
+        0.1349326848380981,
+        -0.023972035982723412,
+        -0.023972035982723412
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W08-C2-BB.json.gz",
+      "sha256": "1514ab13f98d3f44faf322107bb768f6c9c2abddd2904a8b48cc20c3fc80382e",
+      "rows": 875,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 12,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1915.5616884238882,
+        "rows": 875,
+        "attempts": 23666,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.238530106218895,
+        0.1487300443552066,
+        0.18428178689990785,
+        0.07779328009566117,
+        0.15232165795644861,
+        -0.013140510429893597,
+        -0.013140510429893597
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W13-P2-BB.json.gz",
+      "sha256": "aa9cd9be983bc301461557f3eb8caaf4cf39239bb0e38ddddf3e9f7842784c3e",
+      "rows": 398,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 866.1163666837293,
+        "rows": 398,
+        "attempts": 10631,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.583837570441064,
+        0.11561473819990761,
+        0.18047643730290744,
+        0.08138829962333806,
+        0.1544315361450192,
+        -0.04329302336461174,
+        -0.04329302336461174
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W08-P2-BB.json.gz",
+      "sha256": "470d70cb12e8c5188710947c07a2d57d951d6a8228f9565f2e3a882168dae444",
+      "rows": 875,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1920.0185850977662,
+        "rows": 875,
+        "attempts": 23666,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.294110410874543,
+        0.14462623633010555,
+        0.1971705736384117,
+        0.08203654563448663,
+        0.16215024649183152,
+        -0.03022575359900992,
+        -0.03022575359900992
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W18-C1-BB.json.gz",
+      "sha256": "ddf65038219d83047a085bc781fe200f0235d39eeb91c6914ee67ee686a9ae71",
+      "rows": 590,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1269.398405947247,
+        "rows": 590,
+        "attempts": 15645,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.242385670387527,
+        0.14599556342705378,
+        0.176481335497159,
+        0.0809341928266679,
+        0.13929749502573988,
+        -0.013913322841464855,
+        -0.013913322841464855
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W07-C1-BB.json.gz",
+      "sha256": "e40d273401eda86da19eb2774d995f8453c8e153276ad3ea97903b5bab8fe0b5",
+      "rows": 846,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 12,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1838.0097500751,
+        "rows": 846,
+        "attempts": 22635,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.183946710017098,
+        0.15277232684807837,
+        0.1966048120925768,
+        0.08234994430855612,
+        0.1606198674020059,
+        -0.013367385061906106,
+        -0.013367385061906106
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W05-C1-BB.json.gz",
+      "sha256": "58a3c3beae418ad9d46aca3822301d20dbc99ad070422f2fef56115ef3ba03d3",
+      "rows": 776,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1677.4934944228437,
+        "rows": 776,
+        "attempts": 20524,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.161315201710333,
+        0.1539432907898034,
+        0.18166567053192723,
+        0.07932302638597456,
+        0.15046017342165433,
+        -0.00939738095514371,
+        -0.00939738095514371
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W09-P2-BB.json.gz",
+      "sha256": "3af6c3a306a4caabfcbedd9cfedd661fe5d51c644a7f536f879d83168d9b138d",
+      "rows": 908,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 12,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1988.5535123294555,
+        "rows": 908,
+        "attempts": 24630,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.223913331766083,
+        0.1486670082643898,
+        0.20570045549131757,
+        0.08702507191607828,
+        0.169412218667767,
+        -0.029979028446204255,
+        -0.029979028446204255
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W03-P2-BB.json.gz",
+      "sha256": "986a7e26f82099bf3eb5ea594b16bd1204eeb2160d3627fc71ad7c5c3a5b5fa0",
+      "rows": 701,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1508.8320566056145,
+        "rows": 701,
+        "attempts": 18406,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.185113643859135,
+        0.15131853702061115,
+        0.18943816714458583,
+        0.08365463230815255,
+        0.15583386225337964,
+        -0.021044803506730207,
+        -0.021044803506730207
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W15-P2-BB.json.gz",
+      "sha256": "99747a49068cc277a10b7b2916a4e09942e0eacfba2f07d26a8853dd3f5c6520",
+      "rows": 467,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 10,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1017.7682600291079,
+        "rows": 467,
+        "attempts": 12563,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.461013299462368,
+        0.13079455392521838,
+        0.1822452848469966,
+        0.08318792921235676,
+        0.15199474090258908,
+        -0.03398341797478445,
+        -0.03398341797478445
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W12-C2-BB.json.gz",
+      "sha256": "856c31334f8e0b09b260e93f260e8a69fd982071c1115f56efaccda02fcdd453",
+      "rows": 361,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 9,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 775.500966940199,
+        "rows": 361,
+        "attempts": 9644,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.378675589385492,
+        0.13407751473919544,
+        0.16597589222556253,
+        0.07461073309150315,
+        0.13871949687132895,
+        -0.003824748090990325,
+        -0.003824748090990325
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W15-C2-BB.json.gz",
+      "sha256": "bfd1e3a03e69873b320246741f637291b43a829e35cfcd595a430ca7e53574be",
+      "rows": 467,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 10,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1016.5490315425786,
+        "rows": 467,
+        "attempts": 12563,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.429867806735049,
+        0.13259047040516952,
+        0.17192268240421532,
+        0.079660780732197,
+        0.14574257113770894,
+        -0.021759406668904635,
+        -0.021759406668904635
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W07-C2-BB.json.gz",
+      "sha256": "d3e288d7f5fb939b519d3ae996c5473ddbf2e3e0230230159819b78b06598d01",
+      "rows": 846,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 12,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1836.5960775426709,
+        "rows": 846,
+        "attempts": 22635,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.16147276559818,
+        0.15428714687299172,
+        0.19355215267841003,
+        0.08233952609423839,
+        0.15934662809577885,
+        -0.013537995422908148,
+        -0.013537995422908148
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W04-C1-BB.json.gz",
+      "sha256": "3d1cdee433c230dc573232f1c05bc195e5d2f71e655d80466cb5d007f5b4bc7e",
+      "rows": 740,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1589.6027397555447,
+        "rows": 740,
+        "attempts": 19422,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.125618492872765,
+        0.15598890529010598,
+        0.18509925359165613,
+        0.0810239205354953,
+        0.15047896006147535,
+        -0.00760122131729362,
+        -0.00760122131729362
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W02-C1-BB.json.gz",
+      "sha256": "c07120ae41ffc4f3b94d691f61d0ab75c18f39ced2a84d2cbaa3cd3969822eb2",
+      "rows": 667,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 12,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1433.3173376111656,
+        "rows": 667,
+        "attempts": 17469,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.2069200439265595,
+        0.14947985618108878,
+        0.17968305754329164,
+        0.07926275627554391,
+        0.14563944733059844,
+        -0.012026094016853131,
+        -0.012026094016853131
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W09-C1-BB.json.gz",
+      "sha256": "ca569532ce4a48c1192854bd630e1479dac995fcd04c0e9bad905d287fe27392",
+      "rows": 908,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 12,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1984.7781604344664,
+        "rows": 908,
+        "attempts": 24630,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.184104406034349,
+        0.15205029229772388,
+        0.19734492295104814,
+        0.08326128317578006,
+        0.1616595602735409,
+        -0.013364159614328837,
+        -0.013364159614328837
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W16-C2-BB.json.gz",
+      "sha256": "306e7776b73cfa12e1acce90a169ed8e7a8eebd5138f1864ba4d11f35b96b611",
+      "rows": 503,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 10,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1096.8651178107607,
+        "rows": 503,
+        "attempts": 13461,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.4793716830610295,
+        0.12691284693914798,
+        0.16250098904357838,
+        0.07612287317871799,
+        0.13326874995171026,
+        -0.023931412476384948,
+        -0.023931412476384948
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W05-P2-BB.json.gz",
+      "sha256": "bcb1b549938e81119d7963dee10bfdb8cf9f5dfd5b4e5d6a9a5a85f07142cca8",
+      "rows": 776,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1678.812908429954,
+        "rows": 776,
+        "attempts": 20524,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.16759092506966,
+        0.15345934965272287,
+        0.19060029925847674,
+        0.08310927103088264,
+        0.15865594263666946,
+        -0.020331985524466457,
+        -0.020331985524466457
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2026-W02-P2-BB.json.gz",
+      "sha256": "6aac8752a15685cda2cbfcd99d9fff89bda348ab5eccf9468713bfb6e94beb2b",
+      "rows": 667,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1434.216837457628,
+        "rows": 667,
+        "attempts": 17469,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.216662295139002,
+        0.14906873685785846,
+        0.18619386356905548,
+        0.08297222132290433,
+        0.15074076224160624,
+        -0.022103127096316164,
+        -0.022103127096316164
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W18-P2-BB.json.gz",
+      "sha256": "4243e3fab20fe564a49812763ba9a7e09dbda0f2d4cd83152ade32ff4be18725",
+      "rows": 590,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 1270.9035040150331,
+        "rows": 590,
+        "attempts": 15645,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.267060408274399,
+        0.14422562358522922,
+        0.18036831455228208,
+        0.08310911569354934,
+        0.14093557449166658,
+        -0.02288563377209567,
+        -0.02288563377209567
+      ]
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/fits/2025-W13-C2-BB.json.gz",
+      "sha256": "9a2591f9157e28531945d8edd47af2a9d84968d570a9c15209402fe44475e3c3",
+      "rows": 398,
+      "optimization": {
+        "success": true,
+        "finite": true,
+        "iterations": 11,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 866.8951088851443,
+        "rows": 398,
+        "attempts": 10631,
+        "fallback": null
+      },
+      "coefficients": [
+        -4.596944773052274,
+        0.11533958901924517,
+        0.16486997467508596,
+        0.0752227820861566,
+        0.14342439020998216,
+        -0.030473881932817963,
+        -0.030473881932817963
+      ]
+    }
+  ],
+  "new_optimizer_calls": 0,
+  "source_or_historical_score_corrections": 0
+}

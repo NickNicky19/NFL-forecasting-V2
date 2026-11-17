@@ -1,0 +1,20 @@
+{
+  "id": "INFORMATION_SKILL_PREPARATION_FAILURES_v1",
+  "failures": [
+    {
+      "phase": "Prefit overhead metadata assembly",
+      "error": "KeyError CPU_seconds: actual fixture receipt key is process_CPU_seconds",
+      "repair": "Corrected receipt-key lookup; no fixture/model/data rerun or change",
+      "NFL_fits": 0,
+      "new_scores": 0,
+      "optimizer_calls": 0
+    },
+    {
+      "phase": "Private grade-schema metadata inspection",
+      "error": "KeyError method; existing input schema names model_key",
+      "repair": "Inspected existing supported model_key importer; scorer already uses this field. No row/grade/model change or repeated scientific execution.",
+      "NFL_fits": 0,
+      "new_scores": 0
+    }
+  ]
+}

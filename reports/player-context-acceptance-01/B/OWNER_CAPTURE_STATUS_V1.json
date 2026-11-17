@@ -1,0 +1,124 @@
+{
+  "kind": "READ_ONLY_OWNER_CAPTURE_SERVED_WITNESS_NOT_B_CAPTURE",
+  "at_utc": "2026-11-10T00:45:42.566832+00:00",
+  "production_commit": "720903184c54e4fe73c9213da5938d06970a5f00",
+  "capture_path": "data/current-classic/2026/w09/5f2275e9b32f0f1cd9875aa7b1817aee557f0570696f01200978028a04939d21.json.gz",
+  "capture_sha256": "e95e7aa2e73d1d7d8a2bef0643e6962d5ff233eff051723c2985c7daf300846d",
+  "capture_payload_sha256": "1b6bfe5ca0775338b6cf898bc77104f9df8f681c832d7bb2e004707f0e35853b",
+  "clocks": {
+    "forecast_generated_at": "2026-11-09T23:22:50Z",
+    "captured_at": "2026-11-09T23:22:52Z"
+  },
+  "pointer_published_at": "2026-11-09T23:22:58.312915+00:00",
+  "selection_prepared_at": "2026-11-09T23:22:58.294832+00:00",
+  "season": 2026,
+  "week": 9,
+  "capture_schema": "baseline-capture-classic-presence-v2",
+  "model": "sleeper-matchup-classic-presence-strict-v2",
+  "forecast_rows": 120,
+  "games": 1,
+  "future_schedule_games_at_capture": 1,
+  "already_started_games_at_capture": 14,
+  "top_picks": {
+    "total": 24,
+    "sides": {
+      "over": 12,
+      "under": 12
+    },
+    "exact_current_capture_value_matches": 2,
+    "unresolved_matches": 22,
+    "frozen_proof_count": 22,
+    "products": [
+      "reference_point"
+    ],
+    "sources": [
+      "CURRENT_BASELINE"
+    ]
+  },
+  "overlay_state": "DISABLED_USE_R0",
+  "research_overlay_rows": 0,
+  "fallback_counts": {
+    "publication_not_approved_R0": 143,
+    "started_R0_frozen_no_new_selection": 1987
+  },
+  "served_pairs": [
+    {
+      "path": "output/data/week.json",
+      "git_sha256": "6d131325bc2229cf502ffec91d10946ca07803134dc07ac5bd3c834f9e6bb1f2",
+      "served_sha256": "6d131325bc2229cf502ffec91d10946ca07803134dc07ac5bd3c834f9e6bb1f2",
+      "equal": true,
+      "bytes": 3569771
+    },
+    {
+      "path": "output/data/meta.json",
+      "git_sha256": "3a5eb544e5e3a6f595719dc22a1092df081b8fd25f9763ad5aa81fc3ea359955",
+      "served_sha256": "3a5eb544e5e3a6f595719dc22a1092df081b8fd25f9763ad5aa81fc3ea359955",
+      "equal": true,
+      "bytes": 1248
+    },
+    {
+      "path": "output/data/weekly-selected-rankings.json",
+      "git_sha256": "b2866aaa78eddd6cfef10f4318d2d3e46e5bc99f8b2aa0fae5f1e46ed11b5fc1",
+      "served_sha256": "b2866aaa78eddd6cfef10f4318d2d3e46e5bc99f8b2aa0fae5f1e46ed11b5fc1",
+      "equal": true,
+      "bytes": 474
+    },
+    {
+      "path": "output/data/weekly-selected-rankings/b9fdfa873aac2a3b6f9e0fa00203aa7e71f61970a082916c483ce29bdedd0f31.json",
+      "git_sha256": "b9fdfa873aac2a3b6f9e0fa00203aa7e71f61970a082916c483ce29bdedd0f31",
+      "served_sha256": "b9fdfa873aac2a3b6f9e0fa00203aa7e71f61970a082916c483ce29bdedd0f31",
+      "equal": true,
+      "bytes": 15881
+    },
+    {
+      "path": "output/data/weekly-adaptive-overlay.json",
+      "git_sha256": "7508ebbacf4574502b1c29453396b2ff62a060ac5df6b4033a4e6808be06981d",
+      "served_sha256": "7508ebbacf4574502b1c29453396b2ff62a060ac5df6b4033a4e6808be06981d",
+      "equal": true,
+      "bytes": 333
+    },
+    {
+      "path": "output/data/weekly-adaptive/5037a60333c3e1e3551ee28e106af67e4ddc6b92d52be632841c1ca02df05cdc.json",
+      "git_sha256": "5037a60333c3e1e3551ee28e106af67e4ddc6b92d52be632841c1ca02df05cdc",
+      "served_sha256": "5037a60333c3e1e3551ee28e106af67e4ddc6b92d52be632841c1ca02df05cdc",
+      "equal": true,
+      "bytes": 803
+    }
+  ],
+  "all_pairs_equal": true,
+  "policy": {
+    "path": "config/weekly-derived-selected-policy-v8.json",
+    "sha256": "e3cdc393fef8c51f852f25a472328fc1ed87c3ea46e409d3a3544a5849b74b0a",
+    "registration_id": "weekly-adaptive-release-v1",
+    "bound_producer_source_sha": "dad58d459951bdb77ef852b8ca88860ffb0bce60"
+  },
+  "current_execution": {
+    "capture_schema": "baseline-capture-classic-presence-v2",
+    "engine_sha256": {
+      "pull/books.py": "0b89744960136a4f2e594b61e6df754d357706d8c66a8ae359d8eb02bbfa53f8",
+      "pull/build.py": "b83126080149f2f0705682d1c0be0a8ee87610ebb0a88cd57b94b8a82b63ad73",
+      "pull/gamemodel.py": "2a2519a12ad4993da02ae6bdcdb6c86f2b5a6554ce93a702b550ecde17fb7d1f",
+      "pull/grade.py": "afd1310d708def4f400e6bf84e981e2edc7635dc946a63571022203c1d3ae735",
+      "pull/matchup.py": "eaf627730041060ad16dd9930accfe54a54cf5fb49bb42d18680b5c572ddd7a5",
+      "pull/news.py": "17ce1b3b6b72694e6b543bd767e287c26a9d1f6dd5dba2de6c873543036842e9",
+      "pull/scoring.py": "90a9d201581b20c4e757912ce7dbf4941a6a90784d721c80367341511c652a2d",
+      "pull/sources.py": "36555cdbc55d73ba632d5adae1130288f4f532073857c642ac3ebc7e626b0061"
+    },
+    "grading_version": "statistical-presence-strict-v5-20261106",
+    "model": "sleeper-matchup-classic-presence-strict-v2",
+    "normalized_stats_cache": "stat-keys-presence-strict-v3",
+    "original_shadow_model": "original_sleeper_matchup_baseline",
+    "original_shadow_procedure": "original-builder-default-refresh-v1",
+    "original_shadow_source": "89512ed952308dacc1f6a930915ddbcdccd460d9",
+    "schema_version": "weekly-classic-presence-execution-v2"
+  },
+  "B_new_capture": 0,
+  "B_dispatches": 0,
+  "B_mutations": 0,
+  "limits": [
+    "Bytes/persistence/current data consumer path checked; browser rendering not rerun.",
+    "Late refresh cannot authenticate a new pregame issue for already-started games; prior frozen proofs are separate.",
+    "Source publication/quote execution clocks remain unverified. No B candidate or Count A admission inferred.",
+    "No new scheduler or workflow dispatch, no production changes."
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "classic-receipt.json.gz": {
+    "safe_metadata": {},
+    "structure": {
+      "payload": {
+        "keys": [
+          "captured_at",
+          "code_commit",
+          "engine_files",
+          "engine_sha256",
+          "evidence_label",
+          "excluded_started_or_late_games",
+          "execution_contract",
+          "execution_contract_sha256",
+          "forecast_generated_at",
+          "input_sha256",
+          "mode",
+          "model",
+          "rows",
+          "schema_version"
+        ],
+        "type": "object"
+      },
+      "payload_sha256": "scalar"
+    }
+  },
+  "payload.json": {
+    "safe_metadata": {
+      "display_board_sha256": "cad9ffa77b329128147d82ce166d0c70c1b21c692631d59acbd1744f6b089133",
+      "schema_version": "weekly-adaptive-public-overlay-v1",
+      "season": 2026,
+      "state": "PROVISIONAL",
+      "website_source_sha": "1ec93e068a91abd51c990937d1019e4a831694b4",
+      "week": 8
+    },
+    "structure": {
+      "board_contract_sha256": "scalar",
+      "canonical_board_sha256": "scalar",
+      "display_board_sha256": "scalar",
+      "fallback_counts": {
+        "keys": [
+          "PPR_or_unsupported_R0",
+          "missing_or_duplicate_candidate_R0",
+          "started_R0_frozen_no_new_selection"
+        ],
+        "type": "object"
+      },
+      "frozen_rows": {
+        "first_object_keys": [
+          "key",
+          "row_sha256"
+        ],
+        "n": 156,
+        "type": "array"
+      },
+      "packaged_at": "scalar",
+      "prepared_at": "scalar",
+      "publication_review_sha256": "scalar",
+      "registration_id": "scalar",
+      "rows": {
+        "first_object_keys": [
+          "category",
+          "first_prepared_at",
+          "forecast_value",
+          "game_id",
+          "horizon",
+          "issued_at",
+          "kickoff_utc",
+          "method_id",
+          "model_version",
+          "persistence_completed_at",
+          "player_id",
+          "prediction_functional",
+          "procedure_version",
+          "product",
+          "query_source_sha256",
+          "selection_sha256",
+          "source_cutoff_utc",
+          "source_policy_sha256",
+          "valid_until_utc"
+        ],
+        "n": 1945,
+        "type": "array"
+      },
+      "schema_version": "scalar",
+      "season": "scalar",
+      "state": "scalar",
+      "website_source_sha": "scalar",
+      "week": "scalar"
+    }
+  },
+  "pointer.json": {
+    "safe_metadata": {
+      "bytes": 1871124,
+      "display_board_sha256": "cad9ffa77b329128147d82ce166d0c70c1b21c692631d59acbd1744f6b089133",
+      "path": "data/weekly-adaptive/742f8e8286426a339e01c3088b85e22a0449e9231b7b7b9240fffa5a21773ab2.json",
+      "schema_version": "weekly-adaptive-overlay-pointer-v1",
+      "sha256": "742f8e8286426a339e01c3088b85e22a0449e9231b7b7b9240fffa5a21773ab2"
+    },
+    "structure": {
+      "bytes": "scalar",
+      "display_board_sha256": "scalar",
+      "path": "scalar",
+      "schema_version": "scalar",
+      "sha256": "scalar"
+    }
+  },
+  "selected-payload.json": {
+    "safe_metadata": {
+      "display_board_sha256": "cad9ffa77b329128147d82ce166d0c70c1b21c692631d59acbd1744f6b089133",
+      "overlay_sha256": "742f8e8286426a339e01c3088b85e22a0449e9231b7b7b9240fffa5a21773ab2",
+      "schema_version": "weekly-selected-rankings-v1",
+      "season": 2026,
+      "website_source_sha": "1ec93e068a91abd51c990937d1019e4a831694b4",
+      "week": 8
+    },
+    "structure": {
+      "display_board_sha256": "scalar",
+      "fallback_counts": {
+        "keys": [
+          "expired_before_kickoff",
+          "started_without_selected_record",
+          "unavailable_forecast"
+        ],
+        "type": "object"
+      },
+      "frozen_proofs": {
+        "first_object_keys": [],
+        "n": 0,
+        "type": "array"
+      },
+      "overlay_sha256": "scalar",
+      "picks": {
+        "keys": [
+          "over",
+          "under"
+        ],
+        "type": "object"
+      },
+      "policy": {
+        "keys": [
+          "categories",
+          "fallback",
+          "meaning",
+          "minimum_games",
+          "minimum_projected_ppr",
+          "minimum_score",
+          "minimum_snap_share",
+          "projection_line_ratio",
+          "tie_order",
+          "top_n",
+          "unavailable",
+          "version"
+        ],
+        "type": "object"
+      },
+      "policy_sha256": "scalar",
+      "prepared_at": "scalar",
+      "schema_version": "scalar",
+      "season": "scalar",
+      "website_source_sha": "scalar",
+      "week": "scalar"
+    }
+  },
+  "selected-pointer.json": {
+    "safe_metadata": {
+      "bytes": 35029,
+      "display_board_sha256": "cad9ffa77b329128147d82ce166d0c70c1b21c692631d59acbd1744f6b089133",
+      "overlay_sha256": "742f8e8286426a339e01c3088b85e22a0449e9231b7b7b9240fffa5a21773ab2",
+      "path": "weekly-selected-rankings/499f485369216d10c93dcd941cb9a581d77632c25c8befa57d54ff0c1d6126ec.json",
+      "published_at": "2026-10-31T17:38:30.155304+00:00",
+      "schema_version": "weekly-selected-rankings-pointer-v1",
+      "sha256": "499f485369216d10c93dcd941cb9a581d77632c25c8befa57d54ff0c1d6126ec"
+    },
+    "structure": {
+      "bytes": "scalar",
+      "display_board_sha256": "scalar",
+      "overlay_sha256": "scalar",
+      "path": "scalar",
+      "published_at": "scalar",
+      "schema_version": "scalar",
+      "sha256": "scalar"
+    }
+  },
+  "selected-receipt.json": {
+    "safe_metadata": {
+      "bytes": 35029,
+      "display_board_sha256": "cad9ffa77b329128147d82ce166d0c70c1b21c692631d59acbd1744f6b089133",
+      "overlay_sha256": "742f8e8286426a339e01c3088b85e22a0449e9231b7b7b9240fffa5a21773ab2",
+      "path": "weekly-selected-rankings/499f485369216d10c93dcd941cb9a581d77632c25c8befa57d54ff0c1d6126ec.json",
+      "published_at": "2026-10-31T17:38:30.155304+00:00",
+      "schema_version": "weekly-selected-rankings-pointer-v1",
+      "sha256": "499f485369216d10c93dcd941cb9a581d77632c25c8befa57d54ff0c1d6126ec"
+    },
+    "structure": {
+      "bytes": "scalar",
+      "display_board_sha256": "scalar",
+      "overlay_sha256": "scalar",
+      "path": "scalar",
+      "published_at": "scalar",
+      "schema_version": "scalar",
+      "sha256": "scalar"
+    }
+  }
+}

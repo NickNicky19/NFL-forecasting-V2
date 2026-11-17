@@ -1,0 +1,111 @@
+[
+  {
+    "frozen_chosen_reference": {
+      "history_regime": "H-RECENT",
+      "observed_full_primary_mae": 2.867205024674742,
+      "observed_full_primary_n": 2229,
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "product_id": "lower_median",
+      "selection": "strongest observed same-season full-primary point MAE; fixed across every subgroup/policy; exposed benchmark, not earlier routing"
+    },
+    "meaning": "Ties are existing outputs/history aliases, not additional independent learners; frozen chosen reference unchanged.",
+    "season": 2025,
+    "tied_point_views": [
+      {
+        "history_regime": "H-RECENT",
+        "mae": 2.867205024674742,
+        "n": 2229,
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "product_id": "lower_median"
+      }
+    ],
+    "tolerance_absolute_mae": 1e-12
+  },
+  {
+    "frozen_chosen_reference": {
+      "history_regime": "H-MULTI",
+      "observed_full_primary_mae": 2.9913162705667276,
+      "observed_full_primary_n": 2188,
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "product_id": "lower_median",
+      "selection": "strongest observed same-season full-primary point MAE; fixed across every subgroup/policy; exposed benchmark, not earlier routing"
+    },
+    "meaning": "Ties are existing outputs/history aliases, not additional independent learners; frozen chosen reference unchanged.",
+    "season": 2024,
+    "tied_point_views": [
+      {
+        "history_regime": "H-MULTI",
+        "mae": 2.9913162705667276,
+        "n": 2188,
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "product_id": "lower_median"
+      }
+    ],
+    "tolerance_absolute_mae": 1e-12
+  },
+  {
+    "frozen_chosen_reference": {
+      "history_regime": "H-MULTI",
+      "observed_full_primary_mae": 3.1117895725692812,
+      "observed_full_primary_n": 2129,
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+      "product_id": "lower_median",
+      "selection": "strongest observed same-season full-primary point MAE; fixed across every subgroup/policy; exposed benchmark, not earlier routing"
+    },
+    "meaning": "Ties are existing outputs/history aliases, not additional independent learners; frozen chosen reference unchanged.",
+    "season": 2023,
+    "tied_point_views": [
+      {
+        "history_regime": "H-MULTI",
+        "mae": 3.1117895725692812,
+        "n": 2129,
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "product_id": "lower_median"
+      },
+      {
+        "history_regime": "H-RECENT",
+        "mae": 3.1117895725692812,
+        "n": 2129,
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+        "product_id": "lower_median"
+      }
+    ],
+    "tolerance_absolute_mae": 1e-12
+  },
+  {
+    "frozen_chosen_reference": {
+      "history_regime": "H-CURRENT",
+      "observed_full_primary_mae": 3.4530778528123323,
+      "observed_full_primary_n": 2201,
+      "procedure_id": "empirical-player-history-control-v1",
+      "product_id": "mean",
+      "selection": "strongest observed same-season full-primary point MAE; fixed across every subgroup/policy; exposed benchmark, not earlier routing"
+    },
+    "meaning": "Ties are existing outputs/history aliases, not additional independent learners; frozen chosen reference unchanged.",
+    "season": 2022,
+    "tied_point_views": [
+      {
+        "history_regime": "H-CURRENT",
+        "mae": 3.4530778528123323,
+        "n": 2201,
+        "procedure_id": "empirical-player-history-control-v1",
+        "product_id": "mean"
+      },
+      {
+        "history_regime": "H-MULTI",
+        "mae": 3.4530778528123323,
+        "n": 2201,
+        "procedure_id": "empirical-player-history-control-v1",
+        "product_id": "mean"
+      },
+      {
+        "history_regime": "H-RECENT",
+        "mae": 3.4530778528123323,
+        "n": 2201,
+        "procedure_id": "empirical-player-history-control-v1",
+        "product_id": "mean"
+      }
+    ],
+    "tolerance_absolute_mae": 1e-12
+  }
+]

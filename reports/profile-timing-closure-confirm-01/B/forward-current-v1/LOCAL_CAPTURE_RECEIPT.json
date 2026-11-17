@@ -1,0 +1,43 @@
+{
+  "id": "B-F0-F2-20261110-W10-FIRST-01",
+  "state": "ISSUED_AND_LOCALLY_PERSISTED;GITHUB_READBACK_PENDING",
+  "issued_UTC": "2026-11-10T23:01:29.145519+00:00",
+  "local_persistence_completed_UTC": "2026-11-10T23:01:29.268565+00:00",
+  "packet_path": "reports/profile-timing-closure-confirm-01/B/forward-current-v1/FORECASTS.json.gz",
+  "packet_sha256": "618a260be4bec1082592a2dea7c53a4c1eabe42121e09b0412e652f52c196d2e",
+  "native_event_sha256": "da38fc5435f1ca950b45b705c7981daf772e48e362f89c239ae80f4b208101cf",
+  "forecast_count": 10,
+  "basic_unavailable_records": 6,
+  "players": 8,
+  "forecast_players": 5,
+  "methods": 2,
+  "actual_offers": 0,
+  "actual_selections": 0,
+  "new_graded_outcomes": 0,
+  "resources": {
+    "new_current_origin_fits": 2,
+    "repeated_historical_fits": 0,
+    "wall_seconds": 1.512206146000608,
+    "cpu_seconds": 1.571158057,
+    "peak_RSS_bytes": 193249280,
+    "by_arm": [
+      {
+        "arm": "F0",
+        "fits": 1,
+        "training_rows": 941,
+        "feature_count": 179
+      },
+      {
+        "arm": "F2",
+        "fits": 1,
+        "training_rows": 945,
+        "feature_count": 179
+      }
+    ]
+  },
+  "finalizer_sha256": "5647b067ff6e8e35bd5b9cc37cdfbdc98b22f113d37059b7643605881292de45",
+  "capture_owner": "B owner-local research",
+  "production_owner": "Original-site owner unchanged",
+  "source_expiry": "Event receipt expiry governs new issuance, not erasure of this frozen earlier packet; later source/model/offer use requires revalidation",
+  "release": "SHADOW_ONLY_NOT_PRIMARY_OR_TOP_PICKS"
+}

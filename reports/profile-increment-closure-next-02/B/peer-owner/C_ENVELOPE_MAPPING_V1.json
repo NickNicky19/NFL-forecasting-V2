@@ -1,0 +1,71 @@
+{
+  "id": "B-C-COMMON-PLAYER-DEFENSE-ENVELOPE-v2-MAPPING-v1",
+  "status": "B_EXPLICIT_MAPPING_OF_EXISTING_FIELDS_NO_REWRITE_OF_SAVED_FEATURES_OR_MODELS;NOT_C_RECEIPT",
+  "C_bindings": [
+    {
+      "C_ref": "a9cb8ef61a294b73f558b3c5daad483094af80b2",
+      "path": "reports/profile-increment-v2/COMMON_PROFILE_SCHEMA.json",
+      "sha256": "059c72420f3b9f0f040f69835c44ce27335d8b9c53f88e16e08218f929f26a8c"
+    },
+    {
+      "C_ref": "a9cb8ef61a294b73f558b3c5daad483094af80b2",
+      "path": "reports/profile-increment-v2/definitions/DEFENSE_SCHEMA.json",
+      "sha256": "98932c18fab6c4689632652d07dd83d2def0a67ae5fb0c2c9d86eb8feba12f25"
+    }
+  ],
+  "B_bindings": [
+    {
+      "B_path": "reports/profile-increment-to-release-01/B/source-profiles/FIELD_TO_USE_AND_SCHEMA_V2.json",
+      "sha256": "d1466eb98d237fb49434da149fb2f34b044e5a5b2fac0c9dec08198977c27ee0",
+      "bytes": 119604,
+      "source_commit": "05032e19e30b1f890a6b2679c70d3c97f0bbb2a1"
+    },
+    {
+      "B_path": "reports/profile-increment-to-release-01/B/source-profiles/QB_OPPORTUNITY_ASOF_PROFILES_V2.json.gz",
+      "sha256": "dac437d97dc2fb58b989d53113868f00f241f3baa451fa2238268dd7d2753690",
+      "bytes": 4539468,
+      "source_commit": "05032e19e30b1f890a6b2679c70d3c97f0bbb2a1"
+    },
+    {
+      "B_path": "reports/profile-increment-to-release-01/B/source-profiles/PASSING_DEFENSE_ASOF_PROFILES_V2.json.gz",
+      "sha256": "f39ccc9ef99e9f167e920a9f0b6d0d70d55af1b60c040f38b01142c910295391",
+      "bytes": 1224987,
+      "source_commit": "05032e19e30b1f890a6b2679c70d3c97f0bbb2a1"
+    }
+  ],
+  "keys": {
+    "canonical_player": "identity.player_id; GSIS",
+    "historical_team": "identity.team; defense.team",
+    "role": "QB passing queries; defense.role existing producerdefinition",
+    "event": "identity.game_id with source/eventversion bindings; nativeeventcrosswalkqualifiedseparately",
+    "cutoff_UTC": "identity kickoffs andcutoffareUTCUnixseconds; converttoawareUTCwithoutchanginginstant",
+    "profile_version": "version",
+    "source_bindings": "source_tier plus source_schema extraction manifests; no authenticated historical vintageimplied"
+  },
+  "measure_fields": {
+    "definition/unit": "FIELD_TO_USE_AND_SCHEMA_V2 blocks[].definition/unit, not inferredfromname",
+    "numerator/denominator": "own/offense/defense.rates[rate].numerator/denominator; defense.summary sameformat",
+    "eligiblegames/plays": "games/game_ids/counts; countsopportunitiesaredeclaredproxy,notfullQBparticipation",
+    "lookback": "Boundfixedearlierappearance/teamhistoryrecipe; exactadmittedmembershipretained",
+    "latestadmittedsource": "latest_prior_game/latest_prior_game_at/latest_source_available_at/feature_age_days/source_age_days",
+    "raw/shrunk/prior": "rates[rate].raw/shrunk/prior/prior_denominator/pseudo_opportunities",
+    "support/uncertainty": "counts and declared DESCRIPTIVE_COUNTS_AND_PRIOR_SUPPORT; no calibratedpredictiveuncertainty",
+    "missingness/fallback": "status andrates[rate].state; nullraw/undefineddenominator distinctfromzero; forecastfallbackindependentrowfield",
+    "consuming_method": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1 R1support/R2playeroffense/R3defense; exactfeatureorderfrozenandbound"
+  },
+  "denominator_distinctions": {
+    "attempt_per_dropback": "attempts_on_dropbacks/providerdropbacks;credited_attemptsoutsideproviderdropbackskeptseparately",
+    "completion_per_attempt": "knowncompletionannotationdenominator;notchartedcatchability",
+    "own_opportunities": "AttributedQBpassingeventproxy,notalloffensiveplayswithQBactive",
+    "offense_defense_opportunities": "Nondeletednon2ptreportedrush/pass/dropbackproxy",
+    "QB_share": "Ownpastcount/samehistoricalteamcount,notpregamestarterprobability"
+  },
+  "receiving_defense_difference": "C role\u00d7depthtarget/catchmeasuresuseidentifiedtargets; Bopportunity/conversionusescreditedATT/dropbackanddeclaredproxydenominators. Do not mergeorlabeloneascompleteothercomponent.",
+  "populations": "Traininghistory,profilingpriority,andactualofferrecommendationeligibilityremainseparate. Historicalstatrowuniverseisnotcurrentpregamemembership.",
+  "not_implemented": [
+    "Btruepressure/catchability/alignment/allrouteswithoutqualifiedsource",
+    "currenteventeffectiveQBstarter/replacementprobability",
+    "causalopponenttalent/independentbookmarketclaims"
+  ],
+  "no_source_collection_or_model_change": true
+}

@@ -1,0 +1,302 @@
+{
+  "id": "B_M2_INDEPENDENT_NATIVE_GRADING_AND_SELECTORS_v1",
+  "at_UTC": "2026-11-15T05:25:25.060001+00:00",
+  "state": "PASS_WITH_STATED_SCOPE",
+  "checks": 11005,
+  "problems": [],
+  "manual_Decimal_grades": 3550,
+  "selected_membership_views": 1026,
+  "calibrated_threshold_policy_checks": 27,
+  "largest_independent_CDF_difference": 2.8965718712470334e-13,
+  "full_law_records": [
+    {
+      "method": "M2_P2_BIN",
+      "OVER": {
+        "decided": 10,
+        "losses": 6,
+        "rate": 0.4,
+        "selected": 10,
+        "wins": 4
+      },
+      "UNDER": {
+        "decided": 132,
+        "losses": 67,
+        "rate": 0.49242424242424243,
+        "selected": 132,
+        "wins": 65
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 73,
+        "rate": 0.4859154929577465,
+        "selected": 142,
+        "wins": 69
+      },
+      "Brier": 0.28503167939931023,
+      "log_loss": 0.7712397175306632
+    },
+    {
+      "method": "M2_P2_BB",
+      "OVER": {
+        "decided": 10,
+        "losses": 6,
+        "rate": 0.4,
+        "selected": 10,
+        "wins": 4
+      },
+      "UNDER": {
+        "decided": 132,
+        "losses": 67,
+        "rate": 0.49242424242424243,
+        "selected": 132,
+        "wins": 65
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 73,
+        "rate": 0.4859154929577465,
+        "selected": 142,
+        "wins": 69
+      },
+      "Brier": 0.2849116954855029,
+      "log_loss": 0.7709530804656995
+    },
+    {
+      "method": "M2_C1_BIN",
+      "OVER": {
+        "decided": 13,
+        "losses": 7,
+        "rate": 0.46153846153846156,
+        "selected": 13,
+        "wins": 6
+      },
+      "UNDER": {
+        "decided": 129,
+        "losses": 65,
+        "rate": 0.49612403100775193,
+        "selected": 129,
+        "wins": 64
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 72,
+        "rate": 0.49295774647887325,
+        "selected": 142,
+        "wins": 70
+      },
+      "Brier": 0.28149513339179977,
+      "log_loss": 0.762490481109269
+    },
+    {
+      "method": "M2_C1_BB",
+      "OVER": {
+        "decided": 13,
+        "losses": 7,
+        "rate": 0.46153846153846156,
+        "selected": 13,
+        "wins": 6
+      },
+      "UNDER": {
+        "decided": 129,
+        "losses": 65,
+        "rate": 0.49612403100775193,
+        "selected": 129,
+        "wins": 64
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 72,
+        "rate": 0.49295774647887325,
+        "selected": 142,
+        "wins": 70
+      },
+      "Brier": 0.28141488234293555,
+      "log_loss": 0.7623063268126157
+    },
+    {
+      "method": "M2_C2_BIN",
+      "OVER": {
+        "decided": 13,
+        "losses": 7,
+        "rate": 0.46153846153846156,
+        "selected": 13,
+        "wins": 6
+      },
+      "UNDER": {
+        "decided": 129,
+        "losses": 65,
+        "rate": 0.49612403100775193,
+        "selected": 129,
+        "wins": 64
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 72,
+        "rate": 0.49295774647887325,
+        "selected": 142,
+        "wins": 70
+      },
+      "Brier": 0.2815579090307307,
+      "log_loss": 0.7626901933482295
+    },
+    {
+      "method": "M2_C2_BB",
+      "OVER": {
+        "decided": 13,
+        "losses": 7,
+        "rate": 0.46153846153846156,
+        "selected": 13,
+        "wins": 6
+      },
+      "UNDER": {
+        "decided": 129,
+        "losses": 65,
+        "rate": 0.49612403100775193,
+        "selected": 129,
+        "wins": 64
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 72,
+        "rate": 0.49295774647887325,
+        "selected": 142,
+        "wins": 70
+      },
+      "Brier": 0.2814788442042206,
+      "log_loss": 0.7625063423402838
+    },
+    {
+      "method": "D_M2",
+      "OVER": {
+        "decided": 46,
+        "losses": 26,
+        "rate": 0.43478260869565216,
+        "selected": 46,
+        "wins": 20
+      },
+      "UNDER": {
+        "decided": 96,
+        "losses": 51,
+        "rate": 0.46875,
+        "selected": 96,
+        "wins": 45
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 77,
+        "rate": 0.45774647887323944,
+        "selected": 142,
+        "wins": 65
+      },
+      "Brier": 0.27563172618659465,
+      "log_loss": 0.7489979225023176
+    },
+    {
+      "method": "UNCHANGED_ATT",
+      "OVER": {
+        "decided": 8,
+        "losses": 6,
+        "rate": 0.25,
+        "selected": 8,
+        "wins": 2
+      },
+      "UNDER": {
+        "decided": 134,
+        "losses": 65,
+        "rate": 0.5149253731343284,
+        "selected": 134,
+        "wins": 69
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 71,
+        "rate": 0.5,
+        "selected": 142,
+        "wins": 71
+      },
+      "Brier": 0.2738218657344712,
+      "log_loss": 0.7469211632732577
+    },
+    {
+      "method": "RETAINED_B0",
+      "OVER": {
+        "decided": 34,
+        "losses": 16,
+        "rate": 0.5294117647058824,
+        "selected": 34,
+        "wins": 18
+      },
+      "UNDER": {
+        "decided": 108,
+        "losses": 53,
+        "rate": 0.5092592592592593,
+        "selected": 108,
+        "wins": 55
+      },
+      "COMBINED": {
+        "decided": 142,
+        "losses": 69,
+        "rate": 0.5140845070422535,
+        "selected": 142,
+        "wins": 73
+      },
+      "Brier": 0.2665452222447479,
+      "log_loss": 0.7289025147190994
+    }
+  ],
+  "BIN_BB_actual_side_differences": [
+    {
+      "parent": "P2",
+      "law_side_disagreements": 0,
+      "BIN_wins": 69,
+      "BB_wins": 69
+    },
+    {
+      "parent": "C1",
+      "law_side_disagreements": 0,
+      "BIN_wins": 70,
+      "BB_wins": 70
+    },
+    {
+      "parent": "C2",
+      "law_side_disagreements": 0,
+      "BIN_wins": 70,
+      "BB_wins": 70
+    }
+  ],
+  "source_bindings": [
+    {
+      "week": 5,
+      "sha256": "7ebb7e3b546147f8e7f10fa887fd295f2d72f88eb70600a22448ad29feff69fe"
+    },
+    {
+      "week": 6,
+      "sha256": "3f7ccc297f7e2dd63d1bdc6c1e625b6183f58b58f3551d4ce2aa8ad02416d5b5"
+    },
+    {
+      "week": 7,
+      "sha256": "c6b2a6dfd5a983892afcc7882fea337ad105a327972ce6c5c16300e4fb5ead43"
+    },
+    {
+      "week": 8,
+      "sha256": "43fc0aef34076e5d5389cb47239c9a10d68df80cd5db6973cf008b997504b2c0"
+    },
+    {
+      "week": 9,
+      "sha256": "63b131964ddc110e78ec8328f6c592f9f96f59be3e946e5a45e4de848cde76f8"
+    }
+  ],
+  "source_score_sha256": "d5819e7a86dffb263acfc1bec12c0a8559d748f482868353813c4990d0558432",
+  "CPU_seconds": 7.521220574999999,
+  "reviewer_optimizer_calls": 0,
+  "reviewer_NFL_fits": 0,
+  "new_source_reads": 0,
+  "private_rows_published": 0,
+  "limits": [
+    "NativeW5\u20139 only; no private A earlier offer rows inspected.",
+    "Source clocks and original issuance remain unverified at declared TierB.",
+    "Point/grade/aggregate logic is independent; raw count laws were additionally checked by separate beta integral. Exact executable event probabilities are used after parity checks to preserve floating-point rank ties.",
+    "New M2 selector model/policy history cannot inherit oldFTN results; original ordinal bridge is separate verification.",
+    "No new prospective picks, scientific superiority or production admission established by these checks."
+  ]
+}

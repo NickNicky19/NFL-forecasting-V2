@@ -1,0 +1,48 @@
+{
+  "status": "PASS_INDEPENDENT_FROZEN_COHORT_NATIVE_LAW_AND_CORRECTED_CONTROL_REPLAY",
+  "candidate_rows": 134168,
+  "control_reference_rows": 364926,
+  "cohort_query_memberships": 17968,
+  "score_views": 7458,
+  "corrected_pair_views": 52780,
+  "checks": {
+    "source_hashes": 450,
+    "control_label_position_joins": 364926,
+    "native_law_coverage_precision_aggregates": 210120,
+    "score_membership_hashes": 14916,
+    "paired_metric_and_membership_checks": 361428,
+    "paired_week_and_game_checks": 374536
+  },
+  "shared_learned_counts": {
+    "rush_yd:primary": 524,
+    "rush_yd:extended": 964,
+    "rush_att:primary": 524,
+    "rush_att:extended": 964,
+    "rec:extended": 149,
+    "rec:primary": 1339,
+    "rec_yd:extended": 149,
+    "rec_yd:primary": 1339,
+    "rush_rec_yd:extended": 149,
+    "rush_rec_yd:primary": 1339,
+    "nick-chart-ppr-v1:primary": 1487,
+    "pass_yd:primary": 121,
+    "pass_td:primary": 121,
+    "pass_cmp:primary": 121,
+    "pass_att:primary": 121,
+    "pass_int:primary": 121,
+    "anytime_td:extended": 149,
+    "anytime_td:primary": 1339
+  },
+  "score_sha256": "5377b47ddf9c420540a29def18277d018462802593c88b754579b210e00cdbc7",
+  "corrected_pair_sha256": "504a2d48813cd4787262d45cfb74bfceeaa23697f00d703a13c0b341b355efc7",
+  "prior_incomplete_comparator_sidecar": "preserved/superseded; pre-C02fullpanelchoices verified for correction",
+  "resource": {
+    "wall_seconds": 44.07092972600003,
+    "cpu_seconds": 43.987756341,
+    "peak_rss_bytes": 641404928
+  },
+  "limitations": "All7exposedweeks; historicalparticipantqueryuniverse, old-memory selectors, chartscorehistory notworkload; no selection/price/ROI or sourcevintageclaim. Corrected sourcechoices heldfixed across subgroups.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "week8_outcomes_read": 0
+}

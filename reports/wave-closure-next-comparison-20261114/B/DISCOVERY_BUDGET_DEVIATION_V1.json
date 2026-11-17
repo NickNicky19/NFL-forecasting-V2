@@ -1,0 +1,36 @@
+{
+  "id": "B_SHARED_DISCOVERY_BUDGET_DEVIATION_v1",
+  "actual_UTC": "2026-11-14T14:59:37.754943+00:00",
+  "registered_initial_HTTP_cap": 40,
+  "actual_completed_source_read_attempts": {
+    "root": 5,
+    "selector_review": 36,
+    "peer_handoffs": 37,
+    "forward_grading": 15
+  },
+  "total_attempts": 93,
+  "cap_exceeded_by": 53,
+  "root_cause": "Root registered a shared40-request cap after parallel tasks were launched and did not communicate it until delegated discovery was already in flight. This is a coordination failure; do not relabel the original40cap as satisfied.",
+  "original_budget_receipt_sha256": "4c5e24274a4c57c2042a33f82d0bcf74fe6229b4e705c78008a09b65e86e8ac7",
+  "action": "All additional external source discovery stopped. Existing evidence sufficient for grading/verification; no new fits or paid calls. Preserve original budget and actual attempts. Only bounded own-repository publication/readback remains separately permitted.",
+  "new_source_reads_authorized": 0,
+  "publication_readback_only_cap": 12,
+  "publication_readback_max_bytes": 16777216,
+  "measured_source_bodies": {
+    "root_native_feed": 3417078,
+    "selector_pinned_inputs": 2832814,
+    "peer_exact_bodies": 200413,
+    "forward_sources": 5030611
+  },
+  "measurement_limits": "Selector/discovery metadata not all retained byte-exact; do not invent exact aggregatewirebytes. No credential/upload retries/newcollector.",
+  "original_paid_API_allowance_changed": false,
+  "final_known_retained_source_body_totals": {
+    "root": 3417078,
+    "selector": 2877887,
+    "peer": 200413,
+    "forward_grading": 5030611,
+    "total": 11525989,
+    "wire_metadata_not_measured": true,
+    "whole_wire_byte_cap_not_certified": true
+  }
+}

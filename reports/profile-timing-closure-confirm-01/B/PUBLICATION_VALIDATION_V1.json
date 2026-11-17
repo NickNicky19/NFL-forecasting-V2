@@ -1,0 +1,70 @@
+{
+  "id": "B-TIMING-CLOSURE-PUBLICATION-VALIDATION-v1",
+  "at_UTC": "2026-11-11T04:08:19.266483+00:00",
+  "all_previous_exports_preserved": 1119,
+  "new_bound_exports": 72,
+  "total_exports": 1191,
+  "exact_remote_members": 72,
+  "exact_remote_bytes": 862688,
+  "scientific_index_unchanged": true,
+  "checks": {
+    "current_guard_unittest": {
+      "tests": 3,
+      "state": "PASS"
+    },
+    "captured_head_full_unittest": {
+      "tests": 535,
+      "state": "PASS_BEFORE_OUTAGE"
+    },
+    "checkpoint": {
+      "state": "PASS",
+      "JSON_files_parsed": 31496
+    },
+    "result_coverage": {
+      "state": "PASS",
+      "indexed_records": 613572,
+      "registered_artifacts": 225
+    },
+    "paired_coverage": {
+      "state": "PASS",
+      "canonical_evaluation_views": 124630,
+      "derived_comparison_views": 21840
+    },
+    "prop_coverage": {
+      "state": "PASS",
+      "groups": 124597,
+      "new_grades": 0,
+      "NFL_outcome_rows_read": 0
+    }
+  },
+  "CI": {
+    "captured_c319_runs": [
+      42920183182,
+      42919906341
+    ],
+    "captured_state": "BOTH_SUCCESS",
+    "metadata_b046_runs": [
+      42922404257,
+      42922378039
+    ],
+    "metadata_state": "BOTH_SUCCESS",
+    "final_publication": "CHECK_CURRENT_HEAD_AFTER_PUSH;NOT_ASSUMED"
+  },
+  "failure_receipt": "FAILED_PUBLICATION_INDEX_V1.json",
+  "metadata_V2": "Output-preserving six basic flag correction;10forecastvalues/laws/clocksunchanged",
+  "new_fits_during_resumption": 0,
+  "new_inference_during_resumption": 0,
+  "new_forecasts_during_resumption": 0,
+  "new_scored_weeks": 0,
+  "new_primary_releases": 0,
+  "original_capture": {
+    "id": "B-F0-F2-20261110-W10-FIRST-01",
+    "issued_UTC": "2026-11-10T23:01:29.145519+00:00",
+    "new_current_origin_fits_already_recorded": 2,
+    "forecasts_already_recorded": 10,
+    "offers": 0,
+    "selections": 0,
+    "reissued": false
+  },
+  "permissions": "No peer writes/dispatches/collector/scheduler/spending/protectedrowtransfer;originalsiteownerunchanged"
+}

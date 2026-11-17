@@ -1,0 +1,362 @@
+{
+  "scope": "Post-fit descriptive attribution, no newly selected policy or search; no claim causal attribution from split counts",
+  "population": [
+    {
+      "diagnostic_group": "ALL",
+      "n": 277,
+      "defined_by": "Source pre-cutoff rank, after-score descriptive error attribution; not a new eligible population/selectedpolicy.",
+      "S0": {
+        "MAE": 5.769158539479792,
+        "bias": -0.9684893653068452
+      },
+      "S1": {
+        "MAE": 5.8036553642120134,
+        "bias": -1.1999339216747191
+      },
+      "S2": {
+        "MAE": 5.33585557529023,
+        "bias": -0.8679818600270904
+      }
+    },
+    {
+      "diagnostic_group": "SOURCE_RANK_1",
+      "n": 227,
+      "defined_by": "Source pre-cutoff rank, after-score descriptive error attribution; not a new eligible population/selectedpolicy.",
+      "S0": {
+        "MAE": 5.220976499801495,
+        "bias": -1.9180293695801118
+      },
+      "S1": {
+        "MAE": 5.313053823287127,
+        "bias": -2.147729346237219
+      },
+      "S2": {
+        "MAE": 4.9525174217199845,
+        "bias": -1.222811188059401
+      }
+    },
+    {
+      "diagnostic_group": "SOURCE_RANK_2_PLUS",
+      "n": 50,
+      "defined_by": "Source pre-cutoff rank, after-score descriptive error attribution; not a new eligible population/selectedpolicy.",
+      "S0": {
+        "MAE": 8.257904999619262,
+        "bias": 3.3424222540937847
+      },
+      "S1": {
+        "MAE": 8.030986360010996,
+        "bias": 3.1030573058390285
+      },
+      "S2": {
+        "MAE": 7.076210792499142,
+        "bias": 0.7429432892395996
+      }
+    }
+  ],
+  "model_usage": [
+    {
+      "slot": "2026-W01-S1",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 5,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 2,
+        "current_snapshot_age_hours": 20,
+        "current_snapshot_age_hours_missing": 0
+      },
+      "new_features_used": true,
+      "all_splits": 487,
+      "fit_cutoff": 1788999600.0,
+      "training_rows": 664,
+      "latest_training_label": 1768180800.0
+    },
+    {
+      "slot": "2026-W01-S2",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 0,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 2,
+        "current_snapshot_age_hours": 17,
+        "current_snapshot_age_hours_missing": 0,
+        "current_depth_rank": 41,
+        "rank_change_since_eligible_own_game": 0
+      },
+      "new_features_used": true,
+      "all_splits": 492,
+      "fit_cutoff": 1788999600.0,
+      "training_rows": 664,
+      "latest_training_label": 1768180800.0
+    },
+    {
+      "slot": "2026-W02-S1",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 6,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 3,
+        "current_snapshot_age_hours": 20,
+        "current_snapshot_age_hours_missing": 0
+      },
+      "new_features_used": true,
+      "all_splits": 489,
+      "fit_cutoff": 1789690500.0,
+      "training_rows": 667,
+      "latest_training_label": 1789604400.0
+    },
+    {
+      "slot": "2026-W02-S2",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 0,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 3,
+        "current_snapshot_age_hours": 14,
+        "current_snapshot_age_hours_missing": 0,
+        "current_depth_rank": 43,
+        "rank_change_since_eligible_own_game": 0
+      },
+      "new_features_used": true,
+      "all_splits": 494,
+      "fit_cutoff": 1789690500.0,
+      "training_rows": 667,
+      "latest_training_label": 1789604400.0
+    },
+    {
+      "slot": "2026-W03-S1",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 6,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 5,
+        "current_snapshot_age_hours": 25,
+        "current_snapshot_age_hours_missing": 0
+      },
+      "new_features_used": true,
+      "all_splits": 526,
+      "fit_cutoff": 1790295300.0,
+      "training_rows": 701,
+      "latest_training_label": 1790036100.0
+    },
+    {
+      "slot": "2026-W03-S2",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 2,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 2,
+        "current_snapshot_age_hours": 18,
+        "current_snapshot_age_hours_missing": 0,
+        "current_depth_rank": 40,
+        "rank_change_since_eligible_own_game": 0
+      },
+      "new_features_used": true,
+      "all_splits": 519,
+      "fit_cutoff": 1790295300.0,
+      "training_rows": 701,
+      "latest_training_label": 1790036100.0
+    },
+    {
+      "slot": "2026-W04-S1",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 3,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 5,
+        "current_snapshot_age_hours": 25,
+        "current_snapshot_age_hours_missing": 0
+      },
+      "new_features_used": true,
+      "all_splits": 552,
+      "fit_cutoff": 1790900100.0,
+      "training_rows": 740,
+      "latest_training_label": 1790640900.0
+    },
+    {
+      "slot": "2026-W04-S2",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 8,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 2,
+        "current_snapshot_age_hours": 13,
+        "current_snapshot_age_hours_missing": 0,
+        "current_depth_rank": 45,
+        "rank_change_since_eligible_own_game": 0
+      },
+      "new_features_used": true,
+      "all_splits": 533,
+      "fit_cutoff": 1790900100.0,
+      "training_rows": 740,
+      "latest_training_label": 1790640900.0
+    },
+    {
+      "slot": "2026-W05-S1",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 8,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 9,
+        "current_snapshot_age_hours": 15,
+        "current_snapshot_age_hours_missing": 0
+      },
+      "new_features_used": true,
+      "all_splits": 560,
+      "fit_cutoff": 1791504900.0,
+      "training_rows": 776,
+      "latest_training_label": 1791245700.0
+    },
+    {
+      "slot": "2026-W05-S2",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 4,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 6,
+        "current_snapshot_age_hours": 12,
+        "current_snapshot_age_hours_missing": 0,
+        "current_depth_rank": 43,
+        "rank_change_since_eligible_own_game": 0
+      },
+      "new_features_used": true,
+      "all_splits": 583,
+      "fit_cutoff": 1791504900.0,
+      "training_rows": 776,
+      "latest_training_label": 1791245700.0
+    },
+    {
+      "slot": "2026-W06-S1",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 7,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 10,
+        "current_snapshot_age_hours": 11,
+        "current_snapshot_age_hours_missing": 0
+      },
+      "new_features_used": true,
+      "all_splits": 594,
+      "fit_cutoff": 1792109700.0,
+      "training_rows": 810,
+      "latest_training_label": 1791850500.0
+    },
+    {
+      "slot": "2026-W06-S2",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 5,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 4,
+        "current_snapshot_age_hours": 4,
+        "current_snapshot_age_hours_missing": 0,
+        "current_depth_rank": 42,
+        "rank_change_since_eligible_own_game": 0
+      },
+      "new_features_used": true,
+      "all_splits": 605,
+      "fit_cutoff": 1792109700.0,
+      "training_rows": 810,
+      "latest_training_label": 1791850500.0
+    },
+    {
+      "slot": "2026-W07-S1",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 9,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 10,
+        "current_snapshot_age_hours": 5,
+        "current_snapshot_age_hours_missing": 0
+      },
+      "new_features_used": true,
+      "all_splits": 610,
+      "fit_cutoff": 1792714500.0,
+      "training_rows": 846,
+      "latest_training_label": 1792455300.0
+    },
+    {
+      "slot": "2026-W07-S2",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 6,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 6,
+        "current_snapshot_age_hours": 5,
+        "current_snapshot_age_hours_missing": 0,
+        "current_depth_rank": 39,
+        "rank_change_since_eligible_own_game": 0
+      },
+      "new_features_used": true,
+      "all_splits": 614,
+      "fit_cutoff": 1792714500.0,
+      "training_rows": 846,
+      "latest_training_label": 1792455300.0
+    },
+    {
+      "slot": "2026-W08-S1",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 10,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 11,
+        "current_snapshot_age_hours": 6,
+        "current_snapshot_age_hours_missing": 0
+      },
+      "new_features_used": true,
+      "all_splits": 629,
+      "fit_cutoff": 1793319300.0,
+      "training_rows": 875,
+      "latest_training_label": 1793060100.0
+    },
+    {
+      "slot": "2026-W08-S2",
+      "new_feature_split_counts": {
+        "current_snapshot_available": 0,
+        "current_player_in_snapshot": 0,
+        "current_rank_available": 0,
+        "previous_role_available": 6,
+        "current_depth_rank_missing": 0,
+        "rank_change_since_eligible_own_game_missing": 9,
+        "current_snapshot_age_hours": 5,
+        "current_snapshot_age_hours_missing": 0,
+        "current_depth_rank": 42,
+        "rank_change_since_eligible_own_game": 0
+      },
+      "new_features_used": true,
+      "all_splits": 628,
+      "fit_cutoff": 1793319300.0,
+      "training_rows": 875,
+      "latest_training_label": 1793060100.0
+    }
+  ]
+}

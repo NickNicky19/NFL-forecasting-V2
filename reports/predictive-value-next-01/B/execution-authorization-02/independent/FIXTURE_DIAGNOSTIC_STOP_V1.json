@@ -1,0 +1,22 @@
+{
+  "id": "B-TABICLV2-INDEPENDENT-FIXTURE-DIAGNOSTIC-STOP-v1",
+  "state": "STOPPED_INCOMPLETE_NO_PASS",
+  "scope": "Read-only independent diagnosis of the pre-fit NFL-data mutation fixture; not a model fit, prediction run, source-admission pass or NFL accuracy result.",
+  "attempted_check": "Reproduce the original earliest-weekly-fit-cutoff mutation, then compare full-context consumed and transformed inputs using each training/query row's own registered feature cutoff.",
+  "stop_reason": "Per-record full-context deepcopy and ContextHistory reconstruction exceeded the intended small diagnostic cost. The reviewer interrupted its own process while copying context; no full-loop retry was performed.",
+  "measured_CPU_before_SIGINT_seconds": 78.43,
+  "metadata_process_CPU_recorded_subtotal_seconds": 0.015370645,
+  "accounting_limits": "Carry this consumption into the same pilot's cumulative accounting. Exit, launcher, searches and orchestration were not completely metered. No allowance reset, transfer or extension is claimed.",
+  "failed_process_exit_code": 130,
+  "failure_type": "KeyboardInterrupt during deepcopy",
+  "completed_aggregate_count_or_PASS_receipt": false,
+  "static_diagnosis": "The original fixture mutates outcomes unavailable at the earliest weekly fit cutoff, although some can become legitimately available before a later query kickoff. This is a plausible fixture-cutoff mismatch, not yet an independent NFL-data PASS or a demonstrated source/learner defect.",
+  "NFL_fit_calls": 0,
+  "model_loads": 0,
+  "predictions_generated": 0,
+  "new_NFL_grades": 0,
+  "network_requests": 0,
+  "protected_row_or_identity_exports": 0,
+  "next_executor": "Root registered B pilot executor",
+  "next_action": "Root performs its already-underway grouped-cutoff fixture once within the remaining cumulative limits. No further reviewer computation without an explicit scoped request. Preserve this diagnostic stop separately from the original worker failure and any later corrected fixture result."
+}

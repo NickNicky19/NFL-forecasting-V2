@@ -1,0 +1,22 @@
+{
+  "state": "PASS_DISTINCT_EXTERNAL_AND_ARCHIVE_MAP_BYTE_BINDINGS",
+  "delta_archive_sha256": "3ac59cf6888faae55ded308042c05f00bbdf474d3c10b35974dc801d60a1175f",
+  "external_private_map_sha256": "e592881a6495ad097b31667daaa12229f0837b0bec6ff390386387df01f7a1ad",
+  "external_private_map_bytes": 15376953,
+  "archive_map_member": "REQUIRED_FILES_PRIVATE.json",
+  "archive_map_member_sha256": "4a9a130c9bef6c0b907a3da86679aa77398e9b5575545f39119b9d291884e68d",
+  "archive_map_member_bytes": 12571859,
+  "semantic_objects_identical": true,
+  "deterministic_external_reconstruction": "UTF8 json.dumps(decoded_archive_map,indent=2) + newline; preserve insertion order; equality verified byteforbyte",
+  "original_delta_metadata_sha256": "71b28844ecf714290097bb2a6d161e6e63a2e30109a4d2dfb622d9e9b49bd2f3",
+  "interpretation": "The existing metadata binds the external prettyJSON bytes, not the compact map member. Keep both hashes in an additive recovery qualification; do not pretend the two encodings are byte-identical or overwrite original delta.",
+  "new_fits": 0,
+  "uploads": 0,
+  "deletions": 0,
+  "current2026_week8_outcomes_read": 0,
+  "resource": {
+    "wall_seconds": 1.0069093340007385,
+    "cpu_seconds": 1.006806592,
+    "peak_rss_bytes": 148451328
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "state": "PASS_CANONICAL_VERSION_EXCLUSION_RECOMMENDATION",
+  "audit_records": 145219,
+  "audit_evaluation_views": 145197,
+  "software_receipts_separate": 22,
+  "recommended_excluded_evaluation_views": 20567,
+  "exclusion_state_counts": {
+    "SUPERSEDED_ORIGINAL_RECIPE_CONTINUITY": 176,
+    "INVALIDATED_REQUESTED_SHARED_MASK_REFERENCE_ALIAS": 1844,
+    "ARCHIVED_COMPONENT_SCORE_VERSION": 17540,
+    "SUPERSEDED_FLOAT_CHART_PRECISION_SCORE_VERSION": 1007
+  },
+  "recommended_current_canonical_evaluation_views": 124630,
+  "component_relationship_counts": {
+    "identical_supported_dates_and_native_metrics": 12798,
+    "narrower_component_dates_not_identical_aggregate": 4742
+  },
+  "corrected_chart_precision_views": 1007,
+  "changed_chart_tolerance_views": 478,
+  "mapping_artifact": "reports/continuation-20261030d/CURRENT_SCORE_VERSION_EXCLUSIONS_RECOMMENDATION.json",
+  "mapping_sha256": "ba83ae2a5deb6d4be4de5800189f2943733e73bd3aebb1b7376c39b556594fbc",
+  "audit_manifest_sha256": "5357620f2219bd3bfe9108bad72a9d3aa19e15a7c54426fbc5777be74150198d",
+  "limitations": [
+    "Current canonical means preferred score version, not operational readiness or deployment.",
+    "Retain separately reported/unreproduced, original replay/provider, retrospective current-vintage and software tiers.",
+    "Rank only identical evaluation populations, source labels, horizons, information policies and compatible output products; zero support and unavailable comparisons stay unestablished.",
+    "The broader 2025 v2 artifact retains 6183 unaffected univariate records but 1844 requested shared-mask records remain invalid. Compact v3 has a different candidate-plus-two-control mask; no blanket repair.",
+    "Archived 2023 partial and continuation results remain valid for their actual weeks. Complete replay is preferred; narrower ALL aggregates cannot be called identical full-season tests."
+  ],
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0,
+  "resource": {
+    "wall_seconds": 14.18018763100008,
+    "cpu_seconds": 14.108399431,
+    "peak_rss_bytes": 796332032
+  }
+}

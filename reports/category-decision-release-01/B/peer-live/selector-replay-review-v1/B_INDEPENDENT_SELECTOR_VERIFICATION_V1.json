@@ -1,0 +1,926 @@
+{
+  "id": "B-INDEPENDENT-WEBSITE-FOUR-WEEK-SELECTOR-20261112-v1",
+  "verified_UTC": "2026-11-12T02:35:30.380450+00:00",
+  "owner_protocol": "NFL-WEB-EXACT-SELECTOR-REC-P1-MEAN-WRTE-20261112-v1",
+  "owner_protocol_file_sha256": "a69a34eb9f38592c27d01b596428cbba49c581baebc487d9e2f86f0993afd31d",
+  "owner_source_comment": "https://github.com/NickNicky19/nicks-expert-nfl-picks/pull/1#issuecomment-6812058949",
+  "owner_result_comment": "https://github.com/NickNicky19/nicks-expert-nfl-picks/pull/1#issuecomment-6812397309",
+  "state": "PASS_WITHIN_FOUR_WEEK_CONDITIONAL_RETROSPECTIVE_SCOPE",
+  "source_inputs_verified": 29,
+  "source_input_bytes": 10001229,
+  "actual_ranker_sha256": "7889c35cefa0df1ba0be53ee749182f243eba35a4f4c63b2c01db023e701e14f",
+  "grader_sha256": "afd1310d708def4f400e6bf84e981e2edc7635dc946a63571022203c1d3ae735",
+  "canonical_membership_rows": 192,
+  "canonical_membership_sha256": "c88fc8d3ccf3cab3f1b9919e7da5dafb02fa1cc78de651ee230cee223c9453c2",
+  "weeks": [
+    {
+      "week": 5,
+      "board_clock": "2026-10-11T15:33:09Z",
+      "board_games": 15,
+      "board_player_games": 524,
+      "rec_opportunity_coverage": {
+        "UNSUPPORTED_ROLE_REFERENCE": 20,
+        "QUERY_HORIZON_UNQUALIFIED_REFERENCE": 25,
+        "C_P1_MEAN_RECONSTRUCTED_PREFIX_INVARIANT": 41,
+        "MISSING_OR_CONFLICTING_ID_REFERENCE": 2
+      },
+      "candidate_point_overrides": 41,
+      "candidate_selected_model_rows": 2,
+      "selected": {
+        "saved_control": 24,
+        "candidate": 24
+      },
+      "states": {
+        "saved_control": {
+          "hit": 12,
+          "miss": 12
+        },
+        "candidate": {
+          "hit": 13,
+          "miss": 11
+        }
+      },
+      "own_sides": {
+        "saved_control": {
+          "over": {
+            "hit": 7,
+            "miss": 5
+          },
+          "under": {
+            "miss": 7,
+            "hit": 5
+          }
+        },
+        "candidate": {
+          "over": {
+            "hit": 7,
+            "miss": 5
+          },
+          "under": {
+            "miss": 6,
+            "hit": 6
+          }
+        }
+      },
+      "membership_common_same_side": 22,
+      "control_only": 2,
+      "candidate_only": 2,
+      "removed_states": {
+        "hit": 1,
+        "miss": 1
+      },
+      "added_states": {
+        "hit": 2
+      }
+    },
+    {
+      "week": 6,
+      "board_clock": "2026-10-18T15:49:10Z",
+      "board_games": 14,
+      "board_player_games": 510,
+      "rec_opportunity_coverage": {
+        "UNSUPPORTED_ROLE_REFERENCE": 18,
+        "QUERY_HORIZON_UNQUALIFIED_REFERENCE": 28,
+        "C_P1_MEAN_RECONSTRUCTED_PREFIX_INVARIANT": 35,
+        "MISSING_EXACT_PLAYER_GAME_POINT_REFERENCE": 1,
+        "MISSING_OR_CONFLICTING_ID_REFERENCE": 2
+      },
+      "candidate_point_overrides": 35,
+      "candidate_selected_model_rows": 4,
+      "selected": {
+        "saved_control": 24,
+        "candidate": 24
+      },
+      "states": {
+        "saved_control": {
+          "miss": 12,
+          "hit": 11,
+          "unresolved": 1
+        },
+        "candidate": {
+          "miss": 11,
+          "hit": 12,
+          "unresolved": 1
+        }
+      },
+      "own_sides": {
+        "saved_control": {
+          "over": {
+            "miss": 6,
+            "hit": 5,
+            "unresolved": 1
+          },
+          "under": {
+            "hit": 6,
+            "miss": 6
+          }
+        },
+        "candidate": {
+          "over": {
+            "miss": 7,
+            "hit": 4,
+            "unresolved": 1
+          },
+          "under": {
+            "hit": 8,
+            "miss": 4
+          }
+        }
+      },
+      "membership_common_same_side": 20,
+      "control_only": 4,
+      "candidate_only": 4,
+      "removed_states": {
+        "hit": 1,
+        "miss": 3
+      },
+      "added_states": {
+        "miss": 2,
+        "hit": 2
+      }
+    },
+    {
+      "week": 7,
+      "board_clock": "2026-10-25T10:15:15Z",
+      "board_games": 14,
+      "board_player_games": 523,
+      "rec_opportunity_coverage": {
+        "UNSUPPORTED_ROLE_REFERENCE": 18,
+        "QUERY_HORIZON_UNQUALIFIED_REFERENCE": 56,
+        "MISSING_OR_CONFLICTING_ID_REFERENCE": 2,
+        "C_P1_MEAN_RECONSTRUCTED_PREFIX_INVARIANT": 7
+      },
+      "candidate_point_overrides": 7,
+      "candidate_selected_model_rows": 2,
+      "selected": {
+        "saved_control": 24,
+        "candidate": 24
+      },
+      "states": {
+        "saved_control": {
+          "miss": 9,
+          "hit": 15
+        },
+        "candidate": {
+          "miss": 9,
+          "hit": 15
+        }
+      },
+      "own_sides": {
+        "saved_control": {
+          "over": {
+            "miss": 6,
+            "hit": 6
+          },
+          "under": {
+            "hit": 9,
+            "miss": 3
+          }
+        },
+        "candidate": {
+          "over": {
+            "miss": 6,
+            "hit": 6
+          },
+          "under": {
+            "hit": 9,
+            "miss": 3
+          }
+        }
+      },
+      "membership_common_same_side": 22,
+      "control_only": 2,
+      "candidate_only": 2,
+      "removed_states": {
+        "miss": 1,
+        "hit": 1
+      },
+      "added_states": {
+        "miss": 1,
+        "hit": 1
+      }
+    },
+    {
+      "week": 8,
+      "board_clock": "2026-10-31T23:42:16Z",
+      "board_games": 14,
+      "board_player_games": 535,
+      "rec_opportunity_coverage": {
+        "QUERY_HORIZON_UNQUALIFIED_REFERENCE": 66,
+        "UNSUPPORTED_ROLE_REFERENCE": 22,
+        "MISSING_OR_CONFLICTING_ID_REFERENCE": 4,
+        "MISSING_EXACT_PLAYER_GAME_POINT_REFERENCE": 2
+      },
+      "candidate_point_overrides": 0,
+      "candidate_selected_model_rows": 0,
+      "selected": {
+        "saved_control": 24,
+        "candidate": 24
+      },
+      "states": {
+        "saved_control": {
+          "miss": 12,
+          "hit": 10,
+          "unresolved": 2
+        },
+        "candidate": {
+          "miss": 12,
+          "hit": 10,
+          "unresolved": 2
+        }
+      },
+      "own_sides": {
+        "saved_control": {
+          "over": {
+            "miss": 6,
+            "hit": 4,
+            "unresolved": 2
+          },
+          "under": {
+            "hit": 6,
+            "miss": 6
+          }
+        },
+        "candidate": {
+          "over": {
+            "miss": 6,
+            "hit": 4,
+            "unresolved": 2
+          },
+          "under": {
+            "hit": 6,
+            "miss": 6
+          }
+        }
+      },
+      "membership_common_same_side": 24,
+      "control_only": 0,
+      "candidate_only": 0,
+      "removed_states": {},
+      "added_states": {}
+    }
+  ],
+  "cumulative": {
+    "saved_control": {
+      "selected": 96,
+      "states": {
+        "hit": 48,
+        "miss": 45,
+        "unresolved": 3
+      },
+      "decided": 93,
+      "accuracy": 0.5161290322580645,
+      "own_sides": {
+        "over": {
+          "hit": 22,
+          "miss": 23,
+          "unresolved": 3
+        },
+        "under": {
+          "miss": 22,
+          "hit": 26
+        }
+      }
+    },
+    "candidate": {
+      "selected": 96,
+      "states": {
+        "hit": 50,
+        "miss": 43,
+        "unresolved": 3
+      },
+      "decided": 93,
+      "accuracy": 0.5376344086021505,
+      "own_sides": {
+        "over": {
+          "hit": 21,
+          "miss": 24,
+          "unresolved": 3
+        },
+        "under": {
+          "miss": 19,
+          "hit": 29
+        }
+      }
+    }
+  },
+  "reconstructed_timing_predicate_counts": {
+    "UNRESOLVED": 6,
+    "RECONSTRUCTED_PREFIX_INVARIANT": 16,
+    "HAS_BOUNDARY": 35
+  },
+  "rec_opportunity_coverage": {
+    "UNSUPPORTED_ROLE_REFERENCE": 78,
+    "QUERY_HORIZON_UNQUALIFIED_REFERENCE": 175,
+    "C_P1_MEAN_RECONSTRUCTED_PREFIX_INVARIANT": 83,
+    "MISSING_OR_CONFLICTING_ID_REFERENCE": 10,
+    "MISSING_EXACT_PLAYER_GAME_POINT_REFERENCE": 3
+  },
+  "deterministic_examples": {
+    "win": {
+      "player_id": "8228",
+      "game_id": "401872985",
+      "key": "rush_rec_yd",
+      "direction": "over",
+      "line": 94.5,
+      "line_from": "dk",
+      "adj": 142.9,
+      "score": 3.226666666666667,
+      "source": "SAVED_WEBSITE_REFERENCE",
+      "candidate_model_sha256": null,
+      "result": "hit",
+      "actual": 188.0,
+      "as_of_board_clock": "2026-10-11T15:33:09Z",
+      "original_issuance": false,
+      "week": 5,
+      "policy": "saved_control",
+      "presence_reason": "reported_value",
+      "raw_components": {
+        "rush_yd": 101.0,
+        "rec_yd": 87.0
+      }
+    },
+    "loss": {
+      "player_id": "8161",
+      "game_id": "401872982",
+      "key": "pass_yd",
+      "direction": "over",
+      "line": 194.5,
+      "line_from": "dk",
+      "adj": 248.31,
+      "score": 1.7936666666666667,
+      "source": "SAVED_WEBSITE_REFERENCE",
+      "candidate_model_sha256": null,
+      "result": "miss",
+      "actual": 137.0,
+      "as_of_board_clock": "2026-10-11T15:33:09Z",
+      "original_issuance": false,
+      "week": 5,
+      "policy": "saved_control",
+      "presence_reason": "reported_value",
+      "raw_components": {
+        "pass_yd": 137.0
+      }
+    },
+    "fallback": {
+      "player_id": "8228",
+      "game_id": "401872985",
+      "key": "rush_rec_yd",
+      "direction": "over",
+      "line": 94.5,
+      "line_from": "dk",
+      "adj": 142.9,
+      "score": 3.226666666666667,
+      "source": "SAVED_WEBSITE_REFERENCE",
+      "candidate_model_sha256": null,
+      "result": "hit",
+      "actual": 188.0,
+      "as_of_board_clock": "2026-10-11T15:33:09Z",
+      "original_issuance": false,
+      "week": 5,
+      "policy": "candidate",
+      "presence_reason": "reported_value",
+      "raw_components": {
+        "rush_yd": 101.0,
+        "rec_yd": 87.0
+      }
+    },
+    "candidate_model": {
+      "player_id": "5844",
+      "game_id": "401872987",
+      "key": "rec",
+      "direction": "under",
+      "line": 4.5,
+      "line_from": "dk",
+      "adj": 2.7037799710363912,
+      "score": -1.4968500241363407,
+      "source": "C_P1_MEAN_RECONSTRUCTED",
+      "candidate_model_sha256": "a95f7f9e8fd96186bba29bd4160dbb685b1e4b7a510cfb5f4e47d72ea77b396c",
+      "result": "hit",
+      "actual": 1.0,
+      "as_of_board_clock": "2026-10-11T15:33:09Z",
+      "original_issuance": false,
+      "week": 5,
+      "policy": "candidate",
+      "presence_reason": "reported_value",
+      "raw_components": {
+        "rec": 1.0
+      }
+    },
+    "unknown": {
+      "player_id": "11559",
+      "game_id": "401872999",
+      "key": "pass_int",
+      "direction": "over",
+      "line": 0.5,
+      "line_from": "dk",
+      "adj": 1.25,
+      "score": 1.5,
+      "source": "SAVED_WEBSITE_REFERENCE",
+      "candidate_model_sha256": null,
+      "result": "unresolved",
+      "actual": null,
+      "as_of_board_clock": "2026-10-18T15:49:10Z",
+      "original_issuance": false,
+      "week": 6,
+      "policy": "saved_control",
+      "presence_reason": "component_unknown",
+      "raw_components": {
+        "pass_int": null
+      }
+    }
+  },
+  "synthetic_boundary_checks": [
+    {
+      "category": "rec",
+      "direction": "under",
+      "line": 0.5,
+      "expected_actual": null,
+      "expected_state": "unresolved",
+      "observed_actual": null,
+      "observed_state": "unresolved"
+    },
+    {
+      "category": "rec",
+      "direction": "under",
+      "line": 0.5,
+      "expected_actual": 0,
+      "expected_state": "hit",
+      "observed_actual": 0,
+      "observed_state": "hit"
+    },
+    {
+      "category": "rush_rec_yd",
+      "direction": "over",
+      "line": 50.5,
+      "expected_actual": null,
+      "expected_state": "unresolved",
+      "observed_actual": null,
+      "observed_state": "unresolved"
+    },
+    {
+      "category": "rec",
+      "direction": "over",
+      "line": 2,
+      "expected_actual": 2,
+      "expected_state": "push",
+      "observed_actual": 2,
+      "observed_state": "push"
+    }
+  ],
+  "assertion_counts": {
+    "immutable_input_hash": 29,
+    "immutable_input_bytes": 29,
+    "actual_ranker_hash": 1,
+    "decoded_proof_hash": 1,
+    "feature_key_unique": 1,
+    "saved_point_key_unique": 2425,
+    "saved_point_role": 2425,
+    "finite_nonnegative_mean": 2425,
+    "per_origin_model": 2425,
+    "saved_P1_count": 1,
+    "source_game_unique": 2718,
+    "schedule_universe": 1,
+    "schedule_121_clocks": 1,
+    "previous_week_census": 4,
+    "aware_clock": 3420,
+    "previous_game_clock": 59,
+    "protocol_board_hash": 4,
+    "board_game_binding": 57,
+    "independent_timing_state": 57,
+    "independent_all_global_boundaries": 57,
+    "fit_clock": 57,
+    "eligible_function_parity": 4184,
+    "actual_function_count_parity": 16,
+    "actual_function_membership_value_parity": 1536,
+    "independent_raw_grading_parity": 192,
+    "entire_owner_canonical_membership_result_hash": 1,
+    "synthetic_presence_boundary": 4
+  },
+  "resources": {
+    "wall_seconds": 1.5377381229991443,
+    "process_peak_RSS_KiB": 70824
+  },
+  "fits_new_model_inference_provider_requests_issued_picks_grades": 0,
+  "new_NFL_games_or_actual_offer_weeks": 0,
+  "tested_scored_historical_weeks": 4,
+  "five_week_primary_qualification": false,
+  "current_v2_incumbent_historical_comparison": false,
+  "independent_scope": [
+    "Reconstructed identities/roles and per-origin point/model bindings directly from permitted immutable original C saved-point sources.",
+    "Recomputed every game timing-admission predicate from both retained source schedules and site prior-game clocks; agrees with supplied conditional proof.",
+    "Independent selector calculation and actual unchanged production-function parity for BOTH complete historical policy lists.",
+    "Independent raw presence/identity/participation/statistic grading for all192 policy-pick rows agrees with actual v5 helper.",
+    "All192 canonical selected identity/value/side/result records exactly match owner commitment; no reliance on owner aggregate percentages."
+  ],
+  "not_verified": [
+    "Fresh fitted model or raw-to-feature reproduction; saved output/source schema, not a new fit audit.",
+    "Original C schedule/facts vintage bytes and explicit-unknown source clock preservation, actual pregame historical roster or originally issued candidate picks.",
+    "Per-offer bookmaker observation clocks, prices or venue settlements.",
+    "A fifth compatible board, five-week primary-selector eligibility, current-v2 reference historical inputs, prospective superiority, live consumer admission or deployment."
+  ],
+  "decision": "Four-week replay execution and arithmetic acknowledged; retain incumbent primary Top Picks. Candidate remains an exposed retrospective diagnostic, not established superiority.",
+  "remaining_owner_action": "Website owner resolves the fifth source-compatible full board and model/query timing closure under the frozen complete mapping; B independently verifies any extension; C records this actual receipt.",
+  "membership_disagreements": {
+    "common_same_side_policy_memberships": 88,
+    "control_removed": 8,
+    "candidate_added": 8,
+    "removed_states": {
+      "hit": 3,
+      "miss": 5
+    },
+    "added_states": {
+      "hit": 5,
+      "miss": 3
+    },
+    "net_hits": 2,
+    "rows": [
+      {
+        "week": 5,
+        "policy": "saved_control",
+        "player_id": "8130",
+        "game_id": "401872991",
+        "key": "rec_yd",
+        "direction": "under",
+        "line": 84.5,
+        "line_from": "dk",
+        "adj": 68.91,
+        "score": -1.299166666666667,
+        "source": "SAVED_WEBSITE_REFERENCE",
+        "candidate_model_sha256": null,
+        "result": "hit",
+        "actual": 66.0,
+        "as_of_board_clock": "2026-10-11T15:33:09Z",
+        "original_issuance": false,
+        "name": "Trey McBride"
+      },
+      {
+        "week": 5,
+        "policy": "saved_control",
+        "player_id": "9484",
+        "game_id": "401872990",
+        "key": "rec",
+        "direction": "under",
+        "line": 4.5,
+        "line_from": "dk",
+        "adj": 2.99,
+        "score": -1.2583333333333333,
+        "source": "SAVED_WEBSITE_REFERENCE",
+        "candidate_model_sha256": null,
+        "result": "miss",
+        "actual": 5.0,
+        "as_of_board_clock": "2026-10-11T15:33:09Z",
+        "original_issuance": false,
+        "name": "Tucker Kraft"
+      },
+      {
+        "week": 5,
+        "policy": "candidate",
+        "player_id": "5844",
+        "game_id": "401872987",
+        "key": "rec",
+        "direction": "under",
+        "line": 4.5,
+        "line_from": "dk",
+        "adj": 2.7037799710363912,
+        "score": -1.4968500241363407,
+        "source": "C_P1_MEAN_RECONSTRUCTED",
+        "candidate_model_sha256": "a95f7f9e8fd96186bba29bd4160dbb685b1e4b7a510cfb5f4e47d72ea77b396c",
+        "result": "hit",
+        "actual": 1.0,
+        "as_of_board_clock": "2026-10-11T15:33:09Z",
+        "original_issuance": false,
+        "name": "T.J. Hockenson"
+      },
+      {
+        "week": 5,
+        "policy": "candidate",
+        "player_id": "7569",
+        "game_id": "401872984",
+        "key": "rec",
+        "direction": "under",
+        "line": 5.5,
+        "line_from": "dk",
+        "adj": 3.7360304868379592,
+        "score": -1.4699745943017006,
+        "source": "C_P1_MEAN_RECONSTRUCTED",
+        "candidate_model_sha256": "a95f7f9e8fd96186bba29bd4160dbb685b1e4b7a510cfb5f4e47d72ea77b396c",
+        "result": "hit",
+        "actual": 5.0,
+        "as_of_board_clock": "2026-10-11T15:33:09Z",
+        "original_issuance": false,
+        "name": "Nico Collins"
+      },
+      {
+        "week": 6,
+        "policy": "saved_control",
+        "player_id": "11566",
+        "game_id": "401873008",
+        "key": "pass_cmp",
+        "direction": "over",
+        "line": 18.5,
+        "line_from": "dk",
+        "adj": 21.95,
+        "score": 1.3799999999999997,
+        "source": "SAVED_WEBSITE_REFERENCE",
+        "candidate_model_sha256": null,
+        "result": "hit",
+        "actual": 29.0,
+        "as_of_board_clock": "2026-10-18T15:49:10Z",
+        "original_issuance": false,
+        "name": "Jayden Daniels"
+      },
+      {
+        "week": 6,
+        "policy": "saved_control",
+        "player_id": "11564",
+        "game_id": "401873001",
+        "key": "pass_yd",
+        "direction": "under",
+        "line": 233.5,
+        "line_from": "dk",
+        "adj": 195.85,
+        "score": -1.2550000000000001,
+        "source": "SAVED_WEBSITE_REFERENCE",
+        "candidate_model_sha256": null,
+        "result": "miss",
+        "actual": 235.0,
+        "as_of_board_clock": "2026-10-18T15:49:10Z",
+        "original_issuance": false,
+        "name": "Drake Maye"
+      },
+      {
+        "week": 6,
+        "policy": "saved_control",
+        "player_id": "11559",
+        "game_id": "401872999",
+        "key": "pass_att",
+        "direction": "under",
+        "line": 30.5,
+        "line_from": "dk",
+        "adj": 26.82,
+        "score": -1.2266666666666666,
+        "source": "SAVED_WEBSITE_REFERENCE",
+        "candidate_model_sha256": null,
+        "result": "miss",
+        "actual": 33.0,
+        "as_of_board_clock": "2026-10-18T15:49:10Z",
+        "original_issuance": false,
+        "name": "Michael Penix"
+      },
+      {
+        "week": 6,
+        "policy": "saved_control",
+        "player_id": "7553",
+        "game_id": "401872999",
+        "key": "rec",
+        "direction": "under",
+        "line": 3.5,
+        "line_from": "dk",
+        "adj": 2.03,
+        "score": -1.2250000000000003,
+        "source": "SAVED_WEBSITE_REFERENCE",
+        "candidate_model_sha256": null,
+        "result": "miss",
+        "actual": 5.0,
+        "as_of_board_clock": "2026-10-18T15:49:10Z",
+        "original_issuance": false,
+        "name": "Kyle Pitts"
+      },
+      {
+        "week": 6,
+        "policy": "candidate",
+        "player_id": "8144",
+        "game_id": "401873000",
+        "key": "rec",
+        "direction": "over",
+        "line": 6.5,
+        "line_from": "dk",
+        "adj": 9.288314813867174,
+        "score": 2.3235956782226452,
+        "source": "C_P1_MEAN_RECONSTRUCTED",
+        "candidate_model_sha256": "4b83f22507e6fa029a6e7c95a5e6b5d32d8edb601a3fb5b8a46195322ff75b85",
+        "result": "miss",
+        "actual": 4.0,
+        "as_of_board_clock": "2026-10-18T15:49:10Z",
+        "original_issuance": false,
+        "name": "Chris Olave"
+      },
+      {
+        "week": 6,
+        "policy": "candidate",
+        "player_id": "8112",
+        "game_id": "401872999",
+        "key": "rec",
+        "direction": "under",
+        "line": 6.5,
+        "line_from": "dk",
+        "adj": 3.992252607179056,
+        "score": -2.0897894940174533,
+        "source": "C_P1_MEAN_RECONSTRUCTED",
+        "candidate_model_sha256": "4b83f22507e6fa029a6e7c95a5e6b5d32d8edb601a3fb5b8a46195322ff75b85",
+        "result": "hit",
+        "actual": 4.0,
+        "as_of_board_clock": "2026-10-18T15:49:10Z",
+        "original_issuance": false,
+        "name": "Drake London"
+      },
+      {
+        "week": 6,
+        "policy": "candidate",
+        "player_id": "8146",
+        "game_id": "401873001",
+        "key": "rec",
+        "direction": "under",
+        "line": 6.5,
+        "line_from": "dk",
+        "adj": 4.628530373547461,
+        "score": -1.5595580220437826,
+        "source": "C_P1_MEAN_RECONSTRUCTED",
+        "candidate_model_sha256": "4b83f22507e6fa029a6e7c95a5e6b5d32d8edb601a3fb5b8a46195322ff75b85",
+        "result": "hit",
+        "actual": 4.0,
+        "as_of_board_clock": "2026-10-18T15:49:10Z",
+        "original_issuance": false,
+        "name": "Garrett Wilson"
+      },
+      {
+        "week": 6,
+        "policy": "candidate",
+        "player_id": "11632",
+        "game_id": "401873000",
+        "key": "rec",
+        "direction": "under",
+        "line": 5.5,
+        "line_from": "dk",
+        "adj": 3.7834828485130587,
+        "score": -1.4304309595724511,
+        "source": "C_P1_MEAN_RECONSTRUCTED",
+        "candidate_model_sha256": "4b83f22507e6fa029a6e7c95a5e6b5d32d8edb601a3fb5b8a46195322ff75b85",
+        "result": "miss",
+        "actual": 12.0,
+        "as_of_board_clock": "2026-10-18T15:49:10Z",
+        "original_issuance": false,
+        "name": "Malik Nabers"
+      },
+      {
+        "week": 7,
+        "policy": "saved_control",
+        "player_id": "9224",
+        "game_id": "401873012",
+        "key": "rush_att",
+        "direction": "over",
+        "line": 11.5,
+        "line_from": "dk",
+        "adj": 15.34,
+        "score": 1.28,
+        "source": "SAVED_WEBSITE_REFERENCE",
+        "candidate_model_sha256": null,
+        "result": "miss",
+        "actual": 11.0,
+        "as_of_board_clock": "2026-10-25T10:15:15Z",
+        "original_issuance": false,
+        "name": "Chase Brown"
+      },
+      {
+        "week": 7,
+        "policy": "saved_control",
+        "player_id": "11624",
+        "game_id": "401873022",
+        "key": "rec_yd",
+        "direction": "under",
+        "line": 49.5,
+        "line_from": "dk",
+        "adj": 34.24,
+        "score": -1.2716666666666665,
+        "source": "SAVED_WEBSITE_REFERENCE",
+        "candidate_model_sha256": null,
+        "result": "hit",
+        "actual": 11.0,
+        "as_of_board_clock": "2026-10-25T10:15:15Z",
+        "original_issuance": false,
+        "name": "Xavier Worthy"
+      },
+      {
+        "week": 7,
+        "policy": "candidate",
+        "player_id": "8144",
+        "game_id": "401873011",
+        "key": "rec",
+        "direction": "over",
+        "line": 6.5,
+        "line_from": "dk",
+        "adj": 8.11701193086719,
+        "score": 1.3475099423893244,
+        "source": "C_P1_MEAN_RECONSTRUCTED",
+        "candidate_model_sha256": "b884d5b6f477fc272dccd061eb1825efbc083a1a1eb96001839096d8e82b1cda",
+        "result": "miss",
+        "actual": 6.0,
+        "as_of_board_clock": "2026-10-25T10:15:15Z",
+        "original_issuance": false,
+        "name": "Chris Olave"
+      },
+      {
+        "week": 7,
+        "policy": "candidate",
+        "player_id": "13274",
+        "game_id": "401873011",
+        "key": "rec",
+        "direction": "under",
+        "line": 5.5,
+        "line_from": "dk",
+        "adj": 2.5033505283335056,
+        "score": -2.4972078930554122,
+        "source": "C_P1_MEAN_RECONSTRUCTED",
+        "candidate_model_sha256": "b884d5b6f477fc272dccd061eb1825efbc083a1a1eb96001839096d8e82b1cda",
+        "result": "hit",
+        "actual": 3.0,
+        "as_of_board_clock": "2026-10-25T10:15:15Z",
+        "original_issuance": false,
+        "name": "Germie Bernard"
+      }
+    ]
+  },
+  "unknown_membership": [
+    {
+      "week": 6,
+      "policy": "saved_control",
+      "game_id": "401872999",
+      "player_id": "11559",
+      "key": "pass_int",
+      "direction": "over",
+      "line": 0.5,
+      "actual": null,
+      "result": "unresolved"
+    },
+    {
+      "week": 6,
+      "policy": "candidate",
+      "game_id": "401872999",
+      "player_id": "11559",
+      "key": "pass_int",
+      "direction": "over",
+      "line": 0.5,
+      "actual": null,
+      "result": "unresolved"
+    },
+    {
+      "week": 8,
+      "policy": "saved_control",
+      "game_id": "401873024",
+      "player_id": "8110",
+      "key": "rec_yd",
+      "direction": "over",
+      "line": 15.5,
+      "actual": null,
+      "result": "unresolved"
+    },
+    {
+      "week": 8,
+      "policy": "saved_control",
+      "game_id": "401873026",
+      "player_id": "4881",
+      "key": "rush_yd",
+      "direction": "over",
+      "line": 25.5,
+      "actual": null,
+      "result": "unresolved"
+    },
+    {
+      "week": 8,
+      "policy": "candidate",
+      "game_id": "401873024",
+      "player_id": "8110",
+      "key": "rec_yd",
+      "direction": "over",
+      "line": 15.5,
+      "actual": null,
+      "result": "unresolved"
+    },
+    {
+      "week": 8,
+      "policy": "candidate",
+      "game_id": "401873026",
+      "player_id": "4881",
+      "key": "rush_yd",
+      "direction": "over",
+      "line": 25.5,
+      "actual": null,
+      "result": "unresolved"
+    }
+  ],
+  "owner_uncertainty_statement": "Four exposed weekly clusters; owner provides no formal interval and makes no supported replacement-superiority or calibrated-confidence claim. This verification adds no new acceptance threshold or guarantee.",
+  "saved_policy_pick_rows_independently_regraded": 192,
+  "original_grades_modified": 0,
+  "known_zero_coverage": "No reported-zero NFL selected row found in these lists; exact reported-zero and explicit-null/composite/equality boundaries covered only by four labeled synthetic fixtures, not extra NFL evidence.",
+  "environment": {
+    "Python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "dependencies": "Python standard library only; immutable owner production ranker/overlay/grader/scoring/gamemodel imported from pinned public source. No model deserialization."
+  },
+  "reproduction_commands": [
+    "python fetch_inputs.py  # restore only 29 pinned public Git objects, verify every SHA/size; no provider acquisition",
+    "python independent_selector_check.py",
+    "python complete_independent_report.py"
+  ]
+}

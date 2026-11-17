@@ -1,0 +1,17 @@
+{
+  "schema": "v2-independent-prop-checker-amendments-v1",
+  "producer_originals_modified": false,
+  "amendments": [
+    {"checker":"check_panel_join_independent.py","initial_assumption":"All safe metadata records have identical field sets.","correction":"Sleeper observations are an optional metadata-only field;1782records omit it and507include it. No outcome field was admitted."},
+    {"checker":"check_panel_join_independent.py","initial_assumption":"Unsupported-target and missing-side reasons precede the timing exclusion.","correction":"Frozen reason accounting checks server-proof/T90 first. Independent eligible membership is unchanged; reason-priority accounting now reproduces the receipt."},
+    {"checker":"check_panel_join_independent.py","initial_assumption":"Old retained flat forecast rows include explicit season/week fields.","correction":"They use canonical2026_07_game IDs. Verify the exact frozen canonical game key and optional season/week fields when present."},
+    {"checker":"check_exact_core_independent.py","initial_assumption":"Malformed pending/void offer inputs must raise ValueError.","correction":"After the root repair, the eight-state API rejects malformed side/line as UNRESOLVED_CONTRACT. Initial erroneous PENDING/VOID findings remain in the original receipt; final50checks pass."},
+    {"fixture_plan":"BOUNDARY_FIXTURE_PLAN.json","clarification":"Nonvoid and decisive conditioning are distinct. Original numerical examples remain unchanged; see CONDITIONING_FIXTURE_AMENDMENT_V1.json."},
+    {"fixture_plan":"BOUNDARY_FIXTURE_PLAN.json","clarification":"Latest user wording anchors a fixed list before its first INCLUDED game. Full-week and expressly partial-week universes differ; see TIMING_FIXTURE_AMENDMENT_V1.json."},
+    {"checker":"check_side_projection_independent.py","initial_assumption":"The threshold census exposes a target_line_provenance table.","correction":"The bound source exposes target_cross_states; independently sum finite-line and retained-point rows by their declared line source. All1419/462/957totals and projection source bytes are unchanged."}
+  ],
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "current2026_week8_outcomes_read": 0
+}

@@ -1,0 +1,212 @@
+{
+  "kind": "B_INDEPENDENT_CURRENT_SAVED_MEMBERSHIP_WITNESS_NOT_SELECTOR_BACKTEST",
+  "at_UTC": "2026-11-10T11:43:20.059488+00:00",
+  "production_commit": "720903184c54e4fe73c9213da5938d06970a5f00",
+  "season": 2026,
+  "week": 9,
+  "policy": "selected-projection-gap-classic-presence-v2",
+  "policy_SHA256": "551ee07861774ba2c90ad0e8097136c359807f92843dde5cd4b96ecffbe958ed",
+  "body_SHA256": "b9fdfa873aac2a3b6f9e0fa00203aa7e71f61970a082916c483ce29bdedd0f31",
+  "pointer_SHA256": "b2866aaa78eddd6cfef10f4318d2d3e46e5bc99f8b2aa0fae5f1e46ed11b5fc1",
+  "prepared_at": "2026-11-09T23:22:58.294832+00:00",
+  "persisted_at": "2026-11-09T23:22:58.312915+00:00",
+  "selected": 24,
+  "sides": {
+    "over": 12,
+    "under": 12
+  },
+  "sources": {
+    "CURRENT_BASELINE": 24
+  },
+  "frozen_prior_records": 22,
+  "original_receipts": 3,
+  "fresh_records": {
+    "over": 0,
+    "under": 2
+  },
+  "overlay_state": "DISABLED_USE_R0",
+  "research_overlay_rows": 0,
+  "model": "sleeper-matchup-classic-presence-strict-v2",
+  "served_pairs": [
+    {
+      "path": "output/data/week.json",
+      "equal": true,
+      "SHA256": "6d131325bc2229cf502ffec91d10946ca07803134dc07ac5bd3c834f9e6bb1f2",
+      "bytes": 3569771
+    },
+    {
+      "path": "output/data/meta.json",
+      "equal": true,
+      "SHA256": "3a5eb544e5e3a6f595719dc22a1092df081b8fd25f9763ad5aa81fc3ea359955",
+      "bytes": 1248
+    },
+    {
+      "path": "output/data/weekly-selected-rankings.json",
+      "equal": true,
+      "SHA256": "b2866aaa78eddd6cfef10f4318d2d3e46e5bc99f8b2aa0fae5f1e46ed11b5fc1",
+      "bytes": 474
+    },
+    {
+      "path": "output/data/weekly-selected-rankings/b9fdfa873aac2a3b6f9e0fa00203aa7e71f61970a082916c483ce29bdedd0f31.json",
+      "equal": true,
+      "SHA256": "b9fdfa873aac2a3b6f9e0fa00203aa7e71f61970a082916c483ce29bdedd0f31",
+      "bytes": 15881
+    },
+    {
+      "path": "output/data/weekly-adaptive-overlay.json",
+      "equal": true,
+      "SHA256": "7508ebbacf4574502b1c29453396b2ff62a060ac5df6b4033a4e6808be06981d",
+      "bytes": 333
+    },
+    {
+      "path": "output/data/weekly-adaptive/5037a60333c3e1e3551ee28e106af67e4ddc6b92d52be632841c1ca02df05cdc.json",
+      "equal": true,
+      "SHA256": "5037a60333c3e1e3551ee28e106af67e4ddc6b92d52be632841c1ca02df05cdc",
+      "bytes": 803
+    }
+  ],
+  "checks": {
+    "served_bytes_equal_committed": 6,
+    "ranking_body_hash": 1,
+    "board_binding": 1,
+    "overlay_binding": 1,
+    "policy_binding": 1,
+    "unique_exact_opportunities": 1,
+    "unique_frozen_proofs": 1,
+    "original_receipt_hash": 3,
+    "original_body_hash": 3,
+    "side_capacity": 2,
+    "stable_sorted_membership": 2,
+    "one_player_per_side": 2,
+    "exact_gap_score": 24,
+    "selected_side": 24,
+    "minimum_gap_score": 24,
+    "original_selection_before_kickoff": 24,
+    "frozen_original_exact_row": 22,
+    "frozen_receipt_clock": 22,
+    "current_packet_has_no_selected_model_rows": 1,
+    "fresh_slot_membership": 2
+  },
+  "failures": [],
+  "status": "PASS_CHECKED_SAVED_MEMBERSHIP",
+  "limits": [
+    "Separate standard-library calculation; production selector and grader were not called.",
+    "Fresh-slot selection independently reconstructed; frozen records checked against exact original bodies and receipt clocks.",
+    "Original frozen full-board eligibility/quote clocks not independently reconstructed.",
+    "Served bytes checked, browser rendering and mobile interactions not checked.",
+    "No historical five-week changed-selector replay, source authentication, new forecasts, picks, release or model admission implied."
+  ],
+  "source_bindings": [
+    {
+      "path": "output/data/week.json",
+      "served": false,
+      "bytes": 3569771,
+      "SHA256": "6d131325bc2229cf502ffec91d10946ca07803134dc07ac5bd3c834f9e6bb1f2"
+    },
+    {
+      "path": "output/data/week.json",
+      "served": true,
+      "bytes": 3569771,
+      "SHA256": "6d131325bc2229cf502ffec91d10946ca07803134dc07ac5bd3c834f9e6bb1f2"
+    },
+    {
+      "path": "output/data/meta.json",
+      "served": false,
+      "bytes": 1248,
+      "SHA256": "3a5eb544e5e3a6f595719dc22a1092df081b8fd25f9763ad5aa81fc3ea359955"
+    },
+    {
+      "path": "output/data/meta.json",
+      "served": true,
+      "bytes": 1248,
+      "SHA256": "3a5eb544e5e3a6f595719dc22a1092df081b8fd25f9763ad5aa81fc3ea359955"
+    },
+    {
+      "path": "output/data/weekly-selected-rankings.json",
+      "served": false,
+      "bytes": 474,
+      "SHA256": "b2866aaa78eddd6cfef10f4318d2d3e46e5bc99f8b2aa0fae5f1e46ed11b5fc1"
+    },
+    {
+      "path": "output/data/weekly-selected-rankings.json",
+      "served": true,
+      "bytes": 474,
+      "SHA256": "b2866aaa78eddd6cfef10f4318d2d3e46e5bc99f8b2aa0fae5f1e46ed11b5fc1"
+    },
+    {
+      "path": "output/data/weekly-selected-rankings/b9fdfa873aac2a3b6f9e0fa00203aa7e71f61970a082916c483ce29bdedd0f31.json",
+      "served": false,
+      "bytes": 15881,
+      "SHA256": "b9fdfa873aac2a3b6f9e0fa00203aa7e71f61970a082916c483ce29bdedd0f31"
+    },
+    {
+      "path": "output/data/weekly-selected-rankings/b9fdfa873aac2a3b6f9e0fa00203aa7e71f61970a082916c483ce29bdedd0f31.json",
+      "served": true,
+      "bytes": 15881,
+      "SHA256": "b9fdfa873aac2a3b6f9e0fa00203aa7e71f61970a082916c483ce29bdedd0f31"
+    },
+    {
+      "path": "output/data/weekly-adaptive-overlay.json",
+      "served": false,
+      "bytes": 333,
+      "SHA256": "7508ebbacf4574502b1c29453396b2ff62a060ac5df6b4033a4e6808be06981d"
+    },
+    {
+      "path": "output/data/weekly-adaptive-overlay.json",
+      "served": true,
+      "bytes": 333,
+      "SHA256": "7508ebbacf4574502b1c29453396b2ff62a060ac5df6b4033a4e6808be06981d"
+    },
+    {
+      "path": "output/data/weekly-adaptive/5037a60333c3e1e3551ee28e106af67e4ddc6b92d52be632841c1ca02df05cdc.json",
+      "served": false,
+      "bytes": 803,
+      "SHA256": "5037a60333c3e1e3551ee28e106af67e4ddc6b92d52be632841c1ca02df05cdc"
+    },
+    {
+      "path": "output/data/weekly-adaptive/5037a60333c3e1e3551ee28e106af67e4ddc6b92d52be632841c1ca02df05cdc.json",
+      "served": true,
+      "bytes": 803,
+      "SHA256": "5037a60333c3e1e3551ee28e106af67e4ddc6b92d52be632841c1ca02df05cdc"
+    },
+    {
+      "path": "output/data/weekly-selected-rankings/3b1e2ba012508e85076288889a9894aed3285f335742d72867c6e42026167f3e.receipt.json",
+      "served": false,
+      "bytes": 474,
+      "SHA256": "3b1e2ba012508e85076288889a9894aed3285f335742d72867c6e42026167f3e"
+    },
+    {
+      "path": "output/data/weekly-selected-rankings/0ddb314f2d24f9b3a4925e803e228bad6bc9caeba8491f7ef428afbf14c70508.json",
+      "served": false,
+      "bytes": 12100,
+      "SHA256": "0ddb314f2d24f9b3a4925e803e228bad6bc9caeba8491f7ef428afbf14c70508"
+    },
+    {
+      "path": "output/data/weekly-selected-rankings/7b0ccef6989c5b06e5cd060c1858435f1bdc5907b15736a634ebc71b36b6c7ca.receipt.json",
+      "served": false,
+      "bytes": 474,
+      "SHA256": "7b0ccef6989c5b06e5cd060c1858435f1bdc5907b15736a634ebc71b36b6c7ca"
+    },
+    {
+      "path": "output/data/weekly-selected-rankings/17ac60b57ecc6dbc62a78717eeae6e4b93deb2418548e3b0bc0a4c6014416383.json",
+      "served": false,
+      "bytes": 14097,
+      "SHA256": "17ac60b57ecc6dbc62a78717eeae6e4b93deb2418548e3b0bc0a4c6014416383"
+    },
+    {
+      "path": "output/data/weekly-selected-rankings/f326234231bdf65de562f00e72f8e1efb11c8330606d9b945db16e3d7618bf83.receipt.json",
+      "served": false,
+      "bytes": 474,
+      "SHA256": "f326234231bdf65de562f00e72f8e1efb11c8330606d9b945db16e3d7618bf83"
+    },
+    {
+      "path": "output/data/weekly-selected-rankings/a2da236d5a6aac4684dd1ea712c421fce3cf36b41e3ac3117b98e89182254d89.json",
+      "served": false,
+      "bytes": 11930,
+      "SHA256": "a2da236d5a6aac4684dd1ea712c421fce3cf36b41e3ac3117b98e89182254d89"
+    }
+  ],
+  "grading_version": "statistical-presence-strict-v5-20261106",
+  "board_generated_at": "2026-11-09T23:22:50Z",
+  "readable_timestamp_CT": "2026-11-10T05:43:20.059488-06:00"
+}

@@ -1,0 +1,810 @@
+[
+  {
+    "kind": "NUMERICAL_PAIRED_MAE",
+    "season": 2026,
+    "target": "pass_cmp",
+    "window": "MATCHED_OFFERS_W5_W8",
+    "actual_weeks": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "candidate": "B-QB-ALIGNED-FRESHNESS-v1:F2",
+    "control": "SAVED_ADJUSTED",
+    "product": "mean",
+    "control_product": "saved_precision_point",
+    "control_functional": "FUNCTIONAL_AND_ORIGINAL_ISSUANCE_UNVERIFIED_RETAINED_PRECISION_POINT",
+    "scope": "EXACT_COMPATIBLE_RETAINED_OFFERED_PLAYER_MASK",
+    "shared_mask_sha256": "cd31b19df1040d9222e8d53f483c9ef4d1ea702916ebd4f5181dcc8ee0379fa2",
+    "eligible_offers": 112,
+    "shared_rows": 112,
+    "rows_outside_shared_panel": 0,
+    "candidate_evidence": "CURRENT_REVISED_SOURCE_48H_RECONSTRUCTED_TIMING_SENSITIVITY_UNVERIFIED_QUOTES",
+    "control_evidence": "ARCHIVED_REFERENCE_POINT_ISSUANCE_AND_FUNCTIONAL_UNVERIFIED",
+    "comparison_limit": "Complete-procedure numerical comparison on identical player/game/outcome rows; no isolated learner, freshness, expected-mean or original-issuance attribution.",
+    "reused_control_metric_source": "reports/profile-increment-to-release-01/B/independent/PREFIT_CONTROL_REVIEW_V1.json",
+    "reused_control_metric_source_sha256": "37495d4b91b7f895ac85135b5199c30b8b162da13f2b0ddb3353252fc340a517",
+    "new_predictions": 0,
+    "new_native_scores": 0,
+    "n": 112,
+    "delta": 0.33523302275845496,
+    "relative_error_change": 0.06966785769756174,
+    "week_interval": null,
+    "week_clusters": 4,
+    "game_clusters": 56,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.19200809414120917,
+    "game_normal95_sensitivity": [
+      -0.04110284175831502,
+      0.7115688872752249
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 5.147108022758455,
+    "comparator_error": 4.811875000000001,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": 1.3891716683205382,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 13.690128564467676,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 23.802719520923752,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": -1.3359212047650209,
+        "n": 28
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON"
+  },
+  {
+    "kind": "NUMERICAL_PAIRED_MAE",
+    "season": 2026,
+    "target": "pass_cmp",
+    "window": "MATCHED_OFFERS_W5_W8",
+    "actual_weeks": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "candidate": "B-QB-ALIGNED-FRESHNESS-v1:F2",
+    "control": "SAVED_RAW",
+    "product": "mean",
+    "control_product": "saved_precision_point",
+    "control_functional": "FUNCTIONAL_AND_ORIGINAL_ISSUANCE_UNVERIFIED_RETAINED_PRECISION_POINT",
+    "scope": "EXACT_COMPATIBLE_RETAINED_OFFERED_PLAYER_MASK",
+    "shared_mask_sha256": "cd31b19df1040d9222e8d53f483c9ef4d1ea702916ebd4f5181dcc8ee0379fa2",
+    "eligible_offers": 112,
+    "shared_rows": 112,
+    "rows_outside_shared_panel": 0,
+    "candidate_evidence": "CURRENT_REVISED_SOURCE_48H_RECONSTRUCTED_TIMING_SENSITIVITY_UNVERIFIED_QUOTES",
+    "control_evidence": "ARCHIVED_REFERENCE_POINT_ISSUANCE_AND_FUNCTIONAL_UNVERIFIED",
+    "comparison_limit": "Complete-procedure numerical comparison on identical player/game/outcome rows; no isolated learner, freshness, expected-mean or original-issuance attribution.",
+    "reused_control_metric_source": "reports/profile-increment-to-release-01/B/independent/PREFIT_CONTROL_REVIEW_V1.json",
+    "reused_control_metric_source_sha256": "37495d4b91b7f895ac85135b5199c30b8b162da13f2b0ddb3353252fc340a517",
+    "new_predictions": 0,
+    "new_native_scores": 0,
+    "n": 112,
+    "delta": 0.18121516561559778,
+    "relative_error_change": 0.03649196042458728,
+    "week_interval": null,
+    "week_clusters": 4,
+    "game_clusters": 56,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.1524402018442174,
+    "game_normal95_sensitivity": [
+      -0.11756762999906831,
+      0.47999796123026384
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 5.147108022758455,
+    "comparator_error": 4.965892857142856,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": -11.130828331679464,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 12.870128564467674,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 15.642719520923755,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 2.914078795234976,
+        "n": 28
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON"
+  },
+  {
+    "kind": "NUMERICAL_PAIRED_MAE",
+    "season": 2026,
+    "target": "pass_cmp",
+    "window": "MATCHED_OFFERS_W5_W8",
+    "actual_weeks": [
+      5,
+      6,
+      7
+    ],
+    "candidate": "B-QB-ALIGNED-FRESHNESS-v1:F2",
+    "control": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs",
+    "product": "mean",
+    "control_product": "mean",
+    "control_functional": "TYPED_LEAF_MEAN_OR_LOWER_MEDIAN",
+    "scope": "EXACT_COMPATIBLE_RETAINED_OFFERED_PLAYER_MASK",
+    "shared_mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+    "eligible_offers": 112,
+    "shared_rows": 84,
+    "rows_outside_shared_panel": 28,
+    "candidate_evidence": "CURRENT_REVISED_SOURCE_48H_RECONSTRUCTED_TIMING_SENSITIVITY_UNVERIFIED_QUOTES",
+    "control_evidence": "RETAINED_STRICT_CURRENT_7D_RECONSTRUCTION",
+    "comparison_limit": "Complete-procedure numerical comparison on identical player/game/outcome rows; no isolated learner, freshness, expected-mean or original-issuance attribution.",
+    "reused_control_metric_source": "reports/profile-increment-to-release-01/B/independent/PREFIT_CONTROL_REVIEW_V1.json",
+    "reused_control_metric_source_sha256": "37495d4b91b7f895ac85135b5199c30b8b162da13f2b0ddb3353252fc340a517",
+    "new_predictions": 0,
+    "new_native_scores": 0,
+    "n": 84,
+    "delta": 0.325138135327784,
+    "relative_error_change": 0.07335313518733985,
+    "week_interval": null,
+    "week_clusters": 3,
+    "game_clusters": 42,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.2759808099143095,
+    "game_normal95_sensitivity": [
+      -0.21578425210426266,
+      0.8660605227598307
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 4.757643092306094,
+    "comparator_error": 4.432504956978311,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": -7.910828331679461,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 21.238694578623306,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 13.983737120590012,
+        "n": 28
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON"
+  },
+  {
+    "kind": "NUMERICAL_PAIRED_MAE",
+    "season": 2026,
+    "target": "pass_cmp",
+    "window": "MATCHED_OFFERS_W5_W8",
+    "actual_weeks": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "candidate": "B-QB-ALIGNED-FRESHNESS-v1:F2",
+    "control": "SAVED_ADJUSTED",
+    "product": "lower_median",
+    "control_product": "saved_precision_point",
+    "control_functional": "FUNCTIONAL_AND_ORIGINAL_ISSUANCE_UNVERIFIED_RETAINED_PRECISION_POINT",
+    "scope": "EXACT_COMPATIBLE_RETAINED_OFFERED_PLAYER_MASK",
+    "shared_mask_sha256": "cd31b19df1040d9222e8d53f483c9ef4d1ea702916ebd4f5181dcc8ee0379fa2",
+    "eligible_offers": 112,
+    "shared_rows": 112,
+    "rows_outside_shared_panel": 0,
+    "candidate_evidence": "CURRENT_REVISED_SOURCE_48H_RECONSTRUCTED_TIMING_SENSITIVITY_UNVERIFIED_QUOTES",
+    "control_evidence": "ARCHIVED_REFERENCE_POINT_ISSUANCE_AND_FUNCTIONAL_UNVERIFIED",
+    "comparison_limit": "Complete-procedure numerical comparison on identical player/game/outcome rows; no isolated learner, freshness, expected-mean or original-issuance attribution.",
+    "reused_control_metric_source": "reports/profile-increment-to-release-01/B/independent/PREFIT_CONTROL_REVIEW_V1.json",
+    "reused_control_metric_source_sha256": "37495d4b91b7f895ac85135b5199c30b8b162da13f2b0ddb3353252fc340a517",
+    "new_predictions": 0,
+    "new_native_scores": 0,
+    "n": 112,
+    "delta": 0.26848214285714295,
+    "relative_error_change": 0.05579574341751249,
+    "week_interval": null,
+    "week_clusters": 4,
+    "game_clusters": 56,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.18756743028386655,
+    "game_normal95_sensitivity": [
+      -0.09915002049923549,
+      0.6361143062135214
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 5.080357142857143,
+    "comparator_error": 4.811875000000001,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": -0.6999999999999997,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 7.829999999999998,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 24.110000000000007,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": -1.1699999999999986,
+        "n": 28
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON"
+  },
+  {
+    "kind": "NUMERICAL_PAIRED_MAE",
+    "season": 2026,
+    "target": "pass_cmp",
+    "window": "MATCHED_OFFERS_W5_W8",
+    "actual_weeks": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "candidate": "B-QB-ALIGNED-FRESHNESS-v1:F2",
+    "control": "SAVED_RAW",
+    "product": "lower_median",
+    "control_product": "saved_precision_point",
+    "control_functional": "FUNCTIONAL_AND_ORIGINAL_ISSUANCE_UNVERIFIED_RETAINED_PRECISION_POINT",
+    "scope": "EXACT_COMPATIBLE_RETAINED_OFFERED_PLAYER_MASK",
+    "shared_mask_sha256": "cd31b19df1040d9222e8d53f483c9ef4d1ea702916ebd4f5181dcc8ee0379fa2",
+    "eligible_offers": 112,
+    "shared_rows": 112,
+    "rows_outside_shared_panel": 0,
+    "candidate_evidence": "CURRENT_REVISED_SOURCE_48H_RECONSTRUCTED_TIMING_SENSITIVITY_UNVERIFIED_QUOTES",
+    "control_evidence": "ARCHIVED_REFERENCE_POINT_ISSUANCE_AND_FUNCTIONAL_UNVERIFIED",
+    "comparison_limit": "Complete-procedure numerical comparison on identical player/game/outcome rows; no isolated learner, freshness, expected-mean or original-issuance attribution.",
+    "reused_control_metric_source": "reports/profile-increment-to-release-01/B/independent/PREFIT_CONTROL_REVIEW_V1.json",
+    "reused_control_metric_source_sha256": "37495d4b91b7f895ac85135b5199c30b8b162da13f2b0ddb3353252fc340a517",
+    "new_predictions": 0,
+    "new_native_scores": 0,
+    "n": 112,
+    "delta": 0.11446428571428569,
+    "relative_error_change": 0.023050091696932645,
+    "week_interval": null,
+    "week_clusters": 4,
+    "game_clusters": 56,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.13962104780367435,
+    "game_normal95_sensitivity": [
+      -0.15919296798091603,
+      0.3881215394094874
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 5.080357142857143,
+    "comparator_error": 4.965892857142856,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": -13.219999999999999,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 7.009999999999998,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 15.949999999999996,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 3.0799999999999983,
+        "n": 28
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON"
+  },
+  {
+    "kind": "NUMERICAL_PAIRED_MAE",
+    "season": 2026,
+    "target": "pass_cmp",
+    "window": "MATCHED_OFFERS_W5_W8",
+    "actual_weeks": [
+      5,
+      6,
+      7
+    ],
+    "candidate": "B-QB-ALIGNED-FRESHNESS-v1:F2",
+    "control": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs",
+    "product": "lower_median",
+    "control_product": "lower_median",
+    "control_functional": "TYPED_LEAF_MEAN_OR_LOWER_MEDIAN",
+    "scope": "EXACT_COMPATIBLE_RETAINED_OFFERED_PLAYER_MASK",
+    "shared_mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+    "eligible_offers": 112,
+    "shared_rows": 84,
+    "rows_outside_shared_panel": 28,
+    "candidate_evidence": "CURRENT_REVISED_SOURCE_48H_RECONSTRUCTED_TIMING_SENSITIVITY_UNVERIFIED_QUOTES",
+    "control_evidence": "RETAINED_STRICT_CURRENT_7D_RECONSTRUCTION",
+    "comparison_limit": "Complete-procedure numerical comparison on identical player/game/outcome rows; no isolated learner, freshness, expected-mean or original-issuance attribution.",
+    "reused_control_metric_source": "reports/profile-increment-to-release-01/B/independent/PREFIT_CONTROL_REVIEW_V1.json",
+    "reused_control_metric_source_sha256": "37495d4b91b7f895ac85135b5199c30b8b162da13f2b0ddb3353252fc340a517",
+    "new_predictions": 0,
+    "new_native_scores": 0,
+    "n": 84,
+    "delta": 0.13095238095238096,
+    "relative_error_change": 0.02887139107611549,
+    "week_interval": null,
+    "week_clusters": 3,
+    "game_clusters": 42,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.21759129327408458,
+    "game_normal95_sensitivity": [
+      -0.29552655386482485,
+      0.5574313157695867
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 4.666666666666667,
+    "comparator_error": 4.535714285714286,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": -10.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 9.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 12.0,
+        "n": 28
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON"
+  },
+  {
+    "kind": "NUMERICAL_PAIRED_MAE",
+    "season": 2026,
+    "target": "pass_cmp",
+    "window": "MATCHED_OFFERS_W5_W8",
+    "actual_weeks": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "candidate": "B-QB-ALIGNED-FRESHNESS-v1:F3",
+    "control": "SAVED_ADJUSTED",
+    "product": "mean",
+    "control_product": "saved_precision_point",
+    "control_functional": "FUNCTIONAL_AND_ORIGINAL_ISSUANCE_UNVERIFIED_RETAINED_PRECISION_POINT",
+    "scope": "EXACT_COMPATIBLE_RETAINED_OFFERED_PLAYER_MASK",
+    "shared_mask_sha256": "cd31b19df1040d9222e8d53f483c9ef4d1ea702916ebd4f5181dcc8ee0379fa2",
+    "eligible_offers": 112,
+    "shared_rows": 112,
+    "rows_outside_shared_panel": 0,
+    "candidate_evidence": "CURRENT_REVISED_SOURCE_48H_RECONSTRUCTED_TIMING_SENSITIVITY_UNVERIFIED_QUOTES",
+    "control_evidence": "ARCHIVED_REFERENCE_POINT_ISSUANCE_AND_FUNCTIONAL_UNVERIFIED",
+    "comparison_limit": "Complete-procedure numerical comparison on identical player/game/outcome rows; no isolated learner, freshness, expected-mean or original-issuance attribution.",
+    "reused_control_metric_source": "reports/profile-increment-to-release-01/B/independent/PREFIT_CONTROL_REVIEW_V1.json",
+    "reused_control_metric_source_sha256": "37495d4b91b7f895ac85135b5199c30b8b162da13f2b0ddb3353252fc340a517",
+    "new_predictions": 0,
+    "new_native_scores": 0,
+    "n": 112,
+    "delta": 0.30613527008531544,
+    "relative_error_change": 0.06362078609384396,
+    "week_interval": null,
+    "week_clusters": 4,
+    "game_clusters": 56,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.18608661810439986,
+    "game_normal95_sensitivity": [
+      -0.058594501399308274,
+      0.6708650415699391
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 5.118010270085315,
+    "comparator_error": 4.811875000000001,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": 1.825144203253796,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 14.484941484573458,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 21.53510308449365,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": -3.558038522765564,
+        "n": 28
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON"
+  },
+  {
+    "kind": "NUMERICAL_PAIRED_MAE",
+    "season": 2026,
+    "target": "pass_cmp",
+    "window": "MATCHED_OFFERS_W5_W8",
+    "actual_weeks": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "candidate": "B-QB-ALIGNED-FRESHNESS-v1:F3",
+    "control": "SAVED_RAW",
+    "product": "mean",
+    "control_product": "saved_precision_point",
+    "control_functional": "FUNCTIONAL_AND_ORIGINAL_ISSUANCE_UNVERIFIED_RETAINED_PRECISION_POINT",
+    "scope": "EXACT_COMPATIBLE_RETAINED_OFFERED_PLAYER_MASK",
+    "shared_mask_sha256": "cd31b19df1040d9222e8d53f483c9ef4d1ea702916ebd4f5181dcc8ee0379fa2",
+    "eligible_offers": 112,
+    "shared_rows": 112,
+    "rows_outside_shared_panel": 0,
+    "candidate_evidence": "CURRENT_REVISED_SOURCE_48H_RECONSTRUCTED_TIMING_SENSITIVITY_UNVERIFIED_QUOTES",
+    "control_evidence": "ARCHIVED_REFERENCE_POINT_ISSUANCE_AND_FUNCTIONAL_UNVERIFIED",
+    "comparison_limit": "Complete-procedure numerical comparison on identical player/game/outcome rows; no isolated learner, freshness, expected-mean or original-issuance attribution.",
+    "reused_control_metric_source": "reports/profile-increment-to-release-01/B/independent/PREFIT_CONTROL_REVIEW_V1.json",
+    "reused_control_metric_source_sha256": "37495d4b91b7f895ac85135b5199c30b8b162da13f2b0ddb3353252fc340a517",
+    "new_predictions": 0,
+    "new_native_scores": 0,
+    "n": 112,
+    "delta": 0.1521174129424583,
+    "relative_error_change": 0.030632439587103696,
+    "week_interval": null,
+    "week_clusters": 4,
+    "game_clusters": 56,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.14841518331999667,
+    "game_normal95_sensitivity": [
+      -0.13877634636473515,
+      0.4430111722496518
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 5.118010270085315,
+    "comparator_error": 4.965892857142856,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": -10.694855796746204,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 13.66494148457346,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 13.375103084493645,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 0.691961477234432,
+        "n": 28
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON"
+  },
+  {
+    "kind": "NUMERICAL_PAIRED_MAE",
+    "season": 2026,
+    "target": "pass_cmp",
+    "window": "MATCHED_OFFERS_W5_W8",
+    "actual_weeks": [
+      5,
+      6,
+      7
+    ],
+    "candidate": "B-QB-ALIGNED-FRESHNESS-v1:F3",
+    "control": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs",
+    "product": "mean",
+    "control_product": "mean",
+    "control_functional": "TYPED_LEAF_MEAN_OR_LOWER_MEDIAN",
+    "scope": "EXACT_COMPATIBLE_RETAINED_OFFERED_PLAYER_MASK",
+    "shared_mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+    "eligible_offers": 112,
+    "shared_rows": 84,
+    "rows_outside_shared_panel": 28,
+    "candidate_evidence": "CURRENT_REVISED_SOURCE_48H_RECONSTRUCTED_TIMING_SENSITIVITY_UNVERIFIED_QUOTES",
+    "control_evidence": "RETAINED_STRICT_CURRENT_7D_RECONSTRUCTION",
+    "comparison_limit": "Complete-procedure numerical comparison on identical player/game/outcome rows; no isolated learner, freshness, expected-mean or original-issuance attribution.",
+    "reused_control_metric_source": "reports/profile-increment-to-release-01/B/independent/PREFIT_CONTROL_REVIEW_V1.json",
+    "reused_control_metric_source_sha256": "37495d4b91b7f895ac85135b5199c30b8b162da13f2b0ddb3353252fc340a517",
+    "new_predictions": 0,
+    "new_native_scores": 0,
+    "n": 84,
+    "delta": 0.3127949093588427,
+    "relative_error_change": 0.07056842855108245,
+    "week_interval": null,
+    "week_clusters": 3,
+    "game_clusters": 42,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.2787009619210498,
+    "game_normal95_sensitivity": [
+      -0.23345897600641496,
+      0.8590487947241003
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 4.745299866337153,
+    "comparator_error": 4.432504956978311,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": -7.4748557967462075,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 22.033507498729083,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 11.716120684159906,
+        "n": 28
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON"
+  },
+  {
+    "kind": "NUMERICAL_PAIRED_MAE",
+    "season": 2026,
+    "target": "pass_cmp",
+    "window": "MATCHED_OFFERS_W5_W8",
+    "actual_weeks": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "candidate": "B-QB-ALIGNED-FRESHNESS-v1:F3",
+    "control": "SAVED_ADJUSTED",
+    "product": "lower_median",
+    "control_product": "saved_precision_point",
+    "control_functional": "FUNCTIONAL_AND_ORIGINAL_ISSUANCE_UNVERIFIED_RETAINED_PRECISION_POINT",
+    "scope": "EXACT_COMPATIBLE_RETAINED_OFFERED_PLAYER_MASK",
+    "shared_mask_sha256": "cd31b19df1040d9222e8d53f483c9ef4d1ea702916ebd4f5181dcc8ee0379fa2",
+    "eligible_offers": 112,
+    "shared_rows": 112,
+    "rows_outside_shared_panel": 0,
+    "candidate_evidence": "CURRENT_REVISED_SOURCE_48H_RECONSTRUCTED_TIMING_SENSITIVITY_UNVERIFIED_QUOTES",
+    "control_evidence": "ARCHIVED_REFERENCE_POINT_ISSUANCE_AND_FUNCTIONAL_UNVERIFIED",
+    "comparison_limit": "Complete-procedure numerical comparison on identical player/game/outcome rows; no isolated learner, freshness, expected-mean or original-issuance attribution.",
+    "reused_control_metric_source": "reports/profile-increment-to-release-01/B/independent/PREFIT_CONTROL_REVIEW_V1.json",
+    "reused_control_metric_source_sha256": "37495d4b91b7f895ac85135b5199c30b8b162da13f2b0ddb3353252fc340a517",
+    "new_predictions": 0,
+    "new_native_scores": 0,
+    "n": 112,
+    "delta": 0.23276785714285717,
+    "relative_error_change": 0.048373629228285676,
+    "week_interval": null,
+    "week_clusters": 4,
+    "game_clusters": 56,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.18301377244156553,
+    "game_normal95_sensitivity": [
+      -0.12593913684261124,
+      0.5914748511283255
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 5.044642857142857,
+    "comparator_error": 4.811875000000001,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": 2.3000000000000007,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 9.829999999999998,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 17.110000000000007,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": -3.169999999999999,
+        "n": 28
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON"
+  },
+  {
+    "kind": "NUMERICAL_PAIRED_MAE",
+    "season": 2026,
+    "target": "pass_cmp",
+    "window": "MATCHED_OFFERS_W5_W8",
+    "actual_weeks": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "candidate": "B-QB-ALIGNED-FRESHNESS-v1:F3",
+    "control": "SAVED_RAW",
+    "product": "lower_median",
+    "control_product": "saved_precision_point",
+    "control_functional": "FUNCTIONAL_AND_ORIGINAL_ISSUANCE_UNVERIFIED_RETAINED_PRECISION_POINT",
+    "scope": "EXACT_COMPATIBLE_RETAINED_OFFERED_PLAYER_MASK",
+    "shared_mask_sha256": "cd31b19df1040d9222e8d53f483c9ef4d1ea702916ebd4f5181dcc8ee0379fa2",
+    "eligible_offers": 112,
+    "shared_rows": 112,
+    "rows_outside_shared_panel": 0,
+    "candidate_evidence": "CURRENT_REVISED_SOURCE_48H_RECONSTRUCTED_TIMING_SENSITIVITY_UNVERIFIED_QUOTES",
+    "control_evidence": "ARCHIVED_REFERENCE_POINT_ISSUANCE_AND_FUNCTIONAL_UNVERIFIED",
+    "comparison_limit": "Complete-procedure numerical comparison on identical player/game/outcome rows; no isolated learner, freshness, expected-mean or original-issuance attribution.",
+    "reused_control_metric_source": "reports/profile-increment-to-release-01/B/independent/PREFIT_CONTROL_REVIEW_V1.json",
+    "reused_control_metric_source_sha256": "37495d4b91b7f895ac85135b5199c30b8b162da13f2b0ddb3353252fc340a517",
+    "new_predictions": 0,
+    "new_native_scores": 0,
+    "n": 112,
+    "delta": 0.07874999999999999,
+    "relative_error_change": 0.015858175410838216,
+    "week_interval": null,
+    "week_clusters": 4,
+    "game_clusters": 56,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.14126982391632917,
+    "game_normal95_sensitivity": [
+      -0.1981388548760052,
+      0.35563885487600516
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 5.044642857142857,
+    "comparator_error": 4.965892857142856,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": -10.219999999999999,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 9.01,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 8.949999999999998,
+        "n": 28
+      },
+      "(2026, 8)": {
+        "loss_difference_sum": 1.0799999999999987,
+        "n": 28
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON"
+  },
+  {
+    "kind": "NUMERICAL_PAIRED_MAE",
+    "season": 2026,
+    "target": "pass_cmp",
+    "window": "MATCHED_OFFERS_W5_W8",
+    "actual_weeks": [
+      5,
+      6,
+      7
+    ],
+    "candidate": "B-QB-ALIGNED-FRESHNESS-v1:F3",
+    "control": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs",
+    "product": "lower_median",
+    "control_product": "lower_median",
+    "control_functional": "TYPED_LEAF_MEAN_OR_LOWER_MEDIAN",
+    "scope": "EXACT_COMPATIBLE_RETAINED_OFFERED_PLAYER_MASK",
+    "shared_mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+    "eligible_offers": 112,
+    "shared_rows": 84,
+    "rows_outside_shared_panel": 28,
+    "candidate_evidence": "CURRENT_REVISED_SOURCE_48H_RECONSTRUCTED_TIMING_SENSITIVITY_UNVERIFIED_QUOTES",
+    "control_evidence": "RETAINED_STRICT_CURRENT_7D_RECONSTRUCTION",
+    "comparison_limit": "Complete-procedure numerical comparison on identical player/game/outcome rows; no isolated learner, freshness, expected-mean or original-issuance attribution.",
+    "reused_control_metric_source": "reports/profile-increment-to-release-01/B/independent/PREFIT_CONTROL_REVIEW_V1.json",
+    "reused_control_metric_source_sha256": "37495d4b91b7f895ac85135b5199c30b8b162da13f2b0ddb3353252fc340a517",
+    "new_predictions": 0,
+    "new_native_scores": 0,
+    "n": 84,
+    "delta": 0.10714285714285714,
+    "relative_error_change": 0.023622047244094488,
+    "week_interval": null,
+    "week_clusters": 3,
+    "game_clusters": 42,
+    "bootstrap_replicates": 500,
+    "bootstrap_seed": 1703,
+    "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+    "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+    "game_cluster_sensitivity_se": 0.22511818697855512,
+    "game_normal95_sensitivity": [
+      -0.3340887893351109,
+      0.5483745036208252
+    ],
+    "candidate_infinite_rows": 0,
+    "comparator_infinite_rows": 0,
+    "candidate_error": 4.642857142857143,
+    "comparator_error": 4.535714285714286,
+    "relative_error_missing_reason": null,
+    "weekly_paired_sums_counts": {
+      "(2026, 5)": {
+        "loss_difference_sum": -7.0,
+        "n": 28
+      },
+      "(2026, 6)": {
+        "loss_difference_sum": 11.0,
+        "n": 28
+      },
+      "(2026, 7)": {
+        "loss_difference_sum": 5.0,
+        "n": 28
+      }
+    },
+    "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+    "status": "FINITE_PAIRED_LOSS_COMPARISON"
+  }
+]

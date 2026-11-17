@@ -1,0 +1,71 @@
+{
+  "state": "SOURCE_BOUND_METADATA_CORRECTION_NO_SCIENTIFIC_RERUN",
+  "previous_qualification_sha256": "b9d581177e79e89a75bf58ad95c38c6d97d1c1dd7c67c116f3d7e84ba3cd768c",
+  "bindings": [
+    {
+      "source": "reports/abc-predictive-improvement-01/b-intercept-v1/ANCILLARY_POINT_SCORES.json",
+      "source_sha256": "6d3e60dba374af015fdd69821e8eb3e4df5c2fa71ae9ddc0843d4cc16e6a83e7",
+      "annotations": "reports/abc-predictive-improvement-01/b-intercept-v1/ANCILLARY_POINT_SCORES_SOURCE_CLOCK_AND_ATTRIBUTION_ANNOTATIONS_V3.json",
+      "annotations_sha256": "fe421cbec9f8e856796bdcb967c3349eb168730e41c45512481fc38d8dc5d304",
+      "rows": 1
+    },
+    {
+      "source": "reports/abc-predictive-improvement-01/b-intercept-v1/COMMON_COHORT_SCORES.json",
+      "source_sha256": "900af8e69d75bd534240c7db86e155ea63b266458bfb60817be93e0f76ff093e",
+      "annotations": "reports/abc-predictive-improvement-01/b-intercept-v1/COMMON_COHORT_SCORES_SOURCE_CLOCK_AND_ATTRIBUTION_ANNOTATIONS_V3.json",
+      "annotations_sha256": "403977b705cb043965822351f5a7c737dff48f7b0eaf710dee47f858279417a9",
+      "rows": 480
+    },
+    {
+      "source": "reports/abc-predictive-improvement-01/b-intercept-v1/MATCHED_SELECTED_CONTROL_SCORES.json",
+      "source_sha256": "f6871d335408c573865eba4c159b06ea1a73aaaf3dfcc07ff4f60b59e305fc41",
+      "annotations": "reports/abc-predictive-improvement-01/b-intercept-v1/MATCHED_SELECTED_CONTROL_SCORES_SOURCE_CLOCK_AND_ATTRIBUTION_ANNOTATIONS_V3.json",
+      "annotations_sha256": "844c69e8523aba5ead89644048418057cbed3159d7c32255c6b198b4cb9d4c27",
+      "rows": 216
+    },
+    {
+      "source": "reports/abc-predictive-improvement-01/b-intercept-v1/REFERENCE_PROBABILITY_SCORES.json",
+      "source_sha256": "139527a56b2355bbeef871da34ca4866ecec2f0e787f9b5956d86d76c028a1cb",
+      "annotations": "reports/abc-predictive-improvement-01/b-intercept-v1/REFERENCE_PROBABILITY_SCORES_SOURCE_CLOCK_AND_ATTRIBUTION_ANNOTATIONS_V3.json",
+      "annotations_sha256": "da07b3201a82dfa289604bd793d0804f1a424825a2fe1dcecee404813c7f9f8b",
+      "rows": 72
+    },
+    {
+      "source": "reports/abc-predictive-improvement-01/b-intercept-v1/SCORES.json",
+      "source_sha256": "87e944907e85ca4ca221595c4f8cecf44c4bb2ee64ee7dfc8256fde7ee7e2cf7",
+      "annotations": "reports/abc-predictive-improvement-01/b-intercept-v1/SCORES_SOURCE_CLOCK_AND_ATTRIBUTION_ANNOTATIONS_V3.json",
+      "annotations_sha256": "9d6acc50ea41abe9a01352d66b51c27c96f1510768465e23a4b7b4dc0953f297",
+      "rows": 404
+    },
+    {
+      "source": "reports/abc-predictive-improvement-01/b-intercept-v1/POLICY_COHORT_SCORES.json",
+      "source_sha256": "53f7f9ea793fb60ed1b0651d3b87bfe25f31a580e846cfea733fe0d4e7353f61",
+      "annotations": "reports/abc-predictive-improvement-01/b-intercept-v1/POLICY_COHORT_SCORES_SOURCE_CLOCK_AND_ATTRIBUTION_ANNOTATIONS_V3.json",
+      "annotations_sha256": "34fa603169fd4aa0ba14c1d7aff08d2852c7086bfe5a37515afbf30db7dff6ff",
+      "rows": 6720
+    }
+  ],
+  "earlier_index_drafts_preserved": [
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/results-index-v1/INDEX_MANIFEST.json",
+      "sha256": "3a2107b6009f3401fa34e7b2c59386f9d60574ab043e83d60db23b5015db4a21",
+      "state": "SUPERSEDED_UNPUBLISHED_SOURCE_LABEL_PROJECTION_ONLY",
+      "new_predictions_or_scores": 0
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/results-index-v2/INDEX_MANIFEST.json",
+      "sha256": "6d915badb9b48d6223998fc2e94f5976e0177b96ca77e3447fdcbcfbe4841cd5",
+      "state": "SUPERSEDED_UNPUBLISHED_SOURCE_LABEL_PROJECTION_ONLY",
+      "new_predictions_or_scores": 0
+    },
+    {
+      "path": "reports/abc-predictive-improvement-01/b-intercept-v1/results-index-v3/INDEX_MANIFEST.json",
+      "sha256": "9914771fdb6f9847a254b035dca9ae80b5c16eb29639f6f7cfaf995cc62a1543",
+      "state": "SUPERSEDED_UNPUBLISHED_ATTRIBUTION_SCOPE_PROJECTION_ONLY",
+      "new_predictions_or_scores": 0
+    }
+  ],
+  "borrowed_point_views_separately_typed": 145,
+  "reason": "Artifact-wideextension: COMMON_COHORT eventviews also carryoriginalB0PTancillarymeans. Defaultnativeerrornullfortheseeventproducts, standaloneoriginalpointretained. Allsourceprobabilities,choices,outcomesandcountsunchanged. Source-clock/K/proper qualifications retained.",
+  "default_rebuild_from": "reports/abc-championship/leaf-law-continuation-20261104-v2/results-index-v1/INDEX_MANIFEST.json"
+}

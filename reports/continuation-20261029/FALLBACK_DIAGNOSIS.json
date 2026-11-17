@@ -1,0 +1,565 @@
+{
+  "schema": "v2-fallback-diagnosis-v1",
+  "root_cause": "Legacy live query identities used provider GSIS verbatim when present, otherwise sleeper:ID. No exact nflverse crosswalk or whitespace normalization was applied at issuance; historical feature lookup uses exact GSIS keys. All scored simple controls use unmatched sleeper IDs and the stored position prior. Another42planned contexts use leading-space GSIS IDs and also miss exact joins.",
+  "evidence": [
+    "VERIFIED_FROM_CODE",
+    "REPRODUCED_FROM_DATA"
+  ],
+  "source_commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+  "recomputed_source_tree_digest": "1afd948ff2e4fb60a692d3201fc05afff89a2658cdadf89d69f2137374e65ca4",
+  "source_file_count": 17,
+  "forecast_rows_matching_source_digest": 24288,
+  "simple_planned_by_namespace": {
+    "lab-v1.1-recent": {
+      "planned_player_contexts": 736,
+      "sleeper_namespace": 596,
+      "GSIS_namespace": 98,
+      "sleeper_position_prior": 596,
+      "GSIS_history_used": 84,
+      "leading_whitespace_GSIS": 42,
+      "leading_whitespace_position_prior": 42,
+      "canonical_GSIS_empty_window": 14
+    },
+    "lab-v1.1-pooled": {
+      "planned_player_contexts": 736,
+      "sleeper_namespace": 596,
+      "GSIS_namespace": 98,
+      "sleeper_position_prior": 596,
+      "GSIS_history_used": 91,
+      "leading_whitespace_GSIS": 42,
+      "leading_whitespace_position_prior": 42,
+      "canonical_GSIS_empty_window": 7
+    }
+  },
+  "later_explicit_label_scored_controls": {
+    "lab-v1.1-recent": {
+      "scored_rows": 666,
+      "position_prior_rows": 666,
+      "sleeper_namespace_rows": 666,
+      "unique_players": 190,
+      "by_target": {
+        "pass_yd": 16,
+        "pass_td": 13,
+        "pass_cmp": 16,
+        "pass_att": 16,
+        "pass_int": 8,
+        "rush_yd": 89,
+        "rush_att": 90,
+        "rec": 157,
+        "rec_yd": 156,
+        "rush_rec_yd": 56,
+        "anytime_td": 49
+      }
+    },
+    "lab-v1.1-pooled": {
+      "scored_rows": 666,
+      "position_prior_rows": 666,
+      "sleeper_namespace_rows": 666,
+      "unique_players": 190,
+      "by_target": {
+        "pass_yd": 16,
+        "pass_td": 13,
+        "pass_cmp": 16,
+        "pass_att": 16,
+        "pass_int": 8,
+        "rush_yd": 89,
+        "rush_att": 90,
+        "rec": 157,
+        "rec_yd": 156,
+        "rush_rec_yd": 56,
+        "anytime_td": 49
+      }
+    }
+  },
+  "position_prior_arithmetic": {
+    "rows_checked": 14267,
+    "bit_equal_to_stored_position_mean": 14267,
+    "replayed_fit_or_prediction_calls": 0
+  },
+  "retained_models": [
+    {
+      "source_id": "MODEL-01",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/anytime_td-pooled.json",
+      "sha256": "dcc0d1448245764d8c55f3fc9d47489ed8aecbdd8f7490b09893b1b13f08d0b0",
+      "target": "anytime_td",
+      "method": "pooled",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_anytime_td_mean8",
+        "f_player_anytime_td_n8"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-02",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/anytime_td-recent.json",
+      "sha256": "6043afc7fe75d76b14bd398fd887511950a2ff4fd9e0f4d6948461f64e697a95",
+      "target": "anytime_td",
+      "method": "recent",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_anytime_td_mean3",
+        "f_player_anytime_td_n3"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-03",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/pass_att-pooled.json",
+      "sha256": "3ddfe77b4dbb4d58d5b0336c2d73545a7355d2105e8b087931dabd0f593b08cc",
+      "target": "pass_att",
+      "method": "pooled",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_pass_att_mean8",
+        "f_player_pass_att_n8"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-04",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/pass_att-recent.json",
+      "sha256": "4f55270219ee4efd609c86290f69d19647661ae7da2a65093ecceafbf54fae9a",
+      "target": "pass_att",
+      "method": "recent",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_pass_att_mean3",
+        "f_player_pass_att_n3"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-05",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/pass_cmp-pooled.json",
+      "sha256": "364ebb921119502e683ecbac058b12e0a8e1c30e6b4ff3b632a32b1e8887cea2",
+      "target": "pass_cmp",
+      "method": "pooled",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_pass_cmp_mean8",
+        "f_player_pass_cmp_n8"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-06",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/pass_cmp-recent.json",
+      "sha256": "ca33ac7e12c4e7a46ab5c25c41f4056f82094fedbcf0b6497de42da628852ad9",
+      "target": "pass_cmp",
+      "method": "recent",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_pass_cmp_mean3",
+        "f_player_pass_cmp_n3"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-07",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/pass_int-pooled.json",
+      "sha256": "46d535c153d4a9b598318defc9fa42dfa97cd54040308f0a8bc0b914f818beff",
+      "target": "pass_int",
+      "method": "pooled",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_pass_int_mean8",
+        "f_player_pass_int_n8"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-08",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/pass_int-recent.json",
+      "sha256": "c1658315cbe9d0d1e646908bcc5c0ff0432f173536d28e5a0b87310ad3d52bc2",
+      "target": "pass_int",
+      "method": "recent",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_pass_int_mean3",
+        "f_player_pass_int_n3"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-09",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/pass_td-pooled.json",
+      "sha256": "474fd2379c0d6a174dbaae04ead0faf07b97f61f2349ae90763dc01280ff0d6d",
+      "target": "pass_td",
+      "method": "pooled",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_pass_td_mean8",
+        "f_player_pass_td_n8"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-10",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/pass_td-recent.json",
+      "sha256": "f6adbfd335a2703ca802a6cbf48aaf22e68e8537cb43d3cf121b7619882dd4f9",
+      "target": "pass_td",
+      "method": "recent",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_pass_td_mean3",
+        "f_player_pass_td_n3"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-11",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/pass_yd-pooled.json",
+      "sha256": "0cc165436dc111d67bb7669b03715f0d39ea15a6ec0f13d000984a934f5936a1",
+      "target": "pass_yd",
+      "method": "pooled",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_pass_yd_mean8",
+        "f_player_pass_yd_n8"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-12",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/pass_yd-recent.json",
+      "sha256": "25f6ac4769dc7b917b34ad4baf9d890cb3c59c12c17e19fc1b1710bcba6f39fc",
+      "target": "pass_yd",
+      "method": "recent",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_pass_yd_mean3",
+        "f_player_pass_yd_n3"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-13",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/rec-pooled.json",
+      "sha256": "26fcc30017f24d5ed73133e9e80c14142ca8a7e491683cdd47044558aa7f6504",
+      "target": "rec",
+      "method": "pooled",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_rec_mean8",
+        "f_player_rec_n8"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-14",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/rec-recent.json",
+      "sha256": "7b0fbf28e5f8ae1e33a4978e9216f4ac41c4505e3ce935c8e539eb05bfcb1f11",
+      "target": "rec",
+      "method": "recent",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_rec_mean3",
+        "f_player_rec_n3"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-15",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/rec_yd-pooled.json",
+      "sha256": "e2c070c163c76537e221ba512814043162003fd0845a3e098cac660cf262414b",
+      "target": "rec_yd",
+      "method": "pooled",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_rec_yd_mean8",
+        "f_player_rec_yd_n8"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-16",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/rec_yd-recent.json",
+      "sha256": "a92c6ceb074592c5ee5249d2599170e839c9b96deb312bbc632ea2563cd52a1b",
+      "target": "rec_yd",
+      "method": "recent",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_rec_yd_mean3",
+        "f_player_rec_yd_n3"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-17",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/rush_att-pooled.json",
+      "sha256": "69ff1f573b2f8c12c127e2997bb2980161faf711f9798b6222b3565fc632ccab",
+      "target": "rush_att",
+      "method": "pooled",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_rush_att_mean8",
+        "f_player_rush_att_n8"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-18",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/rush_att-recent.json",
+      "sha256": "de3e4eba3932bd969184c0012be702e8990165312c535af08ad41a87bb0df46f",
+      "target": "rush_att",
+      "method": "recent",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_rush_att_mean3",
+        "f_player_rush_att_n3"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-19",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/rush_rec_yd-pooled.json",
+      "sha256": "82c7dc410bf67a9b27c5476634635039e67fbf456f2210050e45497cbdaa06d2",
+      "target": "rush_rec_yd",
+      "method": "pooled",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_rush_rec_yd_mean8",
+        "f_player_rush_rec_yd_n8"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-20",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/rush_rec_yd-recent.json",
+      "sha256": "45d7faf89358876f47ce02158fd8504c91aa1810b54840e17c46ba243a551d33",
+      "target": "rush_rec_yd",
+      "method": "recent",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_rush_rec_yd_mean3",
+        "f_player_rush_rec_yd_n3"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-21",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/rush_yd-pooled.json",
+      "sha256": "93094c47bb870a262e293c4b56d90f80ac0e3d8e6bdc95c867d01661f3063ce6",
+      "target": "rush_yd",
+      "method": "pooled",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_rush_yd_mean8",
+        "f_player_rush_yd_n8"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    },
+    {
+      "source_id": "MODEL-22",
+      "git_ref": "aa7999b954a6e455f3a53465e1bd1091af77bb15",
+      "public_path": "state/models/648fc871ba6224727c9bdf479dc9aff113aea92a3d9b4169259e1c2410fd8a1f/rush_yd-recent.json",
+      "sha256": "eba1d9510ee143ff902e49b5fd99dab4d72b429df66fcb18f786ff8f1b1f900a",
+      "target": "rush_yd",
+      "method": "recent",
+      "forecast_file_digest_matches": 736,
+      "required_summary_columns": [
+        "f_player_rush_yd_mean3",
+        "f_player_rush_yd_n3"
+      ],
+      "qualified_summary_columns_present": true,
+      "contains_raw_training_rows": false
+    }
+  ],
+  "source_files": [
+    {
+      "source_id": "CODE-01",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "config/preserved-rec-half-registration.json",
+      "sha256": "e571fca1361aeee278387fabf8799b33eaf8771d76a2015b1d2b30845e0ed6a9"
+    },
+    {
+      "source_id": "CODE-02",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "config/research.json",
+      "sha256": "7d30b4a1a50cc45ec575b11ca1e023dd8d1c64376cd31677e018ad12dfb5e406"
+    },
+    {
+      "source_id": "CODE-03",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "nfl_lab/__init__.py",
+      "sha256": "b83391a537342a00ccaab7b5dd1954457377109737617e9d4c61adee5912b899"
+    },
+    {
+      "source_id": "CODE-04",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "nfl_lab/archive_replay.py",
+      "sha256": "cd5ee336d2c157cabcd9223ea64f455e047d420fc8d0f5dbbc18d647e71c3a51"
+    },
+    {
+      "source_id": "CODE-05",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "nfl_lab/cli.py",
+      "sha256": "271250fd9f0ef789fecfdb58b21791f7aeb2a8dab0e9513ee9100944c2862947"
+    },
+    {
+      "source_id": "CODE-06",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "nfl_lab/data.py",
+      "sha256": "38c6fdc45d0a9d86f2a11fc334f77099d918819672ac745563e7248093ba625f"
+    },
+    {
+      "source_id": "CODE-07",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "nfl_lab/evaluation.py",
+      "sha256": "5932f5d927f483014d8d03769aa4d19456cc9bd28359bcb168ab3ab53a3f0452"
+    },
+    {
+      "source_id": "CODE-08",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "nfl_lab/features.py",
+      "sha256": "2a6acd56fea5f9805f0db8fa0684eaa0c57b3c3a89bf77fdc60e948883a2fec9"
+    },
+    {
+      "source_id": "CODE-09",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "nfl_lab/live.py",
+      "sha256": "81efdfa4c4fade8247d7df5bd0821030b5fd42c8246d15ecb06ef629465df93a"
+    },
+    {
+      "source_id": "CODE-10",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "nfl_lab/model_artifacts.py",
+      "sha256": "9e3a3266e227695f158a68a39260ba1ad51c66f24ccc4a1f83c390604aad54f8"
+    },
+    {
+      "source_id": "CODE-11",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "nfl_lab/models.py",
+      "sha256": "0672825fc5d08b882a31ec6906b0618b4766bbb7f38bd05baf791aab37ceccb1"
+    },
+    {
+      "source_id": "CODE-12",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "nfl_lab/prospective.py",
+      "sha256": "82f611dcd3e0bffad362b9099e2cf2061b82b0e4bc7a6fa44d855d0f2b495acd"
+    },
+    {
+      "source_id": "CODE-13",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "nfl_lab/receiving.py",
+      "sha256": "1f72b2568b71b791e971d739be8acdd19dd5ccc79697d6b45c6333b6fdcfc0bf"
+    },
+    {
+      "source_id": "CODE-14",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "nfl_lab/reporting.py",
+      "sha256": "5f41ba9f2e37d8a8e6dcab5b18e64dba64d836ff85e7c36b392c2dc57aa3126b"
+    },
+    {
+      "source_id": "CODE-15",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "nfl_lab/scoring.py",
+      "sha256": "cd3d5c56fafd6f98a3d56d8e022bc776abc9c608e059f2b228f968a7a20c0f13"
+    },
+    {
+      "source_id": "CODE-16",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "nfl_lab/skill.py",
+      "sha256": "453b1e684577cd3e0442837eed6a3004c986fe6a3ceb4def0f9bfbac829cbf5e"
+    },
+    {
+      "source_id": "CODE-17",
+      "commit": "eeddbfe5bfa5fe58420d9c1a09d7e5034f9c2448",
+      "path": "nfl_lab/state.py",
+      "sha256": "b57e4ea3a65e4e9bfb007b6f49b7728fd7b07f70239c37c0aa4eca2d91599167"
+    }
+  ],
+  "alternatives": {
+    "summary_columns_absent": "RULED_OUT; all22retained models declare summary columns present",
+    "history_absent_for_every_player": "RULED_OUT;84recent and91pooled GSIScontexts consume qualified history",
+    "namespace_mismatch": "CONFIRMED_FOR_ALL_SCORED_SIMPLE_ROWS",
+    "seven_day_lag_as_sole_cause": "RULED_OUT_FOR_NAMESPACE_MISMATCH; changing lag cannot match sleeper IDs to GSIS",
+    "remaining_GSIS_cold_contexts": "Among98canonicalGSIS contexts:14recent and7pooled use prior;42additional leading-whitespaceGSIS contexts also use prior. Exact cause of residual canonical empty windows requires original history/query rows.",
+    "current_season_source_availability": "Original full source bodies/queryframe unavailable; no claim it was universally available or missing"
+  },
+  "training_access": {
+    "public_training_object": "Aggregate campaign/report, not raw training rows",
+    "raw_rows_explicitly_retained": false,
+    "row_level_outputs_literal": "local ignored only; never included in immutable aggregate receipt",
+    "public_input_manifests_inspected": 11,
+    "original_648fc_input_manifest_present": false,
+    "clean_H_core_ready_from_these_objects": false,
+    "next_supported_action": "Use newly acquired permitted statistics/identities with a new reconstruction identity; qualify completeness/timing/rare components first. Original prior fallback is not H-CURRENT pure information."
+  },
+  "patch": {
+    "new_V2_module": "nfl_v2/identity.py",
+    "purpose": "Resolve already-qualified exact GSIS bridge and audit namespace/key matches before fitting; abstain on invalid/ambiguous/conflicting bindings",
+    "software_tests": 8,
+    "software_tests_passed": 8,
+    "upstream_patch_needed": "Existing later upstream17f7eb7 already adds exact crosswalk. Do not duplicate that fix or rewrite original rows. Integrate V2 guard into newly registered reconstruction only.",
+    "normalization_policy": "qualified-gsis-whitespace-v1",
+    "normalization_guard": "Whitespace changes require a matching source-qualified exact bridge and named normalization policy; uniqueness/conflict checks exclude ambiguous forward/reverse IDs. Archived IDs and outcome joins unchanged."
+  },
+  "activity": {
+    "new_fits": 0,
+    "new_forecasts": 0,
+    "new_NFL_outcome_scores": 0,
+    "model_deserializations_JSON_only": 22,
+    "private_feeds_republished": false,
+    "upstream_writes": 0
+  },
+  "limitations": [
+    "Original query feature values and original raw source snapshot are not restored.",
+    "No re-scoring of an identity-corrected historical forecast is claimed.",
+    "Current production adapters are separate and later; defect is demonstrated on the original frozen batch.",
+    "Year2026Week7 scored rows remain a sparse explicit-label panel, not the full intended target population."
+  ],
+  "nflverse_stats_license": {
+    "repository": "nflverse/nflverse-data",
+    "main_commit": "a78da18ca93f167bd0a2af274df48f539fa4153c",
+    "license": "CC-BY-4.0",
+    "license_path": "LICENSE.md",
+    "license_git_blob_sha1": "0fb847eb09afc05734c2f1aa34bc3ebd995a072a",
+    "readme_git_blob_sha1": "b89214cf547a7d449f51e80de32fb9e2958c5cbd",
+    "readme_summary": "Repository hosts automated nflverse data releases; use through nflreadr or manual release downloads.",
+    "use_note": "Attribute nflverse and original source provenance, link license and indicate transformations. Repository license does not override inherited PFR-snap/FTN/provider restrictions. This is not a blanket qualification of every mirrored feed."
+  }
+}

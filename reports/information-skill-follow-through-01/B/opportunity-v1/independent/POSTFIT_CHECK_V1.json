@@ -1,0 +1,30 @@
+{
+  "id": "B_OPPORTUNITY_POSTFIT_INDEPENDENT_CHECK_v1",
+  "at_UTC": "2026-11-15T21:16:10.935505+00:00",
+  "status": "FAIL_PRESERVED_NO_AUTOMATIC_RETRY",
+  "checks": 6342,
+  "failures": [
+    "Execution exception; no automatic retry or relaxed tolerances"
+  ],
+  "error": {
+    "type": "IntegrationError",
+    "message": "EVENT_BEYOND_RETAINED_GRID_NOT_A_STRUCTURAL_ZERO"
+  },
+  "details": {},
+  "bindings": {
+    "tools/verify_opportunity_information.py": "b5a6d866b527332c695753c31331607f7f4be1c72830ca134d70c03cdca22316",
+    "nfl_v2/opportunity_information.py": "3d059b042aba291b13b9b8c477271e1c90cc84d8e58c1ac234057a1973096731",
+    "reports/information-first-20261112-01/B/completion-wave-v1/QB_CONTEXT_W1_W9_INPUTS_V1.json.gz": "45aaab99d41f2e2643066c001355b26430f55dca06e7c7e366eace252f2e021b",
+    "reports/profile-increment-to-release-01/B/source-profiles/PASSING_OPPORTUNITY_GAME_INPUTS_V2.json.gz": "51c2cfceff6103a277c6de5897fc76c33733bb797f0891ccdb271b41840ab36a"
+  },
+  "resources": {
+    "CPU_seconds": 1.2042147709999997,
+    "wall_seconds": 1.2054723540059058,
+    "CPU_cap_seconds": 60,
+    "new_fits": 0,
+    "new_scoring": 0,
+    "source_reads": 0,
+    "peak_RSS_bytes": 264220672
+  },
+  "scope": "Independent direct arithmetic/source admission/mutation and pure likelihood gradients or saved-law checks. No optimizer, protected offer rows, original clocks, grading, model-fit reproduction or website admission."
+}

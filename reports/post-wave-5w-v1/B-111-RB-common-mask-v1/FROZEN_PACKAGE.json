@@ -1,0 +1,42 @@
+{
+  "id": "B-C-111-RB-MASK-CLOSURE-v1",
+  "registered_at_utc": "2026-11-05T00:39:49.132074+00:00",
+  "C_ref": "d66f3b20493a8ddf72842e9895d0c2c916583520",
+  "protocol_id": "ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1",
+  "protocol_sha256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1",
+  "mask_id": "cd315248b591579c11060d611ef4006a29e2848a811a30f526e3d9727f990d85",
+  "source_public_mask_sha256": "9268edcd0aac29efcc89bc96882f695da0e2108c38600c18d981b754e3d71324",
+  "choice_before_new_scores": "All retained B rushing point procedures in V2/V3 on the C/A already frozen111RBmask, ALL/W2/W3; no winner-conditioned pruning.",
+  "actual_weeks": [
+    2,
+    3
+  ],
+  "role_scope": "RB_ONLY_SAME_FROZEN_C_111_OPPORTUNITIES",
+  "P1": "Retained unrounded point versus exact retained line; equality abstains; technical absence remains unavailable.",
+  "controls": [
+    "ALWAYS_UNDER",
+    "EARLIER_PREVALENCE_V8",
+    "P3_DIRECT"
+  ],
+  "evidence": "Timing-unverified actual-line diagnostic; current/revised chronological reconstruction; not original issuance.",
+  "source_rows": [
+    {
+      "safe_id": "B_OWNER_LOCAL_C_MATCHED_ROWS_V2.json",
+      "sha256": "45cc345d19c0361e970107951e27b2b41779a6d86c5fdf5d06eedbae5ab348fb"
+    },
+    {
+      "safe_id": "B_OWNER_LOCAL_C_ADDITIONAL_ROWS_V3.json",
+      "sha256": "fa2224d3d6cc99f6a865a45f667e4fe98412710d6b99b51b5dda7e598c12177d"
+    }
+  ],
+  "budget": {
+    "new_fits": 0,
+    "new_inference": 0,
+    "new_private_bytes": 0,
+    "max_wall_seconds": 180,
+    "max_RSS_bytes": 536870912,
+    "max_public_bytes": 16777216,
+    "threads": 1
+  },
+  "release": "C intake only; two scored weeks are not five-week qualification; no production change."
+}

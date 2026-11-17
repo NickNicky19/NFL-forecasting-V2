@@ -1,0 +1,103 @@
+{
+  "state": "PASS_INDEPENDENT_PUBLIC_COUNT_A_AND_OWNER_CAPTURE_WITNESS",
+  "at_utc": "2026-11-05T00:37:53.858046+00:00",
+  "verification_code_sha256": "b812031d22ce483cdebcb51425deb8692977ff3a4ac822e7a9fd0e92e93fd7ff",
+  "count_witness_sha256": "939512a9c87fe110374414ba2a3b78fed8e5220a191c033b0052d44582813fbb",
+  "capture_qualification_sha256": "094739592e12dce0ca3c3faa9639cf0c6950210b5dd69f02586709f341bc98c7",
+  "source_safe_hashes": {
+    "C_public_aggregate": "2787e1a0559caf73a2bc0c6749bc70c7612e9bf5b8bc6ed41f3062e5e404e4f6",
+    "owner_comment": "4ccf778998d2f3c99b9cf47c2e02fb00f1588687bd4063f692ddfdc5cac63285",
+    "complete_labstate_tree_snapshot": "ac7672215a5b2c8c9e53586c93122365e1d5f790a77a7606331fc4957c403cb1",
+    "production_run_snapshot": "fc4b12c0a133c82b4598b494e8bf286d1c21a22c16ab1360c228b3723d95911f",
+    "production_jobs_snapshot": "4963a73e98f0f2f51126079623fea68e43d5e1301798674b986bbeaccb6f4c3d"
+  },
+  "CountA": {
+    "procedure_sha256": "f8607aa99a94c7c1c9ab5c89599e07eba9b15527749b092b225f368032881e83",
+    "output": "CORRECTED_MEAN_POINT",
+    "actual_scored_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "over": {
+      "wins": 43,
+      "losses": 31,
+      "decided": 74
+    },
+    "under": {
+      "wins": 44,
+      "losses": 24,
+      "decided": 68
+    },
+    "combined": {
+      "wins": 87,
+      "losses": 55,
+      "decided": 142
+    },
+    "weighted_offered_MAE": 0.8646594990317948,
+    "week1_loss_preserved": {
+      "week": 1,
+      "over": {
+        "wins": 1,
+        "losses": 2,
+        "decided": 3
+      },
+      "under": {
+        "wins": 3,
+        "losses": 3,
+        "decided": 6
+      },
+      "combined": {
+        "wins": 4,
+        "losses": 5,
+        "decided": 9
+      }
+    },
+    "seven_week_floor_scope": "REPORTED_EXACT_POINT_DIRECTION_PRODUCT_ONLY;NOT_TOP12_OR_RELEASE_ADMISSION",
+    "prior_Leaf_extra_wins": 2,
+    "model_bytes_restored_or_deserialized_by_verifier": false,
+    "point_mean_legacy_contract": "Verified as explicit owner-recorded contract; not independently re-inferred from privateParquet/model."
+  },
+  "public_route": {
+    "bound_head": "275aa84b27c4239d3b2dfea07755734d9db0ac7c",
+    "complete_entries": 776,
+    "present_public_week_dirs": [
+      "state/public/weekly-adaptive-v1/2026-W07",
+      "state/public/weekly-adaptive-v1/2026-W08"
+    ],
+    "week9_export_absent_at_inspected_head": true
+  },
+  "capture": {
+    "physical_sha256": "ee8f61429cbfc6ad51884514df3937c9a5f371a27d897e3ffba200e3be6d3116",
+    "payload_sha256": "8fbc049a70ccc73aedc22eb9164ba06c2ae26e4c8c626f6d1065d17223cc3d2b",
+    "rows": 2573,
+    "generated_at": "2026-11-04T21:03:37Z",
+    "captured_at": "2026-11-04T21:03:39Z",
+    "persisted_at_owner_recorded": "2026-11-04T21:03:44Z",
+    "all15_board_games_and24_picks_pregame": true,
+    "top_over": 12,
+    "top_under": 12,
+    "top_total": 24,
+    "top_unique_games": 11,
+    "all_top_products": "CURRENT_BASELINE/reference_point",
+    "adaptive_overlay": "DISABLED_USE_R0/0researchrows",
+    "updater_run": 41912247259,
+    "run_status": "completed/success",
+    "next_nominal_capture_UTC": "2026-11-05T14:06:00+00:00",
+    "next_capture_execution_not_established": true
+  },
+  "new_fits": 0,
+  "new_inference": 0,
+  "production_writes": 0,
+  "limits": [
+    "CountA scores are public owner-local aggregates, not independent A raw-row/scorer/identity/clock parity. Games78 and source-row truth remain source-reported; arithmetic and exact product/week bindings are independently checked.",
+    "Corrected point versus mean/legacy_point and mean-corrector obligations are explicit owner contract statements; private model/Parquet bytes were not restored or executed here.",
+    "Absence of public W9 at the fixed tree head is not proof the model is missing or that the route remains unchanged forever. Retained API snapshots are serialized connector results, not authenticated HTTP wire-byte preservation.",
+    "Capture/picks/served-byte equality are verified from retained snapshots. Git persistence timestamp is owner-recorded/comment-corroborated; no independent Git commit API timestamp or browser-rendering check performed here.",
+    "Upcoming nominal configured schedule is not execution. Baseline packet does not establish CountA/newB capture, source freshness, sportsbook settlement, profitability or a Top12 qualification transfer."
+  ]
+}

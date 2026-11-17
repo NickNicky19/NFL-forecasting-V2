@@ -1,0 +1,93 @@
+{
+  "state": "CURRENT_PROJECTION_CORRECTED_NO_NFL_SCORE_CHANGE",
+  "failed_check": "Same-procedure/same-product diagonal is not an independent scientific contrast. Guard retained.",
+  "original_projection": {
+    "path": "reports/player-context-matchup-01/B/paired-analysis-index-v1/ANALYSIS_MANIFEST.json",
+    "sha256": "7db584cd63f1d2a8856af1acb5ed56d436c2f6b1f18301b22e22ab819daa53f3"
+  },
+  "original_source_sha256": "1f4704de365ddceeb437f583de1406e40364eb2e326df239d835b70586af9d24",
+  "removed_from_current_projection": [
+    {
+      "source_row_index": 1124,
+      "source_row": {
+        "kind": "OFFER_DIRECTION_PAIRED_LOSS",
+        "season": 2026,
+        "window": "ALL",
+        "target": "pass_cmp",
+        "candidate": "B-player-context-matchup-01-v1:E0",
+        "control": "B-player-context-matchup-01-v1:E0",
+        "policy": "P2_STATISTICAL_LAW",
+        "scope": "COMMON112FULL_BOARD",
+        "candidate_wins": 49,
+        "control_wins": 49,
+        "n": 112,
+        "delta": 0.0,
+        "relative_error_change": 0.0,
+        "week_interval": null,
+        "week_clusters": 4,
+        "game_clusters": 56,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.0,
+        "game_normal95_sensitivity": [
+          0.0,
+          0.0
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.5625,
+        "comparator_error": 0.5625,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "(2026, 5)": {
+            "loss_difference_sum": 0.0,
+            "n": 28
+          },
+          "(2026, 6)": {
+            "loss_difference_sum": 0.0,
+            "n": 28
+          },
+          "(2026, 7)": {
+            "loss_difference_sum": 0.0,
+            "n": 28
+          },
+          "(2026, 8)": {
+            "loss_difference_sum": 0.0,
+            "n": 28
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON",
+        "procedure_id": "B-player-context-matchup-01-v1:E0",
+        "comparator_procedure_id": "B-player-context-matchup-01-v1:E0",
+        "product_id": "P2_STATISTICAL_LAW",
+        "comparator_product_id": "P2_STATISTICAL_LAW",
+        "population": "RETROSPECTIVE_QB_SAME_MATCHED_PLAYER_GAME_CONTRACT",
+        "history_regime": "H-RECENT",
+        "comparator_history_regime": "H-RECENT",
+        "contrast": "B-player-context-matchup-01-v1:E0_MINUS_B-player-context-matchup-01-v1:E0",
+        "metric": "SELECTION_LOSS_RATE",
+        "fallback_view": "COMMON112FULL_BOARD",
+        "policy_id": "P2_STATISTICAL_LAW",
+        "position": "QB",
+        "cohort_id": "ALL",
+        "history_limit": "Earlier-only frozen procedure; current/revised sources and quote-time uncertainty. Not an original pick or unexposed holdout.",
+        "original_pair_source": "reports/player-context-matchup-01/B/component-and-controls-v1/PAIRED_COMPARISONS.json",
+        "original_pair_source_sha256": "b429586538690b6613e966b0c6408cf787d7818149a0bd90f04fe61da3c9eacc",
+        "original_pair_row_index": 122
+      },
+      "scope": "Internal identical-method checksum, not a new scientific procedure comparison."
+    }
+  ],
+  "current_projection": {
+    "path": "reports/player-context-matchup-01/B/paired-analysis-index-v2/ANALYSIS_MANIFEST.json",
+    "sha256": "2176615739dd90cae0231a35198ebcbfa153db4f00a0877312b1b6b101fa0b59"
+  },
+  "original_pair_sources_unchanged": true,
+  "numerical_scores_unchanged": true,
+  "original_predictions_unchanged": true,
+  "old19576pairs_preserved": true,
+  "current_new_scientific_comparisons": 1130
+}

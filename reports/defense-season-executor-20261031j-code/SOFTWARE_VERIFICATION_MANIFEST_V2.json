@@ -1,0 +1,17 @@
+{
+  "schema": "v2-bound-software-verification-v1",
+  "receipt": {
+    "path": "reports/defense-season-executor-20261031j-code/SOFTWARE_VERIFICATION_V2.json",
+    "sha256": "cddcf10429e6a1512ec7f75af9f650b9898c5441b9cb72203daa800042926b3b"
+  },
+  "tests_run": 428,
+  "previous_manifest": "reports/defense-season-executor-20261031j-code/SOFTWARE_VERIFICATION_MANIFEST_V1.json",
+  "additional_operational_check": {
+    "path": "reports/owner-runtime-refresh-20261031j/supplemental/SOFTWARE_VERIFICATION_RECEIPT.json",
+    "sha256": "b509fa0c17cfc2eee370c6c2398f754ff08efae090704ff25b58a33e8a47e61e",
+    "named_checks": 17,
+    "separate_unit": "17namedconsumer checks,11base+6selected;2VMexecutions;1945rowwitnessesnotindependentNFLobservations"
+  },
+  "new_NFL_observations": 0,
+  "scope": "Unit428and17namedruntimechecks remain different software executions/units; no accuracy or uniqueNFLsample inferred."
+}

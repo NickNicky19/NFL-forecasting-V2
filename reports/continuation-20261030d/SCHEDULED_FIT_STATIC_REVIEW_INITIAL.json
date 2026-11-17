@@ -1,0 +1,34 @@
+{
+  "state": "STATIC_FINDINGS_REQUIRE_AMENDMENT_NO_PREFIT_APPROVAL",
+  "code_sha256": "67d34eaa2fae055a62e299d77deb76510d27f82c2090dbc29f3681d527b5506b",
+  "prepared_protocol_sha256": "a6db7dec1009867ce10110c648235e3fc9bf3756f3671602c14213dbca41eb8e",
+  "findings": [
+    {
+      "id": "SW-GATE-PLAN",
+      "issue": "Restoration gate checks booleans and arbitrary 64-character hashes, without binding to expected expanded recovery plan/content map.",
+      "fix": "Require actual source-bound full-plan restore evidence, expected digests and complete mapping coverage before release."
+    },
+    {
+      "id": "SW-RESOURCE",
+      "issue": "save() has no wall/CPU/RSS guard before or after compression, inference has no immediate post-call guard, and final aggregate persistence can follow a budget failure.",
+      "fix": "Use distinct resource exceptions and check allocated time/RSS before/after expensive inference and every persistence; retain bounded failure receipts."
+    },
+    {
+      "id": "SW-FALLBACK-CONTRIBUTION",
+      "issue": "Historical views include full/learned/paired/top views but no fallback-only error contribution, although protocol promises fallback contributions.",
+      "fix": "Add explicit fallback-only scores or an exact source-bound contribution sidecar; fallback rates alone do not decompose error."
+    }
+  ],
+  "reviewed_valid_guards": [
+    "Exact original training membership, labels and prior parameters.",
+    "Unchanged fitted training models reused without refits; changed matrices require separate fit.",
+    "Historical forecast aliases require identical query features or a prior fallback that ignores changed defense inputs.",
+    "New actual future query cutoff shared across scheduled/observed/base variants; no inherited issuance clocks."
+  ],
+  "strongest_reference_status": "Frozen references; exact matched-row strongest comparison still pending and not invented.",
+  "software_fixture_scope": "12 fictional helper/gate fixtures; no NFL fit/inference pipeline certification.",
+  "new_fits": 0,
+  "inference_calls": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

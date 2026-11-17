@@ -1,0 +1,106 @@
+{
+  "id": "B-QB-FORWARD-TIMING-SHADOW-v1",
+  "assignment": "PROFILE-TIMING-CLOSURE-AND-CONFIRM-01",
+  "registered_utc": "2026-11-10T22:56:48.633273+00:00",
+  "owner": "B",
+  "production_owner": "ORIGINAL_WEBSITE_OWNER_UNCHANGED",
+  "state": "REGISTERED_BEFORE_2_NEW_CURRENT_ORIGIN_FITS",
+  "season": 2026,
+  "week": 10,
+  "feature_cutoff": 1794351408.633273,
+  "feature_cutoff_UTC": "2026-11-10T22:56:48.633273+00:00",
+  "inputs": "reports/profile-timing-closure-confirm-01/B/forward-receipts/current-inputs/DERIVED_CURRENT_QB_GAME_INPUTS_V1.json.gz",
+  "queries": "reports/profile-timing-closure-confirm-01/B/forward-current-v1/CURRENT_QUERIES.json",
+  "feature_order": "reports/profile-increment-closure-next-02/B/aligned-wave-v1/FEATURE_ORDER_V1.json",
+  "bindings": [
+    {
+      "path": "reports/profile-timing-closure-confirm-01/B/forward-receipts/current-inputs/DERIVED_CURRENT_QB_GAME_INPUTS_V1.json.gz",
+      "sha256": "25aaf711bf5f8f5981f69f0fc453d887a406aa881f9489cb0a200658f108e463",
+      "bytes": 244921
+    },
+    {
+      "path": "reports/profile-timing-closure-confirm-01/B/forward-current-v1/CURRENT_QUERIES.json",
+      "sha256": "f6ab853f663fad8ba0c9759d556903e29aa1d93c8f3549b24ea3fcfee623e600",
+      "bytes": 12143
+    },
+    {
+      "path": "reports/profile-increment-closure-next-02/B/aligned-wave-v1/FEATURE_ORDER_V1.json",
+      "sha256": "545644965c90563b96cf116a76a24729775f51a2eb1eaa4eae6ee36704538871",
+      "bytes": 32139
+    },
+    {
+      "path": "reports/profile-timing-closure-confirm-01/B/forward-receipts/current-inputs/CURRENT_INPUT_DERIVATION_RECEIPT_V1.json",
+      "sha256": "13ead3892c165b9e0d1e81cd074402364d82ea54526a59c044605caa2540f1e3",
+      "bytes": 12096
+    },
+    {
+      "path": "tools/capture_qb_forward_timing.py",
+      "sha256": "cafc6da3edfb249880c4ef03eedf45580cf695032571c7f3494595a958f5cfed",
+      "bytes": 11771
+    },
+    {
+      "path": "nfl_v2/qb_aligned_freshness.py",
+      "sha256": "9ef8ae73e49b43ac8147490b8d28fe3f161bbf27054bf1040cae6a5a8d117b4e",
+      "bytes": 8896
+    },
+    {
+      "path": "nfl_v2/player_context_matchup.py",
+      "sha256": "3db66e8d7c75f444d87f4792add9096a9d04d0390902f67ce21248c206476f29",
+      "bytes": 17185
+    },
+    {
+      "path": "nfl_v2/hgb_control.py",
+      "sha256": "13ad5627152d4aed81540f93088b63716acb98a00bce52089a8ec8cbb619cccf",
+      "bytes": 25899
+    },
+    {
+      "path": "nfl_v2/distribution_laws.py",
+      "sha256": "14f034249f38cd12d5a0ea36b05e64086e0859cc4209f83a55c913cda5742f4d",
+      "bytes": 7334
+    },
+    {
+      "path": "nfl_v2/distribution_wave_v2.py",
+      "sha256": "417b817debe54b8e8c050d92e3e3fb9283fbc924a832099fbcc9c7ba51517fb9",
+      "bytes": 32580
+    }
+  ],
+  "max_new_fits": 2,
+  "arms": {
+    "F0": "Unchanged E3/R0 baseline, declared7day reconstruction; no added profile",
+    "F2": "Unchanged E3 under declaredaligned48h reconstruction; no added profile"
+  },
+  "excluded_arms": [
+    "F1/F3 profile recipes not preferred; their historical results preserved"
+  ],
+  "training": "Previousseason+eligible currentseason labels;expanding2022 featurememory;allhistoricalfeatures,labels/prior aligned under each policy;fixed179E3columns,forest32seed1701,no tuning",
+  "horizon": "REAL_EARLY_WEEK10_CURRENT_SHADOW;sourcecutoff/modelcompleted/issue/publicationclocks distinct;no originalT90 orhistoricalfirstkickoff-horizonclaim",
+  "query_universe": "Explicit existingcurrent-knownseasonrosterQBsforWAS/NYG;5ACTconditional-appearanceforecasts,3DEV/RES basicunavailable;no targetgameoutcomes/starter/injuryprobabilities",
+  "source": "ExistingretainedCpublicfactualprojections;277old2026and2624olderrowspreservedexactly;4provenFINALW9labels;34QBrows/13recentgamesheldincludingtargetteamslatestgames;no newfootballcollection",
+  "historical_tier": "Declared7day/48h reconstruction trainingfeatures,notauthenticatedhistoricalsourcevintages;current source observations known separately",
+  "event_gate": "Separateone-shotindependentverificationoftheexistingCnativepublicroute;requirecanonical/nativeidentity,strictpre/SCHEDULED/completedfalse,HTTPDate/Age1800s/5sskew,>300sbeforekickoff;oldC19:37receiptcannotqualifynewissue",
+  "source_freshness": "FrozenCsource/versionasofrecordedclocks;partialW9explicit;no hourly/acquisitionfreshnesspromise or currentstarterclaim;revalidationrequiredbeforeanylateruse",
+  "outputs": [
+    "EXPECTED_MEAN",
+    "LOWER_MEDIAN",
+    "EXPERIMENTAL_COUNT_LAW"
+  ],
+  "offers": 0,
+  "selections": 0,
+  "primary_switch": false,
+  "original_website_changed": false,
+  "qualified_capture": false,
+  "publication": "Preparedinferencekeptseparate;freshgateverification+GitHubactualreadbackrequiredforeligiblepacketreceipt;consumeradmissionnotassumed",
+  "budget": {
+    "wall_seconds": 300,
+    "cpu_seconds": 300,
+    "RSS_bytes": 1073741824,
+    "threads": 2,
+    "public_retention_bytes": 8388608,
+    "max_new_fits": 2,
+    "new_historical_fits": 0,
+    "new_paid_calls": 0,
+    "new_schedulers": 0
+  },
+  "retention": "Existingpermittedpublicderivativelane;trustedtypedJSONmodels;Crawsourceprojectionbindingsimmutable;no privatearchives/rawoffers",
+  "stop": "Two newcurrentfitsonce,retainpartialattempts;nohistoricalrefit/lagsearch. Failedstatusgateretainspreparedpredictionseparately,notcapture;futuregradeonlyafterqualifiedoutcomes"
+}

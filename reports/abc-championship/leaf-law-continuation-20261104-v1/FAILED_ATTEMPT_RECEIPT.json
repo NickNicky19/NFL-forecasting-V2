@@ -1,0 +1,18 @@
+{
+  "state": "FAILED_POST_WRITE_PRIVATE_SIZE_GUARD_NO_PUBLIC_SCORES_EMITTED",
+  "at_utc": "2026-11-04T01:38:34.047639+00:00",
+  "guard_bytes": 8388608,
+  "actual_retained_bytes": 9076411,
+  "excess_bytes": 687803,
+  "private_safe_id": "B_RETAINED_LEAF_C_LAW_ROWS",
+  "private_sha256": "6130073206a97d889d2babce5a866e0ab4524e68ca3d7ddb89ab4fa39d7da7e3",
+  "completed_row_count": 15488,
+  "law_cells": 64,
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_issued_forecasts": 0,
+  "source_snapshot_sha256": "9fbb2430c6b6b81bc8a410765fc9a56e3588b2f30d91983d7830171ca08541a7",
+  "failure": "AssertionError at private output size check, after complete histogram-law results were written; no completed data deleted.",
+  "guard_limitation": "Guard was post-write, not a prevention of overshoot. Future writer changes require a separate version. Preserve failure; reuse completed bytes with zero new private output, rather than repeat lookup.",
+  "metadata_verification_limit": "Original runner checked latest_training_feature_available but some receipts use latest_training_consumed_feature_available. Resume/independent verification must check both aliases explicitly; missing key is not proof of no feature consumption."
+}

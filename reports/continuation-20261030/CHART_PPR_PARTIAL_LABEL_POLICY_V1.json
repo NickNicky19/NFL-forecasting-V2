@@ -1,0 +1,182 @@
+{
+  "policy_id": "v2-nick-chart-ppr-nflverse-explicit-zero-subset-v1",
+  "registered_at_utc": "2026-10-30T00:39:33.109699+00:00",
+  "status": "ADMITTED_PARTIAL_LABEL_MAPPING_AT_CURRENT_VINTAGE_PROVIDER_CONTRACT_TIER",
+  "target_id": "nick-chart-ppr-v1",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "week8_outcomes_read": 0,
+  "source_admission_id": "v2-chart-rds-version-probe-20261030-v1",
+  "source_payload_bytes": 4309114,
+  "source_rds_probe_receipt_sha256": "f623612db0f2c018982b6516a0075cbb6f85f028df6be4621a6f4aed225f8f2c",
+  "source_parity_receipt_sha256": "0148b07fb6a69cdc67497916fc1cd5d52f491ec26c2c31c879188b457a28c800",
+  "source_version_evidence": {
+    "producers": {
+      "2022-2025": "5.2.0.9015",
+      "2026": "6.0.0"
+    },
+    "old_version_commit": "2cf16e4d101f93984d4027e5cb3950a3eff91807",
+    "new_version_tag": "v6.0.0",
+    "calculate_stats_identical_git_blob": "f367d0a4ba7d3a472351865467eba3a9c53a14f6",
+    "tidy_playstats_identical_git_blob": "0c21d4d43fb653f8d39a2bc23fc52369a4a4bc84",
+    "all_csv_cells_compared": 12498900,
+    "custom_pbp_attribute_present": false
+  },
+  "primary_mapping": {
+    "passing_yards": {
+      "source_field": "passing_yards",
+      "source_algorithm": "sum yards for stat15/16",
+      "code_line": 331,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "passing_TD": {
+      "source_field": "passing_tds",
+      "source_algorithm": "count stat16",
+      "code_line": 332,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "interceptions_thrown": {
+      "source_field": "passing_interceptions",
+      "source_algorithm": "count stat19",
+      "code_line": 333,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "rushing_yards": {
+      "source_field": "rushing_yards",
+      "source_algorithm": "sum signed yards for stat10/11/12/13",
+      "code_line": 359,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "rushing_TD": {
+      "source_field": "rushing_tds",
+      "source_algorithm": "count stat11/13",
+      "code_line": 360,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "receptions": {
+      "source_field": "receptions",
+      "source_algorithm": "count stat21/22; excludes credited2pt stat104 and ordinary laterals",
+      "code_line": 373,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "receiving_yards": {
+      "source_field": "receiving_yards",
+      "source_algorithm": "sum signed yards for stat21/22/23/24",
+      "code_line": 375,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "receiving_TD": {
+      "source_field": "receiving_tds",
+      "source_algorithm": "count stat22/24",
+      "code_line": 376,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "fumbles_lost": {
+      "source_field": "fumbles_lost_total",
+      "source_algorithm": "count stat106 once; do not add overlapping sack/rush/receiving fumble-loss aggregates",
+      "code_line": 477,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "passing_2pt": {
+      "source_field": "passing_2pt_conversions",
+      "source_algorithm": "count credited passing conversion stat77",
+      "code_line": 344,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "rushing_2pt": {
+      "source_field": "rushing_2pt_conversions",
+      "source_algorithm": "count credited rushing conversion stat75",
+      "code_line": 366,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    },
+    "receiving_2pt": {
+      "source_field": "receiving_2pt_conversions",
+      "source_algorithm": "count credited receiving conversion stat104",
+      "code_line": 393,
+      "status": "FIELD_AND_CURRENT_GENERATOR_TRACED;EXACT_SNAPSHOT_PRODUCER_VERSION_UNVERIFIED"
+    }
+  },
+  "chart_weights": {
+    "passing_yards": ".04",
+    "passing_TD": "4",
+    "interceptions_thrown": "-1",
+    "rushing_yards": ".1",
+    "rushing_TD": "6",
+    "receptions": "1",
+    "receiving_yards": ".1",
+    "receiving_TD": "6",
+    "fumbles_lost": "-1",
+    "passing_2pt": "2",
+    "rushing_2pt": "2",
+    "receiving_2pt": "2",
+    "offensive_fumble_recovery_TD": "6",
+    "kick_return_TD": "6",
+    "punt_return_TD": "6",
+    "field_goal_return_TD": "6"
+  },
+  "rare_zero_contract": {
+    "requirements": [
+      "same hash-qualified weekly player row and exact game/player identity",
+      "all12directprimitives explicit finite; non-yard counts nonnegative integer",
+      "fumble_recovery_tds and special_teams_tds each explicit finite nonnegative integer",
+      "BOTHaggregatevalues exactly0",
+      "official full-week player-stat release provenance; no custom_pbp marker; stated provider completeness/version assumption retained"
+    ],
+    "proof": "Let F and S be nonnegative counts of the complete source fumble-recovery and special-team TD credit supersets. Every listed rare chart event is included in F or S. For every rare component Cj, 0<=Cj<=F+S. If F=S=0 then Cj=0. Extraneous eligible-superset event types cannot create a false zero; they only cause additional unresolved positive rows.",
+    "containment": {
+      "offensive_fumble_recovery_TD": "official recoveryTD IDs56/58/60/62, including lateral scorers, are counted in F irrespectiveofunit; chartoffense-only event is a subset",
+      "kick_return_TD": "kickoffreturnTD IDs46/48, including lateral scorer48, are counted in S on special play; fumblechainTD credit is also coveredbyF",
+      "punt_return_TD": "puntreturnTD IDs34/36, including lateral scorer36, are counted in S on special play; fumblechainTD credit is also coveredbyF",
+      "field_goal_return_TD": "official miscTD64 on fieldgoal-return specialplay is includedinS; a fumble-recovery scoring credit56/58/60/62 is includedinF; requirecompleteofficial specialplay classification"
+    },
+    "ambiguous_or_positive_policy": "If either aggregate is nonzero/missing/invalid, retain allfour rarecomponentsnull with EXCEPTIONAL_TD_ATTRIBUTION_UNRESOLVED; charttotalnull. Never score the aggregate as a chartcomponent, never fill unprovedmissing0."
+  },
+  "direct_event_contract": {
+    "two_point": "Credited passing77/rushing75/receiving104 eachworth2; receiving104 doesnotincrementordinaryreceptions21/22",
+    "fumbles": "Use fumbles_lost_total106 once, not overlapping sack/rush/receiving losses; sourcecomplete uniqueofficialcredits contract required",
+    "signed": "Retain signed passing/rushing/receiving yards and signed chartpoints",
+    "rare_positive": "No using totalST/recoveryTDs as exact positive chartcredits; stat108 ownkickoffrecovery and stat64misc need separateclassification"
+  },
+  "coverage_by_season": [
+    {
+      "season": 2022,
+      "all_REG_source_rows": 17981,
+      "games": 271,
+      "candidate_rare_zero_rows": 17942,
+      "rare_attribution_unresolved_rows": 39
+    },
+    {
+      "season": 2023,
+      "all_REG_source_rows": 17806,
+      "games": 272,
+      "candidate_rare_zero_rows": 17773,
+      "rare_attribution_unresolved_rows": 33
+    },
+    {
+      "season": 2024,
+      "all_REG_source_rows": 18130,
+      "games": 272,
+      "candidate_rare_zero_rows": 18091,
+      "rare_attribution_unresolved_rows": 39
+    },
+    {
+      "season": 2025,
+      "all_REG_source_rows": 18540,
+      "games": 272,
+      "candidate_rare_zero_rows": 18495,
+      "rare_attribution_unresolved_rows": 45
+    },
+    {
+      "season": 2026,
+      "all_REG_source_rows": 7447,
+      "games": 107,
+      "candidate_rare_zero_rows": 7439,
+      "rare_attribution_unresolved_rows": 8
+    }
+  ],
+  "population": "This mappingappliesallsourcepositions. A futurediagnosticmust freeze its query/role/appearance population separately, keep primary/extendedroles and return-onlyparticipants; allregisteredqueriesretained evenwhentargetmissing. Training/scoring use supportednonnull labels only and disclose missing/fallback coverage; neverdelete164positive/unknownrowsfromdenominatorafteroutcomes.",
+  "evidence_limit": "Source-specific current-vintage reconstruction under the official full-week provider contract. Digest/parity/version qualification is verified; complete event census, official NFL truth and historical vintages are not independently replayed. If completeness/specialclassification is contradicted, invalidate affectedlabels through a newversion.",
+  "next_dependency": "Qualified immutableeventrows/PBPfor164rare-positive/unknownplayerrows including8in2026W1-7, officialscorer/returnunit/laterals/dedup and ordinary/rare handchecks; no mutableWeek8payload",
+  "dependent_run_gate": "No chartfits/capture authorizedbythismappingalone. Rootmust separatelyregistercohort/histories/resourcebudget and retainRDScompanions+mapping inapprovedprivateoffhoststorewithreadbackbeforedependentexecution.",
+  "methodology": "Means may be weightedcomponent expectations; componentmediansneveradded to fantasy median. This policy onlydefineslabels, not predictiveimprovement or coherentjointlaw."
+}

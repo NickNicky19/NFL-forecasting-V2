@@ -1,0 +1,24 @@
+{
+  "id": "B-TABICLV2-NFL-FIXTURE-FAILURE-v1",
+  "UTC": "2026-11-16T23:14:40.536401+00:00",
+  "state": "FAILED_BEFORE_NFL_FIT_PRESERVED",
+  "worker_code_sha256": "57e30344f9a5f0764098dbc692d92a583e1ecbe59e464972de988f25974ba292",
+  "stage": {
+    "stage": "safe-loader-and-NFL-input-check",
+    "UTC": "2026-11-16T23:13:18.519038+00:00",
+    "CPU_seconds": 12.618426161,
+    "wall_seconds": 7.8988705669980845,
+    "peak_aggregate_RSS_bytes": 534040576,
+    "peak_runtime_storage_bytes": 833218349,
+    "returncode": 1,
+    "stop_reason": null,
+    "state": "SAFE_STOP_OR_FAILURE"
+  },
+  "error": "NFL future-outcome mutation altered consumed design",
+  "suspected_fixture_scope": "Mutation selected all source labels unavailable at earliestweeklyfit; registered query features refresh at individualgamekickoff. Thus mutation may change legitimate inputs admitted later in that week. Independent retained-case diagnosis requested.",
+  "changed_method_or_feature_policy": false,
+  "new_NFL_fits": 0,
+  "checkpoint_load": "Weights-only/schema/finite tensors passed before sourcefixture failure; no complete runtime+input PASS claimed.",
+  "accounting": "Entire failed stage retained and charged; no reset or extension.",
+  "next_action": "Reproduce affected retainedcases; hold all eligible inputs fixed at each querycutoff, compare full raw/transformed design without tolerance relaxation."
+}

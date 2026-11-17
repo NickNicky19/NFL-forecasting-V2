@@ -1,0 +1,22 @@
+{
+  "UTC": "2026-11-16T17:30:02.329288+00:00",
+  "failures": [
+    {
+      "stage": "Dependencymetadataonly",
+      "type": "PackageNotFoundError:tqdm",
+      "effect": "Missingdependencyrecorded;no install/model/load/fit/prediction"
+    },
+    {
+      "stage": "Inputschemaadmissionbeforefit",
+      "type": "KeyError:target",
+      "code_sha256": "c3e8c0424bdad531d5d4e8c4d5cc6635f08d01798f6df86cf93e9431a3ccf01b",
+      "repair": "Existingnativegradeexportusescategory;mapexplicitcategorypass_cmpratherthanassumeabsenttarget.",
+      "effect": "No report/model/fit/prediction/grade produced"
+    }
+  ],
+  "new_fits": 0,
+  "new_predictions": 0,
+  "new_grades": 0,
+  "failed_helper_CPU": null,
+  "metering": "Failedhelper/importtailsnotfullymetered;noreset/newallowance/noA_M3charge"
+}

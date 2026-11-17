@@ -1,0 +1,28 @@
+{
+  "id": "B_INFORMATION_SKILL_PUBLIC_HELPER_BINDINGS_v1",
+  "UTC": "2026-11-15T15:29:56.404097+00:00",
+  "scope": "Public transport/component-render helper parameterization; not scientific model/scorer amendment. Exact executed mainmodel/scorer code remains seal-bound.",
+  "versions": [
+    {
+      "public_helper": "tools/repack_information_skill_evaluation.py",
+      "original_executed_helper_sha256": "c8861207413605e18539b7cb671c2e7e7193f5c5dc229ac16895b8d7036f5f20",
+      "public_parameterized_helper_sha256": "36ab45113f7e84336fbb9ad4412060ba6aef96dfe60e6042011e1a1d1650f58f",
+      "change": "Remove owner-local cache locator and require explicit CLI argument. No mathematical/encoding expression or frozen input/output changed; original executed result hashes and alldecodeddata retained.",
+      "rerun": false
+    },
+    {
+      "public_helper": "tools/summarize_qb_pass_mix_components.py",
+      "original_executed_helper_sha256": "741712d0abbadbe5a222e4e434c202c15a26116aa409741c5bcc7b31499795a7",
+      "public_parameterized_helper_sha256": "0943f18d19d60bb399ed7d13a1eed7970b37c7fb04ea6a7ebb7ca05ba2abb5aa",
+      "change": "Remove owner-local cache locator and require explicit CLI argument. No mathematical/encoding expression or frozen input/output changed; original executed result hashes and alldecodeddata retained.",
+      "rerun": false
+    }
+  ],
+  "future_reproduction_wrapper": {
+    "path": "tools/score_qb_pass_mix_information_v2.py",
+    "sha256": "0fe59b5181837a233b123ef3031dc428ad9ff8213fdb46dff3884820af9193ef",
+    "frozen_original_scorer_sha256": "40266e58b2a678ab03679e426b1c68c6b35daa3dc58725991ecbd3342935eb7f",
+    "software_write_fixture": "PASS decodedidentity andgzipfilename;NFLfits0/NFLscoreruns0",
+    "execution_this_wave": "NOT_EXECUTED_ON_NFL_DATA;originalv1scoresrepackedlosslesslywithoutrescoring"
+  }
+}

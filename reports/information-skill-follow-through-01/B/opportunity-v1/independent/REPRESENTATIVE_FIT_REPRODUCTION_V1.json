@@ -1,0 +1,281 @@
+{
+  "id": "B_OPPORTUNITY_REPRESENTATIVE_FIT_REPRODUCTION_v1",
+  "UTC": "2026-11-15T21:18:14.541537+00:00",
+  "status": "FAILED_STRICT_REPRESENTATIVE_FIT_TOLERANCES",
+  "all_passed": false,
+  "frozen_tolerances": {
+    "coefficient_absolute": 1e-05,
+    "probability_absolute": 1e-07,
+    "objective_absolute": 1e-06,
+    "objective_relative": 1e-10
+  },
+  "settings": {
+    "maxiter": 300,
+    "ftol": 1e-10,
+    "gtol": 1e-06
+  },
+  "threads": 1,
+  "CPU_cap_seconds": 60,
+  "RSS_cap_bytes": 1073741824,
+  "reserved_optimizer_calls": 2,
+  "actual_optimizer_calls": 2,
+  "attempts": [
+    {
+      "kind": "team",
+      "slot": "INDEPENDENT_W01_TEAM",
+      "charged_by_root": true,
+      "state": "COMPARED_STRICT_TOLERANCE_FAILED",
+      "entered_UTC": "2026-11-15T21:18:14.567104+00:00",
+      "before_resources": {
+        "CPU_seconds": 0.059885995000000136,
+        "wall_seconds": 0.06420384900411591,
+        "peak_RSS_bytes": 136888320
+      },
+      "training_rows": 544,
+      "membership_SHA256": "be058e2d6155231a8d85501d64975d1f63af7e3dcb0dadf0f934b666832b02b4",
+      "objective_gradient_prechecks": [
+        {
+          "beta": "initial",
+          "objective_absolute_difference": 7.73070496506989e-12,
+          "gradient_max_difference": 2.4158453015843406e-12,
+          "finite_difference_gradient_max_error": 1.5428126545202758e-06
+        },
+        {
+          "beta": "retained_native",
+          "objective_absolute_difference": 5.4569682106375694e-12,
+          "gradient_max_difference": 1.1013412404281553e-12,
+          "finite_difference_gradient_max_error": 3.5325795999519016e-06
+        },
+        {
+          "beta": "fixed_probe",
+          "objective_absolute_difference": 6.821210263296962e-13,
+          "gradient_max_difference": 1.2070344723724702e-12,
+          "finite_difference_gradient_max_error": 1.4938029369027106e-06
+        }
+      ],
+      "initial_vector": [
+        0.0,
+        0.0,
+        0.0,
+        -2.222542385320509
+      ],
+      "retained_native_vector": [
+        -0.01856216041746244,
+        0.1785805184018289,
+        0.1125164787114966,
+        1.02598780510684
+      ],
+      "returned_UTC": "2026-11-15T21:18:14.576258+00:00",
+      "independent_vector": [
+        -0.018562161620781968,
+        0.1785800499123845,
+        0.11251610499788131,
+        1.0259880681503724
+      ],
+      "independent_state": {
+        "kind": "opportunity_team_NB_v1",
+        "beta": [
+          -0.018562161620781968,
+          0.1785800499123845,
+          0.11251610499788131
+        ],
+        "eta": 1.0259880681503724,
+        "shape": 147.35940336306865,
+        "feature_order": [
+          "intercept",
+          "log_offense_O_vs_pool",
+          "log_defense_O_vs_pool"
+        ],
+        "optimization": {
+          "success": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "iterations": 21,
+          "independent": true,
+          "retry": false
+        }
+      },
+      "independent_objective": 1949.2452017327275,
+      "independent_success": true,
+      "iterations": 21,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "after_fit_resources": {
+        "CPU_seconds": 0.06904219900000008,
+        "wall_seconds": 0.07335950700507965,
+        "peak_RSS_bytes": 137150464
+      },
+      "comparison": {
+        "training_member_match": true,
+        "coefficient_max_absolute_difference": 4.684894444051402e-07,
+        "probability_or_count_CDF_max_absolute_difference": 1.4721334407052922e-07,
+        "mean_max_absolute_difference": 3.3943612791631494e-06,
+        "scalar_batch_max_difference": 0.0,
+        "query_cases": 37,
+        "objective_difference": 1.3415046851150692e-11,
+        "objectives_at_both_persisted_vectors": [
+          {
+            "at": "native",
+            "independent_objective": 1949.245201732741,
+            "author_objective": 1949.2452017327355,
+            "objective_difference": 5.4569682106375694e-12,
+            "gradient_max_difference": 1.1013412404281553e-12,
+            "gradient_infinity_norm": 0.00014275188115214082
+          },
+          {
+            "at": "independent",
+            "independent_objective": 1949.2452017327275,
+            "author_objective": 1949.24520173273,
+            "objective_difference": 2.5011104298755527e-12,
+            "gradient_max_difference": 1.1741718708435656e-12,
+            "gradient_infinity_norm": 1.2608976294181673e-06
+          }
+        ],
+        "tolerance_pass": false
+      }
+    },
+    {
+      "kind": "share",
+      "slot": "INDEPENDENT_W01_SHARE",
+      "charged_by_root": true,
+      "state": "COMPARED_PASS",
+      "entered_UTC": "2026-11-15T21:18:14.607080+00:00",
+      "before_resources": {
+        "CPU_seconds": 0.09981144200000003,
+        "wall_seconds": 0.10418047600251157,
+        "peak_RSS_bytes": 137281536
+      },
+      "training_rows": 645,
+      "membership_SHA256": "5843a062193c3cd189d512c48f51ad7b0f06a8b4c823c53248eca8ba43b39cba",
+      "objective_gradient_prechecks": [
+        {
+          "beta": "initial",
+          "objective_absolute_difference": 0.0,
+          "gradient_max_difference": 2.2737367544323206e-12,
+          "finite_difference_gradient_max_error": 2.564429451012984e-07
+        },
+        {
+          "beta": "retained_native",
+          "objective_absolute_difference": 0.0,
+          "gradient_max_difference": 8.526512829121202e-14,
+          "finite_difference_gradient_max_error": 7.171907487891734e-07
+        },
+        {
+          "beta": "fixed_probe",
+          "objective_absolute_difference": 0.0,
+          "gradient_max_difference": 5.435651928564766e-13,
+          "finite_difference_gradient_max_error": 4.065821097576361e-07
+        }
+      ],
+      "initial_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "retained_native_vector": [
+        -0.12494710583127322,
+        -0.25449716400487304,
+        0.1340672493255194,
+        0.1032349297540023
+      ],
+      "returned_UTC": "2026-11-15T21:18:14.612066+00:00",
+      "independent_vector": [
+        -0.12494710583127318,
+        -0.2544971640048733,
+        0.1340672493255193,
+        0.10323492975400225
+      ],
+      "independent_state": {
+        "kind": "opportunity_QB_binomial_v1",
+        "beta": [
+          -0.12494710583127318,
+          -0.2544971640048733,
+          0.1340672493255193,
+          0.10323492975400225
+        ],
+        "feature_order": [
+          "intercept",
+          "offense_ATT_per_O_logit_contrast",
+          "log_T_vs_earlier_offense_O",
+          "latest_QB_team_ATT_share_logit_change"
+        ],
+        "optimization": {
+          "success": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "iterations": 18,
+          "independent": true,
+          "retry": false
+        }
+      },
+      "independent_objective": 26211.09135761151,
+      "independent_success": true,
+      "iterations": 18,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "after_fit_resources": {
+        "CPU_seconds": 0.10478973100000011,
+        "wall_seconds": 0.1091685309947934,
+        "peak_RSS_bytes": 137281536
+      },
+      "comparison": {
+        "training_member_match": true,
+        "coefficient_max_absolute_difference": 2.7755575615628914e-16,
+        "probability_or_count_CDF_max_absolute_difference": 1.1102230246251565e-16,
+        "mean_max_absolute_difference": 1.4210854715202004e-14,
+        "scalar_batch_max_difference": 1.1102230246251565e-16,
+        "query_cases": 36,
+        "objective_difference": 0.0,
+        "objectives_at_both_persisted_vectors": [
+          {
+            "at": "native",
+            "independent_objective": 26211.09135761151,
+            "author_objective": 26211.09135761151,
+            "objective_difference": 0.0,
+            "gradient_max_difference": 8.526512829121202e-14,
+            "gradient_infinity_norm": 0.001201930920688099
+          },
+          {
+            "at": "independent",
+            "independent_objective": 26211.09135761151,
+            "author_objective": 26211.09135761151,
+            "objective_difference": 0.0,
+            "gradient_max_difference": 4.405364961712621e-13,
+            "gradient_infinity_norm": 0.0012019309208657764
+          }
+        ],
+        "tolerance_pass": true
+      }
+    }
+  ],
+  "source_bindings": {
+    "reports/information-skill-follow-through-01/B/opportunity-v1/wave-v1/training-designs/2026-W01.json.gz": {
+      "bytes": 58481,
+      "SHA256": "95dfc13f3c2adb2a78fe43dc785d62dbc516dcfd0c01d1f222c2010b5192c10a"
+    },
+    "reports/information-skill-follow-through-01/B/opportunity-v1/wave-v1/QUERY_TRACE_V1.json.gz": {
+      "bytes": 98035,
+      "SHA256": "22a1bd6ab8a0bd5dc1504916f1bd2c8bcc173a1643be8cdd72f7a7efb4695b39"
+    },
+    "reports/information-skill-follow-through-01/B/opportunity-v1/wave-v1/fits/2026-W01-team.json.gz": {
+      "bytes": 561,
+      "SHA256": "6a61bb806363acfda45cd85c7c0834ecc9bc3a789b480be8f9684fcbb006bc7c"
+    },
+    "reports/information-skill-follow-through-01/B/opportunity-v1/wave-v1/fits/2026-W01-share.json.gz": {
+      "bytes": 583,
+      "SHA256": "fd9073719ed2ce6933896cd69bdadc77884cc3cc7a35cf529793b26f195c403c"
+    }
+  },
+  "code_SHA256": {
+    "tools/reproduce_opportunity_information.py": "9ef377d46e83ad8b9bcfa28a4d0e7d452a612fa35b060fb03bcc3792af2ed844",
+    "nfl_v2/opportunity_information.py": "3d059b042aba291b13b9b8c477271e1c90cc84d8e58c1ac234057a1973096731"
+  },
+  "scope": "Exactly two2026W1 team/share GLM reproductions. No forest, oldC1, forecasts, offers, grader, tuning or source collection.",
+  "full_vector_retention": "Independent coefficient vector and typed state saved BEFORE source comparisons; failures preserved.",
+  "resources": {
+    "CPU_seconds": 0.10888493700000001,
+    "wall_seconds": 0.11327192999306135,
+    "peak_RSS_bytes": 137281536
+  },
+  "completed_UTC": "2026-11-15T21:18:14.616174+00:00",
+  "new_forecasts": 0,
+  "new_scores": 0,
+  "network_reads": 0
+}

@@ -1,0 +1,182 @@
+{
+  "id": "B_M2_EXISTING_OFFER_FEASIBILITY_v1",
+  "at_UTC": "2026-11-15T04:43:47.427724+00:00",
+  "source_HTTP_reads": 0,
+  "native_sources": [
+    {
+      "week": 5,
+      "sha256": "7ebb7e3b546147f8e7f10fa887fd295f2d72f88eb70600a22448ad29feff69fe",
+      "bytes": 3159,
+      "counts": [
+        {
+          "target": "pass_att",
+          "source": "dk",
+          "n": 28
+        },
+        {
+          "target": "pass_cmp",
+          "source": "dk",
+          "n": 28
+        }
+      ],
+      "all_half_point": true,
+      "all_explicit_qualified": true
+    },
+    {
+      "week": 6,
+      "sha256": "3f7ccc297f7e2dd63d1bdc6c1e625b6183f58b58f3551d4ce2aa8ad02416d5b5",
+      "bytes": 2924,
+      "counts": [
+        {
+          "target": "pass_att",
+          "source": "dk",
+          "n": 27
+        },
+        {
+          "target": "pass_att",
+          "source": "sleeper",
+          "n": 1
+        },
+        {
+          "target": "pass_cmp",
+          "source": "dk",
+          "n": 28
+        }
+      ],
+      "all_half_point": true,
+      "all_explicit_qualified": true
+    },
+    {
+      "week": 7,
+      "sha256": "c6b2a6dfd5a983892afcc7882fea337ad105a327972ce6c5c16300e4fb5ead43",
+      "bytes": 2752,
+      "counts": [
+        {
+          "target": "pass_att",
+          "source": "dk",
+          "n": 28
+        },
+        {
+          "target": "pass_cmp",
+          "source": "dk",
+          "n": 28
+        }
+      ],
+      "all_half_point": true,
+      "all_explicit_qualified": true
+    },
+    {
+      "week": 8,
+      "sha256": "43fc0aef34076e5d5389cb47239c9a10d68df80cd5db6973cf008b997504b2c0",
+      "bytes": 2710,
+      "counts": [
+        {
+          "target": "pass_att",
+          "source": "dk",
+          "n": 28
+        },
+        {
+          "target": "pass_cmp",
+          "source": "dk",
+          "n": 27
+        },
+        {
+          "target": "pass_cmp",
+          "source": "sleeper",
+          "n": 1
+        }
+      ],
+      "all_half_point": true,
+      "all_explicit_qualified": true
+    },
+    {
+      "week": 9,
+      "sha256": "63b131964ddc110e78ec8328f6c592f9f96f59be3e946e5a45e4de848cde76f8",
+      "bytes": 3491,
+      "counts": [
+        {
+          "target": "pass_att",
+          "source": "dk",
+          "n": 30
+        },
+        {
+          "target": "pass_cmp",
+          "source": "dk",
+          "n": 30
+        }
+      ],
+      "all_half_point": true,
+      "all_explicit_qualified": true
+    }
+  ],
+  "native_counts": {
+    "pass_cmp": 142,
+    "pass_att": 142,
+    "weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "unique_games": 71,
+    "CMP_DK": 141,
+    "CMP_Sleeper_week8": 1,
+    "ATT_DK": 141,
+    "ATT_Sleeper_week6": 1
+  },
+  "tier": "TIER_B_RETAINED_REAL_SOURCE_LABELLED_LINES_CURRENT_VINTAGE_CHRONOLOGICAL_DIAGNOSTIC;QUOTE_CLOCK_UNKNOWN;MAIN_ALT_UNCLASSIFIED;NOT_ORIGINAL_ISSUANCE",
+  "early_inventory_checks": [
+    {
+      "source": "Previously received A RECOVERED_ANNUAL_NAMED_NJ_V1.csv",
+      "sha256": "60b95ea3230d4020d091745ce94cd4fa40945e8eb035c2c77558a812a1e4a723",
+      "rows": 104,
+      "columns": [
+        "period",
+        "view",
+        "week",
+        "method",
+        "eligible",
+        "selected",
+        "unavailable",
+        "over_w",
+        "over_l",
+        "over_n",
+        "under_w",
+        "under_l",
+        "under_n",
+        "total_w",
+        "total_l",
+        "total_n",
+        "MAE",
+        "MSE",
+        "bias",
+        "games",
+        "player_games",
+        "unknown",
+        "abstained",
+        "actual_offer_weeks",
+        "five_week_duration"
+      ],
+      "state": "AGGREGATES_ONLY_NOT_OFFER_VECTORS"
+    },
+    {
+      "source": "Existing PREDICTIONS_ACTUALS_LINES_AND_DIRECTIONS recovery metadata",
+      "state": "EMPTY_RESULTS"
+    },
+    {
+      "source": "A84 public commitments and completed B0/B1/B2 owner-local result",
+      "state": "AVAILABLE_FOR_EXISTING_PROCEDURES_ONLY;NOT_RAW_A84_ROWS"
+    }
+  ],
+  "M2_W1_W4_direction": {
+    "state": "OWNER_LOCAL_JOIN_REQUIRED",
+    "executor": "A existing protected completion-board executor",
+    "artifact": "New M2 prediction rows/complete-law recipe on earlier identities, joined to existing A84 completion offers under unchanged contract",
+    "minimum_action": "A reuses its existing owner-local adapter and scores NEW exact M2 procedure; do not rerun prior84offerB0/B1/B2join or reuse its grades for M2.",
+    "available_earlier_offers_in_B_inspected_scope": false
+  },
+  "scope": "New M2 forecasts must earn their own scores. Existing nine-week B2 122/226 remains prior evidence; current native142 is the independently executable actual-line panel. All nine weeks will be explicit, with early gaps preserved.",
+  "source_paths_public": false,
+  "private_rows_exported": false
+}

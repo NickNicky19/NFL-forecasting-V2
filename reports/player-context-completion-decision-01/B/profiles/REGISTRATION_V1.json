@@ -1,0 +1,32 @@
+{
+  "registration_id": "B-QB-ASOF-PROFILES-v1",
+  "registered_at_utc": "2026-11-10T04:46:42.652885+00:00",
+  "state": "REGISTERED_BEFORE_PROFILE_GENERATION",
+  "owner": "B",
+  "purpose": "Reusable profiles from the existing accepted ContextHistory; no new predictive mechanism or fitted model.",
+  "historical_universe": "All941 retained official QB-stat query rows from2025 full REG and2026 W1-8; conditional reconstruction, not authenticated pregame roster. No player omitted for sparse history.",
+  "source": {
+    "path": "reports/player-context-matchup-01/B/source-fields-v3/DERIVED_QB_GAME_INPUTS.json.gz",
+    "sha256": "f23bb72f05f398c7108700e10fa7bf63e233aca57bc67eb6820a38c9f212af90"
+  },
+  "history": {
+    "feature_memory": "Earlier eligible2022+ source rows",
+    "own_window": 8,
+    "completion_strength": 20.0,
+    "mix_strength": 20.0,
+    "opponent_window": 16,
+    "source_availability": "strict kickoff+7day reconstruction <querycutoff; original historical publication not authenticated"
+  },
+  "budget": {
+    "max_profiles": 2000,
+    "wall_seconds": 240,
+    "cpu_seconds": 180,
+    "max_RSS_bytes": 1073741824,
+    "max_public_bytes": 16777216,
+    "new_fits": 0,
+    "new_scores": 0,
+    "new_source_downloads": 0,
+    "new_private_rows": 0
+  },
+  "future_adapter": "Supplied explicit pregame query universe and identity/team/evidence clock contract; never infers membership from future game-stat rows. Actual current query source not supplied in this task."
+}

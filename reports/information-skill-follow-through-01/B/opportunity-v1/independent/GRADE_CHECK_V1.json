@@ -1,0 +1,1064 @@
+{
+  "id": "B_OPPORTUNITY_INDEPENDENT_NATIVE_GRADES_v1",
+  "at_UTC": "2026-11-15T21:22:06.904023+00:00",
+  "status": "PASS_IN_CHECKED_SCOPE",
+  "checks": 30384,
+  "problems": [],
+  "exception": null,
+  "details": {
+    "independently_recomputed_main_views": 144,
+    "public_main_rows": 372,
+    "public_selective_arithmetic_rows": 1140,
+    "maximum_typed_mean_difference": 1.2008172234345693e-12,
+    "actual_line_weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "eligible_per_target": 142,
+    "unique_player_games": 142,
+    "unique_games": 71,
+    "own_full_board": [
+      {
+        "target": "pass_att",
+        "method": "OPP_BASE",
+        "policy": "MEAN",
+        "OVER": {
+          "wins": 4,
+          "losses": 9,
+          "decided": 13,
+          "selected": 13,
+          "rate": 0.3076923076923077
+        },
+        "UNDER": {
+          "wins": 66,
+          "losses": 63,
+          "decided": 129,
+          "selected": 129,
+          "rate": 0.5116279069767442
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.2738218657344712,
+          "log_loss": 0.7469211632732577
+        }
+      },
+      {
+        "target": "pass_att",
+        "method": "OPP_BASE",
+        "policy": "MEDIAN",
+        "OVER": {
+          "wins": 2,
+          "losses": 6,
+          "decided": 8,
+          "selected": 8,
+          "rate": 0.25
+        },
+        "UNDER": {
+          "wins": 69,
+          "losses": 65,
+          "decided": 134,
+          "selected": 134,
+          "rate": 0.5149253731343284
+        },
+        "COMBINED": {
+          "wins": 71,
+          "losses": 71,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.5
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.2738218657344712,
+          "log_loss": 0.7469211632732577
+        }
+      },
+      {
+        "target": "pass_att",
+        "method": "OPP_BASE",
+        "policy": "LAW",
+        "OVER": {
+          "wins": 2,
+          "losses": 6,
+          "decided": 8,
+          "selected": 8,
+          "rate": 0.25
+        },
+        "UNDER": {
+          "wins": 69,
+          "losses": 65,
+          "decided": 134,
+          "selected": 134,
+          "rate": 0.5149253731343284
+        },
+        "COMBINED": {
+          "wins": 71,
+          "losses": 71,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.5
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.2738218657344712,
+          "log_loss": 0.7469211632732577
+        }
+      },
+      {
+        "target": "pass_att",
+        "method": "OPP_MEAN",
+        "policy": "MEAN",
+        "OVER": {
+          "wins": 13,
+          "losses": 15,
+          "decided": 28,
+          "selected": 28,
+          "rate": 0.4642857142857143
+        },
+        "UNDER": {
+          "wins": 60,
+          "losses": 54,
+          "decided": 114,
+          "selected": 114,
+          "rate": 0.5263157894736842
+        },
+        "COMBINED": {
+          "wins": 73,
+          "losses": 69,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.5140845070422535
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.274833997849507,
+          "log_loss": 0.756254786326943
+        }
+      },
+      {
+        "target": "pass_att",
+        "method": "OPP_MEAN",
+        "policy": "MEDIAN",
+        "OVER": {
+          "wins": 3,
+          "losses": 5,
+          "decided": 8,
+          "selected": 8,
+          "rate": 0.375
+        },
+        "UNDER": {
+          "wins": 70,
+          "losses": 64,
+          "decided": 134,
+          "selected": 134,
+          "rate": 0.5223880597014925
+        },
+        "COMBINED": {
+          "wins": 73,
+          "losses": 69,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.5140845070422535
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.274833997849507,
+          "log_loss": 0.756254786326943
+        }
+      },
+      {
+        "target": "pass_att",
+        "method": "OPP_MEAN",
+        "policy": "LAW",
+        "OVER": {
+          "wins": 3,
+          "losses": 5,
+          "decided": 8,
+          "selected": 8,
+          "rate": 0.375
+        },
+        "UNDER": {
+          "wins": 70,
+          "losses": 64,
+          "decided": 134,
+          "selected": 134,
+          "rate": 0.5223880597014925
+        },
+        "COMBINED": {
+          "wins": 73,
+          "losses": 69,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.5140845070422535
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.274833997849507,
+          "log_loss": 0.756254786326943
+        }
+      },
+      {
+        "target": "pass_att",
+        "method": "OPP_JOINT",
+        "policy": "MEAN",
+        "OVER": {
+          "wins": 13,
+          "losses": 15,
+          "decided": 28,
+          "selected": 28,
+          "rate": 0.4642857142857143
+        },
+        "UNDER": {
+          "wins": 60,
+          "losses": 54,
+          "decided": 114,
+          "selected": 114,
+          "rate": 0.5263157894736842
+        },
+        "COMBINED": {
+          "wins": 73,
+          "losses": 69,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.5140845070422535
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.2973518200411055,
+          "log_loss": 0.912270499395408
+        }
+      },
+      {
+        "target": "pass_att",
+        "method": "OPP_JOINT",
+        "policy": "MEDIAN",
+        "OVER": {
+          "wins": 10,
+          "losses": 13,
+          "decided": 23,
+          "selected": 23,
+          "rate": 0.43478260869565216
+        },
+        "UNDER": {
+          "wins": 62,
+          "losses": 57,
+          "decided": 119,
+          "selected": 119,
+          "rate": 0.5210084033613446
+        },
+        "COMBINED": {
+          "wins": 72,
+          "losses": 70,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.5070422535211268
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.2973518200411055,
+          "log_loss": 0.912270499395408
+        }
+      },
+      {
+        "target": "pass_att",
+        "method": "OPP_JOINT",
+        "policy": "LAW",
+        "OVER": {
+          "wins": 10,
+          "losses": 13,
+          "decided": 23,
+          "selected": 23,
+          "rate": 0.43478260869565216
+        },
+        "UNDER": {
+          "wins": 62,
+          "losses": 57,
+          "decided": 119,
+          "selected": 119,
+          "rate": 0.5210084033613446
+        },
+        "COMBINED": {
+          "wins": 72,
+          "losses": 70,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.5070422535211268
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.2973518200411055,
+          "log_loss": 0.912270499395408
+        }
+      },
+      {
+        "target": "pass_att",
+        "method": "DIRECT_ATT",
+        "policy": "MEAN",
+        "OVER": {
+          "wins": 6,
+          "losses": 11,
+          "decided": 17,
+          "selected": 17,
+          "rate": 0.35294117647058826
+        },
+        "UNDER": {
+          "wins": 64,
+          "losses": 61,
+          "decided": 125,
+          "selected": 125,
+          "rate": 0.512
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.26585163406952883,
+          "log_loss": 0.7291361228668218
+        }
+      },
+      {
+        "target": "pass_att",
+        "method": "DIRECT_ATT",
+        "policy": "MEDIAN",
+        "OVER": {
+          "wins": 7,
+          "losses": 12,
+          "decided": 19,
+          "selected": 19,
+          "rate": 0.3684210526315789
+        },
+        "UNDER": {
+          "wins": 63,
+          "losses": 60,
+          "decided": 123,
+          "selected": 123,
+          "rate": 0.5121951219512195
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.26585163406952883,
+          "log_loss": 0.7291361228668218
+        }
+      },
+      {
+        "target": "pass_att",
+        "method": "DIRECT_ATT",
+        "policy": "LAW",
+        "OVER": {
+          "wins": 7,
+          "losses": 12,
+          "decided": 19,
+          "selected": 19,
+          "rate": 0.3684210526315789
+        },
+        "UNDER": {
+          "wins": 63,
+          "losses": 60,
+          "decided": 123,
+          "selected": 123,
+          "rate": 0.5121951219512195
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.26585163406952883,
+          "log_loss": 0.7291361228668218
+        }
+      },
+      {
+        "target": "pass_cmp",
+        "method": "OPP_BASE",
+        "policy": "MEAN",
+        "OVER": {
+          "wins": 10,
+          "losses": 9,
+          "decided": 19,
+          "selected": 19,
+          "rate": 0.5263157894736842
+        },
+        "UNDER": {
+          "wins": 62,
+          "losses": 61,
+          "decided": 123,
+          "selected": 123,
+          "rate": 0.5040650406504065
+        },
+        "COMBINED": {
+          "wins": 72,
+          "losses": 70,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.5070422535211268
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.28035375399482565,
+          "log_loss": 0.7604173212730714
+        }
+      },
+      {
+        "target": "pass_cmp",
+        "method": "OPP_BASE",
+        "policy": "MEDIAN",
+        "OVER": {
+          "wins": 6,
+          "losses": 7,
+          "decided": 13,
+          "selected": 13,
+          "rate": 0.46153846153846156
+        },
+        "UNDER": {
+          "wins": 64,
+          "losses": 65,
+          "decided": 129,
+          "selected": 129,
+          "rate": 0.49612403100775193
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.28035375399482565,
+          "log_loss": 0.7604173212730714
+        }
+      },
+      {
+        "target": "pass_cmp",
+        "method": "OPP_BASE",
+        "policy": "LAW",
+        "OVER": {
+          "wins": 6,
+          "losses": 7,
+          "decided": 13,
+          "selected": 13,
+          "rate": 0.46153846153846156
+        },
+        "UNDER": {
+          "wins": 64,
+          "losses": 65,
+          "decided": 129,
+          "selected": 129,
+          "rate": 0.49612403100775193
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.28035375399482565,
+          "log_loss": 0.7604173212730714
+        }
+      },
+      {
+        "target": "pass_cmp",
+        "method": "OPP_MEAN",
+        "policy": "MEAN",
+        "OVER": {
+          "wins": 17,
+          "losses": 20,
+          "decided": 37,
+          "selected": 37,
+          "rate": 0.4594594594594595
+        },
+        "UNDER": {
+          "wins": 51,
+          "losses": 54,
+          "decided": 105,
+          "selected": 105,
+          "rate": 0.4857142857142857
+        },
+        "COMBINED": {
+          "wins": 68,
+          "losses": 74,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.4788732394366197
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.2870696060987588,
+          "log_loss": 0.7891135311337267
+        }
+      },
+      {
+        "target": "pass_cmp",
+        "method": "OPP_MEAN",
+        "policy": "MEDIAN",
+        "OVER": {
+          "wins": 9,
+          "losses": 11,
+          "decided": 20,
+          "selected": 20,
+          "rate": 0.45
+        },
+        "UNDER": {
+          "wins": 60,
+          "losses": 62,
+          "decided": 122,
+          "selected": 122,
+          "rate": 0.4918032786885246
+        },
+        "COMBINED": {
+          "wins": 69,
+          "losses": 73,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.4859154929577465
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.2870696060987588,
+          "log_loss": 0.7891135311337267
+        }
+      },
+      {
+        "target": "pass_cmp",
+        "method": "OPP_MEAN",
+        "policy": "LAW",
+        "OVER": {
+          "wins": 9,
+          "losses": 11,
+          "decided": 20,
+          "selected": 20,
+          "rate": 0.45
+        },
+        "UNDER": {
+          "wins": 60,
+          "losses": 62,
+          "decided": 122,
+          "selected": 122,
+          "rate": 0.4918032786885246
+        },
+        "COMBINED": {
+          "wins": 69,
+          "losses": 73,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.4859154929577465
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.2870696060987588,
+          "log_loss": 0.7891135311337267
+        }
+      },
+      {
+        "target": "pass_cmp",
+        "method": "OPP_JOINT",
+        "policy": "MEAN",
+        "OVER": {
+          "wins": 17,
+          "losses": 20,
+          "decided": 37,
+          "selected": 37,
+          "rate": 0.4594594594594595
+        },
+        "UNDER": {
+          "wins": 51,
+          "losses": 54,
+          "decided": 105,
+          "selected": 105,
+          "rate": 0.4857142857142857
+        },
+        "COMBINED": {
+          "wins": 68,
+          "losses": 74,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.4788732394366197
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.3050478453460736,
+          "log_loss": 0.9126720672211515
+        }
+      },
+      {
+        "target": "pass_cmp",
+        "method": "OPP_JOINT",
+        "policy": "MEDIAN",
+        "OVER": {
+          "wins": 16,
+          "losses": 15,
+          "decided": 31,
+          "selected": 31,
+          "rate": 0.5161290322580645
+        },
+        "UNDER": {
+          "wins": 56,
+          "losses": 55,
+          "decided": 111,
+          "selected": 111,
+          "rate": 0.5045045045045045
+        },
+        "COMBINED": {
+          "wins": 72,
+          "losses": 70,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.5070422535211268
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.3050478453460736,
+          "log_loss": 0.9126720672211515
+        }
+      },
+      {
+        "target": "pass_cmp",
+        "method": "OPP_JOINT",
+        "policy": "LAW",
+        "OVER": {
+          "wins": 16,
+          "losses": 15,
+          "decided": 31,
+          "selected": 31,
+          "rate": 0.5161290322580645
+        },
+        "UNDER": {
+          "wins": 56,
+          "losses": 55,
+          "decided": 111,
+          "selected": 111,
+          "rate": 0.5045045045045045
+        },
+        "COMBINED": {
+          "wins": 72,
+          "losses": 70,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.5070422535211268
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.3050478453460736,
+          "log_loss": 0.9126720672211515
+        }
+      },
+      {
+        "target": "pass_cmp",
+        "method": "DIRECT_ATT",
+        "policy": "MEAN",
+        "OVER": {
+          "wins": 16,
+          "losses": 16,
+          "decided": 32,
+          "selected": 32,
+          "rate": 0.5
+        },
+        "UNDER": {
+          "wins": 55,
+          "losses": 55,
+          "decided": 110,
+          "selected": 110,
+          "rate": 0.5
+        },
+        "COMBINED": {
+          "wins": 71,
+          "losses": 71,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.5
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.27416593783387216,
+          "log_loss": 0.7475358714306407
+        }
+      },
+      {
+        "target": "pass_cmp",
+        "method": "DIRECT_ATT",
+        "policy": "MEDIAN",
+        "OVER": {
+          "wins": 15,
+          "losses": 14,
+          "decided": 29,
+          "selected": 29,
+          "rate": 0.5172413793103449
+        },
+        "UNDER": {
+          "wins": 57,
+          "losses": 56,
+          "decided": 113,
+          "selected": 113,
+          "rate": 0.504424778761062
+        },
+        "COMBINED": {
+          "wins": 72,
+          "losses": 70,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.5070422535211268
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.27416593783387216,
+          "log_loss": 0.7475358714306407
+        }
+      },
+      {
+        "target": "pass_cmp",
+        "method": "DIRECT_ATT",
+        "policy": "LAW",
+        "OVER": {
+          "wins": 15,
+          "losses": 14,
+          "decided": 29,
+          "selected": 29,
+          "rate": 0.5172413793103449
+        },
+        "UNDER": {
+          "wins": 57,
+          "losses": 56,
+          "decided": 113,
+          "selected": 113,
+          "rate": 0.504424778761062
+        },
+        "COMBINED": {
+          "wins": 72,
+          "losses": 70,
+          "decided": 142,
+          "selected": 142,
+          "rate": 0.5070422535211268
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "selected": 142,
+        "decided": 142,
+        "unknown": 0,
+        "abstentions": 0,
+        "games": 71,
+        "fallback_selected": 1,
+        "probability": {
+          "events": 142,
+          "strict_binary_Over_Brier": 0.27416593783387216,
+          "log_loss": 0.7475358714306407
+        }
+      }
+    ],
+    "proper_score_contract": "Independent binary exact halfpoint Over Brier/log loss, conditional qualified played statistical counts; not venue settlement or EV.",
+    "independence": "Direct threshold comparisons and SciPy NB/explicit team-T binomial mixture/empirical-geometric thinning. No author law restore/CDF, C status, C summary, common scorer, selector or optimizer called."
+  },
+  "bindings": {
+    "pass_att_reference": {
+      "sha256": "2c04424306c41547ebadf8104b2ceac64dbc36fb4a76c71fd21e77a2db6ffa16",
+      "bytes": 41673,
+      "reference_model": "COMMON_EXPOSURE",
+      "policy": "P1_MEAN",
+      "private_locator_exported": false
+    },
+    "pass_cmp_reference": {
+      "sha256": "dbdbf73a23fea1d7d8c90fde666163853f492b0e9686ae068b829b2bc2816a39",
+      "bytes": 259194,
+      "reference_model": "B0",
+      "policy": "P1_MEAN",
+      "private_locator_exported": false
+    },
+    "prediction_files": [
+      {
+        "file": "2026-W01.json.gz",
+        "sha256": "e737888d6383c4a6a0611d3f7a09f73c37d174d0a6cffd30495b83c353c95b5d"
+      },
+      {
+        "file": "2026-W02.json.gz",
+        "sha256": "9e52942dc973cba263259b6c9ad902207c62493b86b9e2f174c8affa213be590"
+      },
+      {
+        "file": "2026-W03.json.gz",
+        "sha256": "7e1887cda6a9258d9be366185cfc69b1f9fdce75276ecbd36fde13aa387a3a0b"
+      },
+      {
+        "file": "2026-W04.json.gz",
+        "sha256": "74f9405d49de1ce45b5dff830df8dccd64fdba60afbb71cfa2df774e496f348f"
+      },
+      {
+        "file": "2026-W05.json.gz",
+        "sha256": "80c19bf59d71df7a788ad635315b250fe623a3aadbc72c67d4eaba7f2b770b43"
+      },
+      {
+        "file": "2026-W06.json.gz",
+        "sha256": "02a8d7d34975513ac7f2b7642d29e83a76cc821f8f03a2e243377b35c085f17b"
+      },
+      {
+        "file": "2026-W07.json.gz",
+        "sha256": "560506ee663582c842d3c92e090b7a2b71dcaa4fe5c29c89225ab83a2d798d64"
+      },
+      {
+        "file": "2026-W08.json.gz",
+        "sha256": "0d4fe3631547c21874f823feddd87bd2f3f1e889db0d52c07cff86030180bfa5"
+      },
+      {
+        "file": "2026-W09.json.gz",
+        "sha256": "dff8c109eadd12f042df2cbbda6bfbe556056c53a80d8b5d71a63aae71d04757"
+      }
+    ],
+    "main_tables": {
+      "path": "reports/information-skill-follow-through-01/B/opportunity-v1/evaluation-v1/MAIN_TABLES_V1.json.gz",
+      "sha256": "407d6c5e298415f21de79b21312f7cf9876ed5a0c02eed41a98f79429a4d6867"
+    }
+  },
+  "verifier_sha256": "e8788fa6a4a8754271994d93ebde227b1238b3fbbc7cc57573a5e41236ade3b7",
+  "resources": {
+    "CPU_seconds": 1.066138578,
+    "wall_seconds": 1.0679143809975358,
+    "CPU_cap_seconds": 25,
+    "new_fits": 0,
+    "source_collection": 0,
+    "new_scientific_grading_runs": 0,
+    "independent_verification_of_frozen_rows": true,
+    "protected_rows_written": 0,
+    "peak_RSS_bytes": 141328384
+  },
+  "limits": [
+    "Approved reference rows and public aggregates do not authenticate original quote clocks, historical source vintages or a full pregame roster.",
+    "Frozen-output verification is distinct from fit reproduction. Preserve the team-model independent strict failure and share-model pass separately.",
+    "Selected-policy records receive public aggregate arithmetic only here; no independent selective membership or website-policy qualification is implied.",
+    "No private rows/locators, new source feed, current forecast, C admission or deployment exported."
+  ]
+}

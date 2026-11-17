@@ -1,0 +1,40 @@
+{
+  "state": "VERIFIED_FROM_CODE_NOT_OLD_RESULT_REPRODUCTION",
+  "sources": [
+    {
+      "source_id": "UPSTREAM-6369211c6e63237d4e57329955a1a412881f2d57",
+      "repository": "https://github.com/NickNicky19/NFL-forecasting",
+      "commit": "dab293cb7577c66e33abd29b263ea05abf99a274",
+      "path": "nfl_lab/cdf_engine.py",
+      "git_blob_sha1": "6369211c6e63237d4e57329955a1a412881f2d57",
+      "sha256": "6a963111f4173a88affe90ca1ce17532cd5eb690a1f28b284e9fa4145eecb214",
+      "pinned_preparation_git_tree_entry": "100644 blob 6369211c6e63237d4e57329955a1a412881f2d57\tnfl_lab/cdf_engine.py",
+      "source_link": "https://github.com/NickNicky19/NFL-forecasting/blob/dab293cb7577c66e33abd29b263ea05abf99a274/nfl_lab/cdf_engine.py"
+    },
+    {
+      "source_id": "UPSTREAM-94fde122be5d71a856a3897e92977a00cd8d5690",
+      "repository": "https://github.com/NickNicky19/NFL-forecasting",
+      "commit": "dab293cb7577c66e33abd29b263ea05abf99a274",
+      "path": "nfl_lab/ordered_recent_v1.py",
+      "git_blob_sha1": "94fde122be5d71a856a3897e92977a00cd8d5690",
+      "sha256": "d7266d47462865d832079bde1a5ff757e217c6c6297e76028398a97100ef3d0e",
+      "pinned_preparation_git_tree_entry": "100644 blob 94fde122be5d71a856a3897e92977a00cd8d5690\tnfl_lab/ordered_recent_v1.py",
+      "source_link": "https://github.com/NickNicky19/NFL-forecasting/blob/dab293cb7577c66e33abd29b263ea05abf99a274/nfl_lab/ordered_recent_v1.py"
+    },
+    {
+      "source_id": "UPSTREAM-fa86db96415e3a440643cd09af44f8dccc3cfdee",
+      "repository": "https://github.com/NickNicky19/NFL-forecasting",
+      "commit": "dab293cb7577c66e33abd29b263ea05abf99a274",
+      "path": "nfl_lab/role_boosting.py",
+      "git_blob_sha1": "fa86db96415e3a440643cd09af44f8dccc3cfdee",
+      "sha256": "294e7e588215e7b7e98d6f1fb251eed31420921dff9a59e88434913133dbdf93",
+      "pinned_preparation_git_tree_entry": "100644 blob fa86db96415e3a440643cd09af44f8dccc3cfdee\tnfl_lab/role_boosting.py",
+      "source_link": "https://github.com/NickNicky19/NFL-forecasting/blob/dab293cb7577c66e33abd29b263ea05abf99a274/nfl_lab/role_boosting.py"
+    }
+  ],
+  "leaf_formula": "32 ExtraTrees squared_error/depth8/minleaf30; equal tree empirical leaf PMF;95percent empirical+5percent role support prior; full signed integer law",
+  "ordered_formula": "legacy ordered information group is4 game slots availability<cutoff AND kickoff<cutoff, unknown/DNPpreserved; original onlyrushatt/receptions plus receivingtargets. New version uses generic own-target ordered4features for11targets and does NOT claim exact legacyfeature reproduction.",
+  "count_A_formula": "corrected CountA pools Poisson objective HGB for6counts; signed/binary alias oldbase HGB; allzero count nooptimizer, full earlier prior computed before partitions. Source explicitly denies numeric count law. Queued exact-source pointcontrol is not counted as a new distribution family here.",
+  "new_glm_formula": "OriginalV2 L2 parametric Poisson/count, discreteLaplace signed and Bernoulli binary law; not an alias or authenticity claim for legacyCountA",
+  "rights": "No explicit upstream repositorycodeLICENSE found in inspected root. This wave is independently written mathematical implementation and imports only originalV2helpers. Source attribution retained; no upstream module vendored. NFLverse basicstatistics admitted underCCBY4.0 as separately qualified; inheritedrestrictedfeeds remainexcluded."
+}

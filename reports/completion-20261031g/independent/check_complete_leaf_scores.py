@@ -1,0 +1,89 @@
+"""Read-only, separately calculated checks of complete retained-leaf threshold products."""
+import argparse,collections,gzip,hashlib,importlib.util,json,math
+from decimal import Decimal
+from pathlib import Path
+sp=importlib.util.spec_from_file_location('prior',Path(__file__).with_name('check_w7_methods.py'));prior=importlib.util.module_from_spec(sp);sp.loader.exec_module(prior)
+read,zipped,sha,canon,close,member=prior.read,prior.zipped,prior.sha,prior.canon,prior.close,prior.member
+
+def cdf(p,k):
+ if p['kind']!='mixture':return prior.cdf(p,k)
+ assert len(p['support'])==len(p['weights'])
+ return (1-p['mixture'])*math.fsum(w for x,w in zip(p['support'],p['weights'])if x<=k)+p['mixture']*cdf(p['prior'],k)
+def probs(p,l):
+ l=Decimal(str(l));k=math.floor(l);f=cdf(p,k);u=cdf(p,k-1)if l==k else f
+ pp=dict(over=1-f,under=u,push=f-u if l==k else 0.)
+ assert min(pp.values())>=-1e-12 and max(pp.values())<=1+1e-12
+ pp={k:max(0.,min(1.,v))for k,v in pp.items()};z=sum(pp.values());return{k:v/z for k,v in pp.items()}
+def state(r):
+ if r['selected_side']is None:return'ABSTAIN'
+ if r['participation']!='VERIFIED_PLAYED_POSITIVE_PHYSICAL':return'UNKNOWN_PARTICIPATION'
+ if r['actual']is None:return'MISSING_ACTUAL'
+ y,L=Decimal(str(r['actual'])),Decimal(str(r['line']))
+ return'PUSH'if y==L else'WIN'if(y>L if r['selected_side']=='over'else y<L)else'LOSS'
+def metrics(vals):
+ n=len(vals);return(n,math.fsum(x[0]for x in vals)/n if n else None,'Infinity'if any(x[1]=='Infinity'for x in vals)else math.fsum(x[1]for x in vals)/n if n else None,sum(x[1]=='Infinity'for x in vals))
+def main():
+ ap=argparse.ArgumentParser();ap.add_argument('--root',type=Path,required=True);ap.add_argument('--private',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);a=ap.parse_args();summaries=[]
+ for name,parent in [('fixed-w7-complete-leaf-law-v1','w7-method-comparison-v2'),('w6-complete-leaf-law-v1','w6-rolling-method-comparison-v1'),('w7-complete-leaf-law-v1','w7-rolling-method-comparison-v1')]:
+  pub=a.root/'reports/completion-20261031g/roster'/name;priv=a.private/('completion-20261031g-'+name);oldpriv=a.private/('completion-20261031g-'+parent);oldpub=pub.parent/parent;p=read(pub/'FROZEN_PROTOCOL.json');run=read(pub/'RUN_RECEIPT.json');freeze=read(pub/'SELECTION_FREEZE_RECEIPT.json');assert sha(pub/'SCORES.json')==run['score_sha256'];assert sha(oldpub/'SCORES.json')==p['parent_main_scores_sha256'];assert sha(oldpriv/'GRADED_METHOD_ROWS.json.gz')==p['parent_grade_sha256'];assert sha(priv/'FROZEN_LAW_DIRECTIONS_K.json.gz')==freeze['sha256']
+  old=zipped(oldpriv/'FROZEN_SELECTIONS_AND_K.json.gz');oldg=zipped(oldpriv/'GRADED_METHOD_ROWS.json.gz')['graded'];f=zipped(priv/'FROZEN_LAW_DIRECTIONS_K.json.gz');g=zipped(priv/'GRADED_COMPLETE_LEAF_LAWS.json.gz');plans=f['plans'];gg=g['graded'];assert set(plans)==set(gg)
+  augfile=a.private/'completion-20261031g-law-recovery-v1'/p['augmentation_member'];assert sha(augfile)==p['augmentation_sha256'];aug=zipped(augfile);by={((r['target'],r['procedure_id'],r['history_regime']),r['source_row_index']):r for r in aug['rows']};fallback={};masks={};base={}
+  for tag,pl in old['plans'].items():
+   for r in oldg[tag]:base[r['source_row_index']]=r
+   t,proc,h,product=pl['recipe'];key=t,proc,h
+   if 'ordered_leaf_cdf'not in proc and 'c02'not in proc:continue
+   if pl['rule']=='P1':
+    ids={r['source_row_index']for r in pl['rows']if r['admitted']}
+    if key in masks:assert masks[key]==ids
+    masks[key]=ids
+   else:
+    for r in pl['rows']:
+     if r['admitted']:fallback[key,r['source_row_index']]=r['probabilities']
+  losses={};kmap={};counts=collections.Counter();realexamples={};law_rows=0
+  for tag,pl in plans.items():
+   key=tuple(pl['recipe']);assert len(pl['rows'])==len(gg[tag]);admitted={r['source_row_index']for r in pl['rows']if r['admitted']};assert admitted==masks[key]
+   for z,r in zip(pl['rows'],gg[tag]):
+    idx=z['source_row_index'];b=base[idx];assert r['source_row_index']==idx
+    for field in ('game_id','player_id','target','population','position','line','actual','participation'):assert r[field]==b[field]
+    assert z['admitted']==r['admitted']==(idx in admitted)
+    if idx in admitted:
+     source=by.get((key,idx));pp=probs(source['params'],b['line'])if source else fallback[key,idx]
+     if source:
+      assert(source['game_id'],source['player_id'],source['position'],source['population'])==(r['game_id'],r['player_id'],r['position'],r['population']);assert Decimal(str(source['line']))==Decimal(str(r['line']))
+     for s,v in pp.items():close(v,z['probabilities'][s]);close(v,r['probabilities'][s])
+     close(sum(pp.values()),1.);side='over'if pp['over']>pp['under']else'under'if pp['under']>pp['over']else None;rank=max(pp['over'],pp['under']);law_rows+=1
+    else:pp=None;side=rank=None
+    assert z['selected_side']==r['selected_side']==side;close(z['rank'],rank);close(r['rank'],rank);assert r['statistical_state']==state(r);counts[state(r)]+=1
+    if state(r)in('WIN','LOSS','PUSH'):realexamples.setdefault(state(r),dict(source_safe_id=hashlib.sha256(canon([p['panel'],idx])).hexdigest(),method_id=tag,target=r['target'],selected_side=side,actual_vs_line='greater'if Decimal(str(r['actual']))>Decimal(str(r['line']))else'less'if Decimal(str(r['actual']))<Decimal(str(r['line']))else'equal'))
+    if pp and r['actual']is not None and r['participation']=='VERIFIED_PLAYED_POSITIVE_PHYSICAL':
+     cls='over'if Decimal(str(r['actual']))>Decimal(str(r['line']))else'under'if Decimal(str(r['actual']))<Decimal(str(r['line']))else'push';losses[tag,idx]=(.5*math.fsum((pp[s]-int(s==cls))**2 for s in pp),-math.log(pp[cls])if pp[cls]>0 else'Infinity')
+  assert len(losses)==len(g['proper_losses'])==run['allqualified_law_and_actual_rows']
+  for r in g['proper_losses']:v=losses[r['method_id'],r['source_row_index']];close(r['brier'],v[0]);close(r['log_loss'],v[1])
+  for k in f['Kplans']:
+   rr=[r for r in plans[k['method_id']]['rows']if r['selected_side']and(k['scope']=='Combined'or r['selected_side']==k['scope'])];assert len(rr)==k['eligible'];chosen=[]
+   for clock in sorted({r['decision_time']for r in rr})if p['rolling']else[None]:
+    batch=[r for r in rr if not p['rolling']or r['decision_time']==clock];chosen.extend(sorted(batch,key=lambda r:(-r['rank'],r['source_row_index']))[:max(0,k['K']-len(chosen))])
+   assert k['source_indices']==[r['source_row_index']for r in chosen];kmap[k['method_id'],k['K'],k['scope']]=set(k['source_indices'])
+  for link in f['controls']:
+   assert sorted(masks[tuple(plans[link['method_id']]['recipe'])])==old['controls'][link['control_id']]['admitted_ids']
+  files=[pub/'SCORES.json']
+  for s in read(pub/'SUPPLEMENTAL_SCORE_ARTIFACTS.json'):
+   file=a.root/s['path'];assert sha(file)==s['sha256'];files.append(file)
+  views=0;triplets=collections.defaultdict(dict);nprob=0
+  for file in files:
+   for r in read(file):
+    views+=1
+    if r['record_kind']=='prop_threshold_probability_evaluation':
+     tag=r['record_id'].removeprefix('LEAF-PROB-');v=metrics([v for (t,i),v in losses.items()if t==tag]);assert r['n']==v[0];close(r['brier'],v[1]);close(r['log_loss'],v[2]);assert r['infinite_log_losses']==v[3];nprob+=1;continue
+    pool=gg[r['method_id']]
+    if r['K']is None:pool=[v for v in pool if member(v,r['cohort_id'])];chosen=[v for v in pool if v['selected_side']]
+    else:ids=kmap[r['method_id'],r['K'],r['rank_scope']];chosen=[v for v in pool if v['source_row_index']in ids]
+    rr=[v for v in chosen if r['side']=='Combined'or v['selected_side']==r['side']];ct=collections.Counter(v['statistical_state']for v in rr);m=r['selection_metrics'];n=ct['WIN']+ct['LOSS'];assert(r['forecast_rows'],r['n'],m['WIN'],m['LOSS'],m['PUSH'])==(len(rr),n,ct['WIN'],ct['LOSS'],ct['PUSH']);assert m['status_counts']=={s:ct[s]for s in m['status_counts']};close(m['hit_rate'],ct['WIN']/n if n else None);close(r['selection_loss_rate'],ct['LOSS']/n if n else None);assert m['admitted_forecast_opportunities']==sum(v['admitted']for v in pool);assert m['unavailable_forecast_opportunities']==sum(not v['admitted']for v in pool);assert m['admitted_rule_abstentions']==sum(v['admitted']and v['selected_side']is None for v in pool);denom=m['eligible_rank_pool_n'] if r['K']is not None else len(pool);close(m['selection_coverage'],len(rr)/denom if denom else None);assert r['query_membership_sha256']==hashlib.sha256(canon(sorted(v['source_row_index']for v in rr))).hexdigest()
+    vals=[losses[r['method_id'],v['source_row_index']]for v in rr if(r['method_id'],v['source_row_index'])in losses];v=metrics(vals);pm=m['probability_scores'];assert pm['n']==v[0];close(pm['brier'],v[1]);close(pm['log_loss'],v[2]);assert pm['infinite_log_losses']==v[3];assert pm['conditioning']=='MODELED_APPEARANCE'and pm['bookmaker_nonvoid_conditioning']=='UNESTABLISHED';assert all(m['returns'][k]is None for k in('ROI','drawdown','net'));triplets[r['method_id'],r['cohort_id'],r['K'],r['rank_scope']][r['side']]=[len(rr),n]+[ct[s]for s in('WIN','LOSS','PUSH','VOID','UNKNOWN_PARTICIPATION','PENDING','MISSING_ACTUAL')]
+  for t in triplets.values():assert set(t)=={'over','under','Combined'}and t['Combined']==[x+y for x,y in zip(t['over'],t['under'])]
+  assert views==run['score_views'];assert counts['WIN']and counts['LOSS'];assert len(plans)==80
+  summaries.append(dict(panel=p['panel'],score_views=views,law_products=len(plans),admitted_law_views=law_rows,proper_probability_rows=len(losses),side_triplets=len(triplets),K_lists=len(kmap),parent_hash_unchanged=True,exact_complete_law_mask_equals_parent_P1=True,grade_states=dict(counts),redacted_examples=realexamples,main_scores_sha256=sha(pub/'SCORES.json')))
+ out=dict(state='PASS_INDEPENDENT_COMPLETE_LEAF_CDF_DIRECTIONS_PROPER_SCORES_SIDE_COUNTS_K',panels=summaries,new_fits=0,new_model_inference=0,new_grades=0,scope='Every newCDF split/direction/grade/loss/score count and side partition; representative underlyinghistogram restoration checked separately. No newbootstrap recomputation here.',limitations=['Multiple overlappinglaw products/views are not independentNFLobservations.','MODELED_APPEARANCE probabilities do not authenticate bookmaker settlement or prices.','No actualstatisticalpush occurs on these offeredhalfpointpanels; integerpush/void fixtures independently checked in priorenginecontinuityreceipt.'])
+ with a.output.open('x')as f:json.dump(out,f,indent=2);f.write('\n')
+ print(json.dumps(dict(state=out['state'],panels=[{k:r[k]for k in('panel','score_views','proper_probability_rows','side_triplets','K_lists')}for r in summaries])))
+if __name__=='__main__':main()

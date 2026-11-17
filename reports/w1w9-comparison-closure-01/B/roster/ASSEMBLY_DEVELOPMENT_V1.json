@@ -1,0 +1,22 @@
+{
+  "id": "B_ROSTER_ASSEMBLY_DEVELOPMENT_v1",
+  "at_UTC": "2026-11-14T18:40:08.958499+00:00",
+  "failed_attempts": [
+    {
+      "error": "KeyError:policy",
+      "stage": "Localrosterassemblybeforeanyoutput,sourceboardrowswithoutpolicyfield",
+      "repair": "Readoptionalpolicyfieldwithget;noNFLsource/score/modelchanges"
+    }
+  ],
+  "identity_correction": {
+    "before_new_comparative_scoring": true,
+    "wrong_draft_F2_id": "B-ALIGNED-CONTEXT-FRESHNESS-v1:F2",
+    "actual_saved_prediction_id": "B-QB-ALIGNED-FRESHNESS-v1:F2",
+    "source": "Actualsaved2026prediction/protocolidentity",
+    "original_draft_sha256": "04787d6deacfb68951b6cd7730c818ccc3ffce683b21a481297ccc74f8091aed",
+    "draft_preserved": "ASSEMBLY_DRAFT1_BEFORE_ID_CORRECTION.json"
+  },
+  "HTTP_attempts": 0,
+  "new_fits": 0,
+  "new_scores": 0
+}

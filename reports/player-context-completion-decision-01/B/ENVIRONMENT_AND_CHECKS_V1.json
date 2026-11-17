@@ -1,0 +1,77 @@
+{
+  "schema_version": "B-COMPLETION-ENVIRONMENT-AND-CHECKS-v1",
+  "at_utc": "2026-11-10T05:50:57.608377+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit_learn": "1.8.0",
+    "platform": "Linux"
+  },
+  "fit_thread_policy": "threadpoolctl limits2 in both registered runners; fixedFOREST n_jobs2. No new package installation.",
+  "verification": [
+    {
+      "command": "python -m unittest discover -s tests",
+      "status": "PASS",
+      "tests": 494
+    },
+    {
+      "command": "python tools/validate_checkpoint.py",
+      "status": "PASS",
+      "JSON_files_parsed": 31346
+    },
+    {
+      "command": "python tools/check_result_index_coverage.py",
+      "status": "PASS",
+      "records": 610449,
+      "registered_artifacts": 223
+    },
+    {
+      "command": "python tools/check_analysis_index_coverage.py",
+      "status": "PASS",
+      "paired_views": 21182
+    },
+    {
+      "command": "python tools/check_prop_scoreboard_coverage.py",
+      "status": "PASS",
+      "new_original_grades": 0
+    }
+  ],
+  "independent_review": "reports/player-context-completion-decision-01/B/independent/FINAL_INDEPENDENT_RECEIPT_V1.json",
+  "fit_resources": {
+    "v1_pilot": {
+      "wall_seconds": 12.384022695998283,
+      "cpu_seconds": 13.287829696,
+      "peak_RSS_bytes": 198922240,
+      "optimizer_fits_charged": 4
+    },
+    "v2": {
+      "wall_seconds": 69.68335736200243,
+      "cpu_seconds": 110.281271627,
+      "peak_RSS_bytes": 219115520,
+      "optimizer_fits_charged": 102
+    }
+  },
+  "profile_resources": "reports/player-context-completion-decision-01/B/profiles/PROFILE_EXECUTION_RECEIPT_V1.json",
+  "scoring_resources": {
+    "state": "COMPLETE_LOCAL_NOT_C_ADMITTED",
+    "at_utc": "2026-11-10T05:07:35.856315+00:00",
+    "new_fits": 0,
+    "new_forecasts": 0,
+    "canonical_views": 1802,
+    "paired_views": 436,
+    "new_offer_weeks": 0,
+    "actual_offer_weeks": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "unique_offers": 112,
+    "unique_games": 56,
+    "new_private_row_derivative_bytes": 0,
+    "wall_seconds": 111.39379291399746,
+    "peak_RSS_bytes": 657461248
+  },
+  "retention_limits": "32MiB modelwave, separately16MiBscore projection and registeredprofile budget. All new public-safe derivatives; no new private row backlog. Raw-feed off-host recovery is not newly asserted."
+}

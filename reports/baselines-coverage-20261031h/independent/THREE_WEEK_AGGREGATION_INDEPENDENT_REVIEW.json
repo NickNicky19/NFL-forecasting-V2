@@ -1,0 +1,42 @@
+{
+  "state": "PASS_INDEPENDENT_THREE_WEEK_CACHED_LOSS_PRIMARY_P1_AND_PROPER_PAIR_AGGREGATION",
+  "protocol_sha256": "eb3a13ebc031706a2de096df027e28806bdd0ca10d49e2882445c839df3f202a",
+  "scores_sha256": "3953322da1dbca626ee660f96456d78d2afa2151e3dbf1393d4ce12a5e632717",
+  "source_recipe_offer_rows": 21554,
+  "proper_score_views": 1242,
+  "calibration_AUC_views": 1242,
+  "primary_P1_side_views": 1734,
+  "primary_P1_side_triplets": 578,
+  "paired_contrasts": 2136,
+  "matched_Leaf_C02_GLM_contrasts": 480,
+  "empty_comparisons": 552,
+  "passing_attempt_examples": [
+    {
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:known-target-time-v1",
+      "history_regime": "H-MULTI",
+      "strict_current_information": false,
+      "n": 80,
+      "brier": 0.2556543135953243,
+      "unique_games": 42,
+      "unique_weeks": 3
+    },
+    {
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs:known-target-time-v1",
+      "history_regime": "H-CURRENT",
+      "strict_current_information": true,
+      "n": 80,
+      "brier": 0.24227600311371122,
+      "unique_games": 42,
+      "unique_weeks": 3
+    }
+  ],
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_probabilities": 0,
+  "new_grades": 0,
+  "limits": [
+    "Threeexposedweeks are insufficientforregisteredweekCI; allgameintervals descriptive.",
+    "CandidateFULL is supportedqualifiedlossmask; outercoverage and learned/prior contributions separate.",
+    "No fixed-Fridayoverlap, matched-controlmaskduplicates, new routing policy or prices included."
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "state": "ADDITIONAL_COMPARABLE_ISSUED_PRODUCT_MASK_NO_OLD_METRIC_CHANGE",
+  "at_utc": "2026-11-02T19:26:17.423885+00:00",
+  "parent_numeric_scores_sha256": "db19b7c7082514f178db6f0590aaa435483508c247501f981ce179832e2dd6ae",
+  "private_rows_sha256": "b8e0cb23bd804fa129998b6f5dc5a86194a670ae62406f44b855e28bb696d06e",
+  "primary_captures": [
+    "AVAILABILITY_AB",
+    "AVAILABILITY_C",
+    "C02",
+    "CHART_EMPIRICAL",
+    "CHART_WAVE",
+    "CLASSIC:120d8b79db4d470a",
+    "COMMON_ASOF_EMPIRICAL",
+    "COUNT_ABLATION",
+    "D1_D2",
+    "DISTRIBUTION_WAVE",
+    "EARLY_EMPIRICAL",
+    "EARLY_HGB",
+    "STRICT_HGB",
+    "WEBSITE_ADAPTIVE_ORIGINAL_3907"
+  ],
+  "exclusion_rule": "Only entire products with zero genuinely issued/T90-eligible outputs are inapplicable. This property is established from frozen forecasts without labels/losses. No losing or fallback method excluded.",
+  "old_all_product_intersection_retained": true,
+  "scope_exclusions": [
+    {
+      "method_key": "555be71c0ee52248b8c8906a",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-CURRENT",
+      "product": "absolute_error_point",
+      "target": "rec",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "dda1483a189cc477d8d3292b",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-CURRENT",
+      "product": "absolute_error_point",
+      "target": "rec",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "e61767618fe2c78831bb28fb",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-RECENT",
+      "product": "absolute_error_point",
+      "target": "rec",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "f486d1eee810506cd8161ba8",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-RECENT",
+      "product": "absolute_error_point",
+      "target": "rec",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "97cd64c4af882e6a5f03c1d0",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-MULTI",
+      "product": "absolute_error_point",
+      "target": "rec",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "854adce2ddf1aab3f13099f6",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-MULTI",
+      "product": "absolute_error_point",
+      "target": "rec",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "a5136e188c8f8b6b7e5cd996",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-CURRENT",
+      "product": "absolute_error_point",
+      "target": "rec_yd",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "9016b4f628b035ec904ae529",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-CURRENT",
+      "product": "absolute_error_point",
+      "target": "rec_yd",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "679c4038fa3c1ac444c700e4",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-RECENT",
+      "product": "absolute_error_point",
+      "target": "rec_yd",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "22e26dd80f4f7a48d3cf0e4a",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-RECENT",
+      "product": "absolute_error_point",
+      "target": "rec_yd",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "797cdb4173610d6a837b8be3",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-MULTI",
+      "product": "absolute_error_point",
+      "target": "rec_yd",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "70995ab883be212d44408298",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-MULTI",
+      "product": "absolute_error_point",
+      "target": "rec_yd",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "c3f7dd42b714508445a87ef1",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-CURRENT",
+      "product": "absolute_error_point",
+      "target": "nick-chart-ppr-v1",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "f63536deffd22b43fb0dbf66",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-CURRENT",
+      "product": "absolute_error_point",
+      "target": "nick-chart-ppr-v1",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "e707715e15401e687fda4349",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-RECENT",
+      "product": "absolute_error_point",
+      "target": "nick-chart-ppr-v1",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "1d13be536a6fff6f042f2806",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-RECENT",
+      "product": "absolute_error_point",
+      "target": "nick-chart-ppr-v1",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "16d1da181825451e135f1a76",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-MULTI",
+      "product": "absolute_error_point",
+      "target": "nick-chart-ppr-v1",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "5680a4c372464952fa4e07a6",
+      "capture": "AVAILABILITY_AB",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-MULTI",
+      "product": "absolute_error_point",
+      "target": "nick-chart-ppr-v1",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "a882e21fb57803e1dc923646",
+      "capture": "AVAILABILITY_C",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-CURRENT",
+      "product": "absolute_error_point",
+      "target": "rec",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "0a80b3af08a55673eb525e63",
+      "capture": "AVAILABILITY_C",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-RECENT",
+      "product": "absolute_error_point",
+      "target": "rec",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "005c20b279f144276a60d2e7",
+      "capture": "AVAILABILITY_C",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-MULTI",
+      "product": "absolute_error_point",
+      "target": "rec",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "31980c37ff5d41e756ce9218",
+      "capture": "AVAILABILITY_C",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-CURRENT",
+      "product": "absolute_error_point",
+      "target": "rec_yd",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "63addd758d3f063f6afb61b8",
+      "capture": "AVAILABILITY_C",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-RECENT",
+      "product": "absolute_error_point",
+      "target": "rec_yd",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "b2d9fccb939468845eb600e8",
+      "capture": "AVAILABILITY_C",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-MULTI",
+      "product": "absolute_error_point",
+      "target": "rec_yd",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "2b252eec60ff1d849f3abdcd",
+      "capture": "AVAILABILITY_C",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-CURRENT",
+      "product": "absolute_error_point",
+      "target": "nick-chart-ppr-v1",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "796bb6b54a57cb517d946c91",
+      "capture": "AVAILABILITY_C",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-RECENT",
+      "product": "absolute_error_point",
+      "target": "nick-chart-ppr-v1",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "c42de9b9b05894defb9310f9",
+      "capture": "AVAILABILITY_C",
+      "procedure": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+      "history": "H-MULTI",
+      "product": "absolute_error_point",
+      "target": "nick-chart-ppr-v1",
+      "rows": 2,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    },
+    {
+      "method_key": "ec3fc73f700323424cc61a02",
+      "capture": "CLASSIC:120d8b79db4d470a",
+      "procedure": "sleeper-matchup-classic-fg-identity-v1",
+      "history": "FIXED_ARCHIVED_REFERENCE",
+      "product": "saved_adjusted_recipe_point",
+      "target": "anytime_td",
+      "rows": 336,
+      "reason": "NO_CAPTURED_ISSUED_COMPATIBLE_OUTPUT; preserved as unavailable, not confidence abstention"
+    }
+  ],
+  "common_final_rows": {
+    "pass_yd": 25,
+    "pass_td": 25,
+    "pass_cmp": 25,
+    "pass_att": 25,
+    "pass_int": 25,
+    "rush_yd": 60,
+    "rush_att": 60,
+    "rec": 205,
+    "rec_yd": 205,
+    "rush_rec_yd": 157,
+    "anytime_td": 207,
+    "nick-chart-ppr-v1": 231
+  },
+  "limitations": "SourceAB/C blocked Leaf contexts carry a single absolute_error_point placeholder; no such issued Leaf point product exists. Those raw rows remain unavailable with exact original identity. Classic anytime adjusted point is absent; raw expected TD count is not event probability. Excluding these nonoutputs avoids an empty comparison but does not improve coverage of any forecast system."
+}

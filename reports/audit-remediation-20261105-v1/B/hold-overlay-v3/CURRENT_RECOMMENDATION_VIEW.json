@@ -1,0 +1,35 @@
+{
+  "schema": "B-scoped-admission-overlay-v3",
+  "at_utc": "2026-11-06T00:52:21.742529+00:00",
+  "current_hold_rule": {
+    "path": "nfl_v2/recommendation_holds.py",
+    "sha256": "468fc902019f1c617f5e8862bda222d25ea7005454d64bd7ee3f1aee7b0ce11d"
+  },
+  "registry": {
+    "path": "registries/PROCEDURE_ADMISSION_HOLDS.json",
+    "sha256": "4d57338835ae21ade980cd05c89bcfea396bb567017877a3327113fbb122abd0"
+  },
+  "original_alias_model_scan": {
+    "path": "reports/audit-remediation-20261105-v1/B/hold-overlay-v2/RUN_RECEIPT.json",
+    "sha256": "448d7db118cf837a7796326ac4269c6ca46db2c09ed5abe95749c891b1171da6"
+  },
+  "original_alias_model_views_enumerated": 2675,
+  "additional_fixed_model_dependency_annotations": {
+    "path": "reports/audit-remediation-20261105-v1/B/independent/BOUND_CARRY_CONTROL_HOLD_QUALIFICATION_V2.json",
+    "sha256": "d601e50ab1c1840ceacd4499a44d85238ce97e310c0a74935789bad545c42496"
+  },
+  "additional_held_history_arm_cells": 6,
+  "additional_held_side_score_views_in_bound_source": 18,
+  "distinct_C_refit_cells_not_held_by_fixed_model_identity": 3,
+  "additional_global_index_views_not_enumerated": true,
+  "scope": "The runtime rule is authoritative. The original 2675-view scan predates the six exact availability A/B dependencies; it is not claimed to enumerate all later projections. Source-bound 18 side annotations supplement that scan without repeating a 1.36GB read.",
+  "duration_annotations": {
+    "path": "reports/audit-remediation-20261105-v1/B/hold-overlay-v1/FIVE_WEEK_HOLD_ANNOTATIONS.json",
+    "sha256": "abcd4fecf10879c85dbbd86303db8c22a454b38b6366a40f689084f746904812"
+  },
+  "duration_floor_not_reset": true,
+  "scored_losses_retained": true,
+  "default_admission": "Exclude these exact dependencies; passing this filter is not sufficient scientific or operational qualification.",
+  "new_predictions": 0,
+  "changed_grades": 0
+}

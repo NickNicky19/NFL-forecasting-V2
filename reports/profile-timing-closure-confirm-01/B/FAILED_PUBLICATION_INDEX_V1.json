@@ -1,0 +1,15 @@
+{
+  "id": "B-TIMING-CLOSURE-INDEX-FAILURE-v1",
+  "at_UTC": "2026-11-11T04:02:26.711024+00:00",
+  "error": "KeyError:artifact_id",
+  "cause": "New publisher assumed every legacy export entry carried artifact_id; existing legacy variants are preserved.",
+  "affected": "Publication metadata only; provisional V1 manifest written, mutable export index not written.",
+  "preserved_manifest": "PUBLICATION_MANIFEST_V1.json",
+  "export_index_unchanged": true,
+  "existing_exports": 1119,
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0,
+  "new_scores": 0,
+  "remedy": "Versioned V2 manifest and tolerant legacy ID lookup; preserve all prior entries."
+}

@@ -1,0 +1,83 @@
+{
+  "main": "689bc6ff11c7424d5384324e5a7d25dc6e0fad9a",
+  "PR1": "81c3fc2a612ced916f4c54814f978c509058bca5",
+  "functions": [
+    {
+      "file": "pull/grade.py",
+      "function": "participation",
+      "main_PR1_AST_equal": true,
+      "main_function_sha256": "6aba3ca369045656870c73b797a12a8f4df06e6691744f10aa5439e17ff24bb9",
+      "PR1_function_sha256": "6aba3ca369045656870c73b797a12a8f4df06e6691744f10aa5439e17ff24bb9"
+    },
+    {
+      "file": "pull/grade.py",
+      "function": "_bound_stats",
+      "main_PR1_AST_equal": true,
+      "main_function_sha256": "38e2539567d78a7d8134a48abea2448bf31265ac2a69d2f2049076a53f8c9e24",
+      "PR1_function_sha256": "38e2539567d78a7d8134a48abea2448bf31265ac2a69d2f2049076a53f8c9e24"
+    },
+    {
+      "file": "pull/grade.py",
+      "function": "_prop_result",
+      "main_PR1_AST_equal": true,
+      "main_function_sha256": "28f5aa50a2d6923c358952c623f545adee9c142b210cc04ab98600d82dae83f7",
+      "PR1_function_sha256": "28f5aa50a2d6923c358952c623f545adee9c142b210cc04ab98600d82dae83f7"
+    },
+    {
+      "file": "pull/grade.py",
+      "function": "result",
+      "main_PR1_AST_equal": true,
+      "main_function_sha256": "72389e604e676dd37ba377357227e41abbf45da0268a19320e6f3f4d0c7f7400",
+      "PR1_function_sha256": "72389e604e676dd37ba377357227e41abbf45da0268a19320e6f3f4d0c7f7400"
+    },
+    {
+      "file": "pull/scoring.py",
+      "function": "component",
+      "main_PR1_AST_equal": false,
+      "main_function_sha256": "1ba724fb2e1a9502ffaac5f8adc1bdf89582d053fd119f0582c93c1fbf5d5c99",
+      "PR1_function_sha256": "2ec054c98439abc4412c4b80690a2f784eab502679259c8e56a621e5fec602e1"
+    },
+    {
+      "file": "pull/scoring.py",
+      "function": "stat_value",
+      "main_PR1_AST_equal": true,
+      "main_function_sha256": "d8bee86ca186c9f3778f26b094f837903af627c7e2591c447014650c46a54dd5",
+      "PR1_function_sha256": "d8bee86ca186c9f3778f26b094f837903af627c7e2591c447014650c46a54dd5"
+    }
+  ],
+  "scope": "ASTequality iscodecomparisononly, not current source/label proof.",
+  "main_presence_version": "nfl-data-presence-strict-v3",
+  "PR1_presence_version": "nfl-data-presence-v2",
+  "qualification": "SameASTfor_bound_statsusesdynamicPRESENCE_VERSION; itdoesnotestablishparityacrossversions. PR1modernv3rowswouldfailidentity/presencecontract. Its componentunversionedabsence\u21920 iscontainedunmergedpath, notmaincurrentgradecontamination.",
+  "PR1_source_manifest_patterns": "tools.selection_report.PATTERNSdoesnotincludestrict-v3cache; oldreportgeneratorcannotstandforcurrentmainnativegradewithoutspecificsource/contractqualification.",
+  "source_bindings": [
+    {
+      "path": "tools/selection_report.py",
+      "head": "81c3fc2a612ced916f4c54814f978c509058bca5",
+      "bytes": 65612,
+      "sha256": "d25218d2cf6b328b7e9fca4565f0151efb6a94900ea4aa80060d1ce9b3842c1c",
+      "observed_UTC": "2026-11-12T20:54:13.333582+00:00"
+    },
+    {
+      "path": "pull/grade.py",
+      "head": "81c3fc2a612ced916f4c54814f978c509058bca5",
+      "bytes": 14648,
+      "sha256": "b260a2a7905eea7caf4b14115e94fd6898c0e0fc6cdd19e28de96ccc38da394a",
+      "observed_UTC": "2026-11-12T20:54:13.657185+00:00"
+    },
+    {
+      "path": "pull/scoring.py",
+      "head": "81c3fc2a612ced916f4c54814f978c509058bca5",
+      "bytes": 10928,
+      "sha256": "712be92bb30d6486fd4d04d3cc43a2d1482b9ade42cb6c50194fe745c0ef5ae9",
+      "observed_UTC": "2026-11-12T20:54:13.933879+00:00"
+    },
+    {
+      "path": "AGENTS.md",
+      "head": "81c3fc2a612ced916f4c54814f978c509058bca5",
+      "bytes": 5676,
+      "sha256": "9bb58018443fdd377937bab222acd0ff9a05a864e6c9528fd016c382ad34c0c9",
+      "observed_UTC": "2026-11-12T20:54:14.182359+00:00"
+    }
+  ]
+}

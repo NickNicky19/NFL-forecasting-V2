@@ -1,0 +1,56 @@
+{
+  "state": "PASS_SEASONAL_PREFIT_REVIEW",
+  "reviewed_at_utc": "2026-10-30T16:50:29.035847+00:00",
+  "code_sha256": "c84fc970d013fab796a4a6ef25eba161bce23022ee3051ede39540bb7cc02e45",
+  "protocol_sha256_by_season": {
+    "2025": "d994a043f84fa1a79265489699c0b7fe0cc6d5cc6bd608a65c42e398bf392355",
+    "2024": "f992a90c7972040e8f560090d6d5644eb5a89aaf1ce8e578770a7643a1961f48",
+    "2023": "47a88bfac01f9fb0e31dfa3c2152fea67e04a72846344e34433e017d9512ad9f",
+    "2022": "da7ddfa907bc13fbb420a8bee08cfe5539c1754d74f4ab22e22ad929216ee42e"
+  },
+  "scope": {
+    "2025": {
+      "query_cells": 45579,
+      "query_games": 272,
+      "nominal_fit_opportunities": 4608,
+      "unique_fit_opportunities": 4608,
+      "expected_learned_output_views": 1396708,
+      "expected_empirical_output_views": 255363
+    },
+    "2024": {
+      "query_cells": 44368,
+      "query_games": 272,
+      "nominal_fit_opportunities": 4608,
+      "unique_fit_opportunities": 4608,
+      "expected_learned_output_views": 1360032,
+      "expected_empirical_output_views": 248616
+    },
+    "2023": {
+      "query_cells": 43922,
+      "query_games": 272,
+      "nominal_fit_opportunities": 4608,
+      "unique_fit_opportunities": 3456,
+      "expected_learned_output_views": 1346500,
+      "expected_empirical_output_views": 246129
+    },
+    "2022": {
+      "query_cells": 43821,
+      "query_games": 271,
+      "nominal_fit_opportunities": 4608,
+      "unique_fit_opportunities": 1152,
+      "expected_learned_output_views": 1342704,
+      "expected_empirical_output_views": 245502
+    }
+  },
+  "fictional_tests_passed": 8,
+  "review": "Read complete engine, correctedstream cap/protocol+law+baselinebindings and2022explicitSTRICTidentity. Verified all4seasonrelativepolicies, frozenquerymetadata/dedup/roles/18weeks,6sourcehashes andbothretainedbaselines; all4seasons have0NFLfits before thisreceipt.",
+  "chronology": "Traininglabels kickoff+7d strictlybeforeearliestweeklyorigin; eachtrain/query ownkickofffeatures; outcome source loopendsatevaluationyear. Sharedscheduleloader parses unusedfuturecalendar metadata but no lateroutcomes and no latercalendar enters seasonorigin/features; actualhistoricalavailability remainsassumed reconstruction.",
+  "support": "Signedyardage and exactintegercounts; properlaws distinctfromPoissonpointobjective; sourcequalifiedpartialchart/missingrarelabels retained; exactmedianintegerprecision only; means unrounded.",
+  "alias": "2022all4policiesshare identicalfits;2023RECENT/MULTIshare; aliaseskeepdistinctlogicalpolicynames/scorecells. No repeatedoptimizerfitneeded.",
+  "resource": "Perseasonmax2400activewall/3600CPU,2threads,2GiBRSS,1GiBprivate; before-writecompressedstream/modelpending/modelbytecapchecked; runtimeactuals and numericalskillverificationpending.",
+  "evidence": "NEW_EXPERIMENT_CURRENT_VINTAGE_PARTICIPANT_DIAGNOSTIC; allhistoricalyears exposed. No authenticoldissuance/overalloptimality/websiteclaim.",
+  "new_fits_before_review": 0,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "week8_outcomes_read": 0
+}

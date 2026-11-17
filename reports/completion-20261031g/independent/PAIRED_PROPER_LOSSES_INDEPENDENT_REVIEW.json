@@ -1,0 +1,43 @@
+{
+  "state": "PASS_INDEPENDENT_PAIRED_ACTUAL_LINE_PROPER_LOSSES_AND_SENSITIVITY",
+  "comparisons": 480,
+  "source_bound_annotations": 160,
+  "all_full_support_masks_identical": true,
+  "examples": [
+    {
+      "target": "pass_att",
+      "candidate_error": 0.26438728256575694,
+      "comparator_error": 0.36082908645920847,
+      "delta": -0.09644180389345153,
+      "n": 52,
+      "game_normal95_sensitivity": [
+        -0.15159130001268958,
+        -0.041292307774213464
+      ],
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+    },
+    {
+      "target": "pass_int",
+      "candidate_error": 0.24814798388256956,
+      "comparator_error": 0.24712895987204433,
+      "delta": 0.0010190240105252264,
+      "n": 52,
+      "game_normal95_sensitivity": [
+        -0.010749050447309632,
+        0.012787098468360085
+      ],
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS"
+    }
+  ],
+  "comparison_directions": {
+    "brier:gain": 221,
+    "log_loss:gain": 223,
+    "brier:loss": 19,
+    "log_loss:loss": 17
+  },
+  "two_exposed_weeks_insufficient_for_week_uncertainty": true,
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_grades": 0,
+  "scope": "All pairedidentities, fullmasks, cachedlosses, means/relativechanges, gameclusterSE/normal95sensitivity and annotation comparators; lawvectors/losses independently recomputed in priorreceipts."
+}

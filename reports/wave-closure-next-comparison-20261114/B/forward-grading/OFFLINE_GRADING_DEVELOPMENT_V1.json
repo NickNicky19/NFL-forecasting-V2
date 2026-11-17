@@ -1,0 +1,15 @@
+{
+  "id": "B_FORWARD_GRADING_ADAPTER_DEVELOPMENT_v1",
+  "at_UTC": "2026-11-14T14:58:07.198971+00:00",
+  "attempts": [
+    {
+      "state": "STOPPED_BEFORE_SCORE_WRITE",
+      "adapter_sha256": "70950507bd1c484aaa29baf6522d7515e5f2d6b396d95fa0ffc797145514c948",
+      "cause": "Verifier compared semantically equal ISO8601 timestamps as literal strings: ESPN01:15Z versus packet01:15:00+00:00.",
+      "fix": "Parse both timezone-aware ISO8601 timestamps and compare instants; no changed event/cutoff/forecast/model/source/label.",
+      "new_fits": 0,
+      "new_forecasts": 0,
+      "new_grades": 0
+    }
+  ]
+}

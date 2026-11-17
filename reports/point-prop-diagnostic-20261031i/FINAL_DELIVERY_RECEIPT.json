@@ -1,0 +1,36 @@
+{
+  "state": "PASS_FINAL_PUBLICATION_PREP_CHECKS",
+  "checked_at_utc": "2026-10-31T18:38:30.914732+00:00",
+  "checks": {
+    "checkpoint_schema_privacy": "PASS:30464 JSON files; 100 requests",
+    "result_index_coverage": "PASS:557815 records,175 registered artifacts",
+    "analysis_coverage": "PASS:124630 canonical evaluation views,18708 comparisons",
+    "prop_scoreboard": "PASS:124597 groups,7332 proper views,373791 side views",
+    "git_diff_check": "PASS",
+    "unit_suite": "409 PASS; prior 407 pass retained"
+  },
+  "bound_receipts": [
+    {
+      "path": "reports/point-prop-diagnostic-20261031i/independent/FINAL_POINTER_AND_REPORT_REVIEW.json",
+      "sha256": "46c04d7c87b6c61a2a22b58e6c7fc6faac6b7aefd737aa0c0fde065f2552d054"
+    },
+    {
+      "path": "reports/point-prop-diagnostic-20261031i/independent/FINAL_INDEX_V3_INDEPENDENT_REVIEW.json",
+      "sha256": "a613c61c8fe33ad7d843f927f801a63456e3aa1f1ce2906dde5ad9731a7845f4"
+    },
+    {
+      "path": "reports/point-prop-diagnostic-20261031i/independent/CHECKER_BYTE_BINDINGS_V6.json",
+      "sha256": "7ab2325d177adddcd2d3c2bd21549bd34d284fa98ef52d08cc0bceda820a5d82"
+    },
+    {
+      "path": "reports/point-prop-diagnostic-20261031i/SOFTWARE_VERIFICATION_MANIFEST_V2.json",
+      "sha256": "688fc850386809c30679abaeba3cf7b4cb59c7bdfea2fb40ed678ad0a67dcd6a"
+    },
+    {
+      "path": "reports/point-prop-diagnostic-20261031i/results-index-v3/INDEX_MANIFEST.json",
+      "sha256": "1a4b12fa44338be45c436c6662b84e840aacc498fe45af3eb5bab27becf191f7"
+    }
+  ],
+  "scope": "Publication/code/metadata verification only; no new NFL fit, inference, game, forecast or original selection. Source-specific independent scope remains in each receipt.",
+  "production_changed": false
+}

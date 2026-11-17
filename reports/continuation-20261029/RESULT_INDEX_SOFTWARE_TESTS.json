@@ -1,0 +1,30 @@
+{
+  "kind": "software_verification",
+  "status": "PASS",
+  "tests_run": 9,
+  "tests_passed": 9,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_names": [
+    "tests.test_result_index.ResultIndexTests.test_bad_values_unsafe_paths_and_duplicate_views_rejected",
+    "tests.test_result_index.ResultIndexTests.test_ids_stable_on_key_order_and_change_with_panel",
+    "tests.test_result_index.ResultIndexTests.test_infinite_probability_losses_remain_explicit",
+    "tests.test_result_index.ResultIndexTests.test_missing_precision_and_error_remain_unknown",
+    "tests.test_result_index.ResultIndexTests.test_native_errors_are_not_percent_accuracy",
+    "tests.test_result_index.ResultIndexTests.test_probability_residual_is_not_pick_or_classifier_accuracy",
+    "tests.test_result_index.ResultIndexTests.test_signed_bias_and_source_distribution_nll_preserved",
+    "tests.test_result_index.ResultIndexTests.test_software_has_check_counts_and_no_nfl_accuracy",
+    "tests.test_result_index.ResultIndexTests.test_unknown_or_inconsistent_accuracy_denominator_not_invented"
+  ],
+  "observed_at": "2026-10-29T22:44:06.225942+00:00",
+  "nfl_observations": 0,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "nfl_accuracy": null,
+  "code_sha256": {
+    "nfl_v2/result_index.py": "f77aa454ee1a43e93891a1c4da4706aae4e8973b6c83c67c9a337fe131774575",
+    "tools/build_test_index.py": "8762916a1ec950d32d51d69b04232be0631cfeb5ec5ce698d13764e673506599",
+    "tests/test_result_index.py": "b3236dbcdfa496b0d9c7e53a22995d3570f9144018c0084dd16ea559ded8652c"
+  }
+}

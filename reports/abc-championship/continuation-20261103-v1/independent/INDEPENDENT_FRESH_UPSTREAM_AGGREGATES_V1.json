@@ -1,0 +1,494 @@
+{
+  "state": "PASS_AGGREGATE_ARITHMETIC_WITH_EXPLICIT_SOURCE_STATE_AND_MASK_LIMITS",
+  "source_A_commit": "88dac5da1b261ae6f521d3f23c83b2f95fc364bd",
+  "source_C_commit": "39b98567cc11835363e91c6a2b504bf9cae1f17a",
+  "historical": {
+    "source_sha256": "db0b7fe7f3700fa76954b85e7405a2f22f95dec73372b79eb81444e69dc4c2f3",
+    "score_views_checked": 1092,
+    "side_views_checked": 3276,
+    "cumulative_weekly_reconciliations": 126,
+    "chronological_week_block_bootstraps_exactly_reproduced": 66,
+    "bootstrap_order_not_reproduced": 36,
+    "periods": [
+      "E1_PARTIAL_2026_W1_5",
+      "E3_2024_W1_8",
+      "E4_2024_FULL_REG"
+    ],
+    "missing_actual_line_seasons": [
+      2022,
+      2023,
+      2025
+    ],
+    "categories": [
+      "pass_att",
+      "rec",
+      "rush_att"
+    ],
+    "leaders": [
+      {
+        "period_id": "E1_PARTIAL_2026_W1_5",
+        "category": "pass_att",
+        "procedure_id": "A::opportunity-four-ou-v1::P2_CONDITIONAL_M",
+        "OVER": {
+          "selected": 14,
+          "wins": 12,
+          "losses": 2,
+          "decided": 14,
+          "rate": 0.8571428571428571
+        },
+        "UNDER": {
+          "selected": 20,
+          "wins": 9,
+          "losses": 11,
+          "decided": 20,
+          "rate": 0.45
+        },
+        "COMBINED": {
+          "selected": 34,
+          "wins": 21,
+          "losses": 13,
+          "decided": 34,
+          "rate": 0.6176470588235294
+        },
+        "eligible": 94,
+        "coverage": 0.3617021276595745,
+        "eligible_board_games": 51,
+        "actual_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "scope": "Reported owner-local source-specific panel; raw own-pool maximum, not all-method matched champion."
+      },
+      {
+        "period_id": "E1_PARTIAL_2026_W1_5",
+        "category": "rec",
+        "procedure_id": "A::opportunity-four-ou-v1::P1_M",
+        "OVER": {
+          "selected": 30,
+          "wins": 17,
+          "losses": 11,
+          "decided": 28,
+          "rate": 0.6071428571428571
+        },
+        "UNDER": {
+          "selected": 52,
+          "wins": 30,
+          "losses": 18,
+          "decided": 48,
+          "rate": 0.625
+        },
+        "COMBINED": {
+          "selected": 82,
+          "wins": 47,
+          "losses": 29,
+          "decided": 76,
+          "rate": 0.618421052631579
+        },
+        "eligible": 669,
+        "coverage": 0.12257100149476831,
+        "eligible_board_games": 53,
+        "actual_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "scope": "Reported owner-local source-specific panel; raw own-pool maximum, not all-method matched champion."
+      },
+      {
+        "period_id": "E1_PARTIAL_2026_W1_5",
+        "category": "rush_att",
+        "procedure_id": "A::opportunity-four-ou-v1::P2_CONDITIONAL_FS",
+        "OVER": {
+          "selected": 32,
+          "wins": 19,
+          "losses": 12,
+          "decided": 31,
+          "rate": 0.6129032258064516
+        },
+        "UNDER": {
+          "selected": 38,
+          "wins": 19,
+          "losses": 15,
+          "decided": 34,
+          "rate": 0.5588235294117647
+        },
+        "COMBINED": {
+          "selected": 70,
+          "wins": 38,
+          "losses": 27,
+          "decided": 65,
+          "rate": 0.5846153846153846
+        },
+        "eligible": 180,
+        "coverage": 0.3888888888888889,
+        "eligible_board_games": 53,
+        "actual_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "scope": "Reported owner-local source-specific panel; raw own-pool maximum, not all-method matched champion."
+      },
+      {
+        "period_id": "E3_2024_W1_8",
+        "category": "pass_att",
+        "procedure_id": "A::opportunity-four-ou-v1::ALWAYS_UNDER",
+        "OVER": {
+          "selected": 0,
+          "wins": null,
+          "losses": null,
+          "decided": 0,
+          "rate": null
+        },
+        "UNDER": {
+          "selected": 225,
+          "wins": 126,
+          "losses": 96,
+          "decided": 222,
+          "rate": 0.5675675675675675
+        },
+        "COMBINED": {
+          "selected": 225,
+          "wins": 126,
+          "losses": 96,
+          "decided": 222,
+          "rate": 0.5675675675675675
+        },
+        "eligible": 225,
+        "coverage": 1.0,
+        "eligible_board_games": 117,
+        "actual_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "scope": "Reported owner-local source-specific panel; raw own-pool maximum, not all-method matched champion."
+      },
+      {
+        "period_id": "E3_2024_W1_8",
+        "category": "rec",
+        "procedure_id": "A::opportunity-four-ou-v1::P1_M",
+        "OVER": {
+          "selected": 72,
+          "wins": 45,
+          "losses": 26,
+          "decided": 71,
+          "rate": 0.6338028169014085
+        },
+        "UNDER": {
+          "selected": 66,
+          "wins": 38,
+          "losses": 26,
+          "decided": 64,
+          "rate": 0.59375
+        },
+        "COMBINED": {
+          "selected": 138,
+          "wins": 83,
+          "losses": 52,
+          "decided": 135,
+          "rate": 0.6148148148148148
+        },
+        "eligible": 1366,
+        "coverage": 0.10102489019033675,
+        "eligible_board_games": 117,
+        "actual_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "scope": "Reported owner-local source-specific panel; raw own-pool maximum, not all-method matched champion."
+      },
+      {
+        "period_id": "E3_2024_W1_8",
+        "category": "rush_att",
+        "procedure_id": "A::opportunity-four-ou-v1::P1_M",
+        "OVER": {
+          "selected": 47,
+          "wins": 31,
+          "losses": 15,
+          "decided": 46,
+          "rate": 0.6739130434782609
+        },
+        "UNDER": {
+          "selected": 65,
+          "wins": 39,
+          "losses": 24,
+          "decided": 63,
+          "rate": 0.6190476190476191
+        },
+        "COMBINED": {
+          "selected": 112,
+          "wins": 70,
+          "losses": 39,
+          "decided": 109,
+          "rate": 0.6422018348623854
+        },
+        "eligible": 350,
+        "coverage": 0.32,
+        "eligible_board_games": 117,
+        "actual_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "scope": "Reported owner-local source-specific panel; raw own-pool maximum, not all-method matched champion."
+      },
+      {
+        "period_id": "E4_2024_FULL_REG",
+        "category": "pass_att",
+        "procedure_id": "A::opportunity-four-ou-v1::P2_CONDITIONAL_M",
+        "OVER": {
+          "selected": 152,
+          "wins": 80,
+          "losses": 72,
+          "decided": 152,
+          "rate": 0.5263157894736842
+        },
+        "UNDER": {
+          "selected": 162,
+          "wins": 93,
+          "losses": 68,
+          "decided": 161,
+          "rate": 0.577639751552795
+        },
+        "COMBINED": {
+          "selected": 314,
+          "wins": 173,
+          "losses": 140,
+          "decided": 313,
+          "rate": 0.5527156549520766
+        },
+        "eligible": 495,
+        "coverage": 0.6343434343434343,
+        "eligible_board_games": 259,
+        "actual_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "scope": "Reported owner-local source-specific panel; raw own-pool maximum, not all-method matched champion."
+      },
+      {
+        "period_id": "E4_2024_FULL_REG",
+        "category": "rec",
+        "procedure_id": "A::opportunity-four-ou-v1::P1_M",
+        "OVER": {
+          "selected": 166,
+          "wins": 104,
+          "losses": 57,
+          "decided": 161,
+          "rate": 0.6459627329192547
+        },
+        "UNDER": {
+          "selected": 165,
+          "wins": 102,
+          "losses": 57,
+          "decided": 159,
+          "rate": 0.6415094339622641
+        },
+        "COMBINED": {
+          "selected": 331,
+          "wins": 206,
+          "losses": 114,
+          "decided": 320,
+          "rate": 0.64375
+        },
+        "eligible": 2998,
+        "coverage": 0.1104069379586391,
+        "eligible_board_games": 266,
+        "actual_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "scope": "Reported owner-local source-specific panel; raw own-pool maximum, not all-method matched champion."
+      },
+      {
+        "period_id": "E4_2024_FULL_REG",
+        "category": "rush_att",
+        "procedure_id": "A::opportunity-four-ou-v1::P1_M",
+        "OVER": {
+          "selected": 112,
+          "wins": 61,
+          "losses": 49,
+          "decided": 110,
+          "rate": 0.5545454545454546
+        },
+        "UNDER": {
+          "selected": 151,
+          "wins": 85,
+          "losses": 64,
+          "decided": 149,
+          "rate": 0.5704697986577181
+        },
+        "COMBINED": {
+          "selected": 263,
+          "wins": 146,
+          "losses": 113,
+          "decided": 259,
+          "rate": 0.5637065637065637
+        },
+        "eligible": 753,
+        "coverage": 0.34926958831341304,
+        "eligible_board_games": 263,
+        "actual_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "scope": "Reported owner-local source-specific panel; raw own-pool maximum, not all-method matched champion."
+      }
+    ],
+    "source_panel": "A own representative-book68/69/79, not C Pinnacle; current-vintage timing-unverified; retainedFmodel-year2024 trainedthrough2023; not new fits or original-pick recovery."
+  },
+  "A_on_C": {
+    "source_sha256": "a0ec4b742fd293ab336f50aa2e3fc5160cf0fb1364934cb38daf368f0b5d10ae",
+    "score_views_checked": 87,
+    "side_views_checked": 261,
+    "weekly_triads_reconciled": 29,
+    "reported_pairs_checked": 203,
+    "C_control_counts_reproduced_from_public_rows": 203,
+    "A_paired_outcomes_reproduced_from_private_rows": false,
+    "temporal_parity": "NOT_VERIFIED",
+    "rushing_population": "RB_ONLY;notB_QB_RB",
+    "state_classification_issue_views": 80,
+    "state_classification_issue": "Selected A rows with unresolved C labels carry UNAVAILABLE_FORECAST states although unavailable field is0 or smaller. Decided W/L arithmetic is unaffected; A must qualify/correct state mapping in new version.",
+    "examples": [
+      {
+        "category": "pass_yd",
+        "procedure_id": "A::9fa09ae8fdc21d286c9f427811262da52243839e489ba003a0078f54fb743400::CATBOOST_MEDIUM::median_objective_point",
+        "week_view": "ALL",
+        "selected": 64,
+        "decided": 63,
+        "unavailable_field": 0,
+        "unavailable_state_count": 1
+      },
+      {
+        "category": "pass_yd",
+        "procedure_id": "A::e218abfd52d8b5d860cd5bbae2c7145bea1670775c0b6fcc5f7b9bbcbd418c05::EQUAL_CDF_CAT_HGB_POINT::empirical_point_blend",
+        "week_view": "ALL",
+        "selected": 64,
+        "decided": 63,
+        "unavailable_field": 0,
+        "unavailable_state_count": 1
+      },
+      {
+        "category": "pass_yd",
+        "procedure_id": "A::a628c415c7f27ddaab9a9a4296cb189cc56c885c67aa6ded87928e08ac291341::HGB_MAE_DIRECT::mae_objective_point",
+        "week_view": "ALL",
+        "selected": 64,
+        "decided": 63,
+        "unavailable_field": 0,
+        "unavailable_state_count": 1
+      },
+      {
+        "category": "pass_yd",
+        "procedure_id": "A::82c7d2a748188a6f546639e15e34e35cf396143b9190d6b423734f3565258c04::LEAF_CDF::mean",
+        "week_view": "ALL",
+        "selected": 64,
+        "decided": 63,
+        "unavailable_field": 0,
+        "unavailable_state_count": 1
+      }
+    ],
+    "mask_hash_limit": {
+      "distinct_reported_hashes": 6,
+      "contains_whole_B_mask_file_hash": false,
+      "individual_A_memberships_transferred": false,
+      "claim": "Hashes in aggregate append do not independently restore A per-offer predictions or prove identical source/decision clocks."
+    }
+  },
+  "C_admission": {
+    "A": "LIMITED_PUBLIC_AGGREGATES_AT_2be1",
+    "B": "LIMITED_PUBLIC_AGGREGATES_AT_7c0690bf",
+    "new_B_v2_v4_admitted": false,
+    "raw_common_parity": false,
+    "original_selected_pool": {
+      "original": 205,
+      "always_under": 224,
+      "decided": 415,
+      "unknown": 12,
+      "win_change": 19
+    }
+  },
+  "A_remedy": {
+    "arithmetic_verified": true,
+    "actual_bytes_reported": 4194295,
+    "unchanged_cap": 4194304,
+    "headroom": 9,
+    "owner_private_storage_census_independently_performed": false
+  },
+  "limits": [
+    "No access to or restoration of private A models/rows; source identity/chronology, paired A win intervals remain reported rather than independently row-reproduced.",
+    "Source-specific seasons, own-pool raw maxima, technical availability and temporal contracts remain separate; no three-way championship winner or release claim.",
+    "B/C public arithmetic admission does not waive artifact recovery or grant raw-row transfer rights."
+  ]
+}

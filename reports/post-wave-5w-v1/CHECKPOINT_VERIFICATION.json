@@ -1,0 +1,46 @@
+{
+  "state": "PASS_WITH_PRESERVED_FAILURE_AND_SCOPED_METADATA_CORRECTIONS",
+  "at_utc": "2026-11-05T01:02:13.358492+00:00",
+  "unit_tests": {
+    "passed": 463,
+    "new_last_scope": 10,
+    "NFL_observations": 0
+  },
+  "required_checks": {
+    "validate_checkpoint": "PASS31023JSONparsed;initialscopeonly;notNFLtruth",
+    "check_result_index_coverage": "PASS603711records/216registeredartifacts",
+    "check_analysis_index_coverage": "PASS19336derivedpairs;18278scored/1058unsupportednull",
+    "check_prop_scoreboard_coverage": "PASS373791selectionviews/7332properviews/124597groups/103sourcearrays"
+  },
+  "new_score_views": 1510,
+  "new_paired_views": 512,
+  "old_result_records_preserved": 602201,
+  "old_paired_records_preserved": 18824,
+  "new_selection_ranker_fits": 5,
+  "new_football_fits": 0,
+  "new_inference": 0,
+  "new_issued_forecasts": 0,
+  "new_NFL_observations": 0,
+  "new_weeks": 0,
+  "private_new_ranker_bytes": 348170,
+  "private_new_account_metadata_bytes": 306,
+  "primary_replacements": 0,
+  "ninety_percent_target": "NOT_ESTABLISHED;ZERO_SELECTED_CASES",
+  "independent_receipts": [
+    "reports/post-wave-5w-v1/B-111-RB-common-mask-v3/INDEPENDENT_111_RB_MASK_AUDIT_V1.json",
+    "reports/post-wave-5w-v1/B-product-week-qualification-v3/INDEPENDENT_B_PRODUCT_WEEK_QUALIFICATION_V1.json",
+    "reports/post-wave-5w-v1/INDEPENDENT_COUNT_A_AND_CAPTURE_AUDIT_V1.json",
+    "reports/post-wave-5w-v1/INDEPENDENT_FINAL_POST_WAVE_REPORT_REVIEW_V1.json",
+    "reports/post-wave-5w-v1/b-confidence-ordering-v1/context-ranker-v1/INDEPENDENT_CONTEXT_RANKER_AUDIT_V1.json",
+    "reports/post-wave-5w-v1/b-confidence-ordering-v1/context-ranker-v1/INDEPENDENT_CONTEXT_RANKER_CLOCK_UNCERTAINTY_V2.json",
+    "reports/post-wave-5w-v1/b-confidence-ordering-v1/context-ranker-v1/INDEPENDENT_METADATA_AND_LEARNED_SCOPE_V2.json"
+  ],
+  "failure_receipts": [
+    "FAILED_ANALYSIS_COVERAGE_GUARD_V1.json",
+    "B-111-RB-common-mask-v1/FAILURE_RECEIPT_V1.json",
+    "B-111-RB-common-mask-v2/FAILURE_RECEIPT_V2.json",
+    "B-product-week-qualification-v1/PREQUALIFICATION_SCOPE_FAILURE_V1.json"
+  ],
+  "local_only_model_retention_and_global_recovery_limit_preserved": true,
+  "publication": "AWAITING_IMMUTABLE_COMMIT_PUSH_READBACK_AND_CI;tracked separately"
+}

@@ -1,0 +1,114 @@
+{
+  "state": "PASS_INDEPENDENT_COMPLETE_LEAF_CDF_DIRECTIONS_PROPER_SCORES_SIDE_COUNTS_K",
+  "panels": [
+    {
+      "panel": "F7",
+      "score_views": 7520,
+      "law_products": 80,
+      "admitted_law_views": 2864,
+      "proper_probability_rows": 2864,
+      "side_triplets": 2480,
+      "K_lists": 720,
+      "parent_hash_unchanged": true,
+      "exact_complete_law_mask_equals_parent_P1": true,
+      "grade_states": {
+        "ABSTAIN": 832,
+        "WIN": 1524,
+        "LOSS": 1340
+      },
+      "redacted_examples": {
+        "WIN": {
+          "source_safe_id": "276a3f333666b4e35cfec3cc95de38252ad382a423a38defe67b51d09b872cc1",
+          "method_id": "LEAF-031ebfe58b389afff6",
+          "target": "rec_yd",
+          "selected_side": "over",
+          "actual_vs_line": "greater"
+        },
+        "LOSS": {
+          "source_safe_id": "aa61d2c69a118c6c8beb3a822ae6bbbd75577781e28a870f2600cb53af56ea96",
+          "method_id": "LEAF-031ebfe58b389afff6",
+          "target": "rec_yd",
+          "selected_side": "under",
+          "actual_vs_line": "greater"
+        }
+      },
+      "main_scores_sha256": "2cf3a8744bc35410bb9e59a4e3e0737403652c775a654c2f7a9042d74ad8d8d5"
+    },
+    {
+      "panel": "W6",
+      "score_views": 7760,
+      "law_products": 80,
+      "admitted_law_views": 4984,
+      "proper_probability_rows": 4984,
+      "side_triplets": 2560,
+      "K_lists": 720,
+      "parent_hash_unchanged": true,
+      "exact_complete_law_mask_equals_parent_P1": true,
+      "grade_states": {
+        "WIN": 2629,
+        "LOSS": 2355,
+        "ABSTAIN": 376
+      },
+      "redacted_examples": {
+        "WIN": {
+          "source_safe_id": "04a4403d1270a8dee0d6b35f8f714e69c9508c48dbc124cecd855986786d1d5f",
+          "method_id": "LEAF-0154abff7415b55242",
+          "target": "rush_rec_yd",
+          "selected_side": "under",
+          "actual_vs_line": "less"
+        },
+        "LOSS": {
+          "source_safe_id": "55bc47576809304b768d5c919d35ece3ff676a9ba7b4f697a238dfdf8c9448c3",
+          "method_id": "LEAF-0154abff7415b55242",
+          "target": "rush_rec_yd",
+          "selected_side": "under",
+          "actual_vs_line": "greater"
+        }
+      },
+      "main_scores_sha256": "5f5135d5838ffc31003966b589b8fbfe2e5dc86456599ef10c65c2177d8f7ee2"
+    },
+    {
+      "panel": "W7",
+      "score_views": 8000,
+      "law_products": 80,
+      "admitted_law_views": 4512,
+      "proper_probability_rows": 4512,
+      "side_triplets": 2640,
+      "K_lists": 720,
+      "parent_hash_unchanged": true,
+      "exact_complete_law_mask_equals_parent_P1": true,
+      "grade_states": {
+        "LOSS": 2094,
+        "WIN": 2418,
+        "ABSTAIN": 680
+      },
+      "redacted_examples": {
+        "LOSS": {
+          "source_safe_id": "fd07f05ae272ee9590ef616308329c0a6325385218f0a1d25b253667adce1bda",
+          "method_id": "LEAF-040a012e8ccd736c51",
+          "target": "rec",
+          "selected_side": "under",
+          "actual_vs_line": "greater"
+        },
+        "WIN": {
+          "source_safe_id": "2d22a0e01f96bb070500129d83fc69b20b76baf4f779476817b01d4aa1e2d35f",
+          "method_id": "LEAF-040a012e8ccd736c51",
+          "target": "rec",
+          "selected_side": "under",
+          "actual_vs_line": "less"
+        }
+      },
+      "main_scores_sha256": "5fab03adbeb2b76f2014abbf3c1c3f6145168b9140ec18df6fb1405502ffcaa4"
+    }
+  ],
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_grades": 0,
+  "scope": "Every newCDF split/direction/grade/loss/score count and side partition; representative underlyinghistogram restoration checked separately. No newbootstrap recomputation here.",
+  "limitations": [
+    "Multiple overlappinglaw products/views are not independentNFLobservations.",
+    "MODELED_APPEARANCE probabilities do not authenticate bookmaker settlement or prices.",
+    "No actualstatisticalpush occurs on these offeredhalfpointpanels; integerpush/void fixtures independently checked in priorenginecontinuityreceipt."
+  ],
+  "privacy_projection": "Numeric player-level witness values remain in existing private graded sources; public review retains only safe hashes, target, selected side and comparison relation."
+}

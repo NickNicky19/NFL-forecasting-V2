@@ -1,0 +1,11 @@
+{
+  "at_UTC": "2026-11-14T19:09:45.060112+00:00",
+  "state": "PREFIT_ADAPTER_REPAIR_ZERO_NFL_FITS",
+  "root_cause": "Safe JSON null feature cells require NumPy float conversion before allclose; object subtraction of None failed on the W1 startup vector before any fit",
+  "original_code_sha256": "dd60c1224532c82b685289b212f3ed3b2d2e3a46ed23243210ad1e1cdbfc64df",
+  "preserved_protocol": "RECOVERY_EXTENSION_PROTOCOL_V1.json",
+  "original_forecasts_changed": false,
+  "fit_calls_before_stop": 0,
+  "repair": "Cast decoded old features to float so null becomes NaN, preserving exact missingness comparison; append V2 protocol before fits. Also bind W8-9 latest training label clocks from saved fit receipts for alias admission, without changing forecasts.",
+  "new_NFL_scores": 0
+}

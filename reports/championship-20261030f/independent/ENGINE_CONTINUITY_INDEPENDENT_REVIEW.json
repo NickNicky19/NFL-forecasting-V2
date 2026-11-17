@@ -1,0 +1,247 @@
+{
+  "state": "PASS_CURRENT_ENGINE_CONTINUITY_AND_PROBABILITY_CONTRACTS",
+  "checked_at_utc": "2026-10-30T23:56:27.278460+00:00",
+  "unchanged_source_hashes": {
+    "nfl_v2/scoring.py": "b61c9cbbced8e5d64060ef1d14f6d60bec1edd9760fa8903a75c1b09503deadb",
+    "nfl_v2/prop_selection.py": "6fbf539145894cdc0952e9d860aca023b69d3bea738fbecaf752c5a996c30f01"
+  },
+  "retained_core_fixture_checks": 50,
+  "retained_timing_fixture_checks": 40,
+  "retained_fixture_scope": "Synthetic win/loss/push/void, fractional grid, malformed contracts, conditional/unconditional EV, forecast/quote clock violations, duplicate selections and fixed-versus-rolling K. These are software checks, not actual NFL wins/voids.",
+  "new_explicit_half_point_cases": [
+    {
+      "target": "pass_td",
+      "line": "1.5",
+      "actual": 0,
+      "side": "over",
+      "expected": "LOSS"
+    },
+    {
+      "target": "pass_td",
+      "line": "1.5",
+      "actual": 0,
+      "side": "under",
+      "expected": "WIN"
+    },
+    {
+      "target": "pass_td",
+      "line": "1.5",
+      "actual": 1,
+      "side": "over",
+      "expected": "LOSS"
+    },
+    {
+      "target": "pass_td",
+      "line": "1.5",
+      "actual": 1,
+      "side": "under",
+      "expected": "WIN"
+    },
+    {
+      "target": "pass_td",
+      "line": "1.5",
+      "actual": 2,
+      "side": "over",
+      "expected": "WIN"
+    },
+    {
+      "target": "pass_td",
+      "line": "1.5",
+      "actual": 2,
+      "side": "under",
+      "expected": "LOSS"
+    },
+    {
+      "target": "pass_td",
+      "line": "1.5",
+      "actual": 5,
+      "side": "over",
+      "expected": "WIN"
+    },
+    {
+      "target": "pass_td",
+      "line": "1.5",
+      "actual": 5,
+      "side": "under",
+      "expected": "LOSS"
+    },
+    {
+      "target": "pass_cmp",
+      "line": "19.5",
+      "actual": 0,
+      "side": "over",
+      "expected": "LOSS"
+    },
+    {
+      "target": "pass_cmp",
+      "line": "19.5",
+      "actual": 0,
+      "side": "under",
+      "expected": "WIN"
+    },
+    {
+      "target": "pass_cmp",
+      "line": "19.5",
+      "actual": 19,
+      "side": "over",
+      "expected": "LOSS"
+    },
+    {
+      "target": "pass_cmp",
+      "line": "19.5",
+      "actual": 19,
+      "side": "under",
+      "expected": "WIN"
+    },
+    {
+      "target": "pass_cmp",
+      "line": "19.5",
+      "actual": 20,
+      "side": "over",
+      "expected": "WIN"
+    },
+    {
+      "target": "pass_cmp",
+      "line": "19.5",
+      "actual": 20,
+      "side": "under",
+      "expected": "LOSS"
+    },
+    {
+      "target": "pass_cmp",
+      "line": "19.5",
+      "actual": 33,
+      "side": "over",
+      "expected": "WIN"
+    },
+    {
+      "target": "pass_cmp",
+      "line": "19.5",
+      "actual": 33,
+      "side": "under",
+      "expected": "LOSS"
+    },
+    {
+      "target": "rec",
+      "line": "4.5",
+      "actual": 0,
+      "side": "over",
+      "expected": "LOSS"
+    },
+    {
+      "target": "rec",
+      "line": "4.5",
+      "actual": 0,
+      "side": "under",
+      "expected": "WIN"
+    },
+    {
+      "target": "rec",
+      "line": "4.5",
+      "actual": 4,
+      "side": "over",
+      "expected": "LOSS"
+    },
+    {
+      "target": "rec",
+      "line": "4.5",
+      "actual": 4,
+      "side": "under",
+      "expected": "WIN"
+    },
+    {
+      "target": "rec",
+      "line": "4.5",
+      "actual": 5,
+      "side": "over",
+      "expected": "WIN"
+    },
+    {
+      "target": "rec",
+      "line": "4.5",
+      "actual": 5,
+      "side": "under",
+      "expected": "LOSS"
+    },
+    {
+      "target": "rec",
+      "line": "4.5",
+      "actual": 11,
+      "side": "over",
+      "expected": "WIN"
+    },
+    {
+      "target": "rec",
+      "line": "4.5",
+      "actual": 11,
+      "side": "under",
+      "expected": "LOSS"
+    },
+    {
+      "target": "rush_yd",
+      "line": "49.5",
+      "actual": -3,
+      "side": "over",
+      "expected": "LOSS"
+    },
+    {
+      "target": "rush_yd",
+      "line": "49.5",
+      "actual": -3,
+      "side": "under",
+      "expected": "WIN"
+    },
+    {
+      "target": "rush_yd",
+      "line": "49.5",
+      "actual": 49,
+      "side": "over",
+      "expected": "LOSS"
+    },
+    {
+      "target": "rush_yd",
+      "line": "49.5",
+      "actual": 49,
+      "side": "under",
+      "expected": "WIN"
+    },
+    {
+      "target": "rush_yd",
+      "line": "49.5",
+      "actual": 50,
+      "side": "over",
+      "expected": "WIN"
+    },
+    {
+      "target": "rush_yd",
+      "line": "49.5",
+      "actual": 50,
+      "side": "under",
+      "expected": "LOSS"
+    },
+    {
+      "target": "rush_yd",
+      "line": "49.5",
+      "actual": 170,
+      "side": "over",
+      "expected": "WIN"
+    },
+    {
+      "target": "rush_yd",
+      "line": "49.5",
+      "actual": 170,
+      "side": "under",
+      "expected": "LOSS"
+    }
+  ],
+  "current_probability_law_fixtures": 7,
+  "current_fractional_grid_push_fixture": 1,
+  "current_conditional_unconditional_EV_bridge": true,
+  "current_complement_and_monotonicity": true,
+  "real_panel_push_or_verified_voids": 0,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "current2026_Week8_outcomes_read": 0,
+  "limitations": "No probability or executable price is inferred for a retained point-only forecast or provider-labelled threshold."
+}

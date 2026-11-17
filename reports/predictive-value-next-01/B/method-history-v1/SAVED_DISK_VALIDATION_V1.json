@@ -1,0 +1,67 @@
+{
+  "id": "B-METHOD-HISTORY-SAVED-DISK-VALIDATION-v1",
+  "UTC": "2026-11-16T23:18:09.386044+00:00",
+  "state": "PASS_BOUNDED_SAVED_FILE_VALIDATION;ORIGINAL_WHOLE_BUILD_RSS_CHECK_REMAINS_FAILED",
+  "scope": "Independently reopen gzip from disk, gzip CRC and jq stream JSON syntax/complete counts, CSV unique configuration count and12category totals. No re-projection, new score, fit or waiver of failed RSS guard.",
+  "counts": {
+    "configurations": 15683,
+    "shards": 468,
+    "index_views": 620521,
+    "assigned_views": 617392,
+    "unassigned_views": 3129
+  },
+  "CSV_unique_configs": 15683,
+  "categories": 12,
+  "saved_files": [
+    {
+      "path": "reports/predictive-value-next-01/B/method-history-v1/CATEGORY_FAMILY_SUMMARY_V1.json",
+      "bytes": 472431,
+      "sha256": "ebd70eaf66050b8b376404809e359333c97950358ebd0dec1c75701e7d30b92d"
+    },
+    {
+      "path": "reports/predictive-value-next-01/B/method-history-v1/COMPLETENESS_AND_SOURCE_SCOPE_V1.json",
+      "bytes": 13057,
+      "sha256": "c0a11ef82d38b626212e3c0aaad8e6acf40f0986cfaa97e3870e2f7d7d2bc9e4"
+    },
+    {
+      "path": "reports/predictive-value-next-01/B/method-history-v1/METHOD_HISTORY_DETAIL_V1.json.gz",
+      "bytes": 11801875,
+      "sha256": "65f2215005efdb45dbfc24127820e7e457a9a3ba9139ab8cbb645e7172f14658"
+    },
+    {
+      "path": "reports/predictive-value-next-01/B/method-history-v1/PRE_STREAM_SERIALIZATION_FAILED_TOOL_V1.py.source.txt",
+      "bytes": 37679,
+      "sha256": "1792419a7515009132ef8cd39bc3faeba2543f291ad2029e49433ad5519bdaa1"
+    },
+    {
+      "path": "reports/predictive-value-next-01/B/method-history-v1/PROCEDURE_CONFIGURATIONS_V1.csv.gz",
+      "bytes": 494113,
+      "sha256": "0425018483e380d334e4dbaed35f712fbbe8d5cc8b45f6115c672694dddf2202"
+    },
+    {
+      "path": "reports/predictive-value-next-01/B/method-history-v1/README.md",
+      "bytes": 61088,
+      "sha256": "ea17e669118e91677c129d7489b1ecf93bb075373eb598ccf6afef08c992f4f4"
+    },
+    {
+      "path": "reports/predictive-value-next-01/B/method-history-v1/REPORTING_ACCOUNTING_V1.json",
+      "bytes": 939,
+      "sha256": "5d1e9814fbfb818b3c5eb3882b672e84ee244f7dc85a670f43d73a113ee225c8"
+    },
+    {
+      "path": "reports/predictive-value-next-01/B/method-history-v1/REPORTING_RESOURCE_STOP_V1.json",
+      "bytes": 1588,
+      "sha256": "ca9f44cbecb6c775f74360b3e5c1b01a06cab6e8f267c10fa92bf85ffcccd839"
+    }
+  ],
+  "process_CPU_seconds": 0.16078612,
+  "child_CPU_seconds": 32.588293,
+  "wall_seconds": 32.05571347699879,
+  "parent_peak_RSS_bytes": 42696704,
+  "child_max_RSS_bytes": 10878976,
+  "new_fits": 0,
+  "new_grades": 0,
+  "new_source_GETs": 0,
+  "pilot_reserve_used": 0,
+  "accounting_limit": "Process/import/orchestration outside this exact check not completely metered; prior guard failure, scans and unknown tails remain in separate accounting."
+}

@@ -1,0 +1,78 @@
+{
+  "id": "B-METHOD-HISTORY-CURRENT-PILOT-SUPPLEMENT-v1",
+  "UTC": "2026-11-16T23:20:13.721794+00:00",
+  "same_reporting_view": "Append to existing-index METHOD_HISTORY_DETAIL_V1.json.gz, whose base index predates this pilot; no second scientific registry. Exact new scored rows are admitted only through root canonical scorer/index.",
+  "family": "Pretrained tabular in-context direct classifier",
+  "origin_owner_repository": "B / NickNicky19/NFL-forecasting-V2",
+  "procedure": "B-TABICLV2-CMP-DIRECT-PILOT-v1",
+  "category": "pass_cmp",
+  "closest_prior": "Existing ordinary direct-threshold classifier and fixed same-information logistic comparator",
+  "difference": "One pinned pretrained TabICLv2 relationship learner on original own-history features plus exact half-point line, with same transforms/training context/fallback; no additional football block.",
+  "information_path": "LINE_CONDITIONED; not a count-mean/numerical forecast product",
+  "source_receipt": {
+    "path": "reports/predictive-value-next-01/B/execution-authorization-02/POST_CANARY_COST_GATE_V1.json",
+    "sha256": "a8016da592b8428c17591b4e46ceb29140d307154c7ee8242b0510fa302d422d",
+    "state": "SAFE_STOP_BEFORE_W8_W9_CPU_PROJECTION_DOES_NOT_FIT"
+  },
+  "execution_milestones": {
+    "proposed": true,
+    "implemented": true,
+    "authorized_once": true,
+    "runtime_safe_schema_input_checks": "PASS in owner receipt; scope/source vintage limits retained",
+    "attempted": true,
+    "context_builds_and_logistic_fits": "One each at W7; no W8/W9 fits",
+    "predictions_generated": {
+      "W7": {
+        "candidate": 28,
+        "ordinary_comparator": 28
+      }
+    },
+    "actual_line_scored": "PENDING_ROOT_COMPLETION_RECEIPT",
+    "primary_activated": false
+  },
+  "populations": {
+    "complete_system_W5_W9": {
+      "eligible": 142,
+      "planned_learned": 86,
+      "availability": "PARTIAL; W8/W9 execution missing, not losses or abstentions"
+    },
+    "reference_fallback_W5_W6": {
+      "rows": 56,
+      "method": "Exact unchanged retained B0 LAW"
+    },
+    "learned_model_W7_W9": {
+      "requested_weeks": [
+        7,
+        8,
+        9
+      ],
+      "generated_weeks": [
+        7
+      ],
+      "missing_weeks": [
+        8,
+        9
+      ],
+      "generated_rows": 28,
+      "training_rows": 28
+    }
+  },
+  "runtime_result": "SAFE_STOP_BEFORE_W8_W9_CPU_PROJECTION_DOES_NOT_FIT",
+  "quality_inspected_before_stop": false,
+  "frozen_cost_projection": {
+    "CPU_charged_before_future": 167.742316291,
+    "cap": 600,
+    "completion_CPU_reserve": 180,
+    "headroom_for_future_CPU": 252.257683709,
+    "projected_remaining_CPU": 508.05139332094063,
+    "projected_total_CPU_with_reserve": 855.7937096119406
+  },
+  "scientific_disposition": "UNRESOLVED_PARTIAL_PILOT; no forecasting loss inferred from runtime stop; no primary promotion",
+  "own_Over_Under_combined": null,
+  "probability_scores": null,
+  "numerical_MAE": "N/A classifier has no count point",
+  "five_week_status": "No full five-week learned product; only W7 learned generation, W5/W6 reference fallback, W8/W9 unexecuted. Exact primary admission not authorized.",
+  "next_action": "Root complete supported grading/independent checks/retention within existing reserves and append exact immutable receipt. Further W8/W9 work requires separately authorized bounded completion; no allowance is created by this catalog.",
+  "new_reporting_fit_or_grade": 0,
+  "pilot_CPU_used_by_catalog": 0
+}

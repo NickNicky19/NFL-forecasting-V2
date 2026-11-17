@@ -1,0 +1,83 @@
+{
+  "state": "PASS_PINNED_SAFE_RUNTIME_SOURCE_RETENTION",
+  "checkpoint_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+  "checkpoint_bytes": 110368038,
+  "checkpoint_config_sha256": "611cc4178e144b4804a6e805b8161273de382c37a49c1f05f860ed83f7346133",
+  "state_tensor_count": 391,
+  "state_parameters": 27552258,
+  "torch": "2.6.0+cpu",
+  "tabicl": "2.2.0_PINNED_SOURCE",
+  "source_commit": "a626a1b67049b0b1748ebe8c92f7df40aaebd334",
+  "dependency_lock_sha256": "a75a8f2b6a430d58c753d7cd2b4d6f4f7b6f04584fcd5ed4e0845f5f0bdf28e3",
+  "source_license_sha256": "c959a1db8bc4b2f41c315a9b077c822372a4a84e1a83636bdb962715aaae6874",
+  "safe_loader": "torch.load weights_only=True; no added globals or pickle estimator",
+  "storage_policy": "No KV/context serialization or disk offload; explicit local checkpoint, auto-download disabled",
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "libgomp",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "libgomp",
+      "version": null
+    }
+  ],
+  "NFL_fits": 0,
+  "NFL_data_design_mutations": [
+    {
+      "week": 7,
+      "mutated_future_rows": 8774,
+      "training_rows": 28,
+      "query_rows": 28,
+      "train_joint_commitment_sha256": "85d619c3c1e2c4a4527069fe0e498899edc50bc1dab83d9c27bf08aedd48e8fd",
+      "query_joint_commitment_sha256": "8de9a7928210b15961d8f29bd589c84a6d14c98e2debfb6fa52206fe0446a3b8",
+      "raw_and_transformed_design_equal": true
+    },
+    {
+      "week": 8,
+      "mutated_future_rows": 12014,
+      "training_rows": 56,
+      "query_rows": 28,
+      "train_joint_commitment_sha256": "3cffa5b51a6fed37a7afd7d656f41bb180856a3c3e272998fbd9ee1868dc2893",
+      "query_joint_commitment_sha256": "a1b1aa7e5fdbc051c347f3af3865ee06ebd268e89814c31dd21b67fcafdf3fe5",
+      "raw_and_transformed_design_equal": true
+    },
+    {
+      "week": 9,
+      "mutated_future_rows": 15184,
+      "training_rows": 86,
+      "query_rows": 30,
+      "train_joint_commitment_sha256": "b5005e89bf78d8017bd7e11d9d6fe963d8e7d42057e1bf5230d67f4516f0ef77",
+      "query_joint_commitment_sha256": "a0f3fc06b18c31fdcc48283ab2c0f67ca71bb3207a6a8d0324a409c21f80a237",
+      "raw_and_transformed_design_equal": true
+    }
+  ],
+  "source_retention": "Existing immutable QB context, W5-8 source restorations and W9fe369 original archive/qualified identity bridge; private grade re-creatable, never publicly serialized.",
+  "CPU_seconds": 16.563628085999998,
+  "wall_seconds": 16.265256274997228,
+  "public_metadata_qualification": "Internal library file paths removed from public receipt; original bytes retained in existing private working cache, not claimed durable."
+}

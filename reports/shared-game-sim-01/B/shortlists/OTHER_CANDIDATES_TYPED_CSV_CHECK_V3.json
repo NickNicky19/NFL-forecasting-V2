@@ -1,0 +1,278 @@
+{
+  "id": "B_SIM_OTHER7_EMPIRICAL_TYPED_CSV_CHECK_V3",
+  "supplements": "OTHER_CANDIDATES_TYPED_BODY_CHECK_V2.json;V1/V2 preserved",
+  "manifest_sha256": "bcc9d4d059153160531b3b26670c91b5940fbb6a287c93d6bfac78721dbafc3d",
+  "exact_packet_commitment": {
+    "sha256": "52d0c4476ac8a3d45b6128fd092b94c73bf6f9a5c9408f2878df8e33e03a513f",
+    "bytes": 7561537
+  },
+  "source_receipt": {
+    "repository": "NickNicky19/NFL-forecasting-V2",
+    "commit": "98c0e65800902b1840713dd3480a446f2219ef14",
+    "path": "reports/continuation-20261029/history-diagnostic-v1/RUN_RECEIPT.json",
+    "sha256": "78046ee5d1617eb8080a38df0dacdc55d176f2ffb52889651c98d7a20cc20685",
+    "bytes": 2975,
+    "immutable_URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/98c0e65800902b1840713dd3480a446f2219ef14/reports/continuation-20261029/history-diagnostic-v1/RUN_RECEIPT.json",
+    "scope": "Existing public-safe source/configuration/aggregate/receipt bytes, not a raw private packet transfer."
+  },
+  "serializer_authority": "Existing exact source empirical_benchmark.py uses standard-library gzip text plus csv.DictWriter at lines285-316. This supplement uses gzip+csv.DictReader only. No pickle/joblib/dill/model object loading.",
+  "complete_packet_forecast_row_count_matches_original_receipt": true,
+  "complete_packet_rows": 940812,
+  "header_fields": [
+    "run_id",
+    "season",
+    "week",
+    "game_id",
+    "player_id",
+    "position",
+    "target",
+    "population",
+    "history_regime",
+    "product",
+    "prediction",
+    "actual",
+    "participation",
+    "fallback",
+    "own_n",
+    "used_n",
+    "cutoff_epoch_utc",
+    "latest_training_available_epoch_utc",
+    "fit_floor",
+    "fit_ceiling",
+    "evidence_tier"
+  ],
+  "checks": [
+    {
+      "candidate_id": "B-SIM01-67e9e4bbbb14aa34f8",
+      "category": "rush_yd",
+      "history": "H-RECENT",
+      "output": "lower_median",
+      "state": "PASS_SAFE_GZIP_CSV_HEADER_IDENTITY_POINT_MISSINGNESS_FALLBACK_AND_RETAINED_COUNT_BINDINGS",
+      "checks": {
+        "rows": 847,
+        "finite_point_rows": 847,
+        "missing_prediction_rows": 0,
+        "fallback_rows": 48,
+        "constant_zero_fallback_rows": 0,
+        "missing_actual_cells": 3,
+        "latest_training_clock_absent_rows": 0,
+        "unique_query_product_rows": 847,
+        "actual_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "exact_code_binding": {
+        "repository": "NickNicky19/NFL-forecasting-V2",
+        "commit": "98c0e65800902b1840713dd3480a446f2219ef14",
+        "path": "nfl_v2/empirical_benchmark.py",
+        "sha256": "53ea90595bdc83a11289ef4daeec795b0bb320ce23b8c8ee8dddcdb6ca88d085",
+        "bytes": 24136,
+        "immutable_URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/98c0e65800902b1840713dd3480a446f2219ef14/nfl_v2/empirical_benchmark.py",
+        "scope": "Existing public-safe source/configuration/aggregate/receipt bytes, not a raw private packet transfer."
+      },
+      "retained_metric_source_binding": {
+        "repository": "NickNicky19/NFL-forecasting-V2",
+        "commit": "98c0e65800902b1840713dd3480a446f2219ef14",
+        "path": "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+        "sha256": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+        "bytes": 3064401,
+        "immutable_URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/98c0e65800902b1840713dd3480a446f2219ef14/reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+        "scope": "Existing public-safe source/configuration/aggregate/receipt bytes, not a raw private packet transfer."
+      },
+      "source_row_index": 10148,
+      "procedure_identity_mapping": "Source run_id + target + history_regime + product; original CSV has no procedure_id, no law parameters, no corrector fields. Alias to known-target-time direction product requires separate canonical adapter admission.",
+      "forecast_input_exclusions": "actual and retrospective participation fields remain grading/cohort-only; not admitted forecast features.",
+      "probability_scope": "Saved point only; no invented probabilities or count/yard law."
+    },
+    {
+      "candidate_id": "B-SIM01-3721ee2031f785793b",
+      "category": "rush_att",
+      "history": "H-RECENT",
+      "output": "empirical_mean",
+      "state": "PASS_SAFE_GZIP_CSV_HEADER_IDENTITY_POINT_MISSINGNESS_FALLBACK_AND_RETAINED_COUNT_BINDINGS",
+      "checks": {
+        "rows": 847,
+        "finite_point_rows": 847,
+        "missing_prediction_rows": 0,
+        "fallback_rows": 48,
+        "constant_zero_fallback_rows": 0,
+        "missing_actual_cells": 3,
+        "latest_training_clock_absent_rows": 0,
+        "unique_query_product_rows": 847,
+        "actual_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "exact_code_binding": {
+        "repository": "NickNicky19/NFL-forecasting-V2",
+        "commit": "98c0e65800902b1840713dd3480a446f2219ef14",
+        "path": "nfl_v2/empirical_benchmark.py",
+        "sha256": "53ea90595bdc83a11289ef4daeec795b0bb320ce23b8c8ee8dddcdb6ca88d085",
+        "bytes": 24136,
+        "immutable_URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/98c0e65800902b1840713dd3480a446f2219ef14/nfl_v2/empirical_benchmark.py",
+        "scope": "Existing public-safe source/configuration/aggregate/receipt bytes, not a raw private packet transfer."
+      },
+      "retained_metric_source_binding": {
+        "repository": "NickNicky19/NFL-forecasting-V2",
+        "commit": "98c0e65800902b1840713dd3480a446f2219ef14",
+        "path": "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+        "sha256": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+        "bytes": 3064401,
+        "immutable_URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/98c0e65800902b1840713dd3480a446f2219ef14/reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+        "scope": "Existing public-safe source/configuration/aggregate/receipt bytes, not a raw private packet transfer."
+      },
+      "source_row_index": 7466,
+      "procedure_identity_mapping": "Source run_id + target + history_regime + product; original CSV has no procedure_id, no law parameters, no corrector fields. Alias to known-target-time direction product requires separate canonical adapter admission.",
+      "forecast_input_exclusions": "actual and retrospective participation fields remain grading/cohort-only; not admitted forecast features.",
+      "probability_scope": "Saved point only; no invented probabilities or count/yard law."
+    },
+    {
+      "candidate_id": "B-SIM01-42da71d8bb5df4f101",
+      "category": "rec_yd",
+      "history": "H-RECENT",
+      "output": "lower_median",
+      "state": "PASS_SAFE_GZIP_CSV_HEADER_IDENTITY_POINT_MISSINGNESS_FALLBACK_AND_RETAINED_COUNT_BINDINGS",
+      "checks": {
+        "rows": 2152,
+        "finite_point_rows": 2152,
+        "missing_prediction_rows": 0,
+        "fallback_rows": 130,
+        "constant_zero_fallback_rows": 0,
+        "missing_actual_cells": 34,
+        "latest_training_clock_absent_rows": 0,
+        "unique_query_product_rows": 2152,
+        "actual_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "exact_code_binding": {
+        "repository": "NickNicky19/NFL-forecasting-V2",
+        "commit": "98c0e65800902b1840713dd3480a446f2219ef14",
+        "path": "nfl_v2/empirical_benchmark.py",
+        "sha256": "53ea90595bdc83a11289ef4daeec795b0bb320ce23b8c8ee8dddcdb6ca88d085",
+        "bytes": 24136,
+        "immutable_URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/98c0e65800902b1840713dd3480a446f2219ef14/nfl_v2/empirical_benchmark.py",
+        "scope": "Existing public-safe source/configuration/aggregate/receipt bytes, not a raw private packet transfer."
+      },
+      "retained_metric_source_binding": {
+        "repository": "NickNicky19/NFL-forecasting-V2",
+        "commit": "98c0e65800902b1840713dd3480a446f2219ef14",
+        "path": "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+        "sha256": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+        "bytes": 3064401,
+        "immutable_URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/98c0e65800902b1840713dd3480a446f2219ef14/reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+        "scope": "Existing public-safe source/configuration/aggregate/receipt bytes, not a raw private packet transfer."
+      },
+      "source_row_index": 6283,
+      "procedure_identity_mapping": "Source run_id + target + history_regime + product; original CSV has no procedure_id, no law parameters, no corrector fields. Alias to known-target-time direction product requires separate canonical adapter admission.",
+      "forecast_input_exclusions": "actual and retrospective participation fields remain grading/cohort-only; not admitted forecast features.",
+      "probability_scope": "Saved point only; no invented probabilities or count/yard law."
+    },
+    {
+      "candidate_id": "B-SIM01-93c4330014bdb92d48",
+      "category": "anytime_td",
+      "history": "H-RECENT",
+      "output": "event_probability",
+      "state": "PASS_SAFE_GZIP_CSV_HEADER_IDENTITY_POINT_MISSINGNESS_FALLBACK_AND_RETAINED_COUNT_BINDINGS",
+      "checks": {
+        "rows": 2152,
+        "finite_point_rows": 2152,
+        "missing_prediction_rows": 0,
+        "fallback_rows": 130,
+        "constant_zero_fallback_rows": 0,
+        "missing_actual_cells": 34,
+        "latest_training_clock_absent_rows": 0,
+        "unique_query_product_rows": 2152,
+        "actual_weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "exact_code_binding": {
+        "repository": "NickNicky19/NFL-forecasting-V2",
+        "commit": "98c0e65800902b1840713dd3480a446f2219ef14",
+        "path": "nfl_v2/empirical_benchmark.py",
+        "sha256": "53ea90595bdc83a11289ef4daeec795b0bb320ce23b8c8ee8dddcdb6ca88d085",
+        "bytes": 24136,
+        "immutable_URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/98c0e65800902b1840713dd3480a446f2219ef14/nfl_v2/empirical_benchmark.py",
+        "scope": "Existing public-safe source/configuration/aggregate/receipt bytes, not a raw private packet transfer."
+      },
+      "retained_metric_source_binding": {
+        "repository": "NickNicky19/NFL-forecasting-V2",
+        "commit": "98c0e65800902b1840713dd3480a446f2219ef14",
+        "path": "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+        "sha256": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+        "bytes": 3064401,
+        "immutable_URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/98c0e65800902b1840713dd3480a446f2219ef14/reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+        "scope": "Existing public-safe source/configuration/aggregate/receipt bytes, not a raw private packet transfer."
+      },
+      "source_row_index": 637,
+      "procedure_identity_mapping": "Source run_id + target + history_regime + product; original CSV has no procedure_id, no law parameters, no corrector fields. Alias to known-target-time direction product requires separate canonical adapter admission.",
+      "forecast_input_exclusions": "actual and retrospective participation fields remain grading/cohort-only; not admitted forecast features.",
+      "probability_scope": "Saved binary-event frequency only; no count/yard PMF implied."
+    }
+  ],
+  "scope_limits": [
+    "No actual outcome values were parsed or graded; only empty-cell presence checked against retained missing_actual_n.",
+    "No native fallback or missing prediction converted into a loss/abstention/unknownzero. Constant-zero predictions verified only where explicitly declared original fallback.",
+    "Point/schema/source-count check, not fit reproduction, authenticated pregame publication, exact-line crossing probability, selection membership or current websiteframe admission.",
+    "Canonical player/game/book/line/cutoff/outcome-version join and event-effective eligibility remain separate; participation column is retrospective and cannot silently define the future board."
+  ],
+  "resource": {
+    "reporting_CPU_seconds": 3.403031209,
+    "peak_RSS_bytes": 18563072,
+    "source_HTTP_GETs": 0,
+    "new_fits_inference_predictions_grades": 0,
+    "closed_scientific_budget_charges": 0,
+    "metering": "Tool/controller overhead incompletely metered; reporting authority only."
+  },
+  "law_query_admission_clarification": {
+    "state": "LAW_QUERY_BINDING_REQUIRED",
+    "affected_primary_law_candidates": [
+      {
+        "candidate_id": "B-SIM01-c0b1b9acab53581d97",
+        "category": "rec",
+        "procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:known-target-time-v1",
+        "primary_output": "saved_complete_leaf_law",
+        "status": "LAW_QUERY_BINDING_REQUIRED",
+        "saved_point_sibling": "Point summary/mean/median bytes do not fill saved_complete_leaf_law or arbitrary-threshold probability product."
+      },
+      {
+        "candidate_id": "B-SIM01-ccd2e93409415f7dfe",
+        "category": "rec_yd",
+        "procedure_id": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:known-target-time-v1",
+        "primary_output": "saved_complete_leaf_law",
+        "status": "LAW_QUERY_BINDING_REQUIRED",
+        "saved_point_sibling": "Point summary/mean/median bytes do not fill saved_complete_leaf_law or arbitrary-threshold probability product."
+      }
+    ],
+    "separate_full_CDF_or_model_support_query_proof_admitted_by_this_check": false,
+    "existing_scope": "Existing21-model restoration receipt verifies mean/lower-median outputs only in its exact original bindings, not arbitrary-threshold Leaf CDF or full-law parity. Forecast packet leaf_ids alone are insufficient.",
+    "minimum_permitted_next_action": "B must bind exact safe retained model/support/weights/role prior and query/design to its law adapter, or bind already-retained exact saved-threshold probabilities to identical target/line/side/push contract. No new-threshold readiness follows from this body/schema PASS. A executes only an authorized protected join after that product handoff.",
+    "exact_saved_threshold_scope": "No separate exact-threshold probability body was admitted by this metadata/schema check. Such a record can count only after exact line/event/outcome contract and immutable forecast bindings qualify.",
+    "family_lineage": "Own-history/D2/C02 Leaf recipes remain linked empirical-Leaf learner-family variants with distinct information/history/product policies; no independent-family count is inferred from recipe/output counts."
+  }
+}

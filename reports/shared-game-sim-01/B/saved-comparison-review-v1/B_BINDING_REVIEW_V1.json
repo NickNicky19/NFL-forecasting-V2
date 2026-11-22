@@ -1,0 +1,177 @@
+{
+  "id": "B_SHARED_SIM_BINDING_REVIEW_V1",
+  "scope": "Independent B representative saved-source reconstruction, binding and readiness review only; no full rejoin/scorer/fit/simulator.",
+  "state": "PASS_SIX_REPRESENTATIVE_POINT_SOURCE_BINDINGS;CLOCK_AND_LAW_ADMISSION_LIMITS_RETAINED",
+  "reviewed_output": {
+    "path": "reports/shared-game-sim-01/B/execution-follow-through-v1/B_ORDINAL_FROZEN_OUTPUTS_V3.json.gz",
+    "sha256": "4847b6a6152e7db3830f93bf451e27c6127fec274b6631e7c6055bb6daaec60d",
+    "bytes": 90346,
+    "canonical_case_sha256": "19ccf34b3037e1790ee3b2bf61d3357f33e63916779c2f36023a232f6a66ea18",
+    "freeze_sha256": "83468a702b6c52ea151511e6ad4ab086f4b1abf64d2039cd326f86ff0b02f6ad"
+  },
+  "canonical_frame_full_case_count": 3474,
+  "candidate_count": 36,
+  "all_category_relevant_ordinals_retained_once": "PASS",
+  "whole_output_status_counts": {
+    "AVAILABLE": 5338,
+    "MISSING_FROZEN_ORIGIN_OR_QUERY": 3228,
+    "MISSING_PRIOR_EXPLICIT_PLAYER_ID": 9,
+    "LAW_QUERY_BINDING_REQUIRED": 1847
+  },
+  "representative_checks": [
+    {
+      "candidate_id": "B-SIM01-9e315e876799c2e77d",
+      "category": "rush_yd",
+      "output": "absolute_error_point",
+      "case_ordinal": 740,
+      "selection": "First AVAILABLE ordinal, preferring a recorded fallback where present; no outcome availability/correctness criterion.",
+      "week": 4,
+      "source_packet_SHA256": [
+        "90e7f876dc2544119f6f696643406cd163748a837f62396f55cb2f7c728a5bde"
+      ],
+      "source_matches": 1,
+      "point_exact_equality": "PASS; direct independently parsed saved source scalar equals frozen ordinal point; no tolerance relaxation.",
+      "fallback_exact_equality": "PASS",
+      "independent_identity_role_week_team_binding": "PASS; own exact prior-event-week Sleeper\u2192GSIS relation and retained ESPN-event schedule fields, no names/status inference.",
+      "source_clock_review": "PASS_NO_CONSUMED_FUTURE_CLOCK_IN_REPRESENTATIVE; original source clocks do not authenticate publication/T90.",
+      "source_origin_after_T90": true,
+      "handoff_source_clock_state": "DECLARED_KICKOFF_LEFT_LIMIT;OBSERVED_LATEST_BEFORE_T90",
+      "handoff_primary_T90_comparability": "ORIGINAL_ORIGIN_DIFFERS;C_ADMISSION_REQUIRED",
+      "law_crossings": "NOT_APPLICABLE_TO_POINT_PRODUCT; no probability invented from gap."
+    },
+    {
+      "candidate_id": "B-SIM01-0191d8e94ca3c95b6f",
+      "category": "rush_yd",
+      "output": "lower_median",
+      "case_ordinal": 836,
+      "selection": "First AVAILABLE ordinal, preferring a recorded fallback where present; no outcome availability/correctness criterion.",
+      "week": 5,
+      "source_packet_SHA256": [
+        "4db4d0f08f53a886a007ad7cc5eae652b2fced311cafd7073286b1696e4dbb70"
+      ],
+      "source_matches": 1,
+      "point_exact_equality": "PASS; direct independently parsed saved source scalar equals frozen ordinal point; no tolerance relaxation.",
+      "fallback_exact_equality": "PASS",
+      "independent_identity_role_week_team_binding": "PASS; own exact prior-event-week Sleeper\u2192GSIS relation and retained ESPN-event schedule fields, no names/status inference.",
+      "source_clock_review": "PASS_NO_CONSUMED_FUTURE_CLOCK_IN_REPRESENTATIVE; original source clocks do not authenticate publication/T90.",
+      "source_origin_after_T90": true,
+      "handoff_source_clock_state": "DECLARED_KICKOFF_LEFT_LIMIT;SOURCE_AVAILABILITY_PARTIAL_OR_NOT_T90",
+      "handoff_primary_T90_comparability": "ORIGINAL_ORIGIN_DIFFERS;C_ADMISSION_REQUIRED",
+      "law_crossings": "NOT_APPLICABLE_TO_POINT_PRODUCT; no probability invented from gap."
+    },
+    {
+      "candidate_id": "B-SIM01-67e9e4bbbb14aa34f8",
+      "category": "rush_yd",
+      "output": "lower_median",
+      "case_ordinal": 740,
+      "selection": "First AVAILABLE ordinal, preferring a recorded fallback where present; no outcome availability/correctness criterion.",
+      "week": 4,
+      "source_packet_SHA256": [
+        "52d0c4476ac8a3d45b6128fd092b94c73bf6f9a5c9408f2878df8e33e03a513f"
+      ],
+      "source_matches": 1,
+      "point_exact_equality": "PASS; direct independently parsed saved source scalar equals frozen ordinal point; no tolerance relaxation.",
+      "fallback_exact_equality": "PASS",
+      "independent_identity_role_week_team_binding": "PASS; own exact prior-event-week Sleeper\u2192GSIS relation and retained ESPN-event schedule fields, no names/status inference.",
+      "source_clock_review": "PASS_NO_CONSUMED_FUTURE_CLOCK_IN_REPRESENTATIVE; original source clocks do not authenticate publication/T90.",
+      "source_origin_after_T90": true,
+      "handoff_source_clock_state": "DECLARED_KICKOFF_LEFT_LIMIT;SOURCE_AVAILABILITY_PARTIAL_OR_NOT_T90",
+      "handoff_primary_T90_comparability": "CLOCK_FIELDS_NOT_SUFFICIENT_FOR_AUTHENTICATION",
+      "law_crossings": "NOT_APPLICABLE_TO_POINT_PRODUCT; no probability invented from gap."
+    },
+    {
+      "candidate_id": "B-SIM01-6bac0483d2935fa2c3",
+      "category": "rush_att",
+      "output": "lower_median",
+      "case_ordinal": 1179,
+      "selection": "First AVAILABLE ordinal, preferring a recorded fallback where present; no outcome availability/correctness criterion.",
+      "week": 4,
+      "source_packet_SHA256": [
+        "bcb60859b2d5c43bf99423fdf3a9369376a5c91707c0b5854aa466cac641b07d"
+      ],
+      "source_matches": 1,
+      "point_exact_equality": "PASS; direct independently parsed saved source scalar equals frozen ordinal point; no tolerance relaxation.",
+      "fallback_exact_equality": "PASS",
+      "independent_identity_role_week_team_binding": "PASS; own exact prior-event-week Sleeper\u2192GSIS relation and retained ESPN-event schedule fields, no names/status inference.",
+      "source_clock_review": "PASS_NO_CONSUMED_FUTURE_CLOCK_IN_REPRESENTATIVE; original source clocks do not authenticate publication/T90.",
+      "source_origin_after_T90": true,
+      "handoff_source_clock_state": "DECLARED_KICKOFF_LEFT_LIMIT;OBSERVED_LATEST_BEFORE_T90",
+      "handoff_primary_T90_comparability": "ORIGINAL_ORIGIN_DIFFERS;C_ADMISSION_REQUIRED",
+      "law_crossings": "NOT_APPLICABLE_TO_POINT_PRODUCT; no probability invented from gap."
+    },
+    {
+      "candidate_id": "B-SIM01-4bd13ee88b054e1232",
+      "category": "rush_att",
+      "output": "squared_error_mean",
+      "case_ordinal": 1179,
+      "selection": "First AVAILABLE ordinal, preferring a recorded fallback where present; no outcome availability/correctness criterion.",
+      "week": 4,
+      "source_packet_SHA256": [
+        "0760cd3463d83dc3d41ad6865ae8ef8885b793c389a9ad9e642cdb0e8c625237"
+      ],
+      "source_matches": 1,
+      "point_exact_equality": "PASS; direct independently parsed saved source scalar equals frozen ordinal point; no tolerance relaxation.",
+      "fallback_exact_equality": "PASS",
+      "independent_identity_role_week_team_binding": "PASS; own exact prior-event-week Sleeper\u2192GSIS relation and retained ESPN-event schedule fields, no names/status inference.",
+      "source_clock_review": "PASS_NO_CONSUMED_FUTURE_CLOCK_IN_REPRESENTATIVE; original source clocks do not authenticate publication/T90.",
+      "source_origin_after_T90": true,
+      "handoff_source_clock_state": "DECLARED_KICKOFF_LEFT_LIMIT;OBSERVED_LATEST_BEFORE_T90",
+      "handoff_primary_T90_comparability": "ORIGINAL_ORIGIN_DIFFERS;C_ADMISSION_REQUIRED",
+      "law_crossings": "NOT_APPLICABLE_TO_POINT_PRODUCT; no probability invented from gap."
+    },
+    {
+      "candidate_id": "B-SIM01-2d9fb1d864929a32c4",
+      "category": "rec",
+      "output": "mean",
+      "case_ordinal": 1600,
+      "selection": "First AVAILABLE ordinal, preferring a recorded fallback where present; no outcome availability/correctness criterion.",
+      "week": 5,
+      "source_packet_SHA256": [
+        "14af42eba2ba059ba4e9e64135d2acfb83df5f895c3cca060cd7d854b22fc3df"
+      ],
+      "source_matches": 1,
+      "point_exact_equality": "PASS; direct independently parsed saved source scalar equals frozen ordinal point; no tolerance relaxation.",
+      "fallback_exact_equality": "PASS",
+      "independent_identity_role_week_team_binding": "PASS; own exact prior-event-week Sleeper\u2192GSIS relation and retained ESPN-event schedule fields, no names/status inference.",
+      "source_clock_review": "PASS_NO_CONSUMED_FUTURE_CLOCK_IN_REPRESENTATIVE; original source clocks do not authenticate publication/T90.",
+      "source_origin_after_T90": true,
+      "handoff_source_clock_state": "DECLARED_KICKOFF_LEFT_LIMIT;OBSERVED_LATEST_BEFORE_T90",
+      "handoff_primary_T90_comparability": "ORIGINAL_ORIGIN_DIFFERS;C_ADMISSION_REQUIRED",
+      "law_crossings": "NOT_APPLICABLE_TO_POINT_PRODUCT; no probability invented from gap."
+    }
+  ],
+  "source_identity_scope": "Current-vintage exact ID relation from prior REGevent-week roster rows and source schedule espn field. Canonical player namespace is Sleeper, not the earlier blanket ESPN-player claim. No roster availability, role clearance or authentic historical vintage follows.",
+  "clock_findings": [
+    {
+      "scope": "CSV empirical source projection",
+      "state": "UNVERIFIED_IN_ORDINAL_METADATA",
+      "finding": "Original cutoff_epoch_utc and latest_training_available_epoch_utc are not preserved by current join projection. Independent representative source clocks were checked here. Generic kickoff-left-limit and T90 authentication remain conditional; do not claim observed pregame availability or no source consumption from missing fields.",
+      "minimum_action": "Preserve original source clock field names/values in a permitted private audit supplement or retain this explicit verification limit before common-horizon admission."
+    },
+    {
+      "scope": "Kickoff origin versus C T90",
+      "state": "CONDITIONAL_OR_UNRESOLVED",
+      "finding": "Original B origin/filter boundary at kickoff is not an observation timestamp. An earlier latest-source clock does not make the complete B query/fit policy T90-equivalent. Existing V2 conservative mask and V3 origin-scope view remain different products."
+    }
+  ],
+  "unknowns_and_fallback": "All category-relevant ordinal cases, including unavailable/unknown-outcome opportunities, remain in the handoff. This review did not inspect target outcomes or select representatives by eventual gradability. Missing/blocked outputs remain unavailable; representative fallback tags matched exact saved sources. Whole fallback arithmetic remains author/other independent scope, not regraded here.",
+  "selection_readiness": "SAVED_FORECAST_BINDING_ONLY; no own-list/TopK/TopPicks eligibility, tie membership, abstention, capacity or outcome arithmetic replay performed. Requires exact frozen canonical batches, policies, source horizon and unknown retention.",
+  "law_scope": "rec and rec_yd saved_complete_leaf_law products remain LAW_QUERY_BINDING_REQUIRED; leaf_ids/mean/median do not supply arbitrary-threshold PMFs. This point-focused review performs no law crossing reproduction; modern-law source reproductions remain separate pending checks.",
+  "strict_reproduction_failures": "C1 and opportunity team-fit remain FAILED; these saved-point equalities neither reproduce fits nor supersede those failures.",
+  "C_simulator_verification": "NOT_RUN; no C worker inputs/design mutation, conservation, S-P/D-P probability generation, fits or score acceptance.",
+  "metadata_helper_failures": [
+    "Initial inspection helper had a Python conditional-expression typo before source access; corrected, no scientific computation.",
+    "Initially assumed outputV3 binds JOIN_FREEZE_V3; exact retained output hash instead binds legitimate JOIN_FREEZE_V4. Checked V1-4 hashes once, then used the actual immutable V4 binding. No tolerance, point, source or forecast changed."
+  ],
+  "resource": {
+    "controlled_CPU_seconds": 4.005076989000001,
+    "controlled_wall_seconds": 4.024342683000214,
+    "peak_RSS_bytes": 138825728,
+    "limits_CPU_wall": [
+      10,
+      120
+    ],
+    "metering": "This representative review worker only; prior metadata/tool/controller overhead not completely metered. No C/closed scientific budget charge.",
+    "new_source_GETs_models_fits_inference_grades_fullcasejoins": 0
+  }
+}

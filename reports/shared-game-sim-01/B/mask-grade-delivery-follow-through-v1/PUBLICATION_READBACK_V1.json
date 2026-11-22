@@ -1,0 +1,30 @@
+{
+  "id": "B-FIXED-MASK-PUBLICATION-READBACK-v1",
+  "UTC": "2026-11-22T21:54:34.005749+00:00",
+  "content_commit": "7dc0439ab85f20872355d6af6a53771dfad88bfc",
+  "discovery_commit": "74b24226a29c1a642935f0e333d498feea8052dc",
+  "readbacks": [
+    {
+      "kind": "capsule",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/7dc0439ab85f20872355d6af6a53771dfad88bfc/reports/shared-game-sim-01/B/mask-grade-delivery-follow-through-v1/B_PUBLIC_FIXED_MASK_REVIEW_V1.tar.gz",
+      "bytes": 180962,
+      "SHA256": "9ae459d77300ef2792e8b965904f9284e5d880a87cd42edcaf1cded3bd19b6f9",
+      "state": "READBACK_AND_INDEPENDENT_DISK_REOPEN_PASS"
+    },
+    {
+      "kind": "discovery",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/74b24226a29c1a642935f0e333d498feea8052dc/reports/abc-championship/EXPORT_INDEX.json",
+      "bytes": 2749941,
+      "SHA256": "1835f73bfe04995575eeaef16a329f29c93777562e92b873a11d34de5e44f80e",
+      "state": "READBACK_AND_INDEPENDENT_DISK_REOPEN_PASS"
+    }
+  ],
+  "all_capsule_members_equal_reviewed_bytes": true,
+  "private_ancestry_included": false,
+  "source_transport_failures_preserved": [
+    "Default sandbox gitpush proxy connection failed before upload; same reviewed push succeeded with permitted network access",
+    "GitHub connector binary capsule readback rejected UTF8 transport; oversized discovery readback rejected; same immutable GitHub raw files read with byte-capable authorized transport"
+  ],
+  "new_primary_activation": false,
+  "new_served_verification": false
+}

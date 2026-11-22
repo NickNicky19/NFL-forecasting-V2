@@ -1,0 +1,231 @@
+{
+  "id": "B-C-FIXED-MASK-INDEPENDENT-RESOLUTION-v1",
+  "UTC": "2026-11-22T21:45:18.651920+00:00",
+  "owner": "B scoped independent verifier",
+  "state": "PASS_FIXED_AVAILABLE_SETS_AND_DOCUMENTED_EXCLUSIONS",
+  "supersedes_current_missing-body_state_only": "C_MASK_SOURCE_REVIEW_V1.json; original source discovery and older671vs638 nonmatch receipts remain preserved",
+  "input_commitments": {
+    "canonical_case_body_SHA256": "19ccf34b3037e1790ee3b2bf61d3357f33e63916779c2f36023a232f6a66ea18",
+    "C_retained_readiness_body_SHA256": "3ded0b64eb5a84803e6e3504b0e58f2f0c11da3438d3df9000adf4e60dc8e2ce",
+    "C_identity_inspector_code_SHA256": "0c4d14615b6e25f2c0c051849c28113377ae1b19790dc5a5d66cfa305793c9ae",
+    "same_owner_fixed_set_binding_SHA256": "7048208f7466658f52e351671cd9c8e219a8d31be871192d19b10e0fed6762f1"
+  },
+  "checks": {
+    "canonical_cases": 3474,
+    "unique_case_fingerprints": 3474,
+    "actual_C_blocked_fingerprints_mapped": 187,
+    "root_private_blocked_ordinal_map_exact_equality": true,
+    "original_B671_masks_preserved": true,
+    "published_C638_mask_hashes_both_match": true,
+    "outcomes_opened": false,
+    "no_subset_search_or_hash_forcing": true
+  },
+  "results": [
+    {
+      "category": "rec",
+      "B_available": 671,
+      "C_available": 638,
+      "intersection": 638,
+      "B_only": 33,
+      "C_only": 0,
+      "B_mask_SHA256": "276c31f35a4380b1278ad9c5dbf3fc28dce91c0b86d6879733eed74f69e650b5",
+      "B_original_commitment_match": true,
+      "C_mask_SHA256": "8a0b7aeaeafa260a2d63f2e0f40185de7599710831cdca5abdcef95636f6e963",
+      "C_published_commitment_match": true,
+      "B_only_reasons": {
+        "UNAVAILABLE_IDENTITY_MISSING": 30,
+        "UNAVAILABLE_NO_ADMITTED_PRIOR_TEAM": 2,
+        "UNAVAILABLE_PRIOR_TEAM_NOT_IN_TARGET_GAME": 1
+      },
+      "weekly": [
+        {
+          "week": 4,
+          "B_available": 22,
+          "C_available": 21,
+          "intersection": 21,
+          "B_only": 1,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 1
+          }
+        },
+        {
+          "week": 5,
+          "B_available": 129,
+          "C_available": 119,
+          "intersection": 119,
+          "B_only": 10,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_NO_ADMITTED_PRIOR_TEAM": 1,
+            "UNAVAILABLE_IDENTITY_MISSING": 9
+          }
+        },
+        {
+          "week": 6,
+          "B_available": 138,
+          "C_available": 125,
+          "intersection": 125,
+          "B_only": 13,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 11,
+            "UNAVAILABLE_NO_ADMITTED_PRIOR_TEAM": 1,
+            "UNAVAILABLE_PRIOR_TEAM_NOT_IN_TARGET_GAME": 1
+          }
+        },
+        {
+          "week": 7,
+          "B_available": 126,
+          "C_available": 124,
+          "intersection": 124,
+          "B_only": 2,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 2
+          }
+        },
+        {
+          "week": 8,
+          "B_available": 126,
+          "C_available": 122,
+          "intersection": 122,
+          "B_only": 4,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 4
+          }
+        },
+        {
+          "week": 9,
+          "B_available": 130,
+          "C_available": 127,
+          "intersection": 127,
+          "B_only": 3,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 3
+          }
+        }
+      ],
+      "reason_scope": "Actual retained C fingerprint exclusions mapped one-to-one to canonical case ordinals; no inference from net33."
+    },
+    {
+      "category": "rec_yd",
+      "B_available": 671,
+      "C_available": 638,
+      "intersection": 638,
+      "B_only": 33,
+      "C_only": 0,
+      "B_mask_SHA256": "0ebea032f5e7315edf948f9638230bd44548e248e1e399c84fc9f1688c18d9bc",
+      "B_original_commitment_match": true,
+      "C_mask_SHA256": "2995d71a621a0b6d224ec6c8078a413f135033efe3e94514e332b29394729358",
+      "C_published_commitment_match": true,
+      "B_only_reasons": {
+        "UNAVAILABLE_IDENTITY_MISSING": 30,
+        "UNAVAILABLE_NO_ADMITTED_PRIOR_TEAM": 2,
+        "UNAVAILABLE_PRIOR_TEAM_NOT_IN_TARGET_GAME": 1
+      },
+      "weekly": [
+        {
+          "week": 4,
+          "B_available": 22,
+          "C_available": 21,
+          "intersection": 21,
+          "B_only": 1,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 1
+          }
+        },
+        {
+          "week": 5,
+          "B_available": 129,
+          "C_available": 119,
+          "intersection": 119,
+          "B_only": 10,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 9,
+            "UNAVAILABLE_NO_ADMITTED_PRIOR_TEAM": 1
+          }
+        },
+        {
+          "week": 6,
+          "B_available": 138,
+          "C_available": 125,
+          "intersection": 125,
+          "B_only": 13,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 11,
+            "UNAVAILABLE_PRIOR_TEAM_NOT_IN_TARGET_GAME": 1,
+            "UNAVAILABLE_NO_ADMITTED_PRIOR_TEAM": 1
+          }
+        },
+        {
+          "week": 7,
+          "B_available": 126,
+          "C_available": 124,
+          "intersection": 124,
+          "B_only": 2,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 2
+          }
+        },
+        {
+          "week": 8,
+          "B_available": 126,
+          "C_available": 122,
+          "intersection": 122,
+          "B_only": 4,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 4
+          }
+        },
+        {
+          "week": 9,
+          "B_available": 130,
+          "C_available": 127,
+          "intersection": 127,
+          "B_only": 3,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 3
+          }
+        }
+      ],
+      "reason_scope": "Actual retained C fingerprint exclusions mapped one-to-one to canonical case ordinals; no inference from net33."
+    }
+  ],
+  "identity_policy_difference": {
+    "B": "Retained exact stable Sleeper-ID to GSIS relation under the frozen earlier-event-week identity reconstruction. It does not authenticate personnel availability.",
+    "C": {
+      "identity": "ExactUnicodeNFKDcasefoldalphanumericfullname+exactdeclaredrole; unambiguousGSISonly. No suffix removal/fuzzyalias; currentrosterteam/statusnotused.",
+      "availability": "Strict prior kickoff+7days < ASSUMED target canonical kickoff-90minutes; not observed original data clock.",
+      "team": "Latest admitted PRIOR ordinary statistical-row team must be one scheduled opponent; no target-stat/current-roster-team assignment.",
+      "population": "Prior-stat-row usage pool plus explicit other/unresolved bucket. Not complete roster or actual participation.",
+      "prohibited_query_fields_used": []
+    },
+    "conclusion": "The sets differ under documented C identity/prior-team admission. Exact immutable hash matches establish638intersection/33B-only/0C-only here; those counts were computed after actual exclusions were reopened, not assumed from the net difference. No C forecasting, fit or grader defect is demonstrated."
+  },
+  "limits": [
+    "This verifies available-case membership and existing identity exclusions only. It does not by itself reproduce C prediction values, decided masks, grades, selected-list membership, fit or historical source vintages.",
+    "Original forecasts/grades and prior B scope receipts remain unchanged. No new fit, source collection, outcome filtering, A-task reopening, simulator or public private-data upload.",
+    "Private ordinals/case IDs stay in the existing same-owner permitted working route; public report contains aggregate counts, reasons and commitments only."
+  ],
+  "resource": {
+    "CPU_seconds": 0.090068043,
+    "wall_seconds": 0.09007438499975251,
+    "peak_RSS_bytes": 29229056,
+    "CPU_limit_this_check": 3,
+    "network_reads": 0,
+    "outcome_reads": 0,
+    "new_fits": 0,
+    "new_grades": 0,
+    "simulator_runs": 0,
+    "helper_failure": "One schema-print syntax error before any data operation; corrected locally without source retry, extra scope, or tolerance change. Tool/controller overhead incompletely metered."
+  }
+}

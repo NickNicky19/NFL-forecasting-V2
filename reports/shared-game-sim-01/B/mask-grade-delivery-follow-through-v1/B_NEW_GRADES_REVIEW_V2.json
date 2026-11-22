@@ -1,0 +1,390 @@
+{
+  "id": "B-NEW-GRADES-INDEPENDENT-REVIEW-v2",
+  "UTC": "2026-11-22T21:41:28.566115+00:00",
+  "state": "PASS_SCOPED",
+  "sources": [
+    {
+      "path": "reports/shared-game-sim-01/follow-through-v1/B_OWN_SIDE_RESULTS.csv",
+      "bytes": 7828,
+      "SHA256": "734a38290b6e1b757e5b5dbcb5ac9c7176e603fe44a643a8ced5820e8fc30fb0",
+      "commit": "0f5859c661c0404b02f0914826cf560f1754ed24",
+      "state": "EXACT_LENGTH_SHA_PASS"
+    },
+    {
+      "path": "reports/shared-game-sim-01/follow-through-v1/B_COVERAGE_AND_OWN_RECORDS.json",
+      "bytes": 83449,
+      "SHA256": "4c3d469748a2f7eccf836ad568235b15ecd2f70d5d90aa8053727fd87f23d30a",
+      "commit": "0f5859c661c0404b02f0914826cf560f1754ed24",
+      "state": "EXACT_LENGTH_SHA_PASS"
+    },
+    {
+      "path": "reports/shared-game-sim-01/follow-through-v1/B_AGGREGATE_INDEPENDENT_CHECK.json",
+      "bytes": 7185,
+      "SHA256": "daa78b1dddb7a18293be7c839f999ce61fdffefe20e71f526a4cf1d111ddca9c",
+      "commit": "0f5859c661c0404b02f0914826cf560f1754ed24",
+      "state": "EXACT_LENGTH_SHA_PASS"
+    },
+    {
+      "path": "reports/shared-game-sim-01/follow-through-v1/README.md",
+      "bytes": 14031,
+      "SHA256": "4eb29f874614ce80ea10e797ab2b59cd5ca0f360c838b8d283a60611a38e6d7b",
+      "commit": "0f5859c661c0404b02f0914826cf560f1754ed24",
+      "state": "EXACT_LENGTH_SHA_PASS"
+    },
+    {
+      "path": "reports/shared-game-sim-01/follow-through-v1/B_COMPARISON_RESULTS.json.gz",
+      "bytes": 159653,
+      "SHA256": "3f045276f3e51e861cbd74986e6cc22817b76741a1838c224fb84f952166d25b",
+      "commit": "0f5859c661c0404b02f0914826cf560f1754ed24",
+      "state": "EXACT_LENGTH_SHA_PASS"
+    }
+  ],
+  "metadata_output_requests": 6,
+  "scope": "Existing Cgrading of already-frozen B5338bindings; no refit, forecast rejoin, simulator, newfootballsource or canonicalgrader replacement. No A-taskreopen.",
+  "arithmetic_check_count": 47535,
+  "failed_checks": [],
+  "published_shapes": {
+    "scores": 546,
+    "own_selection_policies": 234,
+    "paired_saved_controls": 1064,
+    "paired_C_controls": 196,
+    "own_selection_comparisons": 228
+  },
+  "source_packet": {
+    "bytes": 90346,
+    "SHA256": "4847b6a6152e7db3830f93bf451e27c6127fec274b6631e7c6055bb6daaec60d",
+    "freeze_SHA256": "83468a702b6c52ea151511e6ad4ab086f4b1abf64d2039cd326f86ff0b02f6ad",
+    "case_SHA256": "19ccf34b3037e1790ee3b2bf61d3357f33e63916779c2f36023a232f6a66ea18",
+    "outcome_SHA256": "666885cbdc2ae7551f637b3d4a6999f15c07db956861f3f0374fad9c91b3a5ad",
+    "scope": "OwnBtypedpacket and existing admitted canonical sourceviews actually reopened/hashchecked"
+  },
+  "source_clock_counts": {
+    "DECLARED_KICKOFF_LEFT_LIMIT;OBSERVED_LATEST_BEFORE_T90": 3487,
+    "DECLARED_KICKOFF_LEFT_LIMIT;SOURCE_AVAILABILITY_PARTIAL_OR_NOT_T90": 1851
+  },
+  "primary_T90_comparability": {
+    "ORIGINAL_ORIGIN_DIFFERS;C_ADMISSION_REQUIRED": 4131,
+    "CLOCK_FIELDS_NOT_SUFFICIENT_FOR_AUTHENTICATION": 1207
+  },
+  "scope_preserved": "DIFFERENT_HORIZON_TIMING_UNVERIFIED_DEVELOPMENT_DIAGNOSTICS",
+  "representative_raw_reproductions": [
+    {
+      "candidate_id": "B-SIM01-2d9fb1d864929a32c4",
+      "method": "B::B-SIM01-2d9fb1d864929a32c4::PRIMARY",
+      "product": "mean",
+      "category": "rec",
+      "own": {
+        "OVER": {
+          "selected": 245,
+          "WIN": 139,
+          "UNKNOWN": 43,
+          "LOSS": 63
+        },
+        "UNDER": {
+          "selected": 301,
+          "WIN": 154,
+          "LOSS": 129,
+          "UNKNOWN": 18
+        },
+        "states": {
+          "WIN": 293,
+          "LOSS": 192,
+          "UNKNOWN": 61,
+          "UNAVAILABLE": 376
+        }
+      },
+      "paired": [
+        {
+          "control": "W0",
+          "common_decided": 482,
+          "candidate_wins": 292,
+          "control_wins": 277,
+          "exact_common_decided_mask_SHA256": "5b5963ea9dd3a8667a68078badff80a0928d78a7276dcf586e2ebe6cd6bac45c",
+          "mask_matches_published": true,
+          "hash_identity_field": "canonical_case_key"
+        },
+        {
+          "control": "W1",
+          "common_decided": 480,
+          "candidate_wins": 291,
+          "control_wins": 286,
+          "exact_common_decided_mask_SHA256": "5d25cec037a09e74ba6ada7e7ba5f0b29e82803d17a64d885d6c2a45776823af",
+          "mask_matches_published": true,
+          "hash_identity_field": "canonical_case_key"
+        }
+      ],
+      "own_selection": [
+        {
+          "capacity_fraction": 0.5,
+          "selected": 270,
+          "wins": 152,
+          "losses": 91,
+          "selected_unknown": 27,
+          "frozen_policy_aggregate_matches": true,
+          "private_published_membership_directly_compared": false
+        },
+        {
+          "capacity_fraction": 0.25,
+          "selected": 123,
+          "wins": 68,
+          "losses": 41,
+          "selected_unknown": 14,
+          "frozen_policy_aggregate_matches": true,
+          "private_published_membership_directly_compared": false
+        },
+        {
+          "capacity_fraction": 0.1,
+          "selected": 42,
+          "wins": 19,
+          "losses": 20,
+          "selected_unknown": 3,
+          "frozen_policy_aggregate_matches": true,
+          "private_published_membership_directly_compared": false
+        }
+      ],
+      "scope": "Independent raw frozen forecast to canonical grade arithmetic and exact B-versus-website common masks; no private model/sourcefit parity. Ownlists locally reconstructed from fixedpolicy; private Cfull lists not directlycompared."
+    },
+    {
+      "candidate_id": "B-SIM01-f0b13c56dbdd37a2b3",
+      "method": "B::B-SIM01-f0b13c56dbdd37a2b3::PRIMARY",
+      "product": "squared_error_mean",
+      "category": "rec",
+      "own": {
+        "OVER": {
+          "selected": 240,
+          "WIN": 134,
+          "UNKNOWN": 41,
+          "LOSS": 65
+        },
+        "UNDER": {
+          "selected": 306,
+          "WIN": 152,
+          "LOSS": 134,
+          "UNKNOWN": 20
+        },
+        "states": {
+          "WIN": 286,
+          "LOSS": 199,
+          "UNKNOWN": 61,
+          "UNAVAILABLE": 376
+        }
+      },
+      "paired": [
+        {
+          "control": "W0",
+          "common_decided": 482,
+          "candidate_wins": 285,
+          "control_wins": 277,
+          "exact_common_decided_mask_SHA256": "5b5963ea9dd3a8667a68078badff80a0928d78a7276dcf586e2ebe6cd6bac45c",
+          "mask_matches_published": true,
+          "hash_identity_field": "canonical_case_key"
+        },
+        {
+          "control": "W1",
+          "common_decided": 480,
+          "candidate_wins": 284,
+          "control_wins": 286,
+          "exact_common_decided_mask_SHA256": "5d25cec037a09e74ba6ada7e7ba5f0b29e82803d17a64d885d6c2a45776823af",
+          "mask_matches_published": true,
+          "hash_identity_field": "canonical_case_key"
+        }
+      ],
+      "own_selection": [
+        {
+          "capacity_fraction": 0.5,
+          "selected": 270,
+          "wins": 155,
+          "losses": 93,
+          "selected_unknown": 22,
+          "frozen_policy_aggregate_matches": true,
+          "private_published_membership_directly_compared": false
+        },
+        {
+          "capacity_fraction": 0.25,
+          "selected": 123,
+          "wins": 70,
+          "losses": 42,
+          "selected_unknown": 11,
+          "frozen_policy_aggregate_matches": true,
+          "private_published_membership_directly_compared": false
+        },
+        {
+          "capacity_fraction": 0.1,
+          "selected": 42,
+          "wins": 20,
+          "losses": 20,
+          "selected_unknown": 2,
+          "frozen_policy_aggregate_matches": true,
+          "private_published_membership_directly_compared": false
+        }
+      ],
+      "scope": "Independent raw frozen forecast to canonical grade arithmetic and exact B-versus-website common masks; no private model/sourcefit parity. Ownlists locally reconstructed from fixedpolicy; private Cfull lists not directlycompared."
+    },
+    {
+      "candidate_id": "B-SIM-pass_cmp-R3_FTN_LEAF",
+      "method": "B::B-SIM-pass_cmp-R3_FTN_LEAF::PRIMARY",
+      "product": "exact_count_law",
+      "category": "pass_cmp",
+      "own": {
+        "OVER": {
+          "selected": 35,
+          "LOSS": 15,
+          "WIN": 20
+        },
+        "UNDER": {
+          "selected": 113,
+          "LOSS": 57,
+          "WIN": 54,
+          "UNKNOWN": 2
+        },
+        "states": {
+          "LOSS": 72,
+          "WIN": 74,
+          "UNKNOWN": 2
+        }
+      },
+      "paired": [
+        {
+          "control": "W0",
+          "common_decided": 146,
+          "candidate_wins": 74,
+          "control_wins": 79,
+          "exact_common_decided_mask_SHA256": "da28f92687b791ebfe2fd7d6ba5688fd71a951d88242e7565fc4f411107c2e75",
+          "mask_matches_published": true,
+          "hash_identity_field": "canonical_case_key"
+        },
+        {
+          "control": "W1",
+          "common_decided": 146,
+          "candidate_wins": 74,
+          "control_wins": 70,
+          "exact_common_decided_mask_SHA256": "da28f92687b791ebfe2fd7d6ba5688fd71a951d88242e7565fc4f411107c2e75",
+          "mask_matches_published": true,
+          "hash_identity_field": "canonical_case_key"
+        }
+      ],
+      "own_selection": [
+        {
+          "capacity_fraction": 0.5,
+          "selected": 74,
+          "wins": 37,
+          "losses": 36,
+          "selected_unknown": 1,
+          "frozen_policy_aggregate_matches": true,
+          "private_published_membership_directly_compared": false
+        },
+        {
+          "capacity_fraction": 0.25,
+          "selected": 0,
+          "wins": 0,
+          "losses": 0,
+          "selected_unknown": 0,
+          "frozen_policy_aggregate_matches": true,
+          "private_published_membership_directly_compared": false
+        },
+        {
+          "capacity_fraction": 0.1,
+          "selected": 0,
+          "wins": 0,
+          "losses": 0,
+          "selected_unknown": 0,
+          "frozen_policy_aggregate_matches": true,
+          "private_published_membership_directly_compared": false
+        }
+      ],
+      "scope": "Independent raw frozen forecast to canonical grade arithmetic and exact B-versus-website common masks; no private model/sourcefit parity. Ownlists locally reconstructed from fixedpolicy; private Cfull lists not directlycompared."
+    }
+  ],
+  "independent_verification_limits": [
+    "Not full44-product raw grade reproduction",
+    "Private model fits/sourcevintages/featurepreprocessing not independently reproduced",
+    "Bootstrap interval endpoints not resampled",
+    "A/B/Cequaldenominators not used as membershipproof; exact masks verified only for named B-versus-websitepairs",
+    "Full private ownselection lists not supplied for directmember-by-membercomparison; locally frozenpolicy aggregate reconstruction separately scoped",
+    "Csimulatormutation/conservation/currentfeed/website servedvalues not checked here",
+    "Numerical MAE and proper Brier/logloss metrics were received but not independently recalculated here; law orientation and owncorrect-side counts are independently checked."
+  ],
+  "decision": "RECEIVED_GRADED_DIAGNOSTIC_SHADOW;NOT_COMMON_T90_PRIMARY_QUALIFICATION",
+  "newscientificfits": 0,
+  "newcanonicalresearchgrades": 0,
+  "newprimaryactivation": 0,
+  "resource": {
+    "CPU_seconds": 0.30137320700000003,
+    "wall_seconds": 0.3013605730011477,
+    "peak_RSS_bytes": 61157376,
+    "bound_CPU_seconds": 10,
+    "metering_limit": "Controlled localverifier only; metadata/orchestration/preparationoverhead separatelylimited andnotcompletelymetered.",
+    "six_hash_only_correction_CPU_seconds": 0.218535088,
+    "known_final_worker_CPU_seconds_total": 0.519910049,
+    "preparation_failure_CPU_accounting": "Additional controlledhelperCPU subsecond/unmetered shell overhead; allow1CPUconservativeprep above finalworker. No Cnumerical or oldscientificaccount used."
+  },
+  "mask_representation_correction": {
+    "previous_report": "reports/shared-game-sim-01/B/mask-grade-delivery-follow-through-v1/B_NEW_GRADES_REVIEW_V1.json",
+    "previous_report_SHA256": "79510a0868e4c8b22518d260770ebfbf6c9f8331b46c2e6cddc8b88c56b2b964",
+    "original_six_failed_verifier_hash_checks_preserved": true,
+    "cause": "Original verifier hashed sorted opaque case_id aliases. Exact Csource hashes sorted canonical_case_key values. This representation correction does not change membership, outcomes, grade, forecast, chronology, tolerance or expectedCcommitments.",
+    "qualified_source": {
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "0f5859c661c0404b02f0914826cf560f1754ed24",
+      "path": "src/shared_game_sim01_followup_view.py",
+      "SHA256": "e892951d8d306d6ba45d5d714d53bb8e2e76903de9a9c2597aebe3f053b6e36a",
+      "lines": "102-103; root fetched/reused once under sharedreportingauthority"
+    },
+    "reused_passed_calculations": "All own/paired counts and frozenownpolicy aggregates from V1 reused; only six exactmaskhashes recalculated, no fullgrader rerun.",
+    "new_exact_mask_checks": [
+      {
+        "method": "B::B-SIM01-2d9fb1d864929a32c4::PRIMARY",
+        "control": "W0",
+        "common_decided": 482,
+        "hash": "5b5963ea9dd3a8667a68078badff80a0928d78a7276dcf586e2ebe6cd6bac45c",
+        "exact_match": true
+      },
+      {
+        "method": "B::B-SIM01-2d9fb1d864929a32c4::PRIMARY",
+        "control": "W1",
+        "common_decided": 480,
+        "hash": "5d25cec037a09e74ba6ada7e7ba5f0b29e82803d17a64d885d6c2a45776823af",
+        "exact_match": true
+      },
+      {
+        "method": "B::B-SIM01-f0b13c56dbdd37a2b3::PRIMARY",
+        "control": "W0",
+        "common_decided": 482,
+        "hash": "5b5963ea9dd3a8667a68078badff80a0928d78a7276dcf586e2ebe6cd6bac45c",
+        "exact_match": true
+      },
+      {
+        "method": "B::B-SIM01-f0b13c56dbdd37a2b3::PRIMARY",
+        "control": "W1",
+        "common_decided": 480,
+        "hash": "5d25cec037a09e74ba6ada7e7ba5f0b29e82803d17a64d885d6c2a45776823af",
+        "exact_match": true
+      },
+      {
+        "method": "B::B-SIM-pass_cmp-R3_FTN_LEAF::PRIMARY",
+        "control": "W0",
+        "common_decided": 146,
+        "hash": "da28f92687b791ebfe2fd7d6ba5688fd71a951d88242e7565fc4f411107c2e75",
+        "exact_match": true
+      },
+      {
+        "method": "B::B-SIM-pass_cmp-R3_FTN_LEAF::PRIMARY",
+        "control": "W1",
+        "common_decided": 146,
+        "hash": "da28f92687b791ebfe2fd7d6ba5688fd71a951d88242e7565fc4f411107c2e75",
+        "exact_match": true
+      }
+    ]
+  },
+  "preparation_helper_failures": [
+    "Initial verifier syntax error else0; no data/network/model execution",
+    "CSVemptyfields conversion assumption failed for unoffered products; corrected to preserve N/A",
+    "Coverageemptyproduct lacks OVER groups; explicit NO_MATCHING_OFFER handling added without invented scores",
+    "Patch assertion failed; old helper repeated same KeyError once, preserved; no scientific fit or source retrial"
+  ],
+  "request_accounting": {
+    "this_agent_metadata_and_body_requests": 6,
+    "root_shared_code_fetch_reused": 1,
+    "additional_requests_by_this_agent": 0
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "id": "B-SHARED-GAME-SIM01-C-PR63-PINNED-EXECUTION-REVIEW-v1",
+  "owner": "B / NickNicky19/NFL-forecasting-V2",
+  "state": "STATIC_PREPARATION_REVIEW;EXECUTABLE_FREEZE_AND_SCIENTIFIC_CHECKS_PENDING",
+  "reviewed_source": {
+    "repository": "NickNicky19/NFL-forecasting-NGS-C",
+    "commit": "ebf9a0bbe8411f8dbb80745ec87f1fbcf13a4f82",
+    "PR": 63,
+    "PR_state_at_retrieval": "open",
+    "merged_at_retrieval": false,
+    "mergeable_at_retrieval": true,
+    "head_at_retrieval": "ebf9a0bbe8411f8dbb80745ec87f1fbcf13a4f82",
+    "base_at_retrieval": "c65ff6614699b4ecd29759deea0847258c0e9c7a",
+    "tree_truncated": false,
+    "tree_entries": 5352
+  },
+  "authority_scope": "B-only public-safe reporting/static peer review; eight GitHub GET calls maximum used once. No C merge, dispatch, fit, trajectory, mutation execution, private-body access or new scoring. Current user-approved C cumulative allocation is separate from B reporting. Pinned old request still records REQUESTED_NOT_GRANTED as historical state; C must append the new authority/charges rather than erase old preparation.",
+  "allocation_review": {
+    "relayed_current_C_cumulative_CPU_cap": 1800,
+    "relayed_current_C_cumulative_wall_cap": 7200,
+    "prior_preparation_CPU_carried_once": 45,
+    "prior_preparation_wall_carried_once": 190,
+    "protected_CPU_completion_reserve": 380,
+    "planning_CPU_balance_before_new_charges": 1755,
+    "planning_wall_balance_before_new_charges": 7010,
+    "qualification": "Use latest actual C ledger including all later legitimate charges; these planning balances are not measured current balances. B consumes no C allowance."
+  },
+  "readiness": {
+    "current_source_layer": "READY_BOX_SCORE_EARLIER_SOURCE_LAYER;FULL_S_P_PATH_NOT_YET_ADMITTED",
+    "actual_engine": "SHARED_GAME_BOX_SCORE;NOT_STATEFUL",
+    "supported_identity_rows_owner_reported": 3287,
+    "full_frame": 3474,
+    "supported_rec_rows_owner_reported": 873,
+    "rec_frame": 922,
+    "games_owner_reported": 74,
+    "verification_limit": "B read manifest/recipe/code and exact public commitments, not the football input bodies or private identity rows. Owner-reported source reopening and 3287 support are not B-reproduced forecast availability, grades or authentication.",
+    "executable_status": "Kernel only. Source/component fitter, provider conditioner and admitted full budget/retention controller are explicitly absent at this pin. Root source code exits NOT_AN_ADMITTED_WORKER. Resource approval alone does not complete Freeze A or make a worker ready.",
+    "freeze_A": "Design/source/identity/recipe/settings registered; complete executable worker/dependency/solver/input/body/roster/cost/retention freeze still pending.",
+    "freeze_B": "No actual simulator forecast/sample/parameter/selection bytes generated or retained at this pin."
+  },
+  "findings": [
+    {
+      "id": "B-C63-F01",
+      "severity": "REQUIRED_COMPLETION_BEFORE_CANARY",
+      "file": "src/shared_game_sim01_kernel.py",
+      "lines": [
+        103,
+        381,
+        426,
+        432,
+        440
+      ],
+      "finding": "GameSamples contains conditional_means and conditional_variances, but write_numeric_samples writes only result.arrays and result.metadata. The pinned writer does not persist those moments or fitted TeamParameters. EXECUTION_REQUEST_V1 promises conditional moments and parameters in the durable retention path.",
+      "owner": "C simulator executor",
+      "minimum_action": "Complete an immutable companion/extended serialization retaining all D-P conditional moments, fitted states/parameters, input/code/schema bindings and safe primitives before forecast freeze. Count its bytes, duplicate footprint and readback in the same allocation.",
+      "completion": "Independently reopened retained bytes reproduce named same-latent D-P moments/probabilities and parameter binding, without relying only on in-memory state.",
+      "scope": "Static incomplete persistence path; no data loss or failed D-P run claimed, because no run occurred."
+    },
+    {
+      "id": "B-C63-F02",
+      "severity": "CALLER_CONTRACT_CHECK_BEFORE_CANARY",
+      "file": "src/shared_game_sim01_kernel.py",
+      "lines": [
+        384,
+        392,
+        398
+      ],
+      "finding": "marginal_moments returns total variance E[V|latent]+Var(E[X|latent]); direct_count_probabilities takes mixing/excess variance, not total variance. With conditional Poisson rates the correct argument is Var(lambda), equivalently V-minus-mean. No caller exists at this pin.",
+      "owner": "C simulator executor",
+      "minimum_action": "Bind the D-P caller explicitly to latent-rate variance (and signed-yard total variance separately). Reuse registered representative analytic/support checks before acceptance.",
+      "completion": "Saved count control parameters document mean, total variance, excess variance and NB/Poisson choice; no total-variance substitution or arbitrary clip.",
+      "scope": "Interface integration risk, not an observed numerical defect or forecasting impact."
+    },
+    {
+      "id": "B-C63-F03",
+      "severity": "SOURCE_POLICY_BINDING",
+      "file": "reports/shared-game-sim-01/RECIPE_REGISTRATION_V1.json",
+      "finding": "Pinned provider_anchor uses raw point only for finite source=model, otherwise saved adjusted fallback; README reports six average-source rows (three rec, three rec_yd). W1 field-rule parity does not prove six native provider forecasts. These rows need exact qualification under the website case builder.",
+      "owner": "C executor with website canonical-frame owner",
+      "minimum_action": "Resolve six row identities against actual admitted provider availability before Freeze A. Apply the declared permitted adjusted fallback and label fallback, or preserve unavailable if required provider input is absent. Do not call average/incumbent fallback native provider S-P, substitute a football-only path silently, or change W0/W1.",
+      "completion": "Canonical outcome-free frame carries provider-native/fallback/unavailable field and reason for each affected row; D-P consumes exactly the same admitted anchors/fallback.",
+      "scope": "No need to block all other qualified rows or reset the one engine."
+    },
+    {
+      "id": "B-C63-F04",
+      "severity": "SCOPED_D_P_ATTRIBUTION",
+      "file": "reports/shared-game-sim-01/RECIPE_REGISTRATION_V1.json",
+      "finding": "D-P-MATCHED-COMPONENT-MARGINAL-v1 is a new simple same-input moment approximation, not an independently retained strong direct learner. It shares S-P fitted states/latent draws; this permits a scoped marginal-shape contrast. It does not isolate every shared-game architecture effect or replace stronger compatible retained controls.",
+      "owner": "C coordinator/executor",
+      "minimum_action": "Preserve the already-declared limited attribution, same cases/information/fallback and stronger named controls. Record unavailable controls without inventing an architecture superiority claim.",
+      "completion": "Report labels S-P versus W0 system comparison separately from S-P versus D-P moment-law comparison."
+    },
+    {
+      "id": "B-C63-F05",
+      "severity": "PROSPECTIVE_PRESCORING_REQUIREMENT",
+      "file": "reports/shared-game-sim-01/DECISION_AND_CONFIRMATION_V1.json",
+      "finding": "Prospective plan is correctly PLANNED_NOT_STARTED: one receptions S-P-versus-W0 primary contrast, consecutive eligible RB/WR/TE cases and fixed six calendar season-week blocks including missing/unknown/zero-selection weeks. Exact starting dates/horizon endpoints, actual capture cadence and final frozen update/cutoff/selection bindings are not yet operationally sealed.",
+      "owner": "C coordinator with existing website capture owner; B reviews permitted protocol",
+      "minimum_action": "Freeze exact start/end, outcome-free cohort/horizon/stopping and declared earlier-only update/selection schedule before first target outcome once current inference/capture works. Preserve no favorable stopping or missing-week replacement.",
+      "completion": "Timestamped retained protocol precedes first target outcome and references the actual approved capture path; otherwise prospective confirmation remains not started, not failed."
+    }
+  ],
+  "pending_scientific_checks": {
+    "worker_mutation": "NOT_RUN",
+    "consumed_design_parity": "NOT_RUN",
+    "trajectory_conservation": "NOT_RUN",
+    "D_P_saved_crossing_reproduction": "NOT_RUN",
+    "same_case_scoring_and_own_selection": "NOT_RUN",
+    "input_body_independent_reopening": "NOT_PERFORMED_BY_B",
+    "private_fit_reproduction": "NOT_CLAIMED",
+    "prior_B_strict_C1_reproduction": "FAILED_UNCHANGED",
+    "prior_B_opportunity_team_fit": "FAILED_UNCHANGED"
+  },
+  "finite_dependencies": [
+    {
+      "owner": "C simulator executor",
+      "artifact": "Actual source fitter/provider conditioner/full controller and complete Freeze A",
+      "next_action": "Implement within current dedicated approval; measure complete remaining CPU/wall/storage plus reserves before canary; retain exact code/dependency/solver/input/roster bindings."
+    },
+    {
+      "owner": "Website canonical-frame owner",
+      "artifact": "Approved outcome-free case/provider/identity/cutoff/settlement and durable reconstruction binding",
+      "next_action": "Supply current exact canonical handoff; final outcome/scoring admission needed before grades, not a universal bar on independent preliminary work."
+    },
+    {
+      "owner": "C simulator executor",
+      "artifact": "Raw trajectories, conditional moments, parameters, availability and own selections / Freeze B",
+      "next_action": "Persist and reopen through approved retention before target-grade join; B reviews permitted bytes after receipt."
+    }
+  ],
+  "publication_and_ownership": "Public posting is not a prerequisite for permitted C-private freeze or B review. No C branch, PR, ledger, workflow or source body was changed. New B static report is not C admission, a predictive gain, scored duration, prospective capture or release.",
+  "UTC": "2026-11-22T17:46:25.322918+00:00",
+  "retrieved_body_bindings": [
+    {
+      "path": "reports/shared-game-sim-01/RECIPE_REGISTRATION_V1.json",
+      "bytes": 11972,
+      "SHA256": "63a95c8868ec9544a2b6cf5a0a68644f508b89cad38e1167bbac603a1d2fb597",
+      "git_blob_SHA1": "9c1cf8313b4d9861548630cb047cc7e59c918908",
+      "matches_public_commit": true
+    },
+    {
+      "path": "src/shared_game_sim01_kernel.py",
+      "bytes": 23601,
+      "SHA256": "2462442de87614f9073e9ee577f796b10d4e203c3111a810edc8c4e43d80430e",
+      "git_blob_SHA1": "4f3e39eb3d7c0aac372f006186e36acb74226438",
+      "matches_public_commit": true
+    },
+    {
+      "path": "reports/shared-game-sim-01/EXECUTION_REQUEST_V1.json",
+      "bytes": 7826,
+      "SHA256": "80d236079d2c8f0a3afd75a8141c30d245e344f64af72d279e86bc537264735f",
+      "git_blob_SHA1": "f664ee5c7651e0690082b3eded86894cd3946a43",
+      "matches_public_commit": true
+    },
+    {
+      "path": "reports/shared-game-sim-01/readiness/COMPONENT_INPUT_MANIFEST.json",
+      "bytes": 20205,
+      "SHA256": "28bafc5b16bee712fd33ca8327a1892bea7c166e5d63732bb87c8c2539b82a82",
+      "git_blob_SHA1": "8129588f81de7ce03cb446de7dab396b8ceeb183",
+      "matches_public_commit": true
+    },
+    {
+      "path": "reports/shared-game-sim-01/DECISION_AND_CONFIRMATION_V1.json",
+      "bytes": 5028,
+      "SHA256": "3b091180bc058d87a14e9ca337218d1b00fd9b4fef847f83c578f8f0b028a80c",
+      "git_blob_SHA1": "e3d65c08235025fdbeaa65e07f27e02cbeb0460e",
+      "matches_public_commit": true
+    },
+    {
+      "path": "reports/shared-game-sim-01/README.md",
+      "bytes": 12637,
+      "SHA256": "c96c70048839d1a960f564f2a0031a7c1c848eaa0854aaa14045b19921165c28",
+      "git_blob_SHA1": "528452b1eba1cafc22f3336001333e89e996e42d",
+      "matches_public_commit": true
+    }
+  ],
+  "B_reporting_accounting": {
+    "metadata_GET_calls": 8,
+    "scientific_CPU_charged_to_C": 0,
+    "new_fits": 0,
+    "new_trajectories": 0,
+    "new_grades": 0,
+    "selected_hash_report_process_CPU_seconds": 0.0006202790000000014,
+    "limitations": "Selected report-process meter only; GitHub/tool/assistant/orchestration overhead is not a complete CPU/wall measurement. Task ceiling 10 B reporting CPU seconds; no scientific worker."
+  }
+}

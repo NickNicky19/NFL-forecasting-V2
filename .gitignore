@@ -1,0 +1,37 @@
+__pycache__/
+*.pyc
+.venv/
+data/
+private/
+*.b64
+*.parquet
+.env*
+build/
+*.egg-info/
+
+# Preserve these local derived delivery drafts without republishing historical CSVs.
+# Complete scientific JSON and the compact current delivery remain in Git.
+/reports/prop-grading-20261030e/results-index*/**/*.csv
+/reports/prop-grading-20261030e/results-index*/README.md
+/reports/prop-grading-20261030e/results-index*/CSV_FILES.md
+
+# F redundant draft index CSVs remain local, current v4 reuses prior CSV parts.
+/reports/championship-20261030f/results-index-v2/**/*.csv
+/reports/championship-20261030f/results-index-v3/**/*.csv
+/reports/championship-20261030f/results-index-v4/**/*.csv
+
+# Retain exact local coverage originals; publish lossless gzip projections.
+/reports/championship-20261030f/coverage/COVERAGE_GRID.json
+/reports/championship-20261030f/coverage/COVERAGE_GRID.csv
+/reports/championship-20261030f/coverage-draft-v3/COVERAGE_GRID.json
+/reports/championship-20261030f/coverage-draft-v3/COVERAGE_GRID.csv
+
+# Preserve post-wave V1 inventory bytes locally; exact gzip + both hashes publish.
+/reports/post-wave-5w-v1/B-product-week-qualification-v1/B_PRODUCT_WEEK_QUALIFICATION.json
+/reports/post-wave-5w-v1/B-product-week-qualification-v1/B_PRODUCT_WEEK_QUALIFICATION.csv
+
+# Keep exact local public-analysis projections; publish lossless gzip+bindings.
+/reports/post-wave-5w-v1/paired-analysis-index-v1/PAIRED_ANALYSES.json
+/reports/post-wave-5w-v1/paired-analysis-index-v1/PAIRED_ANALYSES.csv
+/reports/post-wave-5w-v1/B-111-RB-common-mask-v3/paired-analysis-index-v1/PAIRED_ANALYSES.json
+/reports/post-wave-5w-v1/B-111-RB-common-mask-v3/paired-analysis-index-v1/PAIRED_ANALYSES.csv

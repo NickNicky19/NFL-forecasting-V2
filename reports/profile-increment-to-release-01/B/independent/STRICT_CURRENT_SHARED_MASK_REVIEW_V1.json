@@ -1,0 +1,1152 @@
+{
+  "id": "B-PROFILE-INCREMENT-STRICT-CURRENT-SHARED-MASK-REVIEW-v1",
+  "calculation": "Independent Decimal point/line/actual comparisons; author scorer not called; old/current outcome equality asserted rowwise.",
+  "results": [
+    {
+      "target": "pass_att",
+      "retained_procedure": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs",
+      "history": "H-CURRENT strict feature memory/priors",
+      "product": "mean",
+      "retained": {
+        "sides": {
+          "over": {
+            "win": 28,
+            "loss": 21,
+            "push": 0,
+            "abstain": 0,
+            "decided": 49,
+            "rate": 0.5714285714285714
+          },
+          "under": {
+            "win": 22,
+            "loss": 13,
+            "push": 0,
+            "abstain": 0,
+            "decided": 35,
+            "rate": 0.6285714285714286
+          },
+          "Combined": {
+            "win": 50,
+            "loss": 34,
+            "push": 0,
+            "abstain": 0,
+            "decided": 84,
+            "rate": 0.5952380952380952
+          }
+        },
+        "rows": 84,
+        "games": 42,
+        "weeks": [
+          5,
+          6,
+          7
+        ],
+        "mask_sha256": "e452edf7d747989cf4d39bc0c89989249e0a7aae7a0522abe2b8fba31c4db717"
+      },
+      "reported_fallback_rows": 1,
+      "controls": [
+        {
+          "method": "SAVED_ADJUSTED",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 17,
+              "loss": 6,
+              "push": 0,
+              "abstain": 0,
+              "decided": 23,
+              "rate": 0.7391304347826086
+            },
+            "under": {
+              "win": 37,
+              "loss": 24,
+              "push": 0,
+              "abstain": 0,
+              "decided": 61,
+              "rate": 0.6065573770491803
+            },
+            "Combined": {
+              "win": 54,
+              "loss": 30,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.6428571428571429
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "e452edf7d747989cf4d39bc0c89989249e0a7aae7a0522abe2b8fba31c4db717",
+          "candidate_only_correct": 14,
+          "control_only_correct": 18
+        },
+        {
+          "method": "SAVED_RAW",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 15,
+              "loss": 11,
+              "push": 0,
+              "abstain": 0,
+              "decided": 26,
+              "rate": 0.5769230769230769
+            },
+            "under": {
+              "win": 32,
+              "loss": 26,
+              "push": 0,
+              "abstain": 0,
+              "decided": 58,
+              "rate": 0.5517241379310345
+            },
+            "Combined": {
+              "win": 47,
+              "loss": 37,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5595238095238095
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "e452edf7d747989cf4d39bc0c89989249e0a7aae7a0522abe2b8fba31c4db717",
+          "candidate_only_correct": 16,
+          "control_only_correct": 13
+        },
+        {
+          "method": "COMMON_EXPOSURE",
+          "product": "mean",
+          "sides": {
+            "over": {
+              "win": 2,
+              "loss": 4,
+              "push": 0,
+              "abstain": 0,
+              "decided": 6,
+              "rate": 0.3333333333333333
+            },
+            "under": {
+              "win": 39,
+              "loss": 39,
+              "push": 0,
+              "abstain": 0,
+              "decided": 78,
+              "rate": 0.5
+            },
+            "Combined": {
+              "win": 41,
+              "loss": 43,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.4880952380952381
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "e452edf7d747989cf4d39bc0c89989249e0a7aae7a0522abe2b8fba31c4db717",
+          "candidate_only_correct": 30,
+          "control_only_correct": 21
+        },
+        {
+          "method": "COMMON_EXPOSURE",
+          "product": "lower_median",
+          "sides": {
+            "over": {
+              "win": 1,
+              "loss": 1,
+              "push": 0,
+              "abstain": 0,
+              "decided": 2,
+              "rate": 0.5
+            },
+            "under": {
+              "win": 42,
+              "loss": 40,
+              "push": 0,
+              "abstain": 0,
+              "decided": 82,
+              "rate": 0.5121951219512195
+            },
+            "Combined": {
+              "win": 43,
+              "loss": 41,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5119047619047619
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "e452edf7d747989cf4d39bc0c89989249e0a7aae7a0522abe2b8fba31c4db717",
+          "candidate_only_correct": 28,
+          "control_only_correct": 21
+        },
+        {
+          "method": "ALWAYS_OVER",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 41,
+              "loss": 43,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.4880952380952381
+            },
+            "under": {
+              "win": 0,
+              "loss": 0,
+              "push": 0,
+              "abstain": 0,
+              "decided": 0,
+              "rate": null
+            },
+            "Combined": {
+              "win": 41,
+              "loss": 43,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.4880952380952381
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "e452edf7d747989cf4d39bc0c89989249e0a7aae7a0522abe2b8fba31c4db717",
+          "candidate_only_correct": 22,
+          "control_only_correct": 13
+        },
+        {
+          "method": "ALWAYS_UNDER",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 0,
+              "loss": 0,
+              "push": 0,
+              "abstain": 0,
+              "decided": 0,
+              "rate": null
+            },
+            "under": {
+              "win": 43,
+              "loss": 41,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5119047619047619
+            },
+            "Combined": {
+              "win": 43,
+              "loss": 41,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5119047619047619
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "e452edf7d747989cf4d39bc0c89989249e0a7aae7a0522abe2b8fba31c4db717",
+          "candidate_only_correct": 28,
+          "control_only_correct": 21
+        }
+      ]
+    },
+    {
+      "target": "pass_att",
+      "retained_procedure": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs",
+      "history": "H-CURRENT strict feature memory/priors",
+      "product": "lower_median",
+      "retained": {
+        "sides": {
+          "over": {
+            "win": 25,
+            "loss": 15,
+            "push": 0,
+            "abstain": 0,
+            "decided": 40,
+            "rate": 0.625
+          },
+          "under": {
+            "win": 28,
+            "loss": 16,
+            "push": 0,
+            "abstain": 0,
+            "decided": 44,
+            "rate": 0.6363636363636364
+          },
+          "Combined": {
+            "win": 53,
+            "loss": 31,
+            "push": 0,
+            "abstain": 0,
+            "decided": 84,
+            "rate": 0.6309523809523809
+          }
+        },
+        "rows": 84,
+        "games": 42,
+        "weeks": [
+          5,
+          6,
+          7
+        ],
+        "mask_sha256": "e452edf7d747989cf4d39bc0c89989249e0a7aae7a0522abe2b8fba31c4db717"
+      },
+      "reported_fallback_rows": 1,
+      "controls": [
+        {
+          "method": "SAVED_ADJUSTED",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 17,
+              "loss": 6,
+              "push": 0,
+              "abstain": 0,
+              "decided": 23,
+              "rate": 0.7391304347826086
+            },
+            "under": {
+              "win": 37,
+              "loss": 24,
+              "push": 0,
+              "abstain": 0,
+              "decided": 61,
+              "rate": 0.6065573770491803
+            },
+            "Combined": {
+              "win": 54,
+              "loss": 30,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.6428571428571429
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "e452edf7d747989cf4d39bc0c89989249e0a7aae7a0522abe2b8fba31c4db717",
+          "candidate_only_correct": 13,
+          "control_only_correct": 14
+        },
+        {
+          "method": "SAVED_RAW",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 15,
+              "loss": 11,
+              "push": 0,
+              "abstain": 0,
+              "decided": 26,
+              "rate": 0.5769230769230769
+            },
+            "under": {
+              "win": 32,
+              "loss": 26,
+              "push": 0,
+              "abstain": 0,
+              "decided": 58,
+              "rate": 0.5517241379310345
+            },
+            "Combined": {
+              "win": 47,
+              "loss": 37,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5595238095238095
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "e452edf7d747989cf4d39bc0c89989249e0a7aae7a0522abe2b8fba31c4db717",
+          "candidate_only_correct": 17,
+          "control_only_correct": 11
+        },
+        {
+          "method": "COMMON_EXPOSURE",
+          "product": "mean",
+          "sides": {
+            "over": {
+              "win": 2,
+              "loss": 4,
+              "push": 0,
+              "abstain": 0,
+              "decided": 6,
+              "rate": 0.3333333333333333
+            },
+            "under": {
+              "win": 39,
+              "loss": 39,
+              "push": 0,
+              "abstain": 0,
+              "decided": 78,
+              "rate": 0.5
+            },
+            "Combined": {
+              "win": 41,
+              "loss": 43,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.4880952380952381
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "e452edf7d747989cf4d39bc0c89989249e0a7aae7a0522abe2b8fba31c4db717",
+          "candidate_only_correct": 27,
+          "control_only_correct": 15
+        },
+        {
+          "method": "COMMON_EXPOSURE",
+          "product": "lower_median",
+          "sides": {
+            "over": {
+              "win": 1,
+              "loss": 1,
+              "push": 0,
+              "abstain": 0,
+              "decided": 2,
+              "rate": 0.5
+            },
+            "under": {
+              "win": 42,
+              "loss": 40,
+              "push": 0,
+              "abstain": 0,
+              "decided": 82,
+              "rate": 0.5121951219512195
+            },
+            "Combined": {
+              "win": 43,
+              "loss": 41,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5119047619047619
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "e452edf7d747989cf4d39bc0c89989249e0a7aae7a0522abe2b8fba31c4db717",
+          "candidate_only_correct": 25,
+          "control_only_correct": 15
+        },
+        {
+          "method": "ALWAYS_OVER",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 41,
+              "loss": 43,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.4880952380952381
+            },
+            "under": {
+              "win": 0,
+              "loss": 0,
+              "push": 0,
+              "abstain": 0,
+              "decided": 0,
+              "rate": null
+            },
+            "Combined": {
+              "win": 41,
+              "loss": 43,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.4880952380952381
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "e452edf7d747989cf4d39bc0c89989249e0a7aae7a0522abe2b8fba31c4db717",
+          "candidate_only_correct": 28,
+          "control_only_correct": 16
+        },
+        {
+          "method": "ALWAYS_UNDER",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 0,
+              "loss": 0,
+              "push": 0,
+              "abstain": 0,
+              "decided": 0,
+              "rate": null
+            },
+            "under": {
+              "win": 43,
+              "loss": 41,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5119047619047619
+            },
+            "Combined": {
+              "win": 43,
+              "loss": 41,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5119047619047619
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "e452edf7d747989cf4d39bc0c89989249e0a7aae7a0522abe2b8fba31c4db717",
+          "candidate_only_correct": 25,
+          "control_only_correct": 15
+        }
+      ]
+    },
+    {
+      "target": "pass_cmp",
+      "retained_procedure": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs",
+      "history": "H-CURRENT strict feature memory/priors",
+      "product": "mean",
+      "retained": {
+        "sides": {
+          "over": {
+            "win": 32,
+            "loss": 22,
+            "push": 0,
+            "abstain": 0,
+            "decided": 54,
+            "rate": 0.5925925925925926
+          },
+          "under": {
+            "win": 15,
+            "loss": 15,
+            "push": 0,
+            "abstain": 0,
+            "decided": 30,
+            "rate": 0.5
+          },
+          "Combined": {
+            "win": 47,
+            "loss": 37,
+            "push": 0,
+            "abstain": 0,
+            "decided": 84,
+            "rate": 0.5595238095238095
+          }
+        },
+        "rows": 84,
+        "games": 42,
+        "weeks": [
+          5,
+          6,
+          7
+        ],
+        "mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab"
+      },
+      "reported_fallback_rows": 1,
+      "controls": [
+        {
+          "method": "SAVED_ADJUSTED",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 19,
+              "loss": 9,
+              "push": 0,
+              "abstain": 0,
+              "decided": 28,
+              "rate": 0.6785714285714286
+            },
+            "under": {
+              "win": 28,
+              "loss": 28,
+              "push": 0,
+              "abstain": 0,
+              "decided": 56,
+              "rate": 0.5
+            },
+            "Combined": {
+              "win": 47,
+              "loss": 37,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5595238095238095
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+          "candidate_only_correct": 18,
+          "control_only_correct": 18
+        },
+        {
+          "method": "SAVED_RAW",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 18,
+              "loss": 14,
+              "push": 0,
+              "abstain": 0,
+              "decided": 32,
+              "rate": 0.5625
+            },
+            "under": {
+              "win": 23,
+              "loss": 29,
+              "push": 0,
+              "abstain": 0,
+              "decided": 52,
+              "rate": 0.4423076923076923
+            },
+            "Combined": {
+              "win": 41,
+              "loss": 43,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.4880952380952381
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+          "candidate_only_correct": 20,
+          "control_only_correct": 14
+        },
+        {
+          "method": "E3",
+          "product": "mean",
+          "sides": {
+            "over": {
+              "win": 9,
+              "loss": 4,
+              "push": 0,
+              "abstain": 0,
+              "decided": 13,
+              "rate": 0.6923076923076923
+            },
+            "under": {
+              "win": 33,
+              "loss": 38,
+              "push": 0,
+              "abstain": 0,
+              "decided": 71,
+              "rate": 0.4647887323943662
+            },
+            "Combined": {
+              "win": 42,
+              "loss": 42,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+          "candidate_only_correct": 25,
+          "control_only_correct": 20
+        },
+        {
+          "method": "E3",
+          "product": "lower_median",
+          "sides": {
+            "over": {
+              "win": 14,
+              "loss": 5,
+              "push": 0,
+              "abstain": 0,
+              "decided": 19,
+              "rate": 0.7368421052631579
+            },
+            "under": {
+              "win": 32,
+              "loss": 33,
+              "push": 0,
+              "abstain": 0,
+              "decided": 65,
+              "rate": 0.49230769230769234
+            },
+            "Combined": {
+              "win": 46,
+              "loss": 38,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5476190476190477
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+          "candidate_only_correct": 20,
+          "control_only_correct": 19
+        },
+        {
+          "method": "ALWAYS_OVER",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 47,
+              "loss": 37,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5595238095238095
+            },
+            "under": {
+              "win": 0,
+              "loss": 0,
+              "push": 0,
+              "abstain": 0,
+              "decided": 0,
+              "rate": null
+            },
+            "Combined": {
+              "win": 47,
+              "loss": 37,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5595238095238095
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+          "candidate_only_correct": 15,
+          "control_only_correct": 15
+        },
+        {
+          "method": "ALWAYS_UNDER",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 0,
+              "loss": 0,
+              "push": 0,
+              "abstain": 0,
+              "decided": 0,
+              "rate": null
+            },
+            "under": {
+              "win": 37,
+              "loss": 47,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.44047619047619047
+            },
+            "Combined": {
+              "win": 37,
+              "loss": 47,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.44047619047619047
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+          "candidate_only_correct": 32,
+          "control_only_correct": 22
+        }
+      ]
+    },
+    {
+      "target": "pass_cmp",
+      "retained_procedure": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs",
+      "history": "H-CURRENT strict feature memory/priors",
+      "product": "lower_median",
+      "retained": {
+        "sides": {
+          "over": {
+            "win": 24,
+            "loss": 18,
+            "push": 0,
+            "abstain": 0,
+            "decided": 42,
+            "rate": 0.5714285714285714
+          },
+          "under": {
+            "win": 19,
+            "loss": 23,
+            "push": 0,
+            "abstain": 0,
+            "decided": 42,
+            "rate": 0.4523809523809524
+          },
+          "Combined": {
+            "win": 43,
+            "loss": 41,
+            "push": 0,
+            "abstain": 0,
+            "decided": 84,
+            "rate": 0.5119047619047619
+          }
+        },
+        "rows": 84,
+        "games": 42,
+        "weeks": [
+          5,
+          6,
+          7
+        ],
+        "mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab"
+      },
+      "reported_fallback_rows": 1,
+      "controls": [
+        {
+          "method": "SAVED_ADJUSTED",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 19,
+              "loss": 9,
+              "push": 0,
+              "abstain": 0,
+              "decided": 28,
+              "rate": 0.6785714285714286
+            },
+            "under": {
+              "win": 28,
+              "loss": 28,
+              "push": 0,
+              "abstain": 0,
+              "decided": 56,
+              "rate": 0.5
+            },
+            "Combined": {
+              "win": 47,
+              "loss": 37,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5595238095238095
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+          "candidate_only_correct": 15,
+          "control_only_correct": 19
+        },
+        {
+          "method": "SAVED_RAW",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 18,
+              "loss": 14,
+              "push": 0,
+              "abstain": 0,
+              "decided": 32,
+              "rate": 0.5625
+            },
+            "under": {
+              "win": 23,
+              "loss": 29,
+              "push": 0,
+              "abstain": 0,
+              "decided": 52,
+              "rate": 0.4423076923076923
+            },
+            "Combined": {
+              "win": 41,
+              "loss": 43,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.4880952380952381
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+          "candidate_only_correct": 16,
+          "control_only_correct": 14
+        },
+        {
+          "method": "E3",
+          "product": "mean",
+          "sides": {
+            "over": {
+              "win": 9,
+              "loss": 4,
+              "push": 0,
+              "abstain": 0,
+              "decided": 13,
+              "rate": 0.6923076923076923
+            },
+            "under": {
+              "win": 33,
+              "loss": 38,
+              "push": 0,
+              "abstain": 0,
+              "decided": 71,
+              "rate": 0.4647887323943662
+            },
+            "Combined": {
+              "win": 42,
+              "loss": 42,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+          "candidate_only_correct": 20,
+          "control_only_correct": 19
+        },
+        {
+          "method": "E3",
+          "product": "lower_median",
+          "sides": {
+            "over": {
+              "win": 14,
+              "loss": 5,
+              "push": 0,
+              "abstain": 0,
+              "decided": 19,
+              "rate": 0.7368421052631579
+            },
+            "under": {
+              "win": 32,
+              "loss": 33,
+              "push": 0,
+              "abstain": 0,
+              "decided": 65,
+              "rate": 0.49230769230769234
+            },
+            "Combined": {
+              "win": 46,
+              "loss": 38,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5476190476190477
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+          "candidate_only_correct": 16,
+          "control_only_correct": 19
+        },
+        {
+          "method": "ALWAYS_OVER",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 47,
+              "loss": 37,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5595238095238095
+            },
+            "under": {
+              "win": 0,
+              "loss": 0,
+              "push": 0,
+              "abstain": 0,
+              "decided": 0,
+              "rate": null
+            },
+            "Combined": {
+              "win": 47,
+              "loss": 37,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.5595238095238095
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+          "candidate_only_correct": 19,
+          "control_only_correct": 23
+        },
+        {
+          "method": "ALWAYS_UNDER",
+          "product": "saved_precision_point",
+          "sides": {
+            "over": {
+              "win": 0,
+              "loss": 0,
+              "push": 0,
+              "abstain": 0,
+              "decided": 0,
+              "rate": null
+            },
+            "under": {
+              "win": 37,
+              "loss": 47,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.44047619047619047
+            },
+            "Combined": {
+              "win": 37,
+              "loss": 47,
+              "push": 0,
+              "abstain": 0,
+              "decided": 84,
+              "rate": 0.44047619047619047
+            }
+          },
+          "rows": 84,
+          "games": 42,
+          "weeks": [
+            5,
+            6,
+            7
+          ],
+          "mask_sha256": "db09aba8ade44d095df5ea4808e0e28f76a583f24b8adf01cf217e401e1c48ab",
+          "candidate_only_correct": 24,
+          "control_only_correct": 18
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "H-CURRENT strict-input control and new H-RECENT E3 differ in history policy; this is a complete-system comparator, not isolated profile effect.",
+    "Only W5-7 retained offers; cannot inherit W8 coverage or compare own84 percentage with full112 percentage.",
+    "Reported fallback status is kept separate; no assertion of learned-only improvement.",
+    "Owner-local protected records remain private; aggregates do not establish C raw-row parity or admission."
+  ]
+}

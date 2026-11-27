@@ -1,0 +1,126 @@
+{
+  "id": "INFORMATION_SKILL_B_NEW_INFORMATION_FEASIBILITY_v1",
+  "at_UTC": "2026-11-15T14:54:34.749514+00:00",
+  "hypothesis": "New representation and learned context-composition relationship: offense-adjusted opponent throw-choice plus team-vs-QB context preference, expected conversion with fixed attempts.",
+  "classification": "SOURCE_QUALIFIED_CURRENT_VINTAGE_DIAGNOSTIC;NOT_AUTHENTICATED_PREGAME_HISTORY",
+  "new_raw_external_information": false,
+  "new_consumed_representation": true,
+  "new_relationship": "Fit future25cell mixture using earlier QB/team/opponent tendencies, instead of static shrunk own counts.",
+  "nearest_prior": [
+    "P2 down-depth conditional completion and partial pooling already tested",
+    "C1/C2 catchability and support already tested",
+    "E2/E3 conversion-defense/mix interactions and sameinfo D_M2 forest already tested",
+    "FTN throwaway/IWP and M2 variance block already tested and losses preserved"
+  ],
+  "not_equivalent": "New context-choice target and offense-adjusted choice residual are distinct from old opponent conversion residual. New mixer learns its coefficients from prior context outcomes; old mixture was fixed shrinkage. No new lag/window/ridge search.",
+  "source": {
+    "context_inputs": "reports/information-first-20261112-01/B/completion-wave-v1/QB_CONTEXT_W1_W9_INPUTS_V1.json.gz",
+    "sha256": "45aaab99d41f2e2643066c001355b26430f55dca06e7c7e366eace252f2e021b",
+    "rows": 2939,
+    "2026_numerical_queries": 315,
+    "target_population": "QB officialstat-row conditional reconstruction; unauthenticated pregame roster retained as limitation",
+    "counts": "Credited attempts and explicit completions by25down-depthcontexts, denominator/parity/sourcezero contracts inherited. No rawsource re-extraction, so old broad mask is not newly executed.",
+    "cutoff": "strict available<kickoff; sourceavailability=kickoff+7days reconstruction; game-time order afteradmission",
+    "vintage": "Frozen2022–2025 and2026W1–8 source; separatelybound W9extension, not backdated revised fullseason",
+    "rights": "Ordinarynflverse/PBP CC-BY4.0; reused FTNcatchabilityderivedC2inputs/modelparameters CC-BY-SA4.0, FTN Data via nflverse. Existing attributed routes only."
+  },
+  "unavailable_components": {
+    "personnel_receiver_universe": "No authenticated historical event-effective universe supplied; no currentpersonnel experiment claim",
+    "alignment_allroutes": "Unavailable; no targetdestination/rosterrole substitute",
+    "finerdestination_distance_jointcells": "Not in used compactinputs; retained rawPBP mightsupport separatelyregisteredextraction, deliberately outside this oneblock",
+    "original_publication_clocks": "Not archived; no authenticated pregame deployment or liveprofit claim",
+    "M4": "Independent price access still conditional, not executed"
+  },
+  "C_latest_intake": {
+    "head": "e4efc40f1c8922cbc66ead629efe210328b55da3",
+    "receipt_url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/e4efc40f1c8922cbc66ead629efe210328b55da3/reports/targeted-accuracy-w1w9-01/checkpoint-closure-01/ADMISSION_RECEIPT.json",
+    "recorded_UTC": "2026-11-15T12:28:01.304211+00:00",
+    "B_state": "RECEIVED_NATIVE_M2_W5_W9_OWNER_AGGREGATES_PUBLIC_ARITHMETIC_ADMITTED",
+    "B_native_M2_current_public_aggregates_admitted": true,
+    "limits": {
+      "owner": "B",
+      "state": "RECEIVED_NATIVE_M2_W5_W9_OWNER_AGGREGATES_PUBLIC_ARITHMETIC_ADMITTED",
+      "receipt": {
+        "path": "reports/targeted-accuracy-w1w9-01/checkpoint-closure-01/intake/B_RECEIPT.json",
+        "bytes": 61186,
+        "SHA256": "bfbc79c38b98a2f6772615b08f9d9ff7bf31c8a061241750a7d6044747d5eead"
+      },
+      "actual_current_head": "b4da8524a6163e8826d7ad1c70692efa6c211a52",
+      "immutable_producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+      "source_report": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/README.md",
+      "admitted": "24own-sidepublishedrows+nativeperiod/missingearlyhandoff+ordinalpermutation/countarithmetic; proper-scorevaluesareownerreportedrounded,notrawCcomputation",
+      "source_scope": {
+        "procedure": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1",
+        "actual_line_weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "native_offers_per_category": 142,
+        "games": 71,
+        "numerical_weeks_2026": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "numerical_queries_2026": 315,
+        "robustness_2025_weeks": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "robustness_queries_2025": 303,
+        "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC;CURRENT_VINTAGE_STRICT7D_RECONSTRUCTION;EXPOSED_DEVELOPMENT",
+        "unknown_labels_reported": 0,
+        "unavailable_forecasts_reported": 0,
+        "new_early_grade_weeks": [],
+        "old_B0_B2_84_join": "Already completed distinct product; cannot fill these M2 cells",
+        "primary_activation": false
+      },
+      "negative_scope": {
+        "direction": "All three matched BB/BIN pairs unchanged fullboard sides; P2LAW69/142,C1/C2LAW70/142. Fixed19policies memberships unchanged. CLOSE_RECIPE_NO_GAIN for exact native extension only.",
+        "fixed_means_and_opportunity": "Existing negative-binomial attempt law and conditional completion means held fixed; context affects beta-binomial precision/variance only. Not full QB opportunity/conversion test.",
+        "small_probability_changes_reported": {
+          "P2_BB_minus_BIN_Brier": -0.00011998,
+          "P2_BB_minus_BIN_exact_line_log_loss": -0.00028664,
+          "P2_BB_minus_BIN_current_broad_count_log_loss_approximately": 0.00083,
+          "C1_C2_BB_minus_BIN_Brier_approximately": -8e-05,
+          "limitation": "Owner-published aggregate deltas; not rederived from raw rows by C"
+        },
+        "strong_native_completion_controls": {
+          "retained_B0_mean": "76-66/142",
+          "retained_B2_median_or_law": "75-67/142",
+          "saved_adjusted_point": "72-70/142",
+          "C_E0_ENV_mean": "64-78/142",
+          "C_E0_ENV_median": "67-75/142"
+        },
+        "strong_native_attempt_controls": {
+          "unchanged_ATT_median_law": "71-71/142",
+          "saved_adjusted": "81-60/141;1strict-equalityabstention",
+          "saved_raw": "77-65/142"
+        },
+        "support": "Five native weeks duration only; quote timing/mainalt/vintage unverified, insufficient week clusters under B existing eight-cluster rule; no replacement or supported75/80/90 claim.",
+        "narrow_selective_observed": "C1/C2P90 1-0/1 inW5,zeroW6-9,not dependable weekly accuracy."
+      },
+      "private_rows_fits_clocks": "NOT_INSPECTED_OR_REPRODUCED_BY_C",
+      "early84_new_M2_join": "NO_EXECUTION_RECEIPT_IN_OBTAINED_M2_PUBLICATION;A_OWNER_LOCAL_REQUIRED",
+      "new_primary_activation": false
+    },
+    "supersession": "Previous05:03 old_B_CURRENT_RECEIPT preserved but superseded for admitted final11db/b4da aggregate scope by actualcheckpointreceipt. This does not admit current new INFORMATION-SKILL fits or private parity.",
+    "new_joins": 0
+  },
+  "A_scope": "Newcurrent shell+connector branch49ff differsC12:07registered775; wrongweekly-storage/index404 preserved. Last admittedA775 has fixture/fit pending; current substantiveA status not newly proved. OneAowner updates canonicalbinding; no repeatedpolling/takeover. Own B newexperiment independent."
+}

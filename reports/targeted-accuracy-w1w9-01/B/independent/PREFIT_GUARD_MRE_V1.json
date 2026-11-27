@@ -1,0 +1,39 @@
+{
+  "id": "B_M2_PREFIT_INPUT_AND_RESTORATION_MRE_v1",
+  "at_UTC": "2026-11-15T04:58:54.336308+00:00",
+  "state": "SCOPED_PREFIT_GUARD_DEFECTS",
+  "source_sha256": "1dfa7a8d6770cb14bc81d98e4e658c8809579697b096f05fdda7e74da143b449",
+  "findings": [
+    {
+      "id": "RESTORE_VERSION_NOT_ENFORCED",
+      "scope": "DispersionModel.restore",
+      "observed_accepted_wrong_version": true,
+      "NFL_rows_affected": "NONE_EXECUTED_YET"
+    },
+    {
+      "id": "LAW_RESTORE_VERSION_NOT_ENFORCED",
+      "scope": "restore_law",
+      "observed_accepted_wrong_version": true,
+      "NFL_rows_affected": "NONE_EXECUTED_YET"
+    },
+    {
+      "id": "NONFINITE_PARENT_MEAN",
+      "scope": "DispersionModel.fit input qualification",
+      "reached_optimizer_without_rejection": true,
+      "caught": "INDEPENDENT_SENTINEL_NO_OPTIMIZATION_EXECUTED",
+      "actual_optimizer_calls": 0,
+      "NFL_rows_affected": "NONE_EXECUTED_YET"
+    },
+    {
+      "id": "FRACTIONAL_COUNTS",
+      "scope": "DispersionModel.fit input qualification",
+      "reached_optimizer_without_rejection": true,
+      "caught": "INDEPENDENT_SENTINEL_NO_OPTIMIZATION_EXECUTED",
+      "actual_optimizer_calls": 0,
+      "NFL_rows_affected": "NONE_EXECUTED_YET"
+    }
+  ],
+  "no_NFL_fits": true,
+  "no_actual_optimizer_calls": true,
+  "semantic_impact": "Invalid payloads/data could reach restoration/optimizer; current qualified NFL inputs not shown affected and no score impact claimed. Fix before new execution, preserving unscored code/protocol version."
+}

@@ -1,0 +1,56 @@
+{
+  "NFL_error_rate": "NOT_APPLICABLE_NOT_NEW_FORECAST_OUTCOMES",
+  "NFL_forecast_accuracy": "NOT_APPLICABLE_SOFTWARE_AND_PARITY_VERIFICATION",
+  "at_utc": "2026-11-05T23:31:22.647804+00:00",
+  "code_bindings": [
+    {
+      "path": "nfl_v2/typed_leaf_adapter.py",
+      "sha256": "9078e01bf47efd731923f900da431773a5c87d501164d16894254ca1aacfe76c"
+    },
+    {
+      "path": "tools/verify_b_typed_leaf_delivery.py",
+      "sha256": "ae7b32c8d69630dc4e150485629351ccafc8ab2c4f398135fde3611b85581873"
+    },
+    {
+      "path": "tests/test_typed_leaf_adapter.py",
+      "sha256": "256309f4a58932ab27eae7b9bf60a533e689dcdadbae511887a7002366d45fd9"
+    },
+    {
+      "path": "tools/project_b_qualification_alias_correction.py",
+      "sha256": "615333a3d99c5db4a584af4d4a6e15f6d5ade9ced480519f9d0a0f5ce4931e40"
+    }
+  ],
+  "new_NFL_observations": 0,
+  "new_fit_calls": 0,
+  "repository_checks": [
+    {
+      "command": "python tools/validate_checkpoint.py",
+      "state": "PASS"
+    },
+    {
+      "command": "python tools/check_result_index_coverage.py",
+      "indexed_records": 603711,
+      "registered_artifacts": 216,
+      "state": "PASS"
+    },
+    {
+      "command": "python tools/check_analysis_index_coverage.py",
+      "derived_comparison_views": 19336,
+      "state": "PASS"
+    },
+    {
+      "command": "python tools/check_prop_scoreboard_coverage.py",
+      "groups": 124597,
+      "state": "PASS"
+    }
+  ],
+  "schema": "B-execution-closure-software-checks-v1",
+  "state": "PASS",
+  "unittest": {
+    "command": "python -m unittest discover -s tests -v",
+    "failures": 0,
+    "log_sha256": "79e54ecf7a11d0f38776bc9b251e31a2eca86cb9b130e17cf8d6f8f689328ba3",
+    "new_adapter_tests": 4,
+    "passed": 469
+  }
+}

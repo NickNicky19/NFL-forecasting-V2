@@ -1,0 +1,37 @@
+{
+  "state": "PASS_J_SYNTHETIC_SOFTWARE_CHECKS",
+  "status": "PASS",
+  "recorded_at_utc": "2026-10-31T18:53:20.655875+00:00",
+  "tests_run": 424,
+  "prior_software_receipt": "reports/point-prop-diagnostic-20261031i/SOFTWARE_VERIFICATION_V2.json",
+  "new_executor_synthetic_tests": 15,
+  "helpers": {
+    "defense_season_executor.py": "07b821211cd1649342a2b615120d85f165880437e2447fc1b847b64666a5f2e6",
+    "defense_season_preflight.py": "0cb9a6c8d46ffb4af755b2692432d0f8a4a70817eb36456ca2510ef688522e79",
+    "qualified_defense_wave.py": "d7521ffb753726f66a6731d3ed3ef9de872df55b07fc3666715e22512b57ce1b",
+    "qualified_defense_inputs.py": "cdc1b0c570401aa6ca72c45fd59baea2822766de6e1c168a0ae003fe0b750e9f",
+    "qualified_defense.py": "d59a0a5addbbe4a37bafa57946b3932a250ba4fd461bcc795d86fccb003104a8",
+    "hgb_control.py": "13ad5627152d4aed81540f93088b63716acb98a00bce52089a8ec8cbb619cccf",
+    "empirical_benchmark.py": "53ea90595bdc83a11289ef4daeec795b0bb320ce23b8c8ee8dddcdb6ca88d085",
+    "seasonal_rolling_v2.py": "56848340fa2be4297684c7d06084078f30536d77d38f2fb1d3d8bc1ab6fb9896",
+    "distribution_wave_v2.py": "417b817debe54b8e8c050d92e3e3fb9283fbc924a832099fbcc9c7ba51517fb9",
+    "distribution_laws.py": "14f034249f38cd12d5a0ea36b05e64086e0859cc4209f83a55c913cda5742f4d",
+    "chart_wave.py": "fc438cb1b09f78fab68f179fae85565f48b986c4877428d573dac45d513cfaa7",
+    "chart_sources.py": "6328197abbfa606e067bec00c4e23c358f02796e50c5c0332e74005cec4c6074",
+    "ordered_information_ablation.py": "25018ed79c9c1de76267ad560760676fa254e19c406996100232144dd1e15998",
+    "expanded_retention_gate.py": "f3f4ee33076ed9863ec6f26fd21b9449beddd5340d6f8d0550d5eb3a0d435163"
+  },
+  "source_bindings": {
+    "nfl_v2/defense_season_executor.py": "07b821211cd1649342a2b615120d85f165880437e2447fc1b847b64666a5f2e6",
+    "tools/run_defense_seasons.py": "b20a64bb635d28bb80a64f11b02c1d78f8f8940c06cfaf4b51ea5426b53aad1d",
+    "tests/test_defense_season_executor.py": "1283b1e80326e469947af1023841fa7882bc5d41b8476a92a0cd98d6acf4f07c",
+    "tools/register_j_receipts.py": "ec256ec7a55389a05fc03059c4bbd7e67dd90e6b4d9ccaac6bd46458f8f5dcaa"
+  },
+  "unit_log_artifact": "reports/defense-season-executor-20261031j-code/UNIT_TEST_RESULTS_V1.log",
+  "unit_log_sha256": "11fef6c065f58d911f433ec70b294d2b2ca705995a72bddb484ac5e3034235df",
+  "new_NFL_fits": 0,
+  "new_NFL_inference": 0,
+  "new_NFL_grades": 0,
+  "NFL_accuracy": null,
+  "scope": "Full local software suite after J executor changes. New executor tests use fictional rows/spies; software success does not release a worker, recover archives, close a historical fit, or create NFL skill evidence."
+}

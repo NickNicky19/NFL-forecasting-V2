@@ -1,0 +1,34 @@
+{
+  "app_sha256": "30e8bc0e0b04a2da1e0a8e94e99a79ff62b5f1f67427169c6db93783807e452e",
+  "conclusion": "Newpacket offline operational check warranted, authorizedbyroot after source trace; old noVMreport remains correctasof itsreadback",
+  "consumer_sha256": "d6657e82639aa001f64701672e25cc72bd6e55142127669a59396f9efe485a68",
+  "fields": [
+    {
+      "consumed": true,
+      "field": "rows[].first_prepared_at",
+      "rule": "persisted <= prepared < kickoff andprepared < expiry; exactrowcanonical also boundbyselectedvalidatorapp.js:1124-1131",
+      "source": "consumer.js:40-41"
+    },
+    {
+      "consumed": true,
+      "field": "prepared_at/packaged_at",
+      "rule": "packaged_at >= prepared_at",
+      "source": "consumer.js:26"
+    },
+    {
+      "consumed": true,
+      "field": "display_board_sha256 / pointer / overlay sha",
+      "rule": "Exact currentboard andpacket wirebindings; changedvalues can reject independentofunchangedcode",
+      "source": "consumer.js:23,91-94 andapp.js:1086-1093"
+    },
+    {
+      "consumed": true,
+      "field": "selected prepared_at/published_at",
+      "rule": "prepared<=published; selected_at<=published<kickoff; exactrowsourcefieldcomparison",
+      "source": "app.js:1086-1093,1115-1116"
+    }
+  ],
+  "live_UI_scope": "No browserDOM/network rendering or owneradmission claim",
+  "schema": "j-source-metadata-consumer-sensitivity-v1",
+  "served_byte_scope": "AlreadyverifiedactualHTTPbytes; actualnewfunctionadmissionnotclaimeduntilsupplementalexecutionreceipt"
+}

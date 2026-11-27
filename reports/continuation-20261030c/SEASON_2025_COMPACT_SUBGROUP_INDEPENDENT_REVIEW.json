@@ -1,0 +1,64 @@
+{
+  "state": "PASS_FULL_COMPACT_SOURCE_MASK_POINT_PRECISION_PAIRING_AND_BLOCK_UNCERTAINTY_REPLAY",
+  "mode": "season",
+  "season": 2025,
+  "protocol_sha256": "dc7f8fb59e0fb80afe37074d44559ea88b4d7d513fde10b6d7a32d5345faf60e",
+  "source_score_sha256": "ccefce91c2373713378e249674d7333a85db982d238e683c9fdb89571f36e233",
+  "source_pair_sha256": "d771bfbd4485458af9fff8dc15e961eb5f9eb5ef3fe63c60a0a9dc2dbab69e5a",
+  "score_views": 797,
+  "pair_views": 1594,
+  "candidate_retained_views": 45579,
+  "checks": {
+    "frozen_source_hashes": 3,
+    "independent_all_compact_native_precision_coverage_fields": 18592,
+    "full_mask_membership_hashes": 1594,
+    "independent_500_draw_wholeweek_intervals": 1386,
+    "independent_game_influence_SEs": 1478,
+    "all_compact_exact_paired_native_losses_memberships": 1594,
+    "honest_insufficient_week_flags": 208
+  },
+  "representative_win_loss": [
+    {
+      "direction": "loss",
+      "record_id": "COMPACT-e459298ccf71531f0ff5d7e5",
+      "target": "anytime_td",
+      "cohort": "top10",
+      "reference": "fixed_2026_control",
+      "n": 180,
+      "candidate_error": 0.285989763758438,
+      "comparator_error": 0.28349236580718246,
+      "delta": 0.0024973979512555103
+    },
+    {
+      "direction": "win",
+      "record_id": "COMPACT-08edc219552357d246cb0a95",
+      "target": "pass_att",
+      "cohort": "top10",
+      "reference": "same_season_strongest_control",
+      "n": 180,
+      "candidate_error": 7.644444444444445,
+      "comparator_error": 7.650992721311363,
+      "delta": -0.00654827686691889
+    },
+    {
+      "direction": "tie",
+      "record_id": "COMPACT-1942419768d5fa005418c52e",
+      "target": "pass_int",
+      "cohort": "top10",
+      "reference": "fixed_2026_control",
+      "n": 30,
+      "candidate_error": 0.6666666666666666,
+      "comparator_error": 0.6666666666666666,
+      "delta": 0.0
+    }
+  ],
+  "scope": "Allcompactnativepoint/cohort/full-own-sharedlearnedmasksandpaireduncertainty. Correctedempiricalproductaliases; actualselectedcandidate+registeredcontrols overlap, NOToldall4candidatepoliciesmask. Pointonly; properlawsnotinvented. Exposedfullpanelreferencechoicesnotearlierselectionpolicy.",
+  "resource": {
+    "wall_seconds": 31.7866482849995,
+    "cpu_seconds": 31.778405482,
+    "peak_rss_bytes": 275226624
+  },
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

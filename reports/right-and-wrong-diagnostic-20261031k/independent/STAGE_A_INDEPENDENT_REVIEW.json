@@ -1,0 +1,296 @@
+{
+  "state": "PASS_INDEPENDENT_K_STAGE_A_EXACT_ROWS_BUCKET_BANDS_METRICS_AND_EXAMPLES",
+  "root_protocol_sha256": "e8fd291408a36b230e77139d6508ff3f7b874bd582175c3adb12acc8cf897bec",
+  "stage_protocol_sha256": "f15e39092f98385cd40eff8a7a0544b1314f680e72d09300419a5bf68bbb9c21",
+  "score_sha256": "e2baebaeab72866b332c40f3b53bb5b7f40f67246fd2e637b640f54b4bae32cb",
+  "input_sha256": "579586334b1cc9f21db6fbf38052286b6f72c6b248ab551873d1e6b44ca1cef9",
+  "private_derivative_sha256": "e34416a2f5246603167227bb14ddc7af705f9cb3b3feb3272c2ae3904dd02b5b",
+  "checker_sha256": "a9562b54524be7742c73027b71be370df9a83e7402262d4e5c6fa24d7a7126b1",
+  "exact_recipe_target_outputs": 36,
+  "source_rows_and_scalar_identity_checks": 3024,
+  "all_diagnostic_metric_views_recomputed": 1584,
+  "all_frozen_examples_verified": 216,
+  "focal_summaries": [
+    {
+      "target": "pass_cmp",
+      "procedure_id": "v2-qualified-position-defense-information-wave-v1:D1",
+      "outer_opportunities": 84,
+      "admitted_forecasts": 76,
+      "bucket_counts": {
+        "OVER_LOSS": 12,
+        "OVER_WIN": 11,
+        "UNDER_LOSS": 31,
+        "UNDER_WIN": 22
+      },
+      "large_error_right": 19,
+      "close_wrong": 0
+    },
+    {
+      "target": "pass_yd",
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "outer_opportunities": 84,
+      "admitted_forecasts": 80,
+      "bucket_counts": {
+        "OVER_LOSS": 18,
+        "OVER_WIN": 14,
+        "UNDER_LOSS": 34,
+        "UNDER_WIN": 14
+      },
+      "large_error_right": 17,
+      "close_wrong": 0
+    }
+  ],
+  "opaque_first_focal_case_witnesses": [
+    {
+      "recipe": [
+        "pass_cmp",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-4523af2ac43c6211b215b370"
+    },
+    {
+      "recipe": [
+        "pass_cmp",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-56684750c89a275272f91db1"
+    },
+    {
+      "recipe": [
+        "pass_cmp",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-093bd7e38a5dfc3bccef46f4"
+    },
+    {
+      "recipe": [
+        "pass_cmp",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-6bf75f6f98d48029f1e1478f"
+    },
+    {
+      "recipe": [
+        "pass_cmp",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-2e8ca7cf4bf6f4bf83c4851b"
+    },
+    {
+      "recipe": [
+        "pass_cmp",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-a28917c8a4a4001eaef2dab5"
+    },
+    {
+      "recipe": [
+        "pass_cmp",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-d29014a02d09ea343772c2f1"
+    },
+    {
+      "recipe": [
+        "pass_cmp",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-49d6e176c956fec083ec3e95"
+    },
+    {
+      "recipe": [
+        "pass_cmp",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-7aa45a6b4c1d5745877bb21b"
+    },
+    {
+      "recipe": [
+        "pass_cmp",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-fbe4821f6d82d65de1ba906d"
+    },
+    {
+      "recipe": [
+        "pass_cmp",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-2b95ec322e391967a0d408da"
+    },
+    {
+      "recipe": [
+        "pass_cmp",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-55f6b0d1c4b5a1e6179f189a"
+    },
+    {
+      "recipe": [
+        "pass_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-3f027e34dab2e3bf48e2f39a"
+    },
+    {
+      "recipe": [
+        "pass_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-67b413f92e7634f11fdd1bfd"
+    },
+    {
+      "recipe": [
+        "pass_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-298542ccca34d6f864d554dc"
+    },
+    {
+      "recipe": [
+        "pass_yd",
+        "hgb-direct-history-controls-v1:absolute_error_point",
+        "H-MULTI",
+        "absolute_error_point"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-e99d4bbbe4673904611a5e28"
+    },
+    {
+      "recipe": [
+        "pass_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-f1ba7b105610c7489b542c35"
+    },
+    {
+      "recipe": [
+        "pass_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-8c7e596c331f018cf2361743"
+    },
+    {
+      "recipe": [
+        "pass_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-4f864a0208b208de4cf9f1ac"
+    },
+    {
+      "recipe": [
+        "pass_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "lower_median"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-b05de3022de32763cfde523c"
+    },
+    {
+      "recipe": [
+        "pass_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_WIN",
+      "case_id": "K-CASE-03a4bce4358403536af4281a"
+    },
+    {
+      "recipe": [
+        "pass_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "OVER_LOSS",
+      "case_id": "K-CASE-a151fb5284b5790deb5bb092"
+    },
+    {
+      "recipe": [
+        "pass_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_WIN",
+      "case_id": "K-CASE-a5f7df6b114a4aded0726e97"
+    },
+    {
+      "recipe": [
+        "pass_yd",
+        "v2-qualified-position-defense-information-wave-v1:D1",
+        "H-MULTI",
+        "mean"
+      ],
+      "bucket": "UNDER_LOSS",
+      "case_id": "K-CASE-8e3b24112af84a8f2936a091"
+    }
+  ],
+  "scope": [
+    "Separate Decimal calculation checks retained statistical grades, signed identities, all T/2T bounds and source row immutability; no producer diagnostic functions used.",
+    "Bookmaker unresolved contracts remain parallel; no betting settlement/price/ROI inferred.",
+    "Actual feature/model/context provenance receives a separate source audit; components remain absent for direct marginals.",
+    "These are posterior descriptive groups, not earlier-executable cohorts, causal tests, repairs or new ranking contenders."
+  ],
+  "new_models": 0,
+  "new_inference": 0,
+  "new_NFL_forecasts": 0,
+  "new_NFL_observations": 0,
+  "new_private_exports": 0
+}

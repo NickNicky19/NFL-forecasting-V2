@@ -1,0 +1,49 @@
+{
+  "state": "PROPOSED_FINITE_EXECUTION_NOT_AUTHORIZED_OR_RUN",
+  "old_measured_reference": {
+    "logical_cells": 672,
+    "actual_fits": 556,
+    "private_bytes": 143878645,
+    "wall_seconds": 309.97282565900014,
+    "CPU_seconds": 368.66792652299995,
+    "peak_RSS_bytes": 1883930624
+  },
+  "stages": [
+    {
+      "order": 1,
+      "scope": "2025 observed D1/D2 balanced twelve-target pilot at prespecified Week9 origin; all4logicalpolicies, same Leafcontrol rows",
+      "max_logical_origins": 96,
+      "max_optimizer_fit_calls": 96,
+      "proposed_wall_seconds": 240,
+      "proposed_CPU_seconds": 300,
+      "proposed_RSS_bytes": 2147483648,
+      "proposed_private_reservation_bytes": 134217728,
+      "why": "Priorcells suggest~44wall/~53CPUseconds and~20.6MBoutput for96logicalcells; generous capped pilot measures training-size/runtime/storage differences before fullseason. Those are extrapolations, not measuredolderseasoncosts."
+    },
+    {
+      "order": 2,
+      "scope": "Complete2025observed across all18weeks, retainingpilotreceipt andneverrepeatitscompletedorigins; then2024,2023,2022finitebalancedwaves.",
+      "logical_origins_per_season_per_window": 1728,
+      "total_unique_original_source_policy_fit_origins_observed": 5184,
+      "proposed_private_bytes_per_season": null,
+      "why": "Reserve capacity from actualpilot bytes/maximum model sizes and complete recovery evidence before wave. Original2022RECENT remains proxy, exactextension separate."
+    },
+    {
+      "order": 3,
+      "scope": "Scheduled-window alternative only after matchedobservedolderfits/featurematrixaudit; reuse exactunchanged models/forecasts only after complete matrix/label/prior/query equality.",
+      "reuse_fit_count": null,
+      "why": "Current2026selectiveplan768logicalcells/308changedfitattempts is not an older-season reuseplan and must not be scaled into an invented oldercount."
+    }
+  ],
+  "execution_prerequisites": [
+    "Implement thin season loop using existingseasonalloader,20ownfeatures,D1/D2augmenters,Leaflaw/prior/fallback and samefrozenquerymembership; no new feature or hyperparameter recipe.",
+    "Authenticate baselineLeafsamehistory trainingmembers/priors/fitcutoffs and savedfullsystem comparisons; rawoldD1/D2models are not themselves necessary for a genuinelynewolderfit.",
+    "Keep exact2026 scheduled768cellplan separate; no newfuturequery/capture phase in historicalrunner.",
+    "Factual fullrequired recoveryPASS, newcapacityreservation, independentseason-prefit protocol review and separate root solefitworker release; unchangedtoday.",
+    "Persist models, transformedfeature/code/source/label/query/forecastrows and readback before broadscoring; defaultmeanMAE/MSE versus medianMAE,properlaw scores and unknown/fallback counts separate."
+  ],
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_scores": 0,
+  "private_prepared_rows": 0
+}

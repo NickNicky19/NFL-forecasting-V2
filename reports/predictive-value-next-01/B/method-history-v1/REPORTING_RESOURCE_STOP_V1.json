@@ -1,0 +1,23 @@
+{
+  "id": "B-METHOD-HISTORY-REPORTING-RESOURCE-STOP-v1",
+  "UTC": "2026-11-16T23:16:48.551027+00:00",
+  "state": "FAILED_REPORTING_RSS_GUARD_AFTER_DURABLE_OUTPUTS;NO_PREDICTIVE_FAILURE",
+  "stage": "Final resource guard after full JSON serialization and saved Markdown/CSV/JSON",
+  "RSS_cap_bytes": 1073741824,
+  "observed_peak_RSS_bytes": 1209933824,
+  "declared_CPU_cap": 120,
+  "recorded_build_CPU_seconds": 61.125100702000005,
+  "recorded_build_wall_seconds": 61.1596936950009,
+  "known_prior_metadata_census_CPU_seconds": 39.817195461000004,
+  "guard_not_relaxed": true,
+  "underlying_index_projection_outputs": "All620521views/468shards were hashchecked and15,683configurations durably saved before final guard. No source index/score was modified.",
+  "failed_tool_sha256": "1792419a7515009132ef8cd39bc3faeba2543f291ad2029e49433ad5519bdaa1",
+  "failed_tool_preserved": "reports/predictive-value-next-01/B/method-history-v1/PRE_STREAM_SERIALIZATION_FAILED_TOOL_V1.py.source.txt",
+  "repair": "Replace recursive whole-object copy/string materialization with streaming JSON serialization, retaining same schema and limits. No full projection rerun; repaired whole-pipeline memory performance remains NOT_EXECUTED.",
+  "verification_scope": "Bounded stream disk/hash/gzip/CSV consistency checks only; does not convert failed whole-build resource check to PASS.",
+  "new_fits": 0,
+  "new_grades": 0,
+  "new_source_GETs": 0,
+  "pilot_CPU_spent": 0,
+  "metering_limit": "Import, failed exploratory scans, tail and orchestration not fully metered; no total-complete reporting CPU claim."
+}

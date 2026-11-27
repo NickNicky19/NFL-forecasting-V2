@@ -1,0 +1,224 @@
+{
+  "id": "B-SHARED-GAME-SIM01-QB-COMPONENT-CONTRACT-v1",
+  "created_UTC": "2026-11-22T16:20:52.281147+00:00",
+  "owner": "B",
+  "state": "RETAINED_COMPONENT_REVIEW_ONLY; NO_NEW_COMPONENT_FIT_INFERENCE_OR_SIMULATOR",
+  "candidate_file": "QB_CANDIDATES_V1.json",
+  "component_contracts": [
+    {
+      "id": "COMMON_EXPOSURE",
+      "procedure": "B-player-context-matchup-01-v1:COMMON_EXPOSURE",
+      "role": "QB official credited passing attempts, sacks excluded; retrospective physical-participation/stat-row panel, not venue nonvoid or pregame roster probability.",
+      "law": "A~NegativeBinomial(shape=r, p=r/(r+mu)); equivalently lambda~Gamma(r,scale=mu/r), A|lambda~Poisson(lambda). mu=0 is pointmass0.",
+      "mean": "mu=(sum of own8 eligible earlier credited attempts +4*eligible pooled QB mean)/(nOwn+4).",
+      "shape": "Earlier second moment shrunk with the same4 pseudo-games; v=E[A^2]-mu^2; r=clip(mu^2/max(.01,v-mu),.5,200), r=200 if mu=0.",
+      "timing": "History H-RECENT preceding season + earlier current labels; expanding2022 feature memory; reconstructed available=kickoff+7days, strict available<query cutoff. Weekly fit before earliest target game, per-query earlier feature refresh. No authentic source-vintage claim.",
+      "fallback": "If own history is absent use the registered role/pool prior; no earlier pool is unavailable. Save attribution; a missing saved output is not a fabricated fallback.",
+      "source": {
+        "path": "nfl_v2/player_context_matchup.py",
+        "body_present": true,
+        "scope": "EXACT_RETAINED_PUBLIC_METADATA_OR_CODE",
+        "sha256": "3db66e8d7c75f444d87f4792add9096a9d04d0390902f67ce21248c206476f29",
+        "bytes": 17185,
+        "producer_commit": "3ad682cf86912f025e5a1699c8a396f3d9065222",
+        "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/3ad682cf86912f025e5a1699c8a396f3d9065222/nfl_v2/player_context_matchup.py"
+      },
+      "protocol": {
+        "path": "reports/player-context-matchup-01/B/qb-wave-v1/FROZEN_PROTOCOL.json",
+        "body_present": true,
+        "scope": "EXACT_RETAINED_PUBLIC_METADATA_OR_CODE",
+        "sha256": "afefa53e0d2f794f99f29c410e6e0b0260876126526d12404a2d8bcd8993f9fb",
+        "bytes": 5256,
+        "producer_commit": "3ad682cf86912f025e5a1699c8a396f3d9065222",
+        "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/3ad682cf86912f025e5a1699c8a396f3d9065222/reports/player-context-matchup-01/B/qb-wave-v1/FROZEN_PROTOCOL.json"
+      },
+      "saved_output_alias": "OPP_BASE pass_att law is the exact unchanged COMMON_EXPOSURE law, with actual typed historical saved bodies bound in QB_CANDIDATES_V1.json.",
+      "limits": [
+        "No modeled team total, QB participation/availability distribution or mutual allocation of team attempts across quarterbacks.",
+        "Conditional single-QB law alone does not supply sacks, scrambles, kneels, rushes, target allocation, pass TD or interceptions."
+      ]
+    },
+    {
+      "id": "P1_P2_P3_CONDITIONAL_CONVERSION",
+      "procedure": "B-player-context-matchup-01-v1:P1/P2/P3 (exact saved procedure names and fallback retained)",
+      "attempt_parent": "COMMON_EXPOSURE",
+      "law": "Forecast earlier-only 25 down\u00d7depth context weights pi_j and context conversion p_j; q=sum_j pi_j*p_j. C|A~Binomial(A,q), A~COMMON_EXPOSURE. Therefore C marginal is NB(mean=mu_A*q,shape=r_A).",
+      "learning": "Regularized hierarchical logistic conversion; shared and partially pooled player/context effects, original exact arm settings unchanged. Future context mix comes only from earlier evidence.",
+      "joint_generation": "Draw A once then C|A. C<=A and zero-attempt support hold without clipping. Drawing independent marginal A and C is not this joint model.",
+      "conditioning": "Historical actual attempts are permitted conversion-training exposures. Actual target-game attempts, down/depth mix or pressure are not forecast inputs.",
+      "source": {
+        "path": "nfl_v2/player_context_matchup.py",
+        "body_present": true,
+        "scope": "EXACT_RETAINED_PUBLIC_METADATA_OR_CODE",
+        "sha256": "3db66e8d7c75f444d87f4792add9096a9d04d0390902f67ce21248c206476f29",
+        "bytes": 17185,
+        "producer_commit": "3ad682cf86912f025e5a1699c8a396f3d9065222",
+        "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/3ad682cf86912f025e5a1699c8a396f3d9065222/nfl_v2/player_context_matchup.py"
+      },
+      "protocol": {
+        "path": "reports/player-context-matchup-01/B/qb-wave-v1/FROZEN_PROTOCOL.json",
+        "body_present": true,
+        "scope": "EXACT_RETAINED_PUBLIC_METADATA_OR_CODE",
+        "sha256": "afefa53e0d2f794f99f29c410e6e0b0260876126526d12404a2d8bcd8993f9fb",
+        "bytes": 5256,
+        "producer_commit": "3ad682cf86912f025e5a1699c8a396f3d9065222",
+        "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/3ad682cf86912f025e5a1699c8a396f3d9065222/reports/player-context-matchup-01/B/qb-wave-v1/FROZEN_PROTOCOL.json"
+      },
+      "limits": [
+        "Pass destination/depth is not receiver alignment or charted catchability.",
+        "Point-estimated conversion/mix parameters are not a full uncertainty posterior.",
+        "Official completions are not automatically the sum of all trajectory receptions until target/receiver/other buckets and source definitions are supplied."
+      ]
+    },
+    {
+      "id": "M2_CONVERSION_VARIANCE",
+      "procedure": "Frozen M2 conditional beta-binomial conversion extension; exact source IDs remain in original protocol and typed handoff.",
+      "attempt_parent": "COMMON_EXPOSURE held fixed",
+      "law": "Keep predicted attempt law and conversion means fixed. Beta-binomial C|A uses earlier-fit precision; integrate sum_a>=c P(A=a)*P(C=c|A=a). Counts obey C<=A when the same A is used.",
+      "scientific_disposition": "Narrow variance-only increment did not improve mean-direction or frozen selective membership. W1\u20139 early grades already completed. Small proper-score differences are retained separately. Not proof all opportunity/conversion mechanisms were tested.",
+      "protocol": {
+        "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/FROZEN_PROTOCOL_V2.json",
+        "body_present": true,
+        "scope": "EXACT_RETAINED_PUBLIC_METADATA_OR_CODE",
+        "sha256": "0ee7a43c5cd72c82f19df154f80a9df1dc8583eb285f3b9727bf879967efd25e",
+        "bytes": 14382,
+        "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+        "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/wave-v1/FROZEN_PROTOCOL_V2.json"
+      },
+      "handoff": {
+        "path": "reports/targeted-accuracy-w1w9-01/B/OWNER_LOCAL_M2_HANDOFF_V1.json",
+        "body_present": true,
+        "scope": "EXACT_RETAINED_PUBLIC_METADATA_OR_CODE",
+        "sha256": "0e4ac79bd1af5f66c4ffc031adf1dbb72c88335b86c426e51eb1d29646438d60",
+        "bytes": 3708,
+        "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+        "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/reports/targeted-accuracy-w1w9-01/B/OWNER_LOCAL_M2_HANDOFF_V1.json"
+      }
+    },
+    {
+      "id": "SKILL_R0_THROW_MIX",
+      "procedure": "B-INFORMATION-SKILL-PASS-MIX-v1:SKILL_R0",
+      "attempt_parent": "COMMON_EXPOSURE unchanged",
+      "law": "Earlier regularized multinomial composition predicts25 context weights; existing context logistic estimates p; q=sum pi*p; thin fixed NB attempt law by q. It changes expected conversion/throw mix rather than M2 variance only.",
+      "inputs": "Earlier PBP QB/team context preferences and offense-adjusted opponent context-choice residuals; actual target-game mix is excluded. No genuine personnel/status/route feed or saved provider points.",
+      "scientific_disposition": "Mean115/226 versus C0113, B0119; law110/226 versus C0112 and B2122. Full-window probability deterioration; no preferred replacement.",
+      "verification": "R0 representative mixer fit check passed in its own scope. Original enriched C1 strict reproduction remains FAILED; independent full coefficient vector was not retained. No retry or tolerance relaxation.",
+      "source": {
+        "path": "nfl_v2/qb_pass_mix_information.py",
+        "body_present": true,
+        "scope": "EXACT_RETAINED_PUBLIC_METADATA_OR_CODE",
+        "sha256": "7605a8f6323b425ab13a6c14692eb04a6b4d0c96b2ba788c74d99c367976c772",
+        "bytes": 19193,
+        "producer_commit": "990b5149839e7ca5f2f593962c92052c00c72e0f",
+        "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/990b5149839e7ca5f2f593962c92052c00c72e0f/nfl_v2/qb_pass_mix_information.py"
+      },
+      "protocol": {
+        "path": "reports/information-skill-01/B/FROZEN_DESIGN_V1.json",
+        "body_present": true,
+        "scope": "EXACT_RETAINED_PUBLIC_METADATA_OR_CODE",
+        "sha256": "06cd33057a15ffc8df2512159f2cc2f8dfab93e9b9b3905a7159618b11e2fdea",
+        "bytes": 9951,
+        "producer_commit": "990b5149839e7ca5f2f593962c92052c00c72e0f",
+        "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/990b5149839e7ca5f2f593962c92052c00c72e0f/reports/information-skill-01/B/FROZEN_DESIGN_V1.json"
+      }
+    },
+    {
+      "id": "OPPORTUNITY_V1_JOINT",
+      "procedure": "OPP_BASE / OPP_MEAN / OPP_JOINT / DIRECT_ATT are distinct products, not old SKILL or M2.",
+      "law": "T~NB(team_mu,team_shape). A|T~Binomial(T,sigmoid(b + volume_slope*log(T/T_reference))) with declared T=0 convention. C|A~Binomial(A,q_fixed_R0). Joint is P(T)*P(A|T)*P(C|A), so C<=A<=T.",
+      "integration": "Retained bounded numerical grid with explicit omitted mass/mean bounds, no renormalization and no arbitrary caps; exact parameters and tolerances in original safe JSON law/code.",
+      "information": "Earlier team opportunities, offense/defense support and QB conditional team-share relationships. Not pregame starter, injury, or complete teammate roster information.",
+      "scientific_disposition": "Exact joint recipe closed unsuccessful: weak attempt-mean gain but stronger retained controls; completion-mean loss, worse joint proper scores and adverse confidence buckets.",
+      "verification": "Team strict fit reproduction FAILED; share-fit reproduction and saved-row grading PASSED separately. No inference that partial passes repair team-fit failure.",
+      "source": {
+        "path": "nfl_v2/opportunity_information.py",
+        "body_present": true,
+        "scope": "EXACT_RETAINED_PUBLIC_METADATA_OR_CODE",
+        "sha256": "3d059b042aba291b13b9b8c477271e1c90cc84d8e58c1ac234057a1973096731",
+        "bytes": 25337,
+        "producer_commit": "a0f5b91c61c9d1c7c2a3e39c4bdd6da29435e98e",
+        "immutable_URL": null
+      },
+      "protocol": {
+        "path": "reports/information-skill-follow-through-01/B/opportunity-v1/FROZEN_DESIGN_V1.json",
+        "body_present": true,
+        "scope": "EXACT_RETAINED_PUBLIC_METADATA_OR_CODE",
+        "sha256": "f99dfadc0fde3ee984e523f1250055bb9f822f37358d8311f86db2eefce919e0",
+        "bytes": 7670,
+        "producer_commit": "a0f5b91c61c9d1c7c2a3e39c4bdd6da29435e98e",
+        "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/a0f5b91c61c9d1c7c2a3e39c4bdd6da29435e98e/reports/information-skill-follow-through-01/B/opportunity-v1/FROZEN_DESIGN_V1.json"
+      },
+      "handoff": {
+        "path": "reports/information-skill-follow-through-01/B/opportunity-v1/HISTORICAL_TYPED_HANDOFF_V1.json",
+        "body_present": true,
+        "scope": "EXACT_RETAINED_PUBLIC_METADATA_OR_CODE",
+        "sha256": "35003dd910454cee12ddfa22b3ac3f97bf0b5daddc1f9f5614a2c86ab5f6d99d",
+        "bytes": 2806,
+        "producer_commit": "a0f5b91c61c9d1c7c2a3e39c4bdd6da29435e98e",
+        "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/a0f5b91c61c9d1c7c2a3e39c4bdd6da29435e98e/reports/information-skill-follow-through-01/B/opportunity-v1/HISTORICAL_TYPED_HANDOFF_V1.json"
+      },
+      "independent": {
+        "path": "reports/information-skill-follow-through-01/B/opportunity-v1/independent/REPRESENTATIVE_FIT_REPRODUCTION_V1.json",
+        "body_present": true,
+        "scope": "EXACT_RETAINED_PUBLIC_METADATA_OR_CODE",
+        "sha256": "3b8927048d2636b6dfa1485f0f39cb2206f4fe79b0f9bee35db91a21da12371f",
+        "bytes": 10058,
+        "producer_commit": "a0f5b91c61c9d1c7c2a3e39c4bdd6da29435e98e",
+        "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/a0f5b91c61c9d1c7c2a3e39c4bdd6da29435e98e/reports/information-skill-follow-through-01/B/opportunity-v1/independent/REPRESENTATIVE_FIT_REPRODUCTION_V1.json"
+      },
+      "limits": [
+        "This one-QB conditional team model does not allocate one complete team opportunity total mutually across a roster.",
+        "Do not combine its A marginal with separately chosen completion/TD/INT marginals and call the result coherent."
+      ]
+    },
+    {
+      "id": "DIRECT_DISTRIBUTION_BENCHMARKS",
+      "law": "Leaf-CDF, signed-yard discrete-Laplace GLM, Poisson count GLM and empirical laws are standalone forecast benchmarks. HGB point products have no probability law.",
+      "information": "Their actual original football inputs/history/corrector/fallback are separately bound in candidate records. None is shown to consume the exact new S-P provider-point block and same admitted earlier football fields.",
+      "limits": [
+        "No arbitrary independent-TD/INT draws then caps to A/C. Passing TD, INT, completion/reception and gains need a compatible joint event decomposition.",
+        "No Count A corrector or producer-restoration claim is supplied by these B components.",
+        "No same-information D-P architecture attribution established from these nominees."
+      ]
+    }
+  ],
+  "exact_line_contract": {
+    "integer": "Under=F(L-1);Push=F(L)-F(L-1);Over=1-F(L).",
+    "noninteger": "Under=F(floor(L));Push=0;Over=1-F(floor(L)).",
+    "law_direction": "More probable valid side; exact tie abstains. Mean and median strict-point decisions remain separately scored products.",
+    "probability_conditioning": "Original modeled appearance/statistical crossing; not authenticated venue nonvoid. Declare any nonpush renormalization before new grading, never silently change conditioning.",
+    "DNP": "Unknown/absent/DNP is not automatically Under or zero; no pregame roster assumed from eventual source statistics.",
+    "scoring": "Reuse canonical admitted website outcomes and original/corrected grading versions; this contract extracts existing mechanisms and does not create a new scorer."
+  },
+  "shared_engine_missing_relationships": [
+    "A coherent shared-game model still needs both-team opportunity/possession or box-score law, explicit roster/participation uncertainty, mutually consistent teammate and other buckets, pass attempt/sack/scramble/designed-run/kneel categories, receiver targeting/conversion/gains and compatible TD/INT coupling. Existing marginal controls do not supply these automatically.",
+    "Both-team correlation with unchanged individual marginals cannot by itself improve their crossing probabilities.",
+    "B is not executing a simulator or assembling a second engine; C owns the one frozen recipe and must name its substantive difference from these completed mechanisms."
+  ],
+  "freeze_and_verification_requirements": {
+    "recipe": "C retains and hashes actual recipe/code/input allowlist, roster, seed/update policy and grader/selection definitions before generation/new target-grade inspection; public metadata upload is not necessary where restricted.",
+    "prediction": "Actual forecast bytes must be retained and hashed before the grade join; receipts without bodies are insufficient.",
+    "mutation": "For the actual C forecast worker: hold seed and full legitimate query/teammate context, identities/order/denominators fixed, mutate prohibited target/future outcomes, compare consumed design/transforms AND predictions. Earlier training labels remain allowed. No C worker/input bundle has been verified here.",
+    "reuse": "Passed original scoped checks may be reused only under exact retained bindings. C1 and opportunity strict failures stay FAILED; saved arithmetic is not full fit reproduction.",
+    "future": "Before first target result review cohort, source/capture times, update policy, outcome-free selection, primary contrast, multiplicity and fixed horizon/stopping rule. No qualified new prospective plan/capture was executed by this extraction."
+  },
+  "required_identity_bridge": {
+    "state": "PENDING_CANONICAL_WEBSITE_CONTRACT",
+    "website": "3474 exact rows,74games,W4\u20139, numeric ESPN event/player identities; W4 two games.",
+    "B": "Canonical NFL game/GSIS player IDs in the saved B packets.",
+    "action": "Website supplies exact admitted bridge and source/role/line/book/cutoff/settlement/outcome version; A retains protected local joins. No fuzzy names, synthetic offers or source/canonical clock relabeling."
+  },
+  "cost_and_scope": {
+    "new_fit": 0,
+    "new_inference": 0,
+    "new_scoring": 0,
+    "new_SIM_run": 0,
+    "new_network": 0,
+    "new_model_load": 0,
+    "reporting_CPU_seconds": 0.498206144,
+    "scientific_budget_consumption": 0,
+    "limitations": "Measured metadata extraction only; shell/orchestration/readiness overhead and earlier failed preparation tails are not a complete metered total. No closed pilot allowance consumed."
+  },
+  "saved_output_adapter_readiness": "All nominated point bodies are reopenable, including empirical CSV. Full law bodies are explicit for modern FTN/SKILL/COMMON and recovered completion GLM. Older leaf point-packet leaf_ids are not complete probability laws; no restoration/inference performed. Existing adapters and exact contracts are bound per candidate.",
+  "safe_schema_check_scope": "One legacy receipt-bound gzip JSON packet, modern FTN/SKILL/OPP and recovered legacy completion JSON representatives, plus exact empirical gzip CSV header. No pickle, model load, future-result join or scored prediction calculation. Consumed-design mutation of the actual C worker remains pending."
+}

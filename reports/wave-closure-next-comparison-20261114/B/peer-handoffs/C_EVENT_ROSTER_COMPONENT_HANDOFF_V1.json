@@ -1,0 +1,103 @@
+{
+  "id": "B_TO_C_CONCRETE_EVENT_ROSTER_COMPONENT_HANDOFF_v1",
+  "created_UTC": "2026-11-14T15:10:03.080144+00:00",
+  "owner": "C existing personnel/source executor; B reuses obtained final-grading evidence, no separatecollection",
+  "state": "CONCRETE_EVENT_ROSTER_ROUTE_OBSERVED_POSTGAME_ONLY;PREGAME_AVAILABILITY_COMPLETENESS_UNVERIFIED",
+  "actual_route": "Existing ESPN sports.core event/competition/competitor roster subresource, distinct from no-roster site.summary response",
+  "route_template": "https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/{event}/competitions/{competition}/competitors/{team}/roster?lang=en&region=us&limit=100",
+  "event": "401873052",
+  "actual_coverage": [
+    {
+      "source": {
+        "url": "https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/401873052/competitions/401873052/competitors/28/roster?lang=en&region=us&limit=100",
+        "status": 200,
+        "started_UTC": "2026-11-14T14:53:10.039916+00:00",
+        "retrieved_UTC": "2026-11-14T14:53:10.532523+00:00",
+        "bytes": 32642,
+        "sha256": "c2c6ee1355ddc73722f0ac15a7577bedfaa04143a2d90d5e25e2ce94b57b1ba4",
+        "headers": {
+          "Date": "Sat, 14 Nov 2026 14:53:10 GMT",
+          "Last-Modified": null,
+          "ETag": null,
+          "Content-Type": "application/json;charset=utf-8"
+        }
+      },
+      "entries": 60,
+      "unique_ESPN_playerIDs": 60,
+      "fields": [
+        "active",
+        "athlete",
+        "didNotPlay",
+        "displayName",
+        "forPlayerId",
+        "jersey",
+        "period",
+        "playerId",
+        "position",
+        "starter",
+        "statistics",
+        "valid"
+      ],
+      "active_false": 60,
+      "active_true": 0,
+      "didNotPlay_true": 9,
+      "didNotPlay_false": 51
+    },
+    {
+      "source": {
+        "url": "https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/401873052/competitions/401873052/competitors/19/roster?lang=en&region=us&limit=100",
+        "status": 200,
+        "started_UTC": "2026-11-14T14:53:10.040776+00:00",
+        "retrieved_UTC": "2026-11-14T14:53:10.602673+00:00",
+        "bytes": 32632,
+        "sha256": "4c02335536d4f6f7f0bfe633771507f5c71b83fd8a1522445f502364961a005d",
+        "headers": {
+          "Date": "Sat, 14 Nov 2026 14:53:10 GMT",
+          "Last-Modified": null,
+          "ETag": null,
+          "Content-Type": "application/json;charset=utf-8"
+        }
+      },
+      "entries": 59,
+      "unique_ESPN_playerIDs": 59,
+      "fields": [
+        "active",
+        "athlete",
+        "didNotPlay",
+        "displayName",
+        "forPlayerId",
+        "jersey",
+        "period",
+        "playerId",
+        "position",
+        "starter",
+        "statistics",
+        "valid"
+      ],
+      "active_false": 59,
+      "active_true": 0,
+      "didNotPlay_true": 8,
+      "didNotPlay_false": 51
+    }
+  ],
+  "total_entries": 119,
+  "source_tier": "Actual observed2026Nov14 after2026Nov13 finalgame; not authenticated pregame2026W10 or historicalW1-9",
+  "definition_limits": [
+    "Entryroster list has event/team/player identity and final didNotPlay/starter/stat references; it does not document a complete pregame roster/transaction/elevation/active-inactive contract.",
+    "All active flags arefalse aftergame despitequalifiedplayers appearing; do not interpret as pregameinactive/health. starter is realized, not a pregameexpectedstarterfeature.",
+    "No pagination/completeness declaration observed; counts60/59are actualreturnedrecords, not proof all relevantteammates orall32teams covered.",
+    "No routes/alignment/targetdenominators supplied. Absenceisunknown; injury-list membership is not entireteamuniverse."
+  ],
+  "combination": "C existing NFLverse canonical season-roster identity route + this exact-event roster component if genuinely observed/qualified before a futuredecision + existing immutable personnel facts and qualified transaction/elevation/active-inactive evidence as required.",
+  "minimum_next_action": {
+    "executor": "C registered personnel/source owner",
+    "action": "At next safe sourcecheckpoint, test this existing allowed exact-event subresource once for one genuinelyfuturegame under current C source lease; preserve actual observation/version bytes and validate event/team/canonical identities, returned completeness/unknowns and effective-time semantics. Do not repeat old empty summary route.",
+    "artifact": "Permitted immutable predecision event-roster/sourcecontract snapshot with actual counts and explicit missing membership/transaction/status fields",
+    "completion": "Qualified event-effective teammate universe before decision, or exact providerfield/completeness/timinggap. No backfill of this postgamesnapshot into earlier forecasts."
+  },
+  "historical_personnel_disposition": "SOURCE_BLOCKED_UNCHANGED;NOT_DISPROVED",
+  "additional_B_source_fetches": 0,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "raw_source_published": false
+}

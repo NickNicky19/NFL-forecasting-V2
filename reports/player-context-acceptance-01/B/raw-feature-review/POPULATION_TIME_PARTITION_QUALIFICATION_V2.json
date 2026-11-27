@@ -1,0 +1,25 @@
+{
+  "state": "CORRECTED_SCOPE_INTERPRETATION_NO_PREDICTION_OR_SCORE_CHANGE",
+  "parent_crosswalk_sha256": "733d5bd40e374bca3c312e89aead3d384ff39c7f19cdbdb95c87d79ca80d09f2",
+  "numerical_full_W1_8": 277,
+  "numerical_W1_4": 146,
+  "numerical_W5_8": 131,
+  "games_W5_8": 57,
+  "offerboard_games": 56,
+  "numerical_W5_8_in_offerboard_games": 129,
+  "numerical_in_missing_W5_game": 2,
+  "nonoffered_queries_within_same_offerboard_games": 17,
+  "offered_player_games": 112,
+  "partition": {
+    "outside_board_total": 165,
+    "earlier_window_queries": 146,
+    "missing_game_queries": 2,
+    "nonoffered_same_game_queries": 17
+  },
+  "interpretation": "277W1-8 versus112W5-8 changes temporalwindow,onegamecoverageandoffermembership.165outsideboardisnot165intentionalabstentions or a pureoffered-populationeffect. Same-covered-gamepopulationdiagnosis compares 129 versus112; same-week diagnosis compares 131 versus112.",
+  "followup": "ExistingW5_PLUSnativeviewsprovide same-periodnumericalerrors; compare onlyboard-coveredgames for stricterpopulationdiagnosis. Identical112-rowmodelcomparisons alreadyremainvalid.",
+  "new_fit_calls": 0,
+  "new_inference": 0,
+  "new_prop_grades": 0,
+  "new_NFLobservations": 0
+}

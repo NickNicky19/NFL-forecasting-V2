@@ -1,0 +1,3463 @@
+[
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "8",
+    "scope": "ALL",
+    "common_decided": 26,
+    "candidate_wins": 14,
+    "control_wins": 14,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 26,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 13,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.46153846153846156,
+      "comparator_error": 0.46153846153846156,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 26
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "8",
+    "scope": "B2_MATCHED_EARLIER_CONFIDENCE",
+    "common_decided": 11,
+    "candidate_wins": 5,
+    "control_wins": 5,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 11,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 9,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5454545454545454,
+      "comparator_error": 0.5454545454545454,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 11
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "8",
+    "scope": "CONF_0.60",
+    "common_decided": 11,
+    "candidate_wins": 5,
+    "control_wins": 5,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 11,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 9,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5454545454545454,
+      "comparator_error": 0.5454545454545454,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 11
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "8",
+    "scope": "CONF_0.70",
+    "common_decided": 1,
+    "candidate_wins": 1,
+    "control_wins": 1,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 1,
+      "delta": 0.0,
+      "relative_error_change": null,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 1,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.0,
+      "comparator_error": 0.0,
+      "relative_error_missing_reason": "zero_comparator_error_denominator",
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 1
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "8",
+    "scope": "CONF_0.80",
+    "common_decided": 1,
+    "candidate_wins": 1,
+    "control_wins": 1,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 1,
+      "delta": 0.0,
+      "relative_error_change": null,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 1,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.0,
+      "comparator_error": 0.0,
+      "relative_error_missing_reason": "zero_comparator_error_denominator",
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 1
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "8",
+    "scope": "CONF_0.90",
+    "common_decided": 0,
+    "candidate_wins": 0,
+    "control_wins": 0,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 0,
+      "delta": null,
+      "relative_error_change": null,
+      "week_interval": null,
+      "week_clusters": 0,
+      "game_clusters": 0,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "status": "NO_SUPPORTED_PAIRED_ROWS"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "8",
+    "scope": "ROLLING_K10_Combined",
+    "common_decided": 8,
+    "candidate_wins": 3,
+    "control_wins": 3,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 8,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 7,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.625,
+      "comparator_error": 0.625,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 8
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "8",
+    "scope": "ROLLING_K10_over",
+    "common_decided": 3,
+    "candidate_wins": 1,
+    "control_wins": 1,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 3,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 3,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6666666666666666,
+      "comparator_error": 0.6666666666666666,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 3
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "8",
+    "scope": "ROLLING_K10_under",
+    "common_decided": 8,
+    "candidate_wins": 4,
+    "control_wins": 4,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 8,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 8,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 8
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "8",
+    "scope": "ROLLING_K20_Combined",
+    "common_decided": 11,
+    "candidate_wins": 5,
+    "control_wins": 5,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 11,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 9,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5454545454545454,
+      "comparator_error": 0.5454545454545454,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 11
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "8",
+    "scope": "ROLLING_K20_over",
+    "common_decided": 3,
+    "candidate_wins": 1,
+    "control_wins": 1,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 3,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 3,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6666666666666666,
+      "comparator_error": 0.6666666666666666,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 3
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "8",
+    "scope": "ROLLING_K20_under",
+    "common_decided": 8,
+    "candidate_wins": 4,
+    "control_wins": 4,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 8,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 8,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 8
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "8",
+    "scope": "ROLLING_K6_Combined",
+    "common_decided": 5,
+    "candidate_wins": 3,
+    "control_wins": 3,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 5,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 4,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4,
+      "comparator_error": 0.4,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 5
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "8",
+    "scope": "ROLLING_K6_over",
+    "common_decided": 3,
+    "candidate_wins": 1,
+    "control_wins": 1,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 3,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 3,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6666666666666666,
+      "comparator_error": 0.6666666666666666,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 3
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "8",
+    "scope": "ROLLING_K6_under",
+    "common_decided": 5,
+    "candidate_wins": 2,
+    "control_wins": 2,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 5,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 5,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6,
+      "comparator_error": 0.6,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 5
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B0",
+    "control_id": "ALWAYS_OVER",
+    "week_view": "8",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 26,
+    "candidate_wins": 14,
+    "control_wins": 13,
+    "win_difference": 1,
+    "disagreements": 17,
+    "uncertainty": {
+      "n": 26,
+      "delta": -0.038461538461538464,
+      "relative_error_change": -0.07692307692307693,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 13,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.17414202188725803,
+      "game_normal95_sensitivity": [
+        -0.37977990136056416,
+        0.3028568244374873
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.46153846153846156,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": -1.0,
+          "n": 26
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "ALWAYS_OVER",
+    "week_view": "8",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 26,
+    "candidate_wins": 14,
+    "control_wins": 13,
+    "win_difference": 1,
+    "disagreements": 17,
+    "uncertainty": {
+      "n": 26,
+      "delta": -0.038461538461538464,
+      "relative_error_change": -0.07692307692307693,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 13,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.17414202188725803,
+      "game_normal95_sensitivity": [
+        -0.37977990136056416,
+        0.3028568244374873
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.46153846153846156,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": -1.0,
+          "n": 26
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B0",
+    "control_id": "ALWAYS_UNDER",
+    "week_view": "8",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 26,
+    "candidate_wins": 14,
+    "control_wins": 13,
+    "win_difference": 1,
+    "disagreements": 9,
+    "uncertainty": {
+      "n": 26,
+      "delta": -0.038461538461538464,
+      "relative_error_change": -0.07692307692307693,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 13,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.13230620154198905,
+      "game_normal95_sensitivity": [
+        -0.297781693483837,
+        0.22085861656076008
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.46153846153846156,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": -1.0,
+          "n": 26
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "ALWAYS_UNDER",
+    "week_view": "8",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 26,
+    "candidate_wins": 14,
+    "control_wins": 13,
+    "win_difference": 1,
+    "disagreements": 9,
+    "uncertainty": {
+      "n": 26,
+      "delta": -0.038461538461538464,
+      "relative_error_change": -0.07692307692307693,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 13,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.13230620154198905,
+      "game_normal95_sensitivity": [
+        -0.297781693483837,
+        0.22085861656076008
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.46153846153846156,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": -1.0,
+          "n": 26
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B0",
+    "control_id": "EARLIER_SOURCE_PRIOR",
+    "week_view": "8",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 26,
+    "candidate_wins": 14,
+    "control_wins": 14,
+    "win_difference": 0,
+    "disagreements": 4,
+    "uncertainty": {
+      "n": 26,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 13,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.08006407690254357,
+      "game_normal95_sensitivity": [
+        -0.15692559072898538,
+        0.15692559072898538
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.46153846153846156,
+      "comparator_error": 0.46153846153846156,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 26
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::pass_td::B1",
+    "control_id": "EARLIER_SOURCE_PRIOR",
+    "week_view": "8",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 26,
+    "candidate_wins": 14,
+    "control_wins": 14,
+    "win_difference": 0,
+    "disagreements": 4,
+    "uncertainty": {
+      "n": 26,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 13,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.08006407690254357,
+      "game_normal95_sensitivity": [
+        -0.15692559072898538,
+        0.15692559072898538
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.46153846153846156,
+      "comparator_error": 0.46153846153846156,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 26
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "2",
+    "scope": "ALL",
+    "common_decided": 161,
+    "candidate_wins": 85,
+    "control_wins": 85,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 161,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4720496894409938,
+      "comparator_error": 0.4720496894409938,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 161
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "3",
+    "scope": "ALL",
+    "common_decided": 176,
+    "candidate_wins": 110,
+    "control_wins": 109,
+    "win_difference": 1,
+    "disagreements": 5,
+    "uncertainty": {
+      "n": 176,
+      "delta": -0.005681818181818182,
+      "relative_error_change": -0.01492537313432836,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.017488146922060396,
+      "game_normal95_sensitivity": [
+        -0.03995858614905656,
+        0.028594949785420196
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.375,
+      "comparator_error": 0.3806818181818182,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": -1.0,
+          "n": 176
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "ALL",
+    "scope": "ALL",
+    "common_decided": 337,
+    "candidate_wins": 195,
+    "control_wins": 194,
+    "win_difference": 1,
+    "disagreements": 5,
+    "uncertainty": {
+      "n": 337,
+      "delta": -0.002967359050445104,
+      "relative_error_change": -0.006993006993006993,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 32,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.009012762940873305,
+      "game_normal95_sensitivity": [
+        -0.02063237441455678,
+        0.014697656313666574
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.42136498516320475,
+      "comparator_error": 0.42433234421364985,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 161
+        },
+        "3": {
+          "loss_difference_sum": -1.0,
+          "n": 176
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "2",
+    "scope": "B2_MATCHED_EARLIER_CONFIDENCE",
+    "common_decided": 78,
+    "candidate_wins": 33,
+    "control_wins": 33,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 78,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5769230769230769,
+      "comparator_error": 0.5769230769230769,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 78
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "3",
+    "scope": "B2_MATCHED_EARLIER_CONFIDENCE",
+    "common_decided": 82,
+    "candidate_wins": 52,
+    "control_wins": 52,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 82,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.36585365853658536,
+      "comparator_error": 0.36585365853658536,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 82
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "ALL",
+    "scope": "B2_MATCHED_EARLIER_CONFIDENCE",
+    "common_decided": 160,
+    "candidate_wins": 85,
+    "control_wins": 85,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 160,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 32,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.46875,
+      "comparator_error": 0.46875,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 78
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 82
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "2",
+    "scope": "CONF_0.60",
+    "common_decided": 100,
+    "candidate_wins": 48,
+    "control_wins": 48,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 100,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.52,
+      "comparator_error": 0.52,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 100
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "3",
+    "scope": "CONF_0.60",
+    "common_decided": 104,
+    "candidate_wins": 63,
+    "control_wins": 63,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 104,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.3942307692307692,
+      "comparator_error": 0.3942307692307692,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 104
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "ALL",
+    "scope": "CONF_0.60",
+    "common_decided": 204,
+    "candidate_wins": 111,
+    "control_wins": 111,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 204,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 32,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.45588235294117646,
+      "comparator_error": 0.45588235294117646,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 100
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 104
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "2",
+    "scope": "CONF_0.70",
+    "common_decided": 38,
+    "candidate_wins": 17,
+    "control_wins": 17,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 38,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5526315789473685,
+      "comparator_error": 0.5526315789473685,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 38
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "3",
+    "scope": "CONF_0.70",
+    "common_decided": 33,
+    "candidate_wins": 22,
+    "control_wins": 22,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 33,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 14,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.3333333333333333,
+      "comparator_error": 0.3333333333333333,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 33
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "ALL",
+    "scope": "CONF_0.70",
+    "common_decided": 71,
+    "candidate_wins": 39,
+    "control_wins": 39,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 71,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 30,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4507042253521127,
+      "comparator_error": 0.4507042253521127,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 38
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 33
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "2",
+    "scope": "CONF_0.80",
+    "common_decided": 8,
+    "candidate_wins": 4,
+    "control_wins": 4,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 8,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 7,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 8
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "3",
+    "scope": "CONF_0.80",
+    "common_decided": 5,
+    "candidate_wins": 4,
+    "control_wins": 4,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 5,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 4,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.2,
+      "comparator_error": 0.2,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 5
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "ALL",
+    "scope": "CONF_0.80",
+    "common_decided": 13,
+    "candidate_wins": 8,
+    "control_wins": 8,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 13,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 11,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.38461538461538464,
+      "comparator_error": 0.38461538461538464,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 8
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 5
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "2",
+    "scope": "CONF_0.90",
+    "common_decided": 0,
+    "candidate_wins": 0,
+    "control_wins": 0,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 0,
+      "delta": null,
+      "relative_error_change": null,
+      "week_interval": null,
+      "week_clusters": 0,
+      "game_clusters": 0,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "status": "NO_SUPPORTED_PAIRED_ROWS"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "3",
+    "scope": "CONF_0.90",
+    "common_decided": 0,
+    "candidate_wins": 0,
+    "control_wins": 0,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 0,
+      "delta": null,
+      "relative_error_change": null,
+      "week_interval": null,
+      "week_clusters": 0,
+      "game_clusters": 0,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "status": "NO_SUPPORTED_PAIRED_ROWS"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "ALL",
+    "scope": "CONF_0.90",
+    "common_decided": 0,
+    "candidate_wins": 0,
+    "control_wins": 0,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 0,
+      "delta": null,
+      "relative_error_change": null,
+      "week_interval": null,
+      "week_clusters": 0,
+      "game_clusters": 0,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "status": "NO_SUPPORTED_PAIRED_ROWS"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "2",
+    "scope": "ROLLING_K10_Combined",
+    "common_decided": 9,
+    "candidate_wins": 6,
+    "control_wins": 6,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 9,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 1,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.3333333333333333,
+      "comparator_error": 0.3333333333333333,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 9
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "3",
+    "scope": "ROLLING_K10_Combined",
+    "common_decided": 10,
+    "candidate_wins": 5,
+    "control_wins": 5,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 10,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 3,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "ALL",
+    "scope": "ROLLING_K10_Combined",
+    "common_decided": 19,
+    "candidate_wins": 11,
+    "control_wins": 11,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 19,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 4,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.42105263157894735,
+      "comparator_error": 0.42105263157894735,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 9
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "2",
+    "scope": "ROLLING_K10_over",
+    "common_decided": 7,
+    "candidate_wins": 4,
+    "control_wins": 4,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 7,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 6,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.42857142857142855,
+      "comparator_error": 0.42857142857142855,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 7
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "3",
+    "scope": "ROLLING_K10_over",
+    "common_decided": 9,
+    "candidate_wins": 5,
+    "control_wins": 5,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 9,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 7,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4444444444444444,
+      "comparator_error": 0.4444444444444444,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 9
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "ALL",
+    "scope": "ROLLING_K10_over",
+    "common_decided": 16,
+    "candidate_wins": 9,
+    "control_wins": 9,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 16,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 13,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4375,
+      "comparator_error": 0.4375,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 7
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 9
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "2",
+    "scope": "ROLLING_K10_under",
+    "common_decided": 10,
+    "candidate_wins": 6,
+    "control_wins": 6,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 10,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 4,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4,
+      "comparator_error": 0.4,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "3",
+    "scope": "ROLLING_K10_under",
+    "common_decided": 10,
+    "candidate_wins": 5,
+    "control_wins": 5,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 10,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 3,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "ALL",
+    "scope": "ROLLING_K10_under",
+    "common_decided": 20,
+    "candidate_wins": 11,
+    "control_wins": 11,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 20,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 7,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.45,
+      "comparator_error": 0.45,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "2",
+    "scope": "ROLLING_K20_Combined",
+    "common_decided": 19,
+    "candidate_wins": 12,
+    "control_wins": 12,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 19,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 8,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.3684210526315789,
+      "comparator_error": 0.3684210526315789,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 19
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "3",
+    "scope": "ROLLING_K20_Combined",
+    "common_decided": 20,
+    "candidate_wins": 13,
+    "control_wins": 13,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 20,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 6,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.35,
+      "comparator_error": 0.35,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 20
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "ALL",
+    "scope": "ROLLING_K20_Combined",
+    "common_decided": 39,
+    "candidate_wins": 25,
+    "control_wins": 25,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 39,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 14,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.358974358974359,
+      "comparator_error": 0.358974358974359,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 19
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 20
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "2",
+    "scope": "ROLLING_K20_over",
+    "common_decided": 7,
+    "candidate_wins": 4,
+    "control_wins": 4,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 7,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 6,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.42857142857142855,
+      "comparator_error": 0.42857142857142855,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 7
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "3",
+    "scope": "ROLLING_K20_over",
+    "common_decided": 10,
+    "candidate_wins": 5,
+    "control_wins": 5,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 10,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 8,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "ALL",
+    "scope": "ROLLING_K20_over",
+    "common_decided": 17,
+    "candidate_wins": 9,
+    "control_wins": 9,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 17,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 14,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.47058823529411764,
+      "comparator_error": 0.47058823529411764,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 7
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "2",
+    "scope": "ROLLING_K20_under",
+    "common_decided": 20,
+    "candidate_wins": 12,
+    "control_wins": 12,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 20,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 9,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4,
+      "comparator_error": 0.4,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 20
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "3",
+    "scope": "ROLLING_K20_under",
+    "common_decided": 20,
+    "candidate_wins": 13,
+    "control_wins": 13,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 20,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 7,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.35,
+      "comparator_error": 0.35,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 20
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "ALL",
+    "scope": "ROLLING_K20_under",
+    "common_decided": 40,
+    "candidate_wins": 25,
+    "control_wins": 25,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 40,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.375,
+      "comparator_error": 0.375,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 20
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 20
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "2",
+    "scope": "ROLLING_K6_Combined",
+    "common_decided": 5,
+    "candidate_wins": 2,
+    "control_wins": 2,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 5,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 1,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6,
+      "comparator_error": 0.6,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 5
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "3",
+    "scope": "ROLLING_K6_Combined",
+    "common_decided": 6,
+    "candidate_wins": 1,
+    "control_wins": 1,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 6,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 1,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.8333333333333334,
+      "comparator_error": 0.8333333333333334,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "ALL",
+    "scope": "ROLLING_K6_Combined",
+    "common_decided": 11,
+    "candidate_wins": 3,
+    "control_wins": 3,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 11,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 2,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.7272727272727273,
+      "comparator_error": 0.7272727272727273,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 5
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "2",
+    "scope": "ROLLING_K6_over",
+    "common_decided": 5,
+    "candidate_wins": 4,
+    "control_wins": 4,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 5,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 4,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.2,
+      "comparator_error": 0.2,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 5
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "3",
+    "scope": "ROLLING_K6_over",
+    "common_decided": 6,
+    "candidate_wins": 4,
+    "control_wins": 4,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 6,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 5,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.3333333333333333,
+      "comparator_error": 0.3333333333333333,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "ALL",
+    "scope": "ROLLING_K6_over",
+    "common_decided": 11,
+    "candidate_wins": 8,
+    "control_wins": 8,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 11,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 9,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.2727272727272727,
+      "comparator_error": 0.2727272727272727,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 5
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "2",
+    "scope": "ROLLING_K6_under",
+    "common_decided": 6,
+    "candidate_wins": 3,
+    "control_wins": 3,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 6,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 1,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "3",
+    "scope": "ROLLING_K6_under",
+    "common_decided": 6,
+    "candidate_wins": 1,
+    "control_wins": 1,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 6,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 1,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.8333333333333334,
+      "comparator_error": 0.8333333333333334,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "UNCHANGED_B0",
+    "week_view": "ALL",
+    "scope": "ROLLING_K6_under",
+    "common_decided": 12,
+    "candidate_wins": 4,
+    "control_wins": 4,
+    "win_difference": 0,
+    "disagreements": 0,
+    "uncertainty": {
+      "n": 12,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 2,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6666666666666666,
+      "comparator_error": 0.6666666666666666,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B0",
+    "control_id": "ALWAYS_OVER",
+    "week_view": "2",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 161,
+    "candidate_wins": 85,
+    "control_wins": 77,
+    "win_difference": 8,
+    "disagreements": 132,
+    "uncertainty": {
+      "n": 161,
+      "delta": -0.049689440993788817,
+      "relative_error_change": -0.09523809523809523,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.09664259969211648,
+      "game_normal95_sensitivity": [
+        -0.23910893639033715,
+        0.13973005440275948
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4720496894409938,
+      "comparator_error": 0.5217391304347826,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": -8.0,
+          "n": 161
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "ALWAYS_OVER",
+    "week_view": "2",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 161,
+    "candidate_wins": 85,
+    "control_wins": 77,
+    "win_difference": 8,
+    "disagreements": 132,
+    "uncertainty": {
+      "n": 161,
+      "delta": -0.049689440993788817,
+      "relative_error_change": -0.09523809523809523,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.09664259969211648,
+      "game_normal95_sensitivity": [
+        -0.23910893639033715,
+        0.13973005440275948
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4720496894409938,
+      "comparator_error": 0.5217391304347826,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": -8.0,
+          "n": 161
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B0",
+    "control_id": "ALWAYS_OVER",
+    "week_view": "3",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 176,
+    "candidate_wins": 109,
+    "control_wins": 79,
+    "win_difference": 30,
+    "disagreements": 140,
+    "uncertainty": {
+      "n": 176,
+      "delta": -0.17045454545454544,
+      "relative_error_change": -0.3092783505154639,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.055386097127581045,
+      "game_normal95_sensitivity": [
+        -0.27901129582460427,
+        -0.06189779508448659
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.3806818181818182,
+      "comparator_error": 0.5511363636363636,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": -30.0,
+          "n": 176
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "ALWAYS_OVER",
+    "week_view": "3",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 176,
+    "candidate_wins": 110,
+    "control_wins": 79,
+    "win_difference": 31,
+    "disagreements": 135,
+    "uncertainty": {
+      "n": 176,
+      "delta": -0.17613636363636365,
+      "relative_error_change": -0.3195876288659794,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.057648963199848094,
+      "game_normal95_sensitivity": [
+        -0.28912833150806594,
+        -0.06314439576466138
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.375,
+      "comparator_error": 0.5511363636363636,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": -31.0,
+          "n": 176
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B0",
+    "control_id": "ALWAYS_OVER",
+    "week_view": "ALL",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 337,
+    "candidate_wins": 194,
+    "control_wins": 156,
+    "win_difference": 38,
+    "disagreements": 272,
+    "uncertainty": {
+      "n": 337,
+      "delta": -0.11275964391691394,
+      "relative_error_change": -0.20994475138121546,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 32,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.05438699422023368,
+      "game_normal95_sensitivity": [
+        -0.21935815258857194,
+        -0.006161135245255925
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.42433234421364985,
+      "comparator_error": 0.5370919881305638,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": -8.0,
+          "n": 161
+        },
+        "3": {
+          "loss_difference_sum": -30.0,
+          "n": 176
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "ALWAYS_OVER",
+    "week_view": "ALL",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 337,
+    "candidate_wins": 195,
+    "control_wins": 156,
+    "win_difference": 39,
+    "disagreements": 267,
+    "uncertainty": {
+      "n": 337,
+      "delta": -0.11572700296735905,
+      "relative_error_change": -0.2154696132596685,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 32,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.05514244807027538,
+      "game_normal95_sensitivity": [
+        -0.2238062011850988,
+        -0.007647804749619305
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.42136498516320475,
+      "comparator_error": 0.5370919881305638,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": -8.0,
+          "n": 161
+        },
+        "3": {
+          "loss_difference_sum": -31.0,
+          "n": 176
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B0",
+    "control_id": "ALWAYS_UNDER",
+    "week_view": "2",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 161,
+    "candidate_wins": 85,
+    "control_wins": 84,
+    "win_difference": 1,
+    "disagreements": 29,
+    "uncertainty": {
+      "n": 161,
+      "delta": -0.006211180124223602,
+      "relative_error_change": -0.012987012987012986,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.026489319201220073,
+      "game_normal95_sensitivity": [
+        -0.05813024575861494,
+        0.04570788551016774
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4720496894409938,
+      "comparator_error": 0.4782608695652174,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": -1.0,
+          "n": 161
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "ALWAYS_UNDER",
+    "week_view": "2",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 161,
+    "candidate_wins": 85,
+    "control_wins": 84,
+    "win_difference": 1,
+    "disagreements": 29,
+    "uncertainty": {
+      "n": 161,
+      "delta": -0.006211180124223602,
+      "relative_error_change": -0.012987012987012986,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.026489319201220073,
+      "game_normal95_sensitivity": [
+        -0.05813024575861494,
+        0.04570788551016774
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4720496894409938,
+      "comparator_error": 0.4782608695652174,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": -1.0,
+          "n": 161
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B0",
+    "control_id": "ALWAYS_UNDER",
+    "week_view": "3",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 176,
+    "candidate_wins": 109,
+    "control_wins": 97,
+    "win_difference": 12,
+    "disagreements": 36,
+    "uncertainty": {
+      "n": 176,
+      "delta": -0.06818181818181818,
+      "relative_error_change": -0.1518987341772152,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.03699635800531761,
+      "game_normal95_sensitivity": [
+        -0.14069467987224069,
+        0.004331043508604332
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.3806818181818182,
+      "comparator_error": 0.44886363636363635,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": -12.0,
+          "n": 176
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "ALWAYS_UNDER",
+    "week_view": "3",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 176,
+    "candidate_wins": 110,
+    "control_wins": 97,
+    "win_difference": 13,
+    "disagreements": 41,
+    "uncertainty": {
+      "n": 176,
+      "delta": -0.07386363636363637,
+      "relative_error_change": -0.16455696202531647,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.04633708798420447,
+      "game_normal95_sensitivity": [
+        -0.16468432881267714,
+        0.01695705608540439
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.375,
+      "comparator_error": 0.44886363636363635,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": -13.0,
+          "n": 176
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B0",
+    "control_id": "ALWAYS_UNDER",
+    "week_view": "ALL",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 337,
+    "candidate_wins": 194,
+    "control_wins": 181,
+    "win_difference": 13,
+    "disagreements": 65,
+    "uncertainty": {
+      "n": 337,
+      "delta": -0.03857566765578635,
+      "relative_error_change": -0.08333333333333333,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 32,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.023614631963922796,
+      "game_normal95_sensitivity": [
+        -0.08486034630507502,
+        0.007709010993502331
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.42433234421364985,
+      "comparator_error": 0.4629080118694362,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": -1.0,
+          "n": 161
+        },
+        "3": {
+          "loss_difference_sum": -12.0,
+          "n": 176
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "ALWAYS_UNDER",
+    "week_view": "ALL",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 337,
+    "candidate_wins": 195,
+    "control_wins": 181,
+    "win_difference": 14,
+    "disagreements": 70,
+    "uncertainty": {
+      "n": 337,
+      "delta": -0.04154302670623145,
+      "relative_error_change": -0.08974358974358974,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 32,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.027801183301770057,
+      "game_normal95_sensitivity": [
+        -0.09603334597770076,
+        0.012947292565237856
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.42136498516320475,
+      "comparator_error": 0.4629080118694362,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": -1.0,
+          "n": 161
+        },
+        "3": {
+          "loss_difference_sum": -13.0,
+          "n": 176
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B0",
+    "control_id": "EARLIER_SOURCE_PRIOR",
+    "week_view": "2",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 161,
+    "candidate_wins": 85,
+    "control_wins": 86,
+    "win_difference": -1,
+    "disagreements": 29,
+    "uncertainty": {
+      "n": 161,
+      "delta": 0.006211180124223602,
+      "relative_error_change": 0.013333333333333332,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.02780738075385355,
+      "game_normal95_sensitivity": [
+        -0.04829128615332935,
+        0.06071364640177655
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4720496894409938,
+      "comparator_error": 0.4658385093167702,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 1.0,
+          "n": 161
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "EARLIER_SOURCE_PRIOR",
+    "week_view": "2",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 161,
+    "candidate_wins": 85,
+    "control_wins": 86,
+    "win_difference": -1,
+    "disagreements": 29,
+    "uncertainty": {
+      "n": 161,
+      "delta": 0.006211180124223602,
+      "relative_error_change": 0.013333333333333332,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.02780738075385355,
+      "game_normal95_sensitivity": [
+        -0.04829128615332935,
+        0.06071364640177655
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4720496894409938,
+      "comparator_error": 0.4658385093167702,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 1.0,
+          "n": 161
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B0",
+    "control_id": "EARLIER_SOURCE_PRIOR",
+    "week_view": "3",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 176,
+    "candidate_wins": 109,
+    "control_wins": 95,
+    "win_difference": 14,
+    "disagreements": 36,
+    "uncertainty": {
+      "n": 176,
+      "delta": -0.07954545454545454,
+      "relative_error_change": -0.17283950617283952,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.034213299793345815,
+      "game_normal95_sensitivity": [
+        -0.14660352214041233,
+        -0.012487386950496754
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.3806818181818182,
+      "comparator_error": 0.4602272727272727,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": -14.0,
+          "n": 176
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "EARLIER_SOURCE_PRIOR",
+    "week_view": "3",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 176,
+    "candidate_wins": 110,
+    "control_wins": 95,
+    "win_difference": 15,
+    "disagreements": 41,
+    "uncertainty": {
+      "n": 176,
+      "delta": -0.08522727272727272,
+      "relative_error_change": -0.18518518518518517,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.045535572190314684,
+      "game_normal95_sensitivity": [
+        -0.1744769942202895,
+        0.004022448765744063
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.375,
+      "comparator_error": 0.4602272727272727,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": -15.0,
+          "n": 176
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B0",
+    "control_id": "EARLIER_SOURCE_PRIOR",
+    "week_view": "ALL",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 337,
+    "candidate_wins": 194,
+    "control_wins": 181,
+    "win_difference": 13,
+    "disagreements": 65,
+    "uncertainty": {
+      "n": 337,
+      "delta": -0.03857566765578635,
+      "relative_error_change": -0.08333333333333333,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 32,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.023599779539573432,
+      "game_normal95_sensitivity": [
+        -0.08483123555335027,
+        0.007679900241777574
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.42433234421364985,
+      "comparator_error": 0.4629080118694362,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 1.0,
+          "n": 161
+        },
+        "3": {
+          "loss_difference_sum": -14.0,
+          "n": 176
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1::rec::B1",
+    "control_id": "EARLIER_SOURCE_PRIOR",
+    "week_view": "ALL",
+    "scope": "FULL_BOARD_COMMON_DECIDED",
+    "common_decided": 337,
+    "candidate_wins": 195,
+    "control_wins": 181,
+    "win_difference": 14,
+    "disagreements": 70,
+    "uncertainty": {
+      "n": 337,
+      "delta": -0.04154302670623145,
+      "relative_error_change": -0.08974358974358974,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 32,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.02843426873748072,
+      "game_normal95_sensitivity": [
+        -0.09727419343169366,
+        0.014188140019230758
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.42136498516320475,
+      "comparator_error": 0.4629080118694362,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 1.0,
+          "n": 161
+        },
+        "3": {
+          "loss_difference_sum": -15.0,
+          "n": 176
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    }
+  }
+]

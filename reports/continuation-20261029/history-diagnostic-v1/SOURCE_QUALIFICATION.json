@@ -1,0 +1,112 @@
+{
+  "chart": "BLOCKED_EXACT_RARE_PRIMITIVE_ZERO_ATTRIBUTION_CONTRACT",
+  "cohort": "Retrospective statistical-row/observed-participation diagnostic; not full exante forecast population",
+  "cutoff": "pergame kickoff leftlimit; earlier kickoff+7day strictly before cutoff; reconstruction assumption",
+  "feature_memory": "none; rowposition/observedcohort is retrospective so no full strictcurrent claim",
+  "numerical_source_rows": {
+    "outside_panel_before_numeric_decode": 3422,
+    "outside_registered_positions": 54000,
+    "participation_unknown": 376,
+    "physical_played": 25528,
+    "raw_rows": 83326
+  },
+  "query_cells": 169754,
+  "query_membership_sha256": "53e50a9948aa22bf69910d90bd036283fe3f7943f56e80928bc8561d1dc2d3ca",
+  "source_ids": [
+    {
+      "bytes": 8408729,
+      "name": "stats_player_week_2022.csv",
+      "sha256": "ad426c3fe5bf1cc30c3f137fdfe96d054e19d400879ee4413129da49fa7b54be",
+      "source_id": "nflverse-current-stats_player_week_2022.csv"
+    },
+    {
+      "bytes": 8332874,
+      "name": "stats_player_week_2023.csv",
+      "sha256": "f19cb71a5de0dce7fd09376026237c9ee9d5a93fe13815a2ea3ec2d37204cb17",
+      "source_id": "nflverse-current-stats_player_week_2023.csv"
+    },
+    {
+      "bytes": 8470040,
+      "name": "stats_player_week_2024.csv",
+      "sha256": "3ddc45a84f759aa348ce465ae001752c530575455717657cdfe1f8abfcdb4759",
+      "source_id": "nflverse-current-stats_player_week_2024.csv"
+    },
+    {
+      "bytes": 8656387,
+      "name": "stats_player_week_2025.csv",
+      "sha256": "e5e0615b3d96a3eaebfaee91e55afb4a4e7fe0caf057454177bcd7d6ad4bcfc2",
+      "source_id": "nflverse-current-stats_player_week_2025.csv"
+    },
+    {
+      "bytes": 3315425,
+      "name": "stats_player_week_2026.csv",
+      "sha256": "8301e4e3ab62af3f65d201251676dd79f912dce7a87a402835fe5ea4fb5d0379",
+      "source_id": "nflverse-current-stats_player_week_2026.csv"
+    },
+    {
+      "bytes": 2186988,
+      "name": "games.csv",
+      "sha256": "6f707dcea8758bc6c0421559d23c07d4627f39658f93913908d5ddd1b27f6aae",
+      "source_id": "nflverse-current-games.csv"
+    }
+  ],
+  "source_license": "Owner-restored official NFLverse basic-stat family; no raw redistribution; full license receipt review external",
+  "source_tier": "CURRENT_VINTAGE_RECONSTRUCTION",
+  "target_explicitness": {
+    "anytime_td": {
+      "explicit_nonzero": 4719,
+      "explicit_zero": 20809,
+      "missing_or_unsupported": 376
+    },
+    "pass_att": {
+      "explicit_nonzero": 2743,
+      "explicit_zero": 123
+    },
+    "pass_cmp": {
+      "explicit_nonzero": 2693,
+      "explicit_zero": 173
+    },
+    "pass_int": {
+      "explicit_nonzero": 1257,
+      "explicit_zero": 1609
+    },
+    "pass_td": {
+      "explicit_nonzero": 1900,
+      "explicit_zero": 966
+    },
+    "pass_yd": {
+      "explicit_nonzero": 2690,
+      "explicit_zero": 176
+    },
+    "rec": {
+      "explicit_nonzero": 16820,
+      "explicit_zero": 8708,
+      "missing_or_unsupported": 376
+    },
+    "rec_yd": {
+      "explicit_nonzero": 16673,
+      "explicit_zero": 8855,
+      "missing_or_unsupported": 376
+    },
+    "rush_att": {
+      "explicit_nonzero": 9763,
+      "explicit_zero": 15765,
+      "missing_or_unsupported": 376
+    },
+    "rush_rec_yd": {
+      "explicit_nonzero": 21090,
+      "explicit_zero": 4438,
+      "missing_or_unsupported": 376
+    },
+    "rush_yd": {
+      "explicit_nonzero": 9504,
+      "explicit_zero": 16024,
+      "missing_or_unsupported": 376
+    }
+  },
+  "unique_games": 1194,
+  "unique_player_games": 25904,
+  "unused_columns": "EPA/CPOE/NGS/weather/odds/fantasy totals/currentrosters/PFRsnaps not consumed",
+  "version": "v2-empirical-observed-participant-history-diagnostic-v1",
+  "zero_policy": "Only explicit numeric0 after positive official physical-event proof; blanks never0"
+}

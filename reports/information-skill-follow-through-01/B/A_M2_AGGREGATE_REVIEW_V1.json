@@ -1,0 +1,5375 @@
+{
+  "id": "B_INDEPENDENT_A_M2_PUBLIC_AGGREGATE_REVIEW_v1",
+  "at_UTC": "2026-11-15T21:07:26.996958+00:00",
+  "state": "PASS_AGGREGATE_OWN_SIDE_WEEKLY_AND_NATIVE_RECONCILIATION",
+  "checks": 51517,
+  "problem_count": 0,
+  "problems": [],
+  "source_binding": {
+    "source_id": "root supplied source11",
+    "repository": "NickNicky19/NFL-forecasting",
+    "commit": "bdef5712fb2d4b8844423269caef23d682b74e8e",
+    "path": "reports/abc-championship/targeted-checkpoint-closure-01/A/B_RAW_W1W9_SCORECARD_V1.csv.gz",
+    "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting/bdef5712fb2d4b8844423269caef23d682b74e8e/reports/abc-championship/targeted-checkpoint-closure-01/A/B_RAW_W1W9_SCORECARD_V1.csv.gz",
+    "bytes": 13430,
+    "sha256": "39798b0d1a0807472628c7846d02f785f4994d1c5255b12105f8c979c49d9f89",
+    "retrieval_by": "Root existing permitted source route; this verifier reused authenticated local bytes without network",
+    "retrieval_clock": "Root reports approximately2026-11-15T21:10Z; exact HTTP receipt clock not available. This receipt at_UTC is arithmetic-review time, not invented HTTP/source publication time."
+  },
+  "input_scope": {
+    "public_csv_rows": 450,
+    "procedures": 45,
+    "rows_per_procedure": 10,
+    "represented_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "weekly_weighted_metric_checks": 225,
+    "new_M2_complete_direction_products": 21,
+    "A_early_offers": 84,
+    "B_native_offers": 142,
+    "combined_offers": 226,
+    "combined_games": 119,
+    "earlier_games": 48,
+    "native_games": 71,
+    "new_NFL_games_added_by_this_review": 0
+  },
+  "native_B_reference": {
+    "path": "reports/targeted-accuracy-w1w9-01/B/evaluation/MAIN_TABLES_V1.json.gz",
+    "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+    "sha256": "b399cf04697fb7429bc61f828dc7483f67e675fb41dcb735da50140bb48fb59b",
+    "native_weekly_product_rows_compared": 105,
+    "own_side_mismatches": [],
+    "scope": "Exact public weekly own-side/coverage/proper-score arithmetic parity for newM2 W5-9; not private-row or fit parity."
+  },
+  "reported_cumulative_procedure_records": [
+    {
+      "procedure": "B_M2::D_M2::LAW",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 30,
+        "losses": 35,
+        "decided": 65,
+        "rate": 0.46153846153846156
+      },
+      "UNDER": {
+        "wins": 76,
+        "losses": 85,
+        "decided": 161,
+        "rate": 0.4720496894409938
+      },
+      "COMBINED": {
+        "wins": 106,
+        "losses": 120,
+        "decided": 226,
+        "rate": 0.4690265486725664
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": null,
+      "MSE": null,
+      "bias": null,
+      "scored": 0,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.27253751720882047,
+      "log_loss": 0.7420956222890991,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::D_M2::MEAN",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 21,
+        "losses": 23,
+        "decided": 44,
+        "rate": 0.4772727272727273
+      },
+      "UNDER": {
+        "wins": 88,
+        "losses": 94,
+        "decided": 182,
+        "rate": 0.4835164835164835
+      },
+      "COMBINED": {
+        "wins": 109,
+        "losses": 117,
+        "decided": 226,
+        "rate": 0.4823008849557522
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 5.072020941838688,
+      "MSE": 42.46247431641452,
+      "bias": -1.876131294595925,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.27253751720882047,
+      "log_loss": 0.7420956222890991,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::D_M2::MEDIAN",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 30,
+        "losses": 35,
+        "decided": 65,
+        "rate": 0.46153846153846156
+      },
+      "UNDER": {
+        "wins": 76,
+        "losses": 85,
+        "decided": 161,
+        "rate": 0.4720496894409938
+      },
+      "COMBINED": {
+        "wins": 106,
+        "losses": 120,
+        "decided": 226,
+        "rate": 0.4690265486725664
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 5.079646017699115,
+      "MSE": 42.29203539823009,
+      "bias": -1.5221238938053097,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.27253751720882047,
+      "log_loss": 0.7420956222890991,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_C1_BB::LAW",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 10,
+        "losses": 9,
+        "decided": 19,
+        "rate": 0.5263157894736842
+      },
+      "UNDER": {
+        "wins": 102,
+        "losses": 105,
+        "decided": 207,
+        "rate": 0.4927536231884058
+      },
+      "COMBINED": {
+        "wins": 112,
+        "losses": 114,
+        "decided": 226,
+        "rate": 0.49557522123893805
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": null,
+      "MSE": null,
+      "bias": null,
+      "scored": 0,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.2740678172736699,
+      "log_loss": 0.7458809082594074,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_C1_BB::MEAN",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 19,
+        "losses": 18,
+        "decided": 37,
+        "rate": 0.5135135135135135
+      },
+      "UNDER": {
+        "wins": 93,
+        "losses": 96,
+        "decided": 189,
+        "rate": 0.49206349206349204
+      },
+      "COMBINED": {
+        "wins": 112,
+        "losses": 114,
+        "decided": 226,
+        "rate": 0.49557522123893805
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.926905155840907,
+      "MSE": 39.25268031137147,
+      "bias": -1.9957586316653115,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.2740678172736699,
+      "log_loss": 0.7458809082594074,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_C1_BB::MEDIAN",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 10,
+        "losses": 9,
+        "decided": 19,
+        "rate": 0.5263157894736842
+      },
+      "UNDER": {
+        "wins": 102,
+        "losses": 105,
+        "decided": 207,
+        "rate": 0.4927536231884058
+      },
+      "COMBINED": {
+        "wins": 112,
+        "losses": 114,
+        "decided": 226,
+        "rate": 0.49557522123893805
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 5.265486725663717,
+      "MSE": 44.52212389380531,
+      "bias": -2.8672566371681416,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.2740678172736699,
+      "log_loss": 0.7458809082594074,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_C1_BIN::LAW",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 10,
+        "losses": 9,
+        "decided": 19,
+        "rate": 0.5263157894736842
+      },
+      "UNDER": {
+        "wins": 102,
+        "losses": 105,
+        "decided": 207,
+        "rate": 0.4927536231884058
+      },
+      "COMBINED": {
+        "wins": 112,
+        "losses": 114,
+        "decided": 226,
+        "rate": 0.49557522123893805
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": null,
+      "MSE": null,
+      "bias": null,
+      "scored": 0,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.27406983667690965,
+      "log_loss": 0.7458944382853911,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_C1_BIN::MEAN",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 19,
+        "losses": 18,
+        "decided": 37,
+        "rate": 0.5135135135135135
+      },
+      "UNDER": {
+        "wins": 93,
+        "losses": 96,
+        "decided": 189,
+        "rate": 0.49206349206349204
+      },
+      "COMBINED": {
+        "wins": 112,
+        "losses": 114,
+        "decided": 226,
+        "rate": 0.49557522123893805
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.926905155840907,
+      "MSE": 39.25268031137147,
+      "bias": -1.9957586316653115,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.27406983667690965,
+      "log_loss": 0.7458944382853911,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_C1_BIN::MEDIAN",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 10,
+        "losses": 9,
+        "decided": 19,
+        "rate": 0.5263157894736842
+      },
+      "UNDER": {
+        "wins": 102,
+        "losses": 105,
+        "decided": 207,
+        "rate": 0.4927536231884058
+      },
+      "COMBINED": {
+        "wins": 112,
+        "losses": 114,
+        "decided": 226,
+        "rate": 0.49557522123893805
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 5.261061946902655,
+      "MSE": 44.323008849557525,
+      "bias": -2.853982300884956,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.27406983667690965,
+      "log_loss": 0.7458944382853911,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_C2_BB::LAW",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 9,
+        "losses": 9,
+        "decided": 18,
+        "rate": 0.5
+      },
+      "UNDER": {
+        "wins": 102,
+        "losses": 106,
+        "decided": 208,
+        "rate": 0.49038461538461536
+      },
+      "COMBINED": {
+        "wins": 111,
+        "losses": 115,
+        "decided": 226,
+        "rate": 0.4911504424778761
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": null,
+      "MSE": null,
+      "bias": null,
+      "scored": 0,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.2743870889596663,
+      "log_loss": 0.7465832982757394,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_C2_BB::MEAN",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 19,
+        "losses": 17,
+        "decided": 36,
+        "rate": 0.5277777777777778
+      },
+      "UNDER": {
+        "wins": 94,
+        "losses": 96,
+        "decided": 190,
+        "rate": 0.49473684210526314
+      },
+      "COMBINED": {
+        "wins": 113,
+        "losses": 113,
+        "decided": 226,
+        "rate": 0.5
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.936207730753133,
+      "MSE": 39.319065206229524,
+      "bias": -2.02793797398488,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.2743870889596663,
+      "log_loss": 0.7465832982757394,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_C2_BB::MEDIAN",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 9,
+        "losses": 9,
+        "decided": 18,
+        "rate": 0.5
+      },
+      "UNDER": {
+        "wins": 102,
+        "losses": 106,
+        "decided": 208,
+        "rate": 0.49038461538461536
+      },
+      "COMBINED": {
+        "wins": 111,
+        "losses": 115,
+        "decided": 226,
+        "rate": 0.4911504424778761
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 5.283185840707965,
+      "MSE": 44.823008849557525,
+      "bias": -2.9026548672566372,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.2743870889596663,
+      "log_loss": 0.7465832982757394,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_C2_BIN::LAW",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 10,
+        "losses": 9,
+        "decided": 19,
+        "rate": 0.5263157894736842
+      },
+      "UNDER": {
+        "wins": 102,
+        "losses": 105,
+        "decided": 207,
+        "rate": 0.4927536231884058
+      },
+      "COMBINED": {
+        "wins": 112,
+        "losses": 114,
+        "decided": 226,
+        "rate": 0.49557522123893805
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": null,
+      "MSE": null,
+      "bias": null,
+      "scored": 0,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.27438931504372316,
+      "log_loss": 0.7465984447412725,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_C2_BIN::MEAN",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 19,
+        "losses": 17,
+        "decided": 36,
+        "rate": 0.5277777777777778
+      },
+      "UNDER": {
+        "wins": 94,
+        "losses": 96,
+        "decided": 190,
+        "rate": 0.49473684210526314
+      },
+      "COMBINED": {
+        "wins": 113,
+        "losses": 113,
+        "decided": 226,
+        "rate": 0.5
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.936207730753133,
+      "MSE": 39.319065206229524,
+      "bias": -2.02793797398488,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.27438931504372316,
+      "log_loss": 0.7465984447412725,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_C2_BIN::MEDIAN",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 10,
+        "losses": 9,
+        "decided": 19,
+        "rate": 0.5263157894736842
+      },
+      "UNDER": {
+        "wins": 102,
+        "losses": 105,
+        "decided": 207,
+        "rate": 0.4927536231884058
+      },
+      "COMBINED": {
+        "wins": 112,
+        "losses": 114,
+        "decided": 226,
+        "rate": 0.49557522123893805
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 5.278761061946903,
+      "MSE": 44.69469026548673,
+      "bias": -2.8805309734513274,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.27438931504372316,
+      "log_loss": 0.7465984447412725,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_P2_BB::LAW",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 9,
+        "losses": 8,
+        "decided": 17,
+        "rate": 0.5294117647058824
+      },
+      "UNDER": {
+        "wins": 103,
+        "losses": 106,
+        "decided": 209,
+        "rate": 0.49282296650717705
+      },
+      "COMBINED": {
+        "wins": 112,
+        "losses": 114,
+        "decided": 226,
+        "rate": 0.49557522123893805
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": null,
+      "MSE": null,
+      "bias": null,
+      "scored": 0,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.27632501962625444,
+      "log_loss": 0.7514379131848239,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_P2_BB::MEAN",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 16,
+        "losses": 17,
+        "decided": 33,
+        "rate": 0.48484848484848486
+      },
+      "UNDER": {
+        "wins": 94,
+        "losses": 99,
+        "decided": 193,
+        "rate": 0.48704663212435234
+      },
+      "COMBINED": {
+        "wins": 110,
+        "losses": 116,
+        "decided": 226,
+        "rate": 0.48672566371681414
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.948147295954617,
+      "MSE": 39.45299687025227,
+      "bias": -2.0086610684311674,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.27632501962625444,
+      "log_loss": 0.7514379131848239,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_P2_BB::MEDIAN",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 9,
+        "losses": 8,
+        "decided": 17,
+        "rate": 0.5294117647058824
+      },
+      "UNDER": {
+        "wins": 103,
+        "losses": 106,
+        "decided": 209,
+        "rate": 0.49282296650717705
+      },
+      "COMBINED": {
+        "wins": 112,
+        "losses": 114,
+        "decided": 226,
+        "rate": 0.49557522123893805
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 5.287610619469026,
+      "MSE": 44.77433628318584,
+      "bias": -2.853982300884956,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.27632501962625444,
+      "log_loss": 0.7514379131848239,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_P2_BIN::LAW",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 9,
+        "losses": 8,
+        "decided": 17,
+        "rate": 0.5294117647058824
+      },
+      "UNDER": {
+        "wins": 103,
+        "losses": 106,
+        "decided": 209,
+        "rate": 0.49282296650717705
+      },
+      "COMBINED": {
+        "wins": 112,
+        "losses": 114,
+        "decided": 226,
+        "rate": 0.49557522123893805
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": null,
+      "MSE": null,
+      "bias": null,
+      "scored": 0,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.2763531549784271,
+      "log_loss": 0.7515205819525818,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_P2_BIN::MEAN",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 16,
+        "losses": 17,
+        "decided": 33,
+        "rate": 0.48484848484848486
+      },
+      "UNDER": {
+        "wins": 94,
+        "losses": 99,
+        "decided": 193,
+        "rate": 0.48704663212435234
+      },
+      "COMBINED": {
+        "wins": 110,
+        "losses": 116,
+        "decided": 226,
+        "rate": 0.48672566371681414
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.948147295954617,
+      "MSE": 39.45299687025227,
+      "bias": -2.0086610684311674,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.2763531549784271,
+      "log_loss": 0.7515205819525818,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "B_M2::M2_P2_BIN::MEDIAN",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 9,
+        "losses": 8,
+        "decided": 17,
+        "rate": 0.5294117647058824
+      },
+      "UNDER": {
+        "wins": 103,
+        "losses": 106,
+        "decided": 209,
+        "rate": 0.49282296650717705
+      },
+      "COMBINED": {
+        "wins": 112,
+        "losses": 114,
+        "decided": 226,
+        "rate": 0.49557522123893805
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 5.283185840707965,
+      "MSE": 44.76106194690266,
+      "bias": -2.84070796460177,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.2763531549784271,
+      "log_loss": 0.7515205819525818,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::A::CATBOOST_MEDIUM::mean_objective_point",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 38,
+        "losses": 25,
+        "decided": 63,
+        "rate": 0.6031746031746031
+      },
+      "UNDER": {
+        "wins": 52,
+        "losses": 53,
+        "decided": 105,
+        "rate": 0.49523809523809526
+      },
+      "COMBINED": {
+        "wins": 90,
+        "losses": 78,
+        "decided": 168,
+        "rate": 0.5357142857142857
+      },
+      "eligible": 226,
+      "available": 168,
+      "unavailable": 58,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.849232383496362,
+      "MSE": 37.812537739414466,
+      "bias": -1.9507121417327606,
+      "scored": 168,
+      "events": 0,
+      "strict_binary_Over_Brier": null,
+      "log_loss": null,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::A::COUNT_A_LEGACY_POINT::legacy_empirical_point",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 34,
+        "losses": 31,
+        "decided": 65,
+        "rate": 0.5230769230769231
+      },
+      "UNDER": {
+        "wins": 46,
+        "losses": 57,
+        "decided": 103,
+        "rate": 0.44660194174757284
+      },
+      "COMBINED": {
+        "wins": 80,
+        "losses": 88,
+        "decided": 168,
+        "rate": 0.47619047619047616
+      },
+      "eligible": 226,
+      "available": 168,
+      "unavailable": 58,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.806542311461549,
+      "MSE": 37.21774024254181,
+      "bias": -1.7489428734461805,
+      "scored": 168,
+      "events": 0,
+      "strict_binary_Over_Brier": null,
+      "log_loss": null,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::A::COUNT_A_MEAN::mean_objective_point",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 34,
+        "losses": 31,
+        "decided": 65,
+        "rate": 0.5230769230769231
+      },
+      "UNDER": {
+        "wins": 46,
+        "losses": 57,
+        "decided": 103,
+        "rate": 0.44660194174757284
+      },
+      "COMBINED": {
+        "wins": 80,
+        "losses": 88,
+        "decided": 168,
+        "rate": 0.47619047619047616
+      },
+      "eligible": 226,
+      "available": 168,
+      "unavailable": 58,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.806542311461549,
+      "MSE": 37.21774024254181,
+      "bias": -1.7489428734461805,
+      "scored": 168,
+      "events": 0,
+      "strict_binary_Over_Brier": null,
+      "log_loss": null,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::A::HGB_MAE_DIRECT::mae_objective_point",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 42,
+        "losses": 31,
+        "decided": 73,
+        "rate": 0.5753424657534246
+      },
+      "UNDER": {
+        "wins": 46,
+        "losses": 49,
+        "decided": 95,
+        "rate": 0.4842105263157895
+      },
+      "COMBINED": {
+        "wins": 88,
+        "losses": 80,
+        "decided": 168,
+        "rate": 0.5238095238095238
+      },
+      "eligible": 226,
+      "available": 168,
+      "unavailable": 58,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.816303382291316,
+      "MSE": 37.540611218467404,
+      "bias": -1.5440214011756617,
+      "scored": 168,
+      "events": 0,
+      "strict_binary_Over_Brier": null,
+      "log_loss": null,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::A::LEAF_CDF::mean",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 37,
+        "losses": 25,
+        "decided": 62,
+        "rate": 0.5967741935483871
+      },
+      "UNDER": {
+        "wins": 52,
+        "losses": 54,
+        "decided": 106,
+        "rate": 0.49056603773584906
+      },
+      "COMBINED": {
+        "wins": 89,
+        "losses": 79,
+        "decided": 168,
+        "rate": 0.5297619047619048
+      },
+      "eligible": 226,
+      "available": 168,
+      "unavailable": 58,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.6962623215308685,
+      "MSE": 35.57025952945126,
+      "bias": -1.6918568700619427,
+      "scored": 168,
+      "events": 0,
+      "strict_binary_Over_Brier": null,
+      "log_loss": null,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::A::LEAF_CDF::median",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 41,
+        "losses": 32,
+        "decided": 73,
+        "rate": 0.5616438356164384
+      },
+      "UNDER": {
+        "wins": 45,
+        "losses": 50,
+        "decided": 95,
+        "rate": 0.47368421052631576
+      },
+      "COMBINED": {
+        "wins": 86,
+        "losses": 82,
+        "decided": 168,
+        "rate": 0.5119047619047619
+      },
+      "eligible": 226,
+      "available": 168,
+      "unavailable": 58,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.773809523809524,
+      "MSE": 37.30952380952381,
+      "bias": -1.5119047619047619,
+      "scored": 168,
+      "events": 0,
+      "strict_binary_Over_Brier": null,
+      "log_loss": null,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::A::RESPONSE_CDF::mean",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 41,
+        "losses": 26,
+        "decided": 67,
+        "rate": 0.6119402985074627
+      },
+      "UNDER": {
+        "wins": 51,
+        "losses": 50,
+        "decided": 101,
+        "rate": 0.504950495049505
+      },
+      "COMBINED": {
+        "wins": 92,
+        "losses": 76,
+        "decided": 168,
+        "rate": 0.5476190476190477
+      },
+      "eligible": 226,
+      "available": 168,
+      "unavailable": 58,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.7104910620469,
+      "MSE": 35.741818192624756,
+      "bias": -1.673694633144287,
+      "scored": 168,
+      "events": 0,
+      "strict_binary_Over_Brier": null,
+      "log_loss": null,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::A::RESPONSE_CDF::median",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 40,
+        "losses": 30,
+        "decided": 70,
+        "rate": 0.5714285714285714
+      },
+      "UNDER": {
+        "wins": 47,
+        "losses": 51,
+        "decided": 98,
+        "rate": 0.47959183673469385
+      },
+      "COMBINED": {
+        "wins": 87,
+        "losses": 81,
+        "decided": 168,
+        "rate": 0.5178571428571429
+      },
+      "eligible": 226,
+      "available": 168,
+      "unavailable": 58,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.767857142857143,
+      "MSE": 37.160714285714285,
+      "bias": -1.4702380952380953,
+      "scored": 168,
+      "events": 0,
+      "strict_binary_Over_Brier": null,
+      "log_loss": null,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::ALWAYS_OVER",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 115,
+        "losses": 111,
+        "decided": 226,
+        "rate": 0.5088495575221239
+      },
+      "UNDER": {
+        "wins": 0,
+        "losses": 0,
+        "decided": 0,
+        "rate": null
+      },
+      "COMBINED": {
+        "wins": 115,
+        "losses": 111,
+        "decided": 226,
+        "rate": 0.5088495575221239
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": null,
+      "MSE": null,
+      "bias": null,
+      "scored": 0,
+      "events": 0,
+      "strict_binary_Over_Brier": null,
+      "log_loss": null,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::ALWAYS_UNDER",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 0,
+        "losses": 0,
+        "decided": 0,
+        "rate": null
+      },
+      "UNDER": {
+        "wins": 111,
+        "losses": 115,
+        "decided": 226,
+        "rate": 0.4911504424778761
+      },
+      "COMBINED": {
+        "wins": 111,
+        "losses": 115,
+        "decided": 226,
+        "rate": 0.4911504424778761
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": null,
+      "MSE": null,
+      "bias": null,
+      "scored": 0,
+      "events": 0,
+      "strict_binary_Over_Brier": null,
+      "log_loss": null,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::B-FTN-BALL-QUALITY-COMPLETION-v1:B0::P2",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 27,
+        "losses": 21,
+        "decided": 48,
+        "rate": 0.5625
+      },
+      "UNDER": {
+        "wins": 90,
+        "losses": 88,
+        "decided": 178,
+        "rate": 0.5056179775280899
+      },
+      "COMBINED": {
+        "wins": 117,
+        "losses": 109,
+        "decided": 226,
+        "rate": 0.5176991150442478
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": null,
+      "MSE": null,
+      "bias": null,
+      "scored": 0,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.26590713934412646,
+      "log_loss": 0.7273231872292117,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::B-FTN-BALL-QUALITY-COMPLETION-v1:B0::lower_median",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 27,
+        "losses": 21,
+        "decided": 48,
+        "rate": 0.5625
+      },
+      "UNDER": {
+        "wins": 90,
+        "losses": 88,
+        "decided": 178,
+        "rate": 0.5056179775280899
+      },
+      "COMBINED": {
+        "wins": 117,
+        "losses": 109,
+        "decided": 226,
+        "rate": 0.5176991150442478
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.836283185840708,
+      "MSE": 38.376106194690266,
+      "bias": -1.5176991150442478,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.26590713934412646,
+      "log_loss": 0.7273231872292117,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::B-FTN-BALL-QUALITY-COMPLETION-v1:B0::mean",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 18,
+        "losses": 10,
+        "decided": 28,
+        "rate": 0.6428571428571429
+      },
+      "UNDER": {
+        "wins": 101,
+        "losses": 97,
+        "decided": 198,
+        "rate": 0.51010101010101
+      },
+      "COMBINED": {
+        "wins": 119,
+        "losses": 107,
+        "decided": 226,
+        "rate": 0.5265486725663717
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.979198838087993,
+      "MSE": 40.892048712137644,
+      "bias": -2.0282041093646073,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.26590713934412646,
+      "log_loss": 0.7273231872292117,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::B-FTN-BALL-QUALITY-COMPLETION-v1:B1::P2",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 27,
+        "losses": 21,
+        "decided": 48,
+        "rate": 0.5625
+      },
+      "UNDER": {
+        "wins": 90,
+        "losses": 88,
+        "decided": 178,
+        "rate": 0.5056179775280899
+      },
+      "COMBINED": {
+        "wins": 117,
+        "losses": 109,
+        "decided": 226,
+        "rate": 0.5176991150442478
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": null,
+      "MSE": null,
+      "bias": null,
+      "scored": 0,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.26590713934412646,
+      "log_loss": 0.7273231872292117,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::B-FTN-BALL-QUALITY-COMPLETION-v1:B1::lower_median",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 27,
+        "losses": 21,
+        "decided": 48,
+        "rate": 0.5625
+      },
+      "UNDER": {
+        "wins": 90,
+        "losses": 88,
+        "decided": 178,
+        "rate": 0.5056179775280899
+      },
+      "COMBINED": {
+        "wins": 117,
+        "losses": 109,
+        "decided": 226,
+        "rate": 0.5176991150442478
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.836283185840708,
+      "MSE": 38.376106194690266,
+      "bias": -1.5176991150442478,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.26590713934412646,
+      "log_loss": 0.7273231872292117,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::B-FTN-BALL-QUALITY-COMPLETION-v1:B1::mean",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 18,
+        "losses": 10,
+        "decided": 28,
+        "rate": 0.6428571428571429
+      },
+      "UNDER": {
+        "wins": 101,
+        "losses": 97,
+        "decided": 198,
+        "rate": 0.51010101010101
+      },
+      "COMBINED": {
+        "wins": 119,
+        "losses": 107,
+        "decided": 226,
+        "rate": 0.5265486725663717
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.979198838087993,
+      "MSE": 40.892048712137644,
+      "bias": -2.0282041093646073,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.26590713934412646,
+      "log_loss": 0.7273231872292117,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::B-FTN-BALL-QUALITY-COMPLETION-v1:B2::P2",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 33,
+        "losses": 22,
+        "decided": 55,
+        "rate": 0.6
+      },
+      "UNDER": {
+        "wins": 89,
+        "losses": 82,
+        "decided": 171,
+        "rate": 0.52046783625731
+      },
+      "COMBINED": {
+        "wins": 122,
+        "losses": 104,
+        "decided": 226,
+        "rate": 0.5398230088495575
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": null,
+      "MSE": null,
+      "bias": null,
+      "scored": 0,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.266930857825374,
+      "log_loss": 0.7301061514811084,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::B-FTN-BALL-QUALITY-COMPLETION-v1:B2::lower_median",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 33,
+        "losses": 22,
+        "decided": 55,
+        "rate": 0.6
+      },
+      "UNDER": {
+        "wins": 89,
+        "losses": 82,
+        "decided": 171,
+        "rate": 0.52046783625731
+      },
+      "COMBINED": {
+        "wins": 122,
+        "losses": 104,
+        "decided": 226,
+        "rate": 0.5398230088495575
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.898230088495575,
+      "MSE": 39.06637168141593,
+      "bias": -1.6327433628318584,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.266930857825374,
+      "log_loss": 0.7301061514811084,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::B-FTN-BALL-QUALITY-COMPLETION-v1:B2::mean",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 16,
+        "losses": 15,
+        "decided": 31,
+        "rate": 0.5161290322580645
+      },
+      "UNDER": {
+        "wins": 96,
+        "losses": 99,
+        "decided": 195,
+        "rate": 0.49230769230769234
+      },
+      "COMBINED": {
+        "wins": 112,
+        "losses": 114,
+        "decided": 226,
+        "rate": 0.49557522123893805
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 5.01609902903209,
+      "MSE": 41.043738111762224,
+      "bias": -2.10161660027637,
+      "scored": 226,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.266930857825374,
+      "log_loss": 0.7301061514811084,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::C::C-ALL12-LAW-THRESHOLD-v2.1/P2_LEAF/H-MULTI/E0_OP/P1_MEAN::P1_MEAN::P1_MEAN-strict-v6",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 11,
+        "losses": 14,
+        "decided": 25,
+        "rate": 0.44
+      },
+      "UNDER": {
+        "wins": 63,
+        "losses": 80,
+        "decided": 143,
+        "rate": 0.4405594405594406
+      },
+      "COMBINED": {
+        "wins": 74,
+        "losses": 94,
+        "decided": 168,
+        "rate": 0.44047619047619047
+      },
+      "eligible": 226,
+      "available": 168,
+      "unavailable": 58,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 5.094394817791296,
+      "MSE": 41.31356328412042,
+      "bias": -2.5068191116000906,
+      "scored": 168,
+      "events": 0,
+      "strict_binary_Over_Brier": null,
+      "log_loss": null,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::C::C-ALL12-LAW-THRESHOLD-v2.1/P2_LEAF/H-MULTI/E0_OP/P1_MEDIAN::P1_MEDIAN::P1_MEDIAN-strict-v6",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 24,
+        "losses": 18,
+        "decided": 42,
+        "rate": 0.5714285714285714
+      },
+      "UNDER": {
+        "wins": 59,
+        "losses": 67,
+        "decided": 126,
+        "rate": 0.46825396825396826
+      },
+      "COMBINED": {
+        "wins": 83,
+        "losses": 85,
+        "decided": 168,
+        "rate": 0.49404761904761907
+      },
+      "eligible": 226,
+      "available": 168,
+      "unavailable": 58,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.886904761904762,
+      "MSE": 39.160714285714285,
+      "bias": -2.005952380952381,
+      "scored": 168,
+      "events": 0,
+      "strict_binary_Over_Brier": null,
+      "log_loss": null,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::CAPTURED_SITE_ADJUSTED_POINT_STRICT",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 28,
+        "losses": 27,
+        "decided": 55,
+        "rate": 0.509090909090909
+      },
+      "UNDER": {
+        "wins": 44,
+        "losses": 43,
+        "decided": 87,
+        "rate": 0.5057471264367817
+      },
+      "COMBINED": {
+        "wins": 72,
+        "losses": 70,
+        "decided": 142,
+        "rate": 0.5070422535211268
+      },
+      "eligible": 226,
+      "available": 142,
+      "unavailable": 84,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.578802816901408,
+      "MSE": 35.8404161971831,
+      "bias": -0.3290845070422535,
+      "scored": 142,
+      "events": 0,
+      "strict_binary_Over_Brier": null,
+      "log_loss": null,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::CAPTURED_SITE_RAW_POINT_STRICT",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 31,
+        "losses": 31,
+        "decided": 62,
+        "rate": 0.5
+      },
+      "UNDER": {
+        "wins": 40,
+        "losses": 40,
+        "decided": 80,
+        "rate": 0.5
+      },
+      "COMBINED": {
+        "wins": 71,
+        "losses": 71,
+        "decided": 142,
+        "rate": 0.5
+      },
+      "eligible": 226,
+      "available": 142,
+      "unavailable": 84,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": 4.584718309859155,
+      "MSE": 35.57787112676056,
+      "bias": -0.031197183098591524,
+      "scored": 142,
+      "events": 0,
+      "strict_binary_Over_Brier": null,
+      "log_loss": null,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    },
+    {
+      "procedure": "CONTROL_CMP::EARLIER_LINE_PREVALENCE",
+      "actual_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "OVER": {
+        "wins": 19,
+        "losses": 15,
+        "decided": 34,
+        "rate": 0.5588235294117647
+      },
+      "UNDER": {
+        "wins": 96,
+        "losses": 96,
+        "decided": 192,
+        "rate": 0.5
+      },
+      "COMBINED": {
+        "wins": 115,
+        "losses": 111,
+        "decided": 226,
+        "rate": 0.5088495575221239
+      },
+      "eligible": 226,
+      "available": 226,
+      "unavailable": 0,
+      "unknown_selected": 0,
+      "abstentions": 0,
+      "games": 119,
+      "player_games": 226,
+      "MAE": null,
+      "MSE": null,
+      "bias": null,
+      "scored": 0,
+      "events": 226,
+      "strict_binary_Over_Brier": 0.2724119168029187,
+      "log_loss": 0.7434129859777232,
+      "evidence": "RETAINED_REAL_LINES_UNVERIFIED_QUOTE_CLOCK_CURRENT_VINTAGE_EXPOSED_RECONSTRUCTION"
+    }
+  ],
+  "new_M2_early_native_cumulative_reconciliation": [
+    {
+      "procedure": "B_M2::D_M2::LAW",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 10,
+          "losses": 9,
+          "decided": 19,
+          "rate": 0.5263157894736842
+        },
+        "UNDER": {
+          "wins": 31,
+          "losses": 34,
+          "decided": 65,
+          "rate": 0.47692307692307695
+        },
+        "COMBINED": {
+          "wins": 41,
+          "losses": 43,
+          "decided": 84,
+          "rate": 0.4880952380952381
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 20,
+          "losses": 26,
+          "decided": 46,
+          "rate": 0.43478260869565216
+        },
+        "UNDER": {
+          "wins": 45,
+          "losses": 51,
+          "decided": 96,
+          "rate": 0.46875
+        },
+        "COMBINED": {
+          "wins": 65,
+          "losses": 77,
+          "decided": 142,
+          "rate": 0.45774647887323944
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 30,
+          "losses": 35,
+          "decided": 65,
+          "rate": 0.46153846153846156
+        },
+        "UNDER": {
+          "wins": 76,
+          "losses": 85,
+          "decided": 161,
+          "rate": 0.4720496894409938
+        },
+        "COMBINED": {
+          "wins": 106,
+          "losses": 120,
+          "decided": 226,
+          "rate": 0.4690265486725664
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::D_M2::MEAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 7,
+          "losses": 6,
+          "decided": 13,
+          "rate": 0.5384615384615384
+        },
+        "UNDER": {
+          "wins": 34,
+          "losses": 37,
+          "decided": 71,
+          "rate": 0.4788732394366197
+        },
+        "COMBINED": {
+          "wins": 41,
+          "losses": 43,
+          "decided": 84,
+          "rate": 0.4880952380952381
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 14,
+          "losses": 17,
+          "decided": 31,
+          "rate": 0.45161290322580644
+        },
+        "UNDER": {
+          "wins": 54,
+          "losses": 57,
+          "decided": 111,
+          "rate": 0.4864864864864865
+        },
+        "COMBINED": {
+          "wins": 68,
+          "losses": 74,
+          "decided": 142,
+          "rate": 0.4788732394366197
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 21,
+          "losses": 23,
+          "decided": 44,
+          "rate": 0.4772727272727273
+        },
+        "UNDER": {
+          "wins": 88,
+          "losses": 94,
+          "decided": 182,
+          "rate": 0.4835164835164835
+        },
+        "COMBINED": {
+          "wins": 109,
+          "losses": 117,
+          "decided": 226,
+          "rate": 0.4823008849557522
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::D_M2::MEDIAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 10,
+          "losses": 9,
+          "decided": 19,
+          "rate": 0.5263157894736842
+        },
+        "UNDER": {
+          "wins": 31,
+          "losses": 34,
+          "decided": 65,
+          "rate": 0.47692307692307695
+        },
+        "COMBINED": {
+          "wins": 41,
+          "losses": 43,
+          "decided": 84,
+          "rate": 0.4880952380952381
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 20,
+          "losses": 26,
+          "decided": 46,
+          "rate": 0.43478260869565216
+        },
+        "UNDER": {
+          "wins": 45,
+          "losses": 51,
+          "decided": 96,
+          "rate": 0.46875
+        },
+        "COMBINED": {
+          "wins": 65,
+          "losses": 77,
+          "decided": 142,
+          "rate": 0.45774647887323944
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 30,
+          "losses": 35,
+          "decided": 65,
+          "rate": 0.46153846153846156
+        },
+        "UNDER": {
+          "wins": 76,
+          "losses": 85,
+          "decided": 161,
+          "rate": 0.4720496894409938
+        },
+        "COMBINED": {
+          "wins": 106,
+          "losses": 120,
+          "decided": 226,
+          "rate": 0.4690265486725664
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_C1_BB::LAW",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 4,
+          "losses": 2,
+          "decided": 6,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "wins": 38,
+          "losses": 40,
+          "decided": 78,
+          "rate": 0.48717948717948717
+        },
+        "COMBINED": {
+          "wins": 42,
+          "losses": 42,
+          "decided": 84,
+          "rate": 0.5
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 6,
+          "losses": 7,
+          "decided": 13,
+          "rate": 0.46153846153846156
+        },
+        "UNDER": {
+          "wins": 64,
+          "losses": 65,
+          "decided": 129,
+          "rate": 0.49612403100775193
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 10,
+          "losses": 9,
+          "decided": 19,
+          "rate": 0.5263157894736842
+        },
+        "UNDER": {
+          "wins": 102,
+          "losses": 105,
+          "decided": 207,
+          "rate": 0.4927536231884058
+        },
+        "COMBINED": {
+          "wins": 112,
+          "losses": 114,
+          "decided": 226,
+          "rate": 0.49557522123893805
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_C1_BB::MEAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 10,
+          "losses": 5,
+          "decided": 15,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "wins": 35,
+          "losses": 34,
+          "decided": 69,
+          "rate": 0.5072463768115942
+        },
+        "COMBINED": {
+          "wins": 45,
+          "losses": 39,
+          "decided": 84,
+          "rate": 0.5357142857142857
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 9,
+          "losses": 13,
+          "decided": 22,
+          "rate": 0.4090909090909091
+        },
+        "UNDER": {
+          "wins": 58,
+          "losses": 62,
+          "decided": 120,
+          "rate": 0.48333333333333334
+        },
+        "COMBINED": {
+          "wins": 67,
+          "losses": 75,
+          "decided": 142,
+          "rate": 0.47183098591549294
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 19,
+          "losses": 18,
+          "decided": 37,
+          "rate": 0.5135135135135135
+        },
+        "UNDER": {
+          "wins": 93,
+          "losses": 96,
+          "decided": 189,
+          "rate": 0.49206349206349204
+        },
+        "COMBINED": {
+          "wins": 112,
+          "losses": 114,
+          "decided": 226,
+          "rate": 0.49557522123893805
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_C1_BB::MEDIAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 4,
+          "losses": 2,
+          "decided": 6,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "wins": 38,
+          "losses": 40,
+          "decided": 78,
+          "rate": 0.48717948717948717
+        },
+        "COMBINED": {
+          "wins": 42,
+          "losses": 42,
+          "decided": 84,
+          "rate": 0.5
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 6,
+          "losses": 7,
+          "decided": 13,
+          "rate": 0.46153846153846156
+        },
+        "UNDER": {
+          "wins": 64,
+          "losses": 65,
+          "decided": 129,
+          "rate": 0.49612403100775193
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 10,
+          "losses": 9,
+          "decided": 19,
+          "rate": 0.5263157894736842
+        },
+        "UNDER": {
+          "wins": 102,
+          "losses": 105,
+          "decided": 207,
+          "rate": 0.4927536231884058
+        },
+        "COMBINED": {
+          "wins": 112,
+          "losses": 114,
+          "decided": 226,
+          "rate": 0.49557522123893805
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_C1_BIN::LAW",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 4,
+          "losses": 2,
+          "decided": 6,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "wins": 38,
+          "losses": 40,
+          "decided": 78,
+          "rate": 0.48717948717948717
+        },
+        "COMBINED": {
+          "wins": 42,
+          "losses": 42,
+          "decided": 84,
+          "rate": 0.5
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 6,
+          "losses": 7,
+          "decided": 13,
+          "rate": 0.46153846153846156
+        },
+        "UNDER": {
+          "wins": 64,
+          "losses": 65,
+          "decided": 129,
+          "rate": 0.49612403100775193
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 10,
+          "losses": 9,
+          "decided": 19,
+          "rate": 0.5263157894736842
+        },
+        "UNDER": {
+          "wins": 102,
+          "losses": 105,
+          "decided": 207,
+          "rate": 0.4927536231884058
+        },
+        "COMBINED": {
+          "wins": 112,
+          "losses": 114,
+          "decided": 226,
+          "rate": 0.49557522123893805
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_C1_BIN::MEAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 10,
+          "losses": 5,
+          "decided": 15,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "wins": 35,
+          "losses": 34,
+          "decided": 69,
+          "rate": 0.5072463768115942
+        },
+        "COMBINED": {
+          "wins": 45,
+          "losses": 39,
+          "decided": 84,
+          "rate": 0.5357142857142857
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 9,
+          "losses": 13,
+          "decided": 22,
+          "rate": 0.4090909090909091
+        },
+        "UNDER": {
+          "wins": 58,
+          "losses": 62,
+          "decided": 120,
+          "rate": 0.48333333333333334
+        },
+        "COMBINED": {
+          "wins": 67,
+          "losses": 75,
+          "decided": 142,
+          "rate": 0.47183098591549294
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 19,
+          "losses": 18,
+          "decided": 37,
+          "rate": 0.5135135135135135
+        },
+        "UNDER": {
+          "wins": 93,
+          "losses": 96,
+          "decided": 189,
+          "rate": 0.49206349206349204
+        },
+        "COMBINED": {
+          "wins": 112,
+          "losses": 114,
+          "decided": 226,
+          "rate": 0.49557522123893805
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_C1_BIN::MEDIAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 4,
+          "losses": 2,
+          "decided": 6,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "wins": 38,
+          "losses": 40,
+          "decided": 78,
+          "rate": 0.48717948717948717
+        },
+        "COMBINED": {
+          "wins": 42,
+          "losses": 42,
+          "decided": 84,
+          "rate": 0.5
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 6,
+          "losses": 7,
+          "decided": 13,
+          "rate": 0.46153846153846156
+        },
+        "UNDER": {
+          "wins": 64,
+          "losses": 65,
+          "decided": 129,
+          "rate": 0.49612403100775193
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 10,
+          "losses": 9,
+          "decided": 19,
+          "rate": 0.5263157894736842
+        },
+        "UNDER": {
+          "wins": 102,
+          "losses": 105,
+          "decided": 207,
+          "rate": 0.4927536231884058
+        },
+        "COMBINED": {
+          "wins": 112,
+          "losses": 114,
+          "decided": 226,
+          "rate": 0.49557522123893805
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_C2_BB::LAW",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 3,
+          "losses": 2,
+          "decided": 5,
+          "rate": 0.6
+        },
+        "UNDER": {
+          "wins": 38,
+          "losses": 41,
+          "decided": 79,
+          "rate": 0.4810126582278481
+        },
+        "COMBINED": {
+          "wins": 41,
+          "losses": 43,
+          "decided": 84,
+          "rate": 0.4880952380952381
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 6,
+          "losses": 7,
+          "decided": 13,
+          "rate": 0.46153846153846156
+        },
+        "UNDER": {
+          "wins": 64,
+          "losses": 65,
+          "decided": 129,
+          "rate": 0.49612403100775193
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 9,
+          "losses": 9,
+          "decided": 18,
+          "rate": 0.5
+        },
+        "UNDER": {
+          "wins": 102,
+          "losses": 106,
+          "decided": 208,
+          "rate": 0.49038461538461536
+        },
+        "COMBINED": {
+          "wins": 111,
+          "losses": 115,
+          "decided": 226,
+          "rate": 0.4911504424778761
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_C2_BB::MEAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 10,
+          "losses": 5,
+          "decided": 15,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "wins": 35,
+          "losses": 34,
+          "decided": 69,
+          "rate": 0.5072463768115942
+        },
+        "COMBINED": {
+          "wins": 45,
+          "losses": 39,
+          "decided": 84,
+          "rate": 0.5357142857142857
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 9,
+          "losses": 12,
+          "decided": 21,
+          "rate": 0.42857142857142855
+        },
+        "UNDER": {
+          "wins": 59,
+          "losses": 62,
+          "decided": 121,
+          "rate": 0.48760330578512395
+        },
+        "COMBINED": {
+          "wins": 68,
+          "losses": 74,
+          "decided": 142,
+          "rate": 0.4788732394366197
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 19,
+          "losses": 17,
+          "decided": 36,
+          "rate": 0.5277777777777778
+        },
+        "UNDER": {
+          "wins": 94,
+          "losses": 96,
+          "decided": 190,
+          "rate": 0.49473684210526314
+        },
+        "COMBINED": {
+          "wins": 113,
+          "losses": 113,
+          "decided": 226,
+          "rate": 0.5
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_C2_BB::MEDIAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 3,
+          "losses": 2,
+          "decided": 5,
+          "rate": 0.6
+        },
+        "UNDER": {
+          "wins": 38,
+          "losses": 41,
+          "decided": 79,
+          "rate": 0.4810126582278481
+        },
+        "COMBINED": {
+          "wins": 41,
+          "losses": 43,
+          "decided": 84,
+          "rate": 0.4880952380952381
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 6,
+          "losses": 7,
+          "decided": 13,
+          "rate": 0.46153846153846156
+        },
+        "UNDER": {
+          "wins": 64,
+          "losses": 65,
+          "decided": 129,
+          "rate": 0.49612403100775193
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 9,
+          "losses": 9,
+          "decided": 18,
+          "rate": 0.5
+        },
+        "UNDER": {
+          "wins": 102,
+          "losses": 106,
+          "decided": 208,
+          "rate": 0.49038461538461536
+        },
+        "COMBINED": {
+          "wins": 111,
+          "losses": 115,
+          "decided": 226,
+          "rate": 0.4911504424778761
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_C2_BIN::LAW",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 4,
+          "losses": 2,
+          "decided": 6,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "wins": 38,
+          "losses": 40,
+          "decided": 78,
+          "rate": 0.48717948717948717
+        },
+        "COMBINED": {
+          "wins": 42,
+          "losses": 42,
+          "decided": 84,
+          "rate": 0.5
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 6,
+          "losses": 7,
+          "decided": 13,
+          "rate": 0.46153846153846156
+        },
+        "UNDER": {
+          "wins": 64,
+          "losses": 65,
+          "decided": 129,
+          "rate": 0.49612403100775193
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 10,
+          "losses": 9,
+          "decided": 19,
+          "rate": 0.5263157894736842
+        },
+        "UNDER": {
+          "wins": 102,
+          "losses": 105,
+          "decided": 207,
+          "rate": 0.4927536231884058
+        },
+        "COMBINED": {
+          "wins": 112,
+          "losses": 114,
+          "decided": 226,
+          "rate": 0.49557522123893805
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_C2_BIN::MEAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 10,
+          "losses": 5,
+          "decided": 15,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "wins": 35,
+          "losses": 34,
+          "decided": 69,
+          "rate": 0.5072463768115942
+        },
+        "COMBINED": {
+          "wins": 45,
+          "losses": 39,
+          "decided": 84,
+          "rate": 0.5357142857142857
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 9,
+          "losses": 12,
+          "decided": 21,
+          "rate": 0.42857142857142855
+        },
+        "UNDER": {
+          "wins": 59,
+          "losses": 62,
+          "decided": 121,
+          "rate": 0.48760330578512395
+        },
+        "COMBINED": {
+          "wins": 68,
+          "losses": 74,
+          "decided": 142,
+          "rate": 0.4788732394366197
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 19,
+          "losses": 17,
+          "decided": 36,
+          "rate": 0.5277777777777778
+        },
+        "UNDER": {
+          "wins": 94,
+          "losses": 96,
+          "decided": 190,
+          "rate": 0.49473684210526314
+        },
+        "COMBINED": {
+          "wins": 113,
+          "losses": 113,
+          "decided": 226,
+          "rate": 0.5
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_C2_BIN::MEDIAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 4,
+          "losses": 2,
+          "decided": 6,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "wins": 38,
+          "losses": 40,
+          "decided": 78,
+          "rate": 0.48717948717948717
+        },
+        "COMBINED": {
+          "wins": 42,
+          "losses": 42,
+          "decided": 84,
+          "rate": 0.5
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 6,
+          "losses": 7,
+          "decided": 13,
+          "rate": 0.46153846153846156
+        },
+        "UNDER": {
+          "wins": 64,
+          "losses": 65,
+          "decided": 129,
+          "rate": 0.49612403100775193
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 10,
+          "losses": 9,
+          "decided": 19,
+          "rate": 0.5263157894736842
+        },
+        "UNDER": {
+          "wins": 102,
+          "losses": 105,
+          "decided": 207,
+          "rate": 0.4927536231884058
+        },
+        "COMBINED": {
+          "wins": 112,
+          "losses": 114,
+          "decided": 226,
+          "rate": 0.49557522123893805
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_P2_BB::LAW",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 5,
+          "losses": 2,
+          "decided": 7,
+          "rate": 0.7142857142857143
+        },
+        "UNDER": {
+          "wins": 38,
+          "losses": 39,
+          "decided": 77,
+          "rate": 0.4935064935064935
+        },
+        "COMBINED": {
+          "wins": 43,
+          "losses": 41,
+          "decided": 84,
+          "rate": 0.5119047619047619
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 4,
+          "losses": 6,
+          "decided": 10,
+          "rate": 0.4
+        },
+        "UNDER": {
+          "wins": 65,
+          "losses": 67,
+          "decided": 132,
+          "rate": 0.49242424242424243
+        },
+        "COMBINED": {
+          "wins": 69,
+          "losses": 73,
+          "decided": 142,
+          "rate": 0.4859154929577465
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 9,
+          "losses": 8,
+          "decided": 17,
+          "rate": 0.5294117647058824
+        },
+        "UNDER": {
+          "wins": 103,
+          "losses": 106,
+          "decided": 209,
+          "rate": 0.49282296650717705
+        },
+        "COMBINED": {
+          "wins": 112,
+          "losses": 114,
+          "decided": 226,
+          "rate": 0.49557522123893805
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_P2_BB::MEAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 7,
+          "losses": 6,
+          "decided": 13,
+          "rate": 0.5384615384615384
+        },
+        "UNDER": {
+          "wins": 34,
+          "losses": 37,
+          "decided": 71,
+          "rate": 0.4788732394366197
+        },
+        "COMBINED": {
+          "wins": 41,
+          "losses": 43,
+          "decided": 84,
+          "rate": 0.4880952380952381
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 9,
+          "losses": 11,
+          "decided": 20,
+          "rate": 0.45
+        },
+        "UNDER": {
+          "wins": 60,
+          "losses": 62,
+          "decided": 122,
+          "rate": 0.4918032786885246
+        },
+        "COMBINED": {
+          "wins": 69,
+          "losses": 73,
+          "decided": 142,
+          "rate": 0.4859154929577465
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 16,
+          "losses": 17,
+          "decided": 33,
+          "rate": 0.48484848484848486
+        },
+        "UNDER": {
+          "wins": 94,
+          "losses": 99,
+          "decided": 193,
+          "rate": 0.48704663212435234
+        },
+        "COMBINED": {
+          "wins": 110,
+          "losses": 116,
+          "decided": 226,
+          "rate": 0.48672566371681414
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_P2_BB::MEDIAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 5,
+          "losses": 2,
+          "decided": 7,
+          "rate": 0.7142857142857143
+        },
+        "UNDER": {
+          "wins": 38,
+          "losses": 39,
+          "decided": 77,
+          "rate": 0.4935064935064935
+        },
+        "COMBINED": {
+          "wins": 43,
+          "losses": 41,
+          "decided": 84,
+          "rate": 0.5119047619047619
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 4,
+          "losses": 6,
+          "decided": 10,
+          "rate": 0.4
+        },
+        "UNDER": {
+          "wins": 65,
+          "losses": 67,
+          "decided": 132,
+          "rate": 0.49242424242424243
+        },
+        "COMBINED": {
+          "wins": 69,
+          "losses": 73,
+          "decided": 142,
+          "rate": 0.4859154929577465
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 9,
+          "losses": 8,
+          "decided": 17,
+          "rate": 0.5294117647058824
+        },
+        "UNDER": {
+          "wins": 103,
+          "losses": 106,
+          "decided": 209,
+          "rate": 0.49282296650717705
+        },
+        "COMBINED": {
+          "wins": 112,
+          "losses": 114,
+          "decided": 226,
+          "rate": 0.49557522123893805
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_P2_BIN::LAW",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 5,
+          "losses": 2,
+          "decided": 7,
+          "rate": 0.7142857142857143
+        },
+        "UNDER": {
+          "wins": 38,
+          "losses": 39,
+          "decided": 77,
+          "rate": 0.4935064935064935
+        },
+        "COMBINED": {
+          "wins": 43,
+          "losses": 41,
+          "decided": 84,
+          "rate": 0.5119047619047619
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 4,
+          "losses": 6,
+          "decided": 10,
+          "rate": 0.4
+        },
+        "UNDER": {
+          "wins": 65,
+          "losses": 67,
+          "decided": 132,
+          "rate": 0.49242424242424243
+        },
+        "COMBINED": {
+          "wins": 69,
+          "losses": 73,
+          "decided": 142,
+          "rate": 0.4859154929577465
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 9,
+          "losses": 8,
+          "decided": 17,
+          "rate": 0.5294117647058824
+        },
+        "UNDER": {
+          "wins": 103,
+          "losses": 106,
+          "decided": 209,
+          "rate": 0.49282296650717705
+        },
+        "COMBINED": {
+          "wins": 112,
+          "losses": 114,
+          "decided": 226,
+          "rate": 0.49557522123893805
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_P2_BIN::MEAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 7,
+          "losses": 6,
+          "decided": 13,
+          "rate": 0.5384615384615384
+        },
+        "UNDER": {
+          "wins": 34,
+          "losses": 37,
+          "decided": 71,
+          "rate": 0.4788732394366197
+        },
+        "COMBINED": {
+          "wins": 41,
+          "losses": 43,
+          "decided": 84,
+          "rate": 0.4880952380952381
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 9,
+          "losses": 11,
+          "decided": 20,
+          "rate": 0.45
+        },
+        "UNDER": {
+          "wins": 60,
+          "losses": 62,
+          "decided": 122,
+          "rate": 0.4918032786885246
+        },
+        "COMBINED": {
+          "wins": 69,
+          "losses": 73,
+          "decided": 142,
+          "rate": 0.4859154929577465
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 16,
+          "losses": 17,
+          "decided": 33,
+          "rate": 0.48484848484848486
+        },
+        "UNDER": {
+          "wins": 94,
+          "losses": 99,
+          "decided": 193,
+          "rate": 0.48704663212435234
+        },
+        "COMBINED": {
+          "wins": 110,
+          "losses": 116,
+          "decided": 226,
+          "rate": 0.48672566371681414
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_P2_BIN::MEDIAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 5,
+          "losses": 2,
+          "decided": 7,
+          "rate": 0.7142857142857143
+        },
+        "UNDER": {
+          "wins": 38,
+          "losses": 39,
+          "decided": 77,
+          "rate": 0.4935064935064935
+        },
+        "COMBINED": {
+          "wins": 43,
+          "losses": 41,
+          "decided": 84,
+          "rate": 0.5119047619047619
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 4,
+          "losses": 6,
+          "decided": 10,
+          "rate": 0.4
+        },
+        "UNDER": {
+          "wins": 65,
+          "losses": 67,
+          "decided": 132,
+          "rate": 0.49242424242424243
+        },
+        "COMBINED": {
+          "wins": 69,
+          "losses": 73,
+          "decided": 142,
+          "rate": 0.4859154929577465
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 9,
+          "losses": 8,
+          "decided": 17,
+          "rate": 0.5294117647058824
+        },
+        "UNDER": {
+          "wins": 103,
+          "losses": 106,
+          "decided": 209,
+          "rate": 0.49282296650717705
+        },
+        "COMBINED": {
+          "wins": 112,
+          "losses": 114,
+          "decided": 226,
+          "rate": 0.49557522123893805
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    }
+  ],
+  "BB_minus_BIN_aggregate_effects": [
+    {
+      "family": "P2",
+      "policy": "MEAN",
+      "BB_minus_BIN_cumulative_wins": 0,
+      "BB_minus_BIN_early_wins": 0,
+      "BB_minus_BIN_native_wins": 0,
+      "BB_minus_BIN_event_Brier": -2.8135352172664607e-05,
+      "limit": "Difference of public same-panel totals; no paired disagreement/uncertainty recalculation from aggregate-only input."
+    },
+    {
+      "family": "P2",
+      "policy": "MEDIAN",
+      "BB_minus_BIN_cumulative_wins": 0,
+      "BB_minus_BIN_early_wins": 0,
+      "BB_minus_BIN_native_wins": 0,
+      "BB_minus_BIN_event_Brier": -2.8135352172664607e-05,
+      "limit": "Difference of public same-panel totals; no paired disagreement/uncertainty recalculation from aggregate-only input."
+    },
+    {
+      "family": "P2",
+      "policy": "LAW",
+      "BB_minus_BIN_cumulative_wins": 0,
+      "BB_minus_BIN_early_wins": 0,
+      "BB_minus_BIN_native_wins": 0,
+      "BB_minus_BIN_event_Brier": -2.8135352172664607e-05,
+      "limit": "Difference of public same-panel totals; no paired disagreement/uncertainty recalculation from aggregate-only input."
+    },
+    {
+      "family": "C1",
+      "policy": "MEAN",
+      "BB_minus_BIN_cumulative_wins": 0,
+      "BB_minus_BIN_early_wins": 0,
+      "BB_minus_BIN_native_wins": 0,
+      "BB_minus_BIN_event_Brier": -2.019403239739148e-06,
+      "limit": "Difference of public same-panel totals; no paired disagreement/uncertainty recalculation from aggregate-only input."
+    },
+    {
+      "family": "C1",
+      "policy": "MEDIAN",
+      "BB_minus_BIN_cumulative_wins": 0,
+      "BB_minus_BIN_early_wins": 0,
+      "BB_minus_BIN_native_wins": 0,
+      "BB_minus_BIN_event_Brier": -2.019403239739148e-06,
+      "limit": "Difference of public same-panel totals; no paired disagreement/uncertainty recalculation from aggregate-only input."
+    },
+    {
+      "family": "C1",
+      "policy": "LAW",
+      "BB_minus_BIN_cumulative_wins": 0,
+      "BB_minus_BIN_early_wins": 0,
+      "BB_minus_BIN_native_wins": 0,
+      "BB_minus_BIN_event_Brier": -2.019403239739148e-06,
+      "limit": "Difference of public same-panel totals; no paired disagreement/uncertainty recalculation from aggregate-only input."
+    },
+    {
+      "family": "C2",
+      "policy": "MEAN",
+      "BB_minus_BIN_cumulative_wins": 0,
+      "BB_minus_BIN_early_wins": 0,
+      "BB_minus_BIN_native_wins": 0,
+      "BB_minus_BIN_event_Brier": -2.2260840568666396e-06,
+      "limit": "Difference of public same-panel totals; no paired disagreement/uncertainty recalculation from aggregate-only input."
+    },
+    {
+      "family": "C2",
+      "policy": "MEDIAN",
+      "BB_minus_BIN_cumulative_wins": -1,
+      "BB_minus_BIN_early_wins": -1,
+      "BB_minus_BIN_native_wins": 0,
+      "BB_minus_BIN_event_Brier": -2.2260840568666396e-06,
+      "limit": "Difference of public same-panel totals; no paired disagreement/uncertainty recalculation from aggregate-only input."
+    },
+    {
+      "family": "C2",
+      "policy": "LAW",
+      "BB_minus_BIN_cumulative_wins": -1,
+      "BB_minus_BIN_early_wins": -1,
+      "BB_minus_BIN_native_wins": 0,
+      "BB_minus_BIN_event_Brier": -2.2260840568666396e-06,
+      "limit": "Difference of public same-panel totals; no paired disagreement/uncertainty recalculation from aggregate-only input."
+    }
+  ],
+  "C0_alias_eligible_M2_cells": [
+    {
+      "procedure": "B_M2::M2_C2_BIN::LAW",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 4,
+          "losses": 2,
+          "decided": 6,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "wins": 38,
+          "losses": 40,
+          "decided": 78,
+          "rate": 0.48717948717948717
+        },
+        "COMBINED": {
+          "wins": 42,
+          "losses": 42,
+          "decided": 84,
+          "rate": 0.5
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 6,
+          "losses": 7,
+          "decided": 13,
+          "rate": 0.46153846153846156
+        },
+        "UNDER": {
+          "wins": 64,
+          "losses": 65,
+          "decided": 129,
+          "rate": 0.49612403100775193
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 10,
+          "losses": 9,
+          "decided": 19,
+          "rate": 0.5263157894736842
+        },
+        "UNDER": {
+          "wins": 102,
+          "losses": 105,
+          "decided": 207,
+          "rate": 0.4927536231884058
+        },
+        "COMBINED": {
+          "wins": 112,
+          "losses": 114,
+          "decided": 226,
+          "rate": 0.49557522123893805
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_C2_BIN::MEAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 10,
+          "losses": 5,
+          "decided": 15,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "wins": 35,
+          "losses": 34,
+          "decided": 69,
+          "rate": 0.5072463768115942
+        },
+        "COMBINED": {
+          "wins": 45,
+          "losses": 39,
+          "decided": 84,
+          "rate": 0.5357142857142857
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 9,
+          "losses": 12,
+          "decided": 21,
+          "rate": 0.42857142857142855
+        },
+        "UNDER": {
+          "wins": 59,
+          "losses": 62,
+          "decided": 121,
+          "rate": 0.48760330578512395
+        },
+        "COMBINED": {
+          "wins": 68,
+          "losses": 74,
+          "decided": 142,
+          "rate": 0.4788732394366197
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 19,
+          "losses": 17,
+          "decided": 36,
+          "rate": 0.5277777777777778
+        },
+        "UNDER": {
+          "wins": 94,
+          "losses": 96,
+          "decided": 190,
+          "rate": 0.49473684210526314
+        },
+        "COMBINED": {
+          "wins": 113,
+          "losses": 113,
+          "decided": 226,
+          "rate": 0.5
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    },
+    {
+      "procedure": "B_M2::M2_C2_BIN::MEDIAN",
+      "early": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "OVER": {
+          "wins": 4,
+          "losses": 2,
+          "decided": 6,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "wins": 38,
+          "losses": 40,
+          "decided": 78,
+          "rate": 0.48717948717948717
+        },
+        "COMBINED": {
+          "wins": 42,
+          "losses": 42,
+          "decided": 84,
+          "rate": 0.5
+        },
+        "eligible": 84,
+        "available": 84,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 48,
+        "player_games": 84
+      },
+      "native": {
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 6,
+          "losses": 7,
+          "decided": 13,
+          "rate": 0.46153846153846156
+        },
+        "UNDER": {
+          "wins": 64,
+          "losses": 65,
+          "decided": 129,
+          "rate": 0.49612403100775193
+        },
+        "COMBINED": {
+          "wins": 70,
+          "losses": 72,
+          "decided": 142,
+          "rate": 0.49295774647887325
+        },
+        "eligible": 142,
+        "available": 142,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 71,
+        "player_games": 142
+      },
+      "cumulative": {
+        "weeks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "OVER": {
+          "wins": 10,
+          "losses": 9,
+          "decided": 19,
+          "rate": 0.5263157894736842
+        },
+        "UNDER": {
+          "wins": 102,
+          "losses": 105,
+          "decided": 207,
+          "rate": 0.4927536231884058
+        },
+        "COMBINED": {
+          "wins": 112,
+          "losses": 114,
+          "decided": 226,
+          "rate": 0.49557522123893805
+        },
+        "eligible": 226,
+        "available": 226,
+        "unavailable": 0,
+        "unknown_selected": 0,
+        "abstentions": 0,
+        "games": 119,
+        "player_games": 226
+      }
+    }
+  ],
+  "C0_alias_decision": {
+    "state": "OUTPUT_PARITY_AUTHENTICATED;A_C_MASK_AND_DECISION_ALIAS_ADMISSION_REQUIRED",
+    "reference": "EARLY_JOIN_BINDINGS_CHECK_V1.json exact saved315 C0==M2_C2_BIN comparison",
+    "effect": "The source11 receipt now establishes public early M2_C2_BIN product grades and226-case totals at its stated tier. C0 does not need a duplicate grade calculation if A/C expressly admit exact row/mask/output/strict-rule/fallback/outcome identity. Reused alias grades are not new NFL decisions or a new fit.",
+    "new_SKILL_grades_claimed": false,
+    "C1_R0_R1_status": "Their new actual-line early grades remain separate owner-local join cells; no inheritance from C0/M2."
+  },
+  "stale_status_reconciliation": {
+    "supersedes_only": "EARLY_JOIN_BINDINGS_CHECK_V1.json source11 NOT_OBTAINED status at its earlier check; original receipt is preserved. Also supersedes older public-discovery-only statements that no newM2 early join receipt was obtained.",
+    "not_superseded": "All original FTN/M2 records, negative findings, early/private verification limitations and SKILL C1 fit-reproduction failure."
+  },
+  "conclusions": {
+    "coverage": "New exact-M2 public grade evidence represents allnine weeks with partial offered-player coverage;84+142=226 verified as aggregate arithmetic, not league-wide completeness or authentic pregame issuance.",
+    "M2_effect": "All BB mean rules tie their BIN means. P2/C1 median/law also tie cumulatively; C2BB median/law lose one decision versus C2BIN in earlyW1-4, while their nativeW5-9 totals remain unchanged. Tiny proper-score differences preserved.",
+    "strong_controls": "On the owner-reported complete226 panel, B2 law/lower-median122-104 and B0 mean119-107 exceed every new M2 complete direction rule; AlwaysOver115-111 also exceeds newM2 best mean113-113. These public totals do not independently authenticate common row membership or paired uncertainty.",
+    "sparse_contenders": "A/C point controls cover168/226 and captured-site controls142/226; do not rank these as unrestricted226-case winners or silently shrink the full board."
+  },
+  "verification_limits": [
+    "No protected offer/forecast/grade rows, original quote clocks or historical source-vintage availability were obtained.",
+    "CSV contains aggregate counts, not membership commitments or paired disagreements. Exact common masks, event/role/book/line/horizon matching and paired uncertainty remain owner-reported or require the exact additional permitted manifest.",
+    "No C admission, fresh inference, prospective capture, selector qualification, website deployment or private fit parity is established.",
+    "This is independent aggregate recomputation, not C regrading, refitting or a competing common evaluator."
+  ],
+  "resources": {
+    "network_reads_by_verifier": 0,
+    "new_fits": 0,
+    "new_scoring_runs": 0,
+    "new_original_forecasts": 0,
+    "new_NFL_observations": 0,
+    "protected_rows_obtained": 0,
+    "global_writes": 0
+  }
+}

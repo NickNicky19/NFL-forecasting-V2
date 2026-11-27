@@ -1,0 +1,45 @@
+{
+  "assignment_id": "AUDIT-REMEDIATION-20261105-v1",
+  "adopted_at_utc": "2026-11-06T00:09:15.276863+00:00",
+  "owner": "B",
+  "coordinator": "C",
+  "parent": "POST-WAVE-5W-v1 / EXECUTION-CLOSURE-02",
+  "inputs": [
+    {
+      "source_id": "USER-SUPPLIED-AUDIT-TXT",
+      "document_name": "NFL_Forecasting_Audit_2026-11-05.txt",
+      "bytes": 118849,
+      "sha256": "720b464f8077d3a483a4a73245690071866b7757fb6d20763c2ea8d931061795",
+      "retention": "EXACT_PRIVATE_LOCAL_COPY_AND_ORIGINAL_USER_ATTACHMENT;NOT_NEWLY_RESTORED_OFFHOST",
+      "public_raw_bytes": false
+    },
+    {
+      "source_id": "USER-SUPPLIED-AUDIT-PDF",
+      "document_name": "NFL_Forecasting_Forensic_Audit_2026-11-05.pdf",
+      "bytes": 234641,
+      "sha256": "a103a5b4f0a74e5a0e873de90662d06c12ffe42dfe7ce3b1706916b420707e5d",
+      "retention": "EXACT_PRIVATE_LOCAL_COPY_AND_ORIGINAL_USER_ATTACHMENT;NOT_NEWLY_RESTORED_OFFHOST",
+      "public_raw_bytes": false
+    }
+  ],
+  "PDF_pages": 39,
+  "primary_finding_index": "USER-SUPPLIED-AUDIT-TXT",
+  "raw_publication": "Notpermittedbyexistingprivatelocatorpolicy;rawaudithasprivateLibrarylinks. Publishsafecontributionandbytehashesonly.",
+  "audit_reproduction_ZIP": {
+    "available": false,
+    "searched_scope": "UserattachmentdirectoryandworkspaceZIPfilenames;onlypriorunrelatedKarchivesfound",
+    "scripts_from_unavailable_bundle_executed": false
+  },
+  "Astra_v10": {
+    "access": "NOT_PROVIDED_OR_OPENED_BY_B",
+    "actual_authorized_owner": "C_TO_IDENTIFY;NOT_INFERRED_FROM_NAME",
+    "not_B_method_or_new_study": true
+  },
+  "actual_B_HEAD": "af2a4a6e2719b2e369cee8e92ac11fafea953ba4",
+  "C_head": "2260e4f3dc845ea5b529b4647486ca541162e9f6",
+  "C_core_protocol_sha256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1",
+  "original_site_HEAD": "fe369c7462e4e4f290727b2d03b696d28ef5454b",
+  "ownership_unchanged": true,
+  "five_week_product_floor_unchanged": true,
+  "global_large_fit_recovery_gate_unchanged": true
+}

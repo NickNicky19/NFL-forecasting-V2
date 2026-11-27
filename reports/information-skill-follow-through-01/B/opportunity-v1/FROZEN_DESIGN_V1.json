@@ -1,0 +1,136 @@
+{
+  "id": "B-INFORMATION-SKILL-OPPORTUNITY-v1",
+  "UTC": "2026-11-15T20:58:44.717290+00:00",
+  "state": "FROZEN_BEFORE_FITS_OR_COMPARATIVE_SCORES",
+  "owner": "B",
+  "hypothesis": "Usage-only learned team-opportunity volume and QB credited-attempt fraction conditional on team volume improve workload forecasts beyond flat QB moments, holding SKILL_R0 conversion fixed. Better use of existing information, not new observed personnel.",
+  "closest_completed": "Existing R0–R3 used opportunity fields in standalone completion forest. P2/C1/C2/M2/SKILL fixed COMMON_EXPOSURE. QBdepthrank directCMP lost. This upstreamT→QB_ATT conditional law and its fixed-conversion propagation were not found in inspected B completedtests; inaccessiblepeerworknotclaimedexhaustive.",
+  "qualified_source": {
+    "opportunity": "reports/profile-increment-to-release-01/B/source-profiles/PASSING_OPPORTUNITY_GAME_INPUTS_V2.json.gz",
+    "sha256": "51c2cfceff6103a277c6de5897fc76c33733bb797f0891ccdb271b41840ab36a",
+    "context": "reports/information-first-20261112-01/B/completion-wave-v1/QB_CONTEXT_W1_W9_INPUTS_V1.json.gz",
+    "context_sha256": "45aaab99d41f2e2643066c001355b26430f55dca06e7c7e366eace252f2e021b",
+    "team_games": 2416,
+    "QB_games": 2901,
+    "coverage": "2022–2025 +2026W1–8. W9 inference uses earlierhistory only; W9canonicalqueries/officialATT/CMP labels exist separately. Missing targetW9 teamO label limits componentgrading, not queryadmission.",
+    "preflight": "All2901creditedQB_ATT<=documentedteamOpportunityProxy; everyqualifiedofficialATT matches classifiedQB count. 325creditedattemptsoutsideproviderDBpreserved; neverforceA<=DB.",
+    "clock": "Unchangedstrictavailable=kickoff+7days<origin/querycutoff current-vintage reconstruction; game-order afteradmission; not authenticpublication.",
+    "personnel": "No authenticfullpregameteammate/healthuniverse; no starterguarantee/route/activefromzero inference."
+  },
+  "plan": [
+    [
+      2026,
+      1
+    ],
+    [
+      2026,
+      2
+    ],
+    [
+      2026,
+      3
+    ],
+    [
+      2026,
+      4
+    ],
+    [
+      2026,
+      5
+    ],
+    [
+      2026,
+      6
+    ],
+    [
+      2026,
+      7
+    ],
+    [
+      2026,
+      8
+    ],
+    [
+      2026,
+      9
+    ]
+  ],
+  "fit_policy": "Weeklyfitbeforeearliestquerykickoff; previousseason+eligiblecurrent labels; earlierhistoricalfeaturesat eachowncutoff; own8/teamdef16, existingpriors100/4. Queryusesidentity/time/team/opponent only.",
+  "arms": {
+    "OPP_BASE": "ExactretainedCOMMON_EXPOSURE ATTlaw; CMPisthislaw thinnedbyfrozenSKILL_R0 integratedp. No refit.",
+    "OPP_MEAN": "Learned E[T*q(T)] mean with unchangedparentATTshape; fixedsameconversion. Mean-isolation diagnostic product, no Tjointclaim.",
+    "OPP_JOINT": "Samefittedexpectation with fullTNB→Binomial(T,q(T)) mixture and unchangedconversion; C<=A<=T byconstruction for eachqueriedQB.",
+    "DIRECT_ATT": "Existing32treeorderedLeafCDFfamily refit under this fixedQBonly/HRECENT/reconstructed contract as strong compatible family control; not aliasof olderknown-clockC02. ATTlaw plus fixedconversionthinning. No settingssearch."
+  },
+  "team_model": {
+    "label": "Documentedoffensiveopportunityproxy T includes qualifyingrush/pass/dropback plays, notallNFLplays; non-QB/missingassignment/otherplaysremainotherbucket",
+    "features": [
+      "intercept",
+      "log(shrunkoffenseOmean/pooledteamOmean)",
+      "log(shrunkdefenseOallowedmean/pooledteamOmean)"
+    ],
+    "mean": "pooledteamOmean*exp(Xbeta)",
+    "shape": "0.5+199.5*expit(eta), inheritedcountshape support; joint NB likelihood on earlierTlabels, ridge beta intercept1/slopes10 andeta1 towardshape20",
+    "optimizer": "L-BFGS-B300ftol1e-10gtol1e-6 onefixedsetting"
+  },
+  "QB_fraction": {
+    "label": "HistoricalcreditedA_QB conditionalactualhistoricalT; zero-count QBcaseskept",
+    "offset": "logit((ownlast8creditedA+100*earlierpooledQBfraction)/(sumteamOinownQB games+100))",
+    "features": [
+      "intercept",
+      "logit(shrunkoffenseATTperO)-logit(pooledteamATTperO)",
+      "log(T/earlieroffenseOreference)",
+      "logit(latesteligibleQBATT/teamATTshare)-logit(shrunkown8QBteamATTshare)"
+    ],
+    "objective": "Conditionalbinomial likelihood n=T,y=A_QB, ridgeintercept1/slopes10; L-BFGS-B300ftol1e-10gtol1e-6",
+    "generated_input": "T is legitimateconditionaltrainingexposure; futureTintegrated overpredictedlaw. Referencevolume is rawearliermoments, not insampleupstream predictions.",
+    "fallback": "Ifnoownhistory/incompatible earlier support orfailedfit/integration, use fullunchangedparentlaw and tagreason; notunavailable-as-abstention."
+  },
+  "integration": {
+    "countlaw": "ExactsumoverT with fixed probabilitytail<=1e-12 andmean-tail<=1e-9; maxgrid5000resourceguard, no outcome-dependenttestmaxclip/no renormalization. Preservebound residual.",
+    "dependence": "q(T)depends onT; useE[Tq(T)],notproductofmeans.",
+    "conversion": "FrozenSKILL_R0 integratedconversionprobabilityperquery; no C1augmentedfitdependency orreproductionretry. BinomialthinninggivenA.",
+    "scope": "SingleQBconditionalmarginal with explicitallotheropportunitiesbucket, not full-roster coherentallocation or injury model. EmpiricalLeafpriorgeometricthinning exact."
+  },
+  "controls": {
+    "full_native": [
+      "SavedadjustedATTpoint81–60/141+1abstention, notprobability",
+      "rawpoint/earlierprevalence/bothconstants",
+      "strongB0/B2completeCMPcontrols",
+      "newcompatibleDIRECT_ATTrefit, identitiesexplicit"
+    ],
+    "inaccessible_stronger_retained_laws": "Strict-currentC02/orderedLeaf tied50–30/80W5–7,84eligible4unavailable. Differentknown-target-timehorizon; rawlawchunksnotauthenticatedlocally. Retainaspartial/inaccessible, notlosers orborrowedfull142 scores."
+  },
+  "evaluation": {
+    "primary": "NativeactualATT142andCMP142 W5–9 same142playergames/71games;141DK+1Sleeper thresholds,quoteclocks/main-altunknown, exposeddevelopmentdiagnostic. No284independentgamesclaim.",
+    "numerical": "W1–9 QB315, teamOcomponentlabels W1–8onlywherequalified",
+    "outputs": [
+      "ownMEAN/MEDIAN/LAW Over/Under/Combined",
+      "MAE/MSE/bias/tails andproperBrier/LL/reliability",
+      "existing19frozencapacity/Top6/10/20/rawcalP75/P80/P90 policies; own-listandcandidate-selectedcontrols",
+      "pairedweekrule>=8clusters elseinsufficient, gamesensitivity",
+      "fullsystemavailability/unknown/parentfallback"
+    ],
+    "early_W1_4": "AprivateoffersnotheldbyB; generateoutputsnotgrades; frozenSKILL joinremainsexactdistinctexistingAjob."
+  },
+  "budget": {
+    "authority": "Separatelyregisteredoneopportunitytestunderexistingper-wave1800CPU/1200fitwall/32MiB publicceilings, not A C-only+360 orM1",
+    "optimizer_calls_max": 36,
+    "main_calls": 27,
+    "independent_calls_max": 3,
+    "NFL_fit_calls_before_prefit_retention": 0,
+    "CPU_total": 900,
+    "completion_retention_CPU_reserve": 180,
+    "fit_wall_seconds": 600,
+    "RSS_bytes": 1073741824,
+    "threads": 2,
+    "public_bytes": 25165824,
+    "protected_new_exports": 0,
+    "new_source_acquisition": 0,
+    "prefit_GETs": 1,
+    "final_publication_GETs": 6,
+    "task_wall_seconds": 2400
+  },
+  "verification": "No newC1reproduction. PredeclareindependentnewsmallGLM coeffatol1e-5/probatol1e-7/objectivetol1e-6+1e-10relative; persistfullindependentcoefficientsBEFOREcomparison; no retry/relaxafterfailure. FullNFLfuturemutation/denominator/source/typedlaw/push/coherence/sameconversion checks.",
+  "decision": "Keep/close/shadowbasedactualdirection/coverage/properresults,strongcontrols andlimits; notautomaticreplacementorpercentagepromise. All12othercontractsremaininexistingqueue."
+}

@@ -1,0 +1,89 @@
+{
+  "state": "SOURCE_BOUND_FALLBACK_SCOPE_METADATA_QUALIFICATION_NO_NUMERIC_CHANGE",
+  "source_artifact": "reports/abc-championship/weekly-point-partition-20261104-v1/FULL_SYSTEM_FOCAL_SCORES.json",
+  "source_sha256": "c4c9ce5f3778df3ab353ac712779f6caa6b11aab706ff9d53bc161b2ecd05158",
+  "rows": [
+    {
+      "source_row_index": 3,
+      "record_id": "B-WEEK-FULL-NATIVE-c00444f38d1e97b657142ffd",
+      "target": "pass_yd",
+      "week": 5,
+      "eligible": 28,
+      "issued": 28,
+      "issued_fallback_rows": 0,
+      "issued_fallback_unknown": 0,
+      "unissued_with_unknown_fallback_state": 0,
+      "query_level_fallback_unknown": 0,
+      "qualification": "The published native fallback_unknown field counts available-issued forecast states only. Unavailable queries are not learned outputs or zero fallback states; their fallback state remains unknown, counted here and in technical unavailability."
+    },
+    {
+      "source_row_index": 7,
+      "record_id": "B-WEEK-FULL-NATIVE-d6ec7c208f3e70b373e0bab2",
+      "target": "pass_yd",
+      "week": 6,
+      "eligible": 28,
+      "issued": 27,
+      "issued_fallback_rows": 0,
+      "issued_fallback_unknown": 0,
+      "unissued_with_unknown_fallback_state": 1,
+      "query_level_fallback_unknown": 1,
+      "qualification": "The published native fallback_unknown field counts available-issued forecast states only. Unavailable queries are not learned outputs or zero fallback states; their fallback state remains unknown, counted here and in technical unavailability."
+    },
+    {
+      "source_row_index": 11,
+      "record_id": "B-WEEK-FULL-NATIVE-878e848640ee978b318c5482",
+      "target": "pass_yd",
+      "week": 7,
+      "eligible": 28,
+      "issued": 25,
+      "issued_fallback_rows": 0,
+      "issued_fallback_unknown": 0,
+      "unissued_with_unknown_fallback_state": 3,
+      "query_level_fallback_unknown": 3,
+      "qualification": "The published native fallback_unknown field counts available-issued forecast states only. Unavailable queries are not learned outputs or zero fallback states; their fallback state remains unknown, counted here and in technical unavailability."
+    },
+    {
+      "source_row_index": 15,
+      "record_id": "B-WEEK-FULL-NATIVE-362bef88fabd48f2c50b1aa3",
+      "target": "pass_cmp",
+      "week": 5,
+      "eligible": 28,
+      "issued": 28,
+      "issued_fallback_rows": 0,
+      "issued_fallback_unknown": 0,
+      "unissued_with_unknown_fallback_state": 0,
+      "query_level_fallback_unknown": 0,
+      "qualification": "The published native fallback_unknown field counts available-issued forecast states only. Unavailable queries are not learned outputs or zero fallback states; their fallback state remains unknown, counted here and in technical unavailability."
+    },
+    {
+      "source_row_index": 19,
+      "record_id": "B-WEEK-FULL-NATIVE-4d7b8ec4f8e48a834478cc2d",
+      "target": "pass_cmp",
+      "week": 6,
+      "eligible": 28,
+      "issued": 26,
+      "issued_fallback_rows": 0,
+      "issued_fallback_unknown": 0,
+      "unissued_with_unknown_fallback_state": 2,
+      "query_level_fallback_unknown": 2,
+      "qualification": "The published native fallback_unknown field counts available-issued forecast states only. Unavailable queries are not learned outputs or zero fallback states; their fallback state remains unknown, counted here and in technical unavailability."
+    },
+    {
+      "source_row_index": 23,
+      "record_id": "B-WEEK-FULL-NATIVE-feb4b1d70809cd561de310e0",
+      "target": "pass_cmp",
+      "week": 7,
+      "eligible": 28,
+      "issued": 22,
+      "issued_fallback_rows": 0,
+      "issued_fallback_unknown": 0,
+      "unissued_with_unknown_fallback_state": 6,
+      "query_level_fallback_unknown": 6,
+      "qualification": "The published native fallback_unknown field counts available-issued forecast states only. Unavailable queries are not learned outputs or zero fallback states; their fallback state remains unknown, counted here and in technical unavailability."
+    }
+  ],
+  "predictions_changed": false,
+  "selection_or_numerical_scores_changed": false,
+  "unavailable_queries_are_learned": false,
+  "default_interpretation": "Read issued-fallback scope alongside unissued unknown state; no full-system learned-only coverage claim."
+}

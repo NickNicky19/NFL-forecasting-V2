@@ -1,0 +1,20 @@
+{
+  "state": "UNSCORED_PILOT_CONDITIONAL_FITS_NOT_CONVERGED",
+  "at_utc": "2026-11-10T04:55:15.092296+00:00",
+  "origin": [
+    2025,
+    1
+  ],
+  "finding": "Both conditional C1/C2 reached the registered120iteration limit; finite coefficients do not demonstrate convergence. No NFL evaluation metric was inspected for this decision.",
+  "affected": [
+    "2025-W01-C1",
+    "2025-W01-C2"
+  ],
+  "unaffected": [
+    "2025-W01-D1",
+    "2025-W01-D2"
+  ],
+  "disposition": "C1/C2v1 excluded from eligible comparisons. Retain complete pilot; reuse valid direct typedmodels. Apply fixed optimizer-only600iteration allowance in additivev2 before all later scoring, no feature/window/calibration change.",
+  "resource_amendment": "Newv2 budget102fits plus4priorpilotfits=106totalmaximum;2validpilotdirectfits reused, not repeated. Existing finite1200wall/1800CPU/2GiB/2threads and32MiBretention retained.",
+  "NFL_before_after_effect": "UNMEASURED_NO_V1_NFL_SCORE_CREATED; not a demonstrated forecast gain or prior grade correction."
+}

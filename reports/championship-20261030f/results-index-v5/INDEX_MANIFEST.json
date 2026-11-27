@@ -1,0 +1,1329 @@
+{
+  "schema_version": "v2-sharded-results-index-v2",
+  "record_unit": "evaluation/output view; not an independent learner, fit, game or player",
+  "baseline_checkpoint": {
+    "artifact": "reports/continuation-20261029/TEST_RESULTS_INDEX.json",
+    "sha256": "b6b91519db20b23256f0a0b85f4e608ccddc80d1de5058fabf7d5b74bd0b1d72",
+    "records": 16060,
+    "unchanged": true
+  },
+  "previous_sharded_checkpoint": {
+    "artifact": "reports/prop-grading-20261030e/compact-results-index/INDEX_MANIFEST.json",
+    "sha256": "f59d601afd84fe767060618933cfd60391893de92606a51a3f772d306f636ec7",
+    "records": 152751,
+    "unchanged": true
+  },
+  "definitions": {
+    "mae": "mean(abs(prediction - actual)); native target units; lower is better",
+    "mse": "mean((prediction - actual)^2); squared target units; lower is better",
+    "rmse": "sqrt(MSE); native target units; lower is better",
+    "bias": "mean(prediction - actual); signed native target units",
+    "p90_abs": "90th percentile absolute error; source interpolation retained",
+    "p95_abs": "95th percentile absolute error; source interpolation retained",
+    "max_abs": "maximum absolute error; native target units",
+    "brier": "mean((event_probability - binary_actual)^2); lower is better, compare prevalence baseline",
+    "log_loss": "mean(-log(probability assigned to observed binary event)); no percent accuracy conversion",
+    "nll": "source-reported negative log score; inspect source support/normalization before comparison",
+    "crps": "source-reported proper distribution score; inspect support and score definition",
+    "selection_loss_rate": "losses/(wins+losses) for the declared selected-side threshold panel; decided statistical crossing error, not MAE or profit"
+  },
+  "precision_definition": "exact/tolerance fractions only when explicitly supplied; numerator reconstructed from rate*n is labeled; probability residual precision is not binary accuracy",
+  "forbidden_accuracy_conversion": "Native errors, software pass counts, and interval coverage are never converted to percent prediction accuracy.",
+  "comparison_reporting": {
+    "delta": "candidate error minus comparator error; negative favors candidate",
+    "relative": "delta / comparator error; null when comparator is zero or matching is unestablished",
+    "matching": "explicit retained-row binding required; equal sample counts alone are insufficient",
+    "unreported": "UNESTABLISHED with reason; no generic percentage accuracy from error",
+    "projection": "CSV annotations do not alter source scores, predictions or earlier index bytes"
+  },
+  "input_manifests": [
+    {
+      "source_artifact": "reports/inventory/ALL_METHOD_SCORES.json",
+      "sha256": "965d5517be8699be4c37e9432b67f604b7fa0b787a113d7c674bcaf9c7f1a03a",
+      "kind": "forecast_evaluation_view",
+      "rows": 4832
+    },
+    {
+      "source_artifact": "reports/replay/REPLAY_SCORES.json",
+      "sha256": "8a2cf6c6d1068b0c27d15d70d275673b32e34b66a63b412bbf2c58dc5642c2ed",
+      "kind": "forecast_evaluation_view",
+      "rows": 66
+    },
+    {
+      "source_artifact": "reports/week7-label-extension-v1/SCORES.json",
+      "sha256": "0d6789fd093457d202837fafc2f9c67493b86f4d9ae738a6dc6bb7f53a70d242",
+      "kind": "forecast_evaluation_view",
+      "rows": 66
+    },
+    {
+      "source_artifact": "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+      "sha256": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+      "kind": "NEW_EXPERIMENT_CURRENT_VINTAGE_PARTICIPANT_DIAGNOSTIC",
+      "rows": 10154,
+      "game_census_artifact": "reports/verification/DIAGNOSTIC_VIEW_GAME_COUNTS.json",
+      "game_census_sha256": "49270926656253826fa6f7365d0dc78ef981aa96faf1ad788a1bbcdafe49ebde",
+      "prediction_sha256": "52d0c4476ac8a3d45b6128fd092b94c73bf6f9a5c9408f2878df8e33e03a513f"
+    },
+    {
+      "source_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "kind": "NEW_EXPERIMENT_CURRENT_VINTAGE_PARTICIPANT_DIAGNOSTIC",
+      "rows": 930,
+      "game_census_artifact": "reports/verification/HGB_VIEW_GAME_COUNTS.json",
+      "game_census_sha256": "3e4bf211c12453324ebb3205fb8c1f462eeb8bb85fcad159d1fedec571cdce97"
+    },
+    {
+      "source_artifact": "reports/verification/PRIMARY_COMPARISON.json",
+      "sha256": "b2d3942579d6d829afdec7e70252e5fe1cf70502042c30a1d95d93abb46bde0b",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/verification/HISTORY_ENGINE_CHECKS.json",
+      "sha256": "2a35ebd4bcb41cb64016756baeaf01514e97513aec7644f3c28562100d2e6fc0",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/continuation-20261029/RESULT_INDEX_SOFTWARE_TESTS.json",
+      "sha256": "89f4ac65cdaf5f2bfc8232f9114a45aaa5d00407be459d55cf9bff48617bc3a4",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/continuation-20261029/RESULT_INDEX_DIAGNOSTIC_SOFTWARE_TESTS.json",
+      "sha256": "6b67b0c5c0040d560ec7dc495f6ed82f77b972dc20324e88eb23b1c864bf2895",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/continuation-20261029/CONTINUATION_SOFTWARE_TESTS.json",
+      "sha256": "dbec7a18df08b1a4769dc2ae1696d7b370ca06851fb1d43a1350eb80971ee5b4",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/continuation-20261029/CORE_PUBLICATION_SOFTWARE_TESTS.json",
+      "sha256": "beb24b2b528b00be6b914cb667684cf6f4ef46f3d90e05cca48a7e99525008b6",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/verification/FUTURE_GRADER_REVIEW_INITIAL.json",
+      "sha256": "7f8cf83dec62317b7dfef70c67e63d7315cfe30268afa5cef0618dbcefb46c52",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/verification/FUTURE_GRADER_REVIEW.json",
+      "sha256": "26caf59b9ba98d61d7328c3e772189e87285b2845738a75dcfb120c80db9237c",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/verification/HGB_SHADOW_GRADER_SOFTWARE_TESTS.json",
+      "sha256": "7fa4f5b4858fb5f1d7ccdba345e8b849bd2b7bb6505b1a846b7f163a9b771553",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/verification/HGB_FUTURE_GRADER_REVIEW_INITIAL.json",
+      "sha256": "0cf5b2471caa45ff6fac44f8c676ff1b8c49fa9ce4e91f03140982d88d23c51a",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/verification/HGB_FUTURE_GRADER_REVIEW.json",
+      "sha256": "bef9ca64bbd8796682dd589b3a7950a0ffd38eac9e3d6dc5ef8babbac440645a",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/continuation-20261029/FINAL_PUBLICATION_SOFTWARE_TESTS.json",
+      "sha256": "6bbe43690350bcf7ba31c13ea3682b6968676263bf98d2309cdc21a586b83bcd",
+      "kind": "software_verification",
+      "rows": 1
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORE_DATE_PROJECTION.json",
+      "sha256": "2dab8351ed0730d149e5b44210ec3cf94a596ad3939645ec2f98954d0a9a2445",
+      "rows": 2736,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "rows": 2736,
+      "kind": "new_ordered_CDF_and_GLM_law_reconstructions"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/count-ablation-wave-v1/SCORE_DATE_PROJECTION.json",
+      "sha256": "fbc4cb96a29661d03b6ddd7a821412269313f6fa9913f72b4ba89da660e590b1",
+      "rows": 424,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/count-ablation-wave-v1/SCORES.json",
+      "sha256": "087b8cb7a8fc40b6ad48bffdb6825c5f9829a72742bf2157f50ef529b0692715",
+      "rows": 424,
+      "kind": "new_HGB_role_and_Poisson_point_ablations"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/pregame-cohort-scorecards-v2/SCORES.json",
+      "sha256": "476f578837e5f177320aaee95e7d4ae3d7a5614480fccac2aef32170ebc5eca5",
+      "rows": 23462,
+      "kind": "new_frozen_prior_workload_cohort_saved_row_evaluations"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-wave-v1/SCORE_DATE_PROJECTION.json",
+      "sha256": "659007fd92f18f60a23a054031435ba1978db989e48351cd4d0e343289d77da8",
+      "rows": 208,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-wave-v1/SCORES.json",
+      "sha256": "b140ffce88fc208deffc009936337de882ab303bebc3a3815c826795e3ae3449",
+      "rows": 208,
+      "kind": "qualified_partial_chart_direct"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-wave-v1/EMPIRICAL_SCORE_DATE_PROJECTION.json",
+      "sha256": "00640c3e176781c97ce366b532d6d1da8a5c02ac9d22947dd67b111db88c6f14",
+      "rows": 630,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-wave-v1/EMPIRICAL_SCORES.json",
+      "sha256": "558b853176c2ab2b196f5a142a3afdfa226def11d2613384a673f0d72bce9be6",
+      "rows": 630,
+      "kind": "qualified_partial_chart_empirical_rolling"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-cohort-scorecards-v1/SCORE_DATE_PROJECTION.json",
+      "sha256": "40cd0fa6077ef2172eb1be1c5f81982b3ebc9982b8f0ce42c779a4cbee71f8a2",
+      "rows": 1176,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-cohort-scorecards-v1/SCORES.json",
+      "sha256": "428174b83f49ba571c39a76f9b3ac7bda771780ad4830d25c382ad49f62fc1c1",
+      "rows": 1176,
+      "kind": "prior_signed_chart_score_cohorts_not_workload"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-grid-precision-correction-v1/SCORE_DATE_PROJECTION.json",
+      "sha256": "ff70fa4a527581d6f14d74eb9e5839b823231f25dfb5767503eb4b6fad105506",
+      "rows": 1007,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/chart-grid-precision-correction-v1/SCORES.json",
+      "sha256": "e5e3138d7e7d97d534eeed202db6a01d92707b0ac4743fded686e3b836eca1bd",
+      "rows": 1007,
+      "kind": "precision_only_rescoring_not_new_forecasts_or_outcomes"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/CHECKPOINT_SOFTWARE_TESTS.json",
+      "sha256": "9d31f8a05e2db4cbb46fb514cefd3ec5ff3e4bd7d8885d28f186f2464e8bfeb7",
+      "rows": 1,
+      "kind": "software_attempt_receipt_no_NFL_accuracy"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/COHORT_SOFTWARE_TEST_ATTEMPT_INITIAL.json",
+      "sha256": "addd51dc45d360d1657909a21af81158ed2c7db920aece5751b501be90887d01",
+      "rows": 1,
+      "kind": "software_attempt_receipt_no_NFL_accuracy"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030/INDEX_SOFTWARE_ATTEMPT_INITIAL.json",
+      "sha256": "65bdc960e74f3c3f8e4cabe5972dea5f05f0cee8d4e7f31a72489d5340507aa5",
+      "rows": 1,
+      "kind": "software_attempt_receipt_no_NFL_accuracy"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/carry-strong-control-comparison-v1/COMPARISON_ANNOTATIONS.json",
+      "sha256": "35c8e27367bd44fc33d1502f1653377cd5fa5f61aa5001245ebb4571d4b72e4f",
+      "rows": 40,
+      "kind": "source_bound_matched_comparison_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/carry-strong-control-comparison-v1/SCORE_DATE_PROJECTION.json",
+      "sha256": "187af39538bd4dae1056f884bf760e13c23972064a947dbe268de7ee4e67dece",
+      "rows": 40,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/carry-strong-control-comparison-v1/SCORES.json",
+      "sha256": "0a0e60c53a3beb5336d379121fd9ef174657ff438c31ed4939466429494f6372",
+      "rows": 40,
+      "kind": "same_rows_strong_control_carry_saved_forecast_replay_no_new_fits"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/website-reference-replay-v1/SCORES.json",
+      "sha256": "cae60c9b4d321eb7f03e7a8c4896823e24d669c8a7f08e647cd986aa5eb1a062",
+      "rows": 40,
+      "kind": "retained_recorded_R0_provider_W7_point_reference_unmatched_information_cutoffs"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/WEBSITE_REFERENCE_ACQUISITION_RESOURCE_FINDING.json",
+      "sha256": "c72d5855e59c39896221651d4b681120b3e5d6dcf6b520a578088d48817d38a5",
+      "rows": 1,
+      "kind": "failed_acquisition_resource_guard_attempt_no_NFL_fit_or_score"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/ordered-information-ablation-v1/SCORE_DATE_PROJECTION.json",
+      "sha256": "033fe9690998776bd5b4643868e83100815ef8a9062c8e9ccaa090b78e2013b4",
+      "rows": 1608,
+      "kind": "source_bound_date_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/ordered-information-ablation-v1/SCORES.json",
+      "sha256": "00ef54be6faf0a3a3af9d2af3aa9d0413560d475c9ee8a8832aa72aae4e867f7",
+      "rows": 1608,
+      "kind": "registered_explicit_lag_block_removal_matched_ordered_CDF_336origin_cells"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/CHECKPOINT_SOFTWARE_TESTS.json",
+      "sha256": "c00b282ee69efede888cf1b5e2af094fd1af7e31cd8d05103008c4696a078eaf",
+      "rows": 1,
+      "kind": "software_fixture_functions_no_NFL_accuracy"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/INDEX_POINTER_CHECK_INITIAL.json",
+      "sha256": "e5a19bf069b0933cfd205162232e44c7c62efaadab44ebadc20563ff0c0114e7",
+      "rows": 1,
+      "kind": "initial_stale_pointer_coverage_check_no_NFL_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030b/CHECKPOINT_SOFTWARE_TESTS_V2.json",
+      "sha256": "bc64b28606b2c57db795b3c1c8f33ef4012d0401c7872b90e211a0a3c38340cb",
+      "rows": 1,
+      "kind": "software_date_annotation_guard_finalfixture_suite_no_NFL_accuracy"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/shared-subgroups-2026-v1/SCORE_DATE_PROJECTION.json",
+      "sha256": "0b5c8bd8ce92e1a75e20f160a838620898a62a40588c24e7dadaadd2dffe4981",
+      "rows": 7458,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/shared-subgroups-2026-v1/SCORES.json",
+      "sha256": "5377b47ddf9c420540a29def18277d018462802593c88b754579b210e00cdbc7",
+      "rows": 7458,
+      "kind": "retained_C02_new_shared_subgroups_no_fits"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2025-continuity-repair-v1/SUPERSESSION_MAPPING.json",
+      "sha256": "210f810585d076da898e11e7dc009b887679b0ec3127e7c4e0421373f67d326a",
+      "rows": 176,
+      "kind": "prediction_recipe_supersession_not_scoring_fix"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2025-v1/BASELINE_COMPARISON_ANNOTATIONS_V2.json",
+      "sha256": "e64edefa9229578ca10dc1ec63df058a2785c413d9a3c7486601a717a443617d",
+      "rows": 14770,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2025-v1/SCORES.json",
+      "sha256": "8a20b4c8bd1d9dfa2ac0706676dec1554346a146f8a330399a29d657009f1eba",
+      "rows": 14770,
+      "kind": "older_season_2025_rolling_v1_retained_continuity_defect_version"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/qualified-defense-information-v1/SCORE_DATE_PROJECTION.json",
+      "sha256": "4b4567bfb1f848f544fd529223d87e8bdf924ef1a6aba78ab0a4638a17b93c98",
+      "rows": 3216,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/qualified-defense-information-v1/SCORES.json",
+      "sha256": "2cea571fd1ed8e3dbbd4f0c2144083a4517db65126f981d2e9e7b6174aad94d9",
+      "rows": 3216,
+      "kind": "new_registered_research_or_saved_row_score_version"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2023-v2/SCORES.json",
+      "sha256": "a892d1b7133871c248e0a4a9c7bf0e43daca79f0e489c16322d6c30ed6854d29",
+      "rows": 13618,
+      "kind": "interrupted_original_version_learnedW1_W16_empiricalW1_W18_exact_per_record_dates_retained_not_final_matching"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2024-v2/BASELINE_COMPARISON_ANNOTATIONS_V2.json",
+      "sha256": "7272e1a6ff25642ba50e01ef68b65f0fc102d27131fd5078dddfba336f7f4f88",
+      "rows": 14770,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2024-v2/SCORES.json",
+      "sha256": "705fa19bb88b1e01f786626219ed0a8609c7a684d3e1a077a617a9bdd4a72660",
+      "rows": 14770,
+      "kind": "new_registered_research_or_saved_row_score_version"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2025-continuity-repair-v1/BASELINE_COMPARISON_ANNOTATIONS_V2.json",
+      "sha256": "ed845d06157879d32869f07d204757224071303851bd88df2b317f37ff4888ee",
+      "rows": 176,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2025-continuity-repair-v1/SCORES.json",
+      "sha256": "d6b7f8d64e045e82c12018b973d587f0beaed79a4f7ca2c09e29ce3575db6fb5",
+      "rows": 176,
+      "kind": "new_registered_research_or_saved_row_score_version"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/server-retained-R0-v1/SCORES.json",
+      "sha256": "47ceaa68240286943c9bd6895e780e470820c5d54f6c0f8b5ab1925e45980498",
+      "rows": 40,
+      "kind": "new_registered_research_or_saved_row_score_version"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2022-v2/BASELINE_COMPARISON_ANNOTATIONS_V2.json",
+      "sha256": "d497ece0dd5939f23707eb7de0ee13ddfd1ac28977c7675c287cc00db4cf8a4d",
+      "rows": 14770,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2022-v2/SCORES.json",
+      "sha256": "be31ef7a5e0963c896f05095dbbc792259a698d2ac8633ea0006a454db96465f",
+      "rows": 14770,
+      "kind": "new_registered_research_or_saved_row_score_version"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2023-complete-replay-v1/BASELINE_COMPARISON_ANNOTATIONS_V2.json",
+      "sha256": "d7a1df3e667297388e0f79094ecd733635ec115e18a606ba14f2a48684f65dc0",
+      "rows": 14770,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2023-complete-replay-v1/SCORES.json",
+      "sha256": "53cbb1f715e4ad60c6c3e3cad713eefdbeb56bef830478d93a18de4869004575",
+      "rows": 14770,
+      "kind": "new_registered_research_or_saved_row_score_version"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2023-w17-w18-continuation-v1/SCORES.json",
+      "sha256": "66a70bd73497c6b21584ae5a9cd7842c4d7f3a88f7ed681497e796636afe0cd6",
+      "rows": 3922,
+      "kind": "new_registered_research_or_saved_row_score_version"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2025-subgroups-v2/SCORE_DATE_PROJECTION.json",
+      "sha256": "1659ef0028fb12c257ad18b6ddb2150d0d11d7e138f64b4a8c31f580b240e331",
+      "rows": 8027,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2025-subgroups-v2/SCORES.json",
+      "sha256": "cf73b6bee45d1ea424eb04431726260086994182684d0fb0d12a9e558d42c6a9",
+      "rows": 8027,
+      "kind": "new_registered_research_or_saved_row_score_version"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/CHECKPOINT_SOFTWARE_TESTS_ATTEMPT_01.json",
+      "sha256": "85a538bf2c377aadf5f899c029f2262369084c7715169451035849ebf1327644",
+      "rows": 1,
+      "kind": "software_verification"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/BASELINE_ANNOTATION_ATTEMPT_01.json",
+      "sha256": "f5461f9f7f488e192ea2aee3eaa07e98a8984e3aff2788cb764f3eb67222633a",
+      "rows": 1,
+      "kind": "software_verification"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2025-subgroups-compact-v3/SCORE_DATE_PROJECTION.json",
+      "sha256": "b3ecd4693ba7aa8cce67f0437a93d857652df5936195cb115789010e1bd59eb7",
+      "rows": 797,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/season-2025-subgroups-compact-v3/SCORES.json",
+      "sha256": "ccefce91c2373713378e249674d7333a85db982d238e683c9fdb89571f36e233",
+      "rows": 797,
+      "kind": "new_fixed_recipe_compact_subgroup_evaluation_no_fits"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/defense-subgroups-compact-v3/SCORE_DATE_PROJECTION.json",
+      "sha256": "513f911d8857f8f52a23cfa03d4fb2c5fe58fbb7b13e1284dcb4ceef8c006db3",
+      "rows": 1484,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/defense-subgroups-compact-v3/SCORES.json",
+      "sha256": "cea288aafe6a4523473c6f878854dd6aaf3724e56d06c58849b30b0b13c74d9e",
+      "rows": 1484,
+      "kind": "new_fixed_recipe_compact_subgroup_evaluation_no_fits"
+    },
+    {
+      "source_artifact": "reports/continuation-20261030c/CHECKPOINT_SOFTWARE_TESTS_FINAL.json",
+      "sha256": "28354a3689ca76eca25b3030e929ba986824d2ac3d231582ceb83a6e6ac7440d",
+      "rows": 1,
+      "kind": "software_verification"
+    },
+    {
+      "source_artifact": "reports/prop-grading-20261030e/first-scorecard-v1/INDEX_SELECTION_CONTRACT.json",
+      "sha256": "1d6fa9c6ae464c27d415f2e494f393d50b0ae0df9e1a1642f2b121ddde100d47",
+      "rows": 92,
+      "kind": "source_bound_selection_contract_annotation"
+    },
+    {
+      "source_artifact": "reports/prop-grading-20261030e/first-scorecard-v1/METADATA_SUPPLEMENT.json",
+      "sha256": "a9f696ecc0e0496f15bfcf462c036ec47e112dd4b77b764a1f2fece12d9b463f",
+      "rows": 92,
+      "kind": "source_bound_selection_view_metadata"
+    },
+    {
+      "source_artifact": "reports/prop-grading-20261030e/first-scorecard-v1/PAIRED_COMPARISON_ANNOTATIONS.json",
+      "sha256": "1d33da5bc3acbade94f744f90164651cc384950f20a00c5241aa6583037c52b8",
+      "rows": 92,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/prop-grading-20261030e/first-scorecard-v1/SCORES.json",
+      "sha256": "b75b09b691d5b2766dda66f5069469f4441dd0e87831377f4710c225fbfbf7f2",
+      "rows": 92,
+      "kind": "prop_selection_evaluation"
+    },
+    {
+      "source_artifact": "reports/prop-grading-20261030e/actual-side-projection-v2/INDEX_SELECTION_CONTRACT.json",
+      "sha256": "da84dbff167d87d97e0313f115cdc07b4f111430933b4dd15d5f9388ba0dfa48",
+      "rows": 7440,
+      "kind": "source_bound_selection_contract_annotation"
+    },
+    {
+      "source_artifact": "reports/prop-grading-20261030e/actual-side-projection-v2/METADATA_SUPPLEMENT.json",
+      "sha256": "52c7a06a426110cfde848846385ebceb06f9b32f2d616b404008275965760045",
+      "rows": 7440,
+      "kind": "source_bound_selection_view_metadata"
+    },
+    {
+      "source_artifact": "reports/prop-grading-20261030e/actual-side-projection-v2/SCORES.json",
+      "sha256": "cccb984588eb0027c7dcd483001fe60116f740d6b7d9bfba5b49d92bb6a21e08",
+      "rows": 7440,
+      "kind": "prop_selection_evaluation"
+    },
+    {
+      "source_artifact": "reports/championship-20261030f/numerical-v2/2026/COMPARISON_ANNOTATIONS.json",
+      "sha256": "e3079a948e10bdc359aaa1be40d596fc5808c343dec433c73c08e7e0e274aaad",
+      "rows": 216,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/championship-20261030f/numerical-v2/2026/SCORES.json",
+      "sha256": "56615bb976fd776fc66b3a51142a8f289a0060ed0ca2b847e64548e7b708c43d",
+      "rows": 216,
+      "kind": "independently_recomputed_saved_row_paired_numeric_views"
+    },
+    {
+      "source_artifact": "reports/championship-20261030f/numerical-v2/2025/COMPARISON_ANNOTATIONS.json",
+      "sha256": "6d02ba66debdb4f59f626e016fc08c726ed5fc97e659393d1e767fd2f9f19086",
+      "rows": 270,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/championship-20261030f/numerical-v2/2025/SCORES.json",
+      "sha256": "184839877df6fd7834a9b48e342369d7dda65dfcd2e99cf8be419c13c893d067",
+      "rows": 270,
+      "kind": "independently_recomputed_saved_row_paired_numeric_views"
+    },
+    {
+      "source_artifact": "reports/championship-20261030f/numerical-v2/2024/COMPARISON_ANNOTATIONS.json",
+      "sha256": "78998e4abc214a4f1842d1e4de652326e6acaee8b774b821bfb198e13fd5a572",
+      "rows": 282,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/championship-20261030f/numerical-v2/2024/SCORES.json",
+      "sha256": "c17669aeaf61f429708fe067ce3800965f6860ee95098d0942e10d244a351e2d",
+      "rows": 282,
+      "kind": "independently_recomputed_saved_row_paired_numeric_views"
+    },
+    {
+      "source_artifact": "reports/championship-20261030f/numerical-v2/2023/COMPARISON_ANNOTATIONS.json",
+      "sha256": "249d8a9f820c1f53a9708426edaa322668dedc1f513224f9f3123a9021c81a45",
+      "rows": 282,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/championship-20261030f/numerical-v2/2023/SCORES.json",
+      "sha256": "38206bb3feb8ee9f21c142bfba4029dc25821a82b37b7ca52641bed1c564c895",
+      "rows": 282,
+      "kind": "independently_recomputed_saved_row_paired_numeric_views"
+    },
+    {
+      "source_artifact": "reports/championship-20261030f/numerical-v2/2022/COMPARISON_ANNOTATIONS.json",
+      "sha256": "aab2ea9656a2814750cf172396f60cf0c527551f6cdc3799677fbdf90bb343e2",
+      "rows": 270,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/championship-20261030f/numerical-v2/2022/SCORES.json",
+      "sha256": "2ccb0b58030b302f63cf670c1d1e618323fe15573ca1a2ee1bc82c670c045ad7",
+      "rows": 270,
+      "kind": "independently_recomputed_saved_row_paired_numeric_views"
+    },
+    {
+      "source_artifact": "reports/championship-20261030f/category-selector-v2/COMPARISON_ANNOTATIONS.json",
+      "sha256": "fee3f679304cf0b7d78d356a369c1c41aed72e660c1d5de4a363a88bb514db57",
+      "rows": 36,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/championship-20261030f/category-selector-v2/SCORES.json",
+      "sha256": "a074515d757e657182967aeea58aaaef18e958eda136ab1997748d994febd492",
+      "rows": 36,
+      "kind": "earlier_only_category_selector_saved_aggregate_replay"
+    },
+    {
+      "source_artifact": "reports/championship-20261030f/offer-expansion/full-pool-v1/METADATA_SUPPLEMENT.json",
+      "sha256": "a83eafbd355b85c2bb591de8e7f261bd0f4259d463cf2534c182b3975d4e40a8",
+      "rows": 4980,
+      "kind": "source_bound_selection_view_metadata"
+    },
+    {
+      "source_artifact": "reports/championship-20261030f/offer-expansion/full-pool-v1/COMPARISON_ANNOTATIONS.json",
+      "sha256": "a852456015d8b2353b265ef4b498f3e0d61e316984c40e78476e97620b451949",
+      "rows": 4980,
+      "kind": "source_bound_annotation_not_extra_evaluation"
+    },
+    {
+      "source_artifact": "reports/championship-20261030f/offer-expansion/full-pool-v1/SCORES.json",
+      "sha256": "7c19218c98c165d19b28ba7816e3ae33c888063b913709cb418d425b938c37bc",
+      "rows": 4980,
+      "kind": "expanded_provider_labelled_threshold_pool_actual_selected_sides"
+    }
+  ],
+  "record_count": 159087,
+  "by_kind": {
+    "software_verification": 22,
+    "NEW_EXPERIMENT_CURRENT_VINTAGE_PARTICIPANT_DIAGNOSTIC": 140153,
+    "forecast_evaluation_view": 6364,
+    "prop_selection_evaluation": 12512,
+    "retrospective_chronological_category_selector_aggregate_replay": 36
+  },
+  "shards": [
+    {
+      "path": "reports/continuation-20261030/results-index/records-0000.json",
+      "sha256": "6f36f6263d6a1ebface86ce8033998b079eb74ca97670efcb9040c3d3b92602b",
+      "bytes": 12577156,
+      "records": 1918
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0001.json",
+      "sha256": "60c932a5253331f67a88d8ee050c2d02d4aa8732876487806fc50609cac09ce5",
+      "bytes": 12578566,
+      "records": 1906
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0002.json",
+      "sha256": "59287a35baf9fb8a6c123951deb051e2e273b51443561a0a1a9af4340c9d4c0f",
+      "bytes": 12579625,
+      "records": 1908
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0003.json",
+      "sha256": "e259e4e67a2cc79f315d91837cb1f444432dbf372cf60c57a2e986ffc4483e01",
+      "bytes": 12576761,
+      "records": 1906
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0004.json",
+      "sha256": "eeca0900749af97adb5c3e42063082747f5a17c86782a26d427ecf059ac63265",
+      "bytes": 12577327,
+      "records": 1904
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0005.json",
+      "sha256": "3277bfefde417b5742ef37789bf4c1ab6ed4597315a885e65f4aa2133e9672ea",
+      "bytes": 12580081,
+      "records": 1900
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0006.json",
+      "sha256": "300ba621df3326388b5a2e91b2e2f9e8ce9ddaf72f278e6581ad8fcee8bd866d",
+      "bytes": 12582825,
+      "records": 1908
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0007.json",
+      "sha256": "a76dd3d4b370154c7277e1e35ea9720a90f34cba48df34ca9f221aaadaad3677",
+      "bytes": 12579537,
+      "records": 1908
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0008.json",
+      "sha256": "a69a8754aa95fc52154de1d4d971bffb711a50f9ba6622af631d539f2e6edf78",
+      "bytes": 12577388,
+      "records": 1906
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0009.json",
+      "sha256": "f1d8e703a6298c958b1cb334388f0c7dc0da8b9e2112a83edf6b418e6fd3bdcb",
+      "bytes": 12576269,
+      "records": 1922
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0010.json",
+      "sha256": "747c2243f19563a57a4e40b7ad624c274d60c962bb6ef5d4b20d064c3ae10c56",
+      "bytes": 12578331,
+      "records": 1892
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0011.json",
+      "sha256": "e77110604219a521c5513b0321819749838ab406607fa9c7591452278c09534b",
+      "bytes": 12577514,
+      "records": 1913
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0012.json",
+      "sha256": "fc2b69eecc265d937fc1a84c004112d36c66cdeb7d509954c5b2deac110e9d0d",
+      "bytes": 12580866,
+      "records": 1898
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0013.json",
+      "sha256": "df2c86d7b875a0da95a6ec877e09477df3a58c6f7694d0edb02e4f6a2fa964e0",
+      "bytes": 12580101,
+      "records": 1899
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0014.json",
+      "sha256": "8897b41eab29da00d760a2c4c3fb63f5631a96f9ded6725fd9efc81f2eb83d95",
+      "bytes": 12579198,
+      "records": 1918
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0015.json",
+      "sha256": "aa1fbce1d5ccfed0bc68cc9fd960293eedddc048f013532847586d86ed486f38",
+      "bytes": 12578083,
+      "records": 1910
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0016.json",
+      "sha256": "5e2ea0728aa116ae0cd22efa1664a2add8f0ce3835f8a2f33cf2bf3baf8a91a4",
+      "bytes": 12575601,
+      "records": 1910
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0017.json",
+      "sha256": "42e1a00888aecfdb4e2c614421b682ad4cc1613fda8f0fb4524f06468949d605",
+      "bytes": 12581387,
+      "records": 1911
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0018.json",
+      "sha256": "7f487ab29fad246c9ba9ef850d58284560478e06340b772ab84cd32155c11fbc",
+      "bytes": 12577856,
+      "records": 1903
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0019.json",
+      "sha256": "7ee21d13b3c0db572753a519745c0e059fbc29c0f693bf86f1923ff0862fedab",
+      "bytes": 12578827,
+      "records": 1918
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0020.json",
+      "sha256": "c238a4c9071dc42a8a82794dac1bf2dee6b1e56a72b9d7d329892ba22b5f305c",
+      "bytes": 12582503,
+      "records": 1902
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0021.json",
+      "sha256": "491eeedd26d96d687ac192c3d1f373304bb73ac307e6633121ee3204c8379b44",
+      "bytes": 12581514,
+      "records": 1918
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0022.json",
+      "sha256": "007952f0ae8fd67dcb0d051ddeb472b98ee2cb0e928709ef35c753fb753e8412",
+      "bytes": 12578322,
+      "records": 1900
+    },
+    {
+      "path": "reports/continuation-20261030/results-index/records-0023.json",
+      "sha256": "3cfa0e3346b0e54bbe672dd4929a6893c801e72ee87a72c8a31919e449cc40c3",
+      "bytes": 11966205,
+      "records": 1828
+    },
+    {
+      "path": "reports/continuation-20261030b/results-index/new-records-0024.json",
+      "sha256": "65e894e333ffdd218a0e8813a9ebef56e90e95a5a9aef9f54d5ca4e2aedfc0a0",
+      "bytes": 12359553,
+      "records": 1692
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0025.json",
+      "sha256": "b8468a7426f30b1e4cceca03c3e94840c7a4b295f72b50719eeff43b23844ab2",
+      "bytes": 12582179,
+      "records": 1461
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0026.json",
+      "sha256": "25a8901ae983fa24b36d186f504102c3b321ea9b877dd7892ce1b39f9f068ea7",
+      "bytes": 12576577,
+      "records": 1456
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0027.json",
+      "sha256": "49765521abc10f628e838e019ca4c7aaeaaeae89cf57f2be898ae352252a97ec",
+      "bytes": 12576501,
+      "records": 1447
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0028.json",
+      "sha256": "0b135faf1c38acd70feaa5dacf08ae7b5cca725baa7f141a148afff5aed5ed8c",
+      "bytes": 12575033,
+      "records": 1452
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0029.json",
+      "sha256": "6d016a8fd4647903980ccc8ebccbac68a891ca8f1b93f204e60835c881bcede9",
+      "bytes": 12574147,
+      "records": 1459
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0030.json",
+      "sha256": "09d7ee042632227ab83b798aa2655a79a3eed190519c801331a5dfa28d320cbd",
+      "bytes": 12580683,
+      "records": 1547
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0031.json",
+      "sha256": "1a1beb56ccd733103a07502afebc893ea6c1e69b62c49ae6f4b51d95a03b2b00",
+      "bytes": 12578276,
+      "records": 1549
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0032.json",
+      "sha256": "e47a38505ccdfcd31cf49471ad0438a78616b39d7d12802770fd2690f51d4661",
+      "bytes": 12573906,
+      "records": 1540
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0033.json",
+      "sha256": "e3666b2572a5ea465b32394acf3894f885980a89b9c180f80cc20f769958a6d4",
+      "bytes": 12574877,
+      "records": 1534
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0034.json",
+      "sha256": "22ec5e503e3d3fcd335d373e2b01fa809788fa964346057b0ada29000d53fbf7",
+      "bytes": 12578107,
+      "records": 1527
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0035.json",
+      "sha256": "c0fcfc93d9aebbc97e2d1e13e0e19c2b8c46585e0690fce1dbb52d6d638ac5aa",
+      "bytes": 12581702,
+      "records": 1533
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0036.json",
+      "sha256": "eee4e547bf064aadf04dad862998f0ca041f2a0b4b5f55e183861630f2495e6b",
+      "bytes": 12578434,
+      "records": 1521
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0037.json",
+      "sha256": "9caca270564f674cd4c4577e49020beb8a9e7416f18a55e5fc1ce4f9f9ee4ce1",
+      "bytes": 12578832,
+      "records": 1527
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0038.json",
+      "sha256": "71b2a7402af168048fb3d1761e02a436173e15cf45fecf13a62b42167fa11386",
+      "bytes": 12581474,
+      "records": 1519
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0039.json",
+      "sha256": "e73df3b5e1044759cab4cfcd29621dc63d70f00d5a4d7f44c81ced1ec170d233",
+      "bytes": 12575391,
+      "records": 1515
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0040.json",
+      "sha256": "122b54e981c92320cff0553ea19cf7df86ccdff59e84a680d4e681d1650aa0c9",
+      "bytes": 12578925,
+      "records": 1500
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0041.json",
+      "sha256": "abc25ad59f448762af6987c1165713fc327960dafe4836211be7451d1eb91301",
+      "bytes": 12581130,
+      "records": 1520
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0042.json",
+      "sha256": "996497e7e1fcc0378382f54d03610a8c76e6fe992a7e4dd6c6b9dfdd4a816c5e",
+      "bytes": 12579775,
+      "records": 1785
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0043.json",
+      "sha256": "d93ea44259f1fdc16fd09829c8369cd09ff33322d89791a8720a4052b9885a9e",
+      "bytes": 12579439,
+      "records": 1757
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0044.json",
+      "sha256": "ea41b7aba9bb5df8592b699057513c211cd8d00ef436a7652ca7815aa41004a3",
+      "bytes": 12577204,
+      "records": 1752
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0045.json",
+      "sha256": "76b5fe0ca22af824a314740409b367a6f03c49bcba46ab5db85a43b847e0f2fe",
+      "bytes": 12580435,
+      "records": 1744
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0046.json",
+      "sha256": "abaeee4ed22d086e16eeba16dea718e825e2e18087c5a203c0abd32c4454632f",
+      "bytes": 12577136,
+      "records": 1741
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0047.json",
+      "sha256": "af525a54aa505b5e5945b19c13f83d5542e50e6be10306ab42415bc92d37fa8b",
+      "bytes": 12581013,
+      "records": 1735
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0048.json",
+      "sha256": "eb7a5c0615460e62582e72329e6d01d9ba036a77b0a0b41ad406ccbd58668f5f",
+      "bytes": 12578299,
+      "records": 1730
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0049.json",
+      "sha256": "e9166875caa1678f002a464971f6839843315358fb2e32abbcf903f0a14df44f",
+      "bytes": 12577814,
+      "records": 1678
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0050.json",
+      "sha256": "8f718e69ba221f4772f428dd4e5f95917bc4aa6b68bc0ceae4f5e758738286b8",
+      "bytes": 12581818,
+      "records": 1569
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0051.json",
+      "sha256": "9e89a4d1ac35d55399c50defeb7dca45a2a1eb134fd353d16fae3885b727d680",
+      "bytes": 12575857,
+      "records": 1545
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0052.json",
+      "sha256": "d454ba7c75d867a3d62f7d73d2a98e5d89934f88d32660d7ed154bbbc0e41f6b",
+      "bytes": 12576104,
+      "records": 1540
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0053.json",
+      "sha256": "32948550baf26d97818d9bc98d6858852267684f7ec6308a13c66bf0f6c452b0",
+      "bytes": 12580812,
+      "records": 1541
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0054.json",
+      "sha256": "7df2d8f8ecad57b0ee55d45f3ee6dbcd2a45c01bad359a1958bfc058e1858fbf",
+      "bytes": 12575394,
+      "records": 1523
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0055.json",
+      "sha256": "9490e965973da6ba95cef2887b1b7fec8ef9cc3d15d5c5e20e1d7b37d69b4532",
+      "bytes": 12576005,
+      "records": 1537
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0056.json",
+      "sha256": "5dca5fb7430cd0f4c890b04dfbb58d810b25e85585a1f847a50dd45891cbe087",
+      "bytes": 12581585,
+      "records": 1524
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0057.json",
+      "sha256": "7ea96055c496bd2d6bd2c4d72b637c148021614d9b236c33995a746e7c146065",
+      "bytes": 12579159,
+      "records": 1531
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0058.json",
+      "sha256": "e0714e9ef13c858c323bd1aaf02f54c83dbc3f3fbb2bd47fae5808d1aca820db",
+      "bytes": 12576544,
+      "records": 1537
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0059.json",
+      "sha256": "0ccd545df706c554d78cbae12f83c670945361d46f2fd180bd5dda0b51e3b675",
+      "bytes": 12578157,
+      "records": 1540
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0060.json",
+      "sha256": "a4ae36cd0f29a46923fd0394b0c2b085b51ef63cfacf0c02c0a12728da5c0416",
+      "bytes": 12580766,
+      "records": 1558
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0061.json",
+      "sha256": "2c0584f3b2df1875458059536b4f5e33e587b78eed2630bd116d3c86a949847b",
+      "bytes": 12577088,
+      "records": 1540
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0062.json",
+      "sha256": "75ae8aa5a4878809b6b80cc0421df6f383e76c889f74ed1ab30537f0c3d26b27",
+      "bytes": 12582020,
+      "records": 1532
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0063.json",
+      "sha256": "1f19ce5f027dec38ef4e1bbbef7b7de05ac71fdfb4044ddc6707d5e9322a8933",
+      "bytes": 12578051,
+      "records": 1535
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0064.json",
+      "sha256": "4384ccd58962197eacf71784dd561e51d3a0b7f3a3d962f32fd543214a200b3c",
+      "bytes": 12582433,
+      "records": 1526
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0065.json",
+      "sha256": "3d98a22f04d1989f165b22e28b94bb32f06ce0f24d36960cb62ab72f0c6c9d19",
+      "bytes": 12577022,
+      "records": 1523
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0066.json",
+      "sha256": "cd68322e1707b9115b7762a2843a3faacde7ede9d2695733caf34363f1b5ea2b",
+      "bytes": 12576991,
+      "records": 1527
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0067.json",
+      "sha256": "236f7ef512334c3521707eaf2eda4c284af2227ae43cd1757ef14f4c34e988bd",
+      "bytes": 12576433,
+      "records": 1518
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0068.json",
+      "sha256": "d87f3f0c59d944b4cf855fe0bc4531912080759636360d75afe0d353d5b969e6",
+      "bytes": 12581953,
+      "records": 1528
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0069.json",
+      "sha256": "3abe113d84bdaa01d2f966c974527e8440a3747a4ef21d2c626ff60685885a9d",
+      "bytes": 12577555,
+      "records": 1556
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0070.json",
+      "sha256": "b73971ab1391996332960a1eb71e61c59c1527d6ac0b6e01d239c14440fde683",
+      "bytes": 12581169,
+      "records": 1548
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0071.json",
+      "sha256": "b2626f65b5e4b8fb498eeefa91ecf1b0db36519399a0716d7631c802415e6b17",
+      "bytes": 12579638,
+      "records": 1539
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0072.json",
+      "sha256": "ed637e35c7a15d320bc1064d65e4f0311f59ae74892c918ce0fdbfa9e733daaf",
+      "bytes": 12577111,
+      "records": 1534
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0073.json",
+      "sha256": "4661370802f48d7a67c1b33c195ceb2cc85bee355784db10d93dbf7d21b5a178",
+      "bytes": 12575855,
+      "records": 1527
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0074.json",
+      "sha256": "ed7dfa7c03032a4ccf459685c45314cb5a080e50f9288fd4a26ffac982e8f28e",
+      "bytes": 12579112,
+      "records": 1531
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0075.json",
+      "sha256": "2e31a33c97280f22e67069a5c23d214342a3a037a4419d9bd3919d330c8b5500",
+      "bytes": 12579084,
+      "records": 1520
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0076.json",
+      "sha256": "6bad1104e88c71d6b47d254b76915186f27173613f570d50b6ae8ca9e1f4aff4",
+      "bytes": 12580907,
+      "records": 1527
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0077.json",
+      "sha256": "2a4e99bd7a554a054e03179e5a534cb9592aab13507c344b88c9dc35ea119d68",
+      "bytes": 12580407,
+      "records": 1520
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0078.json",
+      "sha256": "f23bf18d02f91d3bea7beb565e8e8c31da334f8e8429d281ac269a4756c1c7b1",
+      "bytes": 12578485,
+      "records": 1605
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0079.json",
+      "sha256": "72dc0c9334c15944cf7b2bd6538b3e72f0da31624cf8621bb7ed67d751bdf3c0",
+      "bytes": 12582507,
+      "records": 1773
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0080.json",
+      "sha256": "9dd0a2fc88048eea278ac4bd77ad5336ec58cf33029006d0694c55601e472fb0",
+      "bytes": 12573592,
+      "records": 1718
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0081.json",
+      "sha256": "60068a9f46cedbc285d80596b0dfc5108543542822329d4ea6055b535bd3548c",
+      "bytes": 12579121,
+      "records": 1272
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0082.json",
+      "sha256": "03e6a0c28de052dea71aa3dd3057d9639cc10b1c87dcbd54e5d44e4a2eb7c673",
+      "bytes": 12582677,
+      "records": 1245
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0083.json",
+      "sha256": "c703d0652b8b5720026f8afa004ab44fb505a1faeb00298fd724edc6f4751eb9",
+      "bytes": 12574915,
+      "records": 1253
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0084.json",
+      "sha256": "f9fc839b428e3402c49ae6af6c082d1d65a77f011174a58852f3f0ce620dd384",
+      "bytes": 12582209,
+      "records": 1245
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0085.json",
+      "sha256": "bf782338a39948ebd5079e071ad16fb5dd89280176309d91ac111cddd860cfb4",
+      "bytes": 12577328,
+      "records": 1229
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0086.json",
+      "sha256": "4a196823fb376dbc4f77663c7f94c425ff3ab5bd1aba3089c111671150806ab0",
+      "bytes": 12579449,
+      "records": 1265
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0087.json",
+      "sha256": "e3b73aef7d3986d12290314d62dd20f9c5534b2096d15a727fb828931302c0fa",
+      "bytes": 12576326,
+      "records": 1264
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0088.json",
+      "sha256": "74e1d7c5e1af9d1f7c839dcc495d234481acd26c7d5d8fe76a98eadad27902b2",
+      "bytes": 12575180,
+      "records": 1352
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/new-records-0089.json",
+      "sha256": "1aacdb3fcf72215c038df69c5cfa2b269898a49050ff965209ba641bdce87f22",
+      "bytes": 871603,
+      "records": 95
+    },
+    {
+      "path": "reports/prop-grading-20261030e/results-index-v3/new-records-0090.json",
+      "sha256": "0318ea6122b762f2e91036c9b97928c9fbbe002d181e64fe1d38efd770c56252",
+      "bytes": 12579540,
+      "records": 1293
+    },
+    {
+      "path": "reports/prop-grading-20261030e/results-index-v3/new-records-0091.json",
+      "sha256": "3682d70ebe5513071077891d785f32a4d3eb198c52bca9ecef2d27dfb4b315f9",
+      "bytes": 12576986,
+      "records": 1277
+    },
+    {
+      "path": "reports/prop-grading-20261030e/results-index-v3/new-records-0092.json",
+      "sha256": "3a0b13269f379f83e061032bf9e98b29344878cfbf772d300f645c90708266ce",
+      "bytes": 12573415,
+      "records": 1288
+    },
+    {
+      "path": "reports/prop-grading-20261030e/results-index-v3/new-records-0093.json",
+      "sha256": "092139c87424d9ef5a8c063ab6ef967dd20722f405d5170ba567b0bd7ea786c3",
+      "bytes": 12579028,
+      "records": 1290
+    },
+    {
+      "path": "reports/prop-grading-20261030e/results-index-v3/new-records-0094.json",
+      "sha256": "04b2ec656203c271281aa9948db75c7b42b271477ef7e260908782b5ae7463a3",
+      "bytes": 12574952,
+      "records": 1251
+    },
+    {
+      "path": "reports/prop-grading-20261030e/results-index-v3/new-records-0095.json",
+      "sha256": "04a3fb89ef11fd350d92698a8f78520c0c95408ac02bbf4d9092d983d79e9003",
+      "bytes": 11424297,
+      "records": 1133
+    },
+    {
+      "path": "reports/championship-20261030f/results-index-v5/new-records-0096.json",
+      "sha256": "28ad4529a2f38b2abc5f2e8158f272d8c6f561fbb0178a8b40a1a968826861c6",
+      "bytes": 12582566,
+      "records": 1527
+    },
+    {
+      "path": "reports/championship-20261030f/results-index-v5/new-records-0097.json",
+      "sha256": "43d7b665d15ac534f8ca27cee50153edd3721c343c40c229df99326f06caf439",
+      "bytes": 12579211,
+      "records": 1359
+    },
+    {
+      "path": "reports/championship-20261030f/results-index-v5/new-records-0098.json",
+      "sha256": "47dda622d6fe8fb5208e6446df321d51a8517ca9e46fa05b8448621c59bb425f",
+      "bytes": 12581573,
+      "records": 1373
+    },
+    {
+      "path": "reports/championship-20261030f/results-index-v5/new-records-0099.json",
+      "sha256": "16ad20ba7ab1035861accd4d3e57819d198ab6e41637372acf3ba64305c37bed",
+      "bytes": 12575690,
+      "records": 1375
+    },
+    {
+      "path": "reports/championship-20261030f/results-index-v5/new-records-0100.json",
+      "sha256": "71559f8591dc84cf4d5d37fe8f61469acb88e8a9efb155ebff3019814764da62",
+      "bytes": 6354960,
+      "records": 702
+    }
+  ],
+  "max_shard_bytes": 12582912,
+  "csv_parts": [
+    {
+      "path": "reports/continuation-20261030c/results-index/TEST_RESULTS_INDEX-0000.csv",
+      "rows": 10000,
+      "bytes": 13615342,
+      "sha256": "cdb8c93901aea9e791e3774c2fbac19a4f62385071089c329765df2eb3badc0b"
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/TEST_RESULTS_INDEX-0001.csv",
+      "rows": 10000,
+      "bytes": 13617299,
+      "sha256": "d4e587611cfb43b48612c78e81c816add3355f1bb293514014bb27087a5cf091"
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/TEST_RESULTS_INDEX-0002.csv",
+      "rows": 10000,
+      "bytes": 13623939,
+      "sha256": "c6b708e7a0d7ad9fe8fecee4902a73c5d1eb800046c3e1239cf7c7dc72c3c3c6"
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/TEST_RESULTS_INDEX-0003.csv",
+      "rows": 10000,
+      "bytes": 13603379,
+      "sha256": "19446958ea0758ceb03399c3bb35e9e5a2d746352cf5f08e76cffe608ef32c53"
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/TEST_RESULTS_INDEX-0004.csv",
+      "rows": 10000,
+      "bytes": 16059179,
+      "sha256": "e38612cb69c94092ac2c14d3bfdde37687b9dff483b9ace75457b9c514596ff3"
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/TEST_RESULTS_INDEX-0005.csv",
+      "rows": 10000,
+      "bytes": 20280237,
+      "sha256": "f562367cedde14baf5b3a783359caf5eb04faef1b8e41af1e23cf6db6aa7e501"
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/TEST_RESULTS_INDEX-0006.csv",
+      "rows": 10000,
+      "bytes": 20147910,
+      "sha256": "707d1ccf2a38414289136010e2f5caf28f577635da89dcfb2378be8e53511308"
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/TEST_RESULTS_INDEX-0007.csv",
+      "rows": 10000,
+      "bytes": 16509422,
+      "sha256": "ffa4a40f9422fe727cb7f15f694e585648276da1a3b600d144c0ab0736430c1f"
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/TEST_RESULTS_INDEX-0008.csv",
+      "rows": 10000,
+      "bytes": 16532738,
+      "sha256": "b2c7934e69ed9ebb695a9971cfcf9a93ad5c7d86e023eed0dc5f7283bbf3dc53"
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/TEST_RESULTS_INDEX-0009.csv",
+      "rows": 10000,
+      "bytes": 19950562,
+      "sha256": "6fb30d94164992895612309c7c19541b485211c2a2bbf3e373150ed5acf28156"
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/TEST_RESULTS_INDEX-0010.csv",
+      "rows": 10000,
+      "bytes": 19837907,
+      "sha256": "11f619732e9c2f8a212c06bdc62bafec5f36a8b4ec93813fa8e78bf03905e286"
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/TEST_RESULTS_INDEX-0011.csv",
+      "rows": 10000,
+      "bytes": 19974688,
+      "sha256": "c08e334a8dbb756812e6c1787b84360f759682dc1e8f958feed0565406f5d34d"
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/TEST_RESULTS_INDEX-0012.csv",
+      "rows": 10000,
+      "bytes": 20105551,
+      "sha256": "f79befe96238e4caed46228cd49f225a5f87b17c090d5192d2a62ad77548ea0d"
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/TEST_RESULTS_INDEX-0013.csv",
+      "rows": 10000,
+      "bytes": 25420267,
+      "sha256": "cb90a8b40af2230eebc08dd463ce1daf515815e5f43dd6181ff2f7910306f650"
+    },
+    {
+      "path": "reports/continuation-20261030c/results-index/TEST_RESULTS_INDEX-0014.csv",
+      "rows": 5219,
+      "bytes": 17301951,
+      "sha256": "1d24f6741c0cd08fb7f00b0dd751370fd92192a02b33faf5eec113e2fe209e0c"
+    },
+    {
+      "path": "reports/prop-grading-20261030e/compact-results-index/PROP_RESULTS_INDEX.csv",
+      "rows": 7532,
+      "bytes": 16107150,
+      "sha256": "89640840321fab8c711a38b4d3665d3c68fe7ba4369a80d480f44694c08e274d"
+    },
+    {
+      "path": "reports/championship-20261030f/results-index-v5/TEST_RESULTS_INDEX-0016.csv",
+      "rows": 6336,
+      "bytes": 14062620,
+      "sha256": "dbbaad3eb9aa872f9f03a65eccc505df0c189122b05c818d2bc4be901d12a42c"
+    }
+  ],
+  "streaming_build": {
+    "previous_records_reused": 152751,
+    "new_records": 6336,
+    "prior_shards_unchanged": true,
+    "ordering": "prior immutable shards followed by new registered versions; CSVfilterbytestID/panel",
+    "previous_csv_parts_reused": 16
+  },
+  "reader_contract": "New reported/reproduced/reconstructed/future and software evidence retain distinct identities; a score view is not a fit or unique NFL observation.",
+  "csv_header_policy": "Prior immutable CSV parts are reused; new product columns may extend the header. Combine by column name. JSON shards are authoritative.",
+  "category_csv_scope": "New appended evaluation views only; use prior category CSVs and source rankings for earlier records."
+}

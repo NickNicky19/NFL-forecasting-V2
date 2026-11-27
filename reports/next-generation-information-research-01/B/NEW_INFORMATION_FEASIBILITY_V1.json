@@ -1,0 +1,63 @@
+{
+  "id": "B-NEW-INFORMATION-FEASIBILITY-v1",
+  "assignment": "NFL-NEXT-GENERATION-INFORMATION-RESEARCH-01",
+  "at_UTC": "2026-11-12T18:01:44.642212+00:00",
+  "session": "B",
+  "state": "PASS_FOR_ONE_SOURCE_REPORTED_QB_DEPTH_ROLE_INCREMENT",
+  "exact_hypothesis": "Current source-reported QB depth rank and change from last eligible same-team own-game rank improve the same retained R3 completion procedure beyond source-support indicators.",
+  "new_information": "2025/2026 timestamped appended depth snapshots, exact GSIS/team identity. Rank is not a confirmed starter, health probability, injury penalty or realized workload.",
+  "classification": [
+    {
+      "input": "lagged own/team opportunity, targetshare, context and defense",
+      "class": "Already tested",
+      "receipt": "prior-reconciliation/CLOSEST_COMPLETED_EXPERIMENTS_V1.json"
+    },
+    {
+      "input": "seven-day versus48hour aligned histories",
+      "class": "Already tested",
+      "reuse": "No new lag or refit of completed arms."
+    },
+    {
+      "input": "source-reported QB depth rank/rankchange",
+      "class": "Genuinely new and historically qualified",
+      "qualification": "Qualified only as CURRENT_VINTAGE_TIMESTAMPED_DEPTH_ASOF_RECONSTRUCTION under source-authored append/load contract; no independent old-file immutability or original issuance proof."
+    },
+    {
+      "input": "C retained injury snapshots",
+      "class": "Available only prospectively",
+      "qualification": "Observed Nov1/5/7 snapshots and narrower query availability gate; original rowclock omitted; not allhistorical personnel contexts."
+    },
+    {
+      "input": "complete QB/OL/receiver availability burden",
+      "class": "Unavailable or source-blocked",
+      "qualification": "No qualified fullhistorical effective personnel/availability panel; not fabricated from final participation."
+    },
+    {
+      "input": "lagged role proxy expectedATT>=10",
+      "class": "Equivalent information already available",
+      "qualification": "Already in baseline; does not replace current source depth rank."
+    }
+  ],
+  "baseline": {
+    "procedure": "B-QB-OPPORTUNITY-PROFILE-INCREMENT-v1:R3",
+    "scope": "Highest observed inspected B complete completion law59/112, not strongest globally/provenbest; unchanged saved outputs reused.",
+    "strong_controls": "Savedadjusted/raw, retainedE3, earlier-lineprevalence,bothconstants,neutral0.25; strongestAannual52/88 separateprivateboard, no unsupported pairedclaim."
+  },
+  "source": "source-qualification/SOURCE_CLOCK_AND_COVERAGE_V1.json",
+  "independent_source_check": "peer-coordination/INDEPENDENT_DEPTH_ASOF_V1.json",
+  "offered_information_variation": "peer-coordination/OFFERED_DEPTH_POPULATION_V1.json",
+  "source_field_rights": "nflverse-data LICENSE.md CC-BY4; derivedfeatures/models withattribution only, no raw source/offer rows inGit.",
+  "experiment": {
+    "procedure": "B-QB-SOURCE-DEPTH-ROLE-INCREMENT-v1",
+    "frozen_protocol": "depth-role-wave-v1/FROZEN_PROTOCOL.json",
+    "protocol_sha256": "26226b9e014aba5696745542332a06a06352fa0f09812e36d223ceb809317179",
+    "evaluation": "2026W1-8 numerical277; unchanged native112CMP offersW5-8; all exposed development.",
+    "planned_fits": 16,
+    "changes_to_timing_learner_distribution_selection_population": false,
+    "stopping": "One block, no outcome-driven retries. Four offeredweeks<5 exactnewprimaryproductfloor; no automatic release."
+  },
+  "C_registration": "OwnB export offered for C existing intake; no C write or assumed registration/admission.",
+  "production_changes": 0,
+  "new_fits_at_receipt": 0,
+  "new_scientific_scores_at_receipt": 0
+}

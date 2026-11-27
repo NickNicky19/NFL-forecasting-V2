@@ -1,0 +1,46 @@
+{
+  "id": "B-RAW-VERIFIED-COVERED-GAME-POPULATION-v1",
+  "registered_utc": "2026-11-10T00:54:08.673276+00:00",
+  "owner": "B",
+  "source_producer_commit": "2fa855fc4dd7e9e495126dea93ba90a33fee4be3",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_prop_grades": 0,
+  "new_NFLobservations": 0,
+  "purpose": "Isolate week/game/offeredmembership beforeinterpreting277vs112numericaldifferences; no causalmodelrepair.",
+  "source_board_bindings": [
+    {
+      "source_id": "OWNER_LOCAL_QB_BOARD_W5",
+      "sha256": "9b74e81ff451bd26e96b3019436e26306a4068f4fc9b38cc4561e1e0ab2d146f"
+    },
+    {
+      "source_id": "OWNER_LOCAL_QB_BOARD_W6",
+      "sha256": "9903240899222ae4d8829dfd4e294de7652032da42b08ba52c1ba252b79344c7"
+    },
+    {
+      "source_id": "OWNER_LOCAL_QB_BOARD_W7",
+      "sha256": "8abe1fab12e6bb97be4d2e77f93e7a07f440eab02ff394c8dbc282183a9dca24"
+    },
+    {
+      "source_id": "OWNER_LOCAL_QB_BOARD_W8",
+      "sha256": "4b37b02e4ea584fbf91c21ca1fe8454c2447a68cafc154f15d431f520c73358a"
+    }
+  ],
+  "covered_game_membership_sha256": "a51f782857770f5207bd41b3770fb963e7be1813be28a87abb4f6f5d609966dd",
+  "covered_games": 56,
+  "rules": "2026W5-8allQBswithin56offerboardgameIDs; no original-sidefilter or outcome-dependentmembership. Onlynew129-rownativepointviews emitted. Otherpanels reused.",
+  "methods": [
+    "B-player-context-matchup-01-v1:COMMON_EXPOSURE/pass_att",
+    "B-player-context-matchup-01-v1:E0/pass_cmp",
+    "B-player-context-matchup-01-v1:E3/pass_cmp",
+    "B-QB-CHARTED-CATCHABILITY-CONTEXT-v1:F2/pass_cmp"
+  ],
+  "products": [
+    "mean",
+    "lower_median"
+  ],
+  "source_tier": "Current/revisedsource+7dayreconstruction; noauthenticpregamequoteexecutionclaim.",
+  "permissions": "Public-derivedstat/forecastsCCBY4;FTNdependentF2CCBYSA4FTNData vianflverse. Protectedboards usedowner-local asmaskonly; no publicofferrows.",
+  "scoring_code_sha256": "b61c9cbbced8e5d64060ef1d14f6d60bec1edd9760fa8903a75c1b09503deadb",
+  "adapter_sha256": "1696ea2b4d59b54db9400aaa84005efc66350a1de9c0bcf1194fb6d0ad21dab6"
+}

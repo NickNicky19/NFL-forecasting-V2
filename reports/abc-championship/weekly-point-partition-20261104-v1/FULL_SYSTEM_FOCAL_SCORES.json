@@ -1,0 +1,2705 @@
+[
+  {
+    "record_id": "ABC-B-C-15a66c4a8a7adfe5e38e2a50",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::hgb-direct-history-controls-v1:absolute_error_point::H-MULTI::absolute_error_point",
+    "product_id": "absolute_error_point",
+    "strategy": "P1",
+    "target": "pass_yd",
+    "side": "over",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_5",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 5,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      5
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_yd_W5",
+    "n": 15,
+    "forecast_rows": 15,
+    "unique_games": 10,
+    "unique_players": 15,
+    "unique_player_games": 15,
+    "query_membership_sha256": "bd2db20ff13f84a9b6e66c7a01d4f7c3492328b223c6eea3e91f4eb266e9b52a",
+    "selection_metrics": {
+      "WIN": 7,
+      "LOSS": 8,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 7,
+        "LOSS": 8,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.4666666666666667,
+      "denominators": {
+        "outer_rows": 15,
+        "decided": 15,
+        "supported_threshold_outcomes": 15,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.5357142857142857,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 15
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 10,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": [
+          0.0869318181818182,
+          0.75
+        ],
+        "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.4666666666666667
+      },
+      "technical_unavailable": 0,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 0
+    },
+    "selection_loss_rate": 0.5333333333333333,
+    "mae": 60.65860510412483,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-0d6e499fd3a5b8c6d3aa9202",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": 17.594847621809937,
+    "numerical_n": 15,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "ABC-B-C-6fc2610a4f97cc49bc4ecd70",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::hgb-direct-history-controls-v1:absolute_error_point::H-MULTI::absolute_error_point",
+    "product_id": "absolute_error_point",
+    "strategy": "P1",
+    "target": "pass_yd",
+    "side": "under",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_5",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 5,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      5
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_yd_W5",
+    "n": 13,
+    "forecast_rows": 13,
+    "unique_games": 9,
+    "unique_players": 13,
+    "unique_player_games": 13,
+    "query_membership_sha256": "3a9dce18b3678dd8916c9d5907e09d44604dee483620920de6b60a3b7a5a6adc",
+    "selection_metrics": {
+      "WIN": 5,
+      "LOSS": 8,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 5,
+        "LOSS": 8,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.38461538461538464,
+      "denominators": {
+        "outer_rows": 13,
+        "decided": 13,
+        "supported_threshold_outcomes": 13,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.4642857142857143,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 13
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 9,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": [
+          0.16666666666666666,
+          0.6153846153846154
+        ],
+        "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.38461538461538464
+      },
+      "technical_unavailable": 0,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 0
+    },
+    "selection_loss_rate": 0.6153846153846154,
+    "mae": 61.423089984100166,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-0d6e499fd3a5b8c6d3aa9202",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": -46.71767395995611,
+    "numerical_n": 13,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "ABC-B-C-76675eeb44d5edc93d9bef51",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::hgb-direct-history-controls-v1:absolute_error_point::H-MULTI::absolute_error_point",
+    "product_id": "absolute_error_point",
+    "strategy": "P1",
+    "target": "pass_yd",
+    "side": "Combined",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_5",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 5,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      5
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_yd_W5",
+    "n": 28,
+    "forecast_rows": 28,
+    "unique_games": 14,
+    "unique_players": 28,
+    "unique_player_games": 28,
+    "query_membership_sha256": "4172621f93ceb64e69b3902f74d0b1653f195ee9221a3ba6f5509ef8a30f5aa1",
+    "selection_metrics": {
+      "WIN": 12,
+      "LOSS": 16,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 12,
+        "LOSS": 16,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.42857142857142855,
+      "denominators": {
+        "outer_rows": 28,
+        "decided": 28,
+        "supported_threshold_outcomes": 28,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 1.0,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 28
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 14,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": [
+          0.23125000000000004,
+          0.6258928571428564
+        ],
+        "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.42857142857142855
+      },
+      "technical_unavailable": 0,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 0
+    },
+    "selection_loss_rate": 0.5714285714285714,
+    "mae": 61.0135445126848,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-0d6e499fd3a5b8c6d3aa9202",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": -12.264537398295728,
+    "numerical_n": 28,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "B-WEEK-FULL-NATIVE-c00444f38d1e97b657142ffd",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B::hgb-direct-history-controls-v1:absolute_error_point::H-MULTI::absolute_error_point",
+    "history_regime": "H-MULTI",
+    "product_id": "absolute_error_point",
+    "target": "pass_yd",
+    "population": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "season": 2026,
+    "week": 5,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      5
+    ],
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_yd_W5",
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "forecast_rows": 28,
+    "admitted_forecast_rows": 28,
+    "unavailable_forecasts": 0,
+    "fallback_rows": 0,
+    "fallback_unknown": 0,
+    "unique_games": 14,
+    "unique_player_games": 28,
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 28
+      },
+      "abs_le_1": {
+        "numerator": 0,
+        "denominator": 28
+      },
+      "abs_lt_5": {
+        "numerator": 2,
+        "denominator": 28
+      },
+      "abs_le_5": {
+        "numerator": 2,
+        "denominator": 28
+      },
+      "abs_lt_10": {
+        "numerator": 4,
+        "denominator": 28
+      },
+      "abs_le_10": {
+        "numerator": 4,
+        "denominator": 28
+      },
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 28
+      }
+    },
+    "parent_cumulative_record_id": "I-SIDE-0d6e499fd3a5b8c6d3aa9202",
+    "source_vintage": "UNCHANGED_PARENT_RETAINED_POINT_AND_LABEL_VERSION",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "n": 28,
+    "mae": 61.0135445126848,
+    "mse": 5827.258754398978,
+    "rmse": 76.33648377020636,
+    "bias": -12.264537398295728,
+    "p90_abs": 138.40644448041655,
+    "p95_abs": 141.77942139419108,
+    "max_abs": 153.8795041150402,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.0,
+    "abs_lt_5": 0.07142857142857142,
+    "abs_le_5": 0.07142857142857142,
+    "abs_lt_10": 0.14285714285714285,
+    "abs_le_10": 0.14285714285714285
+  },
+  {
+    "record_id": "ABC-B-C-32ead7fd7b2f4fff6aa6732e",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::hgb-direct-history-controls-v1:absolute_error_point::H-MULTI::absolute_error_point",
+    "product_id": "absolute_error_point",
+    "strategy": "P1",
+    "target": "pass_yd",
+    "side": "over",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_6",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 6,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      6
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_yd_W6",
+    "n": 10,
+    "forecast_rows": 10,
+    "unique_games": 9,
+    "unique_players": 10,
+    "unique_player_games": 10,
+    "query_membership_sha256": "f347b040f5a4e476ef2a77b58eccb78975d5232ee18b202334098b2d7ab5229d",
+    "selection_metrics": {
+      "WIN": 5,
+      "LOSS": 5,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 5,
+        "LOSS": 5,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.5,
+      "denominators": {
+        "outer_rows": 10,
+        "decided": 10,
+        "supported_threshold_outcomes": 10,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.35714285714285715,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 10
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 9,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": [
+          0.2,
+          0.7777777777777778
+        ],
+        "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.5
+      },
+      "technical_unavailable": 1,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 1
+    },
+    "selection_loss_rate": 0.5,
+    "mae": 57.68366894903537,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-0d6e499fd3a5b8c6d3aa9202",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": 25.061663906242963,
+    "numerical_n": 10,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "ABC-B-C-6e8f3e8d494c9019248b016d",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::hgb-direct-history-controls-v1:absolute_error_point::H-MULTI::absolute_error_point",
+    "product_id": "absolute_error_point",
+    "strategy": "P1",
+    "target": "pass_yd",
+    "side": "under",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_6",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 6,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      6
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_yd_W6",
+    "n": 17,
+    "forecast_rows": 17,
+    "unique_games": 12,
+    "unique_players": 17,
+    "unique_player_games": 17,
+    "query_membership_sha256": "ae2736304815fcd6f09ed8995ebe273384e85029d7766ba9a0a10ed3d8127a32",
+    "selection_metrics": {
+      "WIN": 5,
+      "LOSS": 12,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 5,
+        "LOSS": 12,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.29411764705882354,
+      "denominators": {
+        "outer_rows": 17,
+        "decided": 17,
+        "supported_threshold_outcomes": 17,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.6071428571428571,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 17
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 12,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": [
+          0.07692307692307693,
+          0.531470588235294
+        ],
+        "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.29411764705882354
+      },
+      "technical_unavailable": 1,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 1
+    },
+    "selection_loss_rate": 0.7058823529411765,
+    "mae": 53.06728051903289,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-0d6e499fd3a5b8c6d3aa9202",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": -39.87768931190759,
+    "numerical_n": 17,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "ABC-B-C-a2a0385811db3113bea6c348",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::hgb-direct-history-controls-v1:absolute_error_point::H-MULTI::absolute_error_point",
+    "product_id": "absolute_error_point",
+    "strategy": "P1",
+    "target": "pass_yd",
+    "side": "Combined",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_6",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 6,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      6
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_yd_W6",
+    "n": 27,
+    "forecast_rows": 27,
+    "unique_games": 14,
+    "unique_players": 27,
+    "unique_player_games": 27,
+    "query_membership_sha256": "1c832f137344bb4b38ec104a5e3e9a8eb27d873545014f233f6bd18d44f247ef",
+    "selection_metrics": {
+      "WIN": 10,
+      "LOSS": 17,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 10,
+        "LOSS": 17,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.37037037037037035,
+      "denominators": {
+        "outer_rows": 27,
+        "decided": 27,
+        "supported_threshold_outcomes": 27,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.9642857142857143,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 27
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 14,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": [
+          0.21428571428571427,
+          0.5384615384615384
+        ],
+        "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.37037037037037035
+      },
+      "technical_unavailable": 1,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 1
+    },
+    "selection_loss_rate": 0.6296296296296297,
+    "mae": 54.777054011626404,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-0d6e499fd3a5b8c6d3aa9202",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": -15.826077008888866,
+    "numerical_n": 27,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "B-WEEK-FULL-NATIVE-d6ec7c208f3e70b373e0bab2",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B::hgb-direct-history-controls-v1:absolute_error_point::H-MULTI::absolute_error_point",
+    "history_regime": "H-MULTI",
+    "product_id": "absolute_error_point",
+    "target": "pass_yd",
+    "population": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "season": 2026,
+    "week": 6,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      6
+    ],
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_yd_W6",
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "forecast_rows": 28,
+    "admitted_forecast_rows": 27,
+    "unavailable_forecasts": 1,
+    "fallback_rows": 0,
+    "fallback_unknown": 0,
+    "unique_games": 14,
+    "unique_player_games": 27,
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 27
+      },
+      "abs_le_1": {
+        "numerator": 0,
+        "denominator": 27
+      },
+      "abs_lt_5": {
+        "numerator": 1,
+        "denominator": 27
+      },
+      "abs_le_5": {
+        "numerator": 1,
+        "denominator": 27
+      },
+      "abs_lt_10": {
+        "numerator": 2,
+        "denominator": 27
+      },
+      "abs_le_10": {
+        "numerator": 2,
+        "denominator": 27
+      },
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 27
+      }
+    },
+    "parent_cumulative_record_id": "I-SIDE-0d6e499fd3a5b8c6d3aa9202",
+    "source_vintage": "UNCHANGED_PARENT_RETAINED_POINT_AND_LABEL_VERSION",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "n": 27,
+    "mae": 54.777054011626404,
+    "mse": 4322.469255853029,
+    "rmse": 65.74548848288397,
+    "bias": -15.826077008888866,
+    "p90_abs": 112.1255963349903,
+    "p95_abs": 119.90301096236037,
+    "max_abs": 124.55843940144828,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.0,
+    "abs_lt_5": 0.037037037037037035,
+    "abs_le_5": 0.037037037037037035,
+    "abs_lt_10": 0.07407407407407407,
+    "abs_le_10": 0.07407407407407407
+  },
+  {
+    "record_id": "ABC-B-C-1a9c745d36506a849c14008d",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::hgb-direct-history-controls-v1:absolute_error_point::H-MULTI::absolute_error_point",
+    "product_id": "absolute_error_point",
+    "strategy": "P1",
+    "target": "pass_yd",
+    "side": "over",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_7",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 7,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      7
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_yd_W7",
+    "n": 7,
+    "forecast_rows": 7,
+    "unique_games": 6,
+    "unique_players": 7,
+    "unique_player_games": 7,
+    "query_membership_sha256": "4980aee9bdedea32f8092a06bc418d78ede59c8d8d2fbe2c7498dbd7c06b81dc",
+    "selection_metrics": {
+      "WIN": 2,
+      "LOSS": 5,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 2,
+        "LOSS": 5,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.2857142857142857,
+      "denominators": {
+        "outer_rows": 7,
+        "decided": 7,
+        "supported_threshold_outcomes": 7,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.25,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 7
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 6,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": null,
+        "game_interval_status": "INSUFFICIENT_GAME_CLUSTERS",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.2857142857142857
+      },
+      "technical_unavailable": 3,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 3
+    },
+    "selection_loss_rate": 0.7142857142857143,
+    "mae": 61.84189577001967,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-0d6e499fd3a5b8c6d3aa9202",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": 44.06983350716255,
+    "numerical_n": 7,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "ABC-B-C-788cb04a27428db3be8ca067",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::hgb-direct-history-controls-v1:absolute_error_point::H-MULTI::absolute_error_point",
+    "product_id": "absolute_error_point",
+    "strategy": "P1",
+    "target": "pass_yd",
+    "side": "under",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_7",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 7,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      7
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_yd_W7",
+    "n": 18,
+    "forecast_rows": 18,
+    "unique_games": 13,
+    "unique_players": 18,
+    "unique_player_games": 18,
+    "query_membership_sha256": "b525da420f946c42bcbfa414a3748e7b1fc59eca243a6829c3e9c70ca0d9f0cd",
+    "selection_metrics": {
+      "WIN": 4,
+      "LOSS": 14,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 4,
+        "LOSS": 14,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.2222222222222222,
+      "denominators": {
+        "outer_rows": 18,
+        "decided": 18,
+        "supported_threshold_outcomes": 18,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.6428571428571429,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 18
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 13,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": [
+          0.058823529411764705,
+          0.3888888888888889
+        ],
+        "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.2222222222222222
+      },
+      "technical_unavailable": 3,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 3
+    },
+    "selection_loss_rate": 0.7777777777777778,
+    "mae": 65.90895435733498,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-0d6e499fd3a5b8c6d3aa9202",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": -53.66200740410426,
+    "numerical_n": 18,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "ABC-B-C-2e8f267e9da4e5a0cf99641c",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::hgb-direct-history-controls-v1:absolute_error_point::H-MULTI::absolute_error_point",
+    "product_id": "absolute_error_point",
+    "strategy": "P1",
+    "target": "pass_yd",
+    "side": "Combined",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_7",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 7,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      7
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_yd_W7",
+    "n": 25,
+    "forecast_rows": 25,
+    "unique_games": 14,
+    "unique_players": 25,
+    "unique_player_games": 25,
+    "query_membership_sha256": "db970798c64ff97fe35d19fe195c5a197fc820d838839f54969088e19deb990a",
+    "selection_metrics": {
+      "WIN": 6,
+      "LOSS": 19,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 6,
+        "LOSS": 19,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.24,
+      "denominators": {
+        "outer_rows": 25,
+        "decided": 25,
+        "supported_threshold_outcomes": 25,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.8928571428571429,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 25
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 14,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": [
+          0.11314102564102564,
+          0.37037037037037035
+        ],
+        "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.24
+      },
+      "technical_unavailable": 3,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 3
+    },
+    "selection_loss_rate": 0.76,
+    "mae": 64.77017795288668,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-0d6e499fd3a5b8c6d3aa9202",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": -26.297091948949557,
+    "numerical_n": 25,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "B-WEEK-FULL-NATIVE-878e848640ee978b318c5482",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B::hgb-direct-history-controls-v1:absolute_error_point::H-MULTI::absolute_error_point",
+    "history_regime": "H-MULTI",
+    "product_id": "absolute_error_point",
+    "target": "pass_yd",
+    "population": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "season": 2026,
+    "week": 7,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      7
+    ],
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_yd_W7",
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "forecast_rows": 28,
+    "admitted_forecast_rows": 25,
+    "unavailable_forecasts": 3,
+    "fallback_rows": 0,
+    "fallback_unknown": 0,
+    "unique_games": 14,
+    "unique_player_games": 25,
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 25
+      },
+      "abs_le_1": {
+        "numerator": 0,
+        "denominator": 25
+      },
+      "abs_lt_5": {
+        "numerator": 0,
+        "denominator": 25
+      },
+      "abs_le_5": {
+        "numerator": 0,
+        "denominator": 25
+      },
+      "abs_lt_10": {
+        "numerator": 0,
+        "denominator": 25
+      },
+      "abs_le_10": {
+        "numerator": 0,
+        "denominator": 25
+      },
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 25
+      }
+    },
+    "parent_cumulative_record_id": "I-SIDE-0d6e499fd3a5b8c6d3aa9202",
+    "source_vintage": "UNCHANGED_PARENT_RETAINED_POINT_AND_LABEL_VERSION",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "n": 25,
+    "mae": 64.77017795288668,
+    "mse": 6025.8666039450145,
+    "rmse": 77.62645556731941,
+    "bias": -26.297091948949557,
+    "p90_abs": 110.0803805429992,
+    "p95_abs": 150.33739690933675,
+    "max_abs": 194.4177621082631,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.0,
+    "abs_lt_5": 0.0,
+    "abs_le_5": 0.0,
+    "abs_lt_10": 0.0,
+    "abs_le_10": 0.0
+  },
+  {
+    "record_id": "ABC-B-C-88f9d38fd0c3c95823d305ba",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1::H-MULTI::lower_median",
+    "product_id": "lower_median",
+    "strategy": "P1",
+    "target": "pass_cmp",
+    "side": "over",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_5",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 5,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      5
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_cmp_W5",
+    "n": 9,
+    "forecast_rows": 9,
+    "unique_games": 7,
+    "unique_players": 9,
+    "unique_player_games": 9,
+    "query_membership_sha256": "c59b586931ce2eda1cd0dee3d7b0a4458233b9871abd8954d3962e86793ba9cc",
+    "selection_metrics": {
+      "WIN": 4,
+      "LOSS": 5,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 4,
+        "LOSS": 5,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.4444444444444444,
+      "denominators": {
+        "outer_rows": 9,
+        "decided": 9,
+        "supported_threshold_outcomes": 9,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.32142857142857145,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 9
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 7,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": null,
+        "game_interval_status": "INSUFFICIENT_GAME_CLUSTERS",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.4444444444444444
+      },
+      "technical_unavailable": 0,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 0
+    },
+    "selection_loss_rate": 0.5555555555555556,
+    "mae": 3.3333333333333335,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-00dd4b29f06dfd8bddea9bfe",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": 2.0,
+    "numerical_n": 9,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "ABC-B-C-c7a4d772fd9cbb1de776b0c9",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1::H-MULTI::lower_median",
+    "product_id": "lower_median",
+    "strategy": "P1",
+    "target": "pass_cmp",
+    "side": "under",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_5",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 5,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      5
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_cmp_W5",
+    "n": 19,
+    "forecast_rows": 19,
+    "unique_games": 12,
+    "unique_players": 19,
+    "unique_player_games": 19,
+    "query_membership_sha256": "7ac4cf23e742b3f070746a8ebaee995071e8c717e04fcfdb7e03b0117a3f919d",
+    "selection_metrics": {
+      "WIN": 9,
+      "LOSS": 10,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 9,
+        "LOSS": 10,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.47368421052631576,
+      "denominators": {
+        "outer_rows": 19,
+        "decided": 19,
+        "supported_threshold_outcomes": 19,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.6785714285714286,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 19
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 12,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": [
+          0.2969117647058824,
+          0.6666666666666666
+        ],
+        "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.47368421052631576
+      },
+      "technical_unavailable": 0,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 0
+    },
+    "selection_loss_rate": 0.5263157894736842,
+    "mae": 5.578947368421052,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-00dd4b29f06dfd8bddea9bfe",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": -3.473684210526316,
+    "numerical_n": 19,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "ABC-B-C-41acc8f498fa829d272de844",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1::H-MULTI::lower_median",
+    "product_id": "lower_median",
+    "strategy": "P1",
+    "target": "pass_cmp",
+    "side": "Combined",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_5",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 5,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      5
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_cmp_W5",
+    "n": 28,
+    "forecast_rows": 28,
+    "unique_games": 14,
+    "unique_players": 28,
+    "unique_player_games": 28,
+    "query_membership_sha256": "023f6106ab97fff902f886aa7a65af9b215a00a9d1fa1d364a0c5015ec9d4a7d",
+    "selection_metrics": {
+      "WIN": 13,
+      "LOSS": 15,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 13,
+        "LOSS": 15,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.4642857142857143,
+      "denominators": {
+        "outer_rows": 28,
+        "decided": 28,
+        "supported_threshold_outcomes": 28,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 1.0,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 28
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 14,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": [
+          0.32142857142857145,
+          0.6071428571428571
+        ],
+        "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.4642857142857143
+      },
+      "technical_unavailable": 0,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 0
+    },
+    "selection_loss_rate": 0.5357142857142857,
+    "mae": 4.857142857142857,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-00dd4b29f06dfd8bddea9bfe",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": -1.7142857142857142,
+    "numerical_n": 28,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "B-WEEK-FULL-NATIVE-362bef88fabd48f2c50b1aa3",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1::H-MULTI::lower_median",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "target": "pass_cmp",
+    "population": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "season": 2026,
+    "week": 5,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      5
+    ],
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_cmp_W5",
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "forecast_rows": 28,
+    "admitted_forecast_rows": 28,
+    "unavailable_forecasts": 0,
+    "fallback_rows": 0,
+    "fallback_unknown": 0,
+    "unique_games": 14,
+    "unique_player_games": 28,
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 3,
+        "denominator": 28
+      },
+      "abs_le_1": {
+        "numerator": 6,
+        "denominator": 28
+      },
+      "abs_lt_5": {
+        "numerator": 15,
+        "denominator": 28
+      },
+      "abs_le_5": {
+        "numerator": 19,
+        "denominator": 28
+      },
+      "abs_lt_10": {
+        "numerator": 25,
+        "denominator": 28
+      },
+      "abs_le_10": {
+        "numerator": 26,
+        "denominator": 28
+      },
+      "exact_rate": {
+        "numerator": 3,
+        "denominator": 28
+      }
+    },
+    "parent_cumulative_record_id": "I-SIDE-00dd4b29f06dfd8bddea9bfe",
+    "source_vintage": "UNCHANGED_PARENT_RETAINED_POINT_AND_LABEL_VERSION",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "n": 28,
+    "mae": 4.857142857142857,
+    "mse": 39.5,
+    "rmse": 6.284902544988268,
+    "bias": -1.7142857142857142,
+    "p90_abs": 8.600000000000001,
+    "p95_abs": 13.249999999999993,
+    "max_abs": 17.0,
+    "exact_rate": 0.10714285714285714,
+    "abs_lt_1": 0.10714285714285714,
+    "abs_le_1": 0.21428571428571427,
+    "abs_lt_5": 0.5357142857142857,
+    "abs_le_5": 0.6785714285714286,
+    "abs_lt_10": 0.8928571428571429,
+    "abs_le_10": 0.9285714285714286
+  },
+  {
+    "record_id": "ABC-B-C-e78435d177c46ec915fdd626",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1::H-MULTI::lower_median",
+    "product_id": "lower_median",
+    "strategy": "P1",
+    "target": "pass_cmp",
+    "side": "over",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_6",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 6,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      6
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_cmp_W6",
+    "n": 8,
+    "forecast_rows": 8,
+    "unique_games": 8,
+    "unique_players": 8,
+    "unique_player_games": 8,
+    "query_membership_sha256": "95b792d08fb3e5312cefa0b06f4b531915b4017f5e2214427a4ce68393d39562",
+    "selection_metrics": {
+      "WIN": 4,
+      "LOSS": 4,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 4,
+        "LOSS": 4,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.5,
+      "denominators": {
+        "outer_rows": 8,
+        "decided": 8,
+        "supported_threshold_outcomes": 8,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.2857142857142857,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 8
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 8,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": [
+          0.18437500000000018,
+          0.875
+        ],
+        "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.5
+      },
+      "technical_unavailable": 2,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 2
+    },
+    "selection_loss_rate": 0.5,
+    "mae": 5.875,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-00dd4b29f06dfd8bddea9bfe",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": -2.125,
+    "numerical_n": 8,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "ABC-B-C-7a312f4363737945a27091a8",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1::H-MULTI::lower_median",
+    "product_id": "lower_median",
+    "strategy": "P1",
+    "target": "pass_cmp",
+    "side": "under",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_6",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 6,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      6
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_cmp_W6",
+    "n": 18,
+    "forecast_rows": 18,
+    "unique_games": 13,
+    "unique_players": 18,
+    "unique_player_games": 18,
+    "query_membership_sha256": "57db11e706e1a4abbde331c3df9829438bf6658a4de8a66f6636ef400e0a6911",
+    "selection_metrics": {
+      "WIN": 6,
+      "LOSS": 12,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 6,
+        "LOSS": 12,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.3333333333333333,
+      "denominators": {
+        "outer_rows": 18,
+        "decided": 18,
+        "supported_threshold_outcomes": 18,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.6428571428571429,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 18
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 13,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": [
+          0.14625,
+          0.5592013888888887
+        ],
+        "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.3333333333333333
+      },
+      "technical_unavailable": 2,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 2
+    },
+    "selection_loss_rate": 0.6666666666666666,
+    "mae": 4.611111111111111,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-00dd4b29f06dfd8bddea9bfe",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": -2.8333333333333335,
+    "numerical_n": 18,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "ABC-B-C-38f2f1fb28b3c75129d14d64",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1::H-MULTI::lower_median",
+    "product_id": "lower_median",
+    "strategy": "P1",
+    "target": "pass_cmp",
+    "side": "Combined",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_6",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 6,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      6
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_cmp_W6",
+    "n": 26,
+    "forecast_rows": 26,
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "query_membership_sha256": "3839ece57ea64c516f71a75c52430e5a92f5ba725303c3210b4dd7302ce4d983",
+    "selection_metrics": {
+      "WIN": 10,
+      "LOSS": 16,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 10,
+        "LOSS": 16,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.38461538461538464,
+      "denominators": {
+        "outer_rows": 26,
+        "decided": 26,
+        "supported_threshold_outcomes": 26,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.9285714285714286,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 26
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 13,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": [
+          0.19230769230769232,
+          0.5384615384615384
+        ],
+        "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.38461538461538464
+      },
+      "technical_unavailable": 2,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 2
+    },
+    "selection_loss_rate": 0.6153846153846154,
+    "mae": 5.0,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-00dd4b29f06dfd8bddea9bfe",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": -2.6153846153846154,
+    "numerical_n": 26,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "B-WEEK-FULL-NATIVE-4d7b8ec4f8e48a834478cc2d",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1::H-MULTI::lower_median",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "target": "pass_cmp",
+    "population": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "season": 2026,
+    "week": 6,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      6
+    ],
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_cmp_W6",
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "forecast_rows": 28,
+    "admitted_forecast_rows": 26,
+    "unavailable_forecasts": 2,
+    "fallback_rows": 0,
+    "fallback_unknown": 0,
+    "unique_games": 13,
+    "unique_player_games": 26,
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 26
+      },
+      "abs_le_1": {
+        "numerator": 3,
+        "denominator": 26
+      },
+      "abs_lt_5": {
+        "numerator": 16,
+        "denominator": 26
+      },
+      "abs_le_5": {
+        "numerator": 18,
+        "denominator": 26
+      },
+      "abs_lt_10": {
+        "numerator": 21,
+        "denominator": 26
+      },
+      "abs_le_10": {
+        "numerator": 22,
+        "denominator": 26
+      },
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 26
+      }
+    },
+    "parent_cumulative_record_id": "I-SIDE-00dd4b29f06dfd8bddea9bfe",
+    "source_vintage": "UNCHANGED_PARENT_RETAINED_POINT_AND_LABEL_VERSION",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "n": 26,
+    "mae": 5.0,
+    "mse": 38.23076923076923,
+    "rmse": 6.183103527418026,
+    "bias": -2.6153846153846154,
+    "p90_abs": 11.0,
+    "p95_abs": 11.75,
+    "max_abs": 13.0,
+    "exact_rate": 0.038461538461538464,
+    "abs_lt_1": 0.038461538461538464,
+    "abs_le_1": 0.11538461538461539,
+    "abs_lt_5": 0.6153846153846154,
+    "abs_le_5": 0.6923076923076923,
+    "abs_lt_10": 0.8076923076923077,
+    "abs_le_10": 0.8461538461538461
+  },
+  {
+    "record_id": "ABC-B-C-21654347d57dd908a370f341",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1::H-MULTI::lower_median",
+    "product_id": "lower_median",
+    "strategy": "P1",
+    "target": "pass_cmp",
+    "side": "over",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_7",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 7,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      7
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_cmp_W7",
+    "n": 6,
+    "forecast_rows": 6,
+    "unique_games": 5,
+    "unique_players": 6,
+    "unique_player_games": 6,
+    "query_membership_sha256": "cb5433e04691e60e0bf0b6c9b2bf77c416586c56784a09a83ef2d596067dd608",
+    "selection_metrics": {
+      "WIN": 3,
+      "LOSS": 3,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 3,
+        "LOSS": 3,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.5,
+      "denominators": {
+        "outer_rows": 6,
+        "decided": 6,
+        "supported_threshold_outcomes": 6,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.21428571428571427,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 6
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 5,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": null,
+        "game_interval_status": "INSUFFICIENT_GAME_CLUSTERS",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.5
+      },
+      "technical_unavailable": 6,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 6
+    },
+    "selection_loss_rate": 0.5,
+    "mae": 3.8333333333333335,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-00dd4b29f06dfd8bddea9bfe",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": 0.5,
+    "numerical_n": 6,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "ABC-B-C-4db296a3a66aa2096dc9e2cf",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1::H-MULTI::lower_median",
+    "product_id": "lower_median",
+    "strategy": "P1",
+    "target": "pass_cmp",
+    "side": "under",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_7",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 7,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      7
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_cmp_W7",
+    "n": 16,
+    "forecast_rows": 16,
+    "unique_games": 10,
+    "unique_players": 16,
+    "unique_player_games": 16,
+    "query_membership_sha256": "9e341ee56340498c307833b9432185067640a87bd78420b48325bc09fb642e88",
+    "selection_metrics": {
+      "WIN": 7,
+      "LOSS": 9,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 7,
+        "LOSS": 9,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.4375,
+      "denominators": {
+        "outer_rows": 16,
+        "decided": 16,
+        "supported_threshold_outcomes": 16,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.5714285714285714,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 16
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 10,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": [
+          0.21428571428571427,
+          0.7058823529411765
+        ],
+        "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.4375
+      },
+      "technical_unavailable": 6,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 6
+    },
+    "selection_loss_rate": 0.5625,
+    "mae": 5.9375,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-00dd4b29f06dfd8bddea9bfe",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": -0.5625,
+    "numerical_n": 16,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "ABC-B-C-c33e5c042de543669a17dc52",
+    "record_kind": "prop_selection_evaluation",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1::H-MULTI::lower_median",
+    "product_id": "lower_median",
+    "strategy": "P1",
+    "target": "pass_cmp",
+    "side": "Combined",
+    "cohort_id": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "K": null,
+    "rank_scope": null,
+    "time_panel_id": "E1_7",
+    "season_alias_of_week_view": false,
+    "season": 2026,
+    "week": 7,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      7
+    ],
+    "period": "full_game",
+    "season_type": "REG",
+    "statistic_period": "full_game",
+    "overtime": true,
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_cmp_W7",
+    "n": 22,
+    "forecast_rows": 22,
+    "unique_games": 11,
+    "unique_players": 22,
+    "unique_player_games": 22,
+    "query_membership_sha256": "b63c1a5cac8ad3e7d65733a3b630323906b7ff23416fc2094e75c835142c7e30",
+    "selection_metrics": {
+      "WIN": 10,
+      "LOSS": 12,
+      "PUSH": 0,
+      "status_counts": {
+        "WIN": 10,
+        "LOSS": 12,
+        "PUSH": 0,
+        "UNKNOWN_PARTICIPATION": 0,
+        "MISSING_ACTUAL": 0,
+        "PENDING": 0,
+        "VOID": 0,
+        "UNRESOLVED_CONTRACT": 0
+      },
+      "hit_rate": 0.45454545454545453,
+      "denominators": {
+        "outer_rows": 22,
+        "decided": 22,
+        "supported_threshold_outcomes": 22,
+        "unresolved": 0
+      },
+      "selection_pool_count": 28,
+      "eligible_rank_pool_n": 28,
+      "abstentions_outside_selected_partition": 0,
+      "selection_coverage": 0.7857142857142857,
+      "bookmaker_settlement_status_counts": {
+        "UNRESOLVED_CONTRACT": 22
+      },
+      "probability_scores": {
+        "brier": null,
+        "log_loss": null,
+        "reason": "NO_QUALIFIED_LINE_PROBABILITY"
+      },
+      "returns": {
+        "net": null,
+        "ROI": null,
+        "drawdown": null,
+        "reason": "NO_QUALIFIED_PRICE_OR_BOOK_SETTLEMENT"
+      },
+      "game_uncertainty": {
+        "paired_n": null,
+        "game_clusters": 11,
+        "replicates": 500,
+        "seed": 1703,
+        "week_interval": null,
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "game_interval": [
+          0.22727272727272727,
+          0.6818181818181818
+        ],
+        "game_interval_status": "GAME_CLUSTER_SENSITIVITY_BOOTSTRAP",
+        "selection_limit": "exposeddescriptive;notselection/multiplicityadjusted",
+        "estimate": 0.45454545454545453
+      },
+      "technical_unavailable": 6,
+      "admitted_rule_abstentions": 0,
+      "fallback_issued": 0,
+      "fallback_status_unknown": 6
+    },
+    "selection_loss_rate": 0.5454545454545454,
+    "mae": 5.363636363636363,
+    "mse": null,
+    "brier": null,
+    "log_loss": null,
+    "evidence": "REPRODUCED_FROM_DATA",
+    "selection_evidence": "RETROSPECTIVE_RULE_REPLAY",
+    "source_vintage": "UNCHANGED_PARENT_POINT_AND_LABELS;EXPLICIT_FULL_BOARD_AVAILABILITY",
+    "settlement_status": "UNRESOLVED_CONTRACT",
+    "null_reason": null,
+    "period_id": "E1",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "RETAINED_PROVIDER_LABELLED_POINT_RULE_REPLAY",
+    "whole_week_complete": false,
+    "shared_benchmark_status": "B_SOURCE_SPECIFIC_WEEK_PARTITION_AWAITING_C_INTAKE",
+    "history_regime": "H-MULTI",
+    "base_procedure_id": "v2-qualified-position-defense-information-wave-v1:D1",
+    "decision_rule": "P1",
+    "parent_cumulative_record_id": "I-SIDE-00dd4b29f06dfd8bddea9bfe",
+    "parent_context": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "source_parent_label": "FOCAL_COMMON_FULL_SYSTEM:COMPARATOR=SAVED_ADJUSTED_POINT_DIRECTION_RETAINED_PRECISION:saved_precision_point",
+    "bias": -0.2727272727272727,
+    "numerical_n": 22,
+    "numerical_panel": "Same decided offered rows of this side; not broad participant MAE"
+  },
+  {
+    "record_id": "B-WEEK-FULL-NATIVE-feb4b1d70809cd561de310e0",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1::H-MULTI::lower_median",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "target": "pass_cmp",
+    "population": "ACTUAL_FULL_SYSTEM_AVAILABILITY",
+    "season": 2026,
+    "week": 7,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      7
+    ],
+    "evaluation_panel_id": "B_WEEKLY_FOCAL_FULL_SYSTEM_pass_cmp_W7",
+    "horizon_id": "RETAINED_DECISION_ELIGIBLE_KNOWN_TARGET_TIME",
+    "forecast_rows": 28,
+    "admitted_forecast_rows": 22,
+    "unavailable_forecasts": 6,
+    "fallback_rows": 0,
+    "fallback_unknown": 0,
+    "unique_games": 11,
+    "unique_player_games": 22,
+    "precision_counts": {
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 22
+      },
+      "abs_le_1": {
+        "numerator": 2,
+        "denominator": 22
+      },
+      "abs_lt_5": {
+        "numerator": 9,
+        "denominator": 22
+      },
+      "abs_le_5": {
+        "numerator": 10,
+        "denominator": 22
+      },
+      "abs_lt_10": {
+        "numerator": 21,
+        "denominator": 22
+      },
+      "abs_le_10": {
+        "numerator": 21,
+        "denominator": 22
+      },
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 22
+      }
+    },
+    "parent_cumulative_record_id": "I-SIDE-00dd4b29f06dfd8bddea9bfe",
+    "source_vintage": "UNCHANGED_PARENT_RETAINED_POINT_AND_LABEL_VERSION",
+    "evidence": "REPRODUCED_FROM_DATA",
+    "n": 22,
+    "mae": 5.363636363636363,
+    "mse": 36.63636363636363,
+    "rmse": 6.052798000624474,
+    "bias": -0.2727272727272727,
+    "p90_abs": 8.0,
+    "p95_abs": 8.0,
+    "max_abs": 13.0,
+    "exact_rate": 0.045454545454545456,
+    "abs_lt_1": 0.045454545454545456,
+    "abs_le_1": 0.09090909090909091,
+    "abs_lt_5": 0.4090909090909091,
+    "abs_le_5": 0.45454545454545453,
+    "abs_lt_10": 0.9545454545454546,
+    "abs_le_10": 0.9545454545454546
+  }
+]

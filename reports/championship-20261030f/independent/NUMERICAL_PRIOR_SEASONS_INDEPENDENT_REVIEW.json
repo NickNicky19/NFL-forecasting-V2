@@ -1,0 +1,4319 @@
+{
+  "state": "PASS_INDEPENDENT_RETAINED_NUMERICAL_JOINS_LOSSES_PARTITIONS_AND_UNCERTAINTY",
+  "protocol_sha256": "6f68ab12c998d5d5573a5ed1ae1528c0d569cf2debd60276ce2ea1ae3bb240fb",
+  "checked_at_utc": "2026-10-30T23:50:52.036595+00:00",
+  "checked_seasons": [
+    {
+      "season": 2025,
+      "pairs": 45,
+      "independently_checked_pair_views": 135,
+      "independently_checked_univariate_views": 270,
+      "source_rows_scanned": 1676219,
+      "selected_recipe_query_rows": 187320,
+      "distinct_query_labels": 35327,
+      "distinct_supported_query_labels": 34891,
+      "unique_games": 272,
+      "unique_weeks": 18,
+      "source_bound_score_sha256": "184839877df6fd7834a9b48e342369d7dda65dfcd2e99cf8be419c13c893d067",
+      "source_bound_pairs_sha256": "0ee1249ef217a9821d10642c678b6df1be2d1fd39da888382e76e7f5544babce",
+      "full_system_comparisons": [
+        {
+          "pair_id": "PAIR-cec3d2379b4194b1cc87",
+          "target": "anytime_td",
+          "product": "event_probability",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:log_loss_probability:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5294,
+          "candidate_error": 0.14277034735823943,
+          "comparator_error": 0.1433848311927382,
+          "delta": -0.000614483834498769,
+          "week_interval": [
+            -0.0014381876384264955,
+            0.0001542119272426976
+          ],
+          "row_loss_partition": {
+            "better_rows": 2745,
+            "worse_rows": 2549,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-0e1b59e8c442e8780186",
+          "target": "nick-chart-ppr-v1",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-qualified-partial-chart-direct-wave-v1:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5937,
+          "candidate_error": 4.365366346639717,
+          "comparator_error": 4.381024086238841,
+          "delta": -0.01565773959912415,
+          "week_interval": [
+            -0.02970122765094291,
+            0.0010922614995830793
+          ],
+          "row_loss_partition": {
+            "better_rows": 2443,
+            "worse_rows": 2254,
+            "tied_rows": 1240
+          }
+        },
+        {
+          "pair_id": "PAIR-dfeeb82979119491b1e6",
+          "target": "nick-chart-ppr-v1",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-qualified-partial-chart-direct-wave-v1:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-qualified-partial-chart-direct-wave-v1:regularized_glm_law:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5937,
+          "candidate_error": 38.50854586791449,
+          "comparator_error": 38.686692673067206,
+          "delta": -0.17814680515270975,
+          "week_interval": [
+            -0.42407148664300043,
+            0.0856416188575747
+          ],
+          "row_loss_partition": {
+            "better_rows": 3020,
+            "worse_rows": 2739,
+            "tied_rows": 178
+          }
+        },
+        {
+          "pair_id": "PAIR-f82cb6f4c4c09daf4320",
+          "target": "pass_att",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 8.488383573526102,
+          "comparator_error": 8.573795180722891,
+          "delta": -0.08541160719678909,
+          "week_interval": [
+            -0.22488952386820527,
+            0.0653265697765282
+          ],
+          "row_loss_partition": {
+            "better_rows": 315,
+            "worse_rows": 349,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-b54da05232a2058b65ee",
+          "target": "pass_att",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 664,
+          "candidate_error": 120.8818293118826,
+          "comparator_error": 123.34357194860488,
+          "delta": -2.461742636722256,
+          "week_interval": [
+            -4.825969302518166,
+            -0.45666989196434804
+          ],
+          "row_loss_partition": {
+            "better_rows": 351,
+            "worse_rows": 313,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-3a452f5a703d3e9f1a71",
+          "target": "pass_cmp",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 664,
+          "candidate_error": 5.82770760580483,
+          "comparator_error": 5.849179411334087,
+          "delta": -0.021471805529256812,
+          "week_interval": [
+            -0.08329841793839832,
+            0.04848423796514027
+          ],
+          "row_loss_partition": {
+            "better_rows": 331,
+            "worse_rows": 333,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-9e5a4bbb948d3a3144c6",
+          "target": "pass_cmp",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 664,
+          "candidate_error": 54.26436179102685,
+          "comparator_error": 54.33874276831011,
+          "delta": -0.07438097728326229,
+          "week_interval": [
+            -1.0309834870240764,
+            1.1852348855467185
+          ],
+          "row_loss_partition": {
+            "better_rows": 331,
+            "worse_rows": 333,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-74e89fc7161f6a4d0b2f",
+          "target": "pass_int",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 664,
+          "candidate_error": 0.5572289156626506,
+          "comparator_error": 0.5677710843373494,
+          "delta": -0.010542168674698794,
+          "week_interval": [
+            -0.029897667351863437,
+            0.008321123529144487
+          ],
+          "row_loss_partition": {
+            "better_rows": 24,
+            "worse_rows": 17,
+            "tied_rows": 623
+          }
+        },
+        {
+          "pair_id": "PAIR-8e1d02fef6940514ff6e",
+          "target": "pass_int",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 0.6131033133104393,
+          "comparator_error": 0.6135519967299798,
+          "delta": -0.00044868341954060903,
+          "week_interval": [
+            -0.007784119964982661,
+            0.005605420402351701
+          ],
+          "row_loss_partition": {
+            "better_rows": 346,
+            "worse_rows": 318,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-fdcffdfe18951285acf9",
+          "target": "pass_td",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 0.8448795180722891,
+          "comparator_error": 0.8508202779438921,
+          "delta": -0.005940759871603032,
+          "week_interval": [
+            -0.0414338652702687,
+            0.027718021749129938
+          ],
+          "row_loss_partition": {
+            "better_rows": 181,
+            "worse_rows": 139,
+            "tied_rows": 344
+          }
+        },
+        {
+          "pair_id": "PAIR-170c8940bd021bd58169",
+          "target": "pass_td",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 1.1769365108704948,
+          "comparator_error": 1.181234716180882,
+          "delta": -0.004298205310387165,
+          "week_interval": [
+            -0.014871113778940726,
+            0.007517395163056922
+          ],
+          "row_loss_partition": {
+            "better_rows": 349,
+            "worse_rows": 315,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-444a64c2c1a0208dc510",
+          "target": "pass_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 68.68696852478297,
+          "comparator_error": 69.0168343003419,
+          "delta": -0.32986577555893065,
+          "week_interval": [
+            -1.1036818522167404,
+            0.5189578261003678
+          ],
+          "row_loss_partition": {
+            "better_rows": 336,
+            "worse_rows": 328,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-42d71acd83cf9f63fe30",
+          "target": "pass_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 7333.342610252294,
+          "comparator_error": 7862.741229818167,
+          "delta": -529.3986195658713,
+          "week_interval": [
+            -815.2593101435566,
+            -208.5545382352023
+          ],
+          "row_loss_partition": {
+            "better_rows": 359,
+            "worse_rows": 305,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-d4293ada27905abed868",
+          "target": "rec",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5294,
+          "candidate_error": 1.179448432187382,
+          "comparator_error": 1.1887041934265206,
+          "delta": -0.009255761239138648,
+          "week_interval": [
+            -0.01650422381488542,
+            -0.002017554617655272
+          ],
+          "row_loss_partition": {
+            "better_rows": 243,
+            "worse_rows": 194,
+            "tied_rows": 4857
+          }
+        },
+        {
+          "pair_id": "PAIR-d1200c89190472d46510",
+          "target": "rec",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 5294,
+          "candidate_error": 2.8095114772392606,
+          "comparator_error": 2.831017996462648,
+          "delta": -0.021506519223387286,
+          "week_interval": [
+            -0.040135003585207586,
+            -0.0007996296605319742
+          ],
+          "row_loss_partition": {
+            "better_rows": 2559,
+            "worse_rows": 2735,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-09232f18e50cf3d29cda",
+          "target": "rec_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 5294,
+          "candidate_error": 15.309217982621837,
+          "comparator_error": 15.334538680404954,
+          "delta": -0.025320697783118934,
+          "week_interval": [
+            -0.13377469269738243,
+            0.08204380958653486
+          ],
+          "row_loss_partition": {
+            "better_rows": 2864,
+            "worse_rows": 2430,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-1b83a068d0efcde9fdd2",
+          "target": "rec_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 5294,
+          "candidate_error": 533.2794945902446,
+          "comparator_error": 533.6254250094446,
+          "delta": -0.34593041920015394,
+          "week_interval": [
+            -6.252585129619457,
+            5.136352802761855
+          ],
+          "row_loss_partition": {
+            "better_rows": 2721,
+            "worse_rows": 2573,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-7caec702ec81efc66b23",
+          "target": "rush_att",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-hgb-rush-att-qb-rb-specialization-v1:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 2229,
+          "candidate_error": 2.867205024674742,
+          "comparator_error": 2.8970884561431047,
+          "delta": -0.02988343146836283,
+          "week_interval": [
+            -0.054491451725802775,
+            -0.0026645500171890474
+          ],
+          "row_loss_partition": {
+            "better_rows": 1228,
+            "worse_rows": 1001,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-96cf3723afc534a275f6",
+          "target": "rush_att",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2229,
+          "candidate_error": 17.007666019633085,
+          "comparator_error": 17.162254591961258,
+          "delta": -0.1545885723281732,
+          "week_interval": [
+            -0.32367726795714424,
+            -0.007457079938591092
+          ],
+          "row_loss_partition": {
+            "better_rows": 1081,
+            "worse_rows": 1148,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-cdbcea59ece516de4401",
+          "target": "rush_rec_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5294,
+          "candidate_error": 19.710793803717955,
+          "comparator_error": 19.73781639591991,
+          "delta": -0.027022592201953143,
+          "week_interval": [
+            -0.14752474375538047,
+            0.09032687791405725
+          ],
+          "row_loss_partition": {
+            "better_rows": 2633,
+            "worse_rows": 2661,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-bc115b687d6ba83c3bac",
+          "target": "rush_rec_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 5294,
+          "candidate_error": 815.8203626747261,
+          "comparator_error": 816.427467342038,
+          "delta": -0.6071046673117417,
+          "week_interval": [
+            -4.806930917371724,
+            3.2167631443213556
+          ],
+          "row_loss_partition": {
+            "better_rows": 2620,
+            "worse_rows": 2674,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-d7d2e404be8cf0f8fcb4",
+          "target": "rush_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2229,
+          "candidate_error": 16.71736204576043,
+          "comparator_error": 16.780619111709285,
+          "delta": -0.063257065948856,
+          "week_interval": [
+            -0.1512236717343734,
+            0.029093589896342163
+          ],
+          "row_loss_partition": {
+            "better_rows": 729,
+            "worse_rows": 689,
+            "tied_rows": 811
+          }
+        },
+        {
+          "pair_id": "PAIR-bc5671864f843cf06bd7",
+          "target": "rush_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2229,
+          "candidate_error": 654.5240229457153,
+          "comparator_error": 655.9390593076141,
+          "delta": -1.4150363618988957,
+          "week_interval": [
+            -8.162629975812996,
+            5.057967765142978
+          ],
+          "row_loss_partition": {
+            "better_rows": 1086,
+            "worse_rows": 1143,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-d83beeeafb56c83b4cde",
+          "target": "nick-chart-ppr-v1",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-qualified-partial-chart-direct-wave-v1:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5937,
+          "candidate_error": 3.111152347156726,
+          "comparator_error": 3.1283780592606547,
+          "delta": -0.017225712103928464,
+          "week_interval": [
+            -0.025877516541873986,
+            -0.008109762839545608
+          ],
+          "row_loss_partition": {
+            "better_rows": 2857,
+            "worse_rows": 2902,
+            "tied_rows": 178
+          }
+        },
+        {
+          "pair_id": "PAIR-86faba77d590fdfbb4ca",
+          "target": "pass_att",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 6.014965370879109,
+          "comparator_error": 6.308375275258372,
+          "delta": -0.2934099043792636,
+          "week_interval": [
+            -0.445977608843031,
+            -0.10680883636616795
+          ],
+          "row_loss_partition": {
+            "better_rows": 377,
+            "worse_rows": 268,
+            "tied_rows": 19
+          }
+        },
+        {
+          "pair_id": "PAIR-f295ddac8d3ee01a7a09",
+          "target": "pass_cmp",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 4.119750796331095,
+          "comparator_error": 4.25905023123876,
+          "delta": -0.13929943490766517,
+          "week_interval": [
+            -0.23492931364438782,
+            -0.02446028951681548
+          ],
+          "row_loss_partition": {
+            "better_rows": 360,
+            "worse_rows": 285,
+            "tied_rows": 19
+          }
+        },
+        {
+          "pair_id": "PAIR-787233ac6acf160206f5",
+          "target": "pass_int",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 664,
+          "candidate_error": 0.37691875848634226,
+          "comparator_error": 0.3776048311611086,
+          "delta": -0.0006860726747663043,
+          "week_interval": [
+            -0.005826695394060629,
+            0.004374974827250562
+          ],
+          "row_loss_partition": {
+            "better_rows": 318,
+            "worse_rows": 346,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-7b739776842ed6560abf",
+          "target": "pass_td",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 0.5759503475756793,
+          "comparator_error": 0.5862278447556488,
+          "delta": -0.01027749717996962,
+          "week_interval": [
+            -0.02096745758708035,
+            0.0001451454266655981
+          ],
+          "row_loss_partition": {
+            "better_rows": 355,
+            "worse_rows": 290,
+            "tied_rows": 19
+          }
+        },
+        {
+          "pair_id": "PAIR-7f586700102e946015d8",
+          "target": "pass_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 48.83859680614034,
+          "comparator_error": 50.34204434679028,
+          "delta": -1.5034475406499448,
+          "week_interval": [
+            -2.6098189844976427,
+            -0.2804397778656096
+          ],
+          "row_loss_partition": {
+            "better_rows": 359,
+            "worse_rows": 286,
+            "tied_rows": 19
+          }
+        },
+        {
+          "pair_id": "PAIR-62fc03f0720b0dedd8ed",
+          "target": "rec",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5294,
+          "candidate_error": 0.8397886471218835,
+          "comparator_error": 0.8439437436867263,
+          "delta": -0.004155096564842921,
+          "week_interval": [
+            -0.005910370677783849,
+            -0.0022775590097865108
+          ],
+          "row_loss_partition": {
+            "better_rows": 2678,
+            "worse_rows": 2457,
+            "tied_rows": 159
+          }
+        },
+        {
+          "pair_id": "PAIR-a00e7cbb8b28ae1366ca",
+          "target": "rec_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5294,
+          "candidate_error": 10.973343281048386,
+          "comparator_error": 11.01427012765008,
+          "delta": -0.04092684660169568,
+          "week_interval": [
+            -0.07254243098312159,
+            -0.008083888242662597
+          ],
+          "row_loss_partition": {
+            "better_rows": 2815,
+            "worse_rows": 2479,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-8ac1929c51f081f26292",
+          "target": "rush_att",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 2229,
+          "candidate_error": 2.0735825583291176,
+          "comparator_error": 2.0872404259092128,
+          "delta": -0.013657867580095316,
+          "week_interval": [
+            -0.022892752306615496,
+            -0.005251392035721111
+          ],
+          "row_loss_partition": {
+            "better_rows": 1117,
+            "worse_rows": 1112,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-b8a92052477d3262cdf4",
+          "target": "rush_rec_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5294,
+          "candidate_error": 14.10771178871923,
+          "comparator_error": 14.178510603353853,
+          "delta": -0.07079881463462437,
+          "week_interval": [
+            -0.11566239988707562,
+            -0.023132118432312745
+          ],
+          "row_loss_partition": {
+            "better_rows": 2922,
+            "worse_rows": 2372,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-a5a6ea0c024089e9a642",
+          "target": "rush_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2229,
+          "candidate_error": 12.084561863344748,
+          "comparator_error": 12.128604250999167,
+          "delta": -0.04404238765442081,
+          "week_interval": [
+            -0.11131844957196649,
+            0.025334203134004012
+          ],
+          "row_loss_partition": {
+            "better_rows": 1063,
+            "worse_rows": 1094,
+            "tied_rows": 72
+          }
+        },
+        {
+          "pair_id": "PAIR-fa299bf952ced4f26d63",
+          "target": "anytime_td",
+          "product": "event_probability",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:log_loss_probability:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "empirical-player-history-control-v1",
+          "comparator_history": "H-MULTI",
+          "n": 5294,
+          "candidate_error": 0.14277034735823943,
+          "comparator_error": 0.14719316932638904,
+          "delta": -0.004422821968149616,
+          "week_interval": [
+            -0.006608218659265198,
+            -0.002289267725544727
+          ],
+          "row_loss_partition": {
+            "better_rows": 2172,
+            "worse_rows": 3122,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-3e86090f98744788262e",
+          "target": "pass_cmp",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 55.58100827349758,
+          "comparator_error": 55.43835537876815,
+          "delta": 0.1426528947294518,
+          "week_interval": [
+            -0.8985989774055316,
+            1.0325190030841287
+          ],
+          "row_loss_partition": {
+            "better_rows": 318,
+            "worse_rows": 346,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-f9938d83f18c993f771c",
+          "target": "pass_int",
+          "product": "display_point",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "empirical-player-history-control-v1",
+          "comparator_history": "H-CURRENT",
+          "n": 664,
+          "candidate_error": 0.5677710843373494,
+          "comparator_error": 0.6024096385542169,
+          "delta": -0.03463855421686747,
+          "week_interval": [
+            -0.0779432161494095,
+            0.01292272286821703
+          ],
+          "row_loss_partition": {
+            "better_rows": 90,
+            "worse_rows": 73,
+            "tied_rows": 501
+          }
+        },
+        {
+          "pair_id": "PAIR-5dc621e8489eaa0c7c70",
+          "target": "pass_int",
+          "product": "forecast_distribution",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 0.3790004893537781,
+          "comparator_error": 0.3782436691441067,
+          "delta": 0.000756820209671409,
+          "week_interval": [
+            -0.004771032812720785,
+            0.006060086219633849
+          ],
+          "row_loss_partition": {
+            "better_rows": 343,
+            "worse_rows": 302,
+            "tied_rows": 19
+          }
+        },
+        {
+          "pair_id": "PAIR-bd5c41934dbdcb2a9b71",
+          "target": "pass_int",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 664,
+          "candidate_error": 0.6287498862947997,
+          "comparator_error": 0.6221736619529717,
+          "delta": 0.006576224341827939,
+          "week_interval": [
+            0.0023838940170379033,
+            0.011217621868040185
+          ],
+          "row_loss_partition": {
+            "better_rows": 324,
+            "worse_rows": 340,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-e727273d7796ccd8032c",
+          "target": "pass_td",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 1.2487766141636865,
+          "comparator_error": 1.2228959981597876,
+          "delta": 0.02588061600389891,
+          "week_interval": [
+            -0.017907720900187687,
+            0.07018396455939908
+          ],
+          "row_loss_partition": {
+            "better_rows": 338,
+            "worse_rows": 323,
+            "tied_rows": 3
+          }
+        },
+        {
+          "pair_id": "PAIR-6e80bacd0c16015f7686",
+          "target": "pass_yd",
+          "product": "display_point",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 69.0168343003419,
+          "comparator_error": 70.39307228915662,
+          "delta": -1.3762379888147283,
+          "week_interval": [
+            -2.2293471819216073,
+            -0.4283402073058215
+          ],
+          "row_loss_partition": {
+            "better_rows": 348,
+            "worse_rows": 316,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-3fac76a3df2fa11da24d",
+          "target": "rec",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5294,
+          "candidate_error": 2.8095114772392606,
+          "comparator_error": 2.832627035598161,
+          "delta": -0.023115558358900366,
+          "week_interval": [
+            -0.033201041780596185,
+            -0.010206092485014842
+          ],
+          "row_loss_partition": {
+            "better_rows": 2970,
+            "worse_rows": 2324,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-153fb0f72e064fcedb0d",
+          "target": "rec_yd",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5294,
+          "candidate_error": 552.0078226859525,
+          "comparator_error": 533.7448054401209,
+          "delta": 18.263017245831684,
+          "week_interval": [
+            8.679450567663809,
+            30.665473297529356
+          ],
+          "row_loss_partition": {
+            "better_rows": 2763,
+            "worse_rows": 2486,
+            "tied_rows": 45
+          }
+        },
+        {
+          "pair_id": "PAIR-5fad6823099e00619ccf",
+          "target": "rush_att",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2229,
+          "candidate_error": 17.007666019633085,
+          "comparator_error": 17.162254591961258,
+          "delta": -0.1545885723281732,
+          "week_interval": [
+            -0.32367726795714424,
+            -0.007457079938591092
+          ],
+          "row_loss_partition": {
+            "better_rows": 1081,
+            "worse_rows": 1148,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-0ae654e791c72df6242c",
+          "target": "rush_rec_yd",
+          "product": "display_point",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 5294,
+          "candidate_error": 19.710793803717955,
+          "comparator_error": 19.74669437098602,
+          "delta": -0.03590056726806573,
+          "week_interval": [
+            -0.17152324149236786,
+            0.09701119264717334
+          ],
+          "row_loss_partition": {
+            "better_rows": 2597,
+            "worse_rows": 2697,
+            "tied_rows": 0
+          }
+        }
+      ]
+    },
+    {
+      "season": 2024,
+      "pairs": 47,
+      "independently_checked_pair_views": 141,
+      "independently_checked_univariate_views": 282,
+      "source_rows_scanned": 1608648,
+      "selected_recipe_query_rows": 194160,
+      "distinct_query_labels": 34384,
+      "distinct_supported_query_labels": 33814,
+      "unique_games": 272,
+      "unique_weeks": 18,
+      "source_bound_score_sha256": "c17669aeaf61f429708fe067ce3800965f6860ee95098d0942e10d244a351e2d",
+      "source_bound_pairs_sha256": "aac29b87b85d8076b230f7d7ad01d936b9651533a432f913697d50aa77bd1eb2",
+      "full_system_comparisons": [
+        {
+          "pair_id": "PAIR-265a490b6f587a4d864e",
+          "target": "anytime_td",
+          "product": "event_probability",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "hgb-direct-history-controls-v1:log_loss_probability:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 5094,
+          "candidate_error": 0.14593500672956705,
+          "comparator_error": 0.14595504351317004,
+          "delta": -2.0036783602961218e-05,
+          "week_interval": [
+            -0.0010219777671488994,
+            0.0008250040132755427
+          ],
+          "row_loss_partition": {
+            "better_rows": 2611,
+            "worse_rows": 2483,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-333a35105bdd6b2023e0",
+          "target": "nick-chart-ppr-v1",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-qualified-partial-chart-direct-wave-v1:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5742,
+          "candidate_error": 4.506137234413097,
+          "comparator_error": 4.532546151166841,
+          "delta": -0.026408916753744356,
+          "week_interval": [
+            -0.04112869586193651,
+            -0.01283697142202489
+          ],
+          "row_loss_partition": {
+            "better_rows": 2546,
+            "worse_rows": 2340,
+            "tied_rows": 856
+          }
+        },
+        {
+          "pair_id": "PAIR-047cbfb89dc9b09259d4",
+          "target": "nick-chart-ppr-v1",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-qualified-partial-chart-direct-wave-v1:regularized_glm_law:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-qualified-partial-chart-direct-wave-v1:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 5742,
+          "candidate_error": 39.78009710902125,
+          "comparator_error": 39.92475270777173,
+          "delta": -0.14465559875048517,
+          "week_interval": [
+            -0.5948498969398182,
+            0.29184533039135546
+          ],
+          "row_loss_partition": {
+            "better_rows": 2752,
+            "worse_rows": 2834,
+            "tied_rows": 156
+          }
+        },
+        {
+          "pair_id": "PAIR-74d28d2a66c9f3721e53",
+          "target": "pass_att",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 8.360290818195512,
+          "comparator_error": 8.386865649032911,
+          "delta": -0.026574830837399557,
+          "week_interval": [
+            -0.141874386680496,
+            0.0963225304973676
+          ],
+          "row_loss_partition": {
+            "better_rows": 337,
+            "worse_rows": 327,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-fd49ee986fad65b812eb",
+          "target": "pass_att",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 116.36118064859298,
+          "comparator_error": 117.22907927169925,
+          "delta": -0.867898623106273,
+          "week_interval": [
+            -3.0715896476567432,
+            1.612306810961452
+          ],
+          "row_loss_partition": {
+            "better_rows": 330,
+            "worse_rows": 334,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-0bc9ade07eab371d0995",
+          "target": "pass_cmp",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 664,
+          "candidate_error": 5.660121891122351,
+          "comparator_error": 5.718373493975903,
+          "delta": -0.05825160285355281,
+          "week_interval": [
+            -0.20002544909155975,
+            0.07723799520304012
+          ],
+          "row_loss_partition": {
+            "better_rows": 335,
+            "worse_rows": 329,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-935418e4c0257ba378ea",
+          "target": "pass_cmp",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 664,
+          "candidate_error": 52.20411187123155,
+          "comparator_error": 52.34188694514252,
+          "delta": -0.13777507391097202,
+          "week_interval": [
+            -2.022122224172907,
+            1.4253295079924504
+          ],
+          "row_loss_partition": {
+            "better_rows": 324,
+            "worse_rows": 340,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-d4633e18e78444ff9872",
+          "target": "pass_int",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 0.5798192771084337,
+          "comparator_error": 0.5805440330277025,
+          "delta": -0.000724755919268738,
+          "week_interval": [
+            -0.0022128542005041855,
+            0.0
+          ],
+          "row_loss_partition": {
+            "better_rows": 1,
+            "worse_rows": 0,
+            "tied_rows": 663
+          }
+        },
+        {
+          "pair_id": "PAIR-7e1df9b189b087cc6c29",
+          "target": "pass_int",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 0.5798192771084337,
+          "comparator_error": 0.5805440330277025,
+          "delta": -0.000724755919268738,
+          "week_interval": [
+            -0.0022128542005041855,
+            0.0
+          ],
+          "row_loss_partition": {
+            "better_rows": 1,
+            "worse_rows": 0,
+            "tied_rows": 663
+          }
+        },
+        {
+          "pair_id": "PAIR-a6f63e63478fb2015718",
+          "target": "pass_int",
+          "product": "display_point",
+          "purpose": "TIED_CURRENT_LEADERS",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 0.5798192771084337,
+          "comparator_error": 0.5798192771084337,
+          "delta": 0.0,
+          "week_interval": [
+            0.0,
+            0.0
+          ],
+          "row_loss_partition": {
+            "better_rows": 0,
+            "worse_rows": 0,
+            "tied_rows": 664
+          }
+        },
+        {
+          "pair_id": "PAIR-8497a0867153518e2d48",
+          "target": "pass_int",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 0.6717445346943364,
+          "comparator_error": 0.6731768711451728,
+          "delta": -0.0014323364508363025,
+          "week_interval": [
+            -0.014883735284371652,
+            0.009513863561816832
+          ],
+          "row_loss_partition": {
+            "better_rows": 325,
+            "worse_rows": 339,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-4b0add0dc75c01ffd89b",
+          "target": "pass_td",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 0.8102409638554217,
+          "comparator_error": 0.8403614457831325,
+          "delta": -0.030120481927710843,
+          "week_interval": [
+            -0.05286733932236825,
+            -0.007554970172110356
+          ],
+          "row_loss_partition": {
+            "better_rows": 49,
+            "worse_rows": 29,
+            "tied_rows": 586
+          }
+        },
+        {
+          "pair_id": "PAIR-148721799b33e4d51a8c",
+          "target": "pass_td",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 1.1503041347330611,
+          "comparator_error": 1.162014348692382,
+          "delta": -0.011710213959320898,
+          "week_interval": [
+            -0.021037992919655326,
+            -0.003665546978599334
+          ],
+          "row_loss_partition": {
+            "better_rows": 350,
+            "worse_rows": 314,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-ce06527866ab872e7726",
+          "target": "pass_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 664,
+          "candidate_error": 67.68942156466986,
+          "comparator_error": 68.02121686618779,
+          "delta": -0.33179530151791725,
+          "week_interval": [
+            -1.6827833414532227,
+            1.4111902366200928
+          ],
+          "row_loss_partition": {
+            "better_rows": 341,
+            "worse_rows": 323,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-c496346cd82717debd18",
+          "target": "pass_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 664,
+          "candidate_error": 7181.095474596744,
+          "comparator_error": 7480.37405420548,
+          "delta": -299.278579608736,
+          "week_interval": [
+            -516.5174526865551,
+            -80.22567003901383
+          ],
+          "row_loss_partition": {
+            "better_rows": 340,
+            "worse_rows": 324,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-ffc0ccd1c7cdd0892423",
+          "target": "rec",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 5094,
+          "candidate_error": 1.2687475461327051,
+          "comparator_error": 1.2716921868865332,
+          "delta": -0.002944640753828033,
+          "week_interval": [
+            -0.01575391595927261,
+            0.010135688445232244
+          ],
+          "row_loss_partition": {
+            "better_rows": 253,
+            "worse_rows": 238,
+            "tied_rows": 4603
+          }
+        },
+        {
+          "pair_id": "PAIR-a5abc67951e80b9f884a",
+          "target": "rec",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 5094,
+          "candidate_error": 3.2329776020756347,
+          "comparator_error": 3.2419313062236945,
+          "delta": -0.00895370414805983,
+          "week_interval": [
+            -0.02329134774852598,
+            0.006698753877620907
+          ],
+          "row_loss_partition": {
+            "better_rows": 2809,
+            "worse_rows": 2285,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-e6b7f38b5825ba9e6c38",
+          "target": "rec_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5094,
+          "candidate_error": 16.38339222614841,
+          "comparator_error": 16.41558696505693,
+          "delta": -0.03219473890851983,
+          "week_interval": [
+            -0.06288833001224287,
+            -0.001639951942405184
+          ],
+          "row_loss_partition": {
+            "better_rows": 1445,
+            "worse_rows": 1377,
+            "tied_rows": 2272
+          }
+        },
+        {
+          "pair_id": "PAIR-e3d3dfc546e35d7259f5",
+          "target": "rec_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5094,
+          "candidate_error": 588.7767758062738,
+          "comparator_error": 589.4550451511582,
+          "delta": -0.6782693448844321,
+          "week_interval": [
+            -5.629776534581232,
+            4.473825316861535
+          ],
+          "row_loss_partition": {
+            "better_rows": 2551,
+            "worse_rows": 2543,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-56183e00075b478c9a9c",
+          "target": "rush_att",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 2188,
+          "candidate_error": 2.9913162705667276,
+          "comparator_error": 3.003656307129799,
+          "delta": -0.012340036563071298,
+          "week_interval": [
+            -0.040932715608410025,
+            0.015197044287964657
+          ],
+          "row_loss_partition": {
+            "better_rows": 348,
+            "worse_rows": 329,
+            "tied_rows": 1511
+          }
+        },
+        {
+          "pair_id": "PAIR-546f71d93e1bda95fe43",
+          "target": "rush_att",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2188,
+          "candidate_error": 18.108763267331558,
+          "comparator_error": 18.218216718963223,
+          "delta": -0.10945345163166487,
+          "week_interval": [
+            -0.40545795250206856,
+            0.12678827580120067
+          ],
+          "row_loss_partition": {
+            "better_rows": 1084,
+            "worse_rows": 1104,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-a3037ad38d6f10e8aedf",
+          "target": "rush_rec_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 5094,
+          "candidate_error": 20.70493394988194,
+          "comparator_error": 20.844915586965058,
+          "delta": -0.13998163708311884,
+          "week_interval": [
+            -0.28423071347455053,
+            -0.02282100736962464
+          ],
+          "row_loss_partition": {
+            "better_rows": 2541,
+            "worse_rows": 2553,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-94b029e1a1ece5549218",
+          "target": "rush_rec_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 5094,
+          "candidate_error": 862.6786415390656,
+          "comparator_error": 866.65167864898,
+          "delta": -3.973037109914507,
+          "week_interval": [
+            -12.914412443656294,
+            4.475415547617432
+          ],
+          "row_loss_partition": {
+            "better_rows": 2494,
+            "worse_rows": 2600,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-a80a94e69ddae8d78337",
+          "target": "rush_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2188,
+          "candidate_error": 17.64670932358318,
+          "comparator_error": 17.667733089579524,
+          "delta": -0.02102376599634369,
+          "week_interval": [
+            -0.14119151940099622,
+            0.08336066005034456
+          ],
+          "row_loss_partition": {
+            "better_rows": 681,
+            "worse_rows": 702,
+            "tied_rows": 805
+          }
+        },
+        {
+          "pair_id": "PAIR-906c25451c8782bf399c",
+          "target": "rush_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2188,
+          "candidate_error": 653.9108775137112,
+          "comparator_error": 674.3999596201846,
+          "delta": -20.489082106473557,
+          "week_interval": [
+            -38.70333104000289,
+            -5.995570529013026
+          ],
+          "row_loss_partition": {
+            "better_rows": 1062,
+            "worse_rows": 1104,
+            "tied_rows": 22
+          }
+        },
+        {
+          "pair_id": "PAIR-0c17f16fd7f3a38e0aa5",
+          "target": "nick-chart-ppr-v1",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-qualified-partial-chart-direct-wave-v1:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5742,
+          "candidate_error": 3.206997745095784,
+          "comparator_error": 3.2244412507252087,
+          "delta": -0.017443505629424646,
+          "week_interval": [
+            -0.026032943396359285,
+            -0.010466863676988583
+          ],
+          "row_loss_partition": {
+            "better_rows": 3119,
+            "worse_rows": 2623,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-8d11a72295f3f26425ab",
+          "target": "pass_att",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 5.893272911511338,
+          "comparator_error": 6.1032991586509775,
+          "delta": -0.21002624713964016,
+          "week_interval": [
+            -0.32523736499631445,
+            -0.09374139390053099
+          ],
+          "row_loss_partition": {
+            "better_rows": 353,
+            "worse_rows": 296,
+            "tied_rows": 15
+          }
+        },
+        {
+          "pair_id": "PAIR-df22a3bae71df806eb10",
+          "target": "pass_cmp",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 3.983781758119844,
+          "comparator_error": 4.077524722177248,
+          "delta": -0.09374296405740361,
+          "week_interval": [
+            -0.1619122598254669,
+            -0.026095695910280995
+          ],
+          "row_loss_partition": {
+            "better_rows": 341,
+            "worse_rows": 308,
+            "tied_rows": 15
+          }
+        },
+        {
+          "pair_id": "PAIR-6c98ae86916deaf7e151",
+          "target": "pass_int",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 0.3944561411911958,
+          "comparator_error": 0.3963337807626931,
+          "delta": -0.0018776395714971998,
+          "week_interval": [
+            -0.005541196734817032,
+            0.0020998608481869532
+          ],
+          "row_loss_partition": {
+            "better_rows": 344,
+            "worse_rows": 305,
+            "tied_rows": 15
+          }
+        },
+        {
+          "pair_id": "PAIR-a4c921816a379c9652ff",
+          "target": "pass_td",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 664,
+          "candidate_error": 0.5667197618851351,
+          "comparator_error": 0.5778447224616747,
+          "delta": -0.011124960576539658,
+          "week_interval": [
+            -0.018508734003920026,
+            -0.0038508308355364586
+          ],
+          "row_loss_partition": {
+            "better_rows": 366,
+            "worse_rows": 283,
+            "tied_rows": 15
+          }
+        },
+        {
+          "pair_id": "PAIR-53cb25271a5664a53010",
+          "target": "pass_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 47.65581853057307,
+          "comparator_error": 49.10173157484039,
+          "delta": -1.4459130442673236,
+          "week_interval": [
+            -2.3427453775126628,
+            -0.6609410274709813
+          ],
+          "row_loss_partition": {
+            "better_rows": 379,
+            "worse_rows": 270,
+            "tied_rows": 15
+          }
+        },
+        {
+          "pair_id": "PAIR-4da0359c94b28742c880",
+          "target": "rec",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5094,
+          "candidate_error": 0.9083391232943174,
+          "comparator_error": 0.9095713496195197,
+          "delta": -0.0012322263252022216,
+          "week_interval": [
+            -0.003322237744172236,
+            0.0004880115598462153
+          ],
+          "row_loss_partition": {
+            "better_rows": 2727,
+            "worse_rows": 2367,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-343f01e4bacb8346ab1e",
+          "target": "rec_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 5094,
+          "candidate_error": 11.644285537474072,
+          "comparator_error": 11.66064477622492,
+          "delta": -0.01635923875084487,
+          "week_interval": [
+            -0.04413634557227348,
+            0.00951511613574066
+          ],
+          "row_loss_partition": {
+            "better_rows": 2455,
+            "worse_rows": 2498,
+            "tied_rows": 141
+          }
+        },
+        {
+          "pair_id": "PAIR-202dd6d6971039fb4ab2",
+          "target": "rush_att",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2188,
+          "candidate_error": 2.13127083609434,
+          "comparator_error": 2.1461532179152374,
+          "delta": -0.014882381820897083,
+          "week_interval": [
+            -0.023641286318505983,
+            -0.0047294367117616575
+          ],
+          "row_loss_partition": {
+            "better_rows": 1120,
+            "worse_rows": 1012,
+            "tied_rows": 56
+          }
+        },
+        {
+          "pair_id": "PAIR-47eb76ded52ce60c9979",
+          "target": "rush_rec_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5094,
+          "candidate_error": 14.793883655023631,
+          "comparator_error": 14.812889877906139,
+          "delta": -0.019006222882511265,
+          "week_interval": [
+            -0.049569669694380016,
+            0.010113005598212791
+          ],
+          "row_loss_partition": {
+            "better_rows": 2533,
+            "worse_rows": 2420,
+            "tied_rows": 141
+          }
+        },
+        {
+          "pair_id": "PAIR-55f4b8cf4dcc0901250b",
+          "target": "rush_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2188,
+          "candidate_error": 12.559591037554911,
+          "comparator_error": 12.563416291406838,
+          "delta": -0.003825253851929077,
+          "week_interval": [
+            -0.08220285134557224,
+            0.06402810657944072
+          ],
+          "row_loss_partition": {
+            "better_rows": 1083,
+            "worse_rows": 1049,
+            "tied_rows": 56
+          }
+        },
+        {
+          "pair_id": "PAIR-e071978adcc754370e7d",
+          "target": "anytime_td",
+          "product": "event_probability",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:log_loss_probability:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "empirical-player-history-control-v1",
+          "comparator_history": "H-MULTI",
+          "n": 5094,
+          "candidate_error": 0.14657770530816056,
+          "comparator_error": 0.14888095730555748,
+          "delta": -0.0023032519973969264,
+          "week_interval": [
+            -0.005505990622071974,
+            0.0008987879617020051
+          ],
+          "row_loss_partition": {
+            "better_rows": 2028,
+            "worse_rows": 3066,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-f12e063a1531a04a6f09",
+          "target": "pass_cmp",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 52.20411187123155,
+          "comparator_error": 52.48350799408941,
+          "delta": -0.27939612285785353,
+          "week_interval": [
+            -1.2426117154808838,
+            0.690246814721764
+          ],
+          "row_loss_partition": {
+            "better_rows": 329,
+            "worse_rows": 335,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-01485f6f58efe68ee532",
+          "target": "pass_int",
+          "product": "display_point",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "empirical-player-history-control-v1",
+          "comparator_history": "H-CURRENT",
+          "n": 664,
+          "candidate_error": 0.5798192771084337,
+          "comparator_error": 0.6069277108433735,
+          "delta": -0.02710843373493976,
+          "week_interval": [
+            -0.06191674869439203,
+            0.0043701541752072005
+          ],
+          "row_loss_partition": {
+            "better_rows": 96,
+            "worse_rows": 83,
+            "tied_rows": 485
+          }
+        },
+        {
+          "pair_id": "PAIR-64590c9d6e6b1b27f2aa",
+          "target": "pass_int",
+          "product": "forecast_distribution",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 0.39820018905892895,
+          "comparator_error": 0.3963337807626931,
+          "delta": 0.0018664082962358873,
+          "week_interval": [
+            -0.0019110370677366398,
+            0.0061316383932103055
+          ],
+          "row_loss_partition": {
+            "better_rows": 346,
+            "worse_rows": 303,
+            "tied_rows": 15
+          }
+        },
+        {
+          "pair_id": "PAIR-f573d8f9cdbfaf1dda66",
+          "target": "pass_int",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 664,
+          "candidate_error": 0.6887095308348854,
+          "comparator_error": 0.6844302798992253,
+          "delta": 0.004279250935660167,
+          "week_interval": [
+            0.0003124255527658172,
+            0.007784335852104519
+          ],
+          "row_loss_partition": {
+            "better_rows": 332,
+            "worse_rows": 332,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-f75ef0e1c4b440715529",
+          "target": "pass_td",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 1.2445183832017632,
+          "comparator_error": 1.2159535178303638,
+          "delta": 0.028564865371399576,
+          "week_interval": [
+            -0.02398387305781624,
+            0.08119566192962371
+          ],
+          "row_loss_partition": {
+            "better_rows": 346,
+            "worse_rows": 316,
+            "tied_rows": 2
+          }
+        },
+        {
+          "pair_id": "PAIR-440c071ad1491c7d6736",
+          "target": "pass_yd",
+          "product": "display_point",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 664,
+          "candidate_error": 68.10497447543345,
+          "comparator_error": 68.69277108433735,
+          "delta": -0.5877966089038975,
+          "week_interval": [
+            -1.5056801021819635,
+            0.30870341397446033
+          ],
+          "row_loss_partition": {
+            "better_rows": 335,
+            "worse_rows": 329,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-ba6b96ff01e5a59aa121",
+          "target": "rec",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5094,
+          "candidate_error": 3.2424985855869184,
+          "comparator_error": 3.258976155954257,
+          "delta": -0.016477570367339867,
+          "week_interval": [
+            -0.02771449743583827,
+            -0.005332952690039354
+          ],
+          "row_loss_partition": {
+            "better_rows": 2812,
+            "worse_rows": 2282,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-243e1cd4cbaba5e64f5d",
+          "target": "rec_yd",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5094,
+          "candidate_error": 608.384946728046,
+          "comparator_error": 589.4550451511582,
+          "delta": 18.929901576887726,
+          "week_interval": [
+            3.390254709081828,
+            33.311959052170245
+          ],
+          "row_loss_partition": {
+            "better_rows": 2638,
+            "worse_rows": 2412,
+            "tied_rows": 44
+          }
+        },
+        {
+          "pair_id": "PAIR-780ee19f88c357c37547",
+          "target": "rush_att",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2188,
+          "candidate_error": 18.108763267331558,
+          "comparator_error": 18.304564319965362,
+          "delta": -0.19580105263380101,
+          "week_interval": [
+            -0.40991684647274623,
+            0.006971591400954191
+          ],
+          "row_loss_partition": {
+            "better_rows": 1136,
+            "worse_rows": 1052,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-c629f040ce573b6a8d12",
+          "target": "rush_rec_yd",
+          "product": "display_point",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 5094,
+          "candidate_error": 20.71530196407474,
+          "comparator_error": 20.844915586965058,
+          "delta": -0.12961362289031883,
+          "week_interval": [
+            -0.25438639208754454,
+            -0.024769416707737375
+          ],
+          "row_loss_partition": {
+            "better_rows": 2565,
+            "worse_rows": 2529,
+            "tied_rows": 0
+          }
+        }
+      ]
+    },
+    {
+      "season": 2023,
+      "pairs": 47,
+      "independently_checked_pair_views": 141,
+      "independently_checked_univariate_views": 282,
+      "source_rows_scanned": 1592629,
+      "selected_recipe_query_rows": 162950,
+      "distinct_query_labels": 33942,
+      "distinct_supported_query_labels": 33534,
+      "unique_games": 272,
+      "unique_weeks": 18,
+      "source_bound_score_sha256": "38206bb3feb8ee9f21c142bfba4029dc25821a82b37b7ca52641bed1c564c895",
+      "source_bound_pairs_sha256": "cb9ad6ea5142f1d007e647f2468b7ccd992149c318a88c0e9f66379ab18cda52",
+      "full_system_comparisons": [
+        {
+          "pair_id": "PAIR-a5dea40367bf6efd19f3",
+          "target": "anytime_td",
+          "product": "event_probability",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:log_loss_probability:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5062,
+          "candidate_error": 0.14273053593327614,
+          "comparator_error": 0.14292458350469672,
+          "delta": -0.00019404757142058276,
+          "week_interval": [
+            -0.0012150522647105405,
+            0.0006839424899467257
+          ],
+          "row_loss_partition": {
+            "better_rows": 2494,
+            "worse_rows": 2568,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-7fa018e30a497ff516cf",
+          "target": "nick-chart-ppr-v1",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-qualified-partial-chart-direct-wave-v1:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5713,
+          "candidate_error": 4.473309994748819,
+          "comparator_error": 4.492721862419044,
+          "delta": -0.0194118676702258,
+          "week_interval": [
+            -0.030673973223952534,
+            -0.007614434290866813
+          ],
+          "row_loss_partition": {
+            "better_rows": 2472,
+            "worse_rows": 2219,
+            "tied_rows": 1022
+          }
+        },
+        {
+          "pair_id": "PAIR-47d13e1e653e97937a4a",
+          "target": "nick-chart-ppr-v1",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-qualified-partial-chart-direct-wave-v1:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5713,
+          "candidate_error": 39.33980645421034,
+          "comparator_error": 39.57815421102864,
+          "delta": -0.2383477568182982,
+          "week_interval": [
+            -0.41638686263188235,
+            -0.062289189766291456
+          ],
+          "row_loss_partition": {
+            "better_rows": 2889,
+            "worse_rows": 2635,
+            "tied_rows": 189
+          }
+        },
+        {
+          "pair_id": "PAIR-0c6793acc8a6d60349fa",
+          "target": "pass_att",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 8.65761689291101,
+          "comparator_error": 8.73604826546003,
+          "delta": -0.0784313725490196,
+          "week_interval": [
+            -0.2298797957149975,
+            0.07450028978951381
+          ],
+          "row_loss_partition": {
+            "better_rows": 194,
+            "worse_rows": 182,
+            "tied_rows": 287
+          }
+        },
+        {
+          "pair_id": "PAIR-9476ff8cf991b50e287f",
+          "target": "pass_att",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 127.49018579912276,
+          "comparator_error": 130.50166205834236,
+          "delta": -3.0114762592195845,
+          "week_interval": [
+            -6.306456903179937,
+            0.6013202586346651
+          ],
+          "row_loss_partition": {
+            "better_rows": 322,
+            "worse_rows": 317,
+            "tied_rows": 24
+          }
+        },
+        {
+          "pair_id": "PAIR-eeb2214aa21744a68e6c",
+          "target": "pass_cmp",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 5.956259426847662,
+          "comparator_error": 6.024132730015083,
+          "delta": -0.06787330316742081,
+          "week_interval": [
+            -0.1602456346848288,
+            0.017045127703635515
+          ],
+          "row_loss_partition": {
+            "better_rows": 167,
+            "worse_rows": 141,
+            "tied_rows": 355
+          }
+        },
+        {
+          "pair_id": "PAIR-234b95dc6e5cb5dc6f31",
+          "target": "pass_cmp",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 58.55772743521109,
+          "comparator_error": 59.71053381499471,
+          "delta": -1.1528063797836199,
+          "week_interval": [
+            -2.3762346887241614,
+            0.15804839171972415
+          ],
+          "row_loss_partition": {
+            "better_rows": 322,
+            "worse_rows": 317,
+            "tied_rows": 24
+          }
+        },
+        {
+          "pair_id": "PAIR-dd5d78f4ef6da10579d4",
+          "target": "pass_int",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-CURRENT",
+          "comparator": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 0.6470588235294118,
+          "comparator_error": 0.6521397669875734,
+          "delta": -0.00508094345816153,
+          "week_interval": [
+            -0.05180689616894095,
+            0.04300082997557431
+          ],
+          "row_loss_partition": {
+            "better_rows": 121,
+            "worse_rows": 110,
+            "tied_rows": 432
+          }
+        },
+        {
+          "pair_id": "PAIR-d9b8252626ebc2c483cd",
+          "target": "pass_int",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 0.6470588235294118,
+          "comparator_error": 0.6521397669875734,
+          "delta": -0.005080943458161529,
+          "week_interval": [
+            -0.01839538614333481,
+            0.0036695830669138427
+          ],
+          "row_loss_partition": {
+            "better_rows": 8,
+            "worse_rows": 4,
+            "tied_rows": 651
+          }
+        },
+        {
+          "pair_id": "PAIR-d11d478fdc95d1c47a25",
+          "target": "pass_int",
+          "product": "display_point",
+          "purpose": "TIED_CURRENT_LEADERS",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 0.6470588235294118,
+          "comparator_error": 0.6470588235294118,
+          "delta": 0.0,
+          "week_interval": [
+            -0.047892057378750484,
+            0.052653629195158064
+          ],
+          "row_loss_partition": {
+            "better_rows": 113,
+            "worse_rows": 106,
+            "tied_rows": 444
+          }
+        },
+        {
+          "pair_id": "PAIR-d75fac182462fc0c439a",
+          "target": "pass_int",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 0.7091560950931417,
+          "comparator_error": 0.7097659205142101,
+          "delta": -0.0006098254210682943,
+          "week_interval": [
+            -0.009222639126441595,
+            0.007537694665560453
+          ],
+          "row_loss_partition": {
+            "better_rows": 313,
+            "worse_rows": 326,
+            "tied_rows": 24
+          }
+        },
+        {
+          "pair_id": "PAIR-c5ef6945948fd53597d6",
+          "target": "pass_td",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 0.7888386123680241,
+          "comparator_error": 0.7918552036199095,
+          "delta": -0.0030165912518853697,
+          "week_interval": [
+            -0.03040269773994988,
+            0.020483569220758092
+          ],
+          "row_loss_partition": {
+            "better_rows": 41,
+            "worse_rows": 39,
+            "tied_rows": 583
+          }
+        },
+        {
+          "pair_id": "PAIR-0066f1626b2f2143c12f",
+          "target": "pass_td",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 1.0619651963024714,
+          "comparator_error": 1.0682953472003842,
+          "delta": -0.006330150897912585,
+          "week_interval": [
+            -0.04385647370670888,
+            0.027557456930491775
+          ],
+          "row_loss_partition": {
+            "better_rows": 305,
+            "worse_rows": 358,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-155cf053ea6f54cd7196",
+          "target": "pass_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 71.2081447963801,
+          "comparator_error": 71.64404223227753,
+          "delta": -0.4358974358974359,
+          "week_interval": [
+            -1.5429067528538027,
+            0.6375401463870994
+          ],
+          "row_loss_partition": {
+            "better_rows": 296,
+            "worse_rows": 265,
+            "tied_rows": 102
+          }
+        },
+        {
+          "pair_id": "PAIR-ac9f297225994a183527",
+          "target": "pass_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 8085.055357755851,
+          "comparator_error": 8249.588250822117,
+          "delta": -164.53289306626408,
+          "week_interval": [
+            -333.84006348243264,
+            39.94076688246967
+          ],
+          "row_loss_partition": {
+            "better_rows": 328,
+            "worse_rows": 311,
+            "tied_rows": 24
+          }
+        },
+        {
+          "pair_id": "PAIR-9b99aed2bb9731066f16",
+          "target": "rec",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5062,
+          "candidate_error": 1.2813117344922955,
+          "comparator_error": 1.2862504938759383,
+          "delta": -0.004938759383642829,
+          "week_interval": [
+            -0.014746151249634317,
+            0.0051175386958159435
+          ],
+          "row_loss_partition": {
+            "better_rows": 236,
+            "worse_rows": 211,
+            "tied_rows": 4615
+          }
+        },
+        {
+          "pair_id": "PAIR-32cd616b8b846aa2a593",
+          "target": "rec",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5062,
+          "candidate_error": 3.244106622740355,
+          "comparator_error": 3.246873653743399,
+          "delta": -0.0027670310030441614,
+          "week_interval": [
+            -0.026458843547202283,
+            0.01983487803135386
+          ],
+          "row_loss_partition": {
+            "better_rows": 2602,
+            "worse_rows": 2460,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-b0e2d1e252a18da0718d",
+          "target": "rec_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5062,
+          "candidate_error": 16.692414065586725,
+          "comparator_error": 16.729355985776373,
+          "delta": -0.03694192018964836,
+          "week_interval": [
+            -0.08096645239292871,
+            0.00793557653133218
+          ],
+          "row_loss_partition": {
+            "better_rows": 1440,
+            "worse_rows": 1440,
+            "tied_rows": 2182
+          }
+        },
+        {
+          "pair_id": "PAIR-f7d4e5509207bd937fe0",
+          "target": "rec_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5062,
+          "candidate_error": 626.9124277750245,
+          "comparator_error": 630.1735284566312,
+          "delta": -3.2611006816065817,
+          "week_interval": [
+            -17.8786086895264,
+            9.929591591718774
+          ],
+          "row_loss_partition": {
+            "better_rows": 2640,
+            "worse_rows": 2422,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-91cfe7e3f4216c0d1383",
+          "target": "rush_att",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2129,
+          "candidate_error": 3.1117895725692812,
+          "comparator_error": 3.1141380930014093,
+          "delta": -0.0023485204321277596,
+          "week_interval": [
+            -0.028282890000799865,
+            0.02402153704847054
+          ],
+          "row_loss_partition": {
+            "better_rows": 282,
+            "worse_rows": 278,
+            "tied_rows": 1569
+          }
+        },
+        {
+          "pair_id": "PAIR-d5443222eaa7e410ba87",
+          "target": "rush_att",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2129,
+          "candidate_error": 19.248647508333896,
+          "comparator_error": 19.30292758615996,
+          "delta": -0.05428007782606669,
+          "week_interval": [
+            -0.27722626114393245,
+            0.15633074775447448
+          ],
+          "row_loss_partition": {
+            "better_rows": 1120,
+            "worse_rows": 1009,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-ad32a2a1825c799c2c81",
+          "target": "rush_rec_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5062,
+          "candidate_error": 20.95573794493183,
+          "comparator_error": 21.054128802844726,
+          "delta": -0.0983908579128959,
+          "week_interval": [
+            -0.19530892211313958,
+            -0.008905087984008315
+          ],
+          "row_loss_partition": {
+            "better_rows": 2536,
+            "worse_rows": 2526,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-cf3f7d763ea4a9c77051",
+          "target": "rush_rec_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5062,
+          "candidate_error": 893.9267890864427,
+          "comparator_error": 894.4145921887756,
+          "delta": -0.4878031023330209,
+          "week_interval": [
+            -3.980874269983782,
+            3.471958785323836
+          ],
+          "row_loss_partition": {
+            "better_rows": 2484,
+            "worse_rows": 2412,
+            "tied_rows": 166
+          }
+        },
+        {
+          "pair_id": "PAIR-e0f18090a4b123a8e997",
+          "target": "rush_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2129,
+          "candidate_error": 16.83325504931893,
+          "comparator_error": 16.908877407233444,
+          "delta": -0.07562235791451385,
+          "week_interval": [
+            -0.16034503013128631,
+            0.0016069916786472984
+          ],
+          "row_loss_partition": {
+            "better_rows": 719,
+            "worse_rows": 655,
+            "tied_rows": 755
+          }
+        },
+        {
+          "pair_id": "PAIR-1e808517de6840b1b6fd",
+          "target": "rush_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2129,
+          "candidate_error": 614.6766683211687,
+          "comparator_error": 619.8427159244928,
+          "delta": -5.166047603324185,
+          "week_interval": [
+            -12.292193059811305,
+            1.1613728402877
+          ],
+          "row_loss_partition": {
+            "better_rows": 1062,
+            "worse_rows": 996,
+            "tied_rows": 71
+          }
+        },
+        {
+          "pair_id": "PAIR-544899ae46ac3f3ba6b8",
+          "target": "nick-chart-ppr-v1",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-qualified-partial-chart-direct-wave-v1:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5713,
+          "candidate_error": 3.1904853955320847,
+          "comparator_error": 3.204648769195284,
+          "delta": -0.014163373663199521,
+          "week_interval": [
+            -0.021832470317632358,
+            -0.006683735310500718
+          ],
+          "row_loss_partition": {
+            "better_rows": 2833,
+            "worse_rows": 2691,
+            "tied_rows": 189
+          }
+        },
+        {
+          "pair_id": "PAIR-8c7b71bc02c06c0ad377",
+          "target": "pass_att",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 6.0700256729487645,
+          "comparator_error": 6.158011383622136,
+          "delta": -0.08798571067337103,
+          "week_interval": [
+            -0.17869074991166817,
+            0.010996769977581453
+          ],
+          "row_loss_partition": {
+            "better_rows": 310,
+            "worse_rows": 329,
+            "tied_rows": 24
+          }
+        },
+        {
+          "pair_id": "PAIR-46631334515d4a5aaa2d",
+          "target": "pass_cmp",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 4.190340682592469,
+          "comparator_error": 4.2387783226912115,
+          "delta": -0.04843764009874236,
+          "week_interval": [
+            -0.10224088795415467,
+            0.003755583815656105
+          ],
+          "row_loss_partition": {
+            "better_rows": 328,
+            "worse_rows": 311,
+            "tied_rows": 24
+          }
+        },
+        {
+          "pair_id": "PAIR-ef3c9d9dcd476e76094d",
+          "target": "pass_int",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 0.41538082981193086,
+          "comparator_error": 0.4164901313463335,
+          "delta": -0.001109301534402605,
+          "week_interval": [
+            -0.004733811653364288,
+            0.002720189312012755
+          ],
+          "row_loss_partition": {
+            "better_rows": 352,
+            "worse_rows": 287,
+            "tied_rows": 24
+          }
+        },
+        {
+          "pair_id": "PAIR-8c9987ac3f930d6b8bff",
+          "target": "pass_td",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 0.5374366381781783,
+          "comparator_error": 0.5420123259382638,
+          "delta": -0.00457568776008537,
+          "week_interval": [
+            -0.00901702991343949,
+            -0.00032128675784321776
+          ],
+          "row_loss_partition": {
+            "better_rows": 334,
+            "worse_rows": 305,
+            "tied_rows": 24
+          }
+        },
+        {
+          "pair_id": "PAIR-6da41889c3e2f3714fe6",
+          "target": "pass_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 50.17216705132341,
+          "comparator_error": 50.735354626831324,
+          "delta": -0.5631875755078992,
+          "week_interval": [
+            -1.2048720860097764,
+            0.19931469841066435
+          ],
+          "row_loss_partition": {
+            "better_rows": 328,
+            "worse_rows": 311,
+            "tied_rows": 24
+          }
+        },
+        {
+          "pair_id": "PAIR-834d045bc9d5d89acd68",
+          "target": "rec",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5062,
+          "candidate_error": 0.9131574018448078,
+          "comparator_error": 0.9142766565285886,
+          "delta": -0.0011192546837808376,
+          "week_interval": [
+            -0.002945073827033603,
+            0.0011200269506692713
+          ],
+          "row_loss_partition": {
+            "better_rows": 2440,
+            "worse_rows": 2456,
+            "tied_rows": 166
+          }
+        },
+        {
+          "pair_id": "PAIR-755bb6f46cf111144ef5",
+          "target": "rec_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5062,
+          "candidate_error": 11.953845676815531,
+          "comparator_error": 11.972974658315353,
+          "delta": -0.01912898149982181,
+          "week_interval": [
+            -0.03782354852739525,
+            -0.0021398465770510926
+          ],
+          "row_loss_partition": {
+            "better_rows": 2474,
+            "worse_rows": 2422,
+            "tied_rows": 166
+          }
+        },
+        {
+          "pair_id": "PAIR-c15855b848b00c798e07",
+          "target": "rush_att",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2129,
+          "candidate_error": 2.223174980879098,
+          "comparator_error": 2.2266830590388813,
+          "delta": -0.0035080781597832153,
+          "week_interval": [
+            -0.012296809086204714,
+            0.004507358137856759
+          ],
+          "row_loss_partition": {
+            "better_rows": 1054,
+            "worse_rows": 1004,
+            "tied_rows": 71
+          }
+        },
+        {
+          "pair_id": "PAIR-4f7f58f406da966d943c",
+          "target": "rush_rec_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5062,
+          "candidate_error": 15.001107074349333,
+          "comparator_error": 15.01143330609725,
+          "delta": -0.010326231747913769,
+          "week_interval": [
+            -0.03689480298156833,
+            0.019284189365902267
+          ],
+          "row_loss_partition": {
+            "better_rows": 2444,
+            "worse_rows": 2452,
+            "tied_rows": 166
+          }
+        },
+        {
+          "pair_id": "PAIR-7e01a6ee5f83fbe79563",
+          "target": "rush_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2129,
+          "candidate_error": 12.092605362124745,
+          "comparator_error": 12.13740024049523,
+          "delta": -0.044794878370483356,
+          "week_interval": [
+            -0.10520931952538679,
+            0.011960631893699584
+          ],
+          "row_loss_partition": {
+            "better_rows": 1073,
+            "worse_rows": 985,
+            "tied_rows": 71
+          }
+        },
+        {
+          "pair_id": "PAIR-21ae9a1a365dac7a4a80",
+          "target": "anytime_td",
+          "product": "event_probability",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:log_loss_probability:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "empirical-player-history-control-v1",
+          "comparator_history": "H-MULTI",
+          "n": 5062,
+          "candidate_error": 0.14273053593327614,
+          "comparator_error": 0.14971065708907666,
+          "delta": -0.00698012115580047,
+          "week_interval": [
+            -0.009867676527421008,
+            -0.004174300825768671
+          ],
+          "row_loss_partition": {
+            "better_rows": 2139,
+            "worse_rows": 2923,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-5415fd9a0c52179cd09e",
+          "target": "pass_cmp",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 61.06384967770754,
+          "comparator_error": 61.290012081024926,
+          "delta": -0.22616240331739176,
+          "week_interval": [
+            -1.7551511717839616,
+            1.415001674148737
+          ],
+          "row_loss_partition": {
+            "better_rows": 341,
+            "worse_rows": 322,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-f91aaf01f60e1c6de60a",
+          "target": "pass_int",
+          "product": "display_point",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "empirical-player-history-control-v1",
+          "comparator_history": "H-CURRENT",
+          "n": 663,
+          "candidate_error": 0.669683257918552,
+          "comparator_error": 0.6470588235294118,
+          "delta": 0.02262443438914027,
+          "week_interval": [
+            -0.039571623936761745,
+            0.07900776995857223
+          ],
+          "row_loss_partition": {
+            "better_rows": 102,
+            "worse_rows": 123,
+            "tied_rows": 438
+          }
+        },
+        {
+          "pair_id": "PAIR-53f7a0c9aaabbec10873",
+          "target": "pass_int",
+          "product": "forecast_distribution",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 0.41538082981193086,
+          "comparator_error": 0.4164901313463335,
+          "delta": -0.001109301534402605,
+          "week_interval": [
+            -0.004733811653364288,
+            0.002720189312012755
+          ],
+          "row_loss_partition": {
+            "better_rows": 352,
+            "worse_rows": 287,
+            "tied_rows": 24
+          }
+        },
+        {
+          "pair_id": "PAIR-22fe29e65e232555675a",
+          "target": "pass_int",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 663,
+          "candidate_error": 0.7225837773418035,
+          "comparator_error": 0.7246262035212361,
+          "delta": -0.0020424261794326722,
+          "week_interval": [
+            -0.004235185545408883,
+            4.68692732807992e-05
+          ],
+          "row_loss_partition": {
+            "better_rows": 325,
+            "worse_rows": 338,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-c9310e31b6e11f5878a2",
+          "target": "pass_td",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 1.0788814765501626,
+          "comparator_error": 1.0755974969083544,
+          "delta": 0.0032839796418083797,
+          "week_interval": [
+            -0.0456610068966156,
+            0.055426331137330406
+          ],
+          "row_loss_partition": {
+            "better_rows": 371,
+            "worse_rows": 291,
+            "tied_rows": 1
+          }
+        },
+        {
+          "pair_id": "PAIR-954673fc6a5ebbeb357f",
+          "target": "pass_yd",
+          "product": "display_point",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 663,
+          "candidate_error": 72.18473154879015,
+          "comparator_error": 71.2081447963801,
+          "delta": 0.9765867524100629,
+          "week_interval": [
+            -0.5354078187392877,
+            2.77056417531461
+          ],
+          "row_loss_partition": {
+            "better_rows": 317,
+            "worse_rows": 346,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-3f2e4e5b51c6f97ed513",
+          "target": "rec",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5062,
+          "candidate_error": 3.244106622740355,
+          "comparator_error": 3.2624350040462455,
+          "delta": -0.01832838130589046,
+          "week_interval": [
+            -0.030710970242970873,
+            -0.005369851886774559
+          ],
+          "row_loss_partition": {
+            "better_rows": 2741,
+            "worse_rows": 2321,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-c1084bb362f279e256ae",
+          "target": "rec_yd",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5062,
+          "candidate_error": 626.9124277750245,
+          "comparator_error": 646.9259186092454,
+          "delta": -20.01349083422082,
+          "week_interval": [
+            -43.702985384499286,
+            0.5329449059123453
+          ],
+          "row_loss_partition": {
+            "better_rows": 2669,
+            "worse_rows": 2346,
+            "tied_rows": 47
+          }
+        },
+        {
+          "pair_id": "PAIR-1b60a53449eadc30f382",
+          "target": "rush_att",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2129,
+          "candidate_error": 19.248647508333896,
+          "comparator_error": 19.30292758615996,
+          "delta": -0.05428007782606669,
+          "week_interval": [
+            -0.27722626114393245,
+            0.15633074775447448
+          ],
+          "row_loss_partition": {
+            "better_rows": 1120,
+            "worse_rows": 1009,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-fbee9ede6c0cf0114002",
+          "target": "rush_rec_yd",
+          "product": "display_point",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 5062,
+          "candidate_error": 20.95573794493183,
+          "comparator_error": 21.054128802844726,
+          "delta": -0.0983908579128959,
+          "week_interval": [
+            -0.19530892211313958,
+            -0.008905087984008315
+          ],
+          "row_loss_partition": {
+            "better_rows": 2536,
+            "worse_rows": 2526,
+            "tied_rows": 0
+          }
+        }
+      ]
+    },
+    {
+      "season": 2022,
+      "pairs": 45,
+      "independently_checked_pair_views": 135,
+      "independently_checked_univariate_views": 270,
+      "source_rows_scanned": 1588206,
+      "selected_recipe_query_rows": 201330,
+      "distinct_query_labels": 34101,
+      "distinct_supported_query_labels": 33661,
+      "unique_games": 271,
+      "unique_weeks": 18,
+      "source_bound_score_sha256": "2ccb0b58030b302f63cf670c1d1e618323fe15573ca1a2ee1bc82c670c045ad7",
+      "source_bound_pairs_sha256": "00875399740b85d655048b1a3c2b339ab3606c71688b576da126bec19ff27254",
+      "full_system_comparisons": [
+        {
+          "pair_id": "PAIR-0cf56f21693f49d452fa",
+          "target": "anytime_td",
+          "product": "event_probability",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:log_loss_probability:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 5094,
+          "candidate_error": 0.15393980201366747,
+          "comparator_error": 0.16078410733370554,
+          "delta": -0.006844305320038037,
+          "week_interval": [
+            -0.015621631976125431,
+            -0.0005116105814667668
+          ],
+          "row_loss_partition": {
+            "better_rows": 2841,
+            "worse_rows": 2253,
+            "tied_rows": 0
+          }
+        },
+        {
+          "pair_id": "PAIR-8226d58bf85d6e24c3dd",
+          "target": "nick-chart-ppr-v1",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-qualified-partial-chart-direct-wave-v1:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 5718,
+          "candidate_error": 5.173704092339979,
+          "comparator_error": 5.176953480237845,
+          "delta": -0.003249387897866386,
+          "week_interval": [
+            -0.02069928575714378,
+            0.011785093928761155
+          ],
+          "row_loss_partition": {
+            "better_rows": 1848,
+            "worse_rows": 1859,
+            "tied_rows": 2011
+          }
+        },
+        {
+          "pair_id": "PAIR-c05aec324463ee6fb3ea",
+          "target": "nick-chart-ppr-v1",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 5718,
+          "candidate_error": 51.6809509752688,
+          "comparator_error": 54.15799445933399,
+          "delta": -2.477043484065195,
+          "week_interval": [
+            -11.329321698816912,
+            3.019345998467408
+          ],
+          "row_loss_partition": {
+            "better_rows": 2847,
+            "worse_rows": 2493,
+            "tied_rows": 378
+          }
+        },
+        {
+          "pair_id": "PAIR-2183b95f8776a42aba81",
+          "target": "pass_att",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 10.06058679553215,
+          "comparator_error": 10.071810839349041,
+          "delta": -0.01122404381689173,
+          "week_interval": [
+            -0.18971278055040708,
+            0.1533195809602
+          ],
+          "row_loss_partition": {
+            "better_rows": 266,
+            "worse_rows": 260,
+            "tied_rows": 107
+          }
+        },
+        {
+          "pair_id": "PAIR-53d0666473f1c43e9cbb",
+          "target": "pass_att",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 190.2277112708401,
+          "comparator_error": 190.33123300446903,
+          "delta": -0.10352173362892605,
+          "week_interval": [
+            -4.501474853153421,
+            4.784552226926771
+          ],
+          "row_loss_partition": {
+            "better_rows": 260,
+            "worse_rows": 266,
+            "tied_rows": 107
+          }
+        },
+        {
+          "pair_id": "PAIR-64b40c11dc787bac7373",
+          "target": "pass_cmp",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-CURRENT",
+          "comparator": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 6.7984187887700935,
+          "comparator_error": 6.834521896993362,
+          "delta": -0.03610310822326757,
+          "week_interval": [
+            -0.23255504280352368,
+            0.14593434088453405
+          ],
+          "row_loss_partition": {
+            "better_rows": 295,
+            "worse_rows": 264,
+            "tied_rows": 74
+          }
+        },
+        {
+          "pair_id": "PAIR-b8ca6d1e5440ae239da0",
+          "target": "pass_cmp",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 84.78584887204904,
+          "comparator_error": 84.9391119410294,
+          "delta": -0.15326306898035535,
+          "week_interval": [
+            -2.031638524536262,
+            1.3998132513685737
+          ],
+          "row_loss_partition": {
+            "better_rows": 258,
+            "worse_rows": 268,
+            "tied_rows": 107
+          }
+        },
+        {
+          "pair_id": "PAIR-fee868568a6bb5f8f7c9",
+          "target": "pass_int",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 0.665086887835703,
+          "comparator_error": 0.6666666666666666,
+          "delta": -0.001579778830963665,
+          "week_interval": [
+            -0.028872926045016074,
+            0.021021265749986928
+          ],
+          "row_loss_partition": {
+            "better_rows": 40,
+            "worse_rows": 39,
+            "tied_rows": 554
+          }
+        },
+        {
+          "pair_id": "PAIR-1dbcaaebe6f5fefc95ae",
+          "target": "pass_int",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 0.7577784452685109,
+          "comparator_error": 0.7648707956499974,
+          "delta": -0.0070923503814864786,
+          "week_interval": [
+            -0.014406364612298259,
+            -0.00044692263149971633
+          ],
+          "row_loss_partition": {
+            "better_rows": 232,
+            "worse_rows": 238,
+            "tied_rows": 163
+          }
+        },
+        {
+          "pair_id": "PAIR-7cc70485b535168ae44a",
+          "target": "pass_td",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 0.8877038572874445,
+          "comparator_error": 0.8878357030015798,
+          "delta": -0.0001318457141353874,
+          "week_interval": [
+            -0.06399703263868348,
+            0.07264247737878596
+          ],
+          "row_loss_partition": {
+            "better_rows": 91,
+            "worse_rows": 103,
+            "tied_rows": 439
+          }
+        },
+        {
+          "pair_id": "PAIR-3035ac00624f5bc48722",
+          "target": "pass_td",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 1.3578683489367118,
+          "comparator_error": 1.3595748761383457,
+          "delta": -0.0017065272016339413,
+          "week_interval": [
+            -0.012740774476540963,
+            0.008818737520494738
+          ],
+          "row_loss_partition": {
+            "better_rows": 263,
+            "worse_rows": 263,
+            "tied_rows": 107
+          }
+        },
+        {
+          "pair_id": "PAIR-103ce71ff89e5e5de006",
+          "target": "pass_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-CURRENT",
+          "comparator": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 78.08163090112421,
+          "comparator_error": 79.08095767163637,
+          "delta": -0.9993267705121546,
+          "week_interval": [
+            -3.6864904691524947,
+            1.4789291523632064
+          ],
+          "row_loss_partition": {
+            "better_rows": 265,
+            "worse_rows": 261,
+            "tied_rows": 107
+          }
+        },
+        {
+          "pair_id": "PAIR-ac0b52293ed7fb943a73",
+          "target": "pass_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "empirical-player-history-control-v1",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 10991.21780198061,
+          "comparator_error": 11266.355743799259,
+          "delta": -275.13794181864773,
+          "week_interval": [
+            -783.1590998031494,
+            274.34905399917346
+          ],
+          "row_loss_partition": {
+            "better_rows": 261,
+            "worse_rows": 265,
+            "tied_rows": 107
+          }
+        },
+        {
+          "pair_id": "PAIR-59823541747e06e7dc4f",
+          "target": "rec",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 5094,
+          "candidate_error": 1.4625049077345897,
+          "comparator_error": 1.4758539458186102,
+          "delta": -0.013349038084020416,
+          "week_interval": [
+            -0.08613787808128338,
+            0.0388594984006925
+          ],
+          "row_loss_partition": {
+            "better_rows": 1115,
+            "worse_rows": 1127,
+            "tied_rows": 2852
+          }
+        },
+        {
+          "pair_id": "PAIR-6cc1dfbb39bd85b4cd91",
+          "target": "rec",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 5094,
+          "candidate_error": 4.2216307117558705,
+          "comparator_error": 4.238615846589301,
+          "delta": -0.01698513483343018,
+          "week_interval": [
+            -0.04171546117160265,
+            0.0020499157024682045
+          ],
+          "row_loss_partition": {
+            "better_rows": 2323,
+            "worse_rows": 2171,
+            "tied_rows": 600
+          }
+        },
+        {
+          "pair_id": "PAIR-2a63dfd4c5ad119cf957",
+          "target": "rec_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 5094,
+          "candidate_error": 18.169745217928696,
+          "comparator_error": 18.455045151158224,
+          "delta": -0.28529993322952907,
+          "week_interval": [
+            -0.7471139342332346,
+            0.10725053761128985
+          ],
+          "row_loss_partition": {
+            "better_rows": 2329,
+            "worse_rows": 2384,
+            "tied_rows": 381
+          }
+        },
+        {
+          "pair_id": "PAIR-100b84e776031e1a87a0",
+          "target": "rec_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "empirical-player-history-control-v1",
+          "comparator_history": "H-CURRENT",
+          "n": 5094,
+          "candidate_error": 727.3999443781386,
+          "comparator_error": 752.2654035631674,
+          "delta": -24.865459185028797,
+          "week_interval": [
+            -84.07568740424918,
+            18.64596451461962
+          ],
+          "row_loss_partition": {
+            "better_rows": 2048,
+            "worse_rows": 2446,
+            "tied_rows": 600
+          }
+        },
+        {
+          "pair_id": "PAIR-45f4344a5728527b9dda",
+          "target": "rush_att",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-hgb-rush-att-qb-rb-specialization-v1:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 2201,
+          "candidate_error": 3.4530778528123323,
+          "comparator_error": 3.542367749369694,
+          "delta": -0.08928989655736155,
+          "week_interval": [
+            -0.2599158663367139,
+            0.045945403035630675
+          ],
+          "row_loss_partition": {
+            "better_rows": 991,
+            "worse_rows": 1036,
+            "tied_rows": 174
+          }
+        },
+        {
+          "pair_id": "PAIR-29acb7853aa45799462d",
+          "target": "rush_att",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-CURRENT",
+          "comparator": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 2201,
+          "candidate_error": 24.308339221679777,
+          "comparator_error": 25.128676028599312,
+          "delta": -0.8203368069195365,
+          "week_interval": [
+            -3.0202451531789913,
+            1.0189768447585308
+          ],
+          "row_loss_partition": {
+            "better_rows": 1037,
+            "worse_rows": 907,
+            "tied_rows": 257
+          }
+        },
+        {
+          "pair_id": "PAIR-4cafa8336b5ef8804b32",
+          "target": "rush_rec_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 5094,
+          "candidate_error": 23.88487860508299,
+          "comparator_error": 24.30290537887711,
+          "delta": -0.41802677379412545,
+          "week_interval": [
+            -1.1508472599799857,
+            0.05869345806802528
+          ],
+          "row_loss_partition": {
+            "better_rows": 2438,
+            "worse_rows": 2319,
+            "tied_rows": 337
+          }
+        },
+        {
+          "pair_id": "PAIR-d9d2f1a196ff5ef816e3",
+          "target": "rush_rec_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "empirical-player-history-control-v1",
+          "comparator_history": "H-CURRENT",
+          "n": 5094,
+          "candidate_error": 1120.6086716659127,
+          "comparator_error": 1152.3331793585314,
+          "delta": -31.72450769261887,
+          "week_interval": [
+            -86.61613924205696,
+            8.180588371119038
+          ],
+          "row_loss_partition": {
+            "better_rows": 2083,
+            "worse_rows": 2411,
+            "tied_rows": 600
+          }
+        },
+        {
+          "pair_id": "PAIR-aa96ca0297befcb58a60",
+          "target": "rush_yd",
+          "product": "display_point",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 2201,
+          "candidate_error": 19.430713312130848,
+          "comparator_error": 19.836892321671968,
+          "delta": -0.4061790095411177,
+          "week_interval": [
+            -1.3246660736641918,
+            0.4694745988238998
+          ],
+          "row_loss_partition": {
+            "better_rows": 907,
+            "worse_rows": 822,
+            "tied_rows": 472
+          }
+        },
+        {
+          "pair_id": "PAIR-f8b287965c802288cd4d",
+          "target": "rush_yd",
+          "product": "genuine_mean",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "empirical-player-history-control-v1",
+          "comparator_history": "H-CURRENT",
+          "n": 2201,
+          "candidate_error": 841.1175816973567,
+          "comparator_error": 845.5901940072664,
+          "delta": -4.47261230990973,
+          "week_interval": [
+            -38.70101599592692,
+            27.802764231614535
+          ],
+          "row_loss_partition": {
+            "better_rows": 859,
+            "worse_rows": 1085,
+            "tied_rows": 257
+          }
+        },
+        {
+          "pair_id": "PAIR-b130bb932eb6e5053cac",
+          "target": "nick-chart-ppr-v1",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-qualified-partial-chart-direct-wave-v1:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 5718,
+          "candidate_error": 3.970162820200363,
+          "comparator_error": 3.9716247780498897,
+          "delta": -0.001461957849526952,
+          "week_interval": [
+            -0.009274444163919216,
+            0.005731537814933586
+          ],
+          "row_loss_partition": {
+            "better_rows": 2233,
+            "worse_rows": 2136,
+            "tied_rows": 1349
+          }
+        },
+        {
+          "pair_id": "PAIR-9c57ddce81616b0194bb",
+          "target": "pass_att",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 9.395309601607213,
+          "comparator_error": 9.405040894752155,
+          "delta": -0.009731293144941856,
+          "week_interval": [
+            -0.06138255073167358,
+            0.039462535854791064
+          ],
+          "row_loss_partition": {
+            "better_rows": 219,
+            "worse_rows": 192,
+            "tied_rows": 222
+          }
+        },
+        {
+          "pair_id": "PAIR-aab22795d0dc4690f20c",
+          "target": "pass_cmp",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 6.206640267102893,
+          "comparator_error": 6.209182291730489,
+          "delta": -0.0025420246275964123,
+          "week_interval": [
+            -0.03507946347428819,
+            0.03135505723303194
+          ],
+          "row_loss_partition": {
+            "better_rows": 203,
+            "worse_rows": 208,
+            "tied_rows": 222
+          }
+        },
+        {
+          "pair_id": "PAIR-db31e12673f3b63c92db",
+          "target": "pass_int",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 0.44784587294914824,
+          "comparator_error": 0.45238310322536196,
+          "delta": -0.004537230276213678,
+          "week_interval": [
+            -0.008851817333512537,
+            -0.0005474582263735998
+          ],
+          "row_loss_partition": {
+            "better_rows": 241,
+            "worse_rows": 229,
+            "tied_rows": 163
+          }
+        },
+        {
+          "pair_id": "PAIR-a476801781449387125e",
+          "target": "pass_td",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 0.651687142916059,
+          "comparator_error": 0.6524805464782855,
+          "delta": -0.0007934035622262764,
+          "week_interval": [
+            -0.003719364748181301,
+            0.002866387315065594
+          ],
+          "row_loss_partition": {
+            "better_rows": 210,
+            "worse_rows": 201,
+            "tied_rows": 222
+          }
+        },
+        {
+          "pair_id": "PAIR-490c7458c4732ec57234",
+          "target": "pass_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 70.77817652535083,
+          "comparator_error": 70.92827929096947,
+          "delta": -0.15010276561865082,
+          "week_interval": [
+            -0.6173714119114072,
+            0.3865943641060156
+          ],
+          "row_loss_partition": {
+            "better_rows": 223,
+            "worse_rows": 188,
+            "tied_rows": 222
+          }
+        },
+        {
+          "pair_id": "PAIR-eae16ae14b9881fd651b",
+          "target": "rec",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 5094,
+          "candidate_error": 1.1349907635910723,
+          "comparator_error": 1.1356022396611918,
+          "delta": -0.0006114760701195623,
+          "week_interval": [
+            -0.003218416536215203,
+            0.0016281176323750604
+          ],
+          "row_loss_partition": {
+            "better_rows": 1905,
+            "worse_rows": 1827,
+            "tied_rows": 1362
+          }
+        },
+        {
+          "pair_id": "PAIR-7740730a1778a36c542e",
+          "target": "rec_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 5094,
+          "candidate_error": 13.97726110016607,
+          "comparator_error": 13.978651799553116,
+          "delta": -0.001390699387047385,
+          "week_interval": [
+            -0.042596466209938184,
+            0.04537002706826031
+          ],
+          "row_loss_partition": {
+            "better_rows": 1861,
+            "worse_rows": 1871,
+            "tied_rows": 1362
+          }
+        },
+        {
+          "pair_id": "PAIR-1d820536dfd10df53d8d",
+          "target": "rush_att",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 2201,
+          "candidate_error": 2.8096163953295727,
+          "comparator_error": 2.8179175497699394,
+          "delta": -0.008301154440366467,
+          "week_interval": [
+            -0.017964426122530013,
+            0.001758894525679935
+          ],
+          "row_loss_partition": {
+            "better_rows": 857,
+            "worse_rows": 732,
+            "tied_rows": 612
+          }
+        },
+        {
+          "pair_id": "PAIR-682fa25c98d5e226aa1d",
+          "target": "rush_rec_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 5094,
+          "candidate_error": 18.440496079741184,
+          "comparator_error": 18.440630454877233,
+          "delta": -0.00013437513605131716,
+          "week_interval": [
+            -0.019927180229222304,
+            0.0172155830813414
+          ],
+          "row_loss_partition": {
+            "better_rows": 1969,
+            "worse_rows": 1967,
+            "tied_rows": 1158
+          }
+        },
+        {
+          "pair_id": "PAIR-67c66f5b3c32bfd17c4d",
+          "target": "rush_yd",
+          "product": "forecast_distribution",
+          "purpose": "SAME_SEASON_OBSERVED_LEADER_VS_RUNNER",
+          "candidate": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-CURRENT",
+          "n": 2201,
+          "candidate_error": 15.091837209740818,
+          "comparator_error": 15.154355714171503,
+          "delta": -0.06251850443068452,
+          "week_interval": [
+            -0.1211307102653204,
+            -0.004105802305549413
+          ],
+          "row_loss_partition": {
+            "better_rows": 853,
+            "worse_rows": 736,
+            "tied_rows": 612
+          }
+        },
+        {
+          "pair_id": "PAIR-e0b3334fe8d357d045d9",
+          "target": "anytime_td",
+          "product": "event_probability",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:log_loss_probability:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "empirical-player-history-control-v1",
+          "comparator_history": "H-MULTI",
+          "n": 5094,
+          "candidate_error": 0.15393980201366747,
+          "comparator_error": 0.17564847188592986,
+          "delta": -0.02170866987226237,
+          "week_interval": [
+            -0.0349941559611146,
+            -0.010649282830498704
+          ],
+          "row_loss_partition": {
+            "better_rows": 1764,
+            "worse_rows": 2730,
+            "tied_rows": 600
+          }
+        },
+        {
+          "pair_id": "PAIR-1f6ce77e4a3f2fb12d86",
+          "target": "pass_cmp",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 633,
+          "candidate_error": 84.9391119410294,
+          "comparator_error": 84.78584887204904,
+          "delta": 0.15326306898035535,
+          "week_interval": [
+            -1.3998132513685742,
+            2.031638524536261
+          ],
+          "row_loss_partition": {
+            "better_rows": 268,
+            "worse_rows": 258,
+            "tied_rows": 107
+          }
+        },
+        {
+          "pair_id": "PAIR-5ff46b8b8de8b4587a59",
+          "target": "pass_int",
+          "product": "display_point",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "candidate_history": "H-CURRENT",
+          "comparator": "empirical-player-history-control-v1",
+          "comparator_history": "H-CURRENT",
+          "n": 633,
+          "candidate_error": 0.6714060031595577,
+          "comparator_error": 0.7282780410742496,
+          "delta": -0.05687203791469194,
+          "week_interval": [
+            -0.11912950317350718,
+            0.00010368663594462939
+          ],
+          "row_loss_partition": {
+            "better_rows": 122,
+            "worse_rows": 101,
+            "tied_rows": 410
+          }
+        },
+        {
+          "pair_id": "PAIR-389ad47bfb9f241e6d66",
+          "target": "pass_int",
+          "product": "forecast_distribution",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 633,
+          "candidate_error": 0.44784587294914824,
+          "comparator_error": 0.45238310322536196,
+          "delta": -0.004537230276213678,
+          "week_interval": [
+            -0.008851817333512537,
+            -0.0005474582263735998
+          ],
+          "row_loss_partition": {
+            "better_rows": 241,
+            "worse_rows": 229,
+            "tied_rows": 163
+          }
+        },
+        {
+          "pair_id": "PAIR-c8fa1690e2b270cf35c3",
+          "target": "pass_int",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 633,
+          "candidate_error": 0.9195456284247009,
+          "comparator_error": 0.9151401412096498,
+          "delta": 0.0044054872150510955,
+          "week_interval": [
+            0.00048798303171682003,
+            0.008471614108892996
+          ],
+          "row_loss_partition": {
+            "better_rows": 270,
+            "worse_rows": 256,
+            "tied_rows": 107
+          }
+        },
+        {
+          "pair_id": "PAIR-ec4a681df5c7503a4786",
+          "target": "pass_td",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 633,
+          "candidate_error": 1.421855024319262,
+          "comparator_error": 1.387225353742167,
+          "delta": 0.034629670577094894,
+          "week_interval": [
+            -0.24655037394264506,
+            0.24342523580152187
+          ],
+          "row_loss_partition": {
+            "better_rows": 292,
+            "worse_rows": 286,
+            "tied_rows": 55
+          }
+        },
+        {
+          "pair_id": "PAIR-529068d42b833a9f6803",
+          "target": "pass_yd",
+          "product": "display_point",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 633,
+          "candidate_error": 79.81461679868886,
+          "comparator_error": 89.26540284360189,
+          "delta": -9.450786044913025,
+          "week_interval": [
+            -24.834630187226036,
+            -0.4537008346374137
+          ],
+          "row_loss_partition": {
+            "better_rows": 323,
+            "worse_rows": 269,
+            "tied_rows": 41
+          }
+        },
+        {
+          "pair_id": "PAIR-2edf47c65484fd0cd24e",
+          "target": "rec",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5094,
+          "candidate_error": 4.2216307117558705,
+          "comparator_error": 4.238615846589301,
+          "delta": -0.01698513483343018,
+          "week_interval": [
+            -0.04171546117160265,
+            0.0020499157024682045
+          ],
+          "row_loss_partition": {
+            "better_rows": 2323,
+            "worse_rows": 2171,
+            "tied_rows": 600
+          }
+        },
+        {
+          "pair_id": "PAIR-116b502a9ea89dc95f2c",
+          "target": "rec_yd",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "empirical-player-history-control-v1",
+          "candidate_history": "H-RECENT",
+          "comparator": "v2-distribution-controls-reconstruction-v2:regularized_glm_law:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 5094,
+          "candidate_error": 752.2654035631674,
+          "comparator_error": 823.5759717314488,
+          "delta": -71.31056816828135,
+          "week_interval": [
+            -201.8717636034678,
+            53.7082567424409
+          ],
+          "row_loss_partition": {
+            "better_rows": 2613,
+            "worse_rows": 2099,
+            "tied_rows": 382
+          }
+        },
+        {
+          "pair_id": "PAIR-2dae5ccb2d04c786c05c",
+          "target": "rush_att",
+          "product": "genuine_mean",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory",
+          "comparator_history": "H-MULTI",
+          "n": 2201,
+          "candidate_error": 25.128676028599312,
+          "comparator_error": 25.219367760296073,
+          "delta": -0.09069173169675675,
+          "week_interval": [
+            -0.5150117168972207,
+            0.4858835778159991
+          ],
+          "row_loss_partition": {
+            "better_rows": 1004,
+            "worse_rows": 940,
+            "tied_rows": 257
+          }
+        },
+        {
+          "pair_id": "PAIR-4638de3c36e63d70ad70",
+          "target": "rush_rec_yd",
+          "product": "display_point",
+          "purpose": "FIXED_2026_CONTENDERS_ON_PRIOR_SEASON",
+          "candidate": "hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory",
+          "candidate_history": "H-MULTI",
+          "comparator": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory",
+          "comparator_history": "H-RECENT",
+          "n": 5094,
+          "candidate_error": 23.88487860508299,
+          "comparator_error": 24.319984295249313,
+          "delta": -0.43510569016632805,
+          "week_interval": [
+            -1.163497016037848,
+            0.024008215829310498
+          ],
+          "row_loss_partition": {
+            "better_rows": 2426,
+            "worse_rows": 2331,
+            "tied_rows": 337
+          }
+        }
+      ]
+    }
+  ],
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "current2026_Week8_outcomes_read": 0,
+  "scope": "Independent aggregation of retained eligible points/labels and retained row-CRPS summaries; not an independent raw NFL-label source or recomputation of every law/PMF. All exposed descriptive minima, not earlier-executable policy selection.",
+  "limits": [
+    "2026 has seven week clusters, too few for the registered whole-week interval.",
+    "2022 RECENT is source-limited 2022 proxy, not a true 2021-plus-2022 comparison.",
+    "Missing exact prior-season D1/D2 recipes remain blocked/fit-required; no surrogate replacement.",
+    "Proper football CRPS/Brier does not establish offered-line probability or priced selection performance."
+  ],
+  "resources": {
+    "wall_seconds": 76.2129683029998,
+    "peak_RSS_bytes": 159657984
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "B-C-FIXED-MASK-SOURCE-REVIEW-v1",
+  "UTC": "2026-11-22T21:36:07.876587+00:00",
+  "owner": "B independent reviewer",
+  "state": "PUBLISHED_C_HANDOFF_RECEIVED;EXACT_FIXED_SET_BODY_NOT_OBTAINED_IN_THIS_SCOPE",
+  "scope": "Read-only public metadata/source-receipt discovery. No case-mask rebuilding, private C artifact access, outcomes, scoring, fitting, simulator, new source collection or repetition of the closed LA/LAR diagnostic.",
+  "exact_C_result_commit": "0f5859c661c0404b02f0914826cf560f1754ed24",
+  "source_bindings": [
+    {
+      "path": "reports/shared-game-sim-01/follow-through-v1/README.md",
+      "URL": "https://github.com/NickNicky19/NFL-forecasting-NGS-C/blob/0f5859c661c0404b02f0914826cf560f1754ed24/reports/shared-game-sim-01/follow-through-v1/README.md",
+      "bytes": 14031,
+      "SHA256": "4eb29f874614ce80ea10e797ab2b59cd5ca0f360c838b8d283a60611a38e6d7b",
+      "Git_blob_SHA1": "5f2f3b3822be61543c5cde5584a07496718d9d35",
+      "exact_Git_blob_match": true
+    },
+    {
+      "path": "reports/shared-game-sim-01/follow-through-v1/OWNER_HANDOFF_V1.json",
+      "URL": "https://github.com/NickNicky19/NFL-forecasting-NGS-C/blob/0f5859c661c0404b02f0914826cf560f1754ed24/reports/shared-game-sim-01/follow-through-v1/OWNER_HANDOFF_V1.json",
+      "bytes": 5570,
+      "SHA256": "a01b25bcb35ad1f6d186c6c8e7ff08c8fb64f28f6de68177a9b3a96d7664a19b",
+      "Git_blob_SHA1": "b42246779d26ed2127ca9291300c89cd1c729763",
+      "exact_Git_blob_match": true
+    },
+    {
+      "path": "reports/shared-game-sim-01/follow-through-v1/FINITE_QUEUE.json",
+      "URL": "https://github.com/NickNicky19/NFL-forecasting-NGS-C/blob/0f5859c661c0404b02f0914826cf560f1754ed24/reports/shared-game-sim-01/follow-through-v1/FINITE_QUEUE.json",
+      "bytes": 2077,
+      "SHA256": "facf2e3ee8083f90551c21e2b8813a31d01a3f010e31c914589aa8bc972ba31c",
+      "Git_blob_SHA1": "b786651031f33a298e228ebe6bd7d144cf8575ce",
+      "exact_Git_blob_match": true
+    }
+  ],
+  "source_tree_complete_at_pin": true,
+  "tree_relevant_artifacts": [
+    "reports/shared-game-sim-01/execution-v1/COMPARABLE_MASK_LEADERS.json",
+    "reports/shared-game-sim-01/execution-v1/IDENTITY_AND_CLOCK_INTEGRATION.json",
+    "reports/shared-game-sim-01/follow-through-v1/intake/B_ORDINAL_FROZEN_OUTPUTS_V3.json.gz",
+    "reports/shared-game-sim-01/readiness/IDENTITY_ADAPTER_V1.py",
+    "reports/shared-game-sim-01/readiness/IDENTITY_ORIGIN_READINESS.json",
+    "reports/shared-game-sim-01/readiness/IDENTITY_ORIGIN_READINESS.md",
+    "reports/shared-game-sim-01/readiness/IDENTITY_ORIGIN_READINESS_V1.json",
+    "reports/shared-game-sim-01/readiness/inspect_identity_adapter.py"
+  ],
+  "source_handoff_findings": {
+    "A": "COMPLETED_CLOSED_AND_ADMITTED_PUBLIC_SCOPE",
+    "B": "RETRIEVED_ADMITTED_AND_GRADED_SECONDARY_DIAGNOSTIC;5338primarybindings;different-horizon timing-unverified evidence",
+    "C_masks_reference": "OWNER_HANDOFF references execution-v1/RESEARCH_PAIRS.json.gz and COMPARABLE_MASK_LEADERS.json: aggregate/hash references, not actual fixed availability/exclusion ordinals obtained here.",
+    "private_membership_limit": "C reports retained private forecast/case/grade bodies. Their exact membership was not delivered to this sub-review. Metadata acknowledgments do not establish private-row or fit parity. No public upload of protected records is requested."
+  },
+  "branch_refresh_once": {
+    "follow_through": "0f5859c661c0404b02f0914826cf560f1754ed24",
+    "execution": "f990da3c9812e2e14d5deb1a58e7dcbc41685090",
+    "main": "b76e800146ba46dd5adec2d59cdfc578a1680539",
+    "preparation": "ebf9a0bbe8411f8dbb80745ec87f1fbcf13a4f82",
+    "scope": "One first-page branch refresh; named follow-through head matches supplied pin. No repeated polling or lifetime branch completeness claim."
+  },
+  "fixed_set_reconciliation": {
+    "B_source_reconstruction_count_reported": 671,
+    "C_published_available_count_reported": 638,
+    "B_fixed_case_body_reopened_by_this_review": false,
+    "C_fixed_case_body_obtained": false,
+    "intersection": "NOT_COMPUTED",
+    "B_only": "NOT_COMPUTED",
+    "C_only": "NOT_COMPUTED",
+    "reasons": "NOT_RECONCILED_WITHOUT_ACTUAL_FIXED_SETS_AND_POLICY",
+    "net_33": "No assumption that C is a subset of B or that exactly33cases were wrongly omitted. No subset search, outcome-driven exclusion or hash forcing."
+  },
+  "one_exact_remaining_input": {
+    "executor": "C, retained common-evaluation/receiving-mask owner",
+    "artifact": "Already-retained fixed available-case ordinal/case-ID sets for rec and rec_yd, canonical case-body/order commitment, exclusions/reasons and exact identity-policy/source/code binding used for published638 masks",
+    "route": "Existing permitted private or reconstruction handoff, not a default public private-data upload",
+    "next_action": "Supply/reopen existing bodies and bindings; B compares fixed sets for intersection, each side unmatched and reason alignment without outcomes.",
+    "completion": "Actual reopenable sets yield reproducible set/hash/reason receipt, or one exact documented artifact/permission dependency",
+    "not_required": [
+      "New fit",
+      "New source collection",
+      "A-task reopening",
+      "Rejected compressed A export",
+      "Broad rerun",
+      "Simulator numerical repair"
+    ]
+  },
+  "readiness_report_not_inspected_by_this_subscope": {
+    "path": "reports/shared-game-sim-01/readiness/IDENTITY_ORIGIN_READINESS.json",
+    "bytes": 45840,
+    "scope": "Tree metadata only; parent is checking the existing report once for any explicit body/ordinal pointer. This review does not claim embedded ordinals absent without reading it."
+  },
+  "resource": {
+    "metadata_GETs": 6,
+    "metadata_GET_cap": 6,
+    "NFL_raw_source_GETs": 0,
+    "private_C_reads": 0,
+    "new_fits": 0,
+    "new_grades": 0,
+    "simulator_runs": 0,
+    "reporting_CPU_seconds": 0.008837239999999996,
+    "reporting_wall_seconds": 0.00883699300175067,
+    "limit": "Shared parent B reporting allocation; no C/M3/Tab/A scientific account consumed. Tool/connector overhead incompletely metered.",
+    "preparation_failure": "First local plain-text transport added a terminal LF; Git-blob assertion stopped report generation. Exact structured response strings were retained as JSON transport and decoded to recover original bytes, all3GitblobsPASS. No extra network/source request or tolerance relaxation."
+  }
+}

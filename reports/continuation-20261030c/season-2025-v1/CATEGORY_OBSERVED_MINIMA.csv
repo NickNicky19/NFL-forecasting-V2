@@ -1,0 +1,13 @@
+target,metric,procedure_id,product_id,history_regime,policy_id,native_error,n,games
+pass_yd,mae,hgb-direct-history-controls-v1:squared_error_mean:common-feature-memory,squared_error_mean,H-MULTI,H-MULTI-COMMON,68.68696852478297,664,272
+pass_td,mae,v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory,lower_median,H-MULTI,H-MULTI-COMMON,0.8448795180722891,664,272
+pass_cmp,mae,v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory,poisson_intended_mean_point,H-RECENT,H-RECENT-COMMON,5.82770760580483,664,272
+pass_att,mae,v2-hgb-poisson-count-point-reconstruction-v1:common-feature-memory,poisson_intended_mean_point,H-MULTI,H-MULTI-COMMON,8.488383573526102,664,272
+pass_int,mae,v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory,lower_median,H-CURRENT,H-CURRENT-COMMON,0.5572289156626506,664,272
+rush_yd,mae,v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory,lower_median,H-MULTI,H-MULTI-COMMON,16.71736204576043,2229,272
+rush_att,mae,v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory,lower_median,H-RECENT,H-RECENT-COMMON,2.867205024674742,2229,272
+rec,mae,v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory,lower_median,H-MULTI,H-MULTI-COMMON,1.179448432187382,5294,272
+rec_yd,mae,v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:common-feature-memory,lower_median,H-MULTI,H-MULTI-COMMON,15.309217982621837,5294,272
+rush_rec_yd,mae,hgb-direct-history-controls-v1:absolute_error_point:common-feature-memory,absolute_error_point,H-MULTI,H-MULTI-COMMON,19.710793803717955,5294,272
+anytime_td,brier,hgb-direct-history-controls-v1:log_loss_probability:common-feature-memory,log_loss_probability,H-MULTI,H-MULTI-COMMON,0.14277034735823943,5294,272
+nick-chart-ppr-v1,mae,v2-qualified-partial-chart-direct-wave-v1:ordered_leaf_cdf:common-feature-memory,lower_median,H-MULTI,H-MULTI-COMMON,4.365366346639717,5937,272

@@ -1,0 +1,83 @@
+{
+  "state": "PASS_INDEPENDENT_FIRST_DIRECTION_SCORECARD",
+  "protocol_sha256": "8aa7c89171a62a55265adadf48dba257be4404561ce5dca4f97edf5b316142be",
+  "scores_sha256": "b75b09b691d5b2766dda66f5069469f4441dd0e87831377f4710c225fbfbf7f2",
+  "joined_input_sha256": "b4e628554cbfcacffd5e797f2f1bc6c86ac983b5d7f8151b11e839982a80533e",
+  "grade_packet_sha256": "bc8195a242db25455d226405bf4dc3ecee317733be959f40ce4645249b220a8b",
+  "original_rows": 285,
+  "strategy_row_views_checked": 1140,
+  "canonical_aggregate_views_checked": 92,
+  "aggregate_components_checked": "All state counts, decisive/outer/abstention/unresolved denominators, selected-side hit/loss rates, membership hashes, distinct games/player-games, unsupported probability/return nulls and both uncertainty products.",
+  "game_bootstrap_intervals_independently_recomputed": 168,
+  "side_partition_groups_checked": 44,
+  "actual_side_count_projection_sha256": "22450fde09f06b44b55089d1c939808be393e26d8cad3f7cb46395619ace08f3",
+  "all_strategy_summary": [
+    {
+      "strategy": "SAVED_POINT_DIRECTION_RETAINED_PRECISION",
+      "target": "ALL",
+      "actual_selected_side": "ALL",
+      "outer_rows": 285,
+      "wins": 183,
+      "losses": 96,
+      "pushes": 0,
+      "unknown_participation": 6,
+      "abstained": 0,
+      "decided": 279,
+      "hit_rate": 0.6559139784946236
+    },
+    {
+      "strategy": "alwaysOver",
+      "target": "ALL",
+      "actual_selected_side": "ALL",
+      "outer_rows": 285,
+      "wins": 132,
+      "losses": 147,
+      "pushes": 0,
+      "unknown_participation": 6,
+      "abstained": 0,
+      "decided": 279,
+      "hit_rate": 0.4731182795698925
+    },
+    {
+      "strategy": "alwaysUnder",
+      "target": "ALL",
+      "actual_selected_side": "ALL",
+      "outer_rows": 285,
+      "wins": 147,
+      "losses": 132,
+      "pushes": 0,
+      "unknown_participation": 6,
+      "abstained": 0,
+      "decided": 279,
+      "hit_rate": 0.5268817204301075
+    },
+    {
+      "strategy": "original",
+      "target": "ALL",
+      "actual_selected_side": "ALL",
+      "outer_rows": 285,
+      "wins": 183,
+      "losses": 96,
+      "pushes": 0,
+      "unknown_participation": 6,
+      "abstained": 0,
+      "decided": 279,
+      "hit_rate": 0.6559139784946236
+    }
+  ],
+  "private_case_artifact": {
+    "artifact_id": "V2-INDEPENDENT-PROP-W7-WIN-LOSS-AND-FICTIONAL-REFUNDS-V1",
+    "sha256": "a689bf2754316a20419656295bfd3d3b0407e3b5c80e48e9bdda14f5ba1ad5b9",
+    "bytes": 321,
+    "actual_cases": 2,
+    "fictional_boundary_cases": 2
+  },
+  "limitation": "Original rows and current-vintage labels are exposed. No authenticated settlement, odds, probability, ROI, profitability or live-website improvement. There are zero actual push/void cases in this panel; their correctness is established by fictional boundary checks only. Mandatory category-by-actual-selected-side source projection still needs its separate readback.",
+  "new_fits": 0,
+  "inference_calls": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "current2026_week8_outcomes_read": 0,
+  "wall_seconds": 0.6866490569991583,
+  "peak_rss_bytes": 33832960
+}

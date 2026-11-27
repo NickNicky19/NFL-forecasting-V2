@@ -1,0 +1,104 @@
+{
+  "state": "APPENDED_SOURCE_BOUND_OPPORTUNITY_SCORES_AND_PAIRS",
+  "source_artifact": "reports/information-skill-follow-through-01/B/opportunity-v1/evaluation-v1/SCORES.json",
+  "source_sha256": "2f6f1eb68d0c275ace06967d702824002167390d0cdc8e46427104dec8592c74",
+  "paired_source": "reports/information-skill-follow-through-01/B/opportunity-v1/evaluation-v1/PAIRS.json.gz",
+  "paired_source_sha256": "db6176f62a3ed7d92ed9f667c51336f3478224db5e1b28f04ae9a9e20ec3c7a4",
+  "new_source_score_views": 1408,
+  "new_pairs": 1992,
+  "prior_result_manifest": {
+    "path": "reports/information-skill-01/B/results-index-v1/INDEX_MANIFEST.json",
+    "sha256": "e1e13a6cbd88edf67a3b9414ccff52df7d35b9e54850f97130de8cd1a9d688ba"
+  },
+  "prior_analysis_manifest": {
+    "path": "reports/information-skill-01/B/paired-analysis-index-v1/ANALYSIS_MANIFEST.json",
+    "sha256": "ce5e53225a34ed355a04f26d9625a560c912c17dbbd5f37abf1854f473717442"
+  },
+  "old_result_records_preserved": 619113,
+  "old_result_artifacts_preserved": 235,
+  "old_pairs_preserved": 25475,
+  "old_analysis_artifacts_preserved": 24,
+  "preservation_proofs": {
+    "prior_result_shards_exact_prefix": true,
+    "prior_result_CSV_parts_exact_prefix": true,
+    "prior_result_registry_exact_prefix": true,
+    "prior_paired_records_exact_prefix": true,
+    "prior_analysis_registry_exact_prefix": true
+  },
+  "predecessor_archives": [
+    {
+      "source": "registries/CURRENT_RESULTS_INDEX.json",
+      "archive": "reports/information-skill-follow-through-01/B/opportunity-v1/registration-predecessor-v1/CURRENT_RESULTS_INDEX_PREDECESSOR.json",
+      "sha256": "014484305f261b0542cd72e8d2467b6587e7866c7161563ec5f795d7cd00df7a",
+      "bytes": 31598
+    },
+    {
+      "source": "registries/RESULT_ARTIFACTS.json",
+      "archive": "reports/information-skill-follow-through-01/B/opportunity-v1/registration-predecessor-v1/RESULT_ARTIFACTS_PREDECESSOR.json",
+      "sha256": "5039682892790d0bed6454d34439b8c4e874fc8ffde4a90cc3b05ea049e611d2",
+      "bytes": 111665
+    },
+    {
+      "source": "registries/ANALYSIS_ARTIFACTS.json",
+      "archive": "reports/information-skill-follow-through-01/B/opportunity-v1/registration-predecessor-v1/ANALYSIS_ARTIFACTS_PREDECESSOR.json",
+      "sha256": "5f758523baec9ef85032bc90bdb51a31687e8cadbb8794e8297abc6642ce9bd4",
+      "bytes": 8399
+    },
+    {
+      "source": "reports/abc-championship/EXPORT_INDEX.json",
+      "archive": "reports/information-skill-follow-through-01/B/opportunity-v1/registration-predecessor-v1/EXPORT_INDEX_PREDECESSOR.json",
+      "sha256": "a808f49ee6d95ee808f1c272991b5e8822e955dd09e6127a14193f07919c4a88",
+      "bytes": 2411132
+    }
+  ],
+  "current_result_manifest": "reports/information-skill-follow-through-01/B/opportunity-v1/results-index-v1/INDEX_MANIFEST.json",
+  "current_analysis_manifest": {
+    "path": "reports/information-skill-follow-through-01/B/opportunity-v1/paired-analysis-index-v1/ANALYSIS_MANIFEST.json",
+    "sha256": "e43b2da971f8cee40dd92c505fa333f1bafa6671b0c727a59805adadc027600e"
+  },
+  "export_index_unchanged": true,
+  "export_index_sha256": "a808f49ee6d95ee808f1c272991b5e8822e955dd09e6127a14193f07919c4a88",
+  "verification_receipts": [
+    {
+      "path": "reports/information-skill-follow-through-01/B/opportunity-v1/independent/GRADE_CHECK_V1.json",
+      "sha256": "9cd11f6c7da5cc752ee348df476db7247254927c6c42b0b15a4b7357e443ba7e"
+    },
+    {
+      "path": "reports/information-skill-follow-through-01/B/opportunity-v1/independent/POSTFIT_CHECK_V2.json",
+      "sha256": "7fc58d6da64b0f1fc2b203901e9c6e7e8162d33483b909d78c8148c7a2dbc71c"
+    }
+  ],
+  "index": {
+    "status": "PASS",
+    "records": 620521,
+    "new_records": 1408,
+    "reused_records": 619113,
+    "shards": 468
+  },
+  "verification_scope": "Records valid scores of frozen forecasts and canonical projection; no assertion that every fit was independently reproduced, admitted or promoted.",
+  "disclosed_failed_verifications": [
+    {
+      "path": "reports/information-skill-follow-through-01/B/opportunity-v1/independent/REPRESENTATIVE_FIT_REPRODUCTION_V1.json",
+      "sha256": "3b8927048d2636b6dfa1485f0f39cb2206f4fe79b0f9bee35db91a21da12371f",
+      "original_state": "FAILED_STRICT_REPRESENTATIVE_FIT_TOLERANCES",
+      "all_passed": false,
+      "interpretation": "Original failed/limited verification preserved; passing aggregate/law verification does not establish all fitted-model reproduction or promotion."
+    }
+  ],
+  "independent_all_fits_reproduced": false,
+  "output_preserving_representation": {
+    "kind": "FIRST_WRITE_COMPRESSED_PAIRED_ARRAY;NO_REPRESENTATION_REPAIR",
+    "scientific_rows_changed": 0
+  },
+  "source_scoring_receipt": {
+    "path": "reports/information-skill-follow-through-01/B/opportunity-v1/evaluation-v1/RUN_RECEIPT_V1.json",
+    "sha256": "12714d49c51cc9b281aeba794e7ed71aec76122e20097a205a9ba65afb0e2916",
+    "new_fits_by_that_scoring": 0
+  },
+  "new_fits_by_registration": 0,
+  "new_scoring_by_registration": 0,
+  "new_forecasts_by_registration": 0,
+  "new_NFL_observations_by_registration": 0,
+  "C_admission": false,
+  "website_activation": false
+}

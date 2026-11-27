@@ -1,0 +1,44 @@
+{
+  "all_method_readable_summary": "ALL_METHOD_DIAGNOSTIC_SUMMARIES.csv",
+  "canonical_sources": [
+    {
+      "path": "reports/right-and-wrong-diagnostic-20261031k/stage-a-v1/SCORES.json",
+      "rows": 1584,
+      "sha256": "e2baebaeab72866b332c40f3b53bb5b7f40f67246fd2e637b640f54b4bae32cb"
+    },
+    {
+      "path": "reports/right-and-wrong-diagnostic-20261031k/stage-b-v1/SCORES.json",
+      "rows": 6380,
+      "sha256": "cafcf74b97ea3c81b2b67d7c6adab5328d57d800706177eac66ea92eb22e2ce3"
+    },
+    {
+      "path": "reports/right-and-wrong-diagnostic-20261031k/rr-native-tie-completion-v1/SCORES.json",
+      "rows": 88,
+      "sha256": "83418cfc808947d5f4854094236ec4cd7ff3b3c5a0fb424170fcd2d481bc6b07"
+    }
+  ],
+  "conditioning": "SELECTED_SIDE_AND_REALIZED_OUTCOME",
+  "coverage_annotations": [
+    {
+      "path": "reports/right-and-wrong-diagnostic-20261031k/stage-a-v1/CURRENT_REPORTING_ANNOTATIONS_K_V1.json",
+      "sha256": "6bcdd00671cd772a8822eaf78f342d8d515fb6523a0eba4537b64c663bbca891"
+    },
+    {
+      "path": "reports/right-and-wrong-diagnostic-20261031k/stage-b-v1/CURRENT_REPORTING_ANNOTATIONS_K_V1.json",
+      "sha256": "c7c4896528662721124a5d9848bb6b5168b41fb7c2d66b0be891ff5ee848b437"
+    }
+  ],
+  "default_rank_eligible": false,
+  "diagnostic_only": true,
+  "native_leader_pattern_summary": "NUMERICAL_LEADER_PATTERN_COUNTS.csv",
+  "original_scores_preserved": true,
+  "private_case_evidence_annotation_audit": {
+    "default_action": "Merge source-bound percase evidence/null extensions, then controlcoverage extensions; retainoriginalpacketfields/values unchanged",
+    "join_key": "case_id",
+    "path": "PRIVATE_CASE_RETENTION_AUDIT.json",
+    "sha256": "ec44b02dc98f47030d1923c2c044caa86f70f2ddf684f79336dd98a8c7a6ea32"
+  },
+  "private_case_metadata_annotations": "Sourcebound privatecoverageextensions retainoriginalpacketbytes and correct only inherited-control-mask availability wording",
+  "readable": "RIGHT_AND_WRONG_PREDICTION_DIAGNOSTIC.md",
+  "schema": "k-diagnostic-default-projection-v1"
+}

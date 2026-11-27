@@ -1,0 +1,105 @@
+{
+  "id": "B-COUNTA-PR88-RECIPE-ENCODER-DELTA-v1",
+  "checked_UTC": "2026-11-12T06:49:31.983412+00:00",
+  "source_before": "af405c4604f6eac935e594f1acd3ab492eef412c",
+  "source_after": "3156058b91c7d9f0bb0f2cdebc4831994214e5bd",
+  "before_sha256": "dec10328c7811d788c4b605a4098d01e8f95ab99dca3455b547cc699e7686008",
+  "after_sha256": "6bf0a6d432d7a0f77bab1d8d8a95c687cf91e350dde48e11a7e827184b469351",
+  "check_count": 10,
+  "checks": [
+    {
+      "check": "Old encoder rejects a synthetically authenticated newline-free recipe",
+      "state": "PASS",
+      "expected_guard": "COUNT_A_ORIGINAL_RECIPE"
+    },
+    {
+      "check": "New encoder accepts the same decoded recipe without altering it",
+      "state": "PASS"
+    },
+    {
+      "check": "Original proof-byte guard remains active",
+      "state": "PASS",
+      "expected_guard": "COUNT_A_ORIGINAL_PRODUCER_PROOF"
+    },
+    {
+      "check": "FIT_START byte/hash guard remains active",
+      "state": "PASS",
+      "expected_guard": "COUNT_A_ORIGINAL_FIT_START"
+    },
+    {
+      "check": "MODEL_AUDIT recipe mismatch remains rejected",
+      "state": "PASS",
+      "expected_guard": "COUNT_A_ORIGINAL_RECIPE"
+    },
+    {
+      "check": "Trailing newline changes bytes and digest; no digest equality assumed",
+      "state": "PASS"
+    },
+    {
+      "check": "Only authenticate_fit AST changed; other wire/capture/publication functions unchanged",
+      "state": "PASS"
+    },
+    {
+      "check": "Prepared new Root helper fragment binds new extension plus unchanged adapter/corrector bytes",
+      "state": "PASS"
+    },
+    {
+      "check": "Prepared helper fragment preserves actual reviewed source-profile file hash",
+      "state": "PASS"
+    },
+    {
+      "check": "Owner-reported genuine metadata commitments agree with approved parent and exact one-byte encoding delta",
+      "state": "PASS"
+    }
+  ],
+  "changed_function_ASTs": [
+    "authenticate_fit"
+  ],
+  "verifier_sha256": "754cb9c19c3144e7732cbb4c036fc6948ef036378b1aa213b2db26a86739216b",
+  "state": "PASS_SCOPED_ENCODING_CORRECTION_AND_NEW_HELPER_BINDING",
+  "finding": "Old recipe authentication appended an unregistered newline. New source removes only that byte before hashing; prediction/model/mean-corrector identity is unchanged.",
+  "genuine_metadata_verification": {
+    "owner_report_path": "reports/abc-championship/final-mile-producer-delivery-01/review/COUNTA_ENCODING_INDEPENDENT_REVIEW_V1.json",
+    "owner_report_sha256": "36b1201922058d50379d3f370e4536087ea1da9496339ea89381c3f3176d235b",
+    "declared_original_metadata": {
+      "producer_proof": {
+        "bytes": 26032,
+        "sha256": "9071f4fd5f81fb7e0514e9f1ac47a93d207fc5b27cda3d8aa7f7ea16d320b45e"
+      },
+      "FIT_START": {
+        "bytes": 5968,
+        "sha256": "9119320dc53a64c0bca2caebae6b1b416335ae0db38160ffbc23a1e635d2e967"
+      },
+      "capsule": {
+        "bytes": 399037,
+        "sha256": "5f55367c9f3389dbbe713b1aa95e691e77602cde99bf8e5ff657554a2d5a6a36"
+      },
+      "MODEL_AUDIT": {
+        "bytes": 8898,
+        "sha256": "a7679510ccae33d4f915f6bd70988090d279818bbf2934dc6f25654248cd0dc1",
+        "recipe_sha256": "9c48aab650f35a60631fd5d6af2cef4b8c513416fe0f9b2c61591d7f8af4b85f"
+      }
+    },
+    "declared_recipe_encoding": {
+      "canonical_without_newline_bytes": 5722,
+      "without_newline_sha256": "9c48aab650f35a60631fd5d6af2cef4b8c513416fe0f9b2c61591d7f8af4b85f",
+      "with_newline_bytes": 5723,
+      "with_newline_sha256": "35b97d56ff4ddfd3460cd6c2d2223499f7390bab885c265550bc13d646a2810a"
+    },
+    "B_independently_loaded_private_FIT_START_or_recipe": false,
+    "scope": "B independently verified public delta, unchanged ASTs, synthetic guard behavior and published commitments. Genuine5722recipe bytes remain owner-local; their digest was not independently recomputed by B."
+  },
+  "helper_binding_sha256": "79f7d0e4a8390cf2f0984d51c5e74c3f4e1f6d579977334fb27fc0ac67affcbc",
+  "new_full_Root_bytes": "UNKNOWN_NOT_ISSUED",
+  "actual_CountA_feed_verified": false,
+  "old_34_checks": "Remain an immutable af405-specific receipt. Unchanged function ASTs verified here; no claim they executed against315head.",
+  "no_contamination_claim": "Owner reports old source was not bound to native producer. B observed no affected NFL forecast/grade and quantifies none.",
+  "NFL_fits": 0,
+  "NFL_inference": 0,
+  "model_deserializations": 0,
+  "issued_NFL_rows": 0,
+  "NFL_grades": 0,
+  "native_API_calls": 0,
+  "peer_writes": 0,
+  "external_messages": 0
+}

@@ -1,0 +1,44 @@
+{
+  "at_utc": "2026-11-06T00:58:28.735874+00:00",
+  "state": "PUBLIC_CAPTURE_BYTES_AND_ROW_STATES_INDEPENDENTLY_READ_BACK",
+  "owner": "C",
+  "capture_commit": "b24b05401714d65bec6516d26defaf1aa8bc4866",
+  "server_workflow_run": 42136069679,
+  "server_completed_UTC": "2026-11-06T00:21:40Z",
+  "first_kickoff_UTC": "2026-11-06T01:15:00+00:00",
+  "server_persistence_lead_seconds": 3200,
+  "horizon": "About T-minus-53m; not T-minus-90.",
+  "information_cutoff_UTC": "2026-11-05T23:18:02.414792061+00:00",
+  "model_SHA256": "8a333940431311a6670e6630b6a42f88502e04a1047c55062101bd32a5dae536",
+  "files": [
+    {
+      "path": "RUN.json",
+      "sha256": "f1f530026baa81f7bd1fc4d78dc7ace0e52e761cab8c90684115a1dc78860c1f",
+      "bytes": 1734
+    },
+    {
+      "path": "ROWS.json.gz",
+      "sha256": "5a326ca1868423381e2576ab5ae1cf52005a66208c2dc0abfdde218ccb484919",
+      "bytes": 9839
+    }
+  ],
+  "rows": 27,
+  "unique_forecast_ids": 27,
+  "changed_mean_rows": 26,
+  "changed_median_rows": 2,
+  "probability_mass_checks": "54 empirical weight arrays finite, nonnegative and sum to one; this does not replace the inherited mixture/prior-law contract.",
+  "observed_lag_age_days_range": [
+    4.302083333333333,
+    669.3020833333334
+  ],
+  "proxy_age_days_range": [
+    11.34375,
+    669.3020833333334
+  ],
+  "offers": 0,
+  "selections": 0,
+  "pending_outcomes": 27,
+  "primary_model_admission": false,
+  "B_fits_or_inference": 0,
+  "scope": "New C-owner query-only forecast capture verified read-only. Historical training/query age mismatch remains explicit; no accuracy, original-site deployment or actual-offer claim."
+}

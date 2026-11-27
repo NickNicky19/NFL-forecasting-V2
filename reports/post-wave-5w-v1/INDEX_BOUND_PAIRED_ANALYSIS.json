@@ -1,0 +1,2394 @@
+[
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "FIXED_090:W2",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 0,
+    "candidate_error": null,
+    "comparator_error": null,
+    "delta": null,
+    "relative_error_change": null,
+    "uncertainty": {
+      "n": 0,
+      "delta": null,
+      "relative_error_change": null,
+      "week_interval": null,
+      "week_clusters": 0,
+      "game_clusters": 0,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "status": "NO_SUPPORTED_PAIRED_ROWS"
+    },
+    "candidate_wins": 0,
+    "comparator_wins": 0,
+    "actual_weeks": [
+      2
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "FIXED_090:W3",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 0,
+    "candidate_error": null,
+    "comparator_error": null,
+    "delta": null,
+    "relative_error_change": null,
+    "uncertainty": {
+      "n": 0,
+      "delta": null,
+      "relative_error_change": null,
+      "week_interval": null,
+      "week_clusters": 0,
+      "game_clusters": 0,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "status": "NO_SUPPORTED_PAIRED_ROWS"
+    },
+    "candidate_wins": 0,
+    "comparator_wins": 0,
+    "actual_weeks": [
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "FIXED_090:WALL",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 0,
+    "candidate_error": null,
+    "comparator_error": null,
+    "delta": null,
+    "relative_error_change": null,
+    "uncertainty": {
+      "n": 0,
+      "delta": null,
+      "relative_error_change": null,
+      "week_interval": null,
+      "week_clusters": 0,
+      "game_clusters": 0,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "status": "NO_SUPPORTED_PAIRED_ROWS"
+    },
+    "candidate_wins": 0,
+    "comparator_wins": 0,
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "MATCHED50:W2",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 78,
+    "candidate_error": 0.5769230769230769,
+    "comparator_error": 0.5769230769230769,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 78,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5769230769230769,
+      "comparator_error": 0.5769230769230769,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 78
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 33,
+    "comparator_wins": 33,
+    "actual_weeks": [
+      2
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "MATCHED50:W3",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 81,
+    "candidate_error": 0.38271604938271603,
+    "comparator_error": 0.38271604938271603,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 81,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 16,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.38271604938271603,
+      "comparator_error": 0.38271604938271603,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 81
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 50,
+    "comparator_wins": 50,
+    "actual_weeks": [
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "MATCHED50:WALL",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 159,
+    "candidate_error": 0.4779874213836478,
+    "comparator_error": 0.4779874213836478,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 159,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 32,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4779874213836478,
+      "comparator_error": 0.4779874213836478,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 78
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 81
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 83,
+    "comparator_wins": 83,
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K10_Combined:W2",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 9,
+    "candidate_error": 0.3333333333333333,
+    "comparator_error": 0.3333333333333333,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 9,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 1,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.3333333333333333,
+      "comparator_error": 0.3333333333333333,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 9
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 6,
+    "comparator_wins": 6,
+    "actual_weeks": [
+      2
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K10_Combined:W3",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 10,
+    "candidate_error": 0.5,
+    "comparator_error": 0.5,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 10,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 3,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 5,
+    "comparator_wins": 5,
+    "actual_weeks": [
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K10_Combined:WALL",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 19,
+    "candidate_error": 0.42105263157894735,
+    "comparator_error": 0.42105263157894735,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 19,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 4,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.42105263157894735,
+      "comparator_error": 0.42105263157894735,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 9
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 11,
+    "comparator_wins": 11,
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K10_over:W2",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 7,
+    "candidate_error": 0.42857142857142855,
+    "comparator_error": 0.42857142857142855,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 7,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 6,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.42857142857142855,
+      "comparator_error": 0.42857142857142855,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 7
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 4,
+    "comparator_wins": 4,
+    "actual_weeks": [
+      2
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K10_over:W3",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 9,
+    "candidate_error": 0.5555555555555556,
+    "comparator_error": 0.5555555555555556,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 9,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 8,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5555555555555556,
+      "comparator_error": 0.5555555555555556,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 9
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 4,
+    "comparator_wins": 4,
+    "actual_weeks": [
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K10_over:WALL",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 16,
+    "candidate_error": 0.5,
+    "comparator_error": 0.5,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 16,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 14,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 7
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 9
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 8,
+    "comparator_wins": 8,
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K10_under:W2",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 10,
+    "candidate_error": 0.4,
+    "comparator_error": 0.4,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 10,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 4,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4,
+      "comparator_error": 0.4,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 6,
+    "comparator_wins": 6,
+    "actual_weeks": [
+      2
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K10_under:W3",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 10,
+    "candidate_error": 0.6,
+    "comparator_error": 0.6,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 10,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 4,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6,
+      "comparator_error": 0.6,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 4,
+    "comparator_wins": 4,
+    "actual_weeks": [
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K10_under:WALL",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 20,
+    "candidate_error": 0.5,
+    "comparator_error": 0.5,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 20,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 8,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 10,
+    "comparator_wins": 10,
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K20_Combined:W2",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 19,
+    "candidate_error": 0.3684210526315789,
+    "comparator_error": 0.3684210526315789,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 19,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 8,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.3684210526315789,
+      "comparator_error": 0.3684210526315789,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 19
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 12,
+    "comparator_wins": 12,
+    "actual_weeks": [
+      2
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K20_Combined:W3",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 20,
+    "candidate_error": 0.35,
+    "comparator_error": 0.35,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 20,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 7,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.35,
+      "comparator_error": 0.35,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 20
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 13,
+    "comparator_wins": 13,
+    "actual_weeks": [
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K20_Combined:WALL",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 39,
+    "candidate_error": 0.358974358974359,
+    "comparator_error": 0.358974358974359,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 39,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 15,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.358974358974359,
+      "comparator_error": 0.358974358974359,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 19
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 20
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 25,
+    "comparator_wins": 25,
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K20_over:W2",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 7,
+    "candidate_error": 0.42857142857142855,
+    "comparator_error": 0.42857142857142855,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 7,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 6,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.42857142857142855,
+      "comparator_error": 0.42857142857142855,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 7
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 4,
+    "comparator_wins": 4,
+    "actual_weeks": [
+      2
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K20_over:W3",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 9,
+    "candidate_error": 0.5555555555555556,
+    "comparator_error": 0.5555555555555556,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 9,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 8,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5555555555555556,
+      "comparator_error": 0.5555555555555556,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 9
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 4,
+    "comparator_wins": 4,
+    "actual_weeks": [
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K20_over:WALL",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 16,
+    "candidate_error": 0.5,
+    "comparator_error": 0.5,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 16,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 14,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 7
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 9
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 8,
+    "comparator_wins": 8,
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K20_under:W2",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 20,
+    "candidate_error": 0.4,
+    "comparator_error": 0.4,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 20,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 9,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4,
+      "comparator_error": 0.4,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 20
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 12,
+    "comparator_wins": 12,
+    "actual_weeks": [
+      2
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K20_under:W3",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 20,
+    "candidate_error": 0.35,
+    "comparator_error": 0.35,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 20,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 8,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.35,
+      "comparator_error": 0.35,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 20
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 13,
+    "comparator_wins": 13,
+    "actual_weeks": [
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K20_under:WALL",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 40,
+    "candidate_error": 0.375,
+    "comparator_error": 0.375,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 40,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 17,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.375,
+      "comparator_error": 0.375,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 20
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 20
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 25,
+    "comparator_wins": 25,
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K6_Combined:W2",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 5,
+    "candidate_error": 0.6,
+    "comparator_error": 0.6,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 5,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 1,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6,
+      "comparator_error": 0.6,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 5
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 2,
+    "comparator_wins": 2,
+    "actual_weeks": [
+      2
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K6_Combined:W3",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 6,
+    "candidate_error": 0.8333333333333334,
+    "comparator_error": 0.8333333333333334,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 6,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 1,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.8333333333333334,
+      "comparator_error": 0.8333333333333334,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 1,
+    "comparator_wins": 1,
+    "actual_weeks": [
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K6_Combined:WALL",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 11,
+    "candidate_error": 0.7272727272727273,
+    "comparator_error": 0.7272727272727273,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 11,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 2,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.7272727272727273,
+      "comparator_error": 0.7272727272727273,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 5
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 3,
+    "comparator_wins": 3,
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K6_over:W2",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 5,
+    "candidate_error": 0.2,
+    "comparator_error": 0.2,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 5,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 4,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.2,
+      "comparator_error": 0.2,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 5
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 4,
+    "comparator_wins": 4,
+    "actual_weeks": [
+      2
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K6_over:W3",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 6,
+    "candidate_error": 0.5,
+    "comparator_error": 0.5,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 6,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 6,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 3,
+    "comparator_wins": 3,
+    "actual_weeks": [
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K6_over:WALL",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 11,
+    "candidate_error": 0.36363636363636365,
+    "comparator_error": 0.36363636363636365,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 11,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 10,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.36363636363636365,
+      "comparator_error": 0.36363636363636365,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 5
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 7,
+    "comparator_wins": 7,
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K6_under:W2",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 6,
+    "candidate_error": 0.5,
+    "comparator_error": 0.5,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 6,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 1,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.5,
+      "comparator_error": 0.5,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 3,
+    "comparator_wins": 3,
+    "actual_weeks": [
+      2
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K6_under:W3",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 6,
+    "candidate_error": 0.8333333333333334,
+    "comparator_error": 0.8333333333333334,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 6,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 1,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.8333333333333334,
+      "comparator_error": 0.8333333333333334,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 1,
+    "comparator_wins": 1,
+    "actual_weeks": [
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::rec::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K6_under:WALL",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 12,
+    "candidate_error": 0.6666666666666666,
+    "comparator_error": 0.6666666666666666,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 12,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 2,
+      "game_clusters": 2,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6666666666666666,
+      "comparator_error": 0.6666666666666666,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "2": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        },
+        "3": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 4,
+    "comparator_wins": 4,
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "FIXED_090:W8",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 0,
+    "candidate_error": null,
+    "comparator_error": null,
+    "delta": null,
+    "relative_error_change": null,
+    "uncertainty": {
+      "n": 0,
+      "delta": null,
+      "relative_error_change": null,
+      "week_interval": null,
+      "week_clusters": 0,
+      "game_clusters": 0,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "status": "NO_SUPPORTED_PAIRED_ROWS"
+    },
+    "candidate_wins": 0,
+    "comparator_wins": 0,
+    "actual_weeks": [
+      8
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "MATCHED50:W8",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 13,
+    "candidate_error": 0.6153846153846154,
+    "comparator_error": 0.6153846153846154,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 13,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 11,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6153846153846154,
+      "comparator_error": 0.6153846153846154,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 13
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 5,
+    "comparator_wins": 5,
+    "actual_weeks": [
+      8
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K10_Combined:W8",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 9,
+    "candidate_error": 0.6666666666666666,
+    "comparator_error": 0.6666666666666666,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 9,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 8,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6666666666666666,
+      "comparator_error": 0.6666666666666666,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 9
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 3,
+    "comparator_wins": 3,
+    "actual_weeks": [
+      8
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K10_over:W8",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 3,
+    "candidate_error": 0.6666666666666666,
+    "comparator_error": 0.6666666666666666,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 3,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 3,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6666666666666666,
+      "comparator_error": 0.6666666666666666,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 3
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 1,
+    "comparator_wins": 1,
+    "actual_weeks": [
+      8
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K10_under:W8",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 10,
+    "candidate_error": 0.6,
+    "comparator_error": 0.6,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 10,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 10,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6,
+      "comparator_error": 0.6,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 4,
+    "comparator_wins": 4,
+    "actual_weeks": [
+      8
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K20_Combined:W8",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 13,
+    "candidate_error": 0.6153846153846154,
+    "comparator_error": 0.6153846153846154,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 13,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 11,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6153846153846154,
+      "comparator_error": 0.6153846153846154,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 13
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 5,
+    "comparator_wins": 5,
+    "actual_weeks": [
+      8
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K20_over:W8",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 3,
+    "candidate_error": 0.6666666666666666,
+    "comparator_error": 0.6666666666666666,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 3,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 3,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6666666666666666,
+      "comparator_error": 0.6666666666666666,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 3
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 1,
+    "comparator_wins": 1,
+    "actual_weeks": [
+      8
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K20_under:W8",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 10,
+    "candidate_error": 0.6,
+    "comparator_error": 0.6,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 10,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 10,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": 0.0,
+      "game_normal95_sensitivity": [
+        0.0,
+        0.0
+      ],
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6,
+      "comparator_error": 0.6,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 10
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 4,
+    "comparator_wins": 4,
+    "actual_weeks": [
+      8
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K6_Combined:W8",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 5,
+    "candidate_error": 0.4,
+    "comparator_error": 0.4,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 5,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 4,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.4,
+      "comparator_error": 0.4,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 5
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 3,
+    "comparator_wins": 3,
+    "actual_weeks": [
+      8
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K6_over:W8",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 3,
+    "candidate_error": 0.6666666666666666,
+    "comparator_error": 0.6666666666666666,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 3,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 3,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6666666666666666,
+      "comparator_error": 0.6666666666666666,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 3
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 1,
+    "comparator_wins": 1,
+    "actual_weeks": [
+      8
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  },
+  {
+    "target": "pass_td",
+    "procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G1",
+    "comparator_procedure_id": "B::POST-WAVE-5W-CORRECTNESS-RANK-v1::pass_td::G0",
+    "product_id": "base_event_direction_with_selection_reliability_ranker",
+    "comparator_product_id": "base_event_direction_with_selection_reliability_ranker",
+    "population": "COMMON_SELECTED_DECIDED_ROWS;OWN_POOL_COMPARISONS_SEPARATE",
+    "season": 2026,
+    "history_regime": "H-MULTI_BASE_EARLIER_OOF_CORRECTNESS",
+    "comparator_history_regime": "H-MULTI_BASE_EARLIER_OOF_CONFIDENCE_THRESHOLD",
+    "policy_id": "ROLLING_K6_under:W8",
+    "contrast": "EARLIER_CORRECTNESS_RANK_MINUS_RAW_CONFIDENCE",
+    "fallback_view": "full_system",
+    "metric": "STATISTICAL_SELECTED_SIDE_LOSS_RATE",
+    "n": 6,
+    "candidate_error": 0.6666666666666666,
+    "comparator_error": 0.6666666666666666,
+    "delta": 0.0,
+    "relative_error_change": 0.0,
+    "uncertainty": {
+      "n": 6,
+      "delta": 0.0,
+      "relative_error_change": 0.0,
+      "week_interval": null,
+      "week_clusters": 1,
+      "game_clusters": 6,
+      "bootstrap_replicates": 500,
+      "bootstrap_seed": 1703,
+      "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+      "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+      "game_cluster_sensitivity_se": null,
+      "game_normal95_sensitivity": null,
+      "candidate_infinite_rows": 0,
+      "comparator_infinite_rows": 0,
+      "candidate_error": 0.6666666666666666,
+      "comparator_error": 0.6666666666666666,
+      "relative_error_missing_reason": null,
+      "weekly_paired_sums_counts": {
+        "8": {
+          "loss_difference_sum": 0.0,
+          "n": 6
+        }
+      },
+      "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+      "status": "FINITE_PAIRED_LOSS_COMPARISON"
+    },
+    "candidate_wins": 2,
+    "comparator_wins": 2,
+    "actual_weeks": [
+      8
+    ],
+    "history_limit": "No base forecast/side/event-probability change. G1 ranks baseline correctness learned from earlier heldout cases. Common selected mask is not complete selected-pool coverage or full-board accuracy. Exposed research; fewer than five scored weeks; insufficient week clusters. Own-pool matched-count sensitivity retained separately."
+  }
+]

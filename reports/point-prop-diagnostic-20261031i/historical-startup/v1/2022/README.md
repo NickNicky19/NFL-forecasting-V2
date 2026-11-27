@@ -1,0 +1,30 @@
+# 2022: startup versus later regular-season numerical forecasts
+
+This is a new split of already completed historical forecasts: Weeks1–4versus5–18, all twelve targets,457exact procedure/history/output/policy cells. No model was fitted or invoked and no full-season score was rerun. The fixed Leaf-CDF exemplar below makes category coverage readable; every procedure, loss and own learned/fallback split remains in the canonical source.
+
+| Category | CURRENT W1–4 | RECENT W1–4 | MULTI W1–4 | CURRENT W5–18 | RECENT W5–18 | MULTI W5–18 | Strict-current early / later |
+|---|---|---|---|---|---|---|---|
+| anytime_td | 0.202788; n=1200; fallback=690/1210 | 0.202788; n=1200; fallback=690/1210 | 0.202788; n=1200; fallback=690/1210 | 0.147840; n=3894; fallback=171/3965 | 0.147840; n=3894; fallback=171/3965 | 0.147840; n=3894; fallback=171/3965 | 0.202788 / 0.147840 |
+| nick-chart-ppr-v1 | 6.952340; n=1342; fallback=772/1353 | 6.952340; n=1342; fallback=772/1353 | 6.952340; n=1342; fallback=772/1353 | 4.632491; n=4376; fallback=220/4455 | 4.632491; n=4376; fallback=220/4455 | 4.632491; n=4376; fallback=220/4455 | 6.952340 / 4.632491 |
+| pass_att | 21.419580; n=143; fallback=114/143 | 21.419580; n=143; fallback=114/143 | 21.419580; n=143; fallback=114/143 | 9.026531; n=490; fallback=49/490 | 9.026531; n=490; fallback=49/490 | 9.026531; n=490; fallback=49/490 | 21.419580 / 9.026531 |
+| pass_cmp | 13.790210; n=143; fallback=114/143 | 13.790210; n=143; fallback=114/143 | 13.790210; n=143; fallback=114/143 | 6.038776; n=490; fallback=49/490 | 6.038776; n=490; fallback=49/490 | 6.038776; n=490; fallback=49/490 | 13.790210 / 6.038776 |
+| pass_int | 0.734266; n=143; fallback=114/143 | 0.734266; n=143; fallback=114/143 | 0.734266; n=143; fallback=114/143 | 0.646939; n=490; fallback=49/490 | 0.646939; n=490; fallback=49/490 | 0.646939; n=490; fallback=49/490 | 0.734266 / 0.646939 |
+| pass_td | 1.132867; n=143; fallback=114/143 | 1.132867; n=143; fallback=114/143 | 1.132867; n=143; fallback=114/143 | 0.816327; n=490; fallback=49/490 | 0.816327; n=490; fallback=49/490 | 0.816327; n=490; fallback=49/490 | 1.132867 / 0.816327 |
+| pass_yd | 141.517483; n=143; fallback=114/143 | 141.517483; n=143; fallback=114/143 | 141.517483; n=143; fallback=114/143 | 74.016327; n=490; fallback=49/490 | 74.016327; n=490; fallback=49/490 | 74.016327; n=490; fallback=49/490 | 141.517483 / 74.016327 |
+| rec | 2.054167; n=1200; fallback=690/1210 | 2.054167; n=1200; fallback=690/1210 | 2.054167; n=1200; fallback=690/1210 | 1.309450; n=3894; fallback=171/3965 | 1.309450; n=3894; fallback=171/3965 | 1.309450; n=3894; fallback=171/3965 | 2.054167 / 1.309450 |
+| rec_yd | 23.651667; n=1200; fallback=690/1210 | 23.651667; n=1200; fallback=690/1210 | 23.651667; n=1200; fallback=690/1210 | 16.853621; n=3894; fallback=171/3965 | 16.853621; n=3894; fallback=171/3965 | 16.853621; n=3894; fallback=171/3965 | 23.651667 / 16.853621 |
+| rush_att | 5.570020; n=507; fallback=285/508 | 5.570020; n=507; fallback=285/508 | 5.570020; n=507; fallback=285/508 | 3.120425; n=1694; fallback=107/1706 | 3.120425; n=1694; fallback=107/1706 | 3.120425; n=1694; fallback=107/1706 | 5.570020 / 3.120425 |
+| rush_rec_yd | 32.150833; n=1200; fallback=690/1210 | 32.150833; n=1200; fallback=690/1210 | 32.150833; n=1200; fallback=690/1210 | 21.906780; n=3894; fallback=171/3965 | 21.906780; n=3894; fallback=171/3965 | 21.906780; n=3894; fallback=171/3965 | 32.150833 / 21.906780 |
+| rush_yd | 25.694280; n=507; fallback=285/508 | 25.694280; n=507; fallback=285/508 | 25.694280; n=507; fallback=285/508 | 18.083825; n=1694; fallback=107/1706 | 18.083825; n=1694; fallback=107/1706 | 18.083825; n=1694; fallback=107/1706 | 25.694280 / 18.083825 |
+
+Cells show native MAE, except anytime-TD uses Brier, followed by supported n and issued fallback/forecast counts. Do not compare unlike native units across categories. Nick chart remains the qualified partial-label research contract, not unrestricted full rare-component completeness or website-fantasy parity. The exact Leaf procedure/version, full empirical-median/event reference, membership match, error change and nonzero-denominator skill are in[the machine table](LEAF_STARTUP_COMPARISON.csv).
+
+CURRENT uses only earlier eligible outcomes in the evaluation season for fitting. Common feature memory can still include older2022-start NFL history; strict-current input/prior policy is separate. RECENT uses the preceding season plus earlier evaluation-season outcomes where supported; MULTI expands from2022without pre2022history. **2022RECENT is the retained2022-only proxy; it does not complete the separate2021source extension.**
+
+FULL_SYSTEM includes startup fallbacks, sparse cases and missing labels. LEARNED_ONLY/FALLBACK_ONLY are each procedure’s own disjoint masks, not a shared learned population across competitors. Existing adjacent-history common-mask comparisons remain in checkpointD; these new own-mask numbers must not replace them.
+
+Saved target/player/game IDs produce exact scored masks, unique games and players. Tail P90/P95 are explicitly not computed in this sufficient-stat split; weekly quantiles cannot be pooled. Exact maximum absolute error, strict/inclusive precision, signed bias and fallback counts are retained. Chart lower medians use the exact0.02grid for tolerances; that scoring rule is not a prediction improvement.
+
+Every full-system recipe/week n×MAE/MSE/bias sum matches the existing valid weekly scoreboard; source-bound2025specialization repair replaces its losing original version only in the current view. All original and corrected rows remain preserved. Missing historical prop lines or original leans do not block this numerical benchmark. No offered-threshold, original-selection, EV or ROI result is invented.
+
+[All new startup-window numerical views](STARTUP_NUMERICAL_RESULTS.csv) · [Canonical scores](SCORES.json) · [Execution/coverage checks](RUN_RECEIPT.json) · [Frozen procedure/source roster](../FROZEN_PROTOCOL.json).

@@ -1,0 +1,573 @@
+{
+  "id": "B-SAVED-METHOD-INTAKE-AND-PRODUCT-STATUS-V1",
+  "UTC": "2026-11-22T21:50:35.896798+00:00",
+  "A": {
+    "commit": "ff8ea1c81f5337be1468870e6c50b7c532d28179",
+    "state": "COMPLETED_PUBLISHED_RECEIVED;PUBLIC_AGGREGATES_INDEPENDENTLY_CHECKED_PREVIOUSLY",
+    "private_row_reproduction": false,
+    "closed_task_not_reopened": true,
+    "previous_compatible_five_week_qualification": "PRESERVED_WITH_EXACT_ORIGINAL_SCOPE"
+  },
+  "C": {
+    "commit": "0f5859c661c0404b02f0914826cf560f1754ed24",
+    "state": "FOLLOW_THROUGH_RECEIVED;EXACT_AVAILABLE_MASKS_NOW_RECONCILED;TWO_MEAN_PRODUCTS_INDEPENDENTLY_GRADE_CHECKED",
+    "receiving_blocks": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "no_new_duration_gate": true
+  },
+  "B": {
+    "bindings": 5338,
+    "nominees": 36,
+    "products": 44,
+    "products_with_scores": 38,
+    "unoffered_products": 6,
+    "state": "C_COMPLETED_GRADES_RECEIVED;IDENTITIES_ARITHMETIC_CHECKED;THREE_REPRESENTATIVE_PRODUCTS_RAW_CHECKED",
+    "common_T90": false,
+    "strict_reproduction_failures": "C1_AND_OPPORTUNITY_TEAM_FIT_REMAIN_FAILED"
+  },
+  "mask_summary": [
+    {
+      "category": "rec",
+      "B_available": 671,
+      "C_available": 638,
+      "intersection": 638,
+      "B_only": 33,
+      "C_only": 0,
+      "B_mask_SHA256": "276c31f35a4380b1278ad9c5dbf3fc28dce91c0b86d6879733eed74f69e650b5",
+      "B_original_commitment_match": true,
+      "C_mask_SHA256": "8a0b7aeaeafa260a2d63f2e0f40185de7599710831cdca5abdcef95636f6e963",
+      "C_published_commitment_match": true,
+      "B_only_reasons": {
+        "UNAVAILABLE_IDENTITY_MISSING": 30,
+        "UNAVAILABLE_NO_ADMITTED_PRIOR_TEAM": 2,
+        "UNAVAILABLE_PRIOR_TEAM_NOT_IN_TARGET_GAME": 1
+      },
+      "weekly": [
+        {
+          "week": 4,
+          "B_available": 22,
+          "C_available": 21,
+          "intersection": 21,
+          "B_only": 1,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 1
+          }
+        },
+        {
+          "week": 5,
+          "B_available": 129,
+          "C_available": 119,
+          "intersection": 119,
+          "B_only": 10,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_NO_ADMITTED_PRIOR_TEAM": 1,
+            "UNAVAILABLE_IDENTITY_MISSING": 9
+          }
+        },
+        {
+          "week": 6,
+          "B_available": 138,
+          "C_available": 125,
+          "intersection": 125,
+          "B_only": 13,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 11,
+            "UNAVAILABLE_NO_ADMITTED_PRIOR_TEAM": 1,
+            "UNAVAILABLE_PRIOR_TEAM_NOT_IN_TARGET_GAME": 1
+          }
+        },
+        {
+          "week": 7,
+          "B_available": 126,
+          "C_available": 124,
+          "intersection": 124,
+          "B_only": 2,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 2
+          }
+        },
+        {
+          "week": 8,
+          "B_available": 126,
+          "C_available": 122,
+          "intersection": 122,
+          "B_only": 4,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 4
+          }
+        },
+        {
+          "week": 9,
+          "B_available": 130,
+          "C_available": 127,
+          "intersection": 127,
+          "B_only": 3,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 3
+          }
+        }
+      ],
+      "reason_scope": "Actual retained C fingerprint exclusions mapped one-to-one to canonical case ordinals; no inference from net33."
+    },
+    {
+      "category": "rec_yd",
+      "B_available": 671,
+      "C_available": 638,
+      "intersection": 638,
+      "B_only": 33,
+      "C_only": 0,
+      "B_mask_SHA256": "0ebea032f5e7315edf948f9638230bd44548e248e1e399c84fc9f1688c18d9bc",
+      "B_original_commitment_match": true,
+      "C_mask_SHA256": "2995d71a621a0b6d224ec6c8078a413f135033efe3e94514e332b29394729358",
+      "C_published_commitment_match": true,
+      "B_only_reasons": {
+        "UNAVAILABLE_IDENTITY_MISSING": 30,
+        "UNAVAILABLE_NO_ADMITTED_PRIOR_TEAM": 2,
+        "UNAVAILABLE_PRIOR_TEAM_NOT_IN_TARGET_GAME": 1
+      },
+      "weekly": [
+        {
+          "week": 4,
+          "B_available": 22,
+          "C_available": 21,
+          "intersection": 21,
+          "B_only": 1,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 1
+          }
+        },
+        {
+          "week": 5,
+          "B_available": 129,
+          "C_available": 119,
+          "intersection": 119,
+          "B_only": 10,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 9,
+            "UNAVAILABLE_NO_ADMITTED_PRIOR_TEAM": 1
+          }
+        },
+        {
+          "week": 6,
+          "B_available": 138,
+          "C_available": 125,
+          "intersection": 125,
+          "B_only": 13,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 11,
+            "UNAVAILABLE_PRIOR_TEAM_NOT_IN_TARGET_GAME": 1,
+            "UNAVAILABLE_NO_ADMITTED_PRIOR_TEAM": 1
+          }
+        },
+        {
+          "week": 7,
+          "B_available": 126,
+          "C_available": 124,
+          "intersection": 124,
+          "B_only": 2,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 2
+          }
+        },
+        {
+          "week": 8,
+          "B_available": 126,
+          "C_available": 122,
+          "intersection": 122,
+          "B_only": 4,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 4
+          }
+        },
+        {
+          "week": 9,
+          "B_available": 130,
+          "C_available": 127,
+          "intersection": 127,
+          "B_only": 3,
+          "C_only": 0,
+          "B_only_reasons": {
+            "UNAVAILABLE_IDENTITY_MISSING": 3
+          }
+        }
+      ],
+      "reason_scope": "Actual retained C fingerprint exclusions mapped one-to-one to canonical case ordinals; no inference from net33."
+    }
+  ],
+  "mean_grade_review": {
+    "CPU_seconds": 0.771769464,
+    "UTC": "2026-11-22T21:47:31.377156+00:00",
+    "checks": 6927,
+    "id": "B-C-FIXED-MASK-MEAN-VERIFICATION-v1",
+    "limits": [
+      "Two frozen C mean-point products only; not independent fit/source-clock reproduction",
+      "No law/median/CDF/private full selector parity asserted",
+      "Original 671-versus638 finding preserved and resolved using actual C exclusion evidence",
+      "Different-policy mask reconciliation does not establish a C defect or change historical scores"
+    ],
+    "mask_freeze_before_grade_join": true,
+    "masks": [
+      {
+        "available": 638,
+        "available_case_mask_SHA256": "8a0b7aeaeafa260a2d63f2e0f40185de7599710831cdca5abdcef95636f6e963",
+        "category": "rec"
+      },
+      {
+        "available": 638,
+        "available_case_mask_SHA256": "2995d71a621a0b6d224ec6c8078a413f135033efe3e94514e332b29394729358",
+        "category": "rec_yd"
+      }
+    ],
+    "new_fits": 0,
+    "new_simulations": 0,
+    "no_new_canonical_scores": true,
+    "results": [
+      {
+        "attribution": {
+          "native": 638
+        },
+        "category": "rec",
+        "own_sides": {
+          "COMBINED": {
+            "LOSS": 239,
+            "UNKNOWN": 60,
+            "WIN": 339,
+            "selected": 638
+          },
+          "OVER": {
+            "LOSS": 105,
+            "UNKNOWN": 41,
+            "WIN": 177,
+            "selected": 323
+          },
+          "UNDER": {
+            "LOSS": 134,
+            "UNKNOWN": 19,
+            "WIN": 162,
+            "selected": 315
+          }
+        },
+        "paired": {
+          "W0": {
+            "common_decided": 575,
+            "common_decided_canonical_key_SHA256": "aff5bb5a5ea6760e949721a638f6024dea98d952161daa20ab846b0ccf9494dd",
+            "control_only_wins": 98,
+            "control_wins": 320,
+            "primary_only_wins": 115,
+            "primary_wins": 337
+          },
+          "W1": {
+            "common_decided": 571,
+            "common_decided_canonical_key_SHA256": "b03f88d5f42e067c40fe1ddc9efc9463b02786a0bc5b1ee300f0f09a62b3e758",
+            "control_only_wins": 100,
+            "control_wins": 332,
+            "primary_only_wins": 105,
+            "primary_wins": 337
+          }
+        },
+        "procedure": "C-M3-v1.1::rec::M3-0::base::MEAN_POINT",
+        "weekly": {
+          "4": {
+            "LOSS": 7,
+            "UNKNOWN": 2,
+            "WIN": 12,
+            "available": 21
+          },
+          "5": {
+            "LOSS": 50,
+            "UNKNOWN": 8,
+            "WIN": 61,
+            "available": 119
+          },
+          "6": {
+            "LOSS": 44,
+            "UNKNOWN": 14,
+            "WIN": 67,
+            "available": 125
+          },
+          "7": {
+            "LOSS": 39,
+            "UNKNOWN": 13,
+            "WIN": 72,
+            "available": 124
+          },
+          "8": {
+            "LOSS": 54,
+            "UNKNOWN": 13,
+            "WIN": 55,
+            "available": 122
+          },
+          "9": {
+            "LOSS": 45,
+            "UNKNOWN": 10,
+            "WIN": 72,
+            "available": 127
+          }
+        }
+      },
+      {
+        "attribution": {
+          "native": 638
+        },
+        "category": "rec_yd",
+        "own_sides": {
+          "COMBINED": {
+            "LOSS": 260,
+            "UNKNOWN": 63,
+            "WIN": 315,
+            "selected": 638
+          },
+          "OVER": {
+            "LOSS": 160,
+            "UNKNOWN": 50,
+            "WIN": 202,
+            "selected": 412
+          },
+          "UNDER": {
+            "LOSS": 100,
+            "UNKNOWN": 13,
+            "WIN": 113,
+            "selected": 226
+          }
+        },
+        "paired": {
+          "W0": {
+            "common_decided": 573,
+            "common_decided_canonical_key_SHA256": "a8b85242b9079f214966cf6ce476350174d5da65f4486a1c3fc317093e54e5c6",
+            "control_only_wins": 96,
+            "control_wins": 293,
+            "primary_only_wins": 116,
+            "primary_wins": 313
+          },
+          "W1": {
+            "common_decided": 575,
+            "common_decided_canonical_key_SHA256": "5aee127c33d368c86e6e9248595caa4931c7170a18cfae2cedd42905c600db1b",
+            "control_only_wins": 99,
+            "control_wins": 307,
+            "primary_only_wins": 107,
+            "primary_wins": 315
+          }
+        },
+        "procedure": "C-M3-v1.1::rec_yd::M3-0::base::MEAN_POINT",
+        "weekly": {
+          "4": {
+            "LOSS": 8,
+            "UNKNOWN": 2,
+            "WIN": 11,
+            "available": 21
+          },
+          "5": {
+            "LOSS": 56,
+            "UNKNOWN": 9,
+            "WIN": 54,
+            "available": 119
+          },
+          "6": {
+            "LOSS": 52,
+            "UNKNOWN": 15,
+            "WIN": 58,
+            "available": 125
+          },
+          "7": {
+            "LOSS": 47,
+            "UNKNOWN": 13,
+            "WIN": 64,
+            "available": 124
+          },
+          "8": {
+            "LOSS": 56,
+            "UNKNOWN": 13,
+            "WIN": 53,
+            "available": 122
+          },
+          "9": {
+            "LOSS": 41,
+            "UNKNOWN": 11,
+            "WIN": 75,
+            "available": 127
+          }
+        }
+      }
+    ],
+    "source_hashes": {
+      "C_exclusions": "3ded0b64eb5a84803e6e3504b0e58f2f0c11da3438d3df9000adf4e60dc8e2ce",
+      "canonical": "19ccf34b3037e1790ee3b2bf61d3357f33e63916779c2f36023a232f6a66ea18",
+      "private_fixed_input": "7048208f7466658f52e351671cd9c8e219a8d31be871192d19b10e0fed6762f1",
+      "source_predictions": "907decacb4ce8ca1b4990ba6ec3eef43049e62b12ae4f4a526776ab4e926faee"
+    },
+    "state": "PASS_SCOPED"
+  },
+  "exact_product_delivery": "EXACT_PRODUCT_DELIVERY_REVIEW_V1.json",
+  "categories": [
+    {
+      "category": "pass_yd",
+      "B_products": 3,
+      "B_scored_products": 3,
+      "received": true,
+      "B_grade_state": "GRADED_DIFFERENT_HORIZON_DIAGNOSTIC",
+      "current_operational_recommendation": "KEEP_INCUMBENT",
+      "new_research_disposition": "SHADOW",
+      "actual_live_model": "sleeper-matchup-classic-presence-strict-v2; selected-projection-gap-classic-presence-v2; V7 grader (source/owner record only)",
+      "remaining_owner_action": "Existing owner-specific source/current-feed/product admission; preserve earlier compatible qualification; no C simulator gate",
+      "new_release": false
+    },
+    {
+      "category": "pass_td",
+      "B_products": 3,
+      "B_scored_products": 3,
+      "received": true,
+      "B_grade_state": "GRADED_DIFFERENT_HORIZON_DIAGNOSTIC",
+      "current_operational_recommendation": "KEEP_INCUMBENT",
+      "new_research_disposition": "SHADOW",
+      "actual_live_model": "sleeper-matchup-classic-presence-strict-v2; selected-projection-gap-classic-presence-v2; V7 grader (source/owner record only)",
+      "remaining_owner_action": "Existing owner-specific source/current-feed/product admission; preserve earlier compatible qualification; no C simulator gate",
+      "new_release": false
+    },
+    {
+      "category": "pass_cmp",
+      "B_products": 9,
+      "B_scored_products": 9,
+      "received": true,
+      "B_grade_state": "GRADED_DIFFERENT_HORIZON_DIAGNOSTIC",
+      "current_operational_recommendation": "KEEP_INCUMBENT",
+      "new_research_disposition": "SHADOW",
+      "actual_live_model": "sleeper-matchup-classic-presence-strict-v2; selected-projection-gap-classic-presence-v2; V7 grader (source/owner record only)",
+      "remaining_owner_action": "Existing owner-specific source/current-feed/product admission; preserve earlier compatible qualification; no C simulator gate",
+      "new_release": false
+    },
+    {
+      "category": "pass_att",
+      "B_products": 5,
+      "B_scored_products": 5,
+      "received": true,
+      "B_grade_state": "GRADED_DIFFERENT_HORIZON_DIAGNOSTIC",
+      "current_operational_recommendation": "KEEP_INCUMBENT",
+      "new_research_disposition": "SHADOW",
+      "actual_live_model": "sleeper-matchup-classic-presence-strict-v2; selected-projection-gap-classic-presence-v2; V7 grader (source/owner record only)",
+      "remaining_owner_action": "Existing owner-specific source/current-feed/product admission; preserve earlier compatible qualification; no C simulator gate",
+      "new_release": false
+    },
+    {
+      "category": "pass_int",
+      "B_products": 3,
+      "B_scored_products": 3,
+      "received": true,
+      "B_grade_state": "GRADED_DIFFERENT_HORIZON_DIAGNOSTIC",
+      "current_operational_recommendation": "KEEP_INCUMBENT",
+      "new_research_disposition": "SHADOW",
+      "actual_live_model": "sleeper-matchup-classic-presence-strict-v2; selected-projection-gap-classic-presence-v2; V7 grader (source/owner record only)",
+      "remaining_owner_action": "Existing owner-specific source/current-feed/product admission; preserve earlier compatible qualification; no C simulator gate",
+      "new_release": false
+    },
+    {
+      "category": "rush_yd",
+      "B_products": 3,
+      "B_scored_products": 3,
+      "received": true,
+      "B_grade_state": "GRADED_DIFFERENT_HORIZON_DIAGNOSTIC",
+      "current_operational_recommendation": "KEEP_INCUMBENT",
+      "new_research_disposition": "SHADOW",
+      "actual_live_model": "sleeper-matchup-classic-presence-strict-v2; selected-projection-gap-classic-presence-v2; V7 grader (source/owner record only)",
+      "remaining_owner_action": "Existing owner-specific source/current-feed/product admission; preserve earlier compatible qualification; no C simulator gate",
+      "new_release": false
+    },
+    {
+      "category": "rush_att",
+      "B_products": 3,
+      "B_scored_products": 3,
+      "received": true,
+      "B_grade_state": "GRADED_DIFFERENT_HORIZON_DIAGNOSTIC",
+      "current_operational_recommendation": "KEEP_INCUMBENT",
+      "new_research_disposition": "SHADOW",
+      "actual_live_model": "sleeper-matchup-classic-presence-strict-v2; selected-projection-gap-classic-presence-v2; V7 grader (source/owner record only)",
+      "remaining_owner_action": "Existing owner-specific source/current-feed/product admission; preserve earlier compatible qualification; no C simulator gate",
+      "new_release": false
+    },
+    {
+      "category": "rec",
+      "B_products": 3,
+      "B_scored_products": 3,
+      "received": true,
+      "B_grade_state": "GRADED_DIFFERENT_HORIZON_DIAGNOSTIC",
+      "current_operational_recommendation": "KEEP_INCUMBENT",
+      "new_research_disposition": "SHADOW",
+      "actual_live_model": "sleeper-matchup-classic-presence-strict-v2; selected-projection-gap-classic-presence-v2; V7 grader (source/owner record only)",
+      "remaining_owner_action": "C exact M3 producer/adapter/current feed then original website exact-product admission/served verification; margin and TopPicks separate",
+      "new_release": false
+    },
+    {
+      "category": "rec_yd",
+      "B_products": 3,
+      "B_scored_products": 3,
+      "received": true,
+      "B_grade_state": "GRADED_DIFFERENT_HORIZON_DIAGNOSTIC",
+      "current_operational_recommendation": "KEEP_INCUMBENT",
+      "new_research_disposition": "SHADOW",
+      "actual_live_model": "sleeper-matchup-classic-presence-strict-v2; selected-projection-gap-classic-presence-v2; V7 grader (source/owner record only)",
+      "remaining_owner_action": "C exact M3 producer/adapter/current feed then original website exact-product admission/served verification; margin and TopPicks separate",
+      "new_release": false
+    },
+    {
+      "category": "rush_rec_yd",
+      "B_products": 3,
+      "B_scored_products": 3,
+      "received": true,
+      "B_grade_state": "GRADED_DIFFERENT_HORIZON_DIAGNOSTIC",
+      "current_operational_recommendation": "KEEP_INCUMBENT",
+      "new_research_disposition": "SHADOW",
+      "actual_live_model": "sleeper-matchup-classic-presence-strict-v2; selected-projection-gap-classic-presence-v2; V7 grader (source/owner record only)",
+      "remaining_owner_action": "Existing owner-specific source/current-feed/product admission; preserve earlier compatible qualification; no C simulator gate",
+      "new_release": false
+    },
+    {
+      "category": "anytime_td",
+      "B_products": 3,
+      "B_scored_products": 0,
+      "received": true,
+      "B_grade_state": "NO_COMPATIBLE_ACTUAL_OFFERS",
+      "current_operational_recommendation": "ABSTAIN_UNSUPPORTED_EXACT_OFFER_CLAIM",
+      "new_research_disposition": "SHADOW",
+      "actual_live_model": "EXACT_OFFER_PRODUCT_UNAVAILABLE_IN_ADMITTED_FRAME",
+      "remaining_owner_action": "Existing owner-specific source/current-feed/product admission; preserve earlier compatible qualification; no C simulator gate",
+      "new_release": false
+    },
+    {
+      "category": "nick-chart-ppr-v1",
+      "B_products": 3,
+      "B_scored_products": 0,
+      "received": true,
+      "B_grade_state": "NO_COMPATIBLE_ACTUAL_OFFERS",
+      "current_operational_recommendation": "ABSTAIN_UNSUPPORTED_EXACT_OFFER_CLAIM",
+      "new_research_disposition": "SHADOW",
+      "actual_live_model": "EXACT_OFFER_PRODUCT_UNAVAILABLE_IN_ADMITTED_FRAME",
+      "remaining_owner_action": "Existing owner-specific source/current-feed/product admission; preserve earlier compatible qualification; no C simulator gate",
+      "new_release": false
+    }
+  ],
+  "publication_scientific_scope": "PERMITTED_METADATA_AND_AGGREGATE_VIEW_ONLY;PROTECTED_CASE_ORDINALS_SOURCE_ROWS_MODELS_AND_LOCATORS_NOT_PUBLISHED",
+  "primary_activation": false,
+  "simulator_repair_not_a_dependency": true,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_canonical_scores": 0,
+  "new_served_checks": 0,
+  "B_C_receiving_fixed_pairs": "B_C_RECEIVING_PAIRED_RESOLUTION_V3.json",
+  "independent_scope_extension": "Exact common availability/decided membership and two recmean pairs now independently reproduced; no all-product/fit/current-origin parity claim"
+}

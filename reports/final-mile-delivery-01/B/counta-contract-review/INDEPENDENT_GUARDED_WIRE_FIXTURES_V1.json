@@ -1,0 +1,162 @@
+{
+  "id": "B-COUNTA-PR88-NEW-GUARDED-WIRE-CHECK-v1",
+  "checked_UTC": "2026-11-12T06:32:25.389940+00:00",
+  "source_ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+  "module_path": "nfl_lab/count_a_native_extension_v1.py",
+  "module_sha256": "dec10328c7811d788c4b605a4098d01e8f95ab99dca3455b547cc699e7686008",
+  "verifier_sha256": "db9025aea102b12999ff255b70bbd7fee8a36152af59e1e4a676876e580363b9",
+  "checks": [
+    {
+      "check": "Exact 20-field public projection, no legacy_point/mean alias",
+      "state": "PASS"
+    },
+    {
+      "check": "Reported zero stays numerical zero and not null",
+      "state": "PASS"
+    },
+    {
+      "check": "Unknown mean remains JSON null, not zero",
+      "state": "PASS"
+    },
+    {
+      "check": "No point-derived probability or EV",
+      "state": "PASS"
+    },
+    {
+      "check": "Projection claims no primary or picks",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject invalid public field expected_mean:nan",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject invalid public field expected_mean:inf",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject invalid public field expected_mean:-0.1",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject invalid public field expected_mean:True",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject invalid public field selection_point:1.0",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject invalid public field model_sha256:'0000000000000000000000000000000000000000000000000000000000000000'",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject invalid public field procedure_version:'0000000000000000000000000000000000000000000000000000000000000000'",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject invalid public field position:'RB'",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject invalid public field probability:0.9",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject invalid public field EV:1.0",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject invalid public field issued_at_UTC:'2026-11-12T23:45:00+00:00'",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject invalid public field expiry_UTC:'2026-11-12T23:46:00+00:00'",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject invalid public field issued_at_UTC:'2026-11-12T22:00:00'",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject unregistered legacy output field",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject duplicate JSON key",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject nonfinite JSON",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject nonmatching capsule before model deserialization",
+      "state": "PASS"
+    },
+    {
+      "check": "Derived feed keeps exact corrected mean and null probability",
+      "state": "PASS"
+    },
+    {
+      "check": "Frozen original issue is preserved at publication",
+      "state": "PASS"
+    },
+    {
+      "check": "Current shadow is not a current recommendation",
+      "state": "PASS"
+    },
+    {
+      "check": "Late publication stays explicitly expired without backdating",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject publication before native acceptance",
+      "state": "PASS"
+    },
+    {
+      "check": "Reject public grant attempting primary activation",
+      "state": "PASS"
+    },
+    {
+      "check": "New native capture calls unchanged mean adapter exactly once",
+      "state": "PASS"
+    },
+    {
+      "check": "New adapter wiring explicitly supplies trained mean corrector",
+      "state": "PASS"
+    },
+    {
+      "check": "New native component does not directly reapply corrector",
+      "state": "PASS"
+    },
+    {
+      "check": "New capture has no bare-model predict substitution",
+      "state": "PASS"
+    },
+    {
+      "check": "New component exports no legacy_point or synthetic side",
+      "state": "PASS"
+    },
+    {
+      "check": "Parent/model recipe independently hashes to approved f860 product",
+      "state": "PASS"
+    }
+  ],
+  "check_count": 34,
+  "state": "PASS_IN_PUBLIC_SYNTHETIC_WIRE_AND_STATIC_ADAPTER_WIRING_SCOPE",
+  "original_model_or_corrector_math_repeated": false,
+  "model_deserializations": 0,
+  "NFL_fits": 0,
+  "NFL_inference": 0,
+  "issued_NFL_rows": 0,
+  "grades": 0,
+  "real_native_Root_or_LiveAcceptance_claimed": false,
+  "actual_feed_verified": false,
+  "scope_limits": [
+    "No trusted private capsule/FIT_START/proof or genuine current Root was supplied here.",
+    "Pure formatting fixtures do not establish live authority, current-source admissibility, durable output or consumer use.",
+    "The previously completed retained-case model/corrector parity is reused rather than rerun.",
+    "New native pipeline remains an optional shadow, not an original-site primary or selector switch."
+  ]
+}

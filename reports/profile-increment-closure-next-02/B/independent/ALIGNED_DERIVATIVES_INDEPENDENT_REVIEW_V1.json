@@ -1,0 +1,27 @@
+{
+  "id": "B-ALIGNED-CLOCK-DERIVATIVES-INDEPENDENT-v1",
+  "status": "PASS_IN_CHECKED_SCOPE",
+  "source_derivative_sha256": "e859e9088e9ada9129a4fa65d9de03a7679f0f8e34d582c91e7846a4cfa396c1",
+  "rows_fieldwise_checked": 8218,
+  "QB_input_rows": 2901,
+  "team_rows": 2416,
+  "QB_opportunity_rows": 2901,
+  "explicit_unresolved_counts": {
+    "QB_inputs": 0,
+    "team_opportunities": 0,
+    "QB_opportunities": 0
+  },
+  "historical_queries": 941,
+  "own_last8_history_changes": 435,
+  "existing_E3_defense_last16_changes": 537,
+  "old_and_new_values_equal_except_declared_clock_metadata": true,
+  "clock_treatment": "Fixedkickoff+48h ratherthan7d, strict<, ineachreconstructedhistoricalorigin; no actualobservedclockqualification.",
+  "independence": "Compareddecodedrawderivativefieldsandindependentlyselectedavailability/game-timehistorywindows; authorwrapper/sourcepreparationnotcalled.",
+  "new_fits": 0,
+  "new_scores": 0,
+  "limits": [
+    "Historycoveragechangesareindependentlycounted, notaccuracygains orcosts.",
+    "Currentrevisedsourcewith48hassumption; neitherkickoff norcurrentretrievalauthenticateshistoricalpublication.",
+    "Existingdefensehistorychangeswithclockpolicy; noadditionalrawR3defensearchitectureisintroduced."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "state": "PASS_SOURCE_CLOCK_AND_ARTIFACT_WIDE_ANCILLARY_PROJECTION",
+  "at_utc": "2026-11-04T21:14:24.953482+00:00",
+  "verification_code_sha256": "af396968ccdf8a2dda8f0d5a3b5886515ac3c1ee0807e55511120b06597f65fc",
+  "qualification_sha256": "555ff43adddfd2466b8f6208f0d8efc571f22a79f49833b7cb87492c85a35654",
+  "source_bindings_sha256": "3c99350a237f96af5d76a44d1e7d4d2145f51e191bde2c7e629ecb3d35be8e21",
+  "default_index_manifest": "reports/abc-predictive-improvement-01/b-intercept-v1/results-index-v5/INDEX_MANIFEST.json",
+  "index_manifest_sha256": "00f460aa5b1581af8f0afa6f95b92a7bbae91d9c133ace9bfff0ea6308589541",
+  "current_index_pointer_sha256": "c927a1fdf88475e4f9f899bb366ded10cd83c390f840fd825d00bd98485e2de0",
+  "source_artifacts_unchanged_vs_independent_numeric_audits": true,
+  "annotation_rows_by_source": {
+    "ANCILLARY_POINT_SCORES.json": 1,
+    "COMMON_COHORT_SCORES.json": 480,
+    "MATCHED_SELECTED_CONTROL_SCORES.json": 216,
+    "REFERENCE_PROBABILITY_SCORES.json": 72,
+    "SCORES.json": 404,
+    "POLICY_COHORT_SCORES.json": 6720
+  },
+  "new_index_rows_checked": 7893,
+  "selection_rows_checked": 7812,
+  "proper_probability_rows_checked": 80,
+  "missing_top_level_horizon_by_kind": {
+    "forecast_evaluation_view": 0,
+    "prop_selection_evaluation": 0,
+    "prop_threshold_probability_evaluation": 0
+  },
+  "horizon_discoverability_limit": "All normalized kinds expose the exact target/product-specific bound horizon at top level; superseded draft omission remains in V3 receipt.",
+  "borrowed_point_metrics_removed_from_native_rankings": 145,
+  "common_cohort_borrowed_native_metrics_removed": 70,
+  "prior_immutable_index_rows_retained": 594308,
+  "total_audit_views": 602201,
+  "source_clock_contracts": {
+    "rec": "C current/revised kickoff reconstruction, Pinnacle last-recorded quote clocks unverified; W2-W3 only.",
+    "pass_td": "Original early partial W8 C02 capture plus retained later provider-labelled T90 threshold; W5/W6/W7 calibration transfer and current final labels. Not C Pinnacle or new original B1 issuance."
+  },
+  "report_sha256": "5c77838bc799298838842f4f8b92867e12112b085f752263d80fe11b2bae2fd7",
+  "recommendation": "Retain current owner selection; do not advance this repair on these adverse/uncertain results. Existing independently eligible provisional policy is unaffected.",
+  "new_fits": 0,
+  "new_scores": 0,
+  "limits": [
+    "This fixes source-vintage/horizon and borrowed-point attribution metadata in the default projection, preserving all original source SCORES and superseded draft indices. It does not authenticate missing historical quote clocks or source publication vintages.",
+    "Representative original row/capture bindings and all source arithmetic were independently checked in preceding receipts; this audit checks metadata bindings and all new projected rows without refitting or rescoring.",
+    "Counts are overlapping evaluation views, not additional methods, NFL games or original selections.",
+    "Declared earlier thread cap remains unverified; no silent rerun or enforcement claim."
+  ]
+}

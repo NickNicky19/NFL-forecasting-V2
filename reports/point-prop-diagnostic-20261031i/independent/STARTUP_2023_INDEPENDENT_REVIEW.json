@@ -1,0 +1,62 @@
+{
+  "state": "PASS_INDEPENDENT_STARTUP_IDENTITIES_PARTITIONS_WEEKLY_REFERENCES_AND_BALANCED_RAW_SUBSET",
+  "season": 2023,
+  "protocol_sha256": "0b83a04fb2a0394b1996fd39804acf1e7e92cb8e3fb50fbd3c98326a052e3629",
+  "score_sha256": "0f68527cb9409782729c134651cb4cf0e7b428a5169a27e7d09c8b65e5b2d1bc",
+  "exact_recipes": 457,
+  "all_scored_views_identity_support_membership_checked": 2742,
+  "fullsystem_window_views_reproduced_from_prior_weekly_metrics": 914,
+  "balanced_raw_recipe_subset": 63,
+  "balanced_raw_loss_precision_views_reproduced": 378,
+  "subset_targets": 12,
+  "all_origin_count_loss_precision_partitions_checked": true,
+  "unique_target_player_game_ids": 33942,
+  "unique_games": 272,
+  "unique_players": 577,
+  "chart_exact_float_grid_disagreements": 0,
+  "passing_yard_examples": [
+    {
+      "history_regime": "H-CURRENT",
+      "window_id": "W1_W4_STARTUP",
+      "n": 152,
+      "mae": 144.3421052631579,
+      "bias": -94.6842105263158,
+      "fallback_rows": 115
+    },
+    {
+      "history_regime": "H-CURRENT",
+      "window_id": "W5_W18_LATER",
+      "n": 511,
+      "mae": 74.02348336594912,
+      "bias": 13.397260273972602,
+      "fallback_rows": 14
+    },
+    {
+      "history_regime": "H-MULTI",
+      "window_id": "W1_W4_STARTUP",
+      "n": 152,
+      "mae": 74.30263157894737,
+      "bias": 2.25,
+      "fallback_rows": 10
+    },
+    {
+      "history_regime": "H-MULTI",
+      "window_id": "W5_W18_LATER",
+      "n": 511,
+      "mae": 70.28767123287672,
+      "bias": 1.2857142857142858,
+      "fallback_rows": 14
+    }
+  ],
+  "wall_seconds": 27.0282378769989,
+  "peak_RSS_bytes": 241410048,
+  "limits": [
+    "Conditionalrawloss/precisionreproductionis63of457recipes,notall457. AllFULLlossescheckearlierweeklyaggregates.",
+    "Ownnonfallbackpooldiffersacrossarms;notcommon-learnedhistoryeffect.",
+    "2022RECENTsource-limitedproxyandqualifiedpartialcharttargetremain;nostrongerclaim."
+  ],
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_scores": 0,
+  "new_private_bytes": 0
+}

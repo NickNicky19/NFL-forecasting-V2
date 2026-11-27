@@ -1,0 +1,649 @@
+{
+  "id": "B-METHOD-HISTORY-CONTRACT-AND-LINEAGE-SUPPLEMENT-v1",
+  "UTC": "2026-11-16T23:19:20.630932+00:00",
+  "state": "SOURCE_CHECKED_RETAINED_CONTRACT_METADATA_NO_NEW_FIT",
+  "schema_relationship": "Supplement to same existing-index reporting view; procedure identity/details remain in METHOD_HISTORY_DETAIL_V1.json.gz and original source references. No duplicate database or scores.",
+  "contracts": [
+    {
+      "contract_id": "SKILL_PASS_MIX",
+      "source_path": "reports/information-skill-01/B/FROZEN_DESIGN_V1.json",
+      "source_sha256": "06cd33057a15ffc8df2512159f2cc2f8dfab93e9b9b3905a7159618b11e2fdea",
+      "source_scope": "Retained public frozen contract, not a new model or score. Original proposal execution status may be superseded only by exact newer runtime receipt.",
+      "information_path": "FOOTBALL_ONLY_AS_REGISTERED; actual line used by downstream evaluation/selection; provider and market controls remain separate",
+      "retained_fields": {
+        "id": "B-INFORMATION-SKILL-PASS-MIX-v1",
+        "owner": "B",
+        "motivation": {
+          "classification": "PLAUSIBLE_HYPOTHESIS",
+          "retained_evidence": "P2/C1/C2 already conditional down-depth conversion but all use the same shrinkage QB context mix; M2 holds it and conversion means fixed. Opportunity errors remain large; no evidence says a richer mix must win.",
+          "hypothesis": "Earlier offensive preferences and offense-adjusted opponent context-choice residuals help predict next-game down/depth composition and expected completions beyond the static QB mixer. Test the new block in unchanged conversion learner and one learned composition relationship."
+        },
+        "nearest_equivalent": {
+          "P2": "25down-depth intercepts/shared slopes, QB/team/defense effects; own8 mix shrunk with20 league attempts; contextual conversion tested.",
+          "C2": "Same shared conditional-binomial family plus lagged FTN catchability support/value; strongest tied retained conditional-law baseline70/142, not category champion.",
+          "M2": "Only conversion variance changed, fixed mix/attempt law/means; negative direction/selective result preserved.",
+          "new_difference": "NEW_CONSUMED_REPRESENTATION_AND_RELATIONSHIP, not new external observations: team/QB context-preference contrast and offense-adjusted defense context-choice contrast; fit a regularized multinomial upcoming-mixture predictor. Prior defense inputs concern conversion residuals, not this context-choice target.",
+          "novelty_scope": "Inspected retained B inventories/code and peer receipts; inaccessible separate Astra/private recipes not claimed exhaustively reviewed."
+        },
+        "arms": {
+          "C0": "Exact retained M2_C2_BIN: frozen conditional probabilities, staticQB mix and fixed COMMON_EXPOSURE attempt law; no refit.",
+          "C1": "Same C2 conditional-binomial learner/penalties/history plus only two per-context log-ratio profile values; static QB mix unchanged.",
+          "R0": "Original frozen C2 conditional probabilities + learned composition model using original QB-vs-league composition contrast only. Same fixed attempt law.",
+          "R1": "C1 augmented conditional probabilities + same learned composition family using QB contrast and the two enriched profile values. Same fixed attempt law."
+        },
+        "attribution": [
+          "C1-C0: new profile representation in unchanged conversion learner",
+          "R1-C1: relationship-aware learned mixture versus static QB mixer, under enriched conversion",
+          "R1-R0: new block through conversion and composition in same learned-mixture architecture; not standalone defense-causal effect"
+        ],
+        "profile_block": {
+          "unit": "25 contexts = downs1\u20134/UNKNOWN crossed with air-depth <0,0\u20139,10\u201319,20+/UNKNOWN; credited attempts excluding sacks/two-points/deleted plays under retained source contract",
+          "team_value": "log((team_attempts_j+20*league_mix_j)/(team_attempts_total+20) / static_QB_mix_j); last16 eligible game-time ordered team games.",
+          "opponent_value": "log((allowed_attempts_j+100*league_mix_j)/(sum(actual_attempts_in_prior_game*static_QB_mix_at_that_game)_j+100*league_mix_j)); last16 eligible defense games, expected composition bound at each earlier game cutoff.",
+          "raw_support": "Retain actual/expected counts, denominators, prior mass, game IDs, latest consumed source/game/cutoff, absent-history prior fallback. Never call shrunk0 a measured known0.",
+          "not_claimed": "No current personnel, receiver group/all-route/alignment, pressure, weather, true game script, or authenticated historical source vintage. Pass destination not used as alignment."
+        },
+        "composition_model": {
+          "offset": "log(static_QB_mix_j)",
+          "features_original": [
+            "log(static_QB_mix_j/league_mix_j)"
+          ],
+          "features_enriched": [
+            "original",
+            "team_value_j",
+            "opponent_value_j"
+          ],
+          "parameters": "24 context intercept deviations (last UNKNOWN reference0), shared slopes; common coefficients and shrunk player/team/context profiles, no unrestricted per-player fits",
+          "objective": "Multinomial count negative log likelihood over historical target composition; conditional on historical attempt count for training only. Fixed ridge20 context intercepts and10 slopes, centered0; L-BFGS-Bmaxiter300ftol1e-10gtol1e-6, no tuning menu.",
+          "query": "All weights from eligible earlier profiles. Predict multinomial future context counts conditional on forecast A; integrate their per-throw completion probability exactly. No target realized mix.",
+          "uncertainty_limit": "Multinomial sampling uncertainty integrated exactly; not a posterior over game-level mixture parameters or correlated play calls."
+        },
+        "conversion_model": {
+          "parent": "ConvergedDepthCompletionModel(values=True,penalty20)",
+          "appended_features": [
+            "team_value_j",
+            "opponent_value_j"
+          ],
+          "unchanged": "Context intercept penalty2; original numeric penalty10; team/opponent penalty20; new numeric coefficients penalty10; L-BFGS-Bmaxiter600ftol1e-10gtol1e-6. No calibration, corrector or attempt-law change.",
+          "integration": "p = dot(predicted_mix, per_context_completion_prob); thin saved gamma-Poisson attempt law exactly, same shape and mean ATT; preserve C<=A under binomial conditional construction."
+        },
+        "chronology": {
+          "plan": [
+            [
+              2026,
+              1
+            ],
+            [
+              2026,
+              2
+            ],
+            [
+              2026,
+              3
+            ],
+            [
+              2026,
+              4
+            ],
+            [
+              2026,
+              5
+            ],
+            [
+              2026,
+              6
+            ],
+            [
+              2026,
+              7
+            ],
+            [
+              2026,
+              8
+            ],
+            [
+              2026,
+              9
+            ]
+          ],
+          "fit_cutoff": "before earliest scheduled query kickoff for each origin; labels strictlyavailable<cutoff, previousseason+earlier current training, history expanding from2022; own8 strength20/teamdef16 fixed",
+          "availability": "Retained kickoff+7day current-vintage reconstruction, strict<, game-time order after availability admission. Hybrid frozen2022\u20132025/W1\u20138 and newerW9 derivative preserved. Not authentic earlier publication.",
+          "query_population": "Same315 conditional QBstat-row queries; historical pregame roster unavailable. No target outcomes/participation used in inference; query fields stripped to stable identities/time/team/opponent.",
+          "learned_upstream": "Composition predictor uses earlier-only raw lagged profiles; conversion learner uses those observed earlier profiles, not in-sample generated composition predictions as training covariates."
+        },
+        "evaluation": {
+          "offered_primary": "Existing142 native real completion offersW5\u20139/71games; 28/28/28/28/30. Unknown quote clocks, main-altunclassified, exposed diagnostic, no original issued picks.",
+          "early_W1_4": "315 savednumericalqueries include146early; A owns84 protectedoffers. This experiment emits typedhand-off, does not substitute old M2/FTN earlygrades.",
+          "controls": [
+            "retained C2_BIN own baseline",
+            "P2/C1_BIN and direct M2",
+            "strong B0/B2 mean/median/law",
+            "both constant sides",
+            "earlier-only prevalence where existing contract qualifies",
+            "exact incumbent/market only if qualified current retained inputs exist; inaccessible not losers"
+          ],
+          "metrics": [
+            "component context log score/Brier and predicted conversion error",
+            "numeric broad and offered MAE/MSE/bias/tails",
+            "own mean/median/law O/U/W-L/N and coverage/fallback/unknowns",
+            "law proper scores/reliability",
+            "all existing19 frozen selection policies with own-list and same-selected-case controls; no new thresholds"
+          ],
+          "scorer": "Reuse existing pinned C scoring functions through current owner-local evaluation adapter, not another common grader",
+          "uncertainty": "Inherited >=8week wholeweek bootstrap500 seed1703 elseinsufficientclusters; game sensitivity withdependence/multiple-search caveats",
+          "all_prior_exposure": "All historical outcomes exposed development, freeze finalists only for later owner-capture."
+        }
+      }
+    },
+    {
+      "contract_id": "OPPORTUNITY",
+      "source_path": "reports/information-skill-follow-through-01/B/opportunity-v1/FROZEN_DESIGN_V1.json",
+      "source_sha256": "f99dfadc0fde3ee984e523f1250055bb9f822f37358d8311f86db2eefce919e0",
+      "source_scope": "Retained public frozen contract, not a new model or score. Original proposal execution status may be superseded only by exact newer runtime receipt.",
+      "information_path": "FOOTBALL_ONLY_AS_REGISTERED; actual line used by downstream evaluation/selection; provider and market controls remain separate",
+      "retained_fields": {
+        "id": "B-INFORMATION-SKILL-OPPORTUNITY-v1",
+        "owner": "B",
+        "hypothesis": "Usage-only learned team-opportunity volume and QB credited-attempt fraction conditional on team volume improve workload forecasts beyond flat QB moments, holding SKILL_R0 conversion fixed. Better use of existing information, not new observed personnel.",
+        "closest_completed": "Existing R0\u2013R3 used opportunity fields in standalone completion forest. P2/C1/C2/M2/SKILL fixed COMMON_EXPOSURE. QBdepthrank directCMP lost. This upstreamT\u2192QB_ATT conditional law and its fixed-conversion propagation were not found in inspected B completedtests; inaccessiblepeerworknotclaimedexhaustive.",
+        "plan": [
+          [
+            2026,
+            1
+          ],
+          [
+            2026,
+            2
+          ],
+          [
+            2026,
+            3
+          ],
+          [
+            2026,
+            4
+          ],
+          [
+            2026,
+            5
+          ],
+          [
+            2026,
+            6
+          ],
+          [
+            2026,
+            7
+          ],
+          [
+            2026,
+            8
+          ],
+          [
+            2026,
+            9
+          ]
+        ],
+        "fit_policy": "Weeklyfitbeforeearliestquerykickoff; previousseason+eligiblecurrent labels; earlierhistoricalfeaturesat eachowncutoff; own8/teamdef16, existingpriors100/4. Queryusesidentity/time/team/opponent only.",
+        "arms": {
+          "OPP_BASE": "ExactretainedCOMMON_EXPOSURE ATTlaw; CMPisthislaw thinnedbyfrozenSKILL_R0 integratedp. No refit.",
+          "OPP_MEAN": "Learned E[T*q(T)] mean with unchangedparentATTshape; fixedsameconversion. Mean-isolation diagnostic product, no Tjointclaim.",
+          "OPP_JOINT": "Samefittedexpectation with fullTNB\u2192Binomial(T,q(T)) mixture and unchangedconversion; C<=A<=T byconstruction for eachqueriedQB.",
+          "DIRECT_ATT": "Existing32treeorderedLeafCDFfamily refit under this fixedQBonly/HRECENT/reconstructed contract as strong compatible family control; not aliasof olderknown-clockC02. ATTlaw plus fixedconversionthinning. No settingssearch."
+        },
+        "team_model": {
+          "label": "Documentedoffensiveopportunityproxy T includes qualifyingrush/pass/dropback plays, notallNFLplays; non-QB/missingassignment/otherplaysremainotherbucket",
+          "features": [
+            "intercept",
+            "log(shrunkoffenseOmean/pooledteamOmean)",
+            "log(shrunkdefenseOallowedmean/pooledteamOmean)"
+          ],
+          "mean": "pooledteamOmean*exp(Xbeta)",
+          "shape": "0.5+199.5*expit(eta), inheritedcountshape support; joint NB likelihood on earlierTlabels, ridge beta intercept1/slopes10 andeta1 towardshape20",
+          "optimizer": "L-BFGS-B300ftol1e-10gtol1e-6 onefixedsetting"
+        },
+        "QB_fraction": {
+          "label": "HistoricalcreditedA_QB conditionalactualhistoricalT; zero-count QBcaseskept",
+          "offset": "logit((ownlast8creditedA+100*earlierpooledQBfraction)/(sumteamOinownQB games+100))",
+          "features": [
+            "intercept",
+            "logit(shrunkoffenseATTperO)-logit(pooledteamATTperO)",
+            "log(T/earlieroffenseOreference)",
+            "logit(latesteligibleQBATT/teamATTshare)-logit(shrunkown8QBteamATTshare)"
+          ],
+          "objective": "Conditionalbinomial likelihood n=T,y=A_QB, ridgeintercept1/slopes10; L-BFGS-B300ftol1e-10gtol1e-6",
+          "generated_input": "T is legitimateconditionaltrainingexposure; futureTintegrated overpredictedlaw. Referencevolume is rawearliermoments, not insampleupstream predictions.",
+          "fallback": "Ifnoownhistory/incompatible earlier support orfailedfit/integration, use fullunchangedparentlaw and tagreason; notunavailable-as-abstention."
+        },
+        "integration": {
+          "countlaw": "ExactsumoverT with fixed probabilitytail<=1e-12 andmean-tail<=1e-9; maxgrid5000resourceguard, no outcome-dependenttestmaxclip/no renormalization. Preservebound residual.",
+          "dependence": "q(T)depends onT; useE[Tq(T)],notproductofmeans.",
+          "conversion": "FrozenSKILL_R0 integratedconversionprobabilityperquery; no C1augmentedfitdependency orreproductionretry. BinomialthinninggivenA.",
+          "scope": "SingleQBconditionalmarginal with explicitallotheropportunitiesbucket, not full-roster coherentallocation or injury model. EmpiricalLeafpriorgeometricthinning exact."
+        },
+        "controls": {
+          "full_native": [
+            "SavedadjustedATTpoint81\u201360/141+1abstention, notprobability",
+            "rawpoint/earlierprevalence/bothconstants",
+            "strongB0/B2completeCMPcontrols",
+            "newcompatibleDIRECT_ATTrefit, identitiesexplicit"
+          ],
+          "inaccessible_stronger_retained_laws": "Strict-currentC02/orderedLeaf tied50\u201330/80W5\u20137,84eligible4unavailable. Differentknown-target-timehorizon; rawlawchunksnotauthenticatedlocally. Retainaspartial/inaccessible, notlosers orborrowedfull142 scores."
+        },
+        "evaluation": {
+          "primary": "NativeactualATT142andCMP142 W5\u20139 same142playergames/71games;141DK+1Sleeper thresholds,quoteclocks/main-altunknown, exposeddevelopmentdiagnostic. No284independentgamesclaim.",
+          "numerical": "W1\u20139 QB315, teamOcomponentlabels W1\u20138onlywherequalified",
+          "outputs": [
+            "ownMEAN/MEDIAN/LAW Over/Under/Combined",
+            "MAE/MSE/bias/tails andproperBrier/LL/reliability",
+            "existing19frozencapacity/Top6/10/20/rawcalP75/P80/P90 policies; own-listandcandidate-selectedcontrols",
+            "pairedweekrule>=8clusters elseinsufficient, gamesensitivity",
+            "fullsystemavailability/unknown/parentfallback"
+          ],
+          "early_W1_4": "AprivateoffersnotheldbyB; generateoutputsnotgrades; frozenSKILL joinremainsexactdistinctexistingAjob."
+        },
+        "decision": "Keep/close/shadowbasedactualdirection/coverage/properresults,strongcontrols andlimits; notautomaticreplacementorpercentagepromise. All12othercontractsremaininexistingqueue."
+      }
+    },
+    {
+      "contract_id": "M2",
+      "source_path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/FROZEN_PROTOCOL_V2.json",
+      "source_sha256": "0ee7a43c5cd72c82f19df154f80a9df1dc8583eb285f3b9727bf879967efd25e",
+      "source_scope": "Retained public frozen contract, not a new model or score. Original proposal execution status may be superseded only by exact newer runtime receipt.",
+      "information_path": "FOOTBALL_ONLY_AS_REGISTERED; actual line used by downstream evaluation/selection; provider and market controls remain separate",
+      "retained_fields": {
+        "id": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1",
+        "new_mechanism": "Learn context-dependent game-conversion BB dispersion on earlier-origin OOT predicted means; fixed parent conversion mean and analytic common attempt law.",
+        "mean_parents": {
+          "P2": "Retained penalized QB/team/defense conditional25down-depthlogistic",
+          "C1": "Retained shared conditionalcontextGLM plus depthchart support",
+          "C2": "C1plus qualifiedearlier depthcatchability values"
+        },
+        "arms": {
+          "P2": {
+            "BIN": "exact unchanged mean/exposure/binomial thinning",
+            "BB": "same mean/exposure plus new learned conditional precision"
+          },
+          "C1": {
+            "BIN": "exact unchanged mean/exposure/binomial thinning",
+            "BB": "same mean/exposure plus new learned conditional precision"
+          },
+          "C2": {
+            "BIN": "exact unchanged mean/exposure/binomial thinning",
+            "BB": "same mean/exposure plus new learned conditional precision"
+          }
+        },
+        "direct": "D_M2:unchanged32treeLeafCDF learner, same P2+dispersion input information, predicted attempt\u03bc/shape, fit-onlyidentitylevels; standaloneCMPmarginal, no jointclaim.",
+        "feature_schema": [
+          "intercept",
+          "predicted_context_entropy",
+          "lagged_known_destination_entropy",
+          "lagged_known_distance_mean_div20",
+          "log_prior_attempt_support_div_log1000",
+          "destination_unavailable",
+          "distance_unavailable"
+        ],
+        "kappa_link": "0.05+9999.95*expit(zbeta); fixedridge intercept1 towardk20 andslopes10toward0",
+        "optimizer": "L-BFGS-Bmaxiter200ftol1e-10gtol1e-6; no search; nonconvergenceusesregisteredk20fallback",
+        "history": "H-RECENT previousseason+earliercurrentlabels; sourcefeaturesown8strength20/expanding2022memory; inherited7daystrictavailability<cutoff.",
+        "fitting": "Weekly beforeearliestgame. Dispersiontrainingusesearlier-origin OOTparentpmean andactualhistoricalattempt/completionlabels available<origin; no in-sample residual fitting.",
+        "source_tier": "CURRENT_VINTAGE_SEVEN_DAY_CHRONOLOGICAL_RECONSTRUCTION;NOT_AUTHENTICATED_HISTORICAL_PUBLICATION",
+        "scope_limits": "No receiverpersonnel universe or actualalignment/routes. Destinationentropy anddistancehistory arepregame summary dispersioncovariates, not jointper-attemptdistancecells. Predicted25mix fixed, not full posteriorcontextuncertainty.",
+        "forecast_population": "RetainedofficialQBstat-rowqueries, not authenticatedexante roster; no targetgameoutcomes orrealizedcontextsinpredictors.",
+        "exact_integration": {
+          "attempt_tail_tolerance": 1e-10,
+          "no_renormalization": true,
+          "support": "InfiniteNBattempts; C<=A; numericalgridtailbounded, notdata-dependentclipping"
+        },
+        "lookback_and_settings": "Inheritedfixed8/20and32tree; newdispersionlink/ridge frozen scientificallybeforecomparativegains; no tuning menu.",
+        "selection_protocol": "../evaluation/FROZEN_EVALUATION_PROTOCOL_V1.json",
+        "original_issuance": false,
+        "new_primary_release": false
+      }
+    },
+    {
+      "contract_id": "ALIGNED_TIMING",
+      "source_path": "reports/profile-increment-closure-next-02/B/aligned-wave-v1/FROZEN_PROTOCOL.json",
+      "source_sha256": "8e98084c0e986901acd24f577670fbac5bdf7a2c4798e09f0229efa39e88df43",
+      "source_scope": "Retained public frozen contract, not a new model or score. Original proposal execution status may be superseded only by exact newer runtime receipt.",
+      "information_path": "FOOTBALL_ONLY_AS_REGISTERED; actual line used by downstream evaluation/selection; provider and market controls remain separate",
+      "retained_fields": {
+        "id": "B-QB-ALIGNED-FRESHNESS-v1",
+        "owner": "B",
+        "closest_completed": "Old availability A/B/C transferred query information and limited Week7 refit; historical training features retained seven days. No complete aligned E3/R2 timing/profile test found. Prior R0/R1/R2/R3 and failed confidence/catchability recipes remain closed.",
+        "bottleneck": "Measured age of admitted history and weak confidence ordering motivate a timing hypothesis; source clocks are not authenticated. No implementation bug or freshness benefit presumed.",
+        "alternative_policy": "DECLARED_KICKOFF_PLUS_48H_TIMING_SENSITIVITY",
+        "alternative_delay_hours": 48,
+        "rationale": "A fixed two-day delay tests exclusion of the immediately preceding completed-game information without putting results at kickoff. It is an operational sensitivity assumption chosen before scores, not an observed release time, guarantee of final corrections, or evidence that revised values existed then.",
+        "source_tier": "CURRENT_REVISED_SOURCE_RECONSTRUCTED_TIMING_SENSITIVITY_NOT_AUTHENTICATED_HISTORICAL_VINTAGES",
+        "unknown_clock": "Require original finite declared seven-day source clock; explicitly unknown clocks remain unadmitted, never replaced with the alternative. Strict less-than unchanged; recent games chosen by game time after admission.",
+        "alignment": "Alternative clocks govern EVERY historical feature, upstream offense-quality reference/defense residual, training label, prior, and query. Existing E3 defensive information is retained and recomputed under its policy. No NEW R3 defense or current-role addition.",
+        "arms": {
+          "F0": "Reuse exact original E3/R0 under original7day policy.",
+          "F1": "Reuse exact original R2 profile recipe under original7day policy.",
+          "F2": "Same E3 columns/learner under aligned48h reconstruction.",
+          "F3": "Same R2 columns/learner under aligned48h reconstruction."
+        },
+        "contrasts": [
+          "F1-F0 PROFILE_AT_7D",
+          "F2-F0 TIMING_WITHOUT_ADDED_PROFILE",
+          "F3-F2 PROFILE_AT_48H",
+          "F3-F1 TIMING_WITH_ADDED_PROFILE"
+        ],
+        "separate_defense": "Previously executed R3-R2 defense effect retained from prior package; not refit/reinterpreted as new defense evidence.",
+        "learner": "Unchanged 32-tree ExtraTrees Leaf-CDF settings/objective, seed1701, empirical95%+sameorigin5%prior. Mean/lower median/exact law separate.",
+        "fit": "Weekly origins before earliest game; H-RECENT previousseason+earliercurrent labels. Feature memory expanding2022. No current fitted model substituted for historical origin.",
+        "tuning": "Reuse fixed own8/team16, strength20 selected on earlier2024 under originalpolicy; profile100pseudocount/4gameprior unchanged. No new tuning. This fixed-settings information ablation does not claim48h-optimal settings.",
+        "population": "Same941retrospective QB-stat-row queries; source/role membership limitation preserved. Fixed original7day history-priority/cohort labels; no target starter/usage filtering.",
+        "recommendation_panel": "Retained112CMPoffers2026W5-8. EarlierA88CMP inventory is a separate owner-local join; privateArows not assumed accessible. Prices missing, quote execution unverified.",
+        "evaluation": [
+          {
+            "season": 2025,
+            "weeks": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18
+            ]
+          },
+          {
+            "season": 2026,
+            "weeks": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          }
+        ],
+        "outputs": [
+          "mean",
+          "lower_median",
+          "explicit_leaf_count_law"
+        ],
+        "full_system": "All query rows retained. No technical-failure-to-abstention conversion. Prior/own-history and profile support reported separately; no invented direct-model component forecasts.",
+        "controls": "Own unchanged baseline first; savedadjusted/raw, prevalence, bothconstants, neutral0.25; retainedstrictCURRENT on84sharedrows; incompatible origins/populations not merged into a champion.",
+        "decision": "Complete52neworiginfits once. Existing practical/support/tie policies, no new accuracy/significance floor. No forced90%picks. Close a valid negative timing hypothesis; inconclusive is not equivalence. Later capture requires actualqualifiedsources/owner; no automatic release.",
+        "original_issuance": false
+      }
+    },
+    {
+      "contract_id": "TABICLV2",
+      "source_path": "reports/predictive-value-next-01/B/FROZEN_PILOT_PROPOSAL_V1.json",
+      "source_sha256": "c6208126a8d98ab24b902127c43276bdf59c64b5a72cbee70ec4c94d57974fa4",
+      "source_scope": "Retained public frozen contract, not a new model or score. Original proposal execution status may be superseded only by exact newer runtime receipt.",
+      "information_path": "LINE_CONDITIONED_DIRECT_CLASSIFIER",
+      "retained_fields": {
+        "id": "B-TABICLV2-CMP-DIRECT-PILOT-v1",
+        "owner": "B / NickNicky19/NFL-forecasting-V2",
+        "primary_category": "pass_cmp",
+        "hypothesis": "A fixed pretrained tabular in-context classifier may learn nonlinear conditional line-crossing relationships from the same earlier exact-offer examples more effectively than one regularized ordinary logistic classifier. No new football information or causal effect is claimed.",
+        "nearest_completed": [
+          {
+            "experiment": "B M2",
+            "difference": "M2 changed completion-conversion dispersion with fixed attempts and means; this pilot directly estimates the half-point Over event from earlier actual-offer contexts, without changing or resampling the count law."
+          },
+          {
+            "experiment": "B INFORMATION-SKILL C0/C1/R0/R1 and opportunity-v1",
+            "difference": "Their contextual ratios, mixer and team/share changes are closed. This pilot reuses original own-history features plus the actual threshold, tests one different learned relation, and adds no old contextual block or confidence gate."
+          },
+          {
+            "experiment": "Earlier direct-threshold classifiers and proposed generic TabICL backlog",
+            "difference": "Finite local inventory found no exact TabICLv2 actual-offer completion classifier/checkpoint. Generic family names, other methods and private/unlocated peer experiments are not evidence of exact novelty. No claim every peer artifact was inspected."
+          }
+        ],
+        "arms": {
+          "ORDINARY_DIRECT": "One fixed regularized logistic classifier on exactly the same earlier contexts, raw features, train-only transform, eligibility and startup fallback as candidate.",
+          "TABICLV2_DIRECT": "One pinned pretrained checkpoint/configuration, no fine-tuning/pretraining/seed or hyperparameter search.",
+          "REUSED_STRONG_CONTROLS": [
+            "Retained B0 mean, median and LAW; retained B2 mean, median and LAW on exact native rows",
+            "Always-Over and Always-Under",
+            "Earlier-only prevalence; exact saved/incumbent reference only where its original information contract qualifies"
+          ]
+        },
+        "information_contrast": "No new input block; the requested bounded alternative is a relationship/learner contrast. Support/missingness transforms are identical in both new arms. No C0/C1 claim is invented.",
+        "pins": {
+          "code_repository": "soda-inria/tabicl",
+          "code_commit": "a626a1b67049b0b1748ebe8c92f7df40aaebd334",
+          "package_version": "2.2.0",
+          "checkpoint_repository": "jingang/TabICL",
+          "checkpoint_revision": "4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+          "checkpoint_file": "tabicl-classifier-v2-20260212.ckpt",
+          "expected_checkpoint_bytes": 110368038,
+          "expected_checkpoint_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+          "checkpoint_binary_obtained": false,
+          "license": "BSD-3-Clause classification code and checkpoint metadata; retain notice. Separate forecast code is excluded.",
+          "pretraining": "Publisher reports synthetic-prior pretraining; exact binary training contents/NFL exclusion and historic issuance not independently audited."
+        },
+        "configuration": {
+          "candidate": {
+            "n_estimators": 8,
+            "norm_methods": [
+              "none"
+            ],
+            "feat_shuffle_method": "latin",
+            "class_shuffle_method": "shift",
+            "outlier_threshold": 4.0,
+            "softmax_temperature": 0.9,
+            "average_logits": true,
+            "support_many_classes": false,
+            "batch_size": 8,
+            "kv_cache": false,
+            "allow_auto_download": false,
+            "checkpoint_version": "tabicl-classifier-v2-20260212.ckpt",
+            "device": "cpu",
+            "use_amp": false,
+            "use_fa3": false,
+            "offload_mode": false,
+            "random_state": 42,
+            "n_jobs": 2,
+            "verbose": false
+          },
+          "ordinary": {
+            "C": 1.0,
+            "solver": "lbfgs",
+            "max_iter": 1000,
+            "tol": 1e-06,
+            "class_weight": null,
+            "random_state": 42
+          },
+          "transform": "Shared training-only finite median imputation (all-missing=0), mean/std scaling (zero std=1), fixed z clipping at4, all-column missing indicators. NaN remains missing; infinity invalid. No query features or target outcomes determine transform parameters.",
+          "raw_feature_order": [
+            "mean3",
+            "n3",
+            "mean8",
+            "n8",
+            "lag1_value",
+            "lag1_age_days",
+            "lag1_missing",
+            "lag2_value",
+            "lag2_age_days",
+            "lag2_missing",
+            "lag3_value",
+            "lag3_age_days",
+            "lag3_missing",
+            "lag4_value",
+            "lag4_age_days",
+            "lag4_missing",
+            "position_QB",
+            "position_RB",
+            "position_WR",
+            "position_TE",
+            "offered_halfpoint_line"
+          ],
+          "expanded_feature_count": 42,
+          "orientation": "y=1 iff official actual completions > exact retained half-point offer. p_under=1-p_over; OVER if p_over>.5, UNDER if <.5, equality ABSTAIN. No numerical count/mean/median or implied PMF.",
+          "query_batch": "One query per predict_proba call. Query order independence and prohibition on future/query outcomes are checked before scored inference.",
+          "fixed_random_seed": 42,
+          "tuning": 0,
+          "alternative_checkpoints_or_learners": 0
+        },
+        "data": {
+          "input_admission": "TABICLV2_INPUT_ADMISSION_V1.json",
+          "input_admission_sha256": "3929c681252ecb4c1361772e7b8b7970ddb5503a8df6b8be7f6c08214d313a9f",
+          "native_grade_sha256": "dbdbf73a23fea1d7d8c90fde666163853f492b0e9686ae068b829b2bc2816a39",
+          "context_sha256": "45aaab99d41f2e2643066c001355b26430f55dca06e7c7e366eace252f2e021b",
+          "eligible": 142,
+          "unique_player_games": 142,
+          "games": 71,
+          "available_actual_offer_weeks": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "missing_actual_offer_weeks": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "learned_origins": [
+            7,
+            8,
+            9
+          ],
+          "learned_query_rows": 86,
+          "startup_weeks": [
+            5,
+            6
+          ],
+          "startup_rows": 56,
+          "training_context_rows": [
+            28,
+            56,
+            86
+          ],
+          "training_class_support": [
+            [
+              14,
+              14
+            ],
+            [
+              32,
+              24
+            ],
+            [
+              49,
+              37
+            ]
+          ],
+          "historical_population": "Retained qualified official played-label/stat-row QB population; conditional reconstruction, not authentic pregame ex-ante roster universe. Sparse training and publisher benchmark support limitations disclosed.",
+          "availability": "Strict canonical kickoff+7days < earliest evaluation-week kickoff; earlier query features evaluated at their own canonical kickoff; all repeated books/target-game identities excluded. Same current-vintage proxy as controls, not authenticated publication clocks.",
+          "source_contract": "Genuine retained native half-point offers, deterministic inherited source precedence and deduplicated identities. Quote-time unknown; main/alternate unclassified, not ordinary-main claim. No added offers, prices or synthetic thresholds.",
+          "A_early84": "Public aggregate grades are not earlier training rows; no protected A transfer or early grading presumed."
+        },
+        "startup_and_failures": {
+          "empty_context": "Exact retained B0 LAW probability/direction fallback in both new systems W5/W6; preserve parent fallback attribution.",
+          "technical_failure": "Unavailable with exact reason; not intentional abstention or zero selections. Stop/retain checkpoints under cap rather than replace model or shrink outcomes after scores.",
+          "integer_or_unsupported_line": "Not admitted to pilot. Retain parent product separately; do not invent push probability or infer missing offer sides.",
+          "fallback_week_scope": "Five complete-system weeks would include two entirely reference-fallback weeks and only three learned weeks; no claim five weeks of substantial learned confirmation."
+        },
+        "evaluation": {
+          "common_scorer_sha256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce",
+          "interval_sha256": "92260304be31b0fbee42faa3ab78616f77c3791bd2613edb9d322f9bbf29aa2a",
+          "existing_adapter": "reports/w1w9-comparison-closure-01/B/common-intake/COMMON_SCORER_PARITY_ADAPTER_V1.py",
+          "existing_adapter_sha256": "f32523f9f7a4415b4472d57abe8bf1b1bd27e471d6094af7ab92ed16401796ba",
+          "frozen_selection_calibration_code": "reports/targeted-accuracy-w1w9-01/B/evaluation/score_m2_v1.py",
+          "frozen_selection_calibration_sha256": "8409ce5e74e07ef5fa1e79b52237baf9259d892a9652e4001a3828bd935343a9",
+          "primary": "Own Over/Under/combined weekly and cumulative full-system and learned-common-row W/L/decided; coverage, unavailable, unknown, abstention, fallback.",
+          "probability": "Raw binary Brier/logloss/reliability and earlier-only frozen calibration separately. Classifier supplies no numerical count forecast; MAE/MSE/count-CRPS=N/A.",
+          "selection": "Reuse existing19 policies without change: rolling decision-batch COVERAGE100/50/25/10, Top6/10/20 each Combined/Over/Under, raw and earlier-calibrated P75/P80/P90. Same inherited causal batch capacity/ties; unknown quote timing remains retrospective. Both own lists and same-selected-case controls. No website Top Picks claim.",
+          "calibration": "Reuse inherited same-method confidence-bin earlier eligible outcomes/prior20 identity-startup rule; no future labels or new threshold search.",
+          "uncertainty": "Existing game/week dependence-aware paired policy; weekly disagreements and limited clusters; no global winner from disconnected masks.",
+          "exposure": "2026 history already inspected development evidence. This is chronological current-vintage research, not untouched/live validation.",
+          "target_status": "NOT_TESTED; no observed or supported75/80/90 claim."
+        },
+        "completion": "Finish one predeclared pilot or explicit measured safe stop; no automatic extension, retuning, production change or second family. Scientific results only after actual scoring and C admission.",
+        "results": {
+          "fits": 0,
+          "new_predictions": 0,
+          "new_actual_line_grades": 0,
+          "Over_W_L_N_rate": null,
+          "Under_W_L_N_rate": null,
+          "combined_W_L_N_rate": null,
+          "probability_scores": null,
+          "selection_results": null,
+          "primary_promotion": false,
+          "scientific_decision": "NOT_EXECUTED_ALLOCATION_REQUIRED"
+        }
+      }
+    }
+  ],
+  "explicit_nearest_procedures": [
+    {
+      "procedure": "B-INFORMATION-SKILL-PASS-MIX-v1:SKILL_C1",
+      "closest": "B-INFORMATION-SKILL-PASS-MIX-v1:SKILL_C0",
+      "difference": "Same conversion learner/fixed attempt law plus registered team/opponent context-choice block; compare information increment."
+    },
+    {
+      "procedure": "B-INFORMATION-SKILL-PASS-MIX-v1:SKILL_R0",
+      "closest": "B-INFORMATION-SKILL-PASS-MIX-v1:SKILL_C0",
+      "difference": "Replace static context mixer with earlier-only regularized multinomial predictor; fixed attempt law."
+    },
+    {
+      "procedure": "B-INFORMATION-SKILL-PASS-MIX-v1:SKILL_R1",
+      "closest": "B-INFORMATION-SKILL-PASS-MIX-v1:SKILL_R0",
+      "difference": "Same learned mixer plus registered enriched conversion block; not a new variance-only law."
+    },
+    {
+      "procedure": "B-INFORMATION-SKILL-OPPORTUNITY-v1:OPP_MEAN",
+      "closest": "B-INFORMATION-SKILL-OPPORTUNITY-v1:OPP_BASE",
+      "difference": "Isolate predicted attempt mean, holding parent shape and SKILL_R0 completion conversion fixed."
+    },
+    {
+      "procedure": "B-INFORMATION-SKILL-OPPORTUNITY-v1:OPP_JOINT",
+      "closest": "B-INFORMATION-SKILL-OPPORTUNITY-v1:OPP_MEAN",
+      "difference": "Team-opportunity/share mixture changes joint dispersion/dependence beyond mean-only arm."
+    },
+    {
+      "procedure": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1:P2_BB",
+      "closest": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1:P2_BIN",
+      "difference": "Context-dependent beta-binomial precision; attempt law, completion means and mix fixed."
+    },
+    {
+      "procedure": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1:C1_BB",
+      "closest": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1:C1_BIN",
+      "difference": "Same variance-only contrast for C1 parent."
+    },
+    {
+      "procedure": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1:C2_BB",
+      "closest": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1:C2_BIN",
+      "difference": "Same variance-only contrast for C2 parent."
+    },
+    {
+      "procedure": "B-TABICLV2-CMP-DIRECT-PILOT-v1",
+      "closest": "Existing ordinary direct-threshold classifier / fixed same-information logistic",
+      "difference": "One pinned pretrained in-context learner on original own-history features plus actual half-point line; not a new football input or count-mean product."
+    }
+  ],
+  "unsupported_fields": "Where predecessor/settings/complete input path, fit chronology or aliases are absent from source metadata, do not infer from a library name. Use NOT_RETAINED/UNRESOLVED and exact source reference; original IDs and all indexed metric views remain retained.",
+  "legacy_aliases": "registries/PROCEDURE_REFERENCES.json retains1,669 references; unresolved canonicalization is not silently merged. Original50family catalog and4,832aggregates retain A/upstream origin context.",
+  "attribution_limits": "Football-only, line-conditioned, same-book/independent-market assistance and postgame oracle substitutions remain distinct. A raw provider/website forecast may embed matchup information; this catalog does not independently unbundle it. Actual-attempt/pass-mix substitutions remain nondeployable postgame diagnostics.",
+  "reproduction_failures": {
+    "SKILL_C1": "FAILED strict fit; saved-row checks and mixer checks separate",
+    "opportunity_team_fit": "FAILED frozen tolerance; share fit/saved-row grades passed separately"
+  },
+  "source_new_GETs": 0,
+  "new_fits": 0,
+  "new_grades": 0
+}

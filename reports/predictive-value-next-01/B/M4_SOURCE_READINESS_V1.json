@@ -1,0 +1,203 @@
+{
+  "id": "B-PREDICTIVE-VALUE-NEXT-01-M4-SOURCE-READINESS-v1",
+  "UTC": "2026-11-16T17:11:08.997788+00:00",
+  "owner": "Session B; approved A protected-market owner-local route remains with A",
+  "state": "SOURCE_BLOCKED_EXACT_NEW_B_INDEPENDENT_PRICE_CONTRAST;NO_B_M4_EXECUTION",
+  "specific_hypothesis": "Whether an independently priced exact-threshold market anchor plus a low-complexity football residual improves matching Over/Under decisions beyond strong football-only and market-only controls.",
+  "nearest_completed": {
+    "origin": "A",
+    "source_commit": "3f10b641134658d3036933928cf2fa08dac4083c",
+    "report_path": "reports/historical-market-comparison-no2025-v3/PUBLIC_RESULTS.md",
+    "immutable_URL": "https://github.com/NickNicky19/NFL-forecasting/blob/3f10b641134658d3036933928cf2fa08dac4083c/reports/historical-market-comparison-no2025-v3/PUBLIC_RESULTS.md",
+    "received_source_receipt": {
+      "path": "reports/targeted-accuracy-w1w9-01/B/prior-source/SOURCE_AND_RESOURCE_RECEIPT_V1.json",
+      "sha256": "d44308bf049bf5938c4e89fdffc717fe28bf79dc095638dbc924323ccda19b48"
+    },
+    "classification": "EXISTING_A_INFORMATION_AND_HYBRID_TESTS_MUST_BE_REUSED",
+    "arms": "F authenticated football CDF outputs; FC empirical correction; FS confidence shrinkage; M offering-book-excluded reference; H offering-book-excluded market information plus football correction; L(B) offering-book line heuristic.",
+    "tested_periods": "2024 regular season and2026 W1\u20135 under reported cohorts; all adverse and inconclusive findings retained",
+    "important_difference": "A H is described as nonnegative-slope L2 empirical point correction, not a documented exact new B logit(q_market)+f(x,line) classifier. Exact equivalent residual-logit prior-use is NOT_VERIFIED from the received aggregate report, so no global first-use claim.",
+    "probability_examples_2026": [
+      {
+        "target": "pass_cmp",
+        "events": 58,
+        "games": 39,
+        "weeks": 5,
+        "F_Brier": 0.255434,
+        "M_Brier": 0.247206,
+        "H_Brier": 0.250552
+      },
+      {
+        "target": "pass_att",
+        "events": 46,
+        "games": 31,
+        "weeks": 4,
+        "F_Brier": 0.243263,
+        "M_Brier": 0.248612,
+        "H_Brier": 0.249421
+      }
+    ],
+    "limits": "Reported public aggregates, no private market rows, no fit reproduction or exact de-margin calculation independently inspected. Quotes timing-unverified;2026football F is aged frozen2024model, not strongest currentfootballcontrol. M numerical line-as-point heuristics are not automatically market-implied probabilities. No original incumbent or live profitability claim."
+  },
+  "retained_B_source_refresh": {
+    "policy": "Hash/contract comparison once; reuse prior resolved field census, do not reparse private NFL rows or repeat source collection",
+    "prior_census": {
+      "path": "reports/targeted-accuracy-w1w9-01/B/prior-source/NEW_INFORMATION_FEASIBILITY_V2.json",
+      "sha256": "0aa1dd6ed57b877a2f10a2bc98d7724b232db88129e85a385059d8c2686eb20f"
+    },
+    "execution_bindings": {
+      "path": "reports/targeted-accuracy-w1w9-01/B/evaluation/EXECUTION_INPUT_BINDINGS_V1.json",
+      "sha256": "a8e865903d1297f504304e46ab2c45bcb43f04ee121b8860f28092efe330f306"
+    },
+    "source_files": [
+      {
+        "week": 5,
+        "bytes": 3159,
+        "sha256": "7ebb7e3b546147f8e7f10fa887fd295f2d72f88eb70600a22448ad29feff69fe",
+        "matches_frozen_source": true
+      },
+      {
+        "week": 6,
+        "bytes": 2924,
+        "sha256": "3f7ccc297f7e2dd63d1bdc6c1e625b6183f58b58f3551d4ce2aa8ad02416d5b5",
+        "matches_frozen_source": true
+      },
+      {
+        "week": 7,
+        "bytes": 2752,
+        "sha256": "c6b2a6dfd5a983892afcc7882fea337ad105a327972ce6c5c16300e4fb5ead43",
+        "matches_frozen_source": true
+      },
+      {
+        "week": 8,
+        "bytes": 2710,
+        "sha256": "43fc0aef34076e5d5389cb47239c9a10d68df80cd5db6973cf008b997504b2c0",
+        "matches_frozen_source": true
+      },
+      {
+        "week": 9,
+        "bytes": 3491,
+        "sha256": "63b131964ddc110e78ec8328f6c592f9f96f59be3e946e5a45e4de848cde76f8",
+        "matches_frozen_source": true
+      }
+    ],
+    "raw_rows_redecoded": 0,
+    "known_native_panel": {
+      "targets": [
+        "pass_att",
+        "pass_cmp"
+      ],
+      "offer_records": 284,
+      "offers_per_target": 142,
+      "unique_player_games": 142,
+      "games": 71,
+      "actual_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "price_fields": "ABSENT_IN_PRIOR_RESOLVED_CENSUS;allfivecurrentbytesunchanged",
+      "quote_clock": "UNVERIFIED",
+      "main_alternate": "UNCLASSIFIED"
+    },
+    "current_export_index": {
+      "path": "reports/abc-championship/EXPORT_INDEX.json",
+      "sha256": "8ccb2683221e689245d236acac461728a0e444f501764c8356e9af120c778f00"
+    },
+    "own_export_entries": 2322,
+    "market_price_named_exports": 0,
+    "scope_limit": "Bounded ownB registries, exact retained-source bindings and permitted prior A aggregate caches checked. No claim every A private archive or separately owned Astra artifact has been inspected."
+  },
+  "classification": [
+    {
+      "component": "Existing A offering-book-excluded market/reference/hybrid evidence",
+      "state": "ALREADY_TESTED_REUSE_RESULTS"
+    },
+    {
+      "component": "B native quoted lines",
+      "state": "AVAILABLE_WITHOUT_PRICES;NOT_A_MARKET_PROBABILITY_REFERENCE"
+    },
+    {
+      "component": "Exact independent-book same-event/threshold/time two-sided prices for new B M4",
+      "state": "SOURCE_BLOCKED_ACCESS_AND_BINDINGS"
+    },
+    {
+      "component": "Earlier out-of-time football residual features matched to qualified market rows",
+      "state": "NOT_BOUND_FOR_THIS_M4_PRODUCT"
+    },
+    {
+      "component": "Exact regularized residual-logit equivalent in inaccessible A/Astra procedures",
+      "state": "NOT_VERIFIED;DO_NOT_DECLARE_NOVEL_FROM_NAME"
+    }
+  ],
+  "single_missing_prerequisite": {
+    "artifact": "A permitted exact-offer/independent-price/OOT-football joined packet, or an acknowledged owner-local execution binding for that packet under the existing protected route.",
+    "responsible_executor": "Existing A protected-market data/execution owner supplies permitted bindings; B owns newM4 procedure and C admits evaluation.",
+    "required_contract": [
+      "Canonical player/event/category/period/role and offered book/threshold/side",
+      "Each reference book compatible two-sided prices at the same threshold/time, actual observation/decision clocks or explicitly diagnostic timing tier",
+      "Offering-book exclusion throughout reference and hybrid input paths",
+      "Predeclared per-book price-to-probability normalization then aggregation; no cross-threshold pair or cross-book best-price normalization",
+      "Push/nonparticipation/settlement conditioning and current-vintage limitations",
+      "Earlier-origin football outputs and labels, group-safe training/evaluation membership, duplicate-book handling and protected-source permissions"
+    ],
+    "minimum_permissible_action": "Use the existing approved A owner-local route to qualify/bind retained rows or identify the exact absent period/field. No paid acquisition, collector, external export or invented opposite quote.",
+    "completion_condition": "One exact row/recipe/source contract permits frozen F/M/simpleblend/residual comparison on a matching eligible board, or an exact source gap is confirmed. Do not run on substituted prices or thresholds."
+  },
+  "allocation": {
+    "active_exact_B_M4_execution_allocation_located": false,
+    "checked_registration": {
+      "path": "reports/targeted-accuracy-w1w9-01/B/wave-v1/FROZEN_PROTOCOL_V2.json",
+      "sha256": "0ee7a43c5cd72c82f19df154f80a9df1dc8583eb285f3b9727bf879967efd25e"
+    },
+    "prior_M2_delivery": {
+      "path": "reports/targeted-accuracy-w1w9-01/B/FINAL_DELIVERY_RECEIPT_V1.json",
+      "sha256": "f5bf08b995a5ea1c97318ae2aef6ed05339430af6949a36b36b033c7225a5ae1"
+    },
+    "prior_M2_fit_calls_charged": 64,
+    "prior_M2_fit_call_cap": 64,
+    "old_M2_calls_remaining": 0,
+    "opportunity_budget": "Separate closed experiment; unused counters not transferred",
+    "A_frozen_C_M3_budget": "Exclusive to that join; zero charged by B",
+    "new_resource_allowance": 0,
+    "interpretation": "Conditional backlog authorization is not a registered finite newB M4 compute/source allocation. Even after source qualification, confirm suitable existing exact allocation or make one bounded request; no cap invented here."
+  },
+  "control_contract": {
+    "football_only": "Strongest exact-compatible retained laws/directions, not only aged A F; preserve B0/B2 and own-side cohorts where products match",
+    "market_only": "Qualified q_market is an estimate with explicitly declared treatment, not truth",
+    "hybrid": "At most one regularized low-complexity residual and fixed simple blend under an earlier-only frozen procedure, not an unrestricted mixture tournament",
+    "same_book": "Separately labeled assistance; cannot replace excluded independent reference",
+    "accuracy": "Own O/U/combined and useful coverage; probability scores separate; no EV claim without prices/contracts"
+  },
+  "decision": "Do not execute M4 without the source-bound prerequisite. This blocks this exact M4 product, not independent football-only TabICLv2 feasibility or older qualified releases.",
+  "new_fits": 0,
+  "new_NFL_grades": 0,
+  "new_prices": 0,
+  "new_network_reads": 0,
+  "new_source_collection": 0,
+  "new_primary_activation": 0,
+  "source_bindings": [
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/prior-source/NEW_INFORMATION_FEASIBILITY_V2.json",
+      "sha256": "0aa1dd6ed57b877a2f10a2bc98d7724b232db88129e85a385059d8c2686eb20f"
+    },
+    {
+      "path": "reports/prop-grading-20261030e/MARKET_AND_RELEASE_HANDOFF.md",
+      "sha256": "72dbe4e1cafb12eca606dbc0527e1e8b5d7cb7719ac1076288caf44393013444"
+    },
+    {
+      "path": "reports/targeted-accuracy-w1w9-01/B/FINITE_REMAINING_QUEUE_V1.json",
+      "sha256": "ef96c8fed435ac5098a72040f7989db54308675b4d8bf153035e0e86d476dc1b"
+    }
+  ],
+  "resources": {
+    "incremental_measured_CPU_seconds": 0.028672435,
+    "new_CPU_allowance": 0,
+    "A_C_M3_CPU": 0,
+    "M1_CPU": 0,
+    "new_API_credit_allowance": 0,
+    "limitation": "Only this receipt/hash pass is metered; preceding read/search/import overhead not complete CPU. All original spent counters/failures remain. No new allowance/reset."
+  }
+}

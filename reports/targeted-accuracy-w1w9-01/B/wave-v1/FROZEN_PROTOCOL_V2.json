@@ -1,0 +1,219 @@
+{
+  "id": "B-TARGETED-QB-CONTEXT-BETA-BINOMIAL-v1",
+  "state": "FROZEN_BEFORE_NEW_OPTIMIZER_CALLS_AND_COMPARATIVE_SCORES",
+  "at_UTC": "2026-11-15T04:54:38.487290+00:00",
+  "owner": "B_ROOT",
+  "coordinator": "C",
+  "source_inputs": {
+    "reports/information-first-20261112-01/B/completion-wave-v1/QB_CONTEXT_W1_W9_INPUTS_V1.json.gz": "45aaab99d41f2e2643066c001355b26430f55dca06e7c7e366eace252f2e021b",
+    "reports/player-context-completion-decision-01/B/source-depth-v1/FTN_DEPTH_QB_GAME_INPUTS.json.gz": "fc8489bfecae5e9d9808cdda62ff7e3af4b054240dbfb105c2937773934c9b6f"
+  },
+  "code": {
+    "tools/run_targeted_qb_m2.py": "350c32e6bf5dbb81bd99845412fe00ba572ed4bfa6d858febcf90e28824a1e94",
+    "nfl_v2/targeted_qb_m2.py": "23ab726f718332da06b94ecc7f093d089cc3e9dd4693b41de4a8a9013fcdd670",
+    "nfl_v2/player_context_matchup.py": "3db66e8d7c75f444d87f4792add9096a9d04d0390902f67ce21248c206476f29",
+    "nfl_v2/qb_depth_catchability.py": "9494f1d7be9b67ddbaa824f9be2f44b4ae5d2f8bb3b2f2e15445ec7675fe9a82",
+    "nfl_v2/qb_depth_catchability_v2.py": "707efe03dc45b9ef557eb1c1cbaa055befde00dac77f97acd6e06b35f4b083aa",
+    "nfl_v2/distribution_wave_v2.py": "417b817debe54b8e8c050d92e3e3fb9283fbc924a832099fbcc9c7ba51517fb9",
+    "nfl_v2/distribution_laws.py": "14f034249f38cd12d5a0ea36b05e64086e0859cc4209f83a55c913cda5742f4d"
+  },
+  "old_prediction_bindings": {
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W01.json.gz": "d470267b008e7b356e245e5d5f9fa83d7890a7782abc36d8a7d20ab0e62ea77f",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W02.json.gz": "44c4e547db156b351a5846674b05663c70355e71857ac4d73e2f96c6673c1764",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W03.json.gz": "87b51833580a9d1670c7882d03d0081668174887b78ff1ce0c06f023c6e0afd5",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W04.json.gz": "01fe3e347e26fcbe1939920c1232ddf875c7c8cdef756647365f860dbbe103c3",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W05.json.gz": "736c92f24db97262067aaefc3b55529a6193548f30deaaae269b3ca6f28e81a1",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W06.json.gz": "61da850c0554c9eff3461f91d6b2120c43e22f77792fc958b470b36cca03f4bd",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W07.json.gz": "605b263a09d67affc00ed03965424ffee3782df7bf8b1e7fed2151fc5d42dd55",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W08.json.gz": "57c7640a2f157b6d9983fee60d49b4759808409be987bf8bdbd6342085369a0e",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W09.json.gz": "1addeed6af9ce04bdfdb04a0781b6b4547738cdd841db76f2c2e68917716fb0d",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W10.json.gz": "06e408b215ae17914f85a419efa1e91748e14fa1699063f05dd63023c0014760",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W11.json.gz": "eccbf32e37bc3253bf0bc4dd0902e1de85c86c70edf94cf3885826e420e9ea8b",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W12.json.gz": "50ddb2cf59630afabf389124db46bdd11c0bdfe252ca52985bec3829505c134b",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W13.json.gz": "30daa4cb458b927e5fb9379526f9b344823d529c4d5a59c955df7420cc53c973",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W14.json.gz": "6a3f9e3c723b4c95a0634a002af32fcc79e6a2855b37203f39392093ced40570",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W15.json.gz": "c98002c0ba4614a49a254f91c90119d865fb205aea622c53ef977aa39bbceff0",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W16.json.gz": "eb96f7bc09885841d19df3f34d6c9774530038b9674596e18155c7c2f9d2050d",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W17.json.gz": "0ef88dd1fe119559bd4c23bd8d580d30c0e617bcb09d4a11c354bc52f2e51751",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2025-W18.json.gz": "6e1b0e976da7cd02165fed8ea045c5f01903c53756bc4fc9655ff379cc166a99",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2026-W01.json.gz": "de568cc6242b1469056737311fd86fea4888893e864b977c97935a41234eef96",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2026-W02.json.gz": "4216ed10c2817dc6c1d47ebcfbfd086b522c556da1df53cd07281a4e9f1b2bce",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2026-W03.json.gz": "6482e01fc170205af25a0d0b599016636ef29858afd637a57c317ec1368ad073",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2026-W04.json.gz": "40dc188593ecce049eb51b48cd7fdb1ce9ed972f93e697d3085ef3f4f22176f1",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2026-W05.json.gz": "4c916ef15c8ea47d998087c76ab44cb10b94508c1024f61219ea720b7769b7fc",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2026-W06.json.gz": "5a996056a1e6addef104549534f33b142d93cf32968fe4476a04e90b64ec6db8",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2026-W07.json.gz": "ba96c0a93573039fe8c83f72d9e478d3531087de51f0b6571b280b688dc21e19",
+    "reports/player-context-matchup-01/B/qb-wave-v1/predictions/2026-W08.json.gz": "e2c0b595c9f84ff91067b2f516ec30e9549b6868f84fbadc03f5eb5b11c0a2e8",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W01.json.gz": "f8d01f49024a3101559693ad56e10038dbce5e48468bbe3d8a195e5c262b1f86",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W02.json.gz": "91670b8118c4d32e2b891235d3645b6e228c2ac38207959aefc9ad5f8692e71e",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W03.json.gz": "a053697376958cf661727452d25b9f8be5679834e594f112285f442a0199f07a",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W04.json.gz": "01931b382b79bcc7f2030c47ecab7258d57652bfb000eff69f89dca3f308563c",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W05.json.gz": "58dd76b71f8db5b88f78ca23974144a51bbbc35f7d14abe7f947b25a38582a32",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W06.json.gz": "a927306ac8e4e39e44face47b918daf6ef21983f52b19844dbe3f1e496b9b960",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W07.json.gz": "c5e0d39bc96374b47542fb3a9d557ac5f05c4d4fe98d634be947a27a83972389",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W08.json.gz": "a8caf16388cb23ee965e3e154735e023fcfb640c3ef37b5f1b400ebe86f483d0",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W09.json.gz": "e8a086f13a7d320071e62ec8006249e9a91248a3e60b5bf2a2a52bc65b87fa8b",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W10.json.gz": "d5de23724cc3dc1a3142c0dab600116cc9d531317e5a1e40a73adb2358b30149",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W11.json.gz": "8886d41e2e0b0abeb96b9f2463280924430d31ce9096d01107f8d09f2ef278eb",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W12.json.gz": "036f5da023e4feeba58974cd1f2309de27bec52f03edfe9ac3dc52c099226cba",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W13.json.gz": "b259a845486bdd0a71c6da6a2a04f0f28188fd8b5a0c2deff37d16e522efa1db",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W14.json.gz": "ed2c7645081f750fa1f0d3ce8df84dd0e6b3bc4db59ed99a53657a37e520d813",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W15.json.gz": "e6b9e157b1d5baf662874edf02ecfcfcf85338acbf4d4b76274bb312dfcc663c",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W16.json.gz": "c45fc109afdebb52f1acb9230e714fed93163b5866910a1515e3983450e42c6c",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W17.json.gz": "0acb751ea806eb5ef88c3d8ef732ae99ff89062de028690354306d11d8a4b05f",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2025-W18.json.gz": "7fb30d1107f136667c0f266debe5aa95769ec77f984f841588422328938c9eb9",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2026-W01.json.gz": "b0d1065c8c298f4ca80bb307d8e32369baa2b7a1d6b55e27280b1609cf565d8b",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2026-W02.json.gz": "a6c8849ae47c32b4d3e118ea4ac446c346231a49cd391d2177bd30c2920ecb69",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2026-W03.json.gz": "e52e25cecdce7353e23043900a64ce26537118ba235369c5e84cb4c7b74f8ba3",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2026-W04.json.gz": "34b57e621f75d5f26129ec16dfd441c9dcca00abfd7ab10baeac3ee2f6e5d37c",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2026-W05.json.gz": "0013201c51a96c8b6e699469a69c12d957fb00194af557c7e7002235e801ca3a",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2026-W06.json.gz": "dcd36e7b9767b64851897a97c66dc5e1811829042f6296796eb5000258b299f3",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2026-W07.json.gz": "fdc3943b5d89a5a136f5a142a84394ef772b0a9e6fe639972c8aa00c1a04f587",
+    "reports/player-context-completion-decision-01/B/depth-wave-v2/predictions/2026-W08.json.gz": "4cedab5f7d94b62f9961db5cda1c953f50a08825b5d20c221c491a8bc4372c7c"
+  },
+  "old_rows_per_parent": {
+    "P2": 941,
+    "C1": 941,
+    "C2": 941
+  },
+  "plan": [
+    [
+      2025,
+      11
+    ],
+    [
+      2025,
+      12
+    ],
+    [
+      2025,
+      13
+    ],
+    [
+      2025,
+      14
+    ],
+    [
+      2025,
+      15
+    ],
+    [
+      2025,
+      16
+    ],
+    [
+      2025,
+      17
+    ],
+    [
+      2025,
+      18
+    ],
+    [
+      2026,
+      1
+    ],
+    [
+      2026,
+      2
+    ],
+    [
+      2026,
+      3
+    ],
+    [
+      2026,
+      4
+    ],
+    [
+      2026,
+      5
+    ],
+    [
+      2026,
+      6
+    ],
+    [
+      2026,
+      7
+    ],
+    [
+      2026,
+      8
+    ],
+    [
+      2026,
+      9
+    ]
+  ],
+  "new_mechanism": "Learn context-dependent game-conversion BB dispersion on earlier-origin OOT predicted means; fixed parent conversion mean and analytic common attempt law.",
+  "mean_parents": {
+    "P2": "Retained penalized QB/team/defense conditional25down-depthlogistic",
+    "C1": "Retained shared conditionalcontextGLM plus depthchart support",
+    "C2": "C1plus qualifiedearlier depthcatchability values"
+  },
+  "arms": {
+    "P2": {
+      "BIN": "exact unchanged mean/exposure/binomial thinning",
+      "BB": "same mean/exposure plus new learned conditional precision"
+    },
+    "C1": {
+      "BIN": "exact unchanged mean/exposure/binomial thinning",
+      "BB": "same mean/exposure plus new learned conditional precision"
+    },
+    "C2": {
+      "BIN": "exact unchanged mean/exposure/binomial thinning",
+      "BB": "same mean/exposure plus new learned conditional precision"
+    }
+  },
+  "direct": "D_M2:unchanged32treeLeafCDF learner, same P2+dispersion input information, predicted attempt\u03bc/shape, fit-onlyidentitylevels; standaloneCMPmarginal, no jointclaim.",
+  "feature_schema": [
+    "intercept",
+    "predicted_context_entropy",
+    "lagged_known_destination_entropy",
+    "lagged_known_distance_mean_div20",
+    "log_prior_attempt_support_div_log1000",
+    "destination_unavailable",
+    "distance_unavailable"
+  ],
+  "kappa_link": "0.05+9999.95*expit(zbeta); fixedridge intercept1 towardk20 andslopes10toward0",
+  "optimizer": "L-BFGS-Bmaxiter200ftol1e-10gtol1e-6; no search; nonconvergenceusesregisteredk20fallback",
+  "history": "H-RECENT previousseason+earliercurrentlabels; sourcefeaturesown8strength20/expanding2022memory; inherited7daystrictavailability<cutoff.",
+  "fitting": "Weekly beforeearliestgame. Dispersiontrainingusesearlier-origin OOTparentpmean andactualhistoricalattempt/completionlabels available<origin; no in-sample residual fitting.",
+  "source_tier": "CURRENT_VINTAGE_SEVEN_DAY_CHRONOLOGICAL_RECONSTRUCTION;NOT_AUTHENTICATED_HISTORICAL_PUBLICATION",
+  "scope_limits": "No receiverpersonnel universe or actualalignment/routes. Destinationentropy anddistancehistory arepregame summary dispersioncovariates, not jointper-attemptdistancecells. Predicted25mix fixed, not full posteriorcontextuncertainty.",
+  "forecast_population": "RetainedofficialQBstat-rowqueries, not authenticatedexante roster; no targetgameoutcomes orrealizedcontextsinpredictors.",
+  "exact_integration": {
+    "attempt_tail_tolerance": 1e-10,
+    "no_renormalization": true,
+    "support": "InfiniteNBattempts; C<=A; numericalgridtailbounded, notdata-dependentclipping"
+  },
+  "chart_contrasts": "C2-C1 samebinary/BBfamily isolates chartvaluesbeyondsupport. P2versusC1 differssharing/features andiscomplete-systemonly.",
+  "budget": {
+    "optimizer_calls_max": 64,
+    "NFL_calls_max": 63,
+    "synthetic_calls_max": 1,
+    "dispersion": 51,
+    "missing_parent_W9": 3,
+    "direct_current_origins": 9,
+    "CPU_seconds": 1800,
+    "wall_seconds": 1200,
+    "max_threads": 2,
+    "RSS_bytes": 2147483648,
+    "public_bytes": 33554432
+  },
+  "evaluated_old_outcomes_exposed": true,
+  "lookback_and_settings": "Inheritedfixed8/20and32tree; newdispersionlink/ridge frozen scientificallybeforecomparativegains; no tuning menu.",
+  "pilot": "Beforebroad:3missingW9meanfits,1syntheticpositivecontrol,firstchronological2025W11P2dispersion; saveinputs/code/models and exactGitHubreadback.",
+  "selection_protocol": "../evaluation/FROZEN_EVALUATION_PROTOCOL_V1.json",
+  "source_coverage": {
+    "chart_rows": 2901,
+    "W9_chart_not_required": true,
+    "eligible_chart_keys_all_matched": 2898
+  },
+  "original_issuance": false,
+  "new_primary_release": false,
+  "previous_protocol_sha256": "ba06bbc0d0859bdf00cccf0b0e4035b3f10926d191814f5c8b015dd46e539db1",
+  "amended_UTC": "2026-11-15T05:00:41.697256+00:00",
+  "guard_amendment": "Before anyoptimizer/NFLfit: enforce payloadVERSION and finite/integer training contracts before low-support fallback. Qualifiedobservations/modelmath/settings/source/selectionunchanged. Originalcode recoverablein0e8fc177prefitcapsule; independent MRE retained."
+}

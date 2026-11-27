@@ -1,0 +1,23 @@
+{
+  "id": "B-ACCEPTANCE-RAW-FEATURE-v1",
+  "at_utc": "2026-11-10T00:36:41.894519+00:00",
+  "scope": "Independent streaming source reconstruction; no model fitting or new collection.",
+  "sample_rules": [
+    "Lexicographically firstQB at earliestkickoff ineach2022-2026sourceyear",
+    "Firstphysicallysupported officialzeroattemptQB bykickoff/game/player",
+    "Firstunknownphysicalstatebykickoff/game/player",
+    "First2025W2creditedattempt withplay_type=no_play; identified bysourceflags,notwinrate",
+    "First2026W5offerWIN andLOSS inQ:E3P2, canonicalgame/playerorder; protectedrecordsremainprivate"
+  ],
+  "predeclared_interaction_query": "Earliest2025W1QB bykickoff/game/player; allqualifyingpastQBplays independentlyreconstructed.",
+  "budget": {
+    "max_CPU_seconds": 300,
+    "max_wall_seconds": 600,
+    "max_RSS_bytes": 536870912,
+    "max_threads": 1,
+    "new_fit_calls": 0,
+    "new_source_downloads": 0
+  },
+  "population": "RetrospectiveofficialQBstatrows; notrecoveredpregameroster",
+  "rights": "PBP/statderivativesCCBY4;FTN-dependentderivativesCCBYSA4attributionFTNData vianflverse;no protectedofferspublished."
+}

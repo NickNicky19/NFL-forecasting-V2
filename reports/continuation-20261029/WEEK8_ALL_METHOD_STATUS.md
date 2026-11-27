@@ -1,0 +1,13 @@
+# Week 8: located procedure references accounted for
+
+This is a capture/readiness ledger. The [CSV](WEEK8_ALL_METHOD_STATUS.csv) and [JSON](WEEK8_ALL_METHOD_STATUS.json) contain **1,808 rows**: 1,669 blocked legacy source/product references, 126 new family/history/product cells, twelve preserved owner-wrapper category entries and one blocked chart-PPR adapter. References and product/history cells are not independent fitted models. This does not claim that every original method produced a new forecast.
+
+Two new research families contain **20,772 issued views and 60 abstentions** (20,832 total), on the same 1,951 frozen query cells and fourteen games. Each family has three history regimes and separate numeric objective/output views or binary-TD probabilities. The empirical family uses arithmetic summaries; HGB made 63 actual Week 8 NFL fits within its 452-fit wave. Numeric HGB points are not authenticated distributions. Exact chart PPR remains blocked.
+
+Actual empirical capture was October 29 at 22:51:33 UTC (5:51 p.m. Chicago); HGB capture was 23:16:53 UTC (6:16 p.m. Chicago). Both precede every kickoff. Both came after CAR–GB's inherited 22:45 owner input cutoff: 837 flagged views per family, 1,674 combined. The other 19,098 issued views precede their later games' owner cutoffs. The six unavailable frozen-board contexts create thirty abstention views per family; no identity or role flag was invented to fill them. [Original empirical receipt](week8-shadow-v2/CAPTURE_RECEIPT.json) · [HGB receipt](hgb-history-v1/WEEK8_CAPTURE_RECEIPT.json).
+
+Existing owner forecasts contain 1,951 retained original selected rows, including the current 1,945-row subset. Full private original candidate vectors and original assignments remain unverified here. New controls preserve those originals and do not fill named complex-method cells. The prior one-family checkpoint's 10,386 issued / thirty abstained views remain unchanged and separately versioned.
+
+**No Week 8 outcomes have been read or scored.** All accuracy/error fields are null pending qualified final outcomes; no native MAE or Brier value is converted into a generic accuracy percentage. The combined 20,832-row private review bundle was uploaded owner-only/unshared and freshly downloaded with the same hash; [restoration receipt](PRIVATE_WEEK8_ALL_REVIEW_RESTORATION.json). Public manifests contain safe artifact IDs and hashes, not private storage locators.
+
+The deadline-specific coordination request was delivered through the documented owner research PR channel. Delivery does not establish owner acknowledgement or official capture completion. No workflow, lease, scheduler, paid collector or website was changed. The full all-method tournament remains incomplete.

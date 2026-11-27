@@ -1,0 +1,251 @@
+"""Project retained public method metadata; no source collection, fit or grading.
+
+This is a reporting view of the existing index. Locator ranges refer to exact
+zero-based rows of unchanged, hash-bound shards; they preserve every indexed
+view without copying 620k metric views into another scientific database.
+"""
+from __future__ import annotations
+import collections,csv,gzip,hashlib,io,json,math,pathlib,resource,subprocess,time
+from datetime import datetime,timezone
+ROOT=pathlib.Path(__file__).resolve().parents[1]
+OUT=ROOT/'reports/predictive-value-next-01/B/method-history-v1'
+TARGETS=('pass_yd','pass_td','pass_cmp','pass_att','pass_int','rush_yd','rush_att','rec','rec_yd','rush_rec_yd','anytime_td','nick-chart-ppr-v1')
+OWNER='NickNicky19/NFL-forecasting-V2'
+SOURCES=[]
+START=time.process_time();WALL=time.monotonic()
+def sha(b):return hashlib.sha256(b).hexdigest()
+def guard():
+ if time.process_time()-START>120 or time.monotonic()-WALL>600:raise RuntimeError('Reporting-only CPU120/wall600 limit; no pilot reserve used')
+ if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024>1073741824:raise RuntimeError('Reporting RSS1GiB guard')
+def read(path):
+ p=ROOT/path;b=p.read_bytes();z=gzip.decompress(b)if b[:2]==b'\x1f\x8b'else b
+ SOURCES.append(dict(path=str(path),wire_bytes=len(b),wire_sha256=sha(b),decoded_sha256=sha(z)))
+ return json.loads(z)
+def text(path):
+ b=(ROOT/path).read_bytes();SOURCES.append(dict(path=path,wire_bytes=len(b),wire_sha256=sha(b)));return b.decode()
+def clean(v):
+ if isinstance(v,float)and not math.isfinite(v):return 'Infinity'if v>0 else'-Infinity'if v<0 else'INVALID_NAN'
+ if isinstance(v,dict):return {str(k):clean(x)for k,x in v.items()}
+ if isinstance(v,(list,tuple,set)):return [clean(x)for x in v]
+ return v
+def dumps(v):return json.dumps(clean(v),ensure_ascii=False,separators=(',',':'),sort_keys=True,allow_nan=False)
+def put(path,v):
+ p=OUT/path
+ if p.exists():raise RuntimeError('Immutable reporting output already exists: '+str(p))
+ # Stream nested metadata rather than copying/stringifying the full620k-view
+ # projection in memory. Original failed build/tool are retained separately;
+ # this serialization repair has not been used to rerun the projection.
+ def tokens(x):
+  if isinstance(x,dict):
+   yield '{'
+   for i,(k,vv) in enumerate(sorted(x.items(),key=lambda kv:str(kv[0]))):
+    if i:yield ','
+    yield json.dumps(str(k),ensure_ascii=False);yield ':';yield from tokens(vv)
+   yield '}'
+  elif isinstance(x,(list,tuple,set)):
+   yield '['
+   for i,vv in enumerate(x):
+    if i:yield ','
+    yield from tokens(vv)
+   yield ']'
+  else:yield json.dumps(clean(x),ensure_ascii=False,separators=(',',':'),allow_nan=False)
+ def write_stream(f):
+  n=0
+  for t in tokens(v):
+   f.write(t.encode());n+=1
+   if n%100000==0:guard()
+  f.write(b'\n')
+ if str(p).endswith('.gz'):
+  with p.open('wb')as f:
+   with gzip.GzipFile(filename='',mode='wb',fileobj=f,mtime=0)as g:write_stream(g)
+ else:
+  with p.open('wb')as f:write_stream(f)
+def val(v):return None if v is None else dumps(v)if isinstance(v,(list,dict))else str(v)
+def flat(v):
+ if v is None:return []
+ if isinstance(v,(list,tuple)):return [x for x in v if isinstance(x,(str,int))]
+ return [v]if isinstance(v,(str,int))else[]
+def ints(v):
+ out=[]
+ for x in flat(v):
+  try:out.append(int(x))
+  except(ValueError,TypeError):pass
+ return out
+def cat(r):
+ c=r.get('category',r.get('target'))
+ if c in('fantasy_points','fantasy','ppr'):return c # never relabel a legacy score into exact chart
+ return c
+# Family labels describe retained mechanisms, not a canonical equivalence verdict.
+RULES=[
+ ('B-TABICLV2','TabICLv2 direct exact-line classifier','One pretrained, pinned in-context classifier; same-information ordinary logistic control. No new football block.'),
+ ('INFORMATION-SKILL-OPPORTUNITY','QB team opportunity and player share','Forecast uncertain team attempts and player share; hold completion conversion fixed. Preserve separate mean/joint products.'),
+ ('INFORMATION-SKILL-PASS-MIX','Predicted pass mix and conversion','Earlier-only throw-context mixture and conditional conversion with fixed attempt law; support/value and mixer stages separate.'),
+ ('TARGETED-QB-CONTEXT-BETA','Context-dependent conversion variance','Attempt-conditioned beta-binomial precision extension with unchanged means/attempt law; variance-only contrast.'),
+ ('FTN-BALL-QUALITY','Lagged FTN ball-quality information','Support-only versus lagged throwaway/interception-worthy values on the same completion learner.'),
+ ('FTN-COMPLETION-CONDITIONAL','FTN genuine forecast-only capture','Original conditional future completion forecasts and separately versioned grades; no later offer fabricated.'),
+ ('QB-ALIGNED-FRESHNESS','Aligned information-timing policy','Original versus48-hour reconstructed availability, consistently aligned training/query histories; no authenticated vintage claim.'),
+ ('QB-OPPORTUNITY-PROFILE','QB player/defense profile increment','Own/team opportunity and qualified passing-defense blocks given to retained learner; same-case controls.'),
+ ('QB-SOURCE-DEPTH-ROLE','Depth-rank diagnostic information','Current-vintage source depth-rank input; not authenticated injury or expected workload information.'),
+ ('QB-DEPTH-CATCHABILITY','Depth and catchability conversion','Source-qualified context/catchability relationships, direct and structured controls; charted catchability differs from completion.'),
+ ('QB-CHARTED-CATCHABILITY','Charted catchability contexts','Conditional conversion/catchability input study; support and target definitions retained.'),
+ ('B-player-context-matchup','QB exposure and context linkage','Separate opportunity/exposure and conversion/gain stages; forecast future mixtures, retain P1/P2/P3 control identities.'),
+ ('PASS-INT-MEASUREMENT','Interception measurement correction','Regrade the same original selected sides using qualified official interception outcomes; not a model change.'),
+ ('POST-WAVE-5W-CORRECTNESS','Learned correctness ranking','Earlier-only correctness gate/ranker; distinct from event calibration and complete website selector.'),
+ ('PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT','Probability intercept repair','Earlier-only bounded intercept change; preserve losing probability and selected outcomes.'),
+ ('c02-explicit-lag-block-removal','Leaf-CDF explicit lag removal','Remove explicit individual lag block while retaining registered CDF learner/history, code and fallback.'),
+ ('position-defense-information','Player-position and defense information','Qualified position/team/defense input block under D1/D2 procedures; existing learner and history contracts preserved.'),
+ ('chronological-category','Chronological category method selection','Choose among earlier scored methods using registered earlier-only score memory; not hindsight best-week stitching.'),
+ ('ordered_leaf_cdf','Empirical-leaf CDF','Tree-leaf outcome PMFs with declared earlier prior/support; mean/median/exact-law products separate.'),
+ ('regularized_glm_law','Regularized marginal GLM laws','Earlier-only regularized count/signed/event law with declared prior/support and history.'),
+ ('poisson-count','Count-objective HGB point','Poisson-objective point forecast with correct mean/prior/fallback semantics; objective alone is not a full law.'),
+ ('rush-att-qb-rb-specialization','Rushing role specialization','Role-specific versus mixed-role count models; actual role masks and fallback retained.'),
+ ('hgb-direct','Objective-specific HGB direct','Squared/absolute/binary objectives with fixed chronological preprocessing and update policy.'),
+ ('empirical-player-history','Shrunk own-player empirical history','Qualified earlier role/global prior and player history; history arms preserve common-memory versus strict-current distinction.'),
+ ('exact_chart','Exact chart PPR','Versioned complete-component chart transform/model; legacy website fantasy is separate.'),
+ ('chart-direct','Exact chart PPR','Versioned complete-component chart transform/model; legacy website fantasy is separate.'),
+]
+def family(p,r):
+ named=r.get('procedure_family_id')or r.get('family_id')or r.get('mechanism_id')
+ # Existing explicit family IDs are retained in metadata even when a readable map is used.
+ for token,name,formula in RULES:
+  if token.lower()in p.lower():return name,formula,'READABLE_LINEAGE_MAPPING_NOT_EQUIVALENCE_DEDUP'
+ low=p.lower()
+ for tokens,name,formula in [
+  (('response_cdf','response cdf','cdf_response'),'Response-sensitive CDF forest','Tree splits on CDF-response vectors; empirical outcome leaves and declared prior support.'),
+  (('threshold_cdf','threshold cdf','distribution_split_cdf'),'Threshold/ordered CDF classifiers','Threshold probabilities repaired into a valid monotone CDF under fixed support rules.'),
+  (('leaf_cdf','leaf cdf','leafcdf','pure_cdf','old_cdf','fresh_cdf'),'Empirical-leaf CDF','Retained leaf-CDF law and declared priors; exact configuration/output/history in linked source.'),
+  (('catboost',),'CatBoost direct','Retained native CatBoost objective and configuration; no default-library equivalence assumption.'),
+  (('lightgbm',),'LightGBM direct','Retained native LightGBM objective and configuration; exact product/configuration retained.'),
+  (('xgboost',),'XGBoost direct','Retained native XGBoost objective and configuration; exact product/configuration retained.'),
+  (('ngboost',),'NGBoost conditional law','Retained native conditional-distribution pilot; narrow category/runtime scope remains explicit.'),
+  (('count_a','count a','counta'),'Count A count-objective HGB','Retained Count A objective and role/mean-corrector/fallback identities; legacy mixed point is not corrected mean.'),
+  (('median_hgb','median-boosting','hgb_','old_hgb','hgb '),'Objective-specific HGB direct','Retained objective-specific HGB settings and code; output views do not create new families.'),
+  (('always','neutral_half','constant_'),'Constant-side/reference control','Frozen constant/reference direction on exact declared opportunity mask; not automatically a live policy.'),
+  (('sleeper','provider','saved_raw','raw_projection','saved_base'),'Archived provider point/reference','Use recorded original values and declared source/cutoff; current revised projections cannot recreate issuance.'),
+  (('website','site','saved_adjusted','original_recorded'),'Website/provider selection reference','Original recorded or pinned website adjustment/selector under exact retained line/eligibility/fallback rules.'),
+  (('ridge','logistic'),'Regularized direct linear/logistic','Earlier-only regularized direct point/event model under retained feature and target contract.'),
+  (('recent','pooled','empirical','role_prior'),'Shrunk historical production control','Earlier-only own/role pooled histories and declared shrinkage; preserve startup and missingness.'),
+  (('workload','held_tree','allocation','opportun'),'Opportunity/allocation × efficiency','Earlier-only opportunity/share and efficiency relationships; held exposure and forecast exposure are separate products.'),
+  (('market','historical_market'),'Market-assisted/reference','Exact market source/book/threshold/quote-clock and evaluated-book exclusion must be retained.'),
+  (('calibr','platt','isotonic','offset','beta'),'Probability calibration/correction','Frozen earlier-only probability repair; genuine mass/support and endpoints retained.'),
+  (('ngs',),'Lagged NGS information','Lagged source-qualified NGS feature addition; target-conditioned separation is not all-route openness.'),
+  (('scheme',),'Scheme/pace information','Earlier public PBP/schedule style/context features with unchanged learner.'),
+  (('tree',),'Fixed direct tree','Retained fixed tree learner under its original objective/features; not equal to arbitrary forest/CDF.'),
+  (('distributional','cdf','copula'),'Retained marginal/joint distribution label','Exact distribution, joint mechanism, support, history and version require linked source; label alone is insufficient equivalence.'),
+  (('conformal',),'Conformal interval','Earlier calibration residual interval construction; interval coverage is not direction accuracy.'),
+  (('blend','ensemble','stack'),'Fixed/learned blend or stack','Retained same-cutoff component combination with earlier-only learned weights where applicable.'),
+ ]:
+  if any(t in low for t in tokens):return name,formula,'READABLE_LINEAGE_MAPPING_NOT_EQUIVALENCE_DEDUP'
+ return 'Unresolved retained labels','No safe family equivalence can be inferred from this retained label; exact identity and all source records preserved.','FAMILY_UNRESOLVED'
+def signature(r):
+ p=str(r.get('procedure_id')or r.get('procedure_label')or'UNNAMED')
+ return tuple(val(r.get(k))for k in('category','history_regime','product_id','position','feature_memory_policy','information_policy'))+(p,)
+def item_id(sig):return 'B-HISTORY-'+sha(dumps(sig).encode())[:20]
+def scope(r):return tuple(val(r.get(k))for k in('source_artifact','evaluation_panel_id','population','fallback_view','source_vintage','evidence'))
+def merged_ranges(nums):
+ a=sorted(set(nums));out=[]
+ for n in a:
+  if out and n==out[-1][1]+1:out[-1][1]=n
+  else:out.append([n,n])
+ return out
+def compact_sample(r,shardidx,rowidx):
+ s=r.get('selection_metrics')or{}
+ keys=('wins','losses','decided','hit_rate','selected_opportunities','eligible_opportunities','selection_pool_count','eligible_rank_pool_n','admitted_forecast_opportunities','unavailable_forecast_opportunities','technical_unavailable','unknown_participation','missing_actual','pending','pushes','voids','abstentions','fallback_issued','source_fallback_selected','source_own_Over','source_own_Under','source_selected_probability','book_settlement_status_counts')
+ return dict(test_id=r.get('test_id'),source_record_id=r.get('source_record_id'),index_locator=[shardidx,rowidx],source_artifact=r.get('source_artifact'),season=r.get('season'),week=r.get('week'),evaluation_weeks=r.get('weeks'),n=r.get('n'),games=r.get('games'),forecast_or_offered_rows=r.get('forecast_or_offered_rows'),fallback_rows=r.get('fallback_rows'),metrics=r.get('metrics'),selection_metrics={k:s[k]for k in keys if k in s},uncertainty=r.get('uncertainty'),source_score_version=r.get('source_version_note'),evidence=r.get('evidence'),sample_scope='SOURCE_REPORTED_REPRESENTATIVE_NOT_BEST_SCORE;all metric views in exact linked index rows')
+def main():
+ OUT.mkdir(parents=True,exist_ok=True)
+ idx=read('registries/CURRENT_RESULTS_INDEX.json');manifest_path=idx['manifest'];manifest=read(manifest_path)
+ familycat=read('reports/inventory/METHOD_FAMILY_CATALOG.json');legacy=read('reports/inventory/ALL_METHOD_SCORES.json');years=read('reports/inventory/METHOD_YEAR_INVENTORY.json');refs=read('registries/PROCEDURE_REFERENCES.json');requests=read('registries/REQUEST_METHOD_CROSSWALK.json');grid=read('registries/EXPERIMENT_GRID.json');artifacts=read('registries/RESULT_ARTIFACTS.json');holds=read('registries/PROCEDURE_ADMISSION_HOLDS.json');roster=read('reports/w1w9-comparison-closure-01/B/roster/FROZEN_B_CONTRIBUTION_ROSTER_V1.json');decisions=read('reports/category-decision-release-01/B/B-evidence/B_TWELVE_CATEGORY_EXISTING_EVIDENCE_V2.json')
+ branch=read('reports/inventory/BRANCH_SCOPE.json');extended=read('reports/inventory/EXTENDED_BRANCH_SCOPE.json');reachable=read('reports/inventory/REACHABLE_HISTORY_INDEX.json')
+ for p in ('nfl_v2/hgb_control.py','nfl_v2/distribution_wave_v2.py','nfl_v2/player_context_matchup.py','nfl_v2/qb_opportunity_information.py','nfl_v2/tabiclv2_direct_pilot.py'):
+  if(ROOT/p).exists():text(p)
+ groups={};category_views=collections.Counter();allkinds=collections.Counter();source_records=0;null_records=[];shard_receipts=[];idset=set()
+ for shi,sh in enumerate(manifest['shards']):
+  guard();p=ROOT/sh['path'];wire=p.read_bytes();assert sha(wire)==sh['sha256'],'Existing shard wire commitment differs: '+sh['path'];z=gzip.decompress(wire)if wire[:2]==b'\x1f\x8b'else wire;rows=json.loads(z);assert len(rows)==sh['records']
+  shard_receipts.append(dict(path=sh['path'],sha256=sh['sha256'],bytes=len(wire),records=len(rows),uncompressed_sha256=sha(z)))
+  for ri,r in enumerate(rows):
+   source_records+=1;allkinds[str(r.get('kind'))]+=1;c=cat(r)
+   if c not in TARGETS:
+    null_records.append([shi,ri,c,r.get('kind')]);continue
+   category_views[c]+=1;sig=signature(r);g=groups.get(sig)
+   if g is None:
+    p=str(r.get('procedure_id')or r.get('procedure_label')or'UNNAMED');fn,formula,fc=family(p,r)
+    g=groups[sig]=dict(id=item_id(sig),canonical_procedure_id=p,category=c,product_id=r.get('product_id'),history_regime=r.get('history_regime'),role_scope=r.get('position'),feature_memory_policy=r.get('feature_memory_policy'),information_policy=r.get('information_policy'),family_name=fn,plain_relationship=formula,family_mapping_scope=fc,retained_family_ids=set(),source_artifacts=set(),index_rows=collections.defaultdict(list),executions={},source_verification_scopes=set(),source_vintages=set(),training_period='NOT_UNIFORMLY_RETAINED_IN_SCORE_INDEX;see exact source protocol/configuration',evaluation_season_weeks=collections.defaultdict(set),numerical_2026_weeks=set(),direction_2026_weeks=set(),learned_fallback_2026_weeks=collections.defaultdict(set),observed_record_kinds=set(),owner='B retained/reconstructed or imported-reference contribution; original owner in exact source refs',repository=OWNER,aliases=set(),milestones=set(),verification='SOURCE_METADATA_HASH_CHECKED;no new row/fit reproduction',scientific_disposition='PER_SOURCE_RETAINED;NO_NEW_RANKING_OR_GAIN_CLAIM',five_week_status='PRODUCT_SOURCE_RULE_REVIEW_REQUIRED;indexed duration alone is not admission',current_query_ready='NOT_ESTABLISHED_BY_HISTORY_VIEW',deployment='NO_NEW_ACTIVATION_BY_THIS_VIEW')
+   for k in('procedure_family_id','family_id','mechanism_id'):
+    if r.get(k):g['retained_family_ids'].add(str(r[k]))
+   g['source_artifacts'].add(r['source_artifact']);g['index_rows'][shi].append(ri);g['source_verification_scopes'].add(str(r.get('evidence')));g['observed_record_kinds'].add(str(r.get('kind')))
+   if r.get('source_vintage'):g['source_vintages'].add(str(r['source_vintage']))
+   if r.get('upstream_source_link'):g['owner']='Imported source owner retained in linked upstream reference; B did not originate every imported method';g['origin_upstream_link']=r['upstream_source_link']
+   for season in ints(r.get('seasons')or r.get('season')):
+    ws=ints(r.get('weeks')or r.get('week'));g['evaluation_season_weeks'][season].update(ws)
+    if season==2026:
+     if r.get('kind')in('prop_selection_evaluation','prop_threshold_probability_evaluation'):g['direction_2026_weeks'].update(ws);g['milestones'].add('DIRECTION_OR_LINE_PROBABILITY_SCORED_REVIEW_EXACT_OFFER_TIER')
+     else:g['numerical_2026_weeks'].update(ws);g['milestones'].add('NUMERICAL_EVENT_OR_OTHER_DIAGNOSTIC_SCORED')
+     fb=r.get('fallback_view')
+     if fb:g['learned_fallback_2026_weeks'][str(fb)].update(ws)
+   sk=scope(r);e=g['executions'].get(sk)
+   if e is None:e=g['executions'][sk]=dict(source_artifact=r['source_artifact'],source_artifact_sha256=r.get('source_artifact_sha256'),evaluation_panel_id=r.get('evaluation_panel_id'),population=r.get('population'),fallback_view=r.get('fallback_view'),source_vintage=r.get('source_vintage'),evidence=r.get('evidence'),view_count=0,seasons=collections.defaultdict(set),sample=None,sample_priority=-1)
+   e['view_count']+=1
+   for season in ints(r.get('seasons')or r.get('season')):e['seasons'][season].update(ints(r.get('weeks')or r.get('week')))
+   # Prefer explicitly aggregate views, never a higher hit rate or lower error.
+   w=r.get('week');priority=2 if w in(None,'ALL','all','cumulative','FULL')else 1
+   if priority>e['sample_priority']:e['sample']=compact_sample(r,shi,ri);e['sample_priority']=priority
+  del rows,z,wire
+ assert source_records==manifest['record_count']
+ # Preserve non-scored reference/grid requests without pretending they executed.
+ known={(g['category'],g['canonical_procedure_id'],g['product_id'])for g in groups.values()};unscored=[]
+ for n,r in enumerate(refs):
+  c=cat(r);p=r.get('canonical_procedure_id')or r.get('procedure_label');product=r.get('product_id')
+  if c in TARGETS and(c,p,product)not in known:unscored.append(dict(reference_id=r.get('reference_id'),category=c,procedure_label=p,product_id=product,status='REFERENCE_NOT_MATCHED_TO_CURRENT_CANONICAL_PROCEDURE;not a tested loser',source_id=r.get('source_id'),canonicalization=r.get('canonicalization'),source_locator=['registries/PROCEDURE_REFERENCES.json',n]))
+ # Long bound owner leader/evidence metadata are linked, not selected into a new global ranking.
+ candidate_map=collections.defaultdict(list)
+ for i,r in enumerate(roster['candidates']):candidate_map[r['category']].append(dict(candidate_id=r.get('candidate_id'),procedure_id=r.get('procedure_id'),history=r.get('history_regime'),output=r.get('output'),source_locator=['reports/w1w9-comparison-closure-01/B/roster/FROZEN_B_CONTRIBUTION_ROSTER_V1.json','candidates',i]))
+ outgroups=[]
+ for g in groups.values():
+  g['index_rows']=[[i,merged_ranges(v)]for i,v in sorted(g['index_rows'].items())]
+  g['executions']=list(g['executions'].values())
+  for e in g['executions']:e['seasons']={str(k):sorted(v)for k,v in e['seasons'].items()};e.pop('sample_priority',None)
+  for k in('retained_family_ids','source_artifacts','source_verification_scopes','source_vintages','observed_record_kinds','aliases','milestones','numerical_2026_weeks','direction_2026_weeks'):g[k]=sorted(g[k])
+  for k in('evaluation_season_weeks','learned_fallback_2026_weeks'):g[k]={str(x):sorted(v)for x,v in g[k].items()}
+  g['missing_2026_W1_W9_numerical']=[w for w in range(1,10)if w not in g['numerical_2026_weeks']];g['missing_2026_W1_W9_direction_indexed']=[w for w in range(1,10)if w not in g['direction_2026_weeks']]
+  g['direction_week_caveat']='Direction index views include distinct original, retrospective, internal/reference, corrected and scoped panels; union of these weeks is not one qualified complete procedure panel.'
+  outgroups.append(g)
+ outgroups.sort(key=lambda g:(TARGETS.index(g['category']),g['family_name'],g['canonical_procedure_id'],str(g['history_regime']),str(g['product_id']),g['id']))
+ execs=[]
+ for i,line in enumerate(text('registries/EXECUTIONS.jsonl').splitlines()):
+  if not line.strip():continue
+  r=json.loads(line);execs.append({k:r[k]for k in('run_id','state','actual_UTC','recorded_at_utc','receipt','receipt_sha256','report','experiment_id','new_fits','actual_new_fit_calls','actual_new_NFL_fit_calls','new_scientific_fits','new_NFL_grades','new_primary_release')if k in r}|{'existing_ledger_line_0based':i})
+ header={'schema':'B-existing-index-method-history-projection-v1','UTC':datetime.now(timezone.utc).isoformat(),'owner_contribution':'B only; C consolidates A/B/C/site','state':'COMPLETE_WITHIN_LISTED_CURRENT_INDEX_AND_REFERENCE_SOURCES;PARTIAL_LIFETIME_CROSS_SESSION_HISTORY','base_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'record_unit':'Exact procedure/output/history/role/information configuration; not a learner count. Executions and evaluation views remain separately linked.','source_index':{'path':'registries/CURRENT_RESULTS_INDEX.json','sha256':SOURCES[0]['wire_sha256'],'manifest_path':manifest_path,'manifest_sha256':SOURCES[1]['wire_sha256'],'records':source_records,'shards':len(shard_receipts)},'field_contract':'Null/NOT_RETAINED/source-link is preferable to inferred data. Representative metrics are deterministic aggregate-first examples; all evaluations and weekly/side/source versions remain accessible through exact shard row locators. Do not sum representative denominators or view counts.','family_contract':'Readable mechanism grouping is a documented presentation mapping, not scientific canonicalization. Exact original procedure IDs/configuration keys remain separate. Mean/median, seed, historical window and score views do not automatically create a new family.','novelty_contract':'Before new fit compare exact prior procedure and reason: reuse evidence, coverage extension, independent reproduction, verified repair, or materially different information/relationship/learner. Partial catalog absence is not proof never tested.','limits':'Reporting-only CPU120/wall600/RSS1GiB/public16MiB; no pilot reserve consumed; no new fits, scoring, raw-source/price collection or recovery.','gaps':['Protected raw archives, original private chats/transcripts and deleted or unlocated outputs were not accessed.','Separate Astra studies are not available in inspected B inputs; no claim their methods were run or disproved here.','A/C/site complete owner histories require their owner-verified contributions; imported old A aggregates retain original evidence and ownership.','Retained68-branch/255-commit upstream census is a historical source. All those branches were not freshly reopened; current local reachable refs are separately recorded.','Some legacy labels have unresolved canonical family/alias/output identity; every available label/reference/configuration is retained without declaring equivalent.','Actual training windows, fitted settings, original quote clocks, raw presence and private fit parity are unavailable for some compact sources; inspect linked retained config/receipt before reuse.','Stat-row and timing-unverified/internal-threshold panels cannot establish authentic ordinary-main-line pregame eligibility or a universal twelve-category champion.'],'milestones':'History scores prove only their reported evaluation stage/tier. Proposed-only and failed runtime states remain explicit; no new primary activation.','scientific_outputs_unchanged':True,'new_fits':0,'new_grades':0,'new_NFL_games':0,'new_source_GETs':0,'new_capture':0,'new_primary_activation':0}
+ detail=header|{'source_shards':shard_receipts,'procedure_configurations':outgroups,'unmatched_or_unscored_references':unscored,'original_family_catalog':familycat,'request_to_method_crosswalk':requests,'original_grid_cells':grid,'execution_ledger_projection':execs,'source_artifact_registry':artifacts,'admission_holds':holds,'owner_candidate_bindings':candidate_map,'source_manifests':SOURCES,'legacy_year_inventory_reference':{'path':'reports/inventory/METHOD_YEAR_INVENTORY.json','rows':len(years)},'legacy_aggregate_reference':{'path':'reports/inventory/ALL_METHOD_SCORES.json','rows':len(legacy)},'historical_branch_scope_reference':{'path':'reports/inventory/BRANCH_SCOPE.json','heads':len(branch),'extended_tree_enum':extended.get('total_enumerated_branches'),'reachable_history_records':len(reachable)},'unassigned_index_views':null_records,'source_index_kind_counts':dict(allkinds)}
+ put('METHOD_HISTORY_DETAIL_V1.json.gz',detail)
+ # Matching compact configuration CSV; long execution/metric details are in the JSON and original shards.
+ fields=['id','category','family_name','canonical_procedure_id','product_id','history_regime','role_scope','feature_memory_policy','information_policy','verification','scientific_disposition','numerical_2026_weeks','direction_2026_weeks','missing_2026_W1_W9_direction_indexed','five_week_status','current_query_ready','deployment','execution_groups','existing_index_views','detail_locator']
+ sio=io.StringIO();writer=csv.DictWriter(sio,fieldnames=fields);writer.writeheader()
+ for i,g in enumerate(outgroups):
+  row={k:val(g.get(k))for k in fields};row.update(execution_groups=len(g['executions']),existing_index_views=sum(e['view_count']for e in g['executions']),detail_locator='METHOD_HISTORY_DETAIL_V1.json.gz#/procedure_configurations/'+str(i));writer.writerow(row)
+ with(OUT/'PROCEDURE_CONFIGURATIONS_V1.csv.gz').open('wb')as f:
+  with gzip.GzipFile(filename='',fileobj=f,mode='wb',mtime=0)as gz:gz.write(sio.getvalue().encode())
+ summary=[]
+ for c in TARGETS:
+  gg=[g for g in outgroups if g['category']==c];fm=collections.defaultdict(list)
+  for g in gg:fm[g['family_name']].append(g)
+  summary.append({'category':c,'configuration_count':len(gg),'canonical_procedure_strings':len({g['canonical_procedure_id']for g in gg}),'families':[{'name':name,'configuration_count':len(v),'existing_index_view_count':sum(sum(e['view_count']for e in g['executions'])for g in v),'scored_sources':sorted({p for g in v for p in g['source_artifacts']}),'sample_procedure_ids':list(dict.fromkeys(g['canonical_procedure_id']for g in v))[:4],'family_scope':'Presentation group; original configs and aliases remain explicit in detailed export.'}for name,v in sorted(fm.items())],'index_views':category_views[c],'request_ids':[r.get('request_id')for r in requests if cat(r)==c],'owner_leader_bindings':candidate_map[c],'global_winner':'NOT_ESTABLISHED_FROM_MIXED_SOURCE_CATALOG','production':'NO_NEW_ACTIVATION; original site owner decides exact products','full_W1_W9':'See each exact source panel; mixed union of indexed weeks is not a nine-week champion.'})
+ put('CATEGORY_FAMILY_SUMMARY_V1.json',summary)
+ accounting={'state':'REPORTING_VIEW_EXECUTED_NO_NEW_SCIENCE','CPU_seconds_this_build':time.process_time()-START,'wall_seconds_this_build':time.monotonic()-WALL,'peak_RSS_bytes':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024,'prior_finite_metadata_scan_CPU_seconds':39.817195461000004,'prior_preparation_failures':[{'stage':'metadata_field_census','error':'Counter.update(dict) interpreted values as counts; corrected to keys','measured_process_wall_seconds':0.159148732,'measured_CPU':'NOT_RETAINED'},{'stage':'family pretty-print','error':'Legacy catalog supplement lacks name; preserve heterogeneous schema','CPU':'NOT_RETAINED'},{'stage':'first full metadata census','error':'gzip-compressed shard read as UTF8; corrected magic-aware reader','CPU':'NOT_RETAINED'}],'metering_limit':'No complete process/import/orchestration-tail measurement; do not present build CPU as total complete reporting consumption. No scientific pilot allocation used.','new_fits':0,'new_grades':0,'new_source_GETs':0}
+ put('REPORTING_ACCOUNTING_V1.json',accounting)
+ scoped=header|{'existing_index_views':source_records,'exact_procedure_configurations':len(outgroups),'canonical_procedure_strings':len({g['canonical_procedure_id']for g in outgroups}),'target_categories':len(TARGETS),'unassigned_all_or_software_views':len(null_records),'unmatched_procedure_references':len(unscored),'legacy_aggregate_views':len(legacy),'original_family_catalog_entries':len(familycat),'grid_cells_preserved':len(grid),'request_crosswalk_rows':len(requests),'execution_ledger_rows':len(execs),'source_artifact_records':len(artifacts),'current_local_refs':subprocess.check_output(['git','for-each-ref','--format=%(refname) %(objectname)','refs/heads','refs/remotes'],cwd=ROOT,text=True).splitlines(),'source_manifests':SOURCES,'method_rule_examples':RULES,'body_wire_bytes':sum(p.stat().st_size for p in OUT.iterdir()if p.is_file()),'accounting':'REPORTING_ACCOUNTING_V1.json'}
+ put('COMPLETENESS_AND_SOURCE_SCOPE_V1.json',scoped)
+ # Readable category view: every identified presentation-family, exact configs via matching export.
+ lines=['# B — recoverable forecasting method history','', '**Reporting view, not a new championship or predictive experiment.** This is B\'s owner-verified contribution for C\'s consolidated history. It projects all '+str(source_records)+' views in the hash-bound current results index into '+str(len(outgroups))+' exact procedure/output/history/role/information configurations. Views, configurations and model families are different counts. No fit, inference, regrade, source acquisition or deployment was performed.','', '**COMPLETE_WITHIN_LISTED_CURRENT_INDEX_AND_REFERENCE_SOURCES; PARTIAL lifetime and cross-session history.** All current shards were reopened and hash checked. The original4,832 imported aggregate views,50 dated catalog entries,1,669 procedure references,5,408 original grid cells,103 request crosswalk rows and execution-ledger history remain linked/preserved. A/C/site and inaccessible Astra/private evidence are not invented. [Precise scope and gaps](COMPLETENESS_AND_SOURCE_SCOPE_V1.json).','', '[Complete machine-readable detail](METHOD_HISTORY_DETAIL_V1.json.gz) · [Matching configuration CSV](PROCEDURE_CONFIGURATIONS_V1.csv.gz) · [Category/family JSON](CATEGORY_FAMILY_SUMMARY_V1.json). Long fields/metrics and every weekly/source/score version resolve through original hash-bound shard/row ranges. Representative numerical/own-side records use an aggregate-first source rule, never the best score; they must not be pooled across masks.','', '## Interpretation and unchanged scientific decisions','', 'The underlying relationship/formula and retained family IDs, exact product/history/role/input contracts, original IDs, evidence tiers, fallback views, numerical/probability metrics, own-side counts where retained, uncertainties, source versions and milestones are exposed in the detail. Missing fields remain null or explicitly NOT_RETAINED_IN_SCORE_INDEX with the exact source locator. A family display map is not an equivalence verdict. Ambiguous legacy aliases remain unresolved; mean/median, Top-K, seed and report views do not automatically become new families.','', 'Scores from original issuance, qualified/current-vintage reconstruction, timing-unverified real lines, internal/reference thresholds and numerical-only panels remain distinct. The catalog does not rerank those disconnected samples or establish a global winner. Product-specific five-week/source/admission/current-query checks remain required. An indexed nine-week union can mix incompatible panels; it is not one complete nine-week policy.','', 'B\'s newer results remain unchanged: profile/timing/catchability/FTN increments and M2 variance arms retain negative or inconclusive direction outcomes; SKILL R0 mean115/226 trails retained B0 mean119/226 and B2 median/law122/226; its law and probability findings are adverse. Opportunity-v1 joint probability/selection recipe remains closed; limited attempt-mean gains are separate. Original C1 strict reproduction and opportunity team strict reproduction remain FAILED, with other passed components explicitly scoped. Existing negative controls and recommendations are linked, not refitted.','', 'The contemporaneous TabICLv2 authorization is execution authority, not a historical accuracy result. Root records its actual runtime/canary/result or stop in the same package; until that receipt exists the catalog labels the pilot proposed/implemented, not fitted/scored. No primary activation is authorized.','', 'Best-supported products remain tied to their named compatible comparisons: [existing B scoped numerical/event and direction evidence](../../../category-decision-release-01/B/B-evidence/B_TWELVE_CATEGORY_EXISTING_EVIDENCE_V2.json), [frozen59-contender B contribution](../../../w1w9-comparison-closure-01/B/roster/FROZEN_B_CONTRIBUTION_ROSTER_V1.json), [nine-week completion comparison](../../../w1w9-comparison-closure-01/B/README.md), [latest SKILL and opportunity receipts](../PEER_RECEIPT_RECONCILIATION_V1.json). These are scoped leaders or no replacement findings, not a universal ranking. C consolidates; original site alone decides active products.','']
+ for c in summary:
+  lines+=['## '+c['category'],'',str(c['configuration_count'])+' exact retained configurations; '+str(c['canonical_procedure_strings'])+' original procedure strings; '+str(c['index_views'])+' indexed evaluation views. Every exact configuration is available in the matching export. Full W1–9/source/learned/fallback status is per original execution; missing cells are not filled by another product.','', '| Retained mechanism / display family | Configurations | Existing views | Representative original IDs |','|---|---:|---:|---|']
+  for f in c['families']:
+   examples='; '.join('`'+p.replace('|','/')+'`'for p in f['sample_procedure_ids'][:2]);lines.append('|'+f['name']+'|'+str(f['configuration_count'])+'|'+str(f['existing_index_view_count'])+'|'+examples+'|')
+  lines+=['','Proposed/blocked pathways retained in request crosswalk: '+', '.join(str(x)for x in c['request_ids'])+'. No discussion-only pathway is marked executed. Exact incumbent/current use is owned by the production session, not inferred from research score rank.','']
+ lines+=['## Original dated family catalog, including failed and unimplemented work','','These original entries retain their original owner/source context and may overlap newer display groups. They are not50 disjoint fitted learners.','', '| Original catalog ID | Retained name / relationship | Original status | Source |','|---|---|---|---|']
+ for f in familycat:lines.append('|`'+str(f.get('id'))+'`|'+str(f.get('name',f.get('recipe','See source'))).replace('|','/')+'|'+str(f.get('state'))+'|`'+str(f.get('source'))+'`|')
+ lines+=['','## Completeness, retention and next use','','The currently inspected B worktree and exact current-index metadata are source checked. The retained upstream census covers68 historical branch heads and255 history records, but those branch bodies were not all freshly reopened. Current local refs are listed in the scope receipt. Protected/private chats, deleted outputs, original model/raw-source vintages and separate Astra artifacts remain explicit gaps. Imported upstream aggregates are reported evidence, not B independent fit reproduction. No protected row, private storage path, model body or credential is copied into this contribution.','', 'Before another predictive fit, cite the closest exact retained procedure and state whether the work is reuse, missing-period extension, independent reproduction, verified repair or a materially different information/relationship/learner. A failed narrow recipe remains valid evidence, and absence from this partial lifetime history does not establish novelty.','', '[Reporting accounting](REPORTING_ACCOUNTING_V1.json) is separate from the TabICLv2 scientific allowance and preserves metadata-preparation errors/unmetered overhead. New fits/grades/source GETs/captures/primary activations:0.']
+ p=OUT/'README.md';p.write_text('\n'.join(lines)+'\n')
+ total=sum(p.stat().st_size for p in OUT.iterdir()if p.is_file());assert total<16777216,'Public reporting cap';guard()
+ print(dumps({'state':'COMPLETE_RETAINED_INDEX_REPORTING_PROJECTION','configs':len(outgroups),'index_views':source_records,'shards':len(shard_receipts),'output_bytes':total,'build_CPU':time.process_time()-START,'build_wall':time.monotonic()-WALL,'new_fits':0,'new_grades':0}))
+if __name__=='__main__':main()

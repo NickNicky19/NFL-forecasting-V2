@@ -1,0 +1,1027 @@
+{
+  "corrects_artifact": "reports/continuation-20261030/HGB_RUSH_ATT_COLLAPSE_DIAGNOSIS.json",
+  "corrects_sha256": "a795574df013731e58f819345e2c827c18c38698f6c79ea1263c4222fce709dc",
+  "models_issued_values_scoring_unchanged": true,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "old_fields": {
+    "extended_QB_WR_TE": "All non-RB roles including primaryQB; not registered extended population",
+    "primary_RB": "RB-only subgroup, not full registered primary population",
+    "proposed_QB_RB_only": "Exact registered primary training-role subset, now explicitly tested under new specializationID"
+  },
+  "registered_extended_roles": [
+    "WR",
+    "TE"
+  ],
+  "registered_primary_roles": [
+    "QB",
+    "RB"
+  ],
+  "state": "ROLE_VIEW_LABEL_CORRECTION_NUMERIC_MODELS_UNCHANGED",
+  "training_role_views": [
+    {
+      "registered_extended": {
+        "n": 0,
+        "zero_fraction": null,
+        "zeros": 0
+      },
+      "registered_primary": {
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "positions": {},
+        "positive": 0,
+        "unique_games": 0,
+        "zero_fraction": null,
+        "zeros": 0
+      },
+      "slot": "W01-rush_att-H-CURRENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 0,
+        "zero_fraction": null,
+        "zeros": 0
+      },
+      "registered_primary": {
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "positions": {},
+        "positive": 0,
+        "unique_games": 0,
+        "zero_fraction": null,
+        "zeros": 0
+      },
+      "slot": "W01-rush_att-H-CURRENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 3729,
+        "zero_fraction": 0.9034593724859211,
+        "zeros": 3369
+      },
+      "registered_primary": {
+        "mean": 6.309555854643338,
+        "median": 4.0,
+        "n": 2229,
+        "positions": {
+          "QB": 664,
+          "RB": 1565
+        },
+        "positive": 1862,
+        "unique_games": 272,
+        "zero_fraction": 0.16464782413638404,
+        "zeros": 367
+      },
+      "slot": "W01-rush_att-H-RECENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 3729,
+        "zero_fraction": 0.9034593724859211,
+        "zeros": 3369
+      },
+      "registered_primary": {
+        "mean": 6.309555854643338,
+        "median": 4.0,
+        "n": 2229,
+        "positions": {
+          "QB": 664,
+          "RB": 1565
+        },
+        "positive": 1862,
+        "unique_games": 272,
+        "zero_fraction": 0.16464782413638404,
+        "zeros": 367
+      },
+      "slot": "W01-rush_att-H-RECENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 14421,
+        "zero_fraction": 0.8983426946813674,
+        "zeros": 12955
+      },
+      "registered_primary": {
+        "mean": 6.43923630959186,
+        "median": 4.0,
+        "n": 8747,
+        "positions": {
+          "QB": 2624,
+          "RB": 6123
+        },
+        "positive": 7458,
+        "unique_games": 1087,
+        "zero_fraction": 0.14736481079227162,
+        "zeros": 1289
+      },
+      "slot": "W01-rush_att-H-MULTI-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 14421,
+        "zero_fraction": 0.8983426946813674,
+        "zeros": 12955
+      },
+      "registered_primary": {
+        "mean": 6.43923630959186,
+        "median": 4.0,
+        "n": 8747,
+        "positions": {
+          "QB": 2624,
+          "RB": 6123
+        },
+        "positive": 7458,
+        "unique_games": 1087,
+        "zero_fraction": 0.14736481079227162,
+        "zeros": 1289
+      },
+      "slot": "W01-rush_att-H-MULTI-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 12,
+        "zero_fraction": 1.0,
+        "zeros": 12
+      },
+      "registered_primary": {
+        "mean": 5.3,
+        "median": 4.0,
+        "n": 10,
+        "positions": {
+          "QB": 3,
+          "RB": 7
+        },
+        "positive": 7,
+        "unique_games": 1,
+        "zero_fraction": 0.3,
+        "zeros": 3
+      },
+      "slot": "W02-rush_att-H-CURRENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 12,
+        "zero_fraction": 1.0,
+        "zeros": 12
+      },
+      "registered_primary": {
+        "mean": 5.3,
+        "median": 4.0,
+        "n": 10,
+        "positions": {
+          "QB": 3,
+          "RB": 7
+        },
+        "positive": 7,
+        "unique_games": 1,
+        "zero_fraction": 0.3,
+        "zeros": 3
+      },
+      "slot": "W02-rush_att-H-CURRENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 3741,
+        "zero_fraction": 0.9037690457097033,
+        "zeros": 3381
+      },
+      "registered_primary": {
+        "mean": 6.305046895935686,
+        "median": 4.0,
+        "n": 2239,
+        "positions": {
+          "QB": 667,
+          "RB": 1572
+        },
+        "positive": 1869,
+        "unique_games": 273,
+        "zero_fraction": 0.16525234479678427,
+        "zeros": 370
+      },
+      "slot": "W02-rush_att-H-RECENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 3741,
+        "zero_fraction": 0.9037690457097033,
+        "zeros": 3381
+      },
+      "registered_primary": {
+        "mean": 6.305046895935686,
+        "median": 4.0,
+        "n": 2239,
+        "positions": {
+          "QB": 667,
+          "RB": 1572
+        },
+        "positive": 1869,
+        "unique_games": 273,
+        "zero_fraction": 0.16525234479678427,
+        "zeros": 370
+      },
+      "slot": "W02-rush_att-H-RECENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 14433,
+        "zero_fraction": 0.8984272154091318,
+        "zeros": 12967
+      },
+      "registered_primary": {
+        "mean": 6.43793536599292,
+        "median": 4.0,
+        "n": 8757,
+        "positions": {
+          "QB": 2627,
+          "RB": 6130
+        },
+        "positive": 7465,
+        "unique_games": 1088,
+        "zero_fraction": 0.14753911156788854,
+        "zeros": 1292
+      },
+      "slot": "W02-rush_att-H-MULTI-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 14433,
+        "zero_fraction": 0.8984272154091318,
+        "zeros": 12967
+      },
+      "registered_primary": {
+        "mean": 6.43793536599292,
+        "median": 4.0,
+        "n": 8757,
+        "positions": {
+          "QB": 2627,
+          "RB": 6130
+        },
+        "positive": 7465,
+        "unique_games": 1088,
+        "zero_fraction": 0.14753911156788854,
+        "zeros": 1292
+      },
+      "slot": "W02-rush_att-H-MULTI-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 227,
+        "zero_fraction": 0.9383259911894273,
+        "zeros": 213
+      },
+      "registered_primary": {
+        "mean": 6.817460317460317,
+        "median": 5.0,
+        "n": 126,
+        "positions": {
+          "QB": 37,
+          "RB": 89
+        },
+        "positive": 108,
+        "unique_games": 16,
+        "zero_fraction": 0.14285714285714285,
+        "zeros": 18
+      },
+      "slot": "W03-rush_att-H-CURRENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 227,
+        "zero_fraction": 0.9383259911894273,
+        "zeros": 213
+      },
+      "registered_primary": {
+        "mean": 6.817460317460317,
+        "median": 5.0,
+        "n": 126,
+        "positions": {
+          "QB": 37,
+          "RB": 89
+        },
+        "positive": 108,
+        "unique_games": 16,
+        "zero_fraction": 0.14285714285714285,
+        "zeros": 18
+      },
+      "slot": "W03-rush_att-H-CURRENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 3956,
+        "zero_fraction": 0.9054600606673407,
+        "zeros": 3582
+      },
+      "registered_primary": {
+        "mean": 6.336730360934182,
+        "median": 4.0,
+        "n": 2355,
+        "positions": {
+          "QB": 701,
+          "RB": 1654
+        },
+        "positive": 1970,
+        "unique_games": 288,
+        "zero_fraction": 0.16348195329087048,
+        "zeros": 385
+      },
+      "slot": "W03-rush_att-H-RECENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 3956,
+        "zero_fraction": 0.9054600606673407,
+        "zeros": 3582
+      },
+      "registered_primary": {
+        "mean": 6.336730360934182,
+        "median": 4.0,
+        "n": 2355,
+        "positions": {
+          "QB": 701,
+          "RB": 1654
+        },
+        "positive": 1970,
+        "unique_games": 288,
+        "zero_fraction": 0.16348195329087048,
+        "zeros": 385
+      },
+      "slot": "W03-rush_att-H-RECENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 14648,
+        "zero_fraction": 0.8989623156744948,
+        "zeros": 13168
+      },
+      "registered_primary": {
+        "mean": 6.444607235433337,
+        "median": 4.0,
+        "n": 8873,
+        "positions": {
+          "QB": 2661,
+          "RB": 6212
+        },
+        "positive": 7566,
+        "unique_games": 1103,
+        "zero_fraction": 0.14730080018032232,
+        "zeros": 1307
+      },
+      "slot": "W03-rush_att-H-MULTI-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 14648,
+        "zero_fraction": 0.8989623156744948,
+        "zeros": 13168
+      },
+      "registered_primary": {
+        "mean": 6.444607235433337,
+        "median": 4.0,
+        "n": 8873,
+        "positions": {
+          "QB": 2661,
+          "RB": 6212
+        },
+        "positive": 7566,
+        "unique_games": 1103,
+        "zero_fraction": 0.14730080018032232,
+        "zeros": 1307
+      },
+      "slot": "W03-rush_att-H-MULTI-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 451,
+        "zero_fraction": 0.9246119733924612,
+        "zeros": 417
+      },
+      "registered_primary": {
+        "mean": 6.4884615384615385,
+        "median": 5.0,
+        "n": 260,
+        "positions": {
+          "QB": 76,
+          "RB": 184
+        },
+        "positive": 223,
+        "unique_games": 32,
+        "zero_fraction": 0.1423076923076923,
+        "zeros": 37
+      },
+      "slot": "W04-rush_att-H-CURRENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 451,
+        "zero_fraction": 0.9246119733924612,
+        "zeros": 417
+      },
+      "registered_primary": {
+        "mean": 6.4884615384615385,
+        "median": 5.0,
+        "n": 260,
+        "positions": {
+          "QB": 76,
+          "RB": 184
+        },
+        "positive": 223,
+        "unique_games": 32,
+        "zero_fraction": 0.1423076923076923,
+        "zeros": 37
+      },
+      "slot": "W04-rush_att-H-CURRENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 4180,
+        "zero_fraction": 0.9057416267942584,
+        "zeros": 3786
+      },
+      "registered_primary": {
+        "mean": 6.32824427480916,
+        "median": 4.0,
+        "n": 2489,
+        "positions": {
+          "QB": 740,
+          "RB": 1749
+        },
+        "positive": 2085,
+        "unique_games": 304,
+        "zero_fraction": 0.1623141824025713,
+        "zeros": 404
+      },
+      "slot": "W04-rush_att-H-RECENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 4180,
+        "zero_fraction": 0.9057416267942584,
+        "zeros": 3786
+      },
+      "registered_primary": {
+        "mean": 6.32824427480916,
+        "median": 4.0,
+        "n": 2489,
+        "positions": {
+          "QB": 740,
+          "RB": 1749
+        },
+        "positive": 2085,
+        "unique_games": 304,
+        "zero_fraction": 0.1623141824025713,
+        "zeros": 404
+      },
+      "slot": "W04-rush_att-H-RECENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 14872,
+        "zero_fraction": 0.8991393222162453,
+        "zeros": 13372
+      },
+      "registered_primary": {
+        "mean": 6.440657266570446,
+        "median": 4.0,
+        "n": 9007,
+        "positions": {
+          "QB": 2700,
+          "RB": 6307
+        },
+        "positive": 7681,
+        "unique_games": 1119,
+        "zero_fraction": 0.1472188297990452,
+        "zeros": 1326
+      },
+      "slot": "W04-rush_att-H-MULTI-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 14872,
+        "zero_fraction": 0.8991393222162453,
+        "zeros": 13372
+      },
+      "registered_primary": {
+        "mean": 6.440657266570446,
+        "median": 4.0,
+        "n": 9007,
+        "positions": {
+          "QB": 2700,
+          "RB": 6307
+        },
+        "positive": 7681,
+        "unique_games": 1119,
+        "zero_fraction": 0.1472188297990452,
+        "zeros": 1326
+      },
+      "slot": "W04-rush_att-H-MULTI-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 680,
+        "zero_fraction": 0.9323529411764706,
+        "zeros": 634
+      },
+      "registered_primary": {
+        "mean": 6.527272727272727,
+        "median": 4.0,
+        "n": 385,
+        "positions": {
+          "QB": 112,
+          "RB": 273
+        },
+        "positive": 328,
+        "unique_games": 48,
+        "zero_fraction": 0.14805194805194805,
+        "zeros": 57
+      },
+      "slot": "W05-rush_att-H-CURRENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 680,
+        "zero_fraction": 0.9323529411764706,
+        "zeros": 634
+      },
+      "registered_primary": {
+        "mean": 6.527272727272727,
+        "median": 4.0,
+        "n": 385,
+        "positions": {
+          "QB": 112,
+          "RB": 273
+        },
+        "positive": 328,
+        "unique_games": 48,
+        "zero_fraction": 0.14805194805194805,
+        "zeros": 57
+      },
+      "slot": "W05-rush_att-H-CURRENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 4409,
+        "zero_fraction": 0.9079156271263324,
+        "zeros": 4003
+      },
+      "registered_primary": {
+        "mean": 6.341622035195103,
+        "median": 4.0,
+        "n": 2614,
+        "positions": {
+          "QB": 776,
+          "RB": 1838
+        },
+        "positive": 2190,
+        "unique_games": 320,
+        "zero_fraction": 0.162203519510329,
+        "zeros": 424
+      },
+      "slot": "W05-rush_att-H-RECENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 4409,
+        "zero_fraction": 0.9079156271263324,
+        "zeros": 4003
+      },
+      "registered_primary": {
+        "mean": 6.341622035195103,
+        "median": 4.0,
+        "n": 2614,
+        "positions": {
+          "QB": 776,
+          "RB": 1838
+        },
+        "positive": 2190,
+        "unique_games": 320,
+        "zero_fraction": 0.162203519510329,
+        "zeros": 424
+      },
+      "slot": "W05-rush_att-H-RECENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 15101,
+        "zero_fraction": 0.8998741805178465,
+        "zeros": 13589
+      },
+      "registered_primary": {
+        "mean": 6.442947875602278,
+        "median": 4.0,
+        "n": 9132,
+        "positions": {
+          "QB": 2736,
+          "RB": 6396
+        },
+        "positive": 7786,
+        "unique_games": 1135,
+        "zero_fraction": 0.14739378011388524,
+        "zeros": 1346
+      },
+      "slot": "W05-rush_att-H-MULTI-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 15101,
+        "zero_fraction": 0.8998741805178465,
+        "zeros": 13589
+      },
+      "registered_primary": {
+        "mean": 6.442947875602278,
+        "median": 4.0,
+        "n": 9132,
+        "positions": {
+          "QB": 2736,
+          "RB": 6396
+        },
+        "positive": 7786,
+        "unique_games": 1135,
+        "zero_fraction": 0.14739378011388524,
+        "zeros": 1346
+      },
+      "slot": "W05-rush_att-H-MULTI-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 908,
+        "zero_fraction": 0.9284140969162996,
+        "zeros": 843
+      },
+      "registered_primary": {
+        "mean": 6.544204322200393,
+        "median": 4.0,
+        "n": 509,
+        "positions": {
+          "QB": 146,
+          "RB": 363
+        },
+        "positive": 431,
+        "unique_games": 64,
+        "zero_fraction": 0.15324165029469547,
+        "zeros": 78
+      },
+      "slot": "W06-rush_att-H-CURRENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 908,
+        "zero_fraction": 0.9284140969162996,
+        "zeros": 843
+      },
+      "registered_primary": {
+        "mean": 6.544204322200393,
+        "median": 4.0,
+        "n": 509,
+        "positions": {
+          "QB": 146,
+          "RB": 363
+        },
+        "positive": 431,
+        "unique_games": 64,
+        "zero_fraction": 0.15324165029469547,
+        "zeros": 78
+      },
+      "slot": "W06-rush_att-H-CURRENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 4637,
+        "zero_fraction": 0.9083459133060168,
+        "zeros": 4212
+      },
+      "registered_primary": {
+        "mean": 6.35317750182615,
+        "median": 4.0,
+        "n": 2738,
+        "positions": {
+          "QB": 810,
+          "RB": 1928
+        },
+        "positive": 2293,
+        "unique_games": 336,
+        "zero_fraction": 0.16252739225712198,
+        "zeros": 445
+      },
+      "slot": "W06-rush_att-H-RECENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 4637,
+        "zero_fraction": 0.9083459133060168,
+        "zeros": 4212
+      },
+      "registered_primary": {
+        "mean": 6.35317750182615,
+        "median": 4.0,
+        "n": 2738,
+        "positions": {
+          "QB": 810,
+          "RB": 1928
+        },
+        "positive": 2293,
+        "unique_games": 336,
+        "zero_fraction": 0.16252739225712198,
+        "zeros": 445
+      },
+      "slot": "W06-rush_att-H-RECENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 15329,
+        "zero_fraction": 0.9001239480722812,
+        "zeros": 13798
+      },
+      "registered_primary": {
+        "mean": 6.4450086430423505,
+        "median": 4.0,
+        "n": 9256,
+        "positions": {
+          "QB": 2770,
+          "RB": 6486
+        },
+        "positive": 7889,
+        "unique_games": 1151,
+        "zero_fraction": 0.14768798617113224,
+        "zeros": 1367
+      },
+      "slot": "W06-rush_att-H-MULTI-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 15329,
+        "zero_fraction": 0.9001239480722812,
+        "zeros": 13798
+      },
+      "registered_primary": {
+        "mean": 6.4450086430423505,
+        "median": 4.0,
+        "n": 9256,
+        "positions": {
+          "QB": 2770,
+          "RB": 6486
+        },
+        "positive": 7889,
+        "unique_games": 1151,
+        "zero_fraction": 0.14768798617113224,
+        "zeros": 1367
+      },
+      "slot": "W06-rush_att-H-MULTI-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 1123,
+        "zero_fraction": 0.9216384683882458,
+        "zeros": 1035
+      },
+      "registered_primary": {
+        "mean": 6.512698412698413,
+        "median": 4.0,
+        "n": 630,
+        "positions": {
+          "QB": 182,
+          "RB": 448
+        },
+        "positive": 532,
+        "unique_games": 79,
+        "zero_fraction": 0.15555555555555556,
+        "zeros": 98
+      },
+      "slot": "W07-rush_att-H-CURRENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 1123,
+        "zero_fraction": 0.9216384683882458,
+        "zeros": 1035
+      },
+      "registered_primary": {
+        "mean": 6.512698412698413,
+        "median": 4.0,
+        "n": 630,
+        "positions": {
+          "QB": 182,
+          "RB": 448
+        },
+        "positive": 532,
+        "unique_games": 79,
+        "zero_fraction": 0.15555555555555556,
+        "zeros": 98
+      },
+      "slot": "W07-rush_att-H-CURRENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 4852,
+        "zero_fraction": 0.9076669414674361,
+        "zeros": 4404
+      },
+      "registered_primary": {
+        "mean": 6.35431969220007,
+        "median": 4.0,
+        "n": 2859,
+        "positions": {
+          "QB": 846,
+          "RB": 2013
+        },
+        "positive": 2394,
+        "unique_games": 351,
+        "zero_fraction": 0.1626442812172088,
+        "zeros": 465
+      },
+      "slot": "W07-rush_att-H-RECENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 4852,
+        "zero_fraction": 0.9076669414674361,
+        "zeros": 4404
+      },
+      "registered_primary": {
+        "mean": 6.35431969220007,
+        "median": 4.0,
+        "n": 2859,
+        "positions": {
+          "QB": 846,
+          "RB": 2013
+        },
+        "positive": 2394,
+        "unique_games": 351,
+        "zero_fraction": 0.1626442812172088,
+        "zeros": 465
+      },
+      "slot": "W07-rush_att-H-RECENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 15544,
+        "zero_fraction": 0.9000257334019557,
+        "zeros": 13990
+      },
+      "registered_primary": {
+        "mean": 6.4441719099925345,
+        "median": 4.0,
+        "n": 9377,
+        "positions": {
+          "QB": 2806,
+          "RB": 6571
+        },
+        "positive": 7990,
+        "unique_games": 1166,
+        "zero_fraction": 0.14791511144289218,
+        "zeros": 1387
+      },
+      "slot": "W07-rush_att-H-MULTI-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 15544,
+        "zero_fraction": 0.9000257334019557,
+        "zeros": 13990
+      },
+      "registered_primary": {
+        "mean": 6.4441719099925345,
+        "median": 4.0,
+        "n": 9377,
+        "positions": {
+          "QB": 2806,
+          "RB": 6571
+        },
+        "positive": 7990,
+        "unique_games": 1166,
+        "zero_fraction": 0.14791511144289218,
+        "zeros": 1387
+      },
+      "slot": "W07-rush_att-H-MULTI-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 1323,
+        "zero_fraction": 0.9236583522297808,
+        "zeros": 1222
+      },
+      "registered_primary": {
+        "mean": 6.507462686567164,
+        "median": 4.0,
+        "n": 737,
+        "positions": {
+          "QB": 211,
+          "RB": 526
+        },
+        "positive": 624,
+        "unique_games": 93,
+        "zero_fraction": 0.15332428765264586,
+        "zeros": 113
+      },
+      "slot": "W08-rush_att-H-CURRENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 1323,
+        "zero_fraction": 0.9236583522297808,
+        "zeros": 1222
+      },
+      "registered_primary": {
+        "mean": 6.507462686567164,
+        "median": 4.0,
+        "n": 737,
+        "positions": {
+          "QB": 211,
+          "RB": 526
+        },
+        "positive": 624,
+        "unique_games": 93,
+        "zero_fraction": 0.15332428765264586,
+        "zeros": 113
+      },
+      "slot": "W08-rush_att-H-CURRENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 5052,
+        "zero_fraction": 0.9087490102929533,
+        "zeros": 4591
+      },
+      "registered_primary": {
+        "mean": 6.358732299393122,
+        "median": 4.0,
+        "n": 2966,
+        "positions": {
+          "QB": 875,
+          "RB": 2091
+        },
+        "positive": 2486,
+        "unique_games": 365,
+        "zero_fraction": 0.16183412002697237,
+        "zeros": 480
+      },
+      "slot": "W08-rush_att-H-RECENT-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 5052,
+        "zero_fraction": 0.9087490102929533,
+        "zeros": 4591
+      },
+      "registered_primary": {
+        "mean": 6.358732299393122,
+        "median": 4.0,
+        "n": 2966,
+        "positions": {
+          "QB": 875,
+          "RB": 2091
+        },
+        "positive": 2486,
+        "unique_games": 365,
+        "zero_fraction": 0.16183412002697237,
+        "zeros": 480
+      },
+      "slot": "W08-rush_att-H-RECENT-squared_error_mean"
+    },
+    {
+      "registered_extended": {
+        "n": 15744,
+        "zero_fraction": 0.9004700203252033,
+        "zeros": 14177
+      },
+      "registered_primary": {
+        "mean": 6.444538169548713,
+        "median": 4.0,
+        "n": 9484,
+        "positions": {
+          "QB": 2835,
+          "RB": 6649
+        },
+        "positive": 8082,
+        "unique_games": 1180,
+        "zero_fraction": 0.1478279207085618,
+        "zeros": 1402
+      },
+      "slot": "W08-rush_att-H-MULTI-absolute_error_point"
+    },
+    {
+      "registered_extended": {
+        "n": 15744,
+        "zero_fraction": 0.9004700203252033,
+        "zeros": 14177
+      },
+      "registered_primary": {
+        "mean": 6.444538169548713,
+        "median": 4.0,
+        "n": 9484,
+        "positions": {
+          "QB": 2835,
+          "RB": 6649
+        },
+        "positive": 8082,
+        "unique_games": 1180,
+        "zero_fraction": 0.1478279207085618,
+        "zeros": 1402
+      },
+      "slot": "W08-rush_att-H-MULTI-squared_error_mean"
+    }
+  ],
+  "version": "v2-hgb-rush-att-diagnosis-role-label-correction-v2",
+  "week8_original_query_population": "112RBqueries perhistory, unchanged"
+}

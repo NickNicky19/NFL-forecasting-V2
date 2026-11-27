@@ -1,0 +1,52 @@
+{
+  "id": "B-NEXTGEN-R3-DEPTH-RANK-WIRING-REVIEW-v1",
+  "reviewed_UTC": "2026-11-12T18:03:49.409858+00:00",
+  "reviewer": "nextgen_novelty_b",
+  "owner_execution": "root B",
+  "scope": "Static execution-path review, separate raw source lookup calculation, boundary tests; not fresh-fit reproduction or saved-model inference/grading.",
+  "bindings": [
+    {
+      "path": "tools/run_qb_depth_role.py",
+      "sha256": "d5e0a6e2a08abb1a7851a92ad923ccf0e6cb35d7d8664cd1670e3b488fbeeb95",
+      "bytes": 12929
+    },
+    {
+      "path": "reports/next-generation-information-research-01/B/depth-role-wave-v2/FROZEN_PROTOCOL.json",
+      "sha256": "35f639daab45579077f57f89cfc5021764b7f73ddec6b637499e99b1b9623005",
+      "bytes": 9398
+    },
+    {
+      "path": "nfl_v2/qb_depth_role.py",
+      "sha256": "4a2d8b36426fd0cc85693546013d54672b0e78cc7ef449f1a76a8cd9c2352896",
+      "bytes": 6554
+    },
+    {
+      "path": "tests/test_qb_depth_role.py",
+      "sha256": "e9b18d05cc8d0e3ff2a6bc6854193c1eba1331ccb91a33f5998177e65ff62d67",
+      "bytes": 4817
+    }
+  ],
+  "checked": [
+    "S0 exactR3 storedpredictionsreused",
+    "S1 support/age/missing fields; S2 sameplusrank/delta",
+    "ExistingR3featureorderpreserved;numericNaNrestorationbeforeunchangedlearner",
+    "Preprocessing/fitting/prior receives only labelavailable<weeklyorigincutoff",
+    "Historicalrownewrolefeatures are asofitsownpastkickoff",
+    "Sameplayer/sameteam priorrole only after original7dayownhistoryadmission",
+    "No rank1 queryfilter or expectedstarter label",
+    "No target workload/outcome in feature construction",
+    "Current-vintage source-loaded reconstruction label retained",
+    "Standalone completionlaw notsilently cappedagainst unrelated attempts",
+    "No othernewinjury/receiver/OL/defense/timingblock"
+  ],
+  "limits": [
+    "No original historical HTTP-byte possession authenticated",
+    "No original pregame universe authenticated by retrospectivestatmembership",
+    "No model-fit repetition or private offerrow inspection",
+    "Runnerinlineadmissionassert rank only; separate raw independent review checksclocks/presence too"
+  ],
+  "judgment": "PASS_IN_CHECKED_SCOPE",
+  "models_fitted_by_reviewer": 0,
+  "model_inference_by_reviewer": 0,
+  "new_scoring_by_reviewer": 0
+}

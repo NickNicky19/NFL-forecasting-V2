@@ -1,0 +1,8 @@
+{
+  "at_utc": "2026-11-10T05:00:31.851503+00:00",
+  "state": "CHECKER_FAILURE_NOT_MODEL_DEFECT",
+  "checker_sha256": "f33cdbc230c75dca8bbf2e341092172731d582f434532e47f9ec12dcbaf181a1",
+  "exception": "TypeError: unsupported operand type(s) for -: float and NoneType in numpy allclose",
+  "cause": "Saved public JSON correctly represents non-finite missing feature cells as null. New reverse-execution checker needed explicit float-array conversion (null=>NaN) for comparison. Original independent typed inference already performed this conversion.",
+  "next": "Version3 checker normalizes saved null to np.nan through dtype=float; no model, feature, output or score change."
+}

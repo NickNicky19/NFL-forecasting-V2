@@ -1,0 +1,29 @@
+{
+  "previous": {
+    "path": "reports/audit-remediation-20261105-v1/B/SOFTWARE_AND_RESOURCE_CHECKPOINT_V1.json",
+    "sha256": "6869e6ce1b35a4ae45c8beb63512cac0d82cd86a2a0f8af56d308ee77e9b7f87"
+  },
+  "source_scope": "The original checkpoint JSON parsing pass preceded the new execution event.476unit tests passed locally and first CI; initial remote checkpoint guard then failed only on missing run_id, retained separately. Corrected local checkpoint rerun PASS; final hosted status appended separately.",
+  "synthetic_fixture_resources": {
+    "wall_seconds": 0.1516568869992625,
+    "cpu_seconds": 0.22881861100000034,
+    "peak_RSS_bytes": 132083712
+  },
+  "matched_comparison_resources": {
+    "wall_seconds": 1.8195484289990418,
+    "cpu_seconds": 1.8175367310000001,
+    "peak_RSS_bytes": 89288704
+  },
+  "native_score_resources": {
+    "wall_seconds": 2.0838473530002375,
+    "cpu_seconds": 2.0845502639999998,
+    "peak_RSS_bytes": 50688000
+  },
+  "overlay_resource_limit": "Per-chunk240seconds CPU/wall and1GiBRSS guard passed; final measurements lost at the preserved receipt serialization failure, not fabricated.",
+  "NFL_fits": 0,
+  "synthetic_estimator_fits": 2,
+  "new_inference": 0,
+  "new_NFL_grades": 0,
+  "new_test_weeks": 0,
+  "restricted_new_model_or_player_row_derivatives": 0
+}

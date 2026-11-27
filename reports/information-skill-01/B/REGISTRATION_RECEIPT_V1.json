@@ -1,0 +1,112 @@
+{
+  "state": "APPENDED_SOURCE_BOUND_SKILL_SCORES_AND_PAIRS",
+  "source_artifact": "reports/information-skill-01/B/evaluation-v2/SCORES.json",
+  "source_sha256": "8f0d1f5daf9c7385b6743a115f3025ec997d4ff352bb4f65a31479896665dbaf",
+  "paired_source": "reports/information-skill-01/B/evaluation-v2/PAIRED_COMPARISONS_V1.json.gz",
+  "paired_source_sha256": "e76562c9f3c00b30c4656204b84e3210db124139c26048f038b5213238f73751",
+  "new_source_score_views": 1390,
+  "new_pairs": 2052,
+  "prior_result_manifest": {
+    "path": "reports/targeted-accuracy-w1w9-01/B/results-index-v1/INDEX_MANIFEST.json",
+    "sha256": "35cde66d5306bcbab0e3aefd3d3c9889bae6b4747a60aed7f02c51821b44bd44"
+  },
+  "prior_analysis_manifest": {
+    "path": "reports/targeted-accuracy-w1w9-01/B/paired-analysis-index-v1/ANALYSIS_MANIFEST.json",
+    "sha256": "24b78d45ff234d42ede4b9da2fa3db9dcdff8055a8701572611fb707bcdd917b"
+  },
+  "old_result_records_preserved": 617723,
+  "old_result_artifacts_preserved": 234,
+  "old_pairs_preserved": 23423,
+  "old_analysis_artifacts_preserved": 23,
+  "preservation_proofs": {
+    "prior_result_shards_exact_prefix": true,
+    "prior_result_CSV_parts_exact_prefix": true,
+    "prior_result_registry_exact_prefix": true,
+    "prior_paired_records_exact_prefix": true,
+    "prior_analysis_registry_exact_prefix": true
+  },
+  "predecessor_archives": [
+    {
+      "source": "registries/CURRENT_RESULTS_INDEX.json",
+      "archive": "reports/information-skill-01/B/registration-predecessor-v1/CURRENT_RESULTS_INDEX_PREDECESSOR.json",
+      "sha256": "34ed4d773131e03ae12356d4cb41b8d800f1dbbd61dcad76b8270e06f2b6c820",
+      "bytes": 31097
+    },
+    {
+      "source": "registries/RESULT_ARTIFACTS.json",
+      "archive": "reports/information-skill-01/B/registration-predecessor-v1/RESULT_ARTIFACTS_PREDECESSOR.json",
+      "sha256": "ab1d8b463db4b11aef7ee91b3ff8906a1c6750333f25c1da0939b6cb9d4f2f13",
+      "bytes": 111031
+    },
+    {
+      "source": "registries/ANALYSIS_ARTIFACTS.json",
+      "archive": "reports/information-skill-01/B/registration-predecessor-v1/ANALYSIS_ARTIFACTS_PREDECESSOR.json",
+      "sha256": "5d7fed059faffb1fa3fee46c390432ca6b86ecb9647f64128fcdc88ac12e5620",
+      "bytes": 7910
+    },
+    {
+      "source": "reports/abc-championship/EXPORT_INDEX.json",
+      "archive": "reports/information-skill-01/B/registration-predecessor-v1/EXPORT_INDEX_PREDECESSOR.json",
+      "sha256": "4ef3789596cf3f01dd9ff19156011a2b2cc5e61e225aea34dbe435a1958e6eed",
+      "bytes": 2244249
+    }
+  ],
+  "current_result_manifest": "reports/information-skill-01/B/results-index-v1/INDEX_MANIFEST.json",
+  "current_analysis_manifest": {
+    "path": "reports/information-skill-01/B/paired-analysis-index-v1/ANALYSIS_MANIFEST.json",
+    "sha256": "ce5e53225a34ed355a04f26d9625a560c912c17dbbd5f37abf1854f473717442"
+  },
+  "export_index_unchanged": true,
+  "export_index_sha256": "4ef3789596cf3f01dd9ff19156011a2b2cc5e61e225aea34dbe435a1958e6eed",
+  "verification_receipts": [
+    {
+      "path": "reports/information-skill-01/B/independent/PREFIT_NFL_MUTATION_V1.json",
+      "sha256": "b4111ec75341b1882b447164a53b4657f85c79f83b4f2ede85974580c5fdd8f4"
+    },
+    {
+      "path": "reports/information-skill-01/B/independent/AGGREGATE_AND_LAW_SCOPE_V1.json",
+      "sha256": "b0ac5334eb72ac0856b3fc9d2a40b1fa8889d07014d8b849243c1a007c880db0"
+    }
+  ],
+  "index": {
+    "status": "PASS",
+    "records": 619113,
+    "new_records": 1390,
+    "reused_records": 617723,
+    "shards": 466
+  },
+  "verification_scope": "Records valid scores of frozen forecasts and canonical projection; no assertion that every fit was independently reproduced, admitted or promoted.",
+  "disclosed_failed_verifications": [
+    {
+      "path": "reports/information-skill-01/B/independent/FIT_REPRODUCTION_V1.json",
+      "sha256": "b4fbe85fe4579e3452e7b62318ab3bab735219667adc7f316eef0b508c9e0ddd",
+      "original_state": "FAILED_PRESERVED_NO_AUTOMATIC_RETRY",
+      "all_passed": false,
+      "interpretation": "Original failed/limited verification preserved; passing aggregate/law verification does not establish all fitted-model reproduction or promotion."
+    }
+  ],
+  "independent_all_fits_reproduced": false,
+  "output_preserving_representation": {
+    "path": "reports/information-skill-01/B/evaluation-v2/LOSSLESS_REPRESENTATION_RECEIPT_V1.json",
+    "sha256": "296ddb7e0c779385c1410d8a1dbd2127c0d28aab1760b5fd23a90f752c7b48c3",
+    "original_capsule": "reports/information-skill-01/B/retention/failed-evaluation-v1/ORIGINAL_FAILED_OUTPUTS.tar.gz",
+    "original_capsule_sha256": "7612de4ad86ae0a55fa61fcd31054dc94ef21682a89411612087fa0886806ad2",
+    "decoded_files_verified": 11,
+    "unchanged_SCORES_sha256": "8f0d1f5daf9c7385b6743a115f3025ec997d4ff352bb4f65a31479896665dbaf",
+    "measured_final_version_bytes": 6088504,
+    "unchanged_cap": 8388608,
+    "changed_scientific_rows": 0,
+    "new_grading_runs": 0
+  },
+  "source_scoring_receipt": {
+    "path": "reports/information-skill-01/B/evaluation-v2/RUN_RECEIPT_V1.json",
+    "sha256": "84d9b3b5e8653b1d2eb192ede1fb5bc32909a13c88327092d6233b11dc7dd48e",
+    "new_fits_by_that_scoring": 0
+  },
+  "new_fits_by_registration": 0,
+  "new_scoring_by_registration": 0,
+  "new_forecasts_by_registration": 0,
+  "new_NFL_observations_by_registration": 0,
+  "C_admission": false,
+  "website_activation": false
+}

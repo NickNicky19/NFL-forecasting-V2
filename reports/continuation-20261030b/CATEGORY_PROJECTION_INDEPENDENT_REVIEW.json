@@ -1,0 +1,173 @@
+{
+  "status": "PASS_INDEPENDENT_FROZEN_AGGREGATE_FAMILY_MINIMA",
+  "candidate_views": 436,
+  "family_representatives": 114,
+  "representative_identity_metric_rank_checks": 1026,
+  "source_hashes": {
+    "reports/continuation-20261029/history-diagnostic-v1/HISTORY_COMPARISON_2026_W1_W7.csv": "53f5888ed06fdaf38961e9ca14fc40ecbf151096a38521d6e555308033ab6448",
+    "reports/continuation-20261029/hgb-history-v1/SCORES.json": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+    "reports/continuation-20261030/distribution-wave-v2/SCORES.json": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+    "reports/continuation-20261030/count-ablation-wave-v1/SCORES.json": "087b8cb7a8fc40b6ad48bffdb6825c5f9829a72742bf2157f50ef529b0692715",
+    "reports/continuation-20261030/chart-wave-v1/SCORES.json": "b140ffce88fc208deffc009936337de882ab303bebc3a3815c826795e3ae3449",
+    "reports/continuation-20261030/chart-wave-v1/EMPIRICAL_SCORES.json": "558b853176c2ab2b196f5a142a3afdfa226def11d2613384a673f0d72bce9be6",
+    "reports/continuation-20261030b/ordered-information-ablation-v1/SCORES.json": "00ef54be6faf0a3a3af9d2af3aa9d0413560d475c9ee8a8832aa72aae4e867f7"
+  },
+  "display_minimum_changes": [
+    {
+      "target": "anytime_td",
+      "previous_error": 0.14314429954020047,
+      "current_error": 0.14314429954020047,
+      "delta": 0.0
+    },
+    {
+      "target": "nick-chart-ppr-v1",
+      "previous_error": 4.499957609156422,
+      "current_error": 4.496515472657906,
+      "delta": -0.003442136498516213
+    },
+    {
+      "target": "pass_att",
+      "previous_error": 8.00413223140496,
+      "current_error": 8.00413223140496,
+      "delta": 0.0
+    },
+    {
+      "target": "pass_cmp",
+      "previous_error": 5.4191719305456445,
+      "current_error": 5.4191719305456445,
+      "delta": 0.0
+    },
+    {
+      "target": "pass_int",
+      "previous_error": 0.5909090909090909,
+      "current_error": 0.5661157024793388,
+      "delta": -0.024793388429752095
+    },
+    {
+      "target": "pass_td",
+      "previous_error": 0.8223140495867769,
+      "current_error": 0.8223140495867769,
+      "delta": 0.0
+    },
+    {
+      "target": "pass_yd",
+      "previous_error": 66.11731310079224,
+      "current_error": 66.11731310079224,
+      "delta": 0.0
+    },
+    {
+      "target": "rec",
+      "previous_error": 1.253541076487252,
+      "current_error": 1.2455146364494807,
+      "delta": -0.00802644003777142
+    },
+    {
+      "target": "rec_yd",
+      "previous_error": 16.19877242681775,
+      "current_error": 16.19877242681775,
+      "delta": 0.0
+    },
+    {
+      "target": "rush_att",
+      "previous_error": 3.059241706161137,
+      "current_error": 3.059241706161137,
+      "delta": 0.0
+    },
+    {
+      "target": "rush_rec_yd",
+      "previous_error": 20.125661066525677,
+      "current_error": 20.125661066525677,
+      "delta": 0.0
+    },
+    {
+      "target": "rush_yd",
+      "previous_error": 16.75,
+      "current_error": 16.75,
+      "delta": 0.0
+    }
+  ],
+  "c02_best_against_prior_strongest": [
+    {
+      "target": "anytime_td",
+      "candidate_best_error": 0.14390455611298283,
+      "prior_best_error": 0.14314429954020047,
+      "delta": 0.000760256572782364
+    },
+    {
+      "target": "nick-chart-ppr-v1",
+      "candidate_best_error": 4.496515472657906,
+      "prior_best_error": 4.499957609156422,
+      "delta": -0.003442136498516213
+    },
+    {
+      "target": "pass_att",
+      "candidate_best_error": 8.107438016528926,
+      "prior_best_error": 8.00413223140496,
+      "delta": 0.10330578512396649
+    },
+    {
+      "target": "pass_cmp",
+      "candidate_best_error": 5.566115702479339,
+      "prior_best_error": 5.4191719305456445,
+      "delta": 0.14694377193369412
+    },
+    {
+      "target": "pass_int",
+      "candidate_best_error": 0.5661157024793388,
+      "prior_best_error": 0.5909090909090909,
+      "delta": -0.024793388429752095
+    },
+    {
+      "target": "pass_td",
+      "candidate_best_error": 0.8223140495867769,
+      "prior_best_error": 0.8223140495867769,
+      "delta": 0.0
+    },
+    {
+      "target": "pass_yd",
+      "candidate_best_error": 67.66528925619835,
+      "prior_best_error": 66.11731310079224,
+      "delta": 1.5479761554061042
+    },
+    {
+      "target": "rec",
+      "candidate_best_error": 1.2455146364494807,
+      "prior_best_error": 1.253541076487252,
+      "delta": -0.00802644003777142
+    },
+    {
+      "target": "rec_yd",
+      "candidate_best_error": 16.215769593956562,
+      "prior_best_error": 16.19877242681775,
+      "delta": 0.016997167138811164
+    },
+    {
+      "target": "rush_att",
+      "candidate_best_error": 3.109004739336493,
+      "prior_best_error": 3.059241706161137,
+      "delta": 0.0497630331753558
+    },
+    {
+      "target": "rush_rec_yd",
+      "candidate_best_error": 20.25873465533522,
+      "prior_best_error": 20.125661066525677,
+      "delta": 0.13307358880954467
+    },
+    {
+      "target": "rush_yd",
+      "candidate_best_error": 16.811611374407583,
+      "prior_best_error": 16.75,
+      "delta": 0.06161137440758324
+    }
+  ],
+  "c02_outcome_counts": {
+    "loss": 8,
+    "win": 3,
+    "tie": 1
+  },
+  "table_sha256": "d1a912963656a819ddf0d366c673f26823c83fc36cfded5ce1cb73815e294ed3",
+  "interpretation": "Exposed minima by scientifically shared family/product/history, not a pregame selector. Native-unit categories and law/point/mean products remain separate.",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "week8_outcomes_read": 0
+}

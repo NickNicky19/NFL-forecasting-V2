@@ -1,0 +1,98 @@
+{
+  "id": "B-OWNER-CURRENT-ELIGIBILITY-AND-FEED-STATUS-v1",
+  "asof_UTC": "2026-11-10T05:11:13.620158+00:00",
+  "asof_America_Chicago": "2026-11-09T23:11:13.620158-06:00",
+  "owner_repository": "NickNicky19/nicks-expert-nfl-picks",
+  "owner_actual_main": "720903184c54e4fe73c9213da5938d06970a5f00",
+  "owner_git_persistence_clock": "2026-11-09T23:22:59Z",
+  "existing_witness": "OWNER_CAPTURE_SERVED_WITNESS_V1.json",
+  "existing_witness_sha256": "28dc02cc91f7257316fb0c5ebf670db53c263ac68c94c2b6c6ea817786df24e3",
+  "baseline_capture": {
+    "reported_generation_UTC": "2026-11-09T23:22:50Z",
+    "captured_UTC": "2026-11-09T23:22:52Z",
+    "reported_generation_America_Chicago": "2026-11-09T17:22:50-06:00",
+    "pointer_publication_UTC": "2026-11-09T23:22:58.312915+00:00",
+    "selection_prepared_UTC": "2026-11-09T23:22:58.294832+00:00",
+    "forecast_rows": 120,
+    "games": 1,
+    "generation_age_hours_at_read": 5.806561155000001,
+    "source_timestamp_verified_rows": 0,
+    "source_update_receipt_quote_inference_decision_per_row_clocks": "NOT_RETAINED_IN_CAPTURE_ROWS;generation/capture/selection/publication are different clocks",
+    "model": "sleeper-matchup-classic-presence-strict-v2",
+    "capture_code_commit": "b15c5867c39c4b40b10ae08995dff530f8374efd",
+    "capture_valid_as_original_pregame_evidence": "Existing saved packet; one game future at original capture. No new capture now."
+  },
+  "visible_board_at_read": {
+    "season": 2026,
+    "week": 9,
+    "games": 15,
+    "future_kickoffs": 0,
+    "started_by_kickoff_clock": 15,
+    "latest_kickoff_UTC": "2026-11-10T01:15:00+00:00",
+    "persisted_completed_count": 14,
+    "persisted_not_completed_count": 1,
+    "persisted_states": {
+      "post": 14,
+      "pre": 1
+    },
+    "fresh_live_finality": "NOT_CHECKED;persisted pregame/final flags are from the old generation, not current status",
+    "next_future_kickoff_UTC": null,
+    "next_T90_UTC": null,
+    "eligible_future_deadline_reason": "No future kickoff exists in the currently served W9 board. Next-week schedule/cutoff must be qualified by the existing owner."
+  },
+  "consumer_and_overlay": {
+    "Git_served_pairs_equal": true,
+    "verified_pairs": 6,
+    "state": "DISABLED_USE_R0",
+    "active_research_rows": 0,
+    "verified_admitted_rows_in_current_served_overlay": 0,
+    "global_owner_admission_ledger": "NOT_INFERRED_FROM_ZERO_OVERLAY",
+    "fallback_counts": {
+      "publication_not_approved_R0": 143,
+      "started_R0_frozen_no_new_selection": 1987
+    },
+    "top_picks_total": 24,
+    "top_picks_sides": {
+      "over": 12,
+      "under": 12
+    },
+    "current_capture_matches": 2,
+    "earlier_frozen_proofs": 22,
+    "browser_render_or_live_user_interaction": "NOT_EXECUTED;served payload bytes only"
+  },
+  "registered_public_feed": {
+    "repository": "NickNicky19/NFL-forecasting",
+    "ref": "lab-state",
+    "actual_ref_commit": "275aa84b27c4239d3b2dfea07755734d9db0ac7c",
+    "actual_ref_commit_UTC": "2026-11-03T00:18:46Z",
+    "tree_entries": 776,
+    "tree_truncated": false,
+    "available_week_directories": [
+      "2026-W07",
+      "2026-W08"
+    ],
+    "W09_directory": "ABSENT_IN_PINNED_UNTRUNCATED_TREE;not proof that a model is missing",
+    "W10_directory": "ABSENT_IN_PINNED_UNTRUNCATED_TREE",
+    "latest_public_feed_path": "state/public/weekly-adaptive-v1/2026-W08/20261102T222232.942832Z--cc9fa4b5364384845d3423ed0896323c54256f6c2b27404d8f8c6f3804444eb7.json",
+    "latest_feed_sha256": "cc9fa4b5364384845d3423ed0896323c54256f6c2b27404d8f8c6f3804444eb7",
+    "latest_feed_bytes": 138651,
+    "created_at": "2026-11-02T22:22:32.942832+00:00",
+    "expires_at": "2026-11-03T01:15:00+00:00",
+    "expired_at_read": true,
+    "rows_in_old_feed": 143,
+    "operationally_current_rows_in_this_expired_feed": 0,
+    "publication_source_sha_as_reported": "dad58d459951bdb77ef852b8ca88860ffb0bce60",
+    "publication_run_id_as_reported": "41533789085",
+    "publication_API_runtime_reverification": "NOT_REPEATED;expired feed cannot qualify current output regardless",
+    "status": "LATEST_DISCOVERABLE_REGISTERED_FEED_EXPIRED;NO_CURRENT_W9_OR_W10_FEED_OBSERVED"
+  },
+  "owner_action": {
+    "owner": "Existing A registered producer and original-site publisher, each within its established role",
+    "minimum_dependency": "Qualify the next current board/query universe and source cutoff; restore/execute the approved complete producer/corrector; publish an unexpired same-week feed with real source/issue/persistence clocks; admit through the existing policy and verify actual served use. Preserve expired W8/old W9 packets and all safety gates.",
+    "B_action": "Prepared historical profile/mechanism exports only; no qualified B current-query universe, no new pregame issuance, dispatch, external message or production mutation."
+  },
+  "B_new_capture": 0,
+  "B_dispatches": 0,
+  "B_production_writes": 0,
+  "restricted_rows_exported": 0
+}

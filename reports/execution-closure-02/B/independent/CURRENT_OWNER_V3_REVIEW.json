@@ -1,0 +1,86 @@
+{
+  "state": "PASS_INDEPENDENT_RETAINED_OWNER_CAPTURE_AND_SERVED_BYTES",
+  "source_witness_sha256": "da8434ada939594c05e88aca63667c40340b3b6514c2461d2c4f238ace8d2163",
+  "snapshot_map_sha256": "bc7312a7d0f558017104e6f7b90b21a9bbf38c5b5cf5d07bdcdac67acdb2371c",
+  "production_commit": "fe369c7462e4e4f290727b2d03b696d28ef5454b",
+  "served_pairs": [
+    {
+      "path": "output/data/week.json",
+      "bytes": 2361659,
+      "sha256": "e25d4a8c5dc0d23adc8d2801f370150121acfbf04178926e229c637236fa64fb",
+      "git_served_equal": true
+    },
+    {
+      "path": "output/data/weekly-selected-rankings.json",
+      "bytes": 474,
+      "sha256": "baf857f399bbd804ce64217d9fa11a6a5273b3e5706b60adf17eca0f69a2fdca",
+      "git_served_equal": true
+    },
+    {
+      "path": "output/data/weekly-selected-rankings/b74a517ce7b5a0a9fda36b65cf5a191fb18cb56299eef7c0d6e590a8786be91a.json",
+      "bytes": 11849,
+      "sha256": "b74a517ce7b5a0a9fda36b65cf5a191fb18cb56299eef7c0d6e590a8786be91a",
+      "git_served_equal": true
+    },
+    {
+      "path": "output/data/weekly-adaptive-overlay.json",
+      "bytes": 333,
+      "sha256": "da22161dd8eadf578601fd3b7f453dcea1992b0c6a0b3ecdf75920a9775498ac",
+      "git_served_equal": true
+    },
+    {
+      "path": "output/data/weekly-adaptive/2ea7e91f77c7cc04c8de28a46da4eacd730bc067853c1e9c80695996f3df74a9.json",
+      "bytes": 790,
+      "sha256": "2ea7e91f77c7cc04c8de28a46da4eacd730bc067853c1e9c80695996f3df74a9",
+      "git_served_equal": true
+    }
+  ],
+  "capture_file_sha256": "28d4c157bc9bfa20b7cef4e496df170bc0ec8330672e00c23a4a481181bb2509",
+  "capture_payload_sha256": "af77d897bf580dbf0c7df5c5089ed41b2991db0668c316ae4794b18f52179ffc",
+  "forecast_rows": 2568,
+  "forecast_games": 15,
+  "point_outputs_present": 2568,
+  "categories": {
+    "anytime_td": 349,
+    "fpts": 489,
+    "rec": 441,
+    "rec_yd": 441,
+    "rush_att": 121,
+    "rush_rec_yd": 318,
+    "rush_yd": 169,
+    "pass_att": 48,
+    "pass_cmp": 48,
+    "pass_int": 48,
+    "pass_td": 48,
+    "pass_yd": 48
+  },
+  "top_picks": {
+    "over": 12,
+    "under": 12,
+    "total": 24,
+    "games": 12,
+    "source": "CURRENT_BASELINE",
+    "product": "reference_point",
+    "capture_membership_matches": true
+  },
+  "first_kickoff_utc": "2026-11-06T01:15:00+00:00",
+  "first_t90_utc": "2026-11-05T23:45:00+00:00",
+  "clock_order_and_pre_t90": true,
+  "source_publication_verified_rows": 0,
+  "overlay_state": "DISABLED_USE_R0",
+  "selected_research_rows": 0,
+  "retained_prior_failure_sha256": "4abaa7a8af46aa37c36303ddfc6557feedfc184a4ebb5dfdee1da50bc85b6401",
+  "retained_interim_readback_sha256": "d10ccd213d0020bff2ce5d1645c6b82b20811f13278c3bec014f7f5217603037",
+  "owner_action_scope": "Run42129928866/job127603655038 success is parent witness evidence; independent audit verified retained capture/output bytes, not an independently retained Actions API/log snapshot.",
+  "limits": [
+    "Served bytes equality only, no browser render claim",
+    "No authentication of football source or offer publication clocks",
+    "No B capture, new model admission or scientific/Top Picks qualification",
+    "2568 records include legacy fpts, not proven chart-PPR parity",
+    "Old failed42108386576 and interimV2 are preserved historical states"
+  ],
+  "network_calls": 0,
+  "model_calls": 0,
+  "new_scoring": 0,
+  "production_writes": 0
+}

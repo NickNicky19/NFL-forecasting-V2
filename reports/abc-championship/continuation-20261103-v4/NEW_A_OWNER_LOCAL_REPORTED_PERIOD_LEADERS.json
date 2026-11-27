@@ -1,0 +1,816 @@
+[
+  {
+    "period_id": "E1_PARTIAL_2026_W1_5",
+    "category": "pass_att",
+    "procedure_id": "A::opportunity-four-ou-v1::P2_CONDITIONAL_M",
+    "week_view": "ALL",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "actual_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "history": "Retained F model-year2024 trained through2023; corrections/calibrations earlier-only as original saved procedure; no new refit or vintage upgrade",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "source_panel": "A original fixed representative-book68/69/79 priority; separate from C Pinnacle primary",
+    "admission": "OWNER_LOCAL_COMMON_FUNCTION_SCORED;C_ADMISSION_NOT_OBSERVED",
+    "OVER": {
+      "selected": 14,
+      "wins": 12,
+      "losses": 2,
+      "decided": 14,
+      "rate": 0.8571428571428571
+    },
+    "UNDER": {
+      "selected": 20,
+      "wins": 9,
+      "losses": 11,
+      "decided": 20,
+      "rate": 0.45
+    },
+    "COMBINED": {
+      "selected": 34,
+      "wins": 21,
+      "losses": 13,
+      "decided": 34,
+      "rate": 0.6176470588235294
+    },
+    "eligible": 94,
+    "unavailable": 48,
+    "abstentions": 12,
+    "states": {
+      "UNAVAILABLE_FORECAST": 48,
+      "ABSTAIN": 12,
+      "WIN": 21,
+      "LOSS": 13
+    },
+    "games": 51,
+    "player_games": 87,
+    "weeks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "uncertainty": {
+      "kind": "WILSON_INDEPENDENT_BERNOULLI_DIAGNOSTIC_ONLY",
+      "low": 0.450410173444307,
+      "high": 0.7609981667549109,
+      "dependence_aware": false,
+      "week_clusters": 4
+    },
+    "coverage": 0.3617021276595745,
+    "qualification": "A_OWNER_LOCAL_RAW_OWN_POOL_MAXIMUM;AGGREGATE_ARITHMETIC_REPRODUCED;PRIVATE_FORECAST_SOURCE_NOT_REPLAYED_BY_B;NOT_C_ADMITTED_OR_FULL_COMMON_CHAMPION"
+  },
+  {
+    "period_id": "E1_PARTIAL_2026_W1_5",
+    "category": "rec",
+    "procedure_id": "A::opportunity-four-ou-v1::P1_M",
+    "week_view": "ALL",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "actual_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "history": "Retained F model-year2024 trained through2023; corrections/calibrations earlier-only as original saved procedure; no new refit or vintage upgrade",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "source_panel": "A original fixed representative-book68/69/79 priority; separate from C Pinnacle primary",
+    "admission": "OWNER_LOCAL_COMMON_FUNCTION_SCORED;C_ADMISSION_NOT_OBSERVED",
+    "OVER": {
+      "selected": 30,
+      "wins": 17,
+      "losses": 11,
+      "decided": 28,
+      "rate": 0.6071428571428571
+    },
+    "UNDER": {
+      "selected": 52,
+      "wins": 30,
+      "losses": 18,
+      "decided": 48,
+      "rate": 0.625
+    },
+    "COMBINED": {
+      "selected": 82,
+      "wins": 47,
+      "losses": 29,
+      "decided": 76,
+      "rate": 0.618421052631579
+    },
+    "eligible": 669,
+    "unavailable": 162,
+    "abstentions": 425,
+    "states": {
+      "WIN": 47,
+      "UNAVAILABLE_FORECAST": 162,
+      "ABSTAIN": 425,
+      "LOSS": 29,
+      "UNKNOWN_PARTICIPATION": 6
+    },
+    "games": 53,
+    "player_games": 640,
+    "weeks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.5492957746478874,
+      "high": 0.7272727272727273,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 0.12257100149476831,
+    "qualification": "A_OWNER_LOCAL_RAW_OWN_POOL_MAXIMUM;AGGREGATE_ARITHMETIC_REPRODUCED;PRIVATE_FORECAST_SOURCE_NOT_REPLAYED_BY_B;NOT_C_ADMITTED_OR_FULL_COMMON_CHAMPION"
+  },
+  {
+    "period_id": "E1_PARTIAL_2026_W1_5",
+    "category": "rush_att",
+    "procedure_id": "A::opportunity-four-ou-v1::P2_CONDITIONAL_FS",
+    "week_view": "ALL",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "actual_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "history": "Retained F model-year2024 trained through2023; corrections/calibrations earlier-only as original saved procedure; no new refit or vintage upgrade",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "source_panel": "A original fixed representative-book68/69/79 priority; separate from C Pinnacle primary",
+    "admission": "OWNER_LOCAL_COMMON_FUNCTION_SCORED;C_ADMISSION_NOT_OBSERVED",
+    "OVER": {
+      "selected": 32,
+      "wins": 19,
+      "losses": 12,
+      "decided": 31,
+      "rate": 0.6129032258064516
+    },
+    "UNDER": {
+      "selected": 38,
+      "wins": 19,
+      "losses": 15,
+      "decided": 34,
+      "rate": 0.5588235294117647
+    },
+    "COMBINED": {
+      "selected": 70,
+      "wins": 38,
+      "losses": 27,
+      "decided": 65,
+      "rate": 0.5846153846153846
+    },
+    "eligible": 180,
+    "unavailable": 0,
+    "abstentions": 110,
+    "states": {
+      "ABSTAIN": 110,
+      "LOSS": 27,
+      "WIN": 38,
+      "UNKNOWN_PARTICIPATION": 5
+    },
+    "games": 53,
+    "player_games": 170,
+    "weeks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.30303030303030304,
+      "high": 0.7088607594936709,
+      "dependence_aware": true,
+      "week_clusters": 5,
+      "small_cluster_caution": true
+    },
+    "coverage": 0.3888888888888889,
+    "qualification": "A_OWNER_LOCAL_RAW_OWN_POOL_MAXIMUM;AGGREGATE_ARITHMETIC_REPRODUCED;PRIVATE_FORECAST_SOURCE_NOT_REPLAYED_BY_B;NOT_C_ADMITTED_OR_FULL_COMMON_CHAMPION"
+  },
+  {
+    "period_id": "E3_2024_W1_8",
+    "category": "pass_att",
+    "procedure_id": "A::opportunity-four-ou-v1::ALWAYS_UNDER",
+    "week_view": "ALL",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "actual_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "history": "Retained F model-year2024 trained through2023; corrections/calibrations earlier-only as original saved procedure; no new refit or vintage upgrade",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "source_panel": "A original fixed representative-book68/69/79 priority; separate from C Pinnacle primary",
+    "admission": "OWNER_LOCAL_COMMON_FUNCTION_SCORED;C_ADMISSION_NOT_OBSERVED",
+    "OVER": {
+      "selected": 0,
+      "wins": null,
+      "losses": null,
+      "decided": 0,
+      "rate": null
+    },
+    "UNDER": {
+      "selected": 225,
+      "wins": 126,
+      "losses": 96,
+      "decided": 222,
+      "rate": 0.5675675675675675
+    },
+    "COMBINED": {
+      "selected": 225,
+      "wins": 126,
+      "losses": 96,
+      "decided": 222,
+      "rate": 0.5675675675675675
+    },
+    "eligible": 225,
+    "unavailable": 0,
+    "abstentions": 0,
+    "states": {
+      "WIN": 126,
+      "LOSS": 96,
+      "UNKNOWN_PARTICIPATION": 3
+    },
+    "games": 117,
+    "player_games": 215,
+    "weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.47368421052631576,
+      "high": 0.6621651256519677,
+      "dependence_aware": true,
+      "week_clusters": 8,
+      "small_cluster_caution": true
+    },
+    "coverage": 1.0,
+    "qualification": "A_OWNER_LOCAL_RAW_OWN_POOL_MAXIMUM;AGGREGATE_ARITHMETIC_REPRODUCED;PRIVATE_FORECAST_SOURCE_NOT_REPLAYED_BY_B;NOT_C_ADMITTED_OR_FULL_COMMON_CHAMPION"
+  },
+  {
+    "period_id": "E3_2024_W1_8",
+    "category": "rec",
+    "procedure_id": "A::opportunity-four-ou-v1::P1_M",
+    "week_view": "ALL",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "actual_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "history": "Retained F model-year2024 trained through2023; corrections/calibrations earlier-only as original saved procedure; no new refit or vintage upgrade",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "source_panel": "A original fixed representative-book68/69/79 priority; separate from C Pinnacle primary",
+    "admission": "OWNER_LOCAL_COMMON_FUNCTION_SCORED;C_ADMISSION_NOT_OBSERVED",
+    "OVER": {
+      "selected": 72,
+      "wins": 45,
+      "losses": 26,
+      "decided": 71,
+      "rate": 0.6338028169014085
+    },
+    "UNDER": {
+      "selected": 66,
+      "wins": 38,
+      "losses": 26,
+      "decided": 64,
+      "rate": 0.59375
+    },
+    "COMBINED": {
+      "selected": 138,
+      "wins": 83,
+      "losses": 52,
+      "decided": 135,
+      "rate": 0.6148148148148148
+    },
+    "eligible": 1366,
+    "unavailable": 53,
+    "abstentions": 1175,
+    "states": {
+      "LOSS": 52,
+      "ABSTAIN": 1175,
+      "UNAVAILABLE_FORECAST": 53,
+      "WIN": 83,
+      "UNKNOWN_PARTICIPATION": 3
+    },
+    "games": 117,
+    "player_games": 1361,
+    "weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.5362318840579711,
+      "high": 0.6985294117647058,
+      "dependence_aware": true,
+      "week_clusters": 8,
+      "small_cluster_caution": true
+    },
+    "coverage": 0.10102489019033675,
+    "qualification": "A_OWNER_LOCAL_RAW_OWN_POOL_MAXIMUM;AGGREGATE_ARITHMETIC_REPRODUCED;PRIVATE_FORECAST_SOURCE_NOT_REPLAYED_BY_B;NOT_C_ADMITTED_OR_FULL_COMMON_CHAMPION"
+  },
+  {
+    "period_id": "E3_2024_W1_8",
+    "category": "rush_att",
+    "procedure_id": "A::opportunity-four-ou-v1::P1_M",
+    "week_view": "ALL",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "actual_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "history": "Retained F model-year2024 trained through2023; corrections/calibrations earlier-only as original saved procedure; no new refit or vintage upgrade",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "source_panel": "A original fixed representative-book68/69/79 priority; separate from C Pinnacle primary",
+    "admission": "OWNER_LOCAL_COMMON_FUNCTION_SCORED;C_ADMISSION_NOT_OBSERVED",
+    "OVER": {
+      "selected": 47,
+      "wins": 31,
+      "losses": 15,
+      "decided": 46,
+      "rate": 0.6739130434782609
+    },
+    "UNDER": {
+      "selected": 65,
+      "wins": 39,
+      "losses": 24,
+      "decided": 63,
+      "rate": 0.6190476190476191
+    },
+    "COMBINED": {
+      "selected": 112,
+      "wins": 70,
+      "losses": 39,
+      "decided": 109,
+      "rate": 0.6422018348623854
+    },
+    "eligible": 350,
+    "unavailable": 21,
+    "abstentions": 217,
+    "states": {
+      "ABSTAIN": 217,
+      "LOSS": 39,
+      "WIN": 70,
+      "UNAVAILABLE_FORECAST": 21,
+      "UNKNOWN_PARTICIPATION": 3
+    },
+    "games": 117,
+    "player_games": 340,
+    "weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.5591252542865446,
+      "high": 0.7272727272727273,
+      "dependence_aware": true,
+      "week_clusters": 8,
+      "small_cluster_caution": true
+    },
+    "coverage": 0.32,
+    "qualification": "A_OWNER_LOCAL_RAW_OWN_POOL_MAXIMUM;AGGREGATE_ARITHMETIC_REPRODUCED;PRIVATE_FORECAST_SOURCE_NOT_REPLAYED_BY_B;NOT_C_ADMITTED_OR_FULL_COMMON_CHAMPION"
+  },
+  {
+    "period_id": "E4_2024_FULL_REG",
+    "category": "pass_att",
+    "procedure_id": "A::opportunity-four-ou-v1::P2_CONDITIONAL_M",
+    "week_view": "ALL",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "actual_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "history": "Retained F model-year2024 trained through2023; corrections/calibrations earlier-only as original saved procedure; no new refit or vintage upgrade",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "source_panel": "A original fixed representative-book68/69/79 priority; separate from C Pinnacle primary",
+    "admission": "OWNER_LOCAL_COMMON_FUNCTION_SCORED;C_ADMISSION_NOT_OBSERVED",
+    "OVER": {
+      "selected": 152,
+      "wins": 80,
+      "losses": 72,
+      "decided": 152,
+      "rate": 0.5263157894736842
+    },
+    "UNDER": {
+      "selected": 162,
+      "wins": 93,
+      "losses": 68,
+      "decided": 161,
+      "rate": 0.577639751552795
+    },
+    "COMBINED": {
+      "selected": 314,
+      "wins": 173,
+      "losses": 140,
+      "decided": 313,
+      "rate": 0.5527156549520766
+    },
+    "eligible": 495,
+    "unavailable": 67,
+    "abstentions": 114,
+    "states": {
+      "ABSTAIN": 114,
+      "LOSS": 140,
+      "WIN": 173,
+      "UNAVAILABLE_FORECAST": 67,
+      "UNKNOWN_PARTICIPATION": 1
+    },
+    "games": 259,
+    "player_games": 465,
+    "weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.5031676621160409,
+      "high": 0.6005837570219725,
+      "dependence_aware": true,
+      "week_clusters": 18,
+      "small_cluster_caution": true
+    },
+    "coverage": 0.6343434343434343,
+    "qualification": "A_OWNER_LOCAL_RAW_OWN_POOL_MAXIMUM;AGGREGATE_ARITHMETIC_REPRODUCED;PRIVATE_FORECAST_SOURCE_NOT_REPLAYED_BY_B;NOT_C_ADMITTED_OR_FULL_COMMON_CHAMPION"
+  },
+  {
+    "period_id": "E4_2024_FULL_REG",
+    "category": "rec",
+    "procedure_id": "A::opportunity-four-ou-v1::P1_M",
+    "week_view": "ALL",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "actual_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "history": "Retained F model-year2024 trained through2023; corrections/calibrations earlier-only as original saved procedure; no new refit or vintage upgrade",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "source_panel": "A original fixed representative-book68/69/79 priority; separate from C Pinnacle primary",
+    "admission": "OWNER_LOCAL_COMMON_FUNCTION_SCORED;C_ADMISSION_NOT_OBSERVED",
+    "OVER": {
+      "selected": 166,
+      "wins": 104,
+      "losses": 57,
+      "decided": 161,
+      "rate": 0.6459627329192547
+    },
+    "UNDER": {
+      "selected": 165,
+      "wins": 102,
+      "losses": 57,
+      "decided": 159,
+      "rate": 0.6415094339622641
+    },
+    "COMBINED": {
+      "selected": 331,
+      "wins": 206,
+      "losses": 114,
+      "decided": 320,
+      "rate": 0.64375
+    },
+    "eligible": 2998,
+    "unavailable": 127,
+    "abstentions": 2540,
+    "states": {
+      "LOSS": 114,
+      "ABSTAIN": 2540,
+      "UNAVAILABLE_FORECAST": 127,
+      "WIN": 206,
+      "UNKNOWN_PARTICIPATION": 11
+    },
+    "games": 266,
+    "player_games": 2985,
+    "weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.5876907216494845,
+      "high": 0.6983064740205612,
+      "dependence_aware": true,
+      "week_clusters": 18,
+      "small_cluster_caution": true
+    },
+    "coverage": 0.1104069379586391,
+    "qualification": "A_OWNER_LOCAL_RAW_OWN_POOL_MAXIMUM;AGGREGATE_ARITHMETIC_REPRODUCED;PRIVATE_FORECAST_SOURCE_NOT_REPLAYED_BY_B;NOT_C_ADMITTED_OR_FULL_COMMON_CHAMPION"
+  },
+  {
+    "period_id": "E4_2024_FULL_REG",
+    "category": "rush_att",
+    "procedure_id": "A::opportunity-four-ou-v1::P1_M",
+    "week_view": "ALL",
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "actual_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "history": "Retained F model-year2024 trained through2023; corrections/calibrations earlier-only as original saved procedure; no new refit or vintage upgrade",
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "source_panel": "A original fixed representative-book68/69/79 priority; separate from C Pinnacle primary",
+    "admission": "OWNER_LOCAL_COMMON_FUNCTION_SCORED;C_ADMISSION_NOT_OBSERVED",
+    "OVER": {
+      "selected": 112,
+      "wins": 61,
+      "losses": 49,
+      "decided": 110,
+      "rate": 0.5545454545454546
+    },
+    "UNDER": {
+      "selected": 151,
+      "wins": 85,
+      "losses": 64,
+      "decided": 149,
+      "rate": 0.5704697986577181
+    },
+    "COMBINED": {
+      "selected": 263,
+      "wins": 146,
+      "losses": 113,
+      "decided": 259,
+      "rate": 0.5637065637065637
+    },
+    "eligible": 753,
+    "unavailable": 37,
+    "abstentions": 453,
+    "states": {
+      "ABSTAIN": 453,
+      "LOSS": 113,
+      "WIN": 146,
+      "UNAVAILABLE_FORECAST": 37,
+      "UNKNOWN_PARTICIPATION": 4
+    },
+    "games": 263,
+    "player_games": 724,
+    "weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "uncertainty": {
+      "kind": "WEEK_BLOCK_BOOTSTRAP95_2000_DRAWS",
+      "low": 0.47875615110909225,
+      "high": 0.6379329848650336,
+      "dependence_aware": true,
+      "week_clusters": 18,
+      "small_cluster_caution": true
+    },
+    "coverage": 0.34926958831341304,
+    "qualification": "A_OWNER_LOCAL_RAW_OWN_POOL_MAXIMUM;AGGREGATE_ARITHMETIC_REPRODUCED;PRIVATE_FORECAST_SOURCE_NOT_REPLAYED_BY_B;NOT_C_ADMITTED_OR_FULL_COMMON_CHAMPION"
+  }
+]

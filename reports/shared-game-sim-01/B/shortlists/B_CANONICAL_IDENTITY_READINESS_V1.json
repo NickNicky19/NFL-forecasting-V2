@@ -1,0 +1,124 @@
+{
+  "id": "B-CANONICAL-IDENTITY-LOOKUP-v1",
+  "UTC": "2026-11-22T17:47:34.037523+00:00",
+  "state": "READY_CURRENT_VINTAGE_EXACT_IDENTIFIER_LOOKUP;CANONICAL_FRAME_ADMISSION_PENDING",
+  "source_bindings": {
+    "roster": {
+      "sha256": "a44e42361de63e42339a563f57ce2c72da17aeffa2eb69e99ac5fb9e246a166d",
+      "bytes": 536230,
+      "columns": [
+        "season",
+        "team",
+        "position",
+        "depth_chart_position",
+        "jersey_number",
+        "status",
+        "full_name",
+        "first_name",
+        "last_name",
+        "birth_date",
+        "height",
+        "weight",
+        "college",
+        "gsis_id",
+        "espn_id",
+        "sportradar_id",
+        "yahoo_id",
+        "rotowire_id",
+        "pff_id",
+        "pfr_id",
+        "fantasy_data_id",
+        "sleeper_id",
+        "years_exp",
+        "headshot_url",
+        "ngs_position",
+        "week",
+        "game_type",
+        "status_description_abbr",
+        "football_name",
+        "esb_id",
+        "gsis_it_id",
+        "smart_id",
+        "entry_year",
+        "rookie_year",
+        "draft_club",
+        "draft_number"
+      ],
+      "season2026_week_counts": {
+        "5": 2436,
+        "7": 2279,
+        "3": 2545,
+        "2": 2528,
+        "1": 2963,
+        "8": 2254,
+        "6": 2279,
+        "4": 2576
+      }
+    },
+    "schedule": {
+      "sha256": "6f707dcea8758bc6c0421559d23c07d4627f39658f93913908d5ddd1b27f6aae",
+      "bytes": 2186988
+    }
+  },
+  "REG_schedule_game_mappings_by_week": {
+    "4": 16,
+    "5": 15,
+    "6": 14,
+    "7": 14,
+    "8": 14,
+    "9": 15
+  },
+  "game_identity_conflicts": 0,
+  "roster_REG_week_rows": {
+    "5": 2436,
+    "7": 2279,
+    "3": 2545,
+    "2": 2528,
+    "1": 2963,
+    "8": 2254,
+    "6": 2279,
+    "4": 2576
+  },
+  "global_unique_ESPN_GSIS_pairs": 2129,
+  "global_forward_conflicts": 0,
+  "global_reverse_conflicts": 0,
+  "invalid_or_noncanonical_nonempty_ID_pairs": 0,
+  "prefix_pair_counts_by_week": {
+    "4": 2096,
+    "5": 2107,
+    "6": 2116,
+    "7": 2123,
+    "8": 2129,
+    "9": 2129
+  },
+  "same_week_pair_counts_by_week": {
+    "4": 1936,
+    "5": 1829,
+    "6": 1717,
+    "7": 1711,
+    "8": 1687,
+    "9": 0
+  },
+  "qualification": "Existing admitted retained source bodies. Exact numeric ESPN and syntactically valid GSIS only; unique forward/reverse pairs. No names used. Prior source protocols used stable bridge mainly for Sleeper-GSIS; this ESPN column is inspected now, not falsely described as independently previously admitted. Current-vintage identity reconstruction, not authenticated historical roster/status/availability.",
+  "remaining": "Website owner must admit the chosen identity mode and actual case coverage; preserve unmatched/ambiguous identities. Use IDs only, never roster membership/status as forecast eligibility. W9 same-week roster unavailable; a stable prior-week ID crosswalk may resolve already-observed identities without implying W9 participation/team/role.",
+  "source_receipts": [
+    {
+      "path": "reports/completion-20261031g/source-expansion/METADATA_QUALIFICATION_RECEIPT.json",
+      "sha256": "af7dd41748abfa2a3d7e843421e60159ac7085da50189fa0c4da8b296bf9588d"
+    },
+    {
+      "path": "reports/completion-20261031g/roster/w7-rolling-admission-v1/FROZEN_PROTOCOL.json",
+      "sha256": "6525a42f290fd870dd93f3dd043e779878a0247fd4b70039a9be25c6bdb95e05"
+    },
+    {
+      "path": "reports/information-first-20261112-01/B/source-qualification/SOURCE_JOIN_AND_DENOMINATOR_RECEIPT_V1.json",
+      "sha256": "6c308403564fa949bf5072d99c5e2d7cbde619e59738ab6e3db2acc7474029ed"
+    }
+  ],
+  "new_raw_GETs": 0,
+  "new_name_matches": 0,
+  "new_forecast_or_outcome_joins": 0,
+  "new_grades": 0,
+  "measured_reporting_worker_CPU_seconds": 0.22762401599999998,
+  "budget": "At most additional5 CPU/60 wall metadata; no scientific/C budget. Source-header inspection measured0.277110123 CPU seconds; retained-location metadata scan tool elapsed0.169906769 seconds is not asserted CPU. Shell searches/orchestration incompletely metered."
+}

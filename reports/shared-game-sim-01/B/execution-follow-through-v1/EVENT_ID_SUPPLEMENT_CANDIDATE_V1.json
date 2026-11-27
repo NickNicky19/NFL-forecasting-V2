@@ -1,0 +1,51 @@
+{
+  "id": "B-SIM-EVENT-IDENTITY-SUPPLEMENT-CANDIDATE-v1",
+  "UTC": "2026-11-22T18:05:56.683624+00:00",
+  "state": "B_SOURCE_CHECKED_CURRENT_VINTAGE_EXACT_EVENT_LINKS;WEBSITE_ADMISSION_PENDING",
+  "source_schedule_sha256": "6f707dcea8758bc6c0421559d23c07d4627f39658f93913908d5ddd1b27f6aae",
+  "source_schedule_bytes": 2186988,
+  "source": "Previously retained Bschedule; exact espn game_id fields; no newcollection/name matching or historicalclock authentication",
+  "events": [
+    {
+      "website_event_id": "401872978",
+      "retained_explicit_canonical_game": "2026_04_DET_CAR",
+      "source_season": "2026",
+      "source_week": "4",
+      "source_gameday": "2026-10-04",
+      "source_gametime_America_New_York": "20:20",
+      "website_kickoff_utc_values": [
+        "2026-10-05T00:20Z"
+      ],
+      "frame_rows": 46,
+      "team_opponent_set_agreement": "PASS_WITH_EXPLICIT_LA_LAR_ALIAS_IF_APPLICABLE"
+    },
+    {
+      "website_event_id": "401872979",
+      "retained_explicit_canonical_game": "2026_04_ATL_NO",
+      "source_season": "2026",
+      "source_week": "4",
+      "source_gameday": "2026-10-05",
+      "source_gametime_America_New_York": "20:15",
+      "website_kickoff_utc_values": [
+        "2026-10-06T00:15Z"
+      ],
+      "frame_rows": 49,
+      "team_opponent_set_agreement": "PASS_WITH_EXPLICIT_LA_LAR_ALIAS_IF_APPLICABLE"
+    },
+    {
+      "website_event_id": "401872980",
+      "retained_explicit_canonical_game": "2026_05_TB_DAL",
+      "source_season": "2026",
+      "source_week": "5",
+      "source_gameday": "2026-10-08",
+      "source_gametime_America_New_York": "20:15",
+      "website_kickoff_utc_values": [
+        "2026-10-09T00:15Z"
+      ],
+      "frame_rows": 45,
+      "team_opponent_set_agreement": "PASS_WITH_EXPLICIT_LA_LAR_ALIAS_IF_APPLICABLE"
+    }
+  ],
+  "player_identity": "Correct website player namespace isSleeper; 3470of3474cases have strictly-prior-event-week exact one-to-one Sleeper-GSIS relation. Four remainmissing: preserve unknown identities, no DNP/zero/participation inference.",
+  "owner_action": "Originalwebsite owner review/admit exact relation through existingcontract or identify unsupportedmapping; A/C mayreuse only after their own source/casebinding checks. Bdoesnotrewritewebsite/peeridentityfiles."
+}

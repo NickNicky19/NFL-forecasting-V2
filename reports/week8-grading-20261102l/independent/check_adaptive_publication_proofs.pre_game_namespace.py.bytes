@@ -1,0 +1,28 @@
+"""Verify actual job-log whole-feed digests and pregame clocks, not claimed clocks alone."""
+import argparse,collections,datetime,hashlib,json
+from pathlib import Path
+HERE=Path(__file__).resolve().parent
+JOBS=[(122570087612,'40611698210','a71202ff804378d9b2343fc502e06ed82d829e53d7dfc57d9459d620abbfc01a'),(122677024481,'40644670107','73edf46ba1081f5ae4e19f04e70f9839ab5816dd8cd3e65f80121a025667d9a8'),(122974673980,'40729906573','3907ca38138ed633556d894b90a347e8f6db68b9f3275a0c5621fbd952e23452')]
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def read(p):return json.loads(Path(p).read_bytes())
+def iso(s):
+ d=datetime.datetime.fromisoformat(s.replace('Z','+00:00'));assert d.tzinfo is not None;return d
+def main():
+ ap=argparse.ArgumentParser();ap.add_argument('--private-root',type=Path,required=True);ap.add_argument('--last-packet',type=Path,required=True);args=ap.parse_args();private=args.private_root;frozen=read(HERE.parent/'FROZEN_SOURCE_ASSIGNMENTS_V1.json');games={r['game_id']:r for r in frozen['assignments']};earliest=min(iso(r['kickoff_utc'])for r in games.values());proofs=[]
+ for job,run,want in JOBS:
+  path=args.last_packet if job==122974673980 else next((private/'source-metadata/adaptive-verified').glob('*'+want+'.json'));packet=read(path);assert sha(path)==want;pub=packet['publication'];assert str(pub['run_id'])==run and pub['api_job_id']==job and(packet['season'],packet['week'])==(2026,8)
+  assert hashlib.sha256(json.dumps(pub,sort_keys=True,separators=(',',':'),allow_nan=False).encode()).hexdigest()==packet['publication_sha256']
+  logpath=private/f'independent-verification/adaptive-job-proof/job-{job}.log';lines=logpath.read_text().splitlines();matches=[]
+  for line in lines:
+   if want not in line:continue
+   clock,body=line.split(' ',1);metadata=json.loads(body);assert metadata['feed_sha256']==want and str(metadata['run_id'])==run and metadata['source_sha']==pub['source_sha'];assert metadata['state']=='PUBLIC_DERIVED_DELIVERY_COMPLETE'and metadata['successful_forecast']is True and metadata['public_release']is True and metadata['scientific_qualification']is False;matches.append((clock,metadata))
+  assert len(matches)==1;clock,metadata=matches[0];assert iso(clock)<earliest;before=0;keys=collections.Counter()
+  for r in packet['rows']:
+   g=games[r['game_id']];assert iso(r['kickoff_utc'])==iso(g['kickoff_utc']);assert iso(r['source_cutoff_utc'])<=iso(r['issued_at'])<=iso(r['persistence_completed_at'])<=iso(clock)<iso(r['kickoff_utc']);before+=1
+   keys[r['game_id'],r['player_id'],r['category'],r['method_id'],r['product'],r['prediction_functional']]+=1
+  assert all(n==1 for n in keys.values())
+  proofs.append({'packet_sha256':want,'packet_bytes':path.stat().st_size,'schema':packet['schema_version'],'run_id':int(run),'job_id':job,'job_log_sha256':sha(logpath),'job_log_bytes':logpath.stat().st_size,'log_witness_at_utc':clock,'reported_published_at_utc':metadata['published_at'],'source_code_sha':pub['source_sha'],'publication_object_sha256_verified':packet['publication_sha256'],'whole_feed_digest_logged_and_equal_to_retained_bytes':True,'eligible_original_pre_Thursday_forecast_bytes':True,'eligible_before_every_frozen_target_game':True,'claimed_per_row_source_issue_persistence_clocks_all_before_server_witness_and_kickoff':True,'forecast_output_rows':len(packet['rows']),'metadata_clock_rows_verified':before,'unique_games':len({r['game_id']for r in packet['rows']}),'duplicate_exact_forecast_metadata_keys':sum(n-1 for n in keys.values()),'scientific_qualification_from_source':False,'provenance_scope':'Original pregame publication proven. Does not authenticate backend training/source history, licensing details, actual source-update vintages, a full distribution or production admission.'})
+ output={'state':'PASS_THREE_ORIGINAL_ADAPTIVE_PACKETS_AUTHENTICATED_BY_EXACT_PREGAME_JOB_LOG_FEED_HASHES','at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'frozen_version_protocol_sha256':sha(HERE.parent/'FROZEN_GRADING_PROTOCOL_V1.json'),'earliest_frozen_Week8_kickoff_utc':earliest.isoformat(),'proofs':proofs,'eligible_original_pre_Thursday_versions':3,'ineligible_pre_Thursday_versions':0,'new_metadata_source_reads':3,'metadata_tool':'GitHub.fetch_workflow_job_logs; exact three publication.api_job_id values; decoded log bodies retained privately','new_forecasts_or_outcomes_acquired':0,'new_fits_or_inference_or_scores':0,'source_scope':'Public-job retention proof authenticates the actual saved values, rather than relying on internal claimed timestamps. These are three capture versions, not three independent learners or additional NFL observations. Use original captured rows; do not replace them with current served overlays.','private_log_retention':'LOCAL_APPROVED_VERIFICATION_CACHE_ONLY; no new offhost restoration claim','checker_sha256':sha(__file__)}
+ with(HERE/'ADAPTIVE_ORIGINAL_PUBLICATION_CLOCK_REVIEW_V1.json').open('x')as f:json.dump(output,f,indent=2);f.write('\n')
+ print(json.dumps({'state':output['state'],'eligible_versions':3,'row_metadata_counts':[r['forecast_output_rows']for r in proofs],'server_witness_clocks':[r['log_witness_at_utc']for r in proofs]}))
+if __name__=='__main__':main()

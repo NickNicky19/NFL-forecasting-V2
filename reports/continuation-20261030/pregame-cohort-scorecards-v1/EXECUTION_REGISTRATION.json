@@ -1,0 +1,1806 @@
+{
+  "registered_at_utc": "2026-10-30T00:39:58.033929+00:00",
+  "cohort_protocol_sha256": "05d38279409911c11d99920727397307723fb09f6a2c9c9b719d0721de6ab52f",
+  "code_sha256": "8139b9028447e76e08543de247771d9ced466f44faa1646bbccf47247fc27dc5",
+  "old_query_document_sha256": "2a7a8ed399115c1d1d0522fbf7cd36e2957f90d845877f04c97a6056f862b47b",
+  "new_nfl_fits": 0,
+  "new_nfl_outcomes": 0,
+  "inputs": [
+    {
+      "adapter": "empirical",
+      "files": [
+        {
+          "artifact_id": "predictions.csv.gz",
+          "sha256": "52d0c4476ac8a3d45b6128fd092b94c73bf6f9a5c9408f2878df8e33e03a513f"
+        }
+      ]
+    },
+    {
+      "adapter": "hgb",
+      "files": [
+        {
+          "artifact_id": "W01-anytime_td-H-CURRENT-log_loss_probability.json.gz",
+          "sha256": "906b721fc6861c40a12c4252ddd956d65c540e8644c76d18284d5c434e2a75cb"
+        },
+        {
+          "artifact_id": "W01-anytime_td-H-MULTI-log_loss_probability.json.gz",
+          "sha256": "fe7aa46cf57c82296f4b8062b11a7fe18bfbe79395c9b5892660b3daa79be73f"
+        },
+        {
+          "artifact_id": "W01-anytime_td-H-RECENT-log_loss_probability.json.gz",
+          "sha256": "23a5a5887dc5992a9ba575862a8594a8fbd8275fe6a2957e8d7da76e5f9c97ea"
+        },
+        {
+          "artifact_id": "W01-pass_att-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "b221fb8de4df2e4af9f0124fbc4cff2022ee8114fc5197f1ed0cc956b6900e2e"
+        },
+        {
+          "artifact_id": "W01-pass_att-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "3a86362193306f65a2f8eb641aec6ff736c0e8f5573f753ebd2ffb286028c68e"
+        },
+        {
+          "artifact_id": "W01-pass_att-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "0e1f607a96c50b3ffb7a9898de31f986ed1e610902348395c9021f9ca42f544b"
+        },
+        {
+          "artifact_id": "W01-pass_att-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "c76bf3ff2fe4d801c54240caeac1ad9d34fc3f13925ea8c51362fde386308286"
+        },
+        {
+          "artifact_id": "W01-pass_att-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "a2851b09d8a21084672fbbaf7667cef3fb0e4a8058e7104901136e39b72ce681"
+        },
+        {
+          "artifact_id": "W01-pass_att-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "6def3c3ef88bb74e199a60ae9a7ee011a57cdfa0accf9a2a672759fab320cfed"
+        },
+        {
+          "artifact_id": "W01-pass_cmp-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "501a58e54a6aaa1f82253e3eaba3cbfc2a0524c5282e30492842744d43b0749c"
+        },
+        {
+          "artifact_id": "W01-pass_cmp-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "7ca246b437b205670c4d910497b3e3cbda08f5d6420d875373be2d6a1aad98c1"
+        },
+        {
+          "artifact_id": "W01-pass_cmp-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "b6bf9230141fd7361136af4b4955ac46e1c3c597ae0ea9be8d6618fffca95eba"
+        },
+        {
+          "artifact_id": "W01-pass_cmp-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "9d716644247a9ee4c6869249a7d560bd17f9f344dd52802080e04b28c7199210"
+        },
+        {
+          "artifact_id": "W01-pass_cmp-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "8d02f5e51cae9a6526038c43168575cba607fb8dc0ea9e17715ff4c8014fb3f2"
+        },
+        {
+          "artifact_id": "W01-pass_cmp-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "25faa678b5b9d63ecba48374c9706f3edef61d50b2e18af8a1b043f764edde5b"
+        },
+        {
+          "artifact_id": "W01-pass_int-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "eff7d1b0676176b711278ea1a2b1eb8da6dbb90683a075e4d28d4429c3909382"
+        },
+        {
+          "artifact_id": "W01-pass_int-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "ee867fbae5935d09daec81356f950d1f06eb5c32232a5e0b7683c3942c877893"
+        },
+        {
+          "artifact_id": "W01-pass_int-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "f587d742127cb9e3b62838e216d7141cb86eadde49fce59a64a7df881f4ecbc1"
+        },
+        {
+          "artifact_id": "W01-pass_int-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "e52dc1e406696e7f78cbacd84ff154cd8b85044861cd575b5d1f38e549aeeb66"
+        },
+        {
+          "artifact_id": "W01-pass_int-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "bb0ca763634e88a58a6c4e38d8835da083bd8e6922ff72ab4930ef33ab7a78b8"
+        },
+        {
+          "artifact_id": "W01-pass_int-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "937eba238e1644a447b57e2decb161f7708b02d9dd5044f2fef212c0a15a47a3"
+        },
+        {
+          "artifact_id": "W01-pass_td-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "86b62d1b2f72916a4866d4409fc3fa786ebe84bc405fddd2ac6c9d1a96a1be9a"
+        },
+        {
+          "artifact_id": "W01-pass_td-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "347552634610f3732222477419b24f658a1117e99943e1fd15ab24e1f46abe11"
+        },
+        {
+          "artifact_id": "W01-pass_td-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "ee6c28b522763f68ac2be5a5a5e3ce4cf261194f164c42bad3d7c1b902f1f8e6"
+        },
+        {
+          "artifact_id": "W01-pass_td-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "6678b87f730938c977178b2b8e2b0bbe10b687cf68b1206f07fe77f8ee229e2b"
+        },
+        {
+          "artifact_id": "W01-pass_td-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "6c6315eff0c5806854fb427adc24294256e2255bd99f5894b6fa98e6e3e9e191"
+        },
+        {
+          "artifact_id": "W01-pass_td-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "d7b1c2b4dd464504eaa39b5afb97608142045ccd83df303e9c4cdb72aa91f619"
+        },
+        {
+          "artifact_id": "W01-pass_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "7a0ee688394482731a23c9a845afad8922b431d15c04ac857faf0f739873e4a8"
+        },
+        {
+          "artifact_id": "W01-pass_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "9460327bc61755b709775df1cf1fb7abbc186fe1e3c0da1e567b72a35981f1ec"
+        },
+        {
+          "artifact_id": "W01-pass_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "1ca5ba74bb5d3be1255c77fdcc053d11d26fe7d4e911022ca1ca2fdbdd32c0a2"
+        },
+        {
+          "artifact_id": "W01-pass_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "df7935f713a699cae9943291d53009c31a140df6979a0c4a3576ad5949071b6c"
+        },
+        {
+          "artifact_id": "W01-pass_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "eef792640b46bd07328be30a65d694a31ae74d54b324817ebead2214659ad97b"
+        },
+        {
+          "artifact_id": "W01-pass_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "cfdd9bd5e8ac601432c1678b72a2316446313747f554ed10436db1da91e08b5b"
+        },
+        {
+          "artifact_id": "W01-rec-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "422df9f64eb8a7c83718aaee86e1b6f895cf6c9a9eb69e192eaede998046c72e"
+        },
+        {
+          "artifact_id": "W01-rec-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "f9526d6ecd30f840f8ad9dff32e3420dadc20b0b73d509aad41f679a9cf19b49"
+        },
+        {
+          "artifact_id": "W01-rec-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "b79730eabaa96b1c1d9e5d6cec3f28ed38d6a87b9f6282b1dcf00782f31c15ed"
+        },
+        {
+          "artifact_id": "W01-rec-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "4ee8de58ac7d5e7d1085297a2e7ecec5b691fa16e23a3863ff4b5d09e2f27b90"
+        },
+        {
+          "artifact_id": "W01-rec-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "471522d50bbaf5a19f200c988c8af5efb23253389318f30434ecb1006765425e"
+        },
+        {
+          "artifact_id": "W01-rec-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "d9ca84a40daf19d8dc0d5cf66d4c45965979bfbea382b3efa86c34f1ceba1af6"
+        },
+        {
+          "artifact_id": "W01-rec_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "dcaab9861801901dedc90e31c24d8d6a08bd396a593a406ae4e5ae447e39856c"
+        },
+        {
+          "artifact_id": "W01-rec_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "8657a44a707a68ef5392fefda4fa2e58de7f823da0551959393483e988652ab8"
+        },
+        {
+          "artifact_id": "W01-rec_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "6b879a084c58c37379628c34af24b359d81b67e60dada7280a07badd6e4de73a"
+        },
+        {
+          "artifact_id": "W01-rec_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "12d76fe24b38c9315a2a8a23f0faf59eb8cca63bca52e7342a5f020c5ed92a41"
+        },
+        {
+          "artifact_id": "W01-rec_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "6f69b7048d671bf1f7aef05b5b44b729b5ff81e798c687163ed0c3ca9099ef67"
+        },
+        {
+          "artifact_id": "W01-rec_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "eba4e189de5bbd58a9f98d7a5b5bec09290918b6a8cd8d98b68148d32436c107"
+        },
+        {
+          "artifact_id": "W01-rush_att-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "05b5460aec606007b81daa844ec2860b3037a3cf96176cc0159c9eaf8931fa3d"
+        },
+        {
+          "artifact_id": "W01-rush_att-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "57ae72b2d53dc90d0223082d78a6a6f6831d3e052758a90a83961dc8400316bd"
+        },
+        {
+          "artifact_id": "W01-rush_att-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "03e42046fa66bef935bfa634883ea77aecce3847b0145e7660f3d2d383e37590"
+        },
+        {
+          "artifact_id": "W01-rush_att-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "464e0fdae0f2f89cd113574ddf3ffa5bab9095b5983c62c4b7cd02a9458cc687"
+        },
+        {
+          "artifact_id": "W01-rush_att-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "f7b8afa4b8f530e8fc9951477904d18c63e7211952df718101fdfa536f961e9f"
+        },
+        {
+          "artifact_id": "W01-rush_att-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "5410a1892ac7e4494b62c0f5b13b828c772424034b2f8c8a145c1360218e46c6"
+        },
+        {
+          "artifact_id": "W01-rush_rec_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "c3729a4572a7cdcc4bf1bd46d4ad09bb353384cabb9c6e62afe276d74556bbe6"
+        },
+        {
+          "artifact_id": "W01-rush_rec_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "d7504dcf920ce1277f2e6927f58206ea87dc85bf762844dd7f01860f6aa1d897"
+        },
+        {
+          "artifact_id": "W01-rush_rec_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "aa388c7f44abc91151ea0968c80ae2bbaadf7ec8c06915fbbfcf39b6d959b94c"
+        },
+        {
+          "artifact_id": "W01-rush_rec_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "2a8a5431e768566ba873656106de688255107286e425d1c41643703b0483a0a7"
+        },
+        {
+          "artifact_id": "W01-rush_rec_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "4b51d1be149c71703e8231e36a755e06ee8cc12a4affdc8fe93a696f1c7d2977"
+        },
+        {
+          "artifact_id": "W01-rush_rec_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "349565c68f6463838cb0015293ba9820b09ccf510f74b0068100f12c407dcb52"
+        },
+        {
+          "artifact_id": "W01-rush_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "68ea69920c0ea8f60a9caa2de4c35a68088a25b944c443444428d878e17ab6c5"
+        },
+        {
+          "artifact_id": "W01-rush_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "fef15fac92402b9864c2b0999c38a92e6dcc9b4d720d87dcb9cf07e095fb1a63"
+        },
+        {
+          "artifact_id": "W01-rush_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "397e0fa4b4377d323c1ea1216d58fa70e6ac66201a097b85d371e3ac223aa35d"
+        },
+        {
+          "artifact_id": "W01-rush_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "d3e3fe3b3b7dacd490311b3a9b9088480dddd35cf2c1aa9d8087b0036c4a59d8"
+        },
+        {
+          "artifact_id": "W01-rush_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "7cd36cc02e8ca5a6e706b429213cb225c7b7f873d79549db8c2e950104443067"
+        },
+        {
+          "artifact_id": "W01-rush_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "22ede15e85d8fb22bf5debdeac32323bc991639b25913d3ce3fad8cb786a4e9c"
+        },
+        {
+          "artifact_id": "W02-anytime_td-H-CURRENT-log_loss_probability.json.gz",
+          "sha256": "44321e703c18704324a68e15be20fefbe9bd3773282321a6e1e65fcd6d41690b"
+        },
+        {
+          "artifact_id": "W02-anytime_td-H-MULTI-log_loss_probability.json.gz",
+          "sha256": "3f938503e7622fab6f79ec5bc396730d89d9a6bc57d0d314fc217651f5c28a6c"
+        },
+        {
+          "artifact_id": "W02-anytime_td-H-RECENT-log_loss_probability.json.gz",
+          "sha256": "b43b833bbbe91da88ec0b8a98a9d7946bc3a46623a5e390a09cfdf7bb4798686"
+        },
+        {
+          "artifact_id": "W02-pass_att-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "940f8217bccc9be994a0bf09b7d5511c3d261b844d184c71657e4073bcfc5382"
+        },
+        {
+          "artifact_id": "W02-pass_att-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "5f42fac8a248b37bfd8387a300a65021d31586ed919ffe4d9e2ebbb152cbe81c"
+        },
+        {
+          "artifact_id": "W02-pass_att-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "64c3cb4e2ce3378eb671b5f307532a27f61f07dec2a6283a791a126cac40eec3"
+        },
+        {
+          "artifact_id": "W02-pass_att-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "6caa7834c3d4989bf5186e3329234018e7f80b39ff5d8b104740bc98034da44c"
+        },
+        {
+          "artifact_id": "W02-pass_att-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "f3230c49c0712e0e0610f2bdf2a401b14bfe649db088ac28fa7eebeee0f79803"
+        },
+        {
+          "artifact_id": "W02-pass_att-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "4b51d2ea56c99d18c66717b84a2d7f35b69a0757fe29bc4a3912e338511d4d07"
+        },
+        {
+          "artifact_id": "W02-pass_cmp-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "9e6e55d71089d623d4b641815d3fbeba0d308f0d27c9a19d7ac460e1c2a707ca"
+        },
+        {
+          "artifact_id": "W02-pass_cmp-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "afa8b3570ea302121cfc947943615cf93dd08ffcdd51d3ed51d029e1fe158469"
+        },
+        {
+          "artifact_id": "W02-pass_cmp-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "81b3f12415eb5cb06f346c325c47ed930dd5c5bbb3496bacec94781b7ee8cfb7"
+        },
+        {
+          "artifact_id": "W02-pass_cmp-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "e545d9fbd45960f64758fb6d1c884081d8cbc04b766f82a164ea7a4f53c1c5a0"
+        },
+        {
+          "artifact_id": "W02-pass_cmp-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "c3a0541fabb04599c2df7c26c49c49437569f027e705ed5db377953fc1ffc98e"
+        },
+        {
+          "artifact_id": "W02-pass_cmp-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "82f951a9e76aae9dd98a251e449450373e4cf8b1c5cf8e3f567b3431097572cc"
+        },
+        {
+          "artifact_id": "W02-pass_int-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "8f093f555e0084d4aadd83f62012b2c62870ec685674e8ee1494c71c1244e700"
+        },
+        {
+          "artifact_id": "W02-pass_int-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "2066b23974c82069fac411d855c7cdc0ec3525a98ea7ac5b45ffe0bf7296a778"
+        },
+        {
+          "artifact_id": "W02-pass_int-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "237388a2b956c7c0416d9a49cc13a857016a00f2b7cb733bfd3e7824de0ac7d5"
+        },
+        {
+          "artifact_id": "W02-pass_int-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "4fe7ffbf7c0075a9dba8a7a0e443d90fd141af9cc17d828ff2eb674d2da3f9ef"
+        },
+        {
+          "artifact_id": "W02-pass_int-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "029c8b123393baf5936491063ff9fd920f79802b0e0cf082c20958e32b695ad7"
+        },
+        {
+          "artifact_id": "W02-pass_int-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "12e4f63423722ec18c0bfa8ccaed266344d4d244bb9f588252b4ef6fcce5cdd3"
+        },
+        {
+          "artifact_id": "W02-pass_td-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "5496d1f06f61d141a71d079b3d7fa5eca02bb4771a062218a10b4203769c6369"
+        },
+        {
+          "artifact_id": "W02-pass_td-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "805bacb40f861d80b81186374490bfbdc1f8860787ee4129e1f62e526b969c2d"
+        },
+        {
+          "artifact_id": "W02-pass_td-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "da821a0caddbe89176ce2ed28a80f6621b414b2c90e952c151992f69244ea0b8"
+        },
+        {
+          "artifact_id": "W02-pass_td-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "ddd99a4b8dd2f4424c5c28ba7c6df1caa1f38f2357a66a188a1b5db7640664b8"
+        },
+        {
+          "artifact_id": "W02-pass_td-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "4adf14bb114c1fdbc7b2dea741522945d8e0bb54f84b357e75a63f159ce0105a"
+        },
+        {
+          "artifact_id": "W02-pass_td-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "c1eb365a4dcaaa4d5d049474863505b29ffd575c0dae58e27a8eb0b6dfb02868"
+        },
+        {
+          "artifact_id": "W02-pass_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "48e4635a31e7320dcfa68e14fd08adadd5ffd6cc8fdc69fe6600477ab5c220a9"
+        },
+        {
+          "artifact_id": "W02-pass_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "48689d9b08e5312aa36015e5ce145cb3ede2e4df736f5dce77af1e62461ff917"
+        },
+        {
+          "artifact_id": "W02-pass_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "8bb312cfdb3e8e5dd208976414684294cfec5ce474671175ef77565b4904c32f"
+        },
+        {
+          "artifact_id": "W02-pass_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "3ff49752aee0cdbaec57f7a2e605e5d1e81b4cd9bcaac4fd7d8cfb4511904e28"
+        },
+        {
+          "artifact_id": "W02-pass_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "d3547dcd14214e27264c908a4a550c0f683a06debde6f91e484ab4cf7ffb8302"
+        },
+        {
+          "artifact_id": "W02-pass_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "3dafb2bd1851663d0270534e4d9ac7d612709eb42e6ba2b1027d8a03db7b44be"
+        },
+        {
+          "artifact_id": "W02-rec-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "a2963fae6a120169e93bfae19139b6b80e2b4d3cb9fd4e6bf3d1e307f1efc03d"
+        },
+        {
+          "artifact_id": "W02-rec-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "cfca61e8e07163193e5bdf2d7e3f7cdeb4c99d977c9989740e80038c9f387964"
+        },
+        {
+          "artifact_id": "W02-rec-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "8cc2c075eed802e93f6da04ef81742c69ef9f051554896f47082fb11681bf0ee"
+        },
+        {
+          "artifact_id": "W02-rec-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "cef3ef2a2f6a69857db14e5e958e97ba7ca87f05d31a0a309be2218e49dd03e8"
+        },
+        {
+          "artifact_id": "W02-rec-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "376c3cacd1289b3f4eb8173fbcc28a497a20836a897721c60fdac0d5b823d76e"
+        },
+        {
+          "artifact_id": "W02-rec-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "ba1ea9a5da9f2a3afb8a66f80a0855dad41569a435ecf665eb3bc0546b898b05"
+        },
+        {
+          "artifact_id": "W02-rec_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "87bc97157dc4e2083a2d4cb2eec2e9c6ca3361d6676c423e6347f68d25312b6b"
+        },
+        {
+          "artifact_id": "W02-rec_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "f835ca78dd28f2d127986cff1212f15508c0849c44c9c1b959dc6c01a9716720"
+        },
+        {
+          "artifact_id": "W02-rec_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "9d87ac8cfe24070d6df48418c1751997ab9b6d86e18cfaf9d2395c4a53ee28b4"
+        },
+        {
+          "artifact_id": "W02-rec_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "d03a16d629539e5e33394e69a63dec8ff46a87a9039d091911e30183ea259424"
+        },
+        {
+          "artifact_id": "W02-rec_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "ea3cb1b1659256a6f893db9ed24792a735fd074d97c6676c0f6fe7c03d76d062"
+        },
+        {
+          "artifact_id": "W02-rec_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "94256760019a97b4ec9e86d38c4d1186fc2487f10c11d3bf24b4f5eba3fca7e1"
+        },
+        {
+          "artifact_id": "W02-rush_att-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "a8f8b3da189e0bac3a607fe8a9fc17f3103b9264a43421d17f0da0503f695591"
+        },
+        {
+          "artifact_id": "W02-rush_att-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "45aea0ac524aa243a0ab52fcf4c99db8809fb15e0ccf84b708ffc62064653571"
+        },
+        {
+          "artifact_id": "W02-rush_att-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "b5919b67108ffa95d410690f4cb14aa75242cc352e5ef1b3b68996cb1e9f1abf"
+        },
+        {
+          "artifact_id": "W02-rush_att-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "403dcb13485501e9cbc7d0c132c558b675b8734fb9e3412627ecc77237c23dcf"
+        },
+        {
+          "artifact_id": "W02-rush_att-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "1db285e4489d2216cb55c094cf1dbb76976585c1628cd7a20e4149c26809cc4e"
+        },
+        {
+          "artifact_id": "W02-rush_att-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "75ca46eacf9e93169a68c6798b8456233883fd4b8ed66b8af117c38fe51f7015"
+        },
+        {
+          "artifact_id": "W02-rush_rec_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "8e5465f2abfd95f89a8a4a2d0901ce6a7da05ac540f47e64291c6d2475790913"
+        },
+        {
+          "artifact_id": "W02-rush_rec_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "93af59314919b49432902f53cac43f08e3bdb217fb597e9bba99fc4c588f3e81"
+        },
+        {
+          "artifact_id": "W02-rush_rec_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "d6a17da9c52b9327dddf4bde96f2800edac717123090c6eb3023976b07d02a86"
+        },
+        {
+          "artifact_id": "W02-rush_rec_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "08918cdbbdbc23f70b761db3b82eb32b7417a5902ddfb306902e6cd2b094c282"
+        },
+        {
+          "artifact_id": "W02-rush_rec_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "4cb6dac3f813b94f1a69e31f9115500ec792cac2fdca14ef1670d731021c56af"
+        },
+        {
+          "artifact_id": "W02-rush_rec_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "854b24e12e4e6ffec44008996dbd034f740d5616d52c126b04d1eca577211478"
+        },
+        {
+          "artifact_id": "W02-rush_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "1be5c861156c9fe3d3c4bb5ea6c5d3452b11e6a20599ca14a0da95c1b1989641"
+        },
+        {
+          "artifact_id": "W02-rush_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "216c8b665511636e3c52177cfcf17a2b7cd4fe043edccb579933680073bbb8be"
+        },
+        {
+          "artifact_id": "W02-rush_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "b0e2252765f3a63b95a5fda6489e4f6753647f55d3c2551876a9cb9ebb9f95ae"
+        },
+        {
+          "artifact_id": "W02-rush_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "0cf508e544c1cf367ba4beda743534206e946107dcaf7fbf1d3b8139e979cdfb"
+        },
+        {
+          "artifact_id": "W02-rush_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "f5dea14269da98bd20b9024da637abe0fdd863ecc513d876756b25e950f337a3"
+        },
+        {
+          "artifact_id": "W02-rush_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "db3912e23e77cb8377f05facaea6304ab64dd552f2cf53c070a0a538cbcac363"
+        },
+        {
+          "artifact_id": "W03-anytime_td-H-CURRENT-log_loss_probability.json.gz",
+          "sha256": "a30d841c87a84e3b0fc4100def4c5980b5af7a529d1155d00333cf0704079c85"
+        },
+        {
+          "artifact_id": "W03-anytime_td-H-MULTI-log_loss_probability.json.gz",
+          "sha256": "3c0c53c514a6ee0ff840a14ae20ffb43b2988df37a6e34f2025bbd6b7a9489cf"
+        },
+        {
+          "artifact_id": "W03-anytime_td-H-RECENT-log_loss_probability.json.gz",
+          "sha256": "51ae51c74c6642ddc74af67e4bfc00736889a654f84979c59c5e135b772a285b"
+        },
+        {
+          "artifact_id": "W03-pass_att-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "1e851f127c6ae7a7c07b98cd57c53d077c5a89b5ef9343829c3e3282c10a43e9"
+        },
+        {
+          "artifact_id": "W03-pass_att-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "3796d2f72c0a93a32a2804e839c6a595a6e254c48675d035537027b348590764"
+        },
+        {
+          "artifact_id": "W03-pass_att-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "c92d551fefd58edc17ffc8e2dbf945ae5dcd357f7d7b12f5f677d7afc4133158"
+        },
+        {
+          "artifact_id": "W03-pass_att-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "9ce86251d14033c64dbe8686924e0eadab870808335e124bafbaa93cc00c22be"
+        },
+        {
+          "artifact_id": "W03-pass_att-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "51d4c8ffee1bcd6e61f6e0d61d13deda261eefc7939eab1d36046a876ad84bc8"
+        },
+        {
+          "artifact_id": "W03-pass_att-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "a348537cb3f12f8beed1f4acebdff72dd5f12f74b74611a79ae0a415494addf2"
+        },
+        {
+          "artifact_id": "W03-pass_cmp-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "e2b28915b785195c6e34fd74c1bda18569f532fcd0af2d9ab3ad223cdcd25719"
+        },
+        {
+          "artifact_id": "W03-pass_cmp-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "0970d704fbc0faac672cfcc19e311c0d9497ebe2bf81f6bef51748aa4b705f1a"
+        },
+        {
+          "artifact_id": "W03-pass_cmp-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "ed1738cc26a16b3200856b2a245e72cfe2cb3882e941fe11a877446ee6ede824"
+        },
+        {
+          "artifact_id": "W03-pass_cmp-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "0534e23a1debf25214be2f1915b39623706a9555f0d175718493e894e1aaedd9"
+        },
+        {
+          "artifact_id": "W03-pass_cmp-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "bed6957d0b735c170b264ef27a8de7ac70effc8d882ffd0ed3584e886048ec2a"
+        },
+        {
+          "artifact_id": "W03-pass_cmp-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "2da910813fde746dc5c6fa4ff32902d84c490c308cf386b7a33a4279bcf7205e"
+        },
+        {
+          "artifact_id": "W03-pass_int-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "7722841e215746baca1def722d36a3b1324358dab822fb195253f9e5cfd3e8e8"
+        },
+        {
+          "artifact_id": "W03-pass_int-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "c376dedc9cf2acae28228ecab6e0184ae399615074fb1c3c3d279be5df3877a9"
+        },
+        {
+          "artifact_id": "W03-pass_int-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "76325ea38cb0e31d50030ad46dc0e5bab9e3b3a82671a8710ad7c5ebd91091fe"
+        },
+        {
+          "artifact_id": "W03-pass_int-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "d4b9809ba792740e583b040a7f7e070dba930a579194ea1e305a267587cfb56f"
+        },
+        {
+          "artifact_id": "W03-pass_int-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "53ab9ca2ada419ad1b2264a4009c2f756b4f006dee1fdc2c400029f17bfb4f77"
+        },
+        {
+          "artifact_id": "W03-pass_int-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "99e04d7b0caa90b4c4367a8b080edfdc7354ee3bc549679ca61d878e494c3785"
+        },
+        {
+          "artifact_id": "W03-pass_td-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "5c5db0c09184c686446273e0cc2a10e2f7505c3cc0825de4a38c18368b4c60f6"
+        },
+        {
+          "artifact_id": "W03-pass_td-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "fbaf3a461b27a2d3d0bae37124cc5f14deb6832241a0acd5bd5840871aa2c210"
+        },
+        {
+          "artifact_id": "W03-pass_td-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "fcf2c9ac63b5eebb369310db284b0165eda9a179b31380bf4d00be3b75dafa45"
+        },
+        {
+          "artifact_id": "W03-pass_td-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "24dcef4477e88c782862d37e6e5a762fa752c1dc18d29541a0cfdece90f66003"
+        },
+        {
+          "artifact_id": "W03-pass_td-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "20712f60714da6c5cb8e76ddd77865f8229f2e5450f46893d76a391a11415882"
+        },
+        {
+          "artifact_id": "W03-pass_td-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "3aae86058c3b406e0ec553f4e74e9601ca6bab014485e11c0c5be2fc31acd565"
+        },
+        {
+          "artifact_id": "W03-pass_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "44628251e9e1f7bf926d460c6e13ab1742af0bd4273ee351df17e5139497be8d"
+        },
+        {
+          "artifact_id": "W03-pass_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "eb42b932e89b54796972987579d60710666d5009b418439ecec1b21e857a9d1f"
+        },
+        {
+          "artifact_id": "W03-pass_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "20e63ea771d281457b3978877c37c42a540157ca8a87b56194a5071411c553b0"
+        },
+        {
+          "artifact_id": "W03-pass_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "0acbb3d98271bec262b607bea0f3bad98966a75637b7346c470de75ddbf24a4f"
+        },
+        {
+          "artifact_id": "W03-pass_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "49795e955fbd6b1c1ecd9f090ef14e0ac28eace2745467e735a3c92dc59f04bb"
+        },
+        {
+          "artifact_id": "W03-pass_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "175ad50a5f8c691246ad2dcecda0e6106f64d1b0e5c982b730c9ed4e9bcef1a9"
+        },
+        {
+          "artifact_id": "W03-rec-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "922410256c0f78b66cf869e7d42c63bad3c899ee6456651e7b98bceec13609b5"
+        },
+        {
+          "artifact_id": "W03-rec-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "ceddc97fbb0d6ec3a609b98f0af89d6b534e45d0a825599455e66326805d8987"
+        },
+        {
+          "artifact_id": "W03-rec-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "79ec463951103b8dddb3e057a4542797720434f24e37265c0fbd75ac6368d7db"
+        },
+        {
+          "artifact_id": "W03-rec-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "e3893962b36c37af11fd458c524369df6643df5824c5344a7fa4d3d405af37e4"
+        },
+        {
+          "artifact_id": "W03-rec-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "81c4eed05a1024fd9d0ee887441e3da90b4940631b022248c069162825e91af2"
+        },
+        {
+          "artifact_id": "W03-rec-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "eb481d2ac18ea07571d5c90d23ddcc0d5ae2fed56756135bae10fc2e64fc4ec4"
+        },
+        {
+          "artifact_id": "W03-rec_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "3a02a41f6a317d3ed472fc73ddbeb6ecc733f414e8f28607730264a1a6a0822e"
+        },
+        {
+          "artifact_id": "W03-rec_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "c6bb4cbe5e7a7ef19d4bcf4a0aedd810a63289c599f844d58e1bbfc5e9ae72e4"
+        },
+        {
+          "artifact_id": "W03-rec_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "51d1e02ca25ebedaceca0409bf883693769f4a2a3b2db54d1d1e8a464b8b9b2d"
+        },
+        {
+          "artifact_id": "W03-rec_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "ad918784b5beaceb0b6c7265f0e090698eeeed7c99f8f6b7953addf05573bc71"
+        },
+        {
+          "artifact_id": "W03-rec_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "715039b8cf541a097e60bf934d2a63fe897f803c83dbe8db68d782e3acabbb66"
+        },
+        {
+          "artifact_id": "W03-rec_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "13ecede9fad5c061152ce85ca1c651f15e6f3a81d2cf836ee0495c3656cdd752"
+        },
+        {
+          "artifact_id": "W03-rush_att-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "4fec77b8d1615ebb550f212a6a542f8d64b03a4b27ab0edcc6d1fdd7835f9ebc"
+        },
+        {
+          "artifact_id": "W03-rush_att-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "026e7de9d0762c0eb30e8736679ce29d68c48524cb3849c70cf8635ede41d5e9"
+        },
+        {
+          "artifact_id": "W03-rush_att-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "719bed17f9d172b78ef041b7f3273ef11bee95c0ad8c4bf81ada26c1914951e5"
+        },
+        {
+          "artifact_id": "W03-rush_att-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "d9c23700231fb97dd7ecf2fe9fbbcc0304578f812386f42d8271a2f3c234abf6"
+        },
+        {
+          "artifact_id": "W03-rush_att-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "3ca0d11ff2bf8314b7b91d382a43e0dc52554b46c9bb114e22b238afcbe1b5c3"
+        },
+        {
+          "artifact_id": "W03-rush_att-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "a5ecb16a048f45035740df5437c6c17e4b9c42c120ce34756387a6f8835b8ba5"
+        },
+        {
+          "artifact_id": "W03-rush_rec_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "b6790d64cfe5cd37b1bc3d55c50397af58ee95e4ba778aa7272f74485e87a140"
+        },
+        {
+          "artifact_id": "W03-rush_rec_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "f82a72cab7ae6f5faaa81d7bc36cc511d773cab1bbb08637436e89c50b032dfc"
+        },
+        {
+          "artifact_id": "W03-rush_rec_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "24c1e5857ec89c73df7b1653115f5cf29ac6d139343bde433e2a0ac7c5ecd33e"
+        },
+        {
+          "artifact_id": "W03-rush_rec_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "4e325fbbf7f4b2c8bb7a6569c4729b7a9b5cf32f47048476bdc09a4d36be2537"
+        },
+        {
+          "artifact_id": "W03-rush_rec_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "bf20a8a55074746ad8bf0ddf0210f81d68475b5cb3dfc6ddd332cae7e93cbfcb"
+        },
+        {
+          "artifact_id": "W03-rush_rec_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "f21c8a2a1e18cac8c9c5f7db0f20309ffa4e6b18ec1a560c1af8a476d7628249"
+        },
+        {
+          "artifact_id": "W03-rush_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "4a55d6a00627ab8379244e2e2c9f384c3e2dc94d97607ab718695ce029ecfa58"
+        },
+        {
+          "artifact_id": "W03-rush_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "49a52bc14fbc127aba278d667f9672953b21e0de8d5757399363fc5a611369f9"
+        },
+        {
+          "artifact_id": "W03-rush_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "9a47be37e4e53890c437c9f06d3cb8ebcf86b2efffec4afb2da56ae3d06e07a1"
+        },
+        {
+          "artifact_id": "W03-rush_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "3b98c774c3fda3fbcd3427cc1476e33f5db61a0c3dde4e7fd0b3f71105974007"
+        },
+        {
+          "artifact_id": "W03-rush_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "97da87a904bb67011a3b292f8663e3db290a080483b5c2547099704578a9fa00"
+        },
+        {
+          "artifact_id": "W03-rush_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "12401b61945147bc295a16bc0d0777ad1f83a5444505fe9e9ff49afaf433e2d7"
+        },
+        {
+          "artifact_id": "W04-anytime_td-H-CURRENT-log_loss_probability.json.gz",
+          "sha256": "1c4c7b682509a518c01ded82e1c3f79ca388abe635ab79b2fb62a2e05fe6b77a"
+        },
+        {
+          "artifact_id": "W04-anytime_td-H-MULTI-log_loss_probability.json.gz",
+          "sha256": "1d41001266ecbf95ff7c57e35883e300ddf0898a20e084c4994dcb20b0243949"
+        },
+        {
+          "artifact_id": "W04-anytime_td-H-RECENT-log_loss_probability.json.gz",
+          "sha256": "e3f5f02e43ed0a8bd6ff291c289d3028d289ab74fd92cbd162be3e77d3492648"
+        },
+        {
+          "artifact_id": "W04-pass_att-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "415d324898bff04f155ede5f739f32ca9ab8687ec8b594e4e32d0ef0d35fdc47"
+        },
+        {
+          "artifact_id": "W04-pass_att-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "63797654943e1d9705306afa7db389999f526996c744ddd61f909b2a1d27c6a4"
+        },
+        {
+          "artifact_id": "W04-pass_att-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "f8c4226f95d0a2146a87b9014ca46b4f5f6a72532354d31650711373f208e72a"
+        },
+        {
+          "artifact_id": "W04-pass_att-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "258886662d1bb6607f67f038ec3673d3e3807671d7ee5f6403ee481b314527b6"
+        },
+        {
+          "artifact_id": "W04-pass_att-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "a34345a5963ffd7b3c62ef26ac3da4ee9d67e1f76919b62806116d13d0aacf3f"
+        },
+        {
+          "artifact_id": "W04-pass_att-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "179ef6662af0b497c15ae6a5b2e702495d599ba1d4755bc8d243a50fa2bd066a"
+        },
+        {
+          "artifact_id": "W04-pass_cmp-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "df5b044900bf10fe8bbb9b8f641cc2d2c31acb906e537a02bae013083710dc49"
+        },
+        {
+          "artifact_id": "W04-pass_cmp-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "43b5ee449951046695ed6d933786a8963b3f85ddd169e792b9fe1ffb68c2738e"
+        },
+        {
+          "artifact_id": "W04-pass_cmp-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "0554f06fe72fa5bd8f123777e98966678876a093f23bf3dfef33974d4ec1a245"
+        },
+        {
+          "artifact_id": "W04-pass_cmp-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "21d1f7f7cbfcefc5899933773da8ded60b8afaf41cb85601853d90cac8b9bf1f"
+        },
+        {
+          "artifact_id": "W04-pass_cmp-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "ea6fc5d3504b5a2e18f2dc6328a369f4708483888fd4867b449f4584fee9f3f2"
+        },
+        {
+          "artifact_id": "W04-pass_cmp-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "3a7c86eff69353a441d09f80712c017ac92c349bd8db455eb994c08f22bcd8ba"
+        },
+        {
+          "artifact_id": "W04-pass_int-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "584cb50071a95a8725f923462b475ee306bcda9c651366f759845c3d011075bc"
+        },
+        {
+          "artifact_id": "W04-pass_int-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "0b38d7b356bc5b224fdfc23215c441ae428c576a854da0dc669eaf5365be642d"
+        },
+        {
+          "artifact_id": "W04-pass_int-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "ab268ec2d508255b733319550e2a941c4b326c7971a3f0760675cf27a5a1ab0b"
+        },
+        {
+          "artifact_id": "W04-pass_int-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "c5586deeb7cc8ec1c66f77e52459c9207ce9a78d04b0a7429600050c9336124c"
+        },
+        {
+          "artifact_id": "W04-pass_int-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "c8e002969cdc9505075a19b9f80485f0218170be657d89a33e0b9693725245b2"
+        },
+        {
+          "artifact_id": "W04-pass_int-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "657b0e767e57c1ac47b795b5781a20aec0deceb6ed1ac04af37a160e41a0b645"
+        },
+        {
+          "artifact_id": "W04-pass_td-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "7344c08d58d9b7450d495a8c5f788871f2757af9e84ef75739ea806299de79e8"
+        },
+        {
+          "artifact_id": "W04-pass_td-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "a52c28ec90a17623d295cdb17ef2689698aa94198f8c96ea573a29384ca6f369"
+        },
+        {
+          "artifact_id": "W04-pass_td-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "733dc4d4b14465804d5f088c491d90653904d44df70669df4f27524055d83608"
+        },
+        {
+          "artifact_id": "W04-pass_td-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "98355beac12e048d9add1fd5d826ba153e31043a39e92b064a107985d89b3117"
+        },
+        {
+          "artifact_id": "W04-pass_td-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "2fee7f85093d261a2a1a56f6d2af9602cf5694476ec5ef5d7d84f5c408d81028"
+        },
+        {
+          "artifact_id": "W04-pass_td-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "4d21230e7a4902e77420638f516ae4363fa9c83d8d0f71fdbc8ad128e1d7ef54"
+        },
+        {
+          "artifact_id": "W04-pass_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "e3132e3b71c5b5f421e4dcc62d91622c7eb62e9f45070762da96b2f9f2b1966d"
+        },
+        {
+          "artifact_id": "W04-pass_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "a7a4187a1db5408c677d481970540b3688f950f1a6b90cfc2b9c117c285be2e0"
+        },
+        {
+          "artifact_id": "W04-pass_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "6df02b33a16617097414be96c707b5b60d02168037a389143435f00e771518c8"
+        },
+        {
+          "artifact_id": "W04-pass_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "48ddb3d982fadec1c0f5868ad85a2343619097d5e28400b71f2a0f727c5e11c1"
+        },
+        {
+          "artifact_id": "W04-pass_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "1f61e61ac1b785aa225b1e092dc9237b7f351325a553474a706366cdbd479b8d"
+        },
+        {
+          "artifact_id": "W04-pass_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "65b5da3615ebaf0b84611fe0bc000c2dbd5ea07b3c30c7a54664ba42989b5d93"
+        },
+        {
+          "artifact_id": "W04-rec-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "75a0c3563d220f2897a3675458998d6d28e296ee1b71c3047b6dc8f15e390ed6"
+        },
+        {
+          "artifact_id": "W04-rec-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "c4ff1055e48cddbaff472871377ed6727719e538227c897083cb8746975f43c8"
+        },
+        {
+          "artifact_id": "W04-rec-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "e4976fc1b722cc8648904f56d4008b01fa93731b633e71d18c2245e952fcd600"
+        },
+        {
+          "artifact_id": "W04-rec-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "ebcdd8231d719058400b80ef6d2191e33576c340618d52bbf4e5374f0d7396bd"
+        },
+        {
+          "artifact_id": "W04-rec-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "688c1c3f71599c02f59b376c01450f908411a4e444e91f0d9cdf0c2dcc0e8a69"
+        },
+        {
+          "artifact_id": "W04-rec-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "faa367b52f3293c3027b96c60d82420f1d0bfcd7befb80a8f23f29229d4dc5e0"
+        },
+        {
+          "artifact_id": "W04-rec_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "0c46cbaef62f5850d3e4cc4fdfcd8a43dc776080b20153623f3ec9e09d57657a"
+        },
+        {
+          "artifact_id": "W04-rec_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "bdbb45145d93a48b7a6d64ef55b996ce8e80949d97c57f568291ad53b11ad1eb"
+        },
+        {
+          "artifact_id": "W04-rec_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "4297f010edd9f7aea39452f64ae7e93399082f0d1790889086c29a05177a1800"
+        },
+        {
+          "artifact_id": "W04-rec_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "bf0c9d04e45fe2ca688e8a8d687192004268c9a3bba27230fefb7b50ff540e8e"
+        },
+        {
+          "artifact_id": "W04-rec_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "4a80139d0a5d6195c726b6ecc9fd5c35bd32692b59806c7202be3854ac8c9d53"
+        },
+        {
+          "artifact_id": "W04-rec_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "1b68e399a612a833852dc90b7c62b977c1cd97a0aac14957601d89214bdbdb21"
+        },
+        {
+          "artifact_id": "W04-rush_att-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "7e2bfd919cdaecd7e9c6e289132a23c1dfabaf2771acf35b7240380768a1264d"
+        },
+        {
+          "artifact_id": "W04-rush_att-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "53a180e5477b328011434c1d6ae20eb8048c275753bbe3012bae922071451655"
+        },
+        {
+          "artifact_id": "W04-rush_att-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "4a3a6f1045a0e9cf97e083093d1daf036a7af5cae6d6be70c05f4b4581906617"
+        },
+        {
+          "artifact_id": "W04-rush_att-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "0760cd3463d83dc3d41ad6865ae8ef8885b793c389a9ad9e642cdb0e8c625237"
+        },
+        {
+          "artifact_id": "W04-rush_att-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "9194880508e403c670a3c327fdcb2a44e84bfaf4ccc8bea2b7642fb33cfdb7b4"
+        },
+        {
+          "artifact_id": "W04-rush_att-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "d9935f5b0689ea3c15e78a3d865dd5b6536f0d1f8d14f0cadb68f8b86c0296ab"
+        },
+        {
+          "artifact_id": "W04-rush_rec_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "b7997049988cb72c111bf5ec553f08b5bf94ace4ff4c05910574a2bd2116d8ab"
+        },
+        {
+          "artifact_id": "W04-rush_rec_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "05ed530d9ac58a4b51932a2acaac7bdc0a7e724344f18dc81a981b8ba1a3f352"
+        },
+        {
+          "artifact_id": "W04-rush_rec_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "9348a2074dcaba095f3dc455efc011e5af63902d723b1bc581387a0d0fbe3ab8"
+        },
+        {
+          "artifact_id": "W04-rush_rec_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "2da6dd0719f0d876ab1549a171badd4e0c15859d13152f1f1a93b3546a1e910d"
+        },
+        {
+          "artifact_id": "W04-rush_rec_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "dbf4c9025d14d32a58eacd145ad4ac87e6b38f55ed052e6d92c826c46e39561d"
+        },
+        {
+          "artifact_id": "W04-rush_rec_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "c0cb6d54ee80efd5d94331dd7600398eb2465683c81c312bb11056c500375214"
+        },
+        {
+          "artifact_id": "W04-rush_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "1d3280fd8d1e1a8c2d7d53d1e54b0b92323f58c0681baa1fb29224bad007c01d"
+        },
+        {
+          "artifact_id": "W04-rush_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "fbdf9eb26a520ccb7cc7d9e5ba291ee1bc4ab2aaf19f5618d8f1bcddc72f8954"
+        },
+        {
+          "artifact_id": "W04-rush_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "90e7f876dc2544119f6f696643406cd163748a837f62396f55cb2f7c728a5bde"
+        },
+        {
+          "artifact_id": "W04-rush_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "8fa08bf5450fc0f412d47b6027beaf5fdc4b6931f738040f3ed5c54495b9a4c9"
+        },
+        {
+          "artifact_id": "W04-rush_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "bdbca8cc697af2bc36294ed5ec2f3fc55166eeba557fed3086eeb619fd8a888c"
+        },
+        {
+          "artifact_id": "W04-rush_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "36534477cc026407530a9a006f9c8db9fe003221b88ac5aea3bdedaf2c05b6e6"
+        },
+        {
+          "artifact_id": "W05-anytime_td-H-CURRENT-log_loss_probability.json.gz",
+          "sha256": "deaedf3b84f1301f8b27bb3f6818542cff832813e7bcc9e93d211127e50da427"
+        },
+        {
+          "artifact_id": "W05-anytime_td-H-MULTI-log_loss_probability.json.gz",
+          "sha256": "56fc7bb5688c9cdc534deb14d1f6337ee22b0fb269aae6d44660b808babf0662"
+        },
+        {
+          "artifact_id": "W05-anytime_td-H-RECENT-log_loss_probability.json.gz",
+          "sha256": "27bd313c537f0b78eccbf4f27157d4c165ecae32ac94fd0b02be56f716245476"
+        },
+        {
+          "artifact_id": "W05-pass_att-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "b78e7a16e745a653f739b89bbf83290b4985788ea9a37f5c904c2c8a778c761b"
+        },
+        {
+          "artifact_id": "W05-pass_att-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "39f5b6b26c6ecc4889f44a4c7bd5b9608d304cb84a38cc47ceafaef705137917"
+        },
+        {
+          "artifact_id": "W05-pass_att-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "4f68e3a4bd2deb8ad880527416d806e1fe1c144b13cd96fa200a4d5fa00a0b4b"
+        },
+        {
+          "artifact_id": "W05-pass_att-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "ad51e3eea2d43ed7065ce86c3cf3715815b430343735ec84543619a2ea552ec6"
+        },
+        {
+          "artifact_id": "W05-pass_att-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "6ac9fa7b124328e41677f0001fd503c2d13163640b435f1a71249e3328e4a440"
+        },
+        {
+          "artifact_id": "W05-pass_att-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "11b3a93641f98d7ba68d5d9fafec95efd1b8a6f44e029c68072835c052967258"
+        },
+        {
+          "artifact_id": "W05-pass_cmp-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "abc9d4669ee209b75b0d602fd75446825b6813b90a95be9d0d6268df723f866c"
+        },
+        {
+          "artifact_id": "W05-pass_cmp-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "97d5c1dd1a550bd7892c53816c6ec27fa5a2550d666b637d984f6a3c29606363"
+        },
+        {
+          "artifact_id": "W05-pass_cmp-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "c698239d558099c7dd99b671a27bd9585035eb7a86779792b0bf47599aac2d97"
+        },
+        {
+          "artifact_id": "W05-pass_cmp-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "25c05c70457d48bbb4ce9e263de067c0219e16cc44b279a5cb9a6e4971aa13e6"
+        },
+        {
+          "artifact_id": "W05-pass_cmp-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "a3371f21dac226a4f6eb28938080e6a0ba97828dc8ef948a9a3bedb52dd1029a"
+        },
+        {
+          "artifact_id": "W05-pass_cmp-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "f2bb322397593cf0b73fd80c071e5422063937002ff262b292b90bf4a82d783f"
+        },
+        {
+          "artifact_id": "W05-pass_int-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "313962fc8c8dc7b41d14f392c0381d0f4dd1ddb83318b470230631c8d83b1232"
+        },
+        {
+          "artifact_id": "W05-pass_int-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "72c388b82e13646bea35795dff781d918bb4e65353685e4ab625e719d557f5c0"
+        },
+        {
+          "artifact_id": "W05-pass_int-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "3abdfcc8c345385346e1ef393730b4c5498b45cea2ac062b2caa421be83f2222"
+        },
+        {
+          "artifact_id": "W05-pass_int-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "fd030a0834899ddd12aaa0f2568add9f2d9f8cfa56ef1a404de038ce65e54612"
+        },
+        {
+          "artifact_id": "W05-pass_int-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "1a349746ca27971d80149dbc000bc231cac810eb33864d2c65a85a81e50ed409"
+        },
+        {
+          "artifact_id": "W05-pass_int-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "a173054e1ea73a40650c0d5d35a7e7748583a26ad24c9a174412f148dbd6a95f"
+        },
+        {
+          "artifact_id": "W05-pass_td-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "d72509a7b8f01a2dec43c8a03cd213db04f034fc130a355423f8edee1ea89e30"
+        },
+        {
+          "artifact_id": "W05-pass_td-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "fe90981c473ca1603d6b543a7be06f822ca733d37a682d83b65fb15a45ffdd58"
+        },
+        {
+          "artifact_id": "W05-pass_td-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "80922bfb11f95c4eb5e7e22ef081cbd7f68bb4780815b11d875ab82cd7648151"
+        },
+        {
+          "artifact_id": "W05-pass_td-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "a4eab6a7b2b54faa921a4481f0e3c9de55dc3b3ff815cbe1d3eb734af8847613"
+        },
+        {
+          "artifact_id": "W05-pass_td-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "b6892fe08ae732d75ef432fb67df493ba740767c39fe8c00497e8beddf3ada4d"
+        },
+        {
+          "artifact_id": "W05-pass_td-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "90d766699d6576c290ce48053555dd2bff84fbbfb0082a50bcedf2d3faf91e63"
+        },
+        {
+          "artifact_id": "W05-pass_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "81009aa84ad2d291b5188386b99ace4bc9c819f16165a91544deb5148b82a2d2"
+        },
+        {
+          "artifact_id": "W05-pass_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "020f498f152661d200c2917e7ea8a9938206fae7a3a8ae1b1843b426f85d6d12"
+        },
+        {
+          "artifact_id": "W05-pass_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "2fb3a75383d381917bc650601c3118c00d64051ff54a6304f79ef2e8598443da"
+        },
+        {
+          "artifact_id": "W05-pass_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "7b67b217db182be00a29ba2fc0924cddc34ccaef6a35290abaab0ac3d2206ff5"
+        },
+        {
+          "artifact_id": "W05-pass_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "592fcdc056789de91f2cf12aff6c4cc923dfdcaf84ff979e170104baa44c29b8"
+        },
+        {
+          "artifact_id": "W05-pass_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "2ed43577f550b61cdcae5311261d1715ff9f84066abd7ad57e852c8432e78bbe"
+        },
+        {
+          "artifact_id": "W05-rec-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "fb9085d10c33ef6bd60a36357260b29b468a802134afd3e4b9e9c3296c227791"
+        },
+        {
+          "artifact_id": "W05-rec-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "dc8b12e87b72b41acd1ed56a0142d75ba4a4a87cfdcabb281b3b0d5755a5d580"
+        },
+        {
+          "artifact_id": "W05-rec-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "49a14a8f47492d337fb381b9c1caf45bbe009d33dfeebb0fe108b25fe30d87fe"
+        },
+        {
+          "artifact_id": "W05-rec-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "7d9a2b1cbb5096903a454d12697dc7c65f2ff70a912ffe6bd7dc1415bdd0f239"
+        },
+        {
+          "artifact_id": "W05-rec-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "4548deb1c61d8fc82f533669ceddfe53049a2d1d737bc6288dde49e8a8ccf421"
+        },
+        {
+          "artifact_id": "W05-rec-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "5a280f770881caf9650934528385132a025b669dfbce3a277dd4f6a557f047df"
+        },
+        {
+          "artifact_id": "W05-rec_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "471905e271c2c3062e75bde3dcea8e264b61da52913197ce9757dd97cca92ed3"
+        },
+        {
+          "artifact_id": "W05-rec_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "642c67ce69185db1dccf19c087f627c30f6c1e8d82fa6968d5e9f81983dc9b74"
+        },
+        {
+          "artifact_id": "W05-rec_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "707802bdba3f335484af0036f07b0fe6c2bc5c458baf4f83dcba135dafdbf253"
+        },
+        {
+          "artifact_id": "W05-rec_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "e754c29e93ec335427577a2fa84445f951d3c4b47392faac71fbc3a873a5a4b1"
+        },
+        {
+          "artifact_id": "W05-rec_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "9e5d98d940ecddcebc4c6411ac108a0ee2878b443439122ece213b91e23e4072"
+        },
+        {
+          "artifact_id": "W05-rec_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "eb2b5195a99941e2549c0d88833c11ad09f6739c38c6e209dd624851bde586d2"
+        },
+        {
+          "artifact_id": "W05-rush_att-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "a91302857ab0b862eac254ed78650dcf256a783c4fc6e0af94b452b63348e8ba"
+        },
+        {
+          "artifact_id": "W05-rush_att-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "927935351069d3e017252cfb50fe8ae8da1349c45ccd2b4337a316982babf9db"
+        },
+        {
+          "artifact_id": "W05-rush_att-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "d3d3e16c52a0a129dd68e0208b18e3cded0d7e15943b5d0b4636d64d7b3d8bb8"
+        },
+        {
+          "artifact_id": "W05-rush_att-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "46869359843e885c769df9902e293f96162430b2bd55496a956036a14a908896"
+        },
+        {
+          "artifact_id": "W05-rush_att-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "80ce384bb28ad8b89f23c20e49098c74095e7629bab7240c513f4d78ff31ddab"
+        },
+        {
+          "artifact_id": "W05-rush_att-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "7d6259f7bd144b2aaae7a602158effca1422b0e28efe1c0ce24969973ef8b62c"
+        },
+        {
+          "artifact_id": "W05-rush_rec_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "8cb0df9bacc5419322e35d2e9c2a2ecaeae905a44e926650d1957d4f907df646"
+        },
+        {
+          "artifact_id": "W05-rush_rec_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "361550eaac2cf11097f58f90717908cccd4affa4b84e54424520b4b377d962c8"
+        },
+        {
+          "artifact_id": "W05-rush_rec_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "0d5391301ff461225b691e3b9688b131cf976a019f96bbf38a2739be6b284f98"
+        },
+        {
+          "artifact_id": "W05-rush_rec_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "31234ca319353e00bf500de0f3a1837e1ba1cc1e8093cd398d9399e7f608d918"
+        },
+        {
+          "artifact_id": "W05-rush_rec_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "af6c31095c6cf5a4fe496d6d45b3f709be3d5513fb819d1ff25313d77559bbda"
+        },
+        {
+          "artifact_id": "W05-rush_rec_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "3fdace3d4464d5beed9db751e325f851615e39cedda234035dd8f33326bd187a"
+        },
+        {
+          "artifact_id": "W05-rush_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "50a91680e3e44ae492bd7ec9f6448bfd7e8631d96c726ac3a6d70475651658a6"
+        },
+        {
+          "artifact_id": "W05-rush_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "9f521297bf38fdc0b123defc293d9851e18c6d4e89bd5e2fc78c27305bf658bc"
+        },
+        {
+          "artifact_id": "W05-rush_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "d7999effce9a7bf6ce36925b069d3c307642c3bf08c341f537d0a2e774c6b0be"
+        },
+        {
+          "artifact_id": "W05-rush_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "7eddce6f17f36fdda8b34932b5a341e282591316be51f1e393a061f7194fb0c9"
+        },
+        {
+          "artifact_id": "W05-rush_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "2d2c325667d0b74554d37ec6c407668e8375abff9125b97caaa7e59e5a1af890"
+        },
+        {
+          "artifact_id": "W05-rush_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "6504b9e4bef2e0526bdfbb937d2db6bfc345c253beee97554267666f33ff3f36"
+        },
+        {
+          "artifact_id": "W06-anytime_td-H-CURRENT-log_loss_probability.json.gz",
+          "sha256": "a5458122b27b29d1301faffbcba834efe4c631e2e81ba641ce2468a34af762c4"
+        },
+        {
+          "artifact_id": "W06-anytime_td-H-MULTI-log_loss_probability.json.gz",
+          "sha256": "4e056f63522db121eea792e1388f7c07c5f0a870763f392e59bf14bf4cbeb359"
+        },
+        {
+          "artifact_id": "W06-anytime_td-H-RECENT-log_loss_probability.json.gz",
+          "sha256": "6e936103dc80fccd31d2409d22b82ece01ff10bb5469db8371807b08b3dcf8eb"
+        },
+        {
+          "artifact_id": "W06-pass_att-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "abc9153b341d4c30150f036a3f248c8104b26e7a782be72b95aa71ddf5618d15"
+        },
+        {
+          "artifact_id": "W06-pass_att-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "283539713dac475f6a33fa21804040dded143841651226a35922004903b7222e"
+        },
+        {
+          "artifact_id": "W06-pass_att-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "fcf541d14f53f18214287803631e70632742fda841bc40fd75671efb37301bd6"
+        },
+        {
+          "artifact_id": "W06-pass_att-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "ed85da9325d7d6d0768d1c9b10b7218ad35113db11cc86295b4b621be7b91f74"
+        },
+        {
+          "artifact_id": "W06-pass_att-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "2eab0c968253a054b31bd04c60a328fe7c94328453453688bd3df88854d9a24e"
+        },
+        {
+          "artifact_id": "W06-pass_att-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "8dda5a656210e1fdd3bcc3dd22196f5172bba2a32744031e7fe3d0ccecb19e6f"
+        },
+        {
+          "artifact_id": "W06-pass_cmp-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "10f21d2232378754d54967d863553e6753238e1a318d13247616be867744ab48"
+        },
+        {
+          "artifact_id": "W06-pass_cmp-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "8c06510ac809f29aa5d563eb884ce9fa0359fa3144c6fd59a550fd77a162d070"
+        },
+        {
+          "artifact_id": "W06-pass_cmp-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "e863155d8c9859e63349763db8b9dbe8f07858d8a8519d8fdd4bab30e13a5b41"
+        },
+        {
+          "artifact_id": "W06-pass_cmp-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "c6070d1c0b17e6db8acb99a294761c454a64d90c28307e70c70e3a7cbcb2ae06"
+        },
+        {
+          "artifact_id": "W06-pass_cmp-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "75fc0e4b77415158ba7c0cabd896bb49cdf27ea56b7b225e75712f95a4813038"
+        },
+        {
+          "artifact_id": "W06-pass_cmp-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "47a88fc9460818dfef10166e59ae2619359681e163f0da05231da22fa859185f"
+        },
+        {
+          "artifact_id": "W06-pass_int-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "0c0e66639cdba3212ab6c6cc3da3462845ff896ec9361786bb9664a7baf1409f"
+        },
+        {
+          "artifact_id": "W06-pass_int-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "58ec0b17e5239a35eace9ad45cc370ecf283210edd4aa405f83f3fbff0c877a2"
+        },
+        {
+          "artifact_id": "W06-pass_int-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "c09c4cb489c4640105a49b9c669d0a8ebf25a760179d349a02d7f578e3263201"
+        },
+        {
+          "artifact_id": "W06-pass_int-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "1929d2ba7608a519302b5cbca6725a3ab8e0d275e0bb0ff2176b4e50945fe2a4"
+        },
+        {
+          "artifact_id": "W06-pass_int-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "66dd45b0f34d54a77d176a297f431aeb5eb44340f0e3c8579bfce9918d455d84"
+        },
+        {
+          "artifact_id": "W06-pass_int-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "a3d0e2b9c9e4c859d07bbb5aec0c35d63888ea171bba61fb56288ad87f512005"
+        },
+        {
+          "artifact_id": "W06-pass_td-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "faffad39077d6417b8ccf68e9392ec6fd926c2eb0213206fff4d9cb99a6d8f23"
+        },
+        {
+          "artifact_id": "W06-pass_td-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "d9f6b408c6eeba65f569742c43646ca9544fc853f607148edb7ba069ca6427a6"
+        },
+        {
+          "artifact_id": "W06-pass_td-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "195b29c82fc055f5e0bed516556ee9787691a28b9e2ba01e3dbd01d0908aa5dc"
+        },
+        {
+          "artifact_id": "W06-pass_td-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "6032ffda0277dc13135a08875ca5967fdbefc99d82245f2200e4107f19c8c1bd"
+        },
+        {
+          "artifact_id": "W06-pass_td-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "7929da939a276ede6959d4853b96a017522510d4fc89136f49fba07d2c095c34"
+        },
+        {
+          "artifact_id": "W06-pass_td-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "042a9c50ab5f9dee0f02c4c0488649402ad685d873fa9eeae5fa44d34d3188a4"
+        },
+        {
+          "artifact_id": "W06-pass_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "e955ccbba2d84c21e33608d84ba91e45fed4253dbb817ecc75bbcc1e0d995ca7"
+        },
+        {
+          "artifact_id": "W06-pass_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "10e562f6dfd3daa3911b69d27d5ce46178ce97fc7d280f6cd8f3bc888249d34b"
+        },
+        {
+          "artifact_id": "W06-pass_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "b74f5f7b80a206b1d042cbd175b6702a32cf4f8ae61151a5deb178a9ede79bff"
+        },
+        {
+          "artifact_id": "W06-pass_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "ab563b0770bf04cf1a411904001139d258c0fe85f53e5a7cafde954af23c408d"
+        },
+        {
+          "artifact_id": "W06-pass_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "82a8f47454367bfae31501aefd2dcbb99b7b26542312ef5457ff3fcba1d6e3dc"
+        },
+        {
+          "artifact_id": "W06-pass_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "cd3c5bb47e4f37bf15b0756bb616b87e7c5bcce590f739a977669b7949aa9c20"
+        },
+        {
+          "artifact_id": "W06-rec-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "1271d7ca90268335009186255bc052cf645610ec13eea99a1c987b5304710436"
+        },
+        {
+          "artifact_id": "W06-rec-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "bf91233f59472c371cdeb2460bedc439857f2865c4c9032ed2fe7eb1190a3b7e"
+        },
+        {
+          "artifact_id": "W06-rec-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "5b20a33cf199f7add4dcdd7d1a458c45f4b5c9af4d59a891ccf2fbb321ea81b2"
+        },
+        {
+          "artifact_id": "W06-rec-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "190708934eacc9d2401ffe2c1bdfa1672d373f50b628902abfa742e348727cca"
+        },
+        {
+          "artifact_id": "W06-rec-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "6133c038f5a3374745a98d019d8ec1f9597c83f166bc4cb9bce594c2761031c9"
+        },
+        {
+          "artifact_id": "W06-rec-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "092c239347e84432f990d88ad4f73f2c2111acb9eb722bc5da28360e2afbb427"
+        },
+        {
+          "artifact_id": "W06-rec_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "24273e808f668a58e3de4c8bc9ddc36c471279b87410bfd1cbf243ecf2d2e049"
+        },
+        {
+          "artifact_id": "W06-rec_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "1fd1598e375debc0bd2ead7ef353228b435ac8a348ebe74ff9d25cc2aa909ca2"
+        },
+        {
+          "artifact_id": "W06-rec_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "fb86817e2fef689e245f22d0590062a9f1b01b9509c8c2ed4b66ef9be70a55dc"
+        },
+        {
+          "artifact_id": "W06-rec_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "86e545c94f8a26ebacb0e579c56dce65468d4c3b8867d5085a0b008ea7a71bf8"
+        },
+        {
+          "artifact_id": "W06-rec_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "779e923936d4ac7c5e87bcaf5ed2492551268c07bce96e6ae7c9fbe4ecd03a69"
+        },
+        {
+          "artifact_id": "W06-rec_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "c7d616fad6c7c875f02076ba35dd64bc84d40e03e4ccb5f53db6e272e665668e"
+        },
+        {
+          "artifact_id": "W06-rush_att-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "a6199076a37d8c9f98545f5bcffb9f4c184051140e619785612102411fee7620"
+        },
+        {
+          "artifact_id": "W06-rush_att-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "542a09daef9820c13aa150ae20418cbb2a9f72e7d8b36f8a8660ad4c77bf06b8"
+        },
+        {
+          "artifact_id": "W06-rush_att-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "5574b49abead6b3896158c69ee5fe05a6ba92100b67b0d35657510a7073f2088"
+        },
+        {
+          "artifact_id": "W06-rush_att-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "d28b5d8bd5c8aaf46025a0a33087fde01f54bfa67c4a888e409e6c1a0939a780"
+        },
+        {
+          "artifact_id": "W06-rush_att-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "a65c6731661c489d37dc9d4bc5cd7fc79ebb09ec4a163ecd4b0662041611668f"
+        },
+        {
+          "artifact_id": "W06-rush_att-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "c4689db74f4597975e50272b5a3b8a6d3fde26ff592781fb6fea4d6c581eda29"
+        },
+        {
+          "artifact_id": "W06-rush_rec_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "db25f4fd37d81cb52181e306be8708ab228993f0b3f5c60673b65482fdc639f1"
+        },
+        {
+          "artifact_id": "W06-rush_rec_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "2e7d6fcb98d528d0752f7c53aacb3f2c64ffd1adf9d2c2e4f279d7ff9289a867"
+        },
+        {
+          "artifact_id": "W06-rush_rec_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "f71c4e8890591bbab4280c9eddb60a7f8919a6ebb96587dffec48a0b9dc0c06a"
+        },
+        {
+          "artifact_id": "W06-rush_rec_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "329b50bf8cd71be9f743223e723a59978cfa73cb2a74f8c8d7e63ebac0bd5792"
+        },
+        {
+          "artifact_id": "W06-rush_rec_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "aa2bfb355ccb626ff1db27d441a7446422721a061a56d628cdd01cb5d9bf71f3"
+        },
+        {
+          "artifact_id": "W06-rush_rec_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "30224ded5ad26ad8d7f4f19cbd92e06ab393ac88356bdf101baf094c37277b37"
+        },
+        {
+          "artifact_id": "W06-rush_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "8fb52f8f0693de76e18243eac30347fa96a51e58d0ae1ee15228fd73d94ecb40"
+        },
+        {
+          "artifact_id": "W06-rush_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "9c7ed37a14b9cc1da839818f5345ef9f41e5ad6a97ac36e9b5767fa5f0d6e529"
+        },
+        {
+          "artifact_id": "W06-rush_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "ac27c49e218e19146500dbf6e515f2fb90a3b0f9e367a2a56ea50b56a937c7f6"
+        },
+        {
+          "artifact_id": "W06-rush_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "64cd8b6210bb5e2fc954b05faea676734504280f02d7b540a6fad560c675214d"
+        },
+        {
+          "artifact_id": "W06-rush_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "5e3e6bf68e8f19b453c633b6514c8adb60470b5dbe69640ca2f75500d1c9ad85"
+        },
+        {
+          "artifact_id": "W06-rush_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "259220b51bb3bf52474e5fd2b062f5ec35597da07cc5c113faaa85f04ec22a7f"
+        },
+        {
+          "artifact_id": "W07-anytime_td-H-CURRENT-log_loss_probability.json.gz",
+          "sha256": "f2f6b99140b438813dcdc20d0eb14e179071e9a62925d578ebdde5bdb5e16798"
+        },
+        {
+          "artifact_id": "W07-anytime_td-H-MULTI-log_loss_probability.json.gz",
+          "sha256": "48ac4cb415f964cf834d8500e11a20db0ab694d3061663ff6f1ec1634d5627ef"
+        },
+        {
+          "artifact_id": "W07-anytime_td-H-RECENT-log_loss_probability.json.gz",
+          "sha256": "b32e9e5621abd917bd21797b956960d5c7e846af835e4be3af668825faf0d5ca"
+        },
+        {
+          "artifact_id": "W07-pass_att-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "51ce35a5ceff74093b18a7579799a5f1afdd9659f0874e67dffbab4eb0624d3b"
+        },
+        {
+          "artifact_id": "W07-pass_att-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "3f4f00c33121786642545f1d6a0870ce2321bd320382cc04967df4f3faa8a462"
+        },
+        {
+          "artifact_id": "W07-pass_att-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "a8107f92de5c38c5aba934720b4948343a6b27edf84913ffbc293bcdc1ef5d49"
+        },
+        {
+          "artifact_id": "W07-pass_att-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "583786a82321a43e46ef53ef6edc3dc74a20a71806c6064cf15d173b0393cbf9"
+        },
+        {
+          "artifact_id": "W07-pass_att-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "a12381662d767bcad909cdca11986ff38375c985296dc378e5c572959c6ccead"
+        },
+        {
+          "artifact_id": "W07-pass_att-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "3b5e182e0d0b6dc4fccee19d7e7b6c2646531ddff283376bc3b184e9d8ab4580"
+        },
+        {
+          "artifact_id": "W07-pass_cmp-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "acdb4f7e9517ba7032e07249f6ea5a8239d2fa14e17e5336833aa46412ea2314"
+        },
+        {
+          "artifact_id": "W07-pass_cmp-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "51bbddc4e1367b464d49775a270d4372328d80db6ae36a012b1fcc430d03266a"
+        },
+        {
+          "artifact_id": "W07-pass_cmp-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "db058417be270e96f0f9664072b4d1b19b768d154c4c3df81de1f161dfe7c987"
+        },
+        {
+          "artifact_id": "W07-pass_cmp-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "97ddaf3d978e62bb7fc911306ea0e8bf29a90bb6bb24ae81db06e67030993440"
+        },
+        {
+          "artifact_id": "W07-pass_cmp-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "14a4ffee19d8b2a81c88206c15a7eda7b3dc66f2d2b6c309438bb10d18c29a9c"
+        },
+        {
+          "artifact_id": "W07-pass_cmp-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "9dd29845d7b8586578b7f03621c93a554ba24faf916c06d73f32b20185c286c3"
+        },
+        {
+          "artifact_id": "W07-pass_int-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "2609bf06c02c6758efbc552ebc33874d0cc5054a48b5efa3bbac5185348d2254"
+        },
+        {
+          "artifact_id": "W07-pass_int-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "af052554bda66dc6a34e89e426541cd055edaf002b59730fe9504ac60f8abb10"
+        },
+        {
+          "artifact_id": "W07-pass_int-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "24ec3af9e2547baedea272fca6253fc7c0a5fd6b37e08d282c50ebfca2b3b40f"
+        },
+        {
+          "artifact_id": "W07-pass_int-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "f1d64377e0e70c712ba36d42d839237866caf998adce21843621e2a806dffea5"
+        },
+        {
+          "artifact_id": "W07-pass_int-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "b786674641859fd2b6aaa5fa5d722c3448cc35a6fe8bc59ca312ef9a4de4365f"
+        },
+        {
+          "artifact_id": "W07-pass_int-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "91e2d8bb37edc8462a837a7f139a19d52a1e2521a84d4a86fb52905c77c71e62"
+        },
+        {
+          "artifact_id": "W07-pass_td-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "a87f2b13719cc01eea19fed1502fc8e348a3170537e7fac95ea890db1f599b13"
+        },
+        {
+          "artifact_id": "W07-pass_td-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "deb953db4394d10d7237e85d453cb811d5f5cd4047b195876e5fd514ebdc1680"
+        },
+        {
+          "artifact_id": "W07-pass_td-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "6bb2c8da22065425917531d2734c1dc0a3e3c97d87c29ee1357dad3acd42f5cf"
+        },
+        {
+          "artifact_id": "W07-pass_td-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "582624523f758d4bfb455a2366feb214cfc6fa5e3c936a1c8e22563f95b7f5e5"
+        },
+        {
+          "artifact_id": "W07-pass_td-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "b885ab1568b68ad68bfd6edc0abc5d4d3be61148fa865d551e7a66380d385f70"
+        },
+        {
+          "artifact_id": "W07-pass_td-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "ac60678299713df5f076a2921443b643441687712f81a9d8c827e978153a30ec"
+        },
+        {
+          "artifact_id": "W07-pass_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "7a5dfb48f40556dc5d18eec0c47a322b0624f89d270b462cf56104b6f00bf112"
+        },
+        {
+          "artifact_id": "W07-pass_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "cc0eda9f5ba520983a1473b185b318c13e23384addfa3cac95d842df6067237f"
+        },
+        {
+          "artifact_id": "W07-pass_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "8042ca1ab79ad2e06dc863e2d4fbb0f28a9fbe40c0609e74a27d180a4f10c259"
+        },
+        {
+          "artifact_id": "W07-pass_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "a8748d1d5af8b10a539595d10eaf68c47ad67f14e4e97ddbb0097cd9616ecb6b"
+        },
+        {
+          "artifact_id": "W07-pass_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "bedacd8888ec23b523e73e023deaf56e4040e345f81d5e83609d3e43a31687bb"
+        },
+        {
+          "artifact_id": "W07-pass_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "0cb10315a26a38138edb8ae27c512d0630c22c080aa6bbc286414e6d7d97dd09"
+        },
+        {
+          "artifact_id": "W07-rec-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "abfff550bcdaffd0d959ddc0a6eb598cb4e8481cedcee78292d7c0128fe5af26"
+        },
+        {
+          "artifact_id": "W07-rec-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "f75f39f4c04476c4c571179571f9e9b6f7aff77e2d92a355d10fa8ebd56622e8"
+        },
+        {
+          "artifact_id": "W07-rec-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "2ebed3eab6dfd4599368bde1722a5371fc4376ec258fb2fbe6f6ab4e3d7e167a"
+        },
+        {
+          "artifact_id": "W07-rec-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "76019aad31ab03f228e257bf6118be8a7d616f725b763ed4d9dc228cd814a169"
+        },
+        {
+          "artifact_id": "W07-rec-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "50c45374cbbd00f744890a402156adcea116b3aae53a7bd526cfee3a31c2f44c"
+        },
+        {
+          "artifact_id": "W07-rec-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "41dd74b37da1f2ca2f10498e9f8b350a5bbb2ea6cdc0714914576d042cab7a05"
+        },
+        {
+          "artifact_id": "W07-rec_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "583d41adcc0c924d3dafe24671a8a89a76a2fffd49adb1274fd3261263906ff4"
+        },
+        {
+          "artifact_id": "W07-rec_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "217c7f4b4bda81da05df162dea1310e95ece2f5585afa754b9486ed8afcc9f8f"
+        },
+        {
+          "artifact_id": "W07-rec_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "4cfe3ad593e57883a2dc3d46ae60ae1ac976bbf70501dfd4c8359db23be98425"
+        },
+        {
+          "artifact_id": "W07-rec_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "fb5a28b4ee51145deeb9102406b5ea74f0adb3cf451e91744a2b2e78e8b8ba4d"
+        },
+        {
+          "artifact_id": "W07-rec_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "1d71ee72e935196e6a5335e465a6ffe7dca1c5a8970b6966f6f7709828deea4e"
+        },
+        {
+          "artifact_id": "W07-rec_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "505ceadca556f9b68ef85c0c61dca349157cc076c789f7103949e90023ed10b2"
+        },
+        {
+          "artifact_id": "W07-rush_att-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "8f1b00f64d319390761838eb0de5a4f56a1d2617193dc38f7d3793c7625538f1"
+        },
+        {
+          "artifact_id": "W07-rush_att-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "972e40c1c485ab10df952ed52f04d9d9a986d6faa073539a19c6f8ac67e647db"
+        },
+        {
+          "artifact_id": "W07-rush_att-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "b975dd57b9d10fa650d9fc746a97e94737a421a7ece76f62104a7fffcbf914ec"
+        },
+        {
+          "artifact_id": "W07-rush_att-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "120ca89744fd26bd661fa6174ed115ac1c9318445b1ca7cb087d0de76dc6f830"
+        },
+        {
+          "artifact_id": "W07-rush_att-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "0885706f5f1cdfdeb65f5395b71844e6cfb0e76f5064d1b1c0888320a22756e9"
+        },
+        {
+          "artifact_id": "W07-rush_att-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "be839e2bbbb3c66affb2b5aef22f388158e971a7784a66da367da45c14c0fe11"
+        },
+        {
+          "artifact_id": "W07-rush_rec_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "8897b4ad6d527d2d64cc2c67fc6acbb852fa840508e0009626742998f3e9b6b5"
+        },
+        {
+          "artifact_id": "W07-rush_rec_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "bcb9fc5ec2c724e3148a09b7faa4625de95ddb8888b68973f6432a8ec986dc38"
+        },
+        {
+          "artifact_id": "W07-rush_rec_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "00bc300150f69e5ed150477d8b735d508d0670f740538651667b82815dc7a0d7"
+        },
+        {
+          "artifact_id": "W07-rush_rec_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "c66cde8a719e2cc95df7dfd2e5db14a01c7829d3e070119e56b3f3d4a516e1b1"
+        },
+        {
+          "artifact_id": "W07-rush_rec_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "10ef79d13a1bd144f1ec55de45c3bdc45f48bd308b4cc1b790bef7a17bb9fa9d"
+        },
+        {
+          "artifact_id": "W07-rush_rec_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "babddfa40dd401c8a64dd203a543cfbd691a025898d03d0e813789a4d6770399"
+        },
+        {
+          "artifact_id": "W07-rush_yd-H-CURRENT-absolute_error_point.json.gz",
+          "sha256": "e67579896f609398e0beaa6f88d660b8e14cc3e83ff794d5db5fc0904e5613da"
+        },
+        {
+          "artifact_id": "W07-rush_yd-H-CURRENT-squared_error_mean.json.gz",
+          "sha256": "e56673439bcaa03b009d600c34a7c9e3db2ed0fffd9920ea1a5f845164eae69f"
+        },
+        {
+          "artifact_id": "W07-rush_yd-H-MULTI-absolute_error_point.json.gz",
+          "sha256": "cb3511ff348a595b5d63bcbb6e63cdba75c69f51c11d8c14ff958774e1a9a690"
+        },
+        {
+          "artifact_id": "W07-rush_yd-H-MULTI-squared_error_mean.json.gz",
+          "sha256": "6d6d200a5aea5d705f148834393d522fdf2e8632a2b3fb8b437d3f2756368a3a"
+        },
+        {
+          "artifact_id": "W07-rush_yd-H-RECENT-absolute_error_point.json.gz",
+          "sha256": "6c5ba231dcdeab99ffbec12cb39cbac58d4012aa158cf343f9e786c76846fa76"
+        },
+        {
+          "artifact_id": "W07-rush_yd-H-RECENT-squared_error_mean.json.gz",
+          "sha256": "66582d3f329e684ff1928758f3b3dd9f243b1fb369e4ca6300b168b26a4cc4c6"
+        }
+      ]
+    },
+    {
+      "adapter": "normalized",
+      "files": [
+        {
+          "artifact_id": "all-predictions.csv.gz",
+          "sha256": "8850d4beea01033e033978637de3e2b68142eb842bd75ec49b394e31d0d55cba"
+        }
+      ]
+    },
+    {
+      "adapter": "normalized",
+      "files": [
+        {
+          "artifact_id": "PREDICTIONS_FLAT.csv.gz",
+          "sha256": "0572701db61761b5f3bc551e98b3335fb149218cd50b00eee1847b7ea2ee1e46"
+        }
+      ]
+    }
+  ]
+}

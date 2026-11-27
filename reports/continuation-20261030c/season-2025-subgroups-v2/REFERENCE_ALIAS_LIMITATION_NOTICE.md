@@ -1,0 +1,5 @@
+The original broad v2 artifact remains preserved. It contains 8,027 univariate score views, but its fixed empirical reference aliases were incomplete. The paired matrix therefore contains 4,999 unresolved empirical references; the 1,844 views requesting the all-selected-controls/all-four-candidate-policy learned mask are invalidated in the result registry.
+
+This is an evaluation/reference-scope defect, not a change to the retained NFL forecasts. Independent bounded replay verified all 45,579 selector profiles and ranks, plus 908 full-system score views and their same-policy ordered-control comparisons. That does not authenticate the complete broad matrix or its learned intersections.
+
+The [compact v3 panel](../season-2025-subgroups-compact-v3/README.md) corrects empirical functional aliases and independently replays fixed 2026 candidate choices against two exact controls. Its common-learned mask is the selected candidate plus those two controls. It has a different scope and does **not** repair every v2 view. See the [combined subgroup report](../SHARED_SUBGROUP_RESULTS.md) for valid conclusions, adverse results and verification limits.

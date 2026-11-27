@@ -1,0 +1,1859 @@
+{
+  "state": "PASS_INDEPENDENT_EXISTING_SELECTOR_WEEK_WITNESS",
+  "source_bindings": {
+    "reports/championship-20261030f/category-selector-v2/DECISIONS.json": "3bd91b2637ece877a3608f7fbefa58452ec0b669d2df7f8e3547410eac902899",
+    "reports/championship-20261030f/category-selector-v2/FROZEN_PROTOCOL.json": "74cc2804eeefe157ac878b745540f48add2c39912943480dfcf8ef867915ce14",
+    "reports/championship-20261030f/category-selector-v2/SCORES.json": "a074515d757e657182967aeea58aaaef18e958eda136ab1997748d994febd492"
+  },
+  "original_source_bindings": {
+    "reports/continuation-20261030/distribution-wave-v2/SCORES.json": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+    "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+    "reports/continuation-20261029/hgb-history-v1/SCORES.json": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e"
+  },
+  "policies": [
+    {
+      "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "history": "H-MULTI",
+      "scored_season_weeks": [
+        [
+          2026,
+          1
+        ],
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ],
+        [
+          2026,
+          4
+        ],
+        [
+          2026,
+          5
+        ],
+        [
+          2026,
+          6
+        ],
+        [
+          2026,
+          7
+        ]
+      ],
+      "distinct_scored_week_count": 7,
+      "n": 844,
+      "native_metric": "mae",
+      "native_error": 3.0497630331753554,
+      "cumulative_record_id": "SELECTOR-582957c6336581d18ec553a3",
+      "scope": "RETAINED_NUMERICAL_OR_EVENT_PROBABILITY_SELECTOR_WEEK_WITNESS_ONLY_NOT_OFFER_OR_TOP_PICKS",
+      "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+      "minimum_five_numerical_week_count": "MET_NOT_ADMISSION"
+    },
+    {
+      "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "history": "H-MULTI",
+      "scored_season_weeks": [
+        [
+          2026,
+          1
+        ],
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ],
+        [
+          2026,
+          4
+        ],
+        [
+          2026,
+          5
+        ],
+        [
+          2026,
+          6
+        ],
+        [
+          2026,
+          7
+        ]
+      ],
+      "distinct_scored_week_count": 7,
+      "n": 844,
+      "native_metric": "mae",
+      "native_error": 3.059241706161137,
+      "cumulative_record_id": "SELECTOR-7f6957d5cdd2d2315ada6498",
+      "scope": "RETAINED_NUMERICAL_OR_EVENT_PROBABILITY_SELECTOR_WEEK_WITNESS_ONLY_NOT_OFFER_OR_TOP_PICKS",
+      "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+      "minimum_five_numerical_week_count": "MET_NOT_ADMISSION"
+    },
+    {
+      "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "history": "H-MULTI",
+      "scored_season_weeks": [
+        [
+          2026,
+          1
+        ],
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ],
+        [
+          2026,
+          4
+        ],
+        [
+          2026,
+          5
+        ],
+        [
+          2026,
+          6
+        ],
+        [
+          2026,
+          7
+        ]
+      ],
+      "distinct_scored_week_count": 7,
+      "n": 844,
+      "native_metric": "mae",
+      "native_error": 3.059241706161137,
+      "cumulative_record_id": "SELECTOR-67ac98bb3a675ea87c0d47aa",
+      "scope": "RETAINED_NUMERICAL_OR_EVENT_PROBABILITY_SELECTOR_WEEK_WITNESS_ONLY_NOT_OFFER_OR_TOP_PICKS",
+      "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+      "minimum_five_numerical_week_count": "MET_NOT_ADMISSION"
+    },
+    {
+      "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "history": "H-MULTI",
+      "scored_season_weeks": [
+        [
+          2026,
+          1
+        ],
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ],
+        [
+          2026,
+          4
+        ],
+        [
+          2026,
+          5
+        ],
+        [
+          2026,
+          6
+        ],
+        [
+          2026,
+          7
+        ]
+      ],
+      "distinct_scored_week_count": 7,
+      "n": 2118,
+      "native_metric": "mae",
+      "native_error": 20.469323545367303,
+      "cumulative_record_id": "SELECTOR-ba4a9d6c022c60bc8e1e5c0c",
+      "scope": "RETAINED_NUMERICAL_OR_EVENT_PROBABILITY_SELECTOR_WEEK_WITNESS_ONLY_NOT_OFFER_OR_TOP_PICKS",
+      "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+      "minimum_five_numerical_week_count": "MET_NOT_ADMISSION"
+    },
+    {
+      "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "history": "H-MULTI",
+      "scored_season_weeks": [
+        [
+          2026,
+          1
+        ],
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ],
+        [
+          2026,
+          4
+        ],
+        [
+          2026,
+          5
+        ],
+        [
+          2026,
+          6
+        ],
+        [
+          2026,
+          7
+        ]
+      ],
+      "distinct_scored_week_count": 7,
+      "n": 2118,
+      "native_metric": "mae",
+      "native_error": 20.125661066525677,
+      "cumulative_record_id": "SELECTOR-e19241949f910701bca2ce29",
+      "scope": "RETAINED_NUMERICAL_OR_EVENT_PROBABILITY_SELECTOR_WEEK_WITNESS_ONLY_NOT_OFFER_OR_TOP_PICKS",
+      "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+      "minimum_five_numerical_week_count": "MET_NOT_ADMISSION"
+    },
+    {
+      "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "history": "H-MULTI",
+      "scored_season_weeks": [
+        [
+          2026,
+          1
+        ],
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ],
+        [
+          2026,
+          4
+        ],
+        [
+          2026,
+          5
+        ],
+        [
+          2026,
+          6
+        ],
+        [
+          2026,
+          7
+        ]
+      ],
+      "distinct_scored_week_count": 7,
+      "n": 2118,
+      "native_metric": "mae",
+      "native_error": 20.125661066525677,
+      "cumulative_record_id": "SELECTOR-d633cbc5885bbc5ec53e82c9",
+      "scope": "RETAINED_NUMERICAL_OR_EVENT_PROBABILITY_SELECTOR_WEEK_WITNESS_ONLY_NOT_OFFER_OR_TOP_PICKS",
+      "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+      "minimum_five_numerical_week_count": "MET_NOT_ADMISSION"
+    },
+    {
+      "procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "history": "H-MULTI",
+      "scored_season_weeks": [
+        [
+          2026,
+          1
+        ],
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ],
+        [
+          2026,
+          4
+        ],
+        [
+          2026,
+          5
+        ],
+        [
+          2026,
+          6
+        ],
+        [
+          2026,
+          7
+        ]
+      ],
+      "distinct_scored_week_count": 7,
+      "n": 2118,
+      "native_metric": "brier",
+      "native_error": 0.14514458108731892,
+      "cumulative_record_id": "SELECTOR-3353fe57ce64d2def5078ff5",
+      "scope": "RETAINED_NUMERICAL_OR_EVENT_PROBABILITY_SELECTOR_WEEK_WITNESS_ONLY_NOT_OFFER_OR_TOP_PICKS",
+      "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+      "minimum_five_numerical_week_count": "MET_NOT_ADMISSION"
+    },
+    {
+      "procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "history": "H-MULTI",
+      "scored_season_weeks": [
+        [
+          2026,
+          1
+        ],
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ],
+        [
+          2026,
+          4
+        ],
+        [
+          2026,
+          5
+        ],
+        [
+          2026,
+          6
+        ],
+        [
+          2026,
+          7
+        ]
+      ],
+      "distinct_scored_week_count": 7,
+      "n": 2118,
+      "native_metric": "brier",
+      "native_error": 0.14314429954020047,
+      "cumulative_record_id": "SELECTOR-36450bb28812732f50ea4beb",
+      "scope": "RETAINED_NUMERICAL_OR_EVENT_PROBABILITY_SELECTOR_WEEK_WITNESS_ONLY_NOT_OFFER_OR_TOP_PICKS",
+      "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+      "minimum_five_numerical_week_count": "MET_NOT_ADMISSION"
+    },
+    {
+      "procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "history": "H-MULTI",
+      "scored_season_weeks": [
+        [
+          2026,
+          1
+        ],
+        [
+          2026,
+          2
+        ],
+        [
+          2026,
+          3
+        ],
+        [
+          2026,
+          4
+        ],
+        [
+          2026,
+          5
+        ],
+        [
+          2026,
+          6
+        ],
+        [
+          2026,
+          7
+        ]
+      ],
+      "distinct_scored_week_count": 7,
+      "n": 2118,
+      "native_metric": "brier",
+      "native_error": 0.14314429954020047,
+      "cumulative_record_id": "SELECTOR-caee429ae34c1bac61aa99ec",
+      "scope": "RETAINED_NUMERICAL_OR_EVENT_PROBABILITY_SELECTOR_WEEK_WITNESS_ONLY_NOT_OFFER_OR_TOP_PICKS",
+      "source_vintage": "exposed current-vintage seven-day assumed availability, per-game kickoff query features; not original issue or T90",
+      "minimum_five_numerical_week_count": "MET_NOT_ADMISSION"
+    }
+  ],
+  "weekly_witnesses": [
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 1,
+      "n": 126,
+      "native_metric": "mae",
+      "native_loss": 3.5476190476190474,
+      "decision_row_index": 196,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 916,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [],
+      "startup": true,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 2,
+      "n": 134,
+      "native_metric": "mae",
+      "native_loss": 2.91044776119403,
+      "decision_row_index": 197,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 917,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [],
+      "startup": true,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 3,
+      "n": 125,
+      "native_metric": "mae",
+      "native_loss": 3.112,
+      "decision_row_index": 198,
+      "source_score_artifact": "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+      "source_score_artifact_sha256": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+      "source_row_index": 7355,
+      "chosen_procedure_id": "empirical-player-history-control-v1",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 4,
+      "n": 124,
+      "native_metric": "mae",
+      "native_loss": 2.935483870967742,
+      "decision_row_index": 199,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 919,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1,
+        2
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 5,
+      "n": 121,
+      "native_metric": "mae",
+      "native_loss": 2.9008264462809916,
+      "decision_row_index": 200,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 920,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 6,
+      "n": 107,
+      "native_metric": "mae",
+      "native_loss": 2.822429906542056,
+      "decision_row_index": 201,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 921,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 7,
+      "n": 107,
+      "native_metric": "mae",
+      "native_loss": 3.0934579439252334,
+      "decision_row_index": 202,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 922,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 1,
+      "n": 126,
+      "native_metric": "mae",
+      "native_loss": 3.5476190476190474,
+      "decision_row_index": 189,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 916,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 2,
+      "n": 134,
+      "native_metric": "mae",
+      "native_loss": 2.91044776119403,
+      "decision_row_index": 190,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 917,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 3,
+      "n": 125,
+      "native_metric": "mae",
+      "native_loss": 3.176,
+      "decision_row_index": 191,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 918,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 4,
+      "n": 124,
+      "native_metric": "mae",
+      "native_loss": 2.935483870967742,
+      "decision_row_index": 192,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 919,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1,
+        2
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 5,
+      "n": 121,
+      "native_metric": "mae",
+      "native_loss": 2.9008264462809916,
+      "decision_row_index": 193,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 920,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 6,
+      "n": 107,
+      "native_metric": "mae",
+      "native_loss": 2.822429906542056,
+      "decision_row_index": 194,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 921,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 7,
+      "n": 107,
+      "native_metric": "mae",
+      "native_loss": 3.0934579439252334,
+      "decision_row_index": 195,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 922,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 1,
+      "n": 126,
+      "native_metric": "mae",
+      "native_loss": 3.5476190476190474,
+      "decision_row_index": 203,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 916,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 2,
+      "n": 134,
+      "native_metric": "mae",
+      "native_loss": 2.91044776119403,
+      "decision_row_index": 204,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 917,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 3,
+      "n": 125,
+      "native_metric": "mae",
+      "native_loss": 3.176,
+      "decision_row_index": 205,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 918,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 4,
+      "n": 124,
+      "native_metric": "mae",
+      "native_loss": 2.935483870967742,
+      "decision_row_index": 206,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 919,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1,
+        2
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 5,
+      "n": 121,
+      "native_metric": "mae",
+      "native_loss": 2.9008264462809916,
+      "decision_row_index": 207,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 920,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 6,
+      "n": 107,
+      "native_metric": "mae",
+      "native_loss": 2.822429906542056,
+      "decision_row_index": 208,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 921,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_att",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 7,
+      "n": 107,
+      "native_metric": "mae",
+      "native_loss": 3.0934579439252334,
+      "decision_row_index": 209,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 922,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 1,
+      "n": 316,
+      "native_metric": "mae",
+      "native_loss": 20.588607594936708,
+      "decision_row_index": 217,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 958,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [],
+      "startup": true,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 2,
+      "n": 319,
+      "native_metric": "mae",
+      "native_loss": 20.68025078369906,
+      "decision_row_index": 218,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 959,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [],
+      "startup": true,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 3,
+      "n": 318,
+      "native_metric": "mae",
+      "native_loss": 20.154088050314467,
+      "decision_row_index": 219,
+      "source_score_artifact": "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+      "source_score_artifact_sha256": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+      "source_row_index": 8632,
+      "chosen_procedure_id": "empirical-player-history-control-v1",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 4,
+      "n": 318,
+      "native_metric": "mae",
+      "native_loss": 22.150943396226417,
+      "decision_row_index": 220,
+      "source_score_artifact": "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+      "source_score_artifact_sha256": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+      "source_row_index": 8633,
+      "chosen_procedure_id": "empirical-player-history-control-v1",
+      "chosen_product_id": "lower_median",
+      "earlier_current_score_weeks": [
+        1,
+        2
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 5,
+      "n": 300,
+      "native_metric": "mae",
+      "native_loss": 20.056738655036487,
+      "decision_row_index": 221,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 770,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 6,
+      "n": 278,
+      "native_metric": "mae",
+      "native_loss": 18.445726909550256,
+      "decision_row_index": 222,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 771,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 7,
+      "n": 269,
+      "native_metric": "mae",
+      "native_loss": 21.01521781309305,
+      "decision_row_index": 223,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 772,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 1,
+      "n": 316,
+      "native_metric": "mae",
+      "native_loss": 20.821999868841278,
+      "decision_row_index": 210,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 766,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 2,
+      "n": 319,
+      "native_metric": "mae",
+      "native_loss": 20.11774021740769,
+      "decision_row_index": 211,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 767,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 3,
+      "n": 318,
+      "native_metric": "mae",
+      "native_loss": 19.880838473513784,
+      "decision_row_index": 212,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 768,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [
+        1
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 4,
+      "n": 318,
+      "native_metric": "mae",
+      "native_loss": 20.467626249462736,
+      "decision_row_index": 213,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 769,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [
+        1,
+        2
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 5,
+      "n": 300,
+      "native_metric": "mae",
+      "native_loss": 20.056738655036487,
+      "decision_row_index": 214,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 770,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 6,
+      "n": 278,
+      "native_metric": "mae",
+      "native_loss": 18.445726909550256,
+      "decision_row_index": 215,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 771,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 7,
+      "n": 269,
+      "native_metric": "mae",
+      "native_loss": 21.01521781309305,
+      "decision_row_index": 216,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 772,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 1,
+      "n": 316,
+      "native_metric": "mae",
+      "native_loss": 20.821999868841278,
+      "decision_row_index": 224,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 766,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 2,
+      "n": 319,
+      "native_metric": "mae",
+      "native_loss": 20.11774021740769,
+      "decision_row_index": 225,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 767,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 3,
+      "n": 318,
+      "native_metric": "mae",
+      "native_loss": 19.880838473513784,
+      "decision_row_index": 226,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 768,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [
+        1
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 4,
+      "n": 318,
+      "native_metric": "mae",
+      "native_loss": 20.467626249462736,
+      "decision_row_index": 227,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 769,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [
+        1,
+        2
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 5,
+      "n": 300,
+      "native_metric": "mae",
+      "native_loss": 20.056738655036487,
+      "decision_row_index": 228,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 770,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 6,
+      "n": 278,
+      "native_metric": "mae",
+      "native_loss": 18.445726909550256,
+      "decision_row_index": 229,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 771,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "rush_rec_yd",
+      "product_id": "point_choice_policy",
+      "season": 2026,
+      "week": 7,
+      "n": 269,
+      "native_metric": "mae",
+      "native_loss": 21.01521781309305,
+      "decision_row_index": 230,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 772,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "chosen_product_id": "absolute_error_point",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 1,
+      "n": 316,
+      "native_metric": "brier",
+      "native_loss": 0.14632475549562265,
+      "decision_row_index": 7,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 694,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "event_probability",
+      "earlier_current_score_weeks": [],
+      "startup": true,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 2,
+      "n": 319,
+      "native_metric": "brier",
+      "native_loss": 0.12527532567954444,
+      "decision_row_index": 8,
+      "source_score_artifact": "reports/continuation-20261030/distribution-wave-v2/SCORES.json",
+      "source_score_artifact_sha256": "b77bcf69c47d8a9be0f0fb781ace0032c452d8964f8e09091201f0f8c448975f",
+      "source_row_index": 695,
+      "chosen_procedure_id": "v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf",
+      "chosen_product_id": "event_probability",
+      "earlier_current_score_weeks": [],
+      "startup": true,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 3,
+      "n": 318,
+      "native_metric": "brier",
+      "native_loss": 0.1580284312081306,
+      "decision_row_index": 9,
+      "source_score_artifact": "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+      "source_score_artifact_sha256": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+      "source_row_index": 521,
+      "chosen_procedure_id": "empirical-player-history-control-v1",
+      "chosen_product_id": "event_probability",
+      "earlier_current_score_weeks": [
+        1
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 4,
+      "n": 318,
+      "native_metric": "brier",
+      "native_loss": 0.14588976683999638,
+      "decision_row_index": 10,
+      "source_score_artifact": "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+      "source_score_artifact_sha256": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+      "source_row_index": 522,
+      "chosen_procedure_id": "empirical-player-history-control-v1",
+      "chosen_product_id": "event_probability",
+      "earlier_current_score_weeks": [
+        1,
+        2
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 5,
+      "n": 300,
+      "native_metric": "brier",
+      "native_loss": 0.14079109388209649,
+      "decision_row_index": 11,
+      "source_score_artifact": "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+      "source_score_artifact_sha256": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+      "source_row_index": 523,
+      "chosen_procedure_id": "empirical-player-history-control-v1",
+      "chosen_product_id": "event_probability",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 6,
+      "n": 278,
+      "native_metric": "brier",
+      "native_loss": 0.15075061521378263,
+      "decision_row_index": 12,
+      "source_score_artifact": "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+      "source_score_artifact_sha256": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+      "source_row_index": 524,
+      "chosen_procedure_id": "empirical-player-history-control-v1",
+      "chosen_product_id": "event_probability",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:EARLIER_AVAILABLE_2026_SCORE_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 7,
+      "n": 269,
+      "native_metric": "brier",
+      "native_loss": 0.15027057598953583,
+      "decision_row_index": 13,
+      "source_score_artifact": "reports/continuation-20261029/history-diagnostic-v1/SEASON_RESULTS_2022_2026.csv",
+      "source_score_artifact_sha256": "46271e6156823a28739afa5c11fc296efdfc746f6c2a237f115fdbcced1deb48",
+      "source_row_index": 525,
+      "chosen_procedure_id": "empirical-player-history-control-v1",
+      "chosen_product_id": "event_probability",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 1,
+      "n": 316,
+      "native_metric": "brier",
+      "native_loss": 0.1469507276942729,
+      "decision_row_index": 0,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 38,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "chosen_product_id": "log_loss_probability",
+      "earlier_current_score_weeks": [],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 2,
+      "n": 319,
+      "native_metric": "brier",
+      "native_loss": 0.12298268887702395,
+      "decision_row_index": 1,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 39,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "chosen_product_id": "log_loss_probability",
+      "earlier_current_score_weeks": [],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 3,
+      "n": 318,
+      "native_metric": "brier",
+      "native_loss": 0.15542385531372213,
+      "decision_row_index": 2,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 40,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "chosen_product_id": "log_loss_probability",
+      "earlier_current_score_weeks": [
+        1
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 4,
+      "n": 318,
+      "native_metric": "brier",
+      "native_loss": 0.14627489193564108,
+      "decision_row_index": 3,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 41,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "chosen_product_id": "log_loss_probability",
+      "earlier_current_score_weeks": [
+        1,
+        2
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 5,
+      "n": 300,
+      "native_metric": "brier",
+      "native_loss": 0.14092239904250947,
+      "decision_row_index": 4,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 42,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "chosen_product_id": "log_loss_probability",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 6,
+      "n": 278,
+      "native_metric": "brier",
+      "native_loss": 0.14233708855602933,
+      "decision_row_index": 5,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 43,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "chosen_product_id": "log_loss_probability",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:FROZEN_2025_BEST",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 7,
+      "n": 269,
+      "native_metric": "brier",
+      "native_loss": 0.14767690247716436,
+      "decision_row_index": 6,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 44,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "chosen_product_id": "log_loss_probability",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 1,
+      "n": 316,
+      "native_metric": "brier",
+      "native_loss": 0.1469507276942729,
+      "decision_row_index": 14,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 38,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "chosen_product_id": "log_loss_probability",
+      "earlier_current_score_weeks": [],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 2,
+      "n": 319,
+      "native_metric": "brier",
+      "native_loss": 0.12298268887702395,
+      "decision_row_index": 15,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 39,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "chosen_product_id": "log_loss_probability",
+      "earlier_current_score_weeks": [],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 3,
+      "n": 318,
+      "native_metric": "brier",
+      "native_loss": 0.15542385531372213,
+      "decision_row_index": 16,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 40,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "chosen_product_id": "log_loss_probability",
+      "earlier_current_score_weeks": [
+        1
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 4,
+      "n": 318,
+      "native_metric": "brier",
+      "native_loss": 0.14627489193564108,
+      "decision_row_index": 17,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 41,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "chosen_product_id": "log_loss_probability",
+      "earlier_current_score_weeks": [
+        1,
+        2
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 5,
+      "n": 300,
+      "native_metric": "brier",
+      "native_loss": 0.14092239904250947,
+      "decision_row_index": 18,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 42,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "chosen_product_id": "log_loss_probability",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 6,
+      "n": 278,
+      "native_metric": "brier",
+      "native_loss": 0.14233708855602933,
+      "decision_row_index": 19,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 43,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "chosen_product_id": "log_loss_probability",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    },
+    {
+      "selector_procedure_id": "v2-chronological-category-score-memory-selector-v2:POOLED_2025_AND_AVAILABLE_2026_MEMORY",
+      "target": "anytime_td",
+      "product_id": "event_probability_policy",
+      "season": 2026,
+      "week": 7,
+      "n": 269,
+      "native_metric": "brier",
+      "native_loss": 0.14767690247716436,
+      "decision_row_index": 20,
+      "source_score_artifact": "reports/continuation-20261029/hgb-history-v1/SCORES.json",
+      "source_score_artifact_sha256": "c34e320d84fa34d3ef54cf0c58ec53ef02edcd5c93053513c6bfe48db3accf5e",
+      "source_row_index": 44,
+      "chosen_procedure_id": "hgb-direct-history-controls-v1:log_loss_probability",
+      "chosen_product_id": "log_loss_probability",
+      "earlier_current_score_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "startup": false,
+      "original_issuance": false,
+      "actual_line_qualification": false
+    }
+  ],
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_selections": 0,
+  "new_scoring": 0,
+  "new_test_weeks": 0,
+  "qualification": "Existing decisions explicitly bind evaluated week/n/native loss and chosen source weekly score. This closes metadata witness omission, not new testing, model inference, actual-line history or operational admission. Earlier-only current validation clocks checked; original past-year argmin policy is not rerun."
+}

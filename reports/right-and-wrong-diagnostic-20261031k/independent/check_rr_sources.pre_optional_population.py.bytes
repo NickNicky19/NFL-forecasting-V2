@@ -1,0 +1,24 @@
+"""Bind native policy tie views to their own six saved plans, not HGB rows."""
+import argparse,gzip,hashlib,json,math,re
+from pathlib import Path
+HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[2];PUB=HERE.parent/'rr-native-tie-completion-v1'
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def read(p):return json.loads(p.read_bytes())
+def main():
+    ap=argparse.ArgumentParser();ap.add_argument('--private-root',type=Path,required=True);a=ap.parse_args();p=read(PUB/'FROZEN_PROTOCOL.json');src=a.private_root/'right-and-wrong-diagnostic-20261031k-rr-native-tie-v1/NORMALIZED_NATIVE_TIE_INPUT_ROWS.json.gz';assert sha(src)==p['source_sha256'];rows=json.loads(gzip.decompress(src.read_bytes()))['rows'];assert len(rows)==248;index={(r['week'],r['source_method_id'],r['source_row_index']):r for r in rows};assert len(index)==248;nativepath=ROOT/p['pre_existing_native_leader_source'];assert sha(nativepath)==p['pre_existing_native_leader_source_sha256'];native=next(x for x in read(nativepath)if x['category']=='rush_rec_yd')['native_winners'];required={'FROZEN_2025_BEST','POOLED_2025_AND_AVAILABLE_2026_MEMORY'};assert all(any(v['procedure_id'].endswith(':'+name)and v['product_id']=='point_choice_policy'for v in native)for name in required);seen=set();checked=0
+    for binding in p['source_bindings']:
+        folder=a.private_root/binding['source_id'];grade=folder/'GRADED_METHOD_ROWS.json.gz';plans=folder/'FROZEN_SELECTIONS_AND_K.json.gz';assert sha(grade)==binding['grade_sha256']and sha(plans)==binding['plan_sha256'];plan=read_gzip(plans)['plans'];text=gzip.decompress(grade.read_bytes()).decode();decoder=json.JSONDecoder()
+        for spec in[r for r in p['roster']if r['week']==binding['week']]:
+            tag=spec['source_method_id'];assert plan[tag]['rule']=='P1'and plan[tag]['recipe']==spec['recipe'];assert spec['recipe'][1].split(':')[-1]in required and spec['recipe'][2:] ==['H-MULTI','selected_point'];assert'hgb'not in spec['recipe'][1].lower();matches=list(re.finditer('"'+re.escape(tag)+'"\\s*:',text));assert len(matches)==1;start=matches[0].end()
+            while text[start].isspace():start+=1
+            saved,end=decoder.raw_decode(text,start);assert len(saved)==spec['outer_rows'];admitted=0
+            for r in saved:
+                key=(binding['week'],tag,r['source_row_index']);z=index[key];assert key not in seen;seen.add(key);assert z['recipe']==spec['recipe'];point=r.get('ranking_point');available=bool(r.get('admitted')and point is not None and math.isfinite(float(point)));assert z['point']==point and z['admitted']==available;admitted+=available;assert z['fallback']==r.get('fallback')and z['decision_time']==r.get('source_server_clock',r.get('server_retained_by'))
+                for field in('game_id','player_id','target','position','population','line','actual','selected_side','statistical_state','participation','kickoff'):assert z.get(field)==r.get(field)
+                checked+=1
+            assert admitted==spec['admitted_metadata_rows']
+    assert seen==set(index)and checked==248;out=dict(state='PASS_INDEPENDENT_RR_NATIVE_POLICY_TIE_SOURCE_IDENTITIES',protocol_sha256=sha(PUB/'FROZEN_PROTOCOL.json'),checker_sha256=sha(Path(__file__)),normalized_source_sha256=sha(src),pre_existing_native_champion_source_sha256=sha(nativepath),existing_native_tied_policies=sorted(required),exact_weekly_plans=6,source_grade_rows_verified=248,new_diagnostic_views_verified_separately=88,underlying_HGB_rows_borrowed=False,new_method_choices=False,new_NFL_models=0,new_NFL_grades=0,new_private_exports=0,scope='Two pre-existing composite-policy/output identities, not two new forecasting families. Exact saved policy P1plan rows are reused; the native policy alias maps by unchanged policy ID and selected-point product. No new selection or ranking was fitted.')
+    with(HERE/'RR_NATIVE_TIE_SOURCE_INDEPENDENT_REVIEW.json').open('x')as f:json.dump(out,f,indent=2);f.write('\n')
+    print(json.dumps(dict(state=out['state'],saved_plans=6,source_rows=248)))
+def read_gzip(p):return json.loads(gzip.decompress(p.read_bytes()))
+if __name__=='__main__':main()

@@ -1,0 +1,41 @@
+{
+  "id": "B-OPPORTUNITY-SOURCE-INDEPENDENT-REVIEW-v1",
+  "status": "PASS_IN_CHECKED_SCOPE",
+  "source_sha256": "51c2cfceff6103a277c6de5897fc76c33733bb797f0891ccdb271b41840ab36a",
+  "source_bindings": [
+    {
+      "source": "play_by_play_2025.csv.gz",
+      "sha256": "2f135887790a013fd004e609e37096bb4816d5cc80b9f19122e1bad478961978"
+    },
+    {
+      "source": "play_by_play_2026.csv.gz",
+      "sha256": "c42cd6d6a86c4be337aaa1185176e8904cba8407eacbdbf21afab341a82b77e5"
+    }
+  ],
+  "selected_games": [
+    "2025_01_DAL_PHI",
+    "2025_18_BAL_PIT",
+    "2026_01_NE_SEA",
+    "2026_08_CHI_SEA"
+  ],
+  "raw_sample": {
+    "teams": 8,
+    "QB_game_rows": 9,
+    "counter_fields": 23,
+    "qualified_sample_plays": 480,
+    "credited_no_play": 0,
+    "spike_outside_dropback": 1
+  },
+  "profile_sample": {
+    "profiles": 5,
+    "scalar_checks": 660,
+    "maximum_absolute_difference": 0.0
+  },
+  "independence": "Raw PBP flags/attribution/context bins and count/rate/shrinkage arithmetic independently rebuilt; no author play_counts, OpportunityHistory, or scorer called.",
+  "limits": [
+    "Four deterministic games and five profiles, not every raw play/profile. Earlier full source acceptance reused.",
+    "Seven-day current-vintage policy is arithmetic-verified, not authenticated original source availability.",
+    "OwnQB opportunity denominator is attributed passing events; team opportunity is reported rush/pass/dropback proxy. Neither is authenticated active-QB snaps or designed passing calls.",
+    "Existing predictive comparisons and five-week product qualification are separate; source PASS alone demonstrates no forecasting gain."
+  ]
+}

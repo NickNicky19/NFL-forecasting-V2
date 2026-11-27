@@ -1,0 +1,243 @@
+{
+  "id": "B-NEXTGEN-PEER-SOURCE-COORDINATION-v1",
+  "assignment": "NFL-NEXT-GENERATION-INFORMATION-RESEARCH-01",
+  "checked_UTC": "2026-11-12T17:55:10.975981+00:00",
+  "execution_scope": "B-owned read-only peer publication/source/novelty review; no cross-owner implementation or external message",
+  "C_actual_main": "aa099aa1ff78c85440173483275e01a9d354e2c8",
+  "A_actual_research_publication": {
+    "branch": "research/accuracy-wave-20261026",
+    "commit": "b7461fb7a79f89bec179b8c2e59f1b8e2e9ced31",
+    "reason": "A main/native branches do not contain all substantive research"
+  },
+  "tree_inspection": {
+    "C_paths": 3994,
+    "A_research_paths": 4007,
+    "both_recursive_untruncated": true,
+    "C_depth_chart_path_matches": 0,
+    "C_new_assignment_path_matches": 0,
+    "C_new_assignment_current_pointer_export_and_ledger_match": false,
+    "not_proof": "Absence from inspected public pointers is not proof no private/current uncommitted work exists"
+  },
+  "canonical_evaluator": {
+    "protocol_id": "ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1",
+    "protocol": {
+      "path": "reports/abc-championship/PROTOCOL-v2-C-1.json",
+      "SHA256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1"
+    },
+    "scorer": {
+      "path": "src/abc_championship_v2.py",
+      "SHA256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce"
+    },
+    "owner": "C",
+    "changed": false
+  },
+  "source_coordination": {
+    "owner": "C shared qualification/intake; B owns QB increment and independent checks",
+    "C_historical_personnel_export": "NOT_LOCATED_IN_INSPECTED_CURRENT_PUBLIC_POINTER_EXPORT_OR_TASK_LEDGER",
+    "C_prospective_injury_snapshots": "AVAILABLE_EXISTING_NFLVERSE_PROJECTIONS; reuse before duplicate acquisition",
+    "current_source_renewal": "C/source owner; this readback does not dispatch collector or create lease",
+    "B_new_depth_feasibility": "No depth source found in inspected C tree; B source agent may boundedly inspect timestamped public metadata/snapshot structure, not duplicate a C collector",
+    "no_new_C_assignment_registration_claim": true
+  },
+  "injury_snapshot": {
+    "provider": "nflverse",
+    "source": {
+      "id": "injuries",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.csv.gz",
+      "started_UTC": "2026-11-07T13:26:29.051678+00:00",
+      "observed_UTC": "2026-11-07T13:26:29.423550+00:00",
+      "HTTP_status": 200,
+      "HTTP_Date": "Sat, 07 Nov 2026 13:26:29 GMT",
+      "HTTP_Age": "3765",
+      "HTTP_Last_Modified": "Sat, 07 Nov 2026 07:01:19 GMT",
+      "bytes": 60231,
+      "raw_SHA256": "ba93703e2cc0d3bf4ee1ef434674040ec71ce6dfc5cf44505f029d538f12569b",
+      "raw_retention": "Temporaryonly; publicsnapshot retains consumed factualprojection, not upstream presentation"
+    },
+    "projection_rows": 360,
+    "projection_fields": [
+      "season",
+      "week",
+      "team",
+      "gsis_id",
+      "position",
+      "report_status",
+      "practice_status"
+    ],
+    "projection_file": {
+      "bytes": 54615,
+      "SHA256": "3f8d0791d54324f31a3c57c609c6977cc14b54bde105300339f44e17856e945b"
+    },
+    "cutoff_scope": "2026 W9 snapshot observed Nov7; not a W1-W8 historical vintage",
+    "row_original_publication_timestamp": "NOT_RETAINED_IN_7_FIELD_PROJECTION",
+    "usage_in_C_executing_code": "report_status OUT/DOUBTFUL sets BLOCKED_OUT; otherwise CONDITIONAL_UNKNOWN_APPEARANCE; starter_state NOT_INFERRED_FROM_POSITION",
+    "not_used_as": "No inspected fitted teammate-availability redistribution features; no probability of starter/participation inferred",
+    "missing_practice_or_report_status": "Unknown/not listed/blank, not a guaranteed healthy/available teammate",
+    "raw_response_retention": "Temporaryonly; publicsnapshot retains consumed factualprojection, not upstream presentation"
+  },
+  "current_roster_scope": {
+    "contract": "NFLVERSE_CURRENT_KNOWN_SEASON_ROSTER_SNAPSHOT-v1",
+    "qualified_use": "Basic identity/team/role/provider status candidate universe only",
+    "individual_transaction_effective_UTC": "UNKNOWN_NOT_FILLED_FROM_HTTP_CLOCK",
+    "historical_original_availability_UTC": "UNKNOWN_NOT_BACKDATED",
+    "not_claimed": [
+      "Confirmed starter",
+      "Healthy",
+      "Future participation",
+      "Authenticated historical snapshots"
+    ]
+  },
+  "nearest_completed_mechanisms": [
+    {
+      "owner": "C",
+      "procedure": "C-RECEIVING-TARGETSHARE-STATE-v10-1",
+      "information": "Latest same-team target share and ratio(last2 totals)-ratio(preceding3 totals), plus denominator/support/age flags",
+      "history": "Eligible ordinary earlier stats with seven-day strict reconstructed lag",
+      "ex_ante_personnel": "Absent; code explicitly not injuries/routes/causal talent/authenticated publication",
+      "result": "Completed no gain/promotion retained through current protocol"
+    },
+    {
+      "owner": "A",
+      "procedure": "abc_dynamic_carry_v1 and dynamic-opportunity-study-v1",
+      "information": "Earlier credited-carry/team history latent state, recency/share, other allocation bucket, finite allocation",
+      "ex_ante_personnel": "Code explicitly excludes injury scenarios/snaps/routes/target-game participation; draft distinguishes state changes from verified injury/replacement-starter probabilities",
+      "result": "Completed negative allocation evidence retained; not rerun"
+    }
+  ],
+  "novelty_verdict": "A source-qualified ex-ante QB-role/teammate-unavailability block differs from inspected completed lagged share/profile/timing mechanisms; historical source qualification is not established by these public peer snapshots",
+  "verification_limits": [
+    "No A private rows or model-fit parity",
+    "No original missing source vintage authenticated by a public index",
+    "C has not acknowledged/admitted a new B experiment merely because B read these pointers",
+    "No claim all private A/B/C work ever performed was inspected"
+  ],
+  "resources": {
+    "new_fits": 0,
+    "new_model_inferences": 0,
+    "new_NFL_scores": 0,
+    "new_NFL_weeks": 0,
+    "new_external_messages": 0,
+    "peer_writes": 0,
+    "scheduler_changes": 0,
+    "raw_upstream_payload_republished": false
+  },
+  "bindings": [
+    {
+      "owner": "C",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "aa099aa1ff78c85440173483275e01a9d354e2c8",
+      "path": "reports/abc-championship/CURRENT_PROTOCOL.json",
+      "bytes": 77498,
+      "SHA256": "5b8a8d2c321932d535f20263f0b7c847c7435119060bb75e7302cb6df5b49397",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/aa099aa1ff78c85440173483275e01a9d354e2c8/reports/abc-championship/CURRENT_PROTOCOL.json"
+    },
+    {
+      "owner": "C",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "aa099aa1ff78c85440173483275e01a9d354e2c8",
+      "path": "reports/abc-championship/EXPORT_INDEX.json",
+      "bytes": 66696,
+      "SHA256": "f122c1a9cb01e43dd81b5c91b0e408a1192eeecf00c527cd053475180047e5d7",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/aa099aa1ff78c85440173483275e01a9d354e2c8/reports/abc-championship/EXPORT_INDEX.json"
+    },
+    {
+      "owner": "C",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "aa099aa1ff78c85440173483275e01a9d354e2c8",
+      "path": "reports/abc-championship/TASK_LEDGER.json",
+      "bytes": 34078,
+      "SHA256": "84554a2da371e4d965667d255602ecc4aef53d310dc42d6d58571922a1296e83",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/aa099aa1ff78c85440173483275e01a9d354e2c8/reports/abc-championship/TASK_LEDGER.json"
+    },
+    {
+      "owner": "C",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "aa099aa1ff78c85440173483275e01a9d354e2c8",
+      "path": "protocol/RECEIVING_TARGETSHARE_V10.json",
+      "bytes": 3963,
+      "SHA256": "fb4a353e0aaba2b1af89ddc212db06515e06bf0554e92bef2467672be1fdd61c",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/aa099aa1ff78c85440173483275e01a9d354e2c8/protocol/RECEIVING_TARGETSHARE_V10.json"
+    },
+    {
+      "owner": "C",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "aa099aa1ff78c85440173483275e01a9d354e2c8",
+      "path": "src/receiving_information_v10.py",
+      "bytes": 5760,
+      "SHA256": "03686ec26fc2231413f44b4f79fe94abc1c59d3db9d48a4a499bff2655a1f5c3",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/aa099aa1ff78c85440173483275e01a9d354e2c8/src/receiving_information_v10.py"
+    },
+    {
+      "owner": "C",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "aa099aa1ff78c85440173483275e01a9d354e2c8",
+      "path": "src/prospective_v4.py",
+      "bytes": 32415,
+      "SHA256": "304cbd7a9b646d443d158ef732cc6535b186f3cf57e58e3f209741ef442d565e",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/aa099aa1ff78c85440173483275e01a9d354e2c8/src/prospective_v4.py"
+    },
+    {
+      "owner": "C",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "aa099aa1ff78c85440173483275e01a9d354e2c8",
+      "path": "reports/profile-closure-next-02/current-source/ROSTER_QUALIFICATION.json",
+      "bytes": 4510,
+      "SHA256": "eb37e6c9568ba9f17ddfcd5eba8464111fbdf748021d4f1000f16202d220c689",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/aa099aa1ff78c85440173483275e01a9d354e2c8/reports/profile-closure-next-02/current-source/ROSTER_QUALIFICATION.json"
+    },
+    {
+      "owner": "C",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "aa099aa1ff78c85440173483275e01a9d354e2c8",
+      "path": "prospective/runs/C-FWD-v4-20261107-W09-CINATL-pass_yd/sources/SOURCE_MANIFEST.json",
+      "bytes": 28811,
+      "SHA256": "68776b7b75292fb754b2ffb2b7e9aabf5672de87fa49f6c204b1e4f1bd183300",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/aa099aa1ff78c85440173483275e01a9d354e2c8/prospective/runs/C-FWD-v4-20261107-W09-CINATL-pass_yd/sources/SOURCE_MANIFEST.json"
+    },
+    {
+      "owner": "C",
+      "repository": "NickNicky19/NFL-forecasting-NGS-C",
+      "commit": "aa099aa1ff78c85440173483275e01a9d354e2c8",
+      "path": "prospective/runs/C-FWD-v4-20261107-W09-CINATL-pass_yd/sources/injuries.json",
+      "bytes": 54615,
+      "SHA256": "3f8d0791d54324f31a3c57c609c6977cc14b54bde105300339f44e17856e945b",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-NGS-C/aa099aa1ff78c85440173483275e01a9d354e2c8/prospective/runs/C-FWD-v4-20261107-W09-CINATL-pass_yd/sources/injuries.json"
+    },
+    {
+      "owner": "A",
+      "repository": "NickNicky19/NFL-forecasting",
+      "commit": "b7461fb7a79f89bec179b8c2e59f1b8e2e9ced31",
+      "path": "reports/abc-championship/EXPORT_INDEX.json",
+      "bytes": 57011,
+      "SHA256": "a62bd565a4b4923dd1d99d1fa6eabc4481b1aad98261d6ea1bb97d0e51386d9a",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting/b7461fb7a79f89bec179b8c2e59f1b8e2e9ced31/reports/abc-championship/EXPORT_INDEX.json"
+    },
+    {
+      "owner": "A",
+      "repository": "NickNicky19/NFL-forecasting",
+      "commit": "b7461fb7a79f89bec179b8c2e59f1b8e2e9ced31",
+      "path": "nfl_lab/abc_dynamic_carry_v1.py",
+      "bytes": 14503,
+      "SHA256": "3298b653bbf08d8f690ddf2f3ae7bd98eef211f1c2f93535a293f90362f5ef67",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting/b7461fb7a79f89bec179b8c2e59f1b8e2e9ced31/nfl_lab/abc_dynamic_carry_v1.py"
+    },
+    {
+      "owner": "A",
+      "repository": "NickNicky19/NFL-forecasting",
+      "commit": "b7461fb7a79f89bec179b8c2e59f1b8e2e9ced31",
+      "path": "docs/dynamic-opportunity-screen-v1-draft.md",
+      "bytes": 18124,
+      "SHA256": "1d33de17bf17b388a7569375e088eb22c5a303b05f1fb8f91ec41b38470efed8",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting/b7461fb7a79f89bec179b8c2e59f1b8e2e9ced31/docs/dynamic-opportunity-screen-v1-draft.md"
+    },
+    {
+      "owner": "A",
+      "repository": "NickNicky19/NFL-forecasting",
+      "commit": "b7461fb7a79f89bec179b8c2e59f1b8e2e9ced31",
+      "path": "config/dynamic-opportunity-study-v1.json",
+      "bytes": 3485,
+      "SHA256": "d8e55e90a43b4ed115db190de29e5035b65872b9e5c9c52a645c9ee6ed481110",
+      "url": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting/b7461fb7a79f89bec179b8c2e59f1b8e2e9ced31/config/dynamic-opportunity-study-v1.json"
+    }
+  ]
+}

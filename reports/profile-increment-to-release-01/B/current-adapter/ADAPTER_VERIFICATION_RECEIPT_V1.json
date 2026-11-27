@@ -1,0 +1,97 @@
+{
+  "id": "B-QB-OPPORTUNITY-TYPED-ADAPTER-v1",
+  "completed_at_utc": "2026-11-10T11:55:11.580079+00:00",
+  "scope": "OUTPUT_PRESERVING_PACKAGING_ONLY",
+  "artifacts": [
+    {
+      "path": "nfl_v2/qb_opportunity_adapter.py",
+      "sha256": "a9cc7ec4504331c8050b3108054e9b11279eaf50fdfcb75c4b6ee080326b98a7",
+      "bytes": 11131
+    },
+    {
+      "path": "tests/test_qb_opportunity_adapter.py",
+      "sha256": "d8e6e6c3a6220230e2f92d0c26e8fef07af6ba11c75b12150fc42df661e9ba94",
+      "bytes": 7299
+    },
+    {
+      "path": "reports/profile-increment-to-release-01/B/current-adapter/README.md",
+      "sha256": "0b9f0ced120432a7a8bb38694fe7630ed8a1a77974d2e273ace5f053504e274e",
+      "bytes": 3778
+    },
+    {
+      "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/FROZEN_PROTOCOL.json",
+      "sha256": "be1b14890a83c8acdb62d96ee3238172ea95c7303283d73098e548cc263fb0b6",
+      "bytes": 9399
+    },
+    {
+      "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/FEATURE_ORDER_V1.json",
+      "sha256": "8d47d09be4e01f2f4da9e96a9ee6ddca21a53967a1671e3a0c1148b37d305ab4",
+      "bytes": 35234
+    },
+    {
+      "path": "reports/profile-increment-to-release-01/B/opportunity-wave-v1/fits/2025-W01-R2.json.gz",
+      "sha256": "65db81beef5b0280673c8f57f4359012a0b17376b4acf1128a7f7beea30fae57",
+      "bytes": 34551
+    },
+    {
+      "path": "reports/player-context-matchup-01/B/qb-wave-v1/fits/2025-W01-E3.json.gz",
+      "sha256": "324e4291e291f7cea29ddcace10c475aeed69cb80a417d1ff8ff5a20f7c90fbc",
+      "bytes": 32729
+    }
+  ],
+  "command": "python -m unittest tests.test_qb_opportunity_adapter",
+  "environment": {
+    "python": "3.12.14"
+  },
+  "software_tests": {
+    "passed": 8,
+    "last_run_seconds": 21.835,
+    "checked": [
+      "R0/R2 saved-value parity",
+      "named-feature same-width order rejection",
+      "hash-bound JSON restore",
+      "single vs batch",
+      "shuffled canonical identity",
+      "unqualified query vs registered source/model expiry",
+      "future query without outcome and unseen-player support",
+      "integer push and half-integer no-push",
+      "deterministic cold restoration"
+    ],
+    "not_checked": [
+      "Authenticity of hypothetical current role/clock fixture",
+      "Actual current producer execution",
+      "Consumer admission",
+      "Website use",
+      "Deployment"
+    ]
+  },
+  "prior_attempt": {
+    "state": "FAILED_BEFORE_INFERENCE",
+    "detail": "Initial raw JSON ordering did not match frozen sorted loader membership hash. Adapter corrected to reuse exact ctx.load_inputs; no source, saved model or NFL prediction/score changed."
+  },
+  "scope_limits": {
+    "R0": "Original membership hash absent; reconstructed identities plus retained rowcount/latest-clock checks, explicitly labelled",
+    "new_arms": "Exact retained training-membership hash required",
+    "query": "Synthetic membership/expiry proofs in tests authenticate no NFL roster or historical quote",
+    "freshness": "No arbitrary age limit. Caller supplies and authenticates pre-existing registered source/model expiry policy",
+    "release": "Not decided by adapter. Output-preserving packaging does not reset otherwise valid evidence."
+  },
+  "effects": {
+    "new_fits": 0,
+    "new_source_rows": 0,
+    "new_issued_forecasts": 0,
+    "new_NFL_accuracy_observations": 0,
+    "new_NFL_test_weeks": 0,
+    "new_original_selections": 0,
+    "model_or_selection_recipe_change": false,
+    "production_write": false
+  },
+  "operational_states": {
+    "prepared": true,
+    "actual_current_query_universe": "UNAVAILABLE",
+    "current_packet_captured": false,
+    "delivered_to_producer": false,
+    "consumer_admitted": false,
+    "served_verified": false
+  }
+}

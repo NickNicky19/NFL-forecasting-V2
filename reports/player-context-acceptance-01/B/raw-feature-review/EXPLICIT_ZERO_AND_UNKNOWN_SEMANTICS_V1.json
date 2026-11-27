@@ -1,0 +1,117 @@
+{
+  "state": "PASS_EXPLICIT_STAT_PRESENCE_NO_SPARSE_ZERO_SUBSTITUTION",
+  "at_utc": "2026-11-10T00:44:04.893697+00:00",
+  "counts_by_season": {
+    "2022": {
+      "attempts": {
+        "explicit_numeric_zero": 16,
+        "explicit_numeric_positive": 617,
+        "blank_or_nonfinite": 0
+      },
+      "completions": {
+        "explicit_numeric_zero": 26,
+        "explicit_numeric_positive": 607,
+        "blank_or_nonfinite": 0
+      }
+    },
+    "2023": {
+      "attempts": {
+        "explicit_numeric_zero": 30,
+        "explicit_numeric_positive": 633,
+        "blank_or_nonfinite": 0
+      },
+      "completions": {
+        "explicit_numeric_zero": 41,
+        "explicit_numeric_positive": 622,
+        "blank_or_nonfinite": 0
+      }
+    },
+    "2024": {
+      "attempts": {
+        "explicit_numeric_zero": 33,
+        "explicit_numeric_positive": 631,
+        "blank_or_nonfinite": 0
+      },
+      "completions": {
+        "explicit_numeric_zero": 43,
+        "explicit_numeric_positive": 621,
+        "blank_or_nonfinite": 0
+      }
+    },
+    "2025": {
+      "attempts": {
+        "explicit_numeric_zero": 36,
+        "explicit_numeric_positive": 628,
+        "blank_or_nonfinite": 0
+      },
+      "completions": {
+        "explicit_numeric_zero": 51,
+        "explicit_numeric_positive": 613,
+        "blank_or_nonfinite": 0
+      }
+    },
+    "2026": {
+      "attempts": {
+        "explicit_numeric_zero": 9,
+        "explicit_numeric_positive": 268,
+        "blank_or_nonfinite": 0
+      },
+      "completions": {
+        "explicit_numeric_zero": 15,
+        "explicit_numeric_positive": 262,
+        "blank_or_nonfinite": 0
+      }
+    }
+  },
+  "cases": [
+    {
+      "game_id": "2022_01_KC_ARI",
+      "player_id": "00-0026197",
+      "state": "UNKNOWN_PARTICIPATION_EXPLICIT_STAT_ZERO",
+      "literal_CSV_fields": {
+        "attempts": "0",
+        "completions": "0"
+      },
+      "other_physical_credit_fields": {
+        "carries": "0",
+        "targets": "0",
+        "receptions": "0",
+        "sacks_suffered": "0",
+        "passing_2pt_conversions": "0",
+        "rushing_2pt_conversions": "0"
+      },
+      "PBPregistro": {
+        "full_regular_game_rows": 173
+      }
+    },
+    {
+      "game_id": "2022_01_IND_HOU",
+      "player_id": "00-0032436",
+      "state": "PLAYED_EXPLICIT_ZERO",
+      "literal_CSV_fields": {
+        "attempts": "0",
+        "completions": "0"
+      },
+      "other_physical_credit_fields": {
+        "carries": "1",
+        "targets": "0",
+        "receptions": "0",
+        "sacks_suffered": "0",
+        "passing_2pt_conversions": "0",
+        "rushing_2pt_conversions": "0"
+      },
+      "PBPregistro": {
+        "full_regular_game_rows": 217,
+        "named_as_rusher": 1,
+        "credited_rush_attempt": 1,
+        "kneel": 0
+      }
+    }
+  ],
+  "source_contract": "AllneededQBattempt/completioncells are explicitlynumeric. This checker andproduction qualifierparseblank/nonfiniteasunknown,neverzero. No sparseabsence->zero contract is needed for these targetcells.",
+  "physical_contract": "Positive otherqualifiedcredit establishesphysicalappearance, notmissingstat values. Sampleplayedzero has explicitCSV0/0 plusseparatecredit. Unknownparticipationcase has sameexplicitstat0/0 but noqualifiedphysicalcredit; it remainsUNKNOWN, notDNP orsettledUnder.",
+  "unknown_statistic_NFL_case": "No missing/nonfinite ATT/CMP cell in this retainedQBsourcepanel; unknown-statistic behavior can be software-fixtured but isnotclaimed as anobservedNFLcase.",
+  "no_model_or_grade_changes": true,
+  "new_fits": 0,
+  "new_collection": 0
+}

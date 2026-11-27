@@ -1,0 +1,30 @@
+{
+  "id": "B_M2_EXISTING_CHART_DEPTH_W9_SUPPORT_v1",
+  "state": "ELIGIBLE_DEPTH_KEYS_COMPLETE_NO_NEW_SOURCE_REQUIRED",
+  "depth": {
+    "path": "reports/player-context-completion-decision-01/B/source-depth-v1/FTN_DEPTH_QB_GAME_INPUTS.json.gz",
+    "sha256": "fc8489bfecae5e9d9808cdda62ff7e3af4b054240dbfb105c2937773934c9b6f",
+    "rows": 2901,
+    "2026weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "contexts": {
+    "path": "reports/information-first-20261112-01/B/completion-wave-v1/QB_CONTEXT_W1_W9_INPUTS_V1.json.gz",
+    "sha256": "45aaab99d41f2e2643066c001355b26430f55dca06e7c7e366eace252f2e021b",
+    "rows": 2939
+  },
+  "W9weekly_fit_cutoff_UTC": "2026-11-06T01:15:00+00:00",
+  "eligible_historical_rows": 2868,
+  "missing_depth_keys": 0,
+  "eligible_W8_rows": 2,
+  "target_W9_charting_consumed": false,
+  "qualification": "Existing W8 depth rows suffice for W9 earlier-only features. Current-vintage7day strict< proxy remains a reconstruction; date_pulled is retrieval, not authenticated original publication."
+}

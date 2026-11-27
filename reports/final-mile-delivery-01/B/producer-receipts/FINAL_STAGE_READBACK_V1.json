@@ -1,0 +1,136 @@
+{
+  "id": "B-COUNT-A-FINAL-STAGE-READBACK-v1",
+  "observed_UTC": "2026-11-12T06:44:59+00:00",
+  "PR": {
+    "PR": 88,
+    "state": "open",
+    "merged": false,
+    "merged_at": null,
+    "merge_commit_sha": "234679659595ad84a48ce5745fd9898a0f14ae42",
+    "head": "3156058b91c7d9f0bb0f2cdebc4831994214e5bd",
+    "base": "fa91988e65939d2b3516371a90a6380aeee3acb3",
+    "updated_at": "2026-11-12T06:41:57Z"
+  },
+  "registered_native": {
+    "ref": "refs/heads/research/weekly-storage-probe-v1",
+    "sha": "fa91988e65939d2b3516371a90a6380aeee3acb3"
+  },
+  "lab_state": {
+    "ref": "refs/heads/lab-state",
+    "sha": "275aa84b27c4239d3b2dfea07755734d9db0ac7c"
+  },
+  "latest_source": {
+    "sha": "3156058b91c7d9f0bb0f2cdebc4831994214e5bd",
+    "parent": "af405c4604f6eac935e594f1acd3ab492eef412c",
+    "message": "Accept the genuine Count A FIT_START recipe encoding",
+    "changed_paths": [
+      {
+        "path": "nfl_lab/count_a_native_extension_v1.py",
+        "status": "modified",
+        "git_blob_sha": "4342ccf542bc6539d95343707c55dcf5c1f08940"
+      },
+      {
+        "path": "reports/abc-championship/final-mile-producer-delivery-01/producer/COUNTA_CORRECTED_HELPER_ROOT_BINDING_V1.json",
+        "status": "added",
+        "git_blob_sha": "fe49a1fb7900c0ad0b1921ff7d117766060ce6d2"
+      },
+      {
+        "path": "reports/abc-championship/final-mile-producer-delivery-01/producer/COUNTA_FIT_ENCODER_FIX_SOURCE_MANIFEST_V1.json",
+        "status": "added",
+        "git_blob_sha": "22d08e00ae4aed52d0777b9d08106e4950e53522"
+      },
+      {
+        "path": "reports/abc-championship/final-mile-producer-delivery-01/review/COUNTA_ENCODING_INDEPENDENT_REVIEW_V1.json",
+        "status": "added",
+        "git_blob_sha": "334f8884674e625bb17b429ebc1cba94a4b09bab"
+      },
+      {
+        "path": "tests/test_count_a_native_extension_v1.py",
+        "status": "modified",
+        "git_blob_sha": "41d52c1274918c99a99da9900238b76c9a6bf46f"
+      }
+    ],
+    "native_code_patch": "@@ -82,7 +82,7 @@ def authenticate_fit(proof_body,fit_body,registration,audit):\n  require(len(proof_body)==26032 and sha(proof_body)==PROOF,'COUNT_A_ORIGINAL_PRODUCER_PROOF')\n  proof=strict(proof_body);fit=strict(fit_body);ref=registration['fit_start'];record=proof['artifacts']['pass_td__COUNT_A_MEAN/FIT_START.json']\n  require(len(fit_body)==ref['bytes']==record['bytes']and sha(fit_body)==ref['sha256']==record['sha256'],'COUNT_A_ORIGINAL_FIT_START')\n- recipe=fit['recipe'];require(sha(canonical(recipe)+b'\\n')==PARENT==audit['recipe_sha256'],'COUNT_A_ORIGINAL_RECIPE')\n+ recipe=fit['recipe'];require(sha(canonical(recipe))==PARENT==audit['recipe_sha256'],'COUNT_A_ORIGINAL_RECIPE')\n  require(recipe['training_cutoff_utc']=='2026-09-01T00:00:00Z'and recipe['source_pins']['mean_corrector']['sha256']==CORRECTOR,'COUNT_A_ORIGINAL_TRAINING_CLOCK_CORRECTOR')\n  return recipe\n def allowed_runtime_name(name):return name in FILES"
+  },
+  "latest_CI": [
+    {
+      "id": 43169607018,
+      "event": "pull_request",
+      "status": "in_progress",
+      "conclusion": null,
+      "head_sha": "3156058b91c7d9f0bb0f2cdebc4831994214e5bd",
+      "created_at": "2026-11-12T06:39:01Z"
+    }
+  ],
+  "operational_conclusion": "Newsourcehead3156058b supersedesaf405onlyforcurrentcode/CI; PRstillopen/nativebranchfa919/labstate275aaunchanged. No firstnativeCountArun/feedprovided. Oldaf405greenCIisnotnewheadCI.",
+  "minimum_owner_action": "AuthorizedAproducerowner reviews/acceptsormerges exact3156058b throughregisteredprocess after applicableCI, bindscorrectedhelper0 inrealRoot/source/profile, thenactualcapsule/FIT_START/proof/currentquery/nativecapture/export. Do not mergeaf405asifitcontainedtheencodingfix.",
+  "candidate_merge_SHA_warning": "PR.merge_commit_sha isGitHubcandidate/testmergeSHAwhilemerged=false andmerged_at=null; itisnotanactualproducingmerge.",
+  "encoding_correction": {
+    "affected_old_source": "af405c4604f6eac935e594f1acd3ab492eef412c",
+    "affected_function": "nfl_lab/count_a_native_extension_v1.py::authenticate_fit",
+    "defect": "Original recipe digest included an extra unregistered terminal newline, rejecting genuine originalFIT_STARTmetadata before inference.",
+    "minimal_patch": "sha(canonical(recipe)+newline) -> sha(canonical(recipe)); original model/recipe/training-clock/corrector checks retained.",
+    "source_after_bytes": 18727,
+    "source_after_sha256": "6bf0a6d432d7a0f77bab1d8d8a95c687cf91e350dde48e11a7e827184b469351",
+    "source_after_reconstructed_from_single_patch_and_hash_verified_by_B": true,
+    "model_or_output_recipe_changed": false,
+    "measured_historical_contamination": "NOT_DEMONSTRATED; oldsourcewasnotboundtoregisterednativeproducerininspectedscope.",
+    "FIT_START_binding": {
+      "bytes": 5968,
+      "sha256": "9119320dc53a64c0bca2caebae6b1b416335ae0db38160ffbc23a1e635d2e967"
+    },
+    "A_owner_local_genuine_metadata_review": {
+      "reported_old_result": "COUNT_A_ORIGINAL_RECIPE reject",
+      "reported_new_result": "PASS",
+      "canonical_without_newline_bytes": 5722,
+      "canonical_without_newline_sha256": "9c48aab650f35a60631fd5d6af2cef4b8c513416fe0f9b2c61591d7f8af4b85f",
+      "with_newline_sha256": "35b97d56ff4ddfd3460cd6c2d2223499f7390bab885c265550bc13d646a2810a",
+      "B_private_metadata_access": false,
+      "independent_B_genuine_metadata_rerun": false
+    }
+  },
+  "new_helper_root_binding": {
+    "helper0": "6bf0a6d432d7a0f77bab1d8d8a95c687cf91e350dde48e11a7e827184b469351",
+    "adapter": "a3b44ee5c7937e830d0c2693d3fa55b0fed52c9cba51ae5058c04b2e7075b527",
+    "corrector": "aa7c002506b57d7c1ca643f4236e5fb8b5132bebb00ad86720ee11221b6d9fb6",
+    "prepared_fragment_only": true,
+    "issued_Root": false,
+    "current_wire_bytes": null
+  },
+  "source_reports": [
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "3156058b91c7d9f0bb0f2cdebc4831994214e5bd",
+      "path": "reports/abc-championship/final-mile-producer-delivery-01/producer/COUNTA_CORRECTED_HELPER_ROOT_BINDING_V1.json",
+      "git_blob_sha": "fe49a1fb7900c0ad0b1921ff7d117766060ce6d2",
+      "bytes": 814,
+      "sha256": "79f7d0e4a8390cf2f0984d51c5e74c3f4e1f6d579977334fb27fc0ac67affcbc",
+      "exact_git_blob_verified": true
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "3156058b91c7d9f0bb0f2cdebc4831994214e5bd",
+      "path": "reports/abc-championship/final-mile-producer-delivery-01/producer/COUNTA_FIT_ENCODER_FIX_SOURCE_MANIFEST_V1.json",
+      "git_blob_sha": "22d08e00ae4aed52d0777b9d08106e4950e53522",
+      "bytes": 3176,
+      "sha256": "ff582316aaf57159d8ecb3f3a3509a0a507b9d558d9e2f5cc1d292b8033a3610",
+      "exact_git_blob_verified": true
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "3156058b91c7d9f0bb0f2cdebc4831994214e5bd",
+      "path": "reports/abc-championship/final-mile-producer-delivery-01/review/COUNTA_ENCODING_INDEPENDENT_REVIEW_V1.json",
+      "git_blob_sha": "334f8884674e625bb17b429ebc1cba94a4b09bab",
+      "bytes": 9113,
+      "sha256": "36b1201922058d50379d3f370e4536087ea1da9496339ea89381c3f3176d235b",
+      "exact_git_blob_verified": true
+    }
+  ],
+  "new_fits": 0,
+  "new_NFL_inference": 0,
+  "new_grades": 0,
+  "peer_writes": 0,
+  "dispatches": 0,
+  "merge_approval": 0,
+  "record_written_UTC": "2026-11-12T06:48:53.589618+00:00"
+}

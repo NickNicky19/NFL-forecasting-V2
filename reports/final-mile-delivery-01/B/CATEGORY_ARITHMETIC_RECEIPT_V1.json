@@ -1,0 +1,326 @@
+{
+  "id": "B-FINAL-CATEGORY-AGGREGATE-ARITHMETIC-v1",
+  "completed_UTC": "2026-11-12T06:44:21.337224+00:00",
+  "source_path": "reports/final-mile-delivery-01/B/category-selector-receipts/CATEGORY_ADMISSION_RECONCILIATION_V1.json",
+  "source_sha256": "549e66b84304854175770ae6742d0623a1a940b046970abdd92a4f344d78e037",
+  "canonical_C_source": {
+    "ref": "aaeb3c98a25a4e0a762abb5e5db0c3e6b38cbc71",
+    "path": "reports/category-decision-release-01/CATEGORY_PRODUCT_DECISIONS.json",
+    "sha256": "0d95bdb269761fe6a87d7646ea7345fc8b32363d7ad65b472708132fc34c3601"
+  },
+  "categories": 12,
+  "checks": 100,
+  "records": [
+    {
+      "category": "pass_yd",
+      "decision": "SHADOW",
+      "checks": 10,
+      "state": "PASS_AGGREGATE_ARITHMETIC_ONLY",
+      "own_side_records": {
+        "OVER": {
+          "decided": 45,
+          "losses": 17,
+          "rate": 0.6222222222222222,
+          "selected": 45,
+          "wins": 28
+        },
+        "UNDER": {
+          "decided": 44,
+          "losses": 20,
+          "rate": 0.5454545454545454,
+          "selected": 44,
+          "wins": 24
+        },
+        "COMBINED": {
+          "decided": 89,
+          "losses": 37,
+          "rate": 0.5842696629213483,
+          "selected": 89,
+          "wins": 52
+        }
+      }
+    },
+    {
+      "category": "pass_td",
+      "decision": "BLOCKED",
+      "checks": 10,
+      "state": "PASS_AGGREGATE_ARITHMETIC_ONLY",
+      "own_side_records": {
+        "OVER": {
+          "decided": 45,
+          "losses": 20,
+          "rate": 0.5555555555555556,
+          "selected": 45,
+          "wins": 25
+        },
+        "UNDER": {
+          "decided": 41,
+          "losses": 17,
+          "rate": 0.5853658536585366,
+          "selected": 41,
+          "wins": 24
+        },
+        "COMBINED": {
+          "decided": 86,
+          "losses": 37,
+          "rate": 0.5697674418604651,
+          "selected": 86,
+          "wins": 49
+        }
+      }
+    },
+    {
+      "category": "pass_cmp",
+      "decision": "SHADOW",
+      "checks": 10,
+      "state": "PASS_AGGREGATE_ARITHMETIC_ONLY",
+      "own_side_records": {
+        "OVER": {
+          "decided": 38,
+          "losses": 13,
+          "rate": 0.6578947368421053,
+          "selected": 38,
+          "wins": 25
+        },
+        "UNDER": {
+          "decided": 50,
+          "losses": 23,
+          "rate": 0.54,
+          "selected": 50,
+          "wins": 27
+        },
+        "COMBINED": {
+          "decided": 88,
+          "losses": 36,
+          "rate": 0.5909090909090909,
+          "selected": 88,
+          "wins": 52
+        }
+      }
+    },
+    {
+      "category": "pass_att",
+      "decision": "KEEP_INCUMBENT",
+      "checks": 10,
+      "state": "PASS_AGGREGATE_ARITHMETIC_ONLY",
+      "own_side_records": {
+        "OVER": {
+          "decided": 5,
+          "losses": 1,
+          "rate": 0.8,
+          "selected": 5,
+          "wins": 4
+        },
+        "UNDER": {
+          "decided": 82,
+          "losses": 42,
+          "rate": 0.4878048780487805,
+          "selected": 82,
+          "wins": 40
+        },
+        "COMBINED": {
+          "decided": 87,
+          "losses": 43,
+          "rate": 0.5057471264367817,
+          "selected": 87,
+          "wins": 44
+        }
+      }
+    },
+    {
+      "category": "pass_int",
+      "decision": "SHADOW",
+      "checks": 10,
+      "state": "PASS_AGGREGATE_ARITHMETIC_ONLY",
+      "own_side_records": {
+        "OVER": {
+          "decided": 81,
+          "losses": 35,
+          "rate": 0.5679012345679012,
+          "selected": 81,
+          "wins": 46
+        },
+        "UNDER": {
+          "decided": 6,
+          "losses": 2,
+          "rate": 0.6666666666666666,
+          "selected": 6,
+          "wins": 4
+        },
+        "COMBINED": {
+          "decided": 87,
+          "losses": 37,
+          "rate": 0.5747126436781609,
+          "selected": 87,
+          "wins": 50
+        }
+      }
+    },
+    {
+      "category": "rush_yd",
+      "decision": "KEEP_INCUMBENT",
+      "checks": 10,
+      "state": "PASS_AGGREGATE_ARITHMETIC_ONLY",
+      "own_side_records": {
+        "OVER": {
+          "decided": 78,
+          "losses": 40,
+          "rate": 0.48717948717948717,
+          "selected": 81,
+          "wins": 38
+        },
+        "UNDER": {
+          "decided": 209,
+          "losses": 82,
+          "rate": 0.6076555023923444,
+          "selected": 212,
+          "wins": 127
+        },
+        "COMBINED": {
+          "decided": 287,
+          "losses": 122,
+          "rate": 0.5749128919860628,
+          "selected": 293,
+          "wins": 165
+        }
+      }
+    },
+    {
+      "category": "rush_att",
+      "decision": "SHADOW",
+      "checks": 10,
+      "state": "PASS_AGGREGATE_ARITHMETIC_ONLY",
+      "own_side_records": {
+        "OVER": {
+          "decided": 114,
+          "losses": 49,
+          "rate": 0.5701754385964912,
+          "selected": 119,
+          "wins": 65
+        },
+        "UNDER": {
+          "decided": 146,
+          "losses": 65,
+          "rate": 0.5547945205479452,
+          "selected": 147,
+          "wins": 81
+        },
+        "COMBINED": {
+          "decided": 260,
+          "losses": 114,
+          "rate": 0.5615384615384615,
+          "selected": 266,
+          "wins": 146
+        }
+      }
+    },
+    {
+      "category": "rec",
+      "decision": "SHADOW",
+      "checks": 10,
+      "state": "PASS_AGGREGATE_ARITHMETIC_ONLY",
+      "own_side_records": {
+        "OVER": {
+          "wins": 78,
+          "losses": 50,
+          "decided": 128,
+          "rate": 0.609375,
+          "selected": 133
+        },
+        "UNDER": {
+          "wins": 161,
+          "losses": 123,
+          "decided": 284,
+          "rate": 0.5669014084507042,
+          "selected": 288
+        },
+        "COMBINED": {
+          "wins": 239,
+          "losses": 173,
+          "decided": 412,
+          "rate": 0.5800970873786407,
+          "selected": 421
+        }
+      }
+    },
+    {
+      "category": "rec_yd",
+      "decision": "SHADOW",
+      "checks": 10,
+      "state": "PASS_AGGREGATE_ARITHMETIC_ONLY",
+      "own_side_records": {
+        "OVER": {
+          "decided": 357,
+          "losses": 164,
+          "rate": 0.5406162464985994,
+          "selected": 413,
+          "wins": 193
+        },
+        "UNDER": {
+          "decided": 236,
+          "losses": 107,
+          "rate": 0.5466101694915254,
+          "selected": 246,
+          "wins": 129
+        },
+        "COMBINED": {
+          "decided": 593,
+          "losses": 271,
+          "rate": 0.5430016863406408,
+          "selected": 659,
+          "wins": 322
+        }
+      }
+    },
+    {
+      "category": "rush_rec_yd",
+      "decision": "SHADOW",
+      "checks": 10,
+      "state": "PASS_AGGREGATE_ARITHMETIC_ONLY",
+      "own_side_records": {
+        "OVER": {
+          "decided": 201,
+          "losses": 96,
+          "rate": 0.5223880597014925,
+          "selected": 217,
+          "wins": 105
+        },
+        "UNDER": {
+          "decided": 185,
+          "losses": 82,
+          "rate": 0.5567567567567567,
+          "selected": 191,
+          "wins": 103
+        },
+        "COMBINED": {
+          "decided": 386,
+          "losses": 178,
+          "rate": 0.538860103626943,
+          "selected": 408,
+          "wins": 208
+        }
+      }
+    },
+    {
+      "category": "anytime_td",
+      "decision": "ABSTAIN",
+      "checks": 0,
+      "state": "N/A_NO_COMPATIBLE_DIRECTION_PRODUCT"
+    },
+    {
+      "category": "nick-chart-ppr-v1",
+      "decision": "ABSTAIN",
+      "checks": 0,
+      "state": "N/A_NO_COMPATIBLE_DIRECTION_PRODUCT"
+    }
+  ],
+  "method": "Independent standard-library Decimal/integer counts; no C/A scorer called",
+  "environment": "3.12.14",
+  "limits": [
+    "Counts/rates/coverage arithmetic only; no independent win-label or private-row/model/source-clock verification",
+    "C three focal named game/week intervals are owner-reported; no new bootstrap or statistical threshold",
+    "No new score view,NFLsample,testweek,model,grade,admission oractivation"
+  ],
+  "new_fits": 0,
+  "new_grades": 0
+}

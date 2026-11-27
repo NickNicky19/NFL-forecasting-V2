@@ -1,0 +1,49 @@
+{
+  "id": "B_FTN_INFORMATION_PACKAGE_CHECKS_v1",
+  "actual_UTC": "2026-11-13T00:19:39.894546+00:00",
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -q",
+    "tests": 561,
+    "state": "PASS"
+  },
+  "checks": [
+    {
+      "command": "python tools/validate_checkpoint.py",
+      "state": "PASS"
+    },
+    {
+      "command": "python tools/check_result_index_coverage.py",
+      "state": "PASS"
+    },
+    {
+      "command": "python tools/check_analysis_index_coverage.py",
+      "state": "PASS"
+    },
+    {
+      "command": "python tools/check_prop_scoreboard_coverage.py",
+      "state": "PASS"
+    },
+    {
+      "command": "git diff --check",
+      "state": "PASS"
+    }
+  ],
+  "result_index": {
+    "registered_artifacts": 229,
+    "views": 615170,
+    "old_views_preserved": 613992,
+    "new_views": 1178
+  },
+  "analysis_index": {
+    "views": 22451,
+    "old_views_preserved": 22091,
+    "new_views": 360
+  },
+  "initial_checkpoint_failure": {
+    "state": "PRESERVED_AND_FIXED",
+    "cause": "Public network-action receipt/example commands included an absolute owner-local capture-directory locator. Redacted presentation only, original bytes/hash retained, no forecast/source/metric changes.",
+    "qualification": "Peer receipt binds original bytes and redaction. Existing published Git history was not rewritten."
+  },
+  "scientific_scope": "These are software/index checks; independent fit/inference/arithmetic receipts supply their separately stated evidence. No software check adds NFL samples, validates historical publication clocks or proves predictive gain.",
+  "original_site_changes": 0
+}

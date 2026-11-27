@@ -1,0 +1,35 @@
+{
+  "id": "B_M2_PREFIT_GUARD_RECHECK_v2",
+  "state": "PASS_SCOPED_GUARD_REPAIR",
+  "at_UTC": "2026-11-15T05:03:20.045130+00:00",
+  "checks": [
+    {
+      "case": "VERSION_dispersion",
+      "rejected_before_execution": true
+    },
+    {
+      "case": "VERSION_law",
+      "rejected_before_execution": true
+    },
+    {
+      "case": "NONFINITE_PARENT_MEAN",
+      "rejected_before_execution": true,
+      "reached_optimizer": false
+    },
+    {
+      "case": "FRACTIONAL_COUNTS",
+      "rejected_before_execution": true,
+      "reached_optimizer": false
+    },
+    {
+      "case": "INVALID_LOW_SUPPORT",
+      "rejected_before_execution": true,
+      "reached_optimizer": false
+    }
+  ],
+  "original_MRE": "PREFIT_GUARD_MRE_V1.json",
+  "checked_source_sha256": "23ab726f718332da06b94ecc7f093d089cc3e9dd4693b41de4a8a9013fcdd670",
+  "actual_optimizer_calls": 0,
+  "NFL_fits": 0,
+  "no_measured_forecast_accuracy_change": true
+}

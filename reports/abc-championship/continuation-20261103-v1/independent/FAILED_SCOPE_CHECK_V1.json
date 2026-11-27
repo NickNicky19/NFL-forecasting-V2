@@ -1,0 +1,19 @@
+{
+  "state": "FAIL_SCOPE_NOT_ALL_FOUR_CATEGORIES",
+  "finding": "Candidate map keyed by procedure/product/policy but not target; each procedure lookup combined multiple targets, then next(iter()) selected only the first target for scoring. Four-category declared package emitted passing-only scores and could not finish leader summary.",
+  "targets_declared": [
+    "pass_yd",
+    "rush_yd",
+    "rec",
+    "rec_yd"
+  ],
+  "targets_scored": [
+    "pass_yd"
+  ],
+  "score_views": 216,
+  "private_method_rows": 1536,
+  "source_code_sha256": "a992d45071123ed619ec74edb27fbc93f1ded673206bba67165983cdf4ab1369",
+  "partial_scores_sha256": "004e7e424ed1e51c39d722c720ff8b93fc782cb7f7fc3bfc2d87714b5b1fd786",
+  "remedy": "Preserve failed artifacts and receipt; use target-aware candidate keys in a separately versioned corrected package. No forecast changes or new fits required.",
+  "verification_scope": "Independent structural source review and artifact census; did not invoke scorer or mutate parent files."
+}

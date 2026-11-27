@@ -1,0 +1,34 @@
+{
+  "protocol_id": "v2-frozen-future-cohort-population-namespace-bridge-v1",
+  "registered_at_utc": "2026-10-30T02:58:39.917788+00:00",
+  "source_freeze_artifact": "reports/continuation-20261030b/FUTURE_GRADING_SUBGROUP_FREEZE.json",
+  "source_freeze_sha256": "acf5da4daab0799f48f714736931aca45e435aa9a239a8814eda5f76e635b729",
+  "source_query_sha256": "b11b7ace31627f0a6ff5ce9c37808dc9bfd80737ed55465f75c3b15c18d002f5",
+  "source_independent_review_sha256": "acb0040eca815b2e12551f60f0417466f15b842edf1b64aa993c60232f6bc9c1",
+  "population_namespace_mapping": {
+    "frozen_original_feed": "frozen_exante_feed",
+    "frozen_feed_player_union": "frozen_exante_chart_union"
+  },
+  "exact_join_fields": [
+    "game_id",
+    "player_id",
+    "target",
+    "mapped_population"
+  ],
+  "query_cells": 2229,
+  "games": 13,
+  "old_membership_rows": {
+    "pregame-cohort-scorecards-v2": 1795,
+    "chart-cohort-scorecards-v1": 434
+  },
+  "all_members_join_exactly_once": true,
+  "rank_and_cohort_bytes_unchanged": true,
+  "blocked_queries_unranked": 5,
+  "blocked_queries_with_preserved_historical_rank": 3,
+  "abstention_rule": "A historical rank never admits a blocked forecast, supplies a zero prediction or creates a scored error; retain abstentions in cohort coverage.",
+  "strict_information_note": "Frozen subgroup membership may use older historical memory; a strict-model cohort diagnostic is not a pure-current selected system.",
+  "selection": "NONE; this is a deterministic namespace bridge, never a new ranking or selection policy.",
+  "week8_outcomes_read": 0,
+  "new_fits": 0,
+  "new_forecasts": 0
+}

@@ -1,0 +1,427 @@
+{
+  "id": "B-QB-CANONICAL-FRAME-SAVED-LOOKUP-READINESS-v1",
+  "UTC": "2026-11-22T17:45:22.556610+00:00",
+  "state": "READY_FOR_WEBSITE_CONTRACT_BINDING;NO_JOIN_OR_GRADING",
+  "candidates": [
+    {
+      "candidate_id": "B-SIM-pass_yd-D2_LEAF",
+      "product": "mean",
+      "origin_bodies": 4,
+      "locations_resolved": 4,
+      "locations_not_resolved": 0,
+      "saved_output_type": "point",
+      "adapter_plan": {
+        "safe_parser": "nfl_v2.shared_subgroups.packet_rows (stream gzip JSON); select only forecast-time allowlist, never normalize/grading routines that read actual.",
+        "point_field": "prediction in exact saved product row; distribution_summary mean/lower_median only when explicitly same original product; use primary product as frozen.",
+        "match": "season/week/canonical game/player/target/position/history/product plus stored procedure and policy; evaluation known-target-time suffix must match existing registration alias, not be invented.",
+        "probability": "Do not construct a CDF from leaf_ids or a summary; primary nominees here are point products."
+      },
+      "source_code_bindings": [
+        {
+          "path": "nfl_v2/shared_subgroups.py",
+          "sha256": "2ac46c02f2dfe175da77cbfe834770631b863301200b95b6c6127bd86960d32b",
+          "bytes": 23371,
+          "publication_binding": "LOCAL_RETAINED;owner immutable delivery required"
+        }
+      ]
+    },
+    {
+      "candidate_id": "B-SIM-pass_yd-DIRECT_GLM",
+      "product": "lower_median",
+      "origin_bodies": 4,
+      "locations_resolved": 4,
+      "locations_not_resolved": 0,
+      "saved_output_type": "point",
+      "adapter_plan": {
+        "safe_parser": "nfl_v2.shared_subgroups.packet_rows (stream gzip JSON); select only forecast-time allowlist, never normalize/grading routines that read actual.",
+        "point_field": "prediction in exact saved product row; distribution_summary mean/lower_median only when explicitly same original product; use primary product as frozen.",
+        "match": "season/week/canonical game/player/target/position/history/product plus stored procedure and policy; evaluation known-target-time suffix must match existing registration alias, not be invented.",
+        "probability": "Do not construct a CDF from leaf_ids or a summary; primary nominees here are point products."
+      },
+      "source_code_bindings": [
+        {
+          "path": "nfl_v2/shared_subgroups.py",
+          "sha256": "2ac46c02f2dfe175da77cbfe834770631b863301200b95b6c6127bd86960d32b",
+          "bytes": 23371,
+          "publication_binding": "LOCAL_RETAINED;owner immutable delivery required"
+        }
+      ]
+    },
+    {
+      "candidate_id": "B-SIM-pass_yd-EMPIRICAL",
+      "product": "lower_median",
+      "origin_bodies": 1,
+      "locations_resolved": 1,
+      "locations_not_resolved": 0,
+      "saved_output_type": "point",
+      "adapter_plan": {
+        "safe_parser": "Streaming gzip CSV via existing csv reader; fixed empirical procedure lineage; filter exact history/product/target/season/week/role and admitted identity.",
+        "point_field": "prediction; finite numeric, null preserved. No probability support in this CSV.",
+        "match": "Original run_id, history_regime, product, game/player/target/role and cutoff fields. No inference from participation/actual."
+      },
+      "source_code_bindings": [
+        {
+          "path": "nfl_v2/shared_subgroups.py",
+          "sha256": "2ac46c02f2dfe175da77cbfe834770631b863301200b95b6c6127bd86960d32b",
+          "bytes": 23371,
+          "publication_binding": "LOCAL_RETAINED;owner immutable delivery required"
+        },
+        {
+          "path": "nfl_v2/compact_subgroups.py",
+          "sha256": "f77ae3713509334fa87b4ba6625a65db46c1c11d552b0c67af85124d17c49265",
+          "bytes": 10771,
+          "publication_binding": "LOCAL_RETAINED;owner immutable delivery required"
+        }
+      ]
+    },
+    {
+      "candidate_id": "B-SIM-pass_td-D2_LEAF",
+      "product": "lower_median",
+      "origin_bodies": 4,
+      "locations_resolved": 4,
+      "locations_not_resolved": 0,
+      "saved_output_type": "point",
+      "adapter_plan": {
+        "safe_parser": "nfl_v2.shared_subgroups.packet_rows (stream gzip JSON); select only forecast-time allowlist, never normalize/grading routines that read actual.",
+        "point_field": "prediction in exact saved product row; distribution_summary mean/lower_median only when explicitly same original product; use primary product as frozen.",
+        "match": "season/week/canonical game/player/target/position/history/product plus stored procedure and policy; evaluation known-target-time suffix must match existing registration alias, not be invented.",
+        "probability": "Do not construct a CDF from leaf_ids or a summary; primary nominees here are point products."
+      },
+      "source_code_bindings": [
+        {
+          "path": "nfl_v2/shared_subgroups.py",
+          "sha256": "2ac46c02f2dfe175da77cbfe834770631b863301200b95b6c6127bd86960d32b",
+          "bytes": 23371,
+          "publication_binding": "LOCAL_RETAINED;owner immutable delivery required"
+        }
+      ]
+    },
+    {
+      "candidate_id": "B-SIM-pass_td-HGB",
+      "product": "squared_error_mean",
+      "origin_bodies": 4,
+      "locations_resolved": 4,
+      "locations_not_resolved": 0,
+      "saved_output_type": "point",
+      "adapter_plan": {
+        "safe_parser": "nfl_v2.shared_subgroups.packet_rows (stream gzip JSON); select only forecast-time allowlist, never normalize/grading routines that read actual.",
+        "point_field": "prediction in exact saved product row; distribution_summary mean/lower_median only when explicitly same original product; use primary product as frozen.",
+        "match": "season/week/canonical game/player/target/position/history/product plus stored procedure and policy; evaluation known-target-time suffix must match existing registration alias, not be invented.",
+        "probability": "Do not construct a CDF from leaf_ids or a summary; primary nominees here are point products."
+      },
+      "source_code_bindings": [
+        {
+          "path": "nfl_v2/shared_subgroups.py",
+          "sha256": "2ac46c02f2dfe175da77cbfe834770631b863301200b95b6c6127bd86960d32b",
+          "bytes": 23371,
+          "publication_binding": "LOCAL_RETAINED;owner immutable delivery required"
+        }
+      ]
+    },
+    {
+      "candidate_id": "B-SIM-pass_td-EMPIRICAL",
+      "product": "lower_median",
+      "origin_bodies": 1,
+      "locations_resolved": 1,
+      "locations_not_resolved": 0,
+      "saved_output_type": "point",
+      "adapter_plan": {
+        "safe_parser": "Streaming gzip CSV via existing csv reader; fixed empirical procedure lineage; filter exact history/product/target/season/week/role and admitted identity.",
+        "point_field": "prediction; finite numeric, null preserved. No probability support in this CSV.",
+        "match": "Original run_id, history_regime, product, game/player/target/role and cutoff fields. No inference from participation/actual."
+      },
+      "source_code_bindings": [
+        {
+          "path": "nfl_v2/shared_subgroups.py",
+          "sha256": "2ac46c02f2dfe175da77cbfe834770631b863301200b95b6c6127bd86960d32b",
+          "bytes": 23371,
+          "publication_binding": "LOCAL_RETAINED;owner immutable delivery required"
+        },
+        {
+          "path": "nfl_v2/compact_subgroups.py",
+          "sha256": "f77ae3713509334fa87b4ba6625a65db46c1c11d552b0c67af85124d17c49265",
+          "bytes": 10771,
+          "publication_binding": "LOCAL_RETAINED;owner immutable delivery required"
+        }
+      ]
+    },
+    {
+      "candidate_id": "B-SIM-pass_att-C02_LEAF",
+      "product": "lower_median",
+      "origin_bodies": 4,
+      "locations_resolved": 4,
+      "locations_not_resolved": 0,
+      "saved_output_type": "point",
+      "adapter_plan": {
+        "safe_parser": "nfl_v2.shared_subgroups.packet_rows (stream gzip JSON); select only forecast-time allowlist, never normalize/grading routines that read actual.",
+        "point_field": "prediction in exact saved product row; distribution_summary mean/lower_median only when explicitly same original product; use primary product as frozen.",
+        "match": "season/week/canonical game/player/target/position/history/product plus stored procedure and policy; evaluation known-target-time suffix must match existing registration alias, not be invented.",
+        "probability": "Do not construct a CDF from leaf_ids or a summary; primary nominees here are point products."
+      },
+      "source_code_bindings": [
+        {
+          "path": "nfl_v2/shared_subgroups.py",
+          "sha256": "2ac46c02f2dfe175da77cbfe834770631b863301200b95b6c6127bd86960d32b",
+          "bytes": 23371,
+          "publication_binding": "LOCAL_RETAINED;owner immutable delivery required"
+        }
+      ]
+    },
+    {
+      "candidate_id": "B-SIM-pass_att-HGB",
+      "product": "absolute_error_point",
+      "origin_bodies": 4,
+      "locations_resolved": 4,
+      "locations_not_resolved": 0,
+      "saved_output_type": "point",
+      "adapter_plan": {
+        "safe_parser": "nfl_v2.shared_subgroups.packet_rows (stream gzip JSON); select only forecast-time allowlist, never normalize/grading routines that read actual.",
+        "point_field": "prediction in exact saved product row; distribution_summary mean/lower_median only when explicitly same original product; use primary product as frozen.",
+        "match": "season/week/canonical game/player/target/position/history/product plus stored procedure and policy; evaluation known-target-time suffix must match existing registration alias, not be invented.",
+        "probability": "Do not construct a CDF from leaf_ids or a summary; primary nominees here are point products."
+      },
+      "source_code_bindings": [
+        {
+          "path": "nfl_v2/shared_subgroups.py",
+          "sha256": "2ac46c02f2dfe175da77cbfe834770631b863301200b95b6c6127bd86960d32b",
+          "bytes": 23371,
+          "publication_binding": "LOCAL_RETAINED;owner immutable delivery required"
+        }
+      ]
+    },
+    {
+      "candidate_id": "B-SIM-pass_int-C02_LEAF",
+      "product": "lower_median",
+      "origin_bodies": 4,
+      "locations_resolved": 4,
+      "locations_not_resolved": 0,
+      "saved_output_type": "point",
+      "adapter_plan": {
+        "safe_parser": "nfl_v2.shared_subgroups.packet_rows (stream gzip JSON); select only forecast-time allowlist, never normalize/grading routines that read actual.",
+        "point_field": "prediction in exact saved product row; distribution_summary mean/lower_median only when explicitly same original product; use primary product as frozen.",
+        "match": "season/week/canonical game/player/target/position/history/product plus stored procedure and policy; evaluation known-target-time suffix must match existing registration alias, not be invented.",
+        "probability": "Do not construct a CDF from leaf_ids or a summary; primary nominees here are point products."
+      },
+      "source_code_bindings": [
+        {
+          "path": "nfl_v2/shared_subgroups.py",
+          "sha256": "2ac46c02f2dfe175da77cbfe834770631b863301200b95b6c6127bd86960d32b",
+          "bytes": 23371,
+          "publication_binding": "LOCAL_RETAINED;owner immutable delivery required"
+        }
+      ]
+    },
+    {
+      "candidate_id": "B-SIM-pass_int-EMPIRICAL",
+      "product": "lower_median",
+      "origin_bodies": 1,
+      "locations_resolved": 1,
+      "locations_not_resolved": 0,
+      "saved_output_type": "point",
+      "adapter_plan": {
+        "safe_parser": "Streaming gzip CSV via existing csv reader; fixed empirical procedure lineage; filter exact history/product/target/season/week/role and admitted identity.",
+        "point_field": "prediction; finite numeric, null preserved. No probability support in this CSV.",
+        "match": "Original run_id, history_regime, product, game/player/target/role and cutoff fields. No inference from participation/actual."
+      },
+      "source_code_bindings": [
+        {
+          "path": "nfl_v2/shared_subgroups.py",
+          "sha256": "2ac46c02f2dfe175da77cbfe834770631b863301200b95b6c6127bd86960d32b",
+          "bytes": 23371,
+          "publication_binding": "LOCAL_RETAINED;owner immutable delivery required"
+        },
+        {
+          "path": "nfl_v2/compact_subgroups.py",
+          "sha256": "f77ae3713509334fa87b4ba6625a65db46c1c11d552b0c67af85124d17c49265",
+          "bytes": 10771,
+          "publication_binding": "LOCAL_RETAINED;owner immutable delivery required"
+        }
+      ]
+    },
+    {
+      "candidate_id": "B-SIM-pass_int-DIRECT_GLM",
+      "product": "lower_median",
+      "origin_bodies": 4,
+      "locations_resolved": 4,
+      "locations_not_resolved": 0,
+      "saved_output_type": "point",
+      "adapter_plan": {
+        "safe_parser": "nfl_v2.shared_subgroups.packet_rows (stream gzip JSON); select only forecast-time allowlist, never normalize/grading routines that read actual.",
+        "point_field": "prediction in exact saved product row; distribution_summary mean/lower_median only when explicitly same original product; use primary product as frozen.",
+        "match": "season/week/canonical game/player/target/position/history/product plus stored procedure and policy; evaluation known-target-time suffix must match existing registration alias, not be invented.",
+        "probability": "Do not construct a CDF from leaf_ids or a summary; primary nominees here are point products."
+      },
+      "source_code_bindings": [
+        {
+          "path": "nfl_v2/shared_subgroups.py",
+          "sha256": "2ac46c02f2dfe175da77cbfe834770631b863301200b95b6c6127bd86960d32b",
+          "bytes": 23371,
+          "publication_binding": "LOCAL_RETAINED;owner immutable delivery required"
+        }
+      ]
+    },
+    {
+      "candidate_id": "B-SIM-pass_cmp-R3_FTN_LEAF",
+      "product": "exact_count_law",
+      "origin_bodies": 6,
+      "locations_resolved": 6,
+      "locations_not_resolved": 0,
+      "saved_output_type": "law",
+      "adapter_plan": {
+        "safe_parser": "Existing JSON saved-row adapter; unique (method,game_id,player_id,target) and exact procedure/season/week/team/opponent/cutoff checks before lookup.",
+        "implementation": "tools/query_opportunity_information.py plus nfl_v2/opportunity_information.py:restore_law handles explicit NB/leaf_mixture/poisson/geometric safely; SKILL handoff separately binds generic tools/query_targeted_qb_m2.py.",
+        "typed_products": "Saved mean/lower_median separate; full law parameters explicit. No model load, corrector, calibration or fit.",
+        "law_primary": true,
+        "law_direction": "Use original exact crossing masses and more-probable-side, tie abstain; source conditioning/push/void contract unchanged.",
+        "point_primary": "Saved mean for SKILL_R0, never law median substituted for mean."
+      },
+      "source_code_bindings": [
+        {
+          "path": "tools/score_ftn_completion_information.py",
+          "sha256": "8fda030d4e3d7959cd3129c5326e00c93a773a4e7cf6a357bfbea35ad96b4ffc",
+          "bytes": 19726,
+          "producer_commit": "d79acddf5f094c85001c9b17a525ac7d9e25f9ec",
+          "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/d79acddf5f094c85001c9b17a525ac7d9e25f9ec/tools/score_ftn_completion_information.py"
+        },
+        {
+          "path": "tools/score_player_context_wave.py",
+          "sha256": "b090adbf048f58b3fa1be5d553db1a391e65857c97eb3932033bfbafe6d435bd",
+          "bytes": 27601,
+          "producer_commit": "3ad682cf86912f025e5a1699c8a396f3d9065222",
+          "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/3ad682cf86912f025e5a1699c8a396f3d9065222/tools/score_player_context_wave.py"
+        },
+        {
+          "path": "nfl_v2/player_context_matchup.py",
+          "sha256": "3db66e8d7c75f444d87f4792add9096a9d04d0390902f67ce21248c206476f29",
+          "bytes": 17185,
+          "producer_commit": "3ad682cf86912f025e5a1699c8a396f3d9065222",
+          "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/3ad682cf86912f025e5a1699c8a396f3d9065222/nfl_v2/player_context_matchup.py"
+        }
+      ]
+    },
+    {
+      "candidate_id": "B-SIM-pass_cmp-SKILL_R0_MIX",
+      "product": "mean",
+      "origin_bodies": 6,
+      "locations_resolved": 6,
+      "locations_not_resolved": 0,
+      "saved_output_type": "point",
+      "adapter_plan": {
+        "safe_parser": "Existing JSON saved-row adapter; unique (method,game_id,player_id,target) and exact procedure/season/week/team/opponent/cutoff checks before lookup.",
+        "implementation": "tools/query_opportunity_information.py plus nfl_v2/opportunity_information.py:restore_law handles explicit NB/leaf_mixture/poisson/geometric safely; SKILL handoff separately binds generic tools/query_targeted_qb_m2.py.",
+        "typed_products": "Saved mean/lower_median separate; full law parameters explicit. No model load, corrector, calibration or fit.",
+        "law_primary": false,
+        "law_direction": "Use original exact crossing masses and more-probable-side, tie abstain; source conditioning/push/void contract unchanged.",
+        "point_primary": "Saved mean for SKILL_R0, never law median substituted for mean."
+      },
+      "source_code_bindings": [
+        {
+          "path": "reports/information-skill-01/B/HISTORICAL_TYPED_HANDOFF_V1.json",
+          "sha256": "bbaeb3cf44656142c8eb406148e119352f2e90778f6f8405a6445ab72e62f6b9",
+          "bytes": 10594,
+          "producer_commit": "78383a9d29948b90056415c2274a83d6054acf79",
+          "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/78383a9d29948b90056415c2274a83d6054acf79/reports/information-skill-01/B/HISTORICAL_TYPED_HANDOFF_V1.json"
+        },
+        {
+          "path": "tools/query_targeted_qb_m2.py",
+          "sha256": "bf213c1ab3a08728603f13e66b48737daa15a5a74465a374586c017adb3f68d8",
+          "bytes": 4118,
+          "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+          "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/tools/query_targeted_qb_m2.py"
+        },
+        {
+          "path": "nfl_v2/targeted_qb_m2.py",
+          "sha256": "23ab726f718332da06b94ecc7f093d089cc3e9dd4693b41de4a8a9013fcdd670",
+          "bytes": 12252,
+          "producer_commit": "11db6280f8af4ae215f15ebbcc26c3a891db27f1",
+          "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/11db6280f8af4ae215f15ebbcc26c3a891db27f1/nfl_v2/targeted_qb_m2.py"
+        }
+      ]
+    },
+    {
+      "candidate_id": "B-SIM-pass_cmp-DIRECT_GLM",
+      "product": "exact_count_law",
+      "origin_bodies": 2,
+      "locations_resolved": 2,
+      "locations_not_resolved": 0,
+      "saved_output_type": "law",
+      "adapter_plan": {
+        "safe_parser": "Existing JSON saved-row adapter; unique (method,game_id,player_id,target) and exact procedure/season/week/team/opponent/cutoff checks before lookup.",
+        "implementation": "tools/query_opportunity_information.py plus nfl_v2/opportunity_information.py:restore_law handles explicit NB/leaf_mixture/poisson/geometric safely; SKILL handoff separately binds generic tools/query_targeted_qb_m2.py.",
+        "typed_products": "Saved mean/lower_median separate; full law parameters explicit. No model load, corrector, calibration or fit.",
+        "law_primary": true,
+        "law_direction": "Use original exact crossing masses and more-probable-side, tie abstain; source conditioning/push/void contract unchanged.",
+        "point_primary": "Saved mean for SKILL_R0, never law median substituted for mean."
+      },
+      "source_code_bindings": [
+        {
+          "path": "reports/w1w9-comparison-closure-01/B/legacy-completion-extension/SAVED_JSON_RESTORATION_AND_LAW_CHECKS_V1.json",
+          "sha256": "f2e0e7f312726d147983509648cd7f8846d16bbfd26b14476933fcebd324f912",
+          "bytes": 2014,
+          "producer_commit": "3dca7e3b6e795ac9ea74a08e8c7adb19becae578",
+          "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/3dca7e3b6e795ac9ea74a08e8c7adb19becae578/reports/w1w9-comparison-closure-01/B/legacy-completion-extension/SAVED_JSON_RESTORATION_AND_LAW_CHECKS_V1.json"
+        },
+        {
+          "path": "reports/w1w9-comparison-closure-01/B/legacy-completion-extension/ALIAS_AND_HISTORY_POLICY_BINDINGS_V2.json",
+          "sha256": "e23d46e9401638e5bc5a3ba34b3e938809a9740f86e867d45a5931d22e7b9890",
+          "bytes": 184366,
+          "producer_commit": "3dca7e3b6e795ac9ea74a08e8c7adb19becae578",
+          "immutable_URL": "https://raw.githubusercontent.com/NickNicky19/NFL-forecasting-V2/3dca7e3b6e795ac9ea74a08e8c7adb19becae578/reports/w1w9-comparison-closure-01/B/legacy-completion-extension/ALIAS_AND_HISTORY_POLICY_BINDINGS_V2.json"
+        },
+        {
+          "path": "nfl_v2/distribution_laws.py",
+          "sha256": "14f034249f38cd12d5a0ea36b05e64086e0859cc4209f83a55c913cda5742f4d",
+          "bytes": 7334,
+          "publication_binding": "LOCAL_RETAINED;owner immutable delivery required"
+        }
+      ]
+    },
+    {
+      "candidate_id": "B-SIM-pass_att-COMMON_EXPOSURE",
+      "product": "gamma_poisson_count_law",
+      "origin_bodies": 6,
+      "locations_resolved": 6,
+      "locations_not_resolved": 0,
+      "saved_output_type": "law",
+      "adapter_plan": {
+        "safe_parser": "Existing JSON saved-row adapter; unique (method,game_id,player_id,target) and exact procedure/season/week/team/opponent/cutoff checks before lookup.",
+        "implementation": "tools/query_opportunity_information.py plus nfl_v2/opportunity_information.py:restore_law handles explicit NB/leaf_mixture/poisson/geometric safely; SKILL handoff separately binds generic tools/query_targeted_qb_m2.py.",
+        "typed_products": "Saved mean/lower_median separate; full law parameters explicit. No model load, corrector, calibration or fit.",
+        "law_primary": true,
+        "law_direction": "Use original exact crossing masses and more-probable-side, tie abstain; source conditioning/push/void contract unchanged.",
+        "point_primary": "Saved mean for SKILL_R0, never law median substituted for mean."
+      },
+      "source_code_bindings": [
+        {
+          "path": "tools/query_opportunity_information.py",
+          "sha256": "df898d240e39e85cc696539d8072a85bfd1ad39a27b04cc5e4b6e797f5077db1",
+          "bytes": 2288,
+          "producer_commit": "a0f5b91c61c9d1c7c2a3e39c4bdd6da29435e98e",
+          "immutable_URL": null
+        },
+        {
+          "path": "nfl_v2/opportunity_information.py",
+          "sha256": "3d059b042aba291b13b9b8c477271e1c90cc84d8e58c1ac234057a1973096731",
+          "bytes": 25337,
+          "producer_commit": "a0f5b91c61c9d1c7c2a3e39c4bdd6da29435e98e",
+          "immutable_URL": null
+        }
+      ]
+    }
+  ],
+  "required_contract": [
+    "Website canonical game/player crosswalk and exact case identity/outcome version.",
+    "Admitted decision/historical information cutoff, quote timing tier and eligible role/participation/settlement/push/void conventions.",
+    "Frozen mapping from evaluated procedure suffix/history to original stored procedure/product and origin.",
+    "Forecast origin later than admitted decision cutoff is unavailable/incompatible for that horizon; do not reinterpret as fresh issuance.",
+    "All saved actual/actual_status/actual_grid/distribution scoring fields remain inaccessible to forecast-side projection; unknowns retained."
+  ],
+  "scope": "No source GET, fit, inference, law probability computation, outcome join or grades. Prior body SHA/length/schema checks reused; private locations derived from retained verified cache mapping and unchanged filenames/sizes.",
+  "budget": {
+    "CPU_cap_seconds": 10,
+    "wall_cap_seconds": 60,
+    "measured_worker_CPU_seconds": 0.013647725999999999,
+    "limits": "Metadata-only; orchestration and tails not fully metered. No old scientific budget used."
+  },
+  "private_locator_delivery": "Owner-local working metadata retained; protected paths not published."
+}

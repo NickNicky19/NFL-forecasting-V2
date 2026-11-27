@@ -1,0 +1,95 @@
+{
+  "read_at_utc": "2026-11-05 00:58:27 UTC",
+  "refs": [
+    {
+      "id": "A_research",
+      "url": "https://api.github.com/repos/NickNicky19/NFL-forecasting/branches/research%2Faccuracy-wave-20261026",
+      "error": "HTTPError: 400: GitHub Fetch URL contains an invalid repository path. (Response: None)"
+    },
+    {
+      "id": "A_lab_state",
+      "url": "https://api.github.com/repos/NickNicky19/NFL-forecasting/branches/lab-state",
+      "name": "lab-state",
+      "head": "275aa84b27c4239d3b2dfea07755734d9db0ac7c",
+      "error": null
+    },
+    {
+      "id": "C_main",
+      "url": "https://api.github.com/repos/NickNicky19/NFL-forecasting-NGS-C/branches/main",
+      "name": "main",
+      "head": "3c3199209cc9bcf5bdffbdedb230dac1262004e9",
+      "error": null
+    },
+    {
+      "id": "production_main",
+      "url": "https://api.github.com/repos/NickNicky19/nicks-expert-nfl-picks/branches/main",
+      "name": "main",
+      "head": "af8bc14abe4a4148a3f84e6c131775923b5300f4",
+      "error": null
+    }
+  ],
+  "correct_A_research_ref": "a36a545dd9962e0a154bdece65f7b2818185f32c",
+  "current_C_ref": "3c3199209cc9bcf5bdffbdedb230dac1262004e9",
+  "core_protocol": {
+    "path": "reports/abc-championship/PROTOCOL-v2-C-1.json",
+    "SHA256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1"
+  },
+  "core_scorer": {
+    "path": "src/abc_championship_v2.py",
+    "SHA256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce"
+  },
+  "current_C_admission": {
+    "path": "reports/abc-championship/ADMISSION_LEDGER.json",
+    "SHA256": "ba598b821e187a51739a77928cf15caab514c36cb26537922f17f4703b69ca63"
+  },
+  "post_wave_pointer": {
+    "id": "POST-WAVE-5W-v1",
+    "previous_pointer": {
+      "path": "reports/post-wave-5w-v1/PREVIOUS_CURRENT_PROTOCOL.json",
+      "SHA256": "d878d68f33c69b8e615eea6d88ed935efb4d8c54ad3392571cd75a2ad0c8684f"
+    },
+    "C_adoption": {
+      "path": "protocol/POST_WAVE_5W_V1.md",
+      "SHA256": "63108b552022ab9eb8e11059bd49aee9407074154b984aefd4687e6b5045bfbe"
+    },
+    "report": {
+      "path": "reports/post-wave-5w-v1/README.md",
+      "SHA256": "1495b5014e3a9aa8dc183b7462e4c31d007b93afcfc27095491801823094ec1c"
+    },
+    "qualification": {
+      "path": "reports/post-wave-5w-v1/QUALIFICATION_TABLE.json.gz",
+      "SHA256": "b993b2b3dd56c163db08d1c47d079b835bc5d0e52ac9f3cfb9df1510fa07ee17"
+    },
+    "trace": {
+      "path": "reports/post-wave-5w-v1/MODEL_INPUT_TRACE.json",
+      "SHA256": "f59fdc4db380640908274c520eb93160cc9c43bd157991437341864f58181b2d"
+    },
+    "CountA_delivery": {
+      "path": "reports/post-wave-5w-v1/COUNT_A_DELIVERY_DISPOSITION.json",
+      "SHA256": "8ee51b0d8fba7adcff99b2405c712a68b191b7fa8a1ad467558c9191e874fa5d"
+    },
+    "independent_verification": {
+      "path": "reports/post-wave-5w-v1/INDEPENDENT_VERIFICATION.json",
+      "SHA256": "ad24fdc51ae3dd28d0a0540a4931f4b777c34a62373220131922159e6477b46b"
+    },
+    "state": "TRACE_COMPLETED_NEGATIVE;EXACT_PRODUCT_FLOOR_APPLIED;COUNT_A_DURATION_MET_DELIVERY_BLOCKED",
+    "preserves_protocol_and_scorer": true,
+    "primary_replacements": 0,
+    "validation": {
+      "path": "reports/post-wave-5w-v1/VALIDATION_RECEIPT.json",
+      "SHA256": "653cbbf03ec57b1922607083ac93bb5ff760705d5d97dc58996d9f5843025e9d"
+    }
+  },
+  "B_admission": {
+    "state": "ADMITTED_OWNER_LOCAL_SAME_OFFER_DIAGNOSTIC_WITH_PUBLIC_MASK_VERIFICATION",
+    "index_ref": "de34e9625a6e504cef373b3fed77446d62b0bf29",
+    "index": {
+      "path": "reports/abc-championship/shared-intake-v3/intake/B-EXPORT_INDEX.json.gz",
+      "SHA256": "e9aaa9e24dc0b2207ea9a90956f32c9b8c820b06f49b5e001fde24abd0b5f779"
+    },
+    "admitted": "684Cboardtriads+219source-specificweeklytriads;Ccontrolsrecomputed;privatecandidatevaluesownerlocal",
+    "not_admitted": "Raw private line/forecast/participation joins, common masks, transfer or global recovery waiver",
+    "next": "111RBmaskowner-localcounts;remaininghistoricalsource/origin/recoverytasks;no forcedprivateexport"
+  },
+  "new_B_package_C_intake": "NOT_VERIFIED;CURRENT_PACKAGE_NOT_YET_PUBLISHED"
+}

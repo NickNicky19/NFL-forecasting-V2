@@ -1,0 +1,258 @@
+{
+  "id": "B-CATEGORY-RELEASE-CURRENT-WEBSITE-STATIC-v1",
+  "observed_UTC": "2026-11-12T01:30:42.522059+00:00",
+  "actual_HEAD": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+  "records": [
+    {
+      "path": "data/meta.json",
+      "url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/meta.json",
+      "expected_commit": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+      "HTTP_status": 200,
+      "HTTP_Date": null,
+      "observed_UTC": "2026-11-12T01:30:42.024937+00:00",
+      "bytes": 1249,
+      "sha256": "72cac77d4f3d506e1533e43dc310a4aa839845aba90d5e2bda38014840347230",
+      "expected_sha256": "72cac77d4f3d506e1533e43dc310a4aa839845aba90d5e2bda38014840347230",
+      "exact_parity": true
+    },
+    {
+      "path": "data/health.json",
+      "url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/health.json",
+      "expected_commit": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+      "HTTP_status": 200,
+      "HTTP_Date": null,
+      "observed_UTC": "2026-11-12T01:30:42.054227+00:00",
+      "bytes": 1319,
+      "sha256": "9b000cf73ab4c716445c1e9e17eb39a4a15fa5d373234b39dd34278d95a9de84",
+      "expected_sha256": "9b000cf73ab4c716445c1e9e17eb39a4a15fa5d373234b39dd34278d95a9de84",
+      "exact_parity": true
+    },
+    {
+      "path": "data/weekly-adaptive-overlay.json",
+      "url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/weekly-adaptive-overlay.json",
+      "expected_commit": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+      "HTTP_status": 200,
+      "HTTP_Date": null,
+      "observed_UTC": "2026-11-12T01:30:42.035187+00:00",
+      "bytes": 333,
+      "sha256": "4a73c4d3ec9bf70414dc35be370f3e2d4c1b3e1364586908214bcd20dc3729d1",
+      "expected_sha256": "4a73c4d3ec9bf70414dc35be370f3e2d4c1b3e1364586908214bcd20dc3729d1",
+      "exact_parity": true
+    },
+    {
+      "path": "data/weekly-selected-rankings.json",
+      "url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/weekly-selected-rankings.json",
+      "expected_commit": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+      "HTTP_status": 200,
+      "HTTP_Date": null,
+      "observed_UTC": "2026-11-12T01:30:42.277077+00:00",
+      "bytes": 474,
+      "sha256": "92a3ffa18f4b1ebf28995fdc2f735e3507db8d0b0a40909c89d72e5012e7d012",
+      "expected_sha256": "92a3ffa18f4b1ebf28995fdc2f735e3507db8d0b0a40909c89d72e5012e7d012",
+      "exact_parity": true
+    },
+    {
+      "path": "data/weekly-adaptive/2d6d458ad7de11b02af3c95d7e96ee4ae2b54d5aa0f7d36edf66c592c1ebf3b3.json",
+      "url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/weekly-adaptive/2d6d458ad7de11b02af3c95d7e96ee4ae2b54d5aa0f7d36edf66c592c1ebf3b3.json",
+      "expected_commit": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+      "HTTP_status": 200,
+      "HTTP_Date": null,
+      "observed_UTC": "2026-11-12T01:30:42.128101+00:00",
+      "bytes": 763,
+      "sha256": "2d6d458ad7de11b02af3c95d7e96ee4ae2b54d5aa0f7d36edf66c592c1ebf3b3",
+      "expected_sha256": "2d6d458ad7de11b02af3c95d7e96ee4ae2b54d5aa0f7d36edf66c592c1ebf3b3",
+      "exact_parity": true
+    },
+    {
+      "path": "data/weekly-selected-rankings/f5919bf094f9ad620d9460f31ed13682e163400b2d350cf98db38661e3bc97b4.json",
+      "url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/weekly-selected-rankings/f5919bf094f9ad620d9460f31ed13682e163400b2d350cf98db38661e3bc97b4.json",
+      "expected_commit": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+      "HTTP_status": 200,
+      "HTTP_Date": null,
+      "observed_UTC": "2026-11-12T01:30:42.300958+00:00",
+      "bytes": 11962,
+      "sha256": "f5919bf094f9ad620d9460f31ed13682e163400b2d350cf98db38661e3bc97b4",
+      "expected_sha256": "f5919bf094f9ad620d9460f31ed13682e163400b2d350cf98db38661e3bc97b4",
+      "exact_parity": true
+    }
+  ],
+  "state": "PASS_ALL_SIX_STATIC_BYTES",
+  "generated_UTC": "2026-11-11T21:13:13Z",
+  "calculated_build_age_minutes": 257.49203431666666,
+  "frozen_health_build_age_minutes": 0.06,
+  "declared_max_minutes": 120,
+  "health_qualification": "Frozenhealthageisbuild-timeonly;no liveDOM/stalewarningclaim",
+  "execution_model": {
+    "capture_schema": "baseline-capture-classic-presence-v2",
+    "engine_sha256": {
+      "pull/books.py": "0b89744960136a4f2e594b61e6df754d357706d8c66a8ae359d8eb02bbfa53f8",
+      "pull/build.py": "b83126080149f2f0705682d1c0be0a8ee87610ebb0a88cd57b94b8a82b63ad73",
+      "pull/gamemodel.py": "2a2519a12ad4993da02ae6bdcdb6c86f2b5a6554ce93a702b550ecde17fb7d1f",
+      "pull/grade.py": "afd1310d708def4f400e6bf84e981e2edc7635dc946a63571022203c1d3ae735",
+      "pull/matchup.py": "eaf627730041060ad16dd9930accfe54a54cf5fb49bb42d18680b5c572ddd7a5",
+      "pull/news.py": "17ce1b3b6b72694e6b543bd767e287c26a9d1f6dd5dba2de6c873543036842e9",
+      "pull/scoring.py": "90a9d201581b20c4e757912ce7dbf4941a6a90784d721c80367341511c652a2d",
+      "pull/sources.py": "36555cdbc55d73ba632d5adae1130288f4f532073857c642ac3ebc7e626b0061"
+    },
+    "grading_version": "statistical-presence-strict-v5-20261106",
+    "model": "sleeper-matchup-classic-presence-strict-v2",
+    "normalized_stats_cache": "stat-keys-presence-strict-v3",
+    "original_shadow_model": "original_sleeper_matchup_baseline",
+    "original_shadow_procedure": "original-builder-default-refresh-v1",
+    "original_shadow_source": "89512ed952308dacc1f6a930915ddbcdccd460d9",
+    "schema_version": "weekly-classic-presence-execution-v2"
+  },
+  "captured_reference_rows": 1617,
+  "source_timestamps_verified": false,
+  "quote_freshness": "UNKNOWN",
+  "source_claimed_real_line_props": 438,
+  "reference_only_props": 1589,
+  "these_counts_not_qualified_offer_evidence": true,
+  "overlay": {
+    "state": "DISABLED_USE_R0",
+    "rows": 0,
+    "fallback": {
+      "publication_not_approved_R0": 2027
+    },
+    "source_label": "CURRENT_BASELINE"
+  },
+  "ranking": {
+    "schema": "weekly-selected-rankings-v1",
+    "policy": {
+      "categories": {
+        "pass_att": {
+          "lean": 1,
+          "minimum_line": 20.5,
+          "scale": 3
+        },
+        "pass_cmp": {
+          "lean": 0.8,
+          "minimum_line": 12.5,
+          "scale": 2.5
+        },
+        "pass_int": {
+          "lean": 0.12,
+          "minimum_line": 0.5,
+          "scale": 0.5
+        },
+        "pass_td": {
+          "lean": 0.15,
+          "minimum_line": 0.5,
+          "scale": 0.6
+        },
+        "pass_yd": {
+          "lean": 8,
+          "minimum_line": 150.5,
+          "scale": 30
+        },
+        "rec": {
+          "lean": 0.3,
+          "minimum_line": 1.5,
+          "scale": 1.2
+        },
+        "rec_yd": {
+          "lean": 4,
+          "minimum_line": 15.5,
+          "scale": 12
+        },
+        "rush_att": {
+          "lean": 0.8,
+          "minimum_line": 6.5,
+          "scale": 3
+        },
+        "rush_rec_yd": {
+          "lean": 5,
+          "minimum_line": 25.5,
+          "scale": 15
+        },
+        "rush_yd": {
+          "lean": 4,
+          "minimum_line": 15.5,
+          "scale": 12
+        }
+      },
+      "fallback": "same-opportunity reference identified by forecast_source and model_version; unavailable is never zero",
+      "meaning": "descriptive scaled forecast gap, not win probability or EV",
+      "minimum_games": 2,
+      "minimum_projected_ppr": {
+        "QB": 10,
+        "RB": 6,
+        "TE": 6,
+        "WR": 6
+      },
+      "minimum_score": 0.35,
+      "minimum_snap_share": 0.5,
+      "projection_line_ratio": [
+        0.4,
+        2.5
+      ],
+      "tie_order": [
+        "absolute_score_desc",
+        "game_id",
+        "player_id",
+        "category"
+      ],
+      "top_n": 12,
+      "unavailable": [
+        "Out",
+        "IR",
+        "PUP",
+        "Suspended",
+        "NA",
+        "Doubtful",
+        "COV",
+        "DNR"
+      ],
+      "version": "selected-projection-gap-classic-presence-v2"
+    },
+    "policy_sha256": "551ee07861774ba2c90ad0e8097136c359807f92843dde5cd4b96ecffbe958ed",
+    "counts": {
+      "over": 12,
+      "under": 12
+    },
+    "source_counts": {
+      "over": {
+        "CURRENT_BASELINE": 12
+      },
+      "under": {
+        "CURRENT_BASELINE": 12
+      }
+    }
+  },
+  "mae_display_pointer": {
+    "HTTP_status": 404,
+    "state": "DISPLAY_POINTER_ABSENT_NOT_PROOF_MODEL_MISSING"
+  },
+  "native_archive": {
+    "path": "data/current-classic/2026/w10/a7e3f6189bb0f2d4daf96400d657ce6775d5666687761d6ccb986ac1fbe9b7ff.json.gz",
+    "sha256": "f7fc8e20db1258520cec6d8dc32cd92c571d3f13cde7b747892ffd2028da8d63",
+    "bytes": 38388,
+    "top_level_keys": [
+      "payload",
+      "payload_sha256"
+    ],
+    "rows": 1617,
+    "source_code_commit": "01a283a2bba828ce7634902017f38ef93fd8c75e",
+    "captured_at": "2026-11-11T21:13:15Z",
+    "generated_at": "2026-11-11T21:13:13Z",
+    "source_tag_counts": {
+      "ours": 1179,
+      "dk": 392,
+      "sleeper": 46
+    },
+    "source_clock_flags": {
+      "False": 1617
+    },
+    "line_null": 0,
+    "current_native_rows_include_line_fields": true,
+    "qualification": "Originalpublishedreferenceforecastswithretainedline/source/lean/topflags. TaggedDK/Sleeperrecordsarenotdiscarded;timing/settlementnotindependentlyqualifiedhere. No newaccuracyclaim."
+  },
+  "DOM": "NOT_CHECKED_BY_B",
+  "current_category_rendered_values": "NOT_PROVED_BY_STATIC_METADATA_ALONE",
+  "new_website_writes": 0,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_grades": 0,
+  "new_schedulers": 0,
+  "old_frozen_packets": "C75/C69/B10 andoriginalwebsite1610remainretained;thisisnewerscheduledreference1617,notreplacementofoldrecords"
+}

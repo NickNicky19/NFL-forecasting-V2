@@ -1,0 +1,61 @@
+{
+  "id": "B_M2_SELECTED_PARENT_EQUIVALENCE_v1",
+  "state": "OUTPUT_BOUND_ARITHMETIC_AND_COMMITMENT_CHECK_NO_REGRADING",
+  "rows": [
+    {
+      "BB": "M2_P2_BB",
+      "BIN_parent": "M2_P2_BIN",
+      "common_full_board": 142,
+      "full_board_side_disagreements": 0,
+      "selective_views_checked": 114,
+      "all_selected_membership_hashes_equal": true,
+      "all_own_side_records_equal": true,
+      "implication": "For every registered raw/calibrated threshold, fractional coverage and Top-K comparison, both membership and records are unchanged. On candidate-selected cases the BIN parent therefore has the identical own-side record; no selective accuracy increment is established.",
+      "parent_full_side_proof": {
+        "source": "PAIRED_COMPARISONS_V1.json",
+        "sha256": "6c9bd96fa9913b87ac47b3d1baae2db7f634dd99048f3d9f0073d10c4c2bf731",
+        "candidate": "M2_P2_BB",
+        "control": "M2_P2_BIN",
+        "policy": "LAW"
+      }
+    },
+    {
+      "BB": "M2_C1_BB",
+      "BIN_parent": "M2_C1_BIN",
+      "common_full_board": 142,
+      "full_board_side_disagreements": 0,
+      "selective_views_checked": 114,
+      "all_selected_membership_hashes_equal": true,
+      "all_own_side_records_equal": true,
+      "implication": "For every registered raw/calibrated threshold, fractional coverage and Top-K comparison, both membership and records are unchanged. On candidate-selected cases the BIN parent therefore has the identical own-side record; no selective accuracy increment is established.",
+      "parent_full_side_proof": {
+        "source": "PAIRED_COMPARISONS_V1.json",
+        "sha256": "6c9bd96fa9913b87ac47b3d1baae2db7f634dd99048f3d9f0073d10c4c2bf731",
+        "candidate": "M2_C1_BB",
+        "control": "M2_C1_BIN",
+        "policy": "LAW"
+      }
+    },
+    {
+      "BB": "M2_C2_BB",
+      "BIN_parent": "M2_C2_BIN",
+      "common_full_board": 142,
+      "full_board_side_disagreements": 0,
+      "selective_views_checked": 114,
+      "all_selected_membership_hashes_equal": true,
+      "all_own_side_records_equal": true,
+      "implication": "For every registered raw/calibrated threshold, fractional coverage and Top-K comparison, both membership and records are unchanged. On candidate-selected cases the BIN parent therefore has the identical own-side record; no selective accuracy increment is established.",
+      "parent_full_side_proof": {
+        "source": "PAIRED_COMPARISONS_V1.json",
+        "sha256": "6c9bd96fa9913b87ac47b3d1baae2db7f634dd99048f3d9f0073d10c4c2bf731",
+        "candidate": "M2_C2_BB",
+        "control": "M2_C2_BIN",
+        "policy": "LAW"
+      }
+    }
+  ],
+  "selective_source_sha256": "c4e17afca1b71a2303d85364f993f23a7195454fba58bcafa19df5c4718cb39b",
+  "new_fits": 0,
+  "new_NFL_observations": 0,
+  "new_source_reads": 0
+}

@@ -1,0 +1,21 @@
+{
+  "id": "B-W5-METADATA-RESTORATION-AND-OVERLAP-QUALIFICATION-v1",
+  "registered_UTC": "2026-11-12T04:16:58.946412+00:00",
+  "action": "Restore exact original public source bytes and existing metadata-only adapter/identity bridge; verify whole membership digest against old retained B source, without reading target outcomes or computing model scores",
+  "source_assignment_path": "reports/baselines-coverage-20261031h/source-expansion/FROZEN_ROLLING_SOURCE_ASSIGNMENTS.json",
+  "source_assignment_sha256": "79398d84799f87256c7a74563234fdd98da77c5308ed21e01ab84174e70c0218",
+  "adapter_path": "tools/qualify_w6_archive_sources.py",
+  "adapter_sha256": "744f12997b6feacb8ba1d73e227b8c7c106dc7ef5e74fa428eb006d6587ce96c",
+  "expected_bridge_sha256": "a44e42361de63e42339a563f57ce2c72da17aeffa2eb69e99ac5fb9e246a166d",
+  "expected_metadata_sha256": "4c5783cfa81f31c71e31e1f5c6ae0c1fa294997810f75d1d8f0f5bf91b643efb",
+  "expected_normalized_original_bytes": 21902,
+  "expected_normalized_original_sha256": "9b74e81ff451bd26e96b3019436e26306a4068f4fc9b38cc4561e1e0ab2d146f",
+  "source_count": 5,
+  "max_restored_bytes": 8388608,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_grades": 0,
+  "protected_rows_publication": false,
+  "A_owner_private_keys": "Notavailable in B; only existing permitted owner-local intersection may close A4-versus-B28 membership",
+  "fallback_action": "If bytes or mask differ, preserve failure and identify exact conflicting binding rather than substitute a source. If only Akeys remain absent, deliver Bsource/mask proof and exact existing A action; no duplicate Ajoin implementation"
+}

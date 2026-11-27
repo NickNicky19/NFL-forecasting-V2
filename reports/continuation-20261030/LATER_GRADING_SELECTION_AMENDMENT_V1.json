@@ -1,0 +1,90 @@
+{
+  "protocol_id": "v2-post-first-kickoff-evaluation-amendment-20261030-v1",
+  "registered_at_utc": "2026-10-30T00:20:51.996668+00:00",
+  "state": "FROZEN_NO_NEW_OUTCOMES_READ",
+  "reviewer": "independent_verifier",
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "week8_outcome_sources_opened": 0,
+  "first_game_schedule": {
+    "game_id": "2026_08_CAR_GB",
+    "scheduled_kickoff_utc": "2026-10-30T00:15:00Z",
+    "deadline_elapsed_by_schedule": true,
+    "live_game_state_observed": false
+  },
+  "inherited_captures": [
+    {
+      "family": "EMPIRICAL",
+      "forecast_sha256": "b825c8fc436c71939d45d56f387a1e6a304a29072963f97c0f11d07e6770b7f6",
+      "forecast_bytes": 329556,
+      "capture_receipt_sha256": "0656066003ac2ab4c6e9d08892ce6ea0b52be132be89464fbc84f2085d4c1c14",
+      "capture_public_artifact": "reports/continuation-20261029/week8-shadow-v2/CAPTURE_RECEIPT.json",
+      "original_protocol_sha256": "add5ee6e8e576ff0164c8bcfc7ccd86f482b702809d0e946630d4dfa686d9d87",
+      "forecast_rows": 10416,
+      "issued_rows": 10386,
+      "abstention_rows": 30
+    },
+    {
+      "family": "HGB",
+      "forecast_sha256": "9c71eabb7fff13a5cceba6c43246343a10d7f77a3b62184f4ac090959f5a8d67",
+      "forecast_bytes": 748397,
+      "capture_receipt_sha256": "fca1f0db76e81559fcd7a7669d1d416f2b3842e2c5d027e17ea1921d327d131f",
+      "capture_public_artifact": "reports/continuation-20261029/hgb-history-v1/WEEK8_CAPTURE_RECEIPT.json",
+      "original_protocol_sha256": "8ea88fc4b558d57f46003aaba20cb10af604998f9a7c17c76eb2fb130215794e",
+      "forecast_rows": 10416,
+      "issued_rows": 10386,
+      "abstention_rows": 30
+    }
+  ],
+  "grading": {
+    "original_predictions": "retain immutable originals and their original issue/persist/owner-cutoff tags; no regeneration",
+    "initial_panel": "2026 REG Weeks1-7 remains fixed; Week8 grading separate version",
+    "label_admission": "exact identity/target contract; qualified complete explicit source; official finality and appearance; version/revision/availability clocks; no missingzero imputation",
+    "pipeline": "use independently reviewed schema-specific empirical and HGB graders; new families require separate capture adapter qualification",
+    "participation": "all original queries retained; DNP, missing, unknown, pending, canceled and abstentions separate; conditional-on-appearance scoring",
+    "metrics": {
+      "numeric_primary": "MAE; functional/objective preserved",
+      "numeric_other": [
+        "MSE",
+        "RMSE",
+        "signed_bias",
+        "P90_abs",
+        "P95_abs",
+        "max_abs",
+        "exact_n/exact_den",
+        "strict/inclusive1,5,10 tolerances with denominators"
+      ],
+      "td_primary": "Brier",
+      "td_other": [
+        "log_loss, including infinity",
+        "prevalence",
+        "reliability with sample counts"
+      ]
+    },
+    "comparison": "same scored player/game/target/query identities and same labels; paired loss differences, fallback and both-learned overlap; whole-game/week dependence and insufficient-cluster flags",
+    "new_wave_timing": "never include elapsed CAR-GB in a new pregame capture; later genuine query capture uses actual clock and unstarted games only"
+  },
+  "selection_policy_replay": {
+    "state": "REGISTERED_NOT_EXECUTED",
+    "evidence": "NEW_EXPERIMENT_EXPOSED_HISTORY_POLICY_REPLAY",
+    "panel": "2026 Weeks1-7 reconstructed participant cohort; not a historically captured selector",
+    "candidate_pool": "fixed empirical-history v2 and HGB-history v1 procedures only; all three history arms; same target/product and matched supported rows",
+    "products": {
+      "display_point": "all compatible numeric point views; compare MAE",
+      "intended_mean": "genuine empirical means and squared-loss HGB intendedmeans; compare MSE",
+      "td_probability": "empirical Bernoulli means and HGB logloss probability; compare Brier"
+    },
+    "update": "at each weekly origin choose lowest earlier-current-season pooled loss only; no targetweek observations",
+    "tie": "exact numeric tie resolved by ascending stable procedure_id/history_regime/product_id",
+    "week1_startup": "empirical H-CURRENT matching product; lower_median for displayed numeric point, empirical_mean for mean and TD probability; retain startup contribution",
+    "report": "actual chosen nextweek losses, oracle-best only separately hindsight; compare fixed controls and earlier-multiseason selector only under its separately bound panel",
+    "prospective": "a selector frozen now is not pregame for CAR-GB; any later capture and policy performance begins at its real timestamp",
+    "offers": "no actual offers/prices/frozen betting selections admitted; EV/ROI/Over-Under selections remain null"
+  },
+  "source_limits": [
+    "current-vintage source and assumed7day availability remain unchanged",
+    "older featurememory in HGB H-CURRENT is not strict-current information",
+    "new repository does not reset prior2026 exposure"
+  ],
+  "owner_boundary": "no production writes, collector, recurring job, wagering or upstream ledger modification"
+}

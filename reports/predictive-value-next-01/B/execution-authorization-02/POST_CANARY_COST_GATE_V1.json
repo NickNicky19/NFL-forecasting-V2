@@ -1,0 +1,50 @@
+{
+  "id": "B-TABICLV2-POST-CANARY-COST-GATE-v1",
+  "UTC": "2026-11-16T23:19:00.551413+00:00",
+  "state": "SAFE_STOP_BEFORE_W8_W9_CPU_PROJECTION_DOES_NOT_FIT",
+  "quality_inspected_before_decision": false,
+  "canary": {
+    "stage": "W7-ungraded-canary",
+    "UTC": "2026-11-16T23:17:16.013898+00:00",
+    "CPU_seconds": 30.010699441,
+    "wall_seconds": 14.325361102997704,
+    "peak_aggregate_RSS_bytes": 683769856,
+    "peak_runtime_storage_bytes": 833218349,
+    "returncode": 0,
+    "stop_reason": null,
+    "state": "PASS"
+  },
+  "CPU_charged_before_future": 167.742316291,
+  "CPU_total_cap": 600,
+  "wall_total_cap": 1200,
+  "completion_CPU_reserve": 180,
+  "completion_wall_reserve": 180,
+  "recorded_headroom_for_future_CPU": 252.257683709,
+  "actual_headroom_for_future_wall": 529.6408951282501,
+  "projection": [
+    {
+      "week": 8,
+      "training_rows": 56,
+      "query_rows": 28,
+      "squared_context_query_factor_with20pct_margin": 4.8,
+      "projected_CPU_seconds": 144.0513573168,
+      "projected_wall_seconds": 68.76173329438897
+    },
+    {
+      "week": 9,
+      "training_rows": 86,
+      "query_rows": 30,
+      "squared_context_query_factor_with20pct_margin": 12.129008746355685,
+      "projected_CPU_seconds": 364.00003600414067,
+      "projected_wall_seconds": 173.75243011296268
+    }
+  ],
+  "projected_remaining_CPU": 508.05139332094063,
+  "projected_remaining_wall": 242.51416340735165,
+  "projected_total_CPU_including_reserve": 855.7937096119406,
+  "CPU_fits": false,
+  "wall_fits": true,
+  "frozen_rule": "First-origin whole controlled-stage CPU/wall; squared context-length scaling from28, query-count scaling,20percent margin, retained completion reserves. No subtraction of unfavorable overhead or outcome-based truncation.",
+  "completed": "W7 valid saved28candidate+28ordinary probabilities; no quality viewed before safe-stop decision. W5-6 fallback predeclared. W8-9 not executed, not losses or intentional abstentions.",
+  "next_action": "Use authorized completion reserve for common grading of retained populations, independent representative arithmetic, protected/public-safe retention and reporting. No further fit under this cap."
+}

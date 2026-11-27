@@ -1,0 +1,17 @@
+{
+  "state": "REQUIRED_WITH_CURRENT_B_CONTEXT_EXPORT",
+  "parent_data_commit": "3ad682cf86912f025e5a1699c8a396f3d9065222",
+  "required_scope_overlay": {
+    "path": "reports/player-context-matchup-01/B/CURRENT_COVERAGE_SCOPE_V3.json",
+    "sha256": "a957537d8f9cae64871ee2b23b19d19bc44fa30e2700460b4de1a33d8688e1ed"
+  },
+  "required_period_history_overlay": {
+    "path": "reports/player-context-matchup-01/B/qb-scores-v1/SOURCE_PERIOD_HISTORY_METADATA_ANNOTATIONS_V2.json",
+    "sha256": "a4d17db468f025f08a6f10439b8b7755e7854a91fc665c636e87fb40430fd19c"
+  },
+  "source_rows": "RawSCORESretainoldtemplatevalues bydesign. Current metadata overlayssupersedeonlydescriptivefields; C intake/consumersmustapplyboth, notmisreadoutside-scope asfailedinference.",
+  "coverage_reader": "nfl_v2/context_scope_metadata.py:qualified_rows",
+  "source_horizons": "Correct boundhorizonsare presentin source_aggregate_fields/sourceannotations evenwherea generic numeric/properindexrecord hasno separate top-level horizon.",
+  "licenses": "DATA_LICENSES_AND_ATTRIBUTION.md + DATA_LICENSES_AND_ATTRIBUTION_V2.md",
+  "new_C_admission": false
+}

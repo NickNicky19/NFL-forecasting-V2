@@ -1,0 +1,85 @@
+{
+  "id": "B_TO_C_W1W9_PANEL_AND_EXPORT_ADAPTER_REQUIREMENTS_v1",
+  "at_UTC": "2026-11-14T18:46:27.496569+00:00",
+  "owner": "C common evaluator/panel owner;B ownexport/inference owner;A privateofferjoin executor",
+  "source_contract": "ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1",
+  "scorer_sha256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce",
+  "status": "REQUIREMENTS_AND_SCOPE_RECONCILIATION;NOT_UNION_ADMISSION_OR_NEW_SCORE",
+  "A1_4_B5_9_union": {
+    "source_policy": "One explicitly named additive TierBmulti-source diagnostic:retainedAannualactualcompletionoffersW1-4;retainedB/nativeactualcompletionoffersW5-9. This disjoint-week precedence is outcome-independent and avoidsannualA/nativeW5doublecount.",
+    "different_sources": "NOT_A_REJECTION_REASON_BY_ITSELF",
+    "conditions": [
+      "Exactsame full-gameOT creditedcompletiontarget,QBrole,canonicalplayer/game/season/week and compatible outcomeversion",
+      "Retainedactualofferedlineprovenance remains explicit;A olderW6-7internal/reference rows excluded",
+      "Eachcontender evaluated on fixedsameeligibleopportunities;fullsystemunavailable/fallback andnamedpairwise masks preserved",
+      "Line/book/source/nativeIDs,offeredside,comparator,thresholdtieranddecisionhorizon retained;unknownbookor main/alternate status remainsunknown,not inventedordinarymain",
+      "No originalquote/source clocks are fabricated;diagnosticmode doesnot authenticate historicalpregameavailability",
+      "A5a41sameownercompleted84join reused,notrequestedagain;B exactstoredlateroutputsusedfirst",
+      "IfAannualW5alsoincluded,resolve event/player/target/book/line/horizonduplicate membership beforeadding counts",
+      "Anyprivate rows stayowner-local withpermittedimmutablemanifest,sourceweek/key/grade/procedure commitments and reproducible exact scorer"
+    ],
+    "admission": "C ownsfinal namedpanel/sourcepolicy adoption;rootB receipt-union reviewer supplies A/nativefacts,not thisrequirementsdocument"
+  },
+  "row_schema_required": [
+    "opportunity_id",
+    "procedure_id",
+    "category",
+    "game_id",
+    "player_id",
+    "role",
+    "season",
+    "week",
+    "scoring_contract_id",
+    "line",
+    "offered_sides",
+    "selected_side",
+    "actual",
+    "appearance",
+    "decision_UTC",
+    "evidence_tier"
+  ],
+  "envelope_required": [
+    "producer_repository",
+    "producer_commit",
+    "procedure_id",
+    "period_id",
+    "artifact_path",
+    "SHA256",
+    "rights_analysis",
+    "rights_export",
+    "rights_GitHub_retention",
+    "rights_publication",
+    "contracts",
+    "history",
+    "feature_memory",
+    "priors",
+    "calibration_history",
+    "update_rule",
+    "output_type",
+    "selection_rule",
+    "horizon",
+    "availability_tier",
+    "fallback",
+    "actual_rows_games_weeks",
+    "missing_dependencies"
+  ],
+  "normalization": [
+    "UseCcanonicalplayer/game/role contract and exact target/scoring fields;fpts is only internalalias for nick-chart-ppr-v1,never legacyfantasy.",
+    "Map B mean, lower_median, count-law direction as distinct procedure/output/policy identities;B1aliasexplicitnoextra fit.",
+    "Preserve OVER/UNDER/YES/ABSTAIN/null selected_side,appearance PLAYED/DNP/unknown,explicitactual/status,push/void/missing. Astatisticisnotzero fromappearancealone.",
+    "Ownside numerator=sumwins,combined denominator=sumOver/Underdecided;no averageofsidepercentages.",
+    "Strictpoint>lineOVER/<lineUNDER/=lineABSTAIN is not website margin gating.",
+    "Full count laws or qualified exact p_over/p_under/p_push may support probabilityscores;typedpoints alone do not. B Leaf-mixture has unitcount support and geometric tail;do notfeed itinto incompatible C loaderwithouta hashed/parity-checked adapter."
+  ],
+  "historical_vs_prospective": {
+    "historical": "src/actual_offers_v4.py HISTORICAL_DIAGNOSTIC mode explicitly omits prospective quote-clock/freshness branch;rootcommonexportscorer grades alreadyqualified retained rows.",
+    "prospective": "offer_validator_v2 and actual_offers_v4 PROSPECTIVE require realclocks/open sides/currentcutoff;do notbackdateoruse these strictlivechecks as reason torejectalabeled historicaldiagnostic solelyforunknownquoteclocks.",
+    "completion_coherence": "Currentgenericprospective adapter has a pass_cmp/pass_att coherence gate. BstandaloneCMPmustretain its explicit marginal scope;C owns any product-admission adapter. Do not silently cap Bmarginals, fabricate jointsupport or treat anunrelatedattemptoutputasjointmodel."
+  },
+  "rights": "C datasetmanifest separates analysis/export/GitHubretention/publication from rawredistribution. Public availability doesnotgrantprotectedArowtransfer;owner-localscoring remains permitted route.",
+  "next_action": {
+    "executor": "C common panel/scorer owner",
+    "artifact": "Namednineweek diagnostic panelmanifest + frozen contender mapping + sourceweek/contract/duplicate rules and owner-local membership commitments",
+    "completion": "Allnineweeks represented for each claimed completeprocedure;partialwithin-weekcoverage/missingcontenders andsource strataexplicit;Astrongcontrolslaterrows suppliedbyA/BmissingBoutputsbyB."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "at_UTC": "2026-11-12T18:15:32.445351+00:00",
+  "user_timezone": "America/Chicago",
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "source_parquet_decoder": "Isolated decoder for publicsource qualification only; source metadata receipt contains installation/version scope. Not required to restore typedmodelJSON.",
+  "actual_commands": [
+    "python -m unittest discover -s tests -p test_qb_depth_role.py -q",
+    "PYTHONPATH=<isolated-parquet-decoder> python tools/run_qb_depth_role.py prepare --out reports/next-generation-information-research-01/B/depth-role-wave-v2 --depth2025 <owner-local-2025-depth.parquet> --depth2026 <owner-local-2026-depth.parquet>",
+    "python tools/run_qb_depth_role.py run --out reports/next-generation-information-research-01/B/depth-role-wave-v2 --max-origins 1",
+    "Exactpilotpushand11memberimmutable readback before broad run",
+    "python tools/run_qb_depth_role.py run --out reports/next-generation-information-research-01/B/depth-role-wave-v2",
+    "python tools/score_qb_depth_role.py prepare --wave reports/next-generation-information-research-01/B/depth-role-wave-v2 --out reports/next-generation-information-research-01/B/depth-role-scores-v1 --sources <owner-local-source-pointers.json>",
+    "python tools/score_qb_depth_role.py score --wave reports/next-generation-information-research-01/B/depth-role-wave-v2 --out reports/next-generation-information-research-01/B/depth-role-scores-v1 --sources <owner-local-source-pointers.json>",
+    "python tools/register_qb_depth_role.py",
+    "python -m unittest discover -s tests -q",
+    "python tools/validate_checkpoint.py",
+    "python tools/check_result_index_coverage.py",
+    "python tools/check_analysis_index_coverage.py",
+    "python tools/check_prop_scoreboard_coverage.py"
+  ],
+  "fit_scope": {
+    "successful_origin_fits": 16,
+    "initial_failed_design_attempts_preserved": 1,
+    "future_original_issues": 0,
+    "retrospective_new_predictions": 554,
+    "reused_baseline_predictions": 277,
+    "actual_NFL_games_added": 0,
+    "primary_switches": 0
+  },
+  "independent_checks": "peer-coordination/INDEPENDENT_OUTPUT_ARITHMETIC_V1.json",
+  "scientific_index": {
+    "old_score_artifacts": 225,
+    "added_score_artifacts": 2,
+    "old_views": 613572,
+    "added_views": 276,
+    "current_views": 613848,
+    "old_paired_views": 21840,
+    "added_paired_views": 249,
+    "current_paired_views": 22089
+  },
+  "registered_source_downloads": {
+    "new_depth_bytes": 6049756,
+    "existing_offer_archive_restoration_bytes": 4954467,
+    "new_paid_sources": 0,
+    "duplicate_schedulers": 0
+  },
+  "retention": "All boundtypedmodels/predictions/role derivatives/publicsource metadata publicsafe; raw depth/offer records remain outsideGit; prior restrictedlegacyrecoveryobligations unchanged.",
+  "original_issued_packets": "Preserved, not reissued or represented as new; newcurrentpacket not produced by this research."
+}

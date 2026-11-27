@@ -1,0 +1,44 @@
+{
+  "state": "PASS_FINAL_J_V2_PUBLICATION_PREPARATION",
+  "recorded_at_utc": "2026-10-31T19:18:24.421999+00:00",
+  "validation": {
+    "unit_suite": 428,
+    "consumer_named_checks": 17,
+    "checkpoint": "PASS",
+    "result_index": "PASS:557818records/178registeredcanonicalartifacts",
+    "analysis_coverage": "PASS",
+    "prop_scoreboard_coverage": "PASS",
+    "privacy_markers": "PASS",
+    "markdown_links": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "bindings": [
+    {
+      "path": "reports/defense-season-executor-20261031j-code/independent/FINAL_J_V2_POINTER_AND_INDEX_REVIEW.json",
+      "sha256": "9a453a0ea47fd003e78056a9b7446e5caf7814ca2fff6eca1ffcda2dc8ec8159"
+    },
+    {
+      "path": "reports/defense-season-executor-20261031j-code/independent/ATTEMPT_STATE_V2_INDEPENDENT_REVIEW.json",
+      "sha256": "c6def298213233a48c1da6b979a05f76a43d59cd36712312212a4cee5fea0db5"
+    },
+    {
+      "path": "reports/defense-season-executor-20261031j-code/SOFTWARE_VERIFICATION_MANIFEST_V2.json",
+      "sha256": "2a93d5abd43dfb0f30167c59ee2cde99e3044c83487ed0f4614abe70367e75db"
+    },
+    {
+      "path": "reports/defense-season-executor-20261031j-code/results-index-v2/INDEX_MANIFEST.json",
+      "sha256": "95961ea9577095d4642b088da6dd1cb9383c4e0cbb6abc2be017ae5b70aec5c5"
+    },
+    {
+      "path": "reports/owner-runtime-refresh-20261031j/independent/INDEPENDENT_CONSUMER_SUPPLEMENT_REVIEW.json",
+      "sha256": "1757be188757ae869a0532abbf82ca606768ee300beee5733679848319159522"
+    }
+  ],
+  "scope": "Scientific I sources/ranks unchanged; J code and failure-state correction are synthetic-tested, not actual-data worker admission. Owner runtime observation/consumer checks remain separate from NFL forecasting skill and new V2 captures.",
+  "new_NFL_fits": 0,
+  "new_model_inference": 0,
+  "new_NFL_grades": 0,
+  "new_V2_original_captures": 0,
+  "missing_exact_older_D1_D2_cells_closed": 0,
+  "production_changed_by_V2": false
+}

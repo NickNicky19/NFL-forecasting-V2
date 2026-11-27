@@ -1,0 +1,35 @@
+{
+  "id": "B_W1W9_CHECK_AND_PUBLICATION_SUMMARY_v1",
+  "at_UTC": "2026-11-14T19:49:55.824678+00:00",
+  "evidence_commit": "3dca7e3b6e795ac9ea74a08e8c7adb19becae578",
+  "readback": "PUBLICATION_READBACK_V1.json",
+  "all_members_exact": 150,
+  "export_old_prefix_preserved": 1698,
+  "export_total": 1849,
+  "unit_tests": {
+    "passed": 561,
+    "failed": 0
+  },
+  "checks": {
+    "validate_checkpoint": "PASS",
+    "result_index_coverage": "PASS_616035_RECORDS_233_REGISTERED_ARTIFACTS",
+    "analysis_index_coverage": "PASS_22623_COMPARISONS",
+    "prop_scoreboard_coverage": "PASS",
+    "diff_check": "PASS",
+    "public_privacy_scan_including_gzip": "PASS"
+  },
+  "new_result_views": 861,
+  "new_paired_analyses": 170,
+  "old_result_records_preserved": 615174,
+  "old_paired_records_preserved": 22453,
+  "original_future_decisions_added": 0,
+  "new_primary_admissions": 0,
+  "C_new_package_receipt": "NOT_OBSERVED",
+  "original_website_consumer_receipt": "NOT_OBSERVED",
+  "CI_source_run": {
+    "id": 43634003863,
+    "event": "push",
+    "state": "IN_PROGRESS_AT_THIS_SUMMARY;FINAL_RECEIPT_SEPARATE"
+  },
+  "publication_limit": "Final raw readbacks and CI metadata remain within12-attempt suballocation; prefit6 is separately recorded. Connector PR-only CI returned no runs; read-only all-run endpoint supplied actual push run. One connector parameter validation failed before execution; preserved as an attempt, not a failed NFL test."
+}

@@ -1,0 +1,56 @@
+{
+  "package_id": "v2-owner-review-20261030b-v1",
+  "prepared_at_utc": "2026-10-30T03:03:32.022705+00:00",
+  "state": "PREPARED_RESEARCH_PACKAGE_NOT_ADMITTED",
+  "production_changed": false,
+  "official_capture": false,
+  "prospective_selection": "NONE",
+  "candidate_packages": [
+    {
+      "mechanism": "current-known-source query freshness, with separate refit option",
+      "adapter": "nfl_v2/availability_wave.py",
+      "cli": "tools/run_availability_wave.py",
+      "protocol": "availability-wave-v1/FROZEN_PROTOCOL.json",
+      "model_evidence": "99retainedA/Bbindings+99newCfits",
+      "restoration": "PRIVATE_AVAILABILITY_RESTORATION.json",
+      "accuracy": "PENDING_QUALIFIED_FUTURE_LABELS",
+      "fallback": "A/Bexactfrozenrouting/value;Cseparateexplicitpolicy",
+      "rollback": "retainedseven-dayrecipeandoriginalmodels;earlycapturesimmutable"
+    },
+    {
+      "mechanism": "explicit-lag-block removal",
+      "adapter": "nfl_v2/ordered_information_ablation.py",
+      "future_adapter": "nfl_v2/c02_future_shadow.py",
+      "protocol": "ordered-information-ablation-v1/FROZEN_PROTOCOL.json",
+      "future_protocol": "c02-future-shadow-v1/FROZEN_PROTOCOL.json",
+      "historical_scores": "ordered-information-ablation-v1/SCORES.json",
+      "history_comparison": "HISTORY_COMPARISON_2026_W1_W7.csv",
+      "restoration": [
+        "PRIVATE_C02_RESTORATION.json",
+        "PRIVATE_C02_FUTURE_RESTORATION.json"
+      ],
+      "accuracy": "Threeexposedpointminimaimprove,one ties,eightlose;properlawandmeanresultsseparate",
+      "fallback": "sameeligibletrainingpriorandrolecold-startcontract;nohiddenother-yearfallbackinstrictarm",
+      "rollback": "retainedorderedCDFmodels/protocolandoriginalfuturepackets"
+    },
+    {
+      "mechanism": "carry primary-role L1 specialization",
+      "adapter": "nfl_v2/count_ablations.py",
+      "evidence": "carry-strong-control-comparison-v1/PAIRED_CONTRASTS.csv",
+      "eligibility": "RESEARCH_ONLY_NOT_A_FROZEN_ROLE_ROUTER",
+      "accuracy": "844primaryrowsMAE3.091618vsoldbest3.128691;orderedleader3.059242;1516WRTErowsworse",
+      "release_dependency": "separatelyregisteredearlier-chosenroutingpolicyandfull-systemlatercomparisonifroutingproposed"
+    }
+  ],
+  "target_contract": "all12targetdefinitionsunchanged;chart16componentqualifiedsubset;oldwebsitefantasyseparate",
+  "consumer_schema": "researchrowandlawcontractsretained;ownerproductionmapping/admissionstillrequired",
+  "runtime": "pinnedactualPython/numpy/sklearn/scipyinENVIRONMENT_ACTUAL;2threads;retainedmodelrestorehashverification",
+  "validation": "151fixturefunctionspass;independentallnewrow/metric/PMF/cutoff/sourcechecks;futurelabelsnone",
+  "owner_only_actions": [
+    "admitexactsource/procedure/model/productbindings",
+    "mapresearchpacketstoconsumerschemaandvalidatefallback/rollback",
+    "officialcapturethroughretainedproducer",
+    "normalreviewmerge/deployandservedvaluereadback"
+  ],
+  "owner_acknowledged": false
+}

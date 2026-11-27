@@ -1,0 +1,29 @@
+{
+  "scope": "B_ONLY_EVIDENCE_CONTRIBUTION_NOT_C_SHARED_MASTER",
+  "adopted_revision": "POST-WAVE-5W-v1",
+  "source_manifest": "reports/abc-predictive-improvement-01/b-intercept-v1/results-index-v5/INDEX_MANIFEST.json",
+  "source_manifest_sha256": "00f460aa5b1581af8f0afa6f95b92a7bbae91d9c133ace9bfff0ea6308589541",
+  "source_record_count": 602201,
+  "extra_new_policy_score_rows": 804,
+  "records_inspected": 603005,
+  "product_views": 34992,
+  "distinct_procedure_ids": 4197,
+  "floor_states": {
+    "BELOW_FIVE_EXPLICIT_SCORED_WEEKS": 34896,
+    "FIVE_WEEK_MINIMUM_MET": 96
+  },
+  "excluded_view_counts": {
+    "SOFTWARE_NOT_NFL_WEEKS": 32,
+    "CONDITIONAL_LEARNED_OR_OVERLAP_VIEW": 118479,
+    "SUBGROUP_VIEW_NOT_PRIMARY_UNIVERSE": 421809,
+    "INVALID_OR_SUPERSEDED": 3118,
+    "DIAGNOSTIC_NOT_PRIMARY_PRODUCT": 8772
+  },
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "wall_seconds": 65.800328162999,
+  "coverage_boundary": "Explicit per-week positive score support only; aggregate date spans are not counted. Some completed historical aggregate tests need retained-row/week proof, not repeated fits.",
+  "does_not_claim_deployment_or_full_championship": true
+}

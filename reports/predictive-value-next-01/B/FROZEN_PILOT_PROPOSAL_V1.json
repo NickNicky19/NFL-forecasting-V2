@@ -1,0 +1,238 @@
+{
+  "id": "B-TABICLV2-CMP-DIRECT-PILOT-v1",
+  "UTC": "2026-11-16T17:38:53.463113+00:00",
+  "state": "FROZEN_REVIEWABLE_PROPOSAL_NOT_EXECUTION_AUTHORIZATION",
+  "owner": "B / NickNicky19/NFL-forecasting-V2",
+  "primary_category": "pass_cmp",
+  "hypothesis": "A fixed pretrained tabular in-context classifier may learn nonlinear conditional line-crossing relationships from the same earlier exact-offer examples more effectively than one regularized ordinary logistic classifier. No new football information or causal effect is claimed.",
+  "nearest_completed": [
+    {
+      "experiment": "B M2",
+      "difference": "M2 changed completion-conversion dispersion with fixed attempts and means; this pilot directly estimates the half-point Over event from earlier actual-offer contexts, without changing or resampling the count law."
+    },
+    {
+      "experiment": "B INFORMATION-SKILL C0/C1/R0/R1 and opportunity-v1",
+      "difference": "Their contextual ratios, mixer and team/share changes are closed. This pilot reuses original own-history features plus the actual threshold, tests one different learned relation, and adds no old contextual block or confidence gate."
+    },
+    {
+      "experiment": "Earlier direct-threshold classifiers and proposed generic TabICL backlog",
+      "difference": "Finite local inventory found no exact TabICLv2 actual-offer completion classifier/checkpoint. Generic family names, other methods and private/unlocated peer experiments are not evidence of exact novelty. No claim every peer artifact was inspected."
+    }
+  ],
+  "inventory_receipts": [
+    "M4_SOURCE_READINESS_V1.json",
+    "TABICLV2_LOCAL_FEASIBILITY_V1.json",
+    "TABICLV2_QUALIFICATION_UPDATE_V2.json"
+  ],
+  "arms": {
+    "ORDINARY_DIRECT": "One fixed regularized logistic classifier on exactly the same earlier contexts, raw features, train-only transform, eligibility and startup fallback as candidate.",
+    "TABICLV2_DIRECT": "One pinned pretrained checkpoint/configuration, no fine-tuning/pretraining/seed or hyperparameter search.",
+    "REUSED_STRONG_CONTROLS": [
+      "Retained B0 mean, median and LAW; retained B2 mean, median and LAW on exact native rows",
+      "Always-Over and Always-Under",
+      "Earlier-only prevalence; exact saved/incumbent reference only where its original information contract qualifies"
+    ]
+  },
+  "information_contrast": "No new input block; the requested bounded alternative is a relationship/learner contrast. Support/missingness transforms are identical in both new arms. No C0/C1 claim is invented.",
+  "code": {
+    "prototype": "nfl_v2/tabiclv2_direct_pilot.py",
+    "prototype_sha256": "c234ed97ae6f92c3d2678693d313e05b8ed4a644e056103013afac61cc78d5e0",
+    "state": "PREPARED_NOT_RUN; resource/source/version controller still required before execution",
+    "input_preparation": "tools/prepare_tabiclv2_completion_pilot.py",
+    "input_preparation_sha256": "443f426498277d66fc315717e73957e5f5ab31544800972b2b77eb4f9e40e271"
+  },
+  "pins": {
+    "code_repository": "soda-inria/tabicl",
+    "code_commit": "a626a1b67049b0b1748ebe8c92f7df40aaebd334",
+    "package_version": "2.2.0",
+    "checkpoint_repository": "jingang/TabICL",
+    "checkpoint_revision": "4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+    "checkpoint_file": "tabicl-classifier-v2-20260212.ckpt",
+    "expected_checkpoint_bytes": 110368038,
+    "expected_checkpoint_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+    "checkpoint_binary_obtained": false,
+    "license": "BSD-3-Clause classification code and checkpoint metadata; retain notice. Separate forecast code is excluded.",
+    "pretraining": "Publisher reports synthetic-prior pretraining; exact binary training contents/NFL exclusion and historic issuance not independently audited."
+  },
+  "configuration": {
+    "candidate": {
+      "n_estimators": 8,
+      "norm_methods": [
+        "none"
+      ],
+      "feat_shuffle_method": "latin",
+      "class_shuffle_method": "shift",
+      "outlier_threshold": 4.0,
+      "softmax_temperature": 0.9,
+      "average_logits": true,
+      "support_many_classes": false,
+      "batch_size": 8,
+      "kv_cache": false,
+      "allow_auto_download": false,
+      "checkpoint_version": "tabicl-classifier-v2-20260212.ckpt",
+      "device": "cpu",
+      "use_amp": false,
+      "use_fa3": false,
+      "offload_mode": false,
+      "random_state": 42,
+      "n_jobs": 2,
+      "verbose": false
+    },
+    "ordinary": {
+      "C": 1.0,
+      "solver": "lbfgs",
+      "max_iter": 1000,
+      "tol": 1e-06,
+      "class_weight": null,
+      "random_state": 42
+    },
+    "transform": "Shared training-only finite median imputation (all-missing=0), mean/std scaling (zero std=1), fixed z clipping at4, all-column missing indicators. NaN remains missing; infinity invalid. No query features or target outcomes determine transform parameters.",
+    "raw_feature_order": [
+      "mean3",
+      "n3",
+      "mean8",
+      "n8",
+      "lag1_value",
+      "lag1_age_days",
+      "lag1_missing",
+      "lag2_value",
+      "lag2_age_days",
+      "lag2_missing",
+      "lag3_value",
+      "lag3_age_days",
+      "lag3_missing",
+      "lag4_value",
+      "lag4_age_days",
+      "lag4_missing",
+      "position_QB",
+      "position_RB",
+      "position_WR",
+      "position_TE",
+      "offered_halfpoint_line"
+    ],
+    "expanded_feature_count": 42,
+    "orientation": "y=1 iff official actual completions > exact retained half-point offer. p_under=1-p_over; OVER if p_over>.5, UNDER if <.5, equality ABSTAIN. No numerical count/mean/median or implied PMF.",
+    "query_batch": "One query per predict_proba call. Query order independence and prohibition on future/query outcomes are checked before scored inference.",
+    "fixed_random_seed": 42,
+    "tuning": 0,
+    "alternative_checkpoints_or_learners": 0
+  },
+  "runtime_qualification": {
+    "state": "NOT_EXECUTED",
+    "Python": "3.12 x86_64",
+    "torch_pin": "2.6.0+cpu; verified dependency lock and patched safe-loading qualification before any load",
+    "torch_wheel_sha256": "59e78aa0c690f70734e42670036d6b541930b8eabbaa18d94e090abf14cc4d91",
+    "installation": "Isolated workspace runtime, system compatible dependencies only when exact versions recorded; preserve existing environment. No CUDA/paid compute. Complete dependency hashes/lock and storage measurement required before NFL inference.",
+    "loading": "Explicit local checkpoint verified by exact length+SHA; torch.load weights_only=True, primitive config/tensor state schema and finite/dimension checks. No permissive globals or unsafe fallback.",
+    "forbidden": [
+      "Estimator pickle/joblib save/load",
+      "weights_only=False",
+      "added safe globals to force load",
+      "auto-download of unpinned revision",
+      "KV cache, disk offloading or context serialization",
+      "pretraining, fine-tuning, seed hunt, model substitute"
+    ],
+    "controller_required": [
+      "Assigned exact B allocation, measured cumulative process-tree CPU/wall/RSS/storage guards",
+      "Pinned installed library/dependency/module hashes and safe schema admitted",
+      "Same ordered identities/lines/labels/design jointly committed before each fit",
+      "Retained dual-clock mapping and canonical/query feature cutoff preserved, no generic clock relabeling",
+      "Approved source and durable restricted retention/reconstruction route, no protected context in public Git"
+    ]
+  },
+  "data": {
+    "input_admission": "TABICLV2_INPUT_ADMISSION_V1.json",
+    "input_admission_sha256": "3929c681252ecb4c1361772e7b8b7970ddb5503a8df6b8be7f6c08214d313a9f",
+    "native_grade_sha256": "dbdbf73a23fea1d7d8c90fde666163853f492b0e9686ae068b829b2bc2816a39",
+    "context_sha256": "45aaab99d41f2e2643066c001355b26430f55dca06e7c7e366eace252f2e021b",
+    "eligible": 142,
+    "unique_player_games": 142,
+    "games": 71,
+    "available_actual_offer_weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "missing_actual_offer_weeks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "learned_origins": [
+      7,
+      8,
+      9
+    ],
+    "learned_query_rows": 86,
+    "startup_weeks": [
+      5,
+      6
+    ],
+    "startup_rows": 56,
+    "training_context_rows": [
+      28,
+      56,
+      86
+    ],
+    "training_class_support": [
+      [
+        14,
+        14
+      ],
+      [
+        32,
+        24
+      ],
+      [
+        49,
+        37
+      ]
+    ],
+    "historical_population": "Retained qualified official played-label/stat-row QB population; conditional reconstruction, not authentic pregame ex-ante roster universe. Sparse training and publisher benchmark support limitations disclosed.",
+    "availability": "Strict canonical kickoff+7days < earliest evaluation-week kickoff; earlier query features evaluated at their own canonical kickoff; all repeated books/target-game identities excluded. Same current-vintage proxy as controls, not authenticated publication clocks.",
+    "source_contract": "Genuine retained native half-point offers, deterministic inherited source precedence and deduplicated identities. Quote-time unknown; main/alternate unclassified, not ordinary-main claim. No added offers, prices or synthetic thresholds.",
+    "A_early84": "Public aggregate grades are not earlier training rows; no protected A transfer or early grading presumed."
+  },
+  "startup_and_failures": {
+    "empty_context": "Exact retained B0 LAW probability/direction fallback in both new systems W5/W6; preserve parent fallback attribution.",
+    "technical_failure": "Unavailable with exact reason; not intentional abstention or zero selections. Stop/retain checkpoints under cap rather than replace model or shrink outcomes after scores.",
+    "integer_or_unsupported_line": "Not admitted to pilot. Retain parent product separately; do not invent push probability or infer missing offer sides.",
+    "fallback_week_scope": "Five complete-system weeks would include two entirely reference-fallback weeks and only three learned weeks; no claim five weeks of substantial learned confirmation."
+  },
+  "evaluation": {
+    "common_scorer_sha256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce",
+    "interval_sha256": "92260304be31b0fbee42faa3ab78616f77c3791bd2613edb9d322f9bbf29aa2a",
+    "existing_adapter": "reports/w1w9-comparison-closure-01/B/common-intake/COMMON_SCORER_PARITY_ADAPTER_V1.py",
+    "existing_adapter_sha256": "f32523f9f7a4415b4472d57abe8bf1b1bd27e471d6094af7ab92ed16401796ba",
+    "frozen_selection_calibration_code": "reports/targeted-accuracy-w1w9-01/B/evaluation/score_m2_v1.py",
+    "frozen_selection_calibration_sha256": "8409ce5e74e07ef5fa1e79b52237baf9259d892a9652e4001a3828bd935343a9",
+    "primary": "Own Over/Under/combined weekly and cumulative full-system and learned-common-row W/L/decided; coverage, unavailable, unknown, abstention, fallback.",
+    "probability": "Raw binary Brier/logloss/reliability and earlier-only frozen calibration separately. Classifier supplies no numerical count forecast; MAE/MSE/count-CRPS=N/A.",
+    "selection": "Reuse existing19 policies without change: rolling decision-batch COVERAGE100/50/25/10, Top6/10/20 each Combined/Over/Under, raw and earlier-calibrated P75/P80/P90. Same inherited causal batch capacity/ties; unknown quote timing remains retrospective. Both own lists and same-selected-case controls. No website Top Picks claim.",
+    "calibration": "Reuse inherited same-method confidence-bin earlier eligible outcomes/prior20 identity-startup rule; no future labels or new threshold search.",
+    "uncertainty": "Existing game/week dependence-aware paired policy; weekly disagreements and limited clusters; no global winner from disconnected masks.",
+    "exposure": "2026 history already inspected development evidence. This is chronological current-vintage research, not untouched/live validation.",
+    "target_status": "NOT_TESTED; no observed or supported75/80/90 claim."
+  },
+  "retention": {
+    "public": "Safe typed outputs/aggregates/commitments, code, source notices and exact protocol within approved GitHub route. No protected rows, private locators, model weights, checkpoint code copies or runtime/context caches.",
+    "restricted": "Existing approved source route must support reproducible earlier contexts and permitted prediction retention; local workspace is a working cache, not proof of durable admission. If absent, stop before fit and name exact owner artifact.",
+    "checkpoints": "Durable approved raw typed prediction/grade commitments before selective summaries. Frozen predictions and failures append-only. No cache warmstart across origins."
+  },
+  "completion": "Finish one predeclared pilot or explicit measured safe stop; no automatic extension, retuning, production change or second family. Scientific results only after actual scoring and C admission.",
+  "results": {
+    "fits": 0,
+    "new_predictions": 0,
+    "new_actual_line_grades": 0,
+    "Over_W_L_N_rate": null,
+    "Under_W_L_N_rate": null,
+    "combined_W_L_N_rate": null,
+    "probability_scores": null,
+    "selection_results": null,
+    "primary_promotion": false,
+    "scientific_decision": "NOT_EXECUTED_ALLOCATION_REQUIRED"
+  }
+}

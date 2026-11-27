@@ -1,0 +1,53 @@
+{
+  "at_UTC": "2026-11-12T21:20:49.702992+00:00",
+  "at_America_Chicago": "2026-11-12T15:20:49.702992-06:00",
+  "state": "PASS_SCOPED_SOFTWARE_AND_ARTIFACT_CHECKS",
+  "checks": [
+    {
+      "command": "python -m unittest discover -s tests -q",
+      "result": "PASS",
+      "tests": 554
+    },
+    {
+      "command": "python tools/validate_checkpoint.py",
+      "result": "PASS"
+    },
+    {
+      "command": "python tools/check_result_index_coverage.py",
+      "result": "PASS",
+      "views": 613992,
+      "score_artifacts": 228
+    },
+    {
+      "command": "python tools/check_analysis_index_coverage.py",
+      "result": "PASS",
+      "derived_pairs": 22091
+    },
+    {
+      "command": "python tools/check_prop_scoreboard_coverage.py",
+      "result": "PASS",
+      "scope": "Existinglegacycommonboardsunchanged;newBnativecorrectionLOCAL_NOT_C_ADMITTED."
+    },
+    {
+      "command": "git diff --check",
+      "result": "PASS"
+    }
+  ],
+  "independent": {
+    "source_evidence": "official-source/OFFICIAL_INTERCEPTION_EVIDENCE_V1.json",
+    "full_board": "official-source/FULL_BOARD_OFFICIAL_EVIDENCE_V1.json",
+    "corrected_measurement": "website-audit/INDEPENDENT_CORRECTED_GRADE_REVIEW_V1.json",
+    "method_arithmetic": "historical-delivery-review/SAME_MASK_CONSTANT_RECONSTRUCTION_V1.json"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sklearn": "1.8.0"
+  },
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "new_original_picks": 0,
+  "new_primary_products": 0,
+  "raw_source_or_protected_rows_in_git": false,
+  "scientific_qualification": "Softwareresultsarenotforecastgains;measurement/source/scope/productionstagesseparate."
+}

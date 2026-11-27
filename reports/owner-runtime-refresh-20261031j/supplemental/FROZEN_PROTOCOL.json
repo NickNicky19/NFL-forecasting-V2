@@ -1,0 +1,29 @@
+{
+  "acquisition_sha256": "8d3b87b88cd680009d885b503dce92f3bb72b659c2bf447bb3329d5099ac6fde",
+  "at": "2026-10-31T19:08:08.861711+00:00",
+  "audit_clock": "2026-10-31T18:46:30.977171+00:00",
+  "budget": {
+    "max_RSS_bytes": 1073741824,
+    "max_new_private_projected_bytes": 1048576,
+    "max_wall_seconds_per_execution": 60,
+    "native_threads": 1
+  },
+  "execution_scope": "IsolatedVM actualconsumer.validate/load/card and app selectedPropForecast/selectedRankings validator/visibility. No network insideVM, no upstreamwrites, no newmodels or grading",
+  "existing_consumer_checker": "tools/audit_served_consumer_h.js",
+  "existing_consumer_checker_sha256": "3f3eb49ff9f562e6841d411fa2b2aa3068303eee9a15a05bdc47f7734dfc44e7",
+  "forecast_numeric_parsing": "Actual forecast/offer numeric fields parsed for operational parity only; no claim zero numeric forecastdecode",
+  "full_browser_UI_claim": "UNESTABLISHED; exact function admission and returnedstrings only",
+  "input_scope": "Cached actualpointer/payload/app/consumer/board; lexicalprojection includes identity,offeredline,forecastpoint,priorhistoryover/n andreference-model metadata; no targetactual/outcome/stats/label decode",
+  "new_NFL_forecasts": 0,
+  "new_NFL_grades": 0,
+  "new_model_fits_or_inference": 0,
+  "new_selected_function_checker_sha256": "102a388bfab72630a03a9aa33ada17a032a8692091db32c64175bd48143da15f",
+  "old_sealed_manifest_sha256": "41c809dba817ba9da07b39af8d532435a1c674a8600e87801c8a883cdb0c7212",
+  "projection_base_sha256": "de2ad889c526909c441243a2a27c14010b5949a091a83203d4b71f403f32eaee",
+  "projection_code_sha256": "4b3cde62ac3f6da0b4cde606fa416c61c629929113019048cd6bbd5fb2c4486f",
+  "reason": "Changed first_prepared_at, envelope clock andboard binding are consumed by actual validation; unchanged codebytes alone do not prove newinput admission",
+  "schema": "j-supplemental-consumer-input-change-check-v1",
+  "software_only_probes": "Synthetic clock/expiry/product/hash/rollback fixtures labelledsoftware; actualclock is recordedJ18:46UTCreadback",
+  "source_commit": "305dacad91d593485c94bd9838ccf2d2464d9653",
+  "state": "FROZEN_BEFORE_OFFLINE_FUNCTION_VM"
+}

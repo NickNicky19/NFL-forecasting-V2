@@ -1,0 +1,539 @@
+{
+  "id": "B_OPPORTUNITY_POSTFIT_INDEPENDENT_CHECK_v1",
+  "at_UTC": "2026-11-15T21:17:14.928283+00:00",
+  "status": "PASS_IN_CHECKED_SCOPE",
+  "checks": 7022,
+  "failures": [],
+  "error": null,
+  "details": {
+    "stage": "POSTFIT",
+    "saved_rows_checked": 2520,
+    "restored_samples": [
+      {
+        "week": 1,
+        "method": "DIRECT_ATT",
+        "target": "pass_att",
+        "case_sha256": "0b8fc1a97dc8db49008469ecb24f60b48920bbbc1feeab27309495553398b710",
+        "law_kind": "leaf_mixture"
+      },
+      {
+        "week": 1,
+        "method": "DIRECT_ATT",
+        "target": "pass_cmp",
+        "case_sha256": "0b8fc1a97dc8db49008469ecb24f60b48920bbbc1feeab27309495553398b710",
+        "law_kind": "exact_binomial_thinned_leaf_v1"
+      },
+      {
+        "week": 1,
+        "method": "OPP_BASE",
+        "target": "pass_att",
+        "case_sha256": "0b8fc1a97dc8db49008469ecb24f60b48920bbbc1feeab27309495553398b710",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 1,
+        "method": "OPP_BASE",
+        "target": "pass_cmp",
+        "case_sha256": "0b8fc1a97dc8db49008469ecb24f60b48920bbbc1feeab27309495553398b710",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 1,
+        "method": "OPP_JOINT",
+        "target": "pass_att",
+        "case_sha256": "0b8fc1a97dc8db49008469ecb24f60b48920bbbc1feeab27309495553398b710",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 1,
+        "method": "OPP_JOINT",
+        "target": "pass_cmp",
+        "case_sha256": "0b8fc1a97dc8db49008469ecb24f60b48920bbbc1feeab27309495553398b710",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 1,
+        "method": "OPP_MEAN",
+        "target": "pass_att",
+        "case_sha256": "0b8fc1a97dc8db49008469ecb24f60b48920bbbc1feeab27309495553398b710",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 1,
+        "method": "OPP_MEAN",
+        "target": "pass_cmp",
+        "case_sha256": "0b8fc1a97dc8db49008469ecb24f60b48920bbbc1feeab27309495553398b710",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 2,
+        "method": "DIRECT_ATT",
+        "target": "pass_att",
+        "case_sha256": "da80827d0204db0e0d018291dc53775b1ddd63272d1efc3265ce231d579c99f2",
+        "law_kind": "leaf_mixture"
+      },
+      {
+        "week": 2,
+        "method": "DIRECT_ATT",
+        "target": "pass_cmp",
+        "case_sha256": "da80827d0204db0e0d018291dc53775b1ddd63272d1efc3265ce231d579c99f2",
+        "law_kind": "exact_binomial_thinned_leaf_v1"
+      },
+      {
+        "week": 2,
+        "method": "OPP_BASE",
+        "target": "pass_att",
+        "case_sha256": "da80827d0204db0e0d018291dc53775b1ddd63272d1efc3265ce231d579c99f2",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 2,
+        "method": "OPP_BASE",
+        "target": "pass_cmp",
+        "case_sha256": "da80827d0204db0e0d018291dc53775b1ddd63272d1efc3265ce231d579c99f2",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 2,
+        "method": "OPP_JOINT",
+        "target": "pass_att",
+        "case_sha256": "da80827d0204db0e0d018291dc53775b1ddd63272d1efc3265ce231d579c99f2",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 2,
+        "method": "OPP_JOINT",
+        "target": "pass_cmp",
+        "case_sha256": "da80827d0204db0e0d018291dc53775b1ddd63272d1efc3265ce231d579c99f2",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 2,
+        "method": "OPP_MEAN",
+        "target": "pass_att",
+        "case_sha256": "da80827d0204db0e0d018291dc53775b1ddd63272d1efc3265ce231d579c99f2",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 2,
+        "method": "OPP_MEAN",
+        "target": "pass_cmp",
+        "case_sha256": "da80827d0204db0e0d018291dc53775b1ddd63272d1efc3265ce231d579c99f2",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 3,
+        "method": "DIRECT_ATT",
+        "target": "pass_att",
+        "case_sha256": "4b3a1b12a2dec5c1afa21918c5f5a1f19d122963b5c8bd826e51321ea28cbad4",
+        "law_kind": "leaf_mixture"
+      },
+      {
+        "week": 3,
+        "method": "DIRECT_ATT",
+        "target": "pass_cmp",
+        "case_sha256": "4b3a1b12a2dec5c1afa21918c5f5a1f19d122963b5c8bd826e51321ea28cbad4",
+        "law_kind": "exact_binomial_thinned_leaf_v1"
+      },
+      {
+        "week": 3,
+        "method": "OPP_BASE",
+        "target": "pass_att",
+        "case_sha256": "4b3a1b12a2dec5c1afa21918c5f5a1f19d122963b5c8bd826e51321ea28cbad4",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 3,
+        "method": "OPP_BASE",
+        "target": "pass_cmp",
+        "case_sha256": "4b3a1b12a2dec5c1afa21918c5f5a1f19d122963b5c8bd826e51321ea28cbad4",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 3,
+        "method": "OPP_JOINT",
+        "target": "pass_att",
+        "case_sha256": "4b3a1b12a2dec5c1afa21918c5f5a1f19d122963b5c8bd826e51321ea28cbad4",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 3,
+        "method": "OPP_JOINT",
+        "target": "pass_cmp",
+        "case_sha256": "4b3a1b12a2dec5c1afa21918c5f5a1f19d122963b5c8bd826e51321ea28cbad4",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 3,
+        "method": "OPP_MEAN",
+        "target": "pass_att",
+        "case_sha256": "4b3a1b12a2dec5c1afa21918c5f5a1f19d122963b5c8bd826e51321ea28cbad4",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 3,
+        "method": "OPP_MEAN",
+        "target": "pass_cmp",
+        "case_sha256": "4b3a1b12a2dec5c1afa21918c5f5a1f19d122963b5c8bd826e51321ea28cbad4",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 4,
+        "method": "DIRECT_ATT",
+        "target": "pass_att",
+        "case_sha256": "fc323ef6a15cebd610c00cfe3c4d09afdbf0a05076f9f9503d7f9936a39f45b9",
+        "law_kind": "leaf_mixture"
+      },
+      {
+        "week": 4,
+        "method": "DIRECT_ATT",
+        "target": "pass_cmp",
+        "case_sha256": "fc323ef6a15cebd610c00cfe3c4d09afdbf0a05076f9f9503d7f9936a39f45b9",
+        "law_kind": "exact_binomial_thinned_leaf_v1"
+      },
+      {
+        "week": 4,
+        "method": "OPP_BASE",
+        "target": "pass_att",
+        "case_sha256": "fc323ef6a15cebd610c00cfe3c4d09afdbf0a05076f9f9503d7f9936a39f45b9",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 4,
+        "method": "OPP_BASE",
+        "target": "pass_cmp",
+        "case_sha256": "fc323ef6a15cebd610c00cfe3c4d09afdbf0a05076f9f9503d7f9936a39f45b9",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 4,
+        "method": "OPP_JOINT",
+        "target": "pass_att",
+        "case_sha256": "fc323ef6a15cebd610c00cfe3c4d09afdbf0a05076f9f9503d7f9936a39f45b9",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 4,
+        "method": "OPP_JOINT",
+        "target": "pass_cmp",
+        "case_sha256": "fc323ef6a15cebd610c00cfe3c4d09afdbf0a05076f9f9503d7f9936a39f45b9",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 4,
+        "method": "OPP_MEAN",
+        "target": "pass_att",
+        "case_sha256": "fc323ef6a15cebd610c00cfe3c4d09afdbf0a05076f9f9503d7f9936a39f45b9",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 4,
+        "method": "OPP_MEAN",
+        "target": "pass_cmp",
+        "case_sha256": "fc323ef6a15cebd610c00cfe3c4d09afdbf0a05076f9f9503d7f9936a39f45b9",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 5,
+        "method": "DIRECT_ATT",
+        "target": "pass_att",
+        "case_sha256": "17a20328205f7a66d9ab4009aa5da55e67e05c43d9075f611987462c9b02fd99",
+        "law_kind": "leaf_mixture"
+      },
+      {
+        "week": 5,
+        "method": "DIRECT_ATT",
+        "target": "pass_cmp",
+        "case_sha256": "17a20328205f7a66d9ab4009aa5da55e67e05c43d9075f611987462c9b02fd99",
+        "law_kind": "exact_binomial_thinned_leaf_v1"
+      },
+      {
+        "week": 5,
+        "method": "OPP_BASE",
+        "target": "pass_att",
+        "case_sha256": "17a20328205f7a66d9ab4009aa5da55e67e05c43d9075f611987462c9b02fd99",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 5,
+        "method": "OPP_BASE",
+        "target": "pass_cmp",
+        "case_sha256": "17a20328205f7a66d9ab4009aa5da55e67e05c43d9075f611987462c9b02fd99",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 5,
+        "method": "OPP_JOINT",
+        "target": "pass_att",
+        "case_sha256": "17a20328205f7a66d9ab4009aa5da55e67e05c43d9075f611987462c9b02fd99",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 5,
+        "method": "OPP_JOINT",
+        "target": "pass_cmp",
+        "case_sha256": "17a20328205f7a66d9ab4009aa5da55e67e05c43d9075f611987462c9b02fd99",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 5,
+        "method": "OPP_MEAN",
+        "target": "pass_att",
+        "case_sha256": "17a20328205f7a66d9ab4009aa5da55e67e05c43d9075f611987462c9b02fd99",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 5,
+        "method": "OPP_MEAN",
+        "target": "pass_cmp",
+        "case_sha256": "17a20328205f7a66d9ab4009aa5da55e67e05c43d9075f611987462c9b02fd99",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 6,
+        "method": "DIRECT_ATT",
+        "target": "pass_att",
+        "case_sha256": "fdf6d8fde14df6aae1e4a3132d26df7d175b2cee99115411a6b78231feff9b61",
+        "law_kind": "leaf_mixture"
+      },
+      {
+        "week": 6,
+        "method": "DIRECT_ATT",
+        "target": "pass_cmp",
+        "case_sha256": "fdf6d8fde14df6aae1e4a3132d26df7d175b2cee99115411a6b78231feff9b61",
+        "law_kind": "exact_binomial_thinned_leaf_v1"
+      },
+      {
+        "week": 6,
+        "method": "OPP_BASE",
+        "target": "pass_att",
+        "case_sha256": "fdf6d8fde14df6aae1e4a3132d26df7d175b2cee99115411a6b78231feff9b61",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 6,
+        "method": "OPP_BASE",
+        "target": "pass_cmp",
+        "case_sha256": "fdf6d8fde14df6aae1e4a3132d26df7d175b2cee99115411a6b78231feff9b61",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 6,
+        "method": "OPP_JOINT",
+        "target": "pass_att",
+        "case_sha256": "fdf6d8fde14df6aae1e4a3132d26df7d175b2cee99115411a6b78231feff9b61",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 6,
+        "method": "OPP_JOINT",
+        "target": "pass_cmp",
+        "case_sha256": "fdf6d8fde14df6aae1e4a3132d26df7d175b2cee99115411a6b78231feff9b61",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 6,
+        "method": "OPP_MEAN",
+        "target": "pass_att",
+        "case_sha256": "fdf6d8fde14df6aae1e4a3132d26df7d175b2cee99115411a6b78231feff9b61",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 6,
+        "method": "OPP_MEAN",
+        "target": "pass_cmp",
+        "case_sha256": "fdf6d8fde14df6aae1e4a3132d26df7d175b2cee99115411a6b78231feff9b61",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 7,
+        "method": "DIRECT_ATT",
+        "target": "pass_att",
+        "case_sha256": "214d39f4d8ccd2f556169485b88e13e19ed195eecc1b59b6befebfa68535166d",
+        "law_kind": "leaf_mixture"
+      },
+      {
+        "week": 7,
+        "method": "DIRECT_ATT",
+        "target": "pass_cmp",
+        "case_sha256": "214d39f4d8ccd2f556169485b88e13e19ed195eecc1b59b6befebfa68535166d",
+        "law_kind": "exact_binomial_thinned_leaf_v1"
+      },
+      {
+        "week": 7,
+        "method": "OPP_BASE",
+        "target": "pass_att",
+        "case_sha256": "214d39f4d8ccd2f556169485b88e13e19ed195eecc1b59b6befebfa68535166d",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 7,
+        "method": "OPP_BASE",
+        "target": "pass_cmp",
+        "case_sha256": "214d39f4d8ccd2f556169485b88e13e19ed195eecc1b59b6befebfa68535166d",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 7,
+        "method": "OPP_JOINT",
+        "target": "pass_att",
+        "case_sha256": "214d39f4d8ccd2f556169485b88e13e19ed195eecc1b59b6befebfa68535166d",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 7,
+        "method": "OPP_JOINT",
+        "target": "pass_cmp",
+        "case_sha256": "214d39f4d8ccd2f556169485b88e13e19ed195eecc1b59b6befebfa68535166d",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 7,
+        "method": "OPP_MEAN",
+        "target": "pass_att",
+        "case_sha256": "214d39f4d8ccd2f556169485b88e13e19ed195eecc1b59b6befebfa68535166d",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 7,
+        "method": "OPP_MEAN",
+        "target": "pass_cmp",
+        "case_sha256": "214d39f4d8ccd2f556169485b88e13e19ed195eecc1b59b6befebfa68535166d",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 8,
+        "method": "DIRECT_ATT",
+        "target": "pass_att",
+        "case_sha256": "e595fe54019bc457bd879ea1e3d431e28a7dd61c59355e9accbf7c901768b3ab",
+        "law_kind": "leaf_mixture"
+      },
+      {
+        "week": 8,
+        "method": "DIRECT_ATT",
+        "target": "pass_cmp",
+        "case_sha256": "e595fe54019bc457bd879ea1e3d431e28a7dd61c59355e9accbf7c901768b3ab",
+        "law_kind": "exact_binomial_thinned_leaf_v1"
+      },
+      {
+        "week": 8,
+        "method": "OPP_BASE",
+        "target": "pass_att",
+        "case_sha256": "e595fe54019bc457bd879ea1e3d431e28a7dd61c59355e9accbf7c901768b3ab",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 8,
+        "method": "OPP_BASE",
+        "target": "pass_cmp",
+        "case_sha256": "e595fe54019bc457bd879ea1e3d431e28a7dd61c59355e9accbf7c901768b3ab",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 8,
+        "method": "OPP_JOINT",
+        "target": "pass_att",
+        "case_sha256": "e595fe54019bc457bd879ea1e3d431e28a7dd61c59355e9accbf7c901768b3ab",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 8,
+        "method": "OPP_JOINT",
+        "target": "pass_cmp",
+        "case_sha256": "e595fe54019bc457bd879ea1e3d431e28a7dd61c59355e9accbf7c901768b3ab",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 8,
+        "method": "OPP_MEAN",
+        "target": "pass_att",
+        "case_sha256": "e595fe54019bc457bd879ea1e3d431e28a7dd61c59355e9accbf7c901768b3ab",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 8,
+        "method": "OPP_MEAN",
+        "target": "pass_cmp",
+        "case_sha256": "e595fe54019bc457bd879ea1e3d431e28a7dd61c59355e9accbf7c901768b3ab",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 9,
+        "method": "DIRECT_ATT",
+        "target": "pass_att",
+        "case_sha256": "e8aaf07bac9d1827128774db2eb92eacb8fc6013bf8c6ba76c4697aacdc6ca9b",
+        "law_kind": "leaf_mixture"
+      },
+      {
+        "week": 9,
+        "method": "DIRECT_ATT",
+        "target": "pass_cmp",
+        "case_sha256": "e8aaf07bac9d1827128774db2eb92eacb8fc6013bf8c6ba76c4697aacdc6ca9b",
+        "law_kind": "exact_binomial_thinned_leaf_v1"
+      },
+      {
+        "week": 9,
+        "method": "OPP_BASE",
+        "target": "pass_att",
+        "case_sha256": "e8aaf07bac9d1827128774db2eb92eacb8fc6013bf8c6ba76c4697aacdc6ca9b",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 9,
+        "method": "OPP_BASE",
+        "target": "pass_cmp",
+        "case_sha256": "e8aaf07bac9d1827128774db2eb92eacb8fc6013bf8c6ba76c4697aacdc6ca9b",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 9,
+        "method": "OPP_JOINT",
+        "target": "pass_att",
+        "case_sha256": "e8aaf07bac9d1827128774db2eb92eacb8fc6013bf8c6ba76c4697aacdc6ca9b",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 9,
+        "method": "OPP_JOINT",
+        "target": "pass_cmp",
+        "case_sha256": "e8aaf07bac9d1827128774db2eb92eacb8fc6013bf8c6ba76c4697aacdc6ca9b",
+        "law_kind": "opportunity_team_binomial_mixture_v1"
+      },
+      {
+        "week": 9,
+        "method": "OPP_MEAN",
+        "target": "pass_att",
+        "case_sha256": "e8aaf07bac9d1827128774db2eb92eacb8fc6013bf8c6ba76c4697aacdc6ca9b",
+        "law_kind": "gamma_poisson_count"
+      },
+      {
+        "week": 9,
+        "method": "OPP_MEAN",
+        "target": "pass_cmp",
+        "case_sha256": "e8aaf07bac9d1827128774db2eb92eacb8fc6013bf8c6ba76c4697aacdc6ca9b",
+        "law_kind": "gamma_poisson_count"
+      }
+    ],
+    "actual_line_grading": false,
+    "new_NFL_observations": 0,
+    "optimizer_calls": 0,
+    "fit_reproduction": false,
+    "source_vintage_authenticated": false
+  },
+  "bindings": {
+    "tools/verify_opportunity_information.py": "ed18f2cd9e76e11ea0a3dc79f9c44f1fffb634a4e34ccbab40a3dad12f106f46",
+    "nfl_v2/opportunity_information.py": "3d059b042aba291b13b9b8c477271e1c90cc84d8e58c1ac234057a1973096731",
+    "reports/information-first-20261112-01/B/completion-wave-v1/QB_CONTEXT_W1_W9_INPUTS_V1.json.gz": "45aaab99d41f2e2643066c001355b26430f55dca06e7c7e366eace252f2e021b",
+    "reports/profile-increment-to-release-01/B/source-profiles/PASSING_OPPORTUNITY_GAME_INPUTS_V2.json.gz": "51c2cfceff6103a277c6de5897fc76c33733bb797f0891ccdb271b41840ab36a"
+  },
+  "resources": {
+    "CPU_seconds": 1.911440389,
+    "wall_seconds": 1.9187939099938376,
+    "CPU_cap_seconds": 60,
+    "new_fits": 0,
+    "new_scoring": 0,
+    "source_reads": 0,
+    "peak_RSS_bytes": 264224768
+  },
+  "scope": "Independent direct arithmetic/source admission/mutation and pure likelihood gradients or saved-law checks. No optimizer, protected offer rows, original clocks, grading, model-fit reproduction or website admission."
+}

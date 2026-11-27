@@ -1,0 +1,29 @@
+{
+  "at_UTC": "2026-11-12T20:55:24.600681+00:00",
+  "scope": "Only identity/source-presence projection, not a selection or grading transformation.",
+  "input_full_board_sha256": "8eb2c632c6c96f785c8b04f642546127ecf49dab11fd77a7ea6506918515a871",
+  "input_rows": 144,
+  "projection": "For eachrecord retain season/week/player_id/game_id/team/opponent; original pass_int presence is membership in stats_entry.stats, original value stats_entry.stats.get(pass_int). No absent/null/participation-to-zero conversion.",
+  "normalized_private_input_sha256": "0456f91e7c3a4f9464427b3679eb5e1eac261e61525d928415c2c73f13cb02aa",
+  "normalized_private_input_rows": 144,
+  "full_verified_labels_sha256": "6a787611a0d13757a57d536b7d90f0777e51594b19a0848192ae824e25012a76",
+  "selected_verified_labels_sha256": "15f2b92efacb0c5b901faa4d9ca5ddf740ae733e0895a011129d80c827a7ce8b",
+  "sources_obtained": {
+    "NFLverse_current_weekly_stats": true,
+    "ESPN_game_athlete_passing_statistics": 144,
+    "ESPN_event_finality": 72,
+    "NFL_league_gamebooks_directly_fetched": false
+  },
+  "no_claims": [
+    "No direct NFL-league API/gamebook access claimed.",
+    "No independently authenticated historical source vintage, original quote clock or venue settlement.",
+    "No assertion of wholly independent upstream lineage between source providers.",
+    "No new durable private host or raw source public redistribution claimed."
+  ],
+  "new_download_budget_bytes": 20971520,
+  "local_source_cache_bytes_including_receipts_andmaps": 10081423,
+  "public_raw_rows": false,
+  "new_NFL_games_observed": 0,
+  "new_scored_views": 0,
+  "production_changes": 0
+}

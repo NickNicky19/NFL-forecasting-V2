@@ -1,0 +1,1230 @@
+{
+  "state": "PASS_INDEPENDENT_RAW_TO_FEATURE_RECONSTRUCTION_WITH_SCOPE_LIMITS",
+  "at_utc": "2026-11-10T00:39:13.696449+00:00",
+  "producer_commit": "2fa855fc4dd7e9e495126dea93ba90a33fee4be3",
+  "reviewer": "B_independent_raw_source_checker",
+  "source_bindings": [
+    {
+      "source_id": "play_by_play_2022.csv.gz",
+      "sha256": "0c69a71eb39498956c7b1d5c1ca52ce7fe679934a95d1af249facb5ea9829ea4",
+      "bytes": 19093961,
+      "state": "EXISTING_RAW_BYTES_HASH_MATCH"
+    },
+    {
+      "source_id": "ftn_charting_2022.csv",
+      "sha256": "80e13831525f726cb3befb7eb62aa6ea8bf55d36080fcf09fdddd7c578f3b200",
+      "bytes": 7089615,
+      "state": "EXISTING_RAW_BYTES_HASH_MATCH"
+    },
+    {
+      "source_id": "play_by_play_2023.csv.gz",
+      "sha256": "4649804ee0f0a40b41e51ec75a1ce921949d7fab5459213488656b92f78560e8",
+      "bytes": 19169807,
+      "state": "EXISTING_RAW_BYTES_HASH_MATCH"
+    },
+    {
+      "source_id": "ftn_charting_2023.csv",
+      "sha256": "6045bbca32c1f61d32d9cf66e7cf6355f583b90c8ac2f5ed155d733ec335e8d7",
+      "bytes": 8285822,
+      "state": "EXISTING_RAW_BYTES_HASH_MATCH"
+    },
+    {
+      "source_id": "play_by_play_2024.csv.gz",
+      "sha256": "23370d5d10f8104d80d46a1fc5e61f4f6f5a3263fe96fe2dd629913cfcb08c06",
+      "bytes": 19362351,
+      "state": "EXISTING_RAW_BYTES_HASH_MATCH"
+    },
+    {
+      "source_id": "ftn_charting_2024.csv",
+      "sha256": "6faae8118cc13ce62589210d553733128ed35e558671009b4a7a8fc5c674c2cb",
+      "bytes": 8254908,
+      "state": "EXISTING_RAW_BYTES_HASH_MATCH"
+    },
+    {
+      "source_id": "play_by_play_2025.csv.gz",
+      "sha256": "2f135887790a013fd004e609e37096bb4816d5cc80b9f19122e1bad478961978",
+      "bytes": 19105296,
+      "state": "EXISTING_RAW_BYTES_HASH_MATCH"
+    },
+    {
+      "source_id": "ftn_charting_2025.csv",
+      "sha256": "62a66416043ff08d43303bf5f3af5390e3fe0f29461a1fc6e295a15cac6ea994",
+      "bytes": 8128926,
+      "state": "EXISTING_RAW_BYTES_HASH_MATCH"
+    },
+    {
+      "source_id": "play_by_play_2026.csv.gz",
+      "sha256": "c42cd6d6a86c4be337aaa1185176e8904cba8407eacbdbf21afab341a82b77e5",
+      "bytes": 8376846,
+      "state": "EXISTING_RAW_BYTES_HASH_MATCH"
+    },
+    {
+      "source_id": "ftn_charting_2026.csv",
+      "sha256": "aa63d7b4e649112615edddb2515ef15946a08077d1080390b76654e45cd77ff4",
+      "bytes": 3550317,
+      "state": "EXISTING_RAW_BYTES_HASH_MATCH"
+    },
+    {
+      "source_id": "WEEKLY_2022",
+      "sha256": "ad426c3fe5bf1cc30c3f137fdfe96d054e19d400879ee4413129da49fa7b54be",
+      "bytes": 8408729
+    },
+    {
+      "source_id": "WEEKLY_2023",
+      "sha256": "f19cb71a5de0dce7fd09376026237c9ee9d5a93fe13815a2ea3ec2d37204cb17",
+      "bytes": 8332874
+    },
+    {
+      "source_id": "WEEKLY_2024",
+      "sha256": "3ddc45a84f759aa348ce465ae001752c530575455717657cdfe1f8abfcdb4759",
+      "bytes": 8470040
+    },
+    {
+      "source_id": "WEEKLY_2025",
+      "sha256": "e5e0615b3d96a3eaebfaee91e55afb4a4e7fe0caf057454177bcd7d6ad4bcfc2",
+      "bytes": 8656387
+    },
+    {
+      "source_id": "WEEKLY_2026",
+      "sha256": "bbb261be576e15e62c3cdfa57ea7d606e12993233ee53a1f9d464b733e379d45",
+      "bytes": 3781814
+    }
+  ],
+  "complete_raw_stat_context_parity_by_season": {
+    "2022": 633,
+    "2023": 663,
+    "2024": 664,
+    "2025": 664,
+    "2026": 277
+  },
+  "sample_rules": "SAMPLE_AND_RESOURCE_REGISTRATION_V1.json",
+  "sample_cases": [
+    {
+      "game_id": "2022_01_KC_ARI",
+      "player_id": "00-0026197",
+      "season": 2022,
+      "week": 1,
+      "official_ATT": 0.0,
+      "official_CMP": 0.0,
+      "physical_participation": false,
+      "context_ATT": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "context_CMP": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "field_mean_counts": {
+        "ydstogo": 0,
+        "yardline_100": 0,
+        "game_seconds_remaining": 0,
+        "score_differential": 0
+      },
+      "FTN_flag_counts": {
+        "is_catchable_ball": {
+          "known": 0,
+          "positive": 0
+        },
+        "is_contested_ball": {
+          "known": 0,
+          "positive": 0
+        },
+        "is_drop": {
+          "known": 0,
+          "positive": 0
+        },
+        "is_throw_away": {
+          "known": 0,
+          "positive": 0
+        },
+        "is_motion": {
+          "known": 0,
+          "positive": 0
+        },
+        "is_screen_pass": {
+          "known": 0,
+          "positive": 0
+        },
+        "is_play_action": {
+          "known": 0,
+          "positive": 0
+        },
+        "is_rpo": {
+          "known": 0,
+          "positive": 0
+        }
+      },
+      "raw_pbp_play_key_count": 0,
+      "source_clock_tier": "CURRENT_REVISED_SEVEN_DAY_RECONSTRUCTION_NOT_AUTHENTICATED"
+    },
+    {
+      "game_id": "2022_01_BUF_LA",
+      "player_id": "00-0026498",
+      "season": 2022,
+      "week": 1,
+      "official_ATT": 41.0,
+      "official_CMP": 29.0,
+      "physical_participation": true,
+      "context_ATT": [
+        3,
+        9,
+        0,
+        1,
+        0,
+        3,
+        10,
+        0,
+        2,
+        0,
+        3,
+        5,
+        1,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "context_CMP": [
+        1,
+        7,
+        0,
+        0,
+        0,
+        3,
+        7,
+        0,
+        1,
+        0,
+        2,
+        5,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "field_mean_counts": {
+        "ydstogo": 41,
+        "yardline_100": 41,
+        "game_seconds_remaining": 41,
+        "score_differential": 41
+      },
+      "FTN_flag_counts": {
+        "is_catchable_ball": {
+          "known": 41,
+          "positive": 33
+        },
+        "is_contested_ball": {
+          "known": 41,
+          "positive": 6
+        },
+        "is_drop": {
+          "known": 41,
+          "positive": 2
+        },
+        "is_throw_away": {
+          "known": 41,
+          "positive": 1
+        },
+        "is_motion": {
+          "known": 41,
+          "positive": 7
+        },
+        "is_screen_pass": {
+          "known": 41,
+          "positive": 4
+        },
+        "is_play_action": {
+          "known": 41,
+          "positive": 3
+        },
+        "is_rpo": {
+          "known": 41,
+          "positive": 1
+        }
+      },
+      "raw_pbp_play_key_count": 41,
+      "source_clock_tier": "CURRENT_REVISED_SEVEN_DAY_RECONSTRUCTION_NOT_AUTHENTICATED"
+    },
+    {
+      "game_id": "2022_01_IND_HOU",
+      "player_id": "00-0032436",
+      "season": 2022,
+      "week": 1,
+      "official_ATT": 0.0,
+      "official_CMP": 0.0,
+      "physical_participation": true,
+      "context_ATT": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "context_CMP": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "field_mean_counts": {
+        "ydstogo": 0,
+        "yardline_100": 0,
+        "game_seconds_remaining": 0,
+        "score_differential": 0
+      },
+      "FTN_flag_counts": {
+        "is_catchable_ball": {
+          "known": 0,
+          "positive": 0
+        },
+        "is_contested_ball": {
+          "known": 0,
+          "positive": 0
+        },
+        "is_drop": {
+          "known": 0,
+          "positive": 0
+        },
+        "is_throw_away": {
+          "known": 0,
+          "positive": 0
+        },
+        "is_motion": {
+          "known": 0,
+          "positive": 0
+        },
+        "is_screen_pass": {
+          "known": 0,
+          "positive": 0
+        },
+        "is_play_action": {
+          "known": 0,
+          "positive": 0
+        },
+        "is_rpo": {
+          "known": 0,
+          "positive": 0
+        }
+      },
+      "raw_pbp_play_key_count": 0,
+      "source_clock_tier": "CURRENT_REVISED_SEVEN_DAY_RECONSTRUCTION_NOT_AUTHENTICATED"
+    },
+    {
+      "game_id": "2023_01_DET_KC",
+      "player_id": "00-0033106",
+      "season": 2023,
+      "week": 1,
+      "official_ATT": 35.0,
+      "official_CMP": 22.0,
+      "physical_participation": true,
+      "context_ATT": [
+        0,
+        7,
+        2,
+        0,
+        1,
+        4,
+        4,
+        3,
+        2,
+        0,
+        2,
+        6,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "context_CMP": [
+        0,
+        5,
+        2,
+        0,
+        0,
+        3,
+        3,
+        2,
+        1,
+        0,
+        1,
+        4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "field_mean_counts": {
+        "ydstogo": 35,
+        "yardline_100": 35,
+        "game_seconds_remaining": 35,
+        "score_differential": 35
+      },
+      "FTN_flag_counts": {
+        "is_catchable_ball": {
+          "known": 35,
+          "positive": 23
+        },
+        "is_contested_ball": {
+          "known": 35,
+          "positive": 7
+        },
+        "is_drop": {
+          "known": 35,
+          "positive": 1
+        },
+        "is_throw_away": {
+          "known": 35,
+          "positive": 2
+        },
+        "is_motion": {
+          "known": 35,
+          "positive": 14
+        },
+        "is_screen_pass": {
+          "known": 35,
+          "positive": 3
+        },
+        "is_play_action": {
+          "known": 35,
+          "positive": 10
+        },
+        "is_rpo": {
+          "known": 35,
+          "positive": 0
+        }
+      },
+      "raw_pbp_play_key_count": 35,
+      "source_clock_tier": "CURRENT_REVISED_SEVEN_DAY_RECONSTRUCTION_NOT_AUTHENTICATED"
+    },
+    {
+      "game_id": "2024_01_BAL_KC",
+      "player_id": "00-0033873",
+      "season": 2024,
+      "week": 1,
+      "official_ATT": 28.0,
+      "official_CMP": 20.0,
+      "physical_participation": true,
+      "context_ATT": [
+        2,
+        6,
+        4,
+        0,
+        0,
+        4,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "context_CMP": [
+        2,
+        5,
+        2,
+        0,
+        0,
+        4,
+        0,
+        2,
+        1,
+        0,
+        1,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "field_mean_counts": {
+        "ydstogo": 28,
+        "yardline_100": 28,
+        "game_seconds_remaining": 28,
+        "score_differential": 28
+      },
+      "FTN_flag_counts": {
+        "is_catchable_ball": {
+          "known": 28,
+          "positive": 23
+        },
+        "is_contested_ball": {
+          "known": 28,
+          "positive": 2
+        },
+        "is_drop": {
+          "known": 28,
+          "positive": 2
+        },
+        "is_throw_away": {
+          "known": 28,
+          "positive": 1
+        },
+        "is_motion": {
+          "known": 28,
+          "positive": 19
+        },
+        "is_screen_pass": {
+          "known": 28,
+          "positive": 4
+        },
+        "is_play_action": {
+          "known": 28,
+          "positive": 5
+        },
+        "is_rpo": {
+          "known": 28,
+          "positive": 1
+        }
+      },
+      "raw_pbp_play_key_count": 28,
+      "source_clock_tier": "CURRENT_REVISED_SEVEN_DAY_RECONSTRUCTION_NOT_AUTHENTICATED"
+    },
+    {
+      "game_id": "2025_01_DAL_PHI",
+      "player_id": "00-0033077",
+      "season": 2025,
+      "week": 1,
+      "official_ATT": 34.0,
+      "official_CMP": 21.0,
+      "physical_participation": true,
+      "context_ATT": [
+        3,
+        7,
+        1,
+        3,
+        0,
+        4,
+        3,
+        2,
+        1,
+        0,
+        0,
+        4,
+        3,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "context_CMP": [
+        2,
+        6,
+        0,
+        0,
+        0,
+        3,
+        2,
+        1,
+        0,
+        0,
+        0,
+        4,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "field_mean_counts": {
+        "ydstogo": 34,
+        "yardline_100": 34,
+        "game_seconds_remaining": 34,
+        "score_differential": 34
+      },
+      "FTN_flag_counts": {
+        "is_catchable_ball": {
+          "known": 34,
+          "positive": 25
+        },
+        "is_contested_ball": {
+          "known": 34,
+          "positive": 5
+        },
+        "is_drop": {
+          "known": 34,
+          "positive": 4
+        },
+        "is_throw_away": {
+          "known": 34,
+          "positive": 0
+        },
+        "is_motion": {
+          "known": 34,
+          "positive": 21
+        },
+        "is_screen_pass": {
+          "known": 34,
+          "positive": 0
+        },
+        "is_play_action": {
+          "known": 34,
+          "positive": 7
+        },
+        "is_rpo": {
+          "known": 34,
+          "positive": 0
+        }
+      },
+      "raw_pbp_play_key_count": 34,
+      "source_clock_tier": "CURRENT_REVISED_SEVEN_DAY_RECONSTRUCTION_NOT_AUTHENTICATED"
+    },
+    {
+      "game_id": "2025_02_SEA_PIT",
+      "player_id": "00-0023459",
+      "season": 2025,
+      "week": 2,
+      "official_ATT": 33.0,
+      "official_CMP": 18.0,
+      "physical_participation": true,
+      "context_ATT": [
+        5,
+        5,
+        2,
+        0,
+        0,
+        5,
+        3,
+        1,
+        0,
+        0,
+        1,
+        5,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "context_CMP": [
+        2,
+        3,
+        0,
+        0,
+        0,
+        4,
+        3,
+        0,
+        0,
+        0,
+        1,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "field_mean_counts": {
+        "ydstogo": 33,
+        "yardline_100": 33,
+        "game_seconds_remaining": 33,
+        "score_differential": 33
+      },
+      "FTN_flag_counts": {
+        "is_catchable_ball": {
+          "known": 33,
+          "positive": 20
+        },
+        "is_contested_ball": {
+          "known": 33,
+          "positive": 4
+        },
+        "is_drop": {
+          "known": 33,
+          "positive": 1
+        },
+        "is_throw_away": {
+          "known": 33,
+          "positive": 2
+        },
+        "is_motion": {
+          "known": 33,
+          "positive": 17
+        },
+        "is_screen_pass": {
+          "known": 33,
+          "positive": 1
+        },
+        "is_play_action": {
+          "known": 33,
+          "positive": 4
+        },
+        "is_rpo": {
+          "known": 33,
+          "positive": 0
+        }
+      },
+      "raw_pbp_play_key_count": 33,
+      "source_clock_tier": "CURRENT_REVISED_SEVEN_DAY_RECONSTRUCTION_NOT_AUTHENTICATED"
+    },
+    {
+      "game_id": "2026_01_NE_SEA",
+      "player_id": "00-0034869",
+      "season": 2026,
+      "week": 1,
+      "official_ATT": 2.0,
+      "official_CMP": 1.0,
+      "physical_participation": true,
+      "context_ATT": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "context_CMP": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "field_mean_counts": {
+        "ydstogo": 2,
+        "yardline_100": 2,
+        "game_seconds_remaining": 2,
+        "score_differential": 2
+      },
+      "FTN_flag_counts": {
+        "is_catchable_ball": {
+          "known": 2,
+          "positive": 1
+        },
+        "is_contested_ball": {
+          "known": 2,
+          "positive": 0
+        },
+        "is_drop": {
+          "known": 2,
+          "positive": 0
+        },
+        "is_throw_away": {
+          "known": 2,
+          "positive": 0
+        },
+        "is_motion": {
+          "known": 2,
+          "positive": 2
+        },
+        "is_screen_pass": {
+          "known": 2,
+          "positive": 0
+        },
+        "is_play_action": {
+          "known": 2,
+          "positive": 1
+        },
+        "is_rpo": {
+          "known": 2,
+          "positive": 0
+        }
+      },
+      "raw_pbp_play_key_count": 2,
+      "source_clock_tier": "CURRENT_REVISED_SEVEN_DAY_RECONSTRUCTION_NOT_AUTHENTICATED"
+    }
+  ],
+  "source_year_diagnostics": [
+    {
+      "season": 2022,
+      "REG_plays": 47157,
+      "dropback": 20298,
+      "sack": 1297,
+      "scramble": 968,
+      "credited_throw_candidates": 18069,
+      "missing_deleted_flag_on_admitted": 0,
+      "raw_play_unique_keys": 47157,
+      "FTN_unique_keys": 41643
+    },
+    {
+      "season": 2023,
+      "REG_plays": 47399,
+      "dropback": 20770,
+      "sack": 1410,
+      "scramble": 1118,
+      "credited_throw_candidates": 18315,
+      "missing_deleted_flag_on_admitted": 0,
+      "raw_play_unique_keys": 47399,
+      "FTN_unique_keys": 48225
+    },
+    {
+      "season": 2024,
+      "REG_plays": 47274,
+      "dropback": 20215,
+      "sack": 1314,
+      "scramble": 1134,
+      "credited_throw_candidates": 17811,
+      "missing_deleted_flag_on_admitted": 0,
+      "raw_play_unique_keys": 47274,
+      "FTN_unique_keys": 48031
+    },
+    {
+      "season": 2025,
+      "REG_plays": 46452,
+      "dropback": 19830,
+      "sack": 1287,
+      "scramble": 1160,
+      "credited_throw_candidates": 17439,
+      "missing_deleted_flag_on_admitted": 0,
+      "raw_play_unique_keys": 46452,
+      "FTN_unique_keys": 47316
+    },
+    {
+      "season": 2026,
+      "REG_plays": 21347,
+      "dropback": 9058,
+      "sack": 558,
+      "scramble": 470,
+      "credited_throw_candidates": 8060,
+      "missing_deleted_flag_on_admitted": 0,
+      "raw_play_unique_keys": 21347,
+      "FTN_unique_keys": 20723
+    }
+  ],
+  "interaction": {
+    "query_game": "2025_01_DAL_PHI",
+    "query_player": "00-0033077",
+    "formula": "mix_j=(ownA_j+20*(globalA_j+1)/(sumGlobalA+25))/(sumOwnA+20); expectedPastC_j=sumPastQBA_j*(ownPastC_j+20*(globalPastC_j+1)/(globalPastA_j+2))/(ownPastA_j+20); r_j=(defC_j-expectedPastC_j)/(defA_j+100); E3_j=mix_j*r_j",
+    "opponent_game_count": 16,
+    "predicted_mix": [
+      0.057357242413873764,
+      0.2174618639726422,
+      0.06037874086832801,
+      0.04528067265553565,
+      9.665702029604112e-06,
+      0.07631627530239149,
+      0.1717464763683251,
+      0.07287190238414207,
+      0.02505664101389348,
+      6.04106376850257e-06,
+      0.03481827513614141,
+      0.12306251002816586,
+      0.053020000270639654,
+      0.028383817295033954,
+      1.208212753700514e-06,
+      9.665702029604113e-05,
+      0.013854817289234534,
+      0.010184508586043113,
+      0.01008543514023967,
+      1.208212753700514e-06,
+      1.208212753700514e-06,
+      1.208212753700514e-06,
+      1.208212753700514e-06,
+      1.208212753700514e-06,
+      1.208212753700514e-06
+    ],
+    "defense_attempts": [
+      47,
+      95,
+      40,
+      23,
+      0,
+      34,
+      79,
+      30,
+      17,
+      0,
+      14,
+      69,
+      21,
+      20,
+      0,
+      1,
+      11,
+      4,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "defense_completions": [
+      36,
+      68,
+      27,
+      5,
+      0,
+      27,
+      55,
+      15,
+      5,
+      0,
+      8,
+      45,
+      13,
+      4,
+      0,
+      1,
+      8,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "offense_expected_completions": [
+      37.035035049435095,
+      68.42741160634026,
+      23.639148592038143,
+      9.446026030042455,
+      0.0,
+      26.624004144755048,
+      57.27504515950338,
+      17.580110487117782,
+      6.327611530014783,
+      0.0,
+      10.164360756771563,
+      46.93434214125095,
+      10.504953020451861,
+      6.699635173746217,
+      0.0,
+      0.6837944664031621,
+      6.809921407342203,
+      1.8036073838673876,
+      0.43872975641534595,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "context_residual": [
+      -0.00704105475806187,
+      -0.002191854391488499,
+      0.02400608148544183,
+      -0.03614655308977606,
+      0.0,
+      0.002805939218245909,
+      -0.01270974949443228,
+      -0.01984700374705986,
+      -0.011347107094143447,
+      0.0,
+      -0.018985620673434764,
+      -0.01144581148669202,
+      0.020620222971472223,
+      -0.022496959781218476,
+      0.0,
+      0.0031307478573944347,
+      0.010721428762682858,
+      0.011503775155121273,
+      -0.004301272121719078,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "E3_interaction": [
+      -0.00040385548460751395,
+      -0.00047664474152971044,
+      0.001449456973273459,
+      -0.0016367402380840904,
+      0.0,
+      0.00021413882986143196,
+      -0.0021828546911928453,
+      -0.001446288919673448,
+      -0.0002843203890041564,
+      0.0,
+      -0.0006610465642380661,
+      -0.0014085502908615327,
+      0.0010932842275281072,
+      -0.0006385495961238322,
+      0.0,
+      3.0260875919396115e-07,
+      0.00014854343658651488,
+      0.00011716029683924205,
+      -4.3380201004118834e-05,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_context_residuals": 17,
+    "same_scalar_main": -0.017123124720750667,
+    "weighted_identical_scalar_would_collapse": -0.017123124720750667,
+    "actual_context_weighted_sum": -0.006159344743471366,
+    "historical_offense_example": {
+      "game_id": "2024_02_ATL_PHI",
+      "player_id": "00-0029604",
+      "kickoff": 1726532100.0,
+      "eligible_prior_rows": 1330,
+      "latest_prior_availability": 1726446000.0
+    },
+    "conclusion": "Actual per-context residual vector, not repeated one-scalar interaction. Earlier offense-quality reference recomputed at each past origin. QB-throw-only context; not all dropbacks or full defensive talent."
+  },
+  "future_target_exposure_mutation": "PASS_EARLIER_E3_FEATURES_IDENTICAL_WITHOUT_REFIT",
+  "offer_win_loss_check": {
+    "state": "DETERMINISTIC_ONE_WIN_ONE_LOSS_RAW_LABEL_AND_SIDE_CHECKED",
+    "cases": [
+      {
+        "state": "WIN",
+        "selected_side": "over",
+        "contract_and_values_sha256": "e584b3578eca51be7fae1aa0315cd5349a0159d51c2afa90d5ac2159909238a3",
+        "raw_label_parity": true,
+        "quote_time_status": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+        "forecast_cutoff_after_quote": true
+      },
+      {
+        "state": "LOSS",
+        "selected_side": "under",
+        "contract_and_values_sha256": "7432ec76612d72b17073b2325334daf9474c8070280efe76da9f3467088427db",
+        "raw_label_parity": true,
+        "quote_time_status": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+        "forecast_cutoff_after_quote": true
+      }
+    ],
+    "protected_rows_exported": 0,
+    "board_input_sha256": "9b74e81ff451bd26e96b3019436e26306a4068f4fc9b38cc4561e1e0ab2d146f",
+    "new_NFL_observations": 0
+  },
+  "semantics": {
+    "completion_not_catchability": true,
+    "FTN_known_false_not_missing": true,
+    "explicit_weekly_zero_not_unknown": true,
+    "unknown_physical_state_retained": true,
+    "pass_destination_not_alignment": true,
+    "team_history": "QB passers collapsed once perteam/game;16observedqualifiedgames, excludesnonQBthrowers,notdesigneddropbackforecast.",
+    "clock": "kickoff+7days strict< consistentlyreconstructed; current/reviseddata, noauthenticated as-of claim.",
+    "offense_adjustment": "Perpastgame shrunk QB completion context history, not iterative schedule-adjusted latenttalent or randomizedcausal defenseeffect."
+  },
+  "resources": {
+    "wall_seconds": 21.50338531200032,
+    "CPU_seconds": 21.413051325999998,
+    "peak_RSS_bytes": 237527040,
+    "new_fits": 0,
+    "new_source_collections": 0
+  },
+  "verdicts": {
+    "A": "PASS_checked_declared_source/feature_paths",
+    "B": "PASS_current-vintage_7day_reconstruction_not_authentic_asof",
+    "C": "PASS_raw_feature_and_representative_side_arithmetic;freshfit_not_this_scope",
+    "D": "PASS_fixed-information-ablation_scope_not_all_contextmodels",
+    "E": "PARTIAL_actualdropback/gamecontext_andentirely-owninfo_notcompleted",
+    "F": "NO_positive_gain_orreleasecertification_fromthisreview"
+  }
+}

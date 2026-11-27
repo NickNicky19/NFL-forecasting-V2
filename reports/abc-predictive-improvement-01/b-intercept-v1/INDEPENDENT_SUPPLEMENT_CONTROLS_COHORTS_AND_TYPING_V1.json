@@ -1,0 +1,165 @@
+{
+  "state": "PASS_WITH_EXPLICIT_SCOPE_AND_RESOURCE_LIMITATIONS",
+  "at_utc": "2026-11-04T20:58:10.365980+00:00",
+  "verification_code_sha256": "6da62fa7da431cd7c41c0a2d47fa00c91fe792691104023ef4e2056bbff46755",
+  "source_scores_sha256": "87e944907e85ca4ca221595c4f8cecf44c4bb2ee64ee7dfc8256fde7ee7e2cf7",
+  "source_rows_sha256": "4c119c973bb9c5c04673f8bc2d2d150213b4bb2cd183e0f33aafcd5c7a01c0eb",
+  "supplement_code_sha256": "9db99045bc80459ba0908a94a44cadde71f44d7b573b1074276a4da8c5d3ba0c",
+  "artifact_sha256": {
+    "MATCHED_SELECTED_CONTROL_SCORES": "f6871d335408c573865eba4c159b06ea1a73aaaf3dfcc07ff4f60b59e305fc41",
+    "REFERENCE_PROBABILITY_SCORES": "139527a56b2355bbeef871da34ca4866ecec2f0e787f9b5956d86d76c028a1cb",
+    "COMMON_COHORT_SCORES": "900af8e69d75bd534240c7db86e155ea63b266458bfb60817be93e0f76ff093e",
+    "COHORT_MEMBERSHIP_MANIFEST": "31cd0053978ee61f95e75e933e40847101380924d6cddce36d461e8a6abec06b",
+    "PAIRED_PROBABILITY_ANALYSIS": "c8ef3c102745d15336a84626f983857ef17cf3bec252977ef3d0ff36d5bf379f",
+    "OWN_POOL_CHANGE_SENSITIVITY": "a943839d3c804e11c9335b2c8ad2a91836801804f278fcd0142bbf1f40e1aa6c",
+    "ANCILLARY_POINT_SCORES": "6d3e60dba374af015fdd69821e8eb3e4df5c2fa71ae9ddc0843d4cc16e6a83e7",
+    "TARGET_90_STATUS": "095759656ca3950434757112d254ac375b4cc5d3266b680287dbd8bb2334c104",
+    "INDEX_REPORTING_ANNOTATIONS": "f74e12444f18a305d845b5b3d23f649d38818757d067e98d296f86e800addf03"
+  },
+  "selected_control_views_verified": 216,
+  "reference_probability_views_verified": 72,
+  "cohort_side_views_verified": 480,
+  "cohort_manifest_rows_verified": 42,
+  "paired_probability_contrasts_verified": 4,
+  "own_pool_contrasts_verified": 12,
+  "ancillary_numeric_views_verified": 1,
+  "target90_views_verified": 8,
+  "typed_rolling_K_annotations_verified": 216,
+  "temporal_cohort_matches": {
+    "rec": 340,
+    "pass_td": 26
+  },
+  "same_B0_B1_cohort_memberships": true,
+  "matched_B2_control_summary": [
+    {
+      "target": "rec",
+      "arm": 0,
+      "control": "ALWAYS_OVER",
+      "parent_policy": "B2_MATCHED_EARLIER_CONFIDENCE",
+      "selected": 161,
+      "wins": 73,
+      "losses": 87,
+      "decided": 160
+    },
+    {
+      "target": "rec",
+      "arm": 0,
+      "control": "ALWAYS_UNDER",
+      "parent_policy": "B2_MATCHED_EARLIER_CONFIDENCE",
+      "selected": 161,
+      "wins": 87,
+      "losses": 73,
+      "decided": 160
+    },
+    {
+      "target": "rec",
+      "arm": 0,
+      "control": "EARLIER_SOURCE_PRIOR",
+      "parent_policy": "B2_MATCHED_EARLIER_CONFIDENCE",
+      "selected": 161,
+      "wins": 82,
+      "losses": 78,
+      "decided": 160
+    },
+    {
+      "target": "rec",
+      "arm": 1,
+      "control": "ALWAYS_OVER",
+      "parent_policy": "B2_MATCHED_EARLIER_CONFIDENCE",
+      "selected": 161,
+      "wins": 73,
+      "losses": 87,
+      "decided": 160
+    },
+    {
+      "target": "rec",
+      "arm": 1,
+      "control": "ALWAYS_UNDER",
+      "parent_policy": "B2_MATCHED_EARLIER_CONFIDENCE",
+      "selected": 161,
+      "wins": 87,
+      "losses": 73,
+      "decided": 160
+    },
+    {
+      "target": "rec",
+      "arm": 1,
+      "control": "EARLIER_SOURCE_PRIOR",
+      "parent_policy": "B2_MATCHED_EARLIER_CONFIDENCE",
+      "selected": 161,
+      "wins": 82,
+      "losses": 78,
+      "decided": 160
+    },
+    {
+      "target": "pass_td",
+      "arm": 0,
+      "control": "ALWAYS_OVER",
+      "parent_policy": "B2_MATCHED_EARLIER_CONFIDENCE",
+      "selected": 13,
+      "wins": 7,
+      "losses": 6,
+      "decided": 13
+    },
+    {
+      "target": "pass_td",
+      "arm": 0,
+      "control": "ALWAYS_UNDER",
+      "parent_policy": "B2_MATCHED_EARLIER_CONFIDENCE",
+      "selected": 13,
+      "wins": 6,
+      "losses": 7,
+      "decided": 13
+    },
+    {
+      "target": "pass_td",
+      "arm": 0,
+      "control": "EARLIER_SOURCE_PRIOR",
+      "parent_policy": "B2_MATCHED_EARLIER_CONFIDENCE",
+      "selected": 13,
+      "wins": 5,
+      "losses": 8,
+      "decided": 13
+    },
+    {
+      "target": "pass_td",
+      "arm": 1,
+      "control": "ALWAYS_OVER",
+      "parent_policy": "B2_MATCHED_EARLIER_CONFIDENCE",
+      "selected": 13,
+      "wins": 6,
+      "losses": 7,
+      "decided": 13
+    },
+    {
+      "target": "pass_td",
+      "arm": 1,
+      "control": "ALWAYS_UNDER",
+      "parent_policy": "B2_MATCHED_EARLIER_CONFIDENCE",
+      "selected": 13,
+      "wins": 7,
+      "losses": 6,
+      "decided": 13
+    },
+    {
+      "target": "pass_td",
+      "arm": 1,
+      "control": "EARLIER_SOURCE_PRIOR",
+      "parent_policy": "B2_MATCHED_EARLIER_CONFIDENCE",
+      "selected": 13,
+      "wins": 6,
+      "losses": 7,
+      "decided": 13
+    }
+  ],
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_NFL_observations": 0,
+  "limits": [
+    "Declared two-thread fitting limit was not explicitly enforced in the executed six scalar fits; BLAS pool configuration five, active fitting threads unrecorded. Approximately equal CPU/wall time does not authenticate the cap. This is disclosed resource nonconformance and future hardening, not a reason to silently rerun or alter results.",
+    "Frozen earlier-opportunity cohort membership does not authenticate an ex-ante full population; historical participant and original future-query universes remain distinct. Top-player cohorts are not top-ranked picks.",
+    "Rec law inputs are single actual-line events; complete direct CDF and nontrivial cross-line coherence are unestablished. PT historical-to-original-capture transfer and current-revised source limits remain.",
+    "PT ancillary mean belongs to unchanged original B0 C02, not repaired-law or constant/prior controls.",
+    "All confidence90 pools are empty; hit rate N/A and target unestablished. All probability/selection differences are exposed, descriptive, few-week comparisons without fresh validation or profitability evidence."
+  ]
+}

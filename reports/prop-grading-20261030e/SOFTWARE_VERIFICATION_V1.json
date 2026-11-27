@@ -1,0 +1,67 @@
+{
+  "state": "PASS_SOFTWARE_AND_BOUND_PUBLIC_AGGREGATES",
+  "recorded_at_utc": "2026-10-30T22:57:47.881349+00:00",
+  "unittest_command": "python -m unittest discover -s tests -v",
+  "unittest_cases_executed": 357,
+  "unittest_outcome": "OK",
+  "unittest_seconds": 0.578,
+  "validation_after_environment_restart": true,
+  "checks": [
+    {
+      "command": "python tools/validate_checkpoint.py",
+      "result": {
+        "status": "PASS",
+        "JSON_files_parsed": 29569,
+        "grid_cells": 5408,
+        "request_index_items": 91,
+        "reported_cells": 4832,
+        "reproduced_primary_all_role_views": 66,
+        "initial_checkpoint_new_fits": 0,
+        "scope": "initial-checkpoint artifact/schema/privacy-marker checks; continuation fits are recorded in their separate run receipts; not independent NFLtruth"
+      }
+    },
+    {
+      "command": "python tools/check_result_index_coverage.py",
+      "result": {
+        "status": "PASS",
+        "indexed_records": 152751,
+        "registered_artifacts": 53,
+        "scope": "streamed coverage/hashes; not additional NFL evidence"
+      }
+    },
+    {
+      "command": "python tools/check_analysis_index_coverage.py",
+      "result": {
+        "state": "PASS",
+        "canonical_evaluation_views": 124630,
+        "derived_comparison_views": 18708,
+        "status_counts": {
+          "PAIRED_LOSS_SCORED": 17658,
+          "NO_SUPPORTED_PAIRED_ROWS": 1050
+        },
+        "new_NFL_observations": 0
+      }
+    },
+    {
+      "command": "python tools/check_prop_scoreboard_coverage.py",
+      "result": {
+        "NFL_outcome_rows_read": 0,
+        "bound_csv_rows": 7440,
+        "default_weekly_views": 3720,
+        "group_cells": 2480,
+        "metadata_rows": 7440,
+        "new_grades": 0,
+        "retained_aliases": 3720,
+        "score_views": 7440,
+        "state": "PASS_PROP_SCOREBOARD_COVERAGE",
+        "unsupported_cells": 48,
+        "unsupported_targets": 2
+      }
+    }
+  ],
+  "new_NFL_fits": 0,
+  "new_inference": 0,
+  "new_forecasts": 0,
+  "new_NFL_observations": 0,
+  "scope": "Software/schema/privacy/bindingchecks;independentNFLgrade/joinscopesinseparatereceipts. NotNFLaccuracyfromsynthetictests."
+}

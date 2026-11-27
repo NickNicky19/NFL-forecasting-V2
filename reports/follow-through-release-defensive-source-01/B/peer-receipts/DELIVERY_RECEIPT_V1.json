@@ -1,0 +1,95 @@
+{
+  "id": "B-PEER-REFRESH-DELIVERY-v1",
+  "recorded_UTC": "2026-11-12T04:25:01.346599+00:00",
+  "scope": "One bounded actual-head/immutable-public-aggregate receipt; no second C master table or producer intervention",
+  "files": [
+    {
+      "path": "A_NEW_PACKAGE_AND_SOURCE_SCOPE_V1.json",
+      "bytes": 29135,
+      "sha256": "776a6e2dc57ad901997a10ec6cc87aa9e0d1d6330c8c46701768a94d7065408e"
+    },
+    {
+      "path": "A_REPRESENTATIVE_CALCULATION_RECEIPT_V1.json",
+      "bytes": 41696,
+      "sha256": "e6044b094539fe845daac3fcc8cf725f2c84af72521d5c144922ab5df75ea523"
+    },
+    {
+      "path": "C_DECISION_RECEIPT_EXTRACT_V1.json",
+      "bytes": 280677,
+      "sha256": "9e42ccdccc9c47bfb7f0598d130795288f7cfa00469a98ccd15b9d4900a89382"
+    },
+    {
+      "path": "FAILED_REPRESENTATIVE_CHECK_V1.json",
+      "bytes": 676,
+      "sha256": "437a2aaae572298323496f632551912a7029ad2bc4b870cebf8774adbdf68e2d"
+    },
+    {
+      "path": "FAILED_REPRESENTATIVE_CHECK_V2.json",
+      "bytes": 659,
+      "sha256": "be445f3bcdd31979c1b152293d331cd125bc6aca9d12e9100a384e30e08956cb"
+    },
+    {
+      "path": "FAILED_REPRESENTATIVE_CHECK_V3.json",
+      "bytes": 476,
+      "sha256": "ebb9588c3bdce8aa0753936b5b29f16811cd19c12a4b26c04905762e72c6022a"
+    },
+    {
+      "path": "HEADS_AND_OWNER_RECEIPTS_V1.json",
+      "bytes": 25085,
+      "sha256": "6e211a588e7d62b1b32cd55a59295ae628b6aae40debab841b2f33498e6fff60"
+    },
+    {
+      "path": "IMMUTABLE_PEER_BINDINGS_V1.json",
+      "bytes": 9492,
+      "sha256": "6367c10d28e61a91e644b500357f0b25446c2f21345596781e2f93ae95c5f0c6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6091,
+      "sha256": "7c8ec5690e01763c0b22e520e389fc31f71470449d955e46aa635b015d4524b6"
+    },
+    {
+      "path": "verify_new_A_representatives_v1.py",
+      "bytes": 9175,
+      "sha256": "23d2595fc3e2f2e54f1933b622b399ce1c1b096db782aa915dfe5c993ad8ab22"
+    },
+    {
+      "path": "verify_new_A_representatives_v1_failed.py",
+      "bytes": 9175,
+      "sha256": "23d2595fc3e2f2e54f1933b622b399ce1c1b096db782aa915dfe5c993ad8ab22"
+    },
+    {
+      "path": "verify_new_A_representatives_v2.py",
+      "bytes": 9523,
+      "sha256": "7119bb652d3cd0b081bc2b34e585d9520bedddb1f579a5f29ab5e705557f0720"
+    },
+    {
+      "path": "verify_new_A_representatives_v3.py",
+      "bytes": 9836,
+      "sha256": "c63c3e9e1f3ad36091513ee87bc704b3421b29cef29e2a977517d6de587cfbb6"
+    },
+    {
+      "path": "verify_new_A_representatives_v4.py",
+      "bytes": 10136,
+      "sha256": "3c44acbf976aebf3a37927e497f2fb94a75e787e2322c86662e45c5487380f80"
+    },
+    {
+      "path": "verify_peer_bindings_v1.py",
+      "bytes": 6930,
+      "sha256": "8b9b00e48bf45b3910446bcf19ba753f5a8a9682fb2beea2416b449f0d9ae939"
+    }
+  ],
+  "bytes_before_receipt": 448762,
+  "public_budget_bytes": 4194304,
+  "checks": [
+    "All JSON decodes",
+    "All Python AST parses",
+    "No credential/absolute-private-path markers",
+    "No protected row or model transferred"
+  ],
+  "new_fits": 0,
+  "new_grades": 0,
+  "new_test_weeks": 0,
+  "peer_writes": 0,
+  "failed_reviewer_wrapper_attempts_preserved": 3
+}

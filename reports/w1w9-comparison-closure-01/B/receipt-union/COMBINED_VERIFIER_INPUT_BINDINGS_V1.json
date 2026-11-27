@@ -1,0 +1,91 @@
+{
+  "id": "B_FIXED_TRIO_COMBINED_VERIFIER_INPUT_BINDINGS_v1",
+  "at_UTC": "2026-11-14T19:04:04.324903+00:00",
+  "early_source": {
+    "published_commit": "5a41d2bac6027e0ac1b5a2744d52f8ec5e93c47e",
+    "aggregate_sha256": "fcd9d4c0fe6181dc5ebe5119031460615e57f3bbbb04a968b0139098e8970ad0",
+    "owner_bound_mask_sha256": "12fe9064bc80b901fce44a558fc2d9c177bb58bd364109e46c795d4468aba91c",
+    "rows": 84,
+    "private_raw_membership_inspected": false
+  },
+  "later_source_members": [
+    {
+      "week": 5,
+      "source_kind": "Existing owner-local native normalizedsource",
+      "source_filename": "RESTORED_W5_QB_OFFERS.json.gz",
+      "bytes": 3159,
+      "sha256": "7ebb7e3b546147f8e7f10fa887fd295f2d72f88eb70600a22448ad29feff69fe",
+      "CMP_rows": 28,
+      "actual_games": 14,
+      "canonical_key_hash": "3818d256bc7d893151a1cdd4faf78ca0f94773c71750ab624f72cec51f6a8e28"
+    },
+    {
+      "week": 6,
+      "source_kind": "Existing owner-local native normalizedsource",
+      "source_filename": "RESTORED_W6_QB_OFFERS.json.gz",
+      "bytes": 2924,
+      "sha256": "3f7ccc297f7e2dd63d1bdc6c1e625b6183f58b58f3551d4ce2aa8ad02416d5b5",
+      "CMP_rows": 28,
+      "actual_games": 14,
+      "canonical_key_hash": "4d433b67a9b8a411a99dc36f6fe8e402f06db807fd8a56178d8394abec83a199"
+    },
+    {
+      "week": 7,
+      "source_kind": "Existing owner-local native normalizedsource",
+      "source_filename": "RESTORED_W7_QB_OFFERS.json.gz",
+      "bytes": 2752,
+      "sha256": "c6b2a6dfd5a983892afcc7882fea337ad105a327972ce6c5c16300e4fb5ead43",
+      "CMP_rows": 28,
+      "actual_games": 14,
+      "canonical_key_hash": "3acfa54ae29c53bf63ca268358462de9a79c78b0ed45afe07f3c98c3e8fd15d9"
+    },
+    {
+      "week": 8,
+      "source_kind": "Existing owner-local native normalizedsource",
+      "source_filename": "RESTORED_W8_QB_OFFERS.json.gz",
+      "bytes": 2710,
+      "sha256": "43fc0aef34076e5d5389cb47239c9a10d68df80cd5db6973cf008b997504b2c0",
+      "CMP_rows": 28,
+      "actual_games": 14,
+      "canonical_key_hash": "2a5fba3ed244e21afc829c9d833ced3c54f9044630efc10bee4877b5ad01d778"
+    },
+    {
+      "week": 9,
+      "source_kind": "Existing owner-local native normalizedsource",
+      "source_filename": "RESTORED_W9_QB_OFFERS.json.gz",
+      "bytes": 3491,
+      "sha256": "63b131964ddc110e78ec8328f6c592f9f96f59be3e946e5a45e4de848cde76f8",
+      "CMP_rows": 30,
+      "actual_games": 15,
+      "canonical_key_hash": "bd6e813aa9a05075b7ad9cf253a4788474349de4ae17765dc0db860a3046acc1"
+    }
+  ],
+  "native_common_source_opportunity_commitment": "30bf3c6b2f765899bc1fed08c3a8dcce526d9a850836050a51c027f2d62fdc79",
+  "native_field_states": [
+    {
+      "participation": "VERIFIED_PLAYED_POSITIVE_PHYSICAL",
+      "label_state": "SUPPORTED",
+      "rows": 142
+    }
+  ],
+  "disjoint_week_source_domains": true,
+  "composite_scope": "Composite early-owner-mask + native-source-opportunity hashes are bindings, not a falsely claimed fullraw226rowhash. Native grades rederived; earlyprivate rows ownerlocal.",
+  "source_reads_this_followup": 0,
+  "new_fits": 0,
+  "new_NFL_observations_added_by_verification": 0,
+  "verifier_development": "Initial newverifierstopped onmissingwhitespace in conditionalexpression before reading/scoring; corrected source before first successfulreceipt. Frozen input/forecast/grade rows unchanged.",
+  "prepublished_fixed_source_roster_bindings": [
+    {
+      "path": "reports/w1w9-comparison-closure-01/B/source-policy/FROZEN_NAMED_COMPLETION_PANEL_V1.json",
+      "sha256": "d34f4ecf65df12c92e28f8eb9fa0690607bac58316865ce6556e44b34e5dd361",
+      "published_commit": "b3ff74cbe7520ec1f94cf7f953b10c6f6ccfbeeb",
+      "checked_unchanged": true
+    },
+    {
+      "path": "reports/w1w9-comparison-closure-01/B/roster/FROZEN_B_CONTRIBUTION_ROSTER_V1.json",
+      "sha256": "5cc294365211df40b46f7b8ab396e62eaa906afea8860ec1b962e54774df3f63",
+      "published_commit": "b3ff74cbe7520ec1f94cf7f953b10c6f6ccfbeeb",
+      "checked_unchanged": true
+    }
+  ]
+}

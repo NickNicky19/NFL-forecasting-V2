@@ -1,0 +1,59 @@
+"""Independent saved-byte/clock audit. Numeric predictions/outcomes stay undecoded."""
+import argparse,collections,datetime,gzip,hashlib,importlib.util,json
+from pathlib import Path
+HERE=Path(__file__).resolve().parent;BASE=HERE.parent;ROOT=HERE.parents[2]
+spec=importlib.util.spec_from_file_location('j_lexical_decoder',BASE/'READ_ONLY_SOURCE_AUDIT.py');lex=importlib.util.module_from_spec(spec);spec.loader.exec_module(lex)
+SAFE={'game_id','player_id','category','key','product','method_id','model_version','forecast_source','direction','selected_at','kickoff','kickoff_utc','issued_at','persistence_completed_at','first_prepared_at','line_from','selected_row_canonical','selected_row_sha256','payload_sha256','execution_contract_sha256','input_sha256','mode','captured_at','forecast_generated_at','source_timestamps_verified'}
+def read(p):return json.loads(p.read_bytes())
+def sha(b):return hashlib.sha256(b).hexdigest()
+def props(t,a=0):return{k:(b,c)for k,b,c in lex.entries(t,a)}
+def scalar(t,p,k):
+    assert k in SAFE;k0,k1=p[k];return json.loads(t[k0:k1])
+def token(t,p,k):a,b=p[k];return t[a:b]
+def iso(s):return datetime.datetime.fromisoformat(s.replace('Z','+00:00'))
+def rawcanonical(t,a,b):
+    if t[a]=='{':return'{'+','.join(json.dumps(k,ensure_ascii=False)+':'+rawcanonical(t,x,y)for k,x,y in sorted(lex.entries(t,a)))+'}'
+    if t[a]=='[':return'['+','.join(rawcanonical(t,x,y)for x,y in lex.elements(t,a))+']'
+    if t[a]=='"':return json.dumps(json.loads(t[a:b]),ensure_ascii=False,separators=(',',':'))
+    return t[a:b]
+def parse_rows(t):
+    p=props(t);return[(props(t,a),a,b)for a,b in lex.elements(t,p['rows'][0])]
+def identity(t,p):return tuple(scalar(t,p,k)for k in('game_id','player_id','category'))
+def selections(t):
+    root=props(t);out=[]
+    for side,a,b in lex.entries(t,root['picks'][0]):
+        for aa,bb in lex.elements(t,a):
+            p=props(t,aa);key=scalar(t,p,'key');assert isinstance(key,str);category=key.split('|')[-1];q=dict(p=p,side=side,category=category,identity=(scalar(t,p,'game_id'),scalar(t,p,'player_id'),category),contract=(scalar(t,p,'game_id'),scalar(t,p,'player_id'),key,token(t,p,'line')));assert side==scalar(t,p,'direction');assert scalar(t,p,'line_from')=='dk';assert iso(scalar(t,p,'selected_at'))<iso(scalar(t,p,'kickoff_utc'));out.append(q)
+    return out
+def main():
+    ap=argparse.ArgumentParser();ap.add_argument('--cache',type=Path,required=True);ap.add_argument('--old-adaptive',type=Path,required=True);a=ap.parse_args();manifest=read(BASE/'PUBLIC_ARTIFACT_MANIFEST.json');assert manifest['sources_sealed']is True and manifest['new_scientific_scores']==0
+    for z in manifest['artifacts']:
+        f=ROOT/z['path'];assert sha(f.read_bytes())==z['sha256']and f.stat().st_size==z['bytes']
+    fresh=read(BASE/'FRESH_BYTE_READBACK.json')
+    for z in fresh['receipts']:
+        f=a.cache/z['kind'];assert sha(f.read_bytes())==z['sha256']and f.stat().st_size==z['bytes']and z['status']==200
+    cpointer=read(a.cache/'pointer.json');spointer=read(a.cache/'selected-pointer.json');assert sha((a.cache/'payload.json').read_bytes())==cpointer['sha256']and sha((a.cache/'selected-payload.json').read_bytes())==spointer['sha256'];assert read(a.cache/'selected-receipt.json')==spointer
+    classic=gzip.decompress((a.cache/'classic-receipt.json.gz').read_bytes()).decode();top=props(classic);pa,pb=top['payload'];payload=props(classic,pa);assert sha(classic[pa:pb].encode())==scalar(classic,top,'payload_sha256');ec=payload['execution_contract'];assert sha(classic[ec[0]:ec[1]].encode())==scalar(classic,payload,'execution_contract_sha256');ident=sha(json.dumps(dict(data=scalar(classic,payload,'input_sha256'),execution=scalar(classic,payload,'execution_contract_sha256'),mode=scalar(classic,payload,'mode')),sort_keys=True,separators=(',',':'),ensure_ascii=False).encode());assert ident=='fb080a82123f6641ca2b9bae217ecac25b56196cfced64bd4b3e0698e04da575'
+    captured=iso(scalar(classic,payload,'captured_at'));generated=iso(scalar(classic,payload,'forecast_generated_at'));assert generated<=captured;classicrows=[props(classic,x)for x,y in lex.elements(classic,payload['rows'][0])];assert len(classicrows)==2176;classicmap={identity(classic,p):p for p in classicrows};assert len(classicmap)==2176 and all(scalar(classic,p,'source_timestamps_verified')is False for p in classicrows);assert all(iso(scalar(classic,p,'kickoff'))>captured for p in classicrows);assert len({scalar(classic,p,'game_id')for p in classicrows})==13;assert len(list(lex.elements(classic,payload['excluded_started_or_late_games'][0])))==1
+    overlay=(a.cache/'payload.json').read_text();old=a.old_adaptive.read_text();newrows=parse_rows(overlay);oldrows=parse_rows(old);nmap={identity(overlay,p):(p,x,y)for p,x,y in newrows};omap={identity(old,p):(p,x,y)for p,x,y in oldrows};assert len(nmap)==len(omap)==1945 and nmap.keys()==omap.keys();diff=collections.Counter();future=frozen=0;catfuture=collections.Counter();catfrozen=collections.Counter()
+    for key,(p,x,y)in nmap.items():
+        pp,xx,yy=omap[key];assert p.keys()==pp.keys()
+        for k in p:
+            if token(overlay,p,k)!=token(old,pp,k):diff[k]+=1
+        isfuture=iso(scalar(overlay,p,'kickoff_utc'))>captured;future+=isfuture;frozen+=not isfuture;(catfuture if isfuture else catfrozen)[key[2]]+=1;assert iso(scalar(overlay,p,'issued_at'))<datetime.datetime(2026,10,29,tzinfo=datetime.timezone.utc);assert iso(scalar(overlay,p,'persistence_completed_at'))<datetime.datetime(2026,10,29,tzinfo=datetime.timezone.utc)
+    assert diff=={'first_prepared_at':1789}and future==1789 and frozen==156
+    selected=(a.cache/'selected-payload.json').read_text();prior=(a.cache/'previous-selected-payload.json').read_text();picks=selections(selected);oldpicks=selections(prior);assert len(picks)==len(oldpicks)==24;assert collections.Counter(p['side']for p in picks)=={'over':12,'under':12};assert len({p['identity']for p in picks})==len({p['contract']for p in picks})==24
+    ncontracts={p['contract']:p['side']for p in picks};ocontracts={p['contract']:p['side']for p in oldpicks};common=ncontracts.keys()&ocontracts.keys();assert len(common)==11 and all(ncontracts[k]==ocontracts[k]for k in common);assert len(ncontracts.keys()-ocontracts.keys())==len(ocontracts.keys()-ncontracts.keys())==13
+    adaptive=reference=0;adj_same=0;bycat=collections.Counter()
+    for q in picks:
+        p=q['p'];bycat[q['category'],q['side']]+=1;source=scalar(selected,p,'forecast_source')
+        if source=='SELECTED':
+            adaptive+=1;row,aa,bb=nmap[q['identity']];canonical=scalar(selected,p,'selected_row_canonical');assert sha(canonical.encode())==scalar(selected,p,'selected_row_sha256');assert rawcanonical(overlay,aa,bb)==canonical;assert token(selected,p,'adj')==token(overlay,row,'forecast_value');adj_same+=1
+        else:
+            reference+=1;row=classicmap[q['identity']];assert token(selected,p,'adj')==token(classic,row,'adjusted_projection');assert token(selected,p,'line')==token(classic,row,'line');adj_same+=1
+    assert adaptive==21 and reference==3 and adj_same==24
+    coverage=read(BASE/'CATEGORY_CAPTURE_COVERAGE.json');validated=read(BASE/'CAPTURE_VALIDATION_AND_SELECTION_OVERLAP.json');assert validated['selected']['by_category_side']=={c+'|'+s:n for(c,s),n in bycat.items()};assert validated['classic']['capture_identity_computed']==ident;assert read(BASE/'EXISTING_ADAPTIVE_ROW_BYTE_PARITY.json')['different_raw_serialized_field_counts']==dict(diff)
+    incident=read(BASE/'ACQUISITION_SCOPE_INCIDENT.json');notice=read(BASE/'OWNER_NOTICE_RECEIPT.json');assert incident and notice;out=dict(state='PASS_INDEPENDENT_OWNER_RUNTIME_SAVED_BYTES_TIMING_SELECTION_IDENTITY',checker_sha256=sha(Path(__file__).read_bytes()),public_manifest_sha256=sha((BASE/'PUBLIC_ARTIFACT_MANIFEST.json').read_bytes()),public_artifacts_verified=len(manifest['artifacts']),fresh_saved_byte_responses_verified=len(fresh['receipts']),classic_rows=2176,classic_future_games=13,classic_excluded_elapsed_games=1,classic_all_source_timestamps_unverified=True,classic_generated_at=generated.isoformat(),classic_captured_at=captured.isoformat(),capture_filename_identity=ident,adaptive_rows=1945,adaptive_future_rows=1789,adaptive_elapsed_frozen_rows=156,adaptive_original_issue_persist_clocks_preserved=True,adaptive_changed_field_counts=dict(diff),new_recorded_selections=24,selected_Over=12,selected_Under=12,unique_contracts=24,all_decisions_before_kickoff=True,adaptive_selected_row_canonical_and_SHA_proofs=21,classic_identity_line_point_raw_token_proofs=3,all24_selected_adj_raw_tokens_match_sources=True,unchanged_overlapping_contracts=11,new_only_contracts=13,old_only_contracts=13,forecast_or_outcome_numeric_values_decoded=False,board_values_decoded=False,new_model_fits=0,new_model_inference=0,new_scientific_scores=0,new_capture_by_V2=0,limits=['Saved response/hash and exact metadata verification; no new HTTP acquisition or independent assertion of current live bytes beyond retained readback clocks.','Classic source timestamps remain unverified; quote executability, book settlement, prices/EV/ROI and probability calibration remain unestablished.','OwnerP2_SELECTED is a point-selection label, not the research probability P2 rule. Ranking uses fixed category-unit scales,12per side; no cross-category value/probability justification inferred.','New classic is a partial-week Saturday owner packet. Adaptive first_prepared changes do not reissue Oct28models. Repeated11contracts are not new independent NFL observations.','Earlier unexpected unfiltered commit-diff exposure is retained; no zero-exposure or fresh-holdout claim. Owner notice delivery does not establish acknowledgement or cause of the earlier publication.'])
+    with(HERE/'INDEPENDENT_RUNTIME_REVIEW.json').open('x')as f:json.dump(out,f,indent=2);f.write('\n')
+    print(json.dumps({k:out[k]for k in('state','classic_rows','adaptive_rows','new_recorded_selections','all24_selected_adj_raw_tokens_match_sources')}))
+if __name__=='__main__':main()

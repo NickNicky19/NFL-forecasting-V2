@@ -1,0 +1,144 @@
+{
+  "id": "B_M2_EVALUATION_AND_SELECTION_PROTOCOL_v1",
+  "state": "FROZEN_BEFORE_NEW_M2_COMPARATIVE_SCORES",
+  "at_UTC": "2026-11-15T04:51:44.135448+00:00",
+  "owner": "B",
+  "coordinator": "C",
+  "primary_targets": [
+    "pass_cmp",
+    "pass_att"
+  ],
+  "primary_window": {
+    "season": 2026,
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "native_actual_offer_weeks": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "actual_line_status": "PARTIAL: newM2W1-W4ownerAprivatejoinnotyetexecuted; existingA84olderproceduregradescannotfillnewM2cells"
+  },
+  "population": "Declaredexisting142CMP+142ATTnativefullgameQBoffered-playerdiagnosticmasks, allhalfpoints; broad315stat-rowquerynumericpanelreportedseparately. Neither source universe is authenticatedhistoricalpregameroster.",
+  "source_policy": "Outcome-independent unchanged native source precedence; DK141+Sleeper1 percategory withdifferentSleeperweeks(CMP8,ATT6); quoteclockUNKNOWN/main-altUNCLASSIFIED preserved. TierBcurrent-vintagechronologicalreconstruction, no venueororiginalissuance claim.",
+  "new_CMP_methods": [
+    "M2_P2_BIN",
+    "M2_P2_BB",
+    "M2_C1_BIN",
+    "M2_C1_BB",
+    "M2_C2_BIN",
+    "M2_C2_BB",
+    "D_M2"
+  ],
+  "component_contrasts": [
+    "P2_BB minus P2_BIN: sameinput/mean attemptlaw, changedconversiondispersion",
+    "C1_BB minus C1_BIN",
+    "C2_BB minus C2_BIN",
+    "C2 minus C1 withinBIN orBB: chartvaluesbeyondsupport",
+    "P2 versus C1 changes support/features; not isolated chartvalue",
+    "D_M2 sameinformation direct law versus structured P2: architecture contrast; no jointconstraint silently imposedondirectcontrol"
+  ],
+  "unchanged_ATT": "RegisteredCOMMON_EXPOSURE; evaluatecompletepipelineasunchangedATTcontrol, notanewopportunityimprovement.",
+  "strong_retained_controls": [
+    "B0 strongestretainedcompleteconditionalmean/law",
+    "B2FTN laws and points withclosednegativefinding",
+    "E3/F2/P1 retainednativeproducts",
+    "C02 whole-boardandknowntime scopes separatelylinked",
+    "SAVED_ADJUSTED/SAVED_RAW pointreferences notexactoriginalsiteincumbent",
+    "bothconstantdirections",
+    "EARLIER_LINE_PREVALENCE",
+    "C E0_ENV mean/median typedpointonly"
+  ],
+  "prediction_outputs": "Newlawmean,lowerdiscretemedianandexactlawdirection aredifferentproducts. Point-onlycontrolshavenoprobability/EV/calibration. ParentBINaliasesnotcountedasindependentmodel families.",
+  "side_rule": "MEAN/MEDIAN: strictpoint>lineOVER,<lineUNDER,equalityABSTAIN. LAW: argmaxexactpOver,pUnder; tieABSTAIN. Pushmassretained; nativehalfpointshave0push.",
+  "full_board": "Keepall142eligibleopportunitiespercategoryperprocedure. Unavailableforecastsaretechnicalunavailable, notpolicyabstention. Unknownlabelsnot0. Newmissingnessnevercontractscompetitorsboard. Learned/fallbackandcommondistinctmasksretained.",
+  "fixed_coverage": {
+    "nominal": [
+      1,
+      0.5,
+      0.25,
+      0.1
+    ],
+    "ranking": "For eachcategory/method/week, visitknownkickoffbatcheschronologically. Eligible_seen includesalldeclaredopportunitiesuptobatch. capacity=floor(q*eligible_seen)-previousselected; rankcurrentavailablepositive-sidedbatchonlybyownrawselectedsidemassdescending, ties(game_id,player_id,target). Retainunusedslotsuntilnextbatch; no futurebatchpredictions.",
+    "integer_rule": "Exact rational arithmetic1/1,1/2,1/4,1/10; resetweekly. Achievedcoverage/picksreported; nominal10%mayunderfillduetoweeklyfloor.",
+    "public_use": "Comparisonpolicyonly, noforcedpublicrecommendations orconfidenceclaim."
+  },
+  "Top_K": {
+    "K": [
+      6,
+      10,
+      20
+    ],
+    "pools": [
+      "Combined",
+      "OVER",
+      "UNDER"
+    ],
+    "schedule": "Reuseexistingregisteredchronologicalkickoffbatcheswithremainingweeklyslotsandcanonicalties. No globalweeklysortusinglaterinformation."
+  },
+  "thresholds": {
+    "values": [
+      0.75,
+      0.8,
+      0.9
+    ],
+    "modes": [
+      "RAW_SELECTED_SIDE_MASS",
+      "EARLIER_OFFER_CALIBRATED_SELECTED_SIDE_RELIABILITY"
+    ],
+    "direction": "Freeze sidefromrawlaw; calibrationdoesnotinvertorreplaceit.",
+    "calibration": {
+      "method": "Fixed0.1rawselectedconfidencebins; sameprocedure/category earlierqualifiedactual-offeroutcomes only, posteriorreliability=(correct_in_bin+20*query_rawconfidence)/(n_in_bin+20).",
+      "prior_strength": 20,
+      "cutoff": "Weeklyfit-originfromfullQBqueryschedule, notoffered-onlyminimum. Admitoldofferlabelonlyifitsgamekickoff+7days STRICTLY LESS origin. Earlier2026only, no synthetic2025thresholds.",
+      "startup": "Identityifbinhasnoearlierqualifiedlabels; explicitlycountsW5-W6startupnotnewcalibrationevidence.",
+      "typing": "SeparateexactlineBernoullireliability/calibrationview; rawcountCDF,jointlawandnumericalpointsremainunchanged. Onnativehalfpoints pcalOver=q ifrawsideOVER else1-q, so binaryeventscorevalid. No claimofcalibratedcountCDF.",
+      "rank": "Fixedcoverage/TopKrawrankingonly; rawandcalibratedthresholdsseparatefrozenpolicies.",
+      "no_tuning": "Noextraoffset/temperature/correctnessgate/thresholdsearch; thisfixedpolicydoesnotreopenclosedconfidence-repairrecipe."
+    }
+  },
+  "selective_methods": "All7newCMPproducts plusstrongretainedB0law; existingothercontrolselectiveviewslinkedratherthannewchampionship. ATTunchangedmethodandvalidretainedlawsreportedwithsamefixedpolicieswherewithinpackage.",
+  "comparisons": "Own-listrecords and same-selected-casecontrolrecordsseparate. Pairedsame-selectedcase controlusesitsownbroadsideonidenticalcandidate-selectedkeys; notintersectionofeachpolicyownlist. Reportmissingcontrol/abstainedcases. Do notcompareunpairedownlistpercentagesaspairedgain.",
+  "metrics": [
+    "OwnOver/Under/CombinedW-L/decided/rate",
+    "eligible/available/selected/unknown/abstained/unavailable",
+    "uniquegames/playergames/players",
+    "weeklyselectedcountsandzero-selectionweeks",
+    "learned/fallbackfraction",
+    "broad315numericandmatchedofferedMAE/MSE/bias/tails separately",
+    "rawexacteventBrierandlogloss",
+    "calibratedsideBernoulliBrier/logloss separatelytyped",
+    "fixedreliabilitybins",
+    "pairedlossdeltas/disagreementcounts",
+    "progress50/100/200uniquedecidedselectionspercategory"
+  ],
+  "uncertainty": "Existingpaired_losses policy: wholeweek500replicates seed1703 only>=8weekclusters; otherwiseflaginsufficient. >=8gameclustersgame-normal95sensitivity; exposure/multipleprocedurethresholdcomparisonlimitsalwaysshown. NoIIDguarantee/90claim.",
+  "target_judgment": "MODEL_CONFIDENCE,OBSERVED_HIT_RATE,SUPPORTED_ACCURACY_CLAIM separate. Zero picksN/A. Highobservedsubsetremainslimited; TARGET_NOT_ESTABLISHED unlessstatedqualifiedsupportexists.",
+  "retention": "Only publicsafeaggregates/commitments; no newprivatecopiesofrestrictedoffer/grade rows. In-memory source+predictionjoins reproduciblewithCLIbindings. TrustedJSON/modulebindingsonly; no unsafeobjects.",
+  "resources": {
+    "HTTP_reads_allocated": 12,
+    "HTTP_reads_used_before_protocol": 1,
+    "source_bytes_so_far": 28748,
+    "new_fits": 0,
+    "CPU_seconds": 600,
+    "wall_seconds": 900,
+    "public_bytes": 8388608
+  },
+  "C_code_bindings": {
+    "adapter": "reports/w1w9-comparison-closure-01/B/common-intake/COMMON_SCORER_PARITY_ADAPTER_V1.py",
+    "scorer_sha256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce",
+    "interval_sha256": "92260304be31b0fbee42faa3ab78616f77c3791bd2613edb9d322f9bbf29aa2a"
+  },
+  "code_freeze": "Executionbindscode/model/predictionhashesoncerootM2moduleisfinalandbeforecomparativescore; protocolstatisticalchoicesunchanged."
+}

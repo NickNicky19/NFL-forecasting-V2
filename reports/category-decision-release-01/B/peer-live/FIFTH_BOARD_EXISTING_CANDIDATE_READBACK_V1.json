@@ -1,0 +1,105 @@
+{
+  "id": "B-W4-EXISTING-CANDIDATE-READBACK-v1",
+  "records": [
+    {
+      "repository": "NickNicky19/nicks-expert-nfl-picks",
+      "ref": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+      "path": "output/data/weeks/2026_w04.json",
+      "sha256": "d887bd954022e332a8c2a58360149ef8a219ede6c67d042cffa200caea7d5dfc",
+      "bytes": 106929,
+      "observed_UTC": "2026-11-12T01:34:54.348663+00:00",
+      "top_level": {
+        "season": 2026,
+        "week": 4,
+        "games": 16,
+        "players": 469
+      },
+      "nested_shape": {
+        "players": {
+          "count": 469,
+          "first_item_keys": [
+            "id",
+            "name",
+            "pos",
+            "team",
+            "opp",
+            "home",
+            "game_id",
+            "st"
+          ]
+        },
+        "games": {
+          "count": 16,
+          "first_item_keys": [
+            "id",
+            "kickoff",
+            "state",
+            "detail",
+            "home",
+            "away",
+            "home_score",
+            "away_score",
+            "venue",
+            "tv",
+            "odds"
+          ]
+        }
+      }
+    },
+    {
+      "repository": "NickNicky19/nicks-expert-nfl-picks",
+      "ref": "ccfaa987f5416ca6abce2570f9fee8c4c41c1d3e",
+      "path": "output/data/archive/2026_w04.json",
+      "sha256": "05029ddae8aa7da3ce05a640c6fd96ee6eab7fd008ceed08487818ac70e67802",
+      "bytes": 359711,
+      "observed_UTC": "2026-11-12T01:34:54.787113+00:00",
+      "top_level": {
+        "season": 2026,
+        "week": 4,
+        "saved_at": "2026-10-06T03:34:03Z",
+        "picks": [
+          "over",
+          "under"
+        ],
+        "games": 16,
+        "players": 539
+      },
+      "nested_shape": {
+        "players": {
+          "count": 539,
+          "first_item_keys": [
+            "id",
+            "name",
+            "pos",
+            "team",
+            "opp",
+            "game_id",
+            "proj_ppr",
+            "matchup",
+            "late",
+            "props"
+          ]
+        },
+        "games": {
+          "count": 16,
+          "first_item_keys": [
+            "id",
+            "home",
+            "away",
+            "kickoff",
+            "odds",
+            "ours",
+            "ours_late"
+          ]
+        },
+        "picks": {
+          "over": 7,
+          "under": 5
+        }
+      }
+    }
+  ],
+  "scope": "Existingtwo uniqueGitblobcandidatesonly;no selectorreplay/grade orqualificationclaim",
+  "no_new_fits": true,
+  "no_full_rows_published": true
+}

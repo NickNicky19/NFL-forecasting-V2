@@ -1,0 +1,71 @@
+{
+  "state": "PASS_ALL_SAVED_ROW_HISTORY_CONTRASTS_AND_INDEPENDENT_BLOCK_UNCERTAINTY",
+  "season": 2025,
+  "score_views": 1512,
+  "source_history_sha256": "c909e158f121134c5587d2d64a5412c9679c4af8185b1942b27c23bb50de43c1",
+  "source_prediction_sha256": "fcc0f566a624c29d73424e3bbef0f78537a90b2e6761dd9e95bfb31d3bdf9d96",
+  "checks": {
+    "exact_query_label_position_policy_pairs": 1034592,
+    "independent_week_sums_and_counts": 45780,
+    "independent_500_draw_wholeweek_intervals": 1368,
+    "independent_game_influence_SEs": 1368,
+    "finite_history_contrasts": 1368,
+    "explicit_nonfinite_contrasts": 144
+  },
+  "representative_observed_win_loss": [
+    {
+      "direction": "win",
+      "target": "pass_att",
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "product_id": "absolute_error_point",
+      "contrast": "H-MULTI_MINUS_H-CURRENT",
+      "n": 664,
+      "candidate_error": 8.745243295741309,
+      "comparator_error": 10.359248205253316,
+      "delta": -1.6140049095120066,
+      "week_interval": [
+        -4.28614558800782,
+        -0.16686254552043783
+      ]
+    },
+    {
+      "direction": "loss",
+      "target": "pass_att",
+      "procedure_id": "hgb-direct-history-controls-v1:absolute_error_point",
+      "product_id": "absolute_error_point",
+      "contrast": "STRICT_MINUS_COMMON_CURRENT",
+      "n": 664,
+      "candidate_error": 10.54817692890582,
+      "comparator_error": 10.359248205253316,
+      "delta": 0.18892872365250332,
+      "week_interval": [
+        -0.08615191024329122,
+        0.4925036298037303
+      ]
+    },
+    {
+      "direction": "tie",
+      "target": "pass_int",
+      "procedure_id": "v2-distribution-controls-reconstruction-v2:regularized_glm_law",
+      "product_id": "lower_median",
+      "contrast": "H-MULTI_MINUS_H-CURRENT",
+      "n": 664,
+      "candidate_error": 0.5692771084337349,
+      "comparator_error": 0.5692771084337349,
+      "delta": 0.0,
+      "week_interval": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "interpretation": "Samegamepairedcurrent-vintagehistorycomparisonswithfallbacks; strictchangesfullinformationpolicy. Nominalwholeweekintervalsnotmultiplicityadjusted, notfreshconfirmation; seasonbalancedaveragescannotanswerfixed2026historyquestion.",
+  "resource": {
+    "wall_seconds": 58.22603076999985,
+    "cpu_seconds": 57.968219577,
+    "peak_rss_bytes": 550645760
+  },
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

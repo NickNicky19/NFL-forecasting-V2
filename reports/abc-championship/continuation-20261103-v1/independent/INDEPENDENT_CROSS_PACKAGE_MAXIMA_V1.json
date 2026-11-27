@@ -1,0 +1,274 @@
+{
+  "state": "VERIFIED_FROM_INDEPENDENTLY_RECONSTRUCTED_V2_AND_V3",
+  "score_bindings": [
+    {
+      "path": "reports/abc-championship/continuation-20261103-v2/SCORES.json",
+      "sha256": "3518cb350acfbc2a1e27bafe2bc55657cae1f670bcd246140d14c2378af6f6b5"
+    },
+    {
+      "path": "reports/abc-championship/continuation-20261103-v3/SCORES.json",
+      "sha256": "5b632066461e3ccc3e74b74d731caf6ad6d938919cf98be79ac763ff27861e26"
+    }
+  ],
+  "categories": [
+    {
+      "target": "pass_yd",
+      "scope": "B_OWNER_LOCAL_PINNED_C_W2_W3;NOT_C_ADMITTED",
+      "maxima": {
+        "over": [
+          {
+            "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-RECENT-COMMON::lower_median",
+            "wins": 1,
+            "losses": 0,
+            "decided": 1,
+            "rate": 1.0,
+            "selected": 1,
+            "eligible": 64,
+            "fallback_issued_fullsystem": 0
+          }
+        ],
+        "under": [
+          {
+            "procedure_id": "B::empirical-player-history-control-v1::H-MULTI-EMPIRICAL::empirical_mean",
+            "wins": 15,
+            "losses": 18,
+            "decided": 33,
+            "rate": 0.45454545454545453,
+            "selected": 33,
+            "eligible": 64,
+            "fallback_issued_fullsystem": 0
+          }
+        ],
+        "Combined": [
+          {
+            "procedure_id": "B::empirical-player-history-control-v1::H-MULTI-EMPIRICAL::empirical_mean",
+            "wins": 35,
+            "losses": 28,
+            "decided": 63,
+            "rate": 0.5555555555555556,
+            "selected": 63,
+            "eligible": 64,
+            "fallback_issued_fullsystem": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "rush_yd",
+      "scope": "B_OWNER_LOCAL_PINNED_C_W2_W3;NOT_C_ADMITTED",
+      "maxima": {
+        "over": [
+          {
+            "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+            "wins": 30,
+            "losses": 26,
+            "decided": 56,
+            "rate": 0.5357142857142857,
+            "selected": 56,
+            "eligible": 181,
+            "fallback_issued_fullsystem": 90
+          },
+          {
+            "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+            "wins": 30,
+            "losses": 26,
+            "decided": 56,
+            "rate": 0.5357142857142857,
+            "selected": 56,
+            "eligible": 181,
+            "fallback_issued_fullsystem": 90
+          },
+          {
+            "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+            "wins": 30,
+            "losses": 26,
+            "decided": 56,
+            "rate": 0.5357142857142857,
+            "selected": 56,
+            "eligible": 181,
+            "fallback_issued_fullsystem": 90
+          },
+          {
+            "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+            "wins": 30,
+            "losses": 26,
+            "decided": 56,
+            "rate": 0.5357142857142857,
+            "selected": 56,
+            "eligible": 181,
+            "fallback_issued_fullsystem": 90
+          }
+        ],
+        "under": [
+          {
+            "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+            "wins": 70,
+            "losses": 48,
+            "decided": 118,
+            "rate": 0.5932203389830508,
+            "selected": 118,
+            "eligible": 181,
+            "fallback_issued_fullsystem": 90
+          },
+          {
+            "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+            "wins": 70,
+            "losses": 48,
+            "decided": 118,
+            "rate": 0.5932203389830508,
+            "selected": 118,
+            "eligible": 181,
+            "fallback_issued_fullsystem": 90
+          },
+          {
+            "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+            "wins": 70,
+            "losses": 48,
+            "decided": 118,
+            "rate": 0.5932203389830508,
+            "selected": 118,
+            "eligible": 181,
+            "fallback_issued_fullsystem": 90
+          },
+          {
+            "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+            "wins": 70,
+            "losses": 48,
+            "decided": 118,
+            "rate": 0.5932203389830508,
+            "selected": 118,
+            "eligible": 181,
+            "fallback_issued_fullsystem": 90
+          }
+        ],
+        "Combined": [
+          {
+            "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+            "wins": 100,
+            "losses": 74,
+            "decided": 174,
+            "rate": 0.5747126436781609,
+            "selected": 174,
+            "eligible": 181,
+            "fallback_issued_fullsystem": 90
+          },
+          {
+            "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+            "wins": 100,
+            "losses": 74,
+            "decided": 174,
+            "rate": 0.5747126436781609,
+            "selected": 174,
+            "eligible": 181,
+            "fallback_issued_fullsystem": 90
+          },
+          {
+            "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+            "wins": 100,
+            "losses": 74,
+            "decided": 174,
+            "rate": 0.5747126436781609,
+            "selected": 174,
+            "eligible": 181,
+            "fallback_issued_fullsystem": 90
+          },
+          {
+            "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+            "wins": 100,
+            "losses": 74,
+            "decided": 174,
+            "rate": 0.5747126436781609,
+            "selected": 174,
+            "eligible": 181,
+            "fallback_issued_fullsystem": 90
+          }
+        ]
+      }
+    },
+    {
+      "target": "rec",
+      "scope": "B_OWNER_LOCAL_PINNED_C_W2_W3;NOT_C_ADMITTED",
+      "maxima": {
+        "over": [
+          {
+            "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::lower_median",
+            "wins": 33,
+            "losses": 20,
+            "decided": 53,
+            "rate": 0.6226415094339622,
+            "selected": 54,
+            "eligible": 362,
+            "fallback_issued_fullsystem": 163
+          }
+        ],
+        "under": [
+          {
+            "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1:common-feature-memory::H-CURRENT-COMMON::mean",
+            "wins": 121,
+            "losses": 84,
+            "decided": 205,
+            "rate": 0.5902439024390244,
+            "selected": 205,
+            "eligible": 362,
+            "fallback_issued_fullsystem": 163
+          }
+        ],
+        "Combined": [
+          {
+            "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::lower_median",
+            "wins": 194,
+            "losses": 143,
+            "decided": 337,
+            "rate": 0.5756676557863502,
+            "selected": 340,
+            "eligible": 362,
+            "fallback_issued_fullsystem": 163
+          }
+        ]
+      }
+    },
+    {
+      "target": "rec_yd",
+      "scope": "B_OWNER_LOCAL_PINNED_C_W2_W3;NOT_C_ADMITTED",
+      "maxima": {
+        "over": [
+          {
+            "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::lower_median",
+            "wins": 35,
+            "losses": 22,
+            "decided": 57,
+            "rate": 0.6140350877192983,
+            "selected": 59,
+            "eligible": 361,
+            "fallback_issued_fullsystem": 162
+          }
+        ],
+        "under": [
+          {
+            "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-CURRENT-COMMON::mean",
+            "wins": 131,
+            "losses": 109,
+            "decided": 240,
+            "rate": 0.5458333333333333,
+            "selected": 241,
+            "eligible": 361,
+            "fallback_issued_fullsystem": 162
+          }
+        ],
+        "Combined": [
+          {
+            "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-CURRENT-COMMON::mean",
+            "wins": 188,
+            "losses": 149,
+            "decided": 337,
+            "rate": 0.5578635014836796,
+            "selected": 340,
+            "eligible": 361,
+            "fallback_issued_fullsystem": 162
+          }
+        ]
+      }
+    }
+  ],
+  "limits": "Own-pool rawmaxima; includes ties/tiny/fallback-only outcomes; not a routing policy or release recommendation; no additional NFL observations."
+}

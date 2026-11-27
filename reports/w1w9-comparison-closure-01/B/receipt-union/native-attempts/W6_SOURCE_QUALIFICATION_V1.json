@@ -1,0 +1,31 @@
+{
+  "id": "B_NATIVE_ATT_W6_SOURCE_QUALIFICATION_RECEIPT_v1",
+  "at_UTC": "2026-11-14T19:42:15.661116+00:00",
+  "source_head": "5bffd5c332b8cf8fa625089047013b4da2176377",
+  "verifier": "Root source owner supplied pinned-code qualification; B independently binds retrieved cached bytes here.",
+  "fields": [
+    {
+      "path": "pull/build.py",
+      "url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/blob/5bffd5c332b8cf8fa625089047013b4da2176377/pull/build.py",
+      "sha256": "6602fffb659ce1a5a1d5b26a9c08173671d8e6bdfc84373a030f99377ba9ab25"
+    },
+    {
+      "path": "pull/books.py",
+      "url": "https://github.com/NickNicky19/nicks-expert-nfl-picks/blob/5bffd5c332b8cf8fa625089047013b4da2176377/pull/books.py",
+      "sha256": "4e1e914c4b95c589d3490f3171df50182486c863df38676c6ef957fed7aff231"
+    }
+  ],
+  "source_contract": "DK-first close line; else Sleeper Picks market. Provider projection uses a separate field. Sleeper collection filters NFL/player, normal line type, pre_game status.",
+  "qualification": "SOURCE_LABELLED_ACTUAL_MARKET_THRESHOLD_TIMING_UNVERIFIED_DIAGNOSTIC",
+  "native_ATT_source_counts": {
+    "dk": 141,
+    "sleeper": 1
+  },
+  "sleeper_week": 6,
+  "limitations": [
+    "Nested raw market object not retained; original per-offer market flags not independently authenticated.",
+    "Observation clock and normal/main/alternate status remain unverified.",
+    "No original issuance, independently issued bookmaker strategy or venue settlement claim."
+  ],
+  "new_HTTP_in_this_subtask": 0
+}

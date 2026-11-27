@@ -1,0 +1,16 @@
+{
+  "state": "CREDITED_ATTEMPT_CONTRACT_CORRECTION_BEFORE_MODEL_FITS",
+  "old_source": "EXECUTED_SOURCE_FILTER_V1.py",
+  "old_sha256": "ae8fce2922e4a9ea0eb4bb2745726c28306d8a16676be8faa638acd074a06e63",
+  "old_derived_directory": "reports/player-context-matchup-01/B/source-fields-v1",
+  "affected_QB_games": 1,
+  "season": 2025,
+  "week": 2,
+  "old_attempts": 32,
+  "official_attempts": 33,
+  "completions": 18,
+  "reason": "One credited non-sack/two-point-excluded attempt has play_type=no_play. Dropping it by play_type disagrees with official stats. Preserve stat-credited attempt and flag no_play, rather than blanket-drop credited statistics.",
+  "prediction_or_score_changes": 0,
+  "new_fits_before_correction": 0,
+  "original_broad_models_affected": "NOT_ESTABLISHED;this is a new source-preparation staging path, not existing NFL score contamination."
+}

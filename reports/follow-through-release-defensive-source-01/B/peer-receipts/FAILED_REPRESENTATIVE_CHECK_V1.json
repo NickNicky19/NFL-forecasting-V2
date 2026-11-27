@@ -1,0 +1,11 @@
+{
+  "id": "B-REPRESENTATIVE-CHECK-NULL-CONTRACT-ATTEMPT-v1",
+  "recorded_UTC": "2026-11-12T04:22:03.122286+00:00",
+  "state": "FAILED_BEFORE_RECEIPT_WRITE",
+  "code_sha256": "23d2595fc3e2f2e54f1933b622b399ce1c1b096db782aa915dfe5c993ad8ab22",
+  "reason": "Reviewer wrapper assumed wins/losses integer even in declared empty W6\u2013W8 period. Actual source retains decided0, wins/losses/rate null. Source nulls are correct and must not be filled as observedzeros.",
+  "new_fits": 0,
+  "new_grades": 0,
+  "scientific_result_changed": false,
+  "correction": "V2 reviewer explicitly verifies empty/null state separately; retains original failed wrapper and no source mutation."
+}

@@ -1,0 +1,45 @@
+{
+  "state": "PASS_LOCAL_CHECKS_AND_INDEPENDENT_REVIEW",
+  "recorded_at_utc": "2026-10-31T02:56:51.344503+00:00",
+  "checks": [
+    {
+      "name": "unit_suite_388",
+      "log_sha256": "c3c044b3959ba910c3874119da88e5489a315422b252817e8233ad45ff23858d",
+      "result": "n_distinct (test_strict_hgb_future.StrictFutureResourceFixtures.test_resource_exception_distinct) ... ok\ntest_blocked_id_and_position (test_strict_hgb_future.StrictFutureTests.test_blocked_id_and_position) ... ok\ntest_finite_twenty_one_objectives (test_strict_hgb_future.StrictFutureTests.test_finite_twenty_one_objectives) ... ok\ntest_strict_history_discards_older_nfl_outcomes (test_strict_hgb_future.StrictFutureTests.test_strict_history_discards_older_nfl_outcomes) ... ok\ntest_selection_uses_capture_and_deadline_without_outcome (test_website_reference.WebsiteReferenceTests.test_selection_uses_capture_and_deadline_without_outcome) ... ok\ntest_wrong_week_and_duplicate_capture_are_rejected (test_website_reference.WebsiteReferenceTests.test_wrong_week_and_duplicate_capture_are_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 388 tests in 2.565s\n\nOK"
+    },
+    {
+      "name": "public_checkpoint",
+      "log_sha256": "c3768fa0ec1993d8a4b93e769c5ef76ab3852edafd84b57e0ee8eb4cfd216f6f",
+      "result": "{\"status\": \"PASS\", \"JSON_files_parsed\": 30123, \"grid_cells\": 5408, \"request_index_items\": 96, \"reported_cells\": 4832, \"reproduced_primary_all_role_views\": 66, \"initial_checkpoint_new_fits\": 0, \"scope\": \"initial-checkpoint artifact/schema/privacy-marker checks; continuation fits are recorded in their separate run receipts; not independent NFLtruth\"}"
+    },
+    {
+      "name": "prop_side_probability_guard",
+      "log_sha256": "fb2002083ccaf640a5931411a6264c6d813e9f280f590dc27a0ebd71f8dec09b",
+      "result": "{\"NFL_outcome_rows_read\": 0, \"groups\": 92107, \"new_grades\": 0, \"proper_views\": 1142, \"selection_views\": 276321, \"source_arrays\": 75, \"state\": \"PASS_PROP_SCOREBOARD_COMPLETION_COVERAGE\"}"
+    },
+    {
+      "name": "index_and_csv_guard",
+      "log_sha256": "75427d6486681a1dadedc354201c7bc9b542ccbc68b647db8d9296a5975d2cc7",
+      "result": "{\"status\": \"PASS\", \"indexed_records\": 438393, \"registered_artifacts\": 136, \"scope\": \"streamed coverage/hashes; not additional NFL evidence\"}"
+    },
+    {
+      "name": "canonical_and_comparison_guard",
+      "log_sha256": "e1cfb126696e7019b66116c370be476da546f16731d3392d3db6fe3ba56e556b",
+      "result": "{\"state\": \"PASS\", \"canonical_evaluation_views\": 124630, \"derived_comparison_views\": 18708, \"status_counts\": {\"PAIRED_LOSS_SCORED\": 17658, \"NO_SUPPORTED_PAIRED_ROWS\": 1050}, \"new_NFL_observations\": 0}"
+    }
+  ],
+  "index_records": 438393,
+  "new_evaluation_views": 279305,
+  "new_software_receipts": 1,
+  "prior_records_preserved": 159087,
+  "prior_json_shards_unchanged": 101,
+  "prior_csv_parts_unchanged": 17,
+  "unit_tests": 388,
+  "new_fits": 0,
+  "new_model_predict_or_apply_calls": 0,
+  "new_issued_forecasts": 0,
+  "new_recurring_jobs": 0,
+  "production_changed": false,
+  "CI_state": "NOT_YET_RUN_ON_THIS_UNPUSHED_HEAD",
+  "scope": "Local validation and independently reproduced aggregates/source mathematics. CI/push status follows separately. Software checks add no NFLsamples."
+}

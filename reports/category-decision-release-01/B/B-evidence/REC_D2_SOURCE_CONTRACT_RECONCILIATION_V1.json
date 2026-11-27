@@ -1,0 +1,291 @@
+{
+  "id": "B-REC-D2-CROSS-PANEL-CONTRACT-RECONCILIATION-v1",
+  "created_UTC": "2026-11-12T01:46:00.064312+00:00",
+  "exact_contender": {
+    "base": "v2-qualified-position-defense-information-wave-v1:D2",
+    "history": "H-CURRENT fitting with common older-feature-memory",
+    "output": "lower_median",
+    "rule": "P1 original unrounded point compared strictly with exact line",
+    "role": "RB/WR/TE receiving population"
+  },
+  "identity_correction": "198/330 is D2 H-MULTI mean; it is NOT H-CURRENT lower median. The latter is188/330 on W5-7, versus194/337 on C W2-3.",
+  "panels": [
+    {
+      "weeks": [
+        5,
+        6,
+        7
+      ],
+      "procedure": "v2-qualified-position-defense-information-wave-v1:D2:known-target-time-v1",
+      "history": "H-CURRENT",
+      "product": "lower_median",
+      "sides": [
+        {
+          "side": "Combined",
+          "wins": 188,
+          "losses": 142,
+          "decided": 330,
+          "record_id": "H3-P1-a204b2b59b967a0df299a0e7"
+        },
+        {
+          "side": "over",
+          "wins": 64,
+          "losses": 43,
+          "decided": 107,
+          "record_id": "H3-P1-efc923f2aad1ee6f4341be45"
+        },
+        {
+          "side": "under",
+          "wins": 124,
+          "losses": 99,
+          "decided": 223,
+          "record_id": "H3-P1-4ec73bd23876656ee4522f4b"
+        }
+      ],
+      "eligible": 511,
+      "selected_decided": 330,
+      "unavailable": 181,
+      "horizon": "PER_GAME_SERVER_SOURCE_CLOCK_T90_QUALIFIED_KNOWN_TARGET_TIME",
+      "source": "reports/baselines-coverage-20261031h/probability/w5-w7-cumulative-v1/SCORES.json",
+      "tier": "Original website server-source artifacts before T90; sportsbook quote vintage and venue settlement unverified. Model output is retrospective current-vintage reconstruction."
+    },
+    {
+      "weeks": [
+        2,
+        3
+      ],
+      "procedure": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::lower_median",
+      "wins": 194,
+      "losses": 143,
+      "decided": 337,
+      "eligible": 362,
+      "selected": 340,
+      "unavailable": 22,
+      "unknown": 3,
+      "fallback": 163,
+      "horizon": "KICKOFF_LEFT_LIMIT_QUERY_RECONSTRUCTION_AND_UNVERIFIED_LAST_PRECLOSE_OFFER",
+      "tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+      "source": "reports/abc-championship/continuation-20261103-v4/B_OWN_POOL_COMBINED_LEADERS.json",
+      "strongest_matched_control": "C direct194/337, tied"
+    }
+  ],
+  "finding": "DIFFERENT_COMPLETE_ADMISSION_AND_FEATURE_TIME_CONTRACT; NOT_MERELY_A_SCORE_VIEW_LABEL",
+  "exact_difference": "Known-target-time-v1 admits eligible availability at the actual server decision clock and computes source ages relative to foreknown scheduled kickoff. Saved vectors/laws are reused only if no consumed input arrives between decision and saved query cutoff and training/prior/transformation prefixes qualify. C-board point replay used saved kickoff-left-limit reconstruction without that admission mask. Common learner identity alone does not make availability and fallback scope identical.",
+  "output_parity_scope": "No new private-vector byte parity was executed here. Existing admission code defines sufficient invariance conditions on an admitted subset; it does not attest every C-board row. No automatic five-week union or sum382/667 is made.",
+  "exact_origin_bindings": [
+    {
+      "week": 2,
+      "receipt": {
+        "path": "reports/continuation-20261030c/qualified-defense-information-v1/W02-rec-H-CURRENT-COMMON-D2-FIT.json",
+        "sha256": "1e6c4a6875a33fb8846d78b1bcdef77a43f86cb614889b152f0d6d0a56adf47b",
+        "bytes": 1964
+      },
+      "state": "NO_FIT_INSUFFICIENT_TRAINING",
+      "training_n": 22,
+      "fit_cutoff_utc": "2026-09-18T00:15:00+00:00",
+      "latest_training_label_available": 1789604400.0,
+      "latest_training_consumed_feature_available": 1768180800.0,
+      "feature_columns": [
+        "mean3",
+        "n3",
+        "mean8",
+        "n8",
+        "lag1_value",
+        "lag1_age_days",
+        "lag1_missing",
+        "lag2_value",
+        "lag2_age_days",
+        "lag2_missing",
+        "lag3_value",
+        "lag3_age_days",
+        "lag3_missing",
+        "lag4_value",
+        "lag4_age_days",
+        "lag4_missing",
+        "position_QB",
+        "position_RB",
+        "position_WR",
+        "position_TE",
+        "qualified_allowed_mean4",
+        "complete_target_games4",
+        "qualified_rows4",
+        "known_target_rows4",
+        "shrunk_allowed_per_opportunity4",
+        "allowed_rate_minus_league",
+        "compatible_opportunities4",
+        "complete_rate_games4",
+        "latest_eligible_age_days"
+      ],
+      "model": null,
+      "query_features": {
+        "artifact_id": "DEFENSE-c512e6ca15da98e030df5b29a00d6b531f25b7486ef44bbe73109550b3ca348b",
+        "bundle_name": "query-features/W02-rec-H-CURRENT-COMMON-D2.json.gz",
+        "bytes": 37434,
+        "sha256": "c512e6ca15da98e030df5b29a00d6b531f25b7486ef44bbe73109550b3ca348b"
+      },
+      "training_membership_sha256": "747644193b6697e64f66aa7af180d770f108eee3bee7eb390ada05423c7db4d2",
+      "prior_parameters": {
+        "QB": {
+          "center": 0,
+          "kind": "geometric",
+          "mean": null,
+          "p": 0.5,
+          "q": 0.047619047619047616
+        },
+        "RB": {
+          "center": 0,
+          "kind": "geometric",
+          "mean": null,
+          "p": 0.5,
+          "q": 0.6111111111111112
+        },
+        "TE": {
+          "center": 0,
+          "kind": "geometric",
+          "mean": null,
+          "p": 0.5,
+          "q": 0.6666666666666666
+        },
+        "WR": {
+          "center": 0,
+          "kind": "geometric",
+          "mean": null,
+          "p": 0.5,
+          "q": 0.71875
+        }
+      },
+      "prior_position_sample_counts": {
+        "QB": 3,
+        "RB": 7,
+        "TE": 3,
+        "WR": 9
+      }
+    },
+    {
+      "week": 3,
+      "receipt": {
+        "path": "reports/continuation-20261030c/qualified-defense-information-v1/W03-rec-H-CURRENT-COMMON-D2-FIT.json",
+        "sha256": "8ae38bdc30854b4f1f622286ea7f0aad2d21a6c9fc468d10a9657973f44eb361",
+        "bytes": 2265
+      },
+      "state": "FITTED_RETAINED",
+      "training_n": 353,
+      "fit_cutoff_utc": "2026-09-25T00:15:00+00:00",
+      "latest_training_label_available": 1790036100.0,
+      "latest_training_consumed_feature_available": 1768180800.0,
+      "feature_columns": [
+        "mean3",
+        "n3",
+        "mean8",
+        "n8",
+        "lag1_value",
+        "lag1_age_days",
+        "lag1_missing",
+        "lag2_value",
+        "lag2_age_days",
+        "lag2_missing",
+        "lag3_value",
+        "lag3_age_days",
+        "lag3_missing",
+        "lag4_value",
+        "lag4_age_days",
+        "lag4_missing",
+        "position_QB",
+        "position_RB",
+        "position_WR",
+        "position_TE",
+        "qualified_allowed_mean4",
+        "complete_target_games4",
+        "qualified_rows4",
+        "known_target_rows4",
+        "shrunk_allowed_per_opportunity4",
+        "allowed_rate_minus_league",
+        "compatible_opportunities4",
+        "complete_rate_games4",
+        "latest_eligible_age_days"
+      ],
+      "model": {
+        "artifact_id": "DEFENSE-f58715f4b52f042b56727911484bdc5139f27b5c61ff93a060704baf8a6f7960",
+        "bundle_name": "models/W03-rec-H-CURRENT-COMMON-D2.pickle.gz",
+        "bytes": 18108,
+        "sha256": "f58715f4b52f042b56727911484bdc5139f27b5c61ff93a060704baf8a6f7960"
+      },
+      "query_features": {
+        "artifact_id": "DEFENSE-8ae2a4feb82a3aa3f09dcad66a9020a94081464e6b3fd3751973ef512a4054fe",
+        "bundle_name": "query-features/W03-rec-H-CURRENT-COMMON-D2.json.gz",
+        "bytes": 38099,
+        "sha256": "8ae2a4feb82a3aa3f09dcad66a9020a94081464e6b3fd3751973ef512a4054fe"
+      },
+      "training_membership_sha256": "f1d1f0949d5aed42aa87dc4aa30b37f71f8d5790ace1162fd2b807f53d9dcf2a",
+      "prior_parameters": {
+        "QB": {
+          "center": 0,
+          "kind": "geometric",
+          "mean": null,
+          "p": 0.5,
+          "q": 0.047619047619047616
+        },
+        "RB": {
+          "center": 0,
+          "kind": "geometric",
+          "mean": null,
+          "p": 0.5,
+          "q": 0.6044444444444443
+        },
+        "TE": {
+          "center": 0,
+          "kind": "geometric",
+          "mean": null,
+          "p": 0.5,
+          "q": 0.6778242677824268
+        },
+        "WR": {
+          "center": 0,
+          "kind": "geometric",
+          "mean": null,
+          "p": 0.5,
+          "q": 0.7000000000000001
+        }
+      },
+      "prior_position_sample_counts": {
+        "QB": 37,
+        "RB": 89,
+        "TE": 77,
+        "WR": 150
+      }
+    }
+  ],
+  "retained_predictions": {
+    "bundle_member": "qualified-defense-information-v1/ALL_HISTORICAL_PREDICTIONS.json.gz",
+    "bytes": 18815842,
+    "sha256": "d527286c6711f46add240714759f18551a0decd63c57ea337219c7dd7cde9d17",
+    "public_member_manifest": "reports/abc-championship/continuation-20261103-v1/B_INPUT_MEMBER_BINDINGS.json"
+  },
+  "recovery_scope": "W2 is an explicit same-arm prior/no-fit and needs no model fit. W3 model has exact public18108-byte manifest binding. No safe model load was performed. Extracted model was not located in the checked research-evidence cache; this does not prove the protected archive lacks it and does not inherit the736missing olderD1/D2 cells.",
+  "finite_next_action": {
+    "owner": "B retained-evidence executor; C qualifies its offer source; no competing private-board join",
+    "action": "Inspect approved retained archive member index for this exact W3 model and query-feature binding; qualify C W2-3 decision/source clocks and same known-target-time source-prefix/team-role contract once. Reuse unchanged saved predictions only on proven invariant rows. If inputs differ, perform bounded authenticated-model inference with same priors/feature order; no refit merely to produce a score view.",
+    "missing": "Exact applicable source decision clocks and source-prefix/membership proof for C W2-3. Genuine sportsbook quote clocks may remain unavailable, separately from model availability.",
+    "completion": "One source-bound per-row admission/mask parity receipt plus matched own-side/control scores under a single declared procedure, or exact unqualified cells. Current public diagnostic remains separate if timing contracts cannot be matched."
+  },
+  "code_bindings": [
+    {
+      "path": "tools/audit_earlier_rolling_threshold_admissibility.py",
+      "sha256": "8091d68341086a58ee1c3f25f1ed2ecf24b381e51c52787231044e17fe010d43",
+      "bytes": 16375
+    },
+    {
+      "path": "tools/audit_rolling_saved_threshold_admissibility.py",
+      "sha256": "efdf9016be03fbccae61bdb5c9cfa287af12eadd53317db2ec01a38500e76bf1",
+      "bytes": 16081
+    },
+    {
+      "path": "tools/score_admitted_saved_methods.py",
+      "sha256": "f35e40682a14edf9678abf72243ea43cf762ed016301bdfdf1791ec11f84bddd",
+      "bytes": 20543
+    }
+  ],
+  "new_fits": 0,
+  "new_inference": 0,
+  "new_scores": 0
+}

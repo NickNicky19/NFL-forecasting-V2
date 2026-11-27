@@ -1,0 +1,1606 @@
+{
+  "id": "B-TABICLV2-INDEPENDENT-GRADE-SELECTION-CHECK-v1",
+  "UTC": "2026-11-16T23:27:35.985873+00:00",
+  "state": "PASS",
+  "calculation": "Independent standard-library Decimal38-digit binary-side/grade/proper arithmetic and independent chronological-batch capacity/tie/P80 membership. Author/common graders and selectors were not imported or executed.",
+  "sources": {
+    "native_grade_sha256": "dbdbf73a23fea1d7d8c90fde666163853f492b0e9686ae068b829b2bc2816a39",
+    "predictions_W7_sha256": "e6cc11c3bacc1e4e0526447e674aebdba12ac04e45c9ea4afd96e9f2ac6ba443",
+    "raw_tables_sha256": "fbf0c8a459be45d24ff3125f3c1efa8867b2bf80ed41d311cde00249540fe4b8",
+    "canonical_scores_sha256": "47f7b8aa664fbd486234171ef2837e6943c28a4cda292e48f3a3ef488f296583",
+    "membership_sha256": "26432c4a19a61037721318fa2aa6aae4ea346fb960da4df2016978872ac86f63"
+  },
+  "counts": {
+    "outer_unique_player_games": 142,
+    "common_available": 84,
+    "learned_W7_player_games": 28,
+    "learned_probability_rows_across_new_methods": 56,
+    "fallback_rows_across_new_methods": 112,
+    "unexecuted_W8_W9_per_method": 58,
+    "independent_side_count_records": 129,
+    "independent_probability_records": 32,
+    "raw_tables_matched_canonical": 537,
+    "independent_selected_memberships": 8
+  },
+  "own_side_probability_records": {
+    "TABICLV2": {
+      "FULL_SYSTEM142": {
+        "OVER": {
+          "selected": 19,
+          "wins": 12,
+          "losses": 7,
+          "decided": 19,
+          "rate": 0.631578947368421
+        },
+        "UNDER": {
+          "selected": 65,
+          "wins": 30,
+          "losses": 35,
+          "decided": 65,
+          "rate": 0.46153846153846156
+        },
+        "COMBINED": {
+          "selected": 84,
+          "wins": 42,
+          "losses": 42,
+          "decided": 84,
+          "rate": 0.5
+        },
+        "Brier": 0.26731550905994844,
+        "log_loss": 0.7294250101224657,
+        "probability_events": 84
+      },
+      "FALLBACK_W5_6": {
+        "OVER": {
+          "selected": 9,
+          "wins": 6,
+          "losses": 3,
+          "decided": 9,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "selected": 47,
+          "wins": 21,
+          "losses": 26,
+          "decided": 47,
+          "rate": 0.44680851063829785
+        },
+        "COMBINED": {
+          "selected": 56,
+          "wins": 27,
+          "losses": 29,
+          "decided": 56,
+          "rate": 0.48214285714285715
+        },
+        "Brier": 0.2746154063257409,
+        "log_loss": 0.7437047994573374,
+        "probability_events": 56
+      },
+      "LEARNED_COMMON_W7": {
+        "OVER": {
+          "selected": 10,
+          "wins": 6,
+          "losses": 4,
+          "decided": 10,
+          "rate": 0.6
+        },
+        "UNDER": {
+          "selected": 18,
+          "wins": 9,
+          "losses": 9,
+          "decided": 18,
+          "rate": 0.5
+        },
+        "COMBINED": {
+          "selected": 28,
+          "wins": 15,
+          "losses": 13,
+          "decided": 28,
+          "rate": 0.5357142857142857
+        },
+        "Brier": 0.2527157145283635,
+        "log_loss": 0.7008654314527225,
+        "probability_events": 28
+      },
+      "COMMON_AVAILABLE": {
+        "OVER": {
+          "selected": 19,
+          "wins": 12,
+          "losses": 7,
+          "decided": 19,
+          "rate": 0.631578947368421
+        },
+        "UNDER": {
+          "selected": 65,
+          "wins": 30,
+          "losses": 35,
+          "decided": 65,
+          "rate": 0.46153846153846156
+        },
+        "COMBINED": {
+          "selected": 84,
+          "wins": 42,
+          "losses": 42,
+          "decided": 84,
+          "rate": 0.5
+        },
+        "Brier": 0.26731550905994844,
+        "log_loss": 0.7294250101224657,
+        "probability_events": 84
+      }
+    },
+    "LOGISTIC": {
+      "FULL_SYSTEM142": {
+        "OVER": {
+          "selected": 22,
+          "wins": 14,
+          "losses": 8,
+          "decided": 22,
+          "rate": 0.6363636363636364
+        },
+        "UNDER": {
+          "selected": 62,
+          "wins": 29,
+          "losses": 33,
+          "decided": 62,
+          "rate": 0.46774193548387094
+        },
+        "COMBINED": {
+          "selected": 84,
+          "wins": 43,
+          "losses": 41,
+          "decided": 84,
+          "rate": 0.5119047619047619
+        },
+        "Brier": 0.2813838834030487,
+        "log_loss": 0.7658508225010259,
+        "probability_events": 84
+      },
+      "FALLBACK_W5_6": {
+        "OVER": {
+          "selected": 9,
+          "wins": 6,
+          "losses": 3,
+          "decided": 9,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "selected": 47,
+          "wins": 21,
+          "losses": 26,
+          "decided": 47,
+          "rate": 0.44680851063829785
+        },
+        "COMBINED": {
+          "selected": 56,
+          "wins": 27,
+          "losses": 29,
+          "decided": 56,
+          "rate": 0.48214285714285715
+        },
+        "Brier": 0.2746154063257409,
+        "log_loss": 0.7437047994573374,
+        "probability_events": 56
+      },
+      "LEARNED_COMMON_W7": {
+        "OVER": {
+          "selected": 13,
+          "wins": 8,
+          "losses": 5,
+          "decided": 13,
+          "rate": 0.6153846153846154
+        },
+        "UNDER": {
+          "selected": 15,
+          "wins": 8,
+          "losses": 7,
+          "decided": 15,
+          "rate": 0.5333333333333333
+        },
+        "COMBINED": {
+          "selected": 28,
+          "wins": 16,
+          "losses": 12,
+          "decided": 28,
+          "rate": 0.5714285714285714
+        },
+        "Brier": 0.2949208375576643,
+        "log_loss": 0.8101428685884031,
+        "probability_events": 28
+      },
+      "COMMON_AVAILABLE": {
+        "OVER": {
+          "selected": 22,
+          "wins": 14,
+          "losses": 8,
+          "decided": 22,
+          "rate": 0.6363636363636364
+        },
+        "UNDER": {
+          "selected": 62,
+          "wins": 29,
+          "losses": 33,
+          "decided": 62,
+          "rate": 0.46774193548387094
+        },
+        "COMBINED": {
+          "selected": 84,
+          "wins": 43,
+          "losses": 41,
+          "decided": 84,
+          "rate": 0.5119047619047619
+        },
+        "Brier": 0.2813838834030487,
+        "log_loss": 0.7658508225010259,
+        "probability_events": 84
+      }
+    },
+    "B0_LAW": {
+      "FULL_SYSTEM142": {
+        "OVER": {
+          "selected": 34,
+          "wins": 18,
+          "losses": 16,
+          "decided": 34,
+          "rate": 0.5294117647058824
+        },
+        "UNDER": {
+          "selected": 108,
+          "wins": 55,
+          "losses": 53,
+          "decided": 108,
+          "rate": 0.5092592592592593
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 73,
+          "losses": 69,
+          "decided": 142,
+          "rate": 0.5140845070422535
+        },
+        "Brier": 0.2665452222447479,
+        "log_loss": 0.7289025147190994,
+        "probability_events": 142
+      },
+      "FALLBACK_W5_6": {
+        "OVER": {
+          "selected": 9,
+          "wins": 6,
+          "losses": 3,
+          "decided": 9,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "selected": 47,
+          "wins": 21,
+          "losses": 26,
+          "decided": 47,
+          "rate": 0.44680851063829785
+        },
+        "COMBINED": {
+          "selected": 56,
+          "wins": 27,
+          "losses": 29,
+          "decided": 56,
+          "rate": 0.48214285714285715
+        },
+        "Brier": 0.2746154063257409,
+        "log_loss": 0.7437047994573374,
+        "probability_events": 56
+      },
+      "LEARNED_COMMON_W7": {
+        "OVER": {
+          "selected": 5,
+          "wins": 5,
+          "losses": 0,
+          "decided": 5,
+          "rate": 1.0
+        },
+        "UNDER": {
+          "selected": 23,
+          "wins": 13,
+          "losses": 10,
+          "decided": 23,
+          "rate": 0.5652173913043478
+        },
+        "COMBINED": {
+          "selected": 28,
+          "wins": 18,
+          "losses": 10,
+          "decided": 28,
+          "rate": 0.6428571428571429
+        },
+        "Brier": 0.26257959111116563,
+        "log_loss": 0.723739530148618,
+        "probability_events": 28
+      },
+      "COMMON_AVAILABLE": {
+        "OVER": {
+          "selected": 14,
+          "wins": 11,
+          "losses": 3,
+          "decided": 14,
+          "rate": 0.7857142857142857
+        },
+        "UNDER": {
+          "selected": 70,
+          "wins": 34,
+          "losses": 36,
+          "decided": 70,
+          "rate": 0.4857142857142857
+        },
+        "COMBINED": {
+          "selected": 84,
+          "wins": 45,
+          "losses": 39,
+          "decided": 84,
+          "rate": 0.5357142857142857
+        },
+        "Brier": 0.27060346792088247,
+        "log_loss": 0.7370497096877642,
+        "probability_events": 84
+      }
+    },
+    "B2_LAW": {
+      "FULL_SYSTEM142": {
+        "OVER": {
+          "selected": 34,
+          "wins": 19,
+          "losses": 15,
+          "decided": 34,
+          "rate": 0.5588235294117647
+        },
+        "UNDER": {
+          "selected": 108,
+          "wins": 56,
+          "losses": 52,
+          "decided": 108,
+          "rate": 0.5185185185185185
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 75,
+          "losses": 67,
+          "decided": 142,
+          "rate": 0.528169014084507
+        },
+        "Brier": 0.26918027997713156,
+        "log_loss": 0.7351794287803791,
+        "probability_events": 142
+      },
+      "FALLBACK_W5_6": {
+        "OVER": {
+          "selected": 10,
+          "wins": 7,
+          "losses": 3,
+          "decided": 10,
+          "rate": 0.7
+        },
+        "UNDER": {
+          "selected": 46,
+          "wins": 21,
+          "losses": 25,
+          "decided": 46,
+          "rate": 0.45652173913043476
+        },
+        "COMBINED": {
+          "selected": 56,
+          "wins": 28,
+          "losses": 28,
+          "decided": 56,
+          "rate": 0.5
+        },
+        "Brier": 0.279638555551307,
+        "log_loss": 0.7565866700293863,
+        "probability_events": 56
+      },
+      "LEARNED_COMMON_W7": {
+        "OVER": {
+          "selected": 4,
+          "wins": 4,
+          "losses": 0,
+          "decided": 4,
+          "rate": 1.0
+        },
+        "UNDER": {
+          "selected": 24,
+          "wins": 13,
+          "losses": 11,
+          "decided": 24,
+          "rate": 0.5416666666666666
+        },
+        "COMBINED": {
+          "selected": 28,
+          "wins": 17,
+          "losses": 11,
+          "decided": 28,
+          "rate": 0.6071428571428571
+        },
+        "Brier": 0.2640432812863174,
+        "log_loss": 0.7248581579864295,
+        "probability_events": 28
+      },
+      "COMMON_AVAILABLE": {
+        "OVER": {
+          "selected": 14,
+          "wins": 11,
+          "losses": 3,
+          "decided": 14,
+          "rate": 0.7857142857142857
+        },
+        "UNDER": {
+          "selected": 70,
+          "wins": 34,
+          "losses": 36,
+          "decided": 70,
+          "rate": 0.4857142857142857
+        },
+        "COMBINED": {
+          "selected": 84,
+          "wins": 45,
+          "losses": 39,
+          "decided": 84,
+          "rate": 0.5357142857142857
+        },
+        "Brier": 0.27444013079631047,
+        "log_loss": 0.7460104993484007,
+        "probability_events": 84
+      }
+    },
+    "B0_MEAN": {
+      "FULL_SYSTEM142": {
+        "OVER": {
+          "selected": 21,
+          "wins": 13,
+          "losses": 8,
+          "decided": 21,
+          "rate": 0.6190476190476191
+        },
+        "UNDER": {
+          "selected": 121,
+          "wins": 63,
+          "losses": 58,
+          "decided": 121,
+          "rate": 0.5206611570247934
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 76,
+          "losses": 66,
+          "decided": 142,
+          "rate": 0.5352112676056338
+        }
+      },
+      "FALLBACK_W5_6": {
+        "OVER": {
+          "selected": 6,
+          "wins": 5,
+          "losses": 1,
+          "decided": 6,
+          "rate": 0.8333333333333334
+        },
+        "UNDER": {
+          "selected": 50,
+          "wins": 23,
+          "losses": 27,
+          "decided": 50,
+          "rate": 0.46
+        },
+        "COMBINED": {
+          "selected": 56,
+          "wins": 28,
+          "losses": 28,
+          "decided": 56,
+          "rate": 0.5
+        }
+      },
+      "LEARNED_COMMON_W7": {
+        "OVER": {
+          "selected": 3,
+          "wins": 3,
+          "losses": 0,
+          "decided": 3,
+          "rate": 1.0
+        },
+        "UNDER": {
+          "selected": 25,
+          "wins": 13,
+          "losses": 12,
+          "decided": 25,
+          "rate": 0.52
+        },
+        "COMBINED": {
+          "selected": 28,
+          "wins": 16,
+          "losses": 12,
+          "decided": 28,
+          "rate": 0.5714285714285714
+        }
+      },
+      "COMMON_AVAILABLE": {
+        "OVER": {
+          "selected": 9,
+          "wins": 8,
+          "losses": 1,
+          "decided": 9,
+          "rate": 0.8888888888888888
+        },
+        "UNDER": {
+          "selected": 75,
+          "wins": 36,
+          "losses": 39,
+          "decided": 75,
+          "rate": 0.48
+        },
+        "COMBINED": {
+          "selected": 84,
+          "wins": 44,
+          "losses": 40,
+          "decided": 84,
+          "rate": 0.5238095238095238
+        }
+      }
+    },
+    "SAVED_ADJUSTED": {
+      "FULL_SYSTEM142": {
+        "OVER": {
+          "selected": 55,
+          "wins": 28,
+          "losses": 27,
+          "decided": 55,
+          "rate": 0.509090909090909
+        },
+        "UNDER": {
+          "selected": 87,
+          "wins": 44,
+          "losses": 43,
+          "decided": 87,
+          "rate": 0.5057471264367817
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 72,
+          "losses": 70,
+          "decided": 142,
+          "rate": 0.5070422535211268
+        }
+      },
+      "FALLBACK_W5_6": {
+        "OVER": {
+          "selected": 18,
+          "wins": 12,
+          "losses": 6,
+          "decided": 18,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "selected": 38,
+          "wins": 18,
+          "losses": 20,
+          "decided": 38,
+          "rate": 0.47368421052631576
+        },
+        "COMBINED": {
+          "selected": 56,
+          "wins": 30,
+          "losses": 26,
+          "decided": 56,
+          "rate": 0.5357142857142857
+        }
+      },
+      "LEARNED_COMMON_W7": {
+        "OVER": {
+          "selected": 10,
+          "wins": 7,
+          "losses": 3,
+          "decided": 10,
+          "rate": 0.7
+        },
+        "UNDER": {
+          "selected": 18,
+          "wins": 10,
+          "losses": 8,
+          "decided": 18,
+          "rate": 0.5555555555555556
+        },
+        "COMBINED": {
+          "selected": 28,
+          "wins": 17,
+          "losses": 11,
+          "decided": 28,
+          "rate": 0.6071428571428571
+        }
+      },
+      "COMMON_AVAILABLE": {
+        "OVER": {
+          "selected": 28,
+          "wins": 19,
+          "losses": 9,
+          "decided": 28,
+          "rate": 0.6785714285714286
+        },
+        "UNDER": {
+          "selected": 56,
+          "wins": 28,
+          "losses": 28,
+          "decided": 56,
+          "rate": 0.5
+        },
+        "COMBINED": {
+          "selected": 84,
+          "wins": 47,
+          "losses": 37,
+          "decided": 84,
+          "rate": 0.5595238095238095
+        }
+      }
+    },
+    "ALWAYS_OVER": {
+      "FULL_SYSTEM142": {
+        "OVER": {
+          "selected": 142,
+          "wins": 71,
+          "losses": 71,
+          "decided": 142,
+          "rate": 0.5
+        },
+        "UNDER": {
+          "selected": 0,
+          "wins": null,
+          "losses": null,
+          "decided": 0,
+          "rate": null
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 71,
+          "losses": 71,
+          "decided": 142,
+          "rate": 0.5
+        }
+      },
+      "FALLBACK_W5_6": {
+        "OVER": {
+          "selected": 56,
+          "wins": 32,
+          "losses": 24,
+          "decided": 56,
+          "rate": 0.5714285714285714
+        },
+        "UNDER": {
+          "selected": 0,
+          "wins": null,
+          "losses": null,
+          "decided": 0,
+          "rate": null
+        },
+        "COMBINED": {
+          "selected": 56,
+          "wins": 32,
+          "losses": 24,
+          "decided": 56,
+          "rate": 0.5714285714285714
+        }
+      },
+      "LEARNED_COMMON_W7": {
+        "OVER": {
+          "selected": 28,
+          "wins": 15,
+          "losses": 13,
+          "decided": 28,
+          "rate": 0.5357142857142857
+        },
+        "UNDER": {
+          "selected": 0,
+          "wins": null,
+          "losses": null,
+          "decided": 0,
+          "rate": null
+        },
+        "COMBINED": {
+          "selected": 28,
+          "wins": 15,
+          "losses": 13,
+          "decided": 28,
+          "rate": 0.5357142857142857
+        }
+      },
+      "COMMON_AVAILABLE": {
+        "OVER": {
+          "selected": 84,
+          "wins": 47,
+          "losses": 37,
+          "decided": 84,
+          "rate": 0.5595238095238095
+        },
+        "UNDER": {
+          "selected": 0,
+          "wins": null,
+          "losses": null,
+          "decided": 0,
+          "rate": null
+        },
+        "COMBINED": {
+          "selected": 84,
+          "wins": 47,
+          "losses": 37,
+          "decided": 84,
+          "rate": 0.5595238095238095
+        }
+      }
+    },
+    "ALWAYS_UNDER": {
+      "FULL_SYSTEM142": {
+        "OVER": {
+          "selected": 0,
+          "wins": null,
+          "losses": null,
+          "decided": 0,
+          "rate": null
+        },
+        "UNDER": {
+          "selected": 142,
+          "wins": 71,
+          "losses": 71,
+          "decided": 142,
+          "rate": 0.5
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 71,
+          "losses": 71,
+          "decided": 142,
+          "rate": 0.5
+        }
+      },
+      "FALLBACK_W5_6": {
+        "OVER": {
+          "selected": 0,
+          "wins": null,
+          "losses": null,
+          "decided": 0,
+          "rate": null
+        },
+        "UNDER": {
+          "selected": 56,
+          "wins": 24,
+          "losses": 32,
+          "decided": 56,
+          "rate": 0.42857142857142855
+        },
+        "COMBINED": {
+          "selected": 56,
+          "wins": 24,
+          "losses": 32,
+          "decided": 56,
+          "rate": 0.42857142857142855
+        }
+      },
+      "LEARNED_COMMON_W7": {
+        "OVER": {
+          "selected": 0,
+          "wins": null,
+          "losses": null,
+          "decided": 0,
+          "rate": null
+        },
+        "UNDER": {
+          "selected": 28,
+          "wins": 13,
+          "losses": 15,
+          "decided": 28,
+          "rate": 0.4642857142857143
+        },
+        "COMBINED": {
+          "selected": 28,
+          "wins": 13,
+          "losses": 15,
+          "decided": 28,
+          "rate": 0.4642857142857143
+        }
+      },
+      "COMMON_AVAILABLE": {
+        "OVER": {
+          "selected": 0,
+          "wins": null,
+          "losses": null,
+          "decided": 0,
+          "rate": null
+        },
+        "UNDER": {
+          "selected": 84,
+          "wins": 37,
+          "losses": 47,
+          "decided": 84,
+          "rate": 0.44047619047619047
+        },
+        "COMBINED": {
+          "selected": 84,
+          "wins": 37,
+          "losses": 47,
+          "decided": 84,
+          "rate": 0.44047619047619047
+        }
+      }
+    },
+    "EARLIER_LINE_PREVALENCE": {
+      "FULL_SYSTEM142": {
+        "OVER": {
+          "selected": 25,
+          "wins": 13,
+          "losses": 12,
+          "decided": 25,
+          "rate": 0.52
+        },
+        "UNDER": {
+          "selected": 117,
+          "wins": 59,
+          "losses": 58,
+          "decided": 117,
+          "rate": 0.5042735042735043
+        },
+        "COMBINED": {
+          "selected": 142,
+          "wins": 72,
+          "losses": 70,
+          "decided": 142,
+          "rate": 0.5070422535211268
+        }
+      },
+      "FALLBACK_W5_6": {
+        "OVER": {
+          "selected": 11,
+          "wins": 7,
+          "losses": 4,
+          "decided": 11,
+          "rate": 0.6363636363636364
+        },
+        "UNDER": {
+          "selected": 45,
+          "wins": 20,
+          "losses": 25,
+          "decided": 45,
+          "rate": 0.4444444444444444
+        },
+        "COMBINED": {
+          "selected": 56,
+          "wins": 27,
+          "losses": 29,
+          "decided": 56,
+          "rate": 0.48214285714285715
+        }
+      },
+      "LEARNED_COMMON_W7": {
+        "OVER": {
+          "selected": 4,
+          "wins": 3,
+          "losses": 1,
+          "decided": 4,
+          "rate": 0.75
+        },
+        "UNDER": {
+          "selected": 24,
+          "wins": 12,
+          "losses": 12,
+          "decided": 24,
+          "rate": 0.5
+        },
+        "COMBINED": {
+          "selected": 28,
+          "wins": 15,
+          "losses": 13,
+          "decided": 28,
+          "rate": 0.5357142857142857
+        }
+      },
+      "COMMON_AVAILABLE": {
+        "OVER": {
+          "selected": 15,
+          "wins": 10,
+          "losses": 5,
+          "decided": 15,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "selected": 69,
+          "wins": 32,
+          "losses": 37,
+          "decided": 69,
+          "rate": 0.463768115942029
+        },
+        "COMBINED": {
+          "selected": 84,
+          "wins": 42,
+          "losses": 42,
+          "decided": 84,
+          "rate": 0.5
+        }
+      }
+    }
+  },
+  "probability_checks": [
+    {
+      "method": "TABICLV2",
+      "scope": "FULL_SYSTEM142",
+      "window": "ALL",
+      "events": 84,
+      "Brier": 0.26731550905994844,
+      "log_loss": 0.7294250101224657,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "TABICLV2",
+      "scope": "FALLBACK_W5_6",
+      "window": "ALL",
+      "events": 56,
+      "Brier": 0.2746154063257409,
+      "log_loss": 0.7437047994573374,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 1.1102230246251565e-16,
+      "PASS": true
+    },
+    {
+      "method": "TABICLV2",
+      "scope": "LEARNED_COMMON_W7",
+      "window": "ALL",
+      "events": 28,
+      "Brier": 0.2527157145283635,
+      "log_loss": 0.7008654314527225,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "TABICLV2",
+      "scope": "COMMON_AVAILABLE",
+      "window": "ALL",
+      "events": 84,
+      "Brier": 0.26731550905994844,
+      "log_loss": 0.7294250101224657,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "TABICLV2",
+      "scope": "FULL_SYSTEM142",
+      "window": "5",
+      "events": 28,
+      "Brier": 0.23824855083528146,
+      "log_loss": 0.6655778640041896,
+      "Brier_difference": 2.7755575615628914e-17,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "TABICLV2",
+      "scope": "FULL_SYSTEM142",
+      "window": "6",
+      "events": 28,
+      "Brier": 0.31098226181620037,
+      "log_loss": 0.8218317349104851,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "TABICLV2",
+      "scope": "FULL_SYSTEM142",
+      "window": "7",
+      "events": 28,
+      "Brier": 0.2527157145283635,
+      "log_loss": 0.7008654314527225,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "LOGISTIC",
+      "scope": "FULL_SYSTEM142",
+      "window": "ALL",
+      "events": 84,
+      "Brier": 0.2813838834030487,
+      "log_loss": 0.7658508225010259,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "LOGISTIC",
+      "scope": "FALLBACK_W5_6",
+      "window": "ALL",
+      "events": 56,
+      "Brier": 0.2746154063257409,
+      "log_loss": 0.7437047994573374,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 1.1102230246251565e-16,
+      "PASS": true
+    },
+    {
+      "method": "LOGISTIC",
+      "scope": "LEARNED_COMMON_W7",
+      "window": "ALL",
+      "events": 28,
+      "Brier": 0.2949208375576643,
+      "log_loss": 0.8101428685884031,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "LOGISTIC",
+      "scope": "COMMON_AVAILABLE",
+      "window": "ALL",
+      "events": 84,
+      "Brier": 0.2813838834030487,
+      "log_loss": 0.7658508225010259,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "LOGISTIC",
+      "scope": "FULL_SYSTEM142",
+      "window": "5",
+      "events": 28,
+      "Brier": 0.23824855083528146,
+      "log_loss": 0.6655778640041896,
+      "Brier_difference": 2.7755575615628914e-17,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "LOGISTIC",
+      "scope": "FULL_SYSTEM142",
+      "window": "6",
+      "events": 28,
+      "Brier": 0.31098226181620037,
+      "log_loss": 0.8218317349104851,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "LOGISTIC",
+      "scope": "FULL_SYSTEM142",
+      "window": "7",
+      "events": 28,
+      "Brier": 0.2949208375576643,
+      "log_loss": 0.8101428685884031,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "B0_LAW",
+      "scope": "FULL_SYSTEM142",
+      "window": "ALL",
+      "events": 142,
+      "Brier": 0.2665452222447479,
+      "log_loss": 0.7289025147190994,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "B0_LAW",
+      "scope": "FALLBACK_W5_6",
+      "window": "ALL",
+      "events": 56,
+      "Brier": 0.2746154063257409,
+      "log_loss": 0.7437047994573374,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 1.1102230246251565e-16,
+      "PASS": true
+    },
+    {
+      "method": "B0_LAW",
+      "scope": "LEARNED_COMMON_W7",
+      "window": "ALL",
+      "events": 28,
+      "Brier": 0.26257959111116563,
+      "log_loss": 0.723739530148618,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 1.1102230246251565e-16,
+      "PASS": true
+    },
+    {
+      "method": "B0_LAW",
+      "scope": "COMMON_AVAILABLE",
+      "window": "ALL",
+      "events": 84,
+      "Brier": 0.27060346792088247,
+      "log_loss": 0.7370497096877642,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "B0_LAW",
+      "scope": "FULL_SYSTEM142",
+      "window": "5",
+      "events": 28,
+      "Brier": 0.23824855083528146,
+      "log_loss": 0.6655778640041896,
+      "Brier_difference": 2.7755575615628914e-17,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "B0_LAW",
+      "scope": "FULL_SYSTEM142",
+      "window": "6",
+      "events": 28,
+      "Brier": 0.31098226181620037,
+      "log_loss": 0.8218317349104851,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "B0_LAW",
+      "scope": "FULL_SYSTEM142",
+      "window": "7",
+      "events": 28,
+      "Brier": 0.26257959111116563,
+      "log_loss": 0.723739530148618,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 1.1102230246251565e-16,
+      "PASS": true
+    },
+    {
+      "method": "B0_LAW",
+      "scope": "FULL_SYSTEM142",
+      "window": "8",
+      "events": 28,
+      "Brier": 0.25915991748755496,
+      "log_loss": 0.7124077772187699,
+      "Brier_difference": 5.551115123125783e-17,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "B0_LAW",
+      "scope": "FULL_SYSTEM142",
+      "window": "9",
+      "events": 30,
+      "Brier": 0.26207508545828445,
+      "log_loss": 0.721485457140479,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "B2_LAW",
+      "scope": "FULL_SYSTEM142",
+      "window": "ALL",
+      "events": 142,
+      "Brier": 0.26918027997713156,
+      "log_loss": 0.7351794287803791,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 1.1102230246251565e-16,
+      "PASS": true
+    },
+    {
+      "method": "B2_LAW",
+      "scope": "FALLBACK_W5_6",
+      "window": "ALL",
+      "events": 56,
+      "Brier": 0.279638555551307,
+      "log_loss": 0.7565866700293863,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "B2_LAW",
+      "scope": "LEARNED_COMMON_W7",
+      "window": "ALL",
+      "events": 28,
+      "Brier": 0.2640432812863174,
+      "log_loss": 0.7248581579864295,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "B2_LAW",
+      "scope": "COMMON_AVAILABLE",
+      "window": "ALL",
+      "events": 84,
+      "Brier": 0.27444013079631047,
+      "log_loss": 0.7460104993484007,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "B2_LAW",
+      "scope": "FULL_SYSTEM142",
+      "window": "5",
+      "events": 28,
+      "Brier": 0.24527436143794393,
+      "log_loss": 0.6801927607197923,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "B2_LAW",
+      "scope": "FULL_SYSTEM142",
+      "window": "6",
+      "events": 28,
+      "Brier": 0.3140027496646701,
+      "log_loss": 0.8329805793389802,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "B2_LAW",
+      "scope": "FULL_SYSTEM142",
+      "window": "7",
+      "events": 28,
+      "Brier": 0.2640432812863174,
+      "log_loss": 0.7248581579864295,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "B2_LAW",
+      "scope": "FULL_SYSTEM142",
+      "window": "8",
+      "events": 28,
+      "Brier": 0.24712349797645988,
+      "log_loss": 0.6870554558471194,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 0.0,
+      "PASS": true
+    },
+    {
+      "method": "B2_LAW",
+      "scope": "FULL_SYSTEM142",
+      "window": "9",
+      "events": 30,
+      "Brier": 0.2750390275507241,
+      "log_loss": 0.7497681392609613,
+      "Brier_difference": 0.0,
+      "log_loss_difference": 1.1102230246251565e-16,
+      "PASS": true
+    }
+  ],
+  "selection_checks": [
+    {
+      "method": "TABICLV2",
+      "policy": "COVERAGE_10",
+      "PASS": true,
+      "selected": 6,
+      "membership_sha256": "7d3f8c3461361ca130b6364dffb0406696d30d6aeb51b374adf8e0a74f3fb4e3",
+      "selected_by_week": {
+        "5": 2,
+        "6": 2,
+        "7": 2,
+        "8": 0,
+        "9": 0
+      },
+      "own_record": {
+        "OVER": {
+          "selected": 1,
+          "wins": 1,
+          "losses": 0,
+          "decided": 1,
+          "rate": 1.0
+        },
+        "UNDER": {
+          "selected": 5,
+          "wins": 3,
+          "losses": 2,
+          "decided": 5,
+          "rate": 0.6
+        },
+        "COMBINED": {
+          "selected": 6,
+          "wins": 4,
+          "losses": 2,
+          "decided": 6,
+          "rate": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "method": "TABICLV2",
+      "policy": "THRESHOLD_80_RAW",
+      "PASS": true,
+      "selected": 5,
+      "membership_sha256": "c6204ad096ca69f44329a012279e642861c6f50f44b8af1ce376996dec20bfb1",
+      "selected_by_week": {
+        "5": 1,
+        "6": 0,
+        "7": 4,
+        "8": 0,
+        "9": 0
+      },
+      "own_record": {
+        "OVER": {
+          "selected": 2,
+          "wins": 1,
+          "losses": 1,
+          "decided": 2,
+          "rate": 0.5
+        },
+        "UNDER": {
+          "selected": 3,
+          "wins": 3,
+          "losses": 0,
+          "decided": 3,
+          "rate": 1.0
+        },
+        "COMBINED": {
+          "selected": 5,
+          "wins": 4,
+          "losses": 1,
+          "decided": 5,
+          "rate": 0.8
+        }
+      }
+    },
+    {
+      "method": "LOGISTIC",
+      "policy": "COVERAGE_10",
+      "PASS": true,
+      "selected": 6,
+      "membership_sha256": "d50b9f4dc53c482c81fe4e98ccb44d7c770fd9f7099d91a1ca8ad18086a44040",
+      "selected_by_week": {
+        "5": 2,
+        "6": 2,
+        "7": 2,
+        "8": 0,
+        "9": 0
+      },
+      "own_record": {
+        "OVER": {
+          "selected": 0,
+          "wins": null,
+          "losses": null,
+          "decided": 0,
+          "rate": null
+        },
+        "UNDER": {
+          "selected": 6,
+          "wins": 3,
+          "losses": 3,
+          "decided": 6,
+          "rate": 0.5
+        },
+        "COMBINED": {
+          "selected": 6,
+          "wins": 3,
+          "losses": 3,
+          "decided": 6,
+          "rate": 0.5
+        }
+      }
+    },
+    {
+      "method": "LOGISTIC",
+      "policy": "THRESHOLD_80_RAW",
+      "PASS": true,
+      "selected": 8,
+      "membership_sha256": "e2bbfff9b0be7580339bd1bc9315c880c8bdc7971d55a8afd47302c11283d93e",
+      "selected_by_week": {
+        "5": 1,
+        "6": 0,
+        "7": 7,
+        "8": 0,
+        "9": 0
+      },
+      "own_record": {
+        "OVER": {
+          "selected": 3,
+          "wins": 2,
+          "losses": 1,
+          "decided": 3,
+          "rate": 0.6666666666666666
+        },
+        "UNDER": {
+          "selected": 5,
+          "wins": 3,
+          "losses": 2,
+          "decided": 5,
+          "rate": 0.6
+        },
+        "COMBINED": {
+          "selected": 8,
+          "wins": 5,
+          "losses": 3,
+          "decided": 8,
+          "rate": 0.625
+        }
+      }
+    },
+    {
+      "method": "B0_LAW",
+      "policy": "COVERAGE_10",
+      "PASS": true,
+      "selected": 11,
+      "membership_sha256": "fd9c2ad64fec667c574031b329abf2236eeb2acce6ea7c304d9e7cbdcca13fd5",
+      "selected_by_week": {
+        "5": 2,
+        "6": 2,
+        "7": 2,
+        "8": 2,
+        "9": 3
+      },
+      "own_record": {
+        "OVER": {
+          "selected": 1,
+          "wins": 0,
+          "losses": 1,
+          "decided": 1,
+          "rate": 0.0
+        },
+        "UNDER": {
+          "selected": 10,
+          "wins": 5,
+          "losses": 5,
+          "decided": 10,
+          "rate": 0.5
+        },
+        "COMBINED": {
+          "selected": 11,
+          "wins": 5,
+          "losses": 6,
+          "decided": 11,
+          "rate": 0.45454545454545453
+        }
+      }
+    },
+    {
+      "method": "B0_LAW",
+      "policy": "THRESHOLD_80_RAW",
+      "PASS": true,
+      "selected": 1,
+      "membership_sha256": "5fbd008e9c8723e786756843751d3f4709cc1622ce328567598a9e65bd9058fb",
+      "selected_by_week": {
+        "5": 1,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "own_record": {
+        "OVER": {
+          "selected": 0,
+          "wins": null,
+          "losses": null,
+          "decided": 0,
+          "rate": null
+        },
+        "UNDER": {
+          "selected": 1,
+          "wins": 1,
+          "losses": 0,
+          "decided": 1,
+          "rate": 1.0
+        },
+        "COMBINED": {
+          "selected": 1,
+          "wins": 1,
+          "losses": 0,
+          "decided": 1,
+          "rate": 1.0
+        }
+      }
+    },
+    {
+      "method": "B2_LAW",
+      "policy": "COVERAGE_10",
+      "PASS": true,
+      "selected": 11,
+      "membership_sha256": "17c774996a18d6df5906a159813dd78438c5ffbaf15ad3c6826c5a7e849fe8eb",
+      "selected_by_week": {
+        "5": 2,
+        "6": 2,
+        "7": 2,
+        "8": 2,
+        "9": 3
+      },
+      "own_record": {
+        "OVER": {
+          "selected": 1,
+          "wins": 0,
+          "losses": 1,
+          "decided": 1,
+          "rate": 0.0
+        },
+        "UNDER": {
+          "selected": 10,
+          "wins": 6,
+          "losses": 4,
+          "decided": 10,
+          "rate": 0.6
+        },
+        "COMBINED": {
+          "selected": 11,
+          "wins": 6,
+          "losses": 5,
+          "decided": 11,
+          "rate": 0.5454545454545454
+        }
+      }
+    },
+    {
+      "method": "B2_LAW",
+      "policy": "THRESHOLD_80_RAW",
+      "PASS": true,
+      "selected": 2,
+      "membership_sha256": "b1ca804417bac56e153cbc7f4d5aae0662fe0b19239c4a1f99ab90255dd507ff",
+      "selected_by_week": {
+        "5": 1,
+        "6": 1,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "own_record": {
+        "OVER": {
+          "selected": 0,
+          "wins": null,
+          "losses": null,
+          "decided": 0,
+          "rate": null
+        },
+        "UNDER": {
+          "selected": 2,
+          "wins": 1,
+          "losses": 1,
+          "decided": 2,
+          "rate": 0.5
+        },
+        "COMBINED": {
+          "selected": 2,
+          "wins": 1,
+          "losses": 1,
+          "decided": 2,
+          "rate": 0.5
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "preserved_checker_failures": [
+    {
+      "attempt": 1,
+      "stage": "Empty W8 sidegroup representation",
+      "scope": "Independent accumulator0 versus publishednull forwins/losses when decided0. EmptygroupN/A is correct; adjustedcheckerrepresentation, no scientific repair."
+    },
+    {
+      "attempt": 2,
+      "stage": "Selected-policy probability population assumption",
+      "scope": "Independent selected-only proper score is not asserted equal to inherited policy-frame proper-scorepopulation. Broad/common/fallback/learned probability checks passed before this boundary. Selected-policy probability parity excluded fromPASS; no scientificvalues modified."
+    }
+  ],
+  "limitations": [
+    "No fit/runtime/checkpoint/sourcevintage reproduction. Original outcomes/identities inherited from exact qualified source.",
+    "W8/9technicalunavailable58 are notabstentions or accuracy losses; only28learnedW7 and56fallback cases available.",
+    "Selectedcounts/membership for10percent/P80RAW checked; calibrated/otherpolicy membership and uncertainty notindependentlyreproduced. Selected-only proper-score interpretation NOT_CHECKED by this receipt.",
+    "Control ownfullsystemlists have greateravailablecoverage; common84 andlearned28 records separate.",
+    "Quoteclockunknown/mainaltunclassified/currentvintage7day/exposeddevelopment remain; no fivelearnedweek/highaccuracy/deploymentclaim."
+  ],
+  "probability_tolerance": 1e-12,
+  "new_fits": 0,
+  "new_observations": 0,
+  "execution": {
+    "one_thread_environment": true,
+    "final_process_CPU_before_write": 0.333684,
+    "prior_process_CPU": 0.284805,
+    "two_failed_checker_CPU_conservative_charge": 1.016782,
+    "cap_CPU": 20,
+    "wall_before_write": 0.29316790599841624,
+    "metering_limitation": "Priorfailed wall0.211387+0.297003 conservativelycharged2x=1.016780CPU plusrounding; finalimport/write/exit/launcher tails notfullysampled. No model/networkcalls."
+  },
+  "verified_scope": "PASS_SCOPED_INDEPENDENT_DECIMAL_GRADES_PROPER_SCORES_AND_SELECTION_MEMBERSHIP"
+}

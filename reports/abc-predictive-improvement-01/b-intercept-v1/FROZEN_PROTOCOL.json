@@ -1,0 +1,122 @@
+{
+  "id": "ABC-PREDICTIVE-IMPROVEMENT-01-B-INTERCEPT-v1",
+  "assignment_id": "ABC-PREDICTIVE-IMPROVEMENT-01",
+  "at_utc": "2026-11-04T20:18:54.462141+00:00",
+  "state": "FROZEN_BEFORE_NEW_CALIBRATION_FITS_GATES_OR_REPAIRED_SCORES",
+  "canonical_C_ref": "39b98567cc11835363e91c6a2b504bf9cae1f17a",
+  "canonical_C_protocol_id": "ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1",
+  "canonical_C_protocol_sha256": "fa19581487519a854948269bc1ce328cbbcdc734afee2464f1ff778d1ff241a1",
+  "code_sha256": "ab61697d6565f27612865d78f6ef9654c0af398b49918d4a5940fe49aac82a14",
+  "mechanism_sha256": "5ee4aa6d64c6435ca2ca157b231b6236acd02c2db46d12d392c8d4c3f27a1071",
+  "input_rows_sha256": "d778ae00faf1d8c630252a36ba5e87897faad3b4533cc856fc8f52be1b63310e",
+  "input_sources": [
+    {
+      "safe_id": "B_WEEK5_COMPLETE_LAW_ROWS",
+      "sha256": "77d303f74eda09cdda7d818bfe7974c30dc1f94b024a114b1f23602f3cb9a45b",
+      "bytes": 496079,
+      "public_scores": "reports/baselines-coverage-20261031h/actual-method-w5/complete-leaf-law-v1/SCORES.json",
+      "public_scores_sha256": "f24a531b17bd856bf8c8ea31730c8c8b72c6c9dfea988eea0f8955d06cbcc81f"
+    },
+    {
+      "safe_id": "B_WEEK6_COMPLETE_LAW_ROWS",
+      "sha256": "74952fb50d2fb39bdd81cb8183450c0390080f17e47c4d5c06d96f297e55daac",
+      "bytes": 557373,
+      "public_scores": "reports/completion-20261031g/roster/w6-complete-leaf-law-v1/SCORES.json",
+      "public_scores_sha256": "5f5135d5838ffc31003966b589b8fbfe2e5dc86456599ef10c65c2177d8f7ee2"
+    },
+    {
+      "safe_id": "B_WEEK7_COMPLETE_LAW_ROWS",
+      "sha256": "87a4126cada6c783a0a15f64f343d7fa730682e21be918ff43929548546a1866",
+      "bytes": 501799,
+      "public_scores": "reports/completion-20261031g/roster/w7-complete-leaf-law-v1/SCORES.json",
+      "public_scores_sha256": "5fab03adbeb2b76f2014abbf3c1c3f6145168b9140ec18df6fb1405502ffcaa4"
+    },
+    {
+      "safe_id": "B_WEEK8_RETAINED_ORIGINAL_LAW_ROWS_V2",
+      "sha256": "e9e837028b1466d242035f09c334d5ad693f2cc815ecd6d1dc1807679ae704e5",
+      "bytes": 2007071
+    },
+    {
+      "safe_id": "B_CURRENT_FINAL_WEEK8_LABEL_BINDINGS",
+      "sha256": "4b37b02e4ea584fbf91c21ca1fe8454c2447a68cafc154f15d431f520c73358a",
+      "bytes": 3113168,
+      "public_receipt": "reports/abc-championship/local-week8-final-v1/RUN_RECEIPT.json"
+    }
+  ],
+  "mechanism": {
+    "formula": "CDF_g(x)=sigmoid(logit(x)-alpha);pUnder=g(pUnder0),pPush=g(pUnder0+pPush0)-g(pUnder0),pOver=1-g(pUnder0+pPush0); exact0/1endpoints preserved.",
+    "fit": "Oneintercept MAP, slopefixed1;sum_game(mean_player binarylogloss)+alpha^2/(2*0.5^2),alpha[-1.5,1.5], nohyperparamsearch. Traininghalfpointactualoffers only, min20decided/5games/3eachclass; otherwise identity. Irreparablezero-probability earlierlogloss staysidentity, no clipping.",
+    "availability": "Same conservativekickoff+7days STRICTLYbeforeorigin, bothsourcevintage/availability assumptions disclosed; targetgame labels neverused. No authenticatedasof source-vintage claim.",
+    "source_histories": "Crec B0 P3_HGB/H-MULTI/E0_OP unchanged. PT B0 C02/H-MULTI chosenfromW5Brier; W6actual-line calibrator training; W7temporalOOFconfidence-only gate preparation; W8originalcapturedlaw/currentfinal labels. Historicalknown-target-time andoriginalfuturecapture are explicitlydifferent registeredsource/queryproducts, testedas a declaredtransferadapter, notsameexactlegacyissuance.",
+    "calibration_times": "Crec perdecisionbatch eligibleprefix; PTcoeff frozenbeforefirstW8kickoff. Actual coefficientfit occursnow, simulatedorigin separate; no backdating.",
+    "numerical": "Receptionsdirecteventprocedure hasno ownpointoutput. PToriginalB0mean is separatelytyped unchangedancillaryoutput, not claimedmeanofpostprocessedlaw. Probabilitypostprocessor not a fullnewoutcomelaw.",
+    "gate": "B2confidencequantile: medianearlier temporalOOFconfidence, floor0.60,min20earlierpredictions else0.60; no outcome used tofit thissimplegate. C updatesrolling; PTgatefrozenfromW7OOFpredictionsbeforeW8. Matchcountsperatomicdecisionbatch:K=min(ceil(0.5*availablebatch),eligibleB0,eligibleB1);selecteachownhighestconfidence withstableofferIDtie. No futurebatchneeded, no forcedweakpicks. Achievedcoverage reported, not assumed50%.",
+    "secondary": "Fixed0.60/0.70/0.80/0.90confidence thresholds, allcases; rollinggreedyK6/10/20 percategory/week and combined/Over-only/Under-only, confidencefloor0.60, earliestbatchesfillremaining slots, no replacementafteroutcomes. These are new retrospectivepolicies, not originalpicks or fixedweeklylists.",
+    "target90": "Fixedp>=0.90policy; report observedW/L,n,actualcoverage. ScientificTARGET_NOT_ESTABLISHED unless lower95%dependence-aware bound>=0.90 plus existingCmin100unique decided/20games/5weeks and prespecifiedlaterconfirmation; usefulnessplanningcoverage>=10%. These are claimcriteria, not a new provisionalreleasewaitinggate.",
+    "practical": "Existingownerpolicyv6 hasno universal numericaccuracy switchfloor. Predeclare+1percentagepoint fullboard ormatched-coverage as studyplanningusefulness only, not autonomousrelease/admission or posthocveto."
+  },
+  "closest_prior": {
+    "C_study": "C-2025-OOF-CALIBRATION-v3",
+    "C_source": "protocol/OOF_CALIBRATION_V3.json",
+    "difference": "C usedtwo-parameter sigmoid on2025syntheticgrids/P2Leaf withweak0.001penalty; Busesoneintercept/stronggameweightedprior, actual-lineearlierlabels, CdirectorC02capture baseline and chronologicalconfidencegate. Do not claimcalibrationitselfnew.",
+    "prior_losses": "Crec synthetic-grid Brier0.1172677\u21920.1175754;pass_td0.1462724\u21920.1465855. Differentnormalization/population fromactual-offerBrier; preservelosses. BGLMandall64leaf-law cumulativeBriers lostactual-line0.25neutral.",
+    "A_market": "Aownsmarketreceptionlead; publicaggregate206/320vs175/320onselected2024subset is not Bprivate-row reproduction. Exactearlierline/price/model exports required; no duplicate marketfit."
+  },
+  "panels": {
+    "rec": {
+      "requested_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actual_weeks": [
+        2,
+        3
+      ],
+      "outer_offers": 362,
+      "horizon": "C_KICKOFF_RECONSTRUCTION",
+      "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC"
+    },
+    "pass_td": {
+      "requested_weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "evaluation_weeks": [
+        8
+      ],
+      "baseline_selection_week": 5,
+      "calibration_week": 6,
+      "gate_prediction_week": 7,
+      "outer_offers": 28,
+      "horizon": "B_ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_T90_THRESHOLDS",
+      "evidence_tier": "ORIGINAL_BASE_FORECAST_WITH_NEW_RETROSPECTIVE_PROBABILITY_POLICY;QUOTE_CLOCK_UNVERIFIED"
+    }
+  },
+  "exposure": "Allperiodsalreadyresearch-exposed; baseline architectures and studychoice are exposed. Chronologicalfits/gatesdo not createfreshholdout; no 90%promise or originalissuance claim.",
+  "budget": {
+    "max_calibration_fits": 32,
+    "max_base_model_fits": 0,
+    "max_base_model_inference": 0,
+    "max_wall_seconds": 120,
+    "max_CPU_seconds": 180,
+    "max_RSS_bytes": 1073741824,
+    "max_new_private_bytes": 4194304,
+    "max_threads": 2,
+    "hyperparameter_searches": 0,
+    "paid_calls": 0
+  },
+  "retention": "Sameapprovedowner-localBroute; boundednewprivateinputs/models/rows, publiccode/aggregate/hash only; no offhostrestoreclaim. Originalarchive/largefitrecoverygate unchanged.",
+  "production": "No publication/scheduler/owneradmission/merge. Ccoordinates; A/Ctasks not duplicated; no externalmessages. Newfuturecapture requires candidate-specificsource/runtime/retention/admission underexistingownerroute."
+}

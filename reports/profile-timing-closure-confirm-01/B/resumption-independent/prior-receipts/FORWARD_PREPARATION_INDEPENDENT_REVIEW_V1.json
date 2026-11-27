@@ -1,0 +1,34 @@
+{
+  "id": "B-FORWARD-TIMING-PREPARE-BOUNDED-INDEPENDENT-REVIEW-v1",
+  "reviewed_utc": "2026-11-10T22:57:03.914393+00:00",
+  "code_sha256": "cafc6da3edfb249880c4ef03eedf45580cf695032571c7f3494595a958f5cfed",
+  "test_sha256": "18db50e88e0bce50c514fd6e782f76d9c41f7718057584c3a4ccde69ae7e6f6d",
+  "judgment": "PASS_IN_CHECKED_PREPARATION_SCOPE",
+  "software_tests": 3,
+  "deterministic_feature_equivalence_and_target_mutation_cases": 4,
+  "meanings": {
+    "F0_F2_equivalence": "DirectContextHistoryE3vector equals oldR0unaugmentedvector forbothpolicies; omitted opportunity.feature_groupswereunused, not newmodelinputs.",
+    "historical_alignment": "All source rows converted bypolicy beforeContextHistory. Everytrainingrowfeatures useitsownhistoricalkickoff; onlyearlierlabelsbeforecurrentcutofftrainmodelandprior.",
+    "query_scope": "ProviderACT isconditionalforecasteligibility, not authenticatedstarter/health/appearance probability. NonACT basicrowsremainexplicitunavailable; expected5ACT+3basicneedsfinalsourcepacketverification.",
+    "future_query": "No final targetoutcome requiredorused; actualeventkickoff retainedseparatelyfromfixedsourcefeaturecutoff.",
+    "prepared_vs_captured": "run emitsPREPARED/eligible_captureFalse anddoesnotfinalizethrough event_reason. Freshindependentnativeeventreconfirmation, source/clockchecks,durablepublication/readbackandrealpersistencebeforekickoff areseparatependingstages."
+  },
+  "guard_edge": {
+    "issue": "Python0==False permittedintegercompleted0 ininitial eventhelper.",
+    "status": "CORRECTED_BEFORE_ANY_CURRENT_FIT_OR_CAPTURE",
+    "regression": "LiteralboolFalse accepted underotherwisevalidsyntheticnative receipt; integer0 rejected.",
+    "actual_record_impact": "NONE_DEMONSTRATED"
+  },
+  "remaining_checks": [
+    "Verifynewboundcurrent-inputsourcebuilderreceipt andadmitted/heldgameIDs; runreliesonpre-filteredsource.",
+    "Afterprepare,finalizermustrestoremodels ratherthanrerunfitstage. Preservefitattempts/modelsiflateeventcheckorpublishfails.",
+    "Actual5ACT/3basicpackets,eventstatussourceclocks,recordretentionandconsumeruseare notclaimedbythisread-onlyreview."
+  ],
+  "new_fits": 0,
+  "new_model_inference": 0,
+  "new_original_forecasts": 0,
+  "limits": [
+    "Noactualcurrent-inputrow reconstructionorfresh-fitreplicationbyreviewer.",
+    "Threeunitfixturesandfourfeaturechecksare softwareverification, not newNFLaccuracy observations."
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "id": "B-C-ADMISSION-AND-C-M3-BUDGET-REVIEW-v1",
+  "recorded_UTC": "2026-11-16T00:31:08.562174+00:00",
+  "state": "EXECUTED_RECEIPT_SCOPE_AND_BUDGET_REVIEW;NO_A_WORKER_OR_C_GRADES",
+  "owner": "B",
+  "no_new_budget_authorized": true,
+  "versions_received": {
+    "A": "f79c05835ba3a41a7e73a5c6fd26c05896011e4e",
+    "C": "6aaab67d213826d0b2545a24d34cf9ee54d7ff4c",
+    "B_scientific": "a0f5b91c61c9d1c7c2a3e39c4bdd6da29435e98e",
+    "B_delivery": "1a69f1dd21141f8f95c3f1b19b6e9ab1a4d1fde6"
+  },
+  "bindings": [
+    {
+      "source_name": "C_INDEX.json",
+      "bytes": 134477,
+      "SHA256": "0093ef7ea8288255c34028a8d7a3e6df803516a11a4a4bc515041779060c7f3c"
+    },
+    {
+      "source_name": "C_PROTOCOL.json",
+      "bytes": 145147,
+      "SHA256": "37255647e752704a949df16a99d8f5416ed4de8444b46248f21868ad32000579"
+    },
+    {
+      "source_name": "C_ADMISSION.json",
+      "bytes": 95960,
+      "SHA256": "f6deb1b1e45a0a60a2a6e1fe5f82cafc7d36f15eed2e939d9991f5bef3c6939c"
+    },
+    {
+      "source_name": "C_FOLLOW_THROUGH.md",
+      "bytes": 21341,
+      "SHA256": "ca34a2138133723bbff9bfeff27372ec3e6c85a3844702d601a280b540818179"
+    },
+    {
+      "source_name": "C05_EXACT_STOP.json",
+      "bytes": 4196,
+      "SHA256": "97517f719f74c8ebdca31efbcb3658ece100c0abd5ec13e681933974e0c62762"
+    },
+    {
+      "source_name": "FOLLOW_THROUGH_V1.md",
+      "bytes": 13659,
+      "SHA256": "ff703c87e3b58e599216785ee9b43d7367e500cc9506b84538ffc2b6a6e68fdc"
+    },
+    {
+      "source_name": "A_TABLES/C_JOIN_STOP.json",
+      "bytes": 482,
+      "SHA256": "a1ca37c4c9dd4d32374940f24f8cc8772def17fb812b2f6a7c465323d6b9f986"
+    },
+    {
+      "source_name": "A_TABLES/DEPTH_SOURCE_DISPOSITION.json",
+      "bytes": 3674,
+      "SHA256": "533a94b8ce13f43a038275353834e53b0c791b8a9292ec55fe2129e1eb24ea33"
+    }
+  ],
+  "protocol": {
+    "id": "ABC-ACTUAL-PROP-CHAMPIONSHIP-v2-C-1",
+    "scorer": {
+      "path": "src/abc_championship_v2.py",
+      "SHA256": "2ba450f91bb5fac869ce3adde031099390ec70408a91204653869032b49b2bce"
+    },
+    "interval": {
+      "path": "src/actual_accuracy_v6.py",
+      "SHA256": "92260304be31b0fbee42faa3ab78616f77c3791bd2613edb9d322f9bbf29aa2a"
+    },
+    "exact_existing_B_execution_hash_parity": true,
+    "no_new_evaluator": true
+  },
+  "binding_checks": [
+    {
+      "check": "C_INDEX_TO_OBTAINED_EXACT_BYTES",
+      "artifact": "reports/information-skill-01/checkpoint-follow-through-01/ADMISSION.json",
+      "bytes": 95960,
+      "SHA256": "f6deb1b1e45a0a60a2a6e1fe5f82cafc7d36f15eed2e939d9991f5bef3c6939c",
+      "passed": true
+    },
+    {
+      "check": "C_INDEX_TO_OBTAINED_EXACT_BYTES",
+      "artifact": "reports/information-skill-01/checkpoint-follow-through-01/C05-grading/EXACT_STOP.json",
+      "bytes": 4196,
+      "SHA256": "97517f719f74c8ebdca31efbcb3658ece100c0abd5ec13e681933974e0c62762",
+      "passed": true
+    }
+  ],
+  "C_actual_admission": {
+    "source": {
+      "path": "reports/information-skill-01/checkpoint-follow-through-01/ADMISSION.json",
+      "bytes": 95960,
+      "SHA256": "f6deb1b1e45a0a60a2a6e1fe5f82cafc7d36f15eed2e939d9991f5bef3c6939c"
+    },
+    "B_source_report_commit": "78383a9d29948b90056415c2274a83d6054acf79",
+    "B_actual_received_head": "17f4497cd377d543401fc7eaf50db967c9e45f76",
+    "B_SCOPE": "C actually retrieved immutable public report, handoff, failed-fit receipt, final delivery and current commit metadata; admission limited to public integer arithmetic and owner-reported scientific/verification scope. No B model/private raw offer access, independent C fit, original quote-clock or whole-row parity.",
+    "original_SKILL_native_W5_9": "ADMITTED_PUBLIC_INTEGER_ARITHMETIC_AND_OWNER_REPORTED_BINDINGS;NOT_PRIVATE_ROW_OR_FIT_PARITY",
+    "new_A_f79_SKILL_early84": "NOT_ESTABLISHED_IN_OBTAINED_C_ADMISSION;C still references older49ff A and pendingnewearlygrades; supersede status on actualintake, notrerunjoin",
+    "new_B_opportunity_a0f_1a69": "NOT_ESTABLISHED_IN_OBTAINED_C_ADMISSION;different experiment/procedures published after C source",
+    "frozen_C_M3": "NO_NEW_C_GRADES",
+    "new_C_information": "OwnW2\u20133 usedscalar14changeddecisions7winsboth/net0; notfrozenM3 andnotoldunusedfeature",
+    "C_primary_activation": false
+  },
+  "C_M3_review": {
+    "executor": "A registered protected owner-local C M3 join executor",
+    "source_state": "NO_NEW_C_GRADES",
+    "admitted_row_requirement": 142,
+    "owner_reported_common_source_rows": 142,
+    "owner_reported_differences": {
+      "game_id": 2,
+      "kickoff_utc": 2,
+      "cutoff_utc": 2
+    },
+    "dual_clock": {
+      "event": "401873047",
+      "canonical_game": "2026_09_LV_SF",
+      "source_clock": "2026-11-08T21:25:00+00:00",
+      "canonical_query_clock": "2026-11-08T21:05:00+00:00"
+    },
+    "canonical_T90_UTC": "2026-11-08T19:35:00+00:00",
+    "repair_reported_state": "REUSE_EXISTING_DUAL_CLOCK_EVENT_ADMISSION;PRESERVE_FULL142_MASK;NOT_EXECUTED",
+    "required_fix": "Reuse existing dual-clock event admission in receiving adapter; retain both event/source and canonical query clocks; original source-versus-canonical T90 checks unchanged; full142 identity/fingerprint parity with original tolerances, no droppedrows.",
+    "verification_scope": "B obtained A public stop/diagnosis, not original A private source/fingerprint rows. B bounded own retained text/code receipts search did not locate an original standalone dual-clock proof. No independent142-row fixturePASS or repair execution is claimed.",
+    "worker_started_by_B": false,
+    "adapter_code_changed_by_B": false,
+    "raw_grades_available": false,
+    "selective_summaries_available": false
+  },
+  "budget": {
+    "cumulative_cap": "1260",
+    "latest_charged_exact": "1056.334180015",
+    "published_rounded_charged": "1056.334180",
+    "remaining_exact": "203.665819985",
+    "published_rounded_remaining": "203.665820",
+    "retention_reserve": 120,
+    "reporting_reserve": 20,
+    "maximum_before_reserves_exact": "63.665819985",
+    "old_830_spend_and_429_headroom": "SUPERSEDED;historicalreceiptsunchanged",
+    "newer_legitimate_A_consumption": "NOT_KNOWN_TO_B;mustcarryforwardbeforeanyAaction",
+    "metering": "A report carries priorfailures/reconciledtail,15sconservativeuncapturedfailedreadcharge+1.948517measured diagnosis; notcompletephysicalCPUcertificate.",
+    "A_reported_safe_full_run": false,
+    "B_CPU_charged_to_A_C_task": 0,
+    "transfer_from_M1_or_B_or_C_new_information": 0
+  },
+  "minimum_next_action": {
+    "executor": "A existing C M3 join owner",
+    "action": "Review/apply scoped adapter-only repair against existing event proof, reuse smallest relevant contract fixture without fullworker; retain exact repair/check receipt and full142fingerprint parity.",
+    "run_gate": "Do notlaunchfullworker unless guardedpreflight+allremaininggrading+verification fit remainingcap after newerlegitimatecharges and140retainedreserves. Publishedstop says they donotfit.",
+    "if_not_fit": "One boundedcompletionrequest fromA with repairedfixturestatus, latestcharge, allremainingstagecosts, reusabletypedoutputs/durableadmission and rawgradecheckpointplan,140completionreserves andexactextraCPU. No repeatedrediscovery.",
+    "additional_allowance_requested_by_B": null,
+    "additional_allowance_reason": "Exactremainingpreflight/minimumchildstagecosts are notquantified in obtained publicstop; B cannotinventanexactamount orgrantAresources.",
+    "reusable_checkpoints": [
+      "Frozen C typed historical outputs and admitted source interface/durable proof",
+      "Existing 401873047 dual-clock event mapping",
+      "All original failures/source snapshots",
+      "No new rawCgrades yet; checkpointthese durably beforeselective summaries"
+    ]
+  },
+  "personnel": {
+    "A_retained_depth_inspection": "COMPLETED_SOURCE_CHECK;notunperformed",
+    "reported_files": [
+      {
+        "file_year": 2025,
+        "rows": 554215,
+        "SHA256": "14f74185b3c2c48df234ced284ba3596bda3333d0b2a8df40841f68cd34539fa",
+        "explicit_load_clocks": 221
+      },
+      {
+        "file_year": 2026,
+        "rows": 707893,
+        "SHA256": "522bc45820f21375f2df92b8d8776c6a2242305c6183e7b6b8509888c7c787cf",
+        "explicit_load_clocks": 261
+      }
+    ],
+    "historical_authentic_personnel": "BOUNDED_HISTORICAL_SOURCE_SEARCH_CLOSED_SOURCE_BLOCKED_FOR_AUTHENTICATED_PERSONNEL",
+    "missing_gates": [
+      "Historical artifact/version observation before each forecast origin",
+      "Complete event-effective teammate roster/status history",
+      "Origin-qualified identity mapping"
+    ],
+    "load_clock": "UPSTREAM_LOADED_NOT_PUBLICATION",
+    "retained_current_vintage_diagnostics": "PRESERVED;depthranknotinjuryclearance, participationorroutealignment; no indiscriminateexclusion",
+    "no_raw_depth_download_or_duplicate_search": true
+  },
+  "C05": {
+    "actual_source_state": "FINALITY_QUALIFIED;ORDINARY_PLAYER_FACTS_NOT_AVAILABLE_IN_OBSERVED_VERSION",
+    "original_forecasts": 69,
+    "finality_known": true,
+    "player_grades": 0,
+    "source_attempts_exhausted": true,
+    "next_action": {
+      "executor": "C existing original frozen-packet grading owner",
+      "action": "Through existing source jobs, observe/admit a genuinely new qualified ordinary-player source version containing the exact final game. Use the same frozen C05 packet and common grade_run in an append-only new grade version. This one-shot registration is exhausted; no immediate retry/poll or inferred current feed.",
+      "minimum_qualification": "A nonempty qualified exact-game ordinary-player frame with canonical identity/team/component presence. Missing individual players remain explicit UNKNOWN, not a demand that all23 personally have stat rows. Final event/version must stay compatible; later updates do not overwrite original forecasts.",
+      "completion": "69 original forecast records are accounted for in a qualified append-only grade, including unknown participation/missing actuals, and forecast-only metrics. No O/U record without genuine original offers."
+    },
+    "source_version_observed": "90befdf33b7dc9e92a840d86a73149b759b601842ff5e86257dc653d34de7cac",
+    "final_game_score_not_player_statistics": true
+  },
+  "Count_A": "C intake explicitly does not re-certify Count A current-feed or website use; credential/source-owner delivery remains independent.",
+  "verification_limits": [
+    "No A private source rows, native fixture execution, full fit reproduction or authenticated quote clocks",
+    "No C ledger or original website write",
+    "C source observations do not establish newer private/unpublished intake",
+    "No new fit, forecast, outcome grade, source acquisition or worker"
+  ],
+  "resources": {
+    "CPU_seconds_final_review_script": 0.006715802,
+    "peak_RSS_bytes": 11141120,
+    "preceding_read_search_CPU": "Not separately metered; bounded local reads only, no new budget; finalscriptmeasurement notcomplete tasktotal.",
+    "new_HTTP": 0,
+    "new_fits": 0,
+    "new_scores": 0,
+    "peer_or_global_writes": 0
+  }
+}

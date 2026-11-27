@@ -1,0 +1,41 @@
+{
+  "schema": "B-frozen-availability-final-offer-pair-v1",
+  "frozen_before_new_pairwise_calculation_utc": "2026-11-06T00:27:52.903803+00:00",
+  "audit_TXT_sha256": "720b464f8077d3a483a4a73245690071866b7757fb6d20763c2ea8d931061795",
+  "score_source": "reports/abc-championship/local-week8-final-v1/SCORES.json",
+  "score_source_sha256": "e73a780f93afdfef2dfd37caa8f5e1ad12b94403103ace20f33ed2e9d9570c17",
+  "retained_grade_source_sha256": "4b37b02e4ea584fbf91c21ca1fe8454c2447a68cafc154f15d431f520c73358a",
+  "code_sha256": "3f9404f9164d1331cf6e96b05b2c773892f07c1b988b2e71ceaa255bacb0ef5b",
+  "unchanged_procedures": [
+    "v2-availability-abc-shadow-v1:empirical",
+    "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law"
+  ],
+  "histories": [
+    "H-MULTI"
+  ],
+  "product": "lower_median",
+  "selection_rule": "P1_UNROUNDED_POINT_VS_RETAINED_THRESHOLD",
+  "registered_changes": [
+    "B_MINUS_A:samefittedmodel/qualifiedfresherqueryinputs",
+    "C_MINUS_B:originalseparatelyregisteredrefit/priors"
+  ],
+  "fixed_source_choice": "AlreadyfinalretainedWeek8common-offerrows;notchosenfromnewscores",
+  "panel": "Existingall-methodcommon-offermask;ownfullsourcecoverageoutsideitnotestablishedhere",
+  "outcome_version": "NFLVERSE_20261103_FINAL",
+  "captured_games": 13,
+  "full_schedule_games": 14,
+  "missing_game": "2026_WEEK8_THURSDAY_NOT_CAPTURED",
+  "categories_without_offers": [
+    "anytime_td",
+    "nick-chart-ppr-v1"
+  ],
+  "no_new_NFL_fits": true,
+  "no_new_grading": true,
+  "no_new_predictions": true,
+  "limits": {
+    "wall_seconds": 120,
+    "cpu_seconds": 120,
+    "max_RSS_bytes": 1073741824,
+    "new_private_row_bytes": 0
+  }
+}

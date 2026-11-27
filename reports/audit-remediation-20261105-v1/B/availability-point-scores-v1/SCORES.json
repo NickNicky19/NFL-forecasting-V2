@@ -1,0 +1,5654 @@
+[
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-168b6a968140c92a78caa72a",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:168b6a968140c92a78caa72a",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "pass_att",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "5e4d44a6890448b1229d7738e8d23943f16ef6f7e3dfec07303205382b033e69",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_le_1": {
+        "numerator": 3,
+        "denominator": 26,
+        "rate": 0.11538461538461539
+      },
+      "abs_lt_5": {
+        "numerator": 10,
+        "denominator": 26,
+        "rate": 0.38461538461538464
+      },
+      "abs_le_5": {
+        "numerator": 10,
+        "denominator": 26,
+        "rate": 0.38461538461538464
+      },
+      "abs_lt_10": {
+        "numerator": 18,
+        "denominator": 26,
+        "rate": 0.6923076923076923
+      },
+      "abs_le_10": {
+        "numerator": 19,
+        "denominator": 26,
+        "rate": 0.7307692307692307
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 9.307692307692308,
+    "mse": 157.07692307692307,
+    "rmse": 12.533033275186142,
+    "bias": 1.8461538461538463,
+    "p90_abs": 24.0,
+    "p95_abs": 27.5,
+    "max_abs": 30.0,
+    "exact_rate": 0.038461538461538464,
+    "abs_lt_1": 0.038461538461538464,
+    "abs_le_1": 0.11538461538461539,
+    "abs_lt_5": 0.38461538461538464,
+    "abs_le_5": 0.38461538461538464,
+    "abs_lt_10": 0.6923076923076923,
+    "abs_le_10": 0.7307692307692307
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-2740efbc919099dc0ff8c8ae",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:2740efbc919099dc0ff8c8ae",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "pass_cmp",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "c07d67ec57bbac0cb8b3509d870dbed138b9df9d155da46e12b968c2976f0085",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_le_1": {
+        "numerator": 2,
+        "denominator": 26,
+        "rate": 0.07692307692307693
+      },
+      "abs_lt_5": {
+        "numerator": 10,
+        "denominator": 26,
+        "rate": 0.38461538461538464
+      },
+      "abs_le_5": {
+        "numerator": 14,
+        "denominator": 26,
+        "rate": 0.5384615384615384
+      },
+      "abs_lt_10": {
+        "numerator": 18,
+        "denominator": 26,
+        "rate": 0.6923076923076923
+      },
+      "abs_le_10": {
+        "numerator": 19,
+        "denominator": 26,
+        "rate": 0.7307692307692307
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 7.384615384615385,
+    "mse": 88.38461538461539,
+    "rmse": 9.40130923779318,
+    "bias": 1.6153846153846154,
+    "p90_abs": 16.5,
+    "p95_abs": 19.25,
+    "max_abs": 21.0,
+    "exact_rate": 0.038461538461538464,
+    "abs_lt_1": 0.038461538461538464,
+    "abs_le_1": 0.07692307692307693,
+    "abs_lt_5": 0.38461538461538464,
+    "abs_le_5": 0.5384615384615384,
+    "abs_lt_10": 0.6923076923076923,
+    "abs_le_10": 0.7307692307692307
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-48b01299ac3953bc6f5b373c",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:48b01299ac3953bc6f5b373c",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "pass_int",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "e7c7a7deaa38e9caa6a7d5ebacf0e2382b277128a10b79c2fe52b8232489e32d",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 8,
+        "denominator": 26,
+        "rate": 0.3076923076923077
+      },
+      "abs_lt_1": {
+        "numerator": 8,
+        "denominator": 26,
+        "rate": 0.3076923076923077
+      },
+      "abs_le_1": {
+        "numerator": 23,
+        "denominator": 26,
+        "rate": 0.8846153846153846
+      },
+      "abs_lt_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_lt_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 0.9230769230769231,
+    "mse": 1.6923076923076923,
+    "rmse": 1.3008872711759818,
+    "bias": -0.46153846153846156,
+    "p90_abs": 1.5,
+    "p95_abs": 2.75,
+    "max_abs": 4.0,
+    "exact_rate": 0.3076923076923077,
+    "abs_lt_1": 0.3076923076923077,
+    "abs_le_1": 0.8846153846153846,
+    "abs_lt_5": 1.0,
+    "abs_le_5": 1.0,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-47969bfb7b253a53914e6122",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:47969bfb7b253a53914e6122",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "pass_td",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "ecbd0f24e6c240136b57ce1ce826bcfb06d698ea1ad2744faee39588318bbe1d",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 5,
+        "denominator": 26,
+        "rate": 0.19230769230769232
+      },
+      "abs_lt_1": {
+        "numerator": 5,
+        "denominator": 26,
+        "rate": 0.19230769230769232
+      },
+      "abs_le_1": {
+        "numerator": 22,
+        "denominator": 26,
+        "rate": 0.8461538461538461
+      },
+      "abs_lt_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_lt_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 1.0,
+    "mse": 1.4615384615384615,
+    "rmse": 1.2089410496539776,
+    "bias": -0.07692307692307693,
+    "p90_abs": 2.0,
+    "p95_abs": 2.0,
+    "max_abs": 3.0,
+    "exact_rate": 0.19230769230769232,
+    "abs_lt_1": 0.19230769230769232,
+    "abs_le_1": 0.8461538461538461,
+    "abs_lt_5": 1.0,
+    "abs_le_5": 1.0,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-020fb2438af8da71bce81dfb",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:020fb2438af8da71bce81dfb",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "pass_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "2feabb4efd3df11ee4119df85ef8a93a30df515c27fe5721e5dc6589bbee2589",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_lt_5": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_le_5": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_lt_10": {
+        "numerator": 3,
+        "denominator": 26,
+        "rate": 0.11538461538461539
+      },
+      "abs_le_10": {
+        "numerator": 4,
+        "denominator": 26,
+        "rate": 0.15384615384615385
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 81.76923076923077,
+    "mse": 10829.615384615385,
+    "rmse": 104.06543799271391,
+    "bias": 4.230769230769231,
+    "p90_abs": 180.5,
+    "p95_abs": 213.5,
+    "max_abs": 217.0,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.0,
+    "abs_lt_5": 0.0,
+    "abs_le_5": 0.0,
+    "abs_lt_10": 0.11538461538461539,
+    "abs_le_10": 0.15384615384615385
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-b22e9f6fbf705383853b9f44",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:b22e9f6fbf705383853b9f44",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "rec",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "TE",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 158,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 148,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 9,
+      "PARTICIPATION_NOT_ESTABLISHED_BY_PHYSICAL_CREDIT": 1
+    },
+    "unique_games": 13,
+    "unique_players": 148,
+    "unique_player_games": 148,
+    "membership_sha256": "b1322c3cf29ef7b4518b07e06f6db3384e0288684c257faf77f86781ade00739",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 35,
+        "denominator": 148,
+        "rate": 0.23648648648648649
+      },
+      "abs_lt_1": {
+        "numerator": 35,
+        "denominator": 148,
+        "rate": 0.23648648648648649
+      },
+      "abs_le_1": {
+        "numerator": 80,
+        "denominator": 148,
+        "rate": 0.5405405405405406
+      },
+      "abs_lt_5": {
+        "numerator": 139,
+        "denominator": 148,
+        "rate": 0.9391891891891891
+      },
+      "abs_le_5": {
+        "numerator": 145,
+        "denominator": 148,
+        "rate": 0.9797297297297297
+      },
+      "abs_lt_10": {
+        "numerator": 148,
+        "denominator": 148,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 148,
+        "denominator": 148,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 148,
+    "mae": 1.6554054054054055,
+    "mse": 4.925675675675675,
+    "rmse": 2.219386328622323,
+    "bias": -0.31756756756756754,
+    "p90_abs": 4.0,
+    "p95_abs": 5.0,
+    "max_abs": 6.0,
+    "exact_rate": 0.23648648648648649,
+    "abs_lt_1": 0.23648648648648649,
+    "abs_le_1": 0.5405405405405406,
+    "abs_lt_5": 0.9391891891891891,
+    "abs_le_5": 0.9797297297297297,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-2f0fcbc0d146dd85bf5fd8fa",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:2f0fcbc0d146dd85bf5fd8fa",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "rec_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "TE",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 159,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 149,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 9,
+      "PARTICIPATION_NOT_ESTABLISHED_BY_PHYSICAL_CREDIT": 1
+    },
+    "unique_games": 13,
+    "unique_players": 149,
+    "unique_player_games": 149,
+    "membership_sha256": "e72f0b99d65a7e6bceb5711f7bd8883ec5702eca76db6971c8d40e89c86fd84b",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 6,
+        "denominator": 149,
+        "rate": 0.040268456375838924
+      },
+      "abs_lt_1": {
+        "numerator": 6,
+        "denominator": 149,
+        "rate": 0.040268456375838924
+      },
+      "abs_le_1": {
+        "numerator": 8,
+        "denominator": 149,
+        "rate": 0.053691275167785234
+      },
+      "abs_lt_5": {
+        "numerator": 20,
+        "denominator": 149,
+        "rate": 0.1342281879194631
+      },
+      "abs_le_5": {
+        "numerator": 21,
+        "denominator": 149,
+        "rate": 0.14093959731543623
+      },
+      "abs_lt_10": {
+        "numerator": 45,
+        "denominator": 149,
+        "rate": 0.30201342281879195
+      },
+      "abs_le_10": {
+        "numerator": 49,
+        "denominator": 149,
+        "rate": 0.3288590604026846
+      }
+    },
+    "new_fits": 0,
+    "n": 149,
+    "mae": 24.201342281879196,
+    "mse": 1115.1275167785234,
+    "rmse": 33.393525072662264,
+    "bias": -7.328859060402684,
+    "p90_abs": 51.60000000000005,
+    "p95_abs": 65.79999999999998,
+    "max_abs": 121.0,
+    "exact_rate": 0.040268456375838924,
+    "abs_lt_1": 0.040268456375838924,
+    "abs_le_1": 0.053691275167785234,
+    "abs_lt_5": 0.1342281879194631,
+    "abs_le_5": 0.14093959731543623,
+    "abs_lt_10": 0.30201342281879195,
+    "abs_le_10": 0.3288590604026846
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-282d5198fc1cfcdbe8345b3c",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:282d5198fc1cfcdbe8345b3c",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "rush_att",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 40,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 39,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 1
+    },
+    "unique_games": 13,
+    "unique_players": 39,
+    "unique_player_games": 39,
+    "membership_sha256": "ea4d4a8db392e602ae36ebef60291afab7087b3f7202df8146872ca7236193fa",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 4,
+        "denominator": 39,
+        "rate": 0.10256410256410256
+      },
+      "abs_lt_1": {
+        "numerator": 4,
+        "denominator": 39,
+        "rate": 0.10256410256410256
+      },
+      "abs_le_1": {
+        "numerator": 6,
+        "denominator": 39,
+        "rate": 0.15384615384615385
+      },
+      "abs_lt_5": {
+        "numerator": 15,
+        "denominator": 39,
+        "rate": 0.38461538461538464
+      },
+      "abs_le_5": {
+        "numerator": 20,
+        "denominator": 39,
+        "rate": 0.5128205128205128
+      },
+      "abs_lt_10": {
+        "numerator": 32,
+        "denominator": 39,
+        "rate": 0.8205128205128205
+      },
+      "abs_le_10": {
+        "numerator": 32,
+        "denominator": 39,
+        "rate": 0.8205128205128205
+      }
+    },
+    "new_fits": 0,
+    "n": 39,
+    "mae": 5.948717948717949,
+    "mse": 52.51282051282051,
+    "rmse": 7.246573018525413,
+    "bias": -2.2564102564102564,
+    "p90_abs": 12.0,
+    "p95_abs": 13.100000000000001,
+    "max_abs": 16.0,
+    "exact_rate": 0.10256410256410256,
+    "abs_lt_1": 0.10256410256410256,
+    "abs_le_1": 0.15384615384615385,
+    "abs_lt_5": 0.38461538461538464,
+    "abs_le_5": 0.5128205128205128,
+    "abs_lt_10": 0.8205128205128205,
+    "abs_le_10": 0.8205128205128205
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-175b5cf2392750d79d8b2865",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:175b5cf2392750d79d8b2865",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "rush_rec_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 39,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 37,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 2
+    },
+    "unique_games": 13,
+    "unique_players": 37,
+    "unique_player_games": 37,
+    "membership_sha256": "e6ada2a85e05b418636176d993f7e411059bc5a7ce57a5ea9f987581eeac1ed4",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 37,
+        "rate": 0.02702702702702703
+      },
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 37,
+        "rate": 0.02702702702702703
+      },
+      "abs_le_1": {
+        "numerator": 1,
+        "denominator": 37,
+        "rate": 0.02702702702702703
+      },
+      "abs_lt_5": {
+        "numerator": 4,
+        "denominator": 37,
+        "rate": 0.10810810810810811
+      },
+      "abs_le_5": {
+        "numerator": 4,
+        "denominator": 37,
+        "rate": 0.10810810810810811
+      },
+      "abs_lt_10": {
+        "numerator": 9,
+        "denominator": 37,
+        "rate": 0.24324324324324326
+      },
+      "abs_le_10": {
+        "numerator": 10,
+        "denominator": 37,
+        "rate": 0.2702702702702703
+      }
+    },
+    "new_fits": 0,
+    "n": 37,
+    "mae": 38.945945945945944,
+    "mse": 2787.810810810811,
+    "rmse": 52.79972358650006,
+    "bias": -18.405405405405407,
+    "p90_abs": 93.19999999999997,
+    "p95_abs": 116.6,
+    "max_abs": 136.0,
+    "exact_rate": 0.02702702702702703,
+    "abs_lt_1": 0.02702702702702703,
+    "abs_le_1": 0.02702702702702703,
+    "abs_lt_5": 0.10810810810810811,
+    "abs_le_5": 0.10810810810810811,
+    "abs_lt_10": 0.24324324324324326,
+    "abs_le_10": 0.2702702702702703
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-0ca57bc2bc0f77d75f361928",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:0ca57bc2bc0f77d75f361928",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "rush_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 55,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 52,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 3
+    },
+    "unique_games": 13,
+    "unique_players": 52,
+    "unique_player_games": 52,
+    "membership_sha256": "ceaedb9a1aed57e8ce625a17ba24a2d6855979946f5cc6bd432a755df9156eff",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 52,
+        "rate": 0.019230769230769232
+      },
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 52,
+        "rate": 0.019230769230769232
+      },
+      "abs_le_1": {
+        "numerator": 5,
+        "denominator": 52,
+        "rate": 0.09615384615384616
+      },
+      "abs_lt_5": {
+        "numerator": 9,
+        "denominator": 52,
+        "rate": 0.17307692307692307
+      },
+      "abs_le_5": {
+        "numerator": 10,
+        "denominator": 52,
+        "rate": 0.19230769230769232
+      },
+      "abs_lt_10": {
+        "numerator": 12,
+        "denominator": 52,
+        "rate": 0.23076923076923078
+      },
+      "abs_le_10": {
+        "numerator": 12,
+        "denominator": 52,
+        "rate": 0.23076923076923078
+      }
+    },
+    "new_fits": 0,
+    "n": 52,
+    "mae": 31.923076923076923,
+    "mse": 1992.3846153846155,
+    "rmse": 44.636135757753664,
+    "bias": -14.538461538461538,
+    "p90_abs": 80.29999999999998,
+    "p95_abs": 105.24999999999997,
+    "max_abs": 123.0,
+    "exact_rate": 0.019230769230769232,
+    "abs_lt_1": 0.019230769230769232,
+    "abs_le_1": 0.09615384615384616,
+    "abs_lt_5": 0.17307692307692307,
+    "abs_le_5": 0.19230769230769232,
+    "abs_lt_10": 0.23076923076923078,
+    "abs_le_10": 0.23076923076923078
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-f8fe04e5476a2156ef5c311e",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:f8fe04e5476a2156ef5c311e",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "pass_att",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "5e4d44a6890448b1229d7738e8d23943f16ef6f7e3dfec07303205382b033e69",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_le_1": {
+        "numerator": 3,
+        "denominator": 26,
+        "rate": 0.11538461538461539
+      },
+      "abs_lt_5": {
+        "numerator": 9,
+        "denominator": 26,
+        "rate": 0.34615384615384615
+      },
+      "abs_le_5": {
+        "numerator": 9,
+        "denominator": 26,
+        "rate": 0.34615384615384615
+      },
+      "abs_lt_10": {
+        "numerator": 18,
+        "denominator": 26,
+        "rate": 0.6923076923076923
+      },
+      "abs_le_10": {
+        "numerator": 19,
+        "denominator": 26,
+        "rate": 0.7307692307692307
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 9.461538461538462,
+    "mse": 157.84615384615384,
+    "rmse": 12.56368392813803,
+    "bias": 2.0,
+    "p90_abs": 23.5,
+    "p95_abs": 27.5,
+    "max_abs": 30.0,
+    "exact_rate": 0.038461538461538464,
+    "abs_lt_1": 0.038461538461538464,
+    "abs_le_1": 0.11538461538461539,
+    "abs_lt_5": 0.34615384615384615,
+    "abs_le_5": 0.34615384615384615,
+    "abs_lt_10": 0.6923076923076923,
+    "abs_le_10": 0.7307692307692307
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-656e2ff53198a1c0ec192cf8",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:656e2ff53198a1c0ec192cf8",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "pass_cmp",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "c07d67ec57bbac0cb8b3509d870dbed138b9df9d155da46e12b968c2976f0085",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_le_1": {
+        "numerator": 2,
+        "denominator": 26,
+        "rate": 0.07692307692307693
+      },
+      "abs_lt_5": {
+        "numerator": 10,
+        "denominator": 26,
+        "rate": 0.38461538461538464
+      },
+      "abs_le_5": {
+        "numerator": 13,
+        "denominator": 26,
+        "rate": 0.5
+      },
+      "abs_lt_10": {
+        "numerator": 18,
+        "denominator": 26,
+        "rate": 0.6923076923076923
+      },
+      "abs_le_10": {
+        "numerator": 18,
+        "denominator": 26,
+        "rate": 0.6923076923076923
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 7.461538461538462,
+    "mse": 88.61538461538461,
+    "rmse": 9.413574486632834,
+    "bias": 1.6923076923076923,
+    "p90_abs": 16.0,
+    "p95_abs": 19.25,
+    "max_abs": 21.0,
+    "exact_rate": 0.038461538461538464,
+    "abs_lt_1": 0.038461538461538464,
+    "abs_le_1": 0.07692307692307693,
+    "abs_lt_5": 0.38461538461538464,
+    "abs_le_5": 0.5,
+    "abs_lt_10": 0.6923076923076923,
+    "abs_le_10": 0.6923076923076923
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-953cb5cca53b55b7d0a8bdc6",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:953cb5cca53b55b7d0a8bdc6",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "pass_int",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "e7c7a7deaa38e9caa6a7d5ebacf0e2382b277128a10b79c2fe52b8232489e32d",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 8,
+        "denominator": 26,
+        "rate": 0.3076923076923077
+      },
+      "abs_lt_1": {
+        "numerator": 8,
+        "denominator": 26,
+        "rate": 0.3076923076923077
+      },
+      "abs_le_1": {
+        "numerator": 23,
+        "denominator": 26,
+        "rate": 0.8846153846153846
+      },
+      "abs_lt_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_lt_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 0.9230769230769231,
+    "mse": 1.6923076923076923,
+    "rmse": 1.3008872711759818,
+    "bias": -0.46153846153846156,
+    "p90_abs": 1.5,
+    "p95_abs": 2.75,
+    "max_abs": 4.0,
+    "exact_rate": 0.3076923076923077,
+    "abs_lt_1": 0.3076923076923077,
+    "abs_le_1": 0.8846153846153846,
+    "abs_lt_5": 1.0,
+    "abs_le_5": 1.0,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-14c1c4c944352e9e513b6de6",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:14c1c4c944352e9e513b6de6",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "pass_td",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "ecbd0f24e6c240136b57ce1ce826bcfb06d698ea1ad2744faee39588318bbe1d",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 5,
+        "denominator": 26,
+        "rate": 0.19230769230769232
+      },
+      "abs_lt_1": {
+        "numerator": 5,
+        "denominator": 26,
+        "rate": 0.19230769230769232
+      },
+      "abs_le_1": {
+        "numerator": 23,
+        "denominator": 26,
+        "rate": 0.8846153846153846
+      },
+      "abs_lt_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_lt_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 0.9615384615384616,
+    "mse": 1.3461538461538463,
+    "rmse": 1.1602387022306428,
+    "bias": -0.11538461538461539,
+    "p90_abs": 1.5,
+    "p95_abs": 2.0,
+    "max_abs": 3.0,
+    "exact_rate": 0.19230769230769232,
+    "abs_lt_1": 0.19230769230769232,
+    "abs_le_1": 0.8846153846153846,
+    "abs_lt_5": 1.0,
+    "abs_le_5": 1.0,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-037fc778a76a2f7016e25465",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:037fc778a76a2f7016e25465",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "pass_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "2feabb4efd3df11ee4119df85ef8a93a30df515c27fe5721e5dc6589bbee2589",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_lt_5": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_le_5": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_lt_10": {
+        "numerator": 4,
+        "denominator": 26,
+        "rate": 0.15384615384615385
+      },
+      "abs_le_10": {
+        "numerator": 4,
+        "denominator": 26,
+        "rate": 0.15384615384615385
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 81.07692307692308,
+    "mse": 10715.923076923076,
+    "rmse": 103.5177428121531,
+    "bias": 4.3076923076923075,
+    "p90_abs": 179.5,
+    "p95_abs": 213.0,
+    "max_abs": 217.0,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.0,
+    "abs_lt_5": 0.038461538461538464,
+    "abs_le_5": 0.038461538461538464,
+    "abs_lt_10": 0.15384615384615385,
+    "abs_le_10": 0.15384615384615385
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-af5a273dbea23be1fd2b8dc6",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:af5a273dbea23be1fd2b8dc6",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "rec",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "TE",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 158,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 148,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 9,
+      "PARTICIPATION_NOT_ESTABLISHED_BY_PHYSICAL_CREDIT": 1
+    },
+    "unique_games": 13,
+    "unique_players": 148,
+    "unique_player_games": 148,
+    "membership_sha256": "b1322c3cf29ef7b4518b07e06f6db3384e0288684c257faf77f86781ade00739",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 32,
+        "denominator": 148,
+        "rate": 0.21621621621621623
+      },
+      "abs_lt_1": {
+        "numerator": 32,
+        "denominator": 148,
+        "rate": 0.21621621621621623
+      },
+      "abs_le_1": {
+        "numerator": 79,
+        "denominator": 148,
+        "rate": 0.5337837837837838
+      },
+      "abs_lt_5": {
+        "numerator": 140,
+        "denominator": 148,
+        "rate": 0.9459459459459459
+      },
+      "abs_le_5": {
+        "numerator": 145,
+        "denominator": 148,
+        "rate": 0.9797297297297297
+      },
+      "abs_lt_10": {
+        "numerator": 148,
+        "denominator": 148,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 148,
+        "denominator": 148,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 148,
+    "mae": 1.6486486486486487,
+    "mse": 4.743243243243243,
+    "rmse": 2.1778988138210744,
+    "bias": -0.28378378378378377,
+    "p90_abs": 4.0,
+    "p95_abs": 4.650000000000006,
+    "max_abs": 6.0,
+    "exact_rate": 0.21621621621621623,
+    "abs_lt_1": 0.21621621621621623,
+    "abs_le_1": 0.5337837837837838,
+    "abs_lt_5": 0.9459459459459459,
+    "abs_le_5": 0.9797297297297297,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-3cad2cf4fd27be74b889d6a2",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:3cad2cf4fd27be74b889d6a2",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "rec_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "TE",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 159,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 149,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 9,
+      "PARTICIPATION_NOT_ESTABLISHED_BY_PHYSICAL_CREDIT": 1
+    },
+    "unique_games": 13,
+    "unique_players": 149,
+    "unique_player_games": 149,
+    "membership_sha256": "e72f0b99d65a7e6bceb5711f7bd8883ec5702eca76db6971c8d40e89c86fd84b",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 5,
+        "denominator": 149,
+        "rate": 0.03355704697986577
+      },
+      "abs_lt_1": {
+        "numerator": 5,
+        "denominator": 149,
+        "rate": 0.03355704697986577
+      },
+      "abs_le_1": {
+        "numerator": 6,
+        "denominator": 149,
+        "rate": 0.040268456375838924
+      },
+      "abs_lt_5": {
+        "numerator": 18,
+        "denominator": 149,
+        "rate": 0.12080536912751678
+      },
+      "abs_le_5": {
+        "numerator": 19,
+        "denominator": 149,
+        "rate": 0.12751677852348994
+      },
+      "abs_lt_10": {
+        "numerator": 44,
+        "denominator": 149,
+        "rate": 0.2953020134228188
+      },
+      "abs_le_10": {
+        "numerator": 50,
+        "denominator": 149,
+        "rate": 0.33557046979865773
+      }
+    },
+    "new_fits": 0,
+    "n": 149,
+    "mae": 24.006711409395972,
+    "mse": 1087.6845637583892,
+    "rmse": 32.98006312544579,
+    "bias": -6.6644295302013425,
+    "p90_abs": 51.0,
+    "p95_abs": 65.79999999999998,
+    "max_abs": 122.0,
+    "exact_rate": 0.03355704697986577,
+    "abs_lt_1": 0.03355704697986577,
+    "abs_le_1": 0.040268456375838924,
+    "abs_lt_5": 0.12080536912751678,
+    "abs_le_5": 0.12751677852348994,
+    "abs_lt_10": 0.2953020134228188,
+    "abs_le_10": 0.33557046979865773
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-f171d1118521c75b11a1a8a4",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:f171d1118521c75b11a1a8a4",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "rush_att",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 40,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 39,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 1
+    },
+    "unique_games": 13,
+    "unique_players": 39,
+    "unique_player_games": 39,
+    "membership_sha256": "ea4d4a8db392e602ae36ebef60291afab7087b3f7202df8146872ca7236193fa",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 4,
+        "denominator": 39,
+        "rate": 0.10256410256410256
+      },
+      "abs_lt_1": {
+        "numerator": 4,
+        "denominator": 39,
+        "rate": 0.10256410256410256
+      },
+      "abs_le_1": {
+        "numerator": 7,
+        "denominator": 39,
+        "rate": 0.1794871794871795
+      },
+      "abs_lt_5": {
+        "numerator": 16,
+        "denominator": 39,
+        "rate": 0.41025641025641024
+      },
+      "abs_le_5": {
+        "numerator": 20,
+        "denominator": 39,
+        "rate": 0.5128205128205128
+      },
+      "abs_lt_10": {
+        "numerator": 33,
+        "denominator": 39,
+        "rate": 0.8461538461538461
+      },
+      "abs_le_10": {
+        "numerator": 33,
+        "denominator": 39,
+        "rate": 0.8461538461538461
+      }
+    },
+    "new_fits": 0,
+    "n": 39,
+    "mae": 5.666666666666667,
+    "mse": 48.69230769230769,
+    "rmse": 6.977987366877909,
+    "bias": -2.0256410256410255,
+    "p90_abs": 12.0,
+    "p95_abs": 13.0,
+    "max_abs": 16.0,
+    "exact_rate": 0.10256410256410256,
+    "abs_lt_1": 0.10256410256410256,
+    "abs_le_1": 0.1794871794871795,
+    "abs_lt_5": 0.41025641025641024,
+    "abs_le_5": 0.5128205128205128,
+    "abs_lt_10": 0.8461538461538461,
+    "abs_le_10": 0.8461538461538461
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-7d7b59bef901398524d478cf",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:7d7b59bef901398524d478cf",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "rush_rec_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 39,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 37,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 2
+    },
+    "unique_games": 13,
+    "unique_players": 37,
+    "unique_player_games": 37,
+    "membership_sha256": "e6ada2a85e05b418636176d993f7e411059bc5a7ce57a5ea9f987581eeac1ed4",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 37,
+        "rate": 0.02702702702702703
+      },
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 37,
+        "rate": 0.02702702702702703
+      },
+      "abs_le_1": {
+        "numerator": 1,
+        "denominator": 37,
+        "rate": 0.02702702702702703
+      },
+      "abs_lt_5": {
+        "numerator": 4,
+        "denominator": 37,
+        "rate": 0.10810810810810811
+      },
+      "abs_le_5": {
+        "numerator": 4,
+        "denominator": 37,
+        "rate": 0.10810810810810811
+      },
+      "abs_lt_10": {
+        "numerator": 9,
+        "denominator": 37,
+        "rate": 0.24324324324324326
+      },
+      "abs_le_10": {
+        "numerator": 10,
+        "denominator": 37,
+        "rate": 0.2702702702702703
+      }
+    },
+    "new_fits": 0,
+    "n": 37,
+    "mae": 37.108108108108105,
+    "mse": 2554.7837837837837,
+    "rmse": 50.544869015398426,
+    "bias": -16.89189189189189,
+    "p90_abs": 82.39999999999999,
+    "p95_abs": 117.99999999999996,
+    "max_abs": 136.0,
+    "exact_rate": 0.02702702702702703,
+    "abs_lt_1": 0.02702702702702703,
+    "abs_le_1": 0.02702702702702703,
+    "abs_lt_5": 0.10810810810810811,
+    "abs_le_5": 0.10810810810810811,
+    "abs_lt_10": 0.24324324324324326,
+    "abs_le_10": 0.2702702702702703
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-07f6edf4482afa100622e9d1",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:07f6edf4482afa100622e9d1",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "rush_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 55,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 52,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 3
+    },
+    "unique_games": 13,
+    "unique_players": 52,
+    "unique_player_games": 52,
+    "membership_sha256": "ceaedb9a1aed57e8ce625a17ba24a2d6855979946f5cc6bd432a755df9156eff",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 52,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 52,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 3,
+        "denominator": 52,
+        "rate": 0.057692307692307696
+      },
+      "abs_lt_5": {
+        "numerator": 8,
+        "denominator": 52,
+        "rate": 0.15384615384615385
+      },
+      "abs_le_5": {
+        "numerator": 8,
+        "denominator": 52,
+        "rate": 0.15384615384615385
+      },
+      "abs_lt_10": {
+        "numerator": 12,
+        "denominator": 52,
+        "rate": 0.23076923076923078
+      },
+      "abs_le_10": {
+        "numerator": 13,
+        "denominator": 52,
+        "rate": 0.25
+      }
+    },
+    "new_fits": 0,
+    "n": 52,
+    "mae": 31.23076923076923,
+    "mse": 1939.0384615384614,
+    "rmse": 44.03451443513896,
+    "bias": -14.0,
+    "p90_abs": 80.29999999999998,
+    "p95_abs": 105.24999999999997,
+    "max_abs": 123.0,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.057692307692307696,
+    "abs_lt_5": 0.15384615384615385,
+    "abs_le_5": 0.15384615384615385,
+    "abs_lt_10": 0.23076923076923078,
+    "abs_le_10": 0.25
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-54540698e1fca9557fddb8e0",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:54540698e1fca9557fddb8e0",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "pass_att",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "5e4d44a6890448b1229d7738e8d23943f16ef6f7e3dfec07303205382b033e69",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 2,
+        "denominator": 26,
+        "rate": 0.07692307692307693
+      },
+      "abs_lt_5": {
+        "numerator": 10,
+        "denominator": 26,
+        "rate": 0.38461538461538464
+      },
+      "abs_le_5": {
+        "numerator": 12,
+        "denominator": 26,
+        "rate": 0.46153846153846156
+      },
+      "abs_lt_10": {
+        "numerator": 17,
+        "denominator": 26,
+        "rate": 0.6538461538461539
+      },
+      "abs_le_10": {
+        "numerator": 20,
+        "denominator": 26,
+        "rate": 0.7692307692307693
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 8.153846153846153,
+    "mse": 112.46153846153847,
+    "rmse": 10.604788468495657,
+    "bias": 3.076923076923077,
+    "p90_abs": 16.0,
+    "p95_abs": 23.25,
+    "max_abs": 28.0,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.07692307692307693,
+    "abs_lt_5": 0.38461538461538464,
+    "abs_le_5": 0.46153846153846156,
+    "abs_lt_10": 0.6538461538461539,
+    "abs_le_10": 0.7692307692307693
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-6654a28b04b27388f5afad0b",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:6654a28b04b27388f5afad0b",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "pass_cmp",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "c07d67ec57bbac0cb8b3509d870dbed138b9df9d155da46e12b968c2976f0085",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 2,
+        "denominator": 26,
+        "rate": 0.07692307692307693
+      },
+      "abs_lt_1": {
+        "numerator": 2,
+        "denominator": 26,
+        "rate": 0.07692307692307693
+      },
+      "abs_le_1": {
+        "numerator": 4,
+        "denominator": 26,
+        "rate": 0.15384615384615385
+      },
+      "abs_lt_5": {
+        "numerator": 12,
+        "denominator": 26,
+        "rate": 0.46153846153846156
+      },
+      "abs_le_5": {
+        "numerator": 14,
+        "denominator": 26,
+        "rate": 0.5384615384615384
+      },
+      "abs_lt_10": {
+        "numerator": 19,
+        "denominator": 26,
+        "rate": 0.7307692307692307
+      },
+      "abs_le_10": {
+        "numerator": 20,
+        "denominator": 26,
+        "rate": 0.7692307692307693
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 6.6923076923076925,
+    "mse": 72.53846153846153,
+    "rmse": 8.516951422807432,
+    "bias": 2.076923076923077,
+    "p90_abs": 14.0,
+    "p95_abs": 17.25,
+    "max_abs": 20.0,
+    "exact_rate": 0.07692307692307693,
+    "abs_lt_1": 0.07692307692307693,
+    "abs_le_1": 0.15384615384615385,
+    "abs_lt_5": 0.46153846153846156,
+    "abs_le_5": 0.5384615384615384,
+    "abs_lt_10": 0.7307692307692307,
+    "abs_le_10": 0.7692307692307693
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-7a2d63697223ba0a555f2977",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:7a2d63697223ba0a555f2977",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "pass_int",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "e7c7a7deaa38e9caa6a7d5ebacf0e2382b277128a10b79c2fe52b8232489e32d",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 12,
+        "denominator": 26,
+        "rate": 0.46153846153846156
+      },
+      "abs_lt_1": {
+        "numerator": 12,
+        "denominator": 26,
+        "rate": 0.46153846153846156
+      },
+      "abs_le_1": {
+        "numerator": 22,
+        "denominator": 26,
+        "rate": 0.8461538461538461
+      },
+      "abs_lt_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_lt_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 0.8076923076923077,
+    "mse": 1.6538461538461537,
+    "rmse": 1.286019499792345,
+    "bias": -0.8076923076923077,
+    "p90_abs": 2.0,
+    "p95_abs": 2.75,
+    "max_abs": 4.0,
+    "exact_rate": 0.46153846153846156,
+    "abs_lt_1": 0.46153846153846156,
+    "abs_le_1": 0.8461538461538461,
+    "abs_lt_5": 1.0,
+    "abs_le_5": 1.0,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-bbd47dd8ec5a69b7e18a0981",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:bbd47dd8ec5a69b7e18a0981",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "pass_td",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "ecbd0f24e6c240136b57ce1ce826bcfb06d698ea1ad2744faee39588318bbe1d",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 5,
+        "denominator": 26,
+        "rate": 0.19230769230769232
+      },
+      "abs_lt_1": {
+        "numerator": 5,
+        "denominator": 26,
+        "rate": 0.19230769230769232
+      },
+      "abs_le_1": {
+        "numerator": 24,
+        "denominator": 26,
+        "rate": 0.9230769230769231
+      },
+      "abs_lt_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_lt_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 0.9230769230769231,
+    "mse": 1.2307692307692308,
+    "rmse": 1.1094003924504583,
+    "bias": -0.15384615384615385,
+    "p90_abs": 1.0,
+    "p95_abs": 1.75,
+    "max_abs": 3.0,
+    "exact_rate": 0.19230769230769232,
+    "abs_lt_1": 0.19230769230769232,
+    "abs_le_1": 0.9230769230769231,
+    "abs_lt_5": 1.0,
+    "abs_le_5": 1.0,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-9f0f7999419c47d142ac60aa",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:9f0f7999419c47d142ac60aa",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "pass_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "2feabb4efd3df11ee4119df85ef8a93a30df515c27fe5721e5dc6589bbee2589",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_lt_5": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_le_5": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_lt_10": {
+        "numerator": 2,
+        "denominator": 26,
+        "rate": 0.07692307692307693
+      },
+      "abs_le_10": {
+        "numerator": 2,
+        "denominator": 26,
+        "rate": 0.07692307692307693
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 73.57692307692308,
+    "mse": 9185.576923076924,
+    "rmse": 95.84141548973973,
+    "bias": 10.038461538461538,
+    "p90_abs": 166.5,
+    "p95_abs": 214.25,
+    "max_abs": 222.0,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.0,
+    "abs_lt_5": 0.0,
+    "abs_le_5": 0.038461538461538464,
+    "abs_lt_10": 0.07692307692307693,
+    "abs_le_10": 0.07692307692307693
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-6d6a114ef128b557b2ce5a5f",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:6d6a114ef128b557b2ce5a5f",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "rec",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "TE",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 158,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 148,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 9,
+      "PARTICIPATION_NOT_ESTABLISHED_BY_PHYSICAL_CREDIT": 1
+    },
+    "unique_games": 13,
+    "unique_players": 148,
+    "unique_player_games": 148,
+    "membership_sha256": "b1322c3cf29ef7b4518b07e06f6db3384e0288684c257faf77f86781ade00739",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 31,
+        "denominator": 148,
+        "rate": 0.20945945945945946
+      },
+      "abs_lt_1": {
+        "numerator": 31,
+        "denominator": 148,
+        "rate": 0.20945945945945946
+      },
+      "abs_le_1": {
+        "numerator": 84,
+        "denominator": 148,
+        "rate": 0.5675675675675675
+      },
+      "abs_lt_5": {
+        "numerator": 143,
+        "denominator": 148,
+        "rate": 0.9662162162162162
+      },
+      "abs_le_5": {
+        "numerator": 145,
+        "denominator": 148,
+        "rate": 0.9797297297297297
+      },
+      "abs_lt_10": {
+        "numerator": 148,
+        "denominator": 148,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 148,
+        "denominator": 148,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 148,
+    "mae": 1.587837837837838,
+    "mse": 4.412162162162162,
+    "rmse": 2.1005147374303665,
+    "bias": -0.4391891891891892,
+    "p90_abs": 3.0,
+    "p95_abs": 4.0,
+    "max_abs": 7.0,
+    "exact_rate": 0.20945945945945946,
+    "abs_lt_1": 0.20945945945945946,
+    "abs_le_1": 0.5675675675675675,
+    "abs_lt_5": 0.9662162162162162,
+    "abs_le_5": 0.9797297297297297,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-a1b905ef76f64c4921b0ef78",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:a1b905ef76f64c4921b0ef78",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "rec_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "TE",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 159,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 149,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 9,
+      "PARTICIPATION_NOT_ESTABLISHED_BY_PHYSICAL_CREDIT": 1
+    },
+    "unique_games": 13,
+    "unique_players": 149,
+    "unique_player_games": 149,
+    "membership_sha256": "e72f0b99d65a7e6bceb5711f7bd8883ec5702eca76db6971c8d40e89c86fd84b",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 8,
+        "denominator": 149,
+        "rate": 0.053691275167785234
+      },
+      "abs_lt_1": {
+        "numerator": 8,
+        "denominator": 149,
+        "rate": 0.053691275167785234
+      },
+      "abs_le_1": {
+        "numerator": 15,
+        "denominator": 149,
+        "rate": 0.10067114093959731
+      },
+      "abs_lt_5": {
+        "numerator": 33,
+        "denominator": 149,
+        "rate": 0.2214765100671141
+      },
+      "abs_le_5": {
+        "numerator": 36,
+        "denominator": 149,
+        "rate": 0.24161073825503357
+      },
+      "abs_lt_10": {
+        "numerator": 55,
+        "denominator": 149,
+        "rate": 0.3691275167785235
+      },
+      "abs_le_10": {
+        "numerator": 59,
+        "denominator": 149,
+        "rate": 0.3959731543624161
+      }
+    },
+    "new_fits": 0,
+    "n": 149,
+    "mae": 21.845637583892618,
+    "mse": 1035.9127516778524,
+    "rmse": 32.1855985135876,
+    "bias": -9.644295302013424,
+    "p90_abs": 53.20000000000002,
+    "p95_abs": 63.799999999999955,
+    "max_abs": 136.0,
+    "exact_rate": 0.053691275167785234,
+    "abs_lt_1": 0.053691275167785234,
+    "abs_le_1": 0.10067114093959731,
+    "abs_lt_5": 0.2214765100671141,
+    "abs_le_5": 0.24161073825503357,
+    "abs_lt_10": 0.3691275167785235,
+    "abs_le_10": 0.3959731543624161
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-8be5ae8d723a84fbd8ad9fb0",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:8be5ae8d723a84fbd8ad9fb0",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "rush_att",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 40,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 39,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 1
+    },
+    "unique_games": 13,
+    "unique_players": 39,
+    "unique_player_games": 39,
+    "membership_sha256": "ea4d4a8db392e602ae36ebef60291afab7087b3f7202df8146872ca7236193fa",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 39,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 39,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 4,
+        "denominator": 39,
+        "rate": 0.10256410256410256
+      },
+      "abs_lt_5": {
+        "numerator": 21,
+        "denominator": 39,
+        "rate": 0.5384615384615384
+      },
+      "abs_le_5": {
+        "numerator": 24,
+        "denominator": 39,
+        "rate": 0.6153846153846154
+      },
+      "abs_lt_10": {
+        "numerator": 33,
+        "denominator": 39,
+        "rate": 0.8461538461538461
+      },
+      "abs_le_10": {
+        "numerator": 34,
+        "denominator": 39,
+        "rate": 0.8717948717948718
+      }
+    },
+    "new_fits": 0,
+    "n": 39,
+    "mae": 5.102564102564102,
+    "mse": 36.794871794871796,
+    "rmse": 6.06587766072411,
+    "bias": -1.7179487179487178,
+    "p90_abs": 11.0,
+    "p95_abs": 12.0,
+    "max_abs": 12.0,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.10256410256410256,
+    "abs_lt_5": 0.5384615384615384,
+    "abs_le_5": 0.6153846153846154,
+    "abs_lt_10": 0.8461538461538461,
+    "abs_le_10": 0.8717948717948718
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-f016533178794cc7589903d2",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:f016533178794cc7589903d2",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "rush_rec_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 39,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 37,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 2
+    },
+    "unique_games": 13,
+    "unique_players": 37,
+    "unique_player_games": 37,
+    "membership_sha256": "e6ada2a85e05b418636176d993f7e411059bc5a7ce57a5ea9f987581eeac1ed4",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 37,
+        "rate": 0.02702702702702703
+      },
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 37,
+        "rate": 0.02702702702702703
+      },
+      "abs_le_1": {
+        "numerator": 3,
+        "denominator": 37,
+        "rate": 0.08108108108108109
+      },
+      "abs_lt_5": {
+        "numerator": 5,
+        "denominator": 37,
+        "rate": 0.13513513513513514
+      },
+      "abs_le_5": {
+        "numerator": 6,
+        "denominator": 37,
+        "rate": 0.16216216216216217
+      },
+      "abs_lt_10": {
+        "numerator": 9,
+        "denominator": 37,
+        "rate": 0.24324324324324326
+      },
+      "abs_le_10": {
+        "numerator": 10,
+        "denominator": 37,
+        "rate": 0.2702702702702703
+      }
+    },
+    "new_fits": 0,
+    "n": 37,
+    "mae": 32.945945945945944,
+    "mse": 2145.7027027027025,
+    "rmse": 46.321730350913086,
+    "bias": -18.783783783783782,
+    "p90_abs": 83.79999999999998,
+    "p95_abs": 101.1999999999999,
+    "max_abs": 123.0,
+    "exact_rate": 0.02702702702702703,
+    "abs_lt_1": 0.02702702702702703,
+    "abs_le_1": 0.08108108108108109,
+    "abs_lt_5": 0.13513513513513514,
+    "abs_le_5": 0.16216216216216217,
+    "abs_lt_10": 0.24324324324324326,
+    "abs_le_10": 0.2702702702702703
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-5ccb8d42f1e905f5d9dc601e",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:5ccb8d42f1e905f5d9dc601e",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "rush_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_A",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_A",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 55,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 52,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 3
+    },
+    "unique_games": 13,
+    "unique_players": 52,
+    "unique_player_games": 52,
+    "membership_sha256": "ceaedb9a1aed57e8ce625a17ba24a2d6855979946f5cc6bd432a755df9156eff",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 52,
+        "rate": 0.019230769230769232
+      },
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 52,
+        "rate": 0.019230769230769232
+      },
+      "abs_le_1": {
+        "numerator": 3,
+        "denominator": 52,
+        "rate": 0.057692307692307696
+      },
+      "abs_lt_5": {
+        "numerator": 6,
+        "denominator": 52,
+        "rate": 0.11538461538461539
+      },
+      "abs_le_5": {
+        "numerator": 8,
+        "denominator": 52,
+        "rate": 0.15384615384615385
+      },
+      "abs_lt_10": {
+        "numerator": 12,
+        "denominator": 52,
+        "rate": 0.23076923076923078
+      },
+      "abs_le_10": {
+        "numerator": 14,
+        "denominator": 52,
+        "rate": 0.2692307692307692
+      }
+    },
+    "new_fits": 0,
+    "n": 52,
+    "mae": 28.78846153846154,
+    "mse": 1756.5576923076924,
+    "rmse": 41.91130745166145,
+    "bias": -15.711538461538462,
+    "p90_abs": 64.69999999999999,
+    "p95_abs": 96.54999999999993,
+    "max_abs": 131.0,
+    "exact_rate": 0.019230769230769232,
+    "abs_lt_1": 0.019230769230769232,
+    "abs_le_1": 0.057692307692307696,
+    "abs_lt_5": 0.11538461538461539,
+    "abs_le_5": 0.15384615384615385,
+    "abs_lt_10": 0.23076923076923078,
+    "abs_le_10": 0.2692307692307692
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-9a8ddaa09c976ce304055390",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:9a8ddaa09c976ce304055390",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "pass_att",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "5e4d44a6890448b1229d7738e8d23943f16ef6f7e3dfec07303205382b033e69",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 2,
+        "denominator": 26,
+        "rate": 0.07692307692307693
+      },
+      "abs_lt_5": {
+        "numerator": 11,
+        "denominator": 26,
+        "rate": 0.4230769230769231
+      },
+      "abs_le_5": {
+        "numerator": 12,
+        "denominator": 26,
+        "rate": 0.46153846153846156
+      },
+      "abs_lt_10": {
+        "numerator": 19,
+        "denominator": 26,
+        "rate": 0.7307692307692307
+      },
+      "abs_le_10": {
+        "numerator": 19,
+        "denominator": 26,
+        "rate": 0.7307692307692307
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 7.923076923076923,
+    "mse": 105.76923076923077,
+    "rmse": 10.284416890093029,
+    "bias": 2.923076923076923,
+    "p90_abs": 16.5,
+    "p95_abs": 23.25,
+    "max_abs": 25.0,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.07692307692307693,
+    "abs_lt_5": 0.4230769230769231,
+    "abs_le_5": 0.46153846153846156,
+    "abs_lt_10": 0.7307692307692307,
+    "abs_le_10": 0.7307692307692307
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-b1b3eb4bbd13332c2af43567",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:b1b3eb4bbd13332c2af43567",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "pass_cmp",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "c07d67ec57bbac0cb8b3509d870dbed138b9df9d155da46e12b968c2976f0085",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_le_1": {
+        "numerator": 4,
+        "denominator": 26,
+        "rate": 0.15384615384615385
+      },
+      "abs_lt_5": {
+        "numerator": 12,
+        "denominator": 26,
+        "rate": 0.46153846153846156
+      },
+      "abs_le_5": {
+        "numerator": 15,
+        "denominator": 26,
+        "rate": 0.5769230769230769
+      },
+      "abs_lt_10": {
+        "numerator": 19,
+        "denominator": 26,
+        "rate": 0.7307692307692307
+      },
+      "abs_le_10": {
+        "numerator": 20,
+        "denominator": 26,
+        "rate": 0.7692307692307693
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 6.653846153846154,
+    "mse": 70.03846153846153,
+    "rmse": 8.368898466253581,
+    "bias": 2.1153846153846154,
+    "p90_abs": 14.0,
+    "p95_abs": 17.25,
+    "max_abs": 18.0,
+    "exact_rate": 0.038461538461538464,
+    "abs_lt_1": 0.038461538461538464,
+    "abs_le_1": 0.15384615384615385,
+    "abs_lt_5": 0.46153846153846156,
+    "abs_le_5": 0.5769230769230769,
+    "abs_lt_10": 0.7307692307692307,
+    "abs_le_10": 0.7692307692307693
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-7905fdad9d95409b18656ddf",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:7905fdad9d95409b18656ddf",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "pass_int",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "e7c7a7deaa38e9caa6a7d5ebacf0e2382b277128a10b79c2fe52b8232489e32d",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 12,
+        "denominator": 26,
+        "rate": 0.46153846153846156
+      },
+      "abs_lt_1": {
+        "numerator": 12,
+        "denominator": 26,
+        "rate": 0.46153846153846156
+      },
+      "abs_le_1": {
+        "numerator": 22,
+        "denominator": 26,
+        "rate": 0.8461538461538461
+      },
+      "abs_lt_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_lt_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 0.8076923076923077,
+    "mse": 1.6538461538461537,
+    "rmse": 1.286019499792345,
+    "bias": -0.8076923076923077,
+    "p90_abs": 2.0,
+    "p95_abs": 2.75,
+    "max_abs": 4.0,
+    "exact_rate": 0.46153846153846156,
+    "abs_lt_1": 0.46153846153846156,
+    "abs_le_1": 0.8461538461538461,
+    "abs_lt_5": 1.0,
+    "abs_le_5": 1.0,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-500298032a93f31b1023c2fd",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:500298032a93f31b1023c2fd",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "pass_td",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "ecbd0f24e6c240136b57ce1ce826bcfb06d698ea1ad2744faee39588318bbe1d",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 4,
+        "denominator": 26,
+        "rate": 0.15384615384615385
+      },
+      "abs_lt_1": {
+        "numerator": 4,
+        "denominator": 26,
+        "rate": 0.15384615384615385
+      },
+      "abs_le_1": {
+        "numerator": 23,
+        "denominator": 26,
+        "rate": 0.8846153846153846
+      },
+      "abs_lt_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_lt_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 1.0,
+    "mse": 1.3846153846153846,
+    "rmse": 1.1766968108291043,
+    "bias": -0.15384615384615385,
+    "p90_abs": 1.5,
+    "p95_abs": 2.0,
+    "max_abs": 3.0,
+    "exact_rate": 0.15384615384615385,
+    "abs_lt_1": 0.15384615384615385,
+    "abs_le_1": 0.8846153846153846,
+    "abs_lt_5": 1.0,
+    "abs_le_5": 1.0,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-8ba916e904a6d8df9cad84b3",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:8ba916e904a6d8df9cad84b3",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "pass_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "2feabb4efd3df11ee4119df85ef8a93a30df515c27fe5721e5dc6589bbee2589",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_lt_5": {
+        "numerator": 2,
+        "denominator": 26,
+        "rate": 0.07692307692307693
+      },
+      "abs_le_5": {
+        "numerator": 3,
+        "denominator": 26,
+        "rate": 0.11538461538461539
+      },
+      "abs_lt_10": {
+        "numerator": 5,
+        "denominator": 26,
+        "rate": 0.19230769230769232
+      },
+      "abs_le_10": {
+        "numerator": 5,
+        "denominator": 26,
+        "rate": 0.19230769230769232
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 69.03846153846153,
+    "mse": 8449.807692307691,
+    "rmse": 91.92283553235121,
+    "bias": 11.73076923076923,
+    "p90_abs": 152.5,
+    "p95_abs": 206.25,
+    "max_abs": 219.0,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.038461538461538464,
+    "abs_lt_5": 0.07692307692307693,
+    "abs_le_5": 0.11538461538461539,
+    "abs_lt_10": 0.19230769230769232,
+    "abs_le_10": 0.19230769230769232
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-1454f288255a6590adc80e7c",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:1454f288255a6590adc80e7c",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "rec",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "TE",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 158,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 148,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 9,
+      "PARTICIPATION_NOT_ESTABLISHED_BY_PHYSICAL_CREDIT": 1
+    },
+    "unique_games": 13,
+    "unique_players": 148,
+    "unique_player_games": 148,
+    "membership_sha256": "b1322c3cf29ef7b4518b07e06f6db3384e0288684c257faf77f86781ade00739",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 30,
+        "denominator": 148,
+        "rate": 0.20270270270270271
+      },
+      "abs_lt_1": {
+        "numerator": 30,
+        "denominator": 148,
+        "rate": 0.20270270270270271
+      },
+      "abs_le_1": {
+        "numerator": 85,
+        "denominator": 148,
+        "rate": 0.5743243243243243
+      },
+      "abs_lt_5": {
+        "numerator": 142,
+        "denominator": 148,
+        "rate": 0.9594594594594594
+      },
+      "abs_le_5": {
+        "numerator": 145,
+        "denominator": 148,
+        "rate": 0.9797297297297297
+      },
+      "abs_lt_10": {
+        "numerator": 148,
+        "denominator": 148,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 148,
+        "denominator": 148,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 148,
+    "mae": 1.587837837837838,
+    "mse": 4.412162162162162,
+    "rmse": 2.1005147374303665,
+    "bias": -0.42567567567567566,
+    "p90_abs": 3.0,
+    "p95_abs": 4.0,
+    "max_abs": 7.0,
+    "exact_rate": 0.20270270270270271,
+    "abs_lt_1": 0.20270270270270271,
+    "abs_le_1": 0.5743243243243243,
+    "abs_lt_5": 0.9594594594594594,
+    "abs_le_5": 0.9797297297297297,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-b70043790f37be4db9a18572",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:b70043790f37be4db9a18572",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "rec_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "TE",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 159,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 149,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 9,
+      "PARTICIPATION_NOT_ESTABLISHED_BY_PHYSICAL_CREDIT": 1
+    },
+    "unique_games": 13,
+    "unique_players": 149,
+    "unique_player_games": 149,
+    "membership_sha256": "e72f0b99d65a7e6bceb5711f7bd8883ec5702eca76db6971c8d40e89c86fd84b",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 5,
+        "denominator": 149,
+        "rate": 0.03355704697986577
+      },
+      "abs_lt_1": {
+        "numerator": 5,
+        "denominator": 149,
+        "rate": 0.03355704697986577
+      },
+      "abs_le_1": {
+        "numerator": 13,
+        "denominator": 149,
+        "rate": 0.087248322147651
+      },
+      "abs_lt_5": {
+        "numerator": 32,
+        "denominator": 149,
+        "rate": 0.21476510067114093
+      },
+      "abs_le_5": {
+        "numerator": 39,
+        "denominator": 149,
+        "rate": 0.26174496644295303
+      },
+      "abs_lt_10": {
+        "numerator": 57,
+        "denominator": 149,
+        "rate": 0.3825503355704698
+      },
+      "abs_le_10": {
+        "numerator": 61,
+        "denominator": 149,
+        "rate": 0.40939597315436244
+      }
+    },
+    "new_fits": 0,
+    "n": 149,
+    "mae": 21.77181208053691,
+    "mse": 1034.4026845637584,
+    "rmse": 32.16213121924227,
+    "bias": -9.583892617449665,
+    "p90_abs": 55.0,
+    "p95_abs": 66.19999999999999,
+    "max_abs": 124.0,
+    "exact_rate": 0.03355704697986577,
+    "abs_lt_1": 0.03355704697986577,
+    "abs_le_1": 0.087248322147651,
+    "abs_lt_5": 0.21476510067114093,
+    "abs_le_5": 0.26174496644295303,
+    "abs_lt_10": 0.3825503355704698,
+    "abs_le_10": 0.40939597315436244
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-00a2b81fe6651f4cea2892f9",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:00a2b81fe6651f4cea2892f9",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "rush_att",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 40,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 39,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 1
+    },
+    "unique_games": 13,
+    "unique_players": 39,
+    "unique_player_games": 39,
+    "membership_sha256": "ea4d4a8db392e602ae36ebef60291afab7087b3f7202df8146872ca7236193fa",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 2,
+        "denominator": 39,
+        "rate": 0.05128205128205128
+      },
+      "abs_lt_1": {
+        "numerator": 2,
+        "denominator": 39,
+        "rate": 0.05128205128205128
+      },
+      "abs_le_1": {
+        "numerator": 6,
+        "denominator": 39,
+        "rate": 0.15384615384615385
+      },
+      "abs_lt_5": {
+        "numerator": 22,
+        "denominator": 39,
+        "rate": 0.5641025641025641
+      },
+      "abs_le_5": {
+        "numerator": 27,
+        "denominator": 39,
+        "rate": 0.6923076923076923
+      },
+      "abs_lt_10": {
+        "numerator": 34,
+        "denominator": 39,
+        "rate": 0.8717948717948718
+      },
+      "abs_le_10": {
+        "numerator": 37,
+        "denominator": 39,
+        "rate": 0.9487179487179487
+      }
+    },
+    "new_fits": 0,
+    "n": 39,
+    "mae": 4.641025641025641,
+    "mse": 30.846153846153847,
+    "rmse": 5.553931386518369,
+    "bias": -1.358974358974359,
+    "p90_abs": 10.0,
+    "p95_abs": 10.100000000000001,
+    "max_abs": 12.0,
+    "exact_rate": 0.05128205128205128,
+    "abs_lt_1": 0.05128205128205128,
+    "abs_le_1": 0.15384615384615385,
+    "abs_lt_5": 0.5641025641025641,
+    "abs_le_5": 0.6923076923076923,
+    "abs_lt_10": 0.8717948717948718,
+    "abs_le_10": 0.9487179487179487
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-ee153a0d8848b44bde621121",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:ee153a0d8848b44bde621121",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "rush_rec_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 39,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 37,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 2
+    },
+    "unique_games": 13,
+    "unique_players": 37,
+    "unique_player_games": 37,
+    "membership_sha256": "e6ada2a85e05b418636176d993f7e411059bc5a7ce57a5ea9f987581eeac1ed4",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 2,
+        "denominator": 37,
+        "rate": 0.05405405405405406
+      },
+      "abs_lt_1": {
+        "numerator": 2,
+        "denominator": 37,
+        "rate": 0.05405405405405406
+      },
+      "abs_le_1": {
+        "numerator": 3,
+        "denominator": 37,
+        "rate": 0.08108108108108109
+      },
+      "abs_lt_5": {
+        "numerator": 5,
+        "denominator": 37,
+        "rate": 0.13513513513513514
+      },
+      "abs_le_5": {
+        "numerator": 5,
+        "denominator": 37,
+        "rate": 0.13513513513513514
+      },
+      "abs_lt_10": {
+        "numerator": 9,
+        "denominator": 37,
+        "rate": 0.24324324324324326
+      },
+      "abs_le_10": {
+        "numerator": 9,
+        "denominator": 37,
+        "rate": 0.24324324324324326
+      }
+    },
+    "new_fits": 0,
+    "n": 37,
+    "mae": 29.81081081081081,
+    "mse": 1826.081081081081,
+    "rmse": 42.73266995029776,
+    "bias": -15.702702702702704,
+    "p90_abs": 78.39999999999998,
+    "p95_abs": 91.99999999999991,
+    "max_abs": 123.0,
+    "exact_rate": 0.05405405405405406,
+    "abs_lt_1": 0.05405405405405406,
+    "abs_le_1": 0.08108108108108109,
+    "abs_lt_5": 0.13513513513513514,
+    "abs_le_5": 0.13513513513513514,
+    "abs_lt_10": 0.24324324324324326,
+    "abs_le_10": 0.24324324324324326
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-e6828ebcefabaafb4388c6d4",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:e6828ebcefabaafb4388c6d4",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "rush_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_B",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_B",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 55,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 52,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 3
+    },
+    "unique_games": 13,
+    "unique_players": 52,
+    "unique_player_games": 52,
+    "membership_sha256": "ceaedb9a1aed57e8ce625a17ba24a2d6855979946f5cc6bd432a755df9156eff",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 52,
+        "rate": 0.019230769230769232
+      },
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 52,
+        "rate": 0.019230769230769232
+      },
+      "abs_le_1": {
+        "numerator": 2,
+        "denominator": 52,
+        "rate": 0.038461538461538464
+      },
+      "abs_lt_5": {
+        "numerator": 8,
+        "denominator": 52,
+        "rate": 0.15384615384615385
+      },
+      "abs_le_5": {
+        "numerator": 10,
+        "denominator": 52,
+        "rate": 0.19230769230769232
+      },
+      "abs_lt_10": {
+        "numerator": 14,
+        "denominator": 52,
+        "rate": 0.2692307692307692
+      },
+      "abs_le_10": {
+        "numerator": 15,
+        "denominator": 52,
+        "rate": 0.28846153846153844
+      }
+    },
+    "new_fits": 0,
+    "n": 52,
+    "mae": 27.326923076923077,
+    "mse": 1603.8653846153845,
+    "rmse": 40.04828816086131,
+    "bias": -13.48076923076923,
+    "p90_abs": 61.699999999999996,
+    "p95_abs": 91.24999999999989,
+    "max_abs": 128.0,
+    "exact_rate": 0.019230769230769232,
+    "abs_lt_1": 0.019230769230769232,
+    "abs_le_1": 0.038461538461538464,
+    "abs_lt_5": 0.15384615384615385,
+    "abs_le_5": 0.19230769230769232,
+    "abs_lt_10": 0.2692307692307692,
+    "abs_le_10": 0.28846153846153844
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-07dc02f6dd188ac3a96a48bf",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:07dc02f6dd188ac3a96a48bf",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "pass_att",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "5e4d44a6890448b1229d7738e8d23943f16ef6f7e3dfec07303205382b033e69",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_le_1": {
+        "numerator": 3,
+        "denominator": 26,
+        "rate": 0.11538461538461539
+      },
+      "abs_lt_5": {
+        "numerator": 9,
+        "denominator": 26,
+        "rate": 0.34615384615384615
+      },
+      "abs_le_5": {
+        "numerator": 9,
+        "denominator": 26,
+        "rate": 0.34615384615384615
+      },
+      "abs_lt_10": {
+        "numerator": 18,
+        "denominator": 26,
+        "rate": 0.6923076923076923
+      },
+      "abs_le_10": {
+        "numerator": 19,
+        "denominator": 26,
+        "rate": 0.7307692307692307
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 9.461538461538462,
+    "mse": 157.84615384615384,
+    "rmse": 12.56368392813803,
+    "bias": 2.0,
+    "p90_abs": 23.5,
+    "p95_abs": 27.5,
+    "max_abs": 30.0,
+    "exact_rate": 0.038461538461538464,
+    "abs_lt_1": 0.038461538461538464,
+    "abs_le_1": 0.11538461538461539,
+    "abs_lt_5": 0.34615384615384615,
+    "abs_le_5": 0.34615384615384615,
+    "abs_lt_10": 0.6923076923076923,
+    "abs_le_10": 0.7307692307692307
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-0802413668e3b82da4132c1a",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:0802413668e3b82da4132c1a",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "pass_cmp",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "c07d67ec57bbac0cb8b3509d870dbed138b9df9d155da46e12b968c2976f0085",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_le_1": {
+        "numerator": 2,
+        "denominator": 26,
+        "rate": 0.07692307692307693
+      },
+      "abs_lt_5": {
+        "numerator": 10,
+        "denominator": 26,
+        "rate": 0.38461538461538464
+      },
+      "abs_le_5": {
+        "numerator": 13,
+        "denominator": 26,
+        "rate": 0.5
+      },
+      "abs_lt_10": {
+        "numerator": 18,
+        "denominator": 26,
+        "rate": 0.6923076923076923
+      },
+      "abs_le_10": {
+        "numerator": 18,
+        "denominator": 26,
+        "rate": 0.6923076923076923
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 7.461538461538462,
+    "mse": 88.61538461538461,
+    "rmse": 9.413574486632834,
+    "bias": 1.6923076923076923,
+    "p90_abs": 16.0,
+    "p95_abs": 19.25,
+    "max_abs": 21.0,
+    "exact_rate": 0.038461538461538464,
+    "abs_lt_1": 0.038461538461538464,
+    "abs_le_1": 0.07692307692307693,
+    "abs_lt_5": 0.38461538461538464,
+    "abs_le_5": 0.5,
+    "abs_lt_10": 0.6923076923076923,
+    "abs_le_10": 0.6923076923076923
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-a798fd48e29899588489c398",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:a798fd48e29899588489c398",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "pass_int",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "e7c7a7deaa38e9caa6a7d5ebacf0e2382b277128a10b79c2fe52b8232489e32d",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 8,
+        "denominator": 26,
+        "rate": 0.3076923076923077
+      },
+      "abs_lt_1": {
+        "numerator": 8,
+        "denominator": 26,
+        "rate": 0.3076923076923077
+      },
+      "abs_le_1": {
+        "numerator": 23,
+        "denominator": 26,
+        "rate": 0.8846153846153846
+      },
+      "abs_lt_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_lt_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 0.9230769230769231,
+    "mse": 1.6923076923076923,
+    "rmse": 1.3008872711759818,
+    "bias": -0.46153846153846156,
+    "p90_abs": 1.5,
+    "p95_abs": 2.75,
+    "max_abs": 4.0,
+    "exact_rate": 0.3076923076923077,
+    "abs_lt_1": 0.3076923076923077,
+    "abs_le_1": 0.8846153846153846,
+    "abs_lt_5": 1.0,
+    "abs_le_5": 1.0,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-5f8ea05ae971befa30d2cc64",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:5f8ea05ae971befa30d2cc64",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "pass_td",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "ecbd0f24e6c240136b57ce1ce826bcfb06d698ea1ad2744faee39588318bbe1d",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 5,
+        "denominator": 26,
+        "rate": 0.19230769230769232
+      },
+      "abs_lt_1": {
+        "numerator": 5,
+        "denominator": 26,
+        "rate": 0.19230769230769232
+      },
+      "abs_le_1": {
+        "numerator": 23,
+        "denominator": 26,
+        "rate": 0.8846153846153846
+      },
+      "abs_lt_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_lt_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 0.9615384615384616,
+    "mse": 1.3461538461538463,
+    "rmse": 1.1602387022306428,
+    "bias": -0.11538461538461539,
+    "p90_abs": 1.5,
+    "p95_abs": 2.0,
+    "max_abs": 3.0,
+    "exact_rate": 0.19230769230769232,
+    "abs_lt_1": 0.19230769230769232,
+    "abs_le_1": 0.8846153846153846,
+    "abs_lt_5": 1.0,
+    "abs_le_5": 1.0,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-326065db3954d99a888be0a0",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:326065db3954d99a888be0a0",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "pass_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "2feabb4efd3df11ee4119df85ef8a93a30df515c27fe5721e5dc6589bbee2589",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_lt_5": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_le_5": {
+        "numerator": 1,
+        "denominator": 26,
+        "rate": 0.038461538461538464
+      },
+      "abs_lt_10": {
+        "numerator": 4,
+        "denominator": 26,
+        "rate": 0.15384615384615385
+      },
+      "abs_le_10": {
+        "numerator": 4,
+        "denominator": 26,
+        "rate": 0.15384615384615385
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 81.07692307692308,
+    "mse": 10715.923076923076,
+    "rmse": 103.5177428121531,
+    "bias": 4.3076923076923075,
+    "p90_abs": 179.5,
+    "p95_abs": 213.0,
+    "max_abs": 217.0,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.0,
+    "abs_lt_5": 0.038461538461538464,
+    "abs_le_5": 0.038461538461538464,
+    "abs_lt_10": 0.15384615384615385,
+    "abs_le_10": 0.15384615384615385
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-f8f65fb442bd98869b670df4",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:f8f65fb442bd98869b670df4",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "rec",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "TE",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 158,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 148,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 9,
+      "PARTICIPATION_NOT_ESTABLISHED_BY_PHYSICAL_CREDIT": 1
+    },
+    "unique_games": 13,
+    "unique_players": 148,
+    "unique_player_games": 148,
+    "membership_sha256": "b1322c3cf29ef7b4518b07e06f6db3384e0288684c257faf77f86781ade00739",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 32,
+        "denominator": 148,
+        "rate": 0.21621621621621623
+      },
+      "abs_lt_1": {
+        "numerator": 32,
+        "denominator": 148,
+        "rate": 0.21621621621621623
+      },
+      "abs_le_1": {
+        "numerator": 79,
+        "denominator": 148,
+        "rate": 0.5337837837837838
+      },
+      "abs_lt_5": {
+        "numerator": 140,
+        "denominator": 148,
+        "rate": 0.9459459459459459
+      },
+      "abs_le_5": {
+        "numerator": 145,
+        "denominator": 148,
+        "rate": 0.9797297297297297
+      },
+      "abs_lt_10": {
+        "numerator": 148,
+        "denominator": 148,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 148,
+        "denominator": 148,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 148,
+    "mae": 1.6486486486486487,
+    "mse": 4.743243243243243,
+    "rmse": 2.1778988138210744,
+    "bias": -0.28378378378378377,
+    "p90_abs": 4.0,
+    "p95_abs": 4.650000000000006,
+    "max_abs": 6.0,
+    "exact_rate": 0.21621621621621623,
+    "abs_lt_1": 0.21621621621621623,
+    "abs_le_1": 0.5337837837837838,
+    "abs_lt_5": 0.9459459459459459,
+    "abs_le_5": 0.9797297297297297,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-e4b39caa1eb91ad9c02081ff",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:e4b39caa1eb91ad9c02081ff",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "rec_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "TE",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 159,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 149,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 9,
+      "PARTICIPATION_NOT_ESTABLISHED_BY_PHYSICAL_CREDIT": 1
+    },
+    "unique_games": 13,
+    "unique_players": 149,
+    "unique_player_games": 149,
+    "membership_sha256": "e72f0b99d65a7e6bceb5711f7bd8883ec5702eca76db6971c8d40e89c86fd84b",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 5,
+        "denominator": 149,
+        "rate": 0.03355704697986577
+      },
+      "abs_lt_1": {
+        "numerator": 5,
+        "denominator": 149,
+        "rate": 0.03355704697986577
+      },
+      "abs_le_1": {
+        "numerator": 6,
+        "denominator": 149,
+        "rate": 0.040268456375838924
+      },
+      "abs_lt_5": {
+        "numerator": 18,
+        "denominator": 149,
+        "rate": 0.12080536912751678
+      },
+      "abs_le_5": {
+        "numerator": 19,
+        "denominator": 149,
+        "rate": 0.12751677852348994
+      },
+      "abs_lt_10": {
+        "numerator": 44,
+        "denominator": 149,
+        "rate": 0.2953020134228188
+      },
+      "abs_le_10": {
+        "numerator": 50,
+        "denominator": 149,
+        "rate": 0.33557046979865773
+      }
+    },
+    "new_fits": 0,
+    "n": 149,
+    "mae": 24.006711409395972,
+    "mse": 1087.6845637583892,
+    "rmse": 32.98006312544579,
+    "bias": -6.6644295302013425,
+    "p90_abs": 51.0,
+    "p95_abs": 65.79999999999998,
+    "max_abs": 122.0,
+    "exact_rate": 0.03355704697986577,
+    "abs_lt_1": 0.03355704697986577,
+    "abs_le_1": 0.040268456375838924,
+    "abs_lt_5": 0.12080536912751678,
+    "abs_le_5": 0.12751677852348994,
+    "abs_lt_10": 0.2953020134228188,
+    "abs_le_10": 0.33557046979865773
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-02e271ea170e76c4656ea5a5",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:02e271ea170e76c4656ea5a5",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "rush_att",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 40,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 39,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 1
+    },
+    "unique_games": 13,
+    "unique_players": 39,
+    "unique_player_games": 39,
+    "membership_sha256": "ea4d4a8db392e602ae36ebef60291afab7087b3f7202df8146872ca7236193fa",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 4,
+        "denominator": 39,
+        "rate": 0.10256410256410256
+      },
+      "abs_lt_1": {
+        "numerator": 4,
+        "denominator": 39,
+        "rate": 0.10256410256410256
+      },
+      "abs_le_1": {
+        "numerator": 7,
+        "denominator": 39,
+        "rate": 0.1794871794871795
+      },
+      "abs_lt_5": {
+        "numerator": 16,
+        "denominator": 39,
+        "rate": 0.41025641025641024
+      },
+      "abs_le_5": {
+        "numerator": 20,
+        "denominator": 39,
+        "rate": 0.5128205128205128
+      },
+      "abs_lt_10": {
+        "numerator": 33,
+        "denominator": 39,
+        "rate": 0.8461538461538461
+      },
+      "abs_le_10": {
+        "numerator": 33,
+        "denominator": 39,
+        "rate": 0.8461538461538461
+      }
+    },
+    "new_fits": 0,
+    "n": 39,
+    "mae": 5.666666666666667,
+    "mse": 48.69230769230769,
+    "rmse": 6.977987366877909,
+    "bias": -2.0256410256410255,
+    "p90_abs": 12.0,
+    "p95_abs": 13.0,
+    "max_abs": 16.0,
+    "exact_rate": 0.10256410256410256,
+    "abs_lt_1": 0.10256410256410256,
+    "abs_le_1": 0.1794871794871795,
+    "abs_lt_5": 0.41025641025641024,
+    "abs_le_5": 0.5128205128205128,
+    "abs_lt_10": 0.8461538461538461,
+    "abs_le_10": 0.8461538461538461
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-1fc99412105799839dc63fdb",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:1fc99412105799839dc63fdb",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "rush_rec_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 39,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 37,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 2
+    },
+    "unique_games": 13,
+    "unique_players": 37,
+    "unique_player_games": 37,
+    "membership_sha256": "e6ada2a85e05b418636176d993f7e411059bc5a7ce57a5ea9f987581eeac1ed4",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 1,
+        "denominator": 37,
+        "rate": 0.02702702702702703
+      },
+      "abs_lt_1": {
+        "numerator": 1,
+        "denominator": 37,
+        "rate": 0.02702702702702703
+      },
+      "abs_le_1": {
+        "numerator": 1,
+        "denominator": 37,
+        "rate": 0.02702702702702703
+      },
+      "abs_lt_5": {
+        "numerator": 4,
+        "denominator": 37,
+        "rate": 0.10810810810810811
+      },
+      "abs_le_5": {
+        "numerator": 4,
+        "denominator": 37,
+        "rate": 0.10810810810810811
+      },
+      "abs_lt_10": {
+        "numerator": 9,
+        "denominator": 37,
+        "rate": 0.24324324324324326
+      },
+      "abs_le_10": {
+        "numerator": 10,
+        "denominator": 37,
+        "rate": 0.2702702702702703
+      }
+    },
+    "new_fits": 0,
+    "n": 37,
+    "mae": 37.108108108108105,
+    "mse": 2554.7837837837837,
+    "rmse": 50.544869015398426,
+    "bias": -16.89189189189189,
+    "p90_abs": 82.39999999999999,
+    "p95_abs": 117.99999999999996,
+    "max_abs": 136.0,
+    "exact_rate": 0.02702702702702703,
+    "abs_lt_1": 0.02702702702702703,
+    "abs_le_1": 0.02702702702702703,
+    "abs_lt_5": 0.10810810810810811,
+    "abs_le_5": 0.10810810810810811,
+    "abs_lt_10": 0.24324324324324326,
+    "abs_le_10": 0.2702702702702703
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-158186669847a2e6dc6e6590",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:empirical:158186669847a2e6dc6e6590",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:empirical",
+    "target": "rush_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 55,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 52,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 3
+    },
+    "unique_games": 13,
+    "unique_players": 52,
+    "unique_player_games": 52,
+    "membership_sha256": "ceaedb9a1aed57e8ce625a17ba24a2d6855979946f5cc6bd432a755df9156eff",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 52,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 52,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 3,
+        "denominator": 52,
+        "rate": 0.057692307692307696
+      },
+      "abs_lt_5": {
+        "numerator": 8,
+        "denominator": 52,
+        "rate": 0.15384615384615385
+      },
+      "abs_le_5": {
+        "numerator": 8,
+        "denominator": 52,
+        "rate": 0.15384615384615385
+      },
+      "abs_lt_10": {
+        "numerator": 12,
+        "denominator": 52,
+        "rate": 0.23076923076923078
+      },
+      "abs_le_10": {
+        "numerator": 13,
+        "denominator": 52,
+        "rate": 0.25
+      }
+    },
+    "new_fits": 0,
+    "n": 52,
+    "mae": 31.23076923076923,
+    "mse": 1939.0384615384614,
+    "rmse": 44.03451443513896,
+    "bias": -14.0,
+    "p90_abs": 80.29999999999998,
+    "p95_abs": 105.24999999999997,
+    "max_abs": 123.0,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.057692307692307696,
+    "abs_lt_5": 0.15384615384615385,
+    "abs_le_5": 0.15384615384615385,
+    "abs_lt_10": 0.23076923076923078,
+    "abs_le_10": 0.25
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-636c0de20322a3dc7958072a",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:636c0de20322a3dc7958072a",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "pass_att",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "5e4d44a6890448b1229d7738e8d23943f16ef6f7e3dfec07303205382b033e69",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 3,
+        "denominator": 26,
+        "rate": 0.11538461538461539
+      },
+      "abs_lt_5": {
+        "numerator": 12,
+        "denominator": 26,
+        "rate": 0.46153846153846156
+      },
+      "abs_le_5": {
+        "numerator": 12,
+        "denominator": 26,
+        "rate": 0.46153846153846156
+      },
+      "abs_lt_10": {
+        "numerator": 18,
+        "denominator": 26,
+        "rate": 0.6923076923076923
+      },
+      "abs_le_10": {
+        "numerator": 20,
+        "denominator": 26,
+        "rate": 0.7692307692307693
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 7.8076923076923075,
+    "mse": 103.88461538461539,
+    "rmse": 10.192380260989843,
+    "bias": 2.9615384615384617,
+    "p90_abs": 16.0,
+    "p95_abs": 23.0,
+    "max_abs": 25.0,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.11538461538461539,
+    "abs_lt_5": 0.46153846153846156,
+    "abs_le_5": 0.46153846153846156,
+    "abs_lt_10": 0.6923076923076923,
+    "abs_le_10": 0.7692307692307693
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-d2633ec82d313fa48f0944e9",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:d2633ec82d313fa48f0944e9",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "pass_cmp",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "c07d67ec57bbac0cb8b3509d870dbed138b9df9d155da46e12b968c2976f0085",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 2,
+        "denominator": 26,
+        "rate": 0.07692307692307693
+      },
+      "abs_lt_1": {
+        "numerator": 2,
+        "denominator": 26,
+        "rate": 0.07692307692307693
+      },
+      "abs_le_1": {
+        "numerator": 4,
+        "denominator": 26,
+        "rate": 0.15384615384615385
+      },
+      "abs_lt_5": {
+        "numerator": 14,
+        "denominator": 26,
+        "rate": 0.5384615384615384
+      },
+      "abs_le_5": {
+        "numerator": 15,
+        "denominator": 26,
+        "rate": 0.5769230769230769
+      },
+      "abs_lt_10": {
+        "numerator": 19,
+        "denominator": 26,
+        "rate": 0.7307692307692307
+      },
+      "abs_le_10": {
+        "numerator": 21,
+        "denominator": 26,
+        "rate": 0.8076923076923077
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 6.461538461538462,
+    "mse": 69.15384615384616,
+    "rmse": 8.31587915700115,
+    "bias": 2.230769230769231,
+    "p90_abs": 14.0,
+    "p95_abs": 17.25,
+    "max_abs": 19.0,
+    "exact_rate": 0.07692307692307693,
+    "abs_lt_1": 0.07692307692307693,
+    "abs_le_1": 0.15384615384615385,
+    "abs_lt_5": 0.5384615384615384,
+    "abs_le_5": 0.5769230769230769,
+    "abs_lt_10": 0.7307692307692307,
+    "abs_le_10": 0.8076923076923077
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-fb976b22b798342805fd639c",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:fb976b22b798342805fd639c",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "pass_int",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "e7c7a7deaa38e9caa6a7d5ebacf0e2382b277128a10b79c2fe52b8232489e32d",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 12,
+        "denominator": 26,
+        "rate": 0.46153846153846156
+      },
+      "abs_lt_1": {
+        "numerator": 12,
+        "denominator": 26,
+        "rate": 0.46153846153846156
+      },
+      "abs_le_1": {
+        "numerator": 22,
+        "denominator": 26,
+        "rate": 0.8461538461538461
+      },
+      "abs_lt_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_lt_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 0.8076923076923077,
+    "mse": 1.6538461538461537,
+    "rmse": 1.286019499792345,
+    "bias": -0.8076923076923077,
+    "p90_abs": 2.0,
+    "p95_abs": 2.75,
+    "max_abs": 4.0,
+    "exact_rate": 0.46153846153846156,
+    "abs_lt_1": 0.46153846153846156,
+    "abs_le_1": 0.8461538461538461,
+    "abs_lt_5": 1.0,
+    "abs_le_5": 1.0,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-5174134fc8072b348e00bca2",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:5174134fc8072b348e00bca2",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "pass_td",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "ecbd0f24e6c240136b57ce1ce826bcfb06d698ea1ad2744faee39588318bbe1d",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 6,
+        "denominator": 26,
+        "rate": 0.23076923076923078
+      },
+      "abs_lt_1": {
+        "numerator": 6,
+        "denominator": 26,
+        "rate": 0.23076923076923078
+      },
+      "abs_le_1": {
+        "numerator": 23,
+        "denominator": 26,
+        "rate": 0.8846153846153846
+      },
+      "abs_lt_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_5": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_lt_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 26,
+        "denominator": 26,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 0.9230769230769231,
+    "mse": 1.3076923076923077,
+    "rmse": 1.1435437497937313,
+    "bias": -0.15384615384615385,
+    "p90_abs": 1.5,
+    "p95_abs": 2.0,
+    "max_abs": 3.0,
+    "exact_rate": 0.23076923076923078,
+    "abs_lt_1": 0.23076923076923078,
+    "abs_le_1": 0.8846153846153846,
+    "abs_lt_5": 1.0,
+    "abs_le_5": 1.0,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-bfd15103fa07c654a780cc87",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:bfd15103fa07c654a780cc87",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "pass_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "QB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 26,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 26
+    },
+    "unique_games": 13,
+    "unique_players": 26,
+    "unique_player_games": 26,
+    "membership_sha256": "2feabb4efd3df11ee4119df85ef8a93a30df515c27fe5721e5dc6589bbee2589",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 0,
+        "denominator": 26,
+        "rate": 0.0
+      },
+      "abs_lt_5": {
+        "numerator": 3,
+        "denominator": 26,
+        "rate": 0.11538461538461539
+      },
+      "abs_le_5": {
+        "numerator": 4,
+        "denominator": 26,
+        "rate": 0.15384615384615385
+      },
+      "abs_lt_10": {
+        "numerator": 5,
+        "denominator": 26,
+        "rate": 0.19230769230769232
+      },
+      "abs_le_10": {
+        "numerator": 5,
+        "denominator": 26,
+        "rate": 0.19230769230769232
+      }
+    },
+    "new_fits": 0,
+    "n": 26,
+    "mae": 68.57692307692308,
+    "mse": 8385.346153846154,
+    "rmse": 91.57153571850891,
+    "bias": 12.807692307692308,
+    "p90_abs": 154.5,
+    "p95_abs": 207.5,
+    "max_abs": 213.0,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.0,
+    "abs_lt_5": 0.11538461538461539,
+    "abs_le_5": 0.15384615384615385,
+    "abs_lt_10": 0.19230769230769232,
+    "abs_le_10": 0.19230769230769232
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-00841d1b003a40d336369af9",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:00841d1b003a40d336369af9",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "rec",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "TE",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 158,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 148,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 9,
+      "PARTICIPATION_NOT_ESTABLISHED_BY_PHYSICAL_CREDIT": 1
+    },
+    "unique_games": 13,
+    "unique_players": 148,
+    "unique_player_games": 148,
+    "membership_sha256": "b1322c3cf29ef7b4518b07e06f6db3384e0288684c257faf77f86781ade00739",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 28,
+        "denominator": 148,
+        "rate": 0.1891891891891892
+      },
+      "abs_lt_1": {
+        "numerator": 28,
+        "denominator": 148,
+        "rate": 0.1891891891891892
+      },
+      "abs_le_1": {
+        "numerator": 85,
+        "denominator": 148,
+        "rate": 0.5743243243243243
+      },
+      "abs_lt_5": {
+        "numerator": 142,
+        "denominator": 148,
+        "rate": 0.9594594594594594
+      },
+      "abs_le_5": {
+        "numerator": 146,
+        "denominator": 148,
+        "rate": 0.9864864864864865
+      },
+      "abs_lt_10": {
+        "numerator": 148,
+        "denominator": 148,
+        "rate": 1.0
+      },
+      "abs_le_10": {
+        "numerator": 148,
+        "denominator": 148,
+        "rate": 1.0
+      }
+    },
+    "new_fits": 0,
+    "n": 148,
+    "mae": 1.5810810810810811,
+    "mse": 4.283783783783784,
+    "rmse": 2.06973036499535,
+    "bias": -0.43243243243243246,
+    "p90_abs": 3.0,
+    "p95_abs": 4.0,
+    "max_abs": 7.0,
+    "exact_rate": 0.1891891891891892,
+    "abs_lt_1": 0.1891891891891892,
+    "abs_le_1": 0.5743243243243243,
+    "abs_lt_5": 0.9594594594594594,
+    "abs_le_5": 0.9864864864864865,
+    "abs_lt_10": 1.0,
+    "abs_le_10": 1.0
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-8d94eea8172480c5ef3e4e6d",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:8d94eea8172480c5ef3e4e6d",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "rec_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "TE",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 159,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 149,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 9,
+      "PARTICIPATION_NOT_ESTABLISHED_BY_PHYSICAL_CREDIT": 1
+    },
+    "unique_games": 13,
+    "unique_players": 149,
+    "unique_player_games": 149,
+    "membership_sha256": "e72f0b99d65a7e6bceb5711f7bd8883ec5702eca76db6971c8d40e89c86fd84b",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 4,
+        "denominator": 149,
+        "rate": 0.026845637583892617
+      },
+      "abs_lt_1": {
+        "numerator": 4,
+        "denominator": 149,
+        "rate": 0.026845637583892617
+      },
+      "abs_le_1": {
+        "numerator": 12,
+        "denominator": 149,
+        "rate": 0.08053691275167785
+      },
+      "abs_lt_5": {
+        "numerator": 34,
+        "denominator": 149,
+        "rate": 0.22818791946308725
+      },
+      "abs_le_5": {
+        "numerator": 41,
+        "denominator": 149,
+        "rate": 0.2751677852348993
+      },
+      "abs_lt_10": {
+        "numerator": 57,
+        "denominator": 149,
+        "rate": 0.3825503355704698
+      },
+      "abs_le_10": {
+        "numerator": 59,
+        "denominator": 149,
+        "rate": 0.3959731543624161
+      }
+    },
+    "new_fits": 0,
+    "n": 149,
+    "mae": 21.624161073825505,
+    "mse": 1030.4161073825503,
+    "rmse": 32.10009513042836,
+    "bias": -9.63758389261745,
+    "p90_abs": 54.20000000000002,
+    "p95_abs": 65.79999999999998,
+    "max_abs": 125.0,
+    "exact_rate": 0.026845637583892617,
+    "abs_lt_1": 0.026845637583892617,
+    "abs_le_1": 0.08053691275167785,
+    "abs_lt_5": 0.22818791946308725,
+    "abs_le_5": 0.2751677852348993,
+    "abs_lt_10": 0.3825503355704698,
+    "abs_le_10": 0.3959731543624161
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-f39fdc6b5469bc137fd3f57c",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:f39fdc6b5469bc137fd3f57c",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "rush_att",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 40,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 39,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 1
+    },
+    "unique_games": 13,
+    "unique_players": 39,
+    "unique_player_games": 39,
+    "membership_sha256": "ea4d4a8db392e602ae36ebef60291afab7087b3f7202df8146872ca7236193fa",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 2,
+        "denominator": 39,
+        "rate": 0.05128205128205128
+      },
+      "abs_lt_1": {
+        "numerator": 2,
+        "denominator": 39,
+        "rate": 0.05128205128205128
+      },
+      "abs_le_1": {
+        "numerator": 6,
+        "denominator": 39,
+        "rate": 0.15384615384615385
+      },
+      "abs_lt_5": {
+        "numerator": 21,
+        "denominator": 39,
+        "rate": 0.5384615384615384
+      },
+      "abs_le_5": {
+        "numerator": 28,
+        "denominator": 39,
+        "rate": 0.717948717948718
+      },
+      "abs_lt_10": {
+        "numerator": 35,
+        "denominator": 39,
+        "rate": 0.8974358974358975
+      },
+      "abs_le_10": {
+        "numerator": 36,
+        "denominator": 39,
+        "rate": 0.9230769230769231
+      }
+    },
+    "new_fits": 0,
+    "n": 39,
+    "mae": 4.589743589743589,
+    "mse": 30.53846153846154,
+    "rmse": 5.526161555588249,
+    "bias": -1.2564102564102564,
+    "p90_abs": 9.200000000000003,
+    "p95_abs": 11.0,
+    "max_abs": 12.0,
+    "exact_rate": 0.05128205128205128,
+    "abs_lt_1": 0.05128205128205128,
+    "abs_le_1": 0.15384615384615385,
+    "abs_lt_5": 0.5384615384615384,
+    "abs_le_5": 0.717948717948718,
+    "abs_lt_10": 0.8974358974358975,
+    "abs_le_10": 0.9230769230769231
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-a5204444058912d248b45ac6",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:a5204444058912d248b45ac6",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "rush_rec_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB",
+      "WR"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 39,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 37,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 2
+    },
+    "unique_games": 13,
+    "unique_players": 37,
+    "unique_player_games": 37,
+    "membership_sha256": "e6ada2a85e05b418636176d993f7e411059bc5a7ce57a5ea9f987581eeac1ed4",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 2,
+        "denominator": 37,
+        "rate": 0.05405405405405406
+      },
+      "abs_lt_1": {
+        "numerator": 2,
+        "denominator": 37,
+        "rate": 0.05405405405405406
+      },
+      "abs_le_1": {
+        "numerator": 3,
+        "denominator": 37,
+        "rate": 0.08108108108108109
+      },
+      "abs_lt_5": {
+        "numerator": 5,
+        "denominator": 37,
+        "rate": 0.13513513513513514
+      },
+      "abs_le_5": {
+        "numerator": 6,
+        "denominator": 37,
+        "rate": 0.16216216216216217
+      },
+      "abs_lt_10": {
+        "numerator": 9,
+        "denominator": 37,
+        "rate": 0.24324324324324326
+      },
+      "abs_le_10": {
+        "numerator": 9,
+        "denominator": 37,
+        "rate": 0.24324324324324326
+      }
+    },
+    "new_fits": 0,
+    "n": 37,
+    "mae": 29.43243243243243,
+    "mse": 1806.027027027027,
+    "rmse": 42.497376707592515,
+    "bias": -15.972972972972974,
+    "p90_abs": 75.39999999999998,
+    "p95_abs": 92.79999999999993,
+    "max_abs": 123.0,
+    "exact_rate": 0.05405405405405406,
+    "abs_lt_1": 0.05405405405405406,
+    "abs_le_1": 0.08108108108108109,
+    "abs_lt_5": 0.13513513513513514,
+    "abs_le_5": 0.16216216216216217,
+    "abs_lt_10": 0.24324324324324326,
+    "abs_le_10": 0.24324324324324326
+  },
+  {
+    "record_id": "B-AUDIT-AVAIL-POINT-94f66fdd1198c48b97ddbbf1",
+    "record_kind": "forecast_evaluation_view",
+    "procedure_id": "B:v2-availability-abc-shadow-v1:ordered_leaf_cdf:law:94f66fdd1198c48b97ddbbf1",
+    "procedure_family_id": "v2-availability-abc-shadow-v1:ordered_leaf_cdf:law",
+    "target": "rush_yd",
+    "history_regime": "H-MULTI",
+    "product_id": "lower_median",
+    "policy_id": "FROZEN_AVAILABILITY_C",
+    "information_policy": "ORIGINAL_REGISTERED_AVAILABILITY_C",
+    "population": "EXISTING_ALL_METHOD_COMMON_OFFER_MASK",
+    "position": "ALL",
+    "evaluated_positions": [
+      "RB"
+    ],
+    "season": 2026,
+    "week": 8,
+    "evaluation_seasons": [
+      2026
+    ],
+    "evaluation_weeks": [
+      8
+    ],
+    "fallback_view": "FULL_SYSTEM_WITHIN_COMMON_OFFER_MASK",
+    "period": "REG",
+    "evaluation_panel_id": "B-RETAINED-AVAILABILITY-W8-FINAL-MATCHED-v1",
+    "horizon": "ORIGINAL_EARLY_CAPTURE_PLUS_RETAINED_LATER_THRESHOLD",
+    "source_vintage": "ORIGINAL_SAVED_FORECASTS;CURRENT_REVISED_20261103_FINAL_LABELS;QUOTE_CLOCK_UNVERIFIED",
+    "evidence": "NEW_EXPERIMENT_SAVED_ROW_REPLAY",
+    "forecast_rows": 55,
+    "fallback_rows": 0,
+    "scored_fallback_rows": 0,
+    "label_state_counts": {
+      "SUPPORTED": 52,
+      "PARTICIPATION_UNKNOWN_NO_STAT_ROW": 3
+    },
+    "unique_games": 13,
+    "unique_players": 52,
+    "unique_player_games": 52,
+    "membership_sha256": "ceaedb9a1aed57e8ce625a17ba24a2d6855979946f5cc6bd432a755df9156eff",
+    "precision_counts": {
+      "exact_rate": {
+        "numerator": 0,
+        "denominator": 52,
+        "rate": 0.0
+      },
+      "abs_lt_1": {
+        "numerator": 0,
+        "denominator": 52,
+        "rate": 0.0
+      },
+      "abs_le_1": {
+        "numerator": 2,
+        "denominator": 52,
+        "rate": 0.038461538461538464
+      },
+      "abs_lt_5": {
+        "numerator": 6,
+        "denominator": 52,
+        "rate": 0.11538461538461539
+      },
+      "abs_le_5": {
+        "numerator": 9,
+        "denominator": 52,
+        "rate": 0.17307692307692307
+      },
+      "abs_lt_10": {
+        "numerator": 14,
+        "denominator": 52,
+        "rate": 0.2692307692307692
+      },
+      "abs_le_10": {
+        "numerator": 16,
+        "denominator": 52,
+        "rate": 0.3076923076923077
+      }
+    },
+    "new_fits": 0,
+    "n": 52,
+    "mae": 27.403846153846153,
+    "mse": 1599.25,
+    "rmse": 39.99062390110962,
+    "bias": -13.557692307692308,
+    "p90_abs": 60.9,
+    "p95_abs": 90.54999999999993,
+    "max_abs": 129.0,
+    "exact_rate": 0.0,
+    "abs_lt_1": 0.0,
+    "abs_le_1": 0.038461538461538464,
+    "abs_lt_5": 0.11538461538461539,
+    "abs_le_5": 0.17307692307692307,
+    "abs_lt_10": 0.2692307692307692,
+    "abs_le_10": 0.3076923076923077
+  }
+]

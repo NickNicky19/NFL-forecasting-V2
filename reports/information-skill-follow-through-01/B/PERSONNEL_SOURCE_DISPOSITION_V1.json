@@ -1,0 +1,243 @@
+{
+  "id": "B_INFORMATION_SKILL_FOLLOWTHROUGH_PERSONNEL_SOURCE_DISPOSITION_v1",
+  "recorded_UTC": "2026-11-15T21:05:02.004689+00:00",
+  "owner": "B read-only retained-source reconciliation; existing A/C registered source/personnel owners retain collection",
+  "status": "DEPTH_SOURCE_LOAD_GATE_ALREADY_QUALIFIED;UNCHANGED_DEPTH_DIRECTION_TEST_CLOSED;FULL_EVENT_EFFECTIVE_PERSONNEL_REMAINS_BLOCKED",
+  "scope": "Uses already inspected retained B/C source receipts and public derivatives. No new source bytes, raw personnel publication, status inference, predictive fit or live use.",
+  "already_resolved": {
+    "depth_clock": "Source dictionary defines dt as source loadtime; actual2025/26 cumulative archived rows contain appended earlier timestamps. LatestTEAM snapshot dt<cutoff, exactGSIS/team/slot identity and emptyupdates retained.",
+    "evidence_tier": "SOURCE_AUTHORED_LOAD_CLOCK_CURRENT_VINTAGE_ASOF_RECONSTRUCTION",
+    "source_assets": [
+      {
+        "season": 2025,
+        "bytes": 2584724,
+        "SHA256": "14f74185b3c2c48df234ced284ba3596bda3333d0b2a8df40841f68cd34539fa",
+        "source_rows": 554215,
+        "timestamps": 221,
+        "dt_min": "2025-08-03T10:09:07Z",
+        "dt_max": "2026-03-14T07:32:09Z"
+      },
+      {
+        "season": 2026,
+        "bytes": 3465032,
+        "SHA256": "8633b61b70c35eaf919c8aef9934c8802723de4dfb6aeb7f354dfc09237a5ced",
+        "source_rows": 780140,
+        "timestamps": 292,
+        "dt_min": "2026-03-22T06:38:42Z",
+        "dt_max": "2026-11-12T15:57:12Z"
+      }
+    ],
+    "qualification": "Actual prior qualification receipts and derived outputs inspected; rawParquet bytes not reobtained or claimed inspected in this followthrough.",
+    "available_derived": {
+      "rows": 941,
+      "coverage": "2025W1–18 664conditionalQBqueries,663exactsource supported;2026W1–8 all277. No W9rank extension present in this handoff.",
+      "binding": {
+        "repository": "NickNicky19/NFL-forecasting-V2",
+        "commit": "17f4497cd377d543401fc7eaf50db967c9e45f76",
+        "path": "reports/next-generation-information-research-01/B/depth-role-wave-v2/DERIVED_QB_ROLE_INPUTS_V1.json.gz",
+        "bytes": 26899,
+        "SHA256": "57489a5889441a7b4b555a562e3e61936cb13d03c3b24be8d92c726ca5bd83eb",
+        "URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/17f4497cd377d543401fc7eaf50db967c9e45f76/reports/next-generation-information-research-01/B/depth-role-wave-v2/DERIVED_QB_ROLE_INPUTS_V1.json.gz"
+      },
+      "example": {
+        "derived_from_existing_public_artifact": true,
+        "query_identity_SHA256": "c1bbc60e348f7b7c182f2503106dd616ff62715318d42e819aa37e1568e5f578",
+        "season": 2026,
+        "week": 1,
+        "source_tier": "CURRENT_VINTAGE_TIMESTAMPED_DEPTH_ASOF_RECONSTRUCTION_NOT_ORIGINAL_ISSUANCE",
+        "values": {
+          "current_depth_rank": 1,
+          "rank_change_since_eligible_own_game": 0,
+          "current_snapshot_age_hours": 12.2275
+        },
+        "missing_flags": {
+          "current_depth_rank": false,
+          "rank_change_since_eligible_own_game": false,
+          "current_snapshot_age_hours": false
+        },
+        "support": {
+          "current_snapshot_available": true,
+          "current_player_in_snapshot": true,
+          "current_rank_available": true,
+          "previous_role_available": true
+        },
+        "current_status": "OBSERVED_SOURCE_REPORTED_RANK",
+        "previous_status": "OBSERVED_SOURCE_REPORTED_RANK",
+        "semantics": "Reported ordinal depthrank only; no injury/health/active/startingprobability inference. Identity omitted."
+      }
+    }
+  },
+  "completed_test": {
+    "recipe": "B-QB-DEPTH-ROLE source-rank/support increment on unchangedR3 completionLeaf-CDF",
+    "actual_line_weeks": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "decided": 112,
+    "unchanged_S0_mean": [
+      61,
+      51
+    ],
+    "support_S1_mean": [
+      53,
+      59
+    ],
+    "values_S2_mean": [
+      53,
+      59
+    ],
+    "unchanged_S0_law": [
+      59,
+      53
+    ],
+    "support_S1_law": [
+      52,
+      60
+    ],
+    "values_S2_law": [
+      57,
+      55
+    ],
+    "direction_disposition": "CLOSE_RECIPE_NO_GAIN; do not rerun unchangedrank recipe",
+    "numerical_scope": "Broad277W1–8 meanMAE5.76916→5.33586; offered112 meanMAE5.28697→5.23161, uncertain and weaker than retained adjusted4.81188. Preserve as separate numerical shadow evidence."
+  },
+  "unresolved_gates": {
+    "original_vintages": "Original perdecision HTTPbytes and archive revisionimmutability not authenticated by source dt or laterfile retrieval.",
+    "full_personnel": "Complete eventeffective teammate membership, transactions/elevations and active/inactive source semantics with real observation/effectiveclocks remain absent. A depthrank or injurylist cannot substitute.",
+    "medical": "No blank/absent report becomes healthy/active/inactive; no rank becomes medicalclearance.",
+    "raw_depth_access": "Pinned raw depthParquet not located in bounded local searched locations during this check; not proof it is absent from approved private retention. Existing owner should restore approved exact bytes before missingW9 projections; no duplicate acquisition by B."
+  },
+  "concrete_route": {
+    "executor": "Existing registered personnel/source owner, coordinated by C; A retains any already registered source task",
+    "route_template": "https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/{event}/competitions/{competition}/competitors/{team}/roster?lang=en&region=us&limit=100",
+    "combination": "Existing canonicalNFLverse seasonroster + qualified predecision exactevent roster component + immutable personnel facts + required transaction/elevation/active-inactive evidence.",
+    "existing_observation": "Only postgame2026Nov14 observation for event401873052:60+59entries,119total; every activeflagfalse despite102documentedappearances. Not pregameinactive or starter evidence.",
+    "disposition": "PROSPECTIVE_SOURCE_LEAD_ONLY;HISTORICAL_EFFECTIVE_PERSONNEL_SOURCE_BLOCKED",
+    "minimum_next_action": "Existing authorized owner qualifies this distinct eventroster component before a genuine futuredecision, including completeness, exactidentity, fieldsemantics and immutable clocks. Do not repoll closed no-roster summary or duplicatecollector.",
+    "completion_condition": "Canonical complete teammate/event universe with explicit known/unknown/other states and qualified observation/effectivetime; historical use additionally requires permitted earlier versions."
+  },
+  "opportunity_metadata_scope": {
+    "binding": {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "commit": "17f4497cd377d543401fc7eaf50db967c9e45f76",
+      "path": "reports/profile-increment-to-release-01/B/source-profiles/PASSING_OPPORTUNITY_GAME_INPUTS_V2.json.gz",
+      "bytes": 1253945,
+      "SHA256": "51c2cfceff6103a277c6de5897fc76c33733bb797f0891ccdb271b41840ab36a",
+      "URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/17f4497cd377d543401fc7eaf50db967c9e45f76/reports/profile-increment-to-release-01/B/source-profiles/PASSING_OPPORTUNITY_GAME_INPUTS_V2.json.gz"
+    },
+    "historical_team_games": 2416,
+    "QB_game_rows": 2901,
+    "season2025": {
+      "team_games": 544,
+      "QB_games": 664,
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "season2026": {
+      "team_games": 242,
+      "QB_games": 277,
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "canonical_identity": "game/team and game/QB histories verified; no conflicting historicalQBteam atsamegame found. Not in-game stint/snap exposure or authenticatedpregame roster.",
+    "W9": "This specificv2artifact has noW9teamopportunity/dropback denominators. RetainedW9PBP can support bounded existingextractor extension without newcollection.315QBcontextrows do not alone supply those denominators.",
+    "novelty": "R0–R3 already consumed opportunityrates,volumes,shares and down-distance-field summaries in directcompletionlearner. A separatefuturevolume/allocation law needs distinct frozenmechanism and controls; not a newsource discovery.",
+    "coherence_warning": "2025 includes81creditedattempts outsideproviderqb_dropback;2026W1–8 includes45. Preserve explicitoutsideDB/unassigned buckets ratherthan imposeA<=rawDB."
+  },
+  "bindings": [
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "commit": "17f4497cd377d543401fc7eaf50db967c9e45f76",
+      "path": "reports/next-generation-information-research-01/B/source-qualification/SOURCE_CLOCK_AND_COVERAGE_V1.json",
+      "bytes": 20986,
+      "SHA256": "c4a25dffefc2bf686e2ae53e08f20338b6b9850edf129a07d63f99bb7e47ce7c",
+      "URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/17f4497cd377d543401fc7eaf50db967c9e45f76/reports/next-generation-information-research-01/B/source-qualification/SOURCE_CLOCK_AND_COVERAGE_V1.json"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "commit": "17f4497cd377d543401fc7eaf50db967c9e45f76",
+      "path": "reports/next-generation-information-research-01/B/source-qualification/SOURCE_METADATA_RECEIPTS_V1.json",
+      "bytes": 8553,
+      "SHA256": "4ad56d5d78621b89ef0f6e46b6d7eaeb9033cc0516e159578aea33d97e0a37a7",
+      "URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/17f4497cd377d543401fc7eaf50db967c9e45f76/reports/next-generation-information-research-01/B/source-qualification/SOURCE_METADATA_RECEIPTS_V1.json"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "commit": "17f4497cd377d543401fc7eaf50db967c9e45f76",
+      "path": "reports/next-generation-information-research-01/B/source-qualification/qb_depth_source_v1.py",
+      "bytes": 5172,
+      "SHA256": "a55b44e9868d5a42d36eefdb3fbe4ff1b26a485fbd6e75014beab027ab23049c",
+      "URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/17f4497cd377d543401fc7eaf50db967c9e45f76/reports/next-generation-information-research-01/B/source-qualification/qb_depth_source_v1.py"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "commit": "17f4497cd377d543401fc7eaf50db967c9e45f76",
+      "path": "reports/next-generation-information-research-01/B/B_NEXT_GENERATION_CHECKPOINT_V1.md",
+      "bytes": 12251,
+      "SHA256": "2512d522b3258211451873d3fc19afa8799623563e5e6d3e4b22034a9815af1d",
+      "URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/17f4497cd377d543401fc7eaf50db967c9e45f76/reports/next-generation-information-research-01/B/B_NEXT_GENERATION_CHECKPOINT_V1.md"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "commit": "17f4497cd377d543401fc7eaf50db967c9e45f76",
+      "path": "reports/wave-closure-next-comparison-20261114/B/peer-handoffs/C_PERSONNEL_EXISTING_ROUTE_RECONCILIATION_V1.json",
+      "bytes": 7814,
+      "SHA256": "7efe67e09adc2e54ae85fa38f24abf5d01c1f2dbc43b66a5cb14508c619f36c2",
+      "URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/17f4497cd377d543401fc7eaf50db967c9e45f76/reports/wave-closure-next-comparison-20261114/B/peer-handoffs/C_PERSONNEL_EXISTING_ROUTE_RECONCILIATION_V1.json"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "commit": "17f4497cd377d543401fc7eaf50db967c9e45f76",
+      "path": "reports/wave-closure-next-comparison-20261114/B/peer-handoffs/C_EVENT_ROSTER_COMPONENT_HANDOFF_V1.json",
+      "bytes": 4985,
+      "SHA256": "4ff79423c023bc7e7ea82f7a184eec1aeb0eb4fbaf80fc7e86a959a431087907",
+      "URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/17f4497cd377d543401fc7eaf50db967c9e45f76/reports/wave-closure-next-comparison-20261114/B/peer-handoffs/C_EVENT_ROSTER_COMPONENT_HANDOFF_V1.json"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "commit": "17f4497cd377d543401fc7eaf50db967c9e45f76",
+      "path": "reports/profile-increment-to-release-01/B/source-profiles/SOURCE_COVERAGE_V2.json",
+      "bytes": 46357,
+      "SHA256": "a85ad4fcf866e0e978442f16f63829bb342221cdc977963589a4b94af281dd6a",
+      "URL": "https://github.com/NickNicky19/NFL-forecasting-V2/blob/17f4497cd377d543401fc7eaf50db967c9e45f76/reports/profile-increment-to-release-01/B/source-profiles/SOURCE_COVERAGE_V2.json"
+    }
+  ],
+  "execution_delta": {
+    "new_network_reads": 0,
+    "new_collection": 0,
+    "new_fits": 0,
+    "new_inference": 0,
+    "new_scores": 0,
+    "new_current_packets": 0,
+    "peer_or_global_writes": 0
+  },
+  "retention": "Public hashes/contracts/aggregates and deidentified existingpublicderivedexample only. No raw roster/injury narratives, GSIS/player IDs, private paths or source credentials exported."
+}

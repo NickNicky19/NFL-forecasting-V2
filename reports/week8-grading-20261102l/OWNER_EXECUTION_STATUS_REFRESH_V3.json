@@ -1,0 +1,103 @@
+{
+  "state": "FRESH_OWNER_JOB_METADATA_AND_ALLOWLISTED_LOG_QUALIFICATION",
+  "asof_utc": "2026-11-02T20:32:39.548763+00:00",
+  "source_run_ids": [
+    41514954359,
+    41516838097
+  ],
+  "source_sha": "3c06bb7ed71794bcfec351a7c19e0c8137566196",
+  "logs": [
+    {
+      "job_id": 125516043923,
+      "log_receipt_sha256": "8c6277cc34b35ef3c6664c2fc7d56bb061fb987c3e02ba91056e39a5304599ee",
+      "states": [
+        {
+          "clock": "2026-11-02T20:00:13.3030274Z",
+          "fits": 0,
+          "phase": "controller-template-write",
+          "public_release": false,
+          "public_root": false,
+          "registration_run_completed": false,
+          "registry_created": false,
+          "state": "NATIVE_TEMPLATE_STAGE_COMPLETED",
+          "successful_forecast": false
+        }
+      ]
+    },
+    {
+      "job_id": 125516699914,
+      "log_receipt_sha256": "324248ad7d16e4df51477f4e0699ce724ceaf697c5678f945ff1f1984092484c",
+      "states": [
+        {
+          "clock": "2026-11-02T20:01:13.0612542Z",
+          "fits": 0,
+          "phase": "controller-template-read",
+          "public_release": false,
+          "public_root": false,
+          "registration_run_completed": false,
+          "registry_created": false,
+          "state": "NATIVE_TEMPLATE_STAGE_COMPLETED",
+          "successful_forecast": false
+        }
+      ]
+    },
+    {
+      "job_id": 125517255037,
+      "log_receipt_sha256": "e28504c54d4cb8765462dfdf69774cb817f4a5f8e5dfd7b4c35fecd4a082fbed",
+      "states": [
+        {
+          "clock": "2026-11-02T20:02:04.2600372Z",
+          "fits": 0,
+          "phase": "controller-template-seal",
+          "public_release": false,
+          "public_root": false,
+          "registration_run_completed": false,
+          "registry_created": false,
+          "state": "SAFE_SEAL_READY_FOR_NATIVE_ARTIFACT_UPLOAD",
+          "successful_forecast": false
+        }
+      ]
+    },
+    {
+      "job_id": 125522452899,
+      "log_receipt_sha256": "5d93b1bbf9bb9f3702d04f2439022ef101618b00501cbd75a874c39a94bf3c82",
+      "states": [
+        {
+          "clock": "2026-11-02T20:24:37.1364300Z",
+          "fits": 0,
+          "public_release": false,
+          "state": "PRIVATE_CAPTURE_APPENDED_RESTORE_REQUIRED",
+          "successful_forecast": false
+        }
+      ]
+    },
+    {
+      "job_id": 125529630203,
+      "log_receipt_sha256": "2177d3622aaec4c63497b497de98cea0852f966b3b292c548c17e4d0f54d400a",
+      "states": [
+        {
+          "clock": "2026-11-02T20:26:30.4024382Z",
+          "fits": 0,
+          "public_release": false,
+          "reason": "SOURCE_STATISTICS_PERIOD_MISMATCH",
+          "state": "FAILED_RETAINED",
+          "successful_forecast": false
+        },
+        {
+          "clock": "2026-11-02T20:27:01.7546563Z",
+          "fits": 0,
+          "partial_forecast_archive_state": "UNQUALIFIED_SEE_ORIGINAL_FILE_GRAPH_AND_SECONDARY_STATUS",
+          "public_release": false,
+          "state": "FAILED_ATTEMPT_APPENDED_READER_REQUIRED",
+          "successful_forecast": false
+        }
+      ]
+    }
+  ],
+  "interpretation": "Successful19:59jobs were native-template stages, not successful forecasts/public release. Later20:10producer route hadfreshrestorefailure SOURCE_STATISTICS_PERIOD_MISMATCH, fits0/public_releaseFalse/successful_forecastFalse. No newlyqualified capture/readback/admission established; failed/partial bytes retainowner-only qualification.",
+  "production_head_unchanged": "ea2ce5f57146112bb4b5ccebcf8544b181192f50",
+  "owner_action": "Resolve exact source/statistics-period mismatch and own mandatory source/restoration requirements through existing owner beforeactualMonday23:45UTC T90. No V2 repair, duplicate dispatch, collector or scheduler.",
+  "new_V2_dispatches": 0,
+  "new_V2_inference": 0,
+  "new_V2_fits": 0
+}

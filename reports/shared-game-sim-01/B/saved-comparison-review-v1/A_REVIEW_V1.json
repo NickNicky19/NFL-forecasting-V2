@@ -1,0 +1,489 @@
+{
+  "id": "B-INDEPENDENT-A-SAVED-COMPARISON-REVIEW-v1",
+  "UTC": "2026-11-22T19:47:50.539768+00:00",
+  "reviewer": "B / NFL-forecasting-V2",
+  "state": "PASS_SCOPED_PUBLIC_AGGREGATE_REVIEW",
+  "sources": [
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "commit": "ff8ea1c81f5337be1468870e6c50b7c532d28179",
+      "path": "reports/abc-championship/shared-game-sim-01/A-follow-through-01/RESULTS_V1.json",
+      "sha256": "ea74007b7dd914f18bd204a1541d22a207ce1ec7fd394b5022b0c8407437ed1e",
+      "bytes": 85559,
+      "Git_blob_sha1": "3f870124206beea8eda2566207dfed47c36353d6",
+      "exact_Git_blob_match": true
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "commit": "ff8ea1c81f5337be1468870e6c50b7c532d28179",
+      "path": "reports/abc-championship/shared-game-sim-01/A-follow-through-01/RESULTS_V1.md",
+      "sha256": "eb73443fbac99775be8a7033654a2f168a0f64442a39cdcdbcbd2e0ed46c5e23",
+      "bytes": 5848,
+      "Git_blob_sha1": "a41c483a3278036aaacfad74748c767c3a655e52",
+      "exact_Git_blob_match": true
+    }
+  ],
+  "retrieval": {
+    "GET_allowance": 2,
+    "GETs_executed": 2,
+    "paths": "Only the two exact pinned readable reports; no compressed export, private raw record, model or source recovery."
+  },
+  "review_scope": "Independent arithmetic on permitted A public result vectors, not execution of A scorer and not a competing grader. Includes exact byte binding, own sides/status totals, weekly/venue coverage, fallback codes, paired contingency/count/rate identities, own-pool leader ties, sample bounds and reported uncertainty bounds.",
+  "check_counts": {
+    "record_width": 600,
+    "nonnegative_integer_counts": 6600,
+    "eligibility_conservation": 600,
+    "availability_selection_ties": 600,
+    "selected_status_conservation": 600,
+    "fallback_counts_sum_available": 600,
+    "unknown_containment": 600,
+    "game_count_bounds": 600,
+    "player_game_bounds": 69,
+    "finite_numeric_metrics": 49,
+    "numeric_metric_inequalities": 49,
+    "numeric_sample_bounds": 49,
+    "weekly_or_venue_additive_counts": 1518,
+    "weekly_or_venue_code_counts": 276,
+    "six_week_frame_retained": 69,
+    "weekly_game_counts_additive": 69,
+    "A_W8_W9_unavailable_preserved": 29,
+    "paired_width": 144,
+    "paired_count_bounds": 144,
+    "paired_win_difference": 144,
+    "paired_rate": 144,
+    "paired_disagreement_identity": 144,
+    "paired_contingency_feasibility": 144,
+    "paired_game_week_bounds": 144,
+    "paired_subset_count_bounds": 288,
+    "reported_interval_range_order": 144,
+    "matched_numeric_sample_bounds": 58,
+    "matched_numeric_feasibility": 58,
+    "own_pool_leader_or_tie": 10,
+    "missing_contract_status": 2,
+    "declared_frame_matches_accepted_package": 1,
+    "full_control_frame_size": 4,
+    "full_control_unknown_frame": 4,
+    "A_forecast_body_count": 1,
+    "full_raw_record_conservation": 1,
+    "README_representative_paired_numbers": 7,
+    "exact_fetched_Git_blob": 2
+  },
+  "failed_checks": [],
+  "records_reviewed": 69,
+  "weekly_record_vectors_reviewed": 414,
+  "venue_record_vectors_reviewed": 117,
+  "paired_vectors_reviewed": 144,
+  "matched_numerical_records_reviewed": 58,
+  "category_leader_review": [
+    {
+      "category": "pass_yd",
+      "leaders": [
+        "pass_yd__HGB_MAE_DIRECT"
+      ],
+      "own_pool_rate": 0.45555555555555555,
+      "status": "SHADOW",
+      "actual_A_weeks": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "category": "pass_td",
+      "leaders": [
+        "pass_td__COUNT_A_MEAN",
+        "pass_td__CATBOOST_MEDIUM"
+      ],
+      "own_pool_rate": 0.6891891891891891,
+      "status": "SHADOW",
+      "actual_A_weeks": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "category": "pass_cmp",
+      "leaders": [
+        "pass_cmp__CATBOOST_MEDIUM"
+      ],
+      "own_pool_rate": 0.4888888888888889,
+      "status": "SHADOW",
+      "actual_A_weeks": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "category": "pass_att",
+      "leaders": [
+        "pass_att__RESPONSE_CDF"
+      ],
+      "own_pool_rate": 0.4888888888888889,
+      "status": "SHADOW",
+      "actual_A_weeks": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "category": "pass_int",
+      "leaders": [
+        "pass_int__LEAF_CDF"
+      ],
+      "own_pool_rate": 0.6164383561643836,
+      "status": "SHADOW",
+      "actual_A_weeks": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "category": "rush_yd",
+      "leaders": [
+        "rush_yd__LEAF_CDF"
+      ],
+      "own_pool_rate": 0.5983606557377049,
+      "status": "SHADOW",
+      "actual_A_weeks": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "category": "rush_att",
+      "leaders": [
+        "rush_att__LEAF_CDF"
+      ],
+      "own_pool_rate": 0.5419847328244275,
+      "status": "SHADOW",
+      "actual_A_weeks": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "category": "rec",
+      "leaders": [
+        "rec__COUNT_A_MEAN"
+      ],
+      "own_pool_rate": 0.5876288659793815,
+      "status": "SHADOW",
+      "actual_A_weeks": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "category": "rec_yd",
+      "leaders": [
+        "rec_yd__LEAF_CDF"
+      ],
+      "own_pool_rate": 0.5532359081419624,
+      "status": "SHADOW",
+      "actual_A_weeks": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "category": "rush_rec_yd",
+      "leaders": [
+        "rush_rec_yd__RESPONSE_CDF",
+        "rush_rec_yd__CATBOOST_MEDIUM"
+      ],
+      "own_pool_rate": 0.5673076923076923,
+      "status": "SHADOW",
+      "actual_A_weeks": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "representative_paired_results": [
+    {
+      "A": "rec__COUNT_A_MEAN",
+      "B": "W0",
+      "category": "rec",
+      "n": 482,
+      "games": 45,
+      "weeks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "A_wins": 283,
+      "B_wins": 277,
+      "difference_wins": 6,
+      "difference_rate": 0.012448132780082987,
+      "A_only_correct": 97,
+      "B_only_correct": 91,
+      "direction_disagreements": 188,
+      "game95_rate": [
+        -0.04161120435210371,
+        0.06366159317513072
+      ]
+    },
+    {
+      "A": "rec__COUNT_A_MEAN",
+      "B": "W1",
+      "category": "rec",
+      "n": 480,
+      "games": 45,
+      "weeks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "A_wins": 283,
+      "B_wins": 286,
+      "difference_wins": -3,
+      "difference_rate": -0.00625,
+      "A_only_correct": 86,
+      "B_only_correct": 89,
+      "direction_disagreements": 175,
+      "game95_rate": [
+        -0.058068726518979145,
+        0.04452268843158671
+      ]
+    },
+    {
+      "A": "rush_yd__LEAF_CDF",
+      "B": "W0",
+      "category": "rush_yd",
+      "n": 244,
+      "games": 45,
+      "weeks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "A_wins": 146,
+      "B_wins": 128,
+      "difference_wins": 18,
+      "difference_rate": 0.07377049180327869,
+      "A_only_correct": 75,
+      "B_only_correct": 57,
+      "direction_disagreements": 132,
+      "game95_rate": [
+        -0.02419846577498033,
+        0.16739910556497276
+      ]
+    },
+    {
+      "A": "rush_yd__LEAF_CDF",
+      "B": "W1",
+      "category": "rush_yd",
+      "n": 244,
+      "games": 45,
+      "weeks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "A_wins": 146,
+      "B_wins": 107,
+      "difference_wins": 39,
+      "difference_rate": 0.1598360655737705,
+      "A_only_correct": 93,
+      "B_only_correct": 54,
+      "direction_disagreements": 147,
+      "game95_rate": [
+        0.05905327004219409,
+        0.26161091018685956
+      ]
+    },
+    {
+      "A": "rush_yd__LEAF_CDF",
+      "B": "ALWAYS_UNDER",
+      "category": "rush_yd",
+      "n": 244,
+      "games": 45,
+      "weeks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "A_wins": 146,
+      "B_wins": 133,
+      "difference_wins": 13,
+      "difference_rate": 0.05327868852459016,
+      "A_only_correct": 33,
+      "B_only_correct": 20,
+      "direction_disagreements": 53,
+      "game95_rate": [
+        -0.004419982408030211,
+        0.11715481171548117
+      ]
+    },
+    {
+      "A": "pass_td__COUNT_A_MEAN",
+      "B": "W0",
+      "category": "pass_td",
+      "n": 73,
+      "games": 42,
+      "weeks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "A_wins": 50,
+      "B_wins": 48,
+      "difference_wins": 2,
+      "difference_rate": 0.0273972602739726,
+      "A_only_correct": 12,
+      "B_only_correct": 10,
+      "direction_disagreements": 22,
+      "game95_rate": [
+        -0.11850106685633001,
+        0.15716165413533834
+      ]
+    },
+    {
+      "A": "pass_td__COUNT_A_MEAN",
+      "B": "W1",
+      "category": "pass_td",
+      "n": 74,
+      "games": 42,
+      "weeks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "A_wins": 51,
+      "B_wins": 47,
+      "difference_wins": 4,
+      "difference_rate": 0.05405405405405406,
+      "A_only_correct": 10,
+      "B_only_correct": 6,
+      "direction_disagreements": 16,
+      "game95_rate": [
+        -0.06412337662337661,
+        0.15789473684210525
+      ]
+    }
+  ],
+  "scope_findings": [
+    {
+      "finding": "A adds W4\u20137 saved-point coverage only:2116 compatible cases,45 games,704 player-games,6258 available candidate/case rows. W8\u20139 remain unavailable; no five-week upgrade.",
+      "scope": "Public declared unique-case/game/player totals cannot be independently deduplicated without raw identities; available-row totals and repeated weekly vectors reconcile."
+    },
+    {
+      "finding": "Strict-point own selected records retain unknowns and separate abstentions/pushes/unavailable rows. Native/fallback code counts reconcile with available forecasts by week and venue. Blank A fallback flags are unattributed, not learned-only.",
+      "scope": "Code semantics and totals checked; original fallback routing cannot be independently re-executed from aggregates."
+    },
+    {
+      "finding": "Primary broad strict crossing only. No new frozen selective Top-K, confidence policy, ticket or complete website Top Picks replay is supplied.",
+      "scope": "No selective policy qualification inferred from own-side or broad-board totals."
+    },
+    {
+      "finding": "A point forecasts do not supply full arbitrary-threshold probability laws. No Brier/log-loss/calibrated confidence or simulator architecture claim follows.",
+      "scope": "No probability fabricated from point gaps."
+    },
+    {
+      "finding": "Reported game-bootstrap intervals are ordered, bounded and consistent with the named paired rate endpoints; resampling is descriptive/unadjusted/exposed.",
+      "scope": "No raw game-membership resampling reproduced; interval numerical correctness is not independently established by bounds checks."
+    }
+  ],
+  "owner_reported_private_checks": {
+    "status": "OWNER_REPORTED_ONLY_NOT_B_RAW_ROW_REPRODUCTION",
+    "A_verification": {
+      "excluded": "Fit,GSISvintage,NFLoutcomes/bootstrap/TopPicks;externalB/Cintakepending",
+      "independent_frozen_point_bindings": 6258,
+      "independent_raw_records": 24170,
+      "mismatches": 0,
+      "state": "PASS_SCOPED"
+    },
+    "raw_receipt": {
+      "bytes": 338572,
+      "case_order_sha256": "e294f866a27347cf07685cc5eb92c91ee73ec9491fb959b763d62f5676fc4e95",
+      "dtype": [
+        [
+          "case",
+          "<u2"
+        ],
+        [
+          "arm",
+          "|u1"
+        ],
+        [
+          "point",
+          "<f8"
+        ],
+        [
+          "side",
+          "|u1"
+        ],
+        [
+          "status",
+          "|u1"
+        ],
+        [
+          "fallback",
+          "|u1"
+        ]
+      ],
+      "forecast_binding_sha256": "a36de94b0c3b63a790534e3829d45d233ef5d781d34096dbcb99cb49e2275102",
+      "rows": 24170,
+      "sha256": "26a84b232e67a69983c772aae4f8102223e70afa16a03eee72364a11f3db63d9"
+    },
+    "limits": "B did not obtain compressed/private raw rows or frozen A model/point bindings. Public aggregate PASS does not independently establish24170 raw-row grades,6258 point parity, identity/chronology/source-clock/raw-outcome/settlement parity or fit reproduction."
+  },
+  "release_relevant_disposition": {
+    "activation": false,
+    "recommendation": "SHADOW under existing exact-product rules; four supported A blocks here. Existing separately qualified products are not blocked by this review.",
+    "observed_gain_vs_website": "Rushing-yard Leaf gains18/244 vsW0 and39/244 vsW1; reception Count A gains6/482 vsW0 but loses3/480 vsW1. These are exposed retrospective paired records, not prospective confirmation.",
+    "source_tier": "Retained real lines; original quote/issuance clocks and venue settlements unauthenticated. Same-case population identity remains the owner canonical contract, not independently reconstructed here."
+  },
+  "excluded": [
+    "Private-row/source reconstruction",
+    "Fit or numerical coefficient reproduction",
+    "Regrading outcomes",
+    "New simulator/inference",
+    "Bootstrap resampling",
+    "Named complete website selector replay",
+    "Prospective confirmation or deployment"
+  ],
+  "resource_accounting": {
+    "dedicated_reporting_CPU_cap_seconds": 10,
+    "wall_cap_seconds": 120,
+    "measured_review_worker_CPU_seconds": 0.008607510000000002,
+    "new_fits": 0,
+    "new_inference": 0,
+    "new_grading": 0,
+    "new_source_collection": 0,
+    "metering_limit": "Worker metadata CPU only; retrieval/orchestration/import/exit tails incompletely metered. Preparation included one SyntaxError plus two schema-handling KeyErrors before the completed review. They caused no new grades/models. No closed scientific budget used.",
+    "Markdown_comparison_CPU_seconds": 0.0022640439999999998
+  },
+  "Markdown_JSON_consistency": {
+    "state": "PASS",
+    "checks": 93,
+    "failures": [],
+    "scope": "Independent arithmetic on printed own sides/combined/rates/availability/unknowns and named pair counts, plus printed interval rounding against JSON endpoints. This does not independently recompute the bootstrap."
+  }
+}

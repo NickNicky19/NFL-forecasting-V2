@@ -1,0 +1,53 @@
+{
+  "state": "PASS_FINAL_V7_1_EXPORT_ANNOTATION_BINDINGS",
+  "at_utc": "2026-11-05T01:29:40.995140+00:00",
+  "export_index_snapshot_sha256": "75abb980a2270a8a0dadbe20c87a1bcddaa3d18400ace3cfab13eccdf9380b4d",
+  "export_schema": "B-ABC-EXPORT-INDEX-v7.1",
+  "export_descriptors": 262,
+  "source_commit": "a487b3661d93b8ac3aad971c408cd295e6512453",
+  "publication_readback_receipt_sha256": "3934d69ef5e2f6aed706c6a9941937a19778b8f6ee366a208031c951f3f370d7",
+  "committed_source_files_independently_hash_checked": 139,
+  "committed_source_bytes_independently_checked": 38394046,
+  "previous_original_index_ref": "d835346c2cda1cf7d2ffcfb843b103cbcb489615",
+  "previous_original_index_path": "reports/abc-championship/EXPORT_INDEX.json",
+  "previous_index_sha256": "81a9737a278882736b7d98054a559cef5137b9aeedc7fd0a424ec6a0f797054f",
+  "preserved_V6_exact_byte_copy": true,
+  "preserved_V7_preclarification_draft_sha256": "3980384caf104a45ec4341e423e6a5bba28f69d908f88f9e16de47acddc27954",
+  "required_raw_source_annotation_bindings": [
+    {
+      "source_path": "reports/post-wave-5w-v1/b-confidence-ordering-v1/SCORES.json",
+      "source_sha256": "0482ebfe4d16370116f8b053b7302b0e870be1ed11afeb625a0bd52d40f709b4",
+      "annotation_path": "reports/post-wave-5w-v1/b-confidence-ordering-v1/SOURCE_HORIZON_QUALIFICATION_V2.json",
+      "annotation_sha256": "52ab2e08d44c69d2062198f5506f2616c8da66437ef97281c3af79703190b3ce",
+      "annotation_rows": 25,
+      "producer_commit": "a487b3661d93b8ac3aad971c408cd295e6512453",
+      "required_on_raw_source": true
+    },
+    {
+      "source_path": "reports/post-wave-5w-v1/B-111-RB-common-mask-v3/SCORES.json",
+      "source_sha256": "6434ec811f2cc18297b28d319d2bae19a05134860d72f1a61dff68b86ea689a3",
+      "annotation_path": "reports/post-wave-5w-v1/B-111-RB-common-mask-v3/SOURCE_HORIZON_QUALIFICATION_V2.json",
+      "annotation_sha256": "c5a8c14c4f5a00e5cef19ba415289608727270005c18842f8abaa649fa3d0e1c",
+      "annotation_rows": 468,
+      "producer_commit": "a487b3661d93b8ac3aad971c408cd295e6512453",
+      "required_on_raw_source": true
+    }
+  ],
+  "current_univariate_manifest": "reports/post-wave-5w-v1/results-index-v4/INDEX_MANIFEST.json",
+  "univariate_records": 603711,
+  "current_compressed_paired_manifest": "reports/post-wave-5w-v1/paired-analysis-index-gzip-v2/ANALYSIS_MANIFEST.json",
+  "paired_records": 19336,
+  "current_post_wave_C_admission": "NOT_VERIFIED",
+  "prior_wave_partial_C_intake": "7413of7893records;2444triads;480COMMON_COHORTunreceived;notprivate/inferenceparity",
+  "stale_next_action_and_prior_C_status_wording_corrected": true,
+  "export_v7_1_metadata_publication": "PREPARED_LOCAL_AT_AUDIT;METADATA_COMMIT_AND_READBACK_ARE_ROOT_NEXT_ACTION",
+  "previous_horizon_audit_pending_export_condition_resolved": true,
+  "new_fits": 0,
+  "new_scores": 0,
+  "new_NFL_observations": 0,
+  "limits": [
+    "Independently verified immutable localgitobjects against rootpublication receipts; did not repeat139networkreads. Annotation artifacts and rawsource requirements bind the exact pushed sourcecommit.",
+    "Prepared index publication/readback and C actualintake remain separate from sourcepublication. Public sourcehash equality is not privatecandidate/model/inference parity or production admission.",
+    "This closes export-metadata delivery preparation only; no scorer/model run, new NFL accuracy observation or production change."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "state": "PASS_CURRENT_POINTER_DEREFERENCE_PAYLOAD_EQUALITY",
+  "observed_at_utc": "2026-11-04T00:05:46.381338+00:00",
+  "correction_of": "INDEPENDENT_OWNER_OPERATION_READBACK_V1.json",
+  "correction_scope": "Prior independent check compared474bytecurrentpointer to11863bytepayload, a type-mismatched comparison. Pointer and payload both unchanged; no production update or changedforecast occurred.",
+  "pointer_schema": "weekly-selected-rankings-pointer-v1",
+  "pointer_bytes": 474,
+  "pointer_sha256": "2b3520960fefa598c21dc71f639efad181630150fc221881064b00c38c1fdd0f",
+  "payload_url": "https://nicknicky19.github.io/nicks-expert-nfl-picks/data/weekly-selected-rankings/f2540ee184fe24144c4aff0781d8d259d527948057af25d62a8792f22b300780.json",
+  "payload_sha256": "f2540ee184fe24144c4aff0781d8d259d527948057af25d62a8792f22b300780",
+  "payload_bytes": 11863,
+  "same_as_immutable_github_and_earlier_readback": true,
+  "season": 2026,
+  "week": 9,
+  "selected": 24,
+  "over": 12,
+  "under": 12,
+  "unique_games": 6,
+  "unique_contracts": 24,
+  "first_kickoff_utc": "2026-11-06T01:15:00+00:00",
+  "all_selected_games_future_at_independent_readback": true,
+  "category_counts": {
+    "reference_point": 24
+  },
+  "model_versions": {
+    "sleeper-matchup-classic-fg-identity-v1": 24
+  },
+  "forecast_sources": {
+    "CURRENT_BASELINE": 24
+  },
+  "null_selected_row_hashes": 24,
+  "limits": [
+    "Existing owner packet read-only; noBcapture or production write.",
+    "Twelve Overs plus twelve Unders is24selections, not12combined.",
+    "Producerprepared/inference clock not independently authenticated.",
+    "Does not establish B/C02 admission, per-model recovery or3-5methods/category."
+  ]
+}

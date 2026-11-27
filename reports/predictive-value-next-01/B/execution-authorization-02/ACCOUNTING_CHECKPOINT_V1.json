@@ -1,0 +1,117 @@
+{
+  "experiment": "B-TABICLV2-CMP-DIRECT-PILOT-v1",
+  "grant": "EXECUTION-AUTHORIZATION-02",
+  "started_UTC": "2026-11-16T23:10:50.192293+00:00",
+  "CPU_seconds": 255.35118188500002,
+  "known_preparation_CPU_seconds": 0.43459571,
+  "CPU_cap": 600.0,
+  "wall_cap": 1200.0,
+  "completion_CPU_reserve": 180.0,
+  "completion_wall_reserve": 180.0,
+  "stages": [
+    {
+      "stage": "runtime-download-install",
+      "UTC": "2026-11-16T23:11:15.558970+00:00",
+      "CPU_seconds": 16.632667431,
+      "wall_seconds": 25.36644588299896,
+      "peak_aggregate_RSS_bytes": 211148800,
+      "peak_runtime_storage_bytes": 898878824,
+      "returncode": 0,
+      "stop_reason": null,
+      "state": "PASS"
+    },
+    {
+      "stage": "safe-loader-and-NFL-input-check",
+      "UTC": "2026-11-16T23:13:18.519038+00:00",
+      "CPU_seconds": 12.618426161,
+      "wall_seconds": 7.8988705669980845,
+      "peak_aggregate_RSS_bytes": 534040576,
+      "peak_runtime_storage_bytes": 833218349,
+      "returncode": 1,
+      "stop_reason": null,
+      "state": "SAFE_STOP_OR_FAILURE"
+    },
+    {
+      "stage": "corrected-NFL-fixture-and-loader",
+      "UTC": "2026-11-16T23:15:58.346234+00:00",
+      "CPU_seconds": 29.600556902999998,
+      "wall_seconds": 17.3762932560021,
+      "peak_aggregate_RSS_bytes": 537399296,
+      "peak_runtime_storage_bytes": 833218349,
+      "returncode": 0,
+      "stop_reason": null,
+      "state": "PASS"
+    },
+    {
+      "stage": "independent-fixture-review-interrupted",
+      "CPU_seconds": 78.44537064500001,
+      "state": "INTERRUPTED_NO_PASS_NO_NFL_FIT",
+      "metering_limit": "psutil pre-SIGINT CPU78.43 plus .015370645 measured metadata; exit/launcher/search tails unmetered",
+      "worker_scope": "Independent full-context per-record deepcopy exceeded practical reviewcost and was interrupted. No retry. Potential validation concurrency overlap with root grouped fixture; no fulltask thread-compliance claim for this prefit check; subsequent scientificworkers execute alone."
+    },
+    {
+      "stage": "W7-ungraded-canary",
+      "UTC": "2026-11-16T23:17:16.013898+00:00",
+      "CPU_seconds": 30.010699441,
+      "wall_seconds": 14.325361102997704,
+      "peak_aggregate_RSS_bytes": 683769856,
+      "peak_runtime_storage_bytes": 833218349,
+      "returncode": 0,
+      "stop_reason": null,
+      "state": "PASS"
+    },
+    {
+      "stage": "saved-W7-and-fallback-scoring",
+      "UTC": "2026-11-16T23:22:07.186697+00:00",
+      "CPU_seconds": 2.164369564,
+      "wall_seconds": 1.4227360700024292,
+      "peak_aggregate_RSS_bytes": 75255808,
+      "peak_runtime_storage_bytes": 833218349,
+      "returncode": 0,
+      "stop_reason": null,
+      "state": "PASS"
+    },
+    {
+      "stage": "score-index-preflight",
+      "UTC": "2026-11-16T23:24:23.563869+00:00",
+      "CPU_seconds": 0.673566294,
+      "wall_seconds": 0.6305198029986059,
+      "peak_aggregate_RSS_bytes": 19832832,
+      "peak_runtime_storage_bytes": 833218349,
+      "returncode": 0,
+      "stop_reason": null,
+      "state": "PASS"
+    },
+    {
+      "stage": "independent-grade-selection-review",
+      "CPU_seconds": 1.635271,
+      "state": "PASS_SCOPED_GRADES_PROPER_MEMBERSHIP",
+      "metering_limit": "Failedcheckerconservativecharge1.016782+process0.333684+inspection0.284805; exit/write tails unmetered."
+    },
+    {
+      "stage": "canonical-registration",
+      "UTC": "2026-11-16T23:28:57.725421+00:00",
+      "CPU_seconds": 83.098096736,
+      "wall_seconds": 52.84958129400184,
+      "peak_aggregate_RSS_bytes": 239603712,
+      "peak_runtime_storage_bytes": 833218349,
+      "returncode": 0,
+      "stop_reason": null,
+      "state": "PASS"
+    },
+    {
+      "stage": "independent-receipt-metadata-closure",
+      "CPU_seconds": 0.037562,
+      "state": "PASS_NO_VALUES_CHANGED"
+    }
+  ],
+  "unmetered": "Prior failed preparation/import/tool/orchestration and review/search tails not completely metered; known charges carried, no complete-total assertion.",
+  "wall_seconds": 1087.5330846309662,
+  "state": "W7_EXECUTED_W8_W9_SAFE_STOP;PUBLICATION_REMAINING",
+  "fits": {
+    "TabICL_context_builds": 1,
+    "logistic_fits": 1,
+    "pretraining_or_tuning": 0
+  },
+  "M3_or_C_pilot_spend": 0
+}

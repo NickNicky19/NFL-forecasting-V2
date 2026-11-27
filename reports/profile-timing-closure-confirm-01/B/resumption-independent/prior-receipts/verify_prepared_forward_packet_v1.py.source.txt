@@ -1,0 +1,73 @@
+"""Verify actual new current fitted bytes and prepared values, no refitting."""
+import gzip,hashlib,importlib.util,json,sys
+from collections import Counter
+from datetime import datetime
+from pathlib import Path
+import numpy as np
+ROOT=Path(__file__).resolve().parents[4];OUT=Path(__file__).resolve().parent;BASE=OUT.parent;FORWARD=BASE/'forward-current-v1'
+sys.path.insert(0,str(ROOT))
+from nfl_v2 import player_context_matchup as ctx
+from nfl_v2.qb_aligned_freshness import reconstruct_rows,CONTROL,ALTERNATIVE
+from tools.capture_qb_forward_timing import feature_query
+def read(p):
+ p=Path(p);b=p.read_bytes();return json.loads(gzip.decompress(b)if p.suffix=='.gz'else b)
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def instant(s):
+ t=datetime.fromisoformat(s);assert t.tzinfo is not None;return t.timestamp()
+protocol=read(FORWARD/'FROZEN_CAPTURE_PROTOCOL.json');prepared=read(FORWARD/'PREPARED_FORECASTS.json.gz')
+assert prepared['protocol_sha256']==sha(FORWARD/'FROZEN_CAPTURE_PROTOCOL.json')and prepared['eligible_capture']is False
+for b in protocol['bindings']:assert sha(ROOT/b['path'])==b['sha256']
+assert instant(protocol['registered_utc'])<=protocol['feature_cutoff']
+rows=ctx.load_inputs(ROOT/protocol['inputs']);old=ctx.load_inputs(ROOT/'reports/player-context-matchup-01/B/source-fields-v3/DERIVED_QB_GAME_INPUTS.json.gz');oldmap={(r['game_id'],r['player_id']):r for r in old};currentmap={(r['game_id'],r['player_id']):r for r in rows}
+assert all(currentmap[k]==v for k,v in oldmap.items())
+new=[r for k,r in currentmap.items()if k not in oldmap];assert len(new)==4
+derivation=read(BASE/'forward-receipts/current-inputs/CURRENT_INPUT_DERIVATION_RECEIPT_V1.json');held=set(derivation['held_game_ids']);final=set(derivation['recent_native_final_game_ids'])
+assert len(held)==13 and len(derivation['held_QB_rows'])==34 and not final&held
+assert all(r['game_id']in final and r['game_id']not in held and(r['season'],r['week'])==(2026,9)for r in new)
+assert not any(r['game_id']in held for r in rows)
+queries=read(ROOT/protocol['queries'])['queries'];assert len(queries)==8 and len({(q['game_id'],q['player_id'])for q in queries})==8
+status=Counter(q['provider_status']for q in queries);assert status['ACT']==5 and sum(v for k,v in status.items()if k!='ACT')==3
+querymap={(q['game_id'],q['player_id']):q for q in queries};assert len({q['game_id']for q in queries})==1
+assert all(q['kickoff']>protocol['feature_cutoff']and(q['season'],q['week'])==(2026,10)for q in queries)
+spec=importlib.util.spec_from_file_location('independent_trees',ROOT/'reports/profile-increment-to-release-01/B/independent/verify_pilot_inference_v1.py');manual=importlib.util.module_from_spec(spec);spec.loader.exec_module(manual)
+summaries=[];seen=set();values=0;basic=0;max_mean=max_mass=0.
+for arm,policy in(('F0',CONTROL),('F2',ALTERNATIVE)):
+ converted,unresolved=reconstruct_rows(rows,policy);assert not unresolved;history=ctx.ContextHistory(converted,8,20)
+ train=[r for r in converted if r['physical_participation']and r['target_parity']and r['season']>=2025 and r['available']<protocol['feature_cutoff']]
+ modelpath=FORWARD/'models'/(arm+'.json.gz');record=read(modelpath)
+ assert record['membership_sha256']==hashlib.sha256(json.dumps([(r['game_id'],r['player_id'])for r in train]).encode()).hexdigest()
+ assert record['training_membership']==[[r['game_id'],r['player_id']]for r in train]
+ assert record['training_rows']==len(train)==(941 if arm=='F0'else 945)
+ assert record['latest_training_label']==max(r['available']for r in train)<protocol['feature_cutoff']
+ assert record['protocol_sha256']==sha(FORWARD/'FROZEN_CAPTURE_PROTOCOL.json')and record['input_sha256']==sha(ROOT/protocol['inputs'])
+ assert record['feature_count']==179 and record['named_feature_order']==read(ROOT/protocol['feature_order'])['orders'][arm]
+ assert record['actual_new_fit_calls']==1 and protocol['feature_cutoff']<=instant(record['fit_started_utc'])<=instant(record['fit_completed_utc'])<=instant(prepared['prepared_utc'])
+ mu=max(.05,sum(r['official_completions']for r in train)/len(train));priorq=mu/(1+mu);single=[];latest=[]
+ rr=[r for r in prepared['predictions']if r['arm']==arm];assert len(rr)==8
+ for r in rr:
+  ident=r['identity'];key=ident['game_id'],ident['player_id'];q=querymap[key];assert key not in seen or arm=='F2';seen.add(key)
+  assert r['model_sha256']==sha(modelpath)and r['actual']is None and r['actual_status']=='FUTURE_NOT_GRADED'
+  assert r['exact_offer']is None and r['side']is None and r['selection']is False and r['original_website_selection']is False
+  assert r['feature_cutoff']==protocol['feature_cutoff']and instant(record['fit_completed_utc'])<=instant(r['actual_inferred_utc'])<q['kickoff']
+  if q['provider_status']!='ACT':
+   assert r['status']=='BASIC_ONLY_UNAVAILABLE_FORECAST'and'mean'not in r and'law'not in r;basic+=1;continue
+  work=feature_query(q,protocol['feature_cutoff']);features=history.direct_features(work,'E3')
+  changed=dict(work,official_completions=99999,official_attempts=99999,actual_down_mix=[99999]*25,available=None)
+  assert np.array_equal(features,history.direct_features(changed,'E3'),equal_nan=True)
+  mean,median,mass,cdf=manual.manual_law(record['model'],features,priorq)
+  max_mean=max(max_mean,abs(mean-r['mean']));max_mass=max(max_mass,float(np.max(np.abs(mass-np.asarray(r['law']['weights'])))))
+  assert abs(mean-r['mean'])<1e-10 and median==r['lower_median']and abs(priorq-r['law']['prior']['q'])<1e-14
+  own=sorted([x for x in converted if x['physical_participation']and x['target_parity']and x['player_id']==q['player_id']and x['available']<protocol['feature_cutoff']],key=lambda x:(x['kickoff'],x['game_id']))[-8:]
+  assert r['own_game_ids']==[x['game_id']for x in own]and r['own_prior_games']==len(own)
+  assert not any(x['game_id']in held for x in own)
+  assert r['latest_own_game']==(own[-1]['game_id']if own else None)
+  latest.append(dict(player_id=q['player_id'],latest_game=r['latest_own_game'],target_team_last_W9_held=any(q['team']in g.split('_')[2:]for g in held)))
+  single.append((key,mean,median,mass.tolist()));values+=1
+ shuffled=[]
+ for r in reversed([r for r in rr if'mean'in r]):
+  q=querymap[r['identity']['game_id'],r['identity']['player_id']];feature=history.direct_features(feature_query(q,protocol['feature_cutoff']),'E3');mean,median,mass,cdf=manual.manual_law(record['model'],feature,priorq);shuffled.append(((q['game_id'],q['player_id']),mean,median,mass.tolist()))
+ assert shuffled==list(reversed(single))
+ summaries.append(dict(arm=arm,model_sha256=sha(modelpath),training_rows=len(train),latest_own_history_example_commitment=hashlib.sha256(json.dumps(latest,sort_keys=True).encode()).hexdigest(),all_target_teams_latest_W9_held=all(x['target_team_last_W9_held']for x in latest),independent_prediction_values=len(single),single_and_shuffled_batch_equal=True))
+assert values==10 and basic==6 and len(prepared['predictions'])==16
+receipt=dict(id='B-CURRENT-PREPARED-PACKET-INDEPENDENT-REVIEW-v2',status='PASS_IN_CHECKED_PREPARED_SCOPE',metadata_correction='PreservesV1: team token slice nowincludesbothaway/home tokens when reportingheldtarget-teamW9context. No forecast/model/source/checkstatus changed.',protocol_sha256=sha(FORWARD/'FROZEN_CAPTURE_PROTOCOL.json'),prepared_sha256=sha(FORWARD/'PREPARED_FORECASTS.json.gz'),current_input_sha256=sha(ROOT/protocol['inputs']),source_derivation_receipt_sha256=sha(BASE/'forward-receipts/current-inputs/CURRENT_INPUT_DERIVATION_RECEIPT_V1.json'),old_rows_preserved_exactly=len(oldmap),new_qualified_historical_rows=4,qualified_recent_games=2,held_recent_games=13,held_QB_rows=34,current_query_players=8,ACT_conditional_forecast_players=5,basic_unavailable_players=3,prepared_forecast_values=values,basic_records=basic,models=summaries,max_mean_difference=max_mean,max_mass_difference=max_mass,actual_offers=0,actual_selections=0,new_grades=0,new_fits_by_verifier=0,independence='Independent membership/clock/history checks and separate typed-tree traversal; featurebuilder exactdependencies reused from prior manual179-equation verification. No author inference/scoring helper called for modeloutputs.',state_limit='PREPARED isnot finalcapture. Freshnativeeventgate+realissue/persistence+GitHubreadback remainseparate; noactualconsumerwebsiteuse established.',freshness_limit='Only2recentFINALgames supply4newrows;13recentgames—includingtargetteamslatestgames—areheld. Current source ispartial, not fullyfresh personalizedhistory. 7d/48h historicalclocks remainreconstructed assumptions; actualsourceobservations separate.',limits=['Current-knownACT isnot starter, health, gamedayappearance or probabilityevidence.','Noindependentcurrentfreshfit/raw315-rowPBP reconstruction claimed; sourcebuilderqualifiedrawsemantics remain separatelybound.','10values from2methods/5players are futureforecasts, not10newaccuracyobservations.'])
+dest=OUT/'CURRENT_PREPARED_PACKET_INDEPENDENT_REVIEW_V2.json';assert not dest.exists();dest.write_text(json.dumps(receipt,indent=2)+'\n');print(json.dumps(receipt,indent=2))

@@ -1,0 +1,30 @@
+{
+  "id": "B-C-MASK-NAMESPACE-DIAGNOSTIC-v2",
+  "UTC": "2026-11-22T20:13:49.035643+00:00",
+  "scope": "One outcome-free source/code motivated diagnostic, not a subset/threshold/method search or change to Cgrades. Cownerreported33LA/LAR namespace repairs; test only whether that explicit franchise exclusion explains independentcase-maskdifference. No outcomes/selectionsuccess read.",
+  "findings": [
+    {
+      "category": "rec",
+      "source_supported": 671,
+      "single_code_motivated_LAR_exclusion_count": 17,
+      "after_LAR_exclusion": 654,
+      "mask_after_exclusion_SHA256": "fa08ed170a3d9bf8008b8e3c1306456f8ea860cc7be8728fb638fde55f49ae98",
+      "published_C_mask_SHA256": "8a0b7aeaeafa260a2d63f2e0f40185de7599710831cdca5abdcef95636f6e963",
+      "exact_match": false
+    },
+    {
+      "category": "rec_yd",
+      "source_supported": 671,
+      "single_code_motivated_LAR_exclusion_count": 17,
+      "after_LAR_exclusion": 654,
+      "mask_after_exclusion_SHA256": "b0c7ece9894f8953c38b7a187be26d113fb70e7990dc9cd9bd839747f04a558b",
+      "published_C_mask_SHA256": "2995d71a621a0b6d224ec6c8078a413f135033efe3e94514e332b29394729358",
+      "exact_match": false
+    }
+  ],
+  "interpretation": "Only17LARcasespercategory were removed, yielding654ratherthanC638; bothmaskhashesstilldiffer. Thisonecode-motivatedhypothesisisclosedwithoutusingoutcomes. Cexistingprivateidentity/exclusionbindingremainsmissingforBindependentparity. No change to anyCgrade/populationornewBfitfailure.",
+  "raw_grade_reproduction": false,
+  "model_or_fit_failure_claim": false,
+  "CPU_seconds": 0.835432541,
+  "state": "SINGLE_NAMESPACE_EXCLUSION_DOES_NOT_EXPLAIN_MASK;NO_FURTHER_SUBSET_SEARCH"
+}

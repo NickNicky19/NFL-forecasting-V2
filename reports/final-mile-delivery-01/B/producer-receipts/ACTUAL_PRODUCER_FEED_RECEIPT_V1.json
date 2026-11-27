@@ -1,0 +1,462 @@
+{
+  "id": "B-COUNT-A-ACTUAL-PRODUCER-AND-FEED-RECEIPT-v1",
+  "observed_UTC": "2026-11-12T06:35:21.662886+00:00",
+  "role": "SessionB read-only independent delivery verification; source/software states are separate from an actual NFL output",
+  "PR": {
+    "number": 88,
+    "url": "https://github.com/NickNicky19/NFL-forecasting/pull/88",
+    "state": "open",
+    "merged": false,
+    "merged_at": null,
+    "mergeable": true,
+    "mergeable_state": "clean",
+    "head": "af405c4604f6eac935e594f1acd3ab492eef412c",
+    "head_ref": "research/count-a-native-shadow-20261112-v1",
+    "base": "fa91988e65939d2b3516371a90a6380aeee3acb3",
+    "base_ref": "research/weekly-storage-probe-v1",
+    "updated_at": "2026-11-12T06:06:10Z"
+  },
+  "registered_producer": {
+    "ref": "refs/heads/research/weekly-storage-probe-v1",
+    "sha": "fa91988e65939d2b3516371a90a6380aeee3acb3"
+  },
+  "current_lab_state": {
+    "name": "lab-state",
+    "sha": "275aa84b27c4239d3b2dfea07755734d9db0ac7c"
+  },
+  "CI": {
+    "id": 43163271248,
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "af405c4604f6eac935e594f1acd3ab492eef412c",
+    "created_at": "2026-11-12T05:43:27Z",
+    "updated_at": "2026-11-12T06:05:00Z",
+    "jobs": [
+      {
+        "id": 131002664720,
+        "name": "collect",
+        "conclusion": "success"
+      },
+      {
+        "id": 131002665028,
+        "name": "source-shard-1",
+        "conclusion": "success"
+      },
+      {
+        "id": 131002665095,
+        "name": "source-shard-0",
+        "conclusion": "success"
+      },
+      {
+        "id": 131002665105,
+        "name": "source-shard-2",
+        "conclusion": "success"
+      },
+      {
+        "id": 131002665123,
+        "name": "source-shard-3",
+        "conclusion": "success"
+      },
+      {
+        "id": 131006669512,
+        "name": "offline",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "native_runs_observed": [
+    {
+      "id": 41564933010,
+      "name": "NFL research lab",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "head_sha": "a2ab7d4eeb01b1af7f76af4b8090404b4f096f50",
+      "created_at": "2026-11-03T02:15:08Z",
+      "updated_at": "2026-11-03T02:15:59Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 41563998291,
+      "name": "Audit source checks",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "head_sha": "a2ab7d4eeb01b1af7f76af4b8090404b4f096f50",
+      "created_at": "2026-11-03T02:06:15Z",
+      "updated_at": "2026-11-03T02:21:41Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 41552796382,
+      "name": "NFL research lab",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "head_sha": "dd88e1235fdd7c265c02963031da214b04632404",
+      "created_at": "2026-11-03T00:25:53Z",
+      "updated_at": "2026-11-03T00:29:51Z",
+      "conclusion": "failure"
+    },
+    {
+      "id": 41550938770,
+      "name": "NFL research lab",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "head_sha": "dd88e1235fdd7c265c02963031da214b04632404",
+      "created_at": "2026-11-03T00:10:35Z",
+      "updated_at": "2026-11-03T00:13:25Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 41550195184,
+      "name": "NFL research lab",
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "head_sha": "dd88e1235fdd7c265c02963031da214b04632404",
+      "created_at": "2026-11-03T00:04:40Z",
+      "updated_at": "2026-11-03T00:05:35Z",
+      "conclusion": "success"
+    }
+  ],
+  "main_parent_runs_observed": [
+    {
+      "id": 43090797096,
+      "name": "NFL research lab",
+      "event": "schedule",
+      "status": "completed",
+      "head_sha": "f37279a093fcdddece1e369d42ce54349cb1913c",
+      "created_at": "2026-11-11T19:49:41Z",
+      "updated_at": "2026-11-11T19:49:58Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 42890423270,
+      "name": "NFL research lab",
+      "event": "schedule",
+      "status": "completed",
+      "head_sha": "f37279a093fcdddece1e369d42ce54349cb1913c",
+      "created_at": "2026-11-10T19:57:24Z",
+      "updated_at": "2026-11-10T19:57:36Z",
+      "conclusion": "success"
+    },
+    {
+      "id": 42713797329,
+      "name": "NFL research lab",
+      "event": "schedule",
+      "status": "completed",
+      "head_sha": "f37279a093fcdddece1e369d42ce54349cb1913c",
+      "created_at": "2026-11-09T22:39:17Z",
+      "updated_at": "2026-11-09T22:39:32Z",
+      "conclusion": "success"
+    }
+  ],
+  "public_tree": {
+    "truncated": false,
+    "paths": 776,
+    "count_a_paths": []
+  },
+  "feed_route_results": [
+    {
+      "path": "state/public/count-a-mean-shadow-v1/2026-W10",
+      "ref": "275aa84b27c4239d3b2dfea07755734d9db0ac7c",
+      "result": {
+        "error": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#get-repository-content\",\"status\":\"404\"}",
+        "error_code": "NOT_FOUND",
+        "error_data": {
+          "message": "Not Found",
+          "documentation_url": "https://docs.github.com/rest/repos/contents#get-repository-content",
+          "status": "404"
+        }
+      }
+    },
+    {
+      "path": "state/public/weekly-adaptive-v1/2026-W10",
+      "ref": "275aa84b27c4239d3b2dfea07755734d9db0ac7c",
+      "result": {
+        "error": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#get-repository-content\",\"status\":\"404\"}",
+        "error_code": "NOT_FOUND",
+        "error_data": {
+          "message": "Not Found",
+          "documentation_url": "https://docs.github.com/rest/repos/contents#get-repository-content",
+          "status": "404"
+        }
+      }
+    }
+  ],
+  "source_bindings": [
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "config/weekly-mae-display-core3-v1.json",
+      "bytes": 15712,
+      "sha256": "be9900996afa96c23924cfea012e605a2e86c780c0fb2d7264b3840f65685f9b",
+      "blob_sha": "f59e8d82af969d80b69a1104f49c1d4c2d56ebe4"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "docs/count-a-native-shadow-v1.md",
+      "bytes": 5529,
+      "sha256": "41df5c93f6edae84531996643346189b40547b2a77689f9f1cfbba8082a8bc1c",
+      "blob_sha": "9e8ef289b8bf7c5f6e70eab47ede14f9ee8a6e05"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "nfl_lab/audit_weekly_archive_v1.py",
+      "bytes": 63315,
+      "sha256": "17c4fc86b14844339e7601d251fefb228df2ef9b28fb0cd4d050d8cd2d35d97a",
+      "blob_sha": "5d4d65261d63378ae88281e310c65b315c841801"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "nfl_lab/audit_weekly_controller_v1.py",
+      "bytes": 46503,
+      "sha256": "2b2ddb1e035f18003a3b159e232d8bccbf52ed3800093c719808e56015307350",
+      "blob_sha": "e2b069c2452a13fbb6e695e644ed060dbdd3a9f0"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "nfl_lab/audit_weekly_delivery_v1.py",
+      "bytes": 30646,
+      "sha256": "e4147a025673ad02af27d31cd2a97d3d3bcb3d246c4d342b882989229ef415d4",
+      "blob_sha": "a5416ebda558e6deb3fb332d34f42c6352ea6bbc"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "nfl_lab/audit_weekly_grade_history_v1.py",
+      "bytes": 130608,
+      "sha256": "40f5e92f132b574206b8260c4fc7eea7e38e3358e40649d192210c2a5bffd48d",
+      "blob_sha": "1132a3f0b415b0f4f5b17cbb95175d522a6c8c8a"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "nfl_lab/audit_weekly_hosted_v1.py",
+      "bytes": 130880,
+      "sha256": "60a2352a2be574fe45a2e238547cc4c0f07494676740c3d4d91837f0e0a2d479",
+      "blob_sha": "33cc5432a7005f3048491c0e098bb7e24f99c8eb"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "nfl_lab/audit_weekly_runtime_v1.py",
+      "bytes": 42865,
+      "sha256": "4e7564234c5cf851a74abb7d5a4c505f4e6d74c322d32f2258480544edde2096",
+      "blob_sha": "ad5172530e4de4b558a7b6e9b80767ce72627677"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "nfl_lab/audit_weekly_template_v1.py",
+      "bytes": 50966,
+      "sha256": "0db6b797447598e8297c9adeb33487e9e08f844438f61b698b33b0a8fe3f56e7",
+      "blob_sha": "0d5940542b9ab5cf0a78cc619f1b4c9748f11a45"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "nfl_lab/count_a_mean_export_adapter_v1.py",
+      "bytes": 3460,
+      "sha256": "a3b44ee5c7937e830d0c2693d3fa55b0fed52c9cba51ae5058c04b2e7075b527",
+      "blob_sha": "8ddba67130cc8085cb9c018c1a955f6fefd84329"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "nfl_lab/count_a_native_extension_v1.py",
+      "bytes": 18733,
+      "sha256": "dec10328c7811d788c4b605a4098d01e8f95ab99dca3455b547cc699e7686008",
+      "blob_sha": "69a3d44a656e00c739ffe08a3cfd680c688d2450"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "reports/abc-championship/follow-through-release-defensive-source-01/producer/COUNT_A_NATIVE_REVIEW_SOURCE_MANIFEST_V1.json",
+      "bytes": 7585,
+      "sha256": "19257c15ce673207e4398dc6ee0f605244256f406340e4a23af492cf5044b654",
+      "blob_sha": "10b44377de40b2e43b3672f7d3c77b626fd45eb5"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "reports/abc-championship/follow-through-release-defensive-source-01/producer/COUNT_A_NATIVE_REVIEW_SOURCE_MANIFEST_V2.json",
+      "bytes": 12256,
+      "sha256": "35015b318c2cc31bf71f068cf21758acf3f62148ef5cb350583d6696378d21f6",
+      "blob_sha": "2135bc06a092e98542f9904247df9a053ba792d3"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "reports/abc-championship/follow-through-release-defensive-source-01/review/COUNTA_DATA_CONTRACT_REVIEW_V1.json",
+      "bytes": 14225,
+      "sha256": "efd053c2d78eb29154ae5f80dd2790b2264cd8d792935b3160df807cddbe60ee",
+      "blob_sha": "14a1d2772b2cdf4e69e2756701b75c03f72214f3"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "reports/abc-championship/follow-through-release-defensive-source-01/review/COUNTA_DATA_CONTRACT_REVIEW_V2.json",
+      "bytes": 18199,
+      "sha256": "dc63bc7987ae2870dd4dab13592a2f181f3917e2d8ba3420665f2645da2b7bbb",
+      "blob_sha": "979271c1b0e16ce14cbbfaf74f74f9e04eb5bbf3"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "reports/abc-championship/follow-through-release-defensive-source-01/review/COUNTA_NATIVE_PREEXEC_INDEPENDENT_REVIEW_V3.json",
+      "bytes": 14531,
+      "sha256": "c9adcd5608d8b2d4053c6f3725880b8555177f32a33cf84a12ae735527153cdb",
+      "blob_sha": "2e40156db5952083465655d8733d3430825a88ec"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "reports/abc-championship/follow-through-release-defensive-source-01/review/COUNTA_NATIVE_PREEXEC_INDEPENDENT_REVIEW_V4.json",
+      "bytes": 23049,
+      "sha256": "d568d42fdce30b178432f9eaa98793fd290a57075d09ea2579ef5d120945b00d",
+      "blob_sha": "1ae7b8319f25372da89dfb82c5a40f2c349ef90b"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "tests/test_count_a_native_extension_v1.py",
+      "bytes": 14677,
+      "sha256": "5bf6ce70469b0eca687f61de627dac3103486c2a970e40c62006071ca3ce1462",
+      "blob_sha": "0ff90b9b720b99175d51cebbd510f73f09c8ae08"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "tools/modern_count_a_mean_v3.py",
+      "bytes": 31195,
+      "sha256": "aa7c002506b57d7c1ca643f4236e5fb8b5132bebb00ad86720ee11221b6d9fb6",
+      "blob_sha": "eeeb2af4c87ad4ffe72cc1df3b9ee35e75e247ae"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "tools/persist_state.py",
+      "bytes": 22304,
+      "sha256": "bb6c688d60931bffe189794afd3601019b45e49e6d96c24dfd8029d629475058",
+      "blob_sha": "a32286f97a3eb6893d7a97b89cabf5147b509b7e"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": ".github/workflows/lab.yml",
+      "bytes": 69727,
+      "sha256": "2e29390bb8bfc4ca9919618d9a1facd094e70496c58c09103f626bd38a850384",
+      "blob_sha": "c12f7b69f9cc03985777e4633efbc8d373bd4b71"
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting",
+      "ref": "af405c4604f6eac935e594f1acd3ab492eef412c",
+      "path": "nfl_lab/audit_weekly_public_v1.py",
+      "bytes": 31429,
+      "sha256": "6b2fbb371f7c1881beb473484a8d1e568409b4ccda93a0d049c5753e6d4a90cd",
+      "blob_sha": "1195d9df279356583c712c0549357ef3a69e3220"
+    }
+  ],
+  "source_objects_verified": 22,
+  "source_bytes_verified": 798394,
+  "facts": {
+    "source_implemented": true,
+    "PR_published": true,
+    "canonical_CI_success": true,
+    "PR_open": true,
+    "merged": false,
+    "bound_to_registered_branch": false,
+    "source_profile_successor_accepted": "NOT_OBSERVED",
+    "exact_capsule_producer_read": "NOT_OBSERVED",
+    "original_FIT_START_proof_native_read": "NOT_OBSERVED",
+    "current_issued_Root": "NOT_OBSERVED",
+    "complete_issued_wire_size": null,
+    "current_source_query_admitted": "NOT_OBSERVED",
+    "NFL_current_inference": "NOT_OBSERVED",
+    "durable_CountA_capture": "NOT_OBSERVED",
+    "readable_CountA_feed": false,
+    "website_CountA_consumer_retrieval": "NOT_OBSERVED",
+    "original_site_CountA_activation": "NOT_ESTABLISHED_BY_THIS_RECEIPT"
+  },
+  "requested_operational_fields": {
+    "producing_commit": null,
+    "producing_run": null,
+    "source_cutoff_UTC": null,
+    "forecast_issue_UTC": null,
+    "forecast_artifact_SHA256": null,
+    "derived_feed_SHA256": null,
+    "derived_feed_path": null,
+    "B_feed_retrieval": "Expected companion path GET404 at current lab-state pin; complete776-path tree has no CountA shadow namespace",
+    "actual_website_consumer_result": null
+  },
+  "exact_procedure": {
+    "product": "pass_td__COUNT_A_MEAN",
+    "procedure": "f8607aa99a94c7c1c9ab5c89599e07eba9b15527749b092b225f368032881e83",
+    "trusted_model_SHA256": "4d277e3e3986d712a86d9a55019e35f2e5b5c58d6f4f411af0a0abc65da1b62d",
+    "capsule": {
+      "bytes": 399037,
+      "sha256": "5f55367c9f3389dbbe713b1aa95e691e77602cde99bf8e5ff657554a2d5a6a36"
+    },
+    "original_producer_proof": {
+      "bytes": 26032,
+      "sha256": "9071f4fd5f81fb7e0514e9f1ac47a93d207fc5b27cda3d8aa7f7ea16d320b45e"
+    },
+    "FIT_START": "Exact member bound through original producer proof; no substitute or invented hash",
+    "corrector_SHA256": "aa7c002506b57d7c1ca643f4236e5fb8b5132bebb00ad86720ee11221b6d9fb6",
+    "public_prefix": "public/count-a-mean-shadow-v1/",
+    "model_output": "FORECASTS.parquet.point correctedmean; not legacy_point or NaNmean, no implied probability/EV"
+  },
+  "minimum_next_action": {
+    "executor": "Existing authorized A producer owner/operator under its actual lease; not B and not a repository name",
+    "first_action": "Review/accept or merge PR88 head af405c4604f6eac935e594f1acd3ab492eef412c through the registered process, then bind the exact accepted source/profile and full successor issuedRoot.",
+    "subsequent_artifacts": [
+      "Existing exact protected capsule, original producer proof and FIT_START member",
+      "Authenticated native actor/source/API/lease/epoch proofs",
+      "Qualified current QB/base-history/query/presence/source clocks without target-game final outcomes",
+      "Complete issued Root measured <=61440bytes including issuance fields",
+      "Actual produce/restore/export run and durable typed CountA rows",
+      "Readable exact CountA companion feed plus publication receipt, followed by website retrieval/admission"
+    ],
+    "route": {
+      "branch": "research/weekly-storage-probe-v1",
+      "workflow": ".github/workflows/lab.yml",
+      "mode": "audit-weekly-producer-v1",
+      "jobs": [
+        "audit-weekly-produce-v1",
+        "audit-weekly-restore-v1",
+        "audit-weekly-export-v1"
+      ],
+      "single_writer": "nfl-lab-single-writer",
+      "parent_actor": "NickNicky19/main/lab",
+      "child_actor": "github-actions[bot]"
+    },
+    "completion": "First actual pregame CountA rows with real source/issue/persistence and immutable feed/hash/run plus consumer response, while preserving original catalog, caps, source/authority and ranking guards."
+  },
+  "scope_limits": [
+    "This is not a claimed native guard rejection: no CountA run at the new source is observed. The first missing stage is acceptance/source-Root binding, not an invented quota failure.",
+    "The two exact W10directory404s and complete lab-state tree prove no published CountA namespace in this pin, not that the model or protected capsule is missing.",
+    "SourceCI collect/shards/offline is not producer execution and adds no NFLmodel load, fit, forecast, testweek or delivery.",
+    "A complete issuedRoot/wire and fresh source frame were not supplied, so no current wire-size, source-cutoff or private model-row parity is claimed.",
+    "The fixed new companion prefix differs from the existing legacy weekly-adaptive feed. A successful old legacy feed would not establish CountA companion delivery.",
+    "Previously completed local restoration/retained corrector parity and lossless registration repairs are reused, not repeated.",
+    "Current source/MAE orchestration coupling is reviewed separately by Bcontract reviewer; it does not invent an EPAfeature requirement for CountA."
+  ],
+  "lookup_and_transport_notes": [
+    "Encoded slash branch URL was rejected by connector URLvalidation; exact git/ref/heads route returned the actual unchanged branch. No access bypass.",
+    "A bulk local write of fetched public source hit OSargument size before any write; apply_patch transfer plus exact Gitblob check succeeded. No native source or scientific data affected.",
+    "A guessed audit_weekly_source_profile_v1.py lookup is not the actual legacy module name; no missing-feature conclusion follows from that lookup."
+  ],
+  "operations": {
+    "new_fits": 0,
+    "new_model_inference": 0,
+    "new_grades": 0,
+    "new_NFL_games_or_weeks": 0,
+    "peer_writes": 0,
+    "dispatches": 0,
+    "comments": 0,
+    "merge_or_approval": 0,
+    "protected_model_loads": 0
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "B-RECEIVING-MASK-COMPLETION-ADMISSION-v1",
+  "UTC": "2026-11-25T00:29:30.985239+00:00",
+  "source_repository": "NickNicky19/NFL-forecasting-V2",
+  "source_commit": "7dc0439ab85f20872355d6af6a53771dfad88bfc",
+  "source_path": "reports/shared-game-sim-01/B/mask-grade-delivery-follow-through-v1/README.md",
+  "received_bytes": 10930,
+  "received_SHA256": "9dfb1cb1434fcc7a3d53490cbfd5d9e2b11f42a8b7014d07c58474b73925ddd1",
+  "receipt_body_matches_retained_bytes": true,
+  "state": "COMPLETE_RECEIPT_REOPENED_AND_ADOPTED;NO_MASK_OR_GRADE_RECALCULATION",
+  "each_target": {
+    "intersection": 638,
+    "B_only": 33,
+    "C_only": 0,
+    "exclusions": {
+      "identity_missing": 30,
+      "no_admitted_prior_team": 2,
+      "prior_team_not_target_game": 1
+    },
+    "both_original_commitments_reproduced": true
+  },
+  "independent_C_mean_scope": "Two C mean-point products: own Over/Under/combined and W0/W1 common-case counts independently reproduced in original receipt",
+  "preserved_limits": [
+    "Model-fit reproduction",
+    "Historical source/publication vintages",
+    "Median/law and CDF reproduction",
+    "Confidence-interval resampling",
+    "Full private selector membership"
+  ],
+  "stale_peer_status": {
+    "C_commit": "6f76b338d1aa8d730d531518c9008f7e93874f7a",
+    "path": "reports/abc-championship/CURRENT_PROTOCOL.json",
+    "field": "shared_game_sim_01_saved_method_followthrough.mask_state",
+    "old": "C638PRIVATESET_REOPENED;B671FIXEDSET_COMPARISON_PENDING",
+    "current_status_from_completed_receipt": "COMPLETE_FIXED_AVAILABLE_SETS_AND_NAMED_C_MEAN_CASE_LEVEL_CHECKS",
+    "owner_to_record_common_intake": "C coordinator; B does not write the C registry",
+    "actual_C_new_admission_receipt": "NOT_OBSERVED;B acceptance/public handoff is not a claim of C receipt"
+  },
+  "new_comparison": false,
+  "new_fit": false,
+  "changed_historical_predictions": false
+}

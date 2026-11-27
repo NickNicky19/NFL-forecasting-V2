@@ -1,0 +1,35 @@
+{
+  "id": "B_NEXTGEN_INDEPENDENT_COMPLETE_DEPTH_FEATURES_v1",
+  "checked_UTC": "2026-11-12T18:03:41.987341+00:00",
+  "source_bindings": [
+    {
+      "season": 2025,
+      "SHA256": "14f74185b3c2c48df234ced284ba3596bda3333d0b2a8df40841f68cd34539fa"
+    },
+    {
+      "season": 2026,
+      "SHA256": "8633b61b70c35eaf919c8aef9934c8802723de4dfb6aeb7f354dfc09237a5ced"
+    }
+  ],
+  "derived_SHA256": "57489a5889441a7b4b555a562e3e61936cb13d03c3b24be8d92c726ca5bd83eb",
+  "independent_algorithm": "Raw ALL-position team clocks before QB/GSIS projection; stdlib bisect strict admission; source-authored dt; own prior game sorted by game time after registered seven-day availability admission",
+  "derived_rows_checked": 941,
+  "value_clock_and_support_dicts_exact": true,
+  "nonnull_fields": {
+    "current_depth_rank": 940,
+    "rank_change_since_eligible_own_game": 795,
+    "current_snapshot_age_hours": 941
+  },
+  "2026_rank_changes_since_eligible_own_game": {
+    "0": 238,
+    "None": 30,
+    "1": 5,
+    "-1": 4
+  },
+  "exact_author_feature_helpers_imported": false,
+  "scope": "Current rank/prior rank/change/age/missing/support for prepared rows only; no fit or model learned contribution/forecastaccuracy claim",
+  "preserved_failed_precheck": "Initial expected wave-v1 path had already been superseded by owner wave-v2; failed read before feature computation, no data/fit/score changed",
+  "new_fits": 0,
+  "new_model_inferences": 0,
+  "new_scores": 0
+}

@@ -1,0 +1,178 @@
+{
+  "evaluated_at": "2026-11-05T00:32:12.018074+00:00",
+  "kind": "B_READ_ONLY_OWNER_CAPTURE_WITNESS_NOT_NEW_CAPTURE",
+  "production_commit": "af8bc14abe4a4148a3f84e6c131775923b5300f4",
+  "source_bindings": [
+    {
+      "path": "output/data/week.json",
+      "bytes": 2352005,
+      "sha256": "cb528f5bda7bba86058f8a458b70e9d65917a24bcf6578b579c85e122b2e7268"
+    },
+    {
+      "path": "output/data/weekly-selected-rankings.json",
+      "bytes": 474,
+      "sha256": "426d9eb583a4877b89c7da49c6dc86a89d5951d91d331cda76612122403a4eab"
+    },
+    {
+      "path": "output/data/weekly-selected-rankings/5ed15062d2bdef11db823d9f15a3f5a002e857c76fa5ea7b457e8d1ef8ad9ac2.json",
+      "bytes": 11815,
+      "sha256": "5ed15062d2bdef11db823d9f15a3f5a002e857c76fa5ea7b457e8d1ef8ad9ac2"
+    },
+    {
+      "path": "output/data/weekly-adaptive-overlay.json",
+      "bytes": 333,
+      "sha256": "9eb92fbd0c9db09d5daa3449f4831f3be6c87550482eedd010e6ccde1e36bb53"
+    },
+    {
+      "path": "output/data/weekly-adaptive/f65e8f94329048ab8b087949a577368d45f112b5b77cc0faa871a08241d44dac.json",
+      "bytes": 790,
+      "sha256": "f65e8f94329048ab8b087949a577368d45f112b5b77cc0faa871a08241d44dac"
+    },
+    {
+      "path": "config/weekly-derived-selected-policy-v7.json",
+      "bytes": 7838,
+      "sha256": "7933152e09d86e9e8a9482f46450b4765825d64f036e58f8f36d874c0cdd6382"
+    },
+    {
+      "path": "data/current-classic/2026/w09/bbbb32867fb5150bbed7eea14b3aa95ee42269a0302911369dde3b430cb525c0.json.gz",
+      "bytes": 51962,
+      "sha256": "ee8f61429cbfc6ad51884514df3937c9a5f371a27d897e3ffba200e3be6d3116"
+    },
+    {
+      "path": "data/classic-r0-shadow/latest.json",
+      "bytes": 162,
+      "sha256": "4f4fdf71d78a39826009e5efe56398f90aeeb090b137ffd41b2a19b5ebd28d90"
+    },
+    {
+      "path": ".github/workflows/hourly.yml",
+      "bytes": 12464,
+      "sha256": "cc8a9f3c8457442a1df8143218a97722032dda2c6bc2f6b43dfb63b3dfef4647"
+    }
+  ],
+  "served_bytes_parity": [
+    {
+      "path": "output/data/week.json",
+      "git_sha256": "cb528f5bda7bba86058f8a458b70e9d65917a24bcf6578b579c85e122b2e7268",
+      "served_sha256": "cb528f5bda7bba86058f8a458b70e9d65917a24bcf6578b579c85e122b2e7268",
+      "equal": true
+    },
+    {
+      "path": "output/data/weekly-selected-rankings.json",
+      "git_sha256": "426d9eb583a4877b89c7da49c6dc86a89d5951d91d331cda76612122403a4eab",
+      "served_sha256": "426d9eb583a4877b89c7da49c6dc86a89d5951d91d331cda76612122403a4eab",
+      "equal": true
+    },
+    {
+      "path": "output/data/weekly-selected-rankings/5ed15062d2bdef11db823d9f15a3f5a002e857c76fa5ea7b457e8d1ef8ad9ac2.json",
+      "git_sha256": "5ed15062d2bdef11db823d9f15a3f5a002e857c76fa5ea7b457e8d1ef8ad9ac2",
+      "served_sha256": "5ed15062d2bdef11db823d9f15a3f5a002e857c76fa5ea7b457e8d1ef8ad9ac2",
+      "equal": true
+    },
+    {
+      "path": "output/data/weekly-adaptive-overlay.json",
+      "git_sha256": "9eb92fbd0c9db09d5daa3449f4831f3be6c87550482eedd010e6ccde1e36bb53",
+      "served_sha256": "9eb92fbd0c9db09d5daa3449f4831f3be6c87550482eedd010e6ccde1e36bb53",
+      "equal": true
+    },
+    {
+      "path": "output/data/weekly-adaptive/f65e8f94329048ab8b087949a577368d45f112b5b77cc0faa871a08241d44dac.json",
+      "git_sha256": "f65e8f94329048ab8b087949a577368d45f112b5b77cc0faa871a08241d44dac",
+      "served_sha256": "f65e8f94329048ab8b087949a577368d45f112b5b77cc0faa871a08241d44dac",
+      "equal": true
+    }
+  ],
+  "owner_policy": {
+    "path": "config/weekly-derived-selected-policy-v7.json",
+    "file_sha256": "7933152e09d86e9e8a9482f46450b4765825d64f036e58f8f36d874c0cdd6382",
+    "registration_id": "weekly-adaptive-release-v1",
+    "state": "ROOT_REGISTERED",
+    "current_execution": {
+      "capture_schema": "baseline-capture-classic-v1",
+      "engine_sha256": {
+        "pull/books.py": "0b89744960136a4f2e594b61e6df754d357706d8c66a8ae359d8eb02bbfa53f8",
+        "pull/build.py": "1d1646ef67469c3ec45227b9fcb053c4e229362a07bca092a5602a1a1442c1e1",
+        "pull/gamemodel.py": "2a2519a12ad4993da02ae6bdcdb6c86f2b5a6554ce93a702b550ecde17fb7d1f",
+        "pull/grade.py": "739df92bf9a04ef5f9974e4213bb7fda98b29be84c30654c2095003fbb974354",
+        "pull/matchup.py": "15b1739b203e1757b0ebaefa3a6994034d56bb4a92a9e07572527ef1a90e914c",
+        "pull/news.py": "17ce1b3b6b72694e6b543bd767e287c26a9d1f6dd5dba2de6c873543036842e9",
+        "pull/scoring.py": "58c1f57fb0404f8bb6d1568d51791c97cdf0bb941c57117b703c6a24534980db",
+        "pull/sources.py": "36555cdbc55d73ba632d5adae1130288f4f532073857c642ac3ebc7e626b0061"
+      },
+      "grading_version": "statistical-v3-identity-20261025",
+      "model": "sleeper-matchup-classic-fg-identity-v1",
+      "normalized_stats_cache": "stat-keys-fgm-v1",
+      "original_shadow_model": "original_sleeper_matchup_baseline",
+      "original_shadow_procedure": "original-builder-default-refresh-v1",
+      "original_shadow_source": "89512ed952308dacc1f6a930915ddbcdccd460d9",
+      "schema_version": "weekly-classic-current-execution-v1"
+    }
+  },
+  "board_schema_keys": [
+    "categories",
+    "def_tiers",
+    "defense",
+    "execution_model",
+    "games",
+    "generated_at",
+    "log_stats",
+    "picks",
+    "players",
+    "scoring",
+    "scoring_def",
+    "scoring_k",
+    "season",
+    "week"
+  ],
+  "capture_schema_keys": [
+    "payload",
+    "payload_sha256"
+  ],
+  "ranking_schema_keys": [
+    "display_board_sha256",
+    "fallback_counts",
+    "frozen_proofs",
+    "overlay_sha256",
+    "picks",
+    "policy",
+    "policy_sha256",
+    "prepared_at",
+    "schema_version",
+    "season",
+    "website_source_sha",
+    "week"
+  ],
+  "board_safe_metadata": {
+    "season": 2026,
+    "week": 9,
+    "generated_at": "2026-11-04T21:03:37Z"
+  },
+  "capture_safe_metadata": {},
+  "overlay_safe_metadata": {
+    "season": 2026,
+    "week": 9,
+    "state": "DISABLED_USE_R0",
+    "prepared_at": "2026-11-04T21:03:43.512724+00:00",
+    "packaged_at": "2026-11-04T21:03:43.512724+00:00",
+    "display_board_sha256": "cb528f5bda7bba86058f8a458b70e9d65917a24bcf6578b579c85e122b2e7268"
+  },
+  "selected_research_rows": 0,
+  "ranking_safe_metadata": {
+    "season": 2026,
+    "week": 9,
+    "prepared_at": "2026-11-04T21:03:43.875821+00:00",
+    "display_board_sha256": "cb528f5bda7bba86058f8a458b70e9d65917a24bcf6578b579c85e122b2e7268",
+    "policy_sha256": "d56088350b8adf123816e4162e868aaecfd9e5181cd2f0780bb1053bd135e72f"
+  },
+  "top_pick_shape": {
+    "over": 12,
+    "under": 12
+  },
+  "new_B_inference": 0,
+  "new_B_captures": 0,
+  "no_owner_mutation": true,
+  "limits": [
+    "Served bytes and retained owner records verified; no browser rendering performed by B.",
+    "Provider publication/quote clocks and bookmaker settlement remain unverified.",
+    "Owner packet is the incumbent reference; no B/G1/Count A admission follows from its persistence."
+  ]
+}

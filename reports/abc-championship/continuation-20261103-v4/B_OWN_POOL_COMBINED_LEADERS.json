@@ -1,0 +1,772 @@
+[
+  {
+    "target": "pass_yd",
+    "procedure_id": "B::empirical-player-history-control-v1::H-MULTI-EMPIRICAL::empirical_mean",
+    "history": "H-MULTI",
+    "product": "empirical_mean",
+    "rule": "P1",
+    "numerical_mae": 56.0333303981115,
+    "numerical_n": 63,
+    "numerical_scope": "Same decided offered rows of this side; not broad participant MAE",
+    "sides": {
+      "over": {
+        "wins": 20,
+        "losses": 10,
+        "decided": 30,
+        "selected": 30,
+        "rate": 0.6666666666666666
+      },
+      "under": {
+        "wins": 15,
+        "losses": 18,
+        "decided": 33,
+        "selected": 33,
+        "rate": 0.45454545454545453
+      },
+      "Combined": {
+        "wins": 35,
+        "losses": 28,
+        "decided": 63,
+        "selected": 63,
+        "rate": 0.5555555555555556
+      }
+    },
+    "eligible": 64,
+    "selected": 63,
+    "coverage": 0.984375,
+    "technical_unavailable": 1,
+    "rule_abstentions": 0,
+    "unknown": 0,
+    "games": 32,
+    "fallback_issued": 0,
+    "strongest_matched_control": {
+      "target": "pass_yd",
+      "procedure_id": "B::empirical-player-history-control-v1::H-MULTI-EMPIRICAL::empirical_mean",
+      "control_id": "ALWAYS_OVER",
+      "week_view": "ALL",
+      "scope": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+      "common_decided": 63,
+      "candidate_wins": 35,
+      "control_wins": 38,
+      "win_difference": -3,
+      "disagreements": 33,
+      "uncertainty": {
+        "n": 63,
+        "delta": 0.047619047619047616,
+        "relative_error_change": 0.12,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.08641426743930396,
+        "game_normal95_sensitivity": [
+          -0.12175291656198814,
+          0.21699101180008337
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.4444444444444444,
+        "comparator_error": 0.3968253968253968,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": -3.0,
+            "n": 31
+          },
+          "3": {
+            "loss_difference_sum": 6.0,
+            "n": 32
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    },
+    "hit_rate_difference": -0.047619047619047616,
+    "hit_rate_game_sensitivity": [
+      -0.21699101180008337,
+      0.12175291656198814
+    ],
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+    "source_artifact": "reports/abc-championship/continuation-20261103-v3/SCORES.json",
+    "source_row_index": 74
+  },
+  {
+    "target": "rush_yd",
+    "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+    "history": "H-CURRENT",
+    "product": "lower_median",
+    "rule": "P1",
+    "numerical_mae": 23.816091954022987,
+    "numerical_n": 174,
+    "numerical_scope": "Same decided offered rows of this side; not broad participant MAE",
+    "sides": {
+      "over": {
+        "wins": 30,
+        "losses": 26,
+        "decided": 56,
+        "selected": 56,
+        "rate": 0.5357142857142857
+      },
+      "under": {
+        "wins": 70,
+        "losses": 48,
+        "decided": 118,
+        "selected": 118,
+        "rate": 0.5932203389830508
+      },
+      "Combined": {
+        "wins": 100,
+        "losses": 74,
+        "decided": 174,
+        "selected": 174,
+        "rate": 0.5747126436781609
+      }
+    },
+    "eligible": 181,
+    "selected": 174,
+    "coverage": 0.9613259668508287,
+    "technical_unavailable": 7,
+    "rule_abstentions": 0,
+    "unknown": 0,
+    "games": 32,
+    "fallback_issued": 90,
+    "strongest_matched_control": {
+      "target": "rush_yd",
+      "procedure_id": "B::v2-distribution-controls-reconstruction-v2:ordered_leaf_cdf:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control_id": "P3_DIRECT",
+      "week_view": "ALL",
+      "scope": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+      "common_decided": 174,
+      "candidate_wins": 100,
+      "control_wins": 101,
+      "win_difference": -1,
+      "disagreements": 45,
+      "uncertainty": {
+        "n": 174,
+        "delta": 0.005747126436781609,
+        "relative_error_change": 0.013698630136986302,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.03547792988952679,
+        "game_normal95_sensitivity": [
+          -0.0637896161466909,
+          0.07528386902025411
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.42528735632183906,
+        "comparator_error": 0.41954022988505746,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": 2.0,
+            "n": 83
+          },
+          "3": {
+            "loss_difference_sum": -1.0,
+            "n": 91
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    },
+    "hit_rate_difference": -0.005747126436781609,
+    "hit_rate_game_sensitivity": [
+      -0.07528386902025411,
+      0.0637896161466909
+    ],
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+    "source_artifact": "reports/abc-championship/continuation-20261103-v2/SCORES.json",
+    "source_row_index": 398
+  },
+  {
+    "target": "rush_yd",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+    "history": "H-CURRENT",
+    "product": "lower_median",
+    "rule": "P1",
+    "numerical_mae": 23.816091954022987,
+    "numerical_n": 174,
+    "numerical_scope": "Same decided offered rows of this side; not broad participant MAE",
+    "sides": {
+      "over": {
+        "wins": 30,
+        "losses": 26,
+        "decided": 56,
+        "selected": 56,
+        "rate": 0.5357142857142857
+      },
+      "under": {
+        "wins": 70,
+        "losses": 48,
+        "decided": 118,
+        "selected": 118,
+        "rate": 0.5932203389830508
+      },
+      "Combined": {
+        "wins": 100,
+        "losses": 74,
+        "decided": 174,
+        "selected": 174,
+        "rate": 0.5747126436781609
+      }
+    },
+    "eligible": 181,
+    "selected": 174,
+    "coverage": 0.9613259668508287,
+    "technical_unavailable": 7,
+    "rule_abstentions": 0,
+    "unknown": 0,
+    "games": 32,
+    "fallback_issued": 90,
+    "strongest_matched_control": {
+      "target": "rush_yd",
+      "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control_id": "P3_DIRECT",
+      "week_view": "ALL",
+      "scope": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+      "common_decided": 174,
+      "candidate_wins": 100,
+      "control_wins": 101,
+      "win_difference": -1,
+      "disagreements": 45,
+      "uncertainty": {
+        "n": 174,
+        "delta": 0.005747126436781609,
+        "relative_error_change": 0.013698630136986302,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.03547792988952679,
+        "game_normal95_sensitivity": [
+          -0.0637896161466909,
+          0.07528386902025411
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.42528735632183906,
+        "comparator_error": 0.41954022988505746,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": 2.0,
+            "n": 83
+          },
+          "3": {
+            "loss_difference_sum": -1.0,
+            "n": 91
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    },
+    "hit_rate_difference": -0.005747126436781609,
+    "hit_rate_game_sensitivity": [
+      -0.07528386902025411,
+      0.0637896161466909
+    ],
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+    "source_artifact": "reports/abc-championship/continuation-20261103-v2/SCORES.json",
+    "source_row_index": 614
+  },
+  {
+    "target": "rush_yd",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+    "history": "H-CURRENT",
+    "product": "lower_median",
+    "rule": "P1",
+    "numerical_mae": 23.816091954022987,
+    "numerical_n": 174,
+    "numerical_scope": "Same decided offered rows of this side; not broad participant MAE",
+    "sides": {
+      "over": {
+        "wins": 30,
+        "losses": 26,
+        "decided": 56,
+        "selected": 56,
+        "rate": 0.5357142857142857
+      },
+      "under": {
+        "wins": 70,
+        "losses": 48,
+        "decided": 118,
+        "selected": 118,
+        "rate": 0.5932203389830508
+      },
+      "Combined": {
+        "wins": 100,
+        "losses": 74,
+        "decided": 174,
+        "selected": 174,
+        "rate": 0.5747126436781609
+      }
+    },
+    "eligible": 181,
+    "selected": 174,
+    "coverage": 0.9613259668508287,
+    "technical_unavailable": 7,
+    "rule_abstentions": 0,
+    "unknown": 0,
+    "games": 32,
+    "fallback_issued": 90,
+    "strongest_matched_control": {
+      "target": "rush_yd",
+      "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control_id": "P3_DIRECT",
+      "week_view": "ALL",
+      "scope": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+      "common_decided": 174,
+      "candidate_wins": 100,
+      "control_wins": 101,
+      "win_difference": -1,
+      "disagreements": 45,
+      "uncertainty": {
+        "n": 174,
+        "delta": 0.005747126436781609,
+        "relative_error_change": 0.013698630136986302,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.03547792988952679,
+        "game_normal95_sensitivity": [
+          -0.0637896161466909,
+          0.07528386902025411
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.42528735632183906,
+        "comparator_error": 0.41954022988505746,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": 2.0,
+            "n": 83
+          },
+          "3": {
+            "loss_difference_sum": -1.0,
+            "n": 91
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    },
+    "hit_rate_difference": -0.005747126436781609,
+    "hit_rate_game_sensitivity": [
+      -0.07528386902025411,
+      0.0637896161466909
+    ],
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+    "source_artifact": "reports/abc-championship/continuation-20261103-v2/SCORES.json",
+    "source_row_index": 830
+  },
+  {
+    "target": "rush_yd",
+    "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+    "history": "H-CURRENT",
+    "product": "lower_median",
+    "rule": "P1",
+    "numerical_mae": 23.816091954022987,
+    "numerical_n": 174,
+    "numerical_scope": "Same decided offered rows of this side; not broad participant MAE",
+    "sides": {
+      "over": {
+        "wins": 30,
+        "losses": 26,
+        "decided": 56,
+        "selected": 56,
+        "rate": 0.5357142857142857
+      },
+      "under": {
+        "wins": 70,
+        "losses": 48,
+        "decided": 118,
+        "selected": 118,
+        "rate": 0.5932203389830508
+      },
+      "Combined": {
+        "wins": 100,
+        "losses": 74,
+        "decided": 174,
+        "selected": 174,
+        "rate": 0.5747126436781609
+      }
+    },
+    "eligible": 181,
+    "selected": 174,
+    "coverage": 0.9613259668508287,
+    "technical_unavailable": 7,
+    "rule_abstentions": 0,
+    "unknown": 0,
+    "games": 32,
+    "fallback_issued": 90,
+    "strongest_matched_control": {
+      "target": "rush_yd",
+      "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:strict-current-inputs::H-CURRENT-STRICT::lower_median",
+      "control_id": "P3_DIRECT",
+      "week_view": "ALL",
+      "scope": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+      "common_decided": 174,
+      "candidate_wins": 100,
+      "control_wins": 101,
+      "win_difference": -1,
+      "disagreements": 45,
+      "uncertainty": {
+        "n": 174,
+        "delta": 0.005747126436781609,
+        "relative_error_change": 0.013698630136986302,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.03547792988952679,
+        "game_normal95_sensitivity": [
+          -0.0637896161466909,
+          0.07528386902025411
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.42528735632183906,
+        "comparator_error": 0.41954022988505746,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": 2.0,
+            "n": 83
+          },
+          "3": {
+            "loss_difference_sum": -1.0,
+            "n": 91
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    },
+    "hit_rate_difference": -0.005747126436781609,
+    "hit_rate_game_sensitivity": [
+      -0.07528386902025411,
+      0.0637896161466909
+    ],
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+    "source_artifact": "reports/abc-championship/continuation-20261103-v3/SCORES.json",
+    "source_row_index": 461
+  },
+  {
+    "target": "rec",
+    "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::lower_median",
+    "history": "H-CURRENT",
+    "product": "lower_median",
+    "rule": "P1",
+    "numerical_mae": 1.8694362017804154,
+    "numerical_n": 337,
+    "numerical_scope": "Same decided offered rows of this side; not broad participant MAE",
+    "sides": {
+      "over": {
+        "wins": 33,
+        "losses": 20,
+        "decided": 53,
+        "selected": 54,
+        "rate": 0.6226415094339622
+      },
+      "under": {
+        "wins": 161,
+        "losses": 123,
+        "decided": 284,
+        "selected": 286,
+        "rate": 0.5669014084507042
+      },
+      "Combined": {
+        "wins": 194,
+        "losses": 143,
+        "decided": 337,
+        "selected": 340,
+        "rate": 0.5756676557863502
+      }
+    },
+    "eligible": 362,
+    "selected": 340,
+    "coverage": 0.9392265193370166,
+    "technical_unavailable": 22,
+    "rule_abstentions": 0,
+    "unknown": 3,
+    "games": 32,
+    "fallback_issued": 163,
+    "strongest_matched_control": {
+      "target": "rec",
+      "procedure_id": "B::v2-qualified-position-defense-information-wave-v1:D2:common-feature-memory::H-CURRENT-COMMON::lower_median",
+      "control_id": "P3_DIRECT",
+      "week_view": "ALL",
+      "scope": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+      "common_decided": 337,
+      "candidate_wins": 194,
+      "control_wins": 194,
+      "win_difference": 0,
+      "disagreements": 42,
+      "uncertainty": {
+        "n": 337,
+        "delta": 0.0,
+        "relative_error_change": 0.0,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.020447638438317126,
+        "game_normal95_sensitivity": [
+          -0.04007737133910157,
+          0.04007737133910157
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.42433234421364985,
+        "comparator_error": 0.42433234421364985,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": -4.0,
+            "n": 161
+          },
+          "3": {
+            "loss_difference_sum": 4.0,
+            "n": 176
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    },
+    "hit_rate_difference": -0.0,
+    "hit_rate_game_sensitivity": [
+      -0.04007737133910157,
+      0.04007737133910157
+    ],
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+    "source_artifact": "reports/abc-championship/continuation-20261103-v2/SCORES.json",
+    "source_row_index": 650
+  },
+  {
+    "target": "rec_yd",
+    "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-CURRENT-COMMON::mean",
+    "history": "H-CURRENT",
+    "product": "mean",
+    "rule": "P1",
+    "numerical_mae": 23.45667711508392,
+    "numerical_n": 337,
+    "numerical_scope": "Same decided offered rows of this side; not broad participant MAE",
+    "sides": {
+      "over": {
+        "wins": 57,
+        "losses": 40,
+        "decided": 97,
+        "selected": 99,
+        "rate": 0.5876288659793815
+      },
+      "under": {
+        "wins": 131,
+        "losses": 109,
+        "decided": 240,
+        "selected": 241,
+        "rate": 0.5458333333333333
+      },
+      "Combined": {
+        "wins": 188,
+        "losses": 149,
+        "decided": 337,
+        "selected": 340,
+        "rate": 0.5578635014836796
+      }
+    },
+    "eligible": 361,
+    "selected": 340,
+    "coverage": 0.9418282548476454,
+    "technical_unavailable": 21,
+    "rule_abstentions": 0,
+    "unknown": 3,
+    "games": 32,
+    "fallback_issued": 162,
+    "strongest_matched_control": {
+      "target": "rec_yd",
+      "procedure_id": "B::v2-c02-explicit-lag-block-removal-leaf-cdf-v1:common-feature-memory::H-CURRENT-COMMON::mean",
+      "control_id": "P3_DIRECT",
+      "week_view": "ALL",
+      "scope": "B_OWNER_LOCAL_C_PINNACLE_W2_W3_ALL",
+      "common_decided": 337,
+      "candidate_wins": 188,
+      "control_wins": 176,
+      "win_difference": 12,
+      "disagreements": 82,
+      "uncertainty": {
+        "n": 337,
+        "delta": -0.03560830860534125,
+        "relative_error_change": -0.07453416149068323,
+        "week_interval": null,
+        "week_clusters": 2,
+        "game_clusters": 32,
+        "bootstrap_replicates": 500,
+        "bootstrap_seed": 1703,
+        "bootstrap_rule": "resetPCG64percontrast;resamplewholeweeks;sumlossdifferences/sumsampledrows",
+        "selection_limit": "descriptive exposed-sample interval; not selection/multiplicity adjusted",
+        "game_cluster_sensitivity_se": 0.02083633074504311,
+        "game_normal95_sensitivity": [
+          -0.07644751686562574,
+          0.00523089965494325
+        ],
+        "candidate_infinite_rows": 0,
+        "comparator_infinite_rows": 0,
+        "candidate_error": 0.4421364985163205,
+        "comparator_error": 0.47774480712166173,
+        "relative_error_missing_reason": null,
+        "weekly_paired_sums_counts": {
+          "2": {
+            "loss_difference_sum": -1.0,
+            "n": 160
+          },
+          "3": {
+            "loss_difference_sum": -11.0,
+            "n": 177
+          }
+        },
+        "week_interval_status": "INSUFFICIENT_WEEK_CLUSTERS",
+        "status": "FINITE_PAIRED_LOSS_COMPARISON"
+      }
+    },
+    "hit_rate_difference": 0.03560830860534125,
+    "hit_rate_game_sensitivity": [
+      -0.00523089965494325,
+      0.07644751686562574
+    ],
+    "actual_weeks": [
+      2,
+      3
+    ],
+    "requested_weeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence_tier": "TIMING_UNVERIFIED_ACTUAL_LINE_DIAGNOSTIC",
+    "status": "B_OWNER_LOCAL_C_PROTOCOL_PINNED_NOT_C_ADMITTED",
+    "source_artifact": "reports/abc-championship/continuation-20261103-v3/SCORES.json",
+    "source_row_index": 272
+  }
+]

@@ -1,0 +1,5 @@
+# Python csv exports intentionally use RFC 4180 CRLF; preserve frozen bytes.
+*.csv -text whitespace=cr-at-eol
+
+# A blank unified-diff context line must contain its leading space.
+*.patch whitespace=-blank-at-eol

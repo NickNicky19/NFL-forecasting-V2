@@ -1,0 +1,35 @@
+{
+  "state": "PASS_STRICT_FUTURE_SOURCE_PREFIX_MODEL_INFERENCE_AND_REAL_CAPTURE_REPLAY",
+  "protocol_sha256": "95879e9331e3115fff4437fbfc2863d2c9fd900d57daf7b80e8f50859efb7d59",
+  "source_packet_sha256": "898f3f12a2fe3930caf1074ea5324bb7de9f8a85a57aec8abd6156d980e73dc9",
+  "source_receipt_sha256": "49ed0cef6cbd33a38144ec9ff82e4d6d99417a635aa69d6db280c4c46f8985fe",
+  "checks": {
+    "source_training_row_prefixes": 25021,
+    "exact_strict_training_membership_and_clock_receipts": 21,
+    "independent_numeric_fields": 32693,
+    "independent_current_only_query_prefixes": 1795,
+    "frozen_model_hash_and_parameter_checks": 21,
+    "independently_replayed_issued_views": 3183,
+    "blocked_abstention_views": 10
+  },
+  "source_training_seasons": [
+    2026
+  ],
+  "maximum_eligible_source_training_week": 7,
+  "actual_completed_at": "2026-10-30T18:09:42.855358+00:00",
+  "query_cells": 1795,
+  "query_games": 13,
+  "issued": 3183,
+  "abstentions": 10,
+  "score_views": 0,
+  "comparison_limit": "Future-only purity adapter; real current label cutoff can differ from prior common-memory HGB snapshots; do not attribute any old/new packet difference solely to history policy or claim forecast skill before outcomes",
+  "durability": "Localimmutablecaptureverified; approvedoffhostrestorationmustbequalifiedseparately.",
+  "resource": {
+    "wall_seconds": 2.5411634439997215,
+    "cpu_seconds": 2.9440059,
+    "peak_rss_bytes": 200015872
+  },
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "current2026_week8_outcomes_read": 0
+}

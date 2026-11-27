@@ -1,0 +1,456 @@
+{
+  "id": "B_SIM_NONQB_SAVED_POINT_JOIN_READINESS_V1",
+  "assignment": "B-only bounded metadata readiness; no join/inference/grading",
+  "state": "SUPPORTED_SAVED_POINT_BYTES_AND_TYPED_SCHEMAS_READY;CANONICAL_FRAME_AND_IDENTITY_BINDING_PENDING",
+  "prior_checks_reused": [
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "path": "reports/shared-game-sim-01/B/shortlists/OTHER_CANDIDATES_CHECKS_V1.json",
+      "sha256": "b91480f14e46090cd07872ce99c523a2a777705087d3bb68dfa7b2e191c63f61",
+      "bytes": 732,
+      "scope": "Retained source/configuration/receipt; executable code not invoked by readiness review.",
+      "publication_state": "OWNER_LOCAL_PREPARED_PACKAGE; exact bytes pinned by SHA256, publication commit supplied by root only after actual publication."
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "path": "reports/shared-game-sim-01/B/shortlists/OTHER_CANDIDATES_TYPED_BODY_CHECK_V2.json",
+      "sha256": "e3ac36feaefcfdbc0f2dd77f9999eef75c98afad9669d26161de74ede6bb6e05",
+      "bytes": 69840,
+      "scope": "Retained source/configuration/receipt; executable code not invoked by readiness review.",
+      "publication_state": "OWNER_LOCAL_PREPARED_PACKAGE; exact bytes pinned by SHA256, publication commit supplied by root only after actual publication."
+    },
+    {
+      "repository": "NickNicky19/NFL-forecasting-V2",
+      "path": "reports/shared-game-sim-01/B/shortlists/OTHER_CANDIDATES_TYPED_CSV_CHECK_V3.json",
+      "sha256": "6230c0616e8ff1fb2362ab6e41abdf88e621522c2bec2d7f972d5023117d9ae8",
+      "bytes": 15089,
+      "scope": "Retained source/configuration/receipt; executable code not invoked by readiness review.",
+      "publication_state": "OWNER_LOCAL_PREPARED_PACKAGE; exact bytes pinned by SHA256, publication commit supplied by root only after actual publication."
+    }
+  ],
+  "adapter_review": [
+    {
+      "binding": {
+        "repository": "NickNicky19/NFL-forecasting-V2",
+        "commit": "98c0e65800902b1840713dd3480a446f2219ef14",
+        "path": "nfl_v2/identity.py",
+        "sha256": "82891b569c2e1a8cf6444fee1572a3dbe7dcda595cec34a5633f6dc439e0d8bf",
+        "bytes": 4431,
+        "scope": "Retained source/configuration/receipt; executable code not invoked by readiness review."
+      },
+      "scope": "Existing unique_gsis_bridge excludes ambiguous/invalid forward/reverse mappings; requires separately qualified snapshot, no fuzzy name matching. Canonical game/player namespaces remain source-qualified."
+    },
+    {
+      "binding": {
+        "repository": "NickNicky19/NFL-forecasting-V2",
+        "commit": "98c0e65800902b1840713dd3480a446f2219ef14",
+        "path": "tools/join_saved_prop_panel.py",
+        "sha256": "7e1776d3a8d8cf7931c09e39aede74343fa20e93dbd8d62e3b8c3e5d6207ed67",
+        "bytes": 13785,
+        "scope": "Retained source/configuration/receipt; executable code not invoked by readiness review."
+      },
+      "scope": "Existing W7-only frozen join demonstrates exact Sleeper-GSIS and ESPN-schedule bridge, exact kickoff, explicit conflict/unresolved states and left-frame preservation. NOT executable unchanged for W4-9: its285row/W7/sourcehash contracts must not be silently expanded."
+    },
+    {
+      "binding": {
+        "repository": "NickNicky19/NFL-forecasting-V2",
+        "commit": "98c0e65800902b1840713dd3480a446f2219ef14",
+        "path": "nfl_v2/saved_leaf_law_lookup.py",
+        "sha256": "92ae287426b298a745f53a7caa1c700f39419afa301109e8968b133f1f1d8a1b",
+        "bytes": 1618,
+        "scope": "Retained source/configuration/receipt; executable code not invoked by readiness review."
+      },
+      "scope": "Known histogram lookup requires retainedsupport/histograms/32leafIDs/prior, checks probabilities; not invoked. Leaf IDs alone are insufficient. No model loads permitted in this readiness package."
+    }
+  ],
+  "point_lookup_contract": {
+    "CSV": "standard gzip+csv.DictReader; source run_id,target,history_regime,product,season,week,game_id,player_id,population,position,cutoff epoch\u2192finite prediction or explicit unavailable; original fields actual/participation excluded from prediction lookup. Four empirical typed scopes passedV3.",
+    "JSON": "standard gzip+json.loads only; rows target/history/policy/product or HGB objective+run_id,season/week/game/player/population/role+cutoff\u2192saved prediction/fallback/status/latest-feature clock; exclude target actual/postgame columns. Representative product checks passedV2.",
+    "point_product_identity": "Use exact frozen nominee point output; HGB absolute point versus squared mean and Leafmean versus lower median remain distinct. No CountA corrector for these B procedures. Saved_complete_leaf_law nominees cannot borrow point siblings as law results.",
+    "lookup_key": "Origin/season/week,canonical game/player,target,role,population,exact procedure/history/policy/output. Require unique result or identical duplicates; conflicting values\u2192CONFLICT_NOT_ARBITRARY_FIRST. Website book/line/offer-side/cutoff/outcomeversion stay on canonical outer rows.",
+    "identity_admission": "Canonical builder must supply qualified game/player bridge and kickoff/source contract. Reuse immutable source bindings; no later-roster presence or realized participation used as eligibility. Unknown/ambiguous identity stays unavailable.",
+    "left_frame": "Preserve every canonical opportunity and each arm availability/native/fallback; no all-arm intersection. Saved forecast repeats across genuine book/line views are not additional NFL observations.",
+    "clock_policy": "Match declared historical origin/information cutoff and feature-source age. Retained reconstruction assumption is not authentic quote/publication time. Future receipts require exact original clocks; stale/out-of-horizon rows unavailable.",
+    "score_separation": "No side/hit computed here. Subsequent canonical grader applies strict point-v-line with equality abstain, unknowns/push/void contract and own selections; no margin-policy/TopPicks inference from point reuse."
+  },
+  "candidates": [
+    {
+      "candidate_id": "B-SIM01-9e315e876799c2e77d",
+      "category": "rush_yd",
+      "primary_output": "absolute_error_point",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 5,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-0191d8e94ca3c95b6f",
+      "category": "rush_yd",
+      "primary_output": "lower_median",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 5,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-67e9e4bbbb14aa34f8",
+      "category": "rush_yd",
+      "primary_output": "lower_median",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 1,
+      "retained_receipt_weeks": "AggregateCSV/chart packet; exact2026W1-7 typed coverage inV3/source rows",
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-6bac0483d2935fa2c3",
+      "category": "rush_att",
+      "primary_output": "lower_median",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 4,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-4bd13ee88b054e1232",
+      "category": "rush_att",
+      "primary_output": "squared_error_mean",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 5,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-3721ee2031f785793b",
+      "category": "rush_att",
+      "primary_output": "empirical_mean",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 1,
+      "retained_receipt_weeks": "AggregateCSV/chart packet; exact2026W1-7 typed coverage inV3/source rows",
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-2d9fb1d864929a32c4",
+      "category": "rec",
+      "primary_output": "mean",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 4,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-c0b1b9acab53581d97",
+      "category": "rec",
+      "primary_output": "saved_complete_leaf_law",
+      "saved_point_readiness": "POINT_SIBLING_ONLY_DOES_NOT_FILL_PRIMARY_LAW",
+      "exact_packet_bytes_reopened": 5,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "LAW_QUERY_BINDING_REQUIRED"
+    },
+    {
+      "candidate_id": "B-SIM01-f0b13c56dbdd37a2b3",
+      "category": "rec",
+      "primary_output": "squared_error_mean",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 5,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-42da71d8bb5df4f101",
+      "category": "rec_yd",
+      "primary_output": "lower_median",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 1,
+      "retained_receipt_weeks": "AggregateCSV/chart packet; exact2026W1-7 typed coverage inV3/source rows",
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-ccd2e93409415f7dfe",
+      "category": "rec_yd",
+      "primary_output": "saved_complete_leaf_law",
+      "saved_point_readiness": "POINT_SIBLING_ONLY_DOES_NOT_FILL_PRIMARY_LAW",
+      "exact_packet_bytes_reopened": 4,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "LAW_QUERY_BINDING_REQUIRED"
+    },
+    {
+      "candidate_id": "B-SIM01-96d546b3cdf53b47a5",
+      "category": "rec_yd",
+      "primary_output": "lower_median",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 4,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-2e4ee2f3e48fa5acd5",
+      "category": "rush_rec_yd",
+      "primary_output": "lower_median",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 4,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-07cbacd3f2987569d7",
+      "category": "rush_rec_yd",
+      "primary_output": "absolute_error_point",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 5,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-3255df04669b646b8a",
+      "category": "rush_rec_yd",
+      "primary_output": "mean",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 5,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-7c0f4afad04b58e53f",
+      "category": "anytime_td",
+      "primary_output": "event_probability",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 5,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-a5f6e3b098f93c5230",
+      "category": "anytime_td",
+      "primary_output": "event_probability",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 5,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-93c4330014bdb92d48",
+      "category": "anytime_td",
+      "primary_output": "event_probability",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 1,
+      "retained_receipt_weeks": "AggregateCSV/chart packet; exact2026W1-7 typed coverage inV3/source rows",
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-b0c10fe4c98abf87b3",
+      "category": "nick-chart-ppr-v1",
+      "primary_output": "lower_median",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 4,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-35e800c0ad60b8d664",
+      "category": "nick-chart-ppr-v1",
+      "primary_output": "mean",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 1,
+      "retained_receipt_weeks": "AggregateCSV/chart packet; exact2026W1-7 typed coverage inV3/source rows",
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    },
+    {
+      "candidate_id": "B-SIM01-4b8cc0061c9691cfc1",
+      "category": "nick-chart-ppr-v1",
+      "primary_output": "mean",
+      "saved_point_readiness": "SAFE_SAVED_POINT_LOOKUP_SCHEMA_VERIFIED",
+      "exact_packet_bytes_reopened": 5,
+      "retained_receipt_weeks": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "new_frame_availability": "NOT_JOINED;NO_NEW_CASE_COUNTS",
+      "W9": "NO_NONQB_EXACT_OUTPUT_BOUND_IN_THIS_PACKAGE",
+      "law_status": "POINT_OR_EVENT_PRODUCT_ONLY;do not invent a distribution"
+    }
+  ],
+  "saved_threshold_probability_leads": [
+    {
+      "source_id": "B_ORIGINAL_W8_SAVED_LAW_OFFER_ROWS",
+      "binding": {
+        "repository": "NickNicky19/NFL-forecasting-V2",
+        "commit": "98c0e65800902b1840713dd3480a446f2219ef14",
+        "path": "reports/week8-grading-20261102l/saved-laws-v2/RUN_RECEIPT.json",
+        "sha256": "184feda56e19ba4192c781d277e7c676b8b9d6010375cfbed1832ee2920cc539",
+        "bytes": 825,
+        "scope": "Retained source/configuration/receipt; executable code not invoked by readiness review."
+      },
+      "body_sha256": "49058947e332edb4500deab217ceaacf941b10f4c99bacb92a40445c1ed754d6",
+      "body_bytes": 1945166,
+      "retained_rows": 16268,
+      "current_state": "KNOWN_PRIOR_OWNER_REPORTED_RETAINED_LINE_LAW_ROWS;BODY_NOT_BOUND_BY_CURRENT76PACKET_INDEX_OR_THIS_READINESS_REVIEW",
+      "allowed_use": "May fill only independently authenticated identical exact category/procedure/history/output/playergame/threshold/offeredside/event/void/origin/sourcehorizon contracts. No aggregate row count implies overlap with current websiteframe. No model/threshold extrapolation.",
+      "recovery_executor": "B registered retained-output owner via existing approved private route; no networking/recovery attempted here."
+    },
+    {
+      "source_id": "B_C_RETAINED_LEAF_LINE_LAW_ROWS",
+      "binding": {
+        "repository": "NickNicky19/NFL-forecasting-V2",
+        "commit": "98c0e65800902b1840713dd3480a446f2219ef14",
+        "path": "reports/abc-championship/leaf-law-continuation-20261104-v2/PRIVATE_DERIVATIVE_MANIFEST.json",
+        "sha256": "c1da4ae2eefdbf4b8dae6978c77ea3f6de1ea126a404bf5538105f138961cf38",
+        "bytes": 267,
+        "scope": "Retained source/configuration/receipt; executable code not invoked by readiness review."
+      },
+      "body_sha256": "6130073206a97d889d2babce5a866e0ab4524e68ca3d7ddb89ab4fa39d7da7e3",
+      "body_bytes": 9076411,
+      "retained_rows": 15488,
+      "current_state": "KNOWN_PRIOR_OWNER_REPORTED_RETAINED_LINE_LAW_ROWS;BODY_NOT_BOUND_BY_CURRENT76PACKET_INDEX_OR_THIS_READINESS_REVIEW",
+      "allowed_use": "May fill only independently authenticated identical exact category/procedure/history/output/playergame/threshold/offeredside/event/void/origin/sourcehorizon contracts. No aggregate row count implies overlap with current websiteframe. No model/threshold extrapolation.",
+      "recovery_executor": "B registered retained-output owner via existing approved private route; no networking/recovery attempted here."
+    }
+  ],
+  "finite_next_actions": [
+    {
+      "executor": "B registered canonical join owner",
+      "action": "Receive/hash canonical outcome-free frame, identity/schedule bridges and official outcome/scorer bindings from website owner; bind exact outer-row contract before retained lookup.",
+      "completion": "One complete costed point-only lookup/join plan with saved-origin availability and explicit W9gaps; no refit needed for matching retained points."
+    },
+    {
+      "executor": "B retained-law owner",
+      "action": "Bind existing exact-threshold probability bodies or safe fullCDF payload to identical line/event/origin cases before rec/rec_yd law join.",
+      "completion": "Exact procedure/history/output/playergame/line/book/horizon/event/pushcontract agreement, no re-thresholding from leaf_ids; otherwise LAW_QUERY_BINDING_REQUIRED."
+    }
+  ],
+  "resource": {
+    "metadata_CPU_seconds_at_emit": 0.0034488969999999994,
+    "budget_CPU_seconds": 10,
+    "budget_wall_seconds": 60,
+    "charged_to": "B-only metadata/reporting; no closed scientific/C allowance transfer",
+    "source_HTTP_GETs": 0,
+    "new_model_load_fit_inference_grade_casejoins": 0,
+    "overhead": "Tool/controller overhead incompletely metered; four short read batches and one metadata emit, no scientific worker."
+  }
+}

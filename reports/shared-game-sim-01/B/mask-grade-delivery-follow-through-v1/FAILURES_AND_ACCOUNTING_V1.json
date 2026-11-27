@@ -1,0 +1,70 @@
+{
+  "id": "B-MASK-FOLLOW-THROUGH-FAILURES-AND-ACCOUNTING-v1",
+  "UTC": "2026-11-22T21:51:04.238594+00:00",
+  "scientific_fits": 0,
+  "simulator_workers": 0,
+  "helper_failures": [
+    {
+      "stage": "Cmean_verifier_preparation",
+      "cause": "nfl_v2 import unresolved with default Python path; then wrong src-only path",
+      "attempts": 2,
+      "outcome_bytes_opened": false,
+      "resolution": "Existing package is repository-root nfl_v2; ran with PYTHONPATH=.; no cases/tolerance/predictions changed",
+      "conservative_CPU_charge_seconds": 2
+    },
+    {
+      "stage": "Bgraded paired-mask representation",
+      "cause": "Opaque case_id hashed instead of source-qualified canonical_case_key",
+      "retained": "B_NEW_GRADES_REVIEW_V1.json",
+      "resolution": "V2 uses exact C code representation, no membership/grade change"
+    },
+    {
+      "stage": "metadata_public_branch_refresh",
+      "cause": "Connector rejected percent-encoded branch slash as invalid path",
+      "attempts": 1,
+      "counted_toward_request_bound": true,
+      "resolution": "Same approved GitHub branch URL with ordinary slash; no permission bypass"
+    }
+  ],
+  "metering": "Reported verifier CPU plus conservative preparation/helper/publication allowance, not complete assistant/orchestration CPU or elapsed wall certificate. All relevant failures retained.",
+  "no_budget_transfer": true,
+  "old_strict_model_reproduction_failures": "C1 and opportunity team fit remain FAILED",
+  "independent_C_mean_verifier": {
+    "PASS_controlled_CPU_seconds": 0.771769464,
+    "checks": 6927,
+    "pre_grade_helper_import_failures": [
+      {
+        "reason": "Package root not on script sys.path",
+        "process_elapsed_seconds": 0.422956444
+      },
+      {
+        "reason": "Assumed src path absent; corrected by existing repository PYTHONPATH=.",
+        "process_elapsed_seconds": 0.292364473
+      }
+    ],
+    "failure_conservative_CPU_charge": 2,
+    "scientific_failures": 0,
+    "no_tolerance_or_identity_change": true
+  },
+  "selected_measured_verification_CPU_seconds": {
+    "initial_fixed_set_reopen": 0.807565952,
+    "independent_fixed_set_check": 0.090068,
+    "B_grades_V2": 0.52,
+    "C_two_mean_points": 0.771769464,
+    "two_B_C_reception_pairs": 0.952859235
+  },
+  "conservative_reporting_and_preparation_CPU_charge": 20,
+  "CPU_accounting_limit": "Selected process measurements plus conservative reporting/preparation carry; not complete metered host CPU. All failed helpers remain disclosed; no old scientific budget or reserve consumed.",
+  "metadata_accounting": {
+    "owner_agents": 18,
+    "root_peer_source_metadata_including_failed_URL": 15,
+    "subtotal_before_publication": 33,
+    "remaining_metadata_budget_before_publication": 7,
+    "failed_URL": "Encoded branch separator rejected once; exact same branch successfully read using permitted unescaped path; no auth bypass"
+  },
+  "new_scientific_fits": 0,
+  "new_simulations": 0,
+  "new_NFL_source_GETs": 0,
+  "private_working_reopen": "Actual retained source/exclusion/canonical bytes independently reopened; ordinal sets never included in public payload. No new private storage provider or durable-retention claim.",
+  "wall_accounting": "Task start21:31:41UTC; preparation registration21:35:40UTC; selected worker times are distinct from elapsed assistant/orchestration wall. Final completion receipt records endUTC."
+}

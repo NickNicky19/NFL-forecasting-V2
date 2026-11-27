@@ -1,0 +1,32 @@
+{
+  "kind": "software_verification",
+  "status": "PASS",
+  "tests_run": 11,
+  "tests_passed": 11,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_names": [
+    "tests.test_result_index.ResultIndexTests.test_added_diagnostic_dimensions_preserve_legacy_stable_ids",
+    "tests.test_result_index.ResultIndexTests.test_bad_values_unsafe_paths_and_duplicate_views_rejected",
+    "tests.test_result_index.ResultIndexTests.test_diagnostic_views_keep_roles_dates_and_infinite_failures",
+    "tests.test_result_index.ResultIndexTests.test_ids_stable_on_key_order_and_change_with_panel",
+    "tests.test_result_index.ResultIndexTests.test_infinite_probability_losses_remain_explicit",
+    "tests.test_result_index.ResultIndexTests.test_missing_precision_and_error_remain_unknown",
+    "tests.test_result_index.ResultIndexTests.test_native_errors_are_not_percent_accuracy",
+    "tests.test_result_index.ResultIndexTests.test_probability_residual_is_not_pick_or_classifier_accuracy",
+    "tests.test_result_index.ResultIndexTests.test_signed_bias_and_source_distribution_nll_preserved",
+    "tests.test_result_index.ResultIndexTests.test_software_has_check_counts_and_no_nfl_accuracy",
+    "tests.test_result_index.ResultIndexTests.test_unknown_or_inconsistent_accuracy_denominator_not_invented"
+  ],
+  "recorded_at": "2026-10-29T22:58:40.951868+00:00",
+  "execution_evidence": "Actual python -m unittest tests.test_result_index -v execution returned11tests/OK; this receipt records that completed run without repeating it.",
+  "nfl_observations": 0,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "nfl_accuracy": null,
+  "code_sha256": {
+    "nfl_v2/result_index.py": "c19830ca438c9fe95ba3c0aba6dc625221f734594127c6781213cf005abeebe6",
+    "tests/test_result_index.py": "deb4e15d633b1f5351d4f94de2a5ddf323a7642dedb9048316d96e77f3c31d74"
+  }
+}
